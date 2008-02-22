@@ -110,3 +110,151 @@ Click on the link below to download it to your computer.",
 	'coll-return_to_collection' => '<p>Return to <a href="$1">$2</a></p>',
 	'coll-pages_removed' => 'The following pages could not be rendered and were removed from the PDF file:',
 );
+
+/** Bulgarian (Български)
+ * @author DCLXVI
+ */
+$messages['bg'] = array(
+	'coll-download_pdf'         => 'Изтегляне на PDF',
+	'coll-remove'               => 'Премахване',
+	'coll-move_to_top'          => 'Преместване в началото',
+	'coll-move_up'              => 'Преместване нагоре',
+	'coll-move_down'            => 'Преместване надолу',
+	'coll-move_to_bottom'       => 'Преместване в края',
+	'coll-title'                => 'Заглавие:',
+	'coll-subtitle'             => 'Подзаглавие:',
+	'coll-contents'             => 'Съдържание',
+	'coll-sort_alphabetically'  => 'Подреждане на страниците по азбучен ред',
+	'coll-rename'               => 'Преименуване',
+	'coll-no_such_category'     => 'Няма такава категория',
+	'coll-yes'                  => 'Да',
+	'coll-no'                   => 'Не',
+	'coll-cancel'               => 'Отказване',
+	'coll-generating_pdf_title' => 'Генериране на PDF',
+	'coll-nopdf_error_title'    => 'Не беше открит PDF файл',
+	'coll-return_to_collection' => '<p>Връщане към <a href="$1">$2</a></p>',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'coll-desc'                       => "[[Special:Collection|Pagina's verzamelen]], PDF's genereren",
+	'coll-collection'                 => 'Collectie',
+	'coll-collections'                => 'Collecties',
+	'coll-portlet_title'              => 'Mijn collectie',
+	'coll-add_page'                   => 'Pagina toevoegen',
+	'coll-remove_page'                => 'Pagina verwijderen',
+	'coll-add_category'               => 'Categorie toevoegen',
+	'coll-load_collection'            => 'Collectie laden',
+	'coll-show_collection'            => 'Collectie tonen',
+	'coll-help_collections'           => 'Hulp bij collecties',
+	'coll-empty'                      => 'leeg',
+	'coll-page'                       => 'pagina',
+	'coll-pages'                      => "pagina's",
+	'coll-download_as_pdf'            => 'Als PDF downloaden',
+	'coll-noscript_text'              => '<noscript><h1>JavaScript is vereist!</h1>
+<strong>Uw browser understeunt geen JavaScript of JavaScript is uitgeschakeld.
+Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong></noscript>',
+	'coll-intro_text'                 => "U kunt pagina's in een collectie plaatsen, een PDF-bestand maken en downloaden van een paginacollectie, en paginacollectie opslaan voor later gebruik, of om ze te delen.
+
+[[Help:Collections|Meer informatie over collecties]].",
+	'coll-pdftoobigcat'               => "De categorie bevat meer dan %PARAM% pagina's. Alleen de eerste %PARAM% pagina's kunnen aan uw collectie worden toegevoegd.
+Wilt u ze toevoegen?",
+	'coll-my_collection'              => 'Mijn collectie',
+	'coll-download_title'             => 'Collectie als PDF downloaden',
+	'coll-download_text'              => 'Klik op de knop om een automatisch gemaakt PDF-bestand van uw paginacollectie te downloaden.',
+	'coll-download_pdf'               => 'PDF downloaden',
+	'coll-remove'                     => 'Verwijderen',
+	'coll-move_to_top'                => 'Helemaal naar boven',
+	'coll-move_up'                    => 'Naar boven',
+	'coll-move_down'                  => 'Naar onderen',
+	'coll-move_to_bottom'             => 'Helemaal naar onderen',
+	'coll-title'                      => 'Titel:',
+	'coll-subtitle'                   => 'Ondertitel:',
+	'coll-contents'                   => 'Inhoud',
+	'coll-create_chapter'             => 'Nieuw hoofdstuk maken',
+	'coll-sort_alphabetically'        => "Pagina's alfabetisch sorteren",
+	'coll-clear_collection'           => 'Collectie leegmaken',
+	'coll-clear_confirm'              => 'Weet u zeker dat u de collectie leeg wilt maken?',
+	'coll-rename'                     => 'Hernoemen',
+	'coll-new_chapter'                => 'Voer de naam van het nieuwe hofdstuk in',
+	'coll-rename_chapter'             => 'Voer een nieuwe naam in voor het hoofdstuk',
+	'coll-no_such_category'           => 'De categorie bestaat niet',
+	'coll-mwpdf_error_title'          => 'De PDF kon niet gemaakt worden',
+	'coll-mwpdf_error_msg'            => 'Er is een fout opgetreden tijdens het maken van de PDF.',
+	'coll-mwzip_error_title'          => 'De paginacollectie kon niet gemaakt worden',
+	'coll-mwzip_error_msg'            => 'Er is een fout opgetreden tijdens het maken van de paginacollectie.',
+	'coll-notitle_title'              => 'De titel van de pagina kon niet vastgesteld worden.',
+	'coll-post_failed_title'          => 'POST-verzoek mislukt',
+	'coll-post_failed_msg'            => 'Het POST-verzoek is mislukt.',
+	'coll-enter_title'                => 'Voer een titel in voor de collectie:',
+	'coll-error_reponse'              => 'De server heeft een foutmelding teruggegeven',
+	'coll-empty_collection'           => 'Lege collectie',
+	'coll-revision'                   => 'Versie: %PARAM%',
+	'coll-save_collection_title'      => 'Collectie opslaan',
+	'coll-save_collection_text'       => 'Kies een collectietype en voer een paginatitel in om deze collectie op te slaan voor later gebruik:',
+	'coll-login_to_save'              => 'Als u collectie voor later gebruik wilt opslaan, <a href="$1">meld u zich dan aan of maak een gebruiker aan</a>.',
+	'coll-personal_collection_label'  => 'Persoonlijke collectie:',
+	'coll-community_collection_label' => 'Gemeenschappelijke collectie:',
+	'coll-save_collection'            => 'Collectie opslaan',
+	'coll-overwrite_title'            => 'De pagina bestaat al. Overschrijven?',
+	'coll-overwrite_text'             => 'Er bestaat al een pagina met de naam $title.
+Wilt u die pagina vervangen met uw collectie?',
+	'coll-yes'                        => 'Ja',
+	'coll-no'                         => 'Nee',
+	'coll-load_overwrite_text'        => "U hebt al een aantal pagina's in uw collectie.
+Wilt u de bestaande collectie overschrijven, de nieuwe pagina's toevoegen, of annuleren?",
+	'coll-overwrite'                  => 'Overschrijven',
+	'coll-append'                     => 'Toevoegen',
+	'coll-cancel'                     => 'Annuleren',
+	'coll-limit_exceeded_title'       => 'Collectie is te groot',
+	'coll-limit_exceeded_text'        => "Uw paginacollectie is te groot.
+U kan geen pagina's meer toevoegen.",
+	'coll-generating_pdf_title'       => 'Bezig met maken van PDF',
+	'coll-generating_pdf_text'        => "'''Wacht alstublieft. Het PDF-bestand wordt gemaakt.'''
+Over enige seconden hoort deze pagina automatisch te verversen. Als dit niet werkt, klik dan op de knop 'Vernieuwen' in uw browser.",
+	'coll-pdf_finished_title'         => 'Maken PDF afgerond',
+	'coll-pdf_finished_text'          => 'Het PDF-bestand is beschikbaar.
+Klik op de link hieronder om het naar uw computer te downloaden.',
+	'coll-nopdf_error_title'          => 'Geen PDF-bestand aangetroffen',
+	'coll-nopdf_error_text'           => 'Het PDF-bestand is niet aangetroffen. Maak het PDF-bestand alstublieft opnieuw.',
+	'coll-notfound_title'             => 'Collectie niet gevonden',
+	'coll-notfound_text'              => 'De collectiepagina is niet gevonden.',
+	'coll-return_to_collection'       => '<p>Teruggaan naar <a href="$1">$2</a></p>',
+	'coll-pages_removed'              => "De onderstaande pagina's konden niet opgemaakt worden en zijn uit het PDF-bestand verwijderd:",
+);
+
+/** Swedish (Svenska)
+ * @author M.M.S.
+ */
+$messages['sv'] = array(
+	'coll-desc'             => '[[Special:Collection|Samla sidor]], generera PDF filer',
+	'coll-collection'       => 'Samling',
+	'coll-collections'      => 'Samlingar',
+	'coll-portlet_title'    => 'Min samling',
+	'coll-add_page'         => 'Lägg till sida',
+	'coll-remove_page'      => 'Ta bort sida',
+	'coll-add_category'     => 'Lägg till kategori',
+	'coll-load_collection'  => 'Ladda samling',
+	'coll-show_collection'  => 'Visa samling',
+	'coll-help_collections' => 'Hjälp för samlingar',
+	'coll-empty'            => 'tom',
+	'coll-page'             => 'sida',
+	'coll-pages'            => 'sidor',
+	'coll-download_as_pdf'  => 'Ladda ner som PDF',
+	'coll-my_collection'    => 'Min samling',
+	'coll-download_title'   => 'Ladda ner samling som PDF',
+	'coll-download_text'    => 'För att ladda ner en automatisk genererad PDF fil av din sidsamling, klicka på knappen.',
+	'coll-download_pdf'     => 'Ladda ner PDF',
+	'coll-remove'           => 'Ta bort',
+	'coll-move_to_top'      => 'Flytta till toppen',
+	'coll-move_up'          => 'Flytta upp',
+	'coll-move_down'        => 'Flytta ner',
+	'coll-move_to_bottom'   => 'Flytta till botten',
+	'coll-title'            => 'Titel:',
+	'coll-subtitle'         => 'Undertitel:',
+	'coll-yes'              => 'Ja',
+	'coll-no'               => 'Nej',
+);
+
