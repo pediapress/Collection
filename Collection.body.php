@@ -26,11 +26,14 @@ require_once( 'StreamFile.php' );
 
 class Collection extends SpecialPage
 {
-    function Collection() {
+    public function __construct() {
         SpecialPage::SpecialPage( "Collection" );
-        self::loadMessages();
     }
-
+    
+	function getDescription() {
+		return wfMsg( 'coll-collection' );
+	}
+    
     function execute( $par ) {
         global $wgOut;
         global $wgRequest;
@@ -42,6 +45,8 @@ class Collection extends SpecialPage
         global $wgCollectionMaxArticles;
         global $wgCollectionVersion;
         
+        wfLoadExtensionMessages( 'Collection' );
+
         if ( $par == 'add_article/' ) {
             if ( self::countArticles() >= $wgCollectionMaxArticles ) {
                 $this->limitExceeded();
@@ -126,14 +131,14 @@ class Collection extends SpecialPage
                 $userPageTitle = $wgUser->getUserPage()->getPrefixedText();
                 $name = $wgRequest->getVal( 'pcollname', '' );
                 if ( !empty( $name ) ) {
-                    $title = Title::newFromText( $userPageTitle . '/' . wfMsg( 'collections' ) . '/' . $name );
+                    $title = Title::newFromText( $userPageTitle . '/' . wfMsg( 'coll-collections' ) . '/' . $name );
                     $saveCalled = true;
                     $saved = $this->saveCollection( $title, $overwrite );
                 }
             } else if ( $collType == 'community' ) {
                 $name = $wgRequest->getVal( 'ccollname', '' );
                 if ( !empty( $name ) ) {
-                    $title = Title::makeTitle( $wgCommunityCollectionNamespace, wfMsg( 'collections' ) . '/' . $name );
+                    $title = Title::makeTitle( $wgCommunityCollectionNamespace, wfMsg( 'coll-collections' ) . '/' . $name );
                     $saveCalled = true;
                     $saved = $this->saveCollection( $title, $overwrite );
                 }
@@ -178,22 +183,6 @@ class Collection extends SpecialPage
         $this->outputSaveSection();
         $this->outputIntro();
         $this->outputArticleList();
-    }
-    
-    function loadMessages() {
-        static $messagesLoaded = false;
-        global $wgMessageCache;
-        
-        if ( $messagesLoaded ) {
-            return true;
-        }
-        $messagesLoaded = true;
-        
-        require( dirname( __FILE__ ) . '/Collection.i18n.php' );
-        foreach ( $allMessages as $lang => $langMessages ) {
-            $wgMessageCache->addMessages( $langMessages, $lang );
-        }
-        return true;
     }
     
     static function countArticles() {
@@ -438,7 +427,7 @@ class Collection extends SpecialPage
                 }
             }
         }
-        $catTitle = Title::makeTitle( NS_CATEGORY, wfMsg( 'collections' ) );
+        $catTitle = Title::makeTitle( NS_CATEGORY, wfMsg( 'coll-collections' ) );
         if ( !is_null( $catTitle ) ) {
             $articleText .= "\n[[" . $catTitle->getPrefixedText() . "]]\n";
         }
@@ -538,9 +527,9 @@ class Collection extends SpecialPage
             for ( $i = 0; $i < 16; $i++ ) {
                 $downloadLink .= $alpha[rand( 0, 61 )];
             }
-            $downloadText = wfMsgHtml( 'download_pdf' );
-            $wgOut->setPageTitle( wfMsg( 'pdf_finished_title' ) );
-            $text = wfMsgHtml( 'pdf_finished_text' );
+            $downloadText = wfMsgHtml( 'coll-download_pdf' );
+            $wgOut->setPageTitle( wfMsg( 'coll-pdf_finished_title' ) );
+            $text = wfMsgHtml( 'coll-pdf_finished_text' );
             $dllink = "<a href=\"$downloadLink\">$downloadText</a>";
             $wgOut->addHTML( <<<EOS
 <table class="toccolours" width="100%">
@@ -553,12 +542,12 @@ class Collection extends SpecialPage
 </table>
 EOS
             );
-            $wgOut->addHTML( wfMsg( 'return_to_collection', array(
+            $wgOut->addHTML( wfMsg( 'coll-return_to_collection', array(
                 'referrer_link' => htmlspecialchars( $pdfInfo['referrer_link'] ),
                 'referrer_name' => htmlspecialchars( $pdfInfo['referrer_name'] )
             ) ) );
             if ( file_exists( $pdfInfo['removed_filename'] ) ) {
-                $wgOut->addWikiText( wfMsg( 'articles_removed' ) );
+                $wgOut->addWikiText( wfMsg( 'coll-articles_removed' ) );
                 $lines = file( $pdfInfo['removed_filename'] );
                 foreach( $lines as $line ) {
                     $wgOut->addWikiText( '*' . $line );
@@ -571,8 +560,8 @@ EOS
     		$wgRequest->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
     		$wgRequest->response()->header( 'Pragma: no-cache' );
             $wgOut->addMeta( 'http:refresh', '2; URL=.' );
-            $wgOut->setPageTitle( wfMsg( 'generating_pdf_title' ) );
-            $wgOut->addWikiText( wfMsg( 'generating_pdf_text' ) );
+            $wgOut->setPageTitle( wfMsg( 'coll-generating_pdf_title' ) );
+            $wgOut->addWikiText( wfMsg( 'coll-generating_pdf_text' ) );
         }
     }
     
@@ -638,18 +627,18 @@ EOS
     private function outputIntro() {
         global $wgOut;
         
-        $wgOut->addHTML( wfMsg( 'noscript_text') );
-        $wgOut->addWikiText( wfMsg( 'intro_text' ) );
+        $wgOut->addHTML( wfMsg( 'coll-noscript_text') );
+        $wgOut->addWikiText( wfMsg( 'coll-intro_text' ) );
     }
     
     private function outputArticleList() {
         global $wgOut;
         global $wgStylePath;
         
-        $wgOut->addWikiText( "== ". wfMsg( 'my_collection' ) . " ==" );
+        $wgOut->addWikiText( "== ". wfMsg( 'coll-my_collection' ) . " ==" );
 
-        $title = wfMsgHtml( 'title' );
-        $subtitle = wfMsgHtml( 'subtitle' );
+        $title = wfMsgHtml( 'coll-title' );
+        $subtitle = wfMsgHtml( 'coll-subtitle' );
         
         $wgOut->addHTML( <<<EOS
 <table><tbody>
@@ -664,11 +653,11 @@ EOS
 EOS
         );
         
-    $wgOut->addWikiText( "=== ". wfMsg( 'contents' ) . " ===" );
+        $wgOut->addWikiText( "=== ". wfMsg( 'coll-contents' ) . " ===" );
 
-        $createChapter = wfMsgHtml( 'create_chapter' );
-        $sortAlphabetically = wfMsgHtml( 'sort_alphabetically' );
-        $clearCollection = wfMsgHtml( 'clear_collection' );
+        $createChapter = wfMsgHtml( 'coll-create_chapter' );
+        $sortAlphabetically = wfMsgHtml( 'coll-sort_alphabetically' );
+        $clearCollection = wfMsgHtml( 'coll-clear_collection' );
         $wgOut->addHTML( <<<EOS
 <a id="createChapter" href="javascript:void(0);">$createChapter</a>
 <span id="sortSpan" style="display:none;">| <a id="sortLink" href="javascript:void(0);">$sortAlphabetically</a></span>
@@ -676,22 +665,22 @@ EOS
 EOS
         );
 
-        $rename = wfMsgHtml( 'rename' );
-        $remove = wfMsgHtml( 'remove' );
+        $rename = wfMsgHtml( 'coll-rename' );
+        $remove = wfMsgHtml( 'coll-remove' );
         $removeImage = htmlspecialchars( "$wgStylePath/common/collection/cross.png" );
-        $moveUp = wfMsgHtml( 'move_up' );
+        $moveUp = wfMsgHtml( 'coll-move_up' );
         $moveUpImage = htmlspecialchars( "$wgStylePath/common/collection/up.png" );
-        $moveDown = wfMsgHtml( 'move_down' );
+        $moveDown = wfMsgHtml( 'coll-move_down' );
         $moveDownImage = htmlspecialchars( "$wgStylePath/common/collection/down.png" );
         $moveDisabledImage = htmlspecialchars( "$wgStylePath/common/collection/trans.png" );
-        $newChapter = wfMsgHtml( 'new_chapter' );
-        $renameChapter = wfMsgHtml( 'rename_chapter' );
-        $enterTitle = wfMsgHtml( 'enter_title' );
-        $collectionExists = wfMsgHtml( 'collection_exists' );
-        $errorResponse = wfMsgHtml( 'error_response' );
-        $emptyCollection = wfMsgHtml( 'empty_collection' );
-        $revision = wfMsgHtml( 'revision' );
-        $clearConfirm = wfMsgHtml( 'clear_confirm' );
+        $newChapter = wfMsgHtml( 'coll-new_chapter' );
+        $renameChapter = wfMsgHtml( 'coll-rename_chapter' );
+        $enterTitle = wfMsgHtml( 'coll-enter_title' );
+        $collectionExists = wfMsgHtml( 'coll-collection_exists' );
+        $errorResponse = wfMsgHtml( 'coll-error_response' );
+        $emptyCollection = wfMsgHtml( 'coll-empty_collection' );
+        $revision = wfMsgHtml( 'coll-revision' );
+        $clearConfirm = wfMsgHtml( 'coll-clear_confirm' );
 
         $wgOut->addHTML( <<<EOS
 <div id="collectionList"></div>
@@ -730,9 +719,9 @@ EOS
     }
     
     private function outputDownloadSection() {
-        $downloadTitle = wfMsg("download_title");
-        $downloadText = wfMsg( 'download_text' );
-        $buttonLabel = wfMsg( 'download_pdf' );
+        $downloadTitle = wfMsg( 'coll-download_title' );
+        $downloadText = wfMsg( 'coll-download_text' );
+        $buttonLabel = wfMsg( 'coll-download_pdf' );
         $url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generate_pdf/' );
         $html = <<<EOS
 <h2><span class="mw-headline">$downloadTitle</span></h2>
@@ -752,17 +741,17 @@ EOS
         global $wgOut;
         global $wgUser;
         
-        $html = '<h2><span class="mw-headline">' . wfMsgHTML( 'save_collection_title' ) . '</span></h2>';
+        $html = '<h2><span class="mw-headline">' . wfMsgHtml( 'coll-save_collection_title' ) . '</span></h2>';
         
         if ($wgUser->isLoggedIn()) {
-            $html .= '<p>' . wfMsgHTML( 'save_collection_text' ) . '</p>';
+            $html .= '<p>' . wfMsgHtml( 'coll-save_collection_text' ) . '</p>';
             
-            $personalColl = wfMsgHtml( 'personal_collection_label' );
-            $communityColl = wfMsgHtml( 'community_collection_label' );
-            $saveColl = wfMsgHtml( 'save_collection' );
+            $personalColl = wfMsgHtml( 'coll-personal_collection_label' );
+            $communityColl = wfMsgHtml( 'coll-community_collection_label' );
+            $saveColl = wfMsgHtml( 'coll-save_collection' );
         
-            $personalTitle = $wgUser->getUserPage()->getPrefixedText(). '/' . wfMsg( 'collections' ) . '/';
-            $communityTitle = Title::makeTitle( $wgCommunityCollectionNamespace, wfMsg( 'collections' ) )->getPrefixedText() . '/';
+            $personalTitle = $wgUser->getUserPage()->getPrefixedText(). '/' . wfMsg( 'coll-collections' ) . '/';
+            $communityTitle = Title::makeTitle( $wgCommunityCollectionNamespace, wfMsg( 'coll-collections' ) )->getPrefixedText() . '/';
         
             $url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'save_collection/' );
             $html .= <<<EOS
@@ -783,7 +772,7 @@ EOS
             ;
         } else {
             $href = SkinTemplate::makeSpecialUrl( 'Userlogin' );
-            $html .= '<p>' . wfMsg( 'login_to_save', array( 'href' => $href ) ) . '</p>';
+            $html .= '<p>' . wfMsg( 'coll-login_to_save', array( 'href' => $href ) ) . '</p>';
         }
         $this->outputBox( $html );
     }
@@ -791,14 +780,14 @@ EOS
     private function outputSaveOverwrite( $title ) {
         global $wgOut;
         
-        $wgOut->setPageTitle( wfMsg( 'save_collection' ) );
+        $wgOut->setPageTitle( wfMsg( 'coll-save_collection' ) );
         
-        $wgOut->addWikiText( '==' . wfMsg( 'overwrite_title' ) . '==' );
-        $wgOut->addWikiText( wfMsg( 'overwrite_text', array(
+        $wgOut->addWikiText( '==' . wfMsg( 'coll-overwrite_title' ) . '==' );
+        $wgOut->addWikiText( wfMsg( 'coll-overwrite_text', array(
             'title' => $title->getPrefixedText()
         ) ) );
-        $yes = wfMsgHtml( 'yes' );
-        $no = wfMsgHtml( 'no' );
+        $yes = wfMsgHtml( 'coll-yes' );
+        $no = wfMsgHtml( 'coll-no' );
         $escapedTitle = htmlspecialchars( $title->getPrefixedText() );
         $url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'save_collection/' );
         $wgOut->addHTML( <<<EOS
@@ -814,14 +803,14 @@ EOS
     private function outputLoadOverwrite( $title ) {
         global $wgOut;
         
-        $wgOut->setPageTitle( wfMsg( 'load_collection' ) );
+        $wgOut->setPageTitle( wfMsg( 'coll-load_collection' ) );
         
-        $wgOut->addWikiText( wfMsg( 'load_overwrite_text', array(
+        $wgOut->addWikiText( wfMsg( 'coll-load_overwrite_text', array(
             'title' => $title->getPrefixedText()
         ) ) );
-        $overwrite = wfMsgHtml( 'overwrite' );
-        $append = wfMsgHtml( 'append' );
-        $cancel = wfMsgHtml( 'cancel' );
+        $overwrite = wfMsgHtml( 'coll-overwrite' );
+        $append = wfMsgHtml( 'coll-append' );
+        $cancel = wfMsgHtml( 'coll-cancel' );
         $escapedTitle = htmlspecialchars( $title->getPrefixedText() );
         $url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'load_collection/' );
         $wgOut->addHTML( <<<EOS
@@ -849,14 +838,14 @@ EOS
     }
     
     static function isCollectionPage( $title, $article ) {
-        self::loadMessages();
+        wfLoadExtensionMessages( 'Collection' );
         
         if ( is_null( $title ) || is_null( $article ) ) {
             return false;
         }
         
         $categoryFinder = new Categoryfinder();
-        $categoryFinder->seed( array( $article->getID() ), array( wfMsg('collections') ) );
+        $categoryFinder->seed( array( $article->getID() ), array( wfMsg( 'coll-collections' ) ) );
         $articles = $categoryFinder->run();
         if ( $articles[0] == $article->getID() ) {
             return true;
@@ -870,8 +859,8 @@ EOS
         global $wgArticle;
         global $wgRequest;
         
-        self::loadMessages();
-        
+        wfLoadExtensionMessages( 'Collection' );
+
         $action = $wgRequest->getVal('action');
         
 		if ( $skinTemplate->iscontent && ( $action == '' || $action == 'view' || $action == 'purge' ) ) {
@@ -882,7 +871,7 @@ EOS
 			            'Collection',
 			            'download_collection_pdf/'
 			        ) . $params,
-			        'text' => wfMsg( 'download_as_pdf' ),
+			        'text' => wfMsg( 'coll-download_as_pdf' ),
 			    );
 	        } else {
 		        $params = '?arttitle=' . $skinTemplate->mTitle->getPrefixedURL();
@@ -895,7 +884,7 @@ EOS
 			            'Collection',
 			            'download_article_pdf/'
 			        ) . $params,
-			        'text' => wfMsg( 'download_as_pdf' )
+			        'text' => wfMsg( 'coll-download_as_pdf' )
 			    );
 	        }
 	    }
@@ -930,14 +919,14 @@ EOS
             return;
         }
         
-        self::loadMessages();
-        
-        $portletTitle = wfMsgHtml( 'portlet_title' );
-        $addArticle = wfMsgHtml( 'add_article' );
-        $removeArticle = wfMsgHtml( 'remove_article' );
-        $addCategory = wfMsgHtml( 'add_category' );
-        $loadCollection = wfMsgHtml( 'load_collection' );
-        $tooBigCat = wfMsgHtml( 'too_big_cat' );
+        wfLoadExtensionMessages( 'Collection' );
+
+        $portletTitle = wfMsgHtml( 'coll-portlet_title' );
+        $addArticle = wfMsgHtml( 'coll-add_article' );
+        $removeArticle = wfMsgHtml( 'coll-remove_article' );
+        $addCategory = wfMsgHtml( 'coll-add_category' );
+        $loadCollection = wfMsgHtml( 'coll-load_collection' );
+        $tooBigCat = wfMsgHtml( 'coll-too_big_cat' );
 
         print <<<EOS
         	<div id="p-collection" class="portlet">
@@ -987,19 +976,19 @@ EOS
             $wgOut->enableClientCache( false );
         }    
         if ( $numArticles == 1 ){
-            $articles = $numArticles . ' ' . wfMsgHtml( 'article' );
+            $articles = $numArticles . ' ' . wfMsgHtml( 'coll-article' );
         } else {
-            $articles = $numArticles . ' ' . wfMsgHtml( 'articles' );
+            $articles = $numArticles . ' ' . wfMsgHtml( 'coll-articles' );
         }
-        $showCollection = wfMsgHtml( 'show_collection' );
+        $showCollection = wfMsgHtml( 'coll-show_collection' );
         $showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
         print <<<EOS
                         <li><a href="$showURL">$showCollection<br/>
                           ($articles)</a></li>
 EOS
         ;
-        $helpCollections = wfMsgHtml( 'help_collections' );
-        $helpURL = htmlspecialchars( Title::makeTitle( NS_HELP, wfMsg( 'collections' ) )->getFullURL() );
+        $helpCollections = wfMsgHtml( 'coll-help_collections' );
+        $helpURL = htmlspecialchars( Title::makeTitle( NS_HELP, wfMsg( 'coll-collections' ) )->getFullURL() );
         print <<<EOS
                         <li><a href="$helpURL">$helpCollections</a></li>
         		    </ul>
