@@ -56,10 +56,11 @@ EOT;
 
 $wgExtensionCredits['specialpage'][] = array(
     'name' => 'Collection',
-    'version' => 1.0,
+    'version' => '1.0',
     'author' => 'PediaPress GmbH',
-    #'url' => 'http://code.pediapress.com/', # FIXME
+    'url' => 'http://www.mediawiki.org/wiki/Extension:Collection',
     'description' => 'Collect articles, generate PDFs',
+    'descriptionmsg' => 'coll-desc',
 );
 
 # register Special:Collection:
@@ -107,5 +108,3 @@ function wfAjaxPostCollection( $collection='' ) {
 }
 
 $wgAjaxExportList[] = 'wfAjaxPostCollection';
-
-?>
