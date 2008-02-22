@@ -1,0 +1,105 @@
+<?php
+
+/*
+ * Collection Extension for MediaWiki
+ *
+ * Copyright (C) 2008, PediaPress GmbH
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ * http://www.gnu.org/copyleft/gpl.html
+ */
+
+$allMessages = array(
+    'en' => array( 
+        'collection' => 'Collection',
+        'collections' => 'Collections',
+        
+        'portlet_title' => 'My Collection',
+        'add_article' => 'Add article',
+        'remove_article' => 'Remove article',
+        'add_category' => 'Add category',
+        'load_collection' => 'Load collection',
+        'show_collection' => 'Show collection',
+        'help_collections' => 'Collections help',
+        'empty' => 'empty',
+        'article' => 'article',
+        'articles' => 'articles',
+        'download_as_pdf' => 'Download as PDF',
+        'noscript_text' => '<noscript><h1>JavaScript is Required!</h1><strong>Your browser does not support JavaScript or JavaScript has been turned off. This page will not work correctly, unless JavaScript is enabled.</strong></noscript>',
+        'intro_text' => "You can collect articles, generate and download a PDF file from article collections and save article collections for later use or to share them.\n\nSee [[Help:Collections]] for more information about collections.",
+        
+        'pdftoobigcat' => 'The category contains more than %PARAM% articles, only the first %PARAM% articles can be added to your collection. Do you want to add them?',
+        'my_collection' => 'My Collection',
+        'download_title' => 'Download Collection as PDF',
+        'download_text' => 'To download an automatically generated PDF file of your article collection, click the button.',
+        'download_pdf' => 'Download PDF',
+        'remove' => 'Remove',
+        'move_to_top' => 'Move to top',
+        'move_up' => 'Move up',
+        'move_down' => 'Move down',
+        'move_to_bottom' => 'Move to bottom',
+        'title' => 'Title:',
+        'subtitle' => 'Subtitle:',
+        'contents' => 'Contents',
+        'create_chapter' => 'Create new chapter',
+        'sort_alphabetically' => 'Sort articles alphabetically',
+        'clear_collection' => 'Clear collection',
+        'clear_confirm' => 'Do you really want to clear your collection?',
+        'rename' => 'Rename',
+        'new_chapter' => 'Enter name for new chapter',
+        'rename_chapter' => 'Enter new name for chapter',
+        'no_such_category' => 'No such category',
+        'mwpdf_error_title' => 'Could not generate PDF',
+        'mwpdf_error_msg' => 'An error occured during PDF generation.',
+        'mwzip_error_title' => 'Could not generate article collection',
+        'mwzip_error_msg' => 'An error occured during generation of article collection.',
+        'notitle_title' => 'Could not get article title',
+        'notitle_title' => 'The title of the article could not be determined.',
+        'post_failed_title' => 'POST request failed',
+        'post_failed_msg' => 'The POST request failed.',
+        'enter_title' => 'Enter title for collection:',
+        'error_reponse' => 'Error response from server',
+        'empty_collection' => 'Empty collection',
+        'revision' => 'Revision: %PARAM%',
+
+        'save_collection_title' => 'Save Collection',
+        'save_collection_text' => 'To save this collection for later use, choose a collection type and enter a page title:',
+        'login_to_save' => 'If you want to save collections for later use, please <a href="$href">log in or create an account</a>.',
+        'personal_collection_label' => 'Personal collection:',
+        'community_collection_label' => 'Community collection:',
+        'save_collection' => 'Save Collection',
+        'overwrite_title' => 'Page exists. Overwrite?',
+        'overwrite_text' => 'A page with the name $title already exists. Do you want it to be replaced with your collection?',
+        'yes' => 'Yes',
+        'no' => 'No',
+        'load_overwrite_text' => 'You already have some articles in your collection. Do want to overwrite your current collection, append the new content or cancel?',
+        'overwrite' => 'Overwrite',
+        'append' => 'Append',
+        'cancel' => 'Cancel',
+        'limit_exceeded_title' => 'Collection Too Big',
+        'limit_exceeded_text' => 'Your article collection is too big. No more articles can be added.',
+        'generating_pdf_title' => 'Generating PDF',
+        'generating_pdf_text' => "'''Please wait while the PDF file is being generated.''' This page should automatically refresh every few seconds, if this does not work, please press refresh button of your browser.",
+        'pdf_finished_title' => 'PDF Generation Complete',
+        'pdf_finished_text' => "The PDF file has been generated. Click on the link below to download it to your computer.",
+        'nopdf_error_title' => 'No PDF file found',
+        'nopdf_error_text' => 'Could not find PDF file. Please re-generate the PDF file.',
+        'notfound_title' => 'Collection Not Found',
+        'notfound_text' => 'Could not find collection page.',
+        'return_to_collection' => '<p>Return to <a href="$referrer_link">$referrer_name</a></p>',
+        'articles_removed' => 'The following articles could not be rendered and were removed from the PDF file:',
+    )
+);
+?>
