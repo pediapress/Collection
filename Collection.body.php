@@ -622,7 +622,7 @@ EOS
             $article['revision'] = strval( $oldid );
         }
         
-        $revision = Revsion::newFromTitle( $title, $oldid );
+        $revision = Revision::newFromTitle( $title, $oldid );
         $article['timestamp'] = wfTimestamp( TS_UNIX, $revision->mTimestamp );
         
         $this->generatePDFFromCollection( array( 'items' => array( $article ) ), $title );
