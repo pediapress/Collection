@@ -547,7 +547,7 @@ EOS
                 'referrer_name' => htmlspecialchars( $pdfInfo['referrer_name'] )
             ) ) );
             if ( file_exists( $pdfInfo['removed_filename'] ) ) {
-                $wgOut->addWikiText( wfMsg( 'coll-articles_removed' ) );
+                $wgOut->addWikiText( wfMsg( 'coll-pages_removed' ) );
                 $lines = file( $pdfInfo['removed_filename'] );
                 foreach( $lines as $line ) {
                     $wgOut->addWikiText( '*' . $line );
@@ -922,8 +922,8 @@ EOS
         wfLoadExtensionMessages( 'Collection' );
 
         $portletTitle = wfMsgHtml( 'coll-portlet_title' );
-        $addArticle = wfMsgHtml( 'coll-add_article' );
-        $removeArticle = wfMsgHtml( 'coll-remove_article' );
+        $addArticle = wfMsgHtml( 'coll-add_page' );
+        $removeArticle = wfMsgHtml( 'coll-remove_page' );
         $addCategory = wfMsgHtml( 'coll-add_category' );
         $loadCollection = wfMsgHtml( 'coll-load_collection' );
         $tooBigCat = wfMsgHtml( 'coll-too_big_cat' );
@@ -976,9 +976,9 @@ EOS
             $wgOut->enableClientCache( false );
         }    
         if ( $numArticles == 1 ){
-            $articles = $numArticles . ' ' . wfMsgHtml( 'coll-article' );
+            $articles = $numArticles . ' ' . wfMsgHtml( 'coll-page' );
         } else {
-            $articles = $numArticles . ' ' . wfMsgHtml( 'coll-articles' );
+            $articles = $numArticles . ' ' . wfMsgHtml( 'coll-pages' );
         }
         $showCollection = wfMsgHtml( 'coll-show_collection' );
         $showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
