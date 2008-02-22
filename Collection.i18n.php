@@ -43,7 +43,8 @@ $messages['en'] = array(
 This page will not work correctly, unless JavaScript is enabled.</strong></noscript>',
 	'coll-intro_text' => "You can collect pages, generate and download a PDF file from page collections and save page collections for later use or to share them.
 
-See [[Help:Collections]] for more information about collections.",
+See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more information.",
+	'coll-helppage' => 'Help:Collections',
 	'coll-pdftoobigcat' => 'The category contains more than %PARAM% pages, only the first %PARAM% pages can be added to your collection.
 Do you want to add them?',
 	'coll-my_collection' => 'My Collection',
