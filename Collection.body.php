@@ -542,10 +542,10 @@ class Collection extends SpecialPage
 </table>
 EOS
             );
-            $wgOut->addHTML( wfMsg( 'coll-return_to_collection', array(
-                'referrer_link' => htmlspecialchars( $pdfInfo['referrer_link'] ),
-                'referrer_name' => htmlspecialchars( $pdfInfo['referrer_name'] )
-            ) ) );
+            $wgOut->addHTML( wfMsg( 'coll-return_to_collection',
+                htmlspecialchars( $pdfInfo['referrer_link'] ),
+                htmlspecialchars( $pdfInfo['referrer_name'] )
+            ) );
             if ( file_exists( $pdfInfo['removed_filename'] ) ) {
                 $wgOut->addWikiText( wfMsg( 'coll-pages_removed' ) );
                 $lines = file( $pdfInfo['removed_filename'] );
@@ -772,7 +772,7 @@ EOS
             ;
         } else {
             $href = SkinTemplate::makeSpecialUrl( 'Userlogin' );
-            $html .= '<p>' . wfMsg( 'coll-login_to_save', array( 'href' => $href ) ) . '</p>';
+            $html .= '<p>' . wfMsg( 'coll-login_to_save', $href ) . '</p>';
         }
         $this->outputBox( $html );
     }
