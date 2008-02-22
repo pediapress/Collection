@@ -64,9 +64,10 @@ $wgExtensionCredits['specialpage'][] = array(
 
 # register Special:Collection:
 
-$wgAutoloadClasses['Collection'] = dirname( __FILE__ ) . '/Collection.body.php';
+$dir = dirname(__FILE__) . '/';
+$wgAutoloadClasses['Collection'] = $dir . 'Collection.body.php';
+$wgExtensionMessagesFiles['Collection'] = $dir . 'Collection.i18n.php';
 $wgSpecialPages['Collection'] = 'Collection';
-$wgHooks['LoadAllMessages'][] = 'Collection::loadMessages';
 $wgHooks['LanguageGetSpecialPageAliases'][] = 'collectionLocalizedPageName';
 
 $wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'Collection::createNavURLs';
@@ -74,9 +75,9 @@ $wgHooks['MonoBookTemplateToolboxEnd'][] = 'Collection::insertMonoBookToolboxLin
 
 
 function collectionLocalizedPageName(&$specialPageArray, $code) {
-    Collection::loadMessages();
-    $text = wfMsg('collection');
-    $title = Title::newFromText($text);
+    wfLoadExtensionMessages( 'Collection' );
+    $text = wfMsg( 'coll-collection' );
+    $title = Title::newFromText( $text );
     $specialPageArray['Collection'][] = $title->getDBKey();
     return true;
 }
