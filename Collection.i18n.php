@@ -112,6 +112,14 @@ Click on the link below to download it to your computer.",
 	'coll-pages_removed' => 'The following pages could not be rendered and were removed from the PDF file:',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author SPQRobin
+ */
+$messages['af'] = array(
+	'coll-page'  => 'bladsy',
+	'coll-pages' => 'bladsye',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
@@ -317,6 +325,13 @@ Stáhnout ho můžete po kliknutí na následující odkaz:',
 	'coll-pages_removed'              => 'Následující stránky nebylo možné vykreslit a byly z PDF souboru odstraněny:',
 );
 
+/** Danish (Dansk)
+ * @author SPQRobin
+ */
+$messages['da'] = array(
+	'coll-empty' => 'tom',
+);
+
 /** Finnish (Suomi)
  * @author Cimon Avaro
  * @author Crt
@@ -419,6 +434,109 @@ Cliquez sur le lien ci-dessous pour le télécharger sur votre ordinateur.',
 	'coll-pages_removed'              => "Les pages suivantes n'ont pu être traitées et on été enlevées du fichier PDF :",
 );
 
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'coll-desc'                      => '[[Special:Collection|Strony zběrać]], PDF wutworić',
+	'coll-collection'                => 'Zběrka',
+	'coll-collections'               => 'Zběrki',
+	'coll-portlet_title'             => 'Moja zběrka',
+	'coll-add_page'                  => 'Stronu přidać',
+	'coll-remove_page'               => 'Stronu wotstronić',
+	'coll-add_category'              => 'Kategoriju přidać',
+	'coll-load_collection'           => 'Zběrku začitać',
+	'coll-show_collection'           => 'Zběrku pokazać',
+	'coll-help_collections'          => 'Pomoc zběrkow',
+	'coll-empty'                     => 'prózdna',
+	'coll-page'                      => 'strona',
+	'coll-pages'                     => 'strony',
+	'coll-download_as_pdf'           => 'Jako PDF sćahnyć',
+	'coll-helppage'                  => 'Pomoc:Zběrki',
+	'coll-my_collection'             => 'Moja zběrka',
+	'coll-download_title'            => 'Zběrku jako PDF sćahnyć',
+	'coll-download_pdf'              => 'PDF sćahnyć',
+	'coll-remove'                    => 'Wotstronić',
+	'coll-move_to_top'               => 'Cyle horje přesunyć',
+	'coll-move_up'                   => 'Horje přesunyć',
+	'coll-move_down'                 => 'Dele přesunyć',
+	'coll-move_to_bottom'            => 'Cyle dele přesunyć',
+	'coll-title'                     => 'Titul:',
+	'coll-subtitle'                  => 'Podtitul:',
+	'coll-contents'                  => 'Wobsah',
+	'coll-create_chapter'            => 'Nowy kapitl wutworić',
+	'coll-sort_alphabetically'       => 'Strony alfabetisce sortěrować',
+	'coll-clear_collection'          => 'Zběrku wuprózdnić',
+	'coll-clear_confirm'             => 'Chceš swoju zběrku woprawdźe wuprózdnić?',
+	'coll-rename'                    => 'Přemjenować',
+	'coll-new_chapter'               => 'Zapodaj mjeno za nowy kapitl',
+	'coll-rename_chapter'            => 'Zapodaj nowe mjeno za kapitl',
+	'coll-no_such_category'          => 'Žana tajka kategorija',
+	'coll-mwpdf_error_title'         => 'PDF njeda so wutworić',
+	'coll-mwpdf_error_msg'           => 'Při wutworjenju PDF je zmylk wustupił.',
+	'coll-mwzip_error_title'         => 'Zběrka stronow njeda so wutworić',
+	'coll-mwzip_error_msg'           => 'Při wutworjenju zběrku stronow je zmylk wustupił.',
+	'coll-notitle_title'             => 'Titul strony njeda so zwěsćić.',
+	'coll-enter_title'               => 'Zapodaj titul za zběrku:',
+	'coll-error_reponse'             => 'Serwer je zmylk zdźělił',
+	'coll-empty_collection'          => 'Prózdna zběrka',
+	'coll-revision'                  => 'Wersija: %PARAM%',
+	'coll-save_collection_title'     => 'Zběrku składować',
+	'coll-personal_collection_label' => 'Wosobinska zběrka:',
+	'coll-save_collection'           => 'Zběrku składować',
+	'coll-overwrite_title'           => 'Strona eksistuje. Přepisać?',
+	'coll-yes'                       => 'Haj',
+	'coll-no'                        => 'Ně',
+	'coll-overwrite'                 => 'Přepisać',
+	'coll-append'                    => 'Připójsnyć',
+	'coll-cancel'                    => 'Přetorhnyć',
+	'coll-limit_exceeded_title'      => 'Zběrka přewulka',
+	'coll-generating_pdf_title'      => 'Wutworjenje PDF',
+	'coll-nopdf_error_title'         => 'Žana dataja PDF namakana',
+	'coll-notfound_title'            => 'zběrka njenamakana',
+	'coll-notfound_text'             => 'Strona zběrki njebu namakana.',
+	'coll-return_to_collection'      => '<p>Wróćo k <a href="$1">$2</a></p>',
+);
+
+/** Icelandic (Íslenska)
+ * @author SPQRobin
+ */
+$messages['is'] = array(
+	'coll-empty' => 'tómur',
+	'coll-page'  => 'síða',
+	'coll-pages' => 'síður',
+	'coll-yes'   => 'Já',
+	'coll-no'    => 'Nei',
+);
+
+/** Khmer (ភាសាខ្មែរ)
+ * @author Chhorran
+ */
+$messages['km'] = array(
+	'coll-add_page'          => 'បន្ថែមទំព័រ',
+	'coll-remove_page'       => 'ដកចេញ ទំព័រ',
+	'coll-add_category'      => 'បន្ថែមចំណាត់ក្រុម',
+	'coll-empty'             => 'ទទេ',
+	'coll-page'              => 'ទំព័រ',
+	'coll-pages'             => 'ទំព័រ',
+	'coll-download_as_pdf'   => 'ទាញយក ជា​ PDF',
+	'coll-remove'            => 'ដកចេញ',
+	'coll-title'             => 'ចំណងជើង៖',
+	'coll-subtitle'          => 'ចំណងជើងរង៖',
+	'coll-contents'          => 'ខ្លឹមសារ',
+	'coll-create_chapter'    => 'បង្កើតជំពូកថ្មី',
+	'coll-rename'            => 'ប្តូរឈ្មោះ',
+	'coll-new_chapter'       => 'ដាក់ឈ្មោះអោយ ជំពូកថ្មី',
+	'coll-rename_chapter'    => 'ដាក់ឈ្មោះថ្មី អោយជំពូក',
+	'coll-no_such_category'  => 'គ្មានចំណាត់ក្រុម ដូចនេះទេ',
+	'coll-yes'               => 'បាទ / ចាស',
+	'coll-no'                => 'ទេ',
+	'coll-overwrite'         => 'សរសេរជាន់ពីលើ',
+	'coll-append'            => 'បន្ថែមនៅចុង',
+	'coll-cancel'            => 'បោះបង់',
+	'coll-nopdf_error_title' => 'រកមិនឃើញ ឯកសារ PDF',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -428,6 +546,7 @@ $messages['lb'] = array(
 	'coll-pages'                => 'Säiten',
 	'coll-download_as_pdf'      => 'Als PDF eroflueden',
 	'coll-download_pdf'         => 'PDF eroflueden',
+	'coll-remove'               => 'Ewechhuelen',
 	'coll-title'                => 'Titel:',
 	'coll-subtitle'             => 'Ënnertitel:',
 	'coll-sort_alphabetically'  => 'Säiten alphabetesch sortéieren',
@@ -900,6 +1019,9 @@ $messages['te'] = array(
 	'coll-yes'                        => 'అవును',
 	'coll-no'                         => 'కాదు',
 	'coll-limit_exceeded_title'       => 'సేకరణ మరీ పెద్దగా ఉంది',
+	'coll-nopdf_error_title'          => 'PDF ఫైలు కనపడలేదు',
 	'coll-notfound_title'             => 'సేకరణ కనబడలేదు',
+	'coll-notfound_text'              => 'సేకరణ పేజీ కనబడలేదు.',
+	'coll-return_to_collection'       => '<p>తిరిగి <a href="$1">$2</a>కి</p>',
 );
 
