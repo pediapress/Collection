@@ -215,6 +215,15 @@ $messages['ar'] = array(
  * @author DCLXVI
  */
 $messages['bg'] = array(
+	'coll-add_page'             => 'Добавяне на страница',
+	'coll-remove_page'          => 'Премахване на страница',
+	'coll-add_category'         => 'Добавяне на категория',
+	'coll-page'                 => 'страница',
+	'coll-pages'                => 'страници',
+	'coll-download_as_pdf'      => 'Изтегляне като PDF',
+	'coll-noscript_text'        => '<noscript><h1>Изисква се Джаваскрипт!</h1>
+<strong>Използваният браузър не поддържа Джаваскрипт или поддръжката на Джаваскрипт е изключена.
+Тази страница не може да работи правилно докато Джаваскриптът не бъде активиран.</strong></noscript>',
 	'coll-download_pdf'         => 'Изтегляне на PDF',
 	'coll-remove'               => 'Премахване',
 	'coll-move_to_top'          => 'Преместване в началото',
@@ -227,12 +236,19 @@ $messages['bg'] = array(
 	'coll-sort_alphabetically'  => 'Подреждане на страниците по азбучен ред',
 	'coll-rename'               => 'Преименуване',
 	'coll-no_such_category'     => 'Няма такава категория',
+	'coll-mwpdf_error_title'    => 'Не може да бъде генериран PDF файл',
+	'coll-mwpdf_error_msg'      => 'Възникна грешка при генерирането на PDF.',
 	'coll-yes'                  => 'Да',
 	'coll-no'                   => 'Не',
 	'coll-cancel'               => 'Отказване',
 	'coll-generating_pdf_title' => 'Генериране на PDF',
+	'coll-pdf_finished_title'   => 'Генерирането на PDF приключи успешно',
+	'coll-pdf_finished_text'    => 'PDF файлът беше генериран.
+Щракнете върху препратката по-долу за изтегляне на локалния компютър.',
 	'coll-nopdf_error_title'    => 'Не беше открит PDF файл',
+	'coll-nopdf_error_text'     => 'PDF файлът не може да бъде открит. Необходимо е да се генерира отново.',
 	'coll-return_to_collection' => '<p>Връщане към <a href="$1">$2</a></p>',
+	'coll-pages_removed'        => 'Следните страници не могат да бъдат обработени и бяха премахнати от PDF файла:',
 );
 
 /** Czech (Česky)
@@ -738,28 +754,32 @@ $messages['no'] = array(
  * @author Malafaya
  */
 $messages['pt'] = array(
-	'coll-desc'             => '[[{{ns:special}}:Collection|Colecciona páginas]], gera PDFs',
-	'coll-collection'       => 'Colecção',
-	'coll-collections'      => 'Colecções',
-	'coll-portlet_title'    => 'Minha Colecção',
-	'coll-add_page'         => 'Adicionar página',
-	'coll-remove_page'      => 'Remover página',
-	'coll-add_category'     => 'Adicionar categoria',
-	'coll-load_collection'  => 'Carregar colecção',
-	'coll-show_collection'  => 'Mostrar colecção',
-	'coll-help_collections' => 'Ajuda de colecções',
-	'coll-empty'            => 'vazia',
-	'coll-page'             => 'página',
-	'coll-pages'            => 'páginas',
-	'coll-download_as_pdf'  => 'Descarregar como PDF',
-	'coll-helppage'         => '{{ns:help}}:Colecções',
-	'coll-remove'           => 'Remover',
-	'coll-title'            => 'Título:',
-	'coll-subtitle'         => 'Subtítulo:',
-	'coll-contents'         => 'Conteúdo',
-	'coll-yes'              => 'Sim',
-	'coll-no'               => 'Não',
-	'coll-notfound_title'   => 'Colecção Não Encontrada',
+	'coll-desc'              => '[[{{ns:special}}:Collection|Colecciona páginas]], gera PDFs',
+	'coll-collection'        => 'Colecção',
+	'coll-collections'       => 'Colecções',
+	'coll-portlet_title'     => 'Minha Colecção',
+	'coll-add_page'          => 'Adicionar página',
+	'coll-remove_page'       => 'Remover página',
+	'coll-add_category'      => 'Adicionar categoria',
+	'coll-load_collection'   => 'Carregar colecção',
+	'coll-show_collection'   => 'Mostrar colecção',
+	'coll-help_collections'  => 'Ajuda de colecções',
+	'coll-empty'             => 'vazia',
+	'coll-page'              => 'página',
+	'coll-pages'             => 'páginas',
+	'coll-download_as_pdf'   => 'Descarregar como PDF',
+	'coll-helppage'          => '{{ns:help}}:Colecções',
+	'coll-my_collection'     => 'Minha Colecção',
+	'coll-download_pdf'      => 'Descarregar PDF',
+	'coll-remove'            => 'Remover',
+	'coll-title'             => 'Título:',
+	'coll-subtitle'          => 'Subtítulo:',
+	'coll-contents'          => 'Conteúdo',
+	'coll-rename'            => 'Renomear',
+	'coll-mwpdf_error_title' => 'Não foi possível gerar PDF',
+	'coll-yes'               => 'Sim',
+	'coll-no'                => 'Não',
+	'coll-notfound_title'    => 'Colecção Não Encontrada',
 );
 
 /** Russian (Русский)
