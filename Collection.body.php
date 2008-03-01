@@ -759,11 +759,11 @@ EOS
     <input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked"></input>
     <label for="personalCollType">$personalColl</label>
     <label for="personalCollTitle">$personalTitle</label>
-    <input id="personalCollTitle" type="text" name="pcollname"></input><br/>
+    <input id="personalCollTitle" type="text" name="pcollname"></input><br />
     <input id="communityCollType" type="radio" name="colltype" value="community"></input>
     <label for="communityCollType">$communityColl</label>
     <label for="communityCollTitle">$communityTitle</label>
-    <input id="communityCollTitle" type="text" name="ccollname" disabled="disabled"></input><br/>
+    <input id="communityCollTitle" type="text" name="ccollname" disabled="disabled"></input><br />
     <input id="saveButton" type="submit" value="$saveColl" disabled="disabled"></input>
     <input id="saveTitle" name="saveTitle" type="hidden"></input>
     <input id="saveSubtitle" name="saveSubtitle" type="hidden"></input>
@@ -983,7 +983,7 @@ EOS
         $showCollection = wfMsgHtml( 'coll-show_collection' );
         $showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
         print <<<EOS
-                        <li><a href="$showURL">$showCollection<br/>
+                        <li><a href="$showURL">$showCollection<br />
                           ($articles)</a></li>
 EOS
         ;
