@@ -450,6 +450,72 @@ Cliquez sur le lien ci-dessous pour le télécharger sur votre ordinateur.',
 	'coll-pages_removed'              => "Les pages suivantes n'ont pu être traitées et on été enlevées du fichier PDF :",
 );
 
+/** Galician (Galego)
+ * @author Toliño
+ * @author Alma
+ */
+$messages['gl'] = array(
+	'coll-collection'                => 'Colección',
+	'coll-collections'               => 'Coleccións',
+	'coll-portlet_title'             => 'A miña colección',
+	'coll-add_page'                  => 'Engadir páxina',
+	'coll-remove_page'               => 'Eliminar páxina',
+	'coll-add_category'              => 'Engadir categoría',
+	'coll-load_collection'           => 'Cargar colección',
+	'coll-show_collection'           => 'Mostrar colección',
+	'coll-help_collections'          => 'Axuda coas coleccións',
+	'coll-empty'                     => 'baleiro',
+	'coll-page'                      => 'páxina',
+	'coll-pages'                     => 'páxinas',
+	'coll-download_as_pdf'           => 'Descargar como PDF',
+	'coll-noscript_text'             => '<noscript><h1>Requírese o JavaScript!</h1>
+<strong>O seu navegador non soporta o JavaScript ou o JavaScript foi deshabilitado.
+Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa habilitado.</strong></noscript>',
+	'coll-helppage'                  => 'Help:Collections',
+	'coll-my_collection'             => 'A miña colección',
+	'coll-download_title'            => 'Descargar a colección como arquivo PDF',
+	'coll-download_pdf'              => 'Descargar PDF',
+	'coll-remove'                    => 'Eliminar',
+	'coll-move_to_top'               => 'Ir arriba',
+	'coll-move_up'                   => 'Mover arriba',
+	'coll-move_down'                 => 'Mover abaixo',
+	'coll-move_to_bottom'            => 'Ir abaixo',
+	'coll-title'                     => 'Título:',
+	'coll-subtitle'                  => 'Subtítulo:',
+	'coll-contents'                  => 'Contidos',
+	'coll-create_chapter'            => 'Crear un novo capítulo',
+	'coll-clear_collection'          => 'Borrar colección',
+	'coll-clear_confirm'             => 'Seguro que desexa eliminar a súa colección?',
+	'coll-rename'                    => 'Renomear',
+	'coll-mwpdf_error_title'         => 'Non se pode xerar o PDF',
+	'coll-mwpdf_error_msg'           => 'Ocorreu un erro durante a xeración do PDF.',
+	'coll-mwzip_error_title'         => 'Non se pode xerar a páxina da colección',
+	'coll-mwzip_error_msg'           => 'Ocorreu un erro durante a xeración da páxina da colección.',
+	'coll-enter_title'               => 'Escriba un título para a colección:',
+	'coll-error_reponse'             => 'Ocorreu un erro no servidor',
+	'coll-empty_collection'          => 'Colección baleira',
+	'coll-save_collection_title'     => 'Gardar a colección',
+	'coll-personal_collection_label' => 'Colección persoal:',
+	'coll-save_collection'           => 'Gardar a colección',
+	'coll-overwrite_title'           => 'A páxina existe. Desexa sobreescribir?',
+	'coll-yes'                       => 'Si',
+	'coll-no'                        => 'Non',
+	'coll-overwrite'                 => 'Sobreescribir',
+	'coll-append'                    => 'Adxuntar',
+	'coll-cancel'                    => 'Cancelar',
+	'coll-limit_exceeded_title'      => 'Colección moi grande',
+	'coll-limit_exceeded_text'       => 'A súa páxina de colección é moi grande.
+Non se poden engadir máis páxinas.',
+	'coll-generating_pdf_title'      => 'Xerando PDF',
+	'coll-pdf_finished_title'        => 'Completada a xeración do PDF',
+	'coll-pdf_finished_text'         => 'O arquivo PDF foi xerado.
+Faga clic na ligazón de embaixo para descargalo no seu ordenador.',
+	'coll-nopdf_error_title'         => 'Non se atopou o arquivo PDF',
+	'coll-notfound_title'            => 'Non se pode atopar a colección',
+	'coll-notfound_text'             => 'Non se pode atopar a páxina da colección.',
+	'coll-return_to_collection'      => '<p>Voltar a <a href="$1">$2</a></p>',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -636,6 +702,7 @@ $messages['km'] = array(
 	'coll-new_chapter'       => 'ដាក់ឈ្មោះអោយ ជំពូកថ្មី',
 	'coll-rename_chapter'    => 'ដាក់ឈ្មោះថ្មី អោយជំពូក',
 	'coll-no_such_category'  => 'គ្មានចំណាត់ក្រុម ដូចនេះទេ',
+	'coll-overwrite_title'   => 'ទំព័រ មានហើយ។ សរសេរ ជាន់ពីលើ ?',
 	'coll-yes'               => 'បាទ / ចាស',
 	'coll-no'                => 'ទេ',
 	'coll-overwrite'         => 'សរសេរជាន់ពីលើ',
@@ -665,6 +732,17 @@ $messages['lb'] = array(
 	'coll-overwrite'            => 'Iwwerschreiwen',
 	'coll-nopdf_error_title'    => 'Kee PDF Fichier fonnt',
 	'coll-return_to_collection' => '<p>Zréck op <a href="$1">$2</a></p>',
+);
+
+/** Lao (ລາວ)
+ * @author Passawuth
+ */
+$messages['lo'] = array(
+	'coll-page'   => 'ໜ້າ',
+	'coll-pages'  => 'ໜ້າ',
+	'coll-remove' => 'ເອົາອອກ',
+	'coll-yes'    => 'ໃຊ່',
+	'coll-no'     => 'ບໍ່ໃຊ່',
 );
 
 /** Dutch (Nederlands)
@@ -965,6 +1043,8 @@ $messages['pt'] = array(
 	'coll-mwpdf_error_title'     => 'Não foi possível gerar PDF',
 	'coll-post_failed_title'     => 'Pedido POST falhou',
 	'coll-post_failed_msg'       => 'O pedido POST falhou.',
+	'coll-error_reponse'         => 'Resposta de erro do servidor',
+	'coll-empty_collection'      => 'Colecção vazia',
 	'coll-save_collection_title' => 'Gravar Colecção',
 	'coll-overwrite_title'       => 'A página existe. Escrever por cima?',
 	'coll-yes'                   => 'Sim',
@@ -1199,6 +1279,7 @@ Inga mer sidor kan läggas till.',
  * @author Veeven
  */
 $messages['te'] = array(
+	'coll-desc'                       => '[[Special:Collection|పేజీలను సేకరించండి]], PDFలను తయారుచేసుకోండి',
 	'coll-collection'                 => 'సేరకణ',
 	'coll-collections'                => 'సేరకణలు',
 	'coll-portlet_title'              => 'నా సేకరణ',
@@ -1212,15 +1293,24 @@ $messages['te'] = array(
 	'coll-pages'                      => 'పేజీలు',
 	'coll-download_as_pdf'            => 'PDFగా దిగుమతి చేసుకోండి',
 	'coll-helppage'                   => 'Help:సేకరణలు',
+	'coll-pdftoobigcat'               => 'ఆ వర్గంలో %PARAM% కంటే ఎక్కువ పేజీలున్నాయి, అందులో మొదటి %PARAM% పేజీలును మాత్రమే మీ సేకరణకి చేర్చగలం.
+వాటిని చేర్చమంటారా?',
 	'coll-my_collection'              => 'నా సేకరణ',
+	'coll-download_title'             => 'సేకరణని PDFగా దిగుమతి చేసుకోండి',
+	'coll-download_pdf'               => 'PDFని దిగుమతి చేసుకోండి',
 	'coll-remove'                     => 'తొలగించు',
 	'coll-title'                      => 'శీర్షిక:',
 	'coll-subtitle'                   => 'ఉపశీర్షిక:',
 	'coll-contents'                   => 'విషయాలు',
+	'coll-sort_alphabetically'        => 'పేజీలను అక్షరక్రమంలో అమర్చు',
+	'coll-clear_collection'           => 'సేకరణని తుడిచివేయి',
+	'coll-clear_confirm'              => 'మీరు నిజంగానే మీ సేకరణని తుడిచివేయాలనుకుంటున్నారా?',
 	'coll-rename'                     => 'పేరుమార్చు',
 	'coll-no_such_category'           => 'అటువంటి వర్గం లేదు',
+	'coll-mwpdf_error_title'          => 'PDFని తయారుచేయలేకపోయాం',
 	'coll-mwpdf_error_msg'            => 'PDF తయారీలో ఏదో పొరపాటు జరిగింది.',
 	'coll-enter_title'                => 'సేకరణకి శీర్షిక ఇవ్వండి:',
+	'coll-error_reponse'              => 'సర్వరునుండి పొరపాటు అని స్పందన వచ్చింది',
 	'coll-empty_collection'           => 'ఖాళీ సేకరణ',
 	'coll-revision'                   => 'కూర్పు: %PARAM%',
 	'coll-save_collection_title'      => 'సేకరణని భద్రపరచండి',
@@ -1230,7 +1320,14 @@ $messages['te'] = array(
 	'coll-yes'                        => 'అవును',
 	'coll-no'                         => 'కాదు',
 	'coll-limit_exceeded_title'       => 'సేకరణ మరీ పెద్దగా ఉంది',
+	'coll-limit_exceeded_text'        => 'మీ పేజీ సేకరణ చాలా పెద్దగా ఉంది.
+మరిన్ని పేజీలు చేర్చలేము.',
+	'coll-generating_pdf_title'       => 'PDFని తయారుచేస్తున్నాం',
+	'coll-pdf_finished_title'         => 'PDF తయారీ పూర్తయ్యింది',
+	'coll-pdf_finished_text'          => 'PDF ఫైలు తయారయ్యింది.
+దాన్ని మీ కంప్యూటర్లోనికి దిగుమతి చేసుకోడానికి క్రిందనిచ్చిన లింకుపై నొక్కండి.',
 	'coll-nopdf_error_title'          => 'PDF ఫైలు కనపడలేదు',
+	'coll-nopdf_error_text'           => 'PDF ఫైలు కనబడలేదు. దయచేసి PDF ఫైలుని మళ్ళీ తయారు చేయండి.',
 	'coll-notfound_title'             => 'సేకరణ కనబడలేదు',
 	'coll-notfound_text'              => 'సేకరణ పేజీ కనబడలేదు.',
 	'coll-return_to_collection'       => '<p>తిరిగి <a href="$1">$2</a>కి</p>',
