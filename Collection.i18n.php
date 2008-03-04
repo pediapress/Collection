@@ -218,6 +218,7 @@ $messages['bg'] = array(
 	'coll-add_page'             => 'Добавяне на страница',
 	'coll-remove_page'          => 'Премахване на страница',
 	'coll-add_category'         => 'Добавяне на категория',
+	'coll-empty'                => 'празна',
 	'coll-page'                 => 'страница',
 	'coll-pages'                => 'страници',
 	'coll-download_as_pdf'      => 'Изтегляне като PDF',
@@ -238,8 +239,11 @@ $messages['bg'] = array(
 	'coll-no_such_category'     => 'Няма такава категория',
 	'coll-mwpdf_error_title'    => 'Не може да бъде генериран PDF файл',
 	'coll-mwpdf_error_msg'      => 'Възникна грешка при генерирането на PDF.',
+	'coll-overwrite_title'      => 'Страницата съществува. Заместване?',
 	'coll-yes'                  => 'Да',
 	'coll-no'                   => 'Не',
+	'coll-overwrite'            => 'Заместване',
+	'coll-append'               => 'Добавяне',
 	'coll-cancel'               => 'Отказване',
 	'coll-generating_pdf_title' => 'Генериране на PDF',
 	'coll-pdf_finished_title'   => 'Генерирането на PDF приключи успешно',
@@ -346,6 +350,35 @@ Stáhnout ho můžete po kliknutí na následující odkaz:',
  */
 $messages['da'] = array(
 	'coll-empty' => 'tom',
+);
+
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'coll-add_page'             => 'Aldonu paĝon',
+	'coll-remove_page'          => 'Forigu paĝon',
+	'coll-add_category'         => 'Aldonu kategorion',
+	'coll-empty'                => 'malplena',
+	'coll-page'                 => 'paĝo',
+	'coll-pages'                => 'paĝoj',
+	'coll-download_as_pdf'      => 'Alŝutu kiel PDF',
+	'coll-download_pdf'         => 'Alŝutu PDF',
+	'coll-remove'               => 'Forigu',
+	'coll-move_up'              => 'Movu supren',
+	'coll-move_down'            => 'Movu suben',
+	'coll-title'                => 'Titolo:',
+	'coll-subtitle'             => 'Subtitolo:',
+	'coll-contents'             => 'Enhavaĵoj',
+	'coll-create_chapter'       => 'Kreu novan ĉapitron',
+	'coll-rename'               => 'Alinomigu',
+	'coll-no_such_category'     => 'Nenia kategorio',
+	'coll-mwpdf_error_title'    => 'Ne eblis generi PDF-on',
+	'coll-revision'             => 'Revizio: %PARAM%',
+	'coll-yes'                  => 'Jes',
+	'coll-no'                   => 'Ne',
+	'coll-generating_pdf_title' => 'Generante PDF',
+	'coll-nopdf_error_title'    => 'Neniu PDF-dosiero trovita',
 );
 
 /** Finnish (Suomi)
@@ -693,6 +726,7 @@ $messages['km'] = array(
 	'coll-page'              => 'ទំព័រ',
 	'coll-pages'             => 'ទំព័រ',
 	'coll-download_as_pdf'   => 'ទាញយក ជា​ PDF',
+	'coll-download_pdf'      => 'ទាញយក PDF',
 	'coll-remove'            => 'ដកចេញ',
 	'coll-title'             => 'ចំណងជើង៖',
 	'coll-subtitle'          => 'ចំណងជើងរង៖',
@@ -942,7 +976,7 @@ $messages['oc'] = array(
 Aquesta pagina s'aficharà pas corrèctament tant que javascript es pas activat.</strong></noscript>",
 	'coll-intro_text'                 => "Podètz collectar de paginas, generar e telecargar de fichièrs PDF dempuèi las colleccions de paginas o de las salvagardas de las dichas colleccions per un usatge ulterior o per las pertejar.
 
-Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entre-senhas.",
+Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entresenhas.",
 	'coll-helppage'                   => 'Ajuda:Collections',
 	'coll-pdftoobigcat'               => 'La categoria conten mai de %PARAM% paginas, solas las primièras %PARAM% paginas pòdon èsser ajustadas dins vòstra compilacion.
 Las volètz ajustar ?',
@@ -1046,9 +1080,12 @@ $messages['pt'] = array(
 	'coll-error_reponse'         => 'Resposta de erro do servidor',
 	'coll-empty_collection'      => 'Colecção vazia',
 	'coll-save_collection_title' => 'Gravar Colecção',
+	'coll-save_collection'       => 'Gravar Colecção',
 	'coll-overwrite_title'       => 'A página existe. Escrever por cima?',
 	'coll-yes'                   => 'Sim',
 	'coll-no'                    => 'Não',
+	'coll-limit_exceeded_title'  => 'Colecção Demasiado Grande',
+	'coll-pdf_finished_title'    => 'Geração de PDF Completada',
 	'coll-notfound_title'        => 'Colecção Não Encontrada',
 );
 
@@ -1251,6 +1288,7 @@ $messages['sv'] = array(
 	'coll-page'                      => 'sida',
 	'coll-pages'                     => 'sidor',
 	'coll-download_as_pdf'           => 'Ladda ner som PDF',
+	'coll-helppage'                  => 'Help:Samlingar',
 	'coll-my_collection'             => 'Min samling',
 	'coll-download_title'            => 'Ladda ner samling som PDF',
 	'coll-download_text'             => 'För att ladda ner en automatisk genererad PDF fil av din sidsamling, klicka på knappen.',
@@ -1262,6 +1300,15 @@ $messages['sv'] = array(
 	'coll-move_to_bottom'            => 'Flytta till botten',
 	'coll-title'                     => 'Titel:',
 	'coll-subtitle'                  => 'Undertitel:',
+	'coll-contents'                  => 'Innehåll',
+	'coll-create_chapter'            => 'Skapa nytt kapitel',
+	'coll-sort_alphabetically'       => 'Sortera sidor alfabetiskt',
+	'coll-clear_collection'          => 'Töm samling',
+	'coll-clear_confirm'             => 'Vill du verkligen tömma din samling?',
+	'coll-rename'                    => 'Byt name',
+	'coll-new_chapter'               => 'Välj ett namn för det nya kapitlet',
+	'coll-rename_chapter'            => 'Välj ett nytt namn för kapitlet',
+	'coll-no_such_category'          => 'Ingen sådan kategori',
 	'coll-empty_collection'          => 'Tom samling',
 	'coll-save_collection_title'     => 'Spara samling',
 	'coll-personal_collection_label' => 'Personlig samling:',
@@ -1270,9 +1317,12 @@ $messages['sv'] = array(
 	'coll-yes'                       => 'Ja',
 	'coll-no'                        => 'Nej',
 	'coll-overwrite'                 => 'Skriv över',
+	'coll-cancel'                    => 'Avbryt',
 	'coll-limit_exceeded_title'      => 'Samlingen är för stor',
 	'coll-limit_exceeded_text'       => 'Din sid samling är för stor.
 Inga mer sidor kan läggas till.',
+	'coll-nopdf_error_title'         => 'Ingen PDF fil funnen',
+	'coll-notfound_title'            => 'Samling inte funnen',
 );
 
 /** Telugu (తెలుగు)
@@ -1309,6 +1359,8 @@ $messages['te'] = array(
 	'coll-no_such_category'           => 'అటువంటి వర్గం లేదు',
 	'coll-mwpdf_error_title'          => 'PDFని తయారుచేయలేకపోయాం',
 	'coll-mwpdf_error_msg'            => 'PDF తయారీలో ఏదో పొరపాటు జరిగింది.',
+	'coll-mwzip_error_msg'            => 'పేజీల సేకరణ తయారీలో పొరపాటు జరిగింది.',
+	'coll-notitle_title'              => 'ఆ పేజీ యొక్క శీర్షికని నిర్ణయించలేకున్నాం.',
 	'coll-enter_title'                => 'సేకరణకి శీర్షిక ఇవ్వండి:',
 	'coll-error_reponse'              => 'సర్వరునుండి పొరపాటు అని స్పందన వచ్చింది',
 	'coll-empty_collection'           => 'ఖాళీ సేకరణ',
@@ -1317,6 +1369,7 @@ $messages['te'] = array(
 	'coll-personal_collection_label'  => 'వ్యక్తిగత సేరకణ:',
 	'coll-community_collection_label' => 'సామూహిక సేకరణ:',
 	'coll-save_collection'            => 'సేకరణని భద్రపరచు',
+	'coll-overwrite_title'            => 'పేజీ ఉంది. దానిపైనే రాసేయాలా?',
 	'coll-yes'                        => 'అవును',
 	'coll-no'                         => 'కాదు',
 	'coll-limit_exceeded_title'       => 'సేకరణ మరీ పెద్దగా ఉంది',
