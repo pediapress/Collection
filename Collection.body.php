@@ -254,6 +254,7 @@ class Collection extends SpecialPage
         $revision = Revision::newFromTitle( $title, $oldid );
         $collection['items'][] = array(
             'type' => 'article',
+            'content-type' => 'text/x-wiki',
             'title' => $title->getPrefixedText(),
             'revision' => strval( $oldid ),
             'latest' => strval( $latest ),
@@ -385,6 +386,7 @@ class Collection extends SpecialPage
                 }
                 $d = array(
                     'type' => 'article',
+                    'content-type' => 'text/x-wiki',
                     'title' => $articleTitle->getPrefixedText(),
                     'latest' => $latest,
                     'revision' => $oldid,
@@ -605,6 +607,7 @@ EOS
         }
         $article = array(
             'type' => 'article',
+            'content-type' => 'text/x-wiki',
             'title' => $title->getPrefixedText()
         );
         if ( $oldid ) {
