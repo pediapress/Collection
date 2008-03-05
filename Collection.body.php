@@ -510,7 +510,7 @@ class Collection extends SpecialPage
         if ( $rc == 0 ) {
             $wgOut->redirect( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generating_pdf/' ) );
         } else {
-            $wgOut->showErrorPage( 'mwpdf_error_title', 'mwpdf_error_msg' );
+            $wgOut->showErrorPage( 'coll-mwpdf_error_title', 'coll-mwpdf_error_msg' );
         }
     }
     
@@ -556,7 +556,7 @@ EOS
                 }
             }
         } else if ( file_exists( $pdfInfo['error_filename'] ) ) {
-            $wgOut->showErrorPage( 'mwpdf_error_title', 'mwpdf_error_msg' );
+            $wgOut->showErrorPage( 'coll-mwpdf_error_title', 'coll-mwpdf_error_msg' );
         } else {
             $wgRequest->response()->header( 'Expires: ' . gmdate( 'D, d M Y H:i:s', 0 ) . ' GMT' );
     		$wgRequest->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
