@@ -779,6 +779,14 @@ $messages['lo'] = array(
 	'coll-no'     => 'ບໍ່ໃຊ່',
 );
 
+/** Marathi (मराठी)
+ * @author Mahitgar
+ */
+$messages['mr'] = array(
+	'coll-yes' => 'होय',
+	'coll-no'  => 'नाही',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  * @author SPQRobin
@@ -1042,6 +1050,31 @@ Clicatz sul ligam çaijós per lo telecargar sus vòstre ordinator.',
 	'coll-notfound_text'              => 'Pòt pas trobar la compilacion.',
 	'coll-return_to_collection'       => '<p>Tornar a <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'Las paginas seguentas an pas pogut èsser tractadas e son estadas levadas del fichièr PDF :',
+);
+
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'coll-collection'            => 'غونډ',
+	'coll-collections'           => 'غونډونه',
+	'coll-portlet_title'         => 'زما غونډ',
+	'coll-add_page'              => 'مخ ورګډول',
+	'coll-add_category'          => 'وېشنيزه ورګډول',
+	'coll-help_collections'      => 'د غونډونو لارښود',
+	'coll-empty'                 => 'تش',
+	'coll-page'                  => 'مخ',
+	'coll-pages'                 => 'مخونه',
+	'coll-download_as_pdf'       => 'د PDF په توګه راښکته کول',
+	'coll-my_collection'         => 'زما غونډ',
+	'coll-title'                 => 'سرليک:',
+	'coll-contents'              => 'مينځپانګه',
+	'coll-create_chapter'        => 'يو نوی څپرکی جوړول',
+	'coll-save_collection_title' => 'غونډ خوندي کول',
+	'coll-yes'                   => 'هو',
+	'coll-no'                    => 'نه',
+	'coll-nopdf_error_title'     => 'هېڅ کومه PDF دوتنه و نه موندلای شوه',
+	'coll-notfound_title'        => 'غونډ و نه موندلای شو',
 );
 
 /** Portuguese (Português)
@@ -1359,6 +1392,7 @@ $messages['te'] = array(
 	'coll-no_such_category'           => 'అటువంటి వర్గం లేదు',
 	'coll-mwpdf_error_title'          => 'PDFని తయారుచేయలేకపోయాం',
 	'coll-mwpdf_error_msg'            => 'PDF తయారీలో ఏదో పొరపాటు జరిగింది.',
+	'coll-mwzip_error_title'          => 'పేజీ సేకరణని తయారుచేయలేకున్నాం',
 	'coll-mwzip_error_msg'            => 'పేజీల సేకరణ తయారీలో పొరపాటు జరిగింది.',
 	'coll-notitle_title'              => 'ఆ పేజీ యొక్క శీర్షికని నిర్ణయించలేకున్నాం.',
 	'coll-enter_title'                => 'సేకరణకి శీర్షిక ఇవ్వండి:',
@@ -1366,10 +1400,14 @@ $messages['te'] = array(
 	'coll-empty_collection'           => 'ఖాళీ సేకరణ',
 	'coll-revision'                   => 'కూర్పు: %PARAM%',
 	'coll-save_collection_title'      => 'సేకరణని భద్రపరచండి',
+	'coll-save_collection_text'       => 'ఈ సేకరణని తర్వాత వాడుకోడానికి భద్రపరచుకోవాలంటే, ఓ సేకరణ రకాన్ని ఎంచుకోండి మరియు పేజీ శీర్షిక ఇవ్వండి:',
+	'coll-login_to_save'              => 'సేకరణలని మీరు తర్వాత వాడుకోవడానికి భద్రపరచుకోవాలనుకుంటే, <a href="$1">లోనికి ప్రవేశించండి లేదా ఖాతా సృష్టించుకోండి</a>.',
 	'coll-personal_collection_label'  => 'వ్యక్తిగత సేరకణ:',
 	'coll-community_collection_label' => 'సామూహిక సేకరణ:',
 	'coll-save_collection'            => 'సేకరణని భద్రపరచు',
 	'coll-overwrite_title'            => 'పేజీ ఉంది. దానిపైనే రాసేయాలా?',
+	'coll-overwrite_text'             => '$title అనే పేరుతో ఓ పేజీ ఇప్పటికే ఉంది.
+దాని స్ధానంలో మీ సేకరణని ఉంచాలా?',
 	'coll-yes'                        => 'అవును',
 	'coll-no'                         => 'కాదు',
 	'coll-limit_exceeded_title'       => 'సేకరణ మరీ పెద్దగా ఉంది',
