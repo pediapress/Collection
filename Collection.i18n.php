@@ -1052,6 +1052,30 @@ Clicatz sul ligam çaijós per lo telecargar sus vòstre ordinator.',
 	'coll-pages_removed'              => 'Las paginas seguentas an pas pogut èsser tractadas e son estadas levadas del fichièr PDF :',
 );
 
+/** Polish (Polski)
+ * @author McMonster
+ */
+$messages['pl'] = array(
+	'coll-empty'             => 'pusty',
+	'coll-page'              => 'strona',
+	'coll-pages'             => 'strony',
+	'coll-download_as_pdf'   => 'Pobierz jako PDF',
+	'coll-noscript_text'     => '<noscript><h1>Potrzebny JavaScript!</h1>
+<strong>Twoja przeglądarka nie obsługuje JavaScript lub został on wyłączony.
+Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączony.</strong></noscript>',
+	'coll-remove'            => 'Usuń',
+	'coll-rename'            => 'Zmień nazwę',
+	'coll-new_chapter'       => 'Wprowadź nazwę dla nowego rozdziału',
+	'coll-rename_chapter'    => 'Wprowadź nową nazwę dla rozdziału',
+	'coll-overwrite_title'   => 'Strona już istnieje. Nadpisać?',
+	'coll-yes'               => 'Tak',
+	'coll-no'                => 'Nie',
+	'coll-overwrite'         => 'Nadpisz',
+	'coll-append'            => 'Dopisz',
+	'coll-cancel'            => 'Anuluj',
+	'coll-nopdf_error_title' => 'Nie znaleziono pliku PDF',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
@@ -1122,6 +1146,7 @@ Deseja adicioná-las?',
 	'coll-mwpdf_error_msg'            => 'Um erro ocorreu durante a criação do PDF.',
 	'coll-mwzip_error_title'          => 'Não foi fossível criar a colecção de páginas',
 	'coll-mwzip_error_msg'            => 'Um erro ocorreu durante a criação da colecção de páginas.',
+	'coll-notitle_title'              => 'Não foi possível determinar o título da página.',
 	'coll-post_failed_title'          => 'Pedido POST falhou',
 	'coll-post_failed_msg'            => 'O pedido POST falhou.',
 	'coll-enter_title'                => 'Introduza título para a colecção:',
@@ -1129,6 +1154,7 @@ Deseja adicioná-las?',
 	'coll-empty_collection'           => 'Colecção vazia',
 	'coll-revision'                   => 'Revisão: %PARAM%',
 	'coll-save_collection_title'      => 'Gravar Colecção',
+	'coll-save_collection_text'       => 'Para guardar uma colecção para uso futuro, escolha um tipo de colecção e introduza o título da página:',
 	'coll-personal_collection_label'  => 'Colecção pessoal:',
 	'coll-community_collection_label' => 'Colecção comunitária:',
 	'coll-save_collection'            => 'Gravar Colecção',
@@ -1139,7 +1165,10 @@ Deseja adicioná-las?',
 	'coll-limit_exceeded_title'       => 'Colecção Demasiado Grande',
 	'coll-generating_pdf_title'       => 'A criar PDF',
 	'coll-pdf_finished_title'         => 'Geração de PDF Completada',
+	'coll-pdf_finished_text'          => 'O ficheiro PDF foi gerado.
+Carregue na ligação abaixo para o guardar no seu computador.',
 	'coll-nopdf_error_title'          => 'Nenhum ficheiro PDF encontrado',
+	'coll-nopdf_error_text'           => 'Não foi possível encotrar o ficheiro PDF. Por favor, volte a gerar o ficheiro PDF.',
 	'coll-notfound_title'             => 'Colecção Não Encontrada',
 	'coll-notfound_text'              => 'Não foi possível encontrar a página da colecção.',
 );
