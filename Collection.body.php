@@ -26,6 +26,15 @@ require_once( 'StreamFile.php' );
 
 class Collection extends SpecialPage
 {
+    var $mPODPartners = array(
+        'pediapress' => array(
+            'name' => 'PediaPress',
+            'logourl' => 'http://pediapress.com/resources/images/logo-32x32.png',
+            'url' => 'http://pediapress.com/',
+            'posturl' => 'http://pediapress.com/api/collections/',
+        ),
+    );
+    
     public function __construct() {
         SpecialPage::SpecialPage( "Collection" );
     }
@@ -173,12 +182,16 @@ class Collection extends SpecialPage
         } else if ( $par == 'download_collection_pdf/' ) {
             $title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
             return $this->downloadCollectionPDF( $title );
+        } else if ( $par == 'post_pdf/' ) {
+            $partner = $wgRequest->getVal( 'partner', '' );
+            return $this->postPDF( $partner );
         }
         
         $this->setHeaders();
         $wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgStylePath/common/collection/json2.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
         $wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgStylePath/common/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
         $wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );
+        $this->outputBookSection();
         $this->outputDownloadSection();
         $this->outputSaveSection();
         $this->outputIntro();
@@ -627,6 +640,44 @@ EOS
         }
     }
     
+    function postPDF( $partner ) {
+        global $wgOut;
+        global $wgMWZipCommand;
+        global $wgMWLibConfig;
+
+        $json = new Services_JSON();
+        
+        if ( !isset( $this->mPODPartners[$partner] ) ) {
+            $wgOut->showErrorPage( 'invalid_podpartner_title', 'invalid_podpartner_msg' );
+            return;
+        }
+        
+        $response = Http::post( $this->mPODPartners[$partner]['posturl'] );
+        if ( !$response ) {
+            $wgOut->showErrorPage( 'post_failed_title', 'post_failed_msg' );
+            return;
+        }
+        $postData = $json->decode( $response );
+        
+        $inputFilename = tempnam( wfTempDir(), 'mw-zip-in-' );
+    	  $inputFile = fopen( $inputFilename, 'w' );
+    	  $url = $postData->post_url;
+        fwrite( $inputFile, $this->buildJSONCollection( $_SESSION['wsCollection'] ) );
+        fclose( $inputFile );
+        
+        $errorFilename = tempnam( wfTempDir(), 'mw-zip-error-' );
+    	  unlink( $errorFilename );
+    	  
+    	  $rc = 0;
+        wfShellExec( "$wgMWZipCommand -c $wgMWLibConfig -d -e $errorFilename -p $url -m $inputFilename", $rc );
+        unlink( $inputFilename );
+        if ( $rc == 0 ) {
+            $wgOut->redirect( $postData->redirect_url );
+        } else {
+            $wgOut->showErrorPage( 'coll-mwzip_error_title', 'coll-mwzip_error_msg' );
+        }
+    }
+    
     private function outputIntro() {
         global $wgOut;
         
@@ -786,9 +837,7 @@ EOS
         $wgOut->setPageTitle( wfMsg( 'coll-save_collection' ) );
         
         $wgOut->addWikiText( '==' . wfMsg( 'coll-overwrite_title' ) . '==' );
-        $wgOut->addWikiText( wfMsg( 'coll-overwrite_text', array(
-            'title' => $title->getPrefixedText()
-        ) ) );
+        $wgOut->addWikiText( wfMsg( 'coll-overwrite_text', $title->getPrefixedText() ) );
         $yes = wfMsgHtml( 'coll-yes' );
         $no = wfMsgHtml( 'coll-no' );
         $escapedTitle = htmlspecialchars( $title->getPrefixedText() );
@@ -840,6 +889,37 @@ EOS
         $wgOut->addHTML( $html );
     }
     
+    private function outputBookSection()
+    {
+        $bookTitle = wfMsgHtml( 'coll-book_title' );
+        $bookText = wfMsgHtml( 'coll-book_text' );
+        $html = <<<EOS
+<h2><span class="mw-headline">$bookTitle</span></h2>
+<p>$bookText</p>
+<ul>
+EOS
+        ;
+        
+        foreach( $this->mPODPartners as $partner => $partnerData ) {
+            $params = '?partner=' . $partner;
+            $posturl = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'post_pdf/' ) . $params;
+            $url = $partnerData['url'];
+            $logoURL = $partnerData['logourl'];
+            $partnerName = $partnerData['name'];
+            $orderLabel = wfMsgHtml( 'coll-order_from_pp', $partnerName );
+            $aboutLabel = wfMsgHtml( 'coll-about_pp', $partnerName );
+            $html .= <<<EOS
+<li>
+    <a href="$posturl" class="pp_post_link"><img src="$logoURL" alt="$partnerName"/>&nbsp;<strong>$orderLabel</strong></a> –
+    <a href="$url" target="_blank">$aboutLabel</a>
+</li>
+EOS
+            ;
+        }
+        $html .= '</ul>';
+        $this->outputBox( $html );
+    }
+
     static function isCollectionPage( $title, $article ) {
         wfLoadExtensionMessages( 'Collection' );
         

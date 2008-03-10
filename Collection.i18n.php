@@ -86,7 +86,7 @@ Do you want to add them?',
 	'coll-community_collection_label' => 'Community collection:',
 	'coll-save_collection' => 'Save Collection',
 	'coll-overwrite_title' => 'Page exists. Overwrite?',
-	'coll-overwrite_text' => 'A page with the name $title already exists.
+	'coll-overwrite_text' => 'A page with the name $1 already exists.
 Do you want it to be replaced with your collection?',
 	'coll-yes' => 'Yes',
 	'coll-no' => 'No',
@@ -110,6 +110,11 @@ Click on the link below to download it to your computer.",
 	'coll-notfound_text' => 'Could not find collection page.',
 	'coll-return_to_collection' => '<p>Return to <a href="$1">$2</a></p>',
 	'coll-pages_removed' => 'The following pages could not be rendered and were removed from the PDF file:',
+	
+    'coll-book_title' => 'Order Printed Book',
+    'coll-book_text' => 'You can order a printed book containing your article collection by visiting one of the following print-on-demand partners:',
+    'coll-order_from_pp' => 'Order book from $1',
+    'coll-about_pp' => 'About $1',
 );
 
 /** Afrikaans (Afrikaans)

@@ -1,4 +1,4 @@
-You can collect articles, generate and download a PDF file from article collections or from single articles and save article collections for later use or to share them. 
+You can collect articles, generate and download a PDF file from article collections or from single articles, order books from a print-on-demand partner and save article collections for later use or to share them. 
 
 == Add and remove articles ==
 
@@ -18,6 +18,10 @@ Click "Show collection" to go to the [[Special:Collection]]. Here you can manage
 To download a PDF version of a single article, just go to the article page and click on the "Download as PDF" inside the toolbox on the left.
 
 To download an entire collection as a PDF file, go to the [[Special:Collection]] page and click the "Download PDF" button.
+
+== Order books ==
+
+You can easily order a book made from your collection. Just click on the links of a print-on-demand partner at the right of the [[Special:Collection]] page.
 
 == Save and load collections ==
 
