@@ -111,10 +111,10 @@ Click on the link below to download it to your computer.",
 	'coll-return_to_collection' => '<p>Return to <a href="$1">$2</a></p>',
 	'coll-pages_removed' => 'The following pages could not be rendered and were removed from the PDF file:',
 	
-    'coll-book_title' => 'Order Printed Book',
-    'coll-book_text' => 'You can order a printed book containing your article collection by visiting one of the following print-on-demand partners:',
-    'coll-order_from_pp' => 'Order book from $1',
-    'coll-about_pp' => 'About $1',
+	'coll-book_title' => 'Order Printed Book',
+	'coll-book_text' => 'You can order a printed book containing your page collection by visiting one of the following print-on-demand partners:',
+	'coll-order_from_pp' => 'Order book from $1',
+	'coll-about_pp' => 'About $1',
 );
 
 /** Afrikaans (Afrikaans)
