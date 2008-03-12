@@ -127,6 +127,7 @@ $messages['af'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author Siebrand
  */
 $messages['ar'] = array(
 	'coll-desc'                       => '[[Special:Collection|صفحات مجموعة]]، تولد PDFs',
@@ -190,7 +191,7 @@ $messages['ar'] = array(
 	'coll-community_collection_label' => 'مجموعة مجتمع:',
 	'coll-save_collection'            => 'حفظ المجموعة',
 	'coll-overwrite_title'            => 'الصفحة موجودة. كتابة عليها؟',
-	'coll-overwrite_text'             => 'صفحة بنفس الاسم $title موجودة بالفعل.
+	'coll-overwrite_text'             => 'صفحة بنفس الاسم $1 موجودة بالفعل.
 هل تريد استبدالها بمجموعتك؟',
 	'coll-yes'                        => 'نعم',
 	'coll-no'                         => 'لا',
@@ -262,6 +263,7 @@ $messages['bg'] = array(
 
 /** Czech (Česky)
  * @author Matěj Grabovský
+ * @author Siebrand
  */
 $messages['cs'] = array(
 	'coll-desc'                       => 'Vytváření [[Special:Collection|kolekce stránek]], tvorba PDF',
@@ -324,7 +326,7 @@ Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku n�
 	'coll-community_collection_label' => 'Komunitní kolekce:',
 	'coll-save_collection'            => 'Uložit kolekci',
 	'coll-overwrite_title'            => 'Stránka existuje. Přepsat?',
-	'coll-overwrite_text'             => 'Stránka s názvem $title už existuje.
+	'coll-overwrite_text'             => 'Stránka s názvem $1 už existuje.
 Chcete ji nahradit svojí kolekcí?',
 	'coll-yes'                        => 'Ano',
 	'coll-no'                         => 'Ne',
@@ -361,6 +363,9 @@ $messages['da'] = array(
  * @author Yekrats
  */
 $messages['eo'] = array(
+	'coll-collection'           => 'Kolekto',
+	'coll-collections'          => 'Kolektoj',
+	'coll-portlet_title'        => 'Mia kolekto',
 	'coll-add_page'             => 'Aldonu paĝon',
 	'coll-remove_page'          => 'Forigu paĝon',
 	'coll-add_category'         => 'Aldonu kategorion',
@@ -368,6 +373,7 @@ $messages['eo'] = array(
 	'coll-page'                 => 'paĝo',
 	'coll-pages'                => 'paĝoj',
 	'coll-download_as_pdf'      => 'Alŝutu kiel PDF',
+	'coll-my_collection'        => 'Mia kolekto',
 	'coll-download_pdf'         => 'Alŝutu PDF',
 	'coll-remove'               => 'Forigu',
 	'coll-move_up'              => 'Movu supren',
@@ -377,6 +383,8 @@ $messages['eo'] = array(
 	'coll-contents'             => 'Enhavaĵoj',
 	'coll-create_chapter'       => 'Kreu novan ĉapitron',
 	'coll-rename'               => 'Alinomigu',
+	'coll-new_chapter'          => 'Enigu nomon por nova ĉapitro',
+	'coll-rename_chapter'       => 'Enigu novan nomon por ĉapitro',
 	'coll-no_such_category'     => 'Nenia kategorio',
 	'coll-mwpdf_error_title'    => 'Ne eblis generi PDF-on',
 	'coll-revision'             => 'Revizio: %PARAM%',
@@ -486,6 +494,10 @@ Cliquez sur le lien ci-dessous pour le télécharger sur votre ordinateur.',
 	'coll-notfound_text'              => 'Ne peut trouver la compilation.',
 	'coll-return_to_collection'       => '<p>Revenir à <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => "Les pages suivantes n'ont pu être traitées et on été enlevées du fichier PDF :",
+	'coll-book_title'                 => 'Commander un livre imprimé',
+	'coll-book_text'                  => "Vous pouvez commander un livre imprimé contenant votre collection d'articles en visitant une demande d'impression de la part de partenaires :",
+	'coll-order_from_pp'              => 'Commander le livre depuis $1',
+	'coll-about_pp'                   => 'Au sujet de $1',
 );
 
 /** Galician (Galego)
@@ -631,6 +643,7 @@ $messages['is'] = array(
 
 /** Japanese (日本語)
  * @author JtFuruhata
+ * @author Siebrand
  */
 $messages['ja'] = array(
 	'coll-desc'                       => 'PDFファイルを作成するための[[Special:Collection|ページコレクション]]',
@@ -694,7 +707,7 @@ $messages['ja'] = array(
 	'coll-community_collection_label' => '共有するコレクション:',
 	'coll-save_collection'            => 'コレクションの保存',
 	'coll-overwrite_title'            => '同名のページが存在します。上書きしますか？',
-	'coll-overwrite_text'             => '$title という名前のページが既に存在しています。
+	'coll-overwrite_text'             => '$1 という名前のページが既に存在しています。
 これをあなたのコレクションに置き換えますか？',
 	'coll-yes'                        => 'はい',
 	'coll-no'                         => 'いいえ',
@@ -722,10 +735,11 @@ $messages['ja'] = array(
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
+ * @author Lovekhmer
  */
 $messages['km'] = array(
 	'coll-add_page'          => 'បន្ថែមទំព័រ',
-	'coll-remove_page'       => 'ដកចេញ ទំព័រ',
+	'coll-remove_page'       => 'ដកទំព័រចេញ',
 	'coll-add_category'      => 'បន្ថែមចំណាត់ក្រុម',
 	'coll-empty'             => 'ទទេ',
 	'coll-page'              => 'ទំព័រ',
@@ -805,7 +819,7 @@ $messages['nl'] = array(
 	'coll-remove_page'                => 'Pagina verwijderen',
 	'coll-add_category'               => 'Categorie toevoegen',
 	'coll-load_collection'            => 'Verzameling laden',
-	'coll-show_collection'            => 'Verzameling tonen',
+	'coll-show_collection'            => 'Verzameling weergeven',
 	'coll-help_collections'           => 'Hulp bij verzamelingen',
 	'coll-empty'                      => 'leeg',
 	'coll-page'                       => 'pagina',
@@ -858,7 +872,7 @@ Wilt u ze toevoegen?",
 	'coll-community_collection_label' => 'Gemeenschappelijke verzameling:',
 	'coll-save_collection'            => 'Verzameling opslaan',
 	'coll-overwrite_title'            => 'De pagina bestaat al. Overschrijven?',
-	'coll-overwrite_text'             => 'Er bestaat al een pagina met de naam $title.
+	'coll-overwrite_text'             => 'Er bestaat al een pagina met de naam $1.
 Wil u die pagina vervangen door uw verzameling?',
 	'coll-yes'                        => 'Ja',
 	'coll-no'                         => 'Nee',
@@ -882,10 +896,15 @@ Klik op de link hieronder om het naar uw computer te downloaden.',
 	'coll-notfound_text'              => 'De verzamelingspagina is niet gevonden.',
 	'coll-return_to_collection'       => '<p>Teruggaan naar <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => "De onderstaande pagina's konden niet opgemaakt worden en zijn uit het PDF-bestand verwijderd:",
+	'coll-book_title'                 => 'Gedrukt boek bestellen',
+	'coll-book_text'                  => 'U kunt een gedrukt boek bestellen dat uw paginaverzameling bevat door een van de volgende print-on-demand-partners te bezoeken:',
+	'coll-order_from_pp'              => 'Boek bij $1 bestellen',
+	'coll-about_pp'                   => 'Over $1',
 );
 
-/** Norwegian (‪Norsk (bokmål)‬)
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
+ * @author Siebrand
  */
 $messages['no'] = array(
 	'coll-desc'                       => 'Lag [[Special:Collection|sidesamlinger]] og generer PDF-filer',
@@ -945,7 +964,7 @@ $messages['no'] = array(
 	'coll-community_collection_label' => 'Fellesskapssamling:',
 	'coll-save_collection'            => 'Lagre samling',
 	'coll-overwrite_title'            => 'Siden finnes. Erstatte den?',
-	'coll-overwrite_text'             => 'En side ved navn $title finnes fra før. Vil du erstatte den med samlingen din?',
+	'coll-overwrite_text'             => 'En side ved navn $1 finnes fra før. Vil du erstatte den med samlingen din?',
 	'coll-yes'                        => 'Ja',
 	'coll-no'                         => 'Nei',
 	'coll-load_overwrite_text'        => 'Du har allerede noen sider i samlingen din. Vil du erstatte den eksisterende samlingen, legge til det nye innholdet eller avbryte?',
@@ -964,6 +983,10 @@ $messages['no'] = array(
 	'coll-notfound_text'              => 'Kunne ikke finne samlingsside.',
 	'coll-return_to_collection'       => '<p>Tilbake til <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'Følgende sider kunne ikke gjengis og ble fjernet fra PDF-filen:',
+	'coll-book_title'                 => 'Bestilling av trykt bok',
+	'coll-book_text'                  => 'Du kan bestille en trykt bok med artikkelsamlingen din ved å besøke en av følgende trykkerpartnere:',
+	'coll-order_from_pp'              => 'Bestill bok fra $1',
+	'coll-about_pp'                   => 'Om $1',
 );
 
 /** Occitan (Occitan)
@@ -1058,27 +1081,88 @@ Clicatz sul ligam çaijós per lo telecargar sus vòstre ordinator.',
 );
 
 /** Polish (Polski)
+ * @author Masti
  * @author McMonster
+ * @author Derbeth
+ * @author Siebrand
  */
 $messages['pl'] = array(
-	'coll-empty'             => 'pusty',
-	'coll-page'              => 'strona',
-	'coll-pages'             => 'strony',
-	'coll-download_as_pdf'   => 'Pobierz jako PDF',
-	'coll-noscript_text'     => '<noscript><h1>Potrzebny JavaScript!</h1>
+	'coll-collection'                => 'Kolekcja',
+	'coll-collections'               => 'Kolekcje',
+	'coll-portlet_title'             => 'Moja kolekcja',
+	'coll-add_page'                  => 'Dodaj stronę',
+	'coll-remove_page'               => 'Usuń stronę',
+	'coll-add_category'              => 'Dodaj kategorię',
+	'coll-load_collection'           => 'Załaduj kolekcję',
+	'coll-show_collection'           => 'Pokaż kolekcję',
+	'coll-help_collections'          => 'Pomoc kolekcji',
+	'coll-empty'                     => 'pusty',
+	'coll-page'                      => 'strona',
+	'coll-pages'                     => 'strony',
+	'coll-download_as_pdf'           => 'Pobierz jako PDF',
+	'coll-noscript_text'             => '<noscript><h1>Potrzebny JavaScript!</h1>
 <strong>Twoja przeglądarka nie obsługuje JavaScript lub został on wyłączony.
 Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączony.</strong></noscript>',
-	'coll-remove'            => 'Usuń',
-	'coll-rename'            => 'Zmień nazwę',
-	'coll-new_chapter'       => 'Wprowadź nazwę dla nowego rozdziału',
-	'coll-rename_chapter'    => 'Wprowadź nową nazwę dla rozdziału',
-	'coll-overwrite_title'   => 'Strona już istnieje. Nadpisać?',
-	'coll-yes'               => 'Tak',
-	'coll-no'                => 'Nie',
-	'coll-overwrite'         => 'Nadpisz',
-	'coll-append'            => 'Dopisz',
-	'coll-cancel'            => 'Anuluj',
-	'coll-nopdf_error_title' => 'Nie znaleziono pliku PDF',
+	'coll-my_collection'             => 'Moja kolekcja',
+	'coll-download_title'            => 'Pobierz kolekcję jako PDF',
+	'coll-download_text'             => 'Naciśnij przycisk, by pobrać automatycznie wygenerowaną wersję PDF Twojej kolekcji stron',
+	'coll-download_pdf'              => 'Pobierz PDF',
+	'coll-remove'                    => 'Usuń',
+	'coll-move_to_top'               => 'Przenieś na górę',
+	'coll-move_up'                   => 'Przenieś w górę',
+	'coll-move_down'                 => 'Przenieś w dół',
+	'coll-move_to_bottom'            => 'Przenieś na dół',
+	'coll-title'                     => 'Tytuł:',
+	'coll-subtitle'                  => 'Podtytuł:',
+	'coll-contents'                  => 'Spis treści',
+	'coll-create_chapter'            => 'Utwórz nowy rozdział',
+	'coll-sort_alphabetically'       => 'Sortuj strony alfabetycznie',
+	'coll-clear_collection'          => 'Wyczyść kolekcję',
+	'coll-clear_confirm'             => 'Na pewno chcesz wyczyścić kolekcję?',
+	'coll-rename'                    => 'Zmień nazwę',
+	'coll-new_chapter'               => 'Wprowadź nazwę dla nowego rozdziału',
+	'coll-rename_chapter'            => 'Wprowadź nową nazwę dla rozdziału',
+	'coll-no_such_category'          => 'Nie ma takiej kategorii',
+	'coll-mwpdf_error_title'         => 'Nie można utworzyć pliku PDF',
+	'coll-mwpdf_error_msg'           => 'Błąd podczas tworzenia pliku PDF',
+	'coll-mwzip_error_title'         => 'Nie mogę utworzyć kolekcji stron',
+	'coll-mwzip_error_msg'           => 'Błąd podczas tworzenia kolekcji stron.',
+	'coll-notitle_title'             => 'Tytuł strony nie może być określony.',
+	'coll-enter_title'               => 'Podaj tytuł kolekcji:',
+	'coll-error_reponse'             => 'Błąd odpowiedzi serwera',
+	'coll-empty_collection'          => 'Pusta kolekcja',
+	'coll-revision'                  => 'Wersja: %PARAM%',
+	'coll-save_collection_title'     => 'Zapisz kolekcję',
+	'coll-save_collection_text'      => 'Aby zapisać kolekcję, wybierz jej rodzaj i tytuł:',
+	'coll-login_to_save'             => 'Jeśli chcesz zapisać kolekcję, <a href="$1">zaloguj się lub utwórz konto</a>.',
+	'coll-personal_collection_label' => 'Kolekcja osobista:',
+	'coll-save_collection'           => 'Zapisz kolekcję',
+	'coll-overwrite_title'           => 'Strona już istnieje. Nadpisać?',
+	'coll-overwrite_text'            => 'Strona pod tytułem $1 już istnieje.
+Chcesz ją zastąpić swoją kolekcją?',
+	'coll-yes'                       => 'Tak',
+	'coll-no'                        => 'Nie',
+	'coll-load_overwrite_text'       => 'Masz już strony w swojej kolekcji.
+Czy chcesz nadpisać Twoją obecną kolekcję, dodać do niej strony czy anulować?',
+	'coll-overwrite'                 => 'Nadpisz',
+	'coll-append'                    => 'Dopisz',
+	'coll-cancel'                    => 'Anuluj',
+	'coll-limit_exceeded_title'      => 'Zbyt duża kolekcja',
+	'coll-limit_exceeded_text'       => 'Twoja kolekcja stron jest zbyt duża.
+Nie można dodać więcej stron.',
+	'coll-generating_pdf_title'      => 'Tworzenie PDF',
+	'coll-generating_pdf_text'       => "'''Poczekaj, plik PDF jest tworzony.'''
+Ta strona powinna się automatycznie odświeżać co kilka sekund. Jeśli to nie działa, użyj przycisku odświeżania w Twojej przeglądarce.",
+	'coll-pdf_finished_title'        => 'Tworzenie pliku PDF zakończone',
+	'coll-pdf_finished_text'         => 'Plik PDF został utworzony.
+Kliknij na link ponizej, by pobrać go na Twój komputer.',
+	'coll-nopdf_error_title'         => 'Nie znaleziono pliku PDF',
+	'coll-nopdf_error_text'          => 'Nie można znaleźć pliku PDF. Proszę utworzyć go ponownie.',
+	'coll-notfound_title'            => 'Nie znaleziono kolekcji',
+	'coll-notfound_text'             => 'Nie udało się znaleźć strony kolekcji.',
+	'coll-return_to_collection'      => '<p>Powróć do <a href="$1">$2</a></p>',
+	'coll-pages_removed'             => 'Następujące strony nie mogły być przetworzone i zostały usunięte z wynikowego pliku PDF:',
+	'coll-order_from_pp'             => 'Zamów książkę z $1',
 );
 
 /** Pashto (پښتو)
@@ -1109,6 +1193,7 @@ $messages['ps'] = array(
 /** Portuguese (Português)
  * @author Malafaya
  * @author Lijealso
+ * @author Siebrand
  */
 $messages['pt'] = array(
 	'coll-desc'                       => '[[{{ns:special}}:Collection|Colecciona páginas]], gera PDFs',
@@ -1164,10 +1249,14 @@ Deseja adicioná-las?',
 	'coll-community_collection_label' => 'Colecção comunitária:',
 	'coll-save_collection'            => 'Gravar Colecção',
 	'coll-overwrite_title'            => 'A página existe. Escrever por cima?',
+	'coll-overwrite_text'             => 'Um página com o nome $1 já existe.
+Deseja substituí-la pela sua colecção?',
 	'coll-yes'                        => 'Sim',
 	'coll-no'                         => 'Não',
 	'coll-cancel'                     => 'Cancelar',
 	'coll-limit_exceeded_title'       => 'Colecção Demasiado Grande',
+	'coll-limit_exceeded_text'        => 'A usa coleccção de página é demasiado grande.
+Não poderão ser adicionadas mais páginas.',
 	'coll-generating_pdf_title'       => 'A criar PDF',
 	'coll-pdf_finished_title'         => 'Geração de PDF Completada',
 	'coll-pdf_finished_text'          => 'O ficheiro PDF foi gerado.
@@ -1176,10 +1265,12 @@ Carregue na ligação abaixo para o guardar no seu computador.',
 	'coll-nopdf_error_text'           => 'Não foi possível encotrar o ficheiro PDF. Por favor, volte a gerar o ficheiro PDF.',
 	'coll-notfound_title'             => 'Colecção Não Encontrada',
 	'coll-notfound_text'              => 'Não foi possível encontrar a página da colecção.',
+	'coll-return_to_collection'       => '<p>Regressar a <a href="$1">$2</a></p>',
 );
 
 /** Russian (Русский)
  * @author .:Ajvol:.
+ * @author Siebrand
  */
 $messages['ru'] = array(
 	'coll-desc'                       => '[[Special:Collection|Собирает коллекции страниц]], создаёт PDF',
@@ -1243,7 +1334,7 @@ $messages['ru'] = array(
 	'coll-community_collection_label' => 'Коллекция сообщества:',
 	'coll-save_collection'            => 'Сохранить коллекцию',
 	'coll-overwrite_title'            => 'Страница существует. Перезаписать?',
-	'coll-overwrite_text'             => 'Страница с именем $title уже существует.
+	'coll-overwrite_text'             => 'Страница с именем $1 уже существует.
 Вы хотите чтобы она была заменена вашей коллекцией?',
 	'coll-yes'                        => 'Да',
 	'coll-no'                         => 'Нет',
@@ -1271,6 +1362,7 @@ $messages['ru'] = array(
 
 /** Slovak (Slovenčina)
  * @author Helix84
+ * @author Siebrand
  */
 $messages['sk'] = array(
 	'coll-desc'                       => 'Vytváranie [[Special:Collection|kolekcie stránok]], tvorba PDF',
@@ -1333,7 +1425,7 @@ Pozri ďalšie informácue na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka 
 	'coll-community_collection_label' => 'Komunitné kolekcie:',
 	'coll-save_collection'            => 'Uložiť kolekciu',
 	'coll-overwrite_title'            => 'Stránka existuje. Prepísať?',
-	'coll-overwrite_text'             => 'Stránka s názvom $title už existuje.
+	'coll-overwrite_text'             => 'Stránka s názvom $1 už existuje.
 Chcete ju nahradiť svojou kolekciou?',
 	'coll-yes'                        => 'Áno',
 	'coll-no'                         => 'Nie',
@@ -1357,10 +1449,15 @@ Stiahnuť ho môžete po kliknutí na nasledovný odkaz:',
 	'coll-notfound_text'              => 'Nebolo možné nájsť stránku kolekcie',
 	'coll-return_to_collection'       => '<p>Vrátiť sa na <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'Nasledovné stránky nebolo možné vykresliť a boli z PDF súboru odstránené:',
+	'coll-book_title'                 => 'Objednať tlačenú knihu',
+	'coll-book_text'                  => 'Môžete si objednať tlačenú knihu obsahujúcu vašu zbierku článkov. Navštívte jedného z nasledovných partnerov, ktorí tobia tlač na vyžiadanie:',
+	'coll-order_from_pp'              => 'Objednať knihu od $1',
+	'coll-about_pp'                   => 'O $1',
 );
 
 /** Swedish (Svenska)
  * @author M.M.S.
+ * @author Siebrand
  */
 $messages['sv'] = array(
 	'coll-desc'                       => '[[Special:Collection|Samla sidor]], generera PDF filer',
@@ -1423,7 +1520,7 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälp sidan om samlingar]] för mer informatio
 	'coll-community_collection_label' => 'Deltagarsamling:',
 	'coll-save_collection'            => 'Spara samling',
 	'coll-overwrite_title'            => 'Sidan existerar. Vill du skriva över den?',
-	'coll-overwrite_text'             => 'En sida med namnet $title finns redan.
+	'coll-overwrite_text'             => 'En sida med namnet $1 finns redan.
 Vill du ersätta den med din samling?',
 	'coll-yes'                        => 'Ja',
 	'coll-no'                         => 'Nej',
@@ -1447,10 +1544,15 @@ Klicka på länken nedan för att ladda ner den till din dator.',
 	'coll-notfound_text'              => 'Kan inte hitta samlings sida',
 	'coll-return_to_collection'       => '<p>Tillbaka till <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'Följande sidor kunde inte framställas och blev borttagna från PDF-filen:',
+	'coll-book_title'                 => 'Beställ utskriven bok',
+	'coll-book_text'                  => 'Du kan beställa en utskriven bok som rymmer din artikelsamling genom att besöka en av dom följande behovstryckningsdeltagare:',
+	'coll-order_from_pp'              => 'Beställ bok från $1',
+	'coll-about_pp'                   => 'Om $1',
 );
 
 /** Telugu (తెలుగు)
  * @author Veeven
+ * @author Siebrand
  */
 $messages['te'] = array(
 	'coll-desc'                       => '[[Special:Collection|పేజీలను సేకరించండి]], PDFలను తయారుచేసుకోండి',
@@ -1474,6 +1576,9 @@ $messages['te'] = array(
 	'coll-download_text'              => 'మీ పేజీ సేకరణ నుండి ఆటోమెటిగ్గా తయారయిన PDF ఫైలుని దిగుమతిచేసుకోడానికి, ఈ బొత్తాన్ని నొక్కండి.',
 	'coll-download_pdf'               => 'PDFని దిగుమతి చేసుకోండి',
 	'coll-remove'                     => 'తొలగించు',
+	'coll-move_up'                    => 'పైకి కదుపు',
+	'coll-move_down'                  => 'క్రిందికి కదుపు',
+	'coll-move_to_bottom'             => 'అడుగునకు కదుపు',
 	'coll-title'                      => 'శీర్షిక:',
 	'coll-subtitle'                   => 'ఉపశీర్షిక:',
 	'coll-contents'                   => 'విషయాలు',
@@ -1487,6 +1592,7 @@ $messages['te'] = array(
 	'coll-mwzip_error_title'          => 'పేజీ సేకరణని తయారుచేయలేకున్నాం',
 	'coll-mwzip_error_msg'            => 'పేజీల సేకరణ తయారీలో పొరపాటు జరిగింది.',
 	'coll-notitle_title'              => 'ఆ పేజీ యొక్క శీర్షికని నిర్ణయించలేకున్నాం.',
+	'coll-post_failed_title'          => 'POST అభ్యర్థన విఫలమైంది',
 	'coll-enter_title'                => 'సేకరణకి శీర్షిక ఇవ్వండి:',
 	'coll-error_reponse'              => 'సర్వరునుండి పొరపాటు అని స్పందన వచ్చింది',
 	'coll-empty_collection'           => 'ఖాళీ సేకరణ',
@@ -1498,14 +1604,17 @@ $messages['te'] = array(
 	'coll-community_collection_label' => 'సామూహిక సేకరణ:',
 	'coll-save_collection'            => 'సేకరణని భద్రపరచు',
 	'coll-overwrite_title'            => 'పేజీ ఉంది. దానిపైనే రాసేయాలా?',
-	'coll-overwrite_text'             => '$title అనే పేరుతో ఓ పేజీ ఇప్పటికే ఉంది.
+	'coll-overwrite_text'             => '$1 అనే పేరుతో ఓ పేజీ ఇప్పటికే ఉంది.
 దాని స్ధానంలో మీ సేకరణని ఉంచాలా?',
 	'coll-yes'                        => 'అవును',
 	'coll-no'                         => 'కాదు',
+	'coll-cancel'                     => 'రద్దు',
 	'coll-limit_exceeded_title'       => 'సేకరణ మరీ పెద్దగా ఉంది',
 	'coll-limit_exceeded_text'        => 'మీ పేజీ సేకరణ చాలా పెద్దగా ఉంది.
 మరిన్ని పేజీలు చేర్చలేము.',
 	'coll-generating_pdf_title'       => 'PDFని తయారుచేస్తున్నాం',
+	'coll-generating_pdf_text'        => "'''PDF ఫైలు తయారయ్యేంత వరకు వేచివుండండి.'''
+ఈ పేజీని ప్రతీ కొన్ని క్షణాలకు ఆటోమెటిగ్గా తాజాకరిస్తాం, అది పనిచేయకపోతే, మీ విహారిణిలోని తాజాకరించు బొత్తాన్ని నొక్కండి.",
 	'coll-pdf_finished_title'         => 'PDF తయారీ పూర్తయ్యింది',
 	'coll-pdf_finished_text'          => 'PDF ఫైలు తయారయ్యింది.
 దాన్ని మీ కంప్యూటర్లోనికి దిగుమతి చేసుకోడానికి క్రిందనిచ్చిన లింకుపై నొక్కండి.',
@@ -1514,5 +1623,7 @@ $messages['te'] = array(
 	'coll-notfound_title'             => 'సేకరణ కనబడలేదు',
 	'coll-notfound_text'              => 'సేకరణ పేజీ కనబడలేదు.',
 	'coll-return_to_collection'       => '<p>తిరిగి <a href="$1">$2</a>కి</p>',
+	'coll-order_from_pp'              => '$1 నుండి పుస్తకాన్ని ఆర్డర్ చెయ్యండి',
+	'coll-about_pp'                   => '$1 గురించి',
 );
 
