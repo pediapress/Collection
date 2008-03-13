@@ -129,7 +129,8 @@ Installation and Configuration
   adjusted, to higher values.
 
 * Add a page ``Help:Collections`` with the wikitext from the supplied file
-  ``Help_Collections.txt``.
+  ``Help_Collections.txt``. Adjust the page title for the template blacklist and
+  the example name for print templates according to your mwlib configuration.
 
 .. _MediaWiki: http://www.mediawiki.org/
 .. _`PediaPress GmbH`: http://pediapress.com/

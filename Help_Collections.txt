@@ -19,6 +19,12 @@ To download a PDF version of a single article, just go to the article page and c
 
 To download an entire collection as a PDF file, go to the [[Special:Collection]] page and click the "Download PDF" button.
 
+=== Improving PDF Output ===
+
+Some articles use wikitext that is not ideal for producing PDFs. One important special case is the use of templates that should look different or be omitted in PDF output. There are two ways to handle such a template during PDF generation:
+* exclude the template by adding its name to the [PDF Template Blacklist|template blacklist]
+* override it with another template by creating a template with name "SOMETEMPLATEPrint" where SOMETEMPLATE is the name of the original template.
+
 == Order books ==
 
 You can easily order a book made from your collection. Just click on the links of a print-on-demand partner at the right of the [[Special:Collection]] page.
