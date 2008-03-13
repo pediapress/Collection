@@ -103,7 +103,7 @@ No more pages can be added.',
 This page should automatically refresh every few seconds, if this does not work, please press refresh button of your browser.",
 	'coll-pdf_finished_title' => 'PDF Generation Complete',
 	'coll-pdf_finished_text' => "The PDF file has been generated.
-Click on the link below to download it to your computer.",
+Click on the link below to download it to your computer. Not satisfied with the PDF output? See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
 	'coll-nopdf_error_title' => 'No PDF file found',
 	'coll-nopdf_error_text' => 'Could not find PDF file. Please re-generate the PDF file.',
 	'coll-notfound_title' => 'Collection Not Found',
