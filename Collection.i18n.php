@@ -738,30 +738,33 @@ $messages['ja'] = array(
  * @author Lovekhmer
  */
 $messages['km'] = array(
-	'coll-add_page'          => 'បន្ថែមទំព័រ',
-	'coll-remove_page'       => 'ដកទំព័រចេញ',
-	'coll-add_category'      => 'បន្ថែមចំណាត់ក្រុម',
-	'coll-empty'             => 'ទទេ',
-	'coll-page'              => 'ទំព័រ',
-	'coll-pages'             => 'ទំព័រ',
-	'coll-download_as_pdf'   => 'ទាញយក ជា​ PDF',
-	'coll-download_pdf'      => 'ទាញយក PDF',
-	'coll-remove'            => 'ដកចេញ',
-	'coll-title'             => 'ចំណងជើង៖',
-	'coll-subtitle'          => 'ចំណងជើងរង៖',
-	'coll-contents'          => 'ខ្លឹមសារ',
-	'coll-create_chapter'    => 'បង្កើតជំពូកថ្មី',
-	'coll-rename'            => 'ប្តូរឈ្មោះ',
-	'coll-new_chapter'       => 'ដាក់ឈ្មោះអោយ ជំពូកថ្មី',
-	'coll-rename_chapter'    => 'ដាក់ឈ្មោះថ្មី អោយជំពូក',
-	'coll-no_such_category'  => 'គ្មានចំណាត់ក្រុម ដូចនេះទេ',
-	'coll-overwrite_title'   => 'ទំព័រ មានហើយ។ សរសេរ ជាន់ពីលើ ?',
-	'coll-yes'               => 'បាទ / ចាស',
-	'coll-no'                => 'ទេ',
-	'coll-overwrite'         => 'សរសេរជាន់ពីលើ',
-	'coll-append'            => 'បន្ថែមនៅចុង',
-	'coll-cancel'            => 'បោះបង់',
-	'coll-nopdf_error_title' => 'រកមិនឃើញ ឯកសារ PDF',
+	'coll-add_page'             => 'បន្ថែមទំព័រ',
+	'coll-remove_page'          => 'ដកទំព័រចេញ',
+	'coll-add_category'         => 'បន្ថែមចំណាត់ក្រុម',
+	'coll-empty'                => 'ទទេ',
+	'coll-page'                 => 'ទំព័រ',
+	'coll-pages'                => 'ទំព័រ',
+	'coll-download_as_pdf'      => 'ទាញយក ជា​ PDF',
+	'coll-download_pdf'         => 'ទាញយក PDF',
+	'coll-remove'               => 'ដកចេញ',
+	'coll-title'                => 'ចំណងជើង៖',
+	'coll-subtitle'             => 'ចំណងជើងរង៖',
+	'coll-contents'             => 'ខ្លឹមសារ',
+	'coll-create_chapter'       => 'បង្កើតជំពូកថ្មី',
+	'coll-rename'               => 'ប្តូរឈ្មោះ',
+	'coll-new_chapter'          => 'ដាក់ឈ្មោះអោយ ជំពូកថ្មី',
+	'coll-rename_chapter'       => 'ដាក់ឈ្មោះថ្មី អោយជំពូក',
+	'coll-no_such_category'     => 'គ្មានចំណាត់ក្រុម ដូចនេះទេ',
+	'coll-overwrite_title'      => 'ទំព័រ មានហើយ។ សរសេរ ជាន់ពីលើ ?',
+	'coll-yes'                  => 'បាទ / ចាស',
+	'coll-no'                   => 'ទេ',
+	'coll-overwrite'            => 'សរសេរជាន់ពីលើ',
+	'coll-append'               => 'បន្ថែមនៅចុង',
+	'coll-cancel'               => 'បោះបង់',
+	'coll-nopdf_error_title'    => 'រកមិនឃើញ ឯកសារ PDF',
+	'coll-return_to_collection' => '<p>ត្រលប់ទៅកាន់<a href="$1">$2</a>វិញ</p>',
+	'coll-book_title'           => 'ទិញសៀវភៅដែលបានបោះពុម្ព',
+	'coll-about_pp'             => 'អំពី$1',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -1078,6 +1081,10 @@ Clicatz sul ligam çaijós per lo telecargar sus vòstre ordinator.',
 	'coll-notfound_text'              => 'Pòt pas trobar la compilacion.',
 	'coll-return_to_collection'       => '<p>Tornar a <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'Las paginas seguentas an pas pogut èsser tractadas e son estadas levadas del fichièr PDF :',
+	'coll-book_title'                 => 'Comandar un libre imprimit',
+	'coll-book_text'                  => "Podètz comandar un libre imprimit contenent vòstra colleccion d'articles en visitant una demanda d'impression de la part de partenaris :",
+	'coll-order_from_pp'              => 'Comandar lo libre dempuèi $1',
+	'coll-about_pp'                   => 'A prepaus de $1',
 );
 
 /** Polish (Polski)
@@ -1625,5 +1632,20 @@ $messages['te'] = array(
 	'coll-return_to_collection'       => '<p>తిరిగి <a href="$1">$2</a>కి</p>',
 	'coll-order_from_pp'              => '$1 నుండి పుస్తకాన్ని ఆర్డర్ చెయ్యండి',
 	'coll-about_pp'                   => '$1 గురించి',
+);
+
+/** Tajik (Тоҷикӣ)
+ * @author Ibrahim
+ */
+$messages['tg'] = array(
+	'coll-add_page'        => 'Илова кардани саҳифа',
+	'coll-empty'           => 'холӣ',
+	'coll-page'            => 'саҳифа',
+	'coll-pages'           => 'саҳифаҳо',
+	'coll-download_as_pdf' => 'Боргузорӣ ҳамчун PDF',
+	'coll-download_pdf'    => 'Боргузории PDF',
+	'coll-contents'        => 'Мундариҷа',
+	'coll-rename'          => 'Тағйири ном',
+	'coll-about_pp'        => 'Дар бораи $1',
 );
 
