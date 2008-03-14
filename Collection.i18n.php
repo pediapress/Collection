@@ -489,7 +489,9 @@ Aucune page ne peut être ajoutée.',
 Cette page devrait automatiquement s'actualiser, si cela n'est pas le cas, vous pouvez appuyez sur le bouton d'actualisation de votre navigateur.",
 	'coll-pdf_finished_title'         => 'Création du PDF terminée',
 	'coll-pdf_finished_text'          => 'Le fichier PDF a été créé.
-Cliquez sur le lien ci-dessous pour le télécharger sur votre ordinateur.',
+Cliquez sur le lien ci-dessous pour le télécharger sur votre ordinateur.
+Non satisfait avec la sortie PDF ?
+Voir [[{{MediaWiki:Coll-helppage}}|l’aide concernant les collections]] pour leur améliorations éventuelles.',
 	'coll-nopdf_error_title'          => 'Aucun fichier PDF trouvé',
 	'coll-nopdf_error_text'           => 'Ne peut trouver le fichier PDF. Veuillez le recréer.',
 	'coll-notfound_title'             => 'Compilation non trouvée',
@@ -550,8 +552,12 @@ Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa
 	'coll-personal_collection_label' => 'Colección persoal:',
 	'coll-save_collection'           => 'Gardar a colección',
 	'coll-overwrite_title'           => 'A páxina existe. Desexa sobreescribir?',
+	'coll-overwrite_text'            => 'Xa existe unha páxina chamada $1.
+Quere reemprazala coa súa colección?',
 	'coll-yes'                       => 'Si',
 	'coll-no'                        => 'Non',
+	'coll-load_overwrite_text'       => 'Xa ten algunhas páxinas na súa colección.
+Desexa sobreescribir a súa colección actual, adxuntar o novo contido ou cancelar?',
 	'coll-overwrite'                 => 'Sobreescribir',
 	'coll-append'                    => 'Adxuntar',
 	'coll-cancel'                    => 'Cancelar',
@@ -559,13 +565,17 @@ Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa
 	'coll-limit_exceeded_text'       => 'A súa páxina de colección é moi grande.
 Non se poden engadir máis páxinas.',
 	'coll-generating_pdf_title'      => 'Xerando PDF',
+	'coll-generating_pdf_text'       => "'''Por favor agarde mentres o arquivo PDF se está xerando.'''
+Esta páxina será refrescada automaticamente cada poucos segundos, se non vai, por favor prema no botón \"refrescar\" do seu navegador.",
 	'coll-pdf_finished_title'        => 'Completada a xeración do PDF',
 	'coll-pdf_finished_text'         => 'O arquivo PDF foi xerado.
-Faga clic na ligazón de embaixo para descargalo no seu ordenador.',
+Faga clic na ligazón de embaixo para descargalo no seu ordenador. Non está satisfeito co arquivo PDF?
+Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda sobre as coleccións]] para posibles melloras nel.',
 	'coll-nopdf_error_title'         => 'Non se atopou o arquivo PDF',
 	'coll-notfound_title'            => 'Non se pode atopar a colección',
 	'coll-notfound_text'             => 'Non se pode atopar a páxina da colección.',
 	'coll-return_to_collection'      => '<p>Voltar a <a href="$1">$2</a></p>',
+	'coll-about_pp'                  => 'Acerca de $1',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -737,6 +747,7 @@ $messages['ja'] = array(
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
+ * @author គីមស៊្រុន
  * @author Lovekhmer
  */
 $messages['km'] = array(
@@ -749,23 +760,34 @@ $messages['km'] = array(
 	'coll-download_as_pdf'      => 'ទាញយក ជា​ PDF',
 	'coll-download_pdf'         => 'ទាញយក PDF',
 	'coll-remove'               => 'ដកចេញ',
+	'coll-move_to_top'          => 'ទៅ​លើគេបំផុត',
+	'coll-move_up'              => 'រំកិលឡើង',
+	'coll-move_down'            => 'រំកិលចុះ',
+	'coll-move_to_bottom'       => 'ទៅក្រោមគេបំផុត',
 	'coll-title'                => 'ចំណងជើង៖',
 	'coll-subtitle'             => 'ចំណងជើងរង៖',
 	'coll-contents'             => 'ខ្លឹមសារ',
 	'coll-create_chapter'       => 'បង្កើតជំពូកថ្មី',
+	'coll-sort_alphabetically'  => 'តំរៀប​ទំព័រ​តាម​អក្ខរក្រម',
 	'coll-rename'               => 'ប្តូរឈ្មោះ',
 	'coll-new_chapter'          => 'ដាក់ឈ្មោះអោយ ជំពូកថ្មី',
 	'coll-rename_chapter'       => 'ដាក់ឈ្មោះថ្មី អោយជំពូក',
 	'coll-no_such_category'     => 'គ្មានចំណាត់ក្រុម ដូចនេះទេ',
-	'coll-overwrite_title'      => 'ទំព័រ មានហើយ។ សរសេរ ជាន់ពីលើ ?',
+	'coll-mwpdf_error_title'    => 'មិន​អាច​បង្កើត PDF',
+	'coll-mwpdf_error_msg'      => 'មាន​បញ្ហា​មួយ​ក្នុងពេល​បង្កើត​ PDF',
+	'coll-notitle_title'        => 'មិន​អាចកំនត់​ចំនងជើង​នៃទំព័រ',
+	'coll-overwrite_title'      => 'ទំព័រ​មានហើយ។ សរសេរ​ជាន់ពីលើ ?',
 	'coll-yes'                  => 'បាទ / ចាស',
 	'coll-no'                   => 'ទេ',
 	'coll-overwrite'            => 'សរសេរជាន់ពីលើ',
 	'coll-append'               => 'បន្ថែមនៅចុង',
 	'coll-cancel'               => 'បោះបង់',
-	'coll-nopdf_error_title'    => 'រកមិនឃើញ ឯកសារ PDF',
+	'coll-generating_pdf_title' => 'បង្កើត PDF',
+	'coll-pdf_finished_title'   => 'បញ្ចប់​ការបង្កើត PDF',
+	'coll-nopdf_error_title'    => 'រកមិនឃើញ​ឯកសារ PDF',
 	'coll-return_to_collection' => '<p>ត្រលប់ទៅកាន់<a href="$1">$2</a>វិញ</p>',
 	'coll-book_title'           => 'ទិញសៀវភៅដែលបានបោះពុម្ព',
+	'coll-order_from_pp'        => 'បញ្ជាទិញ​សៀវភៅពី $1',
 	'coll-about_pp'             => 'អំពី$1',
 );
 
@@ -894,7 +916,9 @@ U kunt geen pagina's meer toevoegen.",
 Over enige seconden hoort deze pagina automatisch te verversen. Als dit niet werkt, klik dan op de knop 'Vernieuwen' in uw browser.",
 	'coll-pdf_finished_title'         => 'Maken PDF afgerond',
 	'coll-pdf_finished_text'          => 'Het PDF-bestand is beschikbaar.
-Klik op de link hieronder om het naar uw computer te downloaden.',
+Klik op de link hieronder om het naar uw computer te downloaden.
+Niet tevreden met de uitvoer?
+Kijk dan op [[{{MediaWiki:Coll-helppage}}|de hulppagina over verzamelingen]] voor mogelijkheden om die te verbeteren.',
 	'coll-nopdf_error_title'          => 'Geen PDF-bestand aangetroffen',
 	'coll-nopdf_error_text'           => 'Het PDF-bestand is niet aangetroffen. Maak het PDF-bestand alstublieft opnieuw.',
 	'coll-notfound_title'             => 'Verzameling niet gevonden',
@@ -981,7 +1005,7 @@ $messages['no'] = array(
 	'coll-generating_pdf_title'       => 'Genererer PDF',
 	'coll-generating_pdf_text'        => "'''Vent mens PDF-filen genereres.''' Denne siden burde oppdateres med noen sekunders mellomrom. Om dette ikke fungerer, trykk på oppdateringsknappen i nettleseren din.",
 	'coll-pdf_finished_title'         => 'PDF-generering ferdig',
-	'coll-pdf_finished_text'          => 'PDF-filen har blitt generert. Klikk på lenken nedenfor for å laste ned filen til datamaskinen din.',
+	'coll-pdf_finished_text'          => 'PDF-filen har blitt skapt. Klikk på lenken nedenfor for å laste den ned. Om du ikke er fornøyd med resultatet kan du se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om salinger]] for mulige måter å forbedre det på.',
 	'coll-nopdf_error_title'          => 'Ingen PDF-fil funnet',
 	'coll-nopdf_error_text'           => 'Kunne ikke finne PDF-fil. Vennligst generer den på nytt.',
 	'coll-notfound_title'             => 'Samling ikke funnet',
@@ -1093,6 +1117,7 @@ Clicatz sul ligam çaijós per lo telecargar sus vòstre ordinator.',
  * @author Masti
  * @author McMonster
  * @author Derbeth
+ * @author Sp5uhe
  * @author Siebrand
  */
 $messages['pl'] = array(
@@ -1164,7 +1189,9 @@ Nie można dodać więcej stron.',
 Ta strona powinna się automatycznie odświeżać co kilka sekund. Jeśli to nie działa, użyj przycisku odświeżania w Twojej przeglądarce.",
 	'coll-pdf_finished_title'        => 'Tworzenie pliku PDF zakończone',
 	'coll-pdf_finished_text'         => 'Plik PDF został utworzony.
-Kliknij na link ponizej, by pobrać go na Twój komputer.',
+Kliknij na link poniżej, by pobrać go na Twój komputer.
+Plik PDF jest niedoskonały?
+Przeczytaj [[{{MediaWiki:Coll-helppage}}|stronę pomocy na temat kolekcji]], by dowiedzieć się, jak można go ulepszyć.',
 	'coll-nopdf_error_title'         => 'Nie znaleziono pliku PDF',
 	'coll-nopdf_error_text'          => 'Nie można znaleźć pliku PDF. Proszę utworzyć go ponownie.',
 	'coll-notfound_title'            => 'Nie znaleziono kolekcji',
@@ -1546,7 +1573,9 @@ Inga mer sidor kan läggas till.',
 Denna sida borde automatiskt med några sekunders mellanrum, om detta inte funkar, var god tryck på uppdateringsknappen i din webbläsare.",
 	'coll-pdf_finished_title'         => 'PDF-generering färdig',
 	'coll-pdf_finished_text'          => 'PDF-filen har genererats.
-Klicka på länken nedan för att ladda ner den till din dator.',
+Klicka på länken nedan för att ladda ner den till din dator.
+Inte tillfredsställd med PDF produktionen?
+Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra den.',
 	'coll-nopdf_error_title'          => 'Ingen PDF fil funnen',
 	'coll-nopdf_error_text'           => 'Kan inte hitta PDF-fil. Var god omgenerera PDF-filen.',
 	'coll-notfound_title'             => 'Samling inte funnen',
