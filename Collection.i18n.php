@@ -261,6 +261,7 @@ $messages['bg'] = array(
 	'coll-nopdf_error_text'     => 'PDF файлът не може да бъде открит. Необходимо е да се генерира отново.',
 	'coll-return_to_collection' => '<p>Връщане към <a href="$1">$2</a></p>',
 	'coll-pages_removed'        => 'Следните страници не могат да бъдат обработени и бяха премахнати от PDF файла:',
+	'coll-about_pp'             => 'За $1',
 );
 
 /** Czech (Česky)
@@ -526,8 +527,11 @@ $messages['gl'] = array(
 <strong>O seu navegador non soporta o JavaScript ou o JavaScript foi deshabilitado.
 Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa habilitado.</strong></noscript>',
 	'coll-helppage'                  => 'Help:Collections',
+	'coll-pdftoobigcat'              => 'A categoría contén máis de %PARAM% páxinas, tan só as primeiras %PARAM% páxinas poden ser engadidas á súa colección.
+Quere engadilas?',
 	'coll-my_collection'             => 'A miña colección',
 	'coll-download_title'            => 'Descargar a colección como arquivo PDF',
+	'coll-download_text'             => 'Para descargar un arquivo PDF xerado automaticamente da súa páxina de colección, faga clic no botón.',
 	'coll-download_pdf'              => 'Descargar PDF',
 	'coll-remove'                    => 'Eliminar',
 	'coll-move_to_top'               => 'Ir arriba',
@@ -545,6 +549,7 @@ Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa
 	'coll-mwpdf_error_msg'           => 'Ocorreu un erro durante a xeración do PDF.',
 	'coll-mwzip_error_title'         => 'Non se pode xerar a páxina da colección',
 	'coll-mwzip_error_msg'           => 'Ocorreu un erro durante a xeración da páxina da colección.',
+	'coll-notitle_title'             => 'O título da páxina non pode ser determinado.',
 	'coll-enter_title'               => 'Escriba un título para a colección:',
 	'coll-error_reponse'             => 'Ocorreu un erro no servidor',
 	'coll-empty_collection'          => 'Colección baleira',
@@ -810,8 +815,10 @@ $messages['lb'] = array(
 	'coll-yes'                  => 'Jo',
 	'coll-no'                   => 'Neen',
 	'coll-overwrite'            => 'Iwwerschreiwen',
+	'coll-generating_pdf_title' => 'PDF maachen',
 	'coll-nopdf_error_title'    => 'Kee PDF Fichier fonnt',
 	'coll-return_to_collection' => '<p>Zréck op <a href="$1">$2</a></p>',
+	'coll-about_pp'             => 'Iwwer $1',
 );
 
 /** Lao (ລາວ)
@@ -1100,7 +1107,9 @@ Cap de pagina pòt pas èsser ajustada.',
 Aquesta pagina deuriá s'actaulizar automaticament, se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navegaire.",
 	'coll-pdf_finished_title'         => 'Creacion del PDF acabada',
 	'coll-pdf_finished_text'          => 'Lo fichièr PDF es estat creat.
-Clicatz sul ligam çaijós per lo telecargar sus vòstre ordinator.',
+Clicatz sul ligam çaijós per lo telecargar sus vòstre ordenador.
+Pas satisfach amb la sortida PDF ?
+Vejatz [[{{MediaWiki:Coll-helppage}}|l’ajuda concernent las colleccions]] per lors melhoraments eventuals.',
 	'coll-nopdf_error_title'          => 'Cap de fichièr PDF trobat',
 	'coll-nopdf_error_text'           => 'Pòt pas trobar lo fichièr PDF. Tornatz-lo crear.',
 	'coll-notfound_title'             => 'Compilacion pas trobada',
@@ -1219,11 +1228,14 @@ $messages['ps'] = array(
 	'coll-title'                 => 'سرليک:',
 	'coll-contents'              => 'مينځپانګه',
 	'coll-create_chapter'        => 'يو نوی څپرکی جوړول',
+	'coll-rename'                => 'نوم بدلول',
+	'coll-no_such_category'      => 'داسې هېڅ کومه وېشنيزه نشته',
 	'coll-save_collection_title' => 'غونډ خوندي کول',
 	'coll-yes'                   => 'هو',
 	'coll-no'                    => 'نه',
 	'coll-nopdf_error_title'     => 'هېڅ کومه PDF دوتنه و نه موندلای شوه',
 	'coll-notfound_title'        => 'غونډ و نه موندلای شو',
+	'coll-about_pp'              => 'د $1 په اړه',
 );
 
 /** Portuguese (Português)
@@ -1387,13 +1399,19 @@ $messages['ru'] = array(
 Эта страница должна автоматически обновляться каждые несколько секунд, если этого не происходит, пожалуйста, нажмите кнопку обновления в вашем браузере.",
 	'coll-pdf_finished_title'         => 'Создание PDF завершено',
 	'coll-pdf_finished_text'          => 'PDF-файл был создан.
-Нажмите на ссылку ниже, чтобы скачать его на свой компьютер.',
+Нажмите на ссылку ниже, чтобы скачать его на свой компьютер.
+Недовольны созданным файлом?
+Обратите внимание на [[{{MediaWiki:Coll-helppage}}|справочную информацию о коллекциях]], чтобы узнать о возможностях улучшения.',
 	'coll-nopdf_error_title'          => 'Не найден PDF-файл',
 	'coll-nopdf_error_text'           => 'Невозможно найти PDF-файл. Пожалуйста, повторите его создание.',
 	'coll-notfound_title'             => 'Коллекция не найдена',
 	'coll-notfound_text'              => 'Невозможно найти страницу коллекции.',
 	'coll-return_to_collection'       => '<p>Назад к <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'следующие страницы не могут быть обработаны и были удалены из PDF-файла:',
+	'coll-book_title'                 => 'Заказать печатную книгу',
+	'coll-book_text'                  => 'Вы можете заказать печатную книгу, содержащую вашу коллекцию страниц, воспользовавшись одним из следующих предложений печати по запросу:',
+	'coll-order_from_pp'              => 'Заказ книги в $1',
+	'coll-about_pp'                   => 'О $1',
 );
 
 /** Slovak (Slovenčina)
@@ -1478,7 +1496,9 @@ Nie je možné pridať ďalšie stránky.',
 Táto stránka by sa mala každých niekoľko sekúnd automaticky obnoviť. Ak to nefunguje, stlačte prosím tlačidlo Obnoviť vo vašom prehliadači.",
 	'coll-pdf_finished_title'         => 'Tvorba PDF dokončená',
 	'coll-pdf_finished_text'          => 'PDF súbor bol vytvorený.
-Stiahnuť ho môžete po kliknutí na nasledovný odkaz:',
+Stiahnuť ho môžete po kliknutí na odkaz dolu.
+Nie ste spokojný s PDF výstupom?
+Pozri možnosti jeho vylepšenia na [[{{MediaWiki:Coll-helppage}}|stránke Pomocníka o kolekciách]].',
 	'coll-nopdf_error_title'          => 'PDF súbor nebol nájdený',
 	'coll-nopdf_error_text'           => 'Nebolo možné nájsť PDF súbor. Prosím, vytvorte PDF súbor znova.',
 	'coll-notfound_title'             => 'Kolekcia nenájdená',
