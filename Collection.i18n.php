@@ -545,6 +545,9 @@ Quere engadilas?',
 	'coll-clear_collection'           => 'Borrar colección',
 	'coll-clear_confirm'              => 'Seguro que desexa eliminar a súa colección?',
 	'coll-rename'                     => 'Renomear',
+	'coll-new_chapter'                => 'Insira un nome para o novo capítulo',
+	'coll-rename_chapter'             => 'Insira un novo nome para o capítulo',
+	'coll-no_such_category'           => 'Non existe tal categoría',
 	'coll-mwpdf_error_title'          => 'Non se pode xerar o PDF',
 	'coll-mwpdf_error_msg'            => 'Ocorreu un erro durante a xeración do PDF.',
 	'coll-mwzip_error_title'          => 'Non se pode xerar a páxina da colección',
@@ -1132,10 +1135,12 @@ Vejatz [[{{MediaWiki:Coll-helppage}}|l’ajuda concernent las colleccions]] per 
  * @author Masti
  * @author McMonster
  * @author Derbeth
+ * @author Wpedzich
  * @author Sp5uhe
  * @author Siebrand
  */
 $messages['pl'] = array(
+	'coll-desc'                      => 'Umożliwia [[Special:Collection|tworzenie kolekcji]] stron i zapisywanie ich w pliku PDF',
 	'coll-collection'                => 'Kolekcja',
 	'coll-collections'               => 'Kolekcje',
 	'coll-portlet_title'             => 'Moja kolekcja',
@@ -1152,6 +1157,10 @@ $messages['pl'] = array(
 	'coll-noscript_text'             => '<noscript><h1>Potrzebny JavaScript!</h1>
 <strong>Twoja przeglądarka nie obsługuje JavaScript lub został on wyłączony.
 Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączony.</strong></noscript>',
+	'coll-intro_text'                => 'Narzędzie umożliwia tworzenie kolekcji stron, z których można wygenerować plik PDF, jak też zapisać je w celu późniejszego wykorzystania lub udostępnienia.
+
+Więcej informacji na [[{{MediaWiki:Coll-helppage}}|stronie pomocy dotyczącej kolekcji]].',
+	'coll-helppage'                  => 'Pomoc:Kolekcje',
 	'coll-my_collection'             => 'Moja kolekcja',
 	'coll-download_title'            => 'Pobierz kolekcję jako PDF',
 	'coll-download_text'             => 'Naciśnij przycisk, by pobrać automatycznie wygenerowaną wersję PDF Twojej kolekcji stron',
