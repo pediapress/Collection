@@ -217,6 +217,7 @@ $messages['ar'] = array(
 	'coll-notfound_text'              => 'لم يمكن العثور على صفحة المجموعة.',
 	'coll-return_to_collection'       => '<p>ارجع إلى <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'الصفحات التالية لم يمكن عرضها وتمت إزالتها من ملف PDF:',
+	'coll-about_pp'                   => 'حول $1',
 );
 
 /** Bulgarian (Български)
@@ -362,6 +363,21 @@ $messages['da'] = array(
 	'coll-empty' => 'tom',
 );
 
+/** Greek (Ελληνικά)
+ * @author Consta
+ */
+$messages['el'] = array(
+	'coll-collection'    => 'Συλλογή',
+	'coll-collections'   => 'Συλλογές',
+	'coll-page'          => 'σελίδα',
+	'coll-pages'         => 'σελίδες',
+	'coll-my_collection' => 'Η Συλλογή μου',
+	'coll-title'         => 'Τίτλος:',
+	'coll-subtitle'      => 'Υπότιτλος:',
+	'coll-yes'           => 'Ναι',
+	'coll-no'            => 'Όχι',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
@@ -372,15 +388,21 @@ $messages['eo'] = array(
 	'coll-add_page'             => 'Aldonu paĝon',
 	'coll-remove_page'          => 'Forigu paĝon',
 	'coll-add_category'         => 'Aldonu kategorion',
+	'coll-load_collection'      => 'Ŝarĝu kolekton',
+	'coll-show_collection'      => 'Montru kolekton',
+	'coll-help_collections'     => 'Helpo pri kolektoj',
 	'coll-empty'                => 'malplena',
 	'coll-page'                 => 'paĝo',
 	'coll-pages'                => 'paĝoj',
 	'coll-download_as_pdf'      => 'Alŝutu kiel PDF',
 	'coll-my_collection'        => 'Mia kolekto',
+	'coll-download_title'       => 'Alŝutu kolekton kiel PDF-on',
 	'coll-download_pdf'         => 'Alŝutu PDF',
 	'coll-remove'               => 'Forigu',
+	'coll-move_to_top'          => 'Movu superen',
 	'coll-move_up'              => 'Movu supren',
 	'coll-move_down'            => 'Movu suben',
+	'coll-move_to_bottom'       => 'Movu malsuperen',
 	'coll-title'                => 'Titolo:',
 	'coll-subtitle'             => 'Subtitolo:',
 	'coll-contents'             => 'Enhavaĵoj',
@@ -393,8 +415,11 @@ $messages['eo'] = array(
 	'coll-revision'             => 'Revizio: %PARAM%',
 	'coll-yes'                  => 'Jes',
 	'coll-no'                   => 'Ne',
+	'coll-cancel'               => 'Neigu',
 	'coll-generating_pdf_title' => 'Generante PDF',
 	'coll-nopdf_error_title'    => 'Neniu PDF-dosiero trovita',
+	'coll-order_from_pp'        => 'Mendu libron de $1',
+	'coll-about_pp'             => 'Pri $1',
 );
 
 /** Finnish (Suomi)
@@ -824,6 +849,7 @@ $messages['lb'] = array(
 	'coll-yes'                  => 'Jo',
 	'coll-no'                   => 'Neen',
 	'coll-overwrite'            => 'Iwwerschreiwen',
+	'coll-cancel'               => 'Annulléieren',
 	'coll-generating_pdf_title' => 'PDF maachen',
 	'coll-nopdf_error_title'    => 'Kee PDF Fichier fonnt',
 	'coll-return_to_collection' => '<p>Zréck op <a href="$1">$2</a></p>',
@@ -842,11 +868,101 @@ $messages['lo'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Kaustubh
  * @author Mahitgar
  */
 $messages['mr'] = array(
-	'coll-yes' => 'होय',
-	'coll-no'  => 'नाही',
+	'coll-desc'                       => '[[Special:Collection|पाने गोळा करा]], पीडीएफ तयार करा',
+	'coll-collection'                 => 'गोळा केलेली पाने',
+	'coll-collections'                => 'गोळा केलेली पाने',
+	'coll-portlet_title'              => 'मी गोळा केलेली पाने',
+	'coll-add_page'                   => 'पानाचा समावेश करा',
+	'coll-remove_page'                => 'पान काढा',
+	'coll-add_category'               => 'वर्गाचा समावेश करा',
+	'coll-load_collection'            => 'गोळाकेलेली पाने दाखवा',
+	'coll-show_collection'            => 'गोळा केलेली पाने दाखवा',
+	'coll-help_collections'           => 'पाने गोळा करण्यासाठी मदत',
+	'coll-empty'                      => 'रिकामे',
+	'coll-page'                       => 'पान',
+	'coll-pages'                      => 'पाने',
+	'coll-download_as_pdf'            => 'पीडीएफ आवृत्ती उतरवा',
+	'coll-noscript_text'              => '<noscript><h1>जावास्क्रीप्ट आवश्यक!</h1>
+<strong>तुमचा ब्राउझार जावास्क्रीप्ट वापरू शकत नाही किंवा वापर बंद केलेला आहे.
+जावास्क्रीप्ट चालू केल्याशिवाय हे पान व्यवस्थित काम करणार नाही.</strong></noscript>',
+	'coll-intro_text'                 => 'तुम्ही काही पाने गोळा करू शकता, त्यांच्या पीडीएफ आवृत्त्या उतरवून घेऊ शकता किंवा गोळा केलेली पाने नंतर वापरण्यासाठी अथवा इतरांना देण्यासाठी जतन करून ठेऊ शकता.
+
+अधिक माहितीसाठी [[{{MediaWiki:Coll-helppage}}|पाने गोळा करण्यासाठी मदत]] पहा.',
+	'coll-helppage'                   => 'Help:गोळा केलेली पाने',
+	'coll-pdftoobigcat'               => 'या वर्गात %PARAM% पेक्शा जास्त पाने आहेत, फक्त पहिल्या %PARAM% पानांचाच तुम्ही समावेश करू शकता.
+तुम्ही समावेश करु इच्छिता का?',
+	'coll-my_collection'              => 'मी गोळा केलेली पाने',
+	'coll-download_title'             => 'गोळा केलेल्या पानांची पीडीएफ आवृत्ती उतरवून घ्या',
+	'coll-download_text'              => 'तुम्ही गोळा केलेल्या पानांच्या पीडीएफ आवृत्त्या गोळा करण्यासाठी, दिलेली कळ दाबा.',
+	'coll-download_pdf'               => 'पीडीएफ उतरवा',
+	'coll-remove'                     => 'वगळा',
+	'coll-move_to_top'                => 'सर्वात वर हलवा',
+	'coll-move_up'                    => 'वर हलवा',
+	'coll-move_down'                  => 'खाली हलवा',
+	'coll-move_to_bottom'             => 'सर्वात खाली हलवा',
+	'coll-title'                      => 'शीर्षक:',
+	'coll-subtitle'                   => 'उपशीर्षक:',
+	'coll-contents'                   => 'अनुक्रमणिका',
+	'coll-create_chapter'             => 'नवीन धडा बनवा',
+	'coll-sort_alphabetically'        => 'अक्षरांप्रमाणे पानांचे वर्गीकरण करा',
+	'coll-clear_collection'           => 'सर्व गोळा केलेली पाने पुसा',
+	'coll-clear_confirm'              => 'तुम्ही खरोखर सर्व गोळा केलेली पाने काढून टाकू इच्छिता?',
+	'coll-rename'                     => 'नाव बदला',
+	'coll-new_chapter'                => 'नवीन धड्याचे नाव लिहा',
+	'coll-rename_chapter'             => 'नवीन धड्याचे नाव लिहा',
+	'coll-no_such_category'           => 'असा वर्ग अस्तित्वात नाही',
+	'coll-mwpdf_error_title'          => 'पीडीएफ तयार करू शकलेलो नाही',
+	'coll-mwpdf_error_msg'            => 'पीडीएफ तयार करताना त्रुटी आढळलेली आहे.',
+	'coll-mwzip_error_title'          => 'पानांचे कलेक्शन तयार करू शकलेलो नाही',
+	'coll-mwzip_error_msg'            => 'पानांचे कलेक्शन तयार करताना त्रुटी आढळलेली आहे.',
+	'coll-notitle_title'              => 'या पानाचे शीर्षक ठरविता आलेले नाही.',
+	'coll-post_failed_title'          => 'पोस्ट (POST) ची मागणी पूर्ण झालेली नाही',
+	'coll-post_failed_msg'            => 'पोस्ट (POST) ची मागणी पूर्ण झालेली नाही.',
+	'coll-enter_title'                => 'कलेल्शनला शीर्षक द्या:',
+	'coll-error_reponse'              => 'सर्व्हर कडून चुकीचा संदेश आलेला आहे',
+	'coll-empty_collection'           => 'रिकामे कलेक्शन',
+	'coll-revision'                   => 'आवृत्ती: %PARAM%',
+	'coll-save_collection_title'      => 'कलेक्शन जतन करा',
+	'coll-save_collection_text'       => 'हे कलेक्शन नंतर वापरण्यासाठी पानाला शीर्षक देउन तसेच कलेक्शनचा प्रकार निवडून जतन करा:',
+	'coll-login_to_save'              => 'जर तुम्ही कलेक्शन नंतर वापरण्यासाठी जतन करू इच्छित असाल, तर कृपया <a href="$1">प्रवेश करा अथवा सदस्य नोंदणी करा</a>.',
+	'coll-personal_collection_label'  => 'वैयक्तिक कलेक्शन:',
+	'coll-community_collection_label' => 'सामुहिक कलेक्शन:',
+	'coll-save_collection'            => 'कलेक्शन जतन करा',
+	'coll-overwrite_title'            => 'पान अस्तित्वात आहे. पुनर्लेखन करायचे का?',
+	'coll-overwrite_text'             => '$1 या नावाचे पान अगोदरच अस्तित्वात आहे.
+तुम्ही त्यावर तुमचे कलेक्शन पुनर्लेखित करू इच्छिता का?',
+	'coll-yes'                        => 'होय',
+	'coll-no'                         => 'नाही',
+	'coll-load_overwrite_text'        => 'तुमच्या कलेक्शन मध्ये अगोदरच काही पाने आहेत.
+तुम्ही तुमचे कलेक्शन पुनर्लेखित करू इच्छिता, की पाने वाढवू इच्छिता की रद्द करु इच्छिता?',
+	'coll-overwrite'                  => 'पुनर्लेखन करा',
+	'coll-append'                     => 'वाढवा',
+	'coll-cancel'                     => 'रद्द करा',
+	'coll-limit_exceeded_title'       => 'कलेक्शन खूप मोठे झालेले आहे',
+	'coll-limit_exceeded_text'        => 'तुमचे पानांचे कलेक्शन खूप मोठे झालेले आहे.
+आणखी पाने वाढविता येणार नाहीत.',
+	'coll-generating_pdf_title'       => 'पीडीएफ तयार करीत आहे',
+	'coll-generating_pdf_text'        => "'''कॄपया पीडीएफ तयार होईपर्यंत वाट पहा.'''
+हे पान आपोआप काही सेकंदांनंतर ताजेतवाने व्हायला पाहिजे. जर तसे झाले नाही, तर कृपया आपल्या ब्राउझरला ताजेतवाने (refresh) करा.",
+	'coll-pdf_finished_title'         => 'पीडीएफ तयार झालेली आहे',
+	'coll-pdf_finished_text'          => 'पीडीएफ संचिका तयार झालेली आहे.
+आपल्या संगणकात ती उतरवून घेण्यासाठी खालील दुव्यावर टिचकी मारा.
+पीडीएफच्या आउटपुट बद्दल समाधानी आहात का?
+नसेल तर ते सुधारण्याच्या शक्यतांबद्दल [[{{MediaWiki:Coll-helppage}}|कलेक्शन बद्दलची मदत]] पहा.',
+	'coll-nopdf_error_title'          => 'पीडीएफ संचिका सापडली नाही',
+	'coll-nopdf_error_text'           => 'पीडीएफ संचिका सापडली नाही. कृपया पुन्हा तयार करा.',
+	'coll-notfound_title'             => 'कलेक्शन सापडले नाही',
+	'coll-notfound_text'              => 'कलेक्शन पान सापडले नाही.',
+	'coll-return_to_collection'       => '<p><a href="$1">$2</a> कडे परत जा</p>',
+	'coll-pages_removed'              => 'खालील पाने पीडीएफ संचिकेत अंतर्भूत करू शकलेलो नाही:',
+	'coll-book_title'                 => 'छापील आवृत्तीची मागणी नोंदवा',
+	'coll-book_text'                  => 'तुम्ही खाली दिलेल्या मागणीनुसार छपाई करणार्‍या जोडीदारांच्या संकेतस्थळाला भेट देऊन तुमच्या कलेक्शन मधील पानांची छापील आवृत्ती मिळवू शकता:',
+	'coll-order_from_pp'              => '$1 कडून छापील प्रत मागवा',
+	'coll-about_pp'                   => '$1 बद्दल',
 );
 
 /** Dutch (Nederlands)
