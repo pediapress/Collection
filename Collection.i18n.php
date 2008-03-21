@@ -1645,6 +1645,7 @@ Pozri možnosti jeho vylepšenia na [[{{MediaWiki:Coll-helppage}}|stránke Pomoc
 
 /** Swedish (Svenska)
  * @author M.M.S.
+ * @author Sannab
  * @author Siebrand
  */
 $messages['sv'] = array(
@@ -1669,10 +1670,10 @@ Denna sida kommer inte att fungera korrekt, tills JavaScript är tillgängligt.<
 
 Se [[{{MediaWiki:Coll-helppage}}|hjälp sidan om samlingar]] för mer information.',
 	'coll-helppage'                   => 'Help:Samlingar',
-	'coll-pdftoobigcat'               => 'Kategorin innehåller mer än %PARAM" sidor, endast dom första %PARAM% sidorna kan läggas till till din samling.',
+	'coll-pdftoobigcat'               => 'Kategorin innehåller mer än %PARAM" sidor, endast de första %PARAM% sidorna kan läggas till till din samling. Vill du lägga till dem?',
 	'coll-my_collection'              => 'Min samling',
 	'coll-download_title'             => 'Ladda ner samling som PDF',
-	'coll-download_text'              => 'För att ladda ner en automatisk genererad PDF fil av din sidsamling, klicka på knappen.',
+	'coll-download_text'              => 'För att ladda ner en automatisk genererad PDF-fil av din sidsamling, klicka på knappen.',
 	'coll-download_pdf'               => 'Ladda ner PDF',
 	'coll-remove'                     => 'Ta bort',
 	'coll-move_to_top'                => 'Flytta till toppen',
@@ -1735,7 +1736,7 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter at
 	'coll-return_to_collection'       => '<p>Tillbaka till <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'Följande sidor kunde inte framställas och blev borttagna från PDF-filen:',
 	'coll-book_title'                 => 'Beställ utskriven bok',
-	'coll-book_text'                  => 'Du kan beställa en utskriven bok som rymmer din artikelsamling genom att besöka en av dom följande behovstryckningsdeltagare:',
+	'coll-book_text'                  => 'Du kan beställa en tryckt bok som rymmer din artikelsamling genom att besöka en av de samarbetspartners som utför behovstryckning:',
 	'coll-order_from_pp'              => 'Beställ bok från $1',
 	'coll-about_pp'                   => 'Om $1',
 );
