@@ -370,6 +370,7 @@ $messages['da'] = array(
 $messages['el'] = array(
 	'coll-collection'    => 'Συλλογή',
 	'coll-collections'   => 'Συλλογές',
+	'coll-portlet_title' => 'Η Συλλογή μου',
 	'coll-page'          => 'σελίδα',
 	'coll-pages'         => 'σελίδες',
 	'coll-my_collection' => 'Η Συλλογή μου',
