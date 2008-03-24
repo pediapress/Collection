@@ -348,20 +348,31 @@ Není možné přidat další stránky.',
 Tato stránka by se měla každých několik sekund automaticky obnovit. Pokud to nefunguje, klikněte na tlačítko 'Obnovit' ve vašem prohlížeči.",
 	'coll-pdf_finished_title'         => 'Tvorba PDF dokončena',
 	'coll-pdf_finished_text'          => 'PDF soubor byl vytvořen.
-Stáhnout ho můžete po kliknutí na následující odkaz:',
+Stáhnout ho můžete po kliknutí na odkaz níže.
+nejste spokojeni s PDF výstupem?
+Podívejte se na možnosti jeho vylepšení na [[{{MediaWiki:Coll-helppage}}|stránku Pomocníka ke kolekcím]].',
 	'coll-nopdf_error_title'          => 'PDF soubor nebyl nalezen',
 	'coll-nopdf_error_text'           => 'Nebylo možné najít PDF soubor. Prosím, vytvořte PDF soubor znovu.',
 	'coll-notfound_title'             => 'Kolekce nenalezena',
 	'coll-notfound_text'              => 'Nebylo možné najít stránku kolekce',
 	'coll-return_to_collection'       => '<p>Vrátit se na <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'Následující stránky nebylo možné vykreslit a byly z PDF souboru odstraněny:',
+	'coll-order_from_pp'              => 'Objednat knihu od $1',
+	'coll-about_pp'                   => 'O $1',
 );
 
 /** Danish (Dansk)
+ * @author Jon Harald Søby
  * @author SPQRobin
  */
 $messages['da'] = array(
-	'coll-empty' => 'tom',
+	'coll-empty'  => 'tom',
+	'coll-page'   => 'side',
+	'coll-pages'  => 'sider',
+	'coll-title'  => 'Titel:',
+	'coll-yes'    => 'Ja',
+	'coll-no'     => 'Nej',
+	'coll-cancel' => 'Afbryd',
 );
 
 /** Greek (Ελληνικά)
@@ -428,6 +439,7 @@ $messages['eo'] = array(
 	'coll-generating_pdf_title'       => 'Generante PDF',
 	'coll-pdf_finished_title'         => 'PDF-generado Finita',
 	'coll-nopdf_error_title'          => 'Neniu PDF-dosiero trovita',
+	'coll-book_title'                 => 'Mendu Eldonitan Libron',
 	'coll-order_from_pp'              => 'Mendu libron de $1',
 	'coll-about_pp'                   => 'Pri $1',
 );
@@ -1073,6 +1085,21 @@ Kijk dan op [[{{MediaWiki:Coll-helppage}}|de hulppagina over verzamelingen]] voo
 	'coll-about_pp'                   => 'Over $1',
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Jon Harald Søby
+ */
+$messages['nn'] = array(
+	'coll-collection' => 'Samling',
+	'coll-empty'      => 'tom',
+	'coll-page'       => 'side',
+	'coll-pages'      => 'sider',
+	'coll-remove'     => 'Fjern',
+	'coll-title'      => 'Tittel:',
+	'coll-yes'        => 'Ja',
+	'coll-no'         => 'Nei',
+	'coll-cancel'     => 'Avbryt',
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  * @author Siebrand
@@ -1141,7 +1168,7 @@ $messages['no'] = array(
 	'coll-load_overwrite_text'        => 'Du har allerede noen sider i samlingen din. Vil du erstatte den eksisterende samlingen, legge til det nye innholdet eller avbryte?',
 	'coll-overwrite'                  => 'Erstatte',
 	'coll-append'                     => 'Legge til',
-	'coll-cancel'                     => 'Avbryte',
+	'coll-cancel'                     => 'Avbryt',
 	'coll-limit_exceeded_title'       => 'Samling for stor',
 	'coll-limit_exceeded_text'        => 'Sidesamlingen din er for stor. Ingen flere sider kan legges til.',
 	'coll-generating_pdf_title'       => 'Genererer PDF',
@@ -1382,6 +1409,7 @@ $messages['ps'] = array(
 /** Portuguese (Português)
  * @author Malafaya
  * @author Lijealso
+ * @author MF-Warburg
  * @author Siebrand
  */
 $messages['pt'] = array(
@@ -1455,6 +1483,7 @@ Carregue na ligação abaixo para o guardar no seu computador.',
 	'coll-notfound_title'             => 'Colecção Não Encontrada',
 	'coll-notfound_text'              => 'Não foi possível encontrar a página da colecção.',
 	'coll-return_to_collection'       => '<p>Regressar a <a href="$1">$2</a></p>',
+	'coll-about_pp'                   => 'Sobre $1',
 );
 
 /** Russian (Русский)
@@ -1825,6 +1854,14 @@ $messages['te'] = array(
 	'coll-return_to_collection'       => '<p>తిరిగి <a href="$1">$2</a>కి</p>',
 	'coll-order_from_pp'              => '$1 నుండి పుస్తకాన్ని ఆర్డర్ చెయ్యండి',
 	'coll-about_pp'                   => '$1 గురించి',
+);
+
+/** Tetum (Tetun)
+ * @author MF-Warburg
+ */
+$messages['tet'] = array(
+	'coll-page'     => 'pájina',
+	'coll-about_pp' => 'Kona-ba $1',
 );
 
 /** Tajik (Тоҷикӣ)
