@@ -1477,12 +1477,15 @@ Não poderão ser adicionadas mais páginas.',
 	'coll-generating_pdf_title'       => 'A criar PDF',
 	'coll-pdf_finished_title'         => 'Geração de PDF Completada',
 	'coll-pdf_finished_text'          => 'O ficheiro PDF foi gerado.
-Carregue na ligação abaixo para o guardar no seu computador.',
+Clique na ligação abaixo para o descarregar para o seu computador.
+Não está satisfeito com o resultado do PDF?
+Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para formas de melhorá-lo.',
 	'coll-nopdf_error_title'          => 'Nenhum ficheiro PDF encontrado',
 	'coll-nopdf_error_text'           => 'Não foi possível encotrar o ficheiro PDF. Por favor, volte a gerar o ficheiro PDF.',
 	'coll-notfound_title'             => 'Colecção Não Encontrada',
 	'coll-notfound_text'              => 'Não foi possível encontrar a página da colecção.',
 	'coll-return_to_collection'       => '<p>Regressar a <a href="$1">$2</a></p>',
+	'coll-order_from_pp'              => 'Encomendar o livro de $1',
 	'coll-about_pp'                   => 'Sobre $1',
 );
 
@@ -1860,7 +1863,10 @@ $messages['te'] = array(
  * @author MF-Warburg
  */
 $messages['tet'] = array(
+	'coll-empty'    => 'mamuk',
 	'coll-page'     => 'pájina',
+	'coll-yes'      => 'Sin',
+	'coll-no'       => 'Lae',
 	'coll-about_pp' => 'Kona-ba $1',
 );
 
