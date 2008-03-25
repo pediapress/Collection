@@ -357,6 +357,8 @@ Podívejte se na možnosti jeho vylepšení na [[{{MediaWiki:Coll-helppage}}|str
 	'coll-notfound_text'              => 'Nebylo možné najít stránku kolekce',
 	'coll-return_to_collection'       => '<p>Vrátit se na <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'Následující stránky nebylo možné vykreslit a byly z PDF souboru odstraněny:',
+	'coll-book_title'                 => 'Objednat tisknutou knihu',
+	'coll-book_text'                  => 'Můžete se objednat tisknutou knihu obsahující vaši kolekci stránek. Navštivte jednoho z následujících partnerů, kteří Vám ji vytisknou na požádání:',
 	'coll-order_from_pp'              => 'Objednat knihu od $1',
 	'coll-about_pp'                   => 'O $1',
 );
