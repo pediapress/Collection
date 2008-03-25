@@ -100,10 +100,6 @@ Installation and Configuration
    
    Default is 500.
 
-* Copy or symlink the directory ``collection/`` contained in the directory of
-  the *Collection* extension into the ``skins/common`` directory of your
-  *MediaWiki* installation.
-
 * Just before the line::
 
     <div class="portlet" id="p-tb">
