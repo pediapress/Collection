@@ -24,11 +24,11 @@
 
 # Not a valid entry point, skip unless MEDIAWIKI is defined
 if ( !defined( 'MEDIAWIKI' ) ) {
-        echo <<<EOT
+	echo <<<EOT
 To install the Collection extension, put the following line in LocalSettings.php:
 require_once( "\$IP/extensions/Collection/Collection.php" );
 EOT;
-        exit( 1 );
+	exit( 1 );
 }
 
 require_once( "$IP/extensions/Collection/Version.php" );
@@ -56,12 +56,12 @@ $wgCollectionMaxArticles = 500;
 
 
 $wgExtensionCredits['specialpage'][] = array(
-    'name' => 'Collection',
-    'version' => '1.0',
-    'author' => 'PediaPress GmbH',
-    'url' => 'http://www.mediawiki.org/wiki/Extension:Collection',
-    'description' => 'Collect articles, generate PDFs',
-    'descriptionmsg' => 'coll-desc',
+	'name' => 'Collection',
+	'version' => '1.0',
+	'author' => 'PediaPress GmbH',
+	'url' => 'http://www.mediawiki.org/wiki/Extension:Collection',
+	'description' => 'Collect articles, generate PDFs',
+	'descriptionmsg' => 'coll-desc',
 );
 
 # register Special:Collection:
@@ -77,35 +77,35 @@ $wgHooks['MonoBookTemplateToolboxEnd'][] = 'Collection::insertMonoBookToolboxLin
 
 
 function collectionLocalizedPageName(&$specialPageArray, $code) {
-    wfLoadExtensionMessages( 'Collection' );
-    $text = wfMsg( 'coll-collection' );
-    $title = Title::newFromText( $text );
-    $specialPageArray['Collection'][] = $title->getDBKey();
-    return true;
+	wfLoadExtensionMessages( 'Collection' );
+	$text = wfMsg( 'coll-collection' );
+	$title = Title::newFromText( $text );
+	$specialPageArray['Collection'][] = $title->getDBKey();
+	return true;
 }
 
 # register global Ajax functions:
 
 function wfAjaxGetCollection() {
-    $json = new Services_JSON();
-    if ( isset( $_SESSION['wsCollection'] ) ) {
-        $collection = $_SESSION['wsCollection'];
-    } else {
-        $collection = array();
-    }
-    return $json->encode( array( 'collection' => $collection ) );
+	$json = new Services_JSON();
+	if ( isset( $_SESSION['wsCollection'] ) ) {
+		$collection = $_SESSION['wsCollection'];
+	} else {
+		$collection = array();
+	}
+	return $json->encode( array( 'collection' => $collection ) );
 }
 
 $wgAjaxExportList[] = 'wfAjaxGetCollection';
 
 function wfAjaxPostCollection( $collection='' ) {
-    $json = new Services_JSON( SERVICES_JSON_LOOSE_TYPE );
-    if( session_id() == '' ) {
+	$json = new Services_JSON( SERVICES_JSON_LOOSE_TYPE );
+	if( session_id() == '' ) {
 		wfSetupSession();
 	}
 	$collection = $json->decode( $collection );
-    $_SESSION['wsCollection'] = $collection;
-    return $json->encode( array( 'collection' => $collection ) );
+	$_SESSION['wsCollection'] = $collection;
+	return $json->encode( array( 'collection' => $collection ) );
 }
 
 $wgAjaxExportList[] = 'wfAjaxPostCollection';
