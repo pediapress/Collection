@@ -47,7 +47,7 @@ class Collection extends SpecialPage {
 		global $wgRequest;
 		global $wgUser;
 		global $wgJsMimeType;
-		global $wgStylePath;
+		global $wgScriptPath;
 		global $wgStyleVersion;
 		global $wgCommunityCollectionNamespace;
 		global $wgCollectionMaxArticles;
@@ -187,8 +187,8 @@ class Collection extends SpecialPage {
 		}
 
 		$this->setHeaders();
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgStylePath/common/collection/json2.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgStylePath/common/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/json2.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
 		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );
 		$this->outputBookSection();
 		$this->outputDownloadSection();
@@ -686,7 +686,7 @@ EOS
 
 	private function outputArticleList() {
 		global $wgOut;
-		global $wgStylePath;
+		global $wgScriptPath;
 
 		$wgOut->addWikiText( "== ". wfMsg( 'coll-my_collection' ) . " ==" );
 
@@ -720,12 +720,12 @@ EOS
 
 		$rename = wfMsgHtml( 'coll-rename' );
 		$remove = wfMsgHtml( 'coll-remove' );
-		$removeImage = htmlspecialchars( "$wgStylePath/common/collection/cross.png" );
+		$removeImage = htmlspecialchars( "$wgScriptPath/extensions/Collection/collection/cross.png" );
 		$moveUp = wfMsgHtml( 'coll-move_up' );
-		$moveUpImage = htmlspecialchars( "$wgStylePath/common/collection/up.png" );
+		$moveUpImage = htmlspecialchars( "$wgScriptPath/extensions/Collection/collection/up.png" );
 		$moveDown = wfMsgHtml( 'coll-move_down' );
-		$moveDownImage = htmlspecialchars( "$wgStylePath/common/collection/down.png" );
-		$moveDisabledImage = htmlspecialchars( "$wgStylePath/common/collection/trans.png" );
+		$moveDownImage = htmlspecialchars( "$wgScriptPath/extensions/Collection/collection/down.png" );
+		$moveDisabledImage = htmlspecialchars( "$wgScriptPath/extensions/Collection/collection/trans.png" );
 		$newChapter = wfMsgHtml( 'coll-new_chapter' );
 		$renameChapter = wfMsgHtml( 'coll-rename_chapter' );
 		$enterTitle = wfMsgHtml( 'coll-enter_title' );
