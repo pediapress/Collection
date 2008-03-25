@@ -460,7 +460,7 @@ class Collection extends SpecialPage {
 		}
 
 		$items = array();
-		$currenctChapter = null;
+		$currentChapter = null;
 		foreach ( $collection['items'] as $item ) {
 			if ( $item['type'] == 'article' ) {
 				if ( is_null( $currentChapter ) ) {
@@ -929,7 +929,7 @@ EOS
 		$categoryFinder = new Categoryfinder();
 		$categoryFinder->seed( array( $article->getID() ), array( wfMsg( 'coll-collections' ) ) );
 		$articles = $categoryFinder->run();
-		if ( $articles[0] == $article->getID() ) {
+		if ( in_array( $article->getID(), $articles ) ) {
 			return true;
 		}
 		return false;
