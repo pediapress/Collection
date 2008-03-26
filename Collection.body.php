@@ -552,7 +552,7 @@ class Collection extends SpecialPage {
 			}
 			$downloadText = wfMsgHtml( 'coll-download_pdf' );
 			$wgOut->setPageTitle( wfMsg( 'coll-pdf_finished_title' ) );
-			$text = wfMsgHtml( 'coll-pdf_finished_text' );
+			$text = wfMsgExt( 'coll-pdf_finished_text', array( 'parse' ) );
 			$dllink = "<a href=\"$downloadLink\">$downloadText</a>";
 			$wgOut->addHTML( <<<EOS
 <table class="toccolours" width="100%">
