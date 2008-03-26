@@ -974,9 +974,11 @@ EOS
 				);
 			} else {
 				$params = '?arttitle=' . $skinTemplate->mTitle->getPrefixedURL();
-				$oldid = $wgArticle->getOldID();
-				if ( $oldid ) {
-					$params .= '&oldid=' . $oldid;
+				if( $wgArticle ) {
+					$oldid = $wgArticle->getOldID();
+					if ( $oldid ) {
+						$params .= '&oldid=' . $oldid;
+					}
 				}
 				$nav_urls['download_as_pdf'] = array(
 					'href' => SkinTemplate::makeSpecialUrlSubpage(
