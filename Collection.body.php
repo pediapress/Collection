@@ -518,7 +518,16 @@ class Collection extends SpecialPage {
 		fclose( $inputFile );
 
 		$rc = 0;
-		wfShellExec( "$wgMWPDFCommand -c $wgMWLibConfig -d -e $errorFilename -l $logFilename -r $removedFilename -m $inputFilename -o $outputFilename", $rc );
+		wfShellExec( "$wgMWPDFCommand " .
+			wfEscapeShellArg(
+				"-c", $wgMWLibConfig,
+				"-d",
+				"-e", $errorFilename,
+				"-l", $logFilename,
+				"-r", $removedFilename,
+				"-m", $inputFilename,
+				"-o", $outputFilename ),
+			$rc );
 		if ( $rc == 0 ) {
 			$wgOut->redirect( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generating_pdf/' ) );
 		} else {
@@ -668,7 +677,14 @@ EOS
 		unlink( $errorFilename );
 
 		$rc = 0;
-		wfShellExec( "$wgMWZipCommand -c $wgMWLibConfig -d -e $errorFilename -p $url -m $inputFilename", $rc );
+		wfShellExec( "$wgMWZipCommand " .
+			wfEscapeShellArg(
+				"-c", $wgMWLibConfig,
+				"-d",
+				"-e", $errorFilename,
+				"-p", $url,
+				"-m", $inputFilename ),
+			$rc );
 		unlink( $inputFilename );
 		if ( $rc == 0 ) {
 			$wgOut->redirect( $postData->redirect_url );
