@@ -266,6 +266,16 @@ $messages['bg'] = array(
 	'coll-about_pp'             => 'За $1',
 );
 
+/** Catalan (Català)
+ * @author SMP
+ */
+$messages['ca'] = array(
+	'coll-page'     => 'pàgina',
+	'coll-yes'      => 'S&iacute;',
+	'coll-no'       => 'No',
+	'coll-about_pp' => 'Quant a $1',
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  * @author Siebrand
