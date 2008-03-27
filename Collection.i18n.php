@@ -901,6 +901,13 @@ $messages['lo'] = array(
 	'coll-no'     => 'ບໍ່ໃຊ່',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Shijualex
+ */
+$messages['ml'] = array(
+	'coll-yes' => 'ശരി',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  * @author Mahitgar
@@ -1138,7 +1145,7 @@ $messages['no'] = array(
 	'coll-pdftoobigcat'               => 'Kategorien inneholder mer enn %PARAM% sider, kun de første %PARAM% sidene kan legges til i samlingen din. Vil du legge dem til?',
 	'coll-my_collection'              => 'Min samling',
 	'coll-download_title'             => 'Last ned samling som PDF',
-	'coll-download_text'              => 'For å laste ned en automatisk generert PDF-fil av din sidesamling, klikk på knappen.',
+	'coll-download_text'              => 'Klikk på knappen for å laste ned en automatisk generert PDF-fil av sidesamlingen din.',
 	'coll-download_pdf'               => 'Last ned PDF',
 	'coll-remove'                     => 'Fjern',
 	'coll-move_to_top'                => 'Flytt til toppen',
@@ -1168,7 +1175,7 @@ $messages['no'] = array(
 	'coll-empty_collection'           => 'Tom samling',
 	'coll-revision'                   => 'Revisjon: %PARAM%',
 	'coll-save_collection_title'      => 'Lagre samling',
-	'coll-save_collection_text'       => 'For å lagre denne samlingen for senere bruk, velg en samlingstype og skriv inn en sidetittel:',
+	'coll-save_collection_text'       => 'Velg en samlingstype og skriv inn en sidetittel for å lagre denne samlingen for senere bruk.',
 	'coll-login_to_save'              => 'Om du vil lagre samlingene for senere bruk, <a href="$1">logg inn eller opprett en konto</a>.',
 	'coll-personal_collection_label'  => 'Personlig samling:',
 	'coll-community_collection_label' => 'Fellesskapssamling:',
@@ -1899,5 +1906,16 @@ $messages['tg'] = array(
 	'coll-cancel'            => 'Лағв',
 	'coll-nopdf_error_title' => 'Ҳеҷ PDF парвандае ёфт нашуд',
 	'coll-about_pp'          => 'Дар бораи $1',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'coll-collection' => 'Tập hợp',
+	'coll-add_page'   => 'Thêm trang',
+	'coll-page'       => 'trang',
+	'coll-cancel'     => 'Bãi bỏ',
+	'coll-about_pp'   => 'Giới thiệu $1',
 );
 
