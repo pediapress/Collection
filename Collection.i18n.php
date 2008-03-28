@@ -868,6 +868,8 @@ $messages['km'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'coll-add_page'             => 'Säit derbäisetzen',
+	'coll-add_category'         => 'Kategorie derbäisetzen',
 	'coll-empty'                => 'eidel',
 	'coll-page'                 => 'Säit',
 	'coll-pages'                => 'Säiten',
@@ -879,6 +881,7 @@ $messages['lb'] = array(
 	'coll-sort_alphabetically'  => 'Säiten alphabetesch sortéieren',
 	'coll-rename'               => 'Ëmbenennen',
 	'coll-no_such_category'     => 'Keng esou Kategorie',
+	'coll-mwpdf_error_title'    => 'E PDF konnt net gemaach ginn',
 	'coll-overwrite_title'      => "D'Säit gëtt et. Iwwerschreiwen?",
 	'coll-yes'                  => 'Jo',
 	'coll-no'                   => 'Neen',
