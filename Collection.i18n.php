@@ -715,6 +715,15 @@ $messages['hsb'] = array(
 	'coll-return_to_collection'      => '<p>Wróćo k <a href="$1">$2</a></p>',
 );
 
+/** Hungarian (Magyar)
+ * @author Dani
+ */
+$messages['hu'] = array(
+	'coll-title' => 'Cím:',
+	'coll-yes'   => 'Igen',
+	'coll-no'    => 'Nem',
+);
+
 /** Icelandic (Íslenska)
  * @author SPQRobin
  */
@@ -868,6 +877,7 @@ $messages['km'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'coll-desc'                 => "[[Special:Collection|Säiten zesummestellen]], PDF'e generéieren",
 	'coll-add_page'             => 'Säit derbäisetzen',
 	'coll-add_category'         => 'Kategorie derbäisetzen',
 	'coll-empty'                => 'eidel',
