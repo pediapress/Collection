@@ -1905,7 +1905,7 @@ $messages['tet'] = array(
 /** Tajik (Тоҷикӣ)
  * @author Ibrahim
  */
-$messages['tg'] = array(
+$messages['tg-cyrl'] = array(
 	'coll-add_page'          => 'Илова кардани саҳифа',
 	'coll-empty'             => 'холӣ',
 	'coll-page'              => 'саҳифа',
