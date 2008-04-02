@@ -1227,9 +1227,9 @@ $messages['oc'] = array(
 	'coll-collection'                 => 'Compilacion',
 	'coll-collections'                => 'Compilacions',
 	'coll-portlet_title'              => 'Ma compilacion',
-	'coll-add_page'                   => 'Ajustar una pagina',
+	'coll-add_page'                   => 'Apondre una pagina',
 	'coll-remove_page'                => 'Levar una pagina',
-	'coll-add_category'               => 'Ajustar una categoria',
+	'coll-add_category'               => 'Apondre una categoria',
 	'coll-load_collection'            => 'Cargar una compilacion',
 	'coll-show_collection'            => 'Afichar la compilacion',
 	'coll-help_collections'           => 'Ajuda sus las compilacions',
@@ -1244,8 +1244,8 @@ Aquesta pagina s'aficharà pas corrèctament tant que javascript es pas activat.
 
 Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entresenhas.",
 	'coll-helppage'                   => 'Ajuda:Collections',
-	'coll-pdftoobigcat'               => 'La categoria conten mai de %PARAM% paginas, solas las primièras %PARAM% paginas pòdon èsser ajustadas dins vòstra compilacion.
-Las volètz ajustar ?',
+	'coll-pdftoobigcat'               => 'La categoria conten mai de %PARAM% paginas, solas las primièras %PARAM% paginas pòdon èsser apondudas dins vòstra compilacion.
+Las volètz apondre ?',
 	'coll-my_collection'              => 'Ma compilacion',
 	'coll-download_title'             => 'Telecargar la compilacion en PDF',
 	'coll-download_text'              => 'Per telecargar un PDF generat automaticament a partir de vòstra compilacion, picatz sul boton.',
@@ -1289,9 +1289,9 @@ La volètz remplaçar per vòstra compilacion ?',
 	'coll-yes'                        => 'Òc',
 	'coll-no'                         => 'Non',
 	'coll-load_overwrite_text'        => 'Ja avètz de paginas dins vòstra compilacion.
-Volètz espotir vòstra compilacion actuala, i ajustar lo contengut o alara anullar ?',
+Volètz espotir vòstra compilacion actuala, i apondre lo contengut o alara anullar ?',
 	'coll-overwrite'                  => 'Espotir',
-	'coll-append'                     => 'Ajustar',
+	'coll-append'                     => 'Apondre',
 	'coll-cancel'                     => 'Anullar',
 	'coll-limit_exceeded_title'       => 'Compilacion tròp granda',
 	'coll-limit_exceeded_text'        => 'Vòstra compilacion es tròp granda.
@@ -1716,6 +1716,17 @@ Pozri možnosti jeho vylepšenia na [[{{MediaWiki:Coll-helppage}}|stránke Pomoc
 	'coll-about_pp'                   => 'O $1',
 );
 
+/** Serbian Cyrillic ekavian (ћирилица)
+ * @author Sasa Stefanovic
+ */
+$messages['sr-ec'] = array(
+	'coll-page'   => 'страна',
+	'coll-remove' => 'Уклони',
+	'coll-title'  => 'Наслов:',
+	'coll-yes'    => 'Да',
+	'coll-no'     => 'Не',
+);
+
 /** Swedish (Svenska)
  * @author M.M.S.
  * @author Sannab
@@ -1902,23 +1913,68 @@ $messages['tet'] = array(
 	'coll-about_pp' => 'Kona-ba $1',
 );
 
-/** Tajik (Тоҷикӣ)
+/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
-	'coll-add_page'          => 'Илова кардани саҳифа',
-	'coll-empty'             => 'холӣ',
-	'coll-page'              => 'саҳифа',
-	'coll-pages'             => 'саҳифаҳо',
-	'coll-download_as_pdf'   => 'Боргузорӣ ҳамчун PDF',
-	'coll-download_pdf'      => 'Боргузории PDF',
-	'coll-remove'            => 'Ҳазф',
-	'coll-contents'          => 'Мундариҷа',
-	'coll-rename'            => 'Тағйири ном',
-	'coll-append'            => 'Афзудан',
-	'coll-cancel'            => 'Лағв',
-	'coll-nopdf_error_title' => 'Ҳеҷ PDF парвандае ёфт нашуд',
-	'coll-about_pp'          => 'Дар бораи $1',
+	'coll-collection'                 => 'Гирдоварӣ',
+	'coll-collections'                => 'Гирдовариҳо',
+	'coll-portlet_title'              => 'Гирдоварии Ман',
+	'coll-add_page'                   => 'Илова кардани саҳифа',
+	'coll-remove_page'                => 'Пок кардани саҳифа',
+	'coll-add_category'               => 'Илова кардани гурӯҳ',
+	'coll-load_collection'            => 'Бор кардани гирдоварӣ',
+	'coll-show_collection'            => 'Намоиши гирдоварӣ',
+	'coll-help_collections'           => 'Роҳнамои гирдовариҳо',
+	'coll-empty'                      => 'холӣ',
+	'coll-page'                       => 'саҳифа',
+	'coll-pages'                      => 'саҳифаҳо',
+	'coll-download_as_pdf'            => 'Боргузорӣ ҳамчун PDF',
+	'coll-helppage'                   => 'Роҳнамо:Гирдовариҳо',
+	'coll-pdftoobigcat'               => 'Гурӯҳ беш аз %PARAM% саҳифаҳо аст, танҳо аввалин %PARAM% саҳифаҳо метавонанд ба гирдоварии шумо илова шаванд.
+Оё шумо мехоҳед онҳоро илова кунед?',
+	'coll-my_collection'              => 'Гирдоварии Ман',
+	'coll-download_title'             => 'Бор кардани гирдовари ҳамчун PDF',
+	'coll-download_text'              => 'Барои бор кардани парвандаи PDF саҳифаи гирдоварии худ, ки ба таври худкор ҳосил шудааст, тугмаро пахш кунед.',
+	'coll-download_pdf'               => 'Боргузории PDF',
+	'coll-remove'                     => 'Ҳазф',
+	'coll-title'                      => 'Унвон:',
+	'coll-subtitle'                   => 'Зерунвон:',
+	'coll-contents'                   => 'Мундариҷа',
+	'coll-create_chapter'             => 'Эҷоди фасли ҷадид',
+	'coll-clear_collection'           => 'Тоза кардани гирдовари',
+	'coll-rename'                     => 'Тағйири ном',
+	'coll-new_chapter'                => 'Барои фасли ҷадид номеро ворид кунед',
+	'coll-rename_chapter'             => 'Барои фасл номи ҷадидеро ворид кунед',
+	'coll-no_such_category'           => 'Чунин гурӯҳ вуҷуд надорад',
+	'coll-mwpdf_error_title'          => 'PDF ҳосил шуда натавонист',
+	'coll-mwpdf_error_msg'            => 'Дар ҳоли ҳосили PDF хатое рух дод.',
+	'coll-mwzip_error_title'          => 'Гирдоварии саҳифа ҳосил шуда натавонист',
+	'coll-mwzip_error_msg'            => 'Дар ҳоли ҳосил кардани саҳифаи гирдоварӣ хатое рух дод.',
+	'coll-notitle_title'              => 'Унвони саҳифа мушаххас шуда наметавонад.',
+	'coll-enter_title'                => 'Барои гирдовари унвонеро ворид кунед:',
+	'coll-empty_collection'           => 'Холӣ кардани гирдовари',
+	'coll-revision'                   => 'Нусха: %PARAM%',
+	'coll-save_collection_title'      => 'Захира кардани гирдовари',
+	'coll-personal_collection_label'  => 'Гирдоварии шахсӣ:',
+	'coll-community_collection_label' => 'Гирдоварии умум:',
+	'coll-save_collection'            => 'Захираи Гирдовари',
+	'coll-overwrite_title'            => 'Саҳифа вуҷуд дорад. Ба рӯи он аз навишта шавад?',
+	'coll-overwrite_text'             => 'Саҳифае бо номи $1 аллакай вуҷуд дорад.
+Оё шумо мехоҳед онро бо гирдоварии худ иваз кунед?',
+	'coll-yes'                        => 'Бале',
+	'coll-no'                         => 'Не',
+	'coll-append'                     => 'Афзудан',
+	'coll-cancel'                     => 'Лағв',
+	'coll-limit_exceeded_title'       => 'Гирдовари Хеле Бузург',
+	'coll-generating_pdf_title'       => 'Дар ҳоли ҳосили PDF',
+	'coll-pdf_finished_title'         => 'Ҳосил кардани PDF ба анҷом расид',
+	'coll-nopdf_error_title'          => 'Ҳеҷ PDF парвандае ёфт нашуд',
+	'coll-nopdf_error_text'           => 'Парвандаи PDF ёфт нашуд. Лутфан дубора парвандаи PDF-ро ҳосил кунед.',
+	'coll-notfound_title'             => 'Гирдовари Ёфт Нашуд',
+	'coll-notfound_text'              => 'Саҳифаи гирдоварӣ ёфт нашуд.',
+	'coll-return_to_collection'       => '<p>Бозгашт ба <a href="$1">$2</a></p>',
+	'coll-about_pp'                   => 'Дар бораи $1',
 );
 
 /** Vietnamese (Tiếng Việt)
