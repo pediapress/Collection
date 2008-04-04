@@ -569,6 +569,7 @@ Voir [[{{MediaWiki:Coll-helppage}}|l’aide concernant les collections]] pour le
  * @author Alma
  */
 $messages['gl'] = array(
+	'coll-desc'                       => '[[Special:Collection|Coleccionar páxinas]], xerar ficheiros PDF',
 	'coll-collection'                 => 'Colección',
 	'coll-collections'                => 'Coleccións',
 	'coll-portlet_title'              => 'A miña colección',
@@ -585,6 +586,9 @@ $messages['gl'] = array(
 	'coll-noscript_text'              => '<noscript><h1>Requírese o JavaScript!</h1>
 <strong>O seu navegador non soporta o JavaScript ou o JavaScript foi deshabilitado.
 Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa habilitado.</strong></noscript>',
+	'coll-intro_text'                 => 'Pode coleccionar páxinas, xerar e descargar ficheiros PDF das páxinas de coleccións e gardar as páxinas de coleccións para un uso posterior ou para compartilas.
+
+Vexa a [[{{MediaWiki:Coll-helppage}}|páxina de axuda sobre as coleccións]] para máis información.',
 	'coll-helppage'                   => 'Help:Collections',
 	'coll-pdftoobigcat'               => 'A categoría contén máis de %PARAM% páxinas, tan só as primeiras %PARAM% páxinas poden ser engadidas á súa colección.
 Quere engadilas?',
@@ -601,6 +605,7 @@ Quere engadilas?',
 	'coll-subtitle'                   => 'Subtítulo:',
 	'coll-contents'                   => 'Contidos',
 	'coll-create_chapter'             => 'Crear un novo capítulo',
+	'coll-sort_alphabetically'        => 'Ordenar as páxinas alfabeticamente',
 	'coll-clear_collection'           => 'Borrar colección',
 	'coll-clear_confirm'              => 'Seguro que desexa eliminar a súa colección?',
 	'coll-rename'                     => 'Renomear',
@@ -648,7 +653,91 @@ Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda sobre as coleccións]] par
 	'coll-notfound_text'              => 'Non se pode atopar a páxina da colección.',
 	'coll-return_to_collection'       => '<p>Voltar a <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'As seguintes páxinas non poden ser renderizadas e serán eliminadas do arquivo PDF:',
+	'coll-order_from_pp'              => 'Encargar un libro a $1',
 	'coll-about_pp'                   => 'Acerca de $1',
+);
+
+/** Hindi (हिन्दी)
+ * @author Kaustubh
+ */
+$messages['hi'] = array(
+	'coll-desc'                       => '[[Special:Collection|पन्ने जमा करें]], पीडीएफ बनायें',
+	'coll-collection'                 => 'कलेक्शन',
+	'coll-collections'                => 'कलेक्शन',
+	'coll-portlet_title'              => 'मेरा कलेक्शन',
+	'coll-add_page'                   => 'पन्ना बढायें',
+	'coll-remove_page'                => 'पन्ना हटायें',
+	'coll-add_category'               => 'श्रेणी बढायें',
+	'coll-load_collection'            => 'कलेक्शन लोड करें',
+	'coll-show_collection'            => 'कलेक्शन दर्शायें',
+	'coll-help_collections'           => 'कलेक्शन सहायता',
+	'coll-empty'                      => 'खाली',
+	'coll-page'                       => 'पन्ना',
+	'coll-pages'                      => 'पन्ने',
+	'coll-download_as_pdf'            => 'पीडिएफ डाउनलोड करें',
+	'coll-helppage'                   => 'Help:कलेक्शन',
+	'coll-my_collection'              => 'मेरे कलेक्शन',
+	'coll-download_title'             => 'कलेक्शन पीडिएफ डाउनलोड करें',
+	'coll-download_text'              => 'आपके कलेक्शनका पीडिएफ अवतरण डाउनलोड करने के लिये, दिये हुए बटन पर क्लिक करें।',
+	'coll-download_pdf'               => 'पीडिएफ डाउनलोड करें',
+	'coll-remove'                     => 'हटायें',
+	'coll-move_to_top'                => 'सबसे उपर भेजें',
+	'coll-move_up'                    => 'उपर भेजें',
+	'coll-move_down'                  => 'नीचे भेजें',
+	'coll-move_to_bottom'             => 'सबसे नीचे भेजें',
+	'coll-title'                      => 'शीर्षक:',
+	'coll-subtitle'                   => 'उपशीर्षक:',
+	'coll-contents'                   => 'अनुक्रम',
+	'coll-create_chapter'             => 'नया अध्याय बनायें',
+	'coll-sort_alphabetically'        => 'अक्षरोंके अनुसार पन्ने लगायें',
+	'coll-clear_collection'           => 'कलेक्शन खाली करें',
+	'coll-clear_confirm'              => 'क्या आप सचमुच आपका कलेक्शन खाली करना चाहतें हैं?',
+	'coll-rename'                     => 'नाम बदलें',
+	'coll-new_chapter'                => 'नये अध्याय के लिये नाम दें',
+	'coll-rename_chapter'             => 'नये अध्याय के लिये नाम दें',
+	'coll-no_such_category'           => 'ऐसी श्रेणी नहीं हैं',
+	'coll-mwpdf_error_title'          => 'पीडीएफ तैयार नहीं कर सकतें',
+	'coll-mwpdf_error_msg'            => 'पीडीएफ बनाने में समस्या आई हैं।',
+	'coll-mwzip_error_title'          => 'पन्नोंका कलेक्शन बना नहीं पाये हैं',
+	'coll-mwzip_error_msg'            => 'पन्नोंका कलेक्शन बनाते समय समस्या आई हैं।',
+	'coll-notitle_title'              => 'इस पन्ने का शीर्षक निश्चित नहीं कर पा रहें हैं।',
+	'coll-post_failed_title'          => 'POST माँग पूरी नहीं हुई हैं',
+	'coll-post_failed_msg'            => 'POST माँग पूरी नहीं हुई हैं',
+	'coll-enter_title'                => 'कलेक्शन का शीर्षक दें:',
+	'coll-error_reponse'              => 'सर्वरसे गलत रिस्पॉन्स मिला हैं',
+	'coll-empty_collection'           => 'खाली कलेक्शन',
+	'coll-revision'                   => 'अवतरण: %PARAM%',
+	'coll-save_collection_title'      => 'कलेक्शन संजोयें',
+	'coll-save_collection_text'       => 'इस कलेक्शनको फिरसे इस्तेमाल में लाने के लिये इसे एक नाम दें और इसका प्रकार चुनकर इसे संजोयें:',
+	'coll-login_to_save'              => 'अगर आप बादमें इस्तेमाल के लिये यह कलेक्शन संजोना चाहतें हैं, तो कृपया <a href="$1">लॉग इन करें या नया खाता खोलें</a>।',
+	'coll-personal_collection_label'  => 'वैयक्तिक कलेक्शन:',
+	'coll-community_collection_label' => 'सामूहिक कलेक्शन:',
+	'coll-save_collection'            => 'कलेक्शन संजोयें',
+	'coll-overwrite_title'            => 'पन्ना अस्तित्व में हैं। पुनर्लेखन करें?',
+	'coll-overwrite_text'             => '$1 नामका पन्ना पहले से अस्तित्वमें हैं।
+क्या आप उसपर अपना कलेक्शन पुनर्लिखना चाहतें हैं?',
+	'coll-yes'                        => 'हां',
+	'coll-no'                         => 'नहीं',
+	'coll-load_overwrite_text'        => 'आपके कलेक्शनमें पहले से कुछ पन्ने हैं।
+क्या आप आपका कलेक्शन दुबारा बनाना चाहतें हैं, या यह पन्ने बढाना चाहतें हैं?',
+	'coll-overwrite'                  => 'पुनर्लेखन करें',
+	'coll-append'                     => 'बढायें',
+	'coll-cancel'                     => 'रद्द करें',
+	'coll-limit_exceeded_title'       => 'कलेक्शन बहुत बडा हुआ हैं',
+	'coll-limit_exceeded_text'        => 'आपका कलेक्शन बहुत बडा हुआ हैं।
+और पन्ने बढा नहीं सकतें।',
+	'coll-generating_pdf_title'       => 'पीडीएफ तैयार कर रहें हैं',
+	'coll-pdf_finished_title'         => 'पीडीएफ तैयार',
+	'coll-nopdf_error_title'          => 'पीडीएफ फ़ाईल मिली नहीं',
+	'coll-nopdf_error_text'           => 'पीडीएफ फ़ाईल मिली नहीं। कॄपया फिरसे इसे बनायें।',
+	'coll-notfound_title'             => 'कलेक्शन मिला नहीं',
+	'coll-notfound_text'              => 'कलेक्शन पन्ना मिला नहीं।',
+	'coll-return_to_collection'       => '<p><a href="$1">$2</a> पर वापस जायें</p>',
+	'coll-pages_removed'              => 'नीचे दिये हुए पन्ने पीडीएफ फ़ाईल में बढा नहीं पायें:',
+	'coll-book_title'                 => 'छपा हुआ अवतरण माँगे',
+	'coll-book_text'                  => 'आप नीचे दिये हुए प्रिन्ट-ऑन-डिमांड पार्टनर्ससे आपके कलेक्शनमें उपलब्ध पन्नोंका छपा हुआ अवतरण पा सकतें हैं:',
+	'coll-order_from_pp'              => '$1 से बुक मंगायें',
+	'coll-about_pp'                   => '$1 के बारे में',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -1524,6 +1613,7 @@ Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para f
 /** Russian (Русский)
  * @author .:Ajvol:.
  * @author Siebrand
+ * @author Ahonc
  */
 $messages['ru'] = array(
 	'coll-desc'                       => '[[Special:Collection|Собирает коллекции страниц]], создаёт PDF',
@@ -1562,7 +1652,7 @@ $messages['ru'] = array(
 	'coll-subtitle'                   => 'Подзаголовок:',
 	'coll-contents'                   => 'Содержание',
 	'coll-create_chapter'             => 'Создать новую главу',
-	'coll-sort_alphabetically'        => 'Упорядочивать страницы автоматически',
+	'coll-sort_alphabetically'        => 'Упорядочивать страницы по алфавиту',
 	'coll-clear_collection'           => 'Очистить коллекцию',
 	'coll-clear_confirm'              => 'Вы действительно хотите очистить свою коллекцию?',
 	'coll-rename'                     => 'Переименовать',
@@ -1942,6 +2032,7 @@ $messages['tg-cyrl'] = array(
 	'coll-subtitle'                   => 'Зерунвон:',
 	'coll-contents'                   => 'Мундариҷа',
 	'coll-create_chapter'             => 'Эҷоди фасли ҷадид',
+	'coll-sort_alphabetically'        => 'Аз рӯи алифбо ба тартиб даровардани саҳифаҳо',
 	'coll-clear_collection'           => 'Тоза кардани гирдовари',
 	'coll-rename'                     => 'Тағйири ном',
 	'coll-new_chapter'                => 'Барои фасли ҷадид номеро ворид кунед',
@@ -1975,6 +2066,57 @@ $messages['tg-cyrl'] = array(
 	'coll-notfound_text'              => 'Саҳифаи гирдоварӣ ёфт нашуд.',
 	'coll-return_to_collection'       => '<p>Бозгашт ба <a href="$1">$2</a></p>',
 	'coll-about_pp'                   => 'Дар бораи $1',
+);
+
+/** Ukrainian (Українська)
+ * @author Ahonc
+ */
+$messages['uk'] = array(
+	'coll-desc'                => '[[Special:Collection|Збирає колекції сторінок]], створює PDF',
+	'coll-collection'          => 'Колекція',
+	'coll-collections'         => 'Колекції',
+	'coll-portlet_title'       => 'Моя колекція',
+	'coll-add_page'            => 'Додати сторінку',
+	'coll-remove_page'         => 'Вилучити сторінку',
+	'coll-add_category'        => 'Додати категорію',
+	'coll-load_collection'     => 'Завантажити колекцію',
+	'coll-show_collection'     => 'Показати колекцію',
+	'coll-help_collections'    => 'Довідка про колекції',
+	'coll-empty'               => 'порожня',
+	'coll-page'                => 'сторінка',
+	'coll-pages'               => 'сторінки',
+	'coll-download_as_pdf'     => 'Завантажити як PDF',
+	'coll-helppage'            => 'Довідка:Колекції',
+	'coll-pdftoobigcat'        => 'Категорія містить більше, ніж %PARAM% сторінок, тільки перші %PARAM% сторінок можуть бути включені до вашої колекції.
+Ви хочете додати їх?',
+	'coll-my_collection'       => 'Моя колекція',
+	'coll-download_title'      => 'Завантажити колекцію як PDF',
+	'coll-download_text'       => 'Щоб завантажити автоматично створений PDF-файл з вашою колекцією сторінок, натисніть кнопку.',
+	'coll-download_pdf'        => 'Завантажити PDF',
+	'coll-remove'              => 'Вилучити',
+	'coll-move_to_top'         => 'Перемістити вгору',
+	'coll-move_up'             => 'Перемістити вище',
+	'coll-move_down'           => 'Перемістити нижче',
+	'coll-move_to_bottom'      => 'Перемістити донизу',
+	'coll-title'               => 'Назва:',
+	'coll-subtitle'            => 'Підзаголовок:',
+	'coll-contents'            => 'Зміст',
+	'coll-create_chapter'      => 'Створити новий розділ',
+	'coll-sort_alphabetically' => 'Сортувати сторінки за алфавітом',
+	'coll-clear_collection'    => 'Очистити колекцію',
+	'coll-clear_confirm'       => 'Ви дійсно хочете очистити вашу колекцію?',
+	'coll-rename'              => 'Перейменувати',
+	'coll-new_chapter'         => 'Уведіть назву нового розділу',
+	'coll-rename_chapter'      => 'Уведіть нову назву розділу',
+	'coll-no_such_category'    => 'Нема такої категорії',
+	'coll-mwpdf_error_title'   => 'Неможливо згенерувати PDF',
+	'coll-mwpdf_error_msg'     => 'Під час створення PDF-файлу відбулася помилка.',
+	'coll-mwzip_error_title'   => 'Неможливо створити колекцію сторінок',
+	'coll-mwzip_error_msg'     => 'Під час створення колекції сторінок відбулася помилка.',
+	'coll-notitle_title'       => 'Заголовок сторінки неможливо визначити.',
+	'coll-post_failed_title'   => 'POST-запит не виконаний',
+	'coll-post_failed_msg'     => 'POST-запит не виконаний.',
+	'coll-enter_title'         => 'Уведіть назву колекції:',
 );
 
 /** Vietnamese (Tiếng Việt)
