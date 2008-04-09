@@ -436,6 +436,7 @@ $messages['eo'] = array(
 	'coll-create_chapter'             => 'Kreu novan ĉapitron',
 	'coll-sort_alphabetically'        => 'Ordigu paĝojn laŭ alfabeto',
 	'coll-clear_collection'           => 'Forviŝu kolekton',
+	'coll-clear_confirm'              => 'Ĉu vi ja volas forviŝi vian kolekton?',
 	'coll-rename'                     => 'Alinomigu',
 	'coll-new_chapter'                => 'Enigu nomon por nova ĉapitro',
 	'coll-rename_chapter'             => 'Enigu novan nomon por ĉapitro',
@@ -443,6 +444,7 @@ $messages['eo'] = array(
 	'coll-mwpdf_error_title'          => 'Ne eblis generi PDF-on',
 	'coll-post_failed_title'          => 'POST-peto malsukcesis',
 	'coll-post_failed_msg'            => 'La POST-peto malsukcesis.',
+	'coll-error_reponse'              => 'Erara respondo de servilo',
 	'coll-empty_collection'           => 'Malplena kolekto',
 	'coll-revision'                   => 'Revizio: %PARAM%',
 	'coll-save_collection_title'      => 'Konservu Kolekton',
@@ -452,10 +454,12 @@ $messages['eo'] = array(
 	'coll-yes'                        => 'Jes',
 	'coll-no'                         => 'Ne',
 	'coll-cancel'                     => 'Neigu',
+	'coll-limit_exceeded_title'       => 'Kolekto Tro Granda',
 	'coll-generating_pdf_title'       => 'Generante PDF',
 	'coll-pdf_finished_title'         => 'PDF-generado Finita',
 	'coll-nopdf_error_title'          => 'Neniu PDF-dosiero trovita',
 	'coll-notfound_title'             => 'Kolekto Ne Trovita',
+	'coll-notfound_text'              => 'Ne eblas trovi kolekto-paĝon.',
 	'coll-return_to_collection'       => '<p>Reiru al <a href="$1">$2</a></p>',
 	'coll-book_title'                 => 'Mendu Eldonitan Libron',
 	'coll-order_from_pp'              => 'Mendu libron de $1',
@@ -1343,7 +1347,7 @@ $messages['oc'] = array(
 	'coll-noscript_text'              => "<noscript><h1>Javascript es necessari !</h1>
 <strong>Vòstre navegaire supòrta pas Javascript o se l'a desactivat.
 Aquesta pagina s'aficharà pas corrèctament tant que javascript es pas activat.</strong></noscript>",
-	'coll-intro_text'                 => "Podètz collectar de paginas, generar e telecargar de fichièrs PDF dempuèi las colleccions de paginas o de las salvagardas de las dichas colleccions per un usatge ulterior o per las pertejar.
+	'coll-intro_text'                 => "Podètz collectar de paginas, generar e telecargar de fichièrs PDF dempuèi las colleccions de paginas o de las salvagardas de las dichas colleccions per un usatge ulterior o per las partejar.
 
 Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entresenhas.",
 	'coll-helppage'                   => 'Ajuda:Collections',
@@ -1387,7 +1391,7 @@ Las volètz apondre ?',
 	'coll-community_collection_label' => 'Compilacion collectiva :',
 	'coll-save_collection'            => 'Salvagardar la compilacion',
 	'coll-overwrite_title'            => "La pagina existís. L'espotir ?",
-	'coll-overwrite_text'             => 'Una pagina amb lo títol $1 ja existís.
+	'coll-overwrite_text'             => 'Una pagina amb lo títol $1 existís ja.
 La volètz remplaçar per vòstra compilacion ?',
 	'coll-yes'                        => 'Òc',
 	'coll-no'                         => 'Non',
@@ -2183,6 +2187,8 @@ $messages['uk'] = array(
 Ви хочете, щоб вона була замінена вашою колекцією?',
 	'coll-yes'                        => 'Так',
 	'coll-no'                         => 'Ні',
+	'coll-load_overwrite_text'        => 'У вас уже є кілька сторінок у колекції.
+Ви хочете перезаписати вашу поточну колекцію, додати новий матеріал чи скасувати дію?',
 	'coll-overwrite'                  => 'Перезаписати',
 	'coll-append'                     => 'Додати',
 	'coll-cancel'                     => 'Скасувати',
@@ -2190,7 +2196,14 @@ $messages['uk'] = array(
 	'coll-limit_exceeded_text'        => 'Ваша колекція дуже велика.
 До неї не можна більше додавати сторінок.',
 	'coll-generating_pdf_title'       => 'Створення PDF',
+	'coll-generating_pdf_text'        => "'''Будь ласка, зачекайте, поки створиться PDF-файл.'''
+Ця сторінка повинна автоматично оновлюватися кожні декілька секунд.
+Якщо цього не відбувається, натисніть кнопку оновлення у вашому браузері.",
 	'coll-pdf_finished_title'         => 'Створення PDF закінчене',
+	'coll-pdf_finished_text'          => "PDF-файл був створений.
+Натисніть на посилання нижче, щоб завантажити його на свій комп'ютер.
+Не задоволені створеним файлом?
+Зверніть увагу на [[{{MediaWiki:Coll-helppage}}|довідкову інформацію про колекції]], щоб дізнатися про можливості покращення.",
 	'coll-nopdf_error_title'          => 'Не знайдений PDF-файл',
 	'coll-nopdf_error_text'           => 'Неможливо знайти PDF-файл. Будь ласка, повторіть його створення.',
 	'coll-notfound_title'             => 'Колекція не знайдена',
