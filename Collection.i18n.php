@@ -1941,6 +1941,13 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter at
 	'coll-about_pp'                   => 'Om $1',
 );
 
+/** Silesian (ślůnski)
+ * @author Herr Kriss
+ */
+$messages['szl'] = array(
+	'coll-page' => 'zajta',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  * @author Siebrand
