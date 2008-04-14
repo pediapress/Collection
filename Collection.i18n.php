@@ -1574,11 +1574,18 @@ $messages['pt'] = array(
 	'coll-page'                       => 'página',
 	'coll-pages'                      => 'páginas',
 	'coll-download_as_pdf'            => 'Descarregar como PDF',
+	'coll-noscript_text'              => '<noscript><h1>JavaScript é Requerido!</h1>
+<strong>O seu "browser" não suporta JavaScript, ou o JavaScript foi desactivado.
+Esta página não funcionará correctamente, excepto se o JavaScript for activado.</strong></noscript>',
+	'coll-intro_text'                 => 'Você pode coleccionar páginas, gerar e descarregar um ficheiro PDF de colecções de páginas e gravar colecções de páginas para usar mais tarde ou partilhá-las.
+
+Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para mais informação.',
 	'coll-helppage'                   => '{{ns:help}}:Colecções',
 	'coll-pdftoobigcat'               => 'Esta categoria contém mais que %PARAM% páginas, sendo que apenas as primeiras %PARAM% páginas podem ser adicionadas à sua colecção.
 Deseja adicioná-las?',
 	'coll-my_collection'              => 'Minha Colecção',
 	'coll-download_title'             => 'Descarregar Colecção como PDF',
+	'coll-download_text'              => 'Para descarregar um ficheiro PDF da sua colecção de páginas gerado automaticamente, carregue no botão.',
 	'coll-download_pdf'               => 'Descarregar PDF',
 	'coll-remove'                     => 'Remover',
 	'coll-move_to_top'                => 'Mover para o topo',
@@ -1609,6 +1616,7 @@ Deseja adicioná-las?',
 	'coll-revision'                   => 'Revisão: %PARAM%',
 	'coll-save_collection_title'      => 'Gravar Colecção',
 	'coll-save_collection_text'       => 'Para guardar uma colecção para uso futuro, escolha um tipo de colecção e introduza o título da página:',
+	'coll-login_to_save'              => 'Se pretende gravar colecções para mais tarde, por favor, <a href="$1">autentique-se ou crie uma conta</a>.',
 	'coll-personal_collection_label'  => 'Colecção pessoal:',
 	'coll-community_collection_label' => 'Colecção comunitária:',
 	'coll-save_collection'            => 'Gravar Colecção',
@@ -1617,11 +1625,18 @@ Deseja adicioná-las?',
 Deseja substituí-la pela sua colecção?',
 	'coll-yes'                        => 'Sim',
 	'coll-no'                         => 'Não',
+	'coll-load_overwrite_text'        => 'Já tem algumas páginas na sua colecção.
+Pretende reescrever a sua colecção, adicionar o novo conteúdo or cancelar?',
+	'coll-overwrite'                  => 'Reescrever',
+	'coll-append'                     => 'Adicionar',
 	'coll-cancel'                     => 'Cancelar',
 	'coll-limit_exceeded_title'       => 'Colecção Demasiado Grande',
 	'coll-limit_exceeded_text'        => 'A usa coleccção de página é demasiado grande.
 Não poderão ser adicionadas mais páginas.',
 	'coll-generating_pdf_title'       => 'A criar PDF',
+	'coll-generating_pdf_text'        => "'''Por favor, aguarde enquanto o ficheiro PDF está a ser gerado.'''
+Esta página deverá refrescar automaticamente repetidamente dentro de alguns segundos.
+Se isto não funcionar, por favor, carregue no botão de refrescar do seu \"browser\".",
 	'coll-pdf_finished_title'         => 'Geração de PDF Completada',
 	'coll-pdf_finished_text'          => 'O ficheiro PDF foi gerado.
 Clique na ligação abaixo para o descarregar para o seu computador.
@@ -1632,6 +1647,9 @@ Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para f
 	'coll-notfound_title'             => 'Colecção Não Encontrada',
 	'coll-notfound_text'              => 'Não foi possível encontrar a página da colecção.',
 	'coll-return_to_collection'       => '<p>Regressar a <a href="$1">$2</a></p>',
+	'coll-pages_removed'              => 'As seguintes páginas não puderam ser renderizadas e foram removidas do ficheiro PDF:',
+	'coll-book_title'                 => 'Encomendar Livro Impresso',
+	'coll-book_text'                  => 'Você pode encomendar um livro impresso contendo a sua colecção de páginas visitando um dos seguintes parceiros de impressão a pedido:',
 	'coll-order_from_pp'              => 'Encomendar o livro de $1',
 	'coll-about_pp'                   => 'Sobre $1',
 );
