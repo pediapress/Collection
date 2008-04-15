@@ -997,6 +997,7 @@ $messages['lb'] = array(
 	'coll-rename_chapter'       => "Gitt een neie Numm fir d'Kapitel un",
 	'coll-no_such_category'     => 'Keng esou Kategorie',
 	'coll-mwpdf_error_title'    => 'E PDF konnt net gemaach ginn',
+	'coll-revision'             => 'Versioun: %PARAM%',
 	'coll-overwrite_title'      => "D'Säit gëtt et. Iwwerschreiwen?",
 	'coll-yes'                  => 'Jo',
 	'coll-no'                   => 'Neen',
