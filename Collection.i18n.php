@@ -443,6 +443,7 @@ $messages['eo'] = array(
 	'coll-no_such_category'           => 'Nenia kategorio',
 	'coll-mwpdf_error_title'          => 'Ne eblis generi PDF-on',
 	'coll-mwpdf_error_msg'            => 'Eraro okazis dum PDF-generado.',
+	'coll-mwzip_error_title'          => 'Ne eblas generi paĝan kolekton',
 	'coll-post_failed_title'          => 'POST-peto malsukcesis',
 	'coll-post_failed_msg'            => 'La POST-peto malsukcesis.',
 	'coll-enter_title'                => 'Enigu titolon por kolekto:',
@@ -457,6 +458,8 @@ $messages['eo'] = array(
 	'coll-no'                         => 'Ne',
 	'coll-cancel'                     => 'Neigu',
 	'coll-limit_exceeded_title'       => 'Kolekto Tro Granda',
+	'coll-limit_exceeded_text'        => 'Via paĝa kolekto estas tro granda.
+Neniom pluaj paĝoj ne povas esti aldonitaj.',
 	'coll-generating_pdf_title'       => 'Generante PDF',
 	'coll-pdf_finished_title'         => 'PDF-generado Finita',
 	'coll-nopdf_error_title'          => 'Neniu PDF-dosiero trovita',
@@ -1348,8 +1351,8 @@ $messages['oc'] = array(
 	'coll-pages'                      => 'paginas',
 	'coll-download_as_pdf'            => 'Telecargar en PDF',
 	'coll-noscript_text'              => "<noscript><h1>Javascript es necessari !</h1>
-<strong>Vòstre navegaire supòrta pas Javascript o se l'a desactivat.
-Aquesta pagina s'aficharà pas corrèctament tant que javascript es pas activat.</strong></noscript>",
+<strong>Vòstre navigaire supòrta pas Javascript o se l'a desactivat.
+Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activat.</strong></noscript>",
 	'coll-intro_text'                 => "Podètz collectar de paginas, generar e telecargar de fichièrs PDF dempuèi las colleccions de paginas o de las salvagardas de las dichas colleccions per un usatge ulterior o per las partejar.
 
 Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entresenhas.",
@@ -1408,7 +1411,7 @@ Volètz espotir vòstra compilacion actuala, i apondre lo contengut o alara anul
 Cap de pagina pòt pas èsser ajustada.',
 	'coll-generating_pdf_title'       => 'Creacion del PDF',
 	'coll-generating_pdf_text'        => "'''Esperatz pendent la creacion del PDF.'''
-Aquesta pagina deuriá s'actaulizar automaticament, se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navegaire.",
+Aquesta pagina se deuriá actualizar automaticament, se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navigaire.",
 	'coll-pdf_finished_title'         => 'Creacion del PDF acabada',
 	'coll-pdf_finished_text'          => 'Lo fichièr PDF es estat creat.
 Clicatz sul ligam çaijós per lo telecargar sus vòstre ordenador.
