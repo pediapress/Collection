@@ -672,6 +672,23 @@ Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda sobre as coleccións]] par
 	'coll-about_pp'                   => 'Acerca de $1',
 );
 
+/** Manx (Gaelg)
+ * @author MacTire02
+ */
+$messages['gv'] = array(
+	'coll-collection'          => 'Çhaglym',
+	'coll-collections'         => 'Çhaglymyn',
+	'coll-portlet_title'       => 'My haglym',
+	'coll-page'                => 'duillag',
+	'coll-pages'               => 'duillagyn',
+	'coll-my_collection'       => 'My haglym',
+	'coll-title'               => 'Ard-ennym:',
+	'coll-contents'            => 'Cummal',
+	'coll-create_chapter'      => 'Croo cabdil noa',
+	'coll-sort_alphabetically' => 'Sorçhaghey duillagyn rere lettyr',
+	'coll-about_pp'            => 'Mychione $1',
+);
+
 /** Hindi (हिन्दी)
  * @author Kaustubh
  */
@@ -829,14 +846,42 @@ $messages['hu'] = array(
 );
 
 /** Icelandic (Íslenska)
+ * @author S.Örvarr.S
  * @author SPQRobin
  */
 $messages['is'] = array(
-	'coll-empty' => 'tómur',
-	'coll-page'  => 'síða',
-	'coll-pages' => 'síður',
-	'coll-yes'   => 'Já',
-	'coll-no'    => 'Nei',
+	'coll-collection'           => 'Safn',
+	'coll-collections'          => 'Söfn',
+	'coll-portlet_title'        => 'Safnið mitt',
+	'coll-add_page'             => 'Bæta við síðu',
+	'coll-remove_page'          => 'Fjarlægja síðu',
+	'coll-add_category'         => 'Bæta við flokki',
+	'coll-load_collection'      => 'Hlaða safn',
+	'coll-show_collection'      => 'Sýna safn',
+	'coll-help_collections'     => 'Safnhjálp',
+	'coll-empty'                => 'tómur',
+	'coll-page'                 => 'síða',
+	'coll-pages'                => 'síður',
+	'coll-download_as_pdf'      => 'Sækja sem PDF-skjal',
+	'coll-my_collection'        => 'Mitt safn',
+	'coll-download_pdf'         => 'Sækja PDF',
+	'coll-remove'               => 'Fjarlægja',
+	'coll-title'                => 'Titill:',
+	'coll-rename'               => 'Endurnefna',
+	'coll-new_chapter'          => 'Sláðu inn nafn á nýjum kafla',
+	'coll-rename_chapter'       => 'Sláðu inn nýtt nafn fyrir kafla',
+	'coll-no_such_category'     => 'Flokkur ekki til',
+	'coll-save_collection'      => 'Vista safn',
+	'coll-yes'                  => 'Já',
+	'coll-no'                   => 'Nei',
+	'coll-overwrite'            => 'Yfirrita',
+	'coll-append'               => 'Auka við',
+	'coll-cancel'               => 'Hætta við',
+	'coll-limit_exceeded_title' => 'Safn of stórt',
+	'coll-nopdf_error_title'    => 'Ekkert PDF-skjal fannst',
+	'coll-notfound_title'       => 'Safn fannst ekki',
+	'coll-order_from_pp'        => 'Panta bók frá $1',
+	'coll-about_pp'             => 'Um $1',
 );
 
 /** Japanese (日本語)
