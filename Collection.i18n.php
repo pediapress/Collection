@@ -676,17 +676,24 @@ Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda sobre as coleccións]] par
  * @author MacTire02
  */
 $messages['gv'] = array(
-	'coll-collection'          => 'Çhaglym',
-	'coll-collections'         => 'Çhaglymyn',
-	'coll-portlet_title'       => 'My haglym',
-	'coll-page'                => 'duillag',
-	'coll-pages'               => 'duillagyn',
-	'coll-my_collection'       => 'My haglym',
-	'coll-title'               => 'Ard-ennym:',
-	'coll-contents'            => 'Cummal',
-	'coll-create_chapter'      => 'Croo cabdil noa',
-	'coll-sort_alphabetically' => 'Sorçhaghey duillagyn rere lettyr',
-	'coll-about_pp'            => 'Mychione $1',
+	'coll-collection'                 => 'Çhaglym',
+	'coll-collections'                => 'Çhaglymyn',
+	'coll-portlet_title'              => 'My haglym',
+	'coll-empty'                      => 'follym',
+	'coll-page'                       => 'duillag',
+	'coll-pages'                      => 'duillagyn',
+	'coll-helppage'                   => 'Cooney:Çhaglymyn',
+	'coll-my_collection'              => 'My haglym',
+	'coll-title'                      => 'Ard-ennym:',
+	'coll-contents'                   => 'Cummal',
+	'coll-create_chapter'             => 'Croo cabdil noa',
+	'coll-sort_alphabetically'        => 'Sorçhaghey duillagyn rere lettyr',
+	'coll-personal_collection_label'  => 'Çhaglym persoonagh:',
+	'coll-community_collection_label' => 'Çhaglym y chohionnal:',
+	'coll-yes'                        => 'Ta',
+	'coll-no'                         => 'Cha',
+	'coll-cancel'                     => 'Dolley magh',
+	'coll-about_pp'                   => 'Mychione $1',
 );
 
 /** Hindi (हिन्दी)
