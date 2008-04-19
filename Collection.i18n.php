@@ -211,7 +211,9 @@ $messages['ar'] = array(
 هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان، لو أن هذا لا يعمل، من فضلك اضغط زر refresh في متصفحك.",
 	'coll-pdf_finished_title'         => 'توليد PDF اكتمل',
 	'coll-pdf_finished_text'          => 'ملف PDF تم توليده.
-اضغط على الوصلة بالأسفل لتحميله إلى حاسوبك.',
+اضغط على الوصلة بالأسفل لتحميله إلى حاسوبك.
+غير راض عن ناتج PDF؟
+انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.',
 	'coll-nopdf_error_title'          => 'لا ملف PDF تم العثور عليه',
 	'coll-nopdf_error_text'           => 'لم يمكن العثور على ملف PDF. من فضلك أعد توليد ملف PDF.',
 	'coll-notfound_title'             => 'المجموعة غير موجودة',
@@ -983,6 +985,16 @@ $messages['ja'] = array(
 	'coll-pages_removed'              => '以下のページはPDF形式での生成に失敗したため、作成されたPDFファイルには含まれていません:',
 );
 
+/** Javanese (Basa Jawa)
+ * @author Meursault2004
+ */
+$messages['jv'] = array(
+	'coll-add_category'    => 'Tambah kategori',
+	'coll-empty'           => 'kosong',
+	'coll-download_as_pdf' => 'Undhuhen minangka PDF',
+	'coll-book_title'      => 'Pesen Buku Cithak',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author គីមស៊្រុន
@@ -1035,6 +1047,7 @@ $messages['km'] = array(
 $messages['lb'] = array(
 	'coll-desc'                 => "[[Special:Collection|Säiten zesummestellen]], PDF'e generéieren",
 	'coll-add_page'             => 'Säit derbäisetzen',
+	'coll-remove_page'          => 'Säit ewechhuelen',
 	'coll-add_category'         => 'Kategorie derbäisetzen',
 	'coll-empty'                => 'eidel',
 	'coll-page'                 => 'Säit',
@@ -1059,6 +1072,7 @@ $messages['lb'] = array(
 	'coll-yes'                  => 'Jo',
 	'coll-no'                   => 'Neen',
 	'coll-overwrite'            => 'Iwwerschreiwen',
+	'coll-append'               => 'Derbäisetzen',
 	'coll-cancel'               => 'Annulléieren',
 	'coll-generating_pdf_title' => 'PDF maachen',
 	'coll-nopdf_error_title'    => 'Kee PDF Fichier fonnt',
