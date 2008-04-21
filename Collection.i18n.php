@@ -1499,6 +1499,16 @@ Vejatz [[{{MediaWiki:Coll-helppage}}|l’ajuda concernent las colleccions]] per 
 	'coll-about_pp'                   => 'A prepaus de $1',
 );
 
+/** Ossetic (Иронау)
+ * @author Amikeco
+ */
+$messages['os'] = array(
+	'coll-page'  => 'фарс',
+	'coll-title' => 'Сæргонд:',
+	'coll-yes'   => 'О',
+	'coll-no'    => 'Нæ',
+);
+
 /** Polish (Polski)
  * @author Masti
  * @author McMonster
