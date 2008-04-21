@@ -669,6 +669,7 @@ EOS
 
 		$inputFilename = tempnam( wfTempDir(), 'mw-zip-in-' );
 		$inputFile = fopen( $inputFilename, 'w' );
+		$logFilename = tempnam( wfTempDir(), 'mw-zip-log-' );
 		$url = $postData->post_url;
 		fwrite( $inputFile, $this->buildJSONCollection( $_SESSION['wsCollection'] ) );
 		fclose( $inputFile );
@@ -683,7 +684,8 @@ EOS
 				"-d",
 				"-e", $errorFilename,
 				"-p", $url,
-				"-m", $inputFilename ),
+				"-m", $inputFilename,
+				"-l", $logFilename ),
 			$rc );
 		unlink( $inputFilename );
 		if ( $rc == 0 ) {
