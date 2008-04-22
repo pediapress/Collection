@@ -996,7 +996,10 @@ $messages['jv'] = array(
 	'coll-add_category'    => 'Tambah kategori',
 	'coll-empty'           => 'kosong',
 	'coll-download_as_pdf' => 'Undhuhen minangka PDF',
+	'coll-notfound_title'  => 'Kolèksi Ora Ditemokaké',
 	'coll-book_title'      => 'Pesen Buku Cithak',
+	'coll-order_from_pp'   => 'Pesen buku saka $1',
+	'coll-about_pp'        => 'Perkara $1',
 );
 
 /** Khmer (ភាសាខ្មែរ)
