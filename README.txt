@@ -32,7 +32,7 @@ distributions which require at least Python 2.5 and two other Python packages:
  Download and install ReportLab_ from the Subversion repository::
 
     svn co http://www.reportlab.co.uk/svn/public/reportlab/trunk reportlab
-    cd reportlab
+    cd reportlab/reportlab
     python setup.py install
 
 *mwlib*
