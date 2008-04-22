@@ -55,7 +55,7 @@ distributions which require at least Python 2.5 and two other Python packages:
 
     python setup.py install
 
- Edit ``example.conf.txt`` from the mwlib distribution and copy it to some
+ Edit ``example_conf.txt`` from the mwlib distribution and copy it to some
  place where you store system-wide configuration files
  (e.g. ``/etc/mwlib.config``). If you have installed mwlib with easy_install
  you can get the example configuration from
