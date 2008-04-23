@@ -127,6 +127,10 @@ Installation and Configuration
   (limiting the memory and disk usage of external scripts) might need to be
   adjusted, to higher values.
 
+* As the current collection of articles is stored in the session, the session
+  timeout should be set to some sensible value (at least a few hours, maybe
+  one day) in your ``php.ini``.
+
 * Add a page ``Help:Collections`` with the wikitext from the supplied file
   ``Help_Collections.txt``. Adjust the page title for the template blacklist and
   the example name for print templates according to your mwlib configuration.
