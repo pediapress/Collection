@@ -412,6 +412,7 @@ $messages['el'] = array(
 
 /** Esperanto (Esperanto)
  * @author Yekrats
+ * @author Amikeco
  */
 $messages['eo'] = array(
 	'coll-collection'                 => 'Kolekto',
@@ -462,6 +463,8 @@ $messages['eo'] = array(
 	'coll-save_collection'            => 'Konservu Kolekton',
 	'coll-yes'                        => 'Jes',
 	'coll-no'                         => 'Ne',
+	'coll-overwrite'                  => 'Anstataŭigu',
+	'coll-append'                     => 'Aldonu',
 	'coll-cancel'                     => 'Nuligu',
 	'coll-limit_exceeded_title'       => 'Kolekto Tro Granda',
 	'coll-limit_exceeded_text'        => 'Via paĝa kolekto estas tro granda.
@@ -469,12 +472,20 @@ Neniom pluaj paĝoj ne povas esti aldonitaj.',
 	'coll-generating_pdf_title'       => 'Generante PDF',
 	'coll-pdf_finished_title'         => 'PDF-generado Finita',
 	'coll-nopdf_error_title'          => 'Neniu PDF-dosiero trovita',
+	'coll-nopdf_error_text'           => 'PDF-dosiero ne estis trovita. Bonvolu rekrei la PDF-dosieron.',
 	'coll-notfound_title'             => 'Kolekto Ne Trovita',
 	'coll-notfound_text'              => 'Ne eblas trovi kolekto-paĝon.',
 	'coll-return_to_collection'       => '<p>Reiru al <a href="$1">$2</a></p>',
 	'coll-book_title'                 => 'Mendu Eldonitan Libron',
 	'coll-order_from_pp'              => 'Mendu libron de $1',
 	'coll-about_pp'                   => 'Pri $1',
+);
+
+/** Spanish (Español)
+ * @author Jatrobat
+ */
+$messages['es'] = array(
+	'coll-yes' => 'Sí',
 );
 
 /** Finnish (Suomi)
