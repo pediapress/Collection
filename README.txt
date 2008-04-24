@@ -10,6 +10,9 @@ About the *Collection* Extension
 The *Collection* extension for MediaWiki_ allows users to collect articles and
 generate PDFs for article collections and single articles.
 
+The extension has been developed for and tested with MediaWiki_ version 1.11
+and later.
+
 The extension is being developed under the GNU General Public License by
 `PediaPress GmbH`_ in close collaboration with `Wikimedia Foundation`_
 and the `Commonwealth of Learning`_.
