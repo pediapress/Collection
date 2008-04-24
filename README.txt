@@ -135,6 +135,20 @@ Installation and Configuration
 * Add a page ``Help:Collections`` with the wikitext from the supplied file
   ``Help_Collections.txt``. Adjust the page title for the template blacklist and
   the example name for print templates according to your mwlib configuration.
+  
+* If you installed Python software as egg files (e.g. when using easy_install
+  or setuptools) you might have to set the environment variable PYTHON_EGG_CACHE
+  for the user that PHP is running as to a directory with write access. For
+  example on Debian GNU/Linux, this user is www-data, the default egg cache
+  is /var/www/.python-eggs/ (because $HOME is /var/www/), and the user www-data
+  usually doesn't have write access in /var/www/.
+  
+  One way to set environment variables is when configuring the path to ``mw-pdf``
+  and ``mw-zip`` in your ``LocalSettings.php``, e.g.::
+  
+     $wgMWPDFCommand = 'PYTHON_EGG_CACHE=/tmp/.python_eggs /usr/local/bin/mw-pdf'
+     $wgMWZipCommand = 'PYTHON_EGG_CACHE=/tmp/.python_eggs /usr/local/bin/mw-zip'
+
 
 .. _MediaWiki: http://www.mediawiki.org/
 .. _`PediaPress GmbH`: http://pediapress.com/
