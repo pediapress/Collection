@@ -80,11 +80,23 @@ Installation and Configuration
 
   and set the following global variables accordingly:
 
+  *$wgMWZipCommand (string)*
+   Set this to the path of the ``mw-zip`` script installed by with *mwlib*.
+   
+   The default is just ``"mw-zip"``, assuming that the script is in the system
+   ``PATH`` for executables.
+  
+  *$wgMWZipLogFilename (string)*
+   Filename of the logfile of mw-zip. Make sure it's writeable.
+
   *$wgMWPDFCommand (string)*
    Set this to the path of the ``mw-pdf`` script installed by with *mwlib.rl*.
    
    The default is just ``"mw-pdf"``, assuming that the script is in the system
    ``PATH`` for executables.
+  
+  *$wgMWPDFLogFilename (string)*
+   Filename of the logfile of mw-pdf. Make sure it's writeable.
 
   *$wgMWLibConfig (string)*
    The configuration file used by ``mw-pdf`` and ``mw-zip``.

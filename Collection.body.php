@@ -488,15 +488,13 @@ class Collection extends SpecialPage {
 	function generatePDFFromCollection( $collection, $referrer ) {
 		global $wgOut;
 		global $wgMWPDFCommand;
+		global $wgMWPDFLogFilename;
 		global $wgMWLibConfig;
 
 		$inputFilename = tempnam( wfTempDir(), 'mw-pdf-in-' );
 		$outputFilename = tempnam( wfTempDir(), 'mw-pdf-out-' );
 		unlink( $outputFilename );
 		$outputFilename .= '.pdf';
-		$errorFilename = tempnam( wfTempDir(), 'mw-pdf-error-' );
-		unlink( $errorFilename );
-		$logFilename = tempnam( wfTempDir(), 'mw-pdf-log-' );
 		$removedFilename = tempnam( wfTempDir(), 'mw-pdf-removed');
 		unlink( $removedFilename );
 
@@ -506,8 +504,6 @@ class Collection extends SpecialPage {
 		$_SESSION['wsCollectionPDF'] = array(
 			'pdf_filename' => $outputFilename,
 			'input_filename' => $inputFilename,
-			'error_filename' => $errorFilename,
-			'log_filename' => $logFilename,
 			'removed_filename' => $removedFilename,
 			'referrer_link' => $referrer->getFullURL(),
 			'referrer_name' => $referrer->getPrefixedText(),
@@ -522,8 +518,7 @@ class Collection extends SpecialPage {
 			wfEscapeShellArg(
 				"-c", $wgMWLibConfig,
 				"-d",
-				"-e", $errorFilename,
-				"-l", $logFilename,
+				"-l", $wgMWPDFLogFilename,
 				"-r", $removedFilename,
 				"-m", $inputFilename,
 				"-o", $outputFilename ),
@@ -651,6 +646,7 @@ EOS
 	function postPDF( $partner ) {
 		global $wgOut;
 		global $wgMWZipCommand;
+		global $wgMWZipLogFilename;
 		global $wgMWLibConfig;
 
 		$json = new Services_JSON();
@@ -669,23 +665,18 @@ EOS
 
 		$inputFilename = tempnam( wfTempDir(), 'mw-zip-in-' );
 		$inputFile = fopen( $inputFilename, 'w' );
-		$logFilename = tempnam( wfTempDir(), 'mw-zip-log-' );
 		$url = $postData->post_url;
 		fwrite( $inputFile, $this->buildJSONCollection( $_SESSION['wsCollection'] ) );
 		fclose( $inputFile );
-
-		$errorFilename = tempnam( wfTempDir(), 'mw-zip-error-' );
-		unlink( $errorFilename );
 
 		$rc = 0;
 		wfShellExec( "$wgMWZipCommand " .
 			wfEscapeShellArg(
 				"-c", $wgMWLibConfig,
 				"-d",
-				"-e", $errorFilename,
 				"-p", $url,
 				"-m", $inputFilename,
-				"-l", $logFilename ),
+				"-l", $wgMWZipLogFilename ),
 			$rc );
 		unlink( $inputFilename );
 		if ( $rc == 0 ) {
