@@ -2244,6 +2244,14 @@ $messages['tg-cyrl'] = array(
 	'coll-about_pp'                   => 'Дар бораи $1',
 );
 
+/** Turkish (Türkçe)
+ * @author Suelnur
+ */
+$messages['tr'] = array(
+	'coll-yes' => 'Evet',
+	'coll-no'  => 'Hayır',
+);
+
 /** Ukrainian (Українська)
  * @author Ahonc
  */
