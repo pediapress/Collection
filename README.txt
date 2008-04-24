@@ -129,7 +129,8 @@ Installation and Configuration
 
 * As the current collection of articles is stored in the session, the session
   timeout should be set to some sensible value (at least a few hours, maybe
-  one day) in your ``php.ini``.
+  one day). Adjust session.cookie_lifetime and session.gc_maxlifetime in your
+  ``php.ini`` accordingly.
 
 * Add a page ``Help:Collections`` with the wikitext from the supplied file
   ``Help_Collections.txt``. Adjust the page title for the template blacklist and
