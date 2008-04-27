@@ -120,6 +120,13 @@ See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibil
 	'coll-about_pp'      => 'About $1',
 );
 
+/** Karelian (Karjala)
+ * @author Flrn
+ */
+$messages['krl'] = array(
+	'coll-cancel' => 'Keskevytä',
+);
+
 /** Afrikaans (Afrikaans)
  * @author SPQRobin
  */
@@ -2354,10 +2361,30 @@ $messages['uk'] = array(
  * @author Minh Nguyen
  */
 $messages['vi'] = array(
-	'coll-collection' => 'Tập hợp',
-	'coll-add_page'   => 'Thêm trang',
-	'coll-page'       => 'trang',
-	'coll-cancel'     => 'Bãi bỏ',
-	'coll-about_pp'   => 'Giới thiệu $1',
+	'coll-collection'      => 'Tập hợp',
+	'coll-add_page'        => 'Thêm trang',
+	'coll-remove_page'     => 'Dời trang',
+	'coll-page'            => 'trang',
+	'coll-download_as_pdf' => 'Tải xuống PDF',
+	'coll-download_pdf'    => 'Tải xuống PDF',
+	'coll-remove'          => 'Dời',
+	'coll-contents'        => 'Nội dung',
+	'coll-create_chapter'  => 'Tạo chương mới',
+	'coll-rename'          => 'Đổi tên',
+	'coll-cancel'          => 'Bãi bỏ',
+	'coll-about_pp'        => 'Giới thiệu $1',
+);
+
+/** Volapük (Volapük)
+ * @author Malafaya
+ */
+$messages['vo'] = array(
+	'coll-page'          => 'pad',
+	'coll-pages'         => 'pads',
+	'coll-helppage'      => 'Yuf:Konlets',
+	'coll-my_collection' => 'Konlet Obik',
+	'coll-title'         => 'Tiäd:',
+	'coll-yes'           => 'Si',
+	'coll-no'            => 'Nö',
 );
 
