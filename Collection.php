@@ -43,14 +43,20 @@ $wgMWPDFCommand = 'mw-pdf';
 /** The mw-zip command shipped with mwlib */
 $wgMWZipCommand = 'mw-zip';
 
-/** The configuration file used by mw-pdf and mw-zip */
-$wgMWLibConfig = '/etc/mwlib.config';
-
 /** Namespace for "community collections" */
 $wgCommunityCollectionNamespace = NS_MEDIAWIKI;
 
 /** Maximum no. of articles in a collection */
 $wgCollectionMaxArticles = 500;
+
+/** Base URL for shared media MediaWiki */
+$wgSharedBaseURL = 'http://commons.wikimedia.org/w/';
+
+/** License article */
+$wgLicenseArticle = 'MediaWiki:GFDL';
+
+/** Template blacklist article */
+$wgPDFTemplateBlacklist = 'MediaWiki:PDF Template Blacklist';
 
 # ==============================================================================
 
