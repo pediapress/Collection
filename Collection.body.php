@@ -487,17 +487,21 @@ class Collection extends SpecialPage {
 
 	function generatePDFFromCollection( $collection, $referrer ) {
 		global $wgOut;
+		global $wgServer;
+		global $wgScriptPath;
 		global $wgMWPDFCommand;
 		global $wgMWPDFLogFilename;
-		global $wgMWLibConfig;
-
+		global $wgLicenseArticle;
+		global $wgSharedBaseURL;
+		global $wgPDFTemplateBlacklist;
+		
 		$inputFilename = tempnam( wfTempDir(), 'mw-pdf-in-' );
 		$outputFilename = tempnam( wfTempDir(), 'mw-pdf-out-' );
 		unlink( $outputFilename );
 		$outputFilename .= '.pdf';
 		$removedFilename = tempnam( wfTempDir(), 'mw-pdf-removed');
 		unlink( $removedFilename );
-
+		
 		if( session_id() == '' ) {
 			wfSetupSession();
 		}
@@ -508,7 +512,7 @@ class Collection extends SpecialPage {
 			'referrer_link' => $referrer->getFullURL(),
 			'referrer_name' => $referrer->getPrefixedText(),
 		);
-
+		
 		$inputFile = fopen( $inputFilename, 'w' );
 		fwrite( $inputFile, $this->buildJSONCollection( $collection ) );
 		fclose( $inputFile );
@@ -516,12 +520,15 @@ class Collection extends SpecialPage {
 		$rc = 0;
 		wfShellExec( "$wgMWPDFCommand " .
 			wfEscapeShellArg(
-				"-c", $wgMWLibConfig,
+				"-b", $wgServer . $wgScriptPath,
+				"-s", $wgSharedBaseURL,
 				"-d",
 				"-l", $wgMWPDFLogFilename,
 				"-r", $removedFilename,
 				"-m", $inputFilename,
-				"-o", $outputFilename ),
+				"-o", $outputFilename,
+				"--license", $wgLicenseArticle,
+				"--template-blacklist", $wgPDFTemplateBlacklist ),
 			$rc );
 		if ( $rc == 0 ) {
 			$wgOut->redirect( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generating_pdf/' ) );
@@ -595,10 +602,10 @@ EOS
 				//unlink( $pdfInfo['pdf_filename'] );
 				unlink( $pdfInfo['input_filename'] );
 				if ( file_exists( $pdfInfo['error_filename'] ) ) {
-					unlink( $pdfInfo['error_filename'] );   
+					unlink( $pdfInfo['error_filename'] );	
 				}
 				if ( file_exists( $pdfInfo['removed_filename'] ) ) {
-					unlink( $pdfInfo['removed_filename'] );   
+					unlink( $pdfInfo['removed_filename'] );	  
 				}
 				return;
 			}
@@ -644,11 +651,15 @@ EOS
 	}
 
 	function postPDF( $partner ) {
+		global $wgServer;
+		global $wgScriptPath;
 		global $wgOut;
 		global $wgMWZipCommand;
 		global $wgMWZipLogFilename;
-		global $wgMWLibConfig;
-
+		global $wgLicenseArticle;
+		global $wgSharedBaseURL;
+		global $wgPDFTemplateBlacklist;
+		
 		$json = new Services_JSON();
 
 		if ( !isset( $this->mPODPartners[$partner] ) ) {
@@ -672,11 +683,14 @@ EOS
 		$rc = 0;
 		wfShellExec( "$wgMWZipCommand " .
 			wfEscapeShellArg(
-				"-c", $wgMWLibConfig,
+				"-b", $wgServer . $wgScriptPath,
+				"-s", $wgSharedBaseURL,
 				"-d",
 				"-p", $url,
 				"-m", $inputFilename,
-				"-l", $wgMWZipLogFilename ),
+				"-l", $wgMWZipLogFilename,
+				"--license", $wgLicenseArticle,
+				"--template-blacklist", $wgPDFTemplateBlacklist ),
 			$rc );
 		unlink( $inputFilename );
 		if ( $rc == 0 ) {
@@ -1011,7 +1025,7 @@ EOS
 
 
 		$myTitle = Title::makeTitle( NS_SPECIAL, 'Collection' );
-		if ( $wgTitle->getPrefixedText() ==  $myTitle->getPrefixedText() ) {
+		if ( $wgTitle->getPrefixedText() == $myTitle->getPrefixedText() ) {
 			return;
 		}
 

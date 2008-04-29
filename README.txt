@@ -19,6 +19,16 @@ and the `Commonwealth of Learning`_.
 
 Copyright (C) 2008, PediaPress GmbH
 
+Bleeding-Edge Note
+==================
+
+The code for this extension is currently in flux because we are in the
+transition process towards a *PDF generation server* that decouples PDF
+and ZIP file generation from the MediaWiki. As everything is pretty much
+"bleeding edge code" right now, please *do not* install mwlib and mwlib.rl
+from .egg files (e.g. via ``easy_install mwlib``), but pull the code from
+the Mercurial repostiories hosted at http://code.pediapress.com/.
+
 
 Prerequisites
 =============
@@ -58,11 +68,6 @@ distributions which require at least Python 2.5 and two other Python packages:
 
     python setup.py install
 
- Edit ``example_conf.txt`` from the mwlib distribution and copy it to some
- place where you store system-wide configuration files
- (e.g. ``/etc/mwlib.config``). If you have installed mwlib with easy_install
- you can get the example configuration from
- http://http://code.pediapress.com/hg/mwlib/raw-file/tip/example_conf.txt
 
 
 Installation and Configuration
@@ -87,7 +92,7 @@ Installation and Configuration
    ``PATH`` for executables.
   
   *$wgMWZipLogFilename (string)*
-   Filename of the logfile of mw-zip. Make sure it's writeable.
+   Filename of the logfile of ``mw-zip``. Make sure it's writeable.
 
   *$wgMWPDFCommand (string)*
    Set this to the path of the ``mw-pdf`` script installed by with *mwlib.rl*.
@@ -96,12 +101,7 @@ Installation and Configuration
    ``PATH`` for executables.
   
   *$wgMWPDFLogFilename (string)*
-   Filename of the logfile of mw-pdf. Make sure it's writeable.
-
-  *$wgMWLibConfig (string)*
-   The configuration file used by ``mw-pdf`` and ``mw-zip``.
-   
-   The default is "``/etc/mwlib.config"``.
+   Filename of the logfile of ``mw-pdf``. Make sure it's writeable.
 
   *$wgCommunityCollectionNamespace (integer)*
    Namespace for "community collections", i.e. the namespace where non-personal
@@ -117,6 +117,24 @@ Installation and Configuration
    Maximum number of articles allowed in a collection.
    
    Default is 500.
+  
+  *$wgSharedBaseURL (string)*
+   Base URL (i.e. URL up to but not including ``index.php``/``api.php``) of a
+   MediaWiki used for shared files.
+   
+   Default is ``http://commons.mediawiki.org/w/``
+  
+  *$wgLicenseArticle (string)*
+   Title of an article containing the full license text for articles in this
+   MediaWiki. For a Wikimedia Commons wiki this could be ``Wikipedia:GFDL``.
+   
+   Default is ``MediaWiki:GFDL``
+   
+  *$wgPDFTemplateBlackList (string)*
+   Title of an article containing blacklisted templates, i.e. templates that
+   should be excluded for PDF generation.
+   
+   Default is ``MediaWiki:PDF Template Blacklist``
 
 * Just before the line::
 
@@ -148,9 +166,9 @@ Installation and Configuration
   ``php.ini`` accordingly.
 
 * Add a page ``Help:Collections`` with the wikitext from the supplied file
-  ``Help_Collections.txt``. Adjust the page title for the template blacklist and
-  the example name for print templates according to your mwlib configuration.
-  
+  ``Help_Collections.txt``. Adjust the name of the template blacklist according
+  to your setting of $wgPDFTemplateBlackList (see above).
+
 * If you installed Python software as egg files (e.g. when using easy_install
   or setuptools) you might have to set the environment variable PYTHON_EGG_CACHE
   for the user that PHP is running as to a directory with write access. For
