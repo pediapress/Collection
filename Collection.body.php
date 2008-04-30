@@ -487,54 +487,37 @@ class Collection extends SpecialPage {
 
 	function generatePDFFromCollection( $collection, $referrer ) {
 		global $wgOut;
+		global $wgPDFServer;
 		global $wgServer;
 		global $wgScriptPath;
-		global $wgMWPDFCommand;
-		global $wgMWPDFLogFilename;
 		global $wgLicenseArticle;
 		global $wgSharedBaseURL;
 		global $wgPDFTemplateBlacklist;
 		
-		$inputFilename = tempnam( wfTempDir(), 'mw-pdf-in-' );
-		$outputFilename = tempnam( wfTempDir(), 'mw-pdf-out-' );
-		unlink( $outputFilename );
-		$outputFilename .= '.pdf';
-		$removedFilename = tempnam( wfTempDir(), 'mw-pdf-removed');
-		unlink( $removedFilename );
-		
 		if( session_id() == '' ) {
 			wfSetupSession();
 		}
+		$response = self::post( $wgPDFServer, array(
+			'command' => 'pdf_generate',
+			'metabook' => $this->buildJSONCollection( $collection ),
+			'base_url' => $wgServer . $wgScriptPath,
+			'shared_base_url' => $wgSharedBaseURL,
+			'template_blacklist' => $wgPDFTemplateBlacklist,
+			'license' => $wgLicenseArticle,
+		) );
+		if ( !$response ) {
+			$wgOut->showErrorPage( 'post_failed_title', 'post_failed_msg' );
+			return;
+		}
+		
+		$json = new Services_JSON();
+		$response = $json->decode( $response );
 		$_SESSION['wsCollectionPDF'] = array(
-			'pdf_filename' => $outputFilename,
-			'input_filename' => $inputFilename,
-			'removed_filename' => $removedFilename,
+			'iframe_src' => $response->iframe_src,
 			'referrer_link' => $referrer->getFullURL(),
 			'referrer_name' => $referrer->getPrefixedText(),
 		);
-		
-		$inputFile = fopen( $inputFilename, 'w' );
-		fwrite( $inputFile, $this->buildJSONCollection( $collection ) );
-		fclose( $inputFile );
-
-		$rc = 0;
-		wfShellExec( "$wgMWPDFCommand " .
-			wfEscapeShellArg(
-				"-b", $wgServer . $wgScriptPath,
-				"-s", $wgSharedBaseURL,
-				"-d",
-				"-l", $wgMWPDFLogFilename,
-				"-r", $removedFilename,
-				"-m", $inputFilename,
-				"-o", $outputFilename,
-				"--license", $wgLicenseArticle,
-				"--template-blacklist", $wgPDFTemplateBlacklist ),
-			$rc );
-		if ( $rc == 0 ) {
-			$wgOut->redirect( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generating_pdf/' ) );
-		} else {
-			$wgOut->showErrorPage( 'coll-mwpdf_error_title', 'coll-mwpdf_error_msg' );
-		}
+		$wgOut->redirect( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generating_pdf/' ) );
 	}
 
 	function generatingPDF() {
@@ -545,75 +528,20 @@ class Collection extends SpecialPage {
 		$this->setHeaders();
 
 		$pdfInfo = $_SESSION['wsCollectionPDF'];
-		if ( file_exists( $pdfInfo['pdf_filename'] ) ) {
-			$downloadLink = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download_pdf/' ) . '?';
-			// generate a randon character string
-			$alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
-			for ( $i = 0; $i < 16; $i++ ) {
-				$downloadLink .= $alpha[rand( 0, 61 )];
-			}
-			$downloadText = wfMsgHtml( 'coll-download_pdf' );
-			$wgOut->setPageTitle( wfMsg( 'coll-pdf_finished_title' ) );
-			$text = wfMsgExt( 'coll-pdf_finished_text', array( 'parse' ) );
-			$dllink = "<a href=\"$downloadLink\">$downloadText</a>";
-			$wgOut->addHTML( <<<EOS
-<table class="toccolours" width="100%">
-	<tr>
-		<td>
-			<p>$text</p>
-			<p>$dllink</p>
-		</td>
-	</tr>
-</table>
+
+		$wgOut->setPageTitle( wfMsg( 'coll-generating_pdf_title' ) );
+		$wgOut->addWikiText( wfMsg( 'coll-generating_pdf_text' ) );
+		$iframe_src = $pdfInfo['iframe_src'];
+		$wgOut->addHTML( <<<EOS
+<iframe width="100%" height="400" src="$iframe_src" name="PDF Generation"></iframe>
 EOS
-			);
-			$wgOut->addHTML( wfMsg( 'coll-return_to_collection',
-				htmlspecialchars( $pdfInfo['referrer_link'] ),
-				htmlspecialchars( $pdfInfo['referrer_name'] )
-			) );
-			if ( file_exists( $pdfInfo['removed_filename'] ) ) {
-				$wgOut->addWikiText( wfMsg( 'coll-pages_removed' ) );
-				$lines = file( $pdfInfo['removed_filename'] );
-				foreach( $lines as $line ) {
-					$wgOut->addWikiText( '*' . $line );
-				}
-			}
-		} else if ( file_exists( $pdfInfo['error_filename'] ) ) {
-			$wgOut->showErrorPage( 'coll-mwpdf_error_title', 'coll-mwpdf_error_msg' );
-		} else {
-			$wgRequest->response()->header( 'Expires: ' . gmdate( 'D, d M Y H:i:s', 0 ) . ' GMT' );
-			$wgRequest->response()->header( 'Cache-Control: no-cache, no-store, max-age=0, must-revalidate' );
-			$wgRequest->response()->header( 'Pragma: no-cache' );
-			$wgOut->addMeta( 'http:refresh', '2; URL=.' );
-			$wgOut->setPageTitle( wfMsg( 'coll-generating_pdf_title' ) );
-			$wgOut->addWikiText( wfMsg( 'coll-generating_pdf_text' ) );
-		}
+        );
+		$wgOut->addHTML( wfMsg( 'coll-return_to_collection',
+			htmlspecialchars( $pdfInfo['referrer_link'] ),
+			htmlspecialchars( $pdfInfo['referrer_name'] )
+		) );
 	}
-
-	function downloadPDF() {
-		global $wgOut;
-
-		if ( isset( $_SESSION['wsCollectionPDF'] ) ) {
-			$pdfInfo = $_SESSION['wsCollectionPDF'];
-			if ( file_exists( $pdfInfo['pdf_filename'] ) ) {
-				$wgOut->disable();
-				wfStreamFile( $pdfInfo['pdf_filename'] );
-				//unset( $_SESSION['wsCollectionPDF'] );
-				//unlink( $pdfInfo['pdf_filename'] );
-				unlink( $pdfInfo['input_filename'] );
-				if ( file_exists( $pdfInfo['error_filename'] ) ) {
-					unlink( $pdfInfo['error_filename'] );	
-				}
-				if ( file_exists( $pdfInfo['removed_filename'] ) ) {
-					unlink( $pdfInfo['removed_filename'] );	  
-				}
-				return;
-			}
-		}
-		// TODO: read error file?
-		$wgOut->showErrorPage( 'nopdf_error_title', 'nopdf_error_text' );
-	}
-
+	
 	function generatePDF() {
 		$this->generatePDFFromCollection(
 			$_SESSION['wsCollection'],
@@ -654,8 +582,7 @@ EOS
 		global $wgServer;
 		global $wgScriptPath;
 		global $wgOut;
-		global $wgMWZipCommand;
-		global $wgMWZipLogFilename;
+		global $wgPDFServer;
 		global $wgLicenseArticle;
 		global $wgSharedBaseURL;
 		global $wgPDFTemplateBlacklist;
@@ -673,33 +600,24 @@ EOS
 			return;
 		}
 		$postData = $json->decode( $response );
-
-		$inputFilename = tempnam( wfTempDir(), 'mw-zip-in-' );
-		$inputFile = fopen( $inputFilename, 'w' );
-		$url = $postData->post_url;
-		fwrite( $inputFile, $this->buildJSONCollection( $_SESSION['wsCollection'] ) );
-		fclose( $inputFile );
-
-		$rc = 0;
-		wfShellExec( "$wgMWZipCommand " .
-			wfEscapeShellArg(
-				"-b", $wgServer . $wgScriptPath,
-				"-s", $wgSharedBaseURL,
-				"-d",
-				"-p", $url,
-				"-m", $inputFilename,
-				"-l", $wgMWZipLogFilename,
-				"--license", $wgLicenseArticle,
-				"--template-blacklist", $wgPDFTemplateBlacklist ),
-			$rc );
-		unlink( $inputFilename );
-		if ( $rc == 0 ) {
-			$wgOut->redirect( $postData->redirect_url );
-		} else {
+		
+		$response = self::post( $wgPDFServer, array(
+			'command' => 'zip_post',
+			'metabook' => $this->buildJSONCollection( $_SESSION['wsCollection'] ),
+			'base_url' => $wgServer . $wgScriptPath,
+			'shared_base_url' => $wgSharedBaseURL,
+			'template_blacklist' => $wgPDFTemplateBlacklist,
+			'license' => $wgLicenseArticle,
+			'post_url' => $postData->post_url,
+		) );
+		if ( !$response ) {
 			$wgOut->showErrorPage( 'coll-mwzip_error_title', 'coll-mwzip_error_msg' );
+			return;
 		}
+		
+		$wgOut->redirect( $postData->redirect_url );
 	}
-
+	
 	private function outputIntro() {
 		global $wgOut;
 
@@ -1109,4 +1027,36 @@ EOS
 		;
 	}
 
+	static function post( $url, $postFields ) {
+		global $wgHTTPTimeout, $wgHTTPProxy, $wgVersion, $wgTitle;
+	
+		wfDebug( __METHOD__ . ": $method $url\n" );
+	
+		$c = curl_init( $url );
+		curl_setopt($c, CURLOPT_PROXY, $wgHTTPProxy);
+		curl_setopt( $c, CURLOPT_TIMEOUT, $wgHTTPTimeout );
+		curl_setopt( $c, CURLOPT_USERAGENT, "MediaWiki/$wgVersion" );
+		curl_setopt( $c, CURLOPT_POST, true );
+		curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
+	
+		if ( is_object( $wgTitle ) ) {
+			curl_setopt( $c, CURLOPT_REFERER, $wgTitle->getFullURL() );
+		}
+	
+		ob_start();
+		curl_exec( $c );
+		$text = ob_get_contents();
+		ob_end_clean();
+	
+		# Don't return the text of error messages, return false on error
+		if ( curl_getinfo( $c, CURLINFO_HTTP_CODE ) != 200 ) {
+			$text = false;
+		}
+		# Don't return truncated output
+		if ( curl_errno( $c ) != CURLE_OK ) {
+			$text = false;
+		}
+		curl_close( $c );
+		return $text;
+	}
 }
