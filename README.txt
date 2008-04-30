@@ -30,48 +30,18 @@ from .egg files (e.g. via ``easy_install mwlib``), but pull the code from
 the Mercurial repostiories hosted at http://code.pediapress.com/.
 
 
-Prerequisites
-=============
+Prerequisites: Install and Setup a PDF Server
+=============================================
 
-PDF generation is done with Python_ scripts from the *mwlib* and *mwlib.rl*
-distributions which require at least Python 2.5 and two other Python packages:
-*PIL* and *ReportLab*.
+PDF and ZIP file generation is done by a PDF Server, which can run separately
+from the MediaWiki installation and can be shared by different MediaWikis.
 
-*PIL*
- Install *PIL* (Pyhon Imaging Library) from
- http://www.pythonware.com/products/pil/.
-
-*ReportLab*
- Download and install ReportLab_ from the Subversion repository::
-
-    svn co http://www.reportlab.co.uk/svn/public/reportlab/trunk reportlab
-    cd reportlab/reportlab
-    python setup.py install
-
-*mwlib*
- You need to have setuptools/easy_install installed.
- Installation should be as easy as typing::
-
-    easy_install mwlib
-
- If you don't have setuptools installed, download the source package from
- http://code.pediapress.com/, unpack it and run::
-
-    python setup.py install
-
-*mwlib.rl*
- Install *mwlib.rl* with ``easy_install``::
-
-    easy_install mwlib.rl
-
- or get the code from http://code.pediapress.com/ and install it with::
-
-    python setup.py install
+See ``README.txt`` in the ``pdf-server`` directory for further instructions
+how to setup a PDF server.
 
 
-
-Installation and Configuration
-==============================
+Installation and Configuration of the Collection Extension
+==========================================================
 
 * Checkout the *Collection* extension from the Subversion repository into the
   ``extensions`` directory of your *MediaWiki* installation::
@@ -85,24 +55,11 @@ Installation and Configuration
 
   and set the following global variables accordingly:
 
-  *$wgMWZipCommand (string)*
-   Set this to the path of the ``mw-zip`` script installed by with *mwlib*.
+  *$wgPDFServer (string)*
+   Set this to the URL of the PDF Server CGI script.
    
-   The default is just ``"mw-zip"``, assuming that the script is in the system
-   ``PATH`` for executables.
+   The default is just ``"http://localhost/cgi-bin/pdf-server.py"``.
   
-  *$wgMWZipLogFilename (string)*
-   Filename of the logfile of ``mw-zip``. Make sure it's writeable.
-
-  *$wgMWPDFCommand (string)*
-   Set this to the path of the ``mw-pdf`` script installed by with *mwlib.rl*.
-   
-   The default is just ``"mw-pdf"``, assuming that the script is in the system
-   ``PATH`` for executables.
-  
-  *$wgMWPDFLogFilename (string)*
-   Filename of the logfile of ``mw-pdf``. Make sure it's writeable.
-
   *$wgCommunityCollectionNamespace (integer)*
    Namespace for "community collections", i.e. the namespace where non-personal
    article collection pages are saved.
@@ -149,17 +106,6 @@ Installation and Configuration
       }
     ?>
 
-* If your MediaWiki installation is configured to limit the resources of
-  externally executed script (which is the default!), you may want to increase
-  the parameter ``max_execution_time`` in your ``php.ini`` to several minutes,
-  e.g. to a value of 300 (seconds) yielding a maximal execution time of
-  5 minutes, because the generation of PDF files containing many articles can
-  sometimes take a while.
-  
-  Also, the global MediaWiki variables $wgMaxShellMemory and $wgMaxShellFileSize
-  (limiting the memory and disk usage of external scripts) might need to be
-  adjusted, to higher values.
-
 * As the current collection of articles is stored in the session, the session
   timeout should be set to some sensible value (at least a few hours, maybe
   one day). Adjust session.cookie_lifetime and session.gc_maxlifetime in your
@@ -169,23 +115,7 @@ Installation and Configuration
   ``Help_Collections.txt``. Adjust the name of the template blacklist according
   to your setting of $wgPDFTemplateBlackList (see above).
 
-* If you installed Python software as egg files (e.g. when using easy_install
-  or setuptools) you might have to set the environment variable PYTHON_EGG_CACHE
-  for the user that PHP is running as to a directory with write access. For
-  example on Debian GNU/Linux, this user is www-data, the default egg cache
-  is /var/www/.python-eggs/ (because $HOME is /var/www/), and the user www-data
-  usually doesn't have write access in /var/www/.
-  
-  One way to set environment variables is when configuring the path to ``mw-pdf``
-  and ``mw-zip`` in your ``LocalSettings.php``, e.g.::
-  
-     $wgMWPDFCommand = 'PYTHON_EGG_CACHE=/tmp/.python_eggs /usr/local/bin/mw-pdf'
-     $wgMWZipCommand = 'PYTHON_EGG_CACHE=/tmp/.python_eggs /usr/local/bin/mw-zip'
-
-
 .. _MediaWiki: http://www.mediawiki.org/
 .. _`PediaPress GmbH`: http://pediapress.com/
-.. _Python: http://www.python.org/
-.. _ReportLab: http://www.reportlab.co.uk/
 .. _`Wikimedia Foundation`: http://wikimediafoundation.org/
 .. _`Commonwealth of Learning`: http://www.col.org/

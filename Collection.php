@@ -37,11 +37,8 @@ require_once( "$IP/extensions/Collection/Version.php" );
 
 # Configuration:
 
-/** The mw-pdf command shipped with mwlib.rl */
-$wgMWPDFCommand = 'mw-pdf';
-
-/** The mw-zip command shipped with mwlib */
-$wgMWZipCommand = 'mw-zip';
+/** URL of PDF server */
+$wgPDFServer = 'http://localhost/cgi-bin/pdf-server.py';
 
 /** Namespace for "community collections" */
 $wgCommunityCollectionNamespace = NS_MEDIAWIKI;
