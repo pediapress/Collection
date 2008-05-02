@@ -1038,6 +1038,7 @@ EOS
 		curl_setopt( $c, CURLOPT_USERAGENT, "MediaWiki/$wgVersion" );
 		curl_setopt( $c, CURLOPT_POST, true );
 		curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Expect:'));
 	
 		if ( is_object( $wgTitle ) ) {
 			curl_setopt( $c, CURLOPT_REFERER, $wgTitle->getFullURL() );
