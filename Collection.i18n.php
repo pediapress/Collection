@@ -102,18 +102,16 @@ No more pages can be added.',
 	'coll-generating_pdf_text'        => "'''Please wait while the PDF file is being generated.'''
 This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.",
-	'coll-pdf_finished_title'         => 'PDF Generation Complete',
 	'coll-pdf_finished_text'          => "The PDF file has been generated.
-Click on the link below to download it to your computer.
+[http://URL Click here] to download it to your computer.
+
 Not satisfied with the PDF output?
 See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
-	'coll-nopdf_error_title'          => 'No PDF file found',
-	'coll-nopdf_error_text'           => 'Could not find PDF file. Please re-generate the PDF file.',
 	'coll-notfound_title'             => 'Collection Not Found',
 	'coll-notfound_text'              => 'Could not find collection page.',
 	'coll-return_to_collection'       => '<p>Return to <a href="$1">$2</a></p>',
-	'coll-pages_removed'              => 'The following pages could not be rendered and were removed from the PDF file:',
-	
+	'coll-pages_removed'              => 'The following pages could not be rendered and were removed from the PDF file: %(articles)s',
+	'coll-pdf_error_text'             => 'There was an error when generating the PDF file.',
 	'coll-book_title'    => 'Order Printed Book',
 	'coll-book_text'     => 'You can order a printed book containing your page collection by visiting one of the following print-on-demand partners:',
 	'coll-order_from_pp' => 'Order book from $1',

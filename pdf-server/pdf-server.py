@@ -1,9 +1,5 @@
 #! /usr/bin/env python
 
-# TODOs:
-# * progress for do_pdf_status()
-# * i18n for all messages
-
 # ==============================================================================
 # CONFIGURATION
 # ==============================================================================
@@ -38,6 +34,10 @@ traceback_logdir = '/tmp'
 
 
 
+# TODOs:
+# * progress (percentage) for do_pdf_status()
+
+
 if traceback_logdir is not None:
     import cgitb
     cgitb.enable(display=0, logdir=traceback_logdir)
@@ -47,7 +47,6 @@ import md5
 import os
 import re
 import StringIO
-import sys
 import time
 import urllib
 
@@ -71,14 +70,19 @@ class PDFServer(object):
     
     def dispatch(self):
         self.collection_id = self.form.getvalue('collection_id')
-        # prevent evil guys from doing shit (collection_id is used as part of an fs path)
-        assert re.match(r'^[a-z0-9]+$', self.collection_id)
         if self.collection_id is None:
             self.collection_id = uid()
+        # prevent evil guys from doing shit (collection_id is used as part of an fs path)
+        assert re.match(r'^[a-z0-9]+$', self.collection_id)
         self.collection_dir = os.path.join(cache_dir, self.collection_id)
         self.metabook_filename = os.path.join(self.collection_dir, 'metabook.json')
         self.pdf_filename = os.path.join(self.collection_dir, 'collection.pdf')
         self.error_filename = os.path.join(self.collection_dir, 'errors.txt')
+        self.removed_filename = os.path.join(self.collection_dir, 'removed.txt')
+        self.generating_templ_filename = os.path.join(self.collection_dir, 'generating.html')
+        self.finished_templ_filename = os.path.join(self.collection_dir, 'finished.html')
+        self.removed_templ_filename = os.path.join(self.collection_dir, 'removed.html')
+        self.error_templ_filename = os.path.join(self.collection_dir, 'error.html')
         
         getattr(self, 'do_%s' % self.form.getvalue('command'))()
         for k, v in self.headers.items():
@@ -100,14 +104,20 @@ class PDFServer(object):
             'shared_base_url': self.form.getvalue('shared_base_url'),
             'license': self.form.getvalue('license'),
             'template_blacklist': self.form.getvalue('template_blacklist'),
+            'removed': self.removed_filename,
             'output': self.pdf_filename,
         }
         
         os.makedirs(self.collection_dir)
         metabook = self.form.getvalue('metabook')
         open(self.metabook_filename, 'wb').write(metabook)
-        rc = os.system('%(cmd)s --daemonize -l %(logfile)s -e %(errorfile)s -m %(metabook)s -b %(base_url)s -s %(shared_base_url)s --license %(license)s --template-blacklist %(template_blacklist)s -o %(output)s' % args)
+        rc = os.system('%(cmd)s --daemonize -l %(logfile)s -e %(errorfile)s -m %(metabook)s -b %(base_url)s -s %(shared_base_url)s --license %(license)s --template-blacklist %(template_blacklist)s -r $(removed)s -o %(output)s' % args)
         assert rc == 0, 'Execution of mw-pdf failed.'
+        
+        open(self.generating_templ_filename, 'wb').write(self.form.getvalue('generating_template'))
+        open(self.finished_templ_filename, 'wb').write(self.form.getvalue('finished_template'))
+        open(self.removed_templ_filename, 'wb').write(self.form.getvalue('removed_template'))
+        open(self.error_templ_filename, 'wb').write(self.form.getvalue('error_template'))
         
         self.headers['Content-Type'] = 'application/json'
         self.content = simplejson.dumps({
@@ -129,22 +139,23 @@ class PDFServer(object):
                     'collection_id': self.collection_id,
                 }),
             )
-            html = '''<h1>Finished!</h1>
-<a href="%s">Download PDF</a>
-''' % url
-            self.render_html(html)
-            # TODO: nicer message.
+            html = open(self.finished_templ_filename, 'rb').read()
+            if os.path.exists(self.removed_filename):
+                html += open(self.removed_templ_filename, 'rb').read() % {
+                    'articles': open(self.removed_filename, 'rb').read()
+                }
+            self.render_html(html.replace('http://URL', url))
         elif os.path.exists(self.error_filename):
-            self.render_html('error' + open(self.error_filename).read())
-             # TODO: print nicer error message
+            html = open(self.error_templ_filename, 'rb').read()
+            self.render_html(html)
         else:
             query_args = urllib.urlencode({
                 'command': 'pdf_status',
                 'collection_id': self.collection_id,
             })
             meta = '<meta http-equiv="refresh" content="5; url=?%s">' % query_args
-            self.render_html('generating PDF...', head_text=meta)
-            # TODO: nicer message. progress percentage.
+            html = open(self.generating_templ_filename, 'rb').read()
+            self.render_html(html, head_text=meta)
     
     def do_pdf_download(self):
         self.headers['Content-Type'] = 'application/pdf'
@@ -176,6 +187,11 @@ class PDFServer(object):
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>PDF Server</title>
+<style type="text/css"><!--
+  body { font: 80%% sans-serif; }
+  a { text-decoration: none; color: #002bb8; }
+  a:hover { text-decoration: underline }
+--></style>
 %(head_text)s
 </head>
 <body>
