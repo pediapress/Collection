@@ -536,6 +536,7 @@ class Collection extends SpecialPage {
 		$wgOut->setPageTitle( wfMsg( 'coll-generating_pdf_title' ) );
 		$iframe_src = $pdfInfo['iframe_src'];
 		$wgOut->addHTML( "<iframe width=\"100%\" height=\"200\" src=\"$iframe_src\" name=\"PDF Generation\" frameborder=\"0\"></iframe>" );
+		$wgOut->addWikiText( wfMsg( 'coll-pdf_not_satisfied' ) );
 		$wgOut->addHTML( wfMsg( 'coll-return_to_collection',
 			htmlspecialchars( $pdfInfo['referrer_link'] ),
 			htmlspecialchars( $pdfInfo['referrer_name'] )
@@ -1039,7 +1040,7 @@ EOS
 		curl_setopt( $c, CURLOPT_POST, true );
 		curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
 		curl_setopt( $c, CURLOPT_HTTPHEADER, array( 'Expect:' ) );
-	
+		
 		if ( is_object( $wgTitle ) ) {
 			curl_setopt( $c, CURLOPT_REFERER, $wgTitle->getFullURL() );
 		}
