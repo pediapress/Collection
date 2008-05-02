@@ -504,6 +504,10 @@ class Collection extends SpecialPage {
 			'shared_base_url' => $wgSharedBaseURL,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
 			'license' => $wgLicenseArticle,
+			'generating_template' => wfMsgWikiHtml( 'coll-generating_pdf_text' ),
+			'finished_template' => wfMsgWikiHtml( 'coll-pdf_finished_text' ),
+			'removed_template' => wfMsgWikiHtml( 'coll-pages_removed' ),
+			'error_template' => wfMsgWikiHtml( 'coll-pdf_error_text' ),
 		) );
 		if ( !$response ) {
 			$wgOut->showErrorPage( 'post_failed_title', 'post_failed_msg' );
@@ -530,12 +534,8 @@ class Collection extends SpecialPage {
 		$pdfInfo = $_SESSION['wsCollectionPDF'];
 
 		$wgOut->setPageTitle( wfMsg( 'coll-generating_pdf_title' ) );
-		$wgOut->addWikiText( wfMsg( 'coll-generating_pdf_text' ) );
 		$iframe_src = $pdfInfo['iframe_src'];
-		$wgOut->addHTML( <<<EOS
-<iframe width="100%" height="400" src="$iframe_src" name="PDF Generation"></iframe>
-EOS
-        );
+		$wgOut->addHTML( "<iframe width=\"100%\" height=\"200\" src=\"$iframe_src\" name=\"PDF Generation\" frameborder=\"0\"></iframe>" );
 		$wgOut->addHTML( wfMsg( 'coll-return_to_collection',
 			htmlspecialchars( $pdfInfo['referrer_link'] ),
 			htmlspecialchars( $pdfInfo['referrer_name'] )
