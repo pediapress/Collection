@@ -39,6 +39,10 @@ from the MediaWiki installation and can be shared by different MediaWikis.
 See ``README.txt`` in the ``pdf-server`` directory for further instructions
 how to setup a PDF server.
 
+If you have a low-traffic MediaWiki you can use the public PDF Server running
+at http://tools.pediapress.com/cgi-bin/pdf-server.py. In this case, just keep
+the configuration variable $wgPDFServer (see below) at its default value.
+
 
 Installation and Configuration of the Collection Extension
 ==========================================================
@@ -58,7 +62,8 @@ Installation and Configuration of the Collection Extension
   *$wgPDFServer (string)*
    Set this to the URL of the PDF Server CGI script.
    
-   The default is just ``"http://localhost/cgi-bin/pdf-server.py"``.
+   The default is ``"http://tools.pediapress.com/cgi-bin/pdf-server.py"``,
+   a public PDF Server for low-traffic MediaWikis.
   
   *$wgCommunityCollectionNamespace (integer)*
    Namespace for "community collections", i.e. the namespace where non-personal
@@ -87,6 +92,14 @@ Installation and Configuration of the Collection Extension
    
    Default is ``MediaWiki:GFDL``
    
+   If your MediaWiki contains articles with different licenses, make sure
+   that each article contains the name of the license and set $wgLicenseArticle
+   to an article that contains all needed licenses.
+   
+   PDF files do not contain the actual title of this license article,
+   but the value of the standard MediaWiki variable $wgRightsText (configurable
+   in LocalSettings.php).
+  
   *$wgPDFTemplateBlackList (string)*
    Title of an article containing blacklisted templates, i.e. templates that
    should be excluded for PDF generation.

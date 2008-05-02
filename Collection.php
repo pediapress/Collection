@@ -38,7 +38,7 @@ require_once( "$IP/extensions/Collection/Version.php" );
 # Configuration:
 
 /** URL of PDF server */
-$wgPDFServer = 'http://localhost/cgi-bin/pdf-server.py';
+$wgPDFServer = 'http://tools.pediapress.com/cgi-bin/pdf-server.py';
 
 /** Namespace for "community collections" */
 $wgCommunityCollectionNamespace = NS_MEDIAWIKI;
