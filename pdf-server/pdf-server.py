@@ -19,7 +19,7 @@ mwpdf_cmd = '/usr/local/bin/mw-pdf'
 mwpdf_logfile = '/var/log/mw-pdf.log'
 
 # Path to mw-zip executable.
-mwzip_cmd = '/usr/local/bin/bin/mw-zip'
+mwzip_cmd = '/usr/local/bin/mw-zip'
 
 # Logfile for mw-zip.
 mwzip_logfile = '/var/log/mw-zip.log'
