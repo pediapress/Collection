@@ -510,7 +510,7 @@ class Collection extends SpecialPage {
 			'error_template' => wfMsgWikiHtml( 'coll-pdf_error_text' ),
 		) );
 		if ( !$response ) {
-			$wgOut->showErrorPage( 'post_failed_title', 'post_failed_msg' );
+			$wgOut->showErrorPage( 'coll-post_failed_title', 'coll-post_failed_msg' );
 			return;
 		}
 		
