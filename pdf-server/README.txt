@@ -60,7 +60,16 @@ Python packages: *PIL* and *ReportLab*.
 Installation and Configuration
 ==============================
 
-TODO
+Copy pdf-server.py to your directory containing CGI files (e.g.
+"/usr/lib/cgi-bin/" on a default Apache install on Debian GNU/Linux) make
+sure it's executable and the CGI script of your web server is configured
+appropriately. Adjust the configuration variables at the top of the script.
+If necessary, adjust the first line of the script to point to a valid
+Python interpreter (tested with Python 2.5, should work with Python >= 2.3).
+
+Add a cron-job that executes the clean-cache.py script at regular intervals
+(recommended is every few hours). Make sure the executed script has the
+permissions to delete files and directories created by the CGI script.
 
 If you installed Python software as egg files (e.g. when using easy_install
 or setuptools) you might have to set the environment variable PYTHON_EGG_CACHE
@@ -70,13 +79,10 @@ is /var/www/.python-eggs/ (because $HOME is /var/www/), and the user www-data
 usually doesn't have write access in /var/www/.
 
 One way to set environment variables is when configuring the path to ``mw-pdf``
-and ``mw-zip``, e.g.::
+and ``mw-zip`` in pdf-server.py, e.g.::
 
  mwpdf_cmd = 'PYTHON_EGG_CACHE=/tmp/.python_eggs /usr/local/bin/mw-pdf'
  mwzip_cmd = 'PYTHON_EGG_CACHE=/tmp/.python_eggs /usr/local/bin/mw-zip'
-
-
-
 
 
 .. _MediaWiki: http://www.mediawiki.org/

@@ -3,7 +3,6 @@
 # TODOs:
 # * progress for do_pdf_status()
 # * i18n for all messages
-# * clean-cache.py cron-script
 
 # ==============================================================================
 # CONFIGURATION
@@ -73,7 +72,7 @@ class PDFServer(object):
     def dispatch(self):
         self.collection_id = self.form.getvalue('collection_id')
         # prevent evil guys from doing shit (collection_id is used as part of an fs path)
-        assert re.match(r'[a-z0-9]+', self.collection_id)
+        assert re.match(r'^[a-z0-9]+$', self.collection_id)
         if self.collection_id is None:
             self.collection_id = uid()
         self.collection_dir = os.path.join(cache_dir, self.collection_id)
