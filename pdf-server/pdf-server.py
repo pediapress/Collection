@@ -78,6 +78,7 @@ class PDFServer(object):
         self.metabook_filename = os.path.join(self.collection_dir, 'metabook.json')
         self.pdf_filename = os.path.join(self.collection_dir, 'collection.pdf')
         self.error_filename = os.path.join(self.collection_dir, 'errors.txt')
+        self.progress_filename = os.path.join(self.collection_dir, 'progress.txt')
         self.removed_filename = os.path.join(self.collection_dir, 'removed.txt')
         self.generating_templ_filename = os.path.join(self.collection_dir, 'generating.html')
         self.finished_templ_filename = os.path.join(self.collection_dir, 'finished.html')
@@ -105,13 +106,14 @@ class PDFServer(object):
             'license': self.form.getvalue('license'),
             'template_blacklist': self.form.getvalue('template_blacklist'),
             'removed': self.removed_filename,
+            'progress': self.progress_filename,
             'output': self.pdf_filename,
         }
         
         os.makedirs(self.collection_dir)
         metabook = self.form.getvalue('metabook')
         open(self.metabook_filename, 'wb').write(metabook)
-        rc = os.system('%(cmd)s --daemonize -l %(logfile)s -e %(errorfile)s -m %(metabook)s -b %(base_url)s -s %(shared_base_url)s --license %(license)s --template-blacklist %(template_blacklist)s -r $(removed)s -o %(output)s' % args)
+        rc = os.system('%(cmd)s --daemonize -l %(logfile)s -e %(errorfile)s -m %(metabook)s -b %(base_url)s -s %(shared_base_url)s --license %(license)s --template-blacklist %(template_blacklist)s -r $(removed)s -p %(progress)s -o %(output)s' % args)
         assert rc == 0, 'Execution of mw-pdf failed.'
         
         open(self.generating_templ_filename, 'wb').write(self.form.getvalue('generating_template'))
@@ -149,13 +151,18 @@ class PDFServer(object):
             html = open(self.error_templ_filename, 'rb').read()
             self.render_html(html)
         else:
+            progress = 0
+            try:
+                progress = int(open(self.progress_filename, 'rb').read())
+            except (IOError, ValueError):
+                pass
             query_args = urllib.urlencode({
                 'command': 'pdf_status',
                 'collection_id': self.collection_id,
             })
             meta = '<meta http-equiv="refresh" content="5; url=?%s">' % query_args
             html = open(self.generating_templ_filename, 'rb').read()
-            self.render_html(html, head_text=meta)
+            self.render_html(html % {'progress': progress}, head_text=meta)
     
     def do_pdf_download(self):
         self.headers['Content-Type'] = 'application/pdf'
