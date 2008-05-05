@@ -1043,10 +1043,17 @@ $messages['jv'] = array(
 	'coll-overwrite'                  => 'Timpanen',
 	'coll-cancel'                     => 'Batal',
 	'coll-limit_exceeded_title'       => 'Kolèksi Kegedhèn',
+	'coll-limit_exceeded_text'        => 'Kolèksi kaca panjenengan iku kegedhèn.
+Ora bisa nambah kaca-kaca liya manèh.',
 	'coll-generating_pdf_title'       => 'Nggawé PDF',
 	'coll-generating_pdf_text'        => "'''Tulung nunggu sadélok sementara berkas PDF lagi digawé.'''
+
+Status saiki: %(progrès)d%%.
+
 Kaca iki samesthiné kudhu nganyari dhéwé saben sawetara detik.
 Yèn iki ora dumadi, mangga mencèt tombol ''refresh'' ing panjlajah wèb panjenengan.",
+	'coll-pdf_finished_text'          => 'Berkas PDF wis digawé.
+[http://URL Klik ing kéné] kanggo ngundhuh ing komputer panjenengan.',
 	'coll-notfound_title'             => 'Kolèksi Ora Ditemokaké',
 	'coll-notfound_text'              => 'Ora bisa nemokaké kaca kolèksi.',
 	'coll-pdf_error_text'             => 'Ana kaluputan nalika nggawé berkas PDF.',
@@ -1121,6 +1128,7 @@ $messages['lb'] = array(
 	'coll-move_to_bottom'       => 'No ganz ënne réckelen',
 	'coll-title'                => 'Titel:',
 	'coll-subtitle'             => 'Ënnertitel:',
+	'coll-create_chapter'       => 'Een neit Kapitel maachen',
 	'coll-sort_alphabetically'  => 'Säiten alphabetesch sortéieren',
 	'coll-rename'               => 'Ëmbenennen',
 	'coll-new_chapter'          => 'Gitt den Numm fir dat neit Kapitel un',
@@ -1135,7 +1143,6 @@ $messages['lb'] = array(
 	'coll-append'               => 'Derbäisetzen',
 	'coll-cancel'               => 'Annulléieren',
 	'coll-generating_pdf_title' => 'PDF maachen',
-	'coll-nopdf_error_title'    => 'Kee PDF Fichier fonnt',
 	'coll-return_to_collection' => '<p>Zréck op <a href="$1">$2</a></p>',
 	'coll-book_title'           => 'Gedréckte Buch bestellen',
 	'coll-order_from_pp'        => "D'Buch bestelle bäi $1",
@@ -1174,6 +1181,7 @@ $messages['ml'] = array(
 	'coll-mwpdf_error_title'    => 'PDF സൃഷ്ടിക്കുന്നതിനു കഴിഞ്ഞില്ല',
 	'coll-mwpdf_error_msg'      => 'PDF സൃഷ്ടിക്കാന്‍ ശ്രമിക്കുന്നതിനിടയില്‍ പിശക് സംഭവിച്ചു.',
 	'coll-yes'                  => 'ശരി',
+	'coll-no'                   => 'ഇല്ല',
 	'coll-cancel'               => 'റദ്ദാക്കുക',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a>-ലേക്കു തിരിച്ചു പോവുക</p>',
 	'coll-order_from_pp'        => '$1-ല്‍ നിന്നു പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
@@ -1356,7 +1364,11 @@ Wil u de bestaande verzameling overschrijven, de nieuwe pagina's toevoegen, of a
 U kunt geen pagina's meer toevoegen.",
 	'coll-generating_pdf_title'       => 'Bezig met maken van PDF',
 	'coll-generating_pdf_text'        => "'''Wacht alstublieft. Het PDF-bestand wordt gemaakt.'''
-Over enige seconden hoort deze pagina automatisch te verversen. Als dit niet werkt, klik dan op de knop 'Vernieuwen' in uw browser.",
+
+Voortgang: %(progress)d%%.
+
+Over enige seconden hoort deze pagina automatisch te verversen.
+Als dit niet werkt, klik dan op de knop 'Vernieuwen' in uw browser.",
 	'coll-pdf_finished_text'          => 'Het PDF-bestand is beschikbaar.
 [http://URL Klik hier] om het naar uw computer te downloaden.',
 	'coll-pdf_not_satisfied'          => 'Niet tevreden met de PDF-uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina voor collecties]] staan manieren beschreven om die te verbeteren.',
@@ -1789,8 +1801,11 @@ Pretende reescrever a sua colecção, adicionar o novo conteúdo or cancelar?',
 Não poderão ser adicionadas mais páginas.',
 	'coll-generating_pdf_title'       => 'A criar PDF',
 	'coll-generating_pdf_text'        => "'''Por favor, aguarde enquanto o ficheiro PDF está a ser gerado.'''
+
+Progresso: %(progress)d%%.
+
 Esta página deverá refrescar automaticamente repetidamente dentro de alguns segundos.
-Se isto não funcionar, por favor, carregue no botão de refrescar do seu \"browser\".",
+Se isto não acontecer, por favor, carregue no botão de refrescar do seu \"browser\".",
 	'coll-pdf_finished_text'          => 'O ficheiro PDF foi gerado.
 [http://URL Clique aqui] para fazer o download.',
 	'coll-pdf_not_satisfied'          => 'Não está satisfeito com o resultado do PDF? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para formas de melhorá-lo.',
@@ -1978,6 +1993,9 @@ Chcete prepísať svoju existujúcu kolekciu, pridať do nej obsah alebo zruši�
 Nie je možné pridať ďalšie stránky.',
 	'coll-generating_pdf_title'       => 'Vytvára sa PDF',
 	'coll-generating_pdf_text'        => "'''Prosím čakajte, kým sa vytvára PDF súbor.'''
+
+Priebeh: %(progress)d%%.
+
 Táto stránka by sa mala každých niekoľko sekúnd automaticky obnoviť. Ak to nefunguje, stlačte prosím tlačidlo Obnoviť vo vašom prehliadači.",
 	'coll-pdf_finished_text'          => 'PDF súbor bol vytvorený.
 Teraz ho môžete [http://URL stiahnuť].',
@@ -2086,6 +2104,9 @@ Vill du ersätta din nuvarande samling, lägga till det nya innehållet eller av
 Inga mer sidor kan läggas till.',
 	'coll-generating_pdf_title'       => 'Genererar PDF',
 	'coll-generating_pdf_text'        => "'''Var god vänta medan PDF-filen genereras.'''
+
+Fortgång: %(progress)d%%.
+
 Denna sida borde automatiskt med några sekunders mellanrum, om detta inte funkar, var god tryck på uppdateringsknappen i din webbläsare.",
 	'coll-pdf_finished_text'          => 'PDF-filen har genererats.
 [http://URL Klicka här] för att ladda ner den till din dator.
