@@ -127,11 +127,20 @@ $messages['krl'] = array(
 );
 
 /** Afrikaans (Afrikaans)
+ * @author Arnobarnard
  * @author SPQRobin
  */
 $messages['af'] = array(
-	'coll-page'  => 'bladsy',
-	'coll-pages' => 'bladsye',
+	'coll-empty'    => 'leeg',
+	'coll-page'     => 'bladsy',
+	'coll-pages'    => 'bladsye',
+	'coll-remove'   => 'Skrap',
+	'coll-title'    => 'Titel:',
+	'coll-subtitle' => 'Subtitel:',
+	'coll-contents' => 'Inhoud',
+	'coll-yes'      => 'Ja',
+	'coll-no'       => 'Nee',
+	'coll-cancel'   => 'Kanselleer',
 );
 
 /** Arabic (العربية)
@@ -575,7 +584,11 @@ Voulez vous écraser votre compilation actuelle, y rajouter le contenu ou bien a
 Aucune page ne peut être ajoutée.',
 	'coll-generating_pdf_title'       => 'Création du PDF',
 	'coll-generating_pdf_text'        => "'''Veuillez attendre pendant la création du PDF.'''
-Cette page devrait automatiquement s'actualiser, si cela n'est pas le cas, vous pouvez appuyez sur le bouton d'actualisation de votre navigateur.",
+
+Progression : %(progress)d%%.
+
+Cette page devrait automatiquement s'actualiser dans quelques secondes.
+Si tel n’est pas le cas, veuillez appuyer sur le bouton d'actualisation de votre navigateur.",
 	'coll-pdf_finished_text'          => 'Le fichier PDF a été créé.
 [http://URL Cliquez ici] pour le télécharger sur votre ordinateur.',
 	'coll-pdf_not_satisfied'          => 'Non satisfait de la sortie PDF ? Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]] pour les possibilités d’amélioration.',
@@ -1041,6 +1054,7 @@ $messages['jv'] = array(
 	'coll-yes'                        => 'Iya',
 	'coll-no'                         => 'Ora',
 	'coll-overwrite'                  => 'Timpanen',
+	'coll-append'                     => 'Lampirna',
 	'coll-cancel'                     => 'Batal',
 	'coll-limit_exceeded_title'       => 'Kolèksi Kegedhèn',
 	'coll-limit_exceeded_text'        => 'Kolèksi kaca panjenengan iku kegedhèn.
@@ -1108,45 +1122,71 @@ $messages['km'] = array(
 	'coll-about_pp'             => 'អំពី$1',
 );
 
+/** Kinaray-a (Kinaray-a)
+ * @author Jose77
+ */
+$messages['krj'] = array(
+	'coll-page'     => 'pahina',
+	'coll-contents' => 'Manga Sulud',
+	'coll-cancel'   => 'Kanselar',
+	'coll-about_pp' => 'Angut sa Iwan $1',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
 $messages['lb'] = array(
-	'coll-desc'                 => "[[Special:Collection|Säiten zesummestellen]], PDF'e generéieren",
-	'coll-add_page'             => 'Säit derbäisetzen',
-	'coll-remove_page'          => 'Säit ewechhuelen',
-	'coll-add_category'         => 'Kategorie derbäisetzen',
-	'coll-empty'                => 'eidel',
-	'coll-page'                 => 'Säit',
-	'coll-pages'                => 'Säiten',
-	'coll-download_as_pdf'      => 'Als PDF eroflueden',
-	'coll-download_pdf'         => 'PDF eroflueden',
-	'coll-remove'               => 'Ewechhuelen',
-	'coll-move_to_top'          => 'No ganz uewe réckelen',
-	'coll-move_up'              => 'Eropréckelen',
-	'coll-move_down'            => 'Erofréckelen',
-	'coll-move_to_bottom'       => 'No ganz ënne réckelen',
-	'coll-title'                => 'Titel:',
-	'coll-subtitle'             => 'Ënnertitel:',
-	'coll-create_chapter'       => 'Een neit Kapitel maachen',
-	'coll-sort_alphabetically'  => 'Säiten alphabetesch sortéieren',
-	'coll-rename'               => 'Ëmbenennen',
-	'coll-new_chapter'          => 'Gitt den Numm fir dat neit Kapitel un',
-	'coll-rename_chapter'       => "Gitt een neie Numm fir d'Kapitel un",
-	'coll-no_such_category'     => 'Keng esou Kategorie',
-	'coll-mwpdf_error_title'    => 'E PDF konnt net gemaach ginn',
-	'coll-revision'             => 'Versioun: %PARAM%',
-	'coll-overwrite_title'      => "D'Säit gëtt et. Iwwerschreiwen?",
-	'coll-yes'                  => 'Jo',
-	'coll-no'                   => 'Neen',
-	'coll-overwrite'            => 'Iwwerschreiwen',
-	'coll-append'               => 'Derbäisetzen',
-	'coll-cancel'               => 'Annulléieren',
-	'coll-generating_pdf_title' => 'PDF maachen',
-	'coll-return_to_collection' => '<p>Zréck op <a href="$1">$2</a></p>',
-	'coll-book_title'           => 'Gedréckte Buch bestellen',
-	'coll-order_from_pp'        => "D'Buch bestelle bäi $1",
-	'coll-about_pp'             => 'Iwwer $1',
+	'coll-desc'                      => "[[Special:Collection|Säiten zesummestellen]], PDF'e generéieren",
+	'coll-collection'                => 'Sammlung',
+	'coll-collections'               => 'Sammlungen',
+	'coll-portlet_title'             => 'Meng Sammlung',
+	'coll-add_page'                  => 'Säit derbäisetzen',
+	'coll-remove_page'               => 'Säit ewechhuelen',
+	'coll-add_category'              => 'Kategorie derbäisetzen',
+	'coll-load_collection'           => 'Sammlung lueden',
+	'coll-show_collection'           => "D'Sammlung weisen",
+	'coll-help_collections'          => "Hellëf iwwert d 'Sammlungen",
+	'coll-empty'                     => 'eidel',
+	'coll-page'                      => 'Säit',
+	'coll-pages'                     => 'Säiten',
+	'coll-download_as_pdf'           => 'Als PDF eroflueden',
+	'coll-my_collection'             => 'Meng Sammlung',
+	'coll-download_pdf'              => 'PDF eroflueden',
+	'coll-remove'                    => 'Ewechhuelen',
+	'coll-move_to_top'               => 'No ganz uewe réckelen',
+	'coll-move_up'                   => 'Eropréckelen',
+	'coll-move_down'                 => 'Erofréckelen',
+	'coll-move_to_bottom'            => 'No ganz ënne réckelen',
+	'coll-title'                     => 'Titel:',
+	'coll-subtitle'                  => 'Ënnertitel:',
+	'coll-create_chapter'            => 'Een neit Kapitel maachen',
+	'coll-sort_alphabetically'       => 'Säiten alphabetesch sortéieren',
+	'coll-clear_collection'          => 'Sammlung eidel maachen',
+	'coll-rename'                    => 'Ëmbenennen',
+	'coll-new_chapter'               => 'Gitt den Numm fir dat neit Kapitel un',
+	'coll-rename_chapter'            => "Gitt een neie Numm fir d'Kapitel un",
+	'coll-no_such_category'          => 'Keng esou Kategorie',
+	'coll-mwpdf_error_title'         => 'E PDF konnt net gemaach ginn',
+	'coll-error_reponse'             => 'Feelermeldng vum Server',
+	'coll-empty_collection'          => 'Eidel Sammlung',
+	'coll-revision'                  => 'Versioun: %PARAM%',
+	'coll-save_collection_title'     => 'Sammlung späicheren',
+	'coll-personal_collection_label' => 'Perséinlech Sammlung',
+	'coll-save_collection'           => 'Sammlung späicheren',
+	'coll-overwrite_title'           => "D'Säit gëtt et. Iwwerschreiwen?",
+	'coll-yes'                       => 'Jo',
+	'coll-no'                        => 'Neen',
+	'coll-overwrite'                 => 'Iwwerschreiwen',
+	'coll-append'                    => 'Derbäisetzen',
+	'coll-cancel'                    => 'Annulléieren',
+	'coll-limit_exceeded_title'      => 'Sammlung ze grouss',
+	'coll-limit_exceeded_text'       => 'Är Sammlung ass ze grouss.
+Et kënne keng Säite méi derbäigesat ginn.',
+	'coll-generating_pdf_title'      => 'PDF maachen',
+	'coll-return_to_collection'      => '<p>Zréck op <a href="$1">$2</a></p>',
+	'coll-book_title'                => 'Gedréckte Buch bestellen',
+	'coll-order_from_pp'             => "D'Buch bestelle bäi $1",
+	'coll-about_pp'                  => 'Iwwer $1',
 );
 
 /** Lao (ລາວ)
@@ -1268,15 +1308,21 @@ $messages['mr'] = array(
 आणखी पाने वाढविता येणार नाहीत.',
 	'coll-generating_pdf_title'       => 'पीडीएफ तयार करीत आहे',
 	'coll-generating_pdf_text'        => "'''कॄपया पीडीएफ तयार होईपर्यंत वाट पहा.'''
-हे पान आपोआप काही सेकंदांनंतर ताजेतवाने व्हायला पाहिजे. जर तसे झाले नाही, तर कृपया आपल्या ब्राउझरला ताजेतवाने (refresh) करा.",
+
+प्रगती: %(progress)d%%.
+
+हे पान आपोआप काही सेकंदांनंतर ताजेतवाने व्हायला पाहिजे. 
+जर तसे झाले नाही, तर कृपया आपल्या ब्राउझरला ताजेतवाने (refresh) करा.",
 	'coll-pdf_finished_text'          => 'पीडीएफ संचिका तयार झालेली आहे.
 आपल्या संगणकात ती उतरवून घेण्यासाठी खालील दुव्यावर टिचकी मारा.
 पीडीएफच्या आउटपुट बद्दल समाधानी आहात का?
 नसेल तर ते सुधारण्याच्या शक्यतांबद्दल [[{{MediaWiki:Coll-helppage}}|कलेक्शन बद्दलची मदत]] पहा.',
+	'coll-pdf_not_satisfied'          => 'पीडीएफ आउटपुट वर संतुष्ट नाही आहात? ते सुधरण्याच्या शक्यतांसाठी [[{{MediaWiki:Coll-helppage}}|कलेक्शन माहिती पृष्ठ]] पहा.',
 	'coll-notfound_title'             => 'कलेक्शन सापडले नाही',
 	'coll-notfound_text'              => 'कलेक्शन पान सापडले नाही.',
 	'coll-return_to_collection'       => '<p><a href="$1">$2</a> कडे परत जा</p>',
 	'coll-pages_removed'              => 'खालील पाने पीडीएफ संचिकेत अंतर्भूत करू शकलेलो नाही:',
+	'coll-pdf_error_text'             => 'पीडीएफ तयार करण्यामध्ये त्रुटी आलेली आहे.',
 	'coll-book_title'                 => 'छापील आवृत्तीची मागणी नोंदवा',
 	'coll-book_text'                  => 'तुम्ही खाली दिलेल्या मागणीनुसार छपाई करणार्‍या जोडीदारांच्या संकेतस्थळाला भेट देऊन तुमच्या कलेक्शन मधील पानांची छापील आवृत्ती मिळवू शकता:',
 	'coll-order_from_pp'              => '$1 कडून छापील प्रत मागवा',
@@ -2389,6 +2435,9 @@ $messages['uk'] = array(
 До неї не можна більше додавати сторінок.',
 	'coll-generating_pdf_title'       => 'Створення PDF',
 	'coll-generating_pdf_text'        => "'''Будь ласка, зачекайте, поки створиться PDF-файл.'''
+
+Прогрес: %(progress)d%%.
+
 Ця сторінка повинна автоматично оновлюватися кожні декілька секунд.
 Якщо цього не відбувається, натисніть кнопку оновлення у вашому браузері.",
 	'coll-pdf_finished_text'          => "PDF-файл був створений.
