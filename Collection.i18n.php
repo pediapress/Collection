@@ -399,6 +399,102 @@ $messages['da'] = array(
 	'coll-cancel' => 'Afbryd',
 );
 
+/** German (Deutsch)
+ * @author Raimond Spekking
+ */
+$messages['de'] = array(
+	'coll-desc'                       => '[[Special:Collection|Seitenzusammenstellung]], erzeuge PDFs',
+	'coll-collection'                 => 'Zusammenstellung',
+	'coll-collections'                => 'Zusammenstellung',
+	'coll-portlet_title'              => 'Meine Zusammenstellung',
+	'coll-add_page'                   => 'Seite hinzufügen',
+	'coll-remove_page'                => 'Seite entfernen',
+	'coll-add_category'               => 'Kategorie hinzufügen',
+	'coll-load_collection'            => 'Zusammenstellung laden',
+	'coll-show_collection'            => 'Zusammenstellung zeigen',
+	'coll-help_collections'           => 'Hilfe zu Zusammenstellungen',
+	'coll-empty'                      => 'leer',
+	'coll-page'                       => 'Seite',
+	'coll-pages'                      => 'Seiten',
+	'coll-download_as_pdf'            => 'Als PDF herunterladen',
+	'coll-noscript_text'              => '<noscript><h1>JavaScript wird benötigt!</h1>
+<strong>Dein Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
+Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong></noscript>',
+	'coll-intro_text'                 => 'Du kannst Seiten zusammenstellen, ein PDF darauf erzeugen und herunterladen sowie Zusammenstellungen für eine später Verwendung zwischenspeichern und mit anderen Benutzern teilen.
+
+Siehe die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Zusammenstellungen]] für weitere Informationen.',
+	'coll-helppage'                   => 'Help:Zusammenstellungen',
+	'coll-pdftoobigcat'               => 'Die Kategorie enthält mehr als %PARAM% Seiten, nur die ersten %PARAM% Seiten werden der Zusammenstellungen hinzugefügt.
+Möchtest du sie hinzufügen?',
+	'coll-my_collection'              => 'Meine Zusammenstellung',
+	'coll-download_title'             => 'Zusammenstellung als PDF herunterladen',
+	'coll-download_text'              => 'Um eine automatisch erstelle PDF-Datei deiner Zusammenstellung herunterzuladen, klicke auf die Schaltfläche.',
+	'coll-download_pdf'               => 'PDF herunterladen',
+	'coll-remove'                     => 'Entfernen',
+	'coll-move_to_top'                => 'an den Anfang',
+	'coll-move_up'                    => 'hoch',
+	'coll-move_down'                  => 'herunter',
+	'coll-move_to_bottom'             => 'an das Ende',
+	'coll-title'                      => 'Titel:',
+	'coll-subtitle'                   => 'Untertitel:',
+	'coll-contents'                   => 'Inhalt',
+	'coll-create_chapter'             => 'Neues Kapitel erzeugen',
+	'coll-sort_alphabetically'        => 'Seiten alphabetisch sortieren',
+	'coll-clear_collection'           => 'Zusammenstellung löschen',
+	'coll-clear_confirm'              => 'Möchtest du deine Zusammenstellung wirklich löschen?',
+	'coll-rename'                     => 'Umbenennen',
+	'coll-new_chapter'                => 'Gib einen Namen für ein neues Kapitel ein',
+	'coll-rename_chapter'             => 'Gib einen neuen Namen für das Kapitel ein',
+	'coll-no_such_category'           => 'Kategorie nicht vorhanden',
+	'coll-mwpdf_error_title'          => 'PDF konnte nicht erstellt werden',
+	'coll-mwpdf_error_msg'            => 'Während der PDF-Erstellung ist ein Fehler aufgetreten.',
+	'coll-mwzip_error_title'          => 'Zusammenstellung konnte nicht erzeugt werden',
+	'coll-mwzip_error_msg'            => 'Während des Zusammenstellung-Prozesses ist ein Fehler aufgetreten.',
+	'coll-notitle_title'              => 'Seitentitel konnte nicht geholt werden',
+	'coll-notitle_title'              => 'Der Titel der Seite konnte nicht bestimmt werden.',
+	'coll-post_failed_title'          => 'POST-Anfrage fehlgeschlagen',
+	'coll-post_failed_msg'            => 'Die POST-Anfrage ist fehlgeschlagen.',
+	'coll-enter_title'                => 'Titel der Zusammenstellung:',
+	'coll-error_reponse'              => 'Fehlermeldung vom Server',
+	'coll-empty_collection'           => 'Leere Zusammenstellung',
+	'coll-revision'                   => 'Version: %PARAM%',
+	'coll-save_collection_title'      => 'Zusammenstellung speichern',
+	'coll-save_collection_text'       => 'Um diese Zusammenstellung zu speichern, wähle einen Typ und gib einen Titel ein:',
+	'coll-login_to_save'              => 'Wenn du Zusammenstellungen speichern möchtest, <a href="$1">melde dich bitte an oder erstelle ein Benutzerkonto</a>.',
+	'coll-personal_collection_label'  => 'Persönliche Zusammenstellung:',
+	'coll-community_collection_label' => 'Community Zusammenstellung:',
+	'coll-save_collection'            => 'Zusammenstellung speichern',
+	'coll-overwrite_title'            => 'Seite vorhanden, überschreiben?',
+	'coll-overwrite_text'             => 'Eine Seite mit dem Namen $1 ist bereits vorhanden. Möchtest du sie durch deine Zusammenstellung ersetzen?',
+	'coll-yes'                        => 'Ja',
+	'coll-no'                         => 'Nein',
+	'coll-load_overwrite_text'        => 'Deine Zusammenstellung enthält bereits Seiten. Möchtest du die aktuelle Zusammenstellung überschreiben, die neuen Seiten anhängen oder abbrechen?',
+	'coll-overwrite'                  => 'Überschreiben',
+	'coll-append'                     => 'Anhängen',
+	'coll-cancel'                     => 'Abbrechen',
+	'coll-limit_exceeded_title'       => 'Zusammenstellung zu groß',
+	'coll-limit_exceeded_text'        => 'Deine Zusammenstellung ist zu groß. Es können keine Seiten mehr hinzugefügt werden.',
+	'coll-generating_pdf_title'       => 'PDF erzeugen',
+	'coll-generating_pdf_text'        => "'''Bitte warten, bis die PDF-Datei erzeugt wurde.'''
+
+Fortschritt: %(progress)d%%.
+
+Diese Seite wird alle paar Sekunden automatisch neu geladen.
+Wenn dies nicht funktioniert, klicke auf die Neuladen-Schaltfläche deines Browers.",
+	'coll-pdf_finished_text'          => "Deine PDF-Datei wurde erzeugt.
+[http://URL Klicke hier] zum Herunterladen auf deinen Computer.",
+    'coll-pdf_not_satisfied'              => "Unzufrieden mit der PDF-Ausgabe? Siehe [[{{MediaWiki:Coll-helppage}}|die Hilfeseiten über Zusammenstellungen]] für Verbesserungsmöglichkeiten.",
+	'coll-notfound_title'             => 'Zusammenstellung nicht gefunden',
+	'coll-notfound_text'              => 'Deine Zusammenstellung konnte nicht gefunden werden.',
+	'coll-return_to_collection'       => '<p>Zurück zu <a href="$1">$2</a></p>',
+	'coll-pages_removed'              => 'Die folgenden Seiten konnten nur gerendert werden und werden aus der PDF-Datei entfernt: %(articles)s',
+	'coll-pdf_error_text'             => 'Es gab einen Fehler bei der Erzeugung der PDF-Datei.',
+	'coll-book_title'                 => 'Druckausgabe bestellen',
+	'coll-book_text'                  => "Du kannst bei den folgenden ''Book-on-Demand''-Partnern eine gedruckte Buchausgabe bestellen:",
+	'coll-order_from_pp'              => 'Bestelle Buch bei $1',
+	'coll-about_pp'                   => 'Über $1',
+);
+
 /** Greek (Ελληνικά)
  * @author Consta
  */
