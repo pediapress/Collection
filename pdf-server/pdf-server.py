@@ -12,14 +12,14 @@ script_url = 'http://example/cgi-bin/pdf-server.py'
 # accompanied script clean-cache.py.
 cache_dir = '/var/cache/pdf-server/'
 
-# Path to mw-pdf executable.
-mwpdf_cmd = '/usr/local/bin/mw-pdf'
+# (Path to) mw-pdf executable.
+mwpdf_cmd = 'mw-pdf'
 
 # Logfile for mw-pdf.
 mwpdf_logfile = '/var/log/mw-pdf.log'
 
-# Path to mw-zip executable.
-mwzip_cmd = '/usr/local/bin/mw-zip'
+# (Path to) mw-zip executable.
+mwzip_cmd = 'mw-zip'
 
 # Logfile for mw-zip.
 mwzip_logfile = '/var/log/mw-zip.log'
@@ -73,20 +73,31 @@ class PDFServer(object):
         self.collection_id = self.form.getvalue('collection_id')
         if self.collection_id is None:
             self.collection_id = uid()
+            
         # prevent evil guys from doing shit (collection_id is used as part of an fs path)
-        assert re.match(r'^[a-z0-9]+$', self.collection_id)
+        if not re.match(r'^[a-z0-9]+$', self.collection_id):
+            raise RuntimeError('invalid collection ID')
         self.collection_dir = os.path.join(cache_dir, self.collection_id)
-        self.metabook_filename = os.path.join(self.collection_dir, 'metabook.json')
-        self.pdf_filename = os.path.join(self.collection_dir, 'collection.pdf')
-        self.error_filename = os.path.join(self.collection_dir, 'errors.txt')
-        self.progress_filename = os.path.join(self.collection_dir, 'progress.txt')
-        self.removed_filename = os.path.join(self.collection_dir, 'removed.txt')
-        self.generating_templ_filename = os.path.join(self.collection_dir, 'generating.html')
-        self.finished_templ_filename = os.path.join(self.collection_dir, 'finished.html')
-        self.removed_templ_filename = os.path.join(self.collection_dir, 'removed.html')
-        self.error_templ_filename = os.path.join(self.collection_dir, 'error.html')
         
-        getattr(self, 'do_%s' % self.form.getvalue('command'))()
+        def p(filename):
+            return os.path.join(self.collection_dir, filename)
+        self.metabook_filename = p('metabook.json')
+        self.pdf_filename = p('collection.pdf')
+        self.error_filename = p('errors.txt')
+        self.progress_filename = p('progress.txt')
+        self.removed_filename = p('removed.txt')
+        self.generating_templ_filename = p('generating.html')
+        self.finished_templ_filename = p('finished.html')
+        self.removed_templ_filename = p('removed.html')
+        self.error_templ_filename = p('error.html')
+        
+        command = self.form.getvalue('command')
+        assert command, 'command arg required'
+        try:
+            method = getattr(self, 'do_%s' % command)
+        except AttributeError:
+            raise RuntimeError('invalid command %r' % command)
+        method()
         for k, v in self.headers.items():
             print '%s: %s' % (k, v)
         print 'Content-Length: %d' % len(self.content)
@@ -118,7 +129,8 @@ class PDFServer(object):
         
         os.makedirs(self.collection_dir)
         open(self.metabook_filename, 'wb').write(metabook)
-        subprocess.check_call(executable=mwpdf_cmd, args=[
+        
+        rc = subprocess.call(executable=mwpdf_cmd, args=[
             mwpdf_cmd,
             '-d',
             '-l', mwpdf_logfile,
@@ -132,6 +144,9 @@ class PDFServer(object):
             '-p', self.progress_filename,
             '-o', self.pdf_filename,
         ])
+        if rc != 0:
+            raise RuntimeError('command %r failed: rc = %d' % (mwpdf_cmd, rc))
+        
         open(self.generating_templ_filename, 'wb').write(generating_templ)
         open(self.finished_templ_filename, 'wb').write(finished_templ)
         open(self.removed_templ_filename, 'wb').write(removed_templ)
@@ -201,7 +216,8 @@ class PDFServer(object):
         
         os.makedirs(self.collection_dir)
         open(self.metabook_filename, 'wb').write(metabook)
-        subprocess.check_call(executable=mwzip_cmd, args=[
+        
+        rc = subprocess.call(executable=mwzip_cmd, args=[
             mwzip_cmd,
             '-d',
             '-l', mwzip_logfile,
@@ -212,6 +228,9 @@ class PDFServer(object):
             '--template-blacklist', template_blacklist,
             '-p', post_url,
         ])
+        if rc != 0:
+            raise RuntimeError('cmd %r failed: rc = %d' % (mwzip_cmd, rc))
+        
         self.content = 'OK'
     
     def render_html(self, body_text, head_text=None):
