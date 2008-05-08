@@ -47,6 +47,7 @@ import md5
 import os
 import re
 import StringIO
+import subprocess
 import time
 import urllib
 
@@ -96,30 +97,45 @@ class PDFServer(object):
     #    self.render_html('It works.')
     
     def do_pdf_generate(self):
-        args = {
-            'cmd': mwpdf_cmd,
-            'logfile': mwpdf_logfile,
-            'errorfile': self.error_filename,
-            'metabook': self.metabook_filename,
-            'base_url': self.form.getvalue('base_url'),
-            'shared_base_url': self.form.getvalue('shared_base_url'),
-            'license': self.form.getvalue('license'),
-            'template_blacklist': self.form.getvalue('template_blacklist'),
-            'removed': self.removed_filename,
-            'progress': self.progress_filename,
-            'output': self.pdf_filename,
-        }
+        metabook = self.form.getvalue('metabook')
+        assert metabook, 'metabook arg required'
+        base_url = self.form.getvalue('base_url')
+        assert base_url, 'base_url arg required'
+        shared_base_url = self.form.getvalue('shared_base_url')
+        assert shared_base_url is not None
+        license = self.form.getvalue('license')
+        assert license, 'license arg required'
+        template_blacklist = self.form.getvalue('template_blacklist')
+        assert template_blacklist is not None
+        generating_templ = self.form.getvalue('generating_template')
+        assert generating_templ, 'generating_template arg required'
+        finished_templ = self.form.getvalue('finished_template')
+        assert finished_templ, 'finished_template arg required'
+        removed_templ = self.form.getvalue('removed_template')
+        assert removed_templ, 'removed_template arg required'
+        error_templ = self.form.getvalue('error_template')
+        assert error_templ, 'error_template arg required'
         
         os.makedirs(self.collection_dir)
-        metabook = self.form.getvalue('metabook')
         open(self.metabook_filename, 'wb').write(metabook)
-        rc = os.system('%(cmd)s --daemonize -l %(logfile)s -e %(errorfile)s -m %(metabook)s -b %(base_url)s -s %(shared_base_url)s --license %(license)s --template-blacklist %(template_blacklist)s -r $(removed)s -p %(progress)s -o %(output)s' % args)
-        assert rc == 0, 'Execution of mw-pdf failed.'
-        
-        open(self.generating_templ_filename, 'wb').write(self.form.getvalue('generating_template'))
-        open(self.finished_templ_filename, 'wb').write(self.form.getvalue('finished_template'))
-        open(self.removed_templ_filename, 'wb').write(self.form.getvalue('removed_template'))
-        open(self.error_templ_filename, 'wb').write(self.form.getvalue('error_template'))
+        subprocess.check_call(executable=mwpdf_cmd, args=[
+            mwpdf_cmd,
+            '-d',
+            '-l', mwpdf_logfile,
+            '-e', self.error_filename,
+            '-m', self.metabook_filename,
+            '-b', base_url,
+            '-s', shared_base_url,
+            '--license', license,
+            '--template-blacklist', template_blacklist,
+            '-r', self.removed_filename,
+            '-p', self.progress_filename,
+            '-o', self.pdf_filename,
+        ])
+        open(self.generating_templ_filename, 'wb').write(generating_templ)
+        open(self.finished_templ_filename, 'wb').write(finished_templ)
+        open(self.removed_templ_filename, 'wb').write(removed_templ)
+        open(self.error_templ_filename, 'wb').write(error_templ)
         
         self.headers['Content-Type'] = 'application/json'
         self.content = simplejson.dumps({
@@ -170,21 +186,32 @@ class PDFServer(object):
         self.content = open(self.pdf_filename).read()
     
     def do_zip_post(self):
-        os.makedirs(self.collection_dir)
-        args = {
-            'cmd': mwzip_cmd,
-            'logfile': mwzip_logfile,
-            'metabook': self.metabook_filename,
-            'base_url': self.form.getvalue('base_url'),
-            'shared_base_url': self.form.getvalue('shared_base_url'),
-            'license': self.form.getvalue('license'),
-            'template_blacklist': self.form.getvalue('template_blacklist'),
-            'post_url': self.form.getvalue('post_url'),
-        }    
-        open(self.metabook_filename, 'wb').write(self.form.getvalue('metabook'))
-        rc = os.system('%(cmd)s --daemonize -l %(logfile)s -m %(metabook)s -b %(base_url)s -s %(shared_base_url)s --license %(license)s --template-blacklist %(template_blacklist)s -p %(post_url)s' % args)
-        assert rc == 0, 'Execution of mw-zip failed.'
+        metabook = self.form.getvalue('metabook')
+        assert metabook, 'metabook arg required'
+        base_url = self.form.getvalue('base_url')
+        assert base_url, 'base_url arg required'
+        shared_base_url = self.form.getvalue('shared_base_url')
+        assert shared_base_url is not None
+        license = self.form.getvalue('license')
+        assert license, 'license arg required'
+        template_blacklist = self.form.getvalue('template_blacklist')
+        assert template_blacklist is not None
+        post_url = self.form.getvalue('post_url')
+        assert post_url, 'post_url arg required'
         
+        os.makedirs(self.collection_dir)
+        open(self.metabook_filename, 'wb').write(metabook)
+        subprocess.check_call(executable=mwzip_cmd, args=[
+            mwzip_cmd,
+            '-d',
+            '-l', mwzip_logfile,
+            '-m', self.metabook_filename,
+            '-b', base_url,
+            '-s', shared_base_url,
+            '--license', license,
+            '--template-blacklist', template_blacklist,
+            '-p', post_url,
+        ])
         self.content = 'OK'
     
     def render_html(self, body_text, head_text=None):
