@@ -1138,6 +1138,7 @@ $messages['jv'] = array(
 	'coll-no_such_category'           => 'Ora ana kategori kaya mengkono',
 	'coll-mwpdf_error_title'          => 'Ora bisa nggawé PDF',
 	'coll-mwpdf_error_msg'            => 'Ana kaluputan nalika nggawé berkas PDF.',
+	'coll-mwzip_error_title'          => 'Ora bisa nggawé kolèksi kaca',
 	'coll-notitle_title'              => 'Irah-irahan kaca iki ora bisa ditemtokaké.',
 	'coll-enter_title'                => 'Lebokna irah-irahan (judhul) kanggo kolèksi:',
 	'coll-empty_collection'           => 'Kolèksi kosong',
@@ -1166,6 +1167,7 @@ Yèn iki ora dumadi, mangga mencèt tombol ''refresh'' ing panjlajah wèb panjen
 [http://URL Klik ing kéné] kanggo ngundhuh ing komputer panjenengan.',
 	'coll-notfound_title'             => 'Kolèksi Ora Ditemokaké',
 	'coll-notfound_text'              => 'Ora bisa nemokaké kaca kolèksi.',
+	'coll-return_to_collection'       => '<p>Bali menyang <a href="$1">$2</a></p>',
 	'coll-pdf_error_text'             => 'Ana kaluputan nalika nggawé berkas PDF.',
 	'coll-book_title'                 => 'Pesen Buku Cithak',
 	'coll-order_from_pp'              => 'Pesen buku saka $1',
@@ -2165,6 +2167,42 @@ $messages['sr-ec'] = array(
 	'coll-no'     => 'Не',
 );
 
+/** Seeltersk (Seeltersk)
+ * @author Pyt
+ */
+$messages['stq'] = array(
+	'coll-download_as_pdf'     => 'As PDF deelleede',
+	'coll-noscript_text'       => '<noscript><h1>JavaScript is nöödich!</h1>
+<strong>Dien Browser unnerstutset neen Javascript of Javascript wuude deaktivierd. Disse Siede däd nit gjucht funktionierje, soloange Javascript nit ferföigboar is.</strong></noscript>',
+	'coll-intro_text'          => 'Du koast Sieden touhoopestaale, n PDF deerap moakje un deelleede as uk Touhoopestaalengen foar ne leetere Ferweendenge twiskespiekerje un mäd uur Benutsere deele.
+
+Sjuch ju [[{{MediaWiki:Coll-helppage}}|Hälpe bie Touhoopestaalengen]] foar wiedere Informatione.',
+	'coll-helppage'            => 'Help:Touhoopestaalengen',
+	'coll-pdftoobigcat'        => 'Ju Kategorie änthaalt moor as %PARAM% Sieden, bloot do eerste %PARAM% Sieden konnen an do Touhoopestaalengen bietouföiged wäide.
+Moatest du do bietouföigje?',
+	'coll-my_collection'       => 'Mien Touhoopestaalenge',
+	'coll-download_title'      => 'Touhoopestaalenge as PDF deelleede',
+	'coll-download_text'       => 'Uum ne automatisk moakede PDF-Doatäi fon dien Touhoopestaalenge deeltouleeden, klik ap ap ju Schaltfläche.',
+	'coll-download_pdf'        => 'PDF deelleede',
+	'coll-remove'              => 'Wächhoalje',
+	'coll-move_to_top'         => 'ätter dän Ounfang',
+	'coll-move_up'             => 'hooch',
+	'coll-move_down'           => 'häärdeel',
+	'coll-move_to_bottom'      => 'ätter dän Eend',
+	'coll-title'               => 'Tittel:',
+	'coll-subtitle'            => 'Unnertittel:',
+	'coll-contents'            => 'Inhoold',
+	'coll-create_chapter'      => 'Näi Kapittel moakje',
+	'coll-sort_alphabetically' => 'Sieden alphabetisk sortierje',
+	'coll-clear_collection'    => 'Touhoopestaalenge läskje',
+	'coll-clear_confirm'       => 'Moatest du dien Touhoopestaalenge wuudelk läskje?',
+	'coll-rename'              => 'Uumebenaame',
+	'coll-new_chapter'         => 'Reek n Noome foar n näi Kapittel ien',
+	'coll-rename_chapter'      => 'Reek n näien Noome foar dät Kapittel ien',
+	'coll-no_such_category'    => 'Sun Kategorie rakt dät nit',
+	'coll-mwpdf_error_title'   => 'PDF kuud nit moaked wäide',
+);
+
 /** Swedish (Svenska)
  * @author M.M.S.
  * @author Sannab
@@ -2631,8 +2669,11 @@ Bạn có muốn ghi đè tập hợp hiện tại, thêm nội dung mới hay h
 Không thể thêm trang được nữa.',
 	'coll-generating_pdf_title'       => 'Tạo ra PDF',
 	'coll-generating_pdf_text'        => "'''Xin hãy chờ trong khi tập tin PDF đang được tạo ra.'''
-Trang này sẽ tự động tải lại trong vài giây tới.
-Nếu nó không hoạt động, xin hãy nhấn nút Refresh của trình duyệt của bạn.",
+
+Tiến trình: %(progress)d%%.
+
+Cứ vài giây trang này sẽ tự động tải lại một lần.
+Nếu nó không hoạt động, xin hãy nhấn nút refresh trên trình duyệt của bạn.",
 	'coll-pdf_finished_text'          => 'Tập tin PDF đã được tạo ra.
 [http://URL Nhấn vào đây] để tải nó về máy tính.',
 	'coll-pdf_not_satisfied'          => 'Không vừa lòng với ngõ ra PDF? Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp
