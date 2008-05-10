@@ -574,6 +574,11 @@ $messages['eo'] = array(
 	'coll-limit_exceeded_text'        => 'Via paĝa kolekto estas tro granda.
 Neniom pluaj paĝoj ne povas esti aldonitaj.',
 	'coll-generating_pdf_title'       => 'Generante PDF',
+	'coll-generating_pdf_text'        => "'''Bonvolu atenti dum la PDF-dosiero generiĝas.'''
+Plenumita: %(progress)d%%.
+
+Ĉi paĝo verŝajne aŭtomate refreŝiĝos po kelkaj sekundoj.
+Se ĉi tiel ne funkcias, bonvolu klaki la refreŝigan butonon de via retumilo.",
 	'coll-notfound_title'             => 'Kolekto Ne Trovita',
 	'coll-notfound_text'              => 'Ne eblas trovi kolekto-paĝon.',
 	'coll-return_to_collection'       => '<p>Reiru al <a href="$1">$2</a></p>',
@@ -1708,7 +1713,11 @@ Volètz espotir vòstra compilacion actuala, i apondre lo contengut o alara anul
 Cap de pagina pòt pas èsser ajustada.',
 	'coll-generating_pdf_title'       => 'Creacion del PDF',
 	'coll-generating_pdf_text'        => "'''Esperatz pendent la creacion del PDF.'''
-Aquesta pagina se deuriá actualizar automaticament, se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navigaire.",
+
+Progression : %(progress)d%%.
+
+Aquesta pagina se deuriá actualizar automaticament.
+Se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navigaire.",
 	'coll-pdf_finished_text'          => 'Lo fichièr PDF es estat creat.
 [http://URL Clicatz aicí] per lo telecargar sus vòstre ordenador.',
 	'coll-pdf_not_satisfied'          => 'Pas satisfach de la sortida PDF ? Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda a prepaus de las colleccions]] per las possibilitats de melhorament.',
@@ -1816,8 +1825,12 @@ Czy chcesz nadpisać Twoją obecną kolekcję, dodać do niej strony czy anulowa
 	'coll-limit_exceeded_text'        => 'Twoja kolekcja stron jest zbyt duża.
 Nie można dodać więcej stron.',
 	'coll-generating_pdf_title'       => 'Tworzenie PDF',
-	'coll-generating_pdf_text'        => "'''Poczekaj, plik PDF jest tworzony.'''
-Ta strona powinna się automatycznie odświeżać co kilka sekund. Jeśli to nie działa, użyj przycisku odświeżania w Twojej przeglądarce.",
+	'coll-generating_pdf_text'        => "'''Poczekaj, plik PDF jest właśnie tworzony.'''
+
+Postęp: %(progress)d%%.
+
+Strona powinna być automatycznie odświeżana co kilka sekund.
+Jeśli tak się nie dzieje, użyj przycisku ''Odśwież'' w przeglądarce.",
 	'coll-pdf_finished_text'          => 'Plik PDF został utworzony.
 [http://URL Kliknij tutaj], by pobrać go na swój komputer.',
 	'coll-pdf_not_satisfied'          => 'Plik PDF nie spełnił Twoich oczekiwań? Zobacz [[{{MediaWiki:Coll-helppage}}|kolekcję opisów]] jak można podwyższyć jego jakość.',
