@@ -1652,7 +1652,11 @@ $messages['no'] = array(
 	'coll-limit_exceeded_title'       => 'Samling for stor',
 	'coll-limit_exceeded_text'        => 'Sidesamlingen din er for stor. Ingen flere sider kan legges til.',
 	'coll-generating_pdf_title'       => 'Genererer PDF',
-	'coll-generating_pdf_text'        => "'''Vent mens PDF-filen genereres.''' Denne siden burde oppdateres med noen sekunders mellomrom. Om dette ikke fungerer, trykk på oppdateringsknappen i nettleseren din.",
+	'coll-generating_pdf_text'        => "'''Vent mens PDF-filen genereres.'''
+
+Framdrift: %(progress)d% %.
+
+Denne siden burde oppdateres med noen sekunders mellomrom. Om dette ikke fungerer, trykk på oppdateringsknappen i nettleseren din.",
 	'coll-pdf_finished_text'          => 'PDF-filen har blitt skapt. [http://URL Klikk her] for å laste den ned. Om du ikke er fornøyd med resultatet kan du se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for mulige måter å forbedre det på.',
 	'coll-pdf_not_satisfied'          => 'Ikke fornøyd med PDF-resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for hvordan du kan forbedre det.',
 	'coll-notfound_title'             => 'Samling ikke funnet',
