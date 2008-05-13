@@ -286,6 +286,7 @@ $messages['bg'] = array(
  */
 $messages['ca'] = array(
 	'coll-page'     => 'pàgina',
+	'coll-pages'    => 'pàgines',
 	'coll-yes'      => 'S&iacute;',
 	'coll-no'       => 'No',
 	'coll-about_pp' => 'Quant a $1',
@@ -782,14 +783,17 @@ Desexa sobreescribir a súa colección actual, adxuntar o novo contido ou cancel
 Non se poden engadir máis páxinas.',
 	'coll-generating_pdf_title'       => 'Xerando PDF',
 	'coll-generating_pdf_text'        => "'''Por favor agarde mentres o arquivo PDF se está xerando.'''
-Esta páxina será refrescada automaticamente cada poucos segundos, se non vai, por favor prema no botón \"refrescar\" do seu navegador.",
-	'coll-pdf_finished_text'          => 'O arquivo PDF foi xerado.
-Faga clic na ligazón de embaixo para descargalo no seu ordenador. Non está satisfeito co arquivo PDF?
-Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda sobre as coleccións]] para posibles melloras nel.',
+
+Progreso: %(progress)d%%.
+
+Esta páxina será refrescada automaticamente cada poucos segundos.
+Se non vai, por favor prema no botón \"refrescar\" do seu navegador.",
+	'coll-pdf_finished_text'          => 'O ficheiro PDF foi xerado.
+[http://URL Prema aquí] para descargalo no seu ordenador.',
 	'coll-notfound_title'             => 'Non se pode atopar a colección',
 	'coll-notfound_text'              => 'Non se pode atopar a páxina da colección.',
 	'coll-return_to_collection'       => '<p>Voltar a <a href="$1">$2</a></p>',
-	'coll-pages_removed'              => 'As seguintes páxinas non poden ser renderizadas e serán eliminadas do arquivo PDF:',
+	'coll-pages_removed'              => 'As seguintes páxinas non poden ser renderizadas e serán eliminadas do arquivo PDF: %(articles)s',
 	'coll-order_from_pp'              => 'Encargar un libro a $1',
 	'coll-about_pp'                   => 'Acerca de $1',
 );
@@ -1317,6 +1321,7 @@ $messages['ml'] = array(
 	'coll-load_collection'            => 'ശേഖരം ലോഡ് ചെയ്യുക',
 	'coll-show_collection'            => 'ശേഖരം കാണിക്കുക',
 	'coll-help_collections'           => 'ശേഖരങ്ങളുടെ സഹായം',
+	'coll-empty'                      => 'ശൂന്യം',
 	'coll-page'                       => 'താള്‍',
 	'coll-pages'                      => 'താളുകള്‍',
 	'coll-download_as_pdf'            => 'PDF ആയി ഡൗണ്‍ലോഡ് ചെയ്യുക',
