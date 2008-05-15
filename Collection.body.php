@@ -597,7 +597,7 @@ class Collection extends SpecialPage {
 
 		$response = Http::post( $this->mPODPartners[$partner]['posturl'] );
 		if ( !$response ) {
-			$wgOut->showErrorPage( 'post_failed_title', 'post_failed_msg' );
+			$wgOut->showErrorPage( 'coll-post_failed_title', 'coll-post_failed_msg' );
 			return;
 		}
 		$postData = $json->decode( $response );
