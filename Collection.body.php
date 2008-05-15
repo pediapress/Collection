@@ -504,10 +504,10 @@ class Collection extends SpecialPage {
 			'shared_base_url' => $wgSharedBaseURL,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
 			'license' => $wgLicenseArticle,
-			'generating_template' => wfMsgWikiHtml( 'coll-generating_pdf_text' ),
-			'finished_template' => wfMsgWikiHtml( 'coll-pdf_finished_text' ),
-			'removed_template' => wfMsgWikiHtml( 'coll-pages_removed' ),
-			'error_template' => wfMsgWikiHtml( 'coll-pdf_error_text' ),
+			'generating_template' => wfMsg( 'coll-generating_pdf_text' ),
+			'finished_template' => wfMsg( 'coll-pdf_finished_text' ),
+			'removed_template' => wfMsg( 'coll-pages_removed' ),
+			'error_template' => wfMsg( 'coll-pdf_error_text' ),
 		) );
 		if ( !$response ) {
 			$wgOut->showErrorPage( 'coll-post_failed_title', 'coll-post_failed_msg' );

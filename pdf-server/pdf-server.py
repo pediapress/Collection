@@ -32,12 +32,6 @@ traceback_logdir = '/tmp'
 # ==============================================================================
 
 
-
-
-# TODOs:
-# * progress (percentage) for do_pdf_status()
-
-
 if traceback_logdir is not None:
     import cgitb
     cgitb.enable(display=0, logdir=traceback_logdir)
@@ -86,10 +80,10 @@ class PDFServer(object):
         self.error_filename = p('errors.txt')
         self.progress_filename = p('progress.txt')
         self.removed_filename = p('removed.txt')
-        self.generating_templ_filename = p('generating.html')
-        self.finished_templ_filename = p('finished.html')
-        self.removed_templ_filename = p('removed.html')
-        self.error_templ_filename = p('error.html')
+        self.generating_templ_filename = p('generating_templ.txt')
+        self.finished_templ_filename = p('finished_templ.txt')
+        self.removed_templ_filename = p('removed_templ.txt')
+        self.error_templ_filename = p('error_templ.txt')
         
         command = self.form.getvalue('command')
         assert command, 'command arg required'
@@ -234,6 +228,14 @@ class PDFServer(object):
         self.content = 'OK'
     
     def render_html(self, body_text, head_text=None):
+        # escape incoming string to prevent XSS attacks or other evil stuff:
+        body_text = cgi.escape(body_text)
+        
+        # provide some basic formatting instead:
+        body_text.replace('\n\n', '<br>')
+        re.sub(r"'''(.*?)'''", r'<strong>\1</strong>', body_text)
+        re.sub(r'[(\S*?)\s+(\S*?)]', r'<a href="\1">\2</a>', body_text)
+        
         self.headers['Content-Type'] = 'text/html'
         self.content = '''<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
