@@ -850,9 +850,12 @@ EOS
 			$orderLabel = wfMsgHtml( 'coll-order_from_pp', $partnerName );
 			$aboutLabel = wfMsgHtml( 'coll-about_pp', $partnerName );
 			$html .= <<<EOS
-<li>
-	<a href="$posturl" class="pp_post_link"><img src="$logoURL" alt="$partnerName"/>&nbsp;<strong>$orderLabel</strong></a> –
-	<a href="$url" target="_blank">$aboutLabel</a>
+<li id="ppList">
+	<form action="$posturl" method="GET">
+		<a href="$url" target="_blank"><img src="$logoURL" alt="$partnerName"/></a>
+		<input type="submit" value="$orderLabel"/>
+		<a href="$url" target="_blank">$aboutLabel</a>
+	</form>
 </li>
 EOS
 			;
