@@ -166,15 +166,15 @@ class PDFServer(object):
                     'collection_id': self.collection_id,
                 }),
             )
-            html = open(self.finished_templ_filename, 'rb').read()
+            text = open(self.finished_templ_filename, 'rb').read()
             if os.path.exists(self.removed_filename):
-                html += open(self.removed_templ_filename, 'rb').read() % {
+                text += open(self.removed_templ_filename, 'rb').read() % {
                     'articles': open(self.removed_filename, 'rb').read()
                 }
-            self.render_html(html.replace('http://URL', url))
+            self.render_html(text, url=url)
         elif os.path.exists(self.error_filename):
-            html = open(self.error_templ_filename, 'rb').read()
-            self.render_html(html)
+            text = open(self.error_templ_filename, 'rb').read()
+            self.render_html(text)
         else:
             progress = 0
             try:
@@ -186,8 +186,8 @@ class PDFServer(object):
                 'collection_id': self.collection_id,
             })
             meta = '<meta http-equiv="refresh" content="5; url=?%s">' % query_args
-            html = open(self.generating_templ_filename, 'rb').read()
-            self.render_html(html % {'progress': progress}, head_text=meta)
+            text = open(self.generating_templ_filename, 'rb').read()
+            self.render_html(text % {'progress': progress}, head_text=meta)
     
     def do_pdf_download(self):
         self.headers['Content-Type'] = 'application/pdf'
@@ -227,14 +227,15 @@ class PDFServer(object):
         
         self.content = 'OK'
     
-    def render_html(self, body_text, head_text=None):
+    def render_html(self, body_text, head_text=None, url=None):
         # escape incoming string to prevent XSS attacks or other evil stuff:
         body_text = cgi.escape(body_text)
         
         # provide some basic formatting instead:
         body_text = body_text.replace('\n\n', '<br>')
         body_text = re.sub(r"'''(.*?)'''", r'<strong>\1</strong>', body_text)
-        body_text = re.sub(r'\[(\S*?)\s+(.*?)\]', r'<a href="\1">\2</a>', body_text)
+        if url is not None:
+            body_text = re.sub(r'\[(.*?)\]', r'<a href="%s">\1</a>' % url, body_text)
         
         self.headers['Content-Type'] = 'text/html'
         self.content = '''<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">

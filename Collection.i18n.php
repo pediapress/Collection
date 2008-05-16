@@ -106,7 +106,7 @@ Progress: %(progress)d%%.
 This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.",
 	'coll-pdf_finished_text'          => "The PDF file has been generated.
-[http://URL Click here] to download it to your computer.",
+[Click here] to download it to your computer.",
     'coll-pdf_not_satisfied'          => "Not satisfied with the PDF output? See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
 	'coll-notfound_title'             => 'Collection Not Found',
 	'coll-notfound_text'              => 'Could not find collection page.',
