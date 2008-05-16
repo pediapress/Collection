@@ -249,7 +249,7 @@ function CollectionSpecialPage() {
 	hookEventOnElement('click', function() { self.collection.sort(); }, $('sortLink'));
 
 	this.downloadButton = $('downloadButton');
-
+	this.ppList = $('ppList');
 	this.titleInput = $('titleInput');
 
 	hookEventOnElement(['keyup', 'change'], function() {
@@ -313,6 +313,9 @@ CollectionSpecialPage.prototype = {
 			disabled = 'disabled';
 		}
 		this.downloadButton.disabled = disabled;
+		forEach(this.ppList.getElementsByTagName('input'), function(i, button) {
+			button.disabled = disabled;
+		});
 		var saveButton = $('saveButton');
 		if (!saveButton) {
 			return;
