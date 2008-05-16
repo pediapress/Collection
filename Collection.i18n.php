@@ -48,7 +48,7 @@ See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more inf
 	'coll-pdftoobigcat'               => 'The category contains more than %PARAM% pages, only the first %PARAM% pages can be added to your collection.
 Do you want to add them?',
 	'coll-my_collection'              => 'My Collection',
-	'coll-download_title'             => 'Download Collection as PDF',
+	'coll-download_title'             => 'Download collection as PDF',
 	'coll-download_text'              => 'To download an automatically generated PDF file of your page collection, click the button.',
 	'coll-download_pdf'               => 'Download PDF',
 	'coll-remove'                     => 'Remove',
@@ -79,7 +79,7 @@ Do you want to add them?',
 	'coll-error_reponse'              => 'Error response from server',
 	'coll-empty_collection'           => 'Empty collection',
 	'coll-revision'                   => 'Revision: %PARAM%',
-	'coll-save_collection_title'      => 'Save Collection',
+	'coll-save_collection_title'      => 'Save collection',
 	'coll-save_collection_text'       => 'To save this collection for later use, choose a collection type and enter a page title:',
 	'coll-login_to_save'              => 'If you want to save collections for later use, please <a href="$1">log in or create an account</a>.',
 	'coll-personal_collection_label'  => 'Personal collection:',
@@ -95,7 +95,7 @@ Do want to overwrite your current collection, append the new content or cancel?'
 	'coll-overwrite'                  => 'Overwrite',
 	'coll-append'                     => 'Append',
 	'coll-cancel'                     => 'Cancel',
-	'coll-limit_exceeded_title'       => 'Collection Too Big',
+	'coll-limit_exceeded_title'       => 'Collection too big',
 	'coll-limit_exceeded_text'        => 'Your page collection is too big.
 No more pages can be added.',
 	'coll-generating_pdf_title'       => 'Generating PDF',
@@ -107,18 +107,20 @@ This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.",
 	'coll-pdf_finished_text'          => "The PDF file has been generated.
 [Click here] to download it to your computer.",
-    'coll-pdf_not_satisfied'          => "Not satisfied with the PDF output? See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
-	'coll-notfound_title'             => 'Collection Not Found',
+	'coll-pdf_not_satisfied'          => "Not satisfied with the PDF output?
+See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
+	'coll-notfound_title'             => 'Collection not found',
 	'coll-notfound_text'              => 'Could not find collection page.',
 	'coll-return_to_collection'       => '<p>Return to <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'The following pages could not be rendered and were removed from the PDF file: %(articles)s',
 	'coll-pdf_error_text'             => 'There was an error when generating the PDF file.',
-	'coll-book_title'    => 'Order Printed Book',
-	'coll-book_text'     => 'You can order a printed book containing your page collection by visiting one of the following print-on-demand partners:',
-	'coll-order_from_pp' => 'Order book from $1',
-	'coll-about_pp'      => 'About $1',
-	'coll-invalid_podpartner_title' => 'Invalid POD Partner',
-	'coll-invalid_podpartner_msg' => 'The supplied POD Partner is invalid. Please contact your MediaWiki administrator.',
+	'coll-book_title'                 => 'Order printed book',
+	'coll-book_text'                  => 'You can order a printed book containing your page collection by visiting one of the following print-on-demand partners:',
+	'coll-order_from_pp'              => 'Order book from $1',
+	'coll-about_pp'                   => 'About $1',
+	'coll-invalid_podpartner_title'   => 'Invalid POD partner',
+	'coll-invalid_podpartner_msg'     => 'The supplied POD partner is invalid.
+Please contact your MediaWiki administrator.',
 );
 
 /** Karelian (Karjala)
