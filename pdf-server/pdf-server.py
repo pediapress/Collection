@@ -232,9 +232,9 @@ class PDFServer(object):
         body_text = cgi.escape(body_text)
         
         # provide some basic formatting instead:
-        body_text.replace('\n\n', '<br>')
-        re.sub(r"'''(.*?)'''", r'<strong>\1</strong>', body_text)
-        re.sub(r'\[(\S*?)\s+(\S*?)\]', r'<a href="\1">\2</a>', body_text)
+        body_text = body_text.replace('\n\n', '<br>')
+        body_text = re.sub(r"'''(.*?)'''", r'<strong>\1</strong>', body_text)
+        body_text = re.sub(r'\[(\S*?)\s+(.*?)\]', r'<a href="\1">\2</a>', body_text)
         
         self.headers['Content-Type'] = 'text/html'
         self.content = '''<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
