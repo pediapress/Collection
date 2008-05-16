@@ -591,7 +591,7 @@ class Collection extends SpecialPage {
 		$json = new Services_JSON();
 
 		if ( !isset( $this->mPODPartners[$partner] ) ) {
-			$wgOut->showErrorPage( 'invalid_podpartner_title', 'invalid_podpartner_msg' );
+			$wgOut->showErrorPage( 'coll-invalid_podpartner_title', 'coll-invalid_podpartner_msg' );
 			return;
 		}
 
@@ -837,30 +837,27 @@ EOS
 		$html = <<<EOS
 <h2><span class="mw-headline">$bookTitle</span></h2>
 <p>$bookText</p>
-<ul>
 EOS
 		;
 
 		foreach( $this->mPODPartners as $partner => $partnerData ) {
-			$params = '?partner=' . $partner;
-			$posturl = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'post_pdf/' ) . $params;
+			$formurl = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'post_pdf/' );
 			$url = $partnerData['url'];
 			$logoURL = $partnerData['logourl'];
 			$partnerName = $partnerData['name'];
 			$orderLabel = wfMsgHtml( 'coll-order_from_pp', $partnerName );
 			$aboutLabel = wfMsgHtml( 'coll-about_pp', $partnerName );
 			$html .= <<<EOS
-<li id="ppList">
-	<form action="$posturl" method="GET">
-		<a href="$url" target="_blank"><img src="$logoURL" alt="$partnerName"/></a>
+<p>
+	<form action="$formurl" method="GET">
+		<input type="hidden" name="partner" value="$partner"/>
 		<input type="submit" value="$orderLabel"/>
-		<a href="$url" target="_blank">$aboutLabel</a>
+		<a href="$url" target="_blank">$aboutLabel&nbsp;<img src="$logoURL" alt="$partnerName"/></a>
 	</form>
-</li>
+</p>
 EOS
 			;
 		}
-		$html .= '</ul>';
 		$this->outputBox( $html );
 	}
 

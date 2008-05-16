@@ -117,6 +117,8 @@ If this does not work, please press refresh button of your browser.",
 	'coll-book_text'     => 'You can order a printed book containing your page collection by visiting one of the following print-on-demand partners:',
 	'coll-order_from_pp' => 'Order book from $1',
 	'coll-about_pp'      => 'About $1',
+	'coll-invalid_podpartner_title' => 'Invalid POD Partner',
+	'coll-invalid_podpartner_msg' => 'The supplied POD Partner is invalid. Please contact your MediaWiki administrator.',
 );
 
 /** Karelian (Karjala)
