@@ -241,6 +241,7 @@ $messages['ar'] = array(
 
 /** Bulgarian (Български)
  * @author DCLXVI
+ * @author Siebrand
  */
 $messages['bg'] = array(
 	'coll-add_page'              => 'Добавяне на страница',
@@ -278,7 +279,7 @@ $messages['bg'] = array(
 	'coll-cancel'                => 'Отказване',
 	'coll-generating_pdf_title'  => 'Генериране на PDF',
 	'coll-pdf_finished_text'     => 'PDF файлът беше генериран.
-[http://URL Щракнете тук] за изтегляне на локалния компютър.',
+[Щракнете тук] за изтегляне на локалния компютър.',
 	'coll-return_to_collection'  => '<p>Връщане към <a href="$1">$2</a></p>',
 	'coll-pages_removed'         => 'Следните страници не могат да бъдат обработени и бяха премахнати от PDF файла: %(articles)s',
 	'coll-order_from_pp'         => 'Поръчване на книга от $1',
@@ -519,6 +520,7 @@ $messages['el'] = array(
 /** Esperanto (Esperanto)
  * @author Yekrats
  * @author Amikeco
+ * @author Siebrand
  */
 $messages['eo'] = array(
 	'coll-desc'                       => '[[Special:Collection|Kolekto-paĝoj]], generi PDF-ojn',
@@ -574,7 +576,7 @@ $messages['eo'] = array(
 	'coll-no'                         => 'Ne',
 	'coll-overwrite'                  => 'Anstataŭigu',
 	'coll-append'                     => 'Aldonu',
-	'coll-cancel'                     => 'Nuligu',
+	'coll-cancel'                     => 'Nuligi',
 	'coll-limit_exceeded_title'       => 'Kolekto Tro Granda',
 	'coll-limit_exceeded_text'        => 'Via paĝa kolekto estas tro granda.
 Neniom pluaj paĝoj ne povas esti aldonitaj.',
@@ -613,6 +615,7 @@ $messages['fi'] = array(
 /** French (Français)
  * @author Meithal
  * @author Grondin
+ * @author Siebrand
  */
 $messages['fr'] = array(
 	'coll-desc'                       => "[[Special:Collection|Compiler des pages]], générer des pdf's",
@@ -696,7 +699,7 @@ Progression : %(progress)d%%.
 Cette page devrait automatiquement s'actualiser dans quelques secondes.
 Si tel n’est pas le cas, veuillez appuyer sur le bouton d'actualisation de votre navigateur.",
 	'coll-pdf_finished_text'          => 'Le fichier PDF a été créé.
-[http://URL Cliquez ici] pour le télécharger sur votre ordinateur.',
+[Cliquez ici] pour le télécharger sur votre ordinateur.',
 	'coll-pdf_not_satisfied'          => 'Non satisfait de la sortie PDF ? Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]] pour les possibilités d’amélioration.',
 	'coll-notfound_title'             => 'Compilation non trouvée',
 	'coll-notfound_text'              => 'Ne peut trouver la compilation.',
@@ -707,11 +710,15 @@ Si tel n’est pas le cas, veuillez appuyer sur le bouton d'actualisation de vot
 	'coll-book_text'                  => "Vous pouvez commander un livre imprimé contenant votre collection d'articles en visitant une demande d'impression de la part de partenaires :",
 	'coll-order_from_pp'              => 'Commander le livre depuis $1',
 	'coll-about_pp'                   => 'Au sujet de $1',
+	'coll-invalid_podpartner_title'   => 'Partenaire POD incorrect.',
+	'coll-invalid_podpartner_msg'     => 'Le partenaire POD indiqué est incorrect.
+Veuillez contacter votre administrateur Mediawiki.',
 );
 
 /** Galician (Galego)
  * @author Toliño
  * @author Alma
+ * @author Siebrand
  */
 $messages['gl'] = array(
 	'coll-desc'                       => '[[Special:Collection|Coleccionar páxinas]], xerar ficheiros PDF',
@@ -793,7 +800,7 @@ Progreso: %(progress)d%%.
 Esta páxina será refrescada automaticamente cada poucos segundos.
 Se non vai, por favor prema no botón \"refrescar\" do seu navegador.",
 	'coll-pdf_finished_text'          => 'O ficheiro PDF foi xerado.
-[http://URL Prema aquí] para descargalo no seu ordenador.',
+[Prema aquí] para descargalo no seu ordenador.',
 	'coll-notfound_title'             => 'Non se pode atopar a colección',
 	'coll-notfound_text'              => 'Non se pode atopar a páxina da colección.',
 	'coll-return_to_collection'       => '<p>Voltar a <a href="$1">$2</a></p>',
@@ -824,6 +831,13 @@ $messages['gv'] = array(
 	'coll-no'                         => 'Cha',
 	'coll-cancel'                     => 'Dolley magh',
 	'coll-about_pp'                   => 'Mychione $1',
+);
+
+/** Hawaiian (Hawai`i)
+ * @author Singularity
+ */
+$messages['haw'] = array(
+	'coll-about_pp' => 'E pili ana iā $1',
 );
 
 /** Hindi (हिन्दी)
@@ -1028,6 +1042,7 @@ $messages['is'] = array(
 /** Japanese (日本語)
  * @author JtFuruhata
  * @author Siebrand
+ * @author Iwai.masaharu
  */
 $messages['ja'] = array(
 	'coll-desc'                       => 'PDFファイルを作成するための[[Special:Collection|ページコレクション]]',
@@ -1105,6 +1120,9 @@ $messages['ja'] = array(
 これ以上のページを追加することはできません。',
 	'coll-generating_pdf_title'       => 'PDFファイルの生成',
 	'coll-generating_pdf_text'        => "'''PDFファイルの作成が完了するまで、今しばらくお待ちください。'''
+
+プロセス: %(progress)d%%
+
 このページは数秒ごとに自動的に更新されます。もしも自動更新されない場合は、ブラウザの更新ボタンを押してください。",
 	'coll-pdf_finished_text'          => 'PDFファイルの作成に成功しました。
 以下のリンクをクリックすると、あなたのコンピュータへダウンロードすることができます。',
@@ -1116,6 +1134,7 @@ $messages['ja'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author Siebrand
  */
 $messages['jv'] = array(
 	'coll-desc'                       => '[[Special:Collection|Kolèksi kaca-kaca]], nggawé PDF',
@@ -1177,7 +1196,7 @@ Status saiki: %(progrès)d%%.
 Kaca iki samesthiné kudhu nganyari dhéwé saben sawetara detik.
 Yèn iki ora dumadi, mangga mencèt tombol ''refresh'' ing panjlajah wèb panjenengan.",
 	'coll-pdf_finished_text'          => 'Berkas PDF wis digawé.
-[http://URL Klik ing kéné] kanggo ngundhuh ing komputer panjenengan.',
+[Klik ing kéné] kanggo ngundhuh ing komputer panjenengan.',
 	'coll-notfound_title'             => 'Kolèksi Ora Ditemokaké',
 	'coll-notfound_text'              => 'Ora bisa nemokaké kaca kolèksi.',
 	'coll-return_to_collection'       => '<p>Bali menyang <a href="$1">$2</a></p>',
@@ -1313,6 +1332,7 @@ $messages['lo'] = array(
 
 /** Malayalam (മലയാളം)
  * @author Shijualex
+ * @author Siebrand
  */
 $messages['ml'] = array(
 	'coll-desc'                       => '[[Special:Collection|താളുകളുടെ ശേഖരം]], PDF നിര്‍മ്മിക്കുക',
@@ -1374,7 +1394,8 @@ $messages['ml'] = array(
 	'coll-limit_exceeded_title'       => 'ശേഖരത്തിന്റെ വലിപ്പം വളരെ കൂടുതലാണ്‌',
 	'coll-limit_exceeded_text'        => 'താങ്കളുടെ ശേഖരം വളരെ വലുതാണ്‌. ഇനി കൂടുതല്‍ താളുകള്‍ ചേര്‍ക്കുന്നതിനു സാദ്ധ്യമല്ല.',
 	'coll-generating_pdf_title'       => 'PDF നിര്‍മ്മിച്ചു കൊണ്ടിരിക്കുന്നു',
-	'coll-pdf_finished_text'          => 'PDF പ്രമാണം നിര്‍മ്മിച്ചു കഴിഞ്ഞിരിക്കുന്നു. അതു നിങ്ങളുടെ കമ്പ്യൂട്ടറിലേക്ക് ഇറക്കി വെയ്ക്കാന്‍ [http://URL ഇവിടെ ഞെക്കുക‍].',
+	'coll-pdf_finished_text'          => 'PDF പ്രമാണം നിര്‍മ്മിച്ചു കഴിഞ്ഞിരിക്കുന്നു.
+അതു നിങ്ങളുടെ കമ്പ്യൂട്ടറിലേക്ക് ഇറക്കി വെയ്ക്കാന്‍ [ഇവിടെ ഞെക്കുക‍].',
 	'coll-pdf_not_satisfied'          => 'PDF ഔട്ട് പുട്ടില്‍ നിങ്ങള്‍ തൃപ്തരല്ലേ? [[{{MediaWiki:Coll-helppage}}|ശേഖരത്തെക്കുറിച്ചുള്ള സഹായ താള്‍]] നോക്കി അതു എങ്ങനെയൊക്കെ മെച്ചപ്പെടുത്താമെന്നു നോക്കൂ.',
 	'coll-notfound_title'             => 'ശേഖരം കണ്ടില്ല',
 	'coll-notfound_text'              => 'ശേഖര താള്‍ കണ്ടെത്താന്‍ കഴിഞ്ഞില്ല.',
@@ -1389,6 +1410,7 @@ $messages['ml'] = array(
 /** Marathi (मराठी)
  * @author Kaustubh
  * @author Mahitgar
+ * @author Siebrand
  */
 $messages['mr'] = array(
 	'coll-desc'                       => '[[Special:Collection|पाने गोळा करा]], पीडीएफ तयार करा',
@@ -1574,7 +1596,7 @@ Voortgang: %(progress)d%%.
 Over enige seconden hoort deze pagina automatisch te verversen.
 Als dit niet werkt, klik dan op de knop 'Vernieuwen' in uw browser.",
 	'coll-pdf_finished_text'          => 'Het PDF-bestand is beschikbaar.
-[http://URL Klik hier] om het naar uw computer te downloaden.',
+[Klik hier] om het naar uw computer te downloaden.',
 	'coll-pdf_not_satisfied'          => 'Niet tevreden met de PDF-uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina voor collecties]] staan manieren beschreven om die te verbeteren.',
 	'coll-notfound_title'             => 'Verzameling niet gevonden',
 	'coll-notfound_text'              => 'De verzamelingspagina is niet gevonden.',
@@ -1585,6 +1607,9 @@ Als dit niet werkt, klik dan op de knop 'Vernieuwen' in uw browser.",
 	'coll-book_text'                  => 'U kunt een gedrukt boek bestellen dat uw paginaverzameling bevat door een van de volgende print-on-demand-partners te bezoeken:',
 	'coll-order_from_pp'              => 'Boek bij $1 bestellen',
 	'coll-about_pp'                   => 'Over $1',
+	'coll-invalid_podpartner_title'   => 'Ongeldige print on demand-partner',
+	'coll-invalid_podpartner_msg'     => 'De opgegeven print on demand-partner is ongeldig.
+Neem alstublieft contact op met uw MediaWiki-beheerder.',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -1680,7 +1705,8 @@ $messages['no'] = array(
 Framdrift: %(progress)d% %.
 
 Denne siden burde oppdateres med noen sekunders mellomrom. Om dette ikke fungerer, trykk på oppdateringsknappen i nettleseren din.",
-	'coll-pdf_finished_text'          => 'PDF-filen har blitt skapt. [http://URL Klikk her] for å laste den ned. Om du ikke er fornøyd med resultatet kan du se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for mulige måter å forbedre det på.',
+	'coll-pdf_finished_text'          => 'PDF-filen har blitt skapt.
+[Klikk her] for å laste den ned.',
 	'coll-pdf_not_satisfied'          => 'Ikke fornøyd med PDF-resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for hvordan du kan forbedre det.',
 	'coll-notfound_title'             => 'Samling ikke funnet',
 	'coll-notfound_text'              => 'Kunne ikke finne samlingsside.',
@@ -1691,10 +1717,14 @@ Denne siden burde oppdateres med noen sekunders mellomrom. Om dette ikke fungere
 	'coll-book_text'                  => 'Du kan bestille en trykt bok med artikkelsamlingen din ved å besøke en av følgende trykkerpartnere:',
 	'coll-order_from_pp'              => 'Bestill bok fra $1',
 	'coll-about_pp'                   => 'Om $1',
+	'coll-invalid_podpartner_title'   => 'Ugyldig POD-partner',
+	'coll-invalid_podpartner_msg'     => 'Den oppgitte POD-partneren er ugyldig.
+Kontakt din MediaWiki-administrator.',
 );
 
 /** Occitan (Occitan)
  * @author Cedric31
+ * @author Siebrand
  */
 $messages['oc'] = array(
 	'coll-desc'                       => "[[Special:Collection|Compilar de paginas]], generar de pdf's",
@@ -1778,7 +1808,7 @@ Progression : %(progress)d%%.
 Aquesta pagina se deuriá actualizar automaticament.
 Se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navigaire.",
 	'coll-pdf_finished_text'          => 'Lo fichièr PDF es estat creat.
-[http://URL Clicatz aicí] per lo telecargar sus vòstre ordenador.',
+[Clicatz aicí] per lo telecargar sus vòstre ordenador.',
 	'coll-pdf_not_satisfied'          => 'Pas satisfach de la sortida PDF ? Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda a prepaus de las colleccions]] per las possibilitats de melhorament.',
 	'coll-notfound_title'             => 'Compilacion pas trobada',
 	'coll-notfound_text'              => 'Pòt pas trobar la compilacion.',
@@ -1789,6 +1819,9 @@ Se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navi
 	'coll-book_text'                  => "Podètz comandar un libre imprimit contenent vòstra colleccion d'articles en visitant una demanda d'impression de la part de partenaris :",
 	'coll-order_from_pp'              => 'Comandar lo libre dempuèi $1',
 	'coll-about_pp'                   => 'A prepaus de $1',
+	'coll-invalid_podpartner_title'   => 'Partenari POD incorrècte.',
+	'coll-invalid_podpartner_msg'     => 'Lo partenari POD indicat es incorrècte.
+Contactatz vòstre administrator Mediawiki.',
 );
 
 /** Ossetic (Иронау)
@@ -1806,8 +1839,8 @@ $messages['os'] = array(
  * @author McMonster
  * @author Sp5uhe
  * @author Derbeth
- * @author Wpedzich
  * @author Siebrand
+ * @author Wpedzich
  */
 $messages['pl'] = array(
 	'coll-desc'                       => 'Umożliwia [[Special:Collection|tworzenie kolekcji]] stron i zapisanie ich do pliku w formacie PDF',
@@ -1891,7 +1924,7 @@ Postęp: %(progress)d%%.
 Strona powinna być automatycznie odświeżana co kilka sekund.
 Jeśli tak się nie dzieje, użyj przycisku ''Odśwież'' w przeglądarce.",
 	'coll-pdf_finished_text'          => 'Plik PDF został utworzony.
-[http://URL Kliknij tutaj], by pobrać go na swój komputer.',
+[Kliknij tutaj], by pobrać go na swój komputer.',
 	'coll-pdf_not_satisfied'          => 'Plik PDF nie spełnił Twoich oczekiwań? Zobacz [[{{MediaWiki:Coll-helppage}}|kolekcję opisów]] jak można podwyższyć jego jakość.',
 	'coll-notfound_title'             => 'Nie znaleziono kolekcji',
 	'coll-notfound_text'              => 'Nie udało się znaleźć strony kolekcji.',
@@ -1938,8 +1971,8 @@ $messages['ps'] = array(
  * @author Malafaya
  * @author Lijealso
  * @author 555
- * @author MF-Warburg
  * @author Siebrand
+ * @author MF-Warburg
  */
 $messages['pt'] = array(
 	'coll-desc'                       => '[[{{ns:special}}:Collection|Colecciona páginas]], gera PDFs',
@@ -2023,7 +2056,7 @@ Progresso: %(progress)d%%.
 Esta página deverá refrescar automaticamente repetidamente dentro de alguns segundos.
 Se isto não acontecer, por favor, carregue no botão de refrescar do seu \"browser\".",
 	'coll-pdf_finished_text'          => 'O ficheiro PDF foi gerado.
-[http://URL Clique aqui] para fazer o download.',
+[Clique aqui] para fazer o download.',
 	'coll-pdf_not_satisfied'          => 'Não está satisfeito com o resultado do PDF? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para formas de melhorá-lo.',
 	'coll-notfound_title'             => 'Colecção Não Encontrada',
 	'coll-notfound_text'              => 'Não foi possível encontrar a página da colecção.',
@@ -2038,8 +2071,8 @@ Se isto não acontecer, por favor, carregue no botão de refrescar do seu \"brow
 
 /** Russian (Русский)
  * @author .:Ajvol:.
- * @author Ahonc
  * @author Siebrand
+ * @author Ahonc
  */
 $messages['ru'] = array(
 	'coll-desc'                       => '[[Special:Collection|Собирает коллекции страниц]], создаёт PDF',
@@ -2119,7 +2152,7 @@ $messages['ru'] = array(
 	'coll-generating_pdf_text'        => "'''Пожалуйста, дождитесь создания PDF-файл.'''
 Эта страница должна автоматически обновляться каждые несколько секунд, если этого не происходит, пожалуйста, нажмите кнопку обновления в вашем браузере.",
 	'coll-pdf_finished_text'          => 'PDF-файл был создан.
-[http://URL Нажмите здесь], чтобы скачать его на свой компьютер.',
+[Нажмите здесь], чтобы скачать его на свой компьютер.',
 	'coll-notfound_title'             => 'Коллекция не найдена',
 	'coll-notfound_text'              => 'Невозможно найти страницу коллекции.',
 	'coll-return_to_collection'       => '<p>Назад к <a href="$1">$2</a></p>',
@@ -2214,7 +2247,7 @@ Priebeh: %(progress)d%%.
 
 Táto stránka by sa mala každých niekoľko sekúnd automaticky obnoviť. Ak to nefunguje, stlačte prosím tlačidlo Obnoviť vo vašom prehliadači.",
 	'coll-pdf_finished_text'          => 'PDF súbor bol vytvorený.
-Teraz ho môžete [http://URL stiahnuť].',
+Teraz ho môžete [stiahnuť].',
 	'coll-pdf_not_satisfied'          => 'Nie ste spokojný s PDF výstupom?
 Pozri možnosti jeho vylepšenia na [[{{MediaWiki:Coll-helppage}}|stránke Pomocníka o kolekciách]].',
 	'coll-notfound_title'             => 'Kolekcia nenájdená',
@@ -2243,6 +2276,19 @@ $messages['sr-ec'] = array(
  * @author Pyt
  */
 $messages['stq'] = array(
+	'coll-desc'                => '[[Special:Collection|Siedentouhoopestaalenge]], moak PDFs',
+	'coll-collection'          => 'Touhoopestaalenge',
+	'coll-collections'         => 'Touhoopestaalenge',
+	'coll-portlet_title'       => 'Mien Touhoopestaalenge',
+	'coll-add_page'            => 'Siede bietouföigje',
+	'coll-remove_page'         => 'Siede wächhoalje',
+	'coll-add_category'        => 'Kategorie bietouföigje',
+	'coll-load_collection'     => 'Touhoopestaalenge leede',
+	'coll-show_collection'     => 'Touhoopestaalenge wiese',
+	'coll-help_collections'    => 'Hälpe tou Touhoopestaalengen',
+	'coll-empty'               => 'loos',
+	'coll-page'                => 'Siede',
+	'coll-pages'               => 'Sieden',
 	'coll-download_as_pdf'     => 'As PDF deelleede',
 	'coll-noscript_text'       => '<noscript><h1>JavaScript is nöödich!</h1>
 <strong>Dien Browser unnerstutset neen Javascript of Javascript wuude deaktivierd. Disse Siede däd nit gjucht funktionierje, soloange Javascript nit ferföigboar is.</strong></noscript>',
@@ -2273,6 +2319,13 @@ Moatest du do bietouföigje?',
 	'coll-rename_chapter'      => 'Reek n näien Noome foar dät Kapittel ien',
 	'coll-no_such_category'    => 'Sun Kategorie rakt dät nit',
 	'coll-mwpdf_error_title'   => 'PDF kuud nit moaked wäide',
+	'coll-mwpdf_error_msg'     => 'Bie dät PDF-Moakjen is n Failer aptreeden.',
+	'coll-mwzip_error_title'   => 'Touhoopestaalenge kuud nit moaked wäide',
+	'coll-mwzip_error_msg'     => 'Unner dät Touhoopestaalengsprozess is n Failer aptreeden.',
+	'coll-notitle_title'       => 'Die Tittel fon ju Siede kuud nit bestimd wäide.',
+	'coll-post_failed_title'   => 'POST-Anfroage failsloain',
+	'coll-post_failed_msg'     => 'Ju POST-Anfroage is failsloain.',
+	'coll-enter_title'         => 'Tittel fon ju Touhoopestaalenge:',
 );
 
 /** Swedish (Svenska)
@@ -2359,11 +2412,10 @@ Inga mer sidor kan läggas till.',
 
 Fortgång: %(progress)d%%.
 
-Denna sida borde automatiskt med några sekunders mellanrum, om detta inte funkar, var god tryck på uppdateringsknappen i din webbläsare.",
+Denna sida borde automatiskt med några sekunders mellanrum
+Om detta inte funkar, var god tryck på uppdateringsknappen i din webbläsare.",
 	'coll-pdf_finished_text'          => 'PDF-filen har genererats.
-[http://URL Klicka här] för att ladda ner den till din dator.
-Inte tillfredsställd med PDF produktionen?
-Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra den.',
+[Klicka här] för att ladda ner den till din dator.',
 	'coll-pdf_not_satisfied'          => 'Inte nöjd med PDF-resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för hur du kan förbättra det.',
 	'coll-notfound_title'             => 'Samling inte funnen',
 	'coll-notfound_text'              => 'Kan inte hitta samlings sida',
@@ -2374,6 +2426,9 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter at
 	'coll-book_text'                  => 'Du kan beställa en tryckt bok som rymmer din artikelsamling genom att besöka en av de samarbetspartners som utför behovstryckning:',
 	'coll-order_from_pp'              => 'Beställ bok från $1',
 	'coll-about_pp'                   => 'Om $1',
+	'coll-invalid_podpartner_title'   => 'Ogiltig POD-partner',
+	'coll-invalid_podpartner_msg'     => 'Den erbjudna POD-partnern är ogiltig.
+Var god kontakta din MediaWiki-administratör.',
 );
 
 /** Silesian (ślůnski)
@@ -2564,6 +2619,7 @@ $messages['tr'] = array(
 
 /** Ukrainian (Українська)
  * @author Ahonc
+ * @author Siebrand
  */
 $messages['uk'] = array(
 	'coll-desc'                       => '[[Special:Collection|Збирає колекції сторінок]], створює PDF',
@@ -2647,10 +2703,7 @@ $messages['uk'] = array(
 Ця сторінка повинна автоматично оновлюватися кожні декілька секунд.
 Якщо цього не відбувається, натисніть кнопку оновлення у вашому браузері.",
 	'coll-pdf_finished_text'          => "PDF-файл був створений.
-[http://URL Натисніть тут], щоб завантажити його на свій комп'ютер.
-
-Не задоволені створеним файлом?
-Зверніть увагу на [[{{MediaWiki:Coll-helppage/uk}}|довідкову інформацію про колекції]], щоб дізнатися про можливості покращення.",
+[Натисніть тут], щоб завантажити його на свій комп'ютер.",
 	'coll-notfound_title'             => 'Колекція не знайдена',
 	'coll-notfound_text'              => 'Неможливо знайти сторінку колекції.',
 	'coll-return_to_collection'       => '<p>Назад до <a href="$1">$2</a></p>',
@@ -2664,6 +2717,7 @@ $messages['uk'] = array(
 /** Vietnamese (Tiếng Việt)
  * @author Vinhtantran
  * @author Minh Nguyen
+ * @author Siebrand
  */
 $messages['vi'] = array(
 	'coll-desc'                       => '[[Special:Collection|Tập hợp trang lại]], tạo thành tập tin PDF',
@@ -2747,7 +2801,7 @@ Tiến trình: %(progress)d%%.
 Cứ vài giây trang này sẽ tự động tải lại một lần.
 Nếu nó không hoạt động, xin hãy nhấn nút refresh trên trình duyệt của bạn.",
 	'coll-pdf_finished_text'          => 'Tập tin PDF đã được tạo ra.
-[http://URL Nhấn vào đây] để tải nó về máy tính.',
+[Nhấn vào đây] để tải nó về máy tính.',
 	'coll-pdf_not_satisfied'          => 'Không vừa lòng với ngõ ra PDF? Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp
 về tập hợp]] để có các cách phát triển nó lên.',
 	'coll-notfound_title'             => 'Không tìm thấy tập hợp',
