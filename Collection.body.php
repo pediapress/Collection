@@ -837,6 +837,7 @@ EOS
 		$html = <<<EOS
 <h2><span class="mw-headline">$bookTitle</span></h2>
 <p>$bookText</p>
+<div id="ppList">
 EOS
 		;
 
@@ -858,6 +859,7 @@ EOS
 EOS
 			;
 		}
+		$html .= '</div>';
 		$this->outputBox( $html );
 	}
 
