@@ -483,7 +483,7 @@ Möchtest du sie hinzufügen?',
 	'coll-generating_pdf_title'       => 'PDF erzeugen',
 	'coll-generating_pdf_text'        => "'''Bitte warten, bis die PDF-Datei erzeugt wurde.'''
 
-Fortschritt: %(progress)d%%.
+Fortschritt: '''%(progress)d%%'''.
 
 Diese Seite wird alle paar Sekunden automatisch neu geladen.
 Wenn dies nicht funktioniert, klicke auf die Neuladen-Schaltfläche deines Browers.",
@@ -499,6 +499,8 @@ Wenn dies nicht funktioniert, klicke auf die Neuladen-Schaltfläche deines Browe
 	'coll-book_text'                  => "Du kannst bei den folgenden ''Book-on-Demand''-Partnern eine gedruckte Buchausgabe bestellen:",
 	'coll-order_from_pp'              => 'Bestelle Buch bei $1',
 	'coll-about_pp'                   => 'Über $1',
+	'coll-invalid_podpartner_title'   => 'Ungültiger Book-on-Demand-Partner',
+	'coll-invalid_podpartner_msg'     => 'Die Angaben zum Book-on-Demand-Partner sind fehlerhaft. Bitte kontaktiere den MediaWiki-Administrator.',
 );
 
 /** Greek (Ελληνικά)
