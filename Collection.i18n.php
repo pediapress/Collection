@@ -101,7 +101,7 @@ No more pages can be added.',
 	'coll-generating_pdf_title'       => 'Generating PDF',
 	'coll-generating_pdf_text'        => "'''Please wait while the PDF file is being generated.'''
 
-Progress: %(progress)d%%.
+Progress: '''%(progress)d%%'''.
 
 This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.",
