@@ -135,16 +135,39 @@ $messages['krl'] = array(
  * @author SPQRobin
  */
 $messages['af'] = array(
-	'coll-empty'    => 'leeg',
-	'coll-page'     => 'bladsy',
-	'coll-pages'    => 'bladsye',
-	'coll-remove'   => 'Skrap',
-	'coll-title'    => 'Titel:',
-	'coll-subtitle' => 'Subtitel:',
-	'coll-contents' => 'Inhoud',
-	'coll-yes'      => 'Ja',
-	'coll-no'       => 'Nee',
-	'coll-cancel'   => 'Kanselleer',
+	'coll-collection'                 => 'Versameling',
+	'coll-collections'                => 'Versamelings',
+	'coll-portlet_title'              => 'My versameling',
+	'coll-add_page'                   => 'Voeg bladsy by',
+	'coll-remove_page'                => 'Verwyder bladsy',
+	'coll-add_category'               => 'Voeg kategorie by',
+	'coll-load_collection'            => 'Laai versameling',
+	'coll-show_collection'            => 'Wys versameling',
+	'coll-help_collections'           => 'Versameling hulp',
+	'coll-empty'                      => 'leeg',
+	'coll-page'                       => 'bladsy',
+	'coll-pages'                      => 'bladsye',
+	'coll-my_collection'              => 'My Versameling',
+	'coll-remove'                     => 'Skrap',
+	'coll-move_to_top'                => 'Skuif tot bo',
+	'coll-move_up'                    => 'Skuif op',
+	'coll-move_down'                  => 'Skuif af',
+	'coll-move_to_bottom'             => 'Skuif tot onder',
+	'coll-title'                      => 'Titel:',
+	'coll-subtitle'                   => 'Subtitel:',
+	'coll-contents'                   => 'Inhoud',
+	'coll-rename'                     => 'Hernoem',
+	'coll-new_chapter'                => 'Voer naam vir nuwe hoofstuk in',
+	'coll-rename_chapter'             => 'Voer nuwe naam vir hoofstuk in',
+	'coll-no_such_category'           => "Geen so 'n kategorie",
+	'coll-empty_collection'           => 'Lëe versameling',
+	'coll-save_collection_title'      => 'Stoor versameling',
+	'coll-personal_collection_label'  => 'Persoonlike versameling:',
+	'coll-community_collection_label' => 'Gemeenskap versameling:',
+	'coll-save_collection'            => 'Stoor versameling',
+	'coll-yes'                        => 'Ja',
+	'coll-no'                         => 'Nee',
+	'coll-cancel'                     => 'Kanselleer',
 );
 
 /** Arabic (العربية)
@@ -584,7 +607,8 @@ $messages['eo'] = array(
 Neniom pluaj paĝoj ne povas esti aldonitaj.',
 	'coll-generating_pdf_title'       => 'Generante PDF',
 	'coll-generating_pdf_text'        => "'''Bonvolu atenti dum la PDF-dosiero generiĝas.'''
-Plenumita: %(progress)d%%.
+
+Plenumita: '''%(progress)d%%'''.
 
 Ĉi paĝo verŝajne aŭtomate refreŝiĝos po kelkaj sekundoj.
 Se ĉi tiel ne funkcias, bonvolu klaki la refreŝigan butonon de via retumilo.",
@@ -696,7 +720,7 @@ Aucune page ne peut être ajoutée.',
 	'coll-generating_pdf_title'       => 'Création du PDF',
 	'coll-generating_pdf_text'        => "'''Veuillez attendre pendant la création du PDF.'''
 
-Progression : %(progress)d%%.
+Progression : '''%(progress)d%%'''.
 
 Cette page devrait automatiquement s'actualiser dans quelques secondes.
 Si tel n’est pas le cas, veuillez appuyer sur le bouton d'actualisation de votre navigateur.",
@@ -797,7 +821,7 @@ Non se poden engadir máis páxinas.',
 	'coll-generating_pdf_title'       => 'Xerando PDF',
 	'coll-generating_pdf_text'        => "'''Por favor agarde mentres o arquivo PDF se está xerando.'''
 
-Progreso: %(progress)d%%.
+Progreso: '''%(progress)d%%'''.
 
 Esta páxina será refrescada automaticamente cada poucos segundos.
 Se non vai, por favor prema no botón \"refrescar\" do seu navegador.",
@@ -1044,7 +1068,6 @@ $messages['is'] = array(
 /** Japanese (日本語)
  * @author JtFuruhata
  * @author Siebrand
- * @author Iwai.masaharu
  */
 $messages['ja'] = array(
 	'coll-desc'                       => 'PDFファイルを作成するための[[Special:Collection|ページコレクション]]',
@@ -1123,7 +1146,7 @@ $messages['ja'] = array(
 	'coll-generating_pdf_title'       => 'PDFファイルの生成',
 	'coll-generating_pdf_text'        => "'''PDFファイルの作成が完了するまで、今しばらくお待ちください。'''
 
-プロセス: %(progress)d%%
+プロセス: '''%(progress)d%%'''
 
 このページは数秒ごとに自動的に更新されます。もしも自動更新されない場合は、ブラウザの更新ボタンを押してください。",
 	'coll-pdf_finished_text'          => 'PDFファイルの作成に成功しました。
@@ -1193,7 +1216,7 @@ Ora bisa nambah kaca-kaca liya manèh.',
 	'coll-generating_pdf_title'       => 'Nggawé PDF',
 	'coll-generating_pdf_text'        => "'''Tulung nunggu sadélok sementara berkas PDF lagi digawé.'''
 
-Status saiki: %(progrès)d%%.
+Status saiki: '''%(progrès)d%%'''.
 
 Kaca iki samesthiné kudhu nganyari dhéwé saben sawetara detik.
 Yèn iki ora dumadi, mangga mencèt tombol ''refresh'' ing panjlajah wèb panjenengan.",
@@ -1388,8 +1411,11 @@ $messages['ml'] = array(
 	'coll-community_collection_label' => 'സമൂഹ ശേഖരം:',
 	'coll-save_collection'            => 'ശേഖരം സേവ് ചെയ്യുക',
 	'coll-overwrite_title'            => 'താള്‍ നിലവിലുണ്ട്. അതിനെ ഓവര്‍റൈറ്റ് ചെയ്യട്ടെ?',
+	'coll-overwrite_text'             => '$1 എന്ന പേരില്‍ ഒരു താള്‍ നിലവിലുണ്ട്. താങ്കളുടെ ശേഖരം ആ താളിനു ബദലാക്കണോ?',
 	'coll-yes'                        => 'ശരി',
 	'coll-no'                         => 'ഇല്ല',
+	'coll-load_overwrite_text'        => 'താങ്കളുടെ ശേഖരത്തില്‍ ഇപ്പോള്‍ തന്നെ കുറച്ചു താളുകള്‍ ഉണ്ട്.
+താങ്കള്‍ക്കു നിലവിലുള്ള ശേഖരം മാറ്റണോ, പുതിയ താളുകള്‍ നിലവിലുള്ളതില്‍ ചേര്‍ക്കണോ, അതോ ഈ പ്രക്രിയ നിരാകരിക്കണോ?',
 	'coll-overwrite'                  => 'ഓവര്‍റൈറ്റ്',
 	'coll-append'                     => 'കൂട്ടിചേര്‍ക്കുക',
 	'coll-cancel'                     => 'റദ്ദാക്കുക',
@@ -1491,7 +1517,7 @@ $messages['mr'] = array(
 	'coll-generating_pdf_title'       => 'पीडीएफ तयार करीत आहे',
 	'coll-generating_pdf_text'        => "'''कॄपया पीडीएफ तयार होईपर्यंत वाट पहा.'''
 
-प्रगती: %(progress)d%%.
+प्रगती: '''%(progress)d%%'''.
 
 हे पान आपोआप काही सेकंदांनंतर ताजेतवाने व्हायला पाहिजे. 
 जर तसे झाले नाही, तर कृपया आपल्या ब्राउझरला ताजेतवाने (refresh) करा.",
@@ -1593,7 +1619,7 @@ U kunt geen pagina's meer toevoegen.",
 	'coll-generating_pdf_title'       => 'Bezig met maken van PDF',
 	'coll-generating_pdf_text'        => "'''Wacht alstublieft. Het PDF-bestand wordt gemaakt.'''
 
-Voortgang: %(progress)d%%.
+Voortgang: '''%(progress)d%%'''.
 
 Over enige seconden hoort deze pagina automatisch te verversen.
 Als dit niet werkt, klik dan op de knop 'Vernieuwen' in uw browser.",
@@ -1704,7 +1730,7 @@ $messages['no'] = array(
 	'coll-generating_pdf_title'       => 'Genererer PDF',
 	'coll-generating_pdf_text'        => "'''Vent mens PDF-filen genereres.'''
 
-Framdrift: %(progress)d% %.
+Framdrift: '''%(progress)d% %'''.
 
 Denne siden burde oppdateres med noen sekunders mellomrom. Om dette ikke fungerer, trykk på oppdateringsknappen i nettleseren din.",
 	'coll-pdf_finished_text'          => 'PDF-filen har blitt skapt.
@@ -1805,7 +1831,7 @@ Cap de pagina pòt pas èsser ajustada.',
 	'coll-generating_pdf_title'       => 'Creacion del PDF',
 	'coll-generating_pdf_text'        => "'''Esperatz pendent la creacion del PDF.'''
 
-Progression : %(progress)d%%.
+Progression : '''%(progress)d%%'''.
 
 Aquesta pagina se deuriá actualizar automaticament.
 Se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navigaire.",
@@ -1921,7 +1947,7 @@ Nie można dodać więcej stron.',
 	'coll-generating_pdf_title'       => 'Tworzenie PDF',
 	'coll-generating_pdf_text'        => "'''Poczekaj, plik PDF jest właśnie tworzony.'''
 
-Postęp: %(progress)d%%.
+Postęp: '''%(progress)d%%'''.
 
 Strona powinna być automatycznie odświeżana co kilka sekund.
 Jeśli tak się nie dzieje, użyj przycisku ''Odśwież'' w przeglądarce.",
@@ -2053,9 +2079,9 @@ Não poderão ser adicionadas mais páginas.',
 	'coll-generating_pdf_title'       => 'A criar PDF',
 	'coll-generating_pdf_text'        => "'''Por favor, aguarde enquanto o ficheiro PDF está a ser gerado.'''
 
-Progresso: %(progress)d%%.
+Progresso: '''%(progress)d%%'''.
 
-Esta página deverá refrescar automaticamente repetidamente dentro de alguns segundos.
+Esta página deverá refrescar automaticamente e repetidamente dentro de alguns segundos.
 Se isto não acontecer, por favor, carregue no botão de refrescar do seu \"browser\".",
 	'coll-pdf_finished_text'          => 'O ficheiro PDF foi gerado.
 [Clique aqui] para fazer o download.',
@@ -2245,7 +2271,7 @@ Nie je možné pridať ďalšie stránky.',
 	'coll-generating_pdf_title'       => 'Vytvára sa PDF',
 	'coll-generating_pdf_text'        => "'''Prosím čakajte, kým sa vytvára PDF súbor.'''
 
-Priebeh: %(progress)d%%.
+Priebeh: '''%(progress)d%%'''.
 
 Táto stránka by sa mala každých niekoľko sekúnd automaticky obnoviť. Ak to nefunguje, stlačte prosím tlačidlo Obnoviť vo vašom prehliadači.",
 	'coll-pdf_finished_text'          => 'PDF súbor bol vytvorený.
@@ -2261,6 +2287,9 @@ Pozri možnosti jeho vylepšenia na [[{{MediaWiki:Coll-helppage}}|stránke Pomoc
 	'coll-book_text'                  => 'Môžete si objednať tlačenú knihu obsahujúcu vašu zbierku článkov. Navštívte jedného z nasledovných partnerov, ktorí tobia tlač na vyžiadanie:',
 	'coll-order_from_pp'              => 'Objednať knihu od $1',
 	'coll-about_pp'                   => 'O $1',
+	'coll-invalid_podpartner_title'   => 'Neplatný POD partner',
+	'coll-invalid_podpartner_msg'     => 'Zadaný POD partner je neplatný.
+Prosím, kontaktujte svojho správcu MediaWiki.',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
@@ -2333,8 +2362,8 @@ Moatest du do bietouföigje?',
 /** Swedish (Svenska)
  * @author M.M.S.
  * @author Sannab
- * @author H92
  * @author Siebrand
+ * @author H92
  */
 $messages['sv'] = array(
 	'coll-desc'                       => '[[Special:Collection|Samla sidor]], generera PDF filer',
@@ -2412,7 +2441,7 @@ Inga mer sidor kan läggas till.',
 	'coll-generating_pdf_title'       => 'Genererar PDF',
 	'coll-generating_pdf_text'        => "'''Var god vänta medan PDF-filen genereras.'''
 
-Fortgång: %(progress)d%%.
+Fortgång: '''%(progress)d%%'''.
 
 Denna sida borde automatiskt med några sekunders mellanrum
 Om detta inte funkar, var god tryck på uppdateringsknappen i din webbläsare.",
@@ -2700,7 +2729,7 @@ $messages['uk'] = array(
 	'coll-generating_pdf_title'       => 'Створення PDF',
 	'coll-generating_pdf_text'        => "'''Будь ласка, зачекайте, поки створиться PDF-файл.'''
 
-Прогрес: %(progress)d%%.
+Прогрес: '''%(progress)d%%'''.
 
 Ця сторінка повинна автоматично оновлюватися кожні декілька секунд.
 Якщо цього не відбувається, натисніть кнопку оновлення у вашому браузері.",
@@ -2798,7 +2827,7 @@ Không thể thêm trang được nữa.',
 	'coll-generating_pdf_title'       => 'Tạo ra PDF',
 	'coll-generating_pdf_text'        => "'''Xin hãy chờ trong khi tập tin PDF đang được tạo ra.'''
 
-Tiến trình: %(progress)d%%.
+Tiến trình: '''%(progress)d%%'''.
 
 Cứ vài giây trang này sẽ tự động tải lại một lần.
 Nếu nó không hoạt động, xin hãy nhấn nút refresh trên trình duyệt của bạn.",
