@@ -511,7 +511,7 @@ Fortschritt: '''%(progress)d%%'''.
 Diese Seite wird alle paar Sekunden automatisch neu geladen.
 Wenn dies nicht funktioniert, klicke auf die Neuladen-Schaltfläche deines Browers.",
 	'coll-pdf_finished_text'          => "Deine PDF-Datei wurde erzeugt.
-[http://URL Klicke hier] zum Herunterladen auf deinen Computer.",
+[Klicke hier] zum Herunterladen auf deinen Computer.",
     'coll-pdf_not_satisfied'              => "Unzufrieden mit der PDF-Ausgabe? Siehe [[{{MediaWiki:Coll-helppage}}|die Hilfeseiten über Zusammenstellungen]] für Verbesserungsmöglichkeiten.",
 	'coll-notfound_title'             => 'Zusammenstellung nicht gefunden',
 	'coll-notfound_text'              => 'Deine Zusammenstellung konnte nicht gefunden werden.',
