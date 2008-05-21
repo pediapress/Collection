@@ -2471,6 +2471,7 @@ $messages['szl'] = array(
 
 /** Telugu (తెలుగు)
  * @author Veeven
+ * @author వైజాసత్య
  * @author Siebrand
  */
 $messages['te'] = array(
@@ -2501,10 +2502,12 @@ $messages['te'] = array(
 	'coll-title'                      => 'శీర్షిక:',
 	'coll-subtitle'                   => 'ఉపశీర్షిక:',
 	'coll-contents'                   => 'విషయాలు',
+	'coll-create_chapter'             => 'కొత్త అధ్యాయాన్ని ప్రారంభించు',
 	'coll-sort_alphabetically'        => 'పేజీలను అక్షరక్రమంలో అమర్చు',
 	'coll-clear_collection'           => 'సేకరణని తుడిచివేయి',
 	'coll-clear_confirm'              => 'మీరు నిజంగానే మీ సేకరణని తుడిచివేయాలనుకుంటున్నారా?',
 	'coll-rename'                     => 'పేరుమార్చు',
+	'coll-new_chapter'                => 'కొత్త అధ్యాయానికి పేరు సూచించండి',
 	'coll-no_such_category'           => 'అటువంటి వర్గం లేదు',
 	'coll-mwpdf_error_title'          => 'PDFని తయారుచేయలేకపోయాం',
 	'coll-mwpdf_error_msg'            => 'PDF తయారీలో ఏదో పొరపాటు జరిగింది.',
@@ -2527,6 +2530,7 @@ $messages['te'] = array(
 దాని స్ధానంలో మీ సేకరణని ఉంచాలా?',
 	'coll-yes'                        => 'అవును',
 	'coll-no'                         => 'కాదు',
+	'coll-append'                     => 'జతచేయి',
 	'coll-cancel'                     => 'రద్దు',
 	'coll-limit_exceeded_title'       => 'సేకరణ మరీ పెద్దగా ఉంది',
 	'coll-limit_exceeded_text'        => 'మీ పేజీ సేకరణ చాలా పెద్దగా ఉంది.
