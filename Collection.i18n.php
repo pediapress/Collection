@@ -2098,7 +2098,7 @@ Se isto não acontecer, por favor, carregue no botão de refrescar do seu \"brow
 );
 
 /** Russian (Русский)
- * @author .:Ajvol:.
+ * @author Александр Сигачёв
  * @author Siebrand
  * @author Ahonc
  */
