@@ -130,6 +130,13 @@ $messages['krl'] = array(
 	'coll-cancel' => 'Keskevytä',
 );
 
+/** Eastern Mari (Олык Марий йылме)
+ * @author Сай
+ */
+$messages['mhr'] = array(
+	'coll-cancel' => 'Чарташ',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author SPQRobin
@@ -172,6 +179,7 @@ $messages['af'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author OsamaK
  * @author Siebrand
  */
 $messages['ar'] = array(
@@ -259,6 +267,8 @@ $messages['ar'] = array(
 	'coll-notfound_text'              => 'لم يمكن العثور على صفحة المجموعة.',
 	'coll-return_to_collection'       => '<p>ارجع إلى <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'الصفحات التالية لم يمكن عرضها وتمت إزالتها من ملف PDF:',
+	'coll-book_title'                 => 'طلب كتاب مطبوع',
+	'coll-order_from_pp'              => 'طلب كتاب من $1',
 	'coll-about_pp'                   => 'حول $1',
 );
 
@@ -430,18 +440,19 @@ $messages['da'] = array(
 
 /** German (Deutsch)
  * @author Raimond Spekking
+ * @author VolkerHaas
  */
 $messages['de'] = array(
-	'coll-desc'                       => '[[Special:Collection|Seitenzusammenstellung]], erzeuge PDFs',
-	'coll-collection'                 => 'Zusammenstellung',
-	'coll-collections'                => 'Zusammenstellung',
-	'coll-portlet_title'              => 'Meine Zusammenstellung',
+	'coll-desc'                       => '[[Special:Collection|Sammle Seiten]], erzeuge PDFs',
+	'coll-collection'                 => 'Kollektion',
+	'coll-collections'                => 'Kollektionen',
+	'coll-portlet_title'              => 'Meine Kollektion',
 	'coll-add_page'                   => 'Seite hinzufügen',
 	'coll-remove_page'                => 'Seite entfernen',
 	'coll-add_category'               => 'Kategorie hinzufügen',
-	'coll-load_collection'            => 'Zusammenstellung laden',
-	'coll-show_collection'            => 'Zusammenstellung zeigen',
-	'coll-help_collections'           => 'Hilfe zu Zusammenstellungen',
+	'coll-load_collection'            => 'Kollektion laden',
+	'coll-show_collection'            => 'Kollektion zeigen',
+	'coll-help_collections'           => 'Hilfe zu Kollektionen',
 	'coll-empty'                      => 'leer',
 	'coll-page'                       => 'Seite',
 	'coll-pages'                      => 'Seiten',
@@ -449,15 +460,15 @@ $messages['de'] = array(
 	'coll-noscript_text'              => '<noscript><h1>JavaScript wird benötigt!</h1>
 <strong>Dein Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
 Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong></noscript>',
-	'coll-intro_text'                 => 'Du kannst Seiten zusammenstellen, ein PDF darauf erzeugen und herunterladen sowie Zusammenstellungen für eine später Verwendung zwischenspeichern und mit anderen Benutzern teilen.
+	'coll-intro_text'                 => 'Du kannst Kollektionen von Seiten erstellen, daraus ein PDF erzeugen und herunterladen. Weiterhin können Kollektionen für die spätere Verwendung zwischengespeichert und mit anderen Benutzern geteilt werden.
 
-Siehe die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Zusammenstellungen]] für weitere Informationen.',
-	'coll-helppage'                   => 'Help:Zusammenstellungen',
-	'coll-pdftoobigcat'               => 'Die Kategorie enthält mehr als %PARAM% Seiten, nur die ersten %PARAM% Seiten werden der Zusammenstellungen hinzugefügt.
+Siehe auch die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Kollektionen]] für weitere Informationen.',
+	'coll-helppage'                   => 'Help:Kollektionen',
+	'coll-pdftoobigcat'               => 'Die Kategorie enthält mehr als %PARAM% Seiten, nur die ersten %PARAM% Seiten werden der Kollektion hinzugefügt.
 Möchtest du sie hinzufügen?',
-	'coll-my_collection'              => 'Meine Zusammenstellung',
-	'coll-download_title'             => 'Zusammenstellung als PDF herunterladen',
-	'coll-download_text'              => 'Um eine automatisch erstelle PDF-Datei deiner Zusammenstellung herunterzuladen, klicke auf die Schaltfläche.',
+	'coll-my_collection'              => 'Meine Kollektion',
+	'coll-download_title'             => 'Kollektion als PDF herunterladen',
+	'coll-download_text'              => 'Um eine automatisch erstellte PDF-Datei deiner Kollektion herunterzuladen, klicke auf die Schaltfläche.',
 	'coll-download_pdf'               => 'PDF herunterladen',
 	'coll-remove'                     => 'Entfernen',
 	'coll-move_to_top'                => 'an den Anfang',
@@ -469,40 +480,39 @@ Möchtest du sie hinzufügen?',
 	'coll-contents'                   => 'Inhalt',
 	'coll-create_chapter'             => 'Neues Kapitel erzeugen',
 	'coll-sort_alphabetically'        => 'Seiten alphabetisch sortieren',
-	'coll-clear_collection'           => 'Zusammenstellung löschen',
-	'coll-clear_confirm'              => 'Möchtest du deine Zusammenstellung wirklich löschen?',
+	'coll-clear_collection'           => 'Kollektion löschen',
+	'coll-clear_confirm'              => 'Möchtest du deine Kollektion wirklich löschen?',
 	'coll-rename'                     => 'Umbenennen',
 	'coll-new_chapter'                => 'Gib einen Namen für ein neues Kapitel ein',
 	'coll-rename_chapter'             => 'Gib einen neuen Namen für das Kapitel ein',
 	'coll-no_such_category'           => 'Kategorie nicht vorhanden',
 	'coll-mwpdf_error_title'          => 'PDF konnte nicht erstellt werden',
 	'coll-mwpdf_error_msg'            => 'Während der PDF-Erstellung ist ein Fehler aufgetreten.',
-	'coll-mwzip_error_title'          => 'Zusammenstellung konnte nicht erzeugt werden',
-	'coll-mwzip_error_msg'            => 'Während des Zusammenstellung-Prozesses ist ein Fehler aufgetreten.',
-	'coll-notitle_title'              => 'Seitentitel konnte nicht geholt werden',
+	'coll-mwzip_error_title'          => 'Kollektion konnte nicht erzeugt werden',
+	'coll-mwzip_error_msg'            => 'Beim Erstellen der Kollektion ist ein Fehler aufgetreten.',
 	'coll-notitle_title'              => 'Der Titel der Seite konnte nicht bestimmt werden.',
 	'coll-post_failed_title'          => 'POST-Anfrage fehlgeschlagen',
 	'coll-post_failed_msg'            => 'Die POST-Anfrage ist fehlgeschlagen.',
-	'coll-enter_title'                => 'Titel der Zusammenstellung:',
+	'coll-enter_title'                => 'Titel der Kollektion eingeben:',
 	'coll-error_reponse'              => 'Fehlermeldung vom Server',
-	'coll-empty_collection'           => 'Leere Zusammenstellung',
+	'coll-empty_collection'           => 'Leere Kollektion',
 	'coll-revision'                   => 'Version: %PARAM%',
-	'coll-save_collection_title'      => 'Zusammenstellung speichern',
-	'coll-save_collection_text'       => 'Um diese Zusammenstellung zu speichern, wähle einen Typ und gib einen Titel ein:',
-	'coll-login_to_save'              => 'Wenn du Zusammenstellungen speichern möchtest, <a href="$1">melde dich bitte an oder erstelle ein Benutzerkonto</a>.',
-	'coll-personal_collection_label'  => 'Persönliche Zusammenstellung:',
-	'coll-community_collection_label' => 'Community Zusammenstellung:',
-	'coll-save_collection'            => 'Zusammenstellung speichern',
+	'coll-save_collection_title'      => 'Kollektion speichern',
+	'coll-save_collection_text'       => 'Um diese Kollektion zu speichern, wähle einen Typ und gib einen Titel ein:',
+	'coll-login_to_save'              => 'Wenn du Kollektionen speichern möchtest, <a href="$1">melde dich bitte an oder erstelle ein Benutzerkonto</a>.',
+	'coll-personal_collection_label'  => 'Persönliche Kollektion:',
+	'coll-community_collection_label' => 'Community Kollektion:',
+	'coll-save_collection'            => 'Kollektion speichern',
 	'coll-overwrite_title'            => 'Seite vorhanden, überschreiben?',
-	'coll-overwrite_text'             => 'Eine Seite mit dem Namen $1 ist bereits vorhanden. Möchtest du sie durch deine Zusammenstellung ersetzen?',
+	'coll-overwrite_text'             => 'Eine Seite mit dem Namen $1 ist bereits vorhanden. Möchtest du sie durch deine Kollektion ersetzen?',
 	'coll-yes'                        => 'Ja',
 	'coll-no'                         => 'Nein',
-	'coll-load_overwrite_text'        => 'Deine Zusammenstellung enthält bereits Seiten. Möchtest du die aktuelle Zusammenstellung überschreiben, die neuen Seiten anhängen oder abbrechen?',
+	'coll-load_overwrite_text'        => 'Deine Kollektion enthält bereits Seiten. Möchtest du die aktuelle Kollektion überschreiben, die neuen Seiten anhängen oder abbrechen?',
 	'coll-overwrite'                  => 'Überschreiben',
 	'coll-append'                     => 'Anhängen',
 	'coll-cancel'                     => 'Abbrechen',
-	'coll-limit_exceeded_title'       => 'Zusammenstellung zu groß',
-	'coll-limit_exceeded_text'        => 'Deine Zusammenstellung ist zu groß. Es können keine Seiten mehr hinzugefügt werden.',
+	'coll-limit_exceeded_title'       => 'Kollektion zu groß',
+	'coll-limit_exceeded_text'        => 'Deine Kollektion ist zu groß. Es können keine Seiten mehr hinzugefügt werden.',
 	'coll-generating_pdf_title'       => 'PDF erzeugen',
 	'coll-generating_pdf_text'        => "'''Bitte warten, bis die PDF-Datei erzeugt wurde.'''
 
@@ -510,20 +520,20 @@ Fortschritt: '''%(progress)d%%'''.
 
 Diese Seite wird alle paar Sekunden automatisch neu geladen.
 Wenn dies nicht funktioniert, klicke auf die Neuladen-Schaltfläche deines Browers.",
-	'coll-pdf_finished_text'          => "Deine PDF-Datei wurde erzeugt.
-[Klicke hier] zum Herunterladen auf deinen Computer.",
-    'coll-pdf_not_satisfied'              => "Unzufrieden mit der PDF-Ausgabe? Siehe [[{{MediaWiki:Coll-helppage}}|die Hilfeseiten über Zusammenstellungen]] für Verbesserungsmöglichkeiten.",
-	'coll-notfound_title'             => 'Zusammenstellung nicht gefunden',
-	'coll-notfound_text'              => 'Deine Zusammenstellung konnte nicht gefunden werden.',
+	'coll-pdf_finished_text'          => 'Deine PDF-Datei wurde erzeugt.
+[Klicke hier] zum Herunterladen auf deinen Computer.',
+	'coll-pdf_not_satisfied'          => 'Unzufrieden mit der PDF-Ausgabe? Siehe [[{{MediaWiki:Coll-helppage}}|die Hilfeseiten über Kollektionen]] für Verbesserungsmöglichkeiten.',
+	'coll-notfound_title'             => 'Kollektion nicht gefunden',
+	'coll-notfound_text'              => 'Deine Kollektion konnte nicht gefunden werden.',
 	'coll-return_to_collection'       => '<p>Zurück zu <a href="$1">$2</a></p>',
-	'coll-pages_removed'              => 'Die folgenden Seiten konnten nur gerendert werden und werden aus der PDF-Datei entfernt: %(articles)s',
+	'coll-pages_removed'              => 'Die folgenden Seiten konnten nicht gerendert werden und werden aus der PDF-Datei entfernt: %(articles)s',
 	'coll-pdf_error_text'             => 'Es gab einen Fehler bei der Erzeugung der PDF-Datei.',
 	'coll-book_title'                 => 'Druckausgabe bestellen',
-	'coll-book_text'                  => "Du kannst bei den folgenden ''Book-on-Demand''-Partnern eine gedruckte Buchausgabe bestellen:",
+	'coll-book_text'                  => "Du kannst bei den folgenden ''Print-on-Demand''-Partnern eine gedruckte Buchausgabe bestellen:",
 	'coll-order_from_pp'              => 'Bestelle Buch bei $1',
 	'coll-about_pp'                   => 'Über $1',
-	'coll-invalid_podpartner_title'   => 'Ungültiger Book-on-Demand-Partner',
-	'coll-invalid_podpartner_msg'     => 'Die Angaben zum Book-on-Demand-Partner sind fehlerhaft. Bitte kontaktiere den MediaWiki-Administrator.',
+	'coll-invalid_podpartner_title'   => 'Ungültiger Print-on-Demand-Partner',
+	'coll-invalid_podpartner_msg'     => 'Die Angaben zum Print-on-Demand-Partner sind fehlerhaft. Bitte kontaktiere den MediaWiki-Administrator.',
 );
 
 /** Greek (Ελληνικά)
@@ -544,24 +554,24 @@ $messages['el'] = array(
 
 /** Esperanto (Esperanto)
  * @author Yekrats
- * @author Amikeco
  * @author Siebrand
+ * @author Amikeco
  */
 $messages['eo'] = array(
 	'coll-desc'                       => '[[Special:Collection|Kolekto-paĝoj]], generi PDF-ojn',
 	'coll-collection'                 => 'Kolekto',
 	'coll-collections'                => 'Kolektoj',
 	'coll-portlet_title'              => 'Mia kolekto',
-	'coll-add_page'                   => 'Aldonu paĝon',
-	'coll-remove_page'                => 'Forigu paĝon',
-	'coll-add_category'               => 'Aldonu kategorion',
-	'coll-load_collection'            => 'Ŝarĝu kolekton',
-	'coll-show_collection'            => 'Montru kolekton',
+	'coll-add_page'                   => 'Aldoni paĝon',
+	'coll-remove_page'                => 'Forigi paĝon',
+	'coll-add_category'               => 'Aldoni kategorion',
+	'coll-load_collection'            => 'Alŝuti kolekton',
+	'coll-show_collection'            => 'Montri kolekton',
 	'coll-help_collections'           => 'Helpo pri kolektoj',
 	'coll-empty'                      => 'malplena',
 	'coll-page'                       => 'paĝo',
 	'coll-pages'                      => 'paĝoj',
-	'coll-download_as_pdf'            => 'Alŝutu kiel PDF',
+	'coll-download_as_pdf'            => 'Alŝuti kiel PDF',
 	'coll-helppage'                   => 'Helpo:Kolektoj',
 	'coll-my_collection'              => 'Mia kolekto',
 	'coll-download_title'             => 'Alŝutu kolekton kiel PDF-on',
@@ -569,18 +579,18 @@ $messages['eo'] = array(
 	'coll-remove'                     => 'Forigi',
 	'coll-move_to_top'                => 'Movi superen',
 	'coll-move_up'                    => 'Movi supren',
-	'coll-move_down'                  => 'Movu suben',
-	'coll-move_to_bottom'             => 'Movu malsuperen',
+	'coll-move_down'                  => 'Movi suben',
+	'coll-move_to_bottom'             => 'Movi malsuperen',
 	'coll-title'                      => 'Titolo:',
 	'coll-subtitle'                   => 'Subtitolo:',
 	'coll-contents'                   => 'Enhavaĵoj',
 	'coll-create_chapter'             => 'Kreu novan ĉapitron',
-	'coll-sort_alphabetically'        => 'Ordigu paĝojn laŭ alfabeto',
+	'coll-sort_alphabetically'        => 'Ordigi paĝojn laŭ alfabeto',
 	'coll-clear_collection'           => 'Forviŝi kolekton',
 	'coll-clear_confirm'              => 'Ĉu vi ja volas forviŝi vian kolekton?',
 	'coll-rename'                     => 'Alinomigi',
-	'coll-new_chapter'                => 'Enigu nomon por nova ĉapitro',
-	'coll-rename_chapter'             => 'Enigu novan nomon por ĉapitro',
+	'coll-new_chapter'                => 'Enigi nomon por nova ĉapitro',
+	'coll-rename_chapter'             => 'Enigi novan nomon por ĉapitro',
 	'coll-no_such_category'           => 'Nenia kategorio',
 	'coll-mwpdf_error_title'          => 'Ne eblis generi PDF-on',
 	'coll-mwpdf_error_msg'            => 'Eraro okazis dum PDF-generado.',
@@ -600,7 +610,7 @@ $messages['eo'] = array(
 	'coll-yes'                        => 'Jes',
 	'coll-no'                         => 'Ne',
 	'coll-overwrite'                  => 'Anstataŭigu',
-	'coll-append'                     => 'Aldonu',
+	'coll-append'                     => 'Aldoni',
 	'coll-cancel'                     => 'Nuligi',
 	'coll-limit_exceeded_title'       => 'Kolekto Tro Granda',
 	'coll-limit_exceeded_text'        => 'Via paĝa kolekto estas tro granda.
@@ -617,7 +627,7 @@ Se ĉi tiel ne funkcias, bonvolu klaki la refreŝigan butonon de via retumilo.",
 	'coll-return_to_collection'       => '<p>Reiru al <a href="$1">$2</a></p>',
 	'coll-pdf_error_text'             => 'Eraro okazis dum generado de la PDF-dosiero.',
 	'coll-book_title'                 => 'Mendu Eldonitan Libron',
-	'coll-order_from_pp'              => 'Mendu libron de $1',
+	'coll-order_from_pp'              => 'Mendi libron de $1',
 	'coll-about_pp'                   => 'Pri $1',
 );
 
@@ -1522,9 +1532,7 @@ $messages['mr'] = array(
 हे पान आपोआप काही सेकंदांनंतर ताजेतवाने व्हायला पाहिजे. 
 जर तसे झाले नाही, तर कृपया आपल्या ब्राउझरला ताजेतवाने (refresh) करा.",
 	'coll-pdf_finished_text'          => 'पीडीएफ संचिका तयार झालेली आहे.
-आपल्या संगणकात ती उतरवून घेण्यासाठी खालील दुव्यावर टिचकी मारा.
-पीडीएफच्या आउटपुट बद्दल समाधानी आहात का?
-नसेल तर ते सुधारण्याच्या शक्यतांबद्दल [[{{MediaWiki:Coll-helppage}}|कलेक्शन बद्दलची मदत]] पहा.',
+आपल्या संगणकात ती उतरवून घेण्यासाठी [इथे टिचकी] मारा.',
 	'coll-pdf_not_satisfied'          => 'पीडीएफ आउटपुट वर संतुष्ट नाही आहात? ते सुधरण्याच्या शक्यतांसाठी [[{{MediaWiki:Coll-helppage}}|कलेक्शन माहिती पृष्ठ]] पहा.',
 	'coll-notfound_title'             => 'कलेक्शन सापडले नाही',
 	'coll-notfound_text'              => 'कलेक्शन पान सापडले नाही.',
@@ -1773,7 +1781,7 @@ $messages['oc'] = array(
 	'coll-pages'                      => 'paginas',
 	'coll-download_as_pdf'            => 'Telecargar en PDF',
 	'coll-noscript_text'              => "<noscript><h1>Javascript es necessari !</h1>
-<strong>Vòstre navigaire supòrta pas Javascript o se l'a desactivat.
+<strong>Vòstre navigador supòrta pas Javascript o se l'a desactivat.
 Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activat.</strong></noscript>",
 	'coll-intro_text'                 => "Podètz collectar de paginas, generar e telecargar de fichièrs PDF dempuèi las colleccions de paginas o de las salvagardas de las dichas colleccions per un usatge ulterior o per las partejar.
 
@@ -1809,7 +1817,7 @@ Las volètz apondre ?',
 	'coll-post_failed_title'          => 'Fracàs de la requèsta POST',
 	'coll-post_failed_msg'            => 'La requèsta POST a pas capitat.',
 	'coll-enter_title'                => 'Picar un títol per la compilacion :',
-	'coll-error_reponse'              => 'Lo serveire a rencontrat una error',
+	'coll-error_reponse'              => 'Lo servidor a rencontrat una error',
 	'coll-empty_collection'           => 'Compilacion voida',
 	'coll-revision'                   => 'Version : %PARAM%',
 	'coll-save_collection_title'      => 'Salvagardar la compilacion',
@@ -1837,7 +1845,7 @@ Cap de pagina pòt pas èsser ajustada.',
 Progression : '''%(progress)d%%'''.
 
 Aquesta pagina se deuriá actualizar automaticament.
-Se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navigaire.",
+Se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navigador.",
 	'coll-pdf_finished_text'          => 'Lo fichièr PDF es estat creat.
 [Clicatz aicí] per lo telecargar sus vòstre ordenador.',
 	'coll-pdf_not_satisfied'          => 'Pas satisfach de la sortida PDF ? Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda a prepaus de las colleccions]] per las possibilitats de melhorament.',
