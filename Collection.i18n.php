@@ -1303,7 +1303,8 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'coll-empty' => 'leddich',
+	'coll-empty'  => 'leddich',
+	'coll-cancel' => 'Ophüre',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
