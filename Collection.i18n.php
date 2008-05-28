@@ -1038,6 +1038,13 @@ $messages['hu'] = array(
 	'coll-no'    => 'Nem',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author Rex
+ */
+$messages['id'] = array(
+	'coll-no' => 'Tidak',
+);
+
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  * @author SPQRobin
@@ -2214,14 +2221,20 @@ $messages['ru'] = array(
 если этого не происходит, пожалуйста, нажмите кнопку обновления в вашем браузере.",
 	'coll-pdf_finished_text'          => 'PDF-файл был создан.
 [Нажмите здесь], чтобы скачать его на свой компьютер.',
+	'coll-pdf_not_satisfied'          => 'Не удовлетворены получившемся результатом?
+На [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]] рассказывается о возможностях улучшить PDF-вывод.',
 	'coll-notfound_title'             => 'Коллекция не найдена',
 	'coll-notfound_text'              => 'Невозможно найти страницу коллекции.',
 	'coll-return_to_collection'       => '<p>Назад к <a href="$1">$2</a></p>',
 	'coll-pages_removed'              => 'Следующие страницы не могут быть обработаны и были удалены из PDF-файла: %(статей)',
+	'coll-pdf_error_text'             => 'Во время создания PDF-файла произошла ошибка.',
 	'coll-book_title'                 => 'Заказать печатную книгу',
 	'coll-book_text'                  => 'Вы можете заказать печатную книгу, содержащую вашу коллекцию страниц, воспользовавшись одним из следующих предложений печати по запросу:',
 	'coll-order_from_pp'              => 'Заказ книги в $1',
 	'coll-about_pp'                   => 'О $1',
+	'coll-invalid_podpartner_title'   => 'Недействительный POD-партнёр',
+	'coll-invalid_podpartner_msg'     => 'Предоставляемый POD-партнёр недействителен.
+Пожалуйста, свяжитесь с вашим администратором MediaWiki.',
 );
 
 /** Slovak (Slovenčina)
