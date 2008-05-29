@@ -1808,7 +1808,7 @@ $messages['oc'] = array(
 	'coll-noscript_text'              => "<h1>Javascript es necessari !</h1>
 <strong>Vòstre navigador supòrta pas Javascript o se l'a desactivat.
 Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activat.</strong>",
-	'coll-intro_text'                 => "Podètz collectar de paginas, generar e telecargar de fichièrs PDF dempuèi las colleccions de paginas o de las salvagardas de las dichas colleccions per un usatge ulterior o per las partejar.
+	'coll-intro_text'                 => "Podètz collectar de paginas, generar e telecargar de fichièrs PDF dempuèi las colleccions de paginas o dels salvaments de las dichas colleccions per un usatge ulterior o per las partejar.
 
 Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entresenhas.",
 	'coll-helppage'                   => 'Ajuda:Collections',
@@ -1845,12 +1845,12 @@ Las volètz apondre ?',
 	'coll-error_reponse'              => 'Lo servidor a rencontrat una error',
 	'coll-empty_collection'           => 'Compilacion voida',
 	'coll-revision'                   => 'Version : %PARAM%',
-	'coll-save_collection_title'      => 'Salvagardar la compilacion',
-	'coll-save_collection_text'       => 'Per salvagardar la compilacion, causissètz un tipe de compilacion e picatz un títol de pagina :',
-	'coll-login_to_save'              => 'Se volètz salvagardar vòstra compilacion, pre de [[Special:Userlogin|vos connectar o vos crear un compte]].',
+	'coll-save_collection_title'      => 'Salvar la compilacion',
+	'coll-save_collection_text'       => 'Per salvar la compilacion, causissètz un tipe de compilacion e picatz un títol de pagina :',
+	'coll-login_to_save'              => 'Se volètz salvar vòstra compilacion, <a href="$1">vos cal vos connectar o vos crear un compte</a>.',
 	'coll-personal_collection_label'  => 'Compilacion personala :',
 	'coll-community_collection_label' => 'Compilacion collectiva :',
-	'coll-save_collection'            => 'Salvagardar la compilacion',
+	'coll-save_collection'            => 'Salvar la compilacion',
 	'coll-overwrite_title'            => "La pagina existís. L'espotir ?",
 	'coll-overwrite_text'             => 'Una pagina amb lo títol [[:$1]] existís ja.
 La volètz remplaçar per vòstra compilacion ?',
