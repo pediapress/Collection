@@ -38,9 +38,9 @@ $messages['en'] = array(
 	'coll-page'                       => 'page',
 	'coll-pages'                      => 'pages',
 	'coll-download_as_pdf'            => 'Download as PDF',
-	'coll-noscript_text'              => '<noscript><h1>JavaScript is Required!</h1>
+	'coll-noscript_text'              => '<h1>JavaScript is Required!</h1>
 <strong>Your browser does not support JavaScript or JavaScript has been turned off.
-This page will not work correctly, unless JavaScript is enabled.</strong></noscript>',
+This page will not work correctly, unless JavaScript is enabled.</strong>',
 	'coll-intro_text'                 => "You can collect pages, generate and download a PDF file from page collections and save page collections for later use or to share them.
 
 See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more information.",
@@ -81,12 +81,12 @@ Do you want to add them?',
 	'coll-revision'                   => 'Revision: %PARAM%',
 	'coll-save_collection_title'      => 'Save collection',
 	'coll-save_collection_text'       => 'To save this collection for later use, choose a collection type and enter a page title:',
-	'coll-login_to_save'              => 'If you want to save collections for later use, please <a href="$1">log in or create an account</a>.',
+	'coll-login_to_save'              => 'If you want to save collections for later use, please [[Special:Userlogin|log in or create an account]].',
 	'coll-personal_collection_label'  => 'Personal collection:',
 	'coll-community_collection_label' => 'Community collection:',
 	'coll-save_collection'            => 'Save Collection',
 	'coll-overwrite_title'            => 'Page exists. Overwrite?',
-	'coll-overwrite_text'             => 'A page with the name $1 already exists.
+	'coll-overwrite_text'             => 'A page with the name [[:$1]] already exists.
 Do you want it to be replaced with your collection?',
 	'coll-yes'                        => 'Yes',
 	'coll-no'                         => 'No',
@@ -111,7 +111,7 @@ If this does not work, please press refresh button of your browser.",
 See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
 	'coll-notfound_title'             => 'Collection not found',
 	'coll-notfound_text'              => 'Could not find collection page.',
-	'coll-return_to_collection'       => '<p>Return to <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Return to [[:$1]]',
 	'coll-pages_removed'              => 'The following pages could not be rendered and were removed from the PDF file: %(articles)s',
 	'coll-pdf_error_text'             => 'There was an error when generating the PDF file.',
 	'coll-book_title'                 => 'Order printed book',
@@ -197,9 +197,9 @@ $messages['ar'] = array(
 	'coll-page'                       => 'صفحة',
 	'coll-pages'                      => 'صفحات',
 	'coll-download_as_pdf'            => 'حمل ك PDF',
-	'coll-noscript_text'              => '<noscript><h1>الجافاسكريبت مطلوب!</h1>
+	'coll-noscript_text'              => '<h1>الجافاسكريبت مطلوب!</h1>
 <strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
-هذه الصفحة لن تعمل بطريقة صحيحة، إلا إذا تم تفعيل الجافاسكريبت.</strong></noscript>',
+هذه الصفحة لن تعمل بطريقة صحيحة، إلا إذا تم تفعيل الجافاسكريبت.</strong>',
 	'coll-intro_text'                 => 'يمكنك جمع الصفحات، توليد وتحميل ملف PDF من مجموعات الصفحة وحفظ مجموعات الصفحة للاستخدام فيما بعد أو لمشاركتها.
 
 انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
@@ -239,12 +239,12 @@ $messages['ar'] = array(
 	'coll-revision'                   => 'النسخة: %PARAM%',
 	'coll-save_collection_title'      => 'حفظ المجموعة',
 	'coll-save_collection_text'       => 'لحفظ هذه المجموعة للاستخدام المستقبلي، اختر نوع مجموعة وأدخل عنوان صفحة:',
-	'coll-login_to_save'              => 'لو كنت تريد حفظ المجموعات من أجل الاستخدام فيما بعد، من فضلك <a href="$1">قم بتسجيل الدخول أو إنشاء حساب</a>.',
+	'coll-login_to_save'              => 'لو كنت تريد حفظ المجموعات من أجل الاستخدام فيما بعد، من فضلك [[Special:Userlogin|قم بتسجيل الدخول أو إنشاء حساب]].',
 	'coll-personal_collection_label'  => 'مجموعة شخصية:',
 	'coll-community_collection_label' => 'مجموعة مجتمع:',
 	'coll-save_collection'            => 'حفظ المجموعة',
 	'coll-overwrite_title'            => 'الصفحة موجودة. كتابة عليها؟',
-	'coll-overwrite_text'             => 'صفحة بنفس الاسم $1 موجودة بالفعل.
+	'coll-overwrite_text'             => 'صفحة بنفس الاسم [[:$1]] موجودة بالفعل.
 هل تريد استبدالها بمجموعتك؟',
 	'coll-yes'                        => 'نعم',
 	'coll-no'                         => 'لا',
@@ -265,7 +265,7 @@ $messages['ar'] = array(
 انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.',
 	'coll-notfound_title'             => 'المجموعة غير موجودة',
 	'coll-notfound_text'              => 'لم يمكن العثور على صفحة المجموعة.',
-	'coll-return_to_collection'       => '<p>ارجع إلى <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'ارجع إلى [[:$1]]',
 	'coll-pages_removed'              => 'الصفحات التالية لم يمكن عرضها وتمت إزالتها من ملف PDF:',
 	'coll-book_title'                 => 'طلب كتاب مطبوع',
 	'coll-order_from_pp'              => 'طلب كتاب من $1',
@@ -284,9 +284,9 @@ $messages['bg'] = array(
 	'coll-page'                  => 'страница',
 	'coll-pages'                 => 'страници',
 	'coll-download_as_pdf'       => 'Изтегляне като PDF',
-	'coll-noscript_text'         => '<noscript><h1>Изисква се Джаваскрипт!</h1>
+	'coll-noscript_text'         => '<h1>Изисква се Джаваскрипт!</h1>
 <strong>Използваният браузър не поддържа Джаваскрипт или поддръжката на Джаваскрипт е изключена.
-Тази страница не може да работи правилно докато Джаваскриптът не бъде активиран.</strong></noscript>',
+Тази страница не може да работи правилно докато Джаваскриптът не бъде активиран.</strong>',
 	'coll-download_pdf'          => 'Изтегляне на PDF',
 	'coll-remove'                => 'Премахване',
 	'coll-move_to_top'           => 'Преместване в началото',
@@ -313,7 +313,7 @@ $messages['bg'] = array(
 	'coll-generating_pdf_title'  => 'Генериране на PDF',
 	'coll-pdf_finished_text'     => 'PDF файлът беше генериран.
 [Щракнете тук] за изтегляне на локалния компютър.',
-	'coll-return_to_collection'  => '<p>Връщане към <a href="$1">$2</a></p>',
+	'coll-return_to_collection'  => 'Връщане към [[:$1]]',
 	'coll-pages_removed'         => 'Следните страници не могат да бъдат обработени и бяха премахнати от PDF файла: %(articles)s',
 	'coll-order_from_pp'         => 'Поръчване на книга от $1',
 	'coll-about_pp'              => 'За $1',
@@ -349,9 +349,9 @@ $messages['cs'] = array(
 	'coll-page'                       => 'stránka',
 	'coll-pages'                      => 'stránky',
 	'coll-download_as_pdf'            => 'Stáhnout jako PDF',
-	'coll-noscript_text'              => '<noscript><h1>Vyžaduje se JavaScript!</h1>
+	'coll-noscript_text'              => '<h1>Vyžaduje se JavaScript!</h1>
 <strong>Váš prohlížeč nepodporuje JavaScript nebo máte JavaScript vypnutý.
-Táto stránka nebude správně fungovat dokud nezapnete JavaScript.</strong></noscript>',
+Táto stránka nebude správně fungovat dokud nezapnete JavaScript.</strong>',
 	'coll-intro_text'                 => 'Můžete vytvářet kolekce stránek, vytvářet a stahovat PDF soubory vytvořené z kolekce stránek a ukládat kolekce stránek pro pozdější využití nebo je sdílet
 
 Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku nápovědy ke kolekcím]].',
@@ -390,12 +390,12 @@ Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku n�
 	'coll-revision'                   => 'Revize: %PARAM%',
 	'coll-save_collection_title'      => 'Uložit kolekci',
 	'coll-save_collection_text'       => 'Tuto kolekci můžete uložit pro pozdější použití pro zadání typu kolekce a názvu stránky:',
-	'coll-login_to_save'              => 'Pokud chcete ukládat kolekce pro pozdější použití, prosím, <a href="$1">přihlaste se nebo si vytvořte účet</a>.',
+	'coll-login_to_save'              => 'Pokud chcete ukládat kolekce pro pozdější použití, prosím, [[Special:Userlogin|přihlaste se nebo si vytvořte účet]].',
 	'coll-personal_collection_label'  => 'Osobní kolekce:',
 	'coll-community_collection_label' => 'Komunitní kolekce:',
 	'coll-save_collection'            => 'Uložit kolekci',
 	'coll-overwrite_title'            => 'Stránka existuje. Přepsat?',
-	'coll-overwrite_text'             => 'Stránka s názvem $1 už existuje.
+	'coll-overwrite_text'             => 'Stránka s názvem [[:$1]] už existuje.
 Chcete ji nahradit svojí kolekcí?',
 	'coll-yes'                        => 'Ano',
 	'coll-no'                         => 'Ne',
@@ -416,7 +416,7 @@ nejste spokojeni s PDF výstupem?
 Podívejte se na možnosti jeho vylepšení na [[{{MediaWiki:Coll-helppage}}|stránku Pomocníka ke kolekcím]].',
 	'coll-notfound_title'             => 'Kolekce nenalezena',
 	'coll-notfound_text'              => 'Nebylo možné najít stránku kolekce',
-	'coll-return_to_collection'       => '<p>Vrátit se na <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Vrátit se na [[:$1]]',
 	'coll-pages_removed'              => 'Následující stránky nebylo možné vykreslit a byly z PDF souboru odstraněny:',
 	'coll-book_title'                 => 'Objednat tisknutou knihu',
 	'coll-book_text'                  => 'Můžete se objednat tisknutou knihu obsahující vaši kolekci stránek. Navštivte jednoho z následujících partnerů, kteří Vám ji vytisknou na požádání:',
@@ -457,9 +457,9 @@ $messages['de'] = array(
 	'coll-page'                       => 'Seite',
 	'coll-pages'                      => 'Seiten',
 	'coll-download_as_pdf'            => 'Als PDF herunterladen',
-	'coll-noscript_text'              => '<noscript><h1>JavaScript wird benötigt!</h1>
+	'coll-noscript_text'              => '<h1>JavaScript wird benötigt!</h1>
 <strong>Dein Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
-Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong></noscript>',
+Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong>',
 	'coll-intro_text'                 => 'Du kannst Kollektionen von Seiten erstellen, daraus ein PDF erzeugen und herunterladen. Weiterhin können Kollektionen für die spätere Verwendung zwischengespeichert und mit anderen Benutzern geteilt werden.
 
 Siehe auch die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Kollektionen]] für weitere Informationen.',
@@ -499,12 +499,12 @@ Möchtest du sie hinzufügen?',
 	'coll-revision'                   => 'Version: %PARAM%',
 	'coll-save_collection_title'      => 'Kollektion speichern',
 	'coll-save_collection_text'       => 'Um diese Kollektion zu speichern, wähle einen Typ und gib einen Titel ein:',
-	'coll-login_to_save'              => 'Wenn du Kollektionen speichern möchtest, <a href="$1">melde dich bitte an oder erstelle ein Benutzerkonto</a>.',
+	'coll-login_to_save'              => 'Wenn du Kollektionen speichern möchtest, [[Special:Userlogin|melde dich bitte an oder erstelle ein Benutzerkonto]].',
 	'coll-personal_collection_label'  => 'Persönliche Kollektion:',
 	'coll-community_collection_label' => 'Community Kollektion:',
 	'coll-save_collection'            => 'Kollektion speichern',
 	'coll-overwrite_title'            => 'Seite vorhanden, überschreiben?',
-	'coll-overwrite_text'             => 'Eine Seite mit dem Namen $1 ist bereits vorhanden. Möchtest du sie durch deine Kollektion ersetzen?',
+	'coll-overwrite_text'             => 'Eine Seite mit dem Namen [[:$1]] ist bereits vorhanden. Möchtest du sie durch deine Kollektion ersetzen?',
 	'coll-yes'                        => 'Ja',
 	'coll-no'                         => 'Nein',
 	'coll-load_overwrite_text'        => 'Deine Kollektion enthält bereits Seiten. Möchtest du die aktuelle Kollektion überschreiben, die neuen Seiten anhängen oder abbrechen?',
@@ -525,7 +525,7 @@ Wenn dies nicht funktioniert, klicke auf die Neuladen-Schaltfläche deines Browe
 	'coll-pdf_not_satisfied'          => 'Unzufrieden mit der PDF-Ausgabe? Siehe [[{{MediaWiki:Coll-helppage}}|die Hilfeseiten über Kollektionen]] für Verbesserungsmöglichkeiten.',
 	'coll-notfound_title'             => 'Kollektion nicht gefunden',
 	'coll-notfound_text'              => 'Deine Kollektion konnte nicht gefunden werden.',
-	'coll-return_to_collection'       => '<p>Zurück zu <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Zurück zu [[:$1]]',
 	'coll-pages_removed'              => 'Die folgenden Seiten konnten nicht gerendert werden und werden aus der PDF-Datei entfernt: %(articles)s',
 	'coll-pdf_error_text'             => 'Es gab einen Fehler bei der Erzeugung der PDF-Datei.',
 	'coll-book_title'                 => 'Druckausgabe bestellen',
@@ -624,7 +624,7 @@ Plenumita: '''%(progress)d%%'''.
 Se ĉi tiel ne funkcias, bonvolu klaki la refreŝigan butonon de via retumilo.",
 	'coll-notfound_title'             => 'Kolekto Ne Trovita',
 	'coll-notfound_text'              => 'Ne eblas trovi kolekto-paĝon.',
-	'coll-return_to_collection'       => '<p>Reiru al <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Reiru al [[:$1]]',
 	'coll-pdf_error_text'             => 'Eraro okazis dum generado de la PDF-dosiero.',
 	'coll-book_title'                 => 'Mendu Eldonitan Libron',
 	'coll-order_from_pp'              => 'Mendi libron de $1',
@@ -668,9 +668,9 @@ $messages['fr'] = array(
 	'coll-page'                       => 'page',
 	'coll-pages'                      => 'pages',
 	'coll-download_as_pdf'            => 'Télécharger en PDF',
-	'coll-noscript_text'              => "<noscript><h1>Javascript est nécessaire !</h1>
+	'coll-noscript_text'              => "<h1>Javascript est nécessaire !</h1>
 <strong>Votre navigateur ne supporte pas Javascript ou bien l'a désactivé.
-Cette page ne s'affichera pas correctement tant que javascript n'est pas activé.</strong></noscript>",
+Cette page ne s'affichera pas correctement tant que javascript n'est pas activé.</strong>",
 	'coll-intro_text'                 => "Vous pouvez collecter des pages, générer et télécharger des fichiers PDF depuis les collections de paéges ou des sauvegarde desdites collections pour un usage ultérieur ou pour les partager.
 
 Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections]] pour d'avantage d'informations.",
@@ -710,12 +710,12 @@ Voulez-vous les ajouter ?',
 	'coll-revision'                   => 'Version : %PARAM%',
 	'coll-save_collection_title'      => 'Sauvegarder la compilation',
 	'coll-save_collection_text'       => 'Pour sauvegarder la compilation, choisissez un type de compilation et entrez un titre de page :',
-	'coll-login_to_save'              => 'Si vous voulez sauvegarder votre compilation, veuillez <a href="$1">vous connecter ou vous créer un compte</a>.',
+	'coll-login_to_save'              => 'Si vous voulez sauvegarder votre compilation, veuillez [[Special:Userlogin|vous connecter ou vous créer un compte]].',
 	'coll-personal_collection_label'  => 'Compilation personnelle :',
 	'coll-community_collection_label' => 'Compilation collective :',
 	'coll-save_collection'            => 'Sauvegarder la compilation',
 	'coll-overwrite_title'            => "La page existe. L'écraser ?",
-	'coll-overwrite_text'             => 'Une page avec le titre $1 existe déjà.
+	'coll-overwrite_text'             => 'Une page avec le titre [[:$1]] existe déjà.
 Voulez-vous la remplacer par votre compilation ?',
 	'coll-yes'                        => 'Oui',
 	'coll-no'                         => 'Non',
@@ -739,7 +739,7 @@ Si tel n’est pas le cas, veuillez appuyer sur le bouton d'actualisation de vot
 	'coll-pdf_not_satisfied'          => 'Non satisfait de la sortie PDF ? Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]] pour les possibilités d’amélioration.',
 	'coll-notfound_title'             => 'Compilation non trouvée',
 	'coll-notfound_text'              => 'Ne peut trouver la compilation.',
-	'coll-return_to_collection'       => '<p>Revenir à <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Revenir à [[:$1]]',
 	'coll-pages_removed'              => "Les pages suivantes n'ont pu être traitées et ont été enlevées du fichier PDF : %(articles)s",
 	'coll-pdf_error_text'             => 'Une erreur a été détectée lors de la création du fichier PDF.',
 	'coll-book_title'                 => 'Commander un livre imprimé',
@@ -771,9 +771,9 @@ $messages['gl'] = array(
 	'coll-page'                       => 'páxina',
 	'coll-pages'                      => 'páxinas',
 	'coll-download_as_pdf'            => 'Descargar como PDF',
-	'coll-noscript_text'              => '<noscript><h1>Requírese o JavaScript!</h1>
+	'coll-noscript_text'              => '<h1>Requírese o JavaScript!</h1>
 <strong>O seu navegador non soporta o JavaScript ou o JavaScript foi deshabilitado.
-Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa habilitado.</strong></noscript>',
+Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa habilitado.</strong>',
 	'coll-intro_text'                 => 'Pode coleccionar páxinas, xerar e descargar ficheiros PDF das páxinas de coleccións e gardar as páxinas de coleccións para un uso posterior ou para compartilas.
 
 Vexa a [[{{MediaWiki:Coll-helppage}}|páxina de axuda sobre as coleccións]] para máis información.',
@@ -811,12 +811,12 @@ Quere engadilas?',
 	'coll-revision'                   => 'Revisión: %PARAM%',
 	'coll-save_collection_title'      => 'Gardar a colección',
 	'coll-save_collection_text'       => 'Para gardar esta colección para un uso posterior escolla un tipo de colección e insira un título para a páxina:',
-	'coll-login_to_save'              => 'Se quere gardar coleccións para un uso posterior, por favor, <a href="$1">acceda ao sistema ou cree unha conta</a>.',
+	'coll-login_to_save'              => 'Se quere gardar coleccións para un uso posterior, por favor, [[Special:Userlogin|acceda ao sistema ou cree unha conta]].',
 	'coll-personal_collection_label'  => 'Colección persoal:',
 	'coll-community_collection_label' => 'Colección da comunidade:',
 	'coll-save_collection'            => 'Gardar a colección',
 	'coll-overwrite_title'            => 'A páxina existe. Desexa sobreescribir?',
-	'coll-overwrite_text'             => 'Xa existe unha páxina chamada $1.
+	'coll-overwrite_text'             => 'Xa existe unha páxina chamada [[:$1]].
 Quere reemprazala coa súa colección?',
 	'coll-yes'                        => 'Si',
 	'coll-no'                         => 'Non',
@@ -841,7 +841,7 @@ Se non vai, por favor prema no botón \"refrescar\" do seu navegador.",
 Consulte [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para ver as posibilidades de melloralo.',
 	'coll-notfound_title'             => 'Non se pode atopar a colección',
 	'coll-notfound_text'              => 'Non se pode atopar a páxina da colección.',
-	'coll-return_to_collection'       => '<p>Voltar a <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Voltar a [[:$1]]',
 	'coll-pages_removed'              => 'As seguintes páxinas non poden ser renderizadas e serán eliminadas do arquivo PDF: %(articles)s',
 	'coll-order_from_pp'              => 'Encargar un libro a $1',
 	'coll-about_pp'                   => 'Acerca de $1',
@@ -930,12 +930,12 @@ $messages['hi'] = array(
 	'coll-revision'                   => 'अवतरण: %PARAM%',
 	'coll-save_collection_title'      => 'कलेक्शन संजोयें',
 	'coll-save_collection_text'       => 'इस कलेक्शनको फिरसे इस्तेमाल में लाने के लिये इसे एक नाम दें और इसका प्रकार चुनकर इसे संजोयें:',
-	'coll-login_to_save'              => 'अगर आप बादमें इस्तेमाल के लिये यह कलेक्शन संजोना चाहतें हैं, तो कृपया <a href="$1">लॉग इन करें या नया खाता खोलें</a>।',
+	'coll-login_to_save'              => 'अगर आप बादमें इस्तेमाल के लिये यह कलेक्शन संजोना चाहतें हैं, तो कृपया [[Special:Userlogin|लॉग इन करें या नया खाता खोलें]]।',
 	'coll-personal_collection_label'  => 'वैयक्तिक कलेक्शन:',
 	'coll-community_collection_label' => 'सामूहिक कलेक्शन:',
 	'coll-save_collection'            => 'कलेक्शन संजोयें',
 	'coll-overwrite_title'            => 'पन्ना अस्तित्व में हैं। पुनर्लेखन करें?',
-	'coll-overwrite_text'             => '$1 नामका पन्ना पहले से अस्तित्वमें हैं।
+	'coll-overwrite_text'             => '[[:$1]] नामका पन्ना पहले से अस्तित्वमें हैं।
 क्या आप उसपर अपना कलेक्शन पुनर्लिखना चाहतें हैं?',
 	'coll-yes'                        => 'हां',
 	'coll-no'                         => 'नहीं',
@@ -950,7 +950,7 @@ $messages['hi'] = array(
 	'coll-generating_pdf_title'       => 'पीडीएफ तैयार कर रहें हैं',
 	'coll-notfound_title'             => 'कलेक्शन मिला नहीं',
 	'coll-notfound_text'              => 'कलेक्शन पन्ना मिला नहीं।',
-	'coll-return_to_collection'       => '<p><a href="$1">$2</a> पर वापस जायें</p>',
+	'coll-return_to_collection'       => '[[:$1]] पर वापस जायें',
 	'coll-pages_removed'              => 'नीचे दिये हुए पन्ने पीडीएफ फ़ाईल में बढा नहीं पायें:',
 	'coll-book_title'                 => 'छपा हुआ अवतरण माँगे',
 	'coll-book_text'                  => 'आप नीचे दिये हुए प्रिन्ट-ऑन-डिमांड पार्टनर्ससे आपके कलेक्शनमें उपलब्ध पन्नोंका छपा हुआ अवतरण पा सकतें हैं:',
@@ -1026,7 +1026,7 @@ $messages['hsb'] = array(
 	'coll-nopdf_error_title'         => 'Žana dataja PDF namakana',
 	'coll-notfound_title'            => 'zběrka njenamakana',
 	'coll-notfound_text'             => 'Strona zběrki njebu namakana.',
-	'coll-return_to_collection'      => '<p>Wróćo k <a href="$1">$2</a></p>',
+	'coll-return_to_collection'      => 'Wróćo k [[:$1]]',
 );
 
 /** Hungarian (Magyar)
@@ -1103,9 +1103,9 @@ $messages['ja'] = array(
 	'coll-page'                       => 'ページ',
 	'coll-pages'                      => 'ページ',
 	'coll-download_as_pdf'            => 'PDF形式でダウンロード',
-	'coll-noscript_text'              => '<noscript><h1>JavaScriptを利用しています！</h1>
+	'coll-noscript_text'              => '<h1>JavaScriptを利用しています！</h1>
 <strong>ご利用のブラウザはJavaScriptをサポートしていないか、JavaScriptが無効になっています。
-このページは、JavaScriptが有効になっていない場合、正しく動作しません。</strong></noscript>',
+このページは、JavaScriptが有効になっていない場合、正しく動作しません。</strong>',
 	'coll-intro_text'                 => 'ページコレクションを作成したり、そこからPDFファイルを作成しダウンロードしたり、後に参照したり共有するためにコレクションを保存することができます。
 
 詳細は、[[{{MediaWiki:Coll-helppage}}|ページコレクションのヘルプ]]をご覧ください。',
@@ -1145,12 +1145,12 @@ $messages['ja'] = array(
 	'coll-revision'                   => '特定版: %PARAM%',
 	'coll-save_collection_title'      => 'コレクションの保存',
 	'coll-save_collection_text'       => '後に利用するためコレクションを保存するには、コレクションタイプを選択し、ページタイトルを入力してください:',
-	'coll-login_to_save'              => '後に利用するためコレクションを保存するには、<a href="$1">ログインまたはアカウント作成</a>を行ってください。',
+	'coll-login_to_save'              => '後に利用するためコレクションを保存するには、[[Special:Userlogin|ログインまたはアカウント作成]]を行ってください。',
 	'coll-personal_collection_label'  => '個人的なコレクション:',
 	'coll-community_collection_label' => '共有するコレクション:',
 	'coll-save_collection'            => 'コレクションの保存',
 	'coll-overwrite_title'            => '同名のページが存在します。上書きしますか？',
-	'coll-overwrite_text'             => '$1 という名前のページが既に存在しています。
+	'coll-overwrite_text'             => '[[:$1]] という名前のページが既に存在しています。
 これをあなたのコレクションに置き換えますか？',
 	'coll-yes'                        => 'はい',
 	'coll-no'                         => 'いいえ',
@@ -1172,7 +1172,7 @@ $messages['ja'] = array(
 以下のリンクをクリックすると、あなたのコンピュータへダウンロードすることができます。',
 	'coll-notfound_title'             => 'コレクションが見つかりません',
 	'coll-notfound_text'              => 'コレクションの保存ページが見つかりませんでした。',
-	'coll-return_to_collection'       => '<p><a href="$1">$2</a>に戻る</p>',
+	'coll-return_to_collection'       => '[[:$1]]に戻る',
 	'coll-pages_removed'              => '以下のページはPDF形式での生成に失敗したため、作成されたPDFファイルには含まれていません:',
 );
 
@@ -1243,7 +1243,7 @@ Yèn iki ora dumadi, mangga mencèt tombol ''refresh'' ing panjlajah wèb panjen
 [Klik ing kéné] kanggo ngundhuh ing komputer panjenengan.',
 	'coll-notfound_title'             => 'Kolèksi Ora Ditemokaké',
 	'coll-notfound_text'              => 'Ora bisa nemokaké kaca kolèksi.',
-	'coll-return_to_collection'       => '<p>Bali menyang <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Bali menyang [[:$1]]',
 	'coll-pdf_error_text'             => 'Ana kaluputan nalika nggawé berkas PDF.',
 	'coll-book_title'                 => 'Pesen Buku Cithak',
 	'coll-order_from_pp'              => 'Pesen buku saka $1',
@@ -1290,7 +1290,7 @@ $messages['km'] = array(
 	'coll-generating_pdf_title' => 'បង្កើត PDF',
 	'coll-pdf_finished_title'   => 'បញ្ចប់​ការបង្កើត PDF',
 	'coll-nopdf_error_title'    => 'រកមិនឃើញ​ឯកសារ PDF',
-	'coll-return_to_collection' => '<p>ត្រលប់ទៅកាន់<a href="$1">$2</a>វិញ</p>',
+	'coll-return_to_collection' => 'ត្រលប់ទៅកាន់[[:$1]]វិញ',
 	'coll-book_title'           => 'ទិញសៀវភៅដែលបានបោះពុម្ព',
 	'coll-order_from_pp'        => 'បញ្ជាទិញ​សៀវភៅពី $1',
 	'coll-about_pp'             => 'អំពី$1',
@@ -1373,7 +1373,7 @@ $messages['lb'] = array(
 	'coll-limit_exceeded_text'        => 'Är Sammlung ass ze grouss.
 Et kënne keng Säite méi derbäigesat ginn.',
 	'coll-generating_pdf_title'       => 'PDF maachen',
-	'coll-return_to_collection'       => '<p>Zréck op <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Zréck op [[:$1]]',
 	'coll-book_title'                 => 'Gedréckte Buch bestellen',
 	'coll-order_from_pp'              => "D'Buch bestelle bäi $1",
 	'coll-about_pp'                   => 'Iwwer $1',
@@ -1441,12 +1441,12 @@ $messages['ml'] = array(
 	'coll-revision'                   => 'പതിപ്പ്: %PARAM%',
 	'coll-save_collection_title'      => 'ശേഖരം സേവ് ചെയ്യുക',
 	'coll-save_collection_text'       => 'ഈ ശേഖരം പിന്നിടുള്ള ഉപയോഗത്തിനായി സൂക്ഷിക്കണമെങ്കില്‍ ശേഖര തരം തിരഞ്ഞെടുത്ത് ഒരു ശീര്‍ഷകം നല്‍കുക:',
-	'coll-login_to_save'              => 'ശേഖരങ്ങള്‍ പിന്നീടുള്ള ഉപയോഗത്തിനായി സൂക്ഷിക്കണമെങ്കില്‍, ദയവായി <a href="$1">ലോഗിന്‍ ചെയ്യുകയോ പുതിയൊരു അക്കൗണ്ട് ഉണ്ടാക്കുകയോ ചെയ്യുക</a>.',
+	'coll-login_to_save'              => 'ശേഖരങ്ങള്‍ പിന്നീടുള്ള ഉപയോഗത്തിനായി സൂക്ഷിക്കണമെങ്കില്‍, ദയവായി [[Special:Userlogin|ലോഗിന്‍ ചെയ്യുകയോ പുതിയൊരു അക്കൗണ്ട് ഉണ്ടാക്കുകയോ ചെയ്യുക]].',
 	'coll-personal_collection_label'  => 'സ്വകാര്യ ശേഖരം:',
 	'coll-community_collection_label' => 'സമൂഹ ശേഖരം:',
 	'coll-save_collection'            => 'ശേഖരം സേവ് ചെയ്യുക',
 	'coll-overwrite_title'            => 'താള്‍ നിലവിലുണ്ട്. അതിനെ ഓവര്‍റൈറ്റ് ചെയ്യട്ടെ?',
-	'coll-overwrite_text'             => '$1 എന്ന പേരില്‍ ഒരു താള്‍ നിലവിലുണ്ട്. താങ്കളുടെ ശേഖരം ആ താളിനു ബദലാക്കണോ?',
+	'coll-overwrite_text'             => '[[:$1]] എന്ന പേരില്‍ ഒരു താള്‍ നിലവിലുണ്ട്. താങ്കളുടെ ശേഖരം ആ താളിനു ബദലാക്കണോ?',
 	'coll-yes'                        => 'ശരി',
 	'coll-no'                         => 'ഇല്ല',
 	'coll-load_overwrite_text'        => 'താങ്കളുടെ ശേഖരത്തില്‍ ഇപ്പോള്‍ തന്നെ കുറച്ചു താളുകള്‍ ഉണ്ട്.
@@ -1462,7 +1462,7 @@ $messages['ml'] = array(
 	'coll-pdf_not_satisfied'          => 'PDF ഔട്ട് പുട്ടില്‍ നിങ്ങള്‍ തൃപ്തരല്ലേ? [[{{MediaWiki:Coll-helppage}}|ശേഖരത്തെക്കുറിച്ചുള്ള സഹായ താള്‍]] നോക്കി അതു എങ്ങനെയൊക്കെ മെച്ചപ്പെടുത്താമെന്നു നോക്കൂ.',
 	'coll-notfound_title'             => 'ശേഖരം കണ്ടില്ല',
 	'coll-notfound_text'              => 'ശേഖര താള്‍ കണ്ടെത്താന്‍ കഴിഞ്ഞില്ല.',
-	'coll-return_to_collection'       => '<p><a href="$1">$2</a>-ലേക്കു തിരിച്ചു പോവുക</p>',
+	'coll-return_to_collection'       => '[[:$1]]-ലേക്കു തിരിച്ചു പോവുക',
 	'coll-pdf_error_text'             => 'PDF പ്രമാണം നിര്‍മ്മിക്കുമ്പോള്‍ പിഴവ് സംഭവിച്ചു.',
 	'coll-book_title'                 => 'അച്ചടിച്ച പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
 	'coll-book_text'                  => 'താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന സേവനദാതാക്കളെ സന്ദര്‍ശിച്ച് നിങ്ങളുടെ ശേഖരത്തിന്റെ അച്ചടി രൂപം ഓര്‍ഡര്‍ ചെയ്യാവുന്നതാണ്‌:',
@@ -1490,9 +1490,9 @@ $messages['mr'] = array(
 	'coll-page'                       => 'पान',
 	'coll-pages'                      => 'पाने',
 	'coll-download_as_pdf'            => 'पीडीएफ आवृत्ती उतरवा',
-	'coll-noscript_text'              => '<noscript><h1>जावास्क्रीप्ट आवश्यक!</h1>
+	'coll-noscript_text'              => '<h1>जावास्क्रीप्ट आवश्यक!</h1>
 <strong>तुमचा ब्राउझार जावास्क्रीप्ट वापरू शकत नाही किंवा वापर बंद केलेला आहे.
-जावास्क्रीप्ट चालू केल्याशिवाय हे पान व्यवस्थित काम करणार नाही.</strong></noscript>',
+जावास्क्रीप्ट चालू केल्याशिवाय हे पान व्यवस्थित काम करणार नाही.</strong>',
 	'coll-intro_text'                 => 'तुम्ही काही पाने गोळा करू शकता, त्यांच्या पीडीएफ आवृत्त्या उतरवून घेऊ शकता किंवा गोळा केलेली पाने नंतर वापरण्यासाठी अथवा इतरांना देण्यासाठी जतन करून ठेऊ शकता.
 
 अधिक माहितीसाठी [[{{MediaWiki:Coll-helppage}}|पाने गोळा करण्यासाठी मदत]] पहा.',
@@ -1532,12 +1532,12 @@ $messages['mr'] = array(
 	'coll-revision'                   => 'आवृत्ती: %PARAM%',
 	'coll-save_collection_title'      => 'कलेक्शन जतन करा',
 	'coll-save_collection_text'       => 'हे कलेक्शन नंतर वापरण्यासाठी पानाला शीर्षक देउन तसेच कलेक्शनचा प्रकार निवडून जतन करा:',
-	'coll-login_to_save'              => 'जर तुम्ही कलेक्शन नंतर वापरण्यासाठी जतन करू इच्छित असाल, तर कृपया <a href="$1">प्रवेश करा अथवा सदस्य नोंदणी करा</a>.',
+	'coll-login_to_save'              => 'जर तुम्ही कलेक्शन नंतर वापरण्यासाठी जतन करू इच्छित असाल, तर कृपया [[Special:Userlogin|प्रवेश करा अथवा सदस्य नोंदणी करा]].',
 	'coll-personal_collection_label'  => 'वैयक्तिक कलेक्शन:',
 	'coll-community_collection_label' => 'सामुहिक कलेक्शन:',
 	'coll-save_collection'            => 'कलेक्शन जतन करा',
 	'coll-overwrite_title'            => 'पान अस्तित्वात आहे. पुनर्लेखन करायचे का?',
-	'coll-overwrite_text'             => '$1 या नावाचे पान अगोदरच अस्तित्वात आहे.
+	'coll-overwrite_text'             => '[[:$1]] या नावाचे पान अगोदरच अस्तित्वात आहे.
 तुम्ही त्यावर तुमचे कलेक्शन पुनर्लेखित करू इच्छिता का?',
 	'coll-yes'                        => 'होय',
 	'coll-no'                         => 'नाही',
@@ -1561,7 +1561,7 @@ $messages['mr'] = array(
 	'coll-pdf_not_satisfied'          => 'पीडीएफ आउटपुट वर संतुष्ट नाही आहात? ते सुधरण्याच्या शक्यतांसाठी [[{{MediaWiki:Coll-helppage}}|कलेक्शन माहिती पृष्ठ]] पहा.',
 	'coll-notfound_title'             => 'कलेक्शन सापडले नाही',
 	'coll-notfound_text'              => 'कलेक्शन पान सापडले नाही.',
-	'coll-return_to_collection'       => '<p><a href="$1">$2</a> कडे परत जा</p>',
+	'coll-return_to_collection'       => '[[:$1]] कडे परत जा',
 	'coll-pages_removed'              => 'खालील पाने पीडीएफ संचिकेत अंतर्भूत करू शकलेलो नाही:',
 	'coll-pdf_error_text'             => 'पीडीएफ तयार करण्यामध्ये त्रुटी आलेली आहे.',
 	'coll-book_title'                 => 'छापील आवृत्तीची मागणी नोंदवा',
@@ -1593,9 +1593,9 @@ $messages['nl'] = array(
 	'coll-page'                       => 'pagina',
 	'coll-pages'                      => "pagina's",
 	'coll-download_as_pdf'            => 'Als PDF downloaden',
-	'coll-noscript_text'              => '<noscript><h1>JavaScript is vereist!</h1>
+	'coll-noscript_text'              => '<h1>JavaScript is vereist!</h1>
 <strong>Uw browser understeunt geen JavaScript of JavaScript is uitgeschakeld.
-Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong></noscript>',
+Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong>',
 	'coll-intro_text'                 => "U kunt pagina's in een verzameling plaatsen, een PDF-bestand maken en downloaden van een paginaverzameling, en paginaverzameling opslaan voor later gebruik, of om ze te delen.
 
 [[{{MediaWiki:Coll-helppage}}|Meer informatie over verzamelingen]].",
@@ -1635,12 +1635,12 @@ Wilt u ze toevoegen?",
 	'coll-revision'                   => 'Versie: %PARAM%',
 	'coll-save_collection_title'      => 'Verzameling opslaan',
 	'coll-save_collection_text'       => 'Kies een verzamelingstype en voer een paginatitel in om deze verzameling op te slaan voor later gebruik:',
-	'coll-login_to_save'              => 'Als u verzamelingen wil opslaan voor later gebruik, <a href="$1">meld u zich dan aan of maak een gebruiker aan</a>.',
+	'coll-login_to_save'              => 'Als u verzamelingen wil opslaan voor later gebruik, [[Special:Userlogin|meld u zich dan aan of maak een gebruiker aan]].',
 	'coll-personal_collection_label'  => 'Persoonlijke verzameling:',
 	'coll-community_collection_label' => 'Gemeenschappelijke verzameling:',
 	'coll-save_collection'            => 'Verzameling opslaan',
 	'coll-overwrite_title'            => 'De pagina bestaat al. Overschrijven?',
-	'coll-overwrite_text'             => 'Er bestaat al een pagina met de naam $1.
+	'coll-overwrite_text'             => 'Er bestaat al een pagina met de naam [[:$1]].
 Wil u die pagina vervangen door uw verzameling?',
 	'coll-yes'                        => 'Ja',
 	'coll-no'                         => 'Nee',
@@ -1664,7 +1664,7 @@ Als dit niet werkt, klik dan op de knop 'Vernieuwen' in uw browser.",
 	'coll-pdf_not_satisfied'          => 'Niet tevreden met de PDF-uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina voor collecties]] staan manieren beschreven om die te verbeteren.',
 	'coll-notfound_title'             => 'Verzameling niet gevonden',
 	'coll-notfound_text'              => 'De verzamelingspagina is niet gevonden.',
-	'coll-return_to_collection'       => '<p>Teruggaan naar <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Teruggaan naar [[:$1]]',
 	'coll-pages_removed'              => "De onderstaande pagina's konden niet opgemaakt worden en zijn uit het PDF-bestand verwijderd: %(articles)s",
 	'coll-pdf_error_text'             => 'Een fout trad op bij het aanmaken van het PDF bestand.',
 	'coll-book_title'                 => 'Gedrukt boek bestellen',
@@ -1711,8 +1711,8 @@ $messages['no'] = array(
 	'coll-page'                       => 'side',
 	'coll-pages'                      => 'sider',
 	'coll-download_as_pdf'            => 'Last ned som PDF',
-	'coll-noscript_text'              => '<noscript><h1>JavaScript er påkrevd!</h1>
-<strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong></noscript>',
+	'coll-noscript_text'              => '<h1>JavaScript er påkrevd!</h1>
+<strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong>',
 	'coll-intro_text'                 => 'Du kan samle sider, generere og laste ned en PDF-fil fra sidesamlinger og lagre sidesamlinger for senere bruk eller for deling.',
 	'coll-helppage'                   => 'Help:Samlinger',
 	'coll-pdftoobigcat'               => 'Kategorien inneholder mer enn %PARAM% sider, kun de første %PARAM% sidene kan legges til i samlingen din. Vil du legge dem til?',
@@ -1749,12 +1749,12 @@ $messages['no'] = array(
 	'coll-revision'                   => 'Revisjon: %PARAM%',
 	'coll-save_collection_title'      => 'Lagre samling',
 	'coll-save_collection_text'       => 'Velg en samlingstype og skriv inn en sidetittel for å lagre denne samlingen for senere bruk.',
-	'coll-login_to_save'              => 'Om du vil lagre samlingene for senere bruk, <a href="$1">logg inn eller opprett en konto</a>.',
+	'coll-login_to_save'              => 'Om du vil lagre samlingene for senere bruk, [[Special:Userlogin|logg inn eller opprett en konto]].',
 	'coll-personal_collection_label'  => 'Personlig samling:',
 	'coll-community_collection_label' => 'Fellesskapssamling:',
 	'coll-save_collection'            => 'Lagre samling',
 	'coll-overwrite_title'            => 'Siden finnes. Erstatte den?',
-	'coll-overwrite_text'             => 'En side ved navn $1 finnes fra før. Vil du erstatte den med samlingen din?',
+	'coll-overwrite_text'             => 'En side ved navn [[:$1]] finnes fra før. Vil du erstatte den med samlingen din?',
 	'coll-yes'                        => 'Ja',
 	'coll-no'                         => 'Nei',
 	'coll-load_overwrite_text'        => 'Du har allerede noen sider i samlingen din. Vil du erstatte den eksisterende samlingen, legge til det nye innholdet eller avbryte?',
@@ -1774,7 +1774,7 @@ Denne siden burde oppdateres med noen sekunders mellomrom. Om dette ikke fungere
 	'coll-pdf_not_satisfied'          => 'Ikke fornøyd med PDF-resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for hvordan du kan forbedre det.',
 	'coll-notfound_title'             => 'Samling ikke funnet',
 	'coll-notfound_text'              => 'Kunne ikke finne samlingsside.',
-	'coll-return_to_collection'       => '<p>Tilbake til <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Tilbake til [[:$1]]',
 	'coll-pages_removed'              => 'Følgende sider kunne ikke gjengis og ble fjernet fra PDF-filen: %(articles)s',
 	'coll-pdf_error_text'             => 'Det oppstod en feil ved generering av PDF-filen.',
 	'coll-book_title'                 => 'Bestilling av trykt bok',
@@ -1805,9 +1805,9 @@ $messages['oc'] = array(
 	'coll-page'                       => 'pagina',
 	'coll-pages'                      => 'paginas',
 	'coll-download_as_pdf'            => 'Telecargar en PDF',
-	'coll-noscript_text'              => "<noscript><h1>Javascript es necessari !</h1>
+	'coll-noscript_text'              => "<h1>Javascript es necessari !</h1>
 <strong>Vòstre navigador supòrta pas Javascript o se l'a desactivat.
-Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activat.</strong></noscript>",
+Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activat.</strong>",
 	'coll-intro_text'                 => "Podètz collectar de paginas, generar e telecargar de fichièrs PDF dempuèi las colleccions de paginas o de las salvagardas de las dichas colleccions per un usatge ulterior o per las partejar.
 
 Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entresenhas.",
@@ -1847,12 +1847,12 @@ Las volètz apondre ?',
 	'coll-revision'                   => 'Version : %PARAM%',
 	'coll-save_collection_title'      => 'Salvagardar la compilacion',
 	'coll-save_collection_text'       => 'Per salvagardar la compilacion, causissètz un tipe de compilacion e picatz un títol de pagina :',
-	'coll-login_to_save'              => 'Se volètz salvagardar vòstra compilacion, pre de <a href="$1">vos connectar o vos crear un compte</a>.',
+	'coll-login_to_save'              => 'Se volètz salvagardar vòstra compilacion, pre de [[Special:Userlogin|vos connectar o vos crear un compte]].',
 	'coll-personal_collection_label'  => 'Compilacion personala :',
 	'coll-community_collection_label' => 'Compilacion collectiva :',
 	'coll-save_collection'            => 'Salvagardar la compilacion',
 	'coll-overwrite_title'            => "La pagina existís. L'espotir ?",
-	'coll-overwrite_text'             => 'Una pagina amb lo títol $1 existís ja.
+	'coll-overwrite_text'             => 'Una pagina amb lo títol [[:$1]] existís ja.
 La volètz remplaçar per vòstra compilacion ?',
 	'coll-yes'                        => 'Òc',
 	'coll-no'                         => 'Non',
@@ -1876,7 +1876,7 @@ Se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navi
 	'coll-pdf_not_satisfied'          => 'Pas satisfach de la sortida PDF ? Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda a prepaus de las colleccions]] per las possibilitats de melhorament.',
 	'coll-notfound_title'             => 'Compilacion pas trobada',
 	'coll-notfound_text'              => 'Pòt pas trobar la compilacion.',
-	'coll-return_to_collection'       => '<p>Tornar a <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Tornar a [[:$1]]',
 	'coll-pages_removed'              => 'Las paginas seguentas an pas pogut èsser tractadas e son estadas levadas del fichièr PDF : %(articles)s',
 	'coll-pdf_error_text'             => 'Una error es estada detectada al moment de la creacion del fichièr PDF.',
 	'coll-book_title'                 => 'Comandar un libre imprimit',
@@ -1921,9 +1921,9 @@ $messages['pl'] = array(
 	'coll-page'                       => 'strona',
 	'coll-pages'                      => 'strony',
 	'coll-download_as_pdf'            => 'Pobierz jako PDF',
-	'coll-noscript_text'              => '<noscript><h1>Potrzebny JavaScript!</h1>
+	'coll-noscript_text'              => '<h1>Potrzebny JavaScript!</h1>
 <strong>Twoja przeglądarka nie obsługuje JavaScript lub został on wyłączony.
-Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączony.</strong></noscript>',
+Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączony.</strong>',
 	'coll-intro_text'                 => 'Narzędzie umożliwia tworzenie kolekcji stron, z których można wygenerować plik PDF, jak też zapisać je w celu późniejszego wykorzystania lub udostępnienia.
 
 Więcej informacji na [[{{MediaWiki:Coll-helppage}}|stronie pomocy dotyczącej kolekcji]].',
@@ -1963,12 +1963,12 @@ Czy chcesz by zostały dodane?',
 	'coll-revision'                   => 'Wersja: %PARAM%',
 	'coll-save_collection_title'      => 'Zapisz kolekcję',
 	'coll-save_collection_text'       => 'Aby zapisać kolekcję, wybierz jej rodzaj i tytuł:',
-	'coll-login_to_save'              => 'Jeśli chcesz zapisać kolekcję, <a href="$1">zaloguj się lub utwórz konto</a>.',
+	'coll-login_to_save'              => 'Jeśli chcesz zapisać kolekcję, [[Special:Userlogin|zaloguj się lub utwórz konto]].',
 	'coll-personal_collection_label'  => 'Kolekcja osobista:',
 	'coll-community_collection_label' => 'Kolekcja społeczności:',
 	'coll-save_collection'            => 'Zapisz kolekcję',
 	'coll-overwrite_title'            => 'Strona już istnieje. Nadpisać?',
-	'coll-overwrite_text'             => 'Strona pod tytułem $1 już istnieje.
+	'coll-overwrite_text'             => 'Strona pod tytułem [[:$1]] już istnieje.
 Chcesz ją zastąpić swoją kolekcją?',
 	'coll-yes'                        => 'Tak',
 	'coll-no'                         => 'Nie',
@@ -1992,7 +1992,7 @@ Jeśli tak się nie dzieje, użyj przycisku ''Odśwież'' w przeglądarce.",
 	'coll-pdf_not_satisfied'          => 'Plik PDF nie spełnił Twoich oczekiwań? Zobacz [[{{MediaWiki:Coll-helppage}}|kolekcję opisów]] jak można podwyższyć jego jakość.',
 	'coll-notfound_title'             => 'Nie znaleziono kolekcji',
 	'coll-notfound_text'              => 'Nie udało się znaleźć strony kolekcji.',
-	'coll-return_to_collection'       => '<p>Powróć do <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Powróć do [[:$1]]',
 	'coll-pages_removed'              => 'Następujące strony nie mogły zostać przetworzone do formatu PDF i nie ma ich w wynikowym pliku:',
 	'coll-pdf_error_text'             => 'Wystąpił błąd w trakcie generowania pliku w formacie PDF.',
 	'coll-book_title'                 => 'Zamów wydrukowaną książkę',
@@ -2053,9 +2053,9 @@ $messages['pt'] = array(
 	'coll-page'                       => 'página',
 	'coll-pages'                      => 'páginas',
 	'coll-download_as_pdf'            => 'Descarregar como PDF',
-	'coll-noscript_text'              => '<noscript><h1>JavaScript é Requerido!</h1>
+	'coll-noscript_text'              => '<h1>JavaScript é Requerido!</h1>
 <strong>O seu "browser" não suporta JavaScript, ou o JavaScript foi desactivado.
-Esta página não funcionará correctamente, excepto se o JavaScript for activado.</strong></noscript>',
+Esta página não funcionará correctamente, excepto se o JavaScript for activado.</strong>',
 	'coll-intro_text'                 => 'Você pode coleccionar páginas, gerar e descarregar um ficheiro PDF de colecções de páginas e gravar colecções de páginas para usar mais tarde ou partilhá-las.
 
 Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para mais informação.',
@@ -2095,12 +2095,12 @@ Deseja adicioná-las?',
 	'coll-revision'                   => 'Revisão: %PARAM%',
 	'coll-save_collection_title'      => 'Gravar Colecção',
 	'coll-save_collection_text'       => 'Para guardar uma colecção para uso futuro, escolha um tipo de colecção e introduza o título da página:',
-	'coll-login_to_save'              => 'Se pretende gravar colecções para mais tarde, por favor, <a href="$1">autentique-se ou crie uma conta</a>.',
+	'coll-login_to_save'              => 'Se pretende gravar colecções para mais tarde, por favor, [[Special:Userlogin|autentique-se ou crie uma conta]].',
 	'coll-personal_collection_label'  => 'Colecção pessoal:',
 	'coll-community_collection_label' => 'Colecção comunitária:',
 	'coll-save_collection'            => 'Gravar Colecção',
 	'coll-overwrite_title'            => 'A página existe. Escrever por cima?',
-	'coll-overwrite_text'             => 'Um página com o nome $1 já existe.
+	'coll-overwrite_text'             => 'Um página com o nome [[:$1]] já existe.
 Deseja substituí-la pela sua colecção?',
 	'coll-yes'                        => 'Sim',
 	'coll-no'                         => 'Não',
@@ -2124,7 +2124,7 @@ Se isto não acontecer, por favor, carregue no botão de refrescar do seu \"brow
 	'coll-pdf_not_satisfied'          => 'Não está satisfeito com o resultado do PDF? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para formas de melhorá-lo.',
 	'coll-notfound_title'             => 'Colecção Não Encontrada',
 	'coll-notfound_text'              => 'Não foi possível encontrar a página da colecção.',
-	'coll-return_to_collection'       => '<p>Regressar a <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Regressar a [[:$1]]',
 	'coll-pages_removed'              => 'As seguintes páginas não puderam ser renderizadas e foram removidas do ficheiro PDF: %(articles)s',
 	'coll-pdf_error_text'             => 'Ocorreu um erro ao gerar o ficheiro PDF.',
 	'coll-book_title'                 => 'Encomendar Livro Impresso',
@@ -2153,9 +2153,9 @@ $messages['ru'] = array(
 	'coll-page'                       => 'страница',
 	'coll-pages'                      => 'страницы',
 	'coll-download_as_pdf'            => 'Скачать как PDF',
-	'coll-noscript_text'              => '<noscript><h1>Требуется JavaScript!</h1>
+	'coll-noscript_text'              => '<h1>Требуется JavaScript!</h1>
 <strong>Ваш браузер не поддерживает JavaScript или данная поддержка была отключена.
-Эта страница не будет работать правильно, если JavaScript не включен.</strong></noscript>',
+Эта страница не будет работать правильно, если JavaScript не включен.</strong>',
 	'coll-intro_text'                 => 'Вы можете объединить страницы в коллекцию, создать и скачать PDF-файл с набором страниц, или сохранить коллекцию страниц для последующей работы или обмена.
 
 Подробности можно найти на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].',
@@ -2195,12 +2195,12 @@ $messages['ru'] = array(
 	'coll-revision'                   => 'Версия: %PARAM%',
 	'coll-save_collection_title'      => 'Сохранить коллекцию',
 	'coll-save_collection_text'       => 'Чтобы сохранить коллекцию для дальнейшего использования, выберите тип коллекции и введите имя страницы:',
-	'coll-login_to_save'              => 'Чтобы сохранить коллекцию для дальнейшего использования, пожалуйста, <a href="$1">представьтесь системе или создайте учётную запись</a>.',
+	'coll-login_to_save'              => 'Чтобы сохранить коллекцию для дальнейшего использования, пожалуйста, [[Special:Userlogin|представьтесь системе или создайте учётную запись]].',
 	'coll-personal_collection_label'  => 'Личная коллекция:',
 	'coll-community_collection_label' => 'Коллекция сообщества:',
 	'coll-save_collection'            => 'Сохранить коллекцию',
 	'coll-overwrite_title'            => 'Страница существует. Перезаписать?',
-	'coll-overwrite_text'             => 'Страница с именем $1 уже существует.
+	'coll-overwrite_text'             => 'Страница с именем [[:$1]] уже существует.
 Вы хотите чтобы она была заменена вашей коллекцией?',
 	'coll-yes'                        => 'Да',
 	'coll-no'                         => 'Нет',
@@ -2225,7 +2225,7 @@ $messages['ru'] = array(
 На [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]] рассказывается о возможностях улучшить PDF-вывод.',
 	'coll-notfound_title'             => 'Коллекция не найдена',
 	'coll-notfound_text'              => 'Невозможно найти страницу коллекции.',
-	'coll-return_to_collection'       => '<p>Назад к <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Назад к [[:$1]]',
 	'coll-pages_removed'              => 'Следующие страницы не могут быть обработаны и были удалены из PDF-файла: %(статей)',
 	'coll-pdf_error_text'             => 'Во время создания PDF-файла произошла ошибка.',
 	'coll-book_title'                 => 'Заказать печатную книгу',
@@ -2256,9 +2256,9 @@ $messages['sk'] = array(
 	'coll-page'                       => 'stránka',
 	'coll-pages'                      => 'stránky',
 	'coll-download_as_pdf'            => 'Stiahnuť ako PDF',
-	'coll-noscript_text'              => '<noscript><h1>Vyžaduje sa JavaScript!</h1>
+	'coll-noscript_text'              => '<h1>Vyžaduje sa JavaScript!</h1>
 <strong>Váš prehliadač nepodporuje JavaScript alebo máte JavaScript vypnutý.
-Táto stránka nebude správne fungovať ak nezapnete JavaScript.</strong></noscript>',
+Táto stránka nebude správne fungovať ak nezapnete JavaScript.</strong>',
 	'coll-intro_text'                 => 'Môžete vytvárať kolekcie stránok, vytvárať a stiahnuť PDF súbor z kolekcie stránok a ukladať kolekcie stránok pre neskoršie využitie alebo ich zdieľať.
 
 Pozri ďalšie informácue na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].',
@@ -2297,12 +2297,12 @@ Pozri ďalšie informácue na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka 
 	'coll-revision'                   => 'Revízia: %PARAM%',
 	'coll-save_collection_title'      => 'Uložiť kolekciu',
 	'coll-save_collection_text'       => 'Túto kolekciu môžete uložiť pre neskoršie použitie po zadaní typu kolekcie a názvu stránky:',
-	'coll-login_to_save'              => 'Ak chcete ukladať kolekcie pre neskoršie použitie, prosím, <a href="$1">prihláste sa alebo si vytvorte účet</a>.',
+	'coll-login_to_save'              => 'Ak chcete ukladať kolekcie pre neskoršie použitie, prosím, [[Special:Userlogin|prihláste sa alebo si vytvorte účet]].',
 	'coll-personal_collection_label'  => 'Osobné kolekcie:',
 	'coll-community_collection_label' => 'Komunitné kolekcie:',
 	'coll-save_collection'            => 'Uložiť kolekciu',
 	'coll-overwrite_title'            => 'Stránka existuje. Prepísať?',
-	'coll-overwrite_text'             => 'Stránka s názvom $1 už existuje.
+	'coll-overwrite_text'             => 'Stránka s názvom [[:$1]] už existuje.
 Chcete ju nahradiť svojou kolekciou?',
 	'coll-yes'                        => 'Áno',
 	'coll-no'                         => 'Nie',
@@ -2326,7 +2326,7 @@ Teraz ho môžete [stiahnuť].',
 Pozri možnosti jeho vylepšenia na [[{{MediaWiki:Coll-helppage}}|stránke Pomocníka o kolekciách]].',
 	'coll-notfound_title'             => 'Kolekcia nenájdená',
 	'coll-notfound_text'              => 'Nebolo možné nájsť stránku kolekcie',
-	'coll-return_to_collection'       => '<p>Vrátiť sa na <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Vrátiť sa na [[:$1]]',
 	'coll-pages_removed'              => 'Nasledovné stránky nebolo možné vykresliť a boli z PDF súboru odstránené: %(articles)s',
 	'coll-pdf_error_text'             => 'Pri tvorbe PDF súboru sa vyskytla chyba.',
 	'coll-book_title'                 => 'Objednať tlačenú knihu',
@@ -2367,8 +2367,8 @@ $messages['stq'] = array(
 	'coll-page'                => 'Siede',
 	'coll-pages'               => 'Sieden',
 	'coll-download_as_pdf'     => 'As PDF deelleede',
-	'coll-noscript_text'       => '<noscript><h1>JavaScript is nöödich!</h1>
-<strong>Dien Browser unnerstutset neen Javascript of Javascript wuude deaktivierd. Disse Siede däd nit gjucht funktionierje, soloange Javascript nit ferföigboar is.</strong></noscript>',
+	'coll-noscript_text'       => '<h1>JavaScript is nöödich!</h1>
+<strong>Dien Browser unnerstutset neen Javascript of Javascript wuude deaktivierd. Disse Siede däd nit gjucht funktionierje, soloange Javascript nit ferföigboar is.</strong>',
 	'coll-intro_text'          => 'Du koast Sieden touhoopestaale, n PDF deerap moakje un deelleede as uk Touhoopestaalengen foar ne leetere Ferweendenge twiskespiekerje un mäd uur Benutsere deele.
 
 Sjuch ju [[{{MediaWiki:Coll-helppage}}|Hälpe bie Touhoopestaalengen]] foar wiedere Informatione.',
@@ -2426,9 +2426,9 @@ $messages['sv'] = array(
 	'coll-page'                       => 'sida',
 	'coll-pages'                      => 'sidor',
 	'coll-download_as_pdf'            => 'Ladda ner som PDF',
-	'coll-noscript_text'              => '<noscript><h1>JavaScript är nödvändigt!</h1>
+	'coll-noscript_text'              => '<h1>JavaScript är nödvändigt!</h1>
 <strong>Din webbläsare stödjer inte JavaScript eller har JavaScript blivigt avslagen.
-Denna sida kommer inte att fungera korrekt, tills JavaScript är tillgängligt.</strong></noscript>',
+Denna sida kommer inte att fungera korrekt, tills JavaScript är tillgängligt.</strong>',
 	'coll-intro_text'                 => 'Du kan samla sidor, generera och ladda ner en PDF fil från sid samlingar och spara sid samlingar för senare bruk eller för delning.
 
 Se [[{{MediaWiki:Coll-helppage}}|hjälp sidan om samlingar]] för mer information.',
@@ -2467,12 +2467,12 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälp sidan om samlingar]] för mer informatio
 	'coll-revision'                   => 'Revision: %PARAM%',
 	'coll-save_collection_title'      => 'Spara samling',
 	'coll-save_collection_text'       => 'För att spara denna samling för senare bruk, välj en samlingstyp och skriv in en sidtitel:',
-	'coll-login_to_save'              => 'Om du vill spara samlingar för senare bruk, var god <a href="$1">logga in eller skapa ett konto</a>.',
+	'coll-login_to_save'              => 'Om du vill spara samlingar för senare bruk, var god [[Special:Userlogin|logga in eller skapa ett konto]].',
 	'coll-personal_collection_label'  => 'Personlig samling:',
 	'coll-community_collection_label' => 'Deltagarsamling:',
 	'coll-save_collection'            => 'Spara samling',
 	'coll-overwrite_title'            => 'Sidan existerar. Vill du skriva över den?',
-	'coll-overwrite_text'             => 'En sida med namnet $1 finns redan.
+	'coll-overwrite_text'             => 'En sida med namnet [[:$1]] finns redan.
 Vill du ersätta den med din samling?',
 	'coll-yes'                        => 'Ja',
 	'coll-no'                         => 'Nej',
@@ -2496,7 +2496,7 @@ Om detta inte funkar, var god tryck på uppdateringsknappen i din webbläsare.",
 	'coll-pdf_not_satisfied'          => 'Inte nöjd med PDF-resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för hur du kan förbättra det.',
 	'coll-notfound_title'             => 'Samling inte funnen',
 	'coll-notfound_text'              => 'Kan inte hitta samlings sida',
-	'coll-return_to_collection'       => '<p>Tillbaka till <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Tillbaka till [[:$1]]',
 	'coll-pages_removed'              => 'Följande sidor kunde inte framställas och blev borttagna från PDF-filen: %(articles)s',
 	'coll-pdf_error_text'             => 'Det uppstod ett fel med generering av PDF-filen.',
 	'coll-book_title'                 => 'Beställ utskriven bok',
@@ -2567,12 +2567,12 @@ $messages['te'] = array(
 	'coll-revision'                   => 'కూర్పు: %PARAM%',
 	'coll-save_collection_title'      => 'సేకరణని భద్రపరచండి',
 	'coll-save_collection_text'       => 'ఈ సేకరణని తర్వాత వాడుకోడానికి భద్రపరచుకోవాలంటే, ఓ సేకరణ రకాన్ని ఎంచుకోండి మరియు పేజీ శీర్షిక ఇవ్వండి:',
-	'coll-login_to_save'              => 'సేకరణలని మీరు తర్వాత వాడుకోవడానికి భద్రపరచుకోవాలనుకుంటే, <a href="$1">లోనికి ప్రవేశించండి లేదా ఖాతా సృష్టించుకోండి</a>.',
+	'coll-login_to_save'              => 'సేకరణలని మీరు తర్వాత వాడుకోవడానికి భద్రపరచుకోవాలనుకుంటే, [[Special:Userlogin|లోనికి ప్రవేశించండి లేదా ఖాతా సృష్టించుకోండి]].',
 	'coll-personal_collection_label'  => 'వ్యక్తిగత సేరకణ:',
 	'coll-community_collection_label' => 'సామూహిక సేకరణ:',
 	'coll-save_collection'            => 'సేకరణని భద్రపరచు',
 	'coll-overwrite_title'            => 'పేజీ ఉంది. దానిపైనే రాసేయాలా?',
-	'coll-overwrite_text'             => '$1 అనే పేరుతో ఓ పేజీ ఇప్పటికే ఉంది.
+	'coll-overwrite_text'             => '[[:$1]] అనే పేరుతో ఓ పేజీ ఇప్పటికే ఉంది.
 దాని స్ధానంలో మీ సేకరణని ఉంచాలా?',
 	'coll-yes'                        => 'అవును',
 	'coll-no'                         => 'కాదు',
@@ -2588,7 +2588,7 @@ $messages['te'] = array(
 దాన్ని మీ కంప్యూటర్లోనికి దిగుమతి చేసుకోడానికి క్రిందనిచ్చిన లింకుపై నొక్కండి.',
 	'coll-notfound_title'             => 'సేకరణ కనబడలేదు',
 	'coll-notfound_text'              => 'సేకరణ పేజీ కనబడలేదు.',
-	'coll-return_to_collection'       => '<p>తిరిగి <a href="$1">$2</a>కి</p>',
+	'coll-return_to_collection'       => 'తిరిగి [[:$1]]కి',
 	'coll-order_from_pp'              => '$1 నుండి పుస్తకాన్ని ఆర్డర్ చెయ్యండి',
 	'coll-about_pp'                   => '$1 గురించి',
 );
@@ -2622,9 +2622,9 @@ $messages['tg-cyrl'] = array(
 	'coll-page'                       => 'саҳифа',
 	'coll-pages'                      => 'саҳифаҳо',
 	'coll-download_as_pdf'            => 'Боргузорӣ ҳамчун PDF',
-	'coll-noscript_text'              => '<noscript><h1>ҶаваСкрипт Лозим аст!</h1>
+	'coll-noscript_text'              => '<h1>ҶаваСкрипт Лозим аст!</h1>
 <strong>Мурургари шумо ҶаваСкриптро дастгирӣ намекунад ё ҶаваСкрипт хомӯш карда шудааст.
-Ин саҳифа дуруст кор хоҳад карда, дар ҳолате, ки ҶаваСкрипт фаъол карда шуда бошад.</strong></noscript>',
+Ин саҳифа дуруст кор хоҳад карда, дар ҳолате, ки ҶаваСкрипт фаъол карда шуда бошад.</strong>',
 	'coll-intro_text'                 => 'Шумо метавонед саҳифаҳоро гирдовари кунед, тавлид ва бор кардани парвандаҳои PDF аз саҳифаҳои гирдовариҳо ва захир кардани гирдовариҳо барои истифодаи баъдӣ ё бо ҳам дидани онҳо бо дигарон.
 
 Барои иттилооти бештар нигаред ба [[{{MediaWiki:Coll-helppage}}|саҳифаи роҳнамо оиди гирдовариҳо]].',
@@ -2662,12 +2662,12 @@ $messages['tg-cyrl'] = array(
 	'coll-revision'                   => 'Нусха: %PARAM%',
 	'coll-save_collection_title'      => 'Захира кардани гирдовари',
 	'coll-save_collection_text'       => 'Барои захираи ин гирдовари барои истифодаи баъдӣ, навъи гирдовариро интихоб кунед ва унвони саҳифаро ворид кунед:',
-	'coll-login_to_save'              => 'Агар майли захира кардани гирдовариҳоро барои истифодаи баъдӣ дошта бошед, лутфан <a href="$1">ба систем ворид шавед ё ҳисоби ҷадидиро эчод кунед</a>.',
+	'coll-login_to_save'              => 'Агар майли захира кардани гирдовариҳоро барои истифодаи баъдӣ дошта бошед, лутфан [[Special:Userlogin|ба систем ворид шавед ё ҳисоби ҷадидиро эчод кунед]].',
 	'coll-personal_collection_label'  => 'Гирдоварии шахсӣ:',
 	'coll-community_collection_label' => 'Гирдоварии умум:',
 	'coll-save_collection'            => 'Захираи Гирдовари',
 	'coll-overwrite_title'            => 'Саҳифа вуҷуд дорад. Ба рӯи он аз навишта шавад?',
-	'coll-overwrite_text'             => 'Саҳифае бо номи $1 аллакай вуҷуд дорад.
+	'coll-overwrite_text'             => 'Саҳифае бо номи [[:$1]] аллакай вуҷуд дорад.
 Оё шумо мехоҳед онро бо гирдоварии худ иваз кунед?',
 	'coll-yes'                        => 'Бале',
 	'coll-no'                         => 'Не',
@@ -2682,7 +2682,7 @@ $messages['tg-cyrl'] = array(
 	'coll-generating_pdf_title'       => 'Дар ҳоли ҳосили PDF',
 	'coll-notfound_title'             => 'Гирдовари Ёфт Нашуд',
 	'coll-notfound_text'              => 'Саҳифаи гирдоварӣ ёфт нашуд.',
-	'coll-return_to_collection'       => '<p>Бозгашт ба <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Бозгашт ба [[:$1]]',
 	'coll-pages_removed'              => 'Саҳифаҳои зер наметавонанд ироаъ шаванд ва аз парвандаи PDF пок шуданд:',
 	'coll-book_title'                 => 'Фармудани Китоби Чопӣ',
 	'coll-book_text'                  => 'Шумо метавонед китоби ба табъ расидаро, ки саҳифаи гирдовариҳои шуморо дорост бо ташриф овардан ба яке аз ҳамкорони чоп-дархост фармоед:',
@@ -2717,9 +2717,9 @@ $messages['uk'] = array(
 	'coll-page'                       => 'сторінка',
 	'coll-pages'                      => 'сторінки',
 	'coll-download_as_pdf'            => 'Завантажити як PDF',
-	'coll-noscript_text'              => '<noscript><h1>Потрібен JavaScript!</h1>
+	'coll-noscript_text'              => '<h1>Потрібен JavaScript!</h1>
 <strong>Ваш браузер не підтримує JavaScript або ця підтримка вимкнена.
-Ця сторінка не буде працювати правильно, якщо JavaScript не ввімкнений.</strong></noscript>',
+Ця сторінка не буде працювати правильно, якщо JavaScript не ввімкнений.</strong>',
 	'coll-intro_text'                 => "Ви можете об'єднати сторінки в колекцію, створити і завантажити PDF-файл з набором сторінок, або зберегти колекцію сторінок для наступної роботи або обміну.
 
 Подробиці можна знайти на [[{{MediaWiki:Coll-helppage}}|довідковій сторінці про колекції]].",
@@ -2759,12 +2759,12 @@ $messages['uk'] = array(
 	'coll-revision'                   => 'Версія: %PARAM%',
 	'coll-save_collection_title'      => 'Зберегти колекцію',
 	'coll-save_collection_text'       => 'Щоб зберегти колекцію для подальшого використання, оберіть тип колекції і введіть назву сторінки:',
-	'coll-login_to_save'              => 'Щоб зберегти колекцію для подальшого використання, будь ласка, <a href="$1">ввійдіть до системи або створить обліковий запис</a>.',
+	'coll-login_to_save'              => 'Щоб зберегти колекцію для подальшого використання, будь ласка, [[Special:Userlogin|ввійдіть до системи або створить обліковий запис]].',
 	'coll-personal_collection_label'  => 'Особиста колекція:',
 	'coll-community_collection_label' => 'Колекція спільноти:',
 	'coll-save_collection'            => 'Зберегти колекцію',
 	'coll-overwrite_title'            => 'Сторінка існує. Перезаписати?',
-	'coll-overwrite_text'             => 'Сторінка з назвою $1 вже існує.
+	'coll-overwrite_text'             => 'Сторінка з назвою [[:$1]] вже існує.
 Ви хочете, щоб вона була замінена вашою колекцією?',
 	'coll-yes'                        => 'Так',
 	'coll-no'                         => 'Ні',
@@ -2787,7 +2787,7 @@ $messages['uk'] = array(
 [Натисніть тут], щоб завантажити його на свій комп'ютер.",
 	'coll-notfound_title'             => 'Колекція не знайдена',
 	'coll-notfound_text'              => 'Неможливо знайти сторінку колекції.',
-	'coll-return_to_collection'       => '<p>Назад до <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Назад до [[:$1]]',
 	'coll-pages_removed'              => 'Наступні сторінки не можуть бути оброблені і були вилучені з PDF-файлу: %(articles)s',
 	'coll-book_title'                 => 'Замовити друковану книгу',
 	'coll-book_text'                  => 'Ви можете замовити друковану книгу, що містить вашу колекцію сторінок, скориставшись однією з наступних пропозицій друку за запитом:',
@@ -2815,9 +2815,9 @@ $messages['vi'] = array(
 	'coll-page'                       => 'trang',
 	'coll-pages'                      => 'trang',
 	'coll-download_as_pdf'            => 'Tải xuống PDF',
-	'coll-noscript_text'              => '<noscript><h1>Yêu cầu phải có JavaScript!</h1>
+	'coll-noscript_text'              => '<h1>Yêu cầu phải có JavaScript!</h1>
 <strong>Trình duyệt của bạn không hỗ trợ JavaScript hoặc JavaScript đã bị tắt.
-Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaScript.</strong></noscript>',
+Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaScript.</strong>',
 	'coll-intro_text'                 => 'Bạn có thể tập hợp các trang, tạo ra và tải về một tập tin PDF từ tập hợp trang đó và lưu tập hợp lại để dùng hoặc chia sẻ chúng về sau.
 
 Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] để biết thêm thông tin.',
@@ -2857,12 +2857,12 @@ Bạn có muốn thêm chúng không?',
 	'coll-revision'                   => 'Phiên bản: %PARAM%',
 	'coll-save_collection_title'      => 'Lưu tập hợp',
 	'coll-save_collection_text'       => 'Để lưu tập hợp này lại sau này dùng, hãy chọn một kiểu tập hợp và gõ vào tựa đề trang:',
-	'coll-login_to_save'              => 'Nếu bạn muốn lưu tập hợp để sau này dùng, xin hãy <a href="$1">đăng nhập hoặc mở tài khoản</a>.',
+	'coll-login_to_save'              => 'Nếu bạn muốn lưu tập hợp để sau này dùng, xin hãy [[Special:Userlogin|đăng nhập hoặc mở tài khoản]].',
 	'coll-personal_collection_label'  => 'Tập hợp cá nhân:',
 	'coll-community_collection_label' => 'Tập hợp cộng đồng:',
 	'coll-save_collection'            => 'Lưu tập hợp',
 	'coll-overwrite_title'            => 'Trang đã tồn tại. Ghi đè?',
-	'coll-overwrite_text'             => 'Trang với tên $1 đã tồn tại.
+	'coll-overwrite_text'             => 'Trang với tên [[:$1]] đã tồn tại.
 Bạn có muốn thay thế nó bằng tập hợp của bạn?',
 	'coll-yes'                        => 'Có',
 	'coll-no'                         => 'Không',
@@ -2887,7 +2887,7 @@ Nếu nó không hoạt động, xin hãy nhấn nút refresh trên trình duy�
 về tập hợp]] để có các cách phát triển nó lên.',
 	'coll-notfound_title'             => 'Không tìm thấy tập hợp',
 	'coll-notfound_text'              => 'Không tìm thấy trang tập hợp.',
-	'coll-return_to_collection'       => '<p>Quay trở về <a href="$1">$2</a></p>',
+	'coll-return_to_collection'       => 'Quay trở về [[:$1]]',
 	'coll-pages_removed'              => 'Các trang sau không thể duyệt được và đã bị loại ra khỏi tập tin PDF: %(bài)',
 	'coll-pdf_error_text'             => 'Có lỗi khi tạo ra tập tin PDF.',
 	'coll-book_title'                 => 'Đặt sách in',
