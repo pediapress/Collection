@@ -518,7 +518,6 @@ class Collection extends SpecialPage {
 		$response = $json->decode( $response );
 		$_SESSION['wsCollectionPDF'] = array(
 			'iframe_src' => $response->iframe_src,
-			'referrer_link' => $referrer->getFullURL(),
 			'referrer_name' => $referrer->getPrefixedText(),
 		);
 		$wgOut->redirect( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generating_pdf/' ) );
@@ -535,12 +534,17 @@ class Collection extends SpecialPage {
 
 		$wgOut->setPageTitle( wfMsg( 'coll-generating_pdf_title' ) );
 		$iframe_src = $pdfInfo['iframe_src'];
-		$wgOut->addHTML( "<iframe width=\"100%\" height=\"200\" src=\"$iframe_src\" name=\"PDF Generation\" frameborder=\"0\"></iframe>" );
-		$wgOut->addWikiText( wfMsg( 'coll-pdf_not_satisfied' ) );
-		$wgOut->addHTML( wfMsg( 'coll-return_to_collection',
-			htmlspecialchars( $pdfInfo['referrer_link'] ),
-			htmlspecialchars( $pdfInfo['referrer_name'] )
-		) );
+		$wgOut->addHTML( Xml::tags( 'iframe',
+			array(
+				'width' => '100%',
+				'height' => '200',
+				'src' => $iframe_src,
+				'name' => 'PDF Generation',
+				'frameborder' => 0, ),
+			 '' )
+		);
+		$wgOut->addWikiMsg( 'coll-pdf_not_satisfied' );
+		$wgOut->addWikiMsg( 'coll-return_to_collection', $pdfInfo['referrer_name'] );
 	}
 	
 	function generatePDF() {
@@ -622,8 +626,10 @@ class Collection extends SpecialPage {
 	private function outputIntro() {
 		global $wgOut;
 
-		$wgOut->addHTML( wfMsg( 'coll-noscript_text') );
-		$wgOut->addWikiText( wfMsg( 'coll-intro_text' ) );
+		$wgOut->addHTML( '<noscript>' );
+		$wgOut->addWikiMsg( 'coll-noscript_text' );
+		$wgOut->addHTML( '</noscript>' );
+		$wgOut->addWikiMsg( 'coll-intro_text' );
 	}
 
 	private function outputArticleList() {
@@ -714,10 +720,10 @@ EOS
 	}
 
 	private function outputDownloadSection() {
-		$downloadTitle = wfMsg( 'coll-download_title' );
-		$downloadText = wfMsg( 'coll-download_text' );
-		$buttonLabel = wfMsg( 'coll-download_pdf' );
-		$url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generate_pdf/' );
+		$downloadTitle = wfMsgHtml( 'coll-download_title' );
+		$downloadText = wfMsgHtml( 'coll-download_text' );
+		$buttonLabel = wfMsgHtml( 'coll-download_pdf' );
+		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generate_pdf/' ) );
 		$html = <<<EOS
 <h2><span class="mw-headline">$downloadTitle</span></h2>
 <p>$downloadText</p>
@@ -745,10 +751,10 @@ EOS
 			$communityColl = wfMsgHtml( 'coll-community_collection_label' );
 			$saveColl = wfMsgHtml( 'coll-save_collection' );
 
-			$personalTitle = $wgUser->getUserPage()->getPrefixedText(). '/' . wfMsg( 'coll-collections' ) . '/';
-			$communityTitle = Title::makeTitle( $wgCommunityCollectionNamespace, wfMsg( 'coll-collections' ) )->getPrefixedText() . '/';
+			$personalTitle = htmlspecialchars( $wgUser->getUserPage()->getPrefixedText(). '/' . wfMsg( 'coll-collections' ) . '/' );
+			$communityTitle = htmlspecialchars( Title::makeTitle( $wgCommunityCollectionNamespace, wfMsg( 'coll-collections' ) )->getPrefixedText() . '/' );
 
-			$url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'save_collection/' );
+			$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'save_collection/' ) );
 			$html .= <<<EOS
 <form id="saveForm" action="$url" method="POST">
 	<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked"></input>
@@ -766,8 +772,7 @@ EOS
 EOS
 			;
 		} else {
-			$href = SkinTemplate::makeSpecialUrl( 'Userlogin' );
-			$html .= '<p>' . wfMsg( 'coll-login_to_save', $href ) . '</p>';
+			$html .= wfMsgExt( 'coll-login_to_save', array( 'parse' ) );
 		}
 		$this->outputBox( $html );
 	}
@@ -778,11 +783,11 @@ EOS
 		$wgOut->setPageTitle( wfMsg( 'coll-save_collection' ) );
 
 		$wgOut->addWikiText( '==' . wfMsg( 'coll-overwrite_title' ) . '==' );
-		$wgOut->addWikiText( wfMsg( 'coll-overwrite_text', $title->getPrefixedText() ) );
+		$wgOut->addWikiMsg( 'coll-overwrite_text', $title->getPrefixedText() );
 		$yes = wfMsgHtml( 'coll-yes' );
 		$no = wfMsgHtml( 'coll-no' );
 		$escapedTitle = htmlspecialchars( $title->getPrefixedText() );
-		$url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'save_collection/' );
+		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'save_collection/' ) );
 		$wgOut->addHTML( <<<EOS
 <form action="$url" method="POST">
 	<input name="overwrite" type="submit" value="$yes"></input>
@@ -798,14 +803,12 @@ EOS
 
 		$wgOut->setPageTitle( wfMsg( 'coll-load_collection' ) );
 
-		$wgOut->addWikiText( wfMsg( 'coll-load_overwrite_text', array(
-			'title' => $title->getPrefixedText()
-		) ) );
+		$wgOut->addWikiMsg( 'coll-load_overwrite_text' );
 		$overwrite = wfMsgHtml( 'coll-overwrite' );
 		$append = wfMsgHtml( 'coll-append' );
 		$cancel = wfMsgHtml( 'coll-cancel' );
 		$escapedTitle = htmlspecialchars( $title->getPrefixedText() );
-		$url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'load_collection/' );
+		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'load_collection/' ) );
 		$wgOut->addHTML( <<<EOS
 <form action="$url" method="POST">
 	<input name="overwrite" type="submit" value="$overwrite"></input>
@@ -842,16 +845,17 @@ EOS
 		;
 
 		foreach( $this->mPODPartners as $partner => $partnerData ) {
-			$formurl = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'post_pdf/' );
-			$url = $partnerData['url'];
-			$logoURL = $partnerData['logourl'];
-			$partnerName = $partnerData['name'];
+			$formurl = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'post_pdf/' ) );
+			$encPartner = htmlspecialchars( $partner );
+			$url = htmlspecialchars( $partnerData['url'] );
+			$logoURL = htmlspecialchars( $partnerData['logourl'] );
+			$partnerName = htmlspecialchars( $partnerData['name'] );
 			$orderLabel = wfMsgHtml( 'coll-order_from_pp', $partnerName );
 			$aboutLabel = wfMsgHtml( 'coll-about_pp', $partnerName );
 			$html .= <<<EOS
 <p>
 	<form action="$formurl" method="GET">
-		<input type="hidden" name="partner" value="$partner"/>
+		<input type="hidden" name="partner" value="$encPartner"/>
 		<input type="submit" value="$orderLabel"/>
 		<a href="$url" target="_blank">$aboutLabel&nbsp;<img src="$logoURL" alt="$partnerName"/></a>
 	</form>
@@ -969,14 +973,14 @@ EOS
 		if ( is_null( $wgArticle ) || !$wgArticle->exists() ) {
 			// no op
 		} else if ( self::isCollectionPage( $wgTitle, $wgArticle) ) {
-			$params = "?colltitle=" . $wgTitle->getPrefixedDBKey();
+			$params = "?colltitle=" . $wgTitle->getPrefixedUrl();
 			$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 				'Collection',
 				'load_collection/'
 			) . $params );
 			print "<li><a href=\"$href\">$loadCollection</a></li>";
 		} else if ( $wgTitle->getNamespace() == NS_MAIN ) { // TODO: only NS_MAIN?
-			$params = "?arttitle=" . $wgTitle->getPartialURL() . "&oldid=" . $wgArticle->getOldID();
+			$params = "?arttitle=" . $wgTitle->getPrefixedUrl() . "&oldid=" . $wgArticle->getOldID();
 
 			if ( self::findArticle( $wgTitle->getPrefixedText(), $wgArticle->getOldID() ) == -1 ) {
 				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
