@@ -56,6 +56,9 @@ Python packages: *PIL* and *ReportLab*.
  or get the code from http://code.pediapress.com/ and install it with::
 
     python setup.py install
+  
+*PHP with cURL support*
+ Install PHP with cURL support (see http://de2.php.net/manual/en/book.curl.php)
 
 Installation and Configuration
 ==============================
