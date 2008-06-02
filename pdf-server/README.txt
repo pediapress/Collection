@@ -57,9 +57,6 @@ Python packages: *PIL* and *ReportLab*.
 
     python setup.py install
   
-*PHP with cURL support*
- Install PHP with cURL support (see http://de2.php.net/manual/en/book.curl.php)
-
 Installation and Configuration
 ==============================
 

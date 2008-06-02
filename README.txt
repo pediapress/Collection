@@ -19,19 +19,17 @@ and the `Commonwealth of Learning`_.
 
 Copyright (C) 2008, PediaPress GmbH
 
-Bleeding-Edge Note
-==================
+Prerequisites
+=============
 
-The code for this extension is currently in flux because we are in the
-transition process towards a *PDF generation server* that decouples PDF
-and ZIP file generation from the MediaWiki. As everything is pretty much
-"bleeding edge code" right now, please *do not* install mwlib and mwlib.rl
-from .egg files (e.g. via ``easy_install mwlib``), but pull the code from
-the Mercurial repostiories hosted at http://code.pediapress.com/.
+Install PHP with cURL support
+-----------------------------
 
+Currently Collection extension needs PHP with cURL support,
+see http://de2.php.net/manual/en/book.curl.php
 
-Prerequisites: Install and Setup a PDF Server
-=============================================
+Install and Setup a PDF Server
+------------------------------
 
 PDF and ZIP file generation is done by a PDF Server, which can run separately
 from the MediaWiki installation and can be shared by different MediaWikis.
