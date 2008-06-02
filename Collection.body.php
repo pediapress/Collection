@@ -599,7 +599,7 @@ class Collection extends SpecialPage {
 			return;
 		}
 
-		$response = Http::post( $this->mPODPartners[$partner]['posturl'] );
+		$response = self::post( $this->mPODPartners[$partner]['posturl'], array() );
 		if ( !$response ) {
 			$wgOut->showErrorPage( 'coll-post_failed_title', 'coll-post_failed_msg' );
 			return;
