@@ -104,17 +104,21 @@ Collection.prototype = {
 	getItems: function() {
 		var self = this;
 		sajax_request_type = "GET";
-		sajax_do_call('wfAjaxGetCollection', [], function(xhr) {
-			var result;
-			try {
-				result = JSON.parse(xhr.responseText);
-			} catch(e) {
-				alert(gettext('errorResponseText'));
-				return;
-			}
-			self.deserialize(result.collection);
-			self.notify();
-		});
+		try {
+			sajax_do_call('wfAjaxGetCollection', [], function(xhr) {
+				var result;
+				try {
+					result = JSON.parse(xhr.responseText);
+				} catch(e) {
+					alert(gettext('errorResponseText'));
+					return;
+				}
+				self.deserialize(result.collection);
+				self.notify();
+			});
+		} catch (e) {
+			alert('XMLHttpRequest failed: ' + e);
+		}
 	},
 
 	setItems: function(items) {
@@ -125,11 +129,15 @@ Collection.prototype = {
 
 	post: function(callback/*=null*/) {
 		sajax_request_type = "POST";
-		sajax_do_call('wfAjaxPostCollection', [this.serialize()], function(xhr) {
-			if (callback) {
-				callback(xhr);
-			}
-		});
+		try {
+			sajax_do_call('wfAjaxPostCollection', [this.serialize()], function(xhr) {
+				if (callback) {
+					callback(xhr);
+				}
+			});
+		} catch (e) {
+			alert('XMLHttpRequest failed: ' + e);
+		}
 	},
 
 	serialize: function() {
