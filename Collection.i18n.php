@@ -320,14 +320,40 @@ $messages['bg'] = array(
 );
 
 /** Catalan (Català)
+ * @author Jordi Roqué
  * @author SMP
  */
 $messages['ca'] = array(
-	'coll-page'     => 'pàgina',
-	'coll-pages'    => 'pàgines',
-	'coll-yes'      => 'S&iacute;',
-	'coll-no'       => 'No',
-	'coll-about_pp' => 'Quant a $1',
+	'coll-add_page'             => 'Afegir pàgina',
+	'coll-remove_page'          => 'Treure pàgina',
+	'coll-add_category'         => 'Afegir categoria',
+	'coll-empty'                => 'buit',
+	'coll-page'                 => 'pàgina',
+	'coll-pages'                => 'pàgines',
+	'coll-download_as_pdf'      => 'Baixa-ho com a PDF',
+	'coll-noscript_text'        => "<h1>Es necessita el JavaScript!</h1>
+<strong>El vostre navegador no suporta el JavaScript o aquest hi està blocat.
+Aquesta pàgina no funcionarà correctament si no el poseu o l'activeu.</strong>",
+	'coll-title'                => 'Títol:',
+	'coll-subtitle'             => 'Subtítol:',
+	'coll-contents'             => 'Contingut',
+	'coll-create_chapter'       => 'Crear un nou capítol',
+	'coll-sort_alphabetically'  => 'Ordenar les pàgines alfabèticament',
+	'coll-rename'               => 'Reanomena',
+	'coll-mwpdf_error_title'    => "No s'ha pogut generar el PDF",
+	'coll-overwrite_title'      => 'La pàgina existeix. Voleu substituir-la?',
+	'coll-yes'                  => 'S&iacute;',
+	'coll-no'                   => 'No',
+	'coll-generating_pdf_title' => 'Generant PDF',
+	'coll-generating_pdf_text'  => "'''Si us plau, espereu mentre es genera l'arxiu PDF'''
+
+Progressió: '''%(progressió)d%%'''.
+
+Aquesta pàgina s'hauria de refrescar automàticament de tant en tant. Si no ho fes, pitgeu el botó de refresc del vostre navegador.",
+	'coll-return_to_collection' => 'Tornar a [[:$1]]',
+	'coll-pdf_error_text'       => "S'ha produït un error mentre es generava l'arxiu PDF.",
+	'coll-book_title'           => 'Encarregar llibre imprès',
+	'coll-about_pp'             => 'Quant a $1',
 );
 
 /** Czech (Česky)
@@ -441,6 +467,7 @@ $messages['da'] = array(
 /** German (Deutsch)
  * @author Raimond Spekking
  * @author VolkerHaas
+ * @author Siebrand
  */
 $messages['de'] = array(
 	'coll-desc'                       => '[[Special:Collection|Sammle Seiten]], erzeuge PDFs',
@@ -805,6 +832,8 @@ Quere engadilas?',
 	'coll-mwzip_error_title'          => 'Non se pode xerar a páxina da colección',
 	'coll-mwzip_error_msg'            => 'Ocorreu un erro durante a xeración da páxina da colección.',
 	'coll-notitle_title'              => 'O título da páxina non pode ser determinado.',
+	'coll-post_failed_title'          => 'A solicitude do POST fallou',
+	'coll-post_failed_msg'            => 'Fallou o POST solicitado a $1.',
 	'coll-enter_title'                => 'Escriba un título para a colección:',
 	'coll-error_reponse'              => 'Ocorreu un erro no servidor',
 	'coll-empty_collection'           => 'Colección baleira',
@@ -843,8 +872,14 @@ Consulte [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións
 	'coll-notfound_text'              => 'Non se pode atopar a páxina da colección.',
 	'coll-return_to_collection'       => 'Voltar a [[:$1]]',
 	'coll-pages_removed'              => 'As seguintes páxinas non poden ser renderizadas e serán eliminadas do arquivo PDF: %(articles)s',
+	'coll-pdf_error_text'             => 'Houbo un erro mentres se xeraba o ficheiro PDF.',
+	'coll-book_title'                 => 'Encargar un libro impreso',
+	'coll-book_text'                  => 'Pode encargar un libro impreso que conteña a súa páxina de colección visitando un dos seguintes compañeiros de solicitudes de impresión:',
 	'coll-order_from_pp'              => 'Encargar un libro a $1',
 	'coll-about_pp'                   => 'Acerca de $1',
+	'coll-invalid_podpartner_title'   => 'Compañeiro de solicitudes de impresión (POD) inválido',
+	'coll-invalid_podpartner_msg'     => 'O compañeiro de solicitudes de impresión (POD) indicado é inválido.
+Por favor, contacte co seu administrador MediaWiki.',
 );
 
 /** Manx (Gaelg)
@@ -880,6 +915,7 @@ $messages['haw'] = array(
 
 /** Hindi (हिन्दी)
  * @author Kaustubh
+ * @author Siebrand
  */
 $messages['hi'] = array(
 	'coll-desc'                       => '[[Special:Collection|पन्ने जमा करें]], पीडीएफ बनायें',
@@ -1570,6 +1606,34 @@ $messages['mr'] = array(
 कृपया मीडियाविकि प्रबंधकाशी संपर्क करा.',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Slomox
+ */
+$messages['nds'] = array(
+	'coll-add_page'             => 'Sied tofögen',
+	'coll-remove_page'          => 'Sied rutnehmen',
+	'coll-add_category'         => 'Kategorie tofögen',
+	'coll-empty'                => 'leddig',
+	'coll-page'                 => 'Sied',
+	'coll-pages'                => 'Sieden',
+	'coll-download_as_pdf'      => 'As PDF dalladen',
+	'coll-download_pdf'         => 'PDF dalladen',
+	'coll-remove'               => 'Rutnehmen',
+	'coll-title'                => 'Titel:',
+	'coll-subtitle'             => 'Ünnertitel:',
+	'coll-sort_alphabetically'  => 'Sieden alphabeetsch sorteren',
+	'coll-rename'               => 'Ne’en Naam geven',
+	'coll-overwrite_title'      => 'Sied gifft dat al. Överschrieven?',
+	'coll-yes'                  => 'Jo',
+	'coll-no'                   => 'Nee',
+	'coll-overwrite'            => 'Överschrieven',
+	'coll-cancel'               => 'Afbreken',
+	'coll-generating_pdf_title' => 'An’t PDF opstellen',
+	'coll-return_to_collection' => 'Trüch na [[:$1]]',
+	'coll-order_from_pp'        => 'Book bestellen bi $1',
+	'coll-about_pp'             => 'Över $1',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  * @author SPQRobin
@@ -1625,7 +1689,7 @@ Wilt u ze toevoegen?",
 	'coll-mwzip_error_msg'            => 'Er is een fout opgetreden tijdens het maken van de paginaverzameling.',
 	'coll-notitle_title'              => 'De titel van de pagina kon niet vastgesteld worden.',
 	'coll-post_failed_title'          => 'POST-verzoek mislukt',
-	'coll-post_failed_msg'            => 'Het POST-verzoek is mislukt.',
+	'coll-post_failed_msg'            => 'Het POST-verzoek naar $1 is mislukt.',
 	'coll-enter_title'                => 'Voer een titel in voor de verzameling:',
 	'coll-error_reponse'              => 'De server heeft een foutmelding teruggegeven',
 	'coll-empty_collection'           => 'Lege verzameling',
@@ -1690,8 +1754,8 @@ $messages['nn'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
- * @author H92
  * @author Siebrand
+ * @author H92
  */
 $messages['no'] = array(
 	'coll-desc'                       => 'Lag [[Special:Collection|sidesamlinger]] og generer PDF-filer',
@@ -2132,8 +2196,8 @@ Se isto não acontecer, por favor, carregue no botão de refrescar do seu \"brow
 
 /** Russian (Русский)
  * @author Александр Сигачёв
- * @author Ahonc
  * @author Siebrand
+ * @author Ahonc
  */
 $messages['ru'] = array(
 	'coll-desc'                       => '[[Special:Collection|Собирает коллекции страниц]], создаёт PDF',
@@ -2457,7 +2521,7 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälp sidan om samlingar]] för mer informatio
 	'coll-mwzip_error_msg'            => 'Ett fel uppstod under generering av sidsamling.',
 	'coll-notitle_title'              => 'Titeln av sidan kunde inte fastställas.',
 	'coll-post_failed_title'          => 'POST-begäring avslagen',
-	'coll-post_failed_msg'            => 'POST-begäringen avslagen.',
+	'coll-post_failed_msg'            => 'POST-begäringen till $1 avslagen.',
 	'coll-enter_title'                => 'Skriv in samlingens namn:',
 	'coll-error_reponse'              => 'Felrespons från servern',
 	'coll-empty_collection'           => 'Tom samling',
@@ -2603,6 +2667,7 @@ $messages['tet'] = array(
 
 /** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
  * @author Ibrahim
+ * @author Siebrand
  */
 $messages['tg-cyrl'] = array(
 	'coll-desc'                       => '[[Special:Collection|Гирдоварии саҳифаҳо]], тавлиди PDFҳо',
