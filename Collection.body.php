@@ -494,9 +494,6 @@ class Collection extends SpecialPage {
 		global $wgSharedBaseURL;
 		global $wgPDFTemplateBlacklist;
 		
-		if( session_id() == '' ) {
-			wfSetupSession();
-		}
 		$response = self::post( $wgPDFServer, array(
 			'command' => 'pdf_generate',
 			'metabook' => $this->buildJSONCollection( $collection ),
@@ -516,24 +513,22 @@ class Collection extends SpecialPage {
 		
 		$json = new Services_JSON();
 		$response = $json->decode( $response );
-		$_SESSION['wsCollectionPDF'] = array(
-			'iframe_src' => $response->iframe_src,
-			'referrer_name' => $referrer->getPrefixedText(),
-		);
-		$wgOut->redirect( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generating_pdf/' ) );
+		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generating_pdf/' );
+		$wgOut->redirect( wfAppendQuery( $redirect,
+			'return_to=' . urlencode( $referrer->getPrefixedText() )
+			. '&iframe_src=' . urlencode( $response->iframe_src ) ) );
 	}
 
 	function generatingPDF() {
 		global $wgOut;
-		global $wgTitle;
 		global $wgRequest;
 
 		$this->setHeaders();
 
-		$pdfInfo = $_SESSION['wsCollectionPDF'];
-
+		$iframe_src = $wgRequest->getVal( 'iframe_src' );
+		$return_to = $wgRequest->getVal( 'return_to' );
+		
 		$wgOut->setPageTitle( wfMsg( 'coll-generating_pdf_title' ) );
-		$iframe_src = $pdfInfo['iframe_src'];
 		$wgOut->addHTML( Xml::tags( 'iframe',
 			array(
 				'width' => '100%',
@@ -544,7 +539,9 @@ class Collection extends SpecialPage {
 			 '' )
 		);
 		$wgOut->addWikiMsg( 'coll-pdf_not_satisfied' );
-		$wgOut->addWikiMsg( 'coll-return_to_collection', $pdfInfo['referrer_name'] );
+		if ( $return_to ) {
+			$wgOut->addWikiMsg( 'coll-return_to_collection', $return_to );
+		}
 	}
 	
 	function generatePDF() {
