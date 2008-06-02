@@ -894,16 +894,16 @@ EOS
 
 		if ( $skinTemplate->iscontent && ( $action == '' || $action == 'view' || $action == 'purge' ) ) {
 			if ( self::isCollectionPage( $skinTemplate->mTitle, $wgArticle ) ) {
-				$params = '?colltitle=' . wfUrlencode( $skinTemplate->mTitle->getPrefixedDBKey() );
+				$params = 'colltitle=' . wfUrlencode( $skinTemplate->mTitle->getPrefixedDBKey() );
 				$nav_urls['download_as_pdf'] = array(
-					'href' => SkinTemplate::makeSpecialUrlSubpage(
+					'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 						'Collection',
 						'download_collection_pdf/'
-					) . $params,
+					), $params ),
 					'text' => wfMsg( 'coll-download_as_pdf' ),
 				);
 			} else {
-				$params = '?arttitle=' . $skinTemplate->mTitle->getPrefixedURL();
+				$params = 'arttitle=' . $skinTemplate->mTitle->getPrefixedURL();
 				if( $wgArticle ) {
 					$oldid = $wgArticle->getOldID();
 					if ( $oldid ) {
@@ -911,10 +911,10 @@ EOS
 					}
 				}
 				$nav_urls['download_as_pdf'] = array(
-					'href' => SkinTemplate::makeSpecialUrlSubpage(
+					'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 						'Collection',
 						'download_article_pdf/'
-					) . $params,
+					), $params ),
 					'text' => wfMsg( 'coll-download_as_pdf' )
 				);
 			}
@@ -971,20 +971,20 @@ EOS
 		if ( is_null( $wgArticle ) || !$wgArticle->exists() ) {
 			// no op
 		} else if ( self::isCollectionPage( $wgTitle, $wgArticle) ) {
-			$params = "?colltitle=" . $wgTitle->getPrefixedUrl();
-			$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+			$params = "colltitle=" . $wgTitle->getPrefixedUrl();
+			$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 				'Collection',
 				'load_collection/'
-			) . $params );
+			), $params ) );
 			print "<li><a href=\"$href\">$loadCollection</a></li>";
 		} else if ( $wgTitle->getNamespace() == NS_MAIN ) { // TODO: only NS_MAIN?
-			$params = "?arttitle=" . $wgTitle->getPrefixedUrl() . "&oldid=" . $wgArticle->getOldID();
+			$params = "arttitle=" . $wgTitle->getPrefixedUrl() . "&oldid=" . $wgArticle->getOldID();
 
 			if ( self::findArticle( $wgTitle->getPrefixedText(), $wgArticle->getOldID() ) == -1 ) {
-				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+				$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 					'Collection',
 					'add_article/'
-				)  . $params );
+				), $params ) );
 				print "<li><a href=\"$href\">$addArticle</a></li>";
 			} else {
 				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
@@ -994,11 +994,11 @@ EOS
 				print "<li><a href=\"$href\">$removeArticle</a></li>";
 			}
 		} else if ( $wgTitle->getNamespace() == NS_CATEGORY ) {
-			$params = "?cattitle=" . $wgTitle->getPartialURL();
-			$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+			$params = "cattitle=" . $wgTitle->getPartialURL();
+			$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 				'Collection',
 				'add_category/'
-			) . $params );
+			), $params ) );
 			print "<li><a href=\"$href\">$addCategory</a></li>";
 		}
 
