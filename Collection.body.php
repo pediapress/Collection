@@ -494,6 +494,7 @@ class Collection extends SpecialPage {
 		global $wgSharedBaseURL;
 		global $wgPDFTemplateBlacklist;
 		
+		$errorMessage = '';
 		$response = self::post( $wgPDFServer, array(
 			'command' => 'pdf_generate',
 			'metabook' => $this->buildJSONCollection( $collection ),
@@ -505,9 +506,9 @@ class Collection extends SpecialPage {
 			'finished_template' => wfMsg( 'coll-pdf_finished_text' ),
 			'removed_template' => wfMsg( 'coll-pages_removed' ),
 			'error_template' => wfMsg( 'coll-pdf_error_text' ),
-		) );
+		), $errorMessage );
 		if ( !$response ) {
-			$wgOut->showErrorPage( 'coll-post_failed_title', 'coll-post_failed_msg', array( $wgPDFServer ) );
+			$wgOut->showErrorPage( 'coll-post_failed_title', 'coll-post_failed_msg', array( $wgPDFServer, $errorMessage ) );
 			return;
 		}
 		
@@ -597,9 +598,10 @@ class Collection extends SpecialPage {
 		}
 
 		$url = $this->mPODPartners[$partner]['posturl'];
-		$response = self::post( $url, array() );
+		$errorMessage = '';
+		$response = self::post( $url, array(), $errorMessage );
 		if ( !$response ) {
-			$wgOut->showErrorPage( 'coll-post_failed_title', 'coll-post_failed_msg', array(	$url ) );
+			$wgOut->showErrorPage( 'coll-post_failed_title', 'coll-post_failed_msg', array(	$url, $errorMessage ) );
 			return;
 		}
 		$postData = $json->decode( $response );
@@ -1032,7 +1034,7 @@ EOS
 		;
 	}
 
-	static function post( $url, $postFields ) {
+	static function post( $url, $postFields, &$errorMessage ) {
 		global $wgHTTPTimeout, $wgHTTPProxy, $wgVersion, $wgTitle;
 	
 		wfDebug( __METHOD__ . ": $method $url\n" );
@@ -1053,14 +1055,17 @@ EOS
 		curl_exec( $c );
 		$text = ob_get_contents();
 		ob_end_clean();
-	
-		# Don't return the text of error messages, return false on error
+		
+		$errorMessage = '';
+		
 		if ( curl_getinfo( $c, CURLINFO_HTTP_CODE ) != 200 ) {
 			$text = false;
+			$errorMessage = 'HTTP status ' . curl_getinfo( $c, CURLINFO_HTTP_CODE );
 		}
 		# Don't return truncated output
 		if ( curl_errno( $c ) != CURLE_OK ) {
 			$text = false;
+			$errorMessage = curl_error( $c );
 		}
 		curl_close( $c );
 		return $text;
