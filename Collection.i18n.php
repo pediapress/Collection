@@ -179,8 +179,8 @@ $messages['af'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
- * @author OsamaK
  * @author Siebrand
+ * @author OsamaK
  */
 $messages['ar'] = array(
 	'coll-desc'                       => '[[Special:Collection|صفحات مجموعة]]، تولد PDFs',
@@ -232,7 +232,7 @@ $messages['ar'] = array(
 	'coll-mwzip_error_msg'            => 'حدث خطأ أثناء توليد مجموعة الصفحة.',
 	'coll-notitle_title'              => 'عنوان الصفحة لم يمكن تحديده.',
 	'coll-post_failed_title'          => 'طلب POST فشل',
-	'coll-post_failed_msg'            => 'طلب POST فشل.',
+	'coll-post_failed_msg'            => 'طلب POST فشل ($2).',
 	'coll-enter_title'                => 'أدخل العنوان للمجموعة:',
 	'coll-error_reponse'              => 'خطأ استجابة من الخادم',
 	'coll-empty_collection'           => 'مجموعة فارغة',
@@ -409,7 +409,7 @@ Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku n�
 	'coll-mwzip_error_msg'            => 'Během tvorby kolekce stránek se vyskytla chyba.',
 	'coll-notitle_title'              => 'Nebylo možné určit název stránky.',
 	'coll-post_failed_title'          => 'Chyba požadavku POST',
-	'coll-post_failed_msg'            => 'Chyba požadavku POST.',
+	'coll-post_failed_msg'            => 'Chyba požadavku POST ($2).',
 	'coll-enter_title'                => 'Zadejte název kolekce.',
 	'coll-error_reponse'              => 'Chybná odpověď serveru',
 	'coll-empty_collection'           => 'Prázdná kolekce',
@@ -624,7 +624,7 @@ $messages['eo'] = array(
 	'coll-mwzip_error_title'          => 'Ne eblas generi paĝan kolekton',
 	'coll-notitle_title'              => 'La titolo de la paĝo ne estis determinebla.',
 	'coll-post_failed_title'          => 'POST-peto malsukcesis',
-	'coll-post_failed_msg'            => 'La POST-peto malsukcesis.',
+	'coll-post_failed_msg'            => 'La POST-peto malsukcesis ($2).',
 	'coll-enter_title'                => 'Enigu titolon por kolekto:',
 	'coll-error_reponse'              => 'Erara respondo de servilo',
 	'coll-empty_collection'           => 'Malplena kolekto',
@@ -730,7 +730,7 @@ Voulez-vous les ajouter ?',
 	'coll-mwzip_error_msg'            => 'Une erreur est survenue pendant la création de la compilation',
 	'coll-notitle_title'              => 'Le titre de la page ne peut être déterminée.',
 	'coll-post_failed_title'          => 'Échec de la requête POST',
-	'coll-post_failed_msg'            => 'La requête POST a échouée.',
+	'coll-post_failed_msg'            => 'La requête POST vers $1 a échoué ($2).',
 	'coll-enter_title'                => 'Entrer un titre pour la compilation :',
 	'coll-error_reponse'              => 'Le serveur a rencontré une erreur',
 	'coll-empty_collection'           => 'Compilation vide',
@@ -833,7 +833,7 @@ Quere engadilas?',
 	'coll-mwzip_error_msg'            => 'Ocorreu un erro durante a xeración da páxina da colección.',
 	'coll-notitle_title'              => 'O título da páxina non pode ser determinado.',
 	'coll-post_failed_title'          => 'A solicitude do POST fallou',
-	'coll-post_failed_msg'            => 'Fallou o POST solicitado a $1.',
+	'coll-post_failed_msg'            => 'Fallou o POST solicitado a $1 ($2).',
 	'coll-enter_title'                => 'Escriba un título para a colección:',
 	'coll-error_reponse'              => 'Ocorreu un erro no servidor',
 	'coll-empty_collection'           => 'Colección baleira',
@@ -959,7 +959,7 @@ $messages['hi'] = array(
 	'coll-mwzip_error_msg'            => 'पन्नोंका कलेक्शन बनाते समय समस्या आई हैं।',
 	'coll-notitle_title'              => 'इस पन्ने का शीर्षक निश्चित नहीं कर पा रहें हैं।',
 	'coll-post_failed_title'          => 'POST माँग पूरी नहीं हुई हैं',
-	'coll-post_failed_msg'            => 'POST माँग पूरी नहीं हुई हैं',
+	'coll-post_failed_msg'            => 'POST माँग पूरी नहीं हुई हैं ($2)',
 	'coll-enter_title'                => 'कलेक्शन का शीर्षक दें:',
 	'coll-error_reponse'              => 'सर्वरसे गलत रिस्पॉन्स मिला हैं',
 	'coll-empty_collection'           => 'खाली कलेक्शन',
@@ -1173,7 +1173,7 @@ $messages['ja'] = array(
 	'coll-mwzip_error_msg'            => 'ページコレクション作成中にエラーが発生しました',
 	'coll-notitle_title'              => 'ページタイトルが未設定です。',
 	'coll-post_failed_title'          => 'POSTリクエストの失敗',
-	'coll-post_failed_msg'            => 'このPOSTリクエストは失敗しました。',
+	'coll-post_failed_msg'            => 'このPOSTリクエストは失敗しました ($2)。',
 	'coll-enter_title'                => 'コレクションのタイトルを入力:',
 	'coll-error_reponse'              => 'サーバからのエラーレスポンス',
 	'coll-empty_collection'           => '空のコレクション',
@@ -1505,8 +1505,8 @@ $messages['ml'] = array(
 
 /** Marathi (मराठी)
  * @author Kaustubh
- * @author Mahitgar
  * @author Siebrand
+ * @author Mahitgar
  */
 $messages['mr'] = array(
 	'coll-desc'                       => '[[Special:Collection|पाने गोळा करा]], पीडीएफ तयार करा',
@@ -1558,7 +1558,7 @@ $messages['mr'] = array(
 	'coll-mwzip_error_msg'            => 'पानांचे कलेक्शन तयार करताना त्रुटी आढळलेली आहे.',
 	'coll-notitle_title'              => 'या पानाचे शीर्षक ठरविता आलेले नाही.',
 	'coll-post_failed_title'          => 'पोस्ट (POST) ची मागणी पूर्ण झालेली नाही',
-	'coll-post_failed_msg'            => 'पोस्ट (POST) ची मागणी पूर्ण झालेली नाही.',
+	'coll-post_failed_msg'            => 'पोस्ट (POST) ची मागणी पूर्ण झालेली नाही ($2).',
 	'coll-enter_title'                => 'कलेल्शनला शीर्षक द्या:',
 	'coll-error_reponse'              => 'सर्व्हर कडून चुकीचा संदेश आलेला आहे',
 	'coll-empty_collection'           => 'रिकामे कलेक्शन',
@@ -1689,7 +1689,7 @@ Wilt u ze toevoegen?",
 	'coll-mwzip_error_msg'            => 'Er is een fout opgetreden tijdens het maken van de paginaverzameling.',
 	'coll-notitle_title'              => 'De titel van de pagina kon niet vastgesteld worden.',
 	'coll-post_failed_title'          => 'POST-verzoek mislukt',
-	'coll-post_failed_msg'            => 'Het POST-verzoek naar $1 is mislukt.',
+	'coll-post_failed_msg'            => 'Het POST-verzoek naar $1 is mislukt ($2).',
 	'coll-enter_title'                => 'Voer een titel in voor de verzameling:',
 	'coll-error_reponse'              => 'De server heeft een foutmelding teruggegeven',
 	'coll-empty_collection'           => 'Lege verzameling',
@@ -1754,8 +1754,8 @@ $messages['nn'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
- * @author Siebrand
  * @author H92
+ * @author Siebrand
  */
 $messages['no'] = array(
 	'coll-desc'                       => 'Lag [[Special:Collection|sidesamlinger]] og generer PDF-filer',
@@ -1803,7 +1803,7 @@ $messages['no'] = array(
 	'coll-mwzip_error_msg'            => 'En feil oppsto under generering av sidesamling.',
 	'coll-notitle_title'              => 'Fant ikke ut av sidens tittel.',
 	'coll-post_failed_title'          => 'POST-forespørsel mislyktes',
-	'coll-post_failed_msg'            => 'POST-forespørselen mislyktes.',
+	'coll-post_failed_msg'            => 'POST-forespørselen til $1 mislyktes ($2).',
 	'coll-enter_title'                => 'Skriv inn samlingens navn:',
 	'coll-error_reponse'              => 'Feilrespons fra tjeneren',
 	'coll-empty_collection'           => 'Tom samling',
@@ -1901,7 +1901,7 @@ Las volètz apondre ?',
 	'coll-mwzip_error_msg'            => 'Una error es subrevenguda pendent la creacion de la compilacion',
 	'coll-notitle_title'              => 'Lo títol de la pagina pòt pas èsser determinat.',
 	'coll-post_failed_title'          => 'Fracàs de la requèsta POST',
-	'coll-post_failed_msg'            => 'La requèsta POST a pas capitat.',
+	'coll-post_failed_msg'            => 'La requèsta POST vèrs $1 a pas capitat ($2).',
 	'coll-enter_title'                => 'Picar un títol per la compilacion :',
 	'coll-error_reponse'              => 'Lo servidor a rencontrat una error',
 	'coll-empty_collection'           => 'Compilacion voida',
@@ -2017,7 +2017,7 @@ Czy chcesz by zostały dodane?',
 	'coll-mwzip_error_msg'            => 'Błąd podczas tworzenia kolekcji stron.',
 	'coll-notitle_title'              => 'Tytuł strony nie może być określony.',
 	'coll-post_failed_title'          => 'Żądanie POST nieudane',
-	'coll-post_failed_msg'            => 'Żądanie POST nie powiodło się.',
+	'coll-post_failed_msg'            => 'Żądanie POST do $1 nie powiodło się ($2).',
 	'coll-enter_title'                => 'Podaj tytuł kolekcji:',
 	'coll-error_reponse'              => 'Błąd odpowiedzi serwera',
 	'coll-empty_collection'           => 'Pusta kolekcja',
@@ -2149,7 +2149,7 @@ Deseja adicioná-las?',
 	'coll-mwzip_error_msg'            => 'Um erro ocorreu durante a criação da colecção de páginas.',
 	'coll-notitle_title'              => 'Não foi possível determinar o título da página.',
 	'coll-post_failed_title'          => 'Pedido POST falhou',
-	'coll-post_failed_msg'            => 'O pedido POST falhou.',
+	'coll-post_failed_msg'            => 'O pedido POST falhou ($2).',
 	'coll-enter_title'                => 'Introduza título para a colecção:',
 	'coll-error_reponse'              => 'Resposta de erro do servidor',
 	'coll-empty_collection'           => 'Colecção vazia',
@@ -2249,7 +2249,7 @@ $messages['ru'] = array(
 	'coll-mwzip_error_msg'            => 'Во время создания коллекции страниц произошла ошибка.',
 	'coll-notitle_title'              => 'Заголовок страницы не может быть определён.',
 	'coll-post_failed_title'          => 'POST-запрос не выполнен',
-	'coll-post_failed_msg'            => 'POST-запрос не выполнен.',
+	'coll-post_failed_msg'            => 'POST-запрос не выполнен ($2).',
 	'coll-enter_title'                => 'Введите название коллекции:',
 	'coll-error_reponse'              => 'Ошибка ответа сервера',
 	'coll-empty_collection'           => 'Пустая коллекция',
@@ -2351,7 +2351,7 @@ Pozri ďalšie informácue na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka 
 	'coll-mwzip_error_msg'            => 'Počas tvorby kolekcie stránok sa vyskytla chyba.',
 	'coll-notitle_title'              => 'Názov stránky nebolo možné určiť.',
 	'coll-post_failed_title'          => 'Chyba požiadavky POST',
-	'coll-post_failed_msg'            => 'Chyba požiadavky POST.',
+	'coll-post_failed_msg'            => 'Chyba požiadavky POST ($2).',
 	'coll-enter_title'                => 'Zadajte názov kolekcie:',
 	'coll-error_reponse'              => 'Chybná odpoveď servera',
 	'coll-empty_collection'           => 'Prázdna kolekcia',
@@ -2412,6 +2412,7 @@ $messages['sr-ec'] = array(
 
 /** Seeltersk (Seeltersk)
  * @author Pyt
+ * @author Siebrand
  */
 $messages['stq'] = array(
 	'coll-desc'                => '[[Special:Collection|Siedentouhoopestaalenge]], moak PDFs',
@@ -2462,14 +2463,14 @@ Moatest du do bietouföigje?',
 	'coll-mwzip_error_msg'     => 'Unner dät Touhoopestaalengsprozess is n Failer aptreeden.',
 	'coll-notitle_title'       => 'Die Tittel fon ju Siede kuud nit bestimd wäide.',
 	'coll-post_failed_title'   => 'POST-Anfroage failsloain',
-	'coll-post_failed_msg'     => 'Ju POST-Anfroage is failsloain.',
+	'coll-post_failed_msg'     => 'Ju POST-Anfroage is failsloain ($2).',
 	'coll-enter_title'         => 'Tittel fon ju Touhoopestaalenge:',
 );
 
 /** Swedish (Svenska)
  * @author M.M.S.
- * @author Sannab
  * @author Siebrand
+ * @author Sannab
  * @author H92
  */
 $messages['sv'] = array(
@@ -2521,7 +2522,7 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälp sidan om samlingar]] för mer informatio
 	'coll-mwzip_error_msg'            => 'Ett fel uppstod under generering av sidsamling.',
 	'coll-notitle_title'              => 'Titeln av sidan kunde inte fastställas.',
 	'coll-post_failed_title'          => 'POST-begäring avslagen',
-	'coll-post_failed_msg'            => 'POST-begäringen till $1 avslagen.',
+	'coll-post_failed_msg'            => 'POST-begäringen till $1 avslagen ($2).',
 	'coll-enter_title'                => 'Skriv in samlingens namn:',
 	'coll-error_reponse'              => 'Felrespons från servern',
 	'coll-empty_collection'           => 'Tom samling',
@@ -2814,7 +2815,7 @@ $messages['uk'] = array(
 	'coll-mwzip_error_msg'            => 'Під час створення колекції сторінок відбулася помилка.',
 	'coll-notitle_title'              => 'Заголовок сторінки неможливо визначити.',
 	'coll-post_failed_title'          => 'POST-запит не виконаний',
-	'coll-post_failed_msg'            => 'POST-запит не виконаний.',
+	'coll-post_failed_msg'            => 'POST-запит не виконаний ($2).',
 	'coll-enter_title'                => 'Уведіть назву колекції:',
 	'coll-error_reponse'              => 'Помилка відповіді сервера',
 	'coll-empty_collection'           => 'Порожня колекція',
@@ -2912,7 +2913,7 @@ Bạn có muốn thêm chúng không?',
 	'coll-mwzip_error_msg'            => 'Có lỗi xảy ra khi tạo ra tập hợp trang.',
 	'coll-notitle_title'              => 'Không xác định được tựa đề của trang.',
 	'coll-post_failed_title'          => 'Yêu cầu POST thất bại',
-	'coll-post_failed_msg'            => 'Yêu cầu POST thất bại.',
+	'coll-post_failed_msg'            => 'Yêu cầu POST thất bại ($2).',
 	'coll-enter_title'                => 'Gõ vào tựa đề của tập hợp:',
 	'coll-error_reponse'              => 'Máy chủ trả về lỗi',
 	'coll-empty_collection'           => 'Tập hợp trống',
