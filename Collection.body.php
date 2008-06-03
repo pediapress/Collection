@@ -987,10 +987,10 @@ EOS
 				), $params ) );
 				print "<li><a href=\"$href\">$addArticle</a></li>";
 			} else {
-				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+				$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 					'Collection',
 					'remove_article/'
-				) . $params );
+				), $params ) );
 				print "<li><a href=\"$href\">$removeArticle</a></li>";
 			}
 		} else if ( $wgTitle->getNamespace() == NS_CATEGORY ) {
