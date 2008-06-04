@@ -359,6 +359,7 @@ Aquesta pàgina s'hauria de refrescar automàticament de tant en tant. Si no ho 
 /** Czech (Česky)
  * @author Matěj Grabovský
  * @author Siebrand
+ * @author Mormegil
  */
 $messages['cs'] = array(
 	'coll-desc'                       => 'Vytváření [[Special:Collection|kolekce stránek]], tvorba PDF',
@@ -409,7 +410,7 @@ Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku n�
 	'coll-mwzip_error_msg'            => 'Během tvorby kolekce stránek se vyskytla chyba.',
 	'coll-notitle_title'              => 'Nebylo možné určit název stránky.',
 	'coll-post_failed_title'          => 'Chyba požadavku POST',
-	'coll-post_failed_msg'            => 'Chyba požadavku POST ($2).',
+	'coll-post_failed_msg'            => 'Chyba při požadavku POST na server $1 ($2).',
 	'coll-enter_title'                => 'Zadejte název kolekce.',
 	'coll-error_reponse'              => 'Chybná odpověď serveru',
 	'coll-empty_collection'           => 'Prázdná kolekce',
@@ -2913,7 +2914,7 @@ Bạn có muốn thêm chúng không?',
 	'coll-mwzip_error_msg'            => 'Có lỗi xảy ra khi tạo ra tập hợp trang.',
 	'coll-notitle_title'              => 'Không xác định được tựa đề của trang.',
 	'coll-post_failed_title'          => 'Yêu cầu POST thất bại',
-	'coll-post_failed_msg'            => 'Yêu cầu POST thất bại ($2).',
+	'coll-post_failed_msg'            => 'Yêu cầu POST đến $1 thất bại ($2).',
 	'coll-enter_title'                => 'Gõ vào tựa đề của tập hợp:',
 	'coll-error_reponse'              => 'Máy chủ trả về lỗi',
 	'coll-empty_collection'           => 'Tập hợp trống',
@@ -2957,6 +2958,9 @@ về tập hợp]] để có các cách phát triển nó lên.',
 	'coll-book_text'                  => 'Bạn có thể đặt một cuốn sách in có chứa tập hợp trang của bạn bằng cách ghét thăm mọt trong những bên cộng tác in-theo-yêu-cầu:',
 	'coll-order_from_pp'              => 'Đặt sách từ $1',
 	'coll-about_pp'                   => 'Giới thiệu $1',
+	'coll-invalid_podpartner_title'   => 'Thành phần đi kèm POD không hợp lệ',
+	'coll-invalid_podpartner_msg'     => 'Thành phần đi kèm POD đã cung cấp không hợp lệ.
+Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
 );
 
 /** Volapük (Volapük)
