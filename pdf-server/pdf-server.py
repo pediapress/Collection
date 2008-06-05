@@ -8,7 +8,7 @@
 script_url = 'http://example/cgi-bin/pdf-server.py'
 
 # Directory (with read/write access) for cached files.
-# These files can be autmatically deleted with a cron-job running the
+# These files can be automatically deleted with a cron-job running the
 # accompanied script clean-cache.py.
 cache_dir = '/var/cache/pdf-server/'
 
