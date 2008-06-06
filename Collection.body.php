@@ -517,16 +517,17 @@ class Collection extends SpecialPage {
 		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generating_pdf/' );
 		$wgOut->redirect( wfAppendQuery( $redirect,
 			'return_to=' . urlencode( $referrer->getPrefixedText() )
-			. '&iframe_src=' . urlencode( $response->iframe_src ) ) );
+			. '&query=' . urlencode( $response->query ) ) );
 	}
 
 	function generatingPDF() {
 		global $wgOut;
+		global $wgPDFServer;
 		global $wgRequest;
-
+		
 		$this->setHeaders();
-
-		$iframe_src = $wgRequest->getVal( 'iframe_src' );
+		
+		$query = $wgRequest->getVal( 'query' );
 		$return_to = $wgRequest->getVal( 'return_to' );
 		
 		$wgOut->setPageTitle( wfMsg( 'coll-generating_pdf_title' ) );
@@ -534,7 +535,7 @@ class Collection extends SpecialPage {
 			array(
 				'width' => '100%',
 				'height' => '200',
-				'src' => $iframe_src,
+				'src' => wfAppendQuery( $wgPDFServer, $query ),
 				'name' => 'PDF Generation',
 				'frameborder' => 0, ),
 			 '' )
