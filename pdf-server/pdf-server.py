@@ -148,13 +148,10 @@ class PDFServer(object):
         
         self.headers['Content-Type'] = 'application/json'
         self.content = simplejson.dumps({
-            'iframe_src': '%s?%s' % (
-                script_url,
-                urllib.urlencode({
-                    'command': 'pdf_status',
-                    'collection_id': self.collection_id
-                }),
-            ),
+            'query': urllib.urlencode({
+                'command': 'pdf_status',
+                'collection_id': self.collection_id
+            }),
         })
     
     def do_pdf_status(self):
