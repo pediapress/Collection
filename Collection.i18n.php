@@ -584,6 +584,7 @@ $messages['el'] = array(
  * @author Yekrats
  * @author Siebrand
  * @author Amikeco
+ * @author Siebrand
  */
 $messages['eo'] = array(
 	'coll-desc'                       => '[[Special:Collection|Kolekto-paĝoj]], generi PDF-ojn',
@@ -1508,6 +1509,7 @@ $messages['ml'] = array(
  * @author Kaustubh
  * @author Siebrand
  * @author Mahitgar
+ * @author Siebrand
  */
 $messages['mr'] = array(
 	'coll-desc'                       => '[[Special:Collection|पाने गोळा करा]], पीडीएफ तयार करा',
@@ -1967,6 +1969,7 @@ $messages['os'] = array(
  * @author Derbeth
  * @author Siebrand
  * @author Wpedzich
+ * @author Wpedzich
  */
 $messages['pl'] = array(
 	'coll-desc'                       => 'Umożliwia [[Special:Collection|tworzenie kolekcji]] stron i zapisanie ich do pliku w formacie PDF',
@@ -2305,6 +2308,7 @@ $messages['ru'] = array(
 /** Slovak (Slovenčina)
  * @author Helix84
  * @author Siebrand
+ * @author SieBot
  */
 $messages['sk'] = array(
 	'coll-desc'                       => 'Vytváranie [[Special:Collection|kolekcie stránok]], tvorba PDF',
@@ -2471,7 +2475,9 @@ Moatest du do bietouföigje?',
 	'coll-enter_title'         => 'Tittel fon ju Touhoopestaalenge:',
 );
 
-/** Sundanese (Basa Sunda) */
+/** Sundanese (Basa Sunda)
+ * @author Irwangatot
+ */
 $messages['su'] = array(
 	'coll-add_category'         => 'Nambah kategori',
 	'coll-empty'                => 'kosong',
@@ -2782,6 +2788,7 @@ $messages['tr'] = array(
 
 /** Ukrainian (Українська)
  * @author Ahonc
+ * @author Siebrand
  * @author Siebrand
  */
 $messages['uk'] = array(
