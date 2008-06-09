@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 """This script is meant to be called as a cron-job every few hours to clean up
-old cache directories from pdf-server.py.
+old cache directories from pdfserver.py.
 """
 
 import os

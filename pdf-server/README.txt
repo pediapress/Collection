@@ -60,7 +60,7 @@ Python packages: *PIL* and *ReportLab*.
 Installation and Configuration
 ==============================
 
-Copy pdf-server.py to your directory containing CGI files (e.g.
+Copy pdfserver.py to your directory containing CGI files (e.g.
 "/usr/lib/cgi-bin/" on a default Apache install on Debian GNU/Linux) make
 sure it's executable and the CGI script of your web server is configured
 appropriately. Adjust the configuration variables at the top of the script.
@@ -79,7 +79,7 @@ is /var/www/.python-eggs/ (because $HOME is /var/www/), and the user www-data
 usually doesn't have write access in /var/www/.
 
 One way to set environment variables is when configuring the path to ``mw-pdf``
-and ``mw-zip`` in pdf-server.py, e.g.::
+and ``mw-zip`` in ``pdfserver.py``, e.g.::
 
  mwpdf_cmd = 'PYTHON_EGG_CACHE=/tmp/.python_eggs /usr/local/bin/mw-pdf'
  mwzip_cmd = 'PYTHON_EGG_CACHE=/tmp/.python_eggs /usr/local/bin/mw-zip'
