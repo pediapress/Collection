@@ -508,7 +508,6 @@ class Collection extends SpecialPage {
 	
 	function generatingPDF() {
 		global $wgOut;
-		global $wgPDFServer;
 		global $wgRequest;
 		
 		$this->setHeaders();
@@ -567,7 +566,6 @@ class Collection extends SpecialPage {
 	
 	function downloadPDF() {
 		global $wgOut;
-		global $wgPDFServer;
 		global $wgRequest;
 		
 		$response = self::pdfServerCommand( 'pdf_download', array(
@@ -627,7 +625,6 @@ class Collection extends SpecialPage {
 		global $wgServer;
 		global $wgScriptPath;
 		global $wgOut;
-		global $wgPDFServer;
 		global $wgLicenseArticle;
 		global $wgSharedBaseURL;
 		global $wgPDFTemplateBlacklist;
