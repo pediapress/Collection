@@ -546,6 +546,8 @@ class Collection extends SpecialPage {
 			);
 			$wgOut->addWikiMsg( 'coll-pdf_finished_text', wfExpandUrl( $url ) );
 			if ( $return_to ) {
+				// We are doing this the hard way (i.e. via the HTML detour), to prevent
+				// the parser from replacing [[:Special:Collection]] with a selflink.
 				$t = Title::newFromText( $return_to );
 				$wgOut->addHTML( wfMsg(
 					'coll-return_to_collection',
