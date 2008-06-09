@@ -38,7 +38,7 @@ See ``README.txt`` in the ``pdf-server`` directory for further instructions
 how to setup a PDF server.
 
 If you have a low-traffic MediaWiki you can use the public PDF Server running
-at http://tools.pediapress.com/cgi-bin/pdf-server.py. In this case, just keep
+at http://tools.pediapress.com/cgi-bin/pdfserver.py. In this case, just keep
 the configuration variable $wgPDFServer (see below) at its default value.
 
 
@@ -60,7 +60,7 @@ Installation and Configuration of the Collection Extension
   *$wgPDFServer (string)*
    Set this to the URL of the PDF Server CGI script.
    
-   The default is ``"http://tools.pediapress.com/cgi-bin/pdf-server.py"``,
+   The default is ``"http://tools.pediapress.com/cgi-bin/pdfserver.py"``,
    a public PDF Server for low-traffic MediaWikis.
   
   *$wgCommunityCollectionNamespace (integer)*
