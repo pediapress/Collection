@@ -67,14 +67,12 @@ Do you want to add them?',
 	'coll-new_chapter'                => 'Enter name for new chapter',
 	'coll-rename_chapter'             => 'Enter new name for chapter',
 	'coll-no_such_category'           => 'No such category',
-	'coll-mwpdf_error_title'          => 'Could not generate PDF',
-	'coll-mwpdf_error_msg'            => 'An error occured during PDF generation.',
-	'coll-mwzip_error_title'          => 'Could not generate page collection',
-	'coll-mwzip_error_msg'            => 'An error occured during generation of page collection.',
 	'coll-notitle_title'              => 'Could not get page title',
 	'coll-notitle_title'              => 'The title of the page could not be determined.',
 	'coll-post_failed_title'          => 'POST request failed',
 	'coll-post_failed_msg'            => 'The POST request to $1 failed ($2).',
+	'coll-pdfserver_failed_title'     => 'PDF Server Error',
+	'coll-pdfserver_failed_msg'       => 'An error occured on the PDF Server: $1',
 	'coll-enter_title'                => 'Enter title for collection:',
 	'coll-error_reponse'              => 'Error response from server',
 	'coll-empty_collection'           => 'Empty collection',
@@ -101,19 +99,21 @@ No more pages can be added.',
 	'coll-generating_pdf_title'       => 'Generating PDF',
 	'coll-generating_pdf_text'        => "'''Please wait while the PDF file is being generated.'''
 
-Progress: '''%(progress)d%%'''.
+Progress: '''$1%'''.
 
 This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.",
-	'coll-pdf_finished_text'          => "The PDF file has been generated.
-[Click here] to download it to your computer.",
-	'coll-pdf_not_satisfied'          => "Not satisfied with the PDF output?
+	'coll-pdf_finished_title'       	=> 'PDF Generation Finished',
+	'coll-pdf_finished_text'          => "'''The PDF file has been generated.'''
+[$1 Click here] to download it to your computer.
+
+Not satisfied with the PDF output?
 See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
 	'coll-notfound_title'             => 'Collection not found',
 	'coll-notfound_text'              => 'Could not find collection page.',
-	'coll-return_to_collection'       => 'Return to [[:$1]]',
-	'coll-pages_removed'              => 'The following pages could not be rendered and were removed from the PDF file: %(articles)s',
-	'coll-pdf_error_text'             => 'There was an error when generating the PDF file.',
+	'coll-return_to_collection'       => 'Return to <a href="$1">$2</a>',
+	'coll-pdf_error_text'             => 'Error in PDF Generation',
+	'coll-pdf_error_text'             => 'There was an error when generating the PDF file: $1',
 	'coll-book_title'                 => 'Order printed book',
 	'coll-book_text'                  => 'You can order a printed book containing your page collection by visiting one of the following print-on-demand partners:',
 	'coll-order_from_pp'              => 'Order book from $1',
