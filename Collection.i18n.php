@@ -226,10 +226,6 @@ $messages['ar'] = array(
 	'coll-new_chapter'                => 'أدخل الاسم للفرع الجديد',
 	'coll-rename_chapter'             => 'أدخل الاسم الجديد للفرع',
 	'coll-no_such_category'           => 'لا تصنيف كهذا',
-	'coll-mwpdf_error_title'          => 'لم يمكن توليد PDF',
-	'coll-mwpdf_error_msg'            => 'حدث خطأ أثناء توليد PDF.',
-	'coll-mwzip_error_title'          => 'لم يمكن توليد مجموعة الصفحة',
-	'coll-mwzip_error_msg'            => 'حدث خطأ أثناء توليد مجموعة الصفحة.',
 	'coll-notitle_title'              => 'عنوان الصفحة لم يمكن تحديده.',
 	'coll-post_failed_title'          => 'طلب POST فشل',
 	'coll-post_failed_msg'            => 'طلب POST فشل ($2).',
@@ -259,6 +255,7 @@ $messages['ar'] = array(
 	'coll-generating_pdf_title'       => 'توليد PDF',
 	'coll-generating_pdf_text'        => "'''من فضلك انتظر أثناء توليد ملف PDF.'''
 هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان، لو أن هذا لا يعمل، من فضلك اضغط زر refresh في متصفحك.",
+	'coll-pdf_finished_title'         => 'توليد PDF اكتمل',
 	'coll-pdf_finished_text'          => 'ملف PDF تم توليده.
 اضغط على الوصلة بالأسفل لتحميله إلى حاسوبك.
 غير راض عن ناتج PDF؟
@@ -266,7 +263,6 @@ $messages['ar'] = array(
 	'coll-notfound_title'             => 'المجموعة غير موجودة',
 	'coll-notfound_text'              => 'لم يمكن العثور على صفحة المجموعة.',
 	'coll-return_to_collection'       => 'ارجع إلى [[:$1]]',
-	'coll-pages_removed'              => 'الصفحات التالية لم يمكن عرضها وتمت إزالتها من ملف PDF:',
 	'coll-book_title'                 => 'طلب كتاب مطبوع',
 	'coll-order_from_pp'              => 'طلب كتاب من $1',
 	'coll-about_pp'                   => 'حول $1',
@@ -299,8 +295,6 @@ $messages['bg'] = array(
 	'coll-sort_alphabetically'   => 'Подреждане на страниците по азбучен ред',
 	'coll-rename'                => 'Преименуване',
 	'coll-no_such_category'      => 'Няма такава категория',
-	'coll-mwpdf_error_title'     => 'Не може да бъде генериран PDF файл',
-	'coll-mwpdf_error_msg'       => 'Възникна грешка при генерирането на PDF.',
 	'coll-revision'              => 'Версия: %PARAM%',
 	'coll-save_collection_title' => 'Съхраняване',
 	'coll-save_collection'       => 'Съхраняване',
@@ -311,10 +305,10 @@ $messages['bg'] = array(
 	'coll-append'                => 'Добавяне',
 	'coll-cancel'                => 'Отказване',
 	'coll-generating_pdf_title'  => 'Генериране на PDF',
+	'coll-pdf_finished_title'    => 'Генерирането на PDF приключи успешно',
 	'coll-pdf_finished_text'     => 'PDF файлът беше генериран.
-[Щракнете тук] за изтегляне на локалния компютър.',
-	'coll-return_to_collection'  => 'Връщане към [[:$1]]',
-	'coll-pages_removed'         => 'Следните страници не могат да бъдат обработени и бяха премахнати от PDF файла: %(articles)s',
+[$1 Щракнете тук] за изтегляне на локалния компютър.',
+	'coll-return_to_collection'  => 'Връщане към <a href="$1">$2</a>',
 	'coll-order_from_pp'         => 'Поръчване на книга от $1',
 	'coll-about_pp'              => 'За $1',
 );
@@ -322,6 +316,7 @@ $messages['bg'] = array(
 /** Catalan (Català)
  * @author Jordi Roqué
  * @author SMP
+ * @author Siebrand
  */
 $messages['ca'] = array(
 	'coll-add_page'             => 'Afegir pàgina',
@@ -340,17 +335,17 @@ Aquesta pàgina no funcionarà correctament si no el poseu o l'activeu.</strong>
 	'coll-create_chapter'       => 'Crear un nou capítol',
 	'coll-sort_alphabetically'  => 'Ordenar les pàgines alfabèticament',
 	'coll-rename'               => 'Reanomena',
-	'coll-mwpdf_error_title'    => "No s'ha pogut generar el PDF",
 	'coll-overwrite_title'      => 'La pàgina existeix. Voleu substituir-la?',
 	'coll-yes'                  => 'S&iacute;',
 	'coll-no'                   => 'No',
 	'coll-generating_pdf_title' => 'Generant PDF',
 	'coll-generating_pdf_text'  => "'''Si us plau, espereu mentre es genera l'arxiu PDF'''
 
-Progressió: '''%(progressió)d%%'''.
+Progressió: '''$1%'''.
 
-Aquesta pàgina s'hauria de refrescar automàticament de tant en tant. Si no ho fes, pitgeu el botó de refresc del vostre navegador.",
-	'coll-return_to_collection' => 'Tornar a [[:$1]]',
+Aquesta pàgina s'hauria de refrescar automàticament de tant en tant.
+Si no ho fes, pitgeu el botó de refresc del vostre navegador.",
+	'coll-return_to_collection' => 'Tornar a <a href="$1">$2</a>',
 	'coll-pdf_error_text'       => "S'ha produït un error mentre es generava l'arxiu PDF.",
 	'coll-book_title'           => 'Encarregar llibre imprès',
 	'coll-about_pp'             => 'Quant a $1',
@@ -404,10 +399,6 @@ Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku n�
 	'coll-new_chapter'                => 'Zadejte název nové kapitoly',
 	'coll-rename_chapter'             => 'Zadejte nový název kapitoly',
 	'coll-no_such_category'           => 'Taková kategorie neexistuje',
-	'coll-mwpdf_error_title'          => 'Nebylo možné vytvořit PDF',
-	'coll-mwpdf_error_msg'            => 'Během tvorby PDF se vyskytla chyba.',
-	'coll-mwzip_error_title'          => 'Nebylo možné vytvořit kolekci stránek',
-	'coll-mwzip_error_msg'            => 'Během tvorby kolekce stránek se vyskytla chyba.',
 	'coll-notitle_title'              => 'Nebylo možné určit název stránky.',
 	'coll-post_failed_title'          => 'Chyba požadavku POST',
 	'coll-post_failed_msg'            => 'Chyba při požadavku POST na server $1 ($2).',
@@ -437,14 +428,14 @@ Není možné přidat další stránky.',
 	'coll-generating_pdf_title'       => 'Vytváří se PDF',
 	'coll-generating_pdf_text'        => "'''Prosím čekejte, vytváří se PDF soubor.'''
 Tato stránka by se měla každých několik sekund automaticky obnovit. Pokud to nefunguje, klikněte na tlačítko 'Obnovit' ve vašem prohlížeči.",
+	'coll-pdf_finished_title'         => 'Tvorba PDF dokončena',
 	'coll-pdf_finished_text'          => 'PDF soubor byl vytvořen.
 Stáhnout ho můžete po kliknutí na odkaz níže.
 nejste spokojeni s PDF výstupem?
 Podívejte se na možnosti jeho vylepšení na [[{{MediaWiki:Coll-helppage}}|stránku Pomocníka ke kolekcím]].',
 	'coll-notfound_title'             => 'Kolekce nenalezena',
 	'coll-notfound_text'              => 'Nebylo možné najít stránku kolekce',
-	'coll-return_to_collection'       => 'Vrátit se na [[:$1]]',
-	'coll-pages_removed'              => 'Následující stránky nebylo možné vykreslit a byly z PDF souboru odstraněny:',
+	'coll-return_to_collection'       => 'Vrátit se na <a href="$1">$2</a>',
 	'coll-book_title'                 => 'Objednat tisknutou knihu',
 	'coll-book_text'                  => 'Můžete se objednat tisknutou knihu obsahující vaši kolekci stránek. Navštivte jednoho z následujících partnerů, kteří Vám ji vytisknou na požádání:',
 	'coll-order_from_pp'              => 'Objednat knihu od $1',
@@ -584,7 +575,6 @@ $messages['el'] = array(
  * @author Yekrats
  * @author Siebrand
  * @author Amikeco
- * @author Siebrand
  */
 $messages['eo'] = array(
 	'coll-desc'                       => '[[Special:Collection|Kolekto-paĝoj]], generi PDF-ojn',
@@ -621,9 +611,6 @@ $messages['eo'] = array(
 	'coll-new_chapter'                => 'Enigi nomon por nova ĉapitro',
 	'coll-rename_chapter'             => 'Enigi novan nomon por ĉapitro',
 	'coll-no_such_category'           => 'Nenia kategorio',
-	'coll-mwpdf_error_title'          => 'Ne eblis generi PDF-on',
-	'coll-mwpdf_error_msg'            => 'Eraro okazis dum PDF-generado.',
-	'coll-mwzip_error_title'          => 'Ne eblas generi paĝan kolekton',
 	'coll-notitle_title'              => 'La titolo de la paĝo ne estis determinebla.',
 	'coll-post_failed_title'          => 'POST-peto malsukcesis',
 	'coll-post_failed_msg'            => 'La POST-peto por $1 malsukcesis ($2).',
@@ -647,13 +634,14 @@ Neniom pluaj paĝoj ne povas esti aldonitaj.',
 	'coll-generating_pdf_title'       => 'Generante PDF',
 	'coll-generating_pdf_text'        => "'''Bonvolu atenti dum la PDF-dosiero generiĝas.'''
 
-Plenumita: '''%(progress)d%%'''.
+Plenumita: '''$1%'''.
 
 Ĉi paĝo verŝajne aŭtomate refreŝiĝos po kelkaj sekundoj.
 Se ĉi tiel ne funkcias, bonvolu klaki la refreŝigan butonon de via retumilo.",
+	'coll-pdf_finished_title'         => 'PDF-generado Finita',
 	'coll-notfound_title'             => 'Kolekto Ne Trovita',
 	'coll-notfound_text'              => 'Ne eblas trovi kolekto-paĝon.',
-	'coll-return_to_collection'       => 'Reiru al [[:$1]]',
+	'coll-return_to_collection'       => 'Reiru al <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Eraro okazis dum generado de la PDF-dosiero.',
 	'coll-book_title'                 => 'Mendu Eldonitan Libron',
 	'coll-order_from_pp'              => 'Mendi libron de $1',
@@ -726,10 +714,6 @@ Voulez-vous les ajouter ?',
 	'coll-new_chapter'                => 'Enter le titre du nouveau chapitre',
 	'coll-rename_chapter'             => 'Enter nouveau titre pour le chapitre',
 	'coll-no_such_category'           => 'Pas de telle catégorie',
-	'coll-mwpdf_error_title'          => 'Ne peut pas générer de PDF',
-	'coll-mwpdf_error_msg'            => 'Une erreur est survenue pendant la création du PDF.',
-	'coll-mwzip_error_title'          => 'Ne peut pas générer de compilation',
-	'coll-mwzip_error_msg'            => 'Une erreur est survenue pendant la création de la compilation',
 	'coll-notitle_title'              => 'Le titre de la page ne peut être déterminée.',
 	'coll-post_failed_title'          => 'Échec de la requête POST',
 	'coll-post_failed_msg'            => 'La requête POST vers $1 a échoué ($2).',
@@ -744,7 +728,7 @@ Voulez-vous les ajouter ?',
 	'coll-community_collection_label' => 'Compilation collective :',
 	'coll-save_collection'            => 'Sauvegarder la compilation',
 	'coll-overwrite_title'            => "La page existe. L'écraser ?",
-	'coll-overwrite_text'             => 'Une page avec le titre [[:$1]] existe déjà.
+	'coll-overwrite_text'             => 'Une page nommée [[:$1]] existe déjà.
 Voulez-vous la remplacer par votre compilation ?',
 	'coll-yes'                        => 'Oui',
 	'coll-no'                         => 'Non',
@@ -757,19 +741,21 @@ Voulez vous écraser votre compilation actuelle, y rajouter le contenu ou bien a
 	'coll-limit_exceeded_text'        => 'Votre compilation est trop grande.
 Aucune page ne peut être ajoutée.',
 	'coll-generating_pdf_title'       => 'Création du PDF',
-	'coll-generating_pdf_text'        => "'''Veuillez attendre pendant la création du PDF.'''
+	'coll-generating_pdf_text'        => "'''Veuillez patienter durant la création du PDF.'''
 
-Progression : '''%(progress)d%%'''.
+Progression : '''$1%'''.
 
-Cette page devrait automatiquement s'actualiser dans quelques secondes.
-Si tel n’est pas le cas, veuillez appuyer sur le bouton d'actualisation de votre navigateur.",
+Cette page devrait automatiquement s’actualiser dans quelques secondes.
+Si tel n’est pas le cas, veuillez appuyer sur le bouton d’actualisation de votre navigateur.",
+	'coll-pdf_finished_title'         => 'Création du PDF terminée',
 	'coll-pdf_finished_text'          => 'Le fichier PDF a été créé.
-[Cliquez ici] pour le télécharger sur votre ordinateur.',
-	'coll-pdf_not_satisfied'          => 'Non satisfait de la sortie PDF ? Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]] pour les possibilités d’amélioration.',
+[$1 Cliquez ici] pour le télécharger sur votre ordinateur.
+
+Non satisfait de la sortie PDF ?
+Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]] pour les possibilités d’amélioration.',
 	'coll-notfound_title'             => 'Compilation non trouvée',
 	'coll-notfound_text'              => 'Ne peut trouver la compilation.',
-	'coll-return_to_collection'       => 'Revenir à [[:$1]]',
-	'coll-pages_removed'              => "Les pages suivantes n'ont pu être traitées et ont été enlevées du fichier PDF : %(articles)s",
+	'coll-return_to_collection'       => 'Revenir sur <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Une erreur a été détectée lors de la création du fichier PDF.',
 	'coll-book_title'                 => 'Commander un livre imprimé',
 	'coll-book_text'                  => "Vous pouvez commander un livre imprimé contenant votre collection d'articles en visitant une demande d'impression de la part de partenaires :",
@@ -829,13 +815,11 @@ Quere engadilas?',
 	'coll-new_chapter'                => 'Insira un nome para o novo capítulo',
 	'coll-rename_chapter'             => 'Insira un novo nome para o capítulo',
 	'coll-no_such_category'           => 'Non existe tal categoría',
-	'coll-mwpdf_error_title'          => 'Non se pode xerar o PDF',
-	'coll-mwpdf_error_msg'            => 'Ocorreu un erro durante a xeración do PDF.',
-	'coll-mwzip_error_title'          => 'Non se pode xerar a páxina da colección',
-	'coll-mwzip_error_msg'            => 'Ocorreu un erro durante a xeración da páxina da colección.',
 	'coll-notitle_title'              => 'O título da páxina non pode ser determinado.',
 	'coll-post_failed_title'          => 'A solicitude do POST fallou',
 	'coll-post_failed_msg'            => 'Fallou o POST solicitado a $1 ($2).',
+	'coll-pdfserver_failed_title'     => 'Erro no servidor PDF',
+	'coll-pdfserver_failed_msg'       => 'Ocorreu un erro no servidor PDF: $1',
 	'coll-enter_title'                => 'Escriba un título para a colección:',
 	'coll-error_reponse'              => 'Ocorreu un erro no servidor',
 	'coll-empty_collection'           => 'Colección baleira',
@@ -862,18 +846,19 @@ Non se poden engadir máis páxinas.',
 	'coll-generating_pdf_title'       => 'Xerando PDF',
 	'coll-generating_pdf_text'        => "'''Por favor agarde mentres o arquivo PDF se está xerando.'''
 
-Progreso: '''%(progress)d%%'''.
+Progreso: '''\$1%'''.
 
 Esta páxina será refrescada automaticamente cada poucos segundos.
 Se non vai, por favor prema no botón \"refrescar\" do seu navegador.",
+	'coll-pdf_finished_title'         => 'Completada a xeración do PDF',
 	'coll-pdf_finished_text'          => 'O ficheiro PDF foi xerado.
-[Prema aquí] para descargalo no seu ordenador.',
-	'coll-pdf_not_satisfied'          => 'Non está satisfeito co arquivo PDF de saída?
+[$1 Prema aquí] para descargalo no seu ordenador.
+
+Non está satisfeito co arquivo PDF de saída?
 Consulte [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para ver as posibilidades de melloralo.',
 	'coll-notfound_title'             => 'Non se pode atopar a colección',
 	'coll-notfound_text'              => 'Non se pode atopar a páxina da colección.',
-	'coll-return_to_collection'       => 'Voltar a [[:$1]]',
-	'coll-pages_removed'              => 'As seguintes páxinas non poden ser renderizadas e serán eliminadas do arquivo PDF: %(articles)s',
+	'coll-return_to_collection'       => 'Voltar a <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Houbo un erro mentres se xeraba o ficheiro PDF.',
 	'coll-book_title'                 => 'Encargar un libro impreso',
 	'coll-book_text'                  => 'Pode encargar un libro impreso que conteña a súa páxina de colección visitando un dos seguintes compañeiros de solicitudes de impresión:',
@@ -955,10 +940,6 @@ $messages['hi'] = array(
 	'coll-new_chapter'                => 'नये अध्याय के लिये नाम दें',
 	'coll-rename_chapter'             => 'नये अध्याय के लिये नाम दें',
 	'coll-no_such_category'           => 'ऐसी श्रेणी नहीं हैं',
-	'coll-mwpdf_error_title'          => 'पीडीएफ तैयार नहीं कर सकतें',
-	'coll-mwpdf_error_msg'            => 'पीडीएफ बनाने में समस्या आई हैं।',
-	'coll-mwzip_error_title'          => 'पन्नोंका कलेक्शन बना नहीं पाये हैं',
-	'coll-mwzip_error_msg'            => 'पन्नोंका कलेक्शन बनाते समय समस्या आई हैं।',
 	'coll-notitle_title'              => 'इस पन्ने का शीर्षक निश्चित नहीं कर पा रहें हैं।',
 	'coll-post_failed_title'          => 'POST माँग पूरी नहीं हुई हैं',
 	'coll-post_failed_msg'            => 'POST माँग पूरी नहीं हुई हैं ($2)',
@@ -986,10 +967,10 @@ $messages['hi'] = array(
 	'coll-limit_exceeded_text'        => 'आपका कलेक्शन बहुत बडा हुआ हैं।
 और पन्ने बढा नहीं सकतें।',
 	'coll-generating_pdf_title'       => 'पीडीएफ तैयार कर रहें हैं',
+	'coll-pdf_finished_title'         => 'पीडीएफ तैयार',
 	'coll-notfound_title'             => 'कलेक्शन मिला नहीं',
 	'coll-notfound_text'              => 'कलेक्शन पन्ना मिला नहीं।',
-	'coll-return_to_collection'       => '[[:$1]] पर वापस जायें',
-	'coll-pages_removed'              => 'नीचे दिये हुए पन्ने पीडीएफ फ़ाईल में बढा नहीं पायें:',
+	'coll-return_to_collection'       => '<a href="$1">$2</a> पर वापस जायें',
 	'coll-book_title'                 => 'छपा हुआ अवतरण माँगे',
 	'coll-book_text'                  => 'आप नीचे दिये हुए प्रिन्ट-ऑन-डिमांड पार्टनर्ससे आपके कलेक्शनमें उपलब्ध पन्नोंका छपा हुआ अवतरण पा सकतें हैं:',
 	'coll-order_from_pp'              => '$1 से बुक मंगायें',
@@ -1005,6 +986,7 @@ $messages['hil'] = array(
 
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
+ * @author Siebrand
  */
 $messages['hsb'] = array(
 	'coll-desc'                      => '[[Special:Collection|Strony zběrać]], PDF wutworić',
@@ -1041,10 +1023,6 @@ $messages['hsb'] = array(
 	'coll-new_chapter'               => 'Zapodaj mjeno za nowy kapitl',
 	'coll-rename_chapter'            => 'Zapodaj nowe mjeno za kapitl',
 	'coll-no_such_category'          => 'Žana tajka kategorija',
-	'coll-mwpdf_error_title'         => 'PDF njeda so wutworić',
-	'coll-mwpdf_error_msg'           => 'Při wutworjenju PDF je zmylk wustupił.',
-	'coll-mwzip_error_title'         => 'Zběrka stronow njeda so wutworić',
-	'coll-mwzip_error_msg'           => 'Při wutworjenju zběrku stronow je zmylk wustupił.',
 	'coll-notitle_title'             => 'Titul strony njeda so zwěsćić.',
 	'coll-enter_title'               => 'Zapodaj titul za zběrku:',
 	'coll-error_reponse'             => 'Serwer je zmylk zdźělił',
@@ -1063,7 +1041,7 @@ $messages['hsb'] = array(
 	'coll-generating_pdf_title'      => 'Wutworjenje PDF',
 	'coll-notfound_title'            => 'zběrka njenamakana',
 	'coll-notfound_text'             => 'Strona zběrki njebu namakana.',
-	'coll-return_to_collection'      => 'Wróćo k [[:$1]]',
+	'coll-return_to_collection'      => 'Wróćo k <a href="$1">$2</a>',
 );
 
 /** Hungarian (Magyar)
@@ -1169,10 +1147,6 @@ $messages['ja'] = array(
 	'coll-new_chapter'                => '新しい章見出しを入力',
 	'coll-rename_chapter'             => '新しい章見出しを入力',
 	'coll-no_such_category'           => '指定されたカテゴリは存在しません',
-	'coll-mwpdf_error_title'          => 'PDFファイルが生成できません',
-	'coll-mwpdf_error_msg'            => 'PDFファイル生成中にエラーが発生しました',
-	'coll-mwzip_error_title'          => 'ページコレクションを作成できません',
-	'coll-mwzip_error_msg'            => 'ページコレクション作成中にエラーが発生しました',
 	'coll-notitle_title'              => 'ページタイトルが未設定です。',
 	'coll-post_failed_title'          => 'POSTリクエストの失敗',
 	'coll-post_failed_msg'            => 'このPOSTリクエストは失敗しました ($2)。',
@@ -1202,15 +1176,15 @@ $messages['ja'] = array(
 	'coll-generating_pdf_title'       => 'PDFファイルの生成',
 	'coll-generating_pdf_text'        => "'''PDFファイルの作成が完了するまで、今しばらくお待ちください。'''
 
-プロセス: '''%(progress)d%%'''
+プロセス: '''$1%'''
 
 このページは数秒ごとに自動的に更新されます。もしも自動更新されない場合は、ブラウザの更新ボタンを押してください。",
+	'coll-pdf_finished_title'         => 'PDFファイルの作成が完了しました',
 	'coll-pdf_finished_text'          => 'PDFファイルの作成に成功しました。
 以下のリンクをクリックすると、あなたのコンピュータへダウンロードすることができます。',
 	'coll-notfound_title'             => 'コレクションが見つかりません',
 	'coll-notfound_text'              => 'コレクションの保存ページが見つかりませんでした。',
-	'coll-return_to_collection'       => '[[:$1]]に戻る',
-	'coll-pages_removed'              => '以下のページはPDF形式での生成に失敗したため、作成されたPDFファイルには含まれていません:',
+	'coll-return_to_collection'       => '<a href="$1">$2</a>に戻る',
 );
 
 /** Javanese (Basa Jawa)
@@ -1249,9 +1223,6 @@ $messages['jv'] = array(
 	'coll-new_chapter'                => 'Lebokna jeneng anyar kanggo bab',
 	'coll-rename_chapter'             => 'Lebokna jeneng anyar kanggo bab',
 	'coll-no_such_category'           => 'Ora ana kategori kaya mengkono',
-	'coll-mwpdf_error_title'          => 'Ora bisa nggawé PDF',
-	'coll-mwpdf_error_msg'            => 'Ana kaluputan nalika nggawé berkas PDF.',
-	'coll-mwzip_error_title'          => 'Ora bisa nggawé kolèksi kaca',
 	'coll-notitle_title'              => 'Irah-irahan kaca iki ora bisa ditemtokaké.',
 	'coll-enter_title'                => 'Lebokna irah-irahan (judhul) kanggo kolèksi:',
 	'coll-empty_collection'           => 'Kolèksi kosong',
@@ -1272,15 +1243,16 @@ Ora bisa nambah kaca-kaca liya manèh.',
 	'coll-generating_pdf_title'       => 'Nggawé PDF',
 	'coll-generating_pdf_text'        => "'''Tulung nunggu sadélok sementara berkas PDF lagi digawé.'''
 
-Status saiki: '''%(progrès)d%%'''.
+Status saiki: '''$1%'''.
 
 Kaca iki samesthiné kudhu nganyari dhéwé saben sawetara detik.
 Yèn iki ora dumadi, mangga mencèt tombol ''refresh'' ing panjlajah wèb panjenengan.",
+	'coll-pdf_finished_title'         => 'Olèhé Nggawé PDF Rampung',
 	'coll-pdf_finished_text'          => 'Berkas PDF wis digawé.
-[Klik ing kéné] kanggo ngundhuh ing komputer panjenengan.',
+[$1 Klik ing kéné] kanggo ngundhuh ing komputer panjenengan.',
 	'coll-notfound_title'             => 'Kolèksi Ora Ditemokaké',
 	'coll-notfound_text'              => 'Ora bisa nemokaké kaca kolèksi.',
-	'coll-return_to_collection'       => 'Bali menyang [[:$1]]',
+	'coll-return_to_collection'       => 'Bali menyang <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Ana kaluputan nalika nggawé berkas PDF.',
 	'coll-book_title'                 => 'Pesen Buku Cithak',
 	'coll-order_from_pp'              => 'Pesen buku saka $1',
@@ -1291,6 +1263,7 @@ Yèn iki ora dumadi, mangga mencèt tombol ''refresh'' ing panjlajah wèb panjen
  * @author Chhorran
  * @author គីមស៊្រុន
  * @author Lovekhmer
+ * @author Siebrand
  */
 $messages['km'] = array(
 	'coll-add_page'             => 'បន្ថែមទំព័រ',
@@ -1315,8 +1288,6 @@ $messages['km'] = array(
 	'coll-new_chapter'          => 'ដាក់ឈ្មោះអោយ ជំពូកថ្មី',
 	'coll-rename_chapter'       => 'ដាក់ឈ្មោះថ្មី អោយជំពូក',
 	'coll-no_such_category'     => 'គ្មានចំណាត់ក្រុម ដូចនេះទេ',
-	'coll-mwpdf_error_title'    => 'មិន​អាច​បង្កើត PDF',
-	'coll-mwpdf_error_msg'      => 'មាន​បញ្ហា​មួយ​ក្នុងពេល​បង្កើត​ PDF',
 	'coll-notitle_title'        => 'មិន​អាចកំនត់​ចំនងជើង​នៃទំព័រ',
 	'coll-overwrite_title'      => 'ទំព័រ​មានហើយ។ សរសេរ​ជាន់ពីលើ ?',
 	'coll-yes'                  => 'បាទ / ចាស',
@@ -1325,7 +1296,8 @@ $messages['km'] = array(
 	'coll-append'               => 'បន្ថែមនៅចុង',
 	'coll-cancel'               => 'បោះបង់',
 	'coll-generating_pdf_title' => 'បង្កើត PDF',
-	'coll-return_to_collection' => 'ត្រលប់ទៅកាន់[[:$1]]វិញ',
+	'coll-pdf_finished_title'   => 'បញ្ចប់​ការបង្កើត PDF',
+	'coll-return_to_collection' => 'ត្រលប់ទៅកាន់<a href="$1">$2</a>វិញ',
 	'coll-book_title'           => 'ទិញសៀវភៅដែលបានបោះពុម្ព',
 	'coll-order_from_pp'        => 'បញ្ជាទិញ​សៀវភៅពី $1',
 	'coll-about_pp'             => 'អំពី$1',
@@ -1345,12 +1317,14 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'coll-empty'  => 'leddich',
-	'coll-cancel' => 'Ophüre',
+	'coll-empty'    => 'leddich',
+	'coll-cancel'   => 'Ophüre',
+	'coll-about_pp' => 'Üvver $1',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Siebrand
  */
 $messages['lb'] = array(
 	'coll-desc'                       => "[[Special:Collection|Säiten zesummestellen]], PDF'e generéieren",
@@ -1386,9 +1360,6 @@ $messages['lb'] = array(
 	'coll-new_chapter'                => 'Gitt den Numm fir dat neit Kapitel un',
 	'coll-rename_chapter'             => "Gitt een neie Numm fir d'Kapitel un",
 	'coll-no_such_category'           => 'Keng esou Kategorie',
-	'coll-mwpdf_error_title'          => 'E PDF konnt net gemaach ginn',
-	'coll-mwpdf_error_msg'            => 'Beim generéiere vum PDF-Fichier ass ee Feeler geschitt.',
-	'coll-mwzip_error_title'          => "D'Säit vun der Kollektioun konnt net generéiert ginn",
 	'coll-notitle_title'              => 'Den Titel vun der Säit konnt net festgestallt ginn.',
 	'coll-enter_title'                => 'Titel vun der Kollektioun uginn:',
 	'coll-error_reponse'              => 'Feelermeldng vum Server',
@@ -1408,7 +1379,7 @@ $messages['lb'] = array(
 	'coll-limit_exceeded_text'        => 'Är Sammlung ass ze grouss.
 Et kënne keng Säite méi derbäigesat ginn.',
 	'coll-generating_pdf_title'       => 'PDF maachen',
-	'coll-return_to_collection'       => 'Zréck op [[:$1]]',
+	'coll-return_to_collection'       => 'Zréck op <a href="$1">$2</a>',
 	'coll-book_title'                 => 'Gedréckte Buch bestellen',
 	'coll-order_from_pp'              => "D'Buch bestelle bäi $1",
 	'coll-about_pp'                   => 'Iwwer $1',
@@ -1465,10 +1436,6 @@ $messages['ml'] = array(
 	'coll-new_chapter'                => 'പുതിയ അദ്ധ്യായത്തിനു ഒരു പേരു കൊടുക്കുക',
 	'coll-rename_chapter'             => 'അദ്ധ്യായത്തിനു പുതിയൊരു പേരു കൊടുക്കുക',
 	'coll-no_such_category'           => 'അങ്ങനെ ഒരു വിഭാഗം നിലവിലില്ല',
-	'coll-mwpdf_error_title'          => 'PDF സൃഷ്ടിക്കുന്നതിനു കഴിഞ്ഞില്ല',
-	'coll-mwpdf_error_msg'            => 'PDF സൃഷ്ടിക്കാന്‍ ശ്രമിക്കുന്നതിനിടയില്‍ പിശക് സംഭവിച്ചു.',
-	'coll-mwzip_error_title'          => 'താളുകളുടെ ശേഖരം നിര്‍മ്മിക്കുവാന്‍ കഴിഞ്ഞില്ല',
-	'coll-mwzip_error_msg'            => 'താളുകളുടെ ശേഖരം നിര്‍മ്മിച്ചുകൊണ്ടിരിക്കുമ്പോള്‍ എന്തോ പിഴവ് സംഭവിച്ചു.',
 	'coll-notitle_title'              => 'താളിന്റെ തലക്കെട്ട് നിര്‍ണ്ണയിക്കുന്നതിനു കഴിഞ്ഞില്ല.',
 	'coll-enter_title'                => 'ശേഖരത്തിനു ഒരു ശീര്‍ഷകം ചേര്‍ക്കുക:',
 	'coll-error_reponse'              => 'സെര്‍‌വറില്‍ നിന്നു പിഴവാണെന്ന മറുപടി കിട്ടി.',
@@ -1493,11 +1460,12 @@ $messages['ml'] = array(
 	'coll-limit_exceeded_text'        => 'താങ്കളുടെ ശേഖരം വളരെ വലുതാണ്‌. ഇനി കൂടുതല്‍ താളുകള്‍ ചേര്‍ക്കുന്നതിനു സാദ്ധ്യമല്ല.',
 	'coll-generating_pdf_title'       => 'PDF നിര്‍മ്മിച്ചു കൊണ്ടിരിക്കുന്നു',
 	'coll-pdf_finished_text'          => 'PDF പ്രമാണം നിര്‍മ്മിച്ചു കഴിഞ്ഞിരിക്കുന്നു.
-അതു നിങ്ങളുടെ കമ്പ്യൂട്ടറിലേക്ക് ഇറക്കി വെയ്ക്കാന്‍ [ഇവിടെ ഞെക്കുക‍].',
-	'coll-pdf_not_satisfied'          => 'PDF ഔട്ട് പുട്ടില്‍ നിങ്ങള്‍ തൃപ്തരല്ലേ? [[{{MediaWiki:Coll-helppage}}|ശേഖരത്തെക്കുറിച്ചുള്ള സഹായ താള്‍]] നോക്കി അതു എങ്ങനെയൊക്കെ മെച്ചപ്പെടുത്താമെന്നു നോക്കൂ.',
+അതു നിങ്ങളുടെ കമ്പ്യൂട്ടറിലേക്ക് ഇറക്കി വെയ്ക്കാന്‍ [$1 ഇവിടെ ഞെക്കുക‍].
+
+PDF ഔട്ട് പുട്ടില്‍ നിങ്ങള്‍ തൃപ്തരല്ലേ? [[{{MediaWiki:Coll-helppage}}|ശേഖരത്തെക്കുറിച്ചുള്ള സഹായ താള്‍]] നോക്കി അതു എങ്ങനെയൊക്കെ മെച്ചപ്പെടുത്താമെന്നു നോക്കൂ.',
 	'coll-notfound_title'             => 'ശേഖരം കണ്ടില്ല',
 	'coll-notfound_text'              => 'ശേഖര താള്‍ കണ്ടെത്താന്‍ കഴിഞ്ഞില്ല.',
-	'coll-return_to_collection'       => '[[:$1]]-ലേക്കു തിരിച്ചു പോവുക',
+	'coll-return_to_collection'       => '<a href="$1">$2</a>-ലേക്കു തിരിച്ചു പോവുക',
 	'coll-pdf_error_text'             => 'PDF പ്രമാണം നിര്‍മ്മിക്കുമ്പോള്‍ പിഴവ് സംഭവിച്ചു.',
 	'coll-book_title'                 => 'അച്ചടിച്ച പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
 	'coll-book_text'                  => 'താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന സേവനദാതാക്കളെ സന്ദര്‍ശിച്ച് നിങ്ങളുടെ ശേഖരത്തിന്റെ അച്ചടി രൂപം ഓര്‍ഡര്‍ ചെയ്യാവുന്നതാണ്‌:',
@@ -1509,7 +1477,6 @@ $messages['ml'] = array(
  * @author Kaustubh
  * @author Siebrand
  * @author Mahitgar
- * @author Siebrand
  */
 $messages['mr'] = array(
 	'coll-desc'                       => '[[Special:Collection|पाने गोळा करा]], पीडीएफ तयार करा',
@@ -1555,10 +1522,6 @@ $messages['mr'] = array(
 	'coll-new_chapter'                => 'नवीन धड्याचे नाव लिहा',
 	'coll-rename_chapter'             => 'नवीन धड्याचे नाव लिहा',
 	'coll-no_such_category'           => 'असा वर्ग अस्तित्वात नाही',
-	'coll-mwpdf_error_title'          => 'पीडीएफ तयार करू शकलेलो नाही',
-	'coll-mwpdf_error_msg'            => 'पीडीएफ तयार करताना त्रुटी आढळलेली आहे.',
-	'coll-mwzip_error_title'          => 'पानांचे कलेक्शन तयार करू शकलेलो नाही',
-	'coll-mwzip_error_msg'            => 'पानांचे कलेक्शन तयार करताना त्रुटी आढळलेली आहे.',
 	'coll-notitle_title'              => 'या पानाचे शीर्षक ठरविता आलेले नाही.',
 	'coll-post_failed_title'          => 'पोस्ट (POST) ची मागणी पूर्ण झालेली नाही',
 	'coll-post_failed_msg'            => '$1 ची पोस्ट (POST) मागणी पूर्ण झालेली नाही ($2).',
@@ -1588,17 +1551,19 @@ $messages['mr'] = array(
 	'coll-generating_pdf_title'       => 'पीडीएफ तयार करीत आहे',
 	'coll-generating_pdf_text'        => "'''कॄपया पीडीएफ तयार होईपर्यंत वाट पहा.'''
 
-प्रगती: '''%(progress)d%%'''.
+प्रगती: '''$1%'''.
 
 हे पान आपोआप काही सेकंदांनंतर ताजेतवाने व्हायला पाहिजे. 
 जर तसे झाले नाही, तर कृपया आपल्या ब्राउझरला ताजेतवाने (refresh) करा.",
+	'coll-pdf_finished_title'         => 'पीडीएफ तयार झालेली आहे',
 	'coll-pdf_finished_text'          => 'पीडीएफ संचिका तयार झालेली आहे.
-आपल्या संगणकात ती उतरवून घेण्यासाठी [इथे टिचकी] मारा.',
-	'coll-pdf_not_satisfied'          => 'पीडीएफ आउटपुट वर संतुष्ट नाही आहात? ते सुधरण्याच्या शक्यतांसाठी [[{{MediaWiki:Coll-helppage}}|कलेक्शन माहिती पृष्ठ]] पहा.',
+आपल्या संगणकात ती उतरवून घेण्यासाठी [$1 इथे टिचकी] मारा.
+
+पीडीएफ आउटपुट वर संतुष्ट नाही आहात?
+ते सुधरण्याच्या शक्यतांसाठी [[{{MediaWiki:Coll-helppage}}|कलेक्शन माहिती पृष्ठ]] पहा.',
 	'coll-notfound_title'             => 'कलेक्शन सापडले नाही',
 	'coll-notfound_text'              => 'कलेक्शन पान सापडले नाही.',
-	'coll-return_to_collection'       => '[[:$1]] कडे परत जा',
-	'coll-pages_removed'              => 'खालील पाने पीडीएफ संचिकेत अंतर्भूत करू शकलेलो नाही:',
+	'coll-return_to_collection'       => '<a href="$1">$2</a> कडे परत जा',
 	'coll-pdf_error_text'             => 'पीडीएफ तयार करण्यामध्ये त्रुटी आलेली आहे.',
 	'coll-book_title'                 => 'छापील आवृत्तीची मागणी नोंदवा',
 	'coll-book_text'                  => 'तुम्ही खाली दिलेल्या मागणीनुसार छपाई करणार्‍या जोडीदारांच्या संकेतस्थळाला भेट देऊन तुमच्या कलेक्शन मधील पानांची छापील आवृत्ती मिळवू शकता:',
@@ -1611,6 +1576,7 @@ $messages['mr'] = array(
 
 /** Low German (Plattdüütsch)
  * @author Slomox
+ * @author Siebrand
  */
 $messages['nds'] = array(
 	'coll-add_page'             => 'Sied tofögen',
@@ -1632,7 +1598,7 @@ $messages['nds'] = array(
 	'coll-overwrite'            => 'Överschrieven',
 	'coll-cancel'               => 'Afbreken',
 	'coll-generating_pdf_title' => 'An’t PDF opstellen',
-	'coll-return_to_collection' => 'Trüch na [[:$1]]',
+	'coll-return_to_collection' => 'Trüch na <a href="$1">$2</a>',
 	'coll-order_from_pp'        => 'Book bestellen bi $1',
 	'coll-about_pp'             => 'Över $1',
 );
@@ -1686,10 +1652,6 @@ Wilt u ze toevoegen?",
 	'coll-new_chapter'                => 'Voer de naam van het nieuwe hofdstuk in',
 	'coll-rename_chapter'             => 'Voer een nieuwe naam in voor het hoofdstuk',
 	'coll-no_such_category'           => 'De categorie bestaat niet',
-	'coll-mwpdf_error_title'          => 'De PDF kon niet gemaakt worden',
-	'coll-mwpdf_error_msg'            => 'Er is een fout opgetreden tijdens het maken van de PDF.',
-	'coll-mwzip_error_title'          => 'De paginaverzameling kon niet gemaakt worden',
-	'coll-mwzip_error_msg'            => 'Er is een fout opgetreden tijdens het maken van de paginaverzameling.',
 	'coll-notitle_title'              => 'De titel van de pagina kon niet vastgesteld worden.',
 	'coll-post_failed_title'          => 'POST-verzoek mislukt',
 	'coll-post_failed_msg'            => 'Het POST-verzoek naar $1 is mislukt ($2).',
@@ -1719,17 +1681,19 @@ U kunt geen pagina's meer toevoegen.",
 	'coll-generating_pdf_title'       => 'Bezig met maken van PDF',
 	'coll-generating_pdf_text'        => "'''Wacht alstublieft. Het PDF-bestand wordt gemaakt.'''
 
-Voortgang: '''%(progress)d%%'''.
+Voortgang: '''$1%'''.
 
 Over enige seconden hoort deze pagina automatisch te verversen.
 Als dit niet werkt, klik dan op de knop 'Vernieuwen' in uw browser.",
+	'coll-pdf_finished_title'         => 'Maken PDF afgerond',
 	'coll-pdf_finished_text'          => 'Het PDF-bestand is beschikbaar.
-[Klik hier] om het naar uw computer te downloaden.',
-	'coll-pdf_not_satisfied'          => 'Niet tevreden met de PDF-uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina voor collecties]] staan manieren beschreven om die te verbeteren.',
+[$1 Klik hier] om het naar uw computer te downloaden.
+
+Niet tevreden met de PDF-uitvoer?
+Op de [[{{MediaWiki:Coll-helppage}}|hulppagina voor collecties]] staan manieren beschreven om die te verbeteren.',
 	'coll-notfound_title'             => 'Verzameling niet gevonden',
 	'coll-notfound_text'              => 'De verzamelingspagina is niet gevonden.',
-	'coll-return_to_collection'       => 'Teruggaan naar [[:$1]]',
-	'coll-pages_removed'              => "De onderstaande pagina's konden niet opgemaakt worden en zijn uit het PDF-bestand verwijderd: %(articles)s",
+	'coll-return_to_collection'       => 'Teruggaan naar <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Een fout trad op bij het aanmaken van het PDF bestand.',
 	'coll-book_title'                 => 'Gedrukt boek bestellen',
 	'coll-book_text'                  => 'U kunt een gedrukt boek bestellen dat uw paginaverzameling bevat door een van de volgende print-on-demand-partners te bezoeken:',
@@ -1800,10 +1764,6 @@ $messages['no'] = array(
 	'coll-new_chapter'                => 'Skriv inn navn for det nye kapittelet',
 	'coll-rename_chapter'             => 'Skriv inn kapittelets nye navn',
 	'coll-no_such_category'           => 'Ingen kategori ved dette navnet',
-	'coll-mwpdf_error_title'          => 'Kunne ikke generere PDF',
-	'coll-mwpdf_error_msg'            => 'En feil oppsto under PDF-generering',
-	'coll-mwzip_error_title'          => 'Kunne ikke generere sidesamling',
-	'coll-mwzip_error_msg'            => 'En feil oppsto under generering av sidesamling.',
 	'coll-notitle_title'              => 'Fant ikke ut av sidens tittel.',
 	'coll-post_failed_title'          => 'POST-forespørsel mislyktes',
 	'coll-post_failed_msg'            => 'POST-forespørselen til $1 mislyktes ($2).',
@@ -1830,16 +1790,19 @@ $messages['no'] = array(
 	'coll-generating_pdf_title'       => 'Genererer PDF',
 	'coll-generating_pdf_text'        => "'''Vent mens PDF-filen genereres.'''
 
-Framdrift: '''%(progress)d% %'''.
+Framdrift: '''$1 %'''.
 
-Denne siden burde oppdateres med noen sekunders mellomrom. Om dette ikke fungerer, trykk på oppdateringsknappen i nettleseren din.",
+Denne siden burde oppdateres med noen sekunders mellomrom.
+Om dette ikke fungerer, trykk på oppdateringsknappen i nettleseren din.",
+	'coll-pdf_finished_title'         => 'PDF-generering ferdig',
 	'coll-pdf_finished_text'          => 'PDF-filen har blitt skapt.
-[Klikk her] for å laste den ned.',
-	'coll-pdf_not_satisfied'          => 'Ikke fornøyd med PDF-resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for hvordan du kan forbedre det.',
+[$1 Klikk her] for å laste den ned.
+
+Ikke fornøyd med PDF-resultatet?
+Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for hvordan du kan forbedre det.',
 	'coll-notfound_title'             => 'Samling ikke funnet',
 	'coll-notfound_text'              => 'Kunne ikke finne samlingsside.',
-	'coll-return_to_collection'       => 'Tilbake til [[:$1]]',
-	'coll-pages_removed'              => 'Følgende sider kunne ikke gjengis og ble fjernet fra PDF-filen: %(articles)s',
+	'coll-return_to_collection'       => 'Tilbake til <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Det oppstod en feil ved generering av PDF-filen.',
 	'coll-book_title'                 => 'Bestilling av trykt bok',
 	'coll-book_text'                  => 'Du kan bestille en trykt bok med artikkelsamlingen din ved å besøke en av følgende trykkerpartnere:',
@@ -1898,10 +1861,6 @@ Las volètz apondre ?',
 	'coll-new_chapter'                => 'Entrar lo títol del capitol novèl',
 	'coll-rename_chapter'             => 'Entrar lo títol novèl pel capitol',
 	'coll-no_such_category'           => 'Pas de tala categoria',
-	'coll-mwpdf_error_title'          => 'Pòt pas generar de PDF',
-	'coll-mwpdf_error_msg'            => 'Una error es subrevenguda pendent la creacion del PDF.',
-	'coll-mwzip_error_title'          => 'Pòt pas generar de compilacion',
-	'coll-mwzip_error_msg'            => 'Una error es subrevenguda pendent la creacion de la compilacion',
 	'coll-notitle_title'              => 'Lo títol de la pagina pòt pas èsser determinat.',
 	'coll-post_failed_title'          => 'Fracàs de la requèsta POST',
 	'coll-post_failed_msg'            => 'La requèsta POST vèrs $1 a pas capitat ($2).',
@@ -1931,17 +1890,19 @@ Cap de pagina pòt pas èsser ajustada.',
 	'coll-generating_pdf_title'       => 'Creacion del PDF',
 	'coll-generating_pdf_text'        => "'''Esperatz pendent la creacion del PDF.'''
 
-Progression : '''%(progress)d%%'''.
+Progression : '''$1%'''.
 
 Aquesta pagina se deuriá actualizar automaticament.
 Se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navigador.",
+	'coll-pdf_finished_title'         => 'Creacion del PDF acabada',
 	'coll-pdf_finished_text'          => 'Lo fichièr PDF es estat creat.
-[Clicatz aicí] per lo telecargar sus vòstre ordenador.',
-	'coll-pdf_not_satisfied'          => 'Pas satisfach de la sortida PDF ? Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda a prepaus de las colleccions]] per las possibilitats de melhorament.',
+[$1 Clicatz aicí] per lo telecargar sus vòstre ordenador.
+
+Pas satisfach de la sortida PDF ?
+Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda a prepaus de las colleccions]] per las possibilitats de melhorament.',
 	'coll-notfound_title'             => 'Compilacion pas trobada',
 	'coll-notfound_text'              => 'Pòt pas trobar la compilacion.',
-	'coll-return_to_collection'       => 'Tornar a [[:$1]]',
-	'coll-pages_removed'              => 'Las paginas seguentas an pas pogut èsser tractadas e son estadas levadas del fichièr PDF : %(articles)s',
+	'coll-return_to_collection'       => 'Tornar a <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Una error es estada detectada al moment de la creacion del fichièr PDF.',
 	'coll-book_title'                 => 'Comandar un libre imprimit',
 	'coll-book_text'                  => "Podètz comandar un libre imprimit contenent vòstra colleccion d'articles en visitant una demanda d'impression de la part de partenaris :",
@@ -1968,7 +1929,6 @@ $messages['os'] = array(
  * @author Sp5uhe
  * @author Derbeth
  * @author Siebrand
- * @author Wpedzich
  * @author Wpedzich
  */
 $messages['pl'] = array(
@@ -2015,13 +1975,11 @@ Czy chcesz by zostały dodane?',
 	'coll-new_chapter'                => 'Wprowadź nazwę dla nowego rozdziału',
 	'coll-rename_chapter'             => 'Wprowadź nową nazwę dla rozdziału',
 	'coll-no_such_category'           => 'Brak takiej kategorii',
-	'coll-mwpdf_error_title'          => 'Nie można utworzyć pliku PDF',
-	'coll-mwpdf_error_msg'            => 'Błąd podczas tworzenia pliku PDF',
-	'coll-mwzip_error_title'          => 'Nie mogę utworzyć kolekcji stron',
-	'coll-mwzip_error_msg'            => 'Błąd podczas tworzenia kolekcji stron.',
 	'coll-notitle_title'              => 'Tytuł strony nie może być określony.',
 	'coll-post_failed_title'          => 'Żądanie POST nieudane',
 	'coll-post_failed_msg'            => 'Żądanie POST do $1 nie powiodło się ($2).',
+	'coll-pdfserver_failed_title'     => 'Błąd serwera plików PDF',
+	'coll-pdfserver_failed_msg'       => 'Wystąpił błąd serwera plików PDF: $1',
 	'coll-enter_title'                => 'Podaj tytuł kolekcji:',
 	'coll-error_reponse'              => 'Błąd odpowiedzi serwera',
 	'coll-empty_collection'           => 'Pusta kolekcja',
@@ -2048,17 +2006,19 @@ Nie można dodać więcej stron.',
 	'coll-generating_pdf_title'       => 'Tworzenie PDF',
 	'coll-generating_pdf_text'        => "'''Poczekaj, plik PDF jest właśnie tworzony.'''
 
-Postęp: '''%(progress)d%%'''.
+Postęp: '''$1%'''.
 
 Strona powinna być automatycznie odświeżana co kilka sekund.
 Jeśli tak się nie dzieje, użyj przycisku ''Odśwież'' w przeglądarce.",
-	'coll-pdf_finished_text'          => 'Plik PDF został utworzony.
-[Kliknij tutaj], by pobrać go na swój komputer.',
-	'coll-pdf_not_satisfied'          => 'Plik PDF nie spełnił Twoich oczekiwań? Zobacz [[{{MediaWiki:Coll-helppage}}|kolekcję opisów]] jak można podwyższyć jego jakość.',
+	'coll-pdf_finished_title'         => 'Tworzenie pliku PDF zakończone',
+	'coll-pdf_finished_text'          => "'''Plik PDF został utworzony.'''
+[$1 Kliknij tutaj], by pobrać go na swój komputer.
+
+Plik PDF nie spełnił Twoich oczekiwań?
+Zobacz [[{{MediaWiki:Coll-helppage}}|kolekcję opisów]] jak można podwyższyć jego jakość.",
 	'coll-notfound_title'             => 'Nie znaleziono kolekcji',
 	'coll-notfound_text'              => 'Nie udało się znaleźć strony kolekcji.',
-	'coll-return_to_collection'       => 'Powróć do [[:$1]]',
-	'coll-pages_removed'              => 'Następujące strony nie mogły zostać przetworzone do formatu PDF i brak ich w wynikowym pliku:',
+	'coll-return_to_collection'       => 'Powróć do <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Wystąpił błąd w trakcie generowania pliku w formacie PDF.',
 	'coll-book_title'                 => 'Zamów wydrukowaną książkę',
 	'coll-book_text'                  => 'Możesz zamówić drukowaną książkę zawierającą kolekcję wybranych przez Ciebie stron. Odwiedź jednego z partnerów realizujących usługę wydruku na żądanie:',
@@ -2150,10 +2110,6 @@ Deseja adicioná-las?',
 	'coll-new_chapter'                => 'Introduza o nome do novo capítulo',
 	'coll-rename_chapter'             => 'Introduza o nome do capítulo',
 	'coll-no_such_category'           => 'Não existe essa categoria',
-	'coll-mwpdf_error_title'          => 'Não foi possível gerar PDF',
-	'coll-mwpdf_error_msg'            => 'Um erro ocorreu durante a criação do PDF.',
-	'coll-mwzip_error_title'          => 'Não foi fossível criar a colecção de páginas',
-	'coll-mwzip_error_msg'            => 'Um erro ocorreu durante a criação da colecção de páginas.',
 	'coll-notitle_title'              => 'Não foi possível determinar o título da página.',
 	'coll-post_failed_title'          => 'Pedido POST falhou',
 	'coll-post_failed_msg'            => 'O pedido POST falhou ($2).',
@@ -2183,17 +2139,19 @@ Não poderão ser adicionadas mais páginas.',
 	'coll-generating_pdf_title'       => 'A criar PDF',
 	'coll-generating_pdf_text'        => "'''Por favor, aguarde enquanto o ficheiro PDF está a ser gerado.'''
 
-Progresso: '''%(progress)d%%'''.
+Progresso: '''\$1%'''.
 
 Esta página deverá refrescar automaticamente e repetidamente dentro de alguns segundos.
 Se isto não acontecer, por favor, carregue no botão de refrescar do seu \"browser\".",
+	'coll-pdf_finished_title'         => 'Geração de PDF Completada',
 	'coll-pdf_finished_text'          => 'O ficheiro PDF foi gerado.
-[Clique aqui] para fazer o download.',
-	'coll-pdf_not_satisfied'          => 'Não está satisfeito com o resultado do PDF? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para formas de melhorá-lo.',
+[$1 Clique aqui] para fazer o download.
+
+Não está satisfeito com o resultado do PDF?
+Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para formas de melhorá-lo.',
 	'coll-notfound_title'             => 'Colecção Não Encontrada',
 	'coll-notfound_text'              => 'Não foi possível encontrar a página da colecção.',
-	'coll-return_to_collection'       => 'Regressar a [[:$1]]',
-	'coll-pages_removed'              => 'As seguintes páginas não puderam ser renderizadas e foram removidas do ficheiro PDF: %(articles)s',
+	'coll-return_to_collection'       => 'Regressar a <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Ocorreu um erro ao gerar o ficheiro PDF.',
 	'coll-book_title'                 => 'Encomendar Livro Impresso',
 	'coll-book_text'                  => 'Você pode encomendar um livro impresso contendo a sua colecção de páginas visitando um dos seguintes parceiros de impressão a pedido:',
@@ -2250,10 +2208,6 @@ $messages['ru'] = array(
 	'coll-new_chapter'                => 'Введите имя для новой главы',
 	'coll-rename_chapter'             => 'Введите новое имя главы',
 	'coll-no_such_category'           => 'Нет такой категории',
-	'coll-mwpdf_error_title'          => 'Невозможно создать PDF',
-	'coll-mwpdf_error_msg'            => 'Во время создания PDF произошла ошибка.',
-	'coll-mwzip_error_title'          => 'Невозможно создать коллекцию страниц',
-	'coll-mwzip_error_msg'            => 'Во время создания коллекции страниц произошла ошибка.',
 	'coll-notitle_title'              => 'Заголовок страницы не может быть определён.',
 	'coll-post_failed_title'          => 'POST-запрос не выполнен',
 	'coll-post_failed_msg'            => 'POST-запрос не выполнен ($2).',
@@ -2283,18 +2237,19 @@ $messages['ru'] = array(
 	'coll-generating_pdf_title'       => 'Создание PDF',
 	'coll-generating_pdf_text'        => "'''Пожалуйста, дождитесь создания PDF-файл.'''
 
-Выполнено: '''%(progress)d%%'''.
+Выполнено: '''$1%'''.
 
 Эта страница должна автоматически обновляться каждые несколько секунд,
 если этого не происходит, пожалуйста, нажмите кнопку обновления в вашем браузере.",
+	'coll-pdf_finished_title'         => 'Создание PDF завершено',
 	'coll-pdf_finished_text'          => 'PDF-файл был создан.
-[Нажмите здесь], чтобы скачать его на свой компьютер.',
-	'coll-pdf_not_satisfied'          => 'Не удовлетворены получившемся результатом?
+[$1 Нажмите здесь], чтобы скачать его на свой компьютер.
+
+Не удовлетворены получившемся результатом?
 На [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]] рассказывается о возможностях улучшить PDF-вывод.',
 	'coll-notfound_title'             => 'Коллекция не найдена',
 	'coll-notfound_text'              => 'Невозможно найти страницу коллекции.',
-	'coll-return_to_collection'       => 'Назад к [[:$1]]',
-	'coll-pages_removed'              => 'Следующие страницы не могут быть обработаны и были удалены из PDF-файла: %(статей)',
+	'coll-return_to_collection'       => 'Назад к <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Во время создания PDF-файла произошла ошибка.',
 	'coll-book_title'                 => 'Заказать печатную книгу',
 	'coll-book_text'                  => 'Вы можете заказать печатную книгу, содержащую вашу коллекцию страниц, воспользовавшись одним из следующих предложений печати по запросу:',
@@ -2353,13 +2308,11 @@ Pozri ďalšie informácue na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka 
 	'coll-new_chapter'                => 'Zadajte názov novej kapitoly',
 	'coll-rename_chapter'             => 'Zadajte nový názov kapitoly',
 	'coll-no_such_category'           => 'Taká kategória neexistuje',
-	'coll-mwpdf_error_title'          => 'Nebolo možné vytvoriť PDF',
-	'coll-mwpdf_error_msg'            => 'Počas tvorby PDF sa vyskytla chyba.',
-	'coll-mwzip_error_title'          => 'Nebolo možné vytvoriť kolekciu stránok',
-	'coll-mwzip_error_msg'            => 'Počas tvorby kolekcie stránok sa vyskytla chyba.',
 	'coll-notitle_title'              => 'Názov stránky nebolo možné určiť.',
 	'coll-post_failed_title'          => 'Chyba požiadavky POST',
 	'coll-post_failed_msg'            => 'Chyba požiadavky POST na $1 ($2).',
+	'coll-pdfserver_failed_title'     => 'Chyba PDF servera',
+	'coll-pdfserver_failed_msg'       => 'Vyskytla sa chyba PDF servera: $1',
 	'coll-enter_title'                => 'Zadajte názov kolekcie:',
 	'coll-error_reponse'              => 'Chybná odpoveď servera',
 	'coll-empty_collection'           => 'Prázdna kolekcia',
@@ -2386,17 +2339,18 @@ Nie je možné pridať ďalšie stránky.',
 	'coll-generating_pdf_title'       => 'Vytvára sa PDF',
 	'coll-generating_pdf_text'        => "'''Prosím čakajte, kým sa vytvára PDF súbor.'''
 
-Priebeh: '''%(progress)d%%'''.
+Priebeh: '''$1%'''.
 
 Táto stránka by sa mala každých niekoľko sekúnd automaticky obnoviť. Ak to nefunguje, stlačte prosím tlačidlo Obnoviť vo vašom prehliadači.",
-	'coll-pdf_finished_text'          => 'PDF súbor bol vytvorený.
-Teraz ho môžete [stiahnuť].',
-	'coll-pdf_not_satisfied'          => 'Nie ste spokojný s PDF výstupom?
-Pozri možnosti jeho vylepšenia na [[{{MediaWiki:Coll-helppage}}|stránke Pomocníka o kolekciách]].',
+	'coll-pdf_finished_title'         => 'Tvorba PDF dokončená',
+	'coll-pdf_finished_text'          => "'''PDF súbor bol vytvorený.'''
+Teraz ho môžete [$1 stiahnuť].
+
+Nie ste spokojný s PDF výstupom?
+Pozri možnosti jeho vylepšenia na [[{{MediaWiki:Coll-helppage}}|stránke Pomocníka o kolekciách]].",
 	'coll-notfound_title'             => 'Kolekcia nenájdená',
 	'coll-notfound_text'              => 'Nebolo možné nájsť stránku kolekcie',
-	'coll-return_to_collection'       => 'Vrátiť sa na [[:$1]]',
-	'coll-pages_removed'              => 'Nasledovné stránky nebolo možné vykresliť a boli z PDF súboru odstránené: %(articles)s',
+	'coll-return_to_collection'       => 'Vrátiť sa na <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Pri tvorbe PDF súboru sa vyskytla chyba.',
 	'coll-book_title'                 => 'Objednať tlačenú knihu',
 	'coll-book_text'                  => 'Môžete si objednať tlačenú knihu obsahujúcu vašu zbierku článkov. Navštívte jedného z nasledovných partnerov, ktorí tobia tlač na vyžiadanie:',
@@ -2477,19 +2431,28 @@ Moatest du do bietouföigje?',
 
 /** Sundanese (Basa Sunda)
  * @author Irwangatot
+ * @author Siebrand
  */
 $messages['su'] = array(
+	'coll-add_page'             => 'Nambah kaca',
+	'coll-remove_page'          => 'Miceun kaca',
 	'coll-add_category'         => 'Nambah kategori',
 	'coll-empty'                => 'kosong',
 	'coll-page'                 => 'kaca',
 	'coll-pages'                => 'kaca',
+	'coll-move_to_top'          => 'Mindahkeun ka luhur',
+	'coll-move_up'              => 'Pindahkeun ka luhur',
+	'coll-move_down'            => 'Mindahkeun ka handap',
+	'coll-move_to_bottom'       => 'Mindahkeun ka handap',
+	'coll-title'                => 'Judul:',
 	'coll-contents'             => 'eusi',
 	'coll-rename'               => 'Ganti ngaran',
 	'coll-yes'                  => 'Enya',
 	'coll-no'                   => 'Teu',
 	'coll-append'               => 'Tambahkeun',
 	'coll-cancel'               => 'Bolay',
-	'coll-return_to_collection' => 'Balik deui ka [[:$1]]',
+	'coll-return_to_collection' => 'Balik deui ka <a href="$1">$2</a>',
+	'coll-about_pp'             => 'Ngeunaan $1',
 );
 
 /** Swedish (Svenska)
@@ -2541,13 +2504,11 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälp sidan om samlingar]] för mer informatio
 	'coll-new_chapter'                => 'Välj ett namn för det nya kapitlet',
 	'coll-rename_chapter'             => 'Välj ett nytt namn för kapitlet',
 	'coll-no_such_category'           => 'Ingen sådan kategori',
-	'coll-mwpdf_error_title'          => 'Kan inte generera PDF',
-	'coll-mwpdf_error_msg'            => 'Ett frl uppstod under PDF-generering.',
-	'coll-mwzip_error_title'          => 'Kunde inte generera sidsamling',
-	'coll-mwzip_error_msg'            => 'Ett fel uppstod under generering av sidsamling.',
 	'coll-notitle_title'              => 'Titeln av sidan kunde inte fastställas.',
 	'coll-post_failed_title'          => 'POST-begäring avslagen',
 	'coll-post_failed_msg'            => 'POST-begäringen till $1 avslagen ($2).',
+	'coll-pdfserver_failed_title'     => 'Fel med PDF-servern',
+	'coll-pdfserver_failed_msg'       => 'Ett fel uppstod med PDF-servern: $1',
 	'coll-enter_title'                => 'Skriv in samlingens namn:',
 	'coll-error_reponse'              => 'Felrespons från servern',
 	'coll-empty_collection'           => 'Tom samling',
@@ -2574,17 +2535,19 @@ Inga mer sidor kan läggas till.',
 	'coll-generating_pdf_title'       => 'Genererar PDF',
 	'coll-generating_pdf_text'        => "'''Var god vänta medan PDF-filen genereras.'''
 
-Fortgång: '''%(progress)d%%'''.
+Fortgång: '''$1%'''.
 
 Denna sida borde automatiskt med några sekunders mellanrum
 Om detta inte funkar, var god tryck på uppdateringsknappen i din webbläsare.",
+	'coll-pdf_finished_title'         => 'PDF-generering färdig',
 	'coll-pdf_finished_text'          => 'PDF-filen har genererats.
-[Klicka här] för att ladda ner den till din dator.',
-	'coll-pdf_not_satisfied'          => 'Inte nöjd med PDF-resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för hur du kan förbättra det.',
+[$1 Klicka här] för att ladda ner den till din dator.
+
+Inte nöjd med PDF-resultatet?
+Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för hur du kan förbättra det.',
 	'coll-notfound_title'             => 'Samling inte funnen',
 	'coll-notfound_text'              => 'Kan inte hitta samlings sida',
-	'coll-return_to_collection'       => 'Tillbaka till [[:$1]]',
-	'coll-pages_removed'              => 'Följande sidor kunde inte framställas och blev borttagna från PDF-filen: %(articles)s',
+	'coll-return_to_collection'       => 'Tillbaka till <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Det uppstod ett fel med generering av PDF-filen.',
 	'coll-book_title'                 => 'Beställ utskriven bok',
 	'coll-book_text'                  => 'Du kan beställa en tryckt bok som rymmer din artikelsamling genom att besöka en av de samarbetspartners som utför behovstryckning:',
@@ -2642,10 +2605,6 @@ $messages['te'] = array(
 	'coll-rename'                     => 'పేరుమార్చు',
 	'coll-new_chapter'                => 'కొత్త అధ్యాయానికి పేరు సూచించండి',
 	'coll-no_such_category'           => 'అటువంటి వర్గం లేదు',
-	'coll-mwpdf_error_title'          => 'PDFని తయారుచేయలేకపోయాం',
-	'coll-mwpdf_error_msg'            => 'PDF తయారీలో ఏదో పొరపాటు జరిగింది.',
-	'coll-mwzip_error_title'          => 'పేజీ సేకరణని తయారుచేయలేకున్నాం',
-	'coll-mwzip_error_msg'            => 'పేజీల సేకరణ తయారీలో పొరపాటు జరిగింది.',
 	'coll-notitle_title'              => 'ఆ పేజీ యొక్క శీర్షికని నిర్ణయించలేకున్నాం.',
 	'coll-post_failed_title'          => 'POST అభ్యర్థన విఫలమైంది',
 	'coll-enter_title'                => 'సేకరణకి శీర్షిక ఇవ్వండి:',
@@ -2671,11 +2630,12 @@ $messages['te'] = array(
 	'coll-generating_pdf_title'       => 'PDFని తయారుచేస్తున్నాం',
 	'coll-generating_pdf_text'        => "'''PDF ఫైలు తయారయ్యేంత వరకు వేచివుండండి.'''
 ఈ పేజీని ప్రతీ కొన్ని క్షణాలకు ఆటోమెటిగ్గా తాజాకరిస్తాం, అది పనిచేయకపోతే, మీ విహారిణిలోని తాజాకరించు బొత్తాన్ని నొక్కండి.",
+	'coll-pdf_finished_title'         => 'PDF తయారీ పూర్తయ్యింది',
 	'coll-pdf_finished_text'          => 'PDF ఫైలు తయారయ్యింది.
 దాన్ని మీ కంప్యూటర్లోనికి దిగుమతి చేసుకోడానికి క్రిందనిచ్చిన లింకుపై నొక్కండి.',
 	'coll-notfound_title'             => 'సేకరణ కనబడలేదు',
 	'coll-notfound_text'              => 'సేకరణ పేజీ కనబడలేదు.',
-	'coll-return_to_collection'       => 'తిరిగి [[:$1]]కి',
+	'coll-return_to_collection'       => 'తిరిగి <a href="$1">$2</a>కి',
 	'coll-order_from_pp'              => '$1 నుండి పుస్తకాన్ని ఆర్డర్ చెయ్యండి',
 	'coll-about_pp'                   => '$1 గురించి',
 );
@@ -2739,10 +2699,6 @@ $messages['tg-cyrl'] = array(
 	'coll-new_chapter'                => 'Барои фасли ҷадид номеро ворид кунед',
 	'coll-rename_chapter'             => 'Барои фасл номи ҷадидеро ворид кунед',
 	'coll-no_such_category'           => 'Чунин гурӯҳ вуҷуд надорад',
-	'coll-mwpdf_error_title'          => 'PDF ҳосил шуда натавонист',
-	'coll-mwpdf_error_msg'            => 'Дар ҳоли ҳосили PDF хатое рух дод.',
-	'coll-mwzip_error_title'          => 'Гирдоварии саҳифа ҳосил шуда натавонист',
-	'coll-mwzip_error_msg'            => 'Дар ҳоли ҳосил кардани саҳифаи гирдоварӣ хатое рух дод.',
 	'coll-notitle_title'              => 'Унвони саҳифа мушаххас шуда наметавонад.',
 	'coll-enter_title'                => 'Барои гирдовари унвонеро ворид кунед:',
 	'coll-error_reponse'              => 'Посухи хатое аз хидматгузор',
@@ -2768,10 +2724,10 @@ $messages['tg-cyrl'] = array(
 	'coll-limit_exceeded_text'        => 'Саҳифаи гирдоварии шумо хеле бузург аст.
 Аз ин зиёд саҳифаҳо наметавонанд илова шаванд.',
 	'coll-generating_pdf_title'       => 'Дар ҳоли ҳосили PDF',
+	'coll-pdf_finished_title'         => 'Ҳосил кардани PDF ба анҷом расид',
 	'coll-notfound_title'             => 'Гирдовари Ёфт Нашуд',
 	'coll-notfound_text'              => 'Саҳифаи гирдоварӣ ёфт нашуд.',
-	'coll-return_to_collection'       => 'Бозгашт ба [[:$1]]',
-	'coll-pages_removed'              => 'Саҳифаҳои зер наметавонанд ироаъ шаванд ва аз парвандаи PDF пок шуданд:',
+	'coll-return_to_collection'       => 'Бозгашт ба <a href="$1">$2</a>',
 	'coll-book_title'                 => 'Фармудани Китоби Чопӣ',
 	'coll-book_text'                  => 'Шумо метавонед китоби ба табъ расидаро, ки саҳифаи гирдовариҳои шуморо дорост бо ташриф овардан ба яке аз ҳамкорони чоп-дархост фармоед:',
 	'coll-order_from_pp'              => 'Фармудани китоб аз $1',
@@ -2788,7 +2744,6 @@ $messages['tr'] = array(
 
 /** Ukrainian (Українська)
  * @author Ahonc
- * @author Siebrand
  * @author Siebrand
  */
 $messages['uk'] = array(
@@ -2835,10 +2790,6 @@ $messages['uk'] = array(
 	'coll-new_chapter'                => 'Уведіть назву нового розділу',
 	'coll-rename_chapter'             => 'Уведіть нову назву розділу',
 	'coll-no_such_category'           => 'Нема такої категорії',
-	'coll-mwpdf_error_title'          => 'Неможливо згенерувати PDF',
-	'coll-mwpdf_error_msg'            => 'Під час створення PDF-файлу відбулася помилка.',
-	'coll-mwzip_error_title'          => 'Неможливо створити колекцію сторінок',
-	'coll-mwzip_error_msg'            => 'Під час створення колекції сторінок відбулася помилка.',
 	'coll-notitle_title'              => 'Заголовок сторінки неможливо визначити.',
 	'coll-post_failed_title'          => 'POST-запит не виконаний',
 	'coll-post_failed_msg'            => 'POST-запит не виконаний ($2).',
@@ -2868,16 +2819,16 @@ $messages['uk'] = array(
 	'coll-generating_pdf_title'       => 'Створення PDF',
 	'coll-generating_pdf_text'        => "'''Будь ласка, зачекайте, поки створиться PDF-файл.'''
 
-Прогрес: '''%(progress)d%%'''.
+Прогрес: '''$1%'''.
 
 Ця сторінка повинна автоматично оновлюватися кожні декілька секунд.
 Якщо цього не відбувається, натисніть кнопку оновлення у вашому браузері.",
+	'coll-pdf_finished_title'         => 'Створення PDF закінчене',
 	'coll-pdf_finished_text'          => "PDF-файл був створений.
 [Натисніть тут], щоб завантажити його на свій комп'ютер.",
 	'coll-notfound_title'             => 'Колекція не знайдена',
 	'coll-notfound_text'              => 'Неможливо знайти сторінку колекції.',
-	'coll-return_to_collection'       => 'Назад до [[:$1]]',
-	'coll-pages_removed'              => 'Наступні сторінки не можуть бути оброблені і були вилучені з PDF-файлу: %(articles)s',
+	'coll-return_to_collection'       => 'Назад до <a href="$1">$2</a>',
 	'coll-book_title'                 => 'Замовити друковану книгу',
 	'coll-book_text'                  => 'Ви можете замовити друковану книгу, що містить вашу колекцію сторінок, скориставшись однією з наступних пропозицій друку за запитом:',
 	'coll-order_from_pp'              => 'Замовлення книги в $1',
@@ -2933,10 +2884,6 @@ Bạn có muốn thêm chúng không?',
 	'coll-new_chapter'                => 'Gõ vào tên chương mới',
 	'coll-rename_chapter'             => 'Gõ vào tên chương mới',
 	'coll-no_such_category'           => 'Không có thể loại như vậy',
-	'coll-mwpdf_error_title'          => 'Không thể tạo ra PDF',
-	'coll-mwpdf_error_msg'            => 'Có lỗi xảy ra khi tạo tập tin PDF.',
-	'coll-mwzip_error_title'          => 'Không thể tạo ra tập hợp trang',
-	'coll-mwzip_error_msg'            => 'Có lỗi xảy ra khi tạo ra tập hợp trang.',
 	'coll-notitle_title'              => 'Không xác định được tựa đề của trang.',
 	'coll-post_failed_title'          => 'Yêu cầu POST thất bại',
 	'coll-post_failed_msg'            => 'Yêu cầu POST đến $1 thất bại ($2).',
@@ -2966,18 +2913,18 @@ Không thể thêm trang được nữa.',
 	'coll-generating_pdf_title'       => 'Tạo ra PDF',
 	'coll-generating_pdf_text'        => "'''Xin hãy chờ trong khi tập tin PDF đang được tạo ra.'''
 
-Tiến trình: '''%(progress)d%%'''.
+Tiến trình: '''$1%'''.
 
 Cứ vài giây trang này sẽ tự động tải lại một lần.
 Nếu nó không hoạt động, xin hãy nhấn nút refresh trên trình duyệt của bạn.",
 	'coll-pdf_finished_text'          => 'Tập tin PDF đã được tạo ra.
-[Nhấn vào đây] để tải nó về máy tính.',
-	'coll-pdf_not_satisfied'          => 'Không vừa lòng với ngõ ra PDF? Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp
-về tập hợp]] để có các cách phát triển nó lên.',
+[$1 Nhấn vào đây] để tải nó về máy tính.
+
+Không vừa lòng với ngõ ra PDF?
+Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] để có các cách phát triển nó lên.',
 	'coll-notfound_title'             => 'Không tìm thấy tập hợp',
 	'coll-notfound_text'              => 'Không tìm thấy trang tập hợp.',
-	'coll-return_to_collection'       => 'Quay trở về [[:$1]]',
-	'coll-pages_removed'              => 'Các trang sau không thể duyệt được và đã bị loại ra khỏi tập tin PDF: %(bài)',
+	'coll-return_to_collection'       => 'Quay trở về <a href="$1">$2</a>',
 	'coll-pdf_error_text'             => 'Có lỗi khi tạo ra tập tin PDF.',
 	'coll-book_title'                 => 'Đặt sách in',
 	'coll-book_text'                  => 'Bạn có thể đặt một cuốn sách in có chứa tập hợp trang của bạn bằng cách ghét thăm mọt trong những bên cộng tác in-theo-yêu-cầu:',
