@@ -179,8 +179,8 @@ $messages['af'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
- * @author Siebrand
  * @author OsamaK
+ * @author Siebrand
  */
 $messages['ar'] = array(
 	'coll-desc'                       => '[[Special:Collection|صفحات مجموعة]]، تولد PDFs',
@@ -228,7 +228,8 @@ $messages['ar'] = array(
 	'coll-no_such_category'           => 'لا تصنيف كهذا',
 	'coll-notitle_title'              => 'عنوان الصفحة لم يمكن تحديده.',
 	'coll-post_failed_title'          => 'طلب POST فشل',
-	'coll-post_failed_msg'            => 'طلب POST فشل ($2).',
+	'coll-post_failed_msg'            => 'طلب POST إلى $1 فشل ($2).',
+	'coll-pdfserver_failed_title'     => 'PDF خطأ خادم',
 	'coll-enter_title'                => 'أدخل العنوان للمجموعة:',
 	'coll-error_reponse'              => 'خطأ استجابة من الخادم',
 	'coll-empty_collection'           => 'مجموعة فارغة',
@@ -254,15 +255,19 @@ $messages['ar'] = array(
 لا مزيد من الصفحات يمكن إضافتها.',
 	'coll-generating_pdf_title'       => 'توليد PDF',
 	'coll-generating_pdf_text'        => "'''من فضلك انتظر أثناء توليد ملف PDF.'''
-هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان، لو أن هذا لا يعمل، من فضلك اضغط زر refresh في متصفحك.",
+
+التقدم: '''$1%'''.
+
+هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان.
+لو أن هذا لا يعمل، من فضلك اضغط زر refresh في متصفحك.",
 	'coll-pdf_finished_title'         => 'توليد PDF اكتمل',
-	'coll-pdf_finished_text'          => 'ملف PDF تم توليده.
-اضغط على الوصلة بالأسفل لتحميله إلى حاسوبك.
+	'coll-pdf_finished_text'          => "'''ملف PDF تم توليده'''.
+[$1 اضغط هنا] لتحميله إلى حاسوبك.
 غير راض عن ناتج PDF؟
-انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.',
+انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.",
 	'coll-notfound_title'             => 'المجموعة غير موجودة',
 	'coll-notfound_text'              => 'لم يمكن العثور على صفحة المجموعة.',
-	'coll-return_to_collection'       => 'ارجع إلى [[:$1]]',
+	'coll-return_to_collection'       => 'ارجع إلى <a href="$1">$2</a>',
 	'coll-book_title'                 => 'طلب كتاب مطبوع',
 	'coll-order_from_pp'              => 'طلب كتاب من $1',
 	'coll-about_pp'                   => 'حول $1',
@@ -614,6 +619,8 @@ $messages['eo'] = array(
 	'coll-notitle_title'              => 'La titolo de la paĝo ne estis determinebla.',
 	'coll-post_failed_title'          => 'POST-peto malsukcesis',
 	'coll-post_failed_msg'            => 'La POST-peto por $1 malsukcesis ($2).',
+	'coll-pdfserver_failed_title'     => 'Eraro de PDF-servilo',
+	'coll-pdfserver_failed_msg'       => 'Eraro okazis en la PDF-servilo: $1',
 	'coll-enter_title'                => 'Enigu titolon por kolekto:',
 	'coll-error_reponse'              => 'Erara respondo de servilo',
 	'coll-empty_collection'           => 'Malplena kolekto',
@@ -639,6 +646,11 @@ Plenumita: '''$1%'''.
 Ĉi paĝo verŝajne aŭtomate refreŝiĝos po kelkaj sekundoj.
 Se ĉi tiel ne funkcias, bonvolu klaki la refreŝigan butonon de via retumilo.",
 	'coll-pdf_finished_title'         => 'PDF-generado Finita',
+	'coll-pdf_finished_text'          => "'''La PDF-dosiero estis generita.'''
+[$1 Klaku ĉi tien] elŝuti ĝin al via komputilo.
+
+Ĉu vi estas malkontenta kun la PDF-eligo?
+Rigardu [[{{MediaWiki:Coll-helppage}}|la helpo-paĝo pri kolektoj]] por fojoj plibonigi ĝin.",
 	'coll-notfound_title'             => 'Kolekto Ne Trovita',
 	'coll-notfound_text'              => 'Ne eblas trovi kolekto-paĝon.',
 	'coll-return_to_collection'       => 'Reiru al <a href="$1">$2</a>',
@@ -668,6 +680,7 @@ $messages['fi'] = array(
 /** French (Français)
  * @author Meithal
  * @author Grondin
+ * @author Verdy p
  * @author Siebrand
  */
 $messages['fr'] = array(
@@ -717,6 +730,8 @@ Voulez-vous les ajouter ?',
 	'coll-notitle_title'              => 'Le titre de la page ne peut être déterminée.',
 	'coll-post_failed_title'          => 'Échec de la requête POST',
 	'coll-post_failed_msg'            => 'La requête POST vers $1 a échoué ($2).',
+	'coll-pdfserver_failed_title'     => 'Erreur du serveur PDF',
+	'coll-pdfserver_failed_msg'       => 'Une erreur est survenue sur le serveur PDF : $1',
 	'coll-enter_title'                => 'Entrer un titre pour la compilation :',
 	'coll-error_reponse'              => 'Le serveur a rencontré une erreur',
 	'coll-empty_collection'           => 'Compilation vide',
@@ -897,6 +912,7 @@ $messages['gv'] = array(
  * @author Singularity
  */
 $messages['haw'] = array(
+	'coll-contents' => 'Papa kuhikuhi',
 	'coll-about_pp' => 'E pili ana iā $1',
 );
 
@@ -1459,10 +1475,10 @@ $messages['ml'] = array(
 	'coll-limit_exceeded_title'       => 'ശേഖരത്തിന്റെ വലിപ്പം വളരെ കൂടുതലാണ്‌',
 	'coll-limit_exceeded_text'        => 'താങ്കളുടെ ശേഖരം വളരെ വലുതാണ്‌. ഇനി കൂടുതല്‍ താളുകള്‍ ചേര്‍ക്കുന്നതിനു സാദ്ധ്യമല്ല.',
 	'coll-generating_pdf_title'       => 'PDF നിര്‍മ്മിച്ചു കൊണ്ടിരിക്കുന്നു',
-	'coll-pdf_finished_text'          => 'PDF പ്രമാണം നിര്‍മ്മിച്ചു കഴിഞ്ഞിരിക്കുന്നു.
+	'coll-pdf_finished_text'          => "'''PDF പ്രമാണം നിര്‍മ്മിച്ചു കഴിഞ്ഞിരിക്കുന്നു.'''
 അതു നിങ്ങളുടെ കമ്പ്യൂട്ടറിലേക്ക് ഇറക്കി വെയ്ക്കാന്‍ [$1 ഇവിടെ ഞെക്കുക‍].
 
-PDF ഔട്ട് പുട്ടില്‍ നിങ്ങള്‍ തൃപ്തരല്ലേ? [[{{MediaWiki:Coll-helppage}}|ശേഖരത്തെക്കുറിച്ചുള്ള സഹായ താള്‍]] നോക്കി അതു എങ്ങനെയൊക്കെ മെച്ചപ്പെടുത്താമെന്നു നോക്കൂ.',
+PDF ഔട്ട് പുട്ടില്‍ നിങ്ങള്‍ തൃപ്തരല്ലേ? [[{{MediaWiki:Coll-helppage}}|ശേഖരത്തെക്കുറിച്ചുള്ള സഹായ താള്‍]] നോക്കി അതു എങ്ങനെയൊക്കെ മെച്ചപ്പെടുത്താമെന്നു നോക്കുക.",
 	'coll-notfound_title'             => 'ശേഖരം കണ്ടില്ല',
 	'coll-notfound_text'              => 'ശേഖര താള്‍ കണ്ടെത്താന്‍ കഴിഞ്ഞില്ല.',
 	'coll-return_to_collection'       => '<a href="$1">$2</a>-ലേക്കു തിരിച്ചു പോവുക',
@@ -1655,6 +1671,8 @@ Wilt u ze toevoegen?",
 	'coll-notitle_title'              => 'De titel van de pagina kon niet vastgesteld worden.',
 	'coll-post_failed_title'          => 'POST-verzoek mislukt',
 	'coll-post_failed_msg'            => 'Het POST-verzoek naar $1 is mislukt ($2).',
+	'coll-pdfserver_failed_title'     => 'Fout in de PDF-server',
+	'coll-pdfserver_failed_msg'       => 'De PDF-server geeft de volgende foutmelding: $1',
 	'coll-enter_title'                => 'Voer een titel in voor de verzameling:',
 	'coll-error_reponse'              => 'De server heeft een foutmelding teruggegeven',
 	'coll-empty_collection'           => 'Lege verzameling',
@@ -2235,9 +2253,9 @@ $messages['ru'] = array(
 	'coll-limit_exceeded_text'        => 'Ваша коллекция слишком большая.
 В неё нельзя больше добавлять страницы.',
 	'coll-generating_pdf_title'       => 'Создание PDF',
-	'coll-generating_pdf_text'        => "'''Пожалуйста, дождитесь создания PDF-файл.'''
+	'coll-generating_pdf_text'        => "'''Пожалуйста, дождитесь создания PDF-файла.'''
 
-Выполнено: '''$1%'''.
+Выполнено: '''$1 %'''.
 
 Эта страница должна автоматически обновляться каждые несколько секунд,
 если этого не происходит, пожалуйста, нажмите кнопку обновления в вашем браузере.",
@@ -2245,7 +2263,7 @@ $messages['ru'] = array(
 	'coll-pdf_finished_text'          => 'PDF-файл был создан.
 [$1 Нажмите здесь], чтобы скачать его на свой компьютер.
 
-Не удовлетворены получившемся результатом?
+Не удовлетворены получившимся результатом?
 На [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]] рассказывается о возможностях улучшить PDF-вывод.',
 	'coll-notfound_title'             => 'Коллекция не найдена',
 	'coll-notfound_text'              => 'Невозможно найти страницу коллекции.',
@@ -2263,7 +2281,6 @@ $messages['ru'] = array(
 /** Slovak (Slovenčina)
  * @author Helix84
  * @author Siebrand
- * @author SieBot
  */
 $messages['sk'] = array(
 	'coll-desc'                       => 'Vytváranie [[Special:Collection|kolekcie stránok]], tvorba PDF',
