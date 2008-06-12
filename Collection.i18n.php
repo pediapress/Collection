@@ -1070,10 +1070,12 @@ $messages['hu'] = array(
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Irwangatot
  * @author Rex
  */
 $messages['id'] = array(
-	'coll-no' => 'Tidak',
+	'coll-no'     => 'Tidak',
+	'coll-cancel' => 'Batalkan',
 );
 
 /** Icelandic (Íslenska)
@@ -1882,6 +1884,8 @@ Las volètz apondre ?',
 	'coll-notitle_title'              => 'Lo títol de la pagina pòt pas èsser determinat.',
 	'coll-post_failed_title'          => 'Fracàs de la requèsta POST',
 	'coll-post_failed_msg'            => 'La requèsta POST vèrs $1 a pas capitat ($2).',
+	'coll-pdfserver_failed_title'     => 'Error del servidor PDF',
+	'coll-pdfserver_failed_msg'       => 'Una error es subrevenguda sul servidor PDF : $1',
 	'coll-enter_title'                => 'Picar un títol per la compilacion :',
 	'coll-error_reponse'              => 'Lo servidor a rencontrat una error',
 	'coll-empty_collection'           => 'Compilacion voida',
