@@ -55,6 +55,9 @@ $wgLicenseArticle = 'MediaWiki:GFDL';
 /** Template blacklist article */
 $wgPDFTemplateBlacklist = 'MediaWiki:PDF Template Blacklist';
 
+/** Help page for the Collection extension */
+$wgCollectionHelpPage = 'mw:Extension:Collection/Help';
+
 # ==============================================================================
 
 
