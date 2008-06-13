@@ -103,6 +103,12 @@ Installation and Configuration of the Collection Extension
    should be excluded for PDF generation.
    
    Default is ``MediaWiki:PDF Template Blacklist``
+   
+  *$wgCollectionHelpPage (string)*
+   Title of a help page describing the usage of the Collection extension.
+   
+   Default is ``mw:Extension:Collection/Help``, i.e. an interwiki link pointing
+   to the standard English help page Extension:Collection/Help on mediawiki.org.
 
 * Add a portlet to the skin of your *MediaWiki* installation: Just before the line::
 
@@ -122,9 +128,13 @@ Installation and Configuration of the Collection Extension
   one day). Adjust session.cookie_lifetime and session.gc_maxlifetime in your
   ``php.ini`` accordingly.
 
-* Add a page ``Help:Collections`` with the wikitext from the supplied file
-  ``Help_Collections.txt``. Adjust the name of the template blacklist according
-  to your setting of $wgPDFTemplateBlackList (see above).
+* Optionally create a custom help page (e.g. with title Help:Collections if
+  your wiki has English language) describing the usage of the Collection extension.
+  Set $wgCollectionHelpPage to the title of this page.
+  
+  An example text is provided in the file ``Help_Collections.txt`` (don't forget
+  to adjust the name of the template blacklist according to your setting of
+  $wgPDFTemplateBlackList).
 
 .. _MediaWiki: http://www.mediawiki.org/
 .. _`PediaPress GmbH`: http://pediapress.com/
