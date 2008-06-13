@@ -104,11 +104,11 @@ Installation and Configuration of the Collection Extension
    
    Default is ``MediaWiki:PDF Template Blacklist``
 
-* Just before the line::
+* Add a portlet to the skin of your *MediaWiki* installation: Just before the line::
 
     <div class="portlet" id="p-tb">
 
-  in the file ``skins/MonoBook.php`` of your *MediaWiki* installation insert
+  in the file ``skins/MonoBook.php`` or ``skins/Modern.php`` insert
   the following code::
 
     <?php
