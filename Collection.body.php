@@ -485,13 +485,11 @@ class Collection extends SpecialPage {
 		global $wgServer;
 		global $wgScriptPath;
 		global $wgLicenseArticle;
-		global $wgSharedBaseURL;
 		global $wgPDFTemplateBlacklist;
 		
 		$response = self::pdfServerCommand( 'pdf_generate', array(
 			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => $wgServer . $wgScriptPath,
-			'shared_base_url' => $wgSharedBaseURL,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
 			'license' => $wgLicenseArticle,
 		) );
@@ -627,7 +625,6 @@ class Collection extends SpecialPage {
 		global $wgScriptPath;
 		global $wgOut;
 		global $wgLicenseArticle;
-		global $wgSharedBaseURL;
 		global $wgPDFTemplateBlacklist;
 		
 		$json = new Services_JSON();
@@ -649,7 +646,6 @@ class Collection extends SpecialPage {
 		$response = self::pdfServerCommand( 'zip_post', array(
 			'metabook' => $this->buildJSONCollection( $_SESSION['wsCollection'] ),
 			'base_url' => $wgServer . $wgScriptPath,
-			'shared_base_url' => $wgSharedBaseURL,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
 			'license' => $wgLicenseArticle,
 			'post_url' => $postData->post_url,

@@ -78,12 +78,6 @@ Installation and Configuration of the Collection Extension
    
    Default is 500.
   
-  *$wgSharedBaseURL (string)*
-   Base URL (i.e. URL up to but not including ``index.php``/``api.php``) of a
-   MediaWiki used for shared files.
-   
-   Default is ``http://commons.mediawiki.org/w/``
-  
   *$wgLicenseArticle (string)*
    Title of an article containing the full license text for articles in this
    MediaWiki. For a Wikimedia Commons wiki this could be ``Wikipedia:GFDL``.

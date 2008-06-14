@@ -137,7 +137,6 @@ class PDFServer(object):
         if not base_url:
             return self.error_response('base_url argument required')
         
-        shared_base_url = self.form.getvalue('shared_base_url')
         license = self.form.getvalue('license')
         if not license:
             return self.error_response('license argument required')
@@ -161,8 +160,6 @@ class PDFServer(object):
             '--progress', self.get_path(collection_id, self.progress_filename),
             '--output', self.get_path(collection_id, self.pdf_filename),
         ]
-        if shared_base_url:
-            args.extend(['--shared-baseurl', shared_base_url])
         if template_blacklist:
             args.extend(['--template-blacklist', template_blacklist])
         
@@ -215,7 +212,6 @@ class PDFServer(object):
         base_url = self.form.getvalue('base_url')
         if not base_url:
             return self.error_response('base_url argument required')
-        shared_base_url = self.form.getvalue('shared_base_url')
         license = self.form.getvalue('license')
         if not license:
             return self.error_response('license argument required')
@@ -238,8 +234,6 @@ class PDFServer(object):
             '--license', license,
             '--posturl', post_url,
         ]
-        if shared_base_url:
-            args.extend(['--shared-baseurl', shared_base_url])
         if template_blacklist:
             args.extend(['--template-blacklist', template_blacklist])
         rc = subprocess.call(executable=mwzip_cmd, args=args)
