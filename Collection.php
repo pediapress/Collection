@@ -46,9 +46,6 @@ $wgCommunityCollectionNamespace = NS_MEDIAWIKI;
 /** Maximum no. of articles in a collection */
 $wgCollectionMaxArticles = 500;
 
-/** Base URL for shared media MediaWiki */
-$wgSharedBaseURL = 'http://commons.wikimedia.org/w/';
-
 /** License article */
 $wgLicenseArticle = 'MediaWiki:GFDL';
 
