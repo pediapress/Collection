@@ -310,8 +310,11 @@ $messages['bg'] = array(
 	'coll-cancel'                => 'Отказване',
 	'coll-generating_pdf_title'  => 'Генериране на PDF',
 	'coll-pdf_finished_title'    => 'Генерирането на PDF приключи успешно',
-	'coll-pdf_finished_text'     => 'PDF файлът беше генериран.
-[$1 Щракнете тук] за изтегляне на локалния компютър.',
+	'coll-pdf_finished_text'     => "'''PDF файлът беше генериран.'''
+[$1 Щракнете тук] за изтегляне на локалния компютър.
+
+Създаденият PDF файл не отговаря на изискванията?
+Прегледайте [[$2|помощната страница]] за начини за подобряването му.",
 	'coll-return_to_collection'  => 'Връщане към <a href="$1">$2</a>',
 	'coll-order_from_pp'         => 'Поръчване на книга от $1',
 	'coll-about_pp'              => 'За $1',
@@ -595,7 +598,6 @@ $messages['eo'] = array(
 	'coll-page'                       => 'paĝo',
 	'coll-pages'                      => 'paĝoj',
 	'coll-download_as_pdf'            => 'Alŝuti kiel PDF',
-	'coll-helppage'                   => 'Helpo:Kolektoj',
 	'coll-my_collection'              => 'Mia kolekto',
 	'coll-download_title'             => 'Alŝutu kolekton kiel PDF-on',
 	'coll-download_pdf'               => 'Alŝutu PDF',
@@ -703,7 +705,6 @@ Cette page ne s'affichera pas correctement tant que javascript n'est pas activé
 	'coll-intro_text'                 => "Vous pouvez collecter des pages, générer et télécharger des fichiers PDF depuis les collections de paéges ou des sauvegarde desdites collections pour un usage ultérieur ou pour les partager.
 
 Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections]] pour d'avantage d'informations.",
-	'coll-helppage'                   => 'Aide:Collections',
 	'coll-pdftoobigcat'               => 'La catégorie contient plus de %PARAM% pages, seules les premières %PARAM% pages peuvent être ajoutées dans votre compilation.
 Voulez-vous les ajouter ?',
 	'coll-my_collection'              => 'Ma compilation',
@@ -778,6 +779,14 @@ Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]
 	'coll-invalid_podpartner_title'   => 'Partenaire POD incorrect.',
 	'coll-invalid_podpartner_msg'     => 'Le partenaire POD indiqué est incorrect.
 Veuillez contacter votre administrateur Mediawiki.',
+);
+
+/** Western Frisian (Frysk)
+ * @author Snakesteuben
+ */
+$messages['fy'] = array(
+	'coll-page' => 'side',
+	'coll-yes'  => 'Ja',
 );
 
 /** Galician (Galego)
@@ -911,6 +920,7 @@ $messages['gv'] = array(
  * @author Singularity
  */
 $messages['haw'] = array(
+	'coll-page'     => '‘ao‘ao',
 	'coll-contents' => 'Papa kuhikuhi',
 	'coll-about_pp' => 'E pili ana iā $1',
 );
@@ -1358,7 +1368,6 @@ $messages['lb'] = array(
 	'coll-page'                       => 'Säit',
 	'coll-pages'                      => 'Säiten',
 	'coll-download_as_pdf'            => 'Als PDF eroflueden',
-	'coll-helppage'                   => 'Hellëf:Kollektioun',
 	'coll-my_collection'              => 'Meng Sammlung',
 	'coll-download_title'             => 'Kollektioun als PDF eroflueden',
 	'coll-download_pdf'               => 'PDF eroflueden',
@@ -1378,6 +1387,7 @@ $messages['lb'] = array(
 	'coll-rename_chapter'             => "Gitt een neie Numm fir d'Kapitel un",
 	'coll-no_such_category'           => 'Keng esou Kategorie',
 	'coll-notitle_title'              => 'Den Titel vun der Säit konnt net festgestallt ginn.',
+	'coll-pdfserver_failed_title'     => 'PDF Server Feeler',
 	'coll-enter_title'                => 'Titel vun der Kollektioun uginn:',
 	'coll-error_reponse'              => 'Feelermeldng vum Server',
 	'coll-empty_collection'           => 'Eidel Sammlung',
@@ -1740,8 +1750,8 @@ $messages['nn'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
- * @author H92
  * @author Siebrand
+ * @author H92
  */
 $messages['no'] = array(
 	'coll-desc'                       => 'Lag [[Special:Collection|sidesamlinger]] og generer PDF-filer',
@@ -1761,7 +1771,6 @@ $messages['no'] = array(
 	'coll-noscript_text'              => '<h1>JavaScript er påkrevd!</h1>
 <strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong>',
 	'coll-intro_text'                 => 'Du kan samle sider, generere og laste ned en PDF-fil fra sidesamlinger og lagre sidesamlinger for senere bruk eller for deling.',
-	'coll-helppage'                   => 'Help:Samlinger',
 	'coll-pdftoobigcat'               => 'Kategorien inneholder mer enn %PARAM% sider, kun de første %PARAM% sidene kan legges til i samlingen din. Vil du legge dem til?',
 	'coll-my_collection'              => 'Min samling',
 	'coll-download_title'             => 'Last ned samling som PDF',
@@ -1786,6 +1795,8 @@ $messages['no'] = array(
 	'coll-notitle_title'              => 'Fant ikke ut av sidens tittel.',
 	'coll-post_failed_title'          => 'POST-forespørsel mislyktes',
 	'coll-post_failed_msg'            => 'POST-forespørselen til $1 mislyktes ($2).',
+	'coll-pdfserver_failed_title'     => 'Feil med PDF-tjeneren',
+	'coll-pdfserver_failed_msg'       => 'En feil oppsto med PDF-tjeneren: $1',
 	'coll-enter_title'                => 'Skriv inn samlingens navn:',
 	'coll-error_reponse'              => 'Feilrespons fra tjeneren',
 	'coll-empty_collection'           => 'Tom samling',
@@ -1857,7 +1868,6 @@ Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activ
 	'coll-intro_text'                 => "Podètz collectar de paginas, generar e telecargar de fichièrs PDF dempuèi las colleccions de paginas o dels salvaments de las dichas colleccions per un usatge ulterior o per las partejar.
 
 Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entresenhas.",
-	'coll-helppage'                   => 'Ajuda:Collections',
 	'coll-pdftoobigcat'               => 'La categoria conten mai de %PARAM% paginas, solas las primièras %PARAM% paginas pòdon èsser apondudas dins vòstra compilacion.
 Las volètz apondre ?',
 	'coll-my_collection'              => 'Ma compilacion',
@@ -2755,11 +2765,20 @@ $messages['tg-cyrl'] = array(
 );
 
 /** Turkish (Türkçe)
+ * @author Karduelis
  * @author Suelnur
  */
 $messages['tr'] = array(
-	'coll-yes' => 'Evet',
-	'coll-no'  => 'Hayır',
+	'coll-collection'    => 'Koleksiyon',
+	'coll-collections'   => 'Koleksiyonlar',
+	'coll-portlet_title' => 'Koleksiyonum',
+	'coll-empty'         => 'boş',
+	'coll-page'          => 'sayfa',
+	'coll-pages'         => 'sayfalar',
+	'coll-remove'        => 'Kaldır',
+	'coll-title'         => 'Başlık:',
+	'coll-yes'           => 'Evet',
+	'coll-no'            => 'Hayır',
 );
 
 /** Ukrainian (Українська)
