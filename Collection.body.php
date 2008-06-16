@@ -1108,8 +1108,6 @@ EOS
 	static function post( $url, $postFields, &$errorMessage ) {
 		global $wgHTTPTimeout, $wgHTTPProxy, $wgVersion, $wgTitle;
 	
-		wfDebug( __METHOD__ . ": $method $url\n" );
-	
 		$c = curl_init( $url );
 		curl_setopt($c, CURLOPT_PROXY, $wgHTTPProxy);
 		curl_setopt( $c, CURLOPT_TIMEOUT, $wgHTTPTimeout );
