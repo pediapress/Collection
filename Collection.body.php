@@ -1093,7 +1093,7 @@ EOS
 			return false;
 		}
 		
-		if ( $json_response->error ) {
+		if ( array_key_exists( 'error', get_object_vars( $json_response ) ) && $json_response->error ) {
 			$wgOut->showErrorPage(
 				'coll-pdfserver_failed_title',
 				'coll-pdfserver_failed_msg',
