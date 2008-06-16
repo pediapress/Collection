@@ -42,8 +42,9 @@ $messages['en'] = array(
 <strong>Your browser does not support JavaScript or JavaScript has been turned off.
 This page will not work correctly, unless JavaScript is enabled.</strong>',
 	'coll-intro_text'                 => "You can collect pages, generate and download a PDF file from page collections and save page collections for later use or to share them.
-	
-See the [[$1|help page about collections]] for more information.",
+
+See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more information.",
+	'coll-helppage'                   => 'Help:Collections',
 	'coll-pdftoobigcat'               => 'The category contains more than %PARAM% pages, only the first %PARAM% pages can be added to your collection.
 Do you want to add them?',
 	'coll-my_collection'              => 'My Collection',
@@ -107,7 +108,7 @@ If this does not work, please press refresh button of your browser.",
 [$1 Click here] to download it to your computer.
 
 Not satisfied with the PDF output?
-See [[$2|the help page about collections]] for possibilities to improve it.",
+See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
 	'coll-notfound_title'             => 'Collection not found',
 	'coll-notfound_text'              => 'Could not find collection page.',
 	'coll-return_to_collection'       => 'Return to <a href="$1">$2</a>',

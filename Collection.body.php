@@ -505,7 +505,6 @@ class Collection extends SpecialPage {
 	}
 	
 	function generatingPDF() {
-		global $wgCollectionHelpPage;
 		global $wgOut;
 		global $wgRequest;
 		
@@ -541,7 +540,7 @@ class Collection extends SpecialPage {
 				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download_pdf/' ),
 				'collection_id=' . urlencode( $response->collection_id )
 			);
-			$wgOut->addWikiMsg( 'coll-pdf_finished_text', wfExpandUrl( $url ), $wgCollectionHelpPage );
+			$wgOut->addWikiMsg( 'coll-pdf_finished_text', wfExpandUrl( $url ) );
 			if ( $return_to ) {
 				// We are doing this the hard way (i.e. via the HTML detour), to prevent
 				// the parser from replacing [[:Special:Collection]] with a selflink.
@@ -653,13 +652,12 @@ class Collection extends SpecialPage {
 	}
 	
 	private function outputIntro() {
-		global $wgCollectionHelpPage;
 		global $wgOut;
 
 		$wgOut->addHTML( '<noscript>' );
 		$wgOut->addWikiMsg( 'coll-noscript_text' );
 		$wgOut->addHTML( '</noscript>' );
-		$wgOut->addWikiMsg( 'coll-intro_text', $wgCollectionHelpPage );
+		$wgOut->addWikiMsg( 'coll-intro_text' );
 	}
 
 	private function outputArticleList() {
@@ -975,7 +973,6 @@ EOS
 	 */
 	static function printPortlet() {
 		global $wgArticle;
-		global $wgCollectionHelpPage;
 		global $wgTitle;
 		global $wgOut;
 		
@@ -1053,8 +1050,7 @@ EOS
 EOS
 		;
 		$helpCollections = wfMsgHtml( 'coll-help_collections' );
-		$t = Title::newFromText( $wgCollectionHelpPage );
-		$helpURL = htmlspecialchars( $t->getPrefixedUrl() );
+		$helpURL = htmlspecialchars( Title::makeTitle( NS_HELP, wfMsg( 'coll-collections' ) )->getFullURL() );
 		print <<<EOS
 						<li><a href="$helpURL">$helpCollections</a></li>
 					</ul>
