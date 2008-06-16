@@ -532,7 +532,7 @@ class Collection extends SpecialPage {
 			);
 			$wgOut->addMeta( 'http:refresh', '2; URL=' . $url );
 			$wgOut->setPageTitle( wfMsg( 'coll-generating_pdf_title' ) );
-			$wgOut->addWikiMsg( 'coll-generating_pdf_text', $response->progress );
+			$wgOut->addWikiText( wfMsgNoTrans( 'coll-generating_pdf_text', $response->progress ) );
 			break;
 		case 'finished':
 			$wgOut->setPageTitle( wfMsg( 'coll-pdf_finished_title' ) );
@@ -540,7 +540,7 @@ class Collection extends SpecialPage {
 				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download_pdf/' ),
 				'collection_id=' . urlencode( $response->collection_id )
 			);
-			$wgOut->addWikiMsg( 'coll-pdf_finished_text', wfExpandUrl( $url ) );
+			$wgOut->addWikiText( wfMsgNoTrans( 'coll-pdf_finished_text', wfExpandUrl( $url ) ) );
 			if ( $return_to ) {
 				// We are doing this the hard way (i.e. via the HTML detour), to prevent
 				// the parser from replacing [[:Special:Collection]] with a selflink.
@@ -655,9 +655,9 @@ class Collection extends SpecialPage {
 		global $wgOut;
 
 		$wgOut->addHTML( '<noscript>' );
-		$wgOut->addWikiMsg( 'coll-noscript_text' );
+		$wgOut->addWikiText( wfMsgNoTrans( 'coll-noscript_text' ) );
 		$wgOut->addHTML( '</noscript>' );
-		$wgOut->addWikiMsg( 'coll-intro_text' );
+		$wgOut->addWikiText( wfMsgNoTrans( 'coll-intro_text' ) );
 	}
 
 	private function outputArticleList() {
@@ -811,7 +811,7 @@ EOS
 		$wgOut->setPageTitle( wfMsg( 'coll-save_collection' ) );
 
 		$wgOut->addWikiText( '==' . wfMsg( 'coll-overwrite_title' ) . '==' );
-		$wgOut->addWikiMsg( 'coll-overwrite_text', $title->getPrefixedText() );
+		$wgOut->addWikiText( wfMsgNoTrans( 'coll-overwrite_text', $title->getPrefixedText() ) );
 		$yes = wfMsgHtml( 'coll-yes' );
 		$no = wfMsgHtml( 'coll-no' );
 		$escapedTitle = htmlspecialchars( $title->getPrefixedText() );
@@ -831,7 +831,7 @@ EOS
 
 		$wgOut->setPageTitle( wfMsg( 'coll-load_collection' ) );
 
-		$wgOut->addWikiMsg( 'coll-load_overwrite_text' );
+		$wgOut->addWikiText( wfMsgNoTrans( 'coll-load_overwrite_text' ) );
 		$overwrite = wfMsgHtml( 'coll-overwrite' );
 		$append = wfMsgHtml( 'coll-append' );
 		$cancel = wfMsgHtml( 'coll-cancel' );
