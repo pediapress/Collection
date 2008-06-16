@@ -507,6 +507,7 @@ class Collection extends SpecialPage {
 	function generatingPDF() {
 		global $wgOut;
 		global $wgRequest;
+		global $wgServer;
 		
 		$this->setHeaders();
 		
@@ -540,7 +541,7 @@ class Collection extends SpecialPage {
 				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download_pdf/' ),
 				'collection_id=' . urlencode( $response->collection_id )
 			);
-			$wgOut->addWikiText( wfMsgNoTrans( 'coll-pdf_finished_text', wfExpandUrl( $url ) ) );
+			$wgOut->addWikiText( wfMsgNoTrans( 'coll-pdf_finished_text', $wgServer . $url ) );
 			if ( $return_to ) {
 				// We are doing this the hard way (i.e. via the HTML detour), to prevent
 				// the parser from replacing [[:Special:Collection]] with a selflink.
