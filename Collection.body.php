@@ -518,7 +518,6 @@ class Collection extends SpecialPage {
 			'collection_id' => $collection_id,
 		) );
 		if ( !$response ) {
-			$wgOut->addWikiText('false');
 			return;
 		}
 		
@@ -553,10 +552,6 @@ class Collection extends SpecialPage {
 					htmlspecialchars( $return_to )
 				) );
 			}
-			break;
-		case 'error':
-			$wgOut->setPageTitle( wfMsg( 'coll-pdf_error_title' ) );
-			$wgOut->addWikiMsg( 'coll-pdf_error_text', $response->error );
 			break;
 		default:
 			$wgOut->addWikiText( 'state: ' . $response->state );
