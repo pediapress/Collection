@@ -573,10 +573,11 @@ class Collection extends SpecialPage {
 		// Cancel output buffering and gzipping if set
 		wfResetOutputBuffers();
 		
-		header("Content-type: application/pdf");
-		header( "Content-Disposition: inline;filename=mw.pdf" );
+		header( 'Content-type: application/pdf');
+		header( 'Content-Disposition: inline;filename=mw.pdf' );
 		header( 'Content-Length: ' .  strlen( $response ) );
 		print $response;
+		$wgOut->disable();
 	}
 	
 	function generatePDF() {
