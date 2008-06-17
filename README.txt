@@ -95,9 +95,17 @@ Installation and Configuration of the Collection Extension
   *$wgPDFTemplateBlackList (string)*
    Title of an article containing blacklisted templates, i.e. templates that
    should be excluded for PDF generation.
-   
-   Default is ``MediaWiki:PDF Template Blacklist``
 
+   Default value is ``"MediaWiki:PDF Template Blacklist"``
+
+   The template blacklist page should contain a list of links to the
+   blacklisted templates in the following form::
+   
+	 * [[Template:Templatename]]
+	 * [[Template:SomeOtherTemplatename]]
+	 
+   
+   
 * Add a portlet to the skin of your *MediaWiki* installation: Just before the line::
 
     <div class="portlet" id="p-tb">
