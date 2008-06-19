@@ -62,6 +62,9 @@ Installation and Configuration of the Collection Extension
    
    The default is ``"http://tools.pediapress.com/cgi-bin/pdfserver.py"``,
    a public PDF Server for low-traffic MediaWikis.
+   
+   Note that the MediaWiki must be accessible from the PDF Server, i.e. if your
+   MediaWiki is behind a firewall you cannot use the public PDF Server.
   
   *$wgCommunityCollectionNamespace (integer)*
    Namespace for "community collections", i.e. the namespace where non-personal
