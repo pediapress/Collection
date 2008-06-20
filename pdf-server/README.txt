@@ -78,11 +78,11 @@ example on Debian GNU/Linux, this user is www-data, the default egg cache
 is /var/www/.python-eggs/ (because $HOME is /var/www/), and the user www-data
 usually doesn't have write access in /var/www/.
 
-One way to set environment variables is when configuring the path to ``mw-pdf``
-and ``mw-zip`` in ``pdfserver.py``, e.g.::
+One way to set this environment variable is in the configration section in
+``pdfserver.py``::
 
- mwpdf_cmd = 'PYTHON_EGG_CACHE=/tmp/.python_eggs /usr/local/bin/mw-pdf'
- mwzip_cmd = 'PYTHON_EGG_CACHE=/tmp/.python_eggs /usr/local/bin/mw-zip'
+  # Set PYTHON_EGG_CACHE to some writeable location:
+  os.environ['PYTHON_EGG_CACHE'] = '/tmp/.pdfserver-eggcache/'
 
 
 .. _MediaWiki: http://www.mediawiki.org/

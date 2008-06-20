@@ -1,5 +1,7 @@
 #! /usr/bin/env python
 
+import os
+
 # ==============================================================================
 # CONFIGURATION
 # ==============================================================================
@@ -24,6 +26,9 @@ mwzip_cmd = 'mw-zip'
 # Logfile for mw-zip.
 mwzip_logfile = '/var/log/mw-zip.log'
 
+# Set PYTHON_EGG_CACHE to some writeable location:
+#os.environ['PYTHON_EGG_CACHE'] = '/tmp/.pdfserver-eggcache/'
+
 # Directory for error dumps.
 traceback_logdir = '/tmp'
 
@@ -38,7 +43,6 @@ if traceback_logdir is not None:
 
 import cgi
 import md5
-import os
 import re
 import simplejson
 import StringIO
