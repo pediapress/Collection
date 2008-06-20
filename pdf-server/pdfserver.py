@@ -163,7 +163,10 @@ class PDFServer(object):
         if template_blacklist:
             args.extend(['--template-blacklist', template_blacklist])
         
-        rc = subprocess.call(executable=mwpdf_cmd, args=args)
+        try:
+            rc = subprocess.call(executable=mwpdf_cmd, args=args)
+        except IOError, e:
+            raise RuntimeError('Could not execute command %r: %s' % (mwpdf_cmd, e))
         if rc != 0:
             return self.error_response('command %r failed: rc = %d' % (mwpdf_cmd, rc))
         
@@ -236,7 +239,10 @@ class PDFServer(object):
         ]
         if template_blacklist:
             args.extend(['--template-blacklist', template_blacklist])
-        rc = subprocess.call(executable=mwzip_cmd, args=args)
+        try:
+            rc = subprocess.call(executable=mwzip_cmd, args=args)
+        except IOError, e:
+            raise RuntimeError('Could not execute command %r: %s' % (mwzip_cmd, e))
         if rc != 0:
             return self.error_response('cmd %r failed: rc = %d' % (mwzip_cmd, rc))
         
