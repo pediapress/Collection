@@ -121,6 +121,7 @@ See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibil
 	'coll-invalid_podpartner_title'   => 'Invalid POD partner',
 	'coll-invalid_podpartner_msg'     => 'The supplied POD partner is invalid.
 Please contact your MediaWiki administrator.',
+	'coll-license'                    => 'License',
 );
 
 /** Karelian (Karjala)
@@ -539,16 +540,16 @@ Möchtest du sie hinzufügen?',
 	'coll-generating_pdf_title'       => 'PDF erzeugen',
 	'coll-generating_pdf_text'        => "'''Bitte warten, bis die PDF-Datei erzeugt wurde.'''
 
-Fortschritt: '''%(progress)d%%'''.
+Fortschritt: '''$1%'''.
 
 Diese Seite wird alle paar Sekunden automatisch neu geladen.
 Wenn dies nicht funktioniert, klicke auf die Neuladen-Schaltfläche deines Browers.",
 	'coll-pdf_finished_text'          => 'Deine PDF-Datei wurde erzeugt.
-[Klicke hier] zum Herunterladen auf deinen Computer.',
+[$1 Klicke hier] zum Herunterladen auf deinen Computer.',
 	'coll-pdf_not_satisfied'          => 'Unzufrieden mit der PDF-Ausgabe? Siehe [[{{MediaWiki:Coll-helppage}}|die Hilfeseiten über Kollektionen]] für Verbesserungsmöglichkeiten.',
 	'coll-notfound_title'             => 'Kollektion nicht gefunden',
 	'coll-notfound_text'              => 'Deine Kollektion konnte nicht gefunden werden.',
-	'coll-return_to_collection'       => 'Zurück zu [[:$1]]',
+	'coll-return_to_collection'       => 'Zurück zu <a href="$1">$2</a>',
 	'coll-pages_removed'              => 'Die folgenden Seiten konnten nicht gerendert werden und werden aus der PDF-Datei entfernt: %(articles)s',
 	'coll-pdf_error_text'             => 'Es gab einen Fehler bei der Erzeugung der PDF-Datei.',
 	'coll-book_title'                 => 'Druckausgabe bestellen',

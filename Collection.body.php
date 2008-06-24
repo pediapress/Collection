@@ -444,9 +444,41 @@ class Collection extends SpecialPage {
 		$article->doEdit( $articleText, '', EDIT_FORCE_BOT );
 		return true;
 	}
+	
+	function getLicenseInfos() {
+		global $wgLicenseName;
+		global $wgLicenseURL;
+		global $wgRightsIcon;
+		global $wgRightsPage;
+		global $wgRightsText;
+		global $wgRightsUrl;
+		
+		$licenseInfo = array();
+		
+		if ( $wgLicenseName ) {
+			$licenseInfo['name'] = $wgLicenseName;
+		} else {
+			$licenseInfo['name'] = wfMsg( 'coll-license' );
+		}
+		
+		if ( $wgLicenseURL ) {
+			$licenseInfo['mw_license_url'] = $wgLicenseURL;
+		} else {
+			$licenseInfo['mw_rights_icon'] = $wgRightsIcon;
+			$licenseInfo['mw_rights_page'] = $wgRightsPage;
+			$licenseInfo['mw_rights_url'] = $wgRightsUrl;
+			$licenseInfo['mw_rights_text'] = $wgRightsText;
+		}
+		
+		return array( $licenseInfo );
+	}
 
 	function buildJSONCollection( $collection ) {
-		$result = array( 'type' => 'collection' );
+		$result = array(
+			'type' => 'collection',
+			'licenses' => $this->getLicenseInfos()
+		);
+		
 		if ( isset( $collection['title'] ) ) {
 			$result['title'] = $collection['title'];
 		}
@@ -482,16 +514,14 @@ class Collection extends SpecialPage {
 	
 	function generatePDFFromCollection( $collection, $referrer ) {
 		global $wgOut;
+		global $wgPDFTemplateBlacklist;
 		global $wgServer;
 		global $wgScriptPath;
-		global $wgLicenseArticle;
-		global $wgPDFTemplateBlacklist;
 		
 		$response = self::pdfServerCommand( 'pdf_generate', array(
 			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
-			'license' => $wgLicenseArticle,
 		) );
 		
 		if ( !$response ) {
@@ -620,7 +650,6 @@ class Collection extends SpecialPage {
 		global $wgServer;
 		global $wgScriptPath;
 		global $wgOut;
-		global $wgLicenseArticle;
 		global $wgPDFTemplateBlacklist;
 		
 		$json = new Services_JSON();
@@ -643,7 +672,6 @@ class Collection extends SpecialPage {
 			'metabook' => $this->buildJSONCollection( $_SESSION['wsCollection'] ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
-			'license' => $wgLicenseArticle,
 			'post_url' => $postData->post_url,
 		) );
 		if ( !$response ) {

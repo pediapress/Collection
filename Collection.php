@@ -46,8 +46,11 @@ $wgCommunityCollectionNamespace = NS_MEDIAWIKI;
 /** Maximum no. of articles in a collection */
 $wgCollectionMaxArticles = 500;
 
-/** License article */
-$wgLicenseArticle = 'MediaWiki:GFDL';
+/** Name of license */
+$wgLicenseName = null;
+
+/** HTTP(s) URL pointing to license in wikitext format: */
+$wgLicenseURL = null;
 
 /** Template blacklist article */
 $wgPDFTemplateBlacklist = 'MediaWiki:PDF Template Blacklist';

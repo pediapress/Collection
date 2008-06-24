@@ -141,9 +141,6 @@ class PDFServer(object):
         if not base_url:
             return self.error_response('base_url argument required')
         
-        license = self.form.getvalue('license')
-        if not license:
-            return self.error_response('license argument required')
         template_blacklist = self.form.getvalue('template_blacklist')
         
         collection_id = self.new_collection()
@@ -158,9 +155,8 @@ class PDFServer(object):
             '--daemonize',
             '--logfile', mwpdf_logfile,
             '--errorfile', self.get_path(collection_id, self.error_filename),
-            '--metabookfile', metabook_path,
-            '--baseurl', base_url,
-            '--license', license,
+            '--metabook', metabook_path,
+            '--conf', base_url,
             '--progress', self.get_path(collection_id, self.progress_filename),
             '--output', self.get_path(collection_id, self.pdf_filename),
         ]
@@ -219,9 +215,6 @@ class PDFServer(object):
         base_url = self.form.getvalue('base_url')
         if not base_url:
             return self.error_response('base_url argument required')
-        license = self.form.getvalue('license')
-        if not license:
-            return self.error_response('license argument required')
         template_blacklist = self.form.getvalue('template_blacklist')
         post_url = self.form.getvalue('post_url')
         if not post_url:
@@ -237,8 +230,7 @@ class PDFServer(object):
             '--daemonize',
             '--logfile', mwzip_logfile,
             '--metabook', metabook_path,
-            '--baseurl', base_url,
-            '--license', license,
+            '--conf', base_url,
             '--posturl', post_url,
         ]
         if template_blacklist:
@@ -248,7 +240,7 @@ class PDFServer(object):
         except IOError, e:
             raise RuntimeError('Could not execute command %r: %s' % (mwzip_cmd, e))
         if rc != 0:
-            return self.error_response('cmd %r failed: rc = %d' % (mwzip_cmd, rc))
+            return self.error_response('command %r failed: rc = %d' % (mwzip_cmd, rc))
         
         return self.json_response({'state': 'ok'})
     
