@@ -25,7 +25,7 @@ $messages = array();
 
 $messages['en'] = array(
 	'coll-desc'                       => '[[Special:Collection|Collect pages]], generate PDFs',
-	'coll-collection'                 => 'Collection',
+	'coll-collection'                 => 'Collection', # do not translate or duplicate this message to other languages
 	'coll-collections'                => 'Collections',
 	'coll-portlet_title'              => 'My Collection',
 	'coll-add_page'                   => 'Add page',
@@ -142,7 +142,6 @@ $messages['mhr'] = array(
  * @author SPQRobin
  */
 $messages['af'] = array(
-	'coll-collection'                 => 'Versameling',
 	'coll-collections'                => 'Versamelings',
 	'coll-portlet_title'              => 'My versameling',
 	'coll-add_page'                   => 'Voeg bladsy by',
@@ -184,7 +183,6 @@ $messages['af'] = array(
  */
 $messages['ar'] = array(
 	'coll-desc'                       => '[[Special:Collection|صفحات مجموعة]]، تولد PDFs',
-	'coll-collection'                 => 'مجموعة',
 	'coll-collections'                => 'مجموعات',
 	'coll-portlet_title'              => 'مجموعتي',
 	'coll-add_page'                   => 'إضافة صفحة',
@@ -366,7 +364,6 @@ Si no ho fes, pitgeu el botó de refresc del vostre navegador.",
  */
 $messages['cs'] = array(
 	'coll-desc'                       => 'Vytváření [[Special:Collection|kolekce stránek]], tvorba PDF',
-	'coll-collection'                 => 'Kolekce',
 	'coll-collections'                => 'Kolekce',
 	'coll-portlet_title'              => 'Moje kolekce',
 	'coll-add_page'                   => 'Přidat stránku',
@@ -471,7 +468,6 @@ $messages['da'] = array(
  */
 $messages['de'] = array(
 	'coll-desc'                       => '[[Special:Collection|Sammle Seiten]], erzeuge PDFs',
-	'coll-collection'                 => 'Kollektion',
 	'coll-collections'                => 'Kollektionen',
 	'coll-portlet_title'              => 'Meine Kollektion',
 	'coll-add_page'                   => 'Seite hinzufügen',
@@ -567,7 +563,6 @@ Wenn dies nicht funktioniert, klicke auf die Neuladen-Schaltfläche deines Browe
  * @author Consta
  */
 $messages['el'] = array(
-	'coll-collection'    => 'Συλλογή',
 	'coll-collections'   => 'Συλλογές',
 	'coll-portlet_title' => 'Η Συλλογή μου',
 	'coll-page'          => 'σελίδα',
@@ -586,7 +581,6 @@ $messages['el'] = array(
  */
 $messages['eo'] = array(
 	'coll-desc'                       => '[[Special:Collection|Kolekto-paĝoj]], generi PDF-ojn',
-	'coll-collection'                 => 'Kolekto',
 	'coll-collections'                => 'Kolektoj',
 	'coll-portlet_title'              => 'Mia kolekto',
 	'coll-add_page'                   => 'Aldoni paĝon',
@@ -687,7 +681,6 @@ $messages['fi'] = array(
  */
 $messages['fr'] = array(
 	'coll-desc'                       => "[[Special:Collection|Compiler des pages]], générer des pdf's",
-	'coll-collection'                 => 'Compilation',
 	'coll-collections'                => 'Compilations',
 	'coll-portlet_title'              => 'Ma compilation',
 	'coll-add_page'                   => 'Ajouter une page',
@@ -797,7 +790,6 @@ $messages['fy'] = array(
  */
 $messages['gl'] = array(
 	'coll-desc'                       => '[[Special:Collection|Coleccionar páxinas]], xerar ficheiros PDF',
-	'coll-collection'                 => 'Colección',
 	'coll-collections'                => 'Coleccións',
 	'coll-portlet_title'              => 'A miña colección',
 	'coll-add_page'                   => 'Engadir páxina',
@@ -897,7 +889,6 @@ Por favor, contacte co seu administrador MediaWiki.',
  * @author MacTire02
  */
 $messages['gv'] = array(
-	'coll-collection'                 => 'Çhaglym',
 	'coll-collections'                => 'Çhaglymyn',
 	'coll-portlet_title'              => 'My haglym',
 	'coll-empty'                      => 'follym',
@@ -932,7 +923,6 @@ $messages['haw'] = array(
  */
 $messages['hi'] = array(
 	'coll-desc'                       => '[[Special:Collection|पन्ने जमा करें]], पीडीएफ बनायें',
-	'coll-collection'                 => 'कलेक्शन',
 	'coll-collections'                => 'कलेक्शन',
 	'coll-portlet_title'              => 'मेरा कलेक्शन',
 	'coll-add_page'                   => 'पन्ना बढायें',
@@ -1016,7 +1006,6 @@ $messages['hil'] = array(
  */
 $messages['hsb'] = array(
 	'coll-desc'                      => '[[Special:Collection|Strony zběrać]], PDF wutworić',
-	'coll-collection'                => 'Zběrka',
 	'coll-collections'               => 'Zběrki',
 	'coll-portlet_title'             => 'Moja zběrka',
 	'coll-add_page'                  => 'Stronu přidać',
@@ -1093,7 +1082,6 @@ $messages['id'] = array(
  * @author SPQRobin
  */
 $messages['is'] = array(
-	'coll-collection'           => 'Safn',
 	'coll-collections'          => 'Söfn',
 	'coll-portlet_title'        => 'Safnið mitt',
 	'coll-add_page'             => 'Bæta við síðu',
@@ -1133,7 +1121,6 @@ $messages['is'] = array(
  */
 $messages['ja'] = array(
 	'coll-desc'                       => 'PDFファイルを作成するための[[Special:Collection|ページコレクション]]',
-	'coll-collection'                 => 'コレクション',
 	'coll-collections'                => 'コレクション',
 	'coll-portlet_title'              => 'マイ・コレクション',
 	'coll-add_page'                   => 'ページの追加',
@@ -1221,7 +1208,6 @@ $messages['ja'] = array(
  */
 $messages['jv'] = array(
 	'coll-desc'                       => '[[Special:Collection|Kolèksi kaca-kaca]], nggawé PDF',
-	'coll-collection'                 => 'Kolèksi',
 	'coll-collections'                => 'Kolèksi-kolèksi',
 	'coll-portlet_title'              => 'Kolèksiku',
 	'coll-add_page'                   => 'Tambahna kaca',
@@ -1356,7 +1342,6 @@ $messages['ksh'] = array(
  */
 $messages['lb'] = array(
 	'coll-desc'                       => "[[Special:Collection|Säiten zesummestellen]], PDF'e generéieren",
-	'coll-collection'                 => 'Sammlung',
 	'coll-collections'                => 'Sammlungen',
 	'coll-portlet_title'              => 'Meng Sammlung',
 	'coll-add_page'                   => 'Säit derbäisetzen',
@@ -1430,7 +1415,6 @@ $messages['lo'] = array(
  */
 $messages['ml'] = array(
 	'coll-desc'                       => '[[Special:Collection|താളുകളുടെ ശേഖരം]], PDF നിര്‍മ്മിക്കുക',
-	'coll-collection'                 => 'ശേഖരം',
 	'coll-collections'                => 'ശേഖരങ്ങള്‍',
 	'coll-portlet_title'              => 'എന്റെ ശേഖരം',
 	'coll-add_page'                   => 'താള്‍ ചേര്‍ക്കുക',
@@ -1508,7 +1492,6 @@ PDF ഔട്ട് പുട്ടില്‍ നിങ്ങള്‍ തൃ�
  */
 $messages['mr'] = array(
 	'coll-desc'                       => '[[Special:Collection|पाने गोळा करा]], पीडीएफ तयार करा',
-	'coll-collection'                 => 'गोळा केलेली पाने',
 	'coll-collections'                => 'गोळा केलेली पाने',
 	'coll-portlet_title'              => 'मी गोळा केलेली पाने',
 	'coll-add_page'                   => 'पानाचा समावेश करा',
@@ -1638,7 +1621,6 @@ $messages['nds'] = array(
  */
 $messages['nl'] = array(
 	'coll-desc'                       => "[[Special:Collection|Pagina's verzamelen]], PDF's genereren",
-	'coll-collection'                 => 'Verzameling',
 	'coll-collections'                => 'Verzamelingen',
 	'coll-portlet_title'              => 'Mijn verzameling',
 	'coll-add_page'                   => 'Pagina toevoegen',
@@ -1738,7 +1720,6 @@ Neem alstublieft contact op met uw MediaWiki-beheerder.',
  * @author Jon Harald Søby
  */
 $messages['nn'] = array(
-	'coll-collection' => 'Samling',
 	'coll-empty'      => 'tom',
 	'coll-page'       => 'side',
 	'coll-pages'      => 'sider',
@@ -1756,7 +1737,6 @@ $messages['nn'] = array(
  */
 $messages['no'] = array(
 	'coll-desc'                       => 'Lag [[Special:Collection|sidesamlinger]] og generer PDF-filer',
-	'coll-collection'                 => 'Samling',
 	'coll-collections'                => 'Samlinger',
 	'coll-portlet_title'              => 'Min samling',
 	'coll-add_page'                   => 'Legg til side',
@@ -1850,7 +1830,6 @@ Kontakt din MediaWiki-administrator.',
  */
 $messages['oc'] = array(
 	'coll-desc'                       => "[[Special:Collection|Compilar de paginas]], generar de pdf's",
-	'coll-collection'                 => 'Compilacion',
 	'coll-collections'                => 'Compilacions',
 	'coll-portlet_title'              => 'Ma compilacion',
 	'coll-add_page'                   => 'Apondre una pagina',
@@ -1965,7 +1944,6 @@ $messages['os'] = array(
  */
 $messages['pl'] = array(
 	'coll-desc'                       => 'Umożliwia [[Special:Collection|tworzenie kolekcji]] stron i zapisanie ich do pliku w formacie PDF',
-	'coll-collection'                 => 'Kolekcja',
 	'coll-collections'                => 'Kolekcje',
 	'coll-portlet_title'              => 'Moja kolekcja',
 	'coll-add_page'                   => 'Dodaj stronę',
@@ -2065,7 +2043,6 @@ Skontaktuj się z administratorem tego serwisu MediaWiki.',
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'coll-collection'            => 'غونډ',
 	'coll-collections'           => 'غونډونه',
 	'coll-portlet_title'         => 'زما غونډ',
 	'coll-add_page'              => 'مخ ورګډول',
@@ -2100,7 +2077,6 @@ $messages['ps'] = array(
  */
 $messages['pt'] = array(
 	'coll-desc'                       => '[[{{ns:special}}:Collection|Colecciona páginas]], gera PDFs',
-	'coll-collection'                 => 'Colecção',
 	'coll-collections'                => 'Colecções',
 	'coll-portlet_title'              => 'Minha Colecção',
 	'coll-add_page'                   => 'Adicionar página',
@@ -2198,7 +2174,6 @@ Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para f
  */
 $messages['ru'] = array(
 	'coll-desc'                       => '[[Special:Collection|Собирает коллекции страниц]], создаёт PDF',
-	'coll-collection'                 => 'Коллекция',
 	'coll-collections'                => 'Коллекции',
 	'coll-portlet_title'              => 'Моя коллекция',
 	'coll-add_page'                   => 'Добавить страницу',
@@ -2298,7 +2273,6 @@ $messages['ru'] = array(
  */
 $messages['sk'] = array(
 	'coll-desc'                       => 'Vytváranie [[Special:Collection|kolekcie stránok]], tvorba PDF',
-	'coll-collection'                 => 'Kolekcia',
 	'coll-collections'                => 'Kolekcie',
 	'coll-portlet_title'              => 'Moja kolekcia',
 	'coll-add_page'                   => 'Pridať stránku',
@@ -2409,7 +2383,6 @@ $messages['sr-ec'] = array(
  */
 $messages['stq'] = array(
 	'coll-desc'                => '[[Special:Collection|Siedentouhoopestaalenge]], moak PDFs',
-	'coll-collection'          => 'Touhoopestaalenge',
 	'coll-collections'         => 'Touhoopestaalenge',
 	'coll-portlet_title'       => 'Mien Touhoopestaalenge',
 	'coll-add_page'            => 'Siede bietouföigje',
@@ -2494,7 +2467,6 @@ $messages['su'] = array(
  */
 $messages['sv'] = array(
 	'coll-desc'                       => '[[Special:Collection|Samla sidor]], generera PDF filer',
-	'coll-collection'                 => 'Samling',
 	'coll-collections'                => 'Samlingar',
 	'coll-portlet_title'              => 'Min samling',
 	'coll-add_page'                   => 'Lägg till sida',
@@ -2603,7 +2575,6 @@ $messages['szl'] = array(
  */
 $messages['te'] = array(
 	'coll-desc'                       => '[[Special:Collection|పేజీలను సేకరించండి]], PDFలను తయారుచేసుకోండి',
-	'coll-collection'                 => 'సేరకణ',
 	'coll-collections'                => 'సేరకణలు',
 	'coll-portlet_title'              => 'నా సేకరణ',
 	'coll-add_page'                   => 'పేజీని చేర్చు',
@@ -2688,7 +2659,6 @@ $messages['tet'] = array(
  */
 $messages['tg-cyrl'] = array(
 	'coll-desc'                       => '[[Special:Collection|Гирдоварии саҳифаҳо]], тавлиди PDFҳо',
-	'coll-collection'                 => 'Гирдоварӣ',
 	'coll-collections'                => 'Гирдовариҳо',
 	'coll-portlet_title'              => 'Гирдоварии Ман',
 	'coll-add_page'                   => 'Илова кардани саҳифа',
@@ -2770,7 +2740,6 @@ $messages['tg-cyrl'] = array(
  * @author Suelnur
  */
 $messages['tr'] = array(
-	'coll-collection'    => 'Koleksiyon',
 	'coll-collections'   => 'Koleksiyonlar',
 	'coll-portlet_title' => 'Koleksiyonum',
 	'coll-empty'         => 'boş',
@@ -2788,7 +2757,6 @@ $messages['tr'] = array(
  */
 $messages['uk'] = array(
 	'coll-desc'                       => '[[Special:Collection|Збирає колекції сторінок]], створює PDF',
-	'coll-collection'                 => 'Колекція',
 	'coll-collections'                => 'Колекції',
 	'coll-portlet_title'              => 'Моя колекція',
 	'coll-add_page'                   => 'Додати сторінку',
@@ -2882,7 +2850,6 @@ $messages['uk'] = array(
  */
 $messages['vi'] = array(
 	'coll-desc'                       => '[[Special:Collection|Tập hợp trang lại]], tạo thành tập tin PDF',
-	'coll-collection'                 => 'Tập hợp',
 	'coll-collections'                => 'Tập hợp',
 	'coll-portlet_title'              => 'Tập hợp của tôi',
 	'coll-add_page'                   => 'Thêm trang',
