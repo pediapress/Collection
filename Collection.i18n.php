@@ -558,6 +558,7 @@ Wenn dies nicht funktioniert, klicke auf die Neuladen-Schaltfläche deines Browe
 	'coll-about_pp'                   => 'Über $1',
 	'coll-invalid_podpartner_title'   => 'Ungültiger Print-on-Demand-Partner',
 	'coll-invalid_podpartner_msg'     => 'Die Angaben zum Print-on-Demand-Partner sind fehlerhaft. Bitte kontaktiere den MediaWiki-Administrator.',
+	'coll-license'                    => 'Lizenz',
 );
 
 /** Greek (Ελληνικά)
