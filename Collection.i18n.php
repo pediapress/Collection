@@ -135,12 +135,14 @@ $messages['krl'] = array(
  * @author Сай
  */
 $messages['mhr'] = array(
-	'coll-cancel' => 'Чарташ',
+	'coll-page'   => 'лаштык',
+	'coll-cancel' => 'Чараш',
 );
 
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author SPQRobin
+ * @author Naudefj
  */
 $messages['af'] = array(
 	'coll-collections'                => 'Versamelings',
@@ -175,6 +177,7 @@ $messages['af'] = array(
 	'coll-yes'                        => 'Ja',
 	'coll-no'                         => 'Nee',
 	'coll-cancel'                     => 'Kanselleer',
+	'coll-license'                    => 'Lisensie',
 );
 
 /** Arabic (العربية)
@@ -229,6 +232,7 @@ $messages['ar'] = array(
 	'coll-post_failed_title'          => 'طلب POST فشل',
 	'coll-post_failed_msg'            => 'طلب POST إلى $1 فشل ($2).',
 	'coll-pdfserver_failed_title'     => 'PDF خطأ خادم',
+	'coll-pdfserver_failed_msg'       => 'حدث خطأ في خادم PDF: $1',
 	'coll-enter_title'                => 'أدخل العنوان للمجموعة:',
 	'coll-error_reponse'              => 'خطأ استجابة من الخادم',
 	'coll-empty_collection'           => 'مجموعة فارغة',
@@ -267,6 +271,7 @@ $messages['ar'] = array(
 	'coll-notfound_title'             => 'المجموعة غير موجودة',
 	'coll-notfound_text'              => 'لم يمكن العثور على صفحة المجموعة.',
 	'coll-return_to_collection'       => 'ارجع إلى <a href="$1">$2</a>',
+	'coll-pdf_error_text'             => 'كان هناك خطأ أثناء توليد ملف PDF: $1',
 	'coll-book_title'                 => 'طلب كتاب مطبوع',
 	'coll-order_from_pp'              => 'طلب كتاب من $1',
 	'coll-about_pp'                   => 'حول $1',
@@ -680,6 +685,7 @@ $messages['fi'] = array(
  * @author Grondin
  * @author Verdy p
  * @author Siebrand
+ * @author IAlex
  */
 $messages['fr'] = array(
 	'coll-desc'                       => "[[Special:Collection|Compiler des pages]], générer des pdf's",
@@ -701,6 +707,7 @@ Cette page ne s'affichera pas correctement tant que javascript n'est pas activé
 	'coll-intro_text'                 => "Vous pouvez collecter des pages, générer et télécharger des fichiers PDF depuis les collections de paéges ou des sauvegarde desdites collections pour un usage ultérieur ou pour les partager.
 
 Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections]] pour d'avantage d'informations.",
+	'coll-helppage'                   => 'Aide:Collections',
 	'coll-pdftoobigcat'               => 'La catégorie contient plus de %PARAM% pages, seules les premières %PARAM% pages peuvent être ajoutées dans votre compilation.
 Voulez-vous les ajouter ?',
 	'coll-my_collection'              => 'Ma compilation',
@@ -767,7 +774,7 @@ Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]
 	'coll-notfound_title'             => 'Compilation non trouvée',
 	'coll-notfound_text'              => 'Ne peut trouver la compilation.',
 	'coll-return_to_collection'       => 'Revenir sur <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Une erreur a été détectée lors de la création du fichier PDF.',
+	'coll-pdf_error_text'             => 'Une erreur a été détectée lors de la création du fichier PDF : $1',
 	'coll-book_title'                 => 'Commander un livre imprimé',
 	'coll-book_text'                  => "Vous pouvez commander un livre imprimé contenant votre collection d'articles en visitant une demande d'impression de la part de partenaires :",
 	'coll-order_from_pp'              => 'Commander le livre depuis $1',
@@ -775,6 +782,7 @@ Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]
 	'coll-invalid_podpartner_title'   => 'Partenaire POD incorrect.',
 	'coll-invalid_podpartner_msg'     => 'Le partenaire POD indiqué est incorrect.
 Veuillez contacter votre administrateur Mediawiki.',
+	'coll-license'                    => 'Licence',
 );
 
 /** Western Frisian (Frysk)
@@ -885,6 +893,7 @@ Consulte [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións
 	'coll-invalid_podpartner_title'   => 'Compañeiro de solicitudes de impresión (POD) inválido',
 	'coll-invalid_podpartner_msg'     => 'O compañeiro de solicitudes de impresión (POD) indicado é inválido.
 Por favor, contacte co seu administrador MediaWiki.',
+	'coll-license'                    => 'Licenza',
 );
 
 /** Manx (Gaelg)
@@ -915,6 +924,7 @@ $messages['gv'] = array(
  */
 $messages['haw'] = array(
 	'coll-page'     => '‘ao‘ao',
+	'coll-remove'   => 'Kāpae',
 	'coll-contents' => 'Papa kuhikuhi',
 	'coll-about_pp' => 'E pili ana iā $1',
 );
@@ -1356,6 +1366,10 @@ $messages['lb'] = array(
 	'coll-page'                       => 'Säit',
 	'coll-pages'                      => 'Säiten',
 	'coll-download_as_pdf'            => 'Als PDF eroflueden',
+	'coll-noscript_text'              => '<h1>JavaScript gëtt gebraucht!</h1>
+<strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
+Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</strong>',
+	'coll-helppage'                   => 'Hellëf:Kollektioun',
 	'coll-my_collection'              => 'Meng Sammlung',
 	'coll-download_title'             => 'Kollektioun als PDF eroflueden',
 	'coll-download_pdf'               => 'PDF eroflueden',
@@ -1396,6 +1410,7 @@ Et kënne keng Säite méi derbäigesat ginn.',
 	'coll-generating_pdf_title'       => 'PDF maachen',
 	'coll-return_to_collection'       => 'Zréck op <a href="$1">$2</a>',
 	'coll-book_title'                 => 'Gedréckte Buch bestellen',
+	'coll-book_text'                  => 'Dir kënnt e Buch bestellen op enge vun dësen Internetsiten:',
 	'coll-order_from_pp'              => "D'Buch bestelle bäi $1",
 	'coll-about_pp'                   => 'Iwwer $1',
 );
@@ -1716,6 +1731,7 @@ Op de [[{{MediaWiki:Coll-helppage}}|hulppagina voor collecties]] staan manieren 
 	'coll-invalid_podpartner_title'   => 'Ongeldige print on demand-partner',
 	'coll-invalid_podpartner_msg'     => 'De opgegeven print on demand-partner is ongeldig.
 Neem alstublieft contact op met uw MediaWiki-beheerder.',
+	'coll-license'                    => 'Licentie',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -1754,6 +1770,7 @@ $messages['no'] = array(
 	'coll-noscript_text'              => '<h1>JavaScript er påkrevd!</h1>
 <strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong>',
 	'coll-intro_text'                 => 'Du kan samle sider, generere og laste ned en PDF-fil fra sidesamlinger og lagre sidesamlinger for senere bruk eller for deling.',
+	'coll-helppage'                   => 'Help:Samlinger',
 	'coll-pdftoobigcat'               => 'Kategorien inneholder mer enn %PARAM% sider, kun de første %PARAM% sidene kan legges til i samlingen din. Vil du legge dem til?',
 	'coll-my_collection'              => 'Min samling',
 	'coll-download_title'             => 'Last ned samling som PDF',
@@ -1824,6 +1841,7 @@ Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for hvordan du kan f
 	'coll-invalid_podpartner_title'   => 'Ugyldig POD-partner',
 	'coll-invalid_podpartner_msg'     => 'Den oppgitte POD-partneren er ugyldig.
 Kontakt din MediaWiki-administrator.',
+	'coll-license'                    => 'Lisens',
 );
 
 /** Occitan (Occitan)
@@ -1850,6 +1868,7 @@ Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activ
 	'coll-intro_text'                 => "Podètz collectar de paginas, generar e telecargar de fichièrs PDF dempuèi las colleccions de paginas o dels salvaments de las dichas colleccions per un usatge ulterior o per las partejar.
 
 Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entresenhas.",
+	'coll-helppage'                   => 'Ajuda:Collections',
 	'coll-pdftoobigcat'               => 'La categoria conten mai de %PARAM% paginas, solas las primièras %PARAM% paginas pòdon èsser apondudas dins vòstra compilacion.
 Las volètz apondre ?',
 	'coll-my_collection'              => 'Ma compilacion',
@@ -1924,6 +1943,7 @@ Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda a prepaus de las collec
 	'coll-invalid_podpartner_title'   => 'Partenari POD incorrècte.',
 	'coll-invalid_podpartner_msg'     => 'Lo partenari POD indicat es incorrècte.
 Contactatz vòstre administrator Mediawiki.',
+	'coll-license'                    => 'Licéncia',
 );
 
 /** Ossetic (Иронау)
@@ -2073,8 +2093,8 @@ $messages['ps'] = array(
 /** Portuguese (Português)
  * @author Malafaya
  * @author Lijealso
- * @author 555
  * @author Siebrand
+ * @author 555
  * @author MF-Warburg
  */
 $messages['pt'] = array(
@@ -2122,7 +2142,7 @@ Deseja adicioná-las?',
 	'coll-no_such_category'           => 'Não existe essa categoria',
 	'coll-notitle_title'              => 'Não foi possível determinar o título da página.',
 	'coll-post_failed_title'          => 'Pedido POST falhou',
-	'coll-post_failed_msg'            => 'O pedido POST falhou ($2).',
+	'coll-post_failed_msg'            => 'O pedido POST feito à $1 falhou ($2).',
 	'coll-enter_title'                => 'Introduza título para a colecção:',
 	'coll-error_reponse'              => 'Resposta de erro do servidor',
 	'coll-empty_collection'           => 'Colecção vazia',
@@ -2173,6 +2193,7 @@ Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para f
  * @author Александр Сигачёв
  * @author Siebrand
  * @author Ahonc
+ * @author MaxSem
  */
 $messages['ru'] = array(
 	'coll-desc'                       => '[[Special:Collection|Собирает коллекции страниц]], создаёт PDF',
@@ -2219,7 +2240,7 @@ $messages['ru'] = array(
 	'coll-no_such_category'           => 'Нет такой категории',
 	'coll-notitle_title'              => 'Заголовок страницы не может быть определён.',
 	'coll-post_failed_title'          => 'POST-запрос не выполнен',
-	'coll-post_failed_msg'            => 'POST-запрос не выполнен ($2).',
+	'coll-post_failed_msg'            => 'POST-запрос к $1 не выполнен ($2).',
 	'coll-enter_title'                => 'Введите название коллекции:',
 	'coll-error_reponse'              => 'Ошибка ответа сервера',
 	'coll-empty_collection'           => 'Пустая коллекция',
@@ -2366,6 +2387,7 @@ Pozri možnosti jeho vylepšenia na [[{{MediaWiki:Coll-helppage}}|stránke Pomoc
 	'coll-invalid_podpartner_title'   => 'Neplatný POD partner',
 	'coll-invalid_podpartner_msg'     => 'Zadaný POD partner je neplatný.
 Prosím, kontaktujte svojho správcu MediaWiki.',
+	'coll-license'                    => 'Licencia',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
@@ -2561,6 +2583,7 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för hur du kan för
 	'coll-invalid_podpartner_title'   => 'Ogiltig POD-partner',
 	'coll-invalid_podpartner_msg'     => 'Den erbjudna POD-partnern är ogiltig.
 Var god kontakta din MediaWiki-administratör.',
+	'coll-license'                    => 'Licens',
 );
 
 /** Silesian (ślůnski)
