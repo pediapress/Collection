@@ -518,10 +518,12 @@ class Collection extends SpecialPage {
 		global $wgServer;
 		global $wgScriptPath;
 		
-		$response = self::pdfServerCommand( 'pdf_generate', array(
+		$response = self::pdfServerCommand( 'render', array(
 			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
+			'writer' => 'rl',
+			'content_type' => 'application/pdf',
 		) );
 		
 		if ( !$response ) {
@@ -544,7 +546,7 @@ class Collection extends SpecialPage {
 		$collection_id = $wgRequest->getVal( 'collection_id' );
 		$return_to = $wgRequest->getVal( 'return_to' );
 		
-		$response = self::pdfServerCommand( 'pdf_status', array(
+		$response = self::pdfServerCommand( 'render_status', array(
 			'collection_id' => $collection_id,
 		) );
 		if ( !$response ) {
@@ -563,7 +565,7 @@ class Collection extends SpecialPage {
 			);
 			$wgOut->addMeta( 'http:refresh', '2; URL=' . $url );
 			$wgOut->setPageTitle( wfMsg( 'coll-generating_pdf_title' ) );
-			$wgOut->addWikiText( wfMsgNoTrans( 'coll-generating_pdf_text', $response->progress ) );
+			$wgOut->addWikiText( wfMsgNoTrans( 'coll-generating_pdf_text', $response->status->progress ) );
 			break;
 		case 'finished':
 			$wgOut->setPageTitle( wfMsg( 'coll-pdf_finished_title' ) );
@@ -592,7 +594,7 @@ class Collection extends SpecialPage {
 		global $wgOut;
 		global $wgRequest;
 		
-		$response = self::pdfServerCommand( 'pdf_download', array(
+		$response = self::pdfServerCommand( 'download', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 		), $decode=false );
 		

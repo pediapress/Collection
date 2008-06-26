@@ -37,7 +37,7 @@ Python packages: *PIL* and *ReportLab*.
     cd reportlab/reportlab
     python setup.py install
 
-*mwlib*
+*mwlib, version >= 0.7*
  You need to have setuptools/easy_install installed.
  Installation should be as easy as typing::
 
@@ -48,7 +48,7 @@ Python packages: *PIL* and *ReportLab*.
 
     python setup.py install
 
-*mwlib.rl*
+*mwlib.rl, version >= 0.7*
  Install *mwlib.rl* with ``easy_install``::
 
     easy_install mwlib.rl

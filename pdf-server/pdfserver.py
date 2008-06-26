@@ -14,11 +14,11 @@ script_url = 'http://example/cgi-bin/pdfserver.py'
 # accompanied script clean-cache.py.
 cache_dir = '/var/cache/pdfserver/'
 
-# (Path to) mw-pdf executable.
-mwpdf_cmd = 'mw-pdf'
+# (Path to) mw-render executable.
+mwrender_cmd = 'mw-render'
 
-# Logfile for mw-pdf.
-mwpdf_logfile = '/var/log/mw-pdf.log'
+# Logfile for mw-render.
+mwrender_logfile = '/var/log/mw-render.log'
 
 # (Path to) mw-zip executable.
 mwzip_cmd = 'mw-zip'
@@ -48,7 +48,6 @@ import simplejson
 import StringIO
 import subprocess
 import time
-import urllib
 
 def uid(max_length=10):
     f = StringIO.StringIO()
@@ -60,9 +59,10 @@ def uid(max_length=10):
 
 class PDFServer(object):
     metabook_filename = 'metabook.json'
-    pdf_filename = 'collection.pdf'
+    contenttype_filename = 'content_type.txt'
     error_filename = 'errors.txt'
-    progress_filename = 'progress.txt'
+    status_filename = 'status.txt'
+    output_filename = 'output'
     
     def __init__(self, form):
         self.form = form
@@ -133,14 +133,20 @@ class PDFServer(object):
         print # end of headers
         print content,
     
-    def do_pdf_generate(self):
+    def do_render(self):
         metabook_data = self.form.getvalue('metabook')
         if not metabook_data:
             return self.error_response('metabook argument required')
         base_url = self.form.getvalue('base_url')
         if not base_url:
             return self.error_response('base_url argument required')
-        
+        writer = self.form.getvalue('writer')
+        if not writer:
+            return self.error_response('writer argument required')
+        content_type = self.form.getvalue('content_type')
+        if not content_type:
+            return self.error_response('content_type argument required')
+        writer_options = self.form.getvalue('writer_options')
         template_blacklist = self.form.getvalue('template_blacklist')
         
         collection_id = self.new_collection()
@@ -150,34 +156,42 @@ class PDFServer(object):
         f.write(metabook_data)
         f.close()
         
+        contenttype_path = self.get_path(collection_id, self.contenttype_filename)
+        f = open(contenttype_path, 'wb')
+        f.write(content_type)
+        f.close()
+        
         args=[
-            mwpdf_cmd,
+            mwrender_cmd,
             '--daemonize',
-            '--logfile', mwpdf_logfile,
-            '--errorfile', self.get_path(collection_id, self.error_filename),
+            '--logfile', mwrender_logfile,
+            '--error-file', self.get_path(collection_id, self.error_filename),
+            '--status-file', self.get_path(collection_id, self.status_filename),
             '--metabook', metabook_path,
             '--conf', base_url,
-            '--progress', self.get_path(collection_id, self.progress_filename),
-            '--output', self.get_path(collection_id, self.pdf_filename),
+            '--writer', writer,
+            '--output', self.get_path(collection_id, self.output_filename),
         ]
+        if writer_options:
+            args.extend(['--writer-options', writer_options])
         if template_blacklist:
             args.extend(['--template-blacklist', template_blacklist])
         
         try:
-            rc = subprocess.call(executable=mwpdf_cmd, args=args)
-        except IOError, e:
-            raise RuntimeError('Could not execute command %r: %s' % (mwpdf_cmd, e))
+            rc = subprocess.call(executable=mwrender_cmd, args=args)
+        except OSError, e:
+            raise RuntimeError('Could not execute command %r: %s' % (mwrender_cmd, e))
         if rc != 0:
-            return self.error_response('command %r failed: rc = %d' % (mwpdf_cmd, rc))
+            return self.error_response('command %r failed: rc = %d' % (mwrender_cmd, rc))
         
         return self.json_response({
             'collection_id': collection_id,
         })
     
-    def do_pdf_status(self):
+    def do_render_status(self):
         collection_id = self.get_collection()
         
-        if os.path.exists(self.get_path(collection_id, self.pdf_filename)):
+        if os.path.exists(self.get_path(collection_id, self.output_filename)):
             return self.json_response({
                 'collection_id': collection_id,
                 'state': 'finished',
@@ -193,19 +207,24 @@ class PDFServer(object):
             })
         
         try:
-            progress = int(open(self.get_path(collection_id, self.progress_filename), 'rb').read())
-        except IOError:
-            progress = 0
+            f = open(self.get_path(collection_id, self.status_filename), 'rb')
+            status = simplejson.loads(f.read())
+            f.close()
+        except (IOError, ValueError):
+            status = {'progress': 0}
         return self.json_response({
             'collection_id': collection_id,
             'state': 'progress',
-            'progress': progress,
+            'status': status,
         })
     
-    def do_pdf_download(self):
+    def do_download(self):
+        collection_id = self.get_collection()
+        content_type = open(self.get_path(collection_id, self.contenttype_filename), 'rb').read()
+        content = open(self.get_path(collection_id, self.output_filename), 'rb').read()
         return {
-            'content_type': 'application/pdf',
-            'content': open(self.get_path(self.get_collection(), self.pdf_filename)).read()
+            'content_type': content_type,
+            'content': content,
         }
     
     def do_zip_post(self):
@@ -237,7 +256,7 @@ class PDFServer(object):
             args.extend(['--template-blacklist', template_blacklist])
         try:
             rc = subprocess.call(executable=mwzip_cmd, args=args)
-        except IOError, e:
+        except OSError, e:
             raise RuntimeError('Could not execute command %r: %s' % (mwzip_cmd, e))
         if rc != 0:
             return self.error_response('command %r failed: rc = %d' % (mwzip_cmd, rc))
