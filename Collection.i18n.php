@@ -38,6 +38,7 @@ $messages['en'] = array(
 	'coll-page'                       => 'page',
 	'coll-pages'                      => 'pages',
 	'coll-download_as_pdf'            => 'Download as PDF',
+	'coll-download_as_odf'            => 'Download as ODF',
 	'coll-noscript_text'              => '<h1>JavaScript is Required!</h1>
 <strong>Your browser does not support JavaScript or JavaScript has been turned off.
 This page will not work correctly, unless JavaScript is enabled.</strong>',
@@ -45,7 +46,7 @@ This page will not work correctly, unless JavaScript is enabled.</strong>',
 
 See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more information.",
 	'coll-helppage'                   => 'Help:Collections',
-	'coll-pdftoobigcat'               => 'The category contains more than %PARAM% pages, only the first %PARAM% pages can be added to your collection.
+	'coll-too_big_cat'                => 'The category contains more than %PARAM% pages, only the first %PARAM% pages can be added to your collection.
 Do you want to add them?',
 	'coll-my_collection'              => 'My Collection',
 	'coll-download_title'             => 'Download collection as PDF',
@@ -96,24 +97,22 @@ Do want to overwrite your current collection, append the new content or cancel?'
 	'coll-limit_exceeded_title'       => 'Collection too big',
 	'coll-limit_exceeded_text'        => 'Your page collection is too big.
 No more pages can be added.',
-	'coll-generating_pdf_title'       => 'Generating PDF',
-	'coll-generating_pdf_text'        => "'''Please wait while the PDF file is being generated.'''
+	'coll-rendering_title'            => 'Rendering',
+	'coll-rendering_text'             => "'''Please wait while the document is being generated.'''
 
 Progress: '''$1%'''.
 
 This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.",
-	'coll-pdf_finished_title'       	=> 'PDF Generation Finished',
-	'coll-pdf_finished_text'          => "'''The PDF file has been generated.'''
+	'coll-rendering_finished_title'   => 'Rendering Finished',
+	'coll-rendering_finished_text'    => "'''The document file has been generated.'''
 [$1 Click here] to download it to your computer.
 
-Not satisfied with the PDF output?
+Not satisfied with the output?
 See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
 	'coll-notfound_title'             => 'Collection not found',
 	'coll-notfound_text'              => 'Could not find collection page.',
 	'coll-return_to_collection'       => 'Return to <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Error in PDF Generation',
-	'coll-pdf_error_text'             => 'There was an error when generating the PDF file: $1',
 	'coll-book_title'                 => 'Order printed book',
 	'coll-book_text'                  => 'You can order a printed book containing your page collection by visiting one of the following print-on-demand partners:',
 	'coll-order_from_pp'              => 'Order book from $1',

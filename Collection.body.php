@@ -160,7 +160,7 @@ class Collection extends SpecialPage {
 				$this->outputSaveOverwrite( $title );
 			}
 			return;
-		} else if ( $par == 'generate_pdf/' ) {
+		} else if ( $par == 'render/' ) {
 			$title = $wgRequest->getVal( 'downloadTitle', '' );
 			if ( $title ) {
 				$_SESSION['wsCollection']['title'] = $title;
@@ -169,21 +169,28 @@ class Collection extends SpecialPage {
 			if ( $subtitle ) {
 				$_SESSION['wsCollection']['subtitle'] = $subtitle;
 			}
-			return $this->generatePDF();
-		} else if ( $par == 'generating_pdf/' ) {
-			return $this->generatingPDF();
-		} else if ( $par == 'download_pdf/' ) {
-			return $this->downloadPDF();
-		} else if ( $par == 'download_article_pdf/' ) {
+			return $this->renderCollection(
+				$_SESSION['wsCollection'],
+				Title::makeTitle( NS_SPECIAL, 'Collection' ),
+				$wgRequest->getVal( 'downloadWriter', '' )
+			);
+		} else if ( $par == 'rendering/' ) {
+			return $this->rendering();
+		} else if ( $par == 'download/' ) {
+			return $this->download();
+		} else if ( $par == 'render_article/' ) {
 			$title = Title::newFromText( $wgRequest->getVal( 'arttitle', '' ) );
 			$oldid = $wgRequest->getInt( 'oldid', 0 );
-			return $this->downloadArticlePDF( $title, $oldid );
-		} else if ( $par == 'download_collection_pdf/' ) {
+			return $this->renderArticle( $title, $oldid, $wgRequest->getVal( 'writer', 'rl' ) );
+		} else if ( $par == 'render_collection/' ) {
 			$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
-			return $this->downloadCollectionPDF( $title );
-		} else if ( $par == 'post_pdf/' ) {
+			$collection = $this->loadCollection( $title );
+			if ( $collection ) {
+				$this->renderCollection( $collection, $title, $wgRequest->getVal( 'writer', 'rl' ) );
+			}
+		} else if ( $par == 'post_zip/' ) {
 			$partner = $wgRequest->getVal( 'partner', '' );
-			return $this->postPDF( $partner );
+			return $this->postZIP( $partner );
 		}
 
 		$this->setHeaders();
@@ -512,31 +519,34 @@ class Collection extends SpecialPage {
 		return $json->encode( $result );
 	}
 	
-	function generatePDFFromCollection( $collection, $referrer ) {
+	function renderCollection( $collection, $referrer, $writer ) {
 		global $wgOut;
 		global $wgPDFTemplateBlacklist;
 		global $wgServer;
 		global $wgScriptPath;
 		
+		if ( !$writer ) {
+			$writer = 'rl';
+		}
+		
 		$response = self::pdfServerCommand( 'render', array(
 			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
-			'writer' => 'rl',
-			'content_type' => 'application/pdf',
+			'writer' => $writer,
 		) );
 		
 		if ( !$response ) {
 			return;
 		}
 		
-		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generating_pdf/' );
+		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' );
 		$wgOut->redirect( wfAppendQuery( $redirect,
 			'return_to=' . urlencode( $referrer->getPrefixedText() )
 			. '&collection_id=' . urlencode( $response->collection_id ) ) );
 	}
 	
-	function generatingPDF() {
+	function rendering() {
 		global $wgOut;
 		global $wgRequest;
 		global $wgServer;
@@ -560,20 +570,20 @@ class Collection extends SpecialPage {
 				$params .= '&return_to=' . urlencode( $wgRequest->getVal( 'return_to' ) );
 			}
 			$url = wfAppendQuery(
-				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generating_pdf/' ),
+				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' ),
 				$params
 			);
 			$wgOut->addMeta( 'http:refresh', '2; URL=' . $url );
-			$wgOut->setPageTitle( wfMsg( 'coll-generating_pdf_title' ) );
-			$wgOut->addWikiText( wfMsgNoTrans( 'coll-generating_pdf_text', $response->status->progress ) );
+			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
+			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_text', $response->status->progress ) );
 			break;
 		case 'finished':
-			$wgOut->setPageTitle( wfMsg( 'coll-pdf_finished_title' ) );
+			$wgOut->setPageTitle( wfMsg( 'coll-rendering_finished_title' ) );
 			$url = wfAppendQuery(
-				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download_pdf/' ),
+				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download/' ),
 				'collection_id=' . urlencode( $response->collection_id )
 			);
-			$wgOut->addWikiText( wfMsgNoTrans( 'coll-pdf_finished_text', $wgServer . $url ) );
+			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_finished_text', $wgServer . $url ) );
 			if ( $return_to ) {
 				// We are doing this the hard way (i.e. via the HTML detour), to prevent
 				// the parser from replacing [[:Special:Collection]] with a selflink.
@@ -590,7 +600,7 @@ class Collection extends SpecialPage {
 		}
 	}
 	
-	function downloadPDF() {
+	function download() {
 		global $wgOut;
 		global $wgRequest;
 		
@@ -605,23 +615,20 @@ class Collection extends SpecialPage {
 		// Cancel output buffering and gzipping if set
 		wfResetOutputBuffers();
 		
-		header( 'Content-type: application/pdf');
-		header( 'Content-Disposition: inline;filename=mw.pdf' );
-		header( 'Content-Length: ' .  strlen( $response ) );
-		print $response;
+		if ( isset( $response['headers']['content-type'] ) ) {
+			header( 'Content-type: ' . $response['headers']['content-type']);
+		}
+		if ( isset( $reponse['headers']['content-disposition'] ) ) {
+			header( 'Content-Disposition: ' . $response['headers']['content-disposition']);
+		}
+		header( 'Content-Length: ' . strlen( $response['content'] ) );
+		print $response['content'];
 		$wgOut->disable();
 	}
 	
-	function generatePDF() {
-		$this->generatePDFFromCollection(
-			$_SESSION['wsCollection'],
-			Title::makeTitle( NS_SPECIAL, 'Collection' )
-		);
-	}
-
-	function downloadArticlePDF( $title, $oldid=0 ) {
+	function renderArticle( $title, $oldid, $writer ) {
 		global $wgOut;
-
+		
 		if ( is_null( $title ) ) {
 			$wgOut->showErrorPage( 'notitle_title', 'notitle_msg' );
 			return;
@@ -638,17 +645,10 @@ class Collection extends SpecialPage {
 		$revision = Revision::newFromTitle( $title, $oldid );
 		$article['timestamp'] = wfTimestamp( TS_UNIX, $revision->mTimestamp );
 
-		$this->generatePDFFromCollection( array( 'items' => array( $article ) ), $title );
+		$this->renderCollection( array( 'items' => array( $article ) ), $title, $writer );
 	}
 
-	function downloadCollectionPDF( $title ) {
-		$collection = $this->loadCollection( $title );
-		if ( $collection ) {
-			$this->generatePDFFromCollection( $collection, $title );
-		}
-	}
-
-	function postPDF( $partner ) {
+	function postZIP( $partner ) {
 		global $wgServer;
 		global $wgScriptPath;
 		global $wgOut;
@@ -663,9 +663,10 @@ class Collection extends SpecialPage {
 
 		$url = $this->mPODPartners[$partner]['posturl'];
 		$errorMessage = '';
-		$response = self::post( $url, array(), $errorMessage );
+		$contentType = '';
+		$response = self::post( $url, array(), $errorMessage, $contentType );
 		if ( !$response ) {
-			$wgOut->showErrorPage( 'coll-post_failed_title', 'coll-post_failed_msg', array(	$url, $errorMessage ) );
+			$wgOut->showErrorPage( 'coll-post_failed_title', 'coll-post_failed_msg', array( $url, $errorMessage ) );
 			return;
 		}
 		$postData = $json->decode( $response );
@@ -783,7 +784,7 @@ EOS
 		$downloadTitle = wfMsgHtml( 'coll-download_title' );
 		$downloadText = wfMsgHtml( 'coll-download_text' );
 		$buttonLabel = wfMsgHtml( 'coll-download_pdf' );
-		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'generate_pdf/' ) );
+		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'render/' ) );
 		$html = <<<EOS
 <h2><span class="mw-headline">$downloadTitle</span></h2>
 <p>$downloadText</p>
@@ -905,7 +906,7 @@ EOS
 		;
 
 		foreach( $this->mPODPartners as $partner => $partnerData ) {
-			$formurl = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'post_pdf/' ) );
+			$formurl = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'post_zip/' ) );
 			$encPartner = htmlspecialchars( $partner );
 			$url = htmlspecialchars( $partnerData['url'] );
 			$logoURL = htmlspecialchars( $partnerData['logourl'] );
@@ -949,6 +950,7 @@ EOS
 	function createNavURLs( &$skinTemplate, &$nav_urls, &$revid1, &$revid2 ) {
 		global $wgArticle;
 		global $wgRequest;
+		global $wgCollectionUseODF;
 
 		wfLoadExtensionMessages( 'Collection' );
 
@@ -960,10 +962,19 @@ EOS
 				$nav_urls['download_as_pdf'] = array(
 					'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 						'Collection',
-						'download_collection_pdf/'
+						'render_collection/'
 					), $params ),
 					'text' => wfMsg( 'coll-download_as_pdf' ),
 				);
+				if ( $wgCollectionUseODF ) {
+					$nav_urls['download_as_odf'] = array(
+						'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
+							'Collection',
+							'render_collection/'
+						), $params . '&writer=odf' ),
+						'text' => wfMsg( 'coll-download_as_odf' ),
+					);
+				}
 			} else {
 				$params = 'arttitle=' . $skinTemplate->mTitle->getPrefixedURL();
 				if( $wgArticle ) {
@@ -975,10 +986,19 @@ EOS
 				$nav_urls['download_as_pdf'] = array(
 					'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 						'Collection',
-						'download_article_pdf/'
+						'render_article/'
 					), $params ),
 					'text' => wfMsg( 'coll-download_as_pdf' )
 				);
+				if ( $wgCollectionUseODF ) {
+					$nav_urls['download_as_odf'] = array(
+						'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
+							'Collection',
+							'render_article/'
+						), $params . '&writer=odf' ),
+						'text' => wfMsg( 'coll-download_as_odf' )
+					);
+				}
 			}
 		}
 		return true;
@@ -992,6 +1012,14 @@ EOS
 		if ( !empty( $skinTemplate->data['nav_urls']['download_as_pdf']['href'] ) ) {
 			$href = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_pdf']['href'] );
 			$label = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_pdf']['text'] );
+			print <<<EOS
+<li id="t-pdf"><a href="$href">$label</a></li>
+EOS
+			;
+		}
+		if ( !empty( $skinTemplate->data['nav_urls']['download_as_odf']['href'] ) ) {
+			$href = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_odf']['href'] );
+			$label = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_odf']['text'] );
 			print <<<EOS
 <li id="t-pdf"><a href="$href">$label</a></li>
 EOS
@@ -1068,7 +1096,7 @@ EOS
 			# disable caching
 			$wgOut->setSquidMaxage( 0 );
 			$wgOut->enableClientCache( false );
-		}	
+		} 
 		if ( $numArticles == 1 ){
 			$articles = $numArticles . ' ' . wfMsgHtml( 'coll-page' );
 		} else {
@@ -1078,7 +1106,7 @@ EOS
 		$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
 		print <<<EOS
 						<li><a href="$showURL">$showCollection<br />
-						  ($articles)</a></li>
+							($articles)</a></li>
 EOS
 		;
 		$helpCollections = wfMsgHtml( 'coll-help_collections' );
@@ -1099,7 +1127,8 @@ EOS
 		
 		$args['command'] = $command;
 		$errorMessage = '';
-		$response = self::post( $wgPDFServer, $args, $errorMessage );
+		$headers = array();
+		$response = self::post( $wgPDFServer, $args, $errorMessage, $headers );
 		if ( !$response ) {
 			$wgOut->showErrorPage(
 				'coll-post_failed_title',
@@ -1110,7 +1139,10 @@ EOS
 		}
 		
 		if (!$decode) {
-			return $response;
+			return array(
+				'content' => $response,
+				'headers' => $headers,
+			);
 		}
 		
 		$json = new Services_JSON();
@@ -1137,7 +1169,7 @@ EOS
 		return $json_response;
 	}
 	
-	static function post( $url, $postFields, &$errorMessage ) {
+	static function post( $url, $postFields, &$errorMessage, &$headers ) {
 		global $wgHTTPTimeout, $wgHTTPProxy, $wgVersion, $wgTitle;
 	
 		$c = curl_init( $url );
@@ -1146,27 +1178,32 @@ EOS
 		curl_setopt( $c, CURLOPT_POST, true );
 		curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
 		curl_setopt( $c, CURLOPT_HTTPHEADER, array( 'Expect:' ) );
-		
 		if ( is_object( $wgTitle ) ) {
 			curl_setopt( $c, CURLOPT_REFERER, $wgTitle->getFullURL() );
 		}
-	
-		ob_start();
-		curl_exec( $c );
-		$text = ob_get_contents();
-		ob_end_clean();
+		curl_setopt( $c, CURLOPT_HEADER, true );
+		curl_setopt( $c, CURLOPT_RETURNTRANSFER, true );
 		
-		$errorMessage = '';
+		$response = curl_exec( $c );
 		
-		if ( curl_getinfo( $c, CURLINFO_HTTP_CODE ) != 200 ) {
-			$text = false;
-			$errorMessage = 'HTTP status ' . curl_getinfo( $c, CURLINFO_HTTP_CODE );
-		}
-		# Don't return truncated output
 		if ( curl_errno( $c ) != CURLE_OK ) {
 			$text = false;
 			$errorMessage = curl_error( $c );
-		}
+		} else if ( curl_getinfo( $c, CURLINFO_HTTP_CODE ) != 200 ) {
+			$text = false;
+			$errorMessage = 'HTTP status ' . curl_getinfo( $c, CURLINFO_HTTP_CODE );
+		} else {
+			$headerSize = curl_getinfo( $c, CURLINFO_HEADER_SIZE );
+			$headerLines = explode( "\n", substr( $response, 0, $headerSize ) );
+			foreach( $headerLines as $line ) {
+				if ( preg_match( "/^(.+?):\s+(.+)$/", trim( $line ), $matches ) ) {
+					$headers[ strtolower( $matches[1] ) ] = $matches[2];
+				}
+				unset( $matches );
+			}
+			$text = substr( $response, $headerSize );
+			$errorMessage = '';
+		}		
 		curl_close( $c );
 		return $text;
 	}

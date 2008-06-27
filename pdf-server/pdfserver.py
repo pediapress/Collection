@@ -60,7 +60,6 @@ def uid(max_length=10):
 
 class PDFServer(object):
     metabook_filename = 'metabook.json'
-    contenttype_filename = 'content_type.txt'
     error_filename = 'errors.txt'
     status_filename = 'status.txt'
     output_filename = 'output'
@@ -129,6 +128,8 @@ class PDFServer(object):
         
         if 'content_type' in result:
             print 'Content-Type: %s' % result['content_type']
+        if 'file_extension' in result:
+    		print 'Content-Disposition: inline;filename="collection.%s"' % result['file_extension']
         content = result.get('content', '')
         print 'Content-Length: %d' % len(content)
         print # end of headers
@@ -144,9 +145,6 @@ class PDFServer(object):
         writer = self.form.getvalue('writer')
         if not writer:
             return self.error_response('writer argument required')
-        content_type = self.form.getvalue('content_type')
-        if not content_type:
-            return self.error_response('content_type argument required')
         writer_options = self.form.getvalue('writer_options')
         template_blacklist = self.form.getvalue('template_blacklist')
         
@@ -155,11 +153,6 @@ class PDFServer(object):
         metabook_path = self.get_path(collection_id, self.metabook_filename)
         f = open(metabook_path, 'wb')
         f.write(metabook_data)
-        f.close()
-        
-        contenttype_path = self.get_path(collection_id, self.contenttype_filename)
-        f = open(contenttype_path, 'wb')
-        f.write(content_type)
         f.close()
         
         args=[
@@ -188,6 +181,14 @@ class PDFServer(object):
         return self.json_response({
             'collection_id': collection_id,
         })
+
+    def read_status_file(self, collection_id):
+        try:
+            f = open(self.get_path(collection_id, self.status_filename), 'rb')
+            return simplejson.loads(f.read())
+            f.close()
+        except (IOError, ValueError):
+            return {'progress': 0}
     
     def do_render_status(self):
         collection_id = self.get_collection()
@@ -207,26 +208,24 @@ class PDFServer(object):
                 'error': text,
             })
         
-        try:
-            f = open(self.get_path(collection_id, self.status_filename), 'rb')
-            status = simplejson.loads(f.read())
-            f.close()
-        except (IOError, ValueError):
-            status = {'progress': 0}
         return self.json_response({
             'collection_id': collection_id,
             'state': 'progress',
-            'status': status,
+            'status': self.read_status_file(collection_id),
         })
-    
+        
     def do_download(self):
         collection_id = self.get_collection()
-        content_type = open(self.get_path(collection_id, self.contenttype_filename), 'rb').read()
         content = open(self.get_path(collection_id, self.output_filename), 'rb').read()
-        return {
-            'content_type': content_type,
+        status = self.read_status_file(collection_id)
+        result = {
             'content': content,
         }
+        if 'content_type' in status:
+            result['content_type'] = status['content_type']
+        if 'file_extension' in status:
+            result['file_extension'] = status['file_extension']
+        return result
     
     def do_zip_post(self):
         metabook_data = self.form.getvalue('metabook')
@@ -266,4 +265,7 @@ class PDFServer(object):
     
 
 if __name__ == '__main__':
+    if os.name == 'nt':
+        import msvcrt
+        msvcrt.setmode(sys.stdout.fileno(), os.O_BINARY)
     PDFServer(cgi.FieldStorage()).dispatch()
