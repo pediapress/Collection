@@ -47,6 +47,7 @@ import re
 import simplejson
 import StringIO
 import subprocess
+import sys
 import time
 
 def uid(max_length=10):
@@ -131,7 +132,7 @@ class PDFServer(object):
         content = result.get('content', '')
         print 'Content-Length: %d' % len(content)
         print # end of headers
-        print content,
+        sys.stdout.write(content)
     
     def do_render(self):
         metabook_data = self.form.getvalue('metabook')
