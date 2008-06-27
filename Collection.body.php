@@ -1142,7 +1142,6 @@ EOS
 	
 		$c = curl_init( $url );
 		curl_setopt($c, CURLOPT_PROXY, $wgHTTPProxy);
-		curl_setopt( $c, CURLOPT_TIMEOUT, $wgHTTPTimeout );
 		curl_setopt( $c, CURLOPT_USERAGENT, "MediaWiki/$wgVersion" );
 		curl_setopt( $c, CURLOPT_POST, true );
 		curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
