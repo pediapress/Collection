@@ -1183,6 +1183,7 @@ EOS
 		}
 		curl_setopt( $c, CURLOPT_HEADER, true );
 		curl_setopt( $c, CURLOPT_RETURNTRANSFER, true );
+		curl_setopt( $c, CURLOPT_TIMEOUT, $wgHTTPTimeout );
 		
 		$response = curl_exec( $c );
 		

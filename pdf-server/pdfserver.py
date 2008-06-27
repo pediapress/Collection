@@ -157,7 +157,6 @@ class PDFServer(object):
         
         args=[
             mwrender_cmd,
-            '--daemonize',
             '--logfile', mwrender_logfile,
             '--error-file', self.get_path(collection_id, self.error_filename),
             '--status-file', self.get_path(collection_id, self.status_filename),
@@ -172,11 +171,9 @@ class PDFServer(object):
             args.extend(['--template-blacklist', template_blacklist])
         
         try:
-            rc = subprocess.call(executable=mwrender_cmd, args=args)
+            subprocess.Popen(executable=mwrender_cmd, args=args)
         except OSError, e:
             raise RuntimeError('Could not execute command %r: %s' % (mwrender_cmd, e))
-        if rc != 0:
-            return self.error_response('command %r failed: rc = %d' % (mwrender_cmd, rc))
         
         return self.json_response({
             'collection_id': collection_id,
@@ -246,7 +243,6 @@ class PDFServer(object):
         
         args = [
             mwzip_cmd,
-            '--daemonize',
             '--logfile', mwzip_logfile,
             '--metabook', metabook_path,
             '--conf', base_url,
@@ -255,11 +251,9 @@ class PDFServer(object):
         if template_blacklist:
             args.extend(['--template-blacklist', template_blacklist])
         try:
-            rc = subprocess.call(executable=mwzip_cmd, args=args)
+            subprocess.Popen(executable=mwzip_cmd, args=args)
         except OSError, e:
             raise RuntimeError('Could not execute command %r: %s' % (mwzip_cmd, e))
-        if rc != 0:
-            return self.error_response('command %r failed: rc = %d' % (mwzip_cmd, rc))
         
         return self.json_response({'state': 'ok'})
     
