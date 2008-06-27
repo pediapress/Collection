@@ -12,14 +12,14 @@ import pdfserver
 
 def setup_module(module):
     pdfserver.cache_dir = tempfile.mkdtemp()
-    fd, pdfserver.mwpdf_logfile = tempfile.mkstemp()
+    fd, pdfserver.mwrender_logfile = tempfile.mkstemp()
     os.close(fd)
     fd, pdfserver.mwzip_logfile = tempfile.mkstemp()
     os.close(fd)
 
 def teardown_module(module):
     shutil.rmtree(pdfserver.cache_dir)
-    os.unlink(pdfserver.mwpdf_logfile)
+    os.unlink(pdfserver.mwrender_logfile)
     os.unlink(pdfserver.mwzip_logfile)
 
 class FakeFieldStorage(object):
@@ -68,7 +68,7 @@ def test_no_command():
     assert 'no command' in result['error']
 
 def test_missings_args():
-    for cmd in ('pdf_generate', 'zip_post'):
+    for cmd in ('render', 'zip_post'):
         result = make_call({
             'command': cmd,
         })
@@ -76,14 +76,15 @@ def test_missings_args():
 
 def test_no_collection_id():
     result = make_call({
-        'command': 'pdf_status',
+        'command': 'render_status',
     })
     assert 'collection ID' in result['error']
 
 def test_pdf_generate():
     result = make_call({
-        'command': 'pdf_generate',
+        'command': 'render',
         'base_url': 'http://en.wikipedia.org/w/',
+        'writer': 'rl',
         'metabook': simplejson.dumps({
             'title': 'A Title',
             'subtitle': 'A Subtitle',
@@ -101,12 +102,12 @@ def test_pdf_generate():
     while True:
         time.sleep(0.5)
         result = make_call({
-            'command': 'pdf_status',
+            'command': 'render_status',
             'collection_id': collection_id,
         })
         assert result['collection_id'] == collection_id
         if result['state'] == 'progress':
-            progress = result['progress']
+            progress = result['status']['progress']
             print 'progress:', progress
             assert progress >= last_progress
             last_progress = progress
@@ -117,7 +118,7 @@ def test_pdf_generate():
             raise RuntimeError('unexpected state %r' % result['state'])
     
     result = make_call({
-        'command': 'pdf_download',
+        'command': 'download',
         'collection_id': collection_id,
     })
     assert result == 'pdf'

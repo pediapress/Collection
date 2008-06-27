@@ -70,7 +70,7 @@ class PDFServer(object):
     def json_response(self, data):
         return {
             'content_type': 'application/json',
-            'content': simplejson.dumps(data),
+            'content': simplejson.dumps(data).encode('utf-8'),
         }
     
     def error_response(self, error):
@@ -127,9 +127,9 @@ class PDFServer(object):
                     result = self.error_response('error executing command %r: %s' % (command, e))
         
         if 'content_type' in result:
-            print 'Content-Type: %s' % result['content_type']
+            print 'Content-Type: %s' % result['content_type'].encode('utf-8', 'ignore')
         if 'file_extension' in result:
-    		print 'Content-Disposition: inline;filename="collection.%s"' % result['file_extension']
+    		print 'Content-Disposition: inline;filename="collection.%s"' % result['file_extension'].encode('utf-8', 'ignore')
         content = result.get('content', '')
         print 'Content-Length: %d' % len(content)
         print # end of headers
