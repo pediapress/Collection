@@ -606,7 +606,7 @@ class Collection extends SpecialPage {
 		
 		$response = self::pdfServerCommand( 'download', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
-		), $decode=false );
+		), $decode=false, $timeout=false );
 		
 		if ( !$response ) {
 			return;
@@ -1121,14 +1121,14 @@ EOS
 		;
 	}
 	
-	static function pdfServerCommand( $command, $args, $decode=true ) {
+	static function pdfServerCommand( $command, $args, $decode=true, $timeout=true ) {
 		global $wgOut;
 		global $wgPDFServer;
 		
 		$args['command'] = $command;
 		$errorMessage = '';
 		$headers = array();
-		$response = self::post( $wgPDFServer, $args, $errorMessage, $headers );
+		$response = self::post( $wgPDFServer, $args, $errorMessage, $headers, $timeout );
 		if ( !$response ) {
 			$wgOut->showErrorPage(
 				'coll-post_failed_title',
@@ -1169,7 +1169,7 @@ EOS
 		return $json_response;
 	}
 	
-	static function post( $url, $postFields, &$errorMessage, &$headers ) {
+	static function post( $url, $postFields, &$errorMessage, &$headers, $timeout=true ) {
 		global $wgHTTPTimeout, $wgHTTPProxy, $wgVersion, $wgTitle;
 	
 		$c = curl_init( $url );
@@ -1183,7 +1183,9 @@ EOS
 		}
 		curl_setopt( $c, CURLOPT_HEADER, true );
 		curl_setopt( $c, CURLOPT_RETURNTRANSFER, true );
-		curl_setopt( $c, CURLOPT_TIMEOUT, $wgHTTPTimeout );
+		if ( $timeout ) {
+			curl_setopt( $c, CURLOPT_TIMEOUT, $wgHTTPTimeout );
+		}
 		
 		$response = curl_exec( $c );
 		
