@@ -28,17 +28,16 @@ Install PHP with cURL support
 Currently Collection extension needs PHP with cURL support,
 see http://de2.php.net/manual/en/book.curl.php
 
-Install and Setup a PDF Server
-------------------------------
+Install and Setup a Render Server
+---------------------------------
 
-PDF and ZIP file generation is done by a PDF Server, which can run separately
+PDF and ZIP file generation is done by a server, which can run separately
 from the MediaWiki installation and can be shared by different MediaWikis.
+See the ``mw-serve`` command or the ``mwlib.cgi`` script in the mwlib_
+distribution.
 
-See ``README.txt`` in the ``pdf-server`` directory for further instructions
-how to setup a PDF server.
-
-If you have a low-traffic MediaWiki you can use the public PDF Server running
-at http://tools.pediapress.com/cgi-bin/pdfserver.py. In this case, just keep
+If you have a low-traffic MediaWiki you can use the public render server running
+at http://tools.pediapress.com/mw-serve/. In this case, just keep
 the configuration variable $wgPDFServer (see below) at its default value.
 
 
@@ -58,13 +57,13 @@ Installation and Configuration of the Collection Extension
   and set the following global variables accordingly:
 
   *$wgPDFServer (string)*
-   Set this to the URL of the PDF Server CGI script.
+   Set this to the URL of a render server (see above).
    
-   The default is ``"http://tools.pediapress.com/cgi-bin/pdfserver.py"``,
-   a public PDF Server for low-traffic MediaWikis.
+   The default is ``"http://tools.pediapress.com/mw-serve/"``,
+   a public render server for low-traffic MediaWikis hosted by PediaPress.
    
-   Note that the MediaWiki must be accessible from the PDF Server, i.e. if your
-   MediaWiki is behind a firewall you cannot use the public PDF Server.
+   Note that the MediaWiki must be accessible from the render server, i.e. if
+   your MediaWiki is behind a firewall you cannot use the public render server.
   
   *$wgCommunityCollectionNamespace (integer)*
    Namespace for "community collections", i.e. the namespace where non-personal
