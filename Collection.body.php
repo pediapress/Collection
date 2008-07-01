@@ -1123,17 +1123,21 @@ EOS
 	
 	static function pdfServerCommand( $command, $args, $decode=true, $timeout=true ) {
 		global $wgOut;
-		global $wgPDFServer;
+		global $wgCollectionMWServeURL;
+		global $wgCollectionMWServeCredentials;
 		
 		$args['command'] = $command;
+		if ( $wgCollectionMWServeCredentials ) {
+			$args['login_credentials'] = $wgCollectionMWServeCredentials;
+		}
 		$errorMessage = '';
 		$headers = array();
-		$response = self::post( $wgPDFServer, $args, $errorMessage, $headers, $timeout );
+		$response = self::post( $wgCollectionMWServeURL, $args, $errorMessage, $headers, $timeout );
 		if ( !$response ) {
 			$wgOut->showErrorPage(
 				'coll-post_failed_title',
 				'coll-post_failed_msg',
-				array( $wgPDFServer, $errorMessage )
+				array( $wgCollectionMWServeURL, $errorMessage )
 			);
 			return false;
 		}
