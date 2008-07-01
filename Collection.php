@@ -38,7 +38,10 @@ require_once( "$IP/extensions/Collection/Version.php" );
 # Configuration:
 
 /** URL of PDF server */
-$wgPDFServer = 'http://tools.pediapress.com/mw-serve/';
+$wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
+
+/** Login credentials to this MediaWiki as 'USERNAME:PASSWORD' string */
+$wgCollectionMWServeCredentials = null;
 
 /** Namespace for "community collections" */
 $wgCommunityCollectionNamespace = NS_MEDIAWIKI;

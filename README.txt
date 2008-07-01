@@ -38,7 +38,8 @@ distribution.
 
 If you have a low-traffic MediaWiki you can use the public render server running
 at http://tools.pediapress.com/mw-serve/. In this case, just keep
-the configuration variable $wgPDFServer (see below) at its default value.
+the configuration variable $wgCollectionMWServe (see below) at its default
+value.
 
 
 Installation and Configuration of the Collection Extension
@@ -56,7 +57,7 @@ Installation and Configuration of the Collection Extension
 
   and set the following global variables accordingly:
 
-  *$wgPDFServer (string)*
+  *$wgCollectionMWServeURL (string)*
    Set this to the URL of a render server (see above).
    
    The default is ``"http://tools.pediapress.com/mw-serve/"``,
@@ -65,6 +66,16 @@ Installation and Configuration of the Collection Extension
    Note that the MediaWiki must be accessible from the render server, i.e. if
    your MediaWiki is behind a firewall you cannot use the public render server.
   
+  *$wgCollectionMWServeCredentials (string)*
+   Set this to a string of the form "USERNAME:PASSWORD", if the MediaWiki
+   requires to be logged in to view articles.
+   The render server will then login with these credentials using MediaWiki API
+   before doing other requests.
+   
+   SECURITY NOTICE: If the MediaWiki and the render server communicate over an
+   insecure channel (e.g. on an unencrypted channel over the internet), please
+   DO NOT USE THIS SETTING, as the credentials will be exposed to eavesdropping!
+   
   *$wgCommunityCollectionNamespace (integer)*
    Namespace for "community collections", i.e. the namespace where non-personal
    article collection pages are saved.
