@@ -4,6 +4,31 @@
 PDF Server for the MediaWiki Collection Extension
 =================================================
 
+
+
+
+
+DEPRECATION NOTICE
+==================
+
+It's recommended to not use the CGI script ``pdf-server/pdfserver.py``
+anymore. Instead please use the ``mw-serve`` command (a FastCGI, SCGI or HTTP
+server) or the ``mwlib.cgi`` script, both contained in the mwlib_ distribution.
+
+The cleaning script ``clean-script.py`` is replaced by the ``--clean-cache``
+option of ``mw-serve``.
+
+After some transition period, the ``pdf-server/`` directory will be removed
+from the Collection extension.
+
+
+
+
+
+
+
+
+
 About the PDF Server
 ====================
 
@@ -85,6 +110,7 @@ One way to set this environment variable is in the configration section in
   os.environ['PYTHON_EGG_CACHE'] = '/tmp/.pdfserver-eggcache/'
 
 
+.. _mwlib: http://code.pediapress.com/wiki/wiki/mwlib
 .. _MediaWiki: http://www.mediawiki.org/
 .. _Python: http://www.python.org/
 .. _ReportLab: http://www.reportlab.co.uk/
