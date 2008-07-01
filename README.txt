@@ -136,6 +136,7 @@ Installation and Configuration of the Collection Extension
   ``Help_Collections.txt``. Adjust the name of the template blacklist according
   to your setting of $wgPDFTemplateBlackList (see above).
 
+.. _mwlib: http://code.pediapress.com/wiki/wiki/mwlib
 .. _MediaWiki: http://www.mediawiki.org/
 .. _`PediaPress GmbH`: http://pediapress.com/
 .. _`Wikimedia Foundation`: http://wikimediafoundation.org/
