@@ -130,12 +130,19 @@ $messages['krl'] = array(
 	'coll-cancel' => 'Keskevytä',
 );
 
-/** Eastern Mari (Олык Марий йылме)
+/** Eastern Mari (Олык Марий)
  * @author Сай
  */
 $messages['mhr'] = array(
 	'coll-page'   => 'лаштык',
 	'coll-cancel' => 'Чараш',
+);
+
+/** Niuean (native name missing)
+ * @author Jose77
+ */
+$messages['niu'] = array(
+	'coll-cancel' => 'Tiaki',
 );
 
 /** Afrikaans (Afrikaans)
@@ -205,8 +212,6 @@ $messages['ar'] = array(
 
 انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
 	'coll-helppage'                   => 'Help:مجموعات',
-	'coll-pdftoobigcat'               => 'التصنيف يحتوي على أكثر من %PARAM% صفحة، فقط أول %PARAM% صفحة يمكن إضافتها إلى مجموعتك.
-هل تريد إضافتها؟',
 	'coll-my_collection'              => 'مجموعتي',
 	'coll-download_title'             => 'حمل المجموعة ك PDF',
 	'coll-download_text'              => 'لتحميل ملف PDF مولد تلقائيا من مجموعة صفحتك، اضغط الزر.',
@@ -255,22 +260,9 @@ $messages['ar'] = array(
 	'coll-limit_exceeded_title'       => 'المجموعة كبيرة جدا',
 	'coll-limit_exceeded_text'        => 'مجموعة صفحتك كبيرة جدا.
 لا مزيد من الصفحات يمكن إضافتها.',
-	'coll-generating_pdf_title'       => 'توليد PDF',
-	'coll-generating_pdf_text'        => "'''من فضلك انتظر أثناء توليد ملف PDF.'''
-
-التقدم: '''$1%'''.
-
-هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان.
-لو أن هذا لا يعمل، من فضلك اضغط زر refresh في متصفحك.",
-	'coll-pdf_finished_title'         => 'توليد PDF اكتمل',
-	'coll-pdf_finished_text'          => "'''ملف PDF تم توليده'''.
-[$1 اضغط هنا] لتحميله إلى حاسوبك.
-غير راض عن ناتج PDF؟
-انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.",
 	'coll-notfound_title'             => 'المجموعة غير موجودة',
 	'coll-notfound_text'              => 'لم يمكن العثور على صفحة المجموعة.',
 	'coll-return_to_collection'       => 'ارجع إلى <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'كان هناك خطأ أثناء توليد ملف PDF: $1',
 	'coll-book_title'                 => 'طلب كتاب مطبوع',
 	'coll-order_from_pp'              => 'طلب كتاب من $1',
 	'coll-about_pp'                   => 'حول $1',
@@ -312,13 +304,6 @@ $messages['bg'] = array(
 	'coll-overwrite'             => 'Заместване',
 	'coll-append'                => 'Добавяне',
 	'coll-cancel'                => 'Отказване',
-	'coll-generating_pdf_title'  => 'Генериране на PDF',
-	'coll-pdf_finished_title'    => 'Генерирането на PDF приключи успешно',
-	'coll-pdf_finished_text'     => "'''PDF файлът беше генериран.'''
-[$1 Щракнете тук] за изтегляне на локалния компютър.
-
-Създаденият PDF файл не отговаря на изискванията?
-Прегледайте [[$2|помощната страница]] за начини за подобряването му.",
 	'coll-return_to_collection'  => 'Връщане към <a href="$1">$2</a>',
 	'coll-order_from_pp'         => 'Поръчване на книга от $1',
 	'coll-about_pp'              => 'За $1',
@@ -349,15 +334,7 @@ Aquesta pàgina no funcionarà correctament si no el poseu o l'activeu.</strong>
 	'coll-overwrite_title'      => 'La pàgina existeix. Voleu substituir-la?',
 	'coll-yes'                  => 'S&iacute;',
 	'coll-no'                   => 'No',
-	'coll-generating_pdf_title' => 'Generant PDF',
-	'coll-generating_pdf_text'  => "'''Si us plau, espereu mentre es genera l'arxiu PDF'''
-
-Progressió: '''$1%'''.
-
-Aquesta pàgina s'hauria de refrescar automàticament de tant en tant.
-Si no ho fes, pitgeu el botó de refresc del vostre navegador.",
 	'coll-return_to_collection' => 'Tornar a <a href="$1">$2</a>',
-	'coll-pdf_error_text'       => "S'ha produït un error mentre es generava l'arxiu PDF.",
 	'coll-book_title'           => 'Encarregar llibre imprès',
 	'coll-about_pp'             => 'Quant a $1',
 );
@@ -388,7 +365,6 @@ Táto stránka nebude správně fungovat dokud nezapnete JavaScript.</strong>',
 
 Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku nápovědy ke kolekcím]].',
 	'coll-helppage'                   => '{{ns:Help}}:Kolekce',
-	'coll-pdftoobigcat'               => 'Kategorie obsahuje více než %PARAM% stránek. Do kolekce je možné přidat jen prvních %PARAM% stránek. Kolik jich chcete přidat?',
 	'coll-my_collection'              => 'Moje kolekce',
 	'coll-download_title'             => 'Stáhnout kolekci jako PDF',
 	'coll-download_text'              => 'Stáhnout automaticky vytvořený PDF soubor vaší kolekce stránek. Klikněte na tlačítko.',
@@ -435,14 +411,6 @@ Chcete přepsat svoji existující kolekci, přidat do ní obsah nebo zrušit tu
 	'coll-limit_exceeded_title'       => 'Kolekce je příliš velká',
 	'coll-limit_exceeded_text'        => 'Vaše kolekce stránek je příliš velká.
 Není možné přidat další stránky.',
-	'coll-generating_pdf_title'       => 'Vytváří se PDF',
-	'coll-generating_pdf_text'        => "'''Prosím čekejte, vytváří se PDF soubor.'''
-Tato stránka by se měla každých několik sekund automaticky obnovit. Pokud to nefunguje, klikněte na tlačítko 'Obnovit' ve vašem prohlížeči.",
-	'coll-pdf_finished_title'         => 'Tvorba PDF dokončena',
-	'coll-pdf_finished_text'          => 'PDF soubor byl vytvořen.
-Stáhnout ho můžete po kliknutí na odkaz níže.
-nejste spokojeni s PDF výstupem?
-Podívejte se na možnosti jeho vylepšení na [[{{MediaWiki:Coll-helppage}}|stránku Pomocníka ke kolekcím]].',
 	'coll-notfound_title'             => 'Kolekce nenalezena',
 	'coll-notfound_text'              => 'Nebylo možné najít stránku kolekce',
 	'coll-return_to_collection'       => 'Vrátit se na <a href="$1">$2</a>',
@@ -450,6 +418,13 @@ Podívejte se na možnosti jeho vylepšení na [[{{MediaWiki:Coll-helppage}}|str
 	'coll-book_text'                  => 'Můžete se objednat tisknutou knihu obsahující vaši kolekci stránek. Navštivte jednoho z následujících partnerů, kteří Vám ji vytisknou na požádání:',
 	'coll-order_from_pp'              => 'Objednat knihu od $1',
 	'coll-about_pp'                   => 'O $1',
+);
+
+/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+ * @author ОйЛ
+ */
+$messages['cu'] = array(
+	'coll-page' => 'страни́ца',
 );
 
 /** Danish (Dansk)
@@ -492,8 +467,6 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 
 Siehe auch die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Kollektionen]] für weitere Informationen.',
 	'coll-helppage'                   => 'Help:Kollektionen',
-	'coll-pdftoobigcat'               => 'Die Kategorie enthält mehr als %PARAM% Seiten, nur die ersten %PARAM% Seiten werden der Kollektion hinzugefügt.
-Möchtest du sie hinzufügen?',
 	'coll-my_collection'              => 'Meine Kollektion',
 	'coll-download_title'             => 'Kollektion als PDF herunterladen',
 	'coll-download_text'              => 'Um eine automatisch erstellte PDF-Datei deiner Kollektion herunterzuladen, klicke auf die Schaltfläche.',
@@ -514,10 +487,6 @@ Möchtest du sie hinzufügen?',
 	'coll-new_chapter'                => 'Gib einen Namen für ein neues Kapitel ein',
 	'coll-rename_chapter'             => 'Gib einen neuen Namen für das Kapitel ein',
 	'coll-no_such_category'           => 'Kategorie nicht vorhanden',
-	'coll-mwpdf_error_title'          => 'PDF konnte nicht erstellt werden',
-	'coll-mwpdf_error_msg'            => 'Während der PDF-Erstellung ist ein Fehler aufgetreten.',
-	'coll-mwzip_error_title'          => 'Kollektion konnte nicht erzeugt werden',
-	'coll-mwzip_error_msg'            => 'Beim Erstellen der Kollektion ist ein Fehler aufgetreten.',
 	'coll-notitle_title'              => 'Der Titel der Seite konnte nicht bestimmt werden.',
 	'coll-post_failed_title'          => 'POST-Anfrage fehlgeschlagen',
 	'coll-post_failed_msg'            => 'Die POST-Anfrage an $1 ist fehlgeschlagen ($2).',
@@ -541,21 +510,9 @@ Möchtest du sie hinzufügen?',
 	'coll-cancel'                     => 'Abbrechen',
 	'coll-limit_exceeded_title'       => 'Kollektion zu groß',
 	'coll-limit_exceeded_text'        => 'Deine Kollektion ist zu groß. Es können keine Seiten mehr hinzugefügt werden.',
-	'coll-generating_pdf_title'       => 'PDF erzeugen',
-	'coll-generating_pdf_text'        => "'''Bitte warten, bis die PDF-Datei erzeugt wurde.'''
-
-Fortschritt: '''$1%'''.
-
-Diese Seite wird alle paar Sekunden automatisch neu geladen.
-Wenn dies nicht funktioniert, klicke auf die Neuladen-Schaltfläche deines Browers.",
-	'coll-pdf_finished_text'          => 'Deine PDF-Datei wurde erzeugt.
-[$1 Klicke hier] zum Herunterladen auf deinen Computer.',
-	'coll-pdf_not_satisfied'          => 'Unzufrieden mit der PDF-Ausgabe? Siehe [[{{MediaWiki:Coll-helppage}}|die Hilfeseiten über Kollektionen]] für Verbesserungsmöglichkeiten.',
 	'coll-notfound_title'             => 'Kollektion nicht gefunden',
 	'coll-notfound_text'              => 'Deine Kollektion konnte nicht gefunden werden.',
 	'coll-return_to_collection'       => 'Zurück zu <a href="$1">$2</a>',
-	'coll-pages_removed'              => 'Die folgenden Seiten konnten nicht gerendert werden und werden aus der PDF-Datei entfernt: %(articles)s',
-	'coll-pdf_error_text'             => 'Es gab einen Fehler bei der Erzeugung der PDF-Datei.',
 	'coll-book_title'                 => 'Druckausgabe bestellen',
 	'coll-book_text'                  => "Du kannst bei den folgenden ''Print-on-Demand''-Partnern eine gedruckte Buchausgabe bestellen:",
 	'coll-order_from_pp'              => 'Bestelle Buch bei $1',
@@ -599,6 +556,7 @@ $messages['eo'] = array(
 	'coll-page'                       => 'paĝo',
 	'coll-pages'                      => 'paĝoj',
 	'coll-download_as_pdf'            => 'Alŝuti kiel PDF',
+	'coll-helppage'                   => 'Helpo:Kolektoj',
 	'coll-my_collection'              => 'Mia kolekto',
 	'coll-download_title'             => 'Alŝutu kolekton kiel PDF-on',
 	'coll-download_pdf'               => 'Alŝutu PDF',
@@ -640,26 +598,13 @@ $messages['eo'] = array(
 	'coll-limit_exceeded_title'       => 'Kolekto Tro Granda',
 	'coll-limit_exceeded_text'        => 'Via paĝa kolekto estas tro granda.
 Neniom pluaj paĝoj ne povas esti aldonitaj.',
-	'coll-generating_pdf_title'       => 'Generante PDF',
-	'coll-generating_pdf_text'        => "'''Bonvolu atenti dum la PDF-dosiero generiĝas.'''
-
-Plenumita: '''$1%'''.
-
-Ĉi paĝo verŝajne aŭtomate refreŝiĝos po kelkaj sekundoj.
-Se ĉi tiel ne funkcias, bonvolu klaki la refreŝigan butonon de via retumilo.",
-	'coll-pdf_finished_title'         => 'PDF-generado Finita',
-	'coll-pdf_finished_text'          => "'''La PDF-dosiero estis generita.'''
-[$1 Klaku ĉi tien] elŝuti ĝin al via komputilo.
-
-Ĉu vi estas malkontenta kun la PDF-eligo?
-Rigardu [[{{MediaWiki:Coll-helppage}}|la helpo-paĝo pri kolektoj]] por fojoj plibonigi ĝin.",
 	'coll-notfound_title'             => 'Kolekto Ne Trovita',
 	'coll-notfound_text'              => 'Ne eblas trovi kolekto-paĝon.',
 	'coll-return_to_collection'       => 'Reiru al <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Eraro okazis dum generado de la PDF-dosiero.',
 	'coll-book_title'                 => 'Mendu Eldonitan Libron',
 	'coll-order_from_pp'              => 'Mendi libron de $1',
 	'coll-about_pp'                   => 'Pri $1',
+	'coll-license'                    => 'Licenco',
 );
 
 /** Spanish (Español)
@@ -700,6 +645,7 @@ $messages['fr'] = array(
 	'coll-page'                       => 'page',
 	'coll-pages'                      => 'pages',
 	'coll-download_as_pdf'            => 'Télécharger en PDF',
+	'coll-download_as_odf'            => 'Télécharger en ODF',
 	'coll-noscript_text'              => "<h1>Javascript est nécessaire !</h1>
 <strong>Votre navigateur ne supporte pas Javascript ou bien l'a désactivé.
 Cette page ne s'affichera pas correctement tant que javascript n'est pas activé.</strong>",
@@ -707,8 +653,7 @@ Cette page ne s'affichera pas correctement tant que javascript n'est pas activé
 
 Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections]] pour d'avantage d'informations.",
 	'coll-helppage'                   => 'Aide:Collections',
-	'coll-pdftoobigcat'               => 'La catégorie contient plus de %PARAM% pages, seules les premières %PARAM% pages peuvent être ajoutées dans votre compilation.
-Voulez-vous les ajouter ?',
+	'coll-too_big_cat'                => 'La catégorie contient plus de %PARAM% pages, seul les %PARAM% premières pages seront ajoutées à votre collection.',
 	'coll-my_collection'              => 'Ma compilation',
 	'coll-download_title'             => 'Télécharger la compilation en PDF',
 	'coll-download_text'              => 'Pour télécharger un PDF généré automatiquement à partir de votre compilation, appuyez sur le bouton.',
@@ -757,23 +702,22 @@ Voulez vous écraser votre compilation actuelle, y rajouter le contenu ou bien a
 	'coll-limit_exceeded_title'       => 'Compilation trop grande',
 	'coll-limit_exceeded_text'        => 'Votre compilation est trop grande.
 Aucune page ne peut être ajoutée.',
-	'coll-generating_pdf_title'       => 'Création du PDF',
-	'coll-generating_pdf_text'        => "'''Veuillez patienter durant la création du PDF.'''
+	'coll-rendering_title'            => 'Rendu',
+	'coll-rendering_text'             => "'''Veuillez patienter pendant que le document est en cours de création.'''
 
-Progression : '''$1%'''.
+Progression : '''$1 %'''.
 
-Cette page devrait automatiquement s’actualiser dans quelques secondes.
-Si tel n’est pas le cas, veuillez appuyer sur le bouton d’actualisation de votre navigateur.",
-	'coll-pdf_finished_title'         => 'Création du PDF terminée',
-	'coll-pdf_finished_text'          => 'Le fichier PDF a été créé.
+Cette page devrait s’actualiser régulièrement.
+Si tel n'était pas le cas, veuillez cliquer sur le bouton d’actualisation de votre navigateur.",
+	'coll-rendering_finished_title'   => 'Rendu terminé',
+	'coll-rendering_finished_text'    => "'''Le fichier document a été créé.'''
 [$1 Cliquez ici] pour le télécharger sur votre ordinateur.
 
-Non satisfait de la sortie PDF ?
-Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]] pour les possibilités d’amélioration.',
+Non satisfait de la sortie ?
+Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]] pour les possibilités d’amélioration.",
 	'coll-notfound_title'             => 'Compilation non trouvée',
 	'coll-notfound_text'              => 'Ne peut trouver la compilation.',
 	'coll-return_to_collection'       => 'Revenir sur <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Une erreur a été détectée lors de la création du fichier PDF : $1',
 	'coll-book_title'                 => 'Commander un livre imprimé',
 	'coll-book_text'                  => "Vous pouvez commander un livre imprimé contenant votre collection d'articles en visitant une demande d'impression de la part de partenaires :",
 	'coll-order_from_pp'              => 'Commander le livre depuis $1',
@@ -811,6 +755,7 @@ $messages['gl'] = array(
 	'coll-page'                       => 'páxina',
 	'coll-pages'                      => 'páxinas',
 	'coll-download_as_pdf'            => 'Descargar como PDF',
+	'coll-download_as_odf'            => 'Descargar como arquivo ODF',
 	'coll-noscript_text'              => '<h1>Requírese o JavaScript!</h1>
 <strong>O seu navegador non soporta o JavaScript ou o JavaScript foi deshabilitado.
 Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa habilitado.</strong>',
@@ -818,7 +763,7 @@ Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa
 
 Vexa a [[{{MediaWiki:Coll-helppage}}|páxina de axuda sobre as coleccións]] para máis información.',
 	'coll-helppage'                   => 'Help:Collections',
-	'coll-pdftoobigcat'               => 'A categoría contén máis de %PARAM% páxinas, tan só as primeiras %PARAM% páxinas poden ser engadidas á súa colección.
+	'coll-too_big_cat'                => 'A categoría contén máis de %PARAM% páxinas; só as primeiras %PARAM% páxinas poden ser engadidas á súa colección.
 Quere engadilas?',
 	'coll-my_collection'              => 'A miña colección',
 	'coll-download_title'             => 'Descargar a colección como arquivo PDF',
@@ -868,23 +813,22 @@ Desexa sobreescribir a súa colección actual, adxuntar o novo contido ou cancel
 	'coll-limit_exceeded_title'       => 'Colección moi grande',
 	'coll-limit_exceeded_text'        => 'A súa páxina de colección é moi grande.
 Non se poden engadir máis páxinas.',
-	'coll-generating_pdf_title'       => 'Xerando PDF',
-	'coll-generating_pdf_text'        => "'''Por favor agarde mentres o arquivo PDF se está xerando.'''
+	'coll-rendering_title'            => 'Renderizando',
+	'coll-rendering_text'             => "'''Por favor, agarde mentres o documento é xerado.'''
 
 Progreso: '''\$1%'''.
 
-Esta páxina será refrescada automaticamente cada poucos segundos.
-Se non vai, por favor prema no botón \"refrescar\" do seu navegador.",
-	'coll-pdf_finished_title'         => 'Completada a xeración do PDF',
-	'coll-pdf_finished_text'          => 'O ficheiro PDF foi xerado.
-[$1 Prema aquí] para descargalo no seu ordenador.
+Esta páxina refrescarase cada poucos segundos.
+Se non vai, por favor, prema no botón \"Refrescar\" do seu navegador.",
+	'coll-rendering_finished_title'   => 'Finalizou a renderización',
+	'coll-rendering_finished_text'    => "'''O documento foi xerado.'''
+[$1 Prema aquí] para descargalo no seu computador.
 
-Non está satisfeito co arquivo PDF de saída?
-Consulte [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para ver as posibilidades de melloralo.',
+Non está satisfaito co ficheiro de saída?
+Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para comprobar as posibilidades de melloralo.",
 	'coll-notfound_title'             => 'Non se pode atopar a colección',
 	'coll-notfound_text'              => 'Non se pode atopar a páxina da colección.',
 	'coll-return_to_collection'       => 'Voltar a <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Houbo un erro mentres se xeraba o ficheiro PDF.',
 	'coll-book_title'                 => 'Encargar un libro impreso',
 	'coll-book_text'                  => 'Pode encargar un libro impreso que conteña a súa páxina de colección visitando un dos seguintes compañeiros de solicitudes de impresión:',
 	'coll-order_from_pp'              => 'Encargar un libro a $1',
@@ -993,8 +937,6 @@ $messages['hi'] = array(
 	'coll-limit_exceeded_title'       => 'कलेक्शन बहुत बडा हुआ हैं',
 	'coll-limit_exceeded_text'        => 'आपका कलेक्शन बहुत बडा हुआ हैं।
 और पन्ने बढा नहीं सकतें।',
-	'coll-generating_pdf_title'       => 'पीडीएफ तैयार कर रहें हैं',
-	'coll-pdf_finished_title'         => 'पीडीएफ तैयार',
 	'coll-notfound_title'             => 'कलेक्शन मिला नहीं',
 	'coll-notfound_text'              => 'कलेक्शन पन्ना मिला नहीं।',
 	'coll-return_to_collection'       => '<a href="$1">$2</a> पर वापस जायें',
@@ -1064,7 +1006,6 @@ $messages['hsb'] = array(
 	'coll-append'                    => 'Připójsnyć',
 	'coll-cancel'                    => 'Přetorhnyć',
 	'coll-limit_exceeded_title'      => 'Zběrka přewulka',
-	'coll-generating_pdf_title'      => 'Wutworjenje PDF',
 	'coll-notfound_title'            => 'zběrka njenamakana',
 	'coll-notfound_text'             => 'Strona zběrki njebu namakana.',
 	'coll-return_to_collection'      => 'Wróćo k <a href="$1">$2</a>',
@@ -1120,7 +1061,6 @@ $messages['is'] = array(
 	'coll-append'               => 'Auka við',
 	'coll-cancel'               => 'Hætta við',
 	'coll-limit_exceeded_title' => 'Safn of stórt',
-	'coll-nopdf_error_title'    => 'Ekkert PDF-skjal fannst',
 	'coll-notfound_title'       => 'Safn fannst ekki',
 	'coll-order_from_pp'        => 'Panta bók frá $1',
 	'coll-about_pp'             => 'Um $1',
@@ -1151,8 +1091,6 @@ $messages['ja'] = array(
 
 詳細は、[[{{MediaWiki:Coll-helppage}}|ページコレクションのヘルプ]]をご覧ください。',
 	'coll-helppage'                   => '{{ns:help}}:ページコレクション',
-	'coll-pdftoobigcat'               => 'カテゴリには%PARAM%以上のページが含まれており、その先頭の%PARAM%ページのみがコレクションに追加されます。
-これらを追加しますか？',
 	'coll-my_collection'              => 'マイ・コレクション',
 	'coll-download_title'             => 'PDF形式でコレクションをダウンロード',
 	'coll-download_text'              => 'ページコレクションから自動生成されたPDFファイルをダウンロードするには、このボタンを押してください。',
@@ -1199,15 +1137,6 @@ $messages['ja'] = array(
 	'coll-limit_exceeded_title'       => 'コレクションが大きすぎます',
 	'coll-limit_exceeded_text'        => 'あなたのページコレクションは大きすぎます。
 これ以上のページを追加することはできません。',
-	'coll-generating_pdf_title'       => 'PDFファイルの生成',
-	'coll-generating_pdf_text'        => "'''PDFファイルの作成が完了するまで、今しばらくお待ちください。'''
-
-プロセス: '''$1%'''
-
-このページは数秒ごとに自動的に更新されます。もしも自動更新されない場合は、ブラウザの更新ボタンを押してください。",
-	'coll-pdf_finished_title'         => 'PDFファイルの作成が完了しました',
-	'coll-pdf_finished_text'          => 'PDFファイルの作成に成功しました。
-以下のリンクをクリックすると、あなたのコンピュータへダウンロードすることができます。',
 	'coll-notfound_title'             => 'コレクションが見つかりません',
 	'coll-notfound_text'              => 'コレクションの保存ページが見つかりませんでした。',
 	'coll-return_to_collection'       => '<a href="$1">$2</a>に戻る',
@@ -1265,20 +1194,9 @@ $messages['jv'] = array(
 	'coll-limit_exceeded_title'       => 'Kolèksi Kegedhèn',
 	'coll-limit_exceeded_text'        => 'Kolèksi kaca panjenengan iku kegedhèn.
 Ora bisa nambah kaca-kaca liya manèh.',
-	'coll-generating_pdf_title'       => 'Nggawé PDF',
-	'coll-generating_pdf_text'        => "'''Tulung nunggu sadélok sementara berkas PDF lagi digawé.'''
-
-Status saiki: '''$1%'''.
-
-Kaca iki samesthiné kudhu nganyari dhéwé saben sawetara detik.
-Yèn iki ora dumadi, mangga mencèt tombol ''refresh'' ing panjlajah wèb panjenengan.",
-	'coll-pdf_finished_title'         => 'Olèhé Nggawé PDF Rampung',
-	'coll-pdf_finished_text'          => 'Berkas PDF wis digawé.
-[$1 Klik ing kéné] kanggo ngundhuh ing komputer panjenengan.',
 	'coll-notfound_title'             => 'Kolèksi Ora Ditemokaké',
 	'coll-notfound_text'              => 'Ora bisa nemokaké kaca kolèksi.',
 	'coll-return_to_collection'       => 'Bali menyang <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Ana kaluputan nalika nggawé berkas PDF.',
 	'coll-book_title'                 => 'Pesen Buku Cithak',
 	'coll-order_from_pp'              => 'Pesen buku saka $1',
 	'coll-about_pp'                   => 'Perkara $1',
@@ -1320,8 +1238,6 @@ $messages['km'] = array(
 	'coll-overwrite'            => 'សរសេរជាន់ពីលើ',
 	'coll-append'               => 'បន្ថែមនៅចុង',
 	'coll-cancel'               => 'បោះបង់',
-	'coll-generating_pdf_title' => 'បង្កើត PDF',
-	'coll-pdf_finished_title'   => 'បញ្ចប់​ការបង្កើត PDF',
 	'coll-return_to_collection' => 'ត្រលប់ទៅកាន់<a href="$1">$2</a>វិញ',
 	'coll-book_title'           => 'ទិញសៀវភៅដែលបានបោះពុម្ព',
 	'coll-order_from_pp'        => 'បញ្ជាទិញ​សៀវភៅពី $1',
@@ -1406,7 +1322,6 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-limit_exceeded_title'       => 'Sammlung ze grouss',
 	'coll-limit_exceeded_text'        => 'Är Sammlung ass ze grouss.
 Et kënne keng Säite méi derbäigesat ginn.',
-	'coll-generating_pdf_title'       => 'PDF maachen',
 	'coll-return_to_collection'       => 'Zréck op <a href="$1">$2</a>',
 	'coll-book_title'                 => 'Gedréckte Buch bestellen',
 	'coll-book_text'                  => 'Dir kënnt e Buch bestellen op enge vun dësen Internetsiten:',
@@ -1486,15 +1401,9 @@ $messages['ml'] = array(
 	'coll-cancel'                     => 'റദ്ദാക്കുക',
 	'coll-limit_exceeded_title'       => 'ശേഖരത്തിന്റെ വലിപ്പം വളരെ കൂടുതലാണ്‌',
 	'coll-limit_exceeded_text'        => 'താങ്കളുടെ ശേഖരം വളരെ വലുതാണ്‌. ഇനി കൂടുതല്‍ താളുകള്‍ ചേര്‍ക്കുന്നതിനു സാദ്ധ്യമല്ല.',
-	'coll-generating_pdf_title'       => 'PDF നിര്‍മ്മിച്ചു കൊണ്ടിരിക്കുന്നു',
-	'coll-pdf_finished_text'          => "'''PDF പ്രമാണം നിര്‍മ്മിച്ചു കഴിഞ്ഞിരിക്കുന്നു.'''
-അതു നിങ്ങളുടെ കമ്പ്യൂട്ടറിലേക്ക് ഇറക്കി വെയ്ക്കാന്‍ [$1 ഇവിടെ ഞെക്കുക‍].
-
-PDF ഔട്ട് പുട്ടില്‍ നിങ്ങള്‍ തൃപ്തരല്ലേ? [[{{MediaWiki:Coll-helppage}}|ശേഖരത്തെക്കുറിച്ചുള്ള സഹായ താള്‍]] നോക്കി അതു എങ്ങനെയൊക്കെ മെച്ചപ്പെടുത്താമെന്നു നോക്കുക.",
 	'coll-notfound_title'             => 'ശേഖരം കണ്ടില്ല',
 	'coll-notfound_text'              => 'ശേഖര താള്‍ കണ്ടെത്താന്‍ കഴിഞ്ഞില്ല.',
 	'coll-return_to_collection'       => '<a href="$1">$2</a>-ലേക്കു തിരിച്ചു പോവുക',
-	'coll-pdf_error_text'             => 'PDF പ്രമാണം നിര്‍മ്മിക്കുമ്പോള്‍ പിഴവ് സംഭവിച്ചു.',
 	'coll-book_title'                 => 'അച്ചടിച്ച പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
 	'coll-book_text'                  => 'താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന സേവനദാതാക്കളെ സന്ദര്‍ശിച്ച് നിങ്ങളുടെ ശേഖരത്തിന്റെ അച്ചടി രൂപം ഓര്‍ഡര്‍ ചെയ്യാവുന്നതാണ്‌:',
 	'coll-order_from_pp'              => '$1-ല്‍ നിന്നു പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
@@ -1527,8 +1436,6 @@ $messages['mr'] = array(
 
 अधिक माहितीसाठी [[{{MediaWiki:Coll-helppage}}|पाने गोळा करण्यासाठी मदत]] पहा.',
 	'coll-helppage'                   => 'Help:गोळा केलेली पाने',
-	'coll-pdftoobigcat'               => 'या वर्गात %PARAM% पेक्शा जास्त पाने आहेत, फक्त पहिल्या %PARAM% पानांचाच तुम्ही समावेश करू शकता.
-तुम्ही समावेश करु इच्छिता का?',
 	'coll-my_collection'              => 'मी गोळा केलेली पाने',
 	'coll-download_title'             => 'गोळा केलेल्या पानांची पीडीएफ आवृत्ती उतरवून घ्या',
 	'coll-download_text'              => 'तुम्ही गोळा केलेल्या पानांच्या पीडीएफ आवृत्त्या गोळा करण्यासाठी, दिलेली कळ दाबा.',
@@ -1575,23 +1482,9 @@ $messages['mr'] = array(
 	'coll-limit_exceeded_title'       => 'कलेक्शन खूप मोठे झालेले आहे',
 	'coll-limit_exceeded_text'        => 'तुमचे पानांचे कलेक्शन खूप मोठे झालेले आहे.
 आणखी पाने वाढविता येणार नाहीत.',
-	'coll-generating_pdf_title'       => 'पीडीएफ तयार करीत आहे',
-	'coll-generating_pdf_text'        => "'''कॄपया पीडीएफ तयार होईपर्यंत वाट पहा.'''
-
-प्रगती: '''$1%'''.
-
-हे पान आपोआप काही सेकंदांनंतर ताजेतवाने व्हायला पाहिजे. 
-जर तसे झाले नाही, तर कृपया आपल्या ब्राउझरला ताजेतवाने (refresh) करा.",
-	'coll-pdf_finished_title'         => 'पीडीएफ तयार झालेली आहे',
-	'coll-pdf_finished_text'          => 'पीडीएफ संचिका तयार झालेली आहे.
-आपल्या संगणकात ती उतरवून घेण्यासाठी [$1 इथे टिचकी] मारा.
-
-पीडीएफ आउटपुट वर संतुष्ट नाही आहात?
-ते सुधरण्याच्या शक्यतांसाठी [[{{MediaWiki:Coll-helppage}}|कलेक्शन माहिती पृष्ठ]] पहा.',
 	'coll-notfound_title'             => 'कलेक्शन सापडले नाही',
 	'coll-notfound_text'              => 'कलेक्शन पान सापडले नाही.',
 	'coll-return_to_collection'       => '<a href="$1">$2</a> कडे परत जा',
-	'coll-pdf_error_text'             => 'पीडीएफ तयार करण्यामध्ये त्रुटी आलेली आहे.',
 	'coll-book_title'                 => 'छापील आवृत्तीची मागणी नोंदवा',
 	'coll-book_text'                  => 'तुम्ही खाली दिलेल्या मागणीनुसार छपाई करणार्‍या जोडीदारांच्या संकेतस्थळाला भेट देऊन तुमच्या कलेक्शन मधील पानांची छापील आवृत्ती मिळवू शकता:',
 	'coll-order_from_pp'              => '$1 कडून छापील प्रत मागवा',
@@ -1624,7 +1517,6 @@ $messages['nds'] = array(
 	'coll-no'                   => 'Nee',
 	'coll-overwrite'            => 'Överschrieven',
 	'coll-cancel'               => 'Afbreken',
-	'coll-generating_pdf_title' => 'An’t PDF opstellen',
 	'coll-return_to_collection' => 'Trüch na <a href="$1">$2</a>',
 	'coll-order_from_pp'        => 'Book bestellen bi $1',
 	'coll-about_pp'             => 'Över $1',
@@ -1649,6 +1541,7 @@ $messages['nl'] = array(
 	'coll-page'                       => 'pagina',
 	'coll-pages'                      => "pagina's",
 	'coll-download_as_pdf'            => 'Als PDF downloaden',
+	'coll-download_as_odf'            => 'Als ODF downloaden',
 	'coll-noscript_text'              => '<h1>JavaScript is vereist!</h1>
 <strong>Uw browser understeunt geen JavaScript of JavaScript is uitgeschakeld.
 Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong>',
@@ -1656,7 +1549,7 @@ Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong>',
 
 [[{{MediaWiki:Coll-helppage}}|Meer informatie over verzamelingen]].",
 	'coll-helppage'                   => 'Help:Verzamelingen',
-	'coll-pdftoobigcat'               => "De categorie bevat meer dan %PARAM% pagina's. Alleen de eerste %PARAM% pagina's kunnen aan uw verzameling toegevoegd worden.
+	'coll-too_big_cat'                => "Deze categorie bevat meer dan %PARAM% pagina's. Alleen de eerste %PARAM% pagina's worden aan uw collectie toegevoegd.
 Wilt u ze toevoegen?",
 	'coll-my_collection'              => 'Mijn verzameling',
 	'coll-download_title'             => 'Verzameling als PDF downloaden',
@@ -1706,23 +1599,22 @@ Wil u de bestaande verzameling overschrijven, de nieuwe pagina's toevoegen, of a
 	'coll-limit_exceeded_title'       => 'Verzameling is te groot',
 	'coll-limit_exceeded_text'        => "Uw paginaverzameling is te groot.
 U kunt geen pagina's meer toevoegen.",
-	'coll-generating_pdf_title'       => 'Bezig met maken van PDF',
-	'coll-generating_pdf_text'        => "'''Wacht alstublieft. Het PDF-bestand wordt gemaakt.'''
+	'coll-rendering_title'            => 'Bezig met renderen',
+	'coll-rendering_text'             => "'''Het document wordt aangemaakt.'''
 
-Voortgang: '''$1%'''.
+Voortgang: '''\$1%'''.
 
-Over enige seconden hoort deze pagina automatisch te verversen.
-Als dit niet werkt, klik dan op de knop 'Vernieuwen' in uw browser.",
-	'coll-pdf_finished_title'         => 'Maken PDF afgerond',
-	'coll-pdf_finished_text'          => 'Het PDF-bestand is beschikbaar.
-[$1 Klik hier] om het naar uw computer te downloaden.
+Deze pagina wordt regelmatig bijgewerkt.
+Als dit niet werkt, klik dan op de knop \"Vernieuwen\" in uw browser.",
+	'coll-rendering_finished_title'   => 'Renderen afgerond',
+	'coll-rendering_finished_text'    => "'''Het document is aangemaakt.'''
+[$1 Klik hier] om het te downloaden.
 
-Niet tevreden met de PDF-uitvoer?
-Op de [[{{MediaWiki:Coll-helppage}}|hulppagina voor collecties]] staan manieren beschreven om die te verbeteren.',
+Niet tevreden met de uitvoer?
+Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om deze te verbeteren.",
 	'coll-notfound_title'             => 'Verzameling niet gevonden',
 	'coll-notfound_text'              => 'De verzamelingspagina is niet gevonden.',
 	'coll-return_to_collection'       => 'Teruggaan naar <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Een fout trad op bij het aanmaken van het PDF bestand.',
 	'coll-book_title'                 => 'Gedrukt boek bestellen',
 	'coll-book_text'                  => 'U kunt een gedrukt boek bestellen dat uw paginaverzameling bevat door een van de volgende print-on-demand-partners te bezoeken:',
 	'coll-order_from_pp'              => 'Boek bij $1 bestellen',
@@ -1737,14 +1629,14 @@ Neem alstublieft contact op met uw MediaWiki-beheerder.',
  * @author Jon Harald Søby
  */
 $messages['nn'] = array(
-	'coll-empty'      => 'tom',
-	'coll-page'       => 'side',
-	'coll-pages'      => 'sider',
-	'coll-remove'     => 'Fjern',
-	'coll-title'      => 'Tittel:',
-	'coll-yes'        => 'Ja',
-	'coll-no'         => 'Nei',
-	'coll-cancel'     => 'Avbryt',
+	'coll-empty'  => 'tom',
+	'coll-page'   => 'side',
+	'coll-pages'  => 'sider',
+	'coll-remove' => 'Fjern',
+	'coll-title'  => 'Tittel:',
+	'coll-yes'    => 'Ja',
+	'coll-no'     => 'Nei',
+	'coll-cancel' => 'Avbryt',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -1766,11 +1658,13 @@ $messages['no'] = array(
 	'coll-page'                       => 'side',
 	'coll-pages'                      => 'sider',
 	'coll-download_as_pdf'            => 'Last ned som PDF',
+	'coll-download_as_odf'            => 'Last ned som ODF',
 	'coll-noscript_text'              => '<h1>JavaScript er påkrevd!</h1>
 <strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong>',
 	'coll-intro_text'                 => 'Du kan samle sider, generere og laste ned en PDF-fil fra sidesamlinger og lagre sidesamlinger for senere bruk eller for deling.',
 	'coll-helppage'                   => 'Help:Samlinger',
-	'coll-pdftoobigcat'               => 'Kategorien inneholder mer enn %PARAM% sider, kun de første %PARAM% sidene kan legges til i samlingen din. Vil du legge dem til?',
+	'coll-too_big_cat'                => 'Kategorien inneholder mer enn %PARAM% sider; kun de %PARAM% første sidene kan legges til i samlingen din.
+Vil du legge dem til?',
 	'coll-my_collection'              => 'Min samling',
 	'coll-download_title'             => 'Last ned samling som PDF',
 	'coll-download_text'              => 'Klikk på knappen for å laste ned en automatisk generert PDF-fil av sidesamlingen din.',
@@ -1816,23 +1710,22 @@ $messages['no'] = array(
 	'coll-cancel'                     => 'Avbryt',
 	'coll-limit_exceeded_title'       => 'Samling for stor',
 	'coll-limit_exceeded_text'        => 'Sidesamlingen din er for stor. Ingen flere sider kan legges til.',
-	'coll-generating_pdf_title'       => 'Genererer PDF',
-	'coll-generating_pdf_text'        => "'''Vent mens PDF-filen genereres.'''
+	'coll-rendering_title'            => 'Oppretter',
+	'coll-rendering_text'             => "'''Vent mens dokumentet opprettes.'''
 
-Framdrift: '''$1 %'''.
+Framskritt: '''$1&nbsp;%'''.
 
-Denne siden burde oppdateres med noen sekunders mellomrom.
-Om dette ikke fungerer, trykk på oppdateringsknappen i nettleseren din.",
-	'coll-pdf_finished_title'         => 'PDF-generering ferdig',
-	'coll-pdf_finished_text'          => 'PDF-filen har blitt skapt.
+Denne siden skal oppfriskes automatisk med noen sekunders mellomrom.
+Om den ikke gjør det, trykk på oppdateringsknappen i nettleseren din.",
+	'coll-rendering_finished_title'   => 'Opprettet',
+	'coll-rendering_finished_text'    => "'''Dokumentfilen har blitt opprettet.'''
 [$1 Klikk her] for å laste den ned.
 
-Ikke fornøyd med PDF-resultatet?
-Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for hvordan du kan forbedre det.',
+Misfornøyd med resultatet?
+Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden for samlinger]] for måter å forbedre den på.",
 	'coll-notfound_title'             => 'Samling ikke funnet',
 	'coll-notfound_text'              => 'Kunne ikke finne samlingsside.',
 	'coll-return_to_collection'       => 'Tilbake til <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Det oppstod en feil ved generering av PDF-filen.',
 	'coll-book_title'                 => 'Bestilling av trykt bok',
 	'coll-book_text'                  => 'Du kan bestille en trykt bok med artikkelsamlingen din ved å besøke en av følgende trykkerpartnere:',
 	'coll-order_from_pp'              => 'Bestill bok fra $1',
@@ -1861,6 +1754,7 @@ $messages['oc'] = array(
 	'coll-page'                       => 'pagina',
 	'coll-pages'                      => 'paginas',
 	'coll-download_as_pdf'            => 'Telecargar en PDF',
+	'coll-download_as_odf'            => 'Telecargar en ODF',
 	'coll-noscript_text'              => "<h1>Javascript es necessari !</h1>
 <strong>Vòstre navigador supòrta pas Javascript o se l'a desactivat.
 Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activat.</strong>",
@@ -1868,8 +1762,7 @@ Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activ
 
 Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entresenhas.",
 	'coll-helppage'                   => 'Ajuda:Collections',
-	'coll-pdftoobigcat'               => 'La categoria conten mai de %PARAM% paginas, solas las primièras %PARAM% paginas pòdon èsser apondudas dins vòstra compilacion.
-Las volètz apondre ?',
+	'coll-too_big_cat'                => 'La categoria conten mai de %PARAM% paginas, sonque las %PARAM% primièras paginas seràn apondudas a vòstra colleccion.',
 	'coll-my_collection'              => 'Ma compilacion',
 	'coll-download_title'             => 'Telecargar la compilacion en PDF',
 	'coll-download_text'              => 'Per telecargar un PDF generat automaticament a partir de vòstra compilacion, picatz sul boton.',
@@ -1918,23 +1811,22 @@ Volètz espotir vòstra compilacion actuala, i apondre lo contengut o alara anul
 	'coll-limit_exceeded_title'       => 'Compilacion tròp granda',
 	'coll-limit_exceeded_text'        => 'Vòstra compilacion es tròp granda.
 Cap de pagina pòt pas èsser ajustada.',
-	'coll-generating_pdf_title'       => 'Creacion del PDF',
-	'coll-generating_pdf_text'        => "'''Esperatz pendent la creacion del PDF.'''
+	'coll-rendering_title'            => 'Rendut',
+	'coll-rendering_text'             => "'''Pacientatz pendent que lo document es en cors de creacion.'''
 
-Progression : '''$1%'''.
+Progression : '''$1 %'''.
 
-Aquesta pagina se deuriá actualizar automaticament.
-Se aquò es pas lo cas, podètz clicar sul boton d'actualizacion de vòstre navigador.",
-	'coll-pdf_finished_title'         => 'Creacion del PDF acabada',
-	'coll-pdf_finished_text'          => 'Lo fichièr PDF es estat creat.
+Aquesta pagina se deuriá actualizar regularament.
+S'èra pas lo cas, clicatz sul boton d’actualizacion de vòstre navigador.",
+	'coll-rendering_finished_title'   => 'Rendut acabat',
+	'coll-rendering_finished_text'    => "'''Lo fichièr document es estat creat.'''
 [$1 Clicatz aicí] per lo telecargar sus vòstre ordenador.
 
-Pas satisfach de la sortida PDF ?
-Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda a prepaus de las colleccions]] per las possibilitats de melhorament.',
+Pas satisfach(a) de la sortida ?
+Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las colleccions]] per las possibilitats de melhorament.",
 	'coll-notfound_title'             => 'Compilacion pas trobada',
 	'coll-notfound_text'              => 'Pòt pas trobar la compilacion.',
 	'coll-return_to_collection'       => 'Tornar a <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Una error es estada detectada al moment de la creacion del fichièr PDF.',
 	'coll-book_title'                 => 'Comandar un libre imprimit',
 	'coll-book_text'                  => "Podètz comandar un libre imprimit contenent vòstra colleccion d'articles en visitant una demanda d'impression de la part de partenaris :",
 	'coll-order_from_pp'              => 'Comandar lo libre dempuèi $1',
@@ -1984,8 +1876,6 @@ Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączo
 
 Więcej informacji na [[{{MediaWiki:Coll-helppage}}|stronie pomocy dotyczącej kolekcji]].',
 	'coll-helppage'                   => 'Pomoc:Kolekcje',
-	'coll-pdftoobigcat'               => 'Kategoria zawiera więcej niż %PARAM% stron. Tylko pierwsze %PARAM% stron może zostać dodane do kolekcji.
-Czy chcesz by zostały dodane?',
 	'coll-my_collection'              => 'Moja kolekcja',
 	'coll-download_title'             => 'Pobierz kolekcję jako PDF',
 	'coll-download_text'              => 'Naciśnij przycisk, by pobrać automatycznie wygenerowaną wersję PDF Twojej kolekcji stron',
@@ -2034,23 +1924,9 @@ Czy chcesz nadpisać Twoją obecną kolekcję, dodać do niej strony czy anulowa
 	'coll-limit_exceeded_title'       => 'Zbyt duża kolekcja',
 	'coll-limit_exceeded_text'        => 'Twoja kolekcja stron jest zbyt duża.
 Nie można dodać więcej stron.',
-	'coll-generating_pdf_title'       => 'Tworzenie PDF',
-	'coll-generating_pdf_text'        => "'''Poczekaj, plik PDF jest właśnie tworzony.'''
-
-Postęp: '''$1%'''.
-
-Strona powinna być automatycznie odświeżana co kilka sekund.
-Jeśli tak się nie dzieje, użyj przycisku ''Odśwież'' w przeglądarce.",
-	'coll-pdf_finished_title'         => 'Tworzenie pliku PDF zakończone',
-	'coll-pdf_finished_text'          => "'''Plik PDF został utworzony.'''
-[$1 Kliknij tutaj], by pobrać go na swój komputer.
-
-Plik PDF nie spełnił Twoich oczekiwań?
-Zobacz [[{{MediaWiki:Coll-helppage}}|kolekcję opisów]] jak można podwyższyć jego jakość.",
 	'coll-notfound_title'             => 'Nie znaleziono kolekcji',
 	'coll-notfound_text'              => 'Nie udało się znaleźć strony kolekcji.',
 	'coll-return_to_collection'       => 'Powróć do <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Wystąpił błąd w trakcie generowania pliku w formacie PDF.',
 	'coll-book_title'                 => 'Zamów wydrukowaną książkę',
 	'coll-book_text'                  => 'Możesz zamówić drukowaną książkę zawierającą kolekcję wybranych przez Ciebie stron. Odwiedź jednego z partnerów realizujących usługę wydruku na żądanie:',
 	'coll-order_from_pp'              => 'Zamów książkę z $1',
@@ -2058,6 +1934,7 @@ Zobacz [[{{MediaWiki:Coll-helppage}}|kolekcję opisów]] jak można podwyższyć
 	'coll-invalid_podpartner_title'   => 'Niesprawny usługodawca wydruku na żądanie',
 	'coll-invalid_podpartner_msg'     => 'Wybrany partner wydruku na żądanie nie funkcjonuje.
 Skontaktuj się z administratorem tego serwisu MediaWiki.',
+	'coll-license'                    => 'Licencja',
 );
 
 /** Pashto (پښتو)
@@ -2084,7 +1961,6 @@ $messages['ps'] = array(
 	'coll-save_collection_title' => 'غونډ خوندي کول',
 	'coll-yes'                   => 'هو',
 	'coll-no'                    => 'نه',
-	'coll-nopdf_error_title'     => 'هېڅ کومه PDF دوتنه و نه موندلای شوه',
 	'coll-notfound_title'        => 'غونډ و نه موندلای شو',
 	'coll-about_pp'              => 'د $1 په اړه',
 );
@@ -2117,8 +1993,6 @@ Esta página não funcionará correctamente, excepto se o JavaScript for activad
 
 Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para mais informação.',
 	'coll-helppage'                   => '{{ns:help}}:Colecções',
-	'coll-pdftoobigcat'               => 'Esta categoria contém mais que %PARAM% páginas, sendo que apenas as primeiras %PARAM% páginas podem ser adicionadas à sua colecção.
-Deseja adicioná-las?',
 	'coll-my_collection'              => 'Minha Colecção',
 	'coll-download_title'             => 'Descarregar Colecção como PDF',
 	'coll-download_text'              => 'Para descarregar um ficheiro PDF da sua colecção de páginas gerado automaticamente, carregue no botão.',
@@ -2165,23 +2039,9 @@ Pretende reescrever a sua colecção, adicionar o novo conteúdo or cancelar?',
 	'coll-limit_exceeded_title'       => 'Colecção Demasiado Grande',
 	'coll-limit_exceeded_text'        => 'A usa coleccção de página é demasiado grande.
 Não poderão ser adicionadas mais páginas.',
-	'coll-generating_pdf_title'       => 'A criar PDF',
-	'coll-generating_pdf_text'        => "'''Por favor, aguarde enquanto o ficheiro PDF está a ser gerado.'''
-
-Progresso: '''\$1%'''.
-
-Esta página deverá refrescar automaticamente e repetidamente dentro de alguns segundos.
-Se isto não acontecer, por favor, carregue no botão de refrescar do seu \"browser\".",
-	'coll-pdf_finished_title'         => 'Geração de PDF Completada',
-	'coll-pdf_finished_text'          => 'O ficheiro PDF foi gerado.
-[$1 Clique aqui] para fazer o download.
-
-Não está satisfeito com o resultado do PDF?
-Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para formas de melhorá-lo.',
 	'coll-notfound_title'             => 'Colecção Não Encontrada',
 	'coll-notfound_text'              => 'Não foi possível encontrar a página da colecção.',
 	'coll-return_to_collection'       => 'Regressar a <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Ocorreu um erro ao gerar o ficheiro PDF.',
 	'coll-book_title'                 => 'Encomendar Livro Impresso',
 	'coll-book_text'                  => 'Você pode encomendar um livro impresso contendo a sua colecção de páginas visitando um dos seguintes parceiros de impressão a pedido:',
 	'coll-order_from_pp'              => 'Encomendar o livro de $1',
@@ -2215,8 +2075,6 @@ $messages['ru'] = array(
 
 Подробности можно найти на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].',
 	'coll-helppage'                   => 'Справка:Коллекции',
-	'coll-pdftoobigcat'               => 'Категория содержит более чем %PARAM% страниц, только первые %PARAM% страниц могут быть включены в вашу коллекцию.
-Вы хотите добавить их?',
 	'coll-my_collection'              => 'Моя коллекция',
 	'coll-download_title'             => 'Скачать коллекцию как PDF',
 	'coll-download_text'              => 'Нажмите кнопку, чтобы скачать автоматически созданный PDF-файл с вашей коллекций страниц.',
@@ -2263,23 +2121,9 @@ $messages['ru'] = array(
 	'coll-limit_exceeded_title'       => 'Коллекция слишком большая',
 	'coll-limit_exceeded_text'        => 'Ваша коллекция слишком большая.
 В неё нельзя больше добавлять страницы.',
-	'coll-generating_pdf_title'       => 'Создание PDF',
-	'coll-generating_pdf_text'        => "'''Пожалуйста, дождитесь создания PDF-файла.'''
-
-Выполнено: '''$1 %'''.
-
-Эта страница должна автоматически обновляться каждые несколько секунд,
-если этого не происходит, пожалуйста, нажмите кнопку обновления в вашем браузере.",
-	'coll-pdf_finished_title'         => 'Создание PDF завершено',
-	'coll-pdf_finished_text'          => 'PDF-файл был создан.
-[$1 Нажмите здесь], чтобы скачать его на свой компьютер.
-
-Не удовлетворены получившимся результатом?
-На [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]] рассказывается о возможностях улучшить PDF-вывод.',
 	'coll-notfound_title'             => 'Коллекция не найдена',
 	'coll-notfound_text'              => 'Невозможно найти страницу коллекции.',
 	'coll-return_to_collection'       => 'Назад к <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Во время создания PDF-файла произошла ошибка.',
 	'coll-book_title'                 => 'Заказать печатную книгу',
 	'coll-book_text'                  => 'Вы можете заказать печатную книгу, содержащую вашу коллекцию страниц, воспользовавшись одним из следующих предложений печати по запросу:',
 	'coll-order_from_pp'              => 'Заказ книги в $1',
@@ -2314,7 +2158,6 @@ Táto stránka nebude správne fungovať ak nezapnete JavaScript.</strong>',
 
 Pozri ďalšie informácue na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].',
 	'coll-helppage'                   => 'Pomoc:Kolekcie',
-	'coll-pdftoobigcat'               => 'Kategória obsahuje viac ako %PARAM% stránok. Do kolekcie je možné pridať iba prvých %PARAM% stránok. Chcete ich pridať?',
 	'coll-my_collection'              => 'Moja kolekcia',
 	'coll-download_title'             => 'Stiahnuť kolekciu ako PDF',
 	'coll-download_text'              => 'Stiahnuť automaticky vytvorený PDF súbor vašej kolekcie stránok. Kliknite na tlačidlo.',
@@ -2363,22 +2206,9 @@ Chcete prepísať svoju existujúcu kolekciu, pridať do nej obsah alebo zruši�
 	'coll-limit_exceeded_title'       => 'Kolekcia je príliš veľká',
 	'coll-limit_exceeded_text'        => 'Vaša kolekcia stránok je príliš veľká.
 Nie je možné pridať ďalšie stránky.',
-	'coll-generating_pdf_title'       => 'Vytvára sa PDF',
-	'coll-generating_pdf_text'        => "'''Prosím čakajte, kým sa vytvára PDF súbor.'''
-
-Priebeh: '''$1%'''.
-
-Táto stránka by sa mala každých niekoľko sekúnd automaticky obnoviť. Ak to nefunguje, stlačte prosím tlačidlo Obnoviť vo vašom prehliadači.",
-	'coll-pdf_finished_title'         => 'Tvorba PDF dokončená',
-	'coll-pdf_finished_text'          => "'''PDF súbor bol vytvorený.'''
-Teraz ho môžete [$1 stiahnuť].
-
-Nie ste spokojný s PDF výstupom?
-Pozri možnosti jeho vylepšenia na [[{{MediaWiki:Coll-helppage}}|stránke Pomocníka o kolekciách]].",
 	'coll-notfound_title'             => 'Kolekcia nenájdená',
 	'coll-notfound_text'              => 'Nebolo možné nájsť stránku kolekcie',
 	'coll-return_to_collection'       => 'Vrátiť sa na <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Pri tvorbe PDF súboru sa vyskytla chyba.',
 	'coll-book_title'                 => 'Objednať tlačenú knihu',
 	'coll-book_text'                  => 'Môžete si objednať tlačenú knihu obsahujúcu vašu zbierku článkov. Navštívte jedného z nasledovných partnerov, ktorí tobia tlač na vyžiadanie:',
 	'coll-order_from_pp'              => 'Objednať knihu od $1',
@@ -2424,8 +2254,6 @@ $messages['stq'] = array(
 
 Sjuch ju [[{{MediaWiki:Coll-helppage}}|Hälpe bie Touhoopestaalengen]] foar wiedere Informatione.',
 	'coll-helppage'            => 'Help:Touhoopestaalengen',
-	'coll-pdftoobigcat'        => 'Ju Kategorie änthaalt moor as %PARAM% Sieden, bloot do eerste %PARAM% Sieden konnen an do Touhoopestaalengen bietouföiged wäide.
-Moatest du do bietouföigje?',
 	'coll-my_collection'       => 'Mien Touhoopestaalenge',
 	'coll-download_title'      => 'Touhoopestaalenge as PDF deelleede',
 	'coll-download_text'       => 'Uum ne automatisk moakede PDF-Doatäi fon dien Touhoopestaalenge deeltouleeden, klik ap ap ju Schaltfläche.',
@@ -2446,10 +2274,6 @@ Moatest du do bietouföigje?',
 	'coll-new_chapter'         => 'Reek n Noome foar n näi Kapittel ien',
 	'coll-rename_chapter'      => 'Reek n näien Noome foar dät Kapittel ien',
 	'coll-no_such_category'    => 'Sun Kategorie rakt dät nit',
-	'coll-mwpdf_error_title'   => 'PDF kuud nit moaked wäide',
-	'coll-mwpdf_error_msg'     => 'Bie dät PDF-Moakjen is n Failer aptreeden.',
-	'coll-mwzip_error_title'   => 'Touhoopestaalenge kuud nit moaked wäide',
-	'coll-mwzip_error_msg'     => 'Unner dät Touhoopestaalengsprozess is n Failer aptreeden.',
 	'coll-notitle_title'       => 'Die Tittel fon ju Siede kuud nit bestimd wäide.',
 	'coll-post_failed_title'   => 'POST-Anfroage failsloain',
 	'coll-post_failed_msg'     => 'Ju POST-Anfroage is failsloain ($2).',
@@ -2487,6 +2311,7 @@ $messages['su'] = array(
  * @author Siebrand
  * @author Sannab
  * @author H92
+ * @author Boivie
  */
 $messages['sv'] = array(
 	'coll-desc'                       => '[[Special:Collection|Samla sidor]], generera PDF filer',
@@ -2502,6 +2327,7 @@ $messages['sv'] = array(
 	'coll-page'                       => 'sida',
 	'coll-pages'                      => 'sidor',
 	'coll-download_as_pdf'            => 'Ladda ner som PDF',
+	'coll-download_as_odf'            => 'Ladda ner som ODF',
 	'coll-noscript_text'              => '<h1>JavaScript är nödvändigt!</h1>
 <strong>Din webbläsare stödjer inte JavaScript eller har JavaScript blivigt avslagen.
 Denna sida kommer inte att fungera korrekt, tills JavaScript är tillgängligt.</strong>',
@@ -2509,7 +2335,8 @@ Denna sida kommer inte att fungera korrekt, tills JavaScript är tillgängligt.<
 
 Se [[{{MediaWiki:Coll-helppage}}|hjälp sidan om samlingar]] för mer information.',
 	'coll-helppage'                   => 'Help:Samlingar',
-	'coll-pdftoobigcat'               => 'Kategorin innehåller mer än %PARAM" sidor, endast de första %PARAM% sidorna kan läggas till till din samling. Vill du lägga till dem?',
+	'coll-too_big_cat'                => 'Kategorin innehåller mer än %PARAM% sidor, endast de %PARAM% första sidorna kan läggas till till din samling.
+Vill du lägga till dem?',
 	'coll-my_collection'              => 'Min samling',
 	'coll-download_title'             => 'Ladda ner samling som PDF',
 	'coll-download_text'              => 'För att ladda ner en automatisk genererad PDF-fil av din sidsamling, klicka på knappen.',
@@ -2558,23 +2385,22 @@ Vill du ersätta din nuvarande samling, lägga till det nya innehållet eller av
 	'coll-limit_exceeded_title'       => 'Samlingen är för stor',
 	'coll-limit_exceeded_text'        => 'Din sid samling är för stor.
 Inga mer sidor kan läggas till.',
-	'coll-generating_pdf_title'       => 'Genererar PDF',
-	'coll-generating_pdf_text'        => "'''Var god vänta medan PDF-filen genereras.'''
+	'coll-rendering_title'            => 'Skapar',
+	'coll-rendering_text'             => "'''Vänta medans dokumentet skapas.'''
 
-Fortgång: '''$1%'''.
+Tillstånd: '''$1%'''.
 
-Denna sida borde automatiskt med några sekunders mellanrum
-Om detta inte funkar, var god tryck på uppdateringsknappen i din webbläsare.",
-	'coll-pdf_finished_title'         => 'PDF-generering färdig',
-	'coll-pdf_finished_text'          => 'PDF-filen har genererats.
-[$1 Klicka här] för att ladda ner den till din dator.
+Denna sida ska uppdateras automatisk med några sekunders mellanrum.
+Om det inte fungerar, tryck på uppdateringsknappen i din webbläsare.",
+	'coll-rendering_finished_title'   => 'Rendering avslutad',
+	'coll-rendering_finished_text'    => "'''Dokumentfilen har skapats.'''
+[$1 Klicka här] för att ladda ner det till din dator.
 
-Inte nöjd med PDF-resultatet?
-Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för hur du kan förbättra det.',
+Inte nöjd med resultatet?
+Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra den.",
 	'coll-notfound_title'             => 'Samling inte funnen',
 	'coll-notfound_text'              => 'Kan inte hitta samlings sida',
 	'coll-return_to_collection'       => 'Tillbaka till <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Det uppstod ett fel med generering av PDF-filen.',
 	'coll-book_title'                 => 'Beställ utskriven bok',
 	'coll-book_text'                  => 'Du kan beställa en tryckt bok som rymmer din artikelsamling genom att besöka en av de samarbetspartners som utför behovstryckning:',
 	'coll-order_from_pp'              => 'Beställ bok från $1',
@@ -2585,7 +2411,7 @@ Var god kontakta din MediaWiki-administratör.',
 	'coll-license'                    => 'Licens',
 );
 
-/** Silesian (ślůnski)
+/** Silesian (Ślůnski)
  * @author Herr Kriss
  */
 $messages['szl'] = array(
@@ -2611,8 +2437,6 @@ $messages['te'] = array(
 	'coll-pages'                      => 'పేజీలు',
 	'coll-download_as_pdf'            => 'PDFగా దిగుమతి చేసుకోండి',
 	'coll-helppage'                   => 'Help:సేకరణలు',
-	'coll-pdftoobigcat'               => 'ఆ వర్గంలో %PARAM% కంటే ఎక్కువ పేజీలున్నాయి, అందులో మొదటి %PARAM% పేజీలును మాత్రమే మీ సేకరణకి చేర్చగలం.
-వాటిని చేర్చమంటారా?',
 	'coll-my_collection'              => 'నా సేకరణ',
 	'coll-download_title'             => 'సేకరణని PDFగా దిగుమతి చేసుకోండి',
 	'coll-download_text'              => 'మీ పేజీ సేకరణ నుండి ఆటోమెటిగ్గా తయారయిన PDF ఫైలుని దిగుమతిచేసుకోడానికి, ఈ బొత్తాన్ని నొక్కండి.',
@@ -2653,12 +2477,6 @@ $messages['te'] = array(
 	'coll-limit_exceeded_title'       => 'సేకరణ మరీ పెద్దగా ఉంది',
 	'coll-limit_exceeded_text'        => 'మీ పేజీ సేకరణ చాలా పెద్దగా ఉంది.
 మరిన్ని పేజీలు చేర్చలేము.',
-	'coll-generating_pdf_title'       => 'PDFని తయారుచేస్తున్నాం',
-	'coll-generating_pdf_text'        => "'''PDF ఫైలు తయారయ్యేంత వరకు వేచివుండండి.'''
-ఈ పేజీని ప్రతీ కొన్ని క్షణాలకు ఆటోమెటిగ్గా తాజాకరిస్తాం, అది పనిచేయకపోతే, మీ విహారిణిలోని తాజాకరించు బొత్తాన్ని నొక్కండి.",
-	'coll-pdf_finished_title'         => 'PDF తయారీ పూర్తయ్యింది',
-	'coll-pdf_finished_text'          => 'PDF ఫైలు తయారయ్యింది.
-దాన్ని మీ కంప్యూటర్లోనికి దిగుమతి చేసుకోడానికి క్రిందనిచ్చిన లింకుపై నొక్కండి.',
 	'coll-notfound_title'             => 'సేకరణ కనబడలేదు',
 	'coll-notfound_text'              => 'సేకరణ పేజీ కనబడలేదు.',
 	'coll-return_to_collection'       => 'తిరిగి <a href="$1">$2</a>కి',
@@ -2702,8 +2520,6 @@ $messages['tg-cyrl'] = array(
 
 Барои иттилооти бештар нигаред ба [[{{MediaWiki:Coll-helppage}}|саҳифаи роҳнамо оиди гирдовариҳо]].',
 	'coll-helppage'                   => 'Роҳнамо:Гирдовариҳо',
-	'coll-pdftoobigcat'               => 'Гурӯҳ беш аз %PARAM% саҳифаҳо аст, танҳо аввалин %PARAM% саҳифаҳо метавонанд ба гирдоварии шумо илова шаванд.
-Оё шумо мехоҳед онҳоро илова кунед?',
 	'coll-my_collection'              => 'Гирдоварии Ман',
 	'coll-download_title'             => 'Бор кардани гирдовари ҳамчун PDF',
 	'coll-download_text'              => 'Барои бор кардани парвандаи PDF саҳифаи гирдоварии худ, ки ба таври худкор ҳосил шудааст, тугмаро пахш кунед.',
@@ -2748,8 +2564,6 @@ $messages['tg-cyrl'] = array(
 	'coll-limit_exceeded_title'       => 'Гирдовари Хеле Бузург',
 	'coll-limit_exceeded_text'        => 'Саҳифаи гирдоварии шумо хеле бузург аст.
 Аз ин зиёд саҳифаҳо наметавонанд илова шаванд.',
-	'coll-generating_pdf_title'       => 'Дар ҳоли ҳосили PDF',
-	'coll-pdf_finished_title'         => 'Ҳосил кардани PDF ба анҷом расид',
 	'coll-notfound_title'             => 'Гирдовари Ёфт Нашуд',
 	'coll-notfound_text'              => 'Саҳифаи гирдоварӣ ёфт нашуд.',
 	'coll-return_to_collection'       => 'Бозгашт ба <a href="$1">$2</a>',
@@ -2800,8 +2614,6 @@ $messages['uk'] = array(
 
 Подробиці можна знайти на [[{{MediaWiki:Coll-helppage}}|довідковій сторінці про колекції]].",
 	'coll-helppage'                   => 'Довідка:Колекції',
-	'coll-pdftoobigcat'               => 'Категорія містить більше, ніж %PARAM% сторінок, тільки перші %PARAM% сторінок можуть бути включені до вашої колекції.
-Ви хочете додати їх?',
 	'coll-my_collection'              => 'Моя колекція',
 	'coll-download_title'             => 'Завантажити колекцію як PDF',
 	'coll-download_text'              => 'Щоб завантажити автоматично створений PDF-файл з вашою колекцією сторінок, натисніть кнопку.',
@@ -2848,16 +2660,6 @@ $messages['uk'] = array(
 	'coll-limit_exceeded_title'       => 'Колекція дуже велика',
 	'coll-limit_exceeded_text'        => 'Ваша колекція дуже велика.
 До неї не можна більше додавати сторінок.',
-	'coll-generating_pdf_title'       => 'Створення PDF',
-	'coll-generating_pdf_text'        => "'''Будь ласка, зачекайте, поки створиться PDF-файл.'''
-
-Прогрес: '''$1%'''.
-
-Ця сторінка повинна автоматично оновлюватися кожні декілька секунд.
-Якщо цього не відбувається, натисніть кнопку оновлення у вашому браузері.",
-	'coll-pdf_finished_title'         => 'Створення PDF закінчене',
-	'coll-pdf_finished_text'          => "PDF-файл був створений.
-[$1|Натисніть тут], щоб завантажити його на свій комп'ютер.",
 	'coll-notfound_title'             => 'Колекція не знайдена',
 	'coll-notfound_text'              => 'Неможливо знайти сторінку колекції.',
 	'coll-return_to_collection'       => 'Назад до <a href="$1">$2</a>',
@@ -2893,8 +2695,6 @@ Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaS
 
 Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] để biết thêm thông tin.',
 	'coll-helppage'                   => 'Trợ giúp:Tập hợp',
-	'coll-pdftoobigcat'               => 'Thể loại có hơn %PARAM% trang, chỉ có %PARAM% đầu tiên là thêm được vào tập hợp của bạn.
-Bạn có muốn thêm chúng không?',
 	'coll-my_collection'              => 'Tập hợp của tôi',
 	'coll-download_title'             => 'Tải tập hợp về dưới dạng PDF',
 	'coll-download_text'              => 'Để tải về một tập tin PDF được tự động tạo ra từ tập hợp trang của bạn, hãy nhấn nút.',
@@ -2941,22 +2741,9 @@ Bạn có muốn ghi đè tập hợp hiện tại, thêm nội dung mới hay h
 	'coll-limit_exceeded_title'       => 'Tập hợp quá lớn',
 	'coll-limit_exceeded_text'        => 'Tập hợp các trang của bạn quá lớn.
 Không thể thêm trang được nữa.',
-	'coll-generating_pdf_title'       => 'Tạo ra PDF',
-	'coll-generating_pdf_text'        => "'''Xin hãy chờ trong khi tập tin PDF đang được tạo ra.'''
-
-Tiến trình: '''$1%'''.
-
-Cứ vài giây trang này sẽ tự động tải lại một lần.
-Nếu nó không hoạt động, xin hãy nhấn nút refresh trên trình duyệt của bạn.",
-	'coll-pdf_finished_text'          => 'Tập tin PDF đã được tạo ra.
-[$1 Nhấn vào đây] để tải nó về máy tính.
-
-Không vừa lòng với ngõ ra PDF?
-Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] để có các cách phát triển nó lên.',
 	'coll-notfound_title'             => 'Không tìm thấy tập hợp',
 	'coll-notfound_text'              => 'Không tìm thấy trang tập hợp.',
 	'coll-return_to_collection'       => 'Quay trở về <a href="$1">$2</a>',
-	'coll-pdf_error_text'             => 'Có lỗi khi tạo ra tập tin PDF.',
 	'coll-book_title'                 => 'Đặt sách in',
 	'coll-book_text'                  => 'Bạn có thể đặt một cuốn sách in có chứa tập hợp trang của bạn bằng cách ghét thăm mọt trong những bên cộng tác in-theo-yêu-cầu:',
 	'coll-order_from_pp'              => 'Đặt sách từ $1',
