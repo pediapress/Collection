@@ -460,7 +460,9 @@ class Collection extends SpecialPage {
 		global $wgRightsText;
 		global $wgRightsUrl;
 		
-		$licenseInfo = array();
+		$licenseInfo = array(
+			"type" => "license",
+		);
 		
 		if ( $wgLicenseName ) {
 			$licenseInfo['name'] = $wgLicenseName;
