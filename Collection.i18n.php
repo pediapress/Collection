@@ -556,6 +556,7 @@ $messages['eo'] = array(
 	'coll-page'                       => 'paĝo',
 	'coll-pages'                      => 'paĝoj',
 	'coll-download_as_pdf'            => 'Alŝuti kiel PDF',
+	'coll-download_as_odf'            => 'Elŝuti kiel ODF',
 	'coll-helppage'                   => 'Helpo:Kolektoj',
 	'coll-my_collection'              => 'Mia kolekto',
 	'coll-download_title'             => 'Alŝutu kolekton kiel PDF-on',
@@ -598,6 +599,7 @@ $messages['eo'] = array(
 	'coll-limit_exceeded_title'       => 'Kolekto Tro Granda',
 	'coll-limit_exceeded_text'        => 'Via paĝa kolekto estas tro granda.
 Neniom pluaj paĝoj ne povas esti aldonitaj.',
+	'coll-rendering_title'            => 'Generante',
 	'coll-notfound_title'             => 'Kolekto Ne Trovita',
 	'coll-notfound_text'              => 'Ne eblas trovi kolekto-paĝon.',
 	'coll-return_to_collection'       => 'Reiru al <a href="$1">$2</a>',
