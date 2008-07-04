@@ -123,6 +123,14 @@ Please contact your MediaWiki administrator.',
 	'coll-license'                    => 'License',
 );
 
+/** Faeag Rotuma (Faeag Rotuma)
+ * @author Jose77
+ */
+$messages['rtm'] = array(
+	'coll-cancel'   => "Mao'ạki",
+	'coll-about_pp' => 'Hün se $1',
+);
+
 /** Karelian (Karjala)
  * @author Flrn
  */
@@ -1283,6 +1291,7 @@ $messages['lb'] = array(
 	'coll-page'                       => 'Säit',
 	'coll-pages'                      => 'Säiten',
 	'coll-download_as_pdf'            => 'Als PDF eroflueden',
+	'coll-download_as_odf'            => 'Als ODF eroflueden',
 	'coll-noscript_text'              => '<h1>JavaScript gëtt gebraucht!</h1>
 <strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
 Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</strong>',
@@ -1307,6 +1316,7 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-no_such_category'           => 'Keng esou Kategorie',
 	'coll-notitle_title'              => 'Den Titel vun der Säit konnt net festgestallt ginn.',
 	'coll-pdfserver_failed_title'     => 'PDF Server Feeler',
+	'coll-pdfserver_failed_msg'       => 'Feeler um PDF-Server: $1',
 	'coll-enter_title'                => 'Titel vun der Kollektioun uginn:',
 	'coll-error_reponse'              => 'Feelermeldng vum Server',
 	'coll-empty_collection'           => 'Eidel Sammlung',
@@ -1329,6 +1339,7 @@ Et kënne keng Säite méi derbäigesat ginn.',
 	'coll-book_text'                  => 'Dir kënnt e Buch bestellen op enge vun dësen Internetsiten:',
 	'coll-order_from_pp'              => "D'Buch bestelle bäi $1",
 	'coll-about_pp'                   => 'Iwwer $1',
+	'coll-license'                    => 'Lizenz',
 );
 
 /** Lao (ລາວ)
@@ -2153,13 +2164,16 @@ $messages['sk'] = array(
 	'coll-page'                       => 'stránka',
 	'coll-pages'                      => 'stránky',
 	'coll-download_as_pdf'            => 'Stiahnuť ako PDF',
+	'coll-download_as_odf'            => 'Stiahnuť ako ODF',
 	'coll-noscript_text'              => '<h1>Vyžaduje sa JavaScript!</h1>
 <strong>Váš prehliadač nepodporuje JavaScript alebo máte JavaScript vypnutý.
 Táto stránka nebude správne fungovať ak nezapnete JavaScript.</strong>',
 	'coll-intro_text'                 => 'Môžete vytvárať kolekcie stránok, vytvárať a stiahnuť PDF súbor z kolekcie stránok a ukladať kolekcie stránok pre neskoršie využitie alebo ich zdieľať.
 
-Pozri ďalšie informácue na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].',
+Pozri ďalšie informácie na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].',
 	'coll-helppage'                   => 'Pomoc:Kolekcie',
+	'coll-too_big_cat'                => 'Vaša kateǵoria obsahuje viac ako %PARAM% stránok. Do kolekcie je možné pridať iba prvých %PARAM% stránok.
+Chcete ich pridať?',
 	'coll-my_collection'              => 'Moja kolekcia',
 	'coll-download_title'             => 'Stiahnuť kolekciu ako PDF',
 	'coll-download_text'              => 'Stiahnuť automaticky vytvorený PDF súbor vašej kolekcie stránok. Kliknite na tlačidlo.',
@@ -2208,6 +2222,19 @@ Chcete prepísať svoju existujúcu kolekciu, pridať do nej obsah alebo zruši�
 	'coll-limit_exceeded_title'       => 'Kolekcia je príliš veľká',
 	'coll-limit_exceeded_text'        => 'Vaša kolekcia stránok je príliš veľká.
 Nie je možné pridať ďalšie stránky.',
+	'coll-rendering_title'            => 'Vykresľovanie',
+	'coll-rendering_text'             => "'''Prosím, čakajte, kým sa vytvorí dokument.'''
+
+Priebeh: '''$1 %'''.
+
+Táto stránka by sa mala vždy po niekoľkých sekundách obnoviť.
+Ak to nefunguje, stlačte prosím tlačidlo obnoviť vo vašom prehlidači.",
+	'coll-rendering_finished_title'   => 'Vykresľovanie je dokončené',
+	'coll-rendering_finished_text'    => "'''Súbor dokumentu bol vytvorený.'''
+Môžete ho [$1 stiahnuť] na svoj počítač.
+
+Nie ste spokojný s výstupom?
+Spôsoby možnej nápravy nájdete na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].",
 	'coll-notfound_title'             => 'Kolekcia nenájdená',
 	'coll-notfound_text'              => 'Nebolo možné nájsť stránku kolekcie',
 	'coll-return_to_collection'       => 'Vrátiť sa na <a href="$1">$2</a>',
