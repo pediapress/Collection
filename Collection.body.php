@@ -606,25 +606,22 @@ class Collection extends SpecialPage {
 		global $wgOut;
 		global $wgRequest;
 		
-		$response = self::pdfServerCommand( 'download', array(
+		$tempfile = tmpfile();
+		$headers = self::pdfServerCommand( 'download', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
-		), $decode=false, $timeout=false );
-		
-		if ( !$response ) {
-			return;
-		}
-		
-		// Cancel output buffering and gzipping if set
+		), $timeout=false, $toFile=$tempfile );
 		wfResetOutputBuffers();
-		
-		if ( isset( $response['headers']['content-type'] ) ) {
-			header( 'Content-type: ' . $response['headers']['content-type']);
+		if ( isset( $headers['content-type'] ) ) {
+			header( 'Content-Type: ' . $headers['content-type']);
 		}
-		if ( isset( $reponse['headers']['content-disposition'] ) ) {
-			header( 'Content-Disposition: ' . $response['headers']['content-disposition']);
+		if ( isset( $headers['content-disposition'] ) ) {
+			header( 'Content-Disposition: ' . $headers['content-disposition']);
 		}
-		header( 'Content-Length: ' . strlen( $response['content'] ) );
-		print $response['content'];
+		if ( isset( $headers['content-length'] ) ) {
+			header( 'Content-Length: ' . $headers['content-length']);
+		}
+		fseek( $tempfile, 0 );
+		fpassthru( $tempfile );
 		$wgOut->disable();
 	}
 	
@@ -1123,7 +1120,7 @@ EOS
 		;
 	}
 	
-	static function pdfServerCommand( $command, $args, $decode=true, $timeout=true ) {
+	static function pdfServerCommand( $command, $args, $timeout=true, $toFile=null ) {
 		global $wgOut;
 		global $wgCollectionMWServeURL;
 		global $wgCollectionMWServeCredentials;
@@ -1134,7 +1131,11 @@ EOS
 		}
 		$errorMessage = '';
 		$headers = array();
-		$response = self::post( $wgCollectionMWServeURL, $args, $errorMessage, $headers, $timeout );
+		$response = self::post( $wgCollectionMWServeURL, $args, $errorMessage, $headers, $timeout, $toFile );
+		if ( $toFile ) {
+			return $headers;
+		}
+		
 		if ( !$response ) {
 			$wgOut->showErrorPage(
 				'coll-post_failed_title',
@@ -1142,13 +1143,6 @@ EOS
 				array( $wgCollectionMWServeURL, $errorMessage )
 			);
 			return false;
-		}
-		
-		if (!$decode) {
-			return array(
-				'content' => $response,
-				'headers' => $headers,
-			);
 		}
 		
 		$json = new Services_JSON();
@@ -1175,7 +1169,8 @@ EOS
 		return $json_response;
 	}
 	
-	static function post( $url, $postFields, &$errorMessage, &$headers, $timeout=true ) {
+	static function post( $url, $postFields, &$errorMessage, &$headers,
+		$timeout=true, $toFile=null ) {
 		global $wgHTTPTimeout, $wgHTTPProxy, $wgVersion, $wgTitle;
 	
 		$c = curl_init( $url );
@@ -1187,30 +1182,41 @@ EOS
 		if ( is_object( $wgTitle ) ) {
 			curl_setopt( $c, CURLOPT_REFERER, $wgTitle->getFullURL() );
 		}
-		curl_setopt( $c, CURLOPT_HEADER, true );
-		curl_setopt( $c, CURLOPT_RETURNTRANSFER, true );
+		#curl_setopt( $c, CURLOPT_HEADER, true );
 		if ( $timeout ) {
 			curl_setopt( $c, CURLOPT_TIMEOUT, $wgHTTPTimeout );
 		}
+		$headerStream = fopen('/tmp/headers.txt', 'w+'); tmpfile();
+		curl_setopt( $c, CURLOPT_WRITEHEADER, $headerStream );
+		if ( $toFile ) {
+			curl_setopt( $c, CURLOPT_FILE, $toFile );
+		} else {
+			ob_start();
+		}
 		
-		$response = curl_exec( $c );
-		
+		curl_exec( $c );
 		if ( curl_errno( $c ) != CURLE_OK ) {
 			$text = false;
 			$errorMessage = curl_error( $c );
+			$headers = false;
 		} else if ( curl_getinfo( $c, CURLINFO_HTTP_CODE ) != 200 ) {
 			$text = false;
 			$errorMessage = 'HTTP status ' . curl_getinfo( $c, CURLINFO_HTTP_CODE );
+			$headers = false;
 		} else {
 			$headerSize = curl_getinfo( $c, CURLINFO_HEADER_SIZE );
-			$headerLines = explode( "\n", substr( $response, 0, $headerSize ) );
+			fseek( $headerStream, 0 );
+			$headerLines = explode( "\n", fread( $headerStream, $headerSize ) );
 			foreach( $headerLines as $line ) {
 				if ( preg_match( "/^(.+?):\s+(.+)$/", trim( $line ), $matches ) ) {
 					$headers[ strtolower( $matches[1] ) ] = $matches[2];
 				}
 				unset( $matches );
 			}
-			$text = substr( $response, $headerSize );
+			if ( !$toFile ) {
+				$text = ob_get_contents();
+				ob_end_clean();
+			}
 			$errorMessage = '';
 		}		
 		curl_close( $c );
