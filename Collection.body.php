@@ -545,7 +545,8 @@ class Collection extends SpecialPage {
 		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' );
 		$wgOut->redirect( wfAppendQuery( $redirect,
 			'return_to=' . urlencode( $referrer->getPrefixedText() )
-			. '&collection_id=' . urlencode( $response->collection_id ) ) );
+			. '&collection_id=' . urlencode( $response->collection_id )
+			. '&writer=' . urlencode( $response->writer ) ) );
 	}
 	
 	function rendering() {
@@ -555,25 +556,23 @@ class Collection extends SpecialPage {
 		
 		$this->setHeaders();
 		
-		$collection_id = $wgRequest->getVal( 'collection_id' );
-		$return_to = $wgRequest->getVal( 'return_to' );
-		
 		$response = self::pdfServerCommand( 'render_status', array(
-			'collection_id' => $collection_id,
+			'collection_id' => $wgRequest->getVal( 'collection_id' ),
+			'writer' => $wgRequest->getVal( 'writer' ),
 		) );
 		if ( !$response ) {
 			return;
 		}
 		
+		$return_to = $wgRequest->getVal( 'return_to' );
+				
 		switch ( $response->state ) {
 		case 'progress':
-			$params = 'collection_id=' . urlencode( $collection_id );
-			if ( $return_to ) {
-				$params .= '&return_to=' . urlencode( $wgRequest->getVal( 'return_to' ) );
-			}
 			$url = wfAppendQuery(
 				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' ),
-				$params
+				'collection_id=' . urlencode( $response->collection_id )
+				. '&writer=' . urlencode( $response->writer )
+				. '&return_to=' . urlencode( $return_to )
 			);
 			$wgOut->addMeta( 'http:refresh', '2; URL=' . $url );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
@@ -584,6 +583,7 @@ class Collection extends SpecialPage {
 			$url = wfAppendQuery(
 				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download/' ),
 				'collection_id=' . urlencode( $response->collection_id )
+				. '&writer=' . urlencode( $response->writer )
 			);
 			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_finished_text', $wgServer . $url ) );
 			if ( $return_to ) {
@@ -609,6 +609,7 @@ class Collection extends SpecialPage {
 		$tempfile = tmpfile();
 		$headers = self::pdfServerCommand( 'download', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
+			'writer' => $wgRequest->getVal( 'writer' ),
 		), $timeout=false, $toFile=$tempfile );
 		wfResetOutputBuffers();
 		if ( isset( $headers['content-type'] ) ) {
