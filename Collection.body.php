@@ -139,14 +139,14 @@ class Collection extends SpecialPage {
 				$userPageTitle = $wgUser->getUserPage()->getPrefixedText();
 				$name = $wgRequest->getVal( 'pcollname', '' );
 				if ( !empty( $name ) ) {
-					$title = Title::newFromText( $userPageTitle . '/' . wfMsg( 'coll-collections' ) . '/' . $name );
+					$title = Title::newFromText( $userPageTitle . '/' . wfMsgForContent( 'coll-collections' ) . '/' . $name );
 					$saveCalled = true;
 					$saved = $this->saveCollection( $title, $overwrite );
 				}
 			} else if ( $collType == 'community' ) {
 				$name = $wgRequest->getVal( 'ccollname', '' );
 				if ( !empty( $name ) ) {
-					$title = Title::makeTitle( $wgCommunityCollectionNamespace, wfMsg( 'coll-collections' ) . '/' . $name );
+					$title = Title::makeTitle( $wgCommunityCollectionNamespace, wfMsgForContent( 'coll-collections' ) . '/' . $name );
 					$saveCalled = true;
 					$saved = $this->saveCollection( $title, $overwrite );
 				}
@@ -443,7 +443,7 @@ class Collection extends SpecialPage {
 				}
 			}
 		}
-		$catTitle = Title::makeTitle( NS_CATEGORY, wfMsg( 'coll-collections' ) );
+		$catTitle = Title::makeTitle( NS_CATEGORY, wfMsgForContent( 'coll-collections' ) );
 		if ( !is_null( $catTitle ) ) {
 			$articleText .= "\n[[" . $catTitle->getPrefixedText() . "]]\n";
 		}
@@ -467,7 +467,7 @@ class Collection extends SpecialPage {
 		if ( $wgLicenseName ) {
 			$licenseInfo['name'] = $wgLicenseName;
 		} else {
-			$licenseInfo['name'] = wfMsg( 'coll-license' );
+			$licenseInfo['name'] = wfMsgForContent( 'coll-license' );
 		}
 		
 		if ( $wgLicenseURL ) {
@@ -812,8 +812,8 @@ EOS
 			$communityColl = wfMsgHtml( 'coll-community_collection_label' );
 			$saveColl = wfMsgHtml( 'coll-save_collection' );
 
-			$personalTitle = htmlspecialchars( $wgUser->getUserPage()->getPrefixedText(). '/' . wfMsg( 'coll-collections' ) . '/' );
-			$communityTitle = htmlspecialchars( Title::makeTitle( $wgCommunityCollectionNamespace, wfMsg( 'coll-collections' ) )->getPrefixedText() . '/' );
+			$personalTitle = htmlspecialchars( $wgUser->getUserPage()->getPrefixedText(). '/' . wfMsgForContent( 'coll-collections' ) . '/' );
+			$communityTitle = htmlspecialchars( Title::makeTitle( $wgCommunityCollectionNamespace, wfMsgForContent( 'coll-collections' ) )->getPrefixedText() . '/' );
 
 			$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'save_collection/' ) );
 			$html .= <<<EOS
@@ -936,7 +936,7 @@ EOS
 		}
 
 		$categoryFinder = new Categoryfinder();
-		$categoryFinder->seed( array( $article->getID() ), array( wfMsg( 'coll-collections' ) ) );
+		$categoryFinder->seed( array( $article->getID() ), array( wfMsgForContent( 'coll-collections' ) ) );
 		$articles = $categoryFinder->run();
 		if ( in_array( $article->getID(), $articles ) ) {
 			return true;
@@ -1110,7 +1110,7 @@ EOS
 EOS
 		;
 		$helpCollections = wfMsgHtml( 'coll-help_collections' );
-		$helpURL = htmlspecialchars( Title::makeTitle( NS_HELP, wfMsg( 'coll-collections' ) )->getFullURL() );
+		$helpURL = htmlspecialchars( Title::makeTitle( NS_HELP, wfMsgForContent( 'coll-collections' ) )->getFullURL() );
 		print <<<EOS
 						<li><a href="$helpURL">$helpCollections</a></li>
 					</ul>
