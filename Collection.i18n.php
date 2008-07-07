@@ -27,7 +27,7 @@ $messages['en'] = array(
 	'coll-desc'                       => '[[Special:Collection|Collect pages]], generate PDFs',
 	'coll-collection'                 => 'Collection', # do not translate or duplicate this message to other languages
 	'coll-collections'                => 'Collections',
-	'coll-portlet_title'              => 'My Collection',
+	'coll-portlet_title'              => 'My collection',
 	'coll-add_page'                   => 'Add page',
 	'coll-remove_page'                => 'Remove page',
 	'coll-add_category'               => 'Add category',
@@ -39,7 +39,7 @@ $messages['en'] = array(
 	'coll-pages'                      => 'pages',
 	'coll-download_as_pdf'            => 'Download as PDF',
 	'coll-download_as_odf'            => 'Download as ODF',
-	'coll-noscript_text'              => '<h1>JavaScript is Required!</h1>
+	'coll-noscript_text'              => '<h1>JavaScript is required!</h1>
 <strong>Your browser does not support JavaScript or JavaScript has been turned off.
 This page will not work correctly, unless JavaScript is enabled.</strong>',
 	'coll-intro_text'                 => "You can collect pages, generate and download a PDF file from page collections and save page collections for later use or to share them.
@@ -48,7 +48,7 @@ See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more inf
 	'coll-helppage'                   => 'Help:Collections',
 	'coll-too_big_cat'                => 'The category contains more than %PARAM% pages, only the first %PARAM% pages can be added to your collection.
 Do you want to add them?',
-	'coll-my_collection'              => 'My Collection',
+	'coll-my_collection'              => 'My collection',
 	'coll-download_title'             => 'Download collection as PDF',
 	'coll-download_text'              => 'To download an automatically generated PDF file of your page collection, click the button.',
 	'coll-download_pdf'               => 'Download PDF',
@@ -72,7 +72,7 @@ Do you want to add them?',
 	'coll-notitle_title'              => 'The title of the page could not be determined.',
 	'coll-post_failed_title'          => 'POST request failed',
 	'coll-post_failed_msg'            => 'The POST request to $1 failed ($2).',
-	'coll-pdfserver_failed_title'     => 'PDF Server Error',
+	'coll-pdfserver_failed_title'     => 'PDF server error',
 	'coll-pdfserver_failed_msg'       => 'An error occured on the PDF Server: $1',
 	'coll-enter_title'                => 'Enter title for collection:',
 	'coll-error_reponse'              => 'Error response from server',
@@ -83,8 +83,9 @@ Do you want to add them?',
 	'coll-login_to_save'              => 'If you want to save collections for later use, please [[Special:Userlogin|log in or create an account]].',
 	'coll-personal_collection_label'  => 'Personal collection:',
 	'coll-community_collection_label' => 'Community collection:',
-	'coll-save_collection'            => 'Save Collection',
-	'coll-overwrite_title'            => 'Page exists. Overwrite?',
+	'coll-save_collection'            => 'Save collection',
+	'coll-overwrite_title'            => 'Page exists.
+Overwrite?',
 	'coll-overwrite_text'             => 'A page with the name [[:$1]] already exists.
 Do you want it to be replaced with your collection?',
 	'coll-yes'                        => 'Yes',
@@ -104,7 +105,7 @@ Progress: '''$1%'''.
 
 This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.",
-	'coll-rendering_finished_title'   => 'Rendering Finished',
+	'coll-rendering_finished_title'   => 'Rendering finished',
 	'coll-rendering_finished_text'    => "'''The document file has been generated.'''
 [$1 Click here] to download it to your computer.
 
