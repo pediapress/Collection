@@ -147,7 +147,7 @@ $messages['mhr'] = array(
 	'coll-cancel' => 'Чараш',
 );
 
-/** Niuean (native name missing)
+/** Niuean (ko e vagahau Niuē)
  * @author Jose77
  */
 $messages['niu'] = array(
@@ -289,6 +289,7 @@ $messages['bg'] = array(
 	'coll-page'                  => 'страница',
 	'coll-pages'                 => 'страници',
 	'coll-download_as_pdf'       => 'Изтегляне като PDF',
+	'coll-download_as_odf'       => 'Изтегляне като ODF',
 	'coll-noscript_text'         => '<h1>Изисква се Джаваскрипт!</h1>
 <strong>Използваният браузър не поддържа Джаваскрипт или поддръжката на Джаваскрипт е изключена.
 Тази страница не може да работи правилно докато Джаваскриптът не бъде активиран.</strong>',
@@ -316,6 +317,7 @@ $messages['bg'] = array(
 	'coll-return_to_collection'  => 'Връщане към <a href="$1">$2</a>',
 	'coll-order_from_pp'         => 'Поръчване на книга от $1',
 	'coll-about_pp'              => 'За $1',
+	'coll-license'               => 'Лиценз',
 );
 
 /** Catalan (Català)
