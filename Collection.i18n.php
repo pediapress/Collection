@@ -571,6 +571,7 @@ $messages['eo'] = array(
 	'coll-helppage'                   => 'Helpo:Kolektoj',
 	'coll-my_collection'              => 'Mia kolekto',
 	'coll-download_title'             => 'Alŝutu kolekton kiel PDF-on',
+	'coll-download_text'              => 'Alŝuti aŭtomate generitan PDF-dosieron de via paĝkolekto, klaku la butonon.',
 	'coll-download_pdf'               => 'Alŝutu PDF',
 	'coll-remove'                     => 'Forigi',
 	'coll-move_to_top'                => 'Movi superen',
