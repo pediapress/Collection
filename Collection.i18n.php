@@ -612,6 +612,13 @@ $messages['eo'] = array(
 	'coll-limit_exceeded_text'        => 'Via paĝa kolekto estas tro granda.
 Neniom pluaj paĝoj ne povas esti aldonitaj.',
 	'coll-rendering_title'            => 'Generante',
+	'coll-rendering_text'             => "'''Bonvolu atendi dum la dokumento generiĝis.'''
+
+Finita: '''$1 %'''.
+
+Ĉi tiu paĝo aŭtomatike refreŝigu kelksekunde.
+Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.",
+	'coll-rendering_finished_title'   => 'Generado finiĝis.',
 	'coll-notfound_title'             => 'Kolekto Ne Trovita',
 	'coll-notfound_text'              => 'Ne eblas trovi kolekto-paĝon.',
 	'coll-return_to_collection'       => 'Reiru al <a href="$1">$2</a>',
@@ -1229,7 +1236,8 @@ $messages['km'] = array(
 	'coll-empty'                => 'ទទេ',
 	'coll-page'                 => 'ទំព័រ',
 	'coll-pages'                => 'ទំព័រ',
-	'coll-download_as_pdf'      => 'ទាញយក ជា​ PDF',
+	'coll-download_as_pdf'      => 'ទាញយកជា​ PDF',
+	'coll-my_collection'        => 'ការប្រមូលផ្តុំរបស់ខ្ញុំ',
 	'coll-download_pdf'         => 'ទាញយក PDF',
 	'coll-remove'               => 'ដកចេញ',
 	'coll-move_to_top'          => 'ទៅ​លើគេបំផុត',
@@ -1256,6 +1264,7 @@ $messages['km'] = array(
 	'coll-book_title'           => 'ទិញសៀវភៅដែលបានបោះពុម្ព',
 	'coll-order_from_pp'        => 'បញ្ជាទិញ​សៀវភៅពី $1',
 	'coll-about_pp'             => 'អំពី$1',
+	'coll-license'              => 'អាជ្ញាបណ្ណ',
 );
 
 /** Kinaray-a (Kinaray-a)
@@ -2085,6 +2094,7 @@ $messages['ru'] = array(
 	'coll-page'                       => 'страница',
 	'coll-pages'                      => 'страницы',
 	'coll-download_as_pdf'            => 'Скачать как PDF',
+	'coll-download_as_odf'            => 'Загрузить как ODF',
 	'coll-noscript_text'              => '<h1>Требуется JavaScript!</h1>
 <strong>Ваш браузер не поддерживает JavaScript или данная поддержка была отключена.
 Эта страница не будет работать правильно, если JavaScript не включен.</strong>',
@@ -2092,6 +2102,8 @@ $messages['ru'] = array(
 
 Подробности можно найти на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].',
 	'coll-helppage'                   => 'Справка:Коллекции',
+	'coll-too_big_cat'                => 'Категория содержит более %PARAM% страниц, в коллекцию могут быть добавлены только первые %PARAM% страниц.
+Желаете ли вы их добавить?',
 	'coll-my_collection'              => 'Моя коллекция',
 	'coll-download_title'             => 'Скачать коллекцию как PDF',
 	'coll-download_text'              => 'Нажмите кнопку, чтобы скачать автоматически созданный PDF-файл с вашей коллекций страниц.',
@@ -2115,6 +2127,8 @@ $messages['ru'] = array(
 	'coll-notitle_title'              => 'Заголовок страницы не может быть определён.',
 	'coll-post_failed_title'          => 'POST-запрос не выполнен',
 	'coll-post_failed_msg'            => 'POST-запрос к $1 не выполнен ($2).',
+	'coll-pdfserver_failed_title'     => 'ошибка PDF на сервере',
+	'coll-pdfserver_failed_msg'       => 'На PDF-сервере произошла ошибка: $1',
 	'coll-enter_title'                => 'Введите название коллекции:',
 	'coll-error_reponse'              => 'Ошибка ответа сервера',
 	'coll-empty_collection'           => 'Пустая коллекция',
