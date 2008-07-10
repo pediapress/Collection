@@ -1041,6 +1041,13 @@ $messages['hu'] = array(
 	'coll-no'    => 'Nem',
 );
 
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'coll-empty' => 'vacue',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author Irwangatot
  * @author Rex
