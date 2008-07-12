@@ -214,6 +214,7 @@ $messages['ar'] = array(
 	'coll-page'                       => 'صفحة',
 	'coll-pages'                      => 'صفحات',
 	'coll-download_as_pdf'            => 'حمل ك PDF',
+	'coll-download_as_odf'            => 'حمل كODF',
 	'coll-noscript_text'              => '<h1>الجافاسكريبت مطلوب!</h1>
 <strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
 هذه الصفحة لن تعمل بطريقة صحيحة، إلا إذا تم تفعيل الجافاسكريبت.</strong>',
@@ -269,12 +270,16 @@ $messages['ar'] = array(
 	'coll-limit_exceeded_title'       => 'المجموعة كبيرة جدا',
 	'coll-limit_exceeded_text'        => 'مجموعة صفحتك كبيرة جدا.
 لا مزيد من الصفحات يمكن إضافتها.',
+	'coll-rendering_title'            => 'عرض',
+	'coll-rendering_finished_title'   => 'العرض انتهى',
 	'coll-notfound_title'             => 'المجموعة غير موجودة',
 	'coll-notfound_text'              => 'لم يمكن العثور على صفحة المجموعة.',
 	'coll-return_to_collection'       => 'ارجع إلى <a href="$1">$2</a>',
 	'coll-book_title'                 => 'طلب كتاب مطبوع',
 	'coll-order_from_pp'              => 'طلب كتاب من $1',
 	'coll-about_pp'                   => 'حول $1',
+	'coll-invalid_podpartner_title'   => 'شريك POD غير صحيح',
+	'coll-license'                    => 'ترخيص',
 );
 
 /** Bulgarian (Български)
