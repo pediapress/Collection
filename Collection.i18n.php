@@ -2091,6 +2091,7 @@ Não poderão ser adicionadas mais páginas.',
  * @author Siebrand
  * @author Ahonc
  * @author MaxSem
+ * @author Innv
  */
 $messages['ru'] = array(
 	'coll-desc'                       => '[[Special:Collection|Собирает коллекции страниц]], создаёт PDF',
@@ -2174,6 +2175,7 @@ $messages['ru'] = array(
 	'coll-invalid_podpartner_title'   => 'Недействительный POD-партнёр',
 	'coll-invalid_podpartner_msg'     => 'Предоставляемый POD-партнёр недействителен.
 Пожалуйста, свяжитесь с вашим администратором MediaWiki.',
+	'coll-license'                    => 'Лицензия',
 );
 
 /** Slovak (Slovenčina)
@@ -2810,6 +2812,7 @@ Không thể thêm trang được nữa.',
 	'coll-invalid_podpartner_title'   => 'Thành phần đi kèm POD không hợp lệ',
 	'coll-invalid_podpartner_msg'     => 'Thành phần đi kèm POD đã cung cấp không hợp lệ.
 Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
+	'coll-license'                    => 'Giấy phép',
 );
 
 /** Volapük (Volapük)
