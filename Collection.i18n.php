@@ -1099,6 +1099,13 @@ $messages['is'] = array(
 	'coll-about_pp'             => 'Um $1',
 );
 
+/** Italian (Italiano)
+ * @author Pietrodn
+ */
+$messages['it'] = array(
+	'coll-pages' => 'pagine',
+);
+
 /** Japanese (日本語)
  * @author JtFuruhata
  * @author Siebrand
@@ -2165,6 +2172,19 @@ $messages['ru'] = array(
 	'coll-limit_exceeded_title'       => 'Коллекция слишком большая',
 	'coll-limit_exceeded_text'        => 'Ваша коллекция слишком большая.
 В неё нельзя больше добавлять страницы.',
+	'coll-rendering_title'            => 'Создание',
+	'coll-rendering_text'             => "'''Пожалуйста, подождите, идёт создание документа.'''
+
+Ход работы: '''$1 %'''.
+
+Эта страница должна обновляться раз в несколько секунд.
+Если этого не происходит, пожалуйста, нажмите кнопку «обновить» браузера.",
+	'coll-rendering_finished_title'   => 'Создание завершено',
+	'coll-rendering_finished_text'    => "'''Файл документа создан.'''
+[$1 Нажмите здесь], чтобы загрузить его на ваш компьютер.
+
+Не удовлетворены результатом?
+Возможности его улучшения описаны на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].",
 	'coll-notfound_title'             => 'Коллекция не найдена',
 	'coll-notfound_text'              => 'Невозможно найти страницу коллекции.',
 	'coll-return_to_collection'       => 'Назад к <a href="$1">$2</a>',
