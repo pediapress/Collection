@@ -380,7 +380,7 @@ Táto stránka nebude správně fungovat dokud nezapnete JavaScript.</strong>',
 	'coll-intro_text'                 => 'Můžete vytvářet kolekce stránek, vytvářet a stahovat PDF soubory vytvořené z kolekce stránek a ukládat kolekce stránek pro pozdější využití nebo je sdílet
 
 Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku nápovědy ke kolekcím]].',
-	'coll-helppage'                   => '{{ns:Help}}:Kolekce',
+	'coll-helppage'                   => 'Help:Kolekce',
 	'coll-my_collection'              => 'Moje kolekce',
 	'coll-download_title'             => 'Stáhnout kolekci jako PDF',
 	'coll-download_text'              => 'Stáhnout automaticky vytvořený PDF soubor vaší kolekce stránek. Klikněte na tlačítko.',
@@ -573,7 +573,7 @@ $messages['eo'] = array(
 	'coll-pages'                      => 'paĝoj',
 	'coll-download_as_pdf'            => 'Alŝuti kiel PDF',
 	'coll-download_as_odf'            => 'Elŝuti kiel ODF',
-	'coll-helppage'                   => 'Helpo:Kolektoj',
+	'coll-helppage'                   => 'Help:Kolektoj',
 	'coll-my_collection'              => 'Mia kolekto',
 	'coll-download_title'             => 'Alŝutu kolekton kiel PDF-on',
 	'coll-download_text'              => 'Alŝuti aŭtomate generitan PDF-dosieron de via paĝkolekto, klaku la butonon.',
@@ -678,7 +678,7 @@ Cette page ne s'affichera pas correctement tant que javascript n'est pas activé
 	'coll-intro_text'                 => "Vous pouvez collecter des pages, générer et télécharger des fichiers PDF depuis les collections de paéges ou des sauvegarde desdites collections pour un usage ultérieur ou pour les partager.
 
 Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections]] pour d'avantage d'informations.",
-	'coll-helppage'                   => 'Aide:Collections',
+	'coll-helppage'                   => 'Help:Collections',
 	'coll-too_big_cat'                => 'La catégorie contient plus de %PARAM% pages, seul les %PARAM% premières pages seront ajoutées à votre collection.',
 	'coll-my_collection'              => 'Ma compilation',
 	'coll-download_title'             => 'Télécharger la compilation en PDF',
@@ -997,7 +997,7 @@ $messages['hsb'] = array(
 	'coll-page'                      => 'strona',
 	'coll-pages'                     => 'strony',
 	'coll-download_as_pdf'           => 'Jako PDF sćahnyć',
-	'coll-helppage'                  => 'Pomoc:Zběrki',
+	'coll-helppage'                  => 'Help:Zběrki',
 	'coll-my_collection'             => 'Moja zběrka',
 	'coll-download_title'            => 'Zběrku jako PDF sćahnyć',
 	'coll-download_pdf'              => 'PDF sćahnyć',
@@ -1130,7 +1130,7 @@ $messages['ja'] = array(
 	'coll-intro_text'                 => 'ページコレクションを作成したり、そこからPDFファイルを作成しダウンロードしたり、後に参照したり共有するためにコレクションを保存することができます。
 
 詳細は、[[{{MediaWiki:Coll-helppage}}|ページコレクションのヘルプ]]をご覧ください。',
-	'coll-helppage'                   => '{{ns:help}}:ページコレクション',
+	'coll-helppage'                   => 'Help:ページコレクション',
 	'coll-my_collection'              => 'マイ・コレクション',
 	'coll-download_title'             => 'PDF形式でコレクションをダウンロード',
 	'coll-download_text'              => 'ページコレクションから自動生成されたPDFファイルをダウンロードするには、このボタンを押してください。',
@@ -1327,7 +1327,7 @@ $messages['lb'] = array(
 	'coll-noscript_text'              => '<h1>JavaScript gëtt gebraucht!</h1>
 <strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
 Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</strong>',
-	'coll-helppage'                   => 'Hellëf:Kollektioun',
+	'coll-helppage'                   => 'Help:Kollektioun',
 	'coll-my_collection'              => 'Meng Sammlung',
 	'coll-download_title'             => 'Kollektioun als PDF eroflueden',
 	'coll-download_pdf'               => 'PDF eroflueden',
@@ -1806,7 +1806,7 @@ Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activ
 	'coll-intro_text'                 => "Podètz collectar de paginas, generar e telecargar de fichièrs PDF dempuèi las colleccions de paginas o dels salvaments de las dichas colleccions per un usatge ulterior o per las partejar.
 
 Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entresenhas.",
-	'coll-helppage'                   => 'Ajuda:Collections',
+	'coll-helppage'                   => 'Help:Collections',
 	'coll-too_big_cat'                => 'La categoria conten mai de %PARAM% paginas, sonque las %PARAM% primièras paginas seràn apondudas a vòstra colleccion.',
 	'coll-my_collection'              => 'Ma compilacion',
 	'coll-download_title'             => 'Telecargar la compilacion en PDF',
@@ -1920,7 +1920,7 @@ Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączo
 	'coll-intro_text'                 => 'Narzędzie umożliwia tworzenie kolekcji stron, z których można wygenerować plik PDF, jak też zapisać je w celu późniejszego wykorzystania lub udostępnienia.
 
 Więcej informacji na [[{{MediaWiki:Coll-helppage}}|stronie pomocy dotyczącej kolekcji]].',
-	'coll-helppage'                   => 'Pomoc:Kolekcje',
+	'coll-helppage'                   => 'Help:Kolekcje',
 	'coll-my_collection'              => 'Moja kolekcja',
 	'coll-download_title'             => 'Pobierz kolekcję jako PDF',
 	'coll-download_text'              => 'Naciśnij przycisk, by pobrać automatycznie wygenerowaną wersję PDF Twojej kolekcji stron',
@@ -2018,7 +2018,7 @@ $messages['ps'] = array(
  * @author MF-Warburg
  */
 $messages['pt'] = array(
-	'coll-desc'                       => '[[{{ns:special}}:Collection|Colecciona páginas]], gera PDFs',
+	'coll-desc'                       => '[[Special:Collection|Colecciona páginas]], gera PDFs',
 	'coll-collections'                => 'Colecções',
 	'coll-portlet_title'              => 'Minha Colecção',
 	'coll-add_page'                   => 'Adicionar página',
@@ -2037,7 +2037,7 @@ Esta página não funcionará correctamente, excepto se o JavaScript for activad
 	'coll-intro_text'                 => 'Você pode coleccionar páginas, gerar e descarregar um ficheiro PDF de colecções de páginas e gravar colecções de páginas para usar mais tarde ou partilhá-las.
 
 Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para mais informação.',
-	'coll-helppage'                   => '{{ns:help}}:Colecções',
+	'coll-helppage'                   => 'Help:Colecções',
 	'coll-my_collection'              => 'Minha Colecção',
 	'coll-download_title'             => 'Descarregar Colecção como PDF',
 	'coll-download_text'              => 'Para descarregar um ficheiro PDF da sua colecção de páginas gerado automaticamente, carregue no botão.',
@@ -2121,7 +2121,7 @@ $messages['ru'] = array(
 	'coll-intro_text'                 => 'Вы можете объединить страницы в коллекцию, создать и скачать PDF-файл с набором страниц, или сохранить коллекцию страниц для последующей работы или обмена.
 
 Подробности можно найти на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].',
-	'coll-helppage'                   => 'Справка:Коллекции',
+	'coll-helppage'                   => 'Help:Коллекции',
 	'coll-too_big_cat'                => 'Категория содержит более %PARAM% страниц, в коллекцию могут быть добавлены только первые %PARAM% страниц.
 Желаете ли вы их добавить?',
 	'coll-my_collection'              => 'Моя коллекция',
@@ -2223,7 +2223,7 @@ Táto stránka nebude správne fungovať ak nezapnete JavaScript.</strong>',
 	'coll-intro_text'                 => 'Môžete vytvárať kolekcie stránok, vytvárať a stiahnuť PDF súbor z kolekcie stránok a ukladať kolekcie stránok pre neskoršie využitie alebo ich zdieľať.
 
 Pozri ďalšie informácie na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].',
-	'coll-helppage'                   => 'Pomoc:Kolekcie',
+	'coll-helppage'                   => 'Help:Kolekcie',
 	'coll-too_big_cat'                => 'Vaša kateǵoria obsahuje viac ako %PARAM% stránok. Do kolekcie je možné pridať iba prvých %PARAM% stránok.
 Chcete ich pridať?',
 	'coll-my_collection'              => 'Moja kolekcia',
@@ -2600,7 +2600,7 @@ $messages['tg-cyrl'] = array(
 	'coll-intro_text'                 => 'Шумо метавонед саҳифаҳоро гирдовари кунед, тавлид ва бор кардани парвандаҳои PDF аз саҳифаҳои гирдовариҳо ва захир кардани гирдовариҳо барои истифодаи баъдӣ ё бо ҳам дидани онҳо бо дигарон.
 
 Барои иттилооти бештар нигаред ба [[{{MediaWiki:Coll-helppage}}|саҳифаи роҳнамо оиди гирдовариҳо]].',
-	'coll-helppage'                   => 'Роҳнамо:Гирдовариҳо',
+	'coll-helppage'                   => 'Help:Гирдовариҳо',
 	'coll-my_collection'              => 'Гирдоварии Ман',
 	'coll-download_title'             => 'Бор кардани гирдовари ҳамчун PDF',
 	'coll-download_text'              => 'Барои бор кардани парвандаи PDF саҳифаи гирдоварии худ, ки ба таври худкор ҳосил шудааст, тугмаро пахш кунед.',
@@ -2694,7 +2694,7 @@ $messages['uk'] = array(
 	'coll-intro_text'                 => "Ви можете об'єднати сторінки в колекцію, створити і завантажити PDF-файл з набором сторінок, або зберегти колекцію сторінок для наступної роботи або обміну.
 
 Подробиці можна знайти на [[{{MediaWiki:Coll-helppage}}|довідковій сторінці про колекції]].",
-	'coll-helppage'                   => 'Довідка:Колекції',
+	'coll-helppage'                   => 'Help:Колекції',
 	'coll-my_collection'              => 'Моя колекція',
 	'coll-download_title'             => 'Завантажити колекцію як PDF',
 	'coll-download_text'              => 'Щоб завантажити автоматично створений PDF-файл з вашою колекцією сторінок, натисніть кнопку.',
@@ -2775,7 +2775,7 @@ Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaS
 	'coll-intro_text'                 => 'Bạn có thể tập hợp các trang, tạo ra và tải về một tập tin PDF từ tập hợp trang đó và lưu tập hợp lại để dùng hoặc chia sẻ chúng về sau.
 
 Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] để biết thêm thông tin.',
-	'coll-helppage'                   => 'Trợ giúp:Tập hợp',
+	'coll-helppage'                   => 'Help:Tập hợp',
 	'coll-my_collection'              => 'Tập hợp của tôi',
 	'coll-download_title'             => 'Tải tập hợp về dưới dạng PDF',
 	'coll-download_text'              => 'Để tải về một tập tin PDF được tự động tạo ra từ tập hợp trang của bạn, hãy nhấn nút.',
