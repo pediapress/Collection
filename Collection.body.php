@@ -1187,7 +1187,7 @@ EOS
 		if ( $timeout ) {
 			curl_setopt( $c, CURLOPT_TIMEOUT, $wgHTTPTimeout );
 		}
-		$headerStream = fopen('/tmp/headers.txt', 'w+'); tmpfile();
+		$headerStream = tmpfile();
 		curl_setopt( $c, CURLOPT_WRITEHEADER, $headerStream );
 		if ( $toFile ) {
 			curl_setopt( $c, CURLOPT_FILE, $toFile );
