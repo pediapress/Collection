@@ -1539,6 +1539,17 @@ $messages['mr'] = array(
 कृपया मीडियाविकि प्रबंधकाशी संपर्क करा.',
 );
 
+/** Nahuatl (Nahuatl)
+ * @author Fluence
+ */
+$messages['nah'] = array(
+	'coll-page'   => 'zāzanilli',
+	'coll-title'  => 'Tōcāitl:',
+	'coll-yes'    => 'Quēmah',
+	'coll-no'     => 'Ahmo',
+	'coll-cancel' => 'Ticcuepāz',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  * @author Siebrand
@@ -2091,6 +2102,52 @@ Não poderão ser adicionadas mais páginas.',
 	'coll-book_text'                  => 'Você pode encomendar um livro impresso contendo a sua colecção de páginas visitando um dos seguintes parceiros de impressão a pedido:',
 	'coll-order_from_pp'              => 'Encomendar o livro de $1',
 	'coll-about_pp'                   => 'Sobre $1',
+);
+
+/** Romanian (Română)
+ * @author KlaudiuMihaila
+ */
+$messages['ro'] = array(
+	'coll-desc'                      => '[[Special:Collection|Colecţionează pagini]], generează fişiere PDF',
+	'coll-collections'               => 'Colecţii',
+	'coll-portlet_title'             => 'Colecţia mea',
+	'coll-add_page'                  => 'Adaugă pagină',
+	'coll-remove_page'               => 'Elimină pagină',
+	'coll-add_category'              => 'Adaugă categorie',
+	'coll-load_collection'           => 'Încarcă colecţie',
+	'coll-show_collection'           => 'Arată colecţie',
+	'coll-page'                      => 'pagină',
+	'coll-pages'                     => 'pagini',
+	'coll-download_as_pdf'           => 'Descarcă ca PDF',
+	'coll-download_as_odf'           => 'Descarcă ca ODF',
+	'coll-my_collection'             => 'Colecţia mea',
+	'coll-download_pdf'              => 'Descarcă PDF',
+	'coll-remove'                    => 'Elimină',
+	'coll-title'                     => 'Titlu:',
+	'coll-subtitle'                  => 'Subtitlu:',
+	'coll-contents'                  => 'Cuprins',
+	'coll-create_chapter'            => 'Creează capitol nou',
+	'coll-sort_alphabetically'       => 'Ordonează paginile alfabetic',
+	'coll-rename'                    => 'Redenumeşte',
+	'coll-post_failed_title'         => 'Cerere POST eşuată',
+	'coll-post_failed_msg'           => 'Cererea POST către $1 a eşuat ($2).',
+	'coll-error_reponse'             => 'Răspuns de eroare de la server',
+	'coll-empty_collection'          => 'Colecţie goală',
+	'coll-revision'                  => 'Versiune: %PARAM%',
+	'coll-save_collection_title'     => 'Salvează colecţia',
+	'coll-personal_collection_label' => 'Colecţie personală:',
+	'coll-save_collection'           => 'Salvează colecţia',
+	'coll-overwrite_title'           => 'Pagina există.
+Suprascrie?',
+	'coll-yes'                       => 'Da',
+	'coll-no'                        => 'Nu',
+	'coll-overwrite'                 => 'Suprascrie',
+	'coll-cancel'                    => 'Anulează',
+	'coll-notfound_title'            => 'Colecţie negăsită',
+	'coll-return_to_collection'      => 'Întoarcere la <a href="$1">$2</a>',
+	'coll-order_from_pp'             => 'Comandă carte de la $1',
+	'coll-about_pp'                  => 'Despre $1',
+	'coll-license'                   => 'Licenţă',
 );
 
 /** Russian (Русский)
