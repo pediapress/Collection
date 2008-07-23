@@ -82,10 +82,9 @@ Installation and Configuration of the Collection Extension
    
        array(
            'rl' => 'PDF',
-           'odf' => 'ODT',
        )
     
-   i.e. PDF and ODF enabled. See mwlib_ for possible other writers.
+   i.e. only PDF enabled. See mwlib_ for possible other writers.
    
   *$wgCommunityCollectionNamespace (integer)*
    Namespace for "community collections", i.e. the namespace where non-personal
