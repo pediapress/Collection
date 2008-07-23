@@ -75,6 +75,17 @@ Installation and Configuration of the Collection Extension
    SECURITY NOTICE: If the MediaWiki and the render server communicate over an
    insecure channel (e.g. on an unencrypted channel over the internet), please
    DO NOT USE THIS SETTING, as the credentials will be exposed to eavesdropping!
+  
+  *$wgCollectionFormats*
+   An array mapping names of mwlib_ writers to the name of the produces format.
+   The default value is:
+   
+       array(
+           'rl' => 'PDF',
+           'odf' => 'ODT',
+       )
+    
+   i.e. PDF and ODF enabled. See mwlib_ for possible other writers.
    
   *$wgCommunityCollectionNamespace (integer)*
    Namespace for "community collections", i.e. the namespace where non-personal

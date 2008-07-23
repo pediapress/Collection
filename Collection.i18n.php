@@ -37,8 +37,7 @@ $messages['en'] = array(
 	'coll-empty'                      => 'empty',
 	'coll-page'                       => 'page',
 	'coll-pages'                      => 'pages',
-	'coll-download_as_pdf'            => 'Download as PDF',
-	'coll-download_as_odf'            => 'Download as ODF',
+	'coll-download_as'                => 'Download as $1',
 	'coll-noscript_text'              => '<h1>JavaScript is required!</h1>
 <strong>Your browser does not support JavaScript or JavaScript has been turned off.
 This page will not work correctly, unless JavaScript is enabled.</strong>',
@@ -49,9 +48,10 @@ See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more inf
 	'coll-too_big_cat'                => 'The category contains more than %PARAM% pages, only the first %PARAM% pages can be added to your collection.
 Do you want to add them?',
 	'coll-my_collection'              => 'My collection',
-	'coll-download_title'             => 'Download collection as PDF',
-	'coll-download_text'              => 'To download an automatically generated PDF file of your page collection, click the button.',
-	'coll-download_pdf'               => 'Download PDF',
+	'coll-download_title'             => 'Download collection',
+	'coll-download_text'              => 'To download an automatically generated document of your page collection, choose a format and click the button.',
+	'coll-download'                   => 'Download',
+	'coll-format_label'               => 'Format:',
 	'coll-remove'                     => 'Remove',
 	'coll-move_to_top'                => 'Move to top',
 	'coll-move_up'                    => 'Move up',

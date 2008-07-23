@@ -172,7 +172,7 @@ class Collection extends SpecialPage {
 			return $this->renderCollection(
 				$_SESSION['wsCollection'],
 				Title::makeTitle( NS_SPECIAL, 'Collection' ),
-				$wgRequest->getVal( 'downloadWriter', '' )
+				$wgRequest->getVal( 'writer', '' )
 			);
 		} else if ( $par == 'rendering/' ) {
 			return $this->rendering();
@@ -781,17 +781,34 @@ EOS
 	}
 
 	private function outputDownloadSection() {
+		global $wgCollectionFormats;
+		
 		$downloadTitle = wfMsgHtml( 'coll-download_title' );
 		$downloadText = wfMsgHtml( 'coll-download_text' );
-		$buttonLabel = wfMsgHtml( 'coll-download_pdf' );
 		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'render/' ) );
+		$buttonLabel = wfMsgHtml( 'coll-download' );
+		$formatLabel = wfMsgHtml( 'coll-format_label' );
 		$html = <<<EOS
 <h2><span class="mw-headline">$downloadTitle</span></h2>
 <p>$downloadText</p>
 <form id="downloadForm" action="$url" method="POST">
-	<input id="downloadButton" type="submit" value="$buttonLabel"></input>
-	<input id="downloadTitle" name="downloadTitle" type="hidden"></input>
-	<input id="downloadSubtitle" name="downloadSubtitle" type="hidden"></input>
+<input id="downloadTitle" name="downloadTitle" type="hidden"></input>
+<input id="downloadSubtitle" name="downloadSubtitle" type="hidden"></input>
+<label for="formatSelect">$formatLabel</label>
+<select id="formatSelect" name="writer">
+EOS
+		;
+		foreach ( $wgCollectionFormats as $writer => $name ) {
+			$writer = htmlspecialchars( $writer );
+			$name = htmlspecialchars( $name );
+			$html .= <<<EOS
+<option value="$writer">$name</option>
+EOS
+			;
+		}
+		$html .= <<<EOS
+</select>
+<input id="downloadButton" type="submit" value="$buttonLabel"></input>
 </form>
 EOS
 		;
@@ -950,7 +967,7 @@ EOS
 	function createNavURLs( &$skinTemplate, &$nav_urls, &$revid1, &$revid2 ) {
 		global $wgArticle;
 		global $wgRequest;
-		global $wgCollectionUseODF;
+		global $wgCollectionFormats;
 
 		wfLoadExtensionMessages( 'Collection' );
 
@@ -959,20 +976,13 @@ EOS
 		if ( $skinTemplate->iscontent && ( $action == '' || $action == 'view' || $action == 'purge' ) ) {
 			if ( self::isCollectionPage( $skinTemplate->mTitle, $wgArticle ) ) {
 				$params = 'colltitle=' . wfUrlencode( $skinTemplate->mTitle->getPrefixedDBKey() );
-				$nav_urls['download_as_pdf'] = array(
-					'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
-						'Collection',
-						'render_collection/'
-					), $params ),
-					'text' => wfMsg( 'coll-download_as_pdf' ),
-				);
-				if ( $wgCollectionUseODF ) {
-					$nav_urls['download_as_odf'] = array(
+				foreach ( $wgCollectionFormats as $writer => $name ) {
+					$nav_urls['download_as_' . $writer] = array(
 						'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 							'Collection',
 							'render_collection/'
-						), $params . '&writer=odf' ),
-						'text' => wfMsg( 'coll-download_as_odf' ),
+						), $params . '&writer=' . $writer ),
+						'text' => wfMsg( 'coll-download_as', $name ),
 					);
 				}
 			} else {
@@ -983,20 +993,13 @@ EOS
 						$params .= '&oldid=' . $oldid;
 					}
 				}
-				$nav_urls['download_as_pdf'] = array(
-					'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
-						'Collection',
-						'render_article/'
-					), $params ),
-					'text' => wfMsg( 'coll-download_as_pdf' )
-				);
-				if ( $wgCollectionUseODF ) {
-					$nav_urls['download_as_odf'] = array(
+				foreach ( $wgCollectionFormats as $writer => $name ) {
+					$nav_urls['download_as_' . $writer] = array(
 						'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 							'Collection',
 							'render_article/'
-						), $params . '&writer=odf' ),
-						'text' => wfMsg( 'coll-download_as_odf' )
+						), $params . '&writer=' . $writer ),
+						'text' => wfMsg( 'coll-download_as', $name )
 					);
 				}
 			}
@@ -1009,21 +1012,18 @@ EOS
 	 * MonoBookTemplateToolboxEnd hook
 	 */
 	static function insertMonoBookToolboxLink( &$skinTemplate ) {
-		if ( !empty( $skinTemplate->data['nav_urls']['download_as_pdf']['href'] ) ) {
-			$href = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_pdf']['href'] );
-			$label = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_pdf']['text'] );
-			print <<<EOS
-<li id="t-pdf"><a href="$href">$label</a></li>
+		global $wgCollectionFormats;
+		
+		foreach ( $wgCollectionFormats as $writer => $name ) {
+			if ( !empty( $skinTemplate->data['nav_urls']['download_as_' . $writer]['href'] ) ) {
+				$href = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_' . $writer]['href'] );
+				$label = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_' . $writer]['text'] );
+				print <<<EOS
+<li id="t-download-as-$writer"><a href="$href">$label</a></li>
 EOS
-			;
-		}
-		if ( !empty( $skinTemplate->data['nav_urls']['download_as_odf']['href'] ) ) {
-			$href = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_odf']['href'] );
-			$label = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_odf']['text'] );
-			print <<<EOS
-<li id="t-pdf"><a href="$href">$label</a></li>
-EOS
-			;
+				;
+			}
+			
 		}
 		return true;
 	}
