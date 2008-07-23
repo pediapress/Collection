@@ -58,8 +58,12 @@ $wgLicenseURL = null;
 /** Template blacklist article */
 $wgPDFTemplateBlacklist = 'MediaWiki:PDF Template Blacklist';
 
-/** Add experimental support to output ODF documents (in addition to PDFs) */
-$wgCollectionUseODF = false;
+/** List of available download formats,
+    as mapping of mwlib writer to format name */
+$wgCollectionFormats = array(
+	'rl' => 'PDF',
+	'odf' => 'ODF',
+);
 
 # ==============================================================================
 
