@@ -222,6 +222,8 @@ $messages['ar'] = array(
 
 انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
 	'coll-helppage'                   => 'Help:مجموعات',
+	'coll-too_big_cat'                => 'التصنيف يحتوي على أكثر من %PARAM% صفحة، فقط أول %PARAM% صفحة يمكن إضافتها إلى مجموعتك.
+هل تريد إضافتها؟',
 	'coll-my_collection'              => 'مجموعتي',
 	'coll-download_title'             => 'حمل المجموعة ك PDF',
 	'coll-download_text'              => 'لتحميل ملف PDF مولد تلقائيا من مجموعة صفحتك، اضغط الزر.',
@@ -271,14 +273,28 @@ $messages['ar'] = array(
 	'coll-limit_exceeded_text'        => 'مجموعة صفحتك كبيرة جدا.
 لا مزيد من الصفحات يمكن إضافتها.',
 	'coll-rendering_title'            => 'عرض',
+	'coll-rendering_text'             => "'''من فضلك انتظر أثناء توليد الوثيقة.'''
+
+التقدم: '''$1%'''.
+
+هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان.
+لو أن هذا لا يعمل، من فضلك اضغط زر التحديث في متصفحك.",
 	'coll-rendering_finished_title'   => 'العرض انتهى',
+	'coll-rendering_finished_text'    => "'''ملف الوثيقة تم توليده.'''
+[$1 اضغط هنا] لتنزيله إلى حاسوبك.
+
+غير راض عن الخرج؟
+انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.",
 	'coll-notfound_title'             => 'المجموعة غير موجودة',
 	'coll-notfound_text'              => 'لم يمكن العثور على صفحة المجموعة.',
 	'coll-return_to_collection'       => 'ارجع إلى <a href="$1">$2</a>',
 	'coll-book_title'                 => 'طلب كتاب مطبوع',
+	'coll-book_text'                  => 'يمكنك طلب كتاب مطبوع يحتوي على مجموعة صفحاتك بواسطة زيارة واحدا من شركاء الطباعة عند الطلب التاليين:',
 	'coll-order_from_pp'              => 'طلب كتاب من $1',
 	'coll-about_pp'                   => 'حول $1',
 	'coll-invalid_podpartner_title'   => 'شريك POD غير صحيح',
+	'coll-invalid_podpartner_msg'     => 'شريك POD الموفر غير صحيح.
+من فضلك اتصل بإداري ميدياويكي الخاص بك.',
 	'coll-license'                    => 'ترخيص',
 );
 
