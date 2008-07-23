@@ -62,7 +62,6 @@ $wgPDFTemplateBlacklist = 'MediaWiki:PDF Template Blacklist';
     as mapping of mwlib writer to format name */
 $wgCollectionFormats = array(
 	'rl' => 'PDF',
-	'odf' => 'ODF',
 );
 
 # ==============================================================================
