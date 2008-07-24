@@ -303,18 +303,16 @@ $messages['ar'] = array(
  * @author Siebrand
  */
 $messages['bg'] = array(
+	'coll-desc'                  => 'Добавя възможност за [[Special:Collection|събиране на страници]] и преобразуването им в PDF',
 	'coll-add_page'              => 'Добавяне на страница',
 	'coll-remove_page'           => 'Премахване на страница',
 	'coll-add_category'          => 'Добавяне на категория',
 	'coll-empty'                 => 'празна',
 	'coll-page'                  => 'страница',
 	'coll-pages'                 => 'страници',
-	'coll-download_as_pdf'       => 'Изтегляне като PDF',
-	'coll-download_as_odf'       => 'Изтегляне като ODF',
 	'coll-noscript_text'         => '<h1>Изисква се Джаваскрипт!</h1>
 <strong>Използваният браузър не поддържа Джаваскрипт или поддръжката на Джаваскрипт е изключена.
 Тази страница не може да работи правилно докато Джаваскриптът не бъде активиран.</strong>',
-	'coll-download_pdf'          => 'Изтегляне на PDF',
 	'coll-remove'                => 'Премахване',
 	'coll-move_to_top'           => 'Преместване в началото',
 	'coll-move_up'               => 'Преместване нагоре',
@@ -1117,9 +1115,18 @@ $messages['is'] = array(
 
 /** Italian (Italiano)
  * @author Pietrodn
+ * @author Darth Kule
  */
 $messages['it'] = array(
-	'coll-pages' => 'pagine',
+	'coll-desc'            => '[[Special:Collection|Raccoglie pagine]], genera PDF',
+	'coll-collections'     => 'Raccolte',
+	'coll-portlet_title'   => 'La mia raccolta',
+	'coll-add_page'        => 'Aggiungi pagina',
+	'coll-remove_page'     => 'Rimuovi pagina',
+	'coll-add_category'    => 'Aggiungi categoria',
+	'coll-load_collection' => 'Carica raccolta',
+	'coll-show_collection' => 'Mostra raccolta',
+	'coll-pages'           => 'pagine',
 );
 
 /** Japanese (日本語)
@@ -1612,8 +1619,7 @@ $messages['nl'] = array(
 	'coll-empty'                      => 'leeg',
 	'coll-page'                       => 'pagina',
 	'coll-pages'                      => "pagina's",
-	'coll-download_as_pdf'            => 'Als PDF downloaden',
-	'coll-download_as_odf'            => 'Als ODF downloaden',
+	'coll-download_as'                => 'Downloaden als $1',
 	'coll-noscript_text'              => '<h1>JavaScript is vereist!</h1>
 <strong>Uw browser understeunt geen JavaScript of JavaScript is uitgeschakeld.
 Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong>',
@@ -1626,7 +1632,8 @@ Wilt u ze toevoegen?",
 	'coll-my_collection'              => 'Mijn verzameling',
 	'coll-download_title'             => 'Verzameling als PDF downloaden',
 	'coll-download_text'              => 'Klik op de knop om een automatisch gemaakt PDF-bestand van uw paginaverzameling te downloaden.',
-	'coll-download_pdf'               => 'PDF downloaden',
+	'coll-download'                   => 'Downloaden',
+	'coll-format_label'               => 'Formaat:',
 	'coll-remove'                     => 'Verwijderen',
 	'coll-move_to_top'                => 'Helemaal naar boven',
 	'coll-move_up'                    => 'Naar boven',
