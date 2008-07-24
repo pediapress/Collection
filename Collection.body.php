@@ -786,7 +786,6 @@ EOS
 		$downloadTitle = wfMsgHtml( 'coll-download_title' );
 		$downloadText = wfMsgHtml( 'coll-download_text' );
 		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'render/' ) );
-		$buttonLabel = wfMsgHtml( 'coll-download' );
 		$formatLabel = wfMsgHtml( 'coll-format_label' );
 		$html = <<<EOS
 <h2><span class="mw-headline">$downloadTitle</span></h2>
@@ -794,20 +793,37 @@ EOS
 <form id="downloadForm" action="$url" method="POST">
 <input id="downloadTitle" name="downloadTitle" type="hidden"></input>
 <input id="downloadSubtitle" name="downloadSubtitle" type="hidden"></input>
+EOS
+		;
+		
+		if ( count( $wgCollectionFormats ) == 1 ) {
+			$writer = array_rand( $wgCollectionFormats );
+			$name = $wgCollectionFormats[$writer];
+			$writer = htmlspecialchars( $writer );
+			$buttonLabel = wfMsgHtml( 'coll-download_as', $name );
+			$html .= <<<EOS
+<input type="hidden" name="writer" value="$writer"></input>
+EOS
+			;
+			
+		} else {
+			$buttonLabel = wfMsgHtml( 'coll-download' );
+			$html .= <<<EOS
 <label for="formatSelect">$formatLabel</label>
 <select id="formatSelect" name="writer">
 EOS
-		;
-		foreach ( $wgCollectionFormats as $writer => $name ) {
-			$writer = htmlspecialchars( $writer );
-			$name = htmlspecialchars( $name );
-			$html .= <<<EOS
+			;
+			foreach ( $wgCollectionFormats as $writer => $name ) {
+				$writer = htmlspecialchars( $writer );
+				$name = htmlspecialchars( $name );
+				$html .= <<<EOS
 <option value="$writer">$name</option>
 EOS
-			;
+				;
+			}
+			$html .= '</select>';
 		}
 		$html .= <<<EOS
-</select>
 <input id="downloadButton" type="submit" value="$buttonLabel"></input>
 </form>
 EOS
