@@ -213,8 +213,7 @@ $messages['ar'] = array(
 	'coll-empty'                      => 'فارغ',
 	'coll-page'                       => 'صفحة',
 	'coll-pages'                      => 'صفحات',
-	'coll-download_as_pdf'            => 'حمل ك PDF',
-	'coll-download_as_odf'            => 'حمل كODF',
+	'coll-download_as'                => 'تحميل ك$1',
 	'coll-noscript_text'              => '<h1>الجافاسكريبت مطلوب!</h1>
 <strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
 هذه الصفحة لن تعمل بطريقة صحيحة، إلا إذا تم تفعيل الجافاسكريبت.</strong>',
@@ -227,7 +226,8 @@ $messages['ar'] = array(
 	'coll-my_collection'              => 'مجموعتي',
 	'coll-download_title'             => 'حمل المجموعة ك PDF',
 	'coll-download_text'              => 'لتحميل ملف PDF مولد تلقائيا من مجموعة صفحتك، اضغط الزر.',
-	'coll-download_pdf'               => 'حمل PDF',
+	'coll-download'                   => 'تحميل',
+	'coll-format_label'               => 'الصيغة:',
 	'coll-remove'                     => 'إزالة',
 	'coll-move_to_top'                => 'تحريك إلى الأعلى',
 	'coll-move_up'                    => 'حرك إلى الأعلى',
@@ -684,8 +684,7 @@ $messages['fr'] = array(
 	'coll-empty'                      => 'vide',
 	'coll-page'                       => 'page',
 	'coll-pages'                      => 'pages',
-	'coll-download_as_pdf'            => 'Télécharger en PDF',
-	'coll-download_as_odf'            => 'Télécharger en ODF',
+	'coll-download_as'                => 'Téléchargé comme $1',
 	'coll-noscript_text'              => "<h1>Javascript est nécessaire !</h1>
 <strong>Votre navigateur ne supporte pas Javascript ou bien l'a désactivé.
 Cette page ne s'affichera pas correctement tant que javascript n'est pas activé.</strong>",
@@ -697,7 +696,8 @@ Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections
 	'coll-my_collection'              => 'Ma compilation',
 	'coll-download_title'             => 'Télécharger la compilation en PDF',
 	'coll-download_text'              => 'Pour télécharger un PDF généré automatiquement à partir de votre compilation, appuyez sur le bouton.',
-	'coll-download_pdf'               => 'Télécharger le PDF',
+	'coll-download'                   => 'Télécharger',
+	'coll-format_label'               => 'Format :',
 	'coll-remove'                     => 'Enlever',
 	'coll-move_to_top'                => 'Déplacer tout en haut',
 	'coll-move_up'                    => 'Monter',
@@ -794,8 +794,7 @@ $messages['gl'] = array(
 	'coll-empty'                      => 'baleiro',
 	'coll-page'                       => 'páxina',
 	'coll-pages'                      => 'páxinas',
-	'coll-download_as_pdf'            => 'Descargar como PDF',
-	'coll-download_as_odf'            => 'Descargar como arquivo ODF',
+	'coll-download_as'                => 'Descargar como $1',
 	'coll-noscript_text'              => '<h1>Requírese o JavaScript!</h1>
 <strong>O seu navegador non soporta o JavaScript ou o JavaScript foi deshabilitado.
 Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa habilitado.</strong>',
@@ -808,7 +807,8 @@ Quere engadilas?',
 	'coll-my_collection'              => 'A miña colección',
 	'coll-download_title'             => 'Descargar a colección como arquivo PDF',
 	'coll-download_text'              => 'Para descargar un arquivo PDF xerado automaticamente da súa páxina de colección, faga clic no botón.',
-	'coll-download_pdf'               => 'Descargar PDF',
+	'coll-download'                   => 'Descargar',
+	'coll-format_label'               => 'Formato:',
 	'coll-remove'                     => 'Eliminar',
 	'coll-move_to_top'                => 'Ir arriba',
 	'coll-move_up'                    => 'Mover arriba',
@@ -1116,17 +1116,102 @@ $messages['is'] = array(
 /** Italian (Italiano)
  * @author Pietrodn
  * @author Darth Kule
+ * @author Melos
  */
 $messages['it'] = array(
-	'coll-desc'            => '[[Special:Collection|Raccoglie pagine]], genera PDF',
-	'coll-collections'     => 'Raccolte',
-	'coll-portlet_title'   => 'La mia raccolta',
-	'coll-add_page'        => 'Aggiungi pagina',
-	'coll-remove_page'     => 'Rimuovi pagina',
-	'coll-add_category'    => 'Aggiungi categoria',
-	'coll-load_collection' => 'Carica raccolta',
-	'coll-show_collection' => 'Mostra raccolta',
-	'coll-pages'           => 'pagine',
+	'coll-desc'                       => '[[Special:Collection|Raccoglie pagine]], genera PDF',
+	'coll-collections'                => 'Raccolte',
+	'coll-portlet_title'              => 'La mia raccolta',
+	'coll-add_page'                   => 'Aggiungi pagina',
+	'coll-remove_page'                => 'Rimuovi pagina',
+	'coll-add_category'               => 'Aggiungi categoria',
+	'coll-load_collection'            => 'Carica raccolta',
+	'coll-show_collection'            => 'Mostra raccolta',
+	'coll-help_collections'           => 'Aiuto sulle raccolte',
+	'coll-empty'                      => 'vuota',
+	'coll-page'                       => 'pagina',
+	'coll-pages'                      => 'pagine',
+	'coll-download_as'                => 'Scarica come $1',
+	'coll-noscript_text'              => '<h1>È necessario avere JavaScript!</h1>
+<strong>Il tuo browser non supporta JavaScript oppure JavaScript è stato disattivato.
+La pagina non funzionerà correttamente se non verrà attivato JavaScript.</strong>',
+	'coll-intro_text'                 => 'È possibile raccogliere pagine, generare e scaricare un file PDF dalle raccolte e salvare le raccolte di pagine per usi successivi o per condividerle.
+
+Leggi la [[{{MediaWiki:Coll-helppage}}|pagina di aiuto sulle raccolte]] per maggiori informazioni.',
+	'coll-helppage'                   => 'Help:Raccolte',
+	'coll-too_big_cat'                => 'La categoria contiene più di %PARAM% pagine, solo le prime %PARAM% pagine possono essere aggiunte alla tua raccolte.
+Vuoi aggiungerle?',
+	'coll-my_collection'              => 'La mia raccolta',
+	'coll-download_title'             => 'Scarica raccolta',
+	'coll-download_text'              => 'Per scaricare un documento generato automaticamente della tua raccolta della pagina, scegli un formato e fai clic sul pulsante.',
+	'coll-download'                   => 'Scarica',
+	'coll-format_label'               => 'Formato:',
+	'coll-remove'                     => 'Rimuovi',
+	'coll-move_to_top'                => "Sposta all'inizio",
+	'coll-move_up'                    => 'Sposta più su',
+	'coll-move_down'                  => 'Sposta più giù',
+	'coll-move_to_bottom'             => 'Sposta in fondo',
+	'coll-title'                      => 'Titolo:',
+	'coll-subtitle'                   => 'Sottotitolo:',
+	'coll-contents'                   => 'Indice',
+	'coll-create_chapter'             => 'Crea nuovo capitolo',
+	'coll-sort_alphabetically'        => 'Ordina pagine alfabeticamente',
+	'coll-clear_collection'           => 'Svuota raccolta',
+	'coll-clear_confirm'              => 'Si desidera veramente svuotare la raccolta?',
+	'coll-rename'                     => 'Rinomina',
+	'coll-new_chapter'                => 'Inserisci il nome per il nuovo capitolo',
+	'coll-rename_chapter'             => 'Inserisci un nuovo nome per il capitolo',
+	'coll-no_such_category'           => 'Nessuna categoria',
+	'coll-notitle_title'              => 'Il titolo della pagina potrebbe non essere determinato.',
+	'coll-post_failed_title'          => 'Richiesta POST fallita',
+	'coll-post_failed_msg'            => 'La richiesta POST a $1 è fallita ($2).',
+	'coll-pdfserver_failed_title'     => 'Errore sul server PDF',
+	'coll-pdfserver_failed_msg'       => 'Si è verificato un errore sul Server PDF: $1',
+	'coll-enter_title'                => 'Inserisci titolo per la raccolta:',
+	'coll-error_reponse'              => 'Errore risposta dal server',
+	'coll-empty_collection'           => 'Raccolta vuota',
+	'coll-revision'                   => 'Revisione: %PARAM%',
+	'coll-save_collection_title'      => 'Salva raccolta',
+	'coll-save_collection_text'       => 'Per salvare questa raccolta per utilizzarla in seguito, scegli un tipo di raccolta e inserisci un titolo per la pagina:',
+	'coll-login_to_save'              => 'Se vuoi salvare la raccolta per utilizzarla in seguito, [[Special:Userlogin|entra o crea un nuovo accesso]].',
+	'coll-personal_collection_label'  => 'Raccolta personale:',
+	'coll-community_collection_label' => 'Raccolta della comunità:',
+	'coll-save_collection'            => 'Salva raccolta',
+	'coll-overwrite_title'            => 'La pagina esiste.
+Sovrascriverla?',
+	'coll-overwrite_text'             => 'Una pagina con il nome [[:$1]] esiste già?
+Si desidera che sia sostituita con la raccolta?',
+	'coll-yes'                        => 'Sì',
+	'coll-no'                         => 'No',
+	'coll-load_overwrite_text'        => 'Sono già presenti della pagine nella tua raccolta.
+Si desidera sovrascrivere la raccolta corrente, aggiungere il nuovo contenuto o annullare?',
+	'coll-overwrite'                  => 'Sovrascrivi',
+	'coll-append'                     => 'Aggiungi',
+	'coll-cancel'                     => 'Annulla',
+	'coll-limit_exceeded_title'       => 'Raccolta troppo grande',
+	'coll-limit_exceeded_text'        => 'La tua raccolta è troppo grande. Non è più possibile aggiungervi pagine.',
+	'coll-rendering_title'            => 'Conversione',
+	'coll-rendering_text'             => "'''Attendere mentre il documento viene generato.'''
+
+Avanzamento: '''$1%'''.
+
+Questa pagina dovrebbe aggiornarsi automaticamente ogni pochi secondi.
+Se questo non funziona, premi il pulsante di aggiornamento del tuo browser.",
+	'coll-rendering_finished_title'   => 'Conversione terminata',
+	'coll-rendering_finished_text'    => "'''Il documento è stato generato.'''
+[$1 Fai clic qui] per scaricarlo sul tuo computer.
+
+Non sei soddisfatto del risultato?
+Leggi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sulle raccolte]] riguardo alle possibilità per migliorarlo.",
+	'coll-notfound_title'             => 'Raccolta non trovata',
+	'coll-return_to_collection'       => 'Torna a <a href="$1">$2</a>',
+	'coll-book_title'                 => 'Ordina libro stampato',
+	'coll-book_text'                  => 'Puoi ordinare un libro stampato contenente la tua raccolta visitando uno dei seguenti partner di stampa su richiesta (print-on-demand):',
+	'coll-order_from_pp'              => 'Ordina libro da $1',
+	'coll-about_pp'                   => 'Informazioni su $1',
+	'coll-invalid_podpartner_title'   => 'Partner POD non valido',
+	'coll-invalid_podpartner_msg'     => 'Il partner POD fornito non è valido. Contatta il tuo amministratore MediaWiki.',
+	'coll-license'                    => 'Licenza',
 );
 
 /** Japanese (日本語)
@@ -1345,15 +1430,15 @@ $messages['lb'] = array(
 	'coll-empty'                      => 'eidel',
 	'coll-page'                       => 'Säit',
 	'coll-pages'                      => 'Säiten',
-	'coll-download_as_pdf'            => 'Als PDF eroflueden',
-	'coll-download_as_odf'            => 'Als ODF eroflueden',
+	'coll-download_as'                => 'Als $1 eroflueden',
 	'coll-noscript_text'              => '<h1>JavaScript gëtt gebraucht!</h1>
 <strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
 Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</strong>',
 	'coll-helppage'                   => 'Help:Kollektioun',
 	'coll-my_collection'              => 'Meng Sammlung',
 	'coll-download_title'             => 'Kollektioun als PDF eroflueden',
-	'coll-download_pdf'               => 'PDF eroflueden',
+	'coll-download'                   => 'Eroflueden',
+	'coll-format_label'               => 'Format:',
 	'coll-remove'                     => 'Ewechhuelen',
 	'coll-move_to_top'                => 'No ganz uewe réckelen',
 	'coll-move_up'                    => 'Eropréckelen',
@@ -1566,6 +1651,7 @@ $messages['mr'] = array(
  * @author Fluence
  */
 $messages['nah'] = array(
+	'coll-empty'  => '(iztāc)',
 	'coll-page'   => 'zāzanilli',
 	'coll-title'  => 'Tōcāitl:',
 	'coll-yes'    => 'Quēmah',
@@ -2487,8 +2573,7 @@ $messages['sv'] = array(
 	'coll-empty'                      => 'tom',
 	'coll-page'                       => 'sida',
 	'coll-pages'                      => 'sidor',
-	'coll-download_as_pdf'            => 'Ladda ner som PDF',
-	'coll-download_as_odf'            => 'Ladda ner som ODF',
+	'coll-download_as'                => 'Ladda ner som $1',
 	'coll-noscript_text'              => '<h1>JavaScript är nödvändigt!</h1>
 <strong>Din webbläsare stödjer inte JavaScript eller har JavaScript blivigt avslagen.
 Denna sida kommer inte att fungera korrekt, tills JavaScript är tillgängligt.</strong>',
@@ -2501,7 +2586,8 @@ Vill du lägga till dem?',
 	'coll-my_collection'              => 'Min samling',
 	'coll-download_title'             => 'Ladda ner samling som PDF',
 	'coll-download_text'              => 'För att ladda ner en automatisk genererad PDF-fil av din sidsamling, klicka på knappen.',
-	'coll-download_pdf'               => 'Ladda ner PDF',
+	'coll-download'                   => 'Ladda ner',
+	'coll-format_label'               => 'Format:',
 	'coll-remove'                     => 'Ta bort',
 	'coll-move_to_top'                => 'Flytta till toppen',
 	'coll-move_up'                    => 'Flytta upp',
