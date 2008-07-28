@@ -800,6 +800,7 @@ EOS
 			$writer = array_rand( $wgCollectionFormats );
 			$name = $wgCollectionFormats[$writer];
 			$writer = htmlspecialchars( $writer );
+			$name = htmlspecialchars( $name );
 			$buttonLabel = wfMsgHtml( 'coll-download_as', $name );
 			$html .= <<<EOS
 <input type="hidden" name="writer" value="$writer"></input>
