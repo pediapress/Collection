@@ -490,7 +490,7 @@ $messages['de'] = array(
 	'coll-empty'                      => 'leer',
 	'coll-page'                       => 'Seite',
 	'coll-pages'                      => 'Seiten',
-	'coll-download_as_pdf'            => 'Als PDF herunterladen',
+	'coll-download_as'                => 'Als $1 herunterladen',
 	'coll-noscript_text'              => '<h1>JavaScript wird benötigt!</h1>
 <strong>Dein Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
 Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong>',
@@ -499,9 +499,10 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 Siehe auch die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Kollektionen]] für weitere Informationen.',
 	'coll-helppage'                   => 'Help:Kollektionen',
 	'coll-my_collection'              => 'Meine Kollektion',
-	'coll-download_title'             => 'Kollektion als PDF herunterladen',
-	'coll-download_text'              => 'Um eine automatisch erstellte PDF-Datei deiner Kollektion herunterzuladen, klicke auf die Schaltfläche.',
-	'coll-download_pdf'               => 'PDF herunterladen',
+	'coll-download_title'             => 'Kollektion herunterladen',
+	'coll-download_text'              => 'Um eine automatisch erstellte Datei deiner Kollektion herunterzuladen, klicke auf die Schaltfläche.',
+	'coll-download'                   => 'Herunterladen',
+	'coll-format_label'               => 'Format:',
 	'coll-remove'                     => 'Entfernen',
 	'coll-move_to_top'                => 'an den Anfang',
 	'coll-move_up'                    => 'hoch',
