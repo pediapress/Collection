@@ -1919,8 +1919,7 @@ $messages['oc'] = array(
 	'coll-empty'                      => 'void',
 	'coll-page'                       => 'pagina',
 	'coll-pages'                      => 'paginas',
-	'coll-download_as_pdf'            => 'Telecargar en PDF',
-	'coll-download_as_odf'            => 'Telecargar en ODF',
+	'coll-download_as'                => 'Telecargat coma $1',
 	'coll-noscript_text'              => "<h1>Javascript es necessari !</h1>
 <strong>Vòstre navigador supòrta pas Javascript o se l'a desactivat.
 Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activat.</strong>",
@@ -1932,7 +1931,8 @@ Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de collecc
 	'coll-my_collection'              => 'Ma compilacion',
 	'coll-download_title'             => 'Telecargar la compilacion en PDF',
 	'coll-download_text'              => 'Per telecargar un PDF generat automaticament a partir de vòstra compilacion, picatz sul boton.',
-	'coll-download_pdf'               => 'Telecargar lo PDF',
+	'coll-download'                   => 'Telecargar',
+	'coll-format_label'               => 'Format :',
 	'coll-remove'                     => 'Levar',
 	'coll-move_to_top'                => 'Desplaçar tot en naut',
 	'coll-move_up'                    => 'Pujar',
