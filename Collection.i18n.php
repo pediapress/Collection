@@ -314,6 +314,8 @@ $messages['bg'] = array(
 	'coll-noscript_text'         => '<h1>Изисква се Джаваскрипт!</h1>
 <strong>Използваният браузър не поддържа Джаваскрипт или поддръжката на Джаваскрипт е изключена.
 Тази страница не може да работи правилно докато Джаваскриптът не бъде активиран.</strong>',
+	'coll-download'              => 'Изтегляне',
+	'coll-format_label'          => 'Формат:',
 	'coll-remove'                => 'Премахване',
 	'coll-move_to_top'           => 'Преместване в началото',
 	'coll-move_up'               => 'Преместване нагоре',
@@ -476,6 +478,8 @@ $messages['da'] = array(
  * @author Raimond Spekking
  * @author VolkerHaas
  * @author Siebrand
+ * @author Revolus
+ * @author Raymond
  */
 $messages['de'] = array(
 	'coll-desc'                       => '[[Special:Collection|Sammle Seiten]], erzeuge PDFs',
@@ -522,6 +526,8 @@ Siehe auch die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Kollektionen]] für weiter
 	'coll-notitle_title'              => 'Der Titel der Seite konnte nicht bestimmt werden.',
 	'coll-post_failed_title'          => 'POST-Anfrage fehlgeschlagen',
 	'coll-post_failed_msg'            => 'Die POST-Anfrage an $1 ist fehlgeschlagen ($2).',
+	'coll-pdfserver_failed_title'     => 'PDF-Server-Fehler',
+	'coll-pdfserver_failed_msg'       => 'Ein Fehler trat auf dem PDF-Server auf: $1',
 	'coll-enter_title'                => 'Titel der Kollektion eingeben:',
 	'coll-error_reponse'              => 'Fehlermeldung vom Server',
 	'coll-empty_collection'           => 'Leere Kollektion',
@@ -542,6 +548,19 @@ Siehe auch die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Kollektionen]] für weiter
 	'coll-cancel'                     => 'Abbrechen',
 	'coll-limit_exceeded_title'       => 'Kollektion zu groß',
 	'coll-limit_exceeded_text'        => 'Deine Kollektion ist zu groß. Es können keine Seiten mehr hinzugefügt werden.',
+	'coll-rendering_title'            => 'Beim Erstellen',
+	'coll-rendering_text'             => "'''Bitte habe Geduld, während das Dokument erstellt wird.'''
+
+Fortschritt: '''$1 %'''.
+
+Diese Seite sollte alle sich paar Sekunden von selbst aktualisieren.
+Falls dieses jedoch nicht geschieht, so drücke bitte den „Aktualisieren“-Knopf (meist F5) deines Browsers.",
+	'coll-rendering_finished_title'   => 'Fertig erstellt',
+	'coll-rendering_finished_text'    => "'''Die Datei wurde erfolgreich erstellt.'''
+[$1 Klicke hier] um die Datei herunter zu laden.
+
+Bist du nicht zufrieden mit dem Ergebnis?
+Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Coll-helppage}}|Hilfsseite über die Seitenkollektionen]].",
 	'coll-notfound_title'             => 'Kollektion nicht gefunden',
 	'coll-notfound_text'              => 'Deine Kollektion konnte nicht gefunden werden.',
 	'coll-return_to_collection'       => 'Zurück zu <a href="$1">$2</a>',
