@@ -526,7 +526,7 @@ Siehe auch die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Kollektionen]] für weiter
 	'coll-notitle_title'              => 'Der Titel der Seite konnte nicht bestimmt werden.',
 	'coll-post_failed_title'          => 'POST-Anfrage fehlgeschlagen',
 	'coll-post_failed_msg'            => 'Die POST-Anfrage an $1 ist fehlgeschlagen ($2).',
-	'coll-pdfserver_failed_title'     => 'PDF-Server-Fehler',
+	'coll-pdfserver_failed_title'     => 'PDF-Serverfehler',
 	'coll-pdfserver_failed_msg'       => 'Ein Fehler trat auf dem PDF-Server auf: $1',
 	'coll-enter_title'                => 'Titel der Kollektion eingeben:',
 	'coll-error_reponse'              => 'Fehlermeldung vom Server',
@@ -1995,7 +1995,7 @@ Volètz espotir vòstra compilacion actuala, i apondre lo contengut o alara anul
 	'coll-cancel'                     => 'Anullar',
 	'coll-limit_exceeded_title'       => 'Compilacion tròp granda',
 	'coll-limit_exceeded_text'        => 'Vòstra compilacion es tròp granda.
-Cap de pagina pòt pas èsser ajustada.',
+Cap de pagina pòt pas èsser aponduda.',
 	'coll-rendering_title'            => 'Rendut',
 	'coll-rendering_text'             => "'''Pacientatz pendent que lo document es en cors de creacion.'''
 
