@@ -36,6 +36,10 @@ from the MediaWiki installation and can be shared by different MediaWikis.
 See the ``mw-serve`` command or the ``mwlib.cgi`` script in the mwlib_
 distribution.
 
+If you use a a render server the `MediaWiki API`_ must be enabled
+(i.e. just don't override the default value of ``true`` for ``$wgEnableApi``
+in your ``LocalSettings.php``).
+
 If you have a low-traffic MediaWiki you can use the public render server running
 at http://tools.pediapress.com/mw-serve/. In this case, just keep
 the configuration variable $wgCollectionMWServe (see below) at its default
@@ -162,3 +166,4 @@ Installation and Configuration of the Collection Extension
 .. _`PediaPress GmbH`: http://pediapress.com/
 .. _`Wikimedia Foundation`: http://wikimediafoundation.org/
 .. _`Commonwealth of Learning`: http://www.col.org/
+.. _`MediaWiki API`: http://www.mediawiki.org/wiki/API
