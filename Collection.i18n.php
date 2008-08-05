@@ -301,7 +301,6 @@ $messages['ar'] = array(
 
 /** Bulgarian (Български)
  * @author DCLXVI
- * @author Siebrand
  */
 $messages['bg'] = array(
 	'coll-desc'                  => 'Добавя възможност за [[Special:Collection|събиране на страници]] и преобразуването им в PDF',
@@ -311,6 +310,7 @@ $messages['bg'] = array(
 	'coll-empty'                 => 'празна',
 	'coll-page'                  => 'страница',
 	'coll-pages'                 => 'страници',
+	'coll-download_as'           => 'Изтегляне като $1',
 	'coll-noscript_text'         => '<h1>Изисква се Джаваскрипт!</h1>
 <strong>Използваният браузър не поддържа Джаваскрипт или поддръжката на Джаваскрипт е изключена.
 Тази страница не може да работи правилно докато Джаваскриптът не бъде активиран.</strong>',
@@ -688,8 +688,8 @@ $messages['fi'] = array(
  * @author Meithal
  * @author Grondin
  * @author Verdy p
- * @author Siebrand
  * @author IAlex
+ * @author McDutchie
  */
 $messages['fr'] = array(
 	'coll-desc'                       => "[[Special:Collection|Compiler des pages]], générer des pdf's",
@@ -704,7 +704,7 @@ $messages['fr'] = array(
 	'coll-empty'                      => 'vide',
 	'coll-page'                       => 'page',
 	'coll-pages'                      => 'pages',
-	'coll-download_as'                => 'Téléchargé comme $1',
+	'coll-download_as'                => 'Télécharger comme $1',
 	'coll-noscript_text'              => "<h1>Javascript est nécessaire !</h1>
 <strong>Votre navigateur ne supporte pas Javascript ou bien l'a désactivé.
 Cette page ne s'affichera pas correctement tant que javascript n'est pas activé.</strong>",
@@ -1084,7 +1084,102 @@ $messages['hu'] = array(
  * @author McDutchie
  */
 $messages['ia'] = array(
-	'coll-empty' => 'vacue',
+	'coll-desc'                       => '[[Special:Collection|Paginas de collection]], generar files PDF',
+	'coll-collections'                => 'Collectiones',
+	'coll-portlet_title'              => 'Mi collection',
+	'coll-add_page'                   => 'Adder pagina',
+	'coll-remove_page'                => 'Remover pagina',
+	'coll-add_category'               => 'Adder categoria',
+	'coll-load_collection'            => 'Cargar collection',
+	'coll-show_collection'            => 'Monstrar collection',
+	'coll-help_collections'           => 'Adjuta super le collectiones',
+	'coll-empty'                      => 'vacue',
+	'coll-page'                       => 'pagina',
+	'coll-pages'                      => 'paginas',
+	'coll-download_as'                => 'Discargar como $1',
+	'coll-noscript_text'              => '<h1>JavaScript es requirite!</h1>
+<strong>Tu navigator non supporta JavaScript o JavaScript ha essite disactivate.
+Iste pagina non functionara correctemente si JavaScript non es activate.</strong>',
+	'coll-intro_text'                 => 'Tu pote colliger paginas, generar e discargar un file PDF de collectiones de paginas, e immagazinar le collectiones de paginas pro uso posterior o pro excambiar los con altere personas.
+
+Vide le [[{{MediaWiki:Coll-helppage}}|pagina de adjuta super le collectiones]] pro ulterior informationes.',
+	'coll-helppage'                   => 'Help:Collectiones',
+	'coll-too_big_cat'                => 'Le categoria contine plus de %PARAM% paginas. Solmente le prime %PARAM% paginas pote esser addite a tu collection.
+Esque tu vole adder los?',
+	'coll-my_collection'              => 'Mi collection',
+	'coll-download_title'             => 'Discargar collection',
+	'coll-download_text'              => 'Pro discargar un documento automaticamente generate de tu collection de paginas, selige un formato e clicca super le button.',
+	'coll-download'                   => 'Discargar',
+	'coll-format_label'               => 'Formato:',
+	'coll-remove'                     => 'Remover',
+	'coll-move_to_top'                => 'Displaciar al initio',
+	'coll-move_up'                    => 'Displaciar in alto',
+	'coll-move_down'                  => 'Displaciar a basso',
+	'coll-move_to_bottom'             => 'Displaciar al fin',
+	'coll-title'                      => 'Titulo:',
+	'coll-subtitle'                   => 'Subtitulo:',
+	'coll-contents'                   => 'Contento',
+	'coll-create_chapter'             => 'Crear nove capitulo',
+	'coll-sort_alphabetically'        => 'Ordinar paginas alphabeticamente',
+	'coll-clear_collection'           => 'Rader collection',
+	'coll-clear_confirm'              => 'Esque tu vole vermente rader tu collection?',
+	'coll-rename'                     => 'Renominar',
+	'coll-new_chapter'                => 'Entra nomine pro nove capitulo',
+	'coll-rename_chapter'             => 'Entra nove nomine pro capitulo',
+	'coll-no_such_category'           => 'Categoria non existe',
+	'coll-notitle_title'              => 'Le titulo del pagina non poteva esser determinate.',
+	'coll-post_failed_title'          => 'Requeta POST fallite',
+	'coll-post_failed_msg'            => 'Le requesta POST a $1 falleva ($2).',
+	'coll-pdfserver_failed_title'     => 'Error del servitor PDF',
+	'coll-pdfserver_failed_msg'       => 'Un error occurreva in le servitor PDF: $1',
+	'coll-enter_title'                => 'Entra titulo pro collection:',
+	'coll-error_reponse'              => 'Responsa de error ab servitor',
+	'coll-empty_collection'           => 'Collection vacue',
+	'coll-revision'                   => 'Revision: %PARAM%',
+	'coll-save_collection_title'      => 'Immagazinar collection',
+	'coll-save_collection_text'       => 'Pro immagazinar iste collection pro uso futur, selige un typo de collection e entra un titulo de pagina:',
+	'coll-login_to_save'              => 'Si tu vole immagazinar collectiones pro uso futur, per favor [[Special:Userlogin|aperi un session o crea un conto]].',
+	'coll-personal_collection_label'  => 'Collection personal:',
+	'coll-community_collection_label' => 'Collection communitari:',
+	'coll-save_collection'            => 'Immagazinar collection',
+	'coll-overwrite_title'            => 'Le pagina existe ja.
+Superscriber lo?',
+	'coll-overwrite_text'             => 'Existe ja un pagina con le nomine [[:$1]].
+Esque tu vole reimplaciar lo con tu collection?',
+	'coll-yes'                        => 'Si',
+	'coll-no'                         => 'No',
+	'coll-load_overwrite_text'        => 'Tu ha ja alcun paginas in tu collection.
+Esque tu vole superscriber tu collection actual, appender le nove contento, o cancellar?',
+	'coll-overwrite'                  => 'Superscriber',
+	'coll-append'                     => 'Appender',
+	'coll-cancel'                     => 'Cancellar',
+	'coll-limit_exceeded_title'       => 'Collection troppo grande',
+	'coll-limit_exceeded_text'        => 'Tu collection de paginas es troppo grande.
+Non es possibile adder plus paginas.',
+	'coll-rendering_title'            => 'Rendition',
+	'coll-rendering_text'             => "'''Per favor attende durante le generation del documento.'''
+
+Progresso: '''$1%'''.
+
+Iste pagina debe refrescar se cata pauc secundas.
+Si isto non functiona, per favor preme le button de refrescar in tu navigator.",
+	'coll-rendering_finished_title'   => 'Rendition finite',
+	'coll-rendering_finished_text'    => "'''Le file del documento ha essite generate.'''
+[$1 Clicca hic] pro discargar lo a tu computator.
+
+Non satisfacite con le resultato?
+Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le collectiones]] pro possibilitates de meliorar lo.",
+	'coll-notfound_title'             => 'Collection non trovate',
+	'coll-notfound_text'              => 'Non poteva trovar le pagina de collection.',
+	'coll-return_to_collection'       => 'Retornar a <a href="$1">$2</a>',
+	'coll-book_title'                 => 'Commandar libro imprimite',
+	'coll-book_text'                  => 'Tu pote commandar un libro imprimite con tu collection de paginas per visitar un del sequente partenarios de impression a requesta (print on demand):',
+	'coll-order_from_pp'              => 'Commandar libro ab $1',
+	'coll-about_pp'                   => 'A proposito de $1',
+	'coll-invalid_podpartner_title'   => 'Partenario de impression a requesta (POD) non valide',
+	'coll-invalid_podpartner_msg'     => 'Le partenario indicate de impression a requesta (POD) non es valide.
+Per favor contacta tu administrator de MediaWiki.',
+	'coll-license'                    => 'Licentia',
 );
 
 /** Indonesian (Bahasa Indonesia)
