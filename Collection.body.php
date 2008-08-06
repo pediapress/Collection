@@ -69,7 +69,7 @@ class Collection extends SpecialPage {
 			} else {
 				$redirectURL = $title->getFullURL( 'oldid=' . $oldid );
 			}
-			$title->invalidateCache();
+			$wgUser->invalidateCache();
 			$wgOut->redirect( $redirectURL );
 			return;
 		} else if ( $par == 'remove_article/' ) {
@@ -82,7 +82,7 @@ class Collection extends SpecialPage {
 			} else {
 				$redirectURL = $title->getFullURL( 'oldid=' . $oldid );
 			}
-			$title->invalidateCache();
+			$wgUser->invalidateCache();
 			$wgOut->redirect( $redirectURL );
 			return;
 		} else if ( $par == 'add_category/' ) {
@@ -93,7 +93,7 @@ class Collection extends SpecialPage {
 			} else {
 				$wgOut->redirect( $title->getFullURL() );
 			}
-			$title->invalidateCache();
+			$wgUser->invalidateCache();
 			return;
 		} else if ( $par == 'load_collection/' ) {
 			$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
@@ -1045,6 +1045,24 @@ EOS
 		return true;
 	}
 
+
+	static function buildSidebar( $skin, &$bar ) {
+		global $wgArticle, $wgUser;
+		if( $wgUser->isLoggedIn() ) {
+			// We don't want this sidebar gadget polluting the HTTP caches.
+			// To stay on the safe side for now, we'll show this only for
+			// logged-in users.
+			//
+			// In theory this could be managed properly for open sessions,
+			// but you'd have to inject something for non-open sessions or
+			// it would be very confusing.
+			if( $wgArticle && $wgArticle->exists() ) {
+				$bar['COLLECTION'] = self::printPortlet();
+			}
+		}
+		return true;
+	}
+	
 	/**
 	 * Return HTML-code to be inserted as portlet
 	 */
@@ -1067,13 +1085,7 @@ EOS
 		$loadCollection = wfMsgHtml( 'coll-load_collection' );
 		$tooBigCat = wfMsgHtml( 'coll-too_big_cat' );
 
-		print <<<EOS
-			<div id="p-collection" class="portlet">
-				<h5>$portletTitle</h5>
-				<div class="pBody">
-					<ul>
-EOS
-		;
+		$out = "<ul>";
 		if ( is_null( $wgArticle ) || !$wgArticle->exists() ) {
 			// no op
 		} else if ( self::isCollectionPage( $wgTitle, $wgArticle) ) {
@@ -1082,7 +1094,7 @@ EOS
 				'Collection',
 				'load_collection/'
 			), $params ) );
-			print "<li><a href=\"$href\">$loadCollection</a></li>";
+			$out .= "<li><a href=\"$href\">$loadCollection</a></li>";
 		} else if ( $wgTitle->getNamespace() == NS_MAIN ) { // TODO: only NS_MAIN?
 			$params = "arttitle=" . $wgTitle->getPrefixedUrl() . "&oldid=" . $wgArticle->getOldID();
 
@@ -1091,13 +1103,13 @@ EOS
 					'Collection',
 					'add_article/'
 				), $params ) );
-				print "<li><a href=\"$href\">$addArticle</a></li>";
+				$out .= "<li><a href=\"$href\">$addArticle</a></li>";
 			} else {
 				$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 					'Collection',
 					'remove_article/'
 				), $params ) );
-				print "<li><a href=\"$href\">$removeArticle</a></li>";
+				$out .= "<li><a href=\"$href\">$removeArticle</a></li>";
 			}
 		} else if ( $wgTitle->getNamespace() == NS_CATEGORY ) {
 			$params = "cattitle=" . $wgTitle->getPartialURL();
@@ -1105,7 +1117,7 @@ EOS
 				'Collection',
 				'add_category/'
 			), $params ) );
-			print "<li><a href=\"$href\">$addCategory</a></li>";
+			$out .= "<li><a href=\"$href\">$addCategory</a></li>";
 		}
 
 		$numArticles = self::countArticles();
@@ -1121,21 +1133,20 @@ EOS
 		}
 		$showCollection = wfMsgHtml( 'coll-show_collection' );
 		$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
-		print <<<EOS
+		$out .= <<<EOS
 						<li><a href="$showURL">$showCollection<br />
 							($articles)</a></li>
 EOS
 		;
 		$helpCollections = wfMsgHtml( 'coll-help_collections' );
 		$helpURL = htmlspecialchars( Title::makeTitle( NS_HELP, wfMsgForContent( 'coll-collections' ) )->getFullURL() );
-		print <<<EOS
+		$out .= <<<EOS
 						<li><a href="$helpURL">$helpCollections</a></li>
 					</ul>
-				</div>
-			</div>
 			<span id="tooBigCategoryText" style="display:none">$tooBigCat</span>
 EOS
 		;
+		return $out;
 	}
 	
 	static function pdfServerCommand( $command, $args, $timeout=true, $toFile=null ) {

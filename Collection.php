@@ -87,6 +87,8 @@ $wgHooks['LanguageGetSpecialPageAliases'][] = 'collectionLocalizedPageName';
 $wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'Collection::createNavURLs';
 $wgHooks['MonoBookTemplateToolboxEnd'][] = 'Collection::insertMonoBookToolboxLink';
 
+$wgHooks['SkinBuildSidebar'][] = 'Collection::buildSidebar';
+
 
 function collectionLocalizedPageName(&$specialPageArray, $code) {
 	wfLoadExtensionMessages( 'Collection' );
