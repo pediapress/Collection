@@ -69,7 +69,7 @@ $wgCollectionFormats = array(
 
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Collection',
-	'version' => '1.0',
+	'version' => '1.1',
 	'author' => 'PediaPress GmbH',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Collection',
 	'description' => 'Collect articles, generate PDFs',
@@ -81,22 +81,12 @@ $wgExtensionCredits['specialpage'][] = array(
 $dir = dirname(__FILE__) . '/';
 $wgAutoloadClasses['Collection'] = $dir . 'Collection.body.php';
 $wgExtensionMessagesFiles['Collection'] = $dir . 'Collection.i18n.php';
+$wgExtensionAliasesFiles['Collection'] = $dir . 'Collection.alias.php';
 $wgSpecialPages['Collection'] = 'Collection';
-$wgHooks['LanguageGetSpecialPageAliases'][] = 'collectionLocalizedPageName';
 
 $wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'Collection::createNavURLs';
 $wgHooks['MonoBookTemplateToolboxEnd'][] = 'Collection::insertMonoBookToolboxLink';
-
 $wgHooks['SkinBuildSidebar'][] = 'Collection::buildSidebar';
-
-
-function collectionLocalizedPageName(&$specialPageArray, $code) {
-	wfLoadExtensionMessages( 'Collection' );
-	$text = wfMsg( 'coll-collection' );
-	$title = Title::newFromText( $text );
-	$specialPageArray['Collection'][] = $title->getDBKey();
-	return true;
-}
 
 # register global Ajax functions:
 

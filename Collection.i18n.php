@@ -25,7 +25,6 @@ $messages = array();
 
 $messages['en'] = array(
 	'coll-desc'                       => '[[Special:Collection|Collect pages]], generate PDFs',
-	'coll-collection'                 => 'Collection', # do not translate or duplicate this message to other languages
 	'coll-collections'                => 'Collections',
 	'coll-portlet_title'              => 'My collection',
 	'coll-add_page'                   => 'Add page',
