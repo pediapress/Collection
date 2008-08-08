@@ -25,6 +25,7 @@ $messages = array();
 
 $messages['en'] = array(
 	'coll-desc'                       => '[[Special:Collection|Collect pages]], generate PDFs',
+	'coll-collection'                 => 'Collection',
 	'coll-collections'                => 'Collections',
 	'coll-portlet_title'              => 'My collection',
 	'coll-add_page'                   => 'Add page',
@@ -121,6 +122,17 @@ See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibil
 	'coll-invalid_podpartner_msg'     => 'The supplied POD partner is invalid.
 Please contact your MediaWiki administrator.',
 	'coll-license'                    => 'License',
+	'coll-start_title'                => "Start collection",
+	'coll-start_text'                 => "
+You can collect articles, generate and download a document in one of severa from article collections or from single articles, order books from a print-on-demand partner and save article collections for later use or to share them. 
+
+See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more information.
+",
+	'coll-start_add_box_title'        => "Start collection right now",
+	'coll-start_add_link'             => "Click to start your collection.",
+	'coll-start_add_page_text'        => "$1 will be the first article.",
+	'coll-start_add_page_category'    => "The articles in category $1 will be added.",
+	'coll-return_to'                  => "Return to [[:$1]]",
 );
 
 /** Faeag Rotuma (Faeag Rotuma)
