@@ -197,7 +197,6 @@ $messages['af'] = array(
 /** Arabic (العربية)
  * @author Meno25
  * @author OsamaK
- * @author Siebrand
  */
 $messages['ar'] = array(
 	'coll-desc'                       => '[[Special:Collection|صفحات مجموعة]]، تولد PDFs',
@@ -254,7 +253,7 @@ $messages['ar'] = array(
 	'coll-revision'                   => 'النسخة: %PARAM%',
 	'coll-save_collection_title'      => 'حفظ المجموعة',
 	'coll-save_collection_text'       => 'لحفظ هذه المجموعة للاستخدام المستقبلي، اختر نوع مجموعة وأدخل عنوان صفحة:',
-	'coll-login_to_save'              => 'لو كنت تريد حفظ المجموعات من أجل الاستخدام فيما بعد، من فضلك [[Special:Userlogin|قم بتسجيل الدخول أو إنشاء حساب]].',
+	'coll-login_to_save'              => 'لو كنت تريد حفظ المجموعات من أجل الاستخدام فيما بعد، من فضلك [[Special:UserLogin|قم بتسجيل الدخول أو إنشاء حساب]].',
 	'coll-personal_collection_label'  => 'مجموعة شخصية:',
 	'coll-community_collection_label' => 'مجموعة مجتمع:',
 	'coll-save_collection'            => 'حفظ المجموعة',
@@ -373,7 +372,6 @@ Aquesta pàgina no funcionarà correctament si no el poseu o l'activeu.</strong>
 
 /** Czech (Česky)
  * @author Matěj Grabovský
- * @author Siebrand
  * @author Mormegil
  */
 $messages['cs'] = array(
@@ -389,7 +387,6 @@ $messages['cs'] = array(
 	'coll-empty'                      => 'prázdná',
 	'coll-page'                       => 'stránka',
 	'coll-pages'                      => 'stránky',
-	'coll-download_as_pdf'            => 'Stáhnout jako PDF',
 	'coll-noscript_text'              => '<h1>Vyžaduje se JavaScript!</h1>
 <strong>Váš prohlížeč nepodporuje JavaScript nebo máte JavaScript vypnutý.
 Táto stránka nebude správně fungovat dokud nezapnete JavaScript.</strong>',
@@ -400,7 +397,6 @@ Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku n�
 	'coll-my_collection'              => 'Moje kolekce',
 	'coll-download_title'             => 'Stáhnout kolekci jako PDF',
 	'coll-download_text'              => 'Stáhnout automaticky vytvořený PDF soubor vaší kolekce stránek. Klikněte na tlačítko.',
-	'coll-download_pdf'               => 'Stáhnout PDF',
 	'coll-remove'                     => 'Odstranit',
 	'coll-move_to_top'                => 'Přesunout nahoru',
 	'coll-move_up'                    => 'Přesunout výše',
@@ -426,7 +422,7 @@ Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku n�
 	'coll-revision'                   => 'Revize: %PARAM%',
 	'coll-save_collection_title'      => 'Uložit kolekci',
 	'coll-save_collection_text'       => 'Tuto kolekci můžete uložit pro pozdější použití pro zadání typu kolekce a názvu stránky:',
-	'coll-login_to_save'              => 'Pokud chcete ukládat kolekce pro pozdější použití, prosím, [[Special:Userlogin|přihlaste se nebo si vytvořte účet]].',
+	'coll-login_to_save'              => 'Pokud chcete ukládat kolekce pro pozdější použití, prosím, [[Special:UserLogin|přihlaste se nebo si vytvořte účet]].',
 	'coll-personal_collection_label'  => 'Osobní kolekce:',
 	'coll-community_collection_label' => 'Komunitní kolekce:',
 	'coll-save_collection'            => 'Uložit kolekci',
@@ -476,9 +472,7 @@ $messages['da'] = array(
 /** German (Deutsch)
  * @author Raimond Spekking
  * @author VolkerHaas
- * @author Siebrand
  * @author Revolus
- * @author Raymond
  */
 $messages['de'] = array(
 	'coll-desc'                       => '[[Special:Collection|Sammle Seiten]], erzeuge PDFs',
@@ -501,6 +495,8 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 
 Siehe auch die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Kollektionen]] für weitere Informationen.',
 	'coll-helppage'                   => 'Help:Kollektionen',
+	'coll-too_big_cat'                => 'Die Kategorie enthält mehr als %PARAM% Seiten, daher können nur die ersten %PARAM% Seiten deiner Kollektion hinzugefügt werden.
+Möchtest du sie hinzufügen?',
 	'coll-my_collection'              => 'Meine Kollektion',
 	'coll-download_title'             => 'Kollektion herunterladen',
 	'coll-download_text'              => 'Um eine automatisch erstellte Datei deiner Kollektion herunterzuladen, klicke auf die Schaltfläche.',
@@ -533,7 +529,7 @@ Siehe auch die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Kollektionen]] für weiter
 	'coll-revision'                   => 'Version: %PARAM%',
 	'coll-save_collection_title'      => 'Kollektion speichern',
 	'coll-save_collection_text'       => 'Um diese Kollektion zu speichern, wähle einen Typ und gib einen Titel ein:',
-	'coll-login_to_save'              => 'Wenn du Kollektionen speichern möchtest, [[Special:Userlogin|melde dich bitte an oder erstelle ein Benutzerkonto]].',
+	'coll-login_to_save'              => 'Wenn du Kollektionen speichern möchtest, [[Special:UserLogin|melde dich bitte an oder erstelle ein Benutzerkonto]].',
 	'coll-personal_collection_label'  => 'Persönliche Kollektion:',
 	'coll-community_collection_label' => 'Community Kollektion:',
 	'coll-save_collection'            => 'Kollektion speichern',
@@ -580,6 +576,7 @@ $messages['el'] = array(
 	'coll-portlet_title' => 'Η Συλλογή μου',
 	'coll-page'          => 'σελίδα',
 	'coll-pages'         => 'σελίδες',
+	'coll-helppage'      => 'Help:Συλλογές',
 	'coll-my_collection' => 'Η Συλλογή μου',
 	'coll-title'         => 'Τίτλος:',
 	'coll-subtitle'      => 'Υπότιτλος:',
@@ -744,7 +741,7 @@ Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections
 	'coll-revision'                   => 'Version : %PARAM%',
 	'coll-save_collection_title'      => 'Sauvegarder la compilation',
 	'coll-save_collection_text'       => 'Pour sauvegarder la compilation, choisissez un type de compilation et entrez un titre de page :',
-	'coll-login_to_save'              => 'Si vous voulez sauvegarder votre compilation, veuillez [[Special:Userlogin|vous connecter ou vous créer un compte]].',
+	'coll-login_to_save'              => 'Si vous voulez sauvegarder votre compilation, veuillez [[Special:UserLogin|vous connecter ou vous créer un compte]].',
 	'coll-personal_collection_label'  => 'Compilation personnelle :',
 	'coll-community_collection_label' => 'Compilation collective :',
 	'coll-save_collection'            => 'Sauvegarder la compilation',
@@ -798,7 +795,6 @@ $messages['fy'] = array(
 /** Galician (Galego)
  * @author Toliño
  * @author Alma
- * @author Siebrand
  */
 $messages['gl'] = array(
 	'coll-desc'                       => '[[Special:Collection|Coleccionar páxinas]], xerar ficheiros PDF',
@@ -855,7 +851,7 @@ Quere engadilas?',
 	'coll-revision'                   => 'Revisión: %PARAM%',
 	'coll-save_collection_title'      => 'Gardar a colección',
 	'coll-save_collection_text'       => 'Para gardar esta colección para un uso posterior escolla un tipo de colección e insira un título para a páxina:',
-	'coll-login_to_save'              => 'Se quere gardar coleccións para un uso posterior, por favor, [[Special:Userlogin|acceda ao sistema ou cree unha conta]].',
+	'coll-login_to_save'              => 'Se quere gardar coleccións para un uso posterior, por favor, [[Special:UserLogin|acceda ao sistema ou cree unha conta]].',
 	'coll-personal_collection_label'  => 'Colección persoal:',
 	'coll-community_collection_label' => 'Colección da comunidade:',
 	'coll-save_collection'            => 'Gardar a colección',
@@ -933,7 +929,6 @@ $messages['haw'] = array(
 
 /** Hindi (हिन्दी)
  * @author Kaustubh
- * @author Siebrand
  */
 $messages['hi'] = array(
 	'coll-desc'                       => '[[Special:Collection|पन्ने जमा करें]], पीडीएफ बनायें',
@@ -948,12 +943,10 @@ $messages['hi'] = array(
 	'coll-empty'                      => 'खाली',
 	'coll-page'                       => 'पन्ना',
 	'coll-pages'                      => 'पन्ने',
-	'coll-download_as_pdf'            => 'पीडिएफ डाउनलोड करें',
 	'coll-helppage'                   => 'Help:कलेक्शन',
 	'coll-my_collection'              => 'मेरे कलेक्शन',
 	'coll-download_title'             => 'कलेक्शन पीडिएफ डाउनलोड करें',
 	'coll-download_text'              => 'आपके कलेक्शनका पीडिएफ अवतरण डाउनलोड करने के लिये, दिये हुए बटन पर क्लिक करें।',
-	'coll-download_pdf'               => 'पीडिएफ डाउनलोड करें',
 	'coll-remove'                     => 'हटायें',
 	'coll-move_to_top'                => 'सबसे उपर भेजें',
 	'coll-move_up'                    => 'उपर भेजें',
@@ -979,7 +972,7 @@ $messages['hi'] = array(
 	'coll-revision'                   => 'अवतरण: %PARAM%',
 	'coll-save_collection_title'      => 'कलेक्शन संजोयें',
 	'coll-save_collection_text'       => 'इस कलेक्शनको फिरसे इस्तेमाल में लाने के लिये इसे एक नाम दें और इसका प्रकार चुनकर इसे संजोयें:',
-	'coll-login_to_save'              => 'अगर आप बादमें इस्तेमाल के लिये यह कलेक्शन संजोना चाहतें हैं, तो कृपया [[Special:Userlogin|लॉग इन करें या नया खाता खोलें]]।',
+	'coll-login_to_save'              => 'अगर आप बादमें इस्तेमाल के लिये यह कलेक्शन संजोना चाहतें हैं, तो कृपया [[Special:UserLogin|लॉग इन करें या नया खाता खोलें]]।',
 	'coll-personal_collection_label'  => 'वैयक्तिक कलेक्शन:',
 	'coll-community_collection_label' => 'सामूहिक कलेक्शन:',
 	'coll-save_collection'            => 'कलेक्शन संजोयें',
@@ -1137,7 +1130,7 @@ Esque tu vole adder los?',
 	'coll-revision'                   => 'Revision: %PARAM%',
 	'coll-save_collection_title'      => 'Immagazinar collection',
 	'coll-save_collection_text'       => 'Pro immagazinar iste collection pro uso futur, selige un typo de collection e entra un titulo de pagina:',
-	'coll-login_to_save'              => 'Si tu vole immagazinar collectiones pro uso futur, per favor [[Special:Userlogin|aperi un session o crea un conto]].',
+	'coll-login_to_save'              => 'Si tu vole immagazinar collectiones pro uso futur, per favor [[Special:UserLogin|aperi un session o crea un conto]].',
 	'coll-personal_collection_label'  => 'Collection personal:',
 	'coll-community_collection_label' => 'Collection communitari:',
 	'coll-save_collection'            => 'Immagazinar collection',
@@ -1287,7 +1280,7 @@ Vuoi aggiungerle?',
 	'coll-revision'                   => 'Revisione: %PARAM%',
 	'coll-save_collection_title'      => 'Salva raccolta',
 	'coll-save_collection_text'       => 'Per salvare questa raccolta per utilizzarla in seguito, scegli un tipo di raccolta e inserisci un titolo per la pagina:',
-	'coll-login_to_save'              => 'Se vuoi salvare la raccolta per utilizzarla in seguito, [[Special:Userlogin|entra o crea un nuovo accesso]].',
+	'coll-login_to_save'              => 'Se vuoi salvare la raccolta per utilizzarla in seguito, [[Special:UserLogin|entra o crea un nuovo accesso]].',
 	'coll-personal_collection_label'  => 'Raccolta personale:',
 	'coll-community_collection_label' => 'Raccolta della comunità:',
 	'coll-save_collection'            => 'Salva raccolta',
@@ -1330,7 +1323,6 @@ Leggi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sulle raccolte]] riguardo
 
 /** Japanese (日本語)
  * @author JtFuruhata
- * @author Siebrand
  */
 $messages['ja'] = array(
 	'coll-desc'                       => 'PDFファイルを作成するための[[Special:Collection|ページコレクション]]',
@@ -1345,7 +1337,6 @@ $messages['ja'] = array(
 	'coll-empty'                      => '何もありません',
 	'coll-page'                       => 'ページ',
 	'coll-pages'                      => 'ページ',
-	'coll-download_as_pdf'            => 'PDF形式でダウンロード',
 	'coll-noscript_text'              => '<h1>JavaScriptを利用しています！</h1>
 <strong>ご利用のブラウザはJavaScriptをサポートしていないか、JavaScriptが無効になっています。
 このページは、JavaScriptが有効になっていない場合、正しく動作しません。</strong>',
@@ -1356,7 +1347,6 @@ $messages['ja'] = array(
 	'coll-my_collection'              => 'マイ・コレクション',
 	'coll-download_title'             => 'PDF形式でコレクションをダウンロード',
 	'coll-download_text'              => 'ページコレクションから自動生成されたPDFファイルをダウンロードするには、このボタンを押してください。',
-	'coll-download_pdf'               => 'PDFファイルをダウンロード',
 	'coll-remove'                     => '削除',
 	'coll-move_to_top'                => '先頭へ',
 	'coll-move_up'                    => '上へ',
@@ -1382,7 +1372,7 @@ $messages['ja'] = array(
 	'coll-revision'                   => '特定版: %PARAM%',
 	'coll-save_collection_title'      => 'コレクションの保存',
 	'coll-save_collection_text'       => '後に利用するためコレクションを保存するには、コレクションタイプを選択し、ページタイトルを入力してください:',
-	'coll-login_to_save'              => '後に利用するためコレクションを保存するには、[[Special:Userlogin|ログインまたはアカウント作成]]を行ってください。',
+	'coll-login_to_save'              => '後に利用するためコレクションを保存するには、[[Special:UserLogin|ログインまたはアカウント作成]]を行ってください。',
 	'coll-personal_collection_label'  => '個人的なコレクション:',
 	'coll-community_collection_label' => '共有するコレクション:',
 	'coll-save_collection'            => 'コレクションの保存',
@@ -1609,7 +1599,6 @@ $messages['lo'] = array(
 
 /** Malayalam (മലയാളം)
  * @author Shijualex
- * @author Siebrand
  */
 $messages['ml'] = array(
 	'coll-desc'                       => '[[Special:Collection|താളുകളുടെ ശേഖരം]], PDF നിര്‍മ്മിക്കുക',
@@ -1624,12 +1613,10 @@ $messages['ml'] = array(
 	'coll-empty'                      => 'ശൂന്യം',
 	'coll-page'                       => 'താള്‍',
 	'coll-pages'                      => 'താളുകള്‍',
-	'coll-download_as_pdf'            => 'PDF ആയി ഡൗണ്‍ലോഡ് ചെയ്യുക',
 	'coll-helppage'                   => 'Help:ശേഖരം',
 	'coll-my_collection'              => 'എന്റെ ശേഖരം',
 	'coll-download_title'             => 'ശേഖരം PDF ആയി ഡൗണ്‍ലോഡ് ചെയ്യുക.',
 	'coll-download_text'              => 'താളുകളുടെ ശേഖരത്തിന്റെ യാന്ത്രികമായി നിര്‍മ്മിക്കപ്പെട്ട PDF ഡൗലോഡ് ചെയ്യുന്നതിനു ബട്ടണില്‍ ഞെക്കുക.',
-	'coll-download_pdf'               => 'PDF ഡൗണ്‍ലോഡ് ചെയ്യുക',
 	'coll-remove'                     => 'നീക്കം ചെയ്യുക',
 	'coll-move_to_top'                => 'ഏറ്റവും മുകളിലേക്ക് നീങ്ങുക',
 	'coll-move_up'                    => 'മുകളിലേക്കു നീങ്ങുക',
@@ -1653,7 +1640,7 @@ $messages['ml'] = array(
 	'coll-revision'                   => 'പതിപ്പ്: %PARAM%',
 	'coll-save_collection_title'      => 'ശേഖരം സേവ് ചെയ്യുക',
 	'coll-save_collection_text'       => 'ഈ ശേഖരം പിന്നിടുള്ള ഉപയോഗത്തിനായി സൂക്ഷിക്കണമെങ്കില്‍ ശേഖര തരം തിരഞ്ഞെടുത്ത് ഒരു ശീര്‍ഷകം നല്‍കുക:',
-	'coll-login_to_save'              => 'ശേഖരങ്ങള്‍ പിന്നീടുള്ള ഉപയോഗത്തിനായി സൂക്ഷിക്കണമെങ്കില്‍, ദയവായി [[Special:Userlogin|ലോഗിന്‍ ചെയ്യുകയോ പുതിയൊരു അക്കൗണ്ട് ഉണ്ടാക്കുകയോ ചെയ്യുക]].',
+	'coll-login_to_save'              => 'ശേഖരങ്ങള്‍ പിന്നീടുള്ള ഉപയോഗത്തിനായി സൂക്ഷിക്കണമെങ്കില്‍, ദയവായി [[Special:UserLogin|ലോഗിന്‍ ചെയ്യുകയോ പുതിയൊരു അക്കൗണ്ട് ഉണ്ടാക്കുകയോ ചെയ്യുക]].',
 	'coll-personal_collection_label'  => 'സ്വകാര്യ ശേഖരം:',
 	'coll-community_collection_label' => 'സമൂഹ ശേഖരം:',
 	'coll-save_collection'            => 'ശേഖരം സേവ് ചെയ്യുക',
@@ -1679,7 +1666,6 @@ $messages['ml'] = array(
 
 /** Marathi (मराठी)
  * @author Kaustubh
- * @author Siebrand
  * @author Mahitgar
  */
 $messages['mr'] = array(
@@ -1695,7 +1681,6 @@ $messages['mr'] = array(
 	'coll-empty'                      => 'रिकामे',
 	'coll-page'                       => 'पान',
 	'coll-pages'                      => 'पाने',
-	'coll-download_as_pdf'            => 'पीडीएफ आवृत्ती उतरवा',
 	'coll-noscript_text'              => '<h1>जावास्क्रीप्ट आवश्यक!</h1>
 <strong>तुमचा ब्राउझार जावास्क्रीप्ट वापरू शकत नाही किंवा वापर बंद केलेला आहे.
 जावास्क्रीप्ट चालू केल्याशिवाय हे पान व्यवस्थित काम करणार नाही.</strong>',
@@ -1706,7 +1691,6 @@ $messages['mr'] = array(
 	'coll-my_collection'              => 'मी गोळा केलेली पाने',
 	'coll-download_title'             => 'गोळा केलेल्या पानांची पीडीएफ आवृत्ती उतरवून घ्या',
 	'coll-download_text'              => 'तुम्ही गोळा केलेल्या पानांच्या पीडीएफ आवृत्त्या गोळा करण्यासाठी, दिलेली कळ दाबा.',
-	'coll-download_pdf'               => 'पीडीएफ उतरवा',
 	'coll-remove'                     => 'वगळा',
 	'coll-move_to_top'                => 'सर्वात वर हलवा',
 	'coll-move_up'                    => 'वर हलवा',
@@ -1732,7 +1716,7 @@ $messages['mr'] = array(
 	'coll-revision'                   => 'आवृत्ती: %PARAM%',
 	'coll-save_collection_title'      => 'कलेक्शन जतन करा',
 	'coll-save_collection_text'       => 'हे कलेक्शन नंतर वापरण्यासाठी पानाला शीर्षक देउन तसेच कलेक्शनचा प्रकार निवडून जतन करा:',
-	'coll-login_to_save'              => 'जर तुम्ही कलेक्शन नंतर वापरण्यासाठी जतन करू इच्छित असाल, तर कृपया [[Special:Userlogin|प्रवेश करा अथवा सदस्य नोंदणी करा]].',
+	'coll-login_to_save'              => 'जर तुम्ही कलेक्शन नंतर वापरण्यासाठी जतन करू इच्छित असाल, तर कृपया [[Special:UserLogin|प्रवेश करा अथवा सदस्य नोंदणी करा]].',
 	'coll-personal_collection_label'  => 'वैयक्तिक कलेक्शन:',
 	'coll-community_collection_label' => 'सामुहिक कलेक्शन:',
 	'coll-save_collection'            => 'कलेक्शन जतन करा',
@@ -1861,7 +1845,7 @@ Wilt u ze toevoegen?",
 	'coll-revision'                   => 'Versie: %PARAM%',
 	'coll-save_collection_title'      => 'Verzameling opslaan',
 	'coll-save_collection_text'       => 'Kies een verzamelingstype en voer een paginatitel in om deze verzameling op te slaan voor later gebruik:',
-	'coll-login_to_save'              => 'Als u verzamelingen wil opslaan voor later gebruik, [[Special:Userlogin|meld u zich dan aan of maak een gebruiker aan]].',
+	'coll-login_to_save'              => 'Als u verzamelingen wil opslaan voor later gebruik, [[Special:UserLogin|meld u zich dan aan of maak een gebruiker aan]].',
 	'coll-personal_collection_label'  => 'Persoonlijke verzameling:',
 	'coll-community_collection_label' => 'Gemeenschappelijke verzameling:',
 	'coll-save_collection'            => 'Verzameling opslaan',
@@ -1920,7 +1904,6 @@ $messages['nn'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
- * @author Siebrand
  * @author H92
  */
 $messages['no'] = array(
@@ -1975,7 +1958,7 @@ Vil du legge dem til?',
 	'coll-revision'                   => 'Revisjon: %PARAM%',
 	'coll-save_collection_title'      => 'Lagre samling',
 	'coll-save_collection_text'       => 'Velg en samlingstype og skriv inn en sidetittel for å lagre denne samlingen for senere bruk.',
-	'coll-login_to_save'              => 'Om du vil lagre samlingene for senere bruk, [[Special:Userlogin|logg inn eller opprett en konto]].',
+	'coll-login_to_save'              => 'Om du vil lagre samlingene for senere bruk, [[Special:UserLogin|logg inn eller opprett en konto]].',
 	'coll-personal_collection_label'  => 'Personlig samling:',
 	'coll-community_collection_label' => 'Fellesskapssamling:',
 	'coll-save_collection'            => 'Lagre samling',
@@ -2017,7 +2000,6 @@ Kontakt din MediaWiki-administrator.',
 
 /** Occitan (Occitan)
  * @author Cedric31
- * @author Siebrand
  */
 $messages['oc'] = array(
 	'coll-desc'                       => "[[Special:Collection|Compilar de paginas]], generar de pdf's",
@@ -2073,7 +2055,7 @@ Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de collecc
 	'coll-revision'                   => 'Version : %PARAM%',
 	'coll-save_collection_title'      => 'Salvar la compilacion',
 	'coll-save_collection_text'       => 'Per salvar la compilacion, causissètz un tipe de compilacion e picatz un títol de pagina :',
-	'coll-login_to_save'              => 'Se volètz salvar vòstra compilacion, [[Special:Userlogin|vos cal vos connectar o vos crear un compte]].',
+	'coll-login_to_save'              => 'Se volètz salvar vòstra compilacion, [[Special:UserLogin|vos cal vos connectar o vos crear un compte]].',
 	'coll-personal_collection_label'  => 'Compilacion personala :',
 	'coll-community_collection_label' => 'Compilacion collectiva :',
 	'coll-save_collection'            => 'Salvar la compilacion',
@@ -2131,7 +2113,6 @@ $messages['os'] = array(
  * @author McMonster
  * @author Sp5uhe
  * @author Derbeth
- * @author Siebrand
  * @author Wpedzich
  */
 $messages['pl'] = array(
@@ -2147,7 +2128,6 @@ $messages['pl'] = array(
 	'coll-empty'                      => 'pusty',
 	'coll-page'                       => 'strona',
 	'coll-pages'                      => 'strony',
-	'coll-download_as_pdf'            => 'Pobierz jako PDF',
 	'coll-noscript_text'              => '<h1>Potrzebny JavaScript!</h1>
 <strong>Twoja przeglądarka nie obsługuje JavaScript lub został on wyłączony.
 Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączony.</strong>',
@@ -2158,7 +2138,6 @@ Więcej informacji na [[{{MediaWiki:Coll-helppage}}|stronie pomocy dotyczącej k
 	'coll-my_collection'              => 'Moja kolekcja',
 	'coll-download_title'             => 'Pobierz kolekcję jako PDF',
 	'coll-download_text'              => 'Naciśnij przycisk, by pobrać automatycznie wygenerowaną wersję PDF Twojej kolekcji stron',
-	'coll-download_pdf'               => 'Pobierz PDF',
 	'coll-remove'                     => 'Usuń',
 	'coll-move_to_top'                => 'Przenieś na górę',
 	'coll-move_up'                    => 'Przenieś w górę',
@@ -2186,7 +2165,7 @@ Więcej informacji na [[{{MediaWiki:Coll-helppage}}|stronie pomocy dotyczącej k
 	'coll-revision'                   => 'Wersja: %PARAM%',
 	'coll-save_collection_title'      => 'Zapisz kolekcję',
 	'coll-save_collection_text'       => 'Aby zapisać kolekcję, wybierz jej rodzaj i tytuł:',
-	'coll-login_to_save'              => 'Jeśli chcesz zapisać kolekcję, [[Special:Userlogin|zaloguj się lub utwórz konto]].',
+	'coll-login_to_save'              => 'Jeśli chcesz zapisać kolekcję, [[Special:UserLogin|zaloguj się lub utwórz konto]].',
 	'coll-personal_collection_label'  => 'Kolekcja osobista:',
 	'coll-community_collection_label' => 'Kolekcja społeczności:',
 	'coll-save_collection'            => 'Zapisz kolekcję',
@@ -2247,7 +2226,6 @@ $messages['ps'] = array(
 /** Portuguese (Português)
  * @author Malafaya
  * @author Lijealso
- * @author Siebrand
  * @author 555
  * @author MF-Warburg
  */
@@ -2264,7 +2242,6 @@ $messages['pt'] = array(
 	'coll-empty'                      => 'vazia',
 	'coll-page'                       => 'página',
 	'coll-pages'                      => 'páginas',
-	'coll-download_as_pdf'            => 'Descarregar como PDF',
 	'coll-noscript_text'              => '<h1>JavaScript é Requerido!</h1>
 <strong>O seu "browser" não suporta JavaScript, ou o JavaScript foi desactivado.
 Esta página não funcionará correctamente, excepto se o JavaScript for activado.</strong>',
@@ -2275,7 +2252,6 @@ Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para m
 	'coll-my_collection'              => 'Minha Colecção',
 	'coll-download_title'             => 'Descarregar Colecção como PDF',
 	'coll-download_text'              => 'Para descarregar um ficheiro PDF da sua colecção de páginas gerado automaticamente, carregue no botão.',
-	'coll-download_pdf'               => 'Descarregar PDF',
 	'coll-remove'                     => 'Remover',
 	'coll-move_to_top'                => 'Mover para o topo',
 	'coll-move_up'                    => 'Mover acima',
@@ -2301,7 +2277,7 @@ Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para m
 	'coll-revision'                   => 'Revisão: %PARAM%',
 	'coll-save_collection_title'      => 'Gravar Colecção',
 	'coll-save_collection_text'       => 'Para guardar uma colecção para uso futuro, escolha um tipo de colecção e introduza o título da página:',
-	'coll-login_to_save'              => 'Se pretende gravar colecções para mais tarde, por favor, [[Special:Userlogin|autentique-se ou crie uma conta]].',
+	'coll-login_to_save'              => 'Se pretende gravar colecções para mais tarde, por favor, [[Special:UserLogin|autentique-se ou crie uma conta]].',
 	'coll-personal_collection_label'  => 'Colecção pessoal:',
 	'coll-community_collection_label' => 'Colecção comunitária:',
 	'coll-save_collection'            => 'Gravar Colecção',
@@ -2375,7 +2351,6 @@ Suprascrie?',
 
 /** Russian (Русский)
  * @author Александр Сигачёв
- * @author Siebrand
  * @author Ahonc
  * @author MaxSem
  * @author Innv
@@ -2393,8 +2368,6 @@ $messages['ru'] = array(
 	'coll-empty'                      => 'пустая',
 	'coll-page'                       => 'страница',
 	'coll-pages'                      => 'страницы',
-	'coll-download_as_pdf'            => 'Скачать как PDF',
-	'coll-download_as_odf'            => 'Загрузить как ODF',
 	'coll-noscript_text'              => '<h1>Требуется JavaScript!</h1>
 <strong>Ваш браузер не поддерживает JavaScript или данная поддержка была отключена.
 Эта страница не будет работать правильно, если JavaScript не включен.</strong>',
@@ -2407,7 +2380,6 @@ $messages['ru'] = array(
 	'coll-my_collection'              => 'Моя коллекция',
 	'coll-download_title'             => 'Скачать коллекцию как PDF',
 	'coll-download_text'              => 'Нажмите кнопку, чтобы скачать автоматически созданный PDF-файл с вашей коллекций страниц.',
-	'coll-download_pdf'               => 'Скачать PDF',
 	'coll-remove'                     => 'Удалить',
 	'coll-move_to_top'                => 'Передвинуть наверх',
 	'coll-move_up'                    => 'Передвинуть выше',
@@ -2435,7 +2407,7 @@ $messages['ru'] = array(
 	'coll-revision'                   => 'Версия: %PARAM%',
 	'coll-save_collection_title'      => 'Сохранить коллекцию',
 	'coll-save_collection_text'       => 'Чтобы сохранить коллекцию для дальнейшего использования, выберите тип коллекции и введите имя страницы:',
-	'coll-login_to_save'              => 'Чтобы сохранить коллекцию для дальнейшего использования, пожалуйста, [[Special:Userlogin|представьтесь системе или создайте учётную запись]].',
+	'coll-login_to_save'              => 'Чтобы сохранить коллекцию для дальнейшего использования, пожалуйста, [[Special:UserLogin|представьтесь системе или создайте учётную запись]].',
 	'coll-personal_collection_label'  => 'Личная коллекция:',
 	'coll-community_collection_label' => 'Коллекция сообщества:',
 	'coll-save_collection'            => 'Сохранить коллекцию',
@@ -2480,7 +2452,6 @@ $messages['ru'] = array(
 
 /** Slovak (Slovenčina)
  * @author Helix84
- * @author Siebrand
  */
 $messages['sk'] = array(
 	'coll-desc'                       => 'Vytváranie [[Special:Collection|kolekcie stránok]], tvorba PDF',
@@ -2537,7 +2508,7 @@ Chcete ich pridať?',
 	'coll-revision'                   => 'Revízia: %PARAM%',
 	'coll-save_collection_title'      => 'Uložiť kolekciu',
 	'coll-save_collection_text'       => 'Túto kolekciu môžete uložiť pre neskoršie použitie po zadaní typu kolekcie a názvu stránky:',
-	'coll-login_to_save'              => 'Ak chcete ukladať kolekcie pre neskoršie použitie, prosím, [[Special:Userlogin|prihláste sa alebo si vytvorte účet]].',
+	'coll-login_to_save'              => 'Ak chcete ukladať kolekcie pre neskoršie použitie, prosím, [[Special:UserLogin|prihláste sa alebo si vytvorte účet]].',
 	'coll-personal_collection_label'  => 'Osobné kolekcie:',
 	'coll-community_collection_label' => 'Komunitné kolekcie:',
 	'coll-save_collection'            => 'Uložiť kolekciu',
@@ -2669,7 +2640,6 @@ $messages['su'] = array(
 
 /** Swedish (Svenska)
  * @author M.M.S.
- * @author Siebrand
  * @author Sannab
  * @author H92
  * @author Boivie
@@ -2729,7 +2699,7 @@ Vill du lägga till dem?',
 	'coll-revision'                   => 'Revision: %PARAM%',
 	'coll-save_collection_title'      => 'Spara samling',
 	'coll-save_collection_text'       => 'För att spara denna samling för senare bruk, välj en samlingstyp och skriv in en sidtitel:',
-	'coll-login_to_save'              => 'Om du vill spara samlingar för senare bruk, var god [[Special:Userlogin|logga in eller skapa ett konto]].',
+	'coll-login_to_save'              => 'Om du vill spara samlingar för senare bruk, var god [[Special:UserLogin|logga in eller skapa ett konto]].',
 	'coll-personal_collection_label'  => 'Personlig samling:',
 	'coll-community_collection_label' => 'Deltagarsamling:',
 	'coll-save_collection'            => 'Spara samling',
@@ -2782,7 +2752,6 @@ $messages['szl'] = array(
 /** Telugu (తెలుగు)
  * @author Veeven
  * @author వైజాసత్య
- * @author Siebrand
  */
 $messages['te'] = array(
 	'coll-desc'                       => '[[Special:Collection|పేజీలను సేకరించండి]], PDFలను తయారుచేసుకోండి',
@@ -2796,12 +2765,10 @@ $messages['te'] = array(
 	'coll-empty'                      => 'ఖాళీ',
 	'coll-page'                       => 'పేజీ',
 	'coll-pages'                      => 'పేజీలు',
-	'coll-download_as_pdf'            => 'PDFగా దిగుమతి చేసుకోండి',
 	'coll-helppage'                   => 'Help:సేకరణలు',
 	'coll-my_collection'              => 'నా సేకరణ',
 	'coll-download_title'             => 'సేకరణని PDFగా దిగుమతి చేసుకోండి',
 	'coll-download_text'              => 'మీ పేజీ సేకరణ నుండి ఆటోమెటిగ్గా తయారయిన PDF ఫైలుని దిగుమతిచేసుకోడానికి, ఈ బొత్తాన్ని నొక్కండి.',
-	'coll-download_pdf'               => 'PDFని దిగుమతి చేసుకోండి',
 	'coll-remove'                     => 'తొలగించు',
 	'coll-move_up'                    => 'పైకి కదుపు',
 	'coll-move_down'                  => 'క్రిందికి కదుపు',
@@ -2824,7 +2791,7 @@ $messages['te'] = array(
 	'coll-revision'                   => 'కూర్పు: %PARAM%',
 	'coll-save_collection_title'      => 'సేకరణని భద్రపరచండి',
 	'coll-save_collection_text'       => 'ఈ సేకరణని తర్వాత వాడుకోడానికి భద్రపరచుకోవాలంటే, ఓ సేకరణ రకాన్ని ఎంచుకోండి మరియు పేజీ శీర్షిక ఇవ్వండి:',
-	'coll-login_to_save'              => 'సేకరణలని మీరు తర్వాత వాడుకోవడానికి భద్రపరచుకోవాలనుకుంటే, [[Special:Userlogin|లోనికి ప్రవేశించండి లేదా ఖాతా సృష్టించుకోండి]].',
+	'coll-login_to_save'              => 'సేకరణలని మీరు తర్వాత వాడుకోవడానికి భద్రపరచుకోవాలనుకుంటే, [[Special:UserLogin|లోనికి ప్రవేశించండి లేదా ఖాతా సృష్టించుకోండి]].',
 	'coll-personal_collection_label'  => 'వ్యక్తిగత సేరకణ:',
 	'coll-community_collection_label' => 'సామూహిక సేకరణ:',
 	'coll-save_collection'            => 'సేకరణని భద్రపరచు',
@@ -2856,9 +2823,8 @@ $messages['tet'] = array(
 	'coll-about_pp' => 'Kona-ba $1',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
+/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
  * @author Ibrahim
- * @author Siebrand
  */
 $messages['tg-cyrl'] = array(
 	'coll-desc'                       => '[[Special:Collection|Гирдоварии саҳифаҳо]], тавлиди PDFҳо',
@@ -2873,7 +2839,6 @@ $messages['tg-cyrl'] = array(
 	'coll-empty'                      => 'холӣ',
 	'coll-page'                       => 'саҳифа',
 	'coll-pages'                      => 'саҳифаҳо',
-	'coll-download_as_pdf'            => 'Боргузорӣ ҳамчун PDF',
 	'coll-noscript_text'              => '<h1>ҶаваСкрипт Лозим аст!</h1>
 <strong>Мурургари шумо ҶаваСкриптро дастгирӣ намекунад ё ҶаваСкрипт хомӯш карда шудааст.
 Ин саҳифа дуруст кор хоҳад карда, дар ҳолате, ки ҶаваСкрипт фаъол карда шуда бошад.</strong>',
@@ -2884,7 +2849,6 @@ $messages['tg-cyrl'] = array(
 	'coll-my_collection'              => 'Гирдоварии Ман',
 	'coll-download_title'             => 'Бор кардани гирдовари ҳамчун PDF',
 	'coll-download_text'              => 'Барои бор кардани парвандаи PDF саҳифаи гирдоварии худ, ки ба таври худкор ҳосил шудааст, тугмаро пахш кунед.',
-	'coll-download_pdf'               => 'Боргузории PDF',
 	'coll-remove'                     => 'Ҳазф',
 	'coll-move_to_top'                => 'Ҳаракат бо боло',
 	'coll-move_up'                    => 'Ба боло',
@@ -2908,7 +2872,7 @@ $messages['tg-cyrl'] = array(
 	'coll-revision'                   => 'Нусха: %PARAM%',
 	'coll-save_collection_title'      => 'Захира кардани гирдовари',
 	'coll-save_collection_text'       => 'Барои захираи ин гирдовари барои истифодаи баъдӣ, навъи гирдовариро интихоб кунед ва унвони саҳифаро ворид кунед:',
-	'coll-login_to_save'              => 'Агар майли захира кардани гирдовариҳоро барои истифодаи баъдӣ дошта бошед, лутфан [[Special:Userlogin|ба систем ворид шавед ё ҳисоби ҷадидиро эчод кунед]].',
+	'coll-login_to_save'              => 'Агар майли захира кардани гирдовариҳоро барои истифодаи баъдӣ дошта бошед, лутфан [[Special:UserLogin|ба систем ворид шавед ё ҳисоби ҷадидиро эчод кунед]].',
 	'coll-personal_collection_label'  => 'Гирдоварии шахсӣ:',
 	'coll-community_collection_label' => 'Гирдоварии умум:',
 	'coll-save_collection'            => 'Захираи Гирдовари',
@@ -2952,7 +2916,6 @@ $messages['tr'] = array(
 
 /** Ukrainian (Українська)
  * @author Ahonc
- * @author Siebrand
  */
 $messages['uk'] = array(
 	'coll-desc'                       => '[[Special:Collection|Збирає колекції сторінок]], створює PDF',
@@ -2967,7 +2930,6 @@ $messages['uk'] = array(
 	'coll-empty'                      => 'порожня',
 	'coll-page'                       => 'сторінка',
 	'coll-pages'                      => 'сторінки',
-	'coll-download_as_pdf'            => 'Завантажити як PDF',
 	'coll-noscript_text'              => '<h1>Потрібен JavaScript!</h1>
 <strong>Ваш браузер не підтримує JavaScript або ця підтримка вимкнена.
 Ця сторінка не буде працювати правильно, якщо JavaScript не ввімкнений.</strong>',
@@ -2978,7 +2940,6 @@ $messages['uk'] = array(
 	'coll-my_collection'              => 'Моя колекція',
 	'coll-download_title'             => 'Завантажити колекцію як PDF',
 	'coll-download_text'              => 'Щоб завантажити автоматично створений PDF-файл з вашою колекцією сторінок, натисніть кнопку.',
-	'coll-download_pdf'               => 'Завантажити PDF',
 	'coll-remove'                     => 'Вилучити',
 	'coll-move_to_top'                => 'Перемістити вгору',
 	'coll-move_up'                    => 'Перемістити вище',
@@ -3004,7 +2965,7 @@ $messages['uk'] = array(
 	'coll-revision'                   => 'Версія: %PARAM%',
 	'coll-save_collection_title'      => 'Зберегти колекцію',
 	'coll-save_collection_text'       => 'Щоб зберегти колекцію для подальшого використання, оберіть тип колекції і введіть назву сторінки:',
-	'coll-login_to_save'              => 'Щоб зберегти колекцію для подальшого використання, будь ласка, [[Special:Userlogin|ввійдіть до системи або створить обліковий запис]].',
+	'coll-login_to_save'              => 'Щоб зберегти колекцію для подальшого використання, будь ласка, [[Special:UserLogin|ввійдіть до системи або створить обліковий запис]].',
 	'coll-personal_collection_label'  => 'Особиста колекція:',
 	'coll-community_collection_label' => 'Колекція спільноти:',
 	'coll-save_collection'            => 'Зберегти колекцію',
@@ -3033,7 +2994,6 @@ $messages['uk'] = array(
 /** Vietnamese (Tiếng Việt)
  * @author Vinhtantran
  * @author Minh Nguyen
- * @author Siebrand
  */
 $messages['vi'] = array(
 	'coll-desc'                       => '[[Special:Collection|Tập hợp trang lại]], tạo thành tập tin PDF',
@@ -3048,7 +3008,6 @@ $messages['vi'] = array(
 	'coll-empty'                      => 'trống',
 	'coll-page'                       => 'trang',
 	'coll-pages'                      => 'trang',
-	'coll-download_as_pdf'            => 'Tải xuống PDF',
 	'coll-noscript_text'              => '<h1>Yêu cầu phải có JavaScript!</h1>
 <strong>Trình duyệt của bạn không hỗ trợ JavaScript hoặc JavaScript đã bị tắt.
 Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaScript.</strong>',
@@ -3059,7 +3018,6 @@ Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] đ�
 	'coll-my_collection'              => 'Tập hợp của tôi',
 	'coll-download_title'             => 'Tải tập hợp về dưới dạng PDF',
 	'coll-download_text'              => 'Để tải về một tập tin PDF được tự động tạo ra từ tập hợp trang của bạn, hãy nhấn nút.',
-	'coll-download_pdf'               => 'Tải xuống PDF',
 	'coll-remove'                     => 'Dời',
 	'coll-move_to_top'                => 'Di chuyển lên đầu',
 	'coll-move_up'                    => 'Chuyển lên',
@@ -3085,7 +3043,7 @@ Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] đ�
 	'coll-revision'                   => 'Phiên bản: %PARAM%',
 	'coll-save_collection_title'      => 'Lưu tập hợp',
 	'coll-save_collection_text'       => 'Để lưu tập hợp này lại sau này dùng, hãy chọn một kiểu tập hợp và gõ vào tựa đề trang:',
-	'coll-login_to_save'              => 'Nếu bạn muốn lưu tập hợp để sau này dùng, xin hãy [[Special:Userlogin|đăng nhập hoặc mở tài khoản]].',
+	'coll-login_to_save'              => 'Nếu bạn muốn lưu tập hợp để sau này dùng, xin hãy [[Special:UserLogin|đăng nhập hoặc mở tài khoản]].',
 	'coll-personal_collection_label'  => 'Tập hợp cá nhân:',
 	'coll-community_collection_label' => 'Tập hợp cộng đồng:',
 	'coll-save_collection'            => 'Lưu tập hợp',
