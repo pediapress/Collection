@@ -32,6 +32,11 @@ $aliases['nl'] = array(
 	'Collection' => array( 'Verzameling', 'Collectie' ),
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
+$aliases['no'] = array(
+	'Collection' => array( 'Samling' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'Collection' => array( 'Samling' ),
