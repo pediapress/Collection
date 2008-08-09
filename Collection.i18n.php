@@ -211,6 +211,7 @@ $messages['af'] = array(
  */
 $messages['ar'] = array(
 	'coll-desc'                       => '[[Special:Collection|صفحات مجموعة]]، تولد PDFs',
+	'coll-collection'                 => 'مجموعة',
 	'coll-collections'                => 'مجموعات',
 	'coll-portlet_title'              => 'مجموعتي',
 	'coll-add_page'                   => 'إضافة صفحة',
@@ -306,6 +307,15 @@ $messages['ar'] = array(
 	'coll-invalid_podpartner_msg'     => 'شريك POD الموفر غير صحيح.
 من فضلك اتصل بإداري ميدياويكي الخاص بك.',
 	'coll-license'                    => 'ترخيص',
+	'coll-start_title'                => 'بداية المجموعة',
+	'coll-start_text'                 => 'يمكنك جمع الصفحات، توليد وتنزيل وثيقة في صيغة من بين صيغ كثيرة من مجموعات الصفحات أو من صفحات فردية، طلب كتب من شريك طباعة عند الطلب، وحفظ مجموعات الصفحات للاستخدام فيما بعد، أو لمشاركتها.  
+
+انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
+	'coll-start_add_box_title'        => 'ابدأ المجموعة الآن',
+	'coll-start_add_link'             => 'اضغط لبدء مجموعتك',
+	'coll-start_add_page_text'        => '$1 ستكون الصفحة الأولى.',
+	'coll-start_add_page_category'    => 'الصفحات في التصنيف $1 ستتم إضافتها.',
+	'coll-return_to'                  => 'رجوع إلى [[:$1]]',
 );
 
 /** Bulgarian (Български)
@@ -700,6 +710,7 @@ $messages['fi'] = array(
  */
 $messages['fr'] = array(
 	'coll-desc'                       => "[[Special:Collection|Compiler des pages]], générer des pdf's",
+	'coll-collection'                 => 'Compilation',
 	'coll-collections'                => 'Compilations',
 	'coll-portlet_title'              => 'Ma compilation',
 	'coll-add_page'                   => 'Ajouter une page',
@@ -793,6 +804,15 @@ Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]
 	'coll-invalid_podpartner_msg'     => 'Le partenaire POD indiqué est incorrect.
 Veuillez contacter votre administrateur Mediawiki.',
 	'coll-license'                    => 'Licence',
+	'coll-start_title'                => 'Commencer la collection',
+	'coll-start_text'                 => 'Vous pouver collection les pages, créer et télécharger un document dans l’un des formats à partir des collections de pages or à partir de pages simples, demander un livre d’un partenaire imprimant à la demande, et sauver les collections des pages pour un usage ultérieur, ou encore pour les partager.
+
+Voir la [[{{MediaWiki:Coll-helppage}}|page d’aide concernant]] les collections pour plus d’informations.',
+	'coll-start_add_box_title'        => 'Commencer maintenant la collection.',
+	'coll-start_add_link'             => 'Cliquer pour commencer votre collection.',
+	'coll-start_add_page_text'        => '$1 sera la première page.',
+	'coll-start_add_page_category'    => 'Les pages seront ajoutées dans la catégorie $1.',
+	'coll-return_to'                  => 'Retourner vers [[:$1]]',
 );
 
 /** Western Frisian (Frysk)
@@ -1238,6 +1258,7 @@ $messages['is'] = array(
  */
 $messages['it'] = array(
 	'coll-desc'                       => '[[Special:Collection|Raccoglie pagine]], genera PDF',
+	'coll-collection'                 => 'Raccolta',
 	'coll-collections'                => 'Raccolte',
 	'coll-portlet_title'              => 'La mia raccolta',
 	'coll-add_page'                   => 'Aggiungi pagina',
@@ -1322,6 +1343,7 @@ Se questo non funziona, premi il pulsante di aggiornamento del tuo browser.",
 Non sei soddisfatto del risultato?
 Leggi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sulle raccolte]] riguardo alle possibilità per migliorarlo.",
 	'coll-notfound_title'             => 'Raccolta non trovata',
+	'coll-notfound_text'              => 'Non è possibile trovare la pagina della raccolta.',
 	'coll-return_to_collection'       => 'Torna a <a href="$1">$2</a>',
 	'coll-book_title'                 => 'Ordina libro stampato',
 	'coll-book_text'                  => 'Puoi ordinare un libro stampato contenente la tua raccolta visitando uno dei seguenti partner di stampa su richiesta (print-on-demand):',
@@ -1330,6 +1352,15 @@ Leggi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sulle raccolte]] riguardo
 	'coll-invalid_podpartner_title'   => 'Partner POD non valido',
 	'coll-invalid_podpartner_msg'     => 'Il partner POD fornito non è valido. Contatta il tuo amministratore MediaWiki.',
 	'coll-license'                    => 'Licenza',
+	'coll-start_title'                => 'Inizia raccolta',
+	'coll-start_text'                 => 'È possibile raccogliere, generare e scaricare un documento in uno dei numerosi formati disponibili dalle pagine della collezione oppure singole pagine, ordinare libri da un partner di stampa su richiesta e salvare raccolte di pagine per usi successivi o per condividerle.
+
+Leggi la [[{{MediaWiki:Coll-helppage}}|pagina di aiuto sulle raccolte]] per maggiori informazioni.',
+	'coll-start_add_box_title'        => 'Inizia adesso la raccolta',
+	'coll-start_add_link'             => 'Fai clic per iniziare la tua raccolta.',
+	'coll-start_add_page_text'        => '$1 sarà la prima pagina.',
+	'coll-start_add_page_category'    => 'Le pagine nella categoria $1 saranno aggiunte.',
+	'coll-return_to'                  => 'Torna a [[:$1]]',
 );
 
 /** Japanese (日本語)
@@ -1929,6 +1960,7 @@ $messages['nn'] = array(
  */
 $messages['no'] = array(
 	'coll-desc'                       => 'Lag [[Special:Collection|sidesamlinger]] og generer PDF-filer',
+	'coll-collection'                 => 'Samling',
 	'coll-collections'                => 'Samlinger',
 	'coll-portlet_title'              => 'Min samling',
 	'coll-add_page'                   => 'Legg til side',
@@ -2017,6 +2049,15 @@ Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden for samlinger]] for måter å forbe
 	'coll-invalid_podpartner_msg'     => 'Den oppgitte POD-partneren er ugyldig.
 Kontakt din MediaWiki-administrator.',
 	'coll-license'                    => 'Lisens',
+	'coll-start_title'                => 'Start samling',
+	'coll-start_text'                 => 'Du kan samle sider og laste dem ned i flere formater, bestille bøker partner som trykker på forespørsel, og lagre sidesamlinger for senere bruk eller for å dele dem.
+
+Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for mer informasjon.',
+	'coll-start_add_box_title'        => 'Start samling nå',
+	'coll-start_add_link'             => 'Klikk for å starte samlingen din.',
+	'coll-start_add_page_text'        => '$1 vil bli første side.',
+	'coll-start_add_page_category'    => 'Sidene i kategorien $1 vil bli lagt til.',
+	'coll-return_to'                  => 'Tilbake til [[:$1]]',
 );
 
 /** Occitan (Occitan)
@@ -2667,6 +2708,7 @@ $messages['su'] = array(
  */
 $messages['sv'] = array(
 	'coll-desc'                       => '[[Special:Collection|Samla sidor]], generera PDF filer',
+	'coll-collection'                 => 'Samling',
 	'coll-collections'                => 'Samlingar',
 	'coll-portlet_title'              => 'Min samling',
 	'coll-add_page'                   => 'Lägg till sida',
@@ -2761,6 +2803,15 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter at
 	'coll-invalid_podpartner_msg'     => 'Den erbjudna POD-partnern är ogiltig.
 Var god kontakta din MediaWiki-administratör.',
 	'coll-license'                    => 'Licens',
+	'coll-start_title'                => 'Starta samling',
+	'coll-start_text'                 => 'Du kan samla sidor och ladda ner dem i flera format, beställa böcker från en partner som trycker efter efterfrågan, och spara sidsamlingar för senare bruk eller för att dela dem.
+
+Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för mer information.',
+	'coll-start_add_box_title'        => 'Starta samling nu',
+	'coll-start_add_link'             => 'Klicka för att starta din samling.',
+	'coll-start_add_page_text'        => '$1 kommer bli den första sidan.',
+	'coll-start_add_page_category'    => 'Sidorna i kategorin $1 kommer läggas till.',
+	'coll-return_to'                  => 'Tillbaka till [[:$1]]',
 );
 
 /** Silesian (Ślůnski)
