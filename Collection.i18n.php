@@ -134,7 +134,10 @@ See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more inf
 	'coll-return_to'                  => "Return to [[:$1]]",
 );
 
-/** Message documentation (Message documentation) */
+/** Message documentation (Message documentation)
+ * @author Jon Harald Søby
+ * @author Siebrand
+ */
 $messages['qqq'] = array(
 	'coll-collection' => '{{Identical|Collection}}',
 	'coll-portlet_title' => '{{Identical|My collection}}',
@@ -1131,6 +1134,7 @@ $messages['hu'] = array(
  */
 $messages['ia'] = array(
 	'coll-desc' => '[[Special:Collection|Paginas de collection]], generar files PDF',
+	'coll-collection' => 'Collection',
 	'coll-collections' => 'Collectiones',
 	'coll-portlet_title' => 'Mi collection',
 	'coll-add_page' => 'Adder pagina',
@@ -1226,6 +1230,15 @@ Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le collectiones]] p
 	'coll-invalid_podpartner_msg' => 'Le partenario indicate de impression a requesta (POD) non es valide.
 Per favor contacta tu administrator de MediaWiki.',
 	'coll-license' => 'Licentia',
+	'coll-start_title' => 'Initiar collection',
+	'coll-start_text' => 'Tu pote colliger paginas, generar e discargar un documento in un selection de formatos a partir de collection de paginas o a partir de paginas singule, commandar libros ab un partenario de impression a requesta, e immagazinar le collectiones de paginas pro uso futur, o pro excambiar los.
+
+Vide le [[{{MediaWiki:Coll-helppage}}|pagina de adjuta pro le collectiones]] pro ulterior informationes.',
+	'coll-start_add_box_title' => 'Initiar collection immediatemente',
+	'coll-start_add_link' => 'Clicca pro initiar tu collection.',
+	'coll-start_add_page_text' => '$1 essera le prime pagina.',
+	'coll-start_add_page_category' => 'Le paginas in le categoria $1 essera addite.',
+	'coll-return_to' => 'Retornar a [[:$1]]',
 );
 
 /** Indonesian (Bahasa Indonesia)
