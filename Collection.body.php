@@ -1197,7 +1197,7 @@ EOS
 			}
 			$startURL = htmlspecialchars( $startURL );
 			$startLabel = 'Start collection';
-			$out .= "<li><a href=\"$startURL\" rel=\"nofollow\">$startLabel</a></li>";
+			$out .= "<li><a href=\"$startURL\">$startLabel</a></li>";
 		} else {
 		
 			// disable caching
