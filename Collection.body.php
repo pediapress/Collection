@@ -590,6 +590,7 @@ EOS
 	
 	function renderCollection( $collection, $referrer, $writer ) {
 		global $wgOut;
+		global $wgCollectionTemplateExclusionCategory;
 		global $wgPDFTemplateBlacklist;
 		global $wgServer;
 		global $wgScriptPath;
@@ -602,6 +603,7 @@ EOS
 			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
+			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
 			'writer' => $writer,
 		) );
 		
@@ -720,6 +722,7 @@ EOS
 		global $wgScriptPath;
 		global $wgOut;
 		global $wgPDFTemplateBlacklist;
+		global $wgCollectionTemplateExclusionCategory;
 		
 		$json = new Services_JSON();
 
@@ -742,6 +745,7 @@ EOS
 			'metabook' => $this->buildJSONCollection( $_SESSION['wsCollection'] ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
+			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
 			'post_url' => $postData->post_url,
 		) );
 		if ( !$response ) {
