@@ -125,9 +125,15 @@ Installation and Configuration of the Collection Extension
    that each article contains the name of the license and set $wgLicenseURL
    to an article that contains all needed licenses.
    
+  *$wgCollectionTemplateExclusionCategory (string)*
+   Name of a category which marks templates (or transcluded articles) to be
+   excluded for document generation.
+   
+   Default value is ``"Exclude in print"``
+  
   *$wgPDFTemplateBlackList (string)*
    Title of an article containing blacklisted templates, i.e. templates that
-   should be excluded for PDF generation.
+   should be excluded for document generation.
 
    Default value is ``"MediaWiki:PDF Template Blacklist"``
 
