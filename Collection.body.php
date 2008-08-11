@@ -281,7 +281,7 @@ class Collection extends SpecialPage {
 <table align="center" margin-bottom: 10px;" class="toccolours" width="50%">
   <tr>
 	<td align="center">
-      <a href="$addLinkURL"><strong>$addLinkLabel</strong></a><br/>
+      <a href="$addLinkURL" rel="nofollow"><strong>$addLinkLabel</strong></a><br/>
 	  $addText
     </td>
   </tr>
@@ -1107,7 +1107,7 @@ EOS
 				$href = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_' . $writer]['href'] );
 				$label = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_' . $writer]['text'] );
 				print <<<EOS
-<li id="t-download-as-$writer"><a href="$href">$label</a></li>
+<li id="t-download-as-$writer"><a href="$href" rel="nofollow">$label</a></li>
 EOS
 				;
 			}
@@ -1170,7 +1170,7 @@ EOS
 				'Collection',
 				'load_collection/'
 			), $params ) );
-			$out .= "<li><a href=\"$href\">$loadCollection</a></li>";
+			$out .= "<li><a href=\"$href\" rel=\"nofollow\">$loadCollection</a></li>";
 		} else if ( $numArticles == 0) {
 			$startURL = SkinTemplate::makeSpecialUrlSubpage(
 				'Collection',
@@ -1197,7 +1197,7 @@ EOS
 			}
 			$startURL = htmlspecialchars( $startURL );
 			$startLabel = 'Start collection';
-			$out .= "<li><a href=\"$startURL\">$startLabel</a></li>";
+			$out .= "<li><a href=\"$startURL\" rel=\"nofollow\">$startLabel</a></li>";
 		} else {
 		
 			// disable caching
@@ -1214,13 +1214,13 @@ EOS
 						'Collection',
 						'add_article/'
 					), $params ) );
-					$out .= "<li><a href=\"$href\">$addArticle</a></li>";
+					$out .= "<li><a href=\"$href\" rel=\"nofollow\">$addArticle</a></li>";
 				} else {
 					$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 						'Collection',
 						'remove_article/'
 					), $params ) );
-					$out .= "<li><a href=\"$href\">$removeArticle</a></li>";
+					$out .= "<li><a href=\"$href\" rel=\"nofollow\">$removeArticle</a></li>";
 				}
 			} else if ( $wgTitle->getNamespace() == NS_CATEGORY ) {
 				$params = "cattitle=" . $wgTitle->getPartialURL();
@@ -1228,7 +1228,7 @@ EOS
 					'Collection',
 					'add_category/'
 				), $params ) );
-				$out .= "<li><a href=\"$href\">$addCategory</a></li>";
+				$out .= "<li><a href=\"$href\" rel=\"nofollow\">$addCategory</a></li>";
 			}
 
 			if ( $numArticles == 1 ){
@@ -1239,7 +1239,7 @@ EOS
 			$showCollection = wfMsgHtml( 'coll-show_collection' );
 			$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
 			$out .= <<<EOS
-							<li><a href="$showURL">$showCollection<br />
+							<li><a href="$showURL" rel=\"nofollow\">$showCollection<br />
 								($articles)</a></li>
 EOS
 			;
