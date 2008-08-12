@@ -1136,7 +1136,7 @@ EOS
 
 	static function buildSidebar( $skin, &$bar ) {
 		global $wgArticle, $wgUser;
-		#if( $wgUser->isLoggedIn() ) {
+		if( $wgUser->isLoggedIn() ) {
 			// We don't want this sidebar gadget polluting the HTTP caches.
 			// To stay on the safe side for now, we'll show this only for
 			// logged-in users.
@@ -1148,7 +1148,7 @@ EOS
 			if ( $html ) {
 				$bar['COLLECTION'] = $html;
 			}
-		#}
+		}
 		return true;
 	}
 	
