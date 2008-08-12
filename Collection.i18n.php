@@ -90,6 +90,7 @@ Overwrite?',
 Do you want it to be replaced with your collection?',
 	'coll-yes'                        => 'Yes',
 	'coll-no'                         => 'No',
+	'coll-disable_collection_text'    => '<a href="$1">Click here</a> to stop using collections for now.',
 	'coll-load_overwrite_text'        => 'You already have some pages in your collection.
 Do want to overwrite your current collection, append the new content or cancel?',
 	'coll-overwrite'                  => 'Overwrite',
@@ -123,14 +124,14 @@ See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibil
 Please contact your MediaWiki administrator.',
 	'coll-license'                    => 'License',
 	'coll-start_title'                => "Start collection",
-	'coll-start_text'                 => "You can collect pages, generate and download a document in one of several formats from page collections or from single pages, order books from a print-on-demand partner, and save page collections for later use, or to share them. 
+	'coll-start_text'                 => "From now on, you can collect pages, generate and download a document in one of several formats from page collections or from single pages, order books from a print-on-demand partner, and save page collections for later use, or to share them.
 
 See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more information.
 ",
 	'coll-start_add_box_title'        => "Start collection right now",
 	'coll-start_add_link'             => "Click to start your collection.",
-	'coll-start_add_page_text'        => "$1 will be the first page.",
-	'coll-start_add_page_category'    => "The pages in category $1 will be added.",
+	'coll-start_add_page_text'        => "Click to add the page <em>$1</em> to your collection",
+	'coll-start_add_page_category'    => "Click to add the pages in category <em>$1</em> to your collection",
 	'coll-return_to'                  => "Return to [[:$1]]",
 );
 

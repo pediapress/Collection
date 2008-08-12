@@ -114,9 +114,7 @@ class Collection extends SpecialPage {
 				 || $wgRequest->getVal( 'append' ) ) {
 				$collection = $this->loadCollection( $title, $wgRequest->getVal( 'append' ) );
 				if ( $collection ) {
-					if( session_id() == '' ) {
-						wfSetupSession();
-					}
+					self::startSession();
 					$_SESSION['wsCollection'] = $collection;
 					$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Collection' ) );
 				}
@@ -168,6 +166,12 @@ class Collection extends SpecialPage {
 				$this->outputSaveOverwrite( $title );
 			}
 			return;
+		} else if ( $par == 'disable_collection/' ) {
+			if ( self::hasSession() ) {
+				unset( $_SESSION['wsCollection'] );
+			}
+			$mp = Title::newFromText( wfMsgNoDB( "mainpage" ) );
+			$wgOut->redirect( $mp->getFullURL() );
 		} else if ( $par == 'render/' ) {
 			$title = $wgRequest->getVal( 'downloadTitle', '' );
 			if ( $title ) {
@@ -208,19 +212,35 @@ class Collection extends SpecialPage {
 		$this->outputBookSection();
 		$this->outputDownloadSection();
 		$this->outputSaveSection();
+		$this->outputDisableSection();
 		$this->outputIntro();
 		$this->outputArticleList();
 	}
 
+	static function hasSession() {
+		return isset( $_SESSION['wsCollection'] );
+	}
+	
+	static function startSession() {
+		if( session_id() == '' ) {
+			wfSetupSession();
+		}
+		if ( self::hasSession() ) {
+			return;
+		}
+		$_SESSION['wsCollection'] = array(
+			'title' => '',
+			'subtitle' => '',
+			'items' => array(),
+		);
+	}
+	
 	static function countArticles() {
-		if ( isset( $_SESSION['wsCollection'] ) ) {
-			$collection = $_SESSION['wsCollection'];
-		} else {
+		if ( !self::hasSession() ) {
 			return 0;
 		}
-
 		$count = 0;
-		foreach ( $collection['items'] as $item ) {
+		foreach ( $_SESSION['wsCollection']['items'] as $item ) {
 			if ( $item['type'] == 'article') {
 				$count++;
 			}
@@ -229,13 +249,11 @@ class Collection extends SpecialPage {
 	}
 
 	static function findArticle( $title, $oldid=0 ) {
-		if ( isset( $_SESSION['wsCollection'] ) ) {
-			$collection = $_SESSION['wsCollection'];
-		} else {
+		if ( !self::hasSession() ) {
 			return -1;
 		}
-
-		foreach ( $collection['items'] as $index => $item ) {
+		
+		foreach ( $_SESSION['wsCollection']['items'] as $index => $item ) {
 			if ( $item['type'] == 'article' && $item['title'] == $title) {
 				if ( $oldid ) {
 					if ( $item['revision'] == strval( $oldid ) ) {
@@ -255,6 +273,10 @@ class Collection extends SpecialPage {
 		global $wgOut;
 		global $wgCollectionStartPage;
 		
+		if ( !self::hasSession() ) {
+			self::startSession();
+		}
+		
 		$wgOut->setPageTitle( wfMsg( 'coll-collection' ) );
 		
 		if ( !is_null( $title ) or !is_null( $cat_title ) ) {
@@ -267,22 +289,21 @@ class Collection extends SpecialPage {
 					'Collection',
 					'add_article/'
 				), $params ) );
-				$addText = wfMsg( "coll-start_add_page_text", $title->getPrefixedText() );
+				$addLinkLabel = wfMsg( "coll-start_add_page_text", $title->getPrefixedText() );
 			} else {
 				$params = 'cattitle=' . $cat_title->getPartialURL();
 				$addLinkURL = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 					'Collection',
 					'add_category/'
 				), $params ) );
-				$addText = wfMsg( "coll-start_add_category_text", $link );
+				$addLinkLabel = wfMsg( "coll-start_add_category_text", $link );
 			}
-			$addLinkLabel = wfMsg( "coll-start_add_link", $title->getPrefixedText() );
+			//$addLinkLabel = wfMsg( "coll-start_add_link", $title->getPrefixedText() );
 			$wgOut->addHTML( <<<EOS
 <table align="center" margin-bottom: 10px;" class="toccolours" width="50%">
   <tr>
 	<td align="center">
       <a href="$addLinkURL" rel="nofollow"><strong>$addLinkLabel</strong></a><br/>
-	  $addText
     </td>
   </tr>
 </table>
@@ -323,20 +344,10 @@ EOS
 			return;
 		}
 
-		if( session_id() == '' ) {
-			wfSetupSession();
+		if ( !self::hasSession() ) {
+			self::startSession();
 		}
-
-		if ( isset( $_SESSION['wsCollection'] ) ) {
-			$collection = $_SESSION['wsCollection'];
-		} else {
-			$collection = array(
-				'title' => '',
-				'subtitle' => '',
-				'items' => array(),
-			);
-		}
-
+		$collection = $_SESSION['wsCollection'];
 		$revision = Revision::newFromTitle( $title, $oldid );
 		$collection['items'][] = array(
 			'type' => 'article',
@@ -347,16 +358,14 @@ EOS
 			'timestamp' => wfTimestamp( TS_UNIX, $revision->mTimestamp ),
 			'url' => $title->getFullURL(),
 		);
-
 		$_SESSION['wsCollection'] = $collection;
 	}
 
 	function removeArticle( $title, $oldid=0 ) {
-		if ( isset( $_SESSION['wsCollection'] ) ) {
-			$collection = $_SESSION['wsCollection'];
-		} else {
+		if ( !self::hasSession() ) {
 			return;
 		}
+		$collection = $_SESSION['wsCollection'];
 		$index = self::findArticle( $title->getPrefixedText(), $oldid );
 		if ( $index != -1 ) {
 			array_splice( $collection['items'], $index, 1 );
@@ -422,7 +431,7 @@ EOS
 			return false;
 		}
 
-		if ( !$append || !isset($_SESSION['wsCollection'] ) ) {
+		if ( !$append || !self::hasSession() ) {
 			$collection = array(
 				'title' => '',
 				'subtitle' => '',
@@ -943,6 +952,14 @@ EOS
 		$this->outputBox( $html );
 	}
 
+	private function outputDisableSection() {
+		$html = '<p>' . wfMsg(
+			'coll-disable_collection_text',
+			htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'disable_collection/' ) )
+		) . '</p>';
+		$this->outputBox( $html );
+	}
+
 	private function outputSaveOverwrite( $title ) {
 		global $wgOut;
 
@@ -1119,7 +1136,7 @@ EOS
 
 	static function buildSidebar( $skin, &$bar ) {
 		global $wgArticle, $wgUser;
-		if( $wgUser->isLoggedIn() ) {
+		#if( $wgUser->isLoggedIn() ) {
 			// We don't want this sidebar gadget polluting the HTTP caches.
 			// To stay on the safe side for now, we'll show this only for
 			// logged-in users.
@@ -1131,7 +1148,7 @@ EOS
 			if ( $html ) {
 				$bar['COLLECTION'] = $html;
 			}
-		}
+		#}
 		return true;
 	}
 	
@@ -1171,7 +1188,7 @@ EOS
 				'load_collection/'
 			), $params ) );
 			$out .= "<li><a href=\"$href\" rel=\"nofollow\">$loadCollection</a></li>";
-		} else if ( $numArticles == 0) {
+		} else if ( !self::hasSession() ) {
 			$startURL = SkinTemplate::makeSpecialUrlSubpage(
 				'Collection',
 				'start_collection/'
