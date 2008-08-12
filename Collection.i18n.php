@@ -301,8 +301,9 @@ $messages['ar'] = array(
 هل تريد استبدالها بمجموعتك؟',
 	'coll-yes' => 'نعم',
 	'coll-no' => 'لا',
+	'coll-disable_collection_text' => '<a href="$1">اضغط هنا</a> للتوقف عن استخدام المجموعات حاليا.',
 	'coll-load_overwrite_text' => 'لديك بالفعل عدة صفحات في مجموعتك.
-هل تريد الكتابة على مجموعتك الحالية، إضافة المحتوى الجديد أو الإلغاء؟',
+هل تريد الكتابة على مجموعتك الحالية، إضافة المحتوى الجديد أو إلغاء تحميل هذه المجموعة؟',
 	'coll-overwrite' => 'كتابة عليها',
 	'coll-append' => 'انتظار',
 	'coll-cancel' => 'إلغاء',
@@ -334,13 +335,13 @@ $messages['ar'] = array(
 من فضلك اتصل بإداري ميدياويكي الخاص بك.',
 	'coll-license' => 'ترخيص',
 	'coll-start_title' => 'بداية المجموعة',
-	'coll-start_text' => 'يمكنك جمع الصفحات، توليد وتنزيل وثيقة في صيغة من بين صيغ كثيرة من مجموعات الصفحات أو من صفحات فردية، طلب كتب من شريك طباعة عند الطلب، وحفظ مجموعات الصفحات للاستخدام فيما بعد، أو لمشاركتها.  
+	'coll-start_text' => 'من الآن فصاعدا، يمكنك جمع الصفحات، توليد وتنزيل وثيقة في صيغة من بين صيغ كثيرة من مجموعات الصفحات أو من صفحات فردية، طلب كتب من شريك طباعة عند الطلب، وحفظ مجموعات الصفحات للاستخدام فيما بعد، أو لمشاركتها.
 
 انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
 	'coll-start_add_box_title' => 'ابدأ المجموعة الآن',
 	'coll-start_add_link' => 'اضغط لبدء مجموعتك',
-	'coll-start_add_page_text' => '$1 ستكون الصفحة الأولى.',
-	'coll-start_add_page_category' => 'الصفحات في التصنيف $1 ستتم إضافتها.',
+	'coll-start_add_page_text' => 'اضغط لإضافة الصفحة <em>$1</em> إلى مجموعتك',
+	'coll-start_add_page_category' => 'اضغط لإضافة الصفحات في التصنيف <em>$1</em> إلى مجموعتك',
 	'coll-return_to' => 'رجوع إلى [[:$1]]',
 );
 
@@ -583,7 +584,9 @@ Möchtest du sie hinzufügen?',
 	'coll-overwrite_text' => 'Eine Seite mit dem Namen [[:$1]] ist bereits vorhanden. Möchtest du sie durch deine Kollektion ersetzen?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nein',
-	'coll-load_overwrite_text' => 'Deine Kollektion enthält bereits Seiten. Möchtest du die aktuelle Kollektion überschreiben, die neuen Seiten anhängen oder abbrechen?',
+	'coll-disable_collection_text' => '<a href="$1">Klicke hier</a>, um die Kollektion zu beenden',
+	'coll-load_overwrite_text' => 'Deine Kollektion enthält bereits Seiten.
+Möchtest du die aktuelle Kollektion überschreiben, die neuen Seiten anhängen oder das Laden dieser Kollektion abbrechen?',
 	'coll-overwrite' => 'Überschreiben',
 	'coll-append' => 'Anhängen',
 	'coll-cancel' => 'Abbrechen',
@@ -612,6 +615,15 @@ Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Col
 	'coll-invalid_podpartner_title' => 'Ungültiger Print-on-Demand-Partner',
 	'coll-invalid_podpartner_msg' => 'Die Angaben zum Print-on-Demand-Partner sind fehlerhaft. Bitte kontaktiere den MediaWiki-Administrator.',
 	'coll-license' => 'Lizenz',
+	'coll-start_title' => 'Kollektion beginnen',
+	'coll-start_text' => 'Ab jetzt kannst du Seiten einer Kollektion hinzufügen, eine einzelne Seite oder eine Kollektion als Dokument in verschiedenen Formaten erstellen und herunterladen, ein gedrucktes Buch bei einem Print-on-demand-Partner bestellen und deine Kollektion zwischenspeichern oder sie mit anderen Benutzern teilen.
+
+Für weitere Informationen siehe die [[{{MediaWiki:Coll-helppage}}|Hilfeseiten]].',
+	'coll-start_add_box_title' => 'Beginne die Kollektion jetzt',
+	'coll-start_add_link' => 'Klicke um deine Kollektion zu beginnen',
+	'coll-start_add_page_text' => 'Klicke um die Seite <em>$1</em> deiner Kollektion hinzuzufügen',
+	'coll-start_add_page_category' => 'Klicke um die Seiten in der Kategorie <em>$1</em> deiner Kollektion hinzuzufügen',
+	'coll-return_to' => 'Zurück zu [[:$1]]',
 );
 
 /** Greek (Ελληνικά)
@@ -1065,6 +1077,13 @@ $messages['hil'] = array(
 	'coll-cancel' => 'Kanselahon',
 );
 
+/** Croatian (Hrvatski)
+ * @author Dalibor Bosits
+ */
+$messages['hr'] = array(
+	'coll-remove' => 'Ukloni',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -1199,8 +1218,9 @@ Superscriber lo?',
 Esque tu vole reimplaciar lo con tu collection?',
 	'coll-yes' => 'Si',
 	'coll-no' => 'No',
+	'coll-disable_collection_text' => '<a href="$1">Clicca hic</a> pro cessar de usar collectiones pro le momento.',
 	'coll-load_overwrite_text' => 'Tu ha ja alcun paginas in tu collection.
-Esque tu vole superscriber tu collection actual, appender le nove contento, o cancellar?',
+Esque tu vole superscriber tu collection actual, appender le nove contento, o cancellar le cargamento de iste collection?',
 	'coll-overwrite' => 'Superscriber',
 	'coll-append' => 'Appender',
 	'coll-cancel' => 'Cancellar',
@@ -1232,7 +1252,7 @@ Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le collectiones]] p
 Per favor contacta tu administrator de MediaWiki.',
 	'coll-license' => 'Licentia',
 	'coll-start_title' => 'Initiar collection',
-	'coll-start_text' => 'Tu pote colliger paginas, generar e discargar un documento in un selection de formatos a partir de collection de paginas o a partir de paginas singule, commandar libros ab un partenario de impression a requesta, e immagazinar le collectiones de paginas pro uso futur, o pro excambiar los.
+	'coll-start_text' => 'A partir de ora, tu pote colliger paginas, generar e discargar un documento in un selection de formatos a partir de collectiones de paginas o de paginas singule, commandar libros ab un partenario de impression a requesta, e immagazinar le collectiones de paginas pro uso futur, o pro usar los in commun.
 
 Vide le [[{{MediaWiki:Coll-helppage}}|pagina de adjuta pro le collectiones]] pro ulterior informationes.',
 	'coll-start_add_box_title' => 'Initiar collection immediatemente',
@@ -1358,7 +1378,7 @@ Si desidera che sia sostituita con la raccolta?',
 	'coll-yes' => 'Sì',
 	'coll-no' => 'No',
 	'coll-load_overwrite_text' => 'Sono già presenti della pagine nella tua raccolta.
-Si desidera sovrascrivere la raccolta corrente, aggiungere il nuovo contenuto o annullare?',
+Si desidera sovrascrivere la raccolta corrente, aggiungere il nuovo contenuto o annullare il caricamento di questa raccolta?',
 	'coll-overwrite' => 'Sovrascrivi',
 	'coll-append' => 'Aggiungi',
 	'coll-cancel' => 'Annulla',
@@ -1388,13 +1408,13 @@ Leggi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sulle raccolte]] riguardo
 	'coll-invalid_podpartner_msg' => 'Il partner POD fornito non è valido. Contatta il tuo amministratore MediaWiki.',
 	'coll-license' => 'Licenza',
 	'coll-start_title' => 'Inizia raccolta',
-	'coll-start_text' => 'È possibile raccogliere, generare e scaricare un documento in uno dei numerosi formati disponibili dalle pagine della collezione oppure singole pagine, ordinare libri da un partner di stampa su richiesta e salvare raccolte di pagine per usi successivi o per condividerle.
+	'coll-start_text' => 'Da oggi è possibile raccogliere, generare e scaricare un documento in uno dei numerosi formati disponibili dalle pagine della raccolta oppure singole pagine, ordinare libri da un partner di stampa su richiesta e salvare raccolte di pagine per usi successivi o per condividerle.
 
 Leggi la [[{{MediaWiki:Coll-helppage}}|pagina di aiuto sulle raccolte]] per maggiori informazioni.',
 	'coll-start_add_box_title' => 'Inizia adesso la raccolta',
 	'coll-start_add_link' => 'Fai clic per iniziare la tua raccolta.',
-	'coll-start_add_page_text' => '$1 sarà la prima pagina.',
-	'coll-start_add_page_category' => 'Le pagine nella categoria $1 saranno aggiunte.',
+	'coll-start_add_page_text' => 'Fai clic per aggiungere la pagina <em>$1</em> alla tua raccolta.',
+	'coll-start_add_page_category' => 'Fai clic per aggiungere le pagine della categoria <em>$1</em> alla tua raccolta',
 	'coll-return_to' => 'Torna a [[:$1]]',
 );
 
@@ -1927,8 +1947,9 @@ Wilt u ze toevoegen?",
 Wil u die pagina vervangen door uw collectie?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nee',
+	'coll-disable_collection_text' => '<a href="$1">Het gebruik van Collecties afbreken</a>.',
 	'coll-load_overwrite_text' => "U hebt al een aantal pagina's in uw collectie.
-Wil u de bestaande collectie overschrijven, de nieuwe pagina's toevoegen, of annuleren?",
+Wil u de bestaande collectie overschrijven, de nieuwe pagina's toevoegen, of het laden van deze collectie annuleren?",
 	'coll-overwrite' => 'Overschrijven',
 	'coll-append' => 'Toevoegen',
 	'coll-cancel' => 'Annuleren',
@@ -1960,13 +1981,13 @@ Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om d
 Neem alstublieft contact op met uw MediaWiki-beheerder.',
 	'coll-license' => 'Licentie',
 	'coll-start_title' => 'Collectie aanmaken',
-	'coll-start_text' => "U kunt pagina's in een collectie plaatsen, een PDF-bestand maken en downloaden van een paginacollectie in verschillende formaten, van een paginacollectie of individuele pagina's, en een paginacollectie opslaan voor later gebruik, of om ze te delen.
+	'coll-start_text' => "U kunt pagina's in een collectie plaatsen, een bestand in verschillende formaten maken en downloaden, van een paginacollectie of individuele pagina's, een boek bestellen bij een print-on-demandpartner, en een paginacollectie opslaan voor later gebruik, of om ze te delen.
 
 [[{{MediaWiki:Coll-helppage}}|Meer informatie over collecties]].",
 	'coll-start_add_box_title' => 'Nu een collectie aanmaken',
 	'coll-start_add_link' => 'Klik om een collectie aan te maken.',
-	'coll-start_add_page_text' => '$1 wordt de eerste pagina.',
-	'coll-start_add_page_category' => "De pagina's in de categorie $1 worden toegevoegd.",
+	'coll-start_add_page_text' => 'Klik om de pagine <em>$1</em> aan uw collectie toe te voegen',
+	'coll-start_add_page_category' => "Klik om de pagina's in categorie <em>$1</em> aan uw collectie toe te voegen",
 	'coll-return_to' => 'Terug naar [[:$1]]',
 );
 
@@ -2050,7 +2071,9 @@ Vil du legge dem til?',
 	'coll-overwrite_text' => 'En side ved navn [[:$1]] finnes fra før. Vil du erstatte den med samlingen din?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nei',
-	'coll-load_overwrite_text' => 'Du har allerede noen sider i samlingen din. Vil du erstatte den eksisterende samlingen, legge til det nye innholdet eller avbryte?',
+	'coll-disable_collection_text' => '<a href="$1">Klikk her</a> for å slutte å bruke samlinger for nå.',
+	'coll-load_overwrite_text' => 'Du har allerede noen sider i samlingen din.
+Vil du erstatte den eksisterende samlingen, legge til det nye innholdet eller avbryte lastingen av samlingen?',
 	'coll-overwrite' => 'Erstatte',
 	'coll-append' => 'Legge til',
 	'coll-cancel' => 'Avbryt',
@@ -2086,8 +2109,8 @@ Kontakt din MediaWiki-administrator.',
 Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for mer informasjon.',
 	'coll-start_add_box_title' => 'Start samling nå',
 	'coll-start_add_link' => 'Klikk for å starte samlingen din.',
-	'coll-start_add_page_text' => '$1 vil bli første side.',
-	'coll-start_add_page_category' => 'Sidene i kategorien $1 vil bli lagt til.',
+	'coll-start_add_page_text' => 'Klikk for å legge til siden <em>$1</em> i samlingen din',
+	'coll-start_add_page_category' => 'Klikk for å legge til sidene i kategorien <em>$1</em> i samlingen din',
 	'coll-return_to' => 'Tilbake til [[:$1]]',
 );
 
@@ -2801,6 +2824,7 @@ Vill du lägga till dem?',
 Vill du ersätta den med din samling?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nej',
+	'coll-disable_collection_text' => '<a href="$1">Klicka här</a> för att sluta att använda samlingar nu.',
 	'coll-load_overwrite_text' => 'Du har redan några sidor i din samling.
 Vill du ersätta din nuvarande samling, lägga till det nya innehållet eller avbryta?',
 	'coll-overwrite' => 'Skriv över',
@@ -2839,7 +2863,7 @@ Var god kontakta din MediaWiki-administratör.',
 Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för mer information.',
 	'coll-start_add_box_title' => 'Starta samling nu',
 	'coll-start_add_link' => 'Klicka för att starta din samling.',
-	'coll-start_add_page_text' => '$1 kommer bli den första sidan.',
+	'coll-start_add_page_text' => 'Klicka för att lägga till sidan <em>$1</em> till din samling',
 	'coll-start_add_page_category' => 'Sidorna i kategorin $1 kommer läggas till.',
 	'coll-return_to' => 'Tillbaka till [[:$1]]',
 );
@@ -3081,7 +3105,7 @@ $messages['uk'] = array(
 	'coll-yes' => 'Так',
 	'coll-no' => 'Ні',
 	'coll-load_overwrite_text' => 'У вас уже є кілька сторінок у колекції.
-Ви хочете перезаписати вашу поточну колекцію, додати новий матеріал чи скасувати дію?',
+Ви хочете перезаписати вашу поточну колекцію, додати новий матеріал чи скасувати відкриття цієї колекції?',
 	'coll-overwrite' => 'Перезаписати',
 	'coll-append' => 'Додати',
 	'coll-cancel' => 'Скасувати',
