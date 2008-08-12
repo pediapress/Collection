@@ -640,9 +640,10 @@ EOS
 		global $wgOut;
 		global $wgRequest;
 		global $wgServer;
-		
+		global $wgLang;
+
 		$this->setHeaders();
-		
+
 		$response = self::pdfServerCommand( 'render_status', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 			'writer' => $wgRequest->getVal( 'writer' ),
@@ -650,9 +651,9 @@ EOS
 		if ( !$response ) {
 			return;
 		}
-		
+
 		$return_to = $wgRequest->getVal( 'return_to' );
-				
+
 		switch ( $response->state ) {
 		case 'progress':
 			$url = wfAppendQuery(
@@ -663,7 +664,7 @@ EOS
 			);
 			$wgOut->addMeta( 'http:refresh', '2; URL=' . $url );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
-			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_text', $response->status->progress ) );
+			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_text', $wgLang->formatNum( $response->status->progress ) ) );
 			break;
 		case 'finished':
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_finished_title' ) );
