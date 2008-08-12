@@ -93,6 +93,11 @@ class Collection extends SpecialPage {
 			$wgUser->invalidateCache();
 			$wgOut->redirect( $redirectURL );
 			return;
+		} else if ( $par == 'clear_collection/' ) {
+			self::clearCollection();
+			$wgUser->invalidateCache();
+			$wgOut->redirect( $wgRequest->getVal( 'return_to' ) );
+			return;
 		} else if ( $par == 'add_category/' ) {
 			$title = Title::makeTitleSafe( NS_CATEGORY, $wgRequest->getVal( 'cattitle', '' ) );
 			if ( $this->addCategory( $title ) ) {
@@ -221,11 +226,8 @@ class Collection extends SpecialPage {
 		return isset( $_SESSION['wsCollection'] );
 	}
 	
-	static function startSession() {
-		if( session_id() == '' ) {
-			wfSetupSession();
-		}
-		if ( self::hasSession() ) {
+	static function clearCollection() {
+		if ( !self::hasSession() ) {
 			return;
 		}
 		$_SESSION['wsCollection'] = array(
@@ -233,6 +235,13 @@ class Collection extends SpecialPage {
 			'subtitle' => '',
 			'items' => array(),
 		);
+	}
+	
+	static function startSession() {
+		if( session_id() == '' ) {
+			wfSetupSession();
+		}
+		self::clearCollection();
 	}
 	
 	static function countArticles() {
@@ -1247,7 +1256,7 @@ EOS
 				), $params ) );
 				$out .= "<li><a href=\"$href\" rel=\"nofollow\">$addCategory</a></li>";
 			}
-
+			
 			if ( $numArticles == 1 ){
 				$articles = $numArticles . ' ' . wfMsgHtml( 'coll-page' );
 			} else {
@@ -1260,6 +1269,17 @@ EOS
 								($articles)</a></li>
 EOS
 			;
+			
+			if ( $numArticles > 0 ) {
+				$clearCollection = wfMsgHtml( 'coll-clear_collection' );
+				$params = 'return_to=' . $wgTitle->getFullURL();
+				$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
+					'Collection',
+					'clear_collection/'
+				), $params ) );
+				$out .= "<li><a href=\"$href\" rel=\"nofollow\">$clearCollection</a></li>";
+			}
+			
 			$helpCollections = wfMsgHtml( 'coll-help_collections' );
 			$helpURL = htmlspecialchars( Title::makeTitle( NS_HELP, wfMsgForContent( 'coll-collections' ) )->getFullURL() );
 			$out .= <<<EOS
@@ -1373,7 +1393,7 @@ EOS
 				ob_end_clean();
 			}
 			$errorMessage = '';
-		}		
+		}
 		curl_close( $c );
 		return $text;
 	}
