@@ -1157,7 +1157,7 @@ EOS
 			// In theory this could be managed properly for open sessions,
 			// but you'd have to inject something for non-open sessions or
 			// it would be very confusing.
-			$html = self::printPortlet();
+			$html = self::getPortlet();
 			if ( $html ) {
 				$bar['COLLECTION'] = $html;
 			}
@@ -1165,10 +1165,22 @@ EOS
 		return true;
 	}
 	
+	static function printPortlet() {
+		$portletTitle = wfMsgHtml( 'coll-portlet_title' );
+		print <<<EOS
+<div id="p-collection" class="portlet">	 
+  <h5>$portletTitle</h5>	 
+    <div class="pBody">	 
+EOS
+		;
+		print self::getPortlet();
+		print '</div></div>';
+	}
+	
 	/**
 	 * Return HTML-code to be inserted as portlet
 	 */
-	static function printPortlet() {
+	static function getPortlet() {
 		global $wgArticle;
 		global $wgRequest;
 		global $wgTitle;
@@ -1183,7 +1195,6 @@ EOS
 		
 		wfLoadExtensionMessages( 'Collection' );
 
-		$portletTitle = wfMsgHtml( 'coll-portlet_title' );
 		$addArticle = wfMsgHtml( 'coll-add_page' );
 		$removeArticle = wfMsgHtml( 'coll-remove_page' );
 		$addCategory = wfMsgHtml( 'coll-add_category' );

@@ -145,7 +145,10 @@ Installation and Configuration of the Collection Extension
 	 
    
    
-* Add a portlet to the skin of your *MediaWiki* installation: Just before the line::
+* This step is needed for MediaWiki version < 1.14 (at the time of writing
+  version 1.14 has not been released):
+  
+  Add a portlet to the skin of your *MediaWiki* installation: Just before the line::
 
     <div class="portlet" id="p-tb">
 
