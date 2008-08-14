@@ -136,12 +136,13 @@ See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more inf
 );
 
 /** Message documentation (Message documentation)
+ * @author Darth Kule
  * @author Jon Harald Søby
  * @author Siebrand
  */
 $messages['qqq'] = array(
 	'coll-collection' => '{{Identical|Collection}}',
-	'coll-portlet_title' => '{{Identical|My collection}}',
+	'coll-portlet_title' => '{{Identical|Collection}}',
 	'coll-empty' => '{{Identical|Empty}}',
 	'coll-page' => '{{Identical|Page}}',
 	'coll-pages' => '{{Identical|Pages}}',
@@ -239,7 +240,7 @@ $messages['ar'] = array(
 	'coll-desc' => '[[Special:Collection|صفحات مجموعة]]، تولد PDFs',
 	'coll-collection' => 'مجموعة',
 	'coll-collections' => 'مجموعات',
-	'coll-portlet_title' => 'مجموعتي',
+	'coll-portlet_title' => 'مجموعة',
 	'coll-add_page' => 'إضافة صفحة',
 	'coll-remove_page' => 'إزالة صفحة',
 	'coll-add_category' => 'إضافة تصنيف',
@@ -524,7 +525,7 @@ $messages['de'] = array(
 	'coll-desc' => '[[Special:Collection|Sammle Seiten]], erzeuge PDFs',
 	'coll-collection' => 'Kollektion',
 	'coll-collections' => 'Kollektionen',
-	'coll-portlet_title' => 'Meine Kollektion',
+	'coll-portlet_title' => 'Kollektion',
 	'coll-add_page' => 'Seite hinzufügen',
 	'coll-remove_page' => 'Seite entfernen',
 	'coll-add_category' => 'Kategorie hinzufügen',
@@ -584,7 +585,7 @@ Möchtest du sie hinzufügen?',
 	'coll-overwrite_text' => 'Eine Seite mit dem Namen [[:$1]] ist bereits vorhanden. Möchtest du sie durch deine Kollektion ersetzen?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nein',
-	'coll-disable_collection_text' => '<a href="$1">Klicke hier</a>, um die Kollektion zu beenden',
+	'coll-disable_collection_text' => '<a href="$1">Kollektion löschen und zur Hauptseite zurückkehren.</a>',
 	'coll-load_overwrite_text' => 'Deine Kollektion enthält bereits Seiten.
 Möchtest du die aktuelle Kollektion überschreiben, die neuen Seiten anhängen oder das Laden dieser Kollektion abbrechen?',
 	'coll-overwrite' => 'Überschreiben',
@@ -601,9 +602,9 @@ Diese Seite sollte alle sich paar Sekunden von selbst aktualisieren.
 Falls dieses jedoch nicht geschieht, so drücke bitte den „Aktualisieren“-Knopf (meist F5) deines Browsers.",
 	'coll-rendering_finished_title' => 'Fertig erstellt',
 	'coll-rendering_finished_text' => "'''Die Datei wurde erfolgreich erstellt.'''
-[$1 Klicke hier] um die Datei herunter zu laden.
+[$1 Klicke hier], um die Datei herunterzuladen.
 
-Bist du nicht zufrieden mit dem Ergebnis?
+Bist du mit dem Ergebnis nicht zufrieden?
 Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Coll-helppage}}|Hilfsseite über die Seitenkollektionen]].",
 	'coll-notfound_title' => 'Kollektion nicht gefunden',
 	'coll-notfound_text' => 'Deine Kollektion konnte nicht gefunden werden.',
@@ -621,7 +622,7 @@ Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Col
 Für weitere Informationen siehe die [[{{MediaWiki:Coll-helppage}}|Hilfeseiten]].',
 	'coll-start_add_box_title' => 'Beginne die Kollektion jetzt',
 	'coll-start_add_link' => 'Klicke um deine Kollektion zu beginnen',
-	'coll-start_add_page_text' => 'Klicke um die Seite <em>$1</em> deiner Kollektion hinzuzufügen',
+	'coll-start_add_page_text' => 'Klicke hier, um die Seite „$1“ deiner Kollektion hinzuzufügen',
 	'coll-start_add_page_category' => 'Klicke um die Seiten in der Kategorie <em>$1</em> deiner Kollektion hinzuzufügen',
 	'coll-return_to' => 'Zurück zu [[:$1]]',
 );
@@ -750,7 +751,7 @@ $messages['fr'] = array(
 	'coll-desc' => "[[Special:Collection|Compiler des pages]], générer des pdf's",
 	'coll-collection' => 'Compilation',
 	'coll-collections' => 'Compilations',
-	'coll-portlet_title' => 'Ma compilation',
+	'coll-portlet_title' => 'Collection',
 	'coll-add_page' => 'Ajouter une page',
 	'coll-remove_page' => 'Enlever une page',
 	'coll-add_category' => 'Ajouter une catégorie',
@@ -810,8 +811,9 @@ Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections
 Voulez-vous la remplacer par votre compilation ?',
 	'coll-yes' => 'Oui',
 	'coll-no' => 'Non',
+	'coll-disable_collection_text' => '<a href="$1">Cliquez ici</a> pour arrêter d’utiliser les collections dès maintenant.',
 	'coll-load_overwrite_text' => 'Vous avez déjà des pages dans votre compilation.
-Voulez vous écraser votre compilation actuelle, y rajouter le contenu ou bien annuler ?',
+Voulez vous écraser votre collection actuelle, y rajouter le contenu ou bien annuler le chargement de celle-ci ?',
 	'coll-overwrite' => 'Écraser',
 	'coll-append' => 'Ajouter',
 	'coll-cancel' => 'Annuler',
@@ -843,9 +845,9 @@ Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]
 Veuillez contacter votre administrateur Mediawiki.',
 	'coll-license' => 'Licence',
 	'coll-start_title' => 'Commencer la collection',
-	'coll-start_text' => 'Vous pouver collection les pages, créer et télécharger un document dans l’un des formats à partir des collections de pages or à partir de pages simples, demander un livre d’un partenaire imprimant à la demande, et sauver les collections des pages pour un usage ultérieur, ou encore pour les partager.
+	'coll-start_text' => 'À partir de maintenant, vous pouver collection les pages, créer et télécharger un document dans l’un des formats à partir des collections de pages or à partir de pages simples, commander un livre d’un partenaire imprimant à la demande, et sauver les collections des pages pour un usage ultérieur, ou encore pour les partager.
 
-Voir la [[{{MediaWiki:Coll-helppage}}|page d’aide concernant]] les collections pour plus d’informations.',
+Voir la [[{{MediaWiki:Coll-helppage}}|page d’aide concernant les collections]] pour plus d’informations.',
 	'coll-start_add_box_title' => 'Commencer maintenant la collection.',
 	'coll-start_add_link' => 'Cliquer pour commencer votre collection.',
 	'coll-start_add_page_text' => '$1 sera la première page.',
@@ -1315,7 +1317,7 @@ $messages['it'] = array(
 	'coll-desc' => '[[Special:Collection|Raccoglie pagine]], genera PDF',
 	'coll-collection' => 'Raccolta',
 	'coll-collections' => 'Raccolte',
-	'coll-portlet_title' => 'La mia raccolta',
+	'coll-portlet_title' => 'Raccolta',
 	'coll-add_page' => 'Aggiungi pagina',
 	'coll-remove_page' => 'Rimuovi pagina',
 	'coll-add_category' => 'Aggiungi categoria',
@@ -1377,6 +1379,7 @@ Sovrascriverla?',
 Si desidera che sia sostituita con la raccolta?',
 	'coll-yes' => 'Sì',
 	'coll-no' => 'No',
+	'coll-disable_collection_text' => '<a href="$1">Fai clic qui</a> per interrompere l\'uso delle raccolte per adesso.',
 	'coll-load_overwrite_text' => 'Sono già presenti della pagine nella tua raccolta.
 Si desidera sovrascrivere la raccolta corrente, aggiungere il nuovo contenuto o annullare il caricamento di questa raccolta?',
 	'coll-overwrite' => 'Sovrascrivi',
@@ -1886,7 +1889,7 @@ $messages['nl'] = array(
 	'coll-desc' => "[[Special:Collection|Pagina's verzamelen]], PDF's genereren",
 	'coll-collection' => 'Collectie',
 	'coll-collections' => 'Collecties',
-	'coll-portlet_title' => 'Mijn collectie',
+	'coll-portlet_title' => 'Collectie',
 	'coll-add_page' => 'Pagina toevoegen',
 	'coll-remove_page' => 'Pagina verwijderen',
 	'coll-add_category' => 'Categorie toevoegen',
@@ -2014,7 +2017,7 @@ $messages['no'] = array(
 	'coll-desc' => 'Lag [[Special:Collection|sidesamlinger]] og generer PDF-filer',
 	'coll-collection' => 'Samling',
 	'coll-collections' => 'Samlinger',
-	'coll-portlet_title' => 'Min samling',
+	'coll-portlet_title' => 'Samling',
 	'coll-add_page' => 'Legg til side',
 	'coll-remove_page' => 'Fjern side',
 	'coll-add_category' => 'Legg til kategori',
@@ -2351,7 +2354,7 @@ $messages['pt'] = array(
 	'coll-desc' => '[[Special:Collection|Colecciona páginas]], gera PDFs',
 	'coll-collection' => 'Colecção',
 	'coll-collections' => 'Colecções',
-	'coll-portlet_title' => 'Minha Colecção',
+	'coll-portlet_title' => 'Colecção',
 	'coll-add_page' => 'Adicionar página',
 	'coll-remove_page' => 'Remover página',
 	'coll-add_category' => 'Adicionar categoria',
@@ -2405,8 +2408,8 @@ Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para m
 Deseja substituí-la pela sua colecção?',
 	'coll-yes' => 'Sim',
 	'coll-no' => 'Não',
-	'coll-load_overwrite_text' => 'Já tem algumas páginas na sua colecção.
-Pretende reescrever a sua colecção, adicionar o novo conteúdo or cancelar?',
+	'coll-load_overwrite_text' => 'Você já possui algumas páginas na sua colecção.
+Pretende reescrever a sua colecção, adicionando o novo conteúdo, ou cancelar o carregamento desta colecção?',
 	'coll-overwrite' => 'Reescrever',
 	'coll-append' => 'Adicionar',
 	'coll-cancel' => 'Cancelar',
@@ -2420,6 +2423,8 @@ Não poderão ser adicionadas mais páginas.',
 	'coll-book_text' => 'Você pode encomendar um livro impresso contendo a sua colecção de páginas visitando um dos seguintes parceiros de impressão a pedido:',
 	'coll-order_from_pp' => 'Encomendar o livro de $1',
 	'coll-about_pp' => 'Sobre $1',
+	'coll-start_add_page_text' => 'Clique para adicionar a página <em>$1</em> em sua colecção',
+	'coll-start_add_page_category' => 'Clique para adicionar as páginas da categoria <em>$1</em> em sua colecção',
 );
 
 /** Romanian (Română)
@@ -2756,6 +2761,7 @@ $messages['su'] = array(
 /** Swedish (Svenska)
  * @author Boivie
  * @author H92
+ * @author Jon Harald Søby
  * @author M.M.S.
  * @author Sannab
  */
@@ -2763,7 +2769,7 @@ $messages['sv'] = array(
 	'coll-desc' => '[[Special:Collection|Samla sidor]], generera PDF filer',
 	'coll-collection' => 'Samling',
 	'coll-collections' => 'Samlingar',
-	'coll-portlet_title' => 'Min samling',
+	'coll-portlet_title' => 'Samling',
 	'coll-add_page' => 'Lägg till sida',
 	'coll-remove_page' => 'Ta bort sida',
 	'coll-add_category' => 'Lägg till kategori',
