@@ -102,6 +102,7 @@ Collection.prototype = {
 	observers: [],
 
 	getItems: function() {
+		document.body.style.cursor = "wait";
 		var self = this;
 		sajax_request_type = "GET";
 		try {
@@ -111,10 +112,12 @@ Collection.prototype = {
 					result = JSON.parse(xhr.responseText);
 				} catch(e) {
 					alert(gettext('errorResponseText'));
+					document.body.style.cursor = "default";
 					return;
 				}
 				self.deserialize(result.collection);
 				self.notify();
+				document.body.style.cursor = "default";
 			});
 		} catch (e) {
 			alert('XMLHttpRequest failed: ' + e);
