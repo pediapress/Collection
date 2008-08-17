@@ -2832,7 +2832,7 @@ Vill du ersätta den med din samling?',
 	'coll-no' => 'Nej',
 	'coll-disable_collection_text' => '<a href="$1">Klicka här</a> för att sluta att använda samlingar nu.',
 	'coll-load_overwrite_text' => 'Du har redan några sidor i din samling.
-Vill du ersätta din nuvarande samling, lägga till det nya innehållet eller avbryta?',
+Vill du ersätta din nuvarande samling, lägga till det nya innehållet eller avbryta laddningen av samlingen?',
 	'coll-overwrite' => 'Skriv över',
 	'coll-append' => 'Lägga till',
 	'coll-cancel' => 'Avbryt',
@@ -2870,7 +2870,7 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för mer information
 	'coll-start_add_box_title' => 'Starta samling nu',
 	'coll-start_add_link' => 'Klicka för att starta din samling.',
 	'coll-start_add_page_text' => 'Klicka för att lägga till sidan <em>$1</em> till din samling',
-	'coll-start_add_page_category' => 'Sidorna i kategorin $1 kommer läggas till.',
+	'coll-start_add_page_category' => 'Klicka för att lägga till sidorna i kategorin <em>$1</em> i din samling',
 	'coll-return_to' => 'Tillbaka till [[:$1]]',
 );
 
