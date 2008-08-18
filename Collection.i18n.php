@@ -418,6 +418,7 @@ Aquesta pàgina no funcionarà correctament si no el poseu o l'activeu.</strong>
 );
 
 /** Czech (Česky)
+ * @author Li-sung
  * @author Matěj Grabovský
  * @author Mormegil
  */
@@ -425,7 +426,7 @@ $messages['cs'] = array(
 	'coll-desc' => 'Vytváření [[Special:Collection|kolekce stránek]], tvorba PDF',
 	'coll-collection' => 'Kolekce',
 	'coll-collections' => 'Kolekce',
-	'coll-portlet_title' => 'Moje kolekce',
+	'coll-portlet_title' => 'Kolekce',
 	'coll-add_page' => 'Přidat stránku',
 	'coll-remove_page' => 'Odstranit stránku',
 	'coll-add_category' => 'Přidat kategorii',
@@ -480,7 +481,7 @@ Chcete ji nahradit svojí kolekcí?',
 	'coll-yes' => 'Ano',
 	'coll-no' => 'Ne',
 	'coll-load_overwrite_text' => 'Ve vaší kolekci se už nacházejí stránky.
-Chcete přepsat svoji existující kolekci, přidat do ní obsah nebo zrušit tuto operaci?',
+Chcete přepsat svoji existující kolekci, přidat do ní obsah nebo zrušit operaci s touto kolekcí?',
 	'coll-overwrite' => 'Přepsat',
 	'coll-append' => 'Přidat',
 	'coll-cancel' => 'Zrušit',
@@ -1422,13 +1423,14 @@ Leggi la [[{{MediaWiki:Coll-helppage}}|pagina di aiuto sulle raccolte]] per magg
 );
 
 /** Japanese (日本語)
+ * @author Aotake
  * @author JtFuruhata
  */
 $messages['ja'] = array(
 	'coll-desc' => 'PDFファイルを作成するための[[Special:Collection|ページコレクション]]',
 	'coll-collection' => 'コレクション',
 	'coll-collections' => 'コレクション',
-	'coll-portlet_title' => 'マイ・コレクション',
+	'coll-portlet_title' => 'コレクション',
 	'coll-add_page' => 'ページの追加',
 	'coll-remove_page' => 'ページの削除',
 	'coll-add_category' => 'カテゴリの追加',
@@ -1466,7 +1468,7 @@ $messages['ja'] = array(
 	'coll-no_such_category' => '指定されたカテゴリは存在しません',
 	'coll-notitle_title' => 'ページタイトルが未設定です。',
 	'coll-post_failed_title' => 'POSTリクエストの失敗',
-	'coll-post_failed_msg' => 'このPOSTリクエストは失敗しました ($2)。',
+	'coll-post_failed_msg' => 'この$1へのPOSTリクエストは失敗しました ($2)。',
 	'coll-enter_title' => 'コレクションのタイトルを入力:',
 	'coll-error_reponse' => 'サーバからのエラーレスポンス',
 	'coll-empty_collection' => '空のコレクション',
@@ -1483,7 +1485,7 @@ $messages['ja'] = array(
 	'coll-yes' => 'はい',
 	'coll-no' => 'いいえ',
 	'coll-load_overwrite_text' => 'あなたのコレクションには既に複数のページが存在しています。
-現在のコレクションで上書きする、既存コレクションに追加する、キャンセルする、のいずれかを選択してください。',
+現在のコレクションを上書きする、既存コレクションに追加する、このコレクションの読み込みをキャンセルする、のいずれかを選択してください。',
 	'coll-overwrite' => '上書き',
 	'coll-append' => '追加',
 	'coll-cancel' => 'キャンセル',
@@ -1843,6 +1845,13 @@ $messages['mr'] = array(
 कृपया मीडियाविकि प्रबंधकाशी संपर्क करा.',
 );
 
+/** Maltese (Malti)
+ * @author Roderick Mallia
+ */
+$messages['mt'] = array(
+	'coll-cancel' => 'Annulla',
+);
+
 /** Nahuatl (Nāhuatl)
  * @author Fluence
  */
@@ -2124,7 +2133,7 @@ $messages['oc'] = array(
 	'coll-desc' => "[[Special:Collection|Compilar de paginas]], generar de pdf's",
 	'coll-collection' => 'Compilacion',
 	'coll-collections' => 'Compilacions',
-	'coll-portlet_title' => 'Ma compilacion',
+	'coll-portlet_title' => 'Colleccion',
 	'coll-add_page' => 'Apondre una pagina',
 	'coll-remove_page' => 'Levar una pagina',
 	'coll-add_category' => 'Apondre una categoria',
@@ -2184,8 +2193,9 @@ Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de collecc
 La volètz remplaçar per vòstra compilacion ?',
 	'coll-yes' => 'Òc',
 	'coll-no' => 'Non',
-	'coll-load_overwrite_text' => 'Ja avètz de paginas dins vòstra compilacion.
-Volètz espotir vòstra compilacion actuala, i apondre lo contengut o alara anullar ?',
+	'coll-disable_collection_text' => '<a href="$1">Clicatz aicí</a> per arrestar d’utilizar las colleccions tre ara.',
+	'coll-load_overwrite_text' => "Ja avètz de paginas dins vòstra colleccion.
+Volètz espotir vòstra compilacion actuala, i apondre lo contengut o alara anullar lo cargament d'aquesta ?",
 	'coll-overwrite' => 'Espotir',
 	'coll-append' => 'Apondre',
 	'coll-cancel' => 'Anullar',
@@ -2216,6 +2226,10 @@ Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las coll
 	'coll-invalid_podpartner_msg' => 'Lo partenari POD indicat es incorrècte.
 Contactatz vòstre administrator Mediawiki.',
 	'coll-license' => 'Licéncia',
+	'coll-start_title' => 'Començar la colleccion',
+	'coll-start_text' => "A partir d'ara, podètz collectar las paginas, crear e telecargar un document dins un dels formats a partir de las colleccions de paginas ; çaquèla a partir de paginas simplas, comandar un libre d’un partenari estampant a la demanda, e salvar las colleccions de las paginas per un usatge ulterior, o encara per las partejar.
+
+Veire la [[{{MediaWiki:Coll-helppage}}|pagina d’ajuda concernent las colleccions]] per mai d’entresenhas.",
 );
 
 /** Ossetic (Иронау)
