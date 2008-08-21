@@ -750,28 +750,17 @@ EOS
 			return;
 		}
 
-		$url = $this->mPODPartners[$partner]['posturl'];
-		$errorMessage = '';
-		$contentType = '';
-		$response = self::post( $url, array(), $errorMessage, $contentType );
-		if ( !$response ) {
-			$wgOut->showErrorPage( 'coll-post_failed_title', 'coll-post_failed_msg', array( $url, $errorMessage ) );
-			return;
-		}
-		$postData = $json->decode( $response );
-		
 		$response = self::pdfServerCommand( 'zip_post', array(
 			'metabook' => $this->buildJSONCollection( $_SESSION['wsCollection'] ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
 			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
-			'post_url' => $postData->post_url,
+			'pod_api_url' => $this->mPODPartners[$partner]['posturl'],
 		) );
 		if ( !$response ) {
 			return;
-		}
-		
-		$wgOut->redirect( $postData->redirect_url );
+		}	
+		$wgOut->redirect( $response->redirect_url );
 	}
 	
 	private function outputIntro() {
