@@ -653,7 +653,7 @@ $messages['eo'] = array(
 	'coll-desc' => '[[Special:Collection|Kolekto-paĝoj]], generi PDF-ojn',
 	'coll-collection' => 'Kolekto',
 	'coll-collections' => 'Kolektoj',
-	'coll-portlet_title' => 'Mia kolekto',
+	'coll-portlet_title' => 'Kolekto',
 	'coll-add_page' => 'Aldoni paĝon',
 	'coll-remove_page' => 'Forigi paĝon',
 	'coll-add_category' => 'Aldoni kategorion',
@@ -663,6 +663,7 @@ $messages['eo'] = array(
 	'coll-empty' => 'malplena',
 	'coll-page' => 'paĝo',
 	'coll-pages' => 'paĝoj',
+	'coll-download_as' => 'Elŝuti kiel $1',
 	'coll-helppage' => 'Help:Kolektoj',
 	'coll-my_collection' => 'Mia kolekto',
 	'coll-download_title' => 'Alŝutu kolekton kiel PDF-on',
@@ -872,7 +873,7 @@ $messages['gl'] = array(
 	'coll-desc' => '[[Special:Collection|Coleccionar páxinas]], xerar ficheiros PDF',
 	'coll-collection' => 'Colección',
 	'coll-collections' => 'Coleccións',
-	'coll-portlet_title' => 'A miña colección',
+	'coll-portlet_title' => 'Colección',
 	'coll-add_page' => 'Engadir páxina',
 	'coll-remove_page' => 'Eliminar páxina',
 	'coll-add_category' => 'Engadir categoría',
@@ -965,6 +966,11 @@ Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] p
 	'coll-invalid_podpartner_msg' => 'O compañeiro de solicitudes de impresión (POD) indicado é inválido.
 Por favor, contacte co seu administrador MediaWiki.',
 	'coll-license' => 'Licenza',
+	'coll-start_add_box_title' => 'Comezar a colección agora',
+	'coll-start_add_link' => 'Faga clic para comezar a súa colección.',
+	'coll-start_add_page_text' => 'Faga clic para engadir a páxina "<em>$1</em>" á súa colección',
+	'coll-start_add_page_category' => 'Faga clic para engadir as páxinas que están na categoría "<em>$1</em>" á súa colección',
+	'coll-return_to' => 'Voltar a "[[:$1]]"',
 );
 
 /** Manx (Gaelg)
@@ -2230,6 +2236,11 @@ Contactatz vòstre administrator Mediawiki.',
 	'coll-start_text' => "A partir d'ara, podètz collectar las paginas, crear e telecargar un document dins un dels formats a partir de las colleccions de paginas ; çaquèla a partir de paginas simplas, comandar un libre d’un partenari estampant a la demanda, e salvar las colleccions de las paginas per un usatge ulterior, o encara per las partejar.
 
 Veire la [[{{MediaWiki:Coll-helppage}}|pagina d’ajuda concernent las colleccions]] per mai d’entresenhas.",
+	'coll-start_add_box_title' => 'Començar la colleccion ara.',
+	'coll-start_add_link' => 'Clicar per començar vòstra colleccion.',
+	'coll-start_add_page_text' => 'Clicar per apondre la pagina <em>$1</em> a vòstra colleccion',
+	'coll-start_add_page_category' => 'Clicatz per apondre las paginas dins la categoria <em>$1</em> de vòstra colleccion',
+	'coll-return_to' => 'Tornar cap a [[:$1]]',
 );
 
 /** Ossetic (Иронау)
@@ -2593,7 +2604,7 @@ $messages['sk'] = array(
 	'coll-desc' => 'Vytváranie [[Special:Collection|kolekcie stránok]], tvorba PDF',
 	'coll-collection' => 'Kolekcia',
 	'coll-collections' => 'Kolekcie',
-	'coll-portlet_title' => 'Moja kolekcia',
+	'coll-portlet_title' => 'Kolekcia',
 	'coll-add_page' => 'Pridať stránku',
 	'coll-remove_page' => 'Odstrániť stránku',
 	'coll-add_category' => 'Pridať kategóriu',
@@ -2654,8 +2665,9 @@ Chcete ich pridať?',
 Chcete ju nahradiť svojou kolekciou?',
 	'coll-yes' => 'Áno',
 	'coll-no' => 'Nie',
+	'coll-disable_collection_text' => '<a href="$1">Zastaviť používanie kolekcií</a>.',
 	'coll-load_overwrite_text' => 'Vo vašej kolekcii sa už nachádzajú stránky.
-Chcete prepísať svoju existujúcu kolekciu, pridať do nej obsah alebo zrušiť túto operáciu?',
+Chcete prepísať svoju existujúcu kolekciu, pridať do nej obsah alebo zrušiť načítanie tejto kolekcie?',
 	'coll-overwrite' => 'Prepísať',
 	'coll-append' => 'Pridať',
 	'coll-cancel' => 'Zrušiť',
@@ -2686,6 +2698,15 @@ Spôsoby možnej nápravy nájdete na [[{{MediaWiki:Coll-helppage}}|stránke pom
 	'coll-invalid_podpartner_msg' => 'Zadaný POD partner je neplatný.
 Prosím, kontaktujte svojho správcu MediaWiki.',
 	'coll-license' => 'Licencia',
+	'coll-start_title' => 'Začať kolekciu',
+	'coll-start_text' => 'Odteraz môžete zhromažďovať stránky do kolekcií, vytvárať a stiahnuť dokument v jednom z niekoľkých formátov z kolekcií stránok alebo z jednotlivých stránok, objednávať knihy od partnera, ktorý ich na požiadanie vytlačí a ukladať kolekcie stránok na neskoršie využitie alebo aby ste sa o ne mohli podeliť.
+
+Viac informácií nájdete na [[{{MediaWiki:Coll-helppage}}|stránke Pomocníka o kolekciách]].',
+	'coll-start_add_box_title' => 'Založiť kolekciu',
+	'coll-start_add_link' => 'Kliknutím založíte kolekciu.',
+	'coll-start_add_page_text' => 'Kliknutím pridáte stránku <em>$1</em> do svojej kolekcie.',
+	'coll-start_add_page_category' => 'Kliknutím pridáte stránky v kategórii <em>$1</em> do svojej kolekcie.',
+	'coll-return_to' => 'Návrat na [[:$1]]',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
