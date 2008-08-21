@@ -27,6 +27,16 @@ $aliases['arz'] = array(
 	'Collection' => array( 'مجموعة' ),
 );
 
+/** German (Deutsch) */
+$aliases['de'] = array(
+	'Collection' => array( 'Sammlung' ),
+);
+
+/** Nedersaksisch (Nedersaksisch) */
+$aliases['nds-nl'] = array(
+	'Collection' => array( 'Verzameling' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'Collection' => array( 'Verzameling', 'Collectie' ),
