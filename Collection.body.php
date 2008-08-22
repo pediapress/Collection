@@ -1261,11 +1261,7 @@ EOS
 				$out .= "<li><a href=\"$href\" rel=\"nofollow\">$addCategory</a></li>";
 			}
 			
-			if ( $numArticles == 1 ){
-				$articles = $numArticles . ' ' . wfMsgHtml( 'coll-page' );
-			} else {
-				$articles = $numArticles . ' ' . wfMsgHtml( 'coll-pages' );
-			}
+			$articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $numArticles );
 			$showCollection = wfMsgHtml( 'coll-show_collection' );
 			$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
 			$out .= <<<EOS
