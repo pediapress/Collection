@@ -935,7 +935,7 @@ Quere reemprazala coa súa colección?',
 	'coll-yes' => 'Si',
 	'coll-no' => 'Non',
 	'coll-load_overwrite_text' => 'Xa ten algunhas páxinas na súa colección.
-Desexa sobreescribir a súa colección actual, adxuntar o novo contido ou cancelar?',
+Desexa sobreescribir a súa colección actual, adxuntar o novo contido ou cancelar a carga desta colección?',
 	'coll-overwrite' => 'Sobreescribir',
 	'coll-append' => 'Adxuntar',
 	'coll-cancel' => 'Cancelar',
