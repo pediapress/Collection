@@ -676,6 +676,8 @@ EOS
 	}
 	
 	function rendering() {
+		global $wgCollectionTemplateExclusionCategory;
+		global $wgPDFTemplateBlacklist;
 		global $wgOut;
 		global $wgRequest;
 		global $wgServer;
@@ -720,6 +722,12 @@ EOS
 					$query
 				);
 				$wgOut->addHTML( wfMsg( 'coll-is_cached', htmlspecialchars( $forceRenderURL ) ) );
+			}
+			if ( $wgCollectionTemplateExclusionCategory ) {
+				$wgOut->addWikiText( wfMsg( 'coll-excluded-templates', $wgCollectionTemplateExclusionCategory ) );
+			}
+			if ( $wgPDFTemplateBlacklist ) {
+				$wgOut->addWikiText( wfMsg( 'coll-blacklisted-templates', $wgPDFTemplateBlacklist ) );
 			}
 			if ( $return_to ) {
 				// We are doing this the hard way (i.e. via the HTML detour), to prevent
