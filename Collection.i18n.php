@@ -71,8 +71,8 @@ Do you want to add them?',
 	'coll-notitle_title'              => 'The title of the page could not be determined.',
 	'coll-post_failed_title'          => 'POST request failed',
 	'coll-post_failed_msg'            => 'The POST request to $1 failed ($2).',
-	'coll-pdfserver_failed_title'     => 'PDF server error',
-	'coll-pdfserver_failed_msg'       => 'An error occured on the PDF Server: $1',
+	'coll-mwserve_failed_title'       => 'Render server error',
+	'coll-mwserve_failed_msg'         => 'An error occured on the render server: $1',
 	'coll-enter_title'                => 'Enter title for collection:',
 	'coll-error_reponse'              => 'Error response from server',
 	'coll-empty_collection'           => 'Empty collection',
@@ -107,13 +107,14 @@ This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.",
 	'coll-rendering_finished_title'   => 'Rendering finished',
 	'coll-rendering_finished_text'    => "'''The document file has been generated.'''
-[$1 Click here] to download it to your computer.
+'''[$1 Click here]''' to download it to your computer.
 
 Not satisfied with the output?
 See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
 	'coll-notfound_title'             => 'Collection not found',
 	'coll-notfound_text'              => 'Could not find collection page.',
-	'coll-return_to_collection'       => 'Return to <a href="$1">$2</a>',
+	'coll-is_cached'                  => '<p>A cached version of the document has been found, so no rendering was necessary. <a href="$1">Force re-rending.</a></p>',
+	'coll-return_to_collection'       => '<p>Return to <a href="$1">$2</a></p>',
 	'coll-book_title'                 => 'Order printed book',
 	'coll-book_text'                  => 'You can order a printed book containing your page collection by visiting one of the following print-on-demand partners:',
 	'coll-order_from_pp'              => 'Order book from $1',

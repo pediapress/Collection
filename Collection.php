@@ -40,7 +40,7 @@ require_once( "$IP/extensions/Collection/Version.php" );
 /** Title of Start Collection page */
 $wgCollectionStartPage = 'Start collection';
 
-/** URL of PDF server */
+/** URL of mw-serve render server */
 $wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
 
 /** Login credentials to this MediaWiki as 'USERNAME:PASSWORD' string */
