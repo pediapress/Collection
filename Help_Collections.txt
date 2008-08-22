@@ -70,6 +70,14 @@ A collection with title "My Collection" and subtitle "Just an Example" consistin
 [[Category:Collections]]
 </pre>
 
+== Related Pages ==
+
+* [[Special:Collection]] - the main collection page
+* [[:Category:Collections]] - persisted collections
+* [[:Category:Exclude in print]] - category for templates that should be excluded in exports
+* [[PDF Template Blacklist]] - page for templates that should be excluded in exports
+
+
 {{Languages|Help:Collections}}
 
 [[Category:Help|{{PAGENAME}}]]
