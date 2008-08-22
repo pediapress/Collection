@@ -191,6 +191,8 @@ class Collection extends SpecialPage {
 				Title::makeTitle( NS_SPECIAL, 'Collection' ),
 				$wgRequest->getVal( 'writer', '' )
 			);
+		} else if ( $par == 'forcerender/' ) {
+			return $this->forceRenderCollection();
 		} else if ( $par == 'rendering/' ) {
 			return $this->rendering();
 		} else if ( $par == 'download/' ) {
@@ -617,7 +619,7 @@ EOS
 			$writer = 'rl';
 		}
 		
-		$response = self::pdfServerCommand( 'render', array(
+		$response = self::mwServeCommand( 'render', array(
 			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
@@ -630,10 +632,47 @@ EOS
 		}
 		
 		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' );
-		$wgOut->redirect( wfAppendQuery( $redirect,
-			'return_to=' . urlencode( $referrer->getPrefixedText() )
+		$query = 'return_to=' . urlencode( $referrer->getPrefixedText() )
 			. '&collection_id=' . urlencode( $response->collection_id )
-			. '&writer=' . urlencode( $response->writer ) ) );
+			. '&writer=' . urlencode( $response->writer );
+		if ( $response->is_cached ) {
+			$query .= '&is_cached=1';
+		}
+		$wgOut->redirect( wfAppendQuery( $redirect, $query ) );
+	}
+	
+	function forceRenderCollection() {
+		global $wgOut;
+		global $wgCollectionTemplateExclusionCategory;
+		global $wgPDFTemplateBlacklist;
+		global $wgRequest;
+		global $wgServer;
+		global $wgScriptPath;
+		
+		$collectionID = $wgRequest->getVal( 'collection_id', '' );
+		$writer = $wgRequest->getVal( 'writer', 'rl' );
+		
+		$response = self::mwServeCommand( 'render', array(
+			'collection_id' => $collectionID,
+			'base_url' => $wgServer . $wgScriptPath,
+			'template_blacklist' => $wgPDFTemplateBlacklist,
+			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
+			'writer' => $writer,
+			'force_render' => true
+		) );
+		
+		if ( !$response ) {
+			return;
+		}
+		
+		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' );
+		$query = 'return_to=' . $wgRequest->getVal( 'return_to', '' )
+			. '&collection_id=' . urlencode( $response->collection_id )
+			. '&writer=' . urlencode( $response->writer );
+		if ( $response->is_cached ) {
+			$query .= '&is_cached=1';
+		}
+		$wgOut->redirect( wfAppendQuery( $redirect, $query ) );
 	}
 	
 	function rendering() {
@@ -643,8 +682,8 @@ EOS
 		global $wgLang;
 
 		$this->setHeaders();
-
-		$response = self::pdfServerCommand( 'render_status', array(
+		
+		$response = self::mwServeCommand( 'render_status', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 			'writer' => $wgRequest->getVal( 'writer' ),
 		) );
@@ -654,13 +693,15 @@ EOS
 
 		$return_to = $wgRequest->getVal( 'return_to' );
 
+		$query = 'collection_id=' . urlencode( $response->collection_id )
+			. '&writer=' . urlencode( $response->writer )
+			. '&return_to=' . urlencode( $return_to );
+		
 		switch ( $response->state ) {
 		case 'progress':
 			$url = wfAppendQuery(
 				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' ),
-				'collection_id=' . urlencode( $response->collection_id )
-				. '&writer=' . urlencode( $response->writer )
-				. '&return_to=' . urlencode( $return_to )
+				$query
 			);
 			$wgOut->addMeta( 'http:refresh', '2; URL=' . $url );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
@@ -670,10 +711,16 @@ EOS
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_finished_title' ) );
 			$url = wfAppendQuery(
 				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download/' ),
-				'collection_id=' . urlencode( $response->collection_id )
-				. '&writer=' . urlencode( $response->writer )
+				$query
 			);
 			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_finished_text', $wgServer . $url ) );
+			if ( $wgRequest->getVal( 'is_cached' ) ) {
+				$forceRenderURL = wfAppendQuery(
+					SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'forcerender/'	),
+					$query
+				);
+				$wgOut->addHTML( wfMsg( 'coll-is_cached', htmlspecialchars( $forceRenderURL ) ) );
+			}
 			if ( $return_to ) {
 				// We are doing this the hard way (i.e. via the HTML detour), to prevent
 				// the parser from replacing [[:Special:Collection]] with a selflink.
@@ -695,7 +742,7 @@ EOS
 		global $wgRequest;
 		
 		$tempfile = tmpfile();
-		$headers = self::pdfServerCommand( 'download', array(
+		$headers = self::mwServeCommand( 'download', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 			'writer' => $wgRequest->getVal( 'writer' ),
 		), $timeout=false, $toFile=$tempfile );
@@ -750,7 +797,7 @@ EOS
 			return;
 		}
 
-		$response = self::pdfServerCommand( 'zip_post', array(
+		$response = self::mwServeCommand( 'zip_post', array(
 			'metabook' => $this->buildJSONCollection( $_SESSION['wsCollection'] ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
@@ -1296,7 +1343,7 @@ EOS
 		return $out;
 	}
 	
-	static function pdfServerCommand( $command, $args, $timeout=true, $toFile=null ) {
+	static function mwServeCommand( $command, $args, $timeout=true, $toFile=null ) {
 		global $wgOut;
 		global $wgCollectionMWServeURL;
 		global $wgCollectionMWServeCredentials;
@@ -1326,8 +1373,8 @@ EOS
 		
 		if ( !$json_response ) {
 			$wgOut->showErrorPage(
-				'coll-pdfserver_failed_title',
-				'coll-pdfserver_failed_msg',
+				'coll-mwserve_failed_title',
+				'coll-mwserve_failed_msg',
 				array( $response )
 			);
 			return false;
@@ -1335,8 +1382,8 @@ EOS
 		
 		if ( array_key_exists( 'error', get_object_vars( $json_response ) ) && $json_response->error ) {
 			$wgOut->showErrorPage(
-				'coll-pdfserver_failed_title',
-				'coll-pdfserver_failed_msg',
+				'coll-mwserve_failed_title',
+				'coll-mwserve_failed_msg',
 				array( $json_response->error )
 			);
 			return false;
