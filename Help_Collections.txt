@@ -21,13 +21,22 @@ To download an entire collection as a document, go to the [[Special:Collection]]
 
 == Improving the output ==
 
-Some articles use wikitext that is not ideal for producing e.g. PDFs. One important special case is the use of templates that should look different or be omitted in the rendered output. There are two ways to handle such a template during document generation:
-* exclude the template by adding its name to the [MediaWiki:PDF Template Blacklist|template blacklist]
-* override it with another template by creating a template with name "PrintSOMETEMPLATE" where SOMETEMPLATE is the name of the original template.
+Some articles use wikitext that is not ideal for producing PDFs. One important special case is the use of templates that should look different or be omitted in PDF output. 
 
-=== Format for the template blacklist ===
+For example all navigational templates should be excluded from PDFs by adding them to the [[:Category:Exclude in print|Exclude in print]] category (see below).
+As a rule of thumb, all templates containing content which is not useful in an offline version of the document should be marked for exclusion in PDF exports.
 
-The [[PDF Template Blacklist|template blacklist page]] should contain a list of links to the blacklisted templates in the following form:
+There are two ways to utilize templates for a better PDF output:
+
+=== Substituting templates ===
+
+One can override a template with another by creating a alternative template with name "PrintSOMETEMPLATE" where SOMETEMPLATE is the name of the original template.
+
+=== Excluding templates ===
+;Adding it to the special [[:Category:Exclude in print]]
+:Templates in the category [[:Category:Exclude in print|Exclude in print]] are omitted from the output.
+;Using the template blacklist
+:Templates listed on the [[PDF Template Blacklist|template blacklist]] page are also omitted. The format for this [[PDF Template Blacklist|page]] is in the following form:
 <pre>
  * [[Template:Templatename]]
  * [[Template:SomeOtherTemplatename]]
