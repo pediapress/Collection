@@ -32,6 +32,11 @@ $aliases['de'] = array(
 	'Collection' => array( 'Sammlung' ),
 );
 
+/** Finnish (Suomi) */
+$aliases['fi'] = array(
+	'Collection' => array( 'Kokoelma' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
 	'Collection' => array( 'Verzameling' ),
