@@ -27,6 +27,11 @@ $aliases['arz'] = array(
 	'Collection' => array( 'مجموعة' ),
 );
 
+/** Assamese (অসমীয়া) */
+$aliases['as'] = array(
+	'Collection' => array( 'সংগ্ৰহ' ),
+);
+
 /** German (Deutsch) */
 $aliases['de'] = array(
 	'Collection' => array( 'Sammlung' ),
