@@ -797,7 +797,7 @@ Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections
 	'coll-post_failed_title' => 'Échec de la requête POST',
 	'coll-post_failed_msg' => 'La requête POST vers $1 a échoué ($2).',
 	'coll-mwserve_failed_title' => 'Erreur du serveur du rendu',
-	'coll-mwserve_failed_msg' => 'Une erreur est intervenur sur le serveur du rendu : $1',
+	'coll-mwserve_failed_msg' => 'Une erreur est intervenue sur le serveur donnant le rendu : $1',
 	'coll-enter_title' => 'Entrer un titre pour la compilation :',
 	'coll-error_reponse' => 'Le serveur a rencontré une erreur',
 	'coll-empty_collection' => 'Compilation vide',
@@ -2026,6 +2026,7 @@ $messages['no'] = array(
 	'coll-show_collection' => 'Vis samling',
 	'coll-help_collections' => 'Hjelp for samlinger',
 	'coll-empty' => 'tom',
+	'coll-n_pages' => '$1 {{PLURAL:$1|side|sider}}',
 	'coll-download_as' => 'Last ned som $1',
 	'coll-noscript_text' => '<h1>JavaScript er påkrevd!</h1>
 <strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong>',
@@ -2088,12 +2089,14 @@ Denne siden skal oppfriskes automatisk med noen sekunders mellomrom.
 Om den ikke gjør det, trykk på oppdateringsknappen i nettleseren din.",
 	'coll-rendering_finished_title' => 'Opprettet',
 	'coll-rendering_finished_text' => "'''Dokumentfilen har blitt opprettet.'''
-[$1 Klikk her] for å laste den ned.
+'''[$1 Klikk her]''' for å laste den ned.
 
 Misfornøyd med resultatet?
 Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden for samlinger]] for måter å forbedre den på.",
 	'coll-notfound_title' => 'Samling ikke funnet',
 	'coll-notfound_text' => 'Kunne ikke finne samlingsside.',
+	'coll-excluded-templates' => 'Maler i kategorien [[:Category:$1|$1]] har blitt utelatt.',
+	'coll-blacklisted-templates' => 'Maler på svartelisten ([[:$1]]) har blitt utelatt.',
 	'coll-return_to_collection' => '<p>Tilbake til <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Bestilling av trykt bok',
 	'coll-book_text' => 'Du kan bestille en trykt bok med artikkelsamlingen din ved å besøke en av følgende trykkerpartnere:',
@@ -2163,6 +2166,8 @@ Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de collecc
 	'coll-notitle_title' => 'Lo títol de la pagina pòt pas èsser determinat.',
 	'coll-post_failed_title' => 'Fracàs de la requèsta POST',
 	'coll-post_failed_msg' => 'La requèsta POST vèrs $1 a pas capitat ($2).',
+	'coll-mwserve_failed_title' => 'Error del servidor del rendut',
+	'coll-mwserve_failed_msg' => 'Una error es intervenguda sul servidor balhant lo rendut : $1',
 	'coll-enter_title' => 'Picar un títol per la compilacion :',
 	'coll-error_reponse' => 'Lo servidor a rencontrat una error',
 	'coll-empty_collection' => 'Compilacion voida',
@@ -2202,6 +2207,9 @@ Pas satisfach(a) de la sortida ?
 Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las colleccions]] per las possibilitats de melhorament.",
 	'coll-notfound_title' => 'Compilacion pas trobada',
 	'coll-notfound_text' => 'Pòt pas trobar la compilacion.',
+	'coll-is_cached' => '<p>Una version en amagatal del document es estada trobada, cap de rendut èra pas necessari. <a href="$1">Forçar lo rendut un còp de mai.</a></p>',
+	'coll-excluded-templates' => 'De modèls dins la categoria [[:Category:$1|$1]] son estats excluts.',
+	'coll-blacklisted-templates' => 'De modèls dins la tièra negra [[:$1]] son estats excluts.',
 	'coll-return_to_collection' => '<p>Tornar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Comandar un libre imprimit',
 	'coll-book_text' => "Podètz comandar un libre imprimit contenent vòstra colleccion d'articles en visitant una demanda d'impression de la part de partenaris :",
