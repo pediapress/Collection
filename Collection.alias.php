@@ -42,6 +42,16 @@ $aliases['fi'] = array(
 	'Collection' => array( 'Kokoelma' ),
 );
 
+/** Indonesian (Bahasa Indonesia) */
+$aliases['id'] = array(
+	'Collection' => array( 'Koleksi' ),
+);
+
+/** Khmer (ភាសាខ្មែរ) */
+$aliases['km'] = array(
+	'Collection' => array( 'ការប្រមូលផ្តុំ' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
 	'Collection' => array( 'Verzameling' ),
