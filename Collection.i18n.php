@@ -146,8 +146,6 @@ $messages['qqq'] = array(
 	'coll-collection' => '{{Identical|Collection}}',
 	'coll-portlet_title' => '{{Identical|Collection}}',
 	'coll-empty' => '{{Identical|Empty}}',
-	'coll-page' => '{{Identical|Page}}',
-	'coll-pages' => '{{Identical|Pages}}',
 	'coll-helppage' => "Used as a link to the help page for this extension's functionality on a wiki. '''Do not translate ''Help:''.'''",
 	'coll-my_collection' => '{{Identical|My collection}}',
 	'coll-remove' => '{{Identical|Remove}}',
@@ -181,7 +179,6 @@ $messages['krl'] = array(
  * @author Сай
  */
 $messages['mhr'] = array(
-	'coll-page' => 'лаштык',
 	'coll-cancel' => 'Чараш',
 );
 
@@ -208,8 +205,6 @@ $messages['af'] = array(
 	'coll-show_collection' => 'Wys versameling',
 	'coll-help_collections' => 'Versameling hulp',
 	'coll-empty' => 'leeg',
-	'coll-page' => 'bladsy',
-	'coll-pages' => 'bladsye',
 	'coll-my_collection' => 'My Versameling',
 	'coll-remove' => 'Skrap',
 	'coll-move_to_top' => 'Skuif tot bo',
@@ -495,20 +490,11 @@ Není možné přidat další stránky.',
 	'coll-about_pp' => 'O $1',
 );
 
-/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
- * @author ОйЛ
- */
-$messages['cu'] = array(
-	'coll-page' => 'страни́ца',
-);
-
 /** Danish (Dansk)
  * @author Jon Harald Søby
  */
 $messages['da'] = array(
 	'coll-empty' => 'tom',
-	'coll-page' => 'side',
-	'coll-pages' => 'sider',
 	'coll-title' => 'Titel:',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nej',
@@ -635,8 +621,6 @@ $messages['el'] = array(
 	'coll-collection' => 'Συλλογή',
 	'coll-collections' => 'Συλλογές',
 	'coll-portlet_title' => 'Η Συλλογή μου',
-	'coll-page' => 'σελίδα',
-	'coll-pages' => 'σελίδες',
 	'coll-helppage' => 'Help:Συλλογές',
 	'coll-my_collection' => 'Η Συλλογή μου',
 	'coll-title' => 'Τίτλος:',
@@ -864,7 +848,6 @@ Voir la [[{{MediaWiki:Coll-helppage}}|page d’aide concernant les collections]]
  * @author Snakesteuben
  */
 $messages['fy'] = array(
-	'coll-page' => 'side',
 	'coll-yes' => 'Ja',
 );
 
@@ -980,8 +963,6 @@ $messages['gv'] = array(
 	'coll-collections' => 'Çhaglymyn',
 	'coll-portlet_title' => 'My haglym',
 	'coll-empty' => 'follym',
-	'coll-page' => 'duillag',
-	'coll-pages' => 'duillagyn',
 	'coll-helppage' => 'Cooney:Çhaglymyn',
 	'coll-my_collection' => 'My haglym',
 	'coll-title' => 'Ard-ennym:',
@@ -1000,7 +981,6 @@ $messages['gv'] = array(
  * @author Singularity
  */
 $messages['haw'] = array(
-	'coll-page' => '‘ao‘ao',
 	'coll-remove' => 'Kāpae',
 	'coll-contents' => 'Papa kuhikuhi',
 	'coll-about_pp' => 'E pili ana iā $1',
@@ -1291,8 +1271,6 @@ $messages['is'] = array(
 	'coll-show_collection' => 'Sýna safn',
 	'coll-help_collections' => 'Safnhjálp',
 	'coll-empty' => 'tómur',
-	'coll-page' => 'síða',
-	'coll-pages' => 'síður',
 	'coll-my_collection' => 'Mitt safn',
 	'coll-remove' => 'Fjarlægja',
 	'coll-title' => 'Titill:',
@@ -1641,7 +1619,6 @@ $messages['km'] = array(
  * @author Jose77
  */
 $messages['krj'] = array(
-	'coll-page' => 'pahina',
 	'coll-contents' => 'Manga Sulud',
 	'coll-cancel' => 'Kanselar',
 	'coll-about_pp' => 'Angut sa Iwan $1',
@@ -1725,8 +1702,6 @@ Et kënne keng Säite méi derbäigesat ginn.',
  * @author Passawuth
  */
 $messages['lo'] = array(
-	'coll-page' => 'ໜ້າ',
-	'coll-pages' => 'ໜ້າ',
 	'coll-remove' => 'ເອົາອອກ',
 	'coll-yes' => 'ໃຊ່',
 	'coll-no' => 'ບໍ່ໃຊ່',
@@ -1890,7 +1865,6 @@ $messages['mt'] = array(
  */
 $messages['nah'] = array(
 	'coll-empty' => '(iztāc)',
-	'coll-page' => 'zāzanilli',
 	'coll-title' => 'Tōcāitl:',
 	'coll-yes' => 'Quēmah',
 	'coll-no' => 'Ahmo',
@@ -2043,8 +2017,6 @@ Neem alstublieft contact op met uw MediaWiki-beheerder.',
 $messages['nn'] = array(
 	'coll-collection' => 'Samling',
 	'coll-empty' => 'tom',
-	'coll-page' => 'side',
-	'coll-pages' => 'sider',
 	'coll-remove' => 'Fjern',
 	'coll-title' => 'Tittel:',
 	'coll-yes' => 'Ja',
@@ -2276,7 +2248,6 @@ Veire la [[{{MediaWiki:Coll-helppage}}|pagina d’ajuda concernent las colleccio
  * @author Amikeco
  */
 $messages['os'] = array(
-	'coll-page' => 'фарс',
 	'coll-title' => 'Сæргонд:',
 	'coll-yes' => 'О',
 	'coll-no' => 'Нæ',
@@ -2377,8 +2348,6 @@ $messages['ps'] = array(
 	'coll-add_category' => 'وېشنيزه ورګډول',
 	'coll-help_collections' => 'د غونډونو لارښود',
 	'coll-empty' => 'تش',
-	'coll-page' => 'مخ',
-	'coll-pages' => 'مخونه',
 	'coll-my_collection' => 'زما غونډ',
 	'coll-remove' => 'غورځول',
 	'coll-title' => 'سرليک:',
@@ -2732,7 +2701,6 @@ Viac informácií nájdete na [[{{MediaWiki:Coll-helppage}}|stránke Pomocníka 
  * @author Sasa Stefanovic
  */
 $messages['sr-ec'] = array(
-	'coll-page' => 'страна',
 	'coll-remove' => 'Уклони',
 	'coll-title' => 'Наслов:',
 	'coll-yes' => 'Да',
@@ -2754,8 +2722,6 @@ $messages['stq'] = array(
 	'coll-show_collection' => 'Touhoopestaalenge wiese',
 	'coll-help_collections' => 'Hälpe tou Touhoopestaalengen',
 	'coll-empty' => 'loos',
-	'coll-page' => 'Siede',
-	'coll-pages' => 'Sieden',
 	'coll-noscript_text' => '<h1>JavaScript is nöödich!</h1>
 <strong>Dien Browser unnerstutset neen Javascript of Javascript wuude deaktivierd. Disse Siede däd nit gjucht funktionierje, soloange Javascript nit ferföigboar is.</strong>',
 	'coll-intro_text' => 'Du koast Sieden touhoopestaale, n PDF deerap moakje un deelleede as uk Touhoopestaalengen foar ne leetere Ferweendenge twiskespiekerje un mäd uur Benutsere deele.
@@ -2923,13 +2889,6 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för mer information
 	'coll-return_to' => 'Tillbaka till [[:$1]]',
 );
 
-/** Silesian (Ślůnski)
- * @author Herr Kriss
- */
-$messages['szl'] = array(
-	'coll-page' => 'zajta',
-);
-
 /** Telugu (తెలుగు)
  * @author Veeven
  * @author వైజాసత్య
@@ -2997,7 +2956,6 @@ $messages['te'] = array(
  */
 $messages['tet'] = array(
 	'coll-empty' => 'mamuk',
-	'coll-page' => 'pájina',
 	'coll-yes' => 'Sin',
 	'coll-no' => 'Lae',
 	'coll-about_pp' => 'Kona-ba $1',
@@ -3086,8 +3044,6 @@ $messages['tr'] = array(
 	'coll-collections' => 'Koleksiyonlar',
 	'coll-portlet_title' => 'Koleksiyonum',
 	'coll-empty' => 'boş',
-	'coll-page' => 'sayfa',
-	'coll-pages' => 'sayfalar',
 	'coll-remove' => 'Kaldır',
 	'coll-title' => 'Başlık:',
 	'coll-yes' => 'Evet',
@@ -3255,8 +3211,6 @@ Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
  * @author Malafaya
  */
 $messages['vo'] = array(
-	'coll-page' => 'pad',
-	'coll-pages' => 'pads',
 	'coll-helppage' => 'Yuf:Konlets',
 	'coll-my_collection' => 'Konlet Obik',
 	'coll-title' => 'Tiäd:',
