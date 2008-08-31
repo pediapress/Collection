@@ -1640,7 +1640,7 @@ $messages['lb'] = array(
 	'coll-desc' => "[[Special:Collection|Säiten zesummestellen]], PDF'e generéieren",
 	'coll-collection' => 'Sammlung',
 	'coll-collections' => 'Sammlungen',
-	'coll-portlet_title' => 'Meng Sammlung',
+	'coll-portlet_title' => 'Sammlung',
 	'coll-add_page' => 'Säit derbäisetzen',
 	'coll-remove_page' => 'Säit ewechhuelen',
 	'coll-add_category' => 'Kategorie derbäisetzen',
@@ -1648,6 +1648,7 @@ $messages['lb'] = array(
 	'coll-show_collection' => "D'Sammlung weisen",
 	'coll-help_collections' => "Hellëf iwwert d 'Sammlungen",
 	'coll-empty' => 'eidel',
+	'coll-n_pages' => '$1 {{PLURAL:$1|Säit|Säiten}}',
 	'coll-download_as' => 'Als $1 eroflueden',
 	'coll-noscript_text' => '<h1>JavaScript gëtt gebraucht!</h1>
 <strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
@@ -1696,6 +1697,7 @@ Et kënne keng Säite méi derbäigesat ginn.',
 	'coll-order_from_pp' => "D'Buch bestelle bäi $1",
 	'coll-about_pp' => 'Iwwer $1',
 	'coll-license' => 'Lizenz',
+	'coll-return_to' => 'Zréck op [[:$1]]',
 );
 
 /** Lao (ລາວ)
