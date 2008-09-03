@@ -867,6 +867,7 @@ $messages['gl'] = array(
 	'coll-show_collection' => 'Mostrar colección',
 	'coll-help_collections' => 'Axuda coas coleccións',
 	'coll-empty' => 'baleiro',
+	'coll-n_pages' => '$1 {{PLURAL:$1|páxina|páxinas}}',
 	'coll-download_as' => 'Descargar como $1',
 	'coll-noscript_text' => '<h1>Requírese o JavaScript!</h1>
 <strong>O seu navegador non soporta o JavaScript ou o JavaScript foi deshabilitado.
@@ -916,6 +917,7 @@ Quere engadilas?',
 Quere reemprazala coa súa colección?',
 	'coll-yes' => 'Si',
 	'coll-no' => 'Non',
+	'coll-disable_collection_text' => '<a href="$1">Prema aquí</a> para parar de usar coleccións polo de agora.',
 	'coll-load_overwrite_text' => 'Xa ten algunhas páxinas na súa colección.
 Desexa sobreescribir a súa colección actual, adxuntar o novo contido ou cancelar a carga desta colección?',
 	'coll-overwrite' => 'Sobreescribir',
@@ -933,7 +935,7 @@ Esta páxina refrescarase cada poucos segundos.
 Se non vai, por favor, prema no botón \"Refrescar\" do seu navegador.",
 	'coll-rendering_finished_title' => 'Finalizou a renderización',
 	'coll-rendering_finished_text' => "'''O documento foi xerado.'''
-[$1 Prema aquí] para descargalo no seu computador.
+'''[$1 Prema aquí]''' para descargalo no seu computador.
 
 Non está satisfaito co ficheiro de saída?
 Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para comprobar as posibilidades de melloralo.",
@@ -948,6 +950,7 @@ Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] p
 	'coll-invalid_podpartner_msg' => 'O compañeiro de solicitudes de impresión (POD) indicado é inválido.
 Por favor, contacte co seu administrador MediaWiki.',
 	'coll-license' => 'Licenza',
+	'coll-start_title' => 'Comezar a colección',
 	'coll-start_add_box_title' => 'Comezar a colección agora',
 	'coll-start_add_link' => 'Faga clic para comezar a súa colección.',
 	'coll-start_add_page_text' => 'Faga clic para engadir a páxina "<em>$1</em>" á súa colección',
@@ -1077,7 +1080,7 @@ $messages['hsb'] = array(
 	'coll-desc' => '[[Special:Collection|Strony zběrać]], PDF wutworić',
 	'coll-collection' => 'Zběrka',
 	'coll-collections' => 'Zběrki',
-	'coll-portlet_title' => 'Moja zběrka',
+	'coll-portlet_title' => 'Zběrka',
 	'coll-add_page' => 'Stronu přidać',
 	'coll-remove_page' => 'Stronu wotstronić',
 	'coll-add_category' => 'Kategoriju přidać',
@@ -1085,6 +1088,7 @@ $messages['hsb'] = array(
 	'coll-show_collection' => 'Zběrku pokazać',
 	'coll-help_collections' => 'Pomoc zběrkow',
 	'coll-empty' => 'prózdna',
+	'coll-n_pages' => '$1 {{PLURAL:$1|strona|stronje|strony|stronow}}',
 	'coll-helppage' => 'Help:Zběrki',
 	'coll-my_collection' => 'Moja zběrka',
 	'coll-download_title' => 'Zběrku jako PDF sćahnyć',
@@ -1691,6 +1695,7 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-limit_exceeded_title' => 'Sammlung ze grouss',
 	'coll-limit_exceeded_text' => 'Är Sammlung ass ze grouss.
 Et kënne keng Säite méi derbäigesat ginn.',
+	'coll-notfound_title' => 'Sammlung net fonnt',
 	'coll-return_to_collection' => '<p>Zréck op <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Gedréckte Buch bestellen',
 	'coll-book_text' => 'Dir kënnt e Buch bestellen op enge vun dësen Internetsiten:',
@@ -1862,6 +1867,13 @@ $messages['mt'] = array(
 	'coll-cancel' => 'Annulla',
 );
 
+/** Erzya (Эрзянь)
+ * @author Botuzhaleny-sodamo
+ */
+$messages['myv'] = array(
+	'coll-remove' => 'Нардык',
+);
+
 /** Nahuatl (Nāhuatl)
  * @author Fluence
  */
@@ -2000,7 +2012,7 @@ Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om d
 	'coll-about_pp' => 'Over $1',
 	'coll-invalid_podpartner_title' => 'Ongeldige print on demand-partner',
 	'coll-invalid_podpartner_msg' => 'De opgegeven print on demand-partner is ongeldig.
-Neem alstublieft contact op met uw MediaWiki-beheerder.',
+Neem contact op met uw MediaWiki-beheerder.',
 	'coll-license' => 'Licentie',
 	'coll-start_title' => 'Collectie aanmaken',
 	'coll-start_text' => "U kunt pagina's in een collectie plaatsen, een bestand in verschillende formaten maken en downloaden, van een paginacollectie of individuele pagina's, een boek bestellen bij een print-on-demandpartner, en een paginacollectie opslaan voor later gebruik, of om ze te delen.
@@ -2383,6 +2395,8 @@ $messages['pt'] = array(
 	'coll-show_collection' => 'Mostrar colecção',
 	'coll-help_collections' => 'Ajuda de colecções',
 	'coll-empty' => 'vazia',
+	'coll-n_pages' => '$1 {{PLURAL:$1|página|páginas}}',
+	'coll-download_as' => 'Descarregar como $1',
 	'coll-noscript_text' => '<h1>JavaScript é Requerido!</h1>
 <strong>O seu "browser" não suporta JavaScript, ou o JavaScript foi desactivado.
 Esta página não funcionará correctamente, excepto se o JavaScript for activado.</strong>',
@@ -2393,6 +2407,8 @@ Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para m
 	'coll-my_collection' => 'Minha Colecção',
 	'coll-download_title' => 'Descarregar Colecção como PDF',
 	'coll-download_text' => 'Para descarregar um ficheiro PDF da sua colecção de páginas gerado automaticamente, carregue no botão.',
+	'coll-download' => 'Descarregar',
+	'coll-format_label' => 'Formato:',
 	'coll-remove' => 'Remover',
 	'coll-move_to_top' => 'Mover para o topo',
 	'coll-move_up' => 'Mover acima',
@@ -2427,6 +2443,7 @@ Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para m
 Deseja substituí-la pela sua colecção?',
 	'coll-yes' => 'Sim',
 	'coll-no' => 'Não',
+	'coll-disable_collection_text' => '<a href="$1">Clique aqui</a> para deixar de usar colecções por agora.',
 	'coll-load_overwrite_text' => 'Você já possui algumas páginas na sua colecção.
 Pretende reescrever a sua colecção, adicionando o novo conteúdo, ou cancelar o carregamento desta colecção?',
 	'coll-overwrite' => 'Reescrever',
@@ -2435,15 +2452,34 @@ Pretende reescrever a sua colecção, adicionando o novo conteúdo, ou cancelar 
 	'coll-limit_exceeded_title' => 'Colecção Demasiado Grande',
 	'coll-limit_exceeded_text' => 'A usa coleccção de página é demasiado grande.
 Não poderão ser adicionadas mais páginas.',
+	'coll-rendering_text' => "'''Por favor, aguarde enquanto o documento é gerado.'''
+
+Progresso: '''$1%'''.
+
+Este página deverá refrescar automaticamente após alguns segundos.
+Se isto não funcionar, por favor utilize o botão de refrescamento do seu navegador.",
 	'coll-notfound_title' => 'Colecção Não Encontrada',
 	'coll-notfound_text' => 'Não foi possível encontrar a página da colecção.',
+	'coll-excluded-templates' => 'Prédefinições na categoria [[:Category:$1|$1]] foram excluídas.',
+	'coll-blacklisted-templates' => 'Prédefinições na lista negra [[:$1]] foram excluídas.',
 	'coll-return_to_collection' => '<p>Regressar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Encomendar Livro Impresso',
 	'coll-book_text' => 'Você pode encomendar um livro impresso contendo a sua colecção de páginas visitando um dos seguintes parceiros de impressão a pedido:',
 	'coll-order_from_pp' => 'Encomendar o livro de $1',
 	'coll-about_pp' => 'Sobre $1',
-	'coll-start_add_page_text' => 'Clique para adicionar a página <em>$1</em> em sua colecção',
+	'coll-invalid_podpartner_title' => 'Parceiro POD inválido',
+	'coll-invalid_podpartner_msg' => 'O parceiro POD é inválido.
+Por favor, contacte o seu administrador MediaWiki.',
+	'coll-license' => 'Licença',
+	'coll-start_title' => 'Iniciar colecção',
+	'coll-start_text' => 'A partir deste momento, pode coleccionar páginas, gerar e descarregar um documento num de vários formatos a partir de colecções ou de páginas individuais, encomendar livros de um parceiro print-on-demand (impressão a pedido), e gravar colecções de páginas para utilização posterior, ou partilhá-las.
+
+Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para mais informação.',
+	'coll-start_add_box_title' => 'Iniciar colecção agora mesmo',
+	'coll-start_add_link' => 'Clique para iniciar a sua colecção.',
+	'coll-start_add_page_text' => 'Clique para adicionar a página <em>$1</em> à sua colecção',
 	'coll-start_add_page_category' => 'Clique para adicionar as páginas da categoria <em>$1</em> em sua colecção',
+	'coll-return_to' => 'Voltar para [[:$1]]',
 );
 
 /** Romanian (Română)
@@ -3213,7 +3249,7 @@ Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
  * @author Malafaya
  */
 $messages['vo'] = array(
-	'coll-helppage' => 'Yuf:Konlets',
+	'coll-helppage' => 'Help:Konlets',
 	'coll-my_collection' => 'Konlet Obik',
 	'coll-title' => 'Tiäd:',
 	'coll-yes' => 'Si',
