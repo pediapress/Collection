@@ -81,14 +81,22 @@ Installation and Configuration of the Collection Extension
    DO NOT USE THIS SETTING, as the credentials will be exposed to eavesdropping!
   
   *$wgCollectionFormats*
-   An array mapping names of mwlib_ writers to the name of the produces format.
+   An array mapping names of mwlib_ writers to the name of the produced format.
    The default value is:
    
        array(
            'rl' => 'PDF',
        )
     
-   i.e. only PDF enabled. See mwlib_ for possible other writers.
+   i.e. only PDF enabled. If you want to add OpenDocument Text in addition to
+   PDF you can set $wgCollectionFormats to something like this:
+   
+       $wgCollectionFormats = array(
+           'rl' => 'PDF',
+           'odf' => 'ODT',
+       );
+   
+   See mwlib_ for possible other writers.
   
   *$wgCollectionStartPage (string)*
    Title of a page that is displayed when a user clicks on "Start collection",
