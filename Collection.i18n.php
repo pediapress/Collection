@@ -2487,8 +2487,9 @@ Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para m
  */
 $messages['ro'] = array(
 	'coll-desc' => '[[Special:Collection|Colecţionează pagini]], generează fişiere PDF',
+	'coll-collection' => 'Colecţie',
 	'coll-collections' => 'Colecţii',
-	'coll-portlet_title' => 'Colecţia mea',
+	'coll-portlet_title' => 'Colecţie',
 	'coll-add_page' => 'Adaugă pagină',
 	'coll-remove_page' => 'Elimină pagină',
 	'coll-add_category' => 'Adaugă categorie',
