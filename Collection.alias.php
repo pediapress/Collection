@@ -52,6 +52,11 @@ $aliases['km'] = array(
 	'Collection' => array( 'ការប្រមូលផ្តុំ' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$aliases['lb'] = array(
+	'Collection' => array( 'Sammlung' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
 	'Collection' => array( 'Verzameling' ),

@@ -345,6 +345,121 @@ $messages['ar'] = array(
 	'coll-return_to' => 'رجوع إلى [[:$1]]',
 );
 
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Meno25
+ */
+$messages['arz'] = array(
+	'coll-desc' => '[[Special:Collection|صفحات مجموعة]]، تولد PDFs',
+	'coll-collection' => 'مجموعة',
+	'coll-collections' => 'مجموعات',
+	'coll-portlet_title' => 'مجموعة',
+	'coll-add_page' => 'إضافة صفحة',
+	'coll-remove_page' => 'إزالة صفحة',
+	'coll-add_category' => 'إضافة تصنيف',
+	'coll-load_collection' => 'تحميل المجموعة',
+	'coll-show_collection' => 'عرض المجموعة',
+	'coll-help_collections' => 'مساعدة المجموعات',
+	'coll-empty' => 'فارغ',
+	'coll-n_pages' => '$1 {{PLURAL:$1|صفحة|صفحة}}',
+	'coll-download_as' => 'تحميل ك$1',
+	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
+<strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
+هذه الصفحة لن تعمل بطريقة صحيحة، إلا إذا تم تفعيل الجافاسكريبت.</strong>',
+	'coll-intro_text' => 'يمكنك جمع الصفحات، توليد وتحميل ملف PDF من مجموعات الصفحة وحفظ مجموعات الصفحة للاستخدام فيما بعد أو لمشاركتها.
+
+انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
+	'coll-helppage' => 'Help:مجموعات',
+	'coll-too_big_cat' => 'التصنيف يحتوى على أكثر من %PARAM% صفحة، فقط أول %PARAM% صفحة يمكن إضافتها إلى مجموعتك.
+هل تريد إضافتها؟',
+	'coll-my_collection' => 'مجموعتي',
+	'coll-download_title' => 'حمل المجموعة ك PDF',
+	'coll-download_text' => 'لتحميل ملف PDF مولد تلقائيا من مجموعة صفحتك، اضغط الزر.',
+	'coll-download' => 'تحميل',
+	'coll-format_label' => 'الصيغة:',
+	'coll-remove' => 'إزالة',
+	'coll-move_to_top' => 'حرك إلى الأعلى',
+	'coll-move_up' => 'حرك إلى الأعلى',
+	'coll-move_down' => 'حرك إلى الأسفل قليلا',
+	'coll-move_to_bottom' => 'حرك إلى الأسفل',
+	'coll-title' => 'العنوان:',
+	'coll-subtitle' => 'العنوان الفرعي:',
+	'coll-contents' => 'محتويات',
+	'coll-create_chapter' => 'إنشاء فرع جديد',
+	'coll-sort_alphabetically' => 'تصنيف الصفحات أبجديا',
+	'coll-clear_collection' => 'إفراغ المجموعة',
+	'coll-clear_confirm' => 'هل تريد فعلا إفراغ مجموعتك؟',
+	'coll-rename' => 'إعادة تسمية',
+	'coll-new_chapter' => 'أدخل الاسم للفرع الجديد',
+	'coll-rename_chapter' => 'أدخل الاسم الجديد للفرع',
+	'coll-no_such_category' => 'لا تصنيف كهذا',
+	'coll-notitle_title' => 'عنوان الصفحة لم يمكن تحديده.',
+	'coll-post_failed_title' => 'طلب POST فشل',
+	'coll-post_failed_msg' => 'طلب POST إلى $1 فشل ($2).',
+	'coll-mwserve_failed_title' => 'خطأ عرض من الخادم',
+	'coll-mwserve_failed_msg' => 'حدث خطأ فى خادم العرض: $1',
+	'coll-enter_title' => 'أدخل العنوان للمجموعة:',
+	'coll-error_reponse' => 'خطأ استجابة من الخادم',
+	'coll-empty_collection' => 'مجموعة فارغة',
+	'coll-revision' => 'النسخة: %PARAM%',
+	'coll-save_collection_title' => 'حفظ المجموعة',
+	'coll-save_collection_text' => 'لحفظ هذه المجموعة للاستخدام المستقبلي، اختر نوع مجموعة وأدخل عنوان صفحة:',
+	'coll-login_to_save' => 'لو كنت تريد حفظ المجموعات من أجل الاستخدام فيما بعد، من فضلك [[Special:UserLogin|قم بتسجيل الدخول أو إنشاء حساب]].',
+	'coll-personal_collection_label' => 'مجموعة شخصية:',
+	'coll-community_collection_label' => 'مجموعة مجتمع:',
+	'coll-save_collection' => 'حفظ المجموعة',
+	'coll-overwrite_title' => 'الصفحة موجودة.
+كتابة عليها؟',
+	'coll-overwrite_text' => 'صفحة بنفس الاسم [[:$1]] موجودة بالفعل.
+هل تريد استبدالها بمجموعتك؟',
+	'coll-yes' => 'نعم',
+	'coll-no' => 'لا',
+	'coll-disable_collection_text' => '<a href="$1">اضغط هنا</a> للتوقف عن استخدام المجموعات حاليا.',
+	'coll-load_overwrite_text' => 'لديك بالفعل عدة صفحات فى مجموعتك.
+هل تريد الكتابة على مجموعتك الحالية، إضافة المحتوى الجديد أو إلغاء تحميل هذه المجموعة؟',
+	'coll-overwrite' => 'كتابة عليها',
+	'coll-append' => 'انتظار',
+	'coll-cancel' => 'إلغاء',
+	'coll-limit_exceeded_title' => 'المجموعة كبيرة جدا',
+	'coll-limit_exceeded_text' => 'مجموعة صفحتك كبيرة جدا.
+لا مزيد من الصفحات يمكن إضافتها.',
+	'coll-rendering_title' => 'عرض',
+	'coll-rendering_text' => "'''من فضلك انتظر أثناء توليد الوثيقة.'''
+
+التقدم: '''$1%'''.
+
+هذه الصفحة ينبغى أن يتم تحديثها كل عدة ثوان.
+لو أن هذا لا يعمل، من فضلك اضغط زر التحديث فى متصفحك.",
+	'coll-rendering_finished_title' => 'العرض انتهى',
+	'coll-rendering_finished_text' => "'''ملف الوثيقة تم توليده.'''
+'''[$1 اضغط هنا]''' لتنزيله إلى حاسوبك.
+
+غير راض عن الخرج؟
+انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.",
+	'coll-notfound_title' => 'المجموعة غير موجودة',
+	'coll-notfound_text' => 'لم يمكن العثور على صفحة المجموعة.',
+	'coll-is_cached' => '<p>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></p>',
+	'coll-excluded-templates' => 'القوالب فى التصنيف [[:Category:$1|$1]] تم إقصاؤها.',
+	'coll-blacklisted-templates' => 'القوالب فى القائمة السوداء [[:$1]] تم إقصاؤها.',
+	'coll-return_to_collection' => '<p>ارجع إلى <a href="$1">$2</a></p>',
+	'coll-book_title' => 'طلب كتاب مطبوع',
+	'coll-book_text' => 'يمكنك طلب كتاب مطبوع يحتوى على مجموعة صفحاتك بواسطة زيارة واحدا من شركاء الطباعة عند الطلب التاليين:',
+	'coll-order_from_pp' => 'طلب كتاب من $1',
+	'coll-about_pp' => 'حول $1',
+	'coll-invalid_podpartner_title' => 'شريك POD غير صحيح',
+	'coll-invalid_podpartner_msg' => 'شريك POD الموفر غير صحيح.
+من فضلك اتصل بإدارى ميدياويكى الخاص بك.',
+	'coll-license' => 'ترخيص',
+	'coll-start_title' => 'بداية المجموعة',
+	'coll-start_text' => 'من الآن فصاعدا، يمكنك جمع الصفحات، توليد وتنزيل وثيقة فى صيغة من بين صيغ كثيرة من مجموعات الصفحات أو من صفحات فردية، طلب كتب من شريك طباعة عند الطلب، وحفظ مجموعات الصفحات للاستخدام فيما بعد، أو لمشاركتها.
+
+انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
+	'coll-start_add_box_title' => 'ابدأ المجموعة الآن',
+	'coll-start_add_link' => 'اضغط لبدء مجموعتك',
+	'coll-start_add_page_text' => 'اضغط لإضافة الصفحة <em>$1</em> إلى مجموعتك',
+	'coll-start_add_page_category' => 'اضغط لإضافة الصفحات فى التصنيف <em>$1</em> إلى مجموعتك',
+	'coll-return_to' => 'رجوع إلى [[:$1]]',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
@@ -2902,7 +3017,7 @@ Denna sida ska uppdateras automatisk med några sekunders mellanrum.
 Om det inte fungerar, tryck på uppdateringsknappen i din webbläsare.",
 	'coll-rendering_finished_title' => 'Rendering avslutad',
 	'coll-rendering_finished_text' => "'''Dokumentfilen har skapats.'''
-[$1 Klicka här] för att ladda ner det till din dator.
+'''[$1 Klicka här]''' för att ladda ner den till din dator.
 
 Inte nöjd med resultatet?
 Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra den.",
