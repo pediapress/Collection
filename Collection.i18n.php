@@ -1017,6 +1017,8 @@ Quere engadilas?',
 	'coll-notitle_title' => 'O título da páxina non pode ser determinado.',
 	'coll-post_failed_title' => 'A solicitude do POST fallou',
 	'coll-post_failed_msg' => 'Fallou o POST solicitado a $1 ($2).',
+	'coll-mwserve_failed_title' => 'Erro no servidor de renderización',
+	'coll-mwserve_failed_msg' => 'Produciuse un erro no servidor de renderización: $1',
 	'coll-enter_title' => 'Escriba un título para a colección:',
 	'coll-error_reponse' => 'Ocorreu un erro no servidor',
 	'coll-empty_collection' => 'Colección baleira',
@@ -1056,6 +1058,9 @@ Non está satisfaito co ficheiro de saída?
 Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para comprobar as posibilidades de melloralo.",
 	'coll-notfound_title' => 'Non se pode atopar a colección',
 	'coll-notfound_text' => 'Non se pode atopar a páxina da colección.',
+	'coll-is_cached' => '<p>Atopouse unha versión do documento na memoria caché, polo que non vai ser necesaria a renderización. <a href="$1">Forzala.</a></p>',
+	'coll-excluded-templates' => 'O modelos da categoría "[[:Category:$1|$1]]" foron excluídos.',
+	'coll-blacklisted-templates' => 'O modelos da lista negra "[[:$1]]" foron excluídos.',
 	'coll-return_to_collection' => '<p>Voltar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Encargar un libro impreso',
 	'coll-book_text' => 'Pode encargar un libro impreso que conteña a súa páxina de colección visitando un dos seguintes compañeiros de solicitudes de impresión:',
@@ -1071,6 +1076,13 @@ Por favor, contacte co seu administrador MediaWiki.',
 	'coll-start_add_page_text' => 'Faga clic para engadir a páxina "<em>$1</em>" á súa colección',
 	'coll-start_add_page_category' => 'Faga clic para engadir as páxinas que están na categoría "<em>$1</em>" á súa colección',
 	'coll-return_to' => 'Voltar a "[[:$1]]"',
+);
+
+/** Swiss German (Alemannisch)
+ * @author J. 'mach' wust
+ */
+$messages['gsw'] = array(
+	'coll-title' => 'Titel:',
 );
 
 /** Manx (Gaelg)
@@ -2119,7 +2131,7 @@ Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om d
 	'coll-is_cached' => '<p>Er is een versie van het document beschikbaar in de cache, dus opnieuw renderen was niet nodig.
 <a href="$1">Opnieuw renderen.</a></p>',
 	'coll-excluded-templates' => 'Sjablonen in de category [[:Category:$1|$1]] worden genegeerd.',
-	'coll-blacklisted-templates' => 'Sjablonen op de zwarte lijst [[:Category:$1|$1]] worden genegeerd.',
+	'coll-blacklisted-templates' => 'Sjablonen op de zwarte lijst [[:$1]] worden genegeerd.',
 	'coll-return_to_collection' => '<p>Teruggaan naar <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Gedrukt boek bestellen',
 	'coll-book_text' => 'U kunt een gedrukt boek bestellen dat uw paginacollectie bevat door een van de volgende print-on-demand-partners te bezoeken:',
@@ -3205,6 +3217,7 @@ $messages['tr'] = array(
 );
 
 /** Ukrainian (Українська)
+ * @author AS
  * @author Ahonc
  */
 $messages['uk'] = array(
@@ -3247,7 +3260,7 @@ $messages['uk'] = array(
 	'coll-no_such_category' => 'Нема такої категорії',
 	'coll-notitle_title' => 'Заголовок сторінки неможливо визначити.',
 	'coll-post_failed_title' => 'POST-запит не виконаний',
-	'coll-post_failed_msg' => 'POST-запит не виконаний ($2).',
+	'coll-post_failed_msg' => 'POST-запит до $1 не виконаний ($2).',
 	'coll-enter_title' => 'Уведіть назву колекції:',
 	'coll-error_reponse' => 'Помилка відповіді сервера',
 	'coll-empty_collection' => 'Порожня колекція',
