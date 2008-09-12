@@ -990,7 +990,7 @@ Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa
 	'coll-intro_text' => 'Pode coleccionar páxinas, xerar e descargar ficheiros PDF das páxinas de coleccións e gardar as páxinas de coleccións para un uso posterior ou para compartilas.
 
 Vexa a [[{{MediaWiki:Coll-helppage}}|páxina de axuda sobre as coleccións]] para máis información.',
-	'coll-helppage' => 'Help:Collections',
+	'coll-helppage' => 'Help:Coleccións',
 	'coll-too_big_cat' => 'A categoría contén máis de %PARAM% páxinas; só as primeiras %PARAM% páxinas poden ser engadidas á súa colección.
 Quere engadilas?',
 	'coll-my_collection' => 'A miña colección',
@@ -1071,6 +1071,9 @@ Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] p
 Por favor, contacte co seu administrador MediaWiki.',
 	'coll-license' => 'Licenza',
 	'coll-start_title' => 'Comezar a colección',
+	'coll-start_text' => 'De agora en diante, pode colectar páxinas, xerar e descargar un documento nun ou varios formatos das páxinas de colección ou de páxinas únicas, solicitarlle libros a un compañeiro e gardar páxinas de colección para un uso posterior, ou para compartilas.
+
+Vexa a [[{{MediaWiki:Coll-helppage}}|páxina de axuda acerca das coleccións]] para obter máis información.',
 	'coll-start_add_box_title' => 'Comezar a colección agora',
 	'coll-start_add_link' => 'Faga clic para comezar a súa colección.',
 	'coll-start_add_page_text' => 'Faga clic para engadir a páxina "<em>$1</em>" á súa colección',
