@@ -2399,6 +2399,7 @@ $messages['os'] = array(
 
 /** Polish (Polski)
  * @author Derbeth
+ * @author Jwitos
  * @author Masti
  * @author McMonster
  * @author Sp5uhe
@@ -2426,6 +2427,7 @@ Więcej informacji na [[{{MediaWiki:Coll-helppage}}|stronie pomocy dotyczącej k
 	'coll-my_collection' => 'Moja kolekcja',
 	'coll-download_title' => 'Pobierz kolekcję jako PDF',
 	'coll-download_text' => 'Naciśnij przycisk, by pobrać automatycznie wygenerowaną wersję PDF Twojej kolekcji stron',
+	'coll-download' => 'Pobierz',
 	'coll-remove' => 'Usuń',
 	'coll-move_to_top' => 'Przenieś na górę',
 	'coll-move_up' => 'Przenieś w górę',

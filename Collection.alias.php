@@ -37,6 +37,11 @@ $aliases['de'] = array(
 	'Collection' => array( 'Sammlung' ),
 );
 
+/** Greek (Ελληνικά) */
+$aliases['el'] = array(
+	'Collection' => array( 'Συλλογή' ),
+);
+
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
 	'Collection' => array( 'Kokoelma' ),
@@ -45,6 +50,11 @@ $aliases['fi'] = array(
 /** Indonesian (Bahasa Indonesia) */
 $aliases['id'] = array(
 	'Collection' => array( 'Koleksi' ),
+);
+
+/** Italian (Italiano) */
+$aliases['it'] = array(
+	'Collection' => array( 'Raccolta' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */
