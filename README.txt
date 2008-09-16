@@ -42,7 +42,7 @@ in your ``LocalSettings.php``).
 
 If you have a low-traffic MediaWiki you can use the public render server running
 at http://tools.pediapress.com/mw-serve/. In this case, just keep
-the configuration variable $wgCollectionMWServe (see below) at its default
+the configuration variable $wgCollectionMWServeURL (see below) at its default
 value.
 
 
