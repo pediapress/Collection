@@ -1799,6 +1799,7 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-move_to_bottom' => 'No ganz ënne réckelen',
 	'coll-title' => 'Titel:',
 	'coll-subtitle' => 'Ënnertitel:',
+	'coll-contents' => 'Inhalter',
 	'coll-create_chapter' => 'Een neit Kapitel maachen',
 	'coll-sort_alphabetically' => 'Säiten alphabetesch sortéieren',
 	'coll-clear_collection' => 'Sammlung eidel maachen',
@@ -1832,6 +1833,7 @@ Et kënne keng Säite méi derbäigesat ginn.',
 	'coll-order_from_pp' => "D'Buch bestelle bäi $1",
 	'coll-about_pp' => 'Iwwer $1',
 	'coll-license' => 'Lizenz',
+	'coll-start_add_box_title' => 'Fänkt direkt mat ärer Sammlung un',
 	'coll-return_to' => 'Zréck op [[:$1]]',
 );
 
