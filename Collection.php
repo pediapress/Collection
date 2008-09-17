@@ -37,9 +37,6 @@ require_once( "$IP/extensions/Collection/Version.php" );
 
 # Configuration:
 
-/** Title of Start Collection page */
-$wgCollectionStartPage = 'Start collection';
-
 /** URL of mw-serve render server */
 $wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
 

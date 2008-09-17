@@ -98,15 +98,6 @@ Installation and Configuration of the Collection Extension
    
    See mwlib_ for possible other writers.
   
-  *$wgCollectionStartPage (string)*
-   Title of a page that is displayed when a user clicks on "Start collection",
-   i.e. is using the Collection extension "for the first time" (actually it's
-   not necessarily the first time, because it can be turned off again on the
-   Special:Collection page). If the page does not exist, a (short) fallback
-   page is displayed which essentially links to the Help:Collections page.
-   
-   Default is 'Start collection'.
-   
   *$wgCommunityCollectionNamespace (integer)*
    Namespace for "community collections", i.e. the namespace where non-personal
    article collection pages are saved.
