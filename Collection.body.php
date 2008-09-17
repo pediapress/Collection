@@ -229,14 +229,12 @@ class Collection extends SpecialPage {
 	}
 	
 	static function clearCollection() {
-		if ( !self::hasSession() ) {
-			return;
-		}
 		$_SESSION['wsCollection'] = array(
 			'title' => '',
 			'subtitle' => '',
 			'items' => array(),
 		);
+		self::touchSession();
 	}
 	
 	static function startSession() {
@@ -244,6 +242,12 @@ class Collection extends SpecialPage {
 			wfSetupSession();
 		}
 		self::clearCollection();
+	}
+	
+	static function touchSession() {
+		$collection = $_SESSION['wsCollection'];
+		$collection['timestamp'] = wfTimestampNow();
+		$_SESSION['wsCollection'] = $collection;
 	}
 	
 	static function countArticles() {
@@ -370,6 +374,7 @@ EOS
 			'url' => $title->getFullURL(),
 		);
 		$_SESSION['wsCollection'] = $collection;
+		self::touchSession();
 	}
 
 	function removeArticle( $title, $oldid=0 ) {
@@ -382,6 +387,7 @@ EOS
 			array_splice( $collection['items'], $index, 1 );
 		}
 		$_SESSION['wsCollection'] = $collection;
+		self::touchSession();
 	}
 
 	function addCategory( $title ) {
@@ -1451,5 +1457,15 @@ EOS
 		}
 		curl_close( $c );
 		return $text;
+	}
+	
+	/**
+	 * OutputPageCheckLastModified hook
+	 */
+	static function checkLastModified( $modifiedTimes ) {
+		if ( self::hasSession() ) {
+			$modifiedTimes['collection'] = $_SESSION['wsCollection']['timestamp'];
+		}
+		return true;
 	}
 }
