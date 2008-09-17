@@ -95,6 +95,7 @@ $wgSpecialPages['Collection'] = 'Collection';
 $wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'Collection::createNavURLs';
 $wgHooks['MonoBookTemplateToolboxEnd'][] = 'Collection::insertMonoBookToolboxLink';
 $wgHooks['SkinBuildSidebar'][] = 'Collection::buildSidebar';
+$wgHooks['OutputPageCheckLastModified'][] = 'Collection::checkLastModified';
 
 # register global Ajax functions:
 
