@@ -55,15 +55,7 @@ class Collection extends SpecialPage {
 
 		wfLoadExtensionMessages( 'Collection' );
 		
-		if ( $par == 'start_collection/' ) {
-			$art_url = $wgRequest->getVal( 'arttitle', '' );
-			$oldid = $wgRequest->getInt( 'oldid', 0 );
-			$art_title = Title::newFromURL( $art_url );
-			$cat_url = $wgRequest->getVal( 'cattitle', '' );
-			$cat_title = Title::makeTitleSafe( NS_CATEGORY, $cat_url );
-			$this->startCollection( $art_title, $olid, $cat_title );
-			return;
-		} else if ( $par == 'add_article/' ) {
+		if ( $par == 'add_article/' ) {
 			if ( self::countArticles() >= $wgCollectionMaxArticles ) {
 				$this->limitExceeded();
 				return;
@@ -171,12 +163,6 @@ class Collection extends SpecialPage {
 				$this->outputSaveOverwrite( $title );
 			}
 			return;
-		} else if ( $par == 'disable_collection/' ) {
-			if ( self::hasSession() ) {
-				unset( $_SESSION['wsCollection'] );
-			}
-			$mp = Title::newFromText( wfMsgNoDB( "mainpage" ) );
-			$wgOut->redirect( $mp->getFullURL() );
 		} else if ( $par == 'render/' ) {
 			$title = $wgRequest->getVal( 'downloadTitle', '' );
 			if ( $title ) {
@@ -219,7 +205,6 @@ class Collection extends SpecialPage {
 		$this->outputBookSection();
 		$this->outputDownloadSection();
 		$this->outputSaveSection();
-		$this->outputDisableSection();
 		$this->outputIntro();
 		$this->outputArticleList();
 	}
@@ -282,68 +267,6 @@ class Collection extends SpecialPage {
 			}
 		}
 		return -1;
-	}
-
-	function startCollection( $title, $oldid, $cat_title ) {
-		global $wgOut;
-		global $wgCollectionStartPage;
-		
-		if ( !self::hasSession() ) {
-			self::startSession();
-		}
-		
-		$wgOut->setPageTitle( wfMsg( 'coll-collection' ) );
-		
-		if ( !is_null( $title ) or !is_null( $cat_title ) ) {
-			if ( !is_null( $title ) ) {
-				$params = 'arttitle=' . $title->getPrefixedURL();
-				if ( $oldid ) {
-					$params .= '&oldid=' . $oldid;
-				}
-				$addLinkURL = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
-					'Collection',
-					'add_article/'
-				), $params ) );
-				$addLinkLabel = wfMsg( "coll-start_add_page_text", $title->getPrefixedText() );
-			} else {
-				$params = 'cattitle=' . $cat_title->getPartialURL();
-				$addLinkURL = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
-					'Collection',
-					'add_category/'
-				), $params ) );
-				$addLinkLabel = wfMsg( "coll-start_add_category_text", $link );
-			}
-			//$addLinkLabel = wfMsg( "coll-start_add_link", $title->getPrefixedText() );
-			$wgOut->addHTML( <<<EOS
-<table align="center" margin-bottom: 10px;" class="toccolours" width="50%">
-  <tr>
-	<td align="center">
-      <a href="$addLinkURL" rel="nofollow"><strong>$addLinkLabel</strong></a><br/>
-    </td>
-  </tr>
-</table>
-EOS
-			);
-		}
-		
-		$fallback = true;
-		$startPageTitle = Title::newFromText( $wgCollectionStartPage );
-		if ( !is_null( $startPageTitle ) ) {
-			$startPage = new Article( $startPageTitle );
-			if ( $startPage->exists() ) {
-				$wgOut->addWikiText( "{{:$wgCollectionStartPage}}" );
-				$fallback = false;
-			}
-		}
-		if ( $fallback ) {
-			$wgOut->addWikiText( wfMsg( 'coll-start_text' ) );
-		}
-		
-		if ( $title ) {
-			$wgOut->addWikiText( wfMsg( 'coll-return_to', $title->getPrefixedText() ) );
-		} else if ( $cat_title ) {
-			$wgOut->addWikiText( wfMsg( 'coll-return_to', $cat_title->getPrefixedText() ) );
-		}
 	}
 
 	function addArticle( $title, $oldid=0 ) {
@@ -1018,14 +941,6 @@ EOS
 		$this->outputBox( $html );
 	}
 
-	private function outputDisableSection() {
-		$html = '<p>' . wfMsg(
-			'coll-disable_collection_text',
-			htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'disable_collection/' ) )
-		) . '</p>';
-		$this->outputBox( $html );
-	}
-
 	private function outputSaveOverwrite( $title ) {
 		global $wgOut;
 
@@ -1268,35 +1183,8 @@ EOS
 				'load_collection/'
 			), $params ) );
 			$out .= "<li><a href=\"$href\" rel=\"nofollow\">$loadCollection</a></li>";
-		} else if ( !self::hasSession() ) {
-			$startURL = SkinTemplate::makeSpecialUrlSubpage(
-				'Collection',
-				'start_collection/'
-			);
-			if ( $wgRequest->getRequestURL() == $startURL ) {
-				return;
-			}
-			$params = null;
-			if ( !is_null($wgArticle) && $wgArticle->exists() ) {
-				if ( $wgTitle->getNamespace() == NS_MAIN ) { // TODO: only NS_MAIN?
-					$params = "arttitle=" . $wgTitle->getPrefixedUrl()
-							. "&oldid=" . $wgArticle->getOldID();
-				} else if ( $wgTitle->getNamespace() == NS_CATEGORY ) {
-					$params = "cattitle=" . $wgTitle->getPartialURL();
-				}
-			}
-			$startURL = SkinTemplate::makeSpecialUrlSubpage(
-				'Collection',
-				'start_collection/'
-			);
-			if ( $params ) {
-				$startURL = wfAppendQuery( $startURL, $params );
-			}
-			$startURL = htmlspecialchars( $startURL );
-			$startLabel = 'Start collection';
-			$out .= "<li><a href=\"$startURL\">$startLabel</a></li>";
 		} else {
-		
+	
 			// disable caching
 			$wgOut->setSquidMaxage( 0 );
 			$wgOut->enableClientCache( false );
