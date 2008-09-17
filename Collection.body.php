@@ -620,6 +620,7 @@ EOS
 		global $wgPDFTemplateBlacklist;
 		global $wgServer;
 		global $wgScriptPath;
+		global $wgScriptExtension;
 		
 		if ( !$writer ) {
 			$writer = 'rl';
@@ -628,6 +629,7 @@ EOS
 		$response = self::mwServeCommand( 'render', array(
 			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => $wgServer . $wgScriptPath,
+			'script_extension' => $wgScriptExtension,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
 			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
 			'writer' => $writer,
@@ -654,6 +656,7 @@ EOS
 		global $wgRequest;
 		global $wgServer;
 		global $wgScriptPath;
+		global $wgScriptExtension;
 		
 		$collectionID = $wgRequest->getVal( 'collection_id', '' );
 		$writer = $wgRequest->getVal( 'writer', 'rl' );
@@ -661,6 +664,7 @@ EOS
 		$response = self::mwServeCommand( 'render', array(
 			'collection_id' => $collectionID,
 			'base_url' => $wgServer . $wgScriptPath,
+			'script_extension' => $wgScriptExtension,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
 			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
 			'writer' => $writer,
@@ -800,6 +804,7 @@ EOS
 	function postZIP( $partner ) {
 		global $wgServer;
 		global $wgScriptPath;
+		global $wgScriptExtension;
 		global $wgOut;
 		global $wgPDFTemplateBlacklist;
 		global $wgCollectionTemplateExclusionCategory;
@@ -814,6 +819,7 @@ EOS
 		$response = self::mwServeCommand( 'zip_post', array(
 			'metabook' => $this->buildJSONCollection( $_SESSION['wsCollection'] ),
 			'base_url' => $wgServer . $wgScriptPath,
+			'script_extension' => $wgScriptExtension,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
 			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
 			'pod_api_url' => $this->mPODPartners[$partner]['posturl'],
