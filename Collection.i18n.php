@@ -325,14 +325,6 @@ $messages['ar'] = array(
 	'coll-invalid_podpartner_msg' => 'شريك POD الموفر غير صحيح.
 من فضلك اتصل بإداري ميدياويكي الخاص بك.',
 	'coll-license' => 'ترخيص',
-	'coll-start_title' => 'بداية المجموعة',
-	'coll-start_text' => 'من الآن فصاعدا، يمكنك جمع الصفحات، توليد وتنزيل وثيقة في صيغة من بين صيغ كثيرة من مجموعات الصفحات أو من صفحات فردية، طلب كتب من شريك طباعة عند الطلب، وحفظ مجموعات الصفحات للاستخدام فيما بعد، أو لمشاركتها.
-
-انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
-	'coll-start_add_box_title' => 'ابدأ المجموعة الآن',
-	'coll-start_add_link' => 'اضغط لبدء مجموعتك',
-	'coll-start_add_page_text' => 'اضغط لإضافة الصفحة <em>$1</em> إلى مجموعتك',
-	'coll-start_add_page_category' => 'اضغط لإضافة الصفحات في التصنيف <em>$1</em> إلى مجموعتك',
 	'coll-return_to' => 'رجوع إلى [[:$1]]',
 );
 
@@ -440,14 +432,6 @@ $messages['arz'] = array(
 	'coll-invalid_podpartner_msg' => 'شريك POD الموفر غير صحيح.
 من فضلك اتصل بإدارى ميدياويكى الخاص بك.',
 	'coll-license' => 'ترخيص',
-	'coll-start_title' => 'بداية المجموعة',
-	'coll-start_text' => 'من الآن فصاعدا، يمكنك جمع الصفحات، توليد وتنزيل وثيقة فى صيغة من بين صيغ كثيرة من مجموعات الصفحات أو من صفحات فردية، طلب كتب من شريك طباعة عند الطلب، وحفظ مجموعات الصفحات للاستخدام فيما بعد، أو لمشاركتها.
-
-انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
-	'coll-start_add_box_title' => 'ابدأ المجموعة الآن',
-	'coll-start_add_link' => 'اضغط لبدء مجموعتك',
-	'coll-start_add_page_text' => 'اضغط لإضافة الصفحة <em>$1</em> إلى مجموعتك',
-	'coll-start_add_page_category' => 'اضغط لإضافة الصفحات فى التصنيف <em>$1</em> إلى مجموعتك',
 	'coll-return_to' => 'رجوع إلى [[:$1]]',
 );
 
@@ -709,14 +693,6 @@ Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Col
 	'coll-invalid_podpartner_title' => 'Ungültiger Print-on-Demand-Partner',
 	'coll-invalid_podpartner_msg' => 'Die Angaben zum Print-on-Demand-Partner sind fehlerhaft. Bitte kontaktiere den MediaWiki-Administrator.',
 	'coll-license' => 'Lizenz',
-	'coll-start_title' => 'Kollektion beginnen',
-	'coll-start_text' => 'Ab jetzt kannst du Seiten einer Kollektion hinzufügen, eine einzelne Seite oder eine Kollektion als Dokument in verschiedenen Formaten erstellen und herunterladen, ein gedrucktes Buch bei einem Print-on-demand-Partner bestellen und deine Kollektion zwischenspeichern oder sie mit anderen Benutzern teilen.
-
-Für weitere Informationen siehe die [[{{MediaWiki:Coll-helppage}}|Hilfeseiten]].',
-	'coll-start_add_box_title' => 'Beginne die Kollektion jetzt',
-	'coll-start_add_link' => 'Klicke um deine Kollektion zu beginnen',
-	'coll-start_add_page_text' => 'Klicke hier, um die Seite „$1“ deiner Kollektion hinzuzufügen',
-	'coll-start_add_page_category' => 'Klicke um die Seiten in der Kategorie <em>$1</em> deiner Kollektion hinzuzufügen',
 	'coll-return_to' => 'Zurück zu [[:$1]]',
 );
 
@@ -812,7 +788,6 @@ Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.",
 	'coll-order_from_pp' => 'Mendi libron de $1',
 	'coll-about_pp' => 'Pri $1',
 	'coll-license' => 'Licenco',
-	'coll-start_add_link' => 'Klaku eki vian kolekton.',
 	'coll-return_to' => 'Reiri al [[:$1]]',
 );
 
@@ -939,14 +914,6 @@ Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]
 	'coll-invalid_podpartner_msg' => 'Le partenaire POD indiqué est incorrect.
 Veuillez contacter votre administrateur Mediawiki.',
 	'coll-license' => 'Licence',
-	'coll-start_title' => 'Commencer la collection',
-	'coll-start_text' => 'À partir de maintenant, vous pouver collection les pages, créer et télécharger un document dans l’un des formats à partir des collections de pages or à partir de pages simples, commander un livre d’un partenaire imprimant à la demande, et sauver les collections des pages pour un usage ultérieur, ou encore pour les partager.
-
-Voir la [[{{MediaWiki:Coll-helppage}}|page d’aide concernant les collections]] pour plus d’informations.',
-	'coll-start_add_box_title' => 'Commencer maintenant la collection.',
-	'coll-start_add_link' => 'Cliquer pour commencer votre collection.',
-	'coll-start_add_page_text' => 'Cliquer pour ajouter la page <em>$1</em> à votre collection',
-	'coll-start_add_page_category' => 'Cliquez pour ajouter les pages dans la catégorie <em>$1</em> de votre collection',
 	'coll-return_to' => 'Retourner vers [[:$1]]',
 );
 
@@ -1061,14 +1028,6 @@ Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] p
 	'coll-invalid_podpartner_msg' => 'O compañeiro de solicitudes de impresión (POD) indicado é inválido.
 Por favor, contacte co seu administrador MediaWiki.',
 	'coll-license' => 'Licenza',
-	'coll-start_title' => 'Comezar a colección',
-	'coll-start_text' => 'De agora en diante, pode colectar páxinas, xerar e descargar un documento nun ou varios formatos das páxinas de colección ou de páxinas únicas, solicitarlle libros a un compañeiro e gardar páxinas de colección para un uso posterior, ou para compartilas.
-
-Vexa a [[{{MediaWiki:Coll-helppage}}|páxina de axuda acerca das coleccións]] para obter máis información.',
-	'coll-start_add_box_title' => 'Comezar a colección agora',
-	'coll-start_add_link' => 'Faga clic para comezar a súa colección.',
-	'coll-start_add_page_text' => 'Faga clic para engadir a páxina "<em>$1</em>" á súa colección',
-	'coll-start_add_page_category' => 'Faga clic para engadir as páxinas que están na categoría "<em>$1</em>" á súa colección',
 	'coll-return_to' => 'Voltar a "[[:$1]]"',
 );
 
@@ -1362,14 +1321,6 @@ Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le collectiones]] p
 	'coll-invalid_podpartner_msg' => 'Le partenario indicate de impression a requesta (POD) non es valide.
 Per favor contacta tu administrator de MediaWiki.',
 	'coll-license' => 'Licentia',
-	'coll-start_title' => 'Initiar collection',
-	'coll-start_text' => 'A partir de ora, tu pote colliger paginas, generar e discargar un documento in un selection de formatos a partir de collectiones de paginas o de paginas singule, commandar libros ab un partenario de impression a requesta, e immagazinar le collectiones de paginas pro uso futur, o pro usar los in commun.
-
-Vide le [[{{MediaWiki:Coll-helppage}}|pagina de adjuta pro le collectiones]] pro ulterior informationes.',
-	'coll-start_add_box_title' => 'Initiar collection immediatemente',
-	'coll-start_add_link' => 'Clicca pro initiar tu collection.',
-	'coll-start_add_page_text' => 'Clicca pro adder le pagina <em>$1</em> a tu collection',
-	'coll-start_add_page_category' => 'Clicca pro adder le paginas in categoria <em>$1</em> a tu collection',
 	'coll-return_to' => 'Retornar a [[:$1]]',
 );
 
@@ -1519,14 +1470,6 @@ Leggi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sulle raccolte]] riguardo
 	'coll-invalid_podpartner_title' => 'Partner POD non valido',
 	'coll-invalid_podpartner_msg' => 'Il partner POD fornito non è valido. Contatta il tuo amministratore MediaWiki.',
 	'coll-license' => 'Licenza',
-	'coll-start_title' => 'Inizia raccolta',
-	'coll-start_text' => 'Da oggi è possibile raccogliere, generare e scaricare un documento in uno dei numerosi formati disponibili dalle pagine della raccolta oppure singole pagine, ordinare libri da un partner di stampa su richiesta e salvare raccolte di pagine per usi successivi o per condividerle.
-
-Leggi la [[{{MediaWiki:Coll-helppage}}|pagina di aiuto sulle raccolte]] per maggiori informazioni.',
-	'coll-start_add_box_title' => 'Inizia adesso la raccolta',
-	'coll-start_add_link' => 'Fai clic per iniziare la tua raccolta.',
-	'coll-start_add_page_text' => 'Fai clic per aggiungere la pagina <em>$1</em> alla tua raccolta.',
-	'coll-start_add_page_category' => 'Fai clic per aggiungere le pagine della categoria <em>$1</em> alla tua raccolta',
 	'coll-return_to' => 'Torna a [[:$1]]',
 );
 
@@ -1732,11 +1675,6 @@ $messages['km'] = array(
 	'coll-order_from_pp' => 'បញ្ជាទិញ​សៀវភៅពី $1',
 	'coll-about_pp' => 'អំពី$1',
 	'coll-license' => 'អាជ្ញាបណ្ណ',
-	'coll-start_title' => 'ចាំផ្ដើមការចងក្រងឯកសារ',
-	'coll-start_add_box_title' => 'ចាំផ្ដើមការចងក្រងឯកសារនាពេលឥលូវនេះ',
-	'coll-start_add_link' => 'ចុចដើម្បីចាំផ្ដើមការចងក្រងឯកសាររបស់អ្នក។',
-	'coll-start_add_page_text' => 'ចុចដើម្បីបន្ថែមទំព័រ <em>$1</em> ទៅក្នុងកំរងឯកសាររបស់អ្នក',
-	'coll-start_add_page_category' => 'ចុចដើម្បីរក្សាទុកទំព័រនានាក្នុងចំនាត់ថ្នាក់ក្រុម <em>$1</em> ទៅក្នុងកំរងឯកសាររបស់អ្នក',
 	'coll-return_to' => 'ត្រលប់ទៅកាន់ [[:$1]]',
 );
 
@@ -1818,13 +1756,13 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-limit_exceeded_text' => 'Är Sammlung ass ze grouss.
 Et kënne keng Säite méi derbäigesat ginn.',
 	'coll-notfound_title' => 'Sammlung net fonnt',
+	'coll-excluded-templates' => 'Schablounen aus der Kategorie [[:Category:$1|$1]] goufen ausgeschloss',
 	'coll-return_to_collection' => '<p>Zréck op <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Gedréckte Buch bestellen',
 	'coll-book_text' => 'Dir kënnt e Buch bestellen op enge vun dësen Internetsiten:',
 	'coll-order_from_pp' => "D'Buch bestelle bäi $1",
 	'coll-about_pp' => 'Iwwer $1',
 	'coll-license' => 'Lizenz',
-	'coll-start_add_box_title' => 'Fänkt direkt mat ärer Sammlung un',
 	'coll-return_to' => 'Zréck op [[:$1]]',
 );
 
@@ -2137,14 +2075,6 @@ Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om d
 	'coll-invalid_podpartner_msg' => 'De opgegeven print on demand-partner is ongeldig.
 Neem contact op met uw MediaWiki-beheerder.',
 	'coll-license' => 'Licentie',
-	'coll-start_title' => 'Collectie aanmaken',
-	'coll-start_text' => "U kunt pagina's in een collectie plaatsen, een bestand in verschillende formaten maken en downloaden, van een paginacollectie of individuele pagina's, een boek bestellen bij een print-on-demandpartner, en een paginacollectie opslaan voor later gebruik, of om ze te delen.
-
-[[{{MediaWiki:Coll-helppage}}|Meer informatie over collecties]].",
-	'coll-start_add_box_title' => 'Nu een collectie aanmaken',
-	'coll-start_add_link' => 'Klik om een collectie aan te maken.',
-	'coll-start_add_page_text' => 'Klik om de pagine <em>$1</em> aan uw collectie toe te voegen',
-	'coll-start_add_page_category' => "Klik om de pagina's in categorie <em>$1</em> aan uw collectie toe te voegen",
 	'coll-return_to' => 'Terug naar [[:$1]]',
 );
 
@@ -2257,14 +2187,6 @@ Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden for samlinger]] for måter å forbe
 	'coll-invalid_podpartner_msg' => 'Den oppgitte POD-partneren er ugyldig.
 Kontakt din MediaWiki-administrator.',
 	'coll-license' => 'Lisens',
-	'coll-start_title' => 'Start samling',
-	'coll-start_text' => 'Du kan samle sider og laste dem ned i flere formater, bestille bøker partner som trykker på forespørsel, og lagre sidesamlinger for senere bruk eller for å dele dem.
-
-Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om samlinger]] for mer informasjon.',
-	'coll-start_add_box_title' => 'Start samling nå',
-	'coll-start_add_link' => 'Klikk for å starte samlingen din.',
-	'coll-start_add_page_text' => 'Klikk for å legge til siden <em>$1</em> i samlingen din',
-	'coll-start_add_page_category' => 'Klikk for å legge til sidene i kategorien <em>$1</em> i samlingen din',
 	'coll-return_to' => 'Tilbake til [[:$1]]',
 );
 
@@ -2370,14 +2292,6 @@ Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las coll
 	'coll-invalid_podpartner_msg' => 'Lo partenari POD indicat es incorrècte.
 Contactatz vòstre administrator Mediawiki.',
 	'coll-license' => 'Licéncia',
-	'coll-start_title' => 'Començar la colleccion',
-	'coll-start_text' => "A partir d'ara, podètz collectar las paginas, crear e telecargar un document dins un dels formats a partir de las colleccions de paginas ; çaquèla a partir de paginas simplas, comandar un libre d’un partenari estampant a la demanda, e salvar las colleccions de las paginas per un usatge ulterior, o encara per las partejar.
-
-Veire la [[{{MediaWiki:Coll-helppage}}|pagina d’ajuda concernent las colleccions]] per mai d’entresenhas.",
-	'coll-start_add_box_title' => 'Començar la colleccion ara.',
-	'coll-start_add_link' => 'Clicar per començar vòstra colleccion.',
-	'coll-start_add_page_text' => 'Clicar per apondre la pagina <em>$1</em> a vòstra colleccion',
-	'coll-start_add_page_category' => 'Clicatz per apondre las paginas dins la categoria <em>$1</em> de vòstra colleccion',
 	'coll-return_to' => 'Tornar cap a [[:$1]]',
 );
 
@@ -2596,14 +2510,6 @@ Se isto não funcionar, por favor utilize o botão de refrescamento do seu naveg
 	'coll-invalid_podpartner_msg' => 'O parceiro POD é inválido.
 Por favor, contacte o seu administrador MediaWiki.',
 	'coll-license' => 'Licença',
-	'coll-start_title' => 'Iniciar colecção',
-	'coll-start_text' => 'A partir deste momento, pode coleccionar páginas, gerar e descarregar um documento num de vários formatos a partir de colecções ou de páginas individuais, encomendar livros de um parceiro print-on-demand (impressão a pedido), e gravar colecções de páginas para utilização posterior, ou partilhá-las.
-
-Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para mais informação.',
-	'coll-start_add_box_title' => 'Iniciar colecção agora mesmo',
-	'coll-start_add_link' => 'Clique para iniciar a sua colecção.',
-	'coll-start_add_page_text' => 'Clique para adicionar a página <em>$1</em> à sua colecção',
-	'coll-start_add_page_category' => 'Clique para adicionar as páginas da categoria <em>$1</em> em sua colecção',
 	'coll-return_to' => 'Voltar para [[:$1]]',
 );
 
@@ -2850,14 +2756,6 @@ Spôsoby možnej nápravy nájdete na [[{{MediaWiki:Coll-helppage}}|stránke pom
 	'coll-invalid_podpartner_msg' => 'Zadaný POD partner je neplatný.
 Prosím, kontaktujte svojho správcu MediaWiki.',
 	'coll-license' => 'Licencia',
-	'coll-start_title' => 'Začať kolekciu',
-	'coll-start_text' => 'Odteraz môžete zhromažďovať stránky do kolekcií, vytvárať a stiahnuť dokument v jednom z niekoľkých formátov z kolekcií stránok alebo z jednotlivých stránok, objednávať knihy od partnera, ktorý ich na požiadanie vytlačí a ukladať kolekcie stránok na neskoršie využitie alebo aby ste sa o ne mohli podeliť.
-
-Viac informácií nájdete na [[{{MediaWiki:Coll-helppage}}|stránke Pomocníka o kolekciách]].',
-	'coll-start_add_box_title' => 'Založiť kolekciu',
-	'coll-start_add_link' => 'Kliknutím založíte kolekciu.',
-	'coll-start_add_page_text' => 'Kliknutím pridáte stránku <em>$1</em> do svojej kolekcie.',
-	'coll-start_add_page_category' => 'Kliknutím pridáte stránky v kategórii <em>$1</em> do svojej kolekcie.',
 	'coll-return_to' => 'Návrat na [[:$1]]',
 );
 
@@ -2878,7 +2776,7 @@ $messages['stq'] = array(
 	'coll-desc' => '[[Special:Collection|Siedentouhoopestaalenge]], moak PDFs',
 	'coll-collection' => 'Touhoopestaalenge',
 	'coll-collections' => 'Touhoopestaalenge',
-	'coll-portlet_title' => 'Mien Touhoopestaalenge',
+	'coll-portlet_title' => 'Kollektion',
 	'coll-add_page' => 'Siede bietouföigje',
 	'coll-remove_page' => 'Siede wächhoalje',
 	'coll-add_category' => 'Kategorie bietouföigje',
@@ -2886,15 +2784,21 @@ $messages['stq'] = array(
 	'coll-show_collection' => 'Touhoopestaalenge wiese',
 	'coll-help_collections' => 'Hälpe tou Touhoopestaalengen',
 	'coll-empty' => 'loos',
+	'coll-n_pages' => '$1 {{PLURAL:$1|Siede|Sieden}}',
+	'coll-download_as' => 'As $1 deelleede',
 	'coll-noscript_text' => '<h1>JavaScript is nöödich!</h1>
 <strong>Dien Browser unnerstutset neen Javascript of Javascript wuude deaktivierd. Disse Siede däd nit gjucht funktionierje, soloange Javascript nit ferföigboar is.</strong>',
 	'coll-intro_text' => 'Du koast Sieden touhoopestaale, n PDF deerap moakje un deelleede as uk Touhoopestaalengen foar ne leetere Ferweendenge twiskespiekerje un mäd uur Benutsere deele.
 
 Sjuch ju [[{{MediaWiki:Coll-helppage}}|Hälpe bie Touhoopestaalengen]] foar wiedere Informatione.',
 	'coll-helppage' => 'Help:Touhoopestaalengen',
+	'coll-too_big_cat' => 'Ju Kategorie änthaalt moor as %PARAM% Sieden, deeruum konnen bloot do eerste %PARAM% Sieden fon dien Kollektion bietouföiged wäide.
+Moatest du do bietouföigje?',
 	'coll-my_collection' => 'Mien Touhoopestaalenge',
 	'coll-download_title' => 'Touhoopestaalenge as PDF deelleede',
 	'coll-download_text' => 'Uum ne automatisk moakede PDF-Doatäi fon dien Touhoopestaalenge deeltouleeden, klik ap ap ju Schaltfläche.',
+	'coll-download' => 'Deelleede',
+	'coll-format_label' => 'Formoat:',
 	'coll-remove' => 'Wächhoalje',
 	'coll-move_to_top' => 'ätter dän Ounfang',
 	'coll-move_up' => 'hooch',
@@ -2913,8 +2817,49 @@ Sjuch ju [[{{MediaWiki:Coll-helppage}}|Hälpe bie Touhoopestaalengen]] foar wied
 	'coll-no_such_category' => 'Sun Kategorie rakt dät nit',
 	'coll-notitle_title' => 'Die Tittel fon ju Siede kuud nit bestimd wäide.',
 	'coll-post_failed_title' => 'POST-Anfroage failsloain',
-	'coll-post_failed_msg' => 'Ju POST-Anfroage is failsloain ($2).',
+	'coll-post_failed_msg' => 'Ju POST-Anfroage an $1 is failsloain ($2).',
+	'coll-mwserve_failed_title' => 'Serverfailer',
+	'coll-mwserve_failed_msg' => 'Ap dän Renderer-Server is n Failer aptreeden: $1',
 	'coll-enter_title' => 'Tittel fon ju Touhoopestaalenge:',
+	'coll-error_reponse' => 'Failermäldenge fon dän Server',
+	'coll-empty_collection' => 'Loose Kollektion',
+	'coll-revision' => 'Version: %PARAM%',
+	'coll-save_collection_title' => 'Kollektion spiekerje',
+	'coll-save_collection_text' => 'Uum disse Kollektion tou spiekerjen, wääl n Typ un reek n Tittel ien:',
+	'coll-login_to_save' => 'Wan du Kollektione spiekerje moatest, [[Special:UserLogin|mäld die an of moak n Benutserkonto]].',
+	'coll-personal_collection_label' => 'Persöönelke Kollektion:',
+	'coll-community_collection_label' => 'Community Kollektion:',
+	'coll-save_collection' => 'Kollektion spiekerje',
+	'coll-overwrite_title' => 'Siede bestoant. Uurschrieuwe?',
+	'coll-overwrite_text' => 'Ne Siede mäd dän Noome [[:$1]] bestoant al.
+Moatest du ju truch dien Kollektion ärsätte?',
+	'coll-yes' => 'Jee',
+	'coll-no' => 'Noa',
+	'coll-disable_collection_text' => '<a href="$1">Kollektion läskje un ätter ju Haudsiede wieruume gunge.</a>',
+	'coll-load_overwrite_text' => 'Dien Kollektion änthaalt al wäkke Sieden.
+Moatest du ju aktuelle Kollektion uurschrieuwe, do näie Sieden anhongje of dät Leeden fon disse Kollektion oubreeke?',
+	'coll-overwrite' => 'Uurschrieuwe',
+	'coll-append' => 'Anhongje',
+	'coll-cancel' => 'Oubreeke',
+	'coll-limit_exceeded_title' => 'Kollektion tou groot',
+	'coll-limit_exceeded_text' => 'Dien Kollektion is tou groot.
+Deer konnen neen Sieden moor bietouföiged wäide.',
+	'coll-rendering_title' => 'An t Moakjen',
+	'coll-rendering_text' => "'''Täif, bit dät Dokument moaked wuuden is.'''
+
+Foutschrit: '''$1 %'''.
+
+Disse Siede schuul sik älke poor Sekunden fonsälwen aktualisierje.
+Fals dit daach nit geböärt, druk dan dän „Aktualisierje“-Knoop (maast F5) fon dien Browser.",
+	'coll-rendering_finished_title' => 'Kloor moaked',
+	'coll-rendering_finished_text' => "'''Ju Doatäi wuud mäd Ärfoulch moaked.'''
+'''[$1 Klik hier],''' uum ju Doatäi deeltouleeden.
+
+Bäst du nit mäd dät Resultoat toufree?
+Muugelkhaide tou ju Ferbeeterenge fon ju Uutgoawe finst du ap ju [[{{MediaWiki:Coll-helppage}}|Hälpesiede uur do Siedenkollektione]].",
+	'coll-notfound_title' => 'Kollektion nit fuunen',
+	'coll-notfound_text' => 'Dien Kollektion kuud nit fuunen wäide.',
+	'coll-is_cached' => '<p>Der is ne twiskespiekerde Version fon dät Dokument foarhounden, so dät neen Renderjen nöödich waas. <a href="$1">Näiränderjen outwinge.</a></p>',
 );
 
 /** Sundanese (Basa Sunda)
@@ -3042,14 +2987,6 @@ Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter at
 	'coll-invalid_podpartner_msg' => 'Den erbjudna POD-partnern är ogiltig.
 Var god kontakta din MediaWiki-administratör.',
 	'coll-license' => 'Licens',
-	'coll-start_title' => 'Starta samling',
-	'coll-start_text' => 'Du kan samla sidor och ladda ner dem i flera format, beställa böcker från en partner som trycker efter efterfrågan, och spara sidsamlingar för senare bruk eller för att dela dem.
-
-Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för mer information.',
-	'coll-start_add_box_title' => 'Starta samling nu',
-	'coll-start_add_link' => 'Klicka för att starta din samling.',
-	'coll-start_add_page_text' => 'Klicka för att lägga till sidan <em>$1</em> till din samling',
-	'coll-start_add_page_category' => 'Klicka för att lägga till sidorna i kategorin <em>$1</em> i din samling',
 	'coll-return_to' => 'Tillbaka till [[:$1]]',
 );
 
@@ -3201,17 +3138,21 @@ $messages['tg-cyrl'] = array(
 
 /** Turkish (Türkçe)
  * @author Karduelis
+ * @author Mach
  * @author Suelnur
  */
 $messages['tr'] = array(
 	'coll-collection' => 'Koleksiyon',
 	'coll-collections' => 'Koleksiyonlar',
 	'coll-portlet_title' => 'Koleksiyonum',
+	'coll-add_page' => 'Sayfa ekle',
+	'coll-add_category' => 'Kategori ekle',
 	'coll-empty' => 'boş',
 	'coll-remove' => 'Kaldır',
 	'coll-title' => 'Başlık:',
 	'coll-yes' => 'Evet',
 	'coll-no' => 'Hayır',
+	'coll-license' => 'Lisans',
 );
 
 /** Ukrainian (Українська)
