@@ -131,9 +131,11 @@ Please contact your MediaWiki administrator.',
 /** Message documentation (Message documentation)
  * @author Darth Kule
  * @author Jon Harald Søby
+ * @author Purodha
  * @author Siebrand
  */
 $messages['qqq'] = array(
+	'coll-desc' => 'Short description of this extension, shown in [[Special:Version]]. Do not translate or change links.',
 	'coll-collection' => '{{Identical|Collection}}',
 	'coll-portlet_title' => '{{Identical|Collection}}',
 	'coll-empty' => '{{Identical|Empty}}',
@@ -1691,6 +1693,7 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'coll-desc' => '[[Special:Collection|Sigge zosammefaße]], un Dateie em <i lang="en">Portable Document Format</i> (PDF) ußjäve.',
 	'coll-empty' => 'leddich',
 	'coll-cancel' => 'Ophüre',
 	'coll-about_pp' => 'Üvver $1',
@@ -2860,6 +2863,18 @@ Muugelkhaide tou ju Ferbeeterenge fon ju Uutgoawe finst du ap ju [[{{MediaWiki:C
 	'coll-notfound_title' => 'Kollektion nit fuunen',
 	'coll-notfound_text' => 'Dien Kollektion kuud nit fuunen wäide.',
 	'coll-is_cached' => '<p>Der is ne twiskespiekerde Version fon dät Dokument foarhounden, so dät neen Renderjen nöödich waas. <a href="$1">Näiränderjen outwinge.</a></p>',
+	'coll-excluded-templates' => 'Foarloagen uut ju Kategorie [[:Category:$1|$1]] wuuden uutsleeten.',
+	'coll-blacklisted-templates' => 'Foarloagen fon ju swotte Lieste [[:$1]] wuuden uutsleeten.',
+	'coll-return_to_collection' => 'Tourääch tou <a href="$1">$2</a>',
+	'coll-book_title' => 'Drukuutgoawe bestaale',
+	'coll-book_text' => "Du koast bie do foulgjende ''Print-on-Demand''-Partnere ne drukte Boukuutgoawe bestaale:",
+	'coll-order_from_pp' => 'Bestaal Bouk bie $1',
+	'coll-about_pp' => 'Uur $1',
+	'coll-invalid_podpartner_title' => 'Uungultiger Print-on-Demand-Paatender',
+	'coll-invalid_podpartner_msg' => 'Do Angoawen tou dän Print-on-Demand-Paatender sunt failerhaft.
+Kontaktier dän MediaWiki-Administrator.',
+	'coll-license' => 'Lizenz',
+	'coll-return_to' => 'Tourääch tou [[:$1]]',
 );
 
 /** Sundanese (Basa Sunda)
