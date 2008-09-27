@@ -182,6 +182,13 @@ $messages['niu'] = array(
 	'coll-cancel' => 'Tiaki',
 );
 
+/** Goanese Konkani (Latin) (कोंकणी/Konknni  (Latin))
+ * @author Deepak D'Souza
+ */
+$messages['gom-latn'] = array(
+	'coll-return_to' => '[[:$1]] ak patim vos',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
@@ -769,6 +776,7 @@ $messages['eo'] = array(
 	'coll-overwrite_title' => 'Paĝo ekzistas. Ĉu anstataŭigi?',
 	'coll-yes' => 'Jes',
 	'coll-no' => 'Ne',
+	'coll-disable_collection_text' => '<a href="$1">Klaku ĉi tie</a> por halti uzante kolektojn por nun.',
 	'coll-overwrite' => 'Anstataŭigu',
 	'coll-append' => 'Aldoni',
 	'coll-cancel' => 'Nuligi',
@@ -2560,6 +2568,7 @@ Suprascrie?',
 
 /** Russian (Русский)
  * @author Ahonc
+ * @author Ferrer
  * @author Innv
  * @author MaxSem
  * @author Александр Сигачёв
@@ -2588,6 +2597,7 @@ $messages['ru'] = array(
 	'coll-my_collection' => 'Моя коллекция',
 	'coll-download_title' => 'Скачать коллекцию как PDF',
 	'coll-download_text' => 'Нажмите кнопку, чтобы скачать автоматически созданный PDF-файл с вашей коллекций страниц.',
+	'coll-format_label' => 'Формат:',
 	'coll-remove' => 'Удалить',
 	'coll-move_to_top' => 'Передвинуть наверх',
 	'coll-move_up' => 'Передвинуть выше',
