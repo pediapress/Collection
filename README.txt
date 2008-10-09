@@ -71,7 +71,8 @@ Installation and Configuration of the Collection Extension
    your MediaWiki is behind a firewall you cannot use the public render server.
   
   *$wgCollectionMWServeCredentials (string)*
-   Set this to a string of the form "USERNAME:PASSWORD", if the MediaWiki
+   Set this to a string of the form "USERNAME:PASSWORD" (or
+   "USERNAME:PASSWORD:DOMAIN" if you're using LDAP), if the MediaWiki
    requires to be logged in to view articles.
    The render server will then login with these credentials using MediaWiki API
    before doing other requests.
