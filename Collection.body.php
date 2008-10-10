@@ -1130,7 +1130,7 @@ EOS
 			// it would be very confusing.
 			$html = self::getPortlet();
 			if ( $html ) {
-				$bar['COLLECTION'] = $html;
+				$bar[ wfMsg( 'coll-collection' )] = $html;
 			}
 		}
 		return true;
