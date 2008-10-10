@@ -38,57 +38,36 @@ require_once( "$IP/extensions/Collection/Version.php" );
 # Configuration:
 
 /** URL of mw-serve render server */
-
-if ( !isset( $wgCollectionMWServerURL ) ) {
-	$wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
-}
+$wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
 
 /** Login credentials to this MediaWiki as 'USERNAME:PASSWORD' string */
-if ( !isset( $wgCollectionMWServeCredentials ) ) {
-	$wgCollectionMWServeCredentials = null;
-}
+$wgCollectionMWServeCredentials = null;
 
 /** Namespace for "community collections" */
-if ( !isset( $wgCommunityCollectionNamespace ) ) {
-	$wgCommunityCollectionNamespace = NS_MEDIAWIKI;
-}
+$wgCommunityCollectionNamespace = NS_MEDIAWIKI;
 
 /** Maximum no. of articles in a collection */
-if ( !isset( $wgCollectionMaxArticles ) ) {
-	$wgCollectionMaxArticles = 500;
-}
+$wgCollectionMaxArticles = 500;
 
 /** Name of license */
-if ( !isset( $wgLicenseName ) ) {
-	$wgLicenseName = null;
-}
+$wgLicenseName = null;
 
 /** HTTP(s) URL pointing to license in wikitext format: */
-if ( !isset( $wgLicenseURL ) ) {
-	$wgLicenseURL = null;
-}
+$wgLicenseURL = null;
 
 /** Template blacklist article */
-if ( !isset( $wgPDFTemplateBlacklist ) ) {
-	$wgPDFTemplateBlacklist = 'MediaWiki:PDF Template Blacklist';
-}
+$wgPDFTemplateBlacklist = 'MediaWiki:PDF Template Blacklist';
 
 /** Template exclusion category */
-if ( !isset( $wgCollectionTemplateExclusionCategory ) ) {
-	$wgCollectionTemplateExclusionCategory = "Exclude in print";
-}
+$wgCollectionTemplateExclusionCategory = "Exclude in print";
 
 /** List of available download formats,
     as mapping of mwlib writer to format name */
-if ( !isset( $wgCollectionFormats ) ) {
-	$wgCollectionFormats = array(
-		'rl' => 'PDF',
-	);
-}
+$wgCollectionFormats = array(
+	'rl' => 'PDF',
+);
 
-if ( !isset( $wgCollectionPortletForLoggedInUsersOnly ) ) {
-	$wgCollectionPortletForLoggedInUsersOnly = false;
-}
+$wgCollectionPortletForLoggedInUsersOnly = false;
 
 # ==============================================================================
 
