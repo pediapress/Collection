@@ -1220,7 +1220,7 @@ EOS
 			$showCollection = wfMsgHtml( 'coll-show_collection' );
 			$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
 			$out .= <<<EOS
-							<li><a href="$showURL" rel=\"nofollow\">$showCollection<br />
+							<li><a href="$showURL" rel="nofollow">$showCollection<br />
 								($articles)</a></li>
 EOS
 			;
