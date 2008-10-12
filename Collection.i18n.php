@@ -681,7 +681,7 @@ Möchtest du die aktuelle Sammlung überschreiben, die neuen Seiten anhängen od
 
 Fortschritt: '''$1 %'''.
 
-Diese Seite sollte alle sich paar Sekunden von selbst aktualisieren.
+Diese Seite sollte sich alle paar Sekunden von selbst aktualisieren.
 Falls dieses jedoch nicht geschieht, so drücke bitte den „Aktualisieren“-Knopf (meist F5) deines Browsers.",
 	'coll-rendering_finished_title' => 'Fertig erstellt',
 	'coll-rendering_finished_text' => "'''Die Datei wurde erfolgreich erstellt.'''
