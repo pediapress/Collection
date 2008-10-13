@@ -821,18 +821,18 @@ EOS
 		<a class="removeLink" href="javascript:void(0)" title="$remove"><img src="$removeImage" width="11" height="11" alt="$remove" /></a>
 		&nbsp;
 		<a class="moveUpLink" href="javascript:void(0)" title="$moveUp"><img src="$moveUpImage" width="11" height="11" alt="$moveUp" /></a>
-		<img class="moveUpDisabled" src="$moveDisabledImage" width="11" height="11" />
+		<img class="moveUpDisabled" src="$moveDisabledImage" width="11" height="11" alt="" />
 		<a class="moveDownLink" href="javascript:void(0)" title="$moveDown"><img src="$moveDownImage" width="11" height="11" alt="$moveDown" /></a>
-		<img class="moveDownDisabled" src="$moveDisabledImage" width="11" height="11" />
+		<img class="moveDownDisabled" src="$moveDisabledImage" width="11" height="11" alt="" />
 		<a class="articleLink" style="margin-left:1em;"></a>
 	</div>
 	<div id="chapterListItem" class="chapter" style="margin-top:0.3em;">
 		<a class="removeLink" href="javascript:void(0)" title="$remove"><img src="$removeImage" width="11" height="11" alt="$remove" /></a>
 		&nbsp;
 		<a class="moveUpLink" href="javascript:void(0)" title="$moveUp"><img src="$moveUpImage" width="11" height="11" alt="$moveUp" /></a>
-		<img class="moveUpDisabled" src="$moveDisabledImage" width="11" height="11" />
+		<img class="moveUpDisabled" src="$moveDisabledImage" width="11" height="11" alt="" />
 		<a class="moveDownLink" href="javascript:void(0)" title="$moveDown"><img src="$moveDownImage" width="11" height="11" alt="$moveDown" /></a>
-		<img class="moveDownDisabled" src="$moveDisabledImage" width="11" height="11" />
+		<img class="moveDownDisabled" src="$moveDisabledImage" width="11" height="11" alt="" />
 		<strong class="chapterTitle" style="margin-left: 0.5em;"></strong> 
 		<a class="renameLink" href="javascript:void(0)">[$rename]</a>
 	</div>
@@ -1363,4 +1363,4 @@ EOS
 		return true;
 	}
 }
- 
+ 
