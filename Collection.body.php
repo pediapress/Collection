@@ -859,7 +859,7 @@ EOS
 		$html = <<<EOS
 <h2><span class="mw-headline">$downloadTitle</span></h2>
 <p>$downloadText</p>
-<form id="downloadForm" action="$url" method="POST">
+<form id="downloadForm" action="$url" method="post">
 <input id="downloadTitle" name="downloadTitle" type="hidden"></input>
 <input id="downloadSubtitle" name="downloadSubtitle" type="hidden"></input>
 EOS
@@ -920,7 +920,7 @@ EOS
 
 			$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'save_collection/' ) );
 			$html .= <<<EOS
-<form id="saveForm" action="$url" method="POST">
+<form id="saveForm" action="$url" method="post">
 	<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked"></input>
 	<label for="personalCollType">$personalColl</label>
 	<label for="personalCollTitle">$personalTitle</label>
@@ -953,7 +953,7 @@ EOS
 		$escapedTitle = htmlspecialchars( $title->getPrefixedText() );
 		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'save_collection/' ) );
 		$wgOut->addHTML( <<<EOS
-<form action="$url" method="POST">
+<form action="$url" method="post">
 	<input name="overwrite" type="submit" value="$yes"></input>
 	<input name="abort" type="submit" value="$no"></input>
 	<input name="colltitle" type="hidden" value="$escapedTitle"></input>
@@ -974,7 +974,7 @@ EOS
 		$escapedTitle = htmlspecialchars( $title->getPrefixedText() );
 		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'load_collection/' ) );
 		$wgOut->addHTML( <<<EOS
-<form action="$url" method="POST">
+<form action="$url" method="post">
 	<input name="overwrite" type="submit" value="$overwrite"></input>
 	<input name="append" type="submit" value="$append"></input>
 	<input name="cancel" type="submit" value="$cancel"></input>
@@ -1017,13 +1017,13 @@ EOS
 			$orderLabel = wfMsgHtml( 'coll-order_from_pp', $partnerName );
 			$aboutLabel = wfMsgHtml( 'coll-about_pp', $partnerName );
 			$html .= <<<EOS
+<form action="$formurl" method="get">
 <p>
-	<form action="$formurl" method="GET">
 		<input type="hidden" name="partner" value="$encPartner"/>
 		<input type="submit" value="$orderLabel"/>
 		<a href="$url" target="_blank">$aboutLabel&nbsp;<img src="$logoURL" alt="$partnerName"/></a>
-	</form>
 </p>
+	</form>
 EOS
 			;
 		}
@@ -1363,3 +1363,4 @@ EOS
 		return true;
 	}
 }
+ 
