@@ -175,9 +175,9 @@ Installation and Configuration of the Collection Extension
   one day). Adjust session.cookie_lifetime and session.gc_maxlifetime in your
   ``php.ini`` accordingly.
 
-* Add a page ``Help:Collections`` with the wikitext from the supplied file
-  ``Help_Collections.txt``. Adjust the name of the template blacklist according
-  to your setting of $wgPDFTemplateBlackList (see above).
+* Add a help page (e.g. ``Help:Collections`` for wikis in English language)
+  with the wikitext from on of the supplied files in the ``helppages/`` and
+  adjust it according to your wiki-specific setup.
 
 .. _mwlib: http://code.pediapress.com/wiki/wiki/mwlib
 .. _MediaWiki: http://www.mediawiki.org/
