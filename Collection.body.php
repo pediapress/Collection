@@ -1115,6 +1115,9 @@ EOS
 	}
 
 
+	/**
+	 * Callback for hook SkinBuildSidebar (MediaWiki >= 1.14)
+	 */
 	static function buildSidebar( $skin, &$bar ) {
 		global $wgArticle;
 		global $wgUser;
@@ -1135,8 +1138,14 @@ EOS
 		}
 		return true;
 	}
-	
+
+	/**
+	 * This function is the fallback solution for MediaWiki < 1.14
+	 * (where the hook SkinBuildSidebar doesn't exist)
+	 */
 	static function printPortlet() {
+		wfLoadExtensionMessages( 'Collection' );
+		
 		$portletTitle = wfMsgHtml( 'coll-portlet_title' );
 		print <<<EOS
 <div id="p-collection" class="portlet">	 
