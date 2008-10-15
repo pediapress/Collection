@@ -172,6 +172,7 @@ $messages['krl'] = array(
  * @author Сай
  */
 $messages['mhr'] = array(
+	'coll-contents' => 'Вуйлымаш',
 	'coll-cancel' => 'Чараш',
 );
 
@@ -601,6 +602,7 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Heuler06
  * @author Raimond Spekking
  * @author Revolus
  * @author VolkerHaas
@@ -662,7 +664,7 @@ Möchtest du sie hinzufügen?',
 	'coll-save_collection_text' => 'Um diese Sammlung zu speichern, wähle einen Typ und gib einen Titel ein:',
 	'coll-login_to_save' => 'Wenn du Sammlungen speichern möchtest, [[Special:UserLogin|melde dich bitte an oder erstelle ein Benutzerkonto]].',
 	'coll-personal_collection_label' => 'Persönliche Sammlung:',
-	'coll-community_collection_label' => 'Community Sammlung:',
+	'coll-community_collection_label' => 'Community-Sammlung:',
 	'coll-save_collection' => 'Sammlung speichern',
 	'coll-overwrite_title' => 'Seite vorhanden, überschreiben?',
 	'coll-overwrite_text' => 'Eine Seite mit dem Namen [[:$1]] ist bereits vorhanden. Möchtest du sie durch deine Sammlung ersetzen?',
@@ -1339,6 +1341,8 @@ Per favor contacta tu administrator de MediaWiki.',
  * @author Rex
  */
 $messages['id'] = array(
+	'coll-title' => 'Judul:',
+	'coll-yes' => 'Ya',
 	'coll-no' => 'Tidak',
 	'coll-cancel' => 'Batalkan',
 );
@@ -1943,7 +1947,19 @@ $messages['mt'] = array(
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
+	'coll-add_page' => 'Поладомс лопа',
+	'coll-add_category' => 'Поладомс категория',
+	'coll-empty' => 'чаво',
+	'coll-download' => 'Таргамс',
 	'coll-remove' => 'Нардык',
+	'coll-title' => 'Коняксозо:',
+	'coll-rename' => 'Лемдемс одов',
+	'coll-no_such_category' => 'Истямо категория арась',
+	'coll-save_collection_title' => 'Ванстомс пурнавксонть',
+	'coll-community_collection_label' => 'Вейтьсэнь пурнавксось:',
+	'coll-yes' => 'Истя',
+	'coll-no' => 'Арась',
+	'coll-notfound_title' => 'Пурнавксось а муеви',
 );
 
 /** Nahuatl (Nāhuatl)
