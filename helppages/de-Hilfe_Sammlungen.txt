@@ -1,16 +1,16 @@
 Du kannst Sammlungen von Seiten erstellen, daraus ein Dokument in verschiedenen Formaten
-herunterladen, Bücher von einem Print-on-Demand-Unternehmen bestellen, sowie Sammlungen für
+herunterladen, Bücher bei einem Print-on-Demand-Unternehmen bestellen, sowie Sammlungen für
 die spätere Verwendung speichern und mit anderen Benutzern teilen.
 
 == Hinzufügen und Entfernen von Artikeln ==
 
-Wenn du auf einer Artikel-Seite bist, siehst du eine kleine Box namens "Sammlung" auf der linken Seite.
+Wenn du auf einer Artikel-Seite bist, siehst du eine kleine Box namens „Sammlung“ auf der linken Seite.
 Hier kannst du den aktuellen Artikel (in der aktuell angezeigten Version) zu deiner Sammlung
 hinzufügen. Wenn der Artikel bereits hinzugefügt worden ist, kannst du ihn stattdessen entfernen.
 
 == Die Sammlung bearbeiten ==
 
-Klicke auf "Sammlung zeigen", um zu [[Spezial:Sammlung]] zu gelangen. Hier kannst du deine Sammlung
+Klicke auf „Sammlung zeigen“, um zu [[{{#special:Collection}}]] zu gelangen. Hier kannst du deine Sammlung
 bearbeiten:
 * einen Titel und Untertitel für die Sammlung eingeben
 * Kapitel erzeugen
@@ -21,63 +21,63 @@ bearbeiten:
 == Dokumente herunterladen ==
 
 Um ein Dokument im PDF- oder ODF-Format eines einzelnen Artikels herunterzuladen, gehst du einfach
-auf die Artikel-Seite und klickst auf "Als ... herunterladen" in der Box "Werkzeuge" auf der linken
+auf die Artikel-Seite und klickst auf „Als … herunterladen“ in der Box „Werkzeuge“ auf der linken
 Seite.
 
-Um eine komplette Sammlung als Dokument herunterzuladen, gehst du zur [[Spezial:Sammlung]] Seite,
-wählst das gewünschte Format aus und drückst den "Herunterladen"-Button.
+Um eine komplette Sammlung als Dokument herunterzuladen, gehst du zur Seite [[Special:Collection|Spezial:Sammlung]],
+wählst das gewünschte Format aus und drückst den „Herunterladen“-Button.
 
 == Die Ausgabe verbessern ==
 
 Manche Artikel benutzen Wiki-Markup, das nicht ideal zum Produzieren von PDFs ist. Ein wichtiger
-Spezialfall, ist die Benutzung von Vorlagen, die im PDF anders dargestellt oder weggelassen
+Spezialfall ist die Benutzung von Vorlagen, die im PDF anders dargestellt oder weggelassen
 werden sollten.
 
 Zum Beispiel sollten alle Navigations-Vorlagen, die bei der PDF-Generierung ausgeschlossen werden,
-indem sie zur [[:Kategorie:Exclude in print]] hinzugefügt werden (siehe unten).
+zur [[:{{ns:category}}:Exclude in print]] hinzugefügt werden (siehe unten).
 
 Faustformel: Alle Vorlagen, die Inhalte enthalten, die nicht sinnvoll für eine Offline-Version
 des Dokuments sind, sollten ausgeschlossen werden.
 
-Es gibt zwei Möglichkeiten die Ausgabe bzgl. Vorlagen zu verbessern:
+Es gibt zwei Möglichkeiten, die Ausgabe bzgl. Vorlagen zu verbessern:
 
 === Vorlagen ersetzen ===
 
-Man kann eine Vorlage durch eine andere mit Namen "PrintNAMEDERVORLAGE" ersetzen, wobei
+Man kann eine Vorlage durch eine andere mit Namen „PrintNAMEDERVORLAGE“ ersetzen, wobei
 NAMEDERVORLAGE der Name der ursprünglichen Vorlage ist.
 
 === Vorlagen ausschließen ===
 
-;Vorlage zu der speziellen [[:Kategorie:Exclude in print]] hinzufügen
-:Vorlagen in der [[:Kategorie:Exclude in print]] werden ausgelassen.
+;Vorlage zu der speziellen [[:{{ns:category}}:Exclude in print]] hinzufügen
+:Vorlagen in der [[:{{ns:category}}:Exclude in print]] werden ausgelassen.
 ;Vorlage auf die schwarze Liste setzen
 :Vorlagen, die auf der Seite [[PDF Template Blacklist]] gelistet sind, werden ebenfalls ausgelassen.
 Das Format dieser [[PDF Template Blacklist]] hat die folgende Form:
 <pre>
- * [[Vorlage:Eine Vorlage]]
- * [[Vorlage:Eine weitere Vorlage]]
+ * [[{{ns:template}}:Eine Vorlage]]
+ * [[{{ns:template}}:Eine weitere Vorlage]]
 </pre>
 
 == Bücher bestellen ==
 
 Du kannst auf einfache Weise ein Buch aus deiner Artikelsammlung bestellen. Klicke einfach auf
-den Button eines der gelisteten Print-on-Demand-Unternehmen auf der Seite [[Spezial:Sammlung]].
+den Button eines der gelisteten Print-on-Demand-Unternehmen auf der Seite [[{{#special:Collection}}]].
 
 == Sammlungen abspeichern und laden ==
 
-Du musst [[Spezial:Anmelden|angemeldet sein]], um Sammlungen abzuspeichern. Gehe zur Seite
-[[Spezial:Sammlung]] und wähle aus, ob du die Sammlung als Unterseite deiner Benutzer-Seite
-oder als Unterseite von Wikibooks:Sammlungen abspeichern willst, gib einen Titel ein und
-klicke auf den "Sammlung speichern"-Button. Sammlungen werden automatisch zur
-[[:Kategorie:Sammlungen]] hinzugefügt.
+Du musst [[{{#special:userlogin}}|angemeldet sein]], um Sammlungen abzuspeichern. Gehe zur Seite
+[[{{#special:Collection}}]] und wähle aus, ob du die Sammlung als Unterseite deiner Benutzerseite
+oder als Unterseite von {{ns:project}}:Sammlungen abspeichern willst, gib einen Titel ein und
+klicke auf den „Sammlung speichern“-Button. Sammlungen werden automatisch zur
+[[:{{ns:category}}:Sammlungen]] hinzugefügt.
 
-Falls du auf einer Seite einer Sammlung bist, enthält die "Sammlung"-Box auf der linken Seite
-eine Link "Sammlung laden", mit dem du angezeigte Sammlung laden kannst.
+Falls du auf einer Seite einer Sammlung bist, enthält die „Sammlung“-Box auf der linken Seite
+eine Link „Sammlung laden“, mit dem du die angezeigte Sammlung laden kannst.
 
 == Format der gespeicherten Sammlung-Seiten ==
 
-Eine Sammlung mit dem Titel "Meine Sammlung" und dem Untertitel "Ein Beispiel", die aus den
-zwei Kapiteln "Foo" und "Bar" besteht, wovon jedes drei Artikel enthält, würde als Seite
+Eine Sammlung mit dem Titel „Meine Sammlung“ und dem Untertitel „Ein Beispiel“, die aus den
+zwei Kapiteln „Foo“ und „Bar“ besteht, wovon jedes drei Artikel enthält, würde als Seite
 mit dem folgenden Markup abgespeichert werden:
 
 <pre>
@@ -91,14 +91,14 @@ mit dem folgenden Markup abgespeichert werden:
 :[[Vierter_Artikel]]
 :[[Fünfter_Artikel]]
 :[[Sechster_Artikel]]
-[[Kategorie:Sammlungen]]
+[[{{ns:category}}:Sammlungen]]
 </pre>
 
 == Verwandte Seiten ==
 
-* [[Spezial:Sammlung]] - Die Hauptseite dieser Erweiterung
-* [[:Kategorie:Sammlungen]] - abgespeicherte Sammlungen
-* [[:Kategorie:Exclude in print]] - Kategorie, um Vorlagen in exportierten Dokumenten auszuschließen
+* [[{{#special:Collection}}]] - Die Hauptseite dieser Erweiterung
+* [[:{{ns:category}}:Sammlungen]] - abgespeicherte Sammlungen
+* [[:{{ns:category}}:Exclude in print]] - Kategorie, um Vorlagen in exportierten Dokumenten auszuschließen
 * [[PDF Template Blacklist]] - schwarze Liste für Vorlagen in exportierten Dokumenten
 
 
