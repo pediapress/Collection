@@ -168,14 +168,6 @@ $messages['krl'] = array(
 	'coll-cancel' => 'Keskevytä',
 );
 
-/** Eastern Mari (Олык Марий)
- * @author Сай
- */
-$messages['mhr'] = array(
-	'coll-contents' => 'Вуйлымаш',
-	'coll-cancel' => 'Чараш',
-);
-
 /** Niuean (ko e vagahau Niuē)
  * @author Jose77
  */
@@ -1043,6 +1035,17 @@ Por favor, contacte co seu administrador MediaWiki.',
 	'coll-return_to' => 'Voltar a "[[:$1]]"',
 );
 
+/** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Omnipaedista
+ */
+$messages['grc'] = array(
+	'coll-empty' => 'κενή',
+	'coll-subtitle' => 'Ὑποεπιγραφή:',
+	'coll-contents' => 'Περιεχόμενα',
+	'coll-rendering_title' => 'Ἀπόδοσις',
+	'coll-license' => 'Ἄδεια',
+);
+
 /** Swiss German (Alemannisch)
  * @author J. 'mach' wust
  */
@@ -1753,6 +1756,7 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-rename_chapter' => "Gitt een neie Numm fir d'Kapitel un",
 	'coll-no_such_category' => 'Keng esou Kategorie',
 	'coll-notitle_title' => 'Den Titel vun der Säit konnt net festgestallt ginn.',
+	'coll-mwserve_failed_title' => 'Feeler vum Server',
 	'coll-enter_title' => 'Titel vun der Kollektioun uginn:',
 	'coll-error_reponse' => 'Feelermeldng vum Server',
 	'coll-empty_collection' => 'Eidel Sammlung',
@@ -1788,6 +1792,14 @@ $messages['lo'] = array(
 	'coll-remove' => 'ເອົາອອກ',
 	'coll-yes' => 'ໃຊ່',
 	'coll-no' => 'ບໍ່ໃຊ່',
+);
+
+/** Eastern Mari (Олык Марий)
+ * @author Сай
+ */
+$messages['mhr'] = array(
+	'coll-contents' => 'Вуйлымаш',
+	'coll-cancel' => 'Чараш',
 );
 
 /** Malayalam (മലയാളം)
@@ -2470,6 +2482,8 @@ Esta página não funcionará correctamente, excepto se o JavaScript for activad
 
 Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para mais informação.',
 	'coll-helppage' => 'Help:Colecções',
+	'coll-too_big_cat' => 'A categoria possui mais de %PARAM% páginas. Apenas as primeiras %PARAM% páginas poderão ser adicionadas em sua colecção.
+Deseja adicioná-las?',
 	'coll-my_collection' => 'Minha Colecção',
 	'coll-download_title' => 'Descarregar Colecção como PDF',
 	'coll-download_text' => 'Para descarregar um ficheiro PDF da sua colecção de páginas gerado automaticamente, carregue no botão.',
@@ -2494,6 +2508,8 @@ Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para m
 	'coll-notitle_title' => 'Não foi possível determinar o título da página.',
 	'coll-post_failed_title' => 'Pedido POST falhou',
 	'coll-post_failed_msg' => 'O pedido POST feito à $1 falhou ($2).',
+	'coll-mwserve_failed_title' => 'Erro no servidor de renderização',
+	'coll-mwserve_failed_msg' => 'Ocorreu um erro no servidor de renderização: $1',
 	'coll-enter_title' => 'Introduza título para a colecção:',
 	'coll-error_reponse' => 'Resposta de erro do servidor',
 	'coll-empty_collection' => 'Colecção vazia',
@@ -2518,12 +2534,19 @@ Pretende reescrever a sua colecção, adicionando o novo conteúdo, ou cancelar 
 	'coll-limit_exceeded_title' => 'Colecção Demasiado Grande',
 	'coll-limit_exceeded_text' => 'A usa coleccção de página é demasiado grande.
 Não poderão ser adicionadas mais páginas.',
+	'coll-rendering_title' => 'Renderizando',
 	'coll-rendering_text' => "'''Por favor, aguarde enquanto o documento é gerado.'''
 
 Progresso: '''$1%'''.
 
 Este página deverá refrescar automaticamente após alguns segundos.
 Se isto não funcionar, por favor utilize o botão de refrescamento do seu navegador.",
+	'coll-rendering_finished_title' => 'Renderização concluída',
+	'coll-rendering_finished_text' => "'''O ficheiro PDF foi gerado.'''
+'''[$1 Clique aqui]''' para transferir a seu computador.
+
+Não está satisfeito com o resultado?
+Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para possibilidades de aprimoramentos.",
 	'coll-notfound_title' => 'Colecção Não Encontrada',
 	'coll-notfound_text' => 'Não foi possível encontrar a página da colecção.',
 	'coll-excluded-templates' => 'Prédefinições na categoria [[:Category:$1|$1]] foram excluídas.',
