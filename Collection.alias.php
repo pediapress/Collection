@@ -47,6 +47,11 @@ $aliases['fi'] = array(
 	'Collection' => array( 'Kokoelma' ),
 );
 
+/** Hebrew (עברית) */
+$aliases['he'] = array(
+	'Collection' => array( 'אוסף' ),
+);
+
 /** Indonesian (Bahasa Indonesia) */
 $aliases['id'] = array(
 	'Collection' => array( 'Koleksi' ),
@@ -59,12 +64,17 @@ $aliases['it'] = array(
 
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
-	'Collection' => array( 'ការប្រមូលផ្តុំ' ),
+	'Collection' => array( 'ការចងក្រង' ),
 );
 
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'Collection' => array( 'Sammlung' ),
+);
+
+/** Macedonian (Македонски) */
+$aliases['mk'] = array(
+	'Collection' => array( 'Колекција' ),
 );
 
 /** Nedersaksisch (Nedersaksisch) */
