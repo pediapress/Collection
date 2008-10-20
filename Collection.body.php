@@ -1199,8 +1199,15 @@ EOS
 			$wgOut->enableClientCache( false );
 			
 			if ( is_null( $wgArticle ) || !$wgArticle->exists() ) {
-				// no op
-			} else if ( $wgTitle->getNamespace() == NS_MAIN ) { // TODO: only NS_MAIN?
+				return;
+  		} else if ( $wgTitle->getNamespace() == NS_CATEGORY ) {
+				$params = "cattitle=" . $wgTitle->getPartialURL();
+				$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
+					'Collection',
+					'add_category/'
+				), $params ) );
+				$out .= "<li><a href=\"$href\" rel=\"nofollow\">$addCategory</a></li>";
+			} else if ( $wgOut->isArticle() ) {
 				$params = "arttitle=" . $wgTitle->getPrefixedUrl() . "&oldid=" . $wgArticle->getOldID();
 
 				if ( self::findArticle( $wgTitle->getPrefixedText(), $wgArticle->getOldID() ) == -1 ) {
@@ -1216,13 +1223,6 @@ EOS
 					), $params ) );
 					$out .= "<li><a href=\"$href\" rel=\"nofollow\">$removeArticle</a></li>";
 				}
-			} else if ( $wgTitle->getNamespace() == NS_CATEGORY ) {
-				$params = "cattitle=" . $wgTitle->getPartialURL();
-				$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
-					'Collection',
-					'add_category/'
-				), $params ) );
-				$out .= "<li><a href=\"$href\" rel=\"nofollow\">$addCategory</a></li>";
 			}
 			
 			$articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $numArticles );
