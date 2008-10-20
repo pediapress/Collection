@@ -43,6 +43,9 @@ $wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
 /** Login credentials to this MediaWiki as 'USERNAME:PASSWORD' string */
 $wgCollectionMWServeCredentials = null;
 
+/** PEM-encoded SSL certificate for the mw-serve render server to pass to CURL */
+$wgCollectionMWServeCert = null;
+
 /** Namespace for "community collections" */
 $wgCommunityCollectionNamespace = NS_MEDIAWIKI;
 
