@@ -464,7 +464,7 @@ class Collection extends SpecialPage {
 			$articleText .= "\n[[" . $catTitle->getPrefixedText() . "]]\n";
 		}
 
-		$article->doEdit( $articleText, '', EDIT_FORCE_BOT );
+		$article->doEdit( $articleText, '' );
 		return true;
 	}
 	
