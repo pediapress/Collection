@@ -1312,7 +1312,8 @@ EOS
 	static function post( $url, $postFields, &$errorMessage, &$headers,
 		$timeout=true, $toFile=null ) {
 		global $wgHTTPTimeout, $wgHTTPProxy, $wgVersion, $wgTitle;
-	
+		global $wgCollectionMWServeCert;
+		
 		$c = curl_init( $url );
 		curl_setopt($c, CURLOPT_PROXY, $wgHTTPProxy);
 		curl_setopt( $c, CURLOPT_USERAGENT, "MediaWiki/$wgVersion" );
@@ -1325,6 +1326,14 @@ EOS
 		if ( $timeout ) {
 			curl_setopt( $c, CURLOPT_TIMEOUT, $wgHTTPTimeout );
 		}
+		/* Allow the use of self-signed certificates by referencing
+		 * a local (to the mediawiki install) copy of the signing
+		 * certificate */
+		if ( !($wgCollectionMWServeCert === null) ) {
+			curl_setopt ($c, CURLOPT_SSL_VERIFYPEER, TRUE); 
+			curl_setopt ($c, CURLOPT_CAINFO, $wgCollectionMWServeCert);
+		}
+		
 		$headerStream = tmpfile();
 		curl_setopt( $c, CURLOPT_WRITEHEADER, $headerStream );
 		if ( $toFile ) {

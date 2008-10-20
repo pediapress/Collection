@@ -70,6 +70,11 @@ Installation and Configuration of the Collection Extension
    Note that the MediaWiki must be accessible from the render server, i.e. if
    your MediaWiki is behind a firewall you cannot use the public render server.
   
+  *$wgCollectionMWServeCert (string)*
+   Filename of a SSL certificate in PEM format for the mw-serve render server.
+   This needs to be used for self-signed certificates, otherwise CURL will
+   throw an error. The default is null, i.e. no certificate.
+  
   *$wgCollectionMWServeCredentials (string)*
    Set this to a string of the form "USERNAME:PASSWORD" (or
    "USERNAME:PASSWORD:DOMAIN" if you're using LDAP), if the MediaWiki
