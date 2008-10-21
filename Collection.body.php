@@ -1165,6 +1165,7 @@ EOS
 		global $wgRequest;
 		global $wgTitle;
 		global $wgOut;
+		global $wgCollectionArticleNamespaces;
 		
 		// Note: we need to use $wgRequest, b/c there is apparently no way to get
 		// the subpage part of a Special page via $wgTitle.
@@ -1198,16 +1199,18 @@ EOS
 			$wgOut->setSquidMaxage( 0 );
 			$wgOut->enableClientCache( false );
 			
+			$namespace =  $wgTitle->getNamespace();
+			
 			if ( is_null( $wgArticle ) || !$wgArticle->exists() ) {
 				return;
-  		} else if ( $wgTitle->getNamespace() == NS_CATEGORY ) {
+  		} else if ( $namespace == NS_CATEGORY ) {
 				$params = "cattitle=" . $wgTitle->getPartialURL();
 				$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
 					'Collection',
 					'add_category/'
 				), $params ) );
 				$out .= "<li><a href=\"$href\" rel=\"nofollow\">$addCategory</a></li>";
-			} else if ( $wgOut->isArticle() ) {
+			} else if ( in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
 				$params = "arttitle=" . $wgTitle->getPrefixedUrl() . "&oldid=" . $wgArticle->getOldID();
 
 				if ( self::findArticle( $wgTitle->getPrefixedText(), $wgArticle->getOldID() ) == -1 ) {
