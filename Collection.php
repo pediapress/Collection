@@ -46,6 +46,22 @@ $wgCollectionMWServeCredentials = null;
 /** PEM-encoded SSL certificate for the mw-serve render server to pass to CURL */
 $wgCollectionMWServeCert = null;
 
+/** Array of namespaces that can be added to a collection */
+$wgCollectionArticleNamespaces = array(
+	NS_MAIN,
+	NS_TALK,
+	NS_USER,
+	NS_USER_TALK,
+	NS_PROJECT,
+	NS_PROJECT_TALK,
+	NS_MEDIAWIKI,
+	NS_MEDIAWIKI_TALK,
+	100, // Portal
+	101, // Portal talk
+	102, // Author
+	103, // Author talk
+);
+
 /** Namespace for "community collections" */
 $wgCommunityCollectionNamespace = NS_MEDIAWIKI;
 
