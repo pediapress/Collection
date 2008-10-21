@@ -566,7 +566,7 @@ class Collection extends SpecialPage {
 		$query = 'return_to=' . urlencode( $referrer->getPrefixedText() )
 			. '&collection_id=' . urlencode( $response->collection_id )
 			. '&writer=' . urlencode( $response->writer );
-		if ( $response->is_cached ) {
+		if ( isset( $response->is_cached ) && $response->is_cached ) {
 			$query .= '&is_cached=1';
 		}
 		$wgOut->redirect( wfAppendQuery( $redirect, $query ) );
