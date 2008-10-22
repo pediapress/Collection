@@ -938,6 +938,7 @@ EOS
 		} else {
 			$html .= wfMsgExt( 'coll-login_to_save', array( 'parse' ) );
 		}
+		$html .= wfMsgExt( 'coll-save_category', array( 'parse' ) );
 		$this->outputBox( $html );
 	}
 
@@ -1133,7 +1134,7 @@ EOS
 			// it would be very confusing.
 			$html = self::getPortlet();
 			if ( $html ) {
-				$bar[ wfMsg( 'coll-collection' )] = $html;
+				$bar[ wfMsg( 'coll-portlet_title' )] = $html;
 			}
 		}
 		return true;
