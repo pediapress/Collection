@@ -539,6 +539,7 @@ class Collection extends SpecialPage {
 	
 	function renderCollection( $collection, $referrer, $writer ) {
 		global $wgOut;
+		global $wgContLang;
 		global $wgCollectionTemplateExclusionCategory;
 		global $wgPDFTemplateBlacklist;
 		global $wgServer;
@@ -555,6 +556,7 @@ class Collection extends SpecialPage {
 			'script_extension' => $wgScriptExtension,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
 			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
+			'language' => $wgContLang->getCode(),
 			'writer' => $writer,
 		) );
 		
@@ -574,6 +576,7 @@ class Collection extends SpecialPage {
 	
 	function forceRenderCollection() {
 		global $wgOut;
+		global $wgContLang;
 		global $wgCollectionTemplateExclusionCategory;
 		global $wgPDFTemplateBlacklist;
 		global $wgRequest;
@@ -590,6 +593,7 @@ class Collection extends SpecialPage {
 			'script_extension' => $wgScriptExtension,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
 			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
+			'language' => $wgContLang->getCode(),
 			'writer' => $writer,
 			'force_render' => true
 		) );
