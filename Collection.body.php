@@ -1229,16 +1229,16 @@ EOS
 				}
 			}
 			
-			$articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $numArticles );
-			$showCollection = wfMsgHtml( 'coll-show_collection' );
-			$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
-			$out .= <<<EOS
+			if ( $numArticles > 0 ) {
+				$articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $numArticles );
+				$showCollection = wfMsgHtml( 'coll-show_collection' );
+				$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
+				$out .= <<<EOS
 							<li><a href="$showURL" rel="nofollow">$showCollection<br />
 								($articles)</a></li>
 EOS
-			;
+				;
 			
-			if ( $numArticles > 0 ) {
 				$clearCollection = wfMsgHtml( 'coll-clear_collection' );
 				$params = 'return_to=' . $wgTitle->getFullURL();
 				$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
