@@ -286,7 +286,7 @@ $messages['ar'] = array(
 	'coll-personal_collection_label' => 'مجموعة شخصية:',
 	'coll-community_collection_label' => 'مجموعة مجتمع:',
 	'coll-save_collection' => 'حفظ المجموعة',
-	'coll-save_category' => 'المجموعات يتم حفظها في [[:Category:Collections]].',
+	'coll-save_category' => 'المجموعات يتم حفظها في التصنيف [[:Category:Collections|مجموعات]].',
 	'coll-overwrite_title' => 'الصفحة موجودة.
 كتابة عليها؟',
 	'coll-overwrite_text' => 'صفحة بنفس الاسم [[:$1]] موجودة بالفعل.
@@ -313,13 +313,13 @@ $messages['ar'] = array(
 	'coll-rendering_finished_text' => "'''ملف الوثيقة تم توليده.'''
 '''[$1 اضغط هنا]''' لتنزيله إلى حاسوبك.
 
-غير راض عن الخرج؟
-انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.",
+ملاحظات:
+* غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.",
 	'coll-notfound_title' => 'المجموعة غير موجودة',
 	'coll-notfound_text' => 'لم يمكن العثور على صفحة المجموعة.',
-	'coll-is_cached' => '<p>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></p>',
-	'coll-excluded-templates' => 'القوالب في التصنيف [[:Category:$1|$1]] تم إقصاؤها.',
-	'coll-blacklisted-templates' => 'القوالب في القائمة السوداء [[:$1]] تم إقصاؤها.',
+	'coll-is_cached' => '<ul><li>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></li></ul>',
+	'coll-excluded-templates' => '* القوالب في التصنيف [[:Category:$1|$1]] تم إقصاؤها.',
+	'coll-blacklisted-templates' => '* القوالب في القائمة السوداء [[:$1]] تم إقصاؤها.',
 	'coll-return_to_collection' => '<p>ارجع إلى <a href="$1">$2</a></p>',
 	'coll-book_title' => 'طلب كتاب مطبوع',
 	'coll-book_text' => 'يمكنك طلب كتاب مطبوع يحتوي على مجموعة صفحاتك بواسطة زيارة واحدا من شركاء الطباعة عند الطلب التاليين:',
@@ -394,7 +394,7 @@ $messages['arz'] = array(
 	'coll-personal_collection_label' => 'مجموعة شخصية:',
 	'coll-community_collection_label' => 'مجموعة مجتمع:',
 	'coll-save_collection' => 'حفظ المجموعة',
-	'coll-save_category' => 'المجموعات يتم حفظها فى [[:Category:Collections]].',
+	'coll-save_category' => 'المجموعات يتم حفظها فى التصنيف [[:Category:Collections|مجموعات]].',
 	'coll-overwrite_title' => 'الصفحة موجودة.
 كتابة عليها؟',
 	'coll-overwrite_text' => 'صفحة بنفس الاسم [[:$1]] موجودة بالفعل.
@@ -421,13 +421,13 @@ $messages['arz'] = array(
 	'coll-rendering_finished_text' => "'''ملف الوثيقة تم توليده.'''
 '''[$1 اضغط هنا]''' لتنزيله إلى حاسوبك.
 
-غير راض عن الخرج؟
-انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.",
+ملاحظات:
+* غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.",
 	'coll-notfound_title' => 'المجموعة غير موجودة',
 	'coll-notfound_text' => 'لم يمكن العثور على صفحة المجموعة.',
-	'coll-is_cached' => '<p>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></p>',
-	'coll-excluded-templates' => 'القوالب فى التصنيف [[:Category:$1|$1]] تم إقصاؤها.',
-	'coll-blacklisted-templates' => 'القوالب فى القائمة السوداء [[:$1]] تم إقصاؤها.',
+	'coll-is_cached' => '<ul><li>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></li></ul>',
+	'coll-excluded-templates' => '* القوالب فى التصنيف [[:Category:$1|$1]] تم إقصاؤها.',
+	'coll-blacklisted-templates' => '* القوالب فى القائمة السوداء [[:$1]] تم إقصاؤها.',
 	'coll-return_to_collection' => '<p>ارجع إلى <a href="$1">$2</a></p>',
 	'coll-book_title' => 'طلب كتاب مطبوع',
 	'coll-book_text' => 'يمكنك طلب كتاب مطبوع يحتوى على مجموعة صفحاتك بواسطة زيارة واحدا من شركاء الطباعة عند الطلب التاليين:',
@@ -516,24 +516,29 @@ $messages['cs'] = array(
 	'coll-desc' => 'Vytváření [[Special:Collection|kolekce stránek]], tvorba PDF',
 	'coll-collection' => 'Kolekce',
 	'coll-collections' => 'Kolekce',
-	'coll-portlet_title' => 'Kolekce',
-	'coll-add_page' => 'Přidat stránku',
-	'coll-remove_page' => 'Odstranit stránku',
+	'coll-portlet_title' => 'Vytvořit knihu',
+	'coll-add_page' => 'Přidat tuto stránku',
+	'coll-remove_page' => 'Odebrat tuto stránku',
 	'coll-add_category' => 'Přidat kategorii',
 	'coll-load_collection' => 'Načíst kolekci',
 	'coll-show_collection' => 'Zobrazit kolekci',
 	'coll-help_collections' => 'Nápověda ke kolekcím',
 	'coll-empty' => 'prázdná',
-	'coll-noscript_text' => '<h1>Vyžaduje se JavaScript!</h1>
+	'coll-n_pages' => '$1 {{PLURAL:$1|stránka|stránky|stránek}}',
+	'coll-download_as' => 'Stáhnout jako $1',
+	'coll-noscript_text' => '<h1>Je vyžadován JavaScript!</h1>
 <strong>Váš prohlížeč nepodporuje JavaScript nebo máte JavaScript vypnutý.
-Táto stránka nebude správně fungovat dokud nezapnete JavaScript.</strong>',
-	'coll-intro_text' => 'Můžete vytvářet kolekce stránek, vytvářet a stahovat PDF soubory vytvořené z kolekce stránek a ukládat kolekce stránek pro pozdější využití nebo je sdílet
+Tato stránka nebude správně fungovat, dokud JavaScript nezapnete.</strong>',
+	'coll-intro_text' => 'Můžete vytvářet kolekce stránek, vytvářet a stahovat PDF soubory vytvořené z kolekce stránek a ukládat kolekce stránek pro pozdější využití nebo je sdílet.
 
-Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku nápovědy ke kolekcím]].',
+Další informace najdete na [[{{MediaWiki:Coll-helppage}}|stránce nápovědy ke kolekcím]].',
 	'coll-helppage' => 'Help:Kolekce',
+	'coll-too_big_cat' => 'Tato kategorie obsahuje více než %PARAM% {{PLURAL:%PARAM%|stránku|stránky|stránek}}, do kolekce však lze přidat pouze {{PLURAL:%PARAM%|první stránku|první %PARAM% stránky|prvních %PARAM% stránek}}. Chcete je tam přidat?',
 	'coll-my_collection' => 'Moje kolekce',
-	'coll-download_title' => 'Stáhnout kolekci jako PDF',
-	'coll-download_text' => 'Stáhnout automaticky vytvořený PDF soubor vaší kolekce stránek. Klikněte na tlačítko.',
+	'coll-download_title' => 'Stáhnout kolekci',
+	'coll-download_text' => 'Pokud chcete stáhnout dokument vytvořený automaticky z vaší kolekce stránek, zvolte si formát a klikněte na tlačítko.',
+	'coll-download' => 'Stáhnout',
+	'coll-format_label' => 'Formát:',
 	'coll-remove' => 'Odstranit',
 	'coll-move_to_top' => 'Přesunout nahoru',
 	'coll-move_up' => 'Přesunout výše',
@@ -545,7 +550,7 @@ Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku n�
 	'coll-create_chapter' => 'Vytvořit novou kapitolu',
 	'coll-sort_alphabetically' => 'Seřadit stránky abecedně',
 	'coll-clear_collection' => 'Vyčistit kolekci',
-	'coll-clear_confirm' => 'Opravdu chcete vyčistit svoji kolekci?',
+	'coll-clear_confirm' => 'Opravdu chcete kolekci vyčistit?',
 	'coll-rename' => 'Přejmenovat',
 	'coll-new_chapter' => 'Zadejte název nové kapitoly',
 	'coll-rename_chapter' => 'Zadejte nový název kapitoly',
@@ -553,7 +558,9 @@ Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku n�
 	'coll-notitle_title' => 'Nebylo možné určit název stránky.',
 	'coll-post_failed_title' => 'Chyba požadavku POST',
 	'coll-post_failed_msg' => 'Chyba při požadavku POST na server $1 ($2).',
-	'coll-enter_title' => 'Zadejte název kolekce.',
+	'coll-mwserve_failed_title' => 'Chyba vykreslovacího serveru',
+	'coll-mwserve_failed_msg' => 'Na vykreslovacím serveru došlo k chybě: <nowiki>$1</nowiki>',
+	'coll-enter_title' => 'Zadejte název kolekce:',
 	'coll-error_reponse' => 'Chybná odpověď serveru',
 	'coll-empty_collection' => 'Prázdná kolekce',
 	'coll-revision' => 'Revize: %PARAM%',
@@ -563,11 +570,13 @@ Pro další informace se podívejte na [[{{MediaWiki:Coll-helppage}}|stránku n�
 	'coll-personal_collection_label' => 'Osobní kolekce:',
 	'coll-community_collection_label' => 'Komunitní kolekce:',
 	'coll-save_collection' => 'Uložit kolekci',
+	'coll-save_category' => 'Kolekce se ukládají do [[:Category:Collections|{{ns:Category}}:Collections]].',
 	'coll-overwrite_title' => 'Stránka existuje. Přepsat?',
 	'coll-overwrite_text' => 'Stránka s názvem [[:$1]] už existuje.
 Chcete ji nahradit svojí kolekcí?',
 	'coll-yes' => 'Ano',
 	'coll-no' => 'Ne',
+	'coll-disable_collection_text' => '<a href="$1">Nepoužívat kolekce.</a>',
 	'coll-load_overwrite_text' => 'Ve vaší kolekci se už nacházejí stránky.
 Chcete přepsat svoji existující kolekci, přidat do ní obsah nebo zrušit operaci s touto kolekcí?',
 	'coll-overwrite' => 'Přepsat',
@@ -576,13 +585,34 @@ Chcete přepsat svoji existující kolekci, přidat do ní obsah nebo zrušit op
 	'coll-limit_exceeded_title' => 'Kolekce je příliš velká',
 	'coll-limit_exceeded_text' => 'Vaše kolekce stránek je příliš velká.
 Není možné přidat další stránky.',
+	'coll-rendering_title' => 'Vykreslování',
+	'coll-rendering_text' => "'''Prosím čekejte, dokument se připravuje.'''
+
+Dokončeno: '''$1 %'''
+
+Tato stránka se každých několik sekund automaticky obnoví.
+Pokud to nefunguje, stiskněte v prohlížeči tlačítko ''obnovit''.",
+	'coll-rendering_finished_title' => 'Vykreslování dokončeno',
+	'coll-rendering_finished_text' => "'''Soubor s dokumentem byl vytvořen.'''
+Můžete si ho '''[$1 stáhnout do svého počítače]'''.
+
+Nejste spokojeni s výsledkem?
+Možnosti jeho vylepšení najde na [[{{MediaWiki:Coll-helppage}}|stránce s nápovědou ke kolekcím]].",
 	'coll-notfound_title' => 'Kolekce nenalezena',
 	'coll-notfound_text' => 'Nebylo možné najít stránku kolekce',
+	'coll-is_cached' => '<ul><li>Byla nalezena cachovaná verze tohoto dokumentu, takže nebylo třeba vykreslovat. <a href="$1">Vynutit nové vykreslení.</a></li></ul>',
+	'coll-excluded-templates' => '* Šablony v kategorii [[:Category:$1|$1]] byly vynechány.',
+	'coll-blacklisted-templates' => '* Šablony na černé listině [[:$1]] byly vynechány.',
 	'coll-return_to_collection' => '<p>Vrátit se na <a href="$1">$2</a></p>',
-	'coll-book_title' => 'Objednat tisknutou knihu',
-	'coll-book_text' => 'Můžete se objednat tisknutou knihu obsahující vaši kolekci stránek. Navštivte jednoho z následujících partnerů, kteří Vám ji vytisknou na požádání:',
-	'coll-order_from_pp' => 'Objednat knihu od $1',
-	'coll-about_pp' => 'O $1',
+	'coll-book_title' => 'Objednat tištěnou knihu',
+	'coll-book_text' => 'U některého z následujících partnerů pro tisk na vyžádání si můžete objednat tištěnou knihu obsahující vaši kolekci stránek:',
+	'coll-order_from_pp' => 'Objednat knihu od {{grammar:2sg|$1}}',
+	'coll-about_pp' => 'O {{grammar:7sg|$1}}',
+	'coll-invalid_podpartner_title' => 'Neplatný partner pro tisk na vyžádání',
+	'coll-invalid_podpartner_msg' => 'Zvolený partner pro tisk na vyžádání není platný.
+Kontaktujte svého správce MediaWiki.',
+	'coll-license' => 'Licence',
+	'coll-return_to' => 'Návrat na stránku „[[:$1]]“.',
 );
 
 /** Danish (Dansk)
@@ -689,9 +719,9 @@ Bist du mit dem Ergebnis nicht zufrieden?
 Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Coll-helppage}}|Hilfsseite über die Seitenkollektionen]].",
 	'coll-notfound_title' => 'Sammlung nicht gefunden',
 	'coll-notfound_text' => 'Deine Sammlung konnte nicht gefunden werden.',
-	'coll-is_cached' => '<p>Es ist eine zwischengespeicherte Version des Dokumentes vorhanden, so dass kein Rendern notwendig war. <a href="$1">Neurendern erzwingen.</a></p>',
-	'coll-excluded-templates' => 'Vorlagen aus der Kategorie [[:Category:$1|$1]] wurden ausgeschlossen.',
-	'coll-blacklisted-templates' => 'Vorlagen von der Schwarzen Liste [[:$1]] wurden ausgeschlossen.',
+	'coll-is_cached' => '<ul><li>Es ist eine zwischengespeicherte Version des Dokumentes vorhanden, so dass kein Rendern notwendig war. <a href="$1">Neurendern erzwingen.</a></li></ul>',
+	'coll-excluded-templates' => '* Vorlagen aus der Kategorie [[:Category:$1|$1]] wurden ausgeschlossen.',
+	'coll-blacklisted-templates' => '* Vorlagen von der Schwarzen Liste [[:$1]] wurden ausgeschlossen.',
 	'coll-return_to_collection' => 'Zurück zu <a href="$1">$2</a>',
 	'coll-book_title' => 'Druckausgabe bestellen',
 	'coll-book_text' => "Du kannst bei den folgenden ''Print-on-Demand''-Partnern eine gedruckte Buchausgabe bestellen:",
@@ -806,11 +836,60 @@ $messages['es'] = array(
 	'coll-yes' => 'Sí',
 );
 
+/** Persian (فارسی)
+ * @author Huji
+ * @author Komeil 4life
+ * @author Spacebirdy
+ */
+$messages['fa'] = array(
+	'coll-collection' => 'مجموعه',
+	'coll-collections' => 'مجموعه‌ها',
+	'coll-portlet_title' => 'ایجاد کتاب',
+	'coll-add_page' => 'افزودن این صفحه',
+	'coll-add_category' => 'اضافه کردن رده',
+	'coll-show_collection' => 'نمایش مجموعه',
+	'coll-help_collections' => 'راهنمای مجموعه‌ها',
+	'coll-noscript_text' => '<h1>جاوااسکریپت لازم دارید!</h1>
+<strong>مرورگر شما جاوا اسکریپت را پشتیبانی نمی‌کند یا جاوا اسکیریپت شما خاموش است.
+این صفحه به طور صحیح عمل نخواهد کرد، مگر اینکه جاوااسکیریپت فعال شود.</strong>',
+	'coll-helppage' => 'Help:مجموعه‌ها',
+	'coll-my_collection' => 'مجموعهٔ من',
+	'coll-download_title' => 'دریافت مجموعه',
+	'coll-download' => 'دریافت',
+	'coll-format_label' => 'قالب:',
+	'coll-remove' => 'حذف',
+	'coll-title' => 'عنوان:',
+	'coll-clear_collection' => 'پاک کردن مجموعه',
+	'coll-clear_confirm' => 'آیا واقعا می‌خواهید مجموعه خود را پاک کنید؟',
+	'coll-rename' => 'تغيير نام',
+	'coll-rename_chapter' => 'درج نام جدید برای این فصل',
+	'coll-save_collection_title' => 'ذخیرهٔ مجموعه',
+	'coll-save_collection' => 'ذخیرهٔ مجموعه',
+	'coll-yes' => 'بله',
+	'coll-no' => 'خیر',
+	'coll-append' => 'افزودن',
+	'coll-cancel' => 'لغو',
+);
+
 /** Finnish (Suomi)
  * @author Cimon Avaro
  * @author Crt
+ * @author Str4nd
  */
 $messages['fi'] = array(
+	'coll-collection' => 'Kokoelma',
+	'coll-collections' => 'Kokoelmat',
+	'coll-portlet_title' => 'Luo kirja',
+	'coll-add_page' => 'Lisää wikisivu',
+	'coll-remove_page' => 'Poista wikisivu',
+	'coll-add_category' => 'Lisää luokkaan',
+	'coll-load_collection' => 'Lataa kokoelma',
+	'coll-show_collection' => 'Näytä kokoelma',
+	'coll-help_collections' => 'Ohje kokoelmille',
+	'coll-empty' => 'tyhjä',
+	'coll-n_pages' => '$1 {{PLURAL:$1|sivu|sivua}}',
+	'coll-download_as' => 'Lataa $1-tiedostona',
+	'coll-helppage' => 'Help:Kokoelmat',
 	'coll-overwrite_title' => 'Sivu on olemassa. Ylikirjoitetaanko?',
 	'coll-yes' => 'Kyllä',
 	'coll-no' => 'Ei',
@@ -819,12 +898,13 @@ $messages['fi'] = array(
 /** French (Français)
  * @author Grondin
  * @author IAlex
+ * @author Korrigan
  * @author McDutchie
  * @author Meithal
  * @author Verdy p
  */
 $messages['fr'] = array(
-	'coll-desc' => "[[Special:Collection|Compiler des pages]], générer des pdf's",
+	'coll-desc' => '[[Special:Collection|Compiler des pages]], générer des PDF',
 	'coll-collection' => 'Compilation',
 	'coll-collections' => 'Compilations',
 	'coll-portlet_title' => 'Collection',
@@ -840,9 +920,9 @@ $messages['fr'] = array(
 	'coll-noscript_text' => "<h1>Javascript est nécessaire !</h1>
 <strong>Votre navigateur ne supporte pas Javascript ou bien l'a désactivé.
 Cette page ne s'affichera pas correctement tant que javascript n'est pas activé.</strong>",
-	'coll-intro_text' => "Vous pouvez collecter des pages, générer et télécharger des fichiers PDF depuis les collections de paéges ou des sauvegarde desdites collections pour un usage ultérieur ou pour les partager.
+	'coll-intro_text' => "Vous pouvez rassembler des pages pour former une collection ; générer et télécharger des fichiers PDF de ces collections, ou les sauvegarder pour les partager ou les télécharger plus tard.
 
-Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections]] pour d'avantage d'informations.",
+Voyez [[{{MediaWiki:Coll-helppage}}|la page d'aide sur les collections]] pour davantage d'informations.",
 	'coll-helppage' => 'Help:Collections',
 	'coll-too_big_cat' => 'La catégorie contient plus de %PARAM% pages, seul les %PARAM% premières pages seront ajoutées à votre collection.',
 	'coll-my_collection' => 'Ma compilation',
@@ -863,14 +943,14 @@ Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections
 	'coll-clear_collection' => 'Vider la compilation',
 	'coll-clear_confirm' => 'Voulez-vous vraiment vider votre compilation ?',
 	'coll-rename' => 'Renommer',
-	'coll-new_chapter' => 'Enter le titre du nouveau chapitre',
-	'coll-rename_chapter' => 'Enter nouveau titre pour le chapitre',
-	'coll-no_such_category' => 'Pas de telle catégorie',
+	'coll-new_chapter' => 'Entrer le titre du nouveau chapitre',
+	'coll-rename_chapter' => 'Entrer le nouveau titre de ce chapitre',
+	'coll-no_such_category' => 'Catégorie introuvable',
 	'coll-notitle_title' => 'Le titre de la page ne peut être déterminée.',
 	'coll-post_failed_title' => 'Échec de la requête POST',
 	'coll-post_failed_msg' => 'La requête POST vers $1 a échoué ($2).',
 	'coll-mwserve_failed_title' => 'Erreur du serveur du rendu',
-	'coll-mwserve_failed_msg' => 'Une erreur est intervenue sur le serveur donnant le rendu : <nowiki>$1</nowiki>',
+	'coll-mwserve_failed_msg' => 'Une erreur est survenue sur le serveur de rendu : <nowiki>$1</nowiki>',
 	'coll-enter_title' => 'Entrer un titre pour la compilation :',
 	'coll-error_reponse' => 'Le serveur a rencontré une erreur',
 	'coll-empty_collection' => 'Compilation vide',
@@ -881,7 +961,8 @@ Voyez [[{{MediaWiki:Coll-helppage}}|les pages d'aides en matière de collections
 	'coll-personal_collection_label' => 'Compilation personnelle :',
 	'coll-community_collection_label' => 'Compilation collective :',
 	'coll-save_collection' => 'Sauvegarder la compilation',
-	'coll-overwrite_title' => "La page existe. L'écraser ?",
+	'coll-save_category' => 'Les collections sont sauvegardées dans [[:Category:Collections]].',
+	'coll-overwrite_title' => "La page existe déjà. L'écraser ?",
 	'coll-overwrite_text' => 'Une page nommée [[:$1]] existe déjà.
 Voulez-vous la remplacer par votre compilation ?',
 	'coll-yes' => 'Oui',
@@ -910,14 +991,14 @@ Non satisfait de la sortie ?
 Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]] pour les possibilités de son amélioration.",
 	'coll-notfound_title' => 'Compilation non trouvée',
 	'coll-notfound_text' => 'Ne peut trouver la compilation.',
-	'coll-is_cached' => '<p>Une version en cache du document a été trouvée, aucun rendu n\'était ainsi nécessaire. <a href="$1">Forcer une nouvelle fois le rendu.</a></p>',
-	'coll-excluded-templates' => 'Des modèles dans la catégorie [[:Category:$1|$1]] ont été exclues.',
-	'coll-blacklisted-templates' => 'Des modèles dans la liste noire [[:$1]] ont été exclues.',
-	'coll-return_to_collection' => '<p>Revenir sur <a href="$1">$2</a></p>',
+	'coll-is_cached' => '<ul><li>Une version en cache du document a été trouvée, aucun rendu n\'était ainsi nécessaire. <a href="$1">Forcer une nouvelle fois le rendu.</a></li></ul>',
+	'coll-excluded-templates' => '* Certains modèles de la catégorie [[:Category:$1|$1]] ont été exclus.',
+	'coll-blacklisted-templates' => '* Certains modèles de la liste noire ([[:$1]]) ont été exclus.',
+	'coll-return_to_collection' => '<p>Revenir à la page <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Commander un livre imprimé',
 	'coll-book_text' => "Vous pouvez commander un livre imprimé contenant votre collection d'articles en visitant une demande d'impression de la part de partenaires :",
 	'coll-order_from_pp' => 'Commander le livre depuis $1',
-	'coll-about_pp' => 'Au sujet de $1',
+	'coll-about_pp' => 'À propos de $1',
 	'coll-invalid_podpartner_title' => 'Partenaire POD incorrect.',
 	'coll-invalid_podpartner_msg' => 'Le partenaire POD indiqué est incorrect.
 Veuillez contacter votre administrateur Mediawiki.',
@@ -995,7 +1076,7 @@ Quere engadilas?',
 	'coll-personal_collection_label' => 'Colección persoal:',
 	'coll-community_collection_label' => 'Colección da comunidade:',
 	'coll-save_collection' => 'Gardar a colección',
-	'coll-save_category' => 'As coleccións son gardadas na [[:Category:Collections|Categoría:Coleccións]].',
+	'coll-save_category' => 'As coleccións son gardadas na categoría [[:Category:Collections|Coleccións]].',
 	'coll-overwrite_title' => 'A páxina existe. Desexa sobreescribir?',
 	'coll-overwrite_text' => 'Xa existe unha páxina chamada [[:$1]].
 Quere reemprazala coa súa colección?',
@@ -1019,15 +1100,15 @@ Esta páxina refrescarase cada poucos segundos.
 Se non vai, por favor, prema no botón \"Refrescar\" do seu navegador.",
 	'coll-rendering_finished_title' => 'Finalizou a renderización',
 	'coll-rendering_finished_text' => "'''O documento foi xerado.'''
-'''[$1 Prema aquí]''' para descargalo no seu computador.
+'''[$1 Prema aquí]''' para descargalo no seu ordenador.
 
-Non está satisfaito co ficheiro de saída?
-Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para comprobar as posibilidades de melloralo.",
+Notas:
+*Non está satisfeito co ficheiro obtido? Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para comprobar as posibilidades de melloralo.",
 	'coll-notfound_title' => 'Non se pode atopar a colección',
 	'coll-notfound_text' => 'Non se pode atopar a páxina da colección.',
-	'coll-is_cached' => '<p>Atopouse unha versión do documento na memoria caché, polo que non vai ser necesaria a renderización. <a href="$1">Forzala.</a></p>',
-	'coll-excluded-templates' => 'O modelos da categoría "[[:Category:$1|$1]]" foron excluídos.',
-	'coll-blacklisted-templates' => 'O modelos da lista negra "[[:$1]]" foron excluídos.',
+	'coll-is_cached' => '<ul><li>Atopouse unha versión do documento na memoria caché, polo que non vai ser necesaria a renderización. <a href="$1">Forzala.</a></li></ul>',
+	'coll-excluded-templates' => '* O modelos que están na categoría "[[:Category:$1|$1]]" foron excluídos.',
+	'coll-blacklisted-templates' => '* O modelos da lista negra "[[:$1]]" foron excluídos.',
 	'coll-return_to_collection' => '<p>Voltar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Encargar un libro impreso',
 	'coll-book_text' => 'Pode encargar un libro impreso que conteña a súa páxina de colección visitando un dos seguintes compañeiros de solicitudes de impresión:',
@@ -1089,114 +1170,112 @@ $messages['haw'] = array(
 	'coll-about_pp' => 'E pili ana iā $1',
 );
 
-/**
- * Hebrew (עברית)
+/** Hebrew (עברית)
  * @author Rotem Liss
  */
 $messages['he'] = array(
-	'coll-desc'                       => '[[Special:Collection|איסוף דפים]], יצירת קובצי PDF',
-	'coll-collection'                 => 'אוסף',
-	'coll-collections'                => 'אוספים',
-	'coll-portlet_title'              => 'יצירת ספר',
-	'coll-add_page'                   => 'הוספת דף ויקי',
-	'coll-remove_page'                => 'הסרת דף ויקי',
-	'coll-add_category'               => 'הוספת קטגוריה',
-	'coll-load_collection'            => 'פתיחת אוסף',
-	'coll-show_collection'            => 'הצגת אוסף',
-	'coll-help_collections'           => 'עזרה לאוספים',
-	'coll-empty'                      => 'ריק',
-	'coll-n_pages'                    => '{{PLURAL:$1|דף אחד|$1 דפים}}',
-	'coll-download_as'                => 'הורדה בפורמט $1',
-	'coll-noscript_text'              => '<h1>JavaScript נדרש!</h1>
+	'coll-desc' => '[[Special:Collection|איסוף דפים]], יצירת קובצי PDF',
+	'coll-collection' => 'אוסף',
+	'coll-collections' => 'אוספים',
+	'coll-portlet_title' => 'יצירת ספר',
+	'coll-add_page' => 'הוספת דף ויקי',
+	'coll-remove_page' => 'הסרת דף ויקי',
+	'coll-add_category' => 'הוספת קטגוריה',
+	'coll-load_collection' => 'פתיחת אוסף',
+	'coll-show_collection' => 'הצגת אוסף',
+	'coll-help_collections' => 'עזרה לאוספים',
+	'coll-empty' => 'ריק',
+	'coll-n_pages' => '{{PLURAL:$1|דף אחד|$1 דפים}}',
+	'coll-download_as' => 'הורדה בפורמט $1',
+	'coll-noscript_text' => '<h1>JavaScript נדרש!</h1>
 <strong>הדפדפן שלכם אינו תומך ב־JavaScript או שביטלתם את JavaScript בדפדפן זה.
 דף זה לא יעבוד כדרוש, אלא אם כן JavaScript יופעל.</strong>',
-	'coll-intro_text'                 => "באפשרותכם לאסוף דפים, ליצור להוריד קובץ PDF מאוספי דפים, ולשמור אוספי דפים כדי להשתמש בהם מאוחר יותר או כדי לשתף אותם עם משתמשים אחרים.
+	'coll-intro_text' => 'באפשרותכם לאסוף דפים, ליצור להוריד קובץ PDF מאוספי דפים, ולשמור אוספי דפים כדי להשתמש בהם מאוחר יותר או כדי לשתף אותם עם משתמשים אחרים.
 
-ראו את [[{{MediaWiki:Coll-helppage}}|דף העזרה על אוספים]] למידע נוסף.",
-	'coll-helppage'                   => 'Help:אוספים',
-	'coll-too_big_cat'                => 'קטגוריה זו כוללת יותר מ־%PARAM% דפים, רק %PARAM% הדפים הראשונים ייתווספו לאוסף.
+ראו את [[{{MediaWiki:Coll-helppage}}|דף העזרה על אוספים]] למידע נוסף.',
+	'coll-helppage' => 'Help:אוספים',
+	'coll-too_big_cat' => 'קטגוריה זו כוללת יותר מ־%PARAM% דפים, רק %PARAM% הדפים הראשונים ייתווספו לאוסף.
 האם ברצונכם להוסיף אותם?',
-	'coll-my_collection'              => 'האוסף שלי',
-	'coll-download_title'             => 'הורדת האוסף',
-	'coll-download_text'              => 'כדי להוריד מסמך שנוצר אוטומטית של אוסף הדפים שלכם, אנא בחרו פורמט ולחצו על הכפתור.',
-	'coll-download'                   => 'הורדה',
-	'coll-format_label'               => 'פורמט:',
-	'coll-remove'                     => 'הסרה',
-	'coll-move_to_top'                => 'העברה לראש',
-	'coll-move_up'                    => 'העברה למעלה',
-	'coll-move_down'                  => 'העברה למטה',
-	'coll-move_to_bottom'             => 'העברה לתחתית',
-	'coll-title'                      => 'כותרת:',
-	'coll-subtitle'                   => 'כותרת משנה:',
-	'coll-contents'                   => 'תכנים',
-	'coll-create_chapter'             => 'יצירת פרק חדש',
-	'coll-sort_alphabetically'        => 'מיון דפים בסדר אפלביתי',
-	'coll-clear_collection'           => 'ניקוי האוסף',
-	'coll-clear_confirm'              => 'האם אתם בטוחים שברצונכם לנקות את אוסף הדפים שלכם?',
-	'coll-rename'                     => 'שינוי שם',
-	'coll-new_chapter'                => 'הקלידו שם לפרק החדש',
-	'coll-rename_chapter'             => 'הקלידו שם חדש לפרק',
-	'coll-no_such_category'           => 'אין קטגוריה כזו',
-	'coll-notitle_title'              => 'לא ניתן לבדוק את כותרת הדף',
-	'coll-notitle_title'              => 'לא ניתן היה לבדוק מהי כותרת הדף.',
-	'coll-post_failed_title'          => 'בקשת ה־POST נכשלה',
-	'coll-post_failed_msg'            => 'בקשת ה־POST ל־$1 נכשלה ($2).',
-	'coll-mwserve_failed_title'       => 'שגיאה בשרת היצירה',
-	'coll-mwserve_failed_msg'         => 'אירעה שגיאה בשרת יצירת המסמכים: <nowiki>$1</nowiki>',
-	'coll-enter_title'                => 'הקלידו כותרת לאוסף:',
-	'coll-error_reponse'              => 'שגיאה בשרת',
-	'coll-empty_collection'           => 'אוסף ריק',
-	'coll-revision'                   => 'גרסה: %PARAM%',
-	'coll-save_collection_title'      => 'שמירת האוסף',
-	'coll-save_collection_text'       => 'כדי לשמור את האוסף הזה לשימוש מאוחר יותר, אנא בחרו סוג אוסף והקלידו כותרת של דף:',
-	'coll-login_to_save'              => 'אם ברצונכם לשמור אוספים לשימוש מאוחר יותר, אנא [[Special:UserLogin|היכנסו לחשבון או צרו אחד]].',
-	'coll-personal_collection_label'  => 'אוסף פרטי:',
+	'coll-my_collection' => 'האוסף שלי',
+	'coll-download_title' => 'הורדת האוסף',
+	'coll-download_text' => 'כדי להוריד מסמך שנוצר אוטומטית של אוסף הדפים שלכם, אנא בחרו פורמט ולחצו על הכפתור.',
+	'coll-download' => 'הורדה',
+	'coll-format_label' => 'פורמט:',
+	'coll-remove' => 'הסרה',
+	'coll-move_to_top' => 'העברה לראש',
+	'coll-move_up' => 'העברה למעלה',
+	'coll-move_down' => 'העברה למטה',
+	'coll-move_to_bottom' => 'העברה לתחתית',
+	'coll-title' => 'כותרת:',
+	'coll-subtitle' => 'כותרת משנה:',
+	'coll-contents' => 'תכנים',
+	'coll-create_chapter' => 'יצירת פרק חדש',
+	'coll-sort_alphabetically' => 'מיון דפים בסדר אפלביתי',
+	'coll-clear_collection' => 'ניקוי האוסף',
+	'coll-clear_confirm' => 'האם אתם בטוחים שברצונכם לנקות את אוסף הדפים שלכם?',
+	'coll-rename' => 'שינוי שם',
+	'coll-new_chapter' => 'הקלידו שם לפרק החדש',
+	'coll-rename_chapter' => 'הקלידו שם חדש לפרק',
+	'coll-no_such_category' => 'אין קטגוריה כזו',
+	'coll-notitle_title' => 'לא ניתן היה לבדוק מהי כותרת הדף.',
+	'coll-post_failed_title' => 'בקשת ה־POST נכשלה',
+	'coll-post_failed_msg' => 'בקשת ה־POST ל־$1 נכשלה ($2).',
+	'coll-mwserve_failed_title' => 'שגיאה בשרת היצירה',
+	'coll-mwserve_failed_msg' => 'אירעה שגיאה בשרת יצירת המסמכים: <nowiki>$1</nowiki>',
+	'coll-enter_title' => 'הקלידו כותרת לאוסף:',
+	'coll-error_reponse' => 'שגיאה בשרת',
+	'coll-empty_collection' => 'אוסף ריק',
+	'coll-revision' => 'גרסה: %PARAM%',
+	'coll-save_collection_title' => 'שמירת האוסף',
+	'coll-save_collection_text' => 'כדי לשמור את האוסף הזה לשימוש מאוחר יותר, אנא בחרו סוג אוסף והקלידו כותרת של דף:',
+	'coll-login_to_save' => 'אם ברצונכם לשמור אוספים לשימוש מאוחר יותר, אנא [[Special:UserLogin|היכנסו לחשבון או צרו אחד]].',
+	'coll-personal_collection_label' => 'אוסף פרטי:',
 	'coll-community_collection_label' => 'אוסף קהילתי:',
-	'coll-save_collection'            => 'שמירת האוסף',
-	'coll-save_category'              => 'אוספים נשמרים בקטגוריה [[:Category:אוספים|אוספים]].',
-	'coll-overwrite_title'            => 'הדף כבר קיים.
+	'coll-save_collection' => 'שמירת האוסף',
+	'coll-save_category' => 'אוספים נשמרים בקטגוריה [[:Category:אוספים|אוספים]].',
+	'coll-overwrite_title' => 'הדף כבר קיים.
 האם לדרוס אותו?',
-	'coll-overwrite_text'             => 'דף בשם [[:$1]] כבר קיים.
+	'coll-overwrite_text' => 'דף בשם [[:$1]] כבר קיים.
 האם ברצונכם להחליף אותו עם האוסף שלכם?',
-	'coll-yes'                        => 'כן',
-	'coll-no'                         => 'לא',
-	'coll-disable_collection_text'    => '<a href="$1">לחצו כאן</a> כדי להפסיק להשתמש באוספים לבינתיים.',
-	'coll-load_overwrite_text'        => 'כבר יש לכם מספר דפים באוסף שלכם.
+	'coll-yes' => 'כן',
+	'coll-no' => 'לא',
+	'coll-disable_collection_text' => '<a href="$1">לחצו כאן</a> כדי להפסיק להשתמש באוספים לבינתיים.',
+	'coll-load_overwrite_text' => 'כבר יש לכם מספר דפים באוסף שלכם.
 האם ברצונכם לדרוס את האוסף הנוכחי שלכם, להוסיף את התוכן החדש או לבטל את פתיחת האוסף הזה?',
-	'coll-overwrite'                  => 'דריסה',
-	'coll-append'                     => 'הוספת התוכן',
-	'coll-cancel'                     => 'ביטול',
-	'coll-limit_exceeded_title'       => 'האוסף גדול מדי',
-	'coll-limit_exceeded_text'        => 'אוסף הדפים שלכם גדול מדי.
+	'coll-overwrite' => 'דריסה',
+	'coll-append' => 'הוספת התוכן',
+	'coll-cancel' => 'ביטול',
+	'coll-limit_exceeded_title' => 'האוסף גדול מדי',
+	'coll-limit_exceeded_text' => 'אוסף הדפים שלכם גדול מדי.
 לא ניתן להוסיף דפים נוספים.',
-	'coll-rendering_title'            => 'ביצירה',
-	'coll-rendering_text'             => "'''אנא המתינו בעת יצירת המסמך.'''
+	'coll-rendering_title' => 'ביצירה',
+	'coll-rendering_text' => "'''אנא המתינו בעת יצירת המסמך.'''
 
 התקדמות התהליך: '''$1%'''.
 
 הדפדפן אמור לבצע ריענון אוטומטי לדף זה כל מספר שניות.
 אם זה לא עובד, אנא לחצו על כפתור הריענון בדפדפן שלכם.",
-	'coll-rendering_finished_title'   => 'היצירה הסתיימה',
-	'coll-rendering_finished_text'    => "'''קובץ המסמך נוצר.'''
+	'coll-rendering_finished_title' => 'היצירה הסתיימה',
+	'coll-rendering_finished_text' => "'''קובץ המסמך נוצר.'''
 '''[$1 לחצו כאן]''' כדי להוריד אותו למחשב.
 
 הערות:
 * אינכם מרוצים מהפלט? ב[[{{MediaWiki:Coll-helppage}}|דף העזרה על אוספים]] תוכלו למצוא אפשרויות לשיפורו.",
-	'coll-notfound_title'             => 'האוסף לא נמצא',
-	'coll-notfound_text'              => 'לא ניתן למצוא את דף האוסף.',
-	'coll-is_cached'                  => '<ul><li>גרסה שמורה של המסמך נמצאה, כך שאין צורך ביצירתו. <a href="$1">יצירה מחדש.</a></li></ul>',
-	'coll-excluded-templates'         => '* תבניות בקטגוריה [[:Category:$1|$1]] אינן כלולות.',
-	'coll-blacklisted-templates'      => '* תבניות ברשימה השחורה [[:$1]] אינן כלולות.',
-	'coll-return_to_collection'       => '<p>חזרה ל<a href="$1">$2</a></p>',
-	'coll-book_title'                 => 'הזמנת ספר מודפס',
-	'coll-book_text'                  => 'באפשרותכם להזמין ספר מודפס הכולל את אוסף הדפים שלכם באמצעות ביקור באחד משירותי ההדפסה לפי דרישה:',
-	'coll-order_from_pp'              => 'הזמנת ספר מ־$1',
-	'coll-about_pp'                   => 'אודות $1',
-	'coll-invalid_podpartner_title'   => 'שירות שגוי',
-	'coll-invalid_podpartner_msg'     => 'שירות ההדפסה לפי דרישה שהוזן שגוי.
+	'coll-notfound_title' => 'האוסף לא נמצא',
+	'coll-notfound_text' => 'לא ניתן למצוא את דף האוסף.',
+	'coll-is_cached' => '<ul><li>גרסה שמורה של המסמך נמצאה, כך שאין צורך ביצירתו. <a href="$1">יצירה מחדש.</a></li></ul>',
+	'coll-excluded-templates' => '* תבניות בקטגוריה [[:Category:$1|$1]] אינן כלולות.',
+	'coll-blacklisted-templates' => '* תבניות ברשימה השחורה [[:$1]] אינן כלולות.',
+	'coll-return_to_collection' => '<p>חזרה ל<a href="$1">$2</a></p>',
+	'coll-book_title' => 'הזמנת ספר מודפס',
+	'coll-book_text' => 'באפשרותכם להזמין ספר מודפס הכולל את אוסף הדפים שלכם באמצעות ביקור באחד משירותי ההדפסה לפי דרישה:',
+	'coll-order_from_pp' => 'הזמנת ספר מ־$1',
+	'coll-about_pp' => 'אודות $1',
+	'coll-invalid_podpartner_title' => 'שירות שגוי',
+	'coll-invalid_podpartner_msg' => 'שירות ההדפסה לפי דרישה שהוזן שגוי.
 אנא צרו קשר עם מנהל של מדיה־ויקי.',
-	'coll-license'                    => 'רישיון',
-	'coll-return_to'                  => "חזרה ל[[:$1]]",
+	'coll-license' => 'רישיון',
+	'coll-return_to' => 'חזרה ל[[:$1]]',
 );
 
 /** Hindi (हिन्दी)
@@ -1439,9 +1518,9 @@ Non satisfacite con le resultato?
 Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le collectiones]] pro possibilitates de meliorar lo.",
 	'coll-notfound_title' => 'Collection non trovate',
 	'coll-notfound_text' => 'Non poteva trovar le pagina de collection.',
-	'coll-is_cached' => '<p>Un version del documento ha essite trovate in le cache, ergo non esseva necessari facer un altere rendition. <a href="$1">Fortiar le re-rendition.</a></p>',
-	'coll-excluded-templates' => 'Le patronos in le categoria [[:Category:$1|$1]] ha essite excludite.',
-	'coll-blacklisted-templates' => 'Le patronos in le lista nigre [[:$1]] ha essite excludite.',
+	'coll-is_cached' => '<ul><li>Un version del documento ha essite trovate in le cache, ergo non esseva necessari facer un altere rendition. <a href="$1">Fortiar le re-rendition.</a></li></ul>',
+	'coll-excluded-templates' => '* Le patronos in le categoria [[:Category:$1|$1]] ha essite excludite.',
+	'coll-blacklisted-templates' => '* Le patronos in le lista nigre [[:$1]] ha essite excludite.',
 	'coll-return_to_collection' => '<p>Retornar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Commandar libro imprimite',
 	'coll-book_text' => 'Tu pote commandar un libro imprimite con tu collection de paginas per visitar un del sequente partenarios de impression a requesta (print on demand):',
@@ -1507,9 +1586,9 @@ $messages['it'] = array(
 	'coll-desc' => '[[Special:Collection|Raccoglie pagine]], genera PDF',
 	'coll-collection' => 'Raccolta',
 	'coll-collections' => 'Raccolte',
-	'coll-portlet_title' => 'Raccolta',
-	'coll-add_page' => 'Aggiungi pagina',
-	'coll-remove_page' => 'Rimuovi pagina',
+	'coll-portlet_title' => 'Crea un libro',
+	'coll-add_page' => 'Aggiungi pagina wiki',
+	'coll-remove_page' => 'Rimuovi pagina wiki',
 	'coll-add_category' => 'Aggiungi categoria',
 	'coll-load_collection' => 'Carica raccolta',
 	'coll-show_collection' => 'Mostra raccolta',
@@ -1562,6 +1641,7 @@ Vuoi aggiungerle?',
 	'coll-personal_collection_label' => 'Raccolta personale:',
 	'coll-community_collection_label' => 'Raccolta della comunità:',
 	'coll-save_collection' => 'Salva raccolta',
+	'coll-save_category' => 'Le raccolte sono salvate nella [[:Category:Collections]].',
 	'coll-overwrite_title' => 'La pagina esiste.
 Sovrascriverla?',
 	'coll-overwrite_text' => 'Una pagina con il nome [[:$1]] esiste già?
@@ -1591,9 +1671,9 @@ Non sei soddisfatto del risultato?
 Leggi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sulle raccolte]] riguardo alle possibilità per migliorarlo.",
 	'coll-notfound_title' => 'Raccolta non trovata',
 	'coll-notfound_text' => 'Non è possibile trovare la pagina della raccolta.',
-	'coll-is_cached' => '<p>Una versione del documento è stato trovato nella cache quindi la conversione non è stata necessaria. <a href="$1">Forza la ri-conversione.</a></p>',
-	'coll-excluded-templates' => 'I template nella categoria [[:Category:$1|$1]] sono stati esclusi.',
-	'coll-blacklisted-templates' => 'I template nella blacklist [[:$1]] sono stai esclusi.',
+	'coll-is_cached' => '<ul><li>Una versione del documento è stato trovato nella cache quindi la conversione non è stata necessaria. <a href="$1">Forza la ri-conversione.</a></li></ul>',
+	'coll-excluded-templates' => '* I template nella categoria [[:Category:$1|$1]] sono stati esclusi.',
+	'coll-blacklisted-templates' => '* I template nella blacklist [[:$1]] sono stai esclusi.',
 	'coll-return_to_collection' => '<p>Torna a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ordina libro stampato',
 	'coll-book_text' => 'Puoi ordinare un libro stampato contenente la tua raccolta visitando uno dei seguenti partner di stampa su richiesta (print-on-demand):',
@@ -1744,8 +1824,8 @@ $messages['km'] = array(
 	'coll-collection' => 'កំរងឯកសារ',
 	'coll-collections' => 'កំរងឯកសារនានា',
 	'coll-portlet_title' => 'កំរងឯកសារ',
-	'coll-add_page' => 'បន្ថែមទំព័រ',
-	'coll-remove_page' => 'ដកទំព័រចេញ',
+	'coll-add_page' => 'បន្ថែមទំព័រវិគី',
+	'coll-remove_page' => 'ដកទំព័រវិគីចេញ',
 	'coll-add_category' => 'បន្ថែមចំនាត់ថ្នាក់ក្រុម',
 	'coll-load_collection' => 'ផ្ទុកកំរងឯកសារ',
 	'coll-show_collection' => 'បង្ហាញកំរងឯកសារ',
@@ -1890,7 +1970,7 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-limit_exceeded_text' => 'Är Sammlung ass ze grouss.
 Et kënne keng Säite méi derbäigesat ginn.',
 	'coll-notfound_title' => 'Sammlung net fonnt',
-	'coll-excluded-templates' => 'Schablounen aus der Kategorie [[:Category:$1|$1]] goufen ausgeschloss',
+	'coll-excluded-templates' => '* Schablounen aus der Kategorie [[:Category:$1|$1]] goufen ausgeschloss',
 	'coll-return_to_collection' => '<p>Zréck op <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Gedréckte Buch bestellen',
 	'coll-book_text' => 'Dir kënnt e Buch bestellen op enge vun dësen Internetsiten:',
@@ -2063,6 +2143,27 @@ $messages['mr'] = array(
 कृपया मीडियाविकि प्रबंधकाशी संपर्क करा.',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Aviator
+ */
+$messages['ms'] = array(
+	'coll-desc' => '[[Special:Collection|Mengumpul laman]] dan menjana PDF',
+	'coll-collection' => 'Koleksi',
+	'coll-collections' => 'Koleksi',
+	'coll-portlet_title' => 'Cipta buku',
+	'coll-add_page' => 'Tambah laman wiki',
+	'coll-remove_page' => 'Buang laman wiki',
+	'coll-add_category' => 'Tambah kategori',
+	'coll-load_collection' => 'Muat koleksi',
+	'coll-show_collection' => 'Papar koleksi',
+	'coll-help_collections' => 'Bantuan koleksi',
+	'coll-empty' => 'kosong',
+	'coll-n_pages' => '$1 laman',
+	'coll-download_as' => 'Muat turun $1',
+	'coll-noscript_text' => '<h1>JavaScript diperlukan!</h1>
+<strong>JavaScript tidak disokong oleh pelayan anda atau telah dilumpuhkan. Laman ini tidak dapat berfungsi sekiranya ciri JavaScript tidak diaktifkan.</strong>',
+);
+
 /** Maltese (Malti)
  * @author Roderick Mallia
  */
@@ -2213,14 +2314,14 @@ Als dit niet werkt, klik dan op de knop \"Vernieuwen\" in uw browser.",
 	'coll-rendering_finished_text' => "'''Het document is aangemaakt.'''
 '''[$1 Klik hier]''' om het te downloaden.
 
-Niet tevreden met de uitvoer?
-Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om deze te verbeteren.",
+Opmerkingen:
+* Niet tevreden met de uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om deze te verbeteren.",
 	'coll-notfound_title' => 'Collectie niet gevonden',
 	'coll-notfound_text' => 'De collectiepagina is niet gevonden.',
-	'coll-is_cached' => '<p>Er is een versie van het document beschikbaar in de cache, dus opnieuw renderen was niet nodig.
-<a href="$1">Opnieuw renderen.</a></p>',
-	'coll-excluded-templates' => 'Sjablonen in de category [[:Category:$1|$1]] worden genegeerd.',
-	'coll-blacklisted-templates' => 'Sjablonen op de zwarte lijst [[:$1]] worden genegeerd.',
+	'coll-is_cached' => '<ul><li>Er is een versie van het document beschikbaar in de cache, dus opnieuw renderen was niet nodig.
+<a href="$1">Opnieuw renderen.</a></li></ul>',
+	'coll-excluded-templates' => '* Sjablonen in de category [[:Category:$1|$1]] worden genegeerd.',
+	'coll-blacklisted-templates' => '* Sjablonen op de zwarte lijst [[:$1]] worden genegeerd.',
 	'coll-return_to_collection' => '<p>Teruggaan naar <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Gedrukt boek bestellen',
 	'coll-book_text' => 'U kunt een gedrukt boek bestellen dat uw paginacollectie bevat door een van de volgende print-on-demand-partners te bezoeken:',
@@ -2331,8 +2432,8 @@ Misfornøyd med resultatet?
 Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden for samlinger]] for måter å forbedre den på.",
 	'coll-notfound_title' => 'Samling ikke funnet',
 	'coll-notfound_text' => 'Kunne ikke finne samlingsside.',
-	'coll-excluded-templates' => 'Maler i kategorien [[:Category:$1|$1]] har blitt utelatt.',
-	'coll-blacklisted-templates' => 'Maler på svartelisten ([[:$1]]) har blitt utelatt.',
+	'coll-excluded-templates' => '* Maler i kategorien [[:Category:$1|$1]] har blitt utelatt.',
+	'coll-blacklisted-templates' => '* Maler på svartelisten ([[:$1]]) har blitt utelatt.',
 	'coll-return_to_collection' => '<p>Tilbake til <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Bestilling av trykt bok',
 	'coll-book_text' => 'Du kan bestille en trykt bok med artikkelsamlingen din ved å besøke en av følgende trykkerpartnere:',
@@ -2435,9 +2536,9 @@ Pas satisfach(a) de la sortida ?
 Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las colleccions]] per las possibilitats de melhorament.",
 	'coll-notfound_title' => 'Compilacion pas trobada',
 	'coll-notfound_text' => 'Pòt pas trobar la compilacion.',
-	'coll-is_cached' => '<p>Una version en amagatal del document es estada trobada, cap de rendut èra pas necessari. <a href="$1">Forçar lo rendut un còp de mai.</a></p>',
-	'coll-excluded-templates' => 'De modèls dins la categoria [[:Category:$1|$1]] son estats excluts.',
-	'coll-blacklisted-templates' => 'De modèls dins la tièra negra [[:$1]] son estats excluts.',
+	'coll-is_cached' => '<ul><li>Una version en amagatal del document es estada trobada, cap de rendut èra pas necessari. <a href="$1">Forçar lo rendut un còp de mai.</a></li></ul>',
+	'coll-excluded-templates' => '* De modèls dins la categoria [[:Category:$1|$1]] son estats excluts.',
+	'coll-blacklisted-templates' => '* De modèls dins la tièra negra [[:$1]] son estats excluts.',
 	'coll-return_to_collection' => '<p>Tornar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Comandar un libre imprimit',
 	'coll-book_text' => "Podètz comandar un libre imprimit contenent vòstra colleccion d'articles en visitant una demanda d'impression de la part de partenaris :",
@@ -2601,8 +2702,8 @@ Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para m
 	'coll-too_big_cat' => 'A categoria possui mais de %PARAM% páginas. Apenas as primeiras %PARAM% páginas poderão ser adicionadas em sua colecção.
 Deseja adicioná-las?',
 	'coll-my_collection' => 'Minha Colecção',
-	'coll-download_title' => 'Descarregar Colecção como PDF',
-	'coll-download_text' => 'Para descarregar um ficheiro PDF da sua colecção de páginas gerado automaticamente, carregue no botão.',
+	'coll-download_title' => 'Descarregar Colecção',
+	'coll-download_text' => 'Para descarregar um ficheiro automaticamente gerado a partir da sua colecção de páginas, escolha um formato e carregue no botão.',
 	'coll-download' => 'Descarregar',
 	'coll-format_label' => 'Formato:',
 	'coll-remove' => 'Remover',
@@ -2659,16 +2760,16 @@ Progresso: '''$1%'''.
 Este página deverá refrescar automaticamente após alguns segundos.
 Se isto não funcionar, por favor utilize o botão de refrescamento do seu navegador.",
 	'coll-rendering_finished_title' => 'Renderização concluída',
-	'coll-rendering_finished_text' => "'''O ficheiro PDF foi gerado.'''
+	'coll-rendering_finished_text' => "'''O ficheiro foi gerado.'''
 '''[$1 Clique aqui]''' para transferir a seu computador.
 
 Não está satisfeito com o resultado?
 Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para possibilidades de aprimoramentos.",
 	'coll-notfound_title' => 'Colecção Não Encontrada',
 	'coll-notfound_text' => 'Não foi possível encontrar a página da colecção.',
-	'coll-is_cached' => '<p>Foi encontrada uma versão deste documento em cache, dispensando a renderização. <a href="$1"> Forçar nova renderização.</a></p>',
-	'coll-excluded-templates' => 'Prédefinições na categoria [[:Category:$1|$1]] foram excluídas.',
-	'coll-blacklisted-templates' => 'Prédefinições na lista negra [[:$1]] foram excluídas.',
+	'coll-is_cached' => '<ul><li>Foi encontrada uma versão deste documento em cache, dispensando a renderização. <a href="$1"> Forçar nova renderização.</a></li></ul>',
+	'coll-excluded-templates' => '* Prédefinições na categoria [[:Category:$1|$1]] foram excluídas.',
+	'coll-blacklisted-templates' => '* Prédefinições na lista negra [[:$1]] foram excluídas.',
 	'coll-return_to_collection' => '<p>Regressar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Encomendar Livro Impresso',
 	'coll-book_text' => 'Você pode encomendar um livro impresso contendo a sua colecção de páginas visitando um dos seguintes parceiros de impressão a pedido:',
@@ -2916,9 +3017,9 @@ Nie ste spokojný s výstupom?
 Spôsoby možnej nápravy nájdete na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].",
 	'coll-notfound_title' => 'Kolekcia nenájdená',
 	'coll-notfound_text' => 'Nebolo možné nájsť stránku kolekcie',
-	'coll-is_cached' => '<p>Bola nájdená verzia dokumentu vo vyrovnávacej pamäti, takže vykresľovanie nebolo potrebné. <a href="$1">Vynútiť opätovné vykreslenie.</a></p>',
-	'coll-excluded-templates' => 'Boli vynechané šablóny v kategórii [[:Category:$1|$1]].',
-	'coll-blacklisted-templates' => 'Boli vynechané šablóny na čiernej listine [[:$1]].',
+	'coll-is_cached' => '<ul><li>Bola nájdená verzia dokumentu vo vyrovnávacej pamäti, takže vykresľovanie nebolo potrebné. <a href="$1">Vynútiť opätovné vykreslenie.</a></li></ul>',
+	'coll-excluded-templates' => '* Boli vynechané šablóny v kategórii [[:Category:$1|$1]].',
+	'coll-blacklisted-templates' => '* Boli vynechané šablóny na čiernej listine [[:$1]].',
 	'coll-return_to_collection' => '<p>Vrátiť sa na <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Objednať tlačenú knihu',
 	'coll-book_text' => 'Môžete si objednať tlačenú knihu obsahujúcu vašu zbierku článkov. Navštívte jedného z nasledovných partnerov, ktorí tobia tlač na vyžiadanie:',
@@ -3031,9 +3132,9 @@ Bäst du nit mäd dät Resultoat toufree?
 Muugelkhaide tou ju Ferbeeterenge fon ju Uutgoawe finst du ap ju [[{{MediaWiki:Coll-helppage}}|Hälpesiede uur do Siedenkollektione]].",
 	'coll-notfound_title' => 'Kollektion nit fuunen',
 	'coll-notfound_text' => 'Dien Kollektion kuud nit fuunen wäide.',
-	'coll-is_cached' => '<p>Der is ne twiskespiekerde Version fon dät Dokument foarhounden, so dät neen Renderjen nöödich waas. <a href="$1">Näiränderjen outwinge.</a></p>',
-	'coll-excluded-templates' => 'Foarloagen uut ju Kategorie [[:Category:$1|$1]] wuuden uutsleeten.',
-	'coll-blacklisted-templates' => 'Foarloagen fon ju swotte Lieste [[:$1]] wuuden uutsleeten.',
+	'coll-is_cached' => '<ul><li>Der is ne twiskespiekerde Version fon dät Dokument foarhounden, so dät neen Renderjen nöödich waas. <a href="$1">Näiränderjen outwinge.</a></li></ul>',
+	'coll-excluded-templates' => '* Foarloagen uut ju Kategorie [[:Category:$1|$1]] wuuden uutsleeten.',
+	'coll-blacklisted-templates' => '* Foarloagen fon ju swotte Lieste [[:$1]] wuuden uutsleeten.',
 	'coll-return_to_collection' => 'Tourääch tou <a href="$1">$2</a>',
 	'coll-book_title' => 'Drukuutgoawe bestaale',
 	'coll-book_text' => "Du koast bie do foulgjende ''Print-on-Demand''-Partnere ne drukte Boukuutgoawe bestaale:",
@@ -3166,9 +3267,9 @@ Inte nöjd med resultatet?
 Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra den.",
 	'coll-notfound_title' => 'Samling inte funnen',
 	'coll-notfound_text' => 'Kan inte hitta samlings sida',
-	'coll-is_cached' => '<p>En cachad version av dokumentet har hittats, så ingen renderng behövdes. <a href="$1">Forcera omrendering.</a></p>',
-	'coll-excluded-templates' => 'Mallar i kategorin [[:Category:$1|$1]] har uteslutits.',
-	'coll-blacklisted-templates' => 'Mallar på svartalistan [[:$1]] har uteslutits.',
+	'coll-is_cached' => '<ul><li>En cachad version av dokumentet har hittats, så ingen renderng behövdes. <a href="$1">Forcera omrendering.</a></li></ul>',
+	'coll-excluded-templates' => '* Mallar i kategorin [[:Category:$1|$1]] har uteslutits.',
+	'coll-blacklisted-templates' => '* Mallar på svartalistan [[:$1]] har uteslutits.',
 	'coll-return_to_collection' => '<p>Tillbaka till <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Beställ utskriven bok',
 	'coll-book_text' => 'Du kan beställa en tryckt bok som rymmer din artikelsamling genom att besöka en av de samarbetspartners som utför behovstryckning:',
@@ -3439,6 +3540,8 @@ $messages['vi'] = array(
 	'coll-show_collection' => 'Xem tập hợp',
 	'coll-help_collections' => 'Trợ giúp tập hợp',
 	'coll-empty' => 'trống',
+	'coll-n_pages' => '$1 trang',
+	'coll-download_as' => 'Tải về dưới dạng $1',
 	'coll-noscript_text' => '<h1>Yêu cầu phải có JavaScript!</h1>
 <strong>Trình duyệt của bạn không hỗ trợ JavaScript hoặc JavaScript đã bị tắt.
 Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaScript.</strong>',
@@ -3446,9 +3549,13 @@ Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaS
 
 Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] để biết thêm thông tin.',
 	'coll-helppage' => 'Help:Tập hợp',
+	'coll-too_big_cat' => 'Thể loại chứa hơn %PARAM% trang. Chỉ thêm %PARAM% trang đầu tiên vào tập hợp được.
+Bạn có muốn thêm nó không?',
 	'coll-my_collection' => 'Tập hợp của tôi',
 	'coll-download_title' => 'Tải tập hợp về dưới dạng PDF',
 	'coll-download_text' => 'Để tải về một tập tin PDF được tự động tạo ra từ tập hợp trang của bạn, hãy nhấn nút.',
+	'coll-download' => 'Tải về',
+	'coll-format_label' => 'Định dạng:',
 	'coll-remove' => 'Dời',
 	'coll-move_to_top' => 'Di chuyển lên đầu',
 	'coll-move_up' => 'Chuyển lên',
@@ -3468,6 +3575,8 @@ Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] đ�
 	'coll-notitle_title' => 'Không xác định được tựa đề của trang.',
 	'coll-post_failed_title' => 'Yêu cầu POST thất bại',
 	'coll-post_failed_msg' => 'Yêu cầu POST đến $1 thất bại ($2).',
+	'coll-mwserve_failed_title' => 'Lỗi chương trình kết xuất',
+	'coll-mwserve_failed_msg' => 'Chương trình kết xuất gặp lỗi: <nowiki>$1</nowiki>',
 	'coll-enter_title' => 'Gõ vào tựa đề của tập hợp:',
 	'coll-error_reponse' => 'Máy chủ trả về lỗi',
 	'coll-empty_collection' => 'Tập hợp trống',
@@ -3478,21 +3587,39 @@ Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] đ�
 	'coll-personal_collection_label' => 'Tập hợp cá nhân:',
 	'coll-community_collection_label' => 'Tập hợp cộng đồng:',
 	'coll-save_collection' => 'Lưu tập hợp',
+	'coll-save_category' => 'Các tập hợp được xếp trong thể loại [[:Category:Collections|Collections]].',
 	'coll-overwrite_title' => 'Trang đã tồn tại. Ghi đè?',
 	'coll-overwrite_text' => 'Trang với tên [[:$1]] đã tồn tại.
 Bạn có muốn thay thế nó bằng tập hợp của bạn?',
 	'coll-yes' => 'Có',
 	'coll-no' => 'Không',
+	'coll-disable_collection_text' => '<a href="$1">Tạm ngừng</a> sử dụng các tập hợp.',
 	'coll-load_overwrite_text' => 'Bạn đã có một số trang trong tập hợp của mình.
-Bạn có muốn ghi đè tập hợp hiện tại, thêm nội dung mới hay hủy bỏ?',
+Bạn có muốn ghi đè tập hợp hiện tại, thêm nội dung mới, hay hủy việc tải tập hợp này?',
 	'coll-overwrite' => 'Ghi đè',
 	'coll-append' => 'Thêm vào',
 	'coll-cancel' => 'Bãi bỏ',
 	'coll-limit_exceeded_title' => 'Tập hợp quá lớn',
 	'coll-limit_exceeded_text' => 'Tập hợp các trang của bạn quá lớn.
 Không thể thêm trang được nữa.',
+	'coll-rendering_title' => 'Đang kết xuất',
+	'coll-rendering_text' => "'''Xin hãy chờ xong kết xuất tài liệu.'''
+
+Tiến độ: '''$1%'''.
+
+Trình duyệt sẽ làm tươi trang này vài giây một lần.
+Nếu không thấy thay đổi gì, xin hãy bấm nút Refresh hoặc Reload trong trình duyệt.",
+	'coll-rendering_finished_title' => 'Kết xuất xong',
+	'coll-rendering_finished_text' => "'''Xong kết xuất tập tin tài liệu.'''
+'''[$1 Tải nó về]''' máy tính của mình.
+
+Chú ý:
+* Không vừa lòng với bản kết xuất này? Hãy đọc [[{{MediaWiki:Coll-helppage}}|trợ giúp về tập hợp]] để biết về những cách để cải tiến nó.",
 	'coll-notfound_title' => 'Không tìm thấy tập hợp',
 	'coll-notfound_text' => 'Không tìm thấy trang tập hợp.',
+	'coll-is_cached' => '<ul><li>Không cần kết xuất mới vì đã tìm thấy phiên bản trong bộ nhớ. <a href="$1">Kết xuất lại.</a></li></ul>',
+	'coll-excluded-templates' => '* Các tiêu bản trong thể loại [[:Category:$1|$1]] được bỏ qua.',
+	'coll-blacklisted-templates' => '* Các tiêu bản trùng với danh sách đen [[:$1]] được bỏ qua.',
 	'coll-return_to_collection' => '<p>Quay trở về <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Đặt sách in',
 	'coll-book_text' => 'Bạn có thể đặt một cuốn sách in có chứa tập hợp trang của bạn bằng cách ghét thăm mọt trong những bên cộng tác in-theo-yêu-cầu:',
@@ -3502,6 +3629,7 @@ Không thể thêm trang được nữa.',
 	'coll-invalid_podpartner_msg' => 'Thành phần đi kèm POD đã cung cấp không hợp lệ.
 Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
 	'coll-license' => 'Giấy phép',
+	'coll-return_to' => 'Quay lại [[:$1]]',
 );
 
 /** Volapük (Volapük)
