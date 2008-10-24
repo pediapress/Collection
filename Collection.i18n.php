@@ -114,7 +114,7 @@ Notes:
 * Not satisfied with the output? See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
 	'coll-notfound_title'             => 'Collection not found',
 	'coll-notfound_text'              => 'Could not find collection page.',
-	'coll-is_cached'                  => '<ul><li>A cached version of the document has been found, so no rendering was necessary. <a href="$1">Force re-rendering.</li></ul>',
+	'coll-is_cached'                  => '<ul><li>A cached version of the document has been found, so no rendering was necessary. <a href="$1">Force re-rendering.</a></li></ul>',
 	'coll-excluded-templates'         => '* Templates in category [[:Category:$1|$1]] have been excluded.',
 	'coll-blacklisted-templates'      => '* Templates on blacklist [[:$1]] have been excluded.',
 	'coll-return_to_collection'       => '<p>Return to <a href="$1">$2</a></p>',
