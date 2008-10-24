@@ -110,13 +110,13 @@ If this does not work, please press refresh button of your browser.",
 	'coll-rendering_finished_text'    => "'''The document file has been generated.'''
 '''[$1 Click here]''' to download it to your computer.
 
-Not satisfied with the output?
-See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
+Notes:
+* Not satisfied with the output? See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
 	'coll-notfound_title'             => 'Collection not found',
 	'coll-notfound_text'              => 'Could not find collection page.',
-	'coll-is_cached'                  => '<p>A cached version of the document has been found, so no rendering was necessary. <a href="$1">Force re-rendering.</a></p>',
-	'coll-excluded-templates'         => 'Templates in category [[:Category:$1|$1]] have been excluded.',
-	'coll-blacklisted-templates'      => 'Templates on blacklist [[:$1]] have been excluded.',
+	'coll-is_cached'                  => '<ul><li>A cached version of the document has been found, so no rendering was necessary. <a href="$1">Force re-rendering.</li></ul>',
+	'coll-excluded-templates'         => '* Templates in category [[:Category:$1|$1]] have been excluded.',
+	'coll-blacklisted-templates'      => '* Templates on blacklist [[:$1]] have been excluded.',
 	'coll-return_to_collection'       => '<p>Return to <a href="$1">$2</a></p>',
 	'coll-book_title'                 => 'Order printed book',
 	'coll-book_text'                  => 'You can order a printed book containing your page collection by visiting one of the following print-on-demand partners:',
