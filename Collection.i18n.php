@@ -1089,6 +1089,116 @@ $messages['haw'] = array(
 	'coll-about_pp' => 'E pili ana iā $1',
 );
 
+/**
+ * Hebrew (עברית)
+ * @author Rotem Liss
+ */
+$messages['he'] = array(
+	'coll-desc'                       => '[[Special:Collection|איסוף דפים]], יצירת קובצי PDF',
+	'coll-collection'                 => 'אוסף',
+	'coll-collections'                => 'אוספים',
+	'coll-portlet_title'              => 'יצירת ספר',
+	'coll-add_page'                   => 'הוספת דף ויקי',
+	'coll-remove_page'                => 'הסרת דף ויקי',
+	'coll-add_category'               => 'הוספת קטגוריה',
+	'coll-load_collection'            => 'פתיחת אוסף',
+	'coll-show_collection'            => 'הצגת אוסף',
+	'coll-help_collections'           => 'עזרה לאוספים',
+	'coll-empty'                      => 'ריק',
+	'coll-n_pages'                    => '{{PLURAL:$1|דף אחד|$1 דפים}}',
+	'coll-download_as'                => 'הורדה בפורמט $1',
+	'coll-noscript_text'              => '<h1>JavaScript נדרש!</h1>
+<strong>הדפדפן שלכם אינו תומך ב־JavaScript או שביטלתם את JavaScript בדפדפן זה.
+דף זה לא יעבוד כדרוש, אלא אם כן JavaScript יופעל.</strong>',
+	'coll-intro_text'                 => "באפשרותכם לאסוף דפים, ליצור להוריד קובץ PDF מאוספי דפים, ולשמור אוספי דפים כדי להשתמש בהם מאוחר יותר או כדי לשתף אותם עם משתמשים אחרים.
+
+ראו את [[{{MediaWiki:Coll-helppage}}|דף העזרה על אוספים]] למידע נוסף.",
+	'coll-helppage'                   => 'Help:אוספים',
+	'coll-too_big_cat'                => 'קטגוריה זו כוללת יותר מ־%PARAM% דפים, רק %PARAM% הדפים הראשונים ייתווספו לאוסף.
+האם ברצונכם להוסיף אותם?',
+	'coll-my_collection'              => 'האוסף שלי',
+	'coll-download_title'             => 'הורדת האוסף',
+	'coll-download_text'              => 'כדי להוריד מסמך שנוצר אוטומטית של אוסף הדפים שלכם, אנא בחרו פורמט ולחצו על הכפתור.',
+	'coll-download'                   => 'הורדה',
+	'coll-format_label'               => 'פורמט:',
+	'coll-remove'                     => 'הסרה',
+	'coll-move_to_top'                => 'העברה לראש',
+	'coll-move_up'                    => 'העברה למעלה',
+	'coll-move_down'                  => 'העברה למטה',
+	'coll-move_to_bottom'             => 'העברה לתחתית',
+	'coll-title'                      => 'כותרת:',
+	'coll-subtitle'                   => 'כותרת משנה:',
+	'coll-contents'                   => 'תכנים',
+	'coll-create_chapter'             => 'יצירת פרק חדש',
+	'coll-sort_alphabetically'        => 'מיון דפים בסדר אפלביתי',
+	'coll-clear_collection'           => 'ניקוי האוסף',
+	'coll-clear_confirm'              => 'האם אתם בטוחים שברצונכם לנקות את אוסף הדפים שלכם?',
+	'coll-rename'                     => 'שינוי שם',
+	'coll-new_chapter'                => 'הקלידו שם לפרק החדש',
+	'coll-rename_chapter'             => 'הקלידו שם חדש לפרק',
+	'coll-no_such_category'           => 'אין קטגוריה כזו',
+	'coll-notitle_title'              => 'לא ניתן לבדוק את כותרת הדף',
+	'coll-notitle_title'              => 'לא ניתן היה לבדוק מהי כותרת הדף.',
+	'coll-post_failed_title'          => 'בקשת ה־POST נכשלה',
+	'coll-post_failed_msg'            => 'בקשת ה־POST ל־$1 נכשלה ($2).',
+	'coll-mwserve_failed_title'       => 'שגיאה בשרת היצירה',
+	'coll-mwserve_failed_msg'         => 'אירעה שגיאה בשרת יצירת המסמכים: <nowiki>$1</nowiki>',
+	'coll-enter_title'                => 'הקלידו כותרת לאוסף:',
+	'coll-error_reponse'              => 'שגיאה בשרת',
+	'coll-empty_collection'           => 'אוסף ריק',
+	'coll-revision'                   => 'גרסה: %PARAM%',
+	'coll-save_collection_title'      => 'שמירת האוסף',
+	'coll-save_collection_text'       => 'כדי לשמור את האוסף הזה לשימוש מאוחר יותר, אנא בחרו סוג אוסף והקלידו כותרת של דף:',
+	'coll-login_to_save'              => 'אם ברצונכם לשמור אוספים לשימוש מאוחר יותר, אנא [[Special:UserLogin|היכנסו לחשבון או צרו אחד]].',
+	'coll-personal_collection_label'  => 'אוסף פרטי:',
+	'coll-community_collection_label' => 'אוסף קהילתי:',
+	'coll-save_collection'            => 'שמירת האוסף',
+	'coll-save_category'              => 'אוספים נשמרים בקטגוריה [[:Category:אוספים|אוספים]].',
+	'coll-overwrite_title'            => 'הדף כבר קיים.
+האם לדרוס אותו?',
+	'coll-overwrite_text'             => 'דף בשם [[:$1]] כבר קיים.
+האם ברצונכם להחליף אותו עם האוסף שלכם?',
+	'coll-yes'                        => 'כן',
+	'coll-no'                         => 'לא',
+	'coll-disable_collection_text'    => '<a href="$1">לחצו כאן</a> כדי להפסיק להשתמש באוספים לבינתיים.',
+	'coll-load_overwrite_text'        => 'כבר יש לכם מספר דפים באוסף שלכם.
+האם ברצונכם לדרוס את האוסף הנוכחי שלכם, להוסיף את התוכן החדש או לבטל את פתיחת האוסף הזה?',
+	'coll-overwrite'                  => 'דריסה',
+	'coll-append'                     => 'הוספת התוכן',
+	'coll-cancel'                     => 'ביטול',
+	'coll-limit_exceeded_title'       => 'האוסף גדול מדי',
+	'coll-limit_exceeded_text'        => 'אוסף הדפים שלכם גדול מדי.
+לא ניתן להוסיף דפים נוספים.',
+	'coll-rendering_title'            => 'ביצירה',
+	'coll-rendering_text'             => "'''אנא המתינו בעת יצירת המסמך.'''
+
+התקדמות התהליך: '''$1%'''.
+
+הדפדפן אמור לבצע ריענון אוטומטי לדף זה כל מספר שניות.
+אם זה לא עובד, אנא לחצו על כפתור הריענון בדפדפן שלכם.",
+	'coll-rendering_finished_title'   => 'היצירה הסתיימה',
+	'coll-rendering_finished_text'    => "'''קובץ המסמך נוצר.'''
+'''[$1 לחצו כאן]''' כדי להוריד אותו למחשב.
+
+הערות:
+* אינכם מרוצים מהפלט? ב[[{{MediaWiki:Coll-helppage}}|דף העזרה על אוספים]] תוכלו למצוא אפשרויות לשיפורו.",
+	'coll-notfound_title'             => 'האוסף לא נמצא',
+	'coll-notfound_text'              => 'לא ניתן למצוא את דף האוסף.',
+	'coll-is_cached'                  => '<ul><li>גרסה שמורה של המסמך נמצאה, כך שאין צורך ביצירתו. <a href="$1">יצירה מחדש.</a></li></ul>',
+	'coll-excluded-templates'         => '* תבניות בקטגוריה [[:Category:$1|$1]] אינן כלולות.',
+	'coll-blacklisted-templates'      => '* תבניות ברשימה השחורה [[:$1]] אינן כלולות.',
+	'coll-return_to_collection'       => '<p>חזרה ל<a href="$1">$2</a></p>',
+	'coll-book_title'                 => 'הזמנת ספר מודפס',
+	'coll-book_text'                  => 'באפשרותכם להזמין ספר מודפס הכולל את אוסף הדפים שלכם באמצעות ביקור באחד משירותי ההדפסה לפי דרישה:',
+	'coll-order_from_pp'              => 'הזמנת ספר מ־$1',
+	'coll-about_pp'                   => 'אודות $1',
+	'coll-invalid_podpartner_title'   => 'שירות שגוי',
+	'coll-invalid_podpartner_msg'     => 'שירות ההדפסה לפי דרישה שהוזן שגוי.
+אנא צרו קשר עם מנהל של מדיה־ויקי.',
+	'coll-license'                    => 'רישיון',
+	'coll-return_to'                  => "חזרה ל[[:$1]]",
+);
+
 /** Hindi (हिन्दी)
  * @author Kaustubh
  */
