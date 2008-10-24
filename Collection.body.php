@@ -638,26 +638,17 @@ class Collection extends SpecialPage {
 		
 		switch ( $response->state ) {
 		case 'progress':
-			$url = wfAppendQuery(
-				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' ),
-				$query
-			);
+			$url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/', $query );
 			$wgOut->addMeta( 'http:refresh', '2; URL=' . $url );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
 			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_text', $wgLang->formatNum( $response->status->progress ) ) );
 			break;
 		case 'finished':
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_finished_title' ) );
-			$url = wfAppendQuery(
-				SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download/' ),
-				$query
-			);
+			$url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download/', $query );
 			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_finished_text', $wgServer . $url ) );
 			if ( $wgRequest->getVal( 'is_cached' ) ) {
-				$forceRenderURL = wfAppendQuery(
-					SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'forcerender/'	),
-					$query
-				);
+				$forceRenderURL = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'forcerender/', $query );
 				$wgOut->addHTML( wfMsg( 'coll-is_cached', htmlspecialchars( $forceRenderURL ) ) );
 			}
 			if ( $wgCollectionTemplateExclusionCategory ) {
@@ -1069,10 +1060,10 @@ EOS
 				$params = 'colltitle=' . wfUrlencode( $skinTemplate->mTitle->getPrefixedDBKey() );
 				foreach ( $wgCollectionFormats as $writer => $name ) {
 					$nav_urls['download_as_' . $writer] = array(
-						'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
+						'href' => SkinTemplate::makeSpecialUrlSubpage(
 							'Collection',
-							'render_collection/'
-						), $params . '&writer=' . $writer ),
+							'render_collection/',
+						  $params . '&writer=' . $writer ),
 						'text' => wfMsg( 'coll-download_as', $name ),
 					);
 				}
@@ -1086,10 +1077,10 @@ EOS
 				}
 				foreach ( $wgCollectionFormats as $writer => $name ) {
 					$nav_urls['download_as_' . $writer] = array(
-						'href' => wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
+						'href' => SkinTemplate::makeSpecialUrlSubpage(
 							'Collection',
-							'render_article/'
-						), $params . '&writer=' . $writer ),
+							'render_article/',
+						  $params . '&writer=' . $writer ),
 						'text' => wfMsg( 'coll-download_as', $name )
 					);
 				}
@@ -1193,10 +1184,10 @@ EOS
 		
 		if ( self::isCollectionPage( $wgTitle, $wgArticle) ) {
 			$params = "colltitle=" . $wgTitle->getPrefixedUrl();
-			$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
+			$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 				'Collection',
-				'load_collection/'
-			), $params ) );
+				'load_collection/',
+			  $params ) );
 			$out .= "<li><a href=\"$href\" rel=\"nofollow\">$loadCollection</a></li>";
 		} else {
 	
@@ -1210,25 +1201,25 @@ EOS
 				return;
   		} else if ( $namespace == NS_CATEGORY ) {
 				$params = "cattitle=" . $wgTitle->getPartialURL();
-				$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
+				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 					'Collection',
-					'add_category/'
-				), $params ) );
+					'add_category/',
+				  $params ) );
 				$out .= "<li><a href=\"$href\" rel=\"nofollow\">$addCategory</a></li>";
 			} else if ( in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
 				$params = "arttitle=" . $wgTitle->getPrefixedUrl() . "&oldid=" . $wgArticle->getOldID();
 
 				if ( self::findArticle( $wgTitle->getPrefixedText(), $wgArticle->getOldID() ) == -1 ) {
-					$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
+					$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 						'Collection',
-						'add_article/'
-					), $params ) );
+						'add_article/',
+					  $params ) );
 					$out .= "<li><a href=\"$href\" rel=\"nofollow\">$addArticle</a></li>";
 				} else {
-					$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
+					$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 						'Collection',
-						'remove_article/'
-					), $params ) );
+						'remove_article/',
+					  $params ) );
 					$out .= "<li><a href=\"$href\" rel=\"nofollow\">$removeArticle</a></li>";
 				}
 			}
@@ -1245,10 +1236,10 @@ EOS
 			
 				$clearCollection = wfMsgHtml( 'coll-clear_collection' );
 				$params = 'return_to=' . $wgTitle->getFullURL();
-				$href = htmlspecialchars( wfAppendQuery( SkinTemplate::makeSpecialUrlSubpage(
+				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 					'Collection',
-					'clear_collection/'
-				), $params ) );
+					'clear_collection/',
+				  $params ) );
 				$out .= "<li><a href=\"$href\" rel=\"nofollow\">$clearCollection</a></li>";
 			}
 			
