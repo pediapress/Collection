@@ -693,7 +693,7 @@ Möchtest du sie hinzufügen?',
 	'coll-personal_collection_label' => 'Persönliche Sammlung:',
 	'coll-community_collection_label' => 'Community-Sammlung:',
 	'coll-save_collection' => 'Sammlung speichern',
-	'coll-save_category' => 'Sammlungen werden in der Kategorie [[:Category:Collections|Collections]] gespeichert.',
+	'coll-save_category' => 'Sammlungen werden in der Kategorie [[:Category:Sammlungen|Sammlungen]] gespeichert.',
 	'coll-overwrite_title' => 'Seite vorhanden, überschreiben?',
 	'coll-overwrite_text' => 'Eine Seite mit dem Namen [[:$1]] ist bereits vorhanden. Möchtest du sie durch deine Sammlung ersetzen?',
 	'coll-yes' => 'Ja',
@@ -909,14 +909,18 @@ $messages['es'] = array(
  * @author Spacebirdy
  */
 $messages['fa'] = array(
+	'coll-desc' => '[[Special:Collection|دسته‌بندی کردن صفحه‌ها]] و ایجاد پرونده‌های پی‌دی‌اف',
 	'coll-collection' => 'مجموعه',
 	'coll-collections' => 'مجموعه‌ها',
 	'coll-portlet_title' => 'ایجاد کتاب',
 	'coll-add_page' => 'افزودن این صفحه',
 	'coll-remove_page' => 'حذف این صفحه',
 	'coll-add_category' => 'اضافه کردن رده',
+	'coll-load_collection' => 'بارکردن مجموعه',
 	'coll-show_collection' => 'نمایش مجموعه',
 	'coll-help_collections' => 'راهنمای مجموعه‌ها',
+	'coll-empty' => 'خالی',
+	'coll-n_pages' => '$1 {{PLURAL:$1|صفحه|صفحه}}',
 	'coll-download_as' => 'دانلود به عنوان $1',
 	'coll-noscript_text' => '<h1>جاوااسکریپت لازم دارید!</h1>
 <strong>مرورگر شما جاوا اسکریپت را پشتیبانی نمی‌کند یا جاوا اسکیریپت شما خاموش است.
@@ -925,11 +929,18 @@ $messages['fa'] = array(
 
 برای کسب اطلاعات بیشتر [[{{MediaWiki:Coll-helppage}}|.صفحه راهنما برای مجموعه‌ها]] را بخوانید.',
 	'coll-helppage' => 'Help:مجموعه‌ها',
+	'coll-too_big_cat' => 'این رده شامل بیش از %PARAM% صفحه است، تنها %PARAM% صفحهٔ نخست به مجموعهٔ شما افزوده خواهند شد
+آیا می‌خواهید آن‌ها را بیفزایید؟',
 	'coll-my_collection' => 'مجموعهٔ من',
 	'coll-download_title' => 'دریافت مجموعه',
+	'coll-download_text' => 'برای بارگیری یک سند ایجاد شده از مجموعهٔ صفحه‌های شما به طور خودکار، یک قالب برگزینید و دکمه را بزنید.',
 	'coll-download' => 'دریافت',
 	'coll-format_label' => 'قالب:',
 	'coll-remove' => 'حذف',
+	'coll-move_to_top' => 'حرکت به ابتدا',
+	'coll-move_up' => 'حرکت به بالا',
+	'coll-move_down' => 'حرکت به پایین',
+	'coll-move_to_bottom' => 'حرکت به انتها',
 	'coll-title' => 'عنوان:',
 	'coll-subtitle' => 'زیرعنوان:',
 	'coll-contents' => 'مندرجات',
@@ -940,25 +951,68 @@ $messages['fa'] = array(
 	'coll-rename' => 'تغيير نام',
 	'coll-new_chapter' => 'برای بخش جدید یک نام درج نمایید',
 	'coll-rename_chapter' => 'درج نام جدید برای این فصل',
+	'coll-no_such_category' => 'چنین رده‌ای وجود ندارد',
+	'coll-notitle_title' => 'عنوان صفحه قابل تشخیص نبود.',
+	'coll-post_failed_title' => 'خطا در درخواست POST',
+	'coll-post_failed_msg' => 'درخواست POST به $1 شکست خورد ($2).',
+	'coll-mwserve_failed_title' => 'خطا در کارگزار ترجمه‌کننده',
+	'coll-mwserve_failed_msg' => 'خطایی در کارگزار ترجمه‌کننده رخ داد: <nowiki>$1</nowiki>',
 	'coll-enter_title' => 'عنوانی برای مجموعه درج نمایید:',
+	'coll-error_reponse' => 'پیغام خطا از طرف کارگزار',
 	'coll-empty_collection' => 'مجموعه خالی است.',
+	'coll-revision' => 'نسخه: %PARAM%',
 	'coll-save_collection_title' => 'ذخیرهٔ مجموعه',
 	'coll-save_collection_text' => 'برای ذخیره کردن این مجموعه برای کاربران بعدی، نوع مجموعه و عنوان صفحه آن را درج نمایید:',
 	'coll-login_to_save' => 'اگر می‌خواهید مجموعه را برای کاربران بعدی ذخیره کنید، لطفا [[ویژه:UserLogin|وارد شوید یا یک حساب ایجاد کنید]].',
 	'coll-personal_collection_label' => 'مجموعه شخصی:',
 	'coll-community_collection_label' => 'مجموعه عمومی:',
 	'coll-save_collection' => 'ذخیرهٔ مجموعه',
+	'coll-save_category' => 'مجموعه‌ها در ردهٔ [[:Category:Collections|مجموعه‌ها]] ذخیره شده‌اند.',
+	'coll-overwrite_title' => 'صفحه وجود دارد.
+رونویسی شود؟',
 	'coll-overwrite_text' => 'یک صفحه با نام [[:$1]] در حال حاضر موجود است.
 
 آیا می‌خواهید این صفحه جایگزین صفحه موجود شود؟',
 	'coll-yes' => 'بله',
 	'coll-no' => 'خیر',
+	'coll-disable_collection_text' => '<a href="$1">این‌جا کلیک کنید</a> تا استفاده از مجموعه‌ها را فعلاً متوقف کنید.',
+	'coll-load_overwrite_text' => 'شما همینک صفحه‌هایی در مجموعهٔ خود دارید.
+آیا می‌خواهید مجموعهٔ فعلی را رونویسی کنید، محتوای جدید را به آن بیفزایید یا بارگیری این مجموعه را متوقف کنید؟',
+	'coll-overwrite' => 'رونویسی',
 	'coll-append' => 'افزودن',
 	'coll-cancel' => 'لغو',
+	'coll-limit_exceeded_title' => 'مجموعه بیش از اندازه بزرگ است',
 	'coll-limit_exceeded_text' => 'صفحات مجموعه شما زیاد است.
 
 امکان اضافه کردن صفحه جدیدی را ندارید.',
+	'coll-rendering_title' => 'در حال ترجمه دادن',
+	'coll-rendering_text' => "'''لطفاً در مدتی که سند در حال ایجاد است شکیبا باشید.'''
+
+پیشرفت: '''$1%'''.
+
+این صفحه باید به طور خودکار هر چند ثانیه یکبار تازه شود.
+اگر این کار صورت نمی‌گیرد، لطفاً دکمهٔ تازه کردن صفحه را در مرورگر خود بزنید.",
+	'coll-rendering_finished_title' => 'پایان ترجمه',
+	'coll-rendering_finished_text' => "'''پروندهٔ سند ایجاد شده‌است.'''
+'''[$1 این‌جا کلیک کنید]''' تا آن را به روی رایانهٔ خود بارگیری کنید.
+
+نکته:
+* از خروجی راضی نیستید؟ [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای مجموعه‌ها]] را ببینید تا از امکانات بهبود آن با خبر شوید.",
+	'coll-notfound_title' => 'مجموعه پیدا نشد',
+	'coll-notfound_text' => 'صفحهٔ مجموعه پیدا نشد.',
+	'coll-is_cached' => '<ul><li>یک نسخهٔ کاشه‌گیری شده از این سند پیدا شد، به همین خاطر ترجمه لازم نبود. <a href="$1">ترجمهٔ اجباری.</a></li></ul>',
+	'coll-excluded-templates' => '* از الگوهای رده [[:Category:$1|$1]] صرف نظر شد.',
+	'coll-blacklisted-templates' => '* از الگوهای فهرست سیاه [[:$1]] صرف نظر شد.',
 	'coll-return_to_collection' => '<p>بازگشت به <a href="$1">$2</a></p>',
+	'coll-book_title' => 'سفارش کتاب چاپ شده',
+	'coll-book_text' => 'شما می‌توانید با مراجعه به این شرکای چاپ-با-درخواست یک کتاب چاپ شده از مجموعه صفحه‌های خود سفارش دهید:',
+	'coll-order_from_pp' => 'سفارش کتاب از $1',
+	'coll-about_pp' => 'دربارهٔ $1',
+	'coll-invalid_podpartner_title' => 'شریک چاپ-با-درخواست غیر مجاز',
+	'coll-invalid_podpartner_msg' => 'شریک چاپ-با-درخواست تعیین شده غیر مجاز است.
+لطفاً با مدیر مدیاویکی خود تماس بگیرید.',
+	'coll-license' => 'اجازه‌نامه',
+	'coll-return_to' => 'بازگشت به [[:$1]]',
 );
 
 /** Finnish (Suomi)
@@ -2316,6 +2370,8 @@ $messages['ms'] = array(
 	'coll-append' => 'Tambah',
 	'coll-cancel' => 'Batal',
 	'coll-about_pp' => 'Perihal $1',
+	'coll-invalid_podpartner_title' => 'Rakan POD tidak sah',
+	'coll-invalid_podpartner_msg' => 'Rakan POD yang dibekalkan tidak sah. Sila hubungi pentadbir MediaWiki anda.',
 	'coll-license' => 'Lesen',
 	'coll-return_to' => 'Kembali ke [[:$1]]',
 );
