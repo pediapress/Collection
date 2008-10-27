@@ -770,10 +770,10 @@ class Collection extends SpecialPage {
 <table><tbody>
 <tr>
 	<th><label for="titleInput">$title</label></th>
-	<td><input id="titleInput" type="text" value="" size="50" /></td>
+	<td><input id="titleInput" type="text" value="" size="32" /></td>
 </tr><tr>
 	<th><label for="subtitleInput">$subtitle</label></th>
-	<td><input id="subtitleInput" type="text" value="" size="50" /></td>
+	<td><input id="subtitleInput" type="text" value="" size="32" /></td>
 </tr>
 </tbody></table>
 EOS
