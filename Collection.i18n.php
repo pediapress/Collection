@@ -735,6 +735,50 @@ Hinweise:
 	'coll-return_to' => 'Zurück zu [[:$1]]',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'coll-portlet_title' => 'Knigły napóraś',
+	'coll-add_page' => 'Wikijowy bok pśidaś',
+	'coll-remove_page' => 'Wikijowy bok wótwónoźeś',
+	'coll-add_category' => 'Kategoriju pśidaś',
+	'coll-empty' => 'prozny',
+	'coll-n_pages' => '$1 {{PLURAL:$1|bok|boka|boki|bokow}}',
+	'coll-download_as' => 'Ako $1 ześěgnuś',
+	'coll-noscript_text' => '<h1>JavaScript jo trěbny!</h1>
+<strong>Twój wobglědowak njepódpěrujo JavaScript abo JavaScript jo znjemóžnjony.
+Toś ten bok njebuźo pšawje funkcioněrowaś, tak dłujko až JavaScript njejo zmóžnjony.</strong>',
+	'coll-download' => 'Ześěgnuś',
+	'coll-format_label' => 'Format:',
+	'coll-remove' => 'Wótwónoźeś',
+	'coll-move_up' => 'Górjej',
+	'coll-move_down' => 'Dołoj',
+	'coll-title' => 'Titel:',
+	'coll-subtitle' => 'Pódtitel:',
+	'coll-contents' => 'Wopśimjeśe',
+	'coll-create_chapter' => 'Nowy kapitel napóraś',
+	'coll-sort_alphabetically' => 'Boki alfabetiski sortěrowaś',
+	'coll-rename' => 'Pśemjeniś',
+	'coll-new_chapter' => 'Zapódaj mě za nowy kapitel',
+	'coll-rename_chapter' => 'Zapódaj nowe mě za kapitel',
+	'coll-no_such_category' => 'Njejo taka kategorija',
+	'coll-overwrite_title' => 'Bok eksistujo.
+Pśepisaś?',
+	'coll-yes' => 'Jo',
+	'coll-no' => 'Ně',
+	'coll-overwrite' => 'Pśepisaś',
+	'coll-cancel' => 'Pśetergnuś',
+	'coll-return_to_collection' => '<p>Slědk k <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Wuśišćane knigły skazaś',
+	'coll-about_pp' => 'Wó $1',
+	'coll-invalid_podpartner_title' => 'Njepłaśiwy partner za śišć na pominanje',
+	'coll-invalid_podpartner_msg' => 'Pódany partner za śišć na pominanje jo njepłaśiwy.
+Skontaktuj pšosym swójogo administratora MediaWiki',
+	'coll-license' => 'Licenca',
+	'coll-return_to' => 'Slědk k [[:$1]]',
+);
+
 /** Greek (Ελληνικά)
  * @author Consta
  * @author Geraki
@@ -773,9 +817,9 @@ $messages['eo'] = array(
 	'coll-desc' => '[[Special:Collection|Kolekto-paĝoj]], generi PDF-ojn',
 	'coll-collection' => 'Kolekto',
 	'coll-collections' => 'Kolektoj',
-	'coll-portlet_title' => 'Kolekto',
-	'coll-add_page' => 'Aldoni paĝon',
-	'coll-remove_page' => 'Forigi paĝon',
+	'coll-portlet_title' => 'Krei libron',
+	'coll-add_page' => 'Aldoni vikipaĝon',
+	'coll-remove_page' => 'Forigi vikipaĝon',
 	'coll-add_category' => 'Aldoni kategorion',
 	'coll-load_collection' => 'Alŝuti kolekton',
 	'coll-show_collection' => 'Montri kolekton',
@@ -783,6 +827,9 @@ $messages['eo'] = array(
 	'coll-empty' => 'malplena',
 	'coll-n_pages' => '$1 {{PLURAL:$1|paĝo|paĝoj}}',
 	'coll-download_as' => 'Elŝuti kiel $1',
+	'coll-noscript_text' => '<h1>JavaScript-o estas deviga!<h1>
+<strong>Via retumilo ne subtenas JavaScript-on aŭ JavaScript-o estis malŝaltita.
+Ĉi tiu paĝo ne funkcius bone, ĝis JavaScript-o estas ŝaltita.</strong>',
 	'coll-helppage' => 'Help:Kolektoj',
 	'coll-my_collection' => 'Mia kolekto',
 	'coll-download_title' => 'Alŝutu kolekton kiel PDF-on',
@@ -818,6 +865,7 @@ $messages['eo'] = array(
 	'coll-personal_collection_label' => 'Propra kolekto:',
 	'coll-community_collection_label' => 'Komuna kolekto:',
 	'coll-save_collection' => 'Konservu Kolekton',
+	'coll-save_category' => 'Kolektoj estas konservitaj en la kategorio [[:Category:Kolektoj|Kolektoj]].',
 	'coll-overwrite_title' => 'Paĝo ekzistas. Ĉu anstataŭigi?',
 	'coll-yes' => 'Jes',
 	'coll-no' => 'Ne',
@@ -977,8 +1025,8 @@ Voyez [[{{MediaWiki:Coll-helppage}}|la page d'aide sur les collections]] pour da
 	'coll-move_up' => 'Monter',
 	'coll-move_down' => 'Descendre',
 	'coll-move_to_bottom' => 'Déplacer tout en bas',
-	'coll-title' => 'Titre :',
-	'coll-subtitle' => 'Sous-titre :',
+	'coll-title' => 'Titre&nbsp;:',
+	'coll-subtitle' => 'Sous-titre&nbsp;:',
 	'coll-contents' => 'Contenu',
 	'coll-create_chapter' => 'Créer un nouveau chapitre',
 	'coll-sort_alphabetically' => 'Trier les pages par ordre alphabétique',
@@ -1401,6 +1449,7 @@ $messages['hil'] = array(
  * @author Dalibor Bosits
  */
 $messages['hr'] = array(
+	'coll-desc' => '[[Special:Collection|Sakupi stranice]], izradi PDF',
 	'coll-remove' => 'Ukloni',
 );
 
@@ -1420,9 +1469,15 @@ $messages['hsb'] = array(
 	'coll-help_collections' => 'Pomoc zběrkow',
 	'coll-empty' => 'prózdna',
 	'coll-n_pages' => '$1 {{PLURAL:$1|strona|stronje|strony|stronow}}',
+	'coll-download_as' => 'Jako $1 sćahnyć',
+	'coll-noscript_text' => '<h1>JavaScript je trěbny!</h1>
+<strong>Twój wobhladowak njepodpěruje JavaScript abo JavaScript je wupinjeny.
+Tuta strona njebudźe prawje fungować, doniž JavaScript zmóžnjeny njeje.</strong>',
 	'coll-helppage' => 'Help:Zběrki',
 	'coll-my_collection' => 'Moja zběrka',
 	'coll-download_title' => 'Zběrku jako PDF sćahnyć',
+	'coll-download' => 'Sćahnyć',
+	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Wotstronić',
 	'coll-move_to_top' => 'Cyle horje přesunyć',
 	'coll-move_up' => 'Horje přesunyć',
@@ -1457,6 +1512,14 @@ $messages['hsb'] = array(
 	'coll-notfound_title' => 'zběrka njenamakana',
 	'coll-notfound_text' => 'Strona zběrki njebu namakana.',
 	'coll-return_to_collection' => '<p>Wróćo k <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Ćišćanu knihu skazać',
+	'coll-order_from_pp' => 'Knihu pola $1 skazać',
+	'coll-about_pp' => 'Wo $1',
+	'coll-invalid_podpartner_title' => 'Njepłaćiwy partner za ćišć na žadanje',
+	'coll-invalid_podpartner_msg' => 'Podaty partner za ćišć na žadanje je njepłaćiwy.
+Skontaktuj prošu swojeho administratora MediaWiki.',
+	'coll-license' => 'Licenca',
+	'coll-return_to' => 'Wróćo k [[:$1]]',
 );
 
 /** Hungarian (Magyar)
@@ -1854,6 +1917,14 @@ Ora bisa nambah kaca-kaca liya manèh.',
 	'coll-book_title' => 'Pesen Buku Cithak',
 	'coll-order_from_pp' => 'Pesen buku saka $1',
 	'coll-about_pp' => 'Perkara $1',
+);
+
+/** Georgian (ქართული)
+ * @author Malafaya
+ */
+$messages['ka'] = array(
+	'coll-n_pages' => '$1 გვერდი',
+	'coll-no' => 'არა',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -2539,9 +2610,9 @@ $messages['oc'] = array(
 	'coll-desc' => "[[Special:Collection|Compilar de paginas]], generar de pdf's",
 	'coll-collection' => 'Compilacion',
 	'coll-collections' => 'Compilacions',
-	'coll-portlet_title' => 'Colleccion',
-	'coll-add_page' => 'Apondre una pagina',
-	'coll-remove_page' => 'Levar una pagina',
+	'coll-portlet_title' => 'Crear un libre',
+	'coll-add_page' => 'Apondre una pagina wiki',
+	'coll-remove_page' => 'Levar una pagina wiki',
 	'coll-add_category' => 'Apondre una categoria',
 	'coll-load_collection' => 'Cargar una compilacion',
 	'coll-show_collection' => 'Afichar la compilacion',
@@ -2617,10 +2688,10 @@ Aquesta pagina se deuriá actualizar regularament.
 S'èra pas lo cas, clicatz sul boton d’actualizacion de vòstre navigador.",
 	'coll-rendering_finished_title' => 'Rendut acabat',
 	'coll-rendering_finished_text' => "'''Lo fichièr document es estat creat.'''
-'''[$1 Clicatz aicí]''' per lo telecargar sus vòstre ordenador.
+[$1 Clicatz aicí] per lo telecargar sus vòstre ordenador.
 
-Pas satisfach(a) de la sortida ?
-Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las colleccions]] per las possibilitats de melhorament.",
+Nòtas :
+Pas satisfach(a) de la sortida ? Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las colleccions]] per las possibilitats de melhorament.",
 	'coll-notfound_title' => 'Compilacion pas trobada',
 	'coll-notfound_text' => 'Pòt pas trobar la compilacion.',
 	'coll-is_cached' => '<ul><li>Una version en amagatal del document es estada trobada, cap de rendut èra pas necessari. <a href="$1">Forçar lo rendut un còp de mai.</a></li></ul>',
@@ -2738,8 +2809,16 @@ Postęp: '''$1%'''.
 Ta strona powinna się automatycznie odświeżać co kilka sekund.
 Jeśli tak nie jest, proszę odświeżyć swoją przeglądarkę.",
 	'coll-rendering_finished_title' => 'Renderowanie zakończone',
+	'coll-rendering_finished_text' => "'''Dokument został wygenerowany.'''
+'''[$1 Kliknij tutaj]''' by pobrać go na swój komputer.
+
+Uwaga:
+* Nie jesteś zadowolony z wygenerowanego dokumentu? Zajrzyj na [[{{MediaWiki:Coll-helppage}}|stronę pomocy na temat kolekcji]] by dowiedzieć się jakie są możliwości poprawy dokumentu.",
 	'coll-notfound_title' => 'Nie znaleziono kolekcji',
 	'coll-notfound_text' => 'Nie udało się znaleźć strony kolekcji.',
+	'coll-is_cached' => '<ul><li>Dokument zachował się w pamięci podręcznej, więc nie ma potrzeby renderowania. <a href="$1">Wymuś ponowane renderowanie.</a></li></ul>',
+	'coll-excluded-templates' => '* Szablony w kategorii [[:Category:$1|$1]] zostały pominięte.',
+	'coll-blacklisted-templates' => '* Szablony z czarnej listy [[:$1]] zostały pominięte.',
 	'coll-return_to_collection' => '<p>Powróć do <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Zamów wydrukowaną książkę',
 	'coll-book_text' => 'Możesz zamówić drukowaną książkę zawierającą kolekcję wybranych przez Ciebie stron. Odwiedź jednego z partnerów realizujących usługę wydruku na żądanie:',
@@ -3643,9 +3722,14 @@ $messages['vec'] = array(
 	'coll-add_category' => 'Zonta na categoria',
 	'coll-load_collection' => 'Carga na colezion',
 	'coll-show_collection' => 'Varda colezion',
+	'coll-help_collections' => 'Ajuto su le colezion',
 	'coll-empty' => 'vòda',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàxena|pàxene}}',
 	'coll-download_as' => 'Descarga come $1',
+	'coll-noscript_text' => "<h1>Ghe vole el JavaScript!</h1>
+<strong>El to browser no'l suporta JavaScript opure JavaScript el xe stà disativà.
+La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</strong>",
+	'coll-helppage' => 'Help:Colezion',
 	'coll-my_collection' => 'La me colezion',
 	'coll-download_title' => 'Descarga colezion',
 	'coll-download' => 'Descarga',
@@ -3670,25 +3754,41 @@ $messages['vec'] = array(
 	'coll-post_failed_msg' => 'La richiesta POST a $1 no la xe mia riussìa ($2).',
 	'coll-enter_title' => 'Inserissi un titolo par la colezion:',
 	'coll-empty_collection' => 'Colezion vòda',
+	'coll-revision' => 'Revision: %PARAM%',
 	'coll-save_collection_title' => 'Salva colezion',
 	'coll-personal_collection_label' => 'Colezion personal:',
 	'coll-save_collection' => 'Salva colezion',
 	'coll-overwrite_title' => 'La pàxena la esiste de zà.
 Vuto che ghe scriva insima?',
+	'coll-overwrite_text' => 'Na pàxena col nome [[:$1]] la esiste de zà.
+Vuto che la vegna rinpiazà co la to colezion?',
 	'coll-yes' => 'Sì',
 	'coll-no' => 'No',
+	'coll-disable_collection_text' => '<a href="$1">Struca chì</a> par desmétar de doparar le colezion, par indèsso.',
 	'coll-overwrite' => 'Sorascrivi',
 	'coll-append' => 'Zonta',
 	'coll-cancel' => 'Annulla',
 	'coll-limit_exceeded_title' => 'Colezion massa granda',
 	'coll-limit_exceeded_text' => 'La to colezion la xe massa granda. No se pode zontarghe altre pàxene.',
 	'coll-rendering_title' => 'Conversion',
+	'coll-rendering_text' => "'''Par piaser, speta n'atimo che el documento el vegna generà.'''
+
+Avansamento: '''$1%'''.
+
+Sta pàxena la dovarìa ajornarse da par ela ogni póchi secondi.
+Se questo no sucede, struca el boton de ajornamento del to browser.",
 	'coll-rendering_finished_title' => 'Conversion finìa',
+	'coll-rendering_finished_text' => "'''El documento el xe stà generà.'''
+'''[$1 Struca chì]''' par descargarlo sul to computer.
+
+Note:
+* Sito mia contento del risultato? Lèzi [[{{MediaWiki:Coll-helppage}}|la pàxena de ajuto su le colezion]] par saver come mejorarlo.",
 	'coll-notfound_title' => 'Colezion mia catà',
 	'coll-book_title' => 'Ordina libro stanpà',
 	'coll-order_from_pp' => 'Ordina libro da $1',
 	'coll-about_pp' => 'Informassion su $1',
 	'coll-license' => 'Licensa',
+	'coll-return_to' => 'Torna indrìo a [[:$1]]',
 );
 
 /** Vietnamese (Tiếng Việt)
