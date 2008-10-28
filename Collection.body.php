@@ -1046,7 +1046,7 @@ EOS
 	/**
 	 * SkinTemplateBuildNavUrlsNav_urlsAfterPermalink hook
 	 */
-	function createNavURLs( &$skinTemplate, &$nav_urls, &$revid1, &$revid2 ) {
+	static function createNavURLs( &$skinTemplate, &$nav_urls, &$revid1, &$revid2 ) {
 		global $wgArticle;
 		global $wgRequest;
 		global $wgCollectionFormats;
