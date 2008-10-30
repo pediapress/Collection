@@ -440,6 +440,37 @@ $messages['arz'] = array(
 	'coll-return_to' => 'رجوع إلى [[:$1]]',
 );
 
+/** Asturian (Asturianu)
+ * @author Esbardu
+ */
+$messages['ast'] = array(
+	'coll-collection' => 'Coleición',
+	'coll-collections' => 'Coleiciones',
+	'coll-portlet_title' => 'Crear un llibru',
+	'coll-add_page' => 'Añader páxina wiki',
+	'coll-remove_page' => 'Eliminar páxina wiki',
+	'coll-add_category' => 'Añader categoría',
+	'coll-load_collection' => 'Cargar coleición',
+	'coll-show_collection' => 'Amosar coleición',
+	'coll-help_collections' => 'Aida de les coleiciones',
+	'coll-n_pages' => '$1 {{PLURAL:$1|páxina|páxines}}',
+	'coll-download_as' => 'Descargar como $1',
+	'coll-helppage' => 'Aida:Coleiciones',
+	'coll-my_collection' => 'La mio coleición',
+	'coll-download_title' => 'Descargar coleición',
+	'coll-download' => 'Descargar',
+	'coll-format_label' => 'Formatu:',
+	'coll-remove' => 'Eliminar',
+	'coll-title' => 'Títulu:',
+	'coll-subtitle' => 'Subtítulu:',
+	'coll-create_chapter' => 'Crear capítulu nuevu',
+	'coll-sort_alphabetically' => 'Ordenar páxines alfabéticamente',
+	'coll-rename' => 'Renomar',
+	'coll-yes' => 'Sí',
+	'coll-no' => 'Non',
+	'coll-about_pp' => 'Tocante a $1',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
@@ -831,6 +862,8 @@ $messages['eo'] = array(
 <strong>Via retumilo ne subtenas JavaScript-on aŭ JavaScript-o estis malŝaltita.
 Ĉi tiu paĝo ne funkcius bone, ĝis JavaScript-o estas ŝaltita.</strong>',
 	'coll-helppage' => 'Help:Kolektoj',
+	'coll-too_big_cat' => 'La kategorio enhavas pli ol %PARAM% paĝojn, nur la unuaj %PARAM% paĝoj povas esti aldonitaj al via kolekto.
+Ĉu vi volas aldoni ilin?',
 	'coll-my_collection' => 'Mia kolekto',
 	'coll-download_title' => 'Alŝutu kolekton kiel PDF-on',
 	'coll-download_text' => 'Alŝuti aŭtomate generitan PDF-dosieron de via paĝkolekto, klaku la butonon.',
@@ -867,6 +900,8 @@ $messages['eo'] = array(
 	'coll-save_collection' => 'Konservu Kolekton',
 	'coll-save_category' => 'Kolektoj estas konservitaj en la kategorio [[:Category:Kolektoj|Kolektoj]].',
 	'coll-overwrite_title' => 'Paĝo ekzistas. Ĉu anstataŭigi?',
+	'coll-overwrite_text' => 'Paĝo kun la nomo [[:$1]] jam ekzistas.
+Ĉu vi volas anstatŭigi ĝin kun via kolekto?',
 	'coll-yes' => 'Jes',
 	'coll-no' => 'Ne',
 	'coll-disable_collection_text' => '<a href="$1">Klaku ĉi tie</a> por halti uzante kolektojn por nun.',
@@ -887,7 +922,7 @@ Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.",
 	'coll-notfound_title' => 'Kolekto Ne Trovita',
 	'coll-notfound_text' => 'Ne eblas trovi kolekto-paĝon.',
 	'coll-return_to_collection' => '<p>Reiru al <a href="$1">$2</a></p>',
-	'coll-book_title' => 'Mendu Eldonitan Libron',
+	'coll-book_title' => 'Mendi Eldonitan Libron',
 	'coll-order_from_pp' => 'Mendi libron de $1',
 	'coll-about_pp' => 'Pri $1',
 	'coll-license' => 'Licenco',
@@ -1034,9 +1069,13 @@ $messages['fi'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|sivu|sivua}}',
 	'coll-download_as' => 'Lataa $1-tiedostona',
 	'coll-helppage' => 'Help:Kokoelmat',
+	'coll-download' => 'Lataa',
 	'coll-overwrite_title' => 'Sivu on olemassa. Ylikirjoitetaanko?',
 	'coll-yes' => 'Kyllä',
 	'coll-no' => 'Ei',
+	'coll-cancel' => 'Peruuta',
+	'coll-license' => 'Lisenssi',
+	'coll-return_to' => 'Palaa sivulle [[:$1]]',
 );
 
 /** French (Français)
@@ -1528,8 +1567,11 @@ $messages['hsb'] = array(
 <strong>Twój wobhladowak njepodpěruje JavaScript abo JavaScript je wupinjeny.
 Tuta strona njebudźe prawje fungować, doniž JavaScript zmóžnjeny njeje.</strong>',
 	'coll-helppage' => 'Help:Zběrki',
+	'coll-too_big_cat' => 'Kategorija wobsahuje wjace hač %PARAM% stronow, jenož prěnje %PARAM% strony dadźa so k twojej zběrce přidać.
+Chceš je přidać?',
 	'coll-my_collection' => 'Moja zběrka',
 	'coll-download_title' => 'Zběrku jako PDF sćahnyć',
+	'coll-download_text' => 'Zo by awtomatisce wutworjeny dokument twojeje zběrki stronow sćahnył, wubjer format a klikń na tłóčatko.',
 	'coll-download' => 'Sćahnyć',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Wotstronić',
@@ -1554,17 +1596,25 @@ Tuta strona njebudźe prawje fungować, doniž JavaScript zmóžnjeny njeje.</st
 	'coll-empty_collection' => 'Prózdna zběrka',
 	'coll-revision' => 'Wersija: %PARAM%',
 	'coll-save_collection_title' => 'Zběrku składować',
+	'coll-login_to_save' => 'Jeli chceš zběrki za pozdźiše wužiwanje składować, [[Special:UserLogin|přizjew so prošu abo wutwor konto]].',
 	'coll-personal_collection_label' => 'Wosobinska zběrka:',
 	'coll-save_collection' => 'Zběrku składować',
+	'coll-save_category' => 'Zběrki składuja so w kategoriji [[:Category:Zběrki|Zběrki]].',
 	'coll-overwrite_title' => 'Strona eksistuje. Přepisać?',
+	'coll-overwrite_text' => 'Strona z mjenom [[:$1]] hižo eksistuje.
+Chceš ju přez swoju zběrku narunać?',
 	'coll-yes' => 'Haj',
 	'coll-no' => 'Ně',
 	'coll-overwrite' => 'Přepisać',
 	'coll-append' => 'Připójsnyć',
 	'coll-cancel' => 'Přetorhnyć',
 	'coll-limit_exceeded_title' => 'Zběrka přewulka',
+	'coll-limit_exceeded_text' => 'Twoja zběrka stronow je přewulka.
+Njadadźa so hižo žane strony přidać.',
 	'coll-notfound_title' => 'zběrka njenamakana',
 	'coll-notfound_text' => 'Strona zběrki njebu namakana.',
+	'coll-excluded-templates' => '* Předłohi w kategoriji [[:Category:$1|$1]] buchu wuzamknjene.',
+	'coll-blacklisted-templates' => '* Předłohi na čornej lisćinje [[:$1]] buchu wuzamknjene.',
 	'coll-return_to_collection' => '<p>Wróćo k <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ćišćanu knihu skazać',
 	'coll-order_from_pp' => 'Knihu pola $1 skazać',
@@ -2071,9 +2121,78 @@ $messages['krj'] = array(
  */
 $messages['ksh'] = array(
 	'coll-desc' => '[[Special:Collection|Sigge zosammefaße]], un Dateie em <i lang="en">Portable Document Format</i> (PDF) ußjäve.',
+	'coll-collection' => 'Sammlong',
+	'coll-collections' => 'Sammlonge',
+	'coll-portlet_title' => 'E Booch zesamme_ställe',
+	'coll-add_page' => 'En Sigg dobei donn',
+	'coll-remove_page' => 'En Sigg eruß nämme',
+	'coll-add_category' => 'En Saachjrupp dobei donn',
+	'coll-load_collection' => 'Sammlong lade',
+	'coll-show_collection' => 'Sammlong zeije',
+	'coll-help_collections' => 'Hölp üvver Sammlonge',
 	'coll-empty' => 'leddich',
+	'coll-n_pages' => '{{PLURAL:$1|ein Sigg|$1 Sigge|kein Sigge}}',
+	'coll-download_as' => 'Als $1 eronger laade',
+	'coll-noscript_text' => '<h1>Bruch JavaSkripp!</h1>
+<strong>Dinge Brauser kann kei JavaSkripp udder et es affjeschalldt.
+<br/>Di Sigg hee weed oohne JavaSkripp nit donn.</strong>',
+	'coll-intro_text' => 'Do kanns Sammlonge vun Sigge zusamme ställe, do druß en Datei em PDF-Fommaat maache
+un di erunge laade. Esu en Sammlonge kam_mer för shpääder affspeijschere,
+un mer kann ander Metmaacher doh draan lohße.
+
+Loor Der de ußföhrlesche [[{{MediaWiki:Coll-helppage}}|Hölp övver Sammlonge]] aan,
+wann de noch mieh wesse wells.',
+	'coll-helppage' => 'Hölp:Sammlonge',
+	'coll-too_big_cat' => 'Di Saachjropp hät mieh wi %PARAM% Sigge, ävver nor de eetste %PARAM%
+Sigge künne en Ding Sammlong opjenomme wääde. Wells De se dobei donn?',
+	'coll-my_collection' => 'Ming Sammlong',
+	'coll-download_title' => 'Sammlong eronger laade',
+	'coll-download_text' => 'Öm en automattesch jemaate Datei met Dinge Sammlong eronger ze laade,
+donn op dat Knöppsche klecke.',
+	'coll-download' => 'Eronger Laade',
+	'coll-format_label' => 'Fommaat:',
+	'coll-remove' => 'Fott lohße',
+	'coll-move_to_top' => 'aan der Aanfang donn',
+	'coll-move_up' => 'Erop schuve',
+	'coll-move_down' => 'Eronger schuve',
+	'coll-move_to_bottom' => 'An et Engk donn',
+	'coll-title' => 'Tittel:',
+	'coll-subtitle' => 'Ongertittel:',
+	'coll-contents' => 'Enhallt',
+	'coll-create_chapter' => 'E neu Kapittel aanlääje',
+	'coll-sort_alphabetically' => "Donn de Sigge noh'm Allfabeet zoteere",
+	'coll-clear_collection' => 'Sammlong leddisch maache',
+	'coll-clear_confirm' => 'Wells de Ding Sammlong werklesch loß wääde?',
+	'coll-rename' => 'Ömnänne',
+	'coll-new_chapter' => 'Jif ene Name för e neu Kapittel aan',
+	'coll-rename_chapter' => 'Jif ene neu Name för dat Kapittel en',
+	'coll-no_such_category' => 'Di Saachjrupp jidd_et nit',
+	'coll-notitle_title' => 'Mer kunnte dä Tittel för di Sigg nit erus fenge.',
+	'coll-mwserve_failed_title' => 'Fähler en dämm Server för et Darstelle',
+	'coll-mwserve_failed_msg' => 'En dämm Server för et Darstelle es ene Fähler opjetrodde: <nowiki>$1</nowiki>',
+	'coll-enter_title' => 'Dä Tittel för di Sammlong:',
+	'coll-error_reponse' => 'Dä Server meldt ene Fähler',
+	'coll-empty_collection' => 'En dä Sammlong es nix dren',
+	'coll-revision' => 'Version: %PARAM%',
+	'coll-save_collection_title' => 'Sammlong Afspeichere',
+	'coll-overwrite_title' => 'Die Sigg jidd et ald. Överschrieve?',
+	'coll-yes' => 'Jo',
+	'coll-no' => 'Nä',
+	'coll-disable_collection_text' => '<a href="$1">Donn de Sammlong fottschmieße un noh de Houptsigg zeröckjonn.</a>',
+	'coll-overwrite' => 'Ußtuusche',
+	'coll-append' => 'Aanhänge',
 	'coll-cancel' => 'Ophüre',
+	'coll-limit_exceeded_title' => 'De Sammlong es zo jruhß',
+	'coll-notfound_title' => 'Han de Sammlong nit jefonge',
+	'coll-notfound_text' => 'Mer kunnte de Sigg för di Sammlong nit fenge.',
+	'coll-book_title' => 'Der Drock vun däm Booch en Aufdrach jevve',
+	'coll-order_from_pp' => 'Donn dat Booch bei $1 beshtälle',
 	'coll-about_pp' => 'Üvver $1',
+	'coll-invalid_podpartner_title' => 'Verkeehte Aajabe zom Drocke udder Drockerei',
+	'coll-invalid_podpartner_msg' => 'De Aajabe zom Drocke un wä dat maache sull sin verkeeht.
+Don dat enem Wikki-Köbes obb et Bruut schmiere.',
+	'coll-license' => 'Lizänz',
+	'coll-return_to' => 'Jangk zerök noh [[:$1]]',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -2097,6 +2216,7 @@ $messages['lb'] = array(
 <strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
 Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</strong>',
 	'coll-helppage' => 'Help:Kollektioun',
+	'coll-too_big_cat' => 'An der Kategorie gëtt et méi wéi %PARAM% Säiten, nëmmen déi éischt %PARAM% Säite kënnen an är Sammlung derbäigesat ginn.',
 	'coll-my_collection' => 'Meng Sammlung',
 	'coll-download_title' => 'Kollektioun als PDF eroflueden',
 	'coll-download' => 'Eroflueden',
@@ -2155,6 +2275,7 @@ Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh
 	'coll-book_text' => 'Dir kënnt e Buch bestellen op enge vun dësen Internetsiten:',
 	'coll-order_from_pp' => "D'Buch bestelle bäi $1",
 	'coll-about_pp' => 'Iwwer $1',
+	'coll-invalid_podpartner_title' => 'Ongëltege Print-On-Demand (POD) Partner',
 	'coll-license' => 'Lizenz',
 	'coll-return_to' => 'Zréck op [[:$1]]',
 );
@@ -3077,7 +3198,7 @@ $messages['ru'] = array(
 	'coll-desc' => '[[Special:Collection|Собирает коллекции страниц]], создаёт PDF',
 	'coll-collection' => 'Коллекция',
 	'coll-collections' => 'Коллекции',
-	'coll-portlet_title' => 'Коллекция',
+	'coll-portlet_title' => 'Создать книгу',
 	'coll-add_page' => 'Добавить страницу',
 	'coll-remove_page' => 'Удалить страницу',
 	'coll-add_category' => 'Добавить категорию',
@@ -3085,6 +3206,8 @@ $messages['ru'] = array(
 	'coll-show_collection' => 'Показать коллекцию',
 	'coll-help_collections' => 'Справка по коллекциям',
 	'coll-empty' => 'пустая',
+	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страниц}}',
+	'coll-download_as' => 'Загрузить как $1',
 	'coll-noscript_text' => '<h1>Требуется JavaScript!</h1>
 <strong>Ваш браузер не поддерживает JavaScript или данная поддержка была отключена.
 Эта страница не будет работать правильно, если JavaScript не включен.</strong>',
@@ -3097,6 +3220,7 @@ $messages['ru'] = array(
 	'coll-my_collection' => 'Моя коллекция',
 	'coll-download_title' => 'Скачать коллекцию как PDF',
 	'coll-download_text' => 'Нажмите кнопку, чтобы скачать автоматически созданный PDF-файл с вашей коллекций страниц.',
+	'coll-download' => 'Загрузить',
 	'coll-format_label' => 'Формат:',
 	'coll-remove' => 'Удалить',
 	'coll-move_to_top' => 'Передвинуть наверх',
@@ -3127,11 +3251,13 @@ $messages['ru'] = array(
 	'coll-personal_collection_label' => 'Личная коллекция:',
 	'coll-community_collection_label' => 'Коллекция сообщества:',
 	'coll-save_collection' => 'Сохранить коллекцию',
+	'coll-save_category' => 'Коллекции сохранены в категории [[:Категория:Коллекции|Коллекции]].',
 	'coll-overwrite_title' => 'Страница существует. Перезаписать?',
 	'coll-overwrite_text' => 'Страница с именем [[:$1]] уже существует.
 Вы хотите чтобы она была заменена вашей коллекцией?',
 	'coll-yes' => 'Да',
 	'coll-no' => 'Нет',
+	'coll-disable_collection_text' => '<a href="$1">Нажмите здесь</a>, чтобы прекратить использовать коллекции сейчас.',
 	'coll-load_overwrite_text' => 'У вас уже есть несколько страниц в коллекции.
 Вы хотите перезаписать вашу текущею коллекцию, добавить новый материал или отменить загрузку коллекции?',
 	'coll-overwrite' => 'Перезаписать',
@@ -3151,10 +3277,12 @@ $messages['ru'] = array(
 	'coll-rendering_finished_text' => "'''Файл документа создан.'''
 '''[$1 Нажмите здесь]''', чтобы скачать его к себе на компьютер.
 
-Не удовлетворены результатом?
-Возможности его улучшения описаны на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].",
+Отметьте:
+* Не удовлетворены результатом? Возможности его улучшения описаны на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].",
 	'coll-notfound_title' => 'Коллекция не найдена',
 	'coll-notfound_text' => 'Невозможно найти страницу коллекции.',
+	'coll-excluded-templates' => '* Шаблоны в категории [[:Категория:$1|$1]] были исключены.',
+	'coll-blacklisted-templates' => '* Шаблоны в чёрном списке [[:$1]] были исключены.',
 	'coll-return_to_collection' => '<p>Назад к <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Заказать печатную книгу',
 	'coll-book_text' => 'Вы можете заказать печатную книгу, содержащую вашу коллекцию страниц, воспользовавшись одним из следующих предложений печати по запросу:',
@@ -3164,6 +3292,7 @@ $messages['ru'] = array(
 	'coll-invalid_podpartner_msg' => 'Предоставляемый POD-партнёр недействителен.
 Пожалуйста, свяжитесь с вашим администратором MediaWiki.',
 	'coll-license' => 'Лицензия',
+	'coll-return_to' => 'Возврат к [[:$1]]',
 );
 
 /** Slovak (Slovenčina)

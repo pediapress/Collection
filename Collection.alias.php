@@ -92,6 +92,11 @@ $aliases['no'] = array(
 	'Collection' => array( 'Samling' ),
 );
 
+/** Occitan (Occitan) */
+$aliases['oc'] = array(
+	'Collection' => array( 'Colleccion' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'Collection' => array( 'Samling' ),
