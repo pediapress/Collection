@@ -107,7 +107,7 @@ No more pages can be added.',
 This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.",
 	'coll-rendering_status'           => "'''Status:''' $1",
-	'coll-rendering_article'          => ' (article: $1)',
+	'coll-rendering_article'          => ' (wiki page: $1)',
 	'coll-rendering_page'             => ' (page: $1)',
 	'coll-rendering_finished_title'   => 'Rendering finished',
 	'coll-rendering_finished_text'    => "'''The document file has been generated.'''
