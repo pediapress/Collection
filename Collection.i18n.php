@@ -107,8 +107,8 @@ No more pages can be added.',
 This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.",
 	'coll-rendering_status'           => "'''Status:''' $1",
-  'coll-rendering_article'          => ' (article: $1)',
-  'coll-rendering_page'             => ' (page: $1)',
+	'coll-rendering_article'          => ' (article: $1)',
+	'coll-rendering_page'             => ' (page: $1)',
 	'coll-rendering_finished_title'   => 'Rendering finished',
 	'coll-rendering_finished_text'    => "'''The document file has been generated.'''
 '''[$1 Click here]''' to download it to your computer.
@@ -1437,10 +1437,13 @@ $messages['he'] = array(
 	'coll-rendering_title' => 'ביצירה',
 	'coll-rendering_text' => "'''אנא המתינו בעת יצירת המסמך.'''
 
-התקדמות התהליך: '''$1%'''.
+'''התקדמות התהליך''': $1% $2.
 
 הדפדפן אמור לבצע ריענון אוטומטי לדף זה כל מספר שניות.
 אם זה לא עובד, אנא לחצו על כפתור הריענון בדפדפן שלכם.",
+	'coll-rendering_status' => "'''מצב:''' $1",
+	'coll-rendering_article' => ' (דף תוכן: $1)',
+	'coll-rendering_page' => ' (דף: $1)',
 	'coll-rendering_finished_title' => 'היצירה הסתיימה',
 	'coll-rendering_finished_text' => "'''קובץ המסמך נוצר.'''
 '''[$1 לחצו כאן]''' כדי להוריד אותו למחשב.
