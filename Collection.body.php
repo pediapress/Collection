@@ -566,9 +566,9 @@ class Collection extends SpecialPage {
 		
 		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' );
 		$query = 'return_to=' . urlencode( $referrer->getPrefixedText() )
-			. '&collection_id=' . urlencode( $response->collection_id )
-			. '&writer=' . urlencode( $response->writer );
-		if ( isset( $response->is_cached ) && $response->is_cached ) {
+			. '&collection_id=' . urlencode( $response['collection_id'] )
+			. '&writer=' . urlencode( $response['writer'] );
+		if ( isset( $response['is_cached'] ) && $response['is_cached'] ) {
 			$query .= '&is_cached=1';
 		}
 		$wgOut->redirect( wfAppendQuery( $redirect, $query ) );
@@ -604,9 +604,9 @@ class Collection extends SpecialPage {
 		
 		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' );
 		$query = 'return_to=' . $wgRequest->getVal( 'return_to', '' )
-			. '&collection_id=' . urlencode( $response->collection_id )
-			. '&writer=' . urlencode( $response->writer );
-		if ( $response->is_cached ) {
+			. '&collection_id=' . urlencode( $response['collection_id'] )
+			. '&writer=' . urlencode( $response['writer'] );
+		if ( $response['is_cached'] ) {
 			$query .= '&is_cached=1';
 		}
 		$wgOut->redirect( wfAppendQuery( $redirect, $query ) );
@@ -632,28 +632,28 @@ class Collection extends SpecialPage {
 
 		$return_to = $wgRequest->getVal( 'return_to' );
 
-		$query = 'collection_id=' . urlencode( $response->collection_id )
-			. '&writer=' . urlencode( $response->writer )
+		$query = 'collection_id=' . urlencode( $response['collection_id'] )
+			. '&writer=' . urlencode( $response['writer'] )
 			. '&return_to=' . urlencode( $return_to );
 		
-		switch ( $response->state ) {
+		switch ( $response['state'] ) {
 		case 'progress':
 			$url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/', $query );
 			$wgOut->addMeta( 'http:refresh', '2; URL=' . $url );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
-			if ( $response->status->status != '' ) {
-				$statusText = $response->status->status;
-				if ( $response->status->article != '' ) {
-					$statusText .= wfMsg( 'coll-rendering_article', $response->status->article );
-				} else if ( $response->status->page != '' ) {
-					$statusText .= wfMsg( 'coll-rendering_page', $wgLang->formatNum( $response->status->page ) );
+			if ( isset($response['status']['status'] ) && $response['status']['status'] ) {
+				$statusText = $response['status']['status'];
+				if ( isset( $response['status']['article'] ) && $response['status']['article'] ) {
+					$statusText .= wfMsg( 'coll-rendering_article', $response['status']['article'] );
+				} else if ( isset( $response['status']['page'] ) && $response['status']['page'] ) {
+					$statusText .= wfMsg( 'coll-rendering_page', $wgLang->formatNum( $response['status']['page'] ) );
 				}
 				$status = wfMsgNoTrans( 'coll-rendering_status', $statusText );
 			} else {
 				$status = '';
 			}
 			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_text',
-				$wgLang->formatNum( $response->status->progress ),
+				$wgLang->formatNum( $response['status']['progress'] ),
 				$status
 			) );
 			break;
@@ -683,7 +683,7 @@ class Collection extends SpecialPage {
 			}
 			break;
 		default:
-			$wgOut->addWikiText( 'state: ' . $response->state );
+			$wgOut->addWikiText( 'state: ' . $response['state'] );
 		}
 	}
 	
@@ -759,7 +759,7 @@ class Collection extends SpecialPage {
 		if ( !$response ) {
 			return;
 		}	
-		$wgOut->redirect( $response->redirect_url );
+		$wgOut->redirect( $response['redirect_url'] );
 	}
 	
 	private function outputIntro() {
@@ -1298,7 +1298,7 @@ EOS
 			return false;
 		}
 		
-		$json = new Services_JSON();
+		$json = new Services_JSON( SERVICES_JSON_LOOSE_TYPE );
 		$json_response = $json->decode( $response );
 		
 		if ( !$json_response ) {
@@ -1310,11 +1310,11 @@ EOS
 			return false;
 		}
 		
-		if ( array_key_exists( 'error', get_object_vars( $json_response ) ) && $json_response->error ) {
+		if ( isset( $json_response['error'] ) && $json_response['error'] ) {
 			$wgOut->showErrorPage(
 				'coll-mwserve_failed_title',
 				'coll-mwserve_failed_msg',
-				array( $json_response->error )
+				array( $json_response['error'] )
 			);
 			return false;
 		}
