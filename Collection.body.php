@@ -641,7 +641,21 @@ class Collection extends SpecialPage {
 			$url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/', $query );
 			$wgOut->addMeta( 'http:refresh', '2; URL=' . $url );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
-			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_text', $wgLang->formatNum( $response->status->progress ) ) );
+			if ( $response->status->status != '' ) {
+				$statusText = $response->status->status;
+				if ( $response->status->article != '' ) {
+					$statusText .= wfMsg( 'coll-rendering_article', $response->status->article );
+				} else if ( $response->status->page != '' ) {
+					$statusText .= wfMsg( 'coll-rendering_page', $wgLang->formatNum( $response->status->page ) );
+				}
+				$status = wfMsgNoTrans( 'coll-rendering_status', $statusText );
+			} else {
+				$status = '';
+			}
+			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_text',
+				$wgLang->formatNum( $response->status->progress ),
+				$status
+			) );
 			break;
 		case 'finished':
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_finished_title' ) );
