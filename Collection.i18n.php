@@ -308,10 +308,13 @@ $messages['ar'] = array(
 	'coll-rendering_title' => 'عرض',
 	'coll-rendering_text' => "'''من فضلك انتظر أثناء توليد الوثيقة.'''
 
-التقدم: '''$1%'''.
+'''التقدم:''' $1% $2
 
 هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان.
 لو أن هذا لا يعمل، من فضلك اضغط زر التحديث في متصفحك.",
+	'coll-rendering_status' => "'''الحالة:''' $1",
+	'coll-rendering_article' => '  (المقالة: $1)',
+	'coll-rendering_page' => '  (الصفحة: $1)',
 	'coll-rendering_finished_title' => 'العرض انتهى',
 	'coll-rendering_finished_text' => "'''ملف الوثيقة تم توليده.'''
 '''[$1 اضغط هنا]''' لتنزيله إلى حاسوبك.
@@ -416,10 +419,13 @@ $messages['arz'] = array(
 	'coll-rendering_title' => 'عرض',
 	'coll-rendering_text' => "'''من فضلك انتظر أثناء توليد الوثيقة.'''
 
-التقدم: '''$1%'''.
+'''التقدم:''' $1% $2
 
 هذه الصفحة ينبغى أن يتم تحديثها كل عدة ثوان.
 لو أن هذا لا يعمل، من فضلك اضغط زر التحديث فى متصفحك.",
+	'coll-rendering_status' => "'''الحالة:''' $1",
+	'coll-rendering_article' => '   (المقالة: $1)',
+	'coll-rendering_page' => '   (الصفحة: $1)',
 	'coll-rendering_finished_title' => 'العرض انتهى',
 	'coll-rendering_finished_text' => "'''ملف الوثيقة تم توليده.'''
 '''[$1 اضغط هنا]''' لتنزيله إلى حاسوبك.
@@ -513,6 +519,14 @@ $messages['bg'] = array(
 	'coll-order_from_pp' => 'Поръчване на книга от $1',
 	'coll-about_pp' => 'За $1',
 	'coll-license' => 'Лиценз',
+);
+
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'coll-desc' => '[[Special:Collection|Prikuplja stranice]], pravi PDF datoteke',
+	'coll-yes' => 'Da',
 );
 
 /** Catalan (Català)
@@ -743,10 +757,13 @@ Möchtest du die aktuelle Sammlung überschreiben, die neuen Seiten anhängen od
 	'coll-rendering_title' => 'Beim Erstellen',
 	'coll-rendering_text' => "'''Bitte habe Geduld, während das Dokument erstellt wird.'''
 
-Fortschritt: '''$1 %'''.
+'''Fortschritt:''' $1 % $2.
 
 Diese Seite sollte sich alle paar Sekunden von selbst aktualisieren.
 Falls dieses jedoch nicht geschieht, so drücke bitte den „Aktualisieren“-Knopf (meist F5) deines Browsers.",
+	'coll-rendering_status' => "'''Status:''' $1",
+	'coll-rendering_article' => '  (Artikel: $1)',
+	'coll-rendering_page' => '  (Seite: $1)',
 	'coll-rendering_finished_title' => 'Fertig erstellt',
 	'coll-rendering_finished_text' => "'''Die Datei wurde erfolgreich erstellt.'''
 '''[$1 Klicke hier],''' um die Datei herunterzuladen.
@@ -917,10 +934,13 @@ Neniom pluaj paĝoj ne povas esti aldonitaj.',
 	'coll-rendering_title' => 'Generante',
 	'coll-rendering_text' => "'''Bonvolu atendi dum la dokumento generiĝis.'''
 
-Finita: '''$1 %'''.
+'''Finita:''' $1% $2
 
 Ĉi tiu paĝo aŭtomatike refreŝigu kelksekunde.
 Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.",
+	'coll-rendering_status' => "'''Statuso:''' $1",
+	'coll-rendering_article' => '  (vikipaĝo: $1)',
+	'coll-rendering_page' => '  (paĝo: $1)',
 	'coll-rendering_finished_title' => 'Generado finiĝis.',
 	'coll-notfound_title' => 'Kolekto Ne Trovita',
 	'coll-notfound_text' => 'Ne eblas trovi kolekto-paĝon.',
@@ -1167,8 +1187,11 @@ Aucune page ne peut être ajoutée.',
 
 Progression : '''$1 %'''.
 
-Cette page devrait s’actualiser régulièrement.
+Cette page devrait s’actualiser par intervalles réguliers de secondes.
 Si tel n'était pas le cas, veuillez cliquer sur le bouton d’actualisation de votre navigateur.",
+	'coll-rendering_status' => "'''Statut :''' $1",
+	'coll-rendering_article' => '  (page wiki : $1)',
+	'coll-rendering_page' => '  (page : $1)',
 	'coll-rendering_finished_title' => 'Rendu terminé',
 	'coll-rendering_finished_text' => "'''Le fichier document a été créé.'''
 [$1 Cliquez ici] pour le télécharger sur votre ordinateur.
@@ -1874,10 +1897,13 @@ Si desidera sovrascrivere la raccolta corrente, aggiungere il nuovo contenuto o 
 	'coll-rendering_title' => 'Conversione',
 	'coll-rendering_text' => "'''Attendere mentre il documento viene generato.'''
 
-Avanzamento: '''$1%'''.
+'''Avanzamento:''' $1% $2
 
 Questa pagina dovrebbe aggiornarsi automaticamente ogni pochi secondi.
 Se questo non funziona, premi il pulsante di aggiornamento del tuo browser.",
+	'coll-rendering_status' => "'''Stato:''' $1",
+	'coll-rendering_article' => '  (pagina wiki: $1)',
+	'coll-rendering_page' => '  (pagina: $1)',
 	'coll-rendering_finished_title' => 'Conversione terminata',
 	'coll-rendering_finished_text' => "'''Il documento è stato generato.'''
 '''[$1 Fai clic qui]''' per scaricarlo sul tuo computer.
@@ -2265,12 +2291,15 @@ Wëllt Dir déi duerch är Sammlung ersetzen?',
 	'coll-limit_exceeded_text' => 'Är Sammlung ass ze grouss.
 Et kënne keng Säite méi derbäigesat ginn.',
 	'coll-rendering_title' => 'Maachen',
-	'coll-rendering_text' => "'''Gedëllegt Iech w.e.g. bis D'Dokument zesummegestallt ass.'''
+	'coll-rendering_text' => "'''Gedëllegt Iech w.e.g. bis d'Dokument zesummegestallt ass.'''
 
 Fortschrëtt: '''$1%'''.
 
 Dës Säit gëtt normalerweis automatesch aktualiséiert.
 Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh Knäppche vun ärem Browser.",
+	'coll-rendering_status' => "'''Statut :''' $1",
+	'coll-rendering_article' => ' (Wiki Säit: $1)',
+	'coll-rendering_page' => ' (Säit: $1)',
 	'coll-rendering_finished_title' => 'Fäerdeg gemaach',
 	'coll-notfound_title' => 'Sammlung net fonnt',
 	'coll-notfound_text' => "D'Sammlungs-Säit konnt net fonnt ginn.",
@@ -2474,6 +2503,10 @@ $messages['ms'] = array(
 	'coll-download' => 'Muat turun',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Buang',
+	'coll-move_to_top' => 'Naikkan ke puncak',
+	'coll-move_up' => 'Naikkan',
+	'coll-move_down' => 'Turunkan',
+	'coll-move_to_bottom' => 'Turunkan ke dasar',
 	'coll-title' => 'Tajuk:',
 	'coll-subtitle' => 'Tajuk kecil:',
 	'coll-contents' => 'Kandungan',
@@ -2645,10 +2678,13 @@ U kunt geen pagina's meer toevoegen.",
 	'coll-rendering_title' => 'Bezig met renderen',
 	'coll-rendering_text' => "'''Het document wordt aangemaakt.'''
 
-Voortgang: '''\$1%'''.
+'''Voortgang:''' \$1% \$2.
 
 Deze pagina wordt regelmatig bijgewerkt.
 Als dit niet werkt, klik dan op de knop \"Vernieuwen\" in uw browser.",
+	'coll-rendering_status' => "'''Status:''' $1",
+	'coll-rendering_article' => '(wikipagina: $1)',
+	'coll-rendering_page' => '(pagina: $1)',
 	'coll-rendering_finished_title' => 'Renderen afgerond',
 	'coll-rendering_finished_text' => "'''Het document is aangemaakt.'''
 '''[$1 Klik hier]''' om het te downloaden.
@@ -2760,7 +2796,7 @@ Vil du erstatte den eksisterende samlingen, legge til det nye innholdet eller av
 	'coll-rendering_title' => 'Oppretter',
 	'coll-rendering_text' => "'''Vent mens dokumentet opprettes.'''
 
-Framskritt: '''$1&nbsp;%'''.
+'''Framskritt:''' $1 % $2
 
 Denne siden skal oppfriskes automatisk med noen sekunders mellomrom.
 Om den ikke gjør det, trykk på oppdateringsknappen i nettleseren din.",
@@ -2987,10 +3023,13 @@ Nie można dodać więcej stron.',
 	'coll-rendering_title' => 'Renderowanie',
 	'coll-rendering_text' => "'''Proszę czekać, trwa generowanie dokumentu.'''
 
-Postęp: '''$1%'''.
+'''Postęp''': $1% $2
 
 Ta strona powinna się automatycznie odświeżać co kilka sekund.
 Jeśli tak nie jest, proszę odświeżyć swoją przeglądarkę.",
+	'coll-rendering_status' => "'''Status:''' $1",
+	'coll-rendering_article' => '(wiki strona: $1)',
+	'coll-rendering_page' => '(strona: $1)',
 	'coll-rendering_finished_title' => 'Renderowanie zakończone',
 	'coll-rendering_finished_text' => "'''Dokument został wygenerowany.'''
 '''[$1 Kliknij tutaj]''' by pobrać go na swój komputer.
@@ -3212,7 +3251,7 @@ $messages['ru'] = array(
 	'coll-show_collection' => 'Показать коллекцию',
 	'coll-help_collections' => 'Справка по коллекциям',
 	'coll-empty' => 'пустая',
-	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страниц}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страницы|страниц}}',
 	'coll-download_as' => 'Загрузить как $1',
 	'coll-noscript_text' => '<h1>Требуется JavaScript!</h1>
 <strong>Ваш браузер не поддерживает JavaScript или данная поддержка была отключена.
@@ -3247,6 +3286,8 @@ $messages['ru'] = array(
 	'coll-notitle_title' => 'Заголовок страницы не может быть определён.',
 	'coll-post_failed_title' => 'POST-запрос не выполнен',
 	'coll-post_failed_msg' => 'POST-запрос к $1 не выполнен ($2).',
+	'coll-mwserve_failed_title' => 'Ошибка сервера отрисовки',
+	'coll-mwserve_failed_msg' => 'На сервере отрисовки произошла ошибка: <nowiki>$1</nowiki>',
 	'coll-enter_title' => 'Введите название коллекции:',
 	'coll-error_reponse' => 'Ошибка ответа сервера',
 	'coll-empty_collection' => 'Пустая коллекция',
@@ -3275,10 +3316,13 @@ $messages['ru'] = array(
 	'coll-rendering_title' => 'Создание',
 	'coll-rendering_text' => "'''Пожалуйста, подождите, идёт создание документа.'''
 
-Ход работы: '''$1 %'''.
+'''Ход работы:''' $1 % $2.
 
 Эта страница должна обновляться раз в несколько секунд.
 Если этого не происходит, пожалуйста, нажмите кнопку «обновить» браузера.",
+	'coll-rendering_status' => "'''Статус:''' $1",
+	'coll-rendering_article' => '(статья: $1)',
+	'coll-rendering_page' => '  (страница: $1)',
 	'coll-rendering_finished_title' => 'Создание завершено',
 	'coll-rendering_finished_text' => "'''Файл документа создан.'''
 '''[$1 Нажмите здесь]''', чтобы скачать его к себе на компьютер.
@@ -3287,6 +3331,7 @@ $messages['ru'] = array(
 * Не удовлетворены результатом? Возможности его улучшения описаны на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].",
 	'coll-notfound_title' => 'Коллекция не найдена',
 	'coll-notfound_text' => 'Невозможно найти страницу коллекции.',
+	'coll-is_cached' => '<ul><li>Найдена закэшированная версия этого документа, отрисовка не потребовалась. <a href="$1">Всё-таки запустить отрисовку.</a></li></ul>',
 	'coll-excluded-templates' => '* Шаблоны в категории [[:Категория:$1|$1]] были исключены.',
 	'coll-blacklisted-templates' => '* Шаблоны в чёрном списке [[:$1]] были исключены.',
 	'coll-return_to_collection' => '<p>Назад к <a href="$1">$2</a></p>',
@@ -3839,6 +3884,7 @@ $messages['uk'] = array(
 	'coll-show_collection' => 'Показати колекцію',
 	'coll-help_collections' => 'Довідка про колекції',
 	'coll-empty' => 'порожня',
+	'coll-n_pages' => '$1 {{PLURAL:$1|сторінка|сторінки|сторінок}}',
 	'coll-noscript_text' => '<h1>Потрібен JavaScript!</h1>
 <strong>Ваш браузер не підтримує JavaScript або ця підтримка вимкнена.
 Ця сторінка не буде працювати правильно, якщо JavaScript не ввімкнений.</strong>',
