@@ -102,10 +102,13 @@ No more pages can be added.',
 	'coll-rendering_title'            => 'Rendering',
 	'coll-rendering_text'             => "'''Please wait while the document is being generated.'''
 
-Progress: '''$1%'''.
+'''Progress:''' $1% $2
 
 This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.",
+	'coll-rendering_status'           => "'''Status:''' $1",
+  'coll-rendering_article'          => ' (article: $1)',
+  'coll-rendering_page'             => ' (page: $1)',
 	'coll-rendering_finished_title'   => 'Rendering finished',
 	'coll-rendering_finished_text'    => "'''The document file has been generated.'''
 '''[$1 Click here]''' to download it to your computer.
