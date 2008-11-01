@@ -1044,9 +1044,9 @@ $messages['fa'] = array(
 
 امکان اضافه کردن صفحه جدیدی را ندارید.',
 	'coll-rendering_title' => 'در حال ترجمه دادن',
-	'coll-rendering_text' => "'''لطفاً در مدتی که سند در حال ایجاد است شکیبا باشید.'''
+	'coll-rendering_text' => "!!عدم قطعیت!!'''لطفاً در مدتی که سند در حال ایجاد است شکیبا باشید.'''
 
-پیشرفت: '''$1%'''.
+'''پیشرفت:''' $1% $2
 
 این صفحه باید به طور خودکار هر چند ثانیه یکبار تازه شود.
 اگر این کار صورت نمی‌گیرد، لطفاً دکمهٔ تازه کردن صفحه را در مرورگر خود بزنید.",
@@ -1076,6 +1076,7 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Cimon Avaro
  * @author Crt
+ * @author Silvonen
  * @author Str4nd
  */
 $messages['fi'] = array(
@@ -1093,6 +1094,10 @@ $messages['fi'] = array(
 	'coll-download_as' => 'Lataa $1-tiedostona',
 	'coll-helppage' => 'Help:Kokoelmat',
 	'coll-download' => 'Lataa',
+	'coll-contents' => 'Sisältö',
+	'coll-sort_alphabetically' => 'Lajittele sivut aakkosjärjestykseen',
+	'coll-save_collection_title' => 'Tallenna kokoelma',
+	'coll-personal_collection_label' => 'Henkilökohtainen kokoelma:',
 	'coll-overwrite_title' => 'Sivu on olemassa. Ylikirjoitetaanko?',
 	'coll-yes' => 'Kyllä',
 	'coll-no' => 'Ei',
@@ -1572,7 +1577,107 @@ $messages['hil'] = array(
  */
 $messages['hr'] = array(
 	'coll-desc' => '[[Special:Collection|Sakupi stranice]], izradi PDF',
+	'coll-collection' => 'Zbirka',
+	'coll-collections' => 'Zbirke',
+	'coll-portlet_title' => 'Napravi knjigu',
+	'coll-add_page' => 'Dodaj wiki stranicu',
+	'coll-remove_page' => 'Ukloni wiki stranicu',
+	'coll-add_category' => 'Dodaj kategoriju',
+	'coll-load_collection' => 'Učitaj zbirku',
+	'coll-show_collection' => 'Pokaži zbirku',
+	'coll-empty' => 'prazno',
+	'coll-download_as' => 'Preuzmi kao $1',
+	'coll-noscript_text' => '<h1>Potreban je JavaScript!</h1>
+<strong>Vaš preglednik nema podršku za JavaScript ili je isključena. Ova stranica neće raditi ispravno, ako JavaScript nije omogućen.</strong>',
+	'coll-intro_text' => 'Možete skupiti stranice, napraviti i preuzeti PDF datoteku iz zbirke stranica i spremiti zbirku za kasniju upotrebu ili razmjenu.
+
+vidi [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više obavijesti.',
+	'coll-helppage' => 'Pomoć:Zbirke',
+	'coll-too_big_cat' => 'Ova kategorija sadrži više od %PARAM% stranica, samo prvih %PARAM% stranica može biti dodano u vašu zbirku.
+Želite ih dodati?',
+	'coll-my_collection' => 'Moja zbirka',
+	'coll-download_title' => 'Preuzmi zbirku',
+	'coll-download_text' => 'Za preuzimanje automatski napravljenog dokumenta sa stranicama iz vaše zbirke, odaberite format i kliknite na tipku.',
+	'coll-download' => 'Preuzmi',
+	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Ukloni',
+	'coll-move_to_top' => 'Premjesti na vrh',
+	'coll-move_up' => 'Premjesti gore',
+	'coll-move_down' => 'Premjesti dolje',
+	'coll-move_to_bottom' => 'Premjesti na dno',
+	'coll-title' => 'Naslov:',
+	'coll-subtitle' => 'Podnaslov:',
+	'coll-contents' => 'Sadržaj',
+	'coll-create_chapter' => 'Napravi novo poglavlje',
+	'coll-sort_alphabetically' => 'Rasporedi stranice abecedno',
+	'coll-clear_collection' => 'Očisti zbirku',
+	'coll-clear_confirm' => 'Dali stvarno želite očistiti svoju zbirku?',
+	'coll-rename' => 'Preimenuj',
+	'coll-new_chapter' => 'Upišite ime za novo poglavlje',
+	'coll-rename_chapter' => 'Upišite novo ime za poglavlje',
+	'coll-no_such_category' => 'Nema takve kategorije',
+	'coll-notitle_title' => 'Naslov stranice nije mogao biti određen',
+	'coll-post_failed_title' => 'POST zahtjev je neuspješan',
+	'coll-post_failed_msg' => 'POST zahtjev za $1 je neuspješan ($2).',
+	'coll-mwserve_failed_title' => 'Greška na serveru za izvođenje zahtjeva',
+	'coll-mwserve_failed_msg' => 'Dogodila se greška na serveru za izvođenje zahtijeva: <nowiki>$1</nowiki>',
+	'coll-enter_title' => 'Upišite naslov za zbirku:',
+	'coll-error_reponse' => 'Greška u odgovoru sa servera',
+	'coll-empty_collection' => 'Prazna zbirka',
+	'coll-revision' => 'Izmjena: %PARAM%',
+	'coll-save_collection_title' => 'Spremi zbirku',
+	'coll-save_collection_text' => 'Ako želite spremiti zbirku za kasniju upotrebu, odaberite tip zbirke i upišite naslov stranice:',
+	'coll-login_to_save' => 'Ako želite spremiti zbirku za kasniju upotrebu, molimo [[Special:UserLogin|prijavite se ili napravite suradnički račun]].',
+	'coll-personal_collection_label' => 'Osobna zbirka:',
+	'coll-community_collection_label' => 'Zajednička zbirka:',
+	'coll-save_collection' => 'Spremi zbirku',
+	'coll-save_category' => 'Zbirke su spremljene u kategoriji [[:Category:Collections|Zbirki]].',
+	'coll-overwrite_title' => 'Stranica postoji.
+Prepisati preko?',
+	'coll-overwrite_text' => 'Stranica s nazivom [[:$1]] već postoji.
+Želite li da bude zamijenjena s vašom zbirkom?',
+	'coll-yes' => 'Da',
+	'coll-no' => 'Ne',
+	'coll-disable_collection_text' => '<a href="$1">Kliknite ovdje</a> za prestanak korištenja zbirki za sada.',
+	'coll-load_overwrite_text' => 'Već imate neke stranice u svojoj zbirci.
+Želite li prepisati svoju trenutačnu zbirku novom, samo dodati novi sadržaj ili zaustaviti učitavanje ove zbirke?',
+	'coll-overwrite' => 'Prepisati preko',
+	'coll-append' => 'Nadodaj',
+	'coll-cancel' => 'Zaustavi',
+	'coll-limit_exceeded_title' => 'Zbirka je prevelika',
+	'coll-limit_exceeded_text' => 'Vaša zbirka stranica je prevelika.
+Nove stranice ne mogu biti dodane.',
+	'coll-rendering_title' => 'Izvođenje',
+	'coll-rendering_text' => "'''Molimo pričekajte dok se dokument radi.'''
+
+'''Napredovanje:''' $1% $2
+
+Ova stranice bi se trebala automatski osvježiti svakih par sekundi.
+Ako ovo ne radi, molimo pritisnite tipku za osvježavanje u svom pregledniku.",
+	'coll-rendering_status' => "'''Stanje:''' $1",
+	'coll-rendering_article' => '  (wiki stranica: $1)',
+	'coll-rendering_page' => '  (stranica: $1)',
+	'coll-rendering_finished_title' => 'Izvođenje završeno',
+	'coll-rendering_finished_text' => "'''Datoteka je napravljena.'''
+'''[$1 Kliknite ovdje]'''za preuzimanje datoteke na vaše računalo.
+
+Napomene:
+* Niste zadovoljni dobivenim rezultatom? Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za mogućnosti poboljšanja.",
+	'coll-notfound_title' => 'Zbirka nije pronađena',
+	'coll-notfound_text' => 'Stranica zbirke se ne može pronaći.',
+	'coll-is_cached' => '<ul><li>Pronađena je verzija datoteke u pričuvnoj memoriji, stoga izvođenje datoteke nije potrebno.. <a href="$1">Zahtijevaj ponovno izvođenje.</a></li></ul>',
+	'coll-excluded-templates' => '* Predlošci u kategoriji [[:Category:$1|$1]] su ostali isključeni.',
+	'coll-blacklisted-templates' => '* Predlošci na crnoj listi [[:$1]] su ostali isključeni.',
+	'coll-return_to_collection' => '<p>Vrati se na <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Naručite ispisanu knjigu',
+	'coll-book_text' => 'Možete naručiti ispisanu knjigu koja sadrži stranice iz vaše zbirke, posjetite neki od slijedećih partnera za ispisivanje na zahtjev (POD):',
+	'coll-order_from_pp' => 'Naručite knjigu od $1',
+	'coll-about_pp' => 'O $1',
+	'coll-invalid_podpartner_title' => 'Neispravan POD partner',
+	'coll-invalid_podpartner_msg' => 'Ponuđeni POD partner nije valjan.
+Molimo kontaktirajte svog MediaWiki administratora.',
+	'coll-license' => 'Licencija',
+	'coll-return_to' => 'Vrati se na [[:$1]]',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -2279,6 +2384,7 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-personal_collection_label' => 'Perséinlech Sammlung',
 	'coll-community_collection_label' => 'Gemeinsam Kollektioun:',
 	'coll-save_collection' => 'Sammlung späicheren',
+	'coll-save_category' => 'Sammlunge ginn an der Kategorie [[:Category:Collections|Sammlunge]] gespäichert.',
 	'coll-overwrite_title' => "D'Säit gëtt et. Iwwerschreiwen?",
 	'coll-overwrite_text' => 'Et gëtt schonn eng Säit mam Numm [:$1]].
 Wëllt Dir déi duerch är Sammlung ersetzen?',
@@ -3885,6 +3991,7 @@ $messages['uk'] = array(
 	'coll-help_collections' => 'Довідка про колекції',
 	'coll-empty' => 'порожня',
 	'coll-n_pages' => '$1 {{PLURAL:$1|сторінка|сторінки|сторінок}}',
+	'coll-download_as' => 'Завантажити як $1',
 	'coll-noscript_text' => '<h1>Потрібен JavaScript!</h1>
 <strong>Ваш браузер не підтримує JavaScript або ця підтримка вимкнена.
 Ця сторінка не буде працювати правильно, якщо JavaScript не ввімкнений.</strong>',
@@ -3892,9 +3999,13 @@ $messages['uk'] = array(
 
 Подробиці можна знайти на [[{{MediaWiki:Coll-helppage}}|довідковій сторінці про колекції]].",
 	'coll-helppage' => 'Help:Колекції',
+	'coll-too_big_cat' => 'Категорія містить понад %PARAM% сторінок, тільки %PARAM% сторінок можна додати до вашої колекції.
+Бажаєте їх додати?',
 	'coll-my_collection' => 'Моя колекція',
 	'coll-download_title' => 'Завантажити колекцію як PDF',
 	'coll-download_text' => 'Щоб завантажити автоматично створений PDF-файл з вашою колекцією сторінок, натисніть кнопку.',
+	'coll-download' => 'Завантажити',
+	'coll-format_label' => 'Формат:',
 	'coll-remove' => 'Вилучити',
 	'coll-move_to_top' => 'Перемістити вгору',
 	'coll-move_up' => 'Перемістити вище',
@@ -3914,6 +4025,8 @@ $messages['uk'] = array(
 	'coll-notitle_title' => 'Заголовок сторінки неможливо визначити.',
 	'coll-post_failed_title' => 'POST-запит не виконаний',
 	'coll-post_failed_msg' => 'POST-запит до $1 не виконаний ($2).',
+	'coll-mwserve_failed_title' => 'Помилка сервера відображення',
+	'coll-mwserve_failed_msg' => 'На сервері відображення трапилася помилка: <nowiki>$1</nowiki>',
 	'coll-enter_title' => 'Уведіть назву колекції:',
 	'coll-error_reponse' => 'Помилка відповіді сервера',
 	'coll-empty_collection' => 'Порожня колекція',
@@ -3924,11 +4037,13 @@ $messages['uk'] = array(
 	'coll-personal_collection_label' => 'Особиста колекція:',
 	'coll-community_collection_label' => 'Колекція спільноти:',
 	'coll-save_collection' => 'Зберегти колекцію',
+	'coll-save_category' => 'Колекції збережено у категорії [[:Категорія:Колекції|Колекції]].',
 	'coll-overwrite_title' => 'Сторінка існує. Перезаписати?',
 	'coll-overwrite_text' => 'Сторінка з назвою [[:$1]] вже існує.
 Ви хочете, щоб вона була замінена вашою колекцією?',
 	'coll-yes' => 'Так',
 	'coll-no' => 'Ні',
+	'coll-disable_collection_text' => '<a href="$1">Клацніть тут</a>, щоб перестати використовувати колекції зараз.',
 	'coll-load_overwrite_text' => 'У вас уже є кілька сторінок у колекції.
 Ви хочете перезаписати вашу поточну колекцію, додати новий матеріал чи скасувати відкриття цієї колекції?',
 	'coll-overwrite' => 'Перезаписати',
@@ -3937,6 +4052,14 @@ $messages['uk'] = array(
 	'coll-limit_exceeded_title' => 'Колекція дуже велика',
 	'coll-limit_exceeded_text' => 'Ваша колекція дуже велика.
 До неї не можна більше додавати сторінок.',
+	'coll-rendering_title' => 'Створення',
+	'coll-rendering_text' => "'''Будь ласка, зачекайте поки триває створення документа.'''
+
+'''Хід роботи:''' $1% $2
+
+Ця сторінка повинна автоматично оновлюватися кожні кілька секунд.
+Якщо цього не відбувається, оновіть цю сторінку у вашому веб-оглядачі.",
+	'coll-rendering_status' => "'''Статус:''' $1",
 	'coll-notfound_title' => 'Колекція не знайдена',
 	'coll-notfound_text' => 'Неможливо знайти сторінку колекції.',
 	'coll-return_to_collection' => '<p>Назад до <a href="$1">$2</a></p>',
@@ -4008,12 +4131,15 @@ Vuto che la vegna rinpiazà co la to colezion?',
 	'coll-limit_exceeded_title' => 'Colezion massa granda',
 	'coll-limit_exceeded_text' => 'La to colezion la xe massa granda. No se pode zontarghe altre pàxene.',
 	'coll-rendering_title' => 'Conversion',
-	'coll-rendering_text' => "'''Par piaser, speta n'atimo che el documento el vegna generà.'''
+	'coll-rendering_text' => "Par piaser, speta n'atimo che el documento el vegna generà.'''
 
-Avansamento: '''$1%'''.
+'''Avansamento:''' $1% $2
 
 Sta pàxena la dovarìa ajornarse da par ela ogni póchi secondi.
 Se questo no sucede, struca el boton de ajornamento del to browser.",
+	'coll-rendering_status' => "'''Stato:''' $1",
+	'coll-rendering_article' => '   (pàxena wiki: $1)',
+	'coll-rendering_page' => '   (pàxena: $1)',
 	'coll-rendering_finished_title' => 'Conversion finìa',
 	'coll-rendering_finished_text' => "'''El documento el xe stà generà.'''
 '''[$1 Struca chì]''' par descargarlo sul to computer.
@@ -4021,6 +4147,7 @@ Se questo no sucede, struca el boton de ajornamento del to browser.",
 Note:
 * Sito mia contento del risultato? Lèzi [[{{MediaWiki:Coll-helppage}}|la pàxena de ajuto su le colezion]] par saver come mejorarlo.",
 	'coll-notfound_title' => 'Colezion mia catà',
+	'coll-return_to_collection' => '<p>Torna indrìo a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ordina libro stanpà',
 	'coll-order_from_pp' => 'Ordina libro da $1',
 	'coll-about_pp' => 'Informassion su $1',

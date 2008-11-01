@@ -52,6 +52,11 @@ $aliases['he'] = array(
 	'Collection' => array( 'אוסף' ),
 );
 
+/** Croatian (Hrvatski) */
+$aliases['hr'] = array(
+	'Collection' => array( 'Zbirka' ),
+);
+
 /** Indonesian (Bahasa Indonesia) */
 $aliases['id'] = array(
 	'Collection' => array( 'Koleksi' ),
