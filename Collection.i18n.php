@@ -485,10 +485,11 @@ $messages['ast'] = array(
  */
 $messages['bg'] = array(
 	'coll-desc' => 'Добавя възможност за [[Special:Collection|събиране на страници]] и преобразуването им в PDF',
-	'coll-add_page' => 'Добавяне на страница',
-	'coll-remove_page' => 'Премахване на страница',
+	'coll-add_page' => 'Добавяне на уики-страница',
+	'coll-remove_page' => 'Премахване на уики-страница',
 	'coll-add_category' => 'Добавяне на категория',
 	'coll-empty' => 'празна',
+	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страници}}',
 	'coll-download_as' => 'Изтегляне като $1',
 	'coll-noscript_text' => '<h1>Изисква се Джаваскрипт!</h1>
 <strong>Използваният браузър не поддържа Джаваскрипт или поддръжката на Джаваскрипт е изключена.
@@ -515,10 +516,14 @@ $messages['bg'] = array(
 	'coll-overwrite' => 'Заместване',
 	'coll-append' => 'Добавяне',
 	'coll-cancel' => 'Отказване',
+	'coll-rendering_status' => "'''Статут:''' $1",
+	'coll-rendering_article' => '  (уики-страница: $1)',
+	'coll-rendering_page' => '  (страница: $1)',
 	'coll-return_to_collection' => '<p>Връщане към <a href="$1">$2</a></p>',
 	'coll-order_from_pp' => 'Поръчване на книга от $1',
 	'coll-about_pp' => 'За $1',
 	'coll-license' => 'Лиценз',
+	'coll-return_to' => 'Връщане към [[:$1]]',
 );
 
 /** Bosnian (Bosanski)
@@ -1308,9 +1313,9 @@ Non se poden engadir máis páxinas.',
 	'coll-rendering_title' => 'Renderizando',
 	'coll-rendering_text' => "'''Por favor, agarde mentres o documento é xerado.'''
 
-Progreso: '''\$1%'''.
+'''Progreso:''' \$1% \$2
 
-Esta páxina refrescarase cada poucos segundos.
+Esta páxina debería refrescarse cada poucos segundos.
 Se non vai, por favor, prema no botón \"Refrescar\" do seu navegador.",
 	'coll-rendering_finished_title' => 'Finalizou a renderización',
 	'coll-rendering_finished_text' => "'''O documento foi xerado.'''
@@ -1585,7 +1590,9 @@ $messages['hr'] = array(
 	'coll-add_category' => 'Dodaj kategoriju',
 	'coll-load_collection' => 'Učitaj zbirku',
 	'coll-show_collection' => 'Pokaži zbirku',
+	'coll-help_collections' => 'Zbirke pomoć',
 	'coll-empty' => 'prazno',
+	'coll-n_pages' => '$1 {{PLURAL:$1|stranica|stranice|stranica}}',
 	'coll-download_as' => 'Preuzmi kao $1',
 	'coll-noscript_text' => '<h1>Potreban je JavaScript!</h1>
 <strong>Vaš preglednik nema podršku za JavaScript ili je isključena. Ova stranica neće raditi ispravno, ako JavaScript nije omogućen.</strong>',
@@ -1776,9 +1783,9 @@ $messages['ia'] = array(
 	'coll-desc' => '[[Special:Collection|Paginas de collection]], generar files PDF',
 	'coll-collection' => 'Collection',
 	'coll-collections' => 'Collectiones',
-	'coll-portlet_title' => 'Collection',
-	'coll-add_page' => 'Adder pagina',
-	'coll-remove_page' => 'Remover pagina',
+	'coll-portlet_title' => 'Crear un libro',
+	'coll-add_page' => 'Adder un pagina wiki',
+	'coll-remove_page' => 'Remover pagina wiki',
 	'coll-add_category' => 'Adder categoria',
 	'coll-load_collection' => 'Cargar collection',
 	'coll-show_collection' => 'Monstrar collection',
@@ -1831,6 +1838,7 @@ Esque tu vole adder los?',
 	'coll-personal_collection_label' => 'Collection personal:',
 	'coll-community_collection_label' => 'Collection communitari:',
 	'coll-save_collection' => 'Immagazinar collection',
+	'coll-save_category' => 'Le collectiones es immagazinate in le categoria [[:Category:Collections|Collectiones]].',
 	'coll-overwrite_title' => 'Le pagina existe ja.
 Superscriber lo?',
 	'coll-overwrite_text' => 'Existe ja un pagina con le nomine [[:$1]].
@@ -1849,16 +1857,19 @@ Non es possibile adder plus paginas.',
 	'coll-rendering_title' => 'Rendition',
 	'coll-rendering_text' => "'''Per favor attende durante le generation del documento.'''
 
-Progresso: '''$1%'''.
+'''Progresso:''' $1% $2
 
-Iste pagina debe refrescar se cata pauc secundas.
+Iste pagina deberea refrescar se automaticamente cata pauc secundas.
 Si isto non functiona, per favor preme le button de refrescar in tu navigator.",
+	'coll-rendering_status' => "'''Stato:''' $1",
+	'coll-rendering_article' => '   (pagina wiki: $1)',
+	'coll-rendering_page' => '   (pagina: $1)',
 	'coll-rendering_finished_title' => 'Rendition finite',
 	'coll-rendering_finished_text' => "'''Le file del documento ha essite generate.'''
-'''[$1 Clicca hic]''' pro discargar lo a tu computator.
+'''[$1 Clicca hic]''' pro discargar lo verso tu computator.
 
-Non satisfacite con le resultato?
-Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le collectiones]] pro possibilitates de meliorar lo.",
+Notas:
+* Non satisfacite con le resultato? Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le collectiones]] pro possibilitates de meliorar lo.",
 	'coll-notfound_title' => 'Collection non trovate',
 	'coll-notfound_text' => 'Non poteva trovar le pagina de collection.',
 	'coll-is_cached' => '<ul><li>Un version del documento ha essite trovate in le cache, ergo non esseva necessari facer un altere rendition. <a href="$1">Fortiar le re-rendition.</a></li></ul>',
@@ -4112,12 +4123,17 @@ La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</s
 	'coll-no_such_category' => 'Nissuna categoria',
 	'coll-post_failed_title' => 'Richiesta POST mia riussìa',
 	'coll-post_failed_msg' => 'La richiesta POST a $1 no la xe mia riussìa ($2).',
+	'coll-mwserve_failed_title' => 'Eròr sul server de conversion',
+	'coll-mwserve_failed_msg' => 'Xe capità un eròr sul server de conversion: <nowiki>$1</nowiki>',
 	'coll-enter_title' => 'Inserissi un titolo par la colezion:',
 	'coll-empty_collection' => 'Colezion vòda',
 	'coll-revision' => 'Revision: %PARAM%',
 	'coll-save_collection_title' => 'Salva colezion',
+	'coll-save_collection_text' => 'Par salvar sta colezion e dopararla in futuro, siegli un tipo de colezion e inserissi un titolo par la pàxena:',
 	'coll-personal_collection_label' => 'Colezion personal:',
+	'coll-community_collection_label' => 'Colezion de la comunità:',
 	'coll-save_collection' => 'Salva colezion',
+	'coll-save_category' => 'Le colezion le vien salvà in te la categoria [[:Category:Collections|Colezion]].',
 	'coll-overwrite_title' => 'La pàxena la esiste de zà.
 Vuto che ghe scriva insima?',
 	'coll-overwrite_text' => 'Na pàxena col nome [[:$1]] la esiste de zà.
@@ -4147,10 +4163,14 @@ Se questo no sucede, struca el boton de ajornamento del to browser.",
 Note:
 * Sito mia contento del risultato? Lèzi [[{{MediaWiki:Coll-helppage}}|la pàxena de ajuto su le colezion]] par saver come mejorarlo.",
 	'coll-notfound_title' => 'Colezion mia catà',
+	'coll-notfound_text' => 'No se cata da nissuna parte la pàxena de la colezion.',
+	'coll-excluded-templates' => '* I modèi in te la categoria [[:Category:$1|$1]] i xe stà esclusi.',
+	'coll-blacklisted-templates' => '* I modèi in te la lista nera [[:$1]] i xe stà esclusi.',
 	'coll-return_to_collection' => '<p>Torna indrìo a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ordina libro stanpà',
 	'coll-order_from_pp' => 'Ordina libro da $1',
 	'coll-about_pp' => 'Informassion su $1',
+	'coll-invalid_podpartner_title' => 'Partner POD mia valido',
 	'coll-license' => 'Licensa',
 	'coll-return_to' => 'Torna indrìo a [[:$1]]',
 );
@@ -4236,10 +4256,13 @@ Không thể thêm trang được nữa.',
 	'coll-rendering_title' => 'Đang kết xuất',
 	'coll-rendering_text' => "'''Xin hãy chờ xong kết xuất tài liệu.'''
 
-Tiến độ: '''$1%'''.
+'''Tiến độ:''' $1% $2
 
 Trình duyệt sẽ làm tươi trang này vài giây một lần.
 Nếu không thấy thay đổi gì, xin hãy bấm nút Refresh hoặc Reload trong trình duyệt.",
+	'coll-rendering_status' => "'''Trạng thái:''' $1",
+	'coll-rendering_article' => '  (trang wiki: $1)',
+	'coll-rendering_page' => '  (trang: $1)',
 	'coll-rendering_finished_title' => 'Kết xuất xong',
 	'coll-rendering_finished_text' => "'''Xong kết xuất tập tin tài liệu.'''
 '''[$1 Tải nó về]''' máy tính của mình.
