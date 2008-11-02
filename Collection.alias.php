@@ -32,6 +32,11 @@ $aliases['as'] = array(
 	'Collection' => array( 'সংগ্ৰহ' ),
 );
 
+/** Breton (Brezhoneg) */
+$aliases['br'] = array(
+	'Collection' => array( 'Dastumad' ),
+);
+
 /** German (Deutsch) */
 $aliases['de'] = array(
 	'Collection' => array( 'Sammlung' ),
@@ -100,6 +105,11 @@ $aliases['no'] = array(
 /** Occitan (Occitan) */
 $aliases['oc'] = array(
 	'Collection' => array( 'Colleccion' ),
+);
+
+/** Polish (Polski) */
+$aliases['pl'] = array(
+	'Collection' => array( 'Kolekcja' ),
 );
 
 /** Swedish (Svenska) */
