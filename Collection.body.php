@@ -55,6 +55,8 @@ class Collection extends SpecialPage {
 
 		wfLoadExtensionMessages( 'Collection' );
 		
+		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );
+		
 		if ( $par == 'add_article/' ) {
 			if ( self::countArticles() >= $wgCollectionMaxArticles ) {
 				$this->limitExceeded();
@@ -201,7 +203,6 @@ class Collection extends SpecialPage {
 		$this->setHeaders();
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/json2.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
-		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );
 		$this->outputBookSection();
 		$this->outputDownloadSection();
 		$this->outputSaveSection();
@@ -614,13 +615,20 @@ class Collection extends SpecialPage {
 	
 	function rendering() {
 		global $wgCollectionTemplateExclusionCategory;
+		global $wgCollectionVersion;
+		global $wgJsMimeType;
 		global $wgPDFTemplateBlacklist;
 		global $wgOut;
 		global $wgRequest;
+		global $wgScriptPath;
 		global $wgServer;
+		global $wgStyleVersion;
 		global $wgLang;
 
 		$this->setHeaders();
+		
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/json2.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
 		
 		$response = self::mwServeCommand( 'render_status', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
@@ -638,8 +646,12 @@ class Collection extends SpecialPage {
 		
 		switch ( $response['state'] ) {
 		case 'progress':
-			$url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/', $query );
-			$wgOut->addMeta( 'http:refresh', '2; URL=' . $url );
+			$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/', $query ) );
+			$wgOut->addHeadItem( 'refresh-nojs', '<noscript><meta http-equiv="refresh" content="2" /></noscript>');
+			//$wgOut->addHeadItem( 'refresh-nojs', '<meta http-equiv="refresh" content="2" />');
+			$wgOut->addInlineScript( 'var collection_id = "' . urlencode( $response['collection_id']) . '";' );
+			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer']) . '";' );
+			$wgOut->addInlineScript( 'var collection_rendering = true;' );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
 			if ( isset($response['status']['status'] ) && $response['status']['status'] ) {
 				$statusText = $response['status']['status'];
@@ -648,11 +660,17 @@ class Collection extends SpecialPage {
 				} else if ( isset( $response['status']['page'] ) && $response['status']['page'] ) {
 					$statusText .= wfMsg( 'coll-rendering_page', $wgLang->formatNum( $response['status']['page'] ) );
 				}
-				$status = wfMsgNoTrans( 'coll-rendering_status', $statusText );
+				$status = wfMsg( 'coll-rendering_status', $statusText );
 			} else {
 				$status = '';
 			}
-			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_text',
+			$statusPrefix = wfMsg( 'coll-rendering_status', '%PARAM%' );
+			$wgOut->addHTML( "<span style=\"display:none\" id=\"renderingStatusText\">$statusPrefix</span>" );
+			$article = wfMsg( 'coll-rendering_article', '%PARAM%' );
+			$wgOut->addHTML( "<span style=\"display:none\" id=\"renderingArticle\">$article</span>" );
+			$page = wfMsg( 'coll-rendering_page', '%PARAM%' );
+			$wgOut->addHTML( "<span style=\"display:none\" id=\"renderingPage\">$page</span>" );
+			$wgOut->addHTML( wfMsg( 'coll-rendering_text',
 				$wgLang->formatNum( $response['status']['progress'] ),
 				$status
 			) );

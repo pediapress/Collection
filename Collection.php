@@ -138,3 +138,14 @@ function wfAjaxPostCollection( $collection='' ) {
 }
 
 $wgAjaxExportList[] = 'wfAjaxPostCollection';
+
+function wfAjaxGetMWServeStatus( $collection_id='', $writer='rl' ) {
+	$json = new Services_JSON();
+	$result = Collection::mwServeCommand( 'render_status', array(
+		'collection_id' => $collection_id,
+		'writer' => $writer
+	) );
+	return $json->encode( $result );
+}
+
+$wgAjaxExportList[] = 'wfAjaxGetMWServeStatus';
