@@ -984,7 +984,7 @@ $messages['fa'] = array(
 	'coll-help_collections' => 'راهنمای مجموعه‌ها',
 	'coll-empty' => 'خالی',
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحه|صفحه}}',
-	'coll-download_as' => 'دانلود به عنوان $1',
+	'coll-download_as' => 'بارگیری با عنوان $1',
 	'coll-noscript_text' => '<h1>جاوااسکریپت لازم دارید!</h1>
 <strong>مرورگر شما جاوا اسکریپت را پشتیبانی نمی‌کند یا جاوا اسکیریپت شما خاموش است.
 این صفحه به طور صحیح عمل نخواهد کرد، مگر اینکه جاوااسکیریپت فعال شود.</strong>',
@@ -1008,19 +1008,19 @@ $messages['fa'] = array(
 	'coll-subtitle' => 'زیرعنوان:',
 	'coll-contents' => 'مندرجات',
 	'coll-create_chapter' => 'ایجاد بخش جدید',
-	'coll-sort_alphabetically' => 'مرتب سازی الفبایی صفحات',
+	'coll-sort_alphabetically' => 'مرتب‌سازی الفبایی صفحه‌ها',
 	'coll-clear_collection' => 'پاک کردن مجموعه',
-	'coll-clear_confirm' => 'آیا واقعا می‌خواهید مجموعه خود را پاک کنید؟',
+	'coll-clear_confirm' => 'آیا واقعاً می‌خواهید مجموعهٔ خود را پاک کنید؟',
 	'coll-rename' => 'تغيير نام',
-	'coll-new_chapter' => 'برای بخش جدید یک نام درج نمایید',
-	'coll-rename_chapter' => 'درج نام جدید برای این فصل',
+	'coll-new_chapter' => 'برای بخش جدید یک نام وارد کنید',
+	'coll-rename_chapter' => 'برای بخش یک نام جدید وارد کنید',
 	'coll-no_such_category' => 'چنین رده‌ای وجود ندارد',
 	'coll-notitle_title' => 'عنوان صفحه قابل تشخیص نبود.',
 	'coll-post_failed_title' => 'خطا در درخواست POST',
 	'coll-post_failed_msg' => 'درخواست POST به $1 شکست خورد ($2).',
 	'coll-mwserve_failed_title' => 'خطا در کارگزار ترجمه‌کننده',
 	'coll-mwserve_failed_msg' => 'خطایی در کارگزار ترجمه‌کننده رخ داد: <nowiki>$1</nowiki>',
-	'coll-enter_title' => 'عنوانی برای مجموعه درج نمایید:',
+	'coll-enter_title' => 'عنوانی برای مجموعه وارد کنید:',
 	'coll-error_reponse' => 'پیغام خطا از طرف کارگزار',
 	'coll-empty_collection' => 'مجموعه خالی است.',
 	'coll-revision' => 'نسخه: %PARAM%',
@@ -1045,16 +1045,18 @@ $messages['fa'] = array(
 	'coll-append' => 'افزودن',
 	'coll-cancel' => 'لغو',
 	'coll-limit_exceeded_title' => 'مجموعه بیش از اندازه بزرگ است',
-	'coll-limit_exceeded_text' => 'صفحات مجموعه شما زیاد است.
-
-امکان اضافه کردن صفحه جدیدی را ندارید.',
+	'coll-limit_exceeded_text' => 'مجموعهٔ صفحه‌های شما بیش از اندازه بزرگ است است.
+امکان افزودن صفحهٔ جدیدی را ندارید.',
 	'coll-rendering_title' => 'در حال ترجمه دادن',
-	'coll-rendering_text' => "!!عدم قطعیت!!'''لطفاً در مدتی که سند در حال ایجاد است شکیبا باشید.'''
+	'coll-rendering_text' => "'''لطفاً در مدتی که سند در حال ایجاد است شکیبا باشید.'''
 
 '''پیشرفت:''' $1% $2
 
 این صفحه باید به طور خودکار هر چند ثانیه یکبار تازه شود.
 اگر این کار صورت نمی‌گیرد، لطفاً دکمهٔ تازه کردن صفحه را در مرورگر خود بزنید.",
+	'coll-rendering_status' => "'''وضعیت:''' $1",
+	'coll-rendering_article' => '  (صفحهٔ ویکی: $1)',
+	'coll-rendering_page' => '  (صفحه: $1)',
 	'coll-rendering_finished_title' => 'پایان ترجمه',
 	'coll-rendering_finished_text' => "'''پروندهٔ سند ایجاد شده‌است.'''
 '''[$1 این‌جا کلیک کنید]''' تا آن را به روی رایانهٔ خود بارگیری کنید.
@@ -2245,6 +2247,8 @@ $messages['km'] = array(
 	'coll-cancel' => 'បោះបង់',
 	'coll-limit_exceeded_title' => 'កំរងឯកសារធំជ្រុល',
 	'coll-limit_exceeded_text' => 'កំរងឯកសាររបស់អ្នកធំជ្រុលពេកហើយ។ អ្នកមិនអាចបន្ថែមទំព័រទៅក្នុងវាទៀតទេ។',
+	'coll-rendering_article' => '  (ទំព័រវិគី៖ $1)',
+	'coll-rendering_page' => '  (ទំព័រ៖ $1)',
 	'coll-notfound_title' => 'រកមិនឃើញកំរងឯកសារ',
 	'coll-notfound_text' => 'រកមិនឃើញកំរងឯកសារទេ។',
 	'coll-return_to_collection' => '<p>ត្រលប់ទៅកាន់<a href="$1">$2</a></p>វិញ',
@@ -2327,10 +2331,14 @@ donn op dat Knöppsche klecke.',
 	'coll-yes' => 'Jo',
 	'coll-no' => 'Nä',
 	'coll-disable_collection_text' => '<a href="$1">Donn de Sammlong fottschmieße un noh de Houptsigg zeröckjonn.</a>',
+	'coll-load_overwrite_text' => 'En Dinge Sammlong sinn_er ald Sigge dren.
+Wells de di Sammlong övverschrieve, di neu Saache dran 
+aanhänge, udder wells de di Sammlong lever doch nit laade?',
 	'coll-overwrite' => 'Ußtuusche',
 	'coll-append' => 'Aanhänge',
 	'coll-cancel' => 'Ophüre',
 	'coll-limit_exceeded_title' => 'De Sammlong es zo jruhß',
+	'coll-rendering_status' => "'''Shtattus:''' $1",
 	'coll-notfound_title' => 'Han de Sammlong nit jefonge',
 	'coll-notfound_text' => 'Mer kunnte de Sigg för di Sammlong nit fenge.',
 	'coll-book_title' => 'Der Drock vun däm Booch en Aufdrach jevve',
@@ -3018,10 +3026,13 @@ Cap de pagina pòt pas èsser aponduda.',
 	'coll-rendering_title' => 'Rendut',
 	'coll-rendering_text' => "'''Pacientatz pendent que lo document es en cors de creacion.'''
 
-Progression : '''$1 %'''.
+'''Progression :''' $1% $2
 
 Aquesta pagina se deuriá actualizar regularament.
 S'èra pas lo cas, clicatz sul boton d’actualizacion de vòstre navigador.",
+	'coll-rendering_status' => "'''Estatut :''' $1",
+	'coll-rendering_article' => '  (pagina wiki : $1)',
+	'coll-rendering_page' => '  (pagina : $1)',
 	'coll-rendering_finished_title' => 'Rendut acabat',
 	'coll-rendering_finished_text' => "'''Lo fichièr document es estat creat.'''
 [$1 Clicatz aicí] per lo telecargar sus vòstre ordenador.
@@ -3791,12 +3802,15 @@ Vill du ersätta din nuvarande samling, lägga till det nya innehållet eller av
 	'coll-limit_exceeded_text' => 'Din sid samling är för stor.
 Inga mer sidor kan läggas till.',
 	'coll-rendering_title' => 'Skapar',
-	'coll-rendering_text' => "'''Vänta medans dokumentet skapas.'''
+	'coll-rendering_text' => "'''Var god vänta under tiden dokumentet skapas.'''
 
-Tillstånd: '''$1%'''.
+'''Tillstånd:''' $1% $2.
 
-Denna sida ska uppdateras automatisk med några sekunders mellanrum.
-Om det inte fungerar, tryck på uppdateringsknappen i din webbläsare.",
+Denna sida ska automatiskt uppdateras med några sekunders mellanrum.
+Om det inte fungerar, var god tryck på uppdateringsknappen i din webbläsare.",
+	'coll-rendering_status' => "'''Status:''' $1",
+	'coll-rendering_article' => '  (wikisida: $1)',
+	'coll-rendering_page' => '  (sida: $1)',
 	'coll-rendering_finished_title' => 'Rendering avslutad',
 	'coll-rendering_finished_text' => "'''Dokumentfilen har skapats.'''
 '''[$1 Klicka här]''' för att ladda ner den till din dator.
