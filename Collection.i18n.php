@@ -1470,13 +1470,13 @@ $messages['he'] = array(
 	'coll-limit_exceeded_text' => 'אוסף הדפים שלכם גדול מדי.
 לא ניתן להוסיף דפים נוספים.',
 	'coll-rendering_title' => 'ביצירה',
-	'coll-rendering_text' => "'''אנא המתינו בעת יצירת המסמך.'''
+	'coll-rendering_text' => "<p><strong>אנא המתינו בעת יצירת המסמך.</strong></p>
 
-'''התקדמות התהליך''': $1% $2.
+<p><strong>התקדמות התהליך:</strong> <span id=\"renderingProgress\">$1</span>% <span id=\"renderingStatus\">$2</span></p>
 
-הדפדפן אמור לבצע ריענון אוטומטי לדף זה כל מספר שניות.
-אם זה לא עובד, אנא לחצו על כפתור הריענון בדפדפן שלכם.",
-	'coll-rendering_status' => "'''מצב:''' $1",
+<p>הדפדפן אמור לבצע ריענון אוטומטי לדף זה כל מספר שניות.
+אם זה לא עובד, אנא לחצו על כפתור הריענון בדפדפן שלכם.</p>",
+	'coll-rendering_status' => "<strong>מצב:</strong> $1",
 	'coll-rendering_article' => ' (דף תוכן: $1)',
 	'coll-rendering_page' => ' (דף: $1)',
 	'coll-rendering_finished_title' => 'היצירה הסתיימה',
