@@ -79,7 +79,7 @@ function forEach(array, fn) {
  * @return String text of elment with ID id
  */
 function gettext(id, param/*=null*/) {
-	var txt = document.getElementById(id).firstChild.nodeValue;
+	var txt = document.getElementById(id).innerHTML;
 	if (param) {
 		txt = txt.replace(/%PARAM%/g, param);
 	}
@@ -426,6 +426,36 @@ CollectionSpecialPage.prototype = {
 
 /******************************************************************************/
 
+function getMWServeStatus() {
+	sajax_request_type = "GET";
+	try {
+		sajax_do_call('wfAjaxGetMWServeStatus', [collection_id, writer], function(xhr) {
+			var result;
+			result = JSON.parse(xhr.responseText);
+			if (result.state == 'progress' ) {
+				$('renderingProgress').innerHTML = '' + result.status.progress;
+				if (result.status.status) {
+					var status = result.status.status;
+					if (result.status.article) {
+						status += gettext('renderingArticle', result.status.article);
+					} else if (result.status.page) {
+						status += gettext('renderingPage', result.status.page);
+					}
+					$('renderingStatus').innerHTML = gettext('renderingStatusText', status);
+				}
+				setTimeout(getMWServeStatus, 500);
+			} else {
+				window.location.reload(true);
+			}
+		});
+	} catch (e) {
+		alert('XMLHttpRequest failed: ' + e);
+	}
+}
+
+/******************************************************************************/
+
+
 addOnloadHook(function() {
 	if (requiredVersion != wgCollectionVersion) {
 		alert('ERROR: Version mismatch between JavaScript code and PHP code. Contact admin to fix installation of Collection extension for MediaWiki.');
@@ -433,5 +463,8 @@ addOnloadHook(function() {
 	}
 	if ($('collectionList')) {
 		new CollectionSpecialPage();
+	}
+	if (typeof collection_rendering != 'undefined') {
+		getMWServeStatus();
 	}
 });

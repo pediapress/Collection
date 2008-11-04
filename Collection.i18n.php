@@ -100,13 +100,13 @@ Do you want to overwrite your current collection, append the new content, or can
 	'coll-limit_exceeded_text'        => 'Your page collection is too big.
 No more pages can be added.',
 	'coll-rendering_title'            => 'Rendering',
-	'coll-rendering_text'             => "'''Please wait while the document is being generated.'''
+	'coll-rendering_text'             => "<p><strong>Please wait while the document is being generated.</strong></p>
 
-'''Progress:''' $1% $2
+<p><strong>Progress:</strong> <span id=\"renderingProgress\">$1</span>% <span id=\"renderingStatus\">$2</span></p>
 
-This page should automatically refresh every few seconds.
-If this does not work, please press refresh button of your browser.",
-	'coll-rendering_status'           => "'''Status:''' $1",
+<p>This page should automatically refresh every few seconds.
+If this does not work, please press refresh button of your browser.</p>",
+	'coll-rendering_status'           => "<strong>Status:</strong> $1",
 	'coll-rendering_article'          => ' (wiki page: $1)',
 	'coll-rendering_page'             => ' (page: $1)',
 	'coll-rendering_finished_title'   => 'Rendering finished',
