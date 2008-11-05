@@ -149,3 +149,30 @@ function wfAjaxGetMWServeStatus( $collection_id='', $writer='rl' ) {
 }
 
 $wgAjaxExportList[] = 'wfAjaxGetMWServeStatus';
+
+function wfAjaxCollectionAddArticle( $namespace=0, $title='', $oldid='' ) {
+	Collection::addArticleFromName( $namespace, $title, $oldid );
+	return '';
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionAddArticle';
+
+function wfAjaxCollectionRemoveArticle( $namespace=0, $title='', $oldid='' ) {
+	Collection::removeArticleFromName( $namespace, $title, $oldid );
+	return '';
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionRemoveArticle';
+
+function wfAjaxCollectionAddCategory( $title='' ) {
+	Collection::addCategoryFromName( $title );
+	return '';
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionAddCategory';
+
+function wfAjaxCollectionGetPortlet( $ajaxHint='' ) {
+	return Collection::getPortlet( $ajaxHint );
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionGetPortlet';
