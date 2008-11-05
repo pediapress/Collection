@@ -150,7 +150,7 @@ $mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/collection/';
 		<a class="moveDownLink" href="javascript:void(0)" title="<?php $this->msg('coll-move_down') ?>"><img src="<?php echo htmlspecialchars($mediapath . "down.png") ?>" width="11" height="11" alt="<?php $this->msg('coll-move_down') ?>" /></a>
 		<img class="moveDownDisabled" src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="11" height="11" alt="" />
 		<strong class="chapterTitle" style="margin-left: 0.5em;"></strong> 
-		<a class="renameLink" href="javascript:void(0)">[$rename]</a>
+		<a class="renameLink" href="javascript:void(0)">[<?php $this->msg('coll-rename') ?>]</a>
 	</div>
 	<span id="newChapterText"><?php $this->msg('coll-new_chapter') ?></span>
 	<span id="renameChapterText"><?php $this->msg('coll-rename_chapter') ?></span>
