@@ -22,8 +22,6 @@
  */
 
 
-require_once( 'StreamFile.php' );
-
 class Collection extends SpecialPage {
 	var $mPODPartners = array(
 		'pediapress' => array(
