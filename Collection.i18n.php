@@ -44,8 +44,6 @@ This page will not work correctly, unless JavaScript is enabled.</strong>',
 
 See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more information.",
 	'coll-helppage'                   => 'Help:Collections',
-	'coll-too_big_cat'                => 'The category contains more than %PARAM% pages, only the first %PARAM% pages can be added to your collection.
-Do you want to add them?',
 	'coll-my_collection'              => 'My collection',
 	'coll-download_title'             => 'Download collection',
 	'coll-download_text'              => 'To download an automatically generated document of your page collection, choose a format and click the button.',

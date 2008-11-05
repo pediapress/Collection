@@ -59,7 +59,7 @@ class Collection extends SpecialPage {
 		
 		if ( $par == 'add_article/' ) {
 			if ( self::countArticles() >= $wgCollectionMaxArticles ) {
-				$this->limitExceeded();
+				self::limitExceeded();
 				return;
 			}
 			$title_url = $wgRequest->getVal( 'arttitle', '' );
@@ -78,7 +78,7 @@ class Collection extends SpecialPage {
 			$title_url = $wgRequest->getVal( 'arttitle', '' );
 			$oldid = $wgRequest->getInt( 'oldid', 0 );
 			$title = Title::newFromURL( $title_url );
-			$this->removeArticle( $title, $oldid );
+			self::removeArticle( $title, $oldid );
 			if ( $oldid == 0 ) {
 				$redirectURL = $title->getFullURL();
 			} else {
@@ -94,8 +94,8 @@ class Collection extends SpecialPage {
 			return;
 		} else if ( $par == 'add_category/' ) {
 			$title = Title::makeTitleSafe( NS_CATEGORY, $wgRequest->getVal( 'cattitle', '' ) );
-			if ( $this->addCategory( $title ) ) {
-				$this->limitExceeded();
+			if ( self::addCategory( $title ) ) {
+				self::limitExceeded();
 				return;
 			} else {
 				$wgOut->redirect( $title->getFullURL() );
@@ -270,7 +270,12 @@ class Collection extends SpecialPage {
 		return -1;
 	}
 
-	function addArticle( $title, $oldid=0 ) {
+	static function addArticleFromName( $namespace, $name, $oldid=0 ) {
+		$title = Title::makeTitleSafe( $namespace, $name );
+		return self::addArticle( $title, $oldid );
+	}
+	
+	static function addArticle( $title, $oldid=0 ) {
 		$article = new Article( $title, $oldid );
 		$latest = $article->getLatest();
 
@@ -301,7 +306,12 @@ class Collection extends SpecialPage {
 		self::touchSession();
 	}
 
-	function removeArticle( $title, $oldid=0 ) {
+	static function removeArticleFromName( $namespace, $name, $oldid=0 ) {
+		$title = Title::makeTitleSafe( $namespace, $name );
+		return self::removeArticle( $title, $oldid );
+	}
+	
+	static function removeArticle( $title, $oldid=0 ) {
 		if ( !self::hasSession() ) {
 			return;
 		}
@@ -314,13 +324,18 @@ class Collection extends SpecialPage {
 		self::touchSession();
 	}
 
-	function addCategory( $title ) {
+	static function addCategoryFromName( $name ) {
+		$title = Title::makeTitleSafe( NS_CATEGORY, $name );
+		return self::addCategory( $title );
+	}
+	
+	static function addCategory( $title ) {
 		global $wgOut;
 		global $wgCollectionMaxArticles;
 
 		$limit = $wgCollectionMaxArticles - self::countArticles();
 		if ( $limit <= 0 ) {
-			$this->limitExceeded();
+			self::limitExceeded();
 			return;
 		}
 		$db = wfGetDB( DB_SLAVE );
@@ -346,15 +361,15 @@ class Collection extends SpecialPage {
 				break;
 			}
 			$articleTitle = Title::makeTitle( $row->page_namespace, $row->page_title );
-			if ( $this->findArticle( $articleTitle ) == -1 ) {
-				$this->addArticle( $articleTitle );
+			if ( self::findArticle( $articleTitle->getPrefixedText() ) == -1 ) {
+				self::addArticle( $articleTitle );
 			}
 		}
 		$db->freeResult( $res );
 		return $limitExceeded;
 	}
 
-	function limitExceeded() {
+	static function limitExceeded() {
 		global $wgOut;
 
 		$wgOut->showErrorPage( 'limit_exceeded_title', 'limit_exceeded_text' );
@@ -1188,7 +1203,7 @@ EOS
 	/**
 	 * Return HTML-code to be inserted as portlet
 	 */
-	static function getPortlet() {
+	static function getPortlet( $ajaxHint='' ) {
 		global $wgArticle;
 		global $wgRequest;
 		global $wgTitle;
@@ -1208,11 +1223,10 @@ EOS
 		$removeArticle = wfMsgHtml( 'coll-remove_page' );
 		$addCategory = wfMsgHtml( 'coll-add_category' );
 		$loadCollection = wfMsgHtml( 'coll-load_collection' );
-		$tooBigCat = wfMsgHtml( 'coll-too_big_cat' );
 		
 		$numArticles = self::countArticles();
 		
-		$out = "<ul>";
+		$out = "<ul id=\"collectionPortletList\">";
 		
 		if ( self::isCollectionPage( $wgTitle, $wgArticle) ) {
 			$params = "colltitle=" . $wgTitle->getPrefixedUrl();
@@ -1227,32 +1241,68 @@ EOS
 			$wgOut->setSquidMaxage( 0 );
 			$wgOut->enableClientCache( false );
 			
+			$out .= <<<EOS
+<script type="text/javascript">
+	function collectionCall(func, args) {
+		sajax_request_type = 'POST';
+		sajax_do_call('wfAjaxCollection' + func, args, function(xhr) {
+			sajax_request_type = 'GET';
+			sajax_do_call('wfAjaxCollectionGetPortlet', [func], function(xhr) {
+				document.getElementById('collectionPortletList').parentNode.innerHTML = xhr.responseText;
+			});
+		});
+	}
+</script>
+EOS
+			;
+			
 			$namespace =  $wgTitle->getNamespace();
 			
-			if ( is_null( $wgArticle ) || !$wgArticle->exists() ) {
-				return;
-  		} else if ( $namespace == NS_CATEGORY ) {
+  		if ( $ajaxHint == 'AddCategory' || $namespace == NS_CATEGORY ) {
 				$params = "cattitle=" . $wgTitle->getPartialURL();
 				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 					'Collection',
 					'add_category/',
 				  $params ) );
-				$out .= "<li><a href=\"$href\" rel=\"nofollow\">$addCategory</a></li>";
-			} else if ( in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
-				$params = "arttitle=" . $wgTitle->getPrefixedUrl() . "&oldid=" . $wgArticle->getOldID();
+				$out .= <<<EOS
+<li>
+	<a href="$href" onclick="collectionCall('AddCategory', [wgTitle]); return false;" rel="nofollow">$addCategory</a>
+</li>
+EOS
+				;
+			} else if ( !$ajaxHint && (is_null( $wgArticle ) || !$wgArticle->exists()) ) {
+				return;
+			} else if ( $ajaxHint || in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
+				$params = "arttitle=" . $wgTitle->getPrefixedUrl();
+				if ( !is_null( $wgArticle ) ) {
+					$oldid = $wgArticle->getOldID();
+					$params .= "&oldid=" . $oldid;
+				} else {
+					$oldid = null;
+				}
 
-				if ( self::findArticle( $wgTitle->getPrefixedText(), $wgArticle->getOldID() ) == -1 ) {
+				if ( $ajaxHint == "RemoveArticle" || self::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) {
 					$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 						'Collection',
 						'add_article/',
 					  $params ) );
-					$out .= "<li><a href=\"$href\" rel=\"nofollow\">$addArticle</a></li>";
+					$out .= <<<EOS
+<li>
+	<a href="$href" onclick="collectionCall('AddArticle', [wgNamespaceNumber, wgTitle, 0]); return false;" rel="nofollow">$addArticle</a>
+</li>
+EOS
+					;
 				} else {
 					$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 						'Collection',
 						'remove_article/',
 					  $params ) );
-					$out .= "<li><a href=\"$href\" rel=\"nofollow\">$removeArticle</a></li>";
+					$out .= <<<EOS
+<li>
+	<a href="$href" onclick="collectionCall('RemoveArticle', [wgNamespaceNumber, wgTitle, 0]); return false;" rel="nofollow">$removeArticle</a>
+</li>
+EOS
+					;
 				}
 			}
 			
@@ -1283,11 +1333,6 @@ EOS
 			;
 		}
 		
-		$out .= <<<EOS
-					</ul>
-		<span id="tooBigCategoryText" style="display:none">$tooBigCat</span>
-EOS
-		;
 		return $out;
 	}
 	
