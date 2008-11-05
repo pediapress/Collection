@@ -104,6 +104,11 @@ $wgExtensionCredits['specialpage'][] = array(
 
 $dir = dirname(__FILE__) . '/';
 $wgAutoloadClasses['Collection'] = $dir . 'Collection.body.php';
+$wgAutoloadClasses['CollectionPageTemplate'] = $dir . 'Collection.templates.php';
+$wgAutoloadClasses['CollectionLoadOverwriteTemplate'] = $dir . 'Collection.templates.php';
+$wgAutoloadClasses['CollectionSaveOverwriteTemplate'] = $dir . 'Collection.templates.php';
+$wgAutoloadClasses['CollectionRenderingTemplate'] = $dir . 'Collection.templates.php';
+$wgAutoloadClasses['CollectionFinishedTemplate'] = $dir . 'Collection.templates.php';
 $wgExtensionMessagesFiles['Collection'] = $dir . 'Collection.i18n.php';
 $wgExtensionAliasesFiles['Collection'] = $dir . 'Collection.alias.php';
 $wgSpecialPages['Collection'] = 'Collection';
