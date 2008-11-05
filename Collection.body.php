@@ -44,16 +44,10 @@ class Collection extends SpecialPage {
 		global $wgOut;
 		global $wgRequest;
 		global $wgUser;
-		global $wgJsMimeType;
-		global $wgScriptPath;
-		global $wgStyleVersion;
 		global $wgCommunityCollectionNamespace;
 		global $wgCollectionMaxArticles;
-		global $wgCollectionVersion;
-
-		wfLoadExtensionMessages( 'Collection' );
 		
-		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );
+		wfLoadExtensionMessages( 'Collection' );
 		
 		if ( $par == 'add_article/' ) {
 			if ( self::countArticles() >= $wgCollectionMaxArticles ) {
@@ -117,7 +111,7 @@ class Collection extends SpecialPage {
 				}
 				return;
 			}
-			$this->outputLoadOverwrite( $title );
+			$this->renderLoadOverwritePage( $title );
 			return;
 		} else if ( $par == 'save_collection/' ) {
 			$title = $wgRequest->getVal( 'saveTitle', '' );
@@ -160,7 +154,7 @@ class Collection extends SpecialPage {
 			} else if ( $saved ) {
 				$wgOut->redirect( $title->getFullURL() );
 			} else {
-				$this->outputSaveOverwrite( $title );
+				$this->renderSaveOverwritePage( $title );
 			}
 			return;
 		} else if ( $par == 'render/' ) {
@@ -180,7 +174,7 @@ class Collection extends SpecialPage {
 		} else if ( $par == 'forcerender/' ) {
 			return $this->forceRenderCollection();
 		} else if ( $par == 'rendering/' ) {
-			return $this->rendering();
+			return $this->renderRenderingPage();
 		} else if ( $par == 'download/' ) {
 			return $this->download();
 		} else if ( $par == 'render_article/' ) {
@@ -196,16 +190,30 @@ class Collection extends SpecialPage {
 		} else if ( $par == 'post_zip/' ) {
 			$partner = $wgRequest->getVal( 'partner', '' );
 			return $this->postZIP( $partner );
+		} else if ( $par == '' ){
+			$this->renderSpecialPage();			
+		} else {
+			$wgOut->showErrorPage( 'coll-unknown_subpage_title', 'coll-unknown_subpage_text' );
 		}
-
+	}
+	
+	function renderSpecialPage() {
+		global $wgCollectionFormats;
+		global $wgCollectionVersion;
+		global $wgJsMimeType;
+		global $wgScriptPath;
+		global $wgOut;
+		global $wgStyleVersion;
+		
 		$this->setHeaders();
+		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );		
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/json2.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
-		$this->outputBookSection();
-		$this->outputDownloadSection();
-		$this->outputSaveSection();
-		$this->outputIntro();
-		$this->outputArticleList();
+		
+		$template = new CollectionPageTemplate();
+		$template->set( 'podpartners', $this->mPODPartners );
+		$template->set( 'formats', $wgCollectionFormats);
+		$wgOut->addTemplate( $template );
 	}
 
 	static function hasSession() {
@@ -370,18 +378,18 @@ class Collection extends SpecialPage {
 	static function limitExceeded() {
 		global $wgOut;
 
-		$wgOut->showErrorPage( 'limit_exceeded_title', 'limit_exceeded_text' );
+		$wgOut->showErrorPage( 'coll-limit_exceeded_title', 'coll-limit_exceeded_text' );
 	}
 
 	function loadCollection( $title, $append=false ) {
 		if ( is_null( $title ) ) {
-			$wgOut->showErrorPage( 'notitle_title', 'notitle_msg' );
+			$wgOut->showErrorPage( 'coll-notitle_title', 'coll-notitle_msg' );
 			return;
 		}
 
 		$article = new Article( $title );
 		if ( !$article->exists() ) {
-			$wgOut->showErrorPage( 'notfound_title', 'notfound_msg' );
+			$wgOut->showErrorPage( 'coll-notfound_title', 'coll-notfound_msg' );
 			return false;
 		}
 
@@ -626,31 +634,26 @@ class Collection extends SpecialPage {
 		$wgOut->redirect( wfAppendQuery( $redirect, $query ) );
 	}
 	
-	function rendering() {
-		global $wgCollectionTemplateExclusionCategory;
+	function renderRenderingPage() {
 		global $wgCollectionVersion;
 		global $wgJsMimeType;
-		global $wgPDFTemplateBlacklist;
+		global $wgLang;
 		global $wgOut;
 		global $wgRequest;
 		global $wgScriptPath;
 		global $wgServer;
 		global $wgStyleVersion;
-		global $wgLang;
 
-		$this->setHeaders();
-		
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/json2.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
-		
 		$response = self::mwServeCommand( 'render_status', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 			'writer' => $wgRequest->getVal( 'writer' ),
 		) );
 		if ( !$response ) {
-			return;
+			return; // FIXME?
 		}
 
+		$this->setHeaders();
+		
 		$return_to = $wgRequest->getVal( 'return_to' );
 
 		$query = 'collection_id=' . urlencode( $response['collection_id'] )
@@ -661,11 +664,14 @@ class Collection extends SpecialPage {
 		case 'progress':
 			$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/', $query ) );
 			$wgOut->addHeadItem( 'refresh-nojs', '<noscript><meta http-equiv="refresh" content="2" /></noscript>');
-			//$wgOut->addHeadItem( 'refresh-nojs', '<meta http-equiv="refresh" content="2" />');
 			$wgOut->addInlineScript( 'var collection_id = "' . urlencode( $response['collection_id']) . '";' );
 			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer']) . '";' );
 			$wgOut->addInlineScript( 'var collection_rendering = true;' );
+			$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );		
+			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/json2.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
+			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
+
 			if ( isset($response['status']['status'] ) && $response['status']['status'] ) {
 				$statusText = $response['status']['status'];
 				if ( isset( $response['status']['article'] ) && $response['status']['article'] ) {
@@ -677,41 +683,21 @@ class Collection extends SpecialPage {
 			} else {
 				$status = '';
 			}
-			$statusPrefix = wfMsg( 'coll-rendering_status', '%PARAM%' );
-			$wgOut->addHTML( "<span style=\"display:none\" id=\"renderingStatusText\">$statusPrefix</span>" );
-			$article = wfMsg( 'coll-rendering_article', '%PARAM%' );
-			$wgOut->addHTML( "<span style=\"display:none\" id=\"renderingArticle\">$article</span>" );
-			$page = wfMsg( 'coll-rendering_page', '%PARAM%' );
-			$wgOut->addHTML( "<span style=\"display:none\" id=\"renderingPage\">$page</span>" );
-			$wgOut->addHTML( wfMsg( 'coll-rendering_text',
-				$wgLang->formatNum( $response['status']['progress'] ),
-				$status
-			) );
+			
+			$template = new CollectionRenderingTemplate();
+			$template->set( 'status',  $status );
+			$template->set( 'progress', $response['status']['progress'] );
+			$wgOut->addTemplate( $template );
 			break;
 		case 'finished':
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_finished_title' ) );
-			$url = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download/', $query );
-			$wgOut->addWikiText( wfMsgNoTrans( 'coll-rendering_finished_text', $wgServer . $url ) );
-			if ( $wgRequest->getVal( 'is_cached' ) ) {
-				$forceRenderURL = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'forcerender/', $query );
-				$wgOut->addHTML( wfMsg( 'coll-is_cached', htmlspecialchars( $forceRenderURL ) ) );
-			}
-			if ( $wgCollectionTemplateExclusionCategory ) {
-				$wgOut->addWikiText( wfMsg( 'coll-excluded-templates', $wgCollectionTemplateExclusionCategory ) );
-			}
-			if ( $wgPDFTemplateBlacklist ) {
-				$wgOut->addWikiText( wfMsg( 'coll-blacklisted-templates', $wgPDFTemplateBlacklist ) );
-			}
-			if ( $return_to ) {
-				// We are doing this the hard way (i.e. via the HTML detour), to prevent
-				// the parser from replacing [[:Special:Collection]] with a selflink.
-				$t = Title::newFromText( $return_to );
-				$wgOut->addHTML( wfMsg(
-					'coll-return_to_collection',
-					htmlspecialchars( $t->getFullURL() ),
-					htmlspecialchars( $return_to )
-				) );
-			}
+
+			$template = new CollectionFinishedTemplate();
+			$template->set( 'download_url', $wgServer . SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download/', $query ) );
+			$template->set( 'is_cached', $wgRequest->getVal( 'is_cached ') );
+			$template->set( 'query', $query );
+			$template->set( 'return_to', $return_to );
+			$wgOut->addTemplate( $template );
 			break;
 		default:
 			$wgOut->addWikiText( 'state: ' . $response['state'] );
@@ -746,7 +732,7 @@ class Collection extends SpecialPage {
 		global $wgOut;
 		
 		if ( is_null( $title ) ) {
-			$wgOut->showErrorPage( 'notitle_title', 'notitle_msg' );
+			$wgOut->showErrorPage( 'coll-notitle_title', 'coll-notitle_msg' );
 			return;
 		}
 		$article = array(
@@ -793,283 +779,26 @@ class Collection extends SpecialPage {
 		$wgOut->redirect( $response['redirect_url'] );
 	}
 	
-	private function outputIntro() {
+	private function renderSaveOverwritePage( $title ) {
 		global $wgOut;
 
-		$wgOut->addHTML( '<noscript>' );
-		$wgOut->addWikiText( wfMsgNoTrans( 'coll-noscript_text' ) );
-		$wgOut->addHTML( '</noscript>' );
-		$wgOut->addWikiText( wfMsgNoTrans( 'coll-intro_text' ) );
-	}
-
-	private function outputArticleList() {
-		global $wgOut;
-		global $wgScriptPath;
-
-		$wgOut->addWikiText( "== ". wfMsg( 'coll-my_collection' ) . " ==" );
-
-		$title = wfMsgHtml( 'coll-title' );
-		$subtitle = wfMsgHtml( 'coll-subtitle' );
-
-		$wgOut->addHTML( <<<EOS
-<table><tbody>
-<tr>
-	<th><label for="titleInput">$title</label></th>
-	<td><input id="titleInput" type="text" value="" size="32" /></td>
-</tr><tr>
-	<th><label for="subtitleInput">$subtitle</label></th>
-	<td><input id="subtitleInput" type="text" value="" size="32" /></td>
-</tr>
-</tbody></table>
-EOS
-		);
-
-		$wgOut->addWikiText( "=== ". wfMsg( 'coll-contents' ) . " ===" );
-
-		$createChapter = wfMsgHtml( 'coll-create_chapter' );
-		$sortAlphabetically = wfMsgHtml( 'coll-sort_alphabetically' );
-		$clearCollection = wfMsgHtml( 'coll-clear_collection' );
-		$wgOut->addHTML( <<<EOS
-<a id="createChapter" href="javascript:void(0);">$createChapter</a>
-<span id="sortSpan" style="display:none;">| <a id="sortLink" href="javascript:void(0);">$sortAlphabetically</a></span>
-<span id="clearSpan" style="display:none;">| <a id="clearLink" href="javascript:void(0);">$clearCollection</a></span>
-EOS
-		);
-
-		$rename = wfMsgHtml( 'coll-rename' );
-		$remove = wfMsgHtml( 'coll-remove' );
-		$removeImage = htmlspecialchars( "$wgScriptPath/extensions/Collection/collection/cross.png" );
-		$moveUp = wfMsgHtml( 'coll-move_up' );
-		$moveUpImage = htmlspecialchars( "$wgScriptPath/extensions/Collection/collection/up.png" );
-		$moveDown = wfMsgHtml( 'coll-move_down' );
-		$moveDownImage = htmlspecialchars( "$wgScriptPath/extensions/Collection/collection/down.png" );
-		$moveDisabledImage = htmlspecialchars( "$wgScriptPath/extensions/Collection/collection/trans.png" );
-		$newChapter = wfMsgHtml( 'coll-new_chapter' );
-		$renameChapter = wfMsgHtml( 'coll-rename_chapter' );
-		$enterTitle = wfMsgHtml( 'coll-enter_title' );
-		$collectionExists = wfMsgHtml( 'coll-collection_exists' );
-		$errorResponse = wfMsgHtml( 'coll-error_response' );
-		$emptyCollection = wfMsgHtml( 'coll-empty_collection' );
-		$revision = wfMsgHtml( 'coll-revision' );
-		$clearConfirm = wfMsgHtml( 'coll-clear_confirm' );
-
-		$wgOut->addHTML( <<<EOS
-<div id="collectionList"></div>
-<br style="clear:both;"/>
-<div style="display:none">
-	<div id="articleListItem" class="article">
-		<a class="removeLink" href="javascript:void(0)" title="$remove"><img src="$removeImage" width="11" height="11" alt="$remove" /></a>
-		&nbsp;
-		<a class="moveUpLink" href="javascript:void(0)" title="$moveUp"><img src="$moveUpImage" width="11" height="11" alt="$moveUp" /></a>
-		<img class="moveUpDisabled" src="$moveDisabledImage" width="11" height="11" alt="" />
-		<a class="moveDownLink" href="javascript:void(0)" title="$moveDown"><img src="$moveDownImage" width="11" height="11" alt="$moveDown" /></a>
-		<img class="moveDownDisabled" src="$moveDisabledImage" width="11" height="11" alt="" />
-		<a class="articleLink" style="margin-left:1em;"></a>
-	</div>
-	<div id="chapterListItem" class="chapter" style="margin-top:0.3em;">
-		<a class="removeLink" href="javascript:void(0)" title="$remove"><img src="$removeImage" width="11" height="11" alt="$remove" /></a>
-		&nbsp;
-		<a class="moveUpLink" href="javascript:void(0)" title="$moveUp"><img src="$moveUpImage" width="11" height="11" alt="$moveUp" /></a>
-		<img class="moveUpDisabled" src="$moveDisabledImage" width="11" height="11" alt="" />
-		<a class="moveDownLink" href="javascript:void(0)" title="$moveDown"><img src="$moveDownImage" width="11" height="11" alt="$moveDown" /></a>
-		<img class="moveDownDisabled" src="$moveDisabledImage" width="11" height="11" alt="" />
-		<strong class="chapterTitle" style="margin-left: 0.5em;"></strong> 
-		<a class="renameLink" href="javascript:void(0)">[$rename]</a>
-	</div>
-	<span id="newChapterText">$newChapter</span>
-	<span id="renameChapterText">$renameChapter</span>
-	<span id="enterTitleText">$enterTitle</span>
-	<span id="collectionExistsText">$collectionExists</span>
-	<span id="errorResponseText">$errorResponse</span>
-	<span id="emptyCollectionText">$emptyCollection</span>
-	<span id="revisionText">$revision</span>
-	<span id="clearConfirmText">$clearConfirm</span>
-</div>
-EOS
-		);
-	}
-
-	private function outputDownloadSection() {
-		global $wgCollectionFormats;
-		
-		$downloadTitle = wfMsgHtml( 'coll-download_title' );
-		$downloadText = wfMsgHtml( 'coll-download_text' );
-		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'render/' ) );
-		$formatLabel = wfMsgHtml( 'coll-format_label' );
-		$html = <<<EOS
-<h2><span class="mw-headline">$downloadTitle</span></h2>
-<p>$downloadText</p>
-<form id="downloadForm" action="$url" method="post">
-<input id="downloadTitle" name="downloadTitle" type="hidden"></input>
-<input id="downloadSubtitle" name="downloadSubtitle" type="hidden"></input>
-EOS
-		;
-		
-		if ( count( $wgCollectionFormats ) == 1 ) {
-			$writer = array_rand( $wgCollectionFormats );
-			$name = $wgCollectionFormats[$writer];
-			$writer = htmlspecialchars( $writer );
-			$name = htmlspecialchars( $name );
-			$buttonLabel = wfMsgHtml( 'coll-download_as', $name );
-			$html .= <<<EOS
-<input type="hidden" name="writer" value="$writer"></input>
-EOS
-			;
-			
-		} else {
-			$buttonLabel = wfMsgHtml( 'coll-download' );
-			$html .= <<<EOS
-<label for="formatSelect">$formatLabel</label>
-<select id="formatSelect" name="writer">
-EOS
-			;
-			foreach ( $wgCollectionFormats as $writer => $name ) {
-				$writer = htmlspecialchars( $writer );
-				$name = htmlspecialchars( $name );
-				$html .= <<<EOS
-<option value="$writer">$name</option>
-EOS
-				;
-			}
-			$html .= '</select>';
-		}
-		$html .= <<<EOS
-<input id="downloadButton" type="submit" value="$buttonLabel"></input>
-</form>
-EOS
-		;
-		$this->outputBox( $html );
-	}
-
-	private function outputSaveSection() {
-		global $wgCommunityCollectionNamespace;
-		global $wgOut;
-		global $wgUser;
-
-		$html = '<h2><span class="mw-headline">' . wfMsgHtml( 'coll-save_collection_title' ) . '</span></h2>';
-
-		if ($wgUser->isLoggedIn()) {
-			$html .= '<p>' . wfMsgHtml( 'coll-save_collection_text' ) . '</p>';
-
-			$personalColl = wfMsgHtml( 'coll-personal_collection_label' );
-			$communityColl = wfMsgHtml( 'coll-community_collection_label' );
-			$saveColl = wfMsgHtml( 'coll-save_collection' );
-
-			$personalTitle = htmlspecialchars( $wgUser->getUserPage()->getPrefixedText(). '/' . wfMsgForContent( 'coll-collections' ) . '/' );
-			$communityTitle = htmlspecialchars( Title::makeTitle( $wgCommunityCollectionNamespace, wfMsgForContent( 'coll-collections' ) )->getPrefixedText() . '/' );
-
-			$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'save_collection/' ) );
-			$html .= <<<EOS
-<form id="saveForm" action="$url" method="post">
-	<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked"></input>
-	<label for="personalCollType">$personalColl</label>
-	<label for="personalCollTitle">$personalTitle</label>
-	<input id="personalCollTitle" type="text" name="pcollname"></input><br />
-	<input id="communityCollType" type="radio" name="colltype" value="community"></input>
-	<label for="communityCollType">$communityColl</label>
-	<label for="communityCollTitle">$communityTitle</label>
-	<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled"></input><br />
-	<input id="saveButton" type="submit" value="$saveColl" disabled="disabled"></input>
-	<input id="saveTitle" name="saveTitle" type="hidden"></input>
-	<input id="saveSubtitle" name="saveSubtitle" type="hidden"></input>
-</form>
-EOS
-			;
-		} else {
-			$html .= wfMsgExt( 'coll-login_to_save', array( 'parse' ) );
-		}
-		$html .= wfMsgExt( 'coll-save_category', array( 'parse' ) );
-		$this->outputBox( $html );
-	}
-
-	private function outputSaveOverwrite( $title ) {
-		global $wgOut;
-
+		$this->setHeaders();
 		$wgOut->setPageTitle( wfMsg( 'coll-save_collection' ) );
-
-		$wgOut->addWikiText( '==' . wfMsg( 'coll-overwrite_title' ) . '==' );
-		$wgOut->addWikiText( wfMsgNoTrans( 'coll-overwrite_text', $title->getPrefixedText() ) );
-		$yes = wfMsgHtml( 'coll-yes' );
-		$no = wfMsgHtml( 'coll-no' );
-		$escapedTitle = htmlspecialchars( $title->getPrefixedText() );
-		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'save_collection/' ) );
-		$wgOut->addHTML( <<<EOS
-<form action="$url" method="post">
-	<input name="overwrite" type="submit" value="$yes"></input>
-	<input name="abort" type="submit" value="$no"></input>
-	<input name="colltitle" type="hidden" value="$escapedTitle"></input>
-</form>
-EOS
-		);
+		
+		$template = new CollectionSaveOverwriteTemplate();
+		$template->set( 'title',  $title );
+		$wgOut->addTemplate( $template );
 	}
 
-	private function outputLoadOverwrite( $title ) {
+	private function renderLoadOverwritePage( $title ) {
 		global $wgOut;
 
+		$this->setHeaders();
 		$wgOut->setPageTitle( wfMsg( 'coll-load_collection' ) );
-
-		$wgOut->addWikiText( wfMsgNoTrans( 'coll-load_overwrite_text' ) );
-		$overwrite = wfMsgHtml( 'coll-overwrite' );
-		$append = wfMsgHtml( 'coll-append' );
-		$cancel = wfMsgHtml( 'coll-cancel' );
-		$escapedTitle = htmlspecialchars( $title->getPrefixedText() );
-		$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'load_collection/' ) );
-		$wgOut->addHTML( <<<EOS
-<form action="$url" method="post">
-	<input name="overwrite" type="submit" value="$overwrite"></input>
-	<input name="append" type="submit" value="$append"></input>
-	<input name="cancel" type="submit" value="$cancel"></input>
-	<input name="colltitle" type="hidden" value="$escapedTitle"></input>
-</form>
-EOS
-		);
-	}
-	private function outputBox( $content ) {
-		global $wgOut;
-
-		$html = <<<EOS
-<table align="right" style="clear: both; float: right; margin-left: 20px; margin-bottom: 10px;" class="toccolours" width="50%">
-	<tr>
-		<td>$content</td>
-	</tr>
-</table>
-EOS
-		;
-		$wgOut->addHTML( $html );
-	}
-
-	private function outputBookSection()
-	{
-		$bookTitle = wfMsgHtml( 'coll-book_title' );
-		$bookText = wfMsgHtml( 'coll-book_text' );
-		$html = <<<EOS
-<h2><span class="mw-headline">$bookTitle</span></h2>
-<p>$bookText</p>
-<div id="ppList">
-EOS
-		;
-
-		foreach( $this->mPODPartners as $partner => $partnerData ) {
-			$formurl = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'post_zip/' ) );
-			$encPartner = htmlspecialchars( $partner );
-			$url = htmlspecialchars( $partnerData['url'] );
-			$logoURL = htmlspecialchars( $partnerData['logourl'] );
-			$partnerName = htmlspecialchars( $partnerData['name'] );
-			$orderLabel = wfMsgHtml( 'coll-order_from_pp', $partnerName );
-			$aboutLabel = wfMsgHtml( 'coll-about_pp', $partnerName );
-			$html .= <<<EOS
-<form action="$formurl" method="get">
-<p>
-		<input type="hidden" name="partner" value="$encPartner"/>
-		<input type="submit" value="$orderLabel"/>
-		<a href="$url" target="_blank">$aboutLabel&nbsp;<img src="$logoURL" alt="$partnerName"/></a>
-</p>
-	</form>
-EOS
-			;
-		}
-		$html .= '</div>';
-		$this->outputBox( $html );
+		
+		$template = new CollectionLoadOverwriteTemplate();
+		$template->set( 'title',  $title );
+		$wgOut->addTemplate( $template );
 	}
 
 	static function isCollectionPage( $title, $article ) {
