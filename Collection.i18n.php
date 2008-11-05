@@ -1404,8 +1404,9 @@ $messages['he'] = array(
 	'coll-load_collection' => 'פתיחת אוסף',
 	'coll-show_collection' => 'הצגת אוסף',
 	'coll-help_collections' => 'עזרה לאוספים',
-	'coll-empty' => 'ריק',
 	'coll-n_pages' => '{{PLURAL:$1|דף אחד|$1 דפים}}',
+	'coll-unknown_subpage_title' => 'דף משנה בלתי ידוע',
+	'coll-unknown_subpage_text' => 'דף משנה זה של ה[[Special:Collection|אוסף]] אינו קיים',
 	'coll-download_as' => 'הורדה בפורמט $1',
 	'coll-noscript_text' => '<h1>JavaScript נדרש!</h1>
 <strong>הדפדפן שלכם אינו תומך ב־JavaScript או שביטלתם את JavaScript בדפדפן זה.
@@ -1414,8 +1415,6 @@ $messages['he'] = array(
 
 ראו את [[{{MediaWiki:Coll-helppage}}|דף העזרה על אוספים]] למידע נוסף.',
 	'coll-helppage' => 'Help:אוספים',
-	'coll-too_big_cat' => 'קטגוריה זו כוללת יותר מ־%PARAM% דפים, רק %PARAM% הדפים הראשונים ייתווספו לאוסף.
-האם ברצונכם להוסיף אותם?',
 	'coll-my_collection' => 'האוסף שלי',
 	'coll-download_title' => 'הורדת האוסף',
 	'coll-download_text' => 'כדי להוריד מסמך שנוצר אוטומטית של אוסף הדפים שלכם, אנא בחרו פורמט ולחצו על הכפתור.',
