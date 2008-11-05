@@ -95,6 +95,7 @@ Do you want to overwrite your current collection, append the new content, or can
 	'coll-overwrite'                  => 'Overwrite',
 	'coll-append'                     => 'Append',
 	'coll-cancel'                     => 'Cancel',
+	'coll-update'                     => 'Update',
 	'coll-limit_exceeded_title'       => 'Collection too big',
 	'coll-limit_exceeded_text'        => 'Your page collection is too big.
 No more pages can be added.',

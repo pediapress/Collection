@@ -19,6 +19,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
+(function() {
 
 /******************************************************************************/
 
@@ -95,337 +96,6 @@ function trim(s) {
 
 /******************************************************************************/
 
-function Collection() {};
-
-Collection.prototype = {
-	items: [],
-	observers: [],
-
-	getItems: function() {
-		document.body.style.cursor = "wait";
-		var self = this;
-		sajax_request_type = "GET";
-		try {
-			sajax_do_call('wfAjaxGetCollection', [], function(xhr) {
-				var result;
-				try {
-					result = JSON.parse(xhr.responseText);
-				} catch(e) {
-					alert(gettext('errorResponseText'));
-					document.body.style.cursor = "default";
-					return;
-				}
-				self.deserialize(result.collection);
-				self.notify();
-				document.body.style.cursor = "default";
-			});
-		} catch (e) {
-			alert('XMLHttpRequest failed: ' + e);
-		}
-	},
-
-	setItems: function(items) {
-		this.items = items;
-		this.notify();
-		this.post();
-	},
-
-	post: function(callback/*=null*/) {
-		sajax_request_type = "POST";
-		try {
-			sajax_do_call('wfAjaxPostCollection', [this.serialize()], function(xhr) {
-				if (callback) {
-					callback(xhr);
-				}
-			});
-		} catch (e) {
-			alert('XMLHttpRequest failed: ' + e);
-		}
-	},
-
-	serialize: function() {
-		var result = {
-			title: this.title,
-			subtitle: this.subtitle,
-			items: this.items
-		};
-		return JSON.stringify(result);
-	},
-
-	deserialize: function(collection) {
-		this.title = collection.title || '';
-		this.subtitle = collection.subtitle || '';
-		this.items = collection.items || [];
-	},
-
-	observe: function(obj, method_name) {
-		this.observers.push({obj: obj, method: method_name});
-	},
-
-	notify: function() {
-		forEach(this.observers, function(i, observer) {
-			observer.obj[observer.method]();
-		});
-	},
-
-	sort: function() {
-		// N.B.: sort articles chapter-wise
-		var newItems = [];
-		var articles = [];
-		function nameCompare(a, b) {
-			var t1 = a.displaytitle || a.title;
-			var t2 = b.displaytitle || b.title;
-			if (t1 < t2) {
-				return -1;
-			} else if (t1 > t2) {
-				return 1;
-			}
-			return 0;
-		}
-		forEach(this.items, function(i, item) {
-			if (item.type == 'chapter') {
-				articles.sort(nameCompare);
-				newItems = newItems.concat(articles);
-				articles = [];
-				newItems.push(item);
-			} else if (item.type == 'article') {
-				articles.push(item);
-			}
-		});
-		if (articles.length) {
-			articles.sort(nameCompare);
-			newItems = newItems.concat(articles);
-		}
-		this.setItems(newItems);
-	},
-
-	renameItem: function(index) {
-		var newName = prompt(gettext('renameChapterText'), this.items[index].title);
-		if (newName) {
-			this.items[index].title = newName;
-			this.setItems(this.items);
-		}
-	},
-
-	addItem: function(item) {
-		this.items.push(item);
-		this.setItems(this.items);
-	},
-
-	removeItem: function(index) {
-		this.items.splice(index, 1);
-		this.setItems(this.items);
-	},
-
-	clear: function() {
-		this.title = '';
-		this.subtitle = '';
-		this.setItems([]);
-	},
-
-	moveItem: function(oldIndex, newIndex) {
-		var temp = this.items[oldIndex];
-		this.items[oldIndex] = this.items[newIndex];
-		this.items[newIndex] = temp;
-		this.setItems(this.items);
-	},
-
-	createChapter: function() {
-		var chapterName = prompt(gettext('newChapterText'));
-		if (chapterName) {
-			this.items.push({type: 'chapter', title: chapterName});
-			this.setItems(this.items);
-		}
-	}
-};
-
-/******************************************************************************/
-
-function CollectionSpecialPage() {
-	var self = this;
-
-	this.collection = new Collection();
-
-	this.collectionList = $('collectionList');
-
-	this.createChapter = $('createChapter');
-	hookEventOnElement('click', function() { self.collection.createChapter(); }, this.createChapter);
-
-	hookEventOnElement('click', function() {
-		if (confirm(gettext('clearConfirmText'))) {
-			self.collection.clear();
-		}
-	}, $('clearLink'));
-
-	hookEventOnElement('click', function() { self.collection.sort(); }, $('sortLink'));
-
-	this.downloadButton = $('downloadButton');
-	this.ppList = $('ppList');
-	this.titleInput = $('titleInput');
-
-	hookEventOnElement(['keyup', 'change'], function() {
-		var val = self.titleInput.value;
-		self.collection.title = val;
-		$('downloadTitle').value = val;
-		var st = $('saveTitle');
-		if (st) {
-			st.value = val;
-		}
-	}, this.titleInput);
-	hookEventOnElement('blur', function() { self.collection.post(); }, this.titleInput);
-
-	this.subtitleInput = $('subtitleInput');
-	hookEventOnElement(['keyup', 'change'], function() {
-		var val = self.subtitleInput.value;
-		self.collection.subtitle = val;
-		$('downloadSubtitle').value = val;
-		var sst = $('saveSubtitle');
-		if (sst) {
-			sst.value = val;
-		}
-	}, this.subtitleInput);
-	hookEventOnElement('blur', function() { self.collection.post(); }, this.subtitleInput);
-
-	hookEventOnElement(['keyup', 'change'], function() { self.updateButtons(); }, $('personalCollTitle'));
-	hookEventOnElement(['keyup', 'change'], function() { self.updateButtons(); }, $('communityCollTitle'));
-	hookEventOnElement(['keyup', 'change'], function() { self.updateButtons(); }, $('personalCollType'));
-	hookEventOnElement(['keyup', 'change'], function() { self.updateButtons(); }, $('communityCollType'));
-
-	this.collection.observe(this, 'refresh');
-	this.collection.getItems();
-};
-
-CollectionSpecialPage.prototype = {
-	refresh: function() {
-		this.titleInput.value = this.collection.title;
-		this.subtitleInput.value = this.collection.subtitle;
-		this.collectionList.innerHTML = '';
-		if (this.collection.items && this.collection.items.length) {
-			$('clearSpan').style.display = 'inline';
-			$('sortSpan').style.display = 'inline';
-			this.updateButtons();
-			var self = this;
-			forEach(this.collection.items, function(i, item) {
-				self.collectionList.appendChild(self.createItem(i));
-			});
-		} else {
-			$('clearSpan').style.display = 'none';
-			$('sortSpan').style.display = 'none';
-			this.updateButtons();
-			var div = document.createElement('div');
-			div.appendChild(document.createTextNode(gettext('emptyCollectionText')));
-			this.collectionList.appendChild(div);
-		}
-	},
-
-	updateButtons: function() {
-		var disabled = '';
-		if (!this.collection.items || !this.collection.items.length) {
-			disabled = 'disabled';
-		}
-		this.downloadButton.disabled = disabled;
-		forEach(this.ppList.getElementsByTagName('input'), function(i, button) {
-			button.disabled = disabled;
-		});
-		var saveButton = $('saveButton');
-		if (!saveButton) {
-			return;
-		}
-		if (disabled) {
-			saveButton.disabled = disabled;
-			return;
-		}
-		if ($('personalCollType').checked) {
-			$('personalCollTitle').disabled = '';
-			$('communityCollTitle').disabled = 'disabled';
-			if (!trim($('personalCollTitle').value)) {
-				saveButton.disabled = 'disabled';
-				return;
-			}
-		} else if ($('communityCollType').checked) {
-			$('communityCollTitle').disabled = '';
-			$('personalCollTitle').disabled = 'disabled';
-			if (!trim($('communityCollTitle').value)) {
-				saveButton.disabled = 'disabled';
-				return;
-			}
-		}
-		if (!this.collection.items || !this.collection.items.length) {
-			saveButton.disabled = disabled;
-			return;
-		}
-		saveButton.disabled = '';
-	},
-
-	createItem: function(index) {
-		var item = this.collection.items[index];
-		var li;
-		if (item.type == 'article') {
-			li = $('articleListItem').cloneNode(true);
-		} else if (item.type == 'chapter') {
-			li = $('chapterListItem').cloneNode(true);
-		} else {
-			return;
-		}
-		li.id = '';
-		var removeNodes = [];
-		var self = this;
-		forEach(li.childNodes, function(i, node) {
-			switch(node.className) {
-			case 'articleLink':
-				var text = item.displaytitle || item.title;
-				var href = item.url;
-				if (typeof(item.revision) == 'string' && item.revision != item.latest) {
-					text += ' (' + gettext('revisionText', '' + item.revision) + ')';
-					href += '?oldid=' + item.revision;
-				}
-				node.appendChild(document.createTextNode(text));
-				node.href = href;
-				break;
-			case 'chapterTitle':
-				node.appendChild(document.createTextNode(item.title))
-				break;
-			case 'renameLink':
-				hookEventOnElement('click', function() { self.collection.renameItem(index); }, node);
-				break;
-			case 'removeLink':
-				hookEventOnElement('click', function() { self.collection.removeItem(index); }, node);
-				break;
-			case 'moveUpLink':
-				if (index > 0) {
-					hookEventOnElement('click', function() { self.collection.moveItem(index, index - 1); }, node);
-				} else {
-					removeNodes.push(node);
-				}
-				break;
-			case 'moveUpDisabled':
-				if (index > 0) {
-					removeNodes.push(node);
-				}
-				break;
-			case 'moveDownLink':
-				if (index < self.collection.items.length - 1) {
-					hookEventOnElement('click', function() { self.collection.moveItem(index, index + 1); }, node);
-				} else {
-					removeNodes.push(node);
-				}
-				break;
-			case 'moveDownDisabled':
-				if (index < self.collection.items.length - 1) {
-					removeNodes.push(node);
-				}
-				break;
-			}
-		});
-		forEach(removeNodes, function(i, node) {
-			li.removeChild(node);
-		});
-		return li;
-	}
-};
-
-/******************************************************************************/
-
 function getMWServeStatus() {
 	sajax_request_type = "GET";
 	try {
@@ -455,6 +125,88 @@ function getMWServeStatus() {
 
 /******************************************************************************/
 
+function create_chapter() {
+	var name = prompt(gettext('newChapterText'));
+	if (name) {
+		try {
+			sajax_do_call('wfAjaxCollectionAddChapter', [name], function(xhr) {
+				$('collectionListContainer').innerHTML = xhr.responseText;
+			});
+		} catch (e) {
+			alert('XMLHttpRequest failed: ' + e);
+		}
+	}
+	return false;
+}
+
+function rename_chapter(index, old_name) {
+	var new_name = prompt(gettext('renameChapterText'), old_name);
+	if (new_name) {
+		try {
+			sajax_do_call('wfAjaxCollectionRenameChapter', [index, new_name], function(xhr) {
+				$('collectionListContainer').innerHTML = xhr.responseText;
+			});
+		} catch (e) {
+			alert('XMLHttpRequest failed: ' + e);
+		}
+	}
+}
+
+function remove_item(index) {
+	try {
+		sajax_do_call('wfAjaxCollectionRemoveItem', [index], function(xhr) {
+			$('collectionListContainer').innerHTML = xhr.responseText;
+		});
+	} catch (e) {
+		alert('XMLHttpRequest failed: ' + e);
+	}
+	return false;
+}
+
+function move_item(index, delta) {
+	try {
+		sajax_do_call('wfAjaxCollectionMoveItem', [index, delta], function(xhr) {
+			$('collectionListContainer').innerHTML = xhr.responseText;
+		});
+	} catch (e) {
+		alert('XMLHttpRequest failed: ' + e);
+	}
+	return false;
+}
+
+function set_titles() {
+	var title = $('titleInput').value;
+	var subtitle = $('subtitleInput').value;
+	try {
+		sajax_do_call('wfAjaxCollectionSetTitles', [title, subtitle], function(xhr) {});
+	} catch (e) {
+		alert('XMLHttpRequest failed: ' + e);
+	}
+	return false;
+}
+
+function update_save_button() {
+	var saveButton = $('saveButton');
+	if (!saveButton) {
+		return;
+	}
+	if ($('personalCollType').checked) {
+		$('personalCollTitle').disabled = '';
+		$('communityCollTitle').disabled = 'disabled';
+		if (!trim($('personalCollTitle').value)) {
+			saveButton.disabled = 'disabled';
+			return;
+		}
+	} else if ($('communityCollType').checked) {
+		$('communityCollTitle').disabled = '';
+		$('personalCollTitle').disabled = 'disabled';
+		if (!trim($('communityCollTitle').value)) {
+			saveButton.disabled = 'disabled';
+			return;
+		}
+	}
+	saveButton.disabled = '';
+}
 
 addOnloadHook(function() {
 	if (requiredVersion != wgCollectionVersion) {
@@ -462,9 +214,27 @@ addOnloadHook(function() {
 		return;
 	}
 	if ($('collectionList')) {
-		new CollectionSpecialPage();
+	  	var pattern = new RegExp("\\bmakeVisible\\b");
+		forEach(document.getElementsByTagName('a'), function(i, node) {
+		  	if (pattern.test(node.className)) {
+				node.style.display = 'inline';
+	    	}
+		});
+		window.coll_create_chapter = create_chapter;
+		window.coll_remove_item = remove_item;
+		window.coll_move_item = move_item;
+		window.coll_rename_chapter = rename_chapter;
+		update_save_button();
+		hookEventOnElement(['keyup', 'change'], update_save_button, $('personalCollTitle'));
+		hookEventOnElement(['keyup', 'change'], update_save_button, $('communityCollTitle'));
+		hookEventOnElement(['keyup', 'change'], update_save_button, $('personalCollType'));
+		hookEventOnElement(['keyup', 'change'], update_save_button, $('communityCollType'));
+		hookEventOnElement(['change'], set_titles, $('titleInput'));
+		hookEventOnElement(['change'], set_titles, $('subtitleInput'));
 	}
 	if (typeof collection_rendering != 'undefined') {
 		getMWServeStatus();
 	}
 });
+
+})();
