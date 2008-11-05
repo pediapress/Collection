@@ -11,7 +11,8 @@ if( !defined( 'MEDIAWIKI' ) ) die( -1 );
  * @ingroup Templates
  */
 class CollectionPageTemplate extends QuickTemplate {
-	function execute() {
+	function execute() {		
+		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/collection/';
 ?>
 
 <table align="right" style="clear: both; float: right; margin-left: 20px; margin-bottom: 10px;" class="toccolours" width="50%">
@@ -43,8 +44,6 @@ class CollectionPageTemplate extends QuickTemplate {
 				<h2><span class="mw-headline"><?php $this->msg('coll-download_title') ?></span></h2>
 				<p><?php $this->msg('coll-download_text') ?></p>
 				<form id="downloadForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'render/')) ?>" method="post">
-					<input id="downloadTitle" name="downloadTitle" type="hidden"></input>
-					<input id="downloadSubtitle" name="downloadSubtitle" type="hidden"></input>
 					<?php if (count($this->data['formats']) == 1) {
 						$writer = array_rand($this->data['formats']);
 						$buttonLabel = wfMsgHtml('coll-download_as', htmlspecialchars($this->data['formats'][$writer]));
@@ -83,9 +82,7 @@ class CollectionPageTemplate extends QuickTemplate {
 						<label for="communityCollType"><?php $this->msg('coll-community_collection_label') ?></label>
 						<label for="communityCollTitle"><?php echo htmlspecialchars(Title::makeTitle($GLOBALS['wgCommunityCollectionNamespace'], wfMsgForContent('coll-collections'))->getPrefixedText() . '/') ?></label>
 						<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled"></input><br />
-						<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>" disabled="disabled"></input>
-						<input id="saveTitle" name="saveTitle" type="hidden"></input>
-						<input id="saveSubtitle" name="saveSubtitle" type="hidden"></input>
+						<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>"></input>
 					</form>
 
 				<?php } else {
@@ -98,40 +95,40 @@ class CollectionPageTemplate extends QuickTemplate {
 	</tbody>
 </table>
 
-<noscript>
-<?php $this->msg('coll-noscript_text') ?>
-</noscript>
-
 <?php $this->msgWiki('coll-intro_text') ?>
 
 <h2><span class="mw-headline"><?php $this->msg('coll-my_collection') ?></span></h2>
 
-<table>
-	<tbody>
-		<tr>
-			<th><label for="titleInput"><?php $this->msg('coll-title') ?></label></th>
-			<td><input id="titleInput" type="text" value="" size="32" /></td>
-		</tr>
-		<tr>
-			<th><label for="subtitleInput"><?php $this->msg('coll-subtitle') ?></label></th>
-			<td><input id="subtitleInput" type="text" value="" size="32" /></td>
-		</tr>
-	</tbody>
-</table>
+<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'set_titles/')) ?>" method="post">
+	<table>
+		<tbody>
+			<tr>
+				<th><label for="titleInput"><?php $this->msg('coll-title') ?></label></th>
+				<td><input id="titleInput" type="text" name="collectionTitle" value="<?php echo htmlspecialchars($this->data['collection']['title']) ?>" size="32" /></td>
+			</tr>
+			<tr>
+				<th><label for="subtitleInput"><?php $this->msg('coll-subtitle') ?></label></th>
+				<td><input id="subtitleInput" type="text" name="collectionSubtitle" value="<?php echo htmlspecialchars($this->data['collection']['subtitle']) ?>" size="32" /></td>
+			</tr>
+			<noscript>
+				<tr>
+					<td colspan="2"><input type="submit" value="<?php $this->msg('coll-update') ?>" /></td>
+				</tr>
+			</noscript>
+		</tbody>
+	</table>
+</form>
 
-<h3><span class="mw-headline"><?php $this->msg('coll-contents') ?></span></h3>
-
-<a id="createChapter" href="javascript:void(0);"><?php $this->msg('coll-create_chapter') ?></a>
-<span id="sortSpan" style="display:none;">| <a id="sortLink" href="javascript:void(0);"><?php $this->msg('coll-sort_alphabetically') ?></a></span>
-<span id="clearSpan" style="display:none;">| <a id="clearLink" href="javascript:void(0);"><?php $this->msg('coll-clear_collection') ?></a></span>
-
-<div id="collectionList"></div>
+<div id="collectionListContainer">
+<?php
+$listTemplate = new CollectionListTemplate();
+$listTemplate->set( 'collection', $this->data['collection'] );
+$listTemplate->execute();
+?>
+</div>
 
 <br style="clear:both;"/>
 
-<?php
-$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/collection/';
-?>
 <div style="display:none">
 	<div id="articleListItem" class="article">
 		<a class="removeLink" href="javascript:void(0)" title="<?php $this->msg('coll-remove') ?>"><img src="<?php echo htmlspecialchars($mediapath . "cross.png") ?>" width="11" height="11" alt="<?php $this->msg('remove') ?>" /></a>
@@ -161,6 +158,84 @@ $mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/collection/';
 	<span id="revisionText"><?php $this->msg('coll-revision') ?></span>
 	<span id="clearConfirmText"><?php $this->msg('coll-clear_confirm') ?></span>
 </div>
+
+<?php
+	}
+}
+
+/**
+ * HTML template for Special:Collection collection item list
+ * @ingroup Templates
+ */
+class CollectionListTemplate extends QuickTemplate {
+	function execute() {		
+		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/collection/';
+?>
+
+<h3><span class="mw-headline"><?php $this->msg('coll-contents') ?></span></h3>
+
+<a class="makeVisible" <?php if (!isset($this->data['is_ajax'])) { echo 'style="display:none"'; } ?> onclick="return coll_create_chapter()" href="javascript:void(0);">[<?php $this->msg('coll-create_chapter') ?>]</a>
+<?php if (count($this->data['collection']['items']) > 0) { ?>
+<span id="sortSpan"><a id="sortLink" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'sort_items/')) ?>">[<?php $this->msg('coll-sort_alphabetically') ?>]</a></span>
+<span id="clearSpan"><a id="clearLink" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'clear_collection/')) ?>">[<?php $this->msg('coll-clear_collection') ?>]</a></span>
+<?php } ?>
+
+<div id="collectionList">
+<?php
+if (count($this->data['collection']['items']) == 0) {
+	$this->msg('coll-empty_collection');
+}
+foreach($this->data['collection']['items'] as $index => $item) {
+	if ($item['type'] == 'article') { ?>
+	<div class="article">
+		<a class="removeLink" onclick="return coll_remove_item(<?php echo $index ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'remove_item/', 'index=' . $index)) ?>" title="<?php $this->msg('coll-remove') ?>"><img src="<?php echo htmlspecialchars($mediapath . "cross.png") ?>" width="11" height="11" alt="<?php $this->msg('remove') ?>" /></a>
+		<?php if ($index == 0) { ?>
+			<img class="moveUpDisabled" src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="11" height="11" alt="" />
+		<?php } else { ?>
+			<a class="moveUpLink" onclick="return coll_move_item(<?php echo $index . ', -1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=-1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_up') ?>"><img src="<?php echo htmlspecialchars($mediapath . "up.png") ?>" width="11" height="11" alt="<?php $this->msg('coll-move_up') ?>" /></a>
+		<?php }
+		if ($index == count($this->data['collection']['items']) - 1) { ?>
+			<img class="moveDownDisabled" src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="11" height="11" alt="" />
+		<?php } else { ?>
+			<a class="moveDownLink" onclick="return coll_move_item(<?php echo $index . ', 1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_down') ?>"><img src="<?php echo htmlspecialchars($mediapath . "down.png") ?>" width="11" height="11" alt="<?php $this->msg('coll-move_down') ?>" /></a>
+		<?php }
+		if ($item['revision'] && $item['revision'] != $item['latest']) {
+			$revision = '('. htmlspecialchars(wfMsg('coll-revision', $item['revision'])) . ')';
+			$url = $item['url'] . '?oldid=' . $item['revision'];
+		} else {
+			$revision = '';
+			$url = $item['url'];
+		}
+		?>
+		<a class="articleLink" href="<?php echo $url ?>" style="margin-left:1em;">
+			<?php if ($item['displaytitle']) {
+				echo htmlspecialchars($item['displaytitle']);
+			} else {
+				echo htmlspecialchars($item['title']);
+			}
+			echo ' ' . $revision; ?>
+		</a>
+	</div>
+	<?php } else if ($item['type'] == 'chapter') { ?>
+	<div id="chapterListItem" class="chapter" style="margin-top:0.3em;">
+		<a class="removeLink" onclick="return coll_remove_item(<?php echo $index ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'remove_item/', 'index=' . $index)) ?>" title="<?php $this->msg('coll-remove') ?>"><img src="<?php echo htmlspecialchars($mediapath . "cross.png") ?>" width="11" height="11" alt="<?php $this->msg('coll-remove') ?>" /></a>
+		<?php if ($index == 0) { ?>
+			<img class="moveUpDisabled" src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="11" height="11" alt="" />
+		<?php } else { ?>
+			<a class="moveUpLink" onclick="return coll_move_item(<?php echo $index . ', -1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=-1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_up') ?>"><img src="<?php echo htmlspecialchars($mediapath . "up.png") ?>" width="11" height="11" alt="<?php $this->msg('coll-move_up') ?>" /></a>
+		<?php }
+		if ($index == count($this->data['collection']['items']) - 1) { ?>
+			<img class="moveDownDisabled" src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="11" height="11" alt="" />
+		<?php } else { ?>
+			<a class="moveDownLink" onclick="return coll_move_item(<?php echo $index . ', 1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_down') ?>"><img src="<?php echo htmlspecialchars($mediapath . "down.png") ?>" width="11" height="11" alt="<?php $this->msg('coll-move_down') ?>" /></a>
+		<?php } ?>
+		<strong class="chapterTitle" style="margin-left: 0.5em;"><?php echo htmlspecialchars($item['title']) ?></strong>
+		<a class="makeVisible" <?php if (!isset($this->data['is_ajax'])) { echo 'style="display:none"'; } ?> onclick="return coll_rename_chapter(<?php echo $index . ', \'' . $item['title'] . '\''; ?>)" href="javascript:void(0)">[<?php $this->msg('coll-rename') ?>]</a>
+	</div>
+	<?php }
+} ?>
+</div>
+
 
 <?php
 	}

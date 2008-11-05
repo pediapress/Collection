@@ -82,7 +82,17 @@ class Collection extends SpecialPage {
 		} else if ( $par == 'clear_collection/' ) {
 			self::clearCollection();
 			$wgUser->invalidateCache();
-			$wgOut->redirect( $wgRequest->getVal( 'return_to' ) );
+			$wgOut->redirect( $wgRequest->getVal( 'return_to', SkinTemplate::makeSpecialUrl( 'Collection' ) ) );
+			return;
+		} else if ( $par == 'set_titles/' ) {
+			self::setTitles( $wgRequest->getText( 'collectionTitle', '' ), $wgRequest->getText( 'collectionSubtitle', '') );
+			$wgUser->invalidateCache();
+			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Collection' ) );
+			return;
+		} else if ( $par == 'sort_items/' ) {
+			self::sortItems();
+			$wgUser->invalidateCache();
+			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Collection' ) );
 			return;
 		} else if ( $par == 'add_category/' ) {
 			$title = Title::makeTitleSafe( NS_CATEGORY, $wgRequest->getVal( 'cattitle', '' ) );
@@ -93,6 +103,16 @@ class Collection extends SpecialPage {
 				$wgOut->redirect( $title->getFullURL() );
 			}
 			$wgUser->invalidateCache();
+			return;
+		} else if ( $par == 'remove_item/' ) {
+			self::removeItem( $wgRequest->getInt( 'index', 0 ) );
+			$wgUser->invalidateCache();
+			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Collection' ) );
+			return;
+		} else if ( $par == 'move_item/' ) {
+			self::moveItem( $wgRequest->getInt( 'index', 0 ), $wgRequest->getInt( 'delta', 0 ) );
+			$wgUser->invalidateCache();
+			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Collection' ) );
 			return;
 		} else if ( $par == 'load_collection/' ) {
 			$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
@@ -114,14 +134,6 @@ class Collection extends SpecialPage {
 			$this->renderLoadOverwritePage( $title );
 			return;
 		} else if ( $par == 'save_collection/' ) {
-			$title = $wgRequest->getVal( 'saveTitle', '' );
-			if ( $title ) {
-				$_SESSION['wsCollection']['title'] = $title;
-			}
-			$subtitle = $wgRequest->getVal( 'saveSubitle', '' );
-			if ( $subtitle ) {
-				$_SESSION['wsCollection']['subtitle'] = $subtitle;
-			}
 			$collTitle = $wgRequest->getVal( 'colltitle' );
 			if ( $wgRequest->getVal( 'overwrite' ) && !empty( $collTitle ) ) {;
 				$title = Title::newFromText( $collTitle );
@@ -158,14 +170,6 @@ class Collection extends SpecialPage {
 			}
 			return;
 		} else if ( $par == 'render/' ) {
-			$title = $wgRequest->getVal( 'downloadTitle', '' );
-			if ( $title ) {
-				$_SESSION['wsCollection']['title'] = $title;
-			}
-			$subtitle = $wgRequest->getVal( 'downloadSubtitle', '' );
-			if ( $subtitle ) {
-				$_SESSION['wsCollection']['subtitle'] = $subtitle;
-			}
 			return $this->renderCollection(
 				$_SESSION['wsCollection'],
 				Title::makeTitle( NS_SPECIAL, 'Collection' ),
@@ -211,6 +215,7 @@ class Collection extends SpecialPage {
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
 		
 		$template = new CollectionPageTemplate();
+		$template->set( 'collection', $_SESSION['wsCollection'] );
 		$template->set( 'podpartners', $this->mPODPartners );
 		$template->set( 'formats', $wgCollectionFormats);
 		$wgOut->addTemplate( $template );
@@ -226,6 +231,60 @@ class Collection extends SpecialPage {
 			'subtitle' => '',
 			'items' => array(),
 		);
+		self::touchSession();
+	}
+	
+	static function setTitles( $title, $subtitle ) {
+		$collection = $_SESSION['wsCollection'];
+		$collection['title'] = $title;
+		$collection['subtitle'] = $subtitle;
+		$_SESSION['wsCollection'] = $collection;
+		self::touchSession();
+	}
+	
+	static function sortItems() {
+		$collection = $_SESSION['wsCollection'];
+		$articles = array();
+		$new_items = array();
+		function title_cmp($a, $b) {
+			return strcasecmp($a['title'], $b['title']);
+		}
+		foreach ( $collection['items'] as $item ) {
+			if ( $item['type'] == 'chapter' ) {
+				usort( $articles, 'title_cmp' );
+				while ( count( $articles ) ) {
+					$new_items[] = array_shift( $articles );
+				}
+				$new_items[] = $item;
+			} else if ( $item['type'] == 'article' ) {
+				$articles[] = $item;
+			}
+		}
+		if ( count( $articles ) ) {
+			usort( $articles, 'title_cmp' );
+			while ( count( $articles ) ) {
+				$new_items[] = array_shift( $articles );
+			}
+		}
+		$collection['items'] = $new_items;
+		$_SESSION['wsCollection'] = $collection;
+		self::touchSession();
+	}
+	
+	static function addChapter( $name ) {
+		$collection = $_SESSION['wsCollection'];
+		$collection['items'][] = array(
+			'type' => 'chapter',
+			'title' => $name,
+		);
+		$_SESSION['wsCollection'] = $collection;
+		self::touchSession();
+	}
+	
+	static function renameChapter( $index, $name ) {
+		$collection = $_SESSION['wsCollection'];
+		$collection['items'][$index]['title'] = $name;
+		$_SESSION['wsCollection'] = $collection;
 		self::touchSession();
 	}
 	
@@ -381,6 +440,28 @@ class Collection extends SpecialPage {
 		$wgOut->showErrorPage( 'coll-limit_exceeded_title', 'coll-limit_exceeded_text' );
 	}
 
+	static function removeItem( $index ) {
+		if ( !self::hasSession() ) {
+			return;
+		}
+		$collection = $_SESSION['wsCollection'];
+		array_splice( $collection['items'], $index, 1 );
+		$_SESSION['wsCollection'] = $collection;
+		self::touchSession();		
+	}
+	
+	static function moveItem( $index, $delta ) {
+		if ( !self::hasSession() ) {
+			return;
+		}
+		$collection = $_SESSION['wsCollection'];
+		$saved = $collection['items'][$index + $delta];
+		$collection['items'][$index + $delta] = $collection['items'][$index];
+		$collection['items'][$index] = $saved;
+		$_SESSION['wsCollection'] = $collection;
+		self::touchSession();
+	}
+	
 	function loadCollection( $title, $append=false ) {
 		if ( is_null( $title ) ) {
 			$wgOut->showErrorPage( 'coll-notitle_title', 'coll-notitle_msg' );

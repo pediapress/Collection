@@ -105,6 +105,7 @@ $wgExtensionCredits['specialpage'][] = array(
 $dir = dirname(__FILE__) . '/';
 $wgAutoloadClasses['Collection'] = $dir . 'Collection.body.php';
 $wgAutoloadClasses['CollectionPageTemplate'] = $dir . 'Collection.templates.php';
+$wgAutoloadClasses['CollectionListTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionLoadOverwriteTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionSaveOverwriteTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionRenderingTemplate'] = $dir . 'Collection.templates.php';
@@ -181,3 +182,52 @@ function wfAjaxCollectionGetPortlet( $ajaxHint='' ) {
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionGetPortlet';
+
+function wfAjaxCollectionGetItemList() {
+	wfLoadExtensionMessages( 'Collection' );
+	$template = new CollectionListTemplate();
+	$template->set( 'collection', $_SESSION['wsCollection'] );
+	$template->set( 'is_ajax', true );
+	ob_start();
+	$template->execute();
+	$html = ob_get_contents();
+	ob_end_clean();
+	return $html;
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionGetItemList';
+
+function wfAjaxCollectionMoveItem( $index, $delta ) {
+	Collection::moveItem( $index, $delta );
+	return wfAjaxCollectionGetItemList();
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionMoveItem';
+
+function wfAjaxCollectionRemoveItem( $index ) {
+	Collection::removeItem( $index );
+	return wfAjaxCollectionGetItemList();
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionRemoveItem';
+
+function wfAjaxCollectionAddChapter( $name ) {
+	Collection::addChapter( $name );
+	return wfAjaxCollectionGetItemList();
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionAddChapter';
+
+function wfAjaxCollectionRenameChapter( $index, $name ) {
+	Collection::renameChapter( $index, $name );
+	return wfAjaxCollectionGetItemList();
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionRenameChapter';
+
+function wfAjaxCollectionSetTitles( $title, $subtitle ) {
+	Collection::setTitles( $title, $subtitle );
+	return '';
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionSetTitles';
