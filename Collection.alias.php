@@ -37,6 +37,11 @@ $aliases['br'] = array(
 	'Collection' => array( 'Dastumad' ),
 );
 
+/** Bosnian (Bosanski) */
+$aliases['bs'] = array(
+	'Collection' => array( 'Kolekcija' ),
+);
+
 /** German (Deutsch) */
 $aliases['de'] = array(
 	'Collection' => array( 'Sammlung' ),

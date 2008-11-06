@@ -241,8 +241,8 @@ $messages['ar'] = array(
 	'coll-load_collection' => 'تحميل المجموعة',
 	'coll-show_collection' => 'عرض المجموعة',
 	'coll-help_collections' => 'مساعدة المجموعات',
-	'coll-empty' => 'فارغ',
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحة|صفحة}}',
+	'coll-unknown_subpage_title' => 'صفحة فرعية غير معروفة',
 	'coll-download_as' => 'تحميل ك$1',
 	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
 <strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
@@ -251,8 +251,6 @@ $messages['ar'] = array(
 
 انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
 	'coll-helppage' => 'Help:مجموعات',
-	'coll-too_big_cat' => 'التصنيف يحتوي على أكثر من %PARAM% صفحة، فقط أول %PARAM% صفحة يمكن إضافتها إلى مجموعتك.
-هل تريد إضافتها؟',
 	'coll-my_collection' => 'مجموعتي',
 	'coll-download_title' => 'حمل المجموعة ك PDF',
 	'coll-download_text' => 'لتحميل ملف PDF مولد تلقائيا من مجموعة صفحتك، اضغط الزر.',
@@ -302,16 +300,17 @@ $messages['ar'] = array(
 	'coll-overwrite' => 'كتابة عليها',
 	'coll-append' => 'انتظار',
 	'coll-cancel' => 'إلغاء',
+	'coll-update' => 'حدّث',
 	'coll-limit_exceeded_title' => 'المجموعة كبيرة جدا',
 	'coll-limit_exceeded_text' => 'مجموعة صفحتك كبيرة جدا.
 لا مزيد من الصفحات يمكن إضافتها.',
 	'coll-rendering_title' => 'عرض',
-	'coll-rendering_text' => "'''من فضلك انتظر أثناء توليد الوثيقة.'''
+	'coll-rendering_text' => '<p><strong>من فضلك انتظر أثناء توليد الوثيقة.</strong></p>
 
-'''التقدم:''' $1% $2
+<p><strong>التقدم:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان.
-لو أن هذا لا يعمل، من فضلك اضغط زر التحديث في متصفحك.",
+<p>هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان.
+لو أن هذا لا يعمل، من فضلك اضغط زر التحديث في متصفحك.</p>',
 	'coll-rendering_status' => "'''الحالة:''' $1",
 	'coll-rendering_article' => '  (المقالة: $1)',
 	'coll-rendering_page' => '  (الصفحة: $1)',
@@ -352,7 +351,6 @@ $messages['arz'] = array(
 	'coll-load_collection' => 'تحميل المجموعة',
 	'coll-show_collection' => 'عرض المجموعة',
 	'coll-help_collections' => 'مساعدة المجموعات',
-	'coll-empty' => 'فارغ',
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحة|صفحة}}',
 	'coll-download_as' => 'تحميل ك$1',
 	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
@@ -362,8 +360,6 @@ $messages['arz'] = array(
 
 انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
 	'coll-helppage' => 'Help:مجموعات',
-	'coll-too_big_cat' => 'التصنيف يحتوى على أكثر من %PARAM% صفحة، فقط أول %PARAM% صفحة يمكن إضافتها إلى مجموعتك.
-هل تريد إضافتها؟',
 	'coll-my_collection' => 'مجموعتي',
 	'coll-download_title' => 'حمل المجموعة ك PDF',
 	'coll-download_text' => 'لتحميل ملف PDF مولد تلقائيا من مجموعة صفحتك، اضغط الزر.',
@@ -577,7 +573,6 @@ $messages['cs'] = array(
 	'coll-load_collection' => 'Načíst kolekci',
 	'coll-show_collection' => 'Zobrazit kolekci',
 	'coll-help_collections' => 'Nápověda ke kolekcím',
-	'coll-empty' => 'prázdná',
 	'coll-n_pages' => '$1 {{PLURAL:$1|stránka|stránky|stránek}}',
 	'coll-download_as' => 'Stáhnout jako $1',
 	'coll-noscript_text' => '<h1>Je vyžadován JavaScript!</h1>
@@ -587,7 +582,6 @@ Tato stránka nebude správně fungovat, dokud JavaScript nezapnete.</strong>',
 
 Další informace najdete na [[{{MediaWiki:Coll-helppage}}|stránce nápovědy ke kolekcím]].',
 	'coll-helppage' => 'Help:Kolekce',
-	'coll-too_big_cat' => 'Tato kategorie obsahuje více než %PARAM% {{PLURAL:%PARAM%|stránku|stránky|stránek}}, do kolekce však lze přidat pouze {{PLURAL:%PARAM%|první stránku|první %PARAM% stránky|prvních %PARAM% stránek}}. Chcete je tam přidat?',
 	'coll-my_collection' => 'Moje kolekce',
 	'coll-download_title' => 'Stáhnout kolekci',
 	'coll-download_text' => 'Pokud chcete stáhnout dokument vytvořený automaticky z vaší kolekce stránek, zvolte si formát a klikněte na tlačítko.',
@@ -640,12 +634,13 @@ Chcete přepsat svoji existující kolekci, přidat do ní obsah nebo zrušit op
 	'coll-limit_exceeded_text' => 'Vaše kolekce stránek je příliš velká.
 Není možné přidat další stránky.',
 	'coll-rendering_title' => 'Vykreslování',
-	'coll-rendering_text' => "'''Prosím čekejte, dokument se připravuje.'''
+	'coll-rendering_text' => '<p><strong>Prosím čekejte, dokument se připravuje.</strong></p>
 
-Dokončeno: '''$1 %'''
+<p><strong>Dokončeno:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
 
-Tato stránka se každých několik sekund automaticky obnoví.
-Pokud to nefunguje, stiskněte v prohlížeči tlačítko ''obnovit''.",
+<p>Tato stránka se každých několik sekund automaticky obnoví.
+Pokud to nefunguje, stiskněte v prohlížeči tlačítko <i>obnovit</i>.</p>',
+	'coll-rendering_status' => '<strong>Stav:</strong> $1',
 	'coll-rendering_finished_title' => 'Vykreslování dokončeno',
 	'coll-rendering_finished_text' => "'''Soubor s dokumentem byl vytvořen.'''
 Můžete si ho '''[$1 stáhnout do svého počítače]'''.
@@ -698,8 +693,9 @@ $messages['de'] = array(
 	'coll-load_collection' => 'Sammlung laden',
 	'coll-show_collection' => 'Sammlung zeigen',
 	'coll-help_collections' => 'Hilfe zu Sammlungen',
-	'coll-empty' => 'leer',
 	'coll-n_pages' => '$1 {{PLURAL:$1|Seite|Seite}}',
+	'coll-unknown_subpage_title' => 'Unbekannte Unterseite',
+	'coll-unknown_subpage_text' => 'Diese Unterseite der [[Special:Collection|Sammlung]] existiert nicht',
 	'coll-download_as' => 'Als $1 herunterladen',
 	'coll-noscript_text' => '<h1>JavaScript wird benötigt!</h1>
 <strong>Dein Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
@@ -708,8 +704,6 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 
 Siehe auch die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Sammlungen]] für weitere Informationen.',
 	'coll-helppage' => 'Help:Sammlungen',
-	'coll-too_big_cat' => 'Die Kategorie enthält mehr als %PARAM% Seiten, daher können nur die ersten %PARAM% Seiten deiner Sammlung hinzugefügt werden.
-Möchtest du sie hinzufügen?',
 	'coll-my_collection' => 'Meine Sammlung',
 	'coll-download_title' => 'Sammlung herunterladen',
 	'coll-download_text' => 'Um eine automatisch erstellte Datei deiner Sammlung herunterzuladen, klicke auf die Schaltfläche.',
@@ -757,15 +751,16 @@ Möchtest du die aktuelle Sammlung überschreiben, die neuen Seiten anhängen od
 	'coll-overwrite' => 'Überschreiben',
 	'coll-append' => 'Anhängen',
 	'coll-cancel' => 'Abbrechen',
+	'coll-update' => 'Aktualisieren',
 	'coll-limit_exceeded_title' => 'Sammlung zu groß',
 	'coll-limit_exceeded_text' => 'Deine Sammlung ist zu groß. Es können keine Seiten mehr hinzugefügt werden.',
 	'coll-rendering_title' => 'Beim Erstellen',
-	'coll-rendering_text' => "'''Bitte habe Geduld, während das Dokument erstellt wird.'''
+	'coll-rendering_text' => '<p><strong>Bitte habe Geduld, während das Dokument erstellt wird.</strong></p>
 
-'''Fortschritt:''' $1 % $2.
+<p><strong>Fortschritt:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Diese Seite sollte sich alle paar Sekunden von selbst aktualisieren.
-Falls dieses jedoch nicht geschieht, so drücke bitte den „Aktualisieren“-Knopf (meist F5) deines Browsers.",
+<p>Diese Seite sollte sich alle paar Sekunden von selbst aktualisieren.
+Falls dieses jedoch nicht geschieht, so drücke bitte den „Aktualisieren“-Knopf (meist F5) deines Browsers.</p>',
 	'coll-rendering_status' => "'''Status:''' $1",
 	'coll-rendering_article' => '  (Artikel: $1)',
 	'coll-rendering_page' => '  (Seite: $1)',
@@ -880,15 +875,13 @@ $messages['eo'] = array(
 	'coll-load_collection' => 'Alŝuti kolekton',
 	'coll-show_collection' => 'Montri kolekton',
 	'coll-help_collections' => 'Helpo pri kolektoj',
-	'coll-empty' => 'malplena',
 	'coll-n_pages' => '$1 {{PLURAL:$1|paĝo|paĝoj}}',
+	'coll-unknown_subpage_title' => 'Nekonata subpaĝo',
 	'coll-download_as' => 'Elŝuti kiel $1',
 	'coll-noscript_text' => '<h1>JavaScript-o estas deviga!<h1>
 <strong>Via retumilo ne subtenas JavaScript-on aŭ JavaScript-o estis malŝaltita.
 Ĉi tiu paĝo ne funkcius bone, ĝis JavaScript-o estas ŝaltita.</strong>',
 	'coll-helppage' => 'Help:Kolektoj',
-	'coll-too_big_cat' => 'La kategorio enhavas pli ol %PARAM% paĝojn, nur la unuaj %PARAM% paĝoj povas esti aldonitaj al via kolekto.
-Ĉu vi volas aldoni ilin?',
 	'coll-my_collection' => 'Mia kolekto',
 	'coll-download_title' => 'Alŝutu kolekton kiel PDF-on',
 	'coll-download_text' => 'Alŝuti aŭtomate generitan PDF-dosieron de via paĝkolekto, klaku la butonon.',
@@ -933,6 +926,7 @@ $messages['eo'] = array(
 	'coll-overwrite' => 'Anstataŭigu',
 	'coll-append' => 'Aldoni',
 	'coll-cancel' => 'Nuligi',
+	'coll-update' => 'Ĝisdatigi',
 	'coll-limit_exceeded_title' => 'Kolekto Tro Granda',
 	'coll-limit_exceeded_text' => 'Via paĝa kolekto estas tro granda.
 Neniom pluaj paĝoj ne povas esti aldonitaj.',
@@ -982,7 +976,6 @@ $messages['fa'] = array(
 	'coll-load_collection' => 'بارکردن مجموعه',
 	'coll-show_collection' => 'نمایش مجموعه',
 	'coll-help_collections' => 'راهنمای مجموعه‌ها',
-	'coll-empty' => 'خالی',
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحه|صفحه}}',
 	'coll-download_as' => 'بارگیری با عنوان $1',
 	'coll-noscript_text' => '<h1>جاوااسکریپت لازم دارید!</h1>
@@ -992,8 +985,6 @@ $messages['fa'] = array(
 
 برای کسب اطلاعات بیشتر [[{{MediaWiki:Coll-helppage}}|.صفحه راهنما برای مجموعه‌ها]] را بخوانید.',
 	'coll-helppage' => 'Help:مجموعه‌ها',
-	'coll-too_big_cat' => 'این رده شامل بیش از %PARAM% صفحه است، تنها %PARAM% صفحهٔ نخست به مجموعهٔ شما افزوده خواهند شد
-آیا می‌خواهید آن‌ها را بیفزایید؟',
 	'coll-my_collection' => 'مجموعهٔ من',
 	'coll-download_title' => 'دریافت مجموعه',
 	'coll-download_text' => 'برای بارگیری یک سند ایجاد شده از مجموعهٔ صفحه‌های شما به طور خودکار، یک قالب برگزینید و دکمه را بزنید.',
@@ -1132,8 +1123,9 @@ $messages['fr'] = array(
 	'coll-load_collection' => 'Charger une compilation',
 	'coll-show_collection' => 'Afficher la compilation',
 	'coll-help_collections' => 'Aide sur les compilations',
-	'coll-empty' => 'vide',
 	'coll-n_pages' => '$1 {{PLURAL:$1|page|pages}}',
+	'coll-unknown_subpage_title' => 'Sous-page inconnue',
+	'coll-unknown_subpage_text' => "Cette sous-page de [[Special:Collection|collections]] n'existe pas",
 	'coll-download_as' => 'Télécharger comme $1',
 	'coll-noscript_text' => "<h1>Javascript est nécessaire !</h1>
 <strong>Votre navigateur ne supporte pas Javascript ou bien l'a désactivé.
@@ -1142,7 +1134,6 @@ Cette page ne s'affichera pas correctement tant que javascript n'est pas activé
 
 Voyez [[{{MediaWiki:Coll-helppage}}|la page d'aide sur les collections]] pour davantage d'informations.",
 	'coll-helppage' => 'Help:Collections',
-	'coll-too_big_cat' => 'La catégorie contient plus de %PARAM% pages, seul les %PARAM% premières pages seront ajoutées à votre collection.',
 	'coll-my_collection' => 'Ma compilation',
 	'coll-download_title' => 'Télécharger la compilation en PDF',
 	'coll-download_text' => 'Pour télécharger un PDF généré automatiquement à partir de votre compilation, appuyez sur le bouton.',
@@ -1191,16 +1182,17 @@ Voulez vous écraser votre collection actuelle, y rajouter le contenu ou bien an
 	'coll-overwrite' => 'Écraser',
 	'coll-append' => 'Ajouter',
 	'coll-cancel' => 'Annuler',
+	'coll-update' => 'Mettre à jour',
 	'coll-limit_exceeded_title' => 'Compilation trop grande',
 	'coll-limit_exceeded_text' => 'Votre compilation est trop grande.
 Aucune page ne peut être ajoutée.',
 	'coll-rendering_title' => 'Rendu',
-	'coll-rendering_text' => "'''Veuillez patienter pendant que le document est en cours de création.'''
+	'coll-rendering_text' => '<p><strong>Veuillez patienter pendant que le document est en cours de création.</strong></p>
 
-Progression : '''$1 %'''.
+<p><strong>Progression :</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Cette page devrait s’actualiser par intervalles réguliers de secondes.
-Si tel n'était pas le cas, veuillez cliquer sur le bouton d’actualisation de votre navigateur.",
+<p>Cette page devrait s’actualiser automatiquement par intervalles réguliers de secondes.
+Si tel n\'était pas le cas, veuillez cliquer sur le bouton d’actualisation de votre navigateur.</p>',
 	'coll-rendering_status' => "'''Statut :''' $1",
 	'coll-rendering_article' => '  (page wiki : $1)',
 	'coll-rendering_page' => '  (page : $1)',
@@ -1249,7 +1241,6 @@ $messages['gl'] = array(
 	'coll-load_collection' => 'Cargar colección',
 	'coll-show_collection' => 'Mostrar colección',
 	'coll-help_collections' => 'Axuda coas coleccións',
-	'coll-empty' => 'baleiro',
 	'coll-n_pages' => '$1 {{PLURAL:$1|páxina|páxinas}}',
 	'coll-download_as' => 'Descargar como $1',
 	'coll-noscript_text' => '<h1>Requírese o JavaScript!</h1>
@@ -1259,8 +1250,6 @@ Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa
 
 Vexa a [[{{MediaWiki:Coll-helppage}}|páxina de axuda sobre as coleccións]] para máis información.',
 	'coll-helppage' => 'Help:Coleccións',
-	'coll-too_big_cat' => 'A categoría contén máis de %PARAM% páxinas; só as primeiras %PARAM% páxinas poden ser engadidas á súa colección.
-Quere engadilas?',
 	'coll-my_collection' => 'A miña colección',
 	'coll-download_title' => 'Descargar a colección como arquivo PDF',
 	'coll-download_text' => 'Para descargar un arquivo PDF xerado automaticamente da súa páxina de colección, faga clic no botón.',
@@ -1313,12 +1302,12 @@ Desexa sobreescribir a súa colección actual, adxuntar o novo contido ou cancel
 	'coll-limit_exceeded_text' => 'A súa páxina de colección é moi grande.
 Non se poden engadir máis páxinas.',
 	'coll-rendering_title' => 'Renderizando',
-	'coll-rendering_text' => "'''Por favor, agarde mentres o documento é xerado.'''
+	'coll-rendering_text' => '<p><strong>Por favor, agarde mentres o documento é xerado.</strong></p>
 
-'''Progreso:''' \$1% \$2
+<p><strong>Progreso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Esta páxina debería refrescarse cada poucos segundos.
-Se non vai, por favor, prema no botón \"Refrescar\" do seu navegador.",
+<p>Esta páxina debería refrescarse cada poucos segundos.
+Se non vai, por favor, prema no botón "Refrescar" do seu navegador.</p>',
 	'coll-rendering_finished_title' => 'Finalizou a renderización',
 	'coll-rendering_finished_text' => "'''O documento foi xerado.'''
 '''[$1 Prema aquí]''' para descargalo no seu ordenador.
@@ -1469,13 +1458,13 @@ $messages['he'] = array(
 	'coll-limit_exceeded_text' => 'אוסף הדפים שלכם גדול מדי.
 לא ניתן להוסיף דפים נוספים.',
 	'coll-rendering_title' => 'ביצירה',
-	'coll-rendering_text' => "<p><strong>אנא המתינו בעת יצירת המסמך.</strong></p>
+	'coll-rendering_text' => '<p><strong>אנא המתינו בעת יצירת המסמך.</strong></p>
 
-<p><strong>התקדמות התהליך:</strong> <span id=\"renderingProgress\">$1</span>% <span id=\"renderingStatus\">$2</span></p>
+<p><strong>התקדמות התהליך:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
 <p>הדפדפן אמור לבצע ריענון אוטומטי לדף זה כל מספר שניות.
-אם זה לא עובד, אנא לחצו על כפתור הריענון בדפדפן שלכם.</p>",
-	'coll-rendering_status' => "<strong>מצב:</strong> $1",
+אם זה לא עובד, אנא לחצו על כפתור הריענון בדפדפן שלכם.</p>',
+	'coll-rendering_status' => '<strong>מצב:</strong> $1',
 	'coll-rendering_article' => ' (דף תוכן: $1)',
 	'coll-rendering_page' => ' (דף: $1)',
 	'coll-rendering_finished_title' => 'היצירה הסתיימה',
@@ -1592,7 +1581,6 @@ $messages['hr'] = array(
 	'coll-load_collection' => 'Učitaj zbirku',
 	'coll-show_collection' => 'Pokaži zbirku',
 	'coll-help_collections' => 'Zbirke pomoć',
-	'coll-empty' => 'prazno',
 	'coll-n_pages' => '$1 {{PLURAL:$1|stranica|stranice|stranica}}',
 	'coll-download_as' => 'Preuzmi kao $1',
 	'coll-noscript_text' => '<h1>Potreban je JavaScript!</h1>
@@ -1601,8 +1589,6 @@ $messages['hr'] = array(
 
 vidi [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više obavijesti.',
 	'coll-helppage' => 'Pomoć:Zbirke',
-	'coll-too_big_cat' => 'Ova kategorija sadrži više od %PARAM% stranica, samo prvih %PARAM% stranica može biti dodano u vašu zbirku.
-Želite ih dodati?',
 	'coll-my_collection' => 'Moja zbirka',
 	'coll-download_title' => 'Preuzmi zbirku',
 	'coll-download_text' => 'Za preuzimanje automatski napravljenog dokumenta sa stranicama iz vaše zbirke, odaberite format i kliknite na tipku.',
@@ -1791,7 +1777,6 @@ $messages['ia'] = array(
 	'coll-load_collection' => 'Cargar collection',
 	'coll-show_collection' => 'Monstrar collection',
 	'coll-help_collections' => 'Adjuta super le collectiones',
-	'coll-empty' => 'vacue',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagina|paginas}}',
 	'coll-download_as' => 'Discargar como $1',
 	'coll-noscript_text' => '<h1>JavaScript es requirite!</h1>
@@ -1801,8 +1786,6 @@ Iste pagina non functionara correctemente si JavaScript non es activate.</strong
 
 Vide le [[{{MediaWiki:Coll-helppage}}|pagina de adjuta super le collectiones]] pro ulterior informationes.',
 	'coll-helppage' => 'Help:Collectiones',
-	'coll-too_big_cat' => 'Le categoria contine plus de %PARAM% paginas. Solmente le prime %PARAM% paginas pote esser addite a tu collection.
-Esque tu vole adder los?',
 	'coll-my_collection' => 'Mi collection',
 	'coll-download_title' => 'Discargar collection',
 	'coll-download_text' => 'Pro discargar un documento automaticamente generate de tu collection de paginas, selige un formato e clicca super le button.',
@@ -1948,8 +1931,9 @@ $messages['it'] = array(
 	'coll-load_collection' => 'Carica raccolta',
 	'coll-show_collection' => 'Mostra raccolta',
 	'coll-help_collections' => 'Aiuto sulle raccolte',
-	'coll-empty' => 'vuota',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagina|pagine}}',
+	'coll-unknown_subpage_title' => 'Sottopagina sconosciuta',
+	'coll-unknown_subpage_text' => 'Questa sottopagina di [[Special:Collection|Raccolta]] non esiste',
 	'coll-download_as' => 'Scarica come $1',
 	'coll-noscript_text' => '<h1>È necessario avere JavaScript!</h1>
 <strong>Il tuo browser non supporta JavaScript oppure JavaScript è stato disattivato.
@@ -1958,8 +1942,6 @@ La pagina non funzionerà correttamente se non verrà attivato JavaScript.</stro
 
 Leggi la [[{{MediaWiki:Coll-helppage}}|pagina di aiuto sulle raccolte]] per maggiori informazioni.',
 	'coll-helppage' => 'Help:Raccolte',
-	'coll-too_big_cat' => 'La categoria contiene più di %PARAM% pagine, solo le prime %PARAM% pagine possono essere aggiunte alla tua raccolte.
-Vuoi aggiungerle?',
 	'coll-my_collection' => 'La mia raccolta',
 	'coll-download_title' => 'Scarica raccolta',
 	'coll-download_text' => 'Per scaricare un documento generato automaticamente della tua raccolta della pagina, scegli un formato e fai clic sul pulsante.',
@@ -2009,15 +1991,16 @@ Si desidera sovrascrivere la raccolta corrente, aggiungere il nuovo contenuto o 
 	'coll-overwrite' => 'Sovrascrivi',
 	'coll-append' => 'Aggiungi',
 	'coll-cancel' => 'Annulla',
+	'coll-update' => 'Aggiorna',
 	'coll-limit_exceeded_title' => 'Raccolta troppo grande',
 	'coll-limit_exceeded_text' => 'La tua raccolta è troppo grande. Non è più possibile aggiungervi pagine.',
 	'coll-rendering_title' => 'Conversione',
-	'coll-rendering_text' => "'''Attendere mentre il documento viene generato.'''
+	'coll-rendering_text' => '<p><strong>Attendere mentre il documento viene generato.</strong></p>
 
-'''Avanzamento:''' $1% $2
+<p><strong>Avanzamento:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Questa pagina dovrebbe aggiornarsi automaticamente ogni pochi secondi.
-Se questo non funziona, premi il pulsante di aggiornamento del tuo browser.",
+<p>Questa pagina dovrebbe aggiornarsi automaticamente ogni pochi secondi.
+Se questo non funziona, premi il pulsante di aggiornamento del tuo browser.</p>',
 	'coll-rendering_status' => "'''Stato:''' $1",
 	'coll-rendering_article' => '  (pagina wiki: $1)',
 	'coll-rendering_page' => '  (pagina: $1)',
@@ -2281,7 +2264,6 @@ $messages['ksh'] = array(
 	'coll-load_collection' => 'Sammlong lade',
 	'coll-show_collection' => 'Sammlong zeije',
 	'coll-help_collections' => 'Hölp üvver Sammlonge',
-	'coll-empty' => 'leddich',
 	'coll-n_pages' => '{{PLURAL:$1|ein Sigg|$1 Sigge|kein Sigge}}',
 	'coll-download_as' => 'Als $1 eronger laade',
 	'coll-noscript_text' => '<h1>Bruch JavaSkripp!</h1>
@@ -2294,8 +2276,6 @@ un mer kann ander Metmaacher doh draan lohße.
 Loor Der de ußföhrlesche [[{{MediaWiki:Coll-helppage}}|Hölp övver Sammlonge]] aan,
 wann de noch mieh wesse wells.',
 	'coll-helppage' => 'Hölp:Sammlonge',
-	'coll-too_big_cat' => 'Di Saachjropp hät mieh wi %PARAM% Sigge, ävver nor de eetste %PARAM%
-Sigge künne en Ding Sammlong opjenomme wääde. Wells De se dobei donn?',
 	'coll-my_collection' => 'Ming Sammlong',
 	'coll-download_title' => 'Sammlong eronger laade',
 	'coll-download_text' => 'Öm en automattesch jemaate Datei met Dinge Sammlong eronger ze laade,
@@ -2338,6 +2318,8 @@ aanhänge, udder wells de di Sammlong lever doch nit laade?',
 	'coll-cancel' => 'Ophüre',
 	'coll-limit_exceeded_title' => 'De Sammlong es zo jruhß',
 	'coll-rendering_status' => "'''Shtattus:''' $1",
+	'coll-rendering_article' => '  (Wiki-Sigge-Tittel: $1)',
+	'coll-rendering_page' => '  (Sigg Nommer: $1)',
 	'coll-notfound_title' => 'Han de Sammlong nit jefonge',
 	'coll-notfound_text' => 'Mer kunnte de Sigg för di Sammlong nit fenge.',
 	'coll-book_title' => 'Der Drock vun däm Booch en Aufdrach jevve',
@@ -2364,14 +2346,12 @@ $messages['lb'] = array(
 	'coll-load_collection' => 'Sammlung lueden',
 	'coll-show_collection' => "D'Sammlung weisen",
 	'coll-help_collections' => "Hellëf iwwert d 'Sammlungen",
-	'coll-empty' => 'eidel',
 	'coll-n_pages' => '$1 {{PLURAL:$1|Säit|Säiten}}',
 	'coll-download_as' => 'Als $1 eroflueden',
 	'coll-noscript_text' => '<h1>JavaScript gëtt gebraucht!</h1>
 <strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
 Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</strong>',
 	'coll-helppage' => 'Help:Kollektioun',
-	'coll-too_big_cat' => 'An der Kategorie gëtt et méi wéi %PARAM% Säiten, nëmmen déi éischt %PARAM% Säite kënnen an är Sammlung derbäigesat ginn.',
 	'coll-my_collection' => 'Meng Sammlung',
 	'coll-download_title' => 'Kollektioun als PDF eroflueden',
 	'coll-download' => 'Eroflueden',
@@ -2415,12 +2395,12 @@ Wëllt Dir déi duerch är Sammlung ersetzen?',
 	'coll-limit_exceeded_text' => 'Är Sammlung ass ze grouss.
 Et kënne keng Säite méi derbäigesat ginn.',
 	'coll-rendering_title' => 'Maachen',
-	'coll-rendering_text' => "'''Gedëllegt Iech w.e.g. bis d'Dokument zesummegestallt ass.'''
+	'coll-rendering_text' => '<p><strong>Gedëllegt Iech w.e.g. bis d\'Dokument zesummegestallt ass.</strong></p>
 
-Fortschrëtt: '''$1%'''.
+<p><strong>Fortschrëtt:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Dës Säit gëtt normalerweis automatesch aktualiséiert.
-Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh Knäppche vun ärem Browser.",
+<p>Dës Säit gëtt normalerweis automatesch aktualiséiert.
+Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh Knäppche vun ärem Browser.</p>',
 	'coll-rendering_status' => "'''Statut :''' $1",
 	'coll-rendering_article' => ' (Wiki Säit: $1)',
 	'coll-rendering_page' => ' (Säit: $1)',
@@ -2616,7 +2596,6 @@ $messages['ms'] = array(
 	'coll-load_collection' => 'Muat koleksi',
 	'coll-show_collection' => 'Papar koleksi',
 	'coll-help_collections' => 'Bantuan koleksi',
-	'coll-empty' => 'kosong',
 	'coll-n_pages' => '$1 laman',
 	'coll-download_as' => 'Muat turun $1',
 	'coll-noscript_text' => '<h1>JavaScript diperlukan!</h1>
@@ -2634,6 +2613,7 @@ $messages['ms'] = array(
 	'coll-title' => 'Tajuk:',
 	'coll-subtitle' => 'Tajuk kecil:',
 	'coll-contents' => 'Kandungan',
+	'coll-create_chapter' => 'Cipta bab baru',
 	'coll-clear_collection' => 'Kosongkan koleksi',
 	'coll-clear_confirm' => 'Betul anda mahu mengosongkan koleksi anda?',
 	'coll-rename' => 'Tukar nama',
@@ -2653,6 +2633,25 @@ $messages['ms'] = array(
 	'coll-overwrite' => 'Tulis ganti',
 	'coll-append' => 'Tambah',
 	'coll-cancel' => 'Batal',
+	'coll-limit_exceeded_title' => 'Koleksi terlalu besar',
+	'coll-limit_exceeded_text' => 'Koleksi laman anda terlalu besar dan laman tidak boleh ditambah lagi.',
+	'coll-rendering_text' => '<p><strong>Sila tunggu sementara dokumen tersebut dijana.</strong></p>
+
+<p><strong>Perkembangan:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Laman ini akan disegarkan semula secara automatik dalam beberapa saat.
+Jika tidak, sila tekan butang \'\'refresh\'\' di pelayar web anda.</p>',
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
+	'coll-rendering_article' => '  (laman wiki: $1)',
+	'coll-rendering_page' => '  (laman: $1)',
+	'coll-notfound_title' => 'Koleksi tidak dijumpai',
+	'coll-notfound_text' => 'Laman koleksi tidak dapat dijumpai.',
+	'coll-excluded-templates' => '* Templat-templat dalam kategori [[:Category:$1|$1]] telah dikecualikan.',
+	'coll-blacklisted-templates' => '* Templat-templat dalam senarai hitam [[:$1]] telah dikecualikan.',
+	'coll-return_to_collection' => '<p>Kembali ke <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Tempah buku bercetak',
+	'coll-book_text' => 'Anda boleh menempah buku bercetak yang mengandungi koleksi laman anda dengan mengunjungi mana-mana rakan percetakan kami:',
+	'coll-order_from_pp' => 'Tempah buku daripada $1',
 	'coll-about_pp' => 'Perihal $1',
 	'coll-invalid_podpartner_title' => 'Rakan POD tidak sah',
 	'coll-invalid_podpartner_msg' => 'Rakan POD yang dibekalkan tidak sah. Sila hubungi pentadbir MediaWiki anda.',
@@ -2736,8 +2735,9 @@ $messages['nl'] = array(
 	'coll-load_collection' => 'Collectie laden',
 	'coll-show_collection' => 'Collectie weergeven',
 	'coll-help_collections' => 'Hulp bij collecties',
-	'coll-empty' => 'leeg',
 	'coll-n_pages' => "$1 {{PLURAL:$1|pagina|pagina's}}",
+	'coll-unknown_subpage_title' => 'Onbekende subpagina',
+	'coll-unknown_subpage_text' => 'Deze subpagina van [[Special:Collection|Collectie]] bestaat niet.',
 	'coll-download_as' => 'Downloaden als $1',
 	'coll-noscript_text' => '<h1>JavaScript is vereist!</h1>
 <strong>Uw browser understeunt geen JavaScript of JavaScript is uitgeschakeld.
@@ -2746,8 +2746,6 @@ Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong>',
 
 [[{{MediaWiki:Coll-helppage}}|Meer informatie over collecties]].",
 	'coll-helppage' => 'Help:Collecties',
-	'coll-too_big_cat' => "Deze categorie bevat meer dan %PARAM% pagina's. Alleen de eerste %PARAM% pagina's worden aan uw collectie toegevoegd.
-Wilt u ze toevoegen?",
 	'coll-my_collection' => 'Mijn collectie',
 	'coll-download_title' => 'Collectie als PDF downloaden',
 	'coll-download_text' => 'Klik op de knop om een automatisch gemaakt PDF-bestand van uw paginacollectie te downloaden.',
@@ -2796,16 +2794,17 @@ Wil u de bestaande collectie overschrijven, de nieuwe pagina's toevoegen, of het
 	'coll-overwrite' => 'Overschrijven',
 	'coll-append' => 'Toevoegen',
 	'coll-cancel' => 'Annuleren',
+	'coll-update' => 'Verversen',
 	'coll-limit_exceeded_title' => 'Collectie is te groot',
 	'coll-limit_exceeded_text' => "Uw paginacollectie is te groot.
 U kunt geen pagina's meer toevoegen.",
 	'coll-rendering_title' => 'Bezig met renderen',
-	'coll-rendering_text' => "'''Het document wordt aangemaakt.'''
+	'coll-rendering_text' => '<p><strong>Het document wordt aangemaakt.</strong></p>
 
-'''Voortgang:''' \$1% \$2.
+<p><strong>Voortgang:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Deze pagina wordt regelmatig bijgewerkt.
-Als dit niet werkt, klik dan op de knop \"Vernieuwen\" in uw browser.",
+<p>Deze pagina wordt regelmatig bijgewerkt.
+Als dit niet werkt, klik dan op de knop "Vernieuwen" in uw browser.</p>',
 	'coll-rendering_status' => "'''Status:''' $1",
 	'coll-rendering_article' => '(wikipagina: $1)',
 	'coll-rendering_page' => '(pagina: $1)',
@@ -2861,15 +2860,12 @@ $messages['no'] = array(
 	'coll-load_collection' => 'Last samling',
 	'coll-show_collection' => 'Vis samling',
 	'coll-help_collections' => 'Hjelp for samlinger',
-	'coll-empty' => 'tom',
 	'coll-n_pages' => '$1 {{PLURAL:$1|side|sider}}',
 	'coll-download_as' => 'Last ned som $1',
 	'coll-noscript_text' => '<h1>JavaScript er påkrevd!</h1>
 <strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong>',
 	'coll-intro_text' => 'Du kan samle sider, generere og laste ned en PDF-fil fra sidesamlinger og lagre sidesamlinger for senere bruk eller for deling.',
 	'coll-helppage' => 'Help:Samlinger',
-	'coll-too_big_cat' => 'Kategorien inneholder mer enn %PARAM% sider; kun de %PARAM% første sidene kan legges til i samlingen din.
-Vil du legge dem til?',
 	'coll-my_collection' => 'Min samling',
 	'coll-download_title' => 'Last ned samling som PDF',
 	'coll-download_text' => 'Klikk på knappen for å laste ned en automatisk generert PDF-fil av sidesamlingen din.',
@@ -2960,7 +2956,6 @@ $messages['oc'] = array(
 	'coll-load_collection' => 'Cargar una compilacion',
 	'coll-show_collection' => 'Afichar la compilacion',
 	'coll-help_collections' => 'Ajuda sus las compilacions',
-	'coll-empty' => 'void',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagina|paginas}}',
 	'coll-download_as' => 'Telecargat coma $1',
 	'coll-noscript_text' => "<h1>Javascript es necessari !</h1>
@@ -2970,7 +2965,6 @@ Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activ
 
 Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de colleccions]] per mai d'entresenhas.",
 	'coll-helppage' => 'Help:Collections',
-	'coll-too_big_cat' => 'La categoria conten mai de %PARAM% paginas, sonque las %PARAM% primièras paginas seràn apondudas a vòstra colleccion.',
 	'coll-my_collection' => 'Ma compilacion',
 	'coll-download_title' => 'Telecargar la compilacion en PDF',
 	'coll-download_text' => 'Per telecargar un PDF generat automaticament a partir de vòstra compilacion, picatz sul boton.',
@@ -3023,12 +3017,12 @@ Volètz espotir vòstra compilacion actuala, i apondre lo contengut o alara anul
 	'coll-limit_exceeded_text' => 'Vòstra compilacion es tròp granda.
 Cap de pagina pòt pas èsser aponduda.',
 	'coll-rendering_title' => 'Rendut',
-	'coll-rendering_text' => "'''Pacientatz pendent que lo document es en cors de creacion.'''
+	'coll-rendering_text' => '<p><strong>Pacientatz pendent que lo document es en cors de creacion.</strong></p>
 
-'''Progression :''' $1% $2
+<p><strong>Progression :</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Aquesta pagina se deuriá actualizar regularament.
-S'èra pas lo cas, clicatz sul boton d’actualizacion de vòstre navigador.",
+<p>Aquesta pagina se deuriá actualizar automaticament per intervals regulars de qualques segondas.
+S\'èra pas lo cas, clicatz sul boton d’actualizacion de vòstre navigador.</p>',
 	'coll-rendering_status' => "'''Estatut :''' $1",
 	'coll-rendering_article' => '  (pagina wiki : $1)',
 	'coll-rendering_page' => '  (pagina : $1)',
@@ -3084,8 +3078,9 @@ $messages['pl'] = array(
 	'coll-load_collection' => 'Załaduj kolekcję',
 	'coll-show_collection' => 'Pokaż kolekcję',
 	'coll-help_collections' => 'Pomoc kolekcji',
-	'coll-empty' => 'pusty',
 	'coll-n_pages' => '$1 {{PLURAL:$1|strona|strony|stron}}',
+	'coll-unknown_subpage_title' => 'Nieznana podstrona',
+	'coll-unknown_subpage_text' => 'Podstrona należąca do [[Special:Collection|kolekcji]] nie istnieje',
 	'coll-download_as' => 'Pobierz jako $1',
 	'coll-noscript_text' => '<h1>Potrzebny JavaScript!</h1>
 <strong>Twoja przeglądarka nie obsługuje JavaScript lub został on wyłączony.
@@ -3094,8 +3089,6 @@ Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączo
 
 Więcej informacji na [[{{MediaWiki:Coll-helppage}}|stronie pomocy dotyczącej kolekcji]].',
 	'coll-helppage' => 'Help:Kolekcje',
-	'coll-too_big_cat' => 'Kategoria zawiera więcej niż %PARAM% stron, tylko pierwsze %PARAM% stron może być dodanych do Twojej kolekcji.
-Czy chcesz je dodać?',
 	'coll-my_collection' => 'Moja kolekcja',
 	'coll-download_title' => 'Pobierz kolekcję jako PDF',
 	'coll-download_text' => 'Naciśnij przycisk, by pobrać automatycznie wygenerowaną wersję PDF Twojej kolekcji stron',
@@ -3144,16 +3137,17 @@ Czy chcesz nadpisać Twoją obecną kolekcję, dodać do niej nowe strony czy an
 	'coll-overwrite' => 'Nadpisz',
 	'coll-append' => 'Dopisz',
 	'coll-cancel' => 'Anuluj',
+	'coll-update' => 'Uaktualnij',
 	'coll-limit_exceeded_title' => 'Zbyt duża kolekcja',
 	'coll-limit_exceeded_text' => 'Twoja kolekcja stron jest zbyt duża.
 Nie można dodać więcej stron.',
 	'coll-rendering_title' => 'Renderowanie',
-	'coll-rendering_text' => "'''Proszę czekać, trwa generowanie dokumentu.'''
+	'coll-rendering_text' => '<p><strong>Proszę czekać, trwa generowanie dokumentu.</strong></p>
 
-'''Postęp''': $1% $2
+<p><strong>Postęp:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Ta strona powinna się automatycznie odświeżać co kilka sekund.
-Jeśli tak nie jest, proszę odświeżyć swoją przeglądarkę.",
+<p>Ta strona powinna się automatycznie odświeżać co kilka sekund.
+Jeśli tak nie jest, proszę odświeżyć swoją przeglądarkę.</p>',
 	'coll-rendering_status' => "'''Status:''' $1",
 	'coll-rendering_article' => '(wiki strona: $1)',
 	'coll-rendering_page' => '(strona: $1)',
@@ -3223,7 +3217,6 @@ $messages['pt'] = array(
 	'coll-load_collection' => 'Carregar colecção',
 	'coll-show_collection' => 'Mostrar colecção',
 	'coll-help_collections' => 'Ajuda de colecções',
-	'coll-empty' => 'vazia',
 	'coll-n_pages' => '$1 {{PLURAL:$1|página|páginas}}',
 	'coll-download_as' => 'Descarregar como $1',
 	'coll-noscript_text' => '<h1>JavaScript é Requerido!</h1>
@@ -3233,8 +3226,6 @@ Esta página não funcionará correctamente, excepto se o JavaScript for activad
 
 Veja a [[{{MediaWiki:Coll-helppage}}|página de ajuda sobre colecções]] para mais informação.',
 	'coll-helppage' => 'Help:Colecções',
-	'coll-too_big_cat' => 'A categoria possui mais de %PARAM% páginas. Apenas as primeiras %PARAM% páginas poderão ser adicionadas em sua colecção.
-Deseja adicioná-las?',
 	'coll-my_collection' => 'Minha Colecção',
 	'coll-download_title' => 'Descarregar Colecção',
 	'coll-download_text' => 'Para descarregar um ficheiro automaticamente gerado a partir da sua colecção de páginas, escolha um formato e carregue no botão.',
@@ -3287,12 +3278,15 @@ Pretende reescrever a sua colecção, adicionando o novo conteúdo, ou cancelar 
 	'coll-limit_exceeded_text' => 'A usa coleccção de página é demasiado grande.
 Não poderão ser adicionadas mais páginas.',
 	'coll-rendering_title' => 'Renderizando',
-	'coll-rendering_text' => "'''Por favor, aguarde enquanto o documento é gerado.'''
+	'coll-rendering_text' => '<p><strong>Por favor, aguarde enquanto o documento é gerado.</strong></p>
 
-Progresso: '''$1%'''.
+<p><strong>Progresso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Este página deverá refrescar automaticamente após alguns segundos.
-Se isto não funcionar, por favor utilize o botão de refrescamento do seu navegador.",
+<p>Este página deverá refrescar automaticamente após alguns segundos.
+Se isto não funcionar, por favor utilize o botão de refrescamento do seu navegador.</p>',
+	'coll-rendering_status' => '<strong>Estado:</strong> $1',
+	'coll-rendering_article' => '  (página wiki: $1)',
+	'coll-rendering_page' => '  (página: $1)',
 	'coll-rendering_finished_title' => 'Renderização concluída',
 	'coll-rendering_finished_text' => "'''O ficheiro foi gerado.'''
 '''[$1 Clique aqui]''' para transferir a seu computador.
@@ -3377,8 +3371,9 @@ $messages['ru'] = array(
 	'coll-load_collection' => 'Загрузить коллекцию',
 	'coll-show_collection' => 'Показать коллекцию',
 	'coll-help_collections' => 'Справка по коллекциям',
-	'coll-empty' => 'пустая',
 	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страницы|страниц}}',
+	'coll-unknown_subpage_title' => 'Неизвестная подстраница',
+	'coll-unknown_subpage_text' => 'Этой подстраницы [[Special:Collection|коллекции]] не существует',
 	'coll-download_as' => 'Загрузить как $1',
 	'coll-noscript_text' => '<h1>Требуется JavaScript!</h1>
 <strong>Ваш браузер не поддерживает JavaScript или данная поддержка была отключена.
@@ -3387,8 +3382,6 @@ $messages['ru'] = array(
 
 Подробности можно найти на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].',
 	'coll-helppage' => 'Help:Коллекции',
-	'coll-too_big_cat' => 'Категория содержит более %PARAM% страниц, в коллекцию могут быть добавлены только первые %PARAM% страниц.
-Желаете ли вы их добавить?',
 	'coll-my_collection' => 'Моя коллекция',
 	'coll-download_title' => 'Скачать коллекцию как PDF',
 	'coll-download_text' => 'Нажмите кнопку, чтобы скачать автоматически созданный PDF-файл с вашей коллекций страниц.',
@@ -3437,16 +3430,17 @@ $messages['ru'] = array(
 	'coll-overwrite' => 'Перезаписать',
 	'coll-append' => 'Добавить',
 	'coll-cancel' => 'Отменить',
+	'coll-update' => 'Обновить',
 	'coll-limit_exceeded_title' => 'Коллекция слишком большая',
 	'coll-limit_exceeded_text' => 'Ваша коллекция слишком большая.
 В неё нельзя больше добавлять страницы.',
 	'coll-rendering_title' => 'Создание',
-	'coll-rendering_text' => "'''Пожалуйста, подождите, идёт создание документа.'''
+	'coll-rendering_text' => '<p><strong>Пожалуйста, подождите, идёт создание документа.</strong></p>
 
-'''Ход работы:''' $1 % $2.
+<p><strong>Ход работы:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
 
-Эта страница должна обновляться раз в несколько секунд.
-Если этого не происходит, пожалуйста, нажмите кнопку «обновить» браузера.",
+<p>Эта страница должна обновляться раз в несколько секунд.
+Если этого не происходит, пожалуйста, нажмите кнопку «обновить» браузера.</p>',
 	'coll-rendering_status' => "'''Статус:''' $1",
 	'coll-rendering_article' => '(статья: $1)',
 	'coll-rendering_page' => '  (страница: $1)',
@@ -3487,7 +3481,6 @@ $messages['sk'] = array(
 	'coll-load_collection' => 'Načítať kolekciu',
 	'coll-show_collection' => 'Zobraziť kolekciu',
 	'coll-help_collections' => 'Pomocník ku kolekciám',
-	'coll-empty' => 'prázdna',
 	'coll-n_pages' => '$1 {{PLURAL:$1|stránka|stránky|stránok}}',
 	'coll-download_as' => 'Stiahnuť ako $1',
 	'coll-noscript_text' => '<h1>Vyžaduje sa JavaScript!</h1>
@@ -3497,8 +3490,6 @@ Táto stránka nebude správne fungovať ak nezapnete JavaScript.</strong>',
 
 Pozri ďalšie informácie na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].',
 	'coll-helppage' => 'Help:Kolekcie',
-	'coll-too_big_cat' => 'Vaša kateǵoria obsahuje viac ako %PARAM% stránok. Do kolekcie je možné pridať iba prvých %PARAM% stránok.
-Chcete ich pridať?',
 	'coll-my_collection' => 'Moja kolekcia',
 	'coll-download_title' => 'Stiahnuť kolekciu ako PDF',
 	'coll-download_text' => 'Stiahnuť automaticky vytvorený PDF súbor vašej kolekcie stránok. Kliknite na tlačidlo.',
@@ -3551,12 +3542,15 @@ Chcete prepísať svoju existujúcu kolekciu, pridať do nej obsah alebo zruši�
 	'coll-limit_exceeded_text' => 'Vaša kolekcia stránok je príliš veľká.
 Nie je možné pridať ďalšie stránky.',
 	'coll-rendering_title' => 'Vykresľovanie',
-	'coll-rendering_text' => "'''Prosím, čakajte, kým sa vytvorí dokument.'''
+	'coll-rendering_text' => '<p><strong>Prosím, čakajte, kým sa vytvorí dokument.</strong></p>
 
-Priebeh: '''$1 %'''.
+<p><strong>Priebeh:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Táto stránka by sa mala vždy po niekoľkých sekundách obnoviť.
-Ak to nefunguje, stlačte prosím tlačidlo obnoviť vo vašom prehlidači.",
+<p>Táto stránka by sa mala vždy po niekoľkých sekundách obnoviť.
+Ak to nefunguje, stlačte prosím tlačidlo obnoviť vo vašom prehlidači.</p>',
+	'coll-rendering_status' => '<strong>Stav:</strong> $1',
+	'coll-rendering_article' => '  (wiki stránka: $1)',
+	'coll-rendering_page' => '  (stránka: $1)',
 	'coll-rendering_finished_title' => 'Vykresľovanie je dokončené',
 	'coll-rendering_finished_text' => "'''Súbor dokumentu bol vytvorený.'''
 Môžete ho '''[$1 stiahnuť]''' na svoj počítač.
@@ -3604,7 +3598,6 @@ $messages['stq'] = array(
 	'coll-load_collection' => 'Touhoopestaalenge leede',
 	'coll-show_collection' => 'Touhoopestaalenge wiese',
 	'coll-help_collections' => 'Hälpe tou Touhoopestaalengen',
-	'coll-empty' => 'loos',
 	'coll-n_pages' => '$1 {{PLURAL:$1|Siede|Sieden}}',
 	'coll-download_as' => 'As $1 deelleede',
 	'coll-noscript_text' => '<h1>JavaScript is nöödich!</h1>
@@ -3613,8 +3606,6 @@ $messages['stq'] = array(
 
 Sjuch ju [[{{MediaWiki:Coll-helppage}}|Hälpe bie Touhoopestaalengen]] foar wiedere Informatione.',
 	'coll-helppage' => 'Help:Touhoopestaalengen',
-	'coll-too_big_cat' => 'Ju Kategorie änthaalt moor as %PARAM% Sieden, deeruum konnen bloot do eerste %PARAM% Sieden fon dien Kollektion bietouföiged wäide.
-Moatest du do bietouföigje?',
 	'coll-my_collection' => 'Mien Touhoopestaalenge',
 	'coll-download_title' => 'Touhoopestaalenge as PDF deelleede',
 	'coll-download_text' => 'Uum ne automatisk moakede PDF-Doatäi fon dien Touhoopestaalenge deeltouleeden, klik ap ap ju Schaltfläche.',
@@ -3737,8 +3728,9 @@ $messages['sv'] = array(
 	'coll-load_collection' => 'Ladda samling',
 	'coll-show_collection' => 'Visa samling',
 	'coll-help_collections' => 'Hjälp för samlingar',
-	'coll-empty' => 'tom',
 	'coll-n_pages' => '$1 {{PLURAL:$1|sida|sidor}}',
+	'coll-unknown_subpage_title' => 'Okänd undersida',
+	'coll-unknown_subpage_text' => 'Denna undersida till [[Special:Collection|Collection]] existerar inte',
 	'coll-download_as' => 'Ladda ner som $1',
 	'coll-noscript_text' => '<h1>JavaScript är nödvändigt!</h1>
 <strong>Din webbläsare stödjer inte JavaScript eller har JavaScript blivigt avslagen.
@@ -3747,8 +3739,6 @@ Denna sida kommer inte att fungera korrekt, tills JavaScript är tillgängligt.<
 
 Se [[{{MediaWiki:Coll-helppage}}|hjälp sidan om samlingar]] för mer information.',
 	'coll-helppage' => 'Help:Samlingar',
-	'coll-too_big_cat' => 'Kategorin innehåller mer än %PARAM% sidor, endast de %PARAM% första sidorna kan läggas till till din samling.
-Vill du lägga till dem?',
 	'coll-my_collection' => 'Min samling',
 	'coll-download_title' => 'Ladda ner samling som PDF',
 	'coll-download_text' => 'För att ladda ner en automatisk genererad PDF-fil av din sidsamling, klicka på knappen.',
@@ -3797,16 +3787,17 @@ Vill du ersätta din nuvarande samling, lägga till det nya innehållet eller av
 	'coll-overwrite' => 'Skriv över',
 	'coll-append' => 'Lägga till',
 	'coll-cancel' => 'Avbryt',
+	'coll-update' => 'Uppdatera',
 	'coll-limit_exceeded_title' => 'Samlingen är för stor',
 	'coll-limit_exceeded_text' => 'Din sid samling är för stor.
 Inga mer sidor kan läggas till.',
 	'coll-rendering_title' => 'Skapar',
-	'coll-rendering_text' => "'''Var god vänta under tiden dokumentet skapas.'''
+	'coll-rendering_text' => '<p><strong>Var god vänta under tiden dokumentet skapas.</strong></p>
 
-'''Tillstånd:''' $1% $2.
+<p><strong>Tillstånd:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Denna sida ska automatiskt uppdateras med några sekunders mellanrum.
-Om det inte fungerar, var god tryck på uppdateringsknappen i din webbläsare.",
+<p>Denna sida ska automatiskt uppdateras med några sekunders mellanrum.
+Om det inte fungerar, var god tryck på uppdateringsknappen i din webbläsare.</p>',
 	'coll-rendering_status' => "'''Status:''' $1",
 	'coll-rendering_article' => '  (wikisida: $1)',
 	'coll-rendering_page' => '  (sida: $1)',
@@ -4013,7 +4004,6 @@ $messages['uk'] = array(
 	'coll-load_collection' => 'Завантажити колекцію',
 	'coll-show_collection' => 'Показати колекцію',
 	'coll-help_collections' => 'Довідка про колекції',
-	'coll-empty' => 'порожня',
 	'coll-n_pages' => '$1 {{PLURAL:$1|сторінка|сторінки|сторінок}}',
 	'coll-download_as' => 'Завантажити як $1',
 	'coll-noscript_text' => '<h1>Потрібен JavaScript!</h1>
@@ -4023,8 +4013,6 @@ $messages['uk'] = array(
 
 Подробиці можна знайти на [[{{MediaWiki:Coll-helppage}}|довідковій сторінці про колекції]].",
 	'coll-helppage' => 'Help:Колекції',
-	'coll-too_big_cat' => 'Категорія містить понад %PARAM% сторінок, тільки %PARAM% сторінок можна додати до вашої колекції.
-Бажаєте їх додати?',
 	'coll-my_collection' => 'Моя колекція',
 	'coll-download_title' => 'Завантажити колекцію як PDF',
 	'coll-download_text' => 'Щоб завантажити автоматично створений PDF-файл з вашою колекцією сторінок, натисніть кнопку.',
@@ -4107,7 +4095,6 @@ $messages['vec'] = array(
 	'coll-load_collection' => 'Carga na colezion',
 	'coll-show_collection' => 'Varda colezion',
 	'coll-help_collections' => 'Ajuto su le colezion',
-	'coll-empty' => 'vòda',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàxena|pàxene}}',
 	'coll-download_as' => 'Descarga come $1',
 	'coll-noscript_text' => "<h1>Ghe vole el JavaScript!</h1>
@@ -4203,7 +4190,6 @@ $messages['vi'] = array(
 	'coll-load_collection' => 'Mở tập hợp',
 	'coll-show_collection' => 'Xem tập hợp',
 	'coll-help_collections' => 'Trợ giúp tập hợp',
-	'coll-empty' => 'trống',
 	'coll-n_pages' => '$1 trang',
 	'coll-download_as' => 'Tải về dưới dạng $1',
 	'coll-noscript_text' => '<h1>Yêu cầu phải có JavaScript!</h1>
@@ -4213,8 +4199,6 @@ Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaS
 
 Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] để biết thêm thông tin.',
 	'coll-helppage' => 'Help:Tập hợp',
-	'coll-too_big_cat' => 'Thể loại chứa hơn %PARAM% trang. Chỉ thêm %PARAM% trang đầu tiên vào tập hợp được.
-Bạn có muốn thêm nó không?',
 	'coll-my_collection' => 'Tập hợp của tôi',
 	'coll-download_title' => 'Tải tập hợp về dưới dạng PDF',
 	'coll-download_text' => 'Để tải về một tập tin PDF được tự động tạo ra từ tập hợp trang của bạn, hãy nhấn nút.',
