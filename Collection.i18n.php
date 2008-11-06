@@ -1454,6 +1454,7 @@ $messages['he'] = array(
 	'coll-overwrite' => 'דריסה',
 	'coll-append' => 'הוספת התוכן',
 	'coll-cancel' => 'ביטול',
+	'coll-update' => 'עדכון',
 	'coll-limit_exceeded_title' => 'האוסף גדול מדי',
 	'coll-limit_exceeded_text' => 'אוסף הדפים שלכם גדול מדי.
 לא ניתן להוסיף דפים נוספים.',
