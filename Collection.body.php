@@ -1012,16 +1012,20 @@ EOS
 	 */
 	static function printPortlet() {
 		wfLoadExtensionMessages( 'Collection' );
+
+		$html = self::getPortlet();
 		
-		$portletTitle = wfMsgHtml( 'coll-portlet_title' );
-		print <<<EOS
+		if ( $html ) {
+			$portletTitle = wfMsgHtml( 'coll-portlet_title' );
+			print <<<EOS
 <div id="p-collection" class="portlet">	 
   <h5>$portletTitle</h5>	 
     <div class="pBody">	 
 EOS
-		;
-		print self::getPortlet();
-		print '</div></div>';
+			;
+			print $html;
+			print '</div></div>';
+		}
 	}
 	
 	/**
