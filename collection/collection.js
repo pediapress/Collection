@@ -108,7 +108,7 @@ function remove_item(index) {
 function set_titles() {
 	sajax_request_type = "POST";
 	sajax_do_call('wfAjaxCollectionSetTitles',
-		[$('#titleInput').val(), $('subtitleInput').val()], function() {});
+		[$('#titleInput').val(), $('#subtitleInput').val()], function() {});
 	return false;
 }
 
