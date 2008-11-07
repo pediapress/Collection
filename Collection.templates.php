@@ -23,13 +23,11 @@ class CollectionPageTemplate extends QuickTemplate {
 				<p><?php $this->msg('coll-book_text') ?></p>
 				<div id="ppList">
 					<?php foreach ($this->data['podpartners'] as $partner => $partnerData) { ?>
-					<p>
-						<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'post_zip/')) ?>" method="get">
-							<input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
-							<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>"/>
-							<a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?>&nbsp;<img src="<?php echo htmlspecialchars($partnerData['logourl']) ?>" alt="<?php echo htmlspecialchars($partnerData['name']) ?>"/></a>
-						</form>
-					</p>
+					<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'post_zip/')) ?>" method="get">
+						<input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
+						<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>"/>
+						<a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?>&nbsp;<img src="<?php echo htmlspecialchars($partnerData['logourl']) ?>" alt="<?php echo htmlspecialchars($partnerData['name']) ?>"/></a>
+					</form>
 					<?php } ?>
 				</div>
 			</td>
@@ -59,7 +57,7 @@ class CollectionPageTemplate extends QuickTemplate {
 						<?php	} ?>
 					</select>
 					<?php } ?>
-					<input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>"></input>
+					<input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>" />
 				</form>
 			</td>
 		</tr>
@@ -110,13 +108,11 @@ class CollectionPageTemplate extends QuickTemplate {
 				<th><label for="subtitleInput"><?php $this->msg('coll-subtitle') ?></label></th>
 				<td><input id="subtitleInput" type="text" name="collectionSubtitle" value="<?php echo htmlspecialchars($this->data['collection']['subtitle']) ?>" size="32" /></td>
 			</tr>
-			<noscript>
-				<tr>
-					<td colspan="2"><input type="submit" value="<?php $this->msg('coll-update') ?>" /></td>
-				</tr>
-			</noscript>
 		</tbody>
 	</table>
+	<noscript>
+		<input type="submit" value="<?php $this->msg('coll-update') ?>" />
+	</noscript>
 </form>
 
 <div id="collectionListContainer">
