@@ -197,13 +197,6 @@ function wfAjaxCollectionGetItemList() {
 
 $wgAjaxExportList[] = 'wfAjaxCollectionGetItemList';
 
-function wfAjaxCollectionMoveItem( $index, $delta ) {
-	Collection::moveItem( $index, $delta );
-	return wfAjaxCollectionGetItemList();
-}
-
-$wgAjaxExportList[] = 'wfAjaxCollectionMoveItem';
-
 function wfAjaxCollectionRemoveItem( $index ) {
 	Collection::removeItem( $index );
 	return wfAjaxCollectionGetItemList();
@@ -231,3 +224,12 @@ function wfAjaxCollectionSetTitles( $title, $subtitle ) {
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionSetTitles';
+
+function wfAjaxCollectionSetSorting( $items_string ) {
+	$parsed = array();
+	parse_str( $items_string, &$parsed );
+	Collection::setSorting( $parsed['item'] );
+	return wfAjaxCollectionGetItemList();
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionSetSorting';
