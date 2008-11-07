@@ -791,7 +791,7 @@ class Collection extends SpecialPage {
 
 			$template = new CollectionFinishedTemplate();
 			$template->set( 'download_url', $wgServer . SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download/', $query ) );
-			$template->set( 'is_cached', $wgRequest->getVal( 'is_cached ') );
+			$template->set( 'is_cached', $wgRequest->getVal( 'is_cached' ) );
 			$template->set( 'query', $query );
 			$template->set( 'return_to', $return_to );
 			$wgOut->addTemplate( $template );
