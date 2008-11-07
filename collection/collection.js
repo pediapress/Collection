@@ -50,10 +50,11 @@ var script_url = wgServer +
 
 function getMWServeStatus() {
 	$.getJSON(script_url, {
-		action: 'ajax',
-		rs: 'wfAjaxGetMWServeStatus',
-		rsargs: [collection_id, writer]
+		'action': 'ajax',
+		'rs': 'wfAjaxGetMWServeStatus',
+		'rsargs[]': [collection_id, writer]
 	}, function(result) {
+		console.log('result:', result);
 		if (result.state == 'progress' ) {
 			$('#renderingProgress').html('' + result.status.progress);
 			if (result.status.status) {
