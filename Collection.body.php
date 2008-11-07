@@ -211,7 +211,8 @@ class Collection extends SpecialPage {
 		
 		$this->setHeaders();
 		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );		
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/json2.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.ui.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
 		
 		$template = new CollectionPageTemplate();
@@ -458,6 +459,21 @@ class Collection extends SpecialPage {
 		$saved = $collection['items'][$index + $delta];
 		$collection['items'][$index + $delta] = $collection['items'][$index];
 		$collection['items'][$index] = $saved;
+		$_SESSION['wsCollection'] = $collection;
+		self::touchSession();
+	}
+	
+	static function setSorting( $items ) {
+		if ( !self::hasSession() ) {
+			return;
+		}
+		$collection = $_SESSION['wsCollection'];
+		$old_items = $collection['items'];
+		$new_items = array();
+		foreach ($items as $new_index => $old_index) {
+			$new_items[$new_index] = $old_items[$old_index];
+		}
+		$collection['items'] = $new_items;
 		$_SESSION['wsCollection'] = $collection;
 		self::touchSession();
 	}
@@ -749,7 +765,7 @@ class Collection extends SpecialPage {
 			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer']) . '";' );
 			$wgOut->addInlineScript( 'var collection_rendering = true;' );
 			$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );		
-			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/json2.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
+			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
 			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
 

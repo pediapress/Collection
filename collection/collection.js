@@ -27,210 +27,152 @@ var requiredVersion = '1.0pre';
 
 /******************************************************************************/
 
-/** Shorcut for document.getElementByID()
- */
-function $(id) {
-	return document.getElementById(id);
-};
-
 /**
- * Attach event handler hookFunct to event of type hookName of element
- *
- * @param string or [] hookNames event type(s) (e.g. 'click' or ['laod', 'submit'])
- * @param function hookFunc event handler
- * @param Element element element to attach event handler to
- */
-function hookEventOnElement(hookNames, hookFunct, element) {
-	if (!element) {
-		return;
-	}
-	if (typeof hookNames == 'string') {
-		hookNames = [hookNames];
-	}
-	forEach(hookNames, function(i, hookName) {
-		if (element.addEventListener) {
-			element.addEventListener(hookName, hookFunct, false);
-		} else if (element.attachEvent) {
-			element.attachEvent("on" + hookName, hookFunct);
-		}	
-	});
-}
-
-/**
- * Call function fn with the index and the value of the elments of array.
- * Break the loop if fn returns false.
- *
- * @param Array array array to iterate over
- * @param function fn function to call for each element
- */
-function forEach(array, fn) {
-	for (var i = 0; i < array.length; i++) {
-		if (fn(i, array[i]) == false) {
-			break;
-		}
-	}
-}
-
-/**
- * Return text of element with given id. Optionally replace %PARAM% with value
+ * Return text of element with given selector. Optionally replace %PARAM% with value
  * of param. This allows usage of localization features in PHP from JavaScript.
  *
  * @param String id elment ID of elment containing text
  * @param String param optionally, a text to replace %PARAM% with
  * @return String text of elment with ID id
  */
-function gettext(id, param/*=null*/) {
-	var txt = document.getElementById(id).innerHTML;
+function gettext(sel, param/*=null*/) {
+	var txt = $(sel).html();
 	if (param) {
 		txt = txt.replace(/%PARAM%/g, param);
 	}
 	return txt;
 }
 
-/**
- * Strip whitespace from beginning and end of a string
- */
-function trim(s) {
-	return s.replace(/^\s+|\s+$/g, '');
-}
+var script_url = wgServer +
+	((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
 
 /******************************************************************************/
 
 function getMWServeStatus() {
-	sajax_request_type = "GET";
-	try {
-		sajax_do_call('wfAjaxGetMWServeStatus', [collection_id, writer], function(xhr) {
-			var result;
-			result = JSON.parse(xhr.responseText);
-			if (result.state == 'progress' ) {
-				$('renderingProgress').innerHTML = '' + result.status.progress;
-				if (result.status.status) {
-					var status = result.status.status;
-					if (result.status.article) {
-						status += gettext('renderingArticle', result.status.article);
-					} else if (result.status.page) {
-						status += gettext('renderingPage', result.status.page);
-					}
-					$('renderingStatus').innerHTML = gettext('renderingStatusText', status);
+	$.getJSON(script_url, {
+		action: 'ajax',
+		rs: 'wfAjaxGetMWServeStatus',
+		rsargs: [collection_id, writer]
+	}, function(result) {
+		if (result.state == 'progress' ) {
+			$('#renderingProgress').html('' + result.status.progress);
+			if (result.status.status) {
+				var status = result.status.status;
+				if (result.status.article) {
+					status += gettext('#renderingArticle', result.status.article);
+				} else if (result.status.page) {
+					status += gettext('#renderingPage', result.status.page);
 				}
-				setTimeout(getMWServeStatus, 500);
-			} else {
-				window.location.reload(true);
+				$('#renderingStatus').html(gettext('#renderingStatusText', status));
 			}
-		});
-	} catch (e) {
-		alert('XMLHttpRequest failed: ' + e);
-	}
+			setTimeout(getMWServeStatus, 500);
+		} else {
+			window.location.reload(true);
+		}
+	});
 }
 
 /******************************************************************************/
 
 function create_chapter() {
-	var name = prompt(gettext('newChapterText'));
+	var name = prompt(gettext('#newChapterText'));
 	if (name) {
-		try {
-			sajax_do_call('wfAjaxCollectionAddChapter', [name], function(xhr) {
-				$('collectionListContainer').innerHTML = xhr.responseText;
-			});
-		} catch (e) {
-			alert('XMLHttpRequest failed: ' + e);
-		}
+		sajax_request_type = "POST";
+		sajax_do_call('wfAjaxCollectionAddChapter',
+			[name],
+			refresh_list);
 	}
 	return false;
 }
 
 function rename_chapter(index, old_name) {
-	var new_name = prompt(gettext('renameChapterText'), old_name);
+	var new_name = prompt(gettext('#renameChapterText'), old_name);
 	if (new_name) {
-		try {
-			sajax_do_call('wfAjaxCollectionRenameChapter', [index, new_name], function(xhr) {
-				$('collectionListContainer').innerHTML = xhr.responseText;
-			});
-		} catch (e) {
-			alert('XMLHttpRequest failed: ' + e);
-		}
-	}
-}
-
-function remove_item(index) {
-	try {
-		sajax_do_call('wfAjaxCollectionRemoveItem', [index], function(xhr) {
-			$('collectionListContainer').innerHTML = xhr.responseText;
-		});
-	} catch (e) {
-		alert('XMLHttpRequest failed: ' + e);
+		sajax_request_type = "POST";
+		sajax_do_call('wfAjaxCollectionRenameChapter',
+			[index, new_name],
+			refresh_list);
 	}
 	return false;
 }
 
-function move_item(index, delta) {
-	try {
-		sajax_do_call('wfAjaxCollectionMoveItem', [index, delta], function(xhr) {
-			$('collectionListContainer').innerHTML = xhr.responseText;
-		});
-	} catch (e) {
-		alert('XMLHttpRequest failed: ' + e);
-	}
+function remove_item(index) {
+	sajax_request_type = "POST";
+	sajax_do_call('wfAjaxCollectionRemoveItem',
+		[index],
+		refresh_list);
 	return false;
 }
 
 function set_titles() {
-	var title = $('titleInput').value;
-	var subtitle = $('subtitleInput').value;
-	try {
-		sajax_do_call('wfAjaxCollectionSetTitles', [title, subtitle], function(xhr) {});
-	} catch (e) {
-		alert('XMLHttpRequest failed: ' + e);
-	}
+	sajax_request_type = "POST";
+	sajax_do_call('wfAjaxCollectionSetTitles',
+		[$('#titleInput').val(), $('subtitleInput').val()], function() {});
+	return false;
+}
+
+function set_sorting(items_string) {
+	sajax_request_type = "POST";
+	sajax_do_call('wfAjaxCollectionSetSorting', [items_string], refresh_list);
 	return false;
 }
 
 function update_save_button() {
-	var saveButton = $('saveButton');
-	if (!saveButton) {
+	if (!$('#saveButton').get(0)) {
 		return;
 	}
-	if ($('personalCollType').checked) {
-		$('personalCollTitle').disabled = '';
-		$('communityCollTitle').disabled = 'disabled';
-		if (!trim($('personalCollTitle').value)) {
-			saveButton.disabled = 'disabled';
+	if ($('#personalCollType:checked').val()) {
+		$('#personalCollTitle').attr('disabled', '');
+		$('#communityCollTitle').attr('disabled', 'disabled');
+		if (!$.trim($('#personalCollTitle').val())) {
+			$('#saveButton').attr('disabled', 'disabled');
 			return;
 		}
-	} else if ($('communityCollType').checked) {
-		$('communityCollTitle').disabled = '';
-		$('personalCollTitle').disabled = 'disabled';
-		if (!trim($('communityCollTitle').value)) {
-			saveButton.disabled = 'disabled';
+	} else if ($('#communityCollType:checked').val()) {
+		$('#communityCollTitle').attr('disabled', '');
+		$('#personalCollTitle').attr('disabled', 'disabled');
+		if (!$.trim($('#communityCollTitle').val())) {
+			$('#saveButton').attr('disabled', 'disabled');
 			return;
 		}
 	}
-	saveButton.disabled = '';
+	$('#saveButton').attr('disabled', '');
 }
 
-addOnloadHook(function() {
+function make_sortable() {
+	$('#collectionList').sortable({
+		axis: 'y',
+		update: function(evt, ui) {
+			set_sorting($('#collectionList').sortable('serialize'));
+		}
+	});
+}
+
+function refresh_list(xhr) {
+	$('#collectionListContainer').html(xhr.responseText);
+	make_sortable();
+}
+
+$(function() {
 	if (requiredVersion != wgCollectionVersion) {
-		alert('ERROR: Version mismatch between JavaScript code and PHP code. Contact admin to fix installation of Collection extension for MediaWiki.');
+		alert('ERROR: Version mismatch between Javascript and PHP code. Contact admin to fix the installation of Collection extension for MediaWiki.');
 		return;
 	}
-	if ($('collectionList')) {
-	  	var pattern = new RegExp("\\bmakeVisible\\b");
-		forEach(document.getElementsByTagName('a'), function(i, node) {
-		  	if (pattern.test(node.className)) {
-				node.style.display = 'inline';
-	    	}
-		});
+	if ($('#collectionList').get(0)) {
+		$('.makeVisible').css('display', 'inline');
 		window.coll_create_chapter = create_chapter;
 		window.coll_remove_item = remove_item;
-		window.coll_move_item = move_item;
 		window.coll_rename_chapter = rename_chapter;
 		update_save_button();
-		hookEventOnElement(['keyup', 'change'], update_save_button, $('personalCollTitle'));
-		hookEventOnElement(['keyup', 'change'], update_save_button, $('communityCollTitle'));
-		hookEventOnElement(['keyup', 'change'], update_save_button, $('personalCollType'));
-		hookEventOnElement(['keyup', 'change'], update_save_button, $('communityCollType'));
-		hookEventOnElement(['change'], set_titles, $('titleInput'));
-		hookEventOnElement(['change'], set_titles, $('subtitleInput'));
+		make_sortable();
+		$('#personalCollTitle').keyup(update_save_button);
+		$('#personalCollTitle').change(update_save_button);
+		$('#communityCollTitle').keyup(update_save_button);
+		$('#communityCollTitle').change(update_save_button);
+		$('#personalCollType').change(update_save_button);
+		$('#communityCollType').change(update_save_button);
+		$('#titleInput').change(set_titles);
+		$('#subtitleInput').change(set_titles);
 	}
 	if (typeof collection_rendering != 'undefined') {
 		getMWServeStatus();
