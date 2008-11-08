@@ -572,6 +572,8 @@ $messages['cs'] = array(
 	'coll-show_collection' => 'Zobrazit kolekci',
 	'coll-help_collections' => 'Nápověda ke kolekcím',
 	'coll-n_pages' => '$1 {{PLURAL:$1|stránka|stránky|stránek}}',
+	'coll-unknown_subpage_title' => 'Neznámá podstránka',
+	'coll-unknown_subpage_text' => 'Tato podstránka [[Special:Collection|kolekcí]] neexistuje',
 	'coll-download_as' => 'Stáhnout jako $1',
 	'coll-noscript_text' => '<h1>Je vyžadován JavaScript!</h1>
 <strong>Váš prohlížeč nepodporuje JavaScript nebo máte JavaScript vypnutý.
@@ -596,7 +598,6 @@ Další informace najdete na [[{{MediaWiki:Coll-helppage}}|stránce nápovědy k
 	'coll-create_chapter' => 'Vytvořit novou kapitolu',
 	'coll-sort_alphabetically' => 'Seřadit stránky abecedně',
 	'coll-clear_collection' => 'Vyčistit kolekci',
-	'coll-clear_confirm' => 'Opravdu chcete kolekci vyčistit?',
 	'coll-rename' => 'Přejmenovat',
 	'coll-new_chapter' => 'Zadejte název nové kapitoly',
 	'coll-rename_chapter' => 'Zadejte nový název kapitoly',
@@ -606,7 +607,6 @@ Další informace najdete na [[{{MediaWiki:Coll-helppage}}|stránce nápovědy k
 	'coll-post_failed_msg' => 'Chyba při požadavku POST na server $1 ($2).',
 	'coll-mwserve_failed_title' => 'Chyba vykreslovacího serveru',
 	'coll-mwserve_failed_msg' => 'Na vykreslovacím serveru došlo k chybě: <nowiki>$1</nowiki>',
-	'coll-enter_title' => 'Zadejte název kolekce:',
 	'coll-error_reponse' => 'Chybná odpověď serveru',
 	'coll-empty_collection' => 'Prázdná kolekce',
 	'coll-revision' => 'Revize: %PARAM%',
@@ -628,6 +628,7 @@ Chcete přepsat svoji existující kolekci, přidat do ní obsah nebo zrušit op
 	'coll-overwrite' => 'Přepsat',
 	'coll-append' => 'Přidat',
 	'coll-cancel' => 'Zrušit',
+	'coll-update' => 'Aktualizovat',
 	'coll-limit_exceeded_title' => 'Kolekce je příliš velká',
 	'coll-limit_exceeded_text' => 'Vaše kolekce stránek je příliš velká.
 Není možné přidat další stránky.',
@@ -639,6 +640,8 @@ Není možné přidat další stránky.',
 <p>Tato stránka se každých několik sekund automaticky obnoví.
 Pokud to nefunguje, stiskněte v prohlížeči tlačítko <i>obnovit</i>.</p>',
 	'coll-rendering_status' => '<strong>Stav:</strong> $1',
+	'coll-rendering_article' => '  (článek: $1)',
+	'coll-rendering_page' => '  (stránka: $1)',
 	'coll-rendering_finished_title' => 'Vykreslování dokončeno',
 	'coll-rendering_finished_text' => "'''Soubor s dokumentem byl vytvořen.'''
 Můžete si ho '''[$1 stáhnout do svého počítače]'''.
@@ -896,7 +899,6 @@ $messages['eo'] = array(
 	'coll-create_chapter' => 'Kreu novan ĉapitron',
 	'coll-sort_alphabetically' => 'Ordigi paĝojn laŭ alfabeto',
 	'coll-clear_collection' => 'Forviŝi kolekton',
-	'coll-clear_confirm' => 'Ĉu vi ja volas forviŝi vian kolekton?',
 	'coll-rename' => 'Alinomigi',
 	'coll-new_chapter' => 'Enigi nomon por nova ĉapitro',
 	'coll-rename_chapter' => 'Enigi novan nomon por ĉapitro',
@@ -906,7 +908,6 @@ $messages['eo'] = array(
 	'coll-post_failed_msg' => 'La POST-peto por $1 malsukcesis ($2).',
 	'coll-mwserve_failed_title' => 'Eraro kun montrada servilo',
 	'coll-mwserve_failed_msg' => 'Eraro okazis en la montrada servilo: <nowiki>$1</nowiki>',
-	'coll-enter_title' => 'Enigu titolon por kolekto:',
 	'coll-error_reponse' => 'Erara respondo de servilo',
 	'coll-empty_collection' => 'Malplena kolekto',
 	'coll-revision' => 'Revizio: %PARAM%',
@@ -1775,6 +1776,8 @@ $messages['ia'] = array(
 	'coll-show_collection' => 'Monstrar collection',
 	'coll-help_collections' => 'Adjuta super le collectiones',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagina|paginas}}',
+	'coll-unknown_subpage_title' => 'Subpagina incognite',
+	'coll-unknown_subpage_text' => 'Iste subpagina de [[Special:Collection|Collection]] non existe',
 	'coll-download_as' => 'Discargar como $1',
 	'coll-noscript_text' => '<h1>JavaScript es requirite!</h1>
 <strong>Tu navigator non supporta JavaScript o JavaScript ha essite disactivate.
@@ -1799,7 +1802,6 @@ Vide le [[{{MediaWiki:Coll-helppage}}|pagina de adjuta super le collectiones]] p
 	'coll-create_chapter' => 'Crear nove capitulo',
 	'coll-sort_alphabetically' => 'Ordinar paginas alphabeticamente',
 	'coll-clear_collection' => 'Rader collection',
-	'coll-clear_confirm' => 'Esque tu vole vermente rader tu collection?',
 	'coll-rename' => 'Renominar',
 	'coll-new_chapter' => 'Entra nomine pro nove capitulo',
 	'coll-rename_chapter' => 'Entra nove nomine pro capitulo',
@@ -1809,7 +1811,6 @@ Vide le [[{{MediaWiki:Coll-helppage}}|pagina de adjuta super le collectiones]] p
 	'coll-post_failed_msg' => 'Le requesta POST a $1 falleva ($2).',
 	'coll-mwserve_failed_title' => 'Error del servitor de renditiones',
 	'coll-mwserve_failed_msg' => 'Un error ha occurrite in le servitor de renditiones: <nowiki>$1</nowiki>',
-	'coll-enter_title' => 'Entra titulo pro collection:',
 	'coll-error_reponse' => 'Responsa de error ab servitor',
 	'coll-empty_collection' => 'Collection vacue',
 	'coll-revision' => 'Revision: %PARAM%',
@@ -1832,16 +1833,17 @@ Esque tu vole superscriber tu collection actual, appender le nove contento, o ca
 	'coll-overwrite' => 'Superscriber',
 	'coll-append' => 'Appender',
 	'coll-cancel' => 'Cancellar',
+	'coll-update' => 'Actualisar',
 	'coll-limit_exceeded_title' => 'Collection troppo grande',
 	'coll-limit_exceeded_text' => 'Tu collection de paginas es troppo grande.
 Non es possibile adder plus paginas.',
 	'coll-rendering_title' => 'Rendition',
-	'coll-rendering_text' => "'''Per favor attende durante le generation del documento.'''
+	'coll-rendering_text' => '<p><strong>Per favor attende durante le generation del documento.</strong></p>
 
-'''Progresso:''' $1% $2
+<p><strong>Progresso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Iste pagina deberea refrescar se automaticamente cata pauc secundas.
-Si isto non functiona, per favor preme le button de refrescar in tu navigator.",
+<p>Iste pagina deberea refrescar se automaticamente cata pauc secundas.
+Si isto non functiona, per favor preme le button de refrescar in tu navigator.</p>',
 	'coll-rendering_status' => "'''Stato:''' $1",
 	'coll-rendering_article' => '   (pagina wiki: $1)',
 	'coll-rendering_page' => '   (pagina: $1)',
@@ -2344,6 +2346,8 @@ $messages['lb'] = array(
 	'coll-show_collection' => "D'Sammlung weisen",
 	'coll-help_collections' => "Hellëf iwwert d 'Sammlungen",
 	'coll-n_pages' => '$1 {{PLURAL:$1|Säit|Säiten}}',
+	'coll-unknown_subpage_title' => 'Onbekannten Ënnersäit',
+	'coll-unknown_subpage_text' => 'Dës Ënnersäit vun der [[Special:Collection|Sammlung]] gëtt et net',
 	'coll-download_as' => 'Als $1 eroflueden',
 	'coll-noscript_text' => '<h1>JavaScript gëtt gebraucht!</h1>
 <strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
@@ -2364,14 +2368,12 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-create_chapter' => 'Een neit Kapitel maachen',
 	'coll-sort_alphabetically' => 'Säiten alphabetesch sortéieren',
 	'coll-clear_collection' => 'Sammlung eidel maachen',
-	'coll-clear_confirm' => 'Wëllt Dir äer Kollektioun wierklech eidel maachen?',
 	'coll-rename' => 'Ëmbenennen',
 	'coll-new_chapter' => 'Gitt den Numm fir dat neit Kapitel un',
 	'coll-rename_chapter' => "Gitt een neie Numm fir d'Kapitel un",
 	'coll-no_such_category' => 'Keng esou Kategorie',
 	'coll-notitle_title' => 'Den Titel vun der Säit konnt net festgestallt ginn.',
 	'coll-mwserve_failed_title' => 'Feeler vum Server',
-	'coll-enter_title' => 'Titel vun der Kollektioun uginn:',
 	'coll-error_reponse' => 'Feelermeldng vum Server',
 	'coll-empty_collection' => 'Eidel Sammlung',
 	'coll-revision' => 'Versioun: %PARAM%',
@@ -2388,6 +2390,7 @@ Wëllt Dir déi duerch är Sammlung ersetzen?',
 	'coll-overwrite' => 'Iwwerschreiwen',
 	'coll-append' => 'Derbäisetzen',
 	'coll-cancel' => 'Annulléieren',
+	'coll-update' => 'Aktualiséieren',
 	'coll-limit_exceeded_title' => 'Sammlung ze grouss',
 	'coll-limit_exceeded_text' => 'Är Sammlung ass ze grouss.
 Et kënne keng Säite méi derbäigesat ginn.',
@@ -2594,6 +2597,7 @@ $messages['ms'] = array(
 	'coll-show_collection' => 'Papar koleksi',
 	'coll-help_collections' => 'Bantuan koleksi',
 	'coll-n_pages' => '$1 laman',
+	'coll-unknown_subpage_title' => 'Sublaman tidak dikenali',
 	'coll-download_as' => 'Muat turun $1',
 	'coll-noscript_text' => '<h1>JavaScript diperlukan!</h1>
 <strong>JavaScript tidak disokong oleh pelayan anda atau telah dilumpuhkan. Laman ini tidak dapat berfungsi sekiranya ciri JavaScript tidak diaktifkan.</strong>',
@@ -2611,13 +2615,14 @@ $messages['ms'] = array(
 	'coll-subtitle' => 'Tajuk kecil:',
 	'coll-contents' => 'Kandungan',
 	'coll-create_chapter' => 'Cipta bab baru',
+	'coll-sort_alphabetically' => 'Susun laman mengikut tertib abjad',
 	'coll-clear_collection' => 'Kosongkan koleksi',
-	'coll-clear_confirm' => 'Betul anda mahu mengosongkan koleksi anda?',
 	'coll-rename' => 'Tukar nama',
 	'coll-new_chapter' => 'Masukkan nama untuk bab baru',
 	'coll-rename_chapter' => 'Masukkan nama baru untuk bab',
 	'coll-post_failed_title' => 'Permintaan POST gagal',
 	'coll-post_failed_msg' => 'Permintaan POST terhadap $1 gagal ($2).',
+	'coll-error_reponse' => 'Jawapan ralat daripada pelayan',
 	'coll-empty_collection' => 'Koleksi kosong',
 	'coll-revision' => 'Semakan: %PARAM%',
 	'coll-save_collection_title' => 'Simpan koleksi',
@@ -2954,6 +2959,8 @@ $messages['oc'] = array(
 	'coll-show_collection' => 'Afichar la compilacion',
 	'coll-help_collections' => 'Ajuda sus las compilacions',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagina|paginas}}',
+	'coll-unknown_subpage_title' => 'Sospagina desconeguda',
+	'coll-unknown_subpage_text' => 'Aquesta sospagina de [[Special:Collection|colleccions]] existís pas',
 	'coll-download_as' => 'Telecargat coma $1',
 	'coll-noscript_text' => "<h1>Javascript es necessari !</h1>
 <strong>Vòstre navigador supòrta pas Javascript o se l'a desactivat.
@@ -2978,7 +2985,6 @@ Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de collecc
 	'coll-create_chapter' => 'Crear un capitol novèl',
 	'coll-sort_alphabetically' => 'Triar las paginas per òrdre alfabetic',
 	'coll-clear_collection' => 'Voidar la compilacion',
-	'coll-clear_confirm' => 'Volètz vertadièrament voidar vòstra compilacion ?',
 	'coll-rename' => 'Tornar nomenar',
 	'coll-new_chapter' => 'Entrar lo títol del capitol novèl',
 	'coll-rename_chapter' => 'Entrar lo títol novèl pel capitol',
@@ -2988,7 +2994,6 @@ Vejatz [[{{MediaWiki:Coll-helppage}}|las paginas d'ajudas en matièra de collecc
 	'coll-post_failed_msg' => 'La requèsta POST cap a $1 a pas capitat ($2).',
 	'coll-mwserve_failed_title' => 'Error del servidor del rendut',
 	'coll-mwserve_failed_msg' => 'Una error es intervenguda sul servidor balhant lo rendut : <nowiki>$1</nowiki>',
-	'coll-enter_title' => 'Picar un títol per la compilacion :',
 	'coll-error_reponse' => 'Lo servidor a rencontrat una error',
 	'coll-empty_collection' => 'Compilacion voida',
 	'coll-revision' => 'Version : %PARAM%',
@@ -3010,6 +3015,7 @@ Volètz espotir vòstra compilacion actuala, i apondre lo contengut o alara anul
 	'coll-overwrite' => 'Espotir',
 	'coll-append' => 'Apondre',
 	'coll-cancel' => 'Anullar',
+	'coll-update' => 'Metre a jorn',
 	'coll-limit_exceeded_title' => 'Compilacion tròp granda',
 	'coll-limit_exceeded_text' => 'Vòstra compilacion es tròp granda.
 Cap de pagina pòt pas èsser aponduda.',
@@ -3080,7 +3086,7 @@ $messages['pl'] = array(
 	'coll-unknown_subpage_text' => 'Podstrona należąca do [[Special:Collection|kolekcji]] nie istnieje',
 	'coll-download_as' => 'Pobierz jako $1',
 	'coll-noscript_text' => '<h1>Potrzebny JavaScript!</h1>
-<strong>Twoja przeglądarka nie obsługuje JavaScript lub został on wyłączony.
+<strong>Twoja przeglądarka nie obsługuje JavaScriptu lub został on wyłączony.
 Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączony.</strong>',
 	'coll-intro_text' => 'Narzędzie umożliwia tworzenie kolekcji stron, z których można wygenerować plik PDF, jak też zapisać je w celu późniejszego wykorzystania lub udostępnienia.
 
@@ -3102,7 +3108,6 @@ Więcej informacji na [[{{MediaWiki:Coll-helppage}}|stronie pomocy dotyczącej k
 	'coll-create_chapter' => 'Utwórz nowy rozdział',
 	'coll-sort_alphabetically' => 'Sortuj strony alfabetycznie',
 	'coll-clear_collection' => 'Wyczyść kolekcję',
-	'coll-clear_confirm' => 'Na pewno chcesz wyczyścić kolekcję?',
 	'coll-rename' => 'Zmień nazwę',
 	'coll-new_chapter' => 'Wprowadź nazwę dla nowego rozdziału',
 	'coll-rename_chapter' => 'Wprowadź nową nazwę dla rozdziału',
@@ -3112,7 +3117,6 @@ Więcej informacji na [[{{MediaWiki:Coll-helppage}}|stronie pomocy dotyczącej k
 	'coll-post_failed_msg' => 'Żądanie POST do $1 nie powiodło się ($2).',
 	'coll-mwserve_failed_title' => 'Błąd serwera w renderowaniu',
 	'coll-mwserve_failed_msg' => 'W renderującym serwerze pojawił się błąd: <nowiki>$1</nowiki>',
-	'coll-enter_title' => 'Podaj tytuł kolekcji:',
 	'coll-error_reponse' => 'Błąd odpowiedzi serwera',
 	'coll-empty_collection' => 'Pusta kolekcja',
 	'coll-revision' => 'Wersja: %PARAM%',
@@ -3479,6 +3483,8 @@ $messages['sk'] = array(
 	'coll-show_collection' => 'Zobraziť kolekciu',
 	'coll-help_collections' => 'Pomocník ku kolekciám',
 	'coll-n_pages' => '$1 {{PLURAL:$1|stránka|stránky|stránok}}',
+	'coll-unknown_subpage_title' => 'Neznáma podstránka',
+	'coll-unknown_subpage_text' => 'Táto podstránka [[Special:Collection|Kolekcie]] neexistuje',
 	'coll-download_as' => 'Stiahnuť ako $1',
 	'coll-noscript_text' => '<h1>Vyžaduje sa JavaScript!</h1>
 <strong>Váš prehliadač nepodporuje JavaScript alebo máte JavaScript vypnutý.
@@ -3503,7 +3509,6 @@ Pozri ďalšie informácie na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka 
 	'coll-create_chapter' => 'Vytvoriť novú kapitolu',
 	'coll-sort_alphabetically' => 'Zoradiť stránky abecedne',
 	'coll-clear_collection' => 'Vyčistiť kolekciu',
-	'coll-clear_confirm' => 'Naozaj chcete vyčistiť svoju kolekciu?',
 	'coll-rename' => 'Premenovať',
 	'coll-new_chapter' => 'Zadajte názov novej kapitoly',
 	'coll-rename_chapter' => 'Zadajte nový názov kapitoly',
@@ -3513,7 +3518,6 @@ Pozri ďalšie informácie na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka 
 	'coll-post_failed_msg' => 'Chyba požiadavky POST na $1 ($2).',
 	'coll-mwserve_failed_title' => 'Chyba vykresľovacieho servera',
 	'coll-mwserve_failed_msg' => 'Vyskytla sa chyba vykresľovacieho servera: <nowiki>$1</nowiki>',
-	'coll-enter_title' => 'Zadajte názov kolekcie:',
 	'coll-error_reponse' => 'Chybná odpoveď servera',
 	'coll-empty_collection' => 'Prázdna kolekcia',
 	'coll-revision' => 'Revízia: %PARAM%',
@@ -3535,6 +3539,7 @@ Chcete prepísať svoju existujúcu kolekciu, pridať do nej obsah alebo zruši�
 	'coll-overwrite' => 'Prepísať',
 	'coll-append' => 'Pridať',
 	'coll-cancel' => 'Zrušiť',
+	'coll-update' => 'Aktualizovať',
 	'coll-limit_exceeded_title' => 'Kolekcia je príliš veľká',
 	'coll-limit_exceeded_text' => 'Vaša kolekcia stránok je príliš veľká.
 Nie je možné pridať ďalšie stránky.',
@@ -4188,6 +4193,8 @@ $messages['vi'] = array(
 	'coll-show_collection' => 'Xem tập hợp',
 	'coll-help_collections' => 'Trợ giúp tập hợp',
 	'coll-n_pages' => '$1 trang',
+	'coll-unknown_subpage_title' => 'Trang phụ không tìm được',
+	'coll-unknown_subpage_text' => 'Trang phụ của [[Special:Collection|Collection]] này không tồn tại',
 	'coll-download_as' => 'Tải về dưới dạng $1',
 	'coll-noscript_text' => '<h1>Yêu cầu phải có JavaScript!</h1>
 <strong>Trình duyệt của bạn không hỗ trợ JavaScript hoặc JavaScript đã bị tắt.
@@ -4212,7 +4219,6 @@ Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] đ�
 	'coll-create_chapter' => 'Tạo chương mới',
 	'coll-sort_alphabetically' => 'Sắp xếp trang theo vần',
 	'coll-clear_collection' => 'Xóa tập hợp',
-	'coll-clear_confirm' => 'Bạn có thực sự muốn xóa tập hợp của mình?',
 	'coll-rename' => 'Đổi tên',
 	'coll-new_chapter' => 'Gõ vào tên chương mới',
 	'coll-rename_chapter' => 'Gõ vào tên chương mới',
@@ -4222,7 +4228,6 @@ Mời xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về tập hợp]] đ�
 	'coll-post_failed_msg' => 'Yêu cầu POST đến $1 thất bại ($2).',
 	'coll-mwserve_failed_title' => 'Lỗi chương trình kết xuất',
 	'coll-mwserve_failed_msg' => 'Chương trình kết xuất gặp lỗi: <nowiki>$1</nowiki>',
-	'coll-enter_title' => 'Gõ vào tựa đề của tập hợp:',
 	'coll-error_reponse' => 'Máy chủ trả về lỗi',
 	'coll-empty_collection' => 'Tập hợp trống',
 	'coll-revision' => 'Phiên bản: %PARAM%',
@@ -4244,16 +4249,17 @@ Bạn có muốn ghi đè tập hợp hiện tại, thêm nội dung mới, hay 
 	'coll-overwrite' => 'Ghi đè',
 	'coll-append' => 'Thêm vào',
 	'coll-cancel' => 'Bãi bỏ',
+	'coll-update' => 'Cập nhật',
 	'coll-limit_exceeded_title' => 'Tập hợp quá lớn',
 	'coll-limit_exceeded_text' => 'Tập hợp các trang của bạn quá lớn.
 Không thể thêm trang được nữa.',
 	'coll-rendering_title' => 'Đang kết xuất',
-	'coll-rendering_text' => "'''Xin hãy chờ xong kết xuất tài liệu.'''
+	'coll-rendering_text' => '<p><strong>Xin hãy chờ xong kết xuất tài liệu.</strong></p>
 
-'''Tiến độ:''' $1% $2
+<p><strong>Tiến độ:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Trình duyệt sẽ làm tươi trang này vài giây một lần.
-Nếu không thấy thay đổi gì, xin hãy bấm nút Refresh hoặc Reload trong trình duyệt.",
+<p>Trình duyệt sẽ làm tươi trang này vài giây một lần.
+Nếu không thấy thay đổi gì, xin hãy bấm nút Refresh hoặc Reload trong trình duyệt.</p>',
 	'coll-rendering_status' => "'''Trạng thái:''' $1",
 	'coll-rendering_article' => '  (trang wiki: $1)',
 	'coll-rendering_page' => '  (trang: $1)',
