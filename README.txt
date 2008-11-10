@@ -110,8 +110,11 @@ Installation and Configuration of the Collection Extension
    * rl: PDF
    * xhtml: XHTML 1.0 Transitional
    
-   See mwlib_ for possible other writers.
-  
+   If you're using your own render server, the list of available writers can be
+   listed with the following mwlib_ command::
+   
+     $ mw-render --list-writers
+   
   *$wgCollectionArticleNamespaces (array)*
    List of namespace numbers for pages which can be added to a collection.
    Category pages (NS_CATEGORY) are always an exception (all articles in a
