@@ -188,7 +188,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 		}
 		echo ' ' . $revision; ?>
 		</span>
-		<a class="articleLink" href="<?php echo $url ?>" style="margin-left:1em;">[Show]</a>
+		<a class="articleLink" href="<?php echo $url ?>" style="margin-left:1em;">[<?php $this->msg('coll-show') ?>]</a>
 	</li>
 	<?php } else if ($item['type'] == 'chapter') { ?>
 	<li id="item-<?php echo $index ?>" class="chapter" style="margin-top:0.3em;">
