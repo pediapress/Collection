@@ -57,6 +57,11 @@ $aliases['fi'] = array(
 	'Collection' => array( 'Kokoelma' ),
 );
 
+/** Galician (Galego) */
+$aliases['gl'] = array(
+	'Collection' => array( 'Colección' ),
+);
+
 /** Hebrew (עברית) */
 $aliases['he'] = array(
 	'Collection' => array( 'אוסף' ),
@@ -115,6 +120,16 @@ $aliases['oc'] = array(
 /** Polish (Polski) */
 $aliases['pl'] = array(
 	'Collection' => array( 'Kolekcja' ),
+);
+
+/** Portuguese (Português) */
+$aliases['pt'] = array(
+	'Collection' => array( 'Colecção', 'Coleção' ),
+);
+
+/** Brazilian Portuguese (Português do Brasil) */
+$aliases['pt-br'] = array(
+	'Collection' => array( 'Coleção', 'Colecção' ),
 );
 
 /** Swedish (Svenska) */
