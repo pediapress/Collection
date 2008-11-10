@@ -233,3 +233,10 @@ function wfAjaxCollectionSetSorting( $items_string ) {
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionSetSorting';
+
+function wfAjaxCollectionClear() {
+	Collection::clearCollection();
+	return wfAjaxCollectionGetItemList();
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionClear';
