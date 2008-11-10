@@ -173,7 +173,6 @@ foreach($this->data['collection']['items'] as $index => $item) {
 			<a onclick="return coll_move_item(<?php echo $index . ', 1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_down') ?>"><img src="<?php echo htmlspecialchars($mediapath . "down.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-move_down') ?>" /></a>
 		<?php } ?>
 		</noscript>
-			<a href="<?php echo $url ?>" title="<?php $this->msg('coll-show') ?>"><img src="<?php echo htmlspecialchars($mediapath . "show.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-show') ?>" /></a>
 		<?php if ($item['revision'] && $item['revision'] != $item['latest']) {
 			$revision = '('. htmlspecialchars(wfMsg('coll-revision', $item['revision'])) . ')';
 			$url = $item['url'] . '?oldid=' . $item['revision'];
@@ -182,6 +181,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 			$url = $item['url'];
 		}
 		?>
+		<a href="<?php echo $url ?>" title="<?php $this->msg('coll-show') ?>"><img src="<?php echo htmlspecialchars($mediapath . "show.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-show') ?>" /></a>
 		<span class="title" style="margin-left: 1em; cursor: move;">
 		<?php if ($item['displaytitle']) {
 			echo htmlspecialchars($item['displaytitle']);
