@@ -274,10 +274,10 @@ class Collection extends SpecialPage {
 	
 	static function addChapter( $name ) {
 		$collection = $_SESSION['wsCollection'];
-		$collection['items'][] = array(
+		array_unshift( $collection['items'], array(
 			'type' => 'chapter',
 			'title' => $name,
-		);
+		) );
 		$_SESSION['wsCollection'] = $collection;
 		self::touchSession();
 	}
