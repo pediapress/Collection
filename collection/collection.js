@@ -161,6 +161,7 @@ function make_sortable() {
 
 function refresh_list(xhr) {
 	$('#collectionListContainer').html(xhr.responseText);
+	$('.makeVisible').css('display', 'inline');
 	make_sortable();
 }
 
