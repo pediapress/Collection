@@ -15,98 +15,21 @@ class CollectionPageTemplate extends QuickTemplate {
 		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/collection/';
 ?>
 
-<table align="right" style="clear: both; float: right; margin-left: 20px; margin-bottom: 10px;" class="toccolours" width="50%">
-	<tbody>
-		<tr>
-			<td>
-				<h2><span class="mw-headline"><?php $this->msg('coll-book_title') ?></span></h2>
-				<p><?php $this->msg('coll-book_text') ?></p>
-				<div id="ppList">
-					<?php foreach ($this->data['podpartners'] as $partner => $partnerData) { ?>
-					<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'post_zip/')) ?>" method="get">
-						<input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
-						<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>"/>
-						<a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?>&nbsp;<img src="<?php echo htmlspecialchars($partnerData['logourl']) ?>" alt="<?php echo htmlspecialchars($partnerData['name']) ?>"/></a>
-					</form>
-					<?php } ?>
-				</div>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<table align="right" style="clear: both; float: right; margin-left: 20px; margin-bottom: 10px;" class="toccolours" width="50%">
-	<tbody>
-		<tr>
-			<td>
-				<h2><span class="mw-headline"><?php $this->msg('coll-download_title') ?></span></h2>
-				<p><?php $this->msg('coll-download_text') ?></p>
-				<form id="downloadForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'render/')) ?>" method="post">
-					<?php if (count($this->data['formats']) == 1) {
-						$writer = array_rand($this->data['formats']);
-						$buttonLabel = wfMsgHtml('coll-download_as', htmlspecialchars($this->data['formats'][$writer]));
-					?>
-						<input type="hidden" name="writer" value="<?php echo htmlspecialchars($writer) ?>"></input>
-					<?php } else {
-						$buttonLabel = wfMsgHtml('coll-download');
-					?>
-					<label for="formatSelect"><?php $this->msg('coll-format_label') ?></label>
-					<select id="formatSelect" name="writer">
-						<?php foreach ($this->data['formats'] as $writer => $name) { ?>
-						<option value="<?php echo htmlspecialchars($writer) ?>"><?php echo htmlspecialchars($name) ?></option>
-						<?php	} ?>
-					</select>
-					<?php } ?>
-					<input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>" />
-				</form>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<table align="right" style="clear: both; float: right; margin-left: 20px; margin-bottom: 10px;" class="toccolours" width="50%">
-	<tbody>
-		<tr>
-			<td>
-				<h2><span class="mw-headline"><?php $this->msg('coll-save_collection_title') ?></span></h2>
-				<?php if ($GLOBALS['wgUser']->isLoggedIn()) { ?>
-				<p><?php $this->msg('coll-save_collection_text') ?></p>
-					<form id="saveForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'save_collection/')) ?>" method="post">
-						<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked"></input>
-						<label for="personalCollType"><?php $this->msg('coll-personal_collection_label') ?></label>
-						<label for="personalCollTitle"><?php echo htmlspecialchars($GLOBALS['wgUser']->getUserPage()->getPrefixedText() . '/' . wfMsgForContent('coll-collections') . '/') ?></label>
-						<input id="personalCollTitle" type="text" name="pcollname"></input><br />
-						<input id="communityCollType" type="radio" name="colltype" value="community"></input>
-						<label for="communityCollType"><?php $this->msg('coll-community_collection_label') ?></label>
-						<label for="communityCollTitle"><?php echo htmlspecialchars(Title::makeTitle($GLOBALS['wgCommunityCollectionNamespace'], wfMsgForContent('coll-collections'))->getPrefixedText() . '/') ?></label>
-						<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled"></input><br />
-						<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>"></input>
-					</form>
-
-				<?php } else {
-					echo wfMsgExt('coll-login_to_save', array('parse'));
-				}
-				echo wfMsgExt('coll-save_category', array('parse'));
-				?>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
+<div style="width: 47%; float: left; margin-right: 5%">
 <?php $this->msgWiki('coll-intro_text') ?>
 
-<h2><span class="mw-headline"><?php $this->msg('coll-my_collection') ?></span></h2>
+<h2><span class="mw-headline"><?php $this->msg('coll-your_book') ?></span></h2>
 
 <form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'set_titles/')) ?>" method="post">
-	<table>
+	<table style="width: 80%" align="center">
 		<tbody>
 			<tr>
-				<th><label for="titleInput"><?php $this->msg('coll-title') ?></label></th>
-				<td><input id="titleInput" type="text" name="collectionTitle" value="<?php echo htmlspecialchars($this->data['collection']['title']) ?>" size="32" /></td>
+				<th width="1%" style="text-align: right"><label for="titleInput"><?php $this->msg('coll-title') ?></label></th>
+				<td><input id="titleInput" type="text" name="collectionTitle" value="<?php echo htmlspecialchars($this->data['collection']['title']) ?>" style="width: 98%" /></td>
 			</tr>
 			<tr>
-				<th><label for="subtitleInput"><?php $this->msg('coll-subtitle') ?></label></th>
-				<td><input id="subtitleInput" type="text" name="collectionSubtitle" value="<?php echo htmlspecialchars($this->data['collection']['subtitle']) ?>" size="32" /></td>
+				<th style="text-align: right"><label for="subtitleInput"><?php $this->msg('coll-subtitle') ?></label></th>
+				<td><input id="subtitleInput" type="text" name="collectionSubtitle" value="<?php echo htmlspecialchars($this->data['collection']['subtitle']) ?>" style="width: 98%" /></td>
 			</tr>
 		</tbody>
 	</table>
@@ -123,13 +46,93 @@ $listTemplate->execute();
 ?>
 </div>
 
-<br style="clear:both;"/>
-
 <div style="display:none">
 	<span id="newChapterText"><?php $this->msg('coll-new_chapter') ?></span>
 	<span id="renameChapterText"><?php $this->msg('coll-rename_chapter') ?></span>
 	<span id="clearCollectionConfirmText"><?php $this->msg('coll-clear_collection_confirm') ?></span>
 </div>
+
+</div>
+
+<div style="width: 47%; float: left">
+
+	<div class="toccolours" style="margin-bottom: 10px; padding: 10px">
+		<h2><span class="mw-headline"><?php $this->msg('coll-book_title') ?></span></h2>
+		<p><?php $this->msg('coll-book_text') ?></p>
+		<div id="ppList">
+			<?php foreach ($this->data['podpartners'] as $partner => $partnerData) { ?>
+			<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'post_zip/')) ?>" method="get">
+				<input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
+				<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>"/>
+				<a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?>&nbsp;<img src="<?php echo htmlspecialchars($partnerData['logourl']) ?>" alt="<?php echo htmlspecialchars($partnerData['name']) ?>"/></a>
+			</form>
+			<?php } ?>
+		</div>
+	</div>
+
+	<div style="margin-bottom: 10px; padding: 10px" class="toccolours">
+		<h2><span class="mw-headline"><?php $this->msg('coll-book_title') ?></span></h2>
+		<p><?php $this->msg('coll-book_text') ?></p>
+		<div id="ppList">
+			<?php foreach ($this->data['podpartners'] as $partner => $partnerData) { ?>
+			<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'post_zip/')) ?>" method="get">
+				<input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
+				<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>"/>
+				<a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?>&nbsp;<img src="<?php echo htmlspecialchars($partnerData['logourl']) ?>" alt="<?php echo htmlspecialchars($partnerData['name']) ?>"/></a>
+			</form>
+			<?php } ?>
+		</div>
+	</div>
+
+	<div style="margin-bottom: 10px; padding: 10px" class="toccolours">
+		<h2><span class="mw-headline"><?php $this->msg('coll-download_title') ?></span></h2>
+		<p><?php $this->msg('coll-download_text') ?></p>
+		<form id="downloadForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'render/')) ?>" method="post">
+			<?php if (count($this->data['formats']) == 1) {
+				$writer = array_rand($this->data['formats']);
+				$buttonLabel = wfMsgHtml('coll-download_as', htmlspecialchars($this->data['formats'][$writer]));
+			?>
+				<input type="hidden" name="writer" value="<?php echo htmlspecialchars($writer) ?>"></input>
+			<?php } else {
+				$buttonLabel = wfMsgHtml('coll-download');
+			?>
+			<label for="formatSelect"><?php $this->msg('coll-format_label') ?></label>
+			<select id="formatSelect" name="writer">
+				<?php foreach ($this->data['formats'] as $writer => $name) { ?>
+				<option value="<?php echo htmlspecialchars($writer) ?>"><?php echo htmlspecialchars($name) ?></option>
+				<?php	} ?>
+			</select>
+			<?php } ?>
+			<input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>" />
+		</form>
+	</div>
+
+	<div style="margin-bottom: 10px; padding: 10px" class="toccolours">
+		<h2><span class="mw-headline"><?php $this->msg('coll-save_collection_title') ?></span></h2>
+		<?php if ($GLOBALS['wgUser']->isLoggedIn()) { ?>
+		<p><?php $this->msg('coll-save_collection_text') ?></p>
+			<form id="saveForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'save_collection/')) ?>" method="post">
+				<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked"></input>
+				<label for="personalCollType"><?php $this->msg('coll-personal_collection_label') ?></label>
+				<label for="personalCollTitle"><?php echo htmlspecialchars($GLOBALS['wgUser']->getUserPage()->getPrefixedText() . '/' . wfMsgForContent('coll-collections') . '/') ?></label>
+				<input id="personalCollTitle" type="text" name="pcollname"></input><br />
+				<input id="communityCollType" type="radio" name="colltype" value="community"></input>
+				<label for="communityCollType"><?php $this->msg('coll-community_collection_label') ?></label>
+				<label for="communityCollTitle"><?php echo htmlspecialchars(Title::makeTitle($GLOBALS['wgCommunityCollectionNamespace'], wfMsgForContent('coll-collections'))->getPrefixedText() . '/') ?></label>
+				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled"></input><br />
+				<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>"></input>
+			</form>
+
+		<?php } else {
+			echo wfMsgExt('coll-login_to_save', array('parse'));
+		}
+		echo wfMsgExt('coll-save_category', array('parse'));
+		?>
+	</div>
+
+</div>
+
+
 
 <?php
 	}
@@ -144,15 +147,24 @@ class CollectionListTemplate extends QuickTemplate {
 		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/collection/';
 ?>
 
-<h3><span class="mw-headline"><?php $this->msg('coll-contents') ?></span></h3>
-
-<a class="makeVisible" <?php if (!isset($this->data['is_ajax'])) { echo 'style="display:none"'; } ?> onclick="return coll_create_chapter()" href="javascript:void(0);">[<?php $this->msg('coll-create_chapter') ?>]</a>
+<div class="toccolours" style="text-align: center; padding: 2px; margin-top: 20px; margin-bottom: 2px">
+<div>
+<a class="makeVisible" style="margin-right: 3em;<?php if (!isset($this->data['is_ajax'])) { echo ' display:none;'; } ?>" onclick="return coll_create_chapter()" href="javascript:void(0);"><?php $this->msg('coll-create_chapter') ?></a>
 <?php if (count($this->data['collection']['items']) > 0) { ?>
-<span id="sortSpan"><a id="sortLink" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'sort_items/')) ?>">[<?php $this->msg('coll-sort_alphabetically') ?>]</a></span>
-<span id="clearSpan"><a id="clearLink" onclick="return coll_clear_collection()" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'clear_collection/')) ?>">[<?php $this->msg('coll-clear_collection') ?>]</a></span>
+<a style="margin-right: 3em" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'sort_items/')) ?>"><?php $this->msg('coll-sort_alphabetically') ?></a>
+<a onclick="return coll_clear_collection()" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'clear_collection/')) ?>"><?php $this->msg('coll-clear_collection') ?></a>
 <?php } ?>
+</div>
+</div>
 
-<ul id="collectionList" style="list-style: none; padding-top: 0.4em;">
+
+<div style="padding: 10px 20px; border: 1px solid rgb(170, 170, 170)">
+
+<div style="text-align: center; margin-bottom: 10px">
+<em class="makeVisible" style="display:none; font-size: 95%"><?php $this->msg('coll-drag_and_drop') ?></em>
+</div>
+
+<ul id="collectionList" style="list-style: none; margin-left: 0;">
 <?php
 if (count($this->data['collection']['items']) == 0) {
 	$this->msg('coll-empty_collection');
@@ -214,6 +226,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 } ?>
 </ul>
 
+</div>
 
 <?php
 	}
