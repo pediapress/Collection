@@ -159,19 +159,20 @@ if (count($this->data['collection']['items']) == 0) {
 foreach($this->data['collection']['items'] as $index => $item) {
 	if ($item['type'] == 'article') { ?>
 	<li id="item-<?php echo $index ?>" class="article">
-		<a class="removeLink" onclick="return coll_remove_item(<?php echo $index ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'remove_item/', 'index=' . $index)) ?>" title="<?php $this->msg('coll-remove') ?>"><img src="<?php echo htmlspecialchars($mediapath . "cross.png") ?>" width="11" height="11" alt="<?php $this->msg('remove') ?>" /></a>
+		<a onclick="return coll_remove_item(<?php echo $index ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'remove_item/', 'index=' . $index)) ?>" title="<?php $this->msg('coll-remove') ?>"><img src="<?php echo htmlspecialchars($mediapath . "remove.png") ?>" width="10" height="10" alt="<?php $this->msg('remove') ?>" /></a>
 		<noscript>
 		<?php if ($index == 0) { ?>
-			<img class="moveUpDisabled" src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="11" height="11" alt="" />
+			<img src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="10" height="10" alt="" />
 		<?php } else { ?>
-			<a class="moveUpLink" onclick="return coll_move_item(<?php echo $index . ', -1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=-1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_up') ?>"><img src="<?php echo htmlspecialchars($mediapath . "up.png") ?>" width="11" height="11" alt="<?php $this->msg('coll-move_up') ?>" /></a>
+			<a onclick="return coll_move_item(<?php echo $index . ', -1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=-1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_up') ?>"><img src="<?php echo htmlspecialchars($mediapath . "up.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-move_up') ?>" /></a>
 		<?php }
 		if ($index == count($this->data['collection']['items']) - 1) { ?>
-			<img class="moveDownDisabled" src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="11" height="11" alt="" />
+			<img src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="10" height="10" alt="" />
 		<?php } else { ?>
-			<a class="moveDownLink" onclick="return coll_move_item(<?php echo $index . ', 1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_down') ?>"><img src="<?php echo htmlspecialchars($mediapath . "down.png") ?>" width="11" height="11" alt="<?php $this->msg('coll-move_down') ?>" /></a>
+			<a onclick="return coll_move_item(<?php echo $index . ', 1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_down') ?>"><img src="<?php echo htmlspecialchars($mediapath . "down.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-move_down') ?>" /></a>
 		<?php } ?>
 		</noscript>
+			<a href="<?php echo $url ?>" title="<?php $this->msg('coll-show') ?>"><img src="<?php echo htmlspecialchars($mediapath . "show.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-show') ?>" /></a>
 		<?php if ($item['revision'] && $item['revision'] != $item['latest']) {
 			$revision = '('. htmlspecialchars(wfMsg('coll-revision', $item['revision'])) . ')';
 			$url = $item['url'] . '?oldid=' . $item['revision'];
@@ -188,23 +189,23 @@ foreach($this->data['collection']['items'] as $index => $item) {
 		}
 		echo ' ' . $revision; ?>
 		</span>
-		<a class="articleLink" href="<?php echo $url ?>" style="margin-left:1em;">[<?php $this->msg('coll-show') ?>]</a>
 	</li>
 	<?php } else if ($item['type'] == 'chapter') { ?>
 	<li id="item-<?php echo $index ?>" class="chapter" style="margin-top:0.3em;">
-		<a class="removeLink" onclick="return coll_remove_item(<?php echo $index ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'remove_item/', 'index=' . $index)) ?>" title="<?php $this->msg('coll-remove') ?>"><img src="<?php echo htmlspecialchars($mediapath . "cross.png") ?>" width="11" height="11" alt="<?php $this->msg('coll-remove') ?>" /></a>
+		<a onclick="return coll_remove_item(<?php echo $index ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'remove_item/', 'index=' . $index)) ?>" title="<?php $this->msg('coll-remove') ?>"><img src="<?php echo htmlspecialchars($mediapath . "remove.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-remove') ?>" /></a>
 		<noscript>
 		<?php if ($index == 0) { ?>
-			<img class="moveUpDisabled" src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="11" height="11" alt="" />
+			<img src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="10" height="10" alt="" />
 		<?php } else { ?>
-			<a class="moveUpLink" onclick="return coll_move_item(<?php echo $index . ', -1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=-1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_up') ?>"><img src="<?php echo htmlspecialchars($mediapath . "up.png") ?>" width="11" height="11" alt="<?php $this->msg('coll-move_up') ?>" /></a>
+			<a onclick="return coll_move_item(<?php echo $index . ', -1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=-1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_up') ?>"><img src="<?php echo htmlspecialchars($mediapath . "up.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-move_up') ?>" /></a>
 		<?php }
 		if ($index == count($this->data['collection']['items']) - 1) { ?>
-			<img class="moveDownDisabled" src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="11" height="11" alt="" />
+			<img src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="10" height="10" alt="" />
 		<?php } else { ?>
-			<a class="moveDownLink" onclick="return coll_move_item(<?php echo $index . ', 1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_down') ?>"><img src="<?php echo htmlspecialchars($mediapath . "down.png") ?>" width="11" height="11" alt="<?php $this->msg('coll-move_down') ?>" /></a>
+			<a onclick="return coll_move_item(<?php echo $index . ', 1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_down') ?>"><img src="<?php echo htmlspecialchars($mediapath . "down.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-move_down') ?>" /></a>
 		<?php } ?>
 		</noscript>
+		<img src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="10" height="10" alt="" />
 		<strong class="chapterTitle" style="margin-left: 0.2em;"><?php echo htmlspecialchars($item['title']) ?></strong>
 		<a class="makeVisible" <?php if (!isset($this->data['is_ajax'])) { echo 'style="display:none"'; } ?> onclick="return coll_rename_chapter(<?php echo $index . ', \'' . $item['title'] . '\''; ?>)" href="javascript:void(0)">[<?php $this->msg('coll-rename') ?>]</a>
 	</li>
