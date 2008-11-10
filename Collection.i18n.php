@@ -51,6 +51,7 @@ See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more inf
 	'coll-download'                   => 'Download',
 	'coll-format_label'               => 'Format:',
 	'coll-remove'                     => 'Remove',
+	'coll-show'                       => 'Show',
 	'coll-move_to_top'                => 'Move to top',
 	'coll-move_up'                    => 'Move up',
 	'coll-move_down'                  => 'Move down',
