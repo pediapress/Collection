@@ -88,26 +88,34 @@ Installation and Configuration of the Collection Extension
   
   *$wgCollectionFormats*
    An array mapping names of mwlib_ writers to the name of the produced format.
-   The default value is:
+   The default value is::
    
        array(
            'rl' => 'PDF',
        )
     
    i.e. only PDF enabled. If you want to add OpenDocument Text in addition to
-   PDF you can set $wgCollectionFormats to something like this:
+   PDF you can set $wgCollectionFormats to something like this::
    
        $wgCollectionFormats = array(
            'rl' => 'PDF',
            'odf' => 'ODT',
        );
    
+   On the public render server tools.pediapress.com, currently the following
+   writers are available:
+   
+   * docbook: DocBook XML
+   * odf: OpenDocument Text
+   * rl: PDF
+   * xhtml: XHTML 1.0 Transitional
+   
    See mwlib_ for possible other writers.
   
   *$wgCollectionArticleNamespaces (array)*
    List of namespace numbers for pages which can be added to a collection.
    Category pages (NS_CATEGORY) are always an exception (all articles in a
-   category are added, not the category page itself). Default is:
+   category are added, not the category page itself). Default is::
    
      array(
      	NS_MAIN,
