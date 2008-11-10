@@ -75,6 +75,16 @@ function getMWServeStatus() {
 
 /******************************************************************************/
 
+function clear_collection() {
+	if (confirm(gettext('#clearCollectionConfirmText'))) {
+		sajax_request_type = "POST";
+		sajax_do_call('wfAjaxCollectionClear',
+			[],
+			refresh_list);
+	}
+	return false;
+}
+
 function create_chapter() {
 	var name = prompt(gettext('#newChapterText'));
 	if (name) {
@@ -164,6 +174,7 @@ $(function() {
 		window.coll_create_chapter = create_chapter;
 		window.coll_remove_item = remove_item;
 		window.coll_rename_chapter = rename_chapter;
+		window.coll_clear_collection = clear_collection;
 		update_save_button();
 		make_sortable();
 		$('#personalCollTitle').keyup(update_save_button);

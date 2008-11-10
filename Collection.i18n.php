@@ -62,6 +62,7 @@ See the [[{{MediaWiki:Coll-helppage}}|help page about collections]] for more inf
 	'coll-create_chapter'             => 'Create new chapter',
 	'coll-sort_alphabetically'        => 'Sort pages alphabetically',
 	'coll-clear_collection'           => 'Clear collection',
+	'coll-clear_collection_confirm'   => 'Do you really want to completely clear your collection?',
 	'coll-rename'                     => 'Rename',
 	'coll-new_chapter'                => 'Enter name for new chapter',
 	'coll-rename_chapter'             => 'Enter new name for chapter',

@@ -128,6 +128,7 @@ $listTemplate->execute();
 <div style="display:none">
 	<span id="newChapterText"><?php $this->msg('coll-new_chapter') ?></span>
 	<span id="renameChapterText"><?php $this->msg('coll-rename_chapter') ?></span>
+	<span id="clearCollectionConfirmText"><?php $this->msg('coll-clear_collection_confirm') ?></span>
 </div>
 
 <?php
@@ -148,10 +149,10 @@ class CollectionListTemplate extends QuickTemplate {
 <a class="makeVisible" <?php if (!isset($this->data['is_ajax'])) { echo 'style="display:none"'; } ?> onclick="return coll_create_chapter()" href="javascript:void(0);">[<?php $this->msg('coll-create_chapter') ?>]</a>
 <?php if (count($this->data['collection']['items']) > 0) { ?>
 <span id="sortSpan"><a id="sortLink" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'sort_items/')) ?>">[<?php $this->msg('coll-sort_alphabetically') ?>]</a></span>
-<span id="clearSpan"><a id="clearLink" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'clear_collection/')) ?>">[<?php $this->msg('coll-clear_collection') ?>]</a></span>
+<span id="clearSpan"><a id="clearLink" onclick="return coll_clear_collection()" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'clear_collection/')) ?>">[<?php $this->msg('coll-clear_collection') ?>]</a></span>
 <?php } ?>
 
-<ul id="collectionList" style="list-style:none">
+<ul id="collectionList" style="list-style: none; padding-top: 0.4em;">
 <?php
 if (count($this->data['collection']['items']) == 0) {
 	$this->msg('coll-empty_collection');
@@ -181,7 +182,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 			$url = $item['url'];
 		}
 		?>
-		<span class="title" style="margin-left: 1em;">
+		<span class="title" style="margin-left: 1em; cursor: move;">
 		<?php if ($item['displaytitle']) {
 			echo htmlspecialchars($item['displaytitle']);
 		} else {
@@ -206,7 +207,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 		<?php } ?>
 		</noscript>
 		<img src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="10" height="10" alt="" />
-		<strong class="chapterTitle" style="margin-left: 0.2em;"><?php echo htmlspecialchars($item['title']) ?></strong>
+		<strong class="title" style="margin-left: 0.2em; cursor: move;"><?php echo htmlspecialchars($item['title']) ?></strong>
 		<a class="makeVisible" <?php if (!isset($this->data['is_ajax'])) { echo 'style="display:none"'; } ?> onclick="return coll_rename_chapter(<?php echo $index . ', \'' . $item['title'] . '\''; ?>)" href="javascript:void(0)">[<?php $this->msg('coll-rename') ?>]</a>
 	</li>
 	<?php }

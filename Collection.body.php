@@ -1150,7 +1150,13 @@ EOS
 					'Collection',
 					'clear_collection/',
 				  $params ) );
-				$out .= "<li><a href=\"$href\" rel=\"nofollow\">$clearCollection</a></li>";
+				$msg = htmlspecialchars( wfMsg( 'coll-clear_collection_confirm' ) );
+				$out .= <<<EOS
+<li>
+	<a href=\"$href\" onclick="if (confirm('$msg')) collectionCall('Clear', []); return false;" rel=\"nofollow\">$clearCollection</a>
+</li>
+EOS
+				;
 			}
 			
 			$helpCollections = wfMsgHtml( 'coll-help_collections' );
