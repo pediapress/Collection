@@ -56,20 +56,6 @@ $listTemplate->execute();
 
 <div style="width: 47%; float: left">
 
-	<div class="toccolours" style="margin-bottom: 10px; padding: 10px">
-		<h2><span class="mw-headline"><?php $this->msg('coll-book_title') ?></span></h2>
-		<p><?php $this->msg('coll-book_text') ?></p>
-		<div id="ppList">
-			<?php foreach ($this->data['podpartners'] as $partner => $partnerData) { ?>
-			<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'post_zip/')) ?>" method="get">
-				<input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
-				<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>"/>
-				<a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?>&nbsp;<img src="<?php echo htmlspecialchars($partnerData['logourl']) ?>" alt="<?php echo htmlspecialchars($partnerData['name']) ?>"/></a>
-			</form>
-			<?php } ?>
-		</div>
-	</div>
-
 	<div style="margin-bottom: 10px; padding: 10px" class="toccolours">
 		<h2><span class="mw-headline"><?php $this->msg('coll-book_title') ?></span></h2>
 		<p><?php $this->msg('coll-book_text') ?></p>
