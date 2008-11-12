@@ -211,9 +211,9 @@ class Collection extends SpecialPage {
 		
 		$this->setHeaders();
 		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );		
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.ui.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgStyleVersion&amp;$wgCollectionVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.ui.js?$wgStyleVersion&amp;$wgCollectionVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&amp;$wgCollectionVersion\"></script>" );
 		
 		$template = new CollectionPageTemplate();
 		$template->set( 'collection', $_SESSION['wsCollection'] );
@@ -765,8 +765,8 @@ class Collection extends SpecialPage {
 			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer']) . '";' );
 			$wgOut->addInlineScript( 'var collection_rendering = true;' );
 			$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );		
-			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
-			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&$wgCollectionVersion\"></script>" );
+			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgStyleVersion&amp;$wgCollectionVersion\"></script>" );
+			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&amp;$wgCollectionVersion\"></script>" );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
 
 			if ( isset($response['status']['status'] ) && $response['status']['status'] ) {
@@ -1153,7 +1153,7 @@ EOS
 				$msg = htmlspecialchars( wfMsg( 'coll-clear_collection_confirm' ) );
 				$out .= <<<EOS
 <li>
-	<a href=\"$href\" onclick="if (confirm('$msg')) collectionCall('Clear', []); return false;" rel=\"nofollow\">$clearCollection</a>
+	<a href="$href" onclick="if (confirm('$msg')) collectionCall('Clear', []); return false;" rel="nofollow">$clearCollection</a>
 </li>
 EOS
 				;
@@ -1167,6 +1167,7 @@ EOS
 			;
 		}
 		
+		$out .= "</ul>";
 		return $out;
 	}
 	
