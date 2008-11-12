@@ -181,7 +181,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 		?>
 		<a href="<?php echo $url ?>" title="<?php $this->msg('coll-show') ?>"><img src="<?php echo htmlspecialchars($mediapath . "show.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-show') ?>" /></a>
 		<span class="title" style="margin-left: 1em; cursor: move;">
-		<?php if ($item['displaytitle']) {
+		<?php if (isset($item['displaytitle']) && $item['displaytitle'] != '') {
 			echo htmlspecialchars($item['displaytitle']);
 		} else {
 			echo htmlspecialchars($item['title']);
