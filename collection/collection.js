@@ -156,6 +156,7 @@ function make_sortable() {
 			set_sorting($('#collectionList').sortable('serialize'));
 		}
 	});
+	$('#collectionList .sortableitem').css('cursor', 'move');
 }
 
 function refresh_list(xhr) {

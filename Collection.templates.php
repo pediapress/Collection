@@ -180,7 +180,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 		}
 		?>
 		<a href="<?php echo $url ?>" title="<?php $this->msg('coll-show') ?>"><img src="<?php echo htmlspecialchars($mediapath . "show.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-show') ?>" /></a>
-		<span class="title" style="margin-left: 1em; cursor: move;">
+		<span class="title sortableitem" style="margin-left: 1em;">
 		<?php if (isset($item['displaytitle']) && $item['displaytitle'] != '') {
 			echo htmlspecialchars($item['displaytitle']);
 		} else {
@@ -205,7 +205,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 		<?php } ?>
 		</noscript>
 		<img src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="10" height="10" alt="" />
-		<strong class="title" style="margin-left: 0.2em; cursor: move;"><?php echo htmlspecialchars($item['title']) ?></strong>
+		<strong class="title sortableitem" style="margin-left: 0.2em;"><?php echo htmlspecialchars($item['title']) ?></strong>
 		<a class="makeVisible" <?php if (!isset($this->data['is_ajax'])) { echo 'style="display:none"'; } ?> onclick="return coll_rename_chapter(<?php echo $index . ', \'' . $item['title'] . '\''; ?>)" href="javascript:void(0)">[<?php $this->msg('coll-rename') ?>]</a>
 	</li>
 	<?php }
