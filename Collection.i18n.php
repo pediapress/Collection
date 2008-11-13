@@ -88,7 +88,6 @@ Overwrite?',
 Do you want it to be replaced with your collection?',
 	'coll-yes'                        => 'Yes',
 	'coll-no'                         => 'No',
-	'coll-disable_collection_text'    => '<a href="$1">Click here</a> to stop using collections for now.',
 	'coll-load_overwrite_text'        => 'You already have some pages in your collection.
 Do you want to overwrite your current collection, append the new content, or cancel loading this collection?',
 	'coll-overwrite'                  => 'Overwrite',
