@@ -170,6 +170,9 @@ function refresh_list(xhr) {
 	if ($('#emptyCollection').get(0)) {
 		$('#downloadButton').attr('disabled', 'disabled');
 		$('input.order').attr('disabled', 'disabled');
+	} else {
+		$('#downloadButton').attr('disabled', '');
+		$('input.order').attr('disabled', '');
 	}
 	update_save_button();
 }
