@@ -204,16 +204,16 @@ class Collection extends SpecialPage {
 	function renderSpecialPage() {
 		global $wgCollectionFormats;
 		global $wgCollectionVersion;
+		global $wgCollectionStyleVersion;
 		global $wgJsMimeType;
 		global $wgScriptPath;
 		global $wgOut;
-		global $wgStyleVersion;
-		
+
 		$this->setHeaders();
 		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );		
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgStyleVersion&amp;$wgCollectionVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.ui.js?$wgStyleVersion&amp;$wgCollectionVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&amp;$wgCollectionVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.ui.js?$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgCollectionStyleVersion\"></script>" );
 		
 		$template = new CollectionPageTemplate();
 		$template->set( 'collection', $_SESSION['wsCollection'] );
@@ -736,13 +736,13 @@ class Collection extends SpecialPage {
 	
 	function renderRenderingPage() {
 		global $wgCollectionVersion;
+		global $wgCollectionStyleVersion;
 		global $wgJsMimeType;
 		global $wgLang;
 		global $wgOut;
 		global $wgRequest;
 		global $wgScriptPath;
 		global $wgServer;
-		global $wgStyleVersion;
 
 		$response = self::mwServeCommand( 'render_status', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
@@ -768,8 +768,8 @@ class Collection extends SpecialPage {
 			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer']) . '";' );
 			$wgOut->addInlineScript( 'var collection_rendering = true;' );
 			$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );		
-			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgStyleVersion&amp;$wgCollectionVersion\"></script>" );
-			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgStyleVersion&amp;$wgCollectionVersion\"></script>" );
+			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgCollectionStyleVersion\"></script>" );
+			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgCollectionStyleVersion\"></script>" );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
 
 			if ( isset($response['status']['status'] ) && $response['status']['status'] ) {
