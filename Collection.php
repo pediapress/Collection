@@ -37,6 +37,9 @@ require_once( "$IP/extensions/Collection/Version.php" );
 
 # Configuration:
 
+/** Bump the version number every time you change any of the JavaScript files */
+$wgCollectionStyleVersion = 1;
+
 /** URL of mw-serve render server */
 $wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
 
@@ -95,6 +98,8 @@ $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Collection',
 	'version' => '1.1',
 	'author' => 'PediaPress GmbH',
+	'svn-date' => '$LastChangedDate$',
+	'svn-revision' => '$LastChangedRevision$',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Collection',
 	'description' => 'Collect articles, generate PDFs',
 	'descriptionmsg' => 'coll-desc',
