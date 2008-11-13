@@ -131,6 +131,10 @@ function update_save_button() {
 	if (!$('#saveButton').get(0)) {
 		return;
 	}
+	if ($('#emptyCollection').get(0)) {
+		$('#saveButton').attr('disabled', 'disabled');
+		return;
+	}
 	if ($('#personalCollType:checked').val()) {
 		$('#personalCollTitle').attr('disabled', '');
 		$('#communityCollTitle').attr('disabled', 'disabled');
@@ -163,6 +167,11 @@ function refresh_list(xhr) {
 	$('#collectionListContainer').html(xhr.responseText);
 	$('.makeVisible').css('display', 'inline');
 	make_sortable();
+	if ($('#emptyCollection').get(0)) {
+		$('#downloadButton').attr('disabled', 'disabled');
+		$('input.order').attr('disabled', 'disabled');
+	}
+	update_save_button();
 }
 
 $(function() {

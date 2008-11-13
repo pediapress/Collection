@@ -63,7 +63,7 @@ $listTemplate->execute();
 			<?php foreach ($this->data['podpartners'] as $partner => $partnerData) { ?>
 			<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'post_zip/')) ?>" method="get">
 				<input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
-				<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>"/>
+				<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>" class="order"/>
 				<a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?>&nbsp;<img src="<?php echo htmlspecialchars($partnerData['logourl']) ?>" alt="<?php echo htmlspecialchars($partnerData['name']) ?>"/></a>
 			</form>
 			<?php } ?>
@@ -146,15 +146,17 @@ class CollectionListTemplate extends QuickTemplate {
 
 <div style="padding: 10px 20px; border: 1px solid rgb(170, 170, 170)">
 
+<?php
+if (count($this->data['collection']['items']) == 0) { ?>
+<em id="emptyCollection"><?php $this->msg('coll-empty_collection'); ?></em>
+<?php } else { ?>
 <div style="text-align: center; margin-bottom: 10px">
 <em class="makeVisible" style="display:none; font-size: 95%"><?php $this->msg('coll-drag_and_drop') ?></em>
 </div>
+<?php }?>
 
 <ul id="collectionList" style="list-style: none; margin-left: 0;">
 <?php
-if (count($this->data['collection']['items']) == 0) {
-	$this->msg('coll-empty_collection');
-}
 foreach($this->data['collection']['items'] as $index => $item) {
 	if ($item['type'] == 'article') { ?>
 	<li id="item-<?php echo $index ?>" class="article">
