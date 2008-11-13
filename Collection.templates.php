@@ -58,7 +58,7 @@ $listTemplate->execute();
 
 	<div style="margin-bottom: 10px; padding: 10px" class="toccolours">
 		<h2><span class="mw-headline"><?php $this->msg('coll-book_title') ?></span></h2>
-		<p><?php $this->msg('coll-book_text') ?></p>
+		<?php $this->msgWiki('coll-book_text') ?>
 		<div id="ppList">
 			<?php foreach ($this->data['podpartners'] as $partner => $partnerData) { ?>
 			<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'post_zip/')) ?>" method="get">
@@ -72,7 +72,7 @@ $listTemplate->execute();
 
 	<div style="margin-bottom: 10px; padding: 10px" class="toccolours">
 		<h2><span class="mw-headline"><?php $this->msg('coll-download_title') ?></span></h2>
-		<p><?php $this->msg('coll-download_text') ?></p>
+		<?php $this->msgWiki('coll-download_text') ?>
 		<form id="downloadForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'render/')) ?>" method="post">
 			<?php if (count($this->data['formats']) == 1) {
 				$writer = array_rand($this->data['formats']);
@@ -96,7 +96,7 @@ $listTemplate->execute();
 	<div style="margin-bottom: 10px; padding: 10px" class="toccolours">
 		<h2><span class="mw-headline"><?php $this->msg('coll-save_collection_title') ?></span></h2>
 		<?php if ($GLOBALS['wgUser']->isLoggedIn()) { ?>
-		<p><?php $this->msg('coll-save_collection_text') ?></p>
+		<?php $this->msgWiki('coll-save_collection_text') ?>
 			<form id="saveForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'save_collection/')) ?>" method="post">
 				<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked"></input>
 				<label for="personalCollType"><?php $this->msg('coll-personal_collection_label') ?></label>
@@ -228,7 +228,7 @@ class CollectionLoadOverwriteTemplate extends QuickTemplate {
 	function execute() {
 ?>
 
-<p><?php $this->msg('coll-load_overwrite_text'); ?></p>
+<?php $this->msgWiki('coll-load_overwrite_text'); ?>
 
 <form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'load_collection/')) ?>" method="post">
 	<input name="overwrite" type="submit" value="<?php $this->msg('coll-overwrite') ?>"></input>
