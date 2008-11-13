@@ -284,6 +284,9 @@ class Collection extends SpecialPage {
 	
 	static function renameChapter( $index, $name ) {
 		$collection = $_SESSION['wsCollection'];
+		if ( $collection['items'][$index]['type'] != 'chapter ') {
+			return;
+		}
 		$collection['items'][$index]['title'] = $name;
 		$_SESSION['wsCollection'] = $collection;
 		self::touchSession();
