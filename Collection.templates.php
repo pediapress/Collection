@@ -63,7 +63,7 @@ $listTemplate->execute();
 			<?php foreach ($this->data['podpartners'] as $partner => $partnerData) { ?>
 			<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'post_zip/')) ?>" method="get">
 				<input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
-				<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>" class="order"/>
+				<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>" class="order" <?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
 				<a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?>&nbsp;<img src="<?php echo htmlspecialchars($partnerData['logourl']) ?>" alt="<?php echo htmlspecialchars($partnerData['name']) ?>"/></a>
 			</form>
 			<?php } ?>
@@ -89,7 +89,7 @@ $listTemplate->execute();
 				<?php	} ?>
 			</select>
 			<?php } ?>
-			<input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>" />
+			<input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
 		</form>
 	</div>
 
@@ -106,7 +106,7 @@ $listTemplate->execute();
 				<label for="communityCollType"><?php $this->msg('coll-community_collection_label') ?></label>
 				<label for="communityCollTitle"><?php echo htmlspecialchars(Title::makeTitle($GLOBALS['wgCommunityCollectionNamespace'], wfMsgForContent('coll-collections'))->getPrefixedText() . '/') ?></label>
 				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled"></input><br />
-				<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>"></input>
+				<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?>></input>
 			</form>
 
 		<?php } else {
