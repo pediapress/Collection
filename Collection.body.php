@@ -1119,7 +1119,7 @@ EOS
 					  $params ) );
 					$out .= <<<EOS
 <li>
-	<a href="$href" onclick="collectionCall('AddArticle', [wgNamespaceNumber, wgTitle, 0]); return false;" rel="nofollow">$addArticle</a>
+	<a href="$href" onclick="collectionCall('AddArticle', [wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow">$addArticle</a>
 </li>
 EOS
 					;
@@ -1130,7 +1130,7 @@ EOS
 					  $params ) );
 					$out .= <<<EOS
 <li>
-	<a href="$href" onclick="collectionCall('RemoveArticle', [wgNamespaceNumber, wgTitle, 0]); return false;" rel="nofollow">$removeArticle</a>
+	<a href="$href" onclick="collectionCall('RemoveArticle', [wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow">$removeArticle</a>
 </li>
 EOS
 					;
