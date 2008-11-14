@@ -133,6 +133,11 @@ class Collection extends SpecialPage {
 			}
 			$this->renderLoadOverwritePage( $title );
 			return;
+		} else if ( $par == 'order_collection/' ) {
+			$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
+			$collection = $this->loadCollection( $title );
+			$partner = $wgRequest->getVal( 'partner', 'pediapress' );
+			return $this->postZIP( $collection, $partner );
 		} else if ( $par == 'save_collection/' ) {
 			$collTitle = $wgRequest->getVal( 'colltitle' );
 			if ( $wgRequest->getVal( 'overwrite' ) && !empty( $collTitle ) ) {;
@@ -192,8 +197,8 @@ class Collection extends SpecialPage {
 				$this->renderCollection( $collection, $title, $wgRequest->getVal( 'writer', 'rl' ) );
 			}
 		} else if ( $par == 'post_zip/' ) {
-			$partner = $wgRequest->getVal( 'partner', '' );
-			return $this->postZIP( $partner );
+			$partner = $wgRequest->getVal( 'partner', 'pediapress' );
+			return $this->postZIP( $_SESSION['wsCollection'], $partner );
 		} else if ( $par == '' ){
 			$this->renderSpecialPage();			
 		} else {
@@ -850,7 +855,7 @@ class Collection extends SpecialPage {
 		$this->renderCollection( array( 'items' => array( $article ) ), $title, $writer );
 	}
 
-	function postZIP( $partner ) {
+	function postZIP( $collection, $partner ) {
 		global $wgServer;
 		global $wgScriptPath;
 		global $wgScriptExtension;
@@ -866,7 +871,7 @@ class Collection extends SpecialPage {
 		}
 
 		$response = self::mwServeCommand( 'zip_post', array(
-			'metabook' => $this->buildJSONCollection( $_SESSION['wsCollection'] ),
+			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'script_extension' => $wgScriptExtension,
 			'template_blacklist' => $wgPDFTemplateBlacklist,
