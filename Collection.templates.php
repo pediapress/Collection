@@ -78,7 +78,7 @@ $listTemplate->execute();
 				$writer = array_rand($this->data['formats']);
 				$buttonLabel = wfMsgHtml('coll-download_as', htmlspecialchars($this->data['formats'][$writer]));
 			?>
-				<input type="hidden" name="writer" value="<?php echo htmlspecialchars($writer) ?>"></input>
+				<input type="hidden" name="writer" value="<?php echo htmlspecialchars($writer) ?>" />
 			<?php } else {
 				$buttonLabel = wfMsgHtml('coll-download');
 			?>
@@ -98,15 +98,15 @@ $listTemplate->execute();
 		<?php if ($GLOBALS['wgUser']->isLoggedIn()) { ?>
 		<?php $this->msgWiki('coll-save_collection_text') ?>
 			<form id="saveForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'save_collection/')) ?>" method="post">
-				<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked"></input>
+				<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked" />
 				<label for="personalCollType"><?php $this->msg('coll-personal_collection_label') ?></label>
 				<label for="personalCollTitle"><?php echo htmlspecialchars($GLOBALS['wgUser']->getUserPage()->getPrefixedText() . '/' . wfMsgForContent('coll-collections') . '/') ?></label>
-				<input id="personalCollTitle" type="text" name="pcollname"></input><br />
-				<input id="communityCollType" type="radio" name="colltype" value="community"></input>
+				<input id="personalCollTitle" type="text" name="pcollname" /><br />
+				<input id="communityCollType" type="radio" name="colltype" value="community" />
 				<label for="communityCollType"><?php $this->msg('coll-community_collection_label') ?></label>
 				<label for="communityCollTitle"><?php echo htmlspecialchars(Title::makeTitle($GLOBALS['wgCommunityCollectionNamespace'], wfMsgForContent('coll-collections'))->getPrefixedText() . '/') ?></label>
-				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled"></input><br />
-				<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?>></input>
+				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled" /><br />
+				<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
 			</form>
 
 		<?php } else {
@@ -231,10 +231,10 @@ class CollectionLoadOverwriteTemplate extends QuickTemplate {
 <?php $this->msgWiki('coll-load_overwrite_text'); ?>
 
 <form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'load_collection/')) ?>" method="post">
-	<input name="overwrite" type="submit" value="<?php $this->msg('coll-overwrite') ?>"></input>
-	<input name="append" type="submit" value="<?php $this->msg('coll-append') ?>"></input>
-	<input name="cancel" type="submit" value="<?php $this->msg('coll-cancel') ?>"></input>
-	<input name="colltitle" type="hidden" value="<?php echo htmlspecialchars($this->data['title']->getPrefixedText()) ?>"></input>
+	<input name="overwrite" type="submit" value="<?php $this->msg('coll-overwrite') ?>" />
+	<input name="append" type="submit" value="<?php $this->msg('coll-append') ?>" />
+	<input name="cancel" type="submit" value="<?php $this->msg('coll-cancel') ?>" />
+	<input name="colltitle" type="hidden" value="<?php echo htmlspecialchars($this->data['title']->getPrefixedText()) ?>" />
 </form>
 
 <?php
@@ -254,9 +254,9 @@ class CollectionSaveOverwriteTemplate extends QuickTemplate {
 <p><?php echo $GLOBALS['wgParser']->parse(wfMsgNoTrans('coll-overwrite_text', $this->data['title']->getPrefixedText()), $GLOBALS['wgTitle'], $GLOBALS['wgOut']->parserOptions(), true)->getText() ?></p>
 
 <form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'save_collection/')) ?>" method="post">
-	<input name="overwrite" type="submit" value="<?php $this->msg('coll-yes') ?>"></input>
-	<input name="abort" type="submit" value="<?php $this->msg('coll-no') ?>"></input>
-	<input name="colltitle" type="hidden" value="<?php echo htmlspecialchars($this->data['title']->getPrefixedText()) ?>"></input>
+	<input name="overwrite" type="submit" value="<?php $this->msg('coll-yes') ?>" />
+	<input name="abort" type="submit" value="<?php $this->msg('coll-no') ?>" />
+	<input name="colltitle" type="hidden" value="<?php echo htmlspecialchars($this->data['title']->getPrefixedText()) ?>" />
 </form>
 
 <?php
