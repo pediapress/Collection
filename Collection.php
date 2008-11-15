@@ -232,7 +232,7 @@ $wgAjaxExportList[] = 'wfAjaxCollectionSetTitles';
 
 function wfAjaxCollectionSetSorting( $items_string ) {
 	$parsed = array();
-	parse_str( $items_string, &$parsed );
+	parse_str( $items_string, $parsed );
 	$items = array();
 	foreach ( $parsed['item'] as $s ) {
 		if ( is_numeric( $s ) ) {
