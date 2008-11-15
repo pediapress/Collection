@@ -20,16 +20,16 @@ class CollectionPageTemplate extends QuickTemplate {
 
 <h2><span class="mw-headline"><?php $this->msg('coll-your_book') ?></span></h2>
 
-<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'set_titles/')) ?>" method="post">
-	<table style="width: 80%" align="center">
+<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'set_titles/')) ?>" method="post" id="mw-collection-title-form">
+	<table id="mw-collection-title-table" style="width: 80%" align="center">
 		<tbody>
 			<tr>
-				<th width="1%" style="text-align: right"><label for="titleInput"><?php $this->msg('coll-title') ?></label></th>
-				<td><input id="titleInput" type="text" name="collectionTitle" value="<?php echo htmlspecialchars($this->data['collection']['title']) ?>" style="width: 98%" /></td>
+				<td class="mw-label"><label for="titleInput"><?php $this->msg('coll-title') ?></label></td>
+				<td class="mw-input"><input id="titleInput" type="text" name="collectionTitle" value="<?php echo htmlspecialchars($this->data['collection']['title']) ?>" /></td>
 			</tr>
 			<tr>
-				<th style="text-align: right"><label for="subtitleInput"><?php $this->msg('coll-subtitle') ?></label></th>
-				<td><input id="subtitleInput" type="text" name="collectionSubtitle" value="<?php echo htmlspecialchars($this->data['collection']['subtitle']) ?>" style="width: 98%" /></td>
+				<td class="mw-label"><label for="subtitleInput"><?php $this->msg('coll-subtitle') ?></label></td>
+				<td class="mw-input"><input id="subtitleInput" type="text" name="collectionSubtitle" value="<?php echo htmlspecialchars($this->data['collection']['subtitle']) ?>" /></td>
 			</tr>
 		</tbody>
 	</table>
