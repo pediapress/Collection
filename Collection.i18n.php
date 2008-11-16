@@ -684,7 +684,7 @@ $messages['de'] = array(
 	'coll-load_collection' => 'Sammlung laden',
 	'coll-show_collection' => 'Sammlung zeigen',
 	'coll-help_collections' => 'Hilfe zu Sammlungen',
-	'coll-n_pages' => '$1 {{PLURAL:$1|Seite|Seite}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|Seite|Seiten}}',
 	'coll-unknown_subpage_title' => 'Unbekannte Unterseite',
 	'coll-unknown_subpage_text' => 'Diese Unterseite der [[Special:Collection|Sammlung]] existiert nicht',
 	'coll-download_as' => 'Als $1 herunterladen',
@@ -746,7 +746,7 @@ Möchtest du die aktuelle Sammlung überschreiben, die neuen Seiten anhängen od
 	'coll-rendering_title' => 'Beim Erstellen',
 	'coll-rendering_text' => '<p><strong>Bitte habe Geduld, während das Dokument erstellt wird.</strong></p>
 
-<p><strong>Fortschritt:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+<p><strong>Fortschritt:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
 
 <p>Diese Seite sollte sich alle paar Sekunden von selbst aktualisieren.
 Wenn das jedoch nicht geschieht, drücke bitte den „Aktualisieren“-Knopf (meist F5) deines Browsers.</p>',
@@ -863,13 +863,14 @@ $messages['eo'] = array(
 	'coll-help_collections' => 'Helpo pri kolektoj',
 	'coll-n_pages' => '$1 {{PLURAL:$1|paĝo|paĝoj}}',
 	'coll-unknown_subpage_title' => 'Nekonata subpaĝo',
+	'coll-unknown_subpage_text' => 'Ĉi tiu subpaĝo de [[Special:Collection|Kolekto]] ne ekzistas',
 	'coll-download_as' => 'Elŝuti kiel $1',
 	'coll-noscript_text' => '<h1>JavaScript-o estas deviga!<h1>
 <strong>Via retumilo ne subtenas JavaScript-on aŭ JavaScript-o estis malŝaltita.
 Ĉi tiu paĝo ne funkcius bone, ĝis JavaScript-o estas ŝaltita.</strong>',
 	'coll-helppage' => 'Help:Kolektoj',
 	'coll-your_book' => 'Via libro',
-	'coll-download_title' => 'Alŝuti vian libron',
+	'coll-download_title' => 'Elŝuti',
 	'coll-download_text' => 'Por elŝuti malkonektan version, elektu formato kaj klaku la butonon.',
 	'coll-download' => 'Elŝuto',
 	'coll-format_label' => 'Formato:',
@@ -882,8 +883,8 @@ $messages['eo'] = array(
 	'coll-title' => 'Titolo:',
 	'coll-subtitle' => 'Subtitolo:',
 	'coll-contents' => 'Enhavaĵoj',
-	'coll-create_chapter' => 'Kreu novan ĉapitron',
-	'coll-sort_alphabetically' => 'Ordigi paĝojn laŭ alfabeto',
+	'coll-create_chapter' => 'Krei ĉapitron',
+	'coll-sort_alphabetically' => 'Ordigi laŭ alfabeto',
 	'coll-clear_collection' => 'Forviŝi kolekton',
 	'coll-rename' => 'Alinomigi',
 	'coll-new_chapter' => 'Enigi nomon por nova ĉapitro',
@@ -898,6 +899,7 @@ $messages['eo'] = array(
 	'coll-empty_collection' => 'Malplena kolekto',
 	'coll-revision' => 'Revizio: $1',
 	'coll-save_collection_title' => 'Konservi kaj permesigi vian kolekton',
+	'coll-save_collection_text' => 'Elektu lokon:',
 	'coll-personal_collection_label' => 'Propra kolekto:',
 	'coll-community_collection_label' => 'Komuna kolekto:',
 	'coll-save_collection' => 'Konservu Kolekton',
@@ -915,20 +917,28 @@ $messages['eo'] = array(
 	'coll-limit_exceeded_text' => 'Via paĝa kolekto estas tro granda.
 Neniom pluaj paĝoj ne povas esti aldonitaj.',
 	'coll-rendering_title' => 'Generante',
-	'coll-rendering_text' => "'''Bonvolu atendi dum la dokumento generiĝis.'''
+	'coll-rendering_text' => '<p><strong>Bonvolu atendi dum la dokumento generiĝis.</strong></p>
 
-'''Finita:''' $1% $2
+<p><strong>Progreso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Ĉi tiu paĝo aŭtomatike refreŝigu kelksekunde.
-Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.",
+<p>Ĉi tiu paĝo aŭtomatike refreŝigu kelksekunde.
+Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.</p>',
 	'coll-rendering_status' => "'''Statuso:''' $1",
 	'coll-rendering_article' => '  (vikipaĝo: $1)',
 	'coll-rendering_page' => '  (paĝo: $1)',
 	'coll-rendering_finished_title' => 'Generado finiĝis.',
+	'coll-rendering_finished_text' => "'''La dokumento estis generita.'''
+'''[$1 Klaku ĉi tie]''' por elŝuti ĝin al via komputilo.
+
+Notoj:
+* Ĉu la eligo ne plaĉus al vi? Vidu [[{{MediaWiki:Coll-helppage}}|la helpan paĝon pri kolektoj]] por fojoj por plibonigi ĝin.",
 	'coll-notfound_title' => 'Kolekto Ne Trovita',
 	'coll-notfound_text' => 'Ne eblas trovi kolekto-paĝon.',
+	'coll-excluded-templates' => '* Ŝablonoj en kategorio [[:Category:$1|$1]] estis ekskluzivita.',
+	'coll-blacklisted-templates' => '* Ŝablonoj en nigralisto [[:$1]] estis malebligitaj.',
 	'coll-return_to_collection' => '<p>Reiru al <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Mendi kiel presitan libron',
+	'coll-book_text' => 'Akiri presitan libron de nia ek-eldoneja partnero:',
 	'coll-order_from_pp' => 'Mendi libron de $1',
 	'coll-about_pp' => 'Pri $1',
 	'coll-license' => 'Licenco',
@@ -1566,7 +1576,7 @@ $messages['hr'] = array(
 	'coll-intro_text' => 'Napravite i uređujte svoj osobni odabir wiki stranica.<br />Vidi [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više obavijesti.',
 	'coll-helppage' => 'Pomoć:Zbirke',
 	'coll-your_book' => 'Vaša knjiga',
-	'coll-download_title' => 'Preuzmi svoju knjigu',
+	'coll-download_title' => 'Preuzmi',
 	'coll-download_text' => 'Za preuzimanje izvanmrežne inačice, odaberite format i kliknite tipku.',
 	'coll-download' => 'Preuzmi',
 	'coll-format_label' => 'Format:',
@@ -1726,12 +1736,113 @@ Skontaktuj prošu swojeho administratora MediaWiki.',
 );
 
 /** Hungarian (Magyar)
+ * @author Bdamokos
  * @author Dani
  */
 $messages['hu'] = array(
+	'coll-desc' => '[[Special:Collection|Gyűjts oldalakat]], készíts PDF-eket',
+	'coll-collection' => 'Gyűjtemény',
+	'coll-collections' => 'Gyűjtemények',
+	'coll-portlet_title' => 'Készíts egy könyvet',
+	'coll-add_page' => 'Wiki oldal hozzáadása',
+	'coll-remove_page' => 'Wiki oldal eltávolítása',
+	'coll-add_category' => 'Kategória hozzáadása',
+	'coll-load_collection' => 'Gyűjtemény betöltése',
+	'coll-show_collection' => 'Gyűjtemény mutatása',
+	'coll-help_collections' => 'Gyűjtemények súgó',
+	'coll-n_pages' => '$1 oldal',
+	'coll-unknown_subpage_title' => 'Ismeretlen aloldal',
+	'coll-unknown_subpage_text' => 'A [[Special:Collection|Gyűjtemény]] ezen aloldala nem létezik.',
+	'coll-download_as' => 'Letöltés mint $1',
+	'coll-noscript_text' => '<h1>JavaScript szüséges!</h1>
+<strong>A böngésződ nem támogatja a JavaScriptet, vagy az ki lett kapcsolva.
+Ez az oldal nem működik megfelelően amíg a JavaScript nincs bekapcsolva.</strong>',
+	'coll-intro_text' => 'Készíts és kezelj saját wiki oldal gyűjteményeket.<br />Lásd [[{{MediaWiki:Coll-helppage}}]] oldalt további információkért.',
+	'coll-helppage' => 'Segítség:Gyűjtemények',
+	'coll-your_book' => 'A Te könyved',
+	'coll-download_title' => 'Letöltés',
+	'coll-download_text' => 'Egy offline változat letöltéséhez válaszd ki a formátumot és nyomd meg a gombot!',
+	'coll-download' => 'Letöltés',
+	'coll-format_label' => 'Formátum:',
+	'coll-remove' => 'Eltávolítás',
+	'coll-show' => 'Mutat',
+	'coll-move_to_top' => 'Tetejére mozgat',
+	'coll-move_up' => 'Feljebb mozgat',
+	'coll-move_down' => 'Lejjebb mozgat',
+	'coll-move_to_bottom' => 'Alulra mozgat',
 	'coll-title' => 'Cím:',
+	'coll-subtitle' => 'Alcím:',
+	'coll-contents' => 'Tartalomjegyzék',
+	'coll-drag_and_drop' => 'Fogd és vidd módszerrel rendezd át a wiki oldalak és fejezetek sorrendjét',
+	'coll-create_chapter' => 'Fejezet készítése',
+	'coll-sort_alphabetically' => 'Rendezés ábécésorrend szerint',
+	'coll-clear_collection' => 'Gyűjtemény törlése',
+	'coll-clear_collection_confirm' => 'Valóban törölni szeretnéd a gyűjteményed?',
+	'coll-rename' => 'Átnevezés',
+	'coll-new_chapter' => 'Írd be az új fejezet címét',
+	'coll-rename_chapter' => 'Add meg a fejezet új címét',
+	'coll-no_such_category' => 'Nincs ilyen kategória',
+	'coll-notitle_title' => 'Az oldal címe nem volt megállapítható.',
+	'coll-post_failed_title' => 'POST kérés sikertelen',
+	'coll-post_failed_msg' => 'A $1-nak küldött POST kérés sikertelen ($2).',
+	'coll-mwserve_failed_title' => 'A renderelő szerver hibát észlelt',
+	'coll-mwserve_failed_msg' => 'Hiba történt a renderelő szerveren: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Hibaüzenet érkezett a szervertől',
+	'coll-empty_collection' => 'Üres gyűjtemény',
+	'coll-revision' => 'Változat: $1',
+	'coll-save_collection_title' => 'Mentsd el és oszd meg a gyűjteményed',
+	'coll-save_collection_text' => 'Válassz egy helyet:',
+	'coll-login_to_save' => 'Amennyiben elszeretnéd menteni a gyűjteményed későbbi használatra, kérlek [[Special:UserLogin|jelentkezz be vagy készíts egy felhasználói fiókot]].',
+	'coll-personal_collection_label' => 'Személyes gyűjtemény:',
+	'coll-community_collection_label' => 'Közösségi gyűjtemény:',
+	'coll-save_collection' => 'Gyűjtemény mentése',
+	'coll-save_category' => 'A gyűjtemények a [[:Category:Gyűjtemények|Gyűjtemények]] kategóriába mentődnek.',
+	'coll-overwrite_title' => 'Az oldal már létezik.
+Felülírjam?',
+	'coll-overwrite_text' => 'Egy [[:$1]] nevű gyüjtemény már létezik.
+Szeretnéd lecserélni a saját gyűjteményedre?',
 	'coll-yes' => 'Igen',
 	'coll-no' => 'Nem',
+	'coll-load_overwrite_text' => 'Már van néhány oldal a gyűjteményedben.
+Szeretnéd felülírni, az új tartalommal kiegészíteni a gyűjteményed vagy abbahagyni a gyűjtemény betöltését?',
+	'coll-overwrite' => 'Felülír',
+	'coll-append' => 'Hozzáad',
+	'coll-cancel' => 'Mégse',
+	'coll-update' => 'Frissít',
+	'coll-limit_exceeded_title' => 'A gyűjtemény túl nagy',
+	'coll-limit_exceeded_text' => 'Az oldalgyűjteményed túl nagy.
+Nem lehet több oldalt hozzáadni.',
+	'coll-rendering_title' => 'Renderelés',
+	'coll-rendering_text' => '<p><strong>Kérlek várj amíg a dokumentum elkészül!</strong></p>
+
+<p><strong>Készültség:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Ez az oldal automatikusan frissül pár másodpercenként.
+Ha ez nem történik meg, kérlek nyomd meg a böngésződ frissítés gombját!</p>',
+	'coll-rendering_status' => '<strong>Állapot:</strong> $1',
+	'coll-rendering_article' => '(wiki oldal: $1)',
+	'coll-rendering_page' => '(oldal: $1)',
+	'coll-rendering_finished_title' => 'A renderelés befejeződött',
+	'coll-rendering_finished_text' => "'''A dokumentum fájl ekészült.'''
+'''[$1 Kattints ide]''' a letöltéshez.
+
+Megjegyzés:
+* Nem vagy elégedett az eredménnyel? Lásd a  [[{{MediaWiki:Coll-helppage}}|gyűjteményekről szóló segítség oldalt]] a javítási lehetőségekről.",
+	'coll-notfound_title' => 'A gyűjtemény nem található',
+	'coll-notfound_text' => 'A gyűjtemény oldal nem található.',
+	'coll-is_cached' => '<ul><li>A dokumentum egy gyorsítótárazott változata megtalálható volt így nem volt szükség renderelésre.<a href="$1">Újra renderelés kényszerítése.</a></li></ul>',
+	'coll-excluded-templates' => 'A(z) [[:Category:$1|$1]] kategóriában lévő sablonok figyelmen kívül lettek hagyva.',
+	'coll-blacklisted-templates' => '* A(z) [[:$1]] feketelistán található sablonok figyelmen kívül lettek hagyva.',
+	'coll-return_to_collection' => '<p>Visszatérés ide: <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Megrendelés nyomtatott könyvként',
+	'coll-book_text' => 'Nyomtatott könyv rendelése a kérésre nyomtató partnerünktől:',
+	'coll-order_from_pp' => 'Köny rendelése a következőtől: $1',
+	'coll-about_pp' => 'A $1ről',
+	'coll-invalid_podpartner_title' => 'Érvénytelen nyomdai partner',
+	'coll-invalid_podpartner_msg' => 'A megadott nyomdai partner érvénytelen.
+Kérlek lépj kapcsolatba a MediaWiki adminisztrátoroddal.',
+	'coll-license' => 'Licenc',
+	'coll-return_to' => 'Visszatérés ide: [[:$1]]',
 );
 
 /** Interlingua (Interlingua)
@@ -2087,7 +2198,7 @@ Kaca iki ora bakal tampil kanthi bener, kajaba JavaScript di aktifaké.</strong>
 	'coll-intro_text' => 'Gawé lan tata pilihan kaca wiki panjenengan.<br />Pirsani [[{{MediaWiki:Coll-helppage}}]] kanggo informasi luwih cetha.',
 	'coll-helppage' => 'Help:Collections',
 	'coll-your_book' => 'Buku panjenengan',
-	'coll-download_title' => 'Undhuh buku panjenengan',
+	'coll-download_title' => 'Undhuh',
 	'coll-download_text' => "Kanggo ngundhuh vèrsi jaba-jaring (''offline'') pilih siji format lan klik tombolé.",
 	'coll-download' => 'Undhuh',
 	'coll-format_label' => 'Format:',
@@ -2100,6 +2211,7 @@ Kaca iki ora bakal tampil kanthi bener, kajaba JavaScript di aktifaké.</strong>
 	'coll-title' => 'Irah-irahan (judhul):',
 	'coll-subtitle' => 'Subjudhul:',
 	'coll-contents' => 'Isi',
+	'coll-drag_and_drop' => "Gunakaké ''drag & drop'' kanggo nata kaca lan bab ing wiki",
 	'coll-create_chapter' => 'Gawé bab',
 	'coll-sort_alphabetically' => 'Sortir miturut abjad',
 	'coll-clear_collection' => 'Kosongna kolèksi',
@@ -2109,28 +2221,65 @@ Kaca iki ora bakal tampil kanthi bener, kajaba JavaScript di aktifaké.</strong>
 	'coll-rename_chapter' => 'Lebokna jeneng anyar kanggo bab',
 	'coll-no_such_category' => 'Ora ana kategori kaya mengkono',
 	'coll-notitle_title' => 'Irah-irahan kaca iki ora bisa ditemtokaké.',
+	'coll-post_failed_title' => 'Panyuwunan POST gagal',
+	'coll-post_failed_msg' => 'Panyuwunan POST menyang $1 gagal ($2).',
+	'coll-mwserve_failed_title' => 'Ana kasalahan server',
+	'coll-mwserve_failed_msg' => 'Ana kasalahan ing server: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Rèspon kasalahan saka server',
 	'coll-empty_collection' => 'Kolèksi kosong',
 	'coll-revision' => 'Révisi: $1',
-	'coll-save_collection_title' => 'Simpen Kolèksi',
+	'coll-save_collection_title' => 'Simpen lan tuduhaké kolèksi panjenengan',
 	'coll-save_collection_text' => 'Pilih lokasi',
+	'coll-login_to_save' => 'Yèn panjenengan arep nyimpen kolèksi kanggo kaperluan mangsa ngarep, mangga[[Special:UserLogin|mlebu log utawa gawé akun]].',
 	'coll-personal_collection_label' => 'Kolèksi pribadi:',
 	'coll-community_collection_label' => 'Kolèksi komunitas:',
 	'coll-save_collection' => 'Simpen kolèksi',
-	'coll-overwrite_title' => 'Kaca wis ana. Ditimpa waé?',
+	'coll-save_category' => 'Kolèksi disimpen ing kategori [[:Category:Collections|Kolèksi]].',
+	'coll-overwrite_title' => 'Kaca wis ana. Ditindhes waé?',
+	'coll-overwrite_text' => 'Kaca kanthi jeneng [[:$1]] wis ana.
+Apa arep diganti nganggo kolèksi panjenengan?',
 	'coll-yes' => 'Iya',
 	'coll-no' => 'Ora',
+	'coll-load_overwrite_text' => 'Panjenengan wis duwé sawetara kaca jroning kolèksi panjenengan.
+Apa arep nindhes kolèksi panjenengan, nambah isi anyar, utawa mbatalaké ngunggah kolèksi iki?',
 	'coll-overwrite' => 'Timpanen',
 	'coll-append' => 'Lampirna',
 	'coll-cancel' => 'Batal',
+	'coll-update' => 'Mutakir',
 	'coll-limit_exceeded_title' => 'Kolèksi Kegedhèn',
 	'coll-limit_exceeded_text' => 'Kolèksi kaca panjenengan iku kegedhèn.
 Ora bisa nambah kaca-kaca liya manèh.',
-	'coll-notfound_title' => 'Kolèksi Ora Ditemokaké',
+	'coll-rendering_title' => 'Nggawé/ngowahi',
+	'coll-rendering_text' => "<p><strong>Mangga ditunggu sauntara dokumèn lagi digawé.</strong></p>
+
+<p><strong>Kamajuan:</strong> <span id=\"renderingProgress\">\$1</span>% <span id=\"renderingStatus\">\$2</span></p>
+
+<p>Kaca iki samesthiné ''refresh'' sacara otomatis saben sawetara detik.
+Yèn ora mangkono, mangga pencèt tombol ''refresh'' ing ''browser'' panjenengan.</p>",
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
+	'coll-rendering_article' => ' (kaca wiki: $1)',
+	'coll-rendering_page' => '  (kaca: $1)',
+	'coll-rendering_finished_title' => 'Rampung ngowahi/gawé',
+	'coll-rendering_finished_text' => "'''Berkas dokumèn wis digawé.'''
+'''[$1 Klik ing kéné]''' kanggo ngundhuh menyang komputer panjenengan.
+
+Cathetan:
+* Kurang rena karo wetonan (''output'')é? Pirsani [[{{MediaWiki:Coll-helppage}}|kaca pitulung bab kolèkasi]] kanggo kamungkinan ningkataké.",
+	'coll-notfound_title' => 'Kolèksi ora ditemokaké',
 	'coll-notfound_text' => 'Ora bisa nemokaké kaca kolèksi.',
+	'coll-is_cached' => "<ul><li>Dokumèn vèrsi ''cache'' wis ditemokaké, mula ora perlu ana pangowahan (''rendering''). <a href=\"\$1\">Peksa ''re-rendering''.</a></li></ul>",
+	'coll-excluded-templates' => '* Cithakan-cithakan ing kategori [[:Category:$1|$1]] wis di wetokaké.',
+	'coll-blacklisted-templates' => '* Cithakan-cithakan ing dhaptar-ireng [[:$1]] wis diwetokaké.',
 	'coll-return_to_collection' => '<p>Bali menyang <a href="$1">$2</a></p>',
-	'coll-book_title' => 'Pesen Buku Cithak',
+	'coll-book_title' => 'Urut kaya buku cithakan',
+	'coll-book_text' => "Jupuken buku cithakan saka partner ''print-on-demand'' kita:",
 	'coll-order_from_pp' => 'Pesen buku saka $1',
 	'coll-about_pp' => 'Perkara $1',
+	'coll-invalid_podpartner_title' => 'Partner POD ora sah',
+	'coll-invalid_podpartner_msg' => 'Partner POD sing disadiyakaké ora sah.
+Mangga hubungi pangurus MediaWiki panjenengan.',
+	'coll-license' => 'Lisènsi',
+	'coll-return_to' => 'Bali menyang [[:$1]]',
 );
 
 /** Georgian (ქართული)
@@ -3070,7 +3219,7 @@ Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączo
 	'coll-title' => 'Tytuł:',
 	'coll-subtitle' => 'Podtytuł:',
 	'coll-contents' => 'Spis treści',
-	'coll-drag_and_drop' => 'Przeciągnij i upuść by zmienić kolejność stron i rozdziałów',
+	'coll-drag_and_drop' => 'Przeciągnij i upuść, by zmienić kolejność stron i rozdziałów',
 	'coll-create_chapter' => 'Utwórz rozdział',
 	'coll-sort_alphabetically' => 'Sortuj alfabetycznie',
 	'coll-clear_collection' => 'Wyczyść kolekcję',
@@ -4034,15 +4183,18 @@ $messages['vec'] = array(
 	'coll-show_collection' => 'Varda colezion',
 	'coll-help_collections' => 'Ajuto su le colezion',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàxena|pàxene}}',
+	'coll-unknown_subpage_title' => 'Sotopàxena sconossiùa',
 	'coll-download_as' => 'Descarga come $1',
 	'coll-noscript_text' => "<h1>Ghe vole el JavaScript!</h1>
 <strong>El to browser no'l suporta JavaScript opure JavaScript el xe stà disativà.
 La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</strong>",
 	'coll-helppage' => 'Help:Colezion',
-	'coll-download_title' => 'Descarga colezion',
+	'coll-your_book' => 'El to libro',
+	'coll-download_title' => 'Descarga',
 	'coll-download' => 'Descarga',
 	'coll-format_label' => 'Formato:',
 	'coll-remove' => 'Cava',
+	'coll-show' => 'Mostra',
 	'coll-move_to_top' => 'Sposta insima',
 	'coll-move_up' => 'Sposta piassè in alto',
 	'coll-move_down' => 'Sposta piassè zo',
@@ -4051,8 +4203,9 @@ La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</s
 	'coll-subtitle' => 'Sototitolo:',
 	'coll-contents' => 'Indice',
 	'coll-create_chapter' => 'Crea capitolo novo',
-	'coll-sort_alphabetically' => 'Meti le pàxene in ordine alfabétego',
+	'coll-sort_alphabetically' => 'Meti in ordine alfabétego',
 	'coll-clear_collection' => 'Desvòda colezion',
+	'coll-clear_collection_confirm' => 'Vuto dalbòn netar conpletamente la to colezion?',
 	'coll-rename' => 'Canbia nome',
 	'coll-new_chapter' => 'Inserissi el nome del capitolo novo',
 	'coll-rename_chapter' => 'Inserissi el nome novo del capitolo',
@@ -4063,8 +4216,8 @@ La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</s
 	'coll-mwserve_failed_msg' => 'Xe capità un eròr sul server de conversion: <nowiki>$1</nowiki>',
 	'coll-empty_collection' => 'Colezion vòda',
 	'coll-revision' => 'Revision: $1',
-	'coll-save_collection_title' => 'Salva colezion',
-	'coll-save_collection_text' => 'Par salvar sta colezion e dopararla in futuro, siegli un tipo de colezion e inserissi un titolo par la pàxena:',
+	'coll-save_collection_title' => 'Salva e condividi la to colezion',
+	'coll-save_collection_text' => 'Siegli un posto:',
 	'coll-personal_collection_label' => 'Colezion personal:',
 	'coll-community_collection_label' => 'Colezion de la comunità:',
 	'coll-save_collection' => 'Salva colezion',
@@ -4078,15 +4231,16 @@ Vuto che la vegna rinpiazà co la to colezion?',
 	'coll-overwrite' => 'Sorascrivi',
 	'coll-append' => 'Zonta',
 	'coll-cancel' => 'Annulla',
+	'coll-update' => 'Ajorna',
 	'coll-limit_exceeded_title' => 'Colezion massa granda',
 	'coll-limit_exceeded_text' => 'La to colezion la xe massa granda. No se pode zontarghe altre pàxene.',
 	'coll-rendering_title' => 'Conversion',
-	'coll-rendering_text' => "Par piaser, speta n'atimo che el documento el vegna generà.'''
+	'coll-rendering_text' => '<p><strong>Par piaser, speta n\'atimo che el documento el vegna generà.</strong></p>
 
-'''Avansamento:''' $1% $2
+<p><strong>Avansamento:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-Sta pàxena la dovarìa ajornarse da par ela ogni póchi secondi.
-Se questo no sucede, struca el boton de ajornamento del to browser.",
+<p>Sta pàxena la dovarìa ajornarse da par ela ogni póchi secondi.
+Se questo no sucede, struca el boton de ajornamento del to browser.</p>',
 	'coll-rendering_status' => "'''Stato:''' $1",
 	'coll-rendering_article' => '   (pàxena wiki: $1)',
 	'coll-rendering_page' => '   (pàxena: $1)',
@@ -4101,7 +4255,7 @@ Note:
 	'coll-excluded-templates' => '* I modèi in te la categoria [[:Category:$1|$1]] i xe stà esclusi.',
 	'coll-blacklisted-templates' => '* I modèi in te la lista nera [[:$1]] i xe stà esclusi.',
 	'coll-return_to_collection' => '<p>Torna indrìo a <a href="$1">$2</a></p>',
-	'coll-book_title' => 'Ordina libro stanpà',
+	'coll-book_title' => 'Ordina come libro stanpà',
 	'coll-order_from_pp' => 'Ordina libro da $1',
 	'coll-about_pp' => 'Informassion su $1',
 	'coll-invalid_podpartner_title' => 'Partner POD mia valido',
