@@ -36,7 +36,7 @@ var requiredVersion = '1.0pre';
  * @return String text of elment with ID id
  */
 function gettext(sel, param/*=null*/) {
-	var txt = $(sel).html();
+	var txt = jQuery(sel).html();
 	if (param) {
 		txt = txt.replace(/%PARAM%/g, param);
 	}
@@ -49,13 +49,13 @@ var script_url = wgServer +
 /******************************************************************************/
 
 function getMWServeStatus() {
-	$.getJSON(script_url, {
+	jQuery.getJSON(script_url, {
 		'action': 'ajax',
 		'rs': 'wfAjaxGetMWServeStatus',
 		'rsargs[]': [collection_id, writer]
 	}, function(result) {
 		if (result.state == 'progress' ) {
-			$('#renderingProgress').html('' + result.status.progress);
+			jQuery('#renderingProgress').html('' + result.status.progress);
 			if (result.status.status) {
 				var status = result.status.status;
 				if (result.status.article) {
@@ -63,7 +63,7 @@ function getMWServeStatus() {
 				} else if (result.status.page) {
 					status += gettext('#renderingPage', result.status.page);
 				}
-				$('#renderingStatus').html(gettext('#renderingStatusText', status));
+				jQuery('#renderingStatus').html(gettext('#renderingStatusText', status));
 			}
 			setTimeout(getMWServeStatus, 500);
 		} else {
@@ -117,7 +117,7 @@ function remove_item(index) {
 function set_titles() {
 	sajax_request_type = "POST";
 	sajax_do_call('wfAjaxCollectionSetTitles',
-		[$('#titleInput').val(), $('#subtitleInput').val()], function() {});
+		[jQuery('#titleInput').val(), jQuery('#subtitleInput').val()], function() {});
 	return false;
 }
 
@@ -128,76 +128,76 @@ function set_sorting(items_string) {
 }
 
 function update_save_button() {
-	if (!$('#saveButton').get(0)) {
+	if (!jQuery('#saveButton').get(0)) {
 		return;
 	}
-	if ($('#emptyCollection').get(0)) {
-		$('#saveButton').attr('disabled', 'disabled');
+	if (jQuery('#emptyCollection').get(0)) {
+		jQuery('#saveButton').attr('disabled', 'disabled');
 		return;
 	}
-	if ($('#personalCollType:checked').val()) {
-		$('#personalCollTitle').attr('disabled', '');
-		$('#communityCollTitle').attr('disabled', 'disabled');
-		if (!$.trim($('#personalCollTitle').val())) {
-			$('#saveButton').attr('disabled', 'disabled');
+	if (jQuery('#personalCollType:checked').val()) {
+		jQuery('#personalCollTitle').attr('disabled', '');
+		jQuery('#communityCollTitle').attr('disabled', 'disabled');
+		if (!jQuery.trim(jQuery('#personalCollTitle').val())) {
+			jQuery('#saveButton').attr('disabled', 'disabled');
 			return;
 		}
-	} else if ($('#communityCollType:checked').val()) {
-		$('#communityCollTitle').attr('disabled', '');
-		$('#personalCollTitle').attr('disabled', 'disabled');
-		if (!$.trim($('#communityCollTitle').val())) {
-			$('#saveButton').attr('disabled', 'disabled');
+	} else if (jQuery('#communityCollType:checked').val()) {
+		jQuery('#communityCollTitle').attr('disabled', '');
+		jQuery('#personalCollTitle').attr('disabled', 'disabled');
+		if (!jQuery.trim(jQuery('#communityCollTitle').val())) {
+			jQuery('#saveButton').attr('disabled', 'disabled');
 			return;
 		}
 	}
-	$('#saveButton').attr('disabled', '');
+	jQuery('#saveButton').attr('disabled', '');
 }
 
 function make_sortable() {
-	$('#collectionList').sortable({
+	jQuery('#collectionList').sortable({
 		axis: 'y',
 		update: function(evt, ui) {
-			set_sorting($('#collectionList').sortable('serialize'));
+			set_sorting(jQuery('#collectionList').sortable('serialize'));
 		}
 	});
-	$('#collectionList .sortableitem').css('cursor', 'move');
+	jQuery('#collectionList .sortableitem').css('cursor', 'move');
 }
 
 function refresh_list(xhr) {
-	$('#collectionListContainer').html(xhr.responseText);
-	$('.makeVisible').css('display', 'inline');
+	jQuery('#collectionListContainer').html(xhr.responseText);
+	jQuery('.makeVisible').css('display', 'inline');
 	make_sortable();
-	if ($('#emptyCollection').get(0)) {
-		$('#downloadButton').attr('disabled', 'disabled');
-		$('input.order').attr('disabled', 'disabled');
+	if (jQuery('#emptyCollection').get(0)) {
+		jQuery('#downloadButton').attr('disabled', 'disabled');
+		jQuery('input.order').attr('disabled', 'disabled');
 	} else {
-		$('#downloadButton').attr('disabled', '');
-		$('input.order').attr('disabled', '');
+		jQuery('#downloadButton').attr('disabled', '');
+		jQuery('input.order').attr('disabled', '');
 	}
 	update_save_button();
 }
 
-$(function() {
+jQuery(function() {
 	if (requiredVersion != wgCollectionVersion) {
 		alert('ERROR: Version mismatch between Javascript and PHP code. Contact admin to fix the installation of Collection extension for MediaWiki.');
 		return;
 	}
-	if ($('#collectionList').get(0)) {
-		$('.makeVisible').css('display', 'inline');
+	if (jQuery('#collectionList').get(0)) {
+		jQuery('.makeVisible').css('display', 'inline');
 		window.coll_create_chapter = create_chapter;
 		window.coll_remove_item = remove_item;
 		window.coll_rename_chapter = rename_chapter;
 		window.coll_clear_collection = clear_collection;
 		update_save_button();
 		make_sortable();
-		$('#personalCollTitle').keyup(update_save_button);
-		$('#personalCollTitle').change(update_save_button);
-		$('#communityCollTitle').keyup(update_save_button);
-		$('#communityCollTitle').change(update_save_button);
-		$('#personalCollType').change(update_save_button);
-		$('#communityCollType').change(update_save_button);
-		$('#titleInput').change(set_titles);
-		$('#subtitleInput').change(set_titles);
+		jQuery('#personalCollTitle').keyup(update_save_button);
+		jQuery('#personalCollTitle').change(update_save_button);
+		jQuery('#communityCollTitle').keyup(update_save_button);
+		jQuery('#communityCollTitle').change(update_save_button);
+		jQuery('#personalCollType').change(update_save_button);
+		jQuery('#communityCollType').change(update_save_button);
+		jQuery('#titleInput').change(set_titles);
+		jQuery('#subtitleInput').change(set_titles);
 	}
 	if (typeof collection_rendering != 'undefined') {
 		getMWServeStatus();
