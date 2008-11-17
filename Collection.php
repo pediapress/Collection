@@ -38,7 +38,7 @@ require_once( "$IP/extensions/Collection/Version.php" );
 # Configuration:
 
 /** Bump the version number every time you change any of the JavaScript files */
-$wgCollectionStyleVersion = 1;
+$wgCollectionStyleVersion = 2;
 
 /** URL of mw-serve render server */
 $wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
