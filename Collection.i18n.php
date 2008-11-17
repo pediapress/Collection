@@ -345,6 +345,8 @@ $messages['arz'] = array(
 	'coll-show_collection' => 'عرض المجموعة',
 	'coll-help_collections' => 'مساعدة المجموعات',
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحة|صفحة}}',
+	'coll-unknown_subpage_title' => 'صفحة فرعية مش معروفة',
+	'coll-printable_version_pdf' => 'نسخة PDF',
 	'coll-download_as' => 'تحميل ك$1',
 	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
 <strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
@@ -359,6 +361,7 @@ $messages['arz'] = array(
 	'coll-download' => 'تحميل',
 	'coll-format_label' => 'الصيغة:',
 	'coll-remove' => 'إزالة',
+	'coll-show' => 'اعرض',
 	'coll-move_to_top' => 'حرك إلى الأعلى',
 	'coll-move_up' => 'حرك إلى الأعلى',
 	'coll-move_down' => 'حرك إلى الأسفل قليلا',
@@ -688,6 +691,7 @@ $messages['de'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|Seite|Seiten}}',
 	'coll-unknown_subpage_title' => 'Unbekannte Unterseite',
 	'coll-unknown_subpage_text' => 'Diese Unterseite der [[Special:Collection|Sammlung]] existiert nicht',
+	'coll-printable_version_pdf' => 'PDF-Version',
 	'coll-download_as' => 'Als $1 herunterladen',
 	'coll-noscript_text' => '<h1>JavaScript wird benötigt!</h1>
 <strong>Dein Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
@@ -865,6 +869,7 @@ $messages['eo'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|paĝo|paĝoj}}',
 	'coll-unknown_subpage_title' => 'Nekonata subpaĝo',
 	'coll-unknown_subpage_text' => 'Ĉi tiu subpaĝo de [[Special:Collection|Kolekto]] ne ekzistas',
+	'coll-printable_version_pdf' => 'PDF-versio',
 	'coll-download_as' => 'Elŝuti kiel $1',
 	'coll-noscript_text' => '<h1>JavaScript-o estas deviga!<h1>
 <strong>Via retumilo ne subtenas JavaScript-on aŭ JavaScript-o estis malŝaltita.
@@ -901,6 +906,7 @@ $messages['eo'] = array(
 	'coll-revision' => 'Revizio: $1',
 	'coll-save_collection_title' => 'Konservi kaj permesigi vian kolekton',
 	'coll-save_collection_text' => 'Elektu lokon:',
+	'coll-login_to_save' => 'Se vi volas konservi kolektojn por posta uzo, bonvolu [[Special:UserLogin|ensaluti aŭ krei novan konton]].',
 	'coll-personal_collection_label' => 'Propra kolekto:',
 	'coll-community_collection_label' => 'Komuna kolekto:',
 	'coll-save_collection' => 'Konservu Kolekton',
@@ -942,6 +948,7 @@ Notoj:
 	'coll-book_text' => 'Akiri presitan libron de nia ek-eldoneja partnero:',
 	'coll-order_from_pp' => 'Mendi libron de $1',
 	'coll-about_pp' => 'Pri $1',
+	'coll-invalid_podpartner_title' => 'Nevalida ek-eldoneja partnero',
 	'coll-license' => 'Licenco',
 	'coll-return_to' => 'Reiri al [[:$1]]',
 );
@@ -1243,7 +1250,7 @@ Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa
 	'coll-intro_text' => 'Cree e xestione a súa escolla individual de páxinas wiki.<br />Bótelle unha ollada a [[{{MediaWiki:Coll-helppage}}]] para máis información.',
 	'coll-helppage' => 'Help:Coleccións',
 	'coll-your_book' => 'O seu libro',
-	'coll-download_title' => 'Descargar o seu libro',
+	'coll-download_title' => 'Descargar',
 	'coll-download_text' => 'Para descargar sen conexión unha versión vella do ficheiro, escolla un formato e faga clic no botón.',
 	'coll-download' => 'Descargar',
 	'coll-format_label' => 'Formato:',
@@ -2863,6 +2870,7 @@ $messages['nl'] = array(
 	'coll-n_pages' => "$1 {{PLURAL:$1|pagina|pagina's}}",
 	'coll-unknown_subpage_title' => 'Onbekende subpagina',
 	'coll-unknown_subpage_text' => 'Deze subpagina van [[Special:Collection|Collectie]] bestaat niet.',
+	'coll-printable_version_pdf' => 'PDF-versie',
 	'coll-download_as' => 'Downloaden als $1',
 	'coll-noscript_text' => '<h1>JavaScript is vereist!</h1>
 <strong>Uw browser understeunt geen JavaScript of JavaScript is uitgeschakeld.
@@ -3201,6 +3209,7 @@ $messages['pl'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|strona|strony|stron}}',
 	'coll-unknown_subpage_title' => 'Nieznana podstrona',
 	'coll-unknown_subpage_text' => 'Podstrona należąca do [[Special:Collection|kolekcji]] nie istnieje',
+	'coll-printable_version_pdf' => 'wersja PDF',
 	'coll-download_as' => 'Pobierz jako $1',
 	'coll-noscript_text' => '<h1>Potrzebny JavaScript!</h1>
 <strong>Twoja przeglądarka nie obsługuje JavaScriptu lub został on wyłączony.
@@ -3686,12 +3695,23 @@ Prosím, kontaktujte svojho správcu MediaWiki.',
 
 /** Serbian Cyrillic ekavian (ћирилица)
  * @author Sasa Stefanovic
+ * @author Јованвб
  */
 $messages['sr-ec'] = array(
+	'coll-add_category' => 'Додај категорију',
+	'coll-printable_version_pdf' => 'PDF верзија',
 	'coll-remove' => 'Уклони',
 	'coll-title' => 'Наслов:',
+	'coll-revision' => 'Ревизија: $1',
 	'coll-yes' => 'Да',
 	'coll-no' => 'Не',
+	'coll-cancel' => 'Прекини',
+	'coll-update' => 'Апдејтуј',
+	'coll-rendering_article' => '  (вики страница: $1)',
+	'coll-rendering_page' => '  (страница: $1)',
+	'coll-order_from_pp' => 'Наручи књигу са $1',
+	'coll-license' => 'Лиценца',
+	'coll-return_to' => 'Врати на [[:$1]]',
 );
 
 /** Seeltersk (Seeltersk)
@@ -3836,6 +3856,7 @@ $messages['sv'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|sida|sidor}}',
 	'coll-unknown_subpage_title' => 'Okänd undersida',
 	'coll-unknown_subpage_text' => 'Denna undersida till [[Special:Collection|Collection]] existerar inte',
+	'coll-printable_version_pdf' => 'PDF-version',
 	'coll-download_as' => 'Ladda ner som $1',
 	'coll-noscript_text' => '<h1>JavaScript är nödvändigt!</h1>
 <strong>Din webbläsare stödjer inte JavaScript eller har JavaScript blivigt avslagen.
