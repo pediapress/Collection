@@ -937,14 +937,16 @@ class Collection extends SpecialPage {
 		if ( $skinTemplate->iscontent && ( $action == '' || $action == 'view' || $action == 'purge' ) ) {
 			if ( self::isCollectionPage( $skinTemplate->mTitle, $wgArticle ) ) {
 				$params = 'colltitle=' . wfUrlencode( $skinTemplate->mTitle->getPrefixedDBKey() );
-				foreach ( $wgCollectionFormats as $writer => $name ) {
-					$nav_urls['download_as_' . $writer] = array(
+				if ( isset( $wgCollectionFormats['rl'] ) ) {
+					$nav_urls['printable_version_pdf'] = array(
 						'href' => SkinTemplate::makeSpecialUrlSubpage(
 							'Collection',
 							'render_collection/',
-						  $params . '&writer=' . $writer ),
-						'text' => wfMsg( 'coll-download_as', $name ),
+						  $params . '&writer=rl'),
+						'text' => wfMsg( 'coll-printable_version_pdf' ),
 					);
+				}
+				foreach ( $wgCollectionFormats as $writer => $name ) {
 				}
 			} else {
 				$params = 'arttitle=' . $skinTemplate->mTitle->getPrefixedURL();
@@ -954,13 +956,13 @@ class Collection extends SpecialPage {
 						$params .= '&oldid=' . $oldid;
 					}
 				}
-				foreach ( $wgCollectionFormats as $writer => $name ) {
-					$nav_urls['download_as_' . $writer] = array(
+				if ( isset( $wgCollectionFormats['rl'] ) ) {
+					$nav_urls['printable_version_pdf'] = array(
 						'href' => SkinTemplate::makeSpecialUrlSubpage(
 							'Collection',
 							'render_article/',
 						  $params . '&writer=' . $writer ),
-						'text' => wfMsg( 'coll-download_as', $name )
+						'text' => wfMsg( 'coll-printable_version_pdf' )
 					);
 				}
 			}
@@ -975,16 +977,13 @@ class Collection extends SpecialPage {
 	static function insertMonoBookToolboxLink( &$skinTemplate ) {
 		global $wgCollectionFormats;
 		
-		foreach ( $wgCollectionFormats as $writer => $name ) {
-			if ( !empty( $skinTemplate->data['nav_urls']['download_as_' . $writer]['href'] ) ) {
-				$href = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_' . $writer]['href'] );
-				$label = htmlspecialchars( $skinTemplate->data['nav_urls']['download_as_' . $writer]['text'] );
-				print <<<EOS
+		if ( !empty( $skinTemplate->data['nav_urls']['printable_version_pdf']['href'] ) ) {
+			$href = htmlspecialchars( $skinTemplate->data['nav_urls']['printable_version_pdf']['href'] );
+			$label = htmlspecialchars( $skinTemplate->data['nav_urls']['printable_version_pdf']['text'] );
+			print <<<EOS
 <li id="t-download-as-$writer"><a href="$href" rel="nofollow">$label</a></li>
 EOS
-				;
-			}
-			
+			;
 		}
 		return true;
 	}
