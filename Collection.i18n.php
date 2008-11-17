@@ -37,6 +37,7 @@ $messages['en'] = array(
 	'coll-n_pages'                    => '$1 {{PLURAL:$1|page|pages}}',
 	'coll-unknown_subpage_title'      => 'Unknown subpage',
 	'coll-unknown_subpage_text'       => 'This subpage of [[Special:Collection|Collection]] does not exist',
+	'coll-printable_version_pdf'      => 'PDF version',
 	'coll-download_as'                => 'Download as $1',
 	'coll-noscript_text'              => '<h1>JavaScript is required!</h1>
 <strong>Your browser does not support JavaScript or JavaScript has been turned off.
