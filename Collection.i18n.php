@@ -1389,6 +1389,7 @@ $messages['he'] = array(
 	'coll-n_pages' => '{{PLURAL:$1|דף אחד|$1 דפים}}',
 	'coll-unknown_subpage_title' => 'דף משנה בלתי ידוע',
 	'coll-unknown_subpage_text' => 'דף משנה זה של ה[[Special:Collection|אוסף]] אינו קיים',
+	'coll-printable_version_pdf' => 'גרסת PDF',
 	'coll-download_as' => 'הורדה בפורמט $1',
 	'coll-noscript_text' => '<h1>JavaScript נדרש!</h1>
 <strong>הדפדפן שלכם אינו תומך ב־JavaScript או שביטלתם את JavaScript בדפדפן זה.
