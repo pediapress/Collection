@@ -214,6 +214,8 @@ class Collection extends SpecialPage {
 		global $wgScriptPath;
 		global $wgOut;
 
+		self::startSession();
+		
 		$this->setHeaders();
 		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );		
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgCollectionStyleVersion\"></script>" );
@@ -962,7 +964,7 @@ class Collection extends SpecialPage {
 						'href' => SkinTemplate::makeSpecialUrlSubpage(
 							'Collection',
 							'render_article/',
-						  $params . '&writer=' . $writer ),
+						  $params . '&writer=rl' ),
 						'text' => wfMsg( 'coll-printable_version_pdf' )
 					);
 				}
