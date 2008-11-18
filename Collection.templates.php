@@ -56,7 +56,7 @@ $listTemplate->execute();
 
 <div style="width: 47%; float: left">
 
-	<div style="margin-bottom: 10px; padding: 10px" class="toccolours">
+	<div style="margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 		<h2><span class="mw-headline"><?php $this->msg('coll-book_title') ?></span></h2>
 		<?php $this->msgWiki('coll-book_text') ?>
 		<div id="ppList">
@@ -70,7 +70,7 @@ $listTemplate->execute();
 		</div>
 	</div>
 
-	<div style="margin-bottom: 10px; padding: 10px" class="toccolours">
+	<div style="margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 		<h2><span class="mw-headline"><?php $this->msg('coll-download_title') ?></span></h2>
 		<?php $this->msgWiki('coll-download_text') ?>
 		<form id="downloadForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'render/')) ?>" method="post">
@@ -93,7 +93,7 @@ $listTemplate->execute();
 		</form>
 	</div>
 
-	<div style="margin-bottom: 10px; padding: 10px" class="toccolours">
+	<div style="margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 		<h2><span class="mw-headline"><?php $this->msg('coll-save_collection_title') ?></span></h2>
 		<?php if ($GLOBALS['wgUser']->isLoggedIn()) { ?>
 		<?php $this->msgWiki('coll-save_collection_text') ?>
@@ -133,7 +133,7 @@ class CollectionListTemplate extends QuickTemplate {
 		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/collection/';
 ?>
 
-<div class="toccolours" style="text-align: center; padding: 2px; margin-top: 20px; margin-bottom: 2px">
+<div style="text-align: center; padding: 2px; margin-top: 20px; margin-bottom: 2px; border: 1px solid #aaa; background-color: #f9f9f9;">
 <div>
 <a class="makeVisible" style="margin-right: 3em;<?php if (!isset($this->data['is_ajax'])) { echo ' display:none;'; } ?>" onclick="return coll_create_chapter()" href="javascript:void(0);"><?php $this->msg('coll-create_chapter') ?></a>
 <?php if (count($this->data['collection']['items']) > 0) { ?>
