@@ -85,7 +85,7 @@ This page will not work correctly, unless JavaScript is enabled.</strong>',
 	'coll-personal_collection_label'  => 'Personal collection:',
 	'coll-community_collection_label' => 'Community collection:',
 	'coll-save_collection'            => 'Save collection',
-	'coll-save_category'              => 'Collections are saved in the category [[:Category:Collections|Collections]].',
+	'coll-save_category'              => 'Collections are saved in the [[:Category:{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title'            => 'Page exists.
 Overwrite?',
 	'coll-overwrite_text'             => 'A page with the name [[:$1]] already exists.
