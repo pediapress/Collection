@@ -77,12 +77,6 @@ $wgLicenseName = null;
 /** HTTP(s) URL pointing to license in wikitext format: */
 $wgLicenseURL = null;
 
-/** Template blacklist article */
-$wgPDFTemplateBlacklist = 'MediaWiki:PDF Template Blacklist';
-
-/** Template exclusion category */
-$wgCollectionTemplateExclusionCategory = "Exclude in print";
-
 /** List of available download formats,
     as mapping of mwlib writer to format name */
 $wgCollectionFormats = array(
