@@ -110,9 +110,9 @@ $listTemplate->execute();
 			</form>
 
 		<?php } else {
-			echo wfMsgExt('coll-login_to_save', array('parse'));
+			$this->msgWiki('coll-login_to_save');
 		}
-		echo wfMsgExt('coll-save_category', array('parse'));
+		$this->msgWiki('coll-save_category');
 		?>
 	</div>
 
