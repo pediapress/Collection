@@ -168,27 +168,7 @@ Installation and Configuration of the Collection Extension
    
    If your MediaWiki contains articles with different licenses, make sure
    that each article contains the name of the license and set $wgLicenseURL
-   to an article that contains all needed licenses.
-   
-  *$wgCollectionTemplateExclusionCategory (string)*
-   Name of a category which marks templates (or transcluded articles) to be
-   excluded for document generation.
-   
-   Default value is ``"Exclude in print"``
-  
-  *$wgPDFTemplateBlackList (string)*
-   Title of an article containing blacklisted templates, i.e. templates that
-   should be excluded for document generation.
-
-   Default value is ``"MediaWiki:PDF Template Blacklist"``
-
-   The template blacklist page should contain a list of links to the
-   blacklisted templates in the following form::
-   
-	 * [[Template:Templatename]]
-	 * [[Template:SomeOtherTemplatename]]
-	 
-   
+   to an article that contains all needed licenses.   
    
 * This step is needed for MediaWiki version < 1.14 (at the time of writing
   version 1.14 has not been released):

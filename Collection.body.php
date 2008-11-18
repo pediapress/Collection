@@ -672,8 +672,6 @@ class Collection extends SpecialPage {
 	function renderCollection( $collection, $referrer, $writer ) {
 		global $wgOut;
 		global $wgContLang;
-		global $wgCollectionTemplateExclusionCategory;
-		global $wgPDFTemplateBlacklist;
 		global $wgServer;
 		global $wgScriptPath;
 		global $wgScriptExtension;
@@ -686,8 +684,9 @@ class Collection extends SpecialPage {
 			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'script_extension' => $wgScriptExtension,
-			'template_blacklist' => $wgPDFTemplateBlacklist,
-			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
+			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
+			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
+			'print_template_prefix' => wfMsgForContent( 'coll-print_template_prefix' ),
 			'language' => $wgContLang->getCode(),
 			'writer' => $writer,
 		) );
@@ -709,8 +708,6 @@ class Collection extends SpecialPage {
 	function forceRenderCollection() {
 		global $wgOut;
 		global $wgContLang;
-		global $wgCollectionTemplateExclusionCategory;
-		global $wgPDFTemplateBlacklist;
 		global $wgRequest;
 		global $wgServer;
 		global $wgScriptPath;
@@ -723,8 +720,9 @@ class Collection extends SpecialPage {
 			'collection_id' => $collectionID,
 			'base_url' => $wgServer . $wgScriptPath,
 			'script_extension' => $wgScriptExtension,
-			'template_blacklist' => $wgPDFTemplateBlacklist,
-			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
+			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
+			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
+			'print_template_prefix' => wfMsgForContent( 'coll-print_template_prefix' ),
 			'language' => $wgContLang->getCode(),
 			'writer' => $writer,
 			'force_render' => true
@@ -865,8 +863,6 @@ class Collection extends SpecialPage {
 		global $wgScriptPath;
 		global $wgScriptExtension;
 		global $wgOut;
-		global $wgPDFTemplateBlacklist;
-		global $wgCollectionTemplateExclusionCategory;
 		
 		$json = new Services_JSON();
 
@@ -879,8 +875,9 @@ class Collection extends SpecialPage {
 			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => $wgServer . $wgScriptPath,
 			'script_extension' => $wgScriptExtension,
-			'template_blacklist' => $wgPDFTemplateBlacklist,
-			'template_exclusion_category' => $wgCollectionTemplateExclusionCategory,
+			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
+			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
+			'print_template_prefix' => wfMsgForContent( 'coll-print_template_prefix' ),
 			'pod_api_url' => $this->mPODPartners[$partner]['posturl'],
 		) );
 		if ( !$response ) {
