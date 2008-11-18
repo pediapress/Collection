@@ -214,7 +214,9 @@ class Collection extends SpecialPage {
 		global $wgScriptPath;
 		global $wgOut;
 
-		self::startSession();
+		if ( !self::hasSession() ) {
+			self::startSession();
+		}
 		
 		$this->setHeaders();
 		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );		
