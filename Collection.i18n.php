@@ -404,7 +404,7 @@ $messages['arz'] = array(
 	'coll-personal_collection_label' => 'مجموعة شخصية:',
 	'coll-community_collection_label' => 'مجموعة مجتمع:',
 	'coll-save_collection' => 'حفظ المجموعة',
-	'coll-save_category' => 'المجموعات بتتسييف فى التصنيف [[:Category:مجموعات|مجموعات]].',
+	'coll-save_category' => 'المجموعات بتتسييف فى التصنيف  [[:Category:Collections|مجموعات]].',
 	'coll-overwrite_title' => 'الصفحة موجودة.
 كتابة عليها؟',
 	'coll-overwrite_text' => 'صفحة بنفس الاسم [[:$1]] موجودة بالفعل.
@@ -573,6 +573,8 @@ $messages['cs'] = array(
 	'coll-desc' => 'Vytváření [[Special:Collection|kolekce stránek]], tvorba PDF',
 	'coll-collection' => 'Kolekce',
 	'coll-collections' => 'Kolekce',
+	'coll-exclusion_category_title' => 'Netisknout',
+	'coll-print_template_prefix' => 'Tisk',
 	'coll-portlet_title' => 'Vytvořit knihu',
 	'coll-add_page' => 'Přidat tuto stránku',
 	'coll-remove_page' => 'Odebrat tuto stránku',
@@ -588,7 +590,7 @@ $messages['cs'] = array(
 	'coll-noscript_text' => '<h1>Je vyžadován JavaScript!</h1>
 <strong>Váš prohlížeč nepodporuje JavaScript nebo máte JavaScript vypnutý.
 Tato stránka nebude správně fungovat, dokud JavaScript nezapnete.</strong>',
-	'coll-intro_text' => 'Zde můžete vytvářet a spravovat své osobní výběry stránek wiki.<br />Další informace najdete na [[{{MediaWiki:Coll-helppage}}]].',
+	'coll-intro_text' => 'Zde můžete vytvářet a spravovat své osobní výběry stránek wiki.<br />Další informace najdete v [[{{MediaWiki:Coll-helppage}}|nápovědě ke kolekcím]].',
 	'coll-helppage' => 'Help:Kolekce',
 	'coll-your_book' => 'Vaše kniha',
 	'coll-download_title' => 'Stáhnout',
@@ -627,7 +629,7 @@ Tato stránka nebude správně fungovat, dokud JavaScript nezapnete.</strong>',
 	'coll-personal_collection_label' => 'Osobní kolekce:',
 	'coll-community_collection_label' => 'Komunitní kolekce:',
 	'coll-save_collection' => 'Uložit kolekci',
-	'coll-save_category' => 'Kolekce se ukládají do kategorie [[:Category:Collections|Collections]].',
+	'coll-save_category' => 'Kolekce se ukládají do kategorie [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Stránka existuje. Přepsat?',
 	'coll-overwrite_text' => 'Stránka s názvem [[:$1]] už existuje.
 Chcete ji nahradit svojí kolekcí?',
@@ -753,7 +755,7 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 	'coll-personal_collection_label' => 'Persönliche Sammlung:',
 	'coll-community_collection_label' => 'Community-Sammlung:',
 	'coll-save_collection' => 'Sammlung speichern',
-	'coll-save_category' => 'Sammlungen werden in der [[:Category:{{MediaWiki:Coll-collections}}|Kategorie:{{MediaWiki:Coll-collections}}]] gespeichert.',
+	'coll-save_category' => 'Sammlungen werden in der Kategorie [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]] gespeichert.',
 	'coll-overwrite_title' => 'Seite vorhanden, überschreiben?',
 	'coll-overwrite_text' => 'Eine Seite mit dem Namen [[:$1]] ist bereits vorhanden. Möchtest du sie durch deine Sammlung ersetzen?',
 	'coll-yes' => 'Ja',
@@ -932,7 +934,7 @@ $messages['eo'] = array(
 	'coll-personal_collection_label' => 'Propra kolekto:',
 	'coll-community_collection_label' => 'Komuna kolekto:',
 	'coll-save_collection' => 'Konservi Kolekton',
-	'coll-save_category' => 'Kolektoj estas konservitaj en la [[:Category:{{MediaWiki:Coll-collections}}|Kategorio:{{MediaWiki:Coll-collections}}]].',
+	'coll-save_category' => 'Kolektoj estas konservitaj en la [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Paĝo ekzistas. Ĉu anstataŭigi?',
 	'coll-overwrite_text' => 'Paĝo kun la nomo [[:$1]] jam ekzistas.
 Ĉu vi volas anstatŭigi ĝin kun via kolekto?',
@@ -963,6 +965,7 @@ Notoj:
 * Ĉu la eligo ne plaĉus al vi? Vidu [[{{MediaWiki:Coll-helppage}}|la helpan paĝon pri kolektoj]] por fojoj por plibonigi ĝin.",
 	'coll-notfound_title' => 'Kolekto Ne Trovita',
 	'coll-notfound_text' => 'Ne eblas trovi kolekto-paĝon.',
+	'coll-is_cached' => '<ul><li>Kaŝmemora versio de la dokumento estis trovita, tial bildigado ne bezonis.<a href="$1">Devigi re-bildigadon.</a></li></ul>',
 	'coll-excluded-templates' => '* Ŝablonoj en kategorio [[:Category:$1|$1]] estis ekskluzivita.',
 	'coll-blacklisted-templates' => '* Ŝablonoj en nigralisto [[:$1]] estis malebligitaj.',
 	'coll-return_to_collection' => '<p>Reiru al <a href="$1">$2</a></p>',
@@ -993,6 +996,8 @@ $messages['fa'] = array(
 	'coll-desc' => '[[Special:Collection|دسته‌بندی کردن صفحه‌ها]] و ایجاد پرونده‌های پی‌دی‌اف',
 	'coll-collection' => 'مجموعه',
 	'coll-collections' => 'مجموعه‌ها',
+	'coll-exclusion_category_title' => 'صرف نظر در چاپ',
+	'coll-print_template_prefix' => 'چاپ',
 	'coll-portlet_title' => 'ایجاد کتاب',
 	'coll-add_page' => 'افزودن این صفحه',
 	'coll-remove_page' => 'حذف این صفحه',
@@ -1003,6 +1008,7 @@ $messages['fa'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحه|صفحه}}',
 	'coll-unknown_subpage_title' => 'زیرصفحهٔ ناشناس',
 	'coll-unknown_subpage_text' => 'این زیرصفحه از [[[[Special:Collection|مجموعه]] وجود ندارد',
+	'coll-printable_version_pdf' => 'نسخهٔ پی‌دی‌اف',
 	'coll-download_as' => 'بارگیری با عنوان $1',
 	'coll-noscript_text' => '<h1>جاوااسکریپت لازم دارید!</h1>
 <strong>مرورگر شما جاوا اسکریپت را پشتیبانی نمی‌کند یا جاوا اسکیریپت شما خاموش است.
@@ -1046,7 +1052,7 @@ $messages['fa'] = array(
 	'coll-personal_collection_label' => 'مجموعه شخصی:',
 	'coll-community_collection_label' => 'مجموعه عمومی:',
 	'coll-save_collection' => 'ذخیرهٔ مجموعه',
-	'coll-save_category' => 'مجموعه‌ها در ردهٔ [[:Category:Collections|مجموعه‌ها]] ذخیره شده‌اند.',
+	'coll-save_category' => 'جموعه‌ها در ردهٔ [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]] ذخیره شدند.',
 	'coll-overwrite_title' => 'صفحه وجود دارد.
 رونویسی شود؟',
 	'coll-overwrite_text' => 'یک صفحه با نام [[:$1]] در حال حاضر موجود است.
@@ -1196,7 +1202,7 @@ Cette page ne s'affichera pas correctement tant que javascript n'est pas activé
 	'coll-personal_collection_label' => 'Compilation personnelle :',
 	'coll-community_collection_label' => 'Compilation collective :',
 	'coll-save_collection' => 'Sauvegarder la compilation',
-	'coll-save_category' => 'Les collections sont sauvegardées dans la catégorie [[:Category:{{MediaWiki:Coll-collections}}|Category:{{MediaWiki:Coll-collections}}]].',
+	'coll-save_category' => 'Les collections sont sauvegardées dans la catégorie [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => "La page existe déjà. L'écraser ?",
 	'coll-overwrite_text' => 'Une page nommée [[:$1]] existe déjà.
 Voulez-vous la remplacer par votre compilation ?',
@@ -1259,6 +1265,8 @@ $messages['gl'] = array(
 	'coll-desc' => '[[Special:Collection|Coleccionar páxinas]], xerar ficheiros PDF',
 	'coll-collection' => 'Colección',
 	'coll-collections' => 'Coleccións',
+	'coll-exclusion_category_title' => 'Excluír na impresión',
+	'coll-print_template_prefix' => 'Imprimir',
 	'coll-portlet_title' => 'Crear un libro',
 	'coll-add_page' => 'Engadir unha páxina wiki',
 	'coll-remove_page' => 'Eliminar unha páxina wiki',
@@ -1268,6 +1276,8 @@ $messages['gl'] = array(
 	'coll-help_collections' => 'Axuda coas coleccións',
 	'coll-n_pages' => '$1 {{PLURAL:$1|páxina|páxinas}}',
 	'coll-unknown_subpage_title' => 'Subpáxina descoñecida',
+	'coll-unknown_subpage_text' => 'Esta subpáxina de [[Special:Collection|Colección]] non existe',
+	'coll-printable_version_pdf' => 'Versión PDF',
 	'coll-download_as' => 'Descargar como $1',
 	'coll-noscript_text' => '<h1>Requírese o JavaScript!</h1>
 <strong>O seu navegador non soporta o JavaScript ou o JavaScript foi deshabilitado.
@@ -1310,7 +1320,7 @@ Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa
 	'coll-personal_collection_label' => 'Colección persoal:',
 	'coll-community_collection_label' => 'Colección da comunidade:',
 	'coll-save_collection' => 'Gardar a colección',
-	'coll-save_category' => 'As coleccións son gardadas na categoría [[:Category:Collections|Coleccións]].',
+	'coll-save_category' => 'As coleccións son gardadas na categoría [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'A páxina existe. Desexa sobreescribir?',
 	'coll-overwrite_text' => 'Xa existe unha páxina chamada [[:$1]].
 Quere reemprazala coa súa colección?',
@@ -1359,11 +1369,13 @@ Por favor, contacte co seu administrador MediaWiki.',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Crazymadlover
  * @author Omnipaedista
  */
 $messages['grc'] = array(
 	'coll-subtitle' => 'Ὑποεπιγραφή:',
 	'coll-contents' => 'Περιεχόμενα',
+	'coll-cancel' => 'Ἀκυροῦν',
 	'coll-rendering_title' => 'Ἀπόδοσις',
 	'coll-license' => 'Ἄδεια',
 );
@@ -2220,6 +2232,8 @@ $messages['jv'] = array(
 	'coll-desc' => '[[Special:Collection|Kolèksi kaca-kaca]], nggawé PDF',
 	'coll-collection' => 'Kolèksi',
 	'coll-collections' => 'Kolèksi-kolèksi',
+	'coll-exclusion_category_title' => 'Ora mèlu dicithak',
+	'coll-print_template_prefix' => 'Cithak',
 	'coll-portlet_title' => 'Gawé buku',
 	'coll-add_page' => 'Tambah kaca wiki',
 	'coll-remove_page' => 'Busak kaca wiki',
@@ -2274,7 +2288,7 @@ Kaca iki ora bakal tampil kanthi bener, kajaba JavaScript di aktifaké.</strong>
 	'coll-personal_collection_label' => 'Kolèksi pribadi:',
 	'coll-community_collection_label' => 'Kolèksi komunitas:',
 	'coll-save_collection' => 'Simpen kolèksi',
-	'coll-save_category' => 'Kolèksi disimpen ing kategori [[:Category:Collections|Kolèksi]].',
+	'coll-save_category' => 'Kolèksi disimpen ing kategori [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Kaca wis ana. Ditindhes waé?',
 	'coll-overwrite_text' => 'Kaca kanthi jeneng [[:$1]] wis ana.
 Apa arep diganti nganggo kolèksi panjenengan?',
@@ -2509,6 +2523,8 @@ $messages['lb'] = array(
 	'coll-desc' => "[[Special:Collection|Säiten zesummestellen]], PDF'e generéieren",
 	'coll-collection' => 'Sammlung',
 	'coll-collections' => 'Sammlungen',
+	'coll-exclusion_category_title' => 'Net mat drécken',
+	'coll-print_template_prefix' => 'Drécken',
 	'coll-portlet_title' => 'E Buch uleeën',
 	'coll-add_page' => 'Wiki-Säit derbäisetzen',
 	'coll-remove_page' => 'Wiki-Säit ewechhuelen',
@@ -2519,6 +2535,7 @@ $messages['lb'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|Säit|Säiten}}',
 	'coll-unknown_subpage_title' => 'Onbekannten Ënnersäit',
 	'coll-unknown_subpage_text' => 'Dës Ënnersäit vun der [[Special:Collection|Sammlung]] gëtt et net',
+	'coll-printable_version_pdf' => 'PDF-Versioun',
 	'coll-download_as' => 'Als $1 eroflueden',
 	'coll-noscript_text' => '<h1>JavaScript gëtt gebraucht!</h1>
 <strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
@@ -2554,7 +2571,7 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-personal_collection_label' => 'Perséinlech Sammlung',
 	'coll-community_collection_label' => 'Gemeinsam Kollektioun:',
 	'coll-save_collection' => 'Sammlung späicheren',
-	'coll-save_category' => 'Sammlunge ginn an der Kategorie [[:Category:Collections|Sammlunge]] gespäichert.',
+	'coll-save_category' => 'Sammlunge ginn an der Kategorie [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]] gespäichert.',
 	'coll-overwrite_title' => "D'Säit gëtt et. Iwwerschreiwen?",
 	'coll-overwrite_text' => 'Et gëtt schonn eng Säit mam Numm [:$1]].
 Wëllt Dir déi duerch är Sammlung ersetzen?',
@@ -3533,6 +3550,8 @@ $messages['ru'] = array(
 	'coll-desc' => '[[Special:Collection|Собирает коллекции страниц]], создаёт PDF',
 	'coll-collection' => 'Коллекция',
 	'coll-collections' => 'Коллекции',
+	'coll-exclusion_category_title' => 'Исключения из печати',
+	'coll-print_template_prefix' => 'Печать',
 	'coll-portlet_title' => 'Создать книгу',
 	'coll-add_page' => 'Добавить страницу',
 	'coll-remove_page' => 'Удалить страницу',
@@ -3543,6 +3562,7 @@ $messages['ru'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страницы|страниц}}',
 	'coll-unknown_subpage_title' => 'Неизвестная подстраница',
 	'coll-unknown_subpage_text' => 'Этой подстраницы [[Special:Collection|коллекции]] не существует',
+	'coll-printable_version_pdf' => 'PDF-версия',
 	'coll-download_as' => 'Загрузить как $1',
 	'coll-noscript_text' => '<h1>Требуется JavaScript!</h1>
 <strong>Ваш браузер не поддерживает JavaScript или данная поддержка была отключена.
@@ -3586,7 +3606,7 @@ $messages['ru'] = array(
 	'coll-personal_collection_label' => 'Личная коллекция:',
 	'coll-community_collection_label' => 'Коллекция сообщества:',
 	'coll-save_collection' => 'Сохранить коллекцию',
-	'coll-save_category' => 'Коллекции сохранены в категории [[:Категория:Коллекции|Коллекции]].',
+	'coll-save_category' => 'Коллекции сохранены в категории [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Страница существует. Перезаписать?',
 	'coll-overwrite_text' => 'Страница с именем [[:$1]] уже существует.
 Вы хотите чтобы она была заменена вашей коллекцией?',
@@ -3636,11 +3656,14 @@ $messages['ru'] = array(
 
 /** Slovak (Slovenčina)
  * @author Helix84
+ * @author Mormegil
  */
 $messages['sk'] = array(
 	'coll-desc' => 'Vytváranie [[Special:Collection|kolekcie stránok]], tvorba PDF',
 	'coll-collection' => 'Kolekcia',
 	'coll-collections' => 'Kolekcie',
+	'coll-exclusion_category_title' => 'Pri tlačení vynechať',
+	'coll-print_template_prefix' => 'Tlačiť',
 	'coll-portlet_title' => 'Vytvoriť knihu',
 	'coll-add_page' => 'Pridať wiki stránku',
 	'coll-remove_page' => 'Odstrániť wiki stránku',
@@ -3656,7 +3679,7 @@ $messages['sk'] = array(
 	'coll-noscript_text' => '<h1>Vyžaduje sa JavaScript!</h1>
 <strong>Váš prehliadač nepodporuje JavaScript alebo máte JavaScript vypnutý.
 Táto stránka nebude správne fungovať ak nezapnete JavaScript.</strong>',
-	'coll-intro_text' => 'Môžete vytvárať vlastné výbery wiki stránok.<br>Pozri ďalšie informácie na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].',
+	'coll-intro_text' => 'Môžete vytvárať vlastné výbery wiki stránok.<br />Pozri ďalšie informácie na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].',
 	'coll-helppage' => 'Help:Kolekcie',
 	'coll-your_book' => 'Vaša kniha',
 	'coll-download_title' => 'Stiahnuť',
@@ -3695,7 +3718,7 @@ Táto stránka nebude správne fungovať ak nezapnete JavaScript.</strong>',
 	'coll-personal_collection_label' => 'Osobné kolekcie:',
 	'coll-community_collection_label' => 'Komunitné kolekcie:',
 	'coll-save_collection' => 'Uložiť kolekciu',
-	'coll-save_category' => 'Kolekcie sa ukladajú v kategórii [[:Category:Collections|Kolekcie]].',
+	'coll-save_category' => 'Kolekcie sa ukladajú v kategórii [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Stránka existuje. Prepísať?',
 	'coll-overwrite_text' => 'Stránka s názvom [[:$1]] už existuje.
 Chcete ju nahradiť svojou kolekciou?',
@@ -3952,7 +3975,7 @@ Denna sida kommer inte att fungera korrekt, tills JavaScript är tillgängligt.<
 	'coll-personal_collection_label' => 'Personlig samling:',
 	'coll-community_collection_label' => 'Deltagarsamling:',
 	'coll-save_collection' => 'Spara samling',
-	'coll-save_category' => 'Samlingar sparas i [[:Category:{{MediaWiki:Coll-collections}}|Kategori:{{MediaWiki:Coll-collections}}]].',
+	'coll-save_category' => 'Samlingar sparas i kategorin [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Sidan existerar. Vill du skriva över den?',
 	'coll-overwrite_text' => 'En sida med namnet [[:$1]] finns redan.
 Vill du ersätta den med din samling?',
