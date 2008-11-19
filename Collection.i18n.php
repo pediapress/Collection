@@ -1467,7 +1467,7 @@ $messages['he'] = array(
 	'coll-personal_collection_label' => 'אוסף פרטי:',
 	'coll-community_collection_label' => 'אוסף קהילתי:',
 	'coll-save_collection' => 'שמירת האוסף',
-	'coll-save_category' => 'אוספים נשמרים בקטגוריה [[:Category:אוספים|אוספים]].',
+	'coll-save_category' => 'אוספים נשמרים בקטגוריה [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'הדף כבר קיים.
 האם לדרוס אותו?',
 	'coll-overwrite_text' => 'דף בשם [[:$1]] כבר קיים.
