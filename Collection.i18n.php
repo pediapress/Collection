@@ -2543,6 +2543,7 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-helppage' => 'Help:Kollektioun',
 	'coll-your_book' => 'Ärt Buch',
 	'coll-download_title' => 'Eroflueden',
+	'coll-download_text' => 'Fir eng offline Versioun erofzelueden, wielt w.e.g. e Format a klickt op de Knäppchen.',
 	'coll-download' => 'Eroflueden',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Ewechhuelen',
