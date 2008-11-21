@@ -1373,11 +1373,14 @@ Por favor, contacte co seu administrador MediaWiki.',
  * @author Omnipaedista
  */
 $messages['grc'] = array(
+	'coll-show' => 'Δεικνύναι',
 	'coll-subtitle' => 'Ὑποεπιγραφή:',
 	'coll-contents' => 'Περιεχόμενα',
 	'coll-cancel' => 'Ἀκυροῦν',
 	'coll-rendering_title' => 'Ἀπόδοσις',
+	'coll-about_pp' => 'Περὶ $1',
 	'coll-license' => 'Ἄδεια',
+	'coll-return_to' => 'Ἐπανιέναι εἰς [[:$1]]',
 );
 
 /** Swiss German (Alemannisch)
