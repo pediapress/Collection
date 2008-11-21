@@ -1108,7 +1108,9 @@ EOS
 EOS
 				;
 			} else if ( !$ajaxHint && (is_null( $wgArticle ) || !$wgArticle->exists()) ) {
-				return;
+				if ( self::countArticles() == 0) {
+					return;
+				}
 			} else if ( $ajaxHint || in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
 				$params = "arttitle=" . $wgTitle->getPrefixedUrl();
 				if ( !is_null( $wgArticle ) ) {
