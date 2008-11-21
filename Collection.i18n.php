@@ -112,8 +112,8 @@ If this does not work, please press refresh button of your browser.</p>",
 	'coll-rendering_article'          => ' (wiki page: $1)',
 	'coll-rendering_page'             => ' (page: $1)',
 	'coll-rendering_finished_title'   => 'Rendering finished',
-	'coll-rendering_finished_text'    => "'''The document file has been generated.'''
-'''[$1 Click here]''' to download it to your computer.
+	'coll-rendering_finished_text'    => "<strong>The document file has been generated.</strong>
+<strong>[$1 Click here]</strong> to download it to your computer.
 
 Notes:
 * Not satisfied with the output? See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
@@ -312,15 +312,15 @@ $messages['ar'] = array(
 
 <p>هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان.
 لو أن هذا لا يعمل، من فضلك اضغط زر التحديث في متصفحك.</p>',
-	'coll-rendering_status' => "'''الحالة:''' $1",
+	'coll-rendering_status' => '<strong>الحالة:</strong> $1',
 	'coll-rendering_article' => '  (المقالة: $1)',
 	'coll-rendering_page' => '  (الصفحة: $1)',
 	'coll-rendering_finished_title' => 'العرض انتهى',
-	'coll-rendering_finished_text' => "'''ملف الوثيقة تم توليده.'''
-'''[$1 اضغط هنا]''' لتنزيله إلى حاسوبك.
+	'coll-rendering_finished_text' => '<strong>ملف الوثيقة تم توليده.</strong>
+<strong>[$1 اضغط هنا]</strong> لتنزيله إلى حاسوبك.
 
 ملاحظات:
-* غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.",
+* غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.',
 	'coll-notfound_title' => 'المجموعة غير موجودة',
 	'coll-notfound_text' => 'لم يمكن العثور على صفحة المجموعة.',
 	'coll-is_cached' => '<ul><li>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></li></ul>',
@@ -427,15 +427,15 @@ $messages['arz'] = array(
 
 هذه الصفحة  لازم تتحدث كل عدة ثوان.
 لو أن هذا لا يعمل، من فضلك اضغط زر التحديث فى متصفحك.",
-	'coll-rendering_status' => "'''الحالة:''' $1",
+	'coll-rendering_status' => '<strong>الحالة:</strong> $1',
 	'coll-rendering_article' => '   (المقالة: $1)',
 	'coll-rendering_page' => '   (الصفحة: $1)',
 	'coll-rendering_finished_title' => 'العرض انتهى',
-	'coll-rendering_finished_text' => "'''ملف الوثيقة تم توليده.'''
-'''[$1 اضغط هنا]''' لتنزيله إلى حاسوبك.
+	'coll-rendering_finished_text' => '<strong>ملف الوثيقة تم توليده.</strong>
+<strong>[$1 اضغط هنا]</strong> لتنزيله إلى حاسوبك.
 
 ملاحظات:
-* غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.",
+* غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.',
 	'coll-notfound_title' => 'المجموعة غير موجودة',
 	'coll-notfound_text' => 'لم يمكن العثور على صفحة المجموعة.',
 	'coll-is_cached' => '<ul><li>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></li></ul>',
@@ -518,7 +518,7 @@ $messages['bg'] = array(
 	'coll-overwrite' => 'Заместване',
 	'coll-append' => 'Добавяне',
 	'coll-cancel' => 'Отказване',
-	'coll-rendering_status' => "'''Статут:''' $1",
+	'coll-rendering_status' => '<strong>Статут:</strong> $1',
 	'coll-rendering_article' => '  (уики-страница: $1)',
 	'coll-rendering_page' => '  (страница: $1)',
 	'coll-return_to_collection' => '<p>Връщане към <a href="$1">$2</a></p>',
@@ -655,11 +655,11 @@ Pokud to nefunguje, stiskněte v prohlížeči tlačítko <i>obnovit</i>.</p>',
 	'coll-rendering_article' => '  (článek: $1)',
 	'coll-rendering_page' => '  (stránka: $1)',
 	'coll-rendering_finished_title' => 'Vykreslování dokončeno',
-	'coll-rendering_finished_text' => "'''Soubor s dokumentem byl vytvořen.'''
-Můžete si ho '''[$1 stáhnout do svého počítače]'''.
+	'coll-rendering_finished_text' => '<strong>Soubor s dokumentem byl vytvořen.</strong>
+Můžete si ho <strong>[$1 stáhnout do svého počítače]</strong>.
 
 Poznámky:
-* Nejste spokojeni s výsledkem? Podívejte se na [[{{MediaWiki:Coll-helppage}}|stránku s nápovědou ke kolekcím]], jak ho vylepšit.",
+* Nejste spokojeni s výsledkem? Podívejte se na [[{{MediaWiki:Coll-helppage}}|stránku s nápovědou ke kolekcím]], jak ho vylepšit.',
 	'coll-notfound_title' => 'Kolekce nenalezena',
 	'coll-notfound_text' => 'Nebylo možné najít stránku kolekce',
 	'coll-is_cached' => '<ul><li>Byla nalezena cachovaná verze tohoto dokumentu, takže nebylo třeba vykreslovat. <a href="$1">Vynutit nové vykreslení.</a></li></ul>',
@@ -779,11 +779,11 @@ Wenn das jedoch nicht geschieht, drücke bitte den „Aktualisieren“-Knopf (me
 	'coll-rendering_article' => '  (Artikel: $1)',
 	'coll-rendering_page' => '  (Seite: $1)',
 	'coll-rendering_finished_title' => 'Fertig erstellt',
-	'coll-rendering_finished_text' => "'''Die Datei wurde erfolgreich erstellt.'''
-'''[$1 Klicke hier],''' um die Datei herunterzuladen.
+	'coll-rendering_finished_text' => '<strong>Die Datei wurde erfolgreich erstellt.</strong>
+<strong>[$1 Klicke hier],</strong> um die Datei herunterzuladen.
 
 Hinweise:
-* Bist du mit dem Ergebnis nicht zufrieden? Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Coll-helppage}}|Hilfeseite über die Sammlungen]].",
+* Bist du mit dem Ergebnis nicht zufrieden? Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Coll-helppage}}|Hilfeseite über die Sammlungen]].',
 	'coll-notfound_title' => 'Sammlung nicht gefunden',
 	'coll-notfound_text' => 'Deine Sammlung konnte nicht gefunden werden.',
 	'coll-is_cached' => '<ul><li>Es ist eine zwischengespeicherte Version des Dokumentes vorhanden, so dass kein Rendern notwendig war. <a href="$1">Neurendern erzwingen.</a></li></ul>',
@@ -912,6 +912,7 @@ $messages['eo'] = array(
 	'coll-title' => 'Titolo:',
 	'coll-subtitle' => 'Subtitolo:',
 	'coll-contents' => 'Enhavaĵoj',
+	'coll-drag_and_drop' => 'Uzu musan tren-kaj-maltenon por reordigi vikiajn paĝojn kaj ĉapitrojn',
 	'coll-create_chapter' => 'Krei ĉapitron',
 	'coll-sort_alphabetically' => 'Ordigi laŭ alfabeto',
 	'coll-clear_collection' => 'Forviŝi kolekton',
@@ -940,6 +941,8 @@ $messages['eo'] = array(
 Ĉu vi volas anstatŭigi ĝin kun via kolekto?',
 	'coll-yes' => 'Jes',
 	'coll-no' => 'Ne',
+	'coll-load_overwrite_text' => 'Vi jam havas iujn paĝojn en via kolekto.
+Ĉu vi volas anstataŭigi vian nunan kolekton, aldoni la novan enhavon, aŭ nuligi ŝarĝadon de ĉi tiu kolekto?',
 	'coll-overwrite' => 'Anstataŭigu',
 	'coll-append' => 'Aldoni',
 	'coll-cancel' => 'Nuligi',
@@ -954,15 +957,15 @@ Neniom pluaj paĝoj ne povas esti aldonitaj.',
 
 <p>Ĉi tiu paĝo aŭtomatike refreŝigu kelksekunde.
 Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.</p>',
-	'coll-rendering_status' => "'''Statuso:''' $1",
+	'coll-rendering_status' => '<strong>Statuso:</strong> $1',
 	'coll-rendering_article' => '  (vikipaĝo: $1)',
 	'coll-rendering_page' => '  (paĝo: $1)',
 	'coll-rendering_finished_title' => 'Generado finiĝis.',
-	'coll-rendering_finished_text' => "'''La dokumento estis generita.'''
-'''[$1 Klaku ĉi tie]''' por elŝuti ĝin al via komputilo.
+	'coll-rendering_finished_text' => '<strong>La dokumento estis generita.</strong>
+<strong>[$1 Klaku ĉi tie]</strong> por elŝuti ĝin al via komputilo.
 
 Notoj:
-* Ĉu la eligo ne plaĉus al vi? Vidu [[{{MediaWiki:Coll-helppage}}|la helpan paĝon pri kolektoj]] por fojoj por plibonigi ĝin.",
+* Ĉu la eligo ne plaĉus al vi? Vidu [[{{MediaWiki:Coll-helppage}}|la helpan paĝon pri kolektoj]] por fojoj por plibonigi ĝin.',
 	'coll-notfound_title' => 'Kolekto Ne Trovita',
 	'coll-notfound_text' => 'Ne eblas trovi kolekto-paĝon.',
 	'coll-is_cached' => '<ul><li>Kaŝmemora versio de la dokumento estis trovita, tial bildigado ne bezonis.<a href="$1">Devigi re-bildigadon.</a></li></ul>',
@@ -1076,15 +1079,15 @@ $messages['fa'] = array(
 
 <p>این صفحه باید به طور خودکار هر چند ثانیه یکبار تازه شود.
 اگر این کار صورت نمی‌گیرد، لطفاً دکمهٔ تازه کردن صفحه را در مرورگر خود بزنید.</p>',
-	'coll-rendering_status' => "'''وضعیت:''' $1",
+	'coll-rendering_status' => '<strong>وضعیت:</strong> $1',
 	'coll-rendering_article' => '  (صفحهٔ ویکی: $1)',
 	'coll-rendering_page' => '  (صفحه: $1)',
 	'coll-rendering_finished_title' => 'پایان ترجمه',
-	'coll-rendering_finished_text' => "'''پروندهٔ سند ایجاد شده‌است.'''
-'''[$1 این‌جا کلیک کنید]''' تا آن را به روی رایانهٔ خود بارگیری کنید.
+	'coll-rendering_finished_text' => '<strong>پروندهٔ سند ایجاد شده‌است.</strong>
+<strong>[$1 این‌جا کلیک کنید]</strong> تا آن را به روی رایانهٔ خود بارگیری کنید.
 
 نکته:
-* از خروجی راضی نیستید؟ [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای مجموعه‌ها]] را ببینید تا از امکانات بهبود آن با خبر شوید.",
+* از خروجی راضی نیستید؟ [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای مجموعه‌ها]] را ببینید تا از امکانات بهبود آن با خبر شوید.',
 	'coll-notfound_title' => 'مجموعه پیدا نشد',
 	'coll-notfound_text' => 'صفحهٔ مجموعه پیدا نشد.',
 	'coll-is_cached' => '<ul><li>یک نسخهٔ کاشه‌گیری شده از این سند پیدا شد، به همین خاطر ترجمه لازم نبود. <a href="$1">ترجمهٔ اجباری.</a></li></ul>',
@@ -1224,15 +1227,15 @@ Aucune page ne peut être ajoutée.',
 
 <p>Cette page devrait s’actualiser automatiquement par intervalles réguliers de secondes.
 Si tel n\'était pas le cas, veuillez cliquer sur le bouton d’actualisation de votre navigateur.</p>',
-	'coll-rendering_status' => "'''Statut :''' $1",
+	'coll-rendering_status' => '<strong>Statut :</strong> $1',
 	'coll-rendering_article' => '  (page wiki : $1)',
 	'coll-rendering_page' => '  (page : $1)',
 	'coll-rendering_finished_title' => 'Rendu terminé',
-	'coll-rendering_finished_text' => "'''Le fichier document a été créé.'''
+	'coll-rendering_finished_text' => '<strong>Le fichier document a été créé.</strong>
 [$1 Cliquez ici] pour le télécharger sur votre ordinateur.
 
 Notes :
-* Non satisfait de la sortie ? Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]] pour les possibilités de son amélioration.",
+* Non satisfait de la sortie ? Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]] pour les possibilités de son amélioration.',
 	'coll-notfound_title' => 'Compilation non trouvée',
 	'coll-notfound_text' => 'Ne peut trouver la compilation.',
 	'coll-is_cached' => '<ul><li>Une version en cache du document a été trouvée, aucun rendu n\'était ainsi nécessaire. <a href="$1">Forcer une nouvelle fois le rendu.</a></li></ul>',
@@ -1346,11 +1349,11 @@ Se non vai, por favor, prema no botón "Refrescar" do seu navegador.</p>',
 	'coll-rendering_article' => '  (páxina wiki: $1)',
 	'coll-rendering_page' => '  (páxina: $1)',
 	'coll-rendering_finished_title' => 'Finalizou a renderización',
-	'coll-rendering_finished_text' => "'''O documento foi xerado.'''
-'''[$1 Prema aquí]''' para descargalo no seu ordenador.
+	'coll-rendering_finished_text' => '<strong>O documento foi xerado.</strong>
+<strong>[$1 Prema aquí]</strong> para descargalo no seu ordenador.
 
 Notas:
-*Non está satisfeito co ficheiro obtido? Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para comprobar as posibilidades de melloralo.",
+*Non está satisfeito co ficheiro obtido? Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para comprobar as posibilidades de melloralo.',
 	'coll-notfound_title' => 'Non se pode atopar a colección',
 	'coll-notfound_text' => 'Non se pode atopar a páxina da colección.',
 	'coll-is_cached' => '<ul><li>Atopouse unha versión do documento na memoria caché, polo que non vai ser necesaria a renderización. <a href="$1">Forzala.</a></li></ul>',
@@ -1509,11 +1512,11 @@ $messages['he'] = array(
 	'coll-rendering_article' => ' (דף תוכן: $1)',
 	'coll-rendering_page' => ' (דף: $1)',
 	'coll-rendering_finished_title' => 'היצירה הסתיימה',
-	'coll-rendering_finished_text' => "'''קובץ המסמך נוצר.'''
-'''[$1 לחצו כאן]''' כדי להוריד אותו למחשב.
+	'coll-rendering_finished_text' => '<strong>קובץ המסמך נוצר.</strong>
+<strong>[$1 לחצו כאן]</strong> כדי להוריד אותו למחשב.
 
 הערות:
-* אינכם מרוצים מהפלט? ב[[{{MediaWiki:Coll-helppage}}|דף העזרה על אוספים]] תוכלו למצוא אפשרויות לשיפורו.",
+* אינכם מרוצים מהפלט? ב[[{{MediaWiki:Coll-helppage}}|דף העזרה על אוספים]] תוכלו למצוא אפשרויות לשיפורו.',
 	'coll-notfound_title' => 'האוסף לא נמצא',
 	'coll-notfound_text' => 'לא ניתן למצוא את דף האוסף.',
 	'coll-is_cached' => '<ul><li>גרסה שמורה של המסמך נמצאה, כך שאין צורך ביצירתו. <a href="$1">יצירה מחדש.</a></li></ul>',
@@ -1686,15 +1689,15 @@ Nove stranice ne mogu biti dodane.',
 
 <p>Ova stranice bi se trebala automatski osvježiti svakih par sekundi.
 Ako ovo ne radi, molimo pritisnite tipku za osvježavanje u svom pregledniku.</p>',
-	'coll-rendering_status' => "'''Stanje:''' $1",
+	'coll-rendering_status' => '<strong>Stanje:</strong> $1',
 	'coll-rendering_article' => '  (wiki stranica: $1)',
 	'coll-rendering_page' => '  (stranica: $1)',
 	'coll-rendering_finished_title' => 'Izvođenje završeno',
-	'coll-rendering_finished_text' => "'''Datoteka je napravljena.'''
-'''[$1 Kliknite ovdje]'''za preuzimanje datoteke na vaše računalo.
+	'coll-rendering_finished_text' => '<strong>Datoteka je napravljena.</strong>
+<strong>[$1 Kliknite ovdje]</strong>za preuzimanje datoteke na vaše računalo.
 
 Napomene:
-* Niste zadovoljni dobivenim rezultatom? Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za mogućnosti poboljšanja.",
+* Niste zadovoljni dobivenim rezultatom? Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za mogućnosti poboljšanja.',
 	'coll-notfound_title' => 'Zbirka nije pronađena',
 	'coll-notfound_text' => 'Stranica zbirke se ne može pronaći.',
 	'coll-is_cached' => '<ul><li>Pronađena je verzija datoteke u pričuvnoj memoriji, stoga izvođenje datoteke nije potrebno.. <a href="$1">Zahtijevaj ponovno izvođenje.</a></li></ul>',
@@ -1877,11 +1880,11 @@ Ha ez nem történik meg, kérlek nyomd meg a böngésződ frissítés gombját!
 	'coll-rendering_article' => '(wiki oldal: $1)',
 	'coll-rendering_page' => '(oldal: $1)',
 	'coll-rendering_finished_title' => 'A renderelés befejeződött',
-	'coll-rendering_finished_text' => "'''A dokumentum fájl ekészült.'''
-'''[$1 Kattints ide]''' a letöltéshez.
+	'coll-rendering_finished_text' => '<strong>A dokumentum fájl ekészült.</strong>
+<strong>[$1 Kattints ide]</strong> a letöltéshez.
 
 Megjegyzés:
-* Nem vagy elégedett az eredménnyel? Lásd a  [[{{MediaWiki:Coll-helppage}}|gyűjteményekről szóló segítség oldalt]] a javítási lehetőségekről.",
+* Nem vagy elégedett az eredménnyel? Lásd a  [[{{MediaWiki:Coll-helppage}}|gyűjteményekről szóló segítség oldalt]] a javítási lehetőségekről.',
 	'coll-notfound_title' => 'A gyűjtemény nem található',
 	'coll-notfound_text' => 'A gyűjtemény oldal nem található.',
 	'coll-is_cached' => '<ul><li>A dokumentum egy gyorsítótárazott változata megtalálható volt így nem volt szükség renderelésre.<a href="$1">Újra renderelés kényszerítése.</a></li></ul>',
@@ -1980,15 +1983,15 @@ Non es possibile adder plus paginas.',
 
 <p>Iste pagina deberea refrescar se automaticamente cata pauc secundas.
 Si isto non functiona, per favor preme le button de refrescar in tu navigator.</p>',
-	'coll-rendering_status' => "'''Stato:''' $1",
+	'coll-rendering_status' => '<strong>Stato:</strong> $1',
 	'coll-rendering_article' => '   (pagina wiki: $1)',
 	'coll-rendering_page' => '   (pagina: $1)',
 	'coll-rendering_finished_title' => 'Rendition finite',
-	'coll-rendering_finished_text' => "'''Le file del documento ha essite generate.'''
-'''[$1 Clicca hic]''' pro discargar lo verso tu computator.
+	'coll-rendering_finished_text' => '<strong>Le file del documento ha essite generate.</strong>
+<strong>[$1 Clicca hic]</strong> pro discargar lo verso tu computator.
 
 Notas:
-* Non satisfacite con le resultato? Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le collectiones]] pro possibilitates de meliorar lo.",
+* Non satisfacite con le resultato? Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le collectiones]] pro possibilitates de meliorar lo.',
 	'coll-notfound_title' => 'Collection non trovate',
 	'coll-notfound_text' => 'Non poteva trovar le pagina de collection.',
 	'coll-is_cached' => '<ul><li>Un version del documento ha essite trovate in le cache, ergo non esseva necessari facer un altere rendition. <a href="$1">Fortiar le re-rendition.</a></li></ul>',
@@ -2030,7 +2033,6 @@ $messages['is'] = array(
 	'coll-load_collection' => 'Hlaða safn',
 	'coll-show_collection' => 'Sýna safn',
 	'coll-help_collections' => 'Safnhjálp',
-	'coll-my_collection' => 'Mitt safn',
 	'coll-remove' => 'Fjarlægja',
 	'coll-title' => 'Titill:',
 	'coll-rename' => 'Endurnefna',
@@ -2133,15 +2135,15 @@ Si desidera sovrascrivere la raccolta corrente, aggiungere il nuovo contenuto o 
 
 <p>Questa pagina dovrebbe aggiornarsi automaticamente ogni pochi secondi.
 Se questo non funziona, premi il pulsante di aggiornamento del tuo browser.</p>',
-	'coll-rendering_status' => "'''Stato:''' $1",
+	'coll-rendering_status' => '<strong>Stato:</strong> $1',
 	'coll-rendering_article' => '  (pagina wiki: $1)',
 	'coll-rendering_page' => '  (pagina: $1)',
 	'coll-rendering_finished_title' => 'Conversione terminata',
-	'coll-rendering_finished_text' => "'''Il documento è stato generato.'''
-'''[$1 Fai clic qui]''' per scaricarlo sul tuo computer.
+	'coll-rendering_finished_text' => '<strong>Il documento è stato generato.</strong>
+<strong>[$1 Fai clic qui]</strong> per scaricarlo sul tuo computer.
 
 Note:
-* Non sei soddisfatto del risultato? Leggi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sulle raccolte]] riguardo alle possibilità per migliorarlo.",
+* Non sei soddisfatto del risultato? Leggi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sulle raccolte]] riguardo alle possibilità per migliorarlo.',
 	'coll-notfound_title' => 'Raccolta non trovata',
 	'coll-notfound_text' => 'Non è possibile trovare la pagina della raccolta.',
 	'coll-is_cached' => '<ul><li>Una versione del documento è stato trovato nella cache quindi la conversione non è stata necessaria. <a href="$1">Forza la ri-conversione.</a></li></ul>',
@@ -2317,8 +2319,8 @@ Yèn ora mangkono, mangga pencèt tombol ''refresh'' ing ''browser'' panjenengan
 	'coll-rendering_article' => ' (kaca wiki: $1)',
 	'coll-rendering_page' => '  (kaca: $1)',
 	'coll-rendering_finished_title' => 'Rampung ngowahi/gawé',
-	'coll-rendering_finished_text' => "'''Berkas dokumèn wis digawé.'''
-'''[$1 Klik ing kéné]''' kanggo ngundhuh menyang komputer panjenengan.
+	'coll-rendering_finished_text' => "<strong>Berkas dokumèn wis digawé.</strong>
+<strong>[$1 Klik ing kéné]</strong> kanggo ngundhuh menyang komputer panjenengan.
 
 Cathetan:
 * Kurang rena karo wetonan (''output'')é? Pirsani [[{{MediaWiki:Coll-helppage}}|kaca pitulung bab kolèkasi]] kanggo kamungkinan ningkataké.",
@@ -2502,7 +2504,7 @@ aanhänge, udder wells de di Sammlong lever doch nit laade?',
 	'coll-append' => 'Aanhänge',
 	'coll-cancel' => 'Ophüre',
 	'coll-limit_exceeded_title' => 'De Sammlong es zo jruhß',
-	'coll-rendering_status' => "'''Shtattus:''' $1",
+	'coll-rendering_status' => '<strong>Shtattus:</strong> $1',
 	'coll-rendering_article' => '  (Wiki-Sigge-Tittel: $1)',
 	'coll-rendering_page' => '  (Sigg Nommer: $1)',
 	'coll-notfound_title' => 'Han de Sammlong nit jefonge',
@@ -2595,7 +2597,7 @@ Et kënne keng Säite méi derbäigesat ginn.',
 
 <p>Dës Säit gëtt normalerweis automatesch aktualiséiert.
 Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh Knäppche vun ärem Browser.</p>',
-	'coll-rendering_status' => "'''Statut :''' $1",
+	'coll-rendering_status' => '<strong>Statut :</strong> $1',
 	'coll-rendering_article' => ' (Wiki Säit: $1)',
 	'coll-rendering_page' => ' (Säit: $1)',
 	'coll-rendering_finished_title' => 'Fäerdeg gemaach',
@@ -2842,11 +2844,11 @@ Jika tidak, sila tekan butang \'\'refresh\'\' di pelayar web anda.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '  (laman wiki: $1)',
 	'coll-rendering_page' => '  (laman: $1)',
-	'coll-rendering_finished_text' => "'''Fail dokumen tersebut telah dijana.'''
-'''[$1 Klik di sini]''' untuk memuat turun fail ini.
+	'coll-rendering_finished_text' => '<strong>Fail dokumen tersebut telah dijana.</strong>
+<strong>[$1 Klik di sini]</strong> untuk memuat turun fail ini.
 
 Catatan:
-* Tidak berpuas hati dengan output yang dihasilkan? Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan mengenai koleksi]] untuk mengetahui bagaimana anda boleh memperbaikinya lagi.",
+* Tidak berpuas hati dengan output yang dihasilkan? Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan mengenai koleksi]] untuk mengetahui bagaimana anda boleh memperbaikinya lagi.',
 	'coll-notfound_title' => 'Koleksi tidak dijumpai',
 	'coll-notfound_text' => 'Laman koleksi tidak dapat dijumpai.',
 	'coll-excluded-templates' => '* Templat-templat dalam kategori [[:Category:$1|$1]] telah dikecualikan.',
@@ -3007,15 +3009,15 @@ U kunt geen pagina's meer toevoegen.",
 
 <p>Deze pagina wordt regelmatig bijgewerkt.
 Als dit niet werkt, klik dan op de knop "Vernieuwen" in uw browser.</p>',
-	'coll-rendering_status' => "'''Status:''' $1",
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wikipagina: $1)',
 	'coll-rendering_page' => '(pagina: $1)',
 	'coll-rendering_finished_title' => 'Renderen afgerond',
-	'coll-rendering_finished_text' => "'''Het document is aangemaakt.'''
-'''[$1 Klik hier]''' om het te downloaden.
+	'coll-rendering_finished_text' => '<strong>Het document is aangemaakt.</strong>
+<strong>[$1 Klik hier]</strong> om het te downloaden.
 
 Opmerkingen:
-* Niet tevreden met de uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om deze te verbeteren.",
+* Niet tevreden met de uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om deze te verbeteren.',
 	'coll-notfound_title' => 'Collectie niet gevonden',
 	'coll-notfound_text' => 'De collectiepagina is niet gevonden.',
 	'coll-is_cached' => '<ul><li>Er is een versie van het document beschikbaar in de cache, dus opnieuw renderen was niet nodig.
@@ -3118,11 +3120,11 @@ Vil du erstatte den eksisterende samlingen, legge til det nye innholdet eller av
 Denne siden skal oppfriskes automatisk med noen sekunders mellomrom.
 Om den ikke gjør det, trykk på oppdateringsknappen i nettleseren din.",
 	'coll-rendering_finished_title' => 'Opprettet',
-	'coll-rendering_finished_text' => "'''Dokumentfilen har blitt opprettet.'''
-'''[$1 Klikk her]''' for å laste den ned.
+	'coll-rendering_finished_text' => '<strong>Dokumentfilen har blitt opprettet.</strong>
+<strong>[$1 Klikk her]</strong> for å laste den ned.
 
 Merk:
-* Misfornøyd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden for samlinger]] for måter å forbedre den på.",
+* Misfornøyd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden for samlinger]] for måter å forbedre den på.',
 	'coll-notfound_title' => 'Samling ikke funnet',
 	'coll-notfound_text' => 'Kunne ikke finne samlingsside.',
 	'coll-excluded-templates' => '* Maler i kategorien [[:Category:$1|$1]] har blitt utelatt.',
@@ -3221,15 +3223,15 @@ Cap de pagina pòt pas èsser aponduda.',
 
 <p>Aquesta pagina se deuriá actualizar automaticament per intervals regulars de qualques segondas.
 S\'èra pas lo cas, clicatz sul boton d’actualizacion de vòstre navigador.</p>',
-	'coll-rendering_status' => "'''Estatut :''' $1",
+	'coll-rendering_status' => '<strong>Estatut :</strong> $1',
 	'coll-rendering_article' => '  (pagina wiki : $1)',
 	'coll-rendering_page' => '  (pagina : $1)',
 	'coll-rendering_finished_title' => 'Rendut acabat',
-	'coll-rendering_finished_text' => "'''Lo fichièr document es estat creat.'''
+	'coll-rendering_finished_text' => '<strong>Lo fichièr document es estat creat.</strong>
 [$1 Clicatz aicí] per lo telecargar sus vòstre ordenador.
 
 Nòtas :
-Pas satisfach(a) de la sortida ? Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las colleccions]] per las possibilitats de melhorament.",
+Pas satisfach(a) de la sortida ? Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las colleccions]] per las possibilitats de melhorament.',
 	'coll-notfound_title' => 'Compilacion pas trobada',
 	'coll-notfound_text' => 'Pòt pas trobar la compilacion.',
 	'coll-is_cached' => '<ul><li>Una version en amagatal del document es estada trobada, cap de rendut èra pas necessari. <a href="$1">Forçar lo rendut un còp de mai.</a></li></ul>',
@@ -3345,15 +3347,15 @@ Nie można dodać więcej stron.',
 
 <p>Ta strona powinna się automatycznie odświeżać co kilka sekund.
 Jeśli tak nie jest, proszę odświeżyć swoją przeglądarkę.</p>',
-	'coll-rendering_status' => "'''Status:''' $1",
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wiki strona: $1)',
 	'coll-rendering_page' => '(strona: $1)',
 	'coll-rendering_finished_title' => 'Renderowanie zakończone',
-	'coll-rendering_finished_text' => "'''Dokument został wygenerowany.'''
-'''[$1 Kliknij tutaj]''' by pobrać go na swój komputer.
+	'coll-rendering_finished_text' => '<strong>Dokument został wygenerowany.</strong>
+<strong>[$1 Kliknij tutaj]</strong> by pobrać go na swój komputer.
 
 Uwaga:
-* Nie jesteś zadowolony z wygenerowanego dokumentu? Zajrzyj na [[{{MediaWiki:Coll-helppage}}|stronę pomocy na temat kolekcji]] by dowiedzieć się jakie są możliwości poprawy dokumentu.",
+* Nie jesteś zadowolony z wygenerowanego dokumentu? Zajrzyj na [[{{MediaWiki:Coll-helppage}}|stronę pomocy na temat kolekcji]] by dowiedzieć się jakie są możliwości poprawy dokumentu.',
 	'coll-notfound_title' => 'Nie znaleziono kolekcji',
 	'coll-notfound_text' => 'Nie udało się znaleźć strony kolekcji.',
 	'coll-is_cached' => '<ul><li>Dokument zachował się w pamięci podręcznej, więc nie ma potrzeby renderowania. <a href="$1">Wymuś ponowane renderowanie.</a></li></ul>',
@@ -3479,11 +3481,11 @@ Se isto não funcionar, por favor utilize o botão de refrescamento do seu naveg
 	'coll-rendering_article' => '  (página wiki: $1)',
 	'coll-rendering_page' => '  (página: $1)',
 	'coll-rendering_finished_title' => 'Renderização concluída',
-	'coll-rendering_finished_text' => "'''O ficheiro foi gerado.'''
-'''[$1 Clique aqui]''' para transferir a seu computador.
+	'coll-rendering_finished_text' => '<strong>O ficheiro foi gerado.</strong>
+<strong>[$1 Clique aqui]</strong> para transferir a seu computador.
 
 Notas:
-*Não está satisfeito com o resultado? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para possibilidades de aprimoramentos.",
+*Não está satisfeito com o resultado? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para possibilidades de aprimoramentos.',
 	'coll-notfound_title' => 'Colecção Não Encontrada',
 	'coll-notfound_text' => 'Não foi possível encontrar a página da colecção.',
 	'coll-is_cached' => '<ul><li>Foi encontrada uma versão deste documento em cache, dispensando a renderização. <a href="$1"> Forçar nova renderização.</a></li></ul>',
@@ -3632,15 +3634,15 @@ $messages['ru'] = array(
 
 <p>Эта страница должна обновляться раз в несколько секунд.
 Если этого не происходит, пожалуйста, нажмите кнопку «обновить» браузера.</p>',
-	'coll-rendering_status' => "'''Статус:''' $1",
+	'coll-rendering_status' => '<strong>Статус:</strong> $1',
 	'coll-rendering_article' => '(статья: $1)',
 	'coll-rendering_page' => '  (страница: $1)',
 	'coll-rendering_finished_title' => 'Создание завершено',
-	'coll-rendering_finished_text' => "'''Файл документа создан.'''
-'''[$1 Нажмите здесь]''', чтобы скачать его к себе на компьютер.
+	'coll-rendering_finished_text' => '<strong>Файл документа создан.</strong>
+<strong>[$1 Нажмите здесь]</strong>, чтобы скачать его к себе на компьютер.
 
 Отметьте:
-* Не удовлетворены результатом? Возможности его улучшения описаны на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].",
+* Не удовлетворены результатом? Возможности его улучшения описаны на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].',
 	'coll-notfound_title' => 'Коллекция не найдена',
 	'coll-notfound_text' => 'Невозможно найти страницу коллекции.',
 	'coll-is_cached' => '<ul><li>Найдена закэшированная версия этого документа, отрисовка не потребовалась. <a href="$1">Всё-таки запустить отрисовку.</a></li></ul>',
@@ -3748,11 +3750,11 @@ Ak to nefunguje, stlačte prosím tlačidlo obnoviť vo vašom prehlidači.</p>'
 	'coll-rendering_article' => '  (wiki stránka: $1)',
 	'coll-rendering_page' => '  (stránka: $1)',
 	'coll-rendering_finished_title' => 'Vykresľovanie je dokončené',
-	'coll-rendering_finished_text' => "'''Súbor dokumentu bol vytvorený.'''
-Môžete ho '''[$1 stiahnuť]''' na svoj počítač.
+	'coll-rendering_finished_text' => '<strong>Súbor dokumentu bol vytvorený.</strong>
+Môžete ho <strong>[$1 stiahnuť]</strong> na svoj počítač.
 
 Poznámky:
-* Nie ste spokojný s výstupom? Spôsoby možnej nápravy nájdete na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].",
+* Nie ste spokojný s výstupom? Spôsoby možnej nápravy nájdete na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].',
 	'coll-notfound_title' => 'Kolekcia nenájdená',
 	'coll-notfound_text' => 'Nebolo možné nájsť stránku kolekcie',
 	'coll-is_cached' => '<ul><li>Bola nájdená verzia dokumentu vo vyrovnávacej pamäti, takže vykresľovanie nebolo potrebné. <a href="$1">Vynútiť opätovné vykreslenie.</a></li></ul>',
@@ -3867,11 +3869,11 @@ Foutschrit: '''$1 %'''.
 Disse Siede schuul sik älke poor Sekunden fonsälwen aktualisierje.
 Fals dit daach nit geböärt, druk dan dän „Aktualisierje“-Knoop (maast F5) fon dien Browser.",
 	'coll-rendering_finished_title' => 'Kloor moaked',
-	'coll-rendering_finished_text' => "'''Ju Doatäi wuud mäd Ärfoulch moaked.'''
-'''[$1 Klik hier],''' uum ju Doatäi deeltouleeden.
+	'coll-rendering_finished_text' => '</strong>Ju Doatäi wuud mäd Ärfoulch moaked.</strong>
+<strong>[$1 Klik hier],</strong> uum ju Doatäi deeltouleeden.
 
 Bäst du nit mäd dät Resultoat toufree?
-Muugelkhaide tou ju Ferbeeterenge fon ju Uutgoawe finst du ap ju [[{{MediaWiki:Coll-helppage}}|Hälpesiede uur do Siedenkollektione]].",
+Muugelkhaide tou ju Ferbeeterenge fon ju Uutgoawe finst du ap ju [[{{MediaWiki:Coll-helppage}}|Hälpesiede uur do Siedenkollektione]].',
 	'coll-notfound_title' => 'Kollektion nit fuunen',
 	'coll-notfound_text' => 'Dien Kollektion kuud nit fuunen wäide.',
 	'coll-is_cached' => '<ul><li>Der is ne twiskespiekerde Version fon dät Dokument foarhounden, so dät neen Renderjen nöödich waas. <a href="$1">Näiränderjen outwinge.</a></li></ul>',
@@ -4001,15 +4003,15 @@ Inga mer sidor kan läggas till.',
 
 <p>Denna sida ska automatiskt uppdateras med några sekunders mellanrum.
 Om det inte fungerar, var god tryck på uppdateringsknappen i din webbläsare.</p>',
-	'coll-rendering_status' => "'''Status:''' $1",
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '  (wikisida: $1)',
 	'coll-rendering_page' => '  (sida: $1)',
 	'coll-rendering_finished_title' => 'Rendering avslutad',
-	'coll-rendering_finished_text' => "'''Dokumentfilen har skapats.'''
-'''[$1 Klicka här]''' för att ladda ner den till din dator.
+	'coll-rendering_finished_text' => '<strong>Dokumentfilen har skapats.</strong>
+<strong>[$1 Klicka här]</strong> för att ladda ner den till din dator.
 
 Not:
-* Inte nöjd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra den.",
+* Inte nöjd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra den.',
 	'coll-notfound_title' => 'Samling inte funnen',
 	'coll-notfound_text' => 'Kan inte hitta samlings sida',
 	'coll-is_cached' => '<ul><li>En cachad version av dokumentet har hittats, så ingen renderng behövdes. <a href="$1">Forcera omrendering.</a></li></ul>',
@@ -4263,7 +4265,7 @@ $messages['uk'] = array(
 
 Ця сторінка повинна автоматично оновлюватися кожні кілька секунд.
 Якщо цього не відбувається, оновіть цю сторінку у вашому веб-оглядачі.",
-	'coll-rendering_status' => "'''Статус:''' $1",
+	'coll-rendering_status' => '<strong>Статус:</strong> $1',
 	'coll-notfound_title' => 'Колекція не знайдена',
 	'coll-notfound_text' => 'Неможливо знайти сторінку колекції.',
 	'coll-return_to_collection' => '<p>Назад до <a href="$1">$2</a></p>',
@@ -4346,15 +4348,15 @@ Vuto che la vegna rinpiazà co la to colezion?',
 
 <p>Sta pàxena la dovarìa ajornarse da par ela ogni póchi secondi.
 Se questo no sucede, struca el boton de ajornamento del to browser.</p>',
-	'coll-rendering_status' => "'''Stato:''' $1",
+	'coll-rendering_status' => '<strong>Stato:</strong> $1',
 	'coll-rendering_article' => '   (pàxena wiki: $1)',
 	'coll-rendering_page' => '   (pàxena: $1)',
 	'coll-rendering_finished_title' => 'Conversion finìa',
-	'coll-rendering_finished_text' => "'''El documento el xe stà generà.'''
-'''[$1 Struca chì]''' par descargarlo sul to computer.
+	'coll-rendering_finished_text' => '<strong>El documento el xe stà generà.</strong>
+<strong>[$1 Struca chì]</strong> par descargarlo sul to computer.
 
 Note:
-* Sito mia contento del risultato? Lèzi [[{{MediaWiki:Coll-helppage}}|la pàxena de ajuto su le colezion]] par saver come mejorarlo.",
+* Sito mia contento del risultato? Lèzi [[{{MediaWiki:Coll-helppage}}|la pàxena de ajuto su le colezion]] par saver come mejorarlo.',
 	'coll-notfound_title' => 'Colezion mia catà',
 	'coll-notfound_text' => 'No se cata da nissuna parte la pàxena de la colezion.',
 	'coll-excluded-templates' => '* I modèi in te la categoria [[:Category:$1|$1]] i xe stà esclusi.',
@@ -4447,15 +4449,15 @@ Không thể thêm trang được nữa.',
 
 <p>Trình duyệt sẽ làm tươi trang này vài giây một lần.
 Nếu không thấy thay đổi gì, xin hãy bấm nút Refresh hoặc Reload trong trình duyệt.</p>',
-	'coll-rendering_status' => "'''Trạng thái:''' $1",
+	'coll-rendering_status' => '<strong>Trạng thái:</strong> $1',
 	'coll-rendering_article' => '  (trang wiki: $1)',
 	'coll-rendering_page' => '  (trang: $1)',
 	'coll-rendering_finished_title' => 'Kết xuất xong',
-	'coll-rendering_finished_text' => "'''Xong kết xuất tập tin tài liệu.'''
-'''[$1 Tải nó về]''' máy tính của mình.
+	'coll-rendering_finished_text' => '<strong>Xong kết xuất tập tin tài liệu.</strong>
+<strong>[$1 Tải nó về]</strong> máy tính của mình.
 
 Chú ý:
-* Không vừa lòng với bản kết xuất này? Hãy đọc [[{{MediaWiki:Coll-helppage}}|trợ giúp về tập hợp]] để biết về những cách để cải tiến nó.",
+* Không vừa lòng với bản kết xuất này? Hãy đọc [[{{MediaWiki:Coll-helppage}}|trợ giúp về tập hợp]] để biết về những cách để cải tiến nó.',
 	'coll-notfound_title' => 'Không tìm thấy tập hợp',
 	'coll-notfound_text' => 'Không tìm thấy trang tập hợp.',
 	'coll-is_cached' => '<ul><li>Không cần kết xuất mới vì đã tìm thấy phiên bản trong bộ nhớ. <a href="$1">Kết xuất lại.</a></li></ul>',
@@ -4479,7 +4481,6 @@ Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
 $messages['vo'] = array(
 	'coll-n_pages' => '{{PLURAL:$1|pad|pads}} $1',
 	'coll-helppage' => 'Help:Konlets',
-	'coll-my_collection' => 'Konlet Obik',
 	'coll-title' => 'Tiäd:',
 	'coll-yes' => 'Si',
 	'coll-no' => 'Nö',
