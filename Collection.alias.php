@@ -109,7 +109,7 @@ $aliases['nds-nl'] = array(
 
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
-	'Collection' => array( 'Verzameling', 'Collectie' ),
+	'Collection' => array( 'Collectie', 'Verzameling' ),
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
