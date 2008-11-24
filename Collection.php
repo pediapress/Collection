@@ -31,7 +31,9 @@ EOT;
 	exit( 1 );
 }
 
-require_once( "$IP/extensions/Collection/Version.php" );
+$dir = dirname(__FILE__) . '/';
+
+require_once( $dir . 'Version.php' );
 
 # ==============================================================================
 
@@ -101,7 +103,6 @@ $wgExtensionCredits['specialpage'][] = array(
 
 # register Special:Collection:
 
-$dir = dirname(__FILE__) . '/';
 $wgAutoloadClasses['Collection'] = $dir . 'Collection.body.php';
 $wgAutoloadClasses['CollectionPageTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionListTemplate'] = $dir . 'Collection.templates.php';
