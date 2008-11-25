@@ -74,7 +74,7 @@ $aliases['hr'] = array(
 
 /** Hungarian (Magyar) */
 $aliases['hu'] = array(
-	'Collection' => array( 'Gyűjtemény' ),
+	'Collection' => array( 'Gyűjtemény', 'Gyűjtemények' ),
 );
 
 /** Indonesian (Bahasa Indonesia) */

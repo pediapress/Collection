@@ -488,6 +488,7 @@ $messages['ast'] = array(
  */
 $messages['bg'] = array(
 	'coll-desc' => 'Добавя възможност за [[Special:Collection|събиране на страници]] и преобразуването им в PDF',
+	'coll-print_template_prefix' => 'Отпечатване',
 	'coll-add_page' => 'Добавяне на уики-страница',
 	'coll-remove_page' => 'Премахване на уики-страница',
 	'coll-add_category' => 'Добавяне на категория',
@@ -496,9 +497,11 @@ $messages['bg'] = array(
 	'coll-noscript_text' => '<h1>Изисква се Джаваскрипт!</h1>
 <strong>Използваният браузър не поддържа Джаваскрипт или поддръжката на Джаваскрипт е изключена.
 Тази страница не може да работи правилно докато Джаваскриптът не бъде активиран.</strong>',
+	'coll-download_title' => 'Изтегляне',
 	'coll-download' => 'Изтегляне',
 	'coll-format_label' => 'Формат:',
 	'coll-remove' => 'Премахване',
+	'coll-show' => 'Показване',
 	'coll-move_to_top' => 'Преместване в началото',
 	'coll-move_up' => 'Преместване нагоре',
 	'coll-move_down' => 'Преместване надолу',
@@ -506,11 +509,11 @@ $messages['bg'] = array(
 	'coll-title' => 'Заглавие:',
 	'coll-subtitle' => 'Подзаглавие:',
 	'coll-contents' => 'Съдържание',
-	'coll-sort_alphabetically' => 'Подреждане на страниците по азбучен ред',
+	'coll-sort_alphabetically' => 'Подреждане по азбучен ред',
 	'coll-rename' => 'Преименуване',
 	'coll-no_such_category' => 'Няма такава категория',
 	'coll-revision' => 'Версия: $1',
-	'coll-save_collection_title' => 'Съхраняване',
+	'coll-save_collection_title' => 'Съхраняване и споделяне',
 	'coll-save_collection' => 'Съхраняване',
 	'coll-overwrite_title' => 'Страницата съществува. Заместване?',
 	'coll-yes' => 'Да',
@@ -533,9 +536,26 @@ $messages['bg'] = array(
  */
 $messages['bs'] = array(
 	'coll-desc' => '[[Special:Collection|Prikuplja stranice]], pravi PDF datoteke',
+	'coll-print_template_prefix' => 'Štampanje',
+	'coll-unknown_subpage_title' => 'Nepoznata podstranica',
+	'coll-printable_version_pdf' => 'PDF verzija',
+	'coll-your_book' => 'Vaša knjiga',
 	'coll-remove' => 'Ukloni',
 	'coll-title' => 'Naslov:',
+	'coll-subtitle' => 'Podnaslov:',
+	'coll-rename' => 'Promijeni ime',
+	'coll-new_chapter' => 'Unesi ime za novo poglavlje',
+	'coll-revision' => 'Revizija: $1',
+	'coll-save_collection_text' => 'Odaberi lokaciju:',
 	'coll-yes' => 'Da',
+	'coll-no' => 'Ne',
+	'coll-cancel' => 'Odustani',
+	'coll-update' => 'Ažuriranje',
+	'coll-limit_exceeded_title' => 'Kolekcija prevelika',
+	'coll-rendering_status' => '<strong>Stanje:</strong> $1',
+	'coll-return_to_collection' => '<p>Povratak na <a href="$1">$2</a></p>',
+	'coll-license' => 'Licenca',
+	'coll-return_to' => 'Vrati na [[:$1]]',
 );
 
 /** Catalan (Català)
@@ -977,6 +997,8 @@ Notoj:
 	'coll-order_from_pp' => 'Mendi libron de $1',
 	'coll-about_pp' => 'Pri $1',
 	'coll-invalid_podpartner_title' => 'Nevalida ek-eldoneja partnero',
+	'coll-invalid_podpartner_msg' => 'La donita ek-eldoneja partnero estas nevalida.
+Bonvolu kontakti vian administranton de MediaWiki.',
 	'coll-license' => 'Licenco',
 	'coll-return_to' => 'Reiri al [[:$1]]',
 );
@@ -2792,6 +2814,7 @@ $messages['ms'] = array(
 	'coll-desc' => '[[Special:Collection|Mengumpul laman]] dan menjana PDF',
 	'coll-collection' => 'Koleksi',
 	'coll-collections' => 'Koleksi',
+	'coll-print_template_prefix' => 'Cetak',
 	'coll-portlet_title' => 'Cipta buku',
 	'coll-add_page' => 'Tambah laman wiki',
 	'coll-remove_page' => 'Buang laman wiki',
@@ -2801,10 +2824,12 @@ $messages['ms'] = array(
 	'coll-help_collections' => 'Bantuan koleksi',
 	'coll-n_pages' => '$1 laman',
 	'coll-unknown_subpage_title' => 'Sublaman tidak dikenali',
+	'coll-unknown_subpage_text' => 'Sublaman [[Special:Collection|Koleksi]] ini tidak wujud',
 	'coll-printable_version_pdf' => 'Versi PDF',
 	'coll-download_as' => 'Muat turun $1',
 	'coll-noscript_text' => '<h1>JavaScript diperlukan!</h1>
 <strong>JavaScript tidak disokong oleh pelayan anda atau telah dilumpuhkan. Laman ini tidak dapat berfungsi sekiranya ciri JavaScript tidak diaktifkan.</strong>',
+	'coll-intro_text' => 'Cipta dan urus koleksi laman wiki untuk kegunaan persendirian.<br />Lihat [[{{MediaWiki:Coll-helppage}}]] untuk maklumat lanjut.',
 	'coll-helppage' => 'Help:Koleksi',
 	'coll-your_book' => 'Buku anda',
 	'coll-download_title' => 'Muat turun',
@@ -2829,16 +2854,21 @@ $messages['ms'] = array(
 	'coll-new_chapter' => 'Masukkan nama untuk bab baru',
 	'coll-rename_chapter' => 'Masukkan nama baru untuk bab',
 	'coll-no_such_category' => 'Kategori tidak wujud',
+	'coll-notitle_title' => 'Tajuk laman tidak dapat dipastikan.',
 	'coll-post_failed_title' => 'Permintaan POST gagal',
 	'coll-post_failed_msg' => 'Permintaan POST terhadap $1 gagal ($2).',
+	'coll-mwserve_failed_title' => 'Ralat pelayan jana',
+	'coll-mwserve_failed_msg' => 'Terdapat ralat pada pelayan jana: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Jawapan ralat daripada pelayan',
 	'coll-empty_collection' => 'Koleksi kosong',
 	'coll-revision' => 'Semakan: $1',
 	'coll-save_collection_title' => 'Simpan dan kongsi koleksi anda',
+	'coll-save_collection_text' => 'Pilih lokasi:',
+	'coll-login_to_save' => 'Jika anda mahu menyimpan koleksi anda untuk kegunaan masa depan, sila [[Special:UserLogin|log masuk atau buka akaun baru]].',
 	'coll-personal_collection_label' => 'Koleksi peribadi:',
 	'coll-community_collection_label' => 'Koleksi komuniti:',
 	'coll-save_collection' => 'Simpan koleksi',
-	'coll-save_category' => 'Semua koleksi disimpan dalam kategori [[:Category:Koleksi|Koleksi]].',
+	'coll-save_category' => 'Semua koleksi disimpan dalam kategori [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Laman telah pun wujud. Tulis ganti?',
 	'coll-overwrite_text' => 'Laman dengan nama [[:$1]] telah pun wujud. Adakah anda mahu menggantikannya dengan koleksi anda?',
 	'coll-yes' => 'Ya',
@@ -2850,6 +2880,7 @@ $messages['ms'] = array(
 	'coll-update' => 'Kemas kini',
 	'coll-limit_exceeded_title' => 'Koleksi terlalu besar',
 	'coll-limit_exceeded_text' => 'Koleksi laman anda terlalu besar dan laman tidak boleh ditambah lagi.',
+	'coll-rendering_title' => 'Menjana',
 	'coll-rendering_text' => '<p><strong>Sila tunggu sementara dokumen tersebut dijana.</strong></p>
 
 <p><strong>Perkembangan:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
@@ -2859,6 +2890,7 @@ Jika tidak, sila tekan butang \'\'refresh\'\' di pelayar web anda.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '  (laman wiki: $1)',
 	'coll-rendering_page' => '  (laman: $1)',
+	'coll-rendering_finished_title' => 'Penjanaan selesai',
 	'coll-rendering_finished_text' => '<strong>Fail dokumen tersebut telah dijana.</strong>
 <strong>[$1 Klik di sini]</strong> untuk memuat turun fail ini.
 
@@ -2866,6 +2898,7 @@ Catatan:
 * Tidak berpuas hati dengan output yang dihasilkan? Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan mengenai koleksi]] untuk mengetahui bagaimana anda boleh memperbaikinya lagi.',
 	'coll-notfound_title' => 'Koleksi tidak dijumpai',
 	'coll-notfound_text' => 'Laman koleksi tidak dapat dijumpai.',
+	'coll-is_cached' => '<ul><li>Versi simpanan (cache) bagi dokumen itu telah pun dijumpai, oleh itu penjanaan tidak diperlukan. <a href="$1">Arahkan penjanaan semula.</a></li></ul>',
 	'coll-excluded-templates' => '* Templat-templat dalam kategori [[:Category:$1|$1]] telah dikecualikan.',
 	'coll-blacklisted-templates' => '* Templat-templat dalam senarai hitam [[:$1]] telah dikecualikan.',
 	'coll-return_to_collection' => '<p>Kembali ke <a href="$1">$2</a></p>',
@@ -3287,6 +3320,7 @@ $messages['pl'] = array(
 	'coll-desc' => 'Umożliwia [[Special:Collection|tworzenie kolekcji]] stron i zapisanie ich do pliku w formacie PDF',
 	'coll-collection' => 'Kolekcja',
 	'coll-collections' => 'Kolekcje',
+	'coll-print_template_prefix' => 'Drukuj',
 	'coll-portlet_title' => 'Utwórz książkę',
 	'coll-add_page' => 'Dodaj stronę',
 	'coll-remove_page' => 'Usuń stronę',
@@ -4344,7 +4378,7 @@ La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</s
 	'coll-personal_collection_label' => 'Colezion personal:',
 	'coll-community_collection_label' => 'Colezion de la comunità:',
 	'coll-save_collection' => 'Salva colezion',
-	'coll-save_category' => 'Le colezion le vien salvà in te la categoria [[:Category:Collections|Colezion]].',
+	'coll-save_category' => 'Le colezion le vien salvà in te la categoria [[:Category:{{MediaWiki:Coll-collections}}|Colezion]].',
 	'coll-overwrite_title' => 'La pàxena la esiste de zà.
 Vuto che ghe scriva insima?',
 	'coll-overwrite_text' => 'Na pàxena col nome [[:$1]] la esiste de zà.
