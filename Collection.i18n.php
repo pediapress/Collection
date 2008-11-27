@@ -536,23 +536,52 @@ $messages['bg'] = array(
  */
 $messages['bs'] = array(
 	'coll-desc' => '[[Special:Collection|Prikuplja stranice]], pravi PDF datoteke',
+	'coll-collection' => 'Kolekcija',
+	'coll-collections' => 'Kolekcije',
+	'coll-exclusion_category_title' => 'Isključivanja pri štampanju',
 	'coll-print_template_prefix' => 'Štampanje',
+	'coll-portlet_title' => 'Napravi knjigu',
+	'coll-add_page' => 'Dodaj wiki stranicu',
+	'coll-remove_page' => 'Ukloni wiki stranicu',
+	'coll-add_category' => 'Dodaj kategoriju',
+	'coll-load_collection' => 'Učitaj kolekciju',
+	'coll-show_collection' => 'Prikaži kolekciju',
 	'coll-unknown_subpage_title' => 'Nepoznata podstranica',
 	'coll-printable_version_pdf' => 'PDF verzija',
 	'coll-your_book' => 'Vaša knjiga',
 	'coll-remove' => 'Ukloni',
+	'coll-show' => 'Prikaži',
+	'coll-move_to_top' => 'Pomjeri na vrh',
+	'coll-move_up' => 'Premjesti gore',
+	'coll-move_down' => 'Premjesti dole',
+	'coll-move_to_bottom' => 'Premjesti na dno',
 	'coll-title' => 'Naslov:',
 	'coll-subtitle' => 'Podnaslov:',
+	'coll-contents' => 'Sadržaj',
+	'coll-create_chapter' => 'Napravi poglavlje',
+	'coll-sort_alphabetically' => 'Poredaj po abecedi',
+	'coll-clear_collection' => 'Očisti kolekciju',
+	'coll-clear_collection_confirm' => 'Da li zaista želite da potpuno očistite Vašu kolekciju?',
 	'coll-rename' => 'Promijeni ime',
 	'coll-new_chapter' => 'Unesi ime za novo poglavlje',
+	'coll-no_such_category' => 'Nema takve kategorije',
+	'coll-empty_collection' => 'Prazna kolekcija',
 	'coll-revision' => 'Revizija: $1',
+	'coll-save_collection_title' => 'Spremanje i dijeljenje vlastite kolekcije',
 	'coll-save_collection_text' => 'Odaberi lokaciju:',
+	'coll-personal_collection_label' => 'Lična kolekcija:',
+	'coll-community_collection_label' => 'Kolekcija zajednice:',
+	'coll-save_collection' => 'Sačuvaj kolekciju',
+	'coll-overwrite_text' => 'Stranica pod imenom [[:$1]] već postoji.
+Da li želite da je zamijenite sa Vašom kolekcijom?',
 	'coll-yes' => 'Da',
 	'coll-no' => 'Ne',
 	'coll-cancel' => 'Odustani',
 	'coll-update' => 'Ažuriranje',
 	'coll-limit_exceeded_title' => 'Kolekcija prevelika',
 	'coll-rendering_status' => '<strong>Stanje:</strong> $1',
+	'coll-rendering_article' => '  (wiki stranica: $1)',
+	'coll-rendering_page' => '  (stranica: $1)',
 	'coll-return_to_collection' => '<p>Povratak na <a href="$1">$2</a></p>',
 	'coll-license' => 'Licenca',
 	'coll-return_to' => 'Vrati na [[:$1]]',
@@ -3313,6 +3342,7 @@ $messages['os'] = array(
  * @author Leinad
  * @author Masti
  * @author McMonster
+ * @author Qblik
  * @author Sp5uhe
  * @author Wpedzich
  */
@@ -3320,6 +3350,7 @@ $messages['pl'] = array(
 	'coll-desc' => 'Umożliwia [[Special:Collection|tworzenie kolekcji]] stron i zapisanie ich do pliku w formacie PDF',
 	'coll-collection' => 'Kolekcja',
 	'coll-collections' => 'Kolekcje',
+	'coll-exclusion_category_title' => 'Omiń w druku',
 	'coll-print_template_prefix' => 'Drukuj',
 	'coll-portlet_title' => 'Utwórz książkę',
 	'coll-add_page' => 'Dodaj stronę',
@@ -3375,7 +3406,7 @@ Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączo
 	'coll-personal_collection_label' => 'Kolekcja osobista:',
 	'coll-community_collection_label' => 'Kolekcja społeczności:',
 	'coll-save_collection' => 'Zapisz kolekcję',
-	'coll-save_category' => 'Kolekcje zapisane są w kategorii [[:Category:Collections|Collections]].',
+	'coll-save_category' => 'Kolekcje zapisane są w kategorii [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Strona już istnieje. Nadpisać?',
 	'coll-overwrite_text' => 'Strona pod tytułem [[:$1]] już istnieje.
 Chcesz ją zastąpić swoją kolekcją?',
