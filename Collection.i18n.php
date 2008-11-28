@@ -583,6 +583,8 @@ Da li želite da je zamijenite sa Vašom kolekcijom?',
 	'coll-rendering_article' => '  (wiki stranica: $1)',
 	'coll-rendering_page' => '  (stranica: $1)',
 	'coll-return_to_collection' => '<p>Povratak na <a href="$1">$2</a></p>',
+	'coll-order_from_pp' => 'Naruči knjigu od $1',
+	'coll-about_pp' => 'O $1',
 	'coll-license' => 'Licenca',
 	'coll-return_to' => 'Vrati na [[:$1]]',
 );
