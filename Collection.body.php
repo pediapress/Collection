@@ -1233,12 +1233,17 @@ EOS
 	
 	static function post( $url, $postFields, &$errorMessage, &$headers,
 		$timeout=true, $toFile=null ) {
-		global $wgHTTPTimeout, $wgHTTPProxy, $wgVersion, $wgTitle;
+		global $wgHTTPTimeout, $wgHTTPProxy, $wgVersion, $wgTitle, $wgRequest;
 		global $wgCollectionMWServeCert;
 		
 		$c = curl_init( $url );
 		curl_setopt($c, CURLOPT_PROXY, $wgHTTPProxy);
-		curl_setopt( $c, CURLOPT_USERAGENT, "MediaWiki/$wgVersion" );
+		$userAgent = $wgRequest->getHeader('User-agent');
+		if ( $userAgent ) {
+			curl_setopt( $c, CURLOPT_USERAGENT, $userAgent . " (via MediaWiki/$wgVersion)" );
+		} else {
+			curl_setopt( $c, CURLOPT_USERAGENT, "Unknown user agent (via MediaWiki/$wgVersion)" );
+		}
 		curl_setopt( $c, CURLOPT_POST, true );
 		curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
 		curl_setopt( $c, CURLOPT_HTTPHEADER, array( 'Expect:' ) );
