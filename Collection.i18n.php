@@ -135,6 +135,7 @@ Please contact your MediaWiki administrator.',
 );
 
 /** Message documentation (Message documentation)
+ * @author Aotake
  * @author Darth Kule
  * @author Jon Harald Søby
  * @author Mormegil
@@ -147,9 +148,14 @@ $messages['qqq'] = array(
 	'coll-collection' => '{{Identical|Collection}}',
 	'coll-exclusion_category_title' => 'The message text is the name of a category.',
 	'coll-print_template_prefix' => 'Prefix added to the templates name if you want to get a special for-print version of the template. So in a page instead of Template:Foo Template:PrintFoo is used if it exists.',
-	'coll-portlet_title' => '{{Identical|Collection}}',
+	'coll-portlet_title' => '{{Identical|Books}}',
 	'coll-printable_version_pdf' => 'Caption of a link in the [[mw:Help:Navigation#Toolbox|toolbox]] leading to the PDF version of the current page',
-	'coll-helppage' => "Used as a link to the help page for this extension's functionality on a wiki. '''Do not translate ''Help:''.'''",
+	'coll-download_as' => '{{Identical|Download}}',
+	'coll-helppage' => "Used as a link to the help page for this extension's functionality on a wiki. '''Do not translate ''Help:''.'''
+{{Identical|Collection}}",
+	'coll-your_book' => '{{Identical|Books}}',
+	'coll-download_title' => '{{Identical|Download}}',
+	'coll-download' => '{{Identical|Download}}',
 	'coll-remove' => '{{Identical|Remove}}',
 	'coll-show' => '{{Identical|Show}}',
 	'coll-title' => '{{Identical|Title}}',
@@ -493,6 +499,7 @@ $messages['bg'] = array(
 	'coll-remove_page' => 'Премахване на уики-страница',
 	'coll-add_category' => 'Добавяне на категория',
 	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страници}}',
+	'coll-printable_version_pdf' => 'PDF версия',
 	'coll-download_as' => 'Изтегляне като $1',
 	'coll-noscript_text' => '<h1>Изисква се Джаваскрипт!</h1>
 <strong>Използваният браузър не поддържа Джаваскрипт или поддръжката на Джаваскрипт е изключена.
@@ -564,6 +571,7 @@ $messages['bs'] = array(
 	'coll-clear_collection_confirm' => 'Da li zaista želite da potpuno očistite Vašu kolekciju?',
 	'coll-rename' => 'Promijeni ime',
 	'coll-new_chapter' => 'Unesi ime za novo poglavlje',
+	'coll-rename_chapter' => 'Unesite novo ime za poglavlje',
 	'coll-no_such_category' => 'Nema takve kategorije',
 	'coll-empty_collection' => 'Prazna kolekcija',
 	'coll-revision' => 'Revizija: $1',
@@ -2113,6 +2121,8 @@ $messages['it'] = array(
 	'coll-desc' => '[[Special:Collection|Raccoglie pagine]], genera PDF',
 	'coll-collection' => 'Raccolta',
 	'coll-collections' => 'Raccolte',
+	'coll-exclusion_category_title' => 'Escludi dalla stampa',
+	'coll-print_template_prefix' => 'Stampa',
 	'coll-portlet_title' => 'Crea un libro',
 	'coll-add_page' => 'Aggiungi pagina wiki',
 	'coll-remove_page' => 'Rimuovi pagina wiki',
@@ -2123,6 +2133,7 @@ $messages['it'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagina|pagine}}',
 	'coll-unknown_subpage_title' => 'Sottopagina sconosciuta',
 	'coll-unknown_subpage_text' => 'Questa sottopagina di [[Special:Collection|Raccolta]] non esiste',
+	'coll-printable_version_pdf' => 'Versione PDF',
 	'coll-download_as' => 'Scarica come $1',
 	'coll-noscript_text' => '<h1>È necessario avere JavaScript!</h1>
 <strong>Il tuo browser non supporta JavaScript oppure JavaScript è stato disattivato.
@@ -2166,7 +2177,7 @@ La pagina non funzionerà correttamente se non verrà attivato JavaScript.</stro
 	'coll-personal_collection_label' => 'Raccolta personale:',
 	'coll-community_collection_label' => 'Raccolta della comunità:',
 	'coll-save_collection' => 'Salva raccolta',
-	'coll-save_category' => 'Le raccolte sono salvate nella categoria [[:Category:Collections|Raccolte]].',
+	'coll-save_category' => 'Le raccolte sono salvate nella categoria [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'La pagina esiste.
 Sovrascriverla?',
 	'coll-overwrite_text' => 'Una pagina con il nome [[:$1]] esiste già?
@@ -2218,25 +2229,29 @@ Note:
  * @author JtFuruhata
  */
 $messages['ja'] = array(
-	'coll-desc' => 'PDFファイルを作成するための[[Special:Collection|ページコレクション]]',
+	'coll-desc' => '[[Special:Collection|ページのコレクションを作成し]]、PDFを生成する',
 	'coll-collection' => 'コレクション',
 	'coll-collections' => 'コレクション',
-	'coll-portlet_title' => 'コレクション',
-	'coll-add_page' => 'ページの追加',
-	'coll-remove_page' => 'ページの削除',
+	'coll-portlet_title' => 'ブックを新規作成',
+	'coll-add_page' => 'ウィキページの追加',
+	'coll-remove_page' => 'ウィキページの削除',
 	'coll-add_category' => 'カテゴリの追加',
 	'coll-load_collection' => 'コレクションの読み込み',
 	'coll-show_collection' => 'コレクションを見る',
 	'coll-help_collections' => 'コレクションのヘルプ',
+	'coll-n_pages' => '$1ページ',
+	'coll-unknown_subpage_title' => '不明なサブページ',
+	'coll-download_as' => '$1としてダウンロード',
 	'coll-noscript_text' => '<h1>JavaScriptを利用しています！</h1>
 <strong>ご利用のブラウザはJavaScriptをサポートしていないか、JavaScriptが無効になっています。
 このページは、JavaScriptが有効になっていない場合、正しく動作しません。</strong>',
-	'coll-intro_text' => 'ページコレクションを作成したり、そこからPDFファイルを作成しダウンロードしたり、後に参照したり共有するためにコレクションを保存することができます。
-
-詳細は、[[{{MediaWiki:Coll-helppage}}|ページコレクションのヘルプ]]をご覧ください。',
+	'coll-intro_text' => 'あなただけのウィキページのコレクションを作成・管理できます。<br />詳細は[[{{MediaWiki:Coll-helppage}}]]をご覧ください。',
 	'coll-helppage' => 'Help:ページコレクション',
-	'coll-download_title' => 'PDF形式でコレクションをダウンロード',
-	'coll-download_text' => 'ページコレクションから自動生成されたPDFファイルをダウンロードするには、このボタンを押してください。',
+	'coll-your_book' => 'あなたのブック',
+	'coll-download_title' => 'ダウンロード',
+	'coll-download_text' => 'オフライン版をダウンロードするには、形式を選択してボタンをクリックしてください。',
+	'coll-download' => 'ダウンロード',
+	'coll-format_label' => '形式:',
 	'coll-remove' => '削除',
 	'coll-move_to_top' => '先頭へ',
 	'coll-move_up' => '上へ',
@@ -2258,8 +2273,8 @@ $messages['ja'] = array(
 	'coll-error_reponse' => 'サーバからのエラーレスポンス',
 	'coll-empty_collection' => '空のコレクション',
 	'coll-revision' => '特定版: $1',
-	'coll-save_collection_title' => 'コレクションの保存',
-	'coll-save_collection_text' => '後に利用するためコレクションを保存するには、コレクションタイプを選択し、ページタイトルを入力してください:',
+	'coll-save_collection_title' => 'コレクションを保存して共有する',
+	'coll-save_collection_text' => '保存先の選択:',
 	'coll-login_to_save' => '後に利用するためコレクションを保存するには、[[Special:UserLogin|ログインまたはアカウント作成]]を行ってください。',
 	'coll-personal_collection_label' => '個人的なコレクション:',
 	'coll-community_collection_label' => '共有するコレクション:',
@@ -2481,6 +2496,11 @@ $messages['km'] = array(
  */
 $messages['ko'] = array(
 	'coll-printable_version_pdf' => 'PDF 버전',
+	'coll-download_as' => '$1로 다운로드',
+	'coll-noscript_text' => '<h1>자바스크립트가 필요합니다!</h1>
+<strong>당신의 브라우저는 자바스크립트를 지원하지 않거나 비활성화되어 있습니다.
+자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
+	'coll-license' => '라이선스',
 );
 
 /** Kinaray-a (Kinaray-a)
@@ -3228,6 +3248,8 @@ $messages['oc'] = array(
 	'coll-desc' => "[[Special:Collection|Compilar de paginas]], generar de pdf's",
 	'coll-collection' => 'Compilacion',
 	'coll-collections' => 'Compilacions',
+	'coll-exclusion_category_title' => "Exclaure al moment de l'estampatge",
+	'coll-print_template_prefix' => 'Estampar',
 	'coll-portlet_title' => 'Crear un libre',
 	'coll-add_page' => 'Apondre una pagina wiki',
 	'coll-remove_page' => 'Levar una pagina wiki',
@@ -3238,6 +3260,7 @@ $messages['oc'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagina|paginas}}',
 	'coll-unknown_subpage_title' => 'Sospagina desconeguda',
 	'coll-unknown_subpage_text' => 'Aquesta sospagina de [[Special:Collection|colleccions]] existís pas',
+	'coll-printable_version_pdf' => 'Version del PDF',
 	'coll-download_as' => 'Telecargat coma $1',
 	'coll-noscript_text' => "<h1>Javascript es necessari !</h1>
 <strong>Vòstre navigador supòrta pas Javascript o se l'a desactivat.
@@ -3245,7 +3268,7 @@ Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activ
 	'coll-intro_text' => "Crear e gerir vòstra seleccion individuala de paginas wiki..<br />Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d'ajuda sus las colleccions]] per mai d'informacions.",
 	'coll-helppage' => 'Help:Collections',
 	'coll-your_book' => 'Vòstre libre',
-	'coll-download_title' => 'Telecargar vòstre libre',
+	'coll-download_title' => 'Telecargar',
 	'coll-download_text' => 'Per telecargar una version fòra de linha causissètz un format e picatz sul boton.',
 	'coll-download' => 'Telecargar',
 	'coll-format_label' => 'Format :',
@@ -3281,7 +3304,7 @@ Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activ
 	'coll-personal_collection_label' => 'Compilacion personala :',
 	'coll-community_collection_label' => 'Compilacion collectiva :',
 	'coll-save_collection' => 'Salvar la compilacion',
-	'coll-save_category' => 'Las colleccions son salvadas dins [[:Category:Collections|Colleccions]].',
+	'coll-save_category' => 'Las colleccions son salvadas dins la categoria [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => "La pagina existís. L'espotir ?",
 	'coll-overwrite_text' => 'Una pagina amb lo títol [[:$1]] existís ja.
 La volètz remplaçar per vòstra compilacion ?',
@@ -4365,6 +4388,8 @@ $messages['vec'] = array(
 	'coll-desc' => '[[Special:Collection|Rancura pàxene]], genera PDF',
 	'coll-collection' => 'Colezion',
 	'coll-collections' => 'Colezioni',
+	'coll-exclusion_category_title' => 'Escludi da la stanpa',
+	'coll-print_template_prefix' => 'Stanpa',
 	'coll-portlet_title' => 'Crea un libro',
 	'coll-add_page' => 'Zonta pàxena wiki',
 	'coll-remove_page' => 'Cava pàxena wiki',
@@ -4374,6 +4399,8 @@ $messages['vec'] = array(
 	'coll-help_collections' => 'Ajuto su le colezion',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàxena|pàxene}}',
 	'coll-unknown_subpage_title' => 'Sotopàxena sconossiùa',
+	'coll-unknown_subpage_text' => 'Sta sotopàxena de [[Special:Collection|Colezion]] no la esiste mia',
+	'coll-printable_version_pdf' => 'Versiòn PDF',
 	'coll-download_as' => 'Descarga come $1',
 	'coll-noscript_text' => "<h1>Ghe vole el JavaScript!</h1>
 <strong>El to browser no'l suporta JavaScript opure JavaScript el xe stà disativà.
@@ -4381,6 +4408,7 @@ La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</s
 	'coll-helppage' => 'Help:Colezion',
 	'coll-your_book' => 'El to libro',
 	'coll-download_title' => 'Descarga',
+	'coll-download_text' => 'Par trar xo na versiòn siegli un formado e struca el botòn.',
 	'coll-download' => 'Descarga',
 	'coll-format_label' => 'Formato:',
 	'coll-remove' => 'Cava',
