@@ -1235,14 +1235,15 @@ EOS
 		$timeout=true, $toFile=null ) {
 		global $wgHTTPTimeout, $wgHTTPProxy, $wgVersion, $wgTitle, $wgRequest;
 		global $wgCollectionMWServeCert;
+		global $wgCollectionVersion;
 		
 		$c = curl_init( $url );
 		curl_setopt($c, CURLOPT_PROXY, $wgHTTPProxy);
 		$userAgent = $wgRequest->getHeader('User-agent');
 		if ( $userAgent ) {
-			curl_setopt( $c, CURLOPT_USERAGENT, $userAgent . " (via MediaWiki/$wgVersion)" );
+			curl_setopt( $c, CURLOPT_USERAGENT, $userAgent . " (via MediaWiki/$wgVersion, Collection/$wgCollectionVersion)" );
 		} else {
-			curl_setopt( $c, CURLOPT_USERAGENT, "Unknown user agent (via MediaWiki/$wgVersion)" );
+			curl_setopt( $c, CURLOPT_USERAGENT, "Unknown user agent (via MediaWiki/$wgVersion, Collection/$wgCollectionVersion)" );
 		}
 		curl_setopt( $c, CURLOPT_POST, true );
 		curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
