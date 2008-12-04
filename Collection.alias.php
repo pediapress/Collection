@@ -142,3 +142,8 @@ $aliases['sv'] = array(
 	'Collection' => array( 'Samling' ),
 );
 
+/** Swahili (Kiswahili) */
+$aliases['sw'] = array(
+	'Collection' => array( 'Kusanya' ),
+);
+
