@@ -15,7 +15,7 @@ Click "Show collection" to go to the [[Special:Collection]]. Here you can manage
 
 == Download documents ==
 
-To download a document in PDF, ODF or DocBook format of a single article, just go to the article page and click on the "Download as ..." inside the toolbox on the left.
+To download a document in PDF, ODF or DocBook format of a single article, just go to the article page and click on the "Download as ..." inside the toolbox.
 
 To download an entire collection as a document, go to the [[Special:Collection]] page, choose the desired format and click the "Download" button.
 
