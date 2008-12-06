@@ -20,9 +20,9 @@ bearbeiten:
 
 == Dokumente herunterladen ==
 
-Um ein Dokument im PDF- oder ODF-Format eines einzelnen Artikels herunterzuladen, gehst du einfach
-auf die Artikel-Seite und klickst auf „Als … herunterladen“ in der Box „Werkzeuge“ auf der linken
-Seite.
+Um ein Dokument mit genau einem Artikel im DocBook-, PDF- oder ODF-Format herunterzuladen, gehst du einfach
+auf die Artikel-Seite und klickst auf „Als … herunterladen“ in der Box oder Linkgruppe „Werkzeuge“ am
+Rand der Artikelseite.
 
 Um eine komplette Sammlung als Dokument herunterzuladen, gehst du zur Seite [[Special:Collection|Spezial:Sammlung]],
 wählst das gewünschte Format aus und drückst den „Herunterladen“-Button.
@@ -71,7 +71,7 @@ oder als Unterseite von {{ns:project}}:Sammlungen abspeichern willst, gib einen 
 klicke auf den „Sammlung speichern“-Button. Sammlungen werden automatisch zur
 [[:{{ns:category}}:Sammlungen]] hinzugefügt.
 
-Falls du auf einer Seite einer Sammlung bist, enthält die „Sammlung“-Box auf der linken Seite
+Falls du auf einer Seite einer Sammlung bist, enthält die „Sammlung“-Box auf der Seite
 eine Link „Sammlung laden“, mit dem du die angezeigte Sammlung laden kannst.
 
 == Format der gespeicherten Sammlung-Seiten ==

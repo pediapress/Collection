@@ -113,7 +113,7 @@ If this does not work, please press refresh button of your browser.</p>",
 	'coll-rendering_page'             => ' (page: $1)',
 	'coll-rendering_finished_title'   => 'Rendering finished',
 	'coll-rendering_finished_text'    => "<strong>The document file has been generated.</strong>
-<strong>[$1 Click here]</strong> to download it to your computer.
+<strong>[$1 Download the file]</strong> to your computer.
 
 Notes:
 * Not satisfied with the output? See [[{{MediaWiki:Coll-helppage}}|the help page about collections]] for possibilities to improve it.",
