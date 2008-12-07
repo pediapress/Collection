@@ -245,6 +245,7 @@ $messages['ar'] = array(
 	'coll-desc' => '[[Special:Collection|صفحات مجموعة]]، تولد PDFs',
 	'coll-collection' => 'مجموعة',
 	'coll-collections' => 'مجموعات',
+	'coll-print_template_prefix' => 'طباعة',
 	'coll-portlet_title' => 'إنشاء كتاب',
 	'coll-add_page' => 'إضافة صفحة ويكي',
 	'coll-remove_page' => 'إزالة صفحة ويكي',
@@ -262,11 +263,13 @@ $messages['ar'] = array(
 
 انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
 	'coll-helppage' => 'Help:مجموعات',
+	'coll-your_book' => 'كتابك',
 	'coll-download_title' => 'حمل المجموعة ك PDF',
 	'coll-download_text' => 'لتحميل ملف PDF مولد تلقائيا من مجموعة صفحتك، اضغط الزر.',
 	'coll-download' => 'تحميل',
 	'coll-format_label' => 'الصيغة:',
 	'coll-remove' => 'إزالة',
+	'coll-show' => 'عرض',
 	'coll-move_to_top' => 'حرك إلى الأعلى',
 	'coll-move_up' => 'حرك إلى الأعلى',
 	'coll-move_down' => 'حرك إلى الأسفل قليلا',
@@ -531,6 +534,7 @@ $messages['bg'] = array(
 	'coll-rendering_status' => '<strong>Статут:</strong> $1',
 	'coll-rendering_article' => '  (уики-страница: $1)',
 	'coll-rendering_page' => '  (страница: $1)',
+	'coll-excluded-templates' => '* Шаблоните в категория [[:Category:$1|$1]] бяха изключени.',
 	'coll-return_to_collection' => '<p>Връщане към <a href="$1">$2</a></p>',
 	'coll-order_from_pp' => 'Поръчване на книга от $1',
 	'coll-about_pp' => 'За $1',
@@ -839,7 +843,7 @@ Wenn das jedoch nicht geschieht, drücke bitte den „Aktualisieren“-Knopf (me
 	'coll-rendering_page' => '  (Seite: $1)',
 	'coll-rendering_finished_title' => 'Fertig erstellt',
 	'coll-rendering_finished_text' => '<strong>Die Datei wurde erfolgreich erstellt.</strong>
-<strong>[$1 Klicke hier],</strong> um die Datei herunterzuladen.
+<strong>[$1 Lade die Datei herunter],</strong>.
 
 Hinweise:
 * Bist du mit dem Ergebnis nicht zufrieden? Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Coll-helppage}}|Hilfeseite über die Sammlungen]].',
@@ -1362,6 +1366,7 @@ Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa
 	'coll-title' => 'Título:',
 	'coll-subtitle' => 'Subtítulo:',
 	'coll-contents' => 'Contidos',
+	'coll-drag_and_drop' => 'Usar amosar e agochar para reordenar as páxinas e os capítulos wiki',
 	'coll-create_chapter' => 'Crear un capítulo',
 	'coll-sort_alphabetically' => 'Ordenar alfabeticamente',
 	'coll-clear_collection' => 'Borrar colección',
@@ -1410,8 +1415,8 @@ Se non vai, por favor, prema no botón "Refrescar" do seu navegador.</p>',
 	'coll-rendering_article' => '  (páxina wiki: $1)',
 	'coll-rendering_page' => '  (páxina: $1)',
 	'coll-rendering_finished_title' => 'Finalizou a renderización',
-	'coll-rendering_finished_text' => '<strong>O documento foi xerado.</strong>
-<strong>[$1 Prema aquí]</strong> para descargalo no seu ordenador.
+	'coll-rendering_finished_text' => '<strong>O ficheiro do documento foi xerado.</strong>
+<strong>[$1 Descargue o ficheiro]</strong> no seu ordenador.
 
 Notas:
 *Non está satisfeito co ficheiro obtido? Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para comprobar as posibilidades de melloralo.',
@@ -2546,7 +2551,7 @@ Loor Der de ußföhrlesche [[{{MediaWiki:Coll-helppage}}|Hölp övver Sammlonge]
 wann de noch mieh wesse wells.',
 	'coll-helppage' => 'Hölp:Sammlonge',
 	'coll-your_book' => 'Ding Boch',
-	'coll-download_title' => 'Donn Ding Booch eronger laade',
+	'coll-download_title' => 'Eronger laade',
 	'coll-download_text' => 'Öm en automattesch jemaate Datei met Dinge Sammlong eronger ze laade,
 sök Der e Fommaat uß, un donn op dat Knöppsche klecke.',
 	'coll-download' => 'Eronger Laade',
@@ -2570,6 +2575,8 @@ sök Der e Fommaat uß, un donn op dat Knöppsche klecke.',
 	'coll-rename_chapter' => 'Jif ene neu Name för dat Kapittel en',
 	'coll-no_such_category' => 'Di Saachjrupp jidd_et nit',
 	'coll-notitle_title' => 'Mer kunnte dä Tittel för di Sigg nit erus fenge.',
+	'coll-post_failed_title' => 'Dä Oproof es donevve jejange (POST)',
+	'coll-post_failed_msg' => "Dä Oproof es donevve jejange (POST noh $1 — ''$2'')",
 	'coll-mwserve_failed_title' => 'Fähler en dämm Server för et Darstelle',
 	'coll-mwserve_failed_msg' => 'En dämm Server för et Darstelle es ene Fähler opjetrodde: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Dä Server meldt ene Fähler',
@@ -2577,10 +2584,15 @@ sök Der e Fommaat uß, un donn op dat Knöppsche klecke.',
 	'coll-revision' => 'Version: $1',
 	'coll-save_collection_title' => 'Sammlong Afspeichere',
 	'coll-save_collection_text' => 'Sök ene Plaz uß:',
+	'coll-login_to_save' => 'Wann De Sammlonge afspeichere wells, för se spääder noch ens ze bruche,
+donn [[Special:UserLogin|enlogge, udder Desch aanmelde]].',
 	'coll-personal_collection_label' => 'Ding persönlije Sammlong:',
 	'coll-community_collection_label' => 'En öffentlijje Sammlong:',
 	'coll-save_collection' => 'Sammlung avspeichere',
+	'coll-save_category' => 'Sammlonge wäde en dä {{int:Category}} [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]] jesammt.',
 	'coll-overwrite_title' => 'Die Sigg jidd et ald. Överschrieve?',
+	'coll-overwrite_text' => 'En Sigg met dämm Name [[:$1]] jidd_et alld.
+Wells De se met Dinge Sammlong övverschriive?',
 	'coll-yes' => 'Jo',
 	'coll-no' => 'Nä',
 	'coll-load_overwrite_text' => 'En Dinge Sammlong sinn_er ald Sigge dren.
@@ -2589,14 +2601,24 @@ aanhänge, udder wells de di Sammlong lever doch nit laade?',
 	'coll-overwrite' => 'Ußtuusche',
 	'coll-append' => 'Aanhänge',
 	'coll-cancel' => 'Ophüre',
+	'coll-update' => 'De Änderunge fasshallde',
 	'coll-limit_exceeded_title' => 'De Sammlong es zo jruhß',
 	'coll-limit_exceeded_text' => 'Sing Sammlong es zo jrooß jewoode.
 Mer künne kein Sigge mieh do_bei donn.',
 	'coll-rendering_title' => 'Am Ußjävve',
+	'coll-rendering_text' => '<p><strong>Donn e Momäntsche waade bes de Datei paraat jemaat es.</strong></p>
+
+<p><strong>Jedonn:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Di Sigg hee sullt alle paa Sekunde neu aanjezeisch wääde. Wann dat nit klapp, donn eijach op Dingem Brauser singe passende Knopp klikke, zom neu Aanzeije!</p>',
 	'coll-rendering_status' => '<strong>Shtattus:</strong> $1',
 	'coll-rendering_article' => '  (Wiki-Sigge-Tittel: $1)',
 	'coll-rendering_page' => '  (Sigg Nommer: $1)',
 	'coll-rendering_finished_title' => 'Et Ußjävve eß jedonn',
+	'coll-rendering_finished_text' => '<strong>De Datei es paraat jestallt. [$1 Donn se erunger lade].</strong>
+
+Opjepaß:
+* Wann De nit zefredde beß, met dämm, wat eruß jekumme eß, dann loor Der op dä [[{{MediaWiki:Coll-helppage}}|Hölpsigg övver Sammlonge]] aan, wat mer velleisch besser maache künnt.',
 	'coll-notfound_title' => 'Han de Sammlong nit jefonge',
 	'coll-notfound_text' => 'Mer kunnte de Sigg för di Sammlong nit fenge.',
 	'coll-is_cached' => '<ul><li>Mer han en Version fun dämm Dokkemänt em ZwescheShpeicher, et moot nit widder neu ußjejovve wääde. <a href="$1">Doch neu widder ußjevve.</a></li></ul>',
@@ -3119,7 +3141,7 @@ Als dit niet werkt, klik dan op de knop "Vernieuwen" in uw browser.</p>',
 	'coll-rendering_page' => '(pagina: $1)',
 	'coll-rendering_finished_title' => 'Renderen afgerond',
 	'coll-rendering_finished_text' => '<strong>Het document is aangemaakt.</strong>
-<strong>[$1 Klik hier]</strong> om het te downloaden.
+<strong>[$1 Het bestand downloaden]</strong>.
 
 Opmerkingen:
 * Niet tevreden met de uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om deze te verbeteren.',
@@ -4478,7 +4500,7 @@ Se questo no sucede, struca el boton de ajornamento del to browser.</p>',
 	'coll-rendering_page' => '   (pàxena: $1)',
 	'coll-rendering_finished_title' => 'Conversion finìa',
 	'coll-rendering_finished_text' => '<strong>El documento el xe stà generà.</strong>
-<strong>[$1 Struca chì]</strong> par descargarlo sul to computer.
+<strong>[$1 Descàrghelo]</strong> sul to computer.
 
 Note:
 * Sito mia contento del risultato? Lèzi [[{{MediaWiki:Coll-helppage}}|la pàxena de ajuto su le colezion]] par saver come mejorarlo.',
