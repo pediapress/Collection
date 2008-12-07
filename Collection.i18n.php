@@ -1203,6 +1203,7 @@ $messages['fi'] = array(
 );
 
 /** French (Français)
+ * @author Crochet.david
  * @author Grondin
  * @author IAlex
  * @author Korrigan
@@ -1297,7 +1298,7 @@ Si tel n\'était pas le cas, veuillez cliquer sur le bouton d’actualisation de
 	'coll-rendering_page' => '  (page : $1)',
 	'coll-rendering_finished_title' => 'Rendu terminé',
 	'coll-rendering_finished_text' => '<strong>Le fichier document a été créé.</strong>
-[$1 Cliquez ici] pour le télécharger sur votre ordinateur.
+<strong>[$1 Télécharger le]</strong> sur votre ordinateur.
 
 Notes :
 * Non satisfait de la sortie ? Voyez [[{{MediaWiki:Coll-helppage}}|la page d’aide concernant les collections]] pour les possibilités de son amélioration.',
@@ -1946,8 +1947,8 @@ Ha ez nem történik meg, kérlek nyomd meg a böngésződ frissítés gombját!
 	'coll-rendering_article' => '(wiki oldal: $1)',
 	'coll-rendering_page' => '(oldal: $1)',
 	'coll-rendering_finished_title' => 'A renderelés befejeződött',
-	'coll-rendering_finished_text' => '<strong>A dokumentum fájl ekészült.</strong>
-<strong>[$1 Kattints ide]</strong> a letöltéshez.
+	'coll-rendering_finished_text' => '<strong>A dokumentum ekészült.</strong>
+<strong>[$1 Töltsd le a fájlt]</strong> a számítógépedre.
 
 Megjegyzés:
 * Nem vagy elégedett az eredménnyel? Lásd a  [[{{MediaWiki:Coll-helppage}}|gyűjteményekről szóló segítség oldalt]] a javítási lehetőségekről.',
@@ -2214,7 +2215,7 @@ Se questo non funziona, premi il pulsante di aggiornamento del tuo browser.</p>'
 	'coll-rendering_page' => '  (pagina: $1)',
 	'coll-rendering_finished_title' => 'Conversione terminata',
 	'coll-rendering_finished_text' => '<strong>Il documento è stato generato.</strong>
-<strong>[$1 Fai clic qui]</strong> per scaricarlo sul tuo computer.
+<strong>[$1 Scarica il file]</strong> sul tuo computer.
 
 Note:
 * Non sei soddisfatto del risultato? Leggi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sulle raccolte]] riguardo alle possibilità per migliorarlo.',
@@ -2430,12 +2431,14 @@ $messages['ka'] = array(
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author Thearith
  * @author គីមស៊្រុន
  */
 $messages['km'] = array(
 	'coll-desc' => '[[Special:Collection|ចងក្រងទំព័រ]]រួចបង្កើតឯកសារ PDF',
 	'coll-collection' => 'កំរងឯកសារ',
 	'coll-collections' => 'កំរងឯកសារនានា',
+	'coll-print_template_prefix' => 'បោះពុម្ព',
 	'coll-portlet_title' => 'កំរងឯកសារ',
 	'coll-add_page' => 'បន្ថែមទំព័រវិគី',
 	'coll-remove_page' => 'ដកទំព័រវិគីចេញ',
@@ -2444,19 +2447,21 @@ $messages['km'] = array(
 	'coll-show_collection' => 'បង្ហាញកំរងឯកសារ',
 	'coll-help_collections' => 'ជំនួយពីកំរងឯកសារ',
 	'coll-n_pages' => '$1 {{PLURAL:$1|ទំព័រ|ទំព័រ}}',
+	'coll-printable_version_pdf' => 'កំណែ PDF',
 	'coll-download_as' => 'ទាញយកជា $1',
 	'coll-noscript_text' => '<h1>ត្រូវការ JavaScript!</h1>
 <strong>ឧបករណ៍រាវរក (browser) របស់អ្នកមិនគាំទ្រ JavaScript ឬ JavaScript ត្រូវបានបិទ។
 ទំព័រនេះមិនអាចដំនើរការបានត្រឹមត្រូវទេ លុះត្រាតែអ្នកបើកអោយ JavaScript ដើរ។</strong>',
-	'coll-intro_text' => 'អ្នកអាចចងក្រងទំព័រ បង្កើត និង ទាញយកឯកសារ PDF ពីទំព័រកំរងឯកសារ និងអាចរក្សាទុកកំរងឯកសារសំរាប់ប្រើលើកក្រោយឬដាក់ហ៊ុនជាមួយអ្នកដទៃ។
+	'coll-intro_text' => 'អ្នកអាចចងក្រងទំព័រ បង្កើត និង ទាញយកឯកសារ PDF ពីទំព័រកម្រងឯកសារ និងអាចរក្សាទុកកម្រងឯកសារសម្រាប់ប្រើលើកក្រោយឬដាក់ហ៊ុនជាមួយអ្នកដទៃ។
 
-សូមមើល[[{{MediaWiki:Coll-helppage}}|ទំព័រជំនួយពីកំរងឯកសារ]]សំរាប់ពត៌មានបន្ថែម។',
+សូមមើល[[{{MediaWiki:Coll-helppage}}|ទំព័រជំនួយពីកម្រងឯកសារ]]សម្រាប់ព័ត៌មានបន្ថែម។',
 	'coll-helppage' => 'Help:កំរងឯកសារ',
 	'coll-your_book' => 'សៀវភៅ​របស់អ្នក',
 	'coll-download_title' => 'ទាញយក',
 	'coll-download' => 'ទាញយក',
 	'coll-format_label' => 'ទំរង់:',
 	'coll-remove' => 'ដកចេញ',
+	'coll-show' => 'បង្ហាញ',
 	'coll-move_to_top' => 'ទៅ​លើគេបំផុត',
 	'coll-move_up' => 'រំកិលឡើង',
 	'coll-move_down' => 'រំកិលចុះ',
@@ -2465,29 +2470,32 @@ $messages['km'] = array(
 	'coll-subtitle' => 'ចំនងជើងរង៖',
 	'coll-contents' => 'ខ្លឹមសារ',
 	'coll-create_chapter' => 'បង្កើត​ជំពូកថ្មី',
-	'coll-sort_alphabetically' => 'តំរៀប​ទំព័រ​​តាម​អក្ខរក្រម',
+	'coll-sort_alphabetically' => 'តម្រៀប​ទំព័រ​​តាម​អក្ខរក្រម',
 	'coll-clear_collection' => 'សំអាតកំរងឯកសារ',
+	'coll-clear_collection_confirm' => 'តើ​អ្នក​ពិតជា​ចង់​ជម្រះ​កម្រងឯកសារ​របស់​អ្នក​ទាំងស្រុង​ឬ​?',
 	'coll-rename' => 'ប្តូរឈ្មោះ',
 	'coll-new_chapter' => 'ដាក់ឈ្មោះអោយ ជំពូកថ្មី',
 	'coll-rename_chapter' => 'ដាក់ឈ្មោះថ្មី អោយជំពូក',
 	'coll-no_such_category' => 'គ្មានចំនាត់ថ្នាក់ក្រុមបែបនេះទេ',
 	'coll-notitle_title' => 'មិន​អាចកំនត់​ចំនងជើង​នៃទំព័រ',
 	'coll-empty_collection' => 'កំរងឯកសារទទេ',
-	'coll-save_collection_title' => 'រក្សាទុក​និង​ចែករំលែកកំរងឯកសារ',
+	'coll-save_collection_title' => 'រក្សាទុក​និង​ចែករំលែកកម្រងឯកសារ',
 	'coll-save_collection_text' => 'ជ្រើសរើស​តំបន់៖',
-	'coll-login_to_save' => 'បើសិនជាអ្នកចង់រក្សាទុកកំរងឯកសារសំរាប់ប្រើប្រាស់លើកក្រោយ សូម[[Special:UserLogin|ឡុកអ៊ីនឬបង្កើតគណនី]]។',
-	'coll-personal_collection_label' => 'កំរងឯកសារផ្ទាល់ខ្លួន៖',
-	'coll-community_collection_label' => 'កំរងឯកសារសហគមន៍៖',
-	'coll-save_collection' => 'រក្សាទុកកំរងឯកសារ',
+	'coll-login_to_save' => 'បើសិនជាអ្នកចង់រក្សាទុកកម្រងឯកសារសំរាប់ប្រើប្រាស់លើកក្រោយ សូម[[Special:UserLogin|ឡុកអ៊ីនឬបង្កើតគណនី]]។',
+	'coll-personal_collection_label' => 'កម្រងឯកសារផ្ទាល់ខ្លួន៖',
+	'coll-community_collection_label' => 'កម្រងឯកសារសហគមន៍៖',
+	'coll-save_collection' => 'រក្សាទុកកម្រងឯកសារ',
 	'coll-overwrite_title' => 'ទំព័រ​មានហើយ។ សរសេរ​ជាន់ពីលើ ?',
-	'coll-overwrite_text' => 'ទំព័រដែលមានឈ្មោះ [[:$1]] មានរួចហើយ។ តើអ្នកចង់ជំនួសវាដោយកំរងឯកសាររបស់អ្នកឬ?',
+	'coll-overwrite_text' => 'ទំព័រដែលមានឈ្មោះ [[:$1]] មានរួចហើយ។ តើអ្នកចង់ជំនួសវាដោយកម្រងឯកសាររបស់អ្នកឬ?',
 	'coll-yes' => 'បាទ / ចាស',
 	'coll-no' => 'ទេ',
+	'coll-load_overwrite_text' => 'អ្នក​មាន​ទំព័រ​ខ្លះនៅក្នុង​កម្រងឯកសារ​នេះ​រួចហើយ​។ តើ​អ្នក​ចង់​សរសេរ​ជាន់ពីលើ​កម្រងឯកសារ​បច្ចុប្បន្ន​របស់​អ្នក ដោយ​បន្ថែម​មាតិកា​ថ្មី ឬក៏ ច្រានចោល​ការផ្ទុក​កម្រងឯកសារ​នេះ​?',
 	'coll-overwrite' => 'សរសេរជាន់ពីលើ',
 	'coll-append' => 'បន្ថែមនៅចុង',
 	'coll-cancel' => 'បោះបង់',
-	'coll-limit_exceeded_title' => 'កំរងឯកសារធំជ្រុល',
-	'coll-limit_exceeded_text' => 'កំរងឯកសាររបស់អ្នកធំជ្រុលពេកហើយ។ អ្នកមិនអាចបន្ថែមទំព័រទៅក្នុងវាទៀតទេ។',
+	'coll-update' => 'ធ្វើឱ្យទាន់សម័យ',
+	'coll-limit_exceeded_title' => 'កម្រងឯកសារធំជ្រុល',
+	'coll-limit_exceeded_text' => 'កម្រងឯកសាររបស់អ្នកធំជ្រុលពេកហើយ។ អ្នកមិនអាចបន្ថែមទំព័រទៅក្នុងវាទៀតទេ។',
 	'coll-rendering_status' => '<strong>ស្ថាបភាព៖</strong> $1',
 	'coll-rendering_article' => '  (ទំព័រវិគី៖ $1)',
 	'coll-rendering_page' => '  (ទំព័រ៖ $1)',
@@ -2970,7 +2978,7 @@ Jika tidak, sila tekan butang \'\'refresh\'\' di pelayar web anda.</p>',
 	'coll-rendering_page' => '  (laman: $1)',
 	'coll-rendering_finished_title' => 'Penjanaan selesai',
 	'coll-rendering_finished_text' => '<strong>Fail dokumen tersebut telah dijana.</strong>
-<strong>[$1 Klik di sini]</strong> untuk memuat turun fail ini.
+<strong>[$1 Muat turun fail ini]</strong> ke dalam komputer anda.
 
 Catatan:
 * Tidak berpuas hati dengan output yang dihasilkan? Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan mengenai koleksi]] untuk mengetahui bagaimana anda boleh memperbaikinya lagi.',
@@ -3359,10 +3367,10 @@ S\'èra pas lo cas, clicatz sul boton d’actualizacion de vòstre navigador.</p
 	'coll-rendering_page' => '  (pagina : $1)',
 	'coll-rendering_finished_title' => 'Rendut acabat',
 	'coll-rendering_finished_text' => '<strong>Lo fichièr document es estat creat.</strong>
-[$1 Clicatz aicí] per lo telecargar sus vòstre ordenador.
+<strong>[$1 Telecargatz-lo]</strong> sus vòstre ordenador.
 
 Nòtas :
-Pas satisfach(a) de la sortida ? Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las colleccions]] per las possibilitats de melhorament.',
+* Pas satisfach(a) de la sortida ? Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las colleccions]] per las possibilitats de melhorament.',
 	'coll-notfound_title' => 'Compilacion pas trobada',
 	'coll-notfound_text' => 'Pòt pas trobar la compilacion.',
 	'coll-is_cached' => '<ul><li>Una version en amagatal del document es estada trobada, cap de rendut èra pas necessari. <a href="$1">Forçar lo rendut un còp de mai.</a></li></ul>',
