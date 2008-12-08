@@ -4,7 +4,7 @@ die spätere Verwendung speichern und mit anderen Benutzern teilen.
 
 == Hinzufügen und Entfernen von Artikeln ==
 
-Wenn du auf einer Artikel-Seite bist, siehst du eine kleine Box namens „Sammlung“ auf der linken Seite.
+Wenn du auf einer Artikel-Seite bist, siehst du eine kleine Box namens „Sammlung“ auf der Seite.
 Hier kannst du den aktuellen Artikel (in der aktuell angezeigten Version) zu deiner Sammlung
 hinzufügen. Wenn der Artikel bereits hinzugefügt worden ist, kannst du ihn stattdessen entfernen.
 
