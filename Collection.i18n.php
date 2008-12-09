@@ -441,10 +441,10 @@ $messages['arz'] = array(
 	'coll-rendering_page' => '   (الصفحة: $1)',
 	'coll-rendering_finished_title' => 'العرض انتهى',
 	'coll-rendering_finished_text' => '<strong>ملف الوثيقة تم توليده.</strong>
-<strong>[$1 اضغط هنا]</strong> لتنزيله إلى حاسوبك.
+<strong>[$1 اضغط هنا]</strong> لتنزيله للكمبيوتر بتاعك.
 
 ملاحظات:
-* غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.',
+* مش راضى على النتيجه؟ بص  [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة عن المجموعات]] للاحتمالات لتحسينه.',
 	'coll-notfound_title' => 'المجموعة غير موجودة',
 	'coll-notfound_text' => 'لم يمكن العثور على صفحة المجموعة.',
 	'coll-is_cached' => '<ul><li>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></li></ul>',
@@ -1025,7 +1025,7 @@ Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.</p>',
 	'coll-rendering_page' => '  (paĝo: $1)',
 	'coll-rendering_finished_title' => 'Generado finiĝis.',
 	'coll-rendering_finished_text' => '<strong>La dokumento estis generita.</strong>
-<strong>[$1 Klaku ĉi tie]</strong> por elŝuti ĝin al via komputilo.
+<strong>[$1 Elŝuti la dosieron]</strong> al via komputilo.
 
 Notoj:
 * Ĉu la eligo ne plaĉus al vi? Vidu [[{{MediaWiki:Coll-helppage}}|la helpan paĝon pri kolektoj]] por fojoj por plibonigi ĝin.',
@@ -2436,52 +2436,52 @@ $messages['ka'] = array(
  */
 $messages['km'] = array(
 	'coll-desc' => '[[Special:Collection|ចងក្រងទំព័រ]]រួចបង្កើតឯកសារ PDF',
-	'coll-collection' => 'កំរងឯកសារ',
-	'coll-collections' => 'កំរងឯកសារនានា',
+	'coll-collection' => 'កម្រងឯកសារ',
+	'coll-collections' => 'កម្រងឯកសារនានា',
 	'coll-print_template_prefix' => 'បោះពុម្ព',
 	'coll-portlet_title' => 'កំរងឯកសារ',
 	'coll-add_page' => 'បន្ថែមទំព័រវិគី',
 	'coll-remove_page' => 'ដកទំព័រវិគីចេញ',
-	'coll-add_category' => 'បន្ថែមចំនាត់ថ្នាក់ក្រុម',
-	'coll-load_collection' => 'ផ្ទុកកំរងឯកសារ',
-	'coll-show_collection' => 'បង្ហាញកំរងឯកសារ',
-	'coll-help_collections' => 'ជំនួយពីកំរងឯកសារ',
+	'coll-add_category' => 'បន្ថែមចំណាត់ថ្នាក់ក្រុម',
+	'coll-load_collection' => 'ផ្ទុកកម្រងឯកសារ',
+	'coll-show_collection' => 'បង្ហាញកម្រងឯកសារ',
+	'coll-help_collections' => 'ជំនួយពីកម្រងឯកសារ',
 	'coll-n_pages' => '$1 {{PLURAL:$1|ទំព័រ|ទំព័រ}}',
 	'coll-printable_version_pdf' => 'កំណែ PDF',
 	'coll-download_as' => 'ទាញយកជា $1',
 	'coll-noscript_text' => '<h1>ត្រូវការ JavaScript!</h1>
 <strong>ឧបករណ៍រាវរក (browser) របស់អ្នកមិនគាំទ្រ JavaScript ឬ JavaScript ត្រូវបានបិទ។
-ទំព័រនេះមិនអាចដំនើរការបានត្រឹមត្រូវទេ លុះត្រាតែអ្នកបើកអោយ JavaScript ដើរ។</strong>',
+ទំព័រនេះមិនអាចដំណើរការបានត្រឹមត្រូវទេ លុះត្រាតែអ្នកបើកឱ្យ JavaScript ដើរ។</strong>',
 	'coll-intro_text' => 'អ្នកអាចចងក្រងទំព័រ បង្កើត និង ទាញយកឯកសារ PDF ពីទំព័រកម្រងឯកសារ និងអាចរក្សាទុកកម្រងឯកសារសម្រាប់ប្រើលើកក្រោយឬដាក់ហ៊ុនជាមួយអ្នកដទៃ។
 
 សូមមើល[[{{MediaWiki:Coll-helppage}}|ទំព័រជំនួយពីកម្រងឯកសារ]]សម្រាប់ព័ត៌មានបន្ថែម។',
-	'coll-helppage' => 'Help:កំរងឯកសារ',
+	'coll-helppage' => 'Help:កម្រងឯកសារ',
 	'coll-your_book' => 'សៀវភៅ​របស់អ្នក',
 	'coll-download_title' => 'ទាញយក',
 	'coll-download' => 'ទាញយក',
-	'coll-format_label' => 'ទំរង់:',
+	'coll-format_label' => 'ទម្រង់:',
 	'coll-remove' => 'ដកចេញ',
 	'coll-show' => 'បង្ហាញ',
 	'coll-move_to_top' => 'ទៅ​លើគេបំផុត',
 	'coll-move_up' => 'រំកិលឡើង',
 	'coll-move_down' => 'រំកិលចុះ',
 	'coll-move_to_bottom' => 'ទៅក្រោមគេបំផុត',
-	'coll-title' => 'ចំនងជើង៖',
-	'coll-subtitle' => 'ចំនងជើងរង៖',
+	'coll-title' => 'ចំណងជើង៖',
+	'coll-subtitle' => 'ចំណងជើងរង៖',
 	'coll-contents' => 'ខ្លឹមសារ',
 	'coll-create_chapter' => 'បង្កើត​ជំពូកថ្មី',
 	'coll-sort_alphabetically' => 'តម្រៀប​ទំព័រ​​តាម​អក្ខរក្រម',
-	'coll-clear_collection' => 'សំអាតកំរងឯកសារ',
+	'coll-clear_collection' => 'សំអាតកម្រងឯកសារ',
 	'coll-clear_collection_confirm' => 'តើ​អ្នក​ពិតជា​ចង់​ជម្រះ​កម្រងឯកសារ​របស់​អ្នក​ទាំងស្រុង​ឬ​?',
 	'coll-rename' => 'ប្តូរឈ្មោះ',
-	'coll-new_chapter' => 'ដាក់ឈ្មោះអោយ ជំពូកថ្មី',
-	'coll-rename_chapter' => 'ដាក់ឈ្មោះថ្មី អោយជំពូក',
-	'coll-no_such_category' => 'គ្មានចំនាត់ថ្នាក់ក្រុមបែបនេះទេ',
-	'coll-notitle_title' => 'មិន​អាចកំនត់​ចំនងជើង​នៃទំព័រ',
-	'coll-empty_collection' => 'កំរងឯកសារទទេ',
+	'coll-new_chapter' => 'ដាក់ឈ្មោះឱ្យ ជំពូកថ្មី',
+	'coll-rename_chapter' => 'ដាក់ឈ្មោះថ្មី ឱ្យជំពូក',
+	'coll-no_such_category' => 'គ្មានចំណាត់ថ្នាក់ក្រុមបែបនេះទេ',
+	'coll-notitle_title' => 'មិន​អាចកំណត់​ចំណងជើង​នៃទំព័រ',
+	'coll-empty_collection' => 'កម្រងឯកសារទទេ',
 	'coll-save_collection_title' => 'រក្សាទុក​និង​ចែករំលែកកម្រងឯកសារ',
 	'coll-save_collection_text' => 'ជ្រើសរើស​តំបន់៖',
-	'coll-login_to_save' => 'បើសិនជាអ្នកចង់រក្សាទុកកម្រងឯកសារសំរាប់ប្រើប្រាស់លើកក្រោយ សូម[[Special:UserLogin|ឡុកអ៊ីនឬបង្កើតគណនី]]។',
+	'coll-login_to_save' => 'បើសិនជាអ្នកចង់រក្សាទុកកម្រងឯកសារសម្រាប់ប្រើប្រាស់លើកក្រោយ សូម[[Special:UserLogin|ឡុកអ៊ីនឬបង្កើតគណនី]]។',
 	'coll-personal_collection_label' => 'កម្រងឯកសារផ្ទាល់ខ្លួន៖',
 	'coll-community_collection_label' => 'កម្រងឯកសារសហគមន៍៖',
 	'coll-save_collection' => 'រក្សាទុកកម្រងឯកសារ',
@@ -2499,14 +2499,14 @@ $messages['km'] = array(
 	'coll-rendering_status' => '<strong>ស្ថាបភាព៖</strong> $1',
 	'coll-rendering_article' => '  (ទំព័រវិគី៖ $1)',
 	'coll-rendering_page' => '  (ទំព័រ៖ $1)',
-	'coll-notfound_title' => 'រកមិនឃើញកំរងឯកសារ',
-	'coll-notfound_text' => 'រកមិនឃើញកំរងឯកសារទេ។',
-	'coll-return_to_collection' => '<p>ត្រលប់ទៅកាន់<a href="$1">$2</a></p>វិញ',
+	'coll-notfound_title' => 'រកមិនឃើញកម្រងឯកសារ',
+	'coll-notfound_text' => 'រកមិនឃើញកម្រងឯកសារទេ។',
+	'coll-return_to_collection' => '<p>ត្រឡប់ទៅកាន់<a href="$1">$2</a></p>វិញ',
 	'coll-book_title' => 'ទិញសៀវភៅដែលបានបោះពុម្ព',
 	'coll-order_from_pp' => 'បញ្ជាទិញ​សៀវភៅពី $1',
 	'coll-about_pp' => 'អំពី$1',
-	'coll-license' => 'អាជ្ញាបណ្ណ',
-	'coll-return_to' => 'ត្រលប់ទៅកាន់ [[:$1]]',
+	'coll-license' => 'អាជ្ញាប័ណ្ណ',
+	'coll-return_to' => 'ត្រឡប់ទៅកាន់ [[:$1]]',
 );
 
 /** Korean (한국어)
@@ -2697,6 +2697,7 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-empty_collection' => 'Eidel Sammlung',
 	'coll-revision' => 'Versioun: $1',
 	'coll-save_collection_title' => 'Sammlung späicheren an deelen',
+	'coll-save_collection_text' => 'Wielt eng Plaz:',
 	'coll-personal_collection_label' => 'Perséinlech Sammlung',
 	'coll-community_collection_label' => 'Gemeinsam Kollektioun:',
 	'coll-save_collection' => 'Sammlung späicheren',
@@ -3494,7 +3495,7 @@ Jeśli tak nie jest, proszę odświeżyć swoją przeglądarkę.</p>',
 	'coll-rendering_page' => '(strona: $1)',
 	'coll-rendering_finished_title' => 'Renderowanie zakończone',
 	'coll-rendering_finished_text' => '<strong>Dokument został wygenerowany.</strong>
-<strong>[$1 Kliknij tutaj]</strong> by pobrać go na swój komputer.
+<strong>[$1 Pobierz plik]</strong> na swój komputer.
 
 Uwaga:
 * Nie jesteś zadowolony z wygenerowanego dokumentu? Zajrzyj na [[{{MediaWiki:Coll-helppage}}|stronę pomocy na temat kolekcji]] by dowiedzieć się jakie są możliwości poprawy dokumentu.',
@@ -3789,9 +3790,9 @@ $messages['ru'] = array(
 	'coll-rendering_page' => '  (страница: $1)',
 	'coll-rendering_finished_title' => 'Создание завершено',
 	'coll-rendering_finished_text' => '<strong>Файл документа создан.</strong>
-<strong>[$1 Нажмите здесь]</strong>, чтобы скачать его к себе на компьютер.
+<strong>[$1 Загрузить файл]</strong> к свой компьютер.
 
-Отметьте:
+Замечание:
 * Не удовлетворены результатом? Возможности его улучшения описаны на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].',
 	'coll-notfound_title' => 'Коллекция не найдена',
 	'coll-notfound_text' => 'Невозможно найти страницу коллекции.',
@@ -4158,9 +4159,9 @@ Om det inte fungerar, var god tryck på uppdateringsknappen i din webbläsare.</
 	'coll-rendering_page' => '  (sida: $1)',
 	'coll-rendering_finished_title' => 'Rendering avslutad',
 	'coll-rendering_finished_text' => '<strong>Dokumentfilen har skapats.</strong>
-<strong>[$1 Klicka här]</strong> för att ladda ner den till din dator.
+<strong>[$1 Ladda ner filen]</strong> till din dator.
 
-Not:
+Noter:
 * Inte nöjd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra den.',
 	'coll-notfound_title' => 'Samling inte funnen',
 	'coll-notfound_text' => 'Kan inte hitta samlings sida',
