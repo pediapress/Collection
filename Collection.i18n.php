@@ -557,9 +557,15 @@ $messages['bs'] = array(
 	'coll-add_category' => 'Dodaj kategoriju',
 	'coll-load_collection' => 'Učitaj kolekciju',
 	'coll-show_collection' => 'Prikaži kolekciju',
+	'coll-help_collections' => 'Pomoć pri kolekcijama',
+	'coll-n_pages' => '$1 {{PLURAL:$1|stranica|stranice|stranica}}',
 	'coll-unknown_subpage_title' => 'Nepoznata podstranica',
 	'coll-printable_version_pdf' => 'PDF verzija',
+	'coll-download_as' => 'Učitaj kao $1',
+	'coll-helppage' => 'Help:Kolekcije',
 	'coll-your_book' => 'Vaša knjiga',
+	'coll-download_title' => 'Učitavanje',
+	'coll-download' => 'Učitavanje',
 	'coll-remove' => 'Ukloni',
 	'coll-show' => 'Prikaži',
 	'coll-move_to_top' => 'Pomjeri na vrh',
@@ -584,6 +590,8 @@ $messages['bs'] = array(
 	'coll-personal_collection_label' => 'Lična kolekcija:',
 	'coll-community_collection_label' => 'Kolekcija zajednice:',
 	'coll-save_collection' => 'Sačuvaj kolekciju',
+	'coll-overwrite_title' => 'Stranica postoji.
+Prepiši preko postojeće?',
 	'coll-overwrite_text' => 'Stranica pod imenom [[:$1]] već postoji.
 Da li želite da je zamijenite sa Vašom kolekcijom?',
 	'coll-yes' => 'Da',
@@ -2060,7 +2068,7 @@ Si isto non functiona, per favor preme le button de refrescar in tu navigator.</
 	'coll-rendering_page' => '   (pagina: $1)',
 	'coll-rendering_finished_title' => 'Rendition finite',
 	'coll-rendering_finished_text' => '<strong>Le file del documento ha essite generate.</strong>
-<strong>[$1 Clicca hic]</strong> pro discargar lo verso tu computator.
+<strong>[$1 Discarga le file]</strong> verso tu computator.
 
 Notas:
 * Non satisfacite con le resultato? Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le collectiones]] pro possibilitates de meliorar lo.',
@@ -2252,6 +2260,7 @@ $messages['ja'] = array(
 	'coll-help_collections' => 'コレクションのヘルプ',
 	'coll-n_pages' => '$1ページ',
 	'coll-unknown_subpage_title' => '不明なサブページ',
+	'coll-printable_version_pdf' => 'PDF版',
 	'coll-download_as' => '$1としてダウンロード',
 	'coll-noscript_text' => '<h1>JavaScriptを利用しています！</h1>
 <strong>ご利用のブラウザはJavaScriptをサポートしていないか、JavaScriptが無効になっています。
@@ -3545,6 +3554,7 @@ $messages['ps'] = array(
  * @author Lijealso
  * @author MF-Warburg
  * @author Malafaya
+ * @author Waldir
  */
 $messages['pt'] = array(
 	'coll-desc' => '[[Special:Collection|Colecciona páginas]], gera PDFs',
@@ -3633,10 +3643,10 @@ Se isto não funcionar, por favor utilize o botão de refrescamento do seu naveg
 	'coll-rendering_page' => '  (página: $1)',
 	'coll-rendering_finished_title' => 'Renderização concluída',
 	'coll-rendering_finished_text' => '<strong>O ficheiro foi gerado.</strong>
-<strong>[$1 Clique aqui]</strong> para transferir a seu computador.
+<strong>[$1 Transfira o ficheiro]</strong> para o seu computador.
 
 Notas:
-*Não está satisfeito com o resultado? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre colecções]] para possibilidades de aprimoramentos.',
+* Não está satisfeito com o resultado? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre coleções]] para possibilidades de aprimoramentos.',
 	'coll-notfound_title' => 'Colecção Não Encontrada',
 	'coll-notfound_text' => 'Não foi possível encontrar a página da colecção.',
 	'coll-is_cached' => '<ul><li>Foi encontrada uma versão deste documento em cache, dispensando a renderização. <a href="$1"> Forçar nova renderização.</a></li></ul>',
@@ -3652,6 +3662,14 @@ Notas:
 Por favor, contacte o seu administrador MediaWiki.',
 	'coll-license' => 'Licença',
 	'coll-return_to' => 'Voltar para [[:$1]]',
+);
+
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Jorge Morais
+ */
+$messages['pt-br'] = array(
+	'coll-printable_version_pdf' => 'Versão em PDF',
+	'coll-your_book' => 'Seu livro',
 );
 
 /** Romanian (Română)

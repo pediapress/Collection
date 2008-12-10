@@ -62,6 +62,11 @@ $aliases['gl'] = array(
 	'Collection' => array( 'Colección' ),
 );
 
+/** Swiss German (Alemannisch) */
+$aliases['gsw'] = array(
+	'Collection' => array( 'Sammlig' ),
+);
+
 /** Hebrew (עברית) */
 $aliases['he'] = array(
 	'Collection' => array( 'אוסף' ),
