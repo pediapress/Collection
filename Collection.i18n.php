@@ -245,6 +245,7 @@ $messages['ar'] = array(
 	'coll-desc' => '[[Special:Collection|صفحات مجموعة]]، تولد PDFs',
 	'coll-collection' => 'مجموعة',
 	'coll-collections' => 'مجموعات',
+	'coll-exclusion_category_title' => 'استثن في الطباعة',
 	'coll-print_template_prefix' => 'طباعة',
 	'coll-portlet_title' => 'إنشاء كتاب',
 	'coll-add_page' => 'إضافة صفحة ويكي',
@@ -255,6 +256,7 @@ $messages['ar'] = array(
 	'coll-help_collections' => 'مساعدة المجموعات',
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحة|صفحة}}',
 	'coll-unknown_subpage_title' => 'صفحة فرعية غير معروفة',
+	'coll-printable_version_pdf' => 'نسخة PDF',
 	'coll-download_as' => 'تحميل ك$1',
 	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
 <strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
@@ -264,7 +266,7 @@ $messages['ar'] = array(
 انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
 	'coll-helppage' => 'Help:مجموعات',
 	'coll-your_book' => 'كتابك',
-	'coll-download_title' => 'حمل المجموعة ك PDF',
+	'coll-download_title' => 'تنزيل',
 	'coll-download_text' => 'لتحميل ملف PDF مولد تلقائيا من مجموعة صفحتك، اضغط الزر.',
 	'coll-download' => 'تحميل',
 	'coll-format_label' => 'الصيغة:',
@@ -277,8 +279,8 @@ $messages['ar'] = array(
 	'coll-title' => 'العنوان:',
 	'coll-subtitle' => 'العنوان الفرعي:',
 	'coll-contents' => 'محتويات',
-	'coll-create_chapter' => 'إنشاء فرع جديد',
-	'coll-sort_alphabetically' => 'تصنيف الصفحات أبجديا',
+	'coll-create_chapter' => 'إنشاء الفصل',
+	'coll-sort_alphabetically' => 'رتب أبجديا',
 	'coll-clear_collection' => 'إفراغ المجموعة',
 	'coll-rename' => 'إعادة تسمية',
 	'coll-new_chapter' => 'أدخل الاسم للفرع الجديد',
@@ -292,7 +294,7 @@ $messages['ar'] = array(
 	'coll-error_reponse' => 'خطأ استجابة من الخادم',
 	'coll-empty_collection' => 'مجموعة فارغة',
 	'coll-revision' => 'النسخة: $1',
-	'coll-save_collection_title' => 'حفظ المجموعة',
+	'coll-save_collection_title' => 'حفظ ومشاركة مجموعتك',
 	'coll-save_collection_text' => 'لحفظ هذه المجموعة للاستخدام المستقبلي، اختر نوع مجموعة وأدخل عنوان صفحة:',
 	'coll-login_to_save' => 'لو كنت تريد حفظ المجموعات من أجل الاستخدام فيما بعد، من فضلك [[Special:UserLogin|قم بتسجيل الدخول أو إنشاء حساب]].',
 	'coll-personal_collection_label' => 'مجموعة شخصية:',
@@ -336,7 +338,7 @@ $messages['ar'] = array(
 	'coll-excluded-templates' => '* القوالب في التصنيف [[:Category:$1|$1]] تم إقصاؤها.',
 	'coll-blacklisted-templates' => '* القوالب في القائمة السوداء [[:$1]] تم إقصاؤها.',
 	'coll-return_to_collection' => '<p>ارجع إلى <a href="$1">$2</a></p>',
-	'coll-book_title' => 'طلب كتاب مطبوع',
+	'coll-book_title' => 'طلب ككتاب مطبوع',
 	'coll-book_text' => 'يمكنك طلب كتاب مطبوع يحتوي على مجموعة صفحاتك بواسطة زيارة واحدا من شركاء الطباعة عند الطلب التاليين:',
 	'coll-order_from_pp' => 'طلب كتاب من $1',
 	'coll-about_pp' => 'حول $1',
@@ -1451,9 +1453,13 @@ Por favor, contacte co seu administrador MediaWiki.',
  * @author Omnipaedista
  */
 $messages['grc'] = array(
+	'coll-remove' => 'Άφαιρεῖν',
 	'coll-show' => 'Δεικνύναι',
+	'coll-title' => 'Ἐπιγραφή:',
 	'coll-subtitle' => 'Ὑποεπιγραφή:',
 	'coll-contents' => 'Περιεχόμενα',
+	'coll-yes' => 'Ναί',
+	'coll-no' => 'Οὐ',
 	'coll-cancel' => 'Ἀκυροῦν',
 	'coll-rendering_title' => 'Ἀπόδοσις',
 	'coll-about_pp' => 'Περὶ $1',
@@ -2522,12 +2528,23 @@ $messages['km'] = array(
  * @author Kwj2772
  */
 $messages['ko'] = array(
+	'coll-add_category' => '분류 추가하기',
+	'coll-n_pages' => '$1개의 문서',
 	'coll-printable_version_pdf' => 'PDF 버전',
 	'coll-download_as' => '$1로 다운로드',
 	'coll-noscript_text' => '<h1>자바스크립트가 필요합니다!</h1>
 <strong>당신의 브라우저는 자바스크립트를 지원하지 않거나 비활성화되어 있습니다.
 자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
+	'coll-format_label' => '포맷:',
+	'coll-sort_alphabetically' => '알파벳순으로 정렬',
+	'coll-yes' => '예',
+	'coll-no' => '아니오',
+	'coll-cancel' => '취소',
+	'coll-rendering_status' => '<strong>상태:</strong> $1',
+	'coll-rendering_finished_title' => '렌더링 완료',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a>로 돌아갑니다</p>',
 	'coll-license' => '라이선스',
+	'coll-return_to' => '[[:$1]]으로 돌아갑니다.',
 );
 
 /** Kinaray-a (Kinaray-a)
