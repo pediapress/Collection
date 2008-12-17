@@ -1146,7 +1146,8 @@ EOS
 			}
 			
 			if ( $numArticles > 0 ) {
-				$articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $numArticles );
+				global $wgLang;
+				$articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $wgLang->formatNum( $numArticles ) );
 				$showCollection = wfMsgHtml( 'coll-show_collection' );
 				$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
 				$out .= <<<EOS
