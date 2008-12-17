@@ -562,11 +562,13 @@ $messages['bs'] = array(
 	'coll-help_collections' => 'Pomoć pri kolekcijama',
 	'coll-n_pages' => '$1 {{PLURAL:$1|stranica|stranice|stranica}}',
 	'coll-unknown_subpage_title' => 'Nepoznata podstranica',
+	'coll-unknown_subpage_text' => 'Ova podstranica [[Special:Collection|kolekcije]] ne postoji',
 	'coll-printable_version_pdf' => 'PDF verzija',
 	'coll-download_as' => 'Učitaj kao $1',
 	'coll-helppage' => 'Help:Kolekcije',
 	'coll-your_book' => 'Vaša knjiga',
 	'coll-download_title' => 'Učitavanje',
+	'coll-download_text' => 'Da bi ste preuzeli offline verziju odaberite format i kliknite dugme.',
 	'coll-download' => 'Učitavanje',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Ukloni',
@@ -586,6 +588,7 @@ $messages['bs'] = array(
 	'coll-new_chapter' => 'Unesi ime za novo poglavlje',
 	'coll-rename_chapter' => 'Unesite novo ime za poglavlje',
 	'coll-no_such_category' => 'Nema takve kategorije',
+	'coll-error_reponse' => 'Greška pri odgovoru sa servera',
 	'coll-empty_collection' => 'Prazna kolekcija',
 	'coll-revision' => 'Revizija: $1',
 	'coll-save_collection_title' => 'Spremanje i dijeljenje vlastite kolekcije',
@@ -602,12 +605,20 @@ Da li želite da je zamijenite sa Vašom kolekcijom?',
 	'coll-cancel' => 'Odustani',
 	'coll-update' => 'Ažuriranje',
 	'coll-limit_exceeded_title' => 'Kolekcija prevelika',
+	'coll-limit_exceeded_text' => 'Vaša kolekcija stranica je prevelika.
+Ne može se dodati ni jedna stranica.',
 	'coll-rendering_status' => '<strong>Stanje:</strong> $1',
 	'coll-rendering_article' => '  (wiki stranica: $1)',
 	'coll-rendering_page' => '  (stranica: $1)',
+	'coll-notfound_title' => 'Kolekcija nije pronađena',
+	'coll-notfound_text' => 'Nije moguće pronaći stranicu kolekcije.',
+	'coll-excluded-templates' => '* Šabloni u kategoriji [[:Category:$1|$1]] su isključeni.',
 	'coll-return_to_collection' => '<p>Povratak na <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Naruči kao štampanu knjigu',
+	'coll-book_text' => 'Preuzmite štampanu knjigu od našeg print-on-demand partnera:',
 	'coll-order_from_pp' => 'Naruči knjigu od $1',
 	'coll-about_pp' => 'O $1',
+	'coll-invalid_podpartner_title' => 'POD partner nije validan',
 	'coll-license' => 'Licenca',
 	'coll-return_to' => 'Vrati na [[:$1]]',
 );
@@ -1239,14 +1250,17 @@ $messages['fi'] = array(
 	'coll-sort_alphabetically' => 'Lajittele aakkosjärjestykseen',
 	'coll-empty_collection' => 'Tyhjä kokoelma',
 	'coll-save_collection_title' => 'Tallenna ja jaa kokoelma',
+	'coll-login_to_save' => 'Jos haluat tallentaa kokoelmat myöhempää käyttöä varten, [[Special:UserLogin|kirjaudu sisään tai luo tunnus]].',
 	'coll-personal_collection_label' => 'Henkilökohtainen kokoelma:',
 	'coll-save_collection' => 'Tallenna kokoelma',
+	'coll-save_category' => 'Kokoelmat tallennetaan luokkaan [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Sivu on olemassa. Ylikirjoitetaanko?',
 	'coll-yes' => 'Kyllä',
 	'coll-no' => 'Ei',
 	'coll-cancel' => 'Peruuta',
 	'coll-update' => 'Päivitä',
 	'coll-limit_exceeded_title' => 'Kokoelma on liian iso',
+	'coll-rendering_status' => '<strong>Tila:</strong> $1',
 	'coll-rendering_article' => ' (wikisivu: $1)',
 	'coll-rendering_page' => ' (sivu: $1)',
 	'coll-notfound_title' => 'Kokoelmaa ei löydy',
@@ -2294,12 +2308,15 @@ Note:
 
 /** Japanese (日本語)
  * @author Aotake
+ * @author Fryed-peach
  * @author JtFuruhata
  */
 $messages['ja'] = array(
 	'coll-desc' => '[[Special:Collection|ページのコレクションを作成し]]、PDFを生成する',
 	'coll-collection' => 'コレクション',
 	'coll-collections' => 'コレクション',
+	'coll-exclusion_category_title' => '印刷から除外',
+	'coll-print_template_prefix' => 'Print',
 	'coll-portlet_title' => 'ブックを新規作成',
 	'coll-add_page' => 'ウィキページの追加',
 	'coll-remove_page' => 'ウィキページの削除',
@@ -2309,6 +2326,7 @@ $messages['ja'] = array(
 	'coll-help_collections' => 'コレクションのヘルプ',
 	'coll-n_pages' => '$1ページ',
 	'coll-unknown_subpage_title' => '不明なサブページ',
+	'coll-unknown_subpage_text' => 'この[[Special:Collection|コレクション]]・サブページは存在しません',
 	'coll-printable_version_pdf' => 'PDF版',
 	'coll-download_as' => '$1としてダウンロード',
 	'coll-noscript_text' => '<h1>JavaScriptを利用しています！</h1>
@@ -2322,6 +2340,7 @@ $messages['ja'] = array(
 	'coll-download' => 'ダウンロード',
 	'coll-format_label' => '形式:',
 	'coll-remove' => '削除',
+	'coll-show' => '表示',
 	'coll-move_to_top' => '先頭へ',
 	'coll-move_up' => '上へ',
 	'coll-move_down' => '下へ',
@@ -2329,9 +2348,11 @@ $messages['ja'] = array(
 	'coll-title' => 'タイトル:',
 	'coll-subtitle' => 'サブタイトル:',
 	'coll-contents' => '内容',
+	'coll-drag_and_drop' => 'ドラッグ・アンド・ドロップでウィキページや章を並べ換えます',
 	'coll-create_chapter' => '新しい章を作成',
 	'coll-sort_alphabetically' => 'ページを辞書順にソート',
 	'coll-clear_collection' => 'コレクションの消去',
+	'coll-clear_collection_confirm' => 'ほんとうにあなたのコレクションを完全に消去しますか?',
 	'coll-rename' => '名称変更',
 	'coll-new_chapter' => '新しい章見出しを入力',
 	'coll-rename_chapter' => '新しい章見出しを入力',
@@ -2339,6 +2360,8 @@ $messages['ja'] = array(
 	'coll-notitle_title' => 'ページタイトルが未設定です。',
 	'coll-post_failed_title' => 'POSTリクエストの失敗',
 	'coll-post_failed_msg' => 'この$1へのPOSTリクエストは失敗しました ($2)。',
+	'coll-mwserve_failed_title' => 'レンダリングサーバーのエラー',
+	'coll-mwserve_failed_msg' => 'レンダリングサーバーでエラーが発生しました: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'サーバからのエラーレスポンス',
 	'coll-empty_collection' => '空のコレクション',
 	'coll-revision' => '特定版: $1',
@@ -2348,6 +2371,7 @@ $messages['ja'] = array(
 	'coll-personal_collection_label' => '個人的なコレクション:',
 	'coll-community_collection_label' => '共有するコレクション:',
 	'coll-save_collection' => 'コレクションの保存',
+	'coll-save_category' => 'コレクションはカテゴリ [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]] に保存されました。',
 	'coll-overwrite_title' => '同名のページが存在します。上書きしますか？',
 	'coll-overwrite_text' => '[[:$1]] という名前のページが既に存在しています。
 これをあなたのコレクションに置き換えますか？',
@@ -2358,12 +2382,41 @@ $messages['ja'] = array(
 	'coll-overwrite' => '上書き',
 	'coll-append' => '追加',
 	'coll-cancel' => 'キャンセル',
+	'coll-update' => '更新',
 	'coll-limit_exceeded_title' => 'コレクションが大きすぎます',
 	'coll-limit_exceeded_text' => 'あなたのページコレクションは大きすぎます。
 これ以上のページを追加することはできません。',
+	'coll-rendering_title' => 'レンダリング',
+	'coll-rendering_text' => '<p><strong>ドキュメントが生成されるあいだ、しばらくお待ちください。</strong></p>
+
+<p><strong>進捗:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>このページは数秒毎に自動的に更新されます。
+更新されない場合は、ブラウザの更新ボタンを押してください。</p>',
+	'coll-rendering_status' => '<strong>ステータス:</strong> $1',
+	'coll-rendering_article' => '  (ウィキページ: $1)',
+	'coll-rendering_page' => '  (ページ: $1)',
+	'coll-rendering_finished_title' => 'レンダリング完了',
+	'coll-rendering_finished_text' => '<strong>ドキュメントファイルは生成されました。</strong>
+あなたのコンピュータに<strong>[$1 ファイルをダウンロード]</strong>してください。
+
+注:
+* 出力に満足できませんか？改善が可能か、[[{{MediaWiki:Coll-helppage}}|コレクションについてのヘルプページ]]をご覧ください。',
 	'coll-notfound_title' => 'コレクションが見つかりません',
 	'coll-notfound_text' => 'コレクションの保存ページが見つかりませんでした。',
+	'coll-is_cached' => '<ul><li>ドキュメントのキャッシュ済み版がみつかりましたので、レンダリングは必要ありません。<a href="$1">強制的に再レンダリングする。</a></li></ul>',
+	'coll-excluded-templates' => '* カテゴリ [[:Category:$1|$1]] にあるテンプレートは除外されています。',
+	'coll-blacklisted-templates' => '* ブラックリスト [[:$1]] にあるテンプレートは除外されています。',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p>に戻る',
+	'coll-book_title' => '印刷済みの本として注文',
+	'coll-book_text' => '印刷済みの本をわれわれのオンデマンド印刷パートナーから入手:',
+	'coll-order_from_pp' => '$1に本を注文',
+	'coll-about_pp' => '$1について',
+	'coll-invalid_podpartner_title' => '無効なオンデマンド印刷パートナー',
+	'coll-invalid_podpartner_msg' => '提供されたオンデマンド印刷パートナーは無効です。
+MediaWiki の管理者に連絡してください。',
+	'coll-license' => 'ライセンス',
+	'coll-return_to' => '[[:$1]]に戻る',
 );
 
 /** Javanese (Basa Jawa)
@@ -2571,6 +2624,9 @@ $messages['km'] = array(
  * @author Kwj2772
  */
 $messages['ko'] = array(
+	'coll-portlet_title' => '책 만들기',
+	'coll-add_page' => '문서 추가',
+	'coll-remove_page' => '문서 제거',
 	'coll-add_category' => '분류 추가하기',
 	'coll-n_pages' => '$1개의 문서',
 	'coll-printable_version_pdf' => 'PDF 버전',
@@ -2583,6 +2639,7 @@ $messages['ko'] = array(
 	'coll-yes' => '예',
 	'coll-no' => '아니오',
 	'coll-cancel' => '취소',
+	'coll-rendering_title' => '렌더링',
 	'coll-rendering_status' => '<strong>상태:</strong> $1',
 	'coll-rendering_finished_title' => '렌더링 완료',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a>로 돌아갑니다</p>',

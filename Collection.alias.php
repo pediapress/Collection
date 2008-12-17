@@ -92,6 +92,11 @@ $aliases['it'] = array(
 	'Collection' => array( 'Raccolta' ),
 );
 
+/** Japanese (日本語) */
+$aliases['ja'] = array(
+	'Collection' => array( 'コレクション' ),
+);
+
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
 	'Collection' => array( 'ការចងក្រង' ),
