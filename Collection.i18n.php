@@ -1218,6 +1218,7 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Cimon Avaro
  * @author Crt
+ * @author Nike
  * @author Silvonen
  * @author Str4nd
  */
@@ -1246,7 +1247,7 @@ $messages['fi'] = array(
 	'coll-move_down' => 'Siirrä alas',
 	'coll-move_to_bottom' => 'Siirrä loppuun',
 	'coll-contents' => 'Sisältö',
-	'coll-create_chapter' => 'Luo kappale',
+	'coll-create_chapter' => 'Luo luku',
 	'coll-sort_alphabetically' => 'Lajittele aakkosjärjestykseen',
 	'coll-empty_collection' => 'Tyhjä kokoelma',
 	'coll-save_collection_title' => 'Tallenna ja jaa kokoelma',
@@ -1261,8 +1262,8 @@ $messages['fi'] = array(
 	'coll-update' => 'Päivitä',
 	'coll-limit_exceeded_title' => 'Kokoelma on liian iso',
 	'coll-rendering_status' => '<strong>Tila:</strong> $1',
-	'coll-rendering_article' => ' (wikisivu: $1)',
-	'coll-rendering_page' => ' (sivu: $1)',
+	'coll-rendering_article' => '   (wikisivu: $1)',
+	'coll-rendering_page' => '   (sivu: $1)',
 	'coll-notfound_title' => 'Kokoelmaa ei löydy',
 	'coll-return_to_collection' => '<p>Palaa takaisin sivulle <a href="$1">$2</a></p>',
 	'coll-license' => 'Lisenssi',
