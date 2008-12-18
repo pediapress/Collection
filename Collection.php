@@ -113,6 +113,7 @@ $wgAutoloadClasses['CollectionFinishedTemplate'] = $dir . 'Collection.templates.
 $wgExtensionMessagesFiles['Collection'] = $dir . 'Collection.i18n.php';
 $wgExtensionAliasesFiles['Collection'] = $dir . 'Collection.alias.php';
 $wgSpecialPages['Collection'] = 'Collection';
+$wgSpecialPageGroups['Collection'] = 'pagetools';
 
 $wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'Collection::createNavURLs';
 $wgHooks['MonoBookTemplateToolboxEnd'][] = 'Collection::insertMonoBookToolboxLink';
