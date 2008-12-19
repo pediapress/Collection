@@ -1748,11 +1748,14 @@ $messages['hil'] = array(
 
 /** Croatian (Hrvatski)
  * @author Dalibor Bosits
+ * @author Suradnik13
  */
 $messages['hr'] = array(
 	'coll-desc' => '[[Special:Collection|Sakupi stranice]], izradi PDF',
 	'coll-collection' => 'Zbirka',
 	'coll-collections' => 'Zbirke',
+	'coll-exclusion_category_title' => 'Izuzmi u ispisu',
+	'coll-print_template_prefix' => 'Ispiši',
 	'coll-portlet_title' => 'Napravi knjigu',
 	'coll-add_page' => 'Dodaj wiki stranicu',
 	'coll-remove_page' => 'Ukloni wiki stranicu',
@@ -1763,6 +1766,7 @@ $messages['hr'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|stranica|stranice|stranica}}',
 	'coll-unknown_subpage_title' => 'Nepoznata podstranica',
 	'coll-unknown_subpage_text' => 'Ova podstranica za [[Special:Collection|Zbirku]] ne postoji',
+	'coll-printable_version_pdf' => 'PDF inačica',
 	'coll-download_as' => 'Preuzmi kao $1',
 	'coll-noscript_text' => '<h1>Potreban je JavaScript!</h1>
 <strong>Vaš preglednik nema podršku za JavaScript ili je isključena. Ova stranica neće raditi ispravno, ako JavaScript nije omogućen.</strong>',
@@ -1805,7 +1809,7 @@ $messages['hr'] = array(
 	'coll-personal_collection_label' => 'Osobna zbirka:',
 	'coll-community_collection_label' => 'Zajednička zbirka:',
 	'coll-save_collection' => 'Spremi zbirku',
-	'coll-save_category' => 'Zbirke su spremljene u kategoriji [[:Category:Collections|Zbirki]].',
+	'coll-save_category' => 'Zbirke su spremljene u kategoriji [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Stranica postoji.
 Prepisati preko?',
 	'coll-overwrite_text' => 'Stranica s nazivom [[:$1]] već postoji.
@@ -1832,11 +1836,12 @@ Ako ovo ne radi, molimo pritisnite tipku za osvježavanje u svom pregledniku.</p
 	'coll-rendering_article' => '  (wiki stranica: $1)',
 	'coll-rendering_page' => '  (stranica: $1)',
 	'coll-rendering_finished_title' => 'Izvođenje završeno',
-	'coll-rendering_finished_text' => '<strong>Datoteka je napravljena.</strong>
-<strong>[$1 Kliknite ovdje]</strong>za preuzimanje datoteke na vaše računalo.
+	'coll-rendering_finished_text' => '<strong>Datoteka dokumenta je stvorena.</strong>
+<strong>[$1 Preuzmite datoteku]</strong> na svoje računalo.
 
 Napomene:
-* Niste zadovoljni dobivenim rezultatom? Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za mogućnosti poboljšanja.',
+* Niste zadovoljni dobivenim rezultatom? Pogledajte [[{{MediaWiki:Coll-helppage}}|
+stranicu za pomoć o zbirkama]] za mogućnosti njegovog poboljšanja.',
 	'coll-notfound_title' => 'Zbirka nije pronađena',
 	'coll-notfound_text' => 'Stranica zbirke se ne može pronaći.',
 	'coll-is_cached' => '<ul><li>Pronađena je verzija datoteke u pričuvnoj memoriji, stoga izvođenje datoteke nije potrebno.. <a href="$1">Zahtijevaj ponovno izvođenje.</a></li></ul>',
@@ -3665,18 +3670,20 @@ Skontaktuj się z administratorem tego serwisu MediaWiki.',
 $messages['ps'] = array(
 	'coll-collection' => 'غونډ',
 	'coll-collections' => 'غونډونه',
-	'coll-portlet_title' => 'زما غونډ',
-	'coll-add_page' => 'مخ ورګډول',
+	'coll-portlet_title' => 'يو کتاب جوړول',
+	'coll-add_page' => 'د ويکي مخ ورګډول',
 	'coll-add_category' => 'وېشنيزه ورګډول',
 	'coll-help_collections' => 'د غونډونو لارښود',
+	'coll-your_book' => 'ستاسو کتاب',
 	'coll-remove' => 'غورځول',
+	'coll-show' => 'ښکاره کول',
 	'coll-title' => 'سرليک:',
 	'coll-subtitle' => 'لمنليک:',
 	'coll-contents' => 'مينځپانګه',
 	'coll-create_chapter' => 'يو نوی څپرکی جوړول',
 	'coll-rename' => 'نوم بدلول',
 	'coll-no_such_category' => 'داسې هېڅ کومه وېشنيزه نشته',
-	'coll-save_collection_title' => 'غونډ خوندي کول',
+	'coll-save_collection_title' => 'خپل غونډ خوندي او شريک کول',
 	'coll-yes' => 'هو',
 	'coll-no' => 'نه',
 	'coll-notfound_title' => 'غونډ و نه موندلای شو',
@@ -4689,6 +4696,8 @@ $messages['vi'] = array(
 	'coll-desc' => '[[Special:Collection|Tập hợp trang lại]], tạo thành tập tin PDF',
 	'coll-collection' => 'Tập hợp',
 	'coll-collections' => 'Tập hợp',
+	'coll-exclusion_category_title' => 'Ẩn khi in',
+	'coll-print_template_prefix' => 'In',
 	'coll-portlet_title' => 'Tạo một quyển sách',
 	'coll-add_page' => 'Thêm trang wiki',
 	'coll-remove_page' => 'Xóa trang wiki',
@@ -4699,17 +4708,20 @@ $messages['vi'] = array(
 	'coll-n_pages' => '$1 trang',
 	'coll-unknown_subpage_title' => 'Trang phụ không tìm được',
 	'coll-unknown_subpage_text' => 'Trang phụ của [[Special:Collection|Collection]] này không tồn tại',
+	'coll-printable_version_pdf' => 'Bản PDF',
 	'coll-download_as' => 'Tải về dưới dạng $1',
 	'coll-noscript_text' => '<h1>Yêu cầu phải có JavaScript!</h1>
 <strong>Trình duyệt của bạn không hỗ trợ JavaScript hoặc JavaScript đã bị tắt.
 Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaScript.</strong>',
 	'coll-intro_text' => 'Tạo và quản lý bộ sưu tập trang wiki của riêng bạn.<br/>Xem [[{{MediaWiki:Coll-helppage}}]] để biết thêm thông tin.',
 	'coll-helppage' => 'Help:Tập hợp',
+	'coll-your_book' => 'Sách của bạn',
 	'coll-download_title' => 'Tải xuống',
 	'coll-download_text' => 'Để tải về một phiên bản ngoại tuyến, hãy chọn định dạng rồi nhấn nút.',
 	'coll-download' => 'Tải về',
 	'coll-format_label' => 'Định dạng:',
 	'coll-remove' => 'Dời',
+	'coll-show' => 'Hiện',
 	'coll-move_to_top' => 'Di chuyển lên đầu',
 	'coll-move_up' => 'Chuyển lên',
 	'coll-move_down' => 'Chuyển xuống',
@@ -4717,9 +4729,11 @@ Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaS
 	'coll-title' => 'Tựa đề:',
 	'coll-subtitle' => 'Phụ đề:',
 	'coll-contents' => 'Nội dung',
+	'coll-drag_and_drop' => 'Kéo thả để sắp xếp các trang wiki và chương sách',
 	'coll-create_chapter' => 'Tạo chương',
 	'coll-sort_alphabetically' => 'Sắp xếp theo thứ tự ABC',
 	'coll-clear_collection' => 'Xóa tập hợp',
+	'coll-clear_collection_confirm' => 'Bạn có chắc muốn xóa hẳn tập hợp của bạn?',
 	'coll-rename' => 'Đổi tên',
 	'coll-new_chapter' => 'Gõ vào tên chương mới',
 	'coll-rename_chapter' => 'Gõ vào tên chương mới',
@@ -4738,7 +4752,7 @@ Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaS
 	'coll-personal_collection_label' => 'Tập hợp cá nhân:',
 	'coll-community_collection_label' => 'Tập hợp cộng đồng:',
 	'coll-save_collection' => 'Lưu tập hợp',
-	'coll-save_category' => 'Các tập hợp được xếp trong thể loại [[:Category:Collections|Collections]].',
+	'coll-save_category' => 'Các tập hợp được xếp trong thể loại [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Trang đã tồn tại. Ghi đè?',
 	'coll-overwrite_text' => 'Trang với tên [[:$1]] đã tồn tại.
 Bạn có muốn thay thế nó bằng tập hợp của bạn?',
