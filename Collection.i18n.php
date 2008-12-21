@@ -912,7 +912,7 @@ Toś ten bok njebuźo pšawje funkcioněrowaś, tak dłujko až JavaScript njejo
 	'coll-new_chapter' => 'Zapódaj mě za nowy kapitel',
 	'coll-rename_chapter' => 'Zapódaj nowe mě za kapitel',
 	'coll-no_such_category' => 'Njejo taka kategorija',
-	'coll-overwrite_title' => 'Bok eksistujo.
+	'coll-overwrite_title' => 'Bok eksistěrujo.
 Pśepisaś?',
 	'coll-yes' => 'Jo',
 	'coll-no' => 'Ně',
@@ -1221,10 +1221,13 @@ $messages['fa'] = array(
  * @author Nike
  * @author Silvonen
  * @author Str4nd
+ * @author Tarmo
  */
 $messages['fi'] = array(
+	'coll-desc' => '[[Special:Collection|Kerää sivuja]], laadi PDF-tiedostoja.',
 	'coll-collection' => 'Kokoelma',
 	'coll-collections' => 'Kokoelmat',
+	'coll-exclusion_category_title' => 'Jätä pois painosta',
 	'coll-print_template_prefix' => 'Tulosta',
 	'coll-portlet_title' => 'Luo kirja',
 	'coll-add_page' => 'Lisää wikisivu',
@@ -1235,9 +1238,11 @@ $messages['fi'] = array(
 	'coll-help_collections' => 'Ohje kokoelmille',
 	'coll-n_pages' => '$1 {{PLURAL:$1|sivu|sivua}}',
 	'coll-unknown_subpage_title' => 'Tuntematon alasivu',
+	'coll-unknown_subpage_text' => 'Tätä [[Special:Collection|kokoelman]] alasivua ei ole olemassa',
 	'coll-printable_version_pdf' => 'PDF-versio',
 	'coll-download_as' => 'Lataa $1-tiedostona',
 	'coll-helppage' => 'Help:Kokoelmat',
+	'coll-your_book' => 'Sinun kirjasi',
 	'coll-download_title' => 'Lataa',
 	'coll-download' => 'Lataa',
 	'coll-remove' => 'Poista',
@@ -1250,6 +1255,7 @@ $messages['fi'] = array(
 	'coll-create_chapter' => 'Luo luku',
 	'coll-sort_alphabetically' => 'Lajittele aakkosjärjestykseen',
 	'coll-empty_collection' => 'Tyhjä kokoelma',
+	'coll-revision' => 'Versio: $1',
 	'coll-save_collection_title' => 'Tallenna ja jaa kokoelma',
 	'coll-login_to_save' => 'Jos haluat tallentaa kokoelmat myöhempää käyttöä varten, [[Special:UserLogin|kirjaudu sisään tai luo tunnus]].',
 	'coll-personal_collection_label' => 'Henkilökohtainen kokoelma:',
@@ -1258,14 +1264,30 @@ $messages['fi'] = array(
 	'coll-overwrite_title' => 'Sivu on olemassa. Ylikirjoitetaanko?',
 	'coll-yes' => 'Kyllä',
 	'coll-no' => 'Ei',
+	'coll-overwrite' => 'Ylikirjoita',
+	'coll-append' => 'Lisää perään',
 	'coll-cancel' => 'Peruuta',
 	'coll-update' => 'Päivitä',
 	'coll-limit_exceeded_title' => 'Kokoelma on liian iso',
+	'coll-rendering_title' => 'Renderöidään',
+	'coll-rendering_text' => '<p><strong>Ole hyvä ja odota, kun dokumenttiasi valmistellaan.</strong></p>
+
+<p><strong>Eteneminen:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Tämän sivun pitäisi päivittyä muutaman sekunnin välein.
+Jos näin ei käy, paina selaimesi päivityspainiketta.</p>',
 	'coll-rendering_status' => '<strong>Tila:</strong> $1',
 	'coll-rendering_article' => '   (wikisivu: $1)',
 	'coll-rendering_page' => '   (sivu: $1)',
 	'coll-notfound_title' => 'Kokoelmaa ei löydy',
 	'coll-return_to_collection' => '<p>Palaa takaisin sivulle <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Tilaa painettuna kirjana',
+	'coll-book_text' => 'Hanki painettu kirja meidän pikapainopartneriltamme:',
+	'coll-order_from_pp' => 'Tilaa kirja täältä: $1',
+	'coll-about_pp' => 'Tietoja: $1',
+	'coll-invalid_podpartner_title' => 'Epäkelpo POD-partneri',
+	'coll-invalid_podpartner_msg' => 'Annettu POD-partneri ei kelpaa.
+Ota yhteys MediaWiki-ylläpitäjääsi.',
 	'coll-license' => 'Lisenssi',
 	'coll-return_to' => 'Palaa sivulle [[:$1]]',
 );
@@ -1866,6 +1888,8 @@ $messages['hsb'] = array(
 	'coll-desc' => '[[Special:Collection|Strony zběrać]], PDF wutworić',
 	'coll-collection' => 'Zběrka',
 	'coll-collections' => 'Zběrki',
+	'coll-exclusion_category_title' => 'Wot ćišćenja wuzamknyć',
+	'coll-print_template_prefix' => 'Ćišćeć',
 	'coll-portlet_title' => 'Knihu wutworić',
 	'coll-add_page' => 'Wikijowu stronu přidać',
 	'coll-remove_page' => 'Wikijowu stronu wotstronić',
@@ -1874,16 +1898,22 @@ $messages['hsb'] = array(
 	'coll-show_collection' => 'Zběrku pokazać',
 	'coll-help_collections' => 'Pomoc zběrkow',
 	'coll-n_pages' => '$1 {{PLURAL:$1|strona|stronje|strony|stronow}}',
+	'coll-unknown_subpage_title' => 'Njeznata podstrona',
+	'coll-unknown_subpage_text' => 'Tuta podstrona [[Special:Collection|zběrki]] njeeksistuje',
+	'coll-printable_version_pdf' => 'PDF-wersija',
 	'coll-download_as' => 'Jako $1 sćahnyć',
 	'coll-noscript_text' => '<h1>JavaScript je trěbny!</h1>
 <strong>Twój wobhladowak njepodpěruje JavaScript abo JavaScript je wupinjeny.
 Tuta strona njebudźe prawje fungować, doniž JavaScript zmóžnjeny njeje.</strong>',
+	'coll-intro_text' => 'Wutwor a zrjaduj swój indiwiduelny wuběr wikijowych stronow.<br />Hlej [[{{MediaWiki:Coll-helppage}}|Pomoc wo zběrkach]] za dalše informacije.',
 	'coll-helppage' => 'Help:Zběrki',
+	'coll-your_book' => 'Twoja kniha',
 	'coll-download_title' => 'Sćahnyć',
 	'coll-download_text' => 'Zo by wersiju offline sćahnył, wubjer format a klikń na tłóčatko.',
 	'coll-download' => 'Sćahnyć',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Wotstronić',
+	'coll-show' => 'Pokazać',
 	'coll-move_to_top' => 'Cyle horje přesunyć',
 	'coll-move_up' => 'Horje přesunyć',
 	'coll-move_down' => 'Dele přesunyć',
@@ -1891,20 +1921,28 @@ Tuta strona njebudźe prawje fungować, doniž JavaScript zmóžnjeny njeje.</st
 	'coll-title' => 'Titul:',
 	'coll-subtitle' => 'Podtitul:',
 	'coll-contents' => 'Wobsah',
+	'coll-drag_and_drop' => 'Přez přesunjenje z myšu móžeš wikijowe strony a kapitle přerjadować',
 	'coll-create_chapter' => 'Kapitl wutworić',
 	'coll-sort_alphabetically' => 'Alfabetisce sortěrować',
 	'coll-clear_collection' => 'Zběrku wuprózdnić',
+	'coll-clear_collection_confirm' => 'Chceš woprawdźe swoju zběrku dospołnje wuprózdnić?',
 	'coll-rename' => 'Přemjenować',
 	'coll-new_chapter' => 'Zapodaj mjeno za nowy kapitl',
 	'coll-rename_chapter' => 'Zapodaj nowe mjeno za kapitl',
 	'coll-no_such_category' => 'Žana tajka kategorija',
 	'coll-notitle_title' => 'Titul strony njeda so zwěsćić.',
+	'coll-post_failed_title' => 'Naprašowanje POST njeporadźiło',
+	'coll-post_failed_msg' => 'Naprašowanje POST do $1 je so njeporadźiło ($2).',
+	'coll-mwserve_failed_title' => 'Zmylk tworjenskeho serwera',
+	'coll-mwserve_failed_msg' => 'Zmylk je na serwerje tworjenja wustupił: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Serwer je zmylk zdźělił',
 	'coll-empty_collection' => 'Prózdna zběrka',
 	'coll-revision' => 'Wersija: $1',
 	'coll-save_collection_title' => 'Twoju zběrku składować a dźělić',
+	'coll-save_collection_text' => 'Wubjer městno:',
 	'coll-login_to_save' => 'Jeli chceš zběrki za pozdźiše wužiwanje składować, [[Special:UserLogin|přizjew so prošu abo wutwor konto]].',
 	'coll-personal_collection_label' => 'Wosobinska zběrka:',
+	'coll-community_collection_label' => 'Zběrka zhromadźenstwa:',
 	'coll-save_collection' => 'Zběrku składować',
 	'coll-save_category' => 'Zběrki składuja so w kategoriji [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Strona eksistuje. Přepisać?',
@@ -1912,18 +1950,39 @@ Tuta strona njebudźe prawje fungować, doniž JavaScript zmóžnjeny njeje.</st
 Chceš ju přez swoju zběrku narunać?',
 	'coll-yes' => 'Haj',
 	'coll-no' => 'Ně',
+	'coll-load_overwrite_text' => 'Maš hižo někotre strony w swojej zběrce.
+Chceš swoju aktualnu zběrku přepisać, nowy wobsah přidać abo začitanje tuteje zběrki přetorhnyć?',
 	'coll-overwrite' => 'Přepisać',
 	'coll-append' => 'Připójsnyć',
 	'coll-cancel' => 'Přetorhnyć',
+	'coll-update' => 'Aktualizować',
 	'coll-limit_exceeded_title' => 'Zběrka přewulka',
 	'coll-limit_exceeded_text' => 'Twoja zběrka stronow je přewulka.
 Njadadźa so hižo žane strony přidać.',
+	'coll-rendering_title' => 'Tworjenje',
+	'coll-rendering_text' => '<p><strong>Prošu počakń trochu, doniž dokument njeje so wutworjeny.</strong></p>
+
+<p><strong>Postup:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Tuta strona dyrbjała so awtomatisce kóžde por sekundow aktualizować.
+Jeli so to njestawa, klikń prošu na tłóčatko "Znowa" swojeho wobhladowaka.</p>',
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
+	'coll-rendering_article' => '(wikijowa strona: $1)',
+	'coll-rendering_page' => '(strona: $1)',
+	'coll-rendering_finished_title' => 'Tworjenje dokónčene',
+	'coll-rendering_finished_text' => '<strong>Dokumentowa dataja je so wuspěšnje wutworiła.</strong>
+<strong>[$1 Dataju na twój ličak sćahnyć]</strong>.
+
+Přispomnjenka:
+* Njejsy spokojny z wudaćom? Hlej [[{{MediaWiki:Coll-helppage}}|stronu pomocy wo zběrkach]] za móžnosće je polěpšić.',
 	'coll-notfound_title' => 'zběrka njenamakana',
 	'coll-notfound_text' => 'Strona zběrki njebu namakana.',
+	'coll-is_cached' => '<ul><li>Pufrowana wersija dokumenta bu namakana, tohodla tworjenje njeje trěbne było. <a href="$1">Znowatworjenje wunuzować.</a></li></ul>',
 	'coll-excluded-templates' => '* Předłohi w kategoriji [[:Category:$1|$1]] buchu wuzamknjene.',
 	'coll-blacklisted-templates' => '* Předłohi na čornej lisćinje [[:$1]] buchu wuzamknjene.',
 	'coll-return_to_collection' => '<p>Wróćo k <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Jako wućišćanu knihu skazać',
+	'coll-book_text' => 'Wućišćanu knihu wot našeho partnera za ćišćenje na žadanje:',
 	'coll-order_from_pp' => 'Knihu pola $1 skazać',
 	'coll-about_pp' => 'Wo $1',
 	'coll-invalid_podpartner_title' => 'Njepłaćiwy partner za ćišć na žadanje',
@@ -3033,6 +3092,7 @@ $messages['ms'] = array(
 	'coll-desc' => '[[Special:Collection|Mengumpul laman]] dan menjana PDF',
 	'coll-collection' => 'Koleksi',
 	'coll-collections' => 'Koleksi',
+	'coll-exclusion_category_title' => 'Tidak dicetak',
 	'coll-print_template_prefix' => 'Cetak',
 	'coll-portlet_title' => 'Cipta buku',
 	'coll-add_page' => 'Tambah laman wiki',
@@ -3541,6 +3601,9 @@ Contactatz vòstre administrator Mediawiki.',
  * @author Amikeco
  */
 $messages['os'] = array(
+	'coll-download_as' => 'Æрбавгæн куыд $1',
+	'coll-download_title' => 'Æрбавгæн',
+	'coll-download' => 'Æрбавгæн',
 	'coll-title' => 'Сæргонд:',
 	'coll-yes' => 'О',
 	'coll-no' => 'Нæ',
@@ -3680,7 +3743,7 @@ $messages['ps'] = array(
 	'coll-title' => 'سرليک:',
 	'coll-subtitle' => 'لمنليک:',
 	'coll-contents' => 'مينځپانګه',
-	'coll-create_chapter' => 'يو نوی څپرکی جوړول',
+	'coll-create_chapter' => 'څپرکی جوړول',
 	'coll-rename' => 'نوم بدلول',
 	'coll-no_such_category' => 'داسې هېڅ کومه وېشنيزه نشته',
 	'coll-save_collection_title' => 'خپل غونډ خوندي او شريک کول',
@@ -3820,12 +3883,13 @@ $messages['ro'] = array(
 	'coll-desc' => '[[Special:Collection|Colecţionează pagini]], generează fişiere PDF',
 	'coll-collection' => 'Colecţie',
 	'coll-collections' => 'Colecţii',
-	'coll-portlet_title' => 'Colecţie',
+	'coll-portlet_title' => 'Creează o carte',
 	'coll-add_page' => 'Adaugă pagină',
 	'coll-remove_page' => 'Elimină pagină',
 	'coll-add_category' => 'Adaugă categorie',
 	'coll-load_collection' => 'Încarcă colecţie',
 	'coll-show_collection' => 'Arată colecţie',
+	'coll-your_book' => 'Cartea ta',
 	'coll-remove' => 'Elimină',
 	'coll-show' => 'Arată',
 	'coll-title' => 'Titlu:',
