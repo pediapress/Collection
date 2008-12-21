@@ -1194,10 +1194,10 @@ $messages['fa'] = array(
 	'coll-rendering_page' => '  (صفحه: $1)',
 	'coll-rendering_finished_title' => 'پایان ترجمه',
 	'coll-rendering_finished_text' => '<strong>پروندهٔ سند ایجاد شده‌است.</strong>
-<strong>[$1 این‌جا کلیک کنید]</strong> تا آن را به روی رایانهٔ خود بارگیری کنید.
+آن را به روی رایانهٔ خود <strong>[$1 بارگیری کنید]</strong>.
 
 نکته:
-* از خروجی راضی نیستید؟ [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای مجموعه‌ها]] را ببینید تا از امکانات بهبود آن با خبر شوید.',
+* از خروجی راضی نیستید؟ [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای مجموعه‌ها]] را ببینید تا از امکان بهبود آن با خبر شوید.',
 	'coll-notfound_title' => 'مجموعه پیدا نشد',
 	'coll-notfound_text' => 'صفحهٔ مجموعه پیدا نشد.',
 	'coll-is_cached' => '<ul><li>یک نسخهٔ کاشه‌گیری شده از این سند پیدا شد، به همین خاطر ترجمه لازم نبود. <a href="$1">ترجمهٔ اجباری.</a></li></ul>',
@@ -1280,6 +1280,7 @@ Jos näin ei käy, paina selaimesi päivityspainiketta.</p>',
 	'coll-rendering_article' => '   (wikisivu: $1)',
 	'coll-rendering_page' => '   (sivu: $1)',
 	'coll-notfound_title' => 'Kokoelmaa ei löydy',
+	'coll-notfound_text' => 'Kokoelmasivua ei löydy.',
 	'coll-return_to_collection' => '<p>Palaa takaisin sivulle <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Tilaa painettuna kirjana',
 	'coll-book_text' => 'Hanki painettu kirja meidän pikapainopartneriltamme:',
@@ -2096,7 +2097,7 @@ Megjegyzés:
 	'coll-return_to_collection' => '<p>Visszatérés ide: <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Megrendelés nyomtatott könyvként',
 	'coll-book_text' => 'Nyomtatott könyv rendelése a kérésre nyomtató partnerünktől:',
-	'coll-order_from_pp' => 'Köny rendelése a következőtől: $1',
+	'coll-order_from_pp' => 'Könyv rendelése a következőtől: $1',
 	'coll-about_pp' => 'A $1ről',
 	'coll-invalid_podpartner_title' => 'Érvénytelen nyomdai partner',
 	'coll-invalid_podpartner_msg' => 'A megadott nyomdai partner érvénytelen.
@@ -2575,10 +2576,10 @@ Yèn ora mangkono, mangga pencèt tombol ''refresh'' ing ''browser'' panjenengan
 	'coll-rendering_page' => '  (kaca: $1)',
 	'coll-rendering_finished_title' => 'Rampung ngowahi/gawé',
 	'coll-rendering_finished_text' => "<strong>Berkas dokumèn wis digawé.</strong>
-<strong>[$1 Klik ing kéné]</strong> kanggo ngundhuh menyang komputer panjenengan.
+<strong>[$1 Undhuh berkas]</strong> menyang komputer panjenengan.
 
 Cathetan:
-* Kurang rena karo wetonan (''output'')é? Pirsani [[{{MediaWiki:Coll-helppage}}|kaca pitulung bab kolèkasi]] kanggo kamungkinan ningkataké.",
+* Kurang rena karo wetonan (''output'')é? Pirsani [[{{MediaWiki:Coll-helppage}}|kaca pitulung bab kolèksi]] kanggo kamungkinan ningkataké.",
 	'coll-notfound_title' => 'Kolèksi ora ditemokaké',
 	'coll-notfound_text' => 'Ora bisa nemokaké kaca kolèksi.',
 	'coll-is_cached' => "<ul><li>Dokumèn vèrsi ''cache'' wis ditemokaké, mula ora perlu ana pangowahan (''rendering''). <a href=\"\$1\">Peksa ''re-rendering''.</a></li></ul>",
@@ -3350,7 +3351,7 @@ Opmerkingen:
 	'coll-notfound_text' => 'De collectiepagina is niet gevonden.',
 	'coll-is_cached' => '<ul><li>Er is een versie van het document beschikbaar in de cache, dus opnieuw renderen was niet nodig.
 <a href="$1">Opnieuw renderen.</a></li></ul>',
-	'coll-excluded-templates' => '* Sjablonen in de category [[:Category:$1|$1]] worden genegeerd.',
+	'coll-excluded-templates' => '* Sjablonen in de categorie [[:Category:$1|$1]] worden genegeerd.',
 	'coll-blacklisted-templates' => '* Sjablonen op de zwarte lijst [[:$1]] worden genegeerd.',
 	'coll-return_to_collection' => '<p>Teruggaan naar <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Als gedrukt boek bestellen',
