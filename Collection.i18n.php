@@ -1227,7 +1227,7 @@ $messages['fi'] = array(
 	'coll-desc' => '[[Special:Collection|Kerää sivuja]], laadi PDF-tiedostoja.',
 	'coll-collection' => 'Kokoelma',
 	'coll-collections' => 'Kokoelmat',
-	'coll-exclusion_category_title' => 'Jätä pois painosta',
+	'coll-exclusion_category_title' => 'Tulosteesta poisjätettävät',
 	'coll-print_template_prefix' => 'Tulosta',
 	'coll-portlet_title' => 'Luo kirja',
 	'coll-add_page' => 'Lisää wikisivu',
@@ -1241,34 +1241,63 @@ $messages['fi'] = array(
 	'coll-unknown_subpage_text' => 'Tätä [[Special:Collection|kokoelman]] alasivua ei ole olemassa',
 	'coll-printable_version_pdf' => 'PDF-versio',
 	'coll-download_as' => 'Lataa $1-tiedostona',
+	'coll-noscript_text' => '<h1>JavaScript vaaditaan</h1>
+<strong>Selaimesi ei tue JavaScriptiä tai JavaScript on poistettu käytöstä.
+Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
+	'coll-intro_text' => 'Laadi ja hallinnoi omia henkilökohtaisia wikisivujen valikoimiasi.<br />Lisätietoja sivulla [[{{MediaWiki:Coll-helppage}}]].',
 	'coll-helppage' => 'Help:Kokoelmat',
 	'coll-your_book' => 'Sinun kirjasi',
 	'coll-download_title' => 'Lataa',
+	'coll-download_text' => 'Tallentaaksesi kokoelman omalle koneellesi valitse tiedostomuoto ja napsauta painiketta.',
 	'coll-download' => 'Lataa',
+	'coll-format_label' => 'Muoto:',
 	'coll-remove' => 'Poista',
 	'coll-show' => 'Näytä',
 	'coll-move_to_top' => 'Siirrä alkuun',
 	'coll-move_up' => 'Siirrä ylös',
 	'coll-move_down' => 'Siirrä alas',
 	'coll-move_to_bottom' => 'Siirrä loppuun',
+	'coll-title' => 'Otsikko:',
+	'coll-subtitle' => 'Alaotsikko:',
 	'coll-contents' => 'Sisältö',
+	'coll-drag_and_drop' => 'Raahaa wikisivut ja luvut haluamaasi järjestykseen.',
 	'coll-create_chapter' => 'Luo luku',
 	'coll-sort_alphabetically' => 'Lajittele aakkosjärjestykseen',
+	'coll-clear_collection' => 'Tyhjennä kokoelma',
+	'coll-clear_collection_confirm' => 'Haluatko varmasti kokonaan tyhjentää kokoelmasi?',
+	'coll-rename' => 'Vaihda nimeä',
+	'coll-new_chapter' => 'Anna uuden luvun nimi',
+	'coll-rename_chapter' => 'Anna uuden luvun nimi',
+	'coll-no_such_category' => 'Luokkaa ei ole',
+	'coll-notitle_title' => 'Sivun otsikkoa ei voitu päätellä.',
+	'coll-post_failed_title' => 'POST-pyyntö epäonnistui',
+	'coll-post_failed_msg' => 'POST-pyyntö palvelimeen $1 epäonnistui ($2).',
+	'coll-mwserve_failed_title' => 'Virhe renderöintipalvelimella',
+	'coll-mwserve_failed_msg' => 'Renderöintipalvelimella tapahtui virhe: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Palvelin antoi virheilmoituksen',
 	'coll-empty_collection' => 'Tyhjä kokoelma',
 	'coll-revision' => 'Versio: $1',
 	'coll-save_collection_title' => 'Tallenna ja jaa kokoelma',
+	'coll-save_collection_text' => 'Valitse sijainti:',
 	'coll-login_to_save' => 'Jos haluat tallentaa kokoelmat myöhempää käyttöä varten, [[Special:UserLogin|kirjaudu sisään tai luo tunnus]].',
 	'coll-personal_collection_label' => 'Henkilökohtainen kokoelma:',
+	'coll-community_collection_label' => 'Yhteinen kokoelma:',
 	'coll-save_collection' => 'Tallenna kokoelma',
 	'coll-save_category' => 'Kokoelmat tallennetaan luokkaan [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Sivu on olemassa. Ylikirjoitetaanko?',
+	'coll-overwrite_text' => 'Sivu nimellä [[:$1]] on jo olemassa.
+Haluatko korvata sen kokoelmallasi?',
 	'coll-yes' => 'Kyllä',
 	'coll-no' => 'Ei',
-	'coll-overwrite' => 'Ylikirjoita',
+	'coll-load_overwrite_text' => 'Sinulla on jo joitain sivuja kokoelmassasi.
+Haluatko korvata vanhan kokoelmasi, lisätä uuden sisällön kokoelmasi perään, vai peruuttaa tämän sisällön lataamisen?',
+	'coll-overwrite' => 'Korvaa',
 	'coll-append' => 'Lisää perään',
 	'coll-cancel' => 'Peruuta',
 	'coll-update' => 'Päivitä',
 	'coll-limit_exceeded_title' => 'Kokoelma on liian iso',
+	'coll-limit_exceeded_text' => 'Sivukokoelmasi on liian suuri.
+Sivuja ei voi lisätä enempää.',
 	'coll-rendering_title' => 'Renderöidään',
 	'coll-rendering_text' => '<p><strong>Ole hyvä ja odota, kun dokumenttiasi valmistellaan.</strong></p>
 
@@ -1279,13 +1308,22 @@ Jos näin ei käy, paina selaimesi päivityspainiketta.</p>',
 	'coll-rendering_status' => '<strong>Tila:</strong> $1',
 	'coll-rendering_article' => '   (wikisivu: $1)',
 	'coll-rendering_page' => '   (sivu: $1)',
+	'coll-rendering_finished_title' => 'Renderöinti valmis',
+	'coll-rendering_finished_text' => '<strong>Tiedosto on generoitu.</strong>
+<strong>[$1 Lataa tiedosto]</strong> tietokoneellesi.
+
+Huomautuksia:
+* Etkö ole tyytyväinen lopputulokseen? Katso [[{{MediaWiki:Coll-helppage}}|kokoelmien ohjesivulta]] mahdollisuuksista parantaa sitä.',
 	'coll-notfound_title' => 'Kokoelmaa ei löydy',
 	'coll-notfound_text' => 'Kokoelmasivua ei löydy.',
+	'coll-is_cached' => '<ul><li>Dokumentti löytyi välimuistista, joten renderöintiä ei tarvittu. <a href="$1">Pakota uudelleenrenderöinti.</a></li></ul>',
+	'coll-excluded-templates' => '* Mallineet luokassa [[:Category:$1|$1]] on ohitettu.',
+	'coll-blacklisted-templates' => '* Mallineet sulkulistalla [[:$1]] on ohitettu.',
 	'coll-return_to_collection' => '<p>Palaa takaisin sivulle <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Tilaa painettuna kirjana',
-	'coll-book_text' => 'Hanki painettu kirja meidän pikapainopartneriltamme:',
+	'coll-book_text' => 'Hanki painettuna kirjana pikapainopartneriltamme:',
 	'coll-order_from_pp' => 'Tilaa kirja täältä: $1',
-	'coll-about_pp' => 'Tietoja: $1',
+	'coll-about_pp' => 'Tietoja $1',
 	'coll-invalid_podpartner_title' => 'Epäkelpo POD-partneri',
 	'coll-invalid_podpartner_msg' => 'Annettu POD-partneri ei kelpaa.
 Ota yhteys MediaWiki-ylläpitäjääsi.',
@@ -2702,6 +2740,7 @@ $messages['ko'] = array(
 자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
 	'coll-format_label' => '포맷:',
 	'coll-sort_alphabetically' => '알파벳순으로 정렬',
+	'coll-mwserve_failed_title' => '렌더 서버 오류',
 	'coll-yes' => '예',
 	'coll-no' => '아니오',
 	'coll-cancel' => '취소',
@@ -2745,11 +2784,11 @@ $messages['ksh'] = array(
 	'coll-download_as' => 'Als $1 eronger laade',
 	'coll-noscript_text' => '<h1>Bruch JavaSkripp!</h1>
 <strong>Dinge Brauser kann kei JavaSkripp udder et es affjeschalldt.
-<br/>Di Sigg hee weed oohne JavaSkripp nit donn.</strong>',
+Di Sigg hee weed oohne JavaSkripp nit donn.</strong>',
 	'coll-intro_text' => 'Do kanns Sammlonge vun Sigge zusamme ställe, beärrbeide, un för shpääder affspeijschere.<br />
 Loor Der de ußföhrlesche [[{{MediaWiki:Coll-helppage}}|Hölp övver Sammlonge]] aan,
 wann de noch mieh wesse wells.',
-	'coll-helppage' => 'Hölp:Sammlonge',
+	'coll-helppage' => 'Help:Sammlonge',
 	'coll-your_book' => 'Ding Boch',
 	'coll-download_title' => 'Eronger laade',
 	'coll-download_text' => 'Öm en automattesch jemaate Datei met Dinge Sammlong eronger ze laade,
@@ -2895,7 +2934,7 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-save_collection' => 'Sammlung späicheren',
 	'coll-save_category' => 'Sammlunge ginn an der Kategorie [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]] gespäichert.',
 	'coll-overwrite_title' => "D'Säit gëtt et. Iwwerschreiwen?",
-	'coll-overwrite_text' => 'Et gëtt schonn eng Säit mam Numm [:$1]].
+	'coll-overwrite_text' => 'Et gëtt schonn eng Säit mam Numm [[:$1]].
 Wëllt Dir déi duerch är Sammlung ersetzen?',
 	'coll-yes' => 'Jo',
 	'coll-no' => 'Neen',
@@ -3366,15 +3405,115 @@ Neem contact op met uw MediaWiki-beheerder.',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Harald Khan
  * @author Jon Harald Søby
  */
 $messages['nn'] = array(
+	'coll-desc' => 'Lag [[Special:Collection|sidesamlingar]] og opprett PDF-filer',
 	'coll-collection' => 'Samling',
+	'coll-collections' => 'Samlingar',
+	'coll-exclusion_category_title' => 'Ekskluder ved utskrift',
+	'coll-print_template_prefix' => 'Skriv ut',
+	'coll-portlet_title' => 'Opprett ei bok',
+	'coll-add_page' => 'Legg til wikisida',
+	'coll-remove_page' => 'Fjern wikisida',
+	'coll-add_category' => 'Legg til kategori',
+	'coll-load_collection' => 'Last samling',
+	'coll-show_collection' => 'Vis samling',
+	'coll-help_collections' => 'Hjelp for samlingar',
+	'coll-n_pages' => '{{PLURAL:$1|éi sida|$1 sider}}',
+	'coll-unknown_subpage_title' => 'Ukjend undersida',
+	'coll-unknown_subpage_text' => 'Denne undersida av [[Special:Collection|Collection]] finst ikkje',
+	'coll-printable_version_pdf' => 'PDF-versjon',
+	'coll-download_as' => 'Last ned som $1',
+	'coll-noscript_text' => '<h1>JavaScript er påkravd!</h1>
+<strong>Nettlesaren din støttar ikkje JavaScript, eller JavaScript har blitt slege av. 
+Denne sida vil ikkje fungera på rett måte med mindre JavaScript er slege på.</strong>',
+	'coll-intro_text' => 'Lag og administrer di eiga samling av wikisider.<br /> Sjå [[{{MediaWiki:Coll-helppage}}]] for meir informasjon.',
+	'coll-helppage' => 'Hjelp:Samlingar',
+	'coll-your_book' => 'Di bok',
+	'coll-download_title' => 'Last ned',
+	'coll-download_text' => 'For å lasta ned ein offline-versjon, vel eit format og trykk på knappen.',
+	'coll-download' => 'Last ned',
+	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Fjern',
+	'coll-show' => 'Vis',
+	'coll-move_to_top' => 'Flytt til toppen',
+	'coll-move_up' => 'Flytt opp',
+	'coll-move_down' => 'Flytt ned',
+	'coll-move_to_bottom' => 'Flytt til botnen',
 	'coll-title' => 'Tittel:',
+	'coll-subtitle' => 'Undertittel:',
+	'coll-contents' => 'Innhald',
+	'coll-drag_and_drop' => 'Nytt dra og slepp for å endra på rekkjefølgja på wikisider og kapittel',
+	'coll-create_chapter' => 'Opprett kapittel',
+	'coll-sort_alphabetically' => 'Sorter alfabetisk',
+	'coll-clear_collection' => 'Tøm samling',
+	'coll-clear_collection_confirm' => 'Vil du verkeleg fullstendig tømma samlinga di?',
+	'coll-rename' => 'Gje nytt namn',
+	'coll-new_chapter' => 'Skriv inn namn for det nye kapittelet',
+	'coll-rename_chapter' => 'Skriv inn det nye namnet til kapittelet',
+	'coll-no_such_category' => 'Ingen kategori ved dette namnet',
+	'coll-notitle_title' => 'Fann ikkje ut tittelen på sida.',
+	'coll-post_failed_title' => 'POST-førespurnaden mislukkast',
+	'coll-post_failed_msg' => 'POST-førespurnaden til $1 mislukkast ($2).',
+	'coll-mwserve_failed_title' => 'Renderingstenarfeil',
+	'coll-mwserve_failed_msg' => 'Ein feil oppstod på renderingstenaren: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Feilrespons frå tenaren',
+	'coll-empty_collection' => 'Tom samling',
+	'coll-revision' => 'Versjon: $1',
+	'coll-save_collection_title' => 'Lagra og del samlinga di',
+	'coll-save_collection_text' => 'Vel ei plassering:',
+	'coll-login_to_save' => 'Om du vil lagra samlingane for seinare bruk, [[Special:UserLogin|logg inn eller opprett ein konto]].',
+	'coll-personal_collection_label' => 'Personleg samling:',
+	'coll-community_collection_label' => 'Fellesskapssamling:',
+	'coll-save_collection' => 'Lagra samling',
+	'coll-save_category' => 'Samlingar er lagra i kategorien [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
+	'coll-overwrite_title' => 'Sida finst.
+Skriva over ho?',
+	'coll-overwrite_text' => 'Ei sida med namnet [[:$1]] finst frå før. 
+Vil du at ho skal verta erstatta med samlinga di?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nei',
-	'coll-cancel' => 'Avbryt',
+	'coll-load_overwrite_text' => 'Du har allereie nokre sider i samlinga di.
+Vil du erstatta den noverande samlinga di, leggja til det nye innhaldet eller avbryta lastinga av samlinga?',
+	'coll-overwrite' => 'Erstatta',
+	'coll-append' => 'Leggja til',
+	'coll-cancel' => 'Avbryta',
+	'coll-update' => 'Oppdater',
+	'coll-limit_exceeded_title' => 'Samlinga er for stor',
+	'coll-limit_exceeded_text' => 'Sidesamlinga di er for stor.
+Fleire sider kan ikkje verta lagt til.',
+	'coll-rendering_title' => 'Opprettar',
+	'coll-rendering_text' => '<p><strong>Ver venleg og vent medan dokumentet blir oppretta.</strong></p>
+
+<p><strong>Framsteg:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Denne sida bør automatisk verta lasta inn på nytt med eit par sekunds mellomrom. Om dette ikkje fungerer, trykk på oppdateringsknappen i nettlesaren din.</p>',
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
+	'coll-rendering_article' => '   (wikisida: $1)',
+	'coll-rendering_page' => '  (sida: $1)',
+	'coll-rendering_finished_title' => 'Oppretta',
+	'coll-rendering_finished_text' => '<strong>Dokumentfila har vorte oppretta.</strong>
+<strong>[$1 Last ned fila]</strong> til datamaskina di.
+
+Merk:
+* Ikkje nøgd med resultatet? Sjå [[{{Mediawiki:Coll-helppage}}|hjelpesida om samlingar]] for moglegheiter til å forbetra det.',
+	'coll-notfound_title' => 'Samling vart ikkje funnen',
+	'coll-notfound_text' => 'Kunne ikkje finna samlinggsida.',
+	'coll-is_cached' => '<ul><li>Ein mellomlagra versjon av dokumentet vart funnen, so ingen rendrering var naudsynleg. <a href="$1">Tving ny rendrering.</a></li></ul>',
+	'coll-excluded-templates' => '* Malar i kategorien [[:Category:$1|$1]] har vortne utelate.',
+	'coll-blacklisted-templates' => '* Malar på svartelista ([[:$1]]) har vortne utelate.',
+	'coll-return_to_collection' => '<p>Attende til <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Ting som ei trykt bok',
+	'coll-book_text' => 'Få ei printa bok frå vår print-på-tinging partnar:',
+	'coll-order_from_pp' => 'Ting bok frå $1',
+	'coll-about_pp' => 'Om $1',
+	'coll-invalid_podpartner_title' => 'Ikkje gyldig POD-partnar',
+	'coll-invalid_podpartner_msg' => 'Den oppgjevne POD-partneran er ugyldig.
+Kontakt MediaWiki-administratoren din.',
+	'coll-license' => 'Lisens',
+	'coll-return_to' => 'Attende til [[:$1]]',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -3398,7 +3537,7 @@ $messages['no'] = array(
 	'coll-help_collections' => 'Hjelp for samlinger',
 	'coll-n_pages' => '$1 {{PLURAL:$1|side|sider}}',
 	'coll-unknown_subpage_title' => 'Ukjent underside',
-	'coll-unknown_subpage_text' => 'Denne undersiden av [[Special:Collection|Collection finnes ikke',
+	'coll-unknown_subpage_text' => 'Denne undersiden av [[Special:Collection|Collection]] finnes ikke',
 	'coll-printable_version_pdf' => 'PDF-versjon',
 	'coll-download_as' => 'Last ned som $1',
 	'coll-noscript_text' => '<h1>JavaScript er påkrevd!</h1>
@@ -3469,7 +3608,7 @@ Vil du erstatte den eksisterende samlingen, legge til det nye innholdet eller av
 <strong>[$1 Last ned filen]</strong> til din datamaskin.
 
 Merk:
-* Ikke fornøyd med resultatet? Se [[{{Mediawiki:Coll-helppage}}|hjelpsiden om samlinger]] for muligheter til å forbedre den.',
+* Ikke fornøyd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjelpsiden om samlinger]] for muligheter til å forbedre den.',
 	'coll-notfound_title' => 'Samling ikke funnet',
 	'coll-notfound_text' => 'Kunne ikke finne samlingsside.',
 	'coll-is_cached' => '<ul><li>En mellomlagret versjon av dokumentet ble funnet, så ingen rendrering var nødvendig. <a href="$1">Tving ny rendrering.</a></li></ul>',
