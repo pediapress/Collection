@@ -565,6 +565,10 @@ $messages['bs'] = array(
 	'coll-unknown_subpage_text' => 'Ova podstranica [[Special:Collection|kolekcije]] ne postoji',
 	'coll-printable_version_pdf' => 'PDF verzija',
 	'coll-download_as' => 'Učitaj kao $1',
+	'coll-noscript_text' => '<h1>JavaScript je neophodan!</h1>
+<strong>Vaš preglednik ne podržava JavaScript ili je JavaScript isključen.
+Ova stranica se neće pravilno prikazati, sve dok se JavaScript ne omogući.</strong>',
+	'coll-intro_text' => 'Napravite i uredite Vaš lični odabir wiki stranica.<br />Pogledajte [[{{MediaWiki:Coll-helppage}}]] za više informacija.',
 	'coll-helppage' => 'Help:Kolekcije',
 	'coll-your_book' => 'Vaša knjiga',
 	'coll-download_title' => 'Učitavanje',
@@ -580,6 +584,7 @@ $messages['bs'] = array(
 	'coll-title' => 'Naslov:',
 	'coll-subtitle' => 'Podnaslov:',
 	'coll-contents' => 'Sadržaj',
+	'coll-drag_and_drop' => 'Koristi mogućnost povuci-i-spusti za preuređenje wiki stranica i poglavlja',
 	'coll-create_chapter' => 'Napravi poglavlje',
 	'coll-sort_alphabetically' => 'Poredaj po abecedi',
 	'coll-clear_collection' => 'Očisti kolekciju',
@@ -588,37 +593,65 @@ $messages['bs'] = array(
 	'coll-new_chapter' => 'Unesi ime za novo poglavlje',
 	'coll-rename_chapter' => 'Unesite novo ime za poglavlje',
 	'coll-no_such_category' => 'Nema takve kategorije',
+	'coll-notitle_title' => 'Naslov ove stranice nije mogao biti određen.',
+	'coll-post_failed_title' => 'POST zahtjev nije uspio',
+	'coll-post_failed_msg' => 'POST zahtjev za $1 nije uspio ($2).',
+	'coll-mwserve_failed_title' => 'Serverska greška pri iscrtavanju',
+	'coll-mwserve_failed_msg' => 'Desila se greška pri iscrtavanju na serveru: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Greška pri odgovoru sa servera',
 	'coll-empty_collection' => 'Prazna kolekcija',
 	'coll-revision' => 'Revizija: $1',
 	'coll-save_collection_title' => 'Spremanje i dijeljenje vlastite kolekcije',
 	'coll-save_collection_text' => 'Odaberi lokaciju:',
+	'coll-login_to_save' => 'Ako želite spremiti kolekcije za kasniju upotrebum molimo Vas [[Special:UserLogin|prijavite se ili napravite račun]].',
 	'coll-personal_collection_label' => 'Lična kolekcija:',
 	'coll-community_collection_label' => 'Kolekcija zajednice:',
 	'coll-save_collection' => 'Sačuvaj kolekciju',
+	'coll-save_category' => 'Kolekcije su spremljene u kategoriju [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Stranica postoji.
 Prepiši preko postojeće?',
 	'coll-overwrite_text' => 'Stranica pod imenom [[:$1]] već postoji.
 Da li želite da je zamijenite sa Vašom kolekcijom?',
 	'coll-yes' => 'Da',
 	'coll-no' => 'Ne',
+	'coll-load_overwrite_text' => 'Već imate neke stranice u Vašoj kolekciji.
+Da li želite prepisati preko Vaše postojeće kolekcije, primjenite novi sadržaj ili odustanete od punjenja ove kolekcije?',
+	'coll-overwrite' => 'Prepisati',
+	'coll-append' => 'Prispoji',
 	'coll-cancel' => 'Odustani',
 	'coll-update' => 'Ažuriranje',
 	'coll-limit_exceeded_title' => 'Kolekcija prevelika',
 	'coll-limit_exceeded_text' => 'Vaša kolekcija stranica je prevelika.
 Ne može se dodati ni jedna stranica.',
+	'coll-rendering_title' => 'Iscrtavanje',
+	'coll-rendering_text' => '<p><strong>Molimo pričekajte dok se dokument generiše.</strong></p>
+
+<p><strong>Izvršeno:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Ova stranica bi se trebala osvježiti svakih par sekundi.
+Ukoliko se to ne desi, molimo kliknite dugme za osvježavanje u Vašem pregledniku.</p>',
 	'coll-rendering_status' => '<strong>Stanje:</strong> $1',
 	'coll-rendering_article' => '  (wiki stranica: $1)',
 	'coll-rendering_page' => '  (stranica: $1)',
+	'coll-rendering_finished_title' => 'Iscrtavanje završeno',
+	'coll-rendering_finished_text' => '<strong>Datoteka dokumenta je generisana.</strong>
+<strong>[$1 Spremite datoteku]</strong> na Vaš računar.
+
+Napomene:
+* Da li ste zadovoljni sa rezultatom? Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu pomoći kod kolekcija]] za moguća poboljšanja rezultata.',
 	'coll-notfound_title' => 'Kolekcija nije pronađena',
 	'coll-notfound_text' => 'Nije moguće pronaći stranicu kolekcije.',
+	'coll-is_cached' => '<ul><li>Pronađena je keširana verzija dokumenta, tako da je ponovno iscrtavanje nepotrebno. <a href="$1">Traži ponovno iscrtavanje.</a></li></ul>',
 	'coll-excluded-templates' => '* Šabloni u kategoriji [[:Category:$1|$1]] su isključeni.',
+	'coll-blacklisted-templates' => '* Šabloni sa spiska nepoželjnih [[:$1]] su isključeni.',
 	'coll-return_to_collection' => '<p>Povratak na <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Naruči kao štampanu knjigu',
 	'coll-book_text' => 'Preuzmite štampanu knjigu od našeg print-on-demand partnera:',
 	'coll-order_from_pp' => 'Naruči knjigu od $1',
 	'coll-about_pp' => 'O $1',
 	'coll-invalid_podpartner_title' => 'POD partner nije validan',
+	'coll-invalid_podpartner_msg' => 'Pruženi POD partner nije validan.
+Molimo da kontaktirate Vašeg MediaWiki administratora.',
 	'coll-license' => 'Licenca',
 	'coll-return_to' => 'Vrati na [[:$1]]',
 );
@@ -1283,7 +1316,7 @@ Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
 	'coll-personal_collection_label' => 'Henkilökohtainen kokoelma:',
 	'coll-community_collection_label' => 'Yhteinen kokoelma:',
 	'coll-save_collection' => 'Tallenna kokoelma',
-	'coll-save_category' => 'Kokoelmat tallennetaan luokkaan [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
+	'coll-save_category' => 'Kokoelmat lisätään luokkaan [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Sivu on olemassa. Ylikirjoitetaanko?',
 	'coll-overwrite_text' => 'Sivu nimellä [[:$1]] on jo olemassa.
 Haluatko korvata sen kokoelmallasi?',
