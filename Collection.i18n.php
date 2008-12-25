@@ -1274,7 +1274,7 @@ $messages['fi'] = array(
 	'coll-unknown_subpage_text' => 'Tätä [[Special:Collection|kokoelman]] alasivua ei ole olemassa',
 	'coll-printable_version_pdf' => 'PDF-versio',
 	'coll-download_as' => 'Lataa $1-tiedostona',
-	'coll-noscript_text' => '<h1>JavaScript vaaditaan</h1>
+	'coll-noscript_text' => '<h1>Vaatii toimiakseen JavaScriptin</h1>
 <strong>Selaimesi ei tue JavaScriptiä tai JavaScript on poistettu käytöstä.
 Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
 	'coll-intro_text' => 'Laadi ja hallinnoi omia henkilökohtaisia wikisivujen valikoimiasi.<br />Lisätietoja sivulla [[{{MediaWiki:Coll-helppage}}]].',
@@ -1355,8 +1355,8 @@ Huomautuksia:
 	'coll-return_to_collection' => '<p>Palaa takaisin sivulle <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Tilaa painettuna kirjana',
 	'coll-book_text' => 'Hanki painettuna kirjana pikapainopartneriltamme:',
-	'coll-order_from_pp' => 'Tilaa kirja täältä: $1',
-	'coll-about_pp' => 'Tietoja $1',
+	'coll-order_from_pp' => 'Tilaa kirja kohteesta $1',
+	'coll-about_pp' => 'Tietoja kohteesta $1',
 	'coll-invalid_podpartner_title' => 'Epäkelpo POD-partneri',
 	'coll-invalid_podpartner_msg' => 'Annettu POD-partneri ei kelpaa.
 Ota yhteys MediaWiki-ylläpitäjääsi.',
@@ -1476,7 +1476,7 @@ Notes :
 	'coll-about_pp' => 'À propos de $1',
 	'coll-invalid_podpartner_title' => 'Partenaire POD incorrect.',
 	'coll-invalid_podpartner_msg' => 'Le partenaire POD indiqué est incorrect.
-Veuillez contacter votre administrateur Mediawiki.',
+Veuillez contacter votre administrateur MediaWiki.',
 	'coll-license' => 'Licence',
 	'coll-return_to' => 'Retourner vers [[:$1]]',
 );
@@ -3768,7 +3768,7 @@ Nòtas :
 	'coll-about_pp' => 'A prepaus de $1',
 	'coll-invalid_podpartner_title' => 'Partenari POD incorrècte.',
 	'coll-invalid_podpartner_msg' => 'Lo partenari POD indicat es incorrècte.
-Contactatz vòstre administrator Mediawiki.',
+Contactatz vòstre administrator MediaWiki.',
 	'coll-license' => 'Licéncia',
 	'coll-return_to' => 'Tornar cap a [[:$1]]',
 );
