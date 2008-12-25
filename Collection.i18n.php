@@ -2761,6 +2761,7 @@ $messages['km'] = array(
  * @author Kwj2772
  */
 $messages['ko'] = array(
+	'coll-print_template_prefix' => '인쇄',
 	'coll-portlet_title' => '책 만들기',
 	'coll-add_page' => '문서 추가',
 	'coll-remove_page' => '문서 제거',
@@ -2772,6 +2773,8 @@ $messages['ko'] = array(
 <strong>당신의 브라우저는 자바스크립트를 지원하지 않거나 비활성화되어 있습니다.
 자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
 	'coll-format_label' => '포맷:',
+	'coll-title' => '제목:',
+	'coll-subtitle' => '부제목:',
 	'coll-sort_alphabetically' => '알파벳순으로 정렬',
 	'coll-mwserve_failed_title' => '렌더 서버 오류',
 	'coll-yes' => '예',
@@ -4630,6 +4633,7 @@ $messages['te'] = array(
 	'coll-limit_exceeded_title' => 'సేకరణ మరీ పెద్దగా ఉంది',
 	'coll-limit_exceeded_text' => 'మీ పేజీ సేకరణ చాలా పెద్దగా ఉంది.
 మరిన్ని పేజీలు చేర్చలేము.',
+	'coll-rendering_page' => '  (పేజీ: $1)',
 	'coll-notfound_title' => 'సేకరణ కనబడలేదు',
 	'coll-notfound_text' => 'సేకరణ పేజీ కనబడలేదు.',
 	'coll-return_to_collection' => '<p>తిరిగి <a href="$1">$2</a></p>కి',
@@ -4715,6 +4719,118 @@ $messages['tg-cyrl'] = array(
 	'coll-book_text' => 'Шумо метавонед китоби ба табъ расидаро, ки саҳифаи гирдовариҳои шуморо дорост бо ташриф овардан ба яке аз ҳамкорони чоп-дархост фармоед:',
 	'coll-order_from_pp' => 'Фармудани китоб аз $1',
 	'coll-about_pp' => 'Дар бораи $1',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'coll-desc' => '[[Special:Collection|Magtipon ng mga pahina]], gumawa ng mga PDF',
+	'coll-collection' => 'Kalipunan',
+	'coll-collections' => 'Mga kalipunan',
+	'coll-exclusion_category_title' => 'Huwag isama sa paglimbag',
+	'coll-print_template_prefix' => 'Ilimbag',
+	'coll-portlet_title' => 'Lumikha ng isang aklat',
+	'coll-add_page' => 'Magdagdag ng pahinang wiki',
+	'coll-remove_page' => 'Tanggalin ang pahinang wiki',
+	'coll-add_category' => 'Magdagdag ng kaurian',
+	'coll-load_collection' => 'Ikarga ang kalipunan',
+	'coll-show_collection' => 'Ipakita ang kalipunan',
+	'coll-help_collections' => 'Tulong na pangkalipunan',
+	'coll-n_pages' => '$1 {{PLURAL:$1|pahina|mga pahina}}',
+	'coll-unknown_subpage_title' => 'Hindi nalalamang kabahaging pahina',
+	'coll-unknown_subpage_text' => 'Hindi umiiral ang kabahaging pahinang ito ng [[Special:Collection|Kalipunan]]',
+	'coll-printable_version_pdf' => 'Bersyong PDF',
+	'coll-download_as' => 'Ikargang-pakuha bilang $1',
+	'coll-noscript_text' => "<h1>Kailangan ang JavaScript!</h1>
+<strong>Hindi sinusuportan ng iyong pantingin-tingin (''browser'') ang JavaScript o nakapatay ang JavaScript.
+Hindi aandar ng tama ang pahinang ito, maliban na lamang kung bubuhayin ang JavaScript.</strong>",
+	'coll-intro_text' => 'Likhain at pamahalaan ang iyong pansariling pilian ng mga pahina ng wiki.<br />Tingnan ang [[{{MediaWiki:Coll-helppage}}]] para sa mas maraming kabatiran.',
+	'coll-helppage' => 'Help:Mga kalipunan',
+	'coll-your_book' => 'Aklat mo',
+	'coll-download_title' => 'Ikargang-pakuha',
+	'coll-download_text' => "Upang makapagkargang-pakuha ng isang bersyong hindi-nakakonekta sa kompyuter (''offline'') pumili ng isang anyo/pormat at pindutin ang pindutan.",
+	'coll-download' => 'Ikargang-pakuha',
+	'coll-format_label' => 'Pormat (anyo):',
+	'coll-remove' => 'Tanggalin',
+	'coll-show' => 'Ipakita',
+	'coll-move_to_top' => 'Ilipat sa itaas',
+	'coll-move_up' => 'Ilipat sa itaas',
+	'coll-move_down' => 'Ilipat sa ibaba',
+	'coll-move_to_bottom' => 'Ilipat sa ilalim',
+	'coll-title' => 'Pamagat:',
+	'coll-subtitle' => 'Kabahaging pamagat:',
+	'coll-contents' => 'Mga nilalaman',
+	'coll-drag_and_drop' => 'Gamitin ang "kaladkarin at ibagsak" upang muling maiayos ang mga pahina at mga kabanata ng wiki',
+	'coll-create_chapter' => 'Lumikha ng kabanata',
+	'coll-sort_alphabetically' => 'Ayusing ayon sa abakada (alpabeto)',
+	'coll-clear_collection' => 'Hawiin (linisin) ang kalipunan',
+	'coll-clear_collection_confirm' => 'Talaga bang nais mong hawiin (linisin) ng lubusan ang iyong kalipunan?',
+	'coll-rename' => 'Pangalanang muli',
+	'coll-new_chapter' => 'Maglagay ng pangalan para sa bagong kabanata',
+	'coll-rename_chapter' => 'Maglagay ng bagong pangalan para sa kabanata',
+	'coll-no_such_category' => 'Walang ganyang kaurian',
+	'coll-notitle_title' => 'Hindi matukoy ang pamagat ng pahina.',
+	'coll-post_failed_title' => 'Nabigo ang kahilingang ITALA',
+	'coll-post_failed_msg' => 'Nabigo ang kahilingang ITALA sa $1 ($2).',
+	'coll-mwserve_failed_title' => 'Kamalian sa naghahaing serbidor',
+	'coll-mwserve_failed_msg' => 'Naganap ang isang kamalian sa naghahaing serbidor: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'May kamalian sa tugon ng serbidor',
+	'coll-empty_collection' => 'Kalipunang walang laman',
+	'coll-revision' => 'Pagbabago: $1',
+	'coll-save_collection_title' => 'Sagipin at ipamahagi ang iyong kalipunan',
+	'coll-save_collection_text' => 'Pumili ng isang pook (lokasyon):',
+	'coll-login_to_save' => 'Kung nais mong sagipin ang mga kalipunan para gamitin sa ibang pagkakataon, mangyaring [[Special:UserLogin|lumagda o lumikha ng kwenta/akawnt]].',
+	'coll-personal_collection_label' => 'Pansariling kalipunan:',
+	'coll-community_collection_label' => 'Kalipunang pangpamayanan:',
+	'coll-save_collection' => 'Sagipin ang kalipunan',
+	'coll-save_category' => 'Nakasagip ang mga kalipunan sa kauriang [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
+	'coll-overwrite_title' => 'Umiiral ang pahina.
+Patungan?',
+	'coll-overwrite_text' => 'Umiiral na ang isang pahinang may pangalang [[:$1]].
+Nais mo bang palitan ito ng iyong kalipunan?',
+	'coll-yes' => 'Oo',
+	'coll-no' => 'Hindi',
+	'coll-load_overwrite_text' => 'Mayroon ka nang ilang mga pahina sa iyong kalipunan.
+Nais mo bang patungan ang iyong pangkasalukuyang kalipunan, ikabit ang bagong nilalaman, o huwag ituloy ang pagkarga ng kalipunang ito?',
+	'coll-overwrite' => 'Patungan',
+	'coll-append' => 'Ikabit',
+	'coll-cancel' => 'Huwag ituloy',
+	'coll-update' => 'Isapanahon',
+	'coll-limit_exceeded_title' => 'Napakalaki ng kalipunan',
+	'coll-limit_exceeded_text' => 'Napakalaki ng kalipunan mo ng pahina.
+Wala nang maidaragdag na iba pang pahina.',
+	'coll-rendering_title' => 'Naghahain',
+	'coll-rendering_text' => "<p><strong>Mangyaring maghintay lamang habang ginagawa ang kasulatan (dokumento).</strong></p>
+
+<p><strong>Katayuan ng pagsulong:</strong> <span id=\"renderingProgress\">\$1</span>% <span id=\"renderingStatus\">\$2</span></p>
+
+<p>Dapat na kusang sumariwa ang pahinang ito sa bawat mangilan-ngilang mga segundo.
+Kung hindi ito mangyari, pakipindot ang pindutang panariwa (''refresh'') ng iyong pantingin-tingin (''browser'').</p>",
+	'coll-rendering_status' => '<strong>Kalagayan:</strong> $1',
+	'coll-rendering_article' => '  (pahinang wiki: $1)',
+	'coll-rendering_page' => '  (pahina: $1)',
+	'coll-rendering_finished_title' => 'Tapos na ang paghahain',
+	'coll-rendering_finished_text' => '<strong>Nagawa na ang talaksang pangkasulatan (dokumento).</strong>
+<strong>[$1 Ikargang-pakuha ang talaksan]</strong> papunta sa iyong kompyuter.
+
+Mga tala:
+* Hindi ka ba nasiyahan sa kinalabasan? Tingnan [[{{MediaWiki:Coll-helppage}}|ang pahina ng tulong hinggil sa mga kalipunan]] para sa mga bagay-bagay na maaaring gawin (posibilidad) upang mapainam pa ito.',
+	'coll-notfound_title' => 'Hindi natagpuan ang kalipunan',
+	'coll-notfound_text' => 'Hindi matagpuan ang pahina ng kalipunan.',
+	'coll-is_cached' => '<ul><li>Natagpuan ang isang nakatagong bersyon ng kasulatan (dokumento), kaya\'t hindi na kailangan pa ang "paghahain". <a href="$1">Pilitin ang muling paghahain.</a></li></ul>',
+	'coll-excluded-templates' => '* Hindi isinali ang mga suleras na nasa kauriang [[:Category:$1|$1]].',
+	'coll-blacklisted-templates' => '* Hindi isinali ang mga suleras na nasa talaan ng mga pinagbabawalan [[:$1]]',
+	'coll-return_to_collection' => '<p>Magbalik sa <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Orderin bilang isang nakalimbag na aklat',
+	'coll-book_text' => 'Kumuha ng isang nakalimbag na aklat mula sa aming kasosyo sa "ilimbag-kapag-hiniling" (IKH):',
+	'coll-order_from_pp' => 'Umorder ng aklat mula sa $1',
+	'coll-about_pp' => 'Mga $1',
+	'coll-invalid_podpartner_title' => 'Hindi tanggap na kasosyo/kawaksing pang-IKH ("ilimbag-kapag-hiniling")',
+	'coll-invalid_podpartner_msg' => 'Hindi tanggap ang ibinigay na kawaksi/kasosyong pang-IKH ("ilimbag-kapag-hiniling").
+Makipagugnayan sa iyong tagapangasiwa ng MediaWiki.',
+	'coll-license' => 'Pahintulot (lisensya)',
+	'coll-return_to' => 'Bumalik sa [[:$1]]',
 );
 
 /** Turkish (Türkçe)
