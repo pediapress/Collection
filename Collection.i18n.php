@@ -237,6 +237,13 @@ $messages['af'] = array(
 	'coll-license' => 'Lisensie',
 );
 
+/** Amharic (አማርኛ)
+ * @author Codex Sinaiticus
+ */
+$messages['am'] = array(
+	'coll-yes' => 'አዎ',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  * @author OsamaK
@@ -385,8 +392,8 @@ $messages['arz'] = array(
 	'coll-format_label' => 'الصيغة:',
 	'coll-remove' => 'إزالة',
 	'coll-show' => 'اعرض',
-	'coll-move_to_top' => 'حرك إلى الأعلى',
-	'coll-move_up' => 'حرك إلى الأعلى',
+	'coll-move_to_top' => 'حرك لفوق',
+	'coll-move_up' => 'حرك لفوق',
 	'coll-move_down' => 'حرك إلى الأسفل قليلا',
 	'coll-move_to_bottom' => 'حرك إلى الأسفل',
 	'coll-title' => 'العنوان:',
@@ -492,6 +499,60 @@ $messages['ast'] = array(
 	'coll-yes' => 'Sí',
 	'coll-no' => 'Non',
 	'coll-about_pp' => 'Tocante a $1',
+);
+
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author Jim-by
+ */
+$messages['be-tarask'] = array(
+	'coll-desc' => '[[Special:Collection|Калекцыяніруе старонкі]], стварае іх сьпіс у фармаце PDF',
+	'coll-collection' => 'Калекцыя',
+	'coll-collections' => 'Калекцыі',
+	'coll-exclusion_category_title' => 'Выключэньні з друку',
+	'coll-print_template_prefix' => 'Друк',
+	'coll-portlet_title' => 'Стварыць кнігу',
+	'coll-add_page' => 'Дадаць вікі-старонку',
+	'coll-remove_page' => 'Выдаліць вікі-старонку',
+	'coll-add_category' => 'Дадаць катэгорыю',
+	'coll-load_collection' => 'Загрузіць калекцыю',
+	'coll-show_collection' => 'Паказаць калекцыю',
+	'coll-help_collections' => 'Даведка па калекцыі',
+	'coll-n_pages' => '$1 {{PLURAL:$1|старонка|старонкі|старонак}}',
+	'coll-unknown_subpage_title' => 'Невядомая падстаронка',
+	'coll-unknown_subpage_text' => 'Гэтай падстаронкі [[Special:Collection|калекцыі]] не існуе',
+	'coll-printable_version_pdf' => 'PDF-вэрсія',
+	'coll-download_as' => 'Загрузіць як $1',
+	'coll-noscript_text' => '<h1>Патрэбны JavaScript!</h1>
+<strong>Ваш браўзэр не падтрымлівае JavaScript ці падтрымка была выключана.
+Гэтая старонка не будзе працаваць правільна, калі JavaScript выключаны.</strong>',
+	'coll-intro_text' => 'Стварэньне і кіраваньне Вашай індывідуальнай калекцыяй вікі-старонак. <br />Болей інфармацыі глядзі на [[{{MediaWiki:Coll-helppage}}]].',
+	'coll-helppage' => 'Help:Калекцыі',
+	'coll-your_book' => 'Ваша кніга',
+	'coll-download_title' => 'Загрузіць',
+	'coll-download_text' => 'Каб загрузіць аўтаномную вэрсію, выберыце фармат і націсьніце кнопку.',
+	'coll-download' => 'Загрузіць',
+	'coll-format_label' => 'Фармат:',
+	'coll-remove' => 'Выдаліць',
+	'coll-show' => 'Паказаць',
+	'coll-move_to_top' => 'Перанесьці ўверх',
+	'coll-move_up' => 'Перанесьці вышэй',
+	'coll-move_down' => 'Перанесьці ніжэй',
+	'coll-move_to_bottom' => 'Перанесьці ўніз',
+	'coll-title' => 'Назва:',
+	'coll-subtitle' => 'Падзагаловак:',
+	'coll-contents' => 'Зьмест',
+	'coll-drag_and_drop' => 'Карыстайся мышкай каб зьмяніць чарговасьць вікі-старонак і падзелаў',
+	'coll-create_chapter' => 'Стварыць падзел',
+	'coll-sort_alphabetically' => 'Сартаваць па альфабэце',
+	'coll-clear_collection' => 'Ачысьціць калекцыю',
+	'coll-clear_collection_confirm' => 'Вы сапраўды жадаеце поўнасьцю пачысьціць сваю калекцыю?',
+	'coll-rename' => 'Зьмяніць назву',
+	'coll-new_chapter' => 'Увядзіце назву для новага падзела',
+	'coll-rename_chapter' => 'Увядзіце новую назву падзела',
+	'coll-no_such_category' => 'Няма такой катэгорыі',
+	'coll-notitle_title' => 'Назва старонкі ня можа быць вызначана.',
+	'coll-post_failed_title' => 'POST-запыт не выкананы',
+	'coll-post_failed_msg' => 'POST-запыт у $1 не выкананы ($2).',
 );
 
 /** Bulgarian (Български)
@@ -1128,8 +1189,16 @@ $messages['es'] = array(
 	'coll-rename_chapter' => 'Introducir un nombre nuevo para el capítulo',
 	'coll-revision' => 'Revisión: $1',
 	'coll-save_collection_title' => 'Guardar y compartir tu colección',
+	'coll-save_collection_text' => 'Escoger una locación:',
+	'coll-personal_collection_label' => 'Colección personal:',
+	'coll-community_collection_label' => 'Colección del comunidad:',
+	'coll-save_collection' => 'Guardar colección',
 	'coll-yes' => 'Sí',
+	'coll-append' => 'Anexar',
 	'coll-cancel' => 'Cancelar',
+	'coll-update' => 'Actualizar',
+	'coll-rendering_status' => '<strong>Estatus:</strong> $1',
+	'coll-book_title' => 'Ordenar como libro imprimido',
 	'coll-license' => 'Licencia',
 );
 
