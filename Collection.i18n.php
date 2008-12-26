@@ -241,6 +241,7 @@ $messages['af'] = array(
  * @author Codex Sinaiticus
  */
 $messages['am'] = array(
+	'coll-title' => 'አርዕስት፡',
 	'coll-yes' => 'አዎ',
 );
 
@@ -263,6 +264,7 @@ $messages['ar'] = array(
 	'coll-help_collections' => 'مساعدة المجموعات',
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحة|صفحة}}',
 	'coll-unknown_subpage_title' => 'صفحة فرعية غير معروفة',
+	'coll-unknown_subpage_text' => 'هذه الصفحة الفرعية [[Special:Collection|للمجموعة]] غير موجودة',
 	'coll-printable_version_pdf' => 'نسخة PDF',
 	'coll-download_as' => 'تحميل ك$1',
 	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
@@ -274,7 +276,7 @@ $messages['ar'] = array(
 	'coll-helppage' => 'Help:مجموعات',
 	'coll-your_book' => 'كتابك',
 	'coll-download_title' => 'تنزيل',
-	'coll-download_text' => 'لتحميل ملف PDF مولد تلقائيا من مجموعة صفحتك، اضغط الزر.',
+	'coll-download_text' => 'لتنزيل نسخة بدون اتصال اختر نسقا وانقر الزر.',
 	'coll-download' => 'تحميل',
 	'coll-format_label' => 'الصيغة:',
 	'coll-remove' => 'إزالة',
@@ -286,9 +288,11 @@ $messages['ar'] = array(
 	'coll-title' => 'العنوان:',
 	'coll-subtitle' => 'العنوان الفرعي:',
 	'coll-contents' => 'محتويات',
+	'coll-drag_and_drop' => 'استخدم السحب والإلقاء لطلب صفحات وفصول ويكي',
 	'coll-create_chapter' => 'إنشاء الفصل',
 	'coll-sort_alphabetically' => 'رتب أبجديا',
 	'coll-clear_collection' => 'إفراغ المجموعة',
+	'coll-clear_collection_confirm' => 'أتريد حقا تنظيف مجموعتك كليا؟',
 	'coll-rename' => 'إعادة تسمية',
 	'coll-new_chapter' => 'أدخل الاسم للفرع الجديد',
 	'coll-rename_chapter' => 'أدخل الاسم الجديد للفرع',
@@ -502,10 +506,11 @@ $messages['ast'] = array(
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
  * @author Jim-by
  */
 $messages['be-tarask'] = array(
-	'coll-desc' => '[[Special:Collection|Калекцыяніруе старонкі]], стварае іх сьпіс у фармаце PDF',
+	'coll-desc' => '[[Special:Collection|Калекцыяніруе старонкі]], стварае кнігі ў фармаце PDF',
 	'coll-collection' => 'Калекцыя',
 	'coll-collections' => 'Калекцыі',
 	'coll-exclusion_category_title' => 'Выключэньні з друку',
@@ -523,9 +528,9 @@ $messages['be-tarask'] = array(
 	'coll-printable_version_pdf' => 'PDF-вэрсія',
 	'coll-download_as' => 'Загрузіць як $1',
 	'coll-noscript_text' => '<h1>Патрэбны JavaScript!</h1>
-<strong>Ваш браўзэр не падтрымлівае JavaScript ці падтрымка была выключана.
-Гэтая старонка не будзе працаваць правільна, калі JavaScript выключаны.</strong>',
-	'coll-intro_text' => 'Стварэньне і кіраваньне Вашай індывідуальнай калекцыяй вікі-старонак. <br />Болей інфармацыі глядзі на [[{{MediaWiki:Coll-helppage}}]].',
+<strong>Ваш браўзэр не падтрымлівае JavaScript альбо падтрымка JavaScript была адключаная.
+Гэтая старонка ня будзе працаваць правільна, калі JavaScript адключаны.</strong>',
+	'coll-intro_text' => 'Стварэньне і кіраваньне Вашай індывідуальнай калекцыяй вікі-старонак. <br />Падрабязнасьці глядзіце на [[{{MediaWiki:Coll-helppage}}]].',
 	'coll-helppage' => 'Help:Калекцыі',
 	'coll-your_book' => 'Ваша кніга',
 	'coll-download_title' => 'Загрузіць',
@@ -541,18 +546,30 @@ $messages['be-tarask'] = array(
 	'coll-title' => 'Назва:',
 	'coll-subtitle' => 'Падзагаловак:',
 	'coll-contents' => 'Зьмест',
-	'coll-drag_and_drop' => 'Карыстайся мышкай каб зьмяніць чарговасьць вікі-старонак і падзелаў',
-	'coll-create_chapter' => 'Стварыць падзел',
+	'coll-drag_and_drop' => 'Карыстайся мышкай, каб зьмяніць пасьлядоўнасьць вікі-старонак і разьдзелаў',
+	'coll-create_chapter' => 'Стварыць разьдзел',
 	'coll-sort_alphabetically' => 'Сартаваць па альфабэце',
 	'coll-clear_collection' => 'Ачысьціць калекцыю',
-	'coll-clear_collection_confirm' => 'Вы сапраўды жадаеце поўнасьцю пачысьціць сваю калекцыю?',
-	'coll-rename' => 'Зьмяніць назву',
-	'coll-new_chapter' => 'Увядзіце назву для новага падзела',
-	'coll-rename_chapter' => 'Увядзіце новую назву падзела',
+	'coll-clear_collection_confirm' => 'Вы сапраўды жадаеце поўнасьцю ачысьціць сваю калекцыю?',
+	'coll-rename' => 'Перайменаваць',
+	'coll-new_chapter' => 'Увядзіце назву для новага разьдзелу',
+	'coll-rename_chapter' => 'Увядзіце новую назву разьдзелу',
 	'coll-no_such_category' => 'Няма такой катэгорыі',
 	'coll-notitle_title' => 'Назва старонкі ня можа быць вызначана.',
 	'coll-post_failed_title' => 'POST-запыт не выкананы',
-	'coll-post_failed_msg' => 'POST-запыт у $1 не выкананы ($2).',
+	'coll-post_failed_msg' => 'POST-запыт да $1 не выкананы ($2).',
+	'coll-mwserve_failed_title' => 'Памылка сэрвэра перадачы',
+	'coll-mwserve_failed_msg' => 'На сэрвэры перадачы ўзьнікла памылка: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Памылка адказу сэрвэра',
+	'coll-empty_collection' => 'Пустая калекцыя',
+	'coll-revision' => 'Вэрсія: $1',
+	'coll-save_collection_title' => 'Захаваць Вашу калекцыю і адчыніць да яе доступ',
+	'coll-save_collection_text' => 'Выберыце месцазнаходжаньне:',
+	'coll-login_to_save' => 'Калі Вы жадаеце захаваць калекцыю для далейшага карыстаньня, калі ласка [[Special:UserLogin|увайдзіце ў сыстэму, ці стварыце рахунак]].',
+	'coll-personal_collection_label' => 'Асабістая калекцыя:',
+	'coll-community_collection_label' => 'Калекцыя супольнасьці:',
+	'coll-save_collection' => 'Захаваць калекцыю',
+	'coll-save_category' => 'Калекцыі захаваныя ў катэгорыі [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 );
 
 /** Bulgarian (Български)
@@ -2842,6 +2859,7 @@ $messages['ko'] = array(
 <strong>당신의 브라우저는 자바스크립트를 지원하지 않거나 비활성화되어 있습니다.
 자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
 	'coll-format_label' => '포맷:',
+	'coll-remove' => '제거',
 	'coll-title' => '제목:',
 	'coll-subtitle' => '부제목:',
 	'coll-sort_alphabetically' => '알파벳순으로 정렬',
@@ -4167,6 +4185,7 @@ Suprascrie?',
 
 /** Russian (Русский)
  * @author Ahonc
+ * @author Aleksandrit
  * @author Ferrer
  * @author Innv
  * @author Kaganer
@@ -4260,7 +4279,7 @@ $messages['ru'] = array(
 	'coll-rendering_page' => '  (страница: $1)',
 	'coll-rendering_finished_title' => 'Создание завершено',
 	'coll-rendering_finished_text' => '<strong>Файл документа создан.</strong>
-<strong>[$1 Загрузить файл]</strong> к свой компьютер.
+<strong>[$1 Загрузить файл]</strong> на свой компьютер.
 
 Замечание:
 * Не удовлетворены результатом? Возможности его улучшения описаны на [[{{MediaWiki:Coll-helppage}}|справочной странице о коллекциях]].',
@@ -4923,11 +4942,14 @@ $messages['tr'] = array(
 /** Ukrainian (Українська)
  * @author AS
  * @author Ahonc
+ * @author Aleksandrit
  */
 $messages['uk'] = array(
 	'coll-desc' => '[[Special:Collection|Збирає колекції сторінок]], створює PDF',
 	'coll-collection' => 'Колекція',
 	'coll-collections' => 'Колекції',
+	'coll-exclusion_category_title' => 'Виключення з друку',
+	'coll-print_template_prefix' => 'Друк',
 	'coll-portlet_title' => 'Створення книги',
 	'coll-add_page' => 'Додати вікі-сторінку',
 	'coll-remove_page' => 'Вилучити вікі-сторінку',
@@ -4938,6 +4960,7 @@ $messages['uk'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|сторінка|сторінки|сторінок}}',
 	'coll-unknown_subpage_title' => 'Невідома підсторінка',
 	'coll-unknown_subpage_text' => 'Ця підсторінка в [[Special:Collection|колекції]] не існує',
+	'coll-printable_version_pdf' => 'PDF-версія',
 	'coll-download_as' => 'Завантажити як $1',
 	'coll-noscript_text' => '<h1>Потрібен JavaScript!</h1>
 <strong>Ваш браузер не підтримує JavaScript або ця підтримка вимкнена.
@@ -4962,6 +4985,7 @@ $messages['uk'] = array(
 	'coll-create_chapter' => 'Створити розділ',
 	'coll-sort_alphabetically' => 'Сортувати за алфавітом',
 	'coll-clear_collection' => 'Очистити колекцію',
+	'coll-clear_collection_confirm' => 'Ви дійсно бажаєте повністю очистити вашу колекцію?',
 	'coll-rename' => 'Перейменувати',
 	'coll-new_chapter' => 'Уведіть назву нового розділу',
 	'coll-rename_chapter' => 'Уведіть нову назву розділу',
@@ -4980,7 +5004,7 @@ $messages['uk'] = array(
 	'coll-personal_collection_label' => 'Особиста колекція:',
 	'coll-community_collection_label' => 'Колекція спільноти:',
 	'coll-save_collection' => 'Зберегти колекцію',
-	'coll-save_category' => 'Колекції збережено у категорії [[:Категорія:Колекції|Колекції]].',
+	'coll-save_category' => 'Колекції збережено у категорії [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Сторінка існує. Перезаписати?',
 	'coll-overwrite_text' => 'Сторінка з назвою [[:$1]] вже існує.
 Ви хочете, щоб вона була замінена вашою колекцією?',
@@ -4991,24 +5015,40 @@ $messages['uk'] = array(
 	'coll-overwrite' => 'Перезаписати',
 	'coll-append' => 'Додати',
 	'coll-cancel' => 'Скасувати',
+	'coll-update' => 'Оновити',
 	'coll-limit_exceeded_title' => 'Колекція дуже велика',
 	'coll-limit_exceeded_text' => 'Ваша колекція дуже велика.
 До неї не можна більше додавати сторінок.',
 	'coll-rendering_title' => 'Створення',
-	'coll-rendering_text' => "'''Будь ласка, зачекайте поки триває створення документа.'''
+	'coll-rendering_text' => '<p><strong>Будь ласка, зачекайте поки триває створення документа.</strong></p>
 
-'''Хід роботи:''' $1% $2
+<p><strong>Хід роботи:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
 
-Ця сторінка повинна автоматично оновлюватися кожні кілька секунд.
-Якщо цього не відбувається, оновіть цю сторінку у вашому веб-оглядачі.",
+<p>Ця сторінка повинна автоматично оновлюватися кожні кілька секунд.
+Якщо цього не відбувається, оновіть цю сторінку у вашому браузері.</p>',
 	'coll-rendering_status' => '<strong>Статус:</strong> $1',
+	'coll-rendering_article' => '(сторінка: $1)',
+	'coll-rendering_page' => '  (сторінка: $1)',
+	'coll-rendering_finished_title' => 'Створення завершено',
+	'coll-rendering_finished_text' => "<strong>Файл документа був створений.</strong>
+<strong>[$1 Завантажити файл]</strong> на свій комп'ютер.
+
+Зауваження:
+* Не задоволені результатом? Можливості його поліпшення описані на [[{{MediaWiki:Coll-helppage}}|довідковій сторінці про колекції]].",
 	'coll-notfound_title' => 'Колекція не знайдена',
 	'coll-notfound_text' => 'Неможливо знайти сторінку колекції.',
+	'coll-excluded-templates' => '* Шаблони в категорії [[:Категорія:$1|$1]] були виключені.',
+	'coll-blacklisted-templates' => '* Шаблони в чорному списку [[:$1]] були виключені.',
 	'coll-return_to_collection' => '<p>Назад до <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Замовити як друковану книгу',
 	'coll-book_text' => 'Отримати друковану книгу від нашого партнера:',
 	'coll-order_from_pp' => 'Замовлення книги в $1',
 	'coll-about_pp' => 'Про $1',
+	'coll-invalid_podpartner_title' => 'Недійсний POD-партнер',
+	'coll-invalid_podpartner_msg' => "POD-партнер, що надається, недійсний. 
+Будь-ласка, зв'яжіться з вашим адміністратором MediaWiki.",
+	'coll-license' => 'Ліцензія',
+	'coll-return_to' => 'Повернення до [[:$1]]',
 );
 
 /** Vèneto (Vèneto)
