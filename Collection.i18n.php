@@ -563,13 +563,58 @@ $messages['be-tarask'] = array(
 	'coll-error_reponse' => 'Памылка адказу сэрвэра',
 	'coll-empty_collection' => 'Пустая калекцыя',
 	'coll-revision' => 'Вэрсія: $1',
-	'coll-save_collection_title' => 'Захаваць Вашу калекцыю і адчыніць да яе доступ',
+	'coll-save_collection_title' => 'Захаваць Вашую калекцыю і адкрыць да яе доступ',
 	'coll-save_collection_text' => 'Выберыце месцазнаходжаньне:',
-	'coll-login_to_save' => 'Калі Вы жадаеце захаваць калекцыю для далейшага карыстаньня, калі ласка [[Special:UserLogin|увайдзіце ў сыстэму, ці стварыце рахунак]].',
+	'coll-login_to_save' => 'Калі Вы жадаеце захаваць калекцыю для далейшага карыстаньня, калі ласка [[Special:UserLogin|увайдзіце ў сыстэму альбо стварыце рахунак]].',
 	'coll-personal_collection_label' => 'Асабістая калекцыя:',
 	'coll-community_collection_label' => 'Калекцыя супольнасьці:',
 	'coll-save_collection' => 'Захаваць калекцыю',
 	'coll-save_category' => 'Калекцыі захаваныя ў катэгорыі [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
+	'coll-overwrite_title' => 'Старонка ўжо існуе. 
+Перазапісаць?',
+	'coll-overwrite_text' => 'Старонка з назвай [[:$1]] ужо існуе.
+Вы жадаеце, каб яна была перазапісана Вашай калекцыяй?',
+	'coll-yes' => 'Так',
+	'coll-no' => 'Не',
+	'coll-load_overwrite_text' => 'У Вашай калекцыі ўжо існуе некалькі старонак.
+Вы жадаеце перазапісаць Вашу калекцыю, дадаць новую старонку ці адмяніць загрузку гэтай калекцыі?',
+	'coll-overwrite' => 'Перазапісаць',
+	'coll-append' => 'Дадаць',
+	'coll-cancel' => 'Адмяніць',
+	'coll-update' => 'Абнавіць',
+	'coll-limit_exceeded_title' => 'Калекцыя занадта вялікая',
+	'coll-limit_exceeded_text' => 'Ваша калекцыя занадта вялікая.
+Да яе болей немагчыма дадаваць старонкі.',
+	'coll-rendering_title' => 'Стварэньне',
+	'coll-rendering_text' => '<p><strong>Пачакайце, пакуль ствараецца дакумэнт.</strong></p>
+
+<p><strong>Прагрэс:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Гэта старонка павінна аўтаматычна абнаўляцца кожныя некалькі сэкундаў.
+Калі гэтага не адбываецца, калі ласка, націсьніце кнопку «Абнавіць» у Вашым браўзэры.</p>',
+	'coll-rendering_status' => '<strong>Статус:</strong> $1',
+	'coll-rendering_article' => '  (вікі-старонка: $1)',
+	'coll-rendering_page' => '  (старонка: $1)',
+	'coll-rendering_finished_title' => 'Стварэньне скончанае',
+	'coll-rendering_finished_text' => '<strong>Файл дакумэнту быў створаны.</strong>
+<strong>[$1 Загрузіць файл]</strong> на Ваш кампутар.
+
+Заўвага:
+* Не задаволены створаным дакумэнтам? Глядзіце [[{{MediaWiki:Coll-helppage}}|старонку дапамогі па калекцыі]], каб даведацца, як яго палепшыць.',
+	'coll-notfound_title' => 'Калекцыя ня знойдзеная',
+	'coll-notfound_text' => 'Не магчыма знайсьці старонку калекцыі.',
+	'coll-excluded-templates' => '* Шаблёны ў катэгорыі [[:Category:$1|$1]] былі выключаны.',
+	'coll-blacklisted-templates' => '* Шаблёны ў чорным сьпісе [[:$1]] былі выключаны.',
+	'coll-return_to_collection' => '<p>Вярнуцца да <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Замовіць як друкаваную кнігу',
+	'coll-book_text' => 'Атрымаць друкаваную кнігу ад нашага партнёра, які займаецца паслугай друкаваньня па замове:',
+	'coll-order_from_pp' => 'Замовіць кнігу ў $1',
+	'coll-about_pp' => 'Аб $1',
+	'coll-invalid_podpartner_title' => 'Нядзейны партнёр, які друкуе па замове',
+	'coll-invalid_podpartner_msg' => 'Выбраны партнёр, які друкуе па замове нядзейны.
+Калі ласка, зьвяжыцеся з Вашым адміністратарам MediaWiki.',
+	'coll-license' => 'Ліцэнзія',
+	'coll-return_to' => 'Вярнуцца да [[:$1]]',
 );
 
 /** Bulgarian (Български)
@@ -1180,6 +1225,7 @@ Bonvolu kontakti vian administranton de MediaWiki.',
 );
 
 /** Spanish (Español)
+ * @author Imre
  * @author Jatrobat
  * @author Remember the dot
  * @author Sanbec
@@ -1187,6 +1233,7 @@ Bonvolu kontakti vian administranton de MediaWiki.',
 $messages['es'] = array(
 	'coll-collection' => 'Colección',
 	'coll-collections' => 'Colecciones',
+	'coll-print_template_prefix' => 'Imprimir',
 	'coll-portlet_title' => 'Crear un libro',
 	'coll-add_page' => 'Añadir página wiki',
 	'coll-remove_page' => 'Quitar página wiki',
@@ -1201,6 +1248,7 @@ $messages['es'] = array(
 	'coll-show' => 'Mostrar',
 	'coll-title' => 'Título:',
 	'coll-subtitle' => 'Subtítulo:',
+	'coll-contents' => 'Contenidos',
 	'coll-rename' => 'Renombrar',
 	'coll-new_chapter' => 'Introducir nombre del capítulo nuevo',
 	'coll-rename_chapter' => 'Introducir un nombre nuevo para el capítulo',
@@ -1211,11 +1259,14 @@ $messages['es'] = array(
 	'coll-community_collection_label' => 'Colección del comunidad:',
 	'coll-save_collection' => 'Guardar colección',
 	'coll-yes' => 'Sí',
+	'coll-no' => 'No',
+	'coll-overwrite' => 'Sobrescribir',
 	'coll-append' => 'Anexar',
 	'coll-cancel' => 'Cancelar',
 	'coll-update' => 'Actualizar',
 	'coll-rendering_status' => '<strong>Estatus:</strong> $1',
 	'coll-book_title' => 'Ordenar como libro imprimido',
+	'coll-about_pp' => 'Acerca de $1',
 	'coll-license' => 'Licencia',
 );
 
@@ -3383,10 +3434,14 @@ $messages['myv'] = array(
  * @author Fluence
  */
 $messages['nah'] = array(
+	'coll-print_template_prefix' => 'Tictepoztlahcuilōz',
+	'coll-show' => 'Tiquittāz',
 	'coll-title' => 'Tōcāitl:',
+	'coll-revision' => 'Tlachiyaliztli: $1',
 	'coll-yes' => 'Quēmah',
 	'coll-no' => 'Ahmo',
 	'coll-cancel' => 'Ticcuepāz',
+	'coll-update' => 'Tiquiyancuīyāz',
 );
 
 /** Low German (Plattdüütsch)
