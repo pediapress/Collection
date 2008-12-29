@@ -1278,6 +1278,7 @@ $messages['et'] = array(
 	'coll-print_template_prefix' => 'Prindi',
 	'coll-portlet_title' => 'Loo raamat',
 	'coll-add_page' => 'Lisa wiki lehekülg',
+	'coll-add_category' => 'Lisa kategooria',
 	'coll-download' => 'Laadi alla',
 	'coll-format_label' => 'Formaat:',
 	'coll-remove' => 'Eemalda',
@@ -1296,6 +1297,8 @@ Kas kirjutada üle?',
 	'coll-append' => 'Lisa',
 	'coll-cancel' => 'Tühista',
 	'coll-update' => 'Uuenda',
+	'coll-license' => 'Litsents',
+	'coll-return_to' => 'Naase [[:$1]]',
 );
 
 /** Persian (فارسی)
@@ -4135,6 +4138,7 @@ $messages['ps'] = array(
 
 /** Portuguese (Português)
  * @author 555
+ * @author Heldergeovane
  * @author Lijealso
  * @author MF-Warburg
  * @author Malafaya
@@ -4213,7 +4217,7 @@ Pretende reescrever a sua colecção, adicionando o novo conteúdo, ou cancelar 
 	'coll-cancel' => 'Cancelar',
 	'coll-update' => 'Actualizar',
 	'coll-limit_exceeded_title' => 'Colecção Demasiado Grande',
-	'coll-limit_exceeded_text' => 'A usa coleccção de página é demasiado grande.
+	'coll-limit_exceeded_text' => 'A sua coleccção de páginas é demasiado grande.
 Não poderão ser adicionadas mais páginas.',
 	'coll-rendering_title' => 'Renderizando',
 	'coll-rendering_text' => '<p><strong>Por favor, aguarde enquanto o documento é gerado.</strong></p>
@@ -4249,11 +4253,116 @@ Por favor, contacte o seu administrador MediaWiki.',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
+ * @author Heldergeovane
  * @author Jorge Morais
  */
 $messages['pt-br'] = array(
+	'coll-desc' => '[[Special:Collection|Coleciona páginas]], gera PDFs',
+	'coll-collection' => 'Coleção',
+	'coll-collections' => 'Coleções',
+	'coll-exclusion_category_title' => 'Excluir da impressão',
+	'coll-print_template_prefix' => 'Imprime',
+	'coll-portlet_title' => 'Criar um livro',
+	'coll-add_page' => 'Adicionar página wiki',
+	'coll-remove_page' => 'Remover página wiki',
+	'coll-add_category' => 'Adicionar categoria',
+	'coll-load_collection' => 'Carregar coleção',
+	'coll-show_collection' => 'Mostrar coleção',
+	'coll-help_collections' => 'Ajuda sobre coleções',
+	'coll-n_pages' => '$1 {{PLURAL:$1|página|páginas}}',
+	'coll-unknown_subpage_title' => 'Sub-página desconhecida',
+	'coll-unknown_subpage_text' => 'Não existe esta sub-página da [[Special:Collection|Coleção]]',
 	'coll-printable_version_pdf' => 'Versão em PDF',
+	'coll-download_as' => 'Baixar como $1',
+	'coll-noscript_text' => '<h1>JavaScript é requerido!</h1>
+<strong>O seu navegador não suporta JavaScript, ou o JavaScript foi desactivado.
+Esta página não funcionará corretamente, a menos que o JavaScript seja ativado.</strong>',
+	'coll-intro_text' => 'Crie e manipule sua seleção individual de páginas wiki.<br />Veja [[{{MediaWiki:Coll-helppage}}]] para mais detalhes.',
+	'coll-helppage' => 'Help:Coleções',
 	'coll-your_book' => 'Seu livro',
+	'coll-download_title' => 'Baixar',
+	'coll-download_text' => "Para baixar uma versão ''offline'', selecione um formato e pressione o botão correspondente.",
+	'coll-download' => 'Baixar',
+	'coll-format_label' => 'Formato:',
+	'coll-remove' => 'Remover',
+	'coll-show' => 'Exibir',
+	'coll-move_to_top' => 'Mover para o topo',
+	'coll-move_up' => 'Mover acima',
+	'coll-move_down' => 'Mover abaixo',
+	'coll-move_to_bottom' => 'Mover para o fundo',
+	'coll-title' => 'Título:',
+	'coll-subtitle' => 'Subtitle:',
+	'coll-contents' => 'Conteúdo',
+	'coll-drag_and_drop' => 'Arraste-e-solte para re-ordenar as páginas wiki e os capítulos',
+	'coll-create_chapter' => 'Criar capítulo',
+	'coll-sort_alphabetically' => 'Ordenar alfabeticamente',
+	'coll-clear_collection' => 'Limpar coleção',
+	'coll-clear_collection_confirm' => 'Realmente deseja eliminar completamente a sua coleção?',
+	'coll-rename' => 'Renomear',
+	'coll-new_chapter' => 'Introduza o nome para um novo capítulo',
+	'coll-rename_chapter' => 'Introduza um novo nome para o capítulo',
+	'coll-no_such_category' => 'Não existe esta categoria',
+	'coll-notitle_title' => 'Não foi possível determinar o título da página.',
+	'coll-post_failed_title' => 'Pedido POST falhou',
+	'coll-post_failed_msg' => 'O pedido POST feito em $1 falhou ($2).',
+	'coll-mwserve_failed_title' => 'Erro no servidor de renderização',
+	'coll-mwserve_failed_msg' => 'Ocorreu um erro no servidor de renderização: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Resposta de erro do servidor',
+	'coll-empty_collection' => 'Coleção vazia',
+	'coll-revision' => 'Revisão: $1',
+	'coll-save_collection_title' => 'Salvar e partilhar coleção',
+	'coll-save_collection_text' => 'Defina a localização:',
+	'coll-login_to_save' => 'Se pretende salvar coleções para uso posterior, por favor, [[Special:UserLogin|autentique-se ou crie uma conta]].',
+	'coll-personal_collection_label' => 'Coleção pessoal:',
+	'coll-community_collection_label' => 'Coleção comunitária:',
+	'coll-save_collection' => 'Salvar coleção',
+	'coll-save_category' => 'As coleções são salvas na categoria [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
+	'coll-overwrite_title' => 'A página já existe.
+Sobrescrever?',
+	'coll-overwrite_text' => 'Um página com o nome [[:$1]] já existe.
+Deseja substituí-la pela sua coleção?',
+	'coll-yes' => 'Sim',
+	'coll-no' => 'Não',
+	'coll-load_overwrite_text' => 'Você já possui algumas páginas na sua coleção.
+Pretende sobrescrever a sua coleção atual, adicionar o novo conteúdo, ou cancelar o carregamento desta coleção?',
+	'coll-overwrite' => 'Sobrescrever',
+	'coll-append' => 'Adicionar',
+	'coll-cancel' => 'Cancelar',
+	'coll-update' => 'Atualizar',
+	'coll-limit_exceeded_title' => 'Coleção grande demais',
+	'coll-limit_exceeded_text' => 'A sua coleção de páginas é grande demais.
+Não é possível adicionar mais páginas.',
+	'coll-rendering_title' => 'Renderizando',
+	'coll-rendering_text' => '<p><strong>Por favor, aguarde enquanto o documento é gerado.</strong></p>
+
+<p><strong>Progresso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Este página deverá se atualizar automaticamente a cada poucos segundos.
+Se isto não funcionar, por favor utilize o botão atualizar do seu navegador.</p>',
+	'coll-rendering_status' => '<strong>Estado:</strong> $1',
+	'coll-rendering_article' => '  (página wiki: $1)',
+	'coll-rendering_page' => '  (página: $1)',
+	'coll-rendering_finished_title' => 'Renderização concluída',
+	'coll-rendering_finished_text' => '<strong>O arquivo foi gerado.</strong>
+<strong>[$1 Baixe o arquivo]</strong> para o seu computador.
+
+Notas:
+* Não está satisfeito com o resultado? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre coleções]] para possibilidades de aprimoramentos.',
+	'coll-notfound_title' => 'Coleção não encontrada',
+	'coll-notfound_text' => 'Não foi possível encontrar a página da coleção.',
+	'coll-is_cached' => '<ul><li>Foi encontrada uma versão deste documento em cache, de modo que não foi necessária uma renderização. <a href="$1">Forçar nova renderização.</a></li></ul>',
+	'coll-excluded-templates' => '* Predefinições na categoria [[:Category:$1|$1]] foram excluídas.',
+	'coll-blacklisted-templates' => '* Predefinições na lista negra [[:$1]] foram excluídas.',
+	'coll-return_to_collection' => '<p>Retornar para <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Encomendar como livro impresso',
+	'coll-book_text' => 'Adquira um livro impresso de nosso parceiro de impressão-sob-demanda (POD):',
+	'coll-order_from_pp' => 'Encomendar o livro de $1',
+	'coll-about_pp' => 'Sobre $1',
+	'coll-invalid_podpartner_title' => 'Parceiro POD inválido',
+	'coll-invalid_podpartner_msg' => 'O parceiro POD fornecido é inválido.
+Por favor, contate o seu administrador MediaWiki.',
+	'coll-license' => 'Licença',
+	'coll-return_to' => 'Voltar para [[:$1]]',
 );
 
 /** Romanian (Română)
@@ -4854,6 +4963,7 @@ $messages['tet'] = array(
 	'coll-yes' => 'Sin',
 	'coll-no' => 'Lae',
 	'coll-about_pp' => 'Kona-ba $1',
+	'coll-return_to' => 'Fali ba [[:$1]]',
 );
 
 /** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
@@ -5192,6 +5302,7 @@ $messages['vec'] = array(
 	'coll-noscript_text' => "<h1>Ghe vole el JavaScript!</h1>
 <strong>El to browser no'l suporta JavaScript opure JavaScript el xe stà disativà.
 La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</strong>",
+	'coll-intro_text' => 'Crea e gestissi le to selession personali de pàxene wiki.<br />Lèxi [[{{MediaWiki:Coll-helppage}}]] par savérghene piessè.',
 	'coll-helppage' => 'Help:Colezion',
 	'coll-your_book' => 'El to libro',
 	'coll-download_title' => 'Descarga',
@@ -5207,6 +5318,7 @@ La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</s
 	'coll-title' => 'Titolo:',
 	'coll-subtitle' => 'Sototitolo:',
 	'coll-contents' => 'Indice',
+	'coll-drag_and_drop' => 'Strassìna e mòla col mouse par riordinar le pàxene wiki e i capitoli',
 	'coll-create_chapter' => 'Crea capitolo novo',
 	'coll-sort_alphabetically' => 'Meti in ordine alfabétego',
 	'coll-clear_collection' => 'Desvòda colezion',
@@ -5215,10 +5327,12 @@ La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</s
 	'coll-new_chapter' => 'Inserissi el nome del capitolo novo',
 	'coll-rename_chapter' => 'Inserissi el nome novo del capitolo',
 	'coll-no_such_category' => 'Nissuna categoria',
+	'coll-notitle_title' => "No s'à podesto determinar el titolo de sta pàxena.",
 	'coll-post_failed_title' => 'Richiesta POST mia riussìa',
 	'coll-post_failed_msg' => 'La richiesta POST a $1 no la xe mia riussìa ($2).',
 	'coll-mwserve_failed_title' => 'Eròr sul server de conversion',
 	'coll-mwserve_failed_msg' => 'Xe capità un eròr sul server de conversion: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Risposta de eròr dal server',
 	'coll-empty_collection' => 'Colezion vòda',
 	'coll-revision' => 'Revision: $1',
 	'coll-save_collection_title' => 'Salva e condividi la to colezion',
@@ -5234,6 +5348,8 @@ Vuto che ghe scriva insima?',
 Vuto che la vegna rinpiazà co la to colezion?',
 	'coll-yes' => 'Sì',
 	'coll-no' => 'No',
+	'coll-load_overwrite_text' => 'In te la to colezion ghe xe xà dele pàxene.
+Vuto sorascrìvar la colezion esistente, opure zontarghe el contenuto novo, opure anular el caricamento de sta colezion?',
 	'coll-overwrite' => 'Sorascrivi',
 	'coll-append' => 'Zonta',
 	'coll-cancel' => 'Annulla',
@@ -5258,10 +5374,12 @@ Note:
 * Sito mia contento del risultato? Lèzi [[{{MediaWiki:Coll-helppage}}|la pàxena de ajuto su le colezion]] par saver come mejorarlo.',
 	'coll-notfound_title' => 'Colezion mia catà',
 	'coll-notfound_text' => 'No se cata da nissuna parte la pàxena de la colezion.',
+	'coll-is_cached' => '<ul><li>In te la cache xe stà catà na version del documento, quindi no ghè stà bisogno de far la conversion. <a href="$1">Forza la ri-conversion.</a></li></ul>',
 	'coll-excluded-templates' => '* I modèi in te la categoria [[:Category:$1|$1]] i xe stà esclusi.',
 	'coll-blacklisted-templates' => '* I modèi in te la lista nera [[:$1]] i xe stà esclusi.',
 	'coll-return_to_collection' => '<p>Torna indrìo a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ordina come libro stanpà',
+	'coll-book_text' => 'Otien un libro stanpà da uno dei nostri soci che i te lo stanpa su richiesta:',
 	'coll-order_from_pp' => 'Ordina libro da $1',
 	'coll-about_pp' => 'Informassion su $1',
 	'coll-invalid_podpartner_title' => 'Partner POD mia valido',
