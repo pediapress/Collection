@@ -1078,21 +1078,6 @@ EOS
 			$wgOut->setSquidMaxage( 0 );
 			$wgOut->enableClientCache( false );
 			
-			$out .= <<<EOS
-<script type="text/javascript">
-	function collectionCall(func, args) {
-		sajax_request_type = 'POST';
-		sajax_do_call('wfAjaxCollection' + func, args, function(xhr) {
-			sajax_request_type = 'GET';
-			sajax_do_call('wfAjaxCollectionGetPortlet', [func], function(xhr) {
-				document.getElementById('collectionPortletList').parentNode.innerHTML = xhr.responseText;
-			});
-		});
-	}
-</script>
-EOS
-			;
-			
 			$namespace =  $wgTitle->getNamespace();
 			
   		if ( $ajaxHint == 'AddCategory' || $namespace == NS_CATEGORY ) {
@@ -1180,6 +1165,24 @@ EOS
 		}
 		
 		$out .= "</ul>";
+
+		$out .= <<<EOS
+<script type="text/javascript">
+/* <![CDATA[ */
+	function collectionCall(func, args) {
+		sajax_request_type = 'POST';
+		sajax_do_call('wfAjaxCollection' + func, args, function(xhr) {
+			sajax_request_type = 'GET';
+			sajax_do_call('wfAjaxCollectionGetPortlet', [func], function(xhr) {
+				document.getElementById('collectionPortletList').parentNode.innerHTML = xhr.responseText;
+			});
+		});
+	}
+/* ]]> */
+</script>
+EOS
+			;
+
 		return $out;
 	}
 	
