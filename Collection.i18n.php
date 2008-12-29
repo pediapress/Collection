@@ -509,9 +509,10 @@ $messages['ast'] = array(
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
-	'coll-desc' => '[[Special:Collection|Калекцыяніруе старонкі]], стварае кнігі ў фармаце PDF',
+	'coll-desc' => '[[Special:Collection|Калекцыянуе старонкі]], стварае кнігі ў фармаце PDF',
 	'coll-collection' => 'Калекцыя',
 	'coll-collections' => 'Калекцыі',
 	'coll-exclusion_category_title' => 'Выключэньні з друку',
@@ -557,8 +558,8 @@ $messages['be-tarask'] = array(
 	'coll-rename_chapter' => 'Увядзіце новую назву разьдзелу',
 	'coll-no_such_category' => 'Няма такой катэгорыі',
 	'coll-notitle_title' => 'Назва старонкі ня можа быць вызначана.',
-	'coll-post_failed_title' => 'POST-запыт не выкананы',
-	'coll-post_failed_msg' => 'POST-запыт да $1 не выкананы ($2).',
+	'coll-post_failed_title' => 'POST-запыт ня выкананы',
+	'coll-post_failed_msg' => 'POST-запыт да $1 ня выкананы ($2).',
 	'coll-mwserve_failed_title' => 'Памылка сэрвэра перадачы',
 	'coll-mwserve_failed_msg' => 'На сэрвэры перадачы ўзьнікла памылка: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Памылка адказу сэрвэра',
@@ -566,7 +567,7 @@ $messages['be-tarask'] = array(
 	'coll-revision' => 'Вэрсія: $1',
 	'coll-save_collection_title' => 'Захаваць Вашую калекцыю і адкрыць да яе доступ',
 	'coll-save_collection_text' => 'Выберыце месцазнаходжаньне:',
-	'coll-login_to_save' => 'Калі Вы жадаеце захаваць калекцыю для далейшага карыстаньня, калі ласка [[Special:UserLogin|увайдзіце ў сыстэму альбо стварыце рахунак]].',
+	'coll-login_to_save' => 'Калі Вы жадаеце захаваць калекцыю для далейшага карыстаньня, калі ласка, [[Special:UserLogin|увайдзіце ў сыстэму альбо стварыце рахунак]].',
 	'coll-personal_collection_label' => 'Асабістая калекцыя:',
 	'coll-community_collection_label' => 'Калекцыя супольнасьці:',
 	'coll-save_collection' => 'Захаваць калекцыю',
@@ -3517,13 +3518,19 @@ $messages['nds'] = array(
 	'coll-yes' => 'Jo',
 	'coll-no' => 'Nee',
 	'coll-overwrite' => 'Överschrieven',
+	'coll-append' => 'Tofögen',
 	'coll-cancel' => 'Afbreken',
 	'coll-update' => 'Opfrischen',
 	'coll-rendering_title' => 'An’t Rendern',
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '   (Wikisied: $1)',
 	'coll-rendering_page' => '   (Sied: $1)',
+	'coll-rendering_finished_title' => 'Rendern trech',
+	'coll-excluded-templates' => '* Vörlagen ut de Kategorie [[:Category:$1|$1]] sünd utslaten bleven.',
+	'coll-blacklisted-templates' => '* Vörlagen vun de Swarte List [[:$1]] sünd utslaten bleven.',
 	'coll-return_to_collection' => '<p>Trüch na <a href="$1">$2</a></p>',
 	'coll-book_title' => 'As druckt Book bestellen',
+	'coll-book_text' => 'Bestell en druckt Book bi een vun uns Print-on-Demand-Partners:',
 	'coll-order_from_pp' => 'Book bestellen bi $1',
 	'coll-about_pp' => 'Över $1',
 	'coll-invalid_podpartner_title' => 'Ungülligen Print-on-Demand-Partner',
@@ -4960,6 +4967,7 @@ $messages['te'] = array(
  * @author MF-Warburg
  */
 $messages['tet'] = array(
+	'coll-contents' => 'Konteúdu',
 	'coll-yes' => 'Sin',
 	'coll-no' => 'Lae',
 	'coll-about_pp' => 'Kona-ba $1',
