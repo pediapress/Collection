@@ -271,9 +271,7 @@ $messages['ar'] = array(
 	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
 <strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
 هذه الصفحة لن تعمل بطريقة صحيحة، إلا إذا تم تفعيل الجافاسكريبت.</strong>',
-	'coll-intro_text' => 'يمكنك جمع الصفحات، توليد وتحميل ملف PDF من مجموعات الصفحة وحفظ مجموعات الصفحة للاستخدام فيما بعد أو لمشاركتها.
-
-انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] لمزيد من المعلومات.',
+	'coll-intro_text' => 'أنشئ وتحكم بمجموعتك الفردية من صفحات الويكي.<br />انظر [[{{MediaWiki:Coll-helppage}}]] لمزيد من المعلومات.',
 	'coll-helppage' => 'Help:مجموعات',
 	'coll-your_book' => 'كتابك',
 	'coll-download_title' => 'تنزيل',
@@ -307,12 +305,12 @@ $messages['ar'] = array(
 	'coll-empty_collection' => 'مجموعة فارغة',
 	'coll-revision' => 'النسخة: $1',
 	'coll-save_collection_title' => 'حفظ ومشاركة مجموعتك',
-	'coll-save_collection_text' => 'لحفظ هذه المجموعة للاستخدام المستقبلي، اختر نوع مجموعة وأدخل عنوان صفحة:',
+	'coll-save_collection_text' => 'اختر موقعا:',
 	'coll-login_to_save' => 'لو كنت تريد حفظ المجموعات من أجل الاستخدام فيما بعد، من فضلك [[Special:UserLogin|قم بتسجيل الدخول أو إنشاء حساب]].',
 	'coll-personal_collection_label' => 'مجموعة شخصية:',
 	'coll-community_collection_label' => 'مجموعة مجتمع:',
 	'coll-save_collection' => 'حفظ المجموعة',
-	'coll-save_category' => 'المجموعات يتم حفظها في التصنيف [[:Category:Collections|مجموعات]].',
+	'coll-save_category' => 'المجموعات يتم حفظها في التصنيف [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'الصفحة موجودة.
 كتابة عليها؟',
 	'coll-overwrite_text' => 'صفحة بنفس الاسم [[:$1]] موجودة بالفعل.
@@ -340,7 +338,7 @@ $messages['ar'] = array(
 	'coll-rendering_page' => '  (الصفحة: $1)',
 	'coll-rendering_finished_title' => 'العرض انتهى',
 	'coll-rendering_finished_text' => '<strong>ملف الوثيقة تم توليده.</strong>
-<strong>[$1 اضغط هنا]</strong> لتنزيله إلى حاسوبك.
+<strong>[$1 نزل الملف]</strong> إلى حاسوبك.
 
 ملاحظات:
 * غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.',
@@ -351,7 +349,7 @@ $messages['ar'] = array(
 	'coll-blacklisted-templates' => '* القوالب في القائمة السوداء [[:$1]] تم إقصاؤها.',
 	'coll-return_to_collection' => '<p>ارجع إلى <a href="$1">$2</a></p>',
 	'coll-book_title' => 'طلب ككتاب مطبوع',
-	'coll-book_text' => 'يمكنك طلب كتاب مطبوع يحتوي على مجموعة صفحاتك بواسطة زيارة واحدا من شركاء الطباعة عند الطلب التاليين:',
+	'coll-book_text' => 'احصل على كتاب مطبوع من شريكنا للطباعة عند الطلب:',
 	'coll-order_from_pp' => 'طلب كتاب من $1',
 	'coll-about_pp' => 'حول $1',
 	'coll-invalid_podpartner_title' => 'شريك POD غير صحيح',
@@ -3058,19 +3056,24 @@ $messages['ko'] = array(
 자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
 	'coll-your_book' => '당신의 책',
 	'coll-download_title' => '다운로드',
+	'coll-download' => '다운로드',
 	'coll-format_label' => '포맷:',
 	'coll-remove' => '제거',
 	'coll-title' => '제목:',
 	'coll-subtitle' => '부제목:',
 	'coll-sort_alphabetically' => '알파벳순으로 정렬',
 	'coll-rename' => '이름 바꾸기',
+	'coll-post_failed_title' => 'POST 요청에 실패하였습니다.',
 	'coll-mwserve_failed_title' => '렌더 서버 오류',
 	'coll-revision' => '판: $1',
+	'coll-overwrite_title' => '문서가 존재합니다.
+덮어쓰시겠습니까?',
 	'coll-yes' => '예',
 	'coll-no' => '아니오',
 	'coll-overwrite' => '덮어쓰기',
 	'coll-append' => '더하기',
 	'coll-cancel' => '취소',
+	'coll-update' => '업데이트',
 	'coll-rendering_title' => '렌더링',
 	'coll-rendering_status' => '<strong>상태:</strong> $1',
 	'coll-rendering_article' => '  (문서: $1)',
@@ -3832,9 +3835,9 @@ $messages['nn'] = array(
 Denne sida vil ikkje fungera på rett måte med mindre JavaScript er slege på.</strong>',
 	'coll-intro_text' => 'Lag og administrer di eiga samling av wikisider.<br /> Sjå [[{{MediaWiki:Coll-helppage}}]] for meir informasjon.',
 	'coll-helppage' => 'Hjelp:Samlingar',
-	'coll-your_book' => 'Di bok',
+	'coll-your_book' => 'Boka di',
 	'coll-download_title' => 'Last ned',
-	'coll-download_text' => 'For å lasta ned ein offline-versjon, vel eit format og trykk på knappen.',
+	'coll-download_text' => 'For å lasta ned ein fråkopla versjon, vel eit format og trykk på knappen.',
 	'coll-download' => 'Last ned',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Fjern',
@@ -3907,7 +3910,7 @@ Merk:
 	'coll-blacklisted-templates' => '* Malar på svartelista ([[:$1]]) har vortne utelate.',
 	'coll-return_to_collection' => '<p>Attende til <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ting som ei trykt bok',
-	'coll-book_text' => 'Få ei printa bok frå vår print-på-tinging partnar:',
+	'coll-book_text' => 'Få ei printa bok frå vår print-på-tinging-partnar:',
 	'coll-order_from_pp' => 'Ting bok frå $1',
 	'coll-about_pp' => 'Om $1',
 	'coll-invalid_podpartner_title' => 'Ikkje gyldig POD-partnar',
@@ -3920,6 +3923,7 @@ Kontakt MediaWiki-administratoren din.',
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Boivie
  * @author H92
+ * @author Harald Khan
  * @author Jon Harald Søby
  * @author Laaknor
  */
@@ -4017,7 +4021,7 @@ Merk:
 	'coll-blacklisted-templates' => '* Maler på svartelisten ([[:$1]]) har blitt utelatt.',
 	'coll-return_to_collection' => '<p>Tilbake til <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Bestill som en trykket bok',
-	'coll-book_text' => 'Få en printet bok fra vår print-på-bestilling partner:',
+	'coll-book_text' => 'Få en printet bok fra vår print-på-bestilling-partner:',
 	'coll-order_from_pp' => 'Bestill bok fra $1',
 	'coll-about_pp' => 'Om $1',
 	'coll-invalid_podpartner_title' => 'Ugyldig POD-partner',
