@@ -357,11 +357,12 @@ class Collection extends SpecialPage {
 	static function addArticle( $title, $oldid=0 ) {
 		$article = new Article( $title, $oldid );
 		$latest = $article->getLatest();
-
+		
+		$currentVersion = 0;
 		if ( $oldid == 0 ) {
+			$currentVersion = 1;
 			$oldid = $latest;
-		}
-
+		} 
 		$index = self::findArticle( $title->getPrefixedText(), $oldid );
 		if ( $index != -1 ) {
 			return;
@@ -380,6 +381,7 @@ class Collection extends SpecialPage {
 			'latest' => strval( $latest ),
 			'timestamp' => wfTimestamp( TS_UNIX, $revision->mTimestamp ),
 			'url' => $title->getFullURL(),
+			'currentVersion' => $currentVersion,
 		);
 		$_SESSION['wsCollection'] = $collection;
 		self::touchSession();
@@ -530,13 +532,25 @@ class Collection extends SpecialPage {
 				if ( preg_match( '/\[\[:?(.*?)(\|(.*?))?\]\]/', $articleTitle, $match ) ) {
 					$articleTitle = $match[1];
 					$displayTitle = $match[3];
+					$oldid = -1;
+					$currentVersion = 1;
+				} else if ( preg_match( '/\[\{\{fullurl:(.*?)\|oldid=(.*?)\}\} (.*?) \((.*?)\)\]/', $articleTitle, $match ) ) {
+				       	$articleTitle = $match[1];
+					$displayTitle = $match[3];
+					$oldid = $match[4];
+					$currentVersion = 0;
 				}
-				$articleTitle = Title::makeTitleSafe( NS_MAIN, $articleTitle );
+
+
 				if( is_null( $articleTitle ) ) {
 					continue;
 				}
-
-				$article = new Article( $articleTitle );
+				$articleTitle = Title::makeTitleSafe( NS_MAIN, $articleTitle );
+				if ($oldid < 0) {
+				   $article = new Article( $articleTitle );
+				} else {
+				   $article = new Article( $articleTitle, $oldid );
+				}
 				if ( !$article->exists() ) {
 					continue;
 				}
@@ -554,6 +568,7 @@ class Collection extends SpecialPage {
 					'revision' => $oldid,
 					'timestamp' => wfTimestamp( TS_UNIX, $revsision->mTimestamp ),
 					'url' => $articleTitle->getFullURL(),
+					'currentVersion' => $currentVersion,
 				);
 				if ( $displayTitle ) {
 					$d['displaytitle'] = $displayTitle;
@@ -580,15 +595,27 @@ class Collection extends SpecialPage {
 		}
 		if ( !empty( $collection['items'] ) ) {
 			foreach ( $collection['items'] as $item ) {
-				if ( $item['type'] == 'chapter' ) {
+                                if ( $item['type'] == 'chapter' ) {
 					$articleText .= ';' . $item['title'] . "\n";
 				} else if ( $item['type'] == 'article' ) {
-					$articleText .= ":[[" . $item['title'];
-					if ( $item['displaytitle'] ) {
-						$articleText .= "|" . $item['displaytitle'];
+					if ($item['currentVersion'] == 1) {
+						$articleText .= ":[[" . $item['title'];
+						if ( $item['displaytitle'] ) {
+							$articleText .= "|" . $item['displaytitle'];
+						}
+						$articleText .= "]]\n";
+					} else {
+						$articleText .= ":[{{fullurl:" . $item['title'];
+						$articleText .= "|oldid=" . $item['revision'] . "}} ";
+						if ( $item['displaytitle'] ) {
+							$articleText .= $item['displaytitle'];
+						} else {
+							$articleText .= $item['title'];
+						}
+						$articleText .= " (" . $item['revision'] . ")]\n";
 					}
-					$articleText .= "]]\n";
 				}
+				//$articleText .= $item['revision'] . "/" . $item['latest']."\n";
 			}
 		}
 		$catTitle = Title::makeTitle( NS_CATEGORY, wfMsgForContent( 'coll-collections' ) );
