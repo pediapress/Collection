@@ -612,7 +612,7 @@ class Collection extends SpecialPage {
 						} else {
 							$articleText .= $item['title'];
 						}
-						$articleText .= ']';
+						$articleText .= "]\n";
 					}
 				}
 				//$articleText .= $item['revision'] . "/" . $item['latest']."\n";
