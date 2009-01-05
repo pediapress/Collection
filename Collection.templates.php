@@ -45,7 +45,6 @@ $listTemplate->set( 'collection', $this->data['collection'] );
 $listTemplate->execute();
 ?>
 </div>
-
 <div style="display:none">
 	<span id="newChapterText"><?php $this->msg('coll-new_chapter') ?></span>
 	<span id="renameChapterText"><?php $this->msg('coll-rename_chapter') ?></span>
@@ -156,11 +155,12 @@ if (count($this->data['collection']['items']) == 0) { ?>
 <?php }?>
 
 <ul id="collectionList" style="list-style: none; margin-left: 0;">
+
 <?php
 foreach($this->data['collection']['items'] as $index => $item) {
 	if ($item['type'] == 'article') { ?>
 	<li id="item-<?php echo $index ?>" class="article">
-		<a onclick="return coll_remove_item(<?php echo $index ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'remove_item/', 'index=' . $index)) ?>" title="<?php $this->msg('coll-remove') ?>"><img src="<?php echo htmlspecialchars($mediapath . "remove.png") ?>" width="10" height="10" alt="<?php $this->msg('remove') ?>" /></a>
+		<a onclick="return coll_remove_item(<?php echo $index ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'remove_item/', 'index=' . $index)) ?>" title="<?php $this->msg('coll-remove') ?>"><img src="<?php echo htmlspecialchars($mediapath . "remove.png") ?>" width="10" height="10" alt="<?php $this->msg('remove') ?>" /></a><a>
 		<noscript>
 		<?php if ($index == 0) { ?>
 			<img src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="10" height="10" alt="" />
@@ -173,7 +173,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 			<a onclick="return coll_move_item(<?php echo $index . ', 1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_down') ?>"><img src="<?php echo htmlspecialchars($mediapath . "down.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-move_down') ?>" /></a>
 		<?php } ?>
 		</noscript>
-		<?php if ($item['revision'] && $item['revision'] != $item['latest']) {
+		<?php if ($item['currentVersion'] == 0) { //($item['revision'] && $item['revision'] != $item['latest']) ||
 			$revision = '('. htmlspecialchars(wfMsg('coll-revision', $item['revision'])) . ')';
 			$url = $item['url'] . '?oldid=' . $item['revision'];
 		} else {
@@ -328,3 +328,4 @@ if ($this->data['return_to']) {
 	}
 }
 
+?>
