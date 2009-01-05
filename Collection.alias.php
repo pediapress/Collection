@@ -112,6 +112,11 @@ $aliases['mk'] = array(
 	'Collection' => array( 'Колекција' ),
 );
 
+/** Maltese (Malti) */
+$aliases['mt'] = array(
+	'Collection' => array( 'Kollezzjoni' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
 	'Collection' => array( 'Verzameling' ),

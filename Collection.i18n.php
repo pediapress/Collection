@@ -1021,7 +1021,7 @@ Wenn das jedoch nicht geschieht, drücke bitte den „Aktualisieren“-Knopf (me
 	'coll-rendering_page' => '  (Seite: $1)',
 	'coll-rendering_finished_title' => 'Fertig erstellt',
 	'coll-rendering_finished_text' => '<strong>Die Datei wurde erfolgreich erstellt.</strong>
-<strong>[$1 Lade die Datei herunter],</strong>.
+<strong>[$1 Dokument herunterladen]</strong>.
 
 Hinweise:
 * Bist du mit dem Ergebnis nicht zufrieden? Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Coll-helppage}}|Hilfeseite über die Sammlungen]].',
@@ -1045,37 +1045,106 @@ Hinweise:
  * @author Michawiki
  */
 $messages['dsb'] = array(
+	'coll-desc' => '[[Special:Collection|Boki zběraś]], PDF napóraś',
+	'coll-collection' => 'Zběrka',
+	'coll-collections' => 'Zběrki',
+	'coll-exclusion_category_title' => 'Wót śišća wuzamknuś',
+	'coll-print_template_prefix' => 'Śišćaś',
 	'coll-portlet_title' => 'Knigły napóraś',
 	'coll-add_page' => 'Wikijowy bok pśidaś',
 	'coll-remove_page' => 'Wikijowy bok wótwónoźeś',
 	'coll-add_category' => 'Kategoriju pśidaś',
+	'coll-load_collection' => 'Zběrku zacytaś',
+	'coll-show_collection' => 'Zběrku pokazaś',
+	'coll-help_collections' => 'Pomoc wó zběrkach',
 	'coll-n_pages' => '$1 {{PLURAL:$1|bok|boka|boki|bokow}}',
+	'coll-unknown_subpage_title' => 'Njeznaty pódbok',
+	'coll-unknown_subpage_text' => 'Toś ten pódbok [[Special:Collection|zběrki]] njeeksistěrujo',
+	'coll-printable_version_pdf' => 'PDF-wersija',
 	'coll-download_as' => 'Ako $1 ześěgnuś',
 	'coll-noscript_text' => '<h1>JavaScript jo trěbny!</h1>
 <strong>Twój wobglědowak njepódpěrujo JavaScript abo JavaScript jo znjemóžnjony.
 Toś ten bok njebuźo pšawje funkcioněrowaś, tak dłujko až JavaScript njejo zmóžnjony.</strong>',
+	'coll-intro_text' => 'Napóraj a zastoj swój indiwiduelny wuběrk wikijowych bokow.<br />Glědaj [[{{MediaWiki:Coll-helppage}}]] ta dalšne informacije.',
+	'coll-helppage' => 'Help:Zběrki',
+	'coll-your_book' => 'Twóje knigły',
+	'coll-download_title' => 'Ześěgnuś',
+	'coll-download_text' => 'Aby ześěgnuł wersiju offline, wubjeŕ format a klikni na tłocašk.',
 	'coll-download' => 'Ześěgnuś',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Wótwónoźeś',
+	'coll-show' => 'Pokazaś',
+	'coll-move_to_top' => 'Górjej',
 	'coll-move_up' => 'Górjej',
 	'coll-move_down' => 'Dołoj',
+	'coll-move_to_bottom' => 'Dołoj',
 	'coll-title' => 'Titel:',
 	'coll-subtitle' => 'Pódtitel:',
 	'coll-contents' => 'Wopśimjeśe',
+	'coll-drag_and_drop' => 'Pśesuni z myšku, aby pśerědował wikijowe boki a kapitle',
 	'coll-create_chapter' => 'Kapitel napóraś',
 	'coll-sort_alphabetically' => 'Alfabetiski sortěrowaś',
+	'coll-clear_collection' => 'Zběrku wuprozniś',
+	'coll-clear_collection_confirm' => 'Coš napšawdu swóju zběrku dopołnje wuprozniś?',
 	'coll-rename' => 'Pśemjeniś',
 	'coll-new_chapter' => 'Zapódaj mě za nowy kapitel',
 	'coll-rename_chapter' => 'Zapódaj nowe mě za kapitel',
 	'coll-no_such_category' => 'Njejo taka kategorija',
+	'coll-notitle_title' => 'Titel boka njejo se dał zwěsćiś.',
+	'coll-post_failed_title' => 'POST-napšašanje jo se njeraźiło',
+	'coll-post_failed_msg' => 'POST-napšašanje do $1 jo se njeraźiło ($2).',
+	'coll-mwserve_failed_title' => 'Zmólka kresleńskego serwera',
+	'coll-mwserve_failed_msg' => 'Na kresleńskem serwerje jo zmólka nastała: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Powěźeńka zmólki wót serwera',
+	'coll-empty_collection' => 'Prozna zběrka',
+	'coll-revision' => 'Wersija: $1',
+	'coll-save_collection_title' => 'Twóju zběrku składowaś a źěliś',
+	'coll-save_collection_text' => 'Wubjeŕ městno:',
+	'coll-login_to_save' => 'Jolic coš zběrki za póznjejše wužywanje składowaś, [[Special:UserLogin|pśizjaw se pšosym abo załož konto]].',
+	'coll-personal_collection_label' => 'Wósobinska zběrka:',
+	'coll-community_collection_label' => 'Zběrka zgromaźeństwa:',
+	'coll-save_collection' => 'Zběrku składowaś',
+	'coll-save_category' => 'Zběrki składuju se w kategoriji [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'Bok eksistěrujo.
 Pśepisaś?',
+	'coll-overwrite_text' => 'Bok z mjenim [[:$1]] južo eksistěrujo.
+Coš jen pśez swóju zběrku wuměniś?',
 	'coll-yes' => 'Jo',
 	'coll-no' => 'Ně',
+	'coll-load_overwrite_text' => 'Maš južo někotare boki w swójej zběrce.
+Coš swóju aktualnu zběrku pśepisaś, nowe wopśimjeśe pśipowjesyś abo zacytowanje toś teje zběrki pśetergnuś?',
 	'coll-overwrite' => 'Pśepisaś',
+	'coll-append' => 'Pśipowjesyś',
 	'coll-cancel' => 'Pśetergnuś',
+	'coll-update' => 'Aktualizěrowaś',
+	'coll-limit_exceeded_title' => 'Zběrka pśewjelika',
+	'coll-limit_exceeded_text' => 'Twója zběrka bokow jo pśewjelika.
+Njedaju se boki pśidaś.',
+	'coll-rendering_title' => 'Kreslenje',
+	'coll-rendering_text' => '<p><strong>Pšosym pócakaj, mjaztym až se dokument napórajo.</strong></p>
+
+<p><strong>Póstup:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Toś ten bok by se dejał kuždy pór sekundow wótnowiś.
+Jolic to njefunkcioněrujo, klikni pšosym tłocašk "Znowego" swójogo wobglědowaka.</p>',
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
+	'coll-rendering_article' => '(wikijowy bok: $1)',
+	'coll-rendering_page' => '(bok: $1)',
+	'coll-rendering_finished_title' => 'Kreslenje dokóńcone',
+	'coll-rendering_finished_text' => '<strong>Dokumentowa dataja jo se napórała.</strong>
+<strong>[$1 Ześěgni dataju]</strong> do swójogo licadła.
+
+Pśispomnjeśa:
+* Njespokojom z wudaśim? Glědaj [[{{MediaWiki:Coll-helppage}}|bok pomocy wó zběrkach]] za móžnosći, jo  pólěpšyś.',
+	'coll-notfound_title' => 'Zběrka njenamakana',
+	'coll-notfound_text' => 'Bok zběrki njejo se dał namakaś.',
+	'coll-is_cached' => '<ul><li>Mjazyskładowana wersija dokumenta jo se namakała, tak až kreslenje njejo było trěbne. <a href="$1">Kreslenje wunuziś.</a></li></ul>',
+	'coll-excluded-templates' => '* Pśedłogi w kategoriji [[:Category:$1|$1]] su se wuzamknuli.',
+	'coll-blacklisted-templates' => '* Pśedłogi na cornej lisćinje [[:$1]] su se wuzamknuli.',
 	'coll-return_to_collection' => '<p>Slědk k <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ako wuśišćane knigły skazaś',
+	'coll-book_text' => 'Wuśišćane knigły wót našogo parnera za śišć na pominanje skazaś:',
+	'coll-order_from_pp' => 'Knigły wót $1 skazaś',
 	'coll-about_pp' => 'Wó $1',
 	'coll-invalid_podpartner_title' => 'Njepłaśiwy partner za śišć na pominanje',
 	'coll-invalid_podpartner_msg' => 'Pódany partner za śišć na pominanje jo njepłaśiwy.
@@ -1227,6 +1296,7 @@ Bonvolu kontakti vian administranton de MediaWiki.',
 /** Spanish (Español)
  * @author Imre
  * @author Jatrobat
+ * @author Lin linao
  * @author Remember the dot
  * @author Sanbec
  */
@@ -1249,6 +1319,8 @@ $messages['es'] = array(
 	'coll-title' => 'Título:',
 	'coll-subtitle' => 'Subtítulo:',
 	'coll-contents' => 'Contenidos',
+	'coll-create_chapter' => 'Crear capítulo',
+	'coll-sort_alphabetically' => 'Ordenar alfabéticamente',
 	'coll-rename' => 'Renombrar',
 	'coll-new_chapter' => 'Introducir nombre del capítulo nuevo',
 	'coll-rename_chapter' => 'Introducir un nombre nuevo para el capítulo',
@@ -3059,6 +3131,8 @@ $messages['ko'] = array(
 	'coll-download' => '다운로드',
 	'coll-format_label' => '포맷:',
 	'coll-remove' => '제거',
+	'coll-move_to_top' => '맨 위로 이동',
+	'coll-move_to_bottom' => '맨 아래로 이동',
 	'coll-title' => '제목:',
 	'coll-subtitle' => '부제목:',
 	'coll-sort_alphabetically' => '알파벳순으로 정렬',
@@ -3906,8 +3980,8 @@ Merk:
 	'coll-notfound_title' => 'Samling vart ikkje funnen',
 	'coll-notfound_text' => 'Kunne ikkje finna samlinggsida.',
 	'coll-is_cached' => '<ul><li>Ein mellomlagra versjon av dokumentet vart funnen, so ingen rendrering var naudsynleg. <a href="$1">Tving ny rendrering.</a></li></ul>',
-	'coll-excluded-templates' => '* Malar i kategorien [[:Category:$1|$1]] har vortne utelate.',
-	'coll-blacklisted-templates' => '* Malar på svartelista ([[:$1]]) har vortne utelate.',
+	'coll-excluded-templates' => '* Malar i kategorien [[:Category:$1|$1]] har vortne utelatne.',
+	'coll-blacklisted-templates' => '* Malar på svartelista ([[:$1]]) har vortne utelatne.',
 	'coll-return_to_collection' => '<p>Attende til <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ting som ei trykt bok',
 	'coll-book_text' => 'Få ei printa bok frå vår print-på-tinging-partnar:',
@@ -5334,6 +5408,7 @@ Makipagugnayan sa iyong tagapangasiwa ng MediaWiki.',
 );
 
 /** Turkish (Türkçe)
+ * @author Joseph
  * @author Karduelis
  * @author Mach
  * @author Suelnur
@@ -5341,13 +5416,14 @@ Makipagugnayan sa iyong tagapangasiwa ng MediaWiki.',
 $messages['tr'] = array(
 	'coll-collection' => 'Koleksiyon',
 	'coll-collections' => 'Koleksiyonlar',
-	'coll-portlet_title' => 'Koleksiyonum',
-	'coll-add_page' => 'Sayfa ekle',
+	'coll-portlet_title' => 'Bir kitap oluştur',
+	'coll-add_page' => 'Viki sayfası ekle',
 	'coll-add_category' => 'Kategori ekle',
 	'coll-remove' => 'Kaldır',
 	'coll-title' => 'Başlık:',
 	'coll-yes' => 'Evet',
 	'coll-no' => 'Hayır',
+	'coll-cancel' => 'İptal',
 	'coll-license' => 'Lisans',
 );
 
@@ -5687,12 +5763,31 @@ Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
 
 /** Volapük (Volapük)
  * @author Malafaya
+ * @author Smeira
  */
 $messages['vo'] = array(
+	'coll-collection' => 'Konlet',
+	'coll-collections' => 'Konlets',
+	'coll-portlet_title' => 'Jafön buki',
+	'coll-add_page' => 'Läükön padi vüke',
+	'coll-remove_page' => 'Moükön padi se vük',
+	'coll-add_category' => 'Läükön kladi',
 	'coll-n_pages' => '{{PLURAL:$1|pad|pads}} $1',
+	'coll-unknown_subpage_title' => 'Donapad nesevädik',
 	'coll-helppage' => 'Help:Konlets',
+	'coll-your_book' => 'Buk olik',
+	'coll-download_title' => 'Donükön',
+	'coll-download' => 'Donükön',
+	'coll-format_label' => 'Fomät:',
+	'coll-remove' => 'Moükön',
+	'coll-show' => 'Jonön',
 	'coll-title' => 'Tiäd:',
+	'coll-subtitle' => 'Donatiäd:',
+	'coll-contents' => 'Ninäd',
+	'coll-rename' => 'Votanemön',
+	'coll-empty_collection' => 'Konlet vagik',
 	'coll-yes' => 'Si',
 	'coll-no' => 'Nö',
+	'coll-rendering_status' => '<strong>Stad:</strong> $1',
 );
 
