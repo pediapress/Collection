@@ -534,10 +534,10 @@ class Collection extends SpecialPage {
 					$displayTitle = $match[3];
 					$oldid = -1;
 					$currentVersion = 1;
-				} else if ( preg_match( '/\[\{\{fullurl:(.*?)\|oldid=(.*?)\}\} (.*?) \((.*?)\)\]/', $articleTitle, $match ) ) {
+				} else if ( preg_match( '/\[\{\{fullurl:(.*?)\|oldid=(.*?)\}\}\s+(.*?)\]/', $articleTitle, $match ) ) {
 				       	$articleTitle = $match[1];
 					$displayTitle = $match[3];
-					$oldid = $match[4];
+					$oldid = $match[2];
 					$currentVersion = 0;
 				}
 
@@ -612,7 +612,6 @@ class Collection extends SpecialPage {
 						} else {
 							$articleText .= $item['title'];
 						}
-						$articleText .= " (" . $item['revision'] . ")]\n";
 					}
 				}
 				//$articleText .= $item['revision'] . "/" . $item['latest']."\n";
