@@ -508,6 +508,7 @@ $messages['ast'] = array(
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
+ * @author Zedlik
  */
 $messages['be-tarask'] = array(
 	'coll-desc' => '[[Special:Collection|Калекцыянуе старонкі]], стварае кнігі ў фармаце PDF',
@@ -603,6 +604,7 @@ $messages['be-tarask'] = array(
 * Не задаволены створаным дакумэнтам? Глядзіце [[{{MediaWiki:Coll-helppage}}|старонку дапамогі па калекцыі]], каб даведацца, як яго палепшыць.',
 	'coll-notfound_title' => 'Калекцыя ня знойдзеная',
 	'coll-notfound_text' => 'Немагчыма знайсьці старонку калекцыі.',
+	'coll-is_cached' => '<ul><li>Была знойдзеная кэшаваная вэрсія гэтага дакумэнта, таму перамалёўка не спатрэбілася. <a href="$1">Запусьціць прымусовую перамалёўку.</a></li></ul>',
 	'coll-excluded-templates' => '* Шаблёны ў катэгорыі [[:Category:$1|$1]] былі выключаны.',
 	'coll-blacklisted-templates' => '* Шаблёны ў чорным сьпісе [[:$1]] былі выключаны.',
 	'coll-return_to_collection' => '<p>Вярнуцца да <a href="$1">$2</a></p>',
@@ -2178,6 +2180,7 @@ $messages['haw'] = array(
 
 /** Hebrew (עברית)
  * @author Rotem Liss
+ * @author YaronSh
  */
 $messages['he'] = array(
 	'coll-desc' => '[[Special:Collection|איסוף דפים]], יצירת קובצי PDF',
@@ -2267,7 +2270,7 @@ $messages['he'] = array(
 	'coll-rendering_page' => ' (דף: $1)',
 	'coll-rendering_finished_title' => 'היצירה הסתיימה',
 	'coll-rendering_finished_text' => '<strong>קובץ המסמך נוצר.</strong>
-<strong>[$1 לחצו כאן]</strong> כדי להוריד אותו למחשב.
+<strong>[$1 הורדת הקובץ]</strong> למחשבכם.
 
 הערות:
 * אינכם מרוצים מהפלט? ב[[{{MediaWiki:Coll-helppage}}|דף העזרה על אוספים]] תוכלו למצוא אפשרויות לשיפורו.',
@@ -3290,6 +3293,7 @@ $messages['ko'] = array(
 	'coll-remove_page' => '문서 제거',
 	'coll-add_category' => '분류 추가하기',
 	'coll-n_pages' => '$1개의 문서',
+	'coll-unknown_subpage_title' => '알 수 없는 하위 문서',
 	'coll-printable_version_pdf' => 'PDF 버전',
 	'coll-download_as' => '$1로 다운로드',
 	'coll-noscript_text' => '<h1>자바스크립트가 필요합니다!</h1>
@@ -3300,15 +3304,18 @@ $messages['ko'] = array(
 	'coll-download' => '다운로드',
 	'coll-format_label' => '포맷:',
 	'coll-remove' => '제거',
+	'coll-show' => '보이기',
 	'coll-move_to_top' => '맨 위로 이동',
 	'coll-move_to_bottom' => '맨 아래로 이동',
 	'coll-title' => '제목:',
 	'coll-subtitle' => '부제목:',
+	'coll-contents' => '내용',
 	'coll-sort_alphabetically' => '알파벳순으로 정렬',
 	'coll-rename' => '이름 바꾸기',
 	'coll-post_failed_title' => 'POST 요청에 실패하였습니다.',
 	'coll-mwserve_failed_title' => '렌더 서버 오류',
 	'coll-revision' => '판: $1',
+	'coll-personal_collection_label' => '개인 모음집:',
 	'coll-save_collection' => '모음집 저장',
 	'coll-overwrite_title' => '문서가 존재합니다.
 덮어쓰시겠습니까?',
@@ -3318,11 +3325,14 @@ $messages['ko'] = array(
 	'coll-append' => '더하기',
 	'coll-cancel' => '취소',
 	'coll-update' => '업데이트',
+	'coll-limit_exceeded_title' => '모음집이 너무 큽니다.',
 	'coll-rendering_title' => '렌더링',
 	'coll-rendering_status' => '<strong>상태:</strong> $1',
 	'coll-rendering_article' => '  (문서: $1)',
 	'coll-rendering_page' => '  (페이지: $1)',
 	'coll-rendering_finished_title' => '렌더링 완료',
+	'coll-excluded-templates' => '[[:Category:$1|$1]] 분류에 속한 틀은 제외되었습니다.',
+	'coll-blacklisted-templates' => '틀 블랙리스트 [[:$1]]에 있는 틀은 제외되었습니다.',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a>로 돌아갑니다</p>',
 	'coll-book_title' => '인쇄된 책으로 주문',
 	'coll-order_from_pp' => '$1에서 책 주문하기',
@@ -5584,17 +5594,112 @@ Makipagugnayan sa iyong tagapangasiwa ng MediaWiki.',
  * @author Suelnur
  */
 $messages['tr'] = array(
+	'coll-desc' => "[[Special:Collection|Sayfaları topla]], PDF'leri oluştur",
 	'coll-collection' => 'Koleksiyon',
 	'coll-collections' => 'Koleksiyonlar',
+	'coll-exclusion_category_title' => 'Yazdırırken hariç tut',
+	'coll-print_template_prefix' => 'Yazdır',
 	'coll-portlet_title' => 'Bir kitap oluştur',
 	'coll-add_page' => 'Viki sayfası ekle',
+	'coll-remove_page' => 'Viki sayfasını çıkar',
 	'coll-add_category' => 'Kategori ekle',
+	'coll-load_collection' => 'Koleksiyonu yükle',
+	'coll-show_collection' => 'Koleksiyonu göster',
+	'coll-help_collections' => 'Koleksiyon yardımı',
+	'coll-n_pages' => '$1 {{PLURAL:$1|sayfa|sayfa}}',
+	'coll-unknown_subpage_title' => 'Bilinmeyen altsayfa',
+	'coll-unknown_subpage_text' => '[[Special:Collection|Koleksiyonun]] bu altsayfası mevcut değil',
+	'coll-printable_version_pdf' => 'PDF sürümü',
+	'coll-download_as' => '$1 olarak indir',
+	'coll-noscript_text' => '<h1>JavaScript gerekli!</h1>
+<strong>Tarayıcınız JavaScript desteklemiyor ya da JavaScript kapalı.
+JavaScript devreye sokulmadıkça bu sayfa doğru çalışmayacaktır.</strong>',
+	'coll-intro_text' => 'Viki sayfalarının kişisel seçiminizi oluşturun ve yönetin<br />Daha fazla bilgi için [[{{MediaWiki:Coll-helppage}}]] sayfasına bakın.',
+	'coll-helppage' => 'Yardım:Koleksiyonlar',
+	'coll-your_book' => 'Kitabınız',
+	'coll-download_title' => 'İndir',
+	'coll-download_text' => 'Çevrimdışı bir sürüm indirmek için bir format seçin ve düğmeye tıklayın.',
+	'coll-download' => 'İndir',
+	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Kaldır',
+	'coll-show' => 'Göster',
+	'coll-move_to_top' => 'En üste taşı',
+	'coll-move_up' => 'Yukarı taşı',
+	'coll-move_down' => 'Aşağı taşı',
+	'coll-move_to_bottom' => 'En alta taşı',
 	'coll-title' => 'Başlık:',
+	'coll-subtitle' => 'Altbaşlık:',
+	'coll-contents' => 'İçerik',
+	'coll-drag_and_drop' => "Viki sayfalarını ve bölümleri yeniden sıralamak için sürükle & bırak'ı kullanın",
+	'coll-create_chapter' => 'Bölüm oluştur',
+	'coll-sort_alphabetically' => 'Alfabetik olarak sırala',
+	'coll-clear_collection' => 'Koleksiyonu temizle',
+	'coll-clear_collection_confirm' => 'Koleksiyonunuzu tamamen temizlemek istiyormusunuz?',
+	'coll-rename' => 'Yeniden adlandır',
+	'coll-new_chapter' => 'Yeni bölüm için isim girin',
+	'coll-rename_chapter' => 'Bölüm için yeni isim girin',
+	'coll-no_such_category' => 'Böyle bir kategori yok',
+	'coll-notitle_title' => 'Sayfanın başlığı belirlenemiyor.',
+	'coll-post_failed_title' => 'POST isteği başarısız',
+	'coll-post_failed_msg' => '$1 için POST isteği başarısız ($2).',
+	'coll-mwserve_failed_title' => 'İşlem sunucusu hatası',
+	'coll-mwserve_failed_msg' => 'İşlem sunucusunda bir hata oluştu: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Sunucudan hata cevabı',
+	'coll-empty_collection' => 'Boş koleksiyon',
+	'coll-revision' => 'Revizyon: $1',
+	'coll-save_collection_title' => 'Koleksiyonunuzu kaydedip paylaşın',
+	'coll-save_collection_text' => 'Bir konum seçin:',
+	'coll-login_to_save' => 'Koleksiyonları daha sonrası için kaydetmek istiyorsanız, lütfen [[Special:UserLogin|giriş yapın ya da bir hesap oluşturun]].',
+	'coll-personal_collection_label' => 'Kişisel koleksiyon:',
+	'coll-community_collection_label' => 'Topluluk koleksiyonu:',
+	'coll-save_collection' => 'Koleksiyonu kaydet',
+	'coll-save_category' => 'Koleksiyonlar [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]] kategorisinde kaydedildi.',
+	'coll-overwrite_title' => 'Sayfa mevcut.
+Üzerine yaz?',
+	'coll-overwrite_text' => '[[:$1]] adında bir sayfa zaten mevcut.
+Koleksiyonunla beraber değiştirilmesini istiyor musun?',
 	'coll-yes' => 'Evet',
 	'coll-no' => 'Hayır',
+	'coll-load_overwrite_text' => 'Koleksiyonunuzda birkaç sayfa zaten var.
+Güncel koleksiyonunuzun üzerine yazmak mı, yeni içeriği eklemek mi, ya da bu koleksiyonu yüklemeyi iptal etmek mi istiyorsunuz?',
+	'coll-overwrite' => 'Üzerine yaz',
+	'coll-append' => 'Ekle',
 	'coll-cancel' => 'İptal',
+	'coll-update' => 'Güncelle',
+	'coll-limit_exceeded_title' => 'Koleksiyon çok büyük',
+	'coll-limit_exceeded_text' => 'Sayfa koleksiyonunuz çok büyük.
+Daha fazla sayfa eklenemez.',
+	'coll-rendering_title' => 'Oluşturuluyor',
+	'coll-rendering_text' => '<p><strong>Lütfen belge oluşturulurken bekleyin.</strong></p>
+
+<p><strong>İlerleme:</strong> %<span id="renderingProgress">$1</span> <span id="renderingStatus">$2</span></p>
+
+<p>Bu sayfa birkaç saniyede bir otomatik yenilenmelidir.
+Eğer çalışmıyorsa, lütfen tarayıcınızın yenileme tuşuna basın.</p>',
+	'coll-rendering_status' => '<strong>Durum:</strong> $1',
+	'coll-rendering_article' => '  (viki sayfası: $1)',
+	'coll-rendering_page' => '  (sayfa: $1)',
+	'coll-rendering_finished_title' => 'Oluşturma tamamlandı',
+	'coll-rendering_finished_text' => '<strong>Belge oluşturuldu.</strong>
+Dosyayı bilgisayarınıza <strong>[$1 indirin]</strong>.
+
+Not:
+* Çıktıdan memnun değil misiniz? Geliştirme olanakları için [[{{MediaWiki:Coll-helppage}}|koleksiyonlar hakkındaki yardım sayfalarına]] bakın.',
+	'coll-notfound_title' => 'Koleksiyon bulunamadı',
+	'coll-notfound_text' => 'Koleksiyon sayfası bulunamadı.',
+	'coll-is_cached' => '<ul><li>Belgenin önbellekteki bir sürümü bulundu, bu yüzden oluşturmaya gerek yok. <a href="$1">Yeniden oluşturmaya zorla.</a></li></ul>',
+	'coll-excluded-templates' => '* [[:Category:$1|$1]] kategorisindeki şablonlar hariç tutuldu.',
+	'coll-blacklisted-templates' => '* [[:$1]] kara listesindeki şablonlar hariç tutuldu.',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a> koleksiyonuna geri dön</p>',
+	'coll-book_title' => 'Basılı bir kitap olarak sipariş et',
+	'coll-book_text' => 'Talebe-göre-basım ortağımızdan basılı bir kitap al:',
+	'coll-order_from_pp' => '$1 firmasından kitap şipariş et',
+	'coll-about_pp' => '$1 hakkında',
+	'coll-invalid_podpartner_title' => 'Geçersiz POD ortağı',
+	'coll-invalid_podpartner_msg' => 'Sağlanan POD ortağı geçersiz.
+Lütfen MedyaViki yöneticinizle irtibat kurun.',
 	'coll-license' => 'Lisans',
+	'coll-return_to' => '[[:$1]] sayfasına geri dön',
 );
 
 /** Ukrainian (Українська)
@@ -5695,6 +5800,7 @@ $messages['uk'] = array(
 * Не задоволені результатом? Можливості його поліпшення описані на [[{{MediaWiki:Coll-helppage}}|довідковій сторінці про колекції]].",
 	'coll-notfound_title' => 'Колекція не знайдена',
 	'coll-notfound_text' => 'Неможливо знайти сторінку колекції.',
+	'coll-is_cached' => '<ul><li>Знайдена закешована версія документу, тому перемалювання не знадобилося. <a href="$1">Примусове перемалювання.</a></li></ul>',
 	'coll-excluded-templates' => '* Шаблони в категорії [[:Категорія:$1|$1]] були виключені.',
 	'coll-blacklisted-templates' => '* Шаблони в чорному списку [[:$1]] були виключені.',
 	'coll-return_to_collection' => '<p>Назад до <a href="$1">$2</a></p>',
@@ -5938,15 +6044,22 @@ Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
 $messages['vo'] = array(
 	'coll-collection' => 'Konlet',
 	'coll-collections' => 'Konlets',
+	'coll-exclusion_category_title' => 'Fakipön dü dabükam',
 	'coll-print_template_prefix' => 'Dabükön',
 	'coll-portlet_title' => 'Jafön buki',
 	'coll-add_page' => 'Läükön padi vüke',
 	'coll-remove_page' => 'Moükön padi se vük',
 	'coll-add_category' => 'Läükön kladi',
+	'coll-load_collection' => 'Lodön konleti',
+	'coll-show_collection' => 'Jonön konleti',
+	'coll-help_collections' => 'Yuf tefü konlets',
 	'coll-n_pages' => '{{PLURAL:$1|pad|pads}} $1',
 	'coll-unknown_subpage_title' => 'Donapad nesevädik',
+	'coll-unknown_subpage_text' => 'Donapad at [[Special:Collection|Konleta]] no dabinon.',
 	'coll-printable_version_pdf' => 'fomam-PDF',
 	'coll-download_as' => 'Donükön as $1',
+	'coll-noscript_text' => '<h1>El JavaScript paflagon!</h1>
+<strong>Bevüresodanaföm olik no stüton eli JavaScript, ud el JavaScript pesekurbon. Pad at no ojäfidon verätiko, if el JavaScript no ponikurbon.</strong>',
 	'coll-helppage' => 'Help:Konlets',
 	'coll-your_book' => 'Buk olik',
 	'coll-download_title' => 'Donükön',
@@ -5957,13 +6070,47 @@ $messages['vo'] = array(
 	'coll-title' => 'Tiäd:',
 	'coll-subtitle' => 'Donatiäd:',
 	'coll-contents' => 'Ninäd',
+	'coll-create_chapter' => 'Jafön kapiti',
+	'coll-sort_alphabetically' => 'Lafabön',
+	'coll-clear_collection' => 'Vagükön konleti',
+	'coll-clear_collection_confirm' => 'Vilol-li jenöfo vagükön konleti olik lölöfiko?',
 	'coll-rename' => 'Votanemön',
+	'coll-new_chapter' => 'Penolös nemi kapita nulik',
+	'coll-rename_chapter' => 'Penolös nemi nulik kapita',
 	'coll-no_such_category' => 'Klad at no dabinon',
+	'coll-notitle_title' => 'No eplöpos ad fümetön padatiädi.',
+	'coll-post_failed_title' => 'Beg-POST no eplöpon',
+	'coll-post_failed_msg' => 'Beg-POST lü $1 no eplöpon ($2).',
 	'coll-empty_collection' => 'Konlet vagik',
 	'coll-revision' => 'Revid: $1',
+	'coll-save_collection_title' => 'Dakipön e dilön konleti olik',
+	'coll-login_to_save' => 'If vilol dakipön konletis pro geb posik, [[Special:UserLogin|nunädolös oli u jafolös kali]].',
+	'coll-personal_collection_label' => 'Konlet privatik:',
+	'coll-community_collection_label' => 'Konlet kobädik:',
 	'coll-save_collection' => 'Dakipön konleti',
+	'coll-save_category' => 'Konlets padakipons in klad: [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
+	'coll-overwrite_title' => 'Pad ya dabinon.
+Plaädön-li?',
+	'coll-overwrite_text' => 'Pad labü nem: [[:$1]] ya dabinon.
+Vilol-li plaädön padi at me konlet olik?',
 	'coll-yes' => 'Si',
 	'coll-no' => 'Nö',
+	'coll-load_overwrite_text' => 'Ya labol padis anik in konlet olik.
+Vilol-li plaädön konleti anuik ola, lenlägön ninädi nulik, u stöpädön lodami konleta at?',
+	'coll-overwrite' => 'Plaädön',
+	'coll-append' => 'Lenlägön',
+	'coll-cancel' => 'Stöpädön',
+	'coll-limit_exceeded_title' => 'Konlet tu gretik',
+	'coll-limit_exceeded_text' => 'Konletapad olik binon tu gretik.
+Pads pluik nonik kanons paläükön.',
 	'coll-rendering_status' => '<strong>Stad:</strong> $1',
+	'coll-rendering_article' => ' (vükapad: $1)',
+	'coll-rendering_page' => ' (pad: $1)',
+	'coll-notfound_title' => 'Konlet no petuvon',
+	'coll-notfound_text' => 'No eplöpos ad tuvön konletapadi.',
+	'coll-excluded-templates' => '* Samafomots in klad: [[:Category:$1|$1]] pefakipons.',
+	'coll-blacklisted-templates' => '* Samafomots blägaliseda: [[:$1]] pefakipons.',
+	'coll-about_pp' => 'Tefü $1',
+	'coll-return_to' => 'Geikön lü [[:$1]]',
 );
 
