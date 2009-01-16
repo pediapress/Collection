@@ -173,11 +173,9 @@ foreach($this->data['collection']['items'] as $index => $item) {
 			<a onclick="return coll_move_item(<?php echo $index . ', 1' ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Collection', 'move_item/', 'delta=1&index=' . $index)) ?>" title="<?php $this->msg('coll-move_down') ?>"><img src="<?php echo htmlspecialchars($mediapath . "down.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-move_down') ?>" /></a>
 		<?php } ?>
 		</noscript>
-		<?php if ($item['currentVersion'] == 0) { //($item['revision'] && $item['revision'] != $item['latest']) ||
-			$revision = '('. htmlspecialchars(wfMsg('coll-revision', $item['revision'])) . ')';
+		<?php if ($item['currentVersion'] == 0) {
 			$url = $item['url'] . '?oldid=' . $item['revision'];
 		} else {
-			$revision = '';
 			$url = $item['url'];
 		}
 		?>
@@ -187,8 +185,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 			echo htmlspecialchars($item['displaytitle']);
 		} else {
 			echo htmlspecialchars($item['title']);
-		}
-		echo ' ' . $revision; ?>
+		} ?>
 		</span>
 	</li>
 	<?php } else if ($item['type'] == 'chapter') { ?>
