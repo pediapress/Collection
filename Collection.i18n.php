@@ -786,8 +786,8 @@ Molimo da kontaktirate Vašeg MediaWiki administratora.',
  * @author SMP
  */
 $messages['ca'] = array(
-	'coll-add_page' => 'Afegir pàgina',
-	'coll-remove_page' => 'Treure pàgina',
+	'coll-add_page' => 'Afegir pàgina wiki',
+	'coll-remove_page' => 'Esborrar pàgina wiki',
 	'coll-add_category' => 'Afegir categoria',
 	'coll-noscript_text' => "<h1>Es necessita el JavaScript!</h1>
 <strong>El vostre navegador no suporta el JavaScript o aquest hi està blocat.
@@ -796,7 +796,7 @@ Aquesta pàgina no funcionarà correctament si no el poseu o l'activeu.</strong>
 	'coll-subtitle' => 'Subtítol:',
 	'coll-contents' => 'Contingut',
 	'coll-create_chapter' => 'Crear un nou capítol',
-	'coll-sort_alphabetically' => 'Ordenar les pàgines alfabèticament',
+	'coll-sort_alphabetically' => 'Ordena alfabèticament',
 	'coll-rename' => 'Reanomena',
 	'coll-overwrite_title' => 'La pàgina existeix. Voleu substituir-la?',
 	'coll-yes' => 'S&iacute;',
@@ -2991,8 +2991,7 @@ $messages['ja'] = array(
 	'coll-printable_version_pdf' => 'PDF版',
 	'coll-download_as' => '$1としてダウンロード',
 	'coll-noscript_text' => '<h1>JavaScriptを利用しています！</h1>
-<strong>ご利用のブラウザはJavaScriptをサポートしていないか、JavaScriptが無効になっています。
-このページは、JavaScriptが有効になっていない場合、正しく動作しません。</strong>',
+<strong>ご利用のブラウザはJavaScriptをサポートしていないか、JavaScriptが無効になっています。このページは、JavaScriptが有効になっていない場合、正しく動作しません。</strong>',
 	'coll-intro_text' => 'あなただけのウィキページのコレクションを作成・管理できます。<br />詳細は[[{{MediaWiki:Coll-helppage}}]]をご覧ください。',
 	'coll-helppage' => 'Help:ページコレクション',
 	'coll-your_book' => 'あなたのブック',
@@ -3019,11 +3018,11 @@ $messages['ja'] = array(
 	'coll-rename_chapter' => '新しい章見出しを入力',
 	'coll-no_such_category' => '指定されたカテゴリは存在しません',
 	'coll-notitle_title' => 'ページタイトルが未設定です。',
-	'coll-post_failed_title' => 'POSTリクエストの失敗',
-	'coll-post_failed_msg' => 'この$1へのPOSTリクエストは失敗しました ($2)。',
+	'coll-post_failed_title' => 'POST要求の失敗',
+	'coll-post_failed_msg' => '$1へのPOST要求は失敗しました ($2)。',
 	'coll-mwserve_failed_title' => 'レンダリングサーバーのエラー',
 	'coll-mwserve_failed_msg' => 'レンダリングサーバーでエラーが発生しました: <nowiki>$1</nowiki>',
-	'coll-error_reponse' => 'サーバからのエラーレスポンス',
+	'coll-error_reponse' => 'サーバからのエラー応答',
 	'coll-empty_collection' => '空のコレクション',
 	'coll-revision' => '特定版: $1',
 	'coll-save_collection_title' => 'コレクションを保存して共有する',
@@ -3034,26 +3033,22 @@ $messages['ja'] = array(
 	'coll-save_collection' => 'コレクションの保存',
 	'coll-save_category' => 'コレクションはカテゴリ [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]] に保存されました。',
 	'coll-overwrite_title' => '同名のページが存在します。上書きしますか？',
-	'coll-overwrite_text' => '[[:$1]] という名前のページが既に存在しています。
-これをあなたのコレクションに置き換えますか？',
+	'coll-overwrite_text' => '[[:$1]] という名前のページが既に存在しています。これをあなたのコレクションに置き換えますか？',
 	'coll-yes' => 'はい',
 	'coll-no' => 'いいえ',
-	'coll-load_overwrite_text' => 'あなたのコレクションには既に複数のページが存在しています。
-現在のコレクションを上書きする、既存コレクションに追加する、このコレクションの読み込みをキャンセルする、のいずれかを選択してください。',
+	'coll-load_overwrite_text' => 'あなたのコレクションには既に複数のページが存在しています。現在のコレクションを上書きする、既存コレクションに追加する、このコレクションの読み込みをキャンセルする、のいずれかを選択してください。',
 	'coll-overwrite' => '上書き',
 	'coll-append' => '追加',
 	'coll-cancel' => 'キャンセル',
 	'coll-update' => '更新',
 	'coll-limit_exceeded_title' => 'コレクションが大きすぎます',
-	'coll-limit_exceeded_text' => 'あなたのページコレクションは大きすぎます。
-これ以上のページを追加することはできません。',
-	'coll-rendering_title' => 'レンダリング',
+	'coll-limit_exceeded_text' => 'あなたのページコレクションは大きすぎます。これ以上のページを追加することはできません。',
+	'coll-rendering_title' => 'レンダリング中',
 	'coll-rendering_text' => '<p><strong>ドキュメントが生成されるあいだ、しばらくお待ちください。</strong></p>
 
 <p><strong>進捗:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>このページは数秒毎に自動的に更新されます。
-更新されない場合は、ブラウザの更新ボタンを押してください。</p>',
+<p>このページは数秒毎に自動的に更新されます。更新されない場合は、ブラウザの更新ボタンを押してください。</p>',
 	'coll-rendering_status' => '<strong>ステータス:</strong> $1',
 	'coll-rendering_article' => '  (ウィキページ: $1)',
 	'coll-rendering_page' => '  (ページ: $1)',
@@ -3074,8 +3069,7 @@ $messages['ja'] = array(
 	'coll-order_from_pp' => '$1に本を注文',
 	'coll-about_pp' => '$1について',
 	'coll-invalid_podpartner_title' => '無効なオンデマンド印刷パートナー',
-	'coll-invalid_podpartner_msg' => '提供されたオンデマンド印刷パートナーは無効です。
-MediaWiki の管理者に連絡してください。',
+	'coll-invalid_podpartner_msg' => '提供されたオンデマンド印刷パートナーは無効です。MediaWiki の管理者に連絡してください。',
 	'coll-license' => 'ライセンス',
 	'coll-return_to' => '[[:$1]]に戻る',
 );
@@ -3196,8 +3190,11 @@ Mangga hubungi pangurus MediaWiki panjenengan.',
  * @author Malafaya
  */
 $messages['ka'] = array(
+	'coll-add_category' => 'კატეგორიის დამატება',
 	'coll-n_pages' => '$1 გვერდი',
 	'coll-your_book' => 'თქვენი წიგნი',
+	'coll-show' => 'ჩვენება',
+	'coll-title' => 'სათაური:',
 	'coll-no' => 'არა',
 	'coll-about_pp' => '$1-ის შესახებ',
 );
@@ -5204,32 +5201,32 @@ $messages['su'] = array(
  * @author Sannab
  */
 $messages['sv'] = array(
-	'coll-desc' => '[[Special:Collection|Samla sidor]], generera PDF filer',
+	'coll-desc' => '[[Special:Collection|Samla sidor]], generera PDF-filer',
 	'coll-collection' => 'Samling',
 	'coll-collections' => 'Samlingar',
-	'coll-exclusion_category_title' => 'Exkludera vid utskrift',
+	'coll-exclusion_category_title' => 'Uteslut vid utskrift',
 	'coll-print_template_prefix' => 'Utskrift',
 	'coll-portlet_title' => 'Skapa en bok',
 	'coll-add_page' => 'Lägg till wikisida',
 	'coll-remove_page' => 'Ta bort wikisida',
 	'coll-add_category' => 'Lägg till kategori',
-	'coll-load_collection' => 'Ladda samling',
+	'coll-load_collection' => 'Hämta samling',
 	'coll-show_collection' => 'Visa samling',
 	'coll-help_collections' => 'Hjälp för samlingar',
 	'coll-n_pages' => '$1 {{PLURAL:$1|sida|sidor}}',
 	'coll-unknown_subpage_title' => 'Okänd undersida',
 	'coll-unknown_subpage_text' => 'Denna undersida till [[Special:Collection|Collection]] existerar inte',
 	'coll-printable_version_pdf' => 'PDF-version',
-	'coll-download_as' => 'Ladda ner som $1',
+	'coll-download_as' => 'Hämta som $1',
 	'coll-noscript_text' => '<h1>JavaScript är nödvändigt!</h1>
-<strong>Din webbläsare stödjer inte JavaScript eller har JavaScript blivigt avslagen.
-Denna sida kommer inte att fungera korrekt, tills JavaScript är tillgängligt.</strong>',
+<strong>Din webbläsare stödjer inte JavaScript eller så har JavaScript stängts av.
+Denna sida kommer inte att fungera korrekt innan JavaScript finns tillgängligt.</strong>',
 	'coll-intro_text' => 'Skapa och hantera din egna samling av wikisidor.<br />Se [[{{MediaWiki:Coll-helppage}}]] för mer information.',
 	'coll-helppage' => 'Help:Samlingar',
 	'coll-your_book' => 'Din bok',
-	'coll-download_title' => 'Ladda ner',
-	'coll-download_text' => 'För att ladda ner en offline-version välj ett format och klicka på knappen.',
-	'coll-download' => 'Ladda ner',
+	'coll-download_title' => 'Hämta',
+	'coll-download_text' => 'För att hämta en offline-version välj ett format och klicka på knappen.',
+	'coll-download' => 'Hämta',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Ta bort',
 	'coll-show' => 'Visa',
@@ -5250,8 +5247,8 @@ Denna sida kommer inte att fungera korrekt, tills JavaScript är tillgängligt.<
 	'coll-rename_chapter' => 'Välj ett nytt namn för kapitlet',
 	'coll-no_such_category' => 'Ingen sådan kategori',
 	'coll-notitle_title' => 'Titeln av sidan kunde inte fastställas.',
-	'coll-post_failed_title' => 'POST-begäring avslagen',
-	'coll-post_failed_msg' => 'POST-begäringen till $1 avslagen ($2).',
+	'coll-post_failed_title' => 'POST-begäran avslagen',
+	'coll-post_failed_msg' => 'POST-begäran till $1 avslagen ($2).',
 	'coll-mwserve_failed_title' => 'Render-serverfel',
 	'coll-mwserve_failed_msg' => 'Ett fel uppstod på renderservern: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Felrespons från servern',
@@ -5264,19 +5261,20 @@ Denna sida kommer inte att fungera korrekt, tills JavaScript är tillgängligt.<
 	'coll-community_collection_label' => 'Deltagarsamling:',
 	'coll-save_collection' => 'Spara samling',
 	'coll-save_category' => 'Samlingar sparas i kategorin [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
-	'coll-overwrite_title' => 'Sidan existerar. Vill du skriva över den?',
+	'coll-overwrite_title' => 'Sidan existerar. 
+Vill du skriva över den?',
 	'coll-overwrite_text' => 'En sida med namnet [[:$1]] finns redan.
 Vill du ersätta den med din samling?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nej',
 	'coll-load_overwrite_text' => 'Du har redan några sidor i din samling.
-Vill du ersätta din nuvarande samling, lägga till det nya innehållet eller avbryta laddningen av samlingen?',
+Vill du ersätta din nuvarande samling, lägga till det nya innehållet eller avbryta hämtningen av samlingen?',
 	'coll-overwrite' => 'Skriv över',
 	'coll-append' => 'Lägga till',
 	'coll-cancel' => 'Avbryt',
 	'coll-update' => 'Uppdatera',
 	'coll-limit_exceeded_title' => 'Samlingen är för stor',
-	'coll-limit_exceeded_text' => 'Din sid samling är för stor.
+	'coll-limit_exceeded_text' => 'Din sidsamling är för stor.
 Inga mer sidor kan läggas till.',
 	'coll-rendering_title' => 'Skapar',
 	'coll-rendering_text' => '<p><strong>Var god vänta under tiden dokumentet skapas.</strong></p>
@@ -5290,13 +5288,13 @@ Om det inte fungerar, var god tryck på uppdateringsknappen i din webbläsare.</
 	'coll-rendering_page' => '  (sida: $1)',
 	'coll-rendering_finished_title' => 'Rendering avslutad',
 	'coll-rendering_finished_text' => '<strong>Dokumentfilen har skapats.</strong>
-<strong>[$1 Ladda ner filen]</strong> till din dator.
+<strong>[$1 Hämta filen]</strong> till din dator.
 
 Noter:
-* Inte nöjd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra den.',
+* Inte nöjd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra det.',
 	'coll-notfound_title' => 'Samling inte funnen',
-	'coll-notfound_text' => 'Kan inte hitta samlings sida',
-	'coll-is_cached' => '<ul><li>En cachad version av dokumentet har hittats, så ingen renderng behövdes. <a href="$1">Forcera omrendering.</a></li></ul>',
+	'coll-notfound_text' => 'Kan inte hitta samlingssidan.',
+	'coll-is_cached' => '<ul><li>En cachad version av dokumentet har hittats, så ingen rendering behövdes. <a href="$1">Framtvinga omrendering.</a></li></ul>',
 	'coll-excluded-templates' => '* Mallar i kategorin [[:Category:$1|$1]] har uteslutits.',
 	'coll-blacklisted-templates' => '* Mallar på svartalistan [[:$1]] har uteslutits.',
 	'coll-return_to_collection' => '<p>Tillbaka till <a href="$1">$2</a></p>',
