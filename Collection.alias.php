@@ -152,6 +152,11 @@ $aliases['pt-br'] = array(
 	'Collection' => array( 'Coleção', 'Colecção' ),
 );
 
+/** Sanskrit (संस्कृत) */
+$aliases['sa'] = array(
+	'Collection' => array( 'समुच्यय' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'Collection' => array( 'Samling' ),
