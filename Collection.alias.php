@@ -69,7 +69,7 @@ $aliases['gsw'] = array(
 
 /** Hebrew (עברית) */
 $aliases['he'] = array(
-	'Book' => array( 'אוסף' ),
+	'Book' => array( 'ספר', 'אוסף' ),
 );
 
 /** Croatian (Hrvatski) */
