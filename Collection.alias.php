@@ -10,160 +10,160 @@ $aliases = array();
 
 /** English */
 $aliases['en'] = array(
-	'Collection' => array( 'Collection' ),
+	'Book' => array( 'Book', 'Collection' ),
 );
 
 /** Arabic (العربية)
  * @author Meno25
  */
 $aliases['ar'] = array(
-	'Collection' => array( 'مجموعة' ),
+	'Book' => array( 'مجموعة' ),
 );
 
 /** Egyptian Spoken Arabic (مصرى)
  * @author Meno25
  */
 $aliases['arz'] = array(
-	'Collection' => array( 'مجموعة' ),
+	'Book' => array( 'مجموعة' ),
 );
 
 /** Assamese (অসমীয়া) */
 $aliases['as'] = array(
-	'Collection' => array( 'সংগ্ৰহ' ),
+	'Book' => array( 'সংগ্ৰহ' ),
 );
 
 /** Breton (Brezhoneg) */
 $aliases['br'] = array(
-	'Collection' => array( 'Dastumad' ),
+	'Book' => array( 'Dastumad' ),
 );
 
 /** Bosnian (Bosanski) */
 $aliases['bs'] = array(
-	'Collection' => array( 'Kolekcija' ),
+	'Book' => array( 'Kolekcija' ),
 );
 
 /** German (Deutsch) */
 $aliases['de'] = array(
-	'Collection' => array( 'Sammlung' ),
+	'Book' => array( 'Buch', 'Sammlung' ),
 );
 
 /** Greek (Ελληνικά) */
 $aliases['el'] = array(
-	'Collection' => array( 'Συλλογή' ),
+	'Book' => array( 'Συλλογή' ),
 );
 
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
-	'Collection' => array( 'Kokoelma' ),
+	'Book' => array( 'Kokoelma' ),
 );
 
 /** Galician (Galego) */
 $aliases['gl'] = array(
-	'Collection' => array( 'Colección' ),
+	'Book' => array( 'Colección' ),
 );
 
 /** Swiss German (Alemannisch) */
 $aliases['gsw'] = array(
-	'Collection' => array( 'Sammlig' ),
+	'Book' => array( 'Sammlig' ),
 );
 
 /** Hebrew (עברית) */
 $aliases['he'] = array(
-	'Collection' => array( 'אוסף' ),
+	'Book' => array( 'אוסף' ),
 );
 
 /** Croatian (Hrvatski) */
 $aliases['hr'] = array(
-	'Collection' => array( 'Zbirka' ),
+	'Book' => array( 'Zbirka' ),
 );
 
 /** Hungarian (Magyar) */
 $aliases['hu'] = array(
-	'Collection' => array( 'Gyűjtemény', 'Gyűjtemények' ),
+	'Book' => array( 'Gyűjtemény', 'Gyűjtemények' ),
 );
 
 /** Indonesian (Bahasa Indonesia) */
 $aliases['id'] = array(
-	'Collection' => array( 'Koleksi' ),
+	'Book' => array( 'Koleksi' ),
 );
 
 /** Italian (Italiano) */
 $aliases['it'] = array(
-	'Collection' => array( 'Raccolta' ),
+	'Book' => array( 'Raccolta' ),
 );
 
 /** Japanese (日本語) */
 $aliases['ja'] = array(
-	'Collection' => array( 'コレクション' ),
+	'Book' => array( 'コレクション' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
-	'Collection' => array( 'ការចងក្រង' ),
+	'Book' => array( 'ការចងក្រង' ),
 );
 
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
-	'Collection' => array( 'Sammlung' ),
+	'Book' => array( 'Sammlung' ),
 );
 
 /** Macedonian (Македонски) */
 $aliases['mk'] = array(
-	'Collection' => array( 'Колекција' ),
+	'Book' => array( 'Колекција' ),
 );
 
 /** Maltese (Malti) */
 $aliases['mt'] = array(
-	'Collection' => array( 'Kollezzjoni' ),
+	'Book' => array( 'Kollezzjoni' ),
 );
 
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
-	'Collection' => array( 'Verzameling' ),
+	'Book' => array( 'Verzameling' ),
 );
 
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
-	'Collection' => array( 'Collectie', 'Verzameling' ),
+	'Book' => array( 'Collectie', 'Verzameling' ),
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $aliases['no'] = array(
-	'Collection' => array( 'Samling' ),
+	'Book' => array( 'Samling' ),
 );
 
 /** Occitan (Occitan) */
 $aliases['oc'] = array(
-	'Collection' => array( 'Colleccion' ),
+	'Book' => array( 'Colleccion' ),
 );
 
 /** Polish (Polski) */
 $aliases['pl'] = array(
-	'Collection' => array( 'Kolekcja' ),
+	'Book' => array( 'Kolekcja' ),
 );
 
 /** Portuguese (Português) */
 $aliases['pt'] = array(
-	'Collection' => array( 'Colecção', 'Coleção' ),
+	'Book' => array( 'Colecção', 'Coleção' ),
 );
 
 /** Brazilian Portuguese (Português do Brasil) */
 $aliases['pt-br'] = array(
-	'Collection' => array( 'Coleção', 'Colecção' ),
+	'Book' => array( 'Coleção', 'Colecção' ),
 );
 
 /** Sanskrit (संस्कृत) */
 $aliases['sa'] = array(
-	'Collection' => array( 'समुच्यय' ),
+	'Book' => array( 'समुच्यय' ),
 );
 
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
-	'Collection' => array( 'Samling' ),
+	'Book' => array( 'Samling' ),
 );
 
 /** Swahili (Kiswahili) */
 $aliases['sw'] = array(
-	'Collection' => array( 'Kusanya' ),
+	'Book' => array( 'Kusanya' ),
 );
 
