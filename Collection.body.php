@@ -33,7 +33,7 @@ class Collection extends SpecialPage {
 	);
 
 	public function __construct() {
-		SpecialPage::SpecialPage( "Collection" );
+		SpecialPage::SpecialPage( "Book" );
 	}
 
 	function getDescription() {
@@ -82,17 +82,17 @@ class Collection extends SpecialPage {
 		} else if ( $par == 'clear_collection/' ) {
 			self::clearCollection();
 			$wgUser->invalidateCache();
-			$wgOut->redirect( $wgRequest->getVal( 'return_to', SkinTemplate::makeSpecialUrl( 'Collection' ) ) );
+			$wgOut->redirect( $wgRequest->getVal( 'return_to', SkinTemplate::makeSpecialUrl( 'Book' ) ) );
 			return;
 		} else if ( $par == 'set_titles/' ) {
 			self::setTitles( $wgRequest->getText( 'collectionTitle', '' ), $wgRequest->getText( 'collectionSubtitle', '') );
 			$wgUser->invalidateCache();
-			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Collection' ) );
+			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 			return;
 		} else if ( $par == 'sort_items/' ) {
 			self::sortItems();
 			$wgUser->invalidateCache();
-			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Collection' ) );
+			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 			return;
 		} else if ( $par == 'add_category/' ) {
 			$title = Title::makeTitleSafe( NS_CATEGORY, $wgRequest->getVal( 'cattitle', '' ) );
@@ -107,12 +107,12 @@ class Collection extends SpecialPage {
 		} else if ( $par == 'remove_item/' ) {
 			self::removeItem( $wgRequest->getInt( 'index', 0 ) );
 			$wgUser->invalidateCache();
-			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Collection' ) );
+			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 			return;
 		} else if ( $par == 'move_item/' ) {
 			self::moveItem( $wgRequest->getInt( 'index', 0 ), $wgRequest->getInt( 'delta', 0 ) );
 			$wgUser->invalidateCache();
-			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Collection' ) );
+			$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 			return;
 		} else if ( $par == 'load_collection/' ) {
 			$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
@@ -127,7 +127,7 @@ class Collection extends SpecialPage {
 				if ( $collection ) {
 					self::startSession();
 					$_SESSION['wsCollection'] = $collection;
-					$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Collection' ) );
+					$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				}
 				return;
 			}
@@ -167,7 +167,7 @@ class Collection extends SpecialPage {
 			}
 
 			if ( !$saveCalled) {
-				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Collection' ) );
+				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 			} else if ( $saved ) {
 				$wgOut->redirect( $title->getFullURL() );
 			} else {
@@ -177,7 +177,7 @@ class Collection extends SpecialPage {
 		} else if ( $par == 'render/' ) {
 			return $this->renderCollection(
 				$_SESSION['wsCollection'],
-				Title::makeTitle( NS_SPECIAL, 'Collection' ),
+				Title::makeTitle( NS_SPECIAL, 'Book' ),
 				$wgRequest->getVal( 'writer', '' )
 			);
 		} else if ( $par == 'forcerender/' ) {
@@ -722,7 +722,7 @@ class Collection extends SpecialPage {
 			return;
 		}
 		
-		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' );
+		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Book', 'rendering/' );
 		$query = 'return_to=' . urlencode( $referrer->getPrefixedText() )
 			. '&collection_id=' . urlencode( $response['collection_id'] )
 			. '&writer=' . urlencode( $response['writer'] );
@@ -759,7 +759,7 @@ class Collection extends SpecialPage {
 			return;
 		}
 		
-		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/' );
+		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Book', 'rendering/' );
 		$query = 'return_to=' . $wgRequest->getVal( 'return_to', '' )
 			. '&collection_id=' . urlencode( $response['collection_id'] )
 			. '&writer=' . urlencode( $response['writer'] );
@@ -797,7 +797,7 @@ class Collection extends SpecialPage {
 		
 		switch ( $response['state'] ) {
 		case 'progress':
-			$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'rendering/', $query ) );
+			$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Book', 'rendering/', $query ) );
 			$wgOut->addHeadItem( 'refresh-nojs', '<noscript><meta http-equiv="refresh" content="2" /></noscript>');
 			$wgOut->addInlineScript( 'var collection_id = "' . urlencode( $response['collection_id']) . '";' );
 			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer']) . '";' );
@@ -828,7 +828,7 @@ class Collection extends SpecialPage {
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_finished_title' ) );
 
 			$template = new CollectionFinishedTemplate();
-			$template->set( 'download_url', $wgServer . SkinTemplate::makeSpecialUrlSubpage( 'Collection', 'download/', $query ) );
+			$template->set( 'download_url', $wgServer . SkinTemplate::makeSpecialUrlSubpage( 'Book', 'download/', $query ) );
 			$template->set( 'is_cached', $wgRequest->getVal( 'is_cached' ) );
 			$template->set( 'query', $query );
 			$template->set( 'return_to', $return_to );
@@ -969,7 +969,7 @@ class Collection extends SpecialPage {
 				if ( isset( $wgCollectionFormats['rl'] ) ) {
 					$nav_urls['printable_version_pdf'] = array(
 						'href' => SkinTemplate::makeSpecialUrlSubpage(
-							'Collection',
+							'Book',
 							'render_collection/',
 						  $params . '&writer=rl'),
 						'text' => wfMsg( 'coll-printable_version_pdf' ),
@@ -988,7 +988,7 @@ class Collection extends SpecialPage {
 				if ( isset( $wgCollectionFormats['rl'] ) ) {
 					$nav_urls['printable_version_pdf'] = array(
 						'href' => SkinTemplate::makeSpecialUrlSubpage(
-							'Collection',
+							'Book',
 							'render_article/',
 						  $params . '&writer=rl' ),
 						'text' => wfMsg( 'coll-printable_version_pdf' )
@@ -1076,7 +1076,7 @@ EOS
 		
 		// Note: we need to use $wgRequest, b/c there is apparently no way to get
 		// the subpage part of a Special page via $wgTitle.
-		$mainTitle = Title::makeTitle( NS_SPECIAL, 'Collection' );
+		$mainTitle = Title::makeTitle( NS_SPECIAL, 'Book' );
 		if ( $wgRequest->getRequestURL() == $mainTitle->getLocalURL() ) {
 			return;
 		}
@@ -1095,7 +1095,7 @@ EOS
 		if ( self::isCollectionPage( $wgTitle, $wgArticle) ) {
 			$params = "colltitle=" . $wgTitle->getPrefixedUrl();
 			$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-				'Collection',
+				'Book',
 				'load_collection/',
 			  $params ) );
 			$out .= "<li><a href=\"$href\" rel=\"nofollow\">$loadCollection</a></li>";
@@ -1110,7 +1110,7 @@ EOS
   		if ( $ajaxHint == 'AddCategory' || $namespace == NS_CATEGORY ) {
 				$params = "cattitle=" . $wgTitle->getPartialURL();
 				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-					'Collection',
+					'Book',
 					'add_category/',
 				  $params ) );
 				$out .= <<<EOS
@@ -1134,7 +1134,7 @@ EOS
 
 				if ( $ajaxHint == "RemoveArticle" || self::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) {
 					$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-						'Collection',
+						'Book',
 						'add_article/',
 					  $params ) );
 					$out .= <<<EOS
@@ -1145,7 +1145,7 @@ EOS
 					;
 				} else {
 					$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-						'Collection',
+						'Book',
 						'remove_article/',
 					  $params ) );
 					$out .= <<<EOS
@@ -1161,7 +1161,7 @@ EOS
 				global $wgLang;
 				$articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $wgLang->formatNum( $numArticles ) );
 				$showCollection = wfMsgHtml( 'coll-show_collection' );
-				$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Collection') );
+				$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book') );
 				$out .= <<<EOS
 							<li><a href="$showURL" rel="nofollow">$showCollection<br />
 								($articles)</a></li>
@@ -1171,7 +1171,7 @@ EOS
 				$clearCollection = wfMsgHtml( 'coll-clear_collection' );
 				$params = 'return_to=' . $wgTitle->getFullURL();
 				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-					'Collection',
+					'Book',
 					'clear_collection/',
 				  $params ) );
 				$msg = htmlspecialchars( wfMsg( 'coll-clear_collection_confirm' ) );

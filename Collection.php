@@ -67,10 +67,10 @@ $wgCollectionArticleNamespaces = array(
 	103, // Author talk
 );
 
-/** Namespace for "community collections" */
+/** Namespace for "community books" */
 $wgCommunityCollectionNamespace = NS_MEDIAWIKI;
 
-/** Maximum no. of articles in a collection */
+/** Maximum no. of articles in a book */
 $wgCollectionMaxArticles = 500;
 
 /** Name of license */
@@ -97,11 +97,11 @@ $wgExtensionCredits['specialpage'][] = array(
 	'svn-date' => '$LastChangedDate$',
 	'svn-revision' => '$LastChangedRevision$',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Collection',
-	'description' => 'Collect articles, generate PDFs',
+	'description' => 'Create books',
 	'descriptionmsg' => 'coll-desc',
 );
 
-# register Special:Collection:
+# register Special:Book:
 
 $wgAutoloadClasses['Collection'] = $dir . 'Collection.body.php';
 $wgAutoloadClasses['CollectionPageTemplate'] = $dir . 'Collection.templates.php';
@@ -112,8 +112,8 @@ $wgAutoloadClasses['CollectionRenderingTemplate'] = $dir . 'Collection.templates
 $wgAutoloadClasses['CollectionFinishedTemplate'] = $dir . 'Collection.templates.php';
 $wgExtensionMessagesFiles['Collection'] = $dir . 'Collection.i18n.php';
 $wgExtensionAliasesFiles['Collection'] = $dir . 'Collection.alias.php';
-$wgSpecialPages['Collection'] = 'Collection';
-$wgSpecialPageGroups['Collection'] = 'pagetools';
+$wgSpecialPages['Book'] = 'Collection';
+$wgSpecialPageGroups['Book'] = 'pagetools';
 
 $wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'Collection::createNavURLs';
 $wgHooks['MonoBookTemplateToolboxEnd'][] = 'Collection::insertMonoBookToolboxLink';
