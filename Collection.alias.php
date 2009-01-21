@@ -94,7 +94,7 @@ $aliases['it'] = array(
 
 /** Japanese (日本語) */
 $aliases['ja'] = array(
-	'Book' => array( 'コレクション' ),
+	'Book' => array( 'ブック', 'コレクション' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */
@@ -159,7 +159,7 @@ $aliases['sa'] = array(
 
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
-	'Book' => array( 'Samling' ),
+	'Book' => array( 'Bok', 'Samling' ),
 );
 
 /** Swahili (Kiswahili) */
