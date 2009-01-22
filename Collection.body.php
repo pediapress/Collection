@@ -1024,9 +1024,9 @@ EOS
 	static function buildSidebar( $skin, &$bar ) {
 		global $wgArticle;
 		global $wgUser;
-		global $wgPortletForLoggedInUsersOnly;
+		global $wgCollectionPortletForLoggedInUsersOnly;
 		
-		if( !$wgPortletForLoggedInUsersOnly || $wgUser->isLoggedIn() ) {
+		if( !$wgCollectionPortletForLoggedInUsersOnly || $wgUser->isLoggedIn() ) {
 			// We don't want this sidebar gadget polluting the HTTP caches.
 			// To stay on the safe side for now, we'll show this only for
 			// logged-in users.
