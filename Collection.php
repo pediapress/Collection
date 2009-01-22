@@ -85,7 +85,7 @@ $wgCollectionFormats = array(
 	'rl' => 'PDF',
 );
 
-$wgCollectionPortletForLoggedInUsersOnly = true;
+$wgCollectionPortletForLoggedInUsersOnly = false;
 
 # ==============================================================================
 
