@@ -620,7 +620,7 @@ class Collection extends SpecialPage {
 		}
 		$catTitle = Title::makeTitle( NS_CATEGORY, wfMsgForContent( 'coll-collections' ) );
 		if ( !is_null( $catTitle ) ) {
-			$articleText .= "\n[[" . $catTitle->getPrefixedText() . "]]\n";
+            $articleText .= "\n[[" . $catTitle->getPrefixedText() . "|" . wfEscapeWikiText( $title->getSubpageText() ) . "]]\n";
 		}
 
 		$article->doEdit( $articleText, '' );
