@@ -162,7 +162,6 @@ $messages['qqq'] = array(
 	'coll-show' => '{{Identical|Show}}',
 	'coll-title' => '{{Identical|Title}}',
 	'coll-contents' => '{{Identical|Contents}}',
-	'coll-save_collection_title' => '{{Identical|Save collection}}',
 	'coll-save_category' => 'Do not change <nowiki>{{MediaWiki:Coll-collections}}</nowiki>. The link and category name should be in the content language.',
 	'coll-yes' => '{{Identical|Yes}}',
 	'coll-no' => '{{Identical|No}}',
