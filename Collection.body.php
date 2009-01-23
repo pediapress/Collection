@@ -983,7 +983,9 @@ class Collection extends SpecialPage {
 					$oldid = $wgArticle->getOldID();
 					if ( $oldid ) {
 						$params .= '&oldid=' . $oldid;
-					}
+                    } else {
+                        $params .= '&oldid=' . $wgArticle->getLatest();
+                    }
 				}
 				if ( isset( $wgCollectionFormats['rl'] ) ) {
 					$nav_urls['printable_version_pdf'] = array(
