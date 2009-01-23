@@ -157,6 +157,11 @@ $aliases['sa'] = array(
 	'Book' => array( 'समुच्यय' ),
 );
 
+/** Albanian (Shqip) */
+$aliases['sq'] = array(
+	'Book' => array( 'Libra', 'Koleksion' ),
+);
+
 /** Swedish (Svenska) */
 $aliases['sv'] = array(
 	'Book' => array( 'Bok', 'Samling' ),
