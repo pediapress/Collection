@@ -1186,7 +1186,7 @@ EOS
 			}
 			
 			$helpCollections = wfMsgHtml( 'coll-help_collections' );
-			$helpURL = htmlspecialchars( Title::makeTitle( NS_HELP, wfMsgForContent( 'coll-collections' ) )->getFullURL() );
+			$helpURL = htmlspecialchars( Title::newFromText( wfMsgForContent( 'coll-helppage' ) )->getFullURL() );
 			$out .= <<<EOS
 							<li><a href="$helpURL">$helpCollections</a></li>
 EOS
