@@ -2209,6 +2209,7 @@ $messages['he'] = array(
 דף זה לא יעבוד כדרוש, אלא אם כן JavaScript יופעל.</strong>',
 	'coll-intro_text' => 'באפשרותכם ליצור ולנהל אוספים של דפי ויקי שבחרתם.<br />ראו [[{{MediaWiki:Coll-helppage}}]] למידע נוסף.',
 	'coll-helppage' => 'Help:ספרים',
+	'coll-bookscategory' => 'ספרים',
 	'coll-your_book' => 'הספר שלכם',
 	'coll-download_title' => 'הורדה',
 	'coll-download_text' => 'כדי להוריד גרסה לקריאה בלתי מקוונת, אנא בחרו פורמט ולחצו על הכפתור.',
@@ -2246,7 +2247,7 @@ $messages['he'] = array(
 	'coll-personal_collection_label' => 'ספר פרטי:',
 	'coll-community_collection_label' => 'ספר קהילתי:',
 	'coll-save_collection' => 'שמירת הספר',
-	'coll-save_category' => 'ספרים נשמרים בקטגוריה [[:Category:{{MediaWiki:Coll-collections}}|{{MediaWiki:Coll-collections}}]].',
+	'coll-save_category' => 'ספרים נשמרים בקטגוריה [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-collections}}]].',
 	'coll-overwrite_title' => 'הדף כבר קיים.
 האם לדרוס אותו?',
 	'coll-overwrite_text' => 'דף בשם [[:$1]] כבר קיים.
