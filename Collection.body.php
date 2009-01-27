@@ -618,7 +618,7 @@ class Collection extends SpecialPage {
 				//$articleText .= $item['revision'] . "/" . $item['latest']."\n";
 			}
 		}
-		$catTitle = Title::makeTitle( NS_CATEGORY, wfMsgForContent( 'coll-collections' ) );
+		$catTitle = Title::makeTitle( NS_CATEGORY, wfMsgForContent( 'coll-bookscategory' ) );
 		if ( !is_null( $catTitle ) ) {
             $articleText .= "\n[[" . $catTitle->getPrefixedText() . "|" . wfEscapeWikiText( $title->getSubpageText() ) . "]]\n";
 		}
@@ -943,7 +943,7 @@ class Collection extends SpecialPage {
 		}
 
 		$categoryFinder = new Categoryfinder();
-		$categoryFinder->seed( array( $article->getID() ), array( wfMsgForContent( 'coll-collections' ) ) );
+		$categoryFinder->seed( array( $article->getID() ), array( wfMsgForContent( 'coll-bookscategory' ) ) );
 		$articles = $categoryFinder->run();
 		if ( in_array( $article->getID(), $articles ) ) {
 			return true;
