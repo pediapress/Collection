@@ -54,7 +54,7 @@ $aliases['el'] = array(
 
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
-	'Book' => array( 'Kokoelma' ),
+	'Book' => array( 'Kirja', 'Kokoelma' ),
 );
 
 /** Galician (Galego) */
