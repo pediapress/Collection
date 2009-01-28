@@ -565,8 +565,8 @@ $messages['be-tarask'] = array(
 	'coll-notitle_title' => 'Назва старонкі ня можа быць вызначана.',
 	'coll-post_failed_title' => 'POST-запыт ня выкананы',
 	'coll-post_failed_msg' => 'POST-запыт да $1 ня выкананы ($2).',
-	'coll-mwserve_failed_title' => 'Памылка сэрвэра перадачы',
-	'coll-mwserve_failed_msg' => 'На сэрвэры перадачы ўзьнікла памылка: <nowiki>$1</nowiki>',
+	'coll-mwserve_failed_title' => 'Памылка сэрвэра адлюстраваньня',
+	'coll-mwserve_failed_msg' => 'На сэрвэры адлюстраваньня ўзьнікла памылка: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Памылка адказу сэрвэра',
 	'coll-empty_collection' => 'Пустая кніга',
 	'coll-revision' => 'Вэрсія: $1',
@@ -592,7 +592,7 @@ $messages['be-tarask'] = array(
 	'coll-limit_exceeded_title' => 'Кніга занадта вялікая',
 	'coll-limit_exceeded_text' => 'Ваша кніга занадта вялікая.
 Да яе болей немагчыма дадаваць старонкі.',
-	'coll-rendering_title' => 'Стварэньне',
+	'coll-rendering_title' => 'Адлюстраваньне',
 	'coll-rendering_text' => '<p><strong>Пачакайце, пакуль ствараецца дакумэнт.</strong></p>
 
 <p><strong>Прагрэс:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
@@ -602,7 +602,7 @@ $messages['be-tarask'] = array(
 	'coll-rendering_status' => '<strong>Статус:</strong> $1',
 	'coll-rendering_article' => '  (вікі-старонка: $1)',
 	'coll-rendering_page' => '  (старонка: $1)',
-	'coll-rendering_finished_title' => 'Стварэньне скончанае',
+	'coll-rendering_finished_title' => 'Адлюстраваньне скончана',
 	'coll-rendering_finished_text' => '<strong>Файл дакумэнту быў створаны.</strong>
 <strong>[$1 Загрузіць файл]</strong> на Ваш кампутар.
 
@@ -701,6 +701,7 @@ $messages['bs'] = array(
 Ova stranica se neće pravilno prikazati, sve dok se JavaScript ne omogući.</strong>',
 	'coll-intro_text' => 'Napravite i uredite Vaš lični odabir wiki stranica.<br />Pogledajte [[{{MediaWiki:Coll-helppage}}]] za više informacija.',
 	'coll-helppage' => 'Help:Knjige',
+	'coll-bookscategory' => 'Knjige',
 	'coll-your_book' => 'Vaša knjiga',
 	'coll-download_title' => 'Učitavanje',
 	'coll-download_text' => 'Da bi ste preuzeli offline verziju odaberite format i kliknite dugme.',
@@ -1077,6 +1078,7 @@ $messages['dsb'] = array(
 Toś ten bok njebuźo pšawje funkcioněrowaś, tak dłujko až JavaScript njejo zmóžnjony.</strong>',
 	'coll-intro_text' => 'Napóraj a zastoj swój indiwiduelny wuběrk wikijowych bokow.<br />Glědaj [[{{MediaWiki:Coll-helppage}}]] ta dalšne informacije.',
 	'coll-helppage' => 'Help:Knigły',
+	'coll-bookscategory' => 'Knigły',
 	'coll-your_book' => 'Twóje knigły',
 	'coll-download_title' => 'Ześěgnuś',
 	'coll-download_text' => 'Aby ześěgnuł wersiju offline, wubjeŕ format a klikni na tłocašk.',
@@ -1451,31 +1453,33 @@ Kas kirjutada üle?',
 );
 
 /** Basque (Euskara)
+ * @author An13sa
  * @author Theklan
  */
 $messages['eu'] = array(
-	'coll-desc' => '[[Berezi:Collection|Orrialdeak biltzen ditu]], PDFak sortzen ditu',
-	'coll-collection' => 'Bilduma',
-	'coll-collections' => 'Bildumak',
+	'coll-desc' => '[[Special:Books|Liburuak sortu]]',
+	'coll-collection' => 'Liburua',
+	'coll-collections' => 'Liburuak',
 	'coll-exclusion_category_title' => 'Inprimatzerakoan ez bildu',
 	'coll-print_template_prefix' => 'Inprimatu',
 	'coll-portlet_title' => 'Liburu bat sortu',
 	'coll-add_page' => 'Wiki orrialdea gehitu',
 	'coll-remove_page' => 'Wiki orrialdea ezabatu',
 	'coll-add_category' => 'Kategoria gehitu',
-	'coll-load_collection' => 'Bilduma kargatu',
-	'coll-show_collection' => 'Bilduma erakutsi',
-	'coll-help_collections' => 'Bildumen laguntza',
+	'coll-load_collection' => 'Liburua kargatu',
+	'coll-show_collection' => 'Liburua erakutsi',
+	'coll-help_collections' => 'Liburuen laguntza',
 	'coll-n_pages' => '{{PLURAL:$1|Orrialde 1|$1 orrialde}}',
 	'coll-unknown_subpage_title' => 'Azpiorrialde ezezaguna',
-	'coll-unknown_subpage_text' => '[[Berezi:Bilduma|Bilduma]] honen azpiorrialde hau ez da esistitzen',
+	'coll-unknown_subpage_text' => '[[Special:Book|Liburu]] honen azpiorrialde hau ez da existitzen',
 	'coll-printable_version_pdf' => 'PDF bertsioa',
 	'coll-download_as' => '$1 gisa jaitsi',
 	'coll-noscript_text' => '<h1>JavaScript beharrezkoa da!</h1>
 <strong>Zure nabigatzaileak ezin du JavaScripteduki edo JavaScript itzalita du.
 Orrialde honek ez du egoki funtzionatuko JavaScript pizten ez den bitartean.</strong>',
 	'coll-intro_text' => 'Sortu eta kudeatu wiki orrialdeen aukeraketa indibidueal bat. <br />Ikus [[{{MediaWiki:Coll-helppage}}]] informazio gehiagorako.',
-	'coll-helppage' => 'Laguntza:Bildumak',
+	'coll-helppage' => 'Laguntza:Liburuak',
+	'coll-bookscategory' => 'Liburuak',
 	'coll-your_book' => 'Zure liburua',
 	'coll-download_title' => 'Jaitsi',
 	'coll-download_text' => 'Sarean ez dagoen bertsio bat jaisteko formatu bat aukeratu eta botoian klik egin.',
@@ -1493,8 +1497,8 @@ Orrialde honek ez du egoki funtzionatuko JavaScript pizten ez den bitartean.</st
 	'coll-drag_and_drop' => 'Wiki orrialdeak eta atalak ordenatzeko drag & drop erabili',
 	'coll-create_chapter' => 'Atala sortu',
 	'coll-sort_alphabetically' => 'Alfabetikoki ordenatu',
-	'coll-clear_collection' => 'Bilduma ezabatu',
-	'coll-clear_collection_confirm' => 'Benetan nahi al duzu zure bilduma osoa ezabatu?',
+	'coll-clear_collection' => 'Liburua ezabatu',
+	'coll-clear_collection_confirm' => 'Benetan ezabatu nahi al duzu zure liburu osoa?',
 	'coll-rename' => 'Izena aldatu',
 	'coll-new_chapter' => 'Atal berriarentzat izena sartu',
 	'coll-rename_chapter' => 'Atalarentzat izen berria sartu',
@@ -1505,30 +1509,30 @@ Orrialde honek ez du egoki funtzionatuko JavaScript pizten ez den bitartean.</st
 	'coll-mwserve_failed_title' => 'Render zerbitzariaren akatsa',
 	'coll-mwserve_failed_msg' => 'Akats bat suertatu da render zerbitzarian: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Zerbitzariaren erantzun akatsa',
-	'coll-empty_collection' => 'Bilduma hutsa',
+	'coll-empty_collection' => 'Liburu hutsa',
 	'coll-revision' => 'Berrikuspena: $1',
-	'coll-save_collection_title' => 'Gorde eta partekatu zure bilduma',
+	'coll-save_collection_title' => 'Gorde eta partekatu zure liburua',
 	'coll-save_collection_text' => 'Kokapen bat aukeratu:',
-	'coll-login_to_save' => 'Beranduago erabiltzeko bildumak gorde nahi badituzu erabil ezazu [[Berezi:UserLogin|sarrera edo kontua sortu]].',
-	'coll-personal_collection_label' => 'Zure bilduma:',
-	'coll-community_collection_label' => 'Komunitatearen bilduma:',
-	'coll-save_collection' => 'Bilduma gorde',
-	'coll-save_category' => '[[:Kategoria:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] kategorian gordetzen dira bildumak.',
+	'coll-login_to_save' => 'Beranduago erabiltzeko liburuak gorde nahi badituzu erabil ezazu [[Special:UserLogin|saioa hasi edo kontua sortu]].',
+	'coll-personal_collection_label' => 'Norberaren liburua:',
+	'coll-community_collection_label' => 'Komunitatearen liburua:',
+	'coll-save_collection' => 'Liburua gorde',
+	'coll-save_category' => '[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] kategorian gordetzen dira liburuak.',
 	'coll-overwrite_title' => 'Orrialdea bada.
 Gainetik idatzi?',
 	'coll-overwrite_text' => '[[:$1]] izena duen orrialde bat badago dagoeneko.
 Nahi al duzu zure bildumarekin aldatzea?',
 	'coll-yes' => 'Bai',
 	'coll-no' => 'Ez',
-	'coll-load_overwrite_text' => 'Dagoeneko orrialde batzuk dituzu zure bilduman.
-Nahi al duzu zure bildumaren gainetik idaztea, eduki berriak zerrendatzea edo bilduma honen kargatzea ezeztatzea?',
+	'coll-load_overwrite_text' => 'Dagoeneko orri batzuk dituzu zure liburuan.
+Nahi al duzu zure liburuaren gainetik idaztea, eduki berriak zerrendatzea edo liburu honen kargatzea ezeztatzea?',
 	'coll-overwrite' => 'Gainetik idatzi',
 	'coll-append' => 'Zerrendatu',
 	'coll-cancel' => 'Ezeztatu',
 	'coll-update' => 'Berritu',
-	'coll-limit_exceeded_title' => 'Bilduma handiegia da',
-	'coll-limit_exceeded_text' => 'Zure bilduma handiegia da.
-Ezin dira orrialde gehiago gehitu.',
+	'coll-limit_exceeded_title' => 'Liburua handiegia da',
+	'coll-limit_exceeded_text' => 'Zure liburua handiegia da.
+Ezin dira orri gehiago gehitu.',
 	'coll-rendering_title' => 'Renderizatzen',
 	'coll-rendering_text' => '<p><strong>Itxoin dokumentua sortzen den artean, mesedez.</strong></p>
 
@@ -1545,8 +1549,8 @@ Horrela ez bada zure nabigatzailean berritu botoiari eman.</p>',
 
 Oharrak:
 * Ez zaizu emaitza gustatu? Ikus [[{{MediaWiki:Coll-helppage}}|bildumen inguruko laguntza orrialdea]] berau hobetzeko aukerak ikusteko.',
-	'coll-notfound_title' => 'Bildumak ez dira aurkitu',
-	'coll-notfound_text' => 'Ezin dira bilduma orrialdeak aurkitu.',
+	'coll-notfound_title' => 'Liburua ez da aurkitu',
+	'coll-notfound_text' => 'Ezin izan da liburuko orria aurkitu.',
 	'coll-is_cached' => '<ul><li>Katxean dokumentuaren bertsio bat aurktiu da, beraz renderizatzea ez da beharrezkoa izan. <a href="$1">Berriro renderizatzera derrigortu.</a></li></ul>',
 	'coll-excluded-templates' => '* [[:Kategoria:$1|$1]] kategorian dauden txantiloiak ez dira sartu.',
 	'coll-blacklisted-templates' => '* [[:$1]] zerrenda beltzeko txantiloiak ez dira sartu.',
@@ -1590,6 +1594,7 @@ $messages['fa'] = array(
 این صفحه به طور صحیح عمل نخواهد کرد، مگر اینکه جاوااسکیریپت فعال شود.</strong>',
 	'coll-intro_text' => 'صفحه‌های انتخابی خود از ویکی را ایجاد و مدیریت کنید.<br />برای کسب اطلاعات بیشتر [[{{MediaWiki:Coll-helppage}}]] را بخوانید.',
 	'coll-helppage' => 'Help:کتاب‌ها',
+	'coll-bookscategory' => 'کتاب‌ها',
 	'coll-your_book' => 'کتاب شما',
 	'coll-download_title' => 'دریافت',
 	'coll-download_text' => 'برای بارگیری یک نسخهٔ غیر برخط یک قالب برگزینید و دکمه را بزنید.',
@@ -1708,9 +1713,10 @@ $messages['fi'] = array(
 Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
 	'coll-intro_text' => 'Laadi ja hallinnoi omia henkilökohtaisia wikisivujen valikoimiasi.<br />Lisätietoja sivulla [[{{MediaWiki:Coll-helppage}}]].',
 	'coll-helppage' => 'Help:Kirjat',
+	'coll-bookscategory' => 'Kirjat',
 	'coll-your_book' => 'Sinun kirjasi',
 	'coll-download_title' => 'Lataa',
-	'coll-download_text' => 'Jos haluat tallentaa kokoelman omalle koneellesi, valitse tiedostomuoto ja napsauta painiketta.',
+	'coll-download_text' => 'Jos haluat tallentaa kirjan omalle koneellesi, valitse tiedostomuoto ja napsauta painiketta.',
 	'coll-download' => 'Lataa',
 	'coll-format_label' => 'Muoto:',
 	'coll-remove' => 'Poista',
@@ -1739,7 +1745,7 @@ Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
 	'coll-error_reponse' => 'Palvelin antoi virheilmoituksen',
 	'coll-empty_collection' => 'Tyhjä kirja',
 	'coll-revision' => 'Versio: $1',
-	'coll-save_collection_title' => 'Tallenna ja jaa kirjasi',
+	'coll-save_collection_title' => 'Tallenna ja jaa kirja',
 	'coll-save_collection_text' => 'Valitse sijainti:',
 	'coll-login_to_save' => 'Jos haluat tallentaa kirjat myöhempää käyttöä varten, [[Special:UserLogin|kirjaudu sisään tai luo tunnus]].',
 	'coll-personal_collection_label' => 'Henkilökohtainen kirja:',
@@ -1775,7 +1781,7 @@ Jos näin ei käy, paina selaimesi päivityspainiketta.</p>',
 <strong>[$1 Lataa tiedosto]</strong> tietokoneellesi.
 
 Huomautuksia:
-* Etkö ole tyytyväinen lopputulokseen? Katso [[{{MediaWiki:Coll-helppage}}|kokoelmien ohjesivulta]] mahdollisuuksista parantaa sitä.',
+* Etkö ole tyytyväinen lopputulokseen? Katso [[{{MediaWiki:Coll-helppage}}|kirjojen ohjesivulta]] mahdollisuuksista parantaa sitä.',
 	'coll-notfound_title' => 'Kirjaa ei löydy',
 	'coll-notfound_text' => 'Kirjan sivua ei löydy.',
 	'coll-is_cached' => '<ul><li>Dokumentti löytyi välimuistista, joten renderöintiä ei tarvittu. <a href="$1">Pakota uudelleenrenderöinti.</a></li></ul>',
@@ -1783,7 +1789,7 @@ Huomautuksia:
 	'coll-blacklisted-templates' => '* Mallineet sulkulistalla [[:$1]] on ohitettu.',
 	'coll-return_to_collection' => '<p>Palaa takaisin sivulle <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Tilaa painettuna kirjana',
-	'coll-book_text' => 'Hanki painettuna kirjana pikapainopartneriltamme:',
+	'coll-book_text' => 'Hanki painettuna kirjana pikapainosta:',
 	'coll-order_from_pp' => 'Tilaa kirja kohteesta $1',
 	'coll-about_pp' => 'Tietoja kohteesta $1',
 	'coll-invalid_podpartner_title' => 'Epäkelpo POD-partneri',
@@ -2898,6 +2904,7 @@ $messages['it'] = array(
 La pagina non funzionerà correttamente se non verrà attivato JavaScript.</strong>',
 	'coll-intro_text' => 'Crea e gestisci le tue selezioni personali di pagine wiki.<br />Leggi [[{{MediaWiki:Coll-helppage}}]]',
 	'coll-helppage' => 'Help:Libri',
+	'coll-bookscategory' => 'Libri',
 	'coll-your_book' => 'Tuo libro',
 	'coll-download_title' => 'Scarica',
 	'coll-download_text' => 'Per scaricare una versione offline scegli un formato e fai clic sul pulsante.',
@@ -3596,6 +3603,30 @@ $messages['lo'] = array(
 	'coll-remove' => 'ເອົາອອກ',
 	'coll-yes' => 'ໃຊ່',
 	'coll-no' => 'ບໍ່ໃຊ່',
+);
+
+/** Lithuanian (Lietuvių)
+ * @author Homo
+ */
+$messages['lt'] = array(
+	'coll-collection' => 'Knyga',
+	'coll-collections' => 'Knygos',
+	'coll-print_template_prefix' => 'Spausdinti',
+	'coll-portlet_title' => 'Kurti knygą',
+	'coll-add_category' => 'Pridėti kategoriją',
+	'coll-printable_version_pdf' => 'PDF versija',
+	'coll-download_title' => 'Atsisiųsti',
+	'coll-remove' => 'Pašalinti',
+	'coll-rename' => 'Pervadinti',
+	'coll-no_such_category' => 'Nėra tokios kategorijos',
+	'coll-yes' => 'Taip',
+	'coll-no' => 'Ne',
+	'coll-cancel' => 'Atšaukti',
+	'coll-update' => 'Atnaujinti',
+	'coll-notfound_title' => 'Knyga nerasta',
+	'coll-about_pp' => 'Apie',
+	'coll-license' => 'Licencija',
+	'coll-return_to' => 'Grįžti į [[:$1]]',
 );
 
 /** Eastern Mari (Олык Марий)
@@ -5006,6 +5037,7 @@ $messages['sah'] = array(
 <strong>Эн брааузерыҥ JavaScript`ы өйөөбөт эбит эбэтэр JavaScript араарыллыбыт. Бу сирэй JavaScript холбоммотох буоллаҕына сөпкө үлэлиэ уонна көстүө суоҕа.</strong>',
 	'coll-intro_text' => 'Биики-сирэйдэр тустаах, эйиэхэ бэйэҕэр эрэ аналлаах, хомуурунньуктарын оҥоруу уонна ону салайыы.<br />Сиһилии манна көр [[{{MediaWiki:Coll-helppage}}]].',
 	'coll-helppage' => 'Help:Кинигэлэр',
+	'coll-bookscategory' => 'Кинигэлэр',
 	'coll-your_book' => 'Эн кинигэҥ',
 	'coll-download_title' => 'Хачайдаа',
 	'coll-download_text' => 'Оффлайн барылын көрөргө формаатын ый уонна анал тимэҕи баттаа.',
@@ -5020,6 +5052,19 @@ $messages['sah'] = array(
 	'coll-title' => 'Аата:',
 	'coll-subtitle' => 'Аатын быһаарыы:',
 	'coll-contents' => 'Иһинээҕитэ',
+	'coll-drag_and_drop' => 'Сирэйдэри уонна сирэйдэр бөлөхтөрүн бэрээдэктииргэ мышканнан туһан',
+	'coll-create_chapter' => 'Баһы (главааны) оҥоруу',
+	'coll-sort_alphabetically' => 'Алпабыытынан наардааһын',
+	'coll-clear_collection' => 'Кинигэни ыраастаа',
+	'coll-clear_collection_confirm' => 'Кырдьык кинигэҕин ыраастаары гынаҕын дуо?',
+	'coll-rename' => 'Аатын уларытыы',
+	'coll-new_chapter' => 'Саҥа бас (глава) аатын киллэр',
+	'coll-rename_chapter' => 'Түһүмэх (глава) саҥа аатын киллэрии',
+	'coll-no_such_category' => 'Маннык категория суох',
+	'coll-notitle_title' => 'Сирэй аата кыайан биллибэтэ.',
+	'coll-post_failed_title' => 'POST-ыйытык толоруллубата',
+	'coll-post_failed_msg' => 'Манна $1 анаммыт POST-ыйытык толоруллубата ($2).',
+	'coll-mwserve_failed_title' => 'Render сиэрбэрэ сыыһалаах',
 );
 
 /** Slovak (Slovenčina)
@@ -5049,6 +5094,7 @@ $messages['sk'] = array(
 Táto stránka nebude správne fungovať ak nezapnete JavaScript.</strong>',
 	'coll-intro_text' => 'Môžete vytvárať vlastné výbery wiki stránok.<br />Pozri ďalšie informácie na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].',
 	'coll-helppage' => 'Help:Knihy',
+	'coll-bookscategory' => 'Knihy',
 	'coll-your_book' => 'Vaša kniha',
 	'coll-download_title' => 'Stiahnuť',
 	'coll-download_text' => 'Po zvolení formátu a kliknutí na tlačidlo môžete stiahnuť offline verziu.',
@@ -5583,6 +5629,7 @@ $messages['tl'] = array(
 Hindi aandar ng tama ang pahinang ito, maliban na lamang kung bubuhayin ang JavaScript.</strong>",
 	'coll-intro_text' => 'Likhain at pamahalaan ang iyong pansariling pilian ng mga pahina ng wiki.<br />Tingnan ang [[{{MediaWiki:Coll-helppage}}]] para sa mas maraming kabatiran.',
 	'coll-helppage' => 'Help:Mga Aklat',
+	'coll-bookscategory' => 'Mga aklat',
 	'coll-your_book' => 'Aklat mo',
 	'coll-download_title' => 'Ikargang-pakuha',
 	'coll-download_text' => "Upang makapagkargang-pakuha ng isang bersyong hindi-nakakonekta sa kompyuter (''offline'') pumili ng isang anyo/pormat at pindutin ang pindutan.",
