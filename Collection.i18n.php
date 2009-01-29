@@ -1314,7 +1314,7 @@ Bonvolu kontakti vian administranton de MediaWiki.',
  * @author Sanbec
  */
 $messages['es'] = array(
-	'coll-desc' => 'El siguiente enlace es problemático [[Special:Collection|Compilar páginas]]',
+	'coll-desc' => '[[Special:Book|Crear libros]]',
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluir al imprimir',
@@ -1328,14 +1328,14 @@ $messages['es'] = array(
 	'coll-help_collections' => 'Ayuda de libros',
 	'coll-n_pages' => '$1 {{PLURAL:$1|página|páginas}}',
 	'coll-unknown_subpage_title' => 'Subpágina desconocida',
-	'coll-unknown_subpage_text' => 'el siguiente enlace es problemático [[Special:Collection|Compilación]]',
+	'coll-unknown_subpage_text' => 'Esta subpágina del [[Special:Book|libro]] no existe',
 	'coll-printable_version_pdf' => 'Versión PDF',
 	'coll-download_as' => 'Descargar como $1',
 	'coll-noscript_text' => '<h1>¡Se necesita JavaScript!</h1>
 <strong>Tu navegador no permite JavaScript o está deshabilitado.
 Esta página no funcionará correctamente mientras no esté habilitado.</strong>',
 	'coll-intro_text' => 'Crear y gestionar tu selección individual de páginas wiki.<br />Lee [[{{MediaWiki:Coll-helppage}}]] para más información.',
-	'coll-helppage' => 'el nombre de espacio desde la definición',
+	'coll-helppage' => 'Help:Libros',
 	'coll-your_book' => 'Tu libro',
 	'coll-download_title' => 'Descargar',
 	'coll-download_text' => 'Para descargar una versión fuera de línea, elige un formato y pulsa el botón.',
@@ -1457,7 +1457,7 @@ Kas kirjutada üle?',
  * @author Theklan
  */
 $messages['eu'] = array(
-	'coll-desc' => '[[Special:Books|Liburuak sortu]]',
+	'coll-desc' => '[[Special:Book|Liburuak sortu]]',
 	'coll-collection' => 'Liburua',
 	'coll-collections' => 'Liburuak',
 	'coll-exclusion_category_title' => 'Inprimatzerakoan ez bildu',
@@ -1478,7 +1478,7 @@ $messages['eu'] = array(
 <strong>Zure nabigatzaileak ezin du JavaScripteduki edo JavaScript itzalita du.
 Orrialde honek ez du egoki funtzionatuko JavaScript pizten ez den bitartean.</strong>',
 	'coll-intro_text' => 'Sortu eta kudeatu wiki orrialdeen aukeraketa indibidueal bat. <br />Ikus [[{{MediaWiki:Coll-helppage}}]] informazio gehiagorako.',
-	'coll-helppage' => 'Laguntza:Liburuak',
+	'coll-helppage' => 'Help:Liburuak',
 	'coll-bookscategory' => 'Liburuak',
 	'coll-your_book' => 'Zure liburua',
 	'coll-download_title' => 'Jaitsi',
@@ -1552,7 +1552,7 @@ Oharrak:
 	'coll-notfound_title' => 'Liburua ez da aurkitu',
 	'coll-notfound_text' => 'Ezin izan da liburuko orria aurkitu.',
 	'coll-is_cached' => '<ul><li>Katxean dokumentuaren bertsio bat aurktiu da, beraz renderizatzea ez da beharrezkoa izan. <a href="$1">Berriro renderizatzera derrigortu.</a></li></ul>',
-	'coll-excluded-templates' => '* [[:Kategoria:$1|$1]] kategorian dauden txantiloiak ez dira sartu.',
+	'coll-excluded-templates' => '* [[:Category:$1|$1]] kategorian dauden txantiloiak ez dira sartu.',
 	'coll-blacklisted-templates' => '* [[:$1]] zerrenda beltzeko txantiloiak ez dira sartu.',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a>(e)ra itzuli</p>',
 	'coll-book_title' => 'Inprimatutako liburu gisa eskatu',
@@ -1739,7 +1739,7 @@ Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
 	'coll-no_such_category' => 'Luokkaa ei ole',
 	'coll-notitle_title' => 'Sivun otsikkoa ei voitu päätellä.',
 	'coll-post_failed_title' => 'POST-pyyntö epäonnistui',
-	'coll-post_failed_msg' => 'POST-pyyntö palvelimeen $1 epäonnistui ($2).',
+	'coll-post_failed_msg' => 'POST-pyyntö palvelimelle $1 epäonnistui ($2).',
 	'coll-mwserve_failed_title' => 'Virhe renderöintipalvelimella',
 	'coll-mwserve_failed_msg' => 'Renderöintipalvelimella tapahtui virhe: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Palvelin antoi virheilmoituksen',
@@ -5822,7 +5822,7 @@ Not:
 	'coll-return_to_collection' => '<p><a href="$1">$2</a> koleksiyonuna geri dön</p>',
 	'coll-book_title' => 'Basılı bir kitap olarak sipariş et',
 	'coll-book_text' => 'Talebe-göre-basım ortağımızdan basılı bir kitap al:',
-	'coll-order_from_pp' => '$1 firmasından kitap şipariş et',
+	'coll-order_from_pp' => '$1 firmasından kitap sipariş et',
 	'coll-about_pp' => '$1 hakkında',
 	'coll-invalid_podpartner_title' => 'Geçersiz POD ortağı',
 	'coll-invalid_podpartner_msg' => 'Sağlanan POD ortağı geçersiz.
