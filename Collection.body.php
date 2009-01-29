@@ -1343,7 +1343,7 @@ EOS
 	 * OutputPageCheckLastModified hook
 	 */
 	static function checkLastModified( $modifiedTimes ) {
-		if ( self::hasSession() ) {
+		if ( self::hasSession() && isset( $_SESSION['wsCollection']['timestamp'] ) ) {
 			$modifiedTimes['collection'] = $_SESSION['wsCollection']['timestamp'];
 		}
 		return true;
