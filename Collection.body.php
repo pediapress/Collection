@@ -1012,7 +1012,7 @@ class Collection extends SpecialPage {
 			$href = htmlspecialchars( $skinTemplate->data['nav_urls']['printable_version_pdf']['href'] );
 			$label = htmlspecialchars( $skinTemplate->data['nav_urls']['printable_version_pdf']['text'] );
 			print <<<EOS
-<li id="t-download-as-$writer"><a href="$href" rel="nofollow">$label</a></li>
+<li id="t-download-as-pdf"><a href="$href" rel="nofollow">$label</a></li>
 EOS
 			;
 		}
