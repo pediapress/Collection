@@ -935,30 +935,20 @@ class Collection extends SpecialPage {
 		$wgOut->addTemplate( $template );
 	}
 
-	static function isCollectionPage( $article ) {
+	static function isCollectionPage( $title, $article ) {
 		wfLoadExtensionMessages( 'Collection' );
 
-		if ( is_null( $article ) ) {
+		if ( is_null( $title ) || is_null( $article ) ) {
 			return false;
 		}
 
-    $params = new FauxRequest(array(
-      'action' => 'query',
-      'pageids' => $article->getID(),
-      'prop' => 'categories',
-    ));
-    $api = new ApiMain($params);
-    $api->execute();
-    $result = $api->getResultData();
-    $catTitle = Title::makeTitle(NS_CATEGORY, wfMsgForContent('coll-bookscategory'));
-    if (isset($result['query']['pages'][$article->getID()]['categories'])) {
-      foreach ($result['query']['pages'][$article->getID()]['categories'] as $cat) {
-        if ($cat['title'] == $catTitle) {
-          return true;
-        }
-      }
-    }
-    return false;
+		$categoryFinder = new Categoryfinder();
+		$categoryFinder->seed( array( $article->getID() ), array( wfMsgForContent( 'coll-bookscategory' ) ) );
+		$articles = $categoryFinder->run();
+		if ( in_array( $article->getID(), $articles ) ) {
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -974,7 +964,7 @@ class Collection extends SpecialPage {
 		$action = $wgRequest->getVal('action');
 
 		if ( $skinTemplate->iscontent && ( $action == '' || $action == 'view' || $action == 'purge' ) ) {
-			if ( self::isCollectionPage( $wgArticle ) ) {
+			if ( self::isCollectionPage( $skinTemplate->mTitle, $wgArticle ) ) {
 				$params = 'colltitle=' . wfUrlencode( $skinTemplate->mTitle->getPrefixedDBKey() );
 				if ( isset( $wgCollectionFormats['rl'] ) ) {
 					$nav_urls['printable_version_pdf'] = array(
@@ -1104,7 +1094,7 @@ EOS
 		
 		$out = "<ul id=\"collectionPortletList\">";
 		
-		if ( self::isCollectionPage( $wgArticle) ) {
+		if ( self::isCollectionPage( $wgTitle, $wgArticle) ) {
 			$params = "colltitle=" . $wgTitle->getPrefixedUrl();
 			$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 				'Book',
