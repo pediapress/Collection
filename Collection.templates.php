@@ -62,8 +62,9 @@ $listTemplate->execute();
 			<?php foreach ($this->data['podpartners'] as $partner => $partnerData) { ?>
 			<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'post_zip/')) ?>" method="get">
 				<input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
-				<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>" class="order" <?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
-				<a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?>&nbsp;<img src="<?php echo htmlspecialchars($partnerData['logourl']) ?>" alt="<?php echo htmlspecialchars($partnerData['name']) ?>"/></a>
+				<table style="width:100%; background-color: transparent;"><tr><td><a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?>&nbsp;<img src="<?php echo htmlspecialchars($partnerData['logourl']) ?>" alt="<?php echo htmlspecialchars($partnerData['name']) ?>"/></a></td>
+				<td style="text-align:right"><input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>" class="order" <?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> /></td></tr></table>
+				
 			</form>
 			<?php } ?>
 		</div>
@@ -88,7 +89,7 @@ $listTemplate->execute();
 				<?php	} ?>
 			</select>
 			<?php } ?>
-			<input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
+			<table style="width:100%; background-color: transparent;"><tr><td style="text-align:right"><input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> /></td></tr></table>
 		</form>
 	</div>
 
@@ -96,16 +97,29 @@ $listTemplate->execute();
 		<h2><span class="mw-headline"><?php $this->msg('coll-save_collection_title') ?></span></h2>
 		<?php if ($GLOBALS['wgUser']->isLoggedIn()) { ?>
 		<?php $this->msgWiki('coll-save_collection_text') ?>
+		<?php
+			$searchscript = $GLOBALS['wgServer'] . $GLOBALS['wgScript'] . '?title=Special%3APrefixindex&from=';
+			$bookname = wfMsg('coll-collections');
+			$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
+		?>
 			<form id="saveForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'save_collection/')) ?>" method="post">
+			      	<table style="width:100%; background-color: transparent;"><tr><td>
 				<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked" />
-				<label for="personalCollType"><?php $this->msg('coll-personal_collection_label') ?></label>
-				<label for="personalCollTitle"><?php echo htmlspecialchars($GLOBALS['wgUser']->getUserPage()->getPrefixedText() . '/' . wfMsgForContent('coll-collections') . '/') ?></label>
-				<input id="personalCollTitle" type="text" name="pcollname" /><br />
+				<label for="personalCollTitle"><?php echo '<a href="' . $searchscript . $GLOBALS['wgUser']->getName() . '/' . $bookname . '%2F&namespace=2">'.htmlspecialchars($GLOBALS['wgUser']->getUserPage()->getPrefixedText() . '/' . wfMsgForContent('coll-collections') . '/').'</a>' ?></label>
+				</td>
+				<td style="text-align:right;">
+				<input id="personalCollTitle" type="text" name="pcollname" />
+				</td></tr>
+				<tr><td>
 				<input id="communityCollType" type="radio" name="colltype" value="community" />
-				<label for="communityCollType"><?php $this->msg('coll-community_collection_label') ?></label>
-				<label for="communityCollTitle"><?php echo htmlspecialchars(Title::makeTitle($GLOBALS['wgCommunityCollectionNamespace'], wfMsgForContent('coll-collections'))->getPrefixedText() . '/') ?></label>
-				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled" /><br />
+				<label for="communityCollTitle"><?php echo '<a href="' . $searchscript . $bookname . '%2F&namespace='.$communityCollNS.'">' . htmlspecialchars(Title::makeTitle($GLOBALS['wgCommunityCollectionNamespace'], wfMsgForContent('coll-collections'))->getPrefixedText() . '/') . '</a>' ?></label>
+				</td>
+				<td style="text-align:right;">
+				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled" />
+				</td>
+				</tr><td>&nbsp;</td><td style="text-align:right;">
 				<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
+				</tr></table>
 			</form>
 
 		<?php } else {
