@@ -98,21 +98,20 @@ $listTemplate->execute();
 		<?php if ($GLOBALS['wgUser']->isLoggedIn()) { ?>
 		<?php $this->msgWiki('coll-save_collection_text') ?>
 		<?php
-			$searchscript = $GLOBALS['wgServer'] . $GLOBALS['wgScript'] . '?title=Special%3APrefixindex&from=';
-			$bookname = wfMsg('coll-collections');
+			$bookname = wfMsgForContent('coll-collections');
 			$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
 		?>
 			<form id="saveForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'save_collection/')) ?>" method="post">
 			      	<table style="width:100%; background-color: transparent;"><tr><td>
 				<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked" />
-				<label for="personalCollTitle"><?php echo '<a href="' . $searchscript . $GLOBALS['wgUser']->getName() . '/' . $bookname . '%2F&namespace=2">'.htmlspecialchars($GLOBALS['wgUser']->getUserPage()->getPrefixedText() . '/' . wfMsgForContent('coll-collections') . '/').'</a>' ?></label>
+				<label for="personalCollTitle"><a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Prefixindex', 'from=' . $GLOBALS['wgUser']->getName() . '/' . $bookname . '/&namespace=2')) ?>"><?php echo htmlspecialchars($GLOBALS['wgUser']->getUserPage()->getPrefixedText() . '/' . $bookname . '/') ?></a></label>
 				</td>
 				<td style="text-align:right;">
 				<input id="personalCollTitle" type="text" name="pcollname" />
 				</td></tr>
 				<tr><td>
 				<input id="communityCollType" type="radio" name="colltype" value="community" />
-				<label for="communityCollTitle"><?php echo '<a href="' . $searchscript . $bookname . '%2F&namespace='.$communityCollNS.'">' . htmlspecialchars(Title::makeTitle($GLOBALS['wgCommunityCollectionNamespace'], wfMsgForContent('coll-collections'))->getPrefixedText() . '/') . '</a>' ?></label>
+				<label for="communityCollTitle"><a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Prefixindex', 'from=' . $bookname . '/&namespace=' . $communityCollNS)) ?>"><?php echo htmlspecialchars(Title::makeTitle($communityCollNS, $bookname)->getPrefixedText() . '/') ?></a></label>
 				</td>
 				<td style="text-align:right;">
 				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled" />
