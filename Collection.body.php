@@ -585,7 +585,7 @@ class Collection extends SpecialPage {
 		if ( $article->exists() && !$forceOverwrite ) {
 			return false;
 		}
-		$articleText = '';
+		$articleText = "{{" . wfMsgForContent( 'coll-savedbook_template' ) . "}}\n\n";
 		$collection = $_SESSION['wsCollection'];
 		if( $collection['title'] ) {
 			$articleText .= '== ' . $collection['title'] . " ==\n";
