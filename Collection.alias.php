@@ -47,6 +47,11 @@ $aliases['de'] = array(
 	'Book' => array( 'Buch', 'Sammlung' ),
 );
 
+/** Lower Sorbian (Dolnoserbski) */
+$aliases['dsb'] = array(
+	'Book' => array( 'Knigły', 'zběrka' ),
+);
+
 /** Greek (Ελληνικά) */
 $aliases['el'] = array(
 	'Book' => array( 'Συλλογή' ),
@@ -75,6 +80,11 @@ $aliases['he'] = array(
 /** Croatian (Hrvatski) */
 $aliases['hr'] = array(
 	'Book' => array( 'Zbirka' ),
+);
+
+/** Upper Sorbian (Hornjoserbsce) */
+$aliases['hsb'] = array(
+	'Book' => array( 'Kniha', 'zběrka' ),
 );
 
 /** Hungarian (Magyar) */
