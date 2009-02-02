@@ -936,19 +936,29 @@ class Collection extends SpecialPage {
 	}
 
 	static function isCollectionPage( $title, $article ) {
-		wfLoadExtensionMessages( 'Collection' );
+		global $wgCommunityCollectionNamespace;
 
 		if ( is_null( $title ) || is_null( $article ) ) {
 			return false;
 		}
-
-		$categoryFinder = new Categoryfinder();
-		$categoryFinder->seed( array( $article->getID() ), array( wfMsgForContent( 'coll-bookscategory' ) ) );
-		$articles = $categoryFinder->run();
-		if ( in_array( $article->getID(), $articles ) ) {
-			return true;
+		
+		$ns = $title->getNamespace();
+		if( $ns == NS_USER || $ns == $wgCommunityCollectionNamespace ) {
+			wfLoadExtensionMessages( 'Collection' );
+			return self::pageInCategory( $article->getId(), wfMsgForContent( 'coll-bookscategory' ) );
+		} else {
+			return false;
 		}
-		return false;
+	}
+	
+	static protected function pageInCategory( $pageId, $categoryName ) {
+		$dbr = wfGetDB( DB_SLAVE );
+		$count = $dbr->selectField( 'categorylinks', 'COUNT(*)',
+			array(
+				'cl_from' => $pageId,
+				'cl_to' => $categoryName ),
+			__METHOD__ );
+		return ($count > 0);
 	}
 
 	/**
