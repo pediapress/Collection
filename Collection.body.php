@@ -810,9 +810,9 @@ class Collection extends SpecialPage {
 			if ( isset($response['status']['status'] ) && $response['status']['status'] ) {
 				$statusText = $response['status']['status'];
 				if ( isset( $response['status']['article'] ) && $response['status']['article'] ) {
-					$statusText .= wfMsg( 'coll-rendering_article', $response['status']['article'] );
+					$statusText .= ' ' . wfMsg( 'coll-rendering_article', $response['status']['article'] );
 				} else if ( isset( $response['status']['page'] ) && $response['status']['page'] ) {
-					$statusText .= wfMsg( 'coll-rendering_page', $wgLang->formatNum( $response['status']['page'] ) );
+					$statusText .= ' ' . wfMsg( 'coll-rendering_page', $wgLang->formatNum( $response['status']['page'] ) );
 				}
 				$status = wfMsg( 'coll-rendering_status', $statusText );
 			} else {

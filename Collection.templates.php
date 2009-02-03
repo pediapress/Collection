@@ -293,8 +293,8 @@ class CollectionRenderingTemplate extends QuickTemplate {
 
 
 <span style="display:none" id="renderingStatusText"><?php echo wfMsg('coll-rendering_status', '%PARAM%') ?></span>
-<span style="display:none" id="renderingArticle"><?php echo wfMsg('coll-rendering_article', '%PARAM%') ?></span>
-<span style="display:none" id="renderingPage"><?php echo wfMsg('coll-rendering_page', '%PARAM%') ?></span>
+<span style="display:none" id="renderingArticle"><?php echo ' ' . wfMsg('coll-rendering_article', '%PARAM%') ?></span>
+<span style="display:none" id="renderingPage"><?php echo ' ' . wfMsg('coll-rendering_page', '%PARAM%') ?></span>
 
 <?php echo wfMsg('coll-rendering_text',	$GLOBALS['wgLang']->formatNum($this->data['progress']), $this->data['status']) ?>
 
