@@ -72,24 +72,34 @@ $listTemplate->execute();
 
 	<div style="margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 		<h2><span class="mw-headline"><?php $this->msg('coll-download_title') ?></span></h2>
-		<?php $this->msgWiki('coll-download_text') ?>
+    <?php if (count($this->data['formats']) == 1) {
+      $writer = array_rand($this->data['formats']);
+      echo $GLOBALS['wgParser']->parse(
+        wfMsgNoTrans('coll-download_as_text', $this->data['formats'][$writer]),
+        $GLOBALS['wgTitle'],
+        $GLOBALS['wgOut']->parserOptions(),
+        true
+      )->getText();
+      $buttonLabel = wfMsgHtml('coll-download_as', htmlspecialchars($this->data['formats'][$writer]));
+    } else {
+      $this->msgWiki('coll-download_text');
+      $buttonLabel = wfMsgHtml('coll-download');
+    } ?>
 		<form id="downloadForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'render/')) ?>" method="post">
-			<?php if (count($this->data['formats']) == 1) {
-				$writer = array_rand($this->data['formats']);
-				$buttonLabel = wfMsgHtml('coll-download_as', htmlspecialchars($this->data['formats'][$writer]));
-			?>
+      <table style="width:100%; background-color: transparent;"><tr><td><tbody><tr><td>
+			<?php if (count($this->data['formats']) == 1) { ?>
 				<input type="hidden" name="writer" value="<?php echo htmlspecialchars($writer) ?>" />
-			<?php } else {
-				$buttonLabel = wfMsgHtml('coll-download');
-			?>
-			<label for="formatSelect"><?php $this->msg('coll-format_label') ?></label>
-			<select id="formatSelect" name="writer">
-				<?php foreach ($this->data['formats'] as $writer => $name) { ?>
-				<option value="<?php echo htmlspecialchars($writer) ?>"><?php echo htmlspecialchars($name) ?></option>
-				<?php	} ?>
-			</select>
+			<?php } else { ?>
+        <label for="formatSelect"><?php $this->msg('coll-format_label') ?></label>
+        <select id="formatSelect" name="writer">
+          <?php foreach ($this->data['formats'] as $writer => $name) { ?>
+          <option value="<?php echo htmlspecialchars($writer) ?>"><?php echo htmlspecialchars($name) ?></option>
+          <?php	} ?>
+        </select>
 			<?php } ?>
-			<table style="width:100%; background-color: transparent;"><tr><td style="text-align:right"><input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> /></td></tr></table>
+      </td><td style="text-align:right">
+      <input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
+      </td></tr></tbody></table>
 		</form>
 	</div>
 
