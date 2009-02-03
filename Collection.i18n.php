@@ -112,8 +112,8 @@ No more pages can be added.',
 <p>This page should automatically refresh every few seconds.
 If this does not work, please press refresh button of your browser.</p>",
 	'coll-rendering_status'           => "<strong>Status:</strong> $1",
-	'coll-rendering_article'          => ' (wiki page: $1)',
-	'coll-rendering_page'             => ' (page: $1)',
+	'coll-rendering_article'          => '(wiki page: $1)',
+	'coll-rendering_page'             => '(page: $1)',
 	'coll-rendering_finished_title'   => 'Rendering finished',
 	'coll-rendering_finished_text'    => "<strong>The document file has been generated.</strong>
 <strong>[$1 Download the file]</strong> to your computer.
@@ -358,8 +358,8 @@ $messages['ar'] = array(
 <p>هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان.
 لو أن هذا لا يعمل، من فضلك اضغط زر التحديث في متصفحك.</p>',
 	'coll-rendering_status' => '<strong>الحالة:</strong> $1',
-	'coll-rendering_article' => '  (المقالة: $1)',
-	'coll-rendering_page' => '  (الصفحة: $1)',
+	'coll-rendering_article' => '(المقالة: $1)',
+	'coll-rendering_page' => '(الصفحة: $1)',
 	'coll-rendering_finished_title' => 'العرض انتهى',
 	'coll-rendering_finished_text' => '<strong>ملف الوثيقة تم توليده.</strong>
 <strong>[$1 نزل الملف]</strong> إلى حاسوبك.
@@ -473,8 +473,8 @@ $messages['arz'] = array(
 هذه الصفحة  لازم تتحدث كل عدة ثوان.
 لو أن هذا لا يعمل، من فضلك اضغط زر التحديث فى متصفحك.",
 	'coll-rendering_status' => '<strong>الحالة:</strong> $1',
-	'coll-rendering_article' => '   (المقالة: $1)',
-	'coll-rendering_page' => '   (الصفحة: $1)',
+	'coll-rendering_article' => '(المقالة: $1)',
+	'coll-rendering_page' => '(الصفحة: $1)',
 	'coll-rendering_finished_title' => 'العرض انتهى',
 	'coll-rendering_finished_text' => '<strong>ملف الوثيقة تم توليده.</strong>
 <strong>[$1 اضغط هنا]</strong> لتنزيله للكمبيوتر بتاعك.
@@ -620,8 +620,8 @@ $messages['be-tarask'] = array(
 <p>Гэта старонка павінна аўтаматычна абнаўляцца кожныя некалькі сэкундаў.
 Калі гэтага не адбываецца, калі ласка, націсьніце кнопку «Абнавіць» у Вашым браўзэры.</p>',
 	'coll-rendering_status' => '<strong>Статус:</strong> $1',
-	'coll-rendering_article' => '  (вікі-старонка: $1)',
-	'coll-rendering_page' => '  (старонка: $1)',
+	'coll-rendering_article' => '(вікі-старонка: $1)',
+	'coll-rendering_page' => '(старонка: $1)',
 	'coll-rendering_finished_title' => 'Адлюстраваньне скончана',
 	'coll-rendering_finished_text' => '<strong>Файл дакумэнту быў створаны.</strong>
 <strong>[$1 Загрузіць файл]</strong> на Ваш кампутар.
@@ -685,8 +685,8 @@ $messages['bg'] = array(
 	'coll-append' => 'Добавяне',
 	'coll-cancel' => 'Отказване',
 	'coll-rendering_status' => '<strong>Статут:</strong> $1',
-	'coll-rendering_article' => '  (уики-страница: $1)',
-	'coll-rendering_page' => '  (страница: $1)',
+	'coll-rendering_article' => '(уики-страница: $1)',
+	'coll-rendering_page' => '(страница: $1)',
 	'coll-excluded-templates' => '* Шаблоните в категория [[:Category:$1|$1]] бяха изключени.',
 	'coll-return_to_collection' => '<p>Връщане към <a href="$1">$2</a></p>',
 	'coll-order_from_pp' => 'Поръчване на книга от $1',
@@ -784,8 +784,8 @@ Ne može se dodati ni jedna stranica.',
 <p>Ova stranica bi se trebala osvježiti svakih par sekundi.
 Ukoliko se to ne desi, molimo kliknite dugme za osvježavanje u Vašem pregledniku.</p>',
 	'coll-rendering_status' => '<strong>Stanje:</strong> $1',
-	'coll-rendering_article' => '  (wiki stranica: $1)',
-	'coll-rendering_page' => '  (stranica: $1)',
+	'coll-rendering_article' => '(wiki stranica: $1)',
+	'coll-rendering_page' => '(stranica: $1)',
 	'coll-rendering_finished_title' => 'Iscrtavanje završeno',
 	'coll-rendering_finished_text' => '<strong>Datoteka dokumenta je generisana.</strong>
 <strong>[$1 Spremite datoteku]</strong> na Vaš računar.
@@ -925,8 +925,8 @@ Není možné přidat další stránky.',
 <p>Tato stránka se každých několik sekund automaticky obnoví.
 Pokud to nefunguje, stiskněte v prohlížeči tlačítko <i>obnovit</i>.</p>',
 	'coll-rendering_status' => '<strong>Stav:</strong> $1',
-	'coll-rendering_article' => '  (článek: $1)',
-	'coll-rendering_page' => '  (stránka: $1)',
+	'coll-rendering_article' => '(článek: $1)',
+	'coll-rendering_page' => '(stránka: $1)',
 	'coll-rendering_finished_title' => 'Vykreslování dokončeno',
 	'coll-rendering_finished_text' => '<strong>Soubor s dokumentem byl vytvořen.</strong>
 Můžete si ho <strong>[$1 stáhnout do svého počítače]</strong>.
@@ -1053,8 +1053,8 @@ Möchtest du das aktuelle Buch überschreiben, die neuen Seiten anhängen oder d
 <p>Diese Seite sollte sich alle paar Sekunden von selbst aktualisieren.
 Wenn das jedoch nicht geschieht, drücke bitte den „Aktualisieren“-Knopf (meist F5) deines Browsers.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
-	'coll-rendering_article' => '  (Artikel: $1)',
-	'coll-rendering_page' => '  (Seite: $1)',
+	'coll-rendering_article' => '(Artikel: $1)',
+	'coll-rendering_page' => '(Seite: $1)',
 	'coll-rendering_finished_title' => 'Fertig erstellt',
 	'coll-rendering_finished_text' => '<strong>Die Datei wurde erfolgreich erstellt.</strong>
 <strong>[$1 Dokument herunterladen]</strong>.
@@ -1306,8 +1306,8 @@ Neniom pluaj paĝoj ne povas esti aldonitaj.',
 <p>Ĉi tiu paĝo aŭtomatike refreŝigu kelksekunde.
 Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.</p>',
 	'coll-rendering_status' => '<strong>Statuso:</strong> $1',
-	'coll-rendering_article' => '  (vikipaĝo: $1)',
-	'coll-rendering_page' => '  (paĝo: $1)',
+	'coll-rendering_article' => '(vikipaĝo: $1)',
+	'coll-rendering_page' => '(paĝo: $1)',
 	'coll-rendering_finished_title' => 'Generado finiĝis.',
 	'coll-rendering_finished_text' => '<strong>La dokumento estis generita.</strong>
 <strong>[$1 Elŝuti la dosieron]</strong> al via komputilo.
@@ -1424,8 +1424,8 @@ No se pueden añadir más páginas.',
 <p>Esta página se refrescará automáticamente cada pocos segundos.
 Si no funciona, pulsa el botón de refrescar de tu navegador.</p>',
 	'coll-rendering_status' => '<strong>Estatus:</strong> $1',
-	'coll-rendering_article' => ' (página wiki: $1)',
-	'coll-rendering_page' => '  (página: $1)',
+	'coll-rendering_article' => '(página wiki: $1)',
+	'coll-rendering_page' => '(página: $1)',
 	'coll-rendering_finished_title' => 'Proceso finalizado',
 	'coll-rendering_finished_text' => '<strong>Se ha generado el documento.</strong>
 <strong>[$1 Baja el archivo]</strong> a tu ordenador.
@@ -1568,8 +1568,8 @@ Ezin dira orri gehiago gehitu.',
 <p>Orrialde hau automatikoki berrituko da segundu gutxiro.
 Horrela ez bada zure nabigatzailean berritu botoiari eman.</p>',
 	'coll-rendering_status' => '<strong>Egoera:</strong> $1',
-	'coll-rendering_article' => '  (wiki orrialdea: $1)',
-	'coll-rendering_page' => '  (orrialdea: $1)',
+	'coll-rendering_article' => '(wiki orrialdea: $1)',
+	'coll-rendering_page' => '(orrialdea: $1)',
 	'coll-rendering_finished_title' => 'Renderizazioa bukatu da',
 	'coll-rendering_finished_text' => '<strong>Dokumentuaren fitxategia sortu da.</strong>
 <strong>[$1 Jaitsi fitxategia]</strong> zure ordenagailuan.
@@ -1684,8 +1684,8 @@ $messages['fa'] = array(
 <p>این صفحه باید به طور خودکار هر چند ثانیه یکبار تازه شود.
 اگر این کار صورت نمی‌گیرد، لطفاً دکمهٔ تازه کردن صفحه را در مرورگر خود بزنید.</p>',
 	'coll-rendering_status' => '<strong>وضعیت:</strong> $1',
-	'coll-rendering_article' => '  (صفحهٔ ویکی: $1)',
-	'coll-rendering_page' => '  (صفحه: $1)',
+	'coll-rendering_article' => '(صفحهٔ ویکی: $1)',
+	'coll-rendering_page' => '(صفحه: $1)',
 	'coll-rendering_finished_title' => 'پایان ترجمه',
 	'coll-rendering_finished_text' => '<strong>پروندهٔ سند ایجاد شده‌است.</strong>
 آن را به روی رایانهٔ خود <strong>[$1 بارگیری کنید]</strong>.
@@ -1801,8 +1801,8 @@ Sivuja ei voi lisätä enempää.',
 <p>Tämän sivun pitäisi päivittyä muutaman sekunnin välein.
 Jos näin ei käy, paina selaimesi päivityspainiketta.</p>',
 	'coll-rendering_status' => '<strong>Tila:</strong> $1',
-	'coll-rendering_article' => '   (wikisivu: $1)',
-	'coll-rendering_page' => '   (sivu: $1)',
+	'coll-rendering_article' => '(wikisivu: $1)',
+	'coll-rendering_page' => '(sivu: $1)',
 	'coll-rendering_finished_title' => 'Renderöinti valmis',
 	'coll-rendering_finished_text' => '<strong>Tiedosto on generoitu.</strong>
 <strong>[$1 Lataa tiedosto]</strong> tietokoneellesi.
@@ -1920,8 +1920,8 @@ Aucune page ne peut y être ajoutée.',
 <p>Cette page devrait s’actualiser automatiquement par intervalles réguliers de secondes.
 Si tel n\'était pas le cas, veuillez cliquer sur le bouton d’actualisation de votre navigateur.</p>',
 	'coll-rendering_status' => '<strong>Statut :</strong> $1',
-	'coll-rendering_article' => '  (page wiki : $1)',
-	'coll-rendering_page' => '  (page : $1)',
+	'coll-rendering_article' => '(page wiki : $1)',
+	'coll-rendering_page' => '(page : $1)',
 	'coll-rendering_finished_title' => 'Rendu terminé',
 	'coll-rendering_finished_text' => '<strong>Le fichier document a été créé.</strong>
 <strong>[$1 Télécharger le]</strong> sur votre ordinateur.
@@ -2041,8 +2041,8 @@ Non se poden engadir máis páxinas.',
 <p>Esta páxina debería refrescarse cada poucos segundos.
 Se non vai, por favor, prema no botón "Refrescar" do seu navegador.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
-	'coll-rendering_article' => '  (páxina wiki: $1)',
-	'coll-rendering_page' => '  (páxina: $1)',
+	'coll-rendering_article' => '(páxina wiki: $1)',
+	'coll-rendering_page' => '(páxina: $1)',
 	'coll-rendering_finished_title' => 'Finalizou a renderización',
 	'coll-rendering_finished_text' => '<strong>O ficheiro do documento foi xerado.</strong>
 <strong>[$1 Descargue o ficheiro]</strong> no seu ordenador.
@@ -2174,8 +2174,8 @@ Mechtsch di aktuäll Buech iberschryybe, di neije Syte aahänke oder s Lade vu d
 <p>Die Syte sott si alli paar Sekunde vu sälber aktualisiere.
 Wänn des aber nit gschiht, no druck bitte dr „Aktualisiere“-Chnopf (meischt F5) vu Dyynem Browser.</p>',
 	'coll-rendering_status' => 'strong>Status:</strong> $1',
-	'coll-rendering_article' => '   (Artikel: $1)',
-	'coll-rendering_page' => '   (Syte: $1)',
+	'coll-rendering_article' => '(Artikel: $1)',
+	'coll-rendering_page' => '(Syte: $1)',
 	'coll-rendering_finished_title' => 'Fertig aagleit',
 	'coll-rendering_finished_text' => '<strong>D Datei isch mit Erfolg aagleit wore.</strong>
 <strong>[$1 Dokument abelade]</strong>.
@@ -2317,8 +2317,8 @@ $messages['he'] = array(
 <p>הדפדפן אמור לבצע ריענון אוטומטי לדף זה כל מספר שניות.
 אם זה לא עובד, אנא לחצו על כפתור הריענון בדפדפן שלכם.</p>',
 	'coll-rendering_status' => '<strong>מצב:</strong> $1',
-	'coll-rendering_article' => ' (דף תוכן: $1)',
-	'coll-rendering_page' => ' (דף: $1)',
+	'coll-rendering_article' => '(דף תוכן: $1)',
+	'coll-rendering_page' => '(דף: $1)',
 	'coll-rendering_finished_title' => 'היצירה הסתיימה',
 	'coll-rendering_finished_text' => '<strong>קובץ המסמך נוצר.</strong>
 <strong>[$1 הורדת הקובץ]</strong> למחשבכם.
@@ -2502,8 +2502,8 @@ Nove stranice ne mogu biti dodane.',
 <p>Ova stranice bi se trebala automatski osvježiti svakih par sekundi.
 Ako ovo ne radi, molimo pritisnite tipku za osvježavanje u svom pregledniku.</p>',
 	'coll-rendering_status' => '<strong>Stanje:</strong> $1',
-	'coll-rendering_article' => '  (wiki stranica: $1)',
-	'coll-rendering_page' => '  (stranica: $1)',
+	'coll-rendering_article' => '(wiki stranica: $1)',
+	'coll-rendering_page' => '(stranica: $1)',
 	'coll-rendering_finished_title' => 'Izvođenje završeno',
 	'coll-rendering_finished_text' => '<strong>Datoteka dokumenta je stvorena.</strong>
 <strong>[$1 Preuzmite datoteku]</strong> na svoje računalo.
@@ -2843,8 +2843,8 @@ Non es possibile adder plus paginas.',
 <p>Iste pagina deberea refrescar se automaticamente cata pauc secundas.
 Si isto non functiona, per favor preme le button de refrescar in tu navigator.</p>',
 	'coll-rendering_status' => '<strong>Stato:</strong> $1',
-	'coll-rendering_article' => '   (pagina wiki: $1)',
-	'coll-rendering_page' => '   (pagina: $1)',
+	'coll-rendering_article' => '(pagina wiki: $1)',
+	'coll-rendering_page' => '(pagina: $1)',
 	'coll-rendering_finished_title' => 'Rendition finite',
 	'coll-rendering_finished_text' => '<strong>Le file del documento ha essite generate.</strong>
 <strong>[$1 Discarga le file]</strong> verso tu computator.
@@ -2999,8 +2999,8 @@ Si desidera sovrascrivere il libro corrente, aggiungere il nuovo contenuto o ann
 <p>Questa pagina dovrebbe aggiornarsi automaticamente ogni pochi secondi.
 Se questo non funziona, premi il pulsante di aggiornamento del tuo browser.</p>',
 	'coll-rendering_status' => '<strong>Stato:</strong> $1',
-	'coll-rendering_article' => '  (pagina wiki: $1)',
-	'coll-rendering_page' => '  (pagina: $1)',
+	'coll-rendering_article' => '(pagina wiki: $1)',
+	'coll-rendering_page' => '(pagina: $1)',
 	'coll-rendering_finished_title' => 'Conversione terminata',
 	'coll-rendering_finished_text' => '<strong>Il documento è stato generato.</strong>
 <strong>[$1 Scarica il file]</strong> sul tuo computer.
@@ -3108,8 +3108,8 @@ $messages['ja'] = array(
 
 <p>このページは数秒毎に自動的に更新されます。更新されない場合は、ブラウザの更新ボタンを押してください。</p>',
 	'coll-rendering_status' => '<strong>状況:</strong> $1',
-	'coll-rendering_article' => '  (ウィキページ: $1)',
-	'coll-rendering_page' => '  (ページ: $1)',
+	'coll-rendering_article' => '(ウィキページ: $1)',
+	'coll-rendering_page' => '(ページ: $1)',
 	'coll-rendering_finished_title' => 'レンダリング完了',
 	'coll-rendering_finished_text' => '<strong>ドキュメントファイルは生成されました。</strong>
 あなたのコンピュータに<strong>[$1 ファイルをダウンロード]</strong>してください。
@@ -3219,8 +3219,8 @@ Ora bisa nambah kaca-kaca liya manèh.',
 <p>Kaca iki samesthiné ''refresh'' sacara otomatis saben sawetara detik.
 Yèn ora mangkono, mangga pencèt tombol ''refresh'' ing ''browser'' panjenengan.</p>",
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
-	'coll-rendering_article' => ' (kaca wiki: $1)',
-	'coll-rendering_page' => '  (kaca: $1)',
+	'coll-rendering_article' => '(kaca wiki: $1)',
+	'coll-rendering_page' => '(kaca: $1)',
 	'coll-rendering_finished_title' => 'Rampung ngowahi/gawé',
 	'coll-rendering_finished_text' => "<strong>Berkas dokumèn wis digawé.</strong>
 <strong>[$1 Undhuh berkas]</strong> menyang komputer panjenengan.
@@ -3337,8 +3337,8 @@ $messages['km'] = array(
 	'coll-limit_exceeded_title' => 'សៀវភៅ​ធំជ្រុល',
 	'coll-limit_exceeded_text' => 'សៀវភៅ​របស់អ្នក​ធំជ្រុលពេកហើយ​។ អ្នក​មិន​អាច​បន្ថែម​ទំព័រ​ទៅក្នុង​វា​ទៀតទេ​។',
 	'coll-rendering_status' => '<strong>ស្ថាបភាព៖</strong> $1',
-	'coll-rendering_article' => '  (ទំព័រវិគី៖ $1)',
-	'coll-rendering_page' => '  (ទំព័រ៖ $1)',
+	'coll-rendering_article' => '(ទំព័រវិគី៖ $1)',
+	'coll-rendering_page' => '(ទំព័រ៖ $1)',
 	'coll-notfound_title' => 'រកមិនឃើញ​សៀវភៅ',
 	'coll-notfound_text' => 'រកមិនឃើញសៀវភៅទេ។',
 	'coll-return_to_collection' => '<p>ត្រឡប់ទៅកាន់<a href="$1">$2</a></p>វិញ',
@@ -3399,8 +3399,8 @@ $messages['ko'] = array(
 	'coll-limit_exceeded_title' => '책이 너무 큽니다.',
 	'coll-rendering_title' => '렌더링',
 	'coll-rendering_status' => '<strong>상태:</strong> $1',
-	'coll-rendering_article' => '  (문서: $1)',
-	'coll-rendering_page' => '  (페이지: $1)',
+	'coll-rendering_article' => '(문서: $1)',
+	'coll-rendering_page' => '(페이지: $1)',
 	'coll-rendering_finished_title' => '렌더링 완료',
 	'coll-excluded-templates' => '[[:Category:$1|$1]] 분류에 속한 틀은 제외되었습니다.',
 	'coll-blacklisted-templates' => '틀 블랙리스트 [[:$1]]에 있는 틀은 제외되었습니다.',
@@ -3513,8 +3513,8 @@ Mer künne kein Sigge mieh do_bei donn.',
 
 <p>Di Sigg hee sullt alle paa Sekunde neu aanjezeisch wääde. Wann dat nit klapp, donn eijach op Dingem Brauser singe passende Knopp klikke, zom neu Aanzeije!</p>',
 	'coll-rendering_status' => '<strong>Shtattus:</strong> $1',
-	'coll-rendering_article' => '  (Wiki-Sigge-Tittel: $1)',
-	'coll-rendering_page' => '  (Sigg Nommer: $1)',
+	'coll-rendering_article' => '(Wiki-Sigge-Tittel: $1)',
+	'coll-rendering_page' => '(Sigg Nommer: $1)',
 	'coll-rendering_finished_title' => 'Et Ußjävve eß jedonn',
 	'coll-rendering_finished_text' => '<strong>De Datei es paraat jestallt. [$1 Donn se erunger lade].</strong>
 
@@ -3620,8 +3620,8 @@ Et kënne keng Säite méi derbäigesat ginn.',
 <p>Dës Säit gëtt normalerweis automatesch aktualiséiert.
 Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh Knäppche vun ärem Browser.</p>',
 	'coll-rendering_status' => '<strong>Statut :</strong> $1',
-	'coll-rendering_article' => ' (Wiki Säit: $1)',
-	'coll-rendering_page' => ' (Säit: $1)',
+	'coll-rendering_article' => '(Wiki Säit: $1)',
+	'coll-rendering_page' => '(Säit: $1)',
 	'coll-rendering_finished_title' => 'Fäerdeg gemaach',
 	'coll-notfound_title' => 'Buch net fonnt',
 	'coll-notfound_text' => "D'Buch-Säit konnt net fonnt ginn.",
@@ -3898,8 +3898,8 @@ $messages['ms'] = array(
 <p>Laman ini akan disegarkan semula secara automatik dalam beberapa saat.
 Jika tidak, sila tekan butang \'\'refresh\'\' di pelayar web anda.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
-	'coll-rendering_article' => '  (laman wiki: $1)',
-	'coll-rendering_page' => '  (laman: $1)',
+	'coll-rendering_article' => '(laman wiki: $1)',
+	'coll-rendering_page' => '(laman: $1)',
 	'coll-rendering_finished_title' => 'Penjanaan selesai',
 	'coll-rendering_finished_text' => '<strong>Fail dokumen tersebut telah dijana.</strong>
 <strong>[$1 Muat turun fail ini]</strong> ke dalam komputer anda.
@@ -4030,8 +4030,8 @@ $messages['nds'] = array(
 	'coll-limit_exceeded_title' => 'Sammlung to groot',
 	'coll-rendering_title' => 'An’t Rendern',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
-	'coll-rendering_article' => '   (Wikisied: $1)',
-	'coll-rendering_page' => '   (Sied: $1)',
+	'coll-rendering_article' => '(Wikisied: $1)',
+	'coll-rendering_page' => '(Sied: $1)',
 	'coll-rendering_finished_title' => 'Rendern trech',
 	'coll-notfound_title' => 'Sammlung nich funnen',
 	'coll-notfound_text' => 'Sammlungssied kunn nich funnen warrn.',
@@ -4257,8 +4257,8 @@ Fleire sider kan ikkje verta lagt til.',
 
 <p>Denne sida bør automatisk verta lasta inn på nytt med eit par sekunds mellomrom. Om dette ikkje fungerer, trykk på oppdateringsknappen i nettlesaren din.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
-	'coll-rendering_article' => '   (wikisida: $1)',
-	'coll-rendering_page' => '  (sida: $1)',
+	'coll-rendering_article' => '(wikisida: $1)',
+	'coll-rendering_page' => '(sida: $1)',
 	'coll-rendering_finished_title' => 'Oppretta',
 	'coll-rendering_finished_text' => '<strong>Dokumentfila har vorte oppretta.</strong>
 <strong>[$1 Last ned fila]</strong> til datamaskina di.
@@ -4371,8 +4371,8 @@ Ingen flere sider kan legges til.',
 
 <p>Denne siden bør automatisk lastes på nytt med et par sekunders mellomrom. Hvis dette ikke fungerer, trykk på oppdateringsknappen i din nettleser.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
-	'coll-rendering_article' => '  (wikiside: $1)',
-	'coll-rendering_page' => '  (side: $1)',
+	'coll-rendering_article' => '(wikiside: $1)',
+	'coll-rendering_page' => '(side: $1)',
 	'coll-rendering_finished_title' => 'Opprettet',
 	'coll-rendering_finished_text' => '<strong>Dokumentfilen har blitt laget.</strong>
 <strong>[$1 Last ned filen]</strong> til din datamaskin.
@@ -4484,8 +4484,8 @@ Cap de pagina pòt pas èsser aponduda.',
 <p>Aquesta pagina se deuriá actualizar automaticament per intervals regulars de qualques segondas.
 S\'èra pas lo cas, clicatz sul boton d’actualizacion de vòstre navigador.</p>',
 	'coll-rendering_status' => '<strong>Estatut :</strong> $1',
-	'coll-rendering_article' => '  (pagina wiki : $1)',
-	'coll-rendering_page' => '  (pagina : $1)',
+	'coll-rendering_article' => '(pagina wiki : $1)',
+	'coll-rendering_page' => '(pagina : $1)',
 	'coll-rendering_finished_title' => 'Rendut acabat',
 	'coll-rendering_finished_text' => '<strong>Lo fichièr document es estat creat.</strong>
 <strong>[$1 Telecargatz-lo]</strong> sus vòstre ordenador.
@@ -4760,8 +4760,8 @@ Não poderão ser adicionadas mais páginas.',
 <p>Este página deverá refrescar automaticamente após alguns segundos.
 Se isto não funcionar, por favor utilize o botão de refrescamento do seu navegador.</p>',
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
-	'coll-rendering_article' => '  (página wiki: $1)',
-	'coll-rendering_page' => '  (página: $1)',
+	'coll-rendering_article' => '(página wiki: $1)',
+	'coll-rendering_page' => '(página: $1)',
 	'coll-rendering_finished_title' => 'Renderização concluída',
 	'coll-rendering_finished_text' => '<strong>O ficheiro foi gerado.</strong>
 <strong>[$1 Transfira o ficheiro]</strong> para o seu computador.
@@ -4873,8 +4873,8 @@ Não é possível adicionar mais páginas.',
 <p>Este página deverá se atualizar automaticamente a cada poucos segundos.
 Se isto não funcionar, por favor utilize o botão atualizar do seu navegador.</p>',
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
-	'coll-rendering_article' => '  (página wiki: $1)',
-	'coll-rendering_page' => '  (página: $1)',
+	'coll-rendering_article' => '(página wiki: $1)',
+	'coll-rendering_page' => '(página: $1)',
 	'coll-rendering_finished_title' => 'Renderização concluída',
 	'coll-rendering_finished_text' => '<strong>O arquivo foi gerado.</strong>
 <strong>[$1 Baixe o arquivo]</strong> para o seu computador.
@@ -5037,7 +5037,7 @@ $messages['ru'] = array(
 Если этого не происходит, пожалуйста, нажмите кнопку «обновить» браузера.</p>',
 	'coll-rendering_status' => '<strong>Статус:</strong> $1',
 	'coll-rendering_article' => '(статья: $1)',
-	'coll-rendering_page' => '  (страница: $1)',
+	'coll-rendering_page' => '(страница: $1)',
 	'coll-rendering_finished_title' => 'Создание завершено',
 	'coll-rendering_finished_text' => '<strong>Файл документа создан.</strong>
 <strong>[$1 Загрузить файл]</strong> на свой компьютер.
@@ -5205,8 +5205,8 @@ Nie je možné pridať ďalšie stránky.',
 <p>Táto stránka by sa mala vždy po niekoľkých sekundách obnoviť.
 Ak to nefunguje, stlačte prosím tlačidlo obnoviť vo vašom prehlidači.</p>',
 	'coll-rendering_status' => '<strong>Stav:</strong> $1',
-	'coll-rendering_article' => '  (wiki stránka: $1)',
-	'coll-rendering_page' => '  (stránka: $1)',
+	'coll-rendering_article' => '(wiki stránka: $1)',
+	'coll-rendering_page' => '(stránka: $1)',
 	'coll-rendering_finished_title' => 'Vykresľovanie je dokončené',
 	'coll-rendering_finished_text' => '<strong>Súbor dokumentu bol vytvorený.</strong>
 Môžete ho <strong>[$1 stiahnuť]</strong> na svoj počítač.
@@ -5244,8 +5244,8 @@ $messages['sr-ec'] = array(
 	'coll-no' => 'Не',
 	'coll-cancel' => 'Прекини',
 	'coll-update' => 'Апдејтуј',
-	'coll-rendering_article' => '  (вики страница: $1)',
-	'coll-rendering_page' => '  (страница: $1)',
+	'coll-rendering_article' => '(вики страница: $1)',
+	'coll-rendering_page' => '(страница: $1)',
 	'coll-order_from_pp' => 'Наручи књигу са $1',
 	'coll-license' => 'Лиценца',
 	'coll-return_to' => 'Врати на [[:$1]]',
@@ -5465,8 +5465,8 @@ Inga mer sidor kan läggas till.',
 <p>Denna sida ska automatiskt uppdateras med några sekunders mellanrum.
 Om det inte fungerar, var god tryck på uppdateringsknappen i din webbläsare.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
-	'coll-rendering_article' => '  (wikisida: $1)',
-	'coll-rendering_page' => '  (sida: $1)',
+	'coll-rendering_article' => '(wikisida: $1)',
+	'coll-rendering_page' => '(sida: $1)',
 	'coll-rendering_finished_title' => 'Rendering avslutad',
 	'coll-rendering_finished_text' => '<strong>Dokumentfilen har skapats.</strong>
 <strong>[$1 Hämta filen]</strong> till din dator.
@@ -5743,8 +5743,8 @@ Wala nang maidaragdag pang mga pahina.',
 <p>Dapat na kusang sumariwa ang pahinang ito sa bawat mangilan-ngilang mga segundo.
 Kung hindi ito mangyari, pakipindot ang pindutang panariwa (''refresh'') ng iyong pantingin-tingin (''browser'').</p>",
 	'coll-rendering_status' => '<strong>Kalagayan:</strong> $1',
-	'coll-rendering_article' => '  (pahinang wiki: $1)',
-	'coll-rendering_page' => '  (pahina: $1)',
+	'coll-rendering_article' => '(pahinang wiki: $1)',
+	'coll-rendering_page' => '(pahina: $1)',
 	'coll-rendering_finished_title' => 'Tapos na ang paghahain',
 	'coll-rendering_finished_text' => '<strong>Nagawa na ang talaksang pangkasulatan (dokumento).</strong>
 <strong>[$1 Ikargang-pakuha ang talaksan]</strong> papunta sa iyong kompyuter.
@@ -5858,8 +5858,8 @@ Daha fazla sayfa eklenemez.',
 <p>Bu sayfa birkaç saniyede bir otomatik yenilenmelidir.
 Eğer çalışmıyorsa, lütfen tarayıcınızın yenileme tuşuna basın.</p>',
 	'coll-rendering_status' => '<strong>Durum:</strong> $1',
-	'coll-rendering_article' => '  (viki sayfası: $1)',
-	'coll-rendering_page' => '  (sayfa: $1)',
+	'coll-rendering_article' => '(viki sayfası: $1)',
+	'coll-rendering_page' => '(sayfa: $1)',
 	'coll-rendering_finished_title' => 'Oluşturma tamamlandı',
 	'coll-rendering_finished_text' => '<strong>Belge oluşturuldu.</strong>
 Dosyayı bilgisayarınıza <strong>[$1 indirin]</strong>.
@@ -5972,7 +5972,7 @@ $messages['uk'] = array(
 Якщо цього не відбувається, оновіть цю сторінку у вашому браузері.</p>',
 	'coll-rendering_status' => '<strong>Статус:</strong> $1',
 	'coll-rendering_article' => '(сторінка: $1)',
-	'coll-rendering_page' => '  (сторінка: $1)',
+	'coll-rendering_page' => '(сторінка: $1)',
 	'coll-rendering_finished_title' => 'Створення завершено',
 	'coll-rendering_finished_text' => "<strong>Файл документа був створений.</strong>
 <strong>[$1 Завантажити файл]</strong> на свій комп'ютер.
@@ -6082,8 +6082,8 @@ Vuto sorascrìvar el libro esistente, opure zontarghe el contenuto novo, opure a
 <p>Sta pàxena la dovarìa ajornarse da par ela ogni póchi secondi.
 Se questo no sucede, struca el boton de ajornamento del to browser.</p>',
 	'coll-rendering_status' => '<strong>Stato:</strong> $1',
-	'coll-rendering_article' => '   (pàxena wiki: $1)',
-	'coll-rendering_page' => '   (pàxena: $1)',
+	'coll-rendering_article' => '(pàxena wiki: $1)',
+	'coll-rendering_page' => '(pàxena: $1)',
 	'coll-rendering_finished_title' => 'Conversion finìa',
 	'coll-rendering_finished_text' => '<strong>El documento el xe stà generà.</strong>
 <strong>[$1 Descàrghelo]</strong> sul to computer.
@@ -6194,8 +6194,8 @@ Không thể thêm trang được nữa.',
 <p>Trình duyệt sẽ làm tươi trang này vài giây một lần.
 Nếu không thấy thay đổi gì, xin hãy bấm nút Refresh hoặc Reload trong trình duyệt.</p>',
 	'coll-rendering_status' => '<strong>Trạng thái:</strong> $1',
-	'coll-rendering_article' => '  (trang wiki: $1)',
-	'coll-rendering_page' => '  (trang: $1)',
+	'coll-rendering_article' => '(trang wiki: $1)',
+	'coll-rendering_page' => '(trang: $1)',
 	'coll-rendering_finished_title' => 'Kết xuất xong',
 	'coll-rendering_finished_text' => '<strong>Xong kết xuất tập tin tài liệu.</strong>
 <strong>[$1 Tải nó về]</strong> máy tính của mình.
@@ -6286,8 +6286,8 @@ Vilol-li plaädön konleti anuik ola, lenlägön ninädi nulik, u stöpädön lo
 	'coll-limit_exceeded_text' => 'Konletapad olik binon tu gretik.
 Pads pluik nonik kanons paläükön.',
 	'coll-rendering_status' => '<strong>Stad:</strong> $1',
-	'coll-rendering_article' => ' (vükapad: $1)',
-	'coll-rendering_page' => ' (pad: $1)',
+	'coll-rendering_article' => '(vükapad: $1)',
+	'coll-rendering_page' => '(pad: $1)',
 	'coll-notfound_title' => 'Konlet no petuvon',
 	'coll-notfound_text' => 'No eplöpos ad tuvön konletapadi.',
 	'coll-excluded-templates' => '* Samafomots in klad: [[:Category:$1|$1]] pefakipons.',
