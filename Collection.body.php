@@ -545,7 +545,7 @@ class Collection extends SpecialPage {
 				if( is_null( $articleTitle ) ) {
 					continue;
 				}
-				$articleTitle = Title::makeTitleSafe( NS_MAIN, $articleTitle );
+				$articleTitle = Title::newFromText( $articleTitle );
 				if ($oldid < 0) {
 				   $article = new Article( $articleTitle );
 				} else {
