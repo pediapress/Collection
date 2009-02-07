@@ -154,7 +154,7 @@ $aliases['pl'] = array(
 
 /** Portuguese (Português) */
 $aliases['pt'] = array(
-	'Book' => array( 'Colecção', 'Coleção' ),
+	'Book' => array( 'Livro', 'Colecção', 'Coleção' ),
 );
 
 /** Brazilian Portuguese (Português do Brasil) */
