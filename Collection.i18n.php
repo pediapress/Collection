@@ -450,26 +450,26 @@ $messages['arz'] = array(
 	'coll-revision' => 'النسخة: $1',
 	'coll-save_collection_title' => 'احفظ وشارك بالكتاب بتاعك',
 	'coll-save_collection_text' => 'لحفظ المجموعة للاستخدام المستقبلي، اختار نوع مجموعة ودخل عنوان صفحة:',
-	'coll-login_to_save' => 'لو كنت تريد حفظ المجموعات من أجل الاستخدام فيما بعد، من فضلك [[Special:UserLogin|قم بتسجيل الدخول أو إنشاء حساب]].',
-	'coll-personal_collection_label' => 'مجموعة شخصية:',
-	'coll-community_collection_label' => 'مجموعة مجتمع:',
-	'coll-save_collection' => 'حفظ المجموعة',
-	'coll-save_category' => 'المجموعات بتتسييف فى التصنيف  [[:Category:Collections|مجموعات]].',
+	'coll-login_to_save' => 'لو كنت عايز تحفظ الكتب عشان تستعملها قدام،لو سمحت [[Special:UserLogin|تسجل دخولك او تفتحلك حساب]].',
+	'coll-personal_collection_label' => 'كتاب شخصى:',
+	'coll-community_collection_label' => 'كتاب مجتمع:',
+	'coll-save_collection' => 'حفظ الكتاب',
+	'coll-save_category' => 'كل الكتب بتتسيف فى التصنيف [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'الصفحة موجودة.
 كتابة عليها؟',
 	'coll-overwrite_text' => 'صفحة بنفس الاسم [[:$1]] موجودة بالفعل.
 هل تريد استبدالها بمجموعتك؟',
 	'coll-yes' => 'نعم',
 	'coll-no' => 'لا',
-	'coll-load_overwrite_text' => 'لديك بالفعل عدة صفحات فى مجموعتك.
-هل تريد الكتابة على مجموعتك الحالية، إضافة المحتوى الجديد أو إلغاء تحميل هذه المجموعة؟',
+	'coll-load_overwrite_text' => 'انتا عندك بالفعل شوية صفحات فى الكتاب بتاعك.
+انتا عايز تكتب فوق الكتاب الحالى ، تضيف محتوى جديد ، و لا تلغى تحميل الكتاب دا ؟',
 	'coll-overwrite' => 'كتابة عليها',
 	'coll-append' => 'انتظار',
 	'coll-cancel' => 'إلغاء',
 	'coll-update' => 'تحديث',
-	'coll-limit_exceeded_title' => 'المجموعة كبيرة جدا',
-	'coll-limit_exceeded_text' => 'مجموعة صفحتك كبيرة جدا.
-لا مزيد من الصفحات يمكن إضافتها.',
+	'coll-limit_exceeded_title' => 'الكتاب اكبر م اللازم',
+	'coll-limit_exceeded_text' => 'الكتاب بتاعك اكبر م اللازم.
+ما ينفعش تضيف اى صفحات زياده.',
 	'coll-rendering_title' => 'عرض',
 	'coll-rendering_text' => "'''من فضلك استنى  توليد الوثيقة.'''
 
@@ -486,8 +486,8 @@ $messages['arz'] = array(
 
 ملاحظات:
 * مش راضى على النتيجه؟ بص  [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة عن المجموعات]] للاحتمالات لتحسينه.',
-	'coll-notfound_title' => 'المجموعة غير موجودة',
-	'coll-notfound_text' => 'لم يمكن العثور على صفحة المجموعة.',
+	'coll-notfound_title' => 'الكتاب مالوش وجود',
+	'coll-notfound_text' => 'ماقدرناش نلاقى صفحة الكتاب.',
 	'coll-is_cached' => '<ul><li>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></li></ul>',
 	'coll-excluded-templates' => '* القوالب فى التصنيف [[:Category:$1|$1]] تم إقصاؤها.',
 	'coll-blacklisted-templates' => '* القوالب فى القائمة السوداء [[:$1]] تم إقصاؤها.',
@@ -4450,6 +4450,7 @@ Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activ
 	'coll-your_book' => 'Vòstre libre',
 	'coll-download_title' => 'Telecargar',
 	'coll-download_text' => 'Per telecargar una version fòra de linha causissètz un format e picatz sul boton.',
+	'coll-download_as_text' => 'Per telecargar una version fòra-linha dins lo format $1 clicatz sul boton.',
 	'coll-download' => 'Telecargar',
 	'coll-format_label' => 'Format :',
 	'coll-remove' => 'Levar',
@@ -6059,9 +6060,11 @@ $messages['vec'] = array(
 La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</strong>",
 	'coll-intro_text' => 'Crea e gestissi le to selession personali de pàxene wiki.<br />Lèxi [[{{MediaWiki:Coll-helppage}}]] par savérghene piessè.',
 	'coll-helppage' => 'Help:Libri',
+	'coll-bookscategory' => 'Libri',
 	'coll-your_book' => 'El to libro',
 	'coll-download_title' => 'Descarga',
 	'coll-download_text' => 'Par trar xo na versiòn siegli un formado e struca el botòn.',
+	'coll-download_as_text' => 'Par descargar na version in tel formato $1 struca el boton.',
 	'coll-download' => 'Descarga',
 	'coll-format_label' => 'Formato:',
 	'coll-remove' => 'Cava',
