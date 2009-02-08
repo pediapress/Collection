@@ -21,7 +21,7 @@ class CollectionPageTemplate extends QuickTemplate {
 <h2><span class="mw-headline"><?php $this->msg('coll-your_book') ?></span></h2>
 
 <form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'set_titles/')) ?>" method="post" id="mw-collection-title-form">
-	<table id="mw-collection-title-table" style="width: 80%" align="center">
+	<table id="mw-collection-title-table" style="width: 80%; background-color: transparent;" align="center">
 		<tbody>
 			<tr>
 				<td class="mw-label"><label for="titleInput"><?php $this->msg('coll-title') ?></label></td>
