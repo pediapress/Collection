@@ -137,6 +137,11 @@ $aliases['nl'] = array(
 	'Book' => array( 'Collectie', 'Verzameling' ),
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
+$aliases['nn'] = array(
+	'Book' => array( 'Bok' ),
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $aliases['no'] = array(
 	'Book' => array( 'Samling' ),

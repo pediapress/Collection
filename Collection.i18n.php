@@ -1077,7 +1077,7 @@ Hinweise:
 	'coll-return_to_collection' => 'Zurück zu <a href="$1">$2</a>',
 	'coll-book_title' => 'Als gedrucktes Buch bestellen',
 	'coll-book_text' => 'Bestelle eine gedruckte Buchausgabe bei unserem Print-on-Demand-Partner:',
-	'coll-order_from_pp' => 'Bestelle Buch bei $1',
+	'coll-order_from_pp' => 'Buch bei $1 bestellen',
 	'coll-about_pp' => 'Über $1',
 	'coll-invalid_podpartner_title' => 'Ungültiger Print-on-Demand-Partner',
 	'coll-invalid_podpartner_msg' => 'Die Angaben zum Print-on-Demand-Partner sind fehlerhaft. Bitte kontaktiere den MediaWiki-Administrator.',
@@ -1838,6 +1838,7 @@ Ota yhteys MediaWiki-ylläpitäjääsi.',
 /** French (Français)
  * @author Crochet.david
  * @author Grondin
+ * @author Guillom
  * @author IAlex
  * @author Korrigan
  * @author McDutchie
@@ -1860,7 +1861,7 @@ $messages['fr'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|page|pages}}',
 	'coll-unknown_subpage_title' => 'Sous-page inconnue',
 	'coll-unknown_subpage_text' => "Cette sous-page de [[Special:Book|livre]] n'existe pas",
-	'coll-printable_version_pdf' => 'Version du PDF',
+	'coll-printable_version_pdf' => 'Version PDF',
 	'coll-download_as' => 'Télécharger comme $1',
 	'coll-noscript_text' => "<h1>Javascript est nécessaire !</h1>
 <strong>Votre navigateur ne supporte pas Javascript ou bien l'a désactivé.
