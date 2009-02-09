@@ -1050,7 +1050,7 @@ EOS
 			// it would be very confusing.
 			$html = self::getPortlet();
 			if ( $html ) {
-				$bar[ wfMsg( 'coll-portlet_title' )] = $html;
+        $bar[ 'coll-create_a_book' ] = $html;
 			}
 		}
 		return true;
@@ -1066,7 +1066,7 @@ EOS
 		$html = self::getPortlet();
 		
 		if ( $html ) {
-			$portletTitle = wfMsgHtml( 'coll-portlet_title' );
+			$portletTitle = wfMsgHtml( 'coll-create_a_book' );
 			print <<<EOS
 <div id="p-collection" class="portlet">	 
   <h5>$portletTitle</h5>	 
