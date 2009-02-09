@@ -26,7 +26,6 @@ class Collection extends SpecialPage {
 	var $mPODPartners = array(
 		'pediapress' => array(
 			'name' => 'PediaPress',
-			'logourl' => 'http://pediapress.com/resources/images/logo-32x32.png',
 			'url' => 'http://pediapress.com/',
 			'posturl' => 'http://pediapress.com/api/collections/',
 		),
