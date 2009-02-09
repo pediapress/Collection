@@ -62,7 +62,7 @@ $listTemplate->execute();
 			<?php foreach ($this->data['podpartners'] as $partner => $partnerData) { ?>
 			<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'post_zip/')) ?>" method="get">
 				<input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
-				<table style="width:100%; background-color: transparent;"><tr><td><a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?>&nbsp;<img src="<?php echo htmlspecialchars($partnerData['logourl']) ?>" alt="<?php echo htmlspecialchars($partnerData['name']) ?>"/></a></td>
+				<table style="width:100%; background-color: transparent;"><tr><td><a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?></a></td>
 				<td style="text-align:right"><input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>" class="order" <?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> /></td></tr></table>
 				
 			</form>
