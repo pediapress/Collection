@@ -1341,6 +1341,7 @@ Bonvolu kontakti vian administranton de MediaWiki.',
 );
 
 /** Spanish (Español)
+ * @author Baiji
  * @author Crazymadlover
  * @author Imre
  * @author Jatrobat
@@ -1375,6 +1376,7 @@ Esta página no funcionará correctamente mientras no esté habilitado.</strong>
 	'coll-your_book' => 'Tu libro',
 	'coll-download_title' => 'Descargar',
 	'coll-download_text' => 'Para descargar una versión fuera de línea, elige un formato y pulsa el botón.',
+	'coll-download_as_text' => 'Oprimir el botón para obtener una versión en formato $1.',
 	'coll-download' => 'Descargar',
 	'coll-format_label' => 'Formato:',
 	'coll-remove' => 'Quitar',
@@ -3419,6 +3421,11 @@ $messages['ko'] = array(
 	'coll-rendering_article' => '(문서: $1)',
 	'coll-rendering_page' => '(페이지: $1)',
 	'coll-rendering_finished_title' => '렌더링 완료',
+	'coll-rendering_finished_text' => '<strong>문서 파일이 생성되었습니다.</strong>
+이 파일을 당신의 컴퓨터로 <strong>[$1 다운로드]</strong>하십시오.
+
+참고:
+* 출력 결과에 만족하지 않으신가요? 이 기능을 향상시킬 수 있도록 [[{{MediaWiki:Coll-helppage}}|책에 대한 도움말 문서]]를 참고해 주세요.',
 	'coll-excluded-templates' => '[[:Category:$1|$1]] 분류에 속한 틀은 제외되었습니다.',
 	'coll-blacklisted-templates' => '틀 블랙리스트 [[:$1]]에 있는 틀은 제외되었습니다.',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a>로 돌아갑니다</p>',
@@ -4971,6 +4978,26 @@ Suprascrie?',
 	'coll-order_from_pp' => 'Comandă carte de la $1',
 	'coll-about_pp' => 'Despre $1',
 	'coll-license' => 'Licenţă',
+);
+
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'coll-desc' => '[[Special:Book|Ccreje le libbre]]',
+	'coll-collection' => 'Libbre',
+	'coll-collections' => 'Libbre',
+	'coll-exclusion_category_title' => 'Esclude in stambe',
+	'coll-print_template_prefix' => 'Stambe',
+	'coll-create_a_book' => "Ccreje 'nu libbre",
+	'coll-add_page' => "Aggiunge 'na pàgene de Uicchi",
+	'coll-remove_page' => "Live 'na pàgene de Uicchi",
+	'coll-add_category' => "Aggiunge 'na categorije",
+	'coll-load_collection' => "Careche 'nu libbre",
+	'coll-show_collection' => "Fà vedè 'nu libbre",
+	'coll-help_collections' => "Aiute sus a 'u libbre",
+	'coll-n_pages' => '$1 {{PLURAL:$1|pàgene|pàggene}}',
+	'coll-unknown_subpage_title' => 'Sottopàgene scanusciute',
 );
 
 /** Russian (Русский)

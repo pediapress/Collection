@@ -17,14 +17,14 @@ $aliases['en'] = array(
  * @author Meno25
  */
 $aliases['ar'] = array(
-	'Book' => array( 'مجموعة' ),
+	'Book' => array( 'كتاب', 'مجموعة' ),
 );
 
 /** Egyptian Spoken Arabic (مصرى)
  * @author Meno25
  */
 $aliases['arz'] = array(
-	'Book' => array( 'مجموعة' ),
+	'Book' => array( 'كتاب', 'مجموعة' ),
 );
 
 /** Assamese (অসমীয়া) */
