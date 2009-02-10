@@ -64,7 +64,7 @@ $aliases['fi'] = array(
 
 /** Galician (Galego) */
 $aliases['gl'] = array(
-	'Book' => array( 'Colección' ),
+	'Book' => array( 'Libro' ),
 );
 
 /** Swiss German (Alemannisch) */
@@ -119,7 +119,7 @@ $aliases['lb'] = array(
 
 /** Macedonian (Македонски) */
 $aliases['mk'] = array(
-	'Book' => array( 'Колекција' ),
+	'Book' => array( 'Книга', 'Колекција' ),
 );
 
 /** Maltese (Malti) */

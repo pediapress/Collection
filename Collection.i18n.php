@@ -2897,6 +2897,13 @@ $messages['id'] = array(
 	'coll-cancel' => 'Batalkan',
 );
 
+/** Ido (Ido)
+ * @author Malafaya
+ */
+$messages['io'] = array(
+	'coll-yes' => 'Yes',
+);
+
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  */
@@ -6292,25 +6299,27 @@ Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
  * @author Smeira
  */
 $messages['vo'] = array(
-	'coll-collection' => 'Konlet',
-	'coll-collections' => 'Konlets',
+	'coll-desc' => '[[Special:Book|Jafolöd bukis]]',
+	'coll-collection' => 'Buk',
+	'coll-collections' => 'Buks',
 	'coll-exclusion_category_title' => 'Fakipön dü dabükam',
 	'coll-print_template_prefix' => 'Dabükön',
 	'coll-create_a_book' => 'Jafön buki',
 	'coll-add_page' => 'Läükön padi vüke',
 	'coll-remove_page' => 'Moükön padi se vük',
 	'coll-add_category' => 'Läükön kladi',
-	'coll-load_collection' => 'Lodön konleti',
-	'coll-show_collection' => 'Jonön konleti',
-	'coll-help_collections' => 'Yuf tefü konlets',
+	'coll-load_collection' => 'Lodön buki',
+	'coll-show_collection' => 'Jonön buki',
+	'coll-help_collections' => 'Yuf tefü buks',
 	'coll-n_pages' => '{{PLURAL:$1|pad|pads}} $1',
 	'coll-unknown_subpage_title' => 'Donapad nesevädik',
-	'coll-unknown_subpage_text' => 'Donapad at [[Special:Collection|Konleta]] no dabinon.',
+	'coll-unknown_subpage_text' => 'Donapad at [[Special:Book|Buka]] no dabinon.',
 	'coll-printable_version_pdf' => 'fomam-PDF',
 	'coll-download_as' => 'Donükön as $1',
 	'coll-noscript_text' => '<h1>El JavaScript paflagon!</h1>
 <strong>Bevüresodanaföm olik no stüton eli JavaScript, ud el JavaScript pesekurbon. Pad at no ojäfidon verätiko, if el JavaScript no ponikurbon.</strong>',
-	'coll-helppage' => 'Help:Konlets',
+	'coll-helppage' => 'Help:Buks',
+	'coll-bookscategory' => 'Buks',
 	'coll-your_book' => 'Buk olik',
 	'coll-download_title' => 'Donükön',
 	'coll-download' => 'Donükön',
@@ -6322,8 +6331,8 @@ $messages['vo'] = array(
 	'coll-contents' => 'Ninäd',
 	'coll-create_chapter' => 'Jafön kapiti',
 	'coll-sort_alphabetically' => 'Lafabön',
-	'coll-clear_collection' => 'Vagükön konleti',
-	'coll-clear_collection_confirm' => 'Vilol-li jenöfo vagükön konleti olik lölöfiko?',
+	'coll-clear_collection' => 'Vagükön buki',
+	'coll-clear_collection_confirm' => 'Vilol-li jenöfo vagükön buki olik lölöfiko?',
 	'coll-rename' => 'Votanemön',
 	'coll-new_chapter' => 'Penolös nemi kapita nulik',
 	'coll-rename_chapter' => 'Penolös nemi nulik kapita',
@@ -6331,9 +6340,9 @@ $messages['vo'] = array(
 	'coll-notitle_title' => 'No eplöpos ad fümetön padatiädi.',
 	'coll-post_failed_title' => 'Beg-POST no eplöpon',
 	'coll-post_failed_msg' => 'Beg-POST lü $1 no eplöpon ($2).',
-	'coll-empty_collection' => 'Konlet vagik',
+	'coll-empty_collection' => 'Buk vagik',
 	'coll-revision' => 'Revid: $1',
-	'coll-save_collection_title' => 'Dakipön e dilön konleti olik',
+	'coll-save_collection_title' => 'Dakipön e dilön buki olik',
 	'coll-login_to_save' => 'If vilol dakipön konletis pro geb posik, [[Special:UserLogin|nunädolös oli u jafolös kali]].',
 	'coll-personal_collection_label' => 'Konlet privatik:',
 	'coll-community_collection_label' => 'Konlet kobädik:',
@@ -6350,13 +6359,13 @@ Vilol-li plaädön konleti anuik ola, lenlägön ninädi nulik, u stöpädön lo
 	'coll-overwrite' => 'Plaädön',
 	'coll-append' => 'Lenlägön',
 	'coll-cancel' => 'Stöpädön',
-	'coll-limit_exceeded_title' => 'Konlet tu gretik',
+	'coll-limit_exceeded_title' => 'Buk tu gretik',
 	'coll-limit_exceeded_text' => 'Konletapad olik binon tu gretik.
 Pads pluik nonik kanons paläükön.',
 	'coll-rendering_status' => '<strong>Stad:</strong> $1',
 	'coll-rendering_article' => '(vükapad: $1)',
 	'coll-rendering_page' => '(pad: $1)',
-	'coll-notfound_title' => 'Konlet no petuvon',
+	'coll-notfound_title' => 'Buki no petuvon',
 	'coll-notfound_text' => 'No eplöpos ad tuvön konletapadi.',
 	'coll-excluded-templates' => '* Samafomots in klad: [[:Category:$1|$1]] pefakipons.',
 	'coll-blacklisted-templates' => '* Samafomots blägaliseda: [[:$1]] pefakipons.',
