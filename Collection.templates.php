@@ -97,7 +97,7 @@ $listTemplate->execute();
           <?php	} ?>
         </select>
 			<?php } ?>
-      </td><td style="text-align:right">
+      </td><td style="text-align:right; vertical-align:bottom;">
       <input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
       </td></tr></tbody></table>
 		</form>
