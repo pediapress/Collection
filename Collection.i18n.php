@@ -690,6 +690,7 @@ $messages['bg'] = array(
 	'coll-overwrite' => 'Заместване',
 	'coll-append' => 'Добавяне',
 	'coll-cancel' => 'Отказване',
+	'coll-update' => 'Актуализиране',
 	'coll-rendering_status' => '<strong>Статут:</strong> $1',
 	'coll-rendering_article' => '(уики-страница: $1)',
 	'coll-rendering_page' => '(страница: $1)',
@@ -1203,17 +1204,18 @@ Skontaktuj pšosym swójogo administratora MediaWiki',
 /** Greek (Ελληνικά)
  * @author Consta
  * @author Geraki
+ * @author Omnipaedista
  */
 $messages['el'] = array(
-	'coll-desc' => '[[Special:Collection|Συλλογή σελίδων]], παραγωγή PDF',
-	'coll-collection' => 'Συλλογή',
-	'coll-collections' => 'Συλλογές',
+	'coll-desc' => '[[Special:Book|Δημιουργία βιβλίων]]',
+	'coll-collection' => 'Βιβλίο',
+	'coll-collections' => 'Βιβλία',
 	'coll-create_a_book' => 'Δημιουργία βιβλίου',
 	'coll-add_page' => 'Προσθήκη σελίδας wiki',
 	'coll-remove_page' => 'Αφαίρεση σελίδας wiki',
 	'coll-add_category' => 'Προσθήκη κατηγορίας',
-	'coll-load_collection' => 'Φόρτωση συλλογής',
-	'coll-show_collection' => 'Εμφάνιση συλλογής',
+	'coll-load_collection' => 'Φόρτωση βιβλίου',
+	'coll-show_collection' => 'Εμφάνιση βιβλίου',
 	'coll-n_pages' => '$1 {{PLURAL:$1|σελίδα|σελίδες}}',
 	'coll-noscript_text' => '<h1>Χρειάζεται JavaScript!</h1>
 <strong>Ο περιηγητής σας δεν υποστηρίζει JavaScript ή η JavaScript έχει απενεργοποιηθεί.
@@ -1221,7 +1223,7 @@ $messages['el'] = array(
 	'coll-intro_text' => 'Μπορείτε να συλλέξετε σελίδες, να παράγετε και να κατεβάσετε ένα αρχείο PDF από συλλογές σελίδων και να αποθηκεύσετε συλλογές σελίδων για περαιτέρω χρήση ή για να τις μοιραστήτε.
 
 Δείτε την [[{{MediaWiki:Coll-helppage}}|σελίδα βοήθειας για συλλογές]] για περισσότερες πληροφορίες.',
-	'coll-helppage' => 'Help:Συλλογές',
+	'coll-helppage' => 'Help:Βιβλία',
 	'coll-title' => 'Τίτλος:',
 	'coll-subtitle' => 'Υπότιτλος:',
 	'coll-yes' => 'Ναι',
@@ -1272,8 +1274,8 @@ $messages['eo'] = array(
 	'coll-drag_and_drop' => 'Uzu musan tren-kaj-maltenon por reordigi vikiajn paĝojn kaj ĉapitrojn',
 	'coll-create_chapter' => 'Krei ĉapitron',
 	'coll-sort_alphabetically' => 'Ordigi laŭ alfabeto',
-	'coll-clear_collection' => 'Forviŝi kolekton',
-	'coll-clear_collection_confirm' => 'Ĉu vi ja volas plene forviŝi vian kolekton?',
+	'coll-clear_collection' => 'Forviŝi libron',
+	'coll-clear_collection_confirm' => 'Ĉu vi ja volas plene forviŝi vian libron?',
 	'coll-rename' => 'Alinomigi',
 	'coll-new_chapter' => 'Enigi nomon por nova ĉapitro',
 	'coll-rename_chapter' => 'Enigi novan nomon por ĉapitro',
@@ -1284,15 +1286,15 @@ $messages['eo'] = array(
 	'coll-mwserve_failed_title' => 'Eraro kun montrada servilo',
 	'coll-mwserve_failed_msg' => 'Eraro okazis en la montrada servilo: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Erara respondo de servilo',
-	'coll-empty_collection' => 'Malplena kolekto',
+	'coll-empty_collection' => 'Malplena libro',
 	'coll-revision' => 'Versio: $1',
-	'coll-save_collection_title' => 'Konservi kaj permesigi vian kolekton',
+	'coll-save_collection_title' => 'Konservi kaj permesigi vian libron',
 	'coll-save_collection_text' => 'Elektu lokon:',
 	'coll-login_to_save' => 'Se vi volas konservi kolektojn por posta uzo, bonvolu [[Special:UserLogin|ensaluti aŭ krei novan konton]].',
 	'coll-personal_collection_label' => 'Propra libro:',
-	'coll-community_collection_label' => 'Komuna kolekto:',
-	'coll-save_collection' => 'Konservi Kolekton',
-	'coll-save_category' => 'Kolektoj estas konservitaj en la [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-community_collection_label' => 'Komuna libro:',
+	'coll-save_collection' => 'Konservi libron',
+	'coll-save_category' => 'Ĉiuj libroj estas konservitaj en la [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Paĝo ekzistas. Ĉu anstataŭigi?',
 	'coll-overwrite_text' => 'Paĝo kun la nomo [[:$1]] jam ekzistas.
 Ĉu vi volas anstatŭigi ĝin kun via kolekto?',
@@ -1324,7 +1326,7 @@ Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.</p>',
 Notoj:
 * Ĉu la eligo ne plaĉus al vi? Vidu [[{{MediaWiki:Coll-helppage}}|la helpan paĝon pri kolektoj]] por fojoj por plibonigi ĝin.',
 	'coll-notfound_title' => 'Libro ne trovita',
-	'coll-notfound_text' => 'Ne eblas trovi kolekto-paĝon.',
+	'coll-notfound_text' => 'Ne eblas trovi libran paĝon.',
 	'coll-is_cached' => '<ul><li>Kaŝmemora versio de la dokumento estis trovita, tial bildigado ne bezonis.<a href="$1">Devigi re-bildigadon.</a></li></ul>',
 	'coll-excluded-templates' => '* Ŝablonoj en kategorio [[:Category:$1|$1]] estis ekskluzivita.',
 	'coll-blacklisted-templates' => '* Ŝablonoj en nigralisto [[:$1]] estis malebligitaj.',
@@ -2433,6 +2435,7 @@ $messages['hil'] = array(
 
 /** Croatian (Hrvatski)
  * @author Dalibor Bosits
+ * @author SpeedyGonsales
  * @author Suradnik13
  */
 $messages['hr'] = array(
@@ -2768,7 +2771,7 @@ Megjegyzés:
 	'coll-invalid_podpartner_msg' => 'A megadott nyomdai partner érvénytelen.
 Kérlek lépj kapcsolatba a MediaWiki adminisztrátoroddal.',
 	'coll-license' => 'Licenc',
-	'coll-return_to' => 'Visszatérés ide: [[:$1]]',
+	'coll-return_to' => 'Visszatérés a(z) [[:$1]] laphoz',
 );
 
 /** Interlingua (Interlingua)
@@ -2901,7 +2904,22 @@ $messages['id'] = array(
  * @author Malafaya
  */
 $messages['io'] = array(
+	'coll-desc' => '[[Special:Book|Kreez libri]]',
+	'coll-collection' => 'Libro',
+	'coll-collections' => 'Libri',
+	'coll-create_a_book' => 'Kreez un libro',
+	'coll-n_pages' => '$1 {{PLURAL:$1|pagino|pagini}}',
+	'coll-printable_version_pdf' => 'Versiono PDF',
+	'coll-helppage' => 'Help:Libri',
+	'coll-bookscategory' => 'Libri',
+	'coll-your_book' => 'Vua libro',
+	'coll-show' => 'Montrez',
+	'coll-title' => 'Titulo:',
+	'coll-empty_collection' => 'Vakua libro',
 	'coll-yes' => 'Yes',
+	'coll-no' => 'No',
+	'coll-rendering_page' => '(pagino: $1)',
+	'coll-about_pp' => 'Pri $1',
 );
 
 /** Icelandic (Íslenska)
@@ -3855,30 +3873,32 @@ $messages['mr'] = array(
  * @author Aviator
  */
 $messages['ms'] = array(
-	'coll-desc' => '[[Special:Collection|Mengumpul laman]] dan menjana PDF',
-	'coll-collection' => 'Koleksi',
-	'coll-collections' => 'Koleksi',
+	'coll-desc' => '[[Special:Book|Mencipta buku]]',
+	'coll-collection' => 'Buku',
+	'coll-collections' => 'Buku',
 	'coll-exclusion_category_title' => 'Tidak dicetak',
 	'coll-print_template_prefix' => 'Cetak',
 	'coll-create_a_book' => 'Cipta buku',
 	'coll-add_page' => 'Tambah laman wiki',
 	'coll-remove_page' => 'Buang laman wiki',
 	'coll-add_category' => 'Tambah kategori',
-	'coll-load_collection' => 'Muat koleksi',
-	'coll-show_collection' => 'Papar koleksi',
-	'coll-help_collections' => 'Bantuan koleksi',
+	'coll-load_collection' => 'Muat buku',
+	'coll-show_collection' => 'Papar buku',
+	'coll-help_collections' => 'Bantuan buku',
 	'coll-n_pages' => '$1 laman',
 	'coll-unknown_subpage_title' => 'Sublaman tidak dikenali',
-	'coll-unknown_subpage_text' => 'Sublaman [[Special:Collection|Koleksi]] ini tidak wujud',
+	'coll-unknown_subpage_text' => 'Sublaman [[Special:Collection|Buku]] ini tidak wujud',
 	'coll-printable_version_pdf' => 'Versi PDF',
 	'coll-download_as' => 'Muat turun $1',
 	'coll-noscript_text' => '<h1>JavaScript diperlukan!</h1>
 <strong>JavaScript tidak disokong oleh pelayan anda atau telah dilumpuhkan. Laman ini tidak dapat berfungsi sekiranya ciri JavaScript tidak diaktifkan.</strong>',
 	'coll-intro_text' => 'Cipta dan urus koleksi laman wiki untuk kegunaan persendirian.<br />Lihat [[{{MediaWiki:Coll-helppage}}]] untuk maklumat lanjut.',
-	'coll-helppage' => 'Help:Koleksi',
+	'coll-helppage' => 'Help:Buku',
+	'coll-bookscategory' => 'Buku',
 	'coll-your_book' => 'Buku anda',
 	'coll-download_title' => 'Muat turun',
 	'coll-download_text' => 'Untuk memuat turun versi luar talian, sila pilih format dan klik butang yang berkenaan.',
+	'coll-download_as_text' => 'Untuk memuat turun versi luar talian dalam format $1, sila klik butang berikut.',
 	'coll-download' => 'Muat turun',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Buang',
@@ -3893,8 +3913,8 @@ $messages['ms'] = array(
 	'coll-drag_and_drop' => 'Seret dan letak untuk menyusun semula laman dan bab',
 	'coll-create_chapter' => 'Cipta bab',
 	'coll-sort_alphabetically' => 'Susun mengikut tertib abjad',
-	'coll-clear_collection' => 'Kosongkan koleksi',
-	'coll-clear_collection_confirm' => 'Betul anda mahu mengosongkan koleksi anda?',
+	'coll-clear_collection' => 'Kosongkan buku',
+	'coll-clear_collection_confirm' => 'Betul anda mahu mengosongkan buku anda?',
 	'coll-rename' => 'Tukar nama',
 	'coll-new_chapter' => 'Masukkan nama untuk bab baru',
 	'coll-rename_chapter' => 'Masukkan nama baru untuk bab',
@@ -3905,26 +3925,26 @@ $messages['ms'] = array(
 	'coll-mwserve_failed_title' => 'Ralat pelayan jana',
 	'coll-mwserve_failed_msg' => 'Terdapat ralat pada pelayan jana: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Jawapan ralat daripada pelayan',
-	'coll-empty_collection' => 'Koleksi kosong',
+	'coll-empty_collection' => 'Buku kosong',
 	'coll-revision' => 'Semakan: $1',
-	'coll-save_collection_title' => 'Simpan dan kongsi koleksi anda',
+	'coll-save_collection_title' => 'Simpan dan kongsi buku anda',
 	'coll-save_collection_text' => 'Pilih lokasi:',
-	'coll-login_to_save' => 'Jika anda mahu menyimpan koleksi anda untuk kegunaan masa depan, sila [[Special:UserLogin|log masuk atau buka akaun baru]].',
-	'coll-personal_collection_label' => 'Koleksi peribadi:',
-	'coll-community_collection_label' => 'Koleksi komuniti:',
-	'coll-save_collection' => 'Simpan koleksi',
-	'coll-save_category' => 'Semua koleksi disimpan dalam kategori [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-login_to_save' => 'Jika anda mahu menyimpan buku anda untuk kegunaan masa depan, sila [[Special:UserLogin|log masuk atau buka akaun baru]].',
+	'coll-personal_collection_label' => 'Buku peribadi:',
+	'coll-community_collection_label' => 'Buku komuniti:',
+	'coll-save_collection' => 'Simpan buku',
+	'coll-save_category' => 'Semua buku disimpan dalam kategori [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Laman telah pun wujud. Tulis ganti?',
 	'coll-overwrite_text' => 'Laman dengan nama [[:$1]] telah pun wujud. Adakah anda mahu menggantikannya dengan koleksi anda?',
 	'coll-yes' => 'Ya',
 	'coll-no' => 'Tidak',
-	'coll-load_overwrite_text' => 'Koleksi anda telah pun mengandungi beberapa laman. Adakah anda mahu menulis ganti koleksi anda, menambah kandungan baru tersebut, atau batal?',
+	'coll-load_overwrite_text' => 'Buku anda telah pun mengandungi beberapa laman. Adakah anda mahu menulis ganti buku anda, menambah kandungan baru tersebut, atau batal?',
 	'coll-overwrite' => 'Tulis ganti',
 	'coll-append' => 'Tambah',
 	'coll-cancel' => 'Batal',
 	'coll-update' => 'Kemas kini',
-	'coll-limit_exceeded_title' => 'Koleksi terlalu besar',
-	'coll-limit_exceeded_text' => 'Koleksi laman anda terlalu besar dan laman tidak boleh ditambah lagi.',
+	'coll-limit_exceeded_title' => 'Buku terlalu besar',
+	'coll-limit_exceeded_text' => 'Buku anda terlalu besar dan laman tidak boleh ditambah lagi.',
 	'coll-rendering_title' => 'Menjana',
 	'coll-rendering_text' => '<p><strong>Sila tunggu sementara dokumen tersebut dijana.</strong></p>
 
@@ -3941,8 +3961,8 @@ Jika tidak, sila tekan butang \'\'refresh\'\' di pelayar web anda.</p>',
 
 Catatan:
 * Tidak berpuas hati dengan output yang dihasilkan? Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan mengenai koleksi]] untuk mengetahui bagaimana anda boleh memperbaikinya lagi.',
-	'coll-notfound_title' => 'Koleksi tidak dijumpai',
-	'coll-notfound_text' => 'Laman koleksi tidak dapat dijumpai.',
+	'coll-notfound_title' => 'Buku tidak dijumpai',
+	'coll-notfound_text' => 'Laman buku tidak dapat dijumpai.',
 	'coll-is_cached' => '<ul><li>Versi simpanan (cache) bagi dokumen itu telah pun dijumpai, oleh itu penjanaan tidak diperlukan. <a href="$1">Arahkan penjanaan semula.</a></li></ul>',
 	'coll-excluded-templates' => '* Templat-templat dalam kategori [[:Category:$1|$1]] telah dikecualikan.',
 	'coll-blacklisted-templates' => '* Templat-templat dalam senarai hitam [[:$1]] telah dikecualikan.',
@@ -5154,9 +5174,11 @@ $messages['sah'] = array(
 	'coll-intro_text' => 'Биики-сирэйдэр тустаах, эйиэхэ бэйэҕэр эрэ аналлаах, хомуурунньуктарын оҥоруу уонна ону салайыы.<br />Сиһилии манна көр [[{{MediaWiki:Coll-helppage}}]].',
 	'coll-helppage' => 'Help:Кинигэлэр',
 	'coll-bookscategory' => 'Кинигэлэр',
+	'coll-savedbook_template' => 'уларытыыта_бигэргэтиллибит_кинигэ',
 	'coll-your_book' => 'Эн кинигэҥ',
 	'coll-download_title' => 'Хачайдаа',
 	'coll-download_text' => 'Оффлайн барылын көрөргө формаатын ый уонна анал тимэҕи баттаа.',
+	'coll-download_as_text' => '$1 форматтаах барылы хачайдыырга тимэҕи баттаа.',
 	'coll-download' => 'Хачайдаа',
 	'coll-format_label' => 'Формаата:',
 	'coll-remove' => 'Сот',
@@ -5181,6 +5203,48 @@ $messages['sah'] = array(
 	'coll-post_failed_title' => 'POST-ыйытык толоруллубата',
 	'coll-post_failed_msg' => 'Манна $1 анаммыт POST-ыйытык толоруллубата ($2).',
 	'coll-mwserve_failed_title' => 'Render сиэрбэрэ сыыһалаах',
+	'coll-mwserve_failed_msg' => 'Отрисовка сиэрбэригэр алҕас таҕыста: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Сиэрбэр эппиэтин алҕаһа',
+	'coll-empty_collection' => 'Кураанах кинигэ',
+	'coll-revision' => 'Барыл: $1',
+	'coll-save_collection_title' => 'Кинигэни бигэргэтэргэ уонна дьоҥҥо көстөр гынарга',
+	'coll-save_collection_text' => 'Кинигэҥ миэстэтин тал:',
+	'coll-login_to_save' => 'Кинигэни кэлин туһанаары гынар буоллаххына, бука диэн, [[Special:UserLogin|ааккын эт эбэтэр саҥа аатта бэлиэтээ]].',
+	'coll-personal_collection_label' => 'Тус бэйэ кинигэтэ:',
+	'coll-community_collection_label' => 'Бөлөх кинигэтэ:',
+	'coll-save_collection' => 'Уларытыыларын бигэргэт',
+	'coll-save_category' => 'Кинигэлэр бу категорияҕа баар буоллулар: [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-overwrite_title' => 'Маннык сирэй баар эбит.
+Хос суруттараҕын дуо?',
+	'coll-overwrite_text' => 'Маннык [[:$1]] ааттаах сирэй баар эбит.
+Ол эн кинигэҕинэн солбуллуон баҕараҕын дуо?',
+	'coll-yes' => 'Сөп',
+	'coll-no' => 'Суох',
+	'coll-load_overwrite_text' => 'Кинигэҕэр хас да сирэй баар эбит.
+Баар кинигэни хос суруттараары, саҥа матырыйаалы эбээри гвнаҕын дуу, эбэтэр кинигэни сурутууну тохтотоҕун дуу?',
+	'coll-overwrite' => 'Хос суруттар',
+	'coll-append' => 'Эбэн биэр',
+	'coll-cancel' => 'Тохтот',
+	'coll-update' => 'Саҥардан биэр',
+	'coll-limit_exceeded_title' => 'Наһаа улахан эбит',
+	'coll-limit_exceeded_text' => 'Кинигэ наһаа улахан.
+Сирэй эбэр сатаммат.',
+	'coll-rendering_title' => 'Оҥоруу',
+	'coll-rendering_text' => '<p><strong>Бука диэн кэтэс, оҥоһулла турар.</strong></p>
+
+<p><strong>Үлэ хаамыыта:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Бу сирэй аҕыйах сөкүүндэҕэ биирдэ уларыйыахтаах.
+Уларыйбат буоллаҕына брааузерыҥ "саҥардыы" тимэҕин баттаа.</p>',
+	'coll-rendering_status' => '<strong>Стаатуһа:</strong> $1',
+	'coll-rendering_article' => '(ыстатыйа: $1)',
+	'coll-rendering_page' => '(сирэй: $1)',
+	'coll-rendering_finished_title' => 'Оҥоһулунна',
+	'coll-rendering_finished_text' => '<strong>Дөкүмүөн билэтэ оҥоһулунна.</strong>
+Бэйэ көмпүүтэригэр <strong>[$1 билэни хачайдаа]</strong>.
+
+Биллэрии:
+* Оччото суох дуо? [[{{MediaWiki:Coll-helppage}}|Кинигэлэри оҥорорго көмөҕө]] тупсарыы туһунан суруллубут.',
 );
 
 /** Slovak (Slovenčina)
