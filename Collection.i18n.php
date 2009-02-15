@@ -976,6 +976,7 @@ $messages['da'] = array(
  * @author Metalhead64
  * @author Raimond Spekking
  * @author Revolus
+ * @author Umherirrender
  * @author VolkerHaas
  */
 $messages['de'] = array(
@@ -1002,7 +1003,7 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 	'coll-intro_text' => 'Erstelle und verwalte deine individuelle Sammlung von Seiten.<br />Siehe die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Büchern]] für weitere Informationen.',
 	'coll-helppage' => 'Help:Bücher',
 	'coll-bookscategory' => 'Bücher',
-	'coll-savedbook_template' => 'gespeichertes_buch',
+	'coll-savedbook_template' => 'Gespeichertes Buch',
 	'coll-your_book' => 'Dein Buch',
 	'coll-download_title' => 'Herunterladen',
 	'coll-download_text' => 'Um eine Offline-Version herunterzuladen, wähle ein Format und klicke auf die Schaltfläche.',
@@ -2439,7 +2440,7 @@ $messages['hil'] = array(
  * @author Suradnik13
  */
 $messages['hr'] = array(
-	'coll-desc' => '[[Special:Collection|Sakupi stranice]], izradi PDF',
+	'coll-desc' => '[[Special:Book|Stvori zbirku]]',
 	'coll-collection' => 'Zbirka',
 	'coll-collections' => 'Zbirke',
 	'coll-exclusion_category_title' => 'Izuzmi u ispisu',
@@ -2453,16 +2454,19 @@ $messages['hr'] = array(
 	'coll-help_collections' => 'Zbirke pomoć',
 	'coll-n_pages' => '$1 {{PLURAL:$1|stranica|stranice|stranica}}',
 	'coll-unknown_subpage_title' => 'Nepoznata podstranica',
-	'coll-unknown_subpage_text' => 'Ova podstranica za [[Special:Collection|Zbirku]] ne postoji',
+	'coll-unknown_subpage_text' => 'Ova podstranica [[Special:Book|zbirke]] ne postoji',
 	'coll-printable_version_pdf' => 'PDF inačica',
 	'coll-download_as' => 'Preuzmi kao $1',
 	'coll-noscript_text' => '<h1>Potreban je JavaScript!</h1>
 <strong>Vaš preglednik nema podršku za JavaScript ili je isključena. Ova stranica neće raditi ispravno, ako JavaScript nije omogućen.</strong>',
 	'coll-intro_text' => 'Napravite i uređujte svoj osobni odabir wiki stranica.<br />Vidi [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više obavijesti.',
-	'coll-helppage' => 'Pomoć:Zbirke',
+	'coll-helppage' => 'Help:Zbirke',
+	'coll-bookscategory' => 'Zbirke',
+	'coll-savedbook_template' => 'snimljena_zbirka',
 	'coll-your_book' => 'Vaša knjiga',
 	'coll-download_title' => 'Preuzmi',
 	'coll-download_text' => 'Za preuzimanje izvanmrežne inačice, odaberite format i kliknite tipku.',
+	'coll-download_as_text' => 'Za preuzimanje inačice u $1 formatu kliknite na gumb.',
 	'coll-download' => 'Preuzmi',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Ukloni',
@@ -2493,10 +2497,10 @@ $messages['hr'] = array(
 	'coll-revision' => 'Izmjena: $1',
 	'coll-save_collection_title' => 'Spremi i dijeli svoju zbirku',
 	'coll-save_collection_text' => 'Odaberite lokaciju:',
-	'coll-login_to_save' => 'Ako želite spremiti zbirku za kasniju upotrebu, molimo [[Special:UserLogin|prijavite se ili napravite suradnički račun]].',
-	'coll-personal_collection_label' => 'Osobna zbirka:',
-	'coll-community_collection_label' => 'Zajednička zbirka:',
-	'coll-save_collection' => 'Spremi zbirku',
+	'coll-login_to_save' => 'Ako želite spremiti knjige za kasniju uporabu, molimo [[Special:UserLogin|prijavite se ili napravite suradnički račun]].',
+	'coll-personal_collection_label' => 'Osobna knjiga:',
+	'coll-community_collection_label' => 'Zajednička knjiga:',
+	'coll-save_collection' => 'Spremi knjigu',
 	'coll-save_category' => 'Zbirke su spremljene u kategoriji [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Stranica postoji.
 Prepisati preko?',
@@ -2510,7 +2514,7 @@ Prepisati preko?',
 	'coll-append' => 'Nadodaj',
 	'coll-cancel' => 'Zaustavi',
 	'coll-update' => 'Ažuriranje',
-	'coll-limit_exceeded_title' => 'Zbirka je prevelika',
+	'coll-limit_exceeded_title' => 'Knjiga je prevelika',
 	'coll-limit_exceeded_text' => 'Vaša zbirka stranica je prevelika.
 Nove stranice ne mogu biti dodane.',
 	'coll-rendering_title' => 'Izvođenje',
@@ -2530,8 +2534,8 @@ Ako ovo ne radi, molimo pritisnite tipku za osvježavanje u svom pregledniku.</p
 Napomene:
 * Niste zadovoljni dobivenim rezultatom? Pogledajte [[{{MediaWiki:Coll-helppage}}|
 stranicu za pomoć o zbirkama]] za mogućnosti njegovog poboljšanja.',
-	'coll-notfound_title' => 'Zbirka nije pronađena',
-	'coll-notfound_text' => 'Stranica zbirke se ne može pronaći.',
+	'coll-notfound_title' => 'Knjiga nije nađena',
+	'coll-notfound_text' => 'Ne mogu pronaći stranicu knjige.',
 	'coll-is_cached' => '<ul><li>Pronađena je verzija datoteke u pričuvnoj memoriji, stoga izvođenje datoteke nije potrebno.. <a href="$1">Zahtijevaj ponovno izvođenje.</a></li></ul>',
 	'coll-excluded-templates' => '* Predlošci u kategoriji [[:Category:$1|$1]] su ostali isključeni.',
 	'coll-blacklisted-templates' => '* Predlošci na crnoj listi [[:$1]] su ostali isključeni.',
@@ -2908,6 +2912,9 @@ $messages['io'] = array(
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libri',
 	'coll-create_a_book' => 'Kreez un libro',
+	'coll-add_category' => 'Adjuntar kategorio',
+	'coll-load_collection' => 'Kargar libro',
+	'coll-show_collection' => 'Montrar libro',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagino|pagini}}',
 	'coll-printable_version_pdf' => 'Versiono PDF',
 	'coll-helppage' => 'Help:Libri',
@@ -2916,6 +2923,7 @@ $messages['io'] = array(
 	'coll-show' => 'Montrez',
 	'coll-title' => 'Titulo:',
 	'coll-empty_collection' => 'Vakua libro',
+	'coll-save_collection' => 'Registragar libro',
 	'coll-yes' => 'Yes',
 	'coll-no' => 'No',
 	'coll-rendering_page' => '(pagino: $1)',
@@ -3459,6 +3467,17 @@ $messages['ko'] = array(
 	'coll-about_pp' => '$1에 대하여',
 	'coll-license' => '라이선스',
 	'coll-return_to' => '[[:$1]]으로 돌아갑니다.',
+);
+
+/** Krio (Krio)
+ * @author Protostar
+ */
+$messages['kri'] = array(
+	'coll-collection' => 'Buk',
+	'coll-collections' => 'Buk-dèm',
+	'coll-exclusion_category_title' => 'Nò put dis-ya da di print',
+	'coll-print_template_prefix' => 'Print',
+	'coll-create_a_book' => 'Mek buk',
 );
 
 /** Kinaray-a (Kinaray-a)
@@ -4020,8 +4039,8 @@ $messages['nah'] = array(
  * @author Slomox
  */
 $messages['nds'] = array(
-	'coll-desc' => '[[Special:Collection|Sieden sammeln]], PDFs opstellen',
-	'coll-collection' => 'Sammlung',
+	'coll-desc' => '[[Special:Book|Böker opstellen]]',
+	'coll-collection' => 'Book',
 	'coll-collections' => 'Sammlungen',
 	'coll-exclusion_category_title' => 'Bi’t Drucken weglaten',
 	'coll-print_template_prefix' => 'Drucken',
@@ -6160,6 +6179,7 @@ La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</s
 	'coll-intro_text' => 'Crea e gestissi le to selession personali de pàxene wiki.<br />Lèxi [[{{MediaWiki:Coll-helppage}}]] par savérghene piessè.',
 	'coll-helppage' => 'Help:Libri',
 	'coll-bookscategory' => 'Libri',
+	'coll-savedbook_template' => 'libro_salvà',
 	'coll-your_book' => 'El to libro',
 	'coll-download_title' => 'Descarga',
 	'coll-download_text' => 'Par trar xo na versiòn siegli un formado e struca el botòn.',
