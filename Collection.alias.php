@@ -92,6 +92,11 @@ $aliases['hu'] = array(
 	'Book' => array( 'Gyűjtemény', 'Gyűjtemények' ),
 );
 
+/** Interlingua (Interlingua) */
+$aliases['ia'] = array(
+	'Book' => array( 'Libro' ),
+);
+
 /** Indonesian (Bahasa Indonesia) */
 $aliases['id'] = array(
 	'Book' => array( 'Koleksi' ),
@@ -185,5 +190,10 @@ $aliases['sv'] = array(
 /** Swahili (Kiswahili) */
 $aliases['sw'] = array(
 	'Book' => array( 'Kusanya' ),
+);
+
+/** Tagalog (Tagalog) */
+$aliases['tl'] = array(
+	'Book' => array( 'Aklat', 'Kalipunan' ),
 );
 
