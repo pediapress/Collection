@@ -1258,6 +1258,7 @@ $messages['eo'] = array(
 Ĉi tiu paĝo ne funkcius bone, ĝis JavaScript-o estas ŝaltita.</strong>',
 	'coll-intro_text' => 'Krei kaj administri individuan selektaĵon de vikiaj paĝoj.<br />Vidu [[{{MediaWiki:Coll-helppage}}]] por plua informo.',
 	'coll-helppage' => 'Help:Libroj',
+	'coll-bookscategory' => 'Libroj',
 	'coll-your_book' => 'Via libro',
 	'coll-download_title' => 'Elŝuti',
 	'coll-download_text' => 'Por elŝuti malkonektan version, elektu formato kaj klaku la butonon.',
@@ -1291,7 +1292,7 @@ $messages['eo'] = array(
 	'coll-revision' => 'Versio: $1',
 	'coll-save_collection_title' => 'Konservi kaj permesigi vian libron',
 	'coll-save_collection_text' => 'Elektu lokon:',
-	'coll-login_to_save' => 'Se vi volas konservi kolektojn por posta uzo, bonvolu [[Special:UserLogin|ensaluti aŭ krei novan konton]].',
+	'coll-login_to_save' => 'Se vi volas konservi librojn por posta uzo, bonvolu [[Special:UserLogin|ensaluti aŭ krei novan konton]].',
 	'coll-personal_collection_label' => 'Propra libro:',
 	'coll-community_collection_label' => 'Komuna libro:',
 	'coll-save_collection' => 'Konservi libron',
@@ -1301,15 +1302,15 @@ $messages['eo'] = array(
 Ĉu vi volas anstatŭigi ĝin kun via kolekto?',
 	'coll-yes' => 'Jes',
 	'coll-no' => 'Ne',
-	'coll-load_overwrite_text' => 'Vi jam havas iujn paĝojn en via kolekto.
-Ĉu vi volas anstataŭigi vian nunan kolekton, aldoni la novan enhavon, aŭ nuligi ŝarĝadon de ĉi tiu kolekto?',
+	'coll-load_overwrite_text' => 'Vi jam havas iujn paĝojn en via libro.
+Ĉu vi volas anstataŭigi vian nunan libron, aldoni la novan enhavon, aŭ nuligi ŝarĝadon de ĉi tiu libro?',
 	'coll-overwrite' => 'Anstataŭigu',
 	'coll-append' => 'Aldoni',
 	'coll-cancel' => 'Nuligi',
 	'coll-update' => 'Ĝisdatigi',
 	'coll-limit_exceeded_title' => 'Libro tro granda',
-	'coll-limit_exceeded_text' => 'Via paĝa kolekto estas tro granda.
-Neniom pluaj paĝoj ne povas esti aldonitaj.',
+	'coll-limit_exceeded_text' => 'Via libro estas tro granda.
+Neniom da pliaj paĝoj estas aldoneblaj.',
 	'coll-rendering_title' => 'Generante',
 	'coll-rendering_text' => '<p><strong>Bonvolu atendi dum la dokumento generiĝis.</strong></p>
 
@@ -2501,21 +2502,21 @@ $messages['hr'] = array(
 	'coll-personal_collection_label' => 'Osobna knjiga:',
 	'coll-community_collection_label' => 'Zajednička knjiga:',
 	'coll-save_collection' => 'Spremi knjigu',
-	'coll-save_category' => 'Zbirke su spremljene u kategoriji [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Sve knjige su spremljene u kategoriju [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Stranica postoji.
 Prepisati preko?',
 	'coll-overwrite_text' => 'Stranica s nazivom [[:$1]] već postoji.
 Želite li da bude zamijenjena s vašom zbirkom?',
 	'coll-yes' => 'Da',
 	'coll-no' => 'Ne',
-	'coll-load_overwrite_text' => 'Već imate neke stranice u svojoj zbirci.
-Želite li prepisati svoju trenutačnu zbirku novom, samo dodati novi sadržaj ili zaustaviti učitavanje ove zbirke?',
+	'coll-load_overwrite_text' => 'Već imate neke stranice u svojoj knjizi.
+Želite li prepisati svoju trenutačnu knjigu novom, samo dodati novi sadržaj ili zaustaviti učitavanje ove knjige?',
 	'coll-overwrite' => 'Prepisati preko',
 	'coll-append' => 'Nadodaj',
 	'coll-cancel' => 'Zaustavi',
 	'coll-update' => 'Ažuriranje',
 	'coll-limit_exceeded_title' => 'Knjiga je prevelika',
-	'coll-limit_exceeded_text' => 'Vaša zbirka stranica je prevelika.
+	'coll-limit_exceeded_text' => 'Vaša knjiga je prevelika.
 Nove stranice ne mogu biti dodane.',
 	'coll-rendering_title' => 'Izvođenje',
 	'coll-rendering_text' => '<p><strong>Molimo pričekajte dok se dokument radi.</strong></p>
