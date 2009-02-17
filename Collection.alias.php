@@ -57,6 +57,11 @@ $aliases['el'] = array(
 	'Book' => array( 'Συλλογή' ),
 );
 
+/** Spanish (Español) */
+$aliases['es'] = array(
+	'Book' => array( 'Libro', 'Libros', 'Colección', 'Colecciones' ),
+);
+
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
 	'Book' => array( 'Kirja', 'Kokoelma' ),
