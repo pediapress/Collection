@@ -47,7 +47,7 @@ class Collection extends SpecialPage {
 		global $wgCollectionMaxArticles;
 		
 		wfLoadExtensionMessages( 'Collection' );
-		
+
 		switch ( $par ) {
 			case 'add_article/':
 				if ( self::countArticles() >= $wgCollectionMaxArticles ) {
@@ -220,7 +220,7 @@ class Collection extends SpecialPage {
 		if ( !self::hasSession() ) {
 			self::startSession();
 		}
-		
+
 		$this->setHeaders();
 		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );		
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgCollectionStyleVersion\"></script>" );
@@ -1086,26 +1086,32 @@ EOS
 	 */
 	static function getPortlet( $ajaxHint='' ) {
 		global $wgArticle;
-		global $wgRequest;
 		global $wgTitle;
 		global $wgOut;
+    global $wgRequest;
 		global $wgCollectionArticleNamespaces;
-		
-		// Note: we need to use $wgRequest, b/c there is apparently no way to get
-		// the subpage part of a Special page via $wgTitle.
-		$mainTitle = Title::makeTitle( NS_SPECIAL, 'Book' );
-		if ( $wgRequest->getRequestURL() == $mainTitle->getLocalURL() ) {
-			return;
-		}
-		
+
 		wfLoadExtensionMessages( 'Collection' );
+		
+    if (!$ajaxHint) {
+      // we need to re-construct a title object from the request, because
+      // the "subpage" (i.e. "par") part has been stripped of by SpecialPage.php
+      // in $wgTitle.
+      $origTitle = Title::newFromUrl($wgRequest->getVal('title'));
+      if (!is_null($origTitle)
+        && $origTitle->getLocalUrl() == SkinTemplate::makeSpecialUrl('Book')) {
+        return;
+      }
+    }
 
 		$addArticle = wfMsgHtml( 'coll-add_page' );
 		$removeArticle = wfMsgHtml( 'coll-remove_page' );
 		$addCategory = wfMsgHtml( 'coll-add_category' );
 		$loadCollection = wfMsgHtml( 'coll-load_collection' );
+    $namespace =  $wgTitle->getNamespace();
 		
 		$numArticles = self::countArticles();
+    $showShowAndClearLinks = true;
 		
 		$out = "<ul id=\"collectionPortletList\">";
 		
@@ -1116,97 +1122,87 @@ EOS
 				'load_collection/',
 			  $params ) );
 			$out .= "<li><a href=\"$href\" rel=\"nofollow\">$loadCollection</a></li>";
-		} else {
-	
-			// disable caching
-			$wgOut->setSquidMaxage( 0 );
-			$wgOut->enableClientCache( false );
-			
-			$namespace =  $wgTitle->getNamespace();
-			
-  		if ( $ajaxHint == 'AddCategory' || $namespace == NS_CATEGORY ) {
-				$params = "cattitle=" . $wgTitle->getPartialURL();
-				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-					'Book',
-					'add_category/',
-				  $params ) );
-				$out .= <<<EOS
+      $showShowAndClearLinks = false;
+
+		} else if ( $ajaxHint == 'AddCategory' || $namespace == NS_CATEGORY ) {
+      $params = "cattitle=" . $wgTitle->getPartialURL();
+      $href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+        'Book',
+        'add_category/',
+        $params ) );
+      $out .= <<<EOS
 <li>
-	<a href="$href" onclick="collectionCall('AddCategory', [wgTitle]); return false;" rel="nofollow">$addCategory</a>
+<a href="$href" onclick="collectionCall('AddCategory', [wgTitle]); return false;" rel="nofollow">$addCategory</a>
 </li>
 EOS
-				;
-			} else if ( !$ajaxHint && (is_null( $wgArticle ) || !$wgArticle->exists()) ) {
-				if ( self::countArticles() == 0) {
-					return;
-				}
-			} else if ( $ajaxHint || in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
-				$params = "arttitle=" . $wgTitle->getPrefixedUrl();
-				if ( !is_null( $wgArticle ) ) {
-					$oldid = $wgArticle->getOldID();
-					$params .= "&oldid=" . $oldid;
-				} else {
-					$oldid = null;
-				}
+      ;
 
-				if ( $ajaxHint == "RemoveArticle" || self::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) {
-					$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-						'Book',
-						'add_article/',
-					  $params ) );
-					$out .= <<<EOS
+    } else if ( $ajaxHint || in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
+      $params = "arttitle=" . $wgTitle->getPrefixedUrl();
+      if ( !is_null( $wgArticle ) ) {
+        $oldid = $wgArticle->getOldID();
+        $params .= "&oldid=" . $oldid;
+      } else {
+        $oldid = null;
+      }
+
+      if ( $ajaxHint == "RemoveArticle" || self::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) {
+        $href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+          'Book',
+          'add_article/',
+          $params ) );
+        $out .= <<<EOS
 <li>
 	<a href="$href" onclick="collectionCall('AddArticle', [wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow">$addArticle</a>
 </li>
 EOS
-					;
-				} else {
-					$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-						'Book',
-						'remove_article/',
-					  $params ) );
-					$out .= <<<EOS
+        ;
+      } else {
+        $href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+          'Book',
+          'remove_article/',
+          $params ) );
+        $out .= <<<EOS
 <li>
 	<a href="$href" onclick="collectionCall('RemoveArticle', [wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow">$removeArticle</a>
 </li>
 EOS
-					;
-				}
-			}
+        ;
+      }
+    }
 			
-			if ( $numArticles > 0 ) {
-				global $wgLang;
-				$articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $wgLang->formatNum( $numArticles ) );
-				$showCollection = wfMsgHtml( 'coll-show_collection' );
-				$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book') );
-				$out .= <<<EOS
+    if ( $showShowAndClearLinks && $numArticles > 0 ) {
+      global $wgLang;
+      $articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $wgLang->formatNum( $numArticles ) );
+      $showCollection = wfMsgHtml( 'coll-show_collection' );
+      $showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book') );
+      $out .= <<<EOS
 							<li><a href="$showURL" rel="nofollow">$showCollection<br />
 								($articles)</a></li>
 EOS
-				;
-			
-				$clearCollection = wfMsgHtml( 'coll-clear_collection' );
-				$params = 'return_to=' . $wgTitle->getFullURL();
-				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-					'Book',
-					'clear_collection/',
-				  $params ) );
-				$msg = htmlspecialchars( wfMsg( 'coll-clear_collection_confirm' ) );
-				$out .= <<<EOS
+      ;
+    
+      $clearCollection = wfMsgHtml( 'coll-clear_collection' );
+      $params = 'return_to=' . $wgTitle->getFullURL();
+      $href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+        'Book',
+        'clear_collection/',
+        $params ) );
+      $msg = htmlspecialchars( wfMsg( 'coll-clear_collection_confirm' ) );
+      $out .= <<<EOS
 <li>
 	<a href="$href" onclick="if (confirm('$msg')) return true; else return false;" rel="nofollow">$clearCollection</a>
 </li>
 EOS
-				;
-			}
-			
-			$helpCollections = wfMsgHtml( 'coll-help_collections' );
-			$helpURL = htmlspecialchars( Title::newFromText( wfMsgForContent( 'coll-helppage' ) )->getFullURL() );
-			$out .= <<<EOS
+      ;
+    }
+    
+    $helpCollections = wfMsgHtml( 'coll-help_collections' );
+    $helpURL = htmlspecialchars( Title::newFromText( wfMsgForContent( 'coll-helppage' ) )->getFullURL() );
+    $out .= <<<EOS
 							<li><a href="$helpURL">$helpCollections</a></li>
 EOS
-			;
-		}
+    ;
 		
 		$out .= "</ul>";
 
