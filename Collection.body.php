@@ -1194,7 +1194,7 @@ EOS
 				$msg = htmlspecialchars( wfMsg( 'coll-clear_collection_confirm' ) );
 				$out .= <<<EOS
 <li>
-	<a href="$href" onclick="if (confirm('$msg')) collectionCall('Clear', []); return false;" rel="nofollow">$clearCollection</a>
+	<a href="$href" onclick="if (confirm('$msg')) return true; else return false;" rel="nofollow">$clearCollection</a>
 </li>
 EOS
 				;
