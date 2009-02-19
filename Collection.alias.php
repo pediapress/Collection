@@ -164,7 +164,7 @@ $aliases['oc'] = array(
 
 /** Polish (Polski) */
 $aliases['pl'] = array(
-	'Book' => array( 'Kolekcja' ),
+	'Book' => array( 'Książka', 'Kolekcja' ),
 );
 
 /** Portuguese (Português) */
