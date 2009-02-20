@@ -1349,9 +1349,11 @@ $messages['eo'] = array(
 	'coll-intro_text' => 'Krei kaj administri individuan selektaĵon de vikiaj paĝoj.<br />Vidu [[{{MediaWiki:Coll-helppage}}]] por plua informo.',
 	'coll-helppage' => 'Help:Libroj',
 	'coll-bookscategory' => 'Libroj',
+	'coll-savedbook_template' => 'konservita_libro',
 	'coll-your_book' => 'Via libro',
 	'coll-download_title' => 'Elŝuti',
 	'coll-download_text' => 'Por elŝuti malkonektan version, elektu formato kaj klaku la butonon.',
+	'coll-download_as_text' => 'Por elŝuti version en formato $1, klaku la butonon.',
 	'coll-download' => 'Elŝuto',
 	'coll-format_label' => 'Formato:',
 	'coll-remove' => 'Forigi',
@@ -3539,6 +3541,7 @@ $messages['ko'] = array(
 	'coll-post_failed_msg' => '$1로의 POST 요청 실패 ($2)',
 	'coll-mwserve_failed_title' => '렌더 서버 오류',
 	'coll-revision' => '판: $1',
+	'coll-login_to_save' => '나중에 사용하기 위해 책을 저장하길 원하신다면 [[Special:UserLogin|로그인하거나 계정을 생성]]해 주세요.',
 	'coll-personal_collection_label' => '개인 책:',
 	'coll-save_collection' => '책 저장',
 	'coll-overwrite_title' => '문서가 존재합니다.
@@ -4938,8 +4941,8 @@ Não poderão ser adicionadas mais páginas.',
 
 <p><strong>Progresso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>Este página deverá refrescar automaticamente após alguns segundos.
-Se isto não funcionar, por favor utilize o botão de refrescamento do seu navegador.</p>',
+<p>Este página deverá atualizar automaticamente após alguns segundos.
+Se isto não funcionar, por favor utilize o botão "atualizar" ("refresh") do seu navegador.</p>',
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(página wiki: $1)',
 	'coll-rendering_page' => '(página: $1)',
@@ -4952,8 +4955,8 @@ Notas:
 	'coll-notfound_title' => 'Livro não encontrado',
 	'coll-notfound_text' => 'Não foi possível encontrar a página do livro.',
 	'coll-is_cached' => '<ul><li>Foi encontrada uma versão deste documento em cache, dispensando a renderização. <a href="$1"> Forçar nova renderização.</a></li></ul>',
-	'coll-excluded-templates' => '* Prédefinições na categoria [[:Category:$1|$1]] foram excluídas.',
-	'coll-blacklisted-templates' => '* Prédefinições na lista negra [[:$1]] foram excluídas.',
+	'coll-excluded-templates' => '* As predefinições na categoria [[:Category:$1|$1]] foram excluídas.',
+	'coll-blacklisted-templates' => '* As predefinições na lista negra [[:$1]] foram excluídas.',
 	'coll-return_to_collection' => '<p>Regressar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Encomendar como livro impresso',
 	'coll-book_text' => 'Adquira um livro impresso de nosso parceiro de impressão-sob-demanda:',
