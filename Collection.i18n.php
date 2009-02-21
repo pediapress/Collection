@@ -2075,8 +2075,8 @@ $messages['gl'] = array(
 	'coll-exclusion_category_title' => 'Excluír na impresión',
 	'coll-print_template_prefix' => 'Imprimir',
 	'coll-create_a_book' => 'Crear un libro',
-	'coll-add_page' => 'Engadir unha páxina wiki',
-	'coll-remove_page' => 'Eliminar unha páxina wiki',
+	'coll-add_page' => 'Engadir a páxina',
+	'coll-remove_page' => 'Eliminar a páxina',
 	'coll-add_category' => 'Engadir categoría',
 	'coll-load_collection' => 'Cargar un libro',
 	'coll-show_collection' => 'Mostrar o libro',
@@ -2108,7 +2108,7 @@ Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa
 	'coll-title' => 'Título:',
 	'coll-subtitle' => 'Subtítulo:',
 	'coll-contents' => 'Contidos',
-	'coll-drag_and_drop' => 'Usar amosar e agochar para reordenar as páxinas e os capítulos wiki',
+	'coll-drag_and_drop' => 'Use amosar e agochar para reordenar as páxinas e os capítulos wiki',
 	'coll-create_chapter' => 'Crear un capítulo',
 	'coll-sort_alphabetically' => 'Ordenar alfabeticamente',
 	'coll-clear_collection' => 'Borrar o libro',
@@ -2153,7 +2153,7 @@ Non se poden engadir máis páxinas.',
 
 <p>Esta páxina debería refrescarse cada poucos segundos.
 Se non vai, por favor, prema no botón "Refrescar" do seu navegador.</p>',
-	'coll-rendering_status' => '<strong>Status:</strong> $1',
+	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(páxina wiki: $1)',
 	'coll-rendering_page' => '(páxina: $1)',
 	'coll-rendering_finished_title' => 'Finalizou a renderización',
@@ -3864,7 +3864,7 @@ $messages['ml'] = array(
 	'coll-create_a_book' => 'എന്റെ ശേഖരം',
 	'coll-add_page' => 'താള്‍ ചേര്‍ക്കുക',
 	'coll-remove_page' => 'താള്‍ മാറ്റുക',
-	'coll-add_category' => 'വിഭാഗം ചേര്‍ക്കുക',
+	'coll-add_category' => 'വര്‍ഗ്ഗം ചേര്‍ക്കുക',
 	'coll-load_collection' => 'ശേഖരം ലോഡ് ചെയ്യുക',
 	'coll-show_collection' => 'ശേഖരം കാണിക്കുക',
 	'coll-help_collections' => 'ശേഖരങ്ങളുടെ സഹായം',
@@ -3885,7 +3885,7 @@ $messages['ml'] = array(
 	'coll-rename' => 'പുനഃര്‍നാമകരണം ചെയ്യുക',
 	'coll-new_chapter' => 'പുതിയ അദ്ധ്യായത്തിനു ഒരു പേരു കൊടുക്കുക',
 	'coll-rename_chapter' => 'അദ്ധ്യായത്തിനു പുതിയൊരു പേരു കൊടുക്കുക',
-	'coll-no_such_category' => 'അങ്ങനെ ഒരു വിഭാഗം നിലവിലില്ല',
+	'coll-no_such_category' => 'അങ്ങനെ ഒരു വര്‍ഗ്ഗം നിലവിലില്ല',
 	'coll-notitle_title' => 'താളിന്റെ തലക്കെട്ട് നിര്‍ണ്ണയിക്കുന്നതിനു കഴിഞ്ഞില്ല.',
 	'coll-error_reponse' => 'സെര്‍‌വറില്‍ നിന്നു പിഴവാണെന്ന മറുപടി കിട്ടി.',
 	'coll-empty_collection' => 'ശൂന്യമായ ശേഖരം',
@@ -6584,7 +6584,7 @@ $messages['zh-hans'] = array(
 	'coll-help_collections' => '图书帮助',
 	'coll-n_pages' => '$1 {{PLURAL:$1|page|pages}}',
 	'coll-unknown_subpage_title' => '未知子页',
-	'coll-unknown_subpage_text' => '这个[[Special:Book|Book]] 的子页面不存在',
+	'coll-unknown_subpage_text' => '这个[[Special:Book|图书]]的子页面不存在',
 	'coll-printable_version_pdf' => 'PDF 版本',
 	'coll-download_as' => '下载为 $1',
 	'coll-noscript_text' => '<h1>JavaScript是必需的！</h1>
@@ -6621,6 +6621,7 @@ $messages['zh-hans'] = array(
 	'coll-notitle_title' => '无法确定此页标题。',
 	'coll-post_failed_msg' => '发送到$1的请求失败（$2）。',
 	'coll-error_reponse' => '服务器错误响应',
+	'coll-revision' => '修订： $1',
 	'coll-save_collection_title' => '保存和共享您的图书',
 	'coll-save_collection_text' => '选择您图书的储藏位置：',
 	'coll-login_to_save' => '如果您想让保存的图书为以后所用，请[[Special:UserLogin|登录或创建账户]]。',
@@ -6631,8 +6632,10 @@ $messages['zh-hans'] = array(
 	'coll-load_overwrite_text' => '您的图书中已经有一些网页。
 是否要覆盖您目前的图书，或添加新内容，或取消载入？',
 	'coll-append' => '附加',
+	'coll-update' => '更新',
 	'coll-limit_exceeded_text' => '您的图书太大。
 禁止新增更多的页面。',
+	'coll-rendering_status' => '<strong>状态：</strong> $1',
 	'coll-rendering_article' => '（维基页面：$1）',
 	'coll-rendering_finished_text' => '<strong>文件已生成。</strong>
 <strong>[$1 下载]</strong>到您的电脑。
@@ -6642,6 +6645,7 @@ $messages['zh-hans'] = array(
 	'coll-notfound_text' => '未找到。',
 	'coll-is_cached' => '<ul><li>一个缓存版本被发现，所以没有必要重新渲染。<a href="$1">强制重新渲染。</a></li></ul>',
 	'coll-excluded-templates' => '* [[:Category:$1|$1]]分类下的页面被排除',
+	'coll-return_to_collection' => '<p>返回到<a href="$1">$2</a></p>',
 	'coll-book_title' => '印刷成一本纸制书',
 	'coll-book_text' => '从我们的合作伙伴中获得已打印您选择的维基页面的纸质书籍：',
 	'coll-order_from_pp' => '从$1的图书订单',
@@ -6649,12 +6653,17 @@ $messages['zh-hans'] = array(
 	'coll-invalid_podpartner_msg' => '合作伙伴无效。
 请联系系统管理员。',
 	'coll-license' => '许可协议',
+	'coll-return_to' => '返回到[[:$1]]',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
+ * @author Skjackey tse
  * @author Wmr89502270
  */
 $messages['zh-hant'] = array(
+	'coll-desc' => '[[Special:Book|建立國書]]',
+	'coll-collection' => '圖書',
+	'coll-collections' => '圖書',
 	'coll-mwserve_failed_msg' => '服务器渲染错误：<nowiki>$1</nowiki>',
 	'coll-save_category' => '所有图书都保存在分类[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]中。',
 	'coll-overwrite' => '覆写',
