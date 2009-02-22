@@ -1021,7 +1021,7 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 	'coll-title' => 'Titel:',
 	'coll-subtitle' => 'Untertitel:',
 	'coll-contents' => 'Inhalt',
-	'coll-drag_and_drop' => 'Mit der Maus kannst du Seiten und Kapitel verschieben, um die Reihenfolge zu ändern',
+	'coll-drag_and_drop' => 'Mit der Maus kannst du Wikiseiten und Kapitel verschieben, um die Reihenfolge zu ändern',
 	'coll-create_chapter' => 'Kapitel erzeugen',
 	'coll-sort_alphabetically' => 'Alphabetisch sortieren',
 	'coll-clear_collection' => 'Buch löschen',
@@ -1038,7 +1038,7 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 	'coll-error_reponse' => 'Fehlermeldung vom Server',
 	'coll-empty_collection' => 'Leeres Buch',
 	'coll-revision' => 'Version: $1',
-	'coll-save_collection_title' => 'Speichere und teile dein Buch',
+	'coll-save_collection_title' => 'Dein Buch speichern und teilen',
 	'coll-save_collection_text' => 'Wähle einen Speicherort für dein Buch:',
 	'coll-login_to_save' => 'Wenn du Bücher speichern möchtest, [[Special:UserLogin|melde dich bitte an oder erstelle ein Benutzerkonto]].',
 	'coll-personal_collection_label' => 'Persönliches Buch:',
@@ -1087,6 +1087,36 @@ Hinweise:
 	'coll-invalid_podpartner_msg' => 'Die Angaben zum Print-on-Demand-Partner sind fehlerhaft. Bitte kontaktiere den MediaWiki-Administrator.',
 	'coll-license' => 'Lizenz',
 	'coll-return_to' => 'Zurück zu [[:$1]]',
+);
+
+/** German (formal address) (Deutsch (Sie-Form))
+ * @author MichaelFrey
+ * @author Umherirrender
+ */
+$messages['de-formal'] = array(
+	'coll-noscript_text' => '<h1>JavaScript wird benötigt!</h1>
+<strong>Ihr Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
+Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong>',
+	'coll-intro_text' => 'Erstellen und verwalten Sie Ihre individuelle Sammlung von Seiten.<br />Siehe die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Büchern]] für weitere Informationen.',
+	'coll-your_book' => 'Ihr Buch',
+	'coll-drag_and_drop' => 'Mit der Maus können Sie Wikiseiten und Kapitel verschieben, um die Reihenfolge zu ändern',
+	'coll-clear_collection_confirm' => 'Möchten Sie wirklich Ihr Buch löschen?',
+	'coll-new_chapter' => 'Geben Sie einen Namen für ein neues Kapitel ein',
+	'coll-rename_chapter' => 'Geben Sie einen neuen Namen für das Kapitel ein',
+	'coll-save_collection_title' => 'Ihr Buch speichern und teilen',
+	'coll-save_collection_text' => 'Wählen Sie einen Speicherort für Ihr Buch:',
+	'coll-login_to_save' => 'Wenn Sie Bücher speichern möchten, [[Special:UserLogin|melden Sie sich bitte an oder erstellen ein Benutzerkonto]].',
+	'coll-overwrite_text' => 'Eine Seite mit dem Namen [[:$1]] ist bereits vorhanden. Möchten Sie diese durch Ihr Buch ersetzen?',
+	'coll-load_overwrite_text' => 'Ihr Buch enthält bereits Seiten.
+Möchten Sie das aktuelle Buch überschreiben, die neuen Seiten anhängen oder das Laden dieses Buches abbrechen?',
+	'coll-limit_exceeded_text' => 'Ihr Buch ist zu groß. Es können keine Seiten mehr hinzugefügt werden.',
+	'coll-rendering_text' => '<p><strong>Bitte haben Sie Geduld, während das Dokument erstellt wird.</strong></p>
+
+<p><strong>Fortschritt:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
+
+<p>Diese Seite sollte sich alle paar Sekunden von selbst aktualisieren.
+Wenn das jedoch nicht geschieht, drücke bitte den „Aktualisieren“-Knopf (meist F5) Ihres Browsers.</p>',
+	'coll-notfound_text' => 'Ihr Buch konnte nicht gefunden werden.',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -2766,31 +2796,34 @@ Skontaktuj prošu swojeho administratora MediaWiki.',
  * @author Dani
  */
 $messages['hu'] = array(
-	'coll-desc' => '[[Special:Collection|Gyűjts oldalakat]], készíts PDF-eket',
-	'coll-collection' => 'Gyűjtemény',
-	'coll-collections' => 'Gyűjtemények',
+	'coll-desc' => '[[Special:Book|Készíts könyveket!]]',
+	'coll-collection' => 'Könyv',
+	'coll-collections' => 'Könyvek',
 	'coll-exclusion_category_title' => 'Nyomtatásban kihagyandó',
 	'coll-print_template_prefix' => 'Nyomtatott',
 	'coll-create_a_book' => 'Készíts egy könyvet',
 	'coll-add_page' => 'Wiki oldal hozzáadása',
 	'coll-remove_page' => 'Wiki oldal eltávolítása',
 	'coll-add_category' => 'Kategória hozzáadása',
-	'coll-load_collection' => 'Gyűjtemény betöltése',
-	'coll-show_collection' => 'Gyűjtemény mutatása',
-	'coll-help_collections' => 'Gyűjtemények súgó',
+	'coll-load_collection' => 'Könyv betöltése',
+	'coll-show_collection' => 'Könyv mutatása',
+	'coll-help_collections' => 'Könyvek segítség',
 	'coll-n_pages' => '$1 oldal',
 	'coll-unknown_subpage_title' => 'Ismeretlen aloldal',
-	'coll-unknown_subpage_text' => 'A [[Special:Collection|Gyűjtemény]] ezen aloldala nem létezik.',
+	'coll-unknown_subpage_text' => 'A [[Special:Book|könyv]] ezen allapja nem létezik.',
 	'coll-printable_version_pdf' => 'PDF változat',
 	'coll-download_as' => 'Letöltés mint $1',
 	'coll-noscript_text' => '<h1>JavaScript szüséges!</h1>
 <strong>A böngésződ nem támogatja a JavaScriptet, vagy az ki lett kapcsolva.
 Ez az oldal nem működik megfelelően amíg a JavaScript nincs bekapcsolva.</strong>',
 	'coll-intro_text' => 'Készíts és kezelj saját wiki oldal gyűjteményeket.<br />Lásd [[{{MediaWiki:Coll-helppage}}]] oldalt további információkért.',
-	'coll-helppage' => 'Segítség:Gyűjtemények',
+	'coll-helppage' => 'Segítség:Könyvek',
+	'coll-bookscategory' => 'Könyvek',
+	'coll-savedbook_template' => 'elmentett_könyv',
 	'coll-your_book' => 'A Te könyved',
 	'coll-download_title' => 'Letöltés',
-	'coll-download_text' => 'Egy offline változat letöltéséhez válaszd ki a formátumot és nyomd meg a gombot!',
+	'coll-download_text' => 'Egy változat letöltéséhez válaszd ki a formátumot és nyomd meg a gombot!',
+	'coll-download_as_text' => '$1 formátumú változat letöltéséhez nyomd meg a gombot!',
 	'coll-download' => 'Letöltés',
 	'coll-format_label' => 'Formátum:',
 	'coll-remove' => 'Eltávolítás',
@@ -2805,8 +2838,8 @@ Ez az oldal nem működik megfelelően amíg a JavaScript nincs bekapcsolva.</st
 	'coll-drag_and_drop' => 'Fogd és vidd módszerrel rendezd át a wiki oldalak és fejezetek sorrendjét',
 	'coll-create_chapter' => 'Fejezet készítése',
 	'coll-sort_alphabetically' => 'Rendezés ábécésorrend szerint',
-	'coll-clear_collection' => 'Gyűjtemény törlése',
-	'coll-clear_collection_confirm' => 'Valóban törölni szeretnéd a gyűjteményed?',
+	'coll-clear_collection' => 'Könyv törlése',
+	'coll-clear_collection_confirm' => 'Valóban törölni szeretnéd a könyved?',
 	'coll-rename' => 'Átnevezés',
 	'coll-new_chapter' => 'Írd be az új fejezet címét',
 	'coll-rename_chapter' => 'Add meg a fejezet új címét',
@@ -2817,29 +2850,29 @@ Ez az oldal nem működik megfelelően amíg a JavaScript nincs bekapcsolva.</st
 	'coll-mwserve_failed_title' => 'A renderelő szerver hibát észlelt',
 	'coll-mwserve_failed_msg' => 'Hiba történt a renderelő szerveren: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Hibaüzenet érkezett a szervertől',
-	'coll-empty_collection' => 'Üres gyűjtemény',
+	'coll-empty_collection' => 'Üres könyv',
 	'coll-revision' => 'Változat: $1',
-	'coll-save_collection_title' => 'Mentsd el és oszd meg a gyűjteményed',
-	'coll-save_collection_text' => 'Válassz egy helyet:',
-	'coll-login_to_save' => 'Amennyiben elszeretnéd menteni a gyűjteményed későbbi használatra, kérlek [[Special:UserLogin|jelentkezz be vagy készíts egy felhasználói fiókot]].',
-	'coll-personal_collection_label' => 'Személyes gyűjtemény:',
-	'coll-community_collection_label' => 'Közösségi gyűjtemény:',
-	'coll-save_collection' => 'Gyűjtemény mentése',
-	'coll-save_category' => 'A gyűjtemények a [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] kategóriába mentődnek.',
+	'coll-save_collection_title' => 'Mentsd el és oszd meg a könyved',
+	'coll-save_collection_text' => 'Válassz egy tárolási helyet a könyvednek:',
+	'coll-login_to_save' => 'Amennyiben elszeretnéd menteni a könyved későbbi használatra, kérlek [[Special:UserLogin|jelentkezz be vagy készíts egy felhasználói fiókot]].',
+	'coll-personal_collection_label' => 'Személyes könyv:',
+	'coll-community_collection_label' => 'Közösségi könyv:',
+	'coll-save_collection' => 'Könyv mentése',
+	'coll-save_category' => 'A könyvek a [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] kategóriába mentődnek.',
 	'coll-overwrite_title' => 'Az oldal már létezik.
 Felülírjam?',
-	'coll-overwrite_text' => 'Egy [[:$1]] nevű gyüjtemény már létezik.
-Szeretnéd lecserélni a saját gyűjteményedre?',
+	'coll-overwrite_text' => '„[[:$1]]” nevű oldal már létezik.
+Szeretnéd lecserélni a saját könyvedre?',
 	'coll-yes' => 'Igen',
 	'coll-no' => 'Nem',
-	'coll-load_overwrite_text' => 'Már van néhány oldal a gyűjteményedben.
-Szeretnéd felülírni, az új tartalommal kiegészíteni a gyűjteményed vagy abbahagyni a gyűjtemény betöltését?',
+	'coll-load_overwrite_text' => 'Már van néhány oldal a könyvedben.
+Szeretnéd felülírni, az új tartalommal kiegészíteni a könyved vagy abbahagyni e könyv betöltését?',
 	'coll-overwrite' => 'Felülír',
 	'coll-append' => 'Hozzáad',
 	'coll-cancel' => 'Mégse',
 	'coll-update' => 'Frissít',
-	'coll-limit_exceeded_title' => 'A gyűjtemény túl nagy',
-	'coll-limit_exceeded_text' => 'Az oldalgyűjteményed túl nagy.
+	'coll-limit_exceeded_title' => 'A könyv túl nagy',
+	'coll-limit_exceeded_text' => 'A könyved túl nagy.
 Nem lehet több oldalt hozzáadni.',
 	'coll-rendering_title' => 'Renderelés',
 	'coll-rendering_text' => '<p><strong>Kérlek várj amíg a dokumentum elkészül!</strong></p>
@@ -2856,9 +2889,9 @@ Ha ez nem történik meg, kérlek nyomd meg a böngésződ frissítés gombját!
 <strong>[$1 Töltsd le a fájlt]</strong> a számítógépedre.
 
 Megjegyzés:
-* Nem vagy elégedett az eredménnyel? Lásd a  [[{{MediaWiki:Coll-helppage}}|gyűjteményekről szóló segítség oldalt]] a javítási lehetőségekről.',
-	'coll-notfound_title' => 'A gyűjtemény nem található',
-	'coll-notfound_text' => 'A gyűjtemény oldal nem található.',
+* Nem vagy elégedett az eredménnyel? Lásd a  [[{{MediaWiki:Coll-helppage}}|könyvekről szóló segítség oldalt]] a javítási lehetőségekről.',
+	'coll-notfound_title' => 'A könyv nem található',
+	'coll-notfound_text' => 'A könyvoldal nem található.',
 	'coll-is_cached' => '<ul><li>A dokumentum egy gyorsítótárazott változata megtalálható volt így nem volt szükség renderelésre.<a href="$1">Újra renderelés kényszerítése.</a></li></ul>',
 	'coll-excluded-templates' => 'A(z) [[:Category:$1|$1]] kategóriában lévő sablonok figyelmen kívül lettek hagyva.',
 	'coll-blacklisted-templates' => '* A(z) [[:$1]] feketelistán található sablonok figyelmen kívül lettek hagyva.',
@@ -5368,6 +5401,8 @@ $messages['sah'] = array(
 
 Биллэрии:
 * Оччото суох дуо? [[{{MediaWiki:Coll-helppage}}|Кинигэлэри оҥорорго көмөҕө]] тупсарыы туһунан суруллубут.',
+	'coll-notfound_title' => 'Кинигэ көстүбэтэ',
+	'coll-notfound_text' => 'Кинигэ сирэйин булар табыллыбата.',
 );
 
 /** Slovak (Slovenčina)
@@ -6567,6 +6602,7 @@ Pads pluik nonik kanons paläükön.',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Chenzw
  * @author Wmr89502270
  */
 $messages['zh-hans'] = array(
@@ -6632,6 +6668,7 @@ $messages['zh-hans'] = array(
 	'coll-load_overwrite_text' => '您的图书中已经有一些网页。
 是否要覆盖您目前的图书，或添加新内容，或取消载入？',
 	'coll-append' => '附加',
+	'coll-cancel' => '取消',
 	'coll-update' => '更新',
 	'coll-limit_exceeded_text' => '您的图书太大。
 禁止新增更多的页面。',
@@ -6659,14 +6696,15 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Skjackey tse
  * @author Wmr89502270
+ * @author Wong128hk
  */
 $messages['zh-hant'] = array(
-	'coll-desc' => '[[Special:Book|建立國書]]',
+	'coll-desc' => '[[Special:Book|建立圖書]]',
 	'coll-collection' => '圖書',
 	'coll-collections' => '圖書',
 	'coll-mwserve_failed_msg' => '服务器渲染错误：<nowiki>$1</nowiki>',
 	'coll-save_category' => '所有图书都保存在分类[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]中。',
-	'coll-overwrite' => '覆写',
+	'coll-overwrite' => '覆寫',
 	'coll-cancel' => '取消',
 	'coll-blacklisted-templates' => '* 由于模板[[:$1]]在黑名单之中所以它被排除。',
 );
