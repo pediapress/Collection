@@ -2383,6 +2383,7 @@ $messages['he'] = array(
 	'coll-collections' => 'ספרים',
 	'coll-exclusion_category_title' => 'דפים שאינם להדפסה',
 	'coll-print_template_prefix' => 'הדפסה',
+	'coll-print_template_pattern' => '$1/הדפסה',
 	'coll-create_a_book' => 'יצירת ספר',
 	'coll-add_page' => 'הוספת דף ויקי',
 	'coll-remove_page' => 'הסרת דף ויקי',
