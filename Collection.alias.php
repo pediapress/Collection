@@ -94,7 +94,7 @@ $aliases['hsb'] = array(
 
 /** Hungarian (Magyar) */
 $aliases['hu'] = array(
-	'Book' => array( 'Gyűjtemény', 'Gyűjtemények' ),
+	'Book' => array( 'Könyv', 'Könyvek', 'Gyűjtemény', 'Gyűjtemények' ),
 );
 
 /** Interlingua (Interlingua) */

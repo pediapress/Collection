@@ -548,6 +548,7 @@ $messages['be-tarask'] = array(
 	'coll-collections' => 'Кнігі',
 	'coll-exclusion_category_title' => 'Выключэньні з друку',
 	'coll-print_template_prefix' => 'Друк',
+	'coll-print_template_pattern' => '$1/Для друку',
 	'coll-create_a_book' => 'Стварыць кнігу',
 	'coll-add_page' => 'Дадаць вікі-старонку',
 	'coll-remove_page' => 'Выдаліць вікі-старонку',
@@ -714,6 +715,7 @@ $messages['bs'] = array(
 	'coll-collections' => 'Knjige',
 	'coll-exclusion_category_title' => 'Isključivanja pri štampanju',
 	'coll-print_template_prefix' => 'Štampanje',
+	'coll-print_template_pattern' => '$1/Štampaj',
 	'coll-create_a_book' => 'Napravi knjigu',
 	'coll-add_page' => 'Dodaj wiki stranicu',
 	'coll-remove_page' => 'Ukloni wiki stranicu',
@@ -857,6 +859,7 @@ $messages['cs'] = array(
 	'coll-collections' => 'Knihy',
 	'coll-exclusion_category_title' => 'Netisknout',
 	'coll-print_template_prefix' => 'Tisk',
+	'coll-print_template_pattern' => '$1/Tisk',
 	'coll-create_a_book' => 'Vytvořit knihu',
 	'coll-add_page' => 'Přidat tuto stránku',
 	'coll-remove_page' => 'Odebrat tuto stránku',
@@ -1130,6 +1133,7 @@ $messages['dsb'] = array(
 	'coll-collections' => 'Knigły',
 	'coll-exclusion_category_title' => 'Wót śišća wuzamknuś',
 	'coll-print_template_prefix' => 'Śišćaś',
+	'coll-print_template_pattern' => '$1/Śišćaś',
 	'coll-create_a_book' => 'Knigły napóraś',
 	'coll-add_page' => 'Wikijowy bok pśidaś',
 	'coll-remove_page' => 'Wikijowy bok wótwónoźeś',
@@ -1983,6 +1987,7 @@ $messages['fr'] = array(
 	'coll-collections' => 'Livres',
 	'coll-exclusion_category_title' => "Exclure lors de l'impression",
 	'coll-print_template_prefix' => 'Imprimer',
+	'coll-print_template_pattern' => '$1/Print',
 	'coll-create_a_book' => 'Créer un livre',
 	'coll-add_page' => 'Ajouter une page wiki',
 	'coll-remove_page' => 'Enlever une page wiki',
@@ -2106,6 +2111,7 @@ $messages['gl'] = array(
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluír na impresión',
 	'coll-print_template_prefix' => 'Imprimir',
+	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-create_a_book' => 'Crear un libro',
 	'coll-add_page' => 'Engadir a páxina',
 	'coll-remove_page' => 'Eliminar a páxina',
@@ -2689,6 +2695,7 @@ $messages['hsb'] = array(
 	'coll-collections' => 'Knihi',
 	'coll-exclusion_category_title' => 'Wot ćišćenja wuzamknyć',
 	'coll-print_template_prefix' => 'Ćišćeć',
+	'coll-print_template_pattern' => '$1/Ćišćeć',
 	'coll-create_a_book' => 'Knihu wutworić',
 	'coll-add_page' => 'Wikijowu stronu přidać',
 	'coll-remove_page' => 'Wikijowu stronu wotstronić',
@@ -2919,6 +2926,7 @@ $messages['ia'] = array(
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluder del impression',
 	'coll-print_template_prefix' => 'Imprimer',
+	'coll-print_template_pattern' => '$1/Imprimer',
 	'coll-create_a_book' => 'Crear un libro',
 	'coll-add_page' => 'Adder un pagina wiki',
 	'coll-remove_page' => 'Remover pagina wiki',
@@ -3223,6 +3231,7 @@ $messages['ja'] = array(
 	'coll-collections' => 'ブック',
 	'coll-exclusion_category_title' => '印刷から除外',
 	'coll-print_template_prefix' => '印刷用',
+	'coll-print_template_pattern' => '$1/印刷用',
 	'coll-create_a_book' => 'ブックを新規作成',
 	'coll-add_page' => 'ウィキページの追加',
 	'coll-remove_page' => 'ウィキページの削除',
@@ -3755,6 +3764,7 @@ $messages['lb'] = array(
 	'coll-collections' => 'Bicher',
 	'coll-exclusion_category_title' => 'Net mat drécken',
 	'coll-print_template_prefix' => 'Drécken',
+	'coll-print_template_pattern' => '$1/Drock',
 	'coll-create_a_book' => 'E Buch uleeën',
 	'coll-add_page' => 'Wiki-Säit derbäisetzen',
 	'coll-remove_page' => 'Wiki-Säit ewechhuelen',
@@ -4266,6 +4276,7 @@ $messages['nds'] = array(
 /** Dutch (Nederlands)
  * @author Erwin85
  * @author GerardM
+ * @author McDutchie
  * @author SPQRobin
  * @author Siebrand
  * @author Tvdm
@@ -4276,6 +4287,7 @@ $messages['nl'] = array(
 	'coll-collections' => 'Boeken',
 	'coll-exclusion_category_title' => 'Weglaten bij afdrukken',
 	'coll-print_template_prefix' => 'Afdruk',
+	'coll-print_template_pattern' => '$1/Afdrukken',
 	'coll-create_a_book' => 'Boek maken',
 	'coll-add_page' => 'Wikipagina toevoegen',
 	'coll-remove_page' => 'Wikipagina verwijderen',
@@ -4384,6 +4396,7 @@ Neem contact op met uw MediaWiki-beheerder.',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
  */
@@ -4393,6 +4406,7 @@ $messages['nn'] = array(
 	'coll-collections' => 'Bøker',
 	'coll-exclusion_category_title' => 'Ekskluder ved utskrift',
 	'coll-print_template_prefix' => 'Skriv ut',
+	'coll-print_template_pattern' => '$1/Skriv ut',
 	'coll-create_a_book' => 'Opprett ei bok',
 	'coll-add_page' => 'Legg til wikisida',
 	'coll-remove_page' => 'Fjern wikisida',
@@ -4900,6 +4914,7 @@ $messages['pt'] = array(
 	'coll-collections' => 'Livros',
 	'coll-exclusion_category_title' => 'Excluir da impressão',
 	'coll-print_template_prefix' => 'Imprime',
+	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-create_a_book' => 'Criar um livro',
 	'coll-add_page' => 'Adicionar página wiki',
 	'coll-remove_page' => 'Remover página wiki',
@@ -4937,7 +4952,7 @@ Esta página não funcionará correctamente, excepto se o JavaScript for activad
 	'coll-drag_and_drop' => 'Arraste-e-solte para re-ordenar as páginas wiki e capítulos',
 	'coll-create_chapter' => 'Criar capítulo',
 	'coll-sort_alphabetically' => 'Ordenar alfabeticamente',
-	'coll-clear_collection' => 'Limpar livro',
+	'coll-clear_collection' => 'Esvaziar livro',
 	'coll-clear_collection_confirm' => 'Deseja realmente limpar completamente o seu livro?',
 	'coll-rename' => 'Renomear',
 	'coll-new_chapter' => 'Introduza o nome do novo capítulo',
@@ -5678,6 +5693,7 @@ $messages['sv'] = array(
 	'coll-collections' => 'Böcker',
 	'coll-exclusion_category_title' => 'Uteslut vid utskrift',
 	'coll-print_template_prefix' => 'Utskrift',
+	'coll-print_template_pattern' => '$1/Skriv ut',
 	'coll-create_a_book' => 'Skapa en bok',
 	'coll-add_page' => 'Lägg till wikisida',
 	'coll-remove_page' => 'Ta bort wikisida',
@@ -5789,19 +5805,23 @@ Var god kontakta din MediaWiki-administratör.',
  * @author వైజాసత్య
  */
 $messages['te'] = array(
-	'coll-desc' => '[[Special:Collection|పేజీలను సేకరించండి]], PDFలను తయారుచేసుకోండి',
-	'coll-collection' => 'సేరకణ',
-	'coll-collections' => 'సేరకణలు',
+	'coll-desc' => '[[Special:Book|పుస్తకాలను తయారుచేసుకోండి]]',
+	'coll-collection' => 'పుస్తకం',
+	'coll-collections' => 'పుస్తకాలు',
 	'coll-create_a_book' => 'ఓ పుస్తకాన్ని సృష్టించండి',
 	'coll-add_page' => 'వికీ పేజీని చేర్చు',
 	'coll-remove_page' => 'వికీ పేజీని తొలగించు',
 	'coll-add_category' => 'వర్గాన్ని చేర్చు',
 	'coll-show_collection' => 'సేకరణని చూపించు',
-	'coll-help_collections' => 'సేకరణల సహాయం',
+	'coll-help_collections' => 'పుస్తకాల సహాయం',
 	'coll-n_pages' => '$1 {{PLURAL:$1|పేజీ|పేజీలు}}',
-	'coll-helppage' => 'Help:సేకరణలు',
+	'coll-printable_version_pdf' => 'PDF కూర్పు',
+	'coll-helppage' => 'Help:పుస్తకాలు',
+	'coll-bookscategory' => 'పుస్తకాలు',
+	'coll-your_book' => 'మీ పుస్తకం',
 	'coll-download_title' => 'సేకరణని PDFగా దిగుమతి చేసుకోండి',
 	'coll-download_text' => 'మీ పేజీ సేకరణ నుండి ఆటోమెటిగ్గా తయారయిన PDF ఫైలుని దిగుమతిచేసుకోడానికి, ఈ బొత్తాన్ని నొక్కండి.',
+	'coll-download' => 'దిగుమతి',
 	'coll-remove' => 'తొలగించు',
 	'coll-move_up' => 'పైకి కదుపు',
 	'coll-move_down' => 'క్రిందికి కదుపు',
@@ -5818,13 +5838,13 @@ $messages['te'] = array(
 	'coll-notitle_title' => 'ఆ పేజీ యొక్క శీర్షికని నిర్ణయించలేకున్నాం.',
 	'coll-post_failed_title' => 'POST అభ్యర్థన విఫలమైంది',
 	'coll-error_reponse' => 'సర్వరునుండి పొరపాటు అని స్పందన వచ్చింది',
-	'coll-empty_collection' => 'ఖాళీ సేకరణ',
+	'coll-empty_collection' => 'ఖాళీ పుస్తకం',
 	'coll-revision' => 'కూర్పు: $1',
 	'coll-save_collection_title' => 'సేకరణని భద్రపరచండి',
 	'coll-save_collection_text' => 'ఈ సేకరణని తర్వాత వాడుకోడానికి భద్రపరచుకోవాలంటే, ఓ సేకరణ రకాన్ని ఎంచుకోండి మరియు పేజీ శీర్షిక ఇవ్వండి:',
 	'coll-login_to_save' => 'సేకరణలని మీరు తర్వాత వాడుకోవడానికి భద్రపరచుకోవాలనుకుంటే, [[Special:UserLogin|లోనికి ప్రవేశించండి లేదా ఖాతా సృష్టించుకోండి]].',
 	'coll-personal_collection_label' => 'వ్యక్తిగత సేరకణ:',
-	'coll-community_collection_label' => 'సామూహిక సేకరణ:',
+	'coll-community_collection_label' => 'సామూహిక పుస్తకం:',
 	'coll-save_collection' => 'సేకరణని భద్రపరచు',
 	'coll-overwrite_title' => 'పేజీ ఉంది. దానిపైనే రాసేయాలా?',
 	'coll-overwrite_text' => '[[:$1]] అనే పేరుతో ఓ పేజీ ఇప్పటికే ఉంది.
@@ -5833,9 +5853,11 @@ $messages['te'] = array(
 	'coll-no' => 'కాదు',
 	'coll-append' => 'జతచేయి',
 	'coll-cancel' => 'రద్దు',
-	'coll-limit_exceeded_title' => 'సేకరణ మరీ పెద్దగా ఉంది',
+	'coll-limit_exceeded_title' => 'పుస్తకం మరీ పెద్దగా ఉంది',
 	'coll-limit_exceeded_text' => 'మీ పేజీ సేకరణ చాలా పెద్దగా ఉంది.
 మరిన్ని పేజీలు చేర్చలేము.',
+	'coll-rendering_status' => '<strong>స్థితి:</strong> $1',
+	'coll-rendering_article' => '(వికీ పేజీ: $1)',
 	'coll-rendering_page' => '  (పేజీ: $1)',
 	'coll-notfound_title' => 'సేకరణ కనబడలేదు',
 	'coll-notfound_text' => 'సేకరణ పేజీ కనబడలేదు.',
@@ -5843,6 +5865,7 @@ $messages['te'] = array(
 	'coll-order_from_pp' => '$1 నుండి పుస్తకాన్ని ఆర్డర్ చెయ్యండి',
 	'coll-about_pp' => '$1 గురించి',
 	'coll-license' => 'లైసెన్సు',
+	'coll-return_to' => 'తిరిగి [[:$1]]కి',
 );
 
 /** Tetum (Tetun)
