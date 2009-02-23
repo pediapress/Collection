@@ -717,7 +717,7 @@ class Collection extends SpecialPage {
 			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
 			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
 			'print_template_prefix' => wfMsgForContent( 'coll-print_template_prefix' ),
-			'print_template_subpage' => wfMsgForContent( 'coll-print_template_subbpage' ),
+			'print_template_pattern' => wfMsgForContent( 'coll-print_template_pattern' ),
 			'language' => $wgContLang->getCode(),
 			'writer' => $writer,
 		) );
@@ -754,7 +754,7 @@ class Collection extends SpecialPage {
 			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
 			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
 			'print_template_prefix' => wfMsgForContent( 'coll-print_template_prefix' ),
-			'print_template_subpage' => wfMsgForContent( 'coll-print_template_subpage' ),
+            'print_template_pattern' => wfMsgForContent( 'coll-print_template_pattern' ),
 			'language' => $wgContLang->getCode(),
 			'writer' => $writer,
 			'force_render' => true
@@ -910,7 +910,7 @@ class Collection extends SpecialPage {
 			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
 			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
 			'print_template_prefix' => wfMsgForContent( 'coll-print_template_prefix' ),
-			'print_template_subpage' => wfMsgForContent( 'coll-print_template_subpage' ),
+			'print_template_pattern' => wfMsgForContent( 'coll-print_template_pattern' ),
 			'pod_api_url' => $this->mPODPartners[$partner]['posturl'],
 		) );
 		if ( !$response ) {
