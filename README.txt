@@ -191,9 +191,9 @@ Installation and Configuration of the Collection Extension
   one day). Adjust session.cookie_lifetime and session.gc_maxlifetime in your
   ``php.ini`` accordingly.
 
-* Add a help page (e.g. ``Help:Collections`` for wikis in English language)
-  with the wikitext from on of the supplied files in the ``helppages/`` and
-  adjust it according to your wiki-specific setup.
+* Add a help page (e.g. ``Help:Books`` for wikis in English language).
+  A repository of help pages in different languages can be found on
+  `Meta-Wiki`_.
 
 .. _mwlib: http://code.pediapress.com/wiki/wiki/mwlib
 .. _MediaWiki: http://www.mediawiki.org/
@@ -201,3 +201,4 @@ Installation and Configuration of the Collection Extension
 .. _`Wikimedia Foundation`: http://wikimediafoundation.org/
 .. _`Commonwealth of Learning`: http://www.col.org/
 .. _`MediaWiki API`: http://www.mediawiki.org/wiki/API
+.. _`Meta-Wiki`: http://meta.wikimedia.org/wiki/Book_tool/Help/Books
