@@ -281,6 +281,7 @@ $messages['ar'] = array(
 	'coll-collections' => 'كتب',
 	'coll-exclusion_category_title' => 'استثن في الطباعة',
 	'coll-print_template_prefix' => 'طباعة',
+	'coll-print_template_pattern' => '$1/طبع',
 	'coll-create_a_book' => 'إنشاء كتاب',
 	'coll-add_page' => 'إضافة صفحة ويكي',
 	'coll-remove_page' => 'إزالة صفحة ويكي',
@@ -1979,6 +1980,7 @@ Ota yhteys MediaWiki-ylläpitäjääsi.',
  * @author Korrigan
  * @author McDutchie
  * @author Meithal
+ * @author PieRRoMaN
  * @author Verdy p
  */
 $messages['fr'] = array(
@@ -2053,7 +2055,7 @@ Voulez-vous la remplacer par votre livre ?',
 	'coll-yes' => 'Oui',
 	'coll-no' => 'Non',
 	'coll-load_overwrite_text' => 'Vous avez déjà des pages dans votre livre.
-Voulez-vous écraser votre livre actuel, y rajouter le nouveau contenu ou bien annuler le chargement de ce livre ?',
+Voulez-vous écraser votre livre actuel, y ajouter le nouveau contenu ou bien annuler le chargement de ce livre ?',
 	'coll-overwrite' => 'Écraser',
 	'coll-append' => 'Ajouter',
 	'coll-cancel' => 'Annuler',
@@ -2248,6 +2250,7 @@ $messages['gsw'] = array(
 	'coll-collections' => 'Biecher',
 	'coll-exclusion_category_title' => 'Vum Druck usschließe',
 	'coll-print_template_prefix' => 'Drucke',
+	'coll-print_template_pattern' => '$1/Druck',
 	'coll-create_a_book' => 'Buech aalege',
 	'coll-add_page' => 'Artikel zuefiege',
 	'coll-remove_page' => 'Artikel useneh',
@@ -3647,6 +3650,7 @@ $messages['ksh'] = array(
 	'coll-collections' => 'Bööscher',
 	'coll-exclusion_category_title' => 'Nit met drokke',
 	'coll-print_template_prefix' => 'Drocke',
+	'coll-print_template_pattern' => '$1/Dröcke',
 	'coll-create_a_book' => 'E Booch zesamme_ställe',
 	'coll-add_page' => 'En Sigg dobei donn',
 	'coll-remove_page' => 'En Sigg eruß nämme',
@@ -4769,6 +4773,7 @@ $messages['pl'] = array(
 	'coll-collections' => 'Książki',
 	'coll-exclusion_category_title' => 'Omiń w druku',
 	'coll-print_template_prefix' => 'Drukuj',
+	'coll-print_template_pattern' => '$1/Wydruk',
 	'coll-create_a_book' => 'Utwórz książkę',
 	'coll-add_page' => 'Dodaj stronę',
 	'coll-remove_page' => 'Usuń stronę',
@@ -5217,6 +5222,7 @@ $messages['ru'] = array(
 	'coll-collections' => 'Книги',
 	'coll-exclusion_category_title' => 'Исключения из печати',
 	'coll-print_template_prefix' => 'Печать',
+	'coll-print_template_pattern' => '$1/Печать',
 	'coll-create_a_book' => 'Создать книгу',
 	'coll-add_page' => 'Добавить страницу',
 	'coll-remove_page' => 'Удалить страницу',
