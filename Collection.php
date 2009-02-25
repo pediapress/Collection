@@ -129,7 +129,9 @@ function wfAjaxGetCollection() {
 	} else {
 		$collection = array();
 	}
-	return $json->encode( array( 'collection' => $collection ) );
+	$r = new AjaxResponse( $json->encode( array( 'collection' => $collection ) ) );
+  $r->setContentType( 'application/json' );
+  return $r;
 }
 
 $wgAjaxExportList[] = 'wfAjaxGetCollection';
@@ -141,7 +143,9 @@ function wfAjaxPostCollection( $collection='' ) {
 	}
 	$collection = $json->decode( $collection );
 	$_SESSION['wsCollection'] = $collection;
-	return $json->encode( array( 'collection' => $collection ) );
+	$r = new AjaxResponse( $json->encode( array( 'collection' => $collection ) ) );
+  $r->setContentType( 'application/json' );
+  return $r;
 }
 
 $wgAjaxExportList[] = 'wfAjaxPostCollection';
@@ -152,7 +156,9 @@ function wfAjaxGetMWServeStatus( $collection_id='', $writer='rl' ) {
 		'collection_id' => $collection_id,
 		'writer' => $writer
 	) );
-	return $json->encode( $result );
+  $r = new AjaxResponse( $json->encode( $result ) );
+  $r->setContentType( 'application/json' );
+  return $r;
 }
 
 $wgAjaxExportList[] = 'wfAjaxGetMWServeStatus';
