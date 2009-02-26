@@ -521,10 +521,10 @@ class Collection extends SpecialPage {
 
 		foreach( preg_split( '/[\r\n]+/', $article->getContent() ) as $line ) {
 			$line = trim( $line );
-			if ( !$append && preg_match( '/^== (.*) ==$/', $line, $match) ) {
-				$collection['title'] = $match[ 1 ];
-			} else if ( !$append && preg_match( '/^=== (.*) ===$/', $line, $match) ) {
+			if ( !$append && preg_match( '/^===\s*(.*?)\s*===$/', $line, $match) ) {
 				$collection['subtitle'] = $match[ 1 ];
+			} else if ( !$append && preg_match( '/^==\s*(.*?)\s*==$/', $line, $match) ) {
+				$collection['title'] = $match[ 1 ];
 			} else if ($line{ 0 } == ';') { // chapter
 				$items[] = array(
 					'type' => 'chapter',
