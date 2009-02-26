@@ -3040,7 +3040,7 @@ $messages['hy'] = array(
  * @author McDutchie
  */
 $messages['ia'] = array(
-	'coll-desc' => '[[Special:Book|Crea libros]]',
+	'coll-desc' => '[[Special:Book|Crear libros]]',
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluder del impression',
@@ -3090,7 +3090,7 @@ Iste pagina non functionara correctemente si JavaScript non es activate.</strong
 	'coll-rename_chapter' => 'Entra nove nomine pro capitulo',
 	'coll-no_such_category' => 'Categoria non existe',
 	'coll-notitle_title' => 'Le titulo del pagina non poteva esser determinate.',
-	'coll-post_failed_title' => 'Requeta POST fallite',
+	'coll-post_failed_title' => 'Requesta POST fallite',
 	'coll-post_failed_msg' => 'Le requesta POST a $1 falleva ($2).',
 	'coll-mwserve_failed_title' => 'Error del servitor de renditiones',
 	'coll-mwserve_failed_msg' => 'Un error ha occurrite in le servitor de renditiones: <nowiki>$1</nowiki>',
@@ -5337,6 +5337,7 @@ $messages['roa-tara'] = array(
  * @author Innv
  * @author Kaganer
  * @author MaxSem
+ * @author Sergey kudryavtsev
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -5410,7 +5411,7 @@ $messages['ru'] = array(
 	'coll-yes' => 'Да',
 	'coll-no' => 'Нет',
 	'coll-load_overwrite_text' => 'У вас уже есть несколько страниц в книге.
-Вы хотите перезаписать вашу текущею книгу, добавить новый материал или отменить загрузку этой книги?',
+Вы хотите перезаписать вашу текущую книгу, добавить новый материал или отменить загрузку этой книги?',
 	'coll-overwrite' => 'Перезаписать',
 	'coll-append' => 'Добавить',
 	'coll-cancel' => 'Отменить',
@@ -5550,6 +5551,8 @@ $messages['sah'] = array(
 * Оччото суох дуо? [[{{MediaWiki:Coll-helppage}}|Кинигэлэри оҥорорго көмөҕө]] тупсарыы туһунан суруллубут.',
 	'coll-notfound_title' => 'Кинигэ көстүбэтэ',
 	'coll-notfound_text' => 'Кинигэ сирэйин булар табыллыбата.',
+	'coll-license' => 'Лицензия',
+	'coll-return_to' => 'Манна төннүү: [[:$1]]',
 );
 
 /** Slovak (Slovenčina)
