@@ -974,7 +974,12 @@ class Collection extends SpecialPage {
 		global $wgArticle;
 		global $wgRequest;
 		global $wgCollectionFormats;
+		global $wgCollectionPortletForLoggedInUsersOnly, $wgUser;
 
+		if( $wgCollectionPortletForLoggedInUsersOnly && !$wgUser->isLoggedIn() ) {
+			return true;
+		}
+		
 		wfLoadExtensionMessages( 'Collection' );
 
 		$action = $wgRequest->getVal('action');
