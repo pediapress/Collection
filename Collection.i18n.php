@@ -824,28 +824,44 @@ Molimo da kontaktirate Vašeg MediaWiki administratora.',
 );
 
 /** Catalan (Català)
+ * @author Aleator
  * @author Jordi Roqué
  * @author SMP
+ * @author Vriullop
  */
 $messages['ca'] = array(
+	'coll-desc' => '[[Special:Book|Crear llibres]]',
+	'coll-collection' => 'Llibre',
+	'coll-collections' => 'Llibres',
+	'coll-exclusion_category_title' => 'Excloure en imprimir',
+	'coll-print_template_prefix' => 'Imprimir',
 	'coll-add_page' => 'Afegir pàgina wiki',
 	'coll-remove_page' => 'Esborrar pàgina wiki',
 	'coll-add_category' => 'Afegir categoria',
+	'coll-show_collection' => 'Mostrar llibre',
+	'coll-unknown_subpage_title' => 'Subpàgina desconeguda',
+	'coll-printable_version_pdf' => 'Versió en PDF',
 	'coll-noscript_text' => "<h1>Es necessita el JavaScript!</h1>
 <strong>El vostre navegador no suporta el JavaScript o aquest hi està blocat.
 Aquesta pàgina no funcionarà correctament si no el poseu o l'activeu.</strong>",
+	'coll-helppage' => 'Help:Llibres',
 	'coll-title' => 'Títol:',
 	'coll-subtitle' => 'Subtítol:',
 	'coll-contents' => 'Contingut',
 	'coll-create_chapter' => 'Crear un nou capítol',
 	'coll-sort_alphabetically' => 'Ordena alfabèticament',
 	'coll-rename' => 'Reanomena',
+	'coll-empty_collection' => 'Llibre buit',
 	'coll-overwrite_title' => 'La pàgina existeix. Voleu substituir-la?',
+	'coll-overwrite_text' => 'Ja existeix una pàgina amb el mateix nom [[:$1]].
+Voleu substituir-la amb el vostre llibre?',
 	'coll-yes' => 'S&iacute;',
 	'coll-no' => 'No',
+	'coll-notfound_title' => 'Llibre no trobat',
 	'coll-return_to_collection' => '<p>Tornar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Encarregar llibre imprès',
 	'coll-about_pp' => 'Quant a $1',
+	'coll-license' => 'Llicència',
 );
 
 /** Czech (Česky)
@@ -1144,7 +1160,7 @@ $messages['dsb'] = array(
 	'coll-help_collections' => 'Pomoc ku knigłam',
 	'coll-n_pages' => '$1 {{PLURAL:$1|bok|boka|boki|bokow}}',
 	'coll-unknown_subpage_title' => 'Njeznaty pódbok',
-	'coll-unknown_subpage_text' => 'Toś ten pódbok [[Special:Collection|knigłow]] njeeksistěrujo',
+	'coll-unknown_subpage_text' => 'Toś ten pódbok [[Special:Book|knigłow]] njeeksistěrujo',
 	'coll-printable_version_pdf' => 'PDF-wersija',
 	'coll-download_as' => 'Ako $1 ześěgnuś',
 	'coll-noscript_text' => '<h1>JavaScript jo trěbny!</h1>
@@ -3237,6 +3253,7 @@ $messages['it'] = array(
 	'coll-collections' => 'Libri',
 	'coll-exclusion_category_title' => 'Escludi dalla stampa',
 	'coll-print_template_prefix' => 'Stampa',
+	'coll-print_template_pattern' => '$1/Stampa',
 	'coll-create_a_book' => 'Crea un libro',
 	'coll-add_page' => 'Aggiungi pagina wiki',
 	'coll-remove_page' => 'Rimuovi pagina wiki',
