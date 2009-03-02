@@ -637,11 +637,19 @@ class Collection extends SpecialPage {
 		global $wgRightsPage;
 		global $wgRightsText;
 		global $wgRightsUrl;
+	
+		wfLoadExtensionMessages( 'Collection' );
 		
 		$licenseInfo = array(
 			"type" => "license",
 		);
 		
+		$from_msg = wfMsgForContent( 'coll-license_url' );
+		if ( $from_msg && $from_msg != '-' ) {
+			$licenseInfo['mw_license_url'] = $from_msg;
+			return array( $licenseInfo );
+		}
+
 		if ( $wgLicenseName ) {
 			$licenseInfo['name'] = $wgLicenseName;
 		} else {
