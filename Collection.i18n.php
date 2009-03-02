@@ -1270,6 +1270,7 @@ $messages['el'] = array(
 	'coll-collections' => 'Βιβλία',
 	'coll-exclusion_category_title' => 'Εξαίρεση στην εκτύπωση',
 	'coll-print_template_prefix' => 'Εκτύπωση',
+	'coll-print_template_pattern' => '$1/Εκτύπωση',
 	'coll-create_a_book' => 'Δημιουργία βιβλίου',
 	'coll-add_page' => 'Προσθήκη σελίδας wiki',
 	'coll-remove_page' => 'Αφαίρεση σελίδας wiki',
@@ -1386,6 +1387,7 @@ $messages['eo'] = array(
 	'coll-collections' => 'Libroj',
 	'coll-exclusion_category_title' => 'Ekskludi de printado',
 	'coll-print_template_prefix' => 'Printi',
+	'coll-print_template_pattern' => '$1/Printi',
 	'coll-create_a_book' => 'Krei libron',
 	'coll-add_page' => 'Aldoni vikipaĝon',
 	'coll-remove_page' => 'Forigi vikipaĝon',
@@ -3152,7 +3154,7 @@ Si isto non functiona, per favor preme le button de refrescar in tu navigator.</
 <strong>[$1 Discarga le file]</strong> verso tu computator.
 
 Notas:
-* Non satisfacite con le resultato? Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le collectiones]] pro possibilitates de meliorar lo.',
+* Non satisfacite con le resultato? Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le libros]] pro possibilitates de meliorar lo.',
 	'coll-notfound_title' => 'Libro non trovate',
 	'coll-notfound_text' => 'Non poteva trovar le pagina del libro.',
 	'coll-is_cached' => '<ul><li>Un version del documento ha essite trovate in le cache, ergo non esseva necessari facer un altere rendition. <a href="$1">Fortiar le re-rendition.</a></li></ul>',
@@ -3245,6 +3247,7 @@ $messages['is'] = array(
 );
 
 /** Italian (Italiano)
+ * @author BrokenArrow
  * @author Darth Kule
  * @author Melos
  * @author Pietrodn
@@ -3275,7 +3278,7 @@ La pagina non funzionerà correttamente se non verrà attivato JavaScript.</stro
 	'coll-helppage' => 'Help:Libri',
 	'coll-bookscategory' => 'Libri',
 	'coll-savedbook_template' => 'libro_salvato',
-	'coll-your_book' => 'Tuo libro',
+	'coll-your_book' => 'Il tuo libro',
 	'coll-download_title' => 'Scarica',
 	'coll-download_text' => 'Per scaricare una versione offline scegli un formato e fai clic sul pulsante.',
 	'coll-download_as_text' => 'Per scaricare una versione nel formato $1 fare clic sul pulsante.',
@@ -3299,7 +3302,7 @@ La pagina non funzionerà correttamente se non verrà attivato JavaScript.</stro
 	'coll-new_chapter' => 'Inserisci il nome per il nuovo capitolo',
 	'coll-rename_chapter' => 'Inserisci un nuovo nome per il capitolo',
 	'coll-no_such_category' => 'Nessuna categoria',
-	'coll-notitle_title' => 'Il titolo della pagina potrebbe non essere determinato.',
+	'coll-notitle_title' => 'Non è stato possibile determinare il titolo della pagina.',
 	'coll-post_failed_title' => 'Richiesta POST fallita',
 	'coll-post_failed_msg' => 'La richiesta POST a $1 è fallita ($2).',
 	'coll-mwserve_failed_title' => 'Errore server conversione',
@@ -3314,13 +3317,13 @@ La pagina non funzionerà correttamente se non verrà attivato JavaScript.</stro
 	'coll-community_collection_label' => 'Libro della comunità:',
 	'coll-save_collection' => 'Salva libro',
 	'coll-save_category' => 'I libri sono salvati nella categoria [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
-	'coll-overwrite_title' => 'La pagina esiste.
+	'coll-overwrite_title' => 'La pagina esiste già.
 Sovrascriverla?',
-	'coll-overwrite_text' => 'Una pagina con il nome [[:$1]] esiste già?
+	'coll-overwrite_text' => 'Una pagina con il nome [[:$1]] esiste già.
 Si desidera che sia sostituita con la raccolta?',
 	'coll-yes' => 'Sì',
 	'coll-no' => 'No',
-	'coll-load_overwrite_text' => 'Sono già presenti della pagine nel tuo libro.
+	'coll-load_overwrite_text' => 'Il libro contiene già delle pagine.
 Si desidera sovrascrivere il libro corrente, aggiungere il nuovo contenuto o annullare il caricamento di questo libro?',
 	'coll-overwrite' => 'Sovrascrivi',
 	'coll-append' => 'Aggiungi',
@@ -3346,9 +3349,9 @@ Note:
 * Non sei soddisfatto del risultato? Leggi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sulle raccolte]] riguardo alle possibilità per migliorarlo.',
 	'coll-notfound_title' => 'Libro non trovato',
 	'coll-notfound_text' => 'Non è possibile trovare la pagina del libro.',
-	'coll-is_cached' => '<ul><li>Una versione del documento è stato trovato nella cache quindi la conversione non è stata necessaria. <a href="$1">Forza la ri-conversione.</a></li></ul>',
+	'coll-is_cached' => '<ul><li>Una versione del documento è stata trovata nella cache; la conversione non è stata necessaria. <a href="$1">Forza la ri-conversione.</a></li></ul>',
 	'coll-excluded-templates' => '* I template nella categoria [[:Category:$1|$1]] sono stati esclusi.',
-	'coll-blacklisted-templates' => '* I template nella blacklist [[:$1]] sono stai esclusi.',
+	'coll-blacklisted-templates' => '* I template nella blacklist [[:$1]] sono stati esclusi.',
 	'coll-return_to_collection' => '<p>Torna a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ordina come libro stampato',
 	'coll-book_text' => 'Ottieni un libro stampato da uno dei nostri partner di stampa su richiesta (print-on-demand):',
@@ -3693,6 +3696,7 @@ $messages['km'] = array(
  */
 $messages['ko'] = array(
 	'coll-desc' => '[[Special:Book|책 만들기]]',
+	'coll-exclusion_category_title' => '인쇄시 제외할 문서',
 	'coll-print_template_prefix' => '인쇄',
 	'coll-print_template_pattern' => '$1/인쇄',
 	'coll-create_a_book' => '책 만들기',
@@ -3707,6 +3711,7 @@ $messages['ko'] = array(
 	'coll-noscript_text' => '<h1>자바스크립트가 필요합니다!</h1>
 <strong>당신의 브라우저는 자바스크립트를 지원하지 않거나 비활성화되어 있습니다.
 자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
+	'coll-helppage' => 'Help:책 만들기',
 	'coll-your_book' => '당신의 책',
 	'coll-download_title' => '다운로드',
 	'coll-download' => '다운로드',
@@ -5574,7 +5579,7 @@ $messages['ru'] = array(
 	'coll-notfound_title' => 'Книга не найдена',
 	'coll-notfound_text' => 'Невозможно найти страницу книги.',
 	'coll-is_cached' => '<ul><li>Найдена закэшированная версия этого документа, отрисовка не потребовалась. <a href="$1">Всё-таки запустить отрисовку.</a></li></ul>',
-	'coll-excluded-templates' => '* Шаблоны из категории [[:Категория:$1|$1]] были исключены.',
+	'coll-excluded-templates' => '* Шаблоны из категории [[:Category:$1|$1]] были исключены.',
 	'coll-blacklisted-templates' => '* Шаблоны из чёрного списка [[:$1]] были исключены.',
 	'coll-return_to_collection' => '<p>Назад к <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Заказать печатную книгу',
@@ -5597,6 +5602,7 @@ $messages['sah'] = array(
 	'coll-collections' => 'Кинигэлэр',
 	'coll-exclusion_category_title' => 'Бэчээккэ ыытыллыбат',
 	'coll-print_template_prefix' => 'Бэчээт',
+	'coll-print_template_pattern' => '$1/Бэчээт',
 	'coll-create_a_book' => 'Кинигэни айарга',
 	'coll-add_page' => 'Сирэйи эбии',
 	'coll-remove_page' => 'Сирэйи сотуу',
@@ -5687,6 +5693,14 @@ $messages['sah'] = array(
 * Оччото суох дуо? [[{{MediaWiki:Coll-helppage}}|Кинигэлэри оҥорорго көмөҕө]] тупсарыы туһунан суруллубут.',
 	'coll-notfound_title' => 'Кинигэ көстүбэтэ',
 	'coll-notfound_text' => 'Кинигэ сирэйин булар табыллыбата.',
+	'coll-is_cached' => '<ul><li>Бу дөкүмүөн кээштэммит барыла баар эбит, отрисовка наадата суох буолан оҥоһуллубата. <a href="$1">Ол да буоллар отрисовканы оҥорорго.</a></li></ul>',
+	'coll-excluded-templates' => '* [[:Категория:$1|$1]] категорияттан халыыптар сотулуннулар.',
+	'coll-blacklisted-templates' => 'Халыыптар [[:$1]] хара тиһиктэн (чёрный список) сотулуннулар.',
+	'coll-return_to_collection' => '<p>Манна төнүн <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Бэчээттэммит кинигэни сакаастааһын',
+	'coll-book_text' => 'Бэчээттэммит кинигэни биһиги партнербутуттан ылыы:',
+	'coll-order_from_pp' => 'Кинигэни манна сакаастааһын: $1',
+	'coll-about_pp' => '$1 туһунан',
 	'coll-license' => 'Лицензия',
 	'coll-return_to' => 'Манна төннүү: [[:$1]]',
 );
