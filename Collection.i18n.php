@@ -135,6 +135,7 @@ Notes:
 	'coll-invalid_podpartner_msg'     => 'The supplied POD partner is invalid.
 Please contact your MediaWiki administrator.',
 	'coll-license'                    => 'License',
+	'coll-license_url'                => '-',
 	'coll-return_to'                  => "Return to [[:$1]]",
 );
 
@@ -151,6 +152,7 @@ Please contact your MediaWiki administrator.',
  */
 $messages['qqq'] = array(
 	'coll-desc' => 'Short description of this extension, shown in [[Special:Version]]. Do not translate or change links.',
+	'coll-license_url' => 'Do not translate or delete: This system message is there to be overridden with a URL to a custom license article',
 	'coll-collection' => '{{Identical|Book}}',
 	'coll-collections' => '{{Identical|Book}}',
 	'coll-exclusion_category_title' => 'The message text is the name of a category.',
