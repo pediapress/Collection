@@ -152,12 +152,13 @@ Please contact your MediaWiki administrator.',
  */
 $messages['qqq'] = array(
 	'coll-desc' => 'Short description of this extension, shown in [[Special:Version]]. Do not translate or change links.',
-	'coll-license_url' => 'Do not translate or delete: This system message is there to be overridden with a URL to a custom license article',
 	'coll-collection' => '{{Identical|Book}}',
 	'coll-collections' => '{{Identical|Book}}',
 	'coll-exclusion_category_title' => 'The message text is the name of a category.',
 	'coll-print_template_prefix' => 'Prefix added to the templates name if you want to get a special for-print version of the template. So in a page instead of Template:Foo Template:PrintFoo is used if it exists.',
-	'coll-print_template_pattern' => 'Use print templates being subpages of regular templates.',
+	'coll-print_template_pattern' => 'Use print templates being subpages of regular templates.
+
+$1 is a placeholder and will be replaced by content during the rendering process.',
 	'coll-create_a_book' => '{{Identical|Books}}',
 	'coll-printable_version_pdf' => 'Caption of a link in the [[mw:Help:Navigation#Toolbox|toolbox]] leading to the PDF version of the current page',
 	'coll-download_as' => '{{Identical|Download}}',
@@ -1317,8 +1318,8 @@ $messages['el'] = array(
 	'coll-notitle_title' => 'Ο τίτλος της σελίδας δεν μπόρεσε να προσδιοριστεί.',
 	'coll-post_failed_title' => 'Η αίτηση POST απέτυχε',
 	'coll-post_failed_msg' => 'Το αίτημα POST στο  $1 απέτυχε ($2).',
-	'coll-mwserve_failed_title' => 'Σφάλμα διακομιστή απόδοσης',
-	'coll-mwserve_failed_msg' => 'Ένα σφάλμα συνέβη στον διακομιστή απόδοσης: <nowiki>$1</nowiki>',
+	'coll-mwserve_failed_title' => 'Σφάλμα διακομιστή μορφοποίησης',
+	'coll-mwserve_failed_msg' => 'Ένα σφάλμα συνέβη στον διακομιστή μορφοποίησης: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Σφάλμα απάντησης από τον διακομιστή',
 	'coll-empty_collection' => 'Άδειο βιβλίο',
 	'coll-revision' => 'Έκδοση: $1',
@@ -1344,7 +1345,7 @@ $messages['el'] = array(
 	'coll-limit_exceeded_title' => 'Το βιβλίο είναι πολύ μεγάλο',
 	'coll-limit_exceeded_text' => 'Το βιβλίο σας είναι πολύ μεγάλο.
 Δεν μπορούν να προστεθούν άλλες σελίδες.',
-	'coll-rendering_title' => 'Απόδοση',
+	'coll-rendering_title' => 'Μορφοποίηση',
 	'coll-rendering_text' => '<p><strong>Παρακαλούμε περιμένετε όσο το έγγραφό σας δημιουργείται.</strong></p>
 
 <p><strong>Πρόοδος:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
@@ -1354,7 +1355,7 @@ $messages['el'] = array(
 	'coll-rendering_status' => '<strong>Πρόοδος:</strong> $1',
 	'coll-rendering_article' => '(σελίδα wiki: $1)',
 	'coll-rendering_page' => '(σελίδα: $1)',
-	'coll-rendering_finished_title' => 'Η απόδοση τελείωσε',
+	'coll-rendering_finished_title' => 'Η μορφοποίηση ολοκληρώθηκε',
 	'coll-rendering_finished_text' => '<strong>Το αρχείο εγγράφου έχει δημιουργηθεί.</strong>
 <strong>[$1 Κατεβάστε το αρχείο]</strong> στον υπολογιστή σας.
 
@@ -1362,7 +1363,7 @@ $messages['el'] = array(
 * Δεν είστε ικανοποιημένος με το αποτέλεσμα; Δείτε την [[{{MediaWiki:Coll-helppage}}|σελίδα βοήθειας για τα βιβλία]] για πιθανούς τρόπους να το βελτιώσετε.',
 	'coll-notfound_title' => 'Το βιβλίο δεν βρέθηκε',
 	'coll-notfound_text' => 'Δεν βρέθηκε η σελίδα βιβλίου.',
-	'coll-is_cached' => '<ul><li>Μια αποθηκευμένη έκδοση του εγγράφου έχει βρεθεί, οπότε η απόδοση δεν ήταν απαραίτητη. <a href="$1">Επιβολή επαν-απόδοσης.</a></li></ul>',
+	'coll-is_cached' => '<ul><li>Μια αποθηκευμένη έκδοση του εγγράφου έχει βρεθεί, οπότε καμία μορφοποίηση δεν ήταν απαραίτητη. <a href="$1">Επιβολή επαναμορφοποίησης .</a></li></ul>',
 	'coll-excluded-templates' => '* Πρότυπα στην κατηγορία [[:Category:$1|$1]] έχουν εξαιρεθεί.',
 	'coll-blacklisted-templates' => '* Πρότυπα στην μαύρη λίστα [[:$1]] έχουν εξαιρεθεί.',
 	'coll-return_to_collection' => '<p>Επιστροφή στο <a href="$1">$2</a></p>',
@@ -3745,6 +3746,12 @@ $messages['ko'] = array(
 	'coll-update' => '업데이트',
 	'coll-limit_exceeded_title' => '책이 너무 큽니다.',
 	'coll-rendering_title' => '렌더링',
+	'coll-rendering_text' => '<p><strong>문서가 생성될 때까지 잠시 기다려주십시오.</strong></p>
+
+<p><strong>진행률:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>이 문서는 몇 초마다 새로고쳐져야 합니다.
+만약 제대로 동작하지 않는다면, 브라우저를 새로고침하십시오.</p>',
 	'coll-rendering_status' => '<strong>상태:</strong> $1',
 	'coll-rendering_article' => '(문서: $1)',
 	'coll-rendering_page' => '(페이지: $1)',
@@ -4543,6 +4550,7 @@ Köönt keen Sieden mehr toföögt warrn.',
  * @author Erwin85
  * @author GerardM
  * @author McDutchie
+ * @author Mwpnl
  * @author SPQRobin
  * @author Siebrand
  * @author Tvdm
@@ -4642,7 +4650,7 @@ Als dit niet werkt, klik dan op de knop "Vernieuwen" in uw browser.</p>',
 <strong>[$1 Het bestand downloaden]</strong>.
 
 Opmerkingen:
-* Niet tevreden met de uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om deze te verbeteren.',
+* Niet tevreden met de uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om deze uitvoer te verbeteren.',
 	'coll-notfound_title' => 'Boek niet gevonden',
 	'coll-notfound_text' => 'Boekpagina is niet gevonden.',
 	'coll-is_cached' => '<ul><li>Er is een versie van het document beschikbaar in de cache, dus opnieuw renderen was niet nodig.
@@ -6362,6 +6370,7 @@ $messages['tg-cyrl'] = array(
 );
 
 /** Thai (ไทย)
+ * @author Ans
  * @author Manop
  */
 $messages['th'] = array(
@@ -6378,23 +6387,24 @@ $messages['th'] = array(
 	'coll-load_collection' => 'โหลดหนังสือ',
 	'coll-show_collection' => 'แสดงหนังสือ',
 	'coll-help_collections' => 'ความช่วยเหลือในส่วนหนังสือ',
-	'coll-n_pages' => '$1 หน้า',
+	'coll-n_pages' => '$1 {{PLURAL:$1|หน้า|หน้า}}',
 	'coll-unknown_subpage_title' => 'หน้าย่อยที่ไม่รู้จัก',
-	'coll-unknown_subpage_text' => 'หน้าย่อยของ [[Special:Book|หนังสือ]] ไม่มีอยู่',
+	'coll-unknown_subpage_text' => '[[Special:Book|หนังสือ]] ไม่มีหน้าย่อยนี้',
 	'coll-printable_version_pdf' => 'รุ่น PDF',
 	'coll-download_as' => 'ดาวน์โหลดในชื่อ $1',
 	'coll-noscript_text' => '<h1>จำเป็นต้องใช้จาวาสคริปต์!</h1>
-<strong>เบราว์เซอร์ของคุณไม่รองรับจาวาสคริปต์หรือจาวาสคริปต์ถูกปิดการใช้งาน กรุณาเปิดใช้จาวาสคริปต์เผื่อทำงานในหน้านี้</strong>',
-	'coll-helppage' => 'วิธีใช้:หนังสือ',
+<strong>เบราว์เซอร์ของคุณไม่รองรับจาวาสคริปต์หรือจาวาสคริปต์ถูกปิดการใช้งาน
+หน้านี้จะไม่สามารถทำงานได้อย่างถูกต้อง ถ้าไม่มีการเปิดใช้จาวาสคริปต์</strong>',
+	'coll-helppage' => 'Help:หนังสือ',
 	'coll-bookscategory' => 'หนังสือ',
-	'coll-savedbook_template' => 'หนังสือที่ถูกบันทึกไว้ก่อนหน้า',
+	'coll-savedbook_template' => 'หนังสือที่บันทึกไว้',
 	'coll-your_book' => 'หนังสือของคุณ',
 	'coll-download_title' => 'ดาวน์โหลด',
-	'coll-download_text' => 'กดที่ปุ่มเพื่อดาวน์โหลดและเลือกรูปแบบ',
+	'coll-download_text' => 'เลือกรูปแบบและกดที่ปุ่มเพื่อดาวน์โหลด',
 	'coll-download_as_text' => 'กดที่ปุ่มเพื่อดาวน์โหลดในรูปแบบ $1',
 	'coll-download' => 'ดาวน์โหลด',
 	'coll-format_label' => 'รูปแบบ:',
-	'coll-remove' => 'นำออก',
+	'coll-remove' => 'ลบออก',
 	'coll-show' => 'แสดง',
 	'coll-move_to_top' => 'ย้ายไปบนสุด',
 	'coll-move_up' => 'ย้ายขึ้น',
@@ -6407,11 +6417,11 @@ $messages['th'] = array(
 	'coll-rename' => 'เปลี่ยนชื่อ',
 	'coll-new_chapter' => 'ใส่ชื่อสำหรับบทใหม่',
 	'coll-rename_chapter' => 'ใส่ชื่อใหม่สำหรับบทนี้',
-	'coll-no_such_category' => 'ไม่มีหมวดหมู่',
+	'coll-no_such_category' => 'ไม่มีหมวดหมู่ดังกล่าว',
 	'coll-post_failed_title' => 'คำสั่ง POST ผิดพลาด',
 	'coll-post_failed_msg' => 'คำสั่ง POST ไปที่ $1 ผิดพลาด ($2)',
 	'coll-mwserve_failed_title' => 'ความผิดพลาดของเซิร์ฟเวอร์เรนเดอร์',
-	'coll-error_reponse' => 'เกิดการตอบกลับผิดพลาดจากเซิร์ฟเวอร์',
+	'coll-error_reponse' => 'มีความผิดพลาดตอบกลับมาจากเซิร์ฟเวอร์',
 	'coll-revision' => 'รุ่น: $1',
 	'coll-save_collection_title' => 'บันทึกและแบ่งปันหนังสือของคุณ',
 	'coll-save_collection_text' => 'เลือกตำแหน่งที่จะเก็บสำหรับหนังสือของคุณ:',
@@ -6421,13 +6431,13 @@ $messages['th'] = array(
 	'coll-overwrite_title' => 'มีหน้านี้แล้ว
 เขียนทับ?',
 	'coll-overwrite_text' => 'หน้าที่อยู่ภายใต้ชื่อ [[:$1]] มีอยู่แล้ว
-คุณต้องการแทนที่หน้านั้นในหนังสือคุณหรือไม่',
+คุณต้องการแทนที่หน้านั้นด้วยหนังสือคุณหรือไม่',
 	'coll-yes' => 'ใช่',
 	'coll-no' => 'ไม่ใช่',
-	'coll-load_overwrite_text' => 'คุณมีหลายหน้าในหนังสือของคุณ
-คุณต้องการเขียนทับ เพิ่มหน้าต่อท้าย หรือยกเลิกหนังสือของคุณ',
+	'coll-load_overwrite_text' => 'หนังสือของคุณพอมีหน้าบรรจุอยู่บ้างแล้ว
+คุณต้องการจะทำสิ่งไหนระหว่าง เขียนทับลงในหนังสือของคุณ, เพิ่มเนื้อหาต่อท้าย, หรือ ยกเลิกการโหลดหนังสือนี้?',
 	'coll-overwrite' => 'เขียนทับ',
-	'coll-append' => 'เพิ่มเข้า',
+	'coll-append' => 'เพิ่มต่อท้าย',
 	'coll-cancel' => 'ยกเลิก',
 	'coll-update' => 'อัปเดต',
 	'coll-limit_exceeded_title' => 'หนังสือใหญ่เกินไป',
@@ -6440,12 +6450,12 @@ $messages['th'] = array(
 	'coll-rendering_finished_title' => 'การเรนเดอร์เสร็จสิ้น',
 	'coll-notfound_title' => 'ไม่พบหนังสือที่ต้องการ',
 	'coll-notfound_text' => 'ไม่สามารถค้นหาหน้าหนังสือ',
-	'coll-blacklisted-templates' => '* แม่แบบในบัญชีดำ [[:$1]] ถูกนำออก',
+	'coll-blacklisted-templates' => '* แม่แบบในบัญชีดำ [[:$1]] ไม่ได้ถูกรวมไว้',
 	'coll-return_to_collection' => '<p>กลับไปที่ <a href="$1">$2</a></p>',
 	'coll-book_title' => 'สั่งหนังสือเป็นรูปเล่ม',
 	'coll-order_from_pp' => 'สั่งหนังสือจาก $1',
 	'coll-about_pp' => 'เกี่ยวกับ $1',
-	'coll-license' => 'ลิขสิทธิ์',
+	'coll-license' => 'สัญญาอนุญาต (license)',
 	'coll-return_to' => 'กลับไปที่ [[:$1]]',
 );
 
@@ -6925,6 +6935,7 @@ $messages['vi'] = array(
 	'coll-collections' => 'Sách vở',
 	'coll-exclusion_category_title' => 'Ẩn khi in',
 	'coll-print_template_prefix' => 'In',
+	'coll-print_template_pattern' => '$1/Print',
 	'coll-create_a_book' => 'Tạo một quyển sách',
 	'coll-add_page' => 'Thêm trang wiki',
 	'coll-remove_page' => 'Xóa trang wiki',
