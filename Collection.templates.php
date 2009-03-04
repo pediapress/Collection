@@ -326,12 +326,17 @@ echo $GLOBALS['wgParser']->parse(
 	$GLOBALS['wgOut']->parserOptions(),
 	true
 )->getText();
-echo $GLOBALS['wgParser']->parse(
-	wfMsgNoTrans('coll-blacklisted-templates', wfMsgForContent('coll-template_blacklist_title')),
-	$GLOBALS['wgTitle'],
-	$GLOBALS['wgOut']->parserOptions(),
-	true
-)->getText();
+$title_string = wfMsgForContent('coll-template_blacklist_title');
+$t = Title::newFromText($title_string);
+$a = new Article($t);
+if ( $a->exists() ) {
+  echo $GLOBALS['wgParser']->parse(
+    wfMsgNoTrans('coll-blacklisted-templates', $title_string),
+    $GLOBALS['wgTitle'],
+    $GLOBALS['wgOut']->parserOptions(),
+    true
+  )->getText();
+}
 if ($this->data['return_to']) {
 	// We are doing this the hard way (i.e. via the HTML detour), to prevent
 	// the parser from replacing [[:Special:Book]] with a selflink.
