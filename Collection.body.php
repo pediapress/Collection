@@ -43,6 +43,7 @@ class Collection extends SpecialPage {
 		global $wgOut;
 		global $wgRequest;
 		global $wgUser;
+    global $wgContLang;
 		global $wgCommunityCollectionNamespace;
 		global $wgCollectionMaxArticles;
 		
@@ -177,7 +178,7 @@ class Collection extends SpecialPage {
 			case 'render/':
 				return $this->renderCollection(
 					$_SESSION['wsCollection'],
-					Title::makeTitle( NS_SPECIAL, 'Book' ),
+					Title::newFromText( $wgContLang->specialPage( 'Book' ) ),
 					$wgRequest->getVal( 'writer', '' )
 				);
 			case 'forcerender/':
