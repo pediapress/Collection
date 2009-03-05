@@ -109,26 +109,38 @@ $listTemplate->execute();
 		<?php $this->msgWiki('coll-save_collection_text') ?>
 		<?php
 			$bookname = wfMsgForContent('coll-collections');
-			$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
 		?>
 			<form id="saveForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'save_collection/')) ?>" method="post">
 			      	<table style="width:100%; background-color: transparent;"><tr><td>
+				<?php
+					if (!$GLOBALS['wgUser']->isNewbie()) { 
+						$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
+				?>
 				<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked" />
+				<?php } else { ?>
+				<input type="hidden" name="colltype" value="personal" />
+				<?php } ?>
 				<label for="personalCollTitle"><a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Prefixindex', 'from=' . $GLOBALS['wgUser']->getName() . '/' . $bookname . '/&namespace=2')) ?>"><?php echo htmlspecialchars($GLOBALS['wgUser']->getUserPage()->getPrefixedText() . '/' . $bookname . '/') ?></a></label>
 				</td>
 				<td style="text-align:right;">
 				<input id="personalCollTitle" type="text" name="pcollname" />
 				</td></tr>
+				<?php
+					if (!$GLOBALS['wgUser']->isNewbie()) { 
+						$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
+				?>
 				<tr><td>
 				<input id="communityCollType" type="radio" name="colltype" value="community" />
 				<label for="communityCollTitle"><a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Prefixindex', 'from=' . $bookname . '/&namespace=' . $communityCollNS)) ?>"><?php echo htmlspecialchars(Title::makeTitle($communityCollNS, $bookname)->getPrefixedText() . '/') ?></a></label>
 				</td>
 				<td style="text-align:right;">
 				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled" />
-				</td>
-				</tr><td>&nbsp;</td><td style="text-align:right;">
+				</td></tr>
+				<?php } // autoconfirmed ?>
+				<tr><td>&nbsp;</td><td style="text-align:right;">
 				<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
-				</tr></table>
+				</tr>
+				</table>
 			</form>
 
 		<?php } else {
