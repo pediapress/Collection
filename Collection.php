@@ -92,7 +92,7 @@ $wgCollectionPortletForLoggedInUsersOnly = false;
 
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Collection',
-	'version' => '1.1',
+	'version' => $wgCollectionVersion,
 	'author' => 'PediaPress GmbH',
 	'svn-date' => '$LastChangedDate$',
 	'svn-revision' => '$LastChangedRevision$',
