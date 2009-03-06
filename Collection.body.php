@@ -585,6 +585,8 @@ class Collection extends SpecialPage {
 	}
 
 	function saveCollection( $title, $forceOverwrite=false ) {
+		global $wgUser;
+
 		$article = new Article( $title );
 		if ( $article->exists() && !$forceOverwrite ) {
 			return false;
@@ -626,8 +628,15 @@ class Collection extends SpecialPage {
 		if ( !is_null( $catTitle ) ) {
             $articleText .= "\n[[" . $catTitle->getPrefixedText() . "|" . wfEscapeWikiText( $title->getSubpageText() ) . "]]\n";
 		}
-
-		$article->doEdit( $articleText, '' );
+    
+		$req = new FauxRequest(array(
+			'action' => 'edit',
+			'title' => $title->getPrefixedText(),
+			'text' => $articleText,
+			'token' => $wgUser->editToken(),
+		), true);
+		$api = new ApiMain($req, true);
+		$api->execute();
 		return true;
 	}
 	
