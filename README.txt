@@ -139,11 +139,7 @@ Installation and Configuration of the Collection Extension
    Namespace for "community collections", i.e. the namespace where non-personal
    article collection pages are saved.
    
-   Example: If you keep the default, ``NS_MEDIAWIKI`` and have a non-localized
-   (i.e. English) *MediaWiki* installation, collections are saved as subpages of
-   ``MediaWiki:Collections``.
-   
-   Default is ``NS_MEDIAWIKI``.
+   Default is ``NS_PROJECT``.
   
   *$wgCollectionMaxArticles (integer)*
    Maximum number of articles allowed in a collection.

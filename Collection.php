@@ -68,7 +68,7 @@ $wgCollectionArticleNamespaces = array(
 );
 
 /** Namespace for "community books" */
-$wgCommunityCollectionNamespace = NS_MEDIAWIKI;
+$wgCommunityCollectionNamespace = NS_PROJECT;
 
 /** Maximum no. of articles in a book */
 $wgCollectionMaxArticles = 500;
