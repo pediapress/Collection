@@ -4551,15 +4551,19 @@ $messages['nds'] = array(
 	'coll-help_collections' => 'Help to Böker',
 	'coll-n_pages' => '$1 {{PLURAL:$1|Sied|Sieden}}',
 	'coll-unknown_subpage_title' => 'Unbekannt Ünnersied',
-	'coll-unknown_subpage_text' => 'Disse Ünnersied vun de [[Special:Book|Sammlung]] gifft dat nich',
+	'coll-unknown_subpage_text' => 'Disse Ünnersied vun dat [[Special:Book|Book]] gifft dat nich',
 	'coll-printable_version_pdf' => 'PDF-Version',
 	'coll-download_as' => 'As $1 dalladen',
+	'coll-noscript_text' => '<h1>Javascript nödig!</h1>
+<strong>Dien Browser ünnerstütt keen Javascript oder Javascript is utschalt.
+Disse Sied löppt blot richtig, wenn Javascript an is.</strong>',
 	'coll-helppage' => 'Help:Böker',
 	'coll-bookscategory' => 'Böker',
 	'coll-savedbook_template' => 'Spiekert Book',
 	'coll-your_book' => 'Dien Book',
 	'coll-download_title' => 'Dalladen',
 	'coll-download_text' => 'En Offline-Version daltoladen, wähl en Format un klick op den Knoop.',
+	'coll-download_as_text' => 'Üm en Version in Format $1 daltoladen, klick op den Knopp.',
 	'coll-download' => 'Dalladen',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Rutnehmen',
@@ -5105,6 +5109,7 @@ $messages['os'] = array(
 	'coll-title' => 'Сæргонд:',
 	'coll-yes' => 'О',
 	'coll-no' => 'Нæ',
+	'coll-cancel' => 'Нæ бæззы',
 );
 
 /** Polish (Polski)
