@@ -4557,6 +4557,7 @@ $messages['nds'] = array(
 	'coll-noscript_text' => '<h1>Javascript nödig!</h1>
 <strong>Dien Browser ünnerstütt keen Javascript oder Javascript is utschalt.
 Disse Sied löppt blot richtig, wenn Javascript an is.</strong>',
+	'coll-intro_text' => 'Stell dien egen Utwahl an Sieden tohoop un verwalt jem.<br />Kiek na de [[{{MediaWiki:Coll-helppage}}|Help to Böker]] för mehr Infos.',
 	'coll-helppage' => 'Help:Böker',
 	'coll-bookscategory' => 'Böker',
 	'coll-savedbook_template' => 'Spiekert Book',
@@ -4594,13 +4595,17 @@ Disse Sied löppt blot richtig, wenn Javascript an is.</strong>',
 	'coll-revision' => 'Version: $1',
 	'coll-save_collection_title' => 'Spieker un deel dien Book',
 	'coll-save_collection_text' => 'En Oort wählen:',
+	'coll-login_to_save' => 'Wenn du Böker för later spiekern wullt, denn [[Special:UserLogin|mell di an oder stell en Brukerkonto op]].',
 	'coll-personal_collection_label' => 'Persöönlich Book:',
 	'coll-community_collection_label' => 'Gemeenschopsbook:',
 	'coll-save_collection' => 'Book spiekern',
+	'coll-save_category' => 'All Böker warrt in de Kategorie [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] insorteert.',
 	'coll-overwrite_title' => 'Sied gifft dat al. Överschrieven?',
 	'coll-overwrite_text' => 'Dat gifft al en Sied mit’n Naam [[:$1]]. Wullt du ehr gegen dien Sammlung utwesseln?',
 	'coll-yes' => 'Jo',
 	'coll-no' => 'Nee',
+	'coll-load_overwrite_text' => 'In dien Book sünd al welk Sieden in.
+Wullt du dat aktuelle Book överschrieven, de ne’en Sieden achtern ranhängen oder dat Laden vun dit Book afbreken?',
 	'coll-overwrite' => 'Överschrieven',
 	'coll-append' => 'Tofögen',
 	'coll-cancel' => 'Afbreken',
@@ -4609,10 +4614,21 @@ Disse Sied löppt blot richtig, wenn Javascript an is.</strong>',
 	'coll-limit_exceeded_text' => 'Dien Book is to groot.
 Köönt keen Sieden mehr toföögt warrn.',
 	'coll-rendering_title' => 'An’t Rendern',
+	'coll-rendering_text' => '<p><strong>Wees gedüllig, solang de Datei opstellt warrt.</strong></p>
+
+<p><strong>Foortgang:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
+
+<p>Disse Sied schull sik normalerwies alle poor Sekunnen sülvst opfrischen.
+Wenn dat aver nich so is, denn kannst du op den „Opfrischen“-Knopp vun dien Browser klicken.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(Wikisied: $1)',
 	'coll-rendering_page' => '(Sied: $1)',
 	'coll-rendering_finished_title' => 'Rendern trech',
+	'coll-rendering_finished_text' => '<strong>De Datei is nu opstellt.</strong>
+<strong>[$1 Datei dalladen]</strong>.
+
+Henwiesen:
+* Büst du nich tofreden mit de Datei? De Utgaav to verbetern, gifft dat Tipps bi de [[{{MediaWiki:Coll-helppage}}|Help to Böker]].',
 	'coll-notfound_title' => 'Book nich funnen',
 	'coll-notfound_text' => 'Booksied kunn nich funnen warrn.',
 	'coll-is_cached' => '<ul><li>Dat geev en twischenspiekert Version vun dat Dokument, nee Rendern weer nich nödig. <a href="$1">Nu nee rendern.</a></li></ul>',
@@ -5370,7 +5386,7 @@ Notas:
 	'coll-blacklisted-templates' => '* As predefinições na lista negra [[:$1]] foram excluídas.',
 	'coll-return_to_collection' => '<p>Regressar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Encomendar como livro impresso',
-	'coll-book_text' => 'Adquira um livro impresso de nosso parceiro de impressão-sob-demanda:',
+	'coll-book_text' => 'Adquira um livro impresso do nosso parceiro de impressão-a-pedido:',
 	'coll-order_from_pp' => 'Encomendar o livro de $1',
 	'coll-about_pp' => 'Sobre $1',
 	'coll-invalid_podpartner_title' => 'Parceiro POD inválido',
