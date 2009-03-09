@@ -67,6 +67,11 @@ $aliases['fi'] = array(
 	'Book' => array( 'Kirja', 'Kokoelma' ),
 );
 
+/** French (Français) */
+$aliases['fr'] = array(
+	'Book' => array( 'Livre' ),
+);
+
 /** Galician (Galego) */
 $aliases['gl'] = array(
 	'Book' => array( 'Libro' ),
