@@ -1585,6 +1585,7 @@ $messages['es'] = array(
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluir al imprimir',
 	'coll-print_template_prefix' => 'Imprimir',
+	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-create_a_book' => 'Crear un libro',
 	'coll-add_page' => 'Añadir página wiki',
 	'coll-remove_page' => 'Quitar página wiki',
