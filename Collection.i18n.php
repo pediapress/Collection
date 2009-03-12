@@ -3815,6 +3815,8 @@ $messages['ko'] = array(
 	'coll-save_collection' => '책 저장',
 	'coll-overwrite_title' => '문서가 존재합니다.
 덮어쓰시겠습니까?',
+	'coll-overwrite_text' => '[[:$1]]이라는 이름을 가진 문서가 이미 존재합니다.
+정말로 당신의 책을 바꾸시겠습니까?',
 	'coll-yes' => '예',
 	'coll-no' => '아니오',
 	'coll-overwrite' => '덮어쓰기',
@@ -3838,6 +3840,7 @@ $messages['ko'] = array(
 
 참고:
 * 출력 결과에 만족하지 않으신가요? 이 기능을 향상시킬 수 있도록 [[{{MediaWiki:Coll-helppage}}|책에 대한 도움말 문서]]를 참고해 주세요.',
+	'coll-is_cached' => '<ul><li>이 문서의 캐시된 버전이 발견되었습니다. 따라서 다시 렌더링하지 않으셔도 됩니다. <a href="$1">다시 렌더링하기</a></li></ul>',
 	'coll-excluded-templates' => '[[:Category:$1|$1]] 분류에 속한 틀은 제외되었습니다.',
 	'coll-blacklisted-templates' => '틀 블랙리스트 [[:$1]]에 있는 틀은 제외되었습니다.',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a>로 돌아갑니다</p>',
@@ -4644,6 +4647,37 @@ Henwiesen:
 	'coll-invalid_podpartner_msg' => 'De Angaven to’n Print-on-Demand-Partner sünd verkehrt. Neem Kuktakt op mit den MediaWiki-Administrater.',
 	'coll-license' => 'Lizenz',
 	'coll-return_to' => 'Trüch na [[:$1]]',
+);
+
+/** Nedersaksisch (Nedersaksisch)
+ * @author Servien
+ */
+$messages['nds-nl'] = array(
+	'coll-desc' => '[[Special:Book|Boeken maken]]',
+	'coll-collection' => 'Boek',
+	'coll-collections' => 'Boeken',
+	'coll-exclusion_category_title' => "Vortlaoten bie 't ofdrokken",
+	'coll-print_template_prefix' => 'Ofdrokken',
+	'coll-print_template_pattern' => '$1/Ofdrokken',
+	'coll-create_a_book' => 'Boek maken',
+	'coll-add_page' => 'Wikipagina derbie',
+	'coll-remove_page' => 'Wikipagina deruut',
+	'coll-add_category' => 'Kattegerie derbie',
+	'coll-load_collection' => 'Boek laojen',
+	'coll-show_collection' => 'Boek laoten zien',
+	'coll-help_collections' => 'Hulpe bie boeken',
+	'coll-n_pages' => "$1 {{PLURAL:$1|pagina|pagina's}}",
+	'coll-unknown_subpage_title' => 'Onbekende subpagina',
+	'coll-unknown_subpage_text' => 'Disse subpagina van [[Special:Book|Boek]] besteet neet',
+	'coll-printable_version_pdf' => 'PDF-versie',
+	'coll-download_as' => 'Oflaojen as $1',
+	'coll-intro_text' => "Stel joew eigen selectie van wikipagina's samen en beheer 't.<br />Zie [[{{MediaWiki:Coll-helppage}}]] veur meer infermasie.",
+	'coll-helppage' => 'Help:Boeken',
+	'coll-bookscategory' => 'Boeken',
+	'coll-savedbook_template' => 'op-esleugen_boek',
+	'coll-your_book' => 'Joew boek',
+	'coll-download_title' => 'Oflaojen',
+	'coll-download_text' => 'Um een versie van joew boek of te laojen, kies een fermaot en klik op de knoppe.',
 );
 
 /** Dutch (Nederlands)
@@ -6491,7 +6525,7 @@ $messages['th'] = array(
 	'coll-load_collection' => 'โหลดหนังสือ',
 	'coll-show_collection' => 'แสดงหนังสือ',
 	'coll-help_collections' => 'ความช่วยเหลือในส่วนหนังสือ',
-	'coll-n_pages' => '$1 {{PLURAL:$1|หน้า|หน้า}}',
+	'coll-n_pages' => '$1 หน้า',
 	'coll-unknown_subpage_title' => 'หน้าย่อยที่ไม่รู้จัก',
 	'coll-unknown_subpage_text' => '[[Special:Book|หนังสือ]] ไม่มีหน้าย่อยนี้',
 	'coll-printable_version_pdf' => 'รุ่น PDF',
@@ -6501,7 +6535,7 @@ $messages['th'] = array(
 หน้านี้จะไม่สามารถทำงานได้อย่างถูกต้อง ถ้าไม่มีการเปิดใช้จาวาสคริปต์</strong>',
 	'coll-helppage' => 'Help:หนังสือ',
 	'coll-bookscategory' => 'หนังสือ',
-	'coll-savedbook_template' => 'หนังสือที่บันทึกไว้',
+	'coll-savedbook_template' => 'หนังสือที่ถูกบันทึกไว้ก่อนหน้า',
 	'coll-your_book' => 'หนังสือของคุณ',
 	'coll-download_title' => 'ดาวน์โหลด',
 	'coll-download_text' => 'เลือกรูปแบบและกดที่ปุ่มเพื่อดาวน์โหลด',
@@ -6539,7 +6573,7 @@ $messages['th'] = array(
 	'coll-yes' => 'ใช่',
 	'coll-no' => 'ไม่ใช่',
 	'coll-load_overwrite_text' => 'หนังสือของคุณพอมีหน้าบรรจุอยู่บ้างแล้ว
-คุณต้องการจะทำสิ่งไหนระหว่าง เขียนทับลงในหนังสือของคุณ, เพิ่มเนื้อหาต่อท้าย, หรือ ยกเลิกการโหลดหนังสือนี้?',
+คุณต้องการจะทำสิ่งไหนระหว่าง เขียนทับลงในหนังสือของคุณ เพิ่มเนื้อหาต่อท้าย หรือยกเลิกการโหลดหนังสือนี้',
 	'coll-overwrite' => 'เขียนทับ',
 	'coll-append' => 'เพิ่มต่อท้าย',
 	'coll-cancel' => 'ยกเลิก',
