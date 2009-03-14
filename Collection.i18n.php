@@ -7258,6 +7258,123 @@ Pads pluik nonik kanons paläükön.',
 	'coll-return_to' => 'Geikön lü [[:$1]]',
 );
 
+/** Cantonese (‪廣東話‬)
+ * @author Shinjiman
+ */
+$messages['yue'] = array(
+	'coll-desc'                       => '[[Special:Book|整書]]',
+	'coll-collection'                 => '書',
+	'coll-collections'                => '書',
+	'coll-exclusion_category_title'   => '響打印版度排除',
+	'coll-print_template_prefix'      => '打印',
+	'coll-print_template_pattern'     => '$1/打印',
+	'coll-create_a_book'              => '整一本書',
+	'coll-add_page'                   => '加入wiki版',
+	'coll-remove_page'                => '拎走wiki版',
+	'coll-add_category'               => '加分類',
+	'coll-load_collection'            => '載入書',
+	'coll-show_collection'            => '顯示書',
+	'coll-help_collections'           => '書幫手',
+	'coll-n_pages'                    => '$1版',
+	'coll-unknown_subpage_title'      => '未知嘅細頁',
+	'coll-unknown_subpage_text'       => '呢本[[Special:Book|Book]]書嘅細頁唔存在',
+	'coll-printable_version_pdf'      => 'PDF版',
+	'coll-download_as'                => '下載做$1',
+	'coll-noscript_text'              => '<h1>需要JavaScript!</h1>
+<strong>你嘅瀏覽器唔支援JavaScript或者JavaScript閂咗。
+呢一版唔會正常噉運行，除非開咗JavaScript。</strong>',
+	'coll-intro_text'                 => "開同埋管理響wiki版度你嘅個人選擇。<br />睇[[{{MediaWiki:Coll-helppage}}]]有更多嘅資料。",
+	'coll-helppage'                   => 'Help:書',
+	'coll-bookscategory'              => '書',
+	'coll-savedbook_template'         => '保存咗嘅書',
+	'coll-your_book'                  => '你嘅書',
+	'coll-download_title'             => '下載',
+	'coll-download_text'              => '要下載一個版本，揀一種格式，然後再撳個掣。',
+	'coll-download_as_text'           => '要下載做$1格式，撳個掣。',
+	'coll-download'                   => '下載',
+	'coll-format_label'               => '格式:',
+	'coll-remove'                     => '拎走',
+	'coll-show'                       => '顯示',
+	'coll-move_to_top'                => '移到最頂',
+	'coll-move_up'                    => '移上',
+	'coll-move_down'                  => '移落',
+	'coll-move_to_bottom'             => '移到最底',
+	'coll-title'                      => '標題:',
+	'coll-subtitle'                   => '細標題:',
+	'coll-contents'                   => '內容',
+	'coll-drag_and_drop'              => '用拖放去重排wiki版同章',
+	'coll-create_chapter'             => '開章',
+	'coll-sort_alphabetically'        => '按字母排',
+	'coll-clear_collection'           => '清書',
+	'coll-clear_collection_confirm'   => '你係咪真係想完全噉清晒你本書？',
+	'coll-rename'                     => '改名',
+	'coll-new_chapter'                => '輸入新章嘅名',
+	'coll-rename_chapter'             => '輸入章嘅名',
+	'coll-no_such_category'           => '無呢個分類',
+	'coll-notitle_title'              => '唔可以拎到頁標題',
+	'coll-notitle_title'              => '唔能夠決定嗰版嘅標題。',
+	'coll-post_failed_title'          => 'POST請求失敗',
+	'coll-post_failed_msg'            => 'POST請求 $1 失敗 ($2)。',
+	'coll-mwserve_failed_title'       => '生成伺服器錯誤',
+	'coll-mwserve_failed_msg'         => '生成伺服器發生錯誤: <nowiki>$1</nowiki>',
+	'coll-error_reponse'              => '伺服器回應錯誤',
+	'coll-empty_collection'           => '空書',
+	'coll-revision'                   => '修訂: $1',
+	'coll-save_collection_title'      => '保存同分享你嘅書',
+	'coll-save_collection_text'       => '揀你本書嘅保存位置:',
+	'coll-login_to_save'              => '如果你想保存以供之後使用，請[[Special:UserLogin|登入或開個新戶口]]。',
+	'coll-personal_collection_label'  => '個人書:',
+	'coll-community_collection_label' => '社群書:',
+	'coll-save_collection'            => '存書',
+	'coll-save_category'              => '全部書保存咗到[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]分類度。',
+	'coll-overwrite_title'            => '版已經存在。
+覆蓋？',
+	'coll-overwrite_text'             => '用[[:$1]]名嘅版已經存在。
+你係咪想用你本書換咗佢？',
+	'coll-yes'                        => '係',
+	'coll-no'                         => '唔係',
+	'coll-load_overwrite_text'        => '響你本書度已經有一啲版。
+你係咪想覆蓋你現有嘅書，加插新內容，或者係取消載入呢本書？',
+	'coll-overwrite'                  => '覆蓋',
+	'coll-append'                     => '加插',
+	'coll-cancel'                     => '取消',
+	'coll-update'                     => '更新',
+	'coll-limit_exceeded_title'       => '書太大',
+	'coll-limit_exceeded_text'        => '你本書太大。
+無新版加入。',
+	'coll-rendering_title'            => '生成緊',
+	'coll-rendering_text'             => "<p><strong>響文件生成緊嗰陣請等一陣。</strong></p>
+
+<p><strong>進度:</strong> <span id=\"renderingProgress\">$1</span>% <span id=\"renderingStatus\">$2</span></p>
+
+<p>呢一版應該會響每幾秒度自動更新一次。
+如果無動作嘅話，請撳你瀏覽器嘅重載掣。</p>",
+	'coll-rendering_status'           => "<strong>進度:</strong> $1",
+	'coll-rendering_article'          => '(wiki版: $1)',
+	'coll-rendering_page'             => '(頁: $1)',
+	'coll-rendering_finished_title'   => '生成好晒',
+	'coll-rendering_finished_text'    => "<strong>個文件檔已經生成好。</strong>
+<strong>[$1 下載個檔案]</strong>到你嘅電腦。
+
+留意:
+* 對個輸出唔滿意？睇[[{{MediaWiki:Coll-helppage}}|書幫手版]]去改善佢。",
+	'coll-notfound_title'             => '搵唔到書',
+	'coll-notfound_text'              => '搵唔到書版。',
+	'coll-is_cached'                  => '<ul><li>搵到個文件嘅快取版，唔需要重新生成過。<a href="$1">強制重新生成。</a></li></ul>',
+	'coll-excluded-templates'         => '* 響[[:Category:$1|$1]]分類上面嘅模已經排除。',
+	'coll-blacklisted-templates'      => '* 響[[:$1]]黑名單上面嘅嘢已經排除。',
+	'coll-return_to_collection'       => '<p>返去<a href="$1">$2</a></p>',
+	'coll-book_title'                 => '柯打一本印刷書',
+	'coll-book_text'                  => '響印刷需求拍擋拎一本印刷書:',
+	'coll-order_from_pp'              => '響$1柯打書',
+	'coll-about_pp'                   => '關於$1',
+	'coll-invalid_podpartner_title'   => '無效嘅POD拍擋',
+	'coll-invalid_podpartner_msg'     => '提供嘅POD拍擋無效。
+請聯絡你嘅MediaWiki管理員。',
+	'coll-license'                    => '牌照',
+	'coll-return_to'                  => "返去[[:$1]]",
+);
+
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Chenzw
  * @author Wmr89502270
