@@ -61,10 +61,18 @@ $wgCollectionArticleNamespaces = array(
 	NS_PROJECT_TALK,
 	NS_MEDIAWIKI,
 	NS_MEDIAWIKI_TALK,
-	100, // Portal
-	101, // Portal talk
-	102, // Author
-	103, // Author talk
+	100,
+	101,
+	102,
+	103,
+	104,
+	105,
+	106,
+	107,
+	108,
+	109,
+	110,
+	111,
 );
 
 /** Namespace for "community books" */
