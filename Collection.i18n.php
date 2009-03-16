@@ -1573,6 +1573,7 @@ Bonvolu kontakti vian administranton de MediaWiki.',
 /** Spanish (Español)
  * @author Baiji
  * @author Crazymadlover
+ * @author Dferg
  * @author Imre
  * @author Jatrobat
  * @author Lin linao
@@ -1604,6 +1605,7 @@ Esta página no funcionará correctamente mientras no esté habilitado.</strong>
 	'coll-intro_text' => 'Crear y gestionar tu selección individual de páginas wiki.<br />Lee [[{{MediaWiki:Coll-helppage}}]] para más información.',
 	'coll-helppage' => 'Help:Libros',
 	'coll-bookscategory' => 'Libros',
+	'coll-savedbook_template' => 'libro_guardado',
 	'coll-your_book' => 'Tu libro',
 	'coll-download_title' => 'Descargar',
 	'coll-download_text' => 'Para descargar una versión fuera de línea, elige un formato y pulsa el botón.',
