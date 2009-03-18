@@ -1336,6 +1336,15 @@ Skontaktuj pšosym swójogo administratora MediaWiki',
 	'coll-return_to' => 'Slědk k [[:$1]]',
 );
 
+/** Ewe (Eʋegbe)
+ * @author Natsubee
+ */
+$messages['ee'] = array(
+	'coll-contents' => 'Emenyawo',
+	'coll-notfound_title' => 'Womekpɔ agbalẽa o',
+	'coll-license' => 'Mɔɖeɖe',
+);
+
 /** Greek (Ελληνικά)
  * @author Consta
  * @author Geraki
@@ -1517,7 +1526,7 @@ $messages['eo'] = array(
 	'coll-empty_collection' => 'Malplena libro',
 	'coll-revision' => 'Versio: $1',
 	'coll-save_collection_title' => 'Konservi kaj permesigi vian libron',
-	'coll-save_collection_text' => 'Elektu lokon:',
+	'coll-save_collection_text' => 'Elektu konservlokon por via libro:',
 	'coll-login_to_save' => 'Se vi volas konservi librojn por posta uzo, bonvolu [[Special:UserLogin|ensaluti aŭ krei novan konton]].',
 	'coll-personal_collection_label' => 'Propra libro:',
 	'coll-community_collection_label' => 'Komuna libro:',
