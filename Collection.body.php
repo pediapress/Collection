@@ -43,7 +43,7 @@ class Collection extends SpecialPage {
 		global $wgOut;
 		global $wgRequest;
 		global $wgUser;
-    global $wgContLang;
+		global $wgContLang;
 		global $wgCommunityCollectionNamespace;
 		global $wgCollectionMaxArticles;
 		
@@ -539,7 +539,7 @@ class Collection extends SpecialPage {
 					$oldid = -1;
 					$currentVersion = 1;
 				} else if ( preg_match( '/\[\{\{fullurl:(.*?)\|oldid=(.*?)\}\}\s+(.*?)\]/', $articleTitle, $match ) ) {
-				       	$articleTitle = $match[1];
+					$articleTitle = $match[1];
 					$displayTitle = $match[3];
 					$oldid = $match[2];
 					$currentVersion = 0;
@@ -551,9 +551,9 @@ class Collection extends SpecialPage {
 				}
 				$articleTitle = Title::newFromText( $articleTitle );
 				if ($oldid < 0) {
-				   $article = new Article( $articleTitle );
+					 $article = new Article( $articleTitle );
 				} else {
-				   $article = new Article( $articleTitle, $oldid );
+					 $article = new Article( $articleTitle, $oldid );
 				}
 				if ( !$article->exists() ) {
 					continue;
@@ -601,7 +601,7 @@ class Collection extends SpecialPage {
 		}
 		if ( !empty( $collection['items'] ) ) {
 			foreach ( $collection['items'] as $item ) {
-                                if ( $item['type'] == 'chapter' ) {
+				if ( $item['type'] == 'chapter' ) {
 					$articleText .= ';' . $item['title'] . "\n";
 				} else if ( $item['type'] == 'article' ) {
 					if ($item['currentVersion'] == 1) {
@@ -626,9 +626,9 @@ class Collection extends SpecialPage {
 		}
 		$catTitle = Title::makeTitle( NS_CATEGORY, wfMsgForContent( 'coll-bookscategory' ) );
 		if ( !is_null( $catTitle ) ) {
-            $articleText .= "\n[[" . $catTitle->getPrefixedText() . "|" . wfEscapeWikiText( $title->getSubpageText() ) . "]]\n";
+			$articleText .= "\n[[" . $catTitle->getPrefixedText() . "|" . wfEscapeWikiText( $title->getSubpageText() ) . "]]\n";
 		}
-    
+		
 		$req = new FauxRequest(array(
 			'action' => 'edit',
 			'title' => $title->getPrefixedText(),
@@ -772,7 +772,7 @@ class Collection extends SpecialPage {
 			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
 			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
 			'print_template_prefix' => wfMsgForContent( 'coll-print_template_prefix' ),
-            'print_template_pattern' => wfMsgForContent( 'coll-print_template_pattern' ),
+			'print_template_pattern' => wfMsgForContent( 'coll-print_template_pattern' ),
 			'language' => $wgContLang->getCode(),
 			'writer' => $writer,
 			'force_render' => true
@@ -944,7 +944,7 @@ class Collection extends SpecialPage {
 		$wgOut->setPageTitle( wfMsg( 'coll-save_collection' ) );
 		
 		$template = new CollectionSaveOverwriteTemplate();
-		$template->set( 'title',  $title );
+		$template->set( 'title', $title );
 		$wgOut->addTemplate( $template );
 	}
 
@@ -955,7 +955,7 @@ class Collection extends SpecialPage {
 		$wgOut->setPageTitle( wfMsg( 'coll-load_collection' ) );
 		
 		$template = new CollectionLoadOverwriteTemplate();
-		$template->set( 'title',  $title );
+		$template->set( 'title', $title );
 		$wgOut->addTemplate( $template );
 	}
 
@@ -1010,7 +1010,7 @@ class Collection extends SpecialPage {
 						'href' => SkinTemplate::makeSpecialUrlSubpage(
 							'Book',
 							'render_collection/',
-						  $params . '&writer=rl'),
+							$params . '&writer=rl'),
 						'text' => wfMsg( 'coll-printable_version_pdf' ),
 					);
 				}
@@ -1022,16 +1022,16 @@ class Collection extends SpecialPage {
 					$oldid = $wgArticle->getOldID();
 					if ( $oldid ) {
 						$params .= '&oldid=' . $oldid;
-                    } else {
-                        $params .= '&oldid=' . $wgArticle->getLatest();
-                    }
+					} else {
+						$params .= '&oldid=' . $wgArticle->getLatest();
+					}
 				}
 				if ( isset( $wgCollectionFormats['rl'] ) ) {
 					$nav_urls['printable_version_pdf'] = array(
 						'href' => SkinTemplate::makeSpecialUrlSubpage(
 							'Book',
 							'render_article/',
-						  $params . '&writer=rl' ),
+							$params . '&writer=rl' ),
 						'text' => wfMsg( 'coll-printable_version_pdf' )
 					);
 				}
@@ -1079,7 +1079,7 @@ EOS
 			// it would be very confusing.
 			$html = self::getPortlet();
 			if ( $html ) {
-        $bar[ 'coll-create_a_book' ] = $html;
+				$bar[ 'coll-create_a_book' ] = $html;
 			}
 		}
 		return true;
@@ -1098,8 +1098,8 @@ EOS
 			$portletTitle = wfMsgHtml( 'coll-create_a_book' );
 			print <<<EOS
 <div id="p-collection" class="portlet">	 
-  <h5>$portletTitle</h5>	 
-    <div class="pBody">	 
+	<h5>$portletTitle</h5>	 
+		<div class="pBody">	 
 EOS
 			;
 			print $html;
@@ -1114,30 +1114,34 @@ EOS
 		global $wgArticle;
 		global $wgTitle;
 		global $wgOut;
-    global $wgRequest;
+		global $wgRequest;
 		global $wgCollectionArticleNamespaces;
 
 		wfLoadExtensionMessages( 'Collection' );
 		
-    if (!$ajaxHint) {
-      // we need to re-construct a title object from the request, because
-      // the "subpage" (i.e. "par") part has been stripped of by SpecialPage.php
-      // in $wgTitle.
-      $origTitle = Title::newFromUrl($wgRequest->getVal('title'));
-      if (!is_null($origTitle)
-        && $origTitle->getLocalUrl() == SkinTemplate::makeSpecialUrl('Book')) {
-        return;
-      }
-    }
+		if (!$ajaxHint) {
+			// we need to re-construct a title object from the request, because
+			// the "subpage" (i.e. "par") part has been stripped of by SpecialPage.php
+			// in $wgTitle.
+			$origTitle = Title::newFromUrl($wgRequest->getVal('title'));
+			if (!is_null($origTitle)
+				&& $origTitle->getLocalUrl() == SkinTemplate::makeSpecialUrl('Book')) {
+				return;
+			}
+		}
 
 		$addArticle = wfMsgHtml( 'coll-add_page' );
+		$addArticleTooltip = wfMsgHtml( 'coll-add_page_tooltip' );
 		$removeArticle = wfMsgHtml( 'coll-remove_page' );
+		$removeArticleTooltip = wfMsgHtml( 'coll-remove_page_tooltip' );
 		$addCategory = wfMsgHtml( 'coll-add_category' );
+		$addCategoryTooltip = wfMsgHtml( 'coll-add_category_tooltip' );
 		$loadCollection = wfMsgHtml( 'coll-load_collection' );
-    $namespace =  $wgTitle->getNamespace();
+		$loadCollection = wfMsgHtml( 'coll-load_collection_tooltip' );
+		$namespace = $wgTitle->getNamespace();
 		
 		$numArticles = self::countArticles();
-    $showShowAndClearLinks = true;
+		$showShowAndClearLinks = true;
 		
 		$out = "<ul id=\"collectionPortletList\">";
 		
@@ -1146,89 +1150,92 @@ EOS
 			$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 				'Book',
 				'load_collection/',
-			  $params ) );
-			$out .= "<li><a href=\"$href\" rel=\"nofollow\">$loadCollection</a></li>";
-      $showShowAndClearLinks = false;
+				$params ) );
+			$out .= "<li><a href=\"$href\" rel=\"nofollow\" title=\"$loadCollectionTooltip\">$loadCollection</a></li>";
+			$showShowAndClearLinks = false;
 
 		} else if ( $ajaxHint == 'AddCategory' || $namespace == NS_CATEGORY ) {
-      $params = "cattitle=" . $wgTitle->getPartialURL();
-      $href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-        'Book',
-        'add_category/',
-        $params ) );
-      $out .= <<<EOS
+			$params = "cattitle=" . $wgTitle->getPartialURL();
+			$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+				'Book',
+				'add_category/',
+				$params ) );
+			$out .= <<<EOS
 <li>
-<a href="$href" onclick="collectionCall('AddCategory', [wgTitle]); return false;" rel="nofollow">$addCategory</a>
+<a href="$href" onclick="collectionCall('AddCategory', [wgTitle]); return false;" rel="nofollow" title="$addCategoryTooltip">$addCategory</a>
 </li>
 EOS
-      ;
+			;
 
-    } else if ( $ajaxHint || in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
-      $params = "arttitle=" . $wgTitle->getPrefixedUrl();
-      if ( !is_null( $wgArticle ) ) {
-        $oldid = $wgArticle->getOldID();
-        $params .= "&oldid=" . $oldid;
-      } else {
-        $oldid = null;
-      }
+		} else if ( $ajaxHint || in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
+			$params = "arttitle=" . $wgTitle->getPrefixedUrl();
+			if ( !is_null( $wgArticle ) ) {
+				$oldid = $wgArticle->getOldID();
+				$params .= "&oldid=" . $oldid;
+			} else {
+				$oldid = null;
+			}
 
-      if ( $ajaxHint == "RemoveArticle" || self::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) {
-        $href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-          'Book',
-          'add_article/',
-          $params ) );
-        $out .= <<<EOS
+			if ( $ajaxHint == "RemoveArticle" || self::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) {
+				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+					'Book',
+					'add_article/',
+					$params ) );
+				$out .= <<<EOS
 <li>
-	<a href="$href" onclick="collectionCall('AddArticle', [wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow">$addArticle</a>
+	<a href="$href" onclick="collectionCall('AddArticle', [wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow" title="$addArticleTooltip">$addArticle</a>
 </li>
 EOS
-        ;
-      } else {
-        $href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-          'Book',
-          'remove_article/',
-          $params ) );
-        $out .= <<<EOS
+				;
+			} else {
+				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+					'Book',
+					'remove_article/',
+					$params ) );
+				$out .= <<<EOS
 <li>
-	<a href="$href" onclick="collectionCall('RemoveArticle', [wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow">$removeArticle</a>
+	<a href="$href" onclick="collectionCall('RemoveArticle', [wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow" title="$removeArticleTooltip">$removeArticle</a>
 </li>
 EOS
-        ;
-      }
-    }
+				;
+			}
+		}
 			
-    if ( $showShowAndClearLinks && $numArticles > 0 ) {
-      global $wgLang;
-      $articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $wgLang->formatNum( $numArticles ) );
-      $showCollection = wfMsgHtml( 'coll-show_collection' );
-      $showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book') );
-      $out .= <<<EOS
-							<li><a href="$showURL" rel="nofollow">$showCollection<br />
+		if ( $showShowAndClearLinks && $numArticles > 0 ) {
+			global $wgLang;
+			$articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $wgLang->formatNum( $numArticles ) );
+			$showCollection = wfMsgHtml( 'coll-show_collection' );
+			$showCollectionTooltip = wfMsgHtml( 'coll-show_collection_tooltip' );
+			$showURL = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book') );
+			$out .= <<<EOS
+							<li><a href="$showURL" rel="nofollow" title="$showCollectionTooltip">$showCollection<br />
 								($articles)</a></li>
 EOS
-      ;
-    
-      $clearCollection = wfMsgHtml( 'coll-clear_collection' );
-      $params = 'return_to=' . $wgTitle->getFullURL();
-      $href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
-        'Book',
-        'clear_collection/',
-        $params ) );
-      $msg = htmlspecialchars( wfMsg( 'coll-clear_collection_confirm' ) );
-      $out .= <<<EOS
+			;
+		
+			$clearCollection = wfMsgHtml( 'coll-clear_collection' );
+			$clearCollectionTooltip = wfMsgHtml( 'coll-clear_collection_tooltip' );
+			$params = 'return_to=' . $wgTitle->getFullURL();
+			$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
+				'Book',
+				'clear_collection/',
+				$params ) );
+			$msg = htmlspecialchars( wfMsg( 'coll-clear_collection_confirm' ) );
+			$out .= <<<EOS
 <li>
-	<a href="$href" onclick="if (confirm('$msg')) return true; else return false;" rel="nofollow">$clearCollection</a>
+	<a href="$href" onclick="if (confirm('$msg')) return true; else return false;" rel="nofollow" title="$clearCollectionTooltip">$clearCollection</a>
 </li>
 EOS
-      ;
-    }
-    
-    $helpCollections = wfMsgHtml( 'coll-help_collections' );
-    $helpURL = htmlspecialchars( Title::newFromText( wfMsgForContent( 'coll-helppage' ) )->getFullURL() );
-    $out .= <<<EOS
-							<li><a href="$helpURL">$helpCollections</a></li>
+			;
+		}
+		
+		$helpCollections = wfMsgHtml( 'coll-help_collections' );
+		$helpCollectionsTooltip = wfMsgHtml( 'coll-help_collections_tooltip' );
+		$helpURL = htmlspecialchars( Title::newFromText( wfMsgForContent( 'coll-helppage' ) )->getFullURL() );
+		$out .= <<<EOS
+							<li><a href="$helpURL" title="$helpCollectionsTooltip">$helpCollections</a></li>
 EOS
-    ;
+		;
 		
 		$out .= "</ul>";
 
