@@ -355,6 +355,7 @@ class Collection extends SpecialPage {
 
 	static function addArticleFromName( $namespace, $name, $oldid=0 ) {
 		$title = Title::makeTitleSafe( $namespace, $name );
+		if (!$title) return false;
 		return self::addArticle( $title, $oldid );
 	}
 	
