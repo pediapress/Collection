@@ -103,6 +103,7 @@ $listTemplate->execute();
 		</form>
 	</div>
 
+  <?php if ($GLOBALS['wgEnableWriteAPI']) { ?>
 	<div style="margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 		<h2><span class="mw-headline"><?php $this->msg('coll-save_collection_title') ?></span></h2>
 		<?php if ($GLOBALS['wgUser']->isLoggedIn()) { ?>
@@ -149,6 +150,7 @@ $listTemplate->execute();
 		$this->msgWiki('coll-save_category');
 		?>
 	</div>
+  <?php } ?>
 
 </div>
 
