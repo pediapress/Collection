@@ -418,6 +418,7 @@ class Collection extends SpecialPage {
 	static function addCategory( $title ) {
 		global $wgOut;
 		global $wgCollectionMaxArticles;
+		global $wgCollectionArticleNamespaces;
 
 		$limit = $wgCollectionMaxArticles - self::countArticles();
 		if ( $limit <= 0 ) {
@@ -435,7 +436,6 @@ class Collection extends SpecialPage {
 		$where = array(
 			'cl_from=page_id',
 			'cl_to' => $title->getDBKey(),
-			'page_namespace' => NS_MAIN,
 		);
 		$res = $db->select( $tables, $fields, $where, __METHOD__, $options );
 		$members = array();
@@ -446,9 +446,11 @@ class Collection extends SpecialPage {
 				$limitExceeded = true;
 				break;
 			}
-			$articleTitle = Title::makeTitle( $row->page_namespace, $row->page_title );
-			if ( self::findArticle( $articleTitle->getPrefixedText() ) == -1 ) {
-				self::addArticle( $articleTitle );
+			if ( in_array( $row->page_namespace, $wgCollectionArticleNamespaces ) ) {
+				$articleTitle = Title::makeTitle( $row->page_namespace, $row->page_title );
+				if ( self::findArticle( $articleTitle->getPrefixedText() ) == -1 ) {
+					self::addArticle( $articleTitle );
+				}
 			}
 		}
 		$db->freeResult( $res );
