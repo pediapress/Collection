@@ -101,7 +101,7 @@ class Collection extends SpecialPage {
 					self::limitExceeded();
 					return;
 				} else {
-					$wgOut->redirect( $title->getFullURL() );
+					$wgOut->redirect( $wgRequest->getVal( 'return_to', $title->getFullURL() ) );
 				}
 				$wgUser->invalidateCache();
 				return;
