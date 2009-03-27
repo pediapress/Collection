@@ -874,6 +874,10 @@ class Collection extends SpecialPage {
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 			'writer' => $wgRequest->getVal( 'writer' ),
 		), $timeout=false, $toFile=$tempfile );
+		if (!$headers) {
+			$wgOut->showErrorPage( 'coll-download_notfound_title', 'coll-download_notfound_text' );
+			return;
+		}
 		wfResetOutputBuffers();
 		if ( isset( $headers['content-type'] ) ) {
 			header( 'Content-Type: ' . $headers['content-type']);
