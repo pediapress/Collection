@@ -5,7 +5,7 @@ function refreshCollectionPortlet(hint) {
     if (hint) {
       wgCollectionAddRemoveState = hint;
     }
-    if (typeof refreshCollectionArticleList) {
+    if (typeof refreshCollectionArticleList == 'function') {
       refreshCollectionArticleList();
     }
   });
