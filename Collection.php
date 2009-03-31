@@ -95,6 +95,10 @@ $wgCollectionFormats = array(
 
 $wgCollectionPortletForLoggedInUsersOnly = false;
 
+/** URLs to the JavaScript and CSS files of the popup gadget used on Wikipedia: */
+$wgCollectionNavPopupJSURL = null;
+$wgCollectionNavPopupCSSURL = null;
+
 # ==============================================================================
 
 

@@ -185,6 +185,29 @@ Installation and Configuration of the Collection Extension
       }
     ?>
 
+  *$wgCollectionNavPopupJSURL and $wgCollectionNavPopupCSSURL (string or null)*
+   If you want to use popups to easily add/remove linked articles to your collection,
+   you have to provide URLs for the JavaScript and the CSS file of the popup Gadget
+   that's used on Wikipedia (see http://en.wikipedia.org/wiki/Navpop for more
+   information). If the stock files in the English Wikipedia are usable for you
+   (e.g. because you have a similar setup of your MediaWiki), you can link them
+   directly::
+
+     $wgCollectionNavPopupJSURL = 'http://en.wikipedia.org/w/index.php?title=MediaWiki:Gadget-popups.js&action=raw&ctype=text/javascript';
+     $wgCollectionNavPopupCSSURL = 'http://en.wikipedia.org/w/index.php?title=MediaWiki:Gadget-navpop.css&action=raw&ctype=text/css';
+
+   Otherwise you have to provide adjusted files and set the URLs accordingly.
+
+   If the URLs are provided, the Collection popup is only active if
+   * JavaScript is enabled,
+   * there's at least one wiki page in the current collection (i.e. the feature
+     is activated by clicking on "Add wiki page" for the first time and
+     deactivated as soon as the collection is empty),
+   * the current user didn't enable the navigation popup gadget (see above),
+     which would result in conflicting popups.
+
+   Default for both variables is null, i.e. the popup is deactivated.
+
 * As the current collection of articles is stored in the session, the session
   timeout should be set to some sensible value (at least a few hours, maybe
   one day). Adjust session.cookie_lifetime and session.gc_maxlifetime in your
