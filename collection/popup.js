@@ -6,7 +6,7 @@
 document.write('<script type="text/javascript" src="' + wgCollectionNavPopupJSURL + '"></script>');
 importStylesheetURI(wgCollectionNavPopupCSSURL);
 
-var createBookMode = false;
+var createBookMode = null;
 var collectionArticleList = [];
 var collectionPopup;
 
@@ -110,7 +110,7 @@ function hideCollectionPopup(popup) {
 
 // stop popups
 function stopCollectionPopups() {
- 	if (createBookMode) {
+ 	if (createBookMode != false) {
  	 	var bodyDiv = document.getElementById("bodyContent");
 	 	var links = bodyDiv.getElementsByTagName('a');
 	 	for (var i = 0; i < links.length; i++) {
@@ -123,7 +123,7 @@ function stopCollectionPopups() {
 
 // start popups
 function startCollectionPopups() { 
- 	if (!createBookMode) {
+ 	if (createBookMode != true) {
 	 	var bodyDiv = document.getElementById("bodyContent");
 	 	var links = bodyDiv.getElementsByTagName('a');
 	 	for (var i = 0; i < links.length; i++) {
