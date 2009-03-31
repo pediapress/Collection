@@ -1296,7 +1296,7 @@ EOS
 /* ]]> */
 </script>
 <script type="text/javascript" src="$wgScriptPath/extensions/Collection/collection/json2.js?$wgCollectionStyleVersion"></script>
-<script type="text/javascript" src="$wgScriptPath/extensions/Collection/collection/popupCheck.js?$wgCollectionStyleVersion"></script>
+<script type="text/javascript" src="$wgScriptPath/extensions/Collection/collection/popupcheck.js?$wgCollectionStyleVersion"></script>
 EOS
 			;
 		}
