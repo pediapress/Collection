@@ -1123,6 +1123,11 @@ EOS
 		global $wgOut;
 		global $wgRequest;
 		global $wgCollectionArticleNamespaces;
+		global $wgJsMimeType;
+		global $wgScriptPath;
+		global $wgCollectionStyleVersion;
+		global $wgCollectionNavPopupJSURL;
+		global $wgCollectionNavPopupCSSURL;
 
 		wfLoadExtensionMessages( 'Collection' );
 		
@@ -1149,9 +1154,10 @@ EOS
 		
 		$numArticles = self::countArticles();
 		$showShowAndClearLinks = true;
+		$addRemoveState = '';
 		
-		$out = "<ul id=\"collectionPortletList\">";
-		
+		$out = '<ul id="collectionPortletList">';
+
 		if ( self::isCollectionPage( $wgTitle, $wgArticle) ) {
 			$params = "colltitle=" . $wgTitle->getPrefixedUrl();
 			$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
@@ -1161,7 +1167,8 @@ EOS
 			$out .= "<li><a href=\"$href\" rel=\"nofollow\" title=\"$loadCollectionTooltip\">$loadCollection</a></li>";
 			$showShowAndClearLinks = false;
 
-		} else if ( $ajaxHint == 'AddCategory' || $namespace == NS_CATEGORY ) {
+		} else if ( $ajaxHint == 'addcategory' || $namespace == NS_CATEGORY ) {
+			$addRemoveState = 'addcategory';
 			$params = "cattitle=" . $wgTitle->getPartialURL();
 			$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 				'Book',
@@ -1169,7 +1176,7 @@ EOS
 				$params ) );
 			$out .= <<<EOS
 <li>
-<a href="$href" onclick="collectionCall('AddCategory', [wgTitle]); return false;" rel="nofollow" title="$addCategoryTooltip">$addCategory</a>
+<a href="$href" onclick="collectionCall('AddCategory', ['addcategory', wgTitle]); return false;" rel="nofollow" title="$addCategoryTooltip">$addCategory</a>
 </li>
 EOS
 			;
@@ -1183,25 +1190,35 @@ EOS
 				$oldid = null;
 			}
 
-			if ( $ajaxHint == "RemoveArticle" || self::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) {
+			$addLink = false;
+			if ( $ajaxHint == 'removepage' ) {
+				$addLink = false;
+			} else if ( $ajaxHint == 'addpage') {
+				$addLink = true;
+			} else if ( self::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) {
+				$addLink = true;
+			}
+			if ( $addLink ) {
+				$addRemoveState = 'addpage';
 				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 					'Book',
 					'add_article/',
 					$params ) );
 				$out .= <<<EOS
 <li>
-	<a href="$href" onclick="collectionCall('AddArticle', [wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow" title="$addArticleTooltip">$addArticle</a>
+	<a href="$href" onclick="collectionCall('AddArticle', ['removepage', wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow" title="$addArticleTooltip">$addArticle</a>
 </li>
 EOS
 				;
 			} else {
+				$addRemoveState = 'removepage';
 				$href = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage(
 					'Book',
 					'remove_article/',
 					$params ) );
 				$out .= <<<EOS
 <li>
-	<a href="$href" onclick="collectionCall('RemoveArticle', [wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow" title="$removeArticleTooltip">$removeArticle</a>
+	<a href="$href" onclick="collectionCall('RemoveArticle', ['addpage', wgNamespaceNumber, wgTitle, $oldid]); return false;" rel="nofollow" title="$removeArticleTooltip">$removeArticle</a>
 </li>
 EOS
 				;
@@ -1244,24 +1261,45 @@ EOS
 EOS
 		;
 		
-		$out .= "</ul>";
-
 		$out .= <<<EOS
+</ul>
 <script type="text/javascript">
 /* <![CDATA[ */
-	function collectionCall(func, args) {
-		sajax_request_type = 'POST';
-		sajax_do_call('wfAjaxCollection' + func, args, function(xhr) {
-			sajax_request_type = 'GET';
-			sajax_do_call('wfAjaxCollectionGetPortlet', [func], function(xhr) {
-				document.getElementById('collectionPortletList').parentNode.innerHTML = xhr.responseText;
-			});
-		});
-	}
+	wgCollectionAddRemoveState = '$addRemoveState';
 /* ]]> */
 </script>
+<script type="text/javascript" src="$wgScriptPath/extensions/Collection/collection/portlet.js?$wgCollectionStyleVersion"></script>
+EOS
+		;
+
+		// activate popup check:
+		if ( $wgCollectionNavPopupJSURL && $wgCollectionNavPopupCSSURL ) {
+			$addPageText = wfMsg( 'coll-add_page_popup' );
+			$addCategoryText = wfMsg( 'coll-add_category_popup' );
+			$removePageText = wfMsg( 'coll-remove_page_popup' );
+			$popupHelpText = wfMsg( 'coll-popup_help_text' );
+			$out .= <<<EOS
+<script type="text/javascript">
+/* <![CDATA[ */
+	wgCollectionNavPopupJSURL = '$wgCollectionNavPopupJSURL';
+  wgCollectionNavPopupCSSURL = '$wgCollectionNavPopupCSSURL';
+  wgCollectionAddPageText = '$addPageText';
+  wgCollectionAddCategoryText = '$addCategoryText';
+  wgCollectionRemovePageText = '$removePageText';
+  wgCollectionPopupHelpText = '$popupHelpText';
+	wgCollectionArticleNamespaces = [
 EOS
 			;
+			$out .= implode( ', ', $wgCollectionArticleNamespaces );
+			$out .= <<<EOS
+];
+/* ]]> */
+</script>
+<script type="text/javascript" src="$wgScriptPath/extensions/Collection/collection/json2.js?$wgCollectionStyleVersion"></script>
+<script type="text/javascript" src="$wgScriptPath/extensions/Collection/collection/popupCheck.js?$wgCollectionStyleVersion"></script>
+EOS
+			;
+		}
 
 		return $out;
 	}
