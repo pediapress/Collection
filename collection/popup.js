@@ -6,7 +6,7 @@
 document.write('<script type="text/javascript" src="' + wgCollectionNavPopupJSURL + '"></script>');
 importStylesheetURI(wgCollectionNavPopupCSSURL);
 
-var createBookMode = true;
+var createBookMode = false;
 var collectionArticleList = [];
 var collectionPopup;
 
@@ -43,6 +43,7 @@ function getCollectionPopupHTML(popup) {
     if (ns != 0) {
         stripped_title = pg.current.article.stripNamespace();
     }
+    stripped_title = stripped_title.replace(/'/, "\\'");
 	var popupContent = '<a onclick="';
 	if (isInCollection(title)) {
 		popupContent += 'popupCollectionCall(\'RemoveArticle\', [' + ns + ', \'' + stripped_title + '\', 0]); return false;';
