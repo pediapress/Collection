@@ -549,10 +549,10 @@ class Collection extends SpecialPage {
 				}
 
 
+				$articleTitle = Title::newFromText( $articleTitle );
 				if( is_null( $articleTitle ) ) {
 					continue;
 				}
-				$articleTitle = Title::newFromText( $articleTitle );
 				if ($oldid < 0) {
 					 $article = new Article( $articleTitle );
 				} else {
