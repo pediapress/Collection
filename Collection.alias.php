@@ -207,3 +207,8 @@ $aliases['tl'] = array(
 	'Book' => array( 'Aklat', 'Kalipunan' ),
 );
 
+/** Veps (Vepsan kel') */
+$aliases['vep'] = array(
+	'Book' => array( 'Kirj' ),
+);
+
