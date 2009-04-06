@@ -21,7 +21,6 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-
 # Not a valid entry point, skip unless MEDIAWIKI is defined
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo <<<EOT
@@ -101,34 +100,35 @@ $wgCollectionNavPopupCSSURL = null;
 
 # ==============================================================================
 
-
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Collection',
 	'version' => $wgCollectionVersion,
-	'author' => 'PediaPress GmbH',
+	'author' => array( 'PediaPress GmbH', 'Siebrand Mazeland' ),
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Collection',
 	'description' => 'Create books',
 	'descriptionmsg' => 'coll-desc',
 );
 
 # register Special:Book:
-
-$wgAutoloadClasses['Collection'] = $dir . 'Collection.body.php';
+$wgAutoloadClasses['SpecialCollection'] = $dir . 'Collection.body.php';
+$wgAutoloadClasses['CollectionSession'] = $dir . 'Collection.session.php';
+$wgAutoloadClasses['CollectionHooks'] = $dir . 'Collection.hooks.php';
 $wgAutoloadClasses['CollectionPageTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionListTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionLoadOverwriteTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionSaveOverwriteTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionRenderingTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionFinishedTemplate'] = $dir . 'Collection.templates.php';
-$wgExtensionMessagesFiles['Collection'] = $dir . 'Collection.i18n.php';
+$wgExtensionMessagesFiles['CollectionCore'] = $dir . 'CollectionCore.i18n.php'; // Only contains essential messages outside the special page
+$wgExtensionMessagesFiles['Collection'] = $dir . 'Collection.i18n.php'; // Contains all messages used on special page
 $wgExtensionAliasesFiles['Collection'] = $dir . 'Collection.alias.php';
-$wgSpecialPages['Book'] = 'Collection';
+$wgSpecialPages['Book'] = 'SpecialCollection';
 $wgSpecialPageGroups['Book'] = 'pagetools';
 
-$wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'Collection::createNavURLs';
-$wgHooks['MonoBookTemplateToolboxEnd'][] = 'Collection::insertMonoBookToolboxLink';
-$wgHooks['SkinBuildSidebar'][] = 'Collection::buildSidebar';
-$wgHooks['OutputPageCheckLastModified'][] = 'Collection::checkLastModified';
+$wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'CollectionHooks::createNavURLs';
+$wgHooks['MonoBookTemplateToolboxEnd'][] = 'CollectionHooks::insertMonoBookToolboxLink';
+$wgHooks['SkinBuildSidebar'][] = 'CollectionHooks::buildSidebar';
+$wgHooks['OutputPageCheckLastModified'][] = 'CollectionHooks::checkLastModified';
 
 # register global Ajax functions:
 
@@ -162,7 +162,7 @@ $wgAjaxExportList[] = 'wfAjaxPostCollection';
 
 function wfAjaxGetMWServeStatus( $collection_id='', $writer='rl' ) {
 	$json = new Services_JSON();
-	$result = Collection::mwServeCommand( 'render_status', array(
+	$result = SpecialCollection::mwServeCommand( 'render_status', array(
 		'collection_id' => $collection_id,
 		'writer' => $writer
 	) );
@@ -174,28 +174,28 @@ function wfAjaxGetMWServeStatus( $collection_id='', $writer='rl' ) {
 $wgAjaxExportList[] = 'wfAjaxGetMWServeStatus';
 
 function wfAjaxCollectionAddArticle( $namespace=0, $title='', $oldid='' ) {
-	Collection::addArticleFromName( $namespace, $title, $oldid );
+  SpecialCollection::addArticleFromName( $namespace, $title, $oldid );
 	return '';
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionAddArticle';
 
 function wfAjaxCollectionRemoveArticle( $namespace=0, $title='', $oldid='' ) {
-	Collection::removeArticleFromName( $namespace, $title, $oldid );
+	SpecialCollection::removeArticleFromName( $namespace, $title, $oldid );
 	return '';
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionRemoveArticle';
 
 function wfAjaxCollectionAddCategory( $title='' ) {
-	Collection::addCategoryFromName( $title );
+	SpecialCollection::addCategoryFromName( $title );
 	return '';
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionAddCategory';
 
 function wfAjaxCollectionGetPortlet( $ajaxHint='' ) {
-	return Collection::getPortlet( $ajaxHint );
+	return CollectionHooks::getPortlet( $ajaxHint );
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionGetPortlet';
@@ -215,28 +215,28 @@ function wfAjaxCollectionGetItemList() {
 $wgAjaxExportList[] = 'wfAjaxCollectionGetItemList';
 
 function wfAjaxCollectionRemoveItem( $index ) {
-	Collection::removeItem( $index );
+	SpecialCollection::removeItem( $index );
 	return wfAjaxCollectionGetItemList();
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionRemoveItem';
 
 function wfAjaxCollectionAddChapter( $name ) {
-	Collection::addChapter( $name );
+	SpecialCollection::addChapter( $name );
 	return wfAjaxCollectionGetItemList();
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionAddChapter';
 
 function wfAjaxCollectionRenameChapter( $index, $name ) {
-	Collection::renameChapter( $index, $name );
+	SpecialCollection::renameChapter( $index, $name );
 	return wfAjaxCollectionGetItemList();
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionRenameChapter';
 
 function wfAjaxCollectionSetTitles( $title, $subtitle ) {
-	Collection::setTitles( $title, $subtitle );
+	SpecialCollection::setTitles( $title, $subtitle );
 	return '';
 }
 
@@ -251,14 +251,14 @@ function wfAjaxCollectionSetSorting( $items_string ) {
 			$items[] = intval( $s );
 		}
 	}
-	Collection::setSorting( $items );
+	SpecialCollection::setSorting( $items );
 	return wfAjaxCollectionGetItemList();
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionSetSorting';
 
 function wfAjaxCollectionClear() {
-	Collection::clearCollection();
+	CollectionSession::clearCollection();
 	return wfAjaxCollectionGetItemList();
 }
 

@@ -21,4 +21,4 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-$wgCollectionVersion = "1.1";
+$wgCollectionVersion = "1.2";
