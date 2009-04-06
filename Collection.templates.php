@@ -57,18 +57,44 @@ $listTemplate->execute();
 
 	<div style="margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 		<h2><span class="mw-headline"><?php $this->msg('coll-book_title') ?></span></h2>
-		<?php $this->msgWiki('coll-book_text') ?>
-		<div id="ppList">
-			<?php foreach ($this->data['podpartners'] as $partner => $partnerData) { ?>
-			<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'post_zip/')) ?>" method="get">
-				<input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
-				<table style="width:100%; background-color: transparent;"><tr><td><a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?></a></td>
-				<td style="text-align:right"><input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>" class="order" <?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> /></td></tr></table>
-				
-			</form>
-			<?php } ?>
+		<?php
+$partnerData = $this->data['podpartners']['pediapress'];
+$this->msgWiki('coll-book_text');
+    ?>
+    <div>
+      <div style="float:right">
+        <form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'post_zip/')) ?>" method="get">
+          <input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
+          <input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>" class="order" <?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
+        </form>
+      </div>
+		<?php
+$t = Title::newFromText(wfMsgForContent('coll-order_info_article'));
+$a = new Article($t);
+if ( $a->exists() ) { ?>
+      <div id="coll-more_info" style="display:none">
+        <a href="javascript:void(0)" onclick="coll_toggle_order_info(true);"><?php $this->msgWiki('coll-more_info') ?></a>
+      </div>
+      <div id="coll-hide_info" style="display:none">
+        <a href="javascript:void(0)" onclick="coll_toggle_order_info(false);"><?php $this->msgWiki('coll-hide_info') ?></a>
+      </div>
+<?php } else { ?>
+      <a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?></a>
+<?php } ?>
 		</div>
-	</div>
+<?php
+if ($a->exists() ) { ?>
+		<div id="coll-order_info" style="display:none; margin-top: 2em;">
+<?php
+echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
+	$GLOBALS['wgTitle'],
+	$GLOBALS['wgOut']->parserOptions(),
+	true
+)->getText();
+?>
+		</div>
+<?php } ?>
+  </div>
 
 	<div style="margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 		<h2><span class="mw-headline"><?php $this->msg('coll-download_title') ?></span></h2>
