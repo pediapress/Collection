@@ -166,7 +166,9 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-cancel' => '{{Identical|Cancel}}',
 	'coll-rendering_status' => '{{Identical|Status}}',
 	'coll-order_from_pp' => '* $1 is the name of a print provider (a company name)',
+	'coll-about_pp' => '{{Identical|About}}',
 	'coll-return_to' => '{{Identical|Return to $1}}',
+	'coll-order_info_article' => 'Do not translate "Help:"',
 );
 
 /** Faeag Rotuma (Faeag Rotuma)
@@ -1068,9 +1070,9 @@ Hinweise:
 	'coll-invalid_podpartner_msg' => 'Die Angaben zum Print-on-Demand-Partner sind fehlerhaft. Bitte kontaktiere den MediaWiki-Administrator.',
 	'coll-license' => 'Lizenz',
 	'coll-return_to' => 'Zurück zu [[:$1]]',
-	'coll-more_info'                  => 'Weitere Informationen zeigen',
-	'coll-hide_info'                  => 'Informationen verstecken',
-	'coll-order_info_article'         => 'Hilfe:Bücher/PediaPress Bestellinformation',
+	'coll-more_info' => 'Weitere Informationen zeigen',
+	'coll-hide_info' => 'Informationen verstecken',
+	'coll-order_info_article' => 'Help:Bücher/PediaPress Bestellinformation',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
@@ -1109,7 +1111,7 @@ Hinweise:
 * Sind Sie mit dem Ergebnis nicht zufrieden? Möglichkeiten zur Verbesserung der Ausgabe finden Sie auf der [[{{MediaWiki:Coll-helppage}}|Hilfeseite über Bücher]].',
 	'coll-notfound_text' => 'Ihr Buch konnte nicht gefunden werden.',
 	'coll-download_notfound_text' => 'Die Datei, die Sie versuchen herunterzuladen, existiert nicht: Möglicherweise wurde sie gelöscht oder sie muss neu generiert werden.',
-	'coll-book_text' => 'Bestellen Sie eine gedruckte Buchausgabe bei unserem Print-on-Demand-Partner:',
+	'coll-book_text' => 'Bestellen Sie eine gedruckte Buchausgabe bei unserem Print-on-Demand-Partner.',
 	'coll-invalid_podpartner_msg' => 'Die Angaben zum Print-on-Demand-Partner sind fehlerhaft. Bitte kontaktieren Sie den MediaWiki-Administrator.',
 );
 
@@ -1216,6 +1218,9 @@ Pśispomnjeśa:
 Skontaktuj pšosym swójogo administratora MediaWiki',
 	'coll-license' => 'Licenca',
 	'coll-return_to' => 'Slědk k [[:$1]]',
+	'coll-more_info' => 'Dalšne informacije pokazaś',
+	'coll-hide_info' => 'Informacije schowaś',
+	'coll-order_info_article' => 'Help:Knigły/PediaPress skazańske informacije',
 );
 
 /** Ewe (Eʋegbe)
@@ -2109,6 +2114,9 @@ Notas:
 Por favor, contacte co seu administrador MediaWiki.',
 	'coll-license' => 'Licenza',
 	'coll-return_to' => 'Voltar a "[[:$1]]"',
+	'coll-more_info' => 'Obter máis información',
+	'coll-hide_info' => 'Agochar a información',
+	'coll-order_info_article' => 'Help:Libros/Información de pedido a PediaPress',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -2642,6 +2650,9 @@ Přispomnjenka:
 Skontaktuj prošu swojeho administratora MediaWiki.',
 	'coll-license' => 'Licenca',
 	'coll-return_to' => 'Wróćo k [[:$1]]',
+	'coll-more_info' => 'Dalše informacije pokazać',
+	'coll-hide_info' => 'Informacije schować',
+	'coll-order_info_article' => 'Help:Knihi/PediaPress skazanske informacije',
 );
 
 /** Hungarian (Magyar)

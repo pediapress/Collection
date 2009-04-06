@@ -1551,8 +1551,10 @@ $messages['su'] = array(
  */
 $messages['sv'] = array(
 	'coll-add_category' => 'Lägg till kategori',
+	'coll-add_category_popup' => 'Lägg till wikisidor i den länkade kategorin till din bok',
 	'coll-add_category_tooltip' => 'Lägg till alla wikisidor i den här kategorin till din bok',
 	'coll-add_page' => 'Lägg till wikisida',
+	'coll-add_page_popup' => 'Lägg till länkade wikisidor till din bok',
 	'coll-add_page_tooltip' => 'Lägg till den nuvarande wikisidan till din bok',
 	'coll-bookscategory' => 'Böcker',
 	'coll-clear_collection' => 'Töm bok',
