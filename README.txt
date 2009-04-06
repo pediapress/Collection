@@ -20,7 +20,7 @@ The extension is being developed under the GNU General Public License by
 `PediaPress GmbH`_ in close collaboration with `Wikimedia Foundation`_
 and the `Commonwealth of Learning`_.
 
-Copyright (C) 2008, PediaPress GmbH
+Copyright (C) 2008-2009, PediaPress GmbH
 
 Prerequisites
 =============
@@ -54,7 +54,7 @@ Installation and Configuration of the Collection Extension
 
 * Checkout the *Collection* extension from the Subversion repository into the
   ``extensions`` directory of your *MediaWiki* installation::
-  
+
     cd extensions/
     svn co http://svn.mediawiki.org/svnroot/mediawiki/trunk/extensions/Collection
 
@@ -66,63 +66,63 @@ Installation and Configuration of the Collection Extension
 
   *$wgCollectionMWServeURL (string)*
    Set this to the URL of a render server (see above).
-   
+
    The default is ``"http://tools.pediapress.com/mw-serve/"``,
    a public render server for low-traffic MediaWikis hosted by PediaPress.
-   
+
    Note that the MediaWiki must be accessible from the render server, i.e. if
    your MediaWiki is behind a firewall you cannot use the public render server.
-  
+
   *$wgCollectionMWServeCert (string)*
    Filename of a SSL certificate in PEM format for the mw-serve render server.
    This needs to be used for self-signed certificates, otherwise CURL will
    throw an error. The default is null, i.e. no certificate.
-  
+
   *$wgCollectionMWServeCredentials (string)*
    Set this to a string of the form "USERNAME:PASSWORD" (or
    "USERNAME:PASSWORD:DOMAIN" if you're using LDAP), if the MediaWiki
    requires to be logged in to view articles.
    The render server will then login with these credentials using MediaWiki API
    before doing other requests.
-   
+
    SECURITY NOTICE: If the MediaWiki and the render server communicate over an
-   insecure channel (e.g. on an unencrypted channel over the internet), please
+   insecure channel (for example on an unencrypted channel over the internet), please
    DO NOT USE THIS SETTING, as the credentials will be exposed to eavesdropping!
-  
+
   *$wgCollectionFormats*
    An array mapping names of mwlib_ writers to the name of the produced format.
    The default value is::
-   
+
        array(
            'rl' => 'PDF',
        )
-    
+
    i.e. only PDF enabled. If you want to add OpenDocument Text in addition to
    PDF you can set $wgCollectionFormats to something like this::
-   
+
        $wgCollectionFormats = array(
            'rl' => 'PDF',
            'odf' => 'ODT',
        );
-   
+
    On the public render server tools.pediapress.com, currently the following
    writers are available:
-   
+
    * docbook: DocBook XML
    * odf: OpenDocument Text
    * rl: PDF
    * xhtml: XHTML 1.0 Transitional
-   
+
    If you're using your own render server, the list of available writers can be
    listed with the following mwlib_ command::
-   
+
      $ mw-render --list-writers
-   
+
   *$wgCollectionArticleNamespaces (array)*
    List of namespace numbers for pages which can be added to a collection.
    Category pages (NS_CATEGORY) are always an exception (all articles in a
    category are added, not the category page itself). Default is::
-   
+
      array(
      	NS_MAIN,
      	NS_TALK,
@@ -137,41 +137,41 @@ Installation and Configuration of the Collection Extension
      	102,
      	103,
      )
-   
+
   *$wgCommunityCollectionNamespace (integer)*
    Namespace for "community collections", i.e. the namespace where non-personal
    article collection pages are saved.
-   
+
    Default is ``NS_PROJECT``.
-  
+
   *$wgCollectionMaxArticles (integer)*
    Maximum number of articles allowed in a collection.
-   
+
    Default is 500.
-  
+
   *$wgLicenseName (string or null)*
    License name for articles in this MediaWiki.
    If set to ``null`` the localized version of the word "License" is used.
-   
+
    Default is null.
-  
+
   *$wgLicenseURL (string or null)*
    HTTP URL of an article containing the full license text in wikitext format
    for articles in this MediaWiki. E.g.
-   
+
        $wgLicenseURL = 'http://en.wikipedia.org/w/index.php?title=Wikipedia:Text_of_the_GNU_Free_Documentation_License&action=raw';
 
    for the GFDL.
    If set to null, the standard MediaWiki variables $wgRightsPage,
    $wgRightsUrl and $wgRightsText are used for license information.
-   
+
    If your MediaWiki contains articles with different licenses, make sure
    that each article contains the name of the license and set $wgLicenseURL
-   to an article that contains all needed licenses.   
-   
+   to an article that contains all needed licenses.
+
 * This step is needed for MediaWiki version < 1.14 (at the time of writing
   version 1.14 has not been released):
-  
+
   Add a portlet to the skin of your *MediaWiki* installation: Just before the line::
 
     <div class="portlet" id="p-tb">
@@ -190,8 +190,8 @@ Installation and Configuration of the Collection Extension
    you have to provide URLs for the JavaScript and the CSS file of the popup Gadget
    that's used on Wikipedia (see http://en.wikipedia.org/wiki/Navpop for more
    information). If the stock files in the English Wikipedia are usable for you
-   (e.g. because you have a similar setup of your MediaWiki), you can link them
-   directly::
+   (for example because you have a similar setup of your MediaWiki), you can link
+   them directly::
 
      $wgCollectionNavPopupJSURL = 'http://en.wikipedia.org/w/index.php?title=MediaWiki:Gadget-popups.js&action=raw&ctype=text/javascript';
      $wgCollectionNavPopupCSSURL = 'http://en.wikipedia.org/w/index.php?title=MediaWiki:Gadget-navpop.css&action=raw&ctype=text/css';
@@ -213,7 +213,7 @@ Installation and Configuration of the Collection Extension
   one day). Adjust session.cookie_lifetime and session.gc_maxlifetime in your
   ``php.ini`` accordingly.
 
-* Add a help page (e.g. ``Help:Books`` for wikis in English language).
+* Add a help page (for example ``Help:Books`` for wikis in English language).
   A repository of help pages in different languages can be found on
   `Meta-Wiki`_.
 
