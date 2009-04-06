@@ -2359,7 +2359,7 @@ $messages['he'] = array(
 	'coll-blacklisted-templates' => '* תבניות ברשימה השחורה [[:$1]] אינן כלולות.',
 	'coll-return_to_collection' => '<p>חזרה ל<a href="$1">$2</a></p>',
 	'coll-book_title' => 'הזמנה כספר מודפס',
-	'coll-book_text' => 'קבלת ספר מודפס משירות ההדפסה לפי דרישה:',
+	'coll-book_text' => 'קבלת ספר מודפס משירות ההדפסה לפי דרישה.',
 	'coll-order_from_pp' => 'הזמנת ספר מ־$1',
 	'coll-about_pp' => 'אודות $1',
 	'coll-invalid_podpartner_title' => 'שירות שגוי',
@@ -2367,6 +2367,9 @@ $messages['he'] = array(
 אנא צרו קשר עם מנהל של מדיה־ויקי.',
 	'coll-license' => 'רישיון',
 	'coll-return_to' => 'חזרה ל[[:$1]]',
+	'coll-more_info' => 'הצגת מידע נוסף',
+	'coll-hide_info' => 'הסתרת מידע',
+	'coll-order_info_article' => 'Help:ספרים/מידע על הזמנה ב-PediaPress',
 );
 
 /** Hindi (हिन्दी)
