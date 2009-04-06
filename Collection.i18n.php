@@ -117,7 +117,7 @@ Notes:
 	'coll-blacklisted-templates'      => '* Templates on blacklist [[:$1]] have been excluded.',
 	'coll-return_to_collection'       => '<p>Return to <a href="$1">$2</a></p>',
 	'coll-book_title'                 => 'Order as a printed book',
-	'coll-book_text'                  => 'Get a printed book from our print-on-demand partner:',
+	'coll-book_text'                  => 'Get a printed book from our print-on-demand partner.',
 	'coll-order_from_pp'              => 'Order book from $1',
 	'coll-about_pp'                   => 'About $1',
 	'coll-invalid_podpartner_title'   => 'Invalid POD partner',
@@ -126,6 +126,9 @@ Please contact your MediaWiki administrator.',
 	'coll-license'                    => 'License',
 	'coll-license_url'                => '-',
 	'coll-return_to'                  => "Return to [[:$1]]",
+	'coll-more_info'                  => 'Show more information',
+	'coll-hide_info'                  => 'Hide information',
+	'coll-order_info_article'         => 'Help:Books/PediaPress order information',
 );
 
 /** Message documentation (Message documentation)
@@ -163,7 +166,6 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-cancel' => '{{Identical|Cancel}}',
 	'coll-rendering_status' => '{{Identical|Status}}',
 	'coll-order_from_pp' => '* $1 is the name of a print provider (a company name)',
-	'coll-about_pp' => '{{Identical|About}}',
 	'coll-return_to' => '{{Identical|Return to $1}}',
 );
 
@@ -1059,13 +1061,16 @@ Hinweise:
 	'coll-blacklisted-templates' => '* Vorlagen von der Schwarzen Liste [[:$1]] wurden ausgeschlossen.',
 	'coll-return_to_collection' => 'Zurück zu <a href="$1">$2</a>',
 	'coll-book_title' => 'Als gedrucktes Buch bestellen',
-	'coll-book_text' => 'Bestelle eine gedruckte Buchausgabe bei unserem Print-on-Demand-Partner:',
+	'coll-book_text' => 'Bestelle eine gedruckte Buchausgabe bei unserem Print-on-Demand-Partner.',
 	'coll-order_from_pp' => 'Buch bei $1 bestellen',
 	'coll-about_pp' => 'Über $1',
 	'coll-invalid_podpartner_title' => 'Ungültiger Print-on-Demand-Partner',
 	'coll-invalid_podpartner_msg' => 'Die Angaben zum Print-on-Demand-Partner sind fehlerhaft. Bitte kontaktiere den MediaWiki-Administrator.',
 	'coll-license' => 'Lizenz',
 	'coll-return_to' => 'Zurück zu [[:$1]]',
+	'coll-more_info'                  => 'Weitere Informationen zeigen',
+	'coll-hide_info'                  => 'Informationen verstecken',
+	'coll-order_info_article'         => 'Hilfe:Bücher/PediaPress Bestellinformation',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))

@@ -177,6 +177,18 @@ function refresh_list(xhr) {
 	update_save_button();
 }
 
+function toggle_order_info(flag) {
+	if (flag) {
+		jQuery('#coll-more_info').css('display', 'none');
+		jQuery('#coll-order_info').css('display', 'block');
+		jQuery('#coll-hide_info').css('display', 'block');
+	} else {
+		jQuery('#coll-more_info').css('display', 'block');
+		jQuery('#coll-order_info').css('display', 'none');
+		jQuery('#coll-hide_info').css('display', 'none');
+	}
+}
+
 jQuery(function() {
 	if (requiredVersion != wgCollectionVersion) {
 		alert('ERROR: Version mismatch between Javascript and PHP code. Contact admin to fix the installation of Collection extension for MediaWiki.');
@@ -188,6 +200,8 @@ jQuery(function() {
 		window.coll_remove_item = remove_item;
 		window.coll_rename_chapter = rename_chapter;
 		window.coll_clear_collection = clear_collection;
+		window.coll_toggle_order_info = toggle_order_info;
+		toggle_order_info(false);
 		update_save_button();
 		make_sortable();
 		jQuery('#personalCollTitle').keyup(update_save_button);
