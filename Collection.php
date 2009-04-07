@@ -201,6 +201,7 @@ function wfAjaxCollectionGetPortlet( $ajaxHint='' ) {
 $wgAjaxExportList[] = 'wfAjaxCollectionGetPortlet';
 
 function wfAjaxCollectionGetItemList() {
+	wfLoadExtensionMessages( 'CollectionCore' );
 	wfLoadExtensionMessages( 'Collection' );
 	$template = new CollectionListTemplate();
 	$template->set( 'collection', $_SESSION['wsCollection'] );
