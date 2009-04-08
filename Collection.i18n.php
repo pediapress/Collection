@@ -168,7 +168,8 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-order_from_pp' => '* $1 is the name of a print provider (a company name)',
 	'coll-about_pp' => '{{Identical|About}}',
 	'coll-return_to' => '{{Identical|Return to $1}}',
-	'coll-order_info_article' => 'Do not translate "Help:"',
+	'coll-order_info_article' => '{{doc-important|Do not translate "Help:"}}
+Sub page of {{msg-mw|coll-helppage}} ({{int:coll-helppage}})',
 );
 
 /** Faeag Rotuma (Faeag Rotuma)
@@ -589,6 +590,9 @@ $messages['be-tarask'] = array(
 Калі ласка, зьвяжыцеся з Вашым адміністратарам MediaWiki.',
 	'coll-license' => 'Ліцэнзія',
 	'coll-return_to' => 'Вярнуцца да [[:$1]]',
+	'coll-more_info' => 'Паказаць болей інфармацыі',
+	'coll-hide_info' => 'Схаваць інфармацыю',
+	'coll-order_info_article' => 'Help:Кнігі/Інфармацыя пра заказ у PediaPress',
 );
 
 /** Bulgarian (Български)
@@ -740,6 +744,9 @@ Napomene:
 Molimo da kontaktirate Vašeg MediaWiki administratora.',
 	'coll-license' => 'Licenca',
 	'coll-return_to' => 'Vrati na [[:$1]]',
+	'coll-more_info' => 'Prikaži više informacija',
+	'coll-hide_info' => 'Sakrij informacije',
+	'coll-order_info_article' => 'Help:Knjige/PediaPress informacije o narudžbi',
 );
 
 /** Catalan (Català)
@@ -952,6 +959,9 @@ Poznámky:
 Kontaktujte svého správce MediaWiki.',
 	'coll-license' => 'Licence',
 	'coll-return_to' => 'Návrat na stránku „[[:$1]]“.',
+	'coll-more_info' => 'Zobrazit další informace',
+	'coll-hide_info' => 'Skrýt informace',
+	'coll-order_info_article' => 'Help:Knihy/Objednávky od PediaPress',
 );
 
 /** Danish (Dansk)
@@ -1236,6 +1246,7 @@ $messages['ee'] = array(
  * @author Consta
  * @author Geraki
  * @author Omnipaedista
+ * @author ZaDiak
  */
 $messages['el'] = array(
 	'coll-desc' => '[[Special:Book|Δημιουργία βιβλίων]]',
@@ -1336,6 +1347,8 @@ $messages['el'] = array(
 Παρακαλούμε επικοινωνήστε με ένα διαχειριστή του MediaWiki.',
 	'coll-license' => 'Άδεια',
 	'coll-return_to' => 'Επιστροφή στο [[:$1]]',
+	'coll-more_info' => 'Εμφάνιση περισσότερων πληροφοριών',
+	'coll-hide_info' => 'Απόκρυψη πληροφοριών',
 );
 
 /** Esperanto (Esperanto)
@@ -1538,6 +1551,7 @@ Notas:
 	'coll-notfound_title' => 'No se encuentra el libro',
 	'coll-notfound_text' => 'No se encuentra la página de libro.',
 	'coll-download_notfound_title' => 'Archivo no encontrado',
+	'coll-download_notfound_text' => 'El archivo que estás tratando de descargar no existe: Puede ser que ha sido borrado y necesita ser regenerado.',
 	'coll-is_cached' => '<ul><li>Se ha encontrado una versión procesada del documento, por lo que no es necesario procesarlo. <a href="$1">Forzar reprocesado.</a></li></ul>',
 	'coll-excluded-templates' => '* Se han excluido las plantillas de la categoría [[:Category:$1|$1]].',
 	'coll-blacklisted-templates' => '* Se han excluido las plantillas [[:$1]] por estar en la lista negra.',
@@ -1551,6 +1565,9 @@ Notas:
 Por favor, contacta con tu administrador MediaWiki.',
 	'coll-license' => 'Licencia',
 	'coll-return_to' => 'Volver a [[:$1]].',
+	'coll-more_info' => 'Mostrar más información',
+	'coll-hide_info' => 'Ocultar información',
+	'coll-order_info_article' => 'Help:Libros/PediaPress ordenar información',
 );
 
 /** Estonian (Eesti)
@@ -2002,6 +2019,9 @@ Notes :
 Veuillez contacter votre administrateur MediaWiki.',
 	'coll-license' => 'Licence',
 	'coll-return_to' => 'Retourner vers [[:$1]]',
+	'coll-more_info' => 'Afficher d’autres informations',
+	'coll-hide_info' => 'Masquer les informations',
+	'coll-order_info_article' => 'Help:Livres/PediaPress commander des informations',
 );
 
 /** Western Frisian (Frysk)
@@ -2241,6 +2261,9 @@ Hiiwyys:
 	'coll-invalid_podpartner_msg' => 'In dr Aagabe zum Print-on-Demand-Partner het s Fähler. Bitte nimm Kontakt uf zu MediaWiki-Administrator.',
 	'coll-license' => 'Lizänz',
 	'coll-return_to' => 'Zruck zue [[:$1]]',
+	'coll-more_info' => 'Meh Informatione zeige',
+	'coll-hide_info' => 'Informatione verstecke',
+	'coll-order_info_article' => 'Help:Biecher/PediaPress Bstellinformation',
 );
 
 /** Manx (Gaelg)
@@ -2964,6 +2987,9 @@ Notas:
 Per favor contacta tu administrator de MediaWiki.',
 	'coll-license' => 'Licentia',
 	'coll-return_to' => 'Retornar a [[:$1]]',
+	'coll-more_info' => 'Monstrar plus informationes',
+	'coll-hide_info' => 'Celar informationes',
+	'coll-order_info_article' => 'Help:Libros/Commanda a PediaPress',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -3229,6 +3255,9 @@ $messages['ja'] = array(
 	'coll-invalid_podpartner_msg' => '提供されたオンデマンド印刷パートナーは無効です。MediaWiki の管理者に連絡してください。',
 	'coll-license' => 'ライセンス',
 	'coll-return_to' => '[[:$1]]に戻る',
+	'coll-more_info' => '詳細を表示',
+	'coll-hide_info' => '詳細を非表示',
+	'coll-order_info_article' => 'Help:ブック/PediaPress注文情報',
 );
 
 /** Javanese (Basa Jawa)
@@ -3524,6 +3553,9 @@ $messages['ko'] = array(
 사용자께서 하고 계신 미디어위키의 관리자 분께 연락드리세요.',
 	'coll-license' => '라이선스',
 	'coll-return_to' => '[[:$1]]으로 돌아갑니다.',
+	'coll-more_info' => '정보를 좀 더 살펴보세요',
+	'coll-hide_info' => '정보 숨김',
+	'coll-order_info_article' => 'Help:책/피디아프레스 명령 정보',
 );
 
 /** Krio (Krio)
@@ -3650,6 +3682,9 @@ Opjepaß:
 Don dat enem Wikki-Köbes obb et Bruut schmiere.',
 	'coll-license' => 'Lizänz',
 	'coll-return_to' => 'Jangk zerök noh [[:$1]]',
+	'coll-more_info' => 'Mieh Enfommazjuhne aanzeije',
+	'coll-hide_info' => 'Winnijer Enfommazjuhne aanzeije',
+	'coll-order_info_article' => '{{int:coll-helppage}}/Wie mer bei <i lang="en">PediaPress</i> beshtelle kann',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -3743,6 +3778,8 @@ Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh
 	'coll-invalid_podpartner_title' => 'Ongëltege Print-On-Demand (POD) Partner',
 	'coll-license' => 'Lizenz',
 	'coll-return_to' => 'Zréck op [[:$1]]',
+	'coll-more_info' => 'Méi Informatioune weisen',
+	'coll-hide_info' => 'Informatioune verstoppen',
 );
 
 /** Limburgish (Limburgs)
@@ -4376,6 +4413,9 @@ Het is mogelijk verwijderd en moet opnieuw aangemaakt worden.',
 Neem contact op met uw MediaWiki-beheerder.',
 	'coll-license' => 'Licentie',
 	'coll-return_to' => 'Terug naar [[:$1]]',
+	'coll-more_info' => 'Meer informatie weergeven',
+	'coll-hide_info' => 'Informatie verbergen',
+	'coll-order_info_article' => 'Help:Boeken/Bestelinformatie PediaPress',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -4812,6 +4852,9 @@ Uwaga:
 Skontaktuj się z administratorem tego serwisu MediaWiki.',
 	'coll-license' => 'Licencja',
 	'coll-return_to' => 'Powrót do [[:$1]]',
+	'coll-more_info' => 'Pokaż więcej informacji',
+	'coll-hide_info' => 'Ukryj informacje',
+	'coll-order_info_article' => 'Help:Książki/Zamawianie PediaPress',
 );
 
 /** Pashto (پښتو)
@@ -5209,6 +5252,9 @@ $messages['ru'] = array(
 Пожалуйста, свяжитесь с вашим администратором MediaWiki.',
 	'coll-license' => 'Лицензия',
 	'coll-return_to' => 'Возврат к [[:$1]]',
+	'coll-more_info' => 'Показать больше информации',
+	'coll-hide_info' => 'Скрыть информацию',
+	'coll-order_info_article' => 'Help:Книги/Информация о заказе PediaPress',
 );
 
 /** Yakut (Саха тыла)
@@ -5418,6 +5464,9 @@ Poznámky:
 Prosím, kontaktujte svojho správcu MediaWiki.',
 	'coll-license' => 'Licencia',
 	'coll-return_to' => 'Návrat na [[:$1]]',
+	'coll-more_info' => 'Zobraziť viac informácií',
+	'coll-hide_info' => 'Skryť informácie',
+	'coll-order_info_article' => 'Help:Books/Informácie o objednávkach PediaPress',
 );
 
 /** Slovenian (Slovenščina)
@@ -6278,6 +6327,9 @@ Not:
 Lütfen MedyaViki yöneticinizle irtibat kurun.',
 	'coll-license' => 'Lisans',
 	'coll-return_to' => '[[:$1]] sayfasına geri dön',
+	'coll-more_info' => 'Daha fazla bilgi göster',
+	'coll-hide_info' => 'Bilgiyi gizle',
+	'coll-order_info_article' => 'Help:Kitaplar/PediaPress sipariş bilgisi',
 );
 
 /** Ukrainian (Українська)
@@ -6596,6 +6648,7 @@ Chú ý:
 	'coll-notfound_title' => 'Không tìm thấy sách',
 	'coll-notfound_text' => 'Không tìm thấy trang sách.',
 	'coll-download_notfound_title' => 'Không tìm thấy tập tin',
+	'coll-download_notfound_text' => 'Tập tin bạn đang cố gắng tải về không tồn tại: Có thể nó đã bị xóa và cần được khởi tạo lại.',
 	'coll-is_cached' => '<ul><li>Không cần kết xuất mới vì đã tìm thấy phiên bản trong bộ nhớ. <a href="$1">Kết xuất lại.</a></li></ul>',
 	'coll-excluded-templates' => '* Các tiêu bản trong thể loại [[:Category:$1|$1]] được bỏ qua.',
 	'coll-blacklisted-templates' => '* Các tiêu bản trùng với danh sách đen [[:$1]] được bỏ qua.',
@@ -6609,6 +6662,9 @@ Chú ý:
 Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
 	'coll-license' => 'Giấy phép',
 	'coll-return_to' => 'Quay lại [[:$1]]',
+	'coll-more_info' => 'Xem thêm thông tin',
+	'coll-hide_info' => 'Ẩn thông tin',
+	'coll-order_info_article' => 'Thông tin đặt sách Help:Books/PediaPress',
 );
 
 /** Volapük (Volapük)
