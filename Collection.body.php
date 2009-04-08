@@ -906,16 +906,6 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->addTemplate( $template );
 	}
 
-	static protected function pageInCategory( $pageId, $categoryName ) {
-		$dbr = wfGetDB( DB_SLAVE );
-		$count = $dbr->selectField( 'categorylinks', 'COUNT(*)',
-			array(
-				'cl_from' => $pageId,
-				'cl_to' => $categoryName ),
-			__METHOD__ );
-		return ($count > 0);
-	}
-
 	static function mwServeCommand( $command, $args, $timeout=true, $toFile=null ) {
 		global $wgOut;
 		global $wgCollectionMWServeURL;
