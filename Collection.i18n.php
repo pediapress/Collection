@@ -342,6 +342,7 @@ $messages['ar'] = array(
 * غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.',
 	'coll-notfound_title' => 'الكتاب غير موجود',
 	'coll-notfound_text' => 'لم يمكن العثور على صفحة الكتاب.',
+	'coll-download_notfound_title' => 'الملف لم يتم إيجاده',
 	'coll-is_cached' => '<ul><li>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></li></ul>',
 	'coll-excluded-templates' => '* القوالب في التصنيف [[:Category:$1|$1]] تم إقصاؤها.',
 	'coll-blacklisted-templates' => '* القوالب في القائمة السوداء [[:$1]] تم إقصاؤها.',
@@ -355,6 +356,8 @@ $messages['ar'] = array(
 من فضلك اتصل بإداري ميدياويكي الخاص بك.',
 	'coll-license' => 'ترخيص',
 	'coll-return_to' => 'رجوع إلى [[:$1]]',
+	'coll-more_info' => 'عرض المزيد من المعلومات',
+	'coll-hide_info' => 'إخفاء المعلومات',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -4728,6 +4731,9 @@ Nòtas :
 Contactatz vòstre administrator MediaWiki.',
 	'coll-license' => 'Licéncia',
 	'coll-return_to' => 'Tornar cap a [[:$1]]',
+	'coll-more_info' => 'Afichar d’autras informacions',
+	'coll-hide_info' => 'Amagar las informacions',
+	'coll-order_info_article' => "Help:Libres/PediaPress comandar d'informacions",
 );
 
 /** Ossetic (Иронау)
