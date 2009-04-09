@@ -1312,8 +1312,8 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (Português)
- * @author Malafaya
  * @author 555
+ * @author Malafaya
  */
 $messages['pt'] = array(
 	'coll-add_category' => 'Adicionar categoria',
