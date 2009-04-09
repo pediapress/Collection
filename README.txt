@@ -181,7 +181,7 @@ Installation and Configuration of the Collection Extension
 
     <?php
       if(isset($GLOBALS['wgSpecialPages']['Book'])) {
-         Collection::printPortlet();
+         CollectionHooks::printPortlet();
       }
     ?>
 
