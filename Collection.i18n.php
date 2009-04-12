@@ -602,7 +602,7 @@ $messages['be-tarask'] = array(
  * @author DCLXVI
  */
 $messages['bg'] = array(
-	'coll-desc' => 'Добавя възможност за [[Special:Collection|събиране на страници]] и преобразуването им в PDF',
+	'coll-desc' => '[[Special:Book|Създаване на книги]]',
 	'coll-print_template_prefix' => 'Отпечатване',
 	'coll-download_as' => 'Изтегляне като $1',
 	'coll-noscript_text' => '<h1>Изисква се Джаваскрипт!</h1>
@@ -2686,17 +2686,18 @@ Skontaktuj prošu swojeho administratora MediaWiki.',
  * @author Dani
  */
 $messages['hu'] = array(
-	'coll-desc' => '[[Special:Book|Készíts könyveket!]]',
+	'coll-desc' => '[[Special:Book|Könyvek készítése]]',
 	'coll-collection' => 'Könyv',
 	'coll-collections' => 'Könyvek',
 	'coll-exclusion_category_title' => 'Nyomtatásban kihagyandó',
 	'coll-print_template_prefix' => 'Nyomtatott',
-	'coll-unknown_subpage_title' => 'Ismeretlen aloldal',
-	'coll-unknown_subpage_text' => 'A [[Special:Book|könyv]] ezen allapja nem létezik.',
+	'coll-print_template_pattern' => '$1/nyomtatott',
+	'coll-unknown_subpage_title' => 'Ismeretlen allap',
+	'coll-unknown_subpage_text' => 'A [[Special:Book|Könyv]]nek nincs ilyen allapja.',
 	'coll-download_as' => 'Letöltés mint $1',
-	'coll-noscript_text' => '<h1>JavaScript szüséges!</h1>
+	'coll-noscript_text' => '<h1>A lap használatához JavaScript szükséges!</h1>
 <strong>A böngésződ nem támogatja a JavaScriptet, vagy az ki lett kapcsolva.
-Ez az oldal nem működik megfelelően amíg a JavaScript nincs bekapcsolva.</strong>',
+Ez az oldal nem fog megfelelően működni, amíg a JavaScript nincs bekapcsolva.</strong>',
 	'coll-intro_text' => 'Készíts és kezelj saját wiki oldal gyűjteményeket.<br />Lásd [[{{MediaWiki:Coll-helppage}}]] oldalt további információkért.',
 	'coll-savedbook_template' => 'elmentett_könyv',
 	'coll-your_book' => 'A Te könyved',
@@ -2707,69 +2708,71 @@ Ez az oldal nem működik megfelelően amíg a JavaScript nincs bekapcsolva.</st
 	'coll-format_label' => 'Formátum:',
 	'coll-remove' => 'Eltávolítás',
 	'coll-show' => 'Mutat',
-	'coll-move_to_top' => 'Tetejére mozgat',
-	'coll-move_up' => 'Feljebb mozgat',
-	'coll-move_down' => 'Lejjebb mozgat',
-	'coll-move_to_bottom' => 'Alulra mozgat',
+	'coll-move_to_top' => 'Mozgatás legfelülre',
+	'coll-move_up' => 'Mozgatás felfelé',
+	'coll-move_down' => 'Mozgatás lefelé',
+	'coll-move_to_bottom' => 'Mozgatás legalulra',
 	'coll-title' => 'Cím:',
 	'coll-subtitle' => 'Alcím:',
 	'coll-contents' => 'Tartalomjegyzék',
-	'coll-drag_and_drop' => 'Fogd és vidd módszerrel rendezd át a wiki oldalak és fejezetek sorrendjét',
+	'coll-drag_and_drop' => 'Fogd és vidd módszerrel rendezd át a lapok és fejezetek sorrendjét',
 	'coll-create_chapter' => 'Fejezet készítése',
 	'coll-sort_alphabetically' => 'Rendezés ábécésorrend szerint',
 	'coll-rename' => 'Átnevezés',
-	'coll-new_chapter' => 'Írd be az új fejezet címét',
+	'coll-new_chapter' => 'Add meg az új fejezet címét',
 	'coll-rename_chapter' => 'Add meg a fejezet új címét',
 	'coll-no_such_category' => 'Nincs ilyen kategória',
-	'coll-notitle_title' => 'Az oldal címe nem volt megállapítható.',
-	'coll-post_failed_title' => 'POST kérés sikertelen',
-	'coll-post_failed_msg' => 'A $1-nak küldött POST kérés sikertelen ($2).',
+	'coll-notitle_title' => 'Nem sikerült megállapítani a lap címét.',
+	'coll-post_failed_title' => 'A POST kérés nem sikerült',
+	'coll-post_failed_msg' => 'A(z) $1 számára küldött POST kérés nem sikerült ($2).',
 	'coll-mwserve_failed_title' => 'A renderelő szerver hibát észlelt',
 	'coll-mwserve_failed_msg' => 'Hiba történt a renderelő szerveren: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Hibaüzenet érkezett a szervertől',
 	'coll-empty_collection' => 'Üres könyv',
 	'coll-revision' => 'Változat: $1',
-	'coll-save_collection_title' => 'Mentsd el és oszd meg a könyved',
+	'coll-save_collection_title' => 'Könyv elmentése és megosztása',
 	'coll-save_collection_text' => 'Válassz egy tárolási helyet a könyvednek:',
-	'coll-login_to_save' => 'Amennyiben elszeretnéd menteni a könyved későbbi használatra, kérlek [[Special:UserLogin|jelentkezz be vagy készíts egy felhasználói fiókot]].',
+	'coll-login_to_save' => 'Amennyiben elszeretnéd menteni a könyved későbbi használatra, [[Special:UserLogin|jelentkezz be vagy készíts egy felhasználói fiókot]].',
 	'coll-personal_collection_label' => 'Személyes könyv:',
 	'coll-community_collection_label' => 'Közösségi könyv:',
 	'coll-save_collection' => 'Könyv mentése',
 	'coll-save_category' => 'A könyvek a [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] kategóriába mentődnek.',
-	'coll-overwrite_title' => 'Az oldal már létezik.
+	'coll-overwrite_title' => 'A lap már létezik.
 Felülírjam?',
-	'coll-overwrite_text' => '„[[:$1]]” nevű oldal már létezik.
+	'coll-overwrite_text' => 'Már létezik „[[:$1]]” című lap.
 Szeretnéd lecserélni a saját könyvedre?',
 	'coll-yes' => 'Igen',
 	'coll-no' => 'Nem',
-	'coll-load_overwrite_text' => 'Már van néhány oldal a könyvedben.
-Szeretnéd felülírni, az új tartalommal kiegészíteni a könyved vagy abbahagyni e könyv betöltését?',
-	'coll-overwrite' => 'Felülír',
-	'coll-append' => 'Hozzáad',
+	'coll-load_overwrite_text' => 'Már van néhány lap a könyvedben.
+Szeretnéd felülírni, az új tartalmat hozzáfűzni könyvhöz vagy abbahagyni a betöltését?',
+	'coll-overwrite' => 'Felülírás',
+	'coll-append' => 'Hozzáfűzés',
 	'coll-cancel' => 'Mégse',
-	'coll-update' => 'Frissít',
+	'coll-update' => 'Frissítés',
 	'coll-limit_exceeded_title' => 'A könyv túl nagy',
 	'coll-limit_exceeded_text' => 'A könyved túl nagy.
-Nem lehet több oldalt hozzáadni.',
+Nem adhatsz hozzá több lapot.',
 	'coll-rendering_title' => 'Renderelés',
 	'coll-rendering_text' => '<p><strong>Kérlek várj amíg a dokumentum elkészül!</strong></p>
 
-<p><strong>Készültség:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+<p><strong>Állapot:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
 <p>Ez az oldal automatikusan frissül pár másodpercenként.
 Ha ez nem történik meg, kérlek nyomd meg a böngésződ frissítés gombját!</p>',
 	'coll-rendering_status' => '<strong>Állapot:</strong> $1',
-	'coll-rendering_article' => '(wiki oldal: $1)',
+	'coll-rendering_article' => '(lap: $1)',
 	'coll-rendering_page' => '(oldal: $1)',
 	'coll-rendering_finished_title' => 'A renderelés befejeződött',
 	'coll-rendering_finished_text' => '<strong>A dokumentum ekészült.</strong>
-<strong>[$1 Töltsd le a fájlt]</strong> a számítógépedre.
+<strong>[$1 Fájl letöltése]</strong> a számítógépedre.
 
 Megjegyzés:
 * Nem vagy elégedett az eredménnyel? Lásd a  [[{{MediaWiki:Coll-helppage}}|könyvekről szóló segítség oldalt]] a javítási lehetőségekről.',
 	'coll-notfound_title' => 'A könyv nem található',
 	'coll-notfound_text' => 'A könyvoldal nem található.',
-	'coll-is_cached' => '<ul><li>A dokumentum egy gyorsítótárazott változata megtalálható volt így nem volt szükség renderelésre.<a href="$1">Újra renderelés kényszerítése.</a></li></ul>',
+	'coll-download_notfound_title' => 'A fájl nem található',
+	'coll-download_notfound_text' => 'A fájl, amit megpróbáltál letölteni, nem létezik. Valószínűleg törölve lett, így újra el kell készíteni.',
+	'coll-is_cached' => '<ul><li>Sikerült megtalálni a dokumentum egy gyorsítótárazott változatát, így nem kellett újra elkészíteni.<a href="$1">Mindenképpen készítse el újra.</a></li></ul>',
 	'coll-excluded-templates' => 'A(z) [[:Category:$1|$1]] kategóriában lévő sablonok figyelmen kívül lettek hagyva.',
 	'coll-blacklisted-templates' => '* A(z) [[:$1]] feketelistán található sablonok figyelmen kívül lettek hagyva.',
 	'coll-return_to_collection' => '<p>Visszatérés ide: <a href="$1">$2</a></p>',
@@ -2779,9 +2782,12 @@ Megjegyzés:
 	'coll-about_pp' => 'A $1ről',
 	'coll-invalid_podpartner_title' => 'Érvénytelen nyomdai partner',
 	'coll-invalid_podpartner_msg' => 'A megadott nyomdai partner érvénytelen.
-Kérlek lépj kapcsolatba a MediaWiki adminisztrátoroddal.',
+Kérlek lépj kapcsolatba a MediaWiki adminisztrátorával.',
 	'coll-license' => 'Licenc',
 	'coll-return_to' => 'Visszatérés a(z) [[:$1]] laphoz',
+	'coll-more_info' => 'További információk megjelenítése',
+	'coll-hide_info' => 'További információk elrejtése',
+	'coll-order_info_article' => 'Help:Könyvek/PediaPress rendelési információk',
 );
 
 /** Armenian (Հայերեն)
@@ -3783,6 +3789,7 @@ Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh
 	'coll-return_to' => 'Zréck op [[:$1]]',
 	'coll-more_info' => 'Méi Informatioune weisen',
 	'coll-hide_info' => 'Informatioune verstoppen',
+	'coll-order_info_article' => 'Help:Bicher/PediaPress Bestellinformatiounen',
 );
 
 /** Limburgish (Limburgs)
@@ -3889,6 +3896,9 @@ Opmerkinge:
 Nöm kóntak óp mid öche MediaWikiadmin.",
 	'coll-license' => 'Lisens',
 	'coll-return_to' => 'Trök göch [[:$1]]',
+	'coll-more_info' => 'Toean mieër inlichtinger',
+	'coll-hide_info' => 'Verbèrg inlichtinger',
+	'coll-order_info_article' => 'Help:Beuk/Bestèlinlichtinger PediaPress',
 );
 
 /** Lao (ລາວ)
@@ -4749,6 +4759,13 @@ $messages['os'] = array(
 	'coll-cancel' => 'Нæ бæззы',
 );
 
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'coll-about_pp' => 'Iwwer $1',
+);
+
 /** Polish (Polski)
  * @author Derbeth
  * @author Jwitos
@@ -5097,6 +5114,9 @@ Notas:
 Por favor, contate o seu administrador MediaWiki.',
 	'coll-license' => 'Licença',
 	'coll-return_to' => 'Voltar para [[:$1]]',
+	'coll-more_info' => 'Exibir mais informações',
+	'coll-hide_info' => 'Esconder informações',
+	'coll-order_info_article' => 'Help:Livros/Informações de pedido do PediaPress',
 );
 
 /** Romanian (Română)
@@ -5892,6 +5912,9 @@ Noter:
 Var god kontakta din MediaWiki-administratör.',
 	'coll-license' => 'Licens',
 	'coll-return_to' => 'Tillbaka till [[:$1]]',
+	'coll-more_info' => 'Visa mer information',
+	'coll-hide_info' => 'Göm information',
+	'coll-order_info_article' => 'Help:Böcker/Beställningsinformation PediaPress',
 );
 
 /** Telugu (తెలుగు)
@@ -6541,6 +6564,8 @@ Note:
 	'coll-invalid_podpartner_msg' => "El socio POD fornìo no'l xe mia valido. Contata el to aministrador MediaWiki.",
 	'coll-license' => 'Licensa',
 	'coll-return_to' => 'Torna indrìo a [[:$1]]',
+	'coll-more_info' => 'Mostra piassè informassion',
+	'coll-hide_info' => 'Scondi informassion',
 );
 
 /** Veps (Vepsan kel')
