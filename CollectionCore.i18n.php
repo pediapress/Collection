@@ -474,6 +474,7 @@ $messages['eu'] = array(
 /** Persian (فارسی)
  * @author Huji
  * @author Komeil 4life
+ * @author Ladsgroup
  */
 $messages['fa'] = array(
 	'coll-add_category' => 'اضافه کردن رده',
@@ -486,9 +487,11 @@ $messages['fa'] = array(
 	'coll-helppage' => 'Help:کتاب‌ها',
 	'coll-load_collection' => 'بارکردن کتاب',
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحه|صفحه}}',
+	'coll-popup_help_text' => 'برای از کار انداختن این موضوع بر روی "پاک کردن کتاب" در جعبه "ایجاد کتاب" کلیک کنید',
 	'coll-printable_version_pdf' => 'نسخهٔ پی‌دی‌اف',
 	'coll-remove_page' => 'حذف این صفحه',
 	'coll-show_collection' => 'نمایش کتاب',
+	'coll-show_collection_tooltip' => 'برای ویرایش/پایین‌گذاری/سفارش کتاب خود کلیک کنید',
 );
 
 /** Finnish (Suomi)
@@ -711,21 +714,33 @@ $messages['hsb'] = array(
 
 /** Hungarian (Magyar)
  * @author Bdamokos
+ * @author Dani
  */
 $messages['hu'] = array(
 	'coll-add_category' => 'Kategória hozzáadása',
-	'coll-add_page' => 'Wiki oldal hozzáadása',
+	'coll-add_category_popup' => 'A hivatkozott kategória lapjainak hozzáadása a könyvhöz',
+	'coll-add_category_tooltip' => 'Ezen kategória összes lapjának hozzáadása a könyvhöz',
+	'coll-add_page' => 'Lap hozzáadása',
+	'coll-add_page_popup' => 'A hivatkozott lap hozzáadása a könyvhöz',
+	'coll-add_page_tooltip' => 'A jelenlegi lap hozzáadása a könyvhöz',
 	'coll-bookscategory' => 'Könyvek',
-	'coll-clear_collection' => 'Könyv törlése',
+	'coll-clear_collection' => 'Könyv kiürítése',
 	'coll-clear_collection_confirm' => 'Valóban törölni szeretnéd a könyved?',
-	'coll-create_a_book' => 'Készíts egy könyvet',
-	'coll-help_collections' => 'Könyvek segítség',
-	'coll-helppage' => 'Segítség:Könyvek',
+	'coll-clear_collection_tooltip' => 'Az összes lap eltávolítása a kiválasztott könyvből',
+	'coll-create_a_book' => 'Könyv készítése',
+	'coll-help_collections' => 'Segítség a könyvekkel kapcsolatban',
+	'coll-help_collections_tooltip' => 'Megjelenít egy kis súgószöveget a könyv eszközről',
+	'coll-helppage' => 'Help:Könyvek',
 	'coll-load_collection' => 'Könyv betöltése',
-	'coll-n_pages' => '$1 oldal',
+	'coll-load_collection_tooltip' => 'Könyv betöltése kiválasztott könyvként',
+	'coll-n_pages' => '{{PLURAL:$1|egy|$1}} lap',
+	'coll-popup_help_text' => 'A funkció kikapcsolásához kattints a „Könyv kiürítése” gombra a „Könyv készítése” dobozban',
 	'coll-printable_version_pdf' => 'PDF változat',
-	'coll-remove_page' => 'Wiki oldal eltávolítása',
+	'coll-remove_page' => 'Lap eltávolítása',
+	'coll-remove_page_popup' => 'A hivatkozott lap eltávolítása a könyvből',
+	'coll-remove_page_tooltip' => 'A jelenlegi lap eltávolítása a könyvből',
 	'coll-show_collection' => 'Könyv mutatása',
+	'coll-show_collection_tooltip' => 'Kattints ide a könyv szerkesztéséhez/letöltéséhez/megrendeléségez',
 );
 
 /** Armenian (Հայերեն)
@@ -942,9 +957,9 @@ $messages['ko'] = array(
 	'coll-printable_version_pdf' => 'PDF 버전',
 	'coll-remove_page' => '문서 제거',
 	'coll-remove_page_popup' => '연결된 위키 페이지를 당신의 책에서 지우세요.',
-	'coll-remove_page_tooltip' => '현재 위키 페이지에서 책을 제거해 주세요',
+	'coll-remove_page_tooltip' => '당신의 책에서 이 위키 문서를 제거합니다',
 	'coll-show_collection' => '책 보여주기',
-	'coll-show_collection_tooltip' => '책을 편집/다운로드/정리하기 위하여 클릭해 주세요',
+	'coll-show_collection_tooltip' => '책을 편집/다운로드/주문하려면 클릭해 주세요',
 );
 
 /** Krio (Krio)
@@ -1583,8 +1598,10 @@ $messages['sv'] = array(
 	'coll-load_collection' => 'Hämta bok',
 	'coll-load_collection_tooltip' => 'Ladda den här boken som din nuvarande bok',
 	'coll-n_pages' => '$1 {{PLURAL:$1|sida|sidor}}',
+	'coll-popup_help_text' => 'För att avaktivera denna funktion klicka på "Töm bok" eller "Skapa en bok"-rutan',
 	'coll-printable_version_pdf' => 'PDF-version',
 	'coll-remove_page' => 'Ta bort wikisida',
+	'coll-remove_page_popup' => 'Ta bort länkad wikisida från din bok',
 	'coll-remove_page_tooltip' => 'Ta bort den nuvarande wikisidan från din bok',
 	'coll-show_collection' => 'Visa bok',
 	'coll-show_collection_tooltip' => 'Klicka för att redigera/ladda ner/beställa din bok',
