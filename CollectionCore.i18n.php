@@ -90,11 +90,14 @@ $messages['af'] = array(
 /** Arabic (العربية)
  * @author Ciphers
  * @author Meno25
+ * @author Prof.Sherif
  */
 $messages['ar'] = array(
 	'coll-add_category' => 'إضافة تصنيف',
+	'coll-add_category_popup' => 'أضف صفحات الويكي في التصنيف الموصول لكتابك',
 	'coll-add_category_tooltip' => 'أضف كل صفحات الويكي في هذا التصنيف لكتابك',
 	'coll-add_page' => 'إضافة صفحة ويكي',
+	'coll-add_page_popup' => 'أضف صفحة الويكي الموصولة لكتابك',
 	'coll-add_page_tooltip' => 'أضف صفحة الويكي الحالية إلى كتابك',
 	'coll-bookscategory' => 'كتب',
 	'coll-clear_collection' => 'إفراغ الكتاب',
@@ -107,6 +110,7 @@ $messages['ar'] = array(
 	'coll-load_collection' => 'تحميل الكتاب',
 	'coll-load_collection_tooltip' => 'حمل هذا الكتاب ككتابك الحالي',
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحة|صفحة}}',
+	'coll-popup_help_text' => 'لإلغاء هذه الخاصية اضغط "إفراغ الكتاب" في صندوق "إنشاء كتاب"',
 	'coll-printable_version_pdf' => 'نسخة PDF',
 	'coll-remove_page' => 'إزالة صفحة ويكي',
 	'coll-remove_page_tooltip' => 'أزل صفحة الويكي الحالية من كتابك',
@@ -487,11 +491,11 @@ $messages['fa'] = array(
 	'coll-helppage' => 'Help:کتاب‌ها',
 	'coll-load_collection' => 'بارکردن کتاب',
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحه|صفحه}}',
-	'coll-popup_help_text' => 'برای از کار انداختن این موضوع بر روی "پاک کردن کتاب" در جعبه "ایجاد کتاب" کلیک کنید',
+	'coll-popup_help_text' => 'برای از کار انداختن این موضوع در جعبهٔ «ایجاد کتاب» بر روی «پاک کردن کتاب» کلیک کنید',
 	'coll-printable_version_pdf' => 'نسخهٔ پی‌دی‌اف',
 	'coll-remove_page' => 'حذف این صفحه',
 	'coll-show_collection' => 'نمایش کتاب',
-	'coll-show_collection_tooltip' => 'برای ویرایش/پایین‌گذاری/سفارش کتاب خود کلیک کنید',
+	'coll-show_collection_tooltip' => 'برای ویرایش/بارگیری/سفارش کتاب خود کلیک کنید',
 );
 
 /** Finnish (Suomi)
@@ -1669,8 +1673,10 @@ $messages['th'] = array(
  */
 $messages['tl'] = array(
 	'coll-add_category' => 'Magdagdag ng kaurian',
+	'coll-add_category_popup' => 'Magdagdag ng mga pahina ng wiki sa loob ng nakakawing na kaurian patungo sa aklat mo',
 	'coll-add_category_tooltip' => 'Idagdag ang lahat ng mga pahina ng wiki sa loob ng kauriang ito patungo sa aklat mo',
 	'coll-add_page' => 'Magdagdag ng pahinang wiki',
+	'coll-add_page_popup' => 'Magdagdag na pahina ng nakakawing na wiki patungo sa aklat mo',
 	'coll-add_page_tooltip' => 'Idagdag ang kasalukuyang pahina ng wiki sa aklat mo',
 	'coll-bookscategory' => 'Mga aklat',
 	'coll-clear_collection' => 'Hawiin ang aklat',
@@ -1683,8 +1689,10 @@ $messages['tl'] = array(
 	'coll-load_collection' => 'Ikarga ang aklat',
 	'coll-load_collection_tooltip' => 'Ikarga ang aklat na ito bilang pangkasalukuyang aklat mo',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pahina|mga pahina}}',
+	'coll-popup_help_text' => 'Upang huwag paganahin ang kasangkapang-katangiang ito, pindutin ang "Hawiin ang aklat" sa loob ng kahon ng "Lumikha ng isang aklat"',
 	'coll-printable_version_pdf' => 'Bersyong PDF',
 	'coll-remove_page' => 'Tanggalin ang pahinang wiki',
+	'coll-remove_page_popup' => 'Tanggalin ang pahina ng nakakawing na wiki mula sa aklat mo',
 	'coll-remove_page_tooltip' => 'Tanggalan ang pangkasalukuyang pahina ng wiki mula sa aklat mo',
 	'coll-show_collection' => 'Ipakita ang aklat',
 	'coll-show_collection_tooltip' => 'Pindutin upang baguhin/magkargang pababa/umorder ng aklat mo',
@@ -1776,18 +1784,29 @@ $messages['vep'] = array(
  */
 $messages['vi'] = array(
 	'coll-add_category' => 'Thêm thể loại',
+	'coll-add_category_popup' => 'Thêm vào sách những trang wiki thuộc thể loại được liên kết',
+	'coll-add_category_tooltip' => 'Thêm vào sách các trang wiki thuộc thể loại được liên kết',
 	'coll-add_page' => 'Thêm trang wiki',
+	'coll-add_page_popup' => 'Thêm trang wiki vào sách',
+	'coll-add_page_tooltip' => 'Thêm trang wiki này vào sách',
 	'coll-bookscategory' => 'Sách vở',
 	'coll-clear_collection' => 'Xóa sách',
 	'coll-clear_collection_confirm' => 'Bạn có chắc muốn xóa hẳn sách của bạn?',
+	'coll-clear_collection_tooltip' => 'Dời các trang wiki khỏi sách này',
 	'coll-create_a_book' => 'Tạo một quyển sách',
 	'coll-help_collections' => 'Trợ giúp sách',
+	'coll-help_collections_tooltip' => 'Xem trợ giúp về công cụ sách',
 	'coll-helppage' => 'Help:Sách vở',
 	'coll-load_collection' => 'Mở sách',
+	'coll-load_collection_tooltip' => 'Đặt sách này làm sách hiện hành',
 	'coll-n_pages' => '$1 trang',
+	'coll-popup_help_text' => 'Để vô hiệu hóa tính năng này, hãy nhấn “Xóa sách” trong hộp “Tạo một quyển sách”',
 	'coll-printable_version_pdf' => 'Bản PDF',
 	'coll-remove_page' => 'Xóa trang wiki',
+	'coll-remove_page_popup' => 'Dời trang wiki được liên kết khỏi sách',
+	'coll-remove_page_tooltip' => 'Dời trang wiki này khỏi sách',
 	'coll-show_collection' => 'Xem sách',
+	'coll-show_collection_tooltip' => 'Nhấn chuột để sửa đổi, tải xuống, hay đặt sách của bạn',
 );
 
 /** Volapük (Volapük)
