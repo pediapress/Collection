@@ -256,6 +256,7 @@ $messages['am'] = array(
  * @author Ciphers
  * @author Meno25
  * @author OsamaK
+ * @author Prof.Sherif
  */
 $messages['ar'] = array(
 	'coll-desc' => '[[Special:Book|ينشيء كتبا]]',
@@ -343,6 +344,7 @@ $messages['ar'] = array(
 	'coll-notfound_title' => 'الكتاب غير موجود',
 	'coll-notfound_text' => 'لم يمكن العثور على صفحة الكتاب.',
 	'coll-download_notfound_title' => 'الملف لم يتم إيجاده',
+	'coll-download_notfound_text' => 'الملف الذي تحاول تنزيله غير موجود: ربما يكون قد مسح و يحتاج إلى إعادة توليد.',
 	'coll-is_cached' => '<ul><li>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></li></ul>',
 	'coll-excluded-templates' => '* القوالب في التصنيف [[:Category:$1|$1]] تم إقصاؤها.',
 	'coll-blacklisted-templates' => '* القوالب في القائمة السوداء [[:$1]] تم إقصاؤها.',
@@ -6247,6 +6249,9 @@ Mga tala:
 Makipagugnayan sa iyong tagapangasiwa ng MediaWiki.',
 	'coll-license' => 'Pahintulot (lisensya)',
 	'coll-return_to' => 'Bumalik sa [[:$1]]',
+	'coll-more_info' => 'Magpakita ng mas marami pang kabatiran',
+	'coll-hide_info' => 'Ikubli ang kabatiran',
+	'coll-order_info_article' => 'Help:MgaAklat/PalimbagangPedya kabatiran ng hinihiling',
 );
 
 /** Turkish (Türkçe)
