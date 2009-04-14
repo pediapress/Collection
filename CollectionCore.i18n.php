@@ -384,6 +384,7 @@ $messages['el'] = array(
 	'coll-help_collections' => 'Βοήθεια βιβλίων',
 	'coll-helppage' => 'Help:Βιβλία',
 	'coll-load_collection' => 'Φόρτωση βιβλίου',
+	'coll-load_collection_tooltip' => 'Επιφόρτωση αυτού του βιβλίου ως του τρέχοντός σου βιβλίου',
 	'coll-n_pages' => '$1 {{PLURAL:$1|σελίδα|σελίδες}}',
 	'coll-printable_version_pdf' => 'έκδοση PDF',
 	'coll-remove_page' => 'Αφαίρεση σελίδας wiki',
@@ -1127,6 +1128,8 @@ $messages['ms'] = array(
 $messages['myv'] = array(
 	'coll-add_category' => 'Поладомс категория',
 	'coll-add_page' => 'Поладомс лопа',
+	'coll-bookscategory' => 'Кинигат',
+	'coll-helppage' => 'Help:Кинигат',
 );
 
 /** Low German (Plattdüütsch)
