@@ -4170,16 +4170,19 @@ $messages['mt'] = array(
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
+	'coll-collection' => 'Кинига',
+	'coll-collections' => 'Кинигат',
 	'coll-download' => 'Таргамс',
 	'coll-remove' => 'Нардык',
 	'coll-title' => 'Коняксозо:',
 	'coll-rename' => 'Лемдемс одов',
 	'coll-no_such_category' => 'Истямо категория арась',
-	'coll-save_collection_title' => 'Ванстомс пурнавксонть',
-	'coll-community_collection_label' => 'Вейтьсэнь пурнавксось:',
+	'coll-save_collection_title' => 'Ванстомс пурнавксот ды панжомс лиятненень',
+	'coll-community_collection_label' => 'Велень-сядонь пурнавксось:',
+	'coll-save_collection' => 'Ванстомс киниганть',
 	'coll-yes' => 'Истя',
 	'coll-no' => 'Арась',
-	'coll-notfound_title' => 'Пурнавксось а муеви',
+	'coll-notfound_title' => 'Кинигась а муеви',
 );
 
 /** Nahuatl (Nāhuatl)
@@ -6471,6 +6474,7 @@ $messages['uk'] = array(
 
 /** Vèneto (Vèneto)
  * @author Candalua
+ * @author Nick1915
  */
 $messages['vec'] = array(
 	'coll-desc' => '[[Special:Book|Crea libri]]',
@@ -6569,8 +6573,8 @@ Note:
 	'coll-invalid_podpartner_msg' => "El socio POD fornìo no'l xe mia valido. Contata el to aministrador MediaWiki.",
 	'coll-license' => 'Licensa',
 	'coll-return_to' => 'Torna indrìo a [[:$1]]',
-	'coll-more_info' => 'Mostra piassè informassion',
-	'coll-hide_info' => 'Scondi informassion',
+	'coll-more_info' => 'Mostra piasè informasion',
+	'coll-hide_info' => 'Scondi informasion',
 );
 
 /** Veps (Vepsan kel')
