@@ -168,7 +168,7 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-order_from_pp' => '* $1 is the name of a print provider (a company name)',
 	'coll-about_pp' => '{{Identical|About}}',
 	'coll-return_to' => '{{Identical|Return to $1}}',
-	'coll-order_info_article' => '{{doc-important|Do not translate "Help:"}}
+	'coll-order_info_article' => '{{doc-important|Do not translate "<nowiki>{{MediaWiki:Coll-helppage}}/</nowiki>"}}
 Sub page of {{msg-mw|coll-helppage}} ({{int:coll-helppage}})',
 );
 
@@ -360,6 +360,7 @@ $messages['ar'] = array(
 	'coll-return_to' => 'رجوع إلى [[:$1]]',
 	'coll-more_info' => 'عرض المزيد من المعلومات',
 	'coll-hide_info' => 'إخفاء المعلومات',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/معلومات الطلب من بيديابرس',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -597,7 +598,7 @@ $messages['be-tarask'] = array(
 	'coll-return_to' => 'Вярнуцца да [[:$1]]',
 	'coll-more_info' => 'Паказаць болей інфармацыі',
 	'coll-hide_info' => 'Схаваць інфармацыю',
-	'coll-order_info_article' => 'Help:Кнігі/Інфармацыя пра заказ у PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Інфармацыя пра заказ у PediaPress',
 );
 
 /** Bulgarian (Български)
@@ -751,7 +752,7 @@ Molimo da kontaktirate Vašeg MediaWiki administratora.',
 	'coll-return_to' => 'Vrati na [[:$1]]',
 	'coll-more_info' => 'Prikaži više informacija',
 	'coll-hide_info' => 'Sakrij informacije',
-	'coll-order_info_article' => 'Help:Knjige/PediaPress informacije o narudžbi',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress informacije o narudžbi',
 );
 
 /** Catalan (Català)
@@ -966,7 +967,7 @@ Kontaktujte svého správce MediaWiki.',
 	'coll-return_to' => 'Návrat na stránku „[[:$1]]“.',
 	'coll-more_info' => 'Zobrazit další informace',
 	'coll-hide_info' => 'Skrýt informace',
-	'coll-order_info_article' => 'Help:Knihy/Objednávky od PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Objednávky od PediaPress',
 );
 
 /** Danish (Dansk)
@@ -1087,7 +1088,7 @@ Hinweise:
 	'coll-return_to' => 'Zurück zu [[:$1]]',
 	'coll-more_info' => 'Weitere Informationen zeigen',
 	'coll-hide_info' => 'Informationen verstecken',
-	'coll-order_info_article' => 'Help:Bücher/PediaPress Bestellinformation',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress Bestellinformation',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
@@ -1235,7 +1236,7 @@ Skontaktuj pšosym swójogo administratora MediaWiki',
 	'coll-return_to' => 'Slědk k [[:$1]]',
 	'coll-more_info' => 'Dalšne informacije pokazaś',
 	'coll-hide_info' => 'Informacije schowaś',
-	'coll-order_info_article' => 'Help:Knigły/PediaPress skazańske informacije',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress skazańske informacije',
 );
 
 /** Ewe (Eʋegbe)
@@ -1354,6 +1355,7 @@ $messages['el'] = array(
 	'coll-return_to' => 'Επιστροφή στο [[:$1]]',
 	'coll-more_info' => 'Εμφάνιση περισσότερων πληροφοριών',
 	'coll-hide_info' => 'Απόκρυψη πληροφοριών',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress απαίτηση για πληροφόρηση',
 );
 
 /** Esperanto (Esperanto)
@@ -1572,7 +1574,7 @@ Por favor, contacta con tu administrador MediaWiki.',
 	'coll-return_to' => 'Volver a [[:$1]].',
 	'coll-more_info' => 'Mostrar más información',
 	'coll-hide_info' => 'Ocultar información',
-	'coll-order_info_article' => 'Help:Libros/PediaPress ordenar información',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress ordenar información',
 );
 
 /** Estonian (Eesti)
@@ -2026,7 +2028,7 @@ Veuillez contacter votre administrateur MediaWiki.',
 	'coll-return_to' => 'Retourner vers [[:$1]]',
 	'coll-more_info' => 'Afficher d’autres informations',
 	'coll-hide_info' => 'Masquer les informations',
-	'coll-order_info_article' => 'Help:Livres/PediaPress commander des informations',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress commander des informations',
 );
 
 /** Western Frisian (Frysk)
@@ -2141,7 +2143,7 @@ Por favor, contacte co seu administrador MediaWiki.',
 	'coll-return_to' => 'Voltar a "[[:$1]]"',
 	'coll-more_info' => 'Obter máis información',
 	'coll-hide_info' => 'Agochar a información',
-	'coll-order_info_article' => 'Help:Libros/Información de pedido a PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Información de pedido a PediaPress',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -2268,7 +2270,7 @@ Hiiwyys:
 	'coll-return_to' => 'Zruck zue [[:$1]]',
 	'coll-more_info' => 'Meh Informatione zeige',
 	'coll-hide_info' => 'Informatione verstecke',
-	'coll-order_info_article' => 'Help:Biecher/PediaPress Bstellinformation',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress Bstellinformation',
 );
 
 /** Manx (Gaelg)
@@ -2405,7 +2407,7 @@ $messages['he'] = array(
 	'coll-return_to' => 'חזרה ל[[:$1]]',
 	'coll-more_info' => 'הצגת מידע נוסף',
 	'coll-hide_info' => 'הסתרת מידע',
-	'coll-order_info_article' => 'Help:ספרים/מידע על הזמנה ב-PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/מידע על הזמנה ב-PediaPress',
 );
 
 /** Hindi (हिन्दी)
@@ -2680,7 +2682,7 @@ Skontaktuj prošu swojeho administratora MediaWiki.',
 	'coll-return_to' => 'Wróćo k [[:$1]]',
 	'coll-more_info' => 'Dalše informacije pokazać',
 	'coll-hide_info' => 'Informacije schować',
-	'coll-order_info_article' => 'Help:Knihi/PediaPress skazanske informacije',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress skazanske informacije',
 );
 
 /** Hungarian (Magyar)
@@ -2789,7 +2791,7 @@ Kérlek lépj kapcsolatba a MediaWiki adminisztrátorával.',
 	'coll-return_to' => 'Visszatérés a(z) [[:$1]] laphoz',
 	'coll-more_info' => 'További információk megjelenítése',
 	'coll-hide_info' => 'További információk elrejtése',
-	'coll-order_info_article' => 'Help:Könyvek/PediaPress rendelési információk',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress rendelési információk',
 );
 
 /** Armenian (Հայերեն)
@@ -3000,18 +3002,117 @@ Per favor contacta tu administrator de MediaWiki.',
 	'coll-return_to' => 'Retornar a [[:$1]]',
 	'coll-more_info' => 'Monstrar plus informationes',
 	'coll-hide_info' => 'Celar informationes',
-	'coll-order_info_article' => 'Help:Libros/Commanda a PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Commanda a PediaPress',
 );
 
 /** Indonesian (Bahasa Indonesia)
  * @author Irwangatot
+ * @author IvanLanin
  * @author Rex
  */
 $messages['id'] = array(
+	'coll-desc' => '[[Special:Book|Buat buku]]',
+	'coll-collection' => 'Buku',
+	'coll-collections' => 'Buku',
+	'coll-exclusion_category_title' => 'Kecualikan di versi cetak',
+	'coll-print_template_prefix' => 'Cetak',
+	'coll-print_template_pattern' => '$1/Cetak',
+	'coll-unknown_subpage_title' => 'Subhalaman tak dikenal',
+	'coll-unknown_subpage_text' => 'Subhalaman dari [[Special:Book|buku]] ini tak tersedia',
+	'coll-download_as' => 'Unduh sebagai $1',
+	'coll-noscript_text' => '<h1>Diperlukan JavaScript!</h1>
+<strong>Penjelajah web Anda tidak mendukung JavaScript atau JavaScript telah dimatikan.
+Halaman ini tidak akan bekerja dengan benar, kecuali jika JavaScript diaktifkan.</strong>',
+	'coll-intro_text' => 'Buat dan kelola pilihan individual halaman-halaman wiki Anda.<br />Lihat [[{{MediaWiki:Coll-helppage}}]] untuk informasi lebih lanjut.',
+	'coll-savedbook_template' => 'buku_tersimpan',
+	'coll-your_book' => 'Buku Anda',
+	'coll-download_title' => 'Unduh',
+	'coll-download_text' => 'Untuk mengunduh suatu versi, pilihlah suatu format dan klik tombolnya.',
+	'coll-download_as_text' => 'Untuk mengunduh suatu versi dengan format $1, klik tombolnya.',
+	'coll-download' => 'Unduh',
+	'coll-format_label' => 'Format:',
+	'coll-remove' => 'Buang',
+	'coll-show' => 'Tampilkan',
+	'coll-move_to_top' => 'Pindahkan ke paling atas',
+	'coll-move_up' => 'Pindahkan ke atas',
+	'coll-move_down' => 'Pindahkan ke bawah',
+	'coll-move_to_bottom' => 'Pindahkan ke paling bawah',
 	'coll-title' => 'Judul:',
+	'coll-subtitle' => 'Subjudul:',
+	'coll-contents' => 'Isi',
+	'coll-drag_and_drop' => 'Geser & jatuhkan untuk mengubah urutan halaman wiki dan bab',
+	'coll-create_chapter' => 'Buat bab',
+	'coll-sort_alphabetically' => 'Urutkan secara alfabetis',
+	'coll-rename' => 'Namai ulang',
+	'coll-new_chapter' => 'Masukkan nama bab baru',
+	'coll-rename_chapter' => 'Masukkan nama baru bab',
+	'coll-no_such_category' => 'Tidak ada kategori tersebut',
+	'coll-notitle_title' => 'Judul halaman tidak bisa ditentukan.',
+	'coll-post_failed_title' => 'Permintaan POST gagal',
+	'coll-post_failed_msg' => 'Permintaan POST untuk $1 gagal ($2).',
+	'coll-mwserve_failed_title' => 'Kesalahan server pengolahan',
+	'coll-mwserve_failed_msg' => 'Terjadi suatu kesalahan berikut pada server pengolahan: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Respon kesalahan dari server',
+	'coll-empty_collection' => 'Kosongkan buku',
+	'coll-revision' => 'Revisi: $1',
+	'coll-save_collection_title' => 'Simpan dan bagikan buku Anda',
+	'coll-save_collection_text' => 'Pilih suatu tempat penyimpanan untuk buku Anda:',
+	'coll-login_to_save' => 'Jika Anda ingin menyimpan buku untuk digunakan nanti, silakan [[Special:UserLogin|masuk log atau buat akun]].',
+	'coll-personal_collection_label' => 'Buku pribadi:',
+	'coll-community_collection_label' => 'Buku komunitas:',
+	'coll-save_collection' => 'Simpan buku',
+	'coll-save_category' => 'Semua buku disimpan di kategori [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-overwrite_title' => 'Halaman sudah ada.
+Timpa?',
+	'coll-overwrite_text' => 'Suatu halaman dengan nama [[:$1]] sudah ada.
+Apakah Anda ingin menggantikannya dengan buku Anda?',
 	'coll-yes' => 'Ya',
 	'coll-no' => 'Tidak',
+	'coll-load_overwrite_text' => 'Anda telah memiliki beberapa halaman pada buku Anda.
+Apakah Anda ingin menimpa buku Anda itu, menambahkan isi baru, atau batal memuat buku ini?',
+	'coll-overwrite' => 'Timpa',
+	'coll-append' => 'Tambah',
 	'coll-cancel' => 'Batalkan',
+	'coll-update' => 'Perbarui',
+	'coll-limit_exceeded_title' => 'Buku terlalu besar',
+	'coll-limit_exceeded_text' => 'Buku Anda terlalu besar.
+Tidak bisa menambahkan halaman lagi.',
+	'coll-rendering_title' => 'Mengolah',
+	'coll-rendering_text' => '<p><strong>Harap tunggu buku ini dibuat.</strong></p>
+
+<p><strong>Kemajuan:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Halaman ini seharusnya dimuat ulang secara otomatis setiap beberapa detik.
+Jika tidak, silakan tekan tombol muat ulang di penjelajah web Anda.</p>',
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
+	'coll-rendering_article' => '(halaman wiki: $1)',
+	'coll-rendering_page' => '(halaman: $1)',
+	'coll-rendering_finished_title' => 'Pengolahan selesai',
+	'coll-rendering_finished_text' => '<strong>Berkas dokumen telah dibuat.</strong>
+<strong>[$1 Unduh berkas]</strong> ke komputer Anda.
+
+Catatan:
+* Tidak puas dengan hasilnya? Lihat [[{{MediaWiki:Coll-helppage}}|halaman bantuan tentang buku]] untuk kemungkinan mengembangkannya.',
+	'coll-notfound_title' => 'Buku tak ditemukan',
+	'coll-notfound_text' => 'Tidak dapat menemukan halaman buku.',
+	'coll-download_notfound_title' => 'Berkas tak ditemukan',
+	'coll-download_notfound_text' => 'Berkas yang Anda coba unduh tidak ada: Mungkin sudah dihapus dan perlu dibuat ulang.',
+	'coll-is_cached' => '<ul><li>Versi tersimpan dari dokumen ini telah ditemukan, sehingga tidak diperlukan pengolahan apapun. <a href="$1">Paksa pengolahan ulang.</a></li></ul>',
+	'coll-excluded-templates' => '* Templat di kategori [[:Category:$1|$1]] telah dikecualikan.',
+	'coll-blacklisted-templates' => '* Templat pada daftar hitam[[:$1]] telah dikecualikan.',
+	'coll-return_to_collection' => '<p>Kembali ke <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Pesan sebagai buku tercetak',
+	'coll-book_text' => 'Dapatkan buku tercetak dari rekanan cetak-sesuai-permintaan kami.',
+	'coll-order_from_pp' => 'Pesan buku dari $1',
+	'coll-about_pp' => 'Perihal $1',
+	'coll-invalid_podpartner_title' => 'Rekanan POD tak valid',
+	'coll-invalid_podpartner_msg' => 'Rekanan POD yang diberikan tak valid.
+Silakan hubungi pengelola MediaWiki Anda.',
+	'coll-license' => 'Lisensi',
+	'coll-return_to' => 'Kembali ke [[:$1]]',
+	'coll-more_info' => 'Tampilkan informasi lebih lanjut',
+	'coll-hide_info' => 'Sembunyikan informasi',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informasi pemesanan dari PediaPress',
 );
 
 /** Ido (Ido)
@@ -3268,7 +3369,7 @@ $messages['ja'] = array(
 	'coll-return_to' => '[[:$1]]に戻る',
 	'coll-more_info' => '詳細を表示',
 	'coll-hide_info' => '詳細を非表示',
-	'coll-order_info_article' => 'Help:ブック/PediaPress注文情報',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress注文情報',
 );
 
 /** Javanese (Basa Jawa)
@@ -3566,7 +3667,7 @@ $messages['ko'] = array(
 	'coll-return_to' => '[[:$1]]으로 돌아갑니다.',
 	'coll-more_info' => '정보를 좀 더 살펴보세요',
 	'coll-hide_info' => '정보 숨김',
-	'coll-order_info_article' => 'Help:책/피디아프레스 명령 정보',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/피디아프레스 명령 정보',
 );
 
 /** Krio (Krio)
@@ -3695,7 +3796,7 @@ Don dat enem Wikki-Köbes obb et Bruut schmiere.',
 	'coll-return_to' => 'Jangk zerök noh [[:$1]]',
 	'coll-more_info' => 'Mieh Enfommazjuhne aanzeije',
 	'coll-hide_info' => 'Winnijer Enfommazjuhne aanzeije',
-	'coll-order_info_article' => '{{int:coll-helppage}}/Wie mer bei <i lang="en">PediaPress</i> beshtelle kann',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Wie mer bei <i lang="en">PediaPress</i> beshtelle kann',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -3791,7 +3892,7 @@ Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh
 	'coll-return_to' => 'Zréck op [[:$1]]',
 	'coll-more_info' => 'Méi Informatioune weisen',
 	'coll-hide_info' => 'Informatioune verstoppen',
-	'coll-order_info_article' => 'Help:Bicher/PediaPress Bestellinformatiounen',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress Bestellinformatiounen',
 );
 
 /** Limburgish (Limburgs)
@@ -3900,7 +4001,7 @@ Nöm kóntak óp mid öche MediaWikiadmin.",
 	'coll-return_to' => 'Trök göch [[:$1]]',
 	'coll-more_info' => 'Toean mieër inlichtinger',
 	'coll-hide_info' => 'Verbèrg inlichtinger',
-	'coll-order_info_article' => 'Help:Beuk/Bestèlinlichtinger PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestèlinlichtinger PediaPress',
 );
 
 /** Lao (ລາວ)
@@ -4433,7 +4534,7 @@ Neem contact op met uw MediaWiki-beheerder.',
 	'coll-return_to' => 'Terug naar [[:$1]]',
 	'coll-more_info' => 'Meer informatie weergeven',
 	'coll-hide_info' => 'Informatie verbergen',
-	'coll-order_info_article' => 'Help:Boeken/Bestelinformatie PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestelinformatie PediaPress',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -4748,7 +4849,7 @@ Contactatz vòstre administrator MediaWiki.',
 	'coll-return_to' => 'Tornar cap a [[:$1]]',
 	'coll-more_info' => 'Afichar d’autras informacions',
 	'coll-hide_info' => 'Amagar las informacions',
-	'coll-order_info_article' => "Help:Libres/PediaPress comandar d'informacions",
+	'coll-order_info_article' => "{{MediaWiki:Coll-helppage}}/PediaPress comandar d'informacions",
 );
 
 /** Ossetic (Иронау)
@@ -4882,7 +4983,7 @@ Skontaktuj się z administratorem tego serwisu MediaWiki.',
 	'coll-return_to' => 'Powrót do [[:$1]]',
 	'coll-more_info' => 'Pokaż więcej informacji',
 	'coll-hide_info' => 'Ukryj informacje',
-	'coll-order_info_article' => 'Help:Książki/Zamawianie PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Zamawianie PediaPress',
 );
 
 /** Pashto (پښتو)
@@ -4999,6 +5100,8 @@ Notas:
 * Não está satisfeito com o resultado? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre coleções]] para possibilidades de aprimoramentos.',
 	'coll-notfound_title' => 'Livro não encontrado',
 	'coll-notfound_text' => 'Não foi possível encontrar a página do livro.',
+	'coll-download_notfound_title' => 'Ficheiro não encontrado',
+	'coll-download_notfound_text' => 'O ficheiro que você está a tentar descarregar não existe: Talvez tenha sido apagado e precise ser regenerado.',
 	'coll-is_cached' => '<ul><li>Foi encontrada uma versão deste documento em cache, dispensando a renderização. <a href="$1"> Forçar nova renderização.</a></li></ul>',
 	'coll-excluded-templates' => '* As predefinições na categoria [[:Category:$1|$1]] foram excluídas.',
 	'coll-blacklisted-templates' => '* As predefinições na lista negra [[:$1]] foram excluídas.',
@@ -5012,6 +5115,8 @@ Notas:
 Por favor, contacte o seu administrador MediaWiki.',
 	'coll-license' => 'Licença',
 	'coll-return_to' => 'Voltar para [[:$1]]',
+	'coll-more_info' => 'Mostrar mais informações',
+	'coll-hide_info' => 'Ocultar informações',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -5121,7 +5226,7 @@ Por favor, contate o seu administrador MediaWiki.',
 	'coll-return_to' => 'Voltar para [[:$1]]',
 	'coll-more_info' => 'Exibir mais informações',
 	'coll-hide_info' => 'Esconder informações',
-	'coll-order_info_article' => 'Help:Livros/Informações de pedido do PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informações de pedido do PediaPress',
 );
 
 /** Romanian (Română)
@@ -5285,7 +5390,7 @@ $messages['ru'] = array(
 	'coll-return_to' => 'Возврат к [[:$1]]',
 	'coll-more_info' => 'Показать больше информации',
 	'coll-hide_info' => 'Скрыть информацию',
-	'coll-order_info_article' => 'Help:Книги/Информация о заказе PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Информация о заказе PediaPress',
 );
 
 /** Yakut (Саха тыла)
@@ -5497,7 +5602,7 @@ Prosím, kontaktujte svojho správcu MediaWiki.',
 	'coll-return_to' => 'Návrat na [[:$1]]',
 	'coll-more_info' => 'Zobraziť viac informácií',
 	'coll-hide_info' => 'Skryť informácie',
-	'coll-order_info_article' => 'Help:Books/Informácie o objednávkach PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informácie o objednávkach PediaPress',
 );
 
 /** Slovenian (Slovenščina)
@@ -5598,6 +5703,7 @@ Opombe:
  * @author Nikola Smolenski
  * @author Sasa Stefanovic
  * @author Јованвб
+ * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'coll-desc' => '[[Special:Book|Направи књиге]]',
@@ -5700,6 +5806,8 @@ $messages['sr-ec'] = array(
 Молим контактирајте свог МедијаВики администратора.',
 	'coll-license' => 'Лиценца',
 	'coll-return_to' => 'Врати на [[:$1]]',
+	'coll-more_info' => 'Покажи више информација',
+	'coll-hide_info' => 'Склони информације',
 );
 
 /** Seeltersk (Seeltersk)
@@ -5919,7 +6027,7 @@ Var god kontakta din MediaWiki-administratör.',
 	'coll-return_to' => 'Tillbaka till [[:$1]]',
 	'coll-more_info' => 'Visa mer information',
 	'coll-hide_info' => 'Göm information',
-	'coll-order_info_article' => 'Help:Böcker/Beställningsinformation PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Beställningsinformation PediaPress',
 );
 
 /** Telugu (తెలుగు)
@@ -6254,7 +6362,7 @@ Makipagugnayan sa iyong tagapangasiwa ng MediaWiki.',
 	'coll-return_to' => 'Bumalik sa [[:$1]]',
 	'coll-more_info' => 'Magpakita ng mas marami pang kabatiran',
 	'coll-hide_info' => 'Ikubli ang kabatiran',
-	'coll-order_info_article' => 'Help:MgaAklat/PalimbagangPedya kabatiran ng hinihiling',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PalimbagangPedya kabatiran ng hinihiling',
 );
 
 /** Turkish (Türkçe)
@@ -6366,7 +6474,7 @@ Lütfen MedyaViki yöneticinizle irtibat kurun.',
 	'coll-return_to' => '[[:$1]] sayfasına geri dön',
 	'coll-more_info' => 'Daha fazla bilgi göster',
 	'coll-hide_info' => 'Bilgiyi gizle',
-	'coll-order_info_article' => 'Help:Kitaplar/PediaPress sipariş bilgisi',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress sipariş bilgisi',
 );
 
 /** Ukrainian (Українська)
@@ -6704,7 +6812,7 @@ Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
 	'coll-return_to' => 'Quay lại [[:$1]]',
 	'coll-more_info' => 'Xem thêm thông tin',
 	'coll-hide_info' => 'Ẩn thông tin',
-	'coll-order_info_article' => 'Thông tin đặt sách Help:Books/PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress',
 );
 
 /** Volapük (Volapük)
