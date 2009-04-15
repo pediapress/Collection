@@ -128,7 +128,7 @@ Please contact your MediaWiki administrator.',
 	'coll-return_to'                  => "Return to [[:$1]]",
 	'coll-more_info'                  => 'Show more information',
 	'coll-hide_info'                  => 'Hide information',
-	'coll-order_info_article'         => 'Help:Books/PediaPress order information',
+	'coll-order_info_article'         => '{{MediaWiki:Coll-helppage}}/PediaPress order information',
 );
 
 /** Message documentation (Message documentation)
