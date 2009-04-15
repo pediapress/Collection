@@ -113,6 +113,7 @@ $messages['ar'] = array(
 	'coll-popup_help_text' => 'لإلغاء هذه الخاصية اضغط "إفراغ الكتاب" في صندوق "إنشاء كتاب"',
 	'coll-printable_version_pdf' => 'نسخة PDF',
 	'coll-remove_page' => 'إزالة صفحة ويكي',
+	'coll-remove_page_popup' => 'أزل صفحة الويكي الموصولة من كتابك',
 	'coll-remove_page_tooltip' => 'أزل صفحة الويكي الحالية من كتابك',
 	'coll-show_collection' => 'عرض الكتاب',
 	'coll-show_collection_tooltip' => 'اضغط لتعديل/تنزيل/طلب كتابك',
@@ -797,6 +798,36 @@ $messages['ia'] = array(
 	'coll-show_collection_tooltip' => 'Clicca pro modificar/discargar/commandar tu libro',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author IvanLanin
+ */
+$messages['id'] = array(
+	'coll-add_category' => 'Tambah kategori',
+	'coll-add_category_popup' => 'Tambahkan halaman wiki pada kategori terkait buku Anda',
+	'coll-add_category_tooltip' => 'Tambahkan semua halaman wiki pada kategori ini ke buku Anda',
+	'coll-add_page' => 'Tambahkan halaman wiki',
+	'coll-add_page_popup' => 'Tambahkan halaman wiki terkait ke buku Anda',
+	'coll-add_page_tooltip' => 'Tambahkan halaman wiki ini ke buku Anda',
+	'coll-bookscategory' => 'Buku',
+	'coll-clear_collection' => 'Bersihkan buku',
+	'coll-clear_collection_confirm' => 'Apakah Anda benar-benar ingin membersihkan buku Anda sepenuhnya?',
+	'coll-clear_collection_tooltip' => 'Hapus semua halaman wiki dari buku ini',
+	'coll-create_a_book' => 'Buat suatu buku',
+	'coll-help_collections' => 'Bantuan buku',
+	'coll-help_collections_tooltip' => 'Tampilkan bantuan tentang peralatan buku',
+	'coll-helppage' => 'Help:Buku',
+	'coll-load_collection' => 'Muat buku',
+	'coll-load_collection_tooltip' => 'Muat buku ini sebagai buku aktif Anda',
+	'coll-n_pages' => '$1 {{PLURAL:$1|halaman|halaman}}',
+	'coll-popup_help_text' => 'Untuk menon-aktifkan fitur ini, klik "Bersihkan buku" di kotak "Buat buku"',
+	'coll-printable_version_pdf' => 'Versi PDF',
+	'coll-remove_page' => 'Buang halaman wiki',
+	'coll-remove_page_popup' => 'Buang halaman wiki terkait dari buku Anda',
+	'coll-remove_page_tooltip' => 'Buang halaman wiki ini dari buku Anda',
+	'coll-show_collection' => 'Tampilkan buku',
+	'coll-show_collection_tooltip' => 'Klik untuk menyunting/mengunduh/memesan buku Anda',
+);
+
 /** Ido (Ido)
  * @author Malafaya
  */
@@ -1336,11 +1367,14 @@ $messages['ps'] = array(
 /** Portuguese (Português)
  * @author 555
  * @author Malafaya
+ * @author Waldir
  */
 $messages['pt'] = array(
 	'coll-add_category' => 'Adicionar categoria',
+	'coll-add_category_popup' => 'Adicionar ao seu livro as páginas wiki na categoria ligada',
 	'coll-add_category_tooltip' => 'Adicionar todas as páginas wiki nesta categoria ao seu livro',
 	'coll-add_page' => 'Adicionar página wiki',
+	'coll-add_page_popup' => 'Adicionar ao seu livro a página wiki ligada',
 	'coll-add_page_tooltip' => 'Adicionar a página wiki atual ao seu livro',
 	'coll-bookscategory' => 'Livros',
 	'coll-clear_collection' => 'Esvaziar livro',
@@ -1353,8 +1387,10 @@ $messages['pt'] = array(
 	'coll-load_collection' => 'Carregar livro',
 	'coll-load_collection_tooltip' => 'Carregar este livro como o seu livro atual',
 	'coll-n_pages' => '$1 {{PLURAL:$1|página|páginas}}',
+	'coll-popup_help_text' => 'Para desativar esta característica clique em "Esvaziar livro", na  caixa "Criar um livro"',
 	'coll-printable_version_pdf' => 'Versão em PDF',
 	'coll-remove_page' => 'Remover página wiki',
+	'coll-remove_page_popup' => 'Remover a página wiki ligada do seu livro',
 	'coll-remove_page_tooltip' => 'Remover a página wiki atual do seu livro',
 	'coll-show_collection' => 'Mostrar livro',
 	'coll-show_collection_tooltip' => 'Clique para editar/descarregar/encomendar o seu livro',
