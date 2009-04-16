@@ -3168,6 +3168,7 @@ $messages['is'] = array(
  * @author Darth Kule
  * @author Melos
  * @author Pietrodn
+ * @author Stefano-c
  */
 $messages['it'] = array(
 	'coll-desc' => '[[Special:Book|Crea libri]]',
@@ -3267,6 +3268,8 @@ Note:
 	'coll-invalid_podpartner_msg' => 'Il partner POD fornito non è valido. Contatta il tuo amministratore MediaWiki.',
 	'coll-license' => 'Licenza',
 	'coll-return_to' => 'Torna a [[:$1]]',
+	'coll-more_info' => 'Mostra ulteriori informazioni',
+	'coll-hide_info' => 'Nascondi informazioni',
 );
 
 /** Japanese (日本語)
@@ -4641,6 +4644,9 @@ Merk:
 Kontakt MediaWiki-administratoren din.',
 	'coll-license' => 'Lisens',
 	'coll-return_to' => 'Attende til [[:$1]]',
+	'coll-more_info' => 'Syn meir informasjon',
+	'coll-hide_info' => 'Skjul informasjon',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress tingingsinformasjon',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
