@@ -40,8 +40,8 @@ class CollectionHooks {
 		$action = $wgRequest->getVal('action');
 
 		if ( $skinTemplate->iscontent && ( $action == '' || $action == 'view' || $action == 'purge' ) ) {
-			if ( self::_isCollectionPage( $skinTemplate->mTitle, $wgArticle ) ) {
-				$params = 'colltitle=' . wfUrlencode( $skinTemplate->mTitle->getPrefixedDBKey() );
+			if ( self::_isCollectionPage( $skinTemplate->getTitle(), $wgArticle ) ) {
+				$params = 'colltitle=' . wfUrlencode( $skinTemplate->getTitle()->getPrefixedDBKey() );
 				if ( isset( $wgCollectionFormats['rl'] ) ) {
 					$nav_urls['printable_version_pdf'] = array(
 						'href' => SkinTemplate::makeSpecialUrlSubpage(
@@ -54,7 +54,7 @@ class CollectionHooks {
 				foreach ( $wgCollectionFormats as $writer => $name ) {
 				}
 			} else {
-				$params = 'arttitle=' . $skinTemplate->mTitle->getPrefixedURL();
+				$params = 'arttitle=' . $skinTemplate->getTitle()->getPrefixedURL();
 				if( $wgArticle ) {
 					$oldid = $wgArticle->getOldID();
 					if ( $oldid ) {
