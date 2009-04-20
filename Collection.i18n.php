@@ -3879,6 +3879,11 @@ Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh
 	'coll-rendering_article' => '(Wiki Säit: $1)',
 	'coll-rendering_page' => '(Säit: $1)',
 	'coll-rendering_finished_title' => 'Fäerdeg gemaach',
+	'coll-rendering_finished_text' => "<strong>De Fichier gouf generéiert.</strong>
+<strong>[$1 Lued de Fichier]</strong> op Äre Computer.
+
+Opgepasst:
+*Sidd Dir net zefridde mam Resultat? Kuckt [[{{MediaWiki:Coll-helppage}}|d'Hëllefssäit iwwer Bicher]] fir Méiglechkeete fir et ze verbesseren.",
 	'coll-notfound_title' => 'Buch net fonnt',
 	'coll-notfound_text' => "D'Buch-Säit konnt net fonnt ginn.",
 	'coll-download_notfound_title' => 'Fichier gouf net fonnt',
@@ -5123,6 +5128,7 @@ Por favor, contacte o seu administrador MediaWiki.',
 	'coll-return_to' => 'Voltar para [[:$1]]',
 	'coll-more_info' => 'Mostrar mais informações',
 	'coll-hide_info' => 'Ocultar informações',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informação sobre encomendas PediaPress',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -5501,6 +5507,9 @@ $messages['sah'] = array(
 Бука диэн MediaWiki дьаһабылын кытта кэпсэт.',
 	'coll-license' => 'Лицензия',
 	'coll-return_to' => 'Манна төннүү: [[:$1]]',
+	'coll-more_info' => 'Өссө эбии көрдөр',
+	'coll-hide_info' => 'Кистээ',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress сакаастааһын туһунан',
 );
 
 /** Slovak (Slovenčina)
@@ -6675,6 +6684,7 @@ Note:
 	'coll-notfound_title' => 'Libro mia catà',
 	'coll-notfound_text' => 'No se cata da nissuna parte la pàxena del libro.',
 	'coll-download_notfound_title' => 'File mia catà',
+	'coll-download_notfound_text' => "El file che te sì drio descargar no l'esiste mia; podarìa èssar che el sìpia stà scancelà e se gàvia da creàrlo da novo.",
 	'coll-is_cached' => '<ul><li>In te la cache xe stà catà na version del documento, quindi no ghè stà bisogno de far la conversion. <a href="$1">Forza la ri-conversion.</a></li></ul>',
 	'coll-excluded-templates' => '* I modèi in te la categoria [[:Category:$1|$1]] i xe stà esclusi.',
 	'coll-blacklisted-templates' => '* I modèi in te la lista nera [[:$1]] i xe stà esclusi.',
@@ -6689,6 +6699,7 @@ Note:
 	'coll-return_to' => 'Torna indrìo a [[:$1]]',
 	'coll-more_info' => 'Mostra piasè informasion',
 	'coll-hide_info' => 'Scondi informasion',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informassion par ordinar con PediaPress',
 );
 
 /** Veps (Vepsan kel')

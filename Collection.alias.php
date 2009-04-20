@@ -207,6 +207,11 @@ $aliases['tl'] = array(
 	'Book' => array( 'Aklat', 'Kalipunan' ),
 );
 
+/** Vèneto (Vèneto) */
+$aliases['vec'] = array(
+	'Book' => array( 'Libro' ),
+);
+
 /** Veps (Vepsan kel') */
 $aliases['vep'] = array(
 	'Book' => array( 'Kirj' ),

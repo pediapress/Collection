@@ -1795,18 +1795,26 @@ $messages['uk'] = array(
  */
 $messages['vec'] = array(
 	'coll-add_category' => 'Zonta na categoria',
+	'coll-add_category_tooltip' => 'Zonta tute le pagine wiki de sta categoria al to libro',
 	'coll-add_page' => 'Zonta pàxena wiki',
+	'coll-add_page_tooltip' => 'Zonta sta pagina wiki al to libro',
 	'coll-bookscategory' => 'Libri',
 	'coll-clear_collection' => 'Desvòda libro',
 	'coll-clear_collection_confirm' => 'Vuto dalbòn netar conpletamente el to libro?',
+	'coll-clear_collection_tooltip' => 'Cava tute le pagine wiki dal to libro atuale',
 	'coll-create_a_book' => 'Crea un libro',
 	'coll-help_collections' => 'Ajuto sui libri',
+	'coll-help_collections_tooltip' => 'Guida del strumento Libro',
 	'coll-helppage' => 'Help:Libri',
 	'coll-load_collection' => 'Carga libro',
+	'coll-load_collection_tooltip' => 'Carga sto libro come el to libro atuale',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàxena|pàxene}}',
+	'coll-popup_help_text' => 'Par disativar sta funsion struca "Desvòda libro" nel menù "Crea un libro"',
 	'coll-printable_version_pdf' => 'Versiòn PDF',
 	'coll-remove_page' => 'Cava pàxena wiki',
+	'coll-remove_page_tooltip' => 'Cava sta pagina wiki dal to libro',
 	'coll-show_collection' => 'Mostra libro',
+	'coll-show_collection_tooltip' => 'Struca el mouse par modificar, descargar o ordinar el to libro',
 );
 
 /** Veps (Vepsan kel')
