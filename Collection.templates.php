@@ -63,8 +63,8 @@ $this->msgWiki('coll-book_text');
     ?>
     <div>
       <div style="float:right">
-        <form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'post_zip/')) ?>" method="get">
-          <input type="hidden" name="partner" value="<?php echo htmlspecialchars($partner) ?>"/>
+        <form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'post_zip/')) ?>" method="post">
+          <input type="hidden" name="partner" value="pediapress" />
           <input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>" class="order" <?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
         </form>
       </div>
