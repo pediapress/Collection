@@ -38,10 +38,15 @@ class CollectionHooks {
 		wfLoadExtensionMessages( 'CollectionCore' );
 
 		$action = $wgRequest->getVal('action');
+		if ( method_exists( $skinTemplate, 'getTitle' ) ) {
+			$title = $skinTemplate->getTitle();
+		} else {
+			$title = $skinTemplate->mTitle;
+		}
 
 		if ( $skinTemplate->iscontent && ( $action == '' || $action == 'view' || $action == 'purge' ) ) {
-			if ( self::_isCollectionPage( $skinTemplate->getTitle(), $wgArticle ) ) {
-				$params = 'colltitle=' . wfUrlencode( $skinTemplate->getTitle()->getPrefixedDBKey() );
+			if ( self::_isCollectionPage( $title, $wgArticle ) ) {
+				$params = 'colltitle=' . wfUrlencode( $title->getPrefixedDBKey() );
 				if ( isset( $wgCollectionFormats['rl'] ) ) {
 					$nav_urls['printable_version_pdf'] = array(
 						'href' => SkinTemplate::makeSpecialUrlSubpage(
@@ -54,7 +59,7 @@ class CollectionHooks {
 				foreach ( $wgCollectionFormats as $writer => $name ) {
 				}
 			} else {
-				$params = 'arttitle=' . $skinTemplate->getTitle()->getPrefixedURL();
+				$params = 'arttitle=' . $title->getPrefixedURL();
 				if( $wgArticle ) {
 					$oldid = $wgArticle->getOldID();
 					if ( $oldid ) {
@@ -309,11 +314,11 @@ EOS
 <script type="text/javascript">
 /* <![CDATA[ */
 	wgCollectionNavPopupJSURL = '$wgCollectionNavPopupJSURL';
-  wgCollectionNavPopupCSSURL = '$wgCollectionNavPopupCSSURL';
-  wgCollectionAddPageText = '$addPageText';
-  wgCollectionAddCategoryText = '$addCategoryText';
-  wgCollectionRemovePageText = '$removePageText';
-  wgCollectionPopupHelpText = '$popupHelpText';
+	wgCollectionNavPopupCSSURL = '$wgCollectionNavPopupCSSURL';
+	wgCollectionAddPageText = '$addPageText';
+	wgCollectionAddCategoryText = '$addCategoryText';
+	wgCollectionRemovePageText = '$removePageText';
+	wgCollectionPopupHelpText = '$popupHelpText';
 	wgCollectionArticleNamespaces = [
 EOS
 			;
