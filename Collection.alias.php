@@ -72,6 +72,11 @@ $aliases['fr'] = array(
 	'Book' => array( 'Livre' ),
 );
 
+/** Franco-Provençal (Arpetan) */
+$aliases['frp'] = array(
+	'Book' => array( 'Lévro', 'Colèccion' ),
+);
+
 /** Galician (Galego) */
 $aliases['gl'] = array(
 	'Book' => array( 'Libro' ),
