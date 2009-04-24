@@ -4492,8 +4492,8 @@ Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong>',
 	'coll-save_collection' => 'Boek opslaan',
 	'coll-save_category' => 'Boeken worden opgeslagen in de categorie [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'De pagina bestaat al. Overschrijven?',
-	'coll-overwrite_text' => 'Er bestaat al een pagina met de naam [[:$1]].
-Wil u die pagina vervangen door uw collectie?',
+	'coll-overwrite_text' => "Er bestaat al een pagina met de naam [[:$1]].
+Wil u die pagina vervangen door uw verzameling wikipagina's?",
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nee',
 	'coll-load_overwrite_text' => "U hebt al een aantal pagina's in uw boek.
@@ -4520,7 +4520,7 @@ Als dit niet werkt, klik dan op de knop "Vernieuwen" in uw browser.</p>',
 <strong>[$1 Het bestand downloaden]</strong>.
 
 Opmerkingen:
-* Niet tevreden met de uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over collecties]] staan tips om deze uitvoer te verbeteren.',
+* Niet tevreden met de uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over boeken]] staan tips om deze uitvoer te verbeteren.',
 	'coll-notfound_title' => 'Boek niet gevonden',
 	'coll-notfound_text' => 'Boekpagina is niet gevonden.',
 	'coll-download_notfound_title' => 'Het bestand is niet gevonden',
@@ -5937,6 +5937,7 @@ $messages['su'] = array(
  * @author H92
  * @author Jon Harald Søby
  * @author M.M.S.
+ * @author MagnusA
  * @author Najami
  * @author Sannab
  */
@@ -5973,7 +5974,7 @@ Denna sida kommer inte att fungera korrekt innan JavaScript finns tillgängligt.
 	'coll-drag_and_drop' => 'Använd dra & släpp för att ändra ordning på wikisidor och kapitel',
 	'coll-create_chapter' => 'Skapa kapitel',
 	'coll-sort_alphabetically' => 'Sortera alfabetiskt',
-	'coll-rename' => 'Byt name',
+	'coll-rename' => 'Byt namn',
 	'coll-new_chapter' => 'Välj ett namn för det nya kapitlet',
 	'coll-rename_chapter' => 'Välj ett nytt namn för kapitlet',
 	'coll-no_such_category' => 'Ingen sådan kategori',
@@ -6032,7 +6033,7 @@ Noter:
 	'coll-blacklisted-templates' => '* Mallar på svartalistan [[:$1]] har uteslutits.',
 	'coll-return_to_collection' => '<p>Tillbaka till <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Beställ som en utskriven bok',
-	'coll-book_text' => 'Få en tryckt bok från vår print-on-demand partner:',
+	'coll-book_text' => 'Få en tryckt bok från vår print-on-demand-partner:',
 	'coll-order_from_pp' => 'Beställ bok från $1',
 	'coll-about_pp' => 'Om $1',
 	'coll-invalid_podpartner_title' => 'Ogiltig POD-partner',
