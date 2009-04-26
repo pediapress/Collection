@@ -1899,6 +1899,7 @@ Huomautuksia:
 * Etkö ole tyytyväinen lopputulokseen? Katso [[{{MediaWiki:Coll-helppage}}|kirjojen ohjesivulta]] mahdollisuuksista parantaa sitä.',
 	'coll-notfound_title' => 'Kirjaa ei löydy',
 	'coll-notfound_text' => 'Kirjan sivua ei löydy.',
+	'coll-download_notfound_title' => 'Tiedostoa ei löydy',
 	'coll-is_cached' => '<ul><li>Dokumentti löytyi välimuistista, joten renderöintiä ei tarvittu. <a href="$1">Pakota uudelleenrenderöinti.</a></li></ul>',
 	'coll-excluded-templates' => '* Mallineet luokassa [[:Category:$1|$1]] on ohitettu.',
 	'coll-blacklisted-templates' => '* Mallineet sulkulistalla [[:$1]] on ohitettu.',
@@ -1912,6 +1913,8 @@ Huomautuksia:
 Ota yhteys MediaWiki-ylläpitäjääsi.',
 	'coll-license' => 'Lisenssi',
 	'coll-return_to' => 'Palaa sivulle [[:$1]]',
+	'coll-more_info' => 'Näytä lisätietoja',
+	'coll-hide_info' => 'Piilota tiedot',
 );
 
 /** French (Français)
@@ -4618,20 +4621,20 @@ Vil du erstatta den noverande boka di, leggja til det nye innhaldet eller avbryt
 	'coll-limit_exceeded_text' => 'Boka di er for stor.
 Fleire sider kan ikkje verta lagt til.',
 	'coll-rendering_title' => 'Opprettar',
-	'coll-rendering_text' => '<p><strong>Ver venleg og vent medan dokumentet blir oppretta.</strong></p>
+	'coll-rendering_text' => '<p><strong>Vent medan dokumentet vert oppretta.</strong></p>
 
-<p><strong>Framsteg:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+<p><strong>Framgang:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
 <p>Denne sida bør automatisk verta lasta inn på nytt med eit par sekunds mellomrom. Om dette ikkje fungerer, trykk på oppdateringsknappen i nettlesaren din.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wikisida: $1)',
 	'coll-rendering_page' => '(sida: $1)',
 	'coll-rendering_finished_title' => 'Oppretta',
-	'coll-rendering_finished_text' => '<strong>Dokumentfila har vorte oppretta.</strong>
+	'coll-rendering_finished_text' => '<strong>Dokumentfila er vorten oppretta.</strong>
 <strong>[$1 Last ned fila]</strong> til datamaskina di.
 
 Merk:
-* Ikkje nøgd med resultatet? Sjå [[{{Mediawiki:Coll-helppage}}|hjelpesida om samlingar]] for moglegheiter til å forbetra det.',
+* Er du ikkje nøgd med resultatet? Sjå [[{{MediaWiki:Coll-helppage}}|hjelpesida for bøker]] for moglegheiter til å betra det.',
 	'coll-notfound_title' => 'Boka vart ikkje funnen',
 	'coll-notfound_text' => 'Kunne ikkje finna boksida.',
 	'coll-download_notfound_title' => 'Fann ikkje fil',
@@ -7118,6 +7121,9 @@ $messages['zh-hans'] = array(
 请联系系统管理员。',
 	'coll-license' => '许可协议',
 	'coll-return_to' => '返回到[[:$1]]',
+	'coll-more_info' => '显示更多信息',
+	'coll-hide_info' => '隐藏信息',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress订单信息',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
