@@ -101,6 +101,7 @@ $wgCollectionNavPopupCSSURL = null;
 # ==============================================================================
 
 $wgExtensionCredits['specialpage'][] = array(
+	'path' => __FILE__,
 	'name' => 'Collection',
 	'version' => $wgCollectionVersion,
 	'author' => array( 'PediaPress GmbH', 'Siebrand Mazeland' ),
