@@ -104,7 +104,6 @@ EOS
 	 * Callback for hook SkinBuildSidebar (MediaWiki >= 1.14)
 	 */
 	static function buildSidebar( $skin, &$bar ) {
-		global $wgArticle;
 		global $wgUser;
 		global $wgCollectionPortletForLoggedInUsersOnly;
 
