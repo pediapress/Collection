@@ -672,7 +672,7 @@ Ova stranica se neće pravilno prikazati, sve dok se JavaScript ne omogući.</st
 	'coll-download' => 'Učitavanje',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Ukloni',
-	'coll-show' => 'Prikaži',
+	'coll-show' => 'Pokaži',
 	'coll-move_to_top' => 'Pomjeri na vrh',
 	'coll-move_up' => 'Premjesti gore',
 	'coll-move_down' => 'Premjesti dole',
@@ -4634,7 +4634,7 @@ Fleire sider kan ikkje verta lagt til.',
 <strong>[$1 Last ned fila]</strong> til datamaskina di.
 
 Merk:
-* Er du ikkje nøgd med resultatet? Sjå [[{{MediaWiki:Coll-helppage}}|hjelpesida for bøker]] for moglegheiter til å betra det.',
+* Ikkje nøgd med resultatet? Sjå [[{{MediaWiki:Coll-helppage}}|hjelpesida for bøker]] for moglegheiter til å betra det.',
 	'coll-notfound_title' => 'Boka vart ikkje funnen',
 	'coll-notfound_text' => 'Kunne ikkje finna boksida.',
 	'coll-download_notfound_title' => 'Fann ikkje fil',
