@@ -3805,6 +3805,14 @@ Don dat enem Wikki-Köbes obb et Bruut schmiere.',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Wie mer bei <i lang="en">PediaPress</i> beshtelle kann',
 );
 
+/** Cornish (Kernewek)
+ * @author Kw-Moon
+ */
+$messages['kw'] = array(
+	'coll-rename' => 'Dashenwel',
+	'coll-cancel' => 'Hedhi',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
