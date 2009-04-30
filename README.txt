@@ -208,6 +208,13 @@ Installation and Configuration of the Collection Extension
 
    Default for both variables is null, i.e. the popup is deactivated.
 
+* If you want to let users save their collections as wiki pages, make sure
+  $wgEnableWriteAPI is set to true, i.e. put this line in your LocalSettings.php::
+
+    $wgEnableWriteAPI = true;
+
+  (This is the default for MediaWiki >= 1.14.)
+
 * As the current collection of articles is stored in the session, the session
   timeout should be set to some sensible value (at least a few hours, maybe
   one day). Adjust session.cookie_lifetime and session.gc_maxlifetime in your
