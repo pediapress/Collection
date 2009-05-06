@@ -157,8 +157,11 @@ EOS
 		global $wgJsMimeType;
 		global $wgScriptPath;
 		global $wgCollectionStyleVersion;
-		global $wgCollectionNavPopupJSURL;
-		global $wgCollectionNavPopupCSSURL;
+		global $wgCollectionNavPopups;
+
+		$navPopupJSURL = "$wgScriptPath/extensions/Collection/collection/Gadget-popups.js?$wgCollectionStyleVersion";
+		$navPopupCSSURL = "$wgScriptPath/extensions/Collection/collection/Gadget-navpop.css?$wgCollectionStyleVersion";
+
 
 		wfLoadExtensionMessages( 'CollectionCore' );
 
@@ -304,7 +307,7 @@ EOS
 		;
 
 		// activate popup check:
-		if ( $wgCollectionNavPopupJSURL && $wgCollectionNavPopupCSSURL ) {
+		if ( $wgCollectionNavPopups ) {
 			$addPageText = wfMsg( 'coll-add_page_popup' );
 			$addCategoryText = wfMsg( 'coll-add_category_popup' );
 			$removePageText = wfMsg( 'coll-remove_page_popup' );
@@ -312,8 +315,8 @@ EOS
 			$out .= <<<EOS
 <script type="text/javascript">
 /* <![CDATA[ */
-	wgCollectionNavPopupJSURL = '$wgCollectionNavPopupJSURL';
-	wgCollectionNavPopupCSSURL = '$wgCollectionNavPopupCSSURL';
+	wgCollectionNavPopupJSURL = '$navPopupJSURL';
+	wgCollectionNavPopupCSSURL = '$navPopupCSSURL';
 	wgCollectionAddPageText = '$addPageText';
 	wgCollectionAddCategoryText = '$addCategoryText';
 	wgCollectionRemovePageText = '$removePageText';
