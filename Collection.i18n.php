@@ -1460,6 +1460,8 @@ Notoj:
 Bonvolu kontakti vian administranton de MediaWiki.',
 	'coll-license' => 'Licenco',
 	'coll-return_to' => 'Reiri al [[:$1]]',
+	'coll-more_info' => 'Montri plian informon',
+	'coll-hide_info' => 'Kaŝi informon',
 );
 
 /** Spanish (Español)
@@ -4647,7 +4649,7 @@ Merk:
 	'coll-notfound_text' => 'Kunne ikkje finna boksida.',
 	'coll-download_notfound_title' => 'Fann ikkje fil',
 	'coll-download_notfound_text' => 'Fila du freistar å lasta ned finst ikkje: kan henda er ho vorten sletta og treng å verta regenerert.',
-	'coll-is_cached' => '<ul><li>Ein mellomlagra versjon av dokumentet vart funnen, so ingen rendrering var naudsynleg. <a href="$1">Tving ny rendrering.</a></li></ul>',
+	'coll-is_cached' => '<ul><li>Ein mellomlagra versjon av dokumentet vart funnen, so ingen rendering var naudsynleg. <a href="$1">Tving ny rendering.</a></li></ul>',
 	'coll-excluded-templates' => '* Malar i kategorien [[:Category:$1|$1]] har vortne utelatne.',
 	'coll-blacklisted-templates' => '* Malar på svartelista ([[:$1]]) har vortne utelatne.',
 	'coll-return_to_collection' => '<p>Attende til <a href="$1">$2</a></p>',
