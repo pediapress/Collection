@@ -185,28 +185,21 @@ Installation and Configuration of the Collection Extension
       }
     ?>
 
-  *$wgCollectionNavPopupJSURL and $wgCollectionNavPopupCSSURL (string or null)*
-   If you want to use popups to easily add/remove linked articles to your collection,
-   you have to provide URLs for the JavaScript and the CSS file of the popup Gadget
-   that's used on Wikipedia (see http://en.wikipedia.org/wiki/Navpop for more
-   information). If the stock files in the English Wikipedia are usable for you
-   (for example because you have a similar setup of your MediaWiki), you can link
-   them directly::
+  *$wgCollectionNavPopups (bool)*
+   If you don't want to use popups to easily add/remove linked articles to your
+   collection, set this variable to false.
+   
+   The Collection popups are only active if
 
-     $wgCollectionNavPopupJSURL = 'http://en.wikipedia.org/w/index.php?title=MediaWiki:Gadget-popups.js&action=raw&ctype=text/javascript';
-     $wgCollectionNavPopupCSSURL = 'http://en.wikipedia.org/w/index.php?title=MediaWiki:Gadget-navpop.css&action=raw&ctype=text/css';
-
-   Otherwise you have to provide adjusted files and set the URLs accordingly.
-
-   If the URLs are provided, the Collection popup is only active if
    * JavaScript is enabled,
    * there's at least one wiki page in the current collection (i.e. the feature
-     is activated by clicking on "Add wiki page" for the first time and
+     is activated by clicking on "Add page to bok" for the first time and
      deactivated as soon as the collection is empty),
-   * the current user didn't enable the navigation popup gadget (see above),
-     which would result in conflicting popups.
+   * the current user didn't enable the "Navigation popup gadget" on the MediaWiki
+     (see http://en.wikipedia.org/wiki/Navpop) which would result in conflicting
+     popups.  
 
-   Default for both variables is null, i.e. the popup is deactivated.
+   Default is true, i.e. the Collection popups are enabled.
 
 * If you want to let users save their collections as wiki pages, make sure
   $wgEnableWriteAPI is set to true, i.e. put this line in your LocalSettings.php::
