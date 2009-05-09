@@ -117,6 +117,11 @@ $aliases['id'] = array(
 	'Book' => array( 'Koleksi' ),
 );
 
+/** Ido (Ido) */
+$aliases['io'] = array(
+	'Book' => array( 'Libro' ),
+);
+
 /** Italian (Italiano) */
 $aliases['it'] = array(
 	'Book' => array( 'Raccolta' ),
@@ -130,6 +135,11 @@ $aliases['ja'] = array(
 /** Khmer (ភាសាខ្មែរ) */
 $aliases['km'] = array(
 	'Book' => array( 'ការចងក្រង' ),
+);
+
+/** Ripoarisch (Ripoarisch) */
+$aliases['ksh'] = array(
+	'Book' => array( 'Booch sammelle', 'Sammlong', 'Sigge sammelle' ),
 );
 
 /** Luxembourgish (Lëtzebuergesch) */
