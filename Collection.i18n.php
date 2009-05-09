@@ -6109,11 +6109,14 @@ $messages['te'] = array(
 	'coll-rendering_page' => '  (పేజీ: $1)',
 	'coll-notfound_title' => 'సేకరణ కనబడలేదు',
 	'coll-notfound_text' => 'సేకరణ పేజీ కనబడలేదు.',
+	'coll-download_notfound_title' => 'ఫైలు దొరకలేదు',
 	'coll-return_to_collection' => '<p>తిరిగి <a href="$1">$2</a></p>కి',
 	'coll-order_from_pp' => '$1 నుండి పుస్తకాన్ని ఆర్డర్ చెయ్యండి',
 	'coll-about_pp' => '$1 గురించి',
 	'coll-license' => 'లైసెన్సు',
 	'coll-return_to' => 'తిరిగి [[:$1]]కి',
+	'coll-more_info' => 'మరింత సమాచారాన్ని చూపించు',
+	'coll-hide_info' => 'సమాచారాన్ని దాచు',
 );
 
 /** Tetum (Tetun)
