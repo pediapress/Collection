@@ -635,12 +635,13 @@ $messages['gv'] = array(
 
 /** Hebrew (עברית)
  * @author Rotemliss
+ * @author YaronSh
  */
 $messages['he'] = array(
 	'coll-add_category' => 'הוספת קטגוריה',
 	'coll-add_category_popup' => 'הוספת כל הדפים בקטגוריה המקושרת לספר שלך',
 	'coll-add_category_tooltip' => 'הוספת כל הדפים בקטגוריה זו לספר שלך',
-	'coll-add_page' => 'הוספת דף ויקי',
+	'coll-add_page' => 'הוספת דף לספר',
 	'coll-add_page_popup' => 'הוספת הדף המקושר לספר שלך',
 	'coll-add_page_tooltip' => 'הוספת דף הוויקי הנוכחי לספר שלך',
 	'coll-bookscategory' => 'ספרים',
@@ -656,7 +657,7 @@ $messages['he'] = array(
 	'coll-n_pages' => '{{PLURAL:$1|דף אחד|$1 דפים}}',
 	'coll-popup_help_text' => 'כדי לבטל תכונה זו, לחצו על "ניקוי הספר" בתיבה "יצירת ספר"',
 	'coll-printable_version_pdf' => 'גרסת PDF',
-	'coll-remove_page' => 'הסרת דף ויקי',
+	'coll-remove_page' => 'הסרת דף מהספר',
 	'coll-remove_page_popup' => 'הסרת הדף המקושר מהספר שלך',
 	'coll-remove_page_tooltip' => 'הסרת דף הוויקי הנוכחי מהספר שלך',
 	'coll-show_collection' => 'הצגת ספר',
