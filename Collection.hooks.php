@@ -142,12 +142,13 @@ class CollectionHooks {
 	static function getPortlet( $ajaxHint='' ) {
 		global $wgArticle;
 		global $wgTitle;
-		global $wgOut, $wgUser;
+		global $wgUser;
 		global $wgRequest;
 		global $wgCollectionArticleNamespaces;
 		global $wgScriptPath;
 		global $wgCollectionStyleVersion;
 		global $wgCollectionNavPopups;
+		global $wgJsMimeType;
 		
 		$sk = $wgUser->getSkin();
 
@@ -168,6 +169,7 @@ class CollectionHooks {
 
 		$numArticles = CollectionSession::countArticles();
 		$showShowAndClearLinks = true;
+		$addRemoveState = '';
 
 		$out  = Xml::element( 'ul', array( 'id' => 'collectionPortletList' ), NULL );
 
@@ -184,6 +186,7 @@ class CollectionHooks {
 			$showShowAndClearLinks = false;
 
 		} else if( $ajaxHint == 'addcategory' || $namespace == NS_CATEGORY ) {
+			$addRemoveState = 'addcategory';
 
 			$out .= Xml::tags( 'li', array( 'id' => 'coll-add_category' ),
 						   	   $sk->link( SpecialPage::getTitleFor( 'Book', 'add_category/' ),
@@ -203,11 +206,13 @@ class CollectionHooks {
 				$params['oldid'] = $oldid;
 			}
 
-			if ( $ajaxHint == 'addpage' || CollectionSession::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) {
+			if ( $ajaxHint == 'addpage' || ($ajaxHint != 'removepage' && CollectionSession::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) ) {
+				$addRemoveState = 'addpage';
 				$action  = 'add';
 				$uaction = 'Add';
         $other_action = 'remove';
 			} else {
+				$addRemoveState = 'removepage';
 				$action  = 'remove';
 				$uaction = 'Remove';	
         $other_action = 'add';
@@ -261,8 +266,19 @@ class CollectionHooks {
 						 );
 						 
 		$out .= '</ul>';
-		$wgOut->addScript( "/* <![CDATA[ */ wgCollectionAddRemoveState = '$addRemoveState'; /* ]]> */" );
-		$wgOut->addScriptFile( "/extensions/Collection/collection/portlet.js?$wgCollectionStyleVersion" );
+		$out .= Xml::element( 'script',
+			array(
+				'type' => $wgJsMimeType,
+			),
+			"wgCollectionAddRemoveState = '$addRemoveState';"
+		);
+    $out .= Xml::element( 'script', 
+			array(
+				'type' => $wgJsMimeType,
+				'src' => "$wgScriptPath/extensions/Collection/collection/portlet.js?$wgCollectionStyleVersion",
+			),
+			'', false
+		);
 
 		// activate popup check:
 		if ( $wgCollectionNavPopups ) {
@@ -271,8 +287,11 @@ class CollectionHooks {
 			$removePageText = wfMsg( 'coll-remove_page_popup' );
 			$popupHelpText = wfMsg( 'coll-popup_help_text' );
 			
-			$wgOut->addScript( "/* <![CDATA[ */
-	wgCollectionNavPopupJSURL	 = '$wgScriptPath/extensions/Collection/collection/Gadget-popups.js?$wgCollectionStyleVersion';
+			$out .= Xml::element( 'script',
+				array(
+					'type' => $wgJsMimeType,
+				),
+				"wgCollectionNavPopupJSURL	 = '$wgScriptPath/extensions/Collection/collection/Gadget-popups.js?$wgCollectionStyleVersion';
 	wgCollectionNavPopupCSSURL	= '$wgScriptPath/extensions/Collection/collection/Gadget-navpop.css?$wgCollectionStyleVersion';
 	wgCollectionAddPageText	   = '$addPageText';
 	wgCollectionAddCategoryText   = '$addCategoryText';
@@ -280,10 +299,22 @@ class CollectionHooks {
 	wgCollectionPopupHelpText	 = '$popupHelpText';
 	wgCollectionArticleNamespaces = [ "
 			. implode( ', ', $wgCollectionArticleNamespaces )
-			. "]; /* ]]> */ " );
-			$wgOut->addScriptFile( "/extensions/Collection/collection/json2.js?$wgCollectionStyleVersion" );
-			$wgOut->addScriptFile( "/extensions/Collection/collection/popupcheck.js?$wgCollectionStyleVersion" );
-		
+			. "];"
+			);
+			$out .= Xml::element( 'script',
+				array(
+					'type' => $wgJsMimeType,
+					'src' => "$wgScriptPath/extensions/Collection/collection/json2.js?$wgCollectionStyleVersion"
+				),
+				'', false
+			);
+			$out .= Xml::element( 'script',
+				array(
+					'type' => $wgJsMimeType,
+					'src' => "$wgScriptPath/extensions/Collection/collection/popupcheck.js?$wgCollectionStyleVersion"
+				),
+				'', false
+			);
 		}
 
 		return $out;
