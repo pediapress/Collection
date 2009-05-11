@@ -186,8 +186,8 @@ Installation and Configuration of the Collection Extension
     ?>
 
   *$wgCollectionNavPopups (bool)*
-   If you don't want to use popups to easily add/remove linked articles to your
-   collection, set this variable to false.
+   If you want to use popups to easily add/remove linked articles to your
+   collection, set this variable to true.
    
    The Collection popups are only active if
 
@@ -199,7 +199,7 @@ Installation and Configuration of the Collection Extension
      (see http://en.wikipedia.org/wiki/Navpop) which would result in conflicting
      popups.  
 
-   Default is true, i.e. the Collection popups are enabled.
+   Default is false, i.e. the Collection popups are turned off.
 
 * If you want to let users save their collections as wiki pages, make sure
   $wgEnableWriteAPI is set to true, i.e. put this line in your LocalSettings.php::
