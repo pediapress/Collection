@@ -94,7 +94,7 @@ $wgCollectionFormats = array(
 
 $wgCollectionPortletForLoggedInUsersOnly = false;
 
-$wgCollectionNavPopups = true;
+$wgCollectionNavPopups = false;
 
 # ==============================================================================
 
