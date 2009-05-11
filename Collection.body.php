@@ -55,7 +55,7 @@ class SpecialCollection extends SpecialPage {
 					self::limitExceeded();
 					return;
 				}
-				$title_url = $wgRequest->getVal( 'arttitle', '' );
+				$title_url = urldecode( $wgRequest->getVal( 'arttitle', '' ) );
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
 				$title = Title::newFromURL( $title_url );
 				$this->addArticle( $title, $oldid );
@@ -68,7 +68,7 @@ class SpecialCollection extends SpecialPage {
 				$wgOut->redirect( $redirectURL );
 				return;
 			case 'remove_article/':
-				$title_url = $wgRequest->getVal( 'arttitle', '' );
+				$title_url = urldecode( $wgRequest->getVal( 'arttitle', '' ) );
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
 				$title = Title::newFromURL( $title_url );
 				self::removeArticle( $title, $oldid );
@@ -96,7 +96,7 @@ class SpecialCollection extends SpecialPage {
 				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
 			case 'add_category/':
-				$title = Title::makeTitleSafe( NS_CATEGORY, $wgRequest->getVal( 'cattitle', '' ) );
+				$title = Title::makeTitleSafe( NS_CATEGORY, urldecode( $wgRequest->getVal( 'cattitle', '' ) ) );
 				if ( self::addCategory( $title ) ) {
 					self::limitExceeded();
 					return;
@@ -116,7 +116,7 @@ class SpecialCollection extends SpecialPage {
 				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
 			case 'load_collection/':
-				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
+				$title = Title::newFromText( urldecode( $wgRequest->getVal( 'colltitle', '' ) ) );
 				if ( $wgRequest->getVal( 'cancel' ) ) {
 					$wgOut->redirect( $title->getFullURL() );
 					return;
@@ -135,12 +135,12 @@ class SpecialCollection extends SpecialPage {
 				$this->renderLoadOverwritePage( $title );
 				return;
 			case 'order_collection/':
-				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
+				$title = Title::newFromText( urldecode( $wgRequest->getVal( 'colltitle', '' ) ) );
 				$collection = $this->loadCollection( $title );
 				$partner = $wgRequest->getVal( 'partner', 'pediapress' );
 				return $this->postZIP( $collection, $partner );
 			case 'save_collection/':
-				$collTitle = $wgRequest->getVal( 'colltitle' );
+				$collTitle = urldecode( $wgRequest->getVal( 'colltitle' ) );
 				if ( $wgRequest->getVal( 'overwrite' ) && !empty( $collTitle ) ) {;
 					$title = Title::newFromText( $collTitle );
 					$this->saveCollection( $title, $overwrite=true );
@@ -152,14 +152,14 @@ class SpecialCollection extends SpecialPage {
 				$saveCalled = false;
 				if ( $collType == 'personal' ) {
 					$userPageTitle = $wgUser->getUserPage()->getPrefixedText();
-					$name = $wgRequest->getVal( 'pcollname', '' );
+					$name = urldecode( $wgRequest->getVal( 'pcollname', '' ) );
 					if ( !empty( $name ) ) {
 						$title = Title::newFromText( $userPageTitle . '/' . wfMsgForContent( 'coll-collections' ) . '/' . $name );
 						$saveCalled = true;
 						$saved = $this->saveCollection( $title, $overwrite );
 					}
 				} else if ( $collType == 'community' ) {
-					$name = $wgRequest->getVal( 'ccollname', '' );
+					$name = urldecode( $wgRequest->getVal( 'ccollname', '' ) );
 					if ( !empty( $name ) ) {
 						$title = Title::makeTitle( $wgCommunityCollectionNamespace, wfMsgForContent( 'coll-collections' ) . '/' . $name );
 						$saveCalled = true;
@@ -188,11 +188,11 @@ class SpecialCollection extends SpecialPage {
 			case 'download/':
 				return $this->download();
 			case 'render_article/':
-				$title = Title::newFromText( $wgRequest->getVal( 'arttitle', '' ) );
+				$title = Title::newFromText( urldecode( $wgRequest->getVal( 'arttitle', '' ) ) );
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
 				return $this->renderArticle( $title, $oldid, $wgRequest->getVal( 'writer', 'rl' ) );
 			case 'render_collection/':
-				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
+				$title = Title::newFromText( urldecode( $wgRequest->getVal( 'colltitle', '' ) ));
 				$collection = $this->loadCollection( $title );
 				if ( $collection ) {
 					$this->renderCollection( $collection, $title, $wgRequest->getVal( 'writer', 'rl' ) );
