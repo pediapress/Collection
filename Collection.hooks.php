@@ -194,13 +194,13 @@ class CollectionHooks {
 						   	   			  array( 'onclick' => "collectionCall('AddCategory', ['addcategory', wgTitle]); return false;",
 												 'rel'	 => 'nofollow',
 												 'title'   => wfMsg( "coll-add_category_tooltip" ), ),
-										  array( 'cattitle' => $wgTitle->getPartialURL() ),
-						   	   			  array( 'known', 'noclasses', 'noescape' )
+										  array( 'cattitle' => urldecode( $wgTitle->getPartialURL() ) ),
+						   	   			  array( 'known', 'noclasses' )
 						   				)
 							 );
 
 		} else if( $ajaxHint || in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
-			$params = array( 'arttitle' => $wgTitle->getPrefixedUrl() );
+			$params = array( 'arttitle' => urldecode( $wgTitle->getPrefixedUrl() ) );
 			if ( !is_null( $wgArticle ) ) {
 				$oldid = $wgArticle->getOldID();
 				$params['oldid'] = $oldid;
