@@ -77,7 +77,9 @@ function refreshCollectionArticleList() {
             }
         }
         coll = JSON.parse(xhr.responseText);
-        add_articles(coll.collection.items);
+				if (typeof coll.collection.items != 'undefined' ) {
+					add_articles(coll.collection.items);
+				}
         if (articles.length > 0) {
             startCollectionPopups();
         } else {
