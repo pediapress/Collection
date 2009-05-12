@@ -759,6 +759,7 @@ Molimo da kontaktirate Vašeg MediaWiki administratora.',
  * @author Aleator
  * @author Jordi Roqué
  * @author SMP
+ * @author Solde
  * @author Vriullop
  */
 $messages['ca'] = array(
@@ -846,7 +847,7 @@ Notes:
 	'coll-download_notfound_title' => "No s'ha trobat el fitxer",
 	'coll-download_notfound_text' => 'El fitxer que intenteu descarregar no existeix: Potser ha estat esborrat i cal que sigui regenerat.',
 	'coll-is_cached' => '<ul><li>S\'ha trobat una versió del document en la memòria cau i per tant no ha estat necessària cap renderització. <a href="$1">Forçar renderització.</a></li></ul>',
-	'coll-excluded-templates' => "* No s'han inclòs les plantilles de la categoria [[:Categoria:$1|$1]].",
+	'coll-excluded-templates' => "* No s'han inclòs les plantilles de la categoria [[:Category:$1|$1]].",
 	'coll-blacklisted-templates' => "* S'han exclòs les plantilles de la llista negra [[:$1]].",
 	'coll-return_to_collection' => '<p>Tornar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Encarrega-ho com a llibre imprès',
@@ -4408,6 +4409,7 @@ Henwiesen:
 	'coll-notfound_title' => 'Book nich funnen',
 	'coll-notfound_text' => 'Booksied kunn nich funnen warrn.',
 	'coll-download_notfound_title' => 'Datei nich funnen',
+	'coll-download_notfound_text' => 'De Datei, de du dalladen wullst, de gifft dat nich: Villicht is se wegdaan worrn oder se mutt nee opstellt warrn.',
 	'coll-is_cached' => '<ul><li>Dat geev en twischenspiekert Version vun dat Dokument, nee Rendern weer nich nödig. <a href="$1">Nu nee rendern.</a></li></ul>',
 	'coll-excluded-templates' => '* Vörlagen ut de Kategorie [[:Category:$1|$1]] sünd utslaten bleven.',
 	'coll-blacklisted-templates' => '* Vörlagen vun de Swarte List [[:$1]] sünd utslaten bleven.',
@@ -4420,6 +4422,9 @@ Henwiesen:
 	'coll-invalid_podpartner_msg' => 'De Angaven to’n Print-on-Demand-Partner sünd verkehrt. Neem Kuktakt op mit den MediaWiki-Administrater.',
 	'coll-license' => 'Lizenz',
 	'coll-return_to' => 'Trüch na [[:$1]]',
+	'coll-more_info' => 'Wies mehr Infos',
+	'coll-hide_info' => 'Informatschonen versteken',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress Bestellinformatschoon',
 );
 
 /** Nedersaksisch (Nedersaksisch)
