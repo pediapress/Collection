@@ -768,6 +768,7 @@ $messages['ca'] = array(
 	'coll-collections' => 'Llibres',
 	'coll-exclusion_category_title' => 'Excloure en imprimir',
 	'coll-print_template_prefix' => 'Imprimir',
+	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Subpàgina desconeguda',
 	'coll-unknown_subpage_text' => 'No existeix aquesta subpàgina de [[Special:Book|Llibre]]',
 	'coll-download_as' => 'Descarrega com $1',
@@ -775,6 +776,7 @@ $messages['ca'] = array(
 <strong>El vostre navegador no admet el JavaScript o el té desactivat.
 Aquesta pàgina no funcionarà correctament si no l'activeu.</strong>",
 	'coll-intro_text' => 'Creeu i gestioneu la vostra selecció personal de pàgines wiki.<br />Vegeu [[{{MediaWiki:Coll-helppage}}]] per a més informació.',
+	'coll-savedbook_template' => 'llibre_desat',
 	'coll-your_book' => 'El vostre llibre',
 	'coll-download_title' => 'Descarrega',
 	'coll-download_text' => 'Per a descarregar una versió escolliu el format i cliqueu el botó.',
@@ -859,6 +861,9 @@ Notes:
 Si us plau, contacteu amb el vostre administrador de MediaWiki.",
 	'coll-license' => 'Llicència',
 	'coll-return_to' => 'Tornar a [[:$1]]',
+	'coll-more_info' => 'Mostra més informació',
+	'coll-hide_info' => 'Amaga informació',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Ordena informacó de PediaPress',
 );
 
 /** Czech (Česky)
@@ -1554,7 +1559,7 @@ Si no funciona, pulsa el botón de refrescar de tu navegador.</p>',
 	'coll-rendering_page' => '(página: $1)',
 	'coll-rendering_finished_title' => 'Proceso finalizado',
 	'coll-rendering_finished_text' => '<strong>Se ha generado el documento.</strong>
-<strong>[$1 Baja el archivo]</strong> a tu ordenador.
+<strong>[$1 Baja el archivo]</strong>.
 
 Notas:
 * ¿No estás satisfecho con el resultado? Mira [[{{MediaWiki:Coll-helppage}}|la página de ayuda sobre compilaciones]] para ver las  posibilidades de mejorarlo.',
@@ -2192,7 +2197,7 @@ $messages['gsw'] = array(
 <strong>Dyy Browser unterstitzt kei JavaScript oder s JavaScript isch deaktiviert.
 Die Syte funktioniert eso lang nit richtig, solang JavaScript nit verfiegbar isch.</strong>',
 	'coll-intro_text' => 'Leg Dyyni individuäll Sammlig vu Syte aa un verwalt si.<br />Lueg d [[{{MediaWiki:Coll-helppage}}|Hilf zue Sammlige]] fir wyteri Informatione.',
-	'coll-savedbook_template' => 'gspycheret_buech',
+	'coll-savedbook_template' => 'gspycheret_Buech',
 	'coll-your_book' => 'Dyy Buech',
 	'coll-download_title' => 'Abelade',
 	'coll-download_text' => 'Go ne Offline-Version abelade, wehl e Format un druck uf d Schaltflächi.',
