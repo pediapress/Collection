@@ -230,13 +230,14 @@ $messages['bs'] = array(
 /** Catalan (Català)
  * @author Aleator
  * @author SMP
+ * @author Solde
  * @author Vriullop
  */
 $messages['ca'] = array(
 	'coll-add_category' => 'Afegeix categoria',
 	'coll-add_category_popup' => 'Afegeix al llibre les pàgines de la categoria enllaçada',
 	'coll-add_category_tooltip' => "Afegeix al llibre totes les pàgines d'aquesta categoria",
-	'coll-add_page' => 'Afegeix pàgina wiki',
+	'coll-add_page' => 'Afegeix una pàgina al llibre',
 	'coll-add_page_popup' => 'Afegeix la pàgina wiki enllaçada al llibre',
 	'coll-add_page_tooltip' => 'Afegeix la pàgina wiki actual al llibre',
 	'coll-bookscategory' => 'Llibres',
@@ -252,7 +253,7 @@ $messages['ca'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàgina|pàgines}}',
 	'coll-popup_help_text' => 'Per desactivar aquesta opció feu clic a «Buida llibre» a la casella «Crea un llibre»',
 	'coll-printable_version_pdf' => 'Versió en PDF',
-	'coll-remove_page' => 'Esborra pàgina wiki',
+	'coll-remove_page' => 'Esborra la pàgina del llibre',
 	'coll-remove_page_popup' => 'Treu del wiki la pàgina wiki enllaçada',
 	'coll-remove_page_tooltip' => 'Treu la pàgina wiki actual del llibre',
 	'coll-show_collection' => 'Mostra llibre',
@@ -424,6 +425,8 @@ $messages['eo'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|paĝo|paĝoj}}',
 	'coll-printable_version_pdf' => 'PDF-versio',
 	'coll-remove_page' => 'Forigi paĝon de libro',
+	'coll-remove_page_popup' => 'Forigi ligitan vikian paĝon de via libro',
+	'coll-remove_page_tooltip' => 'Forigi la nunan vikian paĝon de via libro',
 	'coll-show_collection' => 'Montri libron',
 );
 
@@ -607,7 +610,7 @@ $messages['gsw'] = array(
 	'coll-add_page' => 'Artikel zum Buech zuefiege',
 	'coll-add_page_popup' => 'Vergleichti Syte zu Dyynem Buech zuefiege',
 	'coll-add_page_tooltip' => 'Di aktuäll Wikisyte zue Dyynem Buech zuefiege',
-	'coll-bookscategory' => 'Biecher',
+	'coll-bookscategory' => 'Buechfunktion',
 	'coll-clear_collection' => 'Buech lesche',
 	'coll-clear_collection_confirm' => 'Mechtsch Dyy Buech ächt lesche?',
 	'coll-clear_collection_tooltip' => 'Alli Wikisyte us Dyynem aktuälle Buech useneh',
@@ -991,7 +994,7 @@ $messages['ko'] = array(
 	'coll-add_category' => '분류 추가하기',
 	'coll-add_category_popup' => '연결된 카테고리의 위키 페이지를 당신의 책에 더하세요.',
 	'coll-add_category_tooltip' => '이 분류에 속한 모든 위키 페이지를 책에 추가해 주세요',
-	'coll-add_page' => '문서 추가',
+	'coll-add_page' => '책에 문서 추가',
 	'coll-add_page_popup' => '연결된 위키 페이지를 당신의 책에 더하세요',
 	'coll-add_page_tooltip' => '현재 위키 페이지에 책을 덧붙여 주세요',
 	'coll-bookscategory' => '책들',
@@ -1007,7 +1010,7 @@ $messages['ko'] = array(
 	'coll-n_pages' => '$1개의 문서',
 	'coll-popup_help_text' => '이 글의 활성화를 해제하려면 "책 만들기" 상자의 "책 청소하기"를 클릭하세요.',
 	'coll-printable_version_pdf' => 'PDF 버전',
-	'coll-remove_page' => '문서 제거',
+	'coll-remove_page' => '책에서 문서 제거',
 	'coll-remove_page_popup' => '연결된 위키 페이지를 당신의 책에서 지우세요.',
 	'coll-remove_page_tooltip' => '당신의 책에서 이 위키 문서를 제거합니다',
 	'coll-show_collection' => '책 보여주기',
@@ -1265,7 +1268,7 @@ $messages['nn'] = array(
 	'coll-add_category' => 'Legg til kategori',
 	'coll-add_category_popup' => 'Legg til i boka di wikisider i opplenka kategoriar',
 	'coll-add_category_tooltip' => 'Legg til alle sidene i denne kategorien til boka di',
-	'coll-add_page' => 'Legg til wikisida',
+	'coll-add_page' => 'Legg til wikisida i boka',
 	'coll-add_page_popup' => 'Legg til lenkja wikiside i boka di',
 	'coll-add_page_tooltip' => 'Legg til den noverande wikisida til boka di',
 	'coll-bookscategory' => 'Bøker',
@@ -1281,7 +1284,7 @@ $messages['nn'] = array(
 	'coll-n_pages' => '{{PLURAL:$1|éi sida|$1 sider}}',
 	'coll-popup_help_text' => 'For å deaktivera denne funksjonen, klikk «blank ut bok» i boksen «lag ei bok»',
 	'coll-printable_version_pdf' => 'PDF-versjon',
-	'coll-remove_page' => 'Fjern wikisida',
+	'coll-remove_page' => 'Fjern wikisida frå boka',
 	'coll-remove_page_popup' => 'Fjern lenkja wikiside frå boka di',
 	'coll-remove_page_tooltip' => 'Fjern den noverande wikisida frå boka di',
 	'coll-show_collection' => 'Vis bok',
