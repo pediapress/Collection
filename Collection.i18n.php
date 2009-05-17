@@ -5311,6 +5311,11 @@ $messages['roa-tara'] = array(
 	'coll-exclusion_category_title' => 'Esclude in stambe',
 	'coll-print_template_prefix' => 'Stambe',
 	'coll-unknown_subpage_title' => 'Sottopàgene scanusciute',
+	'coll-download' => 'Scareche',
+	'coll-show' => 'Fà vedè',
+	'coll-title' => 'Titele:',
+	'coll-subtitle' => 'Sotto titele:',
+	'coll-contents' => 'Condenute',
 );
 
 /** Russian (Русский)

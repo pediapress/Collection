@@ -1268,7 +1268,7 @@ $messages['nn'] = array(
 	'coll-add_category' => 'Legg til kategori',
 	'coll-add_category_popup' => 'Legg til i boka di wikisider i opplenka kategoriar',
 	'coll-add_category_tooltip' => 'Legg til alle sidene i denne kategorien til boka di',
-	'coll-add_page' => 'Legg til wikisida i boka',
+	'coll-add_page' => 'Legg til wikisida i bok',
 	'coll-add_page_popup' => 'Legg til lenkja wikiside i boka di',
 	'coll-add_page_tooltip' => 'Legg til den noverande wikisida til boka di',
 	'coll-bookscategory' => 'Bøker',
@@ -1466,12 +1466,16 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'coll-add_category' => "Aggiunge 'na categorije",
-	'coll-add_page' => "Aggiunge 'na pàgene de Uicchi",
+	'coll-add_page' => "Aggiunge 'na pàgene a 'u libbre",
+	'coll-bookscategory' => 'Libbre',
+	'coll-clear_collection' => "Pulizze 'u libbre",
 	'coll-create_a_book' => "Ccreje 'nu libbre",
 	'coll-help_collections' => "Aiute sus a 'u libbre",
+	'coll-helppage' => 'Help:Libbre',
 	'coll-load_collection' => "Careche 'nu libbre",
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàgene|pàggene}}',
-	'coll-remove_page' => "Live 'na pàgene de Uicchi",
+	'coll-printable_version_pdf' => 'Versione in PDF',
+	'coll-remove_page' => "Live 'na pàgene da 'u libbre",
 	'coll-show_collection' => "Fà vedè 'nu libbre",
 );
 
