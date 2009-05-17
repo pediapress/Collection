@@ -87,6 +87,11 @@ $aliases['gsw'] = array(
 	'Book' => array( 'Sammlig' ),
 );
 
+/** Gujarati (ગુજરાતી) */
+$aliases['gu'] = array(
+	'Book' => array( 'પુસ્તક', 'સંગ્રહ' ),
+);
+
 /** Hebrew (עברית) */
 $aliases['he'] = array(
 	'Book' => array( 'ספר', 'אוסף' ),
