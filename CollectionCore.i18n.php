@@ -520,7 +520,7 @@ $messages['fa'] = array(
  */
 $messages['fi'] = array(
 	'coll-add_category' => 'Lisää luokkaan',
-	'coll-add_page' => 'Lisää wikisivu',
+	'coll-add_page' => 'Lisää sivu kirjaan',
 	'coll-bookscategory' => 'Kirjat',
 	'coll-clear_collection' => 'Tyhjennä kirja',
 	'coll-clear_collection_confirm' => 'Haluatko varmasti tyhjentää kirjasi?',
@@ -530,7 +530,7 @@ $messages['fi'] = array(
 	'coll-load_collection' => 'Lataa kirja',
 	'coll-n_pages' => '$1 {{PLURAL:$1|sivu|sivua}}',
 	'coll-printable_version_pdf' => 'PDF-versio',
-	'coll-remove_page' => 'Poista wikisivu',
+	'coll-remove_page' => 'Poista sivu kirjasta',
 	'coll-show_collection' => 'Näytä kirja',
 );
 
