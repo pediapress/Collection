@@ -49,7 +49,7 @@ $aliases['de'] = array(
 
 /** Lower Sorbian (Dolnoserbski) */
 $aliases['dsb'] = array(
-	'Book' => array( 'Knigły', 'zběrka' ),
+	'Book' => array( 'Knigły', 'Zběrka' ),
 );
 
 /** Greek (Ελληνικά) */
@@ -104,7 +104,7 @@ $aliases['hr'] = array(
 
 /** Upper Sorbian (Hornjoserbsce) */
 $aliases['hsb'] = array(
-	'Book' => array( 'Kniha', 'zběrka' ),
+	'Book' => array( 'Kniha', 'Zběrka' ),
 );
 
 /** Hungarian (Magyar) */
@@ -169,7 +169,7 @@ $aliases['nds-nl'] = array(
 
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
-	'Book' => array( 'Collectie', 'Verzameling' ),
+	'Book' => array( 'Boek', 'Collectie', 'Verzameling' ),
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
