@@ -4684,6 +4684,7 @@ Kontakt MediaWiki-administratoren din.',
  * @author Harald Khan
  * @author Jon Harald Søby
  * @author Laaknor
+ * @author Nghtwlkr
  */
 $messages['no'] = array(
 	'coll-desc' => '[[Special:Book|Lag bøker]]',
@@ -4691,6 +4692,7 @@ $messages['no'] = array(
 	'coll-collections' => 'Bøker',
 	'coll-exclusion_category_title' => 'Ekskluder ved utskrift',
 	'coll-print_template_prefix' => 'Skriv ut',
+	'coll-print_template_pattern' => '$1/Skriv ut',
 	'coll-unknown_subpage_title' => 'Ukjent underside',
 	'coll-unknown_subpage_text' => "Denne undersiden av ''[[Special:Book|Bok]]'' finnes ikke",
 	'coll-download_as' => 'Last ned som $1',
@@ -4765,6 +4767,8 @@ Merk:
 * Ikke fornøyd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjelpsiden om samlinger]] for muligheter til å forbedre den.',
 	'coll-notfound_title' => 'Bok ikke funnet',
 	'coll-notfound_text' => 'Kunne ikke finne bokside.',
+	'coll-download_notfound_title' => 'Fil ikke funnet',
+	'coll-download_notfound_text' => 'Filen du forsøker å laste ned finnes ikke: Kanskje den har blitt slettet eller trenger å bli regenerert.',
 	'coll-is_cached' => '<ul><li>En mellomlagret versjon av dokumentet ble funnet, så ingen rendrering var nødvendig. <a href="$1">Tving ny rendrering.</a></li></ul>',
 	'coll-excluded-templates' => '* Maler i kategorien [[:Category:$1|$1]] har blitt utelatt.',
 	'coll-blacklisted-templates' => '* Maler på svartelisten ([[:$1]]) har blitt utelatt.',
@@ -4778,6 +4782,9 @@ Merk:
 Kontakt din MediaWiki-administrator.',
 	'coll-license' => 'Lisens',
 	'coll-return_to' => 'Tilbake til [[:$1]]',
+	'coll-more_info' => 'Vis mer informasjon',
+	'coll-hide_info' => 'Skjul informasjon',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestillingsinformasjon PediaPress',
 );
 
 /** Occitan (Occitan)
@@ -6935,8 +6942,10 @@ Pads pluik nonik kanons paläükön.',
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'coll-your_book' => 'אײַער בוך',
 	'coll-download_title' => 'אראָפלאָדן',
 	'coll-download' => 'אַראָפלאָדן',
+	'coll-cancel' => 'מבטל זײַן',
 	'coll-update' => 'דערהײַנטיקן',
 	'coll-rendering_status' => '<strong>סטאַטוס:</strong> $1',
 	'coll-rendering_article' => '(וויקי בלאַט: $1)',
