@@ -1294,21 +1294,33 @@ $messages['nn'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  * @author Laaknor
+ * @author Nghtwlkr
  */
 $messages['no'] = array(
 	'coll-add_category' => 'Legg til kategori',
-	'coll-add_page' => 'Legg til wikiside',
+	'coll-add_category_popup' => 'Legg til wikisider i den lenkede kategorien i din bok',
+	'coll-add_category_tooltip' => 'Legg til alle wikisider i denne kategorien til din bok',
+	'coll-add_page' => 'Legg til side i din bok',
+	'coll-add_page_popup' => 'Legg til lenket wikiside i din bok',
+	'coll-add_page_tooltip' => 'Legg til den nåværende wikisiden i din bok',
 	'coll-bookscategory' => 'Bøker',
 	'coll-clear_collection' => 'Tøm bok',
 	'coll-clear_collection_confirm' => 'Vil du virkelig tømme boka?',
+	'coll-clear_collection_tooltip' => 'Fjern alle wikisider fra din nåværende bok',
 	'coll-create_a_book' => 'Opprett en bok',
 	'coll-help_collections' => 'Bokhjelp',
+	'coll-help_collections_tooltip' => 'Vis hjelp for bokverktøyet',
 	'coll-helppage' => 'Help:Bøker',
 	'coll-load_collection' => 'Last bok',
+	'coll-load_collection_tooltip' => 'Last denne boka som din nåværende bok',
 	'coll-n_pages' => '$1 {{PLURAL:$1|side|sider}}',
+	'coll-popup_help_text' => 'For å deaktivere denne funksjonen, klikk «Tøm bok» i boksen «Lag en bok»',
 	'coll-printable_version_pdf' => 'PDF-versjon',
-	'coll-remove_page' => 'Fjern wikiside',
+	'coll-remove_page' => 'Fjern wikiside fra boka',
+	'coll-remove_page_popup' => 'Fjern lenket wikiside fra din bok',
+	'coll-remove_page_tooltip' => 'Fjern den nåværende wikisiden fra din bok',
 	'coll-show_collection' => 'Vis bok',
+	'coll-show_collection_tooltip' => 'Trykk for å endre/laste ned/bestille din bok',
 );
 
 /** Occitan (Occitan)
