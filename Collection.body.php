@@ -375,7 +375,7 @@ class SpecialCollection extends SpecialPage {
 		);
 		$where = array(
 			'cl_from=page_id',
-			'cl_to' => $title->getDBKey(),
+			'cl_to' => $title->getDBkey(),
 		);
 		$res = $db->select( $tables, $fields, $where, __METHOD__, $options );
 		$members = array();
