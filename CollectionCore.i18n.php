@@ -815,12 +815,13 @@ $messages['ia'] = array(
 
 /** Indonesian (Bahasa Indonesia)
  * @author IvanLanin
+ * @author Rex
  */
 $messages['id'] = array(
 	'coll-add_category' => 'Tambah kategori',
 	'coll-add_category_popup' => 'Tambahkan halaman wiki pada kategori terkait buku Anda',
 	'coll-add_category_tooltip' => 'Tambahkan semua halaman wiki pada kategori ini ke buku Anda',
-	'coll-add_page' => 'Tambahkan halaman wiki',
+	'coll-add_page' => 'Tambahkan halaman ke buku',
 	'coll-add_page_popup' => 'Tambahkan halaman wiki terkait ke buku Anda',
 	'coll-add_page_tooltip' => 'Tambahkan halaman wiki ini ke buku Anda',
 	'coll-bookscategory' => 'Buku',
@@ -836,7 +837,7 @@ $messages['id'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|halaman|halaman}}',
 	'coll-popup_help_text' => 'Untuk menon-aktifkan fitur ini, klik "Bersihkan buku" di kotak "Buat buku"',
 	'coll-printable_version_pdf' => 'Versi PDF',
-	'coll-remove_page' => 'Buang halaman wiki',
+	'coll-remove_page' => 'Buang halaman dari buku',
 	'coll-remove_page_popup' => 'Buang halaman wiki terkait dari buku Anda',
 	'coll-remove_page_tooltip' => 'Buang halaman wiki ini dari buku Anda',
 	'coll-show_collection' => 'Tampilkan buku',

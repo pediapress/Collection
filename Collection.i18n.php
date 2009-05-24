@@ -2163,6 +2163,7 @@ Por favor, contacte co seu administrador MediaWiki.',
  * @author Omnipaedista
  */
 $messages['grc'] = array(
+	'coll-download_title' => 'καταφορτίζειν',
 	'coll-download' => 'Καταφόρτισις',
 	'coll-remove' => 'Άφαιρεῖν',
 	'coll-show' => 'Δεικνύναι',
@@ -5546,6 +5547,13 @@ $messages['sah'] = array(
 	'coll-more_info' => 'Өссө эбии көрдөр',
 	'coll-hide_info' => 'Кистээ',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress сакаастааһын туһунан',
+);
+
+/** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
+ * @author OC Ripper
+ */
+$messages['sh'] = array(
+	'coll-show' => 'Prikaži',
 );
 
 /** Slovak (Slovenčina)
