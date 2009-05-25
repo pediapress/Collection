@@ -292,6 +292,23 @@ $messages['cs'] = array(
 	'coll-show_collection_tooltip' => 'Kliknutím si můžete knihu upravit/stáhnout/objednat',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'coll-add_category' => 'Ychwanegu categori',
+	'coll-bookscategory' => 'Llyfrau',
+	'coll-create_a_book' => 'Llunio llyfr',
+	'coll-help_collections' => 'Cymorth - llyfrau',
+	'coll-helppage' => 'Cymorth:Llyfrau',
+	'coll-load_collection' => 'Llwytho llyfr',
+	'coll-load_collection_tooltip' => "Llwytho'r llyfr hwn fel eich llyfr cyfredol",
+	'coll-n_pages' => '$1 {{PLURAL:$1|tudalen|dudalen|dudalen|tudalen|thudalen|o dudalennau}}',
+	'coll-printable_version_pdf' => 'Fersiwn PDF',
+	'coll-remove_page' => "Tynnu'r dudalen o'r llyfr",
+	'coll-show_collection' => 'Dangos y llyfr',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  * @author Umherirrender
@@ -741,7 +758,7 @@ $messages['hu'] = array(
 	'coll-add_category' => 'Kategória hozzáadása',
 	'coll-add_category_popup' => 'A hivatkozott kategória lapjainak hozzáadása a könyvhöz',
 	'coll-add_category_tooltip' => 'Ezen kategória összes lapjának hozzáadása a könyvhöz',
-	'coll-add_page' => 'Lap hozzáadása',
+	'coll-add_page' => 'Lap hozzáadása a könyvhöz',
 	'coll-add_page_popup' => 'A hivatkozott lap hozzáadása a könyvhöz',
 	'coll-add_page_tooltip' => 'A jelenlegi lap hozzáadása a könyvhöz',
 	'coll-bookscategory' => 'Könyvek',
@@ -757,7 +774,7 @@ $messages['hu'] = array(
 	'coll-n_pages' => '{{PLURAL:$1|egy|$1}} lap',
 	'coll-popup_help_text' => 'A funkció kikapcsolásához kattints a „Könyv kiürítése” gombra a „Könyv készítése” dobozban',
 	'coll-printable_version_pdf' => 'PDF változat',
-	'coll-remove_page' => 'Lap eltávolítása',
+	'coll-remove_page' => 'Lap eltávolítása a könyvből',
 	'coll-remove_page_popup' => 'A hivatkozott lap eltávolítása a könyvből',
 	'coll-remove_page_tooltip' => 'A jelenlegi lap eltávolítása a könyvből',
 	'coll-show_collection' => 'Könyv mutatása',
