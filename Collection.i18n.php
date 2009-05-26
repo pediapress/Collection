@@ -817,7 +817,7 @@ Aquesta pàgina no funcionarà correctament si no l'activeu.</strong>",
 	'coll-overwrite_title' => 'La pàgina existeix. Voleu substituir-la?',
 	'coll-overwrite_text' => 'Ja existeix una pàgina amb el mateix nom [[:$1]].
 Voleu substituir-la amb el vostre llibre?',
-	'coll-yes' => 'S&iacute;',
+	'coll-yes' => 'Sí',
 	'coll-no' => 'No',
 	'coll-load_overwrite_text' => "Ja teniu algunes pàgines al vostre llibre.
 Voleu sobreescriure el vostre llibre actual, annexar el nou contingut, o canceŀlar la càrrega d'aquest llibre?",
