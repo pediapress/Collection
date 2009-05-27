@@ -445,6 +445,7 @@ $messages['eo'] = array(
 	'coll-remove_page_popup' => 'Forigi ligitan vikian paĝon de via libro',
 	'coll-remove_page_tooltip' => 'Forigi la nunan vikian paĝon de via libro',
 	'coll-show_collection' => 'Montri libron',
+	'coll-show_collection_tooltip' => 'Klaku redakti/elŝuti/mendi vian libron',
 );
 
 /** Spanish (Español)
