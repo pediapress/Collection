@@ -94,6 +94,9 @@ $wgCollectionFormats = array(
 
 $wgCollectionPortletForLoggedInUsersOnly = false;
 
+$wgCollectionSaveAsUserPageRight = null;
+$wgCollectionSaveAsCommunityPageRight = 'autoconfirmed';
+
 $wgCollectionNavPopups = false;
 
 # ==============================================================================
