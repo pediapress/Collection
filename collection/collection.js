@@ -128,21 +128,21 @@ function set_sorting(items_string) {
 }
 
 function update_save_button() {
-	if (!jQuery('#saveButton').get(0)) {
+	if (!jQuery('#saveButton').length) {
 		return;
 	}
-	if (jQuery('#emptyCollection').get(0)) {
+	if (jQuery('#emptyCollection').length) {
 		jQuery('#saveButton').attr('disabled', 'disabled');
 		return;
 	}
-	if (jQuery('#personalCollType:checked').val()) {
+	if (!jQuery('#communityCollTitle').length || jQuery('#personalCollType:checked').val()) {
 		jQuery('#personalCollTitle').attr('disabled', '');
 		jQuery('#communityCollTitle').attr('disabled', 'disabled');
 		if (!jQuery.trim(jQuery('#personalCollTitle').val())) {
 			jQuery('#saveButton').attr('disabled', 'disabled');
 			return;
 		}
-	} else if (jQuery('#communityCollType:checked').val()) {
+	} else if (!jQuery('#personalCollTitle').length || jQuery('#communityCollType:checked').val()) {
 		jQuery('#communityCollTitle').attr('disabled', '');
 		jQuery('#personalCollTitle').attr('disabled', 'disabled');
 		if (!jQuery.trim(jQuery('#communityCollTitle').val())) {
@@ -167,7 +167,7 @@ function refresh_list(xhr) {
 	jQuery('#collectionListContainer').html(xhr.responseText);
 	jQuery('.makeVisible').css('display', 'inline');
 	make_sortable();
-	if (jQuery('#emptyCollection').get(0)) {
+	if (jQuery('#emptyCollection').length) {
 		jQuery('#downloadButton').attr('disabled', 'disabled');
 		jQuery('input.order').attr('disabled', 'disabled');
 	} else {
@@ -194,7 +194,7 @@ jQuery(function() {
 		alert('ERROR: Version mismatch between Javascript and PHP code. Contact admin to fix the installation of Collection extension for MediaWiki.');
 		return;
 	}
-	if (jQuery('#collectionList').get(0)) {
+	if (jQuery('#collectionList').length) {
 		jQuery('.makeVisible').css('display', 'inline');
 		window.coll_create_chapter = create_chapter;
 		window.coll_remove_item = remove_item;
