@@ -60,26 +60,26 @@ $listTemplate->execute();
 		<?php
 $partnerData = $this->data['podpartners']['pediapress'];
 $this->msgWiki('coll-book_text');
-    ?>
-    <div>
-      <div style="float:right">
-        <form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'post_zip/')) ?>" method="post">
-          <input type="hidden" name="partner" value="pediapress" />
-          <input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>" class="order" <?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
-        </form>
-      </div>
+		?>
+		<div>
+			<div style="float:right">
+				<form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'post_zip/')) ?>" method="post">
+					<input type="hidden" name="partner" value="pediapress" />
+					<input type="submit" value="<?php echo wfMsgHtml('coll-order_from_pp', htmlspecialchars($partnerData['name'])) ?>" class="order" <?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
+				</form>
+			</div>
 		<?php
 $t = Title::newFromText(wfMsgForContent('coll-order_info_article'));
 $a = new Article($t);
 if ( $a->exists() ) { ?>
-      <div id="coll-more_info" style="display:none">
-        <a href="javascript:void(0)" onclick="coll_toggle_order_info(true);"><?php $this->msgWiki('coll-more_info') ?></a>
-      </div>
-      <div id="coll-hide_info" style="display:none">
-        <a href="javascript:void(0)" onclick="coll_toggle_order_info(false);"><?php $this->msgWiki('coll-hide_info') ?></a>
-      </div>
+			<div id="coll-more_info" style="display:none">
+				<a href="javascript:void(0)" onclick="coll_toggle_order_info(true);"><?php $this->msgWiki('coll-more_info') ?></a>
+			</div>
+			<div id="coll-hide_info" style="display:none">
+				<a href="javascript:void(0)" onclick="coll_toggle_order_info(false);"><?php $this->msgWiki('coll-hide_info') ?></a>
+			</div>
 <?php } else { ?>
-      <a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?></a>
+			<a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?></a>
 <?php } ?>
 		</div>
 <?php
@@ -94,55 +94,64 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
 ?>
 		</div>
 <?php } ?>
-  </div>
+	</div>
 
 	<div style="margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 		<h2><span class="mw-headline"><?php $this->msg('coll-download_title') ?></span></h2>
-    <?php if (count($this->data['formats']) == 1) {
-      $writer = array_rand($this->data['formats']);
-      echo $GLOBALS['wgParser']->parse(
-        wfMsgNoTrans('coll-download_as_text', $this->data['formats'][$writer]),
-        $GLOBALS['wgTitle'],
-        $GLOBALS['wgOut']->parserOptions(),
-        true
-      )->getText();
-      $buttonLabel = wfMsgHtml('coll-download_as', htmlspecialchars($this->data['formats'][$writer]));
-    } else {
-      $this->msgWiki('coll-download_text');
-      $buttonLabel = wfMsgHtml('coll-download');
-    } ?>
+		<?php if (count($this->data['formats']) == 1) {
+			$writer = array_rand($this->data['formats']);
+			echo $GLOBALS['wgParser']->parse(
+				wfMsgNoTrans('coll-download_as_text', $this->data['formats'][$writer]),
+				$GLOBALS['wgTitle'],
+				$GLOBALS['wgOut']->parserOptions(),
+				true
+			)->getText();
+			$buttonLabel = wfMsgHtml('coll-download_as', htmlspecialchars($this->data['formats'][$writer]));
+		} else {
+			$this->msgWiki('coll-download_text');
+			$buttonLabel = wfMsgHtml('coll-download');
+		} ?>
 		<form id="downloadForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'render/')) ?>" method="post">
-      <table style="width:100%; background-color: transparent;"><tr><td><tbody><tr><td>
+			<table style="width:100%; background-color: transparent;"><tr><td><tbody><tr><td>
 			<?php if (count($this->data['formats']) == 1) { ?>
 				<input type="hidden" name="writer" value="<?php echo htmlspecialchars($writer) ?>" />
 			<?php } else { ?>
-        <label for="formatSelect"><?php $this->msg('coll-format_label') ?></label>
-        <select id="formatSelect" name="writer">
-          <?php foreach ($this->data['formats'] as $writer => $name) { ?>
-          <option value="<?php echo htmlspecialchars($writer) ?>"><?php echo htmlspecialchars($name) ?></option>
-          <?php	} ?>
-        </select>
+				<label for="formatSelect"><?php $this->msg('coll-format_label') ?></label>
+				<select id="formatSelect" name="writer">
+					<?php foreach ($this->data['formats'] as $writer => $name) { ?>
+					<option value="<?php echo htmlspecialchars($writer) ?>"><?php echo htmlspecialchars($name) ?></option>
+					<?php	} ?>
+				</select>
 			<?php } ?>
-      </td><td style="text-align:right; vertical-align:bottom;">
-      <input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
-      </td></tr></tbody></table>
+			</td><td style="text-align:right; vertical-align:bottom;">
+			<input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
+			</td></tr></tbody></table>
 		</form>
 	</div>
 
-  <?php if ($GLOBALS['wgEnableWriteAPI']) { ?>
+	<?php
+		if ($GLOBALS['wgUser']->isLoggedIn()) {
+			$showLoginInfo = false;
+			$canSaveUserPage = (empty($GLOBALS['wgCollectionSaveAsUserPageRight']) || $GLOBALS['wgUser']->isAllowed($GLOBALS['wgCollectionSaveAsUserPageRight']));
+			$canSaveCommunityPage = (empty($GLOBALS['wgCollectionSaveAsCommunityPageRight']) || $GLOBALS['wgUser']->isAllowed($GLOBALS['wgCollectionSaveAsCommunityPageRight']));
+		} else {
+			$showLoginInfo = (empty($GLOBALS['wgCollectionSaveAsCommunityPageRight']) || empty($GLOBALS['wgCollectionSaveAsUserPageRight']));
+		}
+		if ($GLOBALS['wgEnableWriteAPI'] && ($showLoginInfo || $canSaveUserPage || $canSaveCommunityPage)) {
+	?>
 	<div id="coll-savebox" style="margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 		<h2><span class="mw-headline"><?php $this->msg('coll-save_collection_title') ?></span></h2>
-		<?php if ($GLOBALS['wgUser']->isLoggedIn()) { ?>
-		<?php $this->msgWiki('coll-save_collection_text') ?>
 		<?php
-			$bookname = wfMsgForContent('coll-collections');
+				if (!$showLoginInfo) {
+					$this->msgWiki('coll-save_collection_text');
+					$bookname = wfMsgForContent('coll-collections');
+					$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
 		?>
 			<form id="saveForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'save_collection/')) ?>" method="post">
-			      	<table style="width:100%; background-color: transparent;"><tr><td>
-				<?php
-					if (!$GLOBALS['wgUser']->isNewbie()) { 
-						$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
-				?>
+				<table style="width:100%; background-color: transparent;"><tbody>
+				<?php if ($canSaveUserPage) { ?>
+				<tr><td>
+				<?php if ($canSaveCommunityPage) { ?>
 				<input id="personalCollType" type="radio" name="colltype" value="personal" checked="checked" />
 				<?php } else { ?>
 				<input type="hidden" name="colltype" value="personal" />
@@ -152,22 +161,23 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
 				<td style="text-align:right;">
 				<input id="personalCollTitle" type="text" name="pcollname" />
 				</td></tr>
-				<?php
-					if (!$GLOBALS['wgUser']->isNewbie()) { 
-						$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
-				?>
+				<?php } // if ($canSaveUserPage) ?>
+				<?php if ($canSaveCommunityPage) { ?>
 				<tr><td>
+				<?php if ($canSaveUserPage) { ?>
 				<input id="communityCollType" type="radio" name="colltype" value="community" />
+				<?php } else { ?>
+				<input type="hidden" name="colltype" value="community" />
+				<?php } ?>
 				<label for="communityCollTitle"><a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Prefixindex', 'from=' . $bookname . '/&namespace=' . $communityCollNS)) ?>"><?php echo htmlspecialchars(Title::makeTitle($communityCollNS, $bookname)->getPrefixedText() . '/') ?></a></label>
 				</td>
 				<td style="text-align:right;">
 				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled" />
 				</td></tr>
-				<?php } // autoconfirmed ?>
+				<?php } // if ($canSaveCommunityPage) ?>
 				<tr><td>&nbsp;</td><td style="text-align:right;">
 				<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
-				</tr>
-				</table>
+				</tr></tbody></table>
 			</form>
 
 		<?php } else {
@@ -176,7 +186,7 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
 		$this->msgWiki('coll-save_category');
 		?>
 	</div>
-  <?php } ?>
+	<?php } ?>
 
 </div>
 
@@ -370,12 +380,12 @@ $title_string = wfMsgForContent('coll-template_blacklist_title');
 $t = Title::newFromText($title_string);
 $a = new Article($t);
 if ( $a->exists() ) {
-  echo $GLOBALS['wgParser']->parse(
-    wfMsgNoTrans('coll-blacklisted-templates', $title_string),
-    $GLOBALS['wgTitle'],
-    $GLOBALS['wgOut']->parserOptions(),
-    true
-  )->getText();
+	echo $GLOBALS['wgParser']->parse(
+		wfMsgNoTrans('coll-blacklisted-templates', $title_string),
+		$GLOBALS['wgTitle'],
+		$GLOBALS['wgOut']->parserOptions(),
+		true
+	)->getText();
 }
 if ($this->data['return_to']) {
 	// We are doing this the hard way (i.e. via the HTML detour), to prevent
