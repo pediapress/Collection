@@ -159,7 +159,7 @@ $aliases['mk'] = array(
 
 /** Maltese (Malti) */
 $aliases['mt'] = array(
-	'Book' => array( 'Kollezzjoni' ),
+	'Book' => array( 'Ktieb', 'Kollezzjoni' ),
 );
 
 /** Nedersaksisch (Nedersaksisch) */

@@ -2286,6 +2286,30 @@ Hiiwyys:
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress Bstellinformation',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author Ashok modhvadia
+ */
+$messages['gu'] = array(
+	'coll-desc' => '[[ખાસ:પુસ્તક|પુસ્તક બનાવો]]',
+	'coll-collection' => 'પુસ્તક',
+	'coll-collections' => 'પુસ્તકો',
+	'coll-exclusion_category_title' => 'છપાઇમાં સામેલ નહીં',
+	'coll-print_template_prefix' => 'છપાઇ',
+	'coll-print_template_pattern' => '$1/છપાઇ',
+	'coll-unknown_subpage_title' => 'અજ્ઞાત ઉપપાનું',
+	'coll-unknown_subpage_text' => '[[ખાસ:પુસ્તક|પુસ્તક]]નું આ ઉપપાનું ઉપલબ્ધ નથી',
+	'coll-download_as' => '$1 તરીકે ડાઉનલોડ કરો',
+	'coll-noscript_text' => '<h1>જાવાસ્ક્રિપ્ટ જરૂરી!</h1>
+<strong>તમારું બ્રાઉઝર જાવાસ્ક્રિપ્ટને સમર્થન કરતું નથી અથવાતો જાવાસ્ક્રિપ્ટ નિષ્ક્રિય કરેલ છે.</br>
+જ્યાં સુધી જાવાસ્ક્રિપ્ટ સક્રિય કરાશે નહીં ત્યાં સુધી આ પાનું બરાબર કામ આપશે નહીં.</strong>',
+	'coll-intro_text' => 'વિકિ પાનાઓની તમારી વ્યક્તિગત પસંદગી કરો અને ગોઠવો.<br />વધુ જાણકારી માટે [[{{MediaWiki:Coll-helppage}}]] જુઓ.',
+	'coll-savedbook_template' => 'સાચવેલ_પુસ્તક',
+	'coll-your_book' => 'તમારૂં પુસ્તક',
+	'coll-download_title' => 'ડાઉનલોડ',
+	'coll-download_text' => 'વૃત્તાન્ત ડાઉનલોડ કરવા માટે શૈલી પસંદ કરો અને બટન પર ક્લિક કરો.',
+	'coll-download_as_text' => '$1 શૈલીમાં વૃત્તાન્ત ડાઉનલોડ કરવા માટે બટન ક્લિક કરો.',
+);
+
 /** Manx (Gaelg)
  * @author MacTire02
  */
