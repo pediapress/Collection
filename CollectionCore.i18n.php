@@ -297,16 +297,29 @@ $messages['cs'] = array(
  */
 $messages['cy'] = array(
 	'coll-add_category' => 'Ychwanegu categori',
+	'coll-add_category_popup' => "Ychwanegu'r tudalennau wici yn y categori cysylltiedig at eich llyfr",
+	'coll-add_category_tooltip' => 'Ychwanegu holl dudalennau wici y categori hwn at eich llyfr',
+	'coll-add_page' => "Ychwanegu'r dudalen at y llyfr",
+	'coll-add_page_popup' => "Ychwanegu'r dudalen wici cysylltiedig at eich llyfr",
+	'coll-add_page_tooltip' => "Ychwanegu'r dudalen wici presennol at eich llyfr",
 	'coll-bookscategory' => 'Llyfrau',
+	'coll-clear_collection' => "Clirio'r llyfr",
+	'coll-clear_collection_confirm' => "Ydych chi wir am glirio'ch llyfr yn llwyr?",
+	'coll-clear_collection_tooltip' => "Clirio'r holl dudalennau wici o'ch llyfr presennol",
 	'coll-create_a_book' => 'Llunio llyfr',
 	'coll-help_collections' => 'Cymorth - llyfrau',
+	'coll-help_collections_tooltip' => 'Dangos y cymorth am y teclyn llunio llyfr',
 	'coll-helppage' => 'Cymorth:Llyfrau',
 	'coll-load_collection' => 'Llwytho llyfr',
 	'coll-load_collection_tooltip' => "Llwytho'r llyfr hwn fel eich llyfr cyfredol",
 	'coll-n_pages' => '$1 {{PLURAL:$1|tudalen|dudalen|dudalen|tudalen|thudalen|o dudalennau}}',
+	'coll-popup_help_text' => 'Er mwyn analluogi\'r nodwedd hon cliciwch "Clirio\'r llyfr" yn y blwch "Llunio llyfr"',
 	'coll-printable_version_pdf' => 'Fersiwn PDF',
 	'coll-remove_page' => "Tynnu'r dudalen o'r llyfr",
+	'coll-remove_page_popup' => "Tynnu'r dudalen wici cysylltiedig o'ch llyfr",
+	'coll-remove_page_tooltip' => "Tynnu'r dudalen wici presennol o'ch llyfr",
 	'coll-show_collection' => 'Dangos y llyfr',
+	'coll-show_collection_tooltip' => 'Cliciwch er mwyn golygu/islwytho/archebu eich llyfr',
 );
 
 /** German (Deutsch)
