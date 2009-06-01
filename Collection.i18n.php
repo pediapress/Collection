@@ -2269,7 +2269,7 @@ Hiiwyys:
 	'coll-notfound_text' => 'Dyyni Buech het nit chenne gfunde wäre.',
 	'coll-download_notfound_title' => 'Datei nit gfunde',
 	'coll-download_notfound_text' => 'D Datei, wu Du versuechsch abezlade, git s nit: Villicht isch si glescht wore oder si muess nej generiert wäre.',
-	'coll-is_cached' => '<ul><li>S git e Version vum Dokumänt, wu zwischegspycheret isch, so dass kein Rendering notwändig gsi isch. <a href="$1">Nej-Rendering erzwinge.</a></li></ul>',
+	'coll-is_cached' => '<ul><li>S git e Version vum Dokumänt, wu zwischegspycheret isch, so dass kei Erstellig notwändig gsi isch (<a href="$1">Nejerstellig erzwinge</a>).</li></ul>',
 	'coll-excluded-templates' => '* Vorlage us dr Kategorii [[:Category:$1|$1]] sin usgschlosse wore.',
 	'coll-blacklisted-templates' => '* Vorlage vu dr Schwarze Lischt [[:$1]] sin usgschlosse wore.',
 	'coll-return_to_collection' => 'Zruck zue <a href="$1">$2</a>',
