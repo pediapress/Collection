@@ -1377,7 +1377,7 @@ $messages['eo'] = array(
 	'coll-print_template_prefix' => 'Printi',
 	'coll-print_template_pattern' => '$1/Printi',
 	'coll-unknown_subpage_title' => 'Nekonata subpaĝo',
-	'coll-unknown_subpage_text' => 'Ĉi tiu subpaĝo de [[Special:Book:Libro]] ne ekzistas',
+	'coll-unknown_subpage_text' => 'Ĉi tiu subpaĝo de [[Special:Book|Libro]] ne ekzistas',
 	'coll-download_as' => 'Elŝuti kiel $1',
 	'coll-noscript_text' => '<h1>JavaScript-o estas deviga!<h1>
 <strong>Via retumilo ne subtenas JavaScript-on aŭ JavaScript-o estis malŝaltita.
@@ -1454,6 +1454,7 @@ Notoj:
 	'coll-notfound_title' => 'Libro ne trovita',
 	'coll-notfound_text' => 'Ne eblas trovi libran paĝon.',
 	'coll-download_notfound_title' => 'Dosiero ne trovita',
+	'coll-download_notfound_text' => 'La dosiero kiun vi celas elŝuti ne ekzistas. Eble ĝi estis forigita kaj bezonas esti regenerata.',
 	'coll-is_cached' => '<ul><li>Kaŝmemora versio de la dokumento estis trovita, tial bildigado ne bezonis.<a href="$1">Devigi re-bildigadon.</a></li></ul>',
 	'coll-excluded-templates' => '* Ŝablonoj en kategorio [[:Category:$1|$1]] estis ekskluzivita.',
 	'coll-blacklisted-templates' => '* Ŝablonoj en nigralisto [[:$1]] estis malebligitaj.',
@@ -6813,7 +6814,7 @@ $messages['vi'] = array(
 	'coll-noscript_text' => '<h1>Yêu cầu phải có JavaScript!</h1>
 <strong>Trình duyệt của bạn không hỗ trợ JavaScript hoặc JavaScript đã bị tắt.
 Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaScript.</strong>',
-	'coll-intro_text' => 'Tạo và quản lý bộ sưu tập trang wiki của riêng bạn.<br/>Xem [[{{MediaWiki:Coll-helppage}}]] để biết thêm thông tin.',
+	'coll-intro_text' => 'Tạo và quản lý bộ sưu tập trang wiki của riêng bạn.<br />Xem [[{{MediaWiki:Coll-helppage}}]] để biết thêm thông tin.',
 	'coll-savedbook_template' => 'sách_đã_lưu',
 	'coll-your_book' => 'Sách của bạn',
 	'coll-download_title' => 'Tải về',
