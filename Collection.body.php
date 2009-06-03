@@ -83,7 +83,15 @@ class SpecialCollection extends SpecialPage {
 			case 'clear_collection/':
 				CollectionSession::clearCollection();
 				$wgUser->invalidateCache();
-				$wgOut->redirect( $wgRequest->getVal( 'return_to', SkinTemplate::makeSpecialUrl( 'Book' ) ) );
+				$redirect = $wgRequest->getVal( 'return_to' );
+				$redirectURL = SkinTemplate::makeSpecialUrl( 'Book' );
+				if ( !empty( $redirect ) ) {
+					$title = Title::newFromText( $redirect );
+					if ( !is_null( $title ) ) {
+						$redirectURL = $title->getFullURL();
+					}
+				}
+				$wgOut->redirect( $redirectURL );
 				return;
 			case 'set_titles/':
 				self::setTitles( $wgRequest->getText( 'collectionTitle', '' ), $wgRequest->getText( 'collectionSubtitle', '') );

@@ -250,7 +250,7 @@ class CollectionHooks {
 						   	   			  array( 'onclick' => "if (confirm('$msg')) return true; else return false;",
 						   						 'rel'	 => 'nofollow',
 						   						 'title'   => wfMsg( "coll-clear_collection_tooltip" ) ),
-						   	   			  array( 'return_to' => $wgTitle->getFullURL() ),
+						   	   			  array( 'return_to' => $wgTitle->getPrefixedText() ),
 						   	   			  array( 'known', 'noclasses' )
 						   				)
 							 );
