@@ -662,10 +662,12 @@ $messages['gsw'] = array(
 	'coll-show_collection_tooltip' => 'Druck do go Dyy Buech bearbeite/abelade/bstelle',
 );
 
-/** Manx (Gaelg) */
+/** Manx (Gaelg)
+ * @author MacTire02
+ */
 $messages['gv'] = array(
 	'coll-create_a_book' => 'My haglym',
-	'coll-helppage' => 'Cooney:Çhaglymyn',
+	'coll-helppage' => 'Cooney:Lioaryn',
 );
 
 /** Hebrew (עברית)
