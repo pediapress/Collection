@@ -282,21 +282,21 @@ class CollectionHooks {
 
 		// activate popup check:
 		if ( $wgCollectionNavPopups ) {
-			$addPageText = wfMsg( 'coll-add_page_popup' );
-			$addCategoryText = wfMsg( 'coll-add_category_popup' );
-			$removePageText = wfMsg( 'coll-remove_page_popup' );
-			$popupHelpText = wfMsg( 'coll-popup_help_text' );
+			$addPageText = htmlspecialchars( wfMsg( 'coll-add_page_popup' ), $quote_style=ENT_QUOTES );
+			$addCategoryText = htmlspecialchars( wfMsg( 'coll-add_category_popup', $quote_style=ENT_QUOTES ) );
+			$removePageText = htmlspecialchars( wfMsg( 'coll-remove_page_popup', $quote_style=ENT_QUOTES ) );
+			$popupHelpText = htmlspecialchars( wfMsg( 'coll-popup_help_text', $quote_style=ENT_QUOTES ) );
 			
 			$out .= Xml::element( 'script',
 				array(
 					'type' => $wgJsMimeType,
 				),
-				"wgCollectionNavPopupJSURL	 = '$wgScriptPath/extensions/Collection/collection/Gadget-popups.js?$wgCollectionStyleVersion';
-	wgCollectionNavPopupCSSURL	= '$wgScriptPath/extensions/Collection/collection/Gadget-navpop.css?$wgCollectionStyleVersion';
-	wgCollectionAddPageText	   = '$addPageText';
-	wgCollectionAddCategoryText   = '$addCategoryText';
-	wgCollectionRemovePageText	= '$removePageText';
-	wgCollectionPopupHelpText	 = '$popupHelpText';
+				"wgCollectionNavPopupJSURL = '$wgScriptPath/extensions/Collection/collection/Gadget-popups.js?$wgCollectionStyleVersion';
+	wgCollectionNavPopupCSSURL = '$wgScriptPath/extensions/Collection/collection/Gadget-navpop.css?$wgCollectionStyleVersion';
+	wgCollectionAddPageText = '$addPageText';
+	wgCollectionAddCategoryText = '$addCategoryText';
+	wgCollectionRemovePageText = '$removePageText';
+	wgCollectionPopupHelpText = '$popupHelpText';
 	wgCollectionArticleNamespaces = [ "
 			. implode( ', ', $wgCollectionArticleNamespaces )
 			. "];"
