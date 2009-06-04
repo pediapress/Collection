@@ -57,7 +57,7 @@ class SpecialCollection extends SpecialPage {
 				}
 				$title_url = $wgRequest->getVal( 'arttitle', '' );
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
-				$title = Title::newFromURL( $title_url );
+				$title = Title::newFromText( $title_url );
 				$this->addArticle( $title, $oldid );
 				if ( $oldid == 0 ) {
 					$redirectURL = $title->getFullURL();
@@ -70,7 +70,7 @@ class SpecialCollection extends SpecialPage {
 			case 'remove_article/':
 				$title_url = $wgRequest->getVal( 'arttitle', '' );
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
-				$title = Title::newFromURL( $title_url );
+				$title = Title::newFromText( $title_url );
 				self::removeArticle( $title, $oldid );
 				if ( $oldid == 0 ) {
 					$redirectURL = $title->getFullURL();

@@ -158,7 +158,7 @@ class CollectionHooks {
 			// we need to re-construct a title object from the request, because
 			// the "subpage" (i.e. "par") part has been stripped off by SpecialPage.php
 			// in $wgTitle.
-			$origTitle = Title::newFromUrl($wgRequest->getVal('title'));
+			$origTitle = Title::newFromText($wgRequest->getVal('title'));
 			if( !is_null( $origTitle )
 				&& $origTitle->getLocalUrl() == SkinTemplate::makeSpecialUrl( 'Book' ) ) {
 				return;
