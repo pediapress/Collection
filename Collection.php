@@ -32,7 +32,8 @@ EOT;
 
 $dir = dirname(__FILE__) . '/';
 
-require_once( $dir . 'Version.php' );
+# Extension version
+$wgCollectionVersion = "1.2";
 
 # ==============================================================================
 
