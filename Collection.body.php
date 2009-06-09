@@ -973,7 +973,7 @@ class SpecialCollection extends SpecialPage {
 		curl_setopt($c, CURLOPT_PROXY, $wgHTTPProxy);
 		$userAgent = wfGetAgent();
 		if ( !$userAgent ) $userAgent = "Unknown user agent";
-		curl_setopt( $c, CURLOPT_USERAGENT, $userAgent . " (via MediaWiki/$wgVersion, Collection/$wgCollectionVersion)" );
+		curl_setopt( $c, CURLOPT_USERAGENT, $userAgent . " (via " . Http::userAgent() . ", Collection/$wgCollectionVersion)" );
 		curl_setopt( $c, CURLOPT_POST, true );
 		curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
 		curl_setopt( $c, CURLOPT_HTTPHEADER, array( 'Expect:' ) );
