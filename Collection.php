@@ -143,8 +143,8 @@ function wfAjaxGetCollection() {
 		$collection = array();
 	}
 	$r = new AjaxResponse( $json->encode( array( 'collection' => $collection ) ) );
-  $r->setContentType( 'application/json' );
-  return $r;
+	$r->setContentType( 'application/json' );
+	return $r;
 }
 
 $wgAjaxExportList[] = 'wfAjaxGetCollection';
@@ -157,8 +157,8 @@ function wfAjaxPostCollection( $collection='' ) {
 	$collection = $json->decode( $collection );
 	$_SESSION['wsCollection'] = $collection;
 	$r = new AjaxResponse( $json->encode( array( 'collection' => $collection ) ) );
-  $r->setContentType( 'application/json' );
-  return $r;
+	$r->setContentType( 'application/json' );
+	return $r;
 }
 
 $wgAjaxExportList[] = 'wfAjaxPostCollection';
@@ -169,15 +169,15 @@ function wfAjaxGetMWServeStatus( $collection_id='', $writer='rl' ) {
 		'collection_id' => $collection_id,
 		'writer' => $writer
 	) );
-  $r = new AjaxResponse( $json->encode( $result ) );
-  $r->setContentType( 'application/json' );
-  return $r;
+	$r = new AjaxResponse( $json->encode( $result ) );
+	$r->setContentType( 'application/json' );
+	return $r;
 }
 
 $wgAjaxExportList[] = 'wfAjaxGetMWServeStatus';
 
 function wfAjaxCollectionAddArticle( $namespace=0, $title='', $oldid='' ) {
-  SpecialCollection::addArticleFromName( $namespace, $title, $oldid );
+	SpecialCollection::addArticleFromName( $namespace, $title, $oldid );
 	return '';
 }
 
