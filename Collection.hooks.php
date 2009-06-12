@@ -210,12 +210,12 @@ class CollectionHooks {
 				$addRemoveState = 'addpage';
 				$action  = 'add';
 				$uaction = 'Add';
-        $other_action = 'remove';
+				$other_action = 'remove';
 			} else {
 				$addRemoveState = 'removepage';
 				$action  = 'remove';
 				$uaction = 'Remove';	
-        $other_action = 'add';
+				$other_action = 'add';
 			}
 
 			$out .= Xml::tags( 'li', array( 'id' => "coll-{$action}_page" ),
@@ -272,7 +272,7 @@ class CollectionHooks {
 			),
 			"wgCollectionAddRemoveState = '$addRemoveState';"
 		);
-    $out .= Xml::element( 'script', 
+		$out .= Xml::element( 'script', 
 			array(
 				'type' => $wgJsMimeType,
 				'src' => "$wgScriptPath/extensions/Collection/collection/portlet.js?$wgCollectionStyleVersion",
