@@ -2553,6 +2553,7 @@ $messages['hr'] = array(
 	'coll-collections' => 'Zbirke',
 	'coll-exclusion_category_title' => 'Izuzmi u ispisu',
 	'coll-print_template_prefix' => 'Ispiši',
+	'coll-print_template_pattern' => '$1/Tiskaj',
 	'coll-unknown_subpage_title' => 'Nepoznata podstranica',
 	'coll-unknown_subpage_text' => 'Ova podstranica [[Special:Book|zbirke]] ne postoji',
 	'coll-download_as' => 'Preuzmi kao $1',
@@ -2560,7 +2561,7 @@ $messages['hr'] = array(
 <strong>Vaš preglednik nema podršku za JavaScript ili je isključena. Ova stranica neće raditi ispravno, ako JavaScript nije omogućen.</strong>',
 	'coll-intro_text' => 'Napravite i uređujte svoj osobni odabir wiki stranica.<br />Vidi [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više obavijesti.',
 	'coll-savedbook_template' => 'snimljena_zbirka',
-	'coll-your_book' => 'Vaša knjiga',
+	'coll-your_book' => 'Vaša zbirka',
 	'coll-download_title' => 'Preuzmi',
 	'coll-download_text' => 'Za preuzimanje izvanmrežne inačice, odaberite format i kliknite tipku.',
 	'coll-download_as_text' => 'Za preuzimanje inačice u $1 formatu kliknite na gumb.',
@@ -2592,25 +2593,25 @@ $messages['hr'] = array(
 	'coll-revision' => 'Izmjena: $1',
 	'coll-save_collection_title' => 'Spremi i dijeli svoju zbirku',
 	'coll-save_collection_text' => 'Odaberite lokaciju:',
-	'coll-login_to_save' => 'Ako želite spremiti knjige za kasniju uporabu, molimo [[Special:UserLogin|prijavite se ili napravite suradnički račun]].',
-	'coll-personal_collection_label' => 'Osobna knjiga:',
-	'coll-community_collection_label' => 'Zajednička knjiga:',
-	'coll-save_collection' => 'Spremi knjigu',
-	'coll-save_category' => 'Sve knjige su spremljene u kategoriju [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-login_to_save' => 'Ako želite spremiti zbirke za kasniju uporabu, molimo [[Special:UserLogin|prijavite se ili napravite suradnički račun]].',
+	'coll-personal_collection_label' => 'Osobna zbirka:',
+	'coll-community_collection_label' => 'Zajednička zbirka:',
+	'coll-save_collection' => 'Spremi zbirku',
+	'coll-save_category' => 'Sve zbirke spremljene su u kategoriju [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Stranica postoji.
 Prepisati preko?',
 	'coll-overwrite_text' => 'Stranica s nazivom [[:$1]] već postoji.
 Želite li da bude zamijenjena s vašom zbirkom?',
 	'coll-yes' => 'Da',
 	'coll-no' => 'Ne',
-	'coll-load_overwrite_text' => 'Već imate neke stranice u svojoj knjizi.
-Želite li prepisati svoju trenutačnu knjigu novom, samo dodati novi sadržaj ili zaustaviti učitavanje ove knjige?',
+	'coll-load_overwrite_text' => 'Već imate neke stranice u svojoj zbirci.
+Želite li prepisati svoju trenutačnu zbirku novoj, samo dodati novi sadržaj ili zaustaviti učitavanje ove zbirke?',
 	'coll-overwrite' => 'Prepisati preko',
 	'coll-append' => 'Nadodaj',
 	'coll-cancel' => 'Zaustavi',
 	'coll-update' => 'Ažuriranje',
 	'coll-limit_exceeded_title' => 'Knjiga je prevelika',
-	'coll-limit_exceeded_text' => 'Vaša knjiga je prevelika.
+	'coll-limit_exceeded_text' => 'Vaša zbirka je prevelika.
 Nove stranice ne mogu biti dodane.',
 	'coll-rendering_title' => 'Izvođenje',
 	'coll-rendering_text' => '<p><strong>Molimo pričekajte dok se dokument radi.</strong></p>
@@ -2629,21 +2630,26 @@ Ako ovo ne radi, molimo pritisnite tipku za osvježavanje u svom pregledniku.</p
 Napomene:
 * Niste zadovoljni dobivenim rezultatom? Pogledajte [[{{MediaWiki:Coll-helppage}}|
 stranicu za pomoć o zbirkama]] za mogućnosti njegovog poboljšanja.',
-	'coll-notfound_title' => 'Knjiga nije nađena',
-	'coll-notfound_text' => 'Ne mogu pronaći stranicu knjige.',
+	'coll-notfound_title' => 'Zbirka nije nađena',
+	'coll-notfound_text' => 'Ne mogu pronaći stranicu zbirke.',
+	'coll-download_notfound_title' => 'Datoteka nije pronađena',
+	'coll-download_notfound_text' => 'Datoteka koju pokušavate preuzeti ne postoji: možda je obrisana i treba biti obnovljena.',
 	'coll-is_cached' => '<ul><li>Pronađena je verzija datoteke u pričuvnoj memoriji, stoga izvođenje datoteke nije potrebno.. <a href="$1">Zahtijevaj ponovno izvođenje.</a></li></ul>',
 	'coll-excluded-templates' => '* Predlošci u kategoriji [[:Category:$1|$1]] su ostali isključeni.',
 	'coll-blacklisted-templates' => '* Predlošci na crnoj listi [[:$1]] su ostali isključeni.',
 	'coll-return_to_collection' => '<p>Vrati se na <a href="$1">$2</a></p>',
-	'coll-book_title' => 'Naručite kao ispisanu knjigu',
-	'coll-book_text' => 'Naručiti ispisanu knjigu od slijedećih partnera za ispisivanje na zahtjev (POD):',
-	'coll-order_from_pp' => 'Naručite knjigu od $1',
+	'coll-book_title' => 'Naručite kao ispisanu zbirku',
+	'coll-book_text' => 'Naručiti ispisanu zbirku od sljedećih partnera za ispisivanje na zahtjev (POD):',
+	'coll-order_from_pp' => 'Naručite zbirku od $1',
 	'coll-about_pp' => 'O $1',
 	'coll-invalid_podpartner_title' => 'Neispravan POD partner',
 	'coll-invalid_podpartner_msg' => 'Ponuđeni POD partner nije valjan.
 Molimo kontaktirajte svog MediaWiki administratora.',
 	'coll-license' => 'Licencija',
 	'coll-return_to' => 'Vrati se na [[:$1]]',
+	'coll-more_info' => 'Prikaži više informacija',
+	'coll-hide_info' => 'Sakrij informacije',
+	'coll-order_info_article' => '{{MediaWiki:Coll-Helppage}}/informacije o narudžbi PediaPressa',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
