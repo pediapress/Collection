@@ -262,7 +262,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 		} ?>
 		</span>
 	</li>
-	<?php } else if ($item['type'] == 'chapter') { ?>
+	<?php } elseif ($item['type'] == 'chapter') { ?>
 	<li id="item-<?php echo intval( $index ) ?>" class="chapter" style="margin-top:0.3em;">
 		<a onclick="return coll_remove_item(<?php echo intval( $index ) ?>)" href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'remove_item/', 'index=' . $index)) ?>" title="<?php $this->msg('coll-remove') ?>"><img src="<?php echo htmlspecialchars($mediapath . "remove.png") ?>" width="10" height="10" alt="<?php $this->msg('coll-remove') ?>" /></a>
 		<noscript>

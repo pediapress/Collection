@@ -179,7 +179,7 @@ class SpecialCollection extends SpecialPage {
 					$title = Title::newFromText(
 						$userPageTitle . '/' . wfMsgForContent( 'coll-collections' ) . '/' . $collname
 					);
-				} else if ( $colltype == 'community' ) {
+				} elseif ( $colltype == 'community' ) {
 					$collname = $wgRequest->getVal( 'ccollname' );
 					if ( !$wgUser->isAllowed( 'collectionsaveascommunitypage' ) || empty( $collname ) ) {
 						return;
@@ -296,7 +296,7 @@ class SpecialCollection extends SpecialPage {
 				usort( $articles, array( self, 'title_cmp' ) );
 				$new_items = array_merge( $new_items, $articles, array( $item ) );
 				$articles = array();
-			} else if ( $item['type'] == 'article' ) {
+			} elseif ( $item['type'] == 'article' ) {
 				$articles[] = $item;
 			}
 		}
@@ -484,21 +484,21 @@ class SpecialCollection extends SpecialPage {
 		$line = trim( $line );
 		if ( !$append && preg_match( '/^===\s*(.*?)\s*===$/', $line, $match) ) {
 			$collection['subtitle'] = $match[ 1 ];
-		} else if ( !$append && preg_match( '/^==\s*(.*?)\s*==$/', $line, $match) ) {
+		} elseif ( !$append && preg_match( '/^==\s*(.*?)\s*==$/', $line, $match) ) {
 			$collection['title'] = $match[ 1 ];
-		} else if (substr( $line, 0, 1 ) == ';') { // chapter
+		} elseif (substr( $line, 0, 1 ) == ';') { // chapter
 			return array(
 				'type' => 'chapter',
 				'title' => trim( substr( $line, 1 ) ),
 			);
-		} else if ( substr( $line, 0, 1 ) == ':' ) { // article
+		} elseif ( substr( $line, 0, 1 ) == ':' ) { // article
 			$articleTitle = trim( substr( $line, 1 ) );
 			if ( preg_match( '/\[\[:?(.*?)(\|(.*?))?\]\]/', $articleTitle, $match ) ) {
 				$articleTitle = $match[1];
 				$displayTitle = $match[3];
 				$oldid = -1;
 				$currentVersion = 1;
-			} else if ( preg_match( '/\[\{\{fullurl:(.*?)\|oldid=(.*?)\}\}\s+(.*?)\]/', $articleTitle, $match ) ) {
+			} elseif ( preg_match( '/\[\{\{fullurl:(.*?)\|oldid=(.*?)\}\}\s+(.*?)\]/', $articleTitle, $match ) ) {
 				$articleTitle = $match[1];
 				$displayTitle = $match[3];
 				$oldid = $match[2];
@@ -593,7 +593,7 @@ class SpecialCollection extends SpecialPage {
 			foreach ( $collection['items'] as $item ) {
 				if ( $item['type'] == 'chapter' ) {
 					$articleText .= ';' . $item['title'] . "\n";
-				} else if ( $item['type'] == 'article' ) {
+				} elseif ( $item['type'] == 'article' ) {
 					if ($item['currentVersion'] == 1) {
 						$articleText .= ":[[" . $item['title'];
 						if ( $item['displaytitle'] ) {
@@ -690,7 +690,7 @@ class SpecialCollection extends SpecialPage {
 				} else {
 					$currentChapter['items'][] = $item;
 				}
-			} else if ( $item['type'] == 'chapter' ) {
+			} elseif ( $item['type'] == 'chapter' ) {
 				if ( !is_null( $currentChapter ) ) {
 					$items[] = $currentChapter;
 				}
@@ -824,7 +824,7 @@ class SpecialCollection extends SpecialPage {
 				$statusText = $response['status']['status'];
 				if ( isset( $response['status']['article'] ) && $response['status']['article'] ) {
 					$statusText .= ' ' . wfMsg( 'coll-rendering_article', $response['status']['article'] );
-				} else if ( isset( $response['status']['page'] ) && $response['status']['page'] ) {
+				} elseif ( isset( $response['status']['page'] ) && $response['status']['page'] ) {
 					$statusText .= ' ' . wfMsg( 'coll-rendering_page', $wgLang->formatNum( $response['status']['page'] ) );
 				}
 				$status = wfMsg( 'coll-rendering_status', $statusText );
@@ -1046,7 +1046,7 @@ class SpecialCollection extends SpecialPage {
 			$text = false;
 			$errorMessage = curl_error( $c );
 			$headers = false;
-		} else if ( curl_getinfo( $c, CURLINFO_HTTP_CODE ) != 200 ) {
+		} elseif ( curl_getinfo( $c, CURLINFO_HTTP_CODE ) != 200 ) {
 			$text = false;
 			$errorMessage = 'HTTP status ' . curl_getinfo( $c, CURLINFO_HTTP_CODE );
 			$headers = false;

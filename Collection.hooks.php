@@ -171,7 +171,7 @@ class CollectionHooks {
 		$showShowAndClearLinks = true;
 		$addRemoveState = '';
 
-		$out = Xml::element( 'ul', array( 'id' => 'collectionPortletList' ), NULL );
+		$out = Xml::element( 'ul', array( 'id' => 'collectionPortletList' ), null );
 
 		if( self::_isCollectionPage( $wgTitle, $wgArticle) ) {
 			$out .= Xml::tags(
@@ -189,7 +189,7 @@ class CollectionHooks {
 				)
 			);
 			$showShowAndClearLinks = false;
-		} else if( $ajaxHint == 'addcategory' || $namespace == NS_CATEGORY ) {
+		} elseif( $ajaxHint == 'addcategory' || $namespace == NS_CATEGORY ) {
 			$addRemoveState = 'addcategory';
 			$out .= Xml::tags(
 				'li',
@@ -206,7 +206,7 @@ class CollectionHooks {
 					array( 'known', 'noclasses' )
 				)
 			);
-		} else if( $ajaxHint || in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
+		} elseif( $ajaxHint || in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
 			$params = array( 'arttitle' => $wgTitle->getPrefixedText() );
 			if ( !is_null( $wgArticle ) ) {
 				$oldid = $wgArticle->getOldID();
