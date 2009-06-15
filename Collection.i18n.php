@@ -33,6 +33,8 @@ $messages['en'] = array(
 	'coll-print_template_pattern'     => '$1/Print',
 	'coll-unknown_subpage_title'      => 'Unknown subpage',
 	'coll-unknown_subpage_text'       => 'This subpage of [[Special:Book|Book]] does not exist',
+	'coll-couldnotaddarticle_title'   => 'Could not add article',
+	'coll-couldnotaddarticle_msg'     => 'The article could not be added.',
 	'coll-download_as'                => 'Download as $1',
 	'coll-noscript_text'              => '<h1>JavaScript is required!</h1>
 <strong>Your browser does not support JavaScript or JavaScript has been turned off.
