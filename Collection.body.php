@@ -60,14 +60,20 @@ class SpecialCollection extends SpecialPage {
 				if ( !$title ) {
 					return;
 				}
-				$this->addArticle( $title, $oldid );
-				if ( $oldid == 0 ) {
-					$redirectURL = $title->getFullURL();
+				if ( self::addArticle( $title, $oldid ) ) {
+					if ( $oldid == 0 ) {
+						$redirectURL = $title->getFullURL();
+					} else {
+						$redirectURL = $title->getFullURL( 'oldid=' . $oldid );
+					}
+					$wgUser->invalidateCache();
+					$wgOut->redirect( $redirectURL );
 				} else {
-					$redirectURL = $title->getFullURL( 'oldid=' . $oldid );
+					$wgOut->showErrorPage(
+						'coll-couldnotaddarticle_title',
+						'coll-couldnotaddarticle_msg'
+					);
 				}
-				$wgUser->invalidateCache();
-				$wgOut->redirect( $redirectURL );
 				return;
 			case 'remove_article/':
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
@@ -337,7 +343,7 @@ class SpecialCollection extends SpecialPage {
 		}
 		$index = CollectionSession::findArticle( $title->getPrefixedText(), $oldid );
 		if ( $index != -1 ) {
-			return;
+			return false;
 		}
 
 		if ( !CollectionSession::hasSession() ) {
@@ -357,6 +363,7 @@ class SpecialCollection extends SpecialPage {
 		);
 		$_SESSION['wsCollection'] = $collection;
 		CollectionSession::touchSession();
+		return true;
 	}
 
 	static function removeArticleFromName( $namespace, $name, $oldid=0 ) {
