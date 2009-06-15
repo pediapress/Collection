@@ -280,31 +280,25 @@ class SpecialCollection extends SpecialPage {
 		CollectionSession::touchSession();
 	}
 
+	static function title_cmp($a, $b) {
+		return strcasecmp($a['title'], $b['title']);
+	}
+
 	static function sortItems() {
 		$collection = $_SESSION['wsCollection'];
 		$articles = array();
 		$new_items = array();
-		function title_cmp($a, $b) {
-			return strcasecmp($a['title'], $b['title']);
-		}
 		foreach ( $collection['items'] as $item ) {
 			if ( $item['type'] == 'chapter' ) {
-				usort( $articles, 'title_cmp' );
-				while ( count( $articles ) ) {
-					$new_items[] = array_shift( $articles );
-				}
-				$new_items[] = $item;
+				usort( $articles, array( self, 'title_cmp' ) );
+				$new_items = array_merge( $new_items, $articles, array( $item ) );
+				$articles = array();
 			} else if ( $item['type'] == 'article' ) {
 				$articles[] = $item;
 			}
 		}
-		if ( count( $articles ) ) {
-			usort( $articles, 'title_cmp' );
-			while ( count( $articles ) ) {
-				$new_items[] = array_shift( $articles );
-			}
-		}
-		$collection['items'] = $new_items;
+		usort( $articles, array( self, 'title_cmp' ) );
+		$collection['items'] = array_merge( $new_items, $articles );
 		$_SESSION['wsCollection'] = $collection;
 		CollectionSession::touchSession();
 	}
