@@ -370,15 +370,15 @@ class CollectionHooks {
 
 	static protected function pageInCategory( $pageId, $categoryName ) {
 		$dbr = wfGetDB( DB_SLAVE );
-		$count = $dbr->selectField(
+		$exists = $dbr->selectField(
 			'categorylinks',
-			'COUNT(*)',
+			'1',
 			array(
 				'cl_from' => $pageId,
 				'cl_to' => $categoryName
 			),
 			__METHOD__
 		);
-		return ( $count > 0 );
+		return (bool)$exists;
 	}
 }
