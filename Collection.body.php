@@ -55,9 +55,11 @@ class SpecialCollection extends SpecialPage {
 					self::limitExceeded();
 					return;
 				}
-				$title_url = $wgRequest->getVal( 'arttitle', '' );
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
-				$title = Title::newFromText( $title_url );
+				$title = Title::newFromText( $wgRequest->getVal( 'arttitle', '' ) );
+				if ( !$title ) {
+					return;
+				}
 				$this->addArticle( $title, $oldid );
 				if ( $oldid == 0 ) {
 					$redirectURL = $title->getFullURL();
@@ -68,9 +70,11 @@ class SpecialCollection extends SpecialPage {
 				$wgOut->redirect( $redirectURL );
 				return;
 			case 'remove_article/':
-				$title_url = $wgRequest->getVal( 'arttitle', '' );
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
-				$title = Title::newFromText( $title_url );
+				$title = Title::newFromText( $wgRequest->getVal( 'arttitle', '' ) );
+				if ( !$title ) {
+					return;
+				}
 				self::removeArticle( $title, $oldid );
 				if ( $oldid == 0 ) {
 					$redirectURL = $title->getFullURL();
@@ -87,7 +91,7 @@ class SpecialCollection extends SpecialPage {
 				$redirectURL = SkinTemplate::makeSpecialUrl( 'Book' );
 				if ( !empty( $redirect ) ) {
 					$title = Title::newFromText( $redirect );
-					if ( !is_null( $title ) ) {
+					if ( $title ) {
 						$redirectURL = $title->getFullURL();
 					}
 				}
@@ -125,6 +129,9 @@ class SpecialCollection extends SpecialPage {
 				return;
 			case 'load_collection/':
 				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
+				if ( !$title ) {
+					return;
+				}
 				if ( $wgRequest->getVal( 'cancel' ) ) {
 					$wgOut->redirect( $title->getFullURL() );
 					return;
@@ -144,6 +151,9 @@ class SpecialCollection extends SpecialPage {
 				return;
 			case 'order_collection/':
 				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
+				if ( !$title ) {
+					return;
+				}
 				$collection = $this->loadCollection( $title );
 				$partner = $wgRequest->getVal( 'partner', 'pediapress' );
 				return $this->postZIP( $collection, $partner );
@@ -172,7 +182,7 @@ class SpecialCollection extends SpecialPage {
 						wfMsgForContent( 'coll-collections' ) . '/' . $collname
 					);
 				}
-				if ( !isset( $title ) ) {
+				if ( !$title ) {
 					return;
 				}
 				if ( $this->saveCollection( $title, $wgRequest->getBool( 'overwrite' ) ) ) {
@@ -200,10 +210,16 @@ class SpecialCollection extends SpecialPage {
 				return $this->download();
 			case 'render_article/':
 				$title = Title::newFromText( $wgRequest->getVal( 'arttitle', '' ) );
+				if ( !$title ) {
+					return;
+				}
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
 				return $this->renderArticle( $title, $oldid, $wgRequest->getVal( 'writer', 'rl' ) );
 			case 'render_collection/':
 				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ));
+				if ( !$title ) {
+					return;
+				}
 				$collection = $this->loadCollection( $title );
 				if ( $collection ) {
 					$this->renderCollection( $collection, $title, $wgRequest->getVal( 'writer', 'rl' ) );
@@ -501,7 +517,7 @@ class SpecialCollection extends SpecialPage {
 
 
 				$articleTitle = Title::newFromText( $articleTitle );
-				if( is_null( $articleTitle ) ) {
+				if( !$articleTitle ) {
 					continue;
 				}
 				if ($oldid < 0) {

@@ -159,7 +159,7 @@ class CollectionHooks {
 			// the "subpage" (i.e. "par") part has been stripped off by SpecialPage.php
 			// in $wgTitle.
 			$origTitle = Title::newFromText($wgRequest->getVal('title'));
-			if( !is_null( $origTitle )
+			if( $origTitle
 				&& $origTitle->getLocalUrl() == SkinTemplate::makeSpecialUrl( 'Book' ) ) {
 				return;
 			}
