@@ -178,6 +178,7 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
 				<tr><td>&nbsp;</td><td style="text-align:right;">
 				<input id="saveButton" type="submit" value="<?php $this->msg('coll-save_collection') ?>"<?php if (count($this->data['collection']['items']) == 0) { ?> disabled="disabled"<?php } ?> />
 				</tr></tbody></table>
+				<input name="token" type="hidden" value="<?php echo htmlspecialchars($GLOBALS['wgUser']->editToken()) ?>" />
 			</form>
 
 		<?php } else {
@@ -304,7 +305,7 @@ class CollectionLoadOverwriteTemplate extends QuickTemplate {
 	<input name="overwrite" type="submit" value="<?php $this->msg('coll-overwrite') ?>" />
 	<input name="append" type="submit" value="<?php $this->msg('coll-append') ?>" />
 	<input name="cancel" type="submit" value="<?php $this->msg('coll-cancel') ?>" />
-	<input name="colltitle" type="hidden" value="<?php echo htmlspecialchars($this->data['title']->getPrefixedText()) ?>" />
+	<input name="colltitle" type="hidden" value="<?php echo htmlspecialchars($this->data['title']->getPrefixedText()) ?>" /> 
 </form>
 
 <?php
@@ -329,6 +330,7 @@ class CollectionSaveOverwriteTemplate extends QuickTemplate {
 	<input name="pcollname" type="hidden" value="<?php echo htmlspecialchars($this->data['pcollname']) ?>" />
 	<input name="ccollname" type="hidden" value="<?php echo htmlspecialchars($this->data['ccollname']) ?>" />
 	<input name="colltype" type="hidden" value="<?php echo htmlspecialchars($this->data['colltype']) ?>" />
+	<input name="token" type="hidden" value="<?php echo htmlspecialchars($GLOBALS['wgUser']->editToken()) ?>" />
 </form>
 
 <?php

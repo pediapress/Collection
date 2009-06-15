@@ -166,6 +166,9 @@ class SpecialCollection extends SpecialPage {
 					$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 					return;
 				}
+				if ( !$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) {
+					return;
+				}
 				$colltype = $wgRequest->getVal( 'colltype' );
 				if ( $colltype == 'personal' ) {
 					$collname = $wgRequest->getVal( 'pcollname' );
