@@ -477,6 +477,67 @@ class SpecialCollection extends SpecialPage {
 		CollectionSession::touchSession();
 	}
 
+	function parseCollectionLine( &$collection, $line, $append ) {
+		$line = trim( $line );
+		if ( !$append && preg_match( '/^===\s*(.*?)\s*===$/', $line, $match) ) {
+			$collection['subtitle'] = $match[ 1 ];
+		} else if ( !$append && preg_match( '/^==\s*(.*?)\s*==$/', $line, $match) ) {
+			$collection['title'] = $match[ 1 ];
+		} else if (substr( $line, 0, 1 ) == ';') { // chapter
+			return array(
+				'type' => 'chapter',
+				'title' => trim( substr( $line, 1 ) ),
+			);
+		} else if ( substr( $line, 0, 1 ) == ':' ) { // article
+			$articleTitle = trim( substr( $line, 1 ) );
+			if ( preg_match( '/\[\[:?(.*?)(\|(.*?))?\]\]/', $articleTitle, $match ) ) {
+				$articleTitle = $match[1];
+				$displayTitle = $match[3];
+				$oldid = -1;
+				$currentVersion = 1;
+			} else if ( preg_match( '/\[\{\{fullurl:(.*?)\|oldid=(.*?)\}\}\s+(.*?)\]/', $articleTitle, $match ) ) {
+				$articleTitle = $match[1];
+				$displayTitle = $match[3];
+				$oldid = $match[2];
+				$currentVersion = 0;
+			}
+
+			$articleTitle = Title::newFromText( $articleTitle );
+			if( !$articleTitle ) {
+				return null;
+			}
+			if ($oldid < 0) {
+				$article = new Article( $articleTitle );
+			} else {
+				$article = new Article( $articleTitle, $oldid );
+			}
+			if ( !$article->exists() ) {
+				return null;
+			}
+			$revision = Revision::newFromTitle( $articleTitle, $article->getOldID() );
+			$latest = $article->getLatest();
+			$oldid = $article->getOldID();
+			if ( !$oldid ) {
+				$oldid = $latest;
+			}
+			$d = array(
+				'type' => 'article',
+				'content-type' => 'text/x-wiki',
+				'title' => $articleTitle->getPrefixedText(),
+				'latest' => $latest,
+				'revision' => $oldid,
+				'timestamp' => wfTimestamp( TS_UNIX, $revision->mTimestamp ),
+				'url' => $articleTitle->getFullURL(),
+				'currentVersion' => $currentVersion,
+			);
+			if ( $displayTitle ) {
+				$d['displaytitle'] = $displayTitle;
+			}
+			return $d;
+		}
+		return null;
+	}
+
 	function loadCollection( $title, $append=false ) {
 		if ( is_null( $title ) ) {
 			$wgOut->showErrorPage( 'coll-notitle_title', 'coll-notitle_msg' );
@@ -501,63 +562,9 @@ class SpecialCollection extends SpecialPage {
 		}
 
 		foreach( preg_split( '/[\r\n]+/', $article->getContent() ) as $line ) {
-			$line = trim( $line );
-			if ( !$append && preg_match( '/^===\s*(.*?)\s*===$/', $line, $match) ) {
-				$collection['subtitle'] = $match[ 1 ];
-			} else if ( !$append && preg_match( '/^==\s*(.*?)\s*==$/', $line, $match) ) {
-				$collection['title'] = $match[ 1 ];
-			} else if (substr( $line, 0, 1 ) == ';') { // chapter
-				$items[] = array(
-					'type' => 'chapter',
-					'title' => trim( substr( $line, 1 ) ),
-				);
-			} else if ( substr( $line, 0, 1 ) == ':' ) { // article
-				$articleTitle = trim( substr( $line, 1 ) );
-				if ( preg_match( '/\[\[:?(.*?)(\|(.*?))?\]\]/', $articleTitle, $match ) ) {
-					$articleTitle = $match[1];
-					$displayTitle = $match[3];
-					$oldid = -1;
-					$currentVersion = 1;
-				} else if ( preg_match( '/\[\{\{fullurl:(.*?)\|oldid=(.*?)\}\}\s+(.*?)\]/', $articleTitle, $match ) ) {
-					$articleTitle = $match[1];
-					$displayTitle = $match[3];
-					$oldid = $match[2];
-					$currentVersion = 0;
-				}
-
-
-				$articleTitle = Title::newFromText( $articleTitle );
-				if( !$articleTitle ) {
-					continue;
-				}
-				if ($oldid < 0) {
-					 $article = new Article( $articleTitle );
-				} else {
-					 $article = new Article( $articleTitle, $oldid );
-				}
-				if ( !$article->exists() ) {
-					continue;
-				}
-				$revision = Revision::newFromTitle( $articleTitle, $article->getOldID() );
-				$latest = $article->getLatest();
-				$oldid = $article->getOldID();
-				if ( !$oldid ) {
-					$oldid = $latest;
-				}
-				$d = array(
-					'type' => 'article',
-					'content-type' => 'text/x-wiki',
-					'title' => $articleTitle->getPrefixedText(),
-					'latest' => $latest,
-					'revision' => $oldid,
-					'timestamp' => wfTimestamp( TS_UNIX, $revision->mTimestamp ),
-					'url' => $articleTitle->getFullURL(),
-					'currentVersion' => $currentVersion,
-				);
-				if ( $displayTitle ) {
-					$d['displaytitle'] = $displayTitle;
-				}
-				$items[] = $d;
+			$item = $this->parseCollectionLine( $collection, $line, $append );
+			if ( !is_null( $item ) ) {
+				$items[] = $item;
 			}
 		}
 		$collection['items'] = $items;
