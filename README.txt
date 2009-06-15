@@ -217,7 +217,20 @@ Installation and Configuration of the Collection Extension
 
     $wgEnableWriteAPI = true;
 
-  (This is the default for MediaWiki >= 1.14.)
+  (This is the default for MediaWiki >= 1.14.).
+
+  There are two MediaWiki rights that are checked, before users are allowed
+  to save collections: To be able to save collection pages under the User
+  namespace, users must have the right 'collectionsaveasuserpage'; to be able
+  to save collection pages under the community namespace
+  (see $wgCommunityCollectionNamespace), users must have the right
+  'collectionsaveascommunitypage'. For example, if all logged-in users shall
+  be allowed to save collection pages under the User namespace, but only
+  autoconfirmed users, shall be allowed to save collection pages under the
+  community namespace, add this to your LocalSettings.php::
+
+    $wgGroupPermissions['user']['collectionsaveasuserpage'] = true;
+    $wgGroupPermissions['autoconfirmed']['collectionsaveascommunitypage'] = true;
 
 * As the current collection of articles is stored in the session, the session
   timeout should be set to some sensible value (at least a few hours, maybe

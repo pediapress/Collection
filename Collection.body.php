@@ -148,39 +148,42 @@ class SpecialCollection extends SpecialPage {
 				$partner = $wgRequest->getVal( 'partner', 'pediapress' );
 				return $this->postZIP( $collection, $partner );
 			case 'save_collection/':
-				$collTitle = $wgRequest->getVal( 'colltitle' );
-				if ( $wgRequest->getVal( 'overwrite' ) && !empty( $collTitle ) ) {;
-					$title = Title::newFromText( $collTitle );
-					$this->saveCollection( $title, $overwrite=true );
-					$wgOut->redirect( $title->getFullURL() );
+				if ( $wgRequest->getVal( 'abort' ) ) {
+					$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 					return;
 				}
-				$collType = $wgRequest->getVal( 'colltype' );
-				$overwrite = $wgRequest->getBool( 'overwrite' );
-				$saveCalled = false;
-				if ( $collType == 'personal' ) {
+				$colltype = $wgRequest->getVal( 'colltype' );
+				if ( $colltype == 'personal' ) {
+					$collname = $wgRequest->getVal( 'pcollname' );
+					if ( !$wgUser->isAllowed( 'collectionsaveasuserpage' ) || empty( $collname ) ) {
+						return;
+					}
 					$userPageTitle = $wgUser->getUserPage()->getPrefixedText();
-					$name = $wgRequest->getVal( 'pcollname', '' );
-					if ( !empty( $name ) ) {
-						$title = Title::newFromText( $userPageTitle . '/' . wfMsgForContent( 'coll-collections' ) . '/' . $name );
-						$saveCalled = true;
-						$saved = $this->saveCollection( $title, $overwrite );
+					$title = Title::newFromText(
+						$userPageTitle . '/' . wfMsgForContent( 'coll-collections' ) . '/' . $collname
+					);
+				} else if ( $colltype == 'community' ) {
+					$collname = $wgRequest->getVal( 'ccollname' );
+					if ( !$wgUser->isAllowed( 'collectionsaveascommunitypage' ) || empty( $collname ) ) {
+						return;
 					}
-				} else if ( $collType == 'community' ) {
-					$name = $wgRequest->getVal( 'ccollname', '' );
-					if ( !empty( $name ) ) {
-						$title = Title::makeTitle( $wgCommunityCollectionNamespace, wfMsgForContent( 'coll-collections' ) . '/' . $name );
-						$saveCalled = true;
-						$saved = $this->saveCollection( $title, $overwrite );
-					}
+					$title = Title::makeTitle(
+						$wgCommunityCollectionNamespace,
+						wfMsgForContent( 'coll-collections' ) . '/' . $collname
+					);
 				}
-
-				if ( !$saveCalled) {
-					$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
-				} else if ( $saved ) {
+				if ( !isset( $title ) ) {
+					return;
+				}
+				if ( $this->saveCollection( $title, $wgRequest->getBool( 'overwrite' ) ) ) {
 					$wgOut->redirect( $title->getFullURL() );
 				} else {
-					$this->renderSaveOverwritePage( $title );
+					$this->renderSaveOverwritePage(
+						$colltype,
+						$title,
+						$wgRequest->getVal( 'pcollname' ),
+						$wgRequest->getVal( 'ccollname' )
+					);
 				}
 				return;
 			case 'render/':
@@ -892,7 +895,7 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->redirect( $response['redirect_url'] );
 	}
 
-	private function renderSaveOverwritePage( $title ) {
+	private function renderSaveOverwritePage( $colltype, $title, $pcollname, $ccollname ) {
 		global $wgOut;
 
 		$this->setHeaders();
@@ -900,6 +903,9 @@ class SpecialCollection extends SpecialPage {
 
 		$template = new CollectionSaveOverwriteTemplate();
 		$template->set( 'title', $title );
+		$template->set( 'pcollname', $pcollname );
+		$template->set( 'ccollname', $ccollname );
+		$template->set( 'colltype', $colltype );
 		$wgOut->addTemplate( $template );
 	}
 
