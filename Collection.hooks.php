@@ -171,34 +171,41 @@ class CollectionHooks {
 		$showShowAndClearLinks = true;
 		$addRemoveState = '';
 
-		$out  = Xml::element( 'ul', array( 'id' => 'collectionPortletList' ), NULL );
+		$out = Xml::element( 'ul', array( 'id' => 'collectionPortletList' ), NULL );
 
 		if( self::_isCollectionPage( $wgTitle, $wgArticle) ) {
-			$out .= Xml::tags( 'li', array( 'id' => 'coll-load_collection' ),
-							   $sk->link( SpecialPage::getTitleFor( 'Book', 'load_collection/' ),
-							   			  wfMsgHtml( "coll-load_collection" ),
-						   	   			  array( 'rel'	 => 'nofollow',
-						   						 'title'   => wfMsg( "coll-load_collection_tooltip" ), ),
-						   	   			  array( 'colltitle' => $wgTitle->getPrefixedUrl() ),
-						   	   			  array( 'known', 'noclasses' )
-						   				)
-							 );
+			$out .= Xml::tags(
+				'li',
+				array( 'id' => 'coll-load_collection' ),
+				$sk->link(
+					SpecialPage::getTitleFor( 'Book', 'load_collection/' ),
+					wfMsgHtml( "coll-load_collection" ),
+					array(
+						'rel' => 'nofollow',
+						'title' => wfMsg( "coll-load_collection_tooltip" ),
+					),
+					array( 'colltitle' => $wgTitle->getPrefixedUrl() ),
+					array( 'known', 'noclasses' )
+				)
+			);
 			$showShowAndClearLinks = false;
-
 		} else if( $ajaxHint == 'addcategory' || $namespace == NS_CATEGORY ) {
 			$addRemoveState = 'addcategory';
-
-			$out .= Xml::tags( 'li', array( 'id' => 'coll-add_category' ),
-						   	   $sk->link( SpecialPage::getTitleFor( 'Book', 'add_category/' ),
-						   	   			  wfMsgHtml( "coll-add_category" ),
-						   	   			  array( 'onclick' => "collectionCall('AddCategory', ['addcategory', wgTitle]); return false;",
-												 'rel'	 => 'nofollow',
-												 'title'   => wfMsg( "coll-add_category_tooltip" ), ),
-										  array( 'cattitle' => $wgTitle->getText() ),
-						   	   			  array( 'known', 'noclasses' )
-						   				)
-							 );
-
+			$out .= Xml::tags(
+				'li',
+				array( 'id' => 'coll-add_category' ),
+				$sk->link(
+					SpecialPage::getTitleFor( 'Book', 'add_category/' ),
+					wfMsgHtml( "coll-add_category" ),
+					array(
+						'onclick' => "collectionCall('AddCategory', ['addcategory', wgTitle]); return false;",
+						'rel' => 'nofollow',
+						'title' => wfMsg( "coll-add_category_tooltip" ),
+					),
+					array( 'cattitle' => $wgTitle->getText() ),
+					array( 'known', 'noclasses' )
+				)
+			);
 		} else if( $ajaxHint || in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
 			$params = array( 'arttitle' => $wgTitle->getPrefixedText() );
 			if ( !is_null( $wgArticle ) ) {
@@ -206,7 +213,9 @@ class CollectionHooks {
 				$params['oldid'] = $oldid;
 			}
 
-			if ( $ajaxHint == 'addpage' || ($ajaxHint != 'removepage' && CollectionSession::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) ) {
+			if ( $ajaxHint == 'addpage'
+				|| ($ajaxHint != 'removepage'
+					&& CollectionSession::findArticle( $wgTitle->getPrefixedText(), $oldid ) == -1 ) ) {
 				$addRemoveState = 'addpage';
 				$action  = 'add';
 				$uaction = 'Add';
@@ -218,66 +227,83 @@ class CollectionHooks {
 				$other_action = 'add';
 			}
 
-			$out .= Xml::tags( 'li', array( 'id' => "coll-{$action}_page" ),
-							   $sk->link( SpecialPage::getTitleFor( 'Book', "{$action}_article/" ),
-						   	   			  wfMsgHtml( "coll-{$action}_page" ),
-						   	   			  array( 'onclick' => "collectionCall('{$uaction}Article', ['{$other_action}page', wgNamespaceNumber, wgTitle, $oldid]); return false;",
-						   						 'rel'	 => 'nofollow',
-						   						 'title'   => wfMsg( "coll-{$action}_page_tooltip" ) ),
-						   	   			  $params,
-						   	   			  array( 'known', 'noclasses' )
-						   				)
-							 );
+			$out .= Xml::tags(
+				'li',
+				array( 'id' => "coll-{$action}_page" ),
+				$sk->link(
+					SpecialPage::getTitleFor( 'Book', "{$action}_article/" ),
+					wfMsgHtml( "coll-{$action}_page" ),
+					array(
+						'onclick' => "collectionCall('{$uaction}Article', ['{$other_action}page', wgNamespaceNumber, wgTitle, $oldid]); return false;",
+						'rel' => 'nofollow',
+						'title' => wfMsg( "coll-{$action}_page_tooltip" )
+					),
+					$params,
+					array( 'known', 'noclasses' )
+				)
+			);
 		}
 
 		if( $showShowAndClearLinks && $numArticles > 0 ) {
 			global $wgLang;
 			$articles = wfMsgExt( 'coll-n_pages', array( 'parsemag' ), $wgLang->formatNum( $numArticles ) );
-			$out .= Xml::tags( 'li', array( 'id' => 'coll-show_collection' ),
-							   $sk->link( SpecialPage::getTitleFor( 'Book' ),
-							   			  wfMsgHtml( 'coll-show_collection' ) . "<br />($articles)" ,
-							   			  array( 'rel'	 => 'nofollow',
-							   		  			 'title'   => wfMsg( 'coll-show_collection_tooltip' ) ),
-							   			  array(),
-							   			  array( 'known', 'noclasses' )
-							   			)
-							 );
-
+			$out .= Xml::tags(
+				'li',
+				array( 'id' => 'coll-show_collection' ),
+				$sk->link(
+					SpecialPage::getTitleFor( 'Book' ),
+					wfMsgHtml( 'coll-show_collection' ) . "<br />($articles)" ,
+					array(
+						'rel' => 'nofollow',
+						'title' => wfMsg( 'coll-show_collection_tooltip' )
+					),
+					array(),
+					array( 'known', 'noclasses' )
+				)
+			);
 			$msg = htmlspecialchars( wfMsg( 'coll-clear_collection_confirm' ) );
-			$out .= Xml::tags( 'li', array( 'id' => 'coll-clear_collection' ),
-							   $sk->link( SpecialPage::getTitleFor( 'Book', 'clear_collection/' ),
-						   	   			  wfMsgHtml( "coll-clear_collection" ),
-						   	   			  array( 'onclick' => "if (confirm('$msg')) return true; else return false;",
-						   						 'rel'	 => 'nofollow',
-						   						 'title'   => wfMsg( "coll-clear_collection_tooltip" ) ),
-						   	   			  array( 'return_to' => $wgTitle->getPrefixedText() ),
-						   	   			  array( 'known', 'noclasses' )
-						   				)
-							 );
+			$out .= Xml::tags(
+				'li',
+				array( 'id' => 'coll-clear_collection' ),
+				$sk->link(
+					SpecialPage::getTitleFor( 'Book', 'clear_collection/' ),
+					wfMsgHtml( "coll-clear_collection" ),
+					array(
+						'onclick' => "if (confirm('$msg')) return true; else return false;",
+						'rel' => 'nofollow',
+						'title' => wfMsg( "coll-clear_collection_tooltip" )
+					),
+					array( 'return_to' => $wgTitle->getPrefixedText() ),
+					array( 'known', 'noclasses' )
+				)
+			);
 		}
 
-		$out .= Xml::tags( 'li', array( 'id' => 'coll-help_collections' ),
-						   $sk->link( Title::newFromText( wfMsgForContent( 'coll-helppage' ) ),
-						   			  wfMsgHtml( 'coll-help_collections' ),
-						   			  array( 'title' => wfMsg( 'coll-help_collections_tooltip' ) ),
-									  array(),
-						   			  array( 'known', 'noclasses' )
-						   			)
-						 );
-						 
+		$out .= Xml::tags(
+			'li',
+			array( 'id' => 'coll-help_collections' ),
+			$sk->link(
+				Title::newFromText( wfMsgForContent( 'coll-helppage' ) ),
+				wfMsgHtml( 'coll-help_collections' ),
+				array( 'title' => wfMsg( 'coll-help_collections_tooltip' ) ),
+				array(),
+				array( 'known', 'noclasses' )
+			)
+		);
 		$out .= '</ul>';
-		$out .= Xml::element( 'script',
-			array(
-				'type' => $wgJsMimeType,
-			),
+		$out .= Xml::element(
+			'script',
+			array( 'type' => $wgJsMimeType ),
 			"wgCollectionAddRemoveState = '$addRemoveState';"
 		);
-		$out .= Xml::element( 'script', 
+		$out .= Xml::element(
+			'script', 
 			array(
 				'type' => $wgJsMimeType,
 				'src' => "$wgScriptPath/extensions/Collection/collection/portlet.js?$wgCollectionStyleVersion",
 			),
-			'', false
+			'',
+			false
 		);
 
 		// activate popup check:
@@ -301,19 +327,23 @@ class CollectionHooks {
 			. implode( ', ', $wgCollectionArticleNamespaces )
 			. "];"
 			);
-			$out .= Xml::element( 'script',
+			$out .= Xml::element(
+				'script',
 				array(
 					'type' => $wgJsMimeType,
 					'src' => "$wgScriptPath/extensions/Collection/collection/json2.js?$wgCollectionStyleVersion"
 				),
-				'', false
+				'',
+				false
 			);
-			$out .= Xml::element( 'script',
+			$out .= Xml::element(
+				'script',
 				array(
 					'type' => $wgJsMimeType,
 					'src' => "$wgScriptPath/extensions/Collection/collection/popupcheck.js?$wgCollectionStyleVersion"
 				),
-				'', false
+				'',
+				false
 			);
 		}
 
@@ -348,11 +378,15 @@ class CollectionHooks {
 
 	static protected function pageInCategory( $pageId, $categoryName ) {
 		$dbr = wfGetDB( DB_SLAVE );
-		$count = $dbr->selectField( 'categorylinks', 'COUNT(*)',
-									array( 'cl_from' => $pageId,
-										   'cl_to' => $categoryName ),
-									__METHOD__
-								  );
+		$count = $dbr->selectField(
+			'categorylinks',
+			'COUNT(*)',
+			array(
+				'cl_from' => $pageId,
+				'cl_to' => $categoryName
+			),
+			__METHOD__
+		);
 		return ( $count > 0 );
 	}
 }
