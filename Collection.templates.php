@@ -328,7 +328,7 @@ class CollectionSaveOverwriteTemplate extends QuickTemplate {
 	<input name="abort" type="submit" value="<?php $this->msg('coll-no') ?>" />
 	<input name="pcollname" type="hidden" value="<?php echo htmlspecialchars($this->data['pcollname']) ?>" />
 	<input name="ccollname" type="hidden" value="<?php echo htmlspecialchars($this->data['ccollname']) ?>" />
-  <input name="colltype" type="hidden" value="<?php echo htmlspecialchars($this->data['colltype']) ?>" />
+	<input name="colltype" type="hidden" value="<?php echo htmlspecialchars($this->data['colltype']) ?>" />
 </form>
 
 <?php
