@@ -81,14 +81,20 @@ class SpecialCollection extends SpecialPage {
 				if ( !$title ) {
 					return;
 				}
-				self::removeArticle( $title, $oldid );
-				if ( $oldid == 0 ) {
-					$redirectURL = $title->getFullURL();
+				if ( self::removeArticle( $title, $oldid ) ) {
+					if ( $oldid == 0 ) {
+						$redirectURL = $title->getFullURL();
+					} else {
+						$redirectURL = $title->getFullURL( 'oldid=' . $oldid );
+					}
+					$wgUser->invalidateCache();
+					$wgOut->redirect( $redirectURL );
 				} else {
-					$redirectURL = $title->getFullURL( 'oldid=' . $oldid );
+					$wgOut->showErrorPage(
+						'coll-couldnotremovearticle_title',
+						'coll-couldnotremovearticle_msg'
+					);
 				}
-				$wgUser->invalidateCache();
-				$wgOut->redirect( $redirectURL );
 				return;
 			case 'clear_collection/':
 				CollectionSession::clearCollection();
@@ -373,7 +379,7 @@ class SpecialCollection extends SpecialPage {
 
 	static function removeArticle( $title, $oldid=0 ) {
 		if ( !CollectionSession::hasSession() ) {
-			return;
+			return false;
 		}
 		$collection = $_SESSION['wsCollection'];
 		$index = CollectionSession::findArticle( $title->getPrefixedText(), $oldid );
@@ -382,6 +388,7 @@ class SpecialCollection extends SpecialPage {
 		}
 		$_SESSION['wsCollection'] = $collection;
 		CollectionSession::touchSession();
+		return true;
 	}
 
 	static function addCategoryFromName( $name ) {
@@ -439,17 +446,18 @@ class SpecialCollection extends SpecialPage {
 
 	static function removeItem( $index ) {
 		if ( !CollectionSession::hasSession() ) {
-			return;
+			return false;
 		}
 		$collection = $_SESSION['wsCollection'];
 		array_splice( $collection['items'], $index, 1 );
 		$_SESSION['wsCollection'] = $collection;
 		CollectionSession::touchSession();
+		return true;
 	}
 
 	static function moveItem( $index, $delta ) {
 		if ( !CollectionSession::hasSession() ) {
-			return;
+			return false;
 		}
 		$collection = $_SESSION['wsCollection'];
 		$saved = $collection['items'][$index + $delta];
@@ -457,6 +465,7 @@ class SpecialCollection extends SpecialPage {
 		$collection['items'][$index] = $saved;
 		$_SESSION['wsCollection'] = $collection;
 		CollectionSession::touchSession();
+		return true;
 	}
 
 	static function setSorting( $items ) {
