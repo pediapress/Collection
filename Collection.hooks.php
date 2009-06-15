@@ -211,6 +211,8 @@ class CollectionHooks {
 			if ( !is_null( $wgArticle ) ) {
 				$oldid = $wgArticle->getOldID();
 				$params['oldid'] = $oldid;
+			} else {
+				$oldid = 0;
 			}
 
 			if ( $ajaxHint == 'addpage'
