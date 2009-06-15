@@ -2386,6 +2386,10 @@ $messages['he'] = array(
 	'coll-print_template_pattern' => '$1/הדפסה',
 	'coll-unknown_subpage_title' => 'דף משנה בלתי ידוע',
 	'coll-unknown_subpage_text' => 'דף משנה זה של ה[[Special:Book|ספר]] אינו קיים',
+	'coll-couldnotaddarticle_title' => 'דף הוויקי לא נוסף',
+	'coll-couldnotaddarticle_msg' => 'לא ניתן היה להוסיף את דף הוויקי.',
+	'coll-couldnotremovearticle_title' => 'דף הוויקי לא הוסר',
+	'coll-couldnotremovearticle_msg' => 'לא ניתן היה להסיר את דף הוויקי.',
 	'coll-download_as' => 'הורדה בפורמט $1',
 	'coll-noscript_text' => '<h1>JavaScript נדרש!</h1>
 <strong>הדפדפן שלכם אינו תומך ב־JavaScript או שביטלתם את JavaScript בדפדפן זה.
