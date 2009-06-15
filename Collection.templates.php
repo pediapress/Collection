@@ -132,10 +132,10 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
 	<?php
 		if ($GLOBALS['wgUser']->isLoggedIn()) {
 			$showLoginInfo = false;
-			$canSaveUserPage = (empty($GLOBALS['wgCollectionSaveAsUserPageRight']) || $GLOBALS['wgUser']->isAllowed($GLOBALS['wgCollectionSaveAsUserPageRight']));
-			$canSaveCommunityPage = (empty($GLOBALS['wgCollectionSaveAsCommunityPageRight']) || $GLOBALS['wgUser']->isAllowed($GLOBALS['wgCollectionSaveAsCommunityPageRight']));
+			$canSaveUserPage = $GLOBALS['wgUser']->isAllowed('collectionsaveasuserpage');
+			$canSaveCommunityPage = $GLOBALS['wgUser']->isAllowed('collectionsaveascommunitypage');
 		} else {
-			$showLoginInfo = (empty($GLOBALS['wgCollectionSaveAsCommunityPageRight']) || empty($GLOBALS['wgCollectionSaveAsUserPageRight']));
+			$showLoginInfo = true;
 		}
 		if ($GLOBALS['wgEnableWriteAPI'] && ($showLoginInfo || $canSaveUserPage || $canSaveCommunityPage)) {
 	?>
@@ -326,7 +326,9 @@ class CollectionSaveOverwriteTemplate extends QuickTemplate {
 <form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'save_collection/')) ?>" method="post">
 	<input name="overwrite" type="submit" value="<?php $this->msg('coll-yes') ?>" />
 	<input name="abort" type="submit" value="<?php $this->msg('coll-no') ?>" />
-	<input name="colltitle" type="hidden" value="<?php echo htmlspecialchars($this->data['title']->getPrefixedText()) ?>" />
+	<input name="pcollname" type="hidden" value="<?php echo htmlspecialchars($this->data['pcollname']) ?>" />
+	<input name="ccollname" type="hidden" value="<?php echo htmlspecialchars($this->data['ccollname']) ?>" />
+  <input name="colltype" type="hidden" value="<?php echo htmlspecialchars($this->data['colltype']) ?>" />
 </form>
 
 <?php
