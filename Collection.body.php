@@ -595,8 +595,8 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	function getLicenseInfos() {
-		global $wgLicenseName;
-		global $wgLicenseURL;
+		global $wgCollectionLicenseName;
+		global $wgCollectionLicenseURL;
 		global $wgRightsIcon;
 		global $wgRightsPage;
 		global $wgRightsText;
@@ -614,14 +614,14 @@ class SpecialCollection extends SpecialPage {
 			return array( $licenseInfo );
 		}
 
-		if ( $wgLicenseName ) {
-			$licenseInfo['name'] = $wgLicenseName;
+		if ( $wgCollectionLicenseName ) {
+			$licenseInfo['name'] = $wgCollectionLicenseName;
 		} else {
 			$licenseInfo['name'] = wfMsgForContent( 'coll-license' );
 		}
 
-		if ( $wgLicenseURL ) {
-			$licenseInfo['mw_license_url'] = $wgLicenseURL;
+		if ( $wgCollectionLicenseURL ) {
+			$licenseInfo['mw_license_url'] = $wgCollectionLicenseURL;
 		} else {
 			$licenseInfo['mw_rights_icon'] = $wgRightsIcon;
 			$licenseInfo['mw_rights_page'] = $wgRightsPage;

@@ -82,10 +82,10 @@ $wgCommunityCollectionNamespace = NS_PROJECT;
 $wgCollectionMaxArticles = 500;
 
 /** Name of license */
-$wgLicenseName = null;
+$wgCollectionLicenseName = null;
 
 /** HTTP(s) URL pointing to license in wikitext format: */
-$wgLicenseURL = null;
+$wgCollectionLicenseURL = null;
 
 /** List of available download formats,
     as mapping of mwlib writer to format name */
