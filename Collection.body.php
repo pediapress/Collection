@@ -66,7 +66,6 @@ class SpecialCollection extends SpecialPage {
 					} else {
 						$redirectURL = $title->getFullURL( 'oldid=' . $oldid );
 					}
-					$wgUser->invalidateCache();
 					$wgOut->redirect( $redirectURL );
 				} else {
 					$wgOut->showErrorPage(
@@ -87,7 +86,6 @@ class SpecialCollection extends SpecialPage {
 					} else {
 						$redirectURL = $title->getFullURL( 'oldid=' . $oldid );
 					}
-					$wgUser->invalidateCache();
 					$wgOut->redirect( $redirectURL );
 				} else {
 					$wgOut->showErrorPage(
@@ -98,7 +96,6 @@ class SpecialCollection extends SpecialPage {
 				return;
 			case 'clear_collection/':
 				CollectionSession::clearCollection();
-				$wgUser->invalidateCache();
 				$redirect = $wgRequest->getVal( 'return_to' );
 				$redirectURL = SkinTemplate::makeSpecialUrl( 'Book' );
 				if ( !empty( $redirect ) ) {
@@ -111,12 +108,10 @@ class SpecialCollection extends SpecialPage {
 				return;
 			case 'set_titles/':
 				self::setTitles( $wgRequest->getText( 'collectionTitle', '' ), $wgRequest->getText( 'collectionSubtitle', '') );
-				$wgUser->invalidateCache();
 				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
 			case 'sort_items/':
 				self::sortItems();
-				$wgUser->invalidateCache();
 				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
 			case 'add_category/':
@@ -127,16 +122,13 @@ class SpecialCollection extends SpecialPage {
 				} else {
 					$wgOut->redirect( $wgRequest->getVal( 'return_to', $title->getFullURL() ) );
 				}
-				$wgUser->invalidateCache();
 				return;
 			case 'remove_item/':
 				self::removeItem( $wgRequest->getInt( 'index', 0 ) );
-				$wgUser->invalidateCache();
 				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
 			case 'move_item/':
 				self::moveItem( $wgRequest->getInt( 'index', 0 ), $wgRequest->getInt( 'delta', 0 ) );
-				$wgUser->invalidateCache();
 				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
 			case 'load_collection/':
