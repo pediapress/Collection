@@ -294,7 +294,7 @@ class CollectionHooks {
 		);
 		$out .= '</ul>';
 		$out .= Skin::makeVariablesScript(
-			array( 'wgCollectionAddRemoveSate' => $addRemoveSate )
+			array( 'wgCollectionAddRemoveSate' => $addRemoveState )
 		);
 		$out .= Xml::element(
 			'script', 
