@@ -159,7 +159,7 @@ class SpecialCollection extends SpecialPage {
 					return;
 				}
 				$collection = $this->loadCollection( $title );
-				$partner = $wgRequest->getVal( 'partner', 'pediapress' );
+				$partner = $wgRequest->getVal( 'partner', key( $this->mPODPartners ) );
 				return $this->postZIP( $collection, $partner );
 			case 'save_collection/':
 				if ( $wgRequest->getVal( 'abort' ) ) {
@@ -207,18 +207,22 @@ class SpecialCollection extends SpecialPage {
 					$wgRequest->getVal( 'writer', '' )
 				);
 			case 'forcerender/':
-				return $this->forceRenderCollection();
+				$this->forceRenderCollection();
+				return;
 			case 'rendering/':
-				return $this->renderRenderingPage();
+				$this->renderRenderingPage();
+				return;
 			case 'download/':
-				return $this->download();
+				$this->download();
+				return;
 			case 'render_article/':
 				$title = Title::newFromText( $wgRequest->getVal( 'arttitle', '' ) );
 				if ( !$title ) {
 					return;
 				}
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
-				return $this->renderArticle( $title, $oldid, $wgRequest->getVal( 'writer', 'rl' ) );
+				$this->renderArticle( $title, $oldid, $wgRequest->getVal( 'writer', 'rl' ) );
+				return;
 			case 'render_collection/':
 				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ));
 				if ( !$title ) {
@@ -231,7 +235,8 @@ class SpecialCollection extends SpecialPage {
 				return;
 			case 'post_zip/':
 				$partner = $wgRequest->getVal( 'partner', 'pediapress' );
-				return $this->postZIP( $_SESSION['wsCollection'], $partner );
+				$this->postZIP( $_SESSION['wsCollection'], $partner );
+				return;
 			case '':
 				$this->renderSpecialPage();
 				return;
