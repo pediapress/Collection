@@ -1035,10 +1035,10 @@ class SpecialCollection extends SpecialPage {
 		if ( $toFile ) {
 			curl_setopt( $c, CURLOPT_FILE, $toFile );
 		} else {
-			ob_start();
+			curl_setopt( $c, CURLOPT_RETURNTRANSFER, true );
 		}
 
-		curl_exec( $c );
+		$result = curl_exec( $c );
 		if ( curl_errno( $c ) != CURLE_OK ) {
 			$text = false;
 			$errorMessage = curl_error( $c );
@@ -1058,8 +1058,7 @@ class SpecialCollection extends SpecialPage {
 				unset( $matches );
 			}
 			if ( !$toFile ) {
-				$text = ob_get_contents();
-				ob_end_clean();
+				$text = $result;
 			}
 			$errorMessage = '';
 		}
