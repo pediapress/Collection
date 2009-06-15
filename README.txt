@@ -160,24 +160,24 @@ Installation and Configuration of the Collection Extension
 
    Default is 500.
 
-  *$wgLicenseName (string or null)*
+  *$wgCollectionLicenseName (string or null)*
    License name for articles in this MediaWiki.
    If set to ``null`` the localized version of the word "License" is used.
 
    Default is null.
 
-  *$wgLicenseURL (string or null)*
+  *$wgCollectionLicenseURL (string or null)*
    HTTP URL of an article containing the full license text in wikitext format
    for articles in this MediaWiki. E.g.
 
-       $wgLicenseURL = 'http://en.wikipedia.org/w/index.php?title=Wikipedia:Text_of_the_GNU_Free_Documentation_License&action=raw';
+       $wgCollectionLicenseURL = 'http://en.wikipedia.org/w/index.php?title=Wikipedia:Text_of_the_GNU_Free_Documentation_License&action=raw';
 
    for the GFDL.
    If set to null, the standard MediaWiki variables $wgRightsPage,
    $wgRightsUrl and $wgRightsText are used for license information.
 
    If your MediaWiki contains articles with different licenses, make sure
-   that each article contains the name of the license and set $wgLicenseURL
+   that each article contains the name of the license and set $wgCollectionLicenseURL
    to an article that contains all needed licenses.
 
 * This step is needed for MediaWiki version < 1.14 (at the time of writing
