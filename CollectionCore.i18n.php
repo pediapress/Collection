@@ -575,10 +575,10 @@ $messages['fi'] = array(
  * @author Verdy p
  */
 $messages['fr'] = array(
-	'coll-add_category' => 'Ajouter une catégorie',
+	'coll-add_category' => 'Ajouter cette catégorie',
 	'coll-add_category_popup' => 'Ajouter les pages de la catégorie liée à votre livre',
 	'coll-add_category_tooltip' => 'Ajouter tous les articles de cette catégorie à votre livre',
-	'coll-add_page' => 'Ajouter la page au livre',
+	'coll-add_page' => 'Ajouter cette page au livre',
 	'coll-add_page_popup' => 'Ajouter la page liée à votre livre',
 	'coll-add_page_tooltip' => 'Ajouter la page courante à votre livre',
 	'coll-bookscategory' => 'Livres',
