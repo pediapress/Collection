@@ -168,8 +168,8 @@ addOnloadHook(function() {
 	// replace two methods from the Navpopup object
 	Navpopup.prototype.unhide = collectionPopupUnhide;
 	Navpopup.prototype.setInnerHTML = collectionPopupSetInnerHTML;
-		// disable article fetching:
-		pg.option.simplePopups = true;
+	// disable article fetching:
+	pg.option.simplePopups = true;
 	refreshCollectionArticleList();
 });
 
