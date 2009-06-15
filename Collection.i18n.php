@@ -1155,6 +1155,10 @@ $messages['dsb'] = array(
 	'coll-print_template_pattern' => '$1/Śišćaś',
 	'coll-unknown_subpage_title' => 'Njeznaty pódbok',
 	'coll-unknown_subpage_text' => 'Toś ten pódbok [[Special:Book|knigłow]] njeeksistěrujo',
+	'coll-couldnotaddarticle_title' => 'Nastawk njejo se dał pśidaś',
+	'coll-couldnotaddarticle_msg' => 'Nastawk njejo se dał pśidaś.',
+	'coll-couldnotremovearticle_title' => 'Nastawk njejo se dał wótpóraś.',
+	'coll-couldnotremovearticle_msg' => 'Nastawk njejo se dał wótpóraś.',
 	'coll-download_as' => 'Ako $1 ześěgnuś',
 	'coll-noscript_text' => '<h1>JavaScript jo trěbny!</h1>
 <strong>Twój wobglědowak njepódpěrujo JavaScript abo JavaScript jo znjemóžnjony.
@@ -1275,6 +1279,8 @@ $messages['el'] = array(
 	'coll-print_template_pattern' => '$1/Εκτύπωση',
 	'coll-unknown_subpage_title' => 'Άγνωστη υποσελίδα',
 	'coll-unknown_subpage_text' => 'Αυτή η υποσελίδα [[Special:Book|Βιβλίου]] δεν υπάρχει',
+	'coll-couldnotaddarticle_title' => 'Δεν ήταν εφικτό να προστεθεί σελίδα βίκι.',
+	'coll-couldnotaddarticle_msg' => 'Η σελίδα βίκι δεν ήταν δυνατό να προστεθεί.',
 	'coll-download_as' => 'Κατέβασμα ως $1',
 	'coll-noscript_text' => '<h1>Χρειάζεται JavaScript!</h1>
 <strong>Ο περιηγητής σας δεν υποστηρίζει JavaScript ή η JavaScript έχει απενεργοποιηθεί.
@@ -1954,6 +1960,10 @@ $messages['fr'] = array(
 	'coll-print_template_pattern' => '$1/Imprimer',
 	'coll-unknown_subpage_title' => 'Sous-page inconnue',
 	'coll-unknown_subpage_text' => "Cette sous-page de [[Special:Book|livre]] n'existe pas",
+	'coll-couldnotaddarticle_title' => 'Impossible d’ajouter la page du wiki',
+	'coll-couldnotaddarticle_msg' => 'La page du wiki ne peut pas être ajouté.',
+	'coll-couldnotremovearticle_title' => 'Impossible de supprimer la page du wiki',
+	'coll-couldnotremovearticle_msg' => 'La page du wiki ne peut pas être enlevée.',
 	'coll-download_as' => 'Télécharger comme $1',
 	'coll-noscript_text' => '<h1>Javascript est nécessaire !</h1>
 <strong>Votre navigateur ne supporte pas Javascript ou bien vous l’avez désactivé.
@@ -1975,7 +1985,7 @@ Cette page ne fonctionnera pas correctement tant que Javascript n’est pas acti
 	'coll-title' => 'Titre :',
 	'coll-subtitle' => 'Sous-titre :',
 	'coll-contents' => 'Contenus',
-	'coll-drag_and_drop' => 'Utiliser le glisser-déposer pour réordonner les pages et chapitres wiki.',
+	'coll-drag_and_drop' => 'Utiliser le glisser-déposer pour réordonner les pages wiki et chapitres.',
 	'coll-create_chapter' => 'Créer un chapitre',
 	'coll-sort_alphabetically' => 'Trier alphabétiquement',
 	'coll-rename' => 'Renommer',
@@ -2070,6 +2080,10 @@ $messages['gl'] = array(
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Subpáxina descoñecida',
 	'coll-unknown_subpage_text' => 'Esta subpáxina de [[Special:Book|Libro]] non existe',
+	'coll-couldnotaddarticle_title' => 'Non se puido engadir o artigo',
+	'coll-couldnotaddarticle_msg' => 'O artigo non puido ser engadido.',
+	'coll-couldnotremovearticle_title' => 'Non se puido eliminar o artigo',
+	'coll-couldnotremovearticle_msg' => 'O artigo non puido ser eliminado.',
 	'coll-download_as' => 'Descargar como $1',
 	'coll-noscript_text' => '<h1>Requírese o JavaScript!</h1>
 <strong>O seu navegador non soporta o JavaScript ou o JavaScript foi deshabilitado.
@@ -2672,6 +2686,10 @@ $messages['hsb'] = array(
 	'coll-print_template_pattern' => '$1/Ćišćeć',
 	'coll-unknown_subpage_title' => 'Njeznata podstrona',
 	'coll-unknown_subpage_text' => 'Tuta podstrona [[Special:Book|knihi]] njeeksistuje',
+	'coll-couldnotaddarticle_title' => 'Nastawk njeda so přidać',
+	'coll-couldnotaddarticle_msg' => 'Nastawk njeje so přidać dał.',
+	'coll-couldnotremovearticle_title' => 'Nastawk njeda so wotstronić',
+	'coll-couldnotremovearticle_msg' => 'Nastawk njeje so wotstronić dał.',
 	'coll-download_as' => 'Jako $1 sćahnyć',
 	'coll-noscript_text' => '<h1>JavaScript je trěbny!</h1>
 <strong>Twój wobhladowak njepodpěruje JavaScript abo JavaScript je wupinjeny.
@@ -3368,6 +3386,10 @@ $messages['ja'] = array(
 	'coll-print_template_pattern' => '$1/印刷用',
 	'coll-unknown_subpage_title' => '不明なサブページ',
 	'coll-unknown_subpage_text' => 'この[[Special:Book|ブック]]のサブページは存在しません',
+	'coll-couldnotaddarticle_title' => 'ページを追加できませんでした',
+	'coll-couldnotaddarticle_msg' => 'このページは追加できませんでした。',
+	'coll-couldnotremovearticle_title' => 'ページを削除できませんでした',
+	'coll-couldnotremovearticle_msg' => 'このページは削除できませんでした。',
 	'coll-download_as' => '$1としてダウンロード',
 	'coll-noscript_text' => '<h1>JavaScriptを利用しています！</h1>
 <strong>ご利用のブラウザは JavaScript をサポートしていないか、JavaScript が無効になっています。このページは、JavaScript が有効になっていない場合、正しく動作しません。</strong>',
@@ -4541,6 +4563,10 @@ $messages['nl'] = array(
 	'coll-print_template_pattern' => '$1/Afdrukken',
 	'coll-unknown_subpage_title' => 'Onbekende subpagina',
 	'coll-unknown_subpage_text' => 'Deze subpagina van [[Special:Book|Boek]] bestaat niet',
+	'coll-couldnotaddarticle_title' => 'De wikipagina kon niet toegevoegd worden',
+	'coll-couldnotaddarticle_msg' => 'De wikipagina kon niet toegevoegd worden.',
+	'coll-couldnotremovearticle_title' => 'De wikipagina kon niet verwijderd worden',
+	'coll-couldnotremovearticle_msg' => 'De wikipagina kon niet verwijderd worden.',
 	'coll-download_as' => 'Downloaden als $1',
 	'coll-noscript_text' => '<h1>JavaScript is vereist!</h1>
 <strong>Uw browser understeunt geen JavaScript of JavaScript is uitgeschakeld.
@@ -5416,6 +5442,10 @@ $messages['ru'] = array(
 	'coll-print_template_pattern' => '$1/Печать',
 	'coll-unknown_subpage_title' => 'Неизвестная подстраница',
 	'coll-unknown_subpage_text' => 'Этой подстраницы [[Special:Book|книги]] не существует',
+	'coll-couldnotaddarticle_title' => 'Не удалось добавить статью',
+	'coll-couldnotaddarticle_msg' => 'Эта статья не может быть добавлена.',
+	'coll-couldnotremovearticle_title' => 'Не удалось удалить статью',
+	'coll-couldnotremovearticle_msg' => 'Эта статья не может быть удалена.',
 	'coll-download_as' => 'Загрузить как $1',
 	'coll-noscript_text' => '<h1>Требуется JavaScript!</h1>
 <strong>Ваш браузер не поддерживает JavaScript или данная поддержка была отключена.
@@ -6513,6 +6543,10 @@ $messages['tr'] = array(
 	'coll-print_template_pattern' => '$1/Yazdır',
 	'coll-unknown_subpage_title' => 'Bilinmeyen altsayfa',
 	'coll-unknown_subpage_text' => '[[Special:Book|Koleksiyonun]] bu altsayfası mevcut değil',
+	'coll-couldnotaddarticle_title' => 'Viki sayfası eklenemiyor',
+	'coll-couldnotaddarticle_msg' => 'Viki sayfası eklenemedi.',
+	'coll-couldnotremovearticle_title' => 'Viki sayfası kaldırılamıyor',
+	'coll-couldnotremovearticle_msg' => 'Viki sayfası kaldırılamadı.',
 	'coll-download_as' => '$1 olarak indir',
 	'coll-noscript_text' => '<h1>JavaScript gerekli!</h1>
 <strong>Tarayıcınız JavaScript desteklemiyor ya da JavaScript kapalı.
