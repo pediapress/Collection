@@ -314,6 +314,9 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	static function renameChapter( $index, $name ) {
+		if (!is_int( $index ) ) {
+			return;
+		}
 		$collection = $_SESSION['wsCollection'];
 		if ( $collection['items'][$index]['type'] != 'chapter' ) {
 			return;
@@ -503,12 +506,12 @@ class SpecialCollection extends SpecialPage {
 				$collection['subtitle'] = $match[ 1 ];
 			} else if ( !$append && preg_match( '/^==\s*(.*?)\s*==$/', $line, $match) ) {
 				$collection['title'] = $match[ 1 ];
-			} else if ($line{ 0 } == ';') { // chapter
+			} else if (substr( $line, 0, 1 ) == ';') { // chapter
 				$items[] = array(
 					'type' => 'chapter',
 					'title' => trim( substr( $line, 1 ) ),
 				);
-			} else if ( $line{ 0 } == ':' ) { // article
+			} else if ( substr( $line, 0, 1 ) == ':' ) { // article
 				$articleTitle = trim( substr( $line, 1 ) );
 				if ( preg_match( '/\[\[:?(.*?)(\|(.*?))?\]\]/', $articleTitle, $match ) ) {
 					$articleTitle = $match[1];
