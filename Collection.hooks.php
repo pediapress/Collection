@@ -88,7 +88,7 @@ class CollectionHooks {
 	static function insertMonoBookToolboxLink( &$skinTemplate ) {
 		global $wgCollectionFormats;
 
-		if( !empty( $skinTemplate->data['nav_urls']['printable_version_pdf']['href'] ) ) {
+		if( isset( $skinTemplate->data['nav_urls']['printable_version_pdf'] ) ) {
 			$href = htmlspecialchars( $skinTemplate->data['nav_urls']['printable_version_pdf']['href'] );
 			$label = htmlspecialchars( $skinTemplate->data['nav_urls']['printable_version_pdf']['text'] );
 			print "<li id=\"t-download-as-pdf\"><a href=\"$href\" rel=\"nofollow\">$label</a></li>";
