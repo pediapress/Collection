@@ -293,14 +293,14 @@ class SpecialCollection extends SpecialPage {
 		$new_items = array();
 		foreach ( $collection['items'] as $item ) {
 			if ( $item['type'] == 'chapter' ) {
-				usort( $articles, array( self, 'title_cmp' ) );
+				usort( $articles, array( __CLASS__, 'title_cmp' ) );
 				$new_items = array_merge( $new_items, $articles, array( $item ) );
 				$articles = array();
 			} elseif ( $item['type'] == 'article' ) {
 				$articles[] = $item;
 			}
 		}
-		usort( $articles, array( self, 'title_cmp' ) );
+		usort( $articles, array( __CLASS__, 'title_cmp' ) );
 		$collection['items'] = array_merge( $new_items, $articles );
 		$_SESSION['wsCollection'] = $collection;
 		CollectionSession::touchSession();

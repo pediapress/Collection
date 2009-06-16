@@ -130,6 +130,9 @@ $wgHooks['MonoBookTemplateToolboxEnd'][] = 'CollectionHooks::insertMonoBookToolb
 $wgHooks['SkinBuildSidebar'][] = 'CollectionHooks::buildSidebar';
 $wgHooks['OutputPageCheckLastModified'][] = 'CollectionHooks::checkLastModified';
 
+$wgAvailableRights[] = 'collectionsaveasuserpage';
+$wgAvailableRights[] = 'collectionsaveascommunitypage';
+
 # register global Ajax functions:
 
 function wfAjaxGetCollection() {
