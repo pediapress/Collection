@@ -156,7 +156,7 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
 				<?php } else { ?>
 				<input type="hidden" name="colltype" value="personal" />
 				<?php } ?>
-				<label for="personalCollTitle"><a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Prefixindex', 'from=' . $GLOBALS['wgUser']->getName() . '/' . $bookname . '/&namespace=2')) ?>"><?php echo htmlspecialchars($GLOBALS['wgUser']->getUserPage()->getPrefixedText() . '/' . $bookname . '/') ?></a></label>
+				<label for="personalCollTitle"><a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Prefixindex', 'prefix=' . wfUrlencode($GLOBALS['wgUser']->getName()) . '/' . wfUrlencode($bookname) . '/&namespace=2')) ?>"><?php echo htmlspecialchars($GLOBALS['wgUser']->getUserPage()->getPrefixedText() . '/' . $bookname . '/') ?></a></label>
 				</td>
 				<td style="text-align:right;">
 				<input id="personalCollTitle" type="text" name="pcollname" />
@@ -169,7 +169,7 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
 				<?php } else { ?>
 				<input type="hidden" name="colltype" value="community" />
 				<?php } ?>
-				<label for="communityCollTitle"><a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Prefixindex', 'from=' . $bookname . '/&namespace=' . $communityCollNS)) ?>"><?php echo htmlspecialchars(Title::makeTitle($communityCollNS, $bookname)->getPrefixedText() . '/') ?></a></label>
+				<label for="communityCollTitle"><a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Prefixindex', 'prefix=' . wfUrlencode($bookname) . '/&namespace=' . $communityCollNS)) ?>"><?php echo htmlspecialchars(Title::makeTitle($communityCollNS, $bookname)->getPrefixedText() . '/') ?></a></label>
 				</td>
 				<td style="text-align:right;">
 				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled" />
