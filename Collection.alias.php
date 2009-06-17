@@ -119,7 +119,7 @@ $aliases['ia'] = array(
 
 /** Indonesian (Bahasa Indonesia) */
 $aliases['id'] = array(
-	'Book' => array( 'Koleksi' ),
+	'Book' => array( 'Buku', 'Koleksi' ),
 );
 
 /** Ido (Ido) */

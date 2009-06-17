@@ -872,7 +872,7 @@ $messages['id'] = array(
 	'coll-bookscategory' => 'Buku',
 	'coll-clear_collection' => 'Hapus buku',
 	'coll-clear_collection_confirm' => 'Apakah Anda benar-benar ingin membersihkan buku Anda sepenuhnya?',
-	'coll-clear_collection_tooltip' => 'Hapus semua halaman wiki dari buku ini',
+	'coll-clear_collection_tooltip' => 'Hapus semua halaman wiki dari buku Anda',
 	'coll-create_a_book' => 'Buat buku',
 	'coll-help_collections' => 'Bantuan',
 	'coll-help_collections_tooltip' => 'Tampilkan bantuan tentang peralatan buku',
@@ -882,10 +882,10 @@ $messages['id'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|halaman|halaman}}',
 	'coll-popup_help_text' => 'Untuk menon-aktifkan fitur ini, klik "Hapus buku" di kotak "Buat buku"',
 	'coll-printable_version_pdf' => 'Buat PDF',
-	'coll-remove_page' => 'Buang halaman dari buku',
+	'coll-remove_page' => 'Buang dari buku',
 	'coll-remove_page_popup' => 'Buang halaman wiki terkait dari buku Anda',
 	'coll-remove_page_tooltip' => 'Buang halaman wiki ini dari buku Anda',
-	'coll-show_collection' => 'Tampilkan buku',
+	'coll-show_collection' => 'Lihat buku',
 	'coll-show_collection_tooltip' => 'Klik untuk menyunting/mengunduh/memesan buku Anda',
 );
 
