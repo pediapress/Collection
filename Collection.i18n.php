@@ -144,6 +144,7 @@ Please contact your MediaWiki administrator.',
  * @author Mormegil
  * @author Purodha
  * @author Raymond
+ * @author Rex
  * @author Siebrand
  * @author Wmr89502270
  */
@@ -165,6 +166,7 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-show' => '{{Identical|Show}}',
 	'coll-title' => '{{Identical|Title}}',
 	'coll-contents' => '{{Identical|Contents}}',
+	'coll-empty_collection' => 'Translate "empty" as in "an empty book" (adj), not "empty the book" (verb)',
 	'coll-save_collection' => '',
 	'coll-save_category' => 'Do not change <nowiki>{{MediaWiki:Coll-bookscategory}}</nowiki>. The link and category name should be in the content language.',
 	'coll-yes' => '{{Identical|Yes}}',
@@ -259,6 +261,7 @@ $messages['am'] = array(
 );
 
 /** Arabic (العربية)
+ * @author Antime
  * @author Ciphers
  * @author Meno25
  * @author OsamaK
@@ -273,6 +276,10 @@ $messages['ar'] = array(
 	'coll-print_template_pattern' => '$1/طبع',
 	'coll-unknown_subpage_title' => 'صفحة فرعية غير معروفة',
 	'coll-unknown_subpage_text' => 'هذه الصفحة الفرعية [[Special:Book|للكتاب]] غير موجودة',
+	'coll-couldnotaddarticle_title' => 'لم يمكن إضافة صفحة الويكي',
+	'coll-couldnotaddarticle_msg' => 'صفحة الويكي لم يمكن إضافتها.',
+	'coll-couldnotremovearticle_title' => 'لم يمكن إزالة صفحة الويكي',
+	'coll-couldnotremovearticle_msg' => 'صفحة الويكي لم يمكن إزالتها.',
 	'coll-download_as' => 'تحميل ك$1',
 	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
 <strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
@@ -511,6 +518,10 @@ $messages['be-tarask'] = array(
 	'coll-print_template_pattern' => '$1/Для друку',
 	'coll-unknown_subpage_title' => 'Невядомая падстаронка',
 	'coll-unknown_subpage_text' => 'Гэтай падстаронкі [[Special:Book|кнігі]] не існуе',
+	'coll-couldnotaddarticle_title' => 'Немагчыма дадаць вікі-старонку',
+	'coll-couldnotaddarticle_msg' => 'Вікі-старонка ня можа быць дададзеная.',
+	'coll-couldnotremovearticle_title' => 'Немагчыма выдаліць вікі-старонку',
+	'coll-couldnotremovearticle_msg' => 'Вікі-старонка ня можа быць выдаленая.',
 	'coll-download_as' => 'Загрузіць як $1',
 	'coll-noscript_text' => '<h1>Патрэбны JavaScript!</h1>
 <strong>Ваш браўзэр не падтрымлівае JavaScript альбо падтрымка JavaScript была адключаная.
@@ -665,6 +676,10 @@ $messages['bs'] = array(
 	'coll-print_template_pattern' => '$1/Štampaj',
 	'coll-unknown_subpage_title' => 'Nepoznata podstranica',
 	'coll-unknown_subpage_text' => 'Ova podstranica [[Special:Book|knjige]] ne postoji',
+	'coll-couldnotaddarticle_title' => 'Ne može se dodati wiki stranica',
+	'coll-couldnotaddarticle_msg' => 'Wiki stranica se nije mogla dodati.',
+	'coll-couldnotremovearticle_title' => 'Ne može se ukloniti wiki stranica',
+	'coll-couldnotremovearticle_msg' => 'Wiki stranica se nije mogla ukloniti.',
 	'coll-download_as' => 'Učitaj kao $1',
 	'coll-noscript_text' => '<h1>JavaScript je neophodan!</h1>
 <strong>Vaš preglednik ne podržava JavaScript ili je JavaScript isključen.
@@ -1011,6 +1026,10 @@ $messages['de'] = array(
 	'coll-print_template_pattern' => '$1/Druck',
 	'coll-unknown_subpage_title' => 'Unbekannte Unterseite',
 	'coll-unknown_subpage_text' => 'Diese Unterseite von [[Special:Book|Buch]] existiert nicht',
+	'coll-couldnotaddarticle_title' => 'Wikiseite konnte nicht hinzugefügt werden',
+	'coll-couldnotaddarticle_msg' => 'Die Wikiseite konnte nicht hinzugefügt werden.',
+	'coll-couldnotremovearticle_title' => 'Wikiseite konnte nicht entfernt werden',
+	'coll-couldnotremovearticle_msg' => 'Die Wikiseite konnte nicht entfernt werden.',
 	'coll-download_as' => 'Als $1 herunterladen',
 	'coll-noscript_text' => '<h1>JavaScript wird benötigt!</h1>
 <strong>Dein Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
@@ -1281,6 +1300,7 @@ $messages['el'] = array(
 	'coll-unknown_subpage_text' => 'Αυτή η υποσελίδα [[Special:Book|Βιβλίου]] δεν υπάρχει',
 	'coll-couldnotaddarticle_title' => 'Δεν ήταν εφικτό να προστεθεί σελίδα βίκι.',
 	'coll-couldnotaddarticle_msg' => 'Η σελίδα βίκι δεν ήταν δυνατό να προστεθεί.',
+	'coll-couldnotremovearticle_title' => 'Δεν ήταν εφικτό να αφαιρεθεί αυτή η σελίδα βίκι',
 	'coll-download_as' => 'Κατέβασμα ως $1',
 	'coll-noscript_text' => '<h1>Χρειάζεται JavaScript!</h1>
 <strong>Ο περιηγητής σας δεν υποστηρίζει JavaScript ή η JavaScript έχει απενεργοποιηθεί.
@@ -2215,6 +2235,10 @@ $messages['gsw'] = array(
 	'coll-print_template_pattern' => '$1/Druck',
 	'coll-unknown_subpage_title' => 'Nit bekannti Untersyte',
 	'coll-unknown_subpage_text' => 'Die Untersyte vu dr [[Special:Book|Buech]] git s nit',
+	'coll-couldnotaddarticle_title' => 'Cha d Wikisyte nit zuefiege',
+	'coll-couldnotaddarticle_msg' => 'D Wikisyte het nit chenne zuegfiegt wäre.',
+	'coll-couldnotremovearticle_title' => 'D Wikisyte het nit chenne usegnuu wäre',
+	'coll-couldnotremovearticle_msg' => 'D Wikisyte het nit chenne uusegnuu wäre.',
 	'coll-download_as' => 'As $1 abelade',
 	'coll-noscript_text' => '<h1>S brucht JavaScript!</h1>
 <strong>Dyy Browser unterstitzt kei JavaScript oder s JavaScript isch deaktiviert.
@@ -3119,6 +3143,10 @@ $messages['id'] = array(
 	'coll-print_template_pattern' => '$1/Cetak',
 	'coll-unknown_subpage_title' => 'Subhalaman tak dikenal',
 	'coll-unknown_subpage_text' => 'Subhalaman dari [[Special:Book|buku]] ini tak tersedia',
+	'coll-couldnotaddarticle_title' => 'Tidak dapat menambahkan halaman wiki',
+	'coll-couldnotaddarticle_msg' => 'Halaman wiki ini tidak dapat ditambahkan.',
+	'coll-couldnotremovearticle_title' => 'Tidak dapat membuang halaman wiki',
+	'coll-couldnotremovearticle_msg' => 'Halaman wiki tidak dapat dibuang.',
 	'coll-download_as' => 'Unduh sebagai $1',
 	'coll-noscript_text' => '<h1>Diperlukan JavaScript!</h1>
 <strong>Penjelajah web Anda tidak mendukung JavaScript atau JavaScript telah dimatikan.
@@ -3152,8 +3180,8 @@ Halaman ini tidak akan bekerja dengan benar, kecuali jika JavaScript diaktifkan.
 	'coll-post_failed_msg' => 'Permintaan POST untuk $1 gagal ($2).',
 	'coll-mwserve_failed_title' => 'Kesalahan server pengolahan',
 	'coll-mwserve_failed_msg' => 'Terjadi suatu kesalahan berikut pada server pengolahan: <nowiki>$1</nowiki>',
-	'coll-error_reponse' => 'Respon kesalahan dari server',
-	'coll-empty_collection' => 'Kosongkan buku',
+	'coll-error_reponse' => 'Respons kesalahan dari server',
+	'coll-empty_collection' => 'Buku kosong',
 	'coll-revision' => 'Revisi: $1',
 	'coll-save_collection_title' => 'Simpan dan bagikan buku Anda',
 	'coll-save_collection_text' => 'Pilih suatu tempat penyimpanan untuk buku Anda:',
@@ -3808,6 +3836,10 @@ $messages['ksh'] = array(
 	'coll-print_template_pattern' => '$1/Dröcke',
 	'coll-unknown_subpage_title' => 'Unbekannte Ungersigg',
 	'coll-unknown_subpage_text' => 'Di Ungersigg fun „[[Special:Book|Booch]]“ jidd_et nit',
+	'coll-couldnotaddarticle_title' => 'Kunnt de Wiki-Sigg nit dobei donn',
+	'coll-couldnotaddarticle_msg' => 'Di Sigg vum Wiki kunnt nit dobei jedonn wääde.',
+	'coll-couldnotremovearticle_title' => 'Kunnt de Wiki-Sigg nit fott lohße',
+	'coll-couldnotremovearticle_msg' => 'Di Sigg vum Wiki kunnt nit fott jelohße wääde.',
 	'coll-download_as' => 'Als $1 eronger laade',
 	'coll-noscript_text' => '<h1>Bruch JavaSkripp!</h1>
 <strong>Dinge Brauser kann kei JavaSkripp udder et es affjeschalldt.
@@ -3887,7 +3919,7 @@ Opjepaß:
 	'coll-notfound_title' => 'Booch nit jefonge',
 	'coll-notfound_text' => 'Mer kunnte de Sigg för dat Booch nit fenge.',
 	'coll-download_notfound_title' => 'Di Datei ham_mer nit jefonge',
-	'coll-download_notfound_text' => 'Di Dattei, di De eronger laade wells, di jidd_Et jaa_nit: Müjjelesch, dat se fottjeschmeße wood un neu opjebout wääde moß.',
+	'coll-download_notfound_text' => 'Di Dattei, di De eronger laade wells, di jidd_et jaa_nit: müjjelesch, dat se fottjeschmeße wood, un neu opjebout wääde moß.',
 	'coll-is_cached' => '<ul><li>Mer han en Version fun dämm Dokkemänt em ZwescheShpeicher, et moot nit widder neu ußjejovve wääde. <a href="$1">Doch neu widder ußjevve.</a></li></ul>',
 	'coll-excluded-templates' => '* De Schablone us dä Saachjropp [[:Category:$1|$1]] wore ußjeschloße.',
 	'coll-blacklisted-templates' => '* Schabloone en de „Schwatze Leß“ ([[:$1]]) sin nit met dobei.',
@@ -4135,8 +4167,10 @@ $messages['lo'] = array(
 
 /** Lithuanian (Lietuvių)
  * @author Homo
+ * @author Matasg
  */
 $messages['lt'] = array(
+	'coll-desc' => '[[Special:Book|Kurti knygas]]',
 	'coll-collection' => 'Knyga',
 	'coll-collections' => 'Knygos',
 	'coll-print_template_prefix' => 'Spausdinti',
@@ -4149,7 +4183,8 @@ $messages['lt'] = array(
 	'coll-cancel' => 'Atšaukti',
 	'coll-update' => 'Atnaujinti',
 	'coll-notfound_title' => 'Knyga nerasta',
-	'coll-about_pp' => 'Apie',
+	'coll-book_title' => 'Užsisakyti spausdintą knygą',
+	'coll-about_pp' => 'Apie $1',
 	'coll-license' => 'Licencija',
 	'coll-return_to' => 'Grįžti į [[:$1]]',
 );
@@ -4791,6 +4826,10 @@ $messages['no'] = array(
 	'coll-print_template_pattern' => '$1/Skriv ut',
 	'coll-unknown_subpage_title' => 'Ukjent underside',
 	'coll-unknown_subpage_text' => "Denne undersiden av ''[[Special:Book|Bok]]'' finnes ikke",
+	'coll-couldnotaddarticle_title' => 'Kunne ikke legge til wikiside',
+	'coll-couldnotaddarticle_msg' => 'Wikisiden kunne ikke legges til.',
+	'coll-couldnotremovearticle_title' => 'Kunne ikke fjerne wikisiden',
+	'coll-couldnotremovearticle_msg' => 'Wikisiden kunne ikke fjernes.',
 	'coll-download_as' => 'Last ned som $1',
 	'coll-noscript_text' => '<h1>JavaScript er påkrevd!</h1>
 <strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong>',
@@ -4895,6 +4934,10 @@ $messages['oc'] = array(
 	'coll-print_template_pattern' => '$1/Print',
 	'coll-unknown_subpage_title' => 'Sospagina desconeguda',
 	'coll-unknown_subpage_text' => 'Aquesta sospagina de [[Special:Book|libre]] existís pas',
+	'coll-couldnotaddarticle_title' => 'Impossible d’apondre la pagina del wiki',
+	'coll-couldnotaddarticle_msg' => 'La pagina del wiki pòt pas èsser aponduda.',
+	'coll-couldnotremovearticle_title' => 'Impossible de suprimir la pagina del wiki',
+	'coll-couldnotremovearticle_msg' => 'La pagina del wiki pòt pas èsser levada.',
 	'coll-download_as' => 'Telecargat coma $1',
 	'coll-noscript_text' => "<h1>Javascript es necessari !</h1>
 <strong>Vòstre navigador supòrta pas Javascript o se l'a desactivat.
@@ -5029,6 +5072,10 @@ $messages['pl'] = array(
 	'coll-print_template_pattern' => '$1/Wydruk',
 	'coll-unknown_subpage_title' => 'Nieznana podstrona',
 	'coll-unknown_subpage_text' => 'Podstrona należąca do [[Special:Book|książki]] nie istnieje',
+	'coll-couldnotaddarticle_title' => 'Nie można było dodać strony wiki',
+	'coll-couldnotaddarticle_msg' => 'Wiki strona nie może zostać dodana.',
+	'coll-couldnotremovearticle_title' => 'Nie można było usunąć strony wiki',
+	'coll-couldnotremovearticle_msg' => 'Wiki strona nie może zostać usunięta.',
 	'coll-download_as' => 'Pobierz jako $1',
 	'coll-noscript_text' => '<h1>Potrzebny JavaScript!</h1>
 <strong>Twoja przeglądarka nie obsługuje JavaScriptu lub został on wyłączony.
@@ -5668,6 +5715,10 @@ $messages['sk'] = array(
 	'coll-print_template_pattern' => '$1/Tlač',
 	'coll-unknown_subpage_title' => 'Neznáma podstránka',
 	'coll-unknown_subpage_text' => 'Táto podstránka [[Special:Book|Knihy]] neexistuje',
+	'coll-couldnotaddarticle_title' => 'Nepodarilo sa pridať stránku wiki',
+	'coll-couldnotaddarticle_msg' => 'Wiki stránku nebolo možné pridať.',
+	'coll-couldnotremovearticle_title' => 'Wiki stránku nebolo možné odstrániť',
+	'coll-couldnotremovearticle_msg' => 'Wiki stránku nebolo možné odstrániť.',
 	'coll-download_as' => 'Stiahnuť ako $1',
 	'coll-noscript_text' => '<h1>Vyžaduje sa JavaScript!</h1>
 <strong>Váš prehliadač nepodporuje JavaScript alebo máte JavaScript vypnutý.
@@ -7260,7 +7311,7 @@ $messages['zh-hans'] = array(
 	'coll-download_notfound_title' => '找不到文件',
 	'coll-download_notfound_text' => '您正在尝试下载的文件不存在：可以已被删除并需要重新生成文件',
 	'coll-is_cached' => '<ul><li>一个缓存版本被发现，所以没有必要重新渲染。<a href="$1">强制重新渲染。</a></li></ul>',
-	'coll-excluded-templates' => '* [[:Category:$1|$1]]分类下的页面被排除',
+	'coll-excluded-templates' => '* [[:Category:$1|$1]]分类下的页面被排除。',
 	'coll-blacklisted-templates' => '* 黑名单[[:$1]]中的模板被排除。',
 	'coll-return_to_collection' => '<p>返回到<a href="$1">$2</a></p>',
 	'coll-book_title' => '印刷成一本纸制书',
