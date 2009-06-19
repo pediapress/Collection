@@ -902,6 +902,10 @@ $messages['cs'] = array(
 	'coll-print_template_pattern' => '$1/Tisk',
 	'coll-unknown_subpage_title' => 'Neznámá podstránka',
 	'coll-unknown_subpage_text' => 'Tato podstránka [[Special:Book|knihy]] neexistuje',
+	'coll-couldnotaddarticle_title' => 'Nepodařilo se přidat stránku',
+	'coll-couldnotaddarticle_msg' => 'Stránka nemohla být přidána.',
+	'coll-couldnotremovearticle_title' => 'Stránka nemohla být odebrána',
+	'coll-couldnotremovearticle_msg' => 'Nepodařilo se odebrat stránku.',
 	'coll-download_as' => 'Stáhnout jako $1',
 	'coll-noscript_text' => '<h1>Je vyžadován JavaScript!</h1>
 <strong>Váš prohlížeč nepodporuje JavaScript nebo máte JavaScript vypnutý.
@@ -3958,6 +3962,10 @@ $messages['lb'] = array(
 	'coll-print_template_pattern' => '$1/Drock',
 	'coll-unknown_subpage_title' => 'Onbekannten Ënnersäit',
 	'coll-unknown_subpage_text' => 'Dës Ënnersäit vum [[Special:Book|Buch]] gëtt et net',
+	'coll-couldnotaddarticle_title' => 'Wikisäit konnt net derbäigesat ginn',
+	'coll-couldnotaddarticle_msg' => "D'Wikisäit konnt net derbäigesat ginn.",
+	'coll-couldnotremovearticle_title' => 'Wikisäit konnt net ewechgeholl ginn',
+	'coll-couldnotremovearticle_msg' => "D'Wikisäit konnt net ewechgeholl ginn.",
 	'coll-download_as' => 'Als $1 eroflueden',
 	'coll-noscript_text' => '<h1>JavaScript gëtt gebraucht!</h1>
 <strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
@@ -5050,7 +5058,16 @@ $messages['os'] = array(
  * @author Xqt
  */
 $messages['pdc'] = array(
+	'coll-collection' => 'Buch',
+	'coll-collections' => 'Bicher',
+	'coll-your_book' => 'Dei Buch',
+	'coll-remove' => 'Lösche',
+	'coll-rename' => 'Naame ennere',
+	'coll-empty_collection' => 'Leeres Buch',
+	'coll-revision' => 'Version: $1',
+	'coll-yes' => 'Ya',
 	'coll-about_pp' => 'Iwwer $1',
+	'coll-return_to' => 'Zerick zu [[:$1]]',
 );
 
 /** Polish (Polski)
@@ -5073,9 +5090,9 @@ $messages['pl'] = array(
 	'coll-unknown_subpage_title' => 'Nieznana podstrona',
 	'coll-unknown_subpage_text' => 'Podstrona należąca do [[Special:Book|książki]] nie istnieje',
 	'coll-couldnotaddarticle_title' => 'Nie można było dodać strony wiki',
-	'coll-couldnotaddarticle_msg' => 'Wiki strona nie może zostać dodana.',
-	'coll-couldnotremovearticle_title' => 'Nie można było usunąć strony wiki',
-	'coll-couldnotremovearticle_msg' => 'Wiki strona nie może zostać usunięta.',
+	'coll-couldnotaddarticle_msg' => 'Strona wiki nie może zostać dodana.',
+	'coll-couldnotremovearticle_title' => 'Nie można usunąć strony wiki',
+	'coll-couldnotremovearticle_msg' => 'Strona wiki nie może zostać usunięta.',
 	'coll-download_as' => 'Pobierz jako $1',
 	'coll-noscript_text' => '<h1>Potrzebny JavaScript!</h1>
 <strong>Twoja przeglądarka nie obsługuje JavaScriptu lub został on wyłączony.
