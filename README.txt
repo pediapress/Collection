@@ -144,17 +144,6 @@ Installation and Configuration of the Collection Extension
 
    Default is ``NS_PROJECT``.
 
-  *$wgCollectionSaveAsUserPageRight, $wgCollectionSaveAsCommunityPageRight (string)*
-
-   The MediaWiki right a user has to have in order to be allowed to save
-   collection pages under the user namespace or the
-   $wgCommunityCollectionNamespace respectively.
-   If one of the variables is set to '' or null, no permission check is done for
-   that particular namespace.
-
-   Defaults are null for $wgCollectionSaveAsUserPageRight and 'autoconfirmed' for
-   $wgCollectionSaveAsCommunityPageRight.
-
   *$wgCollectionMaxArticles (integer)*
    Maximum number of articles allowed in a collection.
 
