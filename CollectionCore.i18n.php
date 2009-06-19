@@ -148,7 +148,7 @@ $messages['ast'] = array(
 	'coll-add_page' => 'Añader páxina wiki',
 	'coll-create_a_book' => 'Crear un llibru',
 	'coll-help_collections' => 'Aida de les coleiciones',
-	'coll-helppage' => 'Aida:Coleiciones',
+	'coll-helppage' => 'Help:Coleiciones',
 	'coll-load_collection' => 'Cargar coleición',
 	'coll-n_pages' => '$1 {{PLURAL:$1|páxina|páxines}}',
 	'coll-remove_page' => 'Eliminar páxina wiki',
@@ -309,7 +309,7 @@ $messages['cy'] = array(
 	'coll-create_a_book' => 'Llunio llyfr',
 	'coll-help_collections' => 'Cymorth - llyfrau',
 	'coll-help_collections_tooltip' => 'Dangos y cymorth am y teclyn llunio llyfr',
-	'coll-helppage' => 'Cymorth:Llyfrau',
+	'coll-helppage' => 'Help:Llyfrau',
 	'coll-load_collection' => 'Llwytho llyfr',
 	'coll-load_collection_tooltip' => "Llwytho'r llyfr hwn fel eich llyfr cyfredol",
 	'coll-n_pages' => '$1 {{PLURAL:$1|tudalen|dudalen|dudalen|tudalen|thudalen|o dudalennau}}',
@@ -667,7 +667,7 @@ $messages['gsw'] = array(
  */
 $messages['gv'] = array(
 	'coll-create_a_book' => 'My haglym',
-	'coll-helppage' => 'Cooney:Lioaryn',
+	'coll-helppage' => 'Help:Lioaryn',
 );
 
 /** Hebrew (עברית)
@@ -1399,6 +1399,18 @@ $messages['oc'] = array(
 	'coll-show_collection_tooltip' => 'Clicatz per modificar / telecargar / comandar vòstre libre',
 );
 
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'coll-bookscategory' => 'Bicher',
+	'coll-clear_collection' => 'Buch lösche',
+	'coll-help_collections' => 'Hilf zu Bicher',
+	'coll-helppage' => 'Help:Bicher',
+	'coll-printable_version_pdf' => 'PDF-Version',
+	'coll-remove_page' => 'Blatt vum Buch lösche',
+);
+
 /** Polish (Polski)
  * @author Derbeth
  * @author Leinad
@@ -1667,7 +1679,7 @@ $messages['sr-ec'] = array(
 	'coll-create_a_book' => 'Направи књигу',
 	'coll-help_collections' => 'Помоћ о књигама',
 	'coll-help_collections_tooltip' => 'Приказује помоћ алатке за књиге',
-	'coll-helppage' => 'Помоћ:Књиге',
+	'coll-helppage' => 'Help:Књиге',
 	'coll-load_collection' => 'Учитај књигу',
 	'coll-load_collection_tooltip' => 'Учитава ову књигу као вашу тренутну књигу',
 	'coll-n_pages' => '{{PLURAL:$1|једна страна|$1 стране|$1 страна}}',
