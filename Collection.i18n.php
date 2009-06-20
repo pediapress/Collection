@@ -180,6 +180,8 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-return_to' => '{{Identical|Return to $1}}',
 	'coll-order_info_article' => '{{doc-important|Do not translate "<nowiki>{{MediaWiki:Coll-helppage}}/</nowiki>"}}
 Sub page of {{msg-mw|coll-helppage}} ({{int:coll-helppage}})',
+	'right-collectionsaveasuserpage' => '{{doc-right|collectionsaveasuserpage}}',
+	'right-collectionsaveascommunitypage' => '{{doc-right|collectionsaveascommunitypage}}',
 );
 
 /** Faeag Rotuma (Faeag Rotuma)
@@ -2813,6 +2815,8 @@ Skontaktuj prošu swojeho administratora MediaWiki.',
 	'coll-more_info' => 'Dalše informacije pokazać',
 	'coll-hide_info' => 'Informacije schować',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress skazanske informacije',
+	'right-collectionsaveasuserpage' => 'Knihi jako wužiwarsku stronu składować',
+	'right-collectionsaveascommunitypage' => 'Knihi jako stronu zhromadźenstwa składować',
 );
 
 /** Hungarian (Magyar)
@@ -3141,7 +3145,7 @@ Per favor contacta tu administrator de MediaWiki.',
  * @author Rex
  */
 $messages['id'] = array(
-	'coll-desc' => '[[Special:Book|Buat buku]]',
+	'coll-desc' => '[[Special:Book|Membuat buku koleksi artikel]]',
 	'coll-collection' => 'Buku',
 	'coll-collections' => 'Buku',
 	'coll-exclusion_category_title' => 'Halaman yang tidak turut dicetak',
@@ -3511,6 +3515,8 @@ $messages['ja'] = array(
 	'coll-more_info' => '詳細を表示',
 	'coll-hide_info' => '詳細を非表示',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress注文情報',
+	'right-collectionsaveasuserpage' => 'ブックを利用者ページとして保存',
+	'right-collectionsaveascommunitypage' => 'ブックを共有ページとして保存',
 );
 
 /** Javanese (Basa Jawa)
@@ -3942,6 +3948,8 @@ Don dat enem Wikki-Köbes obb et Bruut schmiere.',
 	'coll-more_info' => 'Mieh Enfommazjuhne aanzeije',
 	'coll-hide_info' => 'Winnijer Enfommazjuhne aanzeije',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Wie mer bei <i lang="en">PediaPress</i> beshtelle kann',
+	'right-collectionsaveasuserpage' => 'E Boch als enem Metmaacher sing Sigg avspeichere',
+	'right-collectionsaveascommunitypage' => 'E Boch als en Jemeinschaffß_Sigg avspeichere',
 );
 
 /** Cornish (Kernewek)
@@ -4708,6 +4716,8 @@ Neem contact op met uw MediaWiki-beheerder.',
 	'coll-more_info' => 'Meer informatie weergeven',
 	'coll-hide_info' => 'Informatie verbergen',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestelinformatie PediaPress',
+	'right-collectionsaveasuserpage' => 'Boeken opslaan als gebruikerspagina',
+	'right-collectionsaveascommunitypage' => 'Boeken opslaan als gemeenschapspagina',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -5068,6 +5078,7 @@ $messages['pdc'] = array(
 	'coll-empty_collection' => 'Leeres Buch',
 	'coll-revision' => 'Version: $1',
 	'coll-yes' => 'Ya',
+	'coll-overwrite' => 'Iwwerschreiwe',
 	'coll-about_pp' => 'Iwwer $1',
 	'coll-return_to' => 'Zerick zu [[:$1]]',
 );
@@ -5495,6 +5506,7 @@ $messages['roa-tara'] = array(
  * @author Ferrer
  * @author Innv
  * @author Kaganer
+ * @author Lockal
  * @author MaxSem
  * @author Sergey kudryavtsev
  * @author Александр Сигачёв
@@ -5549,7 +5561,7 @@ $messages['ru'] = array(
 	'coll-empty_collection' => 'Пустая книга',
 	'coll-revision' => 'Версия: $1',
 	'coll-save_collection_title' => 'Сохранить книгу и открыть к ней доступ',
-	'coll-save_collection_text' => 'Выберите местоположение:',
+	'coll-save_collection_text' => 'Выберите местоположение для Вашей книги:',
 	'coll-login_to_save' => 'Чтобы сохранить книгу для дальнейшего использования, пожалуйста, [[Special:UserLogin|представьтесь системе или создайте учётную запись]].',
 	'coll-personal_collection_label' => 'Личная книга:',
 	'coll-community_collection_label' => 'Книга сообщества:',
@@ -6829,6 +6841,10 @@ $messages['vec'] = array(
 	'coll-print_template_pattern' => '$1/Stanpa',
 	'coll-unknown_subpage_title' => 'Sotopàxena sconossiùa',
 	'coll-unknown_subpage_text' => 'Sta sotopàxena de [[Special:Book|Libro]] no la esiste mia',
+	'coll-couldnotaddarticle_title' => 'No se riesse a inserir la pagina wiki',
+	'coll-couldnotaddarticle_msg' => 'La pagina wiki no se gà podesto inserirla.',
+	'coll-couldnotremovearticle_title' => 'No se riesse a cavar la pagina wiki',
+	'coll-couldnotremovearticle_msg' => 'La pagina wiki no se gà podesto cavarla.',
 	'coll-download_as' => 'Descarga come $1',
 	'coll-noscript_text' => "<h1>Ghe vole el JavaScript!</h1>
 <strong>El to browser no'l suporta JavaScript opure JavaScript el xe stà disativà.
@@ -6921,6 +6937,8 @@ Note:
 	'coll-more_info' => 'Mostra piasè informasion',
 	'coll-hide_info' => 'Scondi informasion',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informassion par ordinar con PediaPress',
+	'right-collectionsaveasuserpage' => 'Salva na colezion come pagina utente',
+	'right-collectionsaveascommunitypage' => 'Salva na colezion come pagina comunitaria',
 );
 
 /** Veps (Vepsan kel')
