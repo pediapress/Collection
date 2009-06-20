@@ -133,6 +133,8 @@ Please contact your MediaWiki administrator.',
 	'coll-more_info'                  => 'Show more information',
 	'coll-hide_info'                  => 'Hide information',
 	'coll-order_info_article'         => '{{MediaWiki:Coll-helppage}}/PediaPress order information',
+	'right-collectionsaveasuserpage'  => 'Save a collection as user page',
+	'right-collectionsaveascommunitypage' => 'Save a collection as community page',
 );
 
 /** Message documentation (Message documentation)
