@@ -1128,6 +1128,8 @@ Hinweise:
 	'coll-more_info' => 'Weitere Informationen zeigen',
 	'coll-hide_info' => 'Informationen verstecken',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress Bestellinformation',
+	'right-collectionsaveasuserpage' => 'Bücher als Benutzerseite speichern',
+	'right-collectionsaveascommunitypage' => 'Bücher als Gemeinschaftsseite speichern',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
@@ -1280,6 +1282,8 @@ Skontaktuj pšosym swójogo administratora MediaWiki',
 	'coll-more_info' => 'Dalšne informacije pokazaś',
 	'coll-hide_info' => 'Informacije schowaś',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress skazańske informacije',
+	'right-collectionsaveasuserpage' => 'Knigły ako wužywarski bok składowaś',
+	'right-collectionsaveascommunitypage' => 'Knigły ako bok zgromaźeństwa składowaś',
 );
 
 /** Ewe (Eʋegbe)
@@ -2086,6 +2090,8 @@ Veuillez contacter votre administrateur MediaWiki.',
 	'coll-more_info' => 'Afficher d’autres informations',
 	'coll-hide_info' => 'Masquer les informations',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress commander des informations',
+	'right-collectionsaveasuserpage' => 'Sauvegarder des livres sur des pages utilisateur',
+	'right-collectionsaveascommunitypage' => 'Sauvegarder des livres sur des pages communautaires',
 );
 
 /** Western Frisian (Frysk)
@@ -2337,6 +2343,8 @@ Hiiwyys:
 	'coll-more_info' => 'Meh Informatione zeige',
 	'coll-hide_info' => 'Informatione verstecke',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress Bstellinformation',
+	'right-collectionsaveasuserpage' => 'Biecher as Benutzersyte spychere',
+	'right-collectionsaveascommunitypage' => 'Biecher as Gmeinschaftssyte spychere',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -3251,6 +3259,8 @@ Silakan hubungi pengelola MediaWiki Anda.',
 	'coll-more_info' => 'Tampilkan informasi lebih lanjut',
 	'coll-hide_info' => 'Sembunyikan informasi',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informasi pemesanan dari PediaPress',
+	'right-collectionsaveasuserpage' => 'Menyimpan koleksi buku sebagai halaman pengguna',
+	'right-collectionsaveascommunitypage' => 'Menyimpan koleksi buku sebagai halaman komunitas',
 );
 
 /** Ido (Ido)
@@ -4063,6 +4073,8 @@ Opgepasst:
 	'coll-more_info' => 'Méi Informatioune weisen',
 	'coll-hide_info' => 'Informatioune verstoppen',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress Bestellinformatiounen',
+	'right-collectionsaveasuserpage' => 'Bicher als Benotzersäit späicheren',
+	'right-collectionsaveascommunitypage' => 'Bicher als Gemeinschaftssäit späicheren',
 );
 
 /** Limburgish (Limburgs)
@@ -5199,6 +5211,8 @@ Skontaktuj się z administratorem tego serwisu MediaWiki.',
 	'coll-more_info' => 'Pokaż więcej informacji',
 	'coll-hide_info' => 'Ukryj informacje',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Zamawianie PediaPress',
+	'right-collectionsaveasuserpage' => 'Zapisywanie książek jako stronę użytkownika',
+	'right-collectionsaveascommunitypage' => 'Zapisywanie książek jako wspólną stronę',
 );
 
 /** Pashto (پښتو)
@@ -5617,6 +5631,8 @@ $messages['ru'] = array(
 	'coll-more_info' => 'Показать больше информации',
 	'coll-hide_info' => 'Скрыть информацию',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Информация о заказе PediaPress',
+	'right-collectionsaveasuserpage' => 'сохранение книг, как страницу участника',
+	'right-collectionsaveascommunitypage' => 'сохранение книг, как страницу сообщества',
 );
 
 /** Yakut (Саха тыла)
@@ -5843,6 +5859,8 @@ Prosím, kontaktujte svojho správcu MediaWiki.',
 	'coll-more_info' => 'Zobraziť viac informácií',
 	'coll-hide_info' => 'Skryť informácie',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informácie o objednávkach PediaPress',
+	'right-collectionsaveasuserpage' => 'Uložiť knihy ako používateľskú stránku',
+	'right-collectionsaveascommunitypage' => 'Uložiť knihy ako komunitnú stránku',
 );
 
 /** Slovenian (Slovenščina)
@@ -6280,7 +6298,7 @@ $messages['te'] = array(
 	'coll-collection' => 'పుస్తకం',
 	'coll-collections' => 'పుస్తకాలు',
 	'coll-your_book' => 'మీ పుస్తకం',
-	'coll-download_title' => 'సేకరణని PDFగా దిగుమతి చేసుకోండి',
+	'coll-download_title' => 'దింపుకోండి',
 	'coll-download_text' => 'మీ పేజీ సేకరణ నుండి ఆటోమెటిగ్గా తయారయిన PDF ఫైలుని దిగుమతిచేసుకోడానికి, ఈ బొత్తాన్ని నొక్కండి.',
 	'coll-download' => 'దిగుమతి',
 	'coll-remove' => 'తొలగించు',
@@ -6723,6 +6741,8 @@ Lütfen MedyaViki yöneticinizle irtibat kurun.',
 	'coll-more_info' => 'Daha fazla bilgi göster',
 	'coll-hide_info' => 'Bilgiyi gizle',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress sipariş bilgisi',
+	'right-collectionsaveasuserpage' => 'Kitapları kullanıcı sayfası olarak kaydet',
+	'right-collectionsaveascommunitypage' => 'Kitapları topluluk sayfası olarak kaydet',
 );
 
 /** Ukrainian (Українська)
