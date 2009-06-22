@@ -442,6 +442,9 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	static function removeItem( $index ) {
+		if (!is_int( $index ) ) {
+			return false;
+		}
 		if ( !CollectionSession::hasSession() ) {
 			return false;
 		}
