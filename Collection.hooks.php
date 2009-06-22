@@ -46,7 +46,7 @@ class CollectionHooks {
 
 		if( $skinTemplate->iscontent && ( $action == '' || $action == 'view' || $action == 'purge' ) ) {
 			if( self::_isCollectionPage( $title, $wgArticle ) ) {
-				$params = 'colltitle=' . wfUrlencode( $title->getPrefixedDBKey() );
+				$params = 'colltitle=' . wfUrlencode( $title->getPrefixedText() );
 				if ( isset( $wgCollectionFormats['rl'] ) ) {
 					$nav_urls['printable_version_pdf'] = array(
 						'href' => SkinTemplate::makeSpecialUrlSubpage(
@@ -59,7 +59,7 @@ class CollectionHooks {
 				foreach ( $wgCollectionFormats as $writer => $name ) {
 				}
 			} else {
-				$params = 'arttitle=' . $title->getPrefixedURL();
+				$params = 'arttitle=' . wfUrlencode( $title->getPrefixedText() );
 				if( $wgArticle ) {
 					$oldid = $wgArticle->getOldID();
 					if ( $oldid ) {
@@ -184,7 +184,7 @@ class CollectionHooks {
 						'rel' => 'nofollow',
 						'title' => wfMsg( "coll-load_collection_tooltip" ),
 					),
-					array( 'colltitle' => $wgTitle->getPrefixedUrl() ),
+					array( 'colltitle' => $wgTitle->getPrefixedText() ),
 					array( 'known', 'noclasses' )
 				)
 			);
