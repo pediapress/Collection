@@ -620,6 +620,8 @@ $messages['be-tarask'] = array(
 	'coll-more_info' => 'Паказаць болей інфармацыі',
 	'coll-hide_info' => 'Схаваць інфармацыю',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Інфармацыя пра заказ у PediaPress',
+	'right-collectionsaveasuserpage' => 'захаваньне кніг як старонак ўдзельніка',
+	'right-collectionsaveascommunitypage' => 'захаваньне кніг як старонак супольнасьці',
 );
 
 /** Bulgarian (Български)
@@ -778,6 +780,8 @@ Molimo da kontaktirate Vašeg MediaWiki administratora.',
 	'coll-more_info' => 'Prikaži više informacija',
 	'coll-hide_info' => 'Sakrij informacije',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress informacije o narudžbi',
+	'right-collectionsaveasuserpage' => 'Spremanje knjiga u vidu korisničkih stranica',
+	'right-collectionsaveascommunitypage' => 'Spremanje knjiga kao stranica zajednice',
 );
 
 /** Catalan (Català)
@@ -1003,6 +1007,8 @@ Kontaktujte svého správce MediaWiki.',
 	'coll-more_info' => 'Zobrazit další informace',
 	'coll-hide_info' => 'Skrýt informace',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Objednávky od PediaPress',
+	'right-collectionsaveasuserpage' => 'Ukládání knih jako uživatelských stránek',
+	'right-collectionsaveascommunitypage' => 'Ukládání knih jako stránek komunity',
 );
 
 /** Danish (Dansk)
@@ -3327,6 +3333,10 @@ $messages['it'] = array(
 	'coll-print_template_pattern' => '$1/Stampa',
 	'coll-unknown_subpage_title' => 'Sottopagina sconosciuta',
 	'coll-unknown_subpage_text' => 'Questa sottopagina di [[Special:Book|Libro]] non esiste',
+	'coll-couldnotaddarticle_title' => 'Impossibile aggiungere pagina wiki',
+	'coll-couldnotaddarticle_msg' => 'La pagina wiki non può essere aggiunta.',
+	'coll-couldnotremovearticle_title' => 'Impossibile rimuovere la pagina wiki',
+	'coll-couldnotremovearticle_msg' => 'La pagina wiki non può essere rimossa.',
 	'coll-download_as' => 'Scarica come $1',
 	'coll-noscript_text' => '<h1>È necessario avere JavaScript!</h1>
 <strong>Il tuo browser non supporta JavaScript oppure JavaScript è stato disattivato.
@@ -3418,6 +3428,8 @@ Note:
 	'coll-return_to' => 'Torna a [[:$1]]',
 	'coll-more_info' => 'Mostra ulteriori informazioni',
 	'coll-hide_info' => 'Nascondi informazioni',
+	'right-collectionsaveasuserpage' => 'Salva libri in pagine utente',
+	'right-collectionsaveascommunitypage' => 'Salva libri nelle pagine della comunità',
 );
 
 /** Japanese (日本語)
@@ -5063,6 +5075,8 @@ Contactatz vòstre administrator MediaWiki.',
 	'coll-more_info' => 'Afichar d’autras informacions',
 	'coll-hide_info' => 'Amagar las informacions',
 	'coll-order_info_article' => "{{MediaWiki:Coll-helppage}}/PediaPress comandar d'informacions",
+	'right-collectionsaveasuserpage' => "Salvar de libres sus de paginas d'utilizaire",
+	'right-collectionsaveascommunitypage' => 'Salvar de libres sus de paginas comunautàrias',
 );
 
 /** Ossetic (Иронау)
