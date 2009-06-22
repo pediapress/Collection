@@ -219,7 +219,7 @@ function wfAjaxCollectionGetItemList() {
 $wgAjaxExportList[] = 'wfAjaxCollectionGetItemList';
 
 function wfAjaxCollectionRemoveItem( $index ) {
-	SpecialCollection::removeItem( $index );
+	SpecialCollection::removeItem( (int)$index );
 	return wfAjaxCollectionGetItemList();
 }
 
@@ -233,7 +233,7 @@ function wfAjaxCollectionAddChapter( $name ) {
 $wgAjaxExportList[] = 'wfAjaxCollectionAddChapter';
 
 function wfAjaxCollectionRenameChapter( $index, $name ) {
-	SpecialCollection::renameChapter( $index, $name );
+	SpecialCollection::renameChapter( (int)$index, $name );
 	return wfAjaxCollectionGetItemList();
 }
 
