@@ -88,8 +88,10 @@ $messages['af'] = array(
 );
 
 /** Arabic (العربية)
+ * @author Antime
  * @author Ciphers
  * @author Meno25
+ * @author OsamaK
  * @author Prof.Sherif
  */
 $messages['ar'] = array(
@@ -109,7 +111,7 @@ $messages['ar'] = array(
 	'coll-helppage' => 'Help:كتب',
 	'coll-load_collection' => 'تحميل الكتاب',
 	'coll-load_collection_tooltip' => 'حمل هذا الكتاب ككتابك الحالي',
-	'coll-n_pages' => '$1 {{PLURAL:$1|صفحة|صفحة}}',
+	'coll-n_pages' => '{{PLURAL:$1||صفحة|صفحتان|$1 صفحات|$1 صفحة}}',
 	'coll-popup_help_text' => 'لإلغاء هذه الخاصية اضغط "إفراغ الكتاب" في صندوق "إنشاء كتاب"',
 	'coll-printable_version_pdf' => 'نسخة PDF',
 	'coll-remove_page' => 'إزالة الصفحة من كتاب',

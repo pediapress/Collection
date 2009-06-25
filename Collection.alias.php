@@ -184,7 +184,7 @@ $aliases['no'] = array(
 
 /** Occitan (Occitan) */
 $aliases['oc'] = array(
-	'Book' => array( 'Colleccion' ),
+	'Book' => array( 'Libre' ),
 );
 
 /** Polish (Polski) */
