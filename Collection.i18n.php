@@ -140,6 +140,7 @@ Please contact your MediaWiki administrator.',
 /** Message documentation (Message documentation)
  * @author Aleator
  * @author Aotake
+ * @author Bennylin
  * @author Darth Kule
  * @author Fryed-peach
  * @author Jon Harald Søby
@@ -173,6 +174,7 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-save_category' => 'Do not change <nowiki>{{MediaWiki:Coll-bookscategory}}</nowiki>. The link and category name should be in the content language.',
 	'coll-yes' => '{{Identical|Yes}}',
 	'coll-no' => '{{Identical|No}}',
+	'coll-append' => '{{Identical/Append}}',
 	'coll-cancel' => '{{Identical|Cancel}}',
 	'coll-rendering_status' => '{{Identical|Status}}',
 	'coll-order_from_pp' => '* $1 is the name of a print provider (a company name)',
@@ -1520,6 +1522,8 @@ Bonvolu kontakti vian administranton de MediaWiki.',
 	'coll-return_to' => 'Reiri al [[:$1]]',
 	'coll-more_info' => 'Montri plian informon',
 	'coll-hide_info' => 'Kaŝi informon',
+	'right-collectionsaveasuserpage' => 'Konservi librojn kiel uzanto-paĝo',
+	'right-collectionsaveascommunitypage' => 'Konservi librojn kiel komunuma paĝo',
 );
 
 /** Spanish (Español)
@@ -1886,6 +1890,10 @@ $messages['fi'] = array(
 	'coll-print_template_prefix' => 'Tulosta',
 	'coll-unknown_subpage_title' => 'Tuntematon alasivu',
 	'coll-unknown_subpage_text' => 'Tätä [[Special:Book|kirjan]] alasivua ei ole olemassa',
+	'coll-couldnotaddarticle_title' => 'Wikisivua ei voitu lisätä',
+	'coll-couldnotaddarticle_msg' => 'Wikisivua ei voi lisätä.',
+	'coll-couldnotremovearticle_title' => 'Wikisivua ei voitu poistaa',
+	'coll-couldnotremovearticle_msg' => 'Wikisivua ei voi poistaa.',
 	'coll-download_as' => 'Lataa $1-tiedostona',
 	'coll-noscript_text' => '<h1>Vaatii toimiakseen JavaScriptin</h1>
 <strong>Selaimesi ei tue JavaScriptiä tai JavaScript on poistettu käytöstä.
@@ -2217,6 +2225,8 @@ Por favor, contacte co seu administrador MediaWiki.',
 	'coll-more_info' => 'Obter máis información',
 	'coll-hide_info' => 'Agochar a información',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Información de pedido a PediaPress',
+	'right-collectionsaveasuserpage' => 'Gardar libros como unha páxina de usuario',
+	'right-collectionsaveascommunitypage' => 'Gardar libros como unha páxina da comunidade',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -3154,6 +3164,7 @@ Per favor contacta tu administrator de MediaWiki.',
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Bennylin
  * @author Irwangatot
  * @author IvanLanin
  * @author Rex
@@ -3183,7 +3194,7 @@ Halaman ini tidak akan bekerja dengan benar, kecuali jika JavaScript diaktifkan.
 	'coll-download_as_text' => 'Untuk mengunduh suatu versi dengan format $1, klik tombolnya.',
 	'coll-download' => 'Unduh',
 	'coll-format_label' => 'Format:',
-	'coll-remove' => 'Buang',
+	'coll-remove' => 'Hapus',
 	'coll-show' => 'Tampilkan',
 	'coll-move_to_top' => 'Pindahkan ke paling atas',
 	'coll-move_up' => 'Pindahkan ke atas',
@@ -4758,6 +4769,10 @@ $messages['nn'] = array(
 	'coll-print_template_pattern' => '$1/Skriv ut',
 	'coll-unknown_subpage_title' => 'Ukjend undersida',
 	'coll-unknown_subpage_text' => 'Denne undersida av [[Special:Book|Bok]] finst ikkje',
+	'coll-couldnotaddarticle_title' => 'Kunne ikkje leggja til wikiside',
+	'coll-couldnotaddarticle_msg' => 'Wikisida kunne ikkje leggjast til.',
+	'coll-couldnotremovearticle_title' => 'Kunne ikkje fjerna wikisida',
+	'coll-couldnotremovearticle_msg' => 'Wikisida kunne ikkje fjernast.',
 	'coll-download_as' => 'Last ned som $1',
 	'coll-noscript_text' => '<h1>JavaScript er påkravd!</h1>
 <strong>Nettlesaren din støttar ikkje JavaScript, eller JavaScript har blitt slege av. 
@@ -4851,6 +4866,8 @@ Kontakt MediaWiki-administratoren din.',
 	'coll-more_info' => 'Syn meir informasjon',
 	'coll-hide_info' => 'Skjul informasjon',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress tingingsinformasjon',
+	'right-collectionsaveasuserpage' => 'Lagre bøker som brukarsider',
+	'right-collectionsaveascommunitypage' => 'Lagre bøker som ei sams side',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
