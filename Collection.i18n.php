@@ -2554,6 +2554,8 @@ $messages['he'] = array(
 	'coll-more_info' => 'הצגת מידע נוסף',
 	'coll-hide_info' => 'הסתרת מידע',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/מידע על הזמנה ב-PediaPress',
+	'right-collectionsaveasuserpage' => 'שמירת ספרים כדפי משתמש',
+	'right-collectionsaveascommunitypage' => 'שמירת ספרים כדפי קהילה',
 );
 
 /** Hindi (हिन्दी)
