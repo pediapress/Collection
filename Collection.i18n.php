@@ -1984,6 +1984,8 @@ Ota yhteys MediaWiki-ylläpitäjääsi.',
 	'coll-return_to' => 'Palaa sivulle [[:$1]]',
 	'coll-more_info' => 'Näytä lisätietoja',
 	'coll-hide_info' => 'Piilota tiedot',
+	'right-collectionsaveasuserpage' => 'Tallentaa kirjoja käyttäjäsivuna',
+	'right-collectionsaveascommunitypage' => 'Tallentaa kirjoja yhteisösivuina',
 );
 
 /** French (Français)
@@ -3070,6 +3072,10 @@ $messages['ia'] = array(
 	'coll-print_template_pattern' => '$1/Imprimer',
 	'coll-unknown_subpage_title' => 'Subpagina incognite',
 	'coll-unknown_subpage_text' => 'Iste subpagina de [[Special:Book|Libro]] non existe',
+	'coll-couldnotaddarticle_title' => 'Non poteva adder pagina wiki',
+	'coll-couldnotaddarticle_msg' => 'Le pagina wiki non poteva esser addite.',
+	'coll-couldnotremovearticle_title' => 'Non poteva remover pagina wiki',
+	'coll-couldnotremovearticle_msg' => 'Le pagina wiki non poteva esser removite.',
 	'coll-download_as' => 'Discargar como $1',
 	'coll-noscript_text' => '<h1>JavaScript es requirite!</h1>
 <strong>Tu navigator non supporta JavaScript o JavaScript ha essite disactivate.
@@ -3164,6 +3170,8 @@ Per favor contacta tu administrator de MediaWiki.',
 	'coll-more_info' => 'Monstrar plus informationes',
 	'coll-hide_info' => 'Celar informationes',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Commanda a PediaPress',
+	'right-collectionsaveasuserpage' => 'Immagazinar libros como pagina de usator',
+	'right-collectionsaveascommunitypage' => 'Immagazinar libros como pagina de communitate',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -7030,6 +7038,10 @@ $messages['vi'] = array(
 	'coll-print_template_pattern' => '$1/Print',
 	'coll-unknown_subpage_title' => 'Trang phụ không tìm được',
 	'coll-unknown_subpage_text' => 'Trang phụ của [[Special:Book|Sách]] này không tồn tại',
+	'coll-couldnotaddarticle_title' => 'Không thể thêm trang wiki',
+	'coll-couldnotaddarticle_msg' => 'Không thêm được trang wiki.',
+	'coll-couldnotremovearticle_title' => 'Không thể dời trang wiki',
+	'coll-couldnotremovearticle_msg' => 'Không dời được trang wiki.',
 	'coll-download_as' => 'Tải về dưới dạng $1',
 	'coll-noscript_text' => '<h1>Yêu cầu phải có JavaScript!</h1>
 <strong>Trình duyệt của bạn không hỗ trợ JavaScript hoặc JavaScript đã bị tắt.
