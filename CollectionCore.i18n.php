@@ -1528,16 +1528,18 @@ $messages['pt-br'] = array(
 );
 
 /** Romanian (Română)
+ * @author Firilacroco
  * @author KlaudiuMihaila
  */
 $messages['ro'] = array(
 	'coll-add_category' => 'Adaugă categorie',
-	'coll-add_page' => 'Adaugă pagină wiki',
+	'coll-add_page' => 'Adaugă pagina în carte',
 	'coll-create_a_book' => 'Creează o carte',
-	'coll-load_collection' => 'Încarcă colecţie',
+	'coll-helppage' => 'Help:Cărţi',
+	'coll-load_collection' => 'Încarcă cartea',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagină|pagini}}',
-	'coll-remove_page' => 'Şterge pagină wiki',
-	'coll-show_collection' => 'Arată colecţie',
+	'coll-remove_page' => 'Şterge pagina din carte',
+	'coll-show_collection' => 'Arată cartea',
 );
 
 /** Tarandíne (Tarandíne)
