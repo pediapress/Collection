@@ -641,6 +641,14 @@ $messages['gl'] = array(
 	'coll-show_collection_tooltip' => 'Prema para editar/descargar/pedir o seu libro',
 );
 
+/** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Omnipaedista
+ */
+$messages['grc'] = array(
+	'coll-bookscategory' => 'Βιβλία',
+	'coll-printable_version_pdf' => 'Ἔκδοσις PDF',
+);
+
 /** Swiss German (Alemannisch)
  * @author Als-Holder
  */
@@ -1533,13 +1541,29 @@ $messages['pt-br'] = array(
  */
 $messages['ro'] = array(
 	'coll-add_category' => 'Adaugă categorie',
+	'coll-add_category_popup' => 'Adăugaţi wiki pagini din categoria indicată în cartea dumneavoastră',
+	'coll-add_category_tooltip' => 'Adăugaţi toate wiki paginile din această categorie în cartea dumneavoastră',
 	'coll-add_page' => 'Adaugă pagina în carte',
+	'coll-add_page_popup' => 'Adăugaţi wiki paginile indicate în cartea dumneavoastră',
+	'coll-add_page_tooltip' => 'Adăugaţi wiki pagina actuală în cartea dumneavoastră',
+	'coll-bookscategory' => 'Cărţi',
+	'coll-clear_collection' => 'Goliţi cartea',
+	'coll-clear_collection_confirm' => 'Doriţi să goliţi complet cartea dumneavoastră?',
+	'coll-clear_collection_tooltip' => 'Elimină toate wiki paginile din cartea actuală',
 	'coll-create_a_book' => 'Creează o carte',
+	'coll-help_collections' => 'Ajutor cărţi',
+	'coll-help_collections_tooltip' => 'Ajutor în legătură cu unealta pentru cărţi',
 	'coll-helppage' => 'Help:Cărţi',
 	'coll-load_collection' => 'Încarcă cartea',
+	'coll-load_collection_tooltip' => 'Încarcă această carte ca actuala dumneavoastră carte',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagină|pagini}}',
+	'coll-popup_help_text' => 'Pentru a dezactiva această funcţie apăsaţi „Goliţi cartea” în căsuţa „Creează o carte”',
+	'coll-printable_version_pdf' => 'Versiune PDF',
 	'coll-remove_page' => 'Şterge pagina din carte',
+	'coll-remove_page_popup' => 'Eliminaţi pagina indicată din cartea dumneavoastră',
+	'coll-remove_page_tooltip' => 'Eliminaţi pagina actuală din cartea dumneavoastră',
 	'coll-show_collection' => 'Arată cartea',
+	'coll-show_collection_tooltip' => 'Apăsaţi pentru a modifica/descărca/comanda cartea dumneavoastră',
 );
 
 /** Tarandíne (Tarandíne)

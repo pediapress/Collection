@@ -2237,6 +2237,8 @@ Por favor, contacte co seu administrador MediaWiki.',
  * @author Omnipaedista
  */
 $messages['grc'] = array(
+	'coll-collection' => 'Βιβλίον',
+	'coll-collections' => 'Βιβλία',
 	'coll-download_title' => 'καταφορτίζειν',
 	'coll-download' => 'Καταφόρτισις',
 	'coll-remove' => 'Άφαιρεῖν',
@@ -5556,19 +5558,64 @@ Această pagină nu va lucra corect, doar dacă JavaScript este pornit.</strong>
 	'coll-revision' => 'Versiune: $1',
 	'coll-save_collection_title' => 'Salvează şi împarte cartea',
 	'coll-save_collection_text' => 'Alegeţi o locaţie de depozitare pentru cartea dumneavoastră:',
+	'coll-login_to_save' => 'Dacă doriţi să salvaţi cărţile pentru o folosire ulterioară, vă rugăm [[Special:UserLogin|să vă autentificaţi sau să vă creaţi un cont]].',
 	'coll-personal_collection_label' => 'Carte personală:',
+	'coll-community_collection_label' => 'Carte a comunităţii:',
 	'coll-save_collection' => 'Salvează cartea',
+	'coll-save_category' => 'Toate cărţile sunt salvate în categoria [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Pagina există.
 Suprascrie?',
+	'coll-overwrite_text' => 'O pagină cu numele [[:$1]] există deja.
+Doriţi ca aceasta să fie înlocuită cu cartea dumneavoastră?',
 	'coll-yes' => 'Da',
 	'coll-no' => 'Nu',
+	'coll-load_overwrite_text' => 'Deja aveţi câteva pagini în cartea dumneavoastră.
+Doriţi să rescrieţi cartea actuală, să adăugaţi noul conţinut, sau să revocaţi încărcarea acestei cărţi?',
 	'coll-overwrite' => 'Suprascrie',
+	'coll-append' => 'Adaugă',
 	'coll-cancel' => 'Anulează',
+	'coll-update' => 'Actualizează',
+	'coll-limit_exceeded_title' => 'Carte prea mare',
+	'coll-limit_exceeded_text' => 'Cartea dumneavoastră este prea mare.
+Nicio altă pagină nu poate fii adăugată.',
+	'coll-rendering_title' => 'Generare',
+	'coll-rendering_text' => '<p><strong>Vă rugăm să aşteptaţi până când documentul este generat.</strong></p>
+
+<p><strong>Progres:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Această pagină ar trebui să se actualizeze automat.
+Dacă aceasta nu funcţionează, vă rugăm să apăsaţi butonul de reîncărcare a paginii din browser-ul dumneavoastră.</p>',
+	'coll-rendering_status' => '<strong>Stare:</strong> $1',
+	'coll-rendering_article' => '(wiki pagină: $1)',
+	'coll-rendering_page' => '(pagină: $1)',
+	'coll-rendering_finished_title' => 'Generare terminată',
+	'coll-rendering_finished_text' => '<strong>Fişierul documentului a fost generat.</strong>
+<strong>[$1 Descarcă fişierul]</strong> în calculatorul dumneavoastră.
+
+Note:
+* Nu sunteţi mulţumit de rezultat? Vedeţi [[{{MediaWiki:Coll-helppage}}|pagina de ajutor în legătură cu cărţile]] pentru posibilităţi de îmbunătăţire.',
 	'coll-notfound_title' => 'Carte negăsită',
+	'coll-notfound_text' => 'Pagina cărţii nu a putut fii găsită.',
+	'coll-download_notfound_title' => 'Fişier negăsit',
+	'coll-download_notfound_text' => 'Fişierul pe care încercaţi să în descărcaţi nu există: Poate a fost şters şi trebuie regenerat.',
+	'coll-is_cached' => '<ul><li>O versiune din cache a documentului a fost găsită, deci nu a mai fost necesară o regenerare. <a href="$1">Forţaţi regenerarea.</a></li></ul>',
+	'coll-excluded-templates' => '* Formatele din categoria [[:Category:$1|$1]] au fost excluse.',
+	'coll-blacklisted-templates' => '* Formatele de pe lista neagră [[:$1]] au fost excluse.',
 	'coll-return_to_collection' => '<p>Întoarcere la <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Comandaţi ca o carte imprimată',
+	'coll-book_text' => 'Obţineţi o carte printată de la partenerul nostru.',
 	'coll-order_from_pp' => 'Comandă cartea la $1',
 	'coll-about_pp' => 'Despre $1',
+	'coll-invalid_podpartner_title' => 'Partener incorect',
+	'coll-invalid_podpartner_msg' => 'Partenerul ales este incorect.
+Vă rugăm să contactaţi administratorul MediaWiki.',
 	'coll-license' => 'Licenţă',
+	'coll-return_to' => 'Întoarceţi-vă la [[:$1]]',
+	'coll-more_info' => 'Arată mai multe informaţii',
+	'coll-hide_info' => 'Ascunde informaţii',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress informaţii despre comandă',
+	'right-collectionsaveasuserpage' => 'Salvaţi cartea ca o pagină de utilizator',
+	'right-collectionsaveascommunitypage' => 'Salvează cartea ca o pagină a comunităţii',
 );
 
 /** Tarandíne (Tarandíne)
