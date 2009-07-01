@@ -1430,6 +1430,7 @@ $messages['eo'] = array(
 	'coll-print_template_pattern' => '$1/Printi',
 	'coll-unknown_subpage_title' => 'Nekonata subpaĝo',
 	'coll-unknown_subpage_text' => 'Ĉi tiu subpaĝo de [[Special:Book|Libro]] ne ekzistas',
+	'coll-couldnotremovearticle_title' => 'Ne eblas forigi vikipaĝon',
 	'coll-download_as' => 'Elŝuti kiel $1',
 	'coll-noscript_text' => '<h1>JavaScript-o estas deviga!<h1>
 <strong>Via retumilo ne subtenas JavaScript-on aŭ JavaScript-o estis malŝaltita.
@@ -1639,6 +1640,8 @@ Por favor, contacta con tu administrador MediaWiki.',
 	'coll-more_info' => 'Mostrar más información',
 	'coll-hide_info' => 'Ocultar información',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress ordenar información',
+	'right-collectionsaveasuserpage' => 'Grabar libros como página de usuario',
+	'right-collectionsaveascommunitypage' => 'Grabar libros como página de la comunidad',
 );
 
 /** Estonian (Eesti)
@@ -3570,13 +3573,13 @@ $messages['ja'] = array(
  * @author Pras
  */
 $messages['jv'] = array(
-	'coll-desc' => '[[Special:Collection|Kolèksi kaca-kaca]], nggawé PDF',
-	'coll-collection' => 'Kolèksi',
-	'coll-collections' => 'Kolèksi-kolèksi',
+	'coll-desc' => '[[Special:Book|Gawé buku]]',
+	'coll-collection' => 'Buku',
+	'coll-collections' => 'Buku',
 	'coll-exclusion_category_title' => 'Ora mèlu dicithak',
 	'coll-print_template_prefix' => 'Cithak',
 	'coll-unknown_subpage_title' => 'Anak-kaca sing ora dikenal',
-	'coll-unknown_subpage_text' => 'Anak-kaca saka [[Special:Book|Kolèksi]] iki ora ana',
+	'coll-unknown_subpage_text' => 'Anak-kaca saka [[Special:Book|Buku]] iki ora ana',
 	'coll-download_as' => 'Undhuh minangka $1',
 	'coll-noscript_text' => '<h1>JavaScript diperlokaké!</h1>
 <strong>Browser panjenengan ora ndhukung JavaScript utawa JavaScript wis dipatèni.
@@ -3609,29 +3612,29 @@ Kaca iki ora bakal tampil kanthi bener, kajaba JavaScript di aktifaké.</strong>
 	'coll-mwserve_failed_title' => 'Ana kasalahan server',
 	'coll-mwserve_failed_msg' => 'Ana kasalahan ing server: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Rèspon kasalahan saka server',
-	'coll-empty_collection' => 'Kolèksi kosong',
+	'coll-empty_collection' => 'Buku kothong',
 	'coll-revision' => 'Révisi: $1',
-	'coll-save_collection_title' => 'Simpen lan tuduhaké kolèksi panjenengan',
+	'coll-save_collection_title' => 'Simpen lan tuduhaké buku panjenengan',
 	'coll-save_collection_text' => 'Pilih lokasi',
-	'coll-login_to_save' => 'Yèn panjenengan arep nyimpen kolèksi kanggo kaperluan mangsa ngarep, mangga[[Special:UserLogin|mlebu log utawa gawé akun]].',
-	'coll-personal_collection_label' => 'Kolèksi pribadi:',
-	'coll-community_collection_label' => 'Kolèksi komunitas:',
-	'coll-save_collection' => 'Simpen kolèksi',
-	'coll-save_category' => 'Kolèksi disimpen ing kategori [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-login_to_save' => 'Yèn panjenengan arep nyimpen buku kanggo mangsa ngarep, mangga[[Special:UserLogin|mlebu log utawa gawé akun]].',
+	'coll-personal_collection_label' => 'Buku pribadi:',
+	'coll-community_collection_label' => 'Buku komunitas:',
+	'coll-save_collection' => 'Simpen buku',
+	'coll-save_category' => 'Kabèh buku disimpen ing kategori [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Kaca wis ana. Ditindhes waé?',
 	'coll-overwrite_text' => 'Kaca kanthi jeneng [[:$1]] wis ana.
 Apa arep diganti nganggo kolèksi panjenengan?',
 	'coll-yes' => 'Iya',
 	'coll-no' => 'Ora',
-	'coll-load_overwrite_text' => 'Panjenengan wis duwé sawetara kaca jroning kolèksi panjenengan.
-Apa arep nindhes kolèksi panjenengan, nambah isi anyar, utawa mbatalaké ngunggah kolèksi iki?',
+	'coll-load_overwrite_text' => 'Panjenengan wis duwé sawetara kaca jroning buku panjenengan.
+Apa arep nindhes buku panjenengan iku, nambah isi anyar, utawa mbatalaké ngunggah buku iki?',
 	'coll-overwrite' => 'Timpanen',
 	'coll-append' => 'Lampirna',
 	'coll-cancel' => 'Batal',
 	'coll-update' => 'Mutakir',
-	'coll-limit_exceeded_title' => 'Kolèksi Kegedhèn',
-	'coll-limit_exceeded_text' => 'Kolèksi kaca panjenengan iku kegedhèn.
-Ora bisa nambah kaca-kaca liya manèh.',
+	'coll-limit_exceeded_title' => 'Buku kagedhèn',
+	'coll-limit_exceeded_text' => 'Buku panjenengan kagedhèn.
+Ora bisa nambah kaca manèh.',
 	'coll-rendering_title' => 'Nggawé/ngowahi',
 	'coll-rendering_text' => "<p><strong>Mangga ditunggu sauntara dokumèn lagi digawé.</strong></p>
 
@@ -3648,8 +3651,8 @@ Yèn ora mangkono, mangga pencèt tombol ''refresh'' ing ''browser'' panjenengan
 
 Cathetan:
 * Kurang rena karo wetonan (''output'')é? Pirsani [[{{MediaWiki:Coll-helppage}}|kaca pitulung bab kolèksi]] kanggo kamungkinan ningkataké.",
-	'coll-notfound_title' => 'Kolèksi ora ditemokaké',
-	'coll-notfound_text' => 'Ora bisa nemokaké kaca kolèksi.',
+	'coll-notfound_title' => 'Buku ora ketemu',
+	'coll-notfound_text' => 'Ora bisa nemokaké kaca buku.',
 	'coll-is_cached' => "<ul><li>Dokumèn vèrsi ''cache'' wis ditemokaké, mula ora perlu ana pangowahan (''rendering''). <a href=\"\$1\">Peksa ''re-rendering''.</a></li></ul>",
 	'coll-excluded-templates' => '* Cithakan-cithakan ing kategori [[:Category:$1|$1]] wis di wetokaké.',
 	'coll-blacklisted-templates' => '* Cithakan-cithakan ing dhaptar-ireng [[:$1]] wis diwetokaké.',
@@ -7221,6 +7224,8 @@ Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
 	'coll-more_info' => 'Xem thêm thông tin',
 	'coll-hide_info' => 'Ẩn thông tin',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress',
+	'right-collectionsaveasuserpage' => 'Lưu sách vở thành trang cá nhân',
+	'right-collectionsaveascommunitypage' => 'Lưu sách vở thành trang cộng đồng',
 );
 
 /** Volapük (Volapük)

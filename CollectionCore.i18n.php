@@ -1002,17 +1002,17 @@ $messages['ja'] = array(
  */
 $messages['jv'] = array(
 	'coll-add_category' => 'Tambah kategori',
-	'coll-add_page' => 'Tambah kaca wiki',
-	'coll-clear_collection' => 'Kosongna kolèksi',
-	'coll-clear_collection_confirm' => 'Panjenengan pancèn arep mbusak kalèksi panjenengan?',
+	'coll-add_page' => 'Tambah kaca ing buku',
+	'coll-clear_collection' => 'Busak buku',
+	'coll-clear_collection_confirm' => 'Apa panjenengan pancèn arep mbusak buku panjenengan sakabèhané?',
 	'coll-create_a_book' => 'Gawé buku',
-	'coll-help_collections' => 'Pitulung kolèksi',
-	'coll-helppage' => 'Help:Collections',
-	'coll-load_collection' => 'Unggahna kolèksi',
+	'coll-help_collections' => 'Pitulung buku',
+	'coll-helppage' => 'Help:Buku',
+	'coll-load_collection' => 'Unggahna buku',
 	'coll-n_pages' => '$1 {{PLURAL:$1|kaca|kaca}}',
 	'coll-printable_version_pdf' => 'Vèrsi PDF',
-	'coll-remove_page' => 'Busak kaca wiki',
-	'coll-show_collection' => 'Tuduhna kolèksi',
+	'coll-remove_page' => 'Busak kaca saka buku',
+	'coll-show_collection' => 'Tuduhna buku',
 );
 
 /** Georgian (ქართული)
