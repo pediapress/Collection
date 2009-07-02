@@ -21,6 +21,8 @@
 
 (function() {
 
+var jQuery = collection_jQuery;
+
 /******************************************************************************/
 
 var requiredVersion = '1.2';
