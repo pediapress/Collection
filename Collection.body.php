@@ -265,7 +265,7 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgCollectionStyleVersion\"></script>" );
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.ui.js?$wgCollectionStyleVersion\"></script>" );
-		$wgOut->addInlineScript( "jQuery.noConflict();" );
+		$wgOut->addInlineScript( "var collection_jQuery = jQuery.noConflict();" );
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgCollectionStyleVersion\"></script>" );
 
 		$template = new CollectionPageTemplate();
