@@ -5301,6 +5301,8 @@ $messages['pt'] = array(
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Sub-página desconhecida',
 	'coll-unknown_subpage_text' => 'Não existe esta sub-página do [[Special:Book|Livro]]',
+	'coll-couldnotaddarticle_title' => 'Não pôde ser adicionada a página wiki',
+	'coll-couldnotremovearticle_msg' => 'A página wiki não pôde ser removida.',
 	'coll-download_as' => 'Descarregar como $1',
 	'coll-noscript_text' => '<h1>JavaScript é Requerido!</h1>
 <strong>O seu "browser" não suporta JavaScript, ou o JavaScript foi desactivado.
