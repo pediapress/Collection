@@ -1534,6 +1534,7 @@ Bonvolu kontakti vian administranton de MediaWiki.',
  * @author Imre
  * @author Jatrobat
  * @author Lin linao
+ * @author Locos epraix
  * @author Remember the dot
  * @author Sanbec
  */
@@ -1546,6 +1547,8 @@ $messages['es'] = array(
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Subpágina desconocida',
 	'coll-unknown_subpage_text' => 'Esta subpágina del [[Special:Book|libro]] no existe',
+	'coll-couldnotaddarticle_title' => 'No pudo agregar página wiki',
+	'coll-couldnotaddarticle_msg' => 'La página wiki no pudo ser agregada.',
 	'coll-download_as' => 'Descargar como $1',
 	'coll-noscript_text' => '<h1>¡Se necesita JavaScript!</h1>
 <strong>Tu navegador no permite JavaScript o está deshabilitado.
@@ -1602,7 +1605,7 @@ Esta página no funcionará correctamente mientras no esté habilitado.</strong>
 	'coll-cancel' => 'Cancelar',
 	'coll-update' => 'Actualizar',
 	'coll-limit_exceeded_title' => 'libro demasiado grande',
-	'coll-limit_exceeded_text' => 'Tu libro de páginas es demasiado grande.
+	'coll-limit_exceeded_text' => 'Tu libro es demasiado grande.
 No se pueden añadir más páginas.',
 	'coll-rendering_title' => 'Procesando',
 	'coll-rendering_text' => '<p><strong>Por favos, espera mientras se genera el documento.</strong></p>
@@ -1903,9 +1906,11 @@ $messages['fi'] = array(
 <strong>Selaimesi ei tue JavaScriptiä tai JavaScript on poistettu käytöstä.
 Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
 	'coll-intro_text' => 'Laadi ja hallinnoi omia henkilökohtaisia wikisivujen valikoimiasi.<br />Lisätietoja sivulla [[{{MediaWiki:Coll-helppage}}]].',
+	'coll-savedbook_template' => 'tallennettu_kirja',
 	'coll-your_book' => 'Sinun kirjasi',
 	'coll-download_title' => 'Lataa',
 	'coll-download_text' => 'Jos haluat tallentaa kirjan omalle koneellesi, valitse tiedostomuoto ja napsauta painiketta.',
+	'coll-download_as_text' => 'Voit ladata itsellesi version $1-muodossa napsauttamalla painiketta.',
 	'coll-download' => 'Lataa',
 	'coll-format_label' => 'Muoto:',
 	'coll-remove' => 'Poista',
@@ -1972,6 +1977,7 @@ Huomautuksia:
 	'coll-notfound_title' => 'Kirjaa ei löydy',
 	'coll-notfound_text' => 'Kirjan sivua ei löydy.',
 	'coll-download_notfound_title' => 'Tiedostoa ei löydy',
+	'coll-download_notfound_text' => 'Tiedostoa, jota yritit ladata ei ole olemassa: Se on ehkä poistettu ja tarvitsee luoda uudelleen.',
 	'coll-is_cached' => '<ul><li>Dokumentti löytyi välimuistista, joten renderöintiä ei tarvittu. <a href="$1">Pakota uudelleenrenderöinti.</a></li></ul>',
 	'coll-excluded-templates' => '* Mallineet luokassa [[:Category:$1|$1]] on ohitettu.',
 	'coll-blacklisted-templates' => '* Mallineet sulkulistalla [[:$1]] on ohitettu.',
@@ -1987,6 +1993,7 @@ Ota yhteys MediaWiki-ylläpitäjääsi.',
 	'coll-return_to' => 'Palaa sivulle [[:$1]]',
 	'coll-more_info' => 'Näytä lisätietoja',
 	'coll-hide_info' => 'Piilota tiedot',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPressin tilaustiedot',
 	'right-collectionsaveasuserpage' => 'Tallentaa kirjoja käyttäjäsivuna',
 	'right-collectionsaveascommunitypage' => 'Tallentaa kirjoja yhteisösivuina',
 );
