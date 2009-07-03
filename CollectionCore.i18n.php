@@ -466,6 +466,7 @@ $messages['eo'] = array(
 
 /** Spanish (Español)
  * @author Crazymadlover
+ * @author Locos epraix
  * @author Remember the dot
  * @author Sanbec
  */
@@ -478,7 +479,7 @@ $messages['es'] = array(
 	'coll-add_page_tooltip' => 'Agregar la página wiki actual a tu libro',
 	'coll-bookscategory' => 'Libros',
 	'coll-clear_collection' => 'Vaciar libro',
-	'coll-clear_collection_confirm' => '¿Realmente quieres borrar completamente su libro?',
+	'coll-clear_collection_confirm' => '¿Realmente quieres borrar completamente tu libro?',
 	'coll-clear_collection_tooltip' => 'Remover todas las páginas wiki de tu libro actual',
 	'coll-create_a_book' => 'Crear un libro',
 	'coll-help_collections' => 'Ayuda de libros',
@@ -572,6 +573,7 @@ $messages['fi'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|sivu|sivua}}',
 	'coll-printable_version_pdf' => 'PDF-versio',
 	'coll-remove_page' => 'Poista sivu kirjasta',
+	'coll-remove_page_tooltip' => 'Poista nykyinen wikisivu kirjastasi',
 	'coll-show_collection' => 'Näytä kirja',
 );
 
