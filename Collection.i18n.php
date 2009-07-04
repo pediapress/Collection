@@ -1549,6 +1549,8 @@ $messages['es'] = array(
 	'coll-unknown_subpage_text' => 'Esta subpágina del [[Special:Book|libro]] no existe',
 	'coll-couldnotaddarticle_title' => 'No pudo agregar página wiki',
 	'coll-couldnotaddarticle_msg' => 'La página wiki no pudo ser agregada.',
+	'coll-couldnotremovearticle_title' => 'No es posible eliminar la página wiki',
+	'coll-couldnotremovearticle_msg' => 'La página wiki no pudo ser eliminada.',
 	'coll-download_as' => 'Descargar como $1',
 	'coll-noscript_text' => '<h1>¡Se necesita JavaScript!</h1>
 <strong>Tu navegador no permite JavaScript o está deshabilitado.
