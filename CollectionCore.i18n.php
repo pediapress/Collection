@@ -1034,19 +1034,26 @@ $messages['ka'] = array(
  * @author Lovekhmer
  * @author Thearith
  * @author គីមស៊្រុន
+ * @author វ័ណថារិទ្ធ
  */
 $messages['km'] = array(
 	'coll-add_category' => 'បន្ថែមចំណាត់ថ្នាក់ក្រុម',
-	'coll-add_page' => 'បន្ថែមទំព័រវិគី',
+	'coll-add_page' => 'បន្ថែមទំព័រទៅសៀវភៅ​',
+	'coll-add_page_popup' => 'បន្ថែមទំព័រ​វីគី​ដែលតភ្ជាប់ ទៅសៀវភៅ​របស់អ្នក​',
+	'coll-add_page_tooltip' => 'បន្ថែម​ទំព័រ​វីគី​បច្ចុប្បន្នទៅ​សៀវភៅ​របស់​អ្នក​',
+	'coll-bookscategory' => 'សៀវភៅ',
 	'coll-clear_collection' => 'សំអាត​សៀវភៅ',
 	'coll-clear_collection_confirm' => 'តើ​អ្នក​ពិតជា​ចង់​ជម្រះ​សៀវភៅ​របស់​អ្នក​ទាំងស្រុង​ឬ​?',
-	'coll-create_a_book' => 'កំរងឯកសារ',
+	'coll-clear_collection_tooltip' => 'ដកយក​ទំព័រ​វីគីទាំងអស់​ពីសៀវភៅ​បច្ចុប្បន្ន​របស់អ្នក​',
+	'coll-create_a_book' => 'បង្កើតសៀវភៅ​',
 	'coll-help_collections' => 'ជំនួយ​អំពី​សៀវភៅ',
-	'coll-helppage' => 'Help:សៀវភៅ',
+	'coll-help_collections_tooltip' => 'បង្ហាញ​ជំនួយ​អំពី​ឧបករណ៍​សៀវភៅ​',
+	'coll-helppage' => 'Help: សៀវភៅ',
 	'coll-load_collection' => 'ផ្ទុកសៀវភៅ',
+	'coll-load_collection_tooltip' => 'ផ្ទុក​សៀវភៅនេះ​ទៅជា​សៀវភៅ​បច្ចុប្បន្ន​របស់អ្នក​',
 	'coll-n_pages' => '$1 {{PLURAL:$1|ទំព័រ|ទំព័រ}}',
 	'coll-printable_version_pdf' => 'កំណែ PDF',
-	'coll-remove_page' => 'ដកទំព័រវិគីចេញ',
+	'coll-remove_page' => 'ដកទំព័រចេញពីសៀវភៅ​',
 	'coll-show_collection' => 'បង្ហាញ​សៀវភៅ',
 );
 
