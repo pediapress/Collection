@@ -5783,6 +5783,10 @@ $messages['sah'] = array(
 	'coll-print_template_pattern' => '$1/Бэчээт',
 	'coll-unknown_subpage_title' => 'Биллибэт алын сирэй (подстраница)',
 	'coll-unknown_subpage_text' => '[[Special:Book|Кинигэҕэ]] бу сирэй суох',
+	'coll-couldnotaddarticle_title' => 'Ыстатыйа кыайан эбиллибэтэ',
+	'coll-couldnotaddarticle_msg' => 'Бу ыстатыйа кыайан эбиллэр кыаҕа суох.',
+	'coll-couldnotremovearticle_title' => 'Ыстатыйа кыайан сотуллубата',
+	'coll-couldnotremovearticle_msg' => 'Бу ыстатыйа сотуллар кыаҕа суох.',
 	'coll-download_as' => 'Маннык $1 киллэр',
 	'coll-noscript_text' => '<h1>JavaScript ирдэнэр!</h1>
 <strong>Эн брааузерыҥ JavaScript`ы өйөөбөт эбит эбэтэр JavaScript араарыллыбыт. Бу сирэй JavaScript холбоммотох буоллаҕына сөпкө үлэлиэ уонна көстүө суоҕа.</strong>',
@@ -5876,6 +5880,8 @@ $messages['sah'] = array(
 	'coll-more_info' => 'Өссө эбии көрдөр',
 	'coll-hide_info' => 'Кистээ',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress сакаастааһын туһунан',
+	'right-collectionsaveasuserpage' => 'кинигэлэри кытааччы тус сирэйин курдук хаалларыы',
+	'right-collectionsaveascommunitypage' => 'кинигэлэри бөлөх тус сирэйин курдук хаалларыы',
 );
 
 /** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
