@@ -1021,9 +1021,13 @@ $messages['jv'] = array(
  * @author Malafaya
  * @author Sopho
  * @author Temuri rajavi
+ * @author გიორგიმელა
  */
 $messages['ka'] = array(
 	'coll-add_category' => 'კატეგორიის დამატება',
+	'coll-add_category_popup' => 'ჩაამატეთ ვიკი გვერდები მონიშნული კატეგორიიდან თქვენს გვერდში',
+	'coll-add_category_tooltip' => 'ამ კატეგორიის ყველა ვიკი გვერდის ჩამატება წიგნში',
+	'coll-add_page' => 'გვერდის ჩამატება წიგნში',
 	'coll-create_a_book' => 'წიგნის შექმნა',
 	'coll-helppage' => 'Help:წიგნები',
 	'coll-n_pages' => '$1 გვერდი',

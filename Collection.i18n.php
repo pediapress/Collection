@@ -1430,6 +1430,7 @@ $messages['eo'] = array(
 	'coll-print_template_pattern' => '$1/Printi',
 	'coll-unknown_subpage_title' => 'Nekonata subpaĝo',
 	'coll-unknown_subpage_text' => 'Ĉi tiu subpaĝo de [[Special:Book|Libro]] ne ekzistas',
+	'coll-couldnotaddarticle_title' => 'Ne eblis aldoni vikian paĝon',
 	'coll-couldnotremovearticle_title' => 'Ne eblas forigi vikipaĝon',
 	'coll-download_as' => 'Elŝuti kiel $1',
 	'coll-noscript_text' => '<h1>JavaScript-o estas deviga!<h1>
@@ -3681,6 +3682,7 @@ Mangga hubungi pangurus MediaWiki panjenengan.',
  * @author Malafaya
  * @author Sopho
  * @author Temuri rajavi
+ * @author გიორგიმელა
  */
 $messages['ka'] = array(
 	'coll-collection' => 'წიგნი',
@@ -3692,8 +3694,28 @@ $messages['ka'] = array(
 	'coll-show' => 'ჩვენება',
 	'coll-title' => 'სათაური:',
 	'coll-no' => 'არა',
+	'coll-notfound_title' => 'წიგნი არ არის ნაპოვნი',
+	'coll-notfound_text' => 'შეუძლებელია გვერდის წიგნის პოვნა',
+	'coll-download_notfound_title' => 'ფაილი არ იქნა მოძიებული',
+	'coll-download_notfound_text' => 'ფაილი, რომლის ატვირთვასაც ცდილობს, არ არსებობს. შესაძლოა იგი წაიშალა და საჭიროა მისი აღდგენა.',
+	'coll-is_cached' => '<ul><li>აღმოჩენილია ამ დოკუმენტის ქეშირებული ვერსია, რენდირება საჭირო არ გახდა.<a href="$1">რენდირების მაინც გაშვება.</a></li></ul>',
+	'coll-excluded-templates' => '* თარგები კატეგორიიდან [[:Category:$1|$1]] ამოღებული იქნენ.',
+	'coll-blacklisted-templates' => '* შავი სიის თარგები [[:$1]] ამოღებული იქნენ.',
+	'coll-return_to_collection' => '<p>დაბრუნება <a href="$1">$2</a></p>',
+	'coll-book_title' => 'დაბეჭდელი წიგნის შეკვეთა',
+	'coll-book_text' => 'ჩვენი პარტნიორისგან დაბეჭდილი წიგნის შეკვეთა:',
+	'coll-order_from_pp' => 'წიგნის შეკვეთა $1-დან',
 	'coll-about_pp' => '$1-ის შესახებ',
+	'coll-invalid_podpartner_title' => 'არასწორი POD პარნიორი.',
+	'coll-invalid_podpartner_msg' => 'მოცემული POD-პარტნიორი არასწორია.
+დაუკავშირდით MediaWiki-ს თქვენს ადმინისტრატორს.',
 	'coll-license' => 'ლიცენზია',
+	'coll-return_to' => 'დაბრუნება [[:$1]]-ზე.',
+	'coll-more_info' => 'უფრო მეტი ინფორმაციის ჩვენება',
+	'coll-hide_info' => 'ინფორმაციის დამალვა',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/ინფორმაცია PediaPress-ის შეკვვეთაზე',
+	'right-collectionsaveasuserpage' => 'შეინახე წიგნი, როგორც მომხმარებლის გვერდი',
+	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
 );
 
 /** Khmer (ភាសាខ្មែរ)
