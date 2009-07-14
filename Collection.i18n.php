@@ -1415,6 +1415,8 @@ $messages['el'] = array(
 	'coll-more_info' => 'Εμφάνιση περισσότερων πληροφοριών',
 	'coll-hide_info' => 'Απόκρυψη πληροφοριών',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress απαίτηση για πληροφόρηση',
+	'right-collectionsaveasuserpage' => 'Αποθήκευση βιβλίων ως σελίδας χρήστη',
+	'right-collectionsaveascommunitypage' => 'Αποθήκευση βιβλίων ως σελίδας κοινότητας',
 );
 
 /** Esperanto (Esperanto)
@@ -1431,7 +1433,9 @@ $messages['eo'] = array(
 	'coll-unknown_subpage_title' => 'Nekonata subpaĝo',
 	'coll-unknown_subpage_text' => 'Ĉi tiu subpaĝo de [[Special:Book|Libro]] ne ekzistas',
 	'coll-couldnotaddarticle_title' => 'Ne eblis aldoni vikian paĝon',
+	'coll-couldnotaddarticle_msg' => 'Ne eblis aldoni ĉi tiun vikian paĝon.',
 	'coll-couldnotremovearticle_title' => 'Ne eblas forigi vikipaĝon',
+	'coll-couldnotremovearticle_msg' => 'Ne eblis forigi ĉi tiun vikian paĝon.',
 	'coll-download_as' => 'Elŝuti kiel $1',
 	'coll-noscript_text' => '<h1>JavaScript-o estas deviga!<h1>
 <strong>Via retumilo ne subtenas JavaScript-on aŭ JavaScript-o estis malŝaltita.
@@ -2252,6 +2256,7 @@ Por favor, contacte co seu administrador MediaWiki.',
 $messages['grc'] = array(
 	'coll-collection' => 'Βιβλίον',
 	'coll-collections' => 'Βιβλία',
+	'coll-download_as' => 'Καταφορτίζειν ὡς $1',
 	'coll-download_title' => 'καταφορτίζειν',
 	'coll-download' => 'Καταφόρτισις',
 	'coll-remove' => 'Άφαιρεῖν',
@@ -2259,9 +2264,12 @@ $messages['grc'] = array(
 	'coll-title' => 'Ἐπιγραφή:',
 	'coll-subtitle' => 'Ὑποεπιγραφή:',
 	'coll-contents' => 'Περιεχόμενα',
+	'coll-rename' => 'Ἐπανωνομάζειν',
+	'coll-revision' => 'Ἀναθεώρησις: $1',
 	'coll-yes' => 'Ναί',
 	'coll-no' => 'Οὐ',
 	'coll-cancel' => 'Ἀκυροῦν',
+	'coll-update' => 'Ἐνημεροῦν',
 	'coll-rendering_title' => 'Ἀπόδοσις',
 	'coll-rendering_status' => '<strong>Κατάστασις:</strong> $1',
 	'coll-about_pp' => 'Περὶ $1',
@@ -3692,8 +3700,64 @@ $messages['ka'] = array(
 	'coll-download' => 'ჩამოტვირთვა',
 	'coll-format_label' => 'ფორმატი:',
 	'coll-show' => 'ჩვენება',
+	'coll-move_down' => 'ქვემოთ გადატანა',
+	'coll-move_to_bottom' => 'ფსკერამდე ჩასვლა',
 	'coll-title' => 'სათაური:',
+	'coll-subtitle' => 'ქვესათაური:',
+	'coll-contents' => 'შინაარსი',
+	'coll-drag_and_drop' => 'ვიკი გვერდებისა და თავების დასალაგებლად, გადმოიტანეთ ისინი თაგვით.',
+	'coll-create_chapter' => 'თავის შექმნა',
+	'coll-sort_alphabetically' => 'ანბანზე დალაგება',
+	'coll-rename' => 'გადრქმევა',
+	'coll-new_chapter' => 'შეიყვანეთ თავის ახალი სათაური',
+	'coll-rename_chapter' => 'შეიყვანეთ თავის ახალი სათაური',
+	'coll-no_such_category' => 'ამგვარი კატეგორია არ არსებობს',
+	'coll-notitle_title' => 'გვერდის სათაურის აღქმა ვერ ხერხდება',
+	'coll-post_failed_title' => 'POST-მოთხოვნა არ შესრულდა',
+	'coll-post_failed_msg' => 'POST-მოთხოვნა $1-სადმი ვერ შესრულდა ($2).',
+	'coll-mwserve_failed_title' => 'ჩახატვის სერვერის შეცდომა',
+	'coll-mwserve_failed_msg' => 'ჩახატვის სერვერზე შეცდომა: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'სერვერისგან პასუხის მიღების შეცდომა',
+	'coll-empty_collection' => 'ცარიელი წიგნი',
+	'coll-revision' => 'ვერსია: $1',
+	'coll-save_collection_title' => 'წიგნის შენახვა და მისი ხილვის დაშვება',
+	'coll-save_collection_text' => 'აირჩიეთ თქვენი წიგნის მდებარეობა:',
+	'coll-login_to_save' => 'წიგნის შენახვისთვის და მომვალი გამოყენებისთვის [[Special:UserLogin|წარადგინეთ თავი სისტემისადმი ან შექმენით ანგარიში]].',
+	'coll-personal_collection_label' => 'პირადი წიგნი:',
+	'coll-community_collection_label' => 'საზოგადოების წიგნი:',
+	'coll-save_collection' => 'წიგნის შენახვა',
+	'coll-save_category' => 'წიგნები შენახულია კატეგორიაში [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-overwrite_title' => 'გვერდი უკვე არსებობს.
+გსურთ მისი გადაწერა?',
+	'coll-overwrite_text' => 'გვერდი სახელით  [[:$1]] უკვე არსებობს.
+გსურთ მისი შეცვლა თქვენი გვერდით?',
+	'coll-yes' => 'ჰო',
 	'coll-no' => 'არა',
+	'coll-load_overwrite_text' => 'თქვენ უკვე გაგაჩნიათ რამდენიმე გვერდი წიგნში. 
+გსურთ თქვენი მოქმედი წიგნის თავიდან გადაწერა, ახალი მატერიალის დამატება თუ ამ წიგნის ატვირთვის გაუქმება?',
+	'coll-overwrite' => 'თავიდან გადაწერა',
+	'coll-append' => 'თანდართვა',
+	'coll-cancel' => 'გაუქმება',
+	'coll-update' => 'განახლება',
+	'coll-limit_exceeded_title' => 'ძალიან დიდი წიგნი',
+	'coll-limit_exceeded_text' => 'წიგნს აქვვს ძალიან დიდი ზომა.
+დამატებითი გვერდების ჩამატება შეუძლებელია.',
+	'coll-rendering_title' => 'შექმნა',
+	'coll-rendering_text' => '<p><strong>გთხოვთ დაიცადოთ, მიმდინარეობს დოკუმენტის შექმნა.</strong></p>
+
+<p><strong>მუშაობის პროგრესი:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
+
+<p>ეს გვერდი უნდა განახლდეს ყოველ რამდენიმე წამში.
+თუ ეს არ ხდება, გთხოვთ დააჭიროთ ბროუზერის «განახლების» ღილაკს.</p>',
+	'coll-rendering_status' => '<strong>სტატუსი:</strong> $1',
+	'coll-rendering_article' => '(სტატია: $1)',
+	'coll-rendering_page' => '(გვერდი: $1)',
+	'coll-rendering_finished_title' => 'შექმნა დასრულებულია',
+	'coll-rendering_finished_text' => '<strong>დოკუმენტის ფაილი შექმნილია.</strong>
+<strong>[$1 ფაილის კომპიუტერზე]</strong> ჩამოტვირთვა.
+
+აღნიშვნა:
+* რეზულტატით უკმაყოფილებლობის შემთხვევაში შეიხედეთ [[{{MediaWiki:Coll-helppage}}|წიგნებზე დამხმარე გვერდზე]], შესაძლოა ამ გვერდზე აღწერილია გაუმჯობესების საშუალება.',
 	'coll-notfound_title' => 'წიგნი არ არის ნაპოვნი',
 	'coll-notfound_text' => 'შეუძლებელია გვერდის წიგნის პოვნა',
 	'coll-download_notfound_title' => 'ფაილი არ იქნა მოძიებული',
@@ -5162,12 +5226,15 @@ $messages['os'] = array(
 $messages['pdc'] = array(
 	'coll-collection' => 'Buch',
 	'coll-collections' => 'Bicher',
+	'coll-print_template_prefix' => 'Drucke',
+	'coll-print_template_pattern' => '$1/Druck',
 	'coll-your_book' => 'Dei Buch',
 	'coll-remove' => 'Lösche',
 	'coll-rename' => 'Naame ennere',
 	'coll-empty_collection' => 'Leeres Buch',
 	'coll-revision' => 'Version: $1',
 	'coll-yes' => 'Ya',
+	'coll-no' => 'Nee',
 	'coll-overwrite' => 'Iwwerschreiwe',
 	'coll-about_pp' => 'Iwwer $1',
 	'coll-return_to' => 'Zerick zu [[:$1]]',
