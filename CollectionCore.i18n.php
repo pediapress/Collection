@@ -647,6 +647,7 @@ $messages['gl'] = array(
  * @author Omnipaedista
  */
 $messages['grc'] = array(
+	'coll-add_category' => 'Προστιθέναι κατηγορίαν',
 	'coll-bookscategory' => 'Βιβλία',
 	'coll-printable_version_pdf' => 'Ἔκδοσις PDF',
 );
@@ -1028,8 +1029,17 @@ $messages['ka'] = array(
 	'coll-add_category_popup' => 'ჩაამატეთ ვიკი გვერდები მონიშნული კატეგორიიდან თქვენს გვერდში',
 	'coll-add_category_tooltip' => 'ამ კატეგორიის ყველა ვიკი გვერდის ჩამატება წიგნში',
 	'coll-add_page' => 'გვერდის ჩამატება წიგნში',
+	'coll-add_page_popup' => 'შესაბამისი ვიკი გვერდის წიგნში ჩამატება',
+	'coll-add_page_tooltip' => 'შესაბამისი ვიკი გვერდის წიგნში ჩამატება',
+	'coll-bookscategory' => 'წიგნები',
+	'coll-clear_collection' => 'წიგნის გასუფთავება',
+	'coll-clear_collection_confirm' => 'დარწმუნებული ხართ, რომ გსურთ თქვენი წიგნის სრული დასუფთავება?',
+	'coll-clear_collection_tooltip' => 'მოცემული წიგნიდან ყველა ვიკი-გვერდის წაშლა.',
 	'coll-create_a_book' => 'წიგნის შექმნა',
+	'coll-help_collections' => 'დახმარება წიგნებისთვის',
+	'coll-help_collections_tooltip' => 'წიგნის ინსტრუმენტებთან დაკავშირებული დახმარების გვერდის ხილვა',
 	'coll-helppage' => 'Help:წიგნები',
+	'coll-load_collection' => 'წიგნის ატვირთვა',
 	'coll-n_pages' => '$1 გვერდი',
 	'coll-printable_version_pdf' => 'PDF ვერსია',
 );
