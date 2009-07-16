@@ -83,9 +83,9 @@ class CollectionHooks {
 	}
 
 	/**
-	 * MonoBookTemplateToolboxEnd hook
+	 * SkinTemplateToolboxEnd hook
 	 */
-	static function insertMonoBookToolboxLink( &$skinTemplate ) {
+	static function insertToolboxLink( &$skinTemplate ) {
 		global $wgCollectionFormats;
 
 		if( isset( $skinTemplate->data['nav_urls']['printable_version_pdf'] ) ) {

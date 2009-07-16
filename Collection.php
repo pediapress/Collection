@@ -126,7 +126,7 @@ $wgSpecialPages['Book'] = 'SpecialCollection';
 $wgSpecialPageGroups['Book'] = 'pagetools';
 
 $wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'CollectionHooks::createNavURLs';
-$wgHooks['MonoBookTemplateToolboxEnd'][] = 'CollectionHooks::insertMonoBookToolboxLink';
+$wgHooks['SkinTemplateToolboxEnd'][] = 'CollectionHooks::insertToolboxLink';
 $wgHooks['SkinBuildSidebar'][] = 'CollectionHooks::buildSidebar';
 $wgHooks['OutputPageCheckLastModified'][] = 'CollectionHooks::checkLastModified';
 
