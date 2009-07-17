@@ -382,6 +382,15 @@ $messages['ar'] = array(
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/معلومات الطلب من بيديابرس',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'coll-collection' => 'ܟܬܒܐ',
+	'coll-collections' => 'ܟܬܒ̈ܐ',
+	'coll-more_info' => 'ܚܘܝ ܝܕܥܬ̈ܐ ܝܬܝܪ',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Ghaly
  * @author Meno25
@@ -4347,10 +4356,14 @@ $messages['lt'] = array(
 	'coll-cancel' => 'Atšaukti',
 	'coll-update' => 'Atnaujinti',
 	'coll-notfound_title' => 'Knyga nerasta',
+	'coll-download_notfound_title' => 'Failas nerastas',
 	'coll-book_title' => 'Užsisakyti spausdintą knygą',
+	'coll-order_from_pp' => 'Užsisakyti knygą iš $1',
 	'coll-about_pp' => 'Apie $1',
 	'coll-license' => 'Licencija',
 	'coll-return_to' => 'Grįžti į [[:$1]]',
+	'coll-more_info' => 'Rodyti daugiau informacijos',
+	'coll-hide_info' => 'Slėpti informaciją',
 );
 
 /** Eastern Mari (Олык Марий)

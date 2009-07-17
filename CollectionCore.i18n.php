@@ -121,6 +121,13 @@ $messages['ar'] = array(
 	'coll-show_collection_tooltip' => 'اضغط لتعديل/تنزيل/طلب كتابك',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'coll-show_collection' => 'ܚܘܝ ܟܬܒܐ',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Ghaly
  * @author Meno25
@@ -2022,7 +2029,7 @@ $messages['vi'] = array(
  */
 $messages['vo'] = array(
 	'coll-add_category' => 'Läükön kladi',
-	'coll-add_page' => 'Läükön padi vüke',
+	'coll-add_page' => 'Läükön padi buke',
 	'coll-bookscategory' => 'Buks',
 	'coll-clear_collection' => 'Vagükön buki',
 	'coll-clear_collection_confirm' => 'Vilol-li jenöfo vagükön buki olik lölöfiko?',
@@ -2032,7 +2039,7 @@ $messages['vo'] = array(
 	'coll-load_collection' => 'Lodön buki',
 	'coll-n_pages' => '{{PLURAL:$1|pad|pads}} $1',
 	'coll-printable_version_pdf' => 'fomam-PDF',
-	'coll-remove_page' => 'Moükön padi se vük',
+	'coll-remove_page' => 'Moükön padi se buk',
 	'coll-show_collection' => 'Jonön buki',
 );
 
