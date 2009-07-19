@@ -673,12 +673,15 @@ $messages['bg'] = array(
 	'coll-rendering_status' => '<strong>Статут:</strong> $1',
 	'coll-rendering_article' => '(уики-страница: $1)',
 	'coll-rendering_page' => '(страница: $1)',
+	'coll-download_notfound_title' => 'Файлът не беше намерен',
 	'coll-excluded-templates' => '* Шаблоните в категория [[:Category:$1|$1]] бяха изключени.',
 	'coll-return_to_collection' => '<p>Връщане към <a href="$1">$2</a></p>',
 	'coll-order_from_pp' => 'Поръчване на книга от $1',
 	'coll-about_pp' => 'За $1',
 	'coll-license' => 'Лиценз',
 	'coll-return_to' => 'Връщане към [[:$1]]',
+	'coll-more_info' => 'Показване на повече информация',
+	'coll-hide_info' => 'Скриване на информацията',
 );
 
 /** Bosnian (Bosanski)
