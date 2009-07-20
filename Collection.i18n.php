@@ -3881,7 +3881,7 @@ $messages['ko'] = array(
 	'coll-noscript_text' => '<h1>자바스크립트가 필요합니다!</h1>
 <strong>당신의 브라우저는 자바스크립트를 지원하지 않거나 비활성화되어 있습니다.
 자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
-	'coll-intro_text' => '위키 페이지의 개인적인 선택을 만들거나 운영하세요.<br /> [[{{미디어위키:도움말}}]]을 보시면 정보를 좀 더 얻을 수 있습니다.',
+	'coll-intro_text' => '위키 페이지의 개인적인 선택을 만들거나 운영하세요.<br /> [[{{MediaWiki:Coll-helppage}}]]을 보시면 정보를 좀 더 얻을 수 있습니다.',
 	'coll-savedbook_template' => '책 저장하기',
 	'coll-your_book' => '당신의 책',
 	'coll-download_title' => '다운로드',
