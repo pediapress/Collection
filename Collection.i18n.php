@@ -152,7 +152,7 @@ Please contact your MediaWiki administrator.',
  * @author Wmr89502270
  */
 $messages['qqq'] = array(
-	'coll-desc' => 'Short description of this extension, shown in [[Special:Version]]. Do not translate or change links.',
+	'coll-desc' => '{{desc}}',
 	'coll-collection' => '{{Identical|Book}}',
 	'coll-collections' => '{{Identical|Book}}',
 	'coll-exclusion_category_title' => 'The message text is the name of a category.',
@@ -174,7 +174,7 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-save_category' => 'Do not change <nowiki>{{MediaWiki:Coll-bookscategory}}</nowiki>. The link and category name should be in the content language.',
 	'coll-yes' => '{{Identical|Yes}}',
 	'coll-no' => '{{Identical|No}}',
-	'coll-append' => '{{Identical/Append}}',
+	'coll-append' => '{{Identical|Append}}',
 	'coll-cancel' => '{{Identical|Cancel}}',
 	'coll-rendering_status' => '{{Identical|Status}}',
 	'coll-order_from_pp' => '* $1 is the name of a print provider (a company name)',
@@ -1025,6 +1025,38 @@ Kontaktujte svého správce MediaWiki.',
 	'right-collectionsaveascommunitypage' => 'Ukládání knih jako stránek komunity',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'coll-desc' => '[[Special:Book|Llunio llyfrau]]',
+	'coll-collection' => 'Llyfr',
+	'coll-collections' => 'Llyfrau',
+	'coll-print_template_prefix' => 'Argraffu',
+	'coll-print_template_pattern' => '$1/Argraffu',
+	'coll-unknown_subpage_title' => 'Isdudalen anhysbys',
+	'coll-unknown_subpage_text' => "Nid yw'r isdudalen [[Special:Book|llyfr]] hon ar gael",
+	'coll-couldnotaddarticle_title' => 'Aflwyddiant ychwanegu tudalen wici',
+	'coll-couldnotaddarticle_msg' => "Ni lwyddwyd ychwanegu'r dudalen wici",
+	'coll-couldnotremovearticle_title' => 'Aflwyddiant tynnu tudalen wici',
+	'coll-couldnotremovearticle_msg' => "Ni lwyddwyd tynnu'r dudalen wici.",
+	'coll-download_as' => 'Islwytho ar ffurf $1',
+	'coll-savedbook_template' => 'Llyfr ar gadw',
+	'coll-your_book' => 'Eich llyfr',
+	'coll-download_title' => 'Islwytho',
+	'coll-download' => 'Islwytho',
+	'coll-format_label' => 'Fformat:',
+	'coll-remove' => 'Tynnu',
+	'coll-show' => 'Dangos',
+	'coll-move_up' => 'Symud am lan',
+	'coll-move_down' => 'Symud am lawr',
+	'coll-title' => 'Teitl:',
+	'coll-subtitle' => 'Isdeitl:',
+	'coll-contents' => 'Cynnwys',
+	'coll-create_chapter' => 'Llunio pennod',
+	'coll-rename' => 'Ailenwi',
+);
+
 /** Danish (Dansk)
  * @author Jon Harald Søby
  */
@@ -1040,6 +1072,7 @@ $messages['da'] = array(
  * @author Jbeigel
  * @author Melancholie
  * @author Metalhead64
+ * @author Pill
  * @author Raimond Spekking
  * @author Revolus
  * @author Umherirrender
@@ -1114,12 +1147,12 @@ Möchtest du das aktuelle Buch überschreiben, die neuen Seiten anhängen oder d
 	'coll-limit_exceeded_title' => 'Buch zu groß',
 	'coll-limit_exceeded_text' => 'Dein Buch ist zu groß. Es können keine Seiten mehr hinzugefügt werden.',
 	'coll-rendering_title' => 'Beim Erstellen',
-	'coll-rendering_text' => '<p><strong>Bitte habe Geduld, während das Dokument erstellt wird.</strong></p>
+	'coll-rendering_text' => '<p><strong>Bitte habe etwas Geduld, während das Dokument erstellt wird.</strong></p>
 
 <p><strong>Fortschritt:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
 
 <p>Diese Seite sollte sich alle paar Sekunden von selbst aktualisieren.
-Wenn das jedoch nicht geschieht, drücke bitte den „Aktualisieren“-Knopf (meist F5) deines Browsers.</p>',
+Sollte dies nicht geschehen, drücke bitte den „Aktualisieren“-Knopf (meist F5) deines Browsers.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(Wikiseite: $1)',
 	'coll-rendering_page' => '(Seite: $1)',
