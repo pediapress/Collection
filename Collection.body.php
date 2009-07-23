@@ -1031,7 +1031,7 @@ class SpecialCollection extends SpecialPage {
 		if ( method_exists( Http, 'userAgent' ) ) {
 			$userAgent .= Http::userAgent() . ', ';
 		}
-		$userAgent .= "Collection/$wgCollectionVersion)"
+		$userAgent .= "Collection/$wgCollectionVersion)";
 		curl_setopt( $c, CURLOPT_USERAGENT, $userAgent);
 		curl_setopt( $c, CURLOPT_POST, true );
 		curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
