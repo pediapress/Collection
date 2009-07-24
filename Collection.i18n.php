@@ -1054,7 +1054,29 @@ $messages['cy'] = array(
 	'coll-subtitle' => 'Isdeitl:',
 	'coll-contents' => 'Cynnwys',
 	'coll-create_chapter' => 'Llunio pennod',
+	'coll-sort_alphabetically' => 'Gosod yn nhrefn yr wyddor',
 	'coll-rename' => 'Ailenwi',
+	'coll-personal_collection_label' => 'Llyfr personol:',
+	'coll-community_collection_label' => 'Llyfr cymunedol:',
+	'coll-save_collection' => "Rhoi'r llyfr ar gadw",
+	'coll-overwrite_title' => 'Y dudalen ar gael yn barod.
+Am drosysgrifo?',
+	'coll-overwrite' => 'Trosysgrifo',
+	'coll-append' => 'Atodi',
+	'coll-cancel' => 'Diddymu',
+	'coll-update' => 'Diweddaru',
+	'coll-limit_exceeded_title' => 'Y llyfr yn rhy fawr',
+	'coll-limit_exceeded_text' => "Mae'ch llyfr yn rhy fawr.
+Ni ellir ychwanegu rhagor o dudalennau.",
+	'coll-rendering_title' => "Wrthi'n cynhyrchu",
+	'coll-rendering_status' => '<strong>Statws:</strong> $1',
+	'coll-rendering_article' => '(tudalen wici: $1)',
+	'coll-rendering_page' => '(tudalen: $1)',
+	'coll-rendering_finished_title' => 'Wedi gorffen cynhyrchu',
+	'coll-notfound_title' => 'Heb ganfod y llyfr',
+	'coll-notfound_text' => 'Heb ganfod y dudalen yn y llyfr.',
+	'coll-download_notfound_title' => 'Heb lwyddo canfod y ffeil',
+	'coll-book_title' => 'Archebu fel llyfr printiedig',
 );
 
 /** Danish (Dansk)
@@ -1208,12 +1230,12 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 	'coll-load_overwrite_text' => 'Ihr Buch enthält bereits Seiten.
 Möchten Sie das aktuelle Buch überschreiben, die neuen Seiten anhängen oder das Laden dieses Buches abbrechen?',
 	'coll-limit_exceeded_text' => 'Ihr Buch ist zu groß. Es können keine Seiten mehr hinzugefügt werden.',
-	'coll-rendering_text' => '<p><strong>Bitte haben Sie Geduld, während das Dokument erstellt wird.</strong></p>
+	'coll-rendering_text' => '<p><strong>Bitte haben Sie etwas Geduld, während das Dokument erstellt wird.</strong></p>
 
 <p><strong>Fortschritt:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
 
 <p>Diese Seite sollte sich alle paar Sekunden von selbst aktualisieren.
-Wenn das jedoch nicht geschieht, drücken Sie bitte den „Aktualisieren“-Knopf (meist F5) Ihres Browsers.</p>',
+Sollte dies nicht geschehen, drücken Sie bitte den „Aktualisieren“-Knopf (meist F5) Ihres Browsers.</p>',
 	'coll-rendering_finished_text' => '<strong>Die Datei wurde erfolgreich erstellt.</strong>
 <strong>[$1 Dokument herunterladen]</strong>.
 
