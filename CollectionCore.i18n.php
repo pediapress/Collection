@@ -886,6 +886,7 @@ $messages['ia'] = array(
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Bennylin
  * @author IvanLanin
  * @author Rex
  */
@@ -896,7 +897,7 @@ $messages['id'] = array(
 	'coll-add_page' => 'Tambah halaman',
 	'coll-add_page_popup' => 'Tambahkan halaman wiki terkait ke buku Anda',
 	'coll-add_page_tooltip' => 'Tambahkan halaman wiki ini ke buku Anda',
-	'coll-bookscategory' => 'Buku',
+	'coll-bookscategory' => 'Wikipedia:Buku',
 	'coll-clear_collection' => 'Hapus buku',
 	'coll-clear_collection_confirm' => 'Apakah Anda benar-benar ingin membersihkan buku Anda sepenuhnya?',
 	'coll-clear_collection_tooltip' => 'Hapus semua halaman wiki dari buku Anda',
