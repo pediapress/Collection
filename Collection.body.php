@@ -553,6 +553,7 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	function loadCollection( $title, $append=false ) {
+		global $wgOut;
 		if ( is_null( $title ) ) {
 			$wgOut->showErrorPage( 'coll-notitle_title', 'coll-notitle_msg' );
 			return;
