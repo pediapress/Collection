@@ -578,10 +578,13 @@ $messages['fi'] = array(
 	'coll-load_collection' => 'Lataa kirja',
 	'coll-load_collection_tooltip' => 'Lataa tämä kirja nykyiseksi kirjaksesi',
 	'coll-n_pages' => '$1 {{PLURAL:$1|sivu|sivua}}',
+	'coll-popup_help_text' => 'Poistaaksesi tämän ominaisuuden käytöstä napsauta ”Tyhjennä kirja”, joka löytyy kentästä ”Luo kirja”',
 	'coll-printable_version_pdf' => 'PDF-versio',
 	'coll-remove_page' => 'Poista sivu kirjasta',
+	'coll-remove_page_popup' => 'Poista linkitetty wikisivu kirjastasi',
 	'coll-remove_page_tooltip' => 'Poista nykyinen wikisivu kirjastasi',
 	'coll-show_collection' => 'Näytä kirja',
+	'coll-show_collection_tooltip' => 'Napsauta muokataksesi, ladataksesi tai tilataksesi kirjasi',
 );
 
 /** French (Français)
