@@ -506,11 +506,24 @@ $messages['es'] = array(
 
 /** Estonian (Eesti)
  * @author Avjoska
+ * @author Pikne
  */
 $messages['et'] = array(
 	'coll-add_category' => 'Lisa kategooria',
-	'coll-add_page' => 'Lisa wiki lehekülg',
+	'coll-add_page' => 'Lisa lehekülg',
+	'coll-add_page_tooltip' => 'Lisa käesolev lehekülg loodavasse raamatusse',
+	'coll-clear_collection' => 'Tühjenda raamat',
+	'coll-clear_collection_confirm' => 'Kas soovid tõesti kogu raamatu tühjendada?',
+	'coll-clear_collection_tooltip' => 'Võta kõik leheküljed loodavast raamatust välja',
 	'coll-create_a_book' => 'Loo raamat',
+	'coll-help_collections' => 'Raamatu loomise tugi',
+	'coll-help_collections_tooltip' => 'Mine raamatu loomise abilehele',
+	'coll-n_pages' => '$1 {{PLURAL:$1|lehekülg|lehekülge}}',
+	'coll-printable_version_pdf' => 'PDF-versioon',
+	'coll-remove_page' => 'Eemalda lehekülg',
+	'coll-remove_page_tooltip' => 'Võta käesolev lehekülg loodavast raamatust välja',
+	'coll-show_collection' => 'Näita raamatut',
+	'coll-show_collection_tooltip' => 'Redigeeri, laadi alla või telli',
 );
 
 /** Basque (Euskara)
