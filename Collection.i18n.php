@@ -1758,6 +1758,7 @@ Kas kirjutada üle?',
 
 /** Basque (Euskara)
  * @author An13sa
+ * @author Kobazulo
  * @author Theklan
  */
 $messages['eu'] = array(
@@ -1844,6 +1845,7 @@ Oharrak:
 * Ez zaizu emaitza gustatu? Ikus [[{{MediaWiki:Coll-helppage}}|bildumen inguruko laguntza orrialdea]] berau hobetzeko aukerak ikusteko.',
 	'coll-notfound_title' => 'Liburua ez da aurkitu',
 	'coll-notfound_text' => 'Ezin izan da liburuko orria aurkitu.',
+	'coll-download_notfound_title' => 'Ez da fitxategirik aurkitu',
 	'coll-is_cached' => '<ul><li>Katxean dokumentuaren bertsio bat aurktiu da, beraz renderizatzea ez da beharrezkoa izan. <a href="$1">Berriro renderizatzera derrigortu.</a></li></ul>',
 	'coll-excluded-templates' => '* [[:Category:$1|$1]] kategorian dauden txantiloiak ez dira sartu.',
 	'coll-blacklisted-templates' => '* [[:$1]] zerrenda beltzeko txantiloiak ez dira sartu.',
@@ -1857,6 +1859,8 @@ Oharrak:
 Kontakta ezazu, mesedez MediaWiki administratzailea.',
 	'coll-license' => 'Lizentzia',
 	'coll-return_to' => '[[:$1]]era itzuli',
+	'coll-more_info' => 'Informazio gehiago erakutsi',
+	'coll-hide_info' => 'Informazioa ezkutatu',
 );
 
 /** Persian (فارسی)
@@ -2949,6 +2953,7 @@ Skontaktuj prošu swojeho administratora MediaWiki.',
 /** Hungarian (Magyar)
  * @author Bdamokos
  * @author Dani
+ * @author Glanthor Reviol
  */
 $messages['hu'] = array(
 	'coll-desc' => '[[Special:Book|Könyvek készítése]]',
@@ -2965,7 +2970,7 @@ $messages['hu'] = array(
 Ez az oldal nem fog megfelelően működni, amíg a JavaScript nincs bekapcsolva.</strong>',
 	'coll-intro_text' => 'Készíts és kezelj saját wiki oldal gyűjteményeket.<br />Lásd [[{{MediaWiki:Coll-helppage}}]] oldalt további információkért.',
 	'coll-savedbook_template' => 'elmentett_könyv',
-	'coll-your_book' => 'A Te könyved',
+	'coll-your_book' => 'A te könyved',
 	'coll-download_title' => 'Letöltés',
 	'coll-download_text' => 'Egy változat letöltéséhez válaszd ki a formátumot és nyomd meg a gombot!',
 	'coll-download_as_text' => '$1 formátumú változat letöltéséhez nyomd meg a gombot!',
@@ -3053,6 +3058,7 @@ Kérlek lépj kapcsolatba a MediaWiki adminisztrátorával.',
 	'coll-more_info' => 'További információk megjelenítése',
 	'coll-hide_info' => 'További információk elrejtése',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress rendelési információk',
+	'right-collectionsaveascommunitypage' => 'Könyvek mentése mint közösségi oldal',
 );
 
 /** Armenian (Հայերեն)
