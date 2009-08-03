@@ -41,7 +41,6 @@ $messages['en'] = array(
 	'coll-couldnotaddarticle_msg'     => 'The wiki page could not be added.',
 	'coll-couldnotremovearticle_title' => 'Could not remove wiki page',
 	'coll-couldnotremovearticle_msg'  => 'The wiki page could not be removed.',
-	'coll-download_as'                => 'Download as $1',
 	'coll-noscript_text'              => '<h1>JavaScript is required!</h1>
 <strong>Your browser does not support JavaScript or JavaScript has been turned off.
 This page will not work correctly, unless JavaScript is enabled.</strong>',
@@ -164,7 +163,6 @@ $messages['qqq'] = array(
 	'coll-print_template_pattern' => 'Use print templates being subpages of regular templates.
 
 $1 is a placeholder and will be replaced by content during the rendering process.',
-	'coll-download_as' => '{{Identical|Download}}',
 	'coll-savedbook_template' => 'This is the name of a template that is inserted at the top of pages for saved collections ([[wikipedia:Template:Saved_book|example]]).',
 	'coll-your_book' => '{{Identical|Books}}',
 	'coll-download_title' => '{{Identical|Download}}',
@@ -232,7 +230,6 @@ $messages['af'] = array(
 	'coll-print_template_prefix' => 'Afdruk',
 	'coll-unknown_subpage_title' => 'Onbekende subbladsy',
 	'coll-unknown_subpage_text' => 'Hierdie subbladsy van [[Special:Book|Boek]] bestaan nie.',
-	'coll-download_as' => 'Laaf as $1 af',
 	'coll-noscript_text' => '<h1>JavaScript word benodig!</h1>
 <strong>U blaaier ondersteun nie JavaScript of JavaScript is uitgeskakel.
 Hierdie bladsy sal nie korrek werk tensy JavaScript aangeskakel word nie.</strong>',
@@ -290,7 +287,6 @@ $messages['ar'] = array(
 	'coll-couldnotaddarticle_msg' => 'صفحة الويكي لم يمكن إضافتها.',
 	'coll-couldnotremovearticle_title' => 'لم يمكن إزالة صفحة الويكي',
 	'coll-couldnotremovearticle_msg' => 'صفحة الويكي لم يمكن إزالتها.',
-	'coll-download_as' => 'تحميل ك$1',
 	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
 <strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
 هذه الصفحة لن تعمل بطريقة صحيحة، إلا إذا تم تفعيل الجافاسكريبت.</strong>',
@@ -408,7 +404,6 @@ $messages['arz'] = array(
 	'coll-print_template_prefix' => 'اطبع',
 	'coll-unknown_subpage_title' => 'صفحة فرعية مش معروفة',
 	'coll-unknown_subpage_text' => 'صفحة ال [[Special:Book|كتاب]] الفرعيه دى مش موجوده',
-	'coll-download_as' => 'تحميل ك$1',
 	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
 <strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
 هذه الصفحة لن تعمل بطريقة صحيحة، إلا إذا تم تفعيل الجافاسكريبت.</strong>',
@@ -507,7 +502,6 @@ $messages['arz'] = array(
 $messages['ast'] = array(
 	'coll-collection' => 'Coleición',
 	'coll-collections' => 'Coleiciones',
-	'coll-download_as' => 'Descargar como $1',
 	'coll-download_title' => 'Descargar coleición',
 	'coll-download' => 'Descargar',
 	'coll-format_label' => 'Formatu:',
@@ -541,7 +535,6 @@ $messages['be-tarask'] = array(
 	'coll-couldnotaddarticle_msg' => 'Вікі-старонка ня можа быць дададзеная.',
 	'coll-couldnotremovearticle_title' => 'Немагчыма выдаліць вікі-старонку',
 	'coll-couldnotremovearticle_msg' => 'Вікі-старонка ня можа быць выдаленая.',
-	'coll-download_as' => 'Загрузіць як $1',
 	'coll-noscript_text' => '<h1>Патрэбны JavaScript!</h1>
 <strong>Ваш браўзэр не падтрымлівае JavaScript альбо падтрымка JavaScript была адключаная.
 Гэтая старонка ня будзе працаваць правільна, калі JavaScript адключаны.</strong>',
@@ -645,7 +638,6 @@ $messages['be-tarask'] = array(
 $messages['bg'] = array(
 	'coll-desc' => '[[Special:Book|Създаване на книги]]',
 	'coll-print_template_prefix' => 'Отпечатване',
-	'coll-download_as' => 'Изтегляне като $1',
 	'coll-noscript_text' => '<h1>Изисква се Джаваскрипт!</h1>
 <strong>Използваният браузър не поддържа Джаваскрипт или поддръжката на Джаваскрипт е изключена.
 Тази страница не може да работи правилно докато Джаваскриптът не бъде активиран.</strong>',
@@ -704,7 +696,6 @@ $messages['bs'] = array(
 	'coll-couldnotaddarticle_msg' => 'Wiki stranica se nije mogla dodati.',
 	'coll-couldnotremovearticle_title' => 'Ne može se ukloniti wiki stranica',
 	'coll-couldnotremovearticle_msg' => 'Wiki stranica se nije mogla ukloniti.',
-	'coll-download_as' => 'Učitaj kao $1',
 	'coll-noscript_text' => '<h1>JavaScript je neophodan!</h1>
 <strong>Vaš preglednik ne podržava JavaScript ili je JavaScript isključen.
 Ova stranica se neće pravilno prikazati, sve dok se JavaScript ne omogući.</strong>',
@@ -818,7 +809,6 @@ $messages['ca'] = array(
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Subpàgina desconeguda',
 	'coll-unknown_subpage_text' => 'No existeix aquesta subpàgina de [[Special:Book|Llibre]]',
-	'coll-download_as' => 'Descarrega com $1',
 	'coll-noscript_text' => "<h1>Es necessita JavaScript!</h1>
 <strong>El vostre navegador no admet el JavaScript o el té desactivat.
 Aquesta pàgina no funcionarà correctament si no l'activeu.</strong>",
@@ -932,7 +922,6 @@ $messages['cs'] = array(
 	'coll-couldnotaddarticle_msg' => 'Stránka nemohla být přidána.',
 	'coll-couldnotremovearticle_title' => 'Stránka nemohla být odebrána',
 	'coll-couldnotremovearticle_msg' => 'Nepodařilo se odebrat stránku.',
-	'coll-download_as' => 'Stáhnout jako $1',
 	'coll-noscript_text' => '<h1>Je vyžadován JavaScript!</h1>
 <strong>Váš prohlížeč nepodporuje JavaScript nebo máte JavaScript vypnutý.
 Tato stránka nebude správně fungovat, dokud JavaScript nezapnete.</strong>',
@@ -1044,7 +1033,6 @@ $messages['cy'] = array(
 	'coll-couldnotaddarticle_msg' => "Ni lwyddwyd ychwanegu'r dudalen wici",
 	'coll-couldnotremovearticle_title' => 'Aflwyddiant tynnu tudalen wici',
 	'coll-couldnotremovearticle_msg' => "Ni lwyddwyd tynnu'r dudalen wici.",
-	'coll-download_as' => 'Islwytho ar ffurf $1',
 	'coll-savedbook_template' => 'Llyfr ar gadw',
 	'coll-your_book' => 'Eich llyfr',
 	'coll-download_title' => 'Islwytho',
@@ -1127,7 +1115,6 @@ $messages['de'] = array(
 	'coll-couldnotaddarticle_msg' => 'Die Wikiseite konnte nicht hinzugefügt werden.',
 	'coll-couldnotremovearticle_title' => 'Wikiseite konnte nicht entfernt werden',
 	'coll-couldnotremovearticle_msg' => 'Die Wikiseite konnte nicht entfernt werden.',
-	'coll-download_as' => 'Als $1 herunterladen',
 	'coll-noscript_text' => '<h1>JavaScript wird benötigt!</h1>
 <strong>Dein Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
 Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong>',
@@ -1277,7 +1264,6 @@ $messages['dsb'] = array(
 	'coll-couldnotaddarticle_msg' => 'Nastawk njejo se dał pśidaś.',
 	'coll-couldnotremovearticle_title' => 'Nastawk njejo se dał wótpóraś.',
 	'coll-couldnotremovearticle_msg' => 'Nastawk njejo se dał wótpóraś.',
-	'coll-download_as' => 'Ako $1 ześěgnuś',
 	'coll-noscript_text' => '<h1>JavaScript jo trěbny!</h1>
 <strong>Twój wobglědowak njepódpěrujo JavaScript abo JavaScript jo znjemóžnjony.
 Toś ten bok njebuźo pšawje funkcioněrowaś, tak dłujko až JavaScript njejo zmóžnjony.</strong>',
@@ -1402,7 +1388,6 @@ $messages['el'] = array(
 	'coll-couldnotaddarticle_title' => 'Δεν ήταν εφικτό να προστεθεί σελίδα βίκι.',
 	'coll-couldnotaddarticle_msg' => 'Η σελίδα βίκι δεν ήταν δυνατό να προστεθεί.',
 	'coll-couldnotremovearticle_title' => 'Δεν ήταν εφικτό να αφαιρεθεί αυτή η σελίδα βίκι',
-	'coll-download_as' => 'Κατέβασμα ως $1',
 	'coll-noscript_text' => '<h1>Χρειάζεται JavaScript!</h1>
 <strong>Ο περιηγητής σας δεν υποστηρίζει JavaScript ή η JavaScript έχει απενεργοποιηθεί.
 Αυτή η σελίδα δεν θα λειτουργεί κανονικά, εκτός και αν ενεργοποιηθεί η JavaScript.</strong>',
@@ -1517,7 +1502,6 @@ $messages['eo'] = array(
 	'coll-couldnotaddarticle_msg' => 'Ne eblis aldoni ĉi tiun vikian paĝon.',
 	'coll-couldnotremovearticle_title' => 'Ne eblas forigi vikipaĝon',
 	'coll-couldnotremovearticle_msg' => 'Ne eblis forigi ĉi tiun vikian paĝon.',
-	'coll-download_as' => 'Elŝuti kiel $1',
 	'coll-noscript_text' => '<h1>JavaScript-o estas deviga!<h1>
 <strong>Via retumilo ne subtenas JavaScript-on aŭ JavaScript-o estis malŝaltita.
 Ĉi tiu paĝo ne funkcius bone, ĝis JavaScript-o estas ŝaltita.</strong>',
@@ -1637,7 +1621,6 @@ $messages['es'] = array(
 	'coll-couldnotaddarticle_msg' => 'La página wiki no pudo ser agregada.',
 	'coll-couldnotremovearticle_title' => 'No es posible eliminar la página wiki',
 	'coll-couldnotremovearticle_msg' => 'La página wiki no pudo ser eliminada.',
-	'coll-download_as' => 'Descargar como $1',
 	'coll-noscript_text' => '<h1>¡Se necesita JavaScript!</h1>
 <strong>Tu navegador no permite JavaScript o está deshabilitado.
 Esta página no funcionará correctamente mientras no esté habilitado.</strong>',
@@ -1775,7 +1758,6 @@ $messages['eu'] = array(
 	'coll-print_template_prefix' => 'Inprimatu',
 	'coll-unknown_subpage_title' => 'Azpiorrialde ezezaguna',
 	'coll-unknown_subpage_text' => '[[Special:Book|Liburu]] honen azpiorrialde hau ez da existitzen',
-	'coll-download_as' => '$1 gisa jaitsi',
 	'coll-noscript_text' => '<h1>JavaScript beharrezkoa da!</h1>
 <strong>Zure nabigatzaileak ezin du JavaScripteduki edo JavaScript itzalita du.
 Orrialde honek ez du egoki funtzionatuko JavaScript pizten ez den bitartean.</strong>',
@@ -1882,7 +1864,6 @@ $messages['fa'] = array(
 	'coll-print_template_prefix' => 'چاپ',
 	'coll-unknown_subpage_title' => 'زیرصفحهٔ ناشناس',
 	'coll-unknown_subpage_text' => 'این زیرصفحه از [[Special:Book|کتاب]] وجود ندارد',
-	'coll-download_as' => 'بارگیری با عنوان $1',
 	'coll-noscript_text' => '<h1>جاوااسکریپت لازم دارید!</h1>
 <strong>مرورگر شما جاوا اسکریپت را پشتیبانی نمی‌کند یا جاوا اسکیریپت شما خاموش است.
 این صفحه به طور صحیح عمل نخواهد کرد، مگر اینکه جاوااسکیریپت فعال شود.</strong>',
@@ -1993,7 +1974,6 @@ $messages['fi'] = array(
 	'coll-couldnotaddarticle_msg' => 'Wikisivua ei voi lisätä.',
 	'coll-couldnotremovearticle_title' => 'Wikisivua ei voitu poistaa',
 	'coll-couldnotremovearticle_msg' => 'Wikisivua ei voi poistaa.',
-	'coll-download_as' => 'Lataa $1-tiedostona',
 	'coll-noscript_text' => '<h1>Vaatii toimiakseen JavaScriptin</h1>
 <strong>Selaimesi ei tue JavaScriptiä tai JavaScript on poistettu käytöstä.
 Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
@@ -2115,7 +2095,6 @@ $messages['fr'] = array(
 	'coll-couldnotaddarticle_msg' => 'La page du wiki ne peut pas être ajouté.',
 	'coll-couldnotremovearticle_title' => 'Impossible de supprimer la page du wiki',
 	'coll-couldnotremovearticle_msg' => 'La page du wiki ne peut pas être enlevée.',
-	'coll-download_as' => 'Télécharger comme $1',
 	'coll-noscript_text' => '<h1>Javascript est nécessaire !</h1>
 <strong>Votre navigateur ne supporte pas Javascript ou bien vous l’avez désactivé.
 Cette page ne fonctionnera pas correctement tant que Javascript n’est pas activé.</strong>',
@@ -2237,7 +2216,6 @@ $messages['gl'] = array(
 	'coll-couldnotaddarticle_msg' => 'O artigo non puido ser engadido.',
 	'coll-couldnotremovearticle_title' => 'Non se puido eliminar o artigo',
 	'coll-couldnotremovearticle_msg' => 'O artigo non puido ser eliminado.',
-	'coll-download_as' => 'Descargar como $1',
 	'coll-noscript_text' => '<h1>Requírese o JavaScript!</h1>
 <strong>O seu navegador non soporta o JavaScript ou o JavaScript foi deshabilitado.
 Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa habilitado.</strong>',
@@ -2341,7 +2319,6 @@ Por favor, contacte co seu administrador MediaWiki.',
 $messages['grc'] = array(
 	'coll-collection' => 'Βιβλίον',
 	'coll-collections' => 'Βιβλία',
-	'coll-download_as' => 'Καταφορτίζειν ὡς $1',
 	'coll-download_title' => 'καταφορτίζειν',
 	'coll-download' => 'Καταφόρτισις',
 	'coll-remove' => 'Άφαιρεῖν',
@@ -2380,7 +2357,6 @@ $messages['gsw'] = array(
 	'coll-couldnotaddarticle_msg' => 'D Wikisyte het nit chenne zuegfiegt wäre.',
 	'coll-couldnotremovearticle_title' => 'D Wikisyte het nit chenne usegnuu wäre',
 	'coll-couldnotremovearticle_msg' => 'D Wikisyte het nit chenne uusegnuu wäre.',
-	'coll-download_as' => 'As $1 abelade',
 	'coll-noscript_text' => '<h1>S brucht JavaScript!</h1>
 <strong>Dyy Browser unterstitzt kei JavaScript oder s JavaScript isch deaktiviert.
 Die Syte funktioniert eso lang nit richtig, solang JavaScript nit verfiegbar isch.</strong>',
@@ -2486,7 +2462,6 @@ $messages['gu'] = array(
 	'coll-print_template_pattern' => '$1/છપાઇ',
 	'coll-unknown_subpage_title' => 'અજ્ઞાત ઉપપાનું',
 	'coll-unknown_subpage_text' => '[[ખાસ:પુસ્તક|પુસ્તક]]નું આ ઉપપાનું ઉપલબ્ધ નથી',
-	'coll-download_as' => '$1 તરીકે ડાઉનલોડ કરો',
 	'coll-noscript_text' => '<h1>જાવાસ્ક્રિપ્ટ જરૂરી!</h1>
 <strong>તમારું બ્રાઉઝર જાવાસ્ક્રિપ્ટને સમર્થન કરતું નથી અથવાતો જાવાસ્ક્રિપ્ટ નિષ્ક્રિય કરેલ છે.</br>
 જ્યાં સુધી જાવાસ્ક્રિપ્ટ સક્રિય કરાશે નહીં ત્યાં સુધી આ પાનું બરાબર કામ આપશે નહીં.</strong>',
@@ -2571,7 +2546,6 @@ $messages['he'] = array(
 	'coll-couldnotaddarticle_msg' => 'לא ניתן היה להוסיף את דף הוויקי.',
 	'coll-couldnotremovearticle_title' => 'דף הוויקי לא הוסר',
 	'coll-couldnotremovearticle_msg' => 'לא ניתן היה להסיר את דף הוויקי.',
-	'coll-download_as' => 'הורדה בפורמט $1',
 	'coll-noscript_text' => '<h1>JavaScript נדרש!</h1>
 <strong>הדפדפן שלכם אינו תומך ב־JavaScript או שביטלתם את JavaScript בדפדפן זה.
 דף זה לא יעבוד כדרוש, אלא אם כן JavaScript יופעל.</strong>',
@@ -2747,7 +2721,6 @@ $messages['hr'] = array(
 	'coll-print_template_pattern' => '$1/Tiskaj',
 	'coll-unknown_subpage_title' => 'Nepoznata podstranica',
 	'coll-unknown_subpage_text' => 'Ova podstranica [[Special:Book|zbirke]] ne postoji',
-	'coll-download_as' => 'Preuzmi kao $1',
 	'coll-noscript_text' => '<h1>Potreban je JavaScript!</h1>
 <strong>Vaš preglednik nema podršku za JavaScript ili je isključena. Ova stranica neće raditi ispravno, ako JavaScript nije omogućen.</strong>',
 	'coll-intro_text' => 'Napravite i uređujte svoj osobni odabir wiki stranica.<br />Vidi [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više obavijesti.',
@@ -2859,7 +2832,6 @@ $messages['hsb'] = array(
 	'coll-couldnotaddarticle_msg' => 'Nastawk njeje so přidać dał.',
 	'coll-couldnotremovearticle_title' => 'Nastawk njeda so wotstronić',
 	'coll-couldnotremovearticle_msg' => 'Nastawk njeje so wotstronić dał.',
-	'coll-download_as' => 'Jako $1 sćahnyć',
 	'coll-noscript_text' => '<h1>JavaScript je trěbny!</h1>
 <strong>Twój wobhladowak njepodpěruje JavaScript abo JavaScript je wupinjeny.
 Tuta strona njebudźe prawje fungować, doniž JavaScript zmóžnjeny njeje.</strong>',
@@ -2970,7 +2942,6 @@ $messages['hu'] = array(
 	'coll-print_template_pattern' => '$1/nyomtatott',
 	'coll-unknown_subpage_title' => 'Ismeretlen allap',
 	'coll-unknown_subpage_text' => 'A [[Special:Book|Könyv]]nek nincs ilyen allapja.',
-	'coll-download_as' => 'Letöltés mint $1',
 	'coll-noscript_text' => '<h1>A lap használatához JavaScript szükséges!</h1>
 <strong>A böngésződ nem támogatja a JavaScriptet, vagy az ki lett kapcsolva.
 Ez az oldal nem fog megfelelően működni, amíg a JavaScript nincs bekapcsolva.</strong>',
@@ -3079,7 +3050,6 @@ $messages['hy'] = array(
 	'coll-print_template_pattern' => '$1/Տպման',
 	'coll-unknown_subpage_title' => 'Անհայտ ենթաէջ',
 	'coll-unknown_subpage_text' => '[[Special:Book|Գրքի]] այս ենթաէջը գոյություն չունի',
-	'coll-download_as' => 'Քաշել որպես $1',
 	'coll-noscript_text' => '<h1>Պահանջո՜ւմ է JavaScript։</h1>
 <strong>Ձեր բրաուզերը չունի JavaScript հնարավորություն կամ JavaScript-ը անջատած է։
 Այս էջը ճիշտ չի գործի, եթե JavaScript-ը միացված չէ։</strong>',
@@ -3186,7 +3156,6 @@ $messages['ia'] = array(
 	'coll-couldnotaddarticle_msg' => 'Le pagina wiki non poteva esser addite.',
 	'coll-couldnotremovearticle_title' => 'Non poteva remover pagina wiki',
 	'coll-couldnotremovearticle_msg' => 'Le pagina wiki non poteva esser removite.',
-	'coll-download_as' => 'Discargar como $1',
 	'coll-noscript_text' => '<h1>JavaScript es requirite!</h1>
 <strong>Tu navigator non supporta JavaScript o JavaScript ha essite disactivate.
 Iste pagina non functionara correctemente si JavaScript non es activate.</strong>',
@@ -3303,7 +3272,6 @@ $messages['id'] = array(
 	'coll-couldnotaddarticle_msg' => 'Halaman wiki ini tidak dapat ditambahkan.',
 	'coll-couldnotremovearticle_title' => 'Tidak dapat membuang halaman wiki',
 	'coll-couldnotremovearticle_msg' => 'Halaman wiki tidak dapat dibuang.',
-	'coll-download_as' => 'Unduh sebagai $1',
 	'coll-noscript_text' => '<h1>Diperlukan JavaScript!</h1>
 <strong>Penjelajah web Anda tidak mendukung JavaScript atau JavaScript telah dimatikan.
 Halaman ini tidak akan bekerja dengan benar, kecuali jika JavaScript diaktifkan.</strong>',
@@ -3469,7 +3437,6 @@ $messages['it'] = array(
 	'coll-couldnotaddarticle_msg' => 'La pagina wiki non può essere aggiunta.',
 	'coll-couldnotremovearticle_title' => 'Impossibile rimuovere la pagina wiki',
 	'coll-couldnotremovearticle_msg' => 'La pagina wiki non può essere rimossa.',
-	'coll-download_as' => 'Scarica come $1',
 	'coll-noscript_text' => '<h1>È necessario avere JavaScript!</h1>
 <strong>Il tuo browser non supporta JavaScript oppure JavaScript è stato disattivato.
 La pagina non funzionerà correttamente se non verrà attivato JavaScript.</strong>',
@@ -3582,7 +3549,6 @@ $messages['ja'] = array(
 	'coll-couldnotaddarticle_msg' => 'このページは追加できませんでした。',
 	'coll-couldnotremovearticle_title' => 'ページを削除できませんでした',
 	'coll-couldnotremovearticle_msg' => 'このページは削除できませんでした。',
-	'coll-download_as' => '$1としてダウンロード',
 	'coll-noscript_text' => '<h1>JavaScriptを利用しています！</h1>
 <strong>ご利用のブラウザは JavaScript をサポートしていないか、JavaScript が無効になっています。このページは、JavaScript が有効になっていない場合、正しく動作しません。</strong>',
 	'coll-intro_text' => 'あなただけのウィキページのコレクションを作成・管理できます。<br />詳細は[[{{MediaWiki:Coll-helppage}}]]をご覧ください。',
@@ -3685,7 +3651,6 @@ $messages['jv'] = array(
 	'coll-print_template_prefix' => 'Cithak',
 	'coll-unknown_subpage_title' => 'Anak-kaca sing ora dikenal',
 	'coll-unknown_subpage_text' => 'Anak-kaca saka [[Special:Book|Buku]] iki ora ana',
-	'coll-download_as' => 'Undhuh minangka $1',
 	'coll-noscript_text' => '<h1>JavaScript diperlokaké!</h1>
 <strong>Browser panjenengan ora ndhukung JavaScript utawa JavaScript wis dipatèni.
 Kaca iki ora bakal tampil kanthi bener, kajaba JavaScript di aktifaké.</strong>',
@@ -3880,7 +3845,6 @@ $messages['km'] = array(
 	'coll-collection' => 'សៀវភៅ',
 	'coll-collections' => 'សៀវភៅ',
 	'coll-print_template_prefix' => 'បោះពុម្ព',
-	'coll-download_as' => 'ទាញយកជា $1',
 	'coll-noscript_text' => '<h1>ត្រូវការ JavaScript!</h1>
 <strong>ឧបករណ៍រាវរក (browser) របស់អ្នកមិនគាំទ្រ JavaScript ឬ JavaScript ត្រូវបានបិទ។
 ទំព័រនេះមិនអាចដំណើរការបានត្រឹមត្រូវទេ លុះត្រាតែអ្នកបើកឱ្យ JavaScript ដើរ។</strong>',
@@ -3952,7 +3916,6 @@ $messages['ko'] = array(
 	'coll-print_template_pattern' => '$1/인쇄',
 	'coll-unknown_subpage_title' => '알 수 없는 하위 문서',
 	'coll-unknown_subpage_text' => '[[특별:책|책]]의 이 하위 페이지는 없습니다.',
-	'coll-download_as' => '$1로 다운로드',
 	'coll-noscript_text' => '<h1>자바스크립트가 필요합니다!</h1>
 <strong>당신의 브라우저는 자바스크립트를 지원하지 않거나 비활성화되어 있습니다.
 자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
@@ -4087,7 +4050,6 @@ $messages['ksh'] = array(
 	'coll-couldnotaddarticle_msg' => 'Di Sigg vum Wiki kunnt nit dobei jedonn wääde.',
 	'coll-couldnotremovearticle_title' => 'Kunnt de Wiki-Sigg nit fott lohße',
 	'coll-couldnotremovearticle_msg' => 'Di Sigg vum Wiki kunnt nit fott jelohße wääde.',
-	'coll-download_as' => 'Als $1 eronger laade',
 	'coll-noscript_text' => '<h1>Bruch JavaSkripp!</h1>
 <strong>Dinge Brauser kann kei JavaSkripp udder et es affjeschalldt.
 Di Sigg hee weed oohne JavaSkripp nit donn.</strong>',
@@ -4211,7 +4173,6 @@ $messages['lb'] = array(
 	'coll-couldnotaddarticle_msg' => "D'Wikisäit konnt net derbäigesat ginn.",
 	'coll-couldnotremovearticle_title' => 'Wikisäit konnt net ewechgeholl ginn',
 	'coll-couldnotremovearticle_msg' => "D'Wikisäit konnt net ewechgeholl ginn.",
-	'coll-download_as' => 'Als $1 eroflueden',
 	'coll-noscript_text' => '<h1>JavaScript gëtt gebraucht!</h1>
 <strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
 Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</strong>',
@@ -4314,7 +4275,6 @@ $messages['li'] = array(
 	'coll-print_template_pattern' => '$1/Oetdrej',
 	'coll-unknown_subpage_title' => 'Ónbekèndje óngerpaasj',
 	'coll-unknown_subpage_text' => 'Dees óngerpaasj ven [[Sprecial:Book|Book]] besteit neet',
-	'coll-download_as' => 'Óphaole es $1',
 	'coll-noscript_text' => "<h1JavaScript is beneudj!</h1>
 <strong>Diene toeaner óngerstäöntj gènne JavaScript ódder 't is aafgezatj.
 Dees paasj wèrk neet goed, bezieje-s doe JavaScript aanzèts.</strong>",
@@ -4589,7 +4549,6 @@ $messages['ms'] = array(
 	'coll-print_template_pattern' => '$1/Cetak',
 	'coll-unknown_subpage_title' => 'Sublaman tidak dikenali',
 	'coll-unknown_subpage_text' => 'Sublaman [[Special:Book|Buku]] ini tidak wujud',
-	'coll-download_as' => 'Muat turun $1',
 	'coll-noscript_text' => '<h1>JavaScript diperlukan!</h1>
 <strong>JavaScript tidak disokong oleh pelayan anda atau telah dilumpuhkan. Laman ini tidak dapat berfungsi sekiranya ciri JavaScript tidak diaktifkan.</strong>',
 	'coll-intro_text' => 'Cipta dan urus koleksi laman wiki untuk kegunaan persendirian.<br />Lihat [[{{MediaWiki:Coll-helppage}}]] untuk maklumat lanjut.',
@@ -4726,7 +4685,6 @@ $messages['nds'] = array(
 	'coll-print_template_pattern' => '$1/Drucken',
 	'coll-unknown_subpage_title' => 'Unbekannt Ünnersied',
 	'coll-unknown_subpage_text' => 'Disse Ünnersied vun dat [[Special:Book|Book]] gifft dat nich',
-	'coll-download_as' => 'As $1 dalladen',
 	'coll-noscript_text' => '<h1>Javascript nödig!</h1>
 <strong>Dien Browser ünnerstütt keen Javascript oder Javascript is utschalt.
 Disse Sied löppt blot richtig, wenn Javascript an is.</strong>',
@@ -4831,7 +4789,6 @@ $messages['nds-nl'] = array(
 	'coll-print_template_pattern' => '$1/Ofdrokken',
 	'coll-unknown_subpage_title' => 'Onbekende subpagina',
 	'coll-unknown_subpage_text' => 'Disse subpagina van [[Special:Book|Boek]] besteet neet',
-	'coll-download_as' => 'Oflaojen as $1',
 	'coll-intro_text' => "Stel joew eigen selectie van wikipagina's samen en beheer 't.<br />Zie [[{{MediaWiki:Coll-helppage}}]] veur meer infermasie.",
 	'coll-savedbook_template' => 'op-esleugen_boek',
 	'coll-your_book' => 'Joew boek',
@@ -4861,7 +4818,6 @@ $messages['nl'] = array(
 	'coll-couldnotaddarticle_msg' => 'De wikipagina kon niet toegevoegd worden.',
 	'coll-couldnotremovearticle_title' => 'De wikipagina kon niet verwijderd worden',
 	'coll-couldnotremovearticle_msg' => 'De wikipagina kon niet verwijderd worden.',
-	'coll-download_as' => 'Downloaden als $1',
 	'coll-noscript_text' => '<h1>JavaScript is vereist!</h1>
 <strong>Uw browser understeunt geen JavaScript of JavaScript is uitgeschakeld.
 Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong>',
@@ -4979,7 +4935,6 @@ $messages['nn'] = array(
 	'coll-couldnotaddarticle_msg' => 'Wikisida kunne ikkje leggjast til.',
 	'coll-couldnotremovearticle_title' => 'Kunne ikkje fjerna wikisida',
 	'coll-couldnotremovearticle_msg' => 'Wikisida kunne ikkje fjernast.',
-	'coll-download_as' => 'Last ned som $1',
 	'coll-noscript_text' => '<h1>JavaScript er påkravd!</h1>
 <strong>Nettlesaren din støttar ikkje JavaScript, eller JavaScript har blitt slege av. 
 Denne sida vil ikkje fungera på rett måte med mindre JavaScript er slege på.</strong>',
@@ -5097,7 +5052,6 @@ $messages['no'] = array(
 	'coll-couldnotaddarticle_msg' => 'Wikisiden kunne ikke legges til.',
 	'coll-couldnotremovearticle_title' => 'Kunne ikke fjerne wikisiden',
 	'coll-couldnotremovearticle_msg' => 'Wikisiden kunne ikke fjernes.',
-	'coll-download_as' => 'Last ned som $1',
 	'coll-noscript_text' => '<h1>JavaScript er påkrevd!</h1>
 <strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong>',
 	'coll-intro_text' => 'Lag og administrer din egen samling av wikisider.<br /> Se [[{{MediaWiki:Coll-helppage}}]] for mer informasjon.',
@@ -5205,7 +5159,6 @@ $messages['oc'] = array(
 	'coll-couldnotaddarticle_msg' => 'La pagina del wiki pòt pas èsser aponduda.',
 	'coll-couldnotremovearticle_title' => 'Impossible de suprimir la pagina del wiki',
 	'coll-couldnotremovearticle_msg' => 'La pagina del wiki pòt pas èsser levada.',
-	'coll-download_as' => 'Telecargat coma $1',
 	'coll-noscript_text' => "<h1>Javascript es necessari !</h1>
 <strong>Vòstre navigador supòrta pas Javascript o se l'a desactivat.
 Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activat.</strong>",
@@ -5306,7 +5259,6 @@ Contactatz vòstre administrator MediaWiki.',
  * @author Amikeco
  */
 $messages['os'] = array(
-	'coll-download_as' => 'Æрбавгæн куыд $1',
 	'coll-download_title' => 'Æрбавгæн',
 	'coll-download' => 'Æрбавгæн',
 	'coll-title' => 'Сæргонд:',
@@ -5358,7 +5310,6 @@ $messages['pl'] = array(
 	'coll-couldnotaddarticle_msg' => 'Strona wiki nie może zostać dodana.',
 	'coll-couldnotremovearticle_title' => 'Nie można usunąć strony wiki',
 	'coll-couldnotremovearticle_msg' => 'Strona wiki nie może zostać usunięta.',
-	'coll-download_as' => 'Pobierz jako $1',
 	'coll-noscript_text' => '<h1>Potrzebny JavaScript!</h1>
 <strong>Twoja przeglądarka nie obsługuje JavaScriptu lub został on wyłączony.
 Strona nie będzie działać poprawnie, dopóki JavaScript nie zostanie włączony.</strong>',
@@ -5496,7 +5447,6 @@ $messages['pt'] = array(
 	'coll-unknown_subpage_text' => 'Não existe esta sub-página do [[Special:Book|Livro]]',
 	'coll-couldnotaddarticle_title' => 'Não pôde ser adicionada a página wiki',
 	'coll-couldnotremovearticle_msg' => 'A página wiki não pôde ser removida.',
-	'coll-download_as' => 'Descarregar como $1',
 	'coll-noscript_text' => '<h1>JavaScript é Requerido!</h1>
 <strong>O seu "browser" não suporta JavaScript, ou o JavaScript foi desactivado.
 Esta página não funcionará correctamente, excepto se o JavaScript for activado.</strong>',
@@ -5605,7 +5555,6 @@ $messages['pt-br'] = array(
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Sub-página desconhecida',
 	'coll-unknown_subpage_text' => 'Esta subpágina do [[Special:Book|Livro]] não existe',
-	'coll-download_as' => 'Baixar como $1',
 	'coll-noscript_text' => '<h1>JavaScript é requerido!</h1>
 <strong>O seu navegador não suporta JavaScript, ou o JavaScript foi desactivado.
 Esta página não funcionará corretamente, a menos que o JavaScript seja ativado.</strong>',
@@ -5718,7 +5667,6 @@ $messages['ro'] = array(
 	'coll-couldnotaddarticle_msg' => 'Pagina wiki nu a putut fi adăugată',
 	'coll-couldnotremovearticle_title' => 'Nu pot elimina pagina wiki',
 	'coll-couldnotremovearticle_msg' => 'Pagina wiki nu a putut fi eliminată.',
-	'coll-download_as' => 'Descarcă $1',
 	'coll-noscript_text' => '<h1>JavaScript este necesar!</h1>
 <strong>Browser-ul dumneavoastră nu suportă JavaScript sau JavaScript a fost oprit.
 Această pagină nu va lucra corect, doar dacă JavaScript este pornit.</strong>',
@@ -5862,7 +5810,6 @@ $messages['ru'] = array(
 	'coll-couldnotaddarticle_msg' => 'Эта статья не может быть добавлена.',
 	'coll-couldnotremovearticle_title' => 'Не удалось удалить статью',
 	'coll-couldnotremovearticle_msg' => 'Эта статья не может быть удалена.',
-	'coll-download_as' => 'Загрузить как $1',
 	'coll-noscript_text' => '<h1>Требуется JavaScript!</h1>
 <strong>Ваш браузер не поддерживает JavaScript или данная поддержка была отключена.
 Эта страница не будет работать правильно, если JavaScript не включен.</strong>',
@@ -5975,7 +5922,6 @@ $messages['sah'] = array(
 	'coll-couldnotaddarticle_msg' => 'Бу ыстатыйа кыайан эбиллэр кыаҕа суох.',
 	'coll-couldnotremovearticle_title' => 'Ыстатыйа кыайан сотуллубата',
 	'coll-couldnotremovearticle_msg' => 'Бу ыстатыйа сотуллар кыаҕа суох.',
-	'coll-download_as' => 'Маннык $1 киллэр',
 	'coll-noscript_text' => '<h1>JavaScript ирдэнэр!</h1>
 <strong>Эн брааузерыҥ JavaScript`ы өйөөбөт эбит эбэтэр JavaScript араарыллыбыт. Бу сирэй JavaScript холбоммотох буоллаҕына сөпкө үлэлиэ уонна көстүө суоҕа.</strong>',
 	'coll-intro_text' => 'Биики-сирэйдэр тустаах, эйиэхэ бэйэҕэр эрэ аналлаах, хомуурунньуктарын оҥоруу уонна ону салайыы.<br />Сиһилии манна көр [[{{MediaWiki:Coll-helppage}}]].',
@@ -6096,7 +6042,6 @@ $messages['sk'] = array(
 	'coll-couldnotaddarticle_msg' => 'Wiki stránku nebolo možné pridať.',
 	'coll-couldnotremovearticle_title' => 'Wiki stránku nebolo možné odstrániť',
 	'coll-couldnotremovearticle_msg' => 'Wiki stránku nebolo možné odstrániť.',
-	'coll-download_as' => 'Stiahnuť ako $1',
 	'coll-noscript_text' => '<h1>Vyžaduje sa JavaScript!</h1>
 <strong>Váš prehliadač nepodporuje JavaScript alebo máte JavaScript vypnutý.
 Táto stránka nebude správne fungovať ak nezapnete JavaScript.</strong>',
@@ -6205,7 +6150,6 @@ $messages['sl'] = array(
 	'coll-print_template_pattern' => '$1/Natisni',
 	'coll-unknown_subpage_title' => 'Neznana podstran',
 	'coll-unknown_subpage_text' => 'Ta podstran [[Special:Book|knjige]] ne obstaja',
-	'coll-download_as' => 'Prenesi kot $1',
 	'coll-noscript_text' => '<h1>Zahtevan je JavaScript!</h1>
 <strong>Vaš brskalnik ne podpira JavaScripta ali je podpora zanj izključena.
 Ta stran ne bo delovala pravilno bren omogočenega JavaScripta.</strong>',
@@ -6302,7 +6246,6 @@ $messages['sr-ec'] = array(
 	'coll-print_template_pattern' => '$1/Штампа',
 	'coll-unknown_subpage_title' => 'Непозната подстрана',
 	'coll-unknown_subpage_text' => 'Ова подстрана [[Special:Book|књиге]] не постоји',
-	'coll-download_as' => 'Преузми као $1',
 	'coll-noscript_text' => '<h1>Јаваскрипт је неопходан!</h1>
 <strong>Ваш бровзер не подржава јаваскрипт, или је јаваскрипт искључен.
 Ова страница неће радити исправно без јаваскрипта.</strong>',
@@ -6405,7 +6348,6 @@ $messages['stq'] = array(
 	'coll-desc' => '[[Special:Collection|Siedentouhoopestaalenge]], moak PDFs',
 	'coll-collection' => 'Touhoopestaalenge',
 	'coll-collections' => 'Touhoopestaalenge',
-	'coll-download_as' => 'As $1 deelleede',
 	'coll-noscript_text' => '<h1>JavaScript is nöödich!</h1>
 <strong>Dien Browser unnerstutset neen Javascript of Javascript wuude deaktivierd. Disse Siede däd nit gjucht funktionierje, soloange Javascript nit ferföigboar is.</strong>',
 	'coll-intro_text' => 'Du koast Sieden touhoopestaale, n PDF deerap moakje un deelleede as uk Touhoopestaalengen foar ne leetere Ferweendenge twiskespiekerje un mäd uur Benutsere deele.
@@ -6527,7 +6469,6 @@ $messages['sv'] = array(
 	'coll-couldnotaddarticle_msg' => 'Wikisidan kunde inte läggas till.',
 	'coll-couldnotremovearticle_title' => 'Kunde inte ta bort wikisida',
 	'coll-couldnotremovearticle_msg' => 'Wikisidan kunde inte tas bort.',
-	'coll-download_as' => 'Hämta som $1',
 	'coll-noscript_text' => '<h1>JavaScript är nödvändigt!</h1>
 <strong>Din webbläsare stödjer inte JavaScript eller så har JavaScript stängts av.
 Denna sida kommer inte att fungera korrekt innan JavaScript finns tillgängligt.</strong>',
@@ -6708,7 +6649,6 @@ $messages['tg-cyrl'] = array(
 	'coll-collections' => 'Гирдовариҳо',
 	'coll-print_template_prefix' => 'Чоп',
 	'coll-unknown_subpage_title' => 'Зерсаҳифаи ношинос',
-	'coll-download_as' => 'Дарёфтан чун $1',
 	'coll-noscript_text' => '<h1>ҶаваСкрипт Лозим аст!</h1>
 <strong>Мурургари шумо ҶаваСкриптро дастгирӣ намекунад ё ҶаваСкрипт хомӯш карда шудааст.
 Ин саҳифа дуруст кор хоҳад карда, дар ҳолате, ки ҶаваСкрипт фаъол карда шуда бошад.</strong>',
@@ -6789,7 +6729,6 @@ $messages['th'] = array(
 	'coll-print_template_pattern' => '$1/พิมพ์',
 	'coll-unknown_subpage_title' => 'หน้าย่อยที่ไม่รู้จัก',
 	'coll-unknown_subpage_text' => '[[Special:Book|หนังสือ]] ไม่มีหน้าย่อยนี้',
-	'coll-download_as' => 'ดาวน์โหลดในชื่อ $1',
 	'coll-noscript_text' => '<h1>จำเป็นต้องใช้จาวาสคริปต์!</h1>
 <strong>เบราว์เซอร์ของคุณไม่รองรับจาวาสคริปต์หรือจาวาสคริปต์ถูกปิดการใช้งาน
 หน้านี้จะไม่สามารถทำงานได้อย่างถูกต้อง ถ้าไม่มีการเปิดใช้จาวาสคริปต์</strong>',
@@ -6867,7 +6806,6 @@ $messages['tl'] = array(
 	'coll-print_template_pattern' => '$1/Limbag',
 	'coll-unknown_subpage_title' => 'Hindi nalalamang kabahaging pahina',
 	'coll-unknown_subpage_text' => 'Hindi umiiral ang kabahaging pahinang ito ng [[Special:Book|Aklat]]',
-	'coll-download_as' => 'Ikargang-pakuha bilang $1',
 	'coll-noscript_text' => "<h1>Kailangan ang JavaScript!</h1>
 <strong>Hindi sinusuportan ng iyong pantingin-tingin (''browser'') ang JavaScript o nakapatay ang JavaScript.
 Hindi aandar ng tama ang pahinang ito, maliban na lamang kung bubuhayin ang JavaScript.</strong>",
@@ -6983,7 +6921,6 @@ $messages['tr'] = array(
 	'coll-couldnotaddarticle_msg' => 'Viki sayfası eklenemedi.',
 	'coll-couldnotremovearticle_title' => 'Viki sayfası kaldırılamıyor',
 	'coll-couldnotremovearticle_msg' => 'Viki sayfası kaldırılamadı.',
-	'coll-download_as' => '$1 olarak indir',
 	'coll-noscript_text' => '<h1>JavaScript gerekli!</h1>
 <strong>Tarayıcınız JavaScript desteklemiyor ya da JavaScript kapalı.
 JavaScript devreye sokulmadıkça bu sayfa doğru çalışmayacaktır.</strong>',
@@ -7094,7 +7031,6 @@ $messages['uk'] = array(
 	'coll-print_template_prefix' => 'Друк',
 	'coll-unknown_subpage_title' => 'Невідома підсторінка',
 	'coll-unknown_subpage_text' => 'Ця підсторінка [[Special:Book|книги]] не існує',
-	'coll-download_as' => 'Завантажити як $1',
 	'coll-noscript_text' => '<h1>Потрібен JavaScript!</h1>
 <strong>Ваш браузер не підтримує JavaScript або ця підтримка вимкнена.
 Ця сторінка не буде працювати правильно, якщо JavaScript не ввімкнений.</strong>',
@@ -7201,7 +7137,6 @@ $messages['vec'] = array(
 	'coll-couldnotaddarticle_msg' => 'La pagina wiki no se gà podesto inserirla.',
 	'coll-couldnotremovearticle_title' => 'No se riesse a cavar la pagina wiki',
 	'coll-couldnotremovearticle_msg' => 'La pagina wiki no se gà podesto cavarla.',
-	'coll-download_as' => 'Descarga come $1',
 	'coll-noscript_text' => "<h1>Ghe vole el JavaScript!</h1>
 <strong>El to browser no'l suporta JavaScript opure JavaScript el xe stà disativà.
 La pàxena no la funsionrà mia coretamente se no vegnarà ativà JavaScript.</strong>",
@@ -7336,7 +7271,6 @@ $messages['vi'] = array(
 	'coll-couldnotaddarticle_msg' => 'Không thêm được trang wiki.',
 	'coll-couldnotremovearticle_title' => 'Không thể dời trang wiki',
 	'coll-couldnotremovearticle_msg' => 'Không dời được trang wiki.',
-	'coll-download_as' => 'Tải về dưới dạng $1',
 	'coll-noscript_text' => '<h1>Yêu cầu phải có JavaScript!</h1>
 <strong>Trình duyệt của bạn không hỗ trợ JavaScript hoặc JavaScript đã bị tắt.
 Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaScript.</strong>',
@@ -7445,7 +7379,6 @@ $messages['vo'] = array(
 	'coll-print_template_prefix' => 'Dabükön',
 	'coll-unknown_subpage_title' => 'Donapad nesevädik',
 	'coll-unknown_subpage_text' => 'Donapad at [[Special:Book|Buka]] no dabinon.',
-	'coll-download_as' => 'Donükön as $1',
 	'coll-noscript_text' => '<h1>El JavaScript paflagon!</h1>
 <strong>Bevüresodanaföm olik no stüton eli JavaScript, ud el JavaScript pesekurbon. Pad at no ojäfidon verätiko, if el JavaScript no ponikurbon.</strong>',
 	'coll-your_book' => 'Buk olik',
@@ -7525,7 +7458,6 @@ $messages['yue'] = array(
 	'coll-print_template_pattern' => '$1/打印',
 	'coll-unknown_subpage_title' => '未知嘅細頁',
 	'coll-unknown_subpage_text' => '呢本[[Special:Book|Book]]書嘅細頁唔存在',
-	'coll-download_as' => '下載做$1',
 	'coll-noscript_text' => '<h1>需要JavaScript!</h1>
 <strong>你嘅瀏覽器唔支援JavaScript或者JavaScript閂咗。
 呢一版唔會正常噉運行，除非開咗JavaScript。</strong>',
@@ -7630,7 +7562,6 @@ $messages['zh-hans'] = array(
 	'coll-print_template_pattern' => '$1/打印',
 	'coll-unknown_subpage_title' => '未知子页',
 	'coll-unknown_subpage_text' => '这个[[Special:Book|图书]]的子页面不存在',
-	'coll-download_as' => '下载为 $1',
 	'coll-noscript_text' => '<h1>JavaScript是必需的！</h1>
 <strong>您的浏览器不支持JavaScript或JavaScript未开启。
 
