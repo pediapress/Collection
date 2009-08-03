@@ -1114,6 +1114,8 @@ $messages['da'] = array(
  */
 $messages['de'] = array(
 	'coll-desc' => '[[Special:Book|Erstelle Bücher]]',
+	'coll-create_a_book_continue' => 'Fortfahren',
+	'coll-create_a_book_text_article' => 'Buch_erstellen',
 	'coll-collection' => 'Buch',
 	'coll-collections' => 'Bücher',
 	'coll-exclusion_category_title' => 'Vom Druck ausschließen',
@@ -4070,6 +4072,10 @@ $messages['krj'] = array(
  */
 $messages['ksh'] = array(
 	'coll-desc' => '[[Special:Book|Böösher ußjäve]]',
+	'coll-create_a_book_title' => "== Et Bööschermaache es ''enjeschalldt'' ==",
+	'coll-create_a_book_continue' => 'Wigger',
+	'coll-create_a_book_exit' => 'Ophüüre',
+	'coll-create_a_book_text_article' => 'E_Booch_Maache',
 	'coll-collection' => 'Booch',
 	'coll-collections' => 'Bööscher',
 	'coll-exclusion_category_title' => 'Nit met drokke',
@@ -5841,6 +5847,10 @@ $messages['roa-tara'] = array(
  */
 $messages['ru'] = array(
 	'coll-desc' => '[[Special:Book|Создаёт книги]]',
+	'coll-create_a_book_title' => "== Режим создания книг ''включён'' ==",
+	'coll-create_a_book_continue' => 'Продолжить',
+	'coll-create_a_book_exit' => 'Выйти',
+	'coll-create_a_book_text_article' => 'Создать_книгу',
 	'coll-collection' => 'Книга',
 	'coll-collections' => 'Книги',
 	'coll-exclusion_category_title' => 'Исключения из печати',
