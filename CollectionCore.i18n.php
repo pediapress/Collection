@@ -338,29 +338,32 @@ $messages['cy'] = array(
 
 /** German (Deutsch)
  * @author Metalhead64
+ * @author Pill
  * @author Umherirrender
  */
 $messages['de'] = array(
+	'coll-print_export' => 'Drucken/exportieren',
+	'coll-create_a_book' => 'Buch erstellen',
+	'coll-create_a_book_tooltip' => 'Ein Buch oder eine Artikelsammlung erstellen',
+	'coll-download_as' => 'Als $1 herunterladen',
 	'coll-add_category' => 'Kategorie hinzufügen',
 	'coll-add_category_popup' => 'Wikiseiten in verlinkter Kategorie zu deinem Buch hinzufügen',
 	'coll-add_category_tooltip' => 'Alle Wikiseiten dieser Kategorie deinem Buch hinzufügen',
-	'coll-add_page' => 'Seite zum Buch hinzufügen',
+	'coll-add_this_page' => 'Diese Seite zu deinem Buch hinzufügen',
 	'coll-add_page_popup' => 'Verlinkte Wikiseite zu deinem Buch hinzufügen',
 	'coll-add_page_tooltip' => 'Die aktuelle Wikiseite deinem Buch hinzufügen',
 	'coll-bookscategory' => 'Bücher',
 	'coll-clear_collection' => 'Buch löschen',
 	'coll-clear_collection_confirm' => 'Möchtest du wirklich dein Buch löschen?',
 	'coll-clear_collection_tooltip' => 'Alle Wikiseiten aus deinem aktuellen Buch entfernen',
-	'coll-create_a_book' => 'Buch erstellen',
-	'coll-help_collections' => 'Hilfe zu Büchern',
-	'coll-help_collections_tooltip' => 'Hilfe über das Buchwerkzeug zeigen',
+	'coll-help' => 'Hilfe',
+	'coll-help_tooltip' => 'Hilfe zum Erstellen von Büchern anzeigen',
 	'coll-helppage' => 'Help:Bücher',
 	'coll-load_collection' => 'Buch laden',
 	'coll-load_collection_tooltip' => 'Dieses Buch als dein aktuelles Buch laden',
 	'coll-n_pages' => '$1 {{PLURAL:$1|Wikiseite|Wikiseiten}}',
-	'coll-popup_help_text' => 'Um dieses Feature zu deaktivieren, klicke „Buch löschen“ in der „Buch erstellen“-Box',
 	'coll-printable_version_pdf' => 'PDF-Version',
-	'coll-remove_page' => 'Seite aus dem Buch entfernen',
+	'coll-remove_this_page' => 'Diese Seite aus deinem Buch entfernen',
 	'coll-remove_page_popup' => 'Verlinkte Wikiseite aus deinem Buch entfernen',
 	'coll-remove_page_tooltip' => 'Die aktuelle Wikiseite aus deinem Buch entfernen',
 	'coll-show_collection' => 'Buch zeigen',
@@ -375,12 +378,13 @@ $messages['de'] = array(
 $messages['de-formal'] = array(
 	'coll-add_category_popup' => 'Wikiseiten in verlinkter Kategorie zu Ihrem Buch hinzufügen',
 	'coll-add_category_tooltip' => 'Alle Wikiseiten dieser Kategorie Ihrem Buch hinzufügen',
+	'coll-add_this_page' => 'Diese Seite zu Ihrem Buch hinzufügen',
 	'coll-add_page_popup' => 'Verlinkte Wikiseite zu Ihrem Buch hinzufügen',
 	'coll-add_page_tooltip' => 'Die aktuelle Wikiseite Ihrem Buch hinzufügen',
 	'coll-clear_collection_confirm' => 'Möchten Sie wirklich Ihr Buch löschen?',
 	'coll-clear_collection_tooltip' => 'Alle Wikiseiten aus Ihrem aktuellen Buch entfernen',
 	'coll-load_collection_tooltip' => 'Dieses Buch als Ihr aktuelles Buch laden',
-	'coll-popup_help_text' => 'Um dieses Feature zu deaktivieren, klicken Sie bitte „Buch löschen“ in der „Buch erstellen“-Box',
+	'coll-remove_this_page' => 'Diese Seite aus Ihrem Buch entfernen',
 	'coll-remove_page_popup' => 'Verlinkte Wikiseite aus Ihrem Buch entfernen',
 	'coll-remove_page_tooltip' => 'Die aktuelle Wikiseite aus Ihrem Buch entfernen',
 	'coll-show_collection_tooltip' => 'Klicken, um Ihr Buch zu bearbeiten/herunterzuladen/bestellen',
@@ -533,22 +537,22 @@ $messages['et'] = array(
 
 /** Basque (Euskara)
  * @author An13sa
+ * @author Kobazulo
  * @author Theklan
  */
 $messages['eu'] = array(
+	'coll-create_a_book' => 'Liburu bat sortu',
+	'coll-download_as' => '$1 gisa jaitsi',
 	'coll-add_category' => 'Kategoria gehitu',
-	'coll-add_page' => 'Orrialdea liburura gehitu',
 	'coll-bookscategory' => 'Liburuak',
 	'coll-clear_collection' => 'Liburua ezabatu',
 	'coll-clear_collection_confirm' => 'Benetan ezabatu nahi al duzu zure liburu osoa?',
-	'coll-create_a_book' => 'Liburu bat sortu',
-	'coll-help_collections' => 'Liburuen laguntza',
 	'coll-helppage' => 'Help:Liburuak',
 	'coll-load_collection' => 'Liburua kargatu',
 	'coll-n_pages' => '{{PLURAL:$1|Orrialde 1|$1 orrialde}}',
 	'coll-printable_version_pdf' => 'PDF bertsioa',
-	'coll-remove_page' => 'Orrialdea liburutik kendu',
 	'coll-show_collection' => 'Liburua erakutsi',
+	'coll-show_collection_tooltip' => 'Zure liburua editatzeko/deskargatzeko/eskatzeko egizu klik',
 );
 
 /** Persian (فارسی)
@@ -1642,26 +1646,31 @@ $messages['roa-tara'] = array(
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
+	'coll-print_export' => 'Печать/Экспорт',
+	'coll-create_a_book' => 'Создать книгу',
+	'coll-create_a_book_tooltip' => 'Создать книгу или коллекцию статей',
+	'coll-download_as' => 'Загрузить как $1',
+	'coll-download_as_tooltip' => 'Загрузить $1 версию этой вики-страницы',
+	'coll-disable' => 'выключить',
+	'coll-disable_tooltip' => 'Выключить режим создания книги',
 	'coll-add_category' => 'Добавить категорию',
 	'coll-add_category_popup' => 'Добавить в вики-страницы из связанной категории в книгу',
 	'coll-add_category_tooltip' => 'Добавить все вики-страницы этой категории в книгу',
-	'coll-add_page' => 'Добавить страницу в книгу',
+	'coll-add_this_page' => 'Добавить эту страницу в вашу книгу',
 	'coll-add_page_popup' => 'Добавить связанную вики-страницу в книгу',
 	'coll-add_page_tooltip' => 'Добавить текущую вики-страницу в книгу',
 	'coll-bookscategory' => 'Книги',
 	'coll-clear_collection' => 'Очистить книгу',
 	'coll-clear_collection_confirm' => 'Вы действительно желаете полностью очистить вашу книгу?',
 	'coll-clear_collection_tooltip' => 'Удалите все вики-страницы из текущей книги',
-	'coll-create_a_book' => 'Создать книгу',
-	'coll-help_collections' => 'Справка по книгам',
-	'coll-help_collections_tooltip' => 'Показать справку о «книжных» инструментах',
+	'coll-help' => 'Справка',
+	'coll-help_tooltip' => 'Показать справку по созданию книг',
 	'coll-helppage' => 'Help:Книги',
 	'coll-load_collection' => 'Загрузить книгу',
 	'coll-load_collection_tooltip' => 'Загрузить эту книгу как вашу текущую книгу',
 	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страницы|страниц}}',
-	'coll-popup_help_text' => 'Для отключения этой функции нажмите кнопку «Очистить книгу» в поле «Создать книгу»',
 	'coll-printable_version_pdf' => 'PDF-версия',
-	'coll-remove_page' => 'Удалить страницу из книги',
+	'coll-remove_this_page' => 'Удалить эту страницу из вашей книги',
 	'coll-remove_page_popup' => 'Удалить связанную вики-страницу из книги',
 	'coll-remove_page_tooltip' => 'Удалить текущую вики-страницу из книги',
 	'coll-show_collection' => 'Показать книгу',
