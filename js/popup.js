@@ -6,7 +6,7 @@
 document.write('<script type="text/javascript" src="' + wgCollectionNavPopupJSURL + '"></script>');
 importStylesheetURI(wgCollectionNavPopupCSSURL);
 
-var createBookMode = null;
+var createABookMode = null;
 var collectionArticleList = [];
 var collectionPopup;
 
@@ -60,7 +60,6 @@ function getCollectionPopupHTML(popup) {
 			popupContent += '" href="#">' + wgCollectionAddCategoryText + '</a>';
 		}
 	}
-	popupContent += ' <a href="javascript:alert(wgCollectionPopupHelpText);">[?]</a>';
 	return popupContent;
 }
 
@@ -83,11 +82,7 @@ function refreshCollectionArticleList() {
 		if (typeof coll.collection.items != 'undefined' ) {
 			add_articles(coll.collection.items);
 		}
-		if (articles.length > 0) {
-			startCollectionPopups();
-		} else {
-			stopCollectionPopups();
-		}
+		startCollectionPopups();
 		collectionArticleList = articles;
 	});
 }
@@ -100,8 +95,12 @@ function popupCollectionCall(func, args) {
 	sajax_do_call('wfAjaxCollection' + func, args, function(xhr) {
 		refreshCollectionArticleList();
 		sajax_request_type = 'GET';
-		sajax_do_call('wfAjaxCollectionGetPortlet', [wgCollectionAddRemoveState], function(xhr) {
-			document.getElementById('collectionPortletList').parentNode.innerHTML = xhr.responseText;
+		var oldid = null;
+		if (args.length == 3) {
+			oldid = args[2];
+		}
+		sajax_do_call('wfAjaxCollectionGetCreateABookContent', [wgCollectionAddRemoveState, oldid], function(xhr) {
+			document.getElementById('coll-create_a_book').innerHTML = xhr.responseText;
 		});
 	});
 }
@@ -115,26 +114,26 @@ function hideCollectionPopup(popup) {
 
 // stop popups
 function stopCollectionPopups() {
-	if (createBookMode != false) {
+	if (createABookMode != false) {
 		var bodyDiv = document.getElementById("bodyContent");
 		var links = bodyDiv.getElementsByTagName('a');
 		for (var i = 0; i < links.length; i++) {
 			removeTooltip(links[i]);
 			links[i].onmousedown = null;
 		}
-		createBookMode = false;
+		createABookMode = false;
 	}
 }
 
 // start popups
 function startCollectionPopups() { 
-	if (createBookMode != true) {
+	if (createABookMode != true) {
 		var bodyDiv = document.getElementById("bodyContent");
 		var links = bodyDiv.getElementsByTagName('a');
 		for (var i = 0; i < links.length; i++) {
 						addTooltip(links[i]);
 		}
-		createBookMode = true;
+		createABookMode = true;
 		}
 }
 

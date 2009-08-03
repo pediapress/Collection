@@ -1,7 +1,7 @@
 /*
  * Collection Extension for MediaWiki
  *
- * Copyright (C) 2008, PediaPress GmbH
+ * Copyright (C) PediaPress GmbH
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,7 +25,7 @@ var jQuery = collection_jQuery;
 
 /******************************************************************************/
 
-var requiredVersion = '1.2';
+var requiredVersion = '1.3';
 
 /******************************************************************************/
 

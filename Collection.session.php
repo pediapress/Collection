@@ -3,7 +3,7 @@
 /*
  * Collection Extension for MediaWiki
  *
- * Copyright (C) 2008, PediaPress GmbH
+ * Copyright (C) PediaPress GmbH
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -41,10 +41,28 @@ class CollectionSession {
 
 	static function clearCollection() {
 		$_SESSION['wsCollection'] = array(
+			'enabled' => 'true',
 			'title' => '',
 			'subtitle' => '',
 			'items' => array(),
 		);
+		self::touchSession();
+	}
+
+	static function enable() {
+		if ( !self::hasSession() ) {
+			self::startSession();
+		} else {
+			$_SESSION['wsCollection']['enabled'] = true;
+			self::touchSession();
+		}
+	}
+
+	static function disable() {
+		if ( !self::hasSession() ) {
+			return;
+		}
+		$_SESSION['wsCollection']['enabled'] = false;
 		self::touchSession();
 	}
 

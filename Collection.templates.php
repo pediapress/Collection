@@ -12,7 +12,7 @@ if( !defined( 'MEDIAWIKI' ) ) die( -1 );
  */
 class CollectionPageTemplate extends QuickTemplate {
 	function execute() {		
-		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/collection/';
+		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
 ?>
 
 <div style="width: 47%; float: left; margin-right: 5%">
@@ -203,7 +203,7 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
  */
 class CollectionListTemplate extends QuickTemplate {
 	function execute() {		
-		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/collection/';
+		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
 ?>
 
 <div style="text-align: center; padding: 2px; margin-top: 20px; margin-bottom: 2px; border: 1px solid #aaa; background-color: #f9f9f9;">

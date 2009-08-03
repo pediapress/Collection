@@ -3,7 +3,7 @@
 /*
  * Collection Extension for MediaWiki
  *
- * Copyright (C) 2008, PediaPress GmbH
+ * Copyright (C) PediaPress GmbH
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -25,6 +25,10 @@ $messages = array();
 
 $messages['en'] = array(
 	'coll-desc'                       => '[[Special:Book|Create books]]',
+	'coll-create_a_book_title'        => "== Book creation mode ''enabled'' ==",
+	'coll-create_a_book_continue'     => 'Continue',
+	'coll-create_a_book_exit'         => 'Exit',
+	'coll-create_a_book_text_article' => 'Create_a_book',
 	'coll-collection'                 => 'Book',
 	'coll-collections'                => 'Books',
 	'coll-exclusion_category_title'   => 'Exclude in print',
