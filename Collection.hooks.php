@@ -249,6 +249,8 @@ class CollectionHooks {
 		global $wgUser;
 		global $wgTitle;
 
+		wfLoadExtensionMessages( 'CollectionCore' );
+
 		$namespace = $wgTitle->getNamespace();
 		$ptext = $wgTitle->getPrefixedText();
 
