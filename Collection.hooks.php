@@ -210,7 +210,7 @@ class CollectionHooks {
 						'rel' => 'nofollow',
 						'title' => wfMsg( 'coll-help_tooltip' ),
 					),
-					null,
+					array(),
 					array( 'known', 'noclasses' )
 				)
 			)
@@ -275,7 +275,7 @@ class CollectionHooks {
 						'rel' => 'nofollow',
 						'title' => wfMsg( 'coll-show_collection_tooltip' ),
 					),
-					null,
+					array(),
 					array( 'known', 'noclasses' )
 				)
 			);
