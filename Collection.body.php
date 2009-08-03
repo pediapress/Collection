@@ -3,7 +3,7 @@
 /*
  * Collection Extension for MediaWiki
  *
- * Copyright (C) 2008-2009, PediaPress GmbH
+ * Copyright (C) PediaPress GmbH
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -50,6 +50,32 @@ class SpecialCollection extends SpecialPage {
 		wfLoadExtensionMessages( 'Collection' );
 
 		switch ( $par ) {
+			case 'create_a_book/':
+				$this->renderCreateABookPage( $wgRequest->getVal( 'referer', '' ) );
+				return;
+
+			case 'start_create_mode/':
+				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
+				if ( is_null( $title ) ) {
+					$title = Title::newMainPage();
+				}
+				if ( $wgRequest->getVal( 'continue' ) ) {
+					CollectionSession::enable();
+				} else {
+					CollectionSession::disable();
+				}
+				$wgOut->redirect( $title->getFullURL() );
+				return;
+
+			case 'stop_create_mode/':
+				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
+				if ( is_null( $title ) ) {
+					$title = Title::newMainPage();
+				}
+				CollectionSession::disable();
+				$wgOut->redirect( $title->getFullURL() );
+				return;
+
 			case 'add_article/':
 				if ( CollectionSession::countArticles() >= $wgCollectionMaxArticles ) {
 					self::limitExceeded();
@@ -249,6 +275,62 @@ class SpecialCollection extends SpecialPage {
 		return;
 	}
 
+	function renderCreateABookPage( $referer ) {
+		global $wgOut;
+
+		$this->setHeaders();
+
+		$wgOut->addWikiText( wfMsg( 'coll-create_a_book_title' ) );
+
+		$wgOut->addHTML(
+			Xml::element( 'form',
+				array(
+					'action' => SkinTemplate::makeSpecialUrlSubpage( 'Book', 'start_create_mode/' ),
+					'method' => 'POST',
+				),
+				null
+			)
+		);
+		$wgOut->addHTML(
+			Xml::element( 'input',
+				array(
+					'type' => 'hidden',
+					'name' => 'referer',
+					'value' => $referer,
+				),
+				'', false
+			)
+		);
+		$wgOut->addHTML(
+			Xml::element( 'input',
+				array(
+					'type' => 'submit',
+					'name' => 'continue',
+					'value' => wfMsgHtml( 'coll-create_a_book_continue' ),
+				),
+				'', false
+			)
+		);
+		$wgOut->addHTML(
+			Xml::element( 'input',
+				array(
+					'type' => 'submit',
+					'name' => 'exit',
+					'value' => wfMsgHtml( 'coll-create_a_book_exit' ),
+				),
+				'', false
+			)
+		);
+		$wgOut->addHTML( Xml::closeElement( 'form' ) );
+
+		$title_string = wfMsg( 'coll-create_a_book_text_article' );
+		$t = Title::newFromText( $title_string );
+		$a = new Article( $t );
+		if ( $a->exists() ) {
+			$wgOut->addWikiText( '{{:' . $title_string . '}}' );
+		}
+	}
+
 	function renderSpecialPage() {
 		global $wgCollectionFormats;
 		global $wgCollectionVersion;
@@ -261,12 +343,14 @@ class SpecialCollection extends SpecialPage {
 			CollectionSession::startSession();
 		}
 
+		$jspath = "$wgScriptPath/extensions/Collection/js";
+
 		$this->setHeaders();
 		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.js?$wgCollectionStyleVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/jquery.ui.js?$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.js?$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.ui.js?$wgCollectionStyleVersion\"></script>" );
 		$wgOut->addInlineScript( "var collection_jQuery = jQuery.noConflict();" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/collection/collection.js?$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/collection.js?$wgCollectionStyleVersion\"></script>" );
 
 		$template = new CollectionPageTemplate();
 		$template->set( 'collection', $_SESSION['wsCollection'] );

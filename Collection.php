@@ -3,7 +3,7 @@
 /*
  * Collection Extension for MediaWiki
  *
- * Copyright (C) 2008, PediaPress GmbH
+ * Copyright (C) PediaPress GmbH
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,14 +33,14 @@ EOT;
 $dir = dirname(__FILE__) . '/';
 
 # Extension version
-$wgCollectionVersion = "1.2";
+$wgCollectionVersion = "1.3";
 
 # ==============================================================================
 
 # Configuration:
 
 /** Bump the version number every time you change any of the JavaScript files */
-$wgCollectionStyleVersion = 2;
+$wgCollectionStyleVersion = 3;
 
 /** URL of mw-serve render server */
 $wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
@@ -88,14 +88,14 @@ $wgCollectionLicenseName = null;
 $wgCollectionLicenseURL = null;
 
 /** List of available download formats,
-    as mapping of mwlib writer to format name */
+		as mapping of mwlib writer to format name */
 $wgCollectionFormats = array(
 	'rl' => 'PDF',
 );
 
 $wgCollectionPortletForLoggedInUsersOnly = false;
 
-$wgCollectionNavPopups = false;
+$wgCollectionNavPopups = true;
 
 # ==============================================================================
 
@@ -125,9 +125,8 @@ $wgExtensionAliasesFiles['Collection'] = $dir . 'Collection.alias.php';
 $wgSpecialPages['Book'] = 'SpecialCollection';
 $wgSpecialPageGroups['Book'] = 'pagetools';
 
-$wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'CollectionHooks::createNavURLs';
-$wgHooks['SkinTemplateToolboxEnd'][] = 'CollectionHooks::insertToolboxLink';
 $wgHooks['SkinBuildSidebar'][] = 'CollectionHooks::buildSidebar';
+$wgHooks['SiteNoticeAfter'][] = 'CollectionHooks::renderCreateABookBox';
 $wgHooks['OutputPageCheckLastModified'][] = 'CollectionHooks::checkLastModified';
 
 $wgAvailableRights[] = 'collectionsaveasuserpage';
@@ -197,11 +196,11 @@ function wfAjaxCollectionAddCategory( $title='' ) {
 
 $wgAjaxExportList[] = 'wfAjaxCollectionAddCategory';
 
-function wfAjaxCollectionGetPortlet( $ajaxHint='' ) {
-	return CollectionHooks::getPortlet( $ajaxHint );
+function wfAjaxCollectionGetCreateABookContent( $ajaxHint='', $oldid=null ) {
+	return CollectionHooks::getCreateABookContent( $ajaxHint, $oldid );
 }
 
-$wgAjaxExportList[] = 'wfAjaxCollectionGetPortlet';
+$wgAjaxExportList[] = 'wfAjaxCollectionGetCreateABookContent';
 
 function wfAjaxCollectionGetItemList() {
 	wfLoadExtensionMessages( 'CollectionCore' );
