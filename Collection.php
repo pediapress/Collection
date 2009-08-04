@@ -126,7 +126,7 @@ $wgSpecialPages['Book'] = 'SpecialCollection';
 $wgSpecialPageGroups['Book'] = 'pagetools';
 
 $wgHooks['SkinBuildSidebar'][] = 'CollectionHooks::buildSidebar';
-$wgHooks['SiteNoticeAfter'][] = 'CollectionHooks::renderCreateABookBox';
+$wgHooks['SiteNoticeAfter'][] = 'CollectionHooks::renderBookModeBox';
 $wgHooks['OutputPageCheckLastModified'][] = 'CollectionHooks::checkLastModified';
 
 $wgAvailableRights[] = 'collectionsaveasuserpage';
@@ -196,11 +196,11 @@ function wfAjaxCollectionAddCategory( $title='' ) {
 
 $wgAjaxExportList[] = 'wfAjaxCollectionAddCategory';
 
-function wfAjaxCollectionGetCreateABookContent( $ajaxHint='', $oldid=null ) {
-	return CollectionHooks::getCreateABookContent( $ajaxHint, $oldid );
+function wfAjaxCollectionGetBookModeBoxContent( $ajaxHint='', $oldid=null ) {
+	return CollectionHooks::getBookModeBoxContent( $ajaxHint, $oldid );
 }
 
-$wgAjaxExportList[] = 'wfAjaxCollectionGetCreateABookContent';
+$wgAjaxExportList[] = 'wfAjaxCollectionGetBookModeBoxContent';
 
 function wfAjaxCollectionGetItemList() {
 	wfLoadExtensionMessages( 'CollectionCore' );

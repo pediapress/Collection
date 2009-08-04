@@ -6,7 +6,7 @@
 document.write('<script type="text/javascript" src="' + wgCollectionNavPopupJSURL + '"></script>');
 importStylesheetURI(wgCollectionNavPopupCSSURL);
 
-var createABookMode = null;
+var bookMode = null;
 var collectionArticleList = [];
 var collectionPopup;
 
@@ -45,19 +45,21 @@ function getCollectionPopupHTML(popup) {
 	}
 	stripped_title = stripped_title.replace(/"/, '\\"');
 	var popupContent = '<a onclick="';
+	var imgPrefix = '<img src="' + wgScriptPath + '/extensions/Collection/images/silk-';
+	var imgSuffix = '.png" width="16" height="16" alt="" style="vertical-align: text-bottom" />&nbsp;';
 	if (isInCollection(title)) {
 		var js = 'popupCollectionCall("RemoveArticle", [' + ns + ', "' + stripped_title + '", 0]); return false;';
 		popupContent += escapeQuotesHTML(js);
-		popupContent += '" href="#">' + wgCollectionRemovePageText + '</a>';
+		popupContent += '" href="#">' + imgPrefix + 'remove' + imgSuffix + wgCollectionRemovePageText + '</a>';
 	} else {
 		if (ns != 14) {
 			var js = 'popupCollectionCall("AddArticle", [' + ns + ', "' + stripped_title + '", 0]); return false;'
 			popupContent += escapeQuotesHTML(js);
-			popupContent += '" href="#">' + wgCollectionAddPageText + '</a>'
+			popupContent += '" href="#">' + imgPrefix + 'add' + imgSuffix + wgCollectionAddPageText + '</a>'
 		} else {
 			var js = 'popupCollectionCall("AddCategory", ["' + stripped_title + '"]); return false;'
 			popupContent += escapeQuotesHTML(js);
-			popupContent += '" href="#">' + wgCollectionAddCategoryText + '</a>';
+			popupContent += '" href="#">' + imgPrefix + 'add' + imgSuffix + wgCollectionAddCategoryText + '</a>';
 		}
 	}
 	return popupContent;
@@ -99,8 +101,8 @@ function popupCollectionCall(func, args) {
 		if (args.length == 3) {
 			oldid = args[2];
 		}
-		sajax_do_call('wfAjaxCollectionGetCreateABookContent', [wgCollectionAddRemoveState, oldid], function(xhr) {
-			document.getElementById('coll-create_a_book').innerHTML = xhr.responseText;
+		sajax_do_call('wfAjaxCollectionGetBookModeBoxContent', [wgCollectionAddRemoveState, oldid], function(xhr) {
+			document.getElementById('coll-book_mode_box').innerHTML = xhr.responseText;
 		});
 	});
 }
@@ -114,26 +116,26 @@ function hideCollectionPopup(popup) {
 
 // stop popups
 function stopCollectionPopups() {
-	if (createABookMode != false) {
+	if (bookMode != false) {
 		var bodyDiv = document.getElementById("bodyContent");
 		var links = bodyDiv.getElementsByTagName('a');
 		for (var i = 0; i < links.length; i++) {
 			removeTooltip(links[i]);
 			links[i].onmousedown = null;
 		}
-		createABookMode = false;
+		bookMode = false;
 	}
 }
 
 // start popups
 function startCollectionPopups() { 
-	if (createABookMode != true) {
+	if (bookMode != true) {
 		var bodyDiv = document.getElementById("bodyContent");
 		var links = bodyDiv.getElementsByTagName('a');
 		for (var i = 0; i < links.length; i++) {
 						addTooltip(links[i]);
 		}
-		createABookMode = true;
+		bookMode = true;
 		}
 }
 

@@ -50,11 +50,11 @@ class SpecialCollection extends SpecialPage {
 		wfLoadExtensionMessages( 'Collection' );
 
 		switch ( $par ) {
-			case 'create_a_book/':
-				$this->renderCreateABookPage( $wgRequest->getVal( 'referer', '' ) );
+			case 'book_mode/':
+				$this->renderBookModePage( $wgRequest->getVal( 'referer', '' ) );
 				return;
 
-			case 'start_create_mode/':
+			case 'start_book_mode/':
 				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
 				if ( is_null( $title ) ) {
 					$title = Title::newMainPage();
@@ -67,7 +67,7 @@ class SpecialCollection extends SpecialPage {
 				$wgOut->redirect( $title->getFullURL() );
 				return;
 
-			case 'stop_create_mode/':
+			case 'stop_book_mode/':
 				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
 				if ( is_null( $title ) ) {
 					$title = Title::newMainPage();
@@ -275,60 +275,62 @@ class SpecialCollection extends SpecialPage {
 		return;
 	}
 
-	function renderCreateABookPage( $referer ) {
+	function renderBookModePage( $referer ) {
 		global $wgOut;
 
 		$this->setHeaders();
+		$wgOut->setPageTitle( wfMsg( 'coll-book_mode' ) );
 
-		$wgOut->addWikiText( wfMsg( 'coll-create_a_book_title' ) );
+		$wgOut->addWikiText( wfMsg( 'coll-book_mode_intro' ) );
 
 		$wgOut->addHTML(
-			Xml::element( 'form',
+			Xml::tags( 'div',
 				array(
-					'action' => SkinTemplate::makeSpecialUrlSubpage( 'Book', 'start_create_mode/' ),
-					'method' => 'POST',
+					'style' => 'margin: 10px 0;',
 				),
-				null
+				Xml::tags( 'form',
+					array(
+						'action' => SkinTemplate::makeSpecialUrlSubpage( 'Book', 'start_book_mode/' ),
+						'method' => 'POST',
+					),
+					Xml::element( 'input',
+						array(
+							'type' => 'hidden',
+							'name' => 'referer',
+							'value' => $referer,
+						),
+						'', false
+					)
+					. Xml::element( 'input',
+						array(
+							'type' => 'submit',
+							'name' => 'continue',
+							'value' => wfMsg( 'coll-start_book_mode' ),
+						),
+						'', false
+					)
+					. Xml::element( 'input',
+						array(
+							'type' => 'submit',
+							'name' => 'exit',
+							'value' => wfMsg( 'coll-cancel' ),
+						),
+						'', false
+					)
+				)
 			)
 		);
-		$wgOut->addHTML(
-			Xml::element( 'input',
-				array(
-					'type' => 'hidden',
-					'name' => 'referer',
-					'value' => $referer,
-				),
-				'', false
-			)
-		);
-		$wgOut->addHTML(
-			Xml::element( 'input',
-				array(
-					'type' => 'submit',
-					'name' => 'continue',
-					'value' => wfMsgHtml( 'coll-create_a_book_continue' ),
-				),
-				'', false
-			)
-		);
-		$wgOut->addHTML(
-			Xml::element( 'input',
-				array(
-					'type' => 'submit',
-					'name' => 'exit',
-					'value' => wfMsgHtml( 'coll-create_a_book_exit' ),
-				),
-				'', false
-			)
-		);
-		$wgOut->addHTML( Xml::closeElement( 'form' ) );
 
-		$title_string = wfMsg( 'coll-create_a_book_text_article' );
+		$title_string = wfMsg( 'coll-book_mode_text_article' );
 		$t = Title::newFromText( $title_string );
-		$a = new Article( $t );
-		if ( $a->exists() ) {
-			$wgOut->addWikiText( '{{:' . $title_string . '}}' );
+		if ( !is_null($t) ) {
+			$a = new Article( $t );
+			if ( $a->exists() ) {
+				$wgOut->addWikiText( '{{:' . $title_string . '}}' );
+			}
+			return;
 		}
+		$wgOut->addWikiText( wfMsg( 'coll-book_mode_help' ) );
 	}
 
 	function renderSpecialPage() {

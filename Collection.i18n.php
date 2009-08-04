@@ -25,10 +25,10 @@ $messages = array();
 
 $messages['en'] = array(
 	'coll-desc'                       => '[[Special:Book|Create books]]',
-	'coll-create_a_book_title'        => "== Book creation mode ''enabled'' ==",
-	'coll-create_a_book_continue'     => 'Continue',
-	'coll-create_a_book_exit'         => 'Exit',
-	'coll-create_a_book_text_article' => 'Create_a_book',
+	'coll-book_mode_intro'            => "With the ''book mode'' you can create a book consisting of arbitrary wiki pages. You can export your book in different formats (for example PDF or ODF) or order a printed copy.",
+	'coll-book_mode_help'             => 'See [[{{MediaWiki:Coll-helppage}}]] for more information.',
+	'coll-start_book_mode'            => 'Start book mode',
+	'coll-book_mode_text_article'     => 'Book_mode_text',
 	'coll-collection'                 => 'Book',
 	'coll-collections'                => 'Books',
 	'coll-exclusion_category_title'   => 'Exclude in print',

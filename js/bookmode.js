@@ -21,11 +21,11 @@
 
 (function() {
 
-function refreshCreateABookBox(hint, oldid) {
+function refreshBookModeBox(hint, oldid) {
   sajax_request_type = 'GET';
-  sajax_do_call('wfAjaxCollectionGetCreateABookContent', [hint, oldid], function(xhr) {
+  sajax_do_call('wfAjaxCollectionGetBookModeBoxContent', [hint, oldid], function(xhr) {
 		console.log('connten:', xhr.reponseText);
-    document.getElementById('coll-create_a_book').innerHTML = xhr.responseText;
+    document.getElementById('coll-book_mode_box').innerHTML = xhr.responseText;
     if (hint && typeof wgCollectionAddRemoveState != 'undefined') {
       wgCollectionAddRemoveState = hint;
     }
@@ -44,7 +44,7 @@ console.log('call');
 		if (args.length == 3) {
 			oldid = args[2];
 		}
-		refreshCreateABookBox(hint, oldid);
+		refreshBookModeBox(hint, oldid);
   });
 }
 
