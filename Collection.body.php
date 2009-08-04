@@ -327,8 +327,8 @@ class SpecialCollection extends SpecialPage {
 			$a = new Article( $t );
 			if ( $a->exists() ) {
 				$wgOut->addWikiText( '{{:' . $title_string . '}}' );
+				return;
 			}
-			return;
 		}
 		$wgOut->addWikiText( wfMsg( 'coll-book_mode_help' ) );
 	}
