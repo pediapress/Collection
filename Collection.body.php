@@ -1113,12 +1113,10 @@ class SpecialCollection extends SpecialPage {
 		$c = curl_init( $url );
 		curl_setopt($c, CURLOPT_PROXY, $wgHTTPProxy);
 		$userAgent = wfGetAgent();
-		if ( !$userAgent ) $userAgent = "Unknown user agent";
-		$userAgent .= " (via ";
-		if ( method_exists( Http, 'userAgent' ) ) {
-			$userAgent .= Http::userAgent() . ', ';
+		if ( !$userAgent ) {
+			$userAgent = "Unknown user agent";
 		}
-		$userAgent .= "Collection/$wgCollectionVersion)";
+		$userAgent .= " (via MediaWiki/$wgVersion, Collection/$wgCollectionVersion)";
 		curl_setopt( $c, CURLOPT_USERAGENT, $userAgent);
 		curl_setopt( $c, CURLOPT_POST, true );
 		curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
