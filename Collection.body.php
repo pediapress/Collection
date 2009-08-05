@@ -281,7 +281,7 @@ class SpecialCollection extends SpecialPage {
 		$this->setHeaders();
 		$wgOut->setPageTitle( wfMsg( 'coll-book_mode' ) );
 
-		$wgOut->addWikiText( wfMsg( 'coll-book_mode_intro' ) );
+		$wgOut->addWikiMsg(  'coll-book_mode_intro' );
 
 		$wgOut->addHTML(
 			Xml::tags( 'div',
