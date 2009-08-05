@@ -59,6 +59,8 @@ class CollectionHooks {
 	 * Return HTML-code to be inserted as portlet
 	 */
 	static function getPortlet() {
+		global $wgArticle;
+		global $wgRequest;
 		global $wgTitle;
 		global $wgUser;
 		global $wgCollectionArticleNamespaces;
@@ -69,7 +71,12 @@ class CollectionHooks {
 
 		if ( !in_array( $namespace, $wgCollectionArticleNamespaces )
 			&& $namespace != NS_CATEGORY ) {
-				return false;
+			return false;
+		}
+
+		$action = $wgRequest->getVal('action');
+		if( $action != '' && $action != 'view' && $action != 'purge' ) {
+			return false;
 		}
 
 		wfLoadExtensionMessages( 'CollectionCore' );
@@ -92,17 +99,29 @@ class CollectionHooks {
 			)
 		);
 
+		$params = array( 'arttitle' => $wgTitle->getPrefixedText() );
+
+		if( $wgArticle ) {
+			$oldid = $wgArticle->getOldID();
+			if ( $oldid ) {
+				$params['oldid'] = $oldid;
+			} else {
+				$params['oldid'] = $wgArticle->getLatest();
+			}
+		}
+
 		foreach ( $wgCollectionFormats as $writer => $name ) {
+			$params['writer'] = $writer;
 			$out .= Xml::tags( 'li',
 				array( 'id' => 'coll-download-as-' . $writer ),
 				$sk->link(
-					SpecialPage::getTitleFor( 'Book', 'render_collection/' ),
+					SpecialPage::getTitleFor( 'Book', 'render_article/' ),
 					wfMsgHtml( 'coll-download_as', htmlspecialchars( $name ) ),
 					array(
 						'rel' => 'nofollow',
 						'title' => wfMsg( 'coll-download_as_tooltip', $name )
 					),
-					array( 'writer' => $writer ),
+					$params,
 					array( 'known', 'noclasses' )
 				)
 			);
