@@ -97,7 +97,7 @@ class CollectionHooks {
 				array( 'id' => 'coll-download-as-' . $writer ),
 				$sk->link(
 					SpecialPage::getTitleFor( 'Book', 'render_collection/' ),
-					wfMsgHtml( 'coll-download_as', $name ),
+					wfMsgHtml( 'coll-download_as', htmlspecialchars( $name ) ),
 					array(
 						'rel' => 'nofollow',
 						'title' => wfMsg( 'coll-download_as_tooltip', $name )
