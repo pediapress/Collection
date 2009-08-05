@@ -102,7 +102,7 @@ class CollectionHooks {
 						'rel' => 'nofollow',
 						'title' => wfMsg( 'coll-download_as_tooltip', $name )
 					),
-					array( 'writer', $writer ),
+					array( 'writer' => $writer ),
 					array( 'known', 'noclasses' )
 				)
 			);
