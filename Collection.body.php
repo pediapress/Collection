@@ -291,7 +291,7 @@ class SpecialCollection extends SpecialPage {
 				Xml::tags( 'form',
 					array(
 						'action' => SkinTemplate::makeSpecialUrlSubpage( 'Book', 'start_book_mode/' ),
-						'method' => 'POST',
+						'method' => 'post',
 					),
 					Xml::element( 'input',
 						array(
