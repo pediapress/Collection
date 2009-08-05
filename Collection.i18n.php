@@ -524,6 +524,9 @@ $messages['ast'] = array(
  */
 $messages['be-tarask'] = array(
 	'coll-desc' => '[[Special:Book|Стварэньне кніг]]',
+	'coll-book_mode_help' => 'Дадатковую інфармацыю глядзіце на [[{{MediaWiki:Coll-helppage}}]].',
+	'coll-start_book_mode' => 'Пачаць рэжым кнігі',
+	'coll-book_mode_text_article' => 'Тэкст рэжыму кнігі',
 	'coll-collection' => 'Кніга',
 	'coll-collections' => 'Кнігі',
 	'coll-exclusion_category_title' => 'Выключэньні з друку',
@@ -1102,8 +1105,11 @@ $messages['da'] = array(
  */
 $messages['de'] = array(
 	'coll-desc' => '[[Special:Book|Erstelle Bücher]]',
-	'coll-create_a_book_continue' => 'Fortfahren',
-	'coll-create_a_book_text_article' => 'Buch_erstellen',
+	'coll-book_mode_intro' => "Mit dem ''Buchmodus'' kannst du ein Buch aus beliebigen Wikiseiten erstellen.
+Du kannst das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.",
+	'coll-book_mode_help' => 'Siehe die [[{{MediaWiki:Coll-helppage}}|Hilfeseite]] für weitere Informationen.',
+	'coll-start_book_mode' => 'Buchmodus starten',
+	'coll-book_mode_text_article' => 'Text für Buchmodus',
 	'coll-collection' => 'Buch',
 	'coll-collections' => 'Bücher',
 	'coll-exclusion_category_title' => 'Vom Druck ausschließen',
@@ -1214,6 +1220,7 @@ Hinweise:
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
+	'coll-book_mode_intro' => "Mit dem ''Buchmodus'' können Sie ein Buch aus willkürlichen Wikiseiten erstellen. Sie können das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.",
 	'coll-noscript_text' => '<h1>JavaScript wird benötigt!</h1>
 <strong>Ihr Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
 Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong>',
@@ -1253,6 +1260,10 @@ Hinweise:
  */
 $messages['dsb'] = array(
 	'coll-desc' => '[[Special:Book|Knigły napóraś]]',
+	'coll-book_mode_intro' => "Z ''modusom knigłow'' móžoš knigły napóraś, kótarež wobstoje z pśipadnych bokow. Móžoš swóje knigły w rozdźělnych formatach eksportěrowaś (na pśikład PDF abo ODF) abo śišćanu kopiju skazaś.",
+	'coll-book_mode_help' => 'Glědaj [[{{MediaWiki:Coll-helppage}}]] za dalšne informacije.',
+	'coll-start_book_mode' => 'Modus knigłow startowaś',
+	'coll-book_mode_text_article' => 'Tekst modusa knigłow',
 	'coll-collection' => 'Knigły',
 	'coll-collections' => 'Knigły',
 	'coll-exclusion_category_title' => 'Wót śišća wuzamknuś',
@@ -2084,6 +2095,10 @@ Ota yhteys MediaWiki-ylläpitäjääsi.',
  */
 $messages['fr'] = array(
 	'coll-desc' => 'Permet de [[Special:Book|créer des livres]]',
+	'coll-book_mode_intro' => "Avec le ''mode livre'' vous pouvez créer un livre se composant de pages du wiki arbitraires. Vous pouvez exporter votre livre en différents formats (par exemple PDF or ODF) ou commander une copie imprimée.",
+	'coll-book_mode_help' => "Voyez [[{{MediaWiki:Coll-helppage}}]] pour plus d'informations.",
+	'coll-start_book_mode' => 'Démarrer le mode livre',
+	'coll-book_mode_text_article' => 'Texte du mode livre',
 	'coll-collection' => 'Livre',
 	'coll-collections' => 'Livres',
 	'coll-exclusion_category_title' => "Exclure lors de l'impression",
@@ -2821,6 +2836,10 @@ Molimo kontaktirajte svog MediaWiki administratora.',
  */
 $messages['hsb'] = array(
 	'coll-desc' => '[[Special:Book|Knihi wutworić]]',
+	'coll-book_mode_intro' => "Přez ''knižny modus'' móžeš knihu wutworić, kotraž ze samowólnych wikijowych stronow wobsteji. Móžeš swoju knihu w rozdźělnych formatach eksportować (na přikład PDF abo ODF) abo sej ćišćanu kopiju žadać.",
+	'coll-book_mode_help' => 'Hlej [[{{MediaWiki:Coll-helppage}}]] za dalše informacije.',
+	'coll-start_book_mode' => 'Knižny modus startować',
+	'coll-book_mode_text_article' => 'Tekst knižneho modusa',
 	'coll-collection' => 'Kniha',
 	'coll-collections' => 'Knihi',
 	'coll-exclusion_category_title' => 'Wot ćišćenja wuzamknyć',
@@ -3035,7 +3054,7 @@ Kérlek lépj kapcsolatba a MediaWiki adminisztrátorával.',
 	'coll-more_info' => 'További információk megjelenítése',
 	'coll-hide_info' => 'További információk elrejtése',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress rendelési információk',
-	'right-collectionsaveascommunitypage' => 'Könyvek mentése mint közösségi oldal',
+	'right-collectionsaveascommunitypage' => 'Könyvek mentése közösségi lapként',
 );
 
 /** Armenian (Հայերեն)
@@ -3426,6 +3445,10 @@ $messages['is'] = array(
  */
 $messages['it'] = array(
 	'coll-desc' => '[[Special:Book|Crea libri]]',
+	'coll-book_mode_intro' => "Con la ''modalità libro'' è possibile creare un libro di pagine wiki a scelta. È possibile esportare il libro in diversi formati (per esempio PDF o ODF) o ordinare una copia stampata.",
+	'coll-book_mode_help' => 'Vedi [[{{MediaWiki:Coll-helppage}}]] per maggiori informazioni.',
+	'coll-start_book_mode' => 'Inizia modalità libro',
+	'coll-book_mode_text_article' => 'Testo modalità libro',
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libri',
 	'coll-exclusion_category_title' => 'Escludi dalla stampa',
@@ -3538,6 +3561,10 @@ Note:
  */
 $messages['ja'] = array(
 	'coll-desc' => '[[Special:Book|ブックを作成する]]',
+	'coll-book_mode_intro' => '「ブックモード」では任意のウィキページから成るブックを作成することができます。ブックは様々なフォーマット（例えば PDF や ODF）でエクスポートしたり、印刷したコピーを注文したりできます。',
+	'coll-book_mode_help' => '詳しい情報は[[{{MediaWiki:Coll-helppage}}]]を参照してください。',
+	'coll-start_book_mode' => 'ブックモードを開始',
+	'coll-book_mode_text_article' => 'ブックモード本文',
 	'coll-collection' => 'ブック',
 	'coll-collections' => 'ブック',
 	'coll-exclusion_category_title' => '印刷から除外',
@@ -4035,10 +4062,10 @@ $messages['krj'] = array(
  */
 $messages['ksh'] = array(
 	'coll-desc' => '[[Special:Book|Böösher ußjäve]]',
-	'coll-create_a_book_title' => "== Et Bööschermaache es ''enjeschalldt'' ==",
-	'coll-create_a_book_continue' => 'Wigger',
-	'coll-create_a_book_exit' => 'Ophüüre',
-	'coll-create_a_book_text_article' => 'E_Booch_Maache',
+	'coll-book_mode_intro' => 'Mem \'\'Booch Maache\'\' kanns De e Booch uß alle mööschesche Sigge uss_em Wiki zosammeshtelle. Ding Booch kanns De en ongerscheidlijje Fommaate (för e Beishpöll als <i lang="en">PDF</i> udder <i lang="en">ODF</i>) expoteere udder jedröck beshtelle.',
+	'coll-book_mode_help' => 'Loor op dä Sigg [[{{MediaWiki:Coll-helppage}}]] wann De mieh weße wells.',
+	'coll-start_book_mode' => 'Et Booch Maache bejenne',
+	'coll-book_mode_text_article' => 'E Booch Maache',
 	'coll-collection' => 'Booch',
 	'coll-collections' => 'Bööscher',
 	'coll-exclusion_category_title' => 'Nit met drokke',
@@ -4154,7 +4181,7 @@ Don dat enem Wikki-Köbes obb et Bruut schmiere.',
  */
 $messages['kw'] = array(
 	'coll-rename' => 'Dashenwel',
-	'coll-cancel' => 'Hedhi',
+	'coll-cancel' => 'Hedhy',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -5148,6 +5175,9 @@ Kontakt din MediaWiki-administrator.',
  */
 $messages['oc'] = array(
 	'coll-desc' => '[[Special:Book|Crear de libres]]',
+	'coll-book_mode_intro' => "Amb lo ''mòde libre'' podètz crear un libre que se compausa de paginas del wiki arbitràrias. Podètz exportar vòstre libre en diferents formats (per exemple PDF o ODF) o comandar una còpia estampada.",
+	'coll-book_mode_help' => "Vejatz [[{{MediaWiki:Coll-helppage}}]] per mai d'entresenhas.",
+	'coll-start_book_mode' => 'Aviar lo mòde libre',
 	'coll-collection' => 'Libre',
 	'coll-collections' => 'Libres',
 	'coll-exclusion_category_title' => "Exclaure al moment de l'estampatge",
@@ -5795,10 +5825,10 @@ $messages['roa-tara'] = array(
  */
 $messages['ru'] = array(
 	'coll-desc' => '[[Special:Book|Создаёт книги]]',
-	'coll-create_a_book_title' => "== Режим создания книг ''включён'' ==",
-	'coll-create_a_book_continue' => 'Продолжить',
-	'coll-create_a_book_exit' => 'Выйти',
-	'coll-create_a_book_text_article' => 'Создать_книгу',
+	'coll-book_mode_intro' => 'В режиме «книга» вы можете создать книгу, состоящую из произвольных вики-страниц. Вы можете экспортировать ваши книги в какой-либо из форматов (например, PDF или ODF), или заказать печатную копию.',
+	'coll-book_mode_help' => 'Более подробно см. [[{{MediaWiki:Coll-helppage}}]].',
+	'coll-start_book_mode' => 'Начать режим книги',
+	'coll-book_mode_text_article' => 'Текст режима книги',
 	'coll-collection' => 'Книга',
 	'coll-collections' => 'Книги',
 	'coll-exclusion_category_title' => 'Исключения из печати',
