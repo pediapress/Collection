@@ -44,7 +44,8 @@ $messages['en'] = array(
 	'coll-noscript_text'              => '<h1>JavaScript is required!</h1>
 <strong>Your browser does not support JavaScript or JavaScript has been turned off.
 This page will not work correctly, unless JavaScript is enabled.</strong>',
-	'coll-intro_text'                 => "Create and manage your individual selection of wiki pages.<br />See [[{{MediaWiki:Coll-helppage}}]] for more information.",
+	'coll-intro_text'                 => "Create and manage your individual selection of wiki pages.<br />
+See [[{{MediaWiki:Coll-helppage}}]] for more information.",
 	'coll-savedbook_template'         => 'saved_book',
 	'coll-your_book'                  => 'Your book',
 	'coll-download_title'             => 'Download',
@@ -118,8 +119,10 @@ Notes:
 	'coll-notfound_title'             => 'Book not found',
 	'coll-notfound_text'              => 'Could not find book page.',
 	'coll-download_notfound_title'    => 'File not found',
-	'coll-download_notfound_text'     => 'The file you are trying to download does not exist: Maybe it has been deleted and needs to be regenerated.',
-	'coll-is_cached'                  => '<ul><li>A cached version of the document has been found, so no rendering was necessary. <a href="$1">Force re-rendering.</a></li></ul>',
+	'coll-download_notfound_text'     => 'The file you are trying to download does not exist:
+Maybe it has been deleted and needs to be regenerated.',
+	'coll-is_cached'                  => '<ul><li>A cached version of the document has been found, so no rendering was necessary.
+<a href="$1">Force re-rendering.</a></li></ul>',
 	'coll-excluded-templates'         => '* Templates in category [[:Category:$1|$1]] have been excluded.',
 	'coll-blacklisted-templates'      => '* Templates on blacklist [[:$1]] have been excluded.',
 	'coll-return_to_collection'       => '<p>Return to <a href="$1">$2</a></p>',
