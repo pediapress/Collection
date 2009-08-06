@@ -356,30 +356,27 @@ class CollectionHooks {
 		);
 
 		$numArticles = CollectionSession::countArticles();
-		if ( $numArticles > 0 ) {
-			$html .= $sk->link(
-				SpecialPage::getTitleFor( 'Book' ),
-				Xml::element('img',
-					array(
-						'src' => "$imagePath/silk-book_open.png",
-						'alt' => '',
-						'width' => '16',
-						'height' => '16',
-						'style' => 'vertical-align: text-bottom',
-					)
+		$html .= $sk->link(
+			SpecialPage::getTitleFor( 'Book' ),
+			Xml::element('img',
+				array(
+					'src' => "$imagePath/silk-book_open.png",
+					'alt' => '',
+					'width' => '16',
+					'height' => '16',
+					'style' => 'vertical-align: text-bottom',
 				)
-				. '&nbsp;' . wfMsgHtml( 'coll-show_collection' )
-					. ' (' . wfMsgHtml( 'coll-n_pages', $numArticles ) . ')',
-				array( 
-					'rel' => 'nofollow',
-					'title' => wfMsg( 'coll-show_collection_tooltip' ),
-					'style' => 'margin-left: 10px',
-				),
-				array(),
-				array( 'known', 'noclasses' )
-			);
-		}
-
+			)
+			. '&nbsp;' . wfMsgHtml( 'coll-show_collection' )
+				. ' (' . wfMsgHtml( 'coll-n_pages', $numArticles ) . ')',
+			array(
+				'rel' => 'nofollow',
+				'title' => wfMsg( 'coll-show_collection_tooltip' ),
+				'style' => 'margin-left: 10px',
+			),
+			array(),
+			array( 'known', 'noclasses' )
+		);
 
 		return $html;
 	}
