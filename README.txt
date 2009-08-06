@@ -118,6 +118,15 @@ Installation and Configuration of the Collection Extension
 
      $ mw-render --list-writers
 
+	*$wgCollectionPortletFormats (array)*
+	 An array containing formats (keys in $wgCollectionFormats) that shall be
+	 displayed as "Download as XYZ" links in the "Print/export" portlet.
+	 The default value is::
+
+	     array( 'pdf' );
+
+	 i.e. there's one link "Download as PDF".
+
   *$wgCollectionArticleNamespaces (array)*
    List of namespace numbers for pages which can be added to a collection.
    Category pages (NS_CATEGORY) are always an exception (all articles in a

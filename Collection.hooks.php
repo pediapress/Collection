@@ -65,6 +65,7 @@ class CollectionHooks {
 		global $wgUser;
 		global $wgCollectionArticleNamespaces;
 		global $wgCollectionFormats;
+		global $wgCollectionPortletFormats;
 		global $wgScriptPath;
 		
 		$namespace = $wgTitle->getNamespace();
@@ -110,16 +111,16 @@ class CollectionHooks {
 			}
 		}
 
-		foreach ( $wgCollectionFormats as $writer => $name ) {
+		foreach ( $wgCollectionPortletFormats as $writer ) {
 			$params['writer'] = $writer;
 			$out .= Xml::tags( 'li',
 				array( 'id' => 'coll-download-as-' . $writer ),
 				$sk->link(
 					SpecialPage::getTitleFor( 'Book', 'render_article/' ),
-					wfMsgHtml( 'coll-download_as', htmlspecialchars( $name ) ),
+					wfMsgHtml( 'coll-download_as', htmlspecialchars( $wgCollectionFormats[$writer] ) ),
 					array(
 						'rel' => 'nofollow',
-						'title' => wfMsg( 'coll-download_as_tooltip', $name )
+						'title' => wfMsg( 'coll-download_as_tooltip', $wgCollectionFormats[$writer] )
 					),
 					$params,
 					array( 'known', 'noclasses' )
