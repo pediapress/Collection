@@ -26,7 +26,7 @@ $messages = array();
 $messages['en'] = array(
 	'coll-desc'                       => '[[Special:Book|Create books]]',
 	'coll-book_mode_intro'            => "With the ''book mode'' you can create a book consisting of arbitrary wiki pages. You can export your book in different formats (for example PDF or ODF) or order a printed copy.",
-	'coll-book_mode_help'             => 'See [[{{MediaWiki:Coll-helppage}}]] for more information.',
+	'coll-book_mode_help'             => 'See [[{{MediaWiki:Coll-helppage}}|the help page about books]] for more information.',
 	'coll-start_book_mode'            => 'Start book mode',
 	'coll-book_mode_text_article'     => 'Book mode text',
 	'coll-collection'                 => 'Book',
@@ -45,7 +45,7 @@ $messages['en'] = array(
 <strong>Your browser does not support JavaScript or JavaScript has been turned off.
 This page will not work correctly, unless JavaScript is enabled.</strong>',
 	'coll-intro_text'                 => "Create and manage your individual selection of wiki pages.<br />
-See [[{{MediaWiki:Coll-helppage}}]] for more information.",
+See [[{{MediaWiki:Coll-helppage}}|the help page about books]] for more information.",
 	'coll-savedbook_template'         => 'saved_book',
 	'coll-your_book'                  => 'Your book',
 	'coll-download_title'             => 'Download',
