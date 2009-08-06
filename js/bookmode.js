@@ -24,7 +24,6 @@
 function refreshBookModeBox(hint, oldid) {
   sajax_request_type = 'GET';
   sajax_do_call('wfAjaxCollectionGetBookModeBoxContent', [hint, oldid], function(xhr) {
-		console.log('connten:', xhr.reponseText);
     document.getElementById('coll-book_mode_box').innerHTML = xhr.responseText;
     if (hint && typeof wgCollectionAddRemoveState != 'undefined') {
       wgCollectionAddRemoveState = hint;
@@ -36,7 +35,6 @@ function refreshBookModeBox(hint, oldid) {
 }
 
 function collectionCall(func, args) {
-console.log('call');
   var hint = args.shift();
   sajax_request_type = 'POST';
   sajax_do_call('wfAjaxCollection' + func, args, function(xhr) {
