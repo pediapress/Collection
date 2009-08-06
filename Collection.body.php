@@ -321,7 +321,7 @@ class SpecialCollection extends SpecialPage {
 			)
 		);
 
-		$title_string = wfMsg( 'coll-book_mode_text_article' );
+		$title_string = wfMsgForContent( 'coll-book_mode_text_article' );
 		$t = Title::newFromText( $title_string );
 		if ( !is_null($t) ) {
 			$a = new Article( $t );
