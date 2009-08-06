@@ -254,7 +254,7 @@ class CollectionHooks {
 			)
 			. ' ('
 			. $sk->link(
-				SpecialPage::getTitleFor( 'Book', 'stop_create_mode/' ),
+				SpecialPage::getTitleFor( 'Book', 'stop_book_mode/' ),
 				wfMsgHtml( 'coll-disable' ),
 				array(
 					'rel' => 'nofollow',
