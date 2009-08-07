@@ -374,7 +374,7 @@ $messages['de'] = array(
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
-	'coll-add_category' => 'Diese Kategorie Ihrem Buch hinzufügen',
+	'coll-add_category' => 'Alle Seiten aus dieser Kategorie Ihrem Buch hinzufügen',
 	'coll-add_category_popup' => 'Wikiseiten in verlinkter Kategorie zu Ihrem Buch hinzufügen',
 	'coll-add_category_tooltip' => 'Alle Wikiseiten dieser Kategorie Ihrem Buch hinzufügen',
 	'coll-add_this_page' => 'Diese Seite zu Ihrem Buch hinzufügen',
@@ -567,26 +567,37 @@ $messages['fa'] = array(
 );
 
 /** Finnish (Suomi)
+ * @author Cimon Avaro
  * @author Crt
  * @author Str4nd
  */
 $messages['fi'] = array(
+	'coll-print_export' => 'Tulosta tai vie',
 	'coll-create_a_book' => 'Luo kirja',
+	'coll-create_a_book_tooltip' => 'Luo kirja tai sivukokoelma',
+	'coll-book_mode' => 'Kirjatila',
 	'coll-download_as' => 'Lataa $1-tiedostona',
-	'coll-add_category' => 'Lisää luokkaan',
+	'coll-download_as_tooltip' => 'Lataa tämä wikisivu $1-muodossa',
+	'coll-disable' => 'poistettu käytöstä',
+	'coll-disable_tooltip' => 'Poista käytöstä kirjan luontitila',
+	'coll-add_category' => 'Lisää tämä luokka kirjaasi',
 	'coll-add_category_popup' => 'Lisää kaikki sivut kirjaasi linkitetystä luokasta',
 	'coll-add_category_tooltip' => 'Lisää kaikki wikisivut kirjaasi tästä luokasta',
+	'coll-add_this_page' => 'Lisää tämä sivu kirjaasi',
 	'coll-add_page_popup' => 'Lisää linkitetty wikisivu kirjaasi',
 	'coll-add_page_tooltip' => 'Lisää nykyinen wikisivu kirjaasi',
 	'coll-bookscategory' => 'Kirjat',
 	'coll-clear_collection' => 'Tyhjennä kirja',
 	'coll-clear_collection_confirm' => 'Haluatko varmasti tyhjentää kirjasi?',
 	'coll-clear_collection_tooltip' => 'Poista kaikki wikisivut nykyisestä kirjastasi',
+	'coll-help' => 'Ohje',
+	'coll-help_tooltip' => 'Näytä ohje kirjojen luonnista',
 	'coll-helppage' => 'Help:Kirjat',
 	'coll-load_collection' => 'Lataa kirja',
 	'coll-load_collection_tooltip' => 'Lataa tämä kirja nykyiseksi kirjaksesi',
 	'coll-n_pages' => '$1 {{PLURAL:$1|sivu|sivua}}',
 	'coll-printable_version_pdf' => 'PDF-versio',
+	'coll-remove_this_page' => 'Poista tämä sivu kirjastasi',
 	'coll-remove_page_popup' => 'Poista linkitetty wikisivu kirjastasi',
 	'coll-remove_page_tooltip' => 'Poista nykyinen wikisivu kirjastasi',
 	'coll-show_collection' => 'Näytä kirja',
@@ -819,11 +830,14 @@ $messages['hsb'] = array(
 /** Hungarian (Magyar)
  * @author Bdamokos
  * @author Dani
+ * @author Glanthor Reviol
  */
 $messages['hu'] = array(
+	'coll-print_export' => 'Nyomtatás/exportálás',
 	'coll-create_a_book' => 'Könyv készítése',
 	'coll-download_as' => 'Letöltés mint $1',
-	'coll-add_category' => 'Kategória hozzáadása',
+	'coll-disable' => 'letiltás',
+	'coll-add_category' => 'Kategória hozzáadása a könyvedhez',
 	'coll-add_category_popup' => 'A hivatkozott kategória lapjainak hozzáadása a könyvhöz',
 	'coll-add_category_tooltip' => 'Ezen kategória összes lapjának hozzáadása a könyvhöz',
 	'coll-add_page_popup' => 'A hivatkozott lap hozzáadása a könyvhöz',
@@ -832,6 +846,7 @@ $messages['hu'] = array(
 	'coll-clear_collection' => 'Könyv kiürítése',
 	'coll-clear_collection_confirm' => 'Valóban törölni szeretnéd a könyved?',
 	'coll-clear_collection_tooltip' => 'Az összes lap eltávolítása a kiválasztott könyvből',
+	'coll-help' => 'Segítség',
 	'coll-helppage' => 'Help:Könyvek',
 	'coll-load_collection' => 'Könyv betöltése',
 	'coll-load_collection_tooltip' => 'Könyv betöltése kiválasztott könyvként',
@@ -1165,9 +1180,11 @@ $messages['lb'] = array(
 	'coll-print_export' => 'Drécken/exportéieren',
 	'coll-create_a_book' => 'E Buch uleeën',
 	'coll-create_a_book_tooltip' => 'E Buch oder eng Sammlung vun Artikelen uleeën',
+	'coll-book_mode' => 'Buchmodus',
 	'coll-download_as' => 'Als $1 eroflueden',
 	'coll-download_as_tooltip' => 'Eng $1 Versioun vun dëser Wiki-Säit eroflueden',
 	'coll-disable' => 'Ausschalten',
+	'coll-disable_tooltip' => 'De Modus fir a Buch unzeleeën ausschalten',
 	'coll-add_category' => 'Dës Kategorie an Ärt Buch derbäisetzen',
 	'coll-add_category_popup' => 'Wikisäiten a verlinkte Kategorien an Ärt Buch derbäisetzen',
 	'coll-add_category_tooltip' => 'All Wiki-Säiten aus dëser Kategorie an Ärt Buch derbäisetzen',
@@ -1328,10 +1345,13 @@ $messages['nl'] = array(
 	'coll-create_a_book_tooltip' => 'Boek of paginacollectie',
 	'coll-book_mode' => 'Boekmodus',
 	'coll-download_as' => 'Downloaden als $1',
+	'coll-download_as_tooltip' => 'Een $1-versie van deze wikipagina downloaden',
 	'coll-disable' => 'uitschakelen',
+	'coll-disable_tooltip' => 'Boekaanmaakmodus uitschakelen',
 	'coll-add_category' => 'Deze categorie aan uw boek toevoegen',
 	'coll-add_category_popup' => "Wikipagina's uit de gekoppelde categorie aan uw boek toevoegen",
 	'coll-add_category_tooltip' => "Alle pagina's in deze categorie aan uw boek toevoegen",
+	'coll-add_this_page' => 'Deze pagina aan uw boek toevoegen',
 	'coll-add_page_popup' => 'Gekoppelde wikipagina aan uw boek toevoegen',
 	'coll-add_page_tooltip' => 'De huidige wikipagina aan uw boek toevoegen',
 	'coll-bookscategory' => 'Boeken',
@@ -1467,22 +1487,32 @@ $messages['pdc'] = array(
  * @author Sp5uhe
  */
 $messages['pl'] = array(
+	'coll-print_export' => 'Drukuj lub eksportuj',
 	'coll-create_a_book' => 'Utwórz książkę',
+	'coll-create_a_book_tooltip' => 'Tworzenie książki lub kolekcji stron',
+	'coll-book_mode' => 'Tryb książki',
 	'coll-download_as' => 'Pobierz jako $1',
-	'coll-add_category' => 'Dodaj kategorię',
+	'coll-download_as_tooltip' => 'Pobierz wersję $1 tej strony wiki',
+	'coll-disable' => 'wyłącz',
+	'coll-disable_tooltip' => 'Wyłącz tryb tworzenia książki',
+	'coll-add_category' => 'Dodaj tę kategorię do książki',
 	'coll-add_category_popup' => 'Dodaj strony wiki w linkowanej kategorii do książki',
 	'coll-add_category_tooltip' => 'Dodaj wszystkie strony wiki znajdujące się w tej kategorii do książki',
+	'coll-add_this_page' => 'Dodaj tę stronę do książki',
 	'coll-add_page_popup' => 'Dodaj linkowaną stronę wiki do książki',
 	'coll-add_page_tooltip' => 'Dodaj bieżącą stronę wiki do książki',
 	'coll-bookscategory' => 'Książki',
 	'coll-clear_collection' => 'Wyczyść książkę',
 	'coll-clear_collection_confirm' => 'Czy jesteś pewien, że chcesz wyczyścić całą zawartość książki?',
 	'coll-clear_collection_tooltip' => 'Usuń wszystkie strony wiki z bieżącej książki',
+	'coll-help' => 'Pomoc',
+	'coll-help_tooltip' => 'Pokaż pomoc na temat tworzenia książek',
 	'coll-helppage' => 'Help:Książki',
 	'coll-load_collection' => 'Załaduj książkę',
 	'coll-load_collection_tooltip' => 'Załaduj tę książkę jako bieżącą',
 	'coll-n_pages' => '$1 {{PLURAL:$1|strona|strony|stron}}',
 	'coll-printable_version_pdf' => 'Wersja PDF',
+	'coll-remove_this_page' => 'Usuń tę stronę z książki',
 	'coll-remove_page_popup' => 'Usuń linkowaną stronę wiki z książki',
 	'coll-remove_page_tooltip' => 'Usuń bieżącą stronę wiki z książki',
 	'coll-show_collection' => 'Pokaż książkę',
@@ -1585,9 +1615,11 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'coll-create_a_book' => "Ccreje 'nu libbre",
-	'coll-add_category' => "Aggiunge 'na categorije",
+	'coll-disable' => 'disabbilete',
+	'coll-add_category' => "Aggiunge sta categorije jndr'à 'u libbre tue",
 	'coll-bookscategory' => 'Libbre',
 	'coll-clear_collection' => "Pulizze 'u libbre",
+	'coll-help' => 'Aijute',
 	'coll-helppage' => 'Help:Libbre',
 	'coll-load_collection' => "Careche 'nu libbre",
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàgene|pàggene}}',
@@ -1640,11 +1672,12 @@ $messages['sah'] = array(
 	'coll-print_export' => 'Бэчээт/Экспорт',
 	'coll-create_a_book' => 'Кинигэни айарга',
 	'coll-create_a_book_tooltip' => 'Кинигэни эбэтэр ыстатыйалар хомуурунньуктарын айыы',
+	'coll-book_mode' => 'Кинигэ режимэ',
 	'coll-download_as' => 'Маннык $1 киллэр',
 	'coll-download_as_tooltip' => 'Бу биики-сирэй $1 барылын хачайдаан ылыы',
 	'coll-disable' => 'араарыы',
 	'coll-disable_tooltip' => 'Кинигэни айыы режимин араарыы',
-	'coll-add_category' => 'Категория эбии',
+	'coll-add_category' => 'Бу категорияны кинигэҕэр эбии',
 	'coll-add_category_popup' => 'Сигэнэр категорияттан сирэйдэри кинигэҕэ киллэр',
 	'coll-add_category_tooltip' => 'Бу категория биики сирэйдэрин кинигэҕэ киллэр',
 	'coll-add_this_page' => 'Бу сирэйи кинигэҕэр киллэр',
