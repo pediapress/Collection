@@ -137,6 +137,7 @@ class CollectionHooks {
 	 * Callback for hook SiteNoticeAfter
 	 */
 	static function renderBookModeBox( &$siteNotice ) {
+		global $wgArticle;
 		global $wgCollectionArticleNamespaces;
 		global $wgCollectionNavPopups;
 		global $wgCollectionStyleVersion;
@@ -149,9 +150,11 @@ class CollectionHooks {
 
 		$namespace = $wgTitle->getNamespace();
 
-		if ( $wgRequest->getVal( 'action', 'view' ) != 'view' ) {
+		$action = $wgRequest->getVal('action');
+		if( $action != '' && $action != 'view' && $action != 'purge' ) {
 			return true;
 		}
+
 		if ( !in_array( $namespace, $wgCollectionArticleNamespaces )
 			&& $namespace != NS_CATEGORY ) {
 			return true;
@@ -168,6 +171,10 @@ class CollectionHooks {
 		$jsPath = "$wgScriptPath/extensions/Collection/js";
 		$imagePath = "$wgScriptPath/extensions/Collection/images";
 		$ptext = $wgTitle->getPrefixedText();
+		$oldid = $wgArticle->getOldID();
+		if ( !$oldid  || $oldid == $wgArticle->getLatest() ) {
+			$oldid = 0;
+		} 
 		$html = '';
 
 		$html .= Xml::element( 'script', 
@@ -180,6 +187,13 @@ class CollectionHooks {
 		
 		// activate popup check:
 		if ( $wgCollectionNavPopups ) {
+			if ( $namespace == NS_CATEGORY ) {
+				$addRemoveState = 'addcategory';
+			} else if ( CollectionSession::findArticle( $ptext, $oldid ) == -1 ) {
+				$addRemoveState = 'addarticle';
+			} else {
+				$addRemoveState = 'removearticle';
+			}
 			$html .= Skin::makeVariablesScript(
 				array(
 					'wgCollectionNavPopupJSURL' => "$jsPath/Gadget-popups.js?$wgCollectionStyleVersion",
@@ -188,7 +202,7 @@ class CollectionHooks {
 					'wgCollectionAddCategoryText' => wfMsg( 'coll-add_category_popup' ),
 					'wgCollectionRemovePageText' => wfMsg( 'coll-remove_page_popup' ),
 					'wgCollectionArticleNamespaces' => $wgCollectionArticleNamespaces,
-					'wgCollectionAddRemoveState' => null,
+					'wgCollectionAddRemoveState' => $addRemoveState,
 				)
 			);
 			$html .= Xml::element( 'script',
@@ -272,7 +286,7 @@ class CollectionHooks {
 				'id' => 'coll-book_mode_box',
 				'style' => 'margin-bottom: 0.2em;',
 			),
-			self::getBookModeBoxContent()
+			self::getBookModeBoxContent( $addRemoveState, $oldid )
 	 	);
 
 		$html .= Xml::closeElement( 'div' );
@@ -293,7 +307,7 @@ class CollectionHooks {
 		$namespace = $wgTitle->getNamespace();
 		$ptext = $wgTitle->getPrefixedText();
 
-		if ( !is_null( $wgArticle ) ) {
+		if ( is_null( $oldid) && !is_null( $wgArticle ) ) {
 			$oldid = $wgArticle->getOldID();
 			if ( !$oldid  || $oldid == $wgArticle->getLatest() ) {
 				$oldid = 0;
