@@ -527,6 +527,7 @@ $messages['ast'] = array(
  */
 $messages['be-tarask'] = array(
 	'coll-desc' => '[[Special:Book|Стварэньне кніг]]',
+	'coll-book_mode_intro' => "У ''рэжыме кнігі'' Вы можаце стварыць кнігу, якая будзе складацца з выбраных вікі-старонак. Вы можаце экспартаваць Вашу кнігу ў розныя фарматы (напрыклад, PDF альбо ODF) альбо замовіць друкаваную копію.",
 	'coll-book_mode_help' => 'Дадатковую інфармацыю глядзіце на [[{{MediaWiki:Coll-helppage}}]].',
 	'coll-start_book_mode' => 'Пачаць рэжым кнігі',
 	'coll-book_mode_text_article' => 'Тэкст рэжыму кнігі',
@@ -1223,7 +1224,8 @@ Hinweise:
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
-	'coll-book_mode_intro' => "Mit dem ''Buchmodus'' können Sie ein Buch aus willkürlichen Wikiseiten erstellen. Sie können das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.",
+	'coll-book_mode_intro' => "Mit dem ''Buchmodus'' können Sie ein Buch aus beliebigen Wikiseiten erstellen.
+Sie können das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.",
 	'coll-noscript_text' => '<h1>JavaScript wird benötigt!</h1>
 <strong>Ihr Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
 Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong>',
@@ -1264,7 +1266,7 @@ Hinweise:
 $messages['dsb'] = array(
 	'coll-desc' => '[[Special:Book|Knigły napóraś]]',
 	'coll-book_mode_intro' => "Z ''modusom knigłow'' móžoš knigły napóraś, kótarež wobstoje z pśipadnych bokow. Móžoš swóje knigły w rozdźělnych formatach eksportěrowaś (na pśikład PDF abo ODF) abo śišćanu kopiju skazaś.",
-	'coll-book_mode_help' => 'Glědaj [[{{MediaWiki:Coll-helppage}}]] za dalšne informacije.',
+	'coll-book_mode_help' => 'Glědaj [[{{MediaWiki:Coll-helppage}}|bok pomocy wó knigłach]] za dalšne informacije.',
 	'coll-start_book_mode' => 'Modus knigłow startowaś',
 	'coll-book_mode_text_article' => 'Tekst modusa knigłow',
 	'coll-collection' => 'Knigły',
@@ -1281,7 +1283,8 @@ $messages['dsb'] = array(
 	'coll-noscript_text' => '<h1>JavaScript jo trěbny!</h1>
 <strong>Twój wobglědowak njepódpěrujo JavaScript abo JavaScript jo znjemóžnjony.
 Toś ten bok njebuźo pšawje funkcioněrowaś, tak dłujko až JavaScript njejo zmóžnjony.</strong>',
-	'coll-intro_text' => 'Napóraj a zastoj swój indiwiduelny wuběrk wikijowych bokow.<br />Glědaj [[{{MediaWiki:Coll-helppage}}]] ta dalšne informacije.',
+	'coll-intro_text' => 'Napóraj a zastoj swój indiwiduelny wuběrk wikijowych bokow.<br />
+Glědaj [[{{MediaWiki:Coll-helppage}}|bok pomocy wó knigłach]] za dalšne informacije.',
 	'coll-savedbook_template' => 'składowane_knigły',
 	'coll-your_book' => 'Twóje knigły',
 	'coll-download_title' => 'Ześěgnuś',
@@ -1977,6 +1980,10 @@ $messages['fa'] = array(
  */
 $messages['fi'] = array(
 	'coll-desc' => '[[Special:Book|Laadi kirjoja]].',
+	'coll-book_mode_intro' => "''Kirjatilassa'' voit luoda kirjan, joka koostuu haluamistasi wikisivuista. Voit viedä kirjasi eri muodoissa (esimerkiksi PDF- tai ODF-tiedostona) tai tilata sen painettuna.",
+	'coll-book_mode_help' => 'Katso sivulta [[{{MediaWiki:Coll-helppage}}]] lisätietoja.',
+	'coll-start_book_mode' => 'Käynnistä kirjatila',
+	'coll-book_mode_text_article' => 'Kirjatilan teksti',
 	'coll-collection' => 'Kirja',
 	'coll-collections' => 'Kirjat',
 	'coll-exclusion_category_title' => 'Tulosteesta poisjätettävät',
@@ -1985,9 +1992,9 @@ $messages['fi'] = array(
 	'coll-unknown_subpage_title' => 'Tuntematon alasivu',
 	'coll-unknown_subpage_text' => 'Tätä [[Special:Book|kirjan]] alasivua ei ole olemassa',
 	'coll-couldnotaddarticle_title' => 'Wikisivua ei voitu lisätä',
-	'coll-couldnotaddarticle_msg' => 'Wikisivua ei voi lisätä.',
+	'coll-couldnotaddarticle_msg' => 'Wikisivua ei voitu lisätä.',
 	'coll-couldnotremovearticle_title' => 'Wikisivua ei voitu poistaa',
-	'coll-couldnotremovearticle_msg' => 'Wikisivua ei voi poistaa.',
+	'coll-couldnotremovearticle_msg' => 'Wikisivua ei voitu poistaa.',
 	'coll-noscript_text' => '<h1>Vaatii toimiakseen JavaScriptin</h1>
 <strong>Selaimesi ei tue JavaScriptiä tai JavaScript on poistettu käytöstä.
 Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
@@ -2030,7 +2037,8 @@ Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
 	'coll-community_collection_label' => 'Yhteinen kirja:',
 	'coll-save_collection' => 'Tallenna kirja',
 	'coll-save_category' => 'Kirjat lisätään luokkaan [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
-	'coll-overwrite_title' => 'Sivu on olemassa. Ylikirjoitetaanko?',
+	'coll-overwrite_title' => 'Sivu on olemassa.
+Korvataanko?',
 	'coll-overwrite_text' => 'Sivu nimellä [[:$1]] on jo olemassa.
 Haluatko korvata sen kokoelmallasi?',
 	'coll-yes' => 'Kyllä',
@@ -2099,7 +2107,7 @@ Ota yhteys MediaWiki-ylläpitäjääsi.',
 $messages['fr'] = array(
 	'coll-desc' => 'Permet de [[Special:Book|créer des livres]]',
 	'coll-book_mode_intro' => "Avec le ''mode livre'' vous pouvez créer un livre se composant de pages du wiki arbitraires. Vous pouvez exporter votre livre en différents formats (par exemple PDF or ODF) ou commander une copie imprimée.",
-	'coll-book_mode_help' => "Voyez [[{{MediaWiki:Coll-helppage}}]] pour plus d'informations.",
+	'coll-book_mode_help' => "Voir [[{{MediaWiki:Coll-helppage}}|l‘aide sur les livres]] pour plus d'informations.",
 	'coll-start_book_mode' => 'Démarrer le mode livre',
 	'coll-book_mode_text_article' => 'Texte du mode livre',
 	'coll-collection' => 'Livre',
@@ -2116,7 +2124,8 @@ $messages['fr'] = array(
 	'coll-noscript_text' => '<h1>Javascript est nécessaire !</h1>
 <strong>Votre navigateur ne supporte pas Javascript ou bien vous l’avez désactivé.
 Cette page ne fonctionnera pas correctement tant que Javascript n’est pas activé.</strong>',
-	'coll-intro_text' => "Créez et gérez votre sélection individuelle de pages wiki.<br />Consultez la [[{{MediaWiki:Coll-helppage}}|page d'aide sur les collections]] pour plus d’informations.",
+	'coll-intro_text' => 'Créez et gérez votre sélection individuelle de pages wiki.<br />
+Consultez la [[{{MediaWiki:Coll-helppage}}|page d‘aide sur les collections]] pour plus d’informations.',
 	'coll-savedbook_template' => 'Livre sauvegardé',
 	'coll-your_book' => 'Votre livre',
 	'coll-download_title' => 'Télécharger',
@@ -2840,7 +2849,7 @@ Molimo kontaktirajte svog MediaWiki administratora.',
 $messages['hsb'] = array(
 	'coll-desc' => '[[Special:Book|Knihi wutworić]]',
 	'coll-book_mode_intro' => "Přez ''knižny modus'' móžeš knihu wutworić, kotraž ze samowólnych wikijowych stronow wobsteji. Móžeš swoju knihu w rozdźělnych formatach eksportować (na přikład PDF abo ODF) abo sej ćišćanu kopiju žadać.",
-	'coll-book_mode_help' => 'Hlej [[{{MediaWiki:Coll-helppage}}]] za dalše informacije.',
+	'coll-book_mode_help' => 'Hlej [[{{MediaWiki:Coll-helppage}}|stronu pomocy wo knihach]] za dalše informacije.',
 	'coll-start_book_mode' => 'Knižny modus startować',
 	'coll-book_mode_text_article' => 'Tekst knižneho modusa',
 	'coll-collection' => 'Kniha',
@@ -2857,7 +2866,8 @@ $messages['hsb'] = array(
 	'coll-noscript_text' => '<h1>JavaScript je trěbny!</h1>
 <strong>Twój wobhladowak njepodpěruje JavaScript abo JavaScript je wupinjeny.
 Tuta strona njebudźe prawje fungować, doniž JavaScript zmóžnjeny njeje.</strong>',
-	'coll-intro_text' => 'Wutwor a zrjaduj swój indiwiduelny wuběr wikijowych stronow.<br />Hlej [[{{MediaWiki:Coll-helppage}}|Pomoc wo zběrkach]] za dalše informacije.',
+	'coll-intro_text' => 'Wutwor a zrjaduj swój indiwiduelny wuběr wikijowych stronow.<br />
+Hlej [[{{MediaWiki:Coll-helppage}}|stronu pomocy wo knihach]] za dalše informacije.',
 	'coll-savedbook_template' => 'składowana_kniha',
 	'coll-your_book' => 'Twoja kniha',
 	'coll-download_title' => 'Sćahnyć',
@@ -3565,7 +3575,7 @@ Note:
 $messages['ja'] = array(
 	'coll-desc' => '[[Special:Book|ブックを作成する]]',
 	'coll-book_mode_intro' => '「ブックモード」では任意のウィキページから成るブックを作成することができます。ブックは様々なフォーマット（例えば PDF や ODF）でエクスポートしたり、印刷したコピーを注文したりできます。',
-	'coll-book_mode_help' => '詳しい情報は[[{{MediaWiki:Coll-helppage}}]]を参照してください。',
+	'coll-book_mode_help' => '詳しい情報は[[{{MediaWiki:Coll-helppage}}|ブックに関するヘルプページ]]を参照してください。',
 	'coll-start_book_mode' => 'ブックモードを開始',
 	'coll-book_mode_text_article' => 'ブックモード本文',
 	'coll-collection' => 'ブック',
@@ -3581,7 +3591,8 @@ $messages['ja'] = array(
 	'coll-couldnotremovearticle_msg' => 'このページは削除できませんでした。',
 	'coll-noscript_text' => '<h1>JavaScriptを利用しています！</h1>
 <strong>ご利用のブラウザは JavaScript をサポートしていないか、JavaScript が無効になっています。このページは、JavaScript が有効になっていない場合、正しく動作しません。</strong>',
-	'coll-intro_text' => 'あなただけのウィキページのコレクションを作成・管理できます。<br />詳細は[[{{MediaWiki:Coll-helppage}}]]をご覧ください。',
+	'coll-intro_text' => 'あなただけのウィキページのコレクションを作成・管理できます。<br />
+詳細は[[{{MediaWiki:Coll-helppage}}|ブックに関するヘルプページ]]をご覧ください。',
 	'coll-savedbook_template' => '保存済みブック',
 	'coll-your_book' => 'あなたのブック',
 	'coll-download_title' => 'ダウンロード',
@@ -4192,6 +4203,7 @@ $messages['kw'] = array(
  */
 $messages['lb'] = array(
 	'coll-desc' => '[[Special:Book|Bicher uleeën]]',
+	'coll-book_mode_help' => "Kuckt [[{{MediaWiki:Coll-helppage}}|d'Hëllefsäit iwwer Bicher]] fir méi Informatiounen.",
 	'coll-collection' => 'Buch',
 	'coll-collections' => 'Bicher',
 	'coll-exclusion_category_title' => 'Net mat drécken',
@@ -4206,7 +4218,8 @@ $messages['lb'] = array(
 	'coll-noscript_text' => '<h1>JavaScript gëtt gebraucht!</h1>
 <strong>Äre Browser ënnerstëtzt Java Script net oder JavaScript ass ausgeschalt.
 Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</strong>',
-	'coll-intro_text' => 'Uleeën a geréieren vun ärer individueller Auswiel vu Wiki-Säiten.<br />Kuckt [[{{MediaWiki:Coll-helppage}}]] fir méi Informatiounen.',
+	'coll-intro_text' => "Uleeën a geréieren vun ärer individueller Auswiel vu Wiki-Säiten.<br />
+Kuckt [[{{MediaWiki:Coll-helppage}}|d'Hëllefsäit iwwer Bicher]] fir méi Informatiounen.",
 	'coll-savedbook_template' => 'gespäichert_buch',
 	'coll-your_book' => 'Ärt Buch',
 	'coll-download_title' => 'Eroflueden',
@@ -4837,6 +4850,11 @@ $messages['nds-nl'] = array(
  */
 $messages['nl'] = array(
 	'coll-desc' => '[[Special:Book|Boeken maken]]',
+	'coll-book_mode_intro' => "Via de ''boekmodus'' kunt u een boek aanmaken uit willekeurige wikipagina's.
+U kunt uw boek in verschillende formaten (bijvoorbeeld PDF of ODF) exporteren of een gedrukt exemplaar bestellen.",
+	'coll-book_mode_help' => 'Zie [[{{MediaWiki:Coll-helppage}}|de hulppagina voor boeken]] voor meer informatie.',
+	'coll-start_book_mode' => 'Boekmodus starten',
+	'coll-book_mode_text_article' => 'Boekmodustekst',
 	'coll-collection' => 'Boek',
 	'coll-collections' => 'Boeken',
 	'coll-exclusion_category_title' => 'Weglaten bij afdrukken',
@@ -4851,8 +4869,8 @@ $messages['nl'] = array(
 	'coll-noscript_text' => '<h1>JavaScript is vereist!</h1>
 <strong>Uw browser understeunt geen JavaScript of JavaScript is uitgeschakeld.
 Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong>',
-	'coll-intro_text' => "Maak uw eigen selectie van wikipagina's.<br />
-[[{{MediaWiki:Coll-helppage}}|Meer informatie]].",
+	'coll-intro_text' => "Maak en beheer uw eigen selectie van wikipagina's.<br />
+Zie de [[{{MediaWiki:Coll-helppage}}|de hulppagina voor boeken]] voor meer informatie.",
 	'coll-savedbook_template' => 'opgeslagen_boek',
 	'coll-your_book' => 'Uw boek',
 	'coll-download_title' => 'Downloaden',
@@ -5181,6 +5199,7 @@ $messages['oc'] = array(
 	'coll-book_mode_intro' => "Amb lo ''mòde libre'' podètz crear un libre que se compausa de paginas del wiki arbitràrias. Podètz exportar vòstre libre en diferents formats (per exemple PDF o ODF) o comandar una còpia estampada.",
 	'coll-book_mode_help' => "Vejatz [[{{MediaWiki:Coll-helppage}}]] per mai d'entresenhas.",
 	'coll-start_book_mode' => 'Aviar lo mòde libre',
+	'coll-book_mode_text_article' => 'Tèxte del mòde libre',
 	'coll-collection' => 'Libre',
 	'coll-collections' => 'Libres',
 	'coll-exclusion_category_title' => "Exclaure al moment de l'estampatge",
@@ -5332,6 +5351,9 @@ $messages['pdc'] = array(
  */
 $messages['pl'] = array(
 	'coll-desc' => '[[Special:Book|Utworzenie książki]]',
+	'coll-book_mode_help' => 'Więcej informacji na stronie [[{{MediaWiki:Coll-helppage}}]].',
+	'coll-start_book_mode' => 'Włącz tryb książki',
+	'coll-book_mode_text_article' => 'Tekst trybu książki',
 	'coll-collection' => 'Książka',
 	'coll-collections' => 'Książki',
 	'coll-exclusion_category_title' => 'Omiń w druku',
@@ -5829,7 +5851,7 @@ $messages['roa-tara'] = array(
 $messages['ru'] = array(
 	'coll-desc' => '[[Special:Book|Создаёт книги]]',
 	'coll-book_mode_intro' => 'В режиме «книга» вы можете создать книгу, состоящую из произвольных вики-страниц. Вы можете экспортировать ваши книги в какой-либо из форматов (например, PDF или ODF), или заказать печатную копию.',
-	'coll-book_mode_help' => 'Более подробно см. [[{{MediaWiki:Coll-helppage}}]].',
+	'coll-book_mode_help' => 'Более подробно см. [[{{MediaWiki:Coll-helppage}}|справочную страницу о книгах]].',
 	'coll-start_book_mode' => 'Начать режим книги',
 	'coll-book_mode_text_article' => 'Текст режима книги',
 	'coll-collection' => 'Книга',
@@ -5846,7 +5868,8 @@ $messages['ru'] = array(
 	'coll-noscript_text' => '<h1>Требуется JavaScript!</h1>
 <strong>Ваш браузер не поддерживает JavaScript или данная поддержка была отключена.
 Эта страница не будет работать правильно, если JavaScript не включен.</strong>',
-	'coll-intro_text' => 'Создание и управление вашей персональной коллекцией вики-страниц.<br />Подробнее см. на [[{{MediaWiki:Coll-helppage}}]].',
+	'coll-intro_text' => 'Создание и управление вашей персональной коллекцией вики-страниц.<br />
+Подробнее см. [[{{MediaWiki:Coll-helppage}}|справочную страницу о книгах]].',
 	'coll-savedbook_template' => 'сохранённая_книга',
 	'coll-your_book' => 'Ваша книга',
 	'coll-download_title' => 'Загрузить',
@@ -5944,6 +5967,10 @@ $messages['ru'] = array(
  */
 $messages['sah'] = array(
 	'coll-desc' => '[[Special:Book|Кинигэлэри айар]]',
+	'coll-book_mode_intro' => '"Кинигэ" режимҥэ киирэн ханнык баҕарар биики сирэйдэртэн кинигэ оҥоруохха сөп. Бэйэҕит кинигэлэргитин ханнык эрэ формаакка экспортыаххытын сөп (холобур, PDF эбэтэр ODF), эбэтэр бэчээттэммит барылын сакаастыаххытын сөп.',
+	'coll-book_mode_help' => 'Сиһилии [[{{MediaWiki:Coll-helppage}}| кинигэ туһунан көмө сирэйи]] көр.',
+	'coll-start_book_mode' => 'Кинигэ режимигэр киирии',
+	'coll-book_mode_text_article' => 'Кинигэ режимин тиэкиһэ',
 	'coll-collection' => 'Кинигэ',
 	'coll-collections' => 'Кинигэлэр',
 	'coll-exclusion_category_title' => 'Бэчээккэ ыытыллыбат',
@@ -5957,7 +5984,8 @@ $messages['sah'] = array(
 	'coll-couldnotremovearticle_msg' => 'Бу ыстатыйа сотуллар кыаҕа суох.',
 	'coll-noscript_text' => '<h1>JavaScript ирдэнэр!</h1>
 <strong>Эн брааузерыҥ JavaScript`ы өйөөбөт эбит эбэтэр JavaScript араарыллыбыт. Бу сирэй JavaScript холбоммотох буоллаҕына сөпкө үлэлиэ уонна көстүө суоҕа.</strong>',
-	'coll-intro_text' => 'Биики-сирэйдэр тустаах, эйиэхэ бэйэҕэр эрэ аналлаах, хомуурунньуктарын оҥоруу уонна ону салайыы.<br />Сиһилии манна көр [[{{MediaWiki:Coll-helppage}}]].',
+	'coll-intro_text' => 'Биики-сирэйдэр тустаах, эйиэхэ бэйэҕэр эрэ аналлаах, хомуурунньуктарын оҥоруу уонна ону салайыы.<br />
+Сиһилии манна [[{{MediaWiki:Coll-helppage}}|кинигэ туһунан көмө сирэйгэ]] көр.',
 	'coll-savedbook_template' => 'уларытыыта_бигэргэтиллибит_кинигэ',
 	'coll-your_book' => 'Эн кинигэҥ',
 	'coll-download_title' => 'Хачайдаа',
