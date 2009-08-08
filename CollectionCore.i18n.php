@@ -308,22 +308,32 @@ $messages['cs'] = array(
  * @author Lloffiwr
  */
 $messages['cy'] = array(
+	'coll-print_export' => 'Argraffu/allforio',
 	'coll-create_a_book' => 'Llunio llyfr',
+	'coll-create_a_book_tooltip' => 'Llunio llyfr neu gasgliad o dudalennau',
+	'coll-book_mode' => 'Modd llyfr',
 	'coll-download_as' => 'Islwytho ar ffurf $1',
-	'coll-add_category' => 'Ychwanegu categori',
+	'coll-download_as_tooltip' => "Islwytho fersiwn $1 o'r dudalen wici hon",
+	'coll-disable' => 'anablu',
+	'coll-disable_tooltip' => "Anablu'r modd llunio llyfr",
+	'coll-add_category' => "Ychwanegu'r holl dudalennau yn y categori hwn at eich llyfr",
 	'coll-add_category_popup' => "Ychwanegu'r tudalennau wici yn y categori cysylltiedig at eich llyfr",
 	'coll-add_category_tooltip' => 'Ychwanegu holl dudalennau wici y categori hwn at eich llyfr',
+	'coll-add_this_page' => "Ychwanegu'r dudalen hon at eich llyfr",
 	'coll-add_page_popup' => "Ychwanegu'r dudalen wici cysylltiedig at eich llyfr",
 	'coll-add_page_tooltip' => "Ychwanegu'r dudalen wici presennol at eich llyfr",
 	'coll-bookscategory' => 'Llyfrau',
 	'coll-clear_collection' => "Clirio'r llyfr",
 	'coll-clear_collection_confirm' => "Ydych chi wir am glirio'ch llyfr yn llwyr?",
 	'coll-clear_collection_tooltip' => "Clirio'r holl dudalennau wici o'ch llyfr presennol",
+	'coll-help' => 'Cymorth',
+	'coll-help_tooltip' => 'Dangos y cymorth am lunio llyfr',
 	'coll-helppage' => 'Help:Llyfrau',
 	'coll-load_collection' => 'Llwytho llyfr',
 	'coll-load_collection_tooltip' => "Llwytho'r llyfr hwn fel eich llyfr cyfredol",
 	'coll-n_pages' => '$1 {{PLURAL:$1|tudalen|dudalen|dudalen|tudalen|thudalen|o dudalennau}}',
 	'coll-printable_version_pdf' => 'Fersiwn PDF',
+	'coll-remove_this_page' => "Tynnu'r dudalen hon o'ch llyfr",
 	'coll-remove_page_popup' => "Tynnu'r dudalen wici cysylltiedig o'ch llyfr",
 	'coll-remove_page_tooltip' => "Tynnu'r dudalen wici presennol o'ch llyfr",
 	'coll-show_collection' => 'Dangos y llyfr',
@@ -430,9 +440,11 @@ $messages['dsb'] = array(
  * @author Omnipaedista
  */
 $messages['el'] = array(
+	'coll-print_export' => 'Εκτύπωση/εξαγωγή',
 	'coll-create_a_book' => 'Δημιουργία βιβλίου',
 	'coll-download_as' => 'Κατέβασμα ως $1',
-	'coll-add_category' => 'Προσθήκη κατηγορίας',
+	'coll-disable' => 'απενεργοποίηση',
+	'coll-add_category' => 'Προσθήκη αυτής της κατηγορίας στο βιβλίο σου',
 	'coll-add_category_popup' => 'Προσθήκη των σελίδων της συνδεδεμένης κατηγορίας στο βιβλίο σας',
 	'coll-add_category_tooltip' => 'Προσθήκη όλων των σελίδων της συνδεδεμένης κατηγορίας στο βιβλίο σας',
 	'coll-add_page_popup' => 'Προσθήκη της συνδεδεμένης σελίδας στο βιβλίο σας',
@@ -441,6 +453,7 @@ $messages['el'] = array(
 	'coll-clear_collection' => 'Εκκαθάριση βιβλίου',
 	'coll-clear_collection_confirm' => 'Αλήθεια θέλετε να καθαρίσετε εντελώς το βιβλίο σας;',
 	'coll-clear_collection_tooltip' => 'Αφαίρεση όλων των σελίδων από το παρόν βιβλίο σας',
+	'coll-help' => 'Βοήθεια',
 	'coll-helppage' => 'Help:Βιβλία',
 	'coll-load_collection' => 'Φόρτωση βιβλίου',
 	'coll-load_collection_tooltip' => 'Επιφόρτωση αυτού του βιβλίου ως του τρέχοντός σου βιβλίου',
@@ -534,7 +547,7 @@ $messages['et'] = array(
 $messages['eu'] = array(
 	'coll-create_a_book' => 'Liburu bat sortu',
 	'coll-download_as' => '$1 gisa jaitsi',
-	'coll-add_category' => 'Kategoria gehitu',
+	'coll-add_category' => 'Kategoria hau gehitu zure liburura gehitu',
 	'coll-bookscategory' => 'Liburuak',
 	'coll-clear_collection' => 'Liburua ezabatu',
 	'coll-clear_collection_confirm' => 'Benetan ezabatu nahi al duzu zure liburu osoa?',
@@ -678,7 +691,7 @@ $messages['gl'] = array(
  */
 $messages['grc'] = array(
 	'coll-download_as' => 'Καταφορτίζειν ὡς $1',
-	'coll-add_category' => 'Προστιθέναι κατηγορίαν',
+	'coll-add_category' => 'Προστιθέναι κατηγορίαν εἰς τὸ βιβλίον σου',
 	'coll-bookscategory' => 'Βιβλία',
 	'coll-printable_version_pdf' => 'Ἔκδοσις PDF',
 );
@@ -1523,8 +1536,18 @@ $messages['pl'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'coll-print_export' => 'چاپول/صادرول',
 	'coll-create_a_book' => 'يو کتاب جوړول',
-	'coll-add_category' => 'وېشنيزه ورګډول',
+	'coll-create_a_book_tooltip' => 'يو کتاب يا د مخونو ټولګه جوړول',
+	'coll-download_as' => 'د $1 په ډول ښکته کول',
+	'coll-add_category' => 'دا وېشنيزه په کتاب کې ورګډول',
+	'coll-add_this_page' => 'دا مخ په کتاب کې ورګډول',
+	'coll-bookscategory' => 'کتابونه',
+	'coll-help' => 'لارښود',
+	'coll-helppage' => 'Help:کتابونه',
+	'coll-printable_version_pdf' => 'د PDF په بڼه',
+	'coll-remove_this_page' => 'دا مخ له کتاب نه ليرې کول',
+	'coll-show_collection' => 'کتاب ښکاره کول',
 );
 
 /** Portuguese (Português)
@@ -1705,22 +1728,32 @@ $messages['sah'] = array(
  * @author Helix84
  */
 $messages['sk'] = array(
+	'coll-print_export' => 'Tlačiť/exportovať',
 	'coll-create_a_book' => 'Vytvoriť knihu',
+	'coll-create_a_book_tooltip' => 'Vytvoriť knihu alebo kolekciu stránok',
+	'coll-book_mode' => 'Režim knihy',
 	'coll-download_as' => 'Stiahnuť ako $1',
-	'coll-add_category' => 'Pridať kategóriu',
+	'coll-download_as_tooltip' => 'Stiahnuť verziu $1 tejto wiki stránky',
+	'coll-disable' => 'vypnúť',
+	'coll-disable_tooltip' => 'Vypnúť režim tvorby knihy',
+	'coll-add_category' => 'Pridať túto kategóriu do vašej knihy',
 	'coll-add_category_popup' => 'Pridať do vašej knihy wiki stránky v odkazovanej kategórii',
 	'coll-add_category_tooltip' => 'Pridať všetky stránky wiki v tejto kategórii do vašej knihy',
+	'coll-add_this_page' => 'Pridať túto stránku do vašej knihy',
 	'coll-add_page_popup' => 'Pridať do vašej knihy odkazovanú wiki stránku',
 	'coll-add_page_tooltip' => 'Pridať aktuálnu wiki stránku do vašej knihy',
 	'coll-bookscategory' => 'Knihy',
 	'coll-clear_collection' => 'Vyčistiť knihu',
 	'coll-clear_collection_confirm' => 'Skutočne chcete celkom vyčistiť svoju knihu?',
 	'coll-clear_collection_tooltip' => 'Odstrániť všetky stránky wiki z vašej aktuálnej knihy',
+	'coll-help' => 'Pomocník',
+	'coll-help_tooltip' => 'Zobraziť pomocníka s vytváraním knihy',
 	'coll-helppage' => 'Help:Knihy',
 	'coll-load_collection' => 'Načítať knihu',
 	'coll-load_collection_tooltip' => 'Načítať túto knihu ako vašu aktuálnu knihu',
 	'coll-n_pages' => '$1 {{PLURAL:$1|stránka|stránky|stránok}}',
 	'coll-printable_version_pdf' => 'PDF verzia',
+	'coll-remove_this_page' => 'Odstrániť túto stránku z vašej knihy',
 	'coll-remove_page_popup' => 'Odstrániť z vašej knihy odkazovanú wiki stránku',
 	'coll-remove_page_tooltip' => 'Odstrániť aktuálnu wiki stránku z vašej knihy',
 	'coll-show_collection' => 'Zobraziť knihu',
@@ -1798,6 +1831,7 @@ $messages['su'] = array(
  * @author M.M.S.
  * @author Micke
  * @author Najami
+ * @author Poxnar
  * @author Sannab
  */
 $messages['sv'] = array(
@@ -1812,6 +1846,7 @@ $messages['sv'] = array(
 	'coll-clear_collection' => 'Töm bok',
 	'coll-clear_collection_confirm' => 'Vill du verkligen helt tömma din bok?',
 	'coll-clear_collection_tooltip' => 'Ta bort alla wikisidor från din nuvarande bok',
+	'coll-help' => 'Hjälp',
 	'coll-helppage' => 'Help:Böcker',
 	'coll-load_collection' => 'Hämta bok',
 	'coll-load_collection_tooltip' => 'Ladda den här boken som din nuvarande bok',
