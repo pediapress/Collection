@@ -104,22 +104,32 @@ $messages['af'] = array(
  * @author Prof.Sherif
  */
 $messages['ar'] = array(
+	'coll-print_export' => 'اطبع/صدّر',
 	'coll-create_a_book' => 'إنشاء كتاب',
+	'coll-create_a_book_tooltip' => 'أنشئ كتابًا أو صفحة مجموعة',
+	'coll-book_mode' => 'وضع الكتاب',
 	'coll-download_as' => 'تحميل ك$1',
+	'coll-download_as_tooltip' => 'نزّل نسخة $1 من صفحة الويكي هذه.',
+	'coll-disable' => 'عطّل',
+	'coll-disable_tooltip' => 'عطل وضع إنشاء كتاب',
 	'coll-add_category' => 'إضافة هذا التصنيف إلى كتابتك',
 	'coll-add_category_popup' => 'أضف صفحات الويكي في التصنيف الموصول لكتابك',
 	'coll-add_category_tooltip' => 'أضف كل صفحات الويكي في هذا التصنيف لكتابك',
+	'coll-add_this_page' => 'أضف هذه الصفحة إلى كتابك',
 	'coll-add_page_popup' => 'أضف صفحة الويكي الموصولة لكتابك',
 	'coll-add_page_tooltip' => 'أضف صفحة الويكي الحالية إلى كتابك',
 	'coll-bookscategory' => 'كتب',
 	'coll-clear_collection' => 'إفراغ الكتاب',
 	'coll-clear_collection_confirm' => 'هل تريد حقا إفراغ كتابك بالكامل؟',
 	'coll-clear_collection_tooltip' => 'أزل كل صفحات الويكي من كتابك الحالي',
+	'coll-help' => 'مساعدة',
+	'coll-help_tooltip' => 'أظهر مساعدة عن كيفية إنشاء الكتب',
 	'coll-helppage' => 'Help:كتب',
 	'coll-load_collection' => 'تحميل الكتاب',
 	'coll-load_collection_tooltip' => 'حمل هذا الكتاب ككتابك الحالي',
 	'coll-n_pages' => '{{PLURAL:$1||صفحة|صفحتان|$1 صفحات|$1 صفحة}}',
 	'coll-printable_version_pdf' => 'نسخة PDF',
+	'coll-remove_this_page' => 'أزل هذه الصفحة من كتابك',
 	'coll-remove_page_popup' => 'أزل صفحة الويكي الموصولة من كتابك',
 	'coll-remove_page_tooltip' => 'أزل صفحة الويكي الحالية من كتابك',
 	'coll-show_collection' => 'عرض الكتاب',
@@ -250,6 +260,7 @@ $messages['br'] = array(
 
 /** Bosnian (Bosanski)
  * @author CERminator
+ * @author Smooth O
  */
 $messages['bs'] = array(
 	'coll-print_export' => 'Štampaj/izvezi',
@@ -259,7 +270,7 @@ $messages['bs'] = array(
 	'coll-download_as_tooltip' => 'Skinite $1 verziju ove wiki stranice',
 	'coll-disable' => 'isključena',
 	'coll-disable_tooltip' => 'Onemogući način pravljenja knjige',
-	'coll-add_category' => 'Dodaj kategoriju',
+	'coll-add_category' => 'Dodaj ovu kategoriju u Vašu knjigu',
 	'coll-add_category_popup' => 'Dodaj wiki stranice u povezane kategorije u Vašoj knjizi',
 	'coll-add_category_tooltip' => 'Dodaj sve wiki članke iz ove kategorije u Vašu knjigu',
 	'coll-add_this_page' => 'Dodajte ovu stranicu u Vašu knjigu',
@@ -474,15 +485,21 @@ $messages['dsb'] = array(
 /** Greek (Ελληνικά)
  * @author Geraki
  * @author Omnipaedista
+ * @author ZaDiak
  */
 $messages['el'] = array(
 	'coll-print_export' => 'Εκτύπωση/εξαγωγή',
 	'coll-create_a_book' => 'Δημιουργία βιβλίου',
+	'coll-create_a_book_tooltip' => 'Δημιουργία μιας συλλογής βιβλίων ή σελίδων',
+	'coll-book_mode' => 'Κατάσταση βιβλίου',
 	'coll-download_as' => 'Κατέβασμα ως $1',
+	'coll-download_as_tooltip' => 'Λήψη μιας $1 έκδοσης αυτής της σελίδας βίκι',
 	'coll-disable' => 'απενεργοποίηση',
+	'coll-disable_tooltip' => 'Απενεργοποίηση της κατάστασης δημιουργίας βιβλίου',
 	'coll-add_category' => 'Προσθήκη αυτής της κατηγορίας στο βιβλίο σου',
 	'coll-add_category_popup' => 'Προσθήκη των σελίδων της συνδεδεμένης κατηγορίας στο βιβλίο σας',
 	'coll-add_category_tooltip' => 'Προσθήκη όλων των σελίδων της συνδεδεμένης κατηγορίας στο βιβλίο σας',
+	'coll-add_this_page' => 'Προσθήκη αυτής της σελίδας στο βίβλιο σας',
 	'coll-add_page_popup' => 'Προσθήκη της συνδεδεμένης σελίδας στο βιβλίο σας',
 	'coll-add_page_tooltip' => 'Προσθήκη της παρούσας σελίδας στο βιβλίο σας',
 	'coll-bookscategory' => 'Βιβλία',
@@ -490,11 +507,13 @@ $messages['el'] = array(
 	'coll-clear_collection_confirm' => 'Αλήθεια θέλετε να καθαρίσετε εντελώς το βιβλίο σας;',
 	'coll-clear_collection_tooltip' => 'Αφαίρεση όλων των σελίδων από το παρόν βιβλίο σας',
 	'coll-help' => 'Βοήθεια',
+	'coll-help_tooltip' => 'Εμφάνιση βοήθειας για τη δημιουργία βιβλίων',
 	'coll-helppage' => 'Help:Βιβλία',
 	'coll-load_collection' => 'Φόρτωση βιβλίου',
 	'coll-load_collection_tooltip' => 'Επιφόρτωση αυτού του βιβλίου ως του τρέχοντός σου βιβλίου',
 	'coll-n_pages' => '$1 {{PLURAL:$1|σελίδα|σελίδες}}',
 	'coll-printable_version_pdf' => 'έκδοση PDF',
+	'coll-remove_this_page' => 'Αφαίρεση αυτής της σελίδα από το βιβλίο σας',
 	'coll-remove_page_popup' => 'Αφαίρεση της συνδεδεμένης σελίδας από το βιβλίο σας',
 	'coll-remove_page_tooltip' => 'Αφαίρεση της παρούσας σελίδας από το βιβλίο σας',
 	'coll-show_collection' => 'Εμφάνιση βιβλίου',
@@ -507,7 +526,7 @@ $messages['el'] = array(
 $messages['eo'] = array(
 	'coll-create_a_book' => 'Krei libron',
 	'coll-download_as' => 'Elŝuti kiel $1',
-	'coll-add_category' => 'Aldoni kategorion',
+	'coll-add_category' => 'Aldoni ĉi tiun kategorion al via libro',
 	'coll-add_category_popup' => 'Aldoni vikipaĝojn en ligita kategorio al via libro',
 	'coll-add_category_tooltip' => 'Aldoni ĉiujn vikiajn paĝojn en ĉi tiu kategorio al via libro',
 	'coll-add_page_popup' => 'Aldoni ligilplenan vikian paĝon al via libro',
@@ -516,6 +535,7 @@ $messages['eo'] = array(
 	'coll-clear_collection' => 'Forviŝi libron',
 	'coll-clear_collection_confirm' => 'Ĉu vi ja volas plene forviŝi vian libron?',
 	'coll-clear_collection_tooltip' => 'Forigi ĉiujn vikiajn paĝojn de via nuna libro',
+	'coll-help' => 'Helpo',
 	'coll-helppage' => 'Help:Libroj',
 	'coll-load_collection' => 'Alŝuti libron',
 	'coll-load_collection_tooltip' => 'Ŝarĝi ĉi tiun libron kiel vian nunan libron',
@@ -682,7 +702,7 @@ $messages['fr'] = array(
 	'coll-clear_collection_confirm' => 'Voulez-vous réellement effacer l’intégralité de votre livre ?',
 	'coll-clear_collection_tooltip' => 'Retirer tous les articles de votre livre actuel',
 	'coll-help' => 'Aide',
-	'coll-help_tooltip' => "Afficher l'aide sur la création de livres",
+	'coll-help_tooltip' => 'Afficher l’aide sur la création de livres',
 	'coll-helppage' => 'Help:Livres',
 	'coll-load_collection' => 'Charger un livre',
 	'coll-load_collection_tooltip' => 'Charger ce livre en tant que votre livre actuel',
@@ -736,22 +756,32 @@ $messages['grc'] = array(
  * @author Als-Holder
  */
 $messages['gsw'] = array(
+	'coll-print_export' => 'Drucke/exportiere',
 	'coll-create_a_book' => 'Buech aalege',
+	'coll-create_a_book_tooltip' => 'E Buech oder e Artikelsammlig aalege',
+	'coll-book_mode' => 'Buechmodus',
 	'coll-download_as' => 'As $1 abelade',
-	'coll-add_category' => 'Kategorii zuefiege',
+	'coll-download_as_tooltip' => 'E $1-Version vu däre Wikisyte abelade',
+	'coll-disable' => 'deaktiviere',
+	'coll-disable_tooltip' => 'Buechaalegmodus deaktiviere',
+	'coll-add_category' => 'Die Kategorii zue Dyym Buech dezuefiege',
 	'coll-add_category_popup' => 'Wikisyte in dr vergleichte Kategorii zue Dyynem Buech zuefiege',
 	'coll-add_category_tooltip' => 'Alli Wikisyte in däre Kategorii in Dyy Buech yyfiege',
+	'coll-add_this_page' => 'Die Syte zue Dyym Buech zuefiege',
 	'coll-add_page_popup' => 'Vergleichti Syte zu Dyynem Buech zuefiege',
 	'coll-add_page_tooltip' => 'Di aktuäll Wikisyte zue Dyynem Buech zuefiege',
 	'coll-bookscategory' => 'Buechfunktion',
 	'coll-clear_collection' => 'Buech lesche',
 	'coll-clear_collection_confirm' => 'Mechtsch Dyy Buech ächt lesche?',
 	'coll-clear_collection_tooltip' => 'Alli Wikisyte us Dyynem aktuälle Buech useneh',
+	'coll-help' => 'Hilf',
+	'coll-help_tooltip' => 'Hilf zum Aalege vu Biecher aazeige',
 	'coll-helppage' => 'Help:Biecher',
 	'coll-load_collection' => 'Buech lade',
 	'coll-load_collection_tooltip' => 'Des Buech as Dyy aktuäll Buech lade',
 	'coll-n_pages' => '$1 {{PLURAL:$1|Syte|Syte}}',
 	'coll-printable_version_pdf' => 'PDF-Version',
+	'coll-remove_this_page' => 'Die Syte us Dyym Buech useneh',
 	'coll-remove_page_popup' => 'Vergleichti Syte us Dyynem Buech uuseneh',
 	'coll-remove_page_tooltip' => 'Di aktuäll Wikisyte us Dyynem Buech uuseneh',
 	'coll-show_collection' => 'Buech zeige',
@@ -1855,6 +1885,32 @@ $messages['sr-ec'] = array(
 	'coll-show_collection_tooltip' => 'Кликните за измену, преузимање или наручивање своје књиге',
 );
 
+/** latinica (latinica)
+ * @author Michaello
+ */
+$messages['sr-el'] = array(
+	'coll-create_a_book' => 'Napravi knjigu',
+	'coll-download_as' => 'Preuzmi kao $1',
+	'coll-add_category' => 'Dodaj kategoriju',
+	'coll-add_category_popup' => 'Dodajte članke iz priložene kategorije u Vašu knjigu',
+	'coll-add_category_tooltip' => 'Dodaje sve viki stranice u ovoj kategoriji u vašu knjigu',
+	'coll-add_page_popup' => 'Dodajte priloženi članak u Vašu knjigu',
+	'coll-add_page_tooltip' => 'Dodaje trenutnu viki stranicu vašoj knjizi',
+	'coll-bookscategory' => 'Knjige',
+	'coll-clear_collection' => 'Očisti knjigu',
+	'coll-clear_collection_confirm' => 'Da li zaista želite da potpuno očistite svoju knjigu?',
+	'coll-clear_collection_tooltip' => 'Uklanja sve viki stranice iz vaše trenutne knjige',
+	'coll-helppage' => 'Help:Knjige',
+	'coll-load_collection' => 'Učitaj knjigu',
+	'coll-load_collection_tooltip' => 'Učitava ovu knjigu kao vašu trenutnu knjigu',
+	'coll-n_pages' => '{{PLURAL:$1|jedna strana|$1 strane|$1 strana}}',
+	'coll-printable_version_pdf' => 'PDF verzija',
+	'coll-remove_page_popup' => 'Izbrišite priloženi članak iz svoje knjige',
+	'coll-remove_page_tooltip' => 'Uklanja trenutnu viki stranicu iz vaše knjige',
+	'coll-show_collection' => 'Prikaži knjigu',
+	'coll-show_collection_tooltip' => 'Kliknite za izmenu, preuzimanje ili naručivanje svoje knjige',
+);
+
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
@@ -1882,14 +1938,22 @@ $messages['su'] = array(
  * @author Micke
  * @author Najami
  * @author Poxnar
+ * @author Rotsee
  * @author Sannab
  */
 $messages['sv'] = array(
+	'coll-print_export' => 'Skriv ut/exportera',
 	'coll-create_a_book' => 'Skapa en bok',
+	'coll-create_a_book_tooltip' => 'Skapa en bok eller artikelsamling',
+	'coll-book_mode' => 'Bokfunktion',
 	'coll-download_as' => 'Hämta som $1',
-	'coll-add_category' => 'Lägg till kategori',
+	'coll-download_as_tooltip' => 'Ladda ner den här wikisidan i $1-format',
+	'coll-disable' => 'slå av',
+	'coll-disable_tooltip' => 'Slå av bokfunktionen',
+	'coll-add_category' => 'Lägg till den här kategorin i boken',
 	'coll-add_category_popup' => 'Lägg till wikisidor i den länkade kategorin till din bok',
 	'coll-add_category_tooltip' => 'Lägg till alla wikisidor i den här kategorin till din bok',
+	'coll-add_this_page' => 'Lägg till den här sidan i boken',
 	'coll-add_page_popup' => 'Lägg till länkade wikisidor till din bok',
 	'coll-add_page_tooltip' => 'Lägg till den nuvarande wikisidan till din bok',
 	'coll-bookscategory' => 'Böcker',
@@ -1897,11 +1961,13 @@ $messages['sv'] = array(
 	'coll-clear_collection_confirm' => 'Vill du verkligen helt tömma din bok?',
 	'coll-clear_collection_tooltip' => 'Ta bort alla wikisidor från din nuvarande bok',
 	'coll-help' => 'Hjälp',
+	'coll-help_tooltip' => 'Få hjälp med att skapa böcker',
 	'coll-helppage' => 'Help:Böcker',
 	'coll-load_collection' => 'Hämta bok',
 	'coll-load_collection_tooltip' => 'Ladda den här boken som din nuvarande bok',
 	'coll-n_pages' => '$1 {{PLURAL:$1|sida|sidor}}',
 	'coll-printable_version_pdf' => 'PDF-version',
+	'coll-remove_this_page' => 'Ta bort den här sidan ur boken',
 	'coll-remove_page_popup' => 'Ta bort länkad wikisida från din bok',
 	'coll-remove_page_tooltip' => 'Ta bort den nuvarande wikisidan från din bok',
 	'coll-show_collection' => 'Visa bok',
