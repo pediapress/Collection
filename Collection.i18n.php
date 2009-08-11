@@ -1714,6 +1714,7 @@ $messages['el'] = array(
 $messages['eo'] = array(
 	'coll-desc' => '[[Special:Book|Krei librojn]]',
 	'coll-start_book_mode' => 'Starti libran reĝimon',
+	'coll-book_mode_text_article' => 'Teksto por libra reĝimo',
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libroj',
 	'coll-exclusion_category_title' => 'Ekskludi de printado',
@@ -1953,8 +1954,10 @@ $messages['et'] = array(
 	'coll-collections' => 'Raamatud',
 	'coll-exclusion_category_title' => 'Trükikeeluga',
 	'coll-print_template_prefix' => 'Prindi',
+	'coll-unknown_subpage_title' => 'Tundmatu alaleht',
 	'coll-unknown_subpage_text' => 'Sellist [[Special:Book|raamatu]] alamlehekülge pole.',
 	'coll-couldnotaddarticle_title' => 'Vikilehekülge ei saa lisada',
+	'coll-couldnotaddarticle_msg' => 'Vikilehekülge ei saa lisada.',
 	'coll-couldnotremovearticle_title' => 'Vikilehekülge ei saa eemaldada',
 	'coll-couldnotremovearticle_msg' => 'Vikilehekülge ei saa eemaldada.',
 	'coll-noscript_text' => '<h1>Vaja on JavaScripti!</h1>
@@ -1972,28 +1975,45 @@ Täiendavat teavet leiat [[{{MediaWiki:Coll-helppage}}|raamatute abilehelt]].',
 	'coll-remove' => 'Eemalda',
 	'coll-show' => 'Näita',
 	'coll-move_to_top' => 'Liiguta üles',
+	'coll-move_up' => 'Liigu üles',
+	'coll-move_down' => 'Liigu alla',
+	'coll-move_to_bottom' => 'Mine lõppu',
 	'coll-title' => 'Pealkiri:',
 	'coll-subtitle' => 'Alapealkiri:',
+	'coll-contents' => 'Sisukord',
 	'coll-drag_and_drop' => 'Kasuta vikilehekülgede ja peatükkide ümberjärjestamiseks pukseerimist.',
 	'coll-create_chapter' => 'Loo peatükk',
 	'coll-sort_alphabetically' => 'Sorteeri&nbsp;tähestikuliselt',
 	'coll-rename' => 'Nimeta ümber',
+	'coll-new_chapter' => 'Sisesta uue peatüki pealkiri',
 	'coll-rename_chapter' => 'Sisesta uue peatüki pealkiri',
 	'coll-no_such_category' => 'Sellist kategooriat ei ole',
+	'coll-mwserve_failed_title' => 'Küljendamisserveri tõrge',
+	'coll-mwserve_failed_msg' => 'Küljendamisserveril ilmnes tõrge: <nowiki>$1</nowiki>',
 	'coll-empty_collection' => 'Tühi raamat',
+	'coll-revision' => 'Versioon: $1',
 	'coll-save_collection_title' => 'Salvesta ja jaga raamatut',
 	'coll-save_collection_text' => 'Vali oma raamatu talletuskoht:',
 	'coll-login_to_save' => 'Kui tahad raamatud hilisemaks kasutamiseks salvestada, [[Special:UserLogin|logi palun sisse või loo konto]].',
+	'coll-personal_collection_label' => 'Eraraamat:',
+	'coll-community_collection_label' => 'Ühisraamat:',
 	'coll-save_collection' => 'Salvesta raamat',
 	'coll-save_category' => 'Kõik raamatud salvestatakse kategooriasse [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Lehekülg eksisteerib.
 Kas kirjutada üle?',
+	'coll-overwrite_text' => 'Lehekülg pealkirjaga [[:$1]] on juba olemas.
+Kas tahad selle oma raamatuga asendada?',
 	'coll-yes' => 'Jah',
 	'coll-no' => 'Ei',
+	'coll-load_overwrite_text' => 'Su raamatus on juba mõni lehekülg.
+Kas soovid oma praeguse raamatu üle kirjutada, uue sisu liita või selle raamatu laadimise tühistada?',
 	'coll-overwrite' => 'Kirjuta üle',
 	'coll-append' => 'Lisa',
 	'coll-cancel' => 'Tühista',
 	'coll-update' => 'Uuenda',
+	'coll-limit_exceeded_title' => 'Raamat on liiga suur',
+	'coll-limit_exceeded_text' => 'Su raamat on liiga suur.
+Rohkem lehekülgi ei saa lisada.',
 	'coll-rendering_title' => 'Küljendamine',
 	'coll-rendering_text' => '<p><strong>Palun oota kuni dokumenti luuakse.</strong></p>
 
@@ -2010,6 +2030,11 @@ Kui see ei toimi, vajuta palun oma veebilehitseja värskendusnuppu.</p>',
 
 Märkused:
 * Sa ei ole väljastatuga rahul? Vaata [[{{MediaWiki:Coll-helppage}}|raamatute abilehte]] võimalike lahenduste jaoks.',
+	'coll-notfound_title' => 'Raamatut ei leidu',
+	'coll-notfound_text' => 'Raamatu lehekülge ei leidu.',
+	'coll-download_notfound_title' => 'Faili ei leidu',
+	'coll-download_notfound_text' => 'Faili, mida üritad alla laadida, ei ole olemas.
+Võib-olla on see kustutatud ja tuleb taasluua.',
 	'coll-is_cached' => '<ul><li>Leitud on dokumendi puhverdatud versioon ja küljendamine polnud vajalik.
 <a href="$1">Käse taasküljendada.</a></li></ul>',
 	'coll-excluded-templates' => '* Mallid kategoorias [[:Category:$1|$1]] on välja jäetud.',
@@ -2022,6 +2047,8 @@ Märkused:
 	'coll-return_to' => 'Naase [[:$1]]',
 	'coll-more_info' => 'Näita lisainfot',
 	'coll-hide_info' => 'Peida info',
+	'right-collectionsaveasuserpage' => 'Salvesta raamatud kasutajaleheküljena',
+	'right-collectionsaveascommunitypage' => 'Salvesta raamat ühisleheküljena',
 );
 
 /** Basque (Euskara)
@@ -4193,6 +4220,7 @@ $messages['km'] = array(
 	'coll-no_such_category' => 'គ្មានចំណាត់ថ្នាក់ក្រុមបែបនេះទេ',
 	'coll-notitle_title' => 'មិន​អាចកំណត់​ចំណងជើង​នៃទំព័រ',
 	'coll-empty_collection' => 'សៀវភៅទទេ',
+	'coll-revision' => 'កំណែ​ប្រែ​៖ $1',
 	'coll-save_collection_title' => 'រក្សាទុក​និង​ចែករំលែក​សៀវភៅ',
 	'coll-save_collection_text' => 'ជ្រើសរើស​តំបន់៖',
 	'coll-login_to_save' => 'ប្របើសិនបើ​អ្នក​ចង់​រក្សាទុក​សៀវភៅ​សម្រាប់​ប្រើប្រាស់​លើកក្រោយ សូម​[[Special:UserLogin|ឡុកអ៊ីន​ឬ​បង្កើត​គណនី]]​។',
@@ -4215,6 +4243,7 @@ $messages['km'] = array(
 	'coll-rendering_page' => '(ទំព័រ៖ $1)',
 	'coll-notfound_title' => 'រកមិនឃើញ​សៀវភៅ',
 	'coll-notfound_text' => 'រកមិនឃើញសៀវភៅទេ។',
+	'coll-download_notfound_title' => 'ឯកសារ​រកមិនឃើញ​',
 	'coll-return_to_collection' => '<p>ត្រឡប់ទៅកាន់<a href="$1">$2</a></p>វិញ',
 	'coll-book_title' => 'ទិញសៀវភៅដែលបានបោះពុម្ព',
 	'coll-order_from_pp' => 'បញ្ជាទិញ​សៀវភៅពី $1',
@@ -4223,6 +4252,16 @@ $messages['km'] = array(
 	'coll-return_to' => 'ត្រឡប់ទៅកាន់ [[:$1]]',
 	'coll-more_info' => 'បង្ហាញ​ព័ត៌មានបន្ថែម​',
 	'coll-hide_info' => 'លាក់​ព័ត៌មាន​',
+	'right-collectionsaveasuserpage' => 'រក្សា​ទុកសៀវភៅ​​ជា​ទំព័រអ្នកប្រើប្រាស់',
+	'right-collectionsaveascommunitypage' => 'រក្សា​ទុកសៀវភៅ​​ជា​ទំព័រ​សហគមន៍​',
+);
+
+/** Kannada (ಕನ್ನಡ)
+ * @author Nayvik
+ */
+$messages['kn'] = array(
+	'coll-yes' => 'ಹೌದು',
+	'coll-no' => 'ಇಲ್ಲ',
 );
 
 /** Korean (한국어)
@@ -6703,7 +6742,7 @@ $messages['sr-ec'] = array(
 	'coll-hide_info' => 'Склони информације',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -6793,10 +6832,10 @@ Napomena:
 	'coll-notfound_text' => 'Ne mogu da nađem stranu knjige.',
 	'coll-download_notfound_title' => 'Fajl nije pronađen',
 	'coll-download_notfound_text' => 'Fajl koji pokušavate da preuzmete ne postoji: moguće je da je je obrisan i mora biti ponovo napravljen.',
-	'coll-is_cached' => '<ul><li>Izrađena verzija dokumenta je pronađena, tako da izrađivanje nije neophodno. <a href=&quot;$1&quot;>Nametni ponovno izrađivanje.</a></li></ul>',
+	'coll-is_cached' => '<ul><li>Izrađena verzija dokumenta je pronađena, tako da izrađivanje nije neophodno. <a href="$1">Nametni ponovno izrađivanje.</a></li></ul>',
 	'coll-excluded-templates' => '* Šabloni u kategoriji [[:Category:$1|$1]] su isključeni.',
 	'coll-blacklisted-templates' => '* Šabloni na crnoj listi [[:$1]] su isključeni.',
-	'coll-return_to_collection' => '<p>Nazad na <a href=&quot;$1&quot;>$2</a></p>',
+	'coll-return_to_collection' => '<p>Nazad na <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Naruči kao odštampanu knjigu',
 	'coll-book_text' => 'Dobijte odštampanu knjigu od našeg partnera za štampanje na zahtev:',
 	'coll-order_from_pp' => 'Naruči knjigu od „$1“',
