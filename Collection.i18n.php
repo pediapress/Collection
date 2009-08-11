@@ -304,6 +304,8 @@ $messages['am'] = array(
  */
 $messages['ar'] = array(
 	'coll-desc' => '[[Special:Book|ينشيء كتبا]]',
+	'coll-book_mode_intro' => "تستطيع مع ''وضع الكتب'' إنشاء كتاب يتكون من صفحات ويكي بحسب اختيارك. تستطيع تصدير كتابك بأنساق مختلفة (PDF أو ODF على سبيل المثال) أو طلب نسخة مطبوعة.",
+	'coll-book_mode_help' => 'راجع [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة المتعلقة بالكتب]] لمزيد من المعلومات.',
 	'coll-start_book_mode' => 'ابدأ وضع الكتب',
 	'coll-book_mode_text_article' => 'نص وضع الكتب',
 	'coll-collection' => 'كتاب',
@@ -714,6 +716,30 @@ $messages['bg'] = array(
 	'coll-return_to' => 'Връщане към [[:$1]]',
 	'coll-more_info' => 'Показване на повече информация',
 	'coll-hide_info' => 'Скриване на информацията',
+);
+
+/** Bengali (বাংলা)
+ * @author Bellayet
+ */
+$messages['bn'] = array(
+	'coll-print_template_prefix' => 'মুদ্রণ',
+	'coll-savedbook_template' => 'সংরক্ষিত_বই',
+	'coll-your_book' => 'আপনার বই',
+	'coll-download_title' => 'ডাউনলোড',
+	'coll-download' => 'ডাউনলোড',
+	'coll-format_label' => 'বিন্যাস:',
+	'coll-remove' => 'অপসারণ',
+	'coll-show' => 'দেখাও',
+	'coll-title' => 'শিরোনাম:',
+	'coll-contents' => 'বিষয়বস্তু',
+	'coll-yes' => 'হ্যা',
+	'coll-no' => 'না',
+	'coll-cancel' => 'বাতিল',
+	'coll-update' => 'হালনাগাদ',
+	'coll-rendering_article' => '(উইকি পাতা: $1)',
+	'coll-rendering_page' => '(পাতা: $1)',
+	'coll-more_info' => 'আরও তথ্য দেখাও',
+	'coll-hide_info' => 'তথ্য আড়াল করো',
 );
 
 /** Breton (Brezhoneg)
@@ -1687,6 +1713,7 @@ $messages['el'] = array(
  */
 $messages['eo'] = array(
 	'coll-desc' => '[[Special:Book|Krei librojn]]',
+	'coll-start_book_mode' => 'Starti libran reĝimon',
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libroj',
 	'coll-exclusion_category_title' => 'Ekskludi de printado',
@@ -1917,19 +1944,48 @@ Por favor, contacta con tu administrador MediaWiki.',
 
 /** Estonian (Eesti)
  * @author Avjoska
+ * @author Pikne
  */
 $messages['et'] = array(
+	'coll-desc' => '[[Special:Book|Loo raamatuid]]',
+	'coll-book_mode_help' => 'Täiendava teabe jaoks vaata [[{{MediaWiki:Coll-helppage}}|raamatute abilehte]].',
+	'coll-collection' => 'Raamat',
+	'coll-collections' => 'Raamatud',
+	'coll-exclusion_category_title' => 'Trükikeeluga',
 	'coll-print_template_prefix' => 'Prindi',
+	'coll-unknown_subpage_text' => 'Sellist [[Special:Book|raamatu]] alamlehekülge pole.',
+	'coll-couldnotaddarticle_title' => 'Vikilehekülge ei saa lisada',
+	'coll-couldnotremovearticle_title' => 'Vikilehekülge ei saa eemaldada',
+	'coll-couldnotremovearticle_msg' => 'Vikilehekülge ei saa eemaldada.',
+	'coll-noscript_text' => '<h1>Vaja on JavaScripti!</h1>
+<strong>Sinu veebilehitsejal puudub JavaScripti tugi või JavaScript on välja lülitatud.
+See lehekülg ei tööta korralikult, kui JavaScript pole lubatud.</strong>',
+	'coll-intro_text' => 'Loo oma vikilehekülgede valik ja halda seda.<br />
+Täiendavat teavet leiat [[{{MediaWiki:Coll-helppage}}|raamatute abilehelt]].',
+	'coll-savedbook_template' => 'Talletatud raamat',
+	'coll-your_book' => 'Sinu raamat',
+	'coll-download_title' => 'Laadi alla',
+	'coll-download_text' => 'Raamatu allalaadimiseks vali vorming ja klõpsa nuppu.',
+	'coll-download_as_text' => '$1-vormingus versiooni allalaadimiseks klõpsa nuppu.',
 	'coll-download' => 'Laadi alla',
-	'coll-format_label' => 'Formaat:',
+	'coll-format_label' => 'Vorming:',
 	'coll-remove' => 'Eemalda',
 	'coll-show' => 'Näita',
 	'coll-move_to_top' => 'Liiguta üles',
 	'coll-title' => 'Pealkiri:',
 	'coll-subtitle' => 'Alapealkiri:',
-	'coll-sort_alphabetically' => 'Sorteeri tähestiku järjekorras',
+	'coll-drag_and_drop' => 'Kasuta vikilehekülgede ja peatükkide ümberjärjestamiseks pukseerimist.',
+	'coll-create_chapter' => 'Loo peatükk',
+	'coll-sort_alphabetically' => 'Sorteeri&nbsp;tähestikuliselt',
 	'coll-rename' => 'Nimeta ümber',
+	'coll-rename_chapter' => 'Sisesta uue peatüki pealkiri',
 	'coll-no_such_category' => 'Sellist kategooriat ei ole',
+	'coll-empty_collection' => 'Tühi raamat',
+	'coll-save_collection_title' => 'Salvesta ja jaga raamatut',
+	'coll-save_collection_text' => 'Vali oma raamatu talletuskoht:',
+	'coll-login_to_save' => 'Kui tahad raamatud hilisemaks kasutamiseks salvestada, [[Special:UserLogin|logi palun sisse või loo konto]].',
+	'coll-save_collection' => 'Salvesta raamat',
+	'coll-save_category' => 'Kõik raamatud salvestatakse kategooriasse [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Lehekülg eksisteerib.
 Kas kirjutada üle?',
 	'coll-yes' => 'Jah',
@@ -1938,8 +1994,34 @@ Kas kirjutada üle?',
 	'coll-append' => 'Lisa',
 	'coll-cancel' => 'Tühista',
 	'coll-update' => 'Uuenda',
+	'coll-rendering_title' => 'Küljendamine',
+	'coll-rendering_text' => '<p><strong>Palun oota kuni dokumenti luuakse.</strong></p>
+
+<p><strong>Edenemine:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>See lehekülg peaks ennast iga paari sekundi järel uuesti laadima.
+Kui see ei toimi, vajuta palun oma veebilehitseja värskendusnuppu.</p>',
+	'coll-rendering_status' => '<strong>Olek:</strong> $1',
+	'coll-rendering_article' => '(vikilehekülg: $1)',
+	'coll-rendering_page' => '(lehekülg: $1)',
+	'coll-rendering_finished_title' => 'Küljendamine on lõppenud',
+	'coll-rendering_finished_text' => '<strong>Dokumendifail on loodud.</strong>
+<strong>[$1 Laadi fail]</strong> oma arvutisse alla.
+
+Märkused:
+* Sa ei ole väljastatuga rahul? Vaata [[{{MediaWiki:Coll-helppage}}|raamatute abilehte]] võimalike lahenduste jaoks.',
+	'coll-is_cached' => '<ul><li>Leitud on dokumendi puhverdatud versioon ja küljendamine polnud vajalik.
+<a href="$1">Käse taasküljendada.</a></li></ul>',
+	'coll-excluded-templates' => '* Mallid kategoorias [[:Category:$1|$1]] on välja jäetud.',
+	'coll-return_to_collection' => '<p>Naase leheküljele <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Telli trükitud raamatuna',
+	'coll-book_text' => 'Hangi trükitud raamat meie nõudetrükkimispartnerilt.',
+	'coll-order_from_pp' => 'Telli raamat trükikojast $1',
+	'coll-about_pp' => 'Trükikoja $1 teave',
 	'coll-license' => 'Litsents',
 	'coll-return_to' => 'Naase [[:$1]]',
+	'coll-more_info' => 'Näita lisainfot',
+	'coll-hide_info' => 'Peida info',
 );
 
 /** Basque (Euskara)
@@ -4076,12 +4158,14 @@ $messages['ka'] = array(
  * @author Lovekhmer
  * @author Thearith
  * @author គីមស៊្រុន
+ * @author វ័ណថារិទ្ធ
  */
 $messages['km'] = array(
 	'coll-desc' => '[[Special:Book|បង្កើត​សៀវភៅ]]',
 	'coll-collection' => 'សៀវភៅ',
 	'coll-collections' => 'សៀវភៅ',
 	'coll-print_template_prefix' => 'បោះពុម្ព',
+	'coll-print_template_pattern' => '$1/បោះពុម្ព',
 	'coll-noscript_text' => '<h1>ត្រូវការ JavaScript!</h1>
 <strong>ឧបករណ៍រាវរក (browser) របស់អ្នកមិនគាំទ្រ JavaScript ឬ JavaScript ត្រូវបានបិទ។
 ទំព័រនេះមិនអាចដំណើរការបានត្រឹមត្រូវទេ លុះត្រាតែអ្នកបើកឱ្យ JavaScript ដើរ។</strong>',
@@ -4137,6 +4221,8 @@ $messages['km'] = array(
 	'coll-about_pp' => 'អំពី$1',
 	'coll-license' => 'អាជ្ញាប័ណ្ណ',
 	'coll-return_to' => 'ត្រឡប់ទៅកាន់ [[:$1]]',
+	'coll-more_info' => 'បង្ហាញ​ព័ត៌មានបន្ថែម​',
+	'coll-hide_info' => 'លាក់​ព័ត៌មាន​',
 );
 
 /** Korean (한국어)
@@ -5803,6 +5889,10 @@ Por favor, contacte o seu administrador MediaWiki.',
  */
 $messages['pt-br'] = array(
 	'coll-desc' => '[[Special:Book|Criar livros]]',
+	'coll-book_mode_intro' => "Com o ''modo livro'' você pode criar um livro consistindo de quaisquer páginas wiki. Você pode exportar seu livro para diferentes formatos (por exemplo PDF ou ODF) ou fazer o pedido de uma cópia impressa.",
+	'coll-book_mode_help' => 'Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para mais informações.',
+	'coll-start_book_mode' => 'Iniciar o modo livro',
+	'coll-book_mode_text_article' => 'Texto do modo livro',
 	'coll-collection' => 'Livro',
 	'coll-collections' => 'Livros',
 	'coll-exclusion_category_title' => 'Excluir da impressão',
@@ -5810,10 +5900,14 @@ $messages['pt-br'] = array(
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Sub-página desconhecida',
 	'coll-unknown_subpage_text' => 'Esta subpágina do [[Special:Book|Livro]] não existe',
+	'coll-couldnotaddarticle_title' => 'Não pôde ser adicionada a página wiki',
+	'coll-couldnotaddarticle_msg' => 'A página wiki não pôde ser adicionada.',
+	'coll-couldnotremovearticle_title' => 'Não pôde remover a página wiki',
+	'coll-couldnotremovearticle_msg' => 'A página wiki não pôde ser removida.',
 	'coll-noscript_text' => '<h1>JavaScript é requerido!</h1>
 <strong>O seu navegador não suporta JavaScript, ou o JavaScript foi desactivado.
 Esta página não funcionará corretamente, a menos que o JavaScript seja ativado.</strong>',
-	'coll-intro_text' => 'Crie e manipule sua seleção individual de páginas wiki.<br />Veja [[{{MediaWiki:Coll-helppage}}]] para mais detalhes.',
+	'coll-intro_text' => 'Crie e manipule sua seleção individual de páginas wiki.<br />Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para mais detalhes.',
 	'coll-savedbook_template' => 'livro_gravado',
 	'coll-your_book' => 'Seu livro',
 	'coll-download_title' => 'Baixar',
@@ -5903,6 +5997,8 @@ Por favor, contate o seu administrador MediaWiki.',
 	'coll-more_info' => 'Exibir mais informações',
 	'coll-hide_info' => 'Esconder informações',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informações de pedido do PediaPress',
+	'right-collectionsaveasuserpage' => 'Salvar livros como página de usuário',
+	'right-collectionsaveascommunitypage' => 'Salvar livros como páginas comunitárias',
 );
 
 /** Romanian (Română)
