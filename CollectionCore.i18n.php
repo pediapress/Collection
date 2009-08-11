@@ -222,6 +222,14 @@ $messages['bg'] = array(
 	'coll-printable_version_pdf' => 'PDF версия',
 );
 
+/** Bengali (বাংলা)
+ * @author Bellayet
+ */
+$messages['bn'] = array(
+	'coll-create_a_book' => 'বই তৈরি করো',
+	'coll-disable' => 'নিস্ক্রিয়',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  */
@@ -524,11 +532,15 @@ $messages['el'] = array(
  * @author Yekrats
  */
 $messages['eo'] = array(
+	'coll-print_export' => 'Printi/eksporti',
 	'coll-create_a_book' => 'Krei libron',
+	'coll-book_mode' => 'Libra reĝimo',
 	'coll-download_as' => 'Elŝuti kiel $1',
+	'coll-download_as_tooltip' => 'Elŝuti $1-version de ĉi tiu vikia paĝo',
 	'coll-add_category' => 'Aldoni ĉi tiun kategorion al via libro',
 	'coll-add_category_popup' => 'Aldoni vikipaĝojn en ligita kategorio al via libro',
 	'coll-add_category_tooltip' => 'Aldoni ĉiujn vikiajn paĝojn en ĉi tiu kategorio al via libro',
+	'coll-add_this_page' => 'Aldoni ĉi tiun paĝon al via libro',
 	'coll-add_page_popup' => 'Aldoni ligilplenan vikian paĝon al via libro',
 	'coll-add_page_tooltip' => 'Aldoni la nunan vikian paĝon al via libro',
 	'coll-bookscategory' => 'Libroj',
@@ -541,6 +553,7 @@ $messages['eo'] = array(
 	'coll-load_collection_tooltip' => 'Ŝarĝi ĉi tiun libron kiel vian nunan libron',
 	'coll-n_pages' => '$1 {{PLURAL:$1|paĝo|paĝoj}}',
 	'coll-printable_version_pdf' => 'PDF-versio',
+	'coll-remove_this_page' => 'Forigi ĉi tiun paĝon de via libro',
 	'coll-remove_page_popup' => 'Forigi ligitan vikian paĝon de via libro',
 	'coll-remove_page_tooltip' => 'Forigi la nunan vikian paĝon de via libro',
 	'coll-show_collection' => 'Montri libron',
@@ -585,9 +598,11 @@ $messages['et'] = array(
 	'coll-add_category' => 'Lisa kategooria',
 	'coll-add_category_tooltip' => 'Lisa kõik selle kategooria vikileheküljed loodavasse raamatusse',
 	'coll-add_page_tooltip' => 'Lisa käesolev lehekülg loodavasse raamatusse',
+	'coll-bookscategory' => 'Raamatud',
 	'coll-clear_collection' => 'Tühjenda raamat',
 	'coll-clear_collection_confirm' => 'Kas soovid tõesti kogu raamatu tühjendada?',
 	'coll-clear_collection_tooltip' => 'Võta kõik leheküljed loodavast raamatust välja',
+	'coll-helppage' => 'Juhend:Raamatud',
 	'coll-n_pages' => '$1 {{PLURAL:$1|lehekülg|lehekülge}}',
 	'coll-printable_version_pdf' => 'PDF-versioon',
 	'coll-remove_page_tooltip' => 'Võta käesolev lehekülg loodavast raamatust välja',
@@ -1183,6 +1198,7 @@ $messages['km'] = array(
 	'coll-clear_collection' => 'សំអាត​សៀវភៅ',
 	'coll-clear_collection_confirm' => 'តើ​អ្នក​ពិតជា​ចង់​ជម្រះ​សៀវភៅ​របស់​អ្នក​ទាំងស្រុង​ឬ​?',
 	'coll-clear_collection_tooltip' => 'ដកយក​ទំព័រ​វីគីទាំងអស់​ពីសៀវភៅ​បច្ចុប្បន្ន​របស់អ្នក​',
+	'coll-help' => 'ជំនួយ',
 	'coll-helppage' => 'Help: សៀវភៅ',
 	'coll-load_collection' => 'ផ្ទុកសៀវភៅ',
 	'coll-load_collection_tooltip' => 'ផ្ទុក​សៀវភៅនេះ​ទៅជា​សៀវភៅ​បច្ចុប្បន្ន​របស់អ្នក​',
@@ -1496,24 +1512,32 @@ $messages['nn'] = array(
  * @author Jon Harald Søby
  * @author Laaknor
  * @author Nghtwlkr
+ * @author Simny
  */
 $messages['no'] = array(
 	'coll-create_a_book' => 'Opprett en bok',
+	'coll-create_a_book_tooltip' => 'Lag ei bok eller en artikkelsamling',
 	'coll-download_as' => 'Last ned som $1',
-	'coll-add_category' => 'Legg til kategori',
+	'coll-download_as_tooltip' => 'Last ned denne wikisida i $1-format',
+	'coll-disable' => 'slå av',
+	'coll-add_category' => 'Legg til denne kategorien i boka di',
 	'coll-add_category_popup' => 'Legg til wikisider i den lenkede kategorien i din bok',
 	'coll-add_category_tooltip' => 'Legg til alle wikisider i denne kategorien til din bok',
+	'coll-add_this_page' => 'Legg til denne siden i boka di',
 	'coll-add_page_popup' => 'Legg til lenket wikiside i din bok',
 	'coll-add_page_tooltip' => 'Legg til den nåværende wikisiden i din bok',
 	'coll-bookscategory' => 'Bøker',
 	'coll-clear_collection' => 'Tøm bok',
 	'coll-clear_collection_confirm' => 'Vil du virkelig tømme boka?',
 	'coll-clear_collection_tooltip' => 'Fjern alle wikisider fra din nåværende bok',
+	'coll-help' => 'Hjelp',
+	'coll-help_tooltip' => 'Få hjelp med å lage bøker',
 	'coll-helppage' => 'Help:Bøker',
 	'coll-load_collection' => 'Last bok',
 	'coll-load_collection_tooltip' => 'Last denne boka som din nåværende bok',
 	'coll-n_pages' => '$1 {{PLURAL:$1|side|sider}}',
 	'coll-printable_version_pdf' => 'PDF-versjon',
+	'coll-remove_this_page' => 'Fjern denne siden fra boka di',
 	'coll-remove_page_popup' => 'Fjern lenket wikiside fra din bok',
 	'coll-remove_page_tooltip' => 'Fjern den nåværende wikisiden fra din bok',
 	'coll-show_collection' => 'Vis bok',
@@ -1664,22 +1688,32 @@ $messages['pt'] = array(
  * @author Jorge Morais
  */
 $messages['pt-br'] = array(
+	'coll-print_export' => 'Imprimir/Exportar',
 	'coll-create_a_book' => 'Criar um livro',
+	'coll-create_a_book_tooltip' => 'Criar um livro ou coleção de páginas',
+	'coll-book_mode' => 'Modo livro',
 	'coll-download_as' => 'Baixar como $1',
-	'coll-add_category' => 'Adicionar categoria',
+	'coll-download_as_tooltip' => 'Baixe uma versão $1 desta página wiki',
+	'coll-disable' => 'desabilitar',
+	'coll-disable_tooltip' => 'Desabilitar o modo de criação de livro',
+	'coll-add_category' => 'Adicionar esta categoria ao seu livro',
 	'coll-add_category_popup' => 'Adicionar páginas wiki na categoria ligada no seu livro',
 	'coll-add_category_tooltip' => 'Adicionar todas as páginas wiki nesta categoria ao seu livro',
+	'coll-add_this_page' => 'Adicionar esta página ao seu livro',
 	'coll-add_page_popup' => 'Adicionar página wiki ligada ao seu livro',
 	'coll-add_page_tooltip' => 'Adicionar a página wiki atual ao seu livro',
 	'coll-bookscategory' => 'Livros',
 	'coll-clear_collection' => 'Esvaziar livro',
 	'coll-clear_collection_confirm' => 'Realmente deseja esvaziar completamente o seu livro?',
 	'coll-clear_collection_tooltip' => 'Remover todas as páginas wiki do seu livro atual',
+	'coll-help' => 'Ajuda',
+	'coll-help_tooltip' => 'Exibir ajuda sobre a criação de livros',
 	'coll-helppage' => 'Help:Livros',
 	'coll-load_collection' => 'Carregar livro',
 	'coll-load_collection_tooltip' => 'Carregar este livro como o seu livro atual',
 	'coll-n_pages' => '$1 {{PLURAL:$1|página|páginas}}',
 	'coll-printable_version_pdf' => 'Versão em PDF',
+	'coll-remove_this_page' => 'Remover esta página do seu livro',
 	'coll-remove_page_popup' => 'Remover páginas wiki ligadas de seu livro',
 	'coll-remove_page_tooltip' => 'Remover a página wiki atual do seu livro',
 	'coll-show_collection' => 'Mostrar livro',
