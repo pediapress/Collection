@@ -580,6 +580,7 @@ $messages['eo'] = array(
 
 /** Spanish (Español)
  * @author Crazymadlover
+ * @author Imre
  * @author Locos epraix
  * @author Remember the dot
  * @author Sanbec
@@ -596,6 +597,7 @@ $messages['es'] = array(
 	'coll-clear_collection' => 'Vaciar libro',
 	'coll-clear_collection_confirm' => '¿Realmente quieres borrar completamente tu libro?',
 	'coll-clear_collection_tooltip' => 'Remover todas las páginas wiki de tu libro actual',
+	'coll-help' => 'Ayuda',
 	'coll-helppage' => 'Help:Libros',
 	'coll-load_collection' => 'Cargar libro',
 	'coll-load_collection_tooltip' => 'Cargar este libro como su libro actual',
@@ -1758,15 +1760,18 @@ $messages['pt-br'] = array(
 $messages['ro'] = array(
 	'coll-create_a_book' => 'Creează o carte',
 	'coll-download_as' => 'Descarcă $1',
-	'coll-add_category' => 'Adaugă categorie',
+	'coll-disable' => 'dezactivează',
+	'coll-add_category' => 'Adaugă această categorie la carte',
 	'coll-add_category_popup' => 'Adăugaţi wiki pagini din categoria indicată în cartea dumneavoastră',
 	'coll-add_category_tooltip' => 'Adăugaţi toate wiki paginile din această categorie în cartea dumneavoastră',
+	'coll-add_this_page' => 'Adaugă această pagină la carte',
 	'coll-add_page_popup' => 'Adăugaţi wiki paginile indicate în cartea dumneavoastră',
 	'coll-add_page_tooltip' => 'Adăugaţi wiki pagina actuală în cartea dumneavoastră',
 	'coll-bookscategory' => 'Cărţi',
 	'coll-clear_collection' => 'Goliţi cartea',
 	'coll-clear_collection_confirm' => 'Doriţi să goliţi complet cartea dumneavoastră?',
 	'coll-clear_collection_tooltip' => 'Elimină toate wiki paginile din cartea actuală',
+	'coll-help' => 'Ajutor',
 	'coll-helppage' => 'Help:Cărţi',
 	'coll-load_collection' => 'Încarcă cartea',
 	'coll-load_collection_tooltip' => 'Încarcă această carte ca actuala dumneavoastră carte',
