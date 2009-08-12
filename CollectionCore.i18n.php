@@ -228,6 +228,9 @@ $messages['bg'] = array(
 $messages['bn'] = array(
 	'coll-create_a_book' => 'বই তৈরি করো',
 	'coll-disable' => 'নিস্ক্রিয়',
+	'coll-bookscategory' => 'বইসমূহ',
+	'coll-help' => 'সহায়িকা',
+	'coll-printable_version_pdf' => 'PDF সংস্করণ',
 );
 
 /** Breton (Brezhoneg)
@@ -304,27 +307,38 @@ $messages['bs'] = array(
 
 /** Catalan (Català)
  * @author Aleator
+ * @author Paucabot
  * @author SMP
  * @author Solde
  * @author Vriullop
  */
 $messages['ca'] = array(
+	'coll-print_export' => 'Imprimeix/exporta',
 	'coll-create_a_book' => 'Crea un llibre',
+	'coll-create_a_book_tooltip' => 'Crea un llibre o una col·lecció de pàgines',
+	'coll-book_mode' => 'Mode llibre',
 	'coll-download_as' => 'Descarrega com $1',
-	'coll-add_category' => 'Afegeix categoria',
+	'coll-download_as_tooltip' => "Descarrega una versió $1 d'aquesta pàgina wiki",
+	'coll-disable' => 'Inhabilita',
+	'coll-disable_tooltip' => 'Inhabilita el mode de creació de llibres',
+	'coll-add_category' => 'Afegiu aquesta categoria al vostre llibre',
 	'coll-add_category_popup' => 'Afegeix al llibre les pàgines de la categoria enllaçada',
 	'coll-add_category_tooltip' => "Afegeix al llibre totes les pàgines d'aquesta categoria",
+	'coll-add_this_page' => 'Afegiu aquesta pàgina al vostre llibre',
 	'coll-add_page_popup' => 'Afegeix la pàgina wiki enllaçada al llibre',
 	'coll-add_page_tooltip' => 'Afegeix la pàgina wiki actual al llibre',
 	'coll-bookscategory' => 'Llibres',
 	'coll-clear_collection' => 'Buida llibre',
 	'coll-clear_collection_confirm' => 'Esteu segurs de buidar completament el vostre llibre?',
 	'coll-clear_collection_tooltip' => 'Esborra totes les pàgines wiki del llibre actual',
+	'coll-help' => 'Ajuda',
+	'coll-help_tooltip' => "Mostra l'ajuda sobre la creació de llibres",
 	'coll-helppage' => 'Help:Llibres',
 	'coll-load_collection' => 'Carrega llibre',
 	'coll-load_collection_tooltip' => 'Carrega aquest llibre com el vostre llibre actual',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàgina|pàgines}}',
 	'coll-printable_version_pdf' => 'Versió en PDF',
+	'coll-remove_this_page' => 'Eliminau aquesta pàgina del vostre llibre',
 	'coll-remove_page_popup' => 'Treu del wiki la pàgina wiki enllaçada',
 	'coll-remove_page_tooltip' => 'Treu la pàgina wiki actual del llibre',
 	'coll-show_collection' => 'Mostra llibre',
