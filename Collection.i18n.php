@@ -167,6 +167,7 @@ $messages['qqq'] = array(
 	'coll-print_template_pattern' => 'Use print templates being subpages of regular templates.
 
 $1 is a placeholder and will be replaced by content during the rendering process.',
+	'coll-intro_text' => 'Introduction text at [[Special:Book]]',
 	'coll-savedbook_template' => 'This is the name of a template that is inserted at the top of pages for saved collections ([[wikipedia:Template:Saved_book|example]]).',
 	'coll-your_book' => '{{Identical|Books}}',
 	'coll-download_title' => '{{Identical|Download}}',
@@ -299,6 +300,7 @@ $messages['am'] = array(
  * @author Antime
  * @author Ciphers
  * @author Meno25
+ * @author Orango
  * @author OsamaK
  * @author Prof.Sherif
  */
@@ -322,7 +324,7 @@ $messages['ar'] = array(
 	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
 <strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
 هذه الصفحة لن تعمل بطريقة صحيحة، إلا إذا تم تفعيل الجافاسكريبت.</strong>',
-	'coll-intro_text' => 'أنشئ وتحكم بمجموعتك الفردية من صفحات الويكي.<br />انظر [[{{MediaWiki:Coll-helppage}}]] لمزيد من المعلومات.',
+	'coll-intro_text' => 'أنشئ وتحكم بمجموعتك الفردية من صفحات الويكي.<br />انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول الكتب]] لمزيد من المعلومات.',
 	'coll-savedbook_template' => 'كتاب_محفوظ',
 	'coll-your_book' => 'كتابك',
 	'coll-download_title' => 'تنزيل',
@@ -722,7 +724,10 @@ $messages['bg'] = array(
  * @author Bellayet
  */
 $messages['bn'] = array(
+	'coll-collection' => 'বই',
+	'coll-collections' => 'বইসমূহ',
 	'coll-print_template_prefix' => 'মুদ্রণ',
+	'coll-print_template_pattern' => '$1/মুদ্রণ',
 	'coll-savedbook_template' => 'সংরক্ষিত_বই',
 	'coll-your_book' => 'আপনার বই',
 	'coll-download_title' => 'ডাউনলোড',
@@ -978,12 +983,17 @@ Molimo da kontaktirate Vašeg MediaWiki administratora.',
 /** Catalan (Català)
  * @author Aleator
  * @author Jordi Roqué
+ * @author Paucabot
  * @author SMP
  * @author Solde
  * @author Vriullop
  */
 $messages['ca'] = array(
 	'coll-desc' => '[[Special:Book|Crea llibres]]',
+	'coll-book_mode_intro' => "Amb el ''mode llibre'', podeu crear un llibre format per les pàgines que volgueu. Podeu exportar-lo en diferents formats (per exemple PDF o ODF) o  demanar una còpia impresa.",
+	'coll-book_mode_help' => "Vegeu [[{{MediaWiki:Coll-helppage}}|la pàgina d'ajuda dels llibres]] per més informació.",
+	'coll-start_book_mode' => 'Inicia el mode llibre',
+	'coll-book_mode_text_article' => 'Text en mode llibre',
 	'coll-collection' => 'Llibre',
 	'coll-collections' => 'Llibres',
 	'coll-exclusion_category_title' => 'Excloure en imprimir',
@@ -991,10 +1001,15 @@ $messages['ca'] = array(
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Subpàgina desconeguda',
 	'coll-unknown_subpage_text' => 'No existeix aquesta subpàgina de [[Special:Book|Llibre]]',
+	'coll-couldnotaddarticle_title' => "No s'ha pogut afegir la pàgina wiki",
+	'coll-couldnotaddarticle_msg' => "No s'ha pogut afegir la pàgina wiki.",
+	'coll-couldnotremovearticle_title' => "No s'ha pogut eliminar la pàgina",
+	'coll-couldnotremovearticle_msg' => "No s'ha pogut eliminar la pàgina wiki.",
 	'coll-noscript_text' => "<h1>Es necessita JavaScript!</h1>
 <strong>El vostre navegador no admet el JavaScript o el té desactivat.
 Aquesta pàgina no funcionarà correctament si no l'activeu.</strong>",
-	'coll-intro_text' => 'Creeu i gestioneu la vostra selecció personal de pàgines wiki.<br />Vegeu [[{{MediaWiki:Coll-helppage}}]] per a més informació.',
+	'coll-intro_text' => "Creeu i gestioneu la vostra selecció personal de pàgines wiki.<br />
+Vegeu [[{{MediaWiki:Coll-helppage}}|la pàgina d'ajuda dels llibres]] per a més informació.",
 	'coll-savedbook_template' => 'llibre_desat',
 	'coll-your_book' => 'El vostre llibre',
 	'coll-download_title' => 'Descarrega',
@@ -1083,6 +1098,8 @@ Si us plau, contacteu amb el vostre administrador de MediaWiki.",
 	'coll-more_info' => 'Mostra més informació',
 	'coll-hide_info' => 'Amaga informació',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Ordena informacó de PediaPress',
+	'right-collectionsaveasuserpage' => "Desa els llibres com a pàgina d'usuari",
+	'right-collectionsaveascommunitypage' => 'Desa els llibres com una pàgina de la comunitat',
 );
 
 /** Czech (Česky)
@@ -1107,7 +1124,8 @@ $messages['cs'] = array(
 	'coll-noscript_text' => '<h1>Je vyžadován JavaScript!</h1>
 <strong>Váš prohlížeč nepodporuje JavaScript nebo máte JavaScript vypnutý.
 Tato stránka nebude správně fungovat, dokud JavaScript nezapnete.</strong>',
-	'coll-intro_text' => 'Zde můžete vytvářet a spravovat své osobní výběry stránek wiki.<br />Další informace najdete v [[{{MediaWiki:Coll-helppage}}|nápovědě ke knihám]].',
+	'coll-intro_text' => 'Můžete vytvářet a spravovat své osobní výběry stránek wiki.<br />
+Další informace najdete v [[{{MediaWiki:Coll-helppage}}|nápovědě ke knihám]].',
 	'coll-savedbook_template' => 'uložená_kniha',
 	'coll-your_book' => 'Vaše kniha',
 	'coll-download_title' => 'Stáhnout',
@@ -4832,6 +4850,13 @@ $messages['ml'] = array(
 	'coll-book_text' => 'താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന സേവനദാതാക്കളെ സന്ദര്‍ശിച്ച് നിങ്ങളുടെ ശേഖരത്തിന്റെ അച്ചടി രൂപം ഓര്‍ഡര്‍ ചെയ്യാവുന്നതാണ്‌:',
 	'coll-order_from_pp' => '$1-ല്‍ നിന്നു പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
 	'coll-about_pp' => '$1-നെ കുറിച്ച്',
+);
+
+/** Mongolian (Монгол)
+ * @author Chinneeb
+ */
+$messages['mn'] = array(
+	'coll-yes' => 'Тийм',
 );
 
 /** Marathi (मराठी)
