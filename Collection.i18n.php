@@ -3060,6 +3060,10 @@ $messages['hil'] = array(
  */
 $messages['hr'] = array(
 	'coll-desc' => '[[Special:Book|Stvori zbirku]]',
+	'coll-book_mode_intro' => "S ''načinom zbirka'' možete stvoriti zbirku koja se sastoji od proizvoljnih wiki stranica. Možete izvesti svoju zbirku u različitim formatima (npr. PDF ili ODF) ili naručiti tiskani primjerak.",
+	'coll-book_mode_help' => 'Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više informacija.',
+	'coll-start_book_mode' => 'Pokrenite način zbirke',
+	'coll-book_mode_text_article' => 'Tekst načina zbirke',
 	'coll-collection' => 'Zbirka',
 	'coll-collections' => 'Zbirke',
 	'coll-exclusion_category_title' => 'Izuzmi u ispisu',
@@ -3067,9 +3071,14 @@ $messages['hr'] = array(
 	'coll-print_template_pattern' => '$1/Tiskaj',
 	'coll-unknown_subpage_title' => 'Nepoznata podstranica',
 	'coll-unknown_subpage_text' => 'Ova podstranica [[Special:Book|zbirke]] ne postoji',
+	'coll-couldnotaddarticle_title' => 'Nije bilo moguće dodati wiki stranicu',
+	'coll-couldnotaddarticle_msg' => 'Wiki stranica nije mogla biti dodana.',
+	'coll-couldnotremovearticle_title' => 'Nije bilo moguće ukloniti wiki stranicu',
+	'coll-couldnotremovearticle_msg' => 'Wiki stranica ne može biti uklonjena.',
 	'coll-noscript_text' => '<h1>Potreban je JavaScript!</h1>
 <strong>Vaš preglednik nema podršku za JavaScript ili je isključena. Ova stranica neće raditi ispravno, ako JavaScript nije omogućen.</strong>',
-	'coll-intro_text' => 'Napravite i uređujte svoj osobni odabir wiki stranica.<br />Vidi [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više obavijesti.',
+	'coll-intro_text' => 'Stvorite i uređujte svoj osobni odabir wiki stranica.<br />
+Vidi [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više obavijesti.',
 	'coll-savedbook_template' => 'snimljena_zbirka',
 	'coll-your_book' => 'Vaša zbirka',
 	'coll-download_title' => 'Preuzmi',
@@ -3160,6 +3169,8 @@ Molimo kontaktirajte svog MediaWiki administratora.',
 	'coll-more_info' => 'Prikaži više informacija',
 	'coll-hide_info' => 'Sakrij informacije',
 	'coll-order_info_article' => '{{MediaWiki:Coll-Helppage}}/informacije o narudžbi PediaPressa',
+	'right-collectionsaveasuserpage' => 'Spremi zbirke kao suradničku stranicu',
+	'right-collectionsaveascommunitypage' => 'Spremi zbirke kao stranicu zajednice',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -7106,6 +7117,7 @@ Var god kontakta din MediaWiki-administratör.',
 );
 
 /** Telugu (తెలుగు)
+ * @author Kiranmayee
  * @author Veeven
  * @author వైజాసత్య
  */
@@ -7118,6 +7130,7 @@ $messages['te'] = array(
 	'coll-download_text' => 'మీ పేజీ సేకరణ నుండి ఆటోమెటిగ్గా తయారయిన PDF ఫైలుని దిగుమతిచేసుకోడానికి, ఈ బొత్తాన్ని నొక్కండి.',
 	'coll-download' => 'దిగుమతి',
 	'coll-remove' => 'తొలగించు',
+	'coll-show' => 'చూపించు',
 	'coll-move_up' => 'పైకి కదుపు',
 	'coll-move_down' => 'క్రిందికి కదుపు',
 	'coll-move_to_bottom' => 'అడుగునకు కదుపు',
