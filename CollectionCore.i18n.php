@@ -582,12 +582,14 @@ $messages['eo'] = array(
  * @author Crazymadlover
  * @author Imre
  * @author Locos epraix
+ * @author Omnipaedista
  * @author Remember the dot
  * @author Sanbec
  */
 $messages['es'] = array(
 	'coll-create_a_book' => 'Crear un libro',
 	'coll-download_as' => 'Descargar como $1',
+	'coll-disable' => 'deshabilitar',
 	'coll-add_category' => 'Añadir categoría',
 	'coll-add_category_popup' => 'Agregar páginas wiki en categoría vinculada a tu libro',
 	'coll-add_category_tooltip' => 'Agregar todas las páginas wiki en esta categoría a tu libro',
