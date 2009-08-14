@@ -253,8 +253,8 @@ $messages['gom-latn'] = array(
  * @author SPQRobin
  */
 $messages['af'] = array(
-	'coll-collection' => 'Versameling',
-	'coll-collections' => 'Versamelings',
+	'coll-collection' => 'Boek',
+	'coll-collections' => 'Boeke',
 	'coll-exclusion_category_title' => 'Laat weg met afdrukke',
 	'coll-print_template_prefix' => 'Afdruk',
 	'coll-unknown_subpage_title' => 'Onbekende subbladsy',
@@ -265,6 +265,8 @@ Hierdie bladsy sal nie korrek werk tensy JavaScript aangeskakel word nie.</stron
 	'coll-intro_text' => 'Stel u eie versameling wikibladsye saam.<br />
 [[{{MediaWiki:Coll-helppage}}|Meer inligting]].',
 	'coll-your_book' => 'U boek',
+	'coll-download_title' => 'Aflaai',
+	'coll-format_label' => 'Formaat:',
 	'coll-remove' => 'Skrap',
 	'coll-move_to_top' => 'Skuif tot bo',
 	'coll-move_up' => 'Skuif op',
@@ -277,7 +279,7 @@ Hierdie bladsy sal nie korrek werk tensy JavaScript aangeskakel word nie.</stron
 	'coll-new_chapter' => 'Voer naam vir nuwe hoofstuk in',
 	'coll-rename_chapter' => 'Voer nuwe naam vir hoofstuk in',
 	'coll-no_such_category' => "Geen so 'n kategorie",
-	'coll-empty_collection' => 'Lëe versameling',
+	'coll-empty_collection' => 'Leë boek',
 	'coll-save_collection_title' => 'Stoor versameling',
 	'coll-personal_collection_label' => 'Persoonlike versameling:',
 	'coll-community_collection_label' => 'Gemeenskap versameling:',
@@ -285,7 +287,11 @@ Hierdie bladsy sal nie korrek werk tensy JavaScript aangeskakel word nie.</stron
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nee',
 	'coll-cancel' => 'Kanselleer',
+	'coll-notfound_title' => 'Boek nie gevind nie',
+	'coll-download_notfound_title' => 'Die lêer is nie gevind nie',
+	'coll-about_pp' => 'Aangaande $1',
 	'coll-license' => 'Lisensie',
+	'coll-return_to' => 'Terug na [[:$1]]',
 );
 
 /** Amharic (አማርኛ)
@@ -2530,10 +2536,12 @@ Veuillez contacter votre administrateur MediaWiki.',
 );
 
 /** Western Frisian (Frysk)
+ * @author SK-luuut
  * @author Snakesteuben
  */
 $messages['fy'] = array(
 	'coll-yes' => 'Ja',
+	'coll-cancel' => 'Ofbrekke',
 );
 
 /** Galician (Galego)
@@ -6084,6 +6092,7 @@ Por favor, contate o seu administrador MediaWiki.',
  */
 $messages['ro'] = array(
 	'coll-desc' => '[[Special:Book|Creare cărţi]]',
+	'coll-book_mode_help' => 'Vedeţi [[{{MediaWiki:Coll-helppage}}|pagina de ajutor despre cărţi]] pentru mai multe informaţii.',
 	'coll-collection' => 'Carte',
 	'coll-collections' => 'Cărţi',
 	'coll-exclusion_category_title' => 'Exclude la imprimare',
@@ -6098,7 +6107,8 @@ $messages['ro'] = array(
 	'coll-noscript_text' => '<h1>JavaScript este necesar!</h1>
 <strong>Browser-ul dumneavoastră nu suportă JavaScript sau JavaScript a fost oprit.
 Această pagină nu va lucra corect, doar dacă JavaScript este pornit.</strong>',
-	'coll-intro_text' => 'Creaţi-vă şi administraţi-vă propria selecţie de wiki pagini.<br />Vedeţi [[{{MediaWiki:Coll-helppage}}]] pentru mai multe informaţii.',
+	'coll-intro_text' => 'Creaţi-vă şi administraţi-vă propria selecţie de pagini wiki.<br />
+Vedeţi [[{{MediaWiki:Coll-helppage}}|pagina de ajutor despre cărţi]] pentru mai multe informaţii.',
 	'coll-savedbook_template' => 'carte_salvată',
 	'coll-your_book' => 'Cartea dumneavoastră',
 	'coll-download_title' => 'Descarcă',

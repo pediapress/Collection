@@ -83,17 +83,19 @@ $messages['qqq'] = array(
 /** Afrikaans (Afrikaans)
  * @author Anrie
  * @author Arnobarnard
+ * @author Naudefj
  */
 $messages['af'] = array(
 	'coll-create_a_book' => 'My versameling',
 	'coll-download_as' => 'Laaf as $1 af',
 	'coll-add_category' => 'Voeg kategorie by',
 	'coll-bookscategory' => 'Boeke',
+	'coll-help' => 'Help',
 	'coll-helppage' => 'Help:Boeke',
-	'coll-load_collection' => 'Laai versameling',
+	'coll-load_collection' => 'Laai boek',
 	'coll-n_pages' => '$1 {{PLURAL:$1|bladsy|bladsye}}',
 	'coll-printable_version_pdf' => 'PDF-weergawe',
-	'coll-show_collection' => 'Wys versameling',
+	'coll-show_collection' => 'Wys boek',
 );
 
 /** Arabic (العربية)
