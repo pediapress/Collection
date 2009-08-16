@@ -3971,7 +3971,7 @@ $messages['ja'] = array(
 	'coll-no_such_category' => '指定されたカテゴリは存在しません',
 	'coll-notitle_title' => 'ページタイトルが未設定です。',
 	'coll-post_failed_title' => 'POST要求の失敗',
-	'coll-post_failed_msg' => '$1へのPOST要求は失敗しました ($2)。',
+	'coll-post_failed_msg' => '$1へのPOST要求は失敗しました （$2）。',
 	'coll-mwserve_failed_title' => 'レンダリングサーバーのエラー',
 	'coll-mwserve_failed_msg' => 'レンダリングサーバーでエラーが発生しました: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'サーバからのエラー応答',
@@ -4002,8 +4002,8 @@ $messages['ja'] = array(
 
 <p>このページは数秒毎に自動的に更新されます。更新されない場合は、ブラウザの更新ボタンを押してください。</p>',
 	'coll-rendering_status' => '<strong>状況:</strong> $1',
-	'coll-rendering_article' => '(ウィキページ: $1)',
-	'coll-rendering_page' => '(ページ: $1)',
+	'coll-rendering_article' => '（ウィキページ: $1）',
+	'coll-rendering_page' => '（ページ: $1）',
 	'coll-rendering_finished_title' => 'レンダリング完了',
 	'coll-rendering_finished_text' => '<strong>ドキュメントファイルは生成されました。</strong>
 あなたのコンピュータに<strong>[$1 ファイルをダウンロード]</strong>してください。
