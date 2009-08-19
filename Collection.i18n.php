@@ -287,6 +287,7 @@ Hierdie bladsy sal nie korrek werk tensy JavaScript aangeskakel word nie.</stron
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nee',
 	'coll-cancel' => 'Kanselleer',
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-notfound_title' => 'Boek nie gevind nie',
 	'coll-download_notfound_title' => 'Die lêer is nie gevind nie',
 	'coll-about_pp' => 'Aangaande $1',
@@ -1875,7 +1876,8 @@ $messages['es'] = array(
 	'coll-noscript_text' => '<h1>¡Se necesita JavaScript!</h1>
 <strong>Tu navegador no permite JavaScript o está deshabilitado.
 Esta página no funcionará correctamente mientras no esté habilitado.</strong>',
-	'coll-intro_text' => 'Crear y gestionar tu selección individual de páginas wiki.<br />Lee [[{{MediaWiki:Coll-helppage}}]] para más información.',
+	'coll-intro_text' => 'Crear y gestionar tu selección individual de páginas wiki.<br />
+Mira [[{{MediaWiki:Coll-helppage}}|la página de ayuda acerca de libros]] para más información.',
 	'coll-savedbook_template' => 'libro_guardado',
 	'coll-your_book' => 'Tu libro',
 	'coll-download_title' => 'Descargar',
@@ -2305,7 +2307,7 @@ $messages['fa'] = array(
 $messages['fi'] = array(
 	'coll-desc' => '[[Special:Book|Laadi kirjoja]].',
 	'coll-book_mode_intro' => "''Kirjatilassa'' voit luoda kirjan, joka koostuu haluamistasi wikisivuista. Voit viedä kirjasi eri muodoissa (esimerkiksi PDF- tai ODF-tiedostona) tai tilata sen painettuna.",
-	'coll-book_mode_help' => 'Katso sivulta [[{{MediaWiki:Coll-helppage}}]] lisätietoja.',
+	'coll-book_mode_help' => 'Katso [[{{MediaWiki:Coll-helppage}}|ohjesivulta lisätietoja]].',
 	'coll-start_book_mode' => 'Käynnistä kirjatila',
 	'coll-book_mode_text_article' => 'Kirjatilan teksti',
 	'coll-collection' => 'Kirja',
@@ -2322,7 +2324,8 @@ $messages['fi'] = array(
 	'coll-noscript_text' => '<h1>Vaatii toimiakseen JavaScriptin</h1>
 <strong>Selaimesi ei tue JavaScriptiä tai JavaScript on poistettu käytöstä.
 Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
-	'coll-intro_text' => 'Laadi ja hallinnoi omia henkilökohtaisia wikisivujen valikoimiasi.<br />Lisätietoja sivulla [[{{MediaWiki:Coll-helppage}}]].',
+	'coll-intro_text' => 'Laadi ja hallinnoi omia henkilökohtaisia wikisivujen valikoimiasi.<br />
+Katso lisätietoja [[{{MediaWiki:Coll-helppage}}|ohjesivulta]].',
 	'coll-savedbook_template' => 'tallennettu_kirja',
 	'coll-your_book' => 'Sinun kirjasi',
 	'coll-download_title' => 'Lataa',
@@ -2893,7 +2896,7 @@ $messages['haw'] = array(
  */
 $messages['he'] = array(
 	'coll-desc' => '[[Special:Book|איסוף דפים לספר]], יצירת קובצי PDF',
-	'coll-book_mode_intro' => "באמצעות ''מצב ספר'' ניתן ליצור ספר המבוסס על דפי ויקי שנבחרו באופן שרירותי. תוכלו לייצא את הספר שלכם בכל מיני סוגי קבצים (לדוגמה PDF או ODF) או להזמין עותק מודפס.",
+	'coll-book_mode_intro' => 'באמצעות "מצב ספר", ניתן ליצור ספר הכולל דפי ויקי כלשהם. תוכלו לייצא את הספר שלכם בסוגי קבצים שונים (לדוגמה, PDF או ODF) או להזמין עותק מודפס.',
 	'coll-book_mode_help' => 'עיינו ב[[{{MediaWiki:Coll-helppage}}|דף העזרה אודות ספרים]] למידע נוסף.',
 	'coll-start_book_mode' => 'הפעלת מצב ספר',
 	'coll-book_mode_text_article' => 'טקסט במצב ספר',
@@ -5349,6 +5352,8 @@ Neem contact op met uw MediaWiki-beheerder.',
  */
 $messages['nn'] = array(
 	'coll-desc' => '[[Special:Book|Opprett bøker]]',
+	'coll-book_mode_intro' => 'Ved hjelp av bokfunksjonen kan du laga ei bok utgjort av valfrie wikisider. Du kan eksportera boka til ulike format, til dømes PDF eller ODF, eller tinga ein trykt kopi.',
+	'coll-start_book_mode' => 'Start bokfunksjonen',
 	'coll-collection' => 'Bok',
 	'coll-collections' => 'Bøker',
 	'coll-exclusion_category_title' => 'Ekskluder ved utskrift',
@@ -5463,9 +5468,13 @@ Kontakt MediaWiki-administratoren din.',
  * @author Jon Harald Søby
  * @author Laaknor
  * @author Nghtwlkr
+ * @author Simny
  */
 $messages['no'] = array(
 	'coll-desc' => '[[Special:Book|Lag bøker]]',
+	'coll-book_mode_intro' => 'Med bokfunksjonen kan du lage ei bok av valgfrie wikisider. Du kan eksportere boka til ulike formater, for eksempel PDF eller ODF, eller bestille en trykt kopi.',
+	'coll-book_mode_help' => 'Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om bøker]] for mer informasjon.',
+	'coll-start_book_mode' => 'Start bokfunksjonen',
 	'coll-collection' => 'Bok',
 	'coll-collections' => 'Bøker',
 	'coll-exclusion_category_title' => 'Ekskluder ved utskrift',
@@ -5479,7 +5488,7 @@ $messages['no'] = array(
 	'coll-couldnotremovearticle_msg' => 'Wikisiden kunne ikke fjernes.',
 	'coll-noscript_text' => '<h1>JavaScript er påkrevd!</h1>
 <strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong>',
-	'coll-intro_text' => 'Lag og administrer din egen samling av wikisider.<br /> Se [[{{MediaWiki:Coll-helppage}}]] for mer informasjon.',
+	'coll-intro_text' => 'Lag og administrer din egen samling av wikisider.<br /> Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden]] for mer informasjon.',
 	'coll-savedbook_template' => 'lagret_bok',
 	'coll-your_book' => 'Din bok',
 	'coll-download_title' => 'Last ned',
@@ -5566,6 +5575,7 @@ Kontakt din MediaWiki-administrator.',
 	'coll-more_info' => 'Vis mer informasjon',
 	'coll-hide_info' => 'Skjul informasjon',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestillingsinformasjon PediaPress',
+	'right-collectionsaveasuserpage' => 'Lagre bøker som brukersider',
 );
 
 /** Occitan (Occitan)
@@ -8126,6 +8136,7 @@ $messages['yue'] = array(
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Bencmq
  * @author Chenzw
+ * @author Liangent
  * @author Wmr89502270
  */
 $messages['zh-hans'] = array(
@@ -8231,6 +8242,7 @@ $messages['zh-hans'] = array(
 	'coll-more_info' => '显示更多信息',
 	'coll-hide_info' => '隐藏信息',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress订单信息',
+	'right-collectionsaveasuserpage' => '将图书保存为用户页',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
