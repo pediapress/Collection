@@ -2072,18 +2072,19 @@ $messages['sv'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Kiranmayee
  * @author Veeven
  */
 $messages['te'] = array(
 	'coll-create_a_book' => 'ఓ పుస్తకాన్ని సృష్టించండి',
-	'coll-add_category' => 'వర్గాన్ని చేర్చు',
+	'coll-add_category' => 'పుస్తకముకు ఈ వర్గాన్ని చేర్చు',
 	'coll-bookscategory' => 'పుస్తకాలు',
-	'coll-clear_collection' => 'సేకరణని తుడిచివేయి',
+	'coll-clear_collection' => 'పుస్తకముని తుడిచివేయి',
 	'coll-help' => 'సహాయం',
 	'coll-helppage' => 'Help:పుస్తకాలు',
 	'coll-n_pages' => '$1 {{PLURAL:$1|పేజీ|పేజీలు}}',
 	'coll-printable_version_pdf' => 'PDF కూర్పు',
-	'coll-show_collection' => 'సేకరణని చూపించు',
+	'coll-show_collection' => 'పుస్తకముని చూపించు',
 );
 
 /** Tetum (Tetun) */
