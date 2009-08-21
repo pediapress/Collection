@@ -269,6 +269,7 @@ Hierdie bladsy sal nie korrek werk tensy JavaScript aangeskakel word nie.</stron
 	'coll-download_title' => 'Aflaai',
 	'coll-format_label' => 'Formaat:',
 	'coll-remove' => 'Skrap',
+	'coll-show' => 'Wys',
 	'coll-move_to_top' => 'Skuif tot bo',
 	'coll-move_up' => 'Skuif op',
 	'coll-move_down' => 'Skuif af',
@@ -1864,6 +1865,7 @@ Bonvolu kontakti vian administranton de MediaWiki.',
  */
 $messages['es'] = array(
 	'coll-desc' => '[[Special:Book|Crear libros]]',
+	'coll-start_book_mode' => 'Comenzar modo libro',
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluir al imprimir',
@@ -4618,6 +4620,8 @@ Kuckt [[{{MediaWiki:Coll-helppage}}|d'Hëllefsäit iwwer Bicher]] fir méi Infor
 	'coll-rename_chapter' => "Gitt een neie Numm fir d'Kapitel un",
 	'coll-no_such_category' => 'Keng esou Kategorie',
 	'coll-notitle_title' => 'Den Titel vun der Säit konnt net festgestallt ginn.',
+	'coll-post_failed_title' => 'POST Ufro huet net fonctionnéiert',
+	'coll-post_failed_msg' => "D'POST Ufro u(n) $1 huet net fonctionnéiert ($2).",
 	'coll-mwserve_failed_title' => 'Feeler vum Server',
 	'coll-mwserve_failed_msg' => 'Op dem Render-Server ass e Feeler geschitt: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Feelermeldng vum Server',
@@ -4664,6 +4668,8 @@ Opgepasst:
 	'coll-notfound_text' => "D'Buch-Säit konnt net fonnt ginn.",
 	'coll-download_notfound_title' => 'Fichier gouf net fonnt',
 	'coll-download_notfound_text' => 'De Fichier deen Dir versicht erofzeluede gëtt et net: Méiglecherweis gouf e geläscht a muss nees generéiert ginn.',
+	'coll-is_cached' => "<ul><li>Eng tëschegespäichert Versioun vum dkument gouf fonnt, dofir war kee ''rendering'' néideg.
+<a href=\"\$1\">''re-rendering'' erzwengen.</a></li></ul>",
 	'coll-excluded-templates' => '* Schablounen aus der Kategorie [[:Category:$1|$1]] goufen ausgeschloss',
 	'coll-blacklisted-templates' => '* Schablounen op der schwaarzer Lëscht (blacklist) [[:$1]] goufen ausgeschloss.',
 	'coll-return_to_collection' => '<p>Zréck op <a href="$1">$2</a></p>',
@@ -4672,6 +4678,8 @@ Opgepasst:
 	'coll-order_from_pp' => "D'Buch bestelle bäi $1",
 	'coll-about_pp' => 'Iwwer $1',
 	'coll-invalid_podpartner_title' => 'Ongëltege Print-On-Demand (POD) Partner',
+	'coll-invalid_podpartner_msg' => 'Donnéeën vum Print-On-Demand (POD) Partner sinn net valabel.
+Kontaktéiert w.e.g. Äre MediaWiki Adminstrateur.',
 	'coll-license' => 'Lizenz',
 	'coll-return_to' => 'Zréck op [[:$1]]',
 	'coll-more_info' => 'Méi Informatioune weisen',
@@ -5877,6 +5885,7 @@ $messages['ps'] = array(
 
 /** Portuguese (Português)
  * @author 555
+ * @author Giro720
  * @author Heldergeovane
  * @author Lijealso
  * @author MF-Warburg
@@ -5885,6 +5894,10 @@ $messages['ps'] = array(
  */
 $messages['pt'] = array(
 	'coll-desc' => '[[Special:Book|Cria livros]]',
+	'coll-book_mode_intro' => "No ''modo livro'' você pode criar um livro com páginas wikis arbitrárias. Você por exportá=las em diferentes formatos (por exempplo PDF ou ODF) ou solicitar uma cópia impressa.",
+	'coll-book_mode_help' => 'Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para mais detalhes.',
+	'coll-start_book_mode' => 'Começar modo livro',
+	'coll-book_mode_text_article' => 'Modo livro textual',
 	'coll-collection' => 'Livro',
 	'coll-collections' => 'Livros',
 	'coll-exclusion_category_title' => 'Excluir da impressão',
@@ -5893,11 +5906,14 @@ $messages['pt'] = array(
 	'coll-unknown_subpage_title' => 'Sub-página desconhecida',
 	'coll-unknown_subpage_text' => 'Não existe esta sub-página do [[Special:Book|Livro]]',
 	'coll-couldnotaddarticle_title' => 'Não pôde ser adicionada a página wiki',
+	'coll-couldnotaddarticle_msg' => 'A página wiki não pode ser adicionada.',
+	'coll-couldnotremovearticle_title' => 'Não foi possível remover a página wiki',
 	'coll-couldnotremovearticle_msg' => 'A página wiki não pôde ser removida.',
 	'coll-noscript_text' => '<h1>JavaScript é Requerido!</h1>
 <strong>O seu "browser" não suporta JavaScript, ou o JavaScript foi desactivado.
 Esta página não funcionará correctamente, excepto se o JavaScript for activado.</strong>',
-	'coll-intro_text' => 'Crie e manipule sua selecção individual de páginas wiki.<br />Veja [[{{MediaWiki:Coll-helppage}}]] para mais detalhes.',
+	'coll-intro_text' => 'Crie e manipule sua selecção individual de páginas wiki.<br />
+Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para mais detalhes.',
 	'coll-savedbook_template' => 'livro_gravado',
 	'coll-your_book' => 'Seu livro',
 	'coll-download_title' => 'Download',
@@ -5986,6 +6002,8 @@ Por favor, contacte o seu administrador MediaWiki.',
 	'coll-more_info' => 'Mostrar mais informações',
 	'coll-hide_info' => 'Ocultar informações',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informação sobre encomendas PediaPress',
+	'right-collectionsaveasuserpage' => 'Gravar livros como página de utilizador',
+	'right-collectionsaveascommunitypage' => 'Gravar livros como página comunitária',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -7154,14 +7172,24 @@ Var god kontakta din MediaWiki-administratör.',
  */
 $messages['te'] = array(
 	'coll-desc' => '[[Special:Book|పుస్తకాలను తయారుచేసుకోండి]]',
+	'coll-start_book_mode' => 'పుస్తకము మోడుని ప్రారంభించు',
+	'coll-book_mode_text_article' => 'పుస్తకము మోడు పాఠ్యము',
 	'coll-collection' => 'పుస్తకం',
 	'coll-collections' => 'పుస్తకాలు',
+	'coll-exclusion_category_title' => 'ముద్రణలో చేర్చవద్దు',
+	'coll-print_template_prefix' => 'ముద్రించు',
+	'coll-print_template_pattern' => '$1/ముద్రించు',
+	'coll-unknown_subpage_title' => 'గుర్తుతెలియని ఉపపేజి',
+	'coll-couldnotaddarticle_title' => 'వికి పేజిని కలుపలేకపోయాము',
+	'coll-couldnotremovearticle_title' => 'వికి పేజిని తొలగించలేకపోయాము',
 	'coll-your_book' => 'మీ పుస్తకం',
 	'coll-download_title' => 'దింపుకోండి',
-	'coll-download_text' => 'మీ పేజీ సేకరణ నుండి ఆటోమెటిగ్గా తయారయిన PDF ఫైలుని దిగుమతిచేసుకోడానికి, ఈ బొత్తాన్ని నొక్కండి.',
+	'coll-download_text' => ' ఒక కూర్పుని దిగుమతి చేసుకోడానికి, ఫైలు ఫార్మాటుని ఎంచుకుని, ఈ బొత్తాన్ని నొక్కండి.',
 	'coll-download' => 'దిగుమతి',
+	'coll-format_label' => 'ఫార్మాటు:',
 	'coll-remove' => 'తొలగించు',
 	'coll-show' => 'చూపించు',
+	'coll-move_to_top' => 'అన్నిటికన్నా పైన పెట్టు',
 	'coll-move_up' => 'పైకి కదుపు',
 	'coll-move_down' => 'క్రిందికి కదుపు',
 	'coll-move_to_bottom' => 'అడుగునకు కదుపు',
@@ -7179,8 +7207,8 @@ $messages['te'] = array(
 	'coll-empty_collection' => 'ఖాళీ పుస్తకం',
 	'coll-revision' => 'కూర్పు: $1',
 	'coll-save_collection_title' => 'మీ పుస్తకమును భద్రపరచి పంచుకోండి',
-	'coll-save_collection_text' => 'ఈ సేకరణని తర్వాత వాడుకోడానికి భద్రపరచుకోవాలంటే, ఓ సేకరణ రకాన్ని ఎంచుకోండి మరియు పేజీ శీర్షిక ఇవ్వండి:',
-	'coll-login_to_save' => 'సేకరణలని మీరు తర్వాత వాడుకోవడానికి భద్రపరచుకోవాలనుకుంటే, [[Special:UserLogin|లోనికి ప్రవేశించండి లేదా ఖాతా సృష్టించుకోండి]].',
+	'coll-save_collection_text' => 'మీ పుస్తకమును భద్రపరచుకోవడానికి ఒక భద్రపరచు స్థలమును ఎన్నుకోండి:',
+	'coll-login_to_save' => 'మీ పుస్తకములను మీరు తర్వాత వాడుకోవడానికి భద్రపరచుకోవాలనుకుంటే, [[Special:UserLogin|లోనికి ప్రవేశించండి లేదా ఖాతా సృష్టించుకోండి]].',
 	'coll-personal_collection_label' => 'వ్యక్తిగత పుస్తకము:',
 	'coll-community_collection_label' => 'సామూహిక పుస్తకం:',
 	'coll-save_collection' => 'పుస్తకముని భద్రపరచు',
@@ -7207,6 +7235,8 @@ $messages['te'] = array(
 	'coll-return_to' => 'తిరిగి [[:$1]]కి',
 	'coll-more_info' => 'మరింత సమాచారాన్ని చూపించు',
 	'coll-hide_info' => 'సమాచారాన్ని దాచు',
+	'right-collectionsaveasuserpage' => 'పుస్తకములను సభ్యుని పేజి లాగ భద్రపరచుము',
+	'right-collectionsaveascommunitypage' => 'పుస్తకములను కమ్యూనిటీ పేజి లాగ భద్రపరచుము',
 );
 
 /** Tetum (Tetun)
@@ -7493,6 +7523,8 @@ Makipagugnayan sa iyong tagapangasiwa ng MediaWiki.',
  */
 $messages['tr'] = array(
 	'coll-desc' => '[[Special:Book|Kitap oluştur]]',
+	'coll-start_book_mode' => 'Kitap kipini başlat',
+	'coll-book_mode_text_article' => 'Kitap kipi metni',
 	'coll-collection' => 'Kitap',
 	'coll-collections' => 'Kitaplar',
 	'coll-exclusion_category_title' => 'Yazdırırken hariç tut',
@@ -7847,8 +7879,12 @@ $messages['vep'] = array(
  */
 $messages['vi'] = array(
 	'coll-desc' => '[[Special:Book|Tạo sách vở]]',
+	'coll-book_mode_intro' => "Với ''chế độ tạo sách'' bạn có thể tạo một cuốn sách bao gồm các trang wiki ngẫu nhiên. Bạn có thể xuất cuốn sách của bạn ra nhiều định dạng khác nhau (như PDF hoặc ODF) hoặc đặt một bản in.",
+	'coll-book_mode_help' => 'Xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về sách]] để biết thêm thông tin.',
+	'coll-start_book_mode' => 'Bắt đầu chế độ tạo sách',
+	'coll-book_mode_text_article' => 'Văn bản chế độ tạo sách',
 	'coll-collection' => 'Sách',
-	'coll-collections' => 'Sách vở',
+	'coll-collections' => 'Sách',
 	'coll-exclusion_category_title' => 'Ẩn khi in',
 	'coll-print_template_prefix' => 'In',
 	'coll-print_template_pattern' => '$1/Print',
@@ -7856,12 +7892,13 @@ $messages['vi'] = array(
 	'coll-unknown_subpage_text' => 'Trang phụ của [[Special:Book|Sách]] này không tồn tại',
 	'coll-couldnotaddarticle_title' => 'Không thể thêm trang wiki',
 	'coll-couldnotaddarticle_msg' => 'Không thêm được trang wiki.',
-	'coll-couldnotremovearticle_title' => 'Không thể dời trang wiki',
-	'coll-couldnotremovearticle_msg' => 'Không dời được trang wiki.',
-	'coll-noscript_text' => '<h1>Yêu cầu phải có JavaScript!</h1>
+	'coll-couldnotremovearticle_title' => 'Không thể bỏ trang wiki',
+	'coll-couldnotremovearticle_msg' => 'Không bỏ được trang wiki.',
+	'coll-noscript_text' => '<h1>Cần phải có JavaScript!</h1>
 <strong>Trình duyệt của bạn không hỗ trợ JavaScript hoặc JavaScript đã bị tắt.
 Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaScript.</strong>',
-	'coll-intro_text' => 'Tạo và quản lý bộ sưu tập trang wiki của riêng bạn.<br />Xem [[{{MediaWiki:Coll-helppage}}]] để biết thêm thông tin.',
+	'coll-intro_text' => 'Tạo và quản lý một tuyển tập gồm các trang wiki của riêng bạn.<br />
+Xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về sách]] để biết thêm thông tin.',
 	'coll-savedbook_template' => 'sách_đã_lưu',
 	'coll-your_book' => 'Sách của bạn',
 	'coll-download_title' => 'Tải về',
@@ -7869,7 +7906,7 @@ Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaS
 	'coll-download_as_text' => 'Để tải phiên bản ở dạng $1 hãy nhấn nút.',
 	'coll-download' => 'Tải về',
 	'coll-format_label' => 'Định dạng:',
-	'coll-remove' => 'Dời',
+	'coll-remove' => 'Bỏ',
 	'coll-show' => 'Hiện',
 	'coll-move_to_top' => 'Di chuyển lên đầu',
 	'coll-move_up' => 'Chuyển lên',
@@ -7894,7 +7931,7 @@ Trang này sẽ không hoạt động đúng, trừ khi bạn kích hoạt JavaS
 	'coll-empty_collection' => 'Sách trống',
 	'coll-revision' => 'Phiên bản: $1',
 	'coll-save_collection_title' => 'Lưu và chia sẻ sách của bạn',
-	'coll-save_collection_text' => 'Chọn một vị trí:',
+	'coll-save_collection_text' => 'Chọn một nơi để lưu sách:',
 	'coll-login_to_save' => 'Nếu bạn muốn lưu sách để sau này dùng, xin hãy [[Special:UserLogin|đăng nhập hoặc mở tài khoản]].',
 	'coll-personal_collection_label' => 'Sách cá nhân:',
 	'coll-community_collection_label' => 'Sách cộng đồng:',
