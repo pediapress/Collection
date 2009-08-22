@@ -86,10 +86,12 @@ $messages['qqq'] = array(
  * @author Naudefj
  */
 $messages['af'] = array(
-	'coll-create_a_book' => 'My versameling',
+	'coll-create_a_book' => "Skep 'n boek",
 	'coll-download_as' => 'Laaf as $1 af',
-	'coll-add_category' => 'Voeg kategorie by',
+	'coll-disable' => 'deaktiveer',
+	'coll-add_category' => 'Voeg die kategorie by jou boek',
 	'coll-bookscategory' => 'Boeke',
+	'coll-clear_collection' => 'Maak boek leeg',
 	'coll-help' => 'Help',
 	'coll-helppage' => 'Help:Boeke',
 	'coll-load_collection' => 'Laai boek',
