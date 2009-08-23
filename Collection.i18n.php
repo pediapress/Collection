@@ -264,11 +264,14 @@ $messages['af'] = array(
 	'coll-print_template_pattern' => '$1/Druk',
 	'coll-unknown_subpage_title' => 'Onbekende subbladsy',
 	'coll-unknown_subpage_text' => 'Hierdie subbladsy van [[Special:Book|Boek]] bestaan nie.',
+	'coll-couldnotremovearticle_title' => 'Kon nie wikibladsy verwyder nie',
+	'coll-couldnotremovearticle_msg' => 'Die wikibladsy kon nie verwyder word nie.',
 	'coll-noscript_text' => '<h1>JavaScript word benodig!</h1>
 <strong>U blaaier ondersteun nie JavaScript of JavaScript is uitgeskakel.
 Hierdie bladsy sal nie korrek werk tensy JavaScript aangeskakel word nie.</strong>',
 	'coll-intro_text' => 'Skep en bestuur u eie versameling wikibladsye.<br />
 Sien [[{{MediaWiki:Coll-helppage}}|die hulpblad]] vir meer inligting.',
+	'coll-savedbook_template' => 'gestoorde_boek',
 	'coll-your_book' => 'U boek',
 	'coll-download_title' => 'Aflaai',
 	'coll-download' => 'Aflaai',
@@ -295,6 +298,8 @@ Sien [[{{MediaWiki:Coll-helppage}}|die hulpblad]] vir meer inligting.',
 	'coll-personal_collection_label' => 'Persoonlike boek:',
 	'coll-community_collection_label' => 'Gemeenskaplike boek:',
 	'coll-save_collection' => 'Stoor boek',
+	'coll-overwrite_title' => 'Die bladsy bestaan al.
+Oorskryf?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nee',
 	'coll-overwrite' => 'Oorskryf',
@@ -1139,6 +1144,9 @@ Si us plau, contacteu amb el vostre administrador de MediaWiki.",
  */
 $messages['cs'] = array(
 	'coll-desc' => '[[Special:Book|Vytváření knih]]',
+	'coll-book_mode_intro' => "V ''režimu tvorby knihy'' si můžete vytvořit knihu sestávající z libovolných stránek wiki. Knihu pak můžete vyexportovat do různých formátů (např. PDF či ODF) nebo si objednat tištěnou verzi.",
+	'coll-book_mode_help' => 'Další informace najdete na [[{{MediaWiki:Coll-helppage}}|stránce nápovědy ke knihám]].',
+	'coll-start_book_mode' => 'Spustit režim tvorby knihy',
 	'coll-collection' => 'Kniha',
 	'coll-collections' => 'Knihy',
 	'coll-exclusion_category_title' => 'Netisknout',
@@ -7559,7 +7567,8 @@ $messages['tr'] = array(
 	'coll-noscript_text' => '<h1>JavaScript gerekli!</h1>
 <strong>Tarayıcınız JavaScript desteklemiyor ya da JavaScript kapalı.
 JavaScript devreye sokulmadıkça bu sayfa doğru çalışmayacaktır.</strong>',
-	'coll-intro_text' => 'Viki sayfalarının kişisel seçiminizi oluşturun ve yönetin<br />Daha fazla bilgi için [[{{MediaWiki:Coll-helppage}}]] sayfasına bakın.',
+	'coll-intro_text' => 'Viki sayfalarının kişisel seçiminizi oluşturun ve yönetin<br />
+Daha fazla bilgi için [[{{MediaWiki:Coll-helppage}}|kitaplar hakkındaki yardım sayfasına]] bakın.',
 	'coll-savedbook_template' => 'kaydedilmiş_kitap',
 	'coll-your_book' => 'Koleksiyonunuz',
 	'coll-download_title' => 'İndir',
