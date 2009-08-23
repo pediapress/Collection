@@ -68,6 +68,7 @@ $messages['en'] = array(
  * @author Teak
  */
 $messages['qqq'] = array(
+	'coll-print_export' => 'Caption of a frame in the toolbar (on the left-hand side of the screen), similar to {{msg-mw|toolbox}} or {{msg-mw|otherlanguages}}.',
 	'coll-create_a_book' => '{{Identical|Books}}',
 	'coll-download_as' => '{{Identical|Download}}',
 	'coll-download_as_tooltip' => '* $1 is some file format(s)',
@@ -86,6 +87,7 @@ $messages['qqq'] = array(
  * @author Naudefj
  */
 $messages['af'] = array(
+	'coll-print_export' => 'Druk/eksporteer',
 	'coll-create_a_book' => "Skep 'n boek",
 	'coll-download_as' => 'Laaf as $1 af',
 	'coll-disable' => 'deaktiveer',
@@ -97,6 +99,7 @@ $messages['af'] = array(
 	'coll-load_collection' => 'Laai boek',
 	'coll-n_pages' => '$1 {{PLURAL:$1|bladsy|bladsye}}',
 	'coll-printable_version_pdf' => 'PDF-weergawe',
+	'coll-remove_this_page' => 'Verwyder hierdie bladsy uit u boek',
 	'coll-show_collection' => 'Wys boek',
 );
 
@@ -356,22 +359,32 @@ $messages['ca'] = array(
  * @author Mormegil
  */
 $messages['cs'] = array(
+	'coll-print_export' => 'Tisk/export',
 	'coll-create_a_book' => 'Vytvořit knihu',
+	'coll-create_a_book_tooltip' => 'Vytvoření knihy nebo kolekce stránek',
+	'coll-book_mode' => 'Režim tvorby knihy',
 	'coll-download_as' => 'Stáhnout jako $1',
+	'coll-download_as_tooltip' => 'Stáhnout tuto stránku wiki jako $1',
+	'coll-disable' => 'vypnout',
+	'coll-disable_tooltip' => 'Vypnout režim tvorby knihy',
 	'coll-add_category' => 'Přidat tuto kategorii do vaší knihy',
 	'coll-add_category_popup' => 'Přidat stránky wiki v odkazované kategorii do vaší knihy',
 	'coll-add_category_tooltip' => 'Přidá všechny stránky wiki v této kategorii do vaší knihy',
+	'coll-add_this_page' => 'Přidat tuto stránku do vaší knihy',
 	'coll-add_page_popup' => 'Přidat odkazovanou stránku wiki do vaší knihy',
 	'coll-add_page_tooltip' => 'Přidá aktuální stránku wiki do vaší knihy',
 	'coll-bookscategory' => 'Knihy',
 	'coll-clear_collection' => 'Vyčistit knihu',
 	'coll-clear_collection_confirm' => 'Skutečně chcete úplně vyčistit tuto knihu?',
 	'coll-clear_collection_tooltip' => 'Odstraní z aktuální knihy všechny stránky wiki',
+	'coll-help' => 'Nápověda',
+	'coll-help_tooltip' => 'Zobrazit nápovědu k tvorbě knih',
 	'coll-helppage' => 'Help:Knihy',
 	'coll-load_collection' => 'Načíst knihu',
 	'coll-load_collection_tooltip' => 'Zvolí tuto knihu jako aktuální',
 	'coll-n_pages' => '$1 {{PLURAL:$1|stránka|stránky|stránek}}',
 	'coll-printable_version_pdf' => 'PDF verze',
+	'coll-remove_this_page' => 'Odstranit tuto stránku z vaší knihy',
 	'coll-remove_page_popup' => 'Odebrat odkazovanou stránku wiki z vaší knihy',
 	'coll-remove_page_tooltip' => 'Odstraní aktuální stránku wiki z vaší knihy',
 	'coll-show_collection' => 'Zobrazit knihu',
