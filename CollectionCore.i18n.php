@@ -1968,7 +1968,7 @@ $messages['sl'] = array(
 	'coll-show_collection' => 'Prikaži knjige',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Nikola Smolenski
  * @author Јованвб
  * @author Михајло Анђелковић
@@ -1996,7 +1996,7 @@ $messages['sr-ec'] = array(
 	'coll-show_collection_tooltip' => 'Кликните за измену, преузимање или наручивање своје књиге',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(

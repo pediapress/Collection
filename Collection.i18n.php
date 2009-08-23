@@ -6739,7 +6739,7 @@ Opombe:
 	'coll-return_to' => 'Nazaj na [[:$1]]',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Nikola Smolenski
  * @author Sasa Stefanovic
  * @author Јованвб
@@ -8305,6 +8305,7 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
+ * @author FireJackey
  * @author Skjackey tse
  * @author Wmr89502270
  * @author Wong128hk
