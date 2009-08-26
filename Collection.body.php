@@ -832,14 +832,14 @@ class SpecialCollection extends SpecialPage {
 			return;
 		}
 
-		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Book', 'rendering/' );
 		$query = 'return_to=' . urlencode( $referrer->getPrefixedText() )
 			. '&collection_id=' . urlencode( $response['collection_id'] )
 			. '&writer=' . urlencode( $response['writer'] );
 		if ( isset( $response['is_cached'] ) && $response['is_cached'] ) {
 			$query .= '&is_cached=1';
 		}
-		$wgOut->redirect( wfAppendQuery( $redirect, $query ) );
+		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Book', 'rendering/', $query );
+		$wgOut->redirect( $redirect );
 	}
 
 	function forceRenderCollection() {
