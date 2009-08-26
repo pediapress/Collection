@@ -2074,7 +2074,7 @@ Kas tahad selle oma raamatuga asendada?',
 Kas soovid oma praeguse raamatu üle kirjutada, uue sisu liita või selle raamatu laadimise tühistada?',
 	'coll-overwrite' => 'Kirjuta üle',
 	'coll-append' => 'Lisa',
-	'coll-cancel' => 'Tühista',
+	'coll-cancel' => 'Loobu',
 	'coll-update' => 'Uuenda',
 	'coll-limit_exceeded_title' => 'Raamat on liiga suur',
 	'coll-limit_exceeded_text' => 'Su raamat on liiga suur.
@@ -2592,6 +2592,10 @@ $messages['fy'] = array(
  */
 $messages['gl'] = array(
 	'coll-desc' => '[[Special:Book|Crear libros]]',
+	'coll-book_mode_intro' => "Co ''modo libro'' pode crear un libro composto por páxinas arbitrarias do wiki. Pode exportar o seu libro en diferentes formatos (por exemplo, PDF ou ODF) ou solicitar unha copia impresa.",
+	'coll-book_mode_help' => 'Olle [[{{MediaWiki:Coll-helppage}}|a páxina de axuda sobre os libros]] para obter máis información.',
+	'coll-start_book_mode' => 'Iniciar o modo libro',
+	'coll-book_mode_text_article' => 'Texto do modo libro',
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluír na impresión',
@@ -2606,7 +2610,8 @@ $messages['gl'] = array(
 	'coll-noscript_text' => '<h1>Requírese o JavaScript!</h1>
 <strong>O seu navegador non soporta o JavaScript ou o JavaScript foi deshabilitado.
 Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa habilitado.</strong>',
-	'coll-intro_text' => 'Cree e xestione a súa escolla individual de páxinas wiki.<br />Bótelle unha ollada a [[{{MediaWiki:Coll-helppage}}]] para máis información.',
+	'coll-intro_text' => 'Cree e xestione a súa escolla individual de páxinas wiki.<br />
+Bótelle unha ollada [[{{MediaWiki:Coll-helppage}}|á páxina de axuda sobre libros]] para obter máis información.',
 	'coll-savedbook_template' => 'libro_gardado',
 	'coll-your_book' => 'O seu libro',
 	'coll-download_title' => 'Descargar',
@@ -5000,9 +5005,14 @@ $messages['mr'] = array(
 /** Malay (Bahasa Melayu)
  * @author Aviator
  * @author Izzudin
+ * @author Kurniasan
  */
 $messages['ms'] = array(
 	'coll-desc' => '[[Special:Book|Mencipta buku]]',
+	'coll-book_mode_intro' => "Dengan ''mod buku'', anda dapat mencipta buku yang terdiri daripada laman-laman wiki sembarangan. Anda boleh mengeksport buku dalam format-format berbeza (contohnya PDF atau ODF) ataupun memesan salinan tercetak.",
+	'coll-book_mode_help' => 'Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan tentang buku]] untuk maklumat lanjut.',
+	'coll-start_book_mode' => 'Mulakan mod buku',
+	'coll-book_mode_text_article' => 'Teks mod buku',
 	'coll-collection' => 'Buku',
 	'coll-collections' => 'Buku',
 	'coll-exclusion_category_title' => 'Tidak dicetak',
@@ -5010,13 +5020,17 @@ $messages['ms'] = array(
 	'coll-print_template_pattern' => '$1/Cetak',
 	'coll-unknown_subpage_title' => 'Sublaman tidak dikenali',
 	'coll-unknown_subpage_text' => 'Sublaman [[Special:Book|Buku]] ini tidak wujud',
+	'coll-couldnotaddarticle_title' => 'Tidak dapat menambah laman wiki',
+	'coll-couldnotaddarticle_msg' => 'Laman wiki tidak dapat ditambah.',
+	'coll-couldnotremovearticle_title' => 'Tidak dapat membuang laman wiki',
+	'coll-couldnotremovearticle_msg' => 'Laman wiki tidak dapat dibuang.',
 	'coll-noscript_text' => '<h1>JavaScript diperlukan!</h1>
-<strong>JavaScript tidak disokong oleh pelayan anda atau telah dilumpuhkan. Laman ini tidak dapat berfungsi sekiranya ciri JavaScript tidak diaktifkan.</strong>',
-	'coll-intro_text' => 'Cipta dan urus koleksi laman wiki untuk kegunaan persendirian.<br />Lihat [[{{MediaWiki:Coll-helppage}}]] untuk maklumat lanjut.',
+<strong>JavaScript tidak disokong oleh pelayar anda atau telah dilumpuhkan. Laman ini tidak dapat berfungsi dengan betul sekiranya ciri JavaScript tidak diaktifkan.</strong>',
+	'coll-intro_text' => 'Cipta dan urus lelaman wiki pilihan persendiriaan anda.<br />Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan mengenai buku]] untuk maklumat lanjut.',
 	'coll-savedbook_template' => 'saved_book',
 	'coll-your_book' => 'Buku anda',
 	'coll-download_title' => 'Muat turun',
-	'coll-download_text' => 'Untuk memuat turun versi luar talian, sila pilih format dan klik butang yang berkenaan.',
+	'coll-download_text' => 'Untuk memuat turun sesebuah versi, pilih format lalu klik butang.',
 	'coll-download_as_text' => 'Untuk memuat turun versi luar talian dalam format $1, sila klik butang berikut.',
 	'coll-download' => 'Muat turun',
 	'coll-format_label' => 'Format:',
@@ -5080,7 +5094,10 @@ Catatan:
 * Tidak berpuas hati dengan output yang dihasilkan? Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan mengenai koleksi]] untuk mengetahui bagaimana anda boleh memperbaikinya lagi.',
 	'coll-notfound_title' => 'Buku tidak dijumpai',
 	'coll-notfound_text' => 'Laman buku tidak dapat dijumpai.',
-	'coll-is_cached' => '<ul><li>Versi simpanan (cache) bagi dokumen itu telah pun dijumpai, oleh itu penjanaan tidak diperlukan. <a href="$1">Arahkan penjanaan semula.</a></li></ul>',
+	'coll-download_notfound_title' => 'Tidak menemui fail',
+	'coll-download_notfound_text' => 'Fail yang anda cuba muat turun tidak wujud:
+Mungkin ia telah dipadam dan perlu dijanakan semula.',
+	'coll-is_cached' => '<ul><li>Versi tercache bagi dokumen itu telah ditemui, jadi penjanaan tidak diperlukan. <a href="$1">Arahkan penjanaan semula.</a></li></ul>',
 	'coll-excluded-templates' => '* Templat-templat dalam kategori [[:Category:$1|$1]] telah dikecualikan.',
 	'coll-blacklisted-templates' => '* Templat-templat dalam senarai hitam [[:$1]] telah dikecualikan.',
 	'coll-return_to_collection' => '<p>Kembali ke <a href="$1">$2</a></p>',
@@ -5092,6 +5109,11 @@ Catatan:
 	'coll-invalid_podpartner_msg' => 'Rakan POD yang dibekalkan tidak sah. Sila hubungi pentadbir MediaWiki anda.',
 	'coll-license' => 'Lesen',
 	'coll-return_to' => 'Kembali ke [[:$1]]',
+	'coll-more_info' => 'Tunjuk lebih maklumat',
+	'coll-hide_info' => 'Sorok maklumat',
+	'coll-order_info_article' => 'Maklumat pesanan {{MediaWiki:Coll-helppage}}/PediaPress',
+	'right-collectionsaveasuserpage' => 'Simpan buku-buku sebagai laman pengguna',
+	'right-collectionsaveascommunitypage' => 'Simpan buku-buku sebagai laman masyarakat',
 );
 
 /** Maltese (Malti)
