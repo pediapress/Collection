@@ -70,8 +70,7 @@ $this->msgWiki('coll-book_text');
 			</div>
 		<?php
 $t = Title::newFromText(wfMsgForContent('coll-order_info_article'));
-$a = new Article($t);
-if ( $a->exists() ) { ?>
+if ( $t && $t->exists() ) { ?>
 			<div id="coll-more_info" style="display:none">
 				<a href="javascript:void(0)" onclick="coll_toggle_order_info(true);"><?php $this->msgWiki('coll-more_info') ?></a>
 			</div>
@@ -382,8 +381,7 @@ echo $GLOBALS['wgParser']->parse(
 )->getText();
 $title_string = wfMsgForContent('coll-template_blacklist_title');
 $t = Title::newFromText($title_string);
-$a = new Article($t);
-if ( $a->exists() ) {
+if ( $t && $t->exists() ) {
 	echo $GLOBALS['wgParser']->parse(
 		wfMsgNoTrans('coll-blacklisted-templates', $title_string),
 		$GLOBALS['wgTitle'],
