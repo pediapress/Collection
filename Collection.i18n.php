@@ -3224,7 +3224,7 @@ Molimo kontaktirajte svog MediaWiki administratora.',
 	'coll-return_to' => 'Vrati se na [[:$1]]',
 	'coll-more_info' => 'Prikaži više informacija',
 	'coll-hide_info' => 'Sakrij informacije',
-	'coll-order_info_article' => '{{MediaWiki:Coll-Helppage}}/informacije o narudžbi PediaPressa',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/informacije o narudžbi PediaPressa',
 	'right-collectionsaveasuserpage' => 'Spremi zbirke kao suradničku stranicu',
 	'right-collectionsaveascommunitypage' => 'Spremi zbirke kao stranicu zajednice',
 );
