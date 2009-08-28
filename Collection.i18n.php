@@ -812,8 +812,8 @@ Gwelet [[{{MediaWiki:Coll-helppage}}|ar bajenn skoazell diwar-benn al levrioù]]
 	'coll-remove' => 'Lemel kuit',
 	'coll-show' => 'Diskouez',
 	'coll-move_to_top' => "Mont d'al laez-tout",
-	'coll-move_up' => "Mont d'al laez",
-	'coll-move_down' => "Mont d'an traoñ",
+	'coll-move_up' => 'Pignat',
+	'coll-move_down' => 'Diskenn',
 	'coll-move_to_bottom' => 'Mont betek an traoñ',
 	'coll-title' => 'Titl :',
 	'coll-subtitle' => 'Istitl :',
@@ -855,8 +855,8 @@ Ha fellout a ra deoc'h frikañ ho levr a-vremañ, ouzhpennañ an danvez nevez en
 	'coll-limit_exceeded_title' => 'Levr re vras',
 	'coll-limit_exceeded_text' => "Re vras eo ho levr.
 N'haller ket ouzhpennañ pajennoù ennañ ken.",
-	'coll-rendering_title' => "Oc'h amdreiñ",
-	'coll-rendering_text' => '<p><strong>Gortozit p\'emeur o c\'henel an teul mart plij.</strong></p>
+	'coll-rendering_title' => 'O pledin ganti',
+	'coll-rendering_text' => '<p><strong>Gortozit p\'emeur o c\'henel an teul mar plij.</strong></p>
 
 <p><strong>Araokadur :</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
@@ -865,7 +865,7 @@ Ma ne\'z a ket en-dro, pouezit war bouton freskaat ho merdeer.</p>',
 	'coll-rendering_status' => '<strong>Stad :</strong> $1',
 	'coll-rendering_article' => '(pajenn wiki : $1)',
 	'coll-rendering_page' => '(pajenn : $1)',
-	'coll-rendering_finished_title' => 'Amdroadur echu',
+	'coll-rendering_finished_title' => 'Argerzh echu',
 	'coll-rendering_finished_text' => "<strong>Ganet eo bet ar restr teul.</strong>
 <strong>[$1 Pellgargit ar restr]</strong> war hoc'h urzhiataer.
 
@@ -7573,6 +7573,8 @@ Makipagugnayan sa iyong tagapangasiwa ng MediaWiki.',
  */
 $messages['tr'] = array(
 	'coll-desc' => '[[Special:Book|Kitap oluştur]]',
+	'coll-book_mode_intro' => "''Kitap kipi'' ile isteğe bağlı viki sayfalarından oluşan bir kitap oluşturabilirsiniz. Kitabınızı farklı formatlarda dışa aktarabilir (örneğin PDF veya ODF) ya da basılı bir kopya sipariş edebilirsiniz.",
+	'coll-book_mode_help' => 'Daha fazla bilgi için [[{{MediaWiki:Coll-helppage}}|kitaplar için yardım sayfasına]] bakın.',
 	'coll-start_book_mode' => 'Kitap kipini başlat',
 	'coll-book_mode_text_article' => 'Kitap kipi metni',
 	'coll-collection' => 'Kitap',
