@@ -205,6 +205,12 @@ The variable $1 is another message string, as follows:
 **then the text "rendering" (source message not yet identified)
 
 {{Identical|Status}}',
+	'coll-rendering_finished_text' => 'This is the first part of the text of the special page "Rendering finished", which appears after clicking \'download book\' and the book has been generated.  
+
+$1 is not text; it is the http:// address of the book.',
+	'coll-excluded-templates' => "Part of the text of the special page 'Rendering finished' which appears after clicking on 'Download' and a book has been generated.",
+	'coll-blacklisted-templates' => "Part of the text of the special page 'Rendering finished' which appears after clicking on 'Download' and a book has been generated.",
+	'coll-return_to_collection' => 'Part of the text of the special page \'Rendering finished\' which appears after clicking on \'Download\' and a book has been generated. <nowiki><a href="$1">$2</a></nowiki> does not need translating. It is a wiki link back to the "Special:Book" page.',
 	'coll-order_from_pp' => '* $1 is the name of a print provider (a company name)',
 	'coll-about_pp' => '{{Identical|About}}',
 	'coll-invalid_podpartner_title' => 'POD means print-on-demand',
@@ -1260,8 +1266,10 @@ Kontaktujte svého správce MediaWiki.',
  */
 $messages['cy'] = array(
 	'coll-desc' => '[[Special:Book|Llunio llyfrau]]',
+	'coll-book_mode_intro' => "Gallwch ddefnyddio'r ''teclyn llyfr'' i lunio llyfr yn cynnwys tudalennau'r wici o'ch dewis eich hun. Gallwch allforio'r llyfr ar sawl ffurf (er enghraifft PDF neu ODF), neu gallwch archebu copi ohono ar bapur.",
 	'coll-book_mode_help' => 'Gweler [[{{MediaWiki:Coll-helppage}}|y dudalen gymorth ar lyfrau]] i gael rhagor o wybodaeth.',
 	'coll-start_book_mode' => "Dechrau'r modd llyfr",
+	'coll-book_mode_text_article' => 'Testun ar lun llyfr',
 	'coll-collection' => 'Llyfr',
 	'coll-collections' => 'Llyfrau',
 	'coll-exclusion_category_title' => 'Hepgor wrth argraffu',
@@ -1273,9 +1281,16 @@ $messages['cy'] = array(
 	'coll-couldnotaddarticle_msg' => "Ni lwyddwyd ychwanegu'r dudalen wici",
 	'coll-couldnotremovearticle_title' => 'Aflwyddiant tynnu tudalen wici',
 	'coll-couldnotremovearticle_msg' => "Ni lwyddwyd tynnu'r dudalen wici.",
+	'coll-noscript_text' => "<h1>Rhaid cael JavaScript!</h1>
+<strong>Nid yw'ch porwr yn gallu defnyddio JavaScript, neu mae JavaScript wedi ei ddiffodd.
+Ni fydd y dudalen hon yn gweithio'n gywir os nad yw JavaScript wedi ei alluogi.</strong>",
+	'coll-intro_text' => 'Lluniwch a threfnwch eich casgliad personol o dudalennau wici.<br />
+Cewch rhagor o wybodaeth ar y [[{{MediaWiki:Coll-helppage}}|dudalen gymorth ar lyfrau]].',
 	'coll-savedbook_template' => 'Llyfr ar gadw',
 	'coll-your_book' => 'Eich llyfr',
 	'coll-download_title' => 'Islwytho',
+	'coll-download_text' => 'I lwytho fersiwn all-lein i lawr dewiswch fformat ac yna pwyswch ar y botwm.',
+	'coll-download_as_text' => 'I lwytho fersiwn all-lein i lawr ar fformat $1 pwyswch y botwm.',
 	'coll-download' => 'Islwytho',
 	'coll-format_label' => 'Fformat:',
 	'coll-remove' => 'Tynnu',
@@ -1287,13 +1302,19 @@ $messages['cy'] = array(
 	'coll-title' => 'Teitl:',
 	'coll-subtitle' => 'Isdeitl:',
 	'coll-contents' => 'Cynnwys',
+	'coll-drag_and_drop' => "Ad-drefnu'r tudalennau a'r penodau trwy lusgosod.",
 	'coll-create_chapter' => 'Llunio pennod',
 	'coll-sort_alphabetically' => 'Gosod yn nhrefn yr wyddor',
 	'coll-rename' => 'Ailenwi',
 	'coll-new_chapter' => 'Rhowch enw ar y bennod newydd',
 	'coll-rename_chapter' => 'Rhowch yr enw newydd ar y bennod',
 	'coll-no_such_category' => 'Y categori ddim ar gael',
+	'coll-notitle_title' => 'Ni lwyddwyd i ddirnad teitl y dudalen.',
 	'coll-post_failed_title' => 'Methodd y cais POST',
+	'coll-post_failed_msg' => 'Methodd y cais POST at $1 ($2).',
+	'coll-mwserve_failed_title' => 'Gwall gan y gweinydd cynhyrchu',
+	'coll-mwserve_failed_msg' => 'Digwyddodd gwall ar y gweinydd cynhyrchu: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Hysbysiad gwall oddi wrth y gweinydd',
 	'coll-empty_collection' => "Gwacáu'r llyfr",
 	'coll-revision' => 'Diwygiad: $1',
 	'coll-save_collection_title' => "Cadw'r llyfr a'i rannu",
@@ -1329,18 +1350,35 @@ Os nac ydy\'n ail-lwytho o ran ei hun, gwasgwch y botwm ail-lwytho ar eich porwr
 	'coll-rendering_article' => '(tudalen wici: $1)',
 	'coll-rendering_page' => '(tudalen: $1)',
 	'coll-rendering_finished_title' => 'Wedi gorffen cynhyrchu',
+	'coll-rendering_finished_text' => "<strong>Mae ffeil y ddogfen wedi cael ei gynhyrchu.</strong>
+<strong>[$1 Llwytho'r ffeil i lawr]</strong> i'ch cyfrifiadur.
+
+Nodiadau:
+* Os nad ydych yn bles â'r cynnyrch gwelwch [[{{MediaWiki:Coll-helppage}}|y dudalen gymorth ar gynhyrchu llyfrau]] er mwyn deall sut mae gwella arno.",
 	'coll-notfound_title' => 'Heb ganfod y llyfr',
 	'coll-notfound_text' => 'Heb ganfod y dudalen yn y llyfr.',
 	'coll-download_notfound_title' => 'Heb lwyddo canfod y ffeil',
+	'coll-download_notfound_text' => "Nid yw'r ffeil yr ydych yn ceisio ei lwytho i lawr ar gael:
+Efallai ei fod wedi ei ddileu ac felly bod angen ei gynhyrchu o'r newydd.",
+	'coll-is_cached' => '<ul><li>Cafwyd hyd i fersiwn o\'r ddogfen mewn celc, felly nid oedd rhaid ei gynhyrchu.
+<a href="$1">Gorfodi ei chynhyrchu o\'r newydd.</a></li></ul>',
 	'coll-excluded-templates' => '* Wedi hepgor y nodiadau yn y categori [[:Category:$1|$1]].',
+	'coll-blacklisted-templates' => '* Ni chynhwyswyd nodiadau sydd ar y rhestr gwaharddedig [[:$1]].',
+	'coll-return_to_collection' => '<p>Dychwelyd i\'r dudalen <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Archebu fel llyfr printiedig',
+	'coll-book_text' => "Archebu llyfr oddi wrth ein partner argraffu ''print-on-demand''.",
 	'coll-order_from_pp' => "Archebu'r llyfr oddi wrth $1",
 	'coll-about_pp' => 'Ynglŷn â $1',
+	'coll-invalid_podpartner_title' => 'Partner POD annilys',
+	'coll-invalid_podpartner_msg' => "Nid yw'r partner argraffu POD yn ddilys.
+Cysylltwch â'ch gweinyddwyr MediaWiki.",
 	'coll-license' => 'Trwydded',
 	'coll-return_to' => 'Yn ôl i [[:$1]]',
 	'coll-more_info' => 'Dangos rhagor o wybodaeth',
 	'coll-hide_info' => "Cuddio'r wybodaeth",
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Gwybodaeth am archebu oddi wrth PediaPress',
+	'right-collectionsaveasuserpage' => 'Gallu cadw llyfrau ar dudalennau yn y parth defnyddiwr',
+	'right-collectionsaveascommunitypage' => 'Gallu rhoi llyfrau ar gadw ar dudalennau cymunedol',
 );
 
 /** Danish (Dansk)
@@ -1892,7 +1930,10 @@ Bonvolu kontakti vian administranton de MediaWiki.',
  */
 $messages['es'] = array(
 	'coll-desc' => '[[Special:Book|Crear libros]]',
+	'coll-book_mode_intro' => "Con el ''modo libro'' puedes crear un libro consistente de páginas wiki arbitrarias. Puedes exportar tu libro en diferentes formatos (por ejemplo PDF o ODF) u ordenar una copia impresa.",
+	'coll-book_mode_help' => 'Ver [[{{MediaWiki:Coll-helppage}}|la página de ayuda acerca de los libros]] para mayor información.',
 	'coll-start_book_mode' => 'Comenzar modo libro',
+	'coll-book_mode_text_article' => 'Texto en modo libro',
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluir al imprimir',
@@ -7231,7 +7272,10 @@ $messages['te'] = array(
 	'coll-print_template_pattern' => '$1/ముద్రించు',
 	'coll-unknown_subpage_title' => 'గుర్తుతెలియని ఉపపేజి',
 	'coll-couldnotaddarticle_title' => 'వికి పేజిని కలుపలేకపోయాము',
+	'coll-couldnotaddarticle_msg' => 'వికీ పేజీని చేర్చలేకపోయాం.',
 	'coll-couldnotremovearticle_title' => 'వికి పేజిని తొలగించలేకపోయాము',
+	'coll-couldnotremovearticle_msg' => 'వికీ పేజీని తొలగించలేకపోయాం.',
+	'coll-savedbook_template' => 'భద్రపరచిన_పుస్తకం',
 	'coll-your_book' => 'మీ పుస్తకం',
 	'coll-download_title' => 'దింపుకోండి',
 	'coll-download_text' => ' ఒక కూర్పుని దిగుమతి చేసుకోడానికి, ఫైలు ఫార్మాటుని ఎంచుకుని, ఈ బొత్తాన్ని నొక్కండి.',
@@ -7250,6 +7294,7 @@ $messages['te'] = array(
 	'coll-sort_alphabetically' => 'పుస్తకములోని పేజీలను అక్షరక్రమంలో అమర్చు',
 	'coll-rename' => 'పేరుమార్చు',
 	'coll-new_chapter' => 'కొత్త అధ్యాయానికి పేరు సూచించండి',
+	'coll-rename_chapter' => 'పుటకు క్రొత్త పేరు ఇవ్వండి',
 	'coll-no_such_category' => 'అటువంటి వర్గం లేదు',
 	'coll-notitle_title' => 'ఆ పేజీ యొక్క శీర్షికని నిర్ణయించలేకున్నాం.',
 	'coll-post_failed_title' => 'POST అభ్యర్థన విఫలమైంది',
@@ -7279,6 +7324,7 @@ $messages['te'] = array(
 	'coll-notfound_text' => 'పుస్తకము పేజీ కనబడలేదు.',
 	'coll-download_notfound_title' => 'ఫైలు దొరకలేదు',
 	'coll-return_to_collection' => '<p>తిరిగి <a href="$1">$2</a></p>కి',
+	'coll-book_title' => 'ముద్రించిన పుస్తకములా తెప్పించుకోండి',
 	'coll-order_from_pp' => '$1 నుండి పుస్తకాన్ని ఆర్డర్ చెయ్యండి',
 	'coll-about_pp' => '$1 గురించి',
 	'coll-license' => 'లైసెన్సు',
