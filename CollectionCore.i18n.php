@@ -427,6 +427,42 @@ $messages['cy'] = array(
 	'coll-show_collection_tooltip' => 'Cliciwch er mwyn golygu/islwytho/archebu eich llyfr',
 );
 
+/** Danish (Dansk)
+ * @author Byrial
+ */
+$messages['da'] = array(
+	'coll-print_export' => 'Udskriv/eksportér',
+	'coll-create_a_book' => 'Lav en bog',
+	'coll-create_a_book_tooltip' => 'Lav en bog eller samling af sider',
+	'coll-book_mode' => 'Bogmodus',
+	'coll-download_as' => 'Download som $1',
+	'coll-download_as_tooltip' => 'Download en $1-version af denne wikiside',
+	'coll-disable' => 'slå fra',
+	'coll-disable_tooltip' => 'Slå bogmodus fra',
+	'coll-add_category' => 'Tilføj denne kategori til din bog',
+	'coll-add_category_popup' => 'Tilføj wikisider i kategorien til din bog',
+	'coll-add_category_tooltip' => 'Tilføj alle wikisider i kategorien til din bog',
+	'coll-add_this_page' => 'Tilføj denne side til din bog',
+	'coll-add_page_popup' => 'Tilføj wikisiden til din bog',
+	'coll-add_page_tooltip' => 'Tilføj den nuværende wikiside til din bog',
+	'coll-bookscategory' => 'Bøger',
+	'coll-clear_collection' => 'Tøm bogen',
+	'coll-clear_collection_confirm' => 'Vil du virkelig tømme din bog helt?',
+	'coll-clear_collection_tooltip' => 'Fjern alle wikisider fra din nuværende bog',
+	'coll-help' => 'Hjælp',
+	'coll-help_tooltip' => 'Få hjælp til at lave bøger',
+	'coll-helppage' => 'Help:Bøger',
+	'coll-load_collection' => 'Hent bog',
+	'coll-load_collection_tooltip' => 'Hent denne bog som din nuværende bog',
+	'coll-n_pages' => '$1 {{PLURAL:$1|side|sider}}',
+	'coll-printable_version_pdf' => 'PDF-version',
+	'coll-remove_this_page' => 'Fjern denne side fra din bog',
+	'coll-remove_page_popup' => 'Fjern wikisiden fra din bog',
+	'coll-remove_page_tooltip' => 'Fjern den nuværende wikiside fra din bog',
+	'coll-show_collection' => 'Vis bog',
+	'coll-show_collection_tooltip' => 'Klik for at redigere, downloade eller bestille din bog',
+);
+
 /** German (Deutsch)
  * @author Metalhead64
  * @author Pill
@@ -607,9 +643,12 @@ $messages['eo'] = array(
 $messages['es'] = array(
 	'coll-print_export' => 'Imprimir/exportar',
 	'coll-create_a_book' => 'Crear un libro',
+	'coll-create_a_book_tooltip' => 'Crear un libro o colección de página',
 	'coll-book_mode' => 'Modo libro',
 	'coll-download_as' => 'Descargar como $1',
+	'coll-download_as_tooltip' => 'Descargar una versión $1 de esta página wiki',
 	'coll-disable' => 'deshabilitar',
+	'coll-disable_tooltip' => 'Deshabilitar el modo de creación de libro',
 	'coll-add_category' => 'Añadir esta categoría a tu libro',
 	'coll-add_category_popup' => 'Agregar páginas wiki en categoría vinculada a tu libro',
 	'coll-add_category_tooltip' => 'Agregar todas las páginas wiki en esta categoría a tu libro',
@@ -621,11 +660,13 @@ $messages['es'] = array(
 	'coll-clear_collection_confirm' => '¿Realmente quieres borrar completamente tu libro?',
 	'coll-clear_collection_tooltip' => 'Remover todas las páginas wiki de tu libro actual',
 	'coll-help' => 'Ayuda',
+	'coll-help_tooltip' => 'Mostrar ayuda acerca de la creación de libros',
 	'coll-helppage' => 'Help:Libros',
 	'coll-load_collection' => 'Cargar libro',
 	'coll-load_collection_tooltip' => 'Cargar este libro como su libro actual',
 	'coll-n_pages' => '$1 {{PLURAL:$1|página|páginas}}',
 	'coll-printable_version_pdf' => 'Versión PDF',
+	'coll-remove_this_page' => 'Remover esta página de tu libro',
 	'coll-remove_page_popup' => 'Remover página wiki vinculada de tu libro',
 	'coll-remove_page_tooltip' => 'Remover la página wiki actual de tu libro',
 	'coll-show_collection' => 'Mostrar libro',
@@ -2133,10 +2174,16 @@ $messages['sv'] = array(
  * @author Veeven
  */
 $messages['te'] = array(
+	'coll-print_export' => 'ముద్రించండి/ఎగుమతి చేయండి',
 	'coll-create_a_book' => 'ఓ పుస్తకాన్ని సృష్టించండి',
+	'coll-book_mode' => 'పుస్తకపు మోడు',
+	'coll-download_as' => '$1 క్రింద దిగుమతి చేసుకోండి',
+	'coll-disable' => 'అచేతన పరచు',
 	'coll-add_category' => 'పుస్తకముకు ఈ వర్గాన్ని చేర్చు',
+	'coll-add_this_page' => 'ఈ పేజీని మీ పుస్తకములో చేర్చండి',
 	'coll-bookscategory' => 'పుస్తకాలు',
 	'coll-clear_collection' => 'పుస్తకముని తుడిచివేయి',
+	'coll-clear_collection_confirm' => 'మీరు నిజంగా మీ పుస్తకమును పూర్తిగా తొలగించాలని అనుకొంటున్నారా?',
 	'coll-help' => 'సహాయం',
 	'coll-helppage' => 'Help:పుస్తకాలు',
 	'coll-n_pages' => '$1 {{PLURAL:$1|పేజీ|పేజీలు}}',
