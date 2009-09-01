@@ -176,6 +176,8 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-show' => '{{Identical|Show}}',
 	'coll-title' => '{{Identical|Title}}',
 	'coll-contents' => '{{Identical|Contents}}',
+	'coll-post_failed_msg' => '* $1 is a URL.
+* $2 is (probably) an explanation of the error.',
 	'coll-empty_collection' => 'Translate "empty" as in "an empty book" (adj), not "empty the book" (verb)',
 	'coll-save_collection' => '',
 	'coll-save_category' => 'Do not change <nowiki>{{MediaWiki:Coll-bookscategory}}</nowiki>. The link and category name should be in the content language.',
@@ -1311,7 +1313,7 @@ Cewch rhagor o wybodaeth ar y [[{{MediaWiki:Coll-helppage}}|dudalen gymorth ar l
 	'coll-no_such_category' => 'Y categori ddim ar gael',
 	'coll-notitle_title' => 'Ni lwyddwyd i ddirnad teitl y dudalen.',
 	'coll-post_failed_title' => 'Methodd y cais POST',
-	'coll-post_failed_msg' => 'Methodd y cais POST at $1 ($2).',
+	'coll-post_failed_msg' => 'Methodd y cais POST i $1 ($2).',
 	'coll-mwserve_failed_title' => 'Gwall gan y gweinydd cynhyrchu',
 	'coll-mwserve_failed_msg' => 'Digwyddodd gwall ar y gweinydd cynhyrchu: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Hysbysiad gwall oddi wrth y gweinydd',
