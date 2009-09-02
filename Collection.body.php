@@ -282,7 +282,8 @@ class SpecialCollection extends SpecialPage {
 
 		$imagepath = "$wgScriptPath/extensions/Collection/images";
 
-		$wgOut->addInlineStyle(<<<EOS
+		$wgOut->mScripts .= <<<EOS
+<style type="text/css">
 .collection-button {
 	float: left;
 	padding: 0 10px 0 14px;
@@ -321,8 +322,9 @@ class SpecialCollection extends SpecialPage {
 .collection-button a:hover {
 	text-decoration: none;
 }
+</style>
 EOS
-		);
+		;
 
 		$wgOut->addHTML(
 			Xml::tags( 'div',
