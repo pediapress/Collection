@@ -286,7 +286,7 @@ class SpecialCollection extends SpecialPage {
 <style type="text/css">
 .collection-button {
 	float: left;
-	padding: 4px 10px;
+	padding: 0 10px;
 	border: 1px solid #777;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -302,9 +302,11 @@ class SpecialCollection extends SpecialPage {
 }
 
 .collection-button a {
+	display: block;
 	color: #fff;
 	font-size: 1.1em;
 	font-weight: bold;
+	line-height: 1.8em;
 }
 
 .collection-button a:hover {
