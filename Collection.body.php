@@ -59,11 +59,7 @@ class SpecialCollection extends SpecialPage {
 				if ( is_null( $title ) ) {
 					$title = Title::newMainPage();
 				}
-				if ( $wgRequest->getVal( 'continue' ) ) {
-					CollectionSession::enable();
-				} else {
-					CollectionSession::disable();
-				}
+				CollectionSession::enable();
 				$wgOut->redirect( $title->getFullURL() );
 				return;
 
@@ -277,46 +273,113 @@ class SpecialCollection extends SpecialPage {
 
 	function renderBookModePage( $referer ) {
 		global $wgOut;
+		global $wgScriptPath;
 
 		$this->setHeaders();
 		$wgOut->setPageTitle( wfMsg( 'coll-book_mode' ) );
 
 		$wgOut->addWikiMsg(  'coll-book_mode_intro' );
 
+		$imagepath = "$wgScriptPath/extensions/Collection/images";
+
+		$wgOut->addInlineStyle(<<<EOS
+.collection-button {
+	float: left;
+	padding: 0 10px 0 14px;
+	height: 29px;
+}
+
+.collection-button.ok {
+	background: url($imagepath/ok-button.png) left top no-repeat;
+}
+
+.collection-button.okright {
+	background: url($imagepath/ok-button.png) right top no-repeat;
+	margin-right: 10px;
+	padding: 0;
+	width: 4px;
+}
+
+.collection-button.cancel {
+	background: url($imagepath/cancel-button.png) left top no-repeat;
+}
+
+.collection-button.cancelright {
+	background: url($imagepath/cancel-button.png) right top no-repeat;
+	padding: 0;
+	width: 4px;
+}
+
+.collection-button a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+	line-height: 29px;
+}
+
+.collection-button a:hover {
+	text-decoration: none;
+}
+EOS
+		);
+
 		$wgOut->addHTML(
 			Xml::tags( 'div',
 				array(
 					'style' => 'margin: 10px 0;',
 				),
-				Xml::tags( 'form',
+				Xml::tags( 'div',
 					array(
-						'action' => SkinTemplate::makeSpecialUrlSubpage( 'Book', 'start_book_mode/' ),
-						'method' => 'post',
+						'class' => 'collection-button ok',
 					),
-					Xml::element( 'input',
+					Xml::element( 'a',
 						array(
-							'type' => 'hidden',
-							'name' => 'referer',
-							'value' => $referer,
+							'href' => SkinTemplate::makeSpecialUrlSubpage(
+								'Book', 'start_book_mode/',
+								array(
+									'referer' => $referer,
+								)
+						 	),
+							// TODO: title
 						),
-						'', false
+						wfMsg( 'coll-start_book_mode' )
 					)
-					. Xml::element( 'input',
+				)
+				. Xml::element( 'div',
+					array(
+						'class' => 'collection-button okright',
+					),
+					'', false
+				)
+				. Xml::tags( 'div',
+					array(
+						'class' => 'collection-button cancel',
+					),
+					Xml::element( 'a',
 						array(
-							'type' => 'submit',
-							'name' => 'continue',
-							'value' => wfMsg( 'coll-start_book_mode' ),
+							'href' => SkinTemplate::makeSpecialUrlSubpage(
+								'Book', 'stop_book_mode/',
+								array(
+									'referer' => $referer,
+								)
+						 	),
+							// TODO: title
 						),
-						'', false
+						wfMsg( 'coll-cancel' )
 					)
-					. Xml::element( 'input',
-						array(
-							'type' => 'submit',
-							'name' => 'exit',
-							'value' => wfMsg( 'coll-cancel' ),
-						),
-						'', false
-					)
+				)
+				. Xml::element( 'div',
+					array(
+						'class' => 'collection-button cancelright',
+					),
+					'', false
+				)
+				. Xml::element( 'div',
+					array(
+						'style' => 'clear: both;',
+					),
+					'', false
 				)
 			)
 		);
