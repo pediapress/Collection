@@ -82,7 +82,7 @@ if ( $t && $t->exists() ) { ?>
 <?php } ?>
 		</div>
 <?php
-if ($a->exists() ) { ?>
+if ($t && $t->exists() ) { ?>
 		<div id="coll-order_info" style="display:none; margin-top: 2em;">
 <?php
 echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
