@@ -344,7 +344,7 @@ $messages['am'] = array(
  */
 $messages['ar'] = array(
 	'coll-desc' => '[[Special:Book|ينشيء كتبا]]',
-	'coll-book_mode_intro' => "تستطيع مع ''وضع الكتب'' إنشاء كتاب يتكون من صفحات ويكي بحسب اختيارك. تستطيع تصدير كتابك بأنساق مختلفة (PDF أو ODF على سبيل المثال) أو طلب نسخة مطبوعة.",
+	'coll-book_mode_intro' => "<big>تستطيع مع ''وضع الكتب'' إنشاء كتاب يتكون من صفحات ويكي بحسب اختيارك. تستطيع تصدير كتابك بأنساق مختلفة (PDF أو ODF على سبيل المثال) أو طلب نسخة مطبوعة.</big>",
 	'coll-book_mode_help' => 'راجع [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة المتعلقة بالكتب]] لمزيد من المعلومات.',
 	'coll-start_book_mode' => 'ابدأ وضع الكتب',
 	'coll-book_mode_text_article' => 'نص وضع الكتب',
@@ -598,7 +598,7 @@ $messages['ast'] = array(
  */
 $messages['be-tarask'] = array(
 	'coll-desc' => '[[Special:Book|Стварэньне кніг]]',
-	'coll-book_mode_intro' => "У ''рэжыме кнігі'' Вы можаце стварыць кнігу, якая будзе складацца з выбраных вікі-старонак. Вы можаце экспартаваць Вашу кнігу ў розныя фарматы (напрыклад, PDF альбо ODF) альбо замовіць друкаваную копію.",
+	'coll-book_mode_intro' => "<big>У ''рэжыме кнігі'' Вы можаце стварыць кнігу, якая будзе складацца з выбраных вікі-старонак. Вы можаце экспартаваць Вашую кнігу ў розныя фарматы (напрыклад, PDF альбо ODF) альбо замовіць друкаваную копію.</big>",
 	'coll-book_mode_help' => 'Глядзіце [[{{MediaWiki:Coll-helppage}}|дапамогу па стварэньню кніг]] для дадатковай інфармацыі.',
 	'coll-start_book_mode' => 'Пачаць рэжым кнігі',
 	'coll-book_mode_text_article' => 'Тэкст рэжыму кнігі',
@@ -790,7 +790,7 @@ $messages['bn'] = array(
  */
 $messages['br'] = array(
 	'coll-desc' => '[[Special:Book|Sevel levrioù]]',
-	'coll-book_mode_intro' => "Gant ar ''mod levrioù'' e c'hallit sevel ul levr a ya d'e ober pajennoù eus ar wiki dibabet ganeoc'h. Gallout a rit ezporzhiañ ho levr dre furmadoù disheñvel (evel, da skouer, PDF pe ODF) pe urzhiañ un eilskrid moullet.",
+	'coll-book_mode_intro' => "<big>Gant ar ''mod levrioù'' e c'hallit sevel ul levr a ya d'e ober pajennoù wiki dibabet ganeoc'h. Gallout a rit ezporzhiañ al levr e furmadoù disheñvel (evel, da skouer, PDF pe ODF) pe urzhiañ ur stumm moullet.</big>",
 	'coll-book_mode_help' => "Gwelet [[{{MediaWiki:Coll-helppage}}|ar bajenn skoazell diwar-benn al levrioù]] evit gouzout hiroc'h.",
 	'coll-start_book_mode' => 'Kregiñ gant ar mod levr',
 	'coll-book_mode_text_article' => 'Testenn ar mod levr',
@@ -910,7 +910,7 @@ Kit e darempred gant ur merour MediaWiki.",
  */
 $messages['bs'] = array(
 	'coll-desc' => '[[Special:Book|Napravite knjige]]',
-	'coll-book_mode_intro' => "Putem ''način knjige'' možete napraviti knjigu koja se sastoji od odabranih wiki stranica. Možete izvesti Vašu knjigu u raznim formatima (na primjer PDF ili ODF) ili naručiti štampanu kopiju.",
+	'coll-book_mode_intro' => "<big>Putem ''način knjige'' možete napraviti knjigu koja se sastoji od odabranih wiki stranica. Možete izvesti Vašu knjigu u raznim formatima (na primjer PDF ili ODF) ili naručiti štampanu kopiju.</big>",
 	'coll-book_mode_help' => 'Za više informacija pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu pomoći o knjigama]].',
 	'coll-start_book_mode' => 'Započni način knjige',
 	'coll-book_mode_text_article' => 'Tekst načina knjige',
@@ -1032,7 +1032,7 @@ Molimo da kontaktirate Vašeg MediaWiki administratora.',
  */
 $messages['ca'] = array(
 	'coll-desc' => '[[Special:Book|Crea llibres]]',
-	'coll-book_mode_intro' => "Amb el ''mode llibre'', podeu crear un llibre format per les pàgines que volgueu. Podeu exportar-lo en diferents formats (per exemple PDF o ODF) o  demanar una còpia impresa.",
+	'coll-book_mode_intro' => "<big>Amb el ''mode llibre'', podeu crear un llibre format per les pàgines que volgueu. Podeu exportar-lo en diferents formats (per exemple PDF o ODF) o  demanar una còpia impresa.</big>",
 	'coll-book_mode_help' => "Vegeu [[{{MediaWiki:Coll-helppage}}|la pàgina d'ajuda dels llibres]] per més informació.",
 	'coll-start_book_mode' => 'Inicia el mode llibre',
 	'coll-book_mode_text_article' => 'Text en mode llibre',
@@ -1152,7 +1152,7 @@ Si us plau, contacteu amb el vostre administrador de MediaWiki.",
  */
 $messages['cs'] = array(
 	'coll-desc' => '[[Special:Book|Vytváření knih]]',
-	'coll-book_mode_intro' => "V ''režimu tvorby knihy'' si můžete vytvořit knihu sestávající z libovolných stránek wiki. Knihu pak můžete vyexportovat do různých formátů (např. PDF či ODF) nebo si objednat tištěnou verzi.",
+	'coll-book_mode_intro' => "<big>V ''režimu tvorby knihy'' si můžete vytvořit knihu sestávající z libovolných stránek wiki. Knihu pak můžete vyexportovat do různých formátů (např. PDF či ODF) nebo si objednat tištěnou verzi.</big>",
 	'coll-book_mode_help' => 'Další informace najdete na [[{{MediaWiki:Coll-helppage}}|stránce nápovědy ke knihám]].',
 	'coll-start_book_mode' => 'Spustit režim tvorby knihy',
 	'coll-collection' => 'Kniha',
@@ -1268,7 +1268,7 @@ Kontaktujte svého správce MediaWiki.',
  */
 $messages['cy'] = array(
 	'coll-desc' => '[[Special:Book|Llunio llyfrau]]',
-	'coll-book_mode_intro' => "Gallwch ddefnyddio'r ''teclyn llyfr'' i lunio llyfr yn cynnwys tudalennau'r wici o'ch dewis eich hun. Gallwch allforio'r llyfr ar sawl ffurf (er enghraifft PDF neu ODF), neu gallwch archebu copi ohono ar bapur.",
+	'coll-book_mode_intro' => "<big>Gallwch ddefnyddio'r ''teclyn llyfr'' i lunio llyfr yn cynnwys tudalennau'r wici o'ch dewis eich hun. Gallwch allforio'r llyfr ar sawl ffurf (er enghraifft PDF neu ODF), neu gallwch archebu copi ohono ar bapur.</big>",
 	'coll-book_mode_help' => 'Gweler [[{{MediaWiki:Coll-helppage}}|y dudalen gymorth ar lyfrau]] i gael rhagor o wybodaeth.',
 	'coll-start_book_mode' => "Dechrau'r modd llyfr",
 	'coll-book_mode_text_article' => 'Testun ar lun llyfr',
@@ -1406,8 +1406,8 @@ $messages['da'] = array(
  */
 $messages['de'] = array(
 	'coll-desc' => '[[Special:Book|Erstelle Bücher]]',
-	'coll-book_mode_intro' => "Mit dem ''Buchmodus'' kannst du ein Buch aus beliebigen Wikiseiten erstellen.
-Du kannst das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.",
+	'coll-book_mode_intro' => "<big>Mit dem ''Buchmodus'' kannst du ein Buch aus beliebigen Wikiseiten erstellen.
+Du kannst das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.</big>",
 	'coll-book_mode_help' => 'Siehe die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Büchern]] für weitere Informationen.',
 	'coll-start_book_mode' => 'Buchmodus starten',
 	'coll-book_mode_text_article' => 'Text für Buchmodus',
@@ -1521,8 +1521,8 @@ Hinweise:
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
-	'coll-book_mode_intro' => "Mit dem ''Buchmodus'' können Sie ein Buch aus beliebigen Wikiseiten erstellen.
-Sie können das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.",
+	'coll-book_mode_intro' => "<big>Mit dem ''Buchmodus'' können Sie ein Buch aus beliebigen Wikiseiten erstellen.
+Sie können das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.</big>",
 	'coll-noscript_text' => '<h1>JavaScript wird benötigt!</h1>
 <strong>Ihr Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
 Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong>',
@@ -1562,7 +1562,7 @@ Hinweise:
  */
 $messages['dsb'] = array(
 	'coll-desc' => '[[Special:Book|Knigły napóraś]]',
-	'coll-book_mode_intro' => "Z ''modusom knigłow'' móžoš knigły napóraś, kótarež wobstoje z pśipadnych bokow. Móžoš swóje knigły w rozdźělnych formatach eksportěrowaś (na pśikład PDF abo ODF) abo śišćanu kopiju skazaś.",
+	'coll-book_mode_intro' => "<big>Z ''modusom knigłow'' móžoš knigły napóraś, kótarež wwopśimuju wikijowe boki twójeje wólby. Móžoš swóje knigły w rozdźělnych formatach eksportěrowaś (na pśikład PDF abo ODF) abo śišćanu kopiju skazaś.</big>",
 	'coll-book_mode_help' => 'Glědaj [[{{MediaWiki:Coll-helppage}}|bok pomocy wó knigłach]] za dalšne informacije.',
 	'coll-start_book_mode' => 'Modus knigłow startowaś',
 	'coll-book_mode_text_article' => 'Tekst modusa knigłow',
@@ -1692,7 +1692,7 @@ $messages['ee'] = array(
  */
 $messages['el'] = array(
 	'coll-desc' => '[[Special:Book|Δημιουργία βιβλίων]]',
-	'coll-book_mode_intro' => "Με τη ''λειτουργία βιβλίου'' μπορείτε να δημιουργήσετε ένα βιβλίο που αποτελείται από αυθαίρετες βικισελίδες. Μπορείτε να εξάγετε το βιβλίο σας σε διαφορετικές μορφοποιήσεις (για παράδειγμα PDF ή ODF) ή να παραγγείλετε ένα εκτυπωμένο αντίγραφο.",
+	'coll-book_mode_intro' => "<big>Με τη ''λειτουργία βιβλίου'' μπορείτε να δημιουργήσετε ένα βιβλίο που αποτελείται από αυθαίρετες βικισελίδες. Μπορείτε να εξάγετε το βιβλίο σας σε διαφορετικές μορφοποιήσεις (για παράδειγμα PDF ή ODF) ή να παραγγείλετε ένα εκτυπωμένο αντίγραφο.</big>",
 	'coll-book_mode_help' => 'Δείτε [[{{MediaWiki:Coll-helppage}}|τη σελίδα βοήθειας για τα βιβλία]] για περισσότερες πληροφορίες.',
 	'coll-start_book_mode' => 'Έναρξη κατάστασης βιβλίου',
 	'coll-book_mode_text_article' => 'Κείμενο κατάστασης βιβλίου',
@@ -1932,7 +1932,7 @@ Bonvolu kontakti vian administranton de MediaWiki.',
  */
 $messages['es'] = array(
 	'coll-desc' => '[[Special:Book|Crear libros]]',
-	'coll-book_mode_intro' => "Con el ''modo libro'' puedes crear un libro consistente de páginas wiki arbitrarias. Puedes exportar tu libro en diferentes formatos (por ejemplo PDF o ODF) u ordenar una copia impresa.",
+	'coll-book_mode_intro' => "<big>Con el ''modo libro'' puedes crear un libro consistente de páginas wiki de tu preferencia. Puedes exportar tu libro en diferentes formatos (por ejemplo PDF o ODF) u ordenar una copia impresa.</big>",
 	'coll-book_mode_help' => 'Ver [[{{MediaWiki:Coll-helppage}}|la página de ayuda acerca de los libros]] para mayor información.',
 	'coll-start_book_mode' => 'Comenzar modo libro',
 	'coll-book_mode_text_article' => 'Texto en modo libro',
@@ -2051,7 +2051,7 @@ Por favor, contacta con tu administrador MediaWiki.',
  */
 $messages['et'] = array(
 	'coll-desc' => '[[Special:Book|Loo raamatuid]]',
-	'coll-book_mode_intro' => 'Raamaturežiimiga saad luua suvalistest viki lehekülgedest koosneva raamatu. Saad oma raamatu erinevatesse vormingutesse (näiteks PDF või ODF) eksportida või tellida trükitud eksemplari.',
+	'coll-book_mode_intro' => '<big>Raamaturežiimiga saad luua suvalistest viki lehekülgedest koosneva raamatu. Saad oma raamatu erinevatesse vormingutesse (näiteks PDF või ODF) eksportida või tellida trükitud eksemplari.</big>',
 	'coll-book_mode_help' => 'Täiendava teabe jaoks vaata [[{{MediaWiki:Coll-helppage}}|raamatute abilehte]].',
 	'coll-start_book_mode' => 'Käivita raamaturežiim',
 	'coll-book_mode_text_article' => 'Raamaturežiimi tekst',
@@ -2380,7 +2380,7 @@ $messages['fa'] = array(
  */
 $messages['fi'] = array(
 	'coll-desc' => '[[Special:Book|Laadi kirjoja]].',
-	'coll-book_mode_intro' => "''Kirjatilassa'' voit luoda kirjan, joka koostuu haluamistasi wikisivuista. Voit viedä kirjasi eri muodoissa (esimerkiksi PDF- tai ODF-tiedostona) tai tilata sen painettuna.",
+	'coll-book_mode_intro' => "<big>''Kirjatilassa'' voit luoda kirjan, joka koostuu haluamistasi wikisivuista. Voit viedä kirjasi eri muodoissa (esimerkiksi PDF- tai ODF-tiedostona) tai tilata sen painettuna.</big>",
 	'coll-book_mode_help' => 'Katso [[{{MediaWiki:Coll-helppage}}|ohjesivulta lisätietoja]].',
 	'coll-start_book_mode' => 'Käynnistä kirjatila',
 	'coll-book_mode_text_article' => 'Kirjatilan teksti',
@@ -2507,7 +2507,7 @@ Ota yhteys MediaWiki-ylläpitäjääsi.',
  */
 $messages['fr'] = array(
 	'coll-desc' => 'Permet de [[Special:Book|créer des livres]]',
-	'coll-book_mode_intro' => "Avec le ''mode livre'' vous pouvez créer un livre se composant de pages du wiki arbitraires. Vous pouvez exporter votre livre en différents formats (par exemple PDF or ODF) ou commander une copie imprimée.",
+	'coll-book_mode_intro' => "<big>Avec le ''mode livre'' vous pouvez créer un livre se composant de pages du wiki de votre choix. Vous pouvez exporter votre livre en différents formats (par exemple PDF or ODF) ou commander une copie imprimée.</big>",
 	'coll-book_mode_help' => 'Voir [[{{MediaWiki:Coll-helppage}}|l’aide sur les livres]] pour plus d’informations.',
 	'coll-start_book_mode' => 'Démarrer le mode livre',
 	'coll-book_mode_text_article' => 'Texte du mode livre',
@@ -2635,7 +2635,7 @@ $messages['fy'] = array(
  */
 $messages['gl'] = array(
 	'coll-desc' => '[[Special:Book|Crear libros]]',
-	'coll-book_mode_intro' => "Co ''modo libro'' pode crear un libro composto por páxinas arbitrarias do wiki. Pode exportar o seu libro en diferentes formatos (por exemplo, PDF ou ODF) ou solicitar unha copia impresa.",
+	'coll-book_mode_intro' => "<big>Co ''modo libro'' pode crear un libro composto por páxinas do wiki da súa escolla. Pode exportar o seu libro en diferentes formatos (por exemplo, PDF ou ODF) ou solicitar unha copia impresa.</big>",
 	'coll-book_mode_help' => 'Olle [[{{MediaWiki:Coll-helppage}}|a páxina de axuda sobre os libros]] para obter máis información.',
 	'coll-start_book_mode' => 'Iniciar o modo libro',
 	'coll-book_mode_text_article' => 'Texto do modo libro',
@@ -2781,8 +2781,8 @@ $messages['grc'] = array(
  */
 $messages['gsw'] = array(
 	'coll-desc' => '[[Special:Book|Leg Biecher aa]]',
-	'coll-book_mode_intro' => "Mit em ''Buechmodus'' chasch Du ne Buech us beliebige Wikisyte aalege.
-Du chasch d Buech in unterschidlige Format exportiere (zem Byschpel PDF oder ODF) oder in ere druckte Form bstelle.",
+	'coll-book_mode_intro' => "<big>Mit em ''Buechmodus'' chasch Du ne Buech us beliebige Wikisyte aalege.
+Du chasch d Buech in unterschidlige Format exportiere (zem Byschpel PDF oder ODF) oder in ere druckte Form bstelle.</big>",
 	'coll-book_mode_help' => 'Luege d [[{{MediaWiki:Coll-helppage}}|Hilf zue Biecher]] fir meh Informatione.',
 	'coll-start_book_mode' => 'Buechmodus starte',
 	'coll-book_mode_text_article' => 'Text fir Buechmodus',
@@ -2975,7 +2975,7 @@ $messages['haw'] = array(
  */
 $messages['he'] = array(
 	'coll-desc' => '[[Special:Book|איסוף דפים לספר]], יצירת קובצי PDF',
-	'coll-book_mode_intro' => 'באמצעות "מצב ספר", ניתן ליצור ספר הכולל דפי ויקי כלשהם. תוכלו לייצא את הספר שלכם בסוגי קבצים שונים (לדוגמה, PDF או ODF) או להזמין עותק מודפס.',
+	'coll-book_mode_intro' => '<big>באמצעות "מצב ספר", ניתן ליצור ספר הכולל דפי ויקי כלשהם. תוכלו לייצא את הספר שלכם בסוגי קבצים שונים (לדוגמה, PDF או ODF) או להזמין עותק מודפס.</big>',
 	'coll-book_mode_help' => 'עיינו ב[[{{MediaWiki:Coll-helppage}}|דף העזרה אודות ספרים]] למידע נוסף.',
 	'coll-start_book_mode' => 'הפעלת מצב ספר',
 	'coll-book_mode_text_article' => 'טקסט במצב ספר',
@@ -3158,7 +3158,7 @@ $messages['hil'] = array(
  */
 $messages['hr'] = array(
 	'coll-desc' => '[[Special:Book|Stvori zbirku]]',
-	'coll-book_mode_intro' => "S ''načinom zbirka'' možete stvoriti zbirku koja se sastoji od proizvoljnih wiki stranica. Možete izvesti svoju zbirku u različitim formatima (npr. PDF ili ODF) ili naručiti tiskani primjerak.",
+	'coll-book_mode_intro' => "<big>S ''načinom zbirka'' možete stvoriti zbirku koja se sastoji od proizvoljnih wiki stranica. Možete izvesti svoju zbirku u različitim formatima (npr. PDF ili ODF) ili naručiti tiskani primjerak.</big>",
 	'coll-book_mode_help' => 'Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više informacija.',
 	'coll-start_book_mode' => 'Pokrenite način zbirke',
 	'coll-book_mode_text_article' => 'Tekst načina zbirke',
@@ -3277,7 +3277,7 @@ Molimo kontaktirajte svog MediaWiki administratora.',
  */
 $messages['hsb'] = array(
 	'coll-desc' => '[[Special:Book|Knihi wutworić]]',
-	'coll-book_mode_intro' => "Přez ''knižny modus'' móžeš knihu wutworić, kotraž ze samowólnych wikijowych stronow wobsteji. Móžeš swoju knihu w rozdźělnych formatach eksportować (na přikład PDF abo ODF) abo sej ćišćanu kopiju žadać.",
+	'coll-book_mode_intro' => "<big>Přez ''knižny modus'' móžeš knihu wutworić, kotraž wikijowe strony twojeje wólby wobsahuje. Móžeš swoju knihu w rozdźělnych formatach eksportować (na přikład PDF abo ODF) abo sej ćišćanu kopiju žadać.</big>",
 	'coll-book_mode_help' => 'Hlej [[{{MediaWiki:Coll-helppage}}|stronu pomocy wo knihach]] za dalše informacije.',
 	'coll-start_book_mode' => 'Knižny modus startować',
 	'coll-book_mode_text_article' => 'Tekst knižneho modusa',
@@ -3723,7 +3723,7 @@ Per favor contacta tu administrator de MediaWiki.',
  */
 $messages['id'] = array(
 	'coll-desc' => '[[Special:Book|Membuat buku koleksi artikel]]',
-	'coll-book_mode_intro' => "Dengan ''moda buku'' Anda dapat membuat sebuah buku berisi halaman-halaman wiki. Anda dapat mengekspor buku Anda dalam berbagai format (misalnya PDF atau ODF) atau memesan versi cetaknya.",
+	'coll-book_mode_intro' => "<big>Dengan ''mode buku'', Anda dapat membuat sebuah buku berisikan halaman-halaman wiki yang Anda pilih sendiri. Anda dapat mengekspor buku tersebut ke berbagai format (seperti PDF atau ODF) atau membeli versi cetaknya.</big>",
 	'coll-book_mode_help' => 'Lihat [[{{MediaWiki:Coll-helppage}}|halaman bantuan mengenai buku]] untuk informasi lebih lanjut.',
 	'coll-start_book_mode' => 'Moda buku mulai',
 	'coll-book_mode_text_article' => 'Teks moda buku',
@@ -3762,7 +3762,7 @@ Lihat [[{{MediaWiki:Coll-helppage}}|halaman bantuan mengenai buku]] untuk inform
 	'coll-drag_and_drop' => 'Geser & jatuhkan untuk mengubah urutan halaman wiki dan bab',
 	'coll-create_chapter' => 'Buat bab',
 	'coll-sort_alphabetically' => 'Urutkan secara alfabetis',
-	'coll-rename' => 'Namai ulang',
+	'coll-rename' => 'Ganti nama',
 	'coll-new_chapter' => 'Masukkan nama bab baru',
 	'coll-rename_chapter' => 'Masukkan nama baru bab',
 	'coll-no_such_category' => 'Tidak ada kategori tersebut',
@@ -3893,7 +3893,7 @@ $messages['is'] = array(
  */
 $messages['it'] = array(
 	'coll-desc' => '[[Special:Book|Crea libri]]',
-	'coll-book_mode_intro' => "Con la ''modalità libro'' è possibile creare un libro di pagine wiki a scelta. È possibile esportare il libro in diversi formati (per esempio PDF o ODF) o ordinare una copia stampata.",
+	'coll-book_mode_intro' => "<big>Con la ''modalità libro'' è possibile creare un libro contenente pagine wiki a propria scelta. È possibile esportare il libro in diversi formati (per esempio PDF o ODF) o ordinare una copia stampata.</big>",
 	'coll-book_mode_help' => 'Vedi [[{{MediaWiki:Coll-helppage}}|la pagina di aiuto sui libri]] per maggiori informazioni.',
 	'coll-start_book_mode' => 'Inizia modalità libro',
 	'coll-book_mode_text_article' => 'Testo modalità libro',
@@ -4010,7 +4010,7 @@ Note:
  */
 $messages['ja'] = array(
 	'coll-desc' => '[[Special:Book|ブックを作成する]]',
-	'coll-book_mode_intro' => '「ブックモード」では任意のウィキページから成るブックを作成することができます。ブックは様々なフォーマット（例えば PDF や ODF）でエクスポートしたり、印刷したコピーを注文したりできます。',
+	'coll-book_mode_intro' => '<big>「ブックモード」ではあなたが選んだウィキページを含むブックを作成することができます。ブックは様々なフォーマット（例えば PDF や ODF）でエクスポートしたり、印刷したコピーを注文したりできます。</big>',
 	'coll-book_mode_help' => '詳しい情報は[[{{MediaWiki:Coll-helppage}}|ブックに関するヘルプページ]]を参照してください。',
 	'coll-start_book_mode' => 'ブックモードを開始',
 	'coll-book_mode_text_article' => 'ブックモード本文',
@@ -4526,7 +4526,7 @@ $messages['krj'] = array(
  */
 $messages['ksh'] = array(
 	'coll-desc' => '[[Special:Book|Böösher ußjäve]]',
-	'coll-book_mode_intro' => 'Mem \'\'Booch Maache\'\' kanns De e Booch uß alle mööschesche Sigge uss_em Wiki zosammeshtelle. Ding Booch kanns De en ongerscheidlijje Fommaate (för e Beishpöll als <i lang="en">PDF</i> udder <i lang="en">ODF</i>) expoteere udder jedröck beshtelle.',
+	'coll-book_mode_intro' => '<big>Mem „\'\'Booch Maache\'\'“ kanns De e Booch uß alle mööschesche Sigge uss_em Wiki zosammeshtelle. Di Sigge kanns De sellver ußsöhke. Ding Booch kanns De en ongerscheidlijje Fommaate expoteere (för e Beishpöll als <i lang="en">PDF</i> udder <i lang="en">ODF</i>), udder jedröck beshtelle.</big>',
 	'coll-book_mode_help' => 'Loor op dä [[{{MediaWiki:Coll-helppage}}|Hölp-Sigg för et Bööschermaache]] noh, wann De mieh weße wells.',
 	'coll-start_book_mode' => 'Et Booch Maache bejenne',
 	'coll-book_mode_text_article' => 'E Booch Maache',
@@ -4652,7 +4652,7 @@ $messages['kw'] = array(
  */
 $messages['lb'] = array(
 	'coll-desc' => '[[Special:Book|Bicher uleeën]]',
-	'coll-book_mode_intro' => "Mam ''Buchmodus'' kënnt Dir e Buch uleeën datt aus deene Wikisäite bestteet déi Dir eraussicht. Dir kënnt Ärt Buch a verschidde Formater (zum Beispill PDF oder ODF) exportéieren oder eng gedréckte Kopie bestellen.",
+	'coll-book_mode_intro' => "<big>Mam ''Buchmodus'' kënnt Dir e Buch uleeën datt aus Wikisäite bestteet déi Dir eraussicht. Dir kënnt Ärt Buch a verschidde Formater (zum Beispill PDF oder ODF) exportéieren oder eng gedréckte Kopie bestellen.</big>",
 	'coll-book_mode_help' => "Kuckt [[{{MediaWiki:Coll-helppage}}|d'Hëllefsäit iwwer Bicher]] fir méi Informatiounen.",
 	'coll-start_book_mode' => 'Mam Buchmodus ufänken',
 	'coll-book_mode_text_article' => 'Text fir de Buchmodus',
@@ -5052,7 +5052,7 @@ $messages['mr'] = array(
  */
 $messages['ms'] = array(
 	'coll-desc' => '[[Special:Book|Mencipta buku]]',
-	'coll-book_mode_intro' => "Dengan ''mod buku'', anda dapat mencipta buku yang terdiri daripada laman-laman wiki sembarangan. Anda boleh mengeksport buku dalam format-format berbeza (contohnya PDF atau ODF) ataupun memesan salinan tercetak.",
+	'coll-book_mode_intro' => "<big>Dengan ''mod buku'', anda dapat mencipta buku yang terdiri daripada laman-laman wiki sembarangan. Anda boleh mengeksport buku dalam format-format berbeza (contohnya PDF atau ODF) ataupun memesan salinan tercetak.</big>",
 	'coll-book_mode_help' => 'Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan tentang buku]] untuk maklumat lanjut.',
 	'coll-start_book_mode' => 'Mulakan mod buku',
 	'coll-book_mode_text_article' => 'Teks mod buku',
@@ -5333,8 +5333,8 @@ $messages['nds-nl'] = array(
  */
 $messages['nl'] = array(
 	'coll-desc' => '[[Special:Book|Boeken maken]]',
-	'coll-book_mode_intro' => "Via de ''boekmodus'' kunt u een boek aanmaken uit willekeurige wikipagina's.
-U kunt uw boek in verschillende formaten (bijvoorbeeld PDF of ODF) exporteren of een gedrukt exemplaar bestellen.",
+	'coll-book_mode_intro' => "<big>Via de ''boekmodus'' kunt u een boek aanmaken met wikipagina's naar uw keuze.
+U kunt uw boek in verschillende formaten exporteren (bijvoorbeeld PDF of ODF) of een gedrukt exemplaar bestellen.</big>",
 	'coll-book_mode_help' => 'Zie [[{{MediaWiki:Coll-helppage}}|de hulppagina voor boeken]] voor meer informatie.',
 	'coll-start_book_mode' => 'Boekmodus starten',
 	'coll-book_mode_text_article' => 'Boekmodustekst',
@@ -5455,7 +5455,7 @@ Neem contact op met uw MediaWiki-beheerder.',
  */
 $messages['nn'] = array(
 	'coll-desc' => '[[Special:Book|Opprett bøker]]',
-	'coll-book_mode_intro' => 'Ved hjelp av bokfunksjonen kan du laga ei bok utgjort av valfrie wikisider. Du kan eksportera boka til ulike format, til dømes PDF eller ODF, eller tinga ein trykt kopi.',
+	'coll-book_mode_intro' => '<big>Ved hjelp av bokfunksjonen kan du laga ei bok utgjort av valfrie wikisider. Du kan eksportera boka til ulike format, til dømes PDF eller ODF, eller tinga ein trykt kopi.</big>',
 	'coll-start_book_mode' => 'Start bokfunksjonen',
 	'coll-collection' => 'Bok',
 	'coll-collections' => 'Bøker',
@@ -5575,7 +5575,7 @@ Kontakt MediaWiki-administratoren din.',
  */
 $messages['no'] = array(
 	'coll-desc' => '[[Special:Book|Lag bøker]]',
-	'coll-book_mode_intro' => 'Med bokfunksjonen kan du lage ei bok av valgfrie wikisider. Du kan eksportere boka til ulike formater, for eksempel PDF eller ODF, eller bestille en trykt kopi.',
+	'coll-book_mode_intro' => '<big>Med bokfunksjonen kan du lage ei bok av valgfrie wikisider. Du kan eksportere boka til ulike formater, for eksempel PDF eller ODF, eller bestille en trykt kopi.</big>',
 	'coll-book_mode_help' => 'Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om bøker]] for mer informasjon.',
 	'coll-start_book_mode' => 'Start bokfunksjonen',
 	'coll-collection' => 'Bok',
@@ -5686,7 +5686,7 @@ Kontakt din MediaWiki-administrator.',
  */
 $messages['oc'] = array(
 	'coll-desc' => '[[Special:Book|Crear de libres]]',
-	'coll-book_mode_intro' => "Amb lo ''mòde libre'' podètz crear un libre que se compausa de paginas del wiki arbitràrias. Podètz exportar vòstre libre en diferents formats (per exemple PDF o ODF) o comandar una còpia estampada.",
+	'coll-book_mode_intro' => "<big>Amb lo ''mòde libre'' podètz crear un libre que se compausa de paginas del wiki qu'auretz causidas. Podètz exportar vòstre libre en de formats diferents (per exemple PDF o ODF) o comandar una còpia estampada.</big>",
 	'coll-book_mode_help' => "Vejatz [[{{MediaWiki:Coll-helppage}}|l'ajuda suls libres]] per mai d'entresenhas.",
 	'coll-start_book_mode' => 'Aviar lo mòde libre',
 	'coll-book_mode_text_article' => 'Tèxte del mòde libre',
@@ -5842,7 +5842,7 @@ $messages['pdc'] = array(
  */
 $messages['pl'] = array(
 	'coll-desc' => '[[Special:Book|Utworzenie książki]]',
-	'coll-book_mode_intro' => 'W trybie kompletowania książki można utworzyć książkę z dowolnych stron wiki. Książkę można wyeksportować w różnych formatach (np. PDF czy ODF) lub zamówić jej wydrukowaną kopię.',
+	'coll-book_mode_intro' => '<big>W trybie kompletowania książki można utworzyć książkę z dowolnych stron wiki. Książkę można wyeksportować w różnych formatach (np. PDF czy ODF) lub zamówić jej wydrukowaną kopię.</big>',
 	'coll-book_mode_help' => 'Więcej informacji na stronie [[{{MediaWiki:Coll-helppage}}|pomocy dotyczącej książek]].',
 	'coll-start_book_mode' => 'Włącz tryb książki',
 	'coll-book_mode_text_article' => 'Tekst trybu książki',
@@ -5987,7 +5987,7 @@ $messages['ps'] = array(
  */
 $messages['pt'] = array(
 	'coll-desc' => '[[Special:Book|Cria livros]]',
-	'coll-book_mode_intro' => "No ''modo livro'' você pode criar um livro com páginas wikis arbitrárias. Você por exportá=las em diferentes formatos (por exempplo PDF ou ODF) ou solicitar uma cópia impressa.",
+	'coll-book_mode_intro' => "<big>No ''modo livro'' você pode criar um livro contendo páginas wikis da sua escolha. Você por exportar o livro em diferentes formatos (por exemplo PDF ou ODF) ou solicitar uma cópia impressa.</big>",
 	'coll-book_mode_help' => 'Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para mais detalhes.',
 	'coll-start_book_mode' => 'Começar modo livro',
 	'coll-book_mode_text_article' => 'Modo livro textual',
@@ -6106,7 +6106,7 @@ Por favor, contacte o seu administrador MediaWiki.',
  */
 $messages['pt-br'] = array(
 	'coll-desc' => '[[Special:Book|Criar livros]]',
-	'coll-book_mode_intro' => "Com o ''modo livro'' você pode criar um livro consistindo de quaisquer páginas wiki. Você pode exportar seu livro para diferentes formatos (por exemplo PDF ou ODF) ou fazer o pedido de uma cópia impressa.",
+	'coll-book_mode_intro' => "<big>Com o ''modo livro'' você pode criar um livro consistindo de quaisquer páginas wiki. Você pode exportar seu livro para diferentes formatos (por exemplo PDF ou ODF) ou fazer o pedido de uma cópia impressa.</big>",
 	'coll-book_mode_help' => 'Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para mais informações.',
 	'coll-start_book_mode' => 'Iniciar o modo livro',
 	'coll-book_mode_text_article' => 'Texto do modo livro',
@@ -6365,7 +6365,7 @@ $messages['roa-tara'] = array(
  */
 $messages['ru'] = array(
 	'coll-desc' => '[[Special:Book|Создаёт книги]]',
-	'coll-book_mode_intro' => 'В режиме «книга» вы можете создать книгу, состоящую из произвольных вики-страниц. Вы можете экспортировать ваши книги в какой-либо из форматов (например, PDF или ODF), или заказать печатную копию.',
+	'coll-book_mode_intro' => '<big>В режиме «книга» вы можете создать книгу, состоящую из произвольных вики-страниц. Вы можете экспортировать ваши книги в какой-либо из форматов (например, PDF или ODF), или заказать печатную копию.</big>',
 	'coll-book_mode_help' => 'Более подробно см. [[{{MediaWiki:Coll-helppage}}|справочную страницу о книгах]].',
 	'coll-start_book_mode' => 'Начать режим книги',
 	'coll-book_mode_text_article' => 'Текст режима книги',
@@ -6482,7 +6482,7 @@ $messages['ru'] = array(
  */
 $messages['sah'] = array(
 	'coll-desc' => '[[Special:Book|Кинигэлэри айар]]',
-	'coll-book_mode_intro' => '"Кинигэ" режимҥэ киирэн ханнык баҕарар биики сирэйдэртэн кинигэ оҥоруохха сөп. Бэйэҕит кинигэлэргитин ханнык эрэ формаакка экспортыаххытын сөп (холобур, PDF эбэтэр ODF), эбэтэр бэчээттэммит барылын сакаастыаххытын сөп.',
+	'coll-book_mode_intro' => '<big>"Кинигэ" режимҥэ киирэн ханнык баҕарар биики сирэйдэртэн кинигэ оҥоруохха сөп. Бэйэҕит кинигэлэргитин ханнык эрэ формаакка экспортыаххытын сөп (холобур, PDF эбэтэр ODF), эбэтэр бэчээттэммит барылын сакаастыаххытын сөп.</big>',
 	'coll-book_mode_help' => 'Сиһилии [[{{MediaWiki:Coll-helppage}}| кинигэ туһунан көмө сирэйи]] көр.',
 	'coll-start_book_mode' => 'Кинигэ режимигэр киирии',
 	'coll-book_mode_text_article' => 'Кинигэ режимин тиэкиһэ',
@@ -6607,7 +6607,7 @@ $messages['sh'] = array(
  */
 $messages['sk'] = array(
 	'coll-desc' => '[[Special:Book|Tvorba kníh]]',
-	'coll-book_mode_intro' => "V ''režime knihy'' si môžete vytvoriť knihu z ľubovoľných stránok wiki. Svoju knihu môžete exportovať v rozličných formátoch (napr. PDF alebo ODF) alebo si objednať tlačenú kópiu.",
+	'coll-book_mode_intro' => "<big>V ''režime knihy'' si môžete vytvoriť knihu zo stránok wiki, ktoré si zvolíte. Knihu môžete exportovať v rozličných formátoch (napr. PDF alebo ODF) alebo si objednať tlačenú kópiu.</big>",
 	'coll-book_mode_help' => 'Ďalšie informácie nájdete na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o knihách]].',
 	'coll-start_book_mode' => 'Spustiť režim knihy',
 	'coll-book_mode_text_article' => 'Text režimu knihy',
@@ -7147,7 +7147,7 @@ $messages['su'] = array(
  */
 $messages['sv'] = array(
 	'coll-desc' => '[[Special:Book|Skapa böcker]]',
-	'coll-book_mode_intro' => 'Med bokfunktionen kan du skapa en bok av valfria wikisidor. Du kan exportera boken i olika format, till exempel PDF eller ODF, eller beställa en tryckt kopia.',
+	'coll-book_mode_intro' => '<big>Med bokfunktionen kan du skapa en bok av valfria wikisidor. Du kan exportera boken i olika format, till exempel PDF eller ODF, eller beställa en tryckt kopia.</big>',
 	'coll-book_mode_help' => 'Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om böcker]] för mer information.',
 	'coll-start_book_mode' => 'Starta bokfunktionen',
 	'coll-collection' => 'Bok',
@@ -7621,7 +7621,7 @@ Makipagugnayan sa iyong tagapangasiwa ng MediaWiki.',
  */
 $messages['tr'] = array(
 	'coll-desc' => '[[Special:Book|Kitap oluştur]]',
-	'coll-book_mode_intro' => "''Kitap kipi'' ile isteğe bağlı viki sayfalarından oluşan bir kitap oluşturabilirsiniz. Kitabınızı farklı formatlarda dışa aktarabilir (örneğin PDF veya ODF) ya da basılı bir kopya sipariş edebilirsiniz.",
+	'coll-book_mode_intro' => "<big>''Kitap kipi'' ile istediğiniz viki sayfalarını içeren bir kitap oluşturabilirsiniz. Kitabı farklı formatlarda dışa aktarabilir (örneğin PDF veya ODF) ya da basılı bir kopya sipariş edebilirsiniz.</big>",
 	'coll-book_mode_help' => 'Daha fazla bilgi için [[{{MediaWiki:Coll-helppage}}|kitaplar için yardım sayfasına]] bakın.',
 	'coll-start_book_mode' => 'Kitap kipini başlat',
 	'coll-book_mode_text_article' => 'Kitap kipi metni',
@@ -7842,7 +7842,7 @@ $messages['uk'] = array(
  */
 $messages['vec'] = array(
 	'coll-desc' => '[[Special:Book|Crea libri]]',
-	'coll-book_mode_intro' => "Con la ''modalità libro'' se pole farse un proprio libro de pagine wiki a sièlta lìbara. El libro el se pole esportar in diversi formati (par esenpio PDF o ODF) o se pole ordinar na copia stanpà.",
+	'coll-book_mode_intro' => "<big>Con la ''modalità libro'' se pole farse un proprio libro de pagine wiki a sièlta lìbara. El libro el se pole esportar in diversi formati (par esenpio PDF o ODF) o se pole ordinar na copia stanpà.</big>",
 	'coll-book_mode_help' => 'Varda [[{{MediaWiki:Coll-helppage}}|la pagina de aiuto sui libri]] par majori informassion.',
 	'coll-start_book_mode' => 'Intaca la modalità libro',
 	'coll-book_mode_text_article' => 'Testo modalità libro',
@@ -7980,7 +7980,7 @@ $messages['vep'] = array(
  */
 $messages['vi'] = array(
 	'coll-desc' => '[[Special:Book|Tạo sách vở]]',
-	'coll-book_mode_intro' => "Với ''chế độ tạo sách'' bạn có thể tạo một cuốn sách bao gồm các trang wiki ngẫu nhiên. Bạn có thể xuất cuốn sách của bạn ra nhiều định dạng khác nhau (như PDF hoặc ODF) hoặc đặt một bản in.",
+	'coll-book_mode_intro' => "<big>Với ''chế độ tạo sách'' bạn có thể tạo một cuốn sách bao gồm các trang wiki ngẫu nhiên. Bạn có thể xuất cuốn sách của bạn ra nhiều định dạng khác nhau (như PDF hoặc ODF) hoặc đặt một bản in.</big>",
 	'coll-book_mode_help' => 'Xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về sách]] để biết thêm thông tin.',
 	'coll-start_book_mode' => 'Bắt đầu chế độ tạo sách',
 	'coll-book_mode_text_article' => 'Văn bản chế độ tạo sách',
