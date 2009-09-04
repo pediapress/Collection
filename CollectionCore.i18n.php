@@ -2461,3 +2461,38 @@ $messages['zh-hans'] = array(
 	'coll-show_collection_tooltip' => '点击此处编辑、下载或订购图书',
 );
 
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Alexsh
+ */
+$messages['zh-hant'] = array(
+	'coll-print_export' => '列印/匯出',
+	'coll-create_a_book' => '建立圖書',
+	'coll-book_mode' => '圖書模式',
+	'coll-download_as' => '下載為 $1',
+	'coll-download_as_tooltip' => '下載這個wiki頁面的$1版本',
+	'coll-disable' => '禁用',
+	'coll-disable_tooltip' => '停用圖書建立模式',
+	'coll-add_category' => '將此分類增加到圖書',
+	'coll-add_category_popup' => '將連接指向的分類中所有維基頁面加入您的圖書中',
+	'coll-add_category_tooltip' => '將這個分類中的所有維基頁面加入您的圖書中',
+	'coll-add_this_page' => '將此頁面增加到圖書',
+	'coll-add_page_popup' => '將連接指向的維基頁面加入您的圖書中',
+	'coll-add_page_tooltip' => '將當前的維基頁面加入您的圖書中',
+	'coll-bookscategory' => '圖書',
+	'coll-clear_collection' => '清除記錄',
+	'coll-clear_collection_confirm' => '真的要完全清除？',
+	'coll-clear_collection_tooltip' => '從您目前的圖書中移除所有維基頁面',
+	'coll-help' => '幫助',
+	'coll-help_tooltip' => '顯示關於建立圖書的說明',
+	'coll-helppage' => 'Help:圖書',
+	'coll-load_collection' => '載入圖書',
+	'coll-load_collection_tooltip' => '將這本圖書加載為您目前的圖書',
+	'coll-n_pages' => '$1個頁面',
+	'coll-printable_version_pdf' => 'PDF 版本',
+	'coll-remove_this_page' => '從圖書中移除此頁面',
+	'coll-remove_page_popup' => '將連接指向的維基頁面從您的圖書中移除',
+	'coll-remove_page_tooltip' => '將目前維基頁面從您的圖書中移除',
+	'coll-show_collection' => '顯示圖書',
+	'coll-show_collection_tooltip' => '點擊此處編輯、下載或訂購圖書',
+);
+

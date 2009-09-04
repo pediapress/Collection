@@ -8386,6 +8386,7 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
+ * @author Alexsh
  * @author FireJackey
  * @author Skjackey tse
  * @author Wmr89502270
@@ -8393,12 +8394,116 @@ $messages['zh-hans'] = array(
  */
 $messages['zh-hant'] = array(
 	'coll-desc' => '[[Special:Book|建立圖書]]',
+	'coll-book_mode_intro' => "<big>在''圖書模式''，您可以建立一個內含您自己選擇之維基頁面的圖書。你可以將其匯出成不同的格式(例如PDF或是ODF)或者訂做實體書。",
+	'coll-book_mode_help' => '請參閱[[{{MediaWiki:Coll-helppage}}|說明頁面]]以取得更多資訊。',
+	'coll-start_book_mode' => '啟動圖書模式',
+	'coll-book_mode_text_article' => '圖書模式文字',
 	'coll-collection' => '圖書',
 	'coll-collections' => '圖書',
+	'coll-exclusion_category_title' => '在列印中排除',
+	'coll-print_template_prefix' => '列印',
+	'coll-print_template_pattern' => '$1/列印',
+	'coll-unknown_subpage_title' => '未知的子頁面',
+	'coll-unknown_subpage_text' => '這個[[Special:Book|圖書]]的子頁面不存在',
+	'coll-couldnotaddarticle_title' => '無法新增頁面',
+	'coll-couldnotaddarticle_msg' => '無法新增此頁面。',
+	'coll-couldnotremovearticle_title' => '無法刪除維基頁面',
+	'coll-couldnotremovearticle_msg' => '無法刪除此頁面。',
+	'coll-noscript_text' => '<h1>需要JavaScript！ </h1>
+<strong>您的瀏覽器不支持JavaScript或JavaScript未開啟。
+
+除非啟用JavaScript，此頁面將無法正常工作。</strong>',
+	'coll-intro_text' => '建立和管理您個人選擇的wiki頁面。 <br />
+請參閱[[{{MediaWiki:Coll-helppage}}|說明]]以取得更多資訊',
+	'coll-savedbook_template' => '已儲存的書籍',
+	'coll-your_book' => '您的圖籍',
+	'coll-download_title' => '下載',
+	'coll-download_text' => '選擇一種格式後按下按鈕即可下載。',
+	'coll-download_as_text' => '按下按鈕即可下載$1格式。',
+	'coll-download' => '下載',
+	'coll-format_label' => '格式：',
+	'coll-remove' => '移除',
+	'coll-show' => '展開',
+	'coll-move_to_top' => '移至最頂端',
+	'coll-move_up' => '向上移動',
+	'coll-move_down' => '向下移動',
+	'coll-move_to_bottom' => '移至最底瑞',
+	'coll-title' => '標題：',
+	'coll-subtitle' => '副標題：',
+	'coll-contents' => '目錄',
+	'coll-drag_and_drop' => '使用拖放重新排列維基的頁面和章節',
+	'coll-create_chapter' => '建立章節',
+	'coll-sort_alphabetically' => '按字母排序',
+	'coll-rename' => '重新命名',
+	'coll-new_chapter' => '輸入新章節的名稱',
+	'coll-rename_chapter' => '輸入章節的新名稱',
+	'coll-no_such_category' => '無分類',
+	'coll-notitle_title' => '無法確定此頁面的標題',
+	'coll-post_failed_title' => '訊息發送失敗',
+	'coll-post_failed_msg' => '傳送到$1的請求失敗（$2）。',
+	'coll-mwserve_failed_title' => '呈現伺服器錯誤',
 	'coll-mwserve_failed_msg' => '服务器渲染错误：<nowiki>$1</nowiki>',
+	'coll-error_reponse' => '伺服器回傳的錯誤',
+	'coll-empty_collection' => '空的圖書',
+	'coll-revision' => '修訂版本： $1',
+	'coll-save_collection_title' => '儲存和分享您的圖書',
+	'coll-save_collection_text' => '請選擇圖書的儲存位置',
+	'coll-login_to_save' => '如果您想儲存圖書以供未來使用，[[Special:UserLogin|請登入或建立帳戶]]。',
+	'coll-personal_collection_label' => '個人圖書：',
+	'coll-community_collection_label' => '公有圖書：',
+	'coll-save_collection' => '儲存圖書',
 	'coll-save_category' => '所有图书都保存在分类[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]中。',
+	'coll-overwrite_title' => '頁面已經存在。
+要覆蓋嗎？',
+	'coll-overwrite_text' => '頁面[[:$1]]已經存在。
+您要用您的圖書覆蓋嗎？',
+	'coll-yes' => '是',
+	'coll-no' => '否',
+	'coll-load_overwrite_text' => '您的書中已經有一些頁面。
+要覆蓋您目前的圖書、增加新的內容或取消載入？',
 	'coll-overwrite' => '覆寫',
+	'coll-append' => '加入',
 	'coll-cancel' => '取消',
+	'coll-update' => '更新',
+	'coll-limit_exceeded_title' => '圖書過大',
+	'coll-limit_exceeded_text' => '您的圖書太大。
+無法再增加更多的頁面。',
+	'coll-rendering_title' => '呈現中',
+	'coll-rendering_text' => '<p><strong>請稍候，正在產生文件。</strong></p>
+
+<p><strong> 進度:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>本頁面將在數秒後自動更新。
+如果沒有動作，請按下瀏覽器的「重新整理」按鈕。</p>',
+	'coll-rendering_status' => '<strong>狀態：</strong> $1',
+	'coll-rendering_article' => '（維基頁面： $1）',
+	'coll-rendering_page' => '（頁面：$1）',
+	'coll-rendering_finished_title' => '已呈現完成',
+	'coll-rendering_finished_text' => '<strong>文件已經產生。</strong>
+<strong>[$1 下載文件]</strong>至您的電腦。
+
+註釋：
+* 不滿意輸出成果？請參閱[[{{MediaWiki:Coll-helppage}}|幫助頁面]]以暸解如何改善它。',
+	'coll-notfound_title' => '找不到圖書',
+	'coll-notfound_text' => '未找到。',
+	'coll-download_notfound_title' => '找不到文件',
+	'coll-download_notfound_text' => '您正在嘗試下載的文件不存在：可能已被刪除並需要重新產生文件',
+	'coll-is_cached' => '<ul><li>已找到文件的暫存版本，沒有重新呈現的必要。<a href="$1">強制重新呈現。</a></li></ul>',
+	'coll-excluded-templates' => '* [[:Category:$1|$1]]分類下的頁面被排除。',
 	'coll-blacklisted-templates' => '* 由于模板[[:$1]]在黑名单之中所以它被排除。',
+	'coll-return_to_collection' => '<p>回到<a href="$1">$2</a></p>',
+	'coll-book_title' => '訂購此書的紙本書',
+	'coll-book_text' => '從我們的合作夥伴中取得圖書的實體本：',
+	'coll-order_from_pp' => '從 $1 訂購圖書',
+	'coll-about_pp' => '關於 $1',
+	'coll-invalid_podpartner_title' => '不正確的POD合作伙伴',
+	'coll-invalid_podpartner_msg' => '提供的合作伙伴不正確，請聯絡您的MediaWiki管理員。',
+	'coll-license' => '許可協議',
+	'coll-return_to' => '回到[[:$1]]',
+	'coll-more_info' => '顯示更多資訊',
+	'coll-hide_info' => '隱藏訊息',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress 的訂購資訊',
+	'right-collectionsaveasuserpage' => '在使用者頁面儲存此書',
+	'right-collectionsaveascommunitypage' => '在社群頁面儲存此書',
 );
 
