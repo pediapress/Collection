@@ -2467,6 +2467,7 @@ $messages['zh-hans'] = array(
 $messages['zh-hant'] = array(
 	'coll-print_export' => '列印/匯出',
 	'coll-create_a_book' => '建立圖書',
+	'coll-create_a_book_tooltip' => '建立圖書或頁面集合',
 	'coll-book_mode' => '圖書模式',
 	'coll-download_as' => '下載為 $1',
 	'coll-download_as_tooltip' => '下載這個wiki頁面的$1版本',
