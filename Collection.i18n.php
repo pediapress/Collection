@@ -1032,7 +1032,7 @@ Molimo da kontaktirate Vašeg MediaWiki administratora.',
  */
 $messages['ca'] = array(
 	'coll-desc' => '[[Special:Book|Crea llibres]]',
-	'coll-book_mode_intro' => "<big>Amb el ''mode llibre'', podeu crear un llibre format per les pàgines que volgueu. Podeu exportar-lo en diferents formats (per exemple PDF o ODF) o  demanar una còpia impresa.</big>",
+	'coll-book_mode_intro' => "<big>Amb el ''mode llibre'', podeu crear un llibre format per les pàgines wiki que volgueu. Podeu exportar-lo en diferents formats (per exemple PDF o ODF) o  demanar una còpia impresa.</big>",
 	'coll-book_mode_help' => "Vegeu [[{{MediaWiki:Coll-helppage}}|la pàgina d'ajuda dels llibres]] per més informació.",
 	'coll-start_book_mode' => 'Inicia el mode llibre',
 	'coll-book_mode_text_article' => 'Text en mode llibre',
@@ -7979,8 +7979,8 @@ $messages['vep'] = array(
  * @author Vinhtantran
  */
 $messages['vi'] = array(
-	'coll-desc' => '[[Special:Book|Tạo sách vở]]',
-	'coll-book_mode_intro' => "<big>Với ''chế độ tạo sách'' bạn có thể tạo một cuốn sách bao gồm các trang wiki ngẫu nhiên. Bạn có thể xuất cuốn sách của bạn ra nhiều định dạng khác nhau (như PDF hoặc ODF) hoặc đặt một bản in.</big>",
+	'coll-desc' => '[[Special:Book|Tạo sách]]',
+	'coll-book_mode_intro' => "<big>Với ''chế độ tạo sách'' bạn có thể tạo một cuốn sách bao gồm các trang wiki do bạn lựa chọn. Bạn có thể xuất cuốn sách của bạn ra nhiều định dạng khác nhau (như PDF hoặc ODF) hoặc đặt mua một bản in.</big>",
 	'coll-book_mode_help' => 'Xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về sách]] để biết thêm thông tin.',
 	'coll-start_book_mode' => 'Bắt đầu chế độ tạo sách',
 	'coll-book_mode_text_article' => 'Văn bản chế độ tạo sách',
@@ -7990,7 +7990,7 @@ $messages['vi'] = array(
 	'coll-print_template_prefix' => 'In',
 	'coll-print_template_pattern' => '$1/Print',
 	'coll-unknown_subpage_title' => 'Trang phụ không tìm được',
-	'coll-unknown_subpage_text' => 'Trang phụ của [[Special:Book|Sách]] này không tồn tại',
+	'coll-unknown_subpage_text' => 'Trang phụ này của [[Special:Book|Sách]] không tồn tại',
 	'coll-couldnotaddarticle_title' => 'Không thể thêm trang wiki',
 	'coll-couldnotaddarticle_msg' => 'Không thêm được trang wiki.',
 	'coll-couldnotremovearticle_title' => 'Không thể bỏ trang wiki',
@@ -8038,9 +8038,10 @@ Xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về sách]] để biết th
 	'coll-community_collection_label' => 'Sách cộng đồng:',
 	'coll-save_collection' => 'Lưu sách',
 	'coll-save_category' => 'Các cuốn sách được xếp trong thể loại [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
-	'coll-overwrite_title' => 'Trang đã tồn tại. Ghi đè?',
+	'coll-overwrite_title' => 'Trang đã tồn tại.
+Ghi đè?',
 	'coll-overwrite_text' => 'Trang với tên [[:$1]] đã tồn tại.
-Bạn có muốn thay thế nó bằng tập hợp của bạn?',
+Bạn có muốn thay thế nó bằng quyển sách của bạn?',
 	'coll-yes' => 'Có',
 	'coll-no' => 'Không',
 	'coll-load_overwrite_text' => 'Bạn đã có một số trang trong sách của mình.
@@ -8089,7 +8090,7 @@ Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
 	'coll-hide_info' => 'Ẩn thông tin',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress',
 	'right-collectionsaveasuserpage' => 'Lưu sách vở thành trang cá nhân',
-	'right-collectionsaveascommunitypage' => 'Lưu sách vở thành trang cộng đồng',
+	'right-collectionsaveascommunitypage' => 'Lưu sách thành trang cộng đồng',
 );
 
 /** Volapük (Volapük)
