@@ -62,13 +62,7 @@ $messages['en'] = array(
 	'coll-make_suggestions'         => 'Suggest pages',
 	'coll-make_suggestions_tooltip' => 'Show suggestions based on the pages in your book',
 	'coll-suggest_enabled'          => '1',
-	'coll-suggest_empty'              => 'empty',
-	'coll-suggest_ban_tooltip'        => 'Remove this article from the list of suggestions',
-	'coll-suggest_article_ban'        => "Article <em>$1</em> has been removed from the suggestions. ($2)",
-	'coll-suggest_article_add'        => "Article <em>$1</em> has been added to your book. ($2)",
-	'coll-suggest_article_remove'     => "Article <em>$1</em> has been removed from your book. ($2)",
-	'coll-suggest_undo_tooltip'       => 'Undo this action',
-	'coll-suggest_undo'               => 'undo',
+	'coll-suggest_empty'            => 'empty',
 );
 
 /** Message documentation (Message documentation)

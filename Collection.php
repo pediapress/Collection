@@ -276,6 +276,7 @@ $wgAjaxExportList[] = 'wfAjaxCollectionClear';
 
 function wfCollectionSuggestAction( $action, $article ) {
 	wfLoadExtensionMessages( 'CollectionCore' );
+	wfLoadExtensionMessages( 'Collection' );
 
 	$json = new Services_JSON();
 	$result = CollectionSuggest::refresh( $action, $article );
@@ -319,6 +320,9 @@ function wfAjaxCollectionSuggestRemoveArticle( $article ) {
 $wgAjaxExportList[] = 'wfAjaxCollectionSuggestRemoveArticle';
 
 function wfAjaxCollectionSuggestUndoArticle( $lastAction, $article ) {
+	wfLoadExtensionMessages( 'CollectionCore' );
+	wfLoadExtensionMessages( 'Collection' );
+
 	$json = new Services_JSON();
 	$result = CollectionSuggest::undo( $lastAction, $article );
 	$r = new AjaxResponse( $json->encode( $result ) );
