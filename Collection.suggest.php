@@ -376,7 +376,11 @@ class Proposals {
 		$title = title::makeTitleSafe( NS_MAIN, $link );
 		if ( $title->isRedirect( $link ) ) {
 			$article = new Article( $title, 0 );
-			$title = Title::newFromRedirectRecurse( $article->getContent() );
+			if ( method_exists( Title, 'newFromRedirectRecurse' ) ) {
+				$title = Title::newFromRedirectRecurse( $article->getContent() );
+			} else {
+				$title = Title::newFromRedirect( $article->getContent() );
+			}
 			$link = $title->getText();
 		}
 		return $link;
