@@ -62,6 +62,7 @@ class CollectionSession {
 		if ( !self::hasSession() ) {
 			return;
 		}
+		self::clearCollection();
 		$_SESSION['wsCollection']['enabled'] = false;
 		self::touchSession();
 	}
