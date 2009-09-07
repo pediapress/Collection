@@ -1424,10 +1424,10 @@ $messages['da'] = array(
  */
 $messages['de'] = array(
 	'coll-desc' => '[[Special:Book|Erstelle Bücher]]',
-	'coll-book_mode_intro' => "<big>Mit dem ''Buchmodus'' kannst du ein Buch aus beliebigen Wikiseiten erstellen.
+	'coll-book_creator_intro' => "<big>Mit der ''Buchfunktion'' kannst du ein Buch aus beliebigen Wikiseiten erstellen.
 Du kannst das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.</big>",
-	'coll-book_mode_help' => 'Siehe die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Büchern]] für weitere Informationen.',
-	'coll-start_book_mode' => 'Buchmodus starten',
+	'coll-book_creator_help' => 'Siehe die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Büchern]] für weitere Informationen.',
+	'coll-start_book_creator' => 'Buchfunktion starten',
 	'coll-book_mode_text_article' => 'Text für Buchmodus',
 	'coll-collection' => 'Buch',
 	'coll-collections' => 'Bücher',
