@@ -40,7 +40,7 @@ $wgCollectionVersion = "1.3";
 # Configuration:
 
 /** Bump the version number every time you change any of the JavaScript files */
-$wgCollectionStyleVersion = 3;
+$wgCollectionStyleVersion = 4;
 
 /** URL of mw-serve render server */
 $wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
