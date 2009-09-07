@@ -480,6 +480,10 @@ class CollectionHooks {
 	}
 
 	static function getBookCreatorBoxSuggestLink( $sk, $imagePath, $ajaxHint ) {
+		if ( wfMsg( 'coll-suggest_enabled' ) != '1' ) {
+			return '';
+		}
+
 		if ( $ajaxHint == 'suggest' ) {
 			return Xml::tags( 'strong',
 				array(

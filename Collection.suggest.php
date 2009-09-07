@@ -125,6 +125,8 @@ class CollectionSuggest {
 	 * @return the template for the wikipage
 	 */
 	private static function getCollectionSuggestTemplate( $mode, $param ) {
+		global $wgCollectionMaxSuggestions;
+
 		switch($mode) {
 			case 'add':
 				SpecialCollection::addArticleFromName(NS_MAIN, $param);
@@ -158,12 +160,14 @@ class CollectionSuggest {
 						break;
 			}
 			self::addArticlesFromName( $articleList, $proposals );
-			$_SESSION['wsCollectionSuggestProp'] = $proposals->getLinkList();
 		}
 
 		$template->set( 'collection', $_SESSION['wsCollection'] );
-		$template->set( 'proposals', $proposals->getProposals() );
+		$template->set( 'proposals', $proposals->getProposals( $wgCollectionMaxSuggestions ) );
 		$template->set( 'hasbans', $proposals->hasBans() );
+
+		$_SESSION['wsCollectionSuggestProp'] = $proposals->getLinkList();
+
 		return $template;
 	}
 
