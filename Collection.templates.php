@@ -420,31 +420,39 @@ if ($this->data['return_to']) {
 class CollectionSuggestTemplate extends QuickTemplate {
 	function execute () {
 ?>
+<script src="<?php echo $GLOBALS['wgScriptPath'] . "/extensions/Collection/js/jquery.js?" . $GLOBALS['wgCollectionStyleVersion'] ?>" type="<?php echo $GLOBALS['wgJsMimeType']; ?>"></script>
+<script type="<?php echo $GLOBALS['wgJsMimeType']; ?>">
+/*<![CDATA[*/
+var collection_jQuery = jQuery.noConflict();
+/*]]>*/
+</script>
 <script src="<?php echo $GLOBALS['wgScriptPath'] . "/extensions/Collection/js/suggest.js?" . $GLOBALS['wgCollectionStyleVersion'] ?>" type="<?php echo $GLOBALS['wgJsMimeType']; ?>"></script>
 <div>
 	<?php $this->msg( 'coll-suggest_intro_text' ) ?>
-	<form method="post" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest'))) ?>">
-		<table style="width: 100%; border-spacing: 10px;"><tbody><tr>
-			<td style="vertical-align: top; width: 50%; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
-				<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggested_articles') ?></strong>
-				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'resetbans' => '1'))) ?>" title="<?php $this->msg('coll-suggest_show_all_tooltip') ?>"><?php $this->msg('coll-suggest_show_all') ?></a>)
-				<?php if (count($this->data['proposals']) > 0) { ?>
-				<noscript>
-				<div style="float: right;">
-					<input type="submit" value="<?php $this->msg('coll-suggest_add_selected') ?>" name="addselected" />
-				</div>
-				</noscript>
-				<?php }
-				echo $this->getProposalList();
-				?>
-			</td>
-			<td style="vertical-align: top; width: 50%; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
-				<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggest_your_book') ?></strong>
-				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>" title="<?php $this->msg('coll-show_collection_tooltip') ?>"><?php $this->msg('coll-suggest_show') ?></a>)
-				<?php echo $this->getMemberList(); ?>
-			</td>
-		</tr></tbody></table>
-	</form>
+	<div id="collectionSuggestStatus" style="text-align: center; margin: 5px auto 10px auto; padding: 0 4px; border: 1px solid #ed9; background-color: #fea; visibility: hidden;">&nbsp;</div>
+	<div style="float: right; width: 45%; margin-left: 20px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
+		<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggest_your_book') ?></strong>
+		(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>" title="<?php $this->msg('coll-show_collection_tooltip') ?>"><?php $this->msg('coll-suggest_show') ?></a>)
+		<ul id="collectionMembers" style="list-style: none; margin-left: 0;">
+		<?php echo $this->getMemberList(); ?>
+		</ul>
+	</div>
+	<div style="padding: 10px">
+		<form method="post" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest'))) ?>">
+			<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggested_articles') ?></strong>
+			(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'resetbans' => '1'))) ?>" title="<?php $this->msg('coll-suggest_reset_bans_tooltip') ?>"><?php $this->msg('coll-suggest_reset_bans') ?></a>)
+			<?php if (count($this->data['proposals']) > 0) { ?>
+			<noscript>
+			<div style="float: right;">
+				<input type="submit" value="<?php $this->msg('coll-suggest_add_selected') ?>" name="addselected" />
+			</div>
+			</noscript>
+			<?php } ?>
+			<ul id="collectionSuggestions" style="list-style: none; margin-left: 0;">
+			<?php echo $this->getProposalList() ?>
+			</ul>
+		</form>
+	</div>
 </div>
 <?php
 	}
@@ -458,7 +466,7 @@ class CollectionSuggestTemplate extends QuickTemplate {
 		$baseUrl = $wgServer . $wgScript ."/";
 
 		$prop = $this->data['proposals'];
-		$out = '<div id="collectionProposals"><ul style="list-style: none; margin-left: 0;">';
+		$out = '';
 		
 		$maxProposals = 100;
 		$num = count($prop);
@@ -477,7 +485,6 @@ class CollectionSuggestTemplate extends QuickTemplate {
 			$out .= '</li>';
 		}
 
-		$out .= '</ul></div>';
 		return $out;
 	}
 
@@ -485,7 +492,7 @@ class CollectionSuggestTemplate extends QuickTemplate {
 	function getMemberList() {
 		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
 		$coll = $this->data['collection'];
-		$out = '<div id="collectionMembers"><ul style="list-style: none; margin-left: 0;">';
+		$out = '';
 
 		$num = count($coll['items']);
 		if ($num == 0) $out .= "<li>" . wfMsgHtml( 'coll-suggest_empty' ) . "</li>";
@@ -498,7 +505,6 @@ class CollectionSuggestTemplate extends QuickTemplate {
 	    		}
 		}
 
-		$out .= '</ul></div>';
 		return $out;
 	}
 }

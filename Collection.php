@@ -274,28 +274,54 @@ function wfAjaxCollectionClear() {
 
 $wgAjaxExportList[] = 'wfAjaxCollectionClear';
 
+function wfCollectionSuggestAction( $action, $article ) {
+	$json = new Services_JSON();
+	$result = CollectionSuggest::refresh( $action, $article );
+	$undoLink = Xml::element( 'a',
+		array(
+			'href' => SkinTemplate::makeSpecialUrl(
+				'Book',
+				array('bookcmd' => 'suggest', 'undo' => $action, 'arttitle' => $article )
+			),
+			'onclick' => "collectionSuggestCall('UndoArticle', ['$action', '$article']); return false;",
+			'title' => wfMsg( 'coll-suggest_undo_tooltip' ),
+		),
+		wfMsg( 'coll-suggest_undo' )
+	);
+	$result['last_action'] = wfMsg(
+		"coll-suggest_article_$action",
+		htmlspecialchars( $article ),
+		$undoLink
+	);
+	$r = new AjaxResponse( $json->encode( $result ) );
+	$r->setContentType( 'application/json' );
+	return $r;
+}
+
 function wfAjaxCollectionSuggestBanArticle( $article ) {
-	return CollectionSuggest::refresh( 'ban', $article );
+	return wfCollectionSuggestAction( 'ban', $article );
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionSuggestBanArticle';
 
 function wfAjaxCollectionSuggestAddArticle( $article ) {
-	return CollectionSuggest::refresh( 'add', $article );
+	return wfCollectionSuggestAction( 'add', $article );
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionSuggestAddArticle';
 
 function wfAjaxCollectionSuggestRemoveArticle( $article ) {
-	return CollectionSuggest::refresh( 'remove', $article );
+	return wfCollectionSuggestAction( 'remove', $article );
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionSuggestRemoveArticle';
 
-function wfAjaxCollectionSuggestControl( $mode, $val ) {
-	return CollectionSuggest::refresh( $mode, $val );
+function wfAjaxCollectionSuggestUndoArticle( $lastAction, $article ) {
+	$json = new Services_JSON();
+	$result = CollectionSuggest::undo( $lastAction, $article );
+	$r = new AjaxResponse( $json->encode( $result ) );
+	$r->setContentType( 'application/json' );
+	return $r;
 }
 
-$wgAjaxExportList[] = 'wfAjaxCollectionSuggestControl';
-
-
+$wgAjaxExportList[] = 'wfAjaxCollectionSuggestUndoArticle';
