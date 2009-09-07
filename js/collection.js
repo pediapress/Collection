@@ -83,7 +83,12 @@ function clear_collection() {
 		sajax_request_type = "POST";
 		sajax_do_call('wfAjaxCollectionClear',
 			[],
-			refresh_list);
+			function(xhr) {
+				refresh_list(xhr);
+				sajax_do_call('wfAjaxCollectionGetBookCreatorBoxContent', ['showbook', null], function(xhr2) {
+					jQuery('#coll-book_creator_box').html(xhr2.responseText);
+				});
+			});
 	}
 	return false;
 }
