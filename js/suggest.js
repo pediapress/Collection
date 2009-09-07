@@ -27,6 +27,9 @@ function collectionSuggestCall(func, args) {
 			}
 			jQuery('#collectionSuggestions').html(result.suggestions_html);
 			jQuery('#collectionMembers').html(result.members_html);
+			sajax_do_call('wfAjaxCollectionGetBookCreatorBoxContent', [null, null], function(xhr) {
+				jQuery('#coll-book_creator_box').html(xhr.responseText);
+			});
 		}, 'json');
 }
 
