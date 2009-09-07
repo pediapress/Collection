@@ -433,6 +433,7 @@ EOS
 		$jspath = "$wgScriptPath/extensions/Collection/js";
 
 		$this->setHeaders();
+		$wgOut->setPageTitle( wfMsg( 'coll-manage_your_book' ) );
 		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.js?$wgCollectionStyleVersion\"></script>" );
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.ui.js?$wgCollectionStyleVersion\"></script>" );

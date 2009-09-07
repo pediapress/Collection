@@ -355,7 +355,7 @@ class CollectionHooks {
 
 		if ( $ajaxHint == 'suggest' || $ajaxHint == 'showbook' ) {
 			return Xml::tags( 'span',
-				array( 'style' => 'color: # 777;' ),
+				array( 'style' => 'color: #777;' ),
 				Xml::element( 'img',
 					array(
 						'src' => "$imagePath/silk-stop.png",
