@@ -16,9 +16,6 @@ class CollectionPageTemplate extends QuickTemplate {
 ?>
 
 <div style="width: 47%; float: left; margin-right: 5%">
-<?php $this->msgWiki('coll-intro_text') ?>
-
-<h2><span class="mw-headline"><?php $this->msg('coll-your_book') ?></span></h2>
 
 <form action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>" method="post" id="mw-collection-title-form">
 	<table id="mw-collection-title-table" style="width: 80%; background-color: transparent;" align="center">
@@ -423,32 +420,28 @@ if ($this->data['return_to']) {
 class CollectionSuggestTemplate extends QuickTemplate {
 	function execute () {
 ?>
-		<script src="<?php echo $GLOBALS['wgScriptPath'] . "/extensions/Collection/js/suggest.js?" . $GLOBALS['wgCollectionStyleVersion'] ?>" type="<?php echo $GLOBALS['wgJsMimeType']; ?>"></script>
+<script src="<?php echo $GLOBALS['wgScriptPath'] . "/extensions/Collection/js/suggest.js?" . $GLOBALS['wgCollectionStyleVersion'] ?>" type="<?php echo $GLOBALS['wgJsMimeType']; ?>"></script>
 <div>
+	<?php $this->msg( 'coll-suggest_intro_text' ) ?>
 	<form method="post" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest'))) ?>">
 		<table style="width: 100%; border-spacing: 10px;"><tbody><tr>
-		<td style="vertical-align: top; width: 50%">
-			<div style="padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
+			<td style="vertical-align: top; width: 50%; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 				<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggested_articles') ?></strong>
-				<?php if ($this->data['hasbans']) { ?>
 				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'resetbans' => '1'))) ?>" title="<?php $this->msg('coll-suggest_show_all_tooltip') ?>"><?php $this->msg('coll-suggest_show_all') ?></a>)
-				<?php }
-				if (count($this->data['proposals']) > 0) {
-				?>
+				<?php if (count($this->data['proposals']) > 0) { ?>
 				<div style="float: right;">
 					<input type="submit" value="<?php $this->msg('coll-suggest_add_selected') ?>" name="addselected" />
 				</div>
 				<?php }
 				echo $this->getProposalList();
 				?>
-			</div>
-		</td><td style="vertical-align: top; width: 50%;">
-			<div style="padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
+			</td>
+			<td style="vertical-align: top; width: 50%; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 				<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggest_your_book') ?></strong>
-				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>" title="<?php $this->msg('coll-show_collection_tooltip') ?>"><?php $this->msg('coll-show_collection') ?></a>)
+				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>" title="<?php $this->msg('coll-show_collection_tooltip') ?>"><?php $this->msg('coll-suggest_show') ?></a>)
 				<?php echo $this->getMemberList(); ?>
-			</div>
-		</td></tr></tbody></table>
+			</td>
+		</tr></tbody></table>
 	</form>
 </div>
 <?php
