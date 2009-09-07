@@ -425,7 +425,7 @@ class Proposals {
 		foreach ( $linkmap as $alias => $linked ) {
 			$matches = array();
 			preg_match_all(
-				'/\W' . addslashes( $alias ) . '\W/i',
+				'/\W' . preg_quote( $alias, '/' ) . '\W/i',
 				$wikitext,
 				$matches
 			);
