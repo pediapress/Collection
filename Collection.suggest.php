@@ -499,12 +499,7 @@ class Proposals {
 				}
 			}
 		}
-		$this->mPropList = array();
-		foreach ( $prop as $p ) {
-			if ( $p['val'] > 1 ) {
-				$this->mPropList[] = $p;
-			}
-		}
+		$this->mPropList = $prop;
 	}
 
 	/*
@@ -568,6 +563,13 @@ class Proposals {
 			$log = log( $this->mPropList[$i]['num'] ) / $norm;
 			$this->mPropList[$i]['val'] = 1 + 0.5 * $log;
 		}
+		$props = array();
+		foreach ( $this->mPropList as $p ) {
+			if ( $p['val'] > 1) {
+				$props[] = $p;
+			}
+		}
+		$this->mPropList = $props;
 	}
 
 	private function getPropCount() {
