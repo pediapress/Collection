@@ -101,7 +101,7 @@ function popupCollectionCall(func, args) {
 		if (args.length == 3) {
 			oldid = args[2];
 		}
-		sajax_do_call('wfAjaxCollectionGetBookModeBoxContent', [wgCollectionAddRemoveState, oldid], function(xhr) {
+		sajax_do_call('wfAjaxCollectionGetBookCreatorBoxContent', [wgCollectionAddRemoveState, oldid], function(xhr) {
 			document.getElementById('coll-book_creator_box').innerHTML = xhr.responseText;
 		});
 	});
