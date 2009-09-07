@@ -86,11 +86,28 @@ class CollectionSuggest {
 	 */
 	public static function refresh( $mode, $param ) {
 		$template = self::getCollectionSuggestTemplate( $mode, $param );
+		return array(
+			'suggestions_html' => $template->getProposalList(),
+			'members_html' => $template->getMemberList(),
+		);
+	}
 
-		$out = $template->getProposalList();
-		$out .= "<!--split here-->";
-		$out .= $template->getMemberList();
-		return $out;
+	public static function undo( $lastAction, $article ) {
+		switch ( $lastAction ) {
+		case 'add':
+			$template = self::getCollectionSuggestTemplate( 'removeonly', $article );
+			break;
+		case 'ban':
+			$template = self::getCollectionSuggestTemplate( 'unban', $article );
+			break;
+		case 'remove':
+			$template = self::getCollectionSuggestTemplate( 'add', $article );
+			break;
+		}
+		return array(
+			'suggestions_html' => $template->getProposalList(),
+			'members_html' => $template->getMemberList(),
+		);
 	}
 
 	// remove the suggestion data from the session
@@ -108,6 +125,17 @@ class CollectionSuggest {
 	 * private methods
 	 * ===============================================================================
 	 */
+
+	private static function unban( $article ) {
+		$bans = $_SESSION['wsCollectionSuggestBan'];
+		$newbans = array();
+		foreach ( $bans as $ban ) {
+			if ( $ban != $article ) {
+				$newbans[] = $ban;
+			}
+		}
+		$_SESSION['wsCollectionSuggestBan'] = $newbans;
+	}
 
 	/*
 	 * Update the session and return the template
@@ -130,6 +158,7 @@ class CollectionSuggest {
 		switch($mode) {
 			case 'add':
 				SpecialCollection::addArticleFromName(NS_MAIN, $param);
+				self::unban( $param );
 				break;
 			case 'ban':
 				$_SESSION['wsCollectionSuggestBan'][] = $param;
@@ -137,6 +166,12 @@ class CollectionSuggest {
 			case 'remove':
 				SpecialCollection::removeArticleFromName(NS_MAIN, $param);
 				$_SESSION['wsCollectionSuggestBan'][] = $param;
+				break;
+			case 'removeonly': // remove w/out banning (for undo)
+				SpecialCollection::removeArticleFromName(NS_MAIN, $param);
+				break;
+			case 'unban': // for undo
+				self::unban( $param );
 				break;
 		}
 
@@ -424,7 +459,7 @@ class Proposals {
 					$linkName = $this->resolveRedirects( $linkName );
 
 					// the first letter has to be upper case FIXME
-					$linkName = strtoupper( substr( $linkName, 0, 1) ) . substr( $linkName, 1 );
+					$linkName = strtoupper( substr( $linkName, 0, 1 ) ) . substr( $linkName, 1 );
 
 					// Check if the article already known
 					// If yes, increment its count, if no, add it to te list
@@ -433,7 +468,7 @@ class Proposals {
 					if ( $key !== false ) {
 						$goodLinks[$key]['num']++;
 					} else {
-						array_push( $goodLinks, array( 'name' => $linkName ,'num' => 1 ) );
+						array_push( $goodLinks, array( 'name' => $linkName, 'num' => 1 ) );
 					}
 				}
 			}
