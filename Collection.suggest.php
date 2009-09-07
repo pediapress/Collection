@@ -158,6 +158,7 @@ class CollectionSuggest {
 	private static function getCollectionSuggestTemplate( $mode, $param ) {
 		global $wgCollectionMaxSuggestions;
 
+
 		switch($mode) {
 			case 'add':
 				SpecialCollection::addArticleFromName(NS_MAIN, $param);
@@ -326,9 +327,13 @@ class Proposals {
 
 	// Check if all articles form the book are in $mLinkList
 	private function addCollectionArticles() {
-		global $wgCollectionSuggestCountWordsThreshold;
+		global $wgCollectionSuggestThreshhold;
 
 		$numItems = count( $this->mColl['items'] );
+
+		if ( $numItems > $wgCollectionSuggestThreshhold ) {
+			return;
+		}
 
 		foreach( $this->mColl['items'] as $item ) {
 			if ( $this->searchEntry( $item['title'], $this->mLinkList ) === false 
@@ -344,7 +349,7 @@ class Proposals {
 
 				$this->mLinkList[] = array(
 					'name' => $articleName,
-					'links' => $this->getWeightedLinks( $article->getContent() ),
+					'links' => $this->getWeightedLinks( $numItems, $article->getContent() ),
 				);
 			}
 		}
@@ -380,7 +385,9 @@ class Proposals {
 	 * @param wikitext: article text
 	 * @return an array with links and their weights
 	 */
-	private function getWeightedLinks( $wikitext ) {
+	private function getWeightedLinks( $num_articles, $wikitext ) {
+		global $wgCollectionSuggestCheapWeightThreshhold;
+
 		$allLinks = array();
 		preg_match_all(
 			'/\[\[(.+?)\]\]/',
@@ -428,43 +435,56 @@ class Proposals {
 		}
 
 		$linkcount = array();
-		foreach ( $linkmap as $alias => $linked ) {
-			$matches = array();
-			preg_match_all(
-				'/\W' . preg_quote( $alias, '/' ) . '\W/i',
-				$wikitext,
-				$matches
-			);
-			$num = count( $matches[0] );
+		if ( $num_articles < $wgCollectionSuggestCheapWeightThreshhold ) {
+			// more expensive algorithm: count words
+			foreach ( $linkmap as $alias => $linked ) {
+				$matches = array();
+				preg_match_all(
+					'/\W' . preg_quote( $alias, '/' ) . '\W/i',
+					$wikitext,
+					$matches
+				);
+				$num = count( $matches[0] );
 
-			foreach ( $linked as $link => $dummy ) {
-				if ( isset( $linkcount[$link] ) ) {
-					$linkcount[$link] += $num;
-				} else {
-					$linkcount[$link] = $num;
+				foreach ( $linked as $link => $dummy ) {
+					if ( isset( $linkcount[$link] ) ) {
+						$linkcount[$link] += $num;
+					} else {
+						$linkcount[$link] = $num;
+					}
 				}
 			}
-		}
-
-		if ( count( $linkcount ) == 0 ) {
-			return array();
-		}
-
-		// normalize:
-		$lc_max = 0;
-		foreach ( $linkcount as $link => $count ) {
-			if ( $num > $lc_max) {
-				$lc_max = $count;
+			
+			if ( count( $linkcount ) == 0 ) {
+				return array();
 			}
-		}
-		$norm = log( $lc_max );
-		$result = array();
-		if ( $norm > 0 ) {
+
+			// normalize:
+			$lc_max = 0;
 			foreach ( $linkcount as $link => $count ) {
-				$result[$link] = 1 + 0.5*log($count)/$norm;
+				if ( $count > $lc_max) {
+					$lc_max = $count;
+				}
 			}
+			$norm = log( $lc_max );
+			$result = array();
+			if ( $norm > 0 ) {
+				foreach ( $linkcount as $link => $count ) {
+					$result[$link] = 1 + 0.5*log($count)/$norm;
+				}
+			}
+
+			return $result;
+		} else {
+			// cheaper algorithm: just count links
+			foreach ( $linkmap as $alias => $linked ) {
+				foreach ( $linked as $link => $dummy) {
+					$linkcount[$link] = 1;
+				}
+			}
+
+			return $linkcount;
 		}
-		return $result;
 	}
 
 	// Calculate the $mPropList from $mLinkList and $mBanList
