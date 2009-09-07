@@ -49,12 +49,25 @@ class SpecialCollection extends SpecialPage {
 		wfLoadExtensionMessages( 'CollectionCore' );
 		wfLoadExtensionMessages( 'Collection' );
 
-		switch ( $par ) {
-			case 'book_mode/':
+		// support previous URLs (e.g. used in templates) which used the "$par" part
+		// (i.e. subpages of the Special page)
+		if ( $par ) {
+			if ( $wgRequest->wasPosted() ) { // don't redirect POST reqs
+				// TODO
+			}
+			$wgOut->redirect( wfAppendQuery(
+				SkinTemplate::makeSpecialUrl( 'Book' ),
+				$wgRequest->appendQueryArray( array( 'bookcmd' => $par ), true )
+		 	) );
+			return;
+		}
+
+		switch ( $wgRequest->getVal( 'bookcmd', '' ) ) {
+			case 'book_mode':
 				$this->renderBookModePage( $wgRequest->getVal( 'referer', '' ) );
 				return;
 
-			case 'start_book_mode/':
+			case 'start_book_mode':
 				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
 				if ( is_null( $title ) ) {
 					$title = Title::newMainPage();
@@ -63,7 +76,7 @@ class SpecialCollection extends SpecialPage {
 				$wgOut->redirect( $title->getFullURL() );
 				return;
 
-			case 'stop_book_mode/':
+			case 'stop_book_mode':
 				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
 				if ( is_null( $title ) ) {
 					$title = Title::newMainPage();
@@ -72,7 +85,7 @@ class SpecialCollection extends SpecialPage {
 				$wgOut->redirect( $title->getFullURL() );
 				return;
 
-			case 'add_article/':
+			case 'add_article':
 				if ( CollectionSession::countArticles() >= $wgCollectionMaxArticles ) {
 					self::limitExceeded();
 					return;
@@ -96,7 +109,7 @@ class SpecialCollection extends SpecialPage {
 					);
 				}
 				return;
-			case 'remove_article/':
+			case 'remove_article':
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
 				$title = Title::newFromText( $wgRequest->getVal( 'arttitle', '' ) );
 				if ( !$title ) {
@@ -116,7 +129,7 @@ class SpecialCollection extends SpecialPage {
 					);
 				}
 				return;
-			case 'clear_collection/':
+			case 'clear_collection':
 				CollectionSession::clearCollection();
 				CollectionSuggest::clear();
 				$redirect = $wgRequest->getVal( 'return_to' );
@@ -129,15 +142,15 @@ class SpecialCollection extends SpecialPage {
 				}
 				$wgOut->redirect( $redirectURL );
 				return;
-			case 'set_titles/':
+			case 'set_titles':
 				self::setTitles( $wgRequest->getText( 'collectionTitle', '' ), $wgRequest->getText( 'collectionSubtitle', '') );
 				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
-			case 'sort_items/':
+			case 'sort_items':
 				self::sortItems();
 				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
-			case 'add_category/':
+			case 'add_category':
 				$title = Title::makeTitleSafe( NS_CATEGORY, $wgRequest->getVal( 'cattitle', '' ) );
 				if ( self::addCategory( $title ) ) {
 					self::limitExceeded();
@@ -146,15 +159,15 @@ class SpecialCollection extends SpecialPage {
 					$wgOut->redirect( $wgRequest->getVal( 'return_to', $title->getFullURL() ) );
 				}
 				return;
-			case 'remove_item/':
+			case 'remove_item':
 				self::removeItem( $wgRequest->getInt( 'index', 0 ) );
 				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
-			case 'move_item/':
+			case 'move_item':
 				self::moveItem( $wgRequest->getInt( 'index', 0 ), $wgRequest->getInt( 'delta', 0 ) );
 				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
-			case 'load_collection/':
+			case 'load_collection':
 				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
 				if ( !$title ) {
 					return;
@@ -176,7 +189,7 @@ class SpecialCollection extends SpecialPage {
 				}
 				$this->renderLoadOverwritePage( $title );
 				return;
-			case 'order_collection/':
+			case 'order_collection':
 				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
 				if ( !$title ) {
 					return;
@@ -184,7 +197,7 @@ class SpecialCollection extends SpecialPage {
 				$collection = $this->loadCollection( $title );
 				$partner = $wgRequest->getVal( 'partner', key( $this->mPODPartners ) );
 				return $this->postZIP( $collection, $partner );
-			case 'save_collection/':
+			case 'save_collection':
 				if ( $wgRequest->getVal( 'abort' ) ) {
 					$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 					return;
@@ -226,22 +239,22 @@ class SpecialCollection extends SpecialPage {
 					);
 				}
 				return;
-			case 'render/':
+			case 'render':
 				return $this->renderCollection(
 					$_SESSION['wsCollection'],
 					Title::newFromText( $wgContLang->specialPage( 'Book' ) ),
 					$wgRequest->getVal( 'writer', '' )
 				);
-			case 'forcerender/':
+			case 'forcerender':
 				$this->forceRenderCollection();
 				return;
-			case 'rendering/':
+			case 'rendering':
 				$this->renderRenderingPage();
 				return;
-			case 'download/':
+			case 'download':
 				$this->download();
 				return;
-			case 'render_article/':
+			case 'render_article':
 				$title = Title::newFromText( $wgRequest->getVal( 'arttitle', '' ) );
 				if ( !$title ) {
 					return;
@@ -249,7 +262,7 @@ class SpecialCollection extends SpecialPage {
 				$oldid = $wgRequest->getInt( 'oldid', 0 );
 				$this->renderArticle( $title, $oldid, $wgRequest->getVal( 'writer', 'rl' ) );
 				return;
-			case 'render_collection/':
+			case 'render_collection':
 				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ));
 				if ( !$title ) {
 					return;
@@ -259,17 +272,19 @@ class SpecialCollection extends SpecialPage {
 					$this->renderCollection( $collection, $title, $wgRequest->getVal( 'writer', 'rl' ) );
 				}
 				return;
-			case 'post_zip/':
+			case 'post_zip':
 				$partner = $wgRequest->getVal( 'partner', 'pediapress' );
 				$this->postZIP( $_SESSION['wsCollection'], $partner );
 				return;
-			case 'suggest/':
-				$add = $wgRequest->getVal('add');
-				$ban = $wgRequest->getVal('ban');
-				$remove = $wgRequest->getVal('remove');
-				$select = $wgRequest->getVal('suggestControlSelect');
+			case 'suggest':
+				$add = $wgRequest->getVal( 'add' );
+				$ban = $wgRequest->getVal( 'ban' );
+				$remove = $wgRequest->getVal( 'remove' );
+				$select = $wgRequest->getVal( 'suggestControlSelect' );
 
-				if ( isset( $add ) ) {
+				if ( $wgRequest->getVal( 'resetbans' ) ) {
+					CollectionSuggest::run( 'resetbans' );
+				} else if ( isset( $add ) ) {
 					CollectionSuggest::run( 'add', $add );
 				} else if ( isset( $ban ) ) {
 					CollectionSuggest::run('ban', $ban );
@@ -357,9 +372,10 @@ EOS
 					),
 					Xml::element( 'a',
 						array(
-							'href' => SkinTemplate::makeSpecialUrlSubpage(
-								'Book', 'start_book_mode/',
+							'href' => SkinTemplate::makeSpecialUrl(
+								'Book',
 								array(
+									'bookcmd' => 'start_book_mode',
 									'referer' => $referer,
 								)
 						 	),
@@ -374,9 +390,10 @@ EOS
 					),
 					Xml::element( 'a',
 						array(
-							'href' => SkinTemplate::makeSpecialUrlSubpage(
-								'Book', 'stop_book_mode/',
+							'href' => SkinTemplate::makeSpecialUrl(
+								'Book', 
 								array(
+									'bookcmd' => 'stop_book_mode',
 									'referer' => $referer,
 								)
 						 	),
@@ -905,13 +922,14 @@ EOS
 			return;
 		}
 
-		$query = 'return_to=' . urlencode( $referrer->getPrefixedText() )
+		$query = 'bookcmd=rendering'
+			. '&return_to=' . urlencode( $referrer->getPrefixedText() )
 			. '&collection_id=' . urlencode( $response['collection_id'] )
 			. '&writer=' . urlencode( $response['writer'] );
 		if ( isset( $response['is_cached'] ) && $response['is_cached'] ) {
 			$query .= '&is_cached=1';
 		}
-		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Book', 'rendering/', $query );
+		$redirect = SkinTemplate::makeSpecialUrl( 'Book', $query );
 		$wgOut->redirect( $redirect );
 	}
 
@@ -943,14 +961,14 @@ EOS
 			return;
 		}
 
-		$redirect = SkinTemplate::makeSpecialUrlSubpage( 'Book', 'rendering/' );
-		$query = 'return_to=' . $wgRequest->getVal( 'return_to', '' )
+		$query = 'bookcmd=rendering'
+			. '&return_to=' . $wgRequest->getVal( 'return_to', '' )
 			. '&collection_id=' . urlencode( $response['collection_id'] )
 			. '&writer=' . urlencode( $response['writer'] );
 		if ( $response['is_cached'] ) {
 			$query .= '&is_cached=1';
 		}
-		$wgOut->redirect( wfAppendQuery( $redirect, $query ) );
+		$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book', $query ) );
 	}
 
 	function renderRenderingPage() {
@@ -981,7 +999,7 @@ EOS
 
 		switch ( $response['state'] ) {
 		case 'progress':
-			$url = htmlspecialchars( SkinTemplate::makeSpecialUrlSubpage( 'Book', 'rendering/', $query ) );
+			$url = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', 'bookcmd=rendering&' . $query ) );
 			$wgOut->addHeadItem( 'refresh-nojs', '<noscript><meta http-equiv="refresh" content="2" /></noscript>');
 			$wgOut->addInlineScript( 'var collection_id = "' . urlencode( $response['collection_id']) . '";' );
 			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer']) . '";' );
@@ -1013,7 +1031,7 @@ EOS
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_finished_title' ) );
 
 			$template = new CollectionFinishedTemplate();
-			$template->set( 'download_url', $wgServer . SkinTemplate::makeSpecialUrlSubpage( 'Book', 'download/', $query ) );
+			$template->set( 'download_url', $wgServer . SkinTemplate::makeSpecialUrl( 'Book', 'bookcmd=download&' . $query ) );
 			$template->set( 'is_cached', $wgRequest->getVal( 'is_cached' ) );
 			$template->set( 'query', $query );
 			$template->set( 'return_to', $return_to );

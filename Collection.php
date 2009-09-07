@@ -130,7 +130,7 @@ $wgSpecialPages['Book'] = 'SpecialCollection';
 $wgSpecialPageGroups['Book'] = 'pagetools';
 
 $wgHooks['SkinBuildSidebar'][] = 'CollectionHooks::buildSidebar';
-$wgHooks['SiteNoticeAfter'][] = 'CollectionHooks::renderBookModeBox';
+$wgHooks['SiteNoticeAfter'][] = 'CollectionHooks::siteNoticeAfter';
 $wgHooks['OutputPageCheckLastModified'][] = 'CollectionHooks::checkLastModified';
 
 $wgAvailableRights[] = 'collectionsaveasuserpage';
