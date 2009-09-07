@@ -99,6 +99,8 @@ $wgCollectionPortletForLoggedInUsersOnly = false;
 
 $wgCollectionNavPopups = true;
 
+$wgCollectionMaxSuggestions = 10;
+
 # ==============================================================================
 
 $wgExtensionCredits['specialpage'][] = array(
