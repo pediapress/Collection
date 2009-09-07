@@ -414,10 +414,17 @@ class Proposals {
 			}
 			$link = $title->getText();
 
-			if ( isset( $linkmap[$alias] ) ) {
-				$linkmap[$alias][$link] = true;
+			if ( isset ($linkmap[$link] ) ) {
+				$linkmap[$link][$link] = true;
 			} else {
-				$linkmap[$alias] = array( $link => true );
+				$linkmap[$link] = array( $link => true );
+			}
+			if ( $link != $alias ) {
+				if ( isset( $linkmap[$alias] ) ) {
+					$linkmap[$alias][$link] = true;
+				} else {
+					$linkmap[$alias] = array( $link => true );
+				}
 			}
 		}
 
