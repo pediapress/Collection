@@ -406,7 +406,7 @@ class Proposals {
 				
 				// Check if the link is a interwikilink
 				$title = Title::makeTitleSafe( NS_MAIN, $linkName );
-				if ( isset( $title ) && $title->isKnown() ) { // if the link is a interwikilink
+				if ( isset( $title ) && $title->exists() ) {
 					// Follow redirects
 					$linkName = $this->resolveRedirects( $linkName );
 
