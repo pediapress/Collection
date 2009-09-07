@@ -429,9 +429,11 @@ class CollectionSuggestTemplate extends QuickTemplate {
 				<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggested_articles') ?></strong>
 				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'resetbans' => '1'))) ?>" title="<?php $this->msg('coll-suggest_show_all_tooltip') ?>"><?php $this->msg('coll-suggest_show_all') ?></a>)
 				<?php if (count($this->data['proposals']) > 0) { ?>
+				<noscript>
 				<div style="float: right;">
 					<input type="submit" value="<?php $this->msg('coll-suggest_add_selected') ?>" name="addselected" />
 				</div>
+				</noscript>
 				<?php }
 				echo $this->getProposalList();
 				?>
@@ -468,7 +470,7 @@ class CollectionSuggestTemplate extends QuickTemplate {
 			$url = $baseUrl . $artName;
 			$url = str_replace(" ", "_", $url);
 			$out .= '<li>';
-			$out .= '<input type="checkbox" value="' . htmlspecialchars($artName) . '" name="articleList[]">';
+			$out .= '<noscript><input type="checkbox" value="' . htmlspecialchars($artName) . '" name="articleList[]" /></noscript>';
 			$out .= '<a onclick="collectionSuggestCall(\'AddArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'add' => $artName))) . '" title="' . wfMsgHtml('coll-add_this_page') . '"><img src="' . htmlspecialchars($mediapath . 'silk-accept.png') . '" width="16" height="16" alt=""></a> ';
 			$out .= '<a onclick="collectionSuggestCall(\'BanArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'ban' => $artName))) . '" title="' . wfMsgHtml('coll-suggest_ban_tooltip') . '"><img src="' . htmlspecialchars($mediapath . 'silk-cancel.png') . '" width="16" height="16" alt=""></a> ';
 			$out .= '<a href="' . $url . '" title="' . $artName . '">' . $artName . '</a>';
