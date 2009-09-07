@@ -185,19 +185,8 @@ class CollectionSuggest {
 			$_SESSION['wsCollectionSuggestProp']
 		);
 
-		if ($mode == 'addNum' || $mode == 'addVal' || $mode == 'addAll') {
-			switch($mode) {
-				case 'addNum':
-					$articleList = $proposals->getFirstProposalsByNum( $param );
-					break;
-				case 'addVal':
-						$articleList = $proposals->getFirstProposalsByVal( $param );
-						break;
-				case 'addAll':
-						$articleList = $param;
-						break;
-			}
-			self::addArticlesFromName( $articleList, $proposals );
+		if ( $mode == 'addAll' ) {
+			self::addArticlesFromName( $param, $proposals );
 		}
 
 		$template->set( 'collection', $_SESSION['wsCollection'] );
@@ -312,10 +301,6 @@ class Proposals {
 		}
 			
 		$this->getPropList();
-		$this->evaluateLinks();
-		if ( function_exists('wgCollectionCompareProps') ) {
-			usort( $this->mPropList, "wgCollectionCompareProps" );
-		}
 
 		if ($num > 0) {
 			return array_slice( $this->mPropList, 0, $num );
@@ -326,57 +311,6 @@ class Proposals {
 
 	public function hasBans() {
 		return count($this->mBanList) > 0;
-	}
-
-	/*
-	 * Return some of the proposals, specified by number
-	 *
-	 * @param $num (type int) the number of articles that will be returned
-	 * @return an array with articlenames
-	 */
-	public function getFirstProposalsByNum( $num ) {
-		$num = intval( $num ); // if $num is not an int this is 0
-		if ( $num < 1 ) {
-			return array();
-		}
-		
-		$prop = $this->getProposals( 0, false );
-		
-		if ( $num > $this->getPropCount() ) {
-			return array();
-		}
-		
-		$out = array();
-		for ( $i = 0; $i < $num; $i++ ) {
-			$out[] = $prop[$i]['name'];
-		}
-		return $out;
-	}
-
-	/*
-	 * !!! this method doesn't work allways proper !!! FIXME
-	 *
-	 * returns some of the proposals, specified by value
-	 *
-	 * @param $val (type float) the ninimum value with wich a article is retuned
-	 * @return an array with articlenames
-	 */
-	public function getFirstProposalsByVal( $val ) {
-		if ( $val > 1.5 || $val < 1 || !is_numeric($val) ) { // FIXME
-			return array();
-		}
-		
-		$prop = $this->getProposals( 0, false );
-		
-		$out = array();
-		foreach ( $prop as $p ) {
-			if ( $p['val'] >= $val ) {
-				$out[] = $p['name'];
-			} else {
-				break;
-			}
-		}
-		return $out;
 	}
 
 	/*
@@ -392,16 +326,26 @@ class Proposals {
 
 	// Check if all articles form the book are in $mLinkList
 	private function addCollectionArticles() {
+		global $wgCollectionSuggestCountWordsThreshold;
+
+		$numItems = count( $this->mColl['items'] );
+
+		$this->mLinkList = array(); // FIXME DEBUGGING!!!!!
 		foreach( $this->mColl['items'] as $item ) {
 			if ( $this->searchEntry( $item['title'], $this->mLinkList ) === false 
-					&& $item['type'] == 'article'
+				&& $item['type'] == 'article'
 			) {
 				$articleName = $item['title'];
 				$title = Title::makeTitleSafe( NS_MAIN, $articleName );
 				$article = new Article( $title, $item['revision'] );
+
+				if ( is_null( $article ) ) {
+					continue;
+				}
+
 				$this->mLinkList[] = array(
 					'name' => $articleName,
-					'links' => $this->getLinks( $article )
+					'links' => $this->getWeightedLinks( $article->getContent() ),
 				);
 			}
 		}
@@ -432,65 +376,118 @@ class Proposals {
 	}
 
 	/*
-	 * Extract links from an article
+	 * Extract & count links from wikitext
 	 *
-	 * @param $article article name
-	 * @return an array matching link name to number of occurances in article
+	 * @param wikitext: article text
+	 * @return an array with links and their weights
 	 */
-	private function getLinks( $article ) {
+	private function getWeightedLinks( $wikitext ) {
 		$allLinks = array();
 		preg_match_all(
 			'/\[\[(.+?)\]\]/',
-			$article->getContent(),
+			$wikitext,
 			$allLinks,
 			PREG_SET_ORDER
 		);
 
-		$goodLinks = array();
+		$linkmap = array();
 		foreach ( $allLinks as $link ) {
-			if ( preg_match( '/:/', $link[1] ) ) { // skip links with ':' FIXME?
+			$link = $link[1];
+
+			if ( preg_match( '/[:#]/', $link ) ) { // skip links with ':' and '#'
 				continue;
 			}
 				
-			// Handle links with a displaytitle
-			$linkName = preg_replace( '/(.+?)(\|.+)/', '${1}', $link[1] );
-			
-			$title = Title::makeTitleSafe( NS_MAIN, $linkName );
-			if ( !is_null( $title ) && $title->exists() ) {
-				$title = $this->resolveRedirects( $title );
-				$text = $title->getText();
+			// handle links with a displaytitle
+			$matches = array();
+			if ( preg_match( '/(.+?)\|(.+)/', $link, $matches ) ) {
+				$link = $matches[1];
+				$alias = $matches[2];
+			} else {
+				$alias = $link;
+			}
 
-				if ( isset( $goodLinks[$text] ) ) {
-					$goodLinks[$text]++;
+			// check & normalize title
+			$title = Title::makeTitleSafe( NS_MAIN, $link );
+			if ( is_null( $title ) || !$title->exists() ) {
+				continue;
+			}
+			$link = $title->getText();
+
+			if ( isset( $linkmap[$alias] ) ) {
+				$linkmap[$alias][$link] = true;
+			} else {
+				$linkmap[$alias] = array( $link => true );
+			}
+		}
+
+		$linkcount = array();
+		foreach ( $linkmap as $alias => $linked ) {
+			$matches = array();
+			preg_match_all(
+				'/\W' . addslashes( $alias ) . '\W/i',
+				$wikitext,
+				$matches
+			);
+			$num = count( $matches[0] );
+
+			foreach ( $linked as $link => $dummy ) {
+				if ( isset( $linkcount[$link] ) ) {
+					$linkcount[$link] += $num;
 				} else {
-					$goodLinks[$text] = 1;
+					$linkcount[$link] = $num;
 				}
 			}
 		}
-		return $goodLinks;
+
+		if ( count( $linkcount ) == 0 ) {
+			return array();
+		}
+
+		// normalize:
+		$lc_max = 0;
+		foreach ( $linkcount as $link => $count ) {
+			if ( $num > $lc_max) {
+				$lc_max = $count;
+			}
+		}
+		$norm = log( $lc_max );
+		$result = array();
+		if ( $norm > 0 ) {
+			foreach ( $linkcount as $link => $count ) {
+				$result[$link] = 1 + 0.5*log($count)/$norm;
+			}
+		}
+		return $result;
 	}
 
 	// Calculate the $mPropList from $mLinkList and $mBanList
 	private function getPropList() {
-		$prop = $this->mPropList;
+		$prop = array();
 		foreach ( $this->mLinkList as $article ) {
-			foreach( $article['links'] as $linkName => $num ) {
+			foreach ( $article['links'] as $linkName => $val) {
 				if ( !$this->checkLink( $linkName ) ) {  
 					continue;
 				}
 				$key = $this->searchEntry( $linkName, $prop );
 				if ( $key !== false ) {
-					$prop[$key]['num'] += $num;
+					$prop[$key]['val'] += $val;
 				} else {
 					$prop[] = array(
-						'name' => $linkName, 
-						'num' => 1, 
-						'val' => 0
+						'name' => $linkName,
+						'val' => $val,
 					);
 				}
 			}
 		}
-		$this->mPropList = $prop;
+		usort( $prop, "wgCollectionCompareProps" );
+		$this->mPropList = array();
+		foreach ( $prop as $p ) {
+			if ( $p['val'] <= 1 ) {
+				break;
+			}
+			$this->mPropList[] = $p;
+		}
 	}
 
 	/*
@@ -530,37 +527,6 @@ class Proposals {
 		}
 
 		return true;
-	}
-
-	/*
-	 * Evaluate the proposallinks
-	 *
-	 * sets the 'val' entries of $mPropList
-	 * 'val' = 1 + 0.5 * (log(current 'num') / log(maximum 'num'))
-	 */
-	private function evaluateLinks() {
-		$max = 1;
-		foreach ( $this->mPropList as $link ) {
-			if ( $link['num'] > $max ) {
-				$max = $link['num'];
-			}
-		}
-		if ( $max != 1 ) {
-			$norm = log( $max );
-		} else {
-			$norm = 1;
-		}
-		for ( $i = 0; $i < $this->getPropCount(); $i++ ) {
-			$log = log( $this->mPropList[$i]['num'] ) / $norm;
-			$this->mPropList[$i]['val'] = 1 + 0.5 * $log;
-		}
-		$props = array();
-		foreach ( $this->mPropList as $p ) {
-			if ( $p['val'] > 1) {
-				$props[] = $p;
-			}
-		}
-		$this->mPropList = $props;
 	}
 
 	private function getPropCount() {
