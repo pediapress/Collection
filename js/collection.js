@@ -57,7 +57,9 @@ function getMWServeStatus() {
 		'rsargs[]': [collection_id, writer]
 	}, function(result) {
 		if (result.state == 'progress' ) {
-			jQuery('#renderingProgress').html('' + result.status.progress);
+			if ( result.status.progress )  {
+				jQuery('#renderingProgress').html('' + result.status.progress);
+			}
 			if (result.status.status) {
 				var status = result.status.status;
 				if (result.status.article) {
