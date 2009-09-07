@@ -281,7 +281,7 @@ class SpecialCollection extends SpecialPage {
 				$add = $wgRequest->getVal( 'add' );
 				$ban = $wgRequest->getVal( 'ban' );
 				$remove = $wgRequest->getVal( 'remove' );
-				$select = $wgRequest->getVal( 'suggestControlSelect' );
+				$addselected = $wgRequest->getVal( 'addselected' );
 
 				if ( $wgRequest->getVal( 'resetbans' ) ) {
 					CollectionSuggest::run( 'resetbans' );
@@ -291,18 +291,12 @@ class SpecialCollection extends SpecialPage {
 					CollectionSuggest::run('ban', $ban );
 				} else if ( isset( $remove ) ) {
 					CollectionSuggest::run( 'remove', $remove );
-				} else if ( !empty( $select ) ) {
-					if ( $select != 'addAll' ) {
-						//addVal does only work sometimes proper, why? FiXME
-						$param = str_replace( ',', '.', $wgRequest->getVal( 'suggestControlText' ) );
-						CollectionSuggest::run( $select, $param );
+				} else if ( isset( $addselected ) ) {
+					$articleList = $wgRequest->getArray( 'articleList' );
+					if ( !is_null( $articleList ) ) {
+						CollectionSuggest::run( 'addAll', $articleList );
 					} else {
-						//how does this work with $wsRequest FIXME
-						if ( isset( $_POST['articleList'] ) ) {
-						 	CollectionSuggest::run( 'addAll', $_POST['articleList'] );
-						} else {
-							CollectionSuggest::run();
-						}
+						CollectionSuggest::run();
 					}
 				} else {
 					CollectionSuggest::run();

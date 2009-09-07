@@ -425,22 +425,22 @@ class CollectionSuggestTemplate extends QuickTemplate {
 ?>
 		<script src="<?php echo $GLOBALS['wgScriptPath'] . "/extensions/Collection/js/suggest.js?" . $GLOBALS['wgCollectionStyleVersion'] ?>" type="<?php echo $GLOBALS['wgJsMimeType']; ?>"></script>
 <div>
-	<form method="post" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>">
-		<input name="bookcmd" type="hidden" value="suggest" />
-		<div>
-			<noscript>
-				<input type="hidden" name="suggestControlSelect" value="addAll" />
-				<input type="submit" value="ok" name="suggestControlSubmit" id="suggestControlSubmit" />
-			</noscript>
-		</div>
+	<form method="post" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest'))) ?>">
 		<table style="width: 100%; border-spacing: 10px;"><tbody><tr>
 		<td style="vertical-align: top; width: 50%">
 			<div style="padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 				<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggested_articles') ?></strong>
 				<?php if ($this->data['hasbans']) { ?>
 				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'resetbans' => '1'))) ?>" title="<?php $this->msg('coll-suggest_show_all_tooltip') ?>"><?php $this->msg('coll-suggest_show_all') ?></a>)
-				<?php } ?>
-				<?php echo $this->getProposalList(); ?>
+				<?php }
+				if (count($this->data['proposals']) > 0) {
+				?>
+				<div style="float: right;">
+					<input type="submit" value="<?php $this->msg('coll-suggest_add_selected') ?>" name="addselected" />
+				</div>
+				<?php }
+				echo $this->getProposalList();
+				?>
 			</div>
 		</td><td style="vertical-align: top; width: 50%;">
 			<div style="padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
@@ -463,7 +463,7 @@ class CollectionSuggestTemplate extends QuickTemplate {
 		$baseUrl = $wgServer . $wgScript ."/";
 
 		$prop = $this->data['proposals'];
-		$out = '<div id="collectionProposals"><ul style="list-style: none;">';
+		$out = '<div id="collectionProposals"><ul style="list-style: none; margin-left: 0;">';
 		
 		$maxProposals = 100;
 		$num = count($prop);
@@ -474,10 +474,12 @@ class CollectionSuggestTemplate extends QuickTemplate {
 			$artName= $prop[$i]['name'];
 			$url = $baseUrl . $artName;
 			$url = str_replace(" ", "_", $url);
-			$out .= '<li><a onclick="collectionSuggestCall(\'AddArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'add' => $artName))) . '" title="' . wfMsgHtml('coll-add_this_page') . '"><img src="' . htmlspecialchars($mediapath . 'silk-accept.png') . '" width="16" height="16" alt=""></a> ';
+			$out .= '<li>';
+			$out .= '<input type="checkbox" value="' . htmlspecialchars($artName) . '" name="articleList[]">';
+			$out .= '<a onclick="collectionSuggestCall(\'AddArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'add' => $artName))) . '" title="' . wfMsgHtml('coll-add_this_page') . '"><img src="' . htmlspecialchars($mediapath . 'silk-accept.png') . '" width="16" height="16" alt=""></a> ';
 			$out .= '<a onclick="collectionSuggestCall(\'BanArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'ban' => $artName))) . '" title="' . wfMsgHtml('coll-suggest_ban_tooltip') . '"><img src="' . htmlspecialchars($mediapath . 'silk-cancel.png') . '" width="16" height="16" alt=""></a> ';
-			$out .= '<noscript><input type="checkbox" value="'.$artName.'" name="articleList[]"> </noscript>';
-			$out .= '<a href="' . $url . '" title="' . $artName . '">' . $artName . '</a> ' . '</li>';
+			$out .= '<a href="' . $url . '" title="' . $artName . '">' . $artName . '</a>';
+			$out .= '</li>';
 		}
 
 		$out .= '</ul></div>';
@@ -488,7 +490,7 @@ class CollectionSuggestTemplate extends QuickTemplate {
 	function getMemberList() {
 		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
 		$coll = $this->data['collection'];
-		$out = '<div id="collectionMembers"><ul style="list-style: none;">';
+		$out = '<div id="collectionMembers"><ul style="list-style: none; margin-left: 0;">';
 
 		$num = count($coll['items']);
 		if ($num == 0) $out .= "<li>" . wfMsgHtml( 'coll-suggest_empty' ) . "</li>";

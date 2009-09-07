@@ -240,6 +240,10 @@ class Proposals {
 		return $this->mLinkList;
 	}
 
+	public function setCollection( $collection ) {
+		$this->mColl = $collection;
+	}
+
 	/*
 	 * Calculate the new proposals and return it
 	 *
