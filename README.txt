@@ -1,5 +1,3 @@
-.. -*- mode: rst; coding: utf-8 -*-
-
 ====================================
 *Collection* Extension for MediaWiki
 ====================================
@@ -8,9 +6,10 @@ About the *Collection* Extension
 ================================
 
 The *Collection* extension for MediaWiki_ allows users to collect articles and
-generate PDFs for article collections and single articles.
+generate downloadable version in different formats (PDF, OpenDocument Text etc.)
+for article collections and single articles.
 
-The extension has been developed for and tested with MediaWiki_ version 1.13
+The extension has been developed for and tested with MediaWiki_ version 1.14
 and later. Some features may not be avaialable with older MediaWikis or with
 MediaWikis that don't have the `MediaWiki API`_ enabled. One example is that
 MediaWikis < 1.13 don't have the capability to edit articles via API, thus
@@ -29,12 +28,12 @@ Install PHP with cURL support
 -----------------------------
 
 Currently Collection extension needs PHP with cURL support,
-see http://de2.php.net/manual/en/book.curl.php
+see http://php.net/curl
 
 Install and Setup a Render Server
 ---------------------------------
 
-PDF and ZIP file generation is done by a server, which can run separately
+Rendering and ZIP file generation is done by a server, which can run separately
 from the MediaWiki installation and can be shared by different MediaWikis.
 See the ``mw-serve`` command or the ``mwlib.cgi`` script in the mwlib_
 distribution.
@@ -75,7 +74,7 @@ Installation and Configuration of the Collection Extension
 
   *$wgCollectionMWServeCert (string)*
    Filename of a SSL certificate in PEM format for the mw-serve render server.
-   This needs to be used for self-signed certificates, otherwise CURL will
+   This needs to be used for self-signed certificates, otherwise cURL will
    throw an error. The default is null, i.e. no certificate.
 
   *$wgCollectionMWServeCredentials (string)*
@@ -178,14 +177,12 @@ Installation and Configuration of the Collection Extension
    that each article contains the name of the license and set $wgCollectionLicenseURL
    to an article that contains all needed licenses.
 
-* This step is needed for MediaWiki version < 1.14 (at the time of writing
-  version 1.14 has not been released):
-
-  Add a portlet to the skin of your *MediaWiki* installation: Just before the line::
+* This step is only needed for MediaWiki version < 1.14:
+  Just before the line::
 
     <div class="portlet" id="p-tb">
 
-  in the file ``skins/MonoBook.php`` or ``skins/Modern.php`` insert
+  in your skin file (e.g. ``skins/MonoBook.php`` or ``skins/Modern.php``) insert
   the following code::
 
     <?php
@@ -236,6 +233,50 @@ Installation and Configuration of the Collection Extension
 * Add a help page (for example ``Help:Books`` for wikis in English language).
   A repository of help pages in different languages can be found on
   `Meta-Wiki`_.
+
+	The name of the help page is stored in the system message Coll-helppage and
+	can be adjusted by editing the wiki page [[MediaWiki:Coll-helppage]].
+
+* Add a template [[Template:saved_book]] which is transcluded on top of saved
+	collection pages. An example for such a template can be found on the English
+	Wikipedia: http://en.wikipedia.org/wiki/Template:Saved_book
+
+	The name of the template can be adjusted via the system message
+	Coll-savedbook_template, i.e. by editing [[MediaWiki:Coll-savedbook_template]].
+
+
+Customization via System Messages
+=================================
+
+There are several system messages, which can be adjusted for a MediaWiki
+installation. They can be changed by editing the wiki page
+[[MediaWiki:SYSTEMMESSAGENAME]], where SYSTEMMESSAGENAME is the name of the
+system message.
+
+* Coll-helppage: The name of the help page (see above).
+  The default for English language is "Help:Books", and there exist translations
+	for lots of different languages.
+
+* Coll-savedbook_template: The name of the template (w/out the Template: prefix)
+  included at the top of saved book pages (see above).
+	The default is: 'saved_book', and there exist translations for lots of
+	different languages.
+
+* Coll-book_creator_text_article: The name of  a wiki page which is transcluded
+  on the "Start book creator" page (the page which is shown when a user clicks
+	on "Create a book").
+	The default is: {{MediaWiki:Coll-helppage}}/Book creator text
+	i.e. a subpage of the configured help page named "Book creator text"
+
+* Coll-suggest_enabled: If set to 1, the suggestion tool is enabled. Any other
+  value will disable the suggestion tool.
+	The default is: '1', i.e. the suggestion tool is enabled.
+
+* Coll-order_info_article: The name of a wiki page which is included on the
+  Special:Book page to show order information for printed books.
+	The default value is: {{MediaWiki:Coll-helppage}}/PediaPress order information
+	i.e. a subpage of the configured help page named "PediaPress order information".
+
 
 .. _mwlib: http://code.pediapress.com/wiki/wiki/mwlib
 .. _MediaWiki: http://www.mediawiki.org/
