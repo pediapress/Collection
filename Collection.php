@@ -275,6 +275,8 @@ function wfAjaxCollectionClear() {
 $wgAjaxExportList[] = 'wfAjaxCollectionClear';
 
 function wfCollectionSuggestAction( $action, $article ) {
+	wfLoadExtensionMessages( 'CollectionCore' );
+
 	$json = new Services_JSON();
 	$result = CollectionSuggest::refresh( $action, $article );
 	$undoLink = Xml::element( 'a',
