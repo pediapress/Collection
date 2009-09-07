@@ -367,7 +367,7 @@ class Proposals {
 		}
 
 		$article = new Article( $title, 0 );
-		if ( method_exists( Title, 'newFromRedirectRecurse' ) ) {
+		if ( method_exists( $title, 'newFromRedirectRecurse' ) ) {
 			return Title::newFromRedirectRecurse( $article->getContent() );
 		} else {
 			return Title::newFromRedirect( $article->getContent() );
@@ -411,7 +411,7 @@ class Proposals {
 			if ( is_null( $title ) || !$title->exists() ) {
 				continue;
 			}
-			$link = $title->getText();
+			$link = $this->resolveRedirects( $title )->getText();
 
 			if ( isset ($linkmap[$link] ) ) {
 				$linkmap[$link][$link] = true;
