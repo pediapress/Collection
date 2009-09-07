@@ -61,6 +61,7 @@ $messages['en'] = array(
 	'coll-not_addable'              => 'This page cannot be added',
 	'coll-make_suggestions'         => 'Suggest pages',
 	'coll-make_suggestions_tooltip' => 'Show suggestions based on the pages in your book',
+	'coll-suggest_enabled'          => '1',
 );
 
 /** Message documentation (Message documentation)
