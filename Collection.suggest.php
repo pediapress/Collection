@@ -330,7 +330,6 @@ class Proposals {
 
 		$numItems = count( $this->mColl['items'] );
 
-		$this->mLinkList = array(); // FIXME DEBUGGING!!!!!
 		foreach( $this->mColl['items'] as $item ) {
 			if ( $this->searchEntry( $item['title'], $this->mLinkList ) === false 
 				&& $item['type'] == 'article'
