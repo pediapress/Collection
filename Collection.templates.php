@@ -485,7 +485,7 @@ var collection_jQuery = jQuery.noConflict();
 		$out .= '<a onclick="collectionSuggestCall(\'AddArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'add' => $artName))) . '" title="' . wfMsgHtml('coll-add_this_page') . '"><img src="' . htmlspecialchars($mediapath . 'silk-accept.png') . '" width="16" height="16" alt=""></a> ';
 		$out .= '<a onclick="collectionSuggestCall(\'BanArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'ban' => $artName))) . '" title="' . wfMsgHtml('coll-suggest_ban_tooltip') . '"><img src="' . htmlspecialchars($mediapath . 'silk-cancel.png') . '" width="16" height="16" alt=""></a> ';
 		$out .= '<a href="' . $url . '" title="' . $artName . '">' . $artName . '</a>';
-		$out .= ' ' . $prop[0]['val'];
+		//$out .= ' ' . $prop[0]['val'];
 		$out .= '</li>';
 
 		for ($i = 1; $i < $num; $i++) {
@@ -496,7 +496,7 @@ var collection_jQuery = jQuery.noConflict();
 			$out .= '<noscript><input type="checkbox" value="' . htmlspecialchars($artName) . '" name="articleList[]" /></noscript>';
 			$out .= '<a onclick="collectionSuggestCall(\'AddArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'add' => $artName))) . '" title="' . wfMsgHtml('coll-add_this_page') . '"><img src="' . htmlspecialchars($mediapath . 'silk-accept.png') . '" width="16" height="16" alt=""></a> ';
 			$out .= '<a href="' . $url . '" title="' . $artName . '">' . $artName . '</a>';
-			$out .= ' ' . $prop[$i]['val'];
+			//$out .= ' ' . $prop[$i]['val'];
 			$out .= '</li>';
 		}
 
