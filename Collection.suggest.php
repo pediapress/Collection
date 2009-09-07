@@ -134,6 +134,7 @@ class CollectionSuggest {
 				break;
 			case 'remove':
 				SpecialCollection::removeArticleFromName(NS_MAIN, $param);
+				$_SESSION['wsCollectionSuggestBan'][] = $param;
 				break;
 		}
 
