@@ -158,7 +158,6 @@ class CollectionSuggest {
 	private static function getCollectionSuggestTemplate( $mode, $param ) {
 		global $wgCollectionMaxSuggestions;
 
-
 		switch($mode) {
 			case 'add':
 				SpecialCollection::addArticleFromName(NS_MAIN, $param);
@@ -472,6 +471,10 @@ class Proposals {
 				foreach ( $linkcount as $link => $count ) {
 					$result[$link] = 1 + 0.5*log($count)/$norm;
 				}
+			} else {
+				foreach ( $linkcount as $link => $count ) {
+					$result[$link] = 1;
+				}
 			}
 
 			return $result;
@@ -508,8 +511,12 @@ class Proposals {
 		}
 		usort( $prop, "wgCollectionCompareProps" );
 		$this->mPropList = array();
+		$have_real_weights = false;
 		foreach ( $prop as $p ) {
-			if ( $p['val'] <= 1 ) {
+			if ( $p['val'] > 1 ) {
+				$have_real_weights = true;
+			}
+			if ( $p['val'] <= 1 && $have_real_weights ) {
 				break;
 			}
 			$this->mPropList[] = $p;
