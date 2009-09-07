@@ -316,7 +316,7 @@ class Proposals {
 		if ( function_exists('wgCollectionCompareProps') ) {
 			usort( $this->mPropList, "wgCollectionCompareProps" );
 		}
-		
+
 		if ($num > 0) {
 			return array_slice( $this->mPropList, 0, $num );
 		} else {
@@ -499,7 +499,12 @@ class Proposals {
 				}
 			}
 		}
-		$this->mPropList = $prop;
+		$this->mPropList = array();
+		foreach ( $prop as $p ) {
+			if ( $p['val'] > 1 ) {
+				$this->mPropList[] = $p;
+			}
+		}
 	}
 
 	/*
