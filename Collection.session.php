@@ -66,6 +66,10 @@ class CollectionSession {
 		self::touchSession();
 	}
 
+	static function isEnabled() {
+		return ( self::hasSession() && $_SESSION['wsCollection']['enabled'] );
+	}
+
 	static function countArticles() {
 		if ( !self::hasSession() ) {
 			return 0;

@@ -25,11 +25,13 @@ $messages = array();
 
 $messages['en'] = array(
 	'coll-desc'                       => '[[Special:Book|Create books]]',
-	'coll-book_mode_intro'            => "<big>With the ''book mode'' you can create a book containing wiki pages of your choice. You can export the book in different formats (for example PDF or ODF) or order a printed copy.</big>",
+	'coll-book_creator_intro'         => "<big>With the ''book creator'' you can create a book containing wiki pages of your choice. You can export the book in different formats (for example PDF or ODF) or order a printed copy.</big>",
 	'coll-manage_your_book'           => 'Manage your book',
-	'coll-book_mode_help'             => 'See [[{{MediaWiki:Coll-helppage}}|the help page about books]] for more information.',
-	'coll-start_book_mode'            => 'Start book mode',
-	'coll-book_mode_text_article'     => 'Book mode text',
+	'coll-book_creator_help'          => 'See [[{{MediaWiki:Coll-helppage}}|the help page about books]] for more information.',
+	'coll-start_book_creator'         => 'Start book creator',
+	'coll-book_creator_continue'      => 'Continue using book creator',
+	'coll-book_creator_disable_text'  => "''Book creator'' will be disabled. You can continue working on your book later by clicking on ''{{MediaWiki:Coll-create_a_book}}'' in the sidebar. Please note that the book will be deleted once your browser session expires.",
+	'coll-book_creator_text_article'  => 'Book creator text',
 	'coll-collection'                 => 'Book',
 	'coll-collections'                => 'Books',
 	'coll-exclusion_category_title'   => 'Exclude in print',

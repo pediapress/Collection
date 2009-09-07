@@ -86,19 +86,35 @@ class CollectionHooks {
 
 		$out = Xml::element( 'ul', array( 'id' => 'collectionPortletList' ), null );
 
-		$out .= Xml::tags( 'li',
-			array( 'id' => 'coll-create_a_book' ),
-			$sk->link(
-				SpecialPage::getTitleFor( 'Book' ),
-				wfMsgHtml( 'coll-create_a_book' ),
-				array(
-					'rel' => 'nofollow',
-					'title' => wfMsg( 'coll-create_a_book_tooltip' )
-				),
-				array( 'bookcmd' => 'book_mode', 'referer' => $wgTitle->getPrefixedText() ),
-				array( 'known', 'noclasses' )
-			)
-		);
+		if ( !CollectionSession::isEnabled() ) {
+			$out .= Xml::tags( 'li',
+				array( 'id' => 'coll-create_a_book' ),
+				$sk->link(
+					SpecialPage::getTitleFor( 'Book' ),
+					wfMsgHtml( 'coll-create_a_book' ),
+					array(
+						'rel' => 'nofollow',
+						'title' => wfMsg( 'coll-create_a_book_tooltip' )
+					),
+					array( 'bookcmd' => 'book_creator', 'referer' => $wgTitle->getPrefixedText() ),
+					array( 'known', 'noclasses' )
+				)
+			);
+		} else {
+			$out .= Xml::tags( 'li',
+				array( 'id' => 'coll-book_creator_disable' ),
+				$sk->link(
+					SpecialPage::getTitleFor( 'Book' ),
+					wfMsgHtml( 'coll-book_creator_disable' ),
+					array(
+						'rel' => 'nofollow',
+						'title' => wfMsg( 'coll-book_creator_disable_tooltip' )
+					),
+					array( 'bookcmd' => 'stop_book_creator', 'referer' => $wgTitle->getPrefixedText() ),
+					array( 'known', 'noclasses' )
+				)
+			);
+		}
 
 		$params = array( 
 			'bookcmd' => 'render_article',
@@ -158,9 +174,9 @@ class CollectionHooks {
 		if ( $myTitle->equals( $wgTitle ) ) {
 			$cmd = $wgRequest->getVal('bookcmd', '');
 			if ( $cmd == 'suggest' ) {
-				$siteNotice .= self::renderBookModeBox( 'suggest' );
+				$siteNotice .= self::renderBookCreatorBox( 'suggest' );
 			} else if ( $cmd == '' ) {
-				$siteNotice .= self::renderBookModeBox( 'showbook' );
+				$siteNotice .= self::renderBookCreatorBox( 'showbook' );
 			}
 			return true;
 		}
@@ -171,11 +187,11 @@ class CollectionHooks {
 			return true;
 		}
 
-		$siteNotice .= self::renderBookModeBox();
+		$siteNotice .= self::renderBookCreatorBox();
 		return true;
 	}
 
-	static function renderBookModeBox( $mode='' ) {
+	static function renderBookCreatorBox( $mode='' ) {
 		global $wgArticle;
 		global $wgCollectionArticleNamespaces;
 		global $wgCollectionNavPopups;
@@ -206,7 +222,7 @@ class CollectionHooks {
 		$html .= Xml::element( 'script', 
 			array(
 				'type' => $wgJsMimeType,
-				'src' => "$jsPath/bookmode.js?$wgCollectionStyleVersion",
+				'src' => "$jsPath/bookcreator.js?$wgCollectionStyleVersion",
 			),
 			'', false
 		);
@@ -253,7 +269,7 @@ class CollectionHooks {
 
 
 		$html .= Xml::element( 'div',
-			array( 'style' => wfMsg( 'coll-book_mode_box_style' ) ),
+			array( 'style' => wfMsg( 'coll-book_creator_box_style' ) ),
 			null
 		);
 
@@ -295,7 +311,7 @@ class CollectionHooks {
 			)
 			. Xml::tags( 'strong',
 				array( 'style' => 'font-size: 1.2em' ),
-				wfMsgHtml( 'coll-book_mode' )
+				wfMsgHtml( 'coll-book_creator' )
 			)
 			. ' ('
 			. $sk->link(
@@ -303,9 +319,9 @@ class CollectionHooks {
 				wfMsgHtml( 'coll-disable' ),
 				array(
 					'rel' => 'nofollow',
-					'title' => wfMsg( 'coll-disable_tooltip' ),
+					'title' => wfMsg( 'coll-book_creator_disable_tooltip' ),
 				),
-				array( 'bookcmd' => 'stop_book_mode', 'referer' => $ptext ),
+				array( 'bookcmd' => 'stop_book_creator', 'referer' => $ptext ),
 				array( 'known', 'noclasses' )
 			)
 			. ')'
@@ -313,17 +329,17 @@ class CollectionHooks {
 
 		$html .= Xml::tags( 'div',
 			array(
-				'id' => 'coll-book_mode_box',
+				'id' => 'coll-book_creator_box',
 				'style' => 'margin-left: 90px; margin-bottom: 0;',
 			),
-			self::getBookModeBoxContent( $addRemoveState, $oldid )
+			self::getBookCreatorBoxContent( $addRemoveState, $oldid )
 	 	);
 
 		$html .= Xml::closeElement( 'div' );
 		return $html;
 	}
 
-	static function getBookModeBoxContent( $ajaxHint=null, $oldid=null ) {
+	static function getBookCreatorBoxContent( $ajaxHint=null, $oldid=null ) {
 		global $wgUser;
 		global $wgScriptPath;
 
@@ -332,12 +348,12 @@ class CollectionHooks {
 		$sk = $wgUser->getSkin();
 		$imagePath = "$wgScriptPath/extensions/Collection/images";
 
-		return self::getBookModeBoxAddRemoveLink( $sk, $imagePath, $ajaxHint, $oldid )
-			. self::getBookModeBoxShowBookLink( $sk, $imagePath, $ajaxHint )
-			. self::getBookModeBoxSuggestLink( $sk, $imagePath, $ajaxHint );
+		return self::getBookCreatorBoxAddRemoveLink( $sk, $imagePath, $ajaxHint, $oldid )
+			. self::getBookCreatorBoxShowBookLink( $sk, $imagePath, $ajaxHint )
+			. self::getBookCreatorBoxSuggestLink( $sk, $imagePath, $ajaxHint );
 	}
 
-	static function getBookModeBoxAddRemoveLink( $sk, $imagePath, $ajaxHint, $oldid ) {
+	static function getBookCreatorBoxAddRemoveLink( $sk, $imagePath, $ajaxHint, $oldid ) {
 		global $wgArticle;
 		global $wgJsMimeType;
 		global $wgTitle;
@@ -358,7 +374,7 @@ class CollectionHooks {
 				array( 'style' => 'color: #777;' ),
 				Xml::element( 'img',
 					array(
-						'src' => "$imagePath/silk-stop.png",
+						'src' => "$imagePath/disabled.png",
 						'alt' => '',
 						'width' => '16',
 						'height'=> '16',
@@ -419,7 +435,7 @@ class CollectionHooks {
 
 	}
 
-	static function getBookModeBoxShowBookLink( $sk, $imagePath, $ajaxHint ) {
+	static function getBookCreatorBoxShowBookLink( $sk, $imagePath, $ajaxHint ) {
 		$numArticles = CollectionSession::countArticles();
 		if ( $ajaxHint == 'showbook' ) {
 			return Xml::tags( 'strong',
@@ -463,7 +479,7 @@ class CollectionHooks {
 		}
 	}
 
-	static function getBookModeBoxSuggestLink( $sk, $imagePath, $ajaxHint ) {
+	static function getBookCreatorBoxSuggestLink( $sk, $imagePath, $ajaxHint ) {
 		if ( $ajaxHint == 'suggest' ) {
 			return Xml::tags( 'strong',
 				array(
