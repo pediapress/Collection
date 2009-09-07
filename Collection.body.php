@@ -45,6 +45,7 @@ class SpecialCollection extends SpecialPage {
 		global $wgContLang;
 		global $wgCommunityCollectionNamespace;
 		global $wgCollectionMaxArticles;
+		global $wgTitle;
 
 		wfLoadExtensionMessages( 'CollectionCore' );
 		wfLoadExtensionMessages( 'Collection' );
@@ -78,7 +79,7 @@ class SpecialCollection extends SpecialPage {
 
 			case 'stop_book_mode':
 				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
-				if ( is_null( $title ) ) {
+				if ( is_null( $title ) || $title->equals( $wgTitle ) ) {
 					$title = Title::newMainPage();
 				}
 				CollectionSession::disable();
