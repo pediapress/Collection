@@ -89,18 +89,21 @@ class CollectionHooks {
 		$out .= Xml::tags( 'li',
 			array( 'id' => 'coll-create_a_book' ),
 			$sk->link(
-				SpecialPage::getTitleFor( 'Book', 'book_mode/' ),
+				SpecialPage::getTitleFor( 'Book' ),
 				wfMsgHtml( 'coll-create_a_book' ),
 				array(
 					'rel' => 'nofollow',
 					'title' => wfMsg( 'coll-create_a_book_tooltip' )
 				),
-				array( 'referer' => $wgTitle->getPrefixedText() ),
+				array( 'bookcmd' => 'book_mode', 'referer' => $wgTitle->getPrefixedText() ),
 				array( 'known', 'noclasses' )
 			)
 		);
 
-		$params = array( 'arttitle' => $wgTitle->getPrefixedText() );
+		$params = array( 
+			'bookcmd' => 'render_article',
+			'arttitle' => $wgTitle->getPrefixedText(),
+		);
 
 		if( $wgArticle ) {
 			$oldid = $wgArticle->getOldID();
@@ -116,7 +119,7 @@ class CollectionHooks {
 			$out .= Xml::tags( 'li',
 				array( 'id' => 'coll-download-as-' . $writer ),
 				$sk->link(
-					SpecialPage::getTitleFor( 'Book', 'render_article/' ),
+					SpecialPage::getTitleFor( 'Book' ),
 					wfMsgHtml( 'coll-download_as', htmlspecialchars( $wgCollectionFormats[$writer] ) ),
 					array(
 						'rel' => 'nofollow',
@@ -136,27 +139,13 @@ class CollectionHooks {
 	/**
 	 * Callback for hook SiteNoticeAfter
 	 */
-	static function renderBookModeBox( &$siteNotice ) {
-		global $wgArticle;
+	static function siteNoticeAfter( &$siteNotice ) {
 		global $wgCollectionArticleNamespaces;
-		global $wgCollectionNavPopups;
-		global $wgCollectionStyleVersion;
-		global $wgCollectionVersion;
-		global $wgJsMimeType;
 		global $wgRequest;
-		global $wgScriptPath;
 		global $wgTitle;
-		global $wgUser;
-
-		$namespace = $wgTitle->getNamespace();
 
 		$action = $wgRequest->getVal('action');
 		if( $action != '' && $action != 'view' && $action != 'purge' ) {
-			return true;
-		}
-
-		if ( !in_array( $namespace, $wgCollectionArticleNamespaces )
-			&& $namespace != NS_CATEGORY ) {
 			return true;
 		}
 
@@ -165,16 +154,53 @@ class CollectionHooks {
 			return true;
 		}
 
+		$myTitle = SpecialPage::getTitleFor( 'Book' );
+		if ( $myTitle->equals( $wgTitle ) ) {
+			$cmd = $wgRequest->getVal('bookcmd', '');
+			if ( $cmd == 'suggest' ) {
+				$siteNotice .= self::renderBookModeBox( 'suggest' );
+			} else if ( $cmd == '' ) {
+				$siteNotice .= self::renderBookModeBox( 'showbook' );
+			}
+			return true;
+		}
+
+		$namespace = $wgTitle->getNamespace();
+		if ( !in_array( $namespace, $wgCollectionArticleNamespaces )
+			&& $namespace != NS_CATEGORY ) {
+			return true;
+		}
+
+		$siteNotice .= self::renderBookModeBox();
+		return true;
+	}
+
+	static function renderBookModeBox( $mode='' ) {
+		global $wgArticle;
+		global $wgCollectionArticleNamespaces;
+		global $wgCollectionNavPopups;
+		global $wgCollectionStyleVersion;
+		global $wgCollectionVersion;
+		global $wgJsMimeType;
+		global $wgScriptPath;
+		global $wgTitle;
+		global $wgUser;
+
+		$namespace = $wgTitle->getNamespace();
+
 		wfLoadExtensionMessages( 'CollectionCore' );
 
 		$sk = $wgUser->getSkin();
 		$jsPath = "$wgScriptPath/extensions/Collection/js";
 		$imagePath = "$wgScriptPath/extensions/Collection/images";
 		$ptext = $wgTitle->getPrefixedText();
-		$oldid = $wgArticle->getOldID();
-		if ( !$oldid  || $oldid == $wgArticle->getLatest() ) {
-			$oldid = 0;
-		} 
+		$oldid = 0;
+		if ( !is_null( $wgArticle ) ) {
+			$oldid = $wgArticle->getOldID();
+			if ( !$oldid  || $oldid == $wgArticle->getLatest() ) {
+				$oldid = 0;
+			} 
+		}
 		$html = '';
 
 		$html .= Xml::element( 'script', 
@@ -185,14 +211,18 @@ class CollectionHooks {
 			'', false
 		);
 		
+		$addRemoveState = $mode;
+
 		// activate popup check:
 		if ( $wgCollectionNavPopups ) {
 			if ( $namespace == NS_CATEGORY ) {
 				$addRemoveState = 'addcategory';
-			} else if ( CollectionSession::findArticle( $ptext, $oldid ) == -1 ) {
-				$addRemoveState = 'addarticle';
-			} else {
-				$addRemoveState = 'removearticle';
+			} else if ( in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
+				if ( CollectionSession::findArticle( $ptext, $oldid ) == -1 ) {
+					$addRemoveState = 'addarticle';
+				} else {
+					$addRemoveState = 'removearticle';
+				}
 			}
 			$html .= Skin::makeVariablesScript(
 				array(
@@ -233,14 +263,14 @@ class CollectionHooks {
 				'alt' => '',
 				'width' => '80',
 				'height' => '45',
-				'style' => 'float: left; margin-right: 10px',
+				'style' => 'float: left;',
 			),
 			'',
 			true
 		);
 
 		$html .= Xml::tags( 'div',
-			array( 'style' => 'margin-bottom: 0.2em;' ),
+			array( 'style' => 'margin-left: 90px;' ),
 			Xml::tags( 'div',
 				array( 'style' => 'float: right' ),
 				$sk->link(
@@ -264,18 +294,18 @@ class CollectionHooks {
 				)
 			)
 			. Xml::tags( 'strong',
-				array( 'style' => 'font-size: 1.0em' ),
+				array( 'style' => 'font-size: 1.2em' ),
 				wfMsgHtml( 'coll-book_mode' )
 			)
 			. ' ('
 			. $sk->link(
-				SpecialPage::getTitleFor( 'Book', 'stop_book_mode/' ),
+				SpecialPage::getTitleFor( 'Book' ),
 				wfMsgHtml( 'coll-disable' ),
 				array(
 					'rel' => 'nofollow',
 					'title' => wfMsg( 'coll-disable_tooltip' ),
 				),
-				array( 'referer' => $ptext ),
+				array( 'bookcmd' => 'stop_book_mode', 'referer' => $ptext ),
 				array( 'known', 'noclasses' )
 			)
 			. ')'
@@ -284,71 +314,89 @@ class CollectionHooks {
 		$html .= Xml::tags( 'div',
 			array(
 				'id' => 'coll-book_mode_box',
-				'style' => 'margin-bottom: 0.2em;',
+				'style' => 'margin-left: 90px; margin-bottom: 0;',
 			),
 			self::getBookModeBoxContent( $addRemoveState, $oldid )
 	 	);
 
 		$html .= Xml::closeElement( 'div' );
-
-		$siteNotice .= $html;
-		return true;
+		return $html;
 	}
 
 	static function getBookModeBoxContent( $ajaxHint=null, $oldid=null ) {
-		global $wgArticle;
-		global $wgJsMimeType;
 		global $wgUser;
-		global $wgTitle;
 		global $wgScriptPath;
 
 		wfLoadExtensionMessages( 'CollectionCore' );
 
+		$sk = $wgUser->getSkin();
+		$imagePath = "$wgScriptPath/extensions/Collection/images";
+
+		return self::getBookModeBoxAddRemoveLink( $sk, $imagePath, $ajaxHint, $oldid )
+			. self::getBookModeBoxShowBookLink( $sk, $imagePath, $ajaxHint )
+			. self::getBookModeBoxSuggestLink( $sk, $imagePath, $ajaxHint );
+	}
+
+	static function getBookModeBoxAddRemoveLink( $sk, $imagePath, $ajaxHint, $oldid ) {
+		global $wgArticle;
+		global $wgJsMimeType;
+		global $wgTitle;
+		global $wgScriptPath;
+
 		$namespace = $wgTitle->getNamespace();
 		$ptext = $wgTitle->getPrefixedText();
 
-		if ( is_null( $oldid) && !is_null( $wgArticle ) ) {
+		if ( is_null( $oldid ) && !is_null( $wgArticle ) ) {
 			$oldid = $wgArticle->getOldID();
 			if ( !$oldid  || $oldid == $wgArticle->getLatest() ) {
 				$oldid = 0;
 			} 
 		}
 
-		$sk = $wgUser->getSkin();
-		$imagePath = "$wgScriptPath/extensions/Collection/images";
-
-		$html = '';
+		if ( $ajaxHint == 'suggest' || $ajaxHint == 'showbook' ) {
+			return Xml::tags( 'span',
+				array( 'style' => 'color: # 777;' ),
+				Xml::element( 'img',
+					array(
+						'src' => "$imagePath/silk-stop.png",
+						'alt' => '',
+						'width' => '16',
+						'height'=> '16',
+						'style' => 'vertical-align: text-bottom',
+					)
+				)
+				. '&nbsp;' . wfMsgHtml( 'coll-not_addable' )
+			);
+		}
 
 		if ( $ajaxHint == 'addcategory' || $namespace == NS_CATEGORY ) {
 			$id = 'coll-add_category';
-			$subpage = 'add_category/';
 			$icon = 'silk-add.png';
 			$captionMsg = 'coll-add_category';
 			$tooltipMsg = 'coll-add_category_tooltip';
-			$query = array( 'cattitle' => $wgTitle->getText() );
+			$query = array( 'bookcmd' => 'add_category', 'cattitle' => $wgTitle->getText() );
 			$onclick = "collectionCall('AddCategory', ['addcategory', wgTitle]); return false;";
 		} else {
 			if ( $ajaxHint == 'addarticle'
 				|| ($ajaxHint == '' && CollectionSession::findArticle( $ptext, $oldid ) == -1) ) {
 				$id = 'coll-add_article';
-				$subpage = 'add_article/';
 				$icon = 'silk-add.png';
 				$captionMsg = 'coll-add_this_page';
 				$tooltipMsg = 'coll-add_page_tooltip';
-				$query = array( 'arttitle' => $ptext, 'oldid' => $oldid );
+				$query = array( 'bookcmd' => 'add_article', 'arttitle' => $ptext, 'oldid' => $oldid );
 				$onclick = "collectionCall('AddArticle', ['removearticle', wgNamespaceNumber, wgTitle, $oldid]); return false;";
 			} else {
 				$id = 'coll-remove_article';
-				$subpage = 'remove_article/';
 				$icon = 'silk-remove.png';
 				$captionMsg = 'coll-remove_this_page';
 				$tooltipMsg = 'coll-remove_page_tooltip';
-				$query = array( 'arttitle' => $ptext, 'oldid' => $oldid );
+				$query = array( 'bookcmd' => 'remove_article', 'arttitle' => $ptext, 'oldid' => $oldid );
 				$onclick = "collectionCall('RemoveArticle', ['addarticle', wgNamespaceNumber, wgTitle, $oldid]); return false;";
 			}
 		}
-		$html .= $sk->link(
-			SpecialPage::getTitleFor( 'Book', $subpage ),
+
+		return $sk->link(
+			SpecialPage::getTitleFor( 'Book' ),
 			Xml::element('img',
 				array(
 					'src' => "$imagePath/$icon",
@@ -369,52 +417,91 @@ class CollectionHooks {
 			array( 'known', 'noclasses' )
 		);
 
-		$html .= $sk->link(
-			SpecialPage::getTitleFor( 'Book', 'suggest/' ),
-			Xml::element('img',
-				array(
-					'src' => "$imagePath/silk-wand.png",
-					'alt' => '',
-					'width' => '16',
-					'height' => '16',
-					'style' => 'vertical-align: text-bottom',
-				)
-			)
-			. '&nbsp;' . wfMsgHtml( 'coll-make_suggestions' ),
-			array(
-				'rel' => 'nofollow',
-				'title' => wfMsg( 'coll-make_suggestions_tooltip' ),
-				'style' => 'margin-left: 10px',
-			),
-			array(),
-			array( 'known', 'noclasses' )
-		);
+	}
 
-
+	static function getBookModeBoxShowBookLink( $sk, $imagePath, $ajaxHint ) {
 		$numArticles = CollectionSession::countArticles();
-		$html .= $sk->link(
-			SpecialPage::getTitleFor( 'Book' ),
-			Xml::element('img',
+		if ( $ajaxHint == 'showbook' ) {
+			return Xml::tags( 'strong',
 				array(
-					'src' => "$imagePath/silk-book_open.png",
-					'alt' => '',
-					'width' => '16',
-					'height' => '16',
-					'style' => 'vertical-align: text-bottom',
+					'style' => 'margin-left: 10px;',
+				),
+				Xml::element('img',
+					array(
+						'src' => "$imagePath/silk-book_open.png",
+						'alt' => '',
+						'width' => '16',
+						'height' => '16',
+						'style' => 'vertical-align: text-bottom',
+					)
 				)
-			)
-			. '&nbsp;' . wfMsgHtml( 'coll-show_collection' )
-				. ' (' . wfMsgHtml( 'coll-n_pages', $numArticles ) . ')',
-			array(
-				'rel' => 'nofollow',
-				'title' => wfMsg( 'coll-show_collection_tooltip' ),
-				'style' => 'margin-left: 10px',
-			),
-			array(),
-			array( 'known', 'noclasses' )
-		);
+				. '&nbsp;' . wfMsgHtml( 'coll-show_collection' )
+				. ' (' . wfMsgHtml( 'coll-n_pages', $numArticles ) . ')'
+			);
+		} else {
+			return $sk->link(
+				SpecialPage::getTitleFor( 'Book' ),
+				Xml::element('img',
+					array(
+						'src' => "$imagePath/silk-book_open.png",
+						'alt' => '',
+						'width' => '16',
+						'height' => '16',
+						'style' => 'vertical-align: text-bottom',
+					)
+				)
+				. '&nbsp;' . wfMsgHtml( 'coll-show_collection' )
+					. ' (' . wfMsgHtml( 'coll-n_pages', $numArticles ) . ')',
+				array(
+					'rel' => 'nofollow',
+					'title' => wfMsg( 'coll-show_collection_tooltip' ),
+					'style' => 'margin-left: 10px',
+				),
+				array(),
+				array( 'known', 'noclasses' )
+			);
+		}
+	}
 
-		return $html;
+	static function getBookModeBoxSuggestLink( $sk, $imagePath, $ajaxHint ) {
+		if ( $ajaxHint == 'suggest' ) {
+			return Xml::tags( 'strong',
+				array(
+					'style' => 'margin-left: 10px;',
+				),
+				Xml::element('img',
+					array(
+						'src' => "$imagePath/silk-wand.png",
+						'alt' => '',
+						'width' => '16',
+						'height' => '16',
+						'style' => 'vertical-align: text-bottom',
+					)
+				)
+				. '&nbsp;' . wfMsgHtml( 'coll-make_suggestions' )
+			);
+		} else {
+			return $sk->link(
+				SpecialPage::getTitleFor( 'Book' ),
+				Xml::element('img',
+					array(
+						'src' => "$imagePath/silk-wand.png",
+						'alt' => '',
+						'width' => '16',
+						'height' => '16',
+						'style' => 'vertical-align: text-bottom',
+					)
+				)
+				. '&nbsp;' . wfMsgHtml( 'coll-make_suggestions' ),
+				array(
+					'rel' => 'nofollow',
+					'title' => wfMsg( 'coll-make_suggestions_tooltip' ),
+					'style' => 'margin-left: 10px',
+				),
+				array( 'bookcmd' => 'suggest', ),
+				array( 'known', 'noclasses' )
+			);
+		}
 	}
 
 	/**

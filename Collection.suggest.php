@@ -57,7 +57,7 @@ class CollectionSuggest {
 		if ( !CollectionSession::hasSession() ) {
 			CollectionSession::startSession();
 		}
-		if ( !isset( $_SESSION['wsCollectionSuggestBan'] ) ) {
+		if ( !isset( $_SESSION['wsCollectionSuggestBan'] ) || $mode == 'resetbans' ) {
 			$_SESSION['wsCollectionSuggestBan']  = array();
 		}
 		if ( !isset( $_SESSION['wsCollectionSuggestProp'] ) ) {
@@ -65,6 +65,7 @@ class CollectionSuggest {
 		}
 
 		$template = self::getCollectionSuggestTemplate( $mode, $param );
+		$wgOut->setPageTitle( wfMsg( 'coll-suggest_title' ) );
 		$wgOut->addTemplate( $template );
 	}
 
@@ -161,6 +162,7 @@ class CollectionSuggest {
 
 		$template->set( 'collection', $_SESSION['wsCollection'] );
 		$template->set( 'proposals', $proposals->getProposals() );
+		$template->set( 'hasbans', $proposals->hasBans() );
 		return $template;
 	}
 
@@ -273,6 +275,10 @@ class Proposals {
 		} else {
 			return $this->mPropList;
 		}
+	}
+
+	public function hasBans() {
+		return count($this->mBanList) > 0;
 	}
 
 	/*
