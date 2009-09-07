@@ -25,6 +25,7 @@ $messages = array();
 
 $messages['en'] = array(
 	'coll-desc'                       => '[[Special:Book|Create books]]',
+	'coll-book_mode_intro'            => "<big>With the ''book mode'' you can create a book containing wiki pages of your choice. You can export the book in different formats (for example PDF or ODF) or order a printed copy.</big>",
 	'coll-manage_your_book'           => 'Manage your book',
 	'coll-book_mode_help'             => 'See [[{{MediaWiki:Coll-helppage}}|the help page about books]] for more information.',
 	'coll-start_book_mode'            => 'Start book mode',
@@ -44,8 +45,6 @@ $messages['en'] = array(
 	'coll-noscript_text'              => '<h1>JavaScript is required!</h1>
 <strong>Your browser does not support JavaScript or JavaScript has been turned off.
 This page will not work correctly, unless JavaScript is enabled.</strong>',
-	'coll-intro_text'                 => "Create and manage your individual selection of wiki pages.<br />
-See [[{{MediaWiki:Coll-helppage}}|the help page about books]] for more information.",
 	'coll-savedbook_template'         => 'saved_book',
 	'coll-your_book'                  => 'Your book',
 	'coll-download_title'             => 'Download',
