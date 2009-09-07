@@ -433,20 +433,22 @@ class CollectionSuggestTemplate extends QuickTemplate {
 				<input type="submit" value="ok" name="suggestControlSubmit" id="suggestControlSubmit" />
 			</noscript>
 		</div>
-		<div>
-			<div style="width:47%;float:left;margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
+		<table style="width: 100%; border-spacing: 10px;"><tbody><tr>
+		<td style="vertical-align: top; width: 50%">
+			<div style="padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 				<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggested_articles') ?></strong>
 				<?php if ($this->data['hasbans']) { ?>
 				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'resetbans' => '1'))) ?>" title="<?php $this->msg('coll-suggest_show_all_tooltip') ?>"><?php $this->msg('coll-suggest_show_all') ?></a>)
 				<?php } ?>
 				<?php echo $this->getProposalList(); ?>
 			</div>
-			<div style="width: 47%;float:right;margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
+		</td><td style="vertical-align: top; width: 50%;">
+			<div style="padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 				<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggest_your_book') ?></strong>
 				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>" title="<?php $this->msg('coll-show_collection_tooltip') ?>"><?php $this->msg('coll-show_collection') ?></a>)
 				<?php echo $this->getMemberList(); ?>
 			</div>
-		</div>
+		</td></tr></tbody></table>
 	</form>
 </div>
 <?php

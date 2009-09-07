@@ -214,7 +214,7 @@ class CollectionHooks {
 		$addRemoveState = $mode;
 
 		// activate popup check:
-		if ( $wgCollectionNavPopups ) {
+		if ( !$mode && $wgCollectionNavPopups ) {
 			if ( $namespace == NS_CATEGORY ) {
 				$addRemoveState = 'addcategory';
 			} else if ( in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
