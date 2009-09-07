@@ -118,6 +118,7 @@ class SpecialCollection extends SpecialPage {
 				return;
 			case 'clear_collection/':
 				CollectionSession::clearCollection();
+				CollectionSuggest::clear();
 				$redirect = $wgRequest->getVal( 'return_to' );
 				$redirectURL = SkinTemplate::makeSpecialUrl( 'Book' );
 				if ( !empty( $redirect ) ) {
@@ -261,6 +262,35 @@ class SpecialCollection extends SpecialPage {
 			case 'post_zip/':
 				$partner = $wgRequest->getVal( 'partner', 'pediapress' );
 				$this->postZIP( $_SESSION['wsCollection'], $partner );
+				return;
+			case 'suggest/':
+				$add = $wgRequest->getVal('add');
+				$ban = $wgRequest->getVal('ban');
+				$remove = $wgRequest->getVal('remove');
+				$select = $wgRequest->getVal('suggestControlSelect');
+
+				if ( isset( $add ) ) {
+					CollectionSuggest::run( 'add', $add );
+				} else if ( isset( $ban ) ) {
+					CollectionSuggest::run('ban', $ban );
+				} else if ( isset( $remove ) ) {
+					CollectionSuggest::run( 'remove', $remove );
+				} else if ( !empty( $select ) ) {
+					if ( $select != 'addAll' ) {
+						//addVal does only work sometimes proper, why? FiXME
+						$param = str_replace( ',', '.', $wgRequest->getVal( 'suggestControlText' ) );
+						CollectionSuggest::run( $select, $param );
+					} else {
+						//how does this work with $wsRequest FIXME
+						if ( isset( $_POST['articleList'] ) ) {
+						 	CollectionSuggest::run( 'addAll', $_POST['articleList'] );
+						} else {
+							CollectionSuggest::run();
+						}
+					}
+				} else {
+					CollectionSuggest::run();
+				}
 				return;
 			case '':
 				$this->renderSpecialPage();

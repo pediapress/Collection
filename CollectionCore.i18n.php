@@ -57,6 +57,8 @@ $messages['en'] = array(
 	'coll-remove_page_tooltip'      => 'Remove the current wiki page from your book',
 	'coll-show_collection'          => 'Show book',
 	'coll-show_collection_tooltip'  => 'Click to edit/download/order your book',
+	'coll-make_suggestions'         => 'Suggest pages',
+	'coll-make_suggestions_tooltip' => 'Show suggestions based on the pages in your book',
 );
 
 /** Message documentation (Message documentation)

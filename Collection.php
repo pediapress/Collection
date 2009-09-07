@@ -115,12 +115,14 @@ $wgExtensionCredits['specialpage'][] = array(
 $wgAutoloadClasses['SpecialCollection'] = $dir . 'Collection.body.php';
 $wgAutoloadClasses['CollectionSession'] = $dir . 'Collection.session.php';
 $wgAutoloadClasses['CollectionHooks'] = $dir . 'Collection.hooks.php';
+$wgAutoloadClasses['CollectionSuggest'] = $dir . 'Collection.suggest.php';
 $wgAutoloadClasses['CollectionPageTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionListTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionLoadOverwriteTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionSaveOverwriteTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionRenderingTemplate'] = $dir . 'Collection.templates.php';
 $wgAutoloadClasses['CollectionFinishedTemplate'] = $dir . 'Collection.templates.php';
+$wgAutoloadClasses['CollectionSuggestTemplate'] = $dir . 'Collection.templates.php';
 $wgExtensionMessagesFiles['CollectionCore'] = $dir . 'CollectionCore.i18n.php'; // Only contains essential messages outside the special page
 $wgExtensionMessagesFiles['Collection'] = $dir . 'Collection.i18n.php'; // Contains all messages used on special page
 $wgExtensionAliasesFiles['Collection'] = $dir . 'Collection.alias.php';
@@ -264,7 +266,34 @@ $wgAjaxExportList[] = 'wfAjaxCollectionSetSorting';
 
 function wfAjaxCollectionClear() {
 	CollectionSession::clearCollection();
+	CollectionSuggest::clear();
 	return wfAjaxCollectionGetItemList();
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionClear';
+
+function wfAjaxCollectionSuggestBanArticle( $article ) {
+	return CollectionSuggest::refresh( 'ban', $article );
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionSuggestBanArticle';
+
+function wfAjaxCollectionSuggestAddArticle( $article ) {
+	return CollectionSuggest::refresh( 'add', $article );
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionSuggestAddArticle';
+
+function wfAjaxCollectionSuggestRemoveArticle( $article ) {
+	return CollectionSuggest::refresh( 'remove', $article );
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionSuggestRemoveArticle';
+
+function wfAjaxCollectionSuggestControl( $mode, $val ) {
+	return CollectionSuggest::refresh( $mode, $val );
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionSuggestControl';
+
+
