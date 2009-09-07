@@ -403,76 +403,67 @@ class Proposals {
 					'name' => $articleName,
 					'links' => $this->getLinks( $article )
 				);
-			}				 
+			}
 		}
 	}
 
-	// Erase spare articles from $mLinkList
+	// Delete items from $mLinkList that are not in the collection any more
 	private function deleteUnusedArticles() {
-		for ( $i = 0; $i < count( $this->mLinkList ); $i++ ) {
-			if ( CollectionSession::findArticle( $this->mLinkList[$i]['name'] ) == -1 ) {
-				unset( $this->mLinkList[$i] );
-				$this->mLinkList = array_values( $this->mLinkList );
-				break;
+		$newList = array();
+		foreach ( $this->mLinkList as $item ) {
+			if ( CollectionSession::findArticle( $item['name'] ) != -1 ) {
+				$newList[] = $item;
 			}
 		}
+		$this->mLinkList = $newList;
 	}
 
-	// Follow redirects to the article
-	private function resolveRedirects( $link ) {
-		$title = title::makeTitleSafe( NS_MAIN, $link );
-		if ( $title->isRedirect( $link ) ) {
-			$article = new Article( $title, 0 );
-			if ( method_exists( Title, 'newFromRedirectRecurse' ) ) {
-				$title = Title::newFromRedirectRecurse( $article->getContent() );
-			} else {
-				$title = Title::newFromRedirect( $article->getContent() );
-			}
-			$link = $title->getText();
+	private function resolveRedirects( $title ) {
+		if ( !$title->isRedirect() ) {
+			return $title;
 		}
-		return $link;
+
+		$article = new Article( $title, 0 );
+		if ( method_exists( Title, 'newFromRedirectRecurse' ) ) {
+			return Title::newFromRedirectRecurse( $article->getContent() );
+		} else {
+			return Title::newFromRedirect( $article->getContent() );
+		}
 	}
 
 	/*
-	 * Extract interwikilinks of an article
+	 * Extract links from an article
 	 *
-	 * @param $article (type string) an Article-Object
-	 * @return a list with all interwikilinks of the article
-	 *         each entry is an array with the keys: 'name' & 'num'
-	 *         'name': the nam of the article to wich the link leads
-	 *         'num' : how often occures the link in the article
+	 * @param $article article name
+	 * @return an array matching link name to number of occurances in article
 	 */
 	private function getLinks( $article ) {
-		$links = array();
+		$allLinks = array();
+		preg_match_all(
+			'/\[\[(.+?)\]\]/',
+			$article->getContent(),
+			$allLinks,
+			PREG_SET_ORDER
+		);
+
 		$goodLinks = array();
-		
-		$pattern = '/\[\[(.+?)\]\]/';
-		preg_match_all( $pattern, $article->getContent(), $links, PREG_SET_ORDER );
-
-		foreach ( $links as $l ) {
-			if ( !preg_match( '/:/', $l[1] ) ) { // skip links with ':'
+		foreach ( $allLinks as $link ) {
+			if ( preg_match( '/:/', $link[1] ) ) { // skip links with ':' FIXME?
+				continue;
+			}
 				
-				// Handle links with a displaytitle
-				$linkName = preg_replace( '/(.+?)(\|.+)/', '${1}', $l[1] );
-				
-				// Check if the link is a interwikilink
-				$title = Title::makeTitleSafe( NS_MAIN, $linkName );
-				if ( isset( $title ) && $title->exists() ) {
-					// Follow redirects
-					$linkName = $this->resolveRedirects( $linkName );
+			// Handle links with a displaytitle
+			$linkName = preg_replace( '/(.+?)(\|.+)/', '${1}', $link[1] );
+			
+			$title = Title::makeTitleSafe( NS_MAIN, $linkName );
+			if ( !is_null( $title ) && $title->exists() ) {
+				$title = $this->resolveRedirects( $title );
+				$text = $title->getText();
 
-					// the first letter has to be upper case FIXME
-					$linkName = strtoupper( substr( $linkName, 0, 1 ) ) . substr( $linkName, 1 );
-
-					// Check if the article already known
-					// If yes, increment its count, if no, add it to te list
-					$key = $this->searchEntry( $linkName, $goodLinks );
-
-					if ( $key !== false ) {
-						$goodLinks[$key]['num']++;
-					} else {
-						array_push( $goodLinks, array( 'name' => $linkName, 'num' => 1 ) );
-					}
+				if ( isset( $goodLinks[$text] ) ) {
+					$goodLinks[$text]++;
+				} else {
+					$goodLinks[$text] = 1;
 				}
 			}
 		}
@@ -481,21 +472,21 @@ class Proposals {
 
 	// Calculate the $mPropList from $mLinkList and $mBanList
 	private function getPropList() {
-		$linkList = $this->mLinkList;
 		$prop = $this->mPropList;
-		foreach ( $linkList as $article ) {
-			foreach( $article['links'] as $link ) {
-				if ( $this->checkLink( $link['name'] ) ) {  
-					$key = $this->searchEntry( $link['name'], $prop );
-					if ( $key !== false ) {
-						$prop[$key]['num'] += $link['num'];
-					} else {
-						$prop[] = array(
-							'name' => $link['name'], 
-							'num' => 1, 
-							'val' => 0
-						);
-					}
+		foreach ( $this->mLinkList as $article ) {
+			foreach( $article['links'] as $linkName => $num ) {
+				if ( !$this->checkLink( $linkName ) ) {  
+					continue;
+				}
+				$key = $this->searchEntry( $linkName, $prop );
+				if ( $key !== false ) {
+					$prop[$key]['num'] += $num;
+				} else {
+					$prop[] = array(
+						'name' => $linkName, 
+						'num' => 1, 
+						'val' => 0
+					);
 				}
 			}
 		}
