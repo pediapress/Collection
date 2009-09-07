@@ -136,7 +136,6 @@ class SpecialCollection extends SpecialPage {
 				return;
 			case 'clear_collection':
 				CollectionSession::clearCollection();
-				CollectionSuggest::clear();
 				$redirect = $wgRequest->getVal( 'return_to' );
 				$redirectURL = SkinTemplate::makeSpecialUrl( 'Book' );
 				if ( !empty( $redirect ) ) {
