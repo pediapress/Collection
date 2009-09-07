@@ -101,6 +101,10 @@ $wgCollectionNavPopups = true;
 
 $wgCollectionMaxSuggestions = 10;
 
+$wgCollectionSuggestCheapWeightThreshhold = 50;
+
+$wgCollectionSuggestThreshhold = 100;
+
 # ==============================================================================
 
 $wgExtensionCredits['specialpage'][] = array(
