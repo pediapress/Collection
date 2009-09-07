@@ -406,3 +406,91 @@ if ($this->data['return_to']) {
 }
 
 ?>
+
+<?php
+/*
+ * Template for suggest feature
+ * 
+ * It needs the two methods getProposalList() and getMemberList()
+ * to run with Ajax
+ */
+class CollectionSuggestTemplate extends QuickTemplate {
+	function execute () {
+?>
+		<script src="<?php echo $GLOBALS['wgScriptPath'] . "/extensions/Collection/js/suggest.js?" . $GLOBALS['wgCollectionStyleVersion'] ?>" type="<?php echo $GLOBALS['wgJsMimeType']; ?>"></script>
+<div>
+	<form method="post" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'suggest/')) ?>">
+		<h1><?php $this->msg('coll-suggest_title') ?></h1>
+		<div>
+			<noscript>
+				<input type="hidden" name="suggestControlSelect" value="addAll" />
+				<input type="submit" value="ok" name="suggestControlSubmit" id="suggestControlSubmit" />
+			</noscript>
+		</div>
+		<div>
+			<div style="width:47%;float:left;margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
+				<h2 id="collectionProposalsHead"><?php $this->msg('coll-suggested_articles') ?></h2>
+				<?php echo $this->getProposalList(); ?>
+			</div>
+			<div style="width: 47%;float:right;margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
+				<h2 id="collectionMembersHead"><?php $this->msg('coll-suggest_your_collection') ?></h2>
+				<?php echo $this->getMemberList(); ?>
+			</div>
+		</div>
+	</form>
+</div>
+<?php
+	}
+
+	// needed for Ajax functions
+	function getProposalList () {
+		global $wgServer;	
+		global $wgScript;
+
+		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
+		$baseUrl = $wgServer . $wgScript ."/";
+
+		$prop = $this->data['proposals'];
+		$out = '<div id="collectionProposals"><ul>';
+		
+		$maxProposals = 100;
+		$num = count($prop);
+		if ($num > $maxProposals) $num = $maxProposals;
+		if ($num == 0) $out .= "<li>" . wfMsgHtml( 'coll-suggest_empty' ) . "</li>";
+
+		for ($i = 0; $i < $num; $i++) {
+			$artName= $prop[$i]['name'];
+			$url = $baseUrl . $artName;
+			$url = str_replace(" ", "_", $url);
+			$out .= '<li><a onclick="collectionSuggestCall(\'AddArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'suggest/', 'add=' . $artName)) . '" title="' . wfMsgHtml('coll-add_this_page') . '"><img src="' . htmlspecialchars($mediapath . 'silk-add.png') . '" width="16" height="16" alt=""></a> ';
+			$out .= '<a onclick="collectionSuggestCall(\'BanArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'suggest/', 'ban=' . $artName)) . '" title="' . wfMsgHtml('coll-suggest_ban_tooltip') . '"><img src="' . htmlspecialchars($mediapath . 'silk-remove.png') . '" width="16" height="16" alt=""></a> ';
+			$out .= '<noscript><input type="checkbox" value="'.$artName.'" name="articleList[]"> </noscript>';
+			$out .= '<a href="' . $url . '" title="' . $artName . '">' . $artName . '</a> ' . $prop[$i]['val'] . '</li>';
+		}
+
+		$out .= '</ul></div>';
+		return $out;
+	}
+
+	// needed for Ajax functions
+	function getMemberList() {
+		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
+		$coll = $this->data['collection'];
+		$out = '<div id="collectionMembers"><ul>';
+
+		$num = count($coll['items']);
+		if ($num == 0) $out .= "<li>" . wfMsgHtml( 'coll-suggest_empty' ) . "</li>";
+
+		for ($i = 0; $i < $num; $i++) {
+			$artName = $coll['items'][$i]['title'];
+			if ($coll['items'][$i]['type'] == 'article') {
+			  $out .= '<li><a href="' . htmlspecialchars(SkinTemplate::makeSpecialUrlSubpage('Book', 'suggest/', 'remove=' . $artName)) . '" onclick="collectionSuggestCall(\'RemoveArticle\', [\'' . $artName . '\']); return false;" title="' . wfMsgHtml('coll-remove_this_page') . '"><img src="'.htmlspecialchars($mediapath . 'silk-remove.png').'" width="16" height="16" alt=""></a> ';
+				$out .= '<a href="' . $coll['items'][$i]['url'] . '" title="' . $artName . '">' . $artName . '</a></li>';
+	    		}
+		}
+
+		$out .= '</ul></div>';
+		return $out;
+	}
+}
+?>

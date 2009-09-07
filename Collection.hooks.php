@@ -369,6 +369,28 @@ class CollectionHooks {
 			array( 'known', 'noclasses' )
 		);
 
+		$html .= $sk->link(
+			SpecialPage::getTitleFor( 'Book', 'suggest/' ),
+			Xml::element('img',
+				array(
+					'src' => "$imagePath/silk-wand.png",
+					'alt' => '',
+					'width' => '16',
+					'height' => '16',
+					'style' => 'vertical-align: text-bottom',
+				)
+			)
+			. '&nbsp;' . wfMsgHtml( 'coll-make_suggestions' ),
+			array(
+				'rel' => 'nofollow',
+				'title' => wfMsg( 'coll-make_suggestions_tooltip' ),
+				'style' => 'margin-left: 10px',
+			),
+			array(),
+			array( 'known', 'noclasses' )
+		);
+
+
 		$numArticles = CollectionSession::countArticles();
 		$html .= $sk->link(
 			SpecialPage::getTitleFor( 'Book' ),

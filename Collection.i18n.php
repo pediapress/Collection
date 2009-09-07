@@ -139,6 +139,12 @@ Please contact your MediaWiki administrator.',
 	'coll-more_info'                  => 'Show more information',
 	'coll-hide_info'                  => 'Hide information',
 	'coll-order_info_article'         => '{{MediaWiki:Coll-helppage}}/PediaPress order information',
+	'coll-suggest_title'              => 'Suggested articles for your book',
+	'coll-suggested_articles'         => 'Suggestions:',
+	'coll-suggest_your_collection'    => 'Your collection:',
+	'coll-suggest_empty'              => 'empty',
+	'coll-suggest_ban_tooltip'        => 'Remove this article from the list of suggestions',
+
 	'right-collectionsaveasuserpage'  => 'Save books as user page',
 	'right-collectionsaveascommunitypage' => 'Save books as community page',
 );
