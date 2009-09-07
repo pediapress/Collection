@@ -430,29 +430,33 @@ var collection_jQuery = jQuery.noConflict();
 <div>
 	<?php $this->msg( 'coll-suggest_intro_text' ) ?>
 	<div id="collectionSuggestStatus" style="text-align: center; margin: 5px auto 10px auto; padding: 0 4px; border: 1px solid #ed9; background-color: #fea; visibility: hidden;">&nbsp;</div>
-	<div style="float: right; width: 45%; margin-left: 20px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
-		<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggest_your_book') ?></strong>
-		(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>" title="<?php $this->msg('coll-show_collection_tooltip') ?>"><?php $this->msg('coll-suggest_show') ?></a>)
-		<ul id="collectionMembers" style="list-style: none; margin-left: 0;">
-		<?php echo $this->getMemberList(); ?>
-		</ul>
-	</div>
-	<div style="padding: 10px">
-		<form method="post" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest'))) ?>">
-			<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggested_articles') ?></strong>
-			(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'resetbans' => '1'))) ?>" title="<?php $this->msg('coll-suggest_reset_bans_tooltip') ?>"><?php $this->msg('coll-suggest_reset_bans') ?></a>)
-			<?php if (count($this->data['proposals']) > 0) { ?>
-			<noscript>
-			<div style="float: right;">
-				<input type="submit" value="<?php $this->msg('coll-suggest_add_selected') ?>" name="addselected" />
+	<table style="width: 100%; border-spacing: 10px;"><tbody><tr>
+		<td style="padding: 10px; vertical-align: top;">
+			<form method="post" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest'))) ?>">
+				<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggested_articles') ?></strong>
+				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'resetbans' => '1'))) ?>" title="<?php $this->msg('coll-suggest_reset_bans_tooltip') ?>"><?php $this->msg('coll-suggest_reset_bans') ?></a>)
+				<?php if (count($this->data['proposals']) > 0) { ?>
+				<noscript>
+				<div style="float: right;">
+					<input type="submit" value="<?php $this->msg('coll-suggest_add_selected') ?>" name="addselected" />
+				</div>
+				</noscript>
+				<?php } ?>
+				<ul id="collectionSuggestions" style="list-style: none; margin-left: 0;">
+				<?php echo $this->getProposalList() ?>
+				</ul>
+			</form>
+		</td>
+		<td style="width: 45%; vertical-align: top;">
+			<div style="padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
+				<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggest_your_book') ?></strong>
+				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>" title="<?php $this->msg('coll-show_collection_tooltip') ?>"><?php $this->msg('coll-suggest_show') ?></a>)
+				<ul id="collectionMembers" style="list-style: none; margin-left: 0;">
+				<?php echo $this->getMemberList(); ?>
+				</ul>
 			</div>
-			</noscript>
-			<?php } ?>
-			<ul id="collectionSuggestions" style="list-style: none; margin-left: 0;">
-			<?php echo $this->getProposalList() ?>
-			</ul>
-		</form>
-	</div>
+		</td>
+	</tr></tbody></table>
 </div>
 <?php
 	}
@@ -476,11 +480,11 @@ var collection_jQuery = jQuery.noConflict();
 		$artName= $prop[0]['name'];
 		$title = Title::newFromText( $artName );
 		$url = $title->getLocalUrl();
-		$out .= '<li>';
+		$out .= '<li style="margin-bottom: 4px; padding: 2px 4px; background-color: #ddddff; font-size: 1.2em; font-weight: bold;">';
 		$out .= '<noscript><input type="checkbox" value="' . htmlspecialchars($artName) . '" name="articleList[]" /></noscript>';
 		$out .= '<a onclick="collectionSuggestCall(\'AddArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'add' => $artName))) . '" title="' . wfMsgHtml('coll-add_this_page') . '"><img src="' . htmlspecialchars($mediapath . 'silk-accept.png') . '" width="16" height="16" alt=""></a> ';
 		$out .= '<a onclick="collectionSuggestCall(\'BanArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'ban' => $artName))) . '" title="' . wfMsgHtml('coll-suggest_ban_tooltip') . '"><img src="' . htmlspecialchars($mediapath . 'silk-cancel.png') . '" width="16" height="16" alt=""></a> ';
-		$out .= '<a href="' . $url . '" title="' . $artName . '" style="font-size: 1.2em;">' . $artName . '</a>';
+		$out .= '<a href="' . $url . '" title="' . $artName . '">' . $artName . '</a>';
 		$out .= '</li>';
 
 		for ($i = 1; $i < $num; $i++) {
