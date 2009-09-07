@@ -46,6 +46,7 @@ class CollectionSession {
 			'subtitle' => '',
 			'items' => array(),
 		);
+		CollectionSuggest::clear();
 		self::touchSession();
 	}
 
