@@ -200,11 +200,11 @@ function wfAjaxCollectionAddCategory( $title='' ) {
 
 $wgAjaxExportList[] = 'wfAjaxCollectionAddCategory';
 
-function wfAjaxCollectionGetBookModeBoxContent( $ajaxHint='', $oldid=null ) {
-	return CollectionHooks::getBookModeBoxContent( $ajaxHint, $oldid );
+function wfAjaxCollectionGetBookCreatorBoxContent( $ajaxHint='', $oldid=null ) {
+	return CollectionHooks::getBookCreatorBoxContent( $ajaxHint, $oldid );
 }
 
-$wgAjaxExportList[] = 'wfAjaxCollectionGetBookModeBoxContent';
+$wgAjaxExportList[] = 'wfAjaxCollectionGetBookCreatorBoxContent';
 
 function wfAjaxCollectionGetItemList() {
 	wfLoadExtensionMessages( 'CollectionCore' );

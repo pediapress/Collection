@@ -64,11 +64,11 @@ class SpecialCollection extends SpecialPage {
 		}
 
 		switch ( $wgRequest->getVal( 'bookcmd', '' ) ) {
-			case 'book_mode':
-				$this->renderBookModePage( $wgRequest->getVal( 'referer', '' ) );
+			case 'book_creator':
+				$this->renderBookCreatorPage( $wgRequest->getVal( 'referer', '' ) );
 				return;
 
-			case 'start_book_mode':
+			case 'start_book_creator':
 				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
 				if ( is_null( $title ) ) {
 					$title = Title::newMainPage();
@@ -77,15 +77,19 @@ class SpecialCollection extends SpecialPage {
 				$wgOut->redirect( $title->getFullURL() );
 				return;
 
-			case 'stop_book_mode':
+			case 'stop_book_creator':
 				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
 				if ( is_null( $title ) || $title->equals( $wgTitle ) ) {
 					$title = Title::newMainPage();
 				}
-				CollectionSession::disable();
+				if ( $wgRequest->getVal( 'disable' ) ) {
+					CollectionSession::disable();
+				} else if ( !$wgRequest->getVal( 'continue' ) ) {
+					$this->renderStopBookCreatorPage( $title );
+					return;
+				}
 				$wgOut->redirect( $title->getFullURL() );
 				return;
-
 			case 'add_article':
 				if ( CollectionSession::countArticles() >= $wgCollectionMaxArticles ) {
 					self::limitExceeded();
@@ -311,14 +315,14 @@ class SpecialCollection extends SpecialPage {
 		return;
 	}
 
-	function renderBookModePage( $referer ) {
+	function renderBookCreatorPage( $referer ) {
 		global $wgOut;
 		global $wgScriptPath;
 
 		$this->setHeaders();
-		$wgOut->setPageTitle( wfMsg( 'coll-book_mode' ) );
+		$wgOut->setPageTitle( wfMsg( 'coll-book_creator' ) );
 
-		$wgOut->addWikiMsg(  'coll-book_mode_intro' );
+		$wgOut->addWikiMsg(  'coll-book_creator_intro' );
 
 		$imagepath = "$wgScriptPath/extensions/Collection/images";
 
@@ -370,13 +374,13 @@ EOS
 							'href' => SkinTemplate::makeSpecialUrl(
 								'Book',
 								array(
-									'bookcmd' => 'start_book_mode',
+									'bookcmd' => 'start_book_creator',
 									'referer' => $referer,
 								)
 						 	),
 							// TODO: title
 						),
-						wfMsg( 'coll-start_book_mode' )
+						wfMsg( 'coll-start_book_creator' )
 					)
 				)
 				. Xml::tags( 'div',
@@ -388,7 +392,7 @@ EOS
 							'href' => SkinTemplate::makeSpecialUrl(
 								'Book', 
 								array(
-									'bookcmd' => 'stop_book_mode',
+									'bookcmd' => 'stop_book_creator',
 									'referer' => $referer,
 								)
 						 	),
@@ -406,7 +410,7 @@ EOS
 			)
 		);
 
-		$title_string = wfMsgForContent( 'coll-book_mode_text_article' );
+		$title_string = wfMsgForContent( 'coll-book_creator_text_article' );
 		$t = Title::newFromText( $title_string );
 		if ( !is_null($t) ) {
 			$a = new Article( $t );
@@ -415,8 +419,50 @@ EOS
 				return;
 			}
 		}
-		$wgOut->addWikiText( wfMsg( 'coll-book_mode_help' ) );
+		$wgOut->addWikiText( wfMsg( 'coll-book_creator_help' ) );
 	}
+
+	function renderStopBookCreatorPage( $referer ) {
+		global $wgOut;
+
+		$this->setHeaders();
+		$wgOut->setPageTitle( wfMsg( 'coll-book_creator_disable' ) );
+		$wgOut->addWikiMsg(  'coll-book_creator_disable_text' );
+
+		$wgOut->addHTML(
+			Xml::tags( 'form',
+				array(
+					'action' => SkinTemplate::makeSpecialUrl(
+						'Book',
+						array( 'bookcmd' => 'stop_book_creator' )
+					),
+					'method' => 'post',
+				),
+				Xml::element( 'input',
+					array(
+						'type' => 'hidden',
+						'name' => 'referer',
+						'value' => $referer,
+					)
+				)
+				. Xml::element( 'input',
+					array(
+						'type' => 'submit',
+						'value' => wfMsg( 'coll-book_creator_continue' ),
+						'name' => 'continue',
+					)
+				)
+				. Xml::element( 'input',
+					array(
+						'type' => 'submit',
+						'value' => wfMsg( 'coll-book_creator_disable' ),
+						'name' => 'disable',
+					)
+				)
+			)
+		);
+	}
+
 
 	function renderSpecialPage() {
 		global $wgCollectionFormats;
