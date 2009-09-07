@@ -112,7 +112,12 @@ function remove_item(index) {
 	sajax_request_type = "POST";
 	sajax_do_call('wfAjaxCollectionRemoveItem',
 		[index],
-		refresh_list);
+		function(xhr) {
+			refresh_list(xhr);
+			sajax_do_call('wfAjaxCollectionGetBookCreatorBoxContent', ['showbook', null], function(xhr2) {
+				jQuery('#coll-book_creator_box').html(xhr2.responseText);
+			});
+		});
 	return false;
 }
 
