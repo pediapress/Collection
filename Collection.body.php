@@ -58,7 +58,7 @@ class SpecialCollection extends SpecialPage {
 			}
 			$wgOut->redirect( wfAppendQuery(
 				SkinTemplate::makeSpecialUrl( 'Book' ),
-				$wgRequest->appendQueryArray( array( 'bookcmd' => $par ), true )
+				$wgRequest->appendQueryArray( array( 'bookcmd' => rtrim( $par, '/' ) ), true )
 		 	) );
 			return;
 		}
