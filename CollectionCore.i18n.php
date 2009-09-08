@@ -198,11 +198,12 @@ $messages['be-tarask'] = array(
 	'coll-print_export' => 'Друк/экспарт',
 	'coll-create_a_book' => 'Стварыць кнігу',
 	'coll-create_a_book_tooltip' => 'Стварыць кнігу альбо калекцыю артыкулаў',
-	'coll-book_mode' => 'Рэжым кнігі',
+	'coll-book_creator' => 'Майстар стварэньня кнігі',
 	'coll-download_as' => 'Загрузіць як $1',
 	'coll-download_as_tooltip' => 'Загрузіць вэрсію $1 гэтай вікі-старонкі',
 	'coll-disable' => 'выключыць',
-	'coll-disable_tooltip' => 'Выключыць рэжым стварэньня кнігі',
+	'coll-book_creator_disable' => 'Выключыць майстра стварэньня кнігі',
+	'coll-book_creator_disable_tooltip' => 'Спыніць выкарыстаньне майстра стварэньня кнігі',
 	'coll-add_category' => 'Дадаць гэтую катэгорыю ў Вашую кнігу',
 	'coll-add_category_popup' => 'Дадаць старонкі са зьвязанай катэгорыі ў Вашу кнігу',
 	'coll-add_category_tooltip' => 'Дадаць усе старонкі з гэтай катэгорыі ў Вашую кнігу',
@@ -225,6 +226,10 @@ $messages['be-tarask'] = array(
 	'coll-remove_page_tooltip' => 'Выдаліць цяперашнюю вікі-старонку з Вашай кнігі',
 	'coll-show_collection' => 'Паказаць кнігу',
 	'coll-show_collection_tooltip' => 'Націсьніце для рэдагаваньня/загрузкі/заказу Вашай кнігі',
+	'coll-not_addable' => 'Гэтая старонка ня можа быць дададзеная',
+	'coll-make_suggestions' => 'Прапанаваць старонкі',
+	'coll-make_suggestions_tooltip' => 'Паказаць прапановы заснаваныя на старонках у Вашай кнізе',
+	'coll-suggest_empty' => 'пуста',
 );
 
 /** Bulgarian (Български)
@@ -292,11 +297,12 @@ $messages['bs'] = array(
 	'coll-print_export' => 'Štampaj/izvezi',
 	'coll-create_a_book' => 'Napravi knjigu',
 	'coll-create_a_book_tooltip' => 'Napravi knjigu ili kolekciju članaka',
-	'coll-book_mode' => 'Način knjige',
+	'coll-book_creator' => 'Pravljenje knjiga',
 	'coll-download_as' => 'Učitaj kao $1',
 	'coll-download_as_tooltip' => 'Skinite $1 verziju ove wiki stranice',
 	'coll-disable' => 'isključena',
-	'coll-disable_tooltip' => 'Onemogući način pravljenja knjige',
+	'coll-book_creator_disable' => 'Onemogući pravljenje knjiga',
+	'coll-book_creator_disable_tooltip' => 'Prestani koristiti pravljenje knjiga',
 	'coll-add_category' => 'Dodaj ovu kategoriju u Vašu knjigu',
 	'coll-add_category_popup' => 'Dodaj wiki stranice u povezane kategorije u Vašoj knjizi',
 	'coll-add_category_tooltip' => 'Dodaj sve wiki članke iz ove kategorije u Vašu knjigu',
@@ -319,6 +325,10 @@ $messages['bs'] = array(
 	'coll-remove_page_tooltip' => 'Ukloni trenutnu wiki stranicu iz Vaše knjige',
 	'coll-show_collection' => 'Prikaži knjigu',
 	'coll-show_collection_tooltip' => 'Kliknite za uređivanje/download/naručivanje Vaše knjige',
+	'coll-not_addable' => 'Ova stranica se ne može dodati',
+	'coll-make_suggestions' => 'Predloži stranice',
+	'coll-make_suggestions_tooltip' => 'Prikaži prijedloge zasnovane na stranicama iz Vaše knjige',
+	'coll-suggest_empty' => 'prazno',
 );
 
 /** Catalan (Català)
@@ -537,11 +547,12 @@ $messages['dsb'] = array(
 	'coll-print_export' => 'Šišćaś/eksportěrowaś',
 	'coll-create_a_book' => 'Knigły napóraś',
 	'coll-create_a_book_tooltip' => 'Knigły abo zběrku nastawkow napóraś',
-	'coll-book_mode' => 'Modus knigłow',
+	'coll-book_creator' => 'Funkcija knigłow',
 	'coll-download_as' => 'Ako $1 ześěgnuś',
 	'coll-download_as_tooltip' => 'Wersiju $1 toś togo wikijowego boka ześěgnuś',
 	'coll-disable' => 'znjemóžniś',
-	'coll-disable_tooltip' => 'Modus napóranja knigłow znjemóžniś',
+	'coll-book_creator_disable' => 'Funkciju knigłow znjemóžniś',
+	'coll-book_creator_disable_tooltip' => 'Wužywanje funkcije knigłow zastajiś',
 	'coll-add_category' => 'Toś tu kategoriju twójim knigłam pśidaś',
 	'coll-add_category_popup' => 'Wikiboki we wótkazanej kategoriji twójim knigłam pśidaś',
 	'coll-add_category_tooltip' => 'Wšě wikiboki w toś tej kategoriji twójim knigłam pśidaś',
@@ -564,6 +575,10 @@ $messages['dsb'] = array(
 	'coll-remove_page_tooltip' => 'Aktualny wikibok z twójich knigłow wótpóraś',
 	'coll-show_collection' => 'Knigły pokazaś',
 	'coll-show_collection_tooltip' => 'Klikni, aby wobźěłał/ześěgnuł/skazał swóje knigły',
+	'coll-not_addable' => 'Toś ten bok njedajo se pśidaś',
+	'coll-make_suggestions' => 'Boki naraźiś',
+	'coll-make_suggestions_tooltip' => 'Naraźenja pokazaś, kótarež bazěruju na bokach w twójich knigłach',
+	'coll-suggest_empty' => 'prozny',
 );
 
 /** Greek (Ελληνικά)
@@ -1041,9 +1056,12 @@ $messages['hsb'] = array(
 	'coll-print_export' => 'Ćišćeć/eksportować',
 	'coll-create_a_book' => 'Knihu wutworić',
 	'coll-create_a_book_tooltip' => 'Knihu abo zběrku nastawkow wutworić',
+	'coll-book_creator' => 'Generator knihow',
 	'coll-download_as' => 'Jako $1 sćahnyć',
 	'coll-download_as_tooltip' => 'Wersiju $1 tuteje wikijoweje strony sćahnyć',
 	'coll-disable' => 'znjemóžnić',
+	'coll-book_creator_disable' => 'Generator knihow znjemóžnić',
+	'coll-book_creator_disable_tooltip' => 'Wužiwanje generatora knihow zastajić',
 	'coll-add_category' => 'Tutu kategoriju twojej knize přidać',
 	'coll-add_category_popup' => 'Wikistrony we wotkzajanej kategoriji twojej knize přidać',
 	'coll-add_category_tooltip' => 'Wšě wikistrony w tutej kategoriji twojej knize přidać',
@@ -1101,6 +1119,7 @@ $messages['hu'] = array(
 	'coll-remove_page_tooltip' => 'A jelenlegi lap eltávolítása a könyvből',
 	'coll-show_collection' => 'Könyv mutatása',
 	'coll-show_collection_tooltip' => 'Kattints ide a könyv szerkesztéséhez/letöltéséhez/megrendeléségez',
+	'coll-suggest_empty' => 'üres',
 );
 
 /** Armenian (Հայերեն)
@@ -1148,6 +1167,7 @@ $messages['ia'] = array(
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Irwangatot
  * @author IvanLanin
  * @author Rex
  */
@@ -1155,11 +1175,12 @@ $messages['id'] = array(
 	'coll-print_export' => 'Cetak/ekspor',
 	'coll-create_a_book' => 'Buat buku',
 	'coll-create_a_book_tooltip' => 'Buat koleksi artikel atau buku',
-	'coll-book_mode' => 'Moda buku',
+	'coll-book_creator' => 'Pembuatan buku',
 	'coll-download_as' => 'Unduh sebagai $1',
 	'coll-download_as_tooltip' => 'Unduh versi $1 halaman wiki ini',
 	'coll-disable' => 'matikan',
-	'coll-disable_tooltip' => 'Matikan moda pembuatan buku',
+	'coll-book_creator_disable' => 'Pembuatan buku dinonaktifkan',
+	'coll-book_creator_disable_tooltip' => 'Berhenti menggunakan pembuatan buku',
 	'coll-add_category' => 'Tambahkan kategori ini ke buku Anda',
 	'coll-add_category_popup' => 'Tambahkan halaman wiki pada kategori terkait buku Anda',
 	'coll-add_category_tooltip' => 'Tambahkan semua halaman wiki pada kategori ini ke buku Anda',
@@ -1182,6 +1203,10 @@ $messages['id'] = array(
 	'coll-remove_page_tooltip' => 'Buang halaman wiki ini dari buku Anda',
 	'coll-show_collection' => 'Lihat buku',
 	'coll-show_collection_tooltip' => 'Klik untuk menyunting/mengunduh/memesan buku Anda',
+	'coll-not_addable' => 'Halaman ini tidak dapat di tambahkan',
+	'coll-make_suggestions' => 'Halaman disarankan',
+	'coll-make_suggestions_tooltip' => 'Tampilkan saran berdasarkan halaman dalam buku anda',
+	'coll-suggest_empty' => 'kosong',
 );
 
 /** Ido (Ido)
@@ -1406,9 +1431,12 @@ $messages['ksh'] = array(
 	'coll-print_export' => 'Dröcke / Äxpotteere',
 	'coll-create_a_book' => 'E Booch zesamme_ställe',
 	'coll-create_a_book_tooltip' => 'Donn e Booch maache, udder en Sammlong vun Atikele aanlääje',
+	'coll-book_creator' => '„Bööscher Maache“',
 	'coll-download_as' => 'Als $1 eronger laade',
 	'coll-download_as_tooltip' => 'Donn heh di Wiki-Sigg em $1-Fommaat erunger laade',
 	'coll-disable' => 'ußschallde',
+	'coll-book_creator_disable' => 'Et „Bööscher Maache“ ußschallde',
+	'coll-book_creator_disable_tooltip' => 'Hür mem „Bööscher Maache“ op',
 	'coll-add_category' => 'Donn heh di Saachjrupp bei dat Booch dobei',
 	'coll-add_category_popup' => 'Donn di Sigge uß dä {{ns:Category}}, wo dä Lengk drop jeiht, met en Ding Booch opnämme',
 	'coll-add_category_tooltip' => 'Dat deiht all de Atikelle en dä {{NS:Category}} en Ding Booch erin.',
@@ -1425,13 +1453,16 @@ $messages['ksh'] = array(
 	'coll-load_collection' => 'Booch lade',
 	'coll-load_collection_tooltip' => 'Deiht dat Booch hee als Ding aktoälles Booch laade.',
 	'coll-n_pages' => '{{PLURAL:$1|ein Sigg|$1 Sigge|kein Sigge}}',
-	'coll-printable_version_pdf' => 'PDF Version',
+	'coll-printable_version_pdf' => '<i lang="en">PDF</i> Version',
 	'coll-remove_this_page' => 'Schmiiß die Sigg uß Dingem Booch eruß',
 	'coll-remove_page_popup' => 'Donn de Sigg, wo dä Lemgk drop jeiht, uß Dingem Booch eruß nämme',
 	'coll-remove_page_tooltip' => 'Schmiiß hee di Sigg fum Wiki uß Dingem Booch eruß',
 	'coll-show_collection' => 'Booch zeije',
 	'coll-show_collection_tooltip' => 'He met kanns De Ding Boch ändere, de zosamme jeshtalle Sigge erunger laade, un jedröck beshtelle.',
+	'coll-not_addable' => 'Di Sigg kam_mer nit dobei donn',
 	'coll-make_suggestions' => 'Sigge vörschlonn',
+	'coll-make_suggestions_tooltip' => 'Donn Vörschlähsch aanzeije, je noh dä Sigge en Dingem Booch',
+	'coll-suggest_empty' => 'leddisch',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -1441,11 +1472,9 @@ $messages['lb'] = array(
 	'coll-print_export' => 'Drécken/exportéieren',
 	'coll-create_a_book' => 'E Buch uleeën',
 	'coll-create_a_book_tooltip' => 'E Buch oder eng Sammlung vun Artikelen uleeën',
-	'coll-book_mode' => 'Buchmodus',
 	'coll-download_as' => 'Als $1 eroflueden',
 	'coll-download_as_tooltip' => 'Eng $1 Versioun vun dëser Wiki-Säit eroflueden',
 	'coll-disable' => 'Ausschalten',
-	'coll-disable_tooltip' => 'De Modus fir a Buch unzeleeën ausschalten',
 	'coll-add_category' => 'Dës Kategorie an Ärt Buch derbäisetzen',
 	'coll-add_category_popup' => 'Wikisäiten a verlinkte Kategorien an Ärt Buch derbäisetzen',
 	'coll-add_category_tooltip' => 'All Wiki-Säiten aus dëser Kategorie an Ärt Buch derbäisetzen',
@@ -1468,6 +1497,10 @@ $messages['lb'] = array(
 	'coll-remove_page_tooltip' => 'Dës Wiki-Säit aus Ärem buch eraushuelen',
 	'coll-show_collection' => "D'Buch weisen",
 	'coll-show_collection_tooltip' => "Klickt fir Ärt Buch z'änneren/erofzeluede/ze bestellen",
+	'coll-not_addable' => 'Dës Sàit kann net derbäigesat ginn',
+	'coll-make_suggestions' => 'Säite virschloen',
+	'coll-make_suggestions_tooltip' => 'Virschléi weisen op Basis vun de Säiten an Ärem Buch',
+	'coll-suggest_empty' => 'eidel',
 );
 
 /** Limburgish (Limburgs)
@@ -1964,11 +1997,12 @@ $messages['ru'] = array(
 	'coll-print_export' => 'Печать/Экспорт',
 	'coll-create_a_book' => 'Создать книгу',
 	'coll-create_a_book_tooltip' => 'Создать книгу или коллекцию статей',
-	'coll-book_mode' => 'Режим книги',
+	'coll-book_creator' => 'Создание книги',
 	'coll-download_as' => 'Загрузить как $1',
 	'coll-download_as_tooltip' => 'Загрузить $1 версию этой вики-страницы',
 	'coll-disable' => 'выключить',
-	'coll-disable_tooltip' => 'Выключить режим создания книги',
+	'coll-book_creator_disable' => 'Отключить книжного мастера',
+	'coll-book_creator_disable_tooltip' => 'Прекратите использование книжного мастера',
 	'coll-add_category' => 'Добавить эту категорию в вашу книгу',
 	'coll-add_category_popup' => 'Добавить в вики-страницы из связанной категории в книгу',
 	'coll-add_category_tooltip' => 'Добавить все вики-страницы этой категории в книгу',
@@ -1991,6 +2025,10 @@ $messages['ru'] = array(
 	'coll-remove_page_tooltip' => 'Удалить текущую вики-страницу из книги',
 	'coll-show_collection' => 'Показать книгу',
 	'coll-show_collection_tooltip' => 'Нажмите для редактирования/загрузки/заказа книги',
+	'coll-not_addable' => 'Данная страница не может быть добавлена',
+	'coll-make_suggestions' => 'Предлагаемые страницы',
+	'coll-make_suggestions_tooltip' => 'Показать предложения, основанные на существующих страницах вашей книги',
+	'coll-suggest_empty' => 'пуста',
 );
 
 /** Yakut (Саха тыла)
@@ -2206,7 +2244,6 @@ $messages['sv'] = array(
 $messages['te'] = array(
 	'coll-print_export' => 'ముద్రించండి/ఎగుమతి చేయండి',
 	'coll-create_a_book' => 'ఓ పుస్తకాన్ని సృష్టించండి',
-	'coll-book_mode' => 'పుస్తకపు మోడు',
 	'coll-download_as' => '$1 క్రింద దిగుమతి చేసుకోండి',
 	'coll-disable' => 'అచేతన పరచు',
 	'coll-add_category' => 'పుస్తకముకు ఈ వర్గాన్ని చేర్చు',
@@ -2219,6 +2256,7 @@ $messages['te'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|పేజీ|పేజీలు}}',
 	'coll-printable_version_pdf' => 'PDF కూర్పు',
 	'coll-show_collection' => 'పుస్తకముని చూపించు',
+	'coll-suggest_empty' => 'ఖాళీ',
 );
 
 /** Tetum (Tetun) */
