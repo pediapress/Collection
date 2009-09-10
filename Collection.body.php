@@ -1092,8 +1092,16 @@ EOS
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 			'writer' => $wgRequest->getVal( 'writer' ),
 		), $timeout=false, $toFile=$tempfile );
-		if (!$headers) {
+		if ( !$headers ) {
 			$wgOut->showErrorPage( 'coll-download_notfound_title', 'coll-download_notfound_text' );
+			return;
+		}
+		if ( isset( $headers['error'] ) ) {
+			$wgOut->showErrorPage(
+				'coll-download_failed_title',
+				'coll-download_failed_text',
+				array( $headers['error'] )
+			);
 			return;
 		}
 		wfResetOutputBuffers();
@@ -1200,7 +1208,11 @@ EOS
 		$headers = array();
 		$response = self::post( $wgCollectionMWServeURL, $args, $errorMessage, $headers, $timeout, $toFile );
 		if ( $toFile ) {
-			return $headers;
+			if ( $headers ) {
+				return $headers;
+			} else {
+				return array( 'error' => $errorMessage );
+			}
 		}
 		
 		if ( !$response ) {
