@@ -122,6 +122,8 @@ Notes:
 	'coll-download_notfound_title'    => 'File not found',
 	'coll-download_notfound_text'     => 'The file you are trying to download does not exist:
 Maybe it has been deleted and needs to be regenerated.',
+	'coll-download_failed_title'      => 'Error during download',
+	'coll-download_failed_text'       => 'There was an error when downloading the file: $1',
 	'coll-is_cached'                  => '<ul><li>A cached version of the document has been found, so no rendering was necessary.
 <a href="$1">Force re-rendering.</a></li></ul>',
 	'coll-excluded-templates'         => '* Templates in category [[:Category:$1|$1]] have been excluded.',
