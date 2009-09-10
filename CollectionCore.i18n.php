@@ -608,6 +608,7 @@ $messages['el'] = array(
 	'coll-remove_page_tooltip' => 'Αφαίρεση της παρούσας σελίδας από το βιβλίο σας',
 	'coll-show_collection' => 'Εμφάνιση βιβλίου',
 	'coll-show_collection_tooltip' => 'Κάνετε κλικ για να επεξεργαστείτε/κατεβάσετε/παραγγείλετε το βιβλίο σας',
+	'coll-make_suggestions' => 'Πρόταση σελίδων',
 	'coll-suggest_empty' => 'άδειο',
 );
 
@@ -1225,9 +1226,12 @@ $messages['it'] = array(
 	'coll-print_export' => 'Stampa/esporta',
 	'coll-create_a_book' => 'Crea un libro',
 	'coll-create_a_book_tooltip' => 'Crea un libro o una raccolta di articoli',
+	'coll-book_creator' => 'Creatore di libri',
 	'coll-download_as' => 'Scarica come $1',
 	'coll-download_as_tooltip' => 'Scarica una versione $1 di questa pagina wiki',
 	'coll-disable' => 'disattiva',
+	'coll-book_creator_disable' => 'Disattiva il creatore di libri',
+	'coll-book_creator_disable_tooltip' => 'Smetti di usare il creatore di libri',
 	'coll-add_category' => 'Aggiungi questa categoria al tuo libro',
 	'coll-add_category_popup' => 'Aggiungi le pagine wiki nella categoria collegata al tuo libro',
 	'coll-add_category_tooltip' => 'Aggiungi tutte le pagine wiki di questa categoria al tuo libro',
@@ -1250,6 +1254,9 @@ $messages['it'] = array(
 	'coll-remove_page_tooltip' => 'Rimuovi la pagina wiki corrente dal tuo libro',
 	'coll-show_collection' => 'Mostra libro',
 	'coll-show_collection_tooltip' => 'Fai clic per modificare, scaricare o ordinare il tuo libro',
+	'coll-not_addable' => 'Questa pagina non può essere aggiunta',
+	'coll-make_suggestions_tooltip' => 'Mostra suggerimenti basati sulle pagine del proprio libro',
+	'coll-suggest_empty' => 'vuoto',
 );
 
 /** Japanese (日本語)
