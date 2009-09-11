@@ -71,10 +71,10 @@ $this->msgWiki('coll-book_text');
 $t = Title::newFromText(wfMsgForContent('coll-order_info_article'));
 if ( $t && $t->exists() ) { ?>
 			<div id="coll-more_info" style="display:none">
-				<a href="javascript:void(0)" onclick="coll_toggle_order_info(true);"><?php $this->msgWiki('coll-more_info') ?></a>
+				<a href="javascript:void(0)" onclick="coll_toggle_order_info(true);"><img src="<?php echo htmlspecialchars($mediapath . "collapse.png") ?>" width="10" height="10" alt="" />&nbsp;<?php $this->msg('coll-more_info') ?></a>
 			</div>
 			<div id="coll-hide_info" style="display:none">
-				<a href="javascript:void(0)" onclick="coll_toggle_order_info(false);"><?php $this->msgWiki('coll-hide_info') ?></a>
+				<a href="javascript:void(0)" onclick="coll_toggle_order_info(false);"><img src="<?php echo htmlspecialchars($mediapath . "expand.png") ?>" width="10" height="10" alt="" />&nbsp;<?php $this->msg('coll-hide_info') ?></a>
 			</div>
 <?php } else { ?>
 			<a href="<?php echo htmlspecialchars($partnerData['url']) ?>" target="_blank"><?php echo wfMsgHtml('coll-about_pp', htmlspecialchars($partnerData['name'])) ?></a>
