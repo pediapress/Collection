@@ -450,7 +450,7 @@ var collection_jQuery = jQuery.noConflict();
 		<td style="width: 45%; vertical-align: top;">
 			<div style="padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 				<strong style="font-size: 1.2em;"><?php $this->msg('coll-suggest_your_book') ?></strong>
-				(<a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>" title="<?php $this->msg('coll-show_collection_tooltip') ?>"><?php $this->msg('coll-suggest_show') ?></a>)
+				(<span id="coll-num_pages"><?php echo htmlspecialchars($this->data['num_pages']) ?></span> pages | <a href="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>" title="<?php $this->msg('coll-show_collection_tooltip') ?>"><?php $this->msg('coll-suggest_show') ?></a>)
 				<ul id="collectionMembers" style="list-style: none; margin-left: 0;">
 				<?php echo $this->getMemberList(); ?>
 				</ul>

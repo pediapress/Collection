@@ -92,6 +92,7 @@ class CollectionSuggest {
 		return array(
 			'suggestions_html' => $template->getProposalList(),
 			'members_html' => $template->getMemberList(),
+			'num_pages' => CollectionSession::countArticles(),
 		);
 	}
 
@@ -192,6 +193,7 @@ class CollectionSuggest {
 		$template->set( 'collection', $_SESSION['wsCollection'] );
 		$template->set( 'proposals', $proposals->getProposals( $wgCollectionMaxSuggestions ) );
 		$template->set( 'hasbans', $proposals->hasBans() );
+		$template->set( 'num_pages', CollectionSession::countArticles() );
 
 		$_SESSION['wsCollectionSuggestProp'] = $proposals->getLinkList();
 
