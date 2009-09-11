@@ -451,6 +451,7 @@ EOS
 						'name' => 'continue',
 					)
 				)
+				. '&nbsp;' . wfMsgHtml( 'coll-or' ) . '&nbsp;'
 				. Xml::element( 'input',
 					array(
 						'type' => 'submit',

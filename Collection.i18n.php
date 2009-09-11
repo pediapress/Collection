@@ -161,6 +161,7 @@ The list is updated whenever you click on the add or remove buttons.',
 
 	'right-collectionsaveasuserpage'  => 'Save books as user page',
 	'right-collectionsaveascommunitypage' => 'Save books as community page',
+	'coll-or'                         => 'or',
 );
 
 /** Message documentation (Message documentation)
