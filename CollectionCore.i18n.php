@@ -485,9 +485,12 @@ $messages['de'] = array(
 	'coll-print_export' => 'Drucken/exportieren',
 	'coll-create_a_book' => 'Buch erstellen',
 	'coll-create_a_book_tooltip' => 'Ein Buch oder eine Artikelsammlung erstellen',
+	'coll-book_creator' => 'Buchgenerator',
 	'coll-download_as' => 'Als $1 herunterladen',
 	'coll-download_as_tooltip' => 'Eine $1-Version dieser Wikiseite herunterladen',
 	'coll-disable' => 'deaktivieren',
+	'coll-book_creator_disable' => 'Buchgenerator deaktivieren',
+	'coll-book_creator_disable_tooltip' => 'Buchgenerator nicht verwenden',
 	'coll-add_category' => 'Alle Seiten aus dieser Kategorie deinem Buch hinzufügen',
 	'coll-add_category_popup' => 'Wikiseiten in verlinkter Kategorie zu deinem Buch hinzufügen',
 	'coll-add_category_tooltip' => 'Alle Wikiseiten dieser Kategorie deinem Buch hinzufügen',
@@ -510,6 +513,10 @@ $messages['de'] = array(
 	'coll-remove_page_tooltip' => 'Die aktuelle Wikiseite aus deinem Buch entfernen',
 	'coll-show_collection' => 'Buch zeigen',
 	'coll-show_collection_tooltip' => 'Klicken, um dein Buch zu bearbeiten/herunterzuladen/bestellen',
+	'coll-not_addable' => 'Diese Seite konnte nicht hinzugefügt werden',
+	'coll-make_suggestions' => 'Seiten vorschlagen',
+	'coll-make_suggestions_tooltip' => 'Vorschläge basierend auf den Seiten in deinem Buch anzeigen',
+	'coll-suggest_empty' => 'leer',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
@@ -531,6 +538,7 @@ $messages['de-formal'] = array(
 	'coll-remove_page_popup' => 'Verlinkte Wikiseite aus Ihrem Buch entfernen',
 	'coll-remove_page_tooltip' => 'Die aktuelle Wikiseite aus Ihrem Buch entfernen',
 	'coll-show_collection_tooltip' => 'Klicken, um Ihr Buch zu bearbeiten/herunterzuladen/bestellen',
+	'coll-make_suggestions_tooltip' => 'Vorschläge basierend auf den Seiten in Ihrem Buch anzeigen',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -1083,11 +1091,15 @@ $messages['hsb'] = array(
 $messages['hu'] = array(
 	'coll-print_export' => 'Nyomtatás/exportálás',
 	'coll-create_a_book' => 'Könyv készítése',
+	'coll-book_creator' => 'Könyvkészítő',
 	'coll-download_as' => 'Letöltés mint $1',
 	'coll-disable' => 'letiltás',
+	'coll-book_creator_disable' => 'Könyvkészítő letiltása',
+	'coll-book_creator_disable_tooltip' => 'Könyvkészítő használatának befejezése',
 	'coll-add_category' => 'Kategória hozzáadása a könyvedhez',
 	'coll-add_category_popup' => 'A hivatkozott kategória lapjainak hozzáadása a könyvhöz',
 	'coll-add_category_tooltip' => 'Ezen kategória összes lapjának hozzáadása a könyvhöz',
+	'coll-add_this_page' => 'Lap hozzáadása a könyvedhez',
 	'coll-add_page_popup' => 'A hivatkozott lap hozzáadása a könyvhöz',
 	'coll-add_page_tooltip' => 'A jelenlegi lap hozzáadása a könyvhöz',
 	'coll-bookscategory' => 'Könyvek',
@@ -1104,6 +1116,7 @@ $messages['hu'] = array(
 	'coll-remove_page_tooltip' => 'A jelenlegi lap eltávolítása a könyvből',
 	'coll-show_collection' => 'Könyv mutatása',
 	'coll-show_collection_tooltip' => 'Kattints ide a könyv szerkesztéséhez/letöltéséhez/megrendeléségez',
+	'coll-make_suggestions' => 'Lapok ajánlása',
 	'coll-suggest_empty' => 'üres',
 );
 
@@ -2020,9 +2033,12 @@ $messages['sah'] = array(
 	'coll-print_export' => 'Бэчээт/Экспорт',
 	'coll-create_a_book' => 'Кинигэни айарга',
 	'coll-create_a_book_tooltip' => 'Кинигэни эбэтэр ыстатыйалар хомуурунньуктарын айыы',
+	'coll-book_creator' => 'Кинигэ оҥоруу',
 	'coll-download_as' => 'Маннык $1 киллэр',
 	'coll-download_as_tooltip' => 'Бу биики-сирэй $1 барылын хачайдаан ылыы',
 	'coll-disable' => 'араарыы',
+	'coll-book_creator_disable' => 'Кинигэ оҥорооччуну араарыы',
+	'coll-book_creator_disable_tooltip' => 'Кинигэ онорооччуну туһаныма',
 	'coll-add_category' => 'Бу категорияны кинигэҕэр эбии',
 	'coll-add_category_popup' => 'Сигэнэр категорияттан сирэйдэри кинигэҕэ киллэр',
 	'coll-add_category_tooltip' => 'Бу категория биики сирэйдэрин кинигэҕэ киллэр',
@@ -2045,6 +2061,9 @@ $messages['sah'] = array(
 	'coll-remove_page_tooltip' => 'Бу биики сирэйи кинигэттэн сот',
 	'coll-show_collection' => 'Кинигэни көрдөр',
 	'coll-show_collection_tooltip' => 'Уларытарга маны баттаа/хачайдыырга/кинигэни сакаастыырга',
+	'coll-not_addable' => 'Бу сирэй эбиллэр кыаҕа суох',
+	'coll-make_suggestions' => 'Бу сирэйдэри туттуоххун сөп',
+	'coll-make_suggestions_tooltip' => 'Кинигэҥ баар сирэйдэригэр олоҕуран оҥоһуллубут туттуоххун сөп сирэйдэр тиһиктэрин көрдөр',
 );
 
 /** Slovak (Slovenčina)
@@ -2366,9 +2385,12 @@ $messages['vec'] = array(
 	'coll-print_export' => 'Stanpa/esporta',
 	'coll-create_a_book' => 'Crea un libro',
 	'coll-create_a_book_tooltip' => 'Crèa un libro o na racolta de articoli',
+	'coll-book_creator' => 'Creador de libri',
 	'coll-download_as' => 'Descarga come $1',
 	'coll-download_as_tooltip' => 'Descarga na version $1 de sta pagina wiki',
 	'coll-disable' => 'disativa',
+	'coll-book_creator_disable' => 'Destaca el creador de libri',
+	'coll-book_creator_disable_tooltip' => 'Desmeti de doparar el creador de libri',
 	'coll-add_category' => 'Zonta sta categoria al to libro',
 	'coll-add_category_popup' => 'Zonta al to libro le pagine in te le categorie riciamà',
 	'coll-add_category_tooltip' => 'Zonta tute le pagine wiki de sta categoria al to libro',
@@ -2391,6 +2413,10 @@ $messages['vec'] = array(
 	'coll-remove_page_tooltip' => 'Cava sta pagina wiki dal to libro',
 	'coll-show_collection' => 'Mostra libro',
 	'coll-show_collection_tooltip' => 'Struca el mouse par modificar, descargar o ordinar el to libro',
+	'coll-not_addable' => 'Sta pagina no se pol zontarla',
+	'coll-make_suggestions' => 'Sugerissi pagine',
+	'coll-make_suggestions_tooltip' => 'Fame védar dei sugerimenti basà su le pagine del me libro',
+	'coll-suggest_empty' => 'vodo',
 );
 
 /** Veps (Vepsan kel')
