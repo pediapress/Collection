@@ -754,16 +754,19 @@ $messages['et'] = array(
 $messages['eu'] = array(
 	'coll-create_a_book' => 'Liburu bat sortu',
 	'coll-download_as' => '$1 gisa jaitsi',
+	'coll-disable' => 'ezgaitu',
 	'coll-add_category' => 'Kategoria hau gehitu zure liburura gehitu',
 	'coll-bookscategory' => 'Liburuak',
 	'coll-clear_collection' => 'Liburua ezabatu',
 	'coll-clear_collection_confirm' => 'Benetan ezabatu nahi al duzu zure liburu osoa?',
+	'coll-help' => 'Laguntza',
 	'coll-helppage' => 'Help:Liburuak',
 	'coll-load_collection' => 'Liburua kargatu',
 	'coll-n_pages' => '{{PLURAL:$1|Orrialde 1|$1 orrialde}}',
 	'coll-printable_version_pdf' => 'PDF bertsioa',
 	'coll-show_collection' => 'Liburua erakutsi',
 	'coll-show_collection_tooltip' => 'Zure liburua editatzeko/deskargatzeko/eskatzeko egizu klik',
+	'coll-suggest_empty' => 'hutsik',
 );
 
 /** Persian (فارسی)
@@ -820,6 +823,7 @@ $messages['fi'] = array(
 	'coll-remove_page_tooltip' => 'Poista nykyinen wikisivu kirjastasi',
 	'coll-show_collection' => 'Näytä kirja',
 	'coll-show_collection_tooltip' => 'Napsauta muokataksesi, ladataksesi tai tilataksesi kirjasi',
+	'coll-suggest_empty' => 'tyhjä',
 );
 
 /** French (Français)
@@ -2088,6 +2092,7 @@ $messages['sah'] = array(
 	'coll-not_addable' => 'Бу сирэй эбиллэр кыаҕа суох',
 	'coll-make_suggestions' => 'Бу сирэйдэри туттуоххун сөп',
 	'coll-make_suggestions_tooltip' => 'Кинигэҥ баар сирэйдэригэр олоҕуран оҥоһуллубут туттуоххун сөп сирэйдэр тиһиктэрин көрдөр',
+	'coll-suggest_empty' => 'кураанах',
 );
 
 /** Slovak (Slovenčina)

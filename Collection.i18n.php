@@ -742,6 +742,8 @@ $messages['be-tarask'] = array(
 	'coll-notfound_text' => 'Немагчыма знайсьці старонку кнігі.',
 	'coll-download_notfound_title' => 'Файл ня знойдзены',
 	'coll-download_notfound_text' => 'Файл, які Вы спрабуеце загрузіць, не існуе. Магчыма, ён быў выдалены і патрабуе абнаўленьня.',
+	'coll-download_failed_title' => 'Памылка пад час загрузкі',
+	'coll-download_failed_text' => 'Адбылася памылка пад час загрузкі файла: $1',
 	'coll-is_cached' => '<ul><li>Была знойдзеная кэшаваная вэрсія гэтага дакумэнта, таму перамалёўка не спатрэбілася. <a href="$1">Запусьціць прымусовую перамалёўку.</a></li></ul>',
 	'coll-excluded-templates' => '* Шаблёны ў катэгорыі [[:Category:$1|$1]] былі выключаны.',
 	'coll-blacklisted-templates' => '* Шаблёны ў чорным сьпісе [[:$1]] былі выключаны.',
@@ -769,13 +771,14 @@ $messages['be-tarask'] = array(
 	'coll-suggest_your_book' => 'Ваша кніга',
 	'coll-suggest_show' => 'паказаць',
 	'coll-suggest_ban_tooltip' => 'Выдаліць гэту старонку са сьпісу прапаноў',
-	'coll-suggest_article_ban' => 'Старонка <em>$1</em> была выдаленая з прапаноў ($2).',
-	'coll-suggest_article_add' => 'Старонка <em>$1</em> была дададзеная ў Вашую кнігу ($2).',
-	'coll-suggest_article_remove' => 'Старонка <em>$1</em> была выдаленая з Вашай кнігі ($2).',
+	'coll-suggest_article_ban' => 'Старонка <strong>$1</strong> была выдаленая з прапаноў ($2).',
+	'coll-suggest_article_add' => 'Старонка <strong>$1</strong> была дададзеная ў Вашую кнігу ($2).',
+	'coll-suggest_article_remove' => 'Старонка <strong>$1</strong> была выдаленая з Вашай кнігі ($2).',
 	'coll-suggest_undo_tooltip' => 'Адмяніць гэтае дзеяньне',
 	'coll-suggest_undo' => 'адмяніць',
 	'right-collectionsaveasuserpage' => 'захаваньне кніг як старонак ўдзельніка',
 	'right-collectionsaveascommunitypage' => 'захаваньне кніг як старонак супольнасьці',
+	'coll-or' => 'ці',
 );
 
 /** Bulgarian (Български)
@@ -1869,6 +1872,7 @@ $messages['el'] = array(
 	'coll-book_creator_help' => 'Δείτε [[{{MediaWiki:Coll-helppage}}|τη σελίδα βοήθειας για τα βιβλία]] για περισσότερες πληροφορίες.',
 	'coll-start_book_creator' => 'Έναρξη κατάστασης βιβλίου',
 	'coll-book_creator_continue' => 'Συνέχιση χρήσης του δημιουργού βιβλίων',
+	'coll-book_creator_disable_text' => "Ο ''δημιουργός βιβλίων'' θα απενεργοποιηθεί και το βιβλίο πάνω στο οποίο δουλεύετε θα αφαιρεθεί.",
 	'coll-book_creator_text_article' => 'Κείμενο κατάστασης βιβλίου',
 	'coll-collection' => 'Βιβλίο',
 	'coll-collections' => 'Βιβλία',
@@ -1958,6 +1962,7 @@ $messages['el'] = array(
 	'coll-download_notfound_title' => 'Το αρχείο δε βρέθηκε',
 	'coll-download_notfound_text' => 'Το αρχείο που προσπαθείτε να κατεβάσετε δεν υπάρχει: Ίσως έχει διαγραφεί και πρέπει να επαναπαραχθεί.',
 	'coll-download_failed_title' => 'Σφάλμα κατά το κατέβασμα',
+	'coll-download_failed_text' => 'Προέκυψε σφάλμα κατά το κατέβασμα του αρχείου: $1',
 	'coll-is_cached' => '<ul><li>Μια αποθηκευμένη έκδοση του εγγράφου έχει βρεθεί, οπότε καμία μορφοποίηση δεν ήταν απαραίτητη. <a href="$1">Επιβολή επαναμορφοποίησης .</a></li></ul>',
 	'coll-excluded-templates' => '* Πρότυπα στην κατηγορία [[:Category:$1|$1]] έχουν εξαιρεθεί.',
 	'coll-blacklisted-templates' => '* Πρότυπα στην μαύρη λίστα [[:$1]] έχουν εξαιρεθεί.',
@@ -1974,9 +1979,13 @@ $messages['el'] = array(
 	'coll-more_info' => 'Εμφάνιση περισσότερων πληροφοριών',
 	'coll-hide_info' => 'Απόκρυψη πληροφοριών',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress απαίτηση για πληροφόρηση',
+	'coll-suggest_title' => 'Προτεινόμενες σελίδες για το βιβλίο σας',
+	'coll-suggest_intro_text' => 'Οι υποδείξεις βασίζονται στην τρέχουσα ρύθμιση βικισελίδων στο βιβλίο σας.
+Η λίστα θα ανανεώνεται κάθε φορά που θα κάνετε κλικ στα κουμπιά προσθήκης και αφαίρεσης.',
 	'coll-suggested_articles' => 'Υποδείξεις',
 	'coll-suggest_reset_bans' => 'ρύθμιση ξανά',
 	'coll-suggest_add_selected' => 'Προσθήκη επιλεγμένων σελίδων',
+	'coll-suggest_ban_selected' => 'Αφαίρεση επιλεγμένων σελίδων',
 	'coll-suggest_your_book' => 'Το βιβλίο σας',
 	'coll-suggest_show' => 'προβολή',
 	'coll-suggest_undo_tooltip' => 'Αναίρεση αυτής της ενέργειας',
@@ -2366,6 +2375,7 @@ $messages['eu'] = array(
 	'coll-collections' => 'Liburuak',
 	'coll-exclusion_category_title' => 'Inprimatzerakoan ez bildu',
 	'coll-print_template_prefix' => 'Inprimatu',
+	'coll-print_template_pattern' => '$1/Inprimatu',
 	'coll-unknown_subpage_title' => 'Azpiorrialde ezezaguna',
 	'coll-unknown_subpage_text' => '[[Special:Book|Liburu]] honen azpiorrialde hau ez da existitzen',
 	'coll-noscript_text' => '<h1>JavaScript beharrezkoa da!</h1>
@@ -2374,8 +2384,8 @@ Orrialde honek ez du egoki funtzionatuko JavaScript pizten ez den bitartean.</st
 	'coll-savedbook_template' => 'gordetako_liburua',
 	'coll-your_book' => 'Zure liburua',
 	'coll-download_title' => 'Jaitsi',
-	'coll-download_text' => 'Sarean ez dagoen bertsio bat jaisteko formatu bat aukeratu eta botoian klik egin.',
-	'coll-download_as_text' => '$1 formatuan dagoen bertsioa jaisteko botoia sakatu',
+	'coll-download_text' => 'Zure liburua jaisteko formatu bat aukeratu eta botoian klik egin.',
+	'coll-download_as_text' => 'Zure liburua $1 formatuan jaisteko botoia sakatu',
 	'coll-download' => 'Jaitsi',
 	'coll-format_label' => 'Formatua:',
 	'coll-remove' => 'Ezabatu',
@@ -2408,7 +2418,7 @@ Orrialde honek ez du egoki funtzionatuko JavaScript pizten ez den bitartean.</st
 	'coll-personal_collection_label' => 'Norberaren liburua:',
 	'coll-community_collection_label' => 'Komunitatearen liburua:',
 	'coll-save_collection' => 'Liburua gorde',
-	'coll-save_category' => '[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] kategorian gordetzen dira liburuak.',
+	'coll-save_category' => 'Gordetako liburu guztiak [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] kategorian gordetzen dira.',
 	'coll-overwrite_title' => 'Orrialdea bada.
 Gainetik idatzi?',
 	'coll-overwrite_text' => '[[:$1]] izena duen orrialde bat badago dagoeneko.
@@ -2458,6 +2468,11 @@ Kontakta ezazu, mesedez MediaWiki administratzailea.',
 	'coll-return_to' => '[[:$1]]era itzuli',
 	'coll-more_info' => 'Informazio gehiago erakutsi',
 	'coll-hide_info' => 'Informazioa ezkutatu',
+	'coll-suggest_your_book' => 'Zure liburua',
+	'coll-suggest_show' => 'erakutsi',
+	'coll-suggest_undo_tooltip' => 'Ekintza hau desegin',
+	'coll-suggest_undo' => 'desegin',
+	'coll-or' => 'edo',
 );
 
 /** Persian (فارسی)
@@ -2592,7 +2607,7 @@ Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
 	'coll-savedbook_template' => 'tallennettu_kirja',
 	'coll-your_book' => 'Sinun kirjasi',
 	'coll-download_title' => 'Lataa',
-	'coll-download_text' => 'Jos haluat tallentaa kirjan omalle koneellesi, valitse tiedostomuoto ja napsauta painiketta.',
+	'coll-download_text' => 'Ladataksesi kirjan, valitse tiedostomuoto ja napsauta painiketta.',
 	'coll-download_as_text' => 'Voit ladata itsellesi version $1-muodossa napsauttamalla painiketta.',
 	'coll-download' => 'Lataa',
 	'coll-format_label' => 'Muoto:',
@@ -2626,7 +2641,7 @@ Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
 	'coll-personal_collection_label' => 'Henkilökohtainen kirja:',
 	'coll-community_collection_label' => 'Yhteinen kirja:',
 	'coll-save_collection' => 'Tallenna kirja',
-	'coll-save_category' => 'Kirjat lisätään luokkaan [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Kaikki tallennetut kirjat lisätään luokkaan [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Sivu on olemassa.
 Korvataanko?',
 	'coll-overwrite_text' => 'Sivu nimellä [[:$1]] on jo olemassa.
@@ -2678,8 +2693,15 @@ Ota yhteys MediaWiki-ylläpitäjääsi.',
 	'coll-more_info' => 'Näytä lisätietoja',
 	'coll-hide_info' => 'Piilota tiedot',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPressin tilaustiedot',
+	'coll-suggest_add_selected' => 'Lisää valitut sivut',
+	'coll-suggest_ban_selected' => 'Poista valitut sivut',
+	'coll-suggest_your_book' => 'Kirjasi',
+	'coll-suggest_show' => 'näytä',
+	'coll-suggest_undo_tooltip' => 'Kumoa tämä toiminto',
+	'coll-suggest_undo' => 'kumoa',
 	'right-collectionsaveasuserpage' => 'Tallentaa kirjoja käyttäjäsivuna',
 	'right-collectionsaveascommunitypage' => 'Tallentaa kirjoja yhteisösivuina',
+	'coll-or' => 'tai',
 );
 
 /** French (Français)
@@ -7010,6 +7032,7 @@ $messages['sah'] = array(
 	'coll-suggest_undo' => 'төннөрөргө',
 	'right-collectionsaveasuserpage' => 'кинигэлэри кытааччы тус сирэйин курдук хаалларыы',
 	'right-collectionsaveascommunitypage' => 'кинигэлэри бөлөх тус сирэйин курдук хаалларыы',
+	'coll-or' => 'эбэтэр',
 );
 
 /** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
