@@ -452,7 +452,7 @@ class CollectionHooks {
 					)
 				)
 				. '&nbsp;' . wfMsgHtml( 'coll-show_collection' )
-				. ' (' . wfMsgHtml( 'coll-n_pages', $numArticles ) . ')'
+				. ' (' . wfMsgExt( 'coll-n_pages', array( 'parsemag', 'escape' ), $numArticles ) . ')'
 			);
 		} else {
 			return $sk->link(
@@ -467,7 +467,7 @@ class CollectionHooks {
 					)
 				)
 				. '&nbsp;' . wfMsgHtml( 'coll-show_collection' )
-					. ' (' . wfMsgHtml( 'coll-n_pages', $numArticles ) . ')',
+					. ' (' . wfMsgExt( 'coll-n_pages', array( 'parsemag', 'escape' ), $numArticles ) . ')',
 				array(
 					'rel' => 'nofollow',
 					'title' => wfMsg( 'coll-show_collection_tooltip' ),
