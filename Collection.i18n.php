@@ -252,6 +252,7 @@ The contents of this page appear in the "Order as a printed book" box on <nowiki
 	'coll-suggest_undo' => '{{Identical|Undo}}',
 	'right-collectionsaveasuserpage' => '{{doc-right|collectionsaveasuserpage}}',
 	'right-collectionsaveascommunitypage' => '{{doc-right|collectionsaveascommunitypage}}',
+	'coll-or' => '{{Identical|Or}}',
 );
 
 /** Faeag Rotuma (Faeag Rotuma)
@@ -4361,6 +4362,7 @@ L\'elenco viene aggiornato ogni qualvolta si fa clic sui pulsanti "aggiungi" o "
 	'coll-suggest_undo' => 'annulla',
 	'right-collectionsaveasuserpage' => 'Salva libri in pagine utente',
 	'right-collectionsaveascommunitypage' => 'Salva libri nelle pagine della comunità',
+	'coll-or' => 'o',
 );
 
 /** Japanese (日本語)
@@ -6102,6 +6104,7 @@ Kontakt din MediaWiki-administrator.',
 	'coll-more_info' => 'Vis mer informasjon',
 	'coll-hide_info' => 'Skjul informasjon',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestillingsinformasjon PediaPress',
+	'coll-suggest_show' => 'vis',
 	'right-collectionsaveasuserpage' => 'Lagre bøker som brukersider',
 );
 
