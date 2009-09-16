@@ -400,14 +400,16 @@ class CollectionHooks {
 				$captionMsg = 'coll-add_this_page';
 				$tooltipMsg = 'coll-add_page_tooltip';
 				$query = array( 'bookcmd' => 'add_article', 'arttitle' => $ptext, 'oldid' => $oldid );
-				$onclick = "collectionCall('AddArticle', ['removearticle', wgNamespaceNumber, wgTitle, $oldid]); return false;";
+				$onclick = "collectionCall('AddArticle', ['removearticle', wgNamespaceNumber, wgTitle, " .
+					Xml::encodeJsVar( $oldid ) . "]); return false;";
 			} else {
 				$id = 'coll-remove_article';
 				$icon = 'silk-remove.png';
 				$captionMsg = 'coll-remove_this_page';
 				$tooltipMsg = 'coll-remove_page_tooltip';
 				$query = array( 'bookcmd' => 'remove_article', 'arttitle' => $ptext, 'oldid' => $oldid );
-				$onclick = "collectionCall('RemoveArticle', ['addarticle', wgNamespaceNumber, wgTitle, $oldid]); return false;";
+				$onclick = "collectionCall('RemoveArticle', ['addarticle', wgNamespaceNumber, wgTitle, " .
+					Xml::encodeJsVar( $oldid ) . "]); return false;";
 			}
 		}
 

@@ -207,6 +207,9 @@ function wfAjaxCollectionAddCategory( $title='' ) {
 $wgAjaxExportList[] = 'wfAjaxCollectionAddCategory';
 
 function wfAjaxCollectionGetBookCreatorBoxContent( $ajaxHint='', $oldid=null ) {
+	if( !is_null( $oldid ) ) {
+		$oldid = intval( $oldid );
+	}
 	return CollectionHooks::getBookCreatorBoxContent( $ajaxHint, $oldid );
 }
 
