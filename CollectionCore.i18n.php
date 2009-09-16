@@ -752,6 +752,7 @@ $messages['et'] = array(
  * @author Theklan
  */
 $messages['eu'] = array(
+	'coll-print_export' => 'Inprimatu/esportatu',
 	'coll-create_a_book' => 'Liburu bat sortu',
 	'coll-download_as' => '$1 gisa jaitsi',
 	'coll-disable' => 'ezgaitu',
@@ -1793,9 +1794,12 @@ $messages['oc'] = array(
 	'coll-print_export' => 'Estampar / exportar',
 	'coll-create_a_book' => 'Crear un libre',
 	'coll-create_a_book_tooltip' => 'Crear un libre o una colleccion d’articles',
+	'coll-book_creator' => 'Creator de libres',
 	'coll-download_as' => 'Telecargat coma $1',
 	'coll-download_as_tooltip' => "Telecarga una version $1 d'aquesta pagina wiki",
 	'coll-disable' => 'desactivar',
+	'coll-book_creator_disable' => 'Desactivar lo creator de libre',
+	'coll-book_creator_disable_tooltip' => "Quitar d'utilizar lo creator de libre",
 	'coll-add_category' => 'Apondre una categoria a vòstre libre',
 	'coll-add_category_popup' => 'Apondre las paginas de la categoria ligada a vòstre libre',
 	'coll-add_category_tooltip' => "Apondre totes los articles d'aquesta categoria a vòstre libre",
@@ -1818,6 +1822,10 @@ $messages['oc'] = array(
 	'coll-remove_page_tooltip' => 'Levar la pagina correnta de vòstre libre',
 	'coll-show_collection' => 'Afichar lo libre',
 	'coll-show_collection_tooltip' => 'Clicatz per modificar / telecargar / comandar vòstre libre',
+	'coll-not_addable' => 'Aquesta pagina pòt pas èsser aponduda',
+	'coll-make_suggestions' => 'Suggerir de paginas',
+	'coll-make_suggestions_tooltip' => 'Far veire las suggestions fondadas sus las paginas dins vòstre libre',
+	'coll-suggest_empty' => 'void',
 );
 
 /** Ossetic (Иронау)
