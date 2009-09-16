@@ -278,6 +278,12 @@ function wfAjaxCollectionClear() {
 
 $wgAjaxExportList[] = 'wfAjaxCollectionClear';
 
+/**
+ * Backend of several following SAJAX function handlers...
+ * @param String $action provided by the specific handlers internally
+ * @param String $article title passed in from client
+ * @return AjaxResponse with JSON-encoded array including HTML fragment.
+ */
 function wfCollectionSuggestAction( $action, $article ) {
 	wfLoadExtensionMessages( 'CollectionCore' );
 	wfLoadExtensionMessages( 'Collection' );
@@ -290,7 +296,8 @@ function wfCollectionSuggestAction( $action, $article ) {
 				'Book',
 				array('bookcmd' => 'suggest', 'undo' => $action, 'arttitle' => $article )
 			),
-			'onclick' => "collectionSuggestCall('UndoArticle', ['$action', '$article']); return false;",
+			'onclick' => "collectionSuggestCall('UndoArticle'," .
+				Xml::encodeJsVar( array( $action, $article ) ) . "); return false;",
 			'title' => wfMsg( 'coll-suggest_undo_tooltip' ),
 		),
 		wfMsg( 'coll-suggest_undo' )
