@@ -279,7 +279,7 @@ foreach($this->data['collection']['items'] as $index => $item) {
 		</noscript>
 		<img src="<?php echo htmlspecialchars($mediapath . "trans.png") ?>" width="10" height="10" alt="" />
 		<strong class="title sortableitem" style="margin-left: 0.2em;"><?php echo htmlspecialchars($item['title']) ?></strong>
-		<a class="makeVisible" <?php if (!isset($this->data['is_ajax'])) { echo 'style="display:none"'; } ?> onclick="return coll_rename_chapter(<?php echo intval( $index ) . ', \'' . $item['title'] . '\''; ?>)" href="javascript:void(0)">[<?php $this->msg('coll-rename') ?>]</a>
+		<a class="makeVisible" <?php if (!isset($this->data['is_ajax'])) { echo 'style="display:none"'; } ?> onclick="<?php echo htmlspecialchars('return coll_rename_chapter(' . intval($index) . ', ' . Xml::encodeJsVar($item['title']) . ')') ?>" href="javascript:void(0)">[<?php $this->msg('coll-rename') ?>]</a>
 	</li>
 	<?php }
 } ?>
@@ -482,9 +482,9 @@ var collection_jQuery = jQuery.noConflict();
 		$url = $title->getLocalUrl();
 		$out .= '<li style="margin-bottom: 10px; padding: 4px 4px; background-color: #ddddff; font-size: 1.4em; font-weight: bold;">';
 		$out .= '<noscript><input type="checkbox" value="' . htmlspecialchars($artName) . '" name="articleList[]" /></noscript>';
-		$out .= '<a onclick="collectionSuggestCall(\'AddArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'add' => $artName))) . '" title="' . wfMsgHtml('coll-add_this_page') . '"><img src="' . htmlspecialchars($mediapath . 'silk-add.png') . '" width="16" height="16" alt=""></a> ';
-		$out .= '<a onclick="collectionSuggestCall(\'BanArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'ban' => $artName))) . '" title="' . wfMsgHtml('coll-suggest_ban_tooltip') . '"><img src="' . htmlspecialchars($mediapath . 'silk-cancel.png') . '" width="16" height="16" alt=""></a> ';
-		$out .= '<a href="' . $url . '" title="' . $artName . '">' . $artName . '</a>';
+		$out .= '<a onclick="' . htmlspecialchars('collectionSuggestCall("AddArticle", ' . Xml::encodeJsVar(array($artName)) . '); return false;') . '" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'add' => $artName))) . '" title="' . wfMsgHtml('coll-add_this_page') . '"><img src="' . htmlspecialchars($mediapath . 'silk-add.png') . '" width="16" height="16" alt=""></a> ';
+		$out .= '<a onclick="' . htmlspecialchars('collectionSuggestCall("BanArticle", ' . Xml::encodeJsVar(array($artName)) . '); return false;') . '" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'ban' => $artName))) . '" title="' . wfMsgHtml('coll-suggest_ban_tooltip') . '"><img src="' . htmlspecialchars($mediapath . 'silk-cancel.png') . '" width="16" height="16" alt=""></a> ';
+		$out .= '<a href="' . $url . '" title="' . htmlspecialchars($artName) . '">' . htmlspecialchars($artName) . '</a>';
 		//$out .= ' ' . $prop[0]['val'];
 		$out .= '</li>';
 
@@ -494,8 +494,8 @@ var collection_jQuery = jQuery.noConflict();
 			$url = str_replace(" ", "_", $url);
 			$out .= '<li style="padding-left: 4px;">';
 			$out .= '<noscript><input type="checkbox" value="' . htmlspecialchars($artName) . '" name="articleList[]" /></noscript>';
-			$out .= '<a onclick="collectionSuggestCall(\'AddArticle\', [\'' . $artName . '\']); return false;" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'add' => $artName))) . '" title="' . wfMsgHtml('coll-add_this_page') . '"><img src="' . htmlspecialchars($mediapath . 'silk-add.png') . '" width="16" height="16" alt=""></a> ';
-			$out .= '<a href="' . $url . '" title="' . $artName . '">' . $artName . '</a>';
+			$out .= '<a onclick="' . htmlspecialchars('collectionSuggestCall("AddArticle", ' . Xml::encodeJsVar(array($artName)) . '); return false;') . '" href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array('bookcmd' => 'suggest', 'add' => $artName))) . '" title="' . wfMsgHtml('coll-add_this_page') . '"><img src="' . htmlspecialchars($mediapath . 'silk-add.png') . '" width="16" height="16" alt=""></a> ';
+			$out .= '<a href="' . htmlspecialchars($url) . '" title="' . htmlspecialchars($artName) . '">' . htmlspecialchars($artName) . '</a>';
 			//$out .= ' ' . $prop[$i]['val'];
 			$out .= '</li>';
 		}
@@ -515,9 +515,9 @@ var collection_jQuery = jQuery.noConflict();
 		for ($i = 0; $i < $num; $i++) {
 			$artName = $coll['items'][$i]['title'];
 			if ($coll['items'][$i]['type'] == 'article') {
-			  $out .= '<li><a href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array( 'bookcmd' => 'suggest', 'remove' => $artName))) . '" onclick="collectionSuggestCall(\'RemoveArticle\', [\'' . $artName . '\']); return false;" title="' . wfMsgHtml('coll-remove_this_page') . '"><img src="'.htmlspecialchars($mediapath . 'remove.png').'" width="10" height="10" alt=""></a> ';
+			  $out .= '<li><a href="' . htmlspecialchars(SkinTemplate::makeSpecialUrl('Book', array( 'bookcmd' => 'suggest', 'remove' => $artName))) . '" onclick="' . htmlspecialchars('collectionSuggestCall("RemoveArticle", ' . Xml::encodeJsVar(array($artName)) . '); return false;') . '" title="' . wfMsgHtml('coll-remove_this_page') . '"><img src="'.htmlspecialchars($mediapath . 'remove.png').'" width="10" height="10" alt=""></a> ';
 				$out .= '<a href="' . $coll['items'][$i]['url'] . '" title="' . $artName . '">' . $artName . '</a></li>';
-	    		}
+			}
 		}
 
 		return $out;
