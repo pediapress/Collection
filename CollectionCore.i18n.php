@@ -1925,7 +1925,7 @@ $messages['pt'] = array(
 	'coll-clear_collection_tooltip' => 'Remover todas as páginas wiki do seu livro atual',
 	'coll-help' => 'Ajuda',
 	'coll-help_tooltip' => 'Mostrar ajuda sobre criação de livros',
-	'coll-helppage' => 'Help:Livros',
+	'coll-helppage' => 'Ajuda:Livros',
 	'coll-load_collection' => 'Carregar livro',
 	'coll-load_collection_tooltip' => 'Carregar este livro como o seu livro atual',
 	'coll-n_pages' => '$1 {{PLURAL:$1|página|páginas}}',
@@ -1935,6 +1935,7 @@ $messages['pt'] = array(
 	'coll-remove_page_tooltip' => 'Remover a página wiki atual do seu livro',
 	'coll-show_collection' => 'Mostrar livro',
 	'coll-show_collection_tooltip' => 'Clique para editar/descarregar/encomendar o seu livro',
+	'coll-suggest_empty' => 'vazio',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
