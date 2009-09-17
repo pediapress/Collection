@@ -76,7 +76,6 @@ class SpecialCollection extends SpecialPage {
 				CollectionSession::enable();
 				$wgOut->redirect( $title->getFullURL() );
 				return;
-
 			case 'stop_book_creator':
 				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
 				if ( is_null( $title ) || $title->equals( $wgTitle ) ) {
@@ -317,6 +316,8 @@ class SpecialCollection extends SpecialPage {
 	function renderBookCreatorPage( $referer ) {
 		global $wgOut;
 		global $wgScriptPath;
+		global $wgTitle;
+		global $wgUser;
 
 		$this->setHeaders();
 		$wgOut->setPageTitle( wfMsg( 'coll-book_creator' ) );
@@ -359,6 +360,12 @@ class SpecialCollection extends SpecialPage {
 EOS
 		;
 
+		$title = Title::newFromText( $referer );
+		if ( is_null( $title ) || $title->equals( $wgTitle ) ) {
+			$title = Title::newMainPage();
+		}
+		$sk = $wgUser->getSkin();
+
 		$wgOut->addHTML(
 			Xml::tags( 'div',
 				array(
@@ -386,18 +393,15 @@ EOS
 					array(
 						'class' => 'collection-button cancel',
 					),
-					Xml::element( 'a',
+					$sk->link(
+						$title,
+						wfMsgHtml( 'coll-cancel' ),
 						array(
-							'href' => SkinTemplate::makeSpecialUrl(
-								'Book', 
-								array(
-									'bookcmd' => 'stop_book_creator',
-									'referer' => $referer,
-								)
-						 	),
-							// TODO: title
+							'rel' => 'nofollow',
+							// TOOD: title
 						),
-						wfMsg( 'coll-cancel' )
+						array(),
+						array( 'known', 'noclasses' )
 					)
 				)
 				. Xml::element( 'div',
