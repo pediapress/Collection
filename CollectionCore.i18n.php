@@ -685,6 +685,7 @@ $messages['es'] = array(
 	'coll-download_as_tooltip' => 'Descargar una versión $1 de esta página wiki',
 	'coll-disable' => 'deshabilitar',
 	'coll-book_creator_disable' => 'Deshabilitar creador de libro',
+	'coll-book_creator_disable_tooltip' => 'Dejar de usar el creador de libro',
 	'coll-add_category' => 'Añadir esta categoría a tu libro',
 	'coll-add_category_popup' => 'Agregar páginas wiki en categoría vinculada a tu libro',
 	'coll-add_category_tooltip' => 'Agregar todas las páginas wiki en esta categoría a tu libro',
