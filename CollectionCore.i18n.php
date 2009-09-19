@@ -1943,6 +1943,7 @@ $messages['pt'] = array(
  * @author Eduardo.mps
  * @author Heldergeovane
  * @author Jorge Morais
+ * @author Luckas Blade
  */
 $messages['pt-br'] = array(
 	'coll-print_export' => 'Imprimir/Exportar',
@@ -1973,6 +1974,10 @@ $messages['pt-br'] = array(
 	'coll-remove_page_tooltip' => 'Remover a página wiki atual do seu livro',
 	'coll-show_collection' => 'Mostrar livro',
 	'coll-show_collection_tooltip' => 'Clique para editar/baixar/encomendar o seu livro',
+	'coll-not_addable' => 'Esta página não pode ser adicionada',
+	'coll-make_suggestions' => 'Sugerir páginas',
+	'coll-make_suggestions_tooltip' => 'Mostrar sugestões baseadas nas páginas do seu livro',
+	'coll-suggest_empty' => 'vazio',
 );
 
 /** Romanian (Română)
@@ -2470,8 +2475,12 @@ $messages['vec'] = array(
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
+	'coll-create_a_book' => 'Säta kirj',
 	'coll-bookscategory' => 'Kirjad',
+	'coll-help' => 'Abu',
 	'coll-helppage' => 'Help:Kirjad',
+	'coll-printable_version_pdf' => 'PDF-versii',
+	'coll-suggest_empty' => "pall'az",
 );
 
 /** Vietnamese (Tiếng Việt)
