@@ -1272,6 +1272,7 @@ $messages['is'] = array(
 /** Italian (Italiano)
  * @author BrokenArrow
  * @author Darth Kule
+ * @author Melos
  */
 $messages['it'] = array(
 	'coll-print_export' => 'Stampa/esporta',
@@ -1292,7 +1293,7 @@ $messages['it'] = array(
 	'coll-bookscategory' => 'Libri',
 	'coll-clear_collection' => 'Svuota libro',
 	'coll-clear_collection_confirm' => 'Si desidera veramente pulire completamente il proprio libro?',
-	'coll-clear_collection_tooltip' => 'Remuovi tutte le pagine wiki dal tuo libro corrente',
+	'coll-clear_collection_tooltip' => 'Rimuovi tutte le pagine wiki dal tuo libro corrente',
 	'coll-help' => 'Aiuto',
 	'coll-help_tooltip' => "Mostra l'aiuto sulla creazione di libri",
 	'coll-helppage' => 'Help:Libri',
@@ -1910,6 +1911,7 @@ $messages['ps'] = array(
 
 /** Portuguese (Português)
  * @author 555
+ * @author Crazymadlover
  * @author Giro720
  * @author Malafaya
  * @author Waldir
@@ -1933,7 +1935,7 @@ $messages['pt'] = array(
 	'coll-clear_collection_tooltip' => 'Remover todas as páginas wiki do seu livro atual',
 	'coll-help' => 'Ajuda',
 	'coll-help_tooltip' => 'Mostrar ajuda sobre criação de livros',
-	'coll-helppage' => 'Ajuda:Livros',
+	'coll-helppage' => 'Help:Livros',
 	'coll-load_collection' => 'Carregar livro',
 	'coll-load_collection_tooltip' => 'Carregar este livro como o seu livro atual',
 	'coll-n_pages' => '$1 {{PLURAL:$1|página|páginas}}',
@@ -2498,9 +2500,12 @@ $messages['vi'] = array(
 	'coll-print_export' => 'In/xuất khẩu',
 	'coll-create_a_book' => 'Tạo một quyển sách',
 	'coll-create_a_book_tooltip' => 'Tạo một cuốn sách hoặc sưu tập trang',
+	'coll-book_creator' => 'Bộ tạo sách',
 	'coll-download_as' => 'Tải về dưới dạng $1',
 	'coll-download_as_tooltip' => 'Tải xuống một phiên bản $1 của trang wiki này',
 	'coll-disable' => 'tắt',
+	'coll-book_creator_disable' => 'Tắt bộ tạo sách',
+	'coll-book_creator_disable_tooltip' => 'Ngừng sử dụng bộ tạo sách',
 	'coll-add_category' => 'Thêm thể loại này vào cuốn sách của bạn',
 	'coll-add_category_popup' => 'Thêm vào sách những trang wiki thuộc thể loại được liên kết',
 	'coll-add_category_tooltip' => 'Thêm vào sách các trang wiki thuộc thể loại được liên kết',
@@ -2523,6 +2528,10 @@ $messages['vi'] = array(
 	'coll-remove_page_tooltip' => 'Bỏ trang wiki này ra khỏi sách',
 	'coll-show_collection' => 'Xem sách',
 	'coll-show_collection_tooltip' => 'Nhấn chuột để sửa đổi, tải xuống, hay đặt sách của bạn',
+	'coll-not_addable' => 'Trang này không thêm được',
+	'coll-make_suggestions' => 'Đề nghị trang',
+	'coll-make_suggestions_tooltip' => 'Hiện đề nghị dựa trên các trang trong cuốn sách',
+	'coll-suggest_empty' => 'trống',
 );
 
 /** Volapük (Volapük)
