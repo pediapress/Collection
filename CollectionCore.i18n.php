@@ -992,9 +992,12 @@ $messages['he'] = array(
 	'coll-print_export' => 'הדפסה/ייצוא',
 	'coll-create_a_book' => 'יצירת ספר',
 	'coll-create_a_book_tooltip' => 'יצירת ספר או אוסף דפים',
+	'coll-book_creator' => 'מצב ספר',
 	'coll-download_as' => 'הורדה כ־$1',
 	'coll-download_as_tooltip' => 'הורדת גרסת $1 של דף ויקי זה',
 	'coll-disable' => 'ביטול',
+	'coll-book_creator_disable' => 'ביטול מצב ספר',
+	'coll-book_creator_disable_tooltip' => 'הפסקת השימוש במצב ספר',
 	'coll-add_category' => 'הוספת קטגוריה זו לספר שלכם',
 	'coll-add_category_popup' => 'הוספת כל הדפים בקטגוריה המקושרת לספר שלכם',
 	'coll-add_category_tooltip' => 'הוספת כל הדפים בקטגוריה זו לספר שלכם',
@@ -1017,6 +1020,10 @@ $messages['he'] = array(
 	'coll-remove_page_tooltip' => 'הסרת דף הוויקי הנוכחי מהספר שלך',
 	'coll-show_collection' => 'הצגת ספר',
 	'coll-show_collection_tooltip' => 'עריכת/הורדת/הזמנת הספר שלך',
+	'coll-not_addable' => 'לא ניתן להוסיף דף זה',
+	'coll-make_suggestions' => 'הצעת דפים',
+	'coll-make_suggestions_tooltip' => 'הצגת הצעות המבוססות על הדפים הנמצאים בספר',
+	'coll-suggest_empty' => 'ריק',
 );
 
 /** Hindi (हिन्दी)
