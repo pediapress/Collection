@@ -2149,6 +2149,7 @@ $messages['es'] = array(
 	'coll-book_creator_help' => 'Ver [[{{MediaWiki:Coll-helppage}}|la página de ayuda acerca de los libros]] para mayor información.',
 	'coll-start_book_creator' => 'Comenzar creador de libro',
 	'coll-book_creator_continue' => 'Continuar usando creador de libro',
+	'coll-book_creator_disable_text' => "''Creador de libros'' se descargará y el libro en que estás trabajando será removido.",
 	'coll-book_creator_text_article' => 'Texto en modo libro',
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libros',
@@ -2237,6 +2238,8 @@ Notas:
 	'coll-notfound_text' => 'No se encuentra la página de libro.',
 	'coll-download_notfound_title' => 'Archivo no encontrado',
 	'coll-download_notfound_text' => 'El archivo que estás tratando de descargar no existe: Puede ser que ha sido borrado y necesita ser regenerado.',
+	'coll-download_failed_title' => 'Error durante descarga',
+	'coll-download_failed_text' => 'Hubo un error cuando se descargaba el archivo: $1',
 	'coll-is_cached' => '<ul><li>Se ha encontrado una versión procesada del documento, por lo que no es necesario procesarlo. <a href="$1">Forzar reprocesado.</a></li></ul>',
 	'coll-excluded-templates' => '* Se han excluido las plantillas de la categoría [[:Category:$1|$1]].',
 	'coll-blacklisted-templates' => '* Se han excluido las plantillas [[:$1]] por estar en la lista negra.',
@@ -6464,8 +6467,11 @@ $messages['ps'] = array(
 	'coll-save_collection_title' => 'خپل غونډ خوندي او شريک کول',
 	'coll-yes' => 'هو',
 	'coll-no' => 'نه',
+	'coll-update' => 'اوسمهاله کول',
 	'coll-notfound_title' => 'غونډ و نه موندلای شو',
 	'coll-about_pp' => 'د $1 په اړه',
+	'coll-suggest_your_book' => 'ستاسې کتاب',
+	'coll-suggest_undo' => 'ناکړل',
 );
 
 /** Portuguese (Português)
@@ -7381,9 +7387,15 @@ Opombe:
  * @author Sasa Stefanovic
  * @author Јованвб
  * @author Михајло Анђелковић
+ * @author Обрадовић Горан
  */
 $messages['sr-ec'] = array(
 	'coll-desc' => '[[Special:Book|Направи књиге]]',
+	'coll-manage_your_book' => 'Уреди своју књигу',
+	'coll-book_creator_help' => 'Види [[{{MediaWiki:Coll-helppage}}|помоћну страну о књигама]] за више података.',
+	'coll-start_book_creator' => 'Започни уређивач књига',
+	'coll-book_creator_continue' => 'Настави са коришћењем уређивача књига',
+	'coll-book_creator_disable_text' => "''Уређивач књига'' ће бити онемогућен а књига на којој радите ће бити уклоњена.",
 	'coll-collection' => 'Књига',
 	'coll-collections' => 'Књиге',
 	'coll-exclusion_category_title' => 'Изузми при штампању',
@@ -7391,6 +7403,10 @@ $messages['sr-ec'] = array(
 	'coll-print_template_pattern' => '$1/Штампа',
 	'coll-unknown_subpage_title' => 'Непозната подстрана',
 	'coll-unknown_subpage_text' => 'Ова подстрана [[Special:Book|књиге]] не постоји',
+	'coll-couldnotaddarticle_title' => 'Додавање вики стране није успело',
+	'coll-couldnotaddarticle_msg' => 'Додавање вики странице није могуће.',
+	'coll-couldnotremovearticle_title' => 'Уклањање вики странице није могуће',
+	'coll-couldnotremovearticle_msg' => 'Вики страницу није могуће уклонити.',
 	'coll-noscript_text' => '<h1>Јаваскрипт је неопходан!</h1>
 <strong>Ваш бровзер не подржава јаваскрипт, или је јаваскрипт искључен.
 Ова страница неће радити исправно без јаваскрипта.</strong>',
@@ -7468,6 +7484,8 @@ $messages['sr-ec'] = array(
 	'coll-notfound_text' => 'Не могу да нађем страну књиге.',
 	'coll-download_notfound_title' => 'Фајл није пронађен',
 	'coll-download_notfound_text' => 'Фајл који покушавате да преузмете не постоји: могуће је да је је обрисан и мора бити поново направљен.',
+	'coll-download_failed_title' => 'Грешка приликом скидања',
+	'coll-download_failed_text' => 'Јавила се грешка приликом скидања фајла: $1',
 	'coll-is_cached' => '<ul><li>Израђена верзија документа је пронађена, тако да израђивање није неопходно. <a href="$1">Наметни поновно израђивање.</a></li></ul>',
 	'coll-excluded-templates' => '* Шаблони у категорији [[:Category:$1|$1]] су искључени.',
 	'coll-blacklisted-templates' => '* Шаблони на црној листи [[:$1]] су искључени.',
@@ -7483,6 +7501,11 @@ $messages['sr-ec'] = array(
 	'coll-return_to' => 'Врати на [[:$1]]',
 	'coll-more_info' => 'Покажи више информација',
 	'coll-hide_info' => 'Склони информације',
+	'coll-suggest_ban_selected' => 'Уклони одабране стране',
+	'coll-suggest_your_book' => 'Твоја књига',
+	'coll-suggest_undo_tooltip' => 'Поништи ову акцију',
+	'coll-suggest_undo' => 'врати',
+	'coll-or' => 'или',
 );
 
 /** Serbian Latin ekavian (Srpski (latinica))

@@ -708,7 +708,9 @@ $messages['es'] = array(
 	'coll-remove_page_tooltip' => 'Remover la página wiki actual de tu libro',
 	'coll-show_collection' => 'Mostrar libro',
 	'coll-show_collection_tooltip' => 'Haz click para editar/descargar/ordenar tu libro',
+	'coll-not_addable' => 'esta página no puede ser agregada',
 	'coll-make_suggestions' => 'Sugerir páginas',
+	'coll-make_suggestions_tooltip' => 'Mostrar sugerencias basadas en las páginas de su libro',
 	'coll-suggest_empty' => 'vacío',
 );
 
@@ -1907,6 +1909,7 @@ $messages['ps'] = array(
 	'coll-printable_version_pdf' => 'د PDF په بڼه',
 	'coll-remove_this_page' => 'دا مخ له کتاب نه ليرې کول',
 	'coll-show_collection' => 'کتاب ښکاره کول',
+	'coll-suggest_empty' => 'تش',
 );
 
 /** Portuguese (Português)
@@ -2550,6 +2553,13 @@ $messages['vo'] = array(
 	'coll-n_pages' => '{{PLURAL:$1|pad|pads}} $1',
 	'coll-printable_version_pdf' => 'fomam-PDF',
 	'coll-show_collection' => 'Jonön buki',
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'coll-help' => 'הילף',
 );
 
 /** Yue (粵語) */
