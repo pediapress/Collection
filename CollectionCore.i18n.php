@@ -927,6 +927,7 @@ $messages['grc'] = array(
 	'coll-download_as' => 'Καταφορτίζειν ὡς $1',
 	'coll-add_category' => 'Προστιθέναι κατηγορίαν εἰς τὸ βιβλίον σου',
 	'coll-bookscategory' => 'Βιβλία',
+	'coll-help' => 'Βοήθεια',
 	'coll-printable_version_pdf' => 'Ἔκδοσις PDF',
 );
 
