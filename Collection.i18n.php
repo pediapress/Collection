@@ -841,6 +841,7 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Jayantanth
  */
 $messages['bn'] = array(
 	'coll-collection' => 'বই',
@@ -851,11 +852,33 @@ $messages['bn'] = array(
 	'coll-your_book' => 'আপনার বই',
 	'coll-download_title' => 'ডাউনলোড',
 	'coll-download' => 'ডাউনলোড',
-	'coll-format_label' => 'বিন্যাস:',
+	'coll-format_label' => 'বিন্যাস/ফরম্যাট:',
 	'coll-remove' => 'অপসারণ',
 	'coll-show' => 'দেখাও',
+	'coll-move_to_top' => 'শীর্ষে তুলুন',
+	'coll-move_up' => 'উপরে তুলুন',
+	'coll-move_down' => 'নিচে নামান',
 	'coll-title' => 'শিরোনাম:',
+	'coll-subtitle' => 'উপশিরোনাম',
 	'coll-contents' => 'বিষয়বস্তু',
+	'coll-create_chapter' => 'পরিচ্ছেদ তৈরি করুন',
+	'coll-sort_alphabetically' => 'বর্ণানুক্রমিক সাজান',
+	'coll-no_such_category' => 'এমন কোনো বিষয়শ্রেণি নেই',
+	'coll-mwserve_failed_title' => 'রেন্ডার সার্ভার ত্রুটি',
+	'coll-mwserve_failed_msg' => 'রেন্ডার সার্ভারে একটি ত্রুটি ঘটেছে: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'সার্ভার থেকে ত্রুটি পাওয়া গেছে',
+	'coll-empty_collection' => 'শূন্য বই',
+	'coll-revision' => 'পরিমার্জন:$1',
+	'coll-save_collection_title' => 'সংরক্ষণ করুন এবং আপনার বই শেয়ার করুন',
+	'coll-save_collection_text' => 'আপনার বইয়ের জন্য একটি সংরক্ষণাগার অবস্থান বেছে নিন:',
+	'coll-personal_collection_label' => 'ব্যক্তিগত বই:',
+	'coll-community_collection_label' => 'সম্প্রদায়ের বই:',
+	'coll-save_collection' => 'বই সংরক্ষণ করুন',
+	'coll-save_category' => 'সমস্ত বই [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] বিষয়শ্রেণীতে সংরক্ষণ করা হয়।',
+	'coll-overwrite_title' => 'পাতাটি বর্তমানে আছে</br>
+আপনি কি ওভাররাইট করবেন?',
+	'coll-overwrite_text' => '[[:$1]] নামের একটি পাতা ইতিমধ্যে রয়েছে। </br>
+আপনি কি আপনার বই এই নামে প্রতিস্থাপন করতে চান?',
 	'coll-yes' => 'হ্যা',
 	'coll-no' => 'না',
 	'coll-cancel' => 'বাতিল',
