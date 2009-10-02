@@ -466,7 +466,7 @@ $messages['ar'] = array(
 هل تريد الكتابة على كتابك الحالي، إضافة المحتوى الجديد أو إلغاء تحميل هذا الكتاب؟',
 	'coll-overwrite' => 'كتابة عليها',
 	'coll-append' => 'انتظار',
-	'coll-cancel' => 'إلغاء',
+	'coll-cancel' => 'ألغِ',
 	'coll-update' => 'حدّث',
 	'coll-limit_exceeded_title' => 'الكتاب كبير جدا',
 	'coll-limit_exceeded_text' => 'كتابك كبير جدا.
@@ -4000,6 +4000,10 @@ $messages['hy'] = array(
  */
 $messages['ia'] = array(
 	'coll-desc' => '[[Special:Book|Crear libros]]',
+	'coll-book_creator_intro' => "<big>Con le ''creator de libros'' tu pote crear un libro continente paginas wiki de tu preferentia. Tu pote exportar le libro in differente formatos (per examplo PDF o ODF) o ordinar un copia imprimite.</big>",
+	'coll-manage_your_book' => 'Gerer tu libro',
+	'coll-book_creator_help' => 'Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super libros]] pro plus informationes.',
+	'coll-start_book_creator' => 'Comenciar le creator de libros',
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluder del impression',
