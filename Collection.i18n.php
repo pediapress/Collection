@@ -2162,6 +2162,8 @@ Bonvolu kontakti vian administranton de MediaWiki.',
  * @author Jatrobat
  * @author Lin linao
  * @author Locos epraix
+ * @author McDutchie
+ * @author Platonides
  * @author Remember the dot
  * @author Sanbec
  */
@@ -2260,7 +2262,7 @@ Notas:
 	'coll-notfound_title' => 'No se encuentra el libro',
 	'coll-notfound_text' => 'No se encuentra la página de libro.',
 	'coll-download_notfound_title' => 'Archivo no encontrado',
-	'coll-download_notfound_text' => 'El archivo que estás tratando de descargar no existe: Puede ser que ha sido borrado y necesita ser regenerado.',
+	'coll-download_notfound_text' => 'El archivo que estás tratando de descargar no existe: Puede ser que haya sido borrado y necesite ser regenerado.',
 	'coll-download_failed_title' => 'Error durante descarga',
 	'coll-download_failed_text' => 'Hubo un error cuando se descargaba el archivo: $1',
 	'coll-is_cached' => '<ul><li>Se ha encontrado una versión procesada del documento, por lo que no es necesario procesarlo. <a href="$1">Forzar reprocesado.</a></li></ul>',
@@ -2284,7 +2286,7 @@ Por favor, contacta con tu administrador MediaWiki.',
 La lista es actualizada cada vez que haces click en los botones de agregar o remover.',
 	'coll-suggested_articles' => 'Sugerencias',
 	'coll-suggest_reset_bans' => 'reestablecer',
-	'coll-suggest_reset_bans_tooltip' => 'Mostrar previamente sugerencias removidas',
+	'coll-suggest_reset_bans_tooltip' => 'Mostrar sugerencias previamente removidas',
 	'coll-suggest_add_selected' => 'Agregar páginas seleccionadas',
 	'coll-suggest_ban_selected' => 'Remover páginas seleccionadas',
 	'coll-suggest_your_book' => 'Tu libro',
@@ -4004,6 +4006,9 @@ $messages['ia'] = array(
 	'coll-manage_your_book' => 'Gerer tu libro',
 	'coll-book_creator_help' => 'Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super libros]] pro plus informationes.',
 	'coll-start_book_creator' => 'Comenciar le creator de libros',
+	'coll-book_creator_continue' => 'Continuar a usar le creator de libros',
+	'coll-book_creator_disable_text' => "Le ''creator de libros'' essera disactivate e le libro al qual tu labora essera removite.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Texto del creator de libros',
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluder del impression',
@@ -4091,6 +4096,8 @@ Notas:
 	'coll-notfound_text' => 'Non poteva trovar le pagina del libro.',
 	'coll-download_notfound_title' => 'File non trovate',
 	'coll-download_notfound_text' => 'Le file que tu tenta discargar non existe. Forsan illo ha essite delite e debe esser regenerate.',
+	'coll-download_failed_title' => 'Error durante le discargamento',
+	'coll-download_failed_text' => 'Il occurreva un error durante le discargamento del file: $1',
 	'coll-is_cached' => '<ul><li>Un version del documento ha essite trovate in le cache, ergo non esseva necessari facer un altere rendition. <a href="$1">Fortiar le re-rendition.</a></li></ul>',
 	'coll-excluded-templates' => '* Le patronos in le categoria [[:Category:$1|$1]] ha essite excludite.',
 	'coll-blacklisted-templates' => '* Le patronos in le lista nigre [[:$1]] ha essite excludite.',
@@ -4107,8 +4114,25 @@ Per favor contacta tu administrator de MediaWiki.',
 	'coll-more_info' => 'Monstrar plus informationes',
 	'coll-hide_info' => 'Celar informationes',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Commanda a PediaPress',
+	'coll-suggest_title' => 'Paginas suggerite pro tu libro',
+	'coll-suggest_intro_text' => 'Le suggestiones es basate super le collection actual de paginas wiki in tu libro.
+Le lista es actualisate cata vice que tu clicca super le buttones "adder" o "remover".',
+	'coll-suggested_articles' => 'Suggestiones',
+	'coll-suggest_reset_bans' => 'reinitialisar',
+	'coll-suggest_reset_bans_tooltip' => 'Monstrar suggestiones previemente removite',
+	'coll-suggest_add_selected' => 'Adder paginas seligite',
+	'coll-suggest_ban_selected' => 'Remover paginas seligite',
+	'coll-suggest_your_book' => 'Tu libro',
+	'coll-suggest_show' => 'monstrar',
+	'coll-suggest_ban_tooltip' => 'Remover iste pagina del lista de suggestiones',
+	'coll-suggest_article_ban' => 'Le pagina <strong>$1</strong> ha essite removite del suggestiones ($2).',
+	'coll-suggest_article_add' => 'Le pagina <strong>$1</strong> ha essite addite a tu libro ($2).',
+	'coll-suggest_article_remove' => 'Le pagina <strong>$1</strong> ha essite removite de tu libro ($2).',
+	'coll-suggest_undo_tooltip' => 'Disfacer iste action',
+	'coll-suggest_undo' => 'disfacer',
 	'right-collectionsaveasuserpage' => 'Immagazinar libros como pagina de usator',
 	'right-collectionsaveascommunitypage' => 'Immagazinar libros como pagina de communitate',
+	'coll-or' => 'o',
 );
 
 /** Indonesian (Bahasa Indonesia)
