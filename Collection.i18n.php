@@ -2222,7 +2222,7 @@ Esta página no funcionará correctamente mientras no esté habilitado.</strong>
 	'coll-empty_collection' => 'libro vacío',
 	'coll-revision' => 'Revisión: $1',
 	'coll-save_collection_title' => 'Guardar y compartir tu libro',
-	'coll-save_collection_text' => 'Escoger una localización:',
+	'coll-save_collection_text' => 'Escoge una localización:',
 	'coll-login_to_save' => 'Si quieres guardar libros para uso posterior, por favor [[Special:UserLogin|identifícate o crea una cuenta]].',
 	'coll-personal_collection_label' => 'libro personal:',
 	'coll-community_collection_label' => 'libro de la comunidad:',
@@ -2255,10 +2255,10 @@ Si no funciona, pulsa el botón de refrescar de tu navegador.</p>',
 	'coll-rendering_page' => '(página: $1)',
 	'coll-rendering_finished_title' => 'Proceso finalizado',
 	'coll-rendering_finished_text' => '<strong>Se ha generado el documento.</strong>
-<strong>[$1 Baja el archivo]</strong>.
+<strong>[$1 Descarga el archivo]</strong>.
 
 Notas:
-* ¿No estás satisfecho con el resultado? Mira [[{{MediaWiki:Coll-helppage}}|la página de ayuda sobre compilaciones]] para ver las  posibilidades de mejorarlo.',
+* ¿No estás satisfecho con el resultado? Mira [[{{MediaWiki:Coll-helppage}}|la página de ayuda sobre libros]] para ver las  posibilidades de mejorarlo.',
 	'coll-notfound_title' => 'No se encuentra el libro',
 	'coll-notfound_text' => 'No se encuentra la página de libro.',
 	'coll-download_notfound_title' => 'Archivo no encontrado',
