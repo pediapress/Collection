@@ -1947,6 +1947,7 @@ $messages['ps'] = array(
  * @author 555
  * @author Crazymadlover
  * @author Giro720
+ * @author Indech
  * @author Lijealso
  * @author Malafaya
  * @author Waldir
@@ -1985,6 +1986,7 @@ $messages['pt'] = array(
 	'coll-show_collection_tooltip' => 'Clique para editar/descarregar/encomendar o seu livro',
 	'coll-not_addable' => 'Esta página não pode ser adicionada',
 	'coll-make_suggestions' => 'Sugerir páginas',
+	'coll-make_suggestions_tooltip' => 'Mostrar sugestões baseadas nas páginas no seu livro',
 	'coll-suggest_empty' => 'vazio',
 );
 
