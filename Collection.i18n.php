@@ -169,6 +169,7 @@ The list is updated whenever you click on the add or remove buttons.',
  * @author Aotake
  * @author Bennylin
  * @author Darth Kule
+ * @author EugeneZelenko
  * @author Fryed-peach
  * @author Jon Harald Søby
  * @author Lloffiwr
@@ -192,6 +193,7 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-your_book' => '{{Identical|Books}}',
 	'coll-download_title' => '{{Identical|Download}}',
 	'coll-download' => '{{Identical|Download}}',
+	'coll-format_label' => '{{Identical|Format}}',
 	'coll-remove' => '{{Identical|Remove}}',
 	'coll-show' => '{{Identical|Show}}',
 	'coll-title' => '{{Identical|Title}}',
