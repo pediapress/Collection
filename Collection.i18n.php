@@ -5985,6 +5985,7 @@ De lijst wordt bijgewerkt als u op de knop 'toevoegen' of 'verwijderen' klikt.",
 $messages['nn'] = array(
 	'coll-desc' => '[[Special:Book|Opprett bøker]]',
 	'coll-book_creator_intro' => '<big>Ved hjelp av bokfunksjonen kan du laga ei bok utgjort av valfrie wikisider. Du kan eksportera boka til ulike format, til dømes PDF eller ODF, eller tinga ein trykt kopi.</big>',
+	'coll-manage_your_book' => 'Administrér boka di',
 	'coll-book_creator_help' => 'Sjå [[{{MediaWiki:Coll-helppage}}|hjelpesida om bøker]] for meir informasjon.',
 	'coll-start_book_creator' => 'Start bokfunksjonen',
 	'coll-book_creator_continue' => 'Hald fram med å bruka funksjonen for oppretting av bok',
@@ -6039,7 +6040,7 @@ Denne sida vil ikkje fungera på rett måte med mindre JavaScript er slege på.<
 	'coll-personal_collection_label' => 'Personleg bok:',
 	'coll-community_collection_label' => 'Fellesskapsbok:',
 	'coll-save_collection' => 'Lagra bok',
-	'coll-save_category' => 'Bøker er lagra i kategorien [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Alle lagra bøker vert lagra i kategorien [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Sida finst.
 Skriva over ho?',
 	'coll-overwrite_text' => 'Ei sida med namnet [[:$1]] finst frå før. 
