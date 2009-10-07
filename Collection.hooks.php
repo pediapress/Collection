@@ -38,6 +38,19 @@ class CollectionHooks {
 		return true;
 	}
 
+	function buildNavUrls( $skin, &$navUrls ) {
+		global $wgUser;
+		global $wgCollectionPortletForLoggedInUsersOnly;
+		
+		if( !$wgCollectionPortletForLoggedInUsersOnly || $wgUser->isLoggedIn() ) {
+			if( isset( $navUrls['print'] ) ) {
+				// We move this guy out to our own box
+				unset( $navUrls['print'] );
+			}
+		}
+		return true;
+	}
+	
 	/**
 	 * This function is the fallback solution for MediaWiki < 1.14
 	 * (where the hook SkinBuildSidebar does not exist)
@@ -147,6 +160,28 @@ class CollectionHooks {
 			);
 		}
 
+		// Move the 'printable' link into our section for consistency
+		$action = $wgRequest->getVal( 'action', 'view' );
+		if( $action == 'view' || $action == 'purge' ) {
+			global $wgOut;
+			if ( !$wgOut->isPrintable() ) {
+				$attribs = array(
+					'href' => $wgRequest->appendQuery( 'printable=yes' ),
+					'title' => $sk->titleAttrib( 't-print', 'withaccess' ),
+					'accesskey' => $sk->accesskey( 't-print' ),
+				);
+				if ( $attribs['title'] === false ) {
+					unset( $attribs['title'] );
+				}
+				if ( $attribs['accesskey'] === false ) {
+					unset( $attribs['accesskey'] );
+				}
+				$out .= Xml::tags( 'li',
+					array( 'id' => 't-print' ),
+					Xml::element( 'a', $attribs, wfMsg( 'printableversion' ) ) );
+			}
+		}
+		
 		$out .= Xml::closeElement( 'ul' );
 
 		return $out;
