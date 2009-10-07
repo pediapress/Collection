@@ -5136,11 +5136,12 @@ Di Leß weed neu opjebout, wann De op dä „Dobei donn“ udder dä „{{int:co
 );
 
 /** Cornish (Kernowek)
+ * @author Kernoweger
  * @author Kw-Moon
  */
 $messages['kw'] = array(
 	'coll-rename' => 'Dashenwel',
-	'coll-cancel' => 'Hedhi',
+	'coll-cancel' => 'Hedhy',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
