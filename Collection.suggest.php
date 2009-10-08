@@ -88,11 +88,13 @@ class CollectionSuggest {
 	 * @return (type string) html-code for the proposallist and the memberlist
 	 */
 	public static function refresh( $mode, $param ) {
+		global $wgLang;
+
 		$template = self::getCollectionSuggestTemplate( $mode, $param );
 		return array(
 			'suggestions_html' => $template->getProposalList(),
 			'members_html' => $template->getMemberList(),
-			'num_pages' => CollectionSession::countArticles(),
+			'num_pages' => wfMsgExt( 'coll-n_pages', 'parsemag', $wgLang->formatNum( CollectionSession::countArticles() ) ),
 		);
 	}
 
