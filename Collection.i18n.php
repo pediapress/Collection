@@ -391,6 +391,14 @@ $messages['am'] = array(
 	'coll-yes' => 'አዎ',
 );
 
+/** Aragonese (Aragonés)
+ * @author Juanpabl
+ */
+$messages['an'] = array(
+	'coll-suggest_undo_tooltip' => 'Desfer ista aczión',
+	'coll-suggest_undo' => 'desfer',
+);
+
 /** Arabic (العربية)
  * @author Antime
  * @author Ciphers
@@ -849,22 +857,30 @@ $messages['bn'] = array(
 	'coll-desc' => '[[Special:Book|বই তৈরি]]',
 	'coll-book_creator_intro' => "<big>''বই প্রস্তুতকারণ'' দিয়ে আপনি পছন্দের উইকি পাতাগুলো নিয়ে বই  তৈরি করতে পারেন। আপনি বিভিন্ন ফরমেটে আপনার বই এক্সপোর্ট করতে পারেন (যেমন PDF বা ODF) অথবা মুদ্রণ কপির জন্য অর্ডার দিতে পারেন।</big>",
 	'coll-manage_your_book' => 'বই ব্যবস্থাপনা',
+	'coll-book_creator_help' => 'আরও তথ্যের জন্য [[{{MediaWiki:Coll-helppage}}|বই সংক্রান্ত সহায়তা]] দেখুন।',
 	'coll-start_book_creator' => 'বই প্রস্তুতকারক আরম্ভ করো',
 	'coll-book_creator_continue' => 'বই প্রস্তুতকারক বহাল রাখো',
+	'coll-book_creator_disable_text' => "''বই প্রস্তুতকারক'' নিস্ক্রিয় করা হবে এবং আপনি যে বই নিয়ে কাজ করছেন তা অপসারণ করা হবে।",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/বই প্রস্তুতকারণ লেখ',
 	'coll-collection' => 'বই',
 	'coll-collections' => 'বইসমূহ',
 	'coll-exclusion_category_title' => 'মুদ্রণে বাদ রাখো',
 	'coll-print_template_prefix' => 'মুদ্রণ',
 	'coll-print_template_pattern' => '$1/মুদ্রণ',
 	'coll-unknown_subpage_title' => 'অজানা উপপাতা',
+	'coll-unknown_subpage_text' => '[[Special:Book|বই]] এর এই উপপাতাটি নাই।',
 	'coll-couldnotaddarticle_title' => 'উইকি পাতা যোগ করা যাচ্ছে না',
 	'coll-couldnotaddarticle_msg' => 'উইকি পাতা যোগ করা যাবে না।',
 	'coll-couldnotremovearticle_title' => 'উইকি পাতাটি অপসারণ করা যাচ্ছে না',
 	'coll-couldnotremovearticle_msg' => 'এই উইকি পাতা অপসারণ করা যাবে না।',
+	'coll-noscript_text' => '<h1>JavaScript প্রয়োজন!</h1>
+<strong>আপনার ব্রাউজার JavaScript সমর্থন করে না অথবা JavaScript নিস্ক্রিয় করা রয়েছে।
+JavaScript সক্রিয় না করা পর্যন্ত, এই পাতাটি ঠিক মত কাজ করবে না।</strong>',
 	'coll-savedbook_template' => 'সংরক্ষিত_বই',
 	'coll-your_book' => 'আপনার বই',
 	'coll-download_title' => 'ডাউনলোড',
 	'coll-download_text' => 'বই ডাউনলোড করতে ফরমেট পছন্দ করুন এবং বোতামে ক্লিক করুন।',
+	'coll-download_as_text' => '$1 ফরম্যাটে আপনার বইটি ডাউনলোড করতে বোতামটি ক্লিক করুন।',
 	'coll-download' => 'ডাউনলোড',
 	'coll-format_label' => 'বিন্যাস/ফরম্যাট:',
 	'coll-remove' => 'অপসারণ',
@@ -876,13 +892,16 @@ $messages['bn'] = array(
 	'coll-title' => 'শিরোনাম:',
 	'coll-subtitle' => 'উপশিরোনাম',
 	'coll-contents' => 'বিষয়বস্তু',
+	'coll-drag_and_drop' => 'উইকি পাতা এবং অধ্যায়ের ক্রম পুনরায় ঠিক করতে ড্র্যাগ এন্ড ড্রপ ব্যবহার করুন',
 	'coll-create_chapter' => 'পরিচ্ছেদ তৈরি করুন',
 	'coll-sort_alphabetically' => 'বর্ণানুক্রমিক সাজান',
 	'coll-rename' => 'নামান্তর',
 	'coll-new_chapter' => 'নতুন অধ্যায়ের নাম লিখুন',
 	'coll-rename_chapter' => 'অধ্যায়ের নতুন নাম লিখুন',
 	'coll-no_such_category' => 'এমন কোনো বিষয়শ্রেণি নেই',
+	'coll-notitle_title' => 'এই পাতার জন্য শিরোনামটি চিহ্নিত করা যাচ্ছে না।',
 	'coll-post_failed_title' => 'POST অনুরোধ ব্যর্থ',
+	'coll-post_failed_msg' => '$1 এর POST অনুরোধ ব্যর্থ হয়েছে ($2)।',
 	'coll-mwserve_failed_title' => 'রেন্ডার সার্ভার ত্রুটি',
 	'coll-mwserve_failed_msg' => 'রেন্ডার সার্ভারে একটি ত্রুটি ঘটেছে: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'সার্ভার থেকে ত্রুটি পাওয়া গেছে',
@@ -890,6 +909,7 @@ $messages['bn'] = array(
 	'coll-revision' => 'পরিমার্জন:$1',
 	'coll-save_collection_title' => 'সংরক্ষণ করুন এবং আপনার বই শেয়ার করুন',
 	'coll-save_collection_text' => 'আপনার বইয়ের জন্য একটি সংরক্ষণাগার অবস্থান বেছে নিন:',
+	'coll-login_to_save' => 'এই বইটি পরবর্তীতে ব্যবহার করতে চাইলে, অনুগ্রহ করে [[Special:UserLogin|প্রবেশ বা নতুন অ্যাকাউন্ট তৈরি করুন]]',
 	'coll-personal_collection_label' => 'ব্যক্তিগত বই:',
 	'coll-community_collection_label' => 'সম্প্রদায়ের বই:',
 	'coll-save_collection' => 'বই সংরক্ষণ করুন',
@@ -900,6 +920,8 @@ $messages['bn'] = array(
 আপনি কি আপনার বই এই নামে প্রতিস্থাপন করতে চান?',
 	'coll-yes' => 'হ্যা',
 	'coll-no' => 'না',
+	'coll-load_overwrite_text' => 'আপনার বইয়ে আগে থেকেই কিছু পাতা রয়েছে।
+আপনি কি বর্তমান বই দিয়ে তা প্রতিস্থাপন করবেন, নতুন কন্টেন্ট আগের কন্টেন্টের শেষে যোগ করবেন, নাকি এই বইটি লোড বাতিল করবেন?',
 	'coll-overwrite' => 'প্রতিস্থাপন',
 	'coll-append' => 'পরিশেষ যোগ',
 	'coll-cancel' => 'বাতিল',
@@ -908,27 +930,63 @@ $messages['bn'] = array(
 	'coll-limit_exceeded_text' => 'আপনার বইটি বেশি বড় হয়ে গেছে।
 নতুন কোনো পাতা যোগ করা সম্ভব নয়।',
 	'coll-rendering_title' => 'রেন্ডারিং',
+	'coll-rendering_text' => '<p><strong>আপনার বইটি তৈরি করা হচ্ছে অনুগ্রহ করে অপেক্ষা করুন।</strong></p>
+
+<p><strong>অগ্রগতি:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>এই পাতাটি কয়েক সেকেন্ড পরপর স্বয়ংক্রিয়ভাবে হালনাগাদ হবে।
+যদি তা না হয়, তাহলে আপনার ব্রাউজারের রিফ্রেস বোতামটি ক্লিক করুন।</p>',
 	'coll-rendering_status' => '<strong>অবস্থা:</strong> $1',
 	'coll-rendering_article' => '(উইকি পাতা: $1)',
 	'coll-rendering_page' => '(পাতা: $1)',
 	'coll-rendering_finished_title' => 'রেন্ডারিং সম্পন্ন হয়েছে',
+	'coll-rendering_finished_text' => '<strong>ডকুমেন্ট ফাইল তৈরি হয়ে গেছে।</strong>
+আপনার কম্পিউটারে <strong>[$1 ফাইলটি ডাউলোড করুন]</strong> ।
+
+টীকা:
+* আউটপুটে আপনি সন্তুষ্ট নন? উন্নয়নের সম্ভাবনা জানতে [[{{MediaWiki:Coll-helppage}}|বই সংক্রান্ত সহায়িকা]] দেখুন।',
 	'coll-notfound_title' => 'বই পাওয়া যায়নি',
 	'coll-notfound_text' => 'বইয়ের পাতা খুঁজে পাওয়া যায়নি।',
 	'coll-download_notfound_title' => 'ফাইল পাওয়া যায়নি',
+	'coll-download_notfound_text' => 'যে ফাইলটি আপনি ডাউনলোড করতে চাইছেন তা নাই:
+সম্ভবত ফাইলটি মুছে ফেলা হয়েছে নতুবা তৈরি করতে হবে।',
 	'coll-download_failed_title' => 'ডাউনলোডের সময় ত্রুটি',
+	'coll-download_failed_text' => 'যে ফাইলটি ডাউনলোড করতে ত্রুটি দেখা দিয়েছে: $1',
+	'coll-is_cached' => '<ul><li>ডকুমেন্টের ক্যাশকৃত সংস্করণ পাওয়া গেছে, তাই রেন্ডারিং এর প্রয়োজন নাই।
+<a href="$1">জোড় পূর্বক রি-রেন্ডারিং করুন।</a></li></ul>',
+	'coll-excluded-templates' => '* [[:Category:$1|$1]]  বিষয়শ্রেণীতে থাকা টেম্পলেট বাদ দেওয়া হয়েছে।',
+	'coll-blacklisted-templates' => '* টেম্পলেটের কালোতালিকা [[:$1]] বাদ দেওয়া হয়েছে।',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a> এ ফিরে যান</p>',
+	'coll-book_title' => 'মুদ্রিত বই হিসেবে অর্ডার দিন',
+	'coll-book_text' => 'আমাদের প্রিন্ট-অন-ডিমান্ড সহযোগী প্রতিষ্ঠানের কাছ থেকে মুদ্রিত বই সংগ্রহ করুন।',
 	'coll-order_from_pp' => '$1 থেকে বইয়ের অর্ডার দিন',
 	'coll-about_pp' => 'পরিচিতি $1',
+	'coll-invalid_podpartner_title' => 'ভুল POD সহযোগী প্রতিষ্ঠান',
+	'coll-invalid_podpartner_msg' => 'আপনার দেওয়া POD সহযোগী প্রতিষ্ঠানটি ভুল।
+অনুগ্রহ করে আপনার মিডিয়াউইকি প্রশাসকের সাথে যোগাযোগ করুন।',
 	'coll-license' => 'লাইসেন্স',
 	'coll-return_to' => '[[:$1]] এ ফিরে যাও',
 	'coll-more_info' => 'আরও তথ্য দেখাও',
 	'coll-hide_info' => 'তথ্য আড়াল করো',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress অর্ডারের তথ্য',
+	'coll-suggest_title' => 'আপনার বইয়ের জন্য যে পাতাগুলো পরামর্শ দেওয়া হচ্ছে',
+	'coll-suggest_intro_text' => 'পরামর্শগুলো আপনার বইতে থাকা বর্তমান উইকি পাতা গুলোর উপর ভিত্তি করে করা হয়েছে।
+এই তালিকাটি যোগ অথবা অপসারণ বোতাম ক্লিক করার সাথে সাথেই হালনাগাদ হবে।',
 	'coll-suggested_articles' => 'পরামর্শসমূহ',
 	'coll-suggest_reset_bans' => 'পুনরায় আরম্ভ',
+	'coll-suggest_reset_bans_tooltip' => 'পূর্বে অপসারিত পরামর্শগুলো দেখাও',
 	'coll-suggest_add_selected' => 'নির্বাচিত পাতাগুলো যোগ করো',
 	'coll-suggest_ban_selected' => 'নির্বাচিত পাতাগুলো অপসারণ করো',
 	'coll-suggest_your_book' => 'আপনার বই',
 	'coll-suggest_show' => 'দেখাও',
+	'coll-suggest_ban_tooltip' => 'পরামর্শের তালিকা থেকে এই পাতাটি অপসারণ করো',
+	'coll-suggest_article_ban' => '<strong>$1</strong> পাতাটি ($2) পরামর্শ তালিকা থেকে অপসারণ করা হয়েছে।',
+	'coll-suggest_article_add' => '<strong>$1</strong> পাতাটি আপনার ($2) বইয়ে যোগ করা হয়েছে।',
+	'coll-suggest_article_remove' => '<strong>$1</strong> পাতা আপনার ($2) বই থেকে অপসারণ করা হয়েছে।',
+	'coll-suggest_undo_tooltip' => 'এই কাজটি আনডু করো',
 	'coll-suggest_undo' => 'পূর্বাবস্থায় আনো',
+	'right-collectionsaveasuserpage' => 'বইগুলো ব্যবহারকারী পাতা হিসেবে সংরক্ষণ করো',
+	'right-collectionsaveascommunitypage' => 'বইগুলো কমিউনিটি পাতা হিসেবে সংরক্ষণ করো',
 	'coll-or' => 'অথবা',
 );
 
@@ -5476,6 +5534,7 @@ $messages['mhr'] = array(
 );
 
 /** Malayalam (മലയാളം)
+ * @author Praveenp
  * @author Shijualex
  */
 $messages['ml'] = array(
@@ -5526,6 +5585,9 @@ $messages['ml'] = array(
 	'coll-book_text' => 'താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന സേവനദാതാക്കളെ സന്ദര്‍ശിച്ച് നിങ്ങളുടെ ശേഖരത്തിന്റെ അച്ചടി രൂപം ഓര്‍ഡര്‍ ചെയ്യാവുന്നതാണ്‌:',
 	'coll-order_from_pp' => '$1-ല്‍ നിന്നു പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
 	'coll-about_pp' => '$1-നെ കുറിച്ച്',
+	'coll-suggest_add_selected' => 'തിരഞ്ഞെടുത്ത താളുകൾ ചേർക്കുക',
+	'coll-suggest_ban_selected' => 'തിരഞ്ഞെടുത്ത താളുകൾ നീക്കംചെയ്യുക',
+	'coll-suggest_undo_tooltip' => 'ഈ പ്രവൃത്തി വേണ്ട',
 );
 
 /** Mongolian (Монгол)
@@ -6447,10 +6509,13 @@ $messages['pdc'] = array(
  * @author Wpedzich
  */
 $messages['pl'] = array(
-	'coll-desc' => '[[Special:Book|Utworzenie książki]]',
-	'coll-book_creator_intro' => "<big>W trybie ''kompletowania książki'' można utworzyć książkę z wybranych stron wiki. Książkę można wyeksportować w różnych formatach (np. PDF czy ODF) lub zamówić jej wydrukowaną kopię.</big>",
-	'coll-book_creator_help' => 'Więcej informacji na stronie [[{{MediaWiki:Coll-helppage}}|pomocy dotyczącej książek]].',
-	'coll-start_book_creator' => 'Włącz tryb książki',
+	'coll-desc' => '[[Special:Book|Tworzenie książki]]',
+	'coll-book_creator_intro' => "<big>W trybie ''kompletowania książki'' możesz utworzyć książkę z wybranych stron wiki. Książkę możesz wyeksportować w różnych formatach (np. PDF czy ODF) lub zamówić jej wydrukowaną kopię.</big>",
+	'coll-manage_your_book' => 'Zarządzaj swoją książką',
+	'coll-book_creator_help' => 'Więcej informacji odnajdziesz na stronie [[{{MediaWiki:Coll-helppage}}|pomocy dotyczącej książek]].',
+	'coll-start_book_creator' => 'Włącz kreatora książki',
+	'coll-book_creator_continue' => 'Chcę nadal korzystać z kreatora książki',
+	'coll-book_creator_disable_text' => "''Kreator książki'' zostanie wyłączony, a książka nad którą pracowałeś zostanie usunięta.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Tekst trybu książki',
 	'coll-collection' => 'Książka',
 	'coll-collections' => 'Książki',
@@ -6538,7 +6603,10 @@ Uwaga:
 	'coll-notfound_text' => 'Nie udało się odnaleźć strony z ksiązki.',
 	'coll-download_notfound_title' => 'Nie odnaleziono pliku',
 	'coll-download_notfound_text' => 'Plik, który próbujesz pobrać, nie istnieje. Prawdopodobnie został usunięty i wymaga ponownego wygenerowania.',
-	'coll-is_cached' => '<ul><li>Dokument został odnaleziono w pamięci podręcznej, więc nie ma potrzeby renderowania. <a href="$1">Wymuś ponowne renderowanie.</a></li></ul>',
+	'coll-download_failed_title' => 'Błąd podczas pobierania',
+	'coll-download_failed_text' => 'Wystąpił błąd podczas pobierania pliku $1',
+	'coll-is_cached' => '<ul><li>Dokument odnaleziono w pamięci podręcznej, więc nie ma potrzeby renderowania.
+<a href="$1">Wymuś ponowne wygenerowanie.</a></li></ul>',
 	'coll-excluded-templates' => '* Szablony w kategorii [[:Category:$1|$1]] zostały pominięte.',
 	'coll-blacklisted-templates' => '* Szablony z czarnej listy [[:$1]] zostały pominięte.',
 	'coll-return_to_collection' => '<p>Powróć do <a href="$1">$2</a></p>',
@@ -6554,7 +6622,20 @@ Skontaktuj się z administratorem tego serwisu MediaWiki.',
 	'coll-more_info' => 'Pokaż więcej informacji',
 	'coll-hide_info' => 'Ukryj informacje',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Zamawianie PediaPress',
+	'coll-suggest_title' => 'Strony proponowane aby je dodać do książki',
+	'coll-suggest_intro_text' => 'Propozycje generowane są na podstawie analizy aktualnego zestawu stron wiki wchodzących w skład książki.
+Lista jest aktualizowana, gdy klikniesz na przyciski dodaj lub usuń.',
+	'coll-suggested_articles' => 'Propozycje',
+	'coll-suggest_reset_bans' => 'reset',
+	'coll-suggest_reset_bans_tooltip' => 'Pokaż wcześniej usunięte sugestie',
+	'coll-suggest_add_selected' => 'Dodaj wybrane strony',
+	'coll-suggest_ban_selected' => 'Usuń wybrane strony',
 	'coll-suggest_your_book' => 'Moja książka',
+	'coll-suggest_show' => 'pokaż',
+	'coll-suggest_ban_tooltip' => 'Usuń tę stronę z listy proponowanych',
+	'coll-suggest_article_ban' => 'Strona <strong>$1</strong> została usunięta z listy sugerowanych ($2).',
+	'coll-suggest_article_add' => 'Strona <strong>$1</strong> została dodana do Twojej książki ($2).',
+	'coll-suggest_article_remove' => 'Strona <strong>$1</strong> została usunięta z Twojej książki ($2).',
 	'coll-suggest_undo_tooltip' => 'Cofnij tę operację',
 	'coll-suggest_undo' => 'cofnij',
 	'right-collectionsaveasuserpage' => 'Zapisywanie książek jako stronę użytkownika',
@@ -6602,13 +6683,13 @@ $messages['pt'] = array(
 	'coll-book_creator_intro' => "<big>No ''criador de livros'' você pode criar um livro contendo páginas wikis da sua escolha. Você pode exportar o livro em diferentes formatos (por exemplo PDF ou ODF) ou solicitar uma cópia impressa.</big>",
 	'coll-manage_your_book' => 'Gerir seu livro',
 	'coll-book_creator_help' => 'Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para mais detalhes.',
-	'coll-start_book_creator' => 'Começar criador de livros',
+	'coll-start_book_creator' => 'Iniciar o criador de livros',
 	'coll-book_creator_continue' => 'Continue a usar o criador de livros',
 	'coll-book_creator_disable_text' => "O ''criador de livros'' será desabilitado, e o livro no qual você está trabalhando será removido.",
-	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Modo livro textual',
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Texto do criador de livros',
 	'coll-collection' => 'Livro',
 	'coll-collections' => 'Livros',
-	'coll-exclusion_category_title' => 'Excluir da impressão',
+	'coll-exclusion_category_title' => 'Excluir ao imprimir',
 	'coll-print_template_prefix' => 'Imprime',
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Sub-página desconhecida',
@@ -6623,7 +6704,7 @@ Esta página não funcionará correctamente, excepto se o JavaScript for activad
 	'coll-savedbook_template' => 'livro_gravado',
 	'coll-your_book' => 'Seu livro',
 	'coll-download_title' => 'Descarregar',
-	'coll-download_text' => 'Para descarregar seu livro, escolha um formato e pressione o botão correspondente.',
+	'coll-download_text' => 'Para descarregar seu livro, escolha um formato e pressione o botão.',
 	'coll-download_as_text' => 'Para descarregar seu livro em formato $1, clique no botão.',
 	'coll-download' => 'Descarregar',
 	'coll-format_label' => 'Formato:',
@@ -6657,10 +6738,10 @@ Esta página não funcionará correctamente, excepto se o JavaScript for activad
 	'coll-personal_collection_label' => 'Livro pessoal:',
 	'coll-community_collection_label' => 'Livro comunitário:',
 	'coll-save_collection' => 'Gravar livro',
-	'coll-save_category' => 'Todos os livros são gravados na categoria[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Todos os livros gravados são adicionados à categoria [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'A página existe. Escrever por cima?',
 	'coll-overwrite_text' => 'Um página com o nome [[:$1]] já existe.
-Deseja substituí-la pela sua colecção?',
+Deseja substituí-la com o seu livro?',
 	'coll-yes' => 'Sim',
 	'coll-no' => 'Não',
 	'coll-load_overwrite_text' => 'Você já possui algumas páginas no seu livro.
@@ -6687,7 +6768,7 @@ Se isto não funcionar, por favor utilize o botão "atualizar" ("refresh") do se
 <strong>[$1 Transfira o ficheiro]</strong> para o seu computador.
 
 Notas:
-* Não está satisfeito com o resultado? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre coleções]] para possibilidades de aprimoramentos.',
+* Não está satisfeito com o resultado? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para possibilidades de aprimoramentos.',
 	'coll-notfound_title' => 'Livro não encontrado',
 	'coll-notfound_text' => 'Não foi possível encontrar a página do livro.',
 	'coll-download_notfound_title' => 'Ficheiro não encontrado',
@@ -6702,8 +6783,8 @@ Notas:
 	'coll-book_text' => 'Adquira um livro impresso do nosso parceiro de impressão-a-pedido:',
 	'coll-order_from_pp' => 'Encomendar o livro de $1',
 	'coll-about_pp' => 'Sobre $1',
-	'coll-invalid_podpartner_title' => 'Parceiro POD inválido',
-	'coll-invalid_podpartner_msg' => 'O parceiro POD é inválido.
+	'coll-invalid_podpartner_title' => 'Parceiro de impressão-a-pedido inválido',
+	'coll-invalid_podpartner_msg' => 'O parceiro de impressão-a-pedido é inválido.
 Por favor, contacte o seu administrador MediaWiki.',
 	'coll-license' => 'Licença',
 	'coll-return_to' => 'Voltar para [[:$1]]',
@@ -6711,12 +6792,19 @@ Por favor, contacte o seu administrador MediaWiki.',
 	'coll-hide_info' => 'Ocultar informações',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informação sobre encomendas PediaPress',
 	'coll-suggest_title' => 'Páginas sugeridas para seu livro',
+	'coll-suggest_intro_text' => 'Sugestões são baseadas no conjunto atual de páginas wiki no seu livro.
+A lista é atualizada toda vez que você clica nos botões adicionar ou remover.',
 	'coll-suggested_articles' => 'Sugestões',
+	'coll-suggest_reset_bans' => 'restabelecer',
+	'coll-suggest_reset_bans_tooltip' => 'Mostrar sugestões removidas anteriomente',
 	'coll-suggest_add_selected' => 'Adicionar páginas selecionadas',
 	'coll-suggest_ban_selected' => 'Remover páginas selecionadas',
 	'coll-suggest_your_book' => 'Seu livro',
 	'coll-suggest_show' => 'mostrar',
 	'coll-suggest_ban_tooltip' => 'Remover esta página da lista de sugestões',
+	'coll-suggest_article_ban' => 'A página <strong>$1</strong> foi removida das sugestões ($2).',
+	'coll-suggest_article_add' => 'A página <strong>$1</strong> foi adicionada ao seu livro ($2).',
+	'coll-suggest_article_remove' => 'A página <strong>$1</strong> foi removida do seu livro ($2).',
 	'coll-suggest_undo_tooltip' => 'Desfazer essa ação',
 	'coll-suggest_undo' => 'desfazer',
 	'right-collectionsaveasuserpage' => 'Gravar livros como página de utilizador',
@@ -6834,7 +6922,7 @@ Talvez ele tenha sido removido e precise ser regenerado.',
 	'coll-excluded-templates' => '* Predefinições na categoria [[:Category:$1|$1]] foram excluídas.',
 	'coll-blacklisted-templates' => '* Predefinições na lista negra [[:$1]] foram excluídas.',
 	'coll-return_to_collection' => '<p>Retornar para <a href="$1">$2</a></p>',
-	'coll-book_title' => 'Encomendar um livro impresso',
+	'coll-book_title' => 'Encomendar como um livro impresso',
 	'coll-book_text' => 'Adquira um livro impresso de nosso parceiro de impressão sob demanda:',
 	'coll-order_from_pp' => 'Encomendar o livro de $1',
 	'coll-about_pp' => 'Sobre $1',
@@ -6845,7 +6933,7 @@ Por favor, contate o seu administrador MediaWiki.',
 	'coll-return_to' => 'Voltar para [[:$1]]',
 	'coll-more_info' => 'Exibir mais informações',
 	'coll-hide_info' => 'Esconder informações',
-	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informações de pedido da PediaPress',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informações sobre pedidos feitos à PediaPress',
 	'coll-suggest_title' => 'Páginas sugeridas para seu livro',
 	'coll-suggest_intro_text' => 'Sugestões são baseadas no conjunto atual de páginas wiki no seu livro.
 A lista é atualizada toda vez que você clica nos botões adicionar ou remover.',
@@ -8047,6 +8135,7 @@ $messages['te'] = array(
 	'coll-suggest_show' => 'చూపు',
 	'right-collectionsaveasuserpage' => 'పుస్తకములను సభ్యుని పేజి లాగ భద్రపరచుము',
 	'right-collectionsaveascommunitypage' => 'పుస్తకములను కమ్యూనిటీ పేజి లాగ భద్రపరచుము',
+	'coll-or' => 'లేదా',
 );
 
 /** Tetum (Tetun)
@@ -8740,7 +8829,7 @@ $messages['vep'] = array(
  */
 $messages['vi'] = array(
 	'coll-desc' => '[[Special:Book|Tạo sách]]',
-	'coll-book_creator_intro' => "<big>Với ''chế độ tạo sách'' bạn có thể tạo một cuốn sách bao gồm các trang wiki do bạn lựa chọn. Bạn có thể xuất cuốn sách của bạn ra nhiều định dạng khác nhau (như PDF hoặc ODF) hoặc đặt mua một bản in.</big>",
+	'coll-book_creator_intro' => "<big>Với 'bộ tạo sách'' bạn có thể tạo một cuốn sách bao gồm các trang wiki do bạn lựa chọn. Bạn có thể xuất cuốn sách ra nhiều định dạng khác nhau (như PDF hoặc ODF) hoặc đặt mua một bản in.</big>",
 	'coll-manage_your_book' => 'Quản lý sách',
 	'coll-book_creator_help' => 'Xem [[{{MediaWiki:Coll-helppage}}|trang trợ giúp về sách]] để biết thêm thông tin.',
 	'coll-start_book_creator' => 'Bắt đầu chế độ tạo sách',
@@ -8751,7 +8840,7 @@ $messages['vi'] = array(
 	'coll-collections' => 'Sách',
 	'coll-exclusion_category_title' => 'Ẩn khi in',
 	'coll-print_template_prefix' => 'In',
-	'coll-print_template_pattern' => '$1/Print',
+	'coll-print_template_pattern' => '$1/In',
 	'coll-unknown_subpage_title' => 'Trang phụ không tìm được',
 	'coll-unknown_subpage_text' => 'Trang phụ này của [[Special:Book|Sách]] không tồn tại',
 	'coll-couldnotaddarticle_title' => 'Không thể thêm trang wiki',

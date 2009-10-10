@@ -246,25 +246,38 @@ $messages['bg'] = array(
 $messages['bn'] = array(
 	'coll-print_export' => 'মুদ্রণ/এক্সপোর্ট',
 	'coll-create_a_book' => 'বই তৈরি করো',
+	'coll-create_a_book_tooltip' => 'পাতার সংকলন বা বই তৈরি করো',
 	'coll-book_creator' => 'বই প্রস্তুতকারক',
 	'coll-download_as' => '$1 হিসেবে ডাউনলোড করো',
+	'coll-download_as_tooltip' => 'এই উইকি পাতার $1 সংস্করণটি ডাউনলোড করো',
 	'coll-disable' => 'নিস্ক্রিয়',
 	'coll-book_creator_disable' => 'বই প্রস্তুতকারক নিস্ক্রিয় করো',
 	'coll-book_creator_disable_tooltip' => 'বই প্রস্তুতকারক ব্যবহার বন্ধ করুন',
+	'coll-add_category' => 'এই বিষয়শ্রেণীটি আপনার বইয়ে যোগ করুন',
+	'coll-add_category_popup' => 'আপনার বইয়ে সংযোগকৃত বিষয়শ্রেণীর উইকি পাতাগুলো যোগ করুন',
+	'coll-add_category_tooltip' => 'এই বিষয়শ্রেণীর সমস্ত উইকি পাতাগুলো আপনার বইয়ে যোগ করুন',
 	'coll-add_this_page' => 'এই পাতাটি আপনার বইয়ে যোগ করুন।',
+	'coll-add_page_popup' => 'সংযুক্ত উইকিপাতাগুলো আপনার বইয়ে যোগ করুন',
+	'coll-add_page_tooltip' => 'বর্তমান পাতাটি আপনার বইয়ে যোগ করুন',
 	'coll-bookscategory' => 'বইসমূহ',
 	'coll-clear_collection' => 'বই পরিষ্কার করো',
 	'coll-clear_collection_confirm' => 'আপনি কি আসলেই আপনার বই পরিষ্কার করতে চান?',
 	'coll-clear_collection_tooltip' => 'বর্তমান বই থেকে সকল উইকি পাতাগুলো অপসারণ করো',
 	'coll-help' => 'সহায়িকা',
+	'coll-help_tooltip' => 'বই তৈরি সংক্রান্ত সহায়তা দেখাও',
+	'coll-helppage' => 'Help:বই',
 	'coll-load_collection' => 'বই লোড করো',
 	'coll-load_collection_tooltip' => 'বর্তমান বই হিসেবে এই বইটি লোড করুন',
+	'coll-n_pages' => '$1 {{PLURAL:$1|পাতাট|পাতাগুলো}}',
 	'coll-printable_version_pdf' => 'PDF সংস্করণ',
 	'coll-remove_this_page' => 'এই পাতাটি আপনার বই থেকে অপসারণ করুন',
 	'coll-remove_page_popup' => 'আপনার বই থেকে সংযুক্ত উইকি পাতা অপসারণ করুন',
 	'coll-remove_page_tooltip' => 'আপনার বই থেকে বর্তমান উইকি পাতা অপসারণ করুন',
 	'coll-show_collection' => 'বই দেখাও',
+	'coll-show_collection_tooltip' => 'আপনার বই সম্পাদনা/ডাউনলোড/অর্ডার দিতে ক্লিক করুন',
 	'coll-not_addable' => 'এই পাতাটি যোগ করা যাবে না',
+	'coll-make_suggestions' => 'পরামর্শ পাতা',
+	'coll-make_suggestions_tooltip' => 'বইয়ের পাতার উপর ভিত্তি করে পরামর্শগুলো দেখাও',
 	'coll-suggest_empty' => 'খালি',
 );
 
@@ -1618,6 +1631,7 @@ $messages['lt'] = array(
 );
 
 /** Malayalam (മലയാളം)
+ * @author Praveenp
  * @author Shijualex
  */
 $messages['ml'] = array(
@@ -1627,6 +1641,8 @@ $messages['ml'] = array(
 	'coll-helppage' => 'Help:ശേഖരം',
 	'coll-load_collection' => 'ശേഖരം ലോഡ് ചെയ്യുക',
 	'coll-show_collection' => 'ശേഖരം കാണിക്കുക',
+	'coll-make_suggestions' => 'താളുകൾ നിർദ്ദേശിക്കുക',
+	'coll-suggest_empty' => 'ശൂന്യം',
 );
 
 /** Marathi (मराठी)
@@ -1915,12 +1931,12 @@ $messages['pl'] = array(
 	'coll-print_export' => 'Drukuj lub eksportuj',
 	'coll-create_a_book' => 'Utwórz książkę',
 	'coll-create_a_book_tooltip' => 'Tworzenie książki lub kolekcji stron',
-	'coll-book_creator' => 'Tworzenie książek',
+	'coll-book_creator' => 'Tworzenie książki',
 	'coll-download_as' => 'Pobierz jako $1',
 	'coll-download_as_tooltip' => 'Pobierz wersję $1 tej strony wiki',
 	'coll-disable' => 'wyłącz',
 	'coll-book_creator_disable' => 'Wyłącz tworzenie książek',
-	'coll-book_creator_disable_tooltip' => 'Zakończ tworzenie książek',
+	'coll-book_creator_disable_tooltip' => 'Wyłącz kreatora tworzenia książki',
 	'coll-add_category' => 'Dodaj tę kategorię do książki',
 	'coll-add_category_popup' => 'Dodaj strony wiki w linkowanej kategorii do książki',
 	'coll-add_category_tooltip' => 'Dodaj wszystkie strony wiki znajdujące się w tej kategorii do książki',
@@ -1943,9 +1959,9 @@ $messages['pl'] = array(
 	'coll-remove_page_tooltip' => 'Usuń bieżącą stronę wiki z książki',
 	'coll-show_collection' => 'Pokaż książkę',
 	'coll-show_collection_tooltip' => 'Kliknij aby edytować, pobrać lub zamówić książkę',
-	'coll-not_addable' => 'Ta strona nie może zostać dodana',
-	'coll-make_suggestions' => 'Zasugeruj strony',
-	'coll-make_suggestions_tooltip' => 'Pokaż sugestie na podstawie już dodanych stron',
+	'coll-not_addable' => 'Tej strony nie można dodać',
+	'coll-make_suggestions' => 'Proponowane strony',
+	'coll-make_suggestions_tooltip' => 'Pokaż propozycje na podstawie już dodanych stron',
 	'coll-suggest_empty' => 'puste',
 );
 
@@ -2567,7 +2583,7 @@ $messages['vep'] = array(
  * @author Vinhtantran
  */
 $messages['vi'] = array(
-	'coll-print_export' => 'In/xuất khẩu',
+	'coll-print_export' => 'In/xuất ra',
 	'coll-create_a_book' => 'Tạo một quyển sách',
 	'coll-create_a_book_tooltip' => 'Tạo một cuốn sách hoặc sưu tập trang',
 	'coll-book_creator' => 'Bộ tạo sách',
