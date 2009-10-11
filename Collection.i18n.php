@@ -4796,6 +4796,7 @@ Mangga hubungi pangurus MediaWiki panjenengan.',
 );
 
 /** Georgian (ქართული)
+ * @author BRUTE
  * @author Malafaya
  * @author Sopho
  * @author Temuri rajavi
@@ -4887,8 +4888,11 @@ $messages['ka'] = array(
 	'coll-more_info' => 'უფრო მეტი ინფორმაციის ჩვენება',
 	'coll-hide_info' => 'ინფორმაციის დამალვა',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/ინფორმაცია PediaPress-ის შეკვვეთაზე',
+	'coll-suggest_add_selected' => 'არჩეული გვერდების დამატება',
+	'coll-suggest_your_book' => 'თქვენი წიგნი',
 	'right-collectionsaveasuserpage' => 'შეინახე წიგნი, როგორც მომხმარებლის გვერდი',
 	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
+	'coll-or' => 'ან',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -5585,8 +5589,18 @@ $messages['ml'] = array(
 	'coll-book_text' => 'താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന സേവനദാതാക്കളെ സന്ദര്‍ശിച്ച് നിങ്ങളുടെ ശേഖരത്തിന്റെ അച്ചടി രൂപം ഓര്‍ഡര്‍ ചെയ്യാവുന്നതാണ്‌:',
 	'coll-order_from_pp' => '$1-ല്‍ നിന്നു പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
 	'coll-about_pp' => '$1-നെ കുറിച്ച്',
+	'coll-license' => 'അനുമതി',
+	'coll-return_to' => '[[:$1]] താളിലേയ്ക്ക് തിരിച്ചു പോവുക',
+	'coll-more_info' => 'കൂടുതൽ വിവരങ്ങൾ പ്രദർശിപ്പിക്കുക',
+	'coll-hide_info' => 'വിവരങ്ങൾ മറയ്ക്കുക',
+	'coll-suggested_articles' => 'നിർദ്ദേശങ്ങൾ',
+	'coll-suggest_reset_bans' => 'പുനക്രമീകരിക്കുക',
+	'coll-suggest_reset_bans_tooltip' => 'മുമ്പ് നീക്കം ചെയ്ത നിർദ്ദേശങ്ങൾ പ്രദർശിപ്പിക്കുക',
 	'coll-suggest_add_selected' => 'തിരഞ്ഞെടുത്ത താളുകൾ ചേർക്കുക',
 	'coll-suggest_ban_selected' => 'തിരഞ്ഞെടുത്ത താളുകൾ നീക്കംചെയ്യുക',
+	'coll-suggest_show' => 'പ്രദർശിപ്പിക്കുക',
+	'coll-suggest_ban_tooltip' => 'ഈ താൾ നിർദ്ദേശങ്ങളുടെ പട്ടികയിൽ നിന്നും നീക്കം ചെയ്യുക',
+	'coll-suggest_article_ban' => 'നിർദ്ദേശങ്ങളിൽ നിന്നും <strong>$1</strong> എന്ന താൾ നീക്കം ചെയ്തിരിക്കുന്നു ($2).',
 	'coll-suggest_undo_tooltip' => 'ഈ പ്രവൃത്തി വേണ്ട',
 );
 
