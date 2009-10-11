@@ -1436,10 +1436,12 @@ $messages['ka'] = array(
 	'coll-clear_collection' => 'წიგნის გასუფთავება',
 	'coll-clear_collection_confirm' => 'დარწმუნებული ხართ, რომ გსურთ თქვენი წიგნის სრული დასუფთავება?',
 	'coll-clear_collection_tooltip' => 'მოცემული წიგნიდან ყველა ვიკი-გვერდის წაშლა.',
+	'coll-help' => 'დახმარება',
 	'coll-helppage' => 'Help:წიგნები',
 	'coll-load_collection' => 'წიგნის ატვირთვა',
 	'coll-n_pages' => '$1 გვერდი',
 	'coll-printable_version_pdf' => 'PDF ვერსია',
+	'coll-suggest_empty' => 'ცარიელი',
 );
 
 /** Khmer (ភាសាខ្មែរ)
