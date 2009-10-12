@@ -1249,6 +1249,7 @@ Spisak se ažurira kad god kliknete na dugme za dodavanje ili uklanjanje.',
 /** Catalan (Català)
  * @author Aleator
  * @author Jordi Roqué
+ * @author Martorell
  * @author Paucabot
  * @author SMP
  * @author Solde
@@ -1257,8 +1258,10 @@ Spisak se ažurira kad god kliknete na dugme za dodavanje ili uklanjanje.',
 $messages['ca'] = array(
 	'coll-desc' => '[[Special:Book|Crea llibres]]',
 	'coll-book_creator_intro' => "<big>Amb el ''mode llibre'', podeu crear un llibre format per les pàgines wiki que volgueu. Podeu exportar-lo en diferents formats (per exemple PDF o ODF) o  demanar una còpia impresa.</big>",
+	'coll-manage_your_book' => 'Gestioneu la vostra biblioteca',
 	'coll-book_creator_help' => "Vegeu [[{{MediaWiki:Coll-helppage}}|la pàgina d'ajuda dels llibres]] per més informació.",
 	'coll-start_book_creator' => 'Inicia el mode llibre',
+	'coll-book_creator_continue' => 'Continua utilitzant el creador de llibres',
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Text en mode llibre',
 	'coll-collection' => 'Llibre',
 	'coll-collections' => 'Llibres',
