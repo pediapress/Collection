@@ -4717,7 +4717,7 @@ $messages['jv'] = array(
 Kaca iki ora bakal tampil kanthi bener, kajaba JavaScript di aktifaké.</strong>',
 	'coll-your_book' => 'Buku panjenengan',
 	'coll-download_title' => 'Undhuh',
-	'coll-download_text' => "Kanggo ngundhuh vèrsi jaba-jaring (''offline'') pilih siji format lan klik tombolé.",
+	'coll-download_text' => 'Kanggo ngundhuh buku panjenengan piliha sawijining format lan klik tombolé.',
 	'coll-download' => 'Undhuh',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Ilangana',
