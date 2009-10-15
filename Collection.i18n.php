@@ -9051,6 +9051,7 @@ $messages['yi'] = array(
 	'coll-your_book' => 'אײַער בוך',
 	'coll-download_title' => 'אראָפלאָדן',
 	'coll-download' => 'אַראָפלאָדן',
+	'coll-title' => 'טיטל:',
 	'coll-cancel' => 'מבטל זײַן',
 	'coll-update' => 'דערהײַנטיקן',
 	'coll-rendering_status' => '<strong>סטאַטוס:</strong> $1',
