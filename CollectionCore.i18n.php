@@ -242,6 +242,7 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Jayantanth
  */
 $messages['bn'] = array(
 	'coll-print_export' => 'মুদ্রণ/এক্সপোর্ট',
@@ -269,7 +270,7 @@ $messages['bn'] = array(
 	'coll-load_collection' => 'বই লোড করো',
 	'coll-load_collection_tooltip' => 'বর্তমান বই হিসেবে এই বইটি লোড করুন',
 	'coll-n_pages' => '$1 {{PLURAL:$1|পাতাট|পাতাগুলো}}',
-	'coll-printable_version_pdf' => 'PDF সংস্করণ',
+	'coll-printable_version_pdf' => 'পিডিএফ সংস্করণ',
 	'coll-remove_this_page' => 'এই পাতাটি আপনার বই থেকে অপসারণ করুন',
 	'coll-remove_page_popup' => 'আপনার বই থেকে সংযুক্ত উইকি পাতা অপসারণ করুন',
 	'coll-remove_page_tooltip' => 'আপনার বই থেকে বর্তমান উইকি পাতা অপসারণ করুন',
@@ -857,6 +858,7 @@ $messages['fi'] = array(
 	'coll-remove_page_tooltip' => 'Poista nykyinen wikisivu kirjastasi',
 	'coll-show_collection' => 'Näytä kirja',
 	'coll-show_collection_tooltip' => 'Napsauta muokataksesi, ladataksesi tai tilataksesi kirjasi',
+	'coll-not_addable' => 'Tätä sivua ei voi lisätä',
 	'coll-suggest_empty' => 'tyhjä',
 );
 
@@ -1735,7 +1737,7 @@ $messages['nds'] = array(
 $messages['nds-nl'] = array(
 	'coll-create_a_book' => 'Boek maken',
 	'coll-download_as' => 'Oflaojen as $1',
-	'coll-add_category' => 'Kattegerie derbie',
+	'coll-add_category' => 'Kattegerie bie joew boek doon',
 	'coll-bookscategory' => 'Boeken',
 	'coll-helppage' => 'Help:Boeken',
 	'coll-load_collection' => 'Boek laojen',
