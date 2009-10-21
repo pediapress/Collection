@@ -753,9 +753,12 @@ $messages['et'] = array(
 	'coll-print_export' => 'Trüki või ekspordi',
 	'coll-create_a_book' => 'Loo raamat',
 	'coll-create_a_book_tooltip' => 'Loo raamat või lehekülgede kogu',
+	'coll-book_creator' => 'Raamatulooja',
 	'coll-download_as' => 'Laadi alla $1-failina',
 	'coll-download_as_tooltip' => 'Laadi see lehekülg alla $1-vormingus',
 	'coll-disable' => 'keela',
+	'coll-book_creator_disable' => 'Keela raamatulooja',
+	'coll-book_creator_disable_tooltip' => 'Lõpeta raamatulooja kasutamine',
 	'coll-add_category' => 'Lisa see kategooria oma raamatusse',
 	'coll-add_category_popup' => 'Lisa raamatusse lingitud kategoorias olevad leheküljed',
 	'coll-add_category_tooltip' => 'Lisa kõik selle kategooria vikileheküljed loodavasse raamatusse',
@@ -778,6 +781,10 @@ $messages['et'] = array(
 	'coll-remove_page_tooltip' => 'Võta käesolev lehekülg loodavast raamatust välja',
 	'coll-show_collection' => 'Näita raamatut',
 	'coll-show_collection_tooltip' => 'Redigeeri, laadi alla või telli',
+	'coll-not_addable' => 'Seda lehekülge ei saa lisada',
+	'coll-make_suggestions' => 'Paku lehekülgi',
+	'coll-make_suggestions_tooltip' => 'Näitab raamatusse lisatud lehekülgedel põhinevaid soovitusi',
+	'coll-suggest_empty' => 'tühi',
 );
 
 /** Basque (Euskara)
@@ -836,7 +843,7 @@ $messages['fi'] = array(
 	'coll-book_creator' => 'Kirjan luontitila',
 	'coll-download_as' => 'Lataa $1-tiedostona',
 	'coll-download_as_tooltip' => 'Lataa tämä wikisivu $1-muodossa',
-	'coll-disable' => 'poistettu käytöstä',
+	'coll-disable' => 'poista käytöstä',
 	'coll-book_creator_disable' => 'Poista kirjan luontitila käytöstä',
 	'coll-book_creator_disable_tooltip' => 'Lopeta kirjan luontitila',
 	'coll-add_category' => 'Lisää tämä luokka kirjaasi',
@@ -862,6 +869,8 @@ $messages['fi'] = array(
 	'coll-show_collection' => 'Näytä kirja',
 	'coll-show_collection_tooltip' => 'Napsauta muokataksesi, ladataksesi tai tilataksesi kirjasi',
 	'coll-not_addable' => 'Tätä sivua ei voi lisätä',
+	'coll-make_suggestions' => 'Ehdotetut sivut',
+	'coll-make_suggestions_tooltip' => 'Näytä ehdotukset, jotka perustuvat kirjan sivuihin',
 	'coll-suggest_empty' => 'tyhjä',
 );
 
