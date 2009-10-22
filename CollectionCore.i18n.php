@@ -579,6 +579,47 @@ $messages['de-formal'] = array(
 	'coll-make_suggestions_tooltip' => 'Vorschläge basierend auf den Seiten in Ihrem Buch anzeigen',
 );
 
+/** Zazaki (Zazaki)
+ * @author Xoser
+ */
+$messages['diq'] = array(
+	'coll-print_export' => 'Çap bike/export bike',
+	'coll-create_a_book' => 'Yew kitab biviraze',
+	'coll-create_a_book_tooltip' => 'Yew koleksiyonê pelî ya zi kitab biviraze',
+	'coll-book_creator' => 'Kitab viraştoğ',
+	'coll-download_as' => 'Ze $1 bar bike',
+	'coll-download_as_tooltip' => 'Yew versiyonê $1 yê ena pel bar bike',
+	'coll-disable' => 'bikefilne',
+	'coll-book_creator_disable' => 'Viraştoğ kitabî bikefilne',
+	'coll-book_creator_disable_tooltip' => 'Viraştoğ kitabî kefilne',
+	'coll-add_category' => 'Ena kategorî kitabê xo rê de bike',
+	'coll-add_category_popup' => 'Pelê wîkîyî kategorî de link biyo înan kitabê xo rê de bike',
+	'coll-add_category_tooltip' => 'Pelê wîkîyî ena kategorî de înan kitabê xo rê de bike',
+	'coll-add_this_page' => 'Ena pelê kitabê xo rê de bike',
+	'coll-add_page_popup' => 'Pelê wîkî yê lînk biya kitabê xo rê de bike',
+	'coll-add_page_tooltip' => 'Pelê wîkî yê penî kitabê xo rê de bike',
+	'coll-bookscategory' => 'Kitaban',
+	'coll-clear_collection' => 'Kitaban wedarne',
+	'coll-clear_collection_confirm' => 'Ti raştî kitabê xo wazeno wedarne?',
+	'coll-clear_collection_tooltip' => 'Wîkîyanê hemî kitabê xo de wedarne',
+	'coll-help' => 'Yardim',
+	'coll-help_tooltip' => 'Ser bar kerdişê kitabî rê yardim bimucne',
+	'coll-helppage' => 'Help:Kitaban',
+	'coll-load_collection' => 'Kitab bar bike',
+	'coll-load_collection_tooltip' => 'Ena kitab bar bike',
+	'coll-n_pages' => '$1 {{PLURAL:$1|pel|pelan}}',
+	'coll-printable_version_pdf' => 'Versiyonê PDFî',
+	'coll-remove_this_page' => 'Ena pelê kitabê xo de wedarne',
+	'coll-remove_page_popup' => 'Pelê wîkî yê link biyo kitabê xo de ey wedarne',
+	'coll-remove_page_tooltip' => 'Pelê wîkî yê penî ke kitabê tu de ey wedarne',
+	'coll-show_collection' => 'Kitab bimucne',
+	'coll-show_collection_tooltip' => 'Klik bike ke kitabê xo bivurne/bar bike/sipariş bike',
+	'coll-not_addable' => 'Ena pel nişkeno de biyo',
+	'coll-make_suggestions' => 'Pelan ke tevsiye biyê',
+	'coll-make_suggestions_tooltip' => 'Ser pelan ke zerre kitabê tu de înan ra tevsiye bike',
+	'coll-suggest_empty' => 'veng',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
@@ -1659,6 +1700,7 @@ $messages['ml'] = array(
 	'coll-n_pages' => '{{PLURAL:$1|ഒരു താൾ|$1 താളുകൾ}}',
 	'coll-printable_version_pdf' => 'പി.ഡി.എഫ്. പതിപ്പ്',
 	'coll-show_collection' => 'ശേഖരം കാണിക്കുക',
+	'coll-not_addable' => 'ഈ താൾ കൂട്ടിച്ചേർക്കാൻ കഴിയില്ല',
 	'coll-make_suggestions' => 'താളുകൾ നിർദ്ദേശിക്കുക',
 	'coll-suggest_empty' => 'ശൂന്യം',
 );

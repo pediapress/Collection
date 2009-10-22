@@ -1851,6 +1851,36 @@ Immer, wenn Sie auf die Hinzufügen- oder Entfernen-Buttons klicken, wird die Li
 	'coll-suggest_article_remove' => 'Die Seite <strong>$1</strong> wurde aus Ihrem Buch entfernt ($2).',
 );
 
+/** Zazaki (Zazaki)
+ * @author Xoser
+ */
+$messages['diq'] = array(
+	'coll-about_pp' => 'Heqa $1',
+	'coll-invalid_podpartner_title' => 'Partnerê PODî ğeletî',
+	'coll-license' => 'Lisans',
+	'coll-return_to' => 'Reyna şi [[:$1]]',
+	'coll-more_info' => 'Enformasyon bimucne',
+	'coll-hide_info' => 'Enformasyon binumne',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress enformasyon şîparîş bike',
+	'coll-suggest_title' => 'Kitabê tu rê pelanê tavsîyayî',
+	'coll-suggested_articles' => 'Tavsiyeyan',
+	'coll-suggest_reset_bans' => 'sifir bike',
+	'coll-suggest_reset_bans_tooltip' => 'Tavsiyayan ke vernî de wedariye înan bimucne',
+	'coll-suggest_add_selected' => 'Pelanê weçinaye de bike',
+	'coll-suggest_ban_selected' => 'Pelanê weçinaye wedarne',
+	'coll-suggest_your_book' => 'Kitabê tu',
+	'coll-suggest_show' => 'bimucne',
+	'coll-suggest_ban_tooltip' => 'Ena pel listeyê tavsiye rê wedarne',
+	'coll-suggest_article_ban' => 'Pel <strong>$1</strong> tavsiyeran ra wedarne ($2).',
+	'coll-suggest_article_add' => 'Pel <strong>$1</strong> kitabê tu rê de biyo ($2).',
+	'coll-suggest_article_remove' => 'Pel <strong>$1</strong> kitabê tu ra wedarnaye ($2).',
+	'coll-suggest_undo_tooltip' => 'Hereket reyna biyar',
+	'coll-suggest_undo' => 'reyna biyar',
+	'right-collectionsaveasuserpage' => 'Kitab ze pelê karberî qeyd bike',
+	'right-collectionsaveascommunitypage' => 'Kitab ze pelê cemeatî qeyd bike',
+	'coll-or' => 'ya zi',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
