@@ -122,9 +122,12 @@ $messages['ar'] = array(
 	'coll-print_export' => 'اطبع/صدّر',
 	'coll-create_a_book' => 'إنشاء كتاب',
 	'coll-create_a_book_tooltip' => 'أنشئ كتابًا أو صفحة مجموعة',
+	'coll-book_creator' => 'منشئ الكتب',
 	'coll-download_as' => 'تحميل ك$1',
 	'coll-download_as_tooltip' => 'نزّل نسخة $1 من صفحة الويكي هذه.',
 	'coll-disable' => 'عطّل',
+	'coll-book_creator_disable' => 'عطّل منشئ الكتب',
+	'coll-book_creator_disable_tooltip' => 'أوقف استخدام منشئ الكتب',
 	'coll-add_category' => 'إضافة هذا التصنيف إلى كتابتك',
 	'coll-add_category_popup' => 'أضف صفحات الويكي في التصنيف الموصول لكتابك',
 	'coll-add_category_tooltip' => 'أضف كل صفحات الويكي في هذا التصنيف لكتابك',
@@ -147,6 +150,8 @@ $messages['ar'] = array(
 	'coll-remove_page_tooltip' => 'أزل صفحة الويكي الحالية من كتابك',
 	'coll-show_collection' => 'عرض الكتاب',
 	'coll-show_collection_tooltip' => 'اضغط لتعديل/تنزيل/طلب كتابك',
+	'coll-not_addable' => 'لا يمكن إضافة هذه الصفحة',
+	'coll-make_suggestions_tooltip' => 'أظهر التعديلات بناءً على صفحات كتابك',
 );
 
 /** Aramaic (ܐܪܡܝܐ)
