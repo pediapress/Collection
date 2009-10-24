@@ -413,6 +413,7 @@ $messages['ar'] = array(
 	'coll-manage_your_book' => 'إدارة كتابك',
 	'coll-book_creator_help' => 'راجع [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة المتعلقة بالكتب]] لمزيد من المعلومات.',
 	'coll-start_book_creator' => 'ابدأ وضع الكتب',
+	'coll-book_creator_continue' => 'واصل استخدام منشئ الكتب',
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/نص وضع الكتب',
 	'coll-collection' => 'كتاب',
 	'coll-collections' => 'كتب',
@@ -1862,6 +1863,11 @@ Immer, wenn Sie auf die Hinzufügen- oder Entfernen-Buttons klicken, wird die Li
  * @author Xoser
  */
 $messages['diq'] = array(
+	'coll-desc' => '[[Special:Book|Kitabî viraze]]',
+	'coll-manage_your_book' => 'Kitabê xo îdare bike',
+	'coll-book_creator_help' => 'Qe enformasyonî [[{{MediaWiki:Coll-helppage}}|elê yardimî ke ser kitabî]] bivîne.',
+	'coll-start_book_creator' => 'Viraştoğê kitabî başli bike',
+	'coll-book_creator_continue' => 'Viraştoğê kitabî de dewam bike',
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Nuşteyê kitab viraştoğî',
 	'coll-collection' => 'Kitab',
 	'coll-collections' => 'Kitaban',
