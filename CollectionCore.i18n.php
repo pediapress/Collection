@@ -152,6 +152,7 @@ $messages['ar'] = array(
 	'coll-show_collection_tooltip' => 'اضغط لتعديل/تنزيل/طلب كتابك',
 	'coll-not_addable' => 'لا يمكن إضافة هذه الصفحة',
 	'coll-make_suggestions_tooltip' => 'أظهر التعديلات بناءً على صفحات كتابك',
+	'coll-suggest_empty' => 'فارغ',
 );
 
 /** Aramaic (ܐܪܡܝܐ)
