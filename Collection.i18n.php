@@ -531,7 +531,7 @@ $messages['ar'] = array(
 	'coll-suggest_show' => 'عرض',
 	'coll-suggest_ban_tooltip' => 'أزل هذه الصفحة من قائمة المقترحات',
 	'coll-suggest_undo_tooltip' => 'استرجع هذه الإجراء',
-	'coll-suggest_undo' => 'رجوع',
+	'coll-suggest_undo' => 'ارجع',
 	'right-collectionsaveasuserpage' => 'احفظ الكتب كصفحة مستخدم',
 	'right-collectionsaveascommunitypage' => 'احفظ الكتب كصفحة مجتمع',
 	'coll-or' => 'أو',
@@ -1933,11 +1933,20 @@ Ma nieşkenî pel de biker.',
 	'coll-rendering_article' => '(pelê wîkîyî: $1)',
 	'coll-rendering_page' => '(pel: $1)',
 	'coll-rendering_finished_title' => 'Render kerdişî qediya',
+	'coll-rendering_finished_text' => '<strong>Ena dosyayê documentî viraziyayo.</strong>
+<strong>[$1 Dosya bar bike]</strong> komputerê xo.
+
+Notan:
+* Ti ena miwazeno? [[{{MediaWiki:Coll-helppage}}|Qe kitaban de pelê yardimî]] bivîne ke belki ti hewlyer keno.',
 	'coll-notfound_title' => 'Kitab nedîy',
 	'coll-notfound_text' => 'Pelê kitabî nedîy',
 	'coll-download_notfound_title' => 'Dosya nedîy',
+	'coll-download_notfound_text' => 'Dosyayê ke ti wazeno bar bike îtiya de çini yo:
+Belki o dosya esteriyayo u gani reyna viraziyayo.',
 	'coll-download_failed_title' => 'Bar kerdişî de ğeletî biyo',
 	'coll-download_failed_text' => 'Ma key dosya bar kerdî, yew ğelet biyo: $1',
+	'coll-is_cached' => '<ul><li>Ma yew versiyonê cachedî nidiy, aye ra ma gani render kerd.
+<a href="$1">Reyna Render bike.</a></li></ul>',
 	'coll-excluded-templates' => '* Templatanê ke ho ho caetegoriyê [[:Category:$1|$1]]î de înan de nikerd.',
 	'coll-blacklisted-templates' => '* Templatanê ke ho listeyê ma siyayî [[:$1]] de înan de nikerd.',
 	'coll-return_to_collection' => '<p>Reyna şi <a href="$1">$2</a></p>',
@@ -1946,12 +1955,16 @@ Ma nieşkenî pel de biker.',
 	'coll-order_from_pp' => 'Kitab $1 ra sipariş bike',
 	'coll-about_pp' => 'Heqa $1',
 	'coll-invalid_podpartner_title' => 'Partnerê PODî ğeletî',
+	'coll-invalid_podpartner_msg' => 'Partnerê PODî raşt niyo.
+Ma rica keno îdarekarê MedîyaWîkîyî ra yew mesaj bişirav.',
 	'coll-license' => 'Lisans',
 	'coll-return_to' => 'Reyna şi [[:$1]]',
 	'coll-more_info' => 'Enformasyon bimucne',
 	'coll-hide_info' => 'Enformasyon binumne',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress enformasyon şîparîş bike',
 	'coll-suggest_title' => 'Kitabê tu rê pelanê tavsîyayî',
+	'coll-suggest_intro_text' => 'Tevsiyayan sero setanê pel ê wîkî newe ke kitabê tu de.
+Çi wext ti gocakanê de kerdişî u wedarayîşî ra klik bike, liste beno rocaniye.',
 	'coll-suggested_articles' => 'Tavsiyeyan',
 	'coll-suggest_reset_bans' => 'sifir bike',
 	'coll-suggest_reset_bans_tooltip' => 'Tavsiyayan ke vernî de wedariye înan bimucne',
