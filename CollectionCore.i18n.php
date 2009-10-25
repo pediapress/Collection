@@ -151,6 +151,7 @@ $messages['ar'] = array(
 	'coll-show_collection' => 'عرض الكتاب',
 	'coll-show_collection_tooltip' => 'اضغط لتعديل/تنزيل/طلب كتابك',
 	'coll-not_addable' => 'لا يمكن إضافة هذه الصفحة',
+	'coll-make_suggestions' => 'اقترح صفحات',
 	'coll-make_suggestions_tooltip' => 'أظهر التعديلات بناءً على صفحات كتابك',
 	'coll-suggest_empty' => 'فارغ',
 );
@@ -1701,6 +1702,7 @@ $messages['ml'] = array(
 	'coll-create_a_book' => 'എന്റെ ശേഖരം',
 	'coll-add_category' => 'വര്‍ഗ്ഗം ചേര്‍ക്കുക',
 	'coll-clear_collection' => 'ശേഖരം മായ്ക്കുക',
+	'coll-help' => 'സഹായം',
 	'coll-helppage' => 'Help:ശേഖരം',
 	'coll-load_collection' => 'ശേഖരം ലോഡ് ചെയ്യുക',
 	'coll-n_pages' => '{{PLURAL:$1|ഒരു താൾ|$1 താളുകൾ}}',
