@@ -1699,7 +1699,9 @@ $messages['lt'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
+	'coll-print_export' => 'അച്ചടിയ്ക്കുക/കയറ്റുമതി ചെയ്യുക',
 	'coll-create_a_book' => 'എന്റെ ശേഖരം',
+	'coll-download_as' => '$1 ആയി ഡൗൺലോഡ് ചെയ്യുക',
 	'coll-add_category' => 'വര്‍ഗ്ഗം ചേര്‍ക്കുക',
 	'coll-clear_collection' => 'ശേഖരം മായ്ക്കുക',
 	'coll-help' => 'സഹായം',
