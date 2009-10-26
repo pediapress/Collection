@@ -1864,10 +1864,12 @@ Immer, wenn Sie auf die Hinzufügen- oder Entfernen-Buttons klicken, wird die Li
  */
 $messages['diq'] = array(
 	'coll-desc' => '[[Special:Book|Kitabî viraze]]',
+	'coll-book_creator_intro' => '<big>Pê "viraştoğê kitabî ti eşkeno yew kitabê ke pelanê wîkîyan ra virazo. Ti eşkeno kitab formatanê bînan de (mavacî PDF ya zi ODF) export bike ya zi kitab şipariş bike.</big>',
 	'coll-manage_your_book' => 'Kitabê xo îdare bike',
 	'coll-book_creator_help' => 'Qe enformasyonî [[{{MediaWiki:Coll-helppage}}|elê yardimî ke ser kitabî]] bivîne.',
 	'coll-start_book_creator' => 'Viraştoğê kitabî başli bike',
 	'coll-book_creator_continue' => 'Viraştoğê kitabî de dewam bike',
+	'coll-book_creator_disable_text' => "\"kitab viraştoğ'' qefiliyeno u kitabê ke ti ho ser hebîtiyeno ey wedariyeno.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Nuşteyê kitab viraştoğî',
 	'coll-collection' => 'Kitab',
 	'coll-collections' => 'Kitaban',
@@ -1880,6 +1882,9 @@ $messages['diq'] = array(
 	'coll-couldnotaddarticle_msg' => 'Ena pelê wîkîyî de nibiyo.',
 	'coll-couldnotremovearticle_title' => 'Nieşkeno pelê wîkîyî wedare',
 	'coll-couldnotremovearticle_msg' => 'Ena pelê wîkîyî niwedariya.',
+	'coll-noscript_text' => '<h1>JavaScript lazim o!</h1>
+<strong>Ya browserê tu de JavaScript çini yo ya zi JavaScript qefilnayiyo.
+Heta ti JavaScript a nike, ena pel hewl nihebitiyeno.</strong>',
 	'coll-savedbook_template' => 'kitab_keydke',
 	'coll-your_book' => 'Kitabê tu',
 	'coll-download_title' => 'Bar bike',
@@ -1913,14 +1918,19 @@ $messages['diq'] = array(
 	'coll-revision' => 'Revizyon: $1',
 	'coll-save_collection_title' => 'Kitabê xo qeyd ke',
 	'coll-save_collection_text' => 'Qe kitabê tu rê yew embar weçine:',
+	'coll-login_to_save' => 'Eka ti wazena kitabê xo bace biwane, ma rica keno [[Special:UserLogin|Cıkewt ya zi yew hesab vıraz]].',
 	'coll-personal_collection_label' => 'Kitabê şexsî:',
 	'coll-community_collection_label' => 'Kitabê cemaetî:',
 	'coll-save_collection' => 'Kitab qeyd biker',
 	'coll-save_category' => 'Kitabanê ke qeyd biyê înan kategorî rê de bîyo [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Pele zaten est o.
 Sero binusi?',
+	'coll-overwrite_text' => 'Yew pel ser nameyê [[:$1]]î zatî esto.
+Ti wazeno ey kitab pê kitabê xo rê bivurne?',
 	'coll-yes' => 'Ye',
 	'coll-no' => 'Ne',
+	'coll-load_overwrite_text' => 'Kitabê xo de zatî pelan esto. 
+Ti wazeno ser kitabê xo de binuse, kontendê newe ya zi bar kerdişê kitabî îptal bike?',
 	'coll-overwrite' => 'Sero binuş',
 	'coll-append' => 'Penî ra de biker',
 	'coll-cancel' => 'Îptal biker',
@@ -1929,6 +1939,12 @@ Sero binusi?',
 	'coll-limit_exceeded_text' => 'Kitabê tu zaf gird o.
 Ma nieşkenî pel de biker.',
 	'coll-rendering_title' => 'Render keno',
+	'coll-rendering_text' => '<p><strong>Yew di dekika vinder nika dokumant ho viraziyeno.</strong></p>
+
+<p><strong>Progress:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Ena pele gani xo xo otomatik rocaniye biko.
+Eka ena nihebitiyeno, ma rica keno browser xo reyna ciwane bike</p>',
 	'coll-rendering_status' => 'strong>Statu:</strong> $1',
 	'coll-rendering_article' => '(pelê wîkîyî: $1)',
 	'coll-rendering_page' => '(pel: $1)',
@@ -5767,6 +5783,7 @@ $messages['ml'] = array(
 	'coll-download_failed_title' => 'ഡൗൺലോഡ് ചെയ്യുമ്പോൾ പിഴവ് സംഭവിച്ചു',
 	'coll-download_failed_text' => '$1 എന്ന പ്രമാണം ഡൗൺലോഡ് ചെയ്തുകൊണ്ടിരിക്കുമ്പോൾ ഒരു പിഴവ് സംഭവിച്ചിരിക്കുന്നു',
 	'coll-excluded-templates' => '*[[:Category:$1|$1]] എന്ന വർഗ്ഗത്തിലുൾപ്പെട്ട ഫലകങ്ങൾ ഒഴിവാക്കി.',
+	'coll-blacklisted-templates' => '*കരിമ്പട്ടികയിലുള്ള ഫലകങ്ങൾ [[:$1]] ഒഴിവാക്കിയിരിക്കുന്നു.',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p>-ലേക്കു തിരിച്ചു പോവുക',
 	'coll-book_title' => 'അച്ചടിച്ച പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
 	'coll-book_text' => 'താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന സേവനദാതാക്കളെ സന്ദര്‍ശിച്ച് നിങ്ങളുടെ ശേഖരത്തിന്റെ അച്ചടി രൂപം ഓര്‍ഡര്‍ ചെയ്യാവുന്നതാണ്‌:',
