@@ -2418,10 +2418,11 @@ Bonvolu kontakti vian administranton de MediaWiki.',
  * @author Platonides
  * @author Remember the dot
  * @author Sanbec
+ * @author Translationista
  */
 $messages['es'] = array(
 	'coll-desc' => '[[Special:Book|Crear libros]]',
-	'coll-book_creator_intro' => "<big>Con el ''modo libro'' puedes crear un libro consistente de páginas wiki de tu preferencia. Puedes exportar tu libro en diferentes formatos (por ejemplo PDF o ODF) u ordenar una copia impresa.</big>",
+	'coll-book_creator_intro' => "<big>Con el ''creador de libros'' puedes crear un libro consistente de páginas wiki de tu preferencia. Puedes exportar tu libro en diferentes formatos (por ejemplo PDF o ODF) u ordenar una copia impresa.</big>",
 	'coll-manage_your_book' => 'Gestionar tu libro',
 	'coll-book_creator_help' => 'Ver [[{{MediaWiki:Coll-helppage}}|la página de ayuda acerca de los libros]] para mayor información.',
 	'coll-start_book_creator' => 'Comenzar creador de libro',
@@ -5569,6 +5570,7 @@ D'Lëscht gëtt all kéier aktuliséiert wann dir op d'Knäppecher derbäisetzen
 );
 
 /** Limburgish (Limburgs)
+ * @author Aelske
  * @author Ooswesthoesbes
  */
 $messages['li'] = array(
@@ -5590,7 +5592,7 @@ Dees paasj wèrk neet goed, bezieje-s doe JavaScript aanzèts.</strong>",
 	'coll-download_as_text' => "Drök óppe knoep veur 't óphaole ven 'ner offline gaedering in g'm fórmaat $1.",
 	'coll-download' => 'Haol óp',
 	'coll-format_label' => 'Fórmaat:',
-	'coll-remove' => 'Wösje',
+	'coll-remove' => 'weggoeje',
 	'coll-show' => 'Toean',
 	'coll-move_to_top' => 'Gans euveróppes',
 	'coll-move_up' => 'Euveróppes',
@@ -5603,7 +5605,7 @@ Dees paasj wèrk neet goed, bezieje-s doe JavaScript aanzèts.</strong>",
 	'coll-create_chapter' => 'Huidstök make',
 	'coll-sort_alphabetically' => 'Alfabetisch sortere',
 	'coll-rename' => 'Hèrnömme',
-	'coll-new_chapter' => "Veur de naam ven 't nuuj huidstök inne",
+	'coll-new_chapter' => "Veur de naam van 't nuuj hoofstök in",
 	'coll-rename_chapter' => "Veur 'ne nuuje naam in veur 't huidstök",
 	'coll-no_such_category' => 'De kattegorie besteit neet',
 	'coll-notitle_title' => "De titel ven g'r pazjena kós neet vasgesteldj waere.",
@@ -5632,7 +5634,7 @@ Wils se dien hujig book euversjrieve, de nuuj paazjes d'raanzètte óf 't laaje 
 	'coll-append' => "D'raanzètte",
 	'coll-cancel' => 'Aafbraeke',
 	'coll-update' => 'Vervèrse',
-	'coll-limit_exceeded_title' => 'Book is tö groeat',
+	'coll-limit_exceeded_title' => 'Book is te groet',
 	'coll-limit_exceeded_text' => "Dien book is tö groeat.
 De kins gein paazjes mieë d'raanzètte.",
 	'coll-rendering_title' => 'Renderendj',
@@ -5657,7 +5659,7 @@ Opmerkinge:
 	'coll-download_notfound_text' => "'t Bestandj det se perbieërs óp te haole besteit neet: Mesjiens is 't gewösj èn mót 't ópnuuj gemaak waere.",
 	'coll-is_cached' => '<ul><li>d\'r Is \'n versje ven \'t dokument besjikber inne cache, dös opnuuj rendere woor neet neudig.
 <a href="$1">Opnuuj rendere.</a></li></ul>',
-	'coll-excluded-templates' => '* Sjebloeaner inne kattegorie [[:Category:$1|$1]] waere genegeerdj.',
+	'coll-excluded-templates' => '* Sjeblone in de categorie [[:Category:$1|$1]] waere genegeerdj.',
 	'coll-blacklisted-templates' => '* Sjebloeaner óppe zwarte lies [[:$1]] waere genegeerdj.',
 	'coll-return_to_collection' => '<p>Trökgaon nao <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Bestèl es gedrök book',
@@ -5666,7 +5668,7 @@ Opmerkinge:
 	'coll-about_pp' => 'Euver $1',
 	'coll-invalid_podpartner_title' => 'Óngèljige print-on-demandpartner',
 	'coll-invalid_podpartner_msg' => "D'n ópgegaeve print-on-demandpartner is óngèljig.
-Nöm kóntak óp mid öche MediaWikiadmin.",
+Nöm kóntak op mèt eure MediaWikiadmin.",
 	'coll-license' => 'Lisens',
 	'coll-return_to' => 'Trök göch [[:$1]]',
 	'coll-more_info' => 'Toean mieër inlichtinger',
@@ -6147,7 +6149,7 @@ $messages['nds-nl'] = array(
 	'coll-savedbook_template' => 'op-esleugen_boek',
 	'coll-your_book' => 'Joew boek',
 	'coll-download_title' => 'Oflaojen',
-	'coll-download_text' => 'Um een versie van joew boek of te laojen, kies een fermaot en klik op de knoppe.',
+	'coll-download_text' => 'Kies een bestaansfermaot en klik op de knoppe um joew boek binnen te haolen.',
 );
 
 /** Dutch (Nederlands)
