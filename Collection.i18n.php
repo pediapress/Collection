@@ -239,6 +239,7 @@ $1 is not text; it is the http:// address of the book.',
 	'coll-about_pp' => '{{Identical|About}}',
 	'coll-invalid_podpartner_title' => 'POD means print-on-demand',
 	'coll-invalid_podpartner_msg' => 'POD means print-on-demand.',
+	'coll-license' => '{{Identical|License}}',
 	'coll-return_to' => '{{Identical|Return to $1}}',
 	'coll-order_info_article' => '{{doc-important|Do not translate "<nowiki>{{MediaWiki:Coll-helppage}}/</nowiki>"}}
 Sub page of {{msg-mw|coll-helppage}} ({{int:coll-helppage}})
@@ -2913,7 +2914,7 @@ $messages['fa'] = array(
 $messages['fi'] = array(
 	'coll-desc' => '[[Special:Book|Laadi kirjoja]].',
 	'coll-book_creator_intro' => "<big>''Kirjan luontitilassa'' voit luoda kirjan, joka koostuu haluamistasi wikisivuista. Voit viedä kirjasi eri muodoissa (esimerkiksi PDF- tai ODF-tiedostona) tai tilata sen painettuna.</big>",
-	'coll-manage_your_book' => 'Hallinnoi kirjaasi',
+	'coll-manage_your_book' => 'Hallinnoi kirjaa',
 	'coll-book_creator_help' => 'Katso [[{{MediaWiki:Coll-helppage}}|ohjesivulta lisätietoja kirjoista]].',
 	'coll-start_book_creator' => 'Käynnistä kirjan luontitila',
 	'coll-book_creator_continue' => 'Jatka kirjan luontitilan käyttämistä',
