@@ -5740,6 +5740,7 @@ $messages['ml'] = array(
 	'coll-download_title' => 'ശേഖരം PDF ആയി ഡൗണ്‍ലോഡ് ചെയ്യുക.',
 	'coll-download_text' => 'താളുകളുടെ ശേഖരത്തിന്റെ യാന്ത്രികമായി നിര്‍മ്മിക്കപ്പെട്ട PDF ഡൗലോഡ് ചെയ്യുന്നതിനു ബട്ടണില്‍ ഞെക്കുക.',
 	'coll-download' => 'ഡൗൺലോഡ്',
+	'coll-format_label' => 'തരം:',
 	'coll-remove' => 'നീക്കം ചെയ്യുക',
 	'coll-show' => 'പ്രദർശിപ്പിക്കുക',
 	'coll-move_to_top' => 'ഏറ്റവും മുകളിലേക്ക് നീങ്ങുക',
@@ -6889,6 +6890,7 @@ $messages['ps'] = array(
 /** Portuguese (Português)
  * @author 555
  * @author Giro720
+ * @author Hamilton Abreu
  * @author Heldergeovane
  * @author Lijealso
  * @author Luckas Blade
@@ -6927,7 +6929,7 @@ Esta página não funcionará correctamente, excepto se o JavaScript for activad
 	'coll-download' => 'Descarregar',
 	'coll-format_label' => 'Formato:',
 	'coll-remove' => 'Remover',
-	'coll-show' => 'Exibir',
+	'coll-show' => 'Mostrar',
 	'coll-move_to_top' => 'Mover para o topo',
 	'coll-move_up' => 'Mover acima',
 	'coll-move_down' => 'Mover abaixo',
