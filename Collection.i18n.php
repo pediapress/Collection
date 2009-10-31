@@ -1113,6 +1113,7 @@ Kit e darempred gant ur merour MediaWiki.",
 	'coll-more_info' => "Diskouez muioc'h a ditouroù",
 	'coll-hide_info' => 'Kuzhat an titouroù',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress urzhiañ titouroù',
+	'coll-suggest_show' => 'diskouez',
 	'right-collectionsaveasuserpage' => 'Enrollañ levrioù evel pajenn implijer',
 	'right-collectionsaveascommunitypage' => 'Enrollañ levrioù evel ur bajenn eus ar gumuniezh',
 );

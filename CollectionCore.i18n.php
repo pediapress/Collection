@@ -296,9 +296,12 @@ $messages['br'] = array(
 	'coll-print_export' => 'Moullañ / ezporzhiañ',
 	'coll-create_a_book' => 'Sevel ul levr',
 	'coll-create_a_book_tooltip' => 'Sevel ul levr pe un torkad pennadoù',
+	'coll-book_creator' => 'Saver levrioù',
 	'coll-download_as' => 'Pellgargañ evel $1',
 	'coll-download_as_tooltip' => 'Pellgargañ ur stumm $1 eus ar bajenn wiki-mañ',
 	'coll-disable' => 'diweredekaat',
+	'coll-book_creator_disable' => 'Diweredekaat ar saver levrioù',
+	'coll-book_creator_disable_tooltip' => "Paouez d'ober gant ar saver levrioù",
 	'coll-add_category' => "Ouzhpennañ ar rummad-mañ d'ho levr",
 	'coll-add_category_popup' => "Ouzhpennañ pajennoù wiki er rummad liammet d'ho levr",
 	'coll-add_category_tooltip' => "Ouzhpennañ an holl pajennoù wiki er rummad-mañ d'ho levr",
@@ -321,6 +324,10 @@ $messages['br'] = array(
 	'coll-remove_page_tooltip' => 'Tennañ ar bajenn red eus ho levr',
 	'coll-show_collection' => 'Diskouez al levr',
 	'coll-show_collection_tooltip' => 'Klikañ evit aozañ/pellgargañ/urzhiañ ho levr',
+	'coll-not_addable' => "N'haller ket opuzhpennañ ar bajenn-mañ",
+	'coll-make_suggestions' => 'Kinnig pajennoù',
+	'coll-make_suggestions_tooltip' => "Diskouez ar c'hinnigoù diazezet war pajennoù ho levr",
+	'coll-suggest_empty' => 'goullo',
 );
 
 /** Bosnian (Bosanski)
