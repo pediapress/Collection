@@ -1001,6 +1001,7 @@ JavaScript সক্রিয় না করা পর্যন্ত, এই 
 
 /** Breton (Brezhoneg)
  * @author Fulup
+ * @author Y-M D
  */
 $messages['br'] = array(
 	'coll-desc' => '[[Special:Book|Sevel levrioù]]',
@@ -1116,6 +1117,7 @@ Kit e darempred gant ur merour MediaWiki.",
 	'coll-suggest_show' => 'diskouez',
 	'right-collectionsaveasuserpage' => 'Enrollañ levrioù evel pajenn implijer',
 	'right-collectionsaveascommunitypage' => 'Enrollañ levrioù evel ur bajenn eus ar gumuniezh',
+	'coll-or' => 'pe',
 );
 
 /** Bosnian (Bosanski)
