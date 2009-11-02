@@ -1709,6 +1709,8 @@ $messages['ml'] = array(
 	'coll-print_export' => 'അച്ചടിയ്ക്കുക/കയറ്റുമതി ചെയ്യുക',
 	'coll-create_a_book' => 'എന്റെ ശേഖരം',
 	'coll-download_as' => '$1 ആയി ഡൗൺലോഡ് ചെയ്യുക',
+	'coll-download_as_tooltip' => 'ഈ വിക്കി താളിന്റെ $1 പതിപ്പ് ഡൗൺലോഡ് ചെയ്യുക',
+	'coll-disable' => 'നിർജീവമാക്കുക',
 	'coll-add_category' => 'വര്‍ഗ്ഗം ചേര്‍ക്കുക',
 	'coll-clear_collection' => 'ശേഖരം മായ്ക്കുക',
 	'coll-help' => 'സഹായം',
@@ -2418,6 +2420,7 @@ $messages['su'] = array(
 
 /** Swedish (Svenska)
  * @author Boivie
+ * @author GameOn
  * @author M.M.S.
  * @author Micke
  * @author Najami
@@ -2454,6 +2457,7 @@ $messages['sv'] = array(
 	'coll-remove_page_tooltip' => 'Ta bort den nuvarande wikisidan från din bok',
 	'coll-show_collection' => 'Visa bok',
 	'coll-show_collection_tooltip' => 'Klicka för att redigera/ladda ner/beställa din bok',
+	'coll-suggest_empty' => 'tom',
 );
 
 /** Telugu (తెలుగు)
