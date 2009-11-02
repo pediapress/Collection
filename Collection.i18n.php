@@ -8158,6 +8158,7 @@ $messages['su'] = array(
 
 /** Swedish (Svenska)
  * @author Boivie
+ * @author GameOn
  * @author H92
  * @author Jon Harald Søby
  * @author M.M.S.
@@ -8258,6 +8259,7 @@ Noter:
 	'coll-notfound_text' => 'Kunde inte hitta boksida.',
 	'coll-download_notfound_title' => 'Hittade inte filen',
 	'coll-download_notfound_text' => 'Filen du försöker ladda ner finns inte: den kan ha raderats och behöver återskapas.',
+	'coll-download_failed_title' => 'Fel under nedladdning',
 	'coll-is_cached' => '<ul><li>En cachad version av dokumentet har hittats, så ingen rendering behövdes. <a href="$1">Framtvinga omrendering.</a></li></ul>',
 	'coll-excluded-templates' => '* Mallar i kategorin [[:Category:$1|$1]] har uteslutits.',
 	'coll-blacklisted-templates' => '* Mallar på svartalistan [[:$1]] har uteslutits.',
@@ -8274,8 +8276,11 @@ Var god kontakta din MediaWiki-administratör.',
 	'coll-more_info' => 'Visa mer information',
 	'coll-hide_info' => 'Göm information',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Beställningsinformation PediaPress',
+	'coll-suggest_your_book' => 'Din bok',
+	'coll-suggest_show' => 'visa',
 	'right-collectionsaveasuserpage' => 'Spara böcker som användarsidor',
 	'right-collectionsaveascommunitypage' => 'Spara böcker som gemenskapssida',
+	'coll-or' => 'eller',
 );
 
 /** Telugu (తెలుగు)
