@@ -2432,9 +2432,12 @@ $messages['sv'] = array(
 	'coll-print_export' => 'Skriv ut/exportera',
 	'coll-create_a_book' => 'Skapa en bok',
 	'coll-create_a_book_tooltip' => 'Skapa en bok eller artikelsamling',
+	'coll-book_creator' => 'Bokskapare',
 	'coll-download_as' => 'Hämta som $1',
 	'coll-download_as_tooltip' => 'Ladda ner den här wikisidan i $1-format',
 	'coll-disable' => 'slå av',
+	'coll-book_creator_disable' => 'Avaktiviera bokskapare',
+	'coll-book_creator_disable_tooltip' => 'Sluta använda bokskapare',
 	'coll-add_category' => 'Lägg till den här kategorin i boken',
 	'coll-add_category_popup' => 'Lägg till wikisidor i den länkade kategorin till din bok',
 	'coll-add_category_tooltip' => 'Lägg till alla wikisidor i den här kategorin till din bok',
@@ -2457,6 +2460,9 @@ $messages['sv'] = array(
 	'coll-remove_page_tooltip' => 'Ta bort den nuvarande wikisidan från din bok',
 	'coll-show_collection' => 'Visa bok',
 	'coll-show_collection_tooltip' => 'Klicka för att redigera/ladda ner/beställa din bok',
+	'coll-not_addable' => 'Denna sida kan inte läggas till',
+	'coll-make_suggestions' => 'Föreslå sidor',
+	'coll-make_suggestions_tooltip' => 'Visa förslag baserade på sidorna i din bok',
 	'coll-suggest_empty' => 'tom',
 );
 
