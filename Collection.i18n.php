@@ -5737,6 +5737,10 @@ $messages['ml'] = array(
 	'coll-print_template_prefix' => 'അച്ചടിയ്ക്കുക',
 	'coll-print_template_pattern' => '$1/അച്ചടിയ്ക്കുക',
 	'coll-unknown_subpage_title' => 'അജ്ഞാതമായ ഉപതാൾ',
+	'coll-couldnotaddarticle_title' => 'വിക്കി താൾ കൂട്ടിച്ചേർക്കാൻ കഴിയില്ല',
+	'coll-couldnotaddarticle_msg' => 'വിക്കി താൾ കൂട്ടിച്ചേർക്കാൻ കഴിഞ്ഞില്ല.',
+	'coll-couldnotremovearticle_title' => 'വിക്കിതാൾ നീക്കം ചെയ്യാൻ കഴിയില്ല',
+	'coll-couldnotremovearticle_msg' => 'വിക്കി താൾ നീക്കം ചെയ്യാൻ കഴിയില്ല.',
 	'coll-noscript_text' => '<h1>ജാവാസ്ക്രിപ്റ്റ് വേണ്ടിയിരിക്കുന്നു!</h1>
 <strong>താങ്കളുടെ ബ്രൗസർ ജാവാസ്ക്രിപ്റ്റ് പിന്തുണയില്ലാത്തതോ ജാവാസ്ക്രിപ്റ്റ് സജ്ജമാക്കാത്തതോ ആണ്.
 ജാവാസ്ക്രിപ്റ്റ് സജ്ജമാക്കിയില്ലെങ്കിൽ, ഈ താൾ ശരിയായ രീതിയിൽ പ്രവർത്തിക്കില്ല.</strong>',
@@ -8189,8 +8193,8 @@ Denna sida kommer inte att fungera korrekt innan JavaScript finns tillgängligt.
 	'coll-savedbook_template' => 'sparad_bok',
 	'coll-your_book' => 'Din bok',
 	'coll-download_title' => 'Hämta',
-	'coll-download_text' => 'För att hämta en offline-version välj ett format och klicka på knappen.',
-	'coll-download_as_text' => 'För att ladda ner en version i formatet $1, klicka på knappen.',
+	'coll-download_text' => 'För att ladda ner din bok, välj ett format och klicka på knappen.',
+	'coll-download_as_text' => 'Klicka på knappen för att ladda ner din bok i formatet $1.',
 	'coll-download' => 'Hämta',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Ta bort',
@@ -8223,7 +8227,7 @@ Denna sida kommer inte att fungera korrekt innan JavaScript finns tillgängligt.
 	'coll-personal_collection_label' => 'Personlig bok:',
 	'coll-community_collection_label' => 'Gemensam bok:',
 	'coll-save_collection' => 'Spara bok',
-	'coll-save_category' => 'Böcker sparas i kategorin [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Alla sparade böcker läggs till i kategorin [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Sidan existerar. 
 Vill du skriva över den?',
 	'coll-overwrite_text' => 'En sida med namnet [[:$1]] finns redan.
