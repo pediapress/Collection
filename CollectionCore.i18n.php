@@ -243,6 +243,7 @@ $messages['be-tarask'] = array(
 $messages['bg'] = array(
 	'coll-download_as' => 'Изтегляне като $1',
 	'coll-add_category' => 'Добавяне на категория',
+	'coll-help' => 'Помощ',
 	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страници}}',
 	'coll-printable_version_pdf' => 'PDF версия',
 );
