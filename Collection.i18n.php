@@ -856,6 +856,11 @@ $messages['bg'] = array(
 	'coll-return_to' => 'Връщане към [[:$1]]',
 	'coll-more_info' => 'Показване на повече информация',
 	'coll-hide_info' => 'Скриване на информацията',
+	'coll-suggested_articles' => 'Предположения',
+	'coll-suggest_add_selected' => 'Добавяне на избраните страници',
+	'coll-suggest_ban_selected' => 'Премахване на избраните страници',
+	'coll-suggest_show' => 'показване',
+	'coll-or' => 'или',
 );
 
 /** Bengali (বাংলা)
@@ -1000,6 +1005,7 @@ JavaScript সক্রিয় না করা পর্যন্ত, এই 
 );
 
 /** Breton (Brezhoneg)
+ * @author Fohanno
  * @author Fulup
  * @author Y-M D
  */
@@ -1114,7 +1120,10 @@ Kit e darempred gant ur merour MediaWiki.",
 	'coll-more_info' => "Diskouez muioc'h a ditouroù",
 	'coll-hide_info' => 'Kuzhat an titouroù',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress urzhiañ titouroù',
+	'coll-suggested_articles' => 'Alioù',
+	'coll-suggest_your_book' => 'Ho levr',
 	'coll-suggest_show' => 'diskouez',
+	'coll-suggest_undo_tooltip' => 'Dizober an ober-mañ',
 	'right-collectionsaveasuserpage' => 'Enrollañ levrioù evel pajenn implijer',
 	'right-collectionsaveascommunitypage' => 'Enrollañ levrioù evel ur bajenn eus ar gumuniezh',
 	'coll-or' => 'pe',
@@ -2689,8 +2698,8 @@ Võib-olla on see kustutatud ja tuleb taasluua.',
 	'coll-suggest_article_remove' => 'Lehekülg <strong>$1</strong> on raamatust eemaldatud ($2).',
 	'coll-suggest_undo_tooltip' => 'Võta see toiming tagasi',
 	'coll-suggest_undo' => 'võta tagasi',
-	'right-collectionsaveasuserpage' => 'Salvesta raamatud kasutajaleheküljena',
-	'right-collectionsaveascommunitypage' => 'Salvesta raamat ühisleheküljena',
+	'right-collectionsaveasuserpage' => 'Salvestada raamatud kasutajaleheküljena',
+	'right-collectionsaveascommunitypage' => 'Salvestada raamat ühisleheküljena',
 	'coll-or' => 'või',
 );
 
