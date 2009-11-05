@@ -1121,9 +1121,11 @@ Kit e darempred gant ur merour MediaWiki.",
 	'coll-hide_info' => 'Kuzhat an titouroù',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress urzhiañ titouroù',
 	'coll-suggested_articles' => 'Alioù',
+	'coll-suggest_add_selected' => 'Ouzhpennañ ar pajennoù diuzet',
 	'coll-suggest_your_book' => 'Ho levr',
 	'coll-suggest_show' => 'diskouez',
 	'coll-suggest_undo_tooltip' => 'Dizober an ober-mañ',
+	'coll-suggest_undo' => 'dizober',
 	'right-collectionsaveasuserpage' => 'Enrollañ levrioù evel pajenn implijer',
 	'right-collectionsaveascommunitypage' => 'Enrollañ levrioù evel ur bajenn eus ar gumuniezh',
 	'coll-or' => 'pe',
@@ -5800,6 +5802,8 @@ $messages['ml'] = array(
 	'coll-notfound_title' => 'ശേഖരം കണ്ടില്ല',
 	'coll-notfound_text' => 'ശേഖര താള്‍ കണ്ടെത്താന്‍ കഴിഞ്ഞില്ല.',
 	'coll-download_notfound_title' => 'പ്രമാണം കണ്ടെത്താൻ കഴിഞ്ഞില്ല',
+	'coll-download_notfound_text' => 'താങ്കൾ ഡൗൺലോഡ് ചെയ്യാൻ ശ്രമിക്കുന്ന പ്രമാണം നിലവിലില്ല:
+ചിലപ്പോളത് മായ്ക്കപ്പെട്ടിരിക്കുന്നതാവാം, അങ്ങിനെയെങ്കിൽ അത് പുനഃസൃഷ്ടിക്കേണ്ടതുണ്ട്.',
 	'coll-download_failed_title' => 'ഡൗൺലോഡ് ചെയ്യുമ്പോൾ പിഴവ് സംഭവിച്ചു',
 	'coll-download_failed_text' => '$1 എന്ന പ്രമാണം ഡൗൺലോഡ് ചെയ്തുകൊണ്ടിരിക്കുമ്പോൾ ഒരു പിഴവ് സംഭവിച്ചിരിക്കുന്നു',
 	'coll-excluded-templates' => '*[[:Category:$1|$1]] എന്ന വർഗ്ഗത്തിലുൾപ്പെട്ട ഫലകങ്ങൾ ഒഴിവാക്കി.',
@@ -8796,6 +8800,7 @@ Ekle veya sil butonlarına her bastığınızda liste yenilenir.',
  * @author AS
  * @author Ahonc
  * @author Aleksandrit
+ * @author Prima klasy4na
  */
 $messages['uk'] = array(
 	'coll-desc' => '[[Special:Book|Створює книги]]',
@@ -8811,7 +8816,7 @@ $messages['uk'] = array(
 	'coll-savedbook_template' => 'збережена_книга',
 	'coll-your_book' => 'Ваша книга',
 	'coll-download_title' => 'Завантажити',
-	'coll-download_text' => 'Щоб завантажити автономну версію, оберіть формат і натисніть кнопку.',
+	'coll-download_text' => 'Щоб завантажити вашу книгу, оберіть формат і натисніть кнопку.',
 	'coll-download_as_text' => 'Клацніть кнопку, щоб завантажити версію у форматі $1.',
 	'coll-download' => 'Завантажити',
 	'coll-format_label' => 'Формат:',
