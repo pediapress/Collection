@@ -3725,9 +3725,9 @@ $messages['he'] = array(
 	'coll-suggest_your_book' => 'הספר שלכם',
 	'coll-suggest_show' => 'הצגה',
 	'coll-suggest_ban_tooltip' => 'הסרת דף זה מרשימת ההצעות',
-	'coll-suggest_article_ban' => "הדף <strong>$1</strong> הוסר מרשימת ההצעות ($2).",
-	'coll-suggest_article_add' => "הדף <strong>$1</strong> נוסף לספר שלכם ($2).",
-	'coll-suggest_article_remove' => "הדף <strong>$1</strong> הוסר מהספר שלכם ($2).",
+	'coll-suggest_article_ban' => 'הדף <strong>$1</strong> הוסר מרשימת ההצעות ($2).',
+	'coll-suggest_article_add' => 'הדף <strong>$1</strong> נוסף לספר שלכם ($2).',
+	'coll-suggest_article_remove' => 'הדף <strong>$1</strong> הוסר מהספר שלכם ($2).',
 	'coll-suggest_undo_tooltip' => 'ביטול פעולה זו',
 	'coll-suggest_undo' => 'ביטול',
 	'right-collectionsaveasuserpage' => 'שמירת ספרים כדפי משתמש',
@@ -6175,7 +6175,7 @@ $messages['nds-nl'] = array(
 );
 
 /** Dutch (Nederlands)
- * @author Erwin85
+ * @author Erwin
  * @author GerardM
  * @author McDutchie
  * @author Mwpnl
