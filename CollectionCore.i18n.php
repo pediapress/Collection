@@ -1996,8 +1996,11 @@ $messages['os'] = array(
 $messages['pdc'] = array(
 	'coll-bookscategory' => 'Bicher',
 	'coll-clear_collection' => 'Buch lösche',
+	'coll-help' => 'Hilf',
 	'coll-helppage' => 'Help:Bicher',
+	'coll-n_pages' => '$1 {{PLURAL:$1|Blatt|Bledder}}',
 	'coll-printable_version_pdf' => 'PDF-Version',
+	'coll-suggest_empty' => 'leer',
 );
 
 /** Polish (Polski)

@@ -6727,14 +6727,21 @@ $messages['pdc'] = array(
 	'coll-print_template_pattern' => '$1/Druck',
 	'coll-your_book' => 'Dei Buch',
 	'coll-remove' => 'Lösche',
+	'coll-show' => 'Zeige',
 	'coll-rename' => 'Naame ennere',
 	'coll-empty_collection' => 'Leeres Buch',
 	'coll-revision' => 'Version: $1',
 	'coll-yes' => 'Ya',
 	'coll-no' => 'Nee',
 	'coll-overwrite' => 'Iwwerschreiwe',
+	'coll-limit_exceeded_title' => 'Buch zu gross',
+	'coll-rendering_article' => '(Wikiblatt: $1)',
+	'coll-rendering_page' => '(Blatt: $1)',
 	'coll-about_pp' => 'Iwwer $1',
 	'coll-return_to' => 'Zerick zu [[:$1]]',
+	'coll-suggest_your_book' => 'Dei Buch',
+	'coll-suggest_show' => 'zeige',
+	'coll-or' => 'odder',
 );
 
 /** Polish (Polski)
@@ -6938,9 +6945,9 @@ $messages['pt'] = array(
 	'coll-couldnotaddarticle_msg' => 'A página wiki não pode ser adicionada.',
 	'coll-couldnotremovearticle_title' => 'Não foi possível remover a página wiki',
 	'coll-couldnotremovearticle_msg' => 'A página wiki não pôde ser removida.',
-	'coll-noscript_text' => '<h1>JavaScript é Requerido!</h1>
-<strong>O seu "browser" não suporta JavaScript, ou o JavaScript foi desactivado.
-Esta página não funcionará correctamente, excepto se o JavaScript for activado.</strong>',
+	'coll-noscript_text' => '<h1>É necessário o JavaScript!</h1>
+<strong>O seu navegador não suporta JavaScript ou o JavaScript foi desactivado.
+Esta página não funcionará correctamente, se não activar o JavaScript.</strong>',
 	'coll-savedbook_template' => 'livro_gravado',
 	'coll-your_book' => 'Seu livro',
 	'coll-download_title' => 'Descarregar',
@@ -8896,6 +8903,8 @@ $messages['uk'] = array(
 Будь-ласка, зв'яжіться з вашим адміністратором MediaWiki.",
 	'coll-license' => 'Ліцензія',
 	'coll-return_to' => 'Повернення до [[:$1]]',
+	'coll-suggest_undo_tooltip' => 'Скасувати цю дію',
+	'coll-suggest_undo' => 'скасувати',
 );
 
 /** Vèneto (Vèneto)
