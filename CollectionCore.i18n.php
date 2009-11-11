@@ -1433,6 +1433,7 @@ $messages['it'] = array(
  * @author Aotake
  * @author Fryed-peach
  * @author JtFuruhata
+ * @author Marine-Blue
  */
 $messages['ja'] = array(
 	'coll-print_export' => '印刷/エクスポート',
@@ -1467,8 +1468,8 @@ $messages['ja'] = array(
 	'coll-show_collection' => 'ブックを表示',
 	'coll-show_collection_tooltip' => 'クリックしてあなたのブックを編集、ダウンロード、または注文する',
 	'coll-not_addable' => 'このページは追加できません',
-	'coll-make_suggestions' => 'ページを提案',
-	'coll-make_suggestions_tooltip' => 'あなたのブック中のページに基づいて提案を表示します',
+	'coll-make_suggestions' => 'ページの候補',
+	'coll-make_suggestions_tooltip' => 'あなたのブックに保存されたページを元に候補を表示します',
 	'coll-suggest_empty' => 'なし',
 );
 
@@ -1709,19 +1710,30 @@ $messages['lt'] = array(
 $messages['ml'] = array(
 	'coll-print_export' => 'അച്ചടിയ്ക്കുക/കയറ്റുമതി ചെയ്യുക',
 	'coll-create_a_book' => 'എന്റെ ശേഖരം',
+	'coll-create_a_book_tooltip' => 'ഒരു പുസ്തകം അല്ലങ്കിൽ താളുകളുടെ ശേഖരം സൃഷ്ടിക്കുക',
+	'coll-book_creator' => 'പുസ്തക സൃഷ്ടി ഉപകരണം',
 	'coll-download_as' => '$1 ആയി ഡൗൺലോഡ് ചെയ്യുക',
 	'coll-download_as_tooltip' => 'ഈ വിക്കി താളിന്റെ $1 പതിപ്പ് ഡൗൺലോഡ് ചെയ്യുക',
 	'coll-disable' => 'നിർജീവമാക്കുക',
+	'coll-book_creator_disable_tooltip' => 'പുസ്തക സൃഷ്ടി ഉപകരണം ഉപയോഗിക്കുന്നതു നിർത്തുക',
 	'coll-add_category' => 'വര്‍ഗ്ഗം ചേര്‍ക്കുക',
-	'coll-clear_collection' => 'ശേഖരം മായ്ക്കുക',
+	'coll-add_category_tooltip' => 'ഈ വർഗ്ഗത്തിലുള്ള എല്ലാ വിക്കി താളുകളും താങ്കളുടെ പുസ്തകത്തിലേയ്ക്ക് കൂട്ടിച്ചേർക്കുക',
+	'coll-add_this_page' => 'ഈ താൾ താങ്കളുടെ പുസ്തകത്തിലേയ്ക്ക് കൂട്ടിച്ചേർക്കുക',
+	'coll-add_page_tooltip' => 'ഇപ്പോഴത്തെ താൾ താങ്കളുടെ പുസ്തകത്തിലേയ്ക്ക് ചേർക്കുക',
+	'coll-bookscategory' => 'പുസ്തകങ്ങൾ',
+	'coll-clear_collection' => 'പുസ്തകം മായ്ക്കുക',
+	'coll-clear_collection_tooltip' => 'താങ്കളുടെ ഈ പുസ്തകത്തിൽ നിന്നും എല്ലാ താളുകളും നീക്കം ചെയ്യുക',
 	'coll-help' => 'സഹായം',
-	'coll-helppage' => 'Help:ശേഖരം',
-	'coll-load_collection' => 'ശേഖരം ലോഡ് ചെയ്യുക',
+	'coll-help_tooltip' => 'പുസ്തകങ്ങൾ സൃഷ്ടിക്കുന്നതു സംബന്ധിച്ച സഹായം പ്രദർശിപ്പിക്കുക',
+	'coll-helppage' => 'Help:പുസ്തകം',
+	'coll-load_collection' => 'പുസ്തകം ശേഖരിക്കുക',
 	'coll-n_pages' => '{{PLURAL:$1|ഒരു താൾ|$1 താളുകൾ}}',
 	'coll-printable_version_pdf' => 'പി.ഡി.എഫ്. പതിപ്പ്',
+	'coll-remove_this_page' => 'ഈ താൾ താങ്കളുടെ പുസ്തകത്തിൽ നിന്നും നീക്കുക',
 	'coll-show_collection' => 'ശേഖരം കാണിക്കുക',
 	'coll-not_addable' => 'ഈ താൾ കൂട്ടിച്ചേർക്കാൻ കഴിയില്ല',
 	'coll-make_suggestions' => 'താളുകൾ നിർദ്ദേശിക്കുക',
+	'coll-make_suggestions_tooltip' => 'താങ്കളുടെ പുസ്തകത്തിനനുസരിച്ചുള്ള നിർദ്ദേശങ്ങൾ മുന്നോട്ട് വെയ്ക്കുക',
 	'coll-suggest_empty' => 'ശൂന്യം',
 );
 
