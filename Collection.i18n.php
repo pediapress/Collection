@@ -5821,7 +5821,7 @@ $messages['ml'] = array(
 	'coll-blacklisted-templates' => '*കരിമ്പട്ടികയിലുള്ള ഫലകങ്ങൾ [[:$1]] ഒഴിവാക്കിയിരിക്കുന്നു.',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p>-ലേക്കു തിരിച്ചു പോവുക',
 	'coll-book_title' => 'അച്ചടിച്ച പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
-	'coll-book_text' => 'താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന സേവനദാതാക്കളെ സന്ദര്‍ശിച്ച് നിങ്ങളുടെ ശേഖരത്തിന്റെ അച്ചടി രൂപം ഓര്‍ഡര്‍ ചെയ്യാവുന്നതാണ്‌:',
+	'coll-book_text' => 'ഞങ്ങളുടെ ആവശ്യപ്പെട്ടാൽ-അച്ചടിച്ചു-തരുന്ന പങ്കാളിയുടെ പക്കൽ നിന്നും അച്ചടിച്ച പുസ്തകം സ്വന്തമാക്കുക.',
 	'coll-order_from_pp' => '$1-ല്‍ നിന്നു പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
 	'coll-about_pp' => '$1-നെ കുറിച്ച്',
 	'coll-invalid_podpartner_title' => 'അസാധുവായ POD പങ്കാളി',
@@ -7897,8 +7897,8 @@ $messages['sr-ec'] = array(
 	'coll-savedbook_template' => 'снимљена_књига',
 	'coll-your_book' => 'Ваша књига',
 	'coll-download_title' => 'Преузми',
-	'coll-download_text' => 'Да бисте преузели верзију изаберите формат и кликните на дугме.',
-	'coll-download_as_text' => 'Да бисте преузели верзију у $1 формату кликните на дугме.',
+	'coll-download_text' => 'Изаберите жељени формат и притисните дугме да бисте преузели Вашу књигу.',
+	'coll-download_as_text' => 'Притисните дугме да бисте преузели вашу књигу у $1 формату.',
 	'coll-download' => 'Преузми',
 	'coll-format_label' => 'Врста:',
 	'coll-remove' => 'Уклони',
@@ -7931,7 +7931,7 @@ $messages['sr-ec'] = array(
 	'coll-personal_collection_label' => 'Лична књига:',
 	'coll-community_collection_label' => 'Заједничка књига:',
 	'coll-save_collection' => 'Сними књигу',
-	'coll-save_category' => 'Све књиге су снимљене у категорију [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Све снимљене књиге су додате у категорију [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Страница већ постоји.
 Да је пребришем?',
 	'coll-overwrite_text' => 'Страница са именом [[:$1]] већ постоји.
@@ -7994,9 +7994,15 @@ $messages['sr-ec'] = array(
 
 /** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
+ * @author Михајло Анђелковић
  */
 $messages['sr-el'] = array(
 	'coll-desc' => '[[Special:Book|Napravi knjige]]',
+	'coll-manage_your_book' => 'Uredi svoju knjigu',
+	'coll-book_creator_help' => 'Vidi [[{{MediaWiki:Coll-helppage}}|pomoćnu stranu o knjigama]] za više podataka.',
+	'coll-start_book_creator' => 'Započni uređivač knjiga',
+	'coll-book_creator_continue' => 'Nastavi sa korišćenjem uređivača knjiga',
+	'coll-book_creator_disable_text' => "''Uređivač knjiga'' će biti onemogućen a knjiga na kojoj radite će biti uklonjena.",
 	'coll-collection' => 'Knjiga',
 	'coll-collections' => 'Knjige',
 	'coll-exclusion_category_title' => 'Izuzmi pri štampanju',
@@ -8004,14 +8010,18 @@ $messages['sr-el'] = array(
 	'coll-print_template_pattern' => '$1/Štampa',
 	'coll-unknown_subpage_title' => 'Nepoznata podstrana',
 	'coll-unknown_subpage_text' => 'Ova podstrana [[Special:Book|knjige]] ne postoji',
+	'coll-couldnotaddarticle_title' => 'Dodavanje viki strane nije uspelo',
+	'coll-couldnotaddarticle_msg' => 'Dodavanje viki stranice nije moguće.',
+	'coll-couldnotremovearticle_title' => 'Uklanjanje viki stranice nije moguće',
+	'coll-couldnotremovearticle_msg' => 'Viki stranicu nije moguće ukloniti.',
 	'coll-noscript_text' => '<h1>Javaskript je neophodan!</h1>
 <strong>Vaš brovzer ne podržava javaskript, ili je javaskript isključen.
 Ova stranica neće raditi ispravno bez javaskripta.</strong>',
 	'coll-savedbook_template' => 'snimljena_knjiga',
 	'coll-your_book' => 'Vaša knjiga',
 	'coll-download_title' => 'Preuzmi',
-	'coll-download_text' => 'Da biste preuzeli verziju izaberite format i kliknite na dugme.',
-	'coll-download_as_text' => 'Da biste preuzeli verziju u $1 formatu kliknite na dugme.',
+	'coll-download_text' => 'Izaberite željeni format i pritisnite dugme da biste preuzeli Vašu knjigu.',
+	'coll-download_as_text' => 'Pritisnite dugme da biste preuzeli vašu knjigu u $1 formatu.',
 	'coll-download' => 'Preuzmi',
 	'coll-format_label' => 'Vrsta:',
 	'coll-remove' => 'Ukloni',
@@ -8044,7 +8054,7 @@ Ova stranica neće raditi ispravno bez javaskripta.</strong>',
 	'coll-personal_collection_label' => 'Lična knjiga:',
 	'coll-community_collection_label' => 'Zajednička knjiga:',
 	'coll-save_collection' => 'Snimi knjigu',
-	'coll-save_category' => 'Sve knjige su snimljene u kategoriju [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Sve snimljene knjige su dodate u kategoriju [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Stranica već postoji.
 Da je prebrišem?',
 	'coll-overwrite_text' => 'Stranica sa imenom [[:$1]] već postoji.
@@ -8081,6 +8091,8 @@ Napomena:
 	'coll-notfound_text' => 'Ne mogu da nađem stranu knjige.',
 	'coll-download_notfound_title' => 'Fajl nije pronađen',
 	'coll-download_notfound_text' => 'Fajl koji pokušavate da preuzmete ne postoji: moguće je da je je obrisan i mora biti ponovo napravljen.',
+	'coll-download_failed_title' => 'Greška prilikom skidanja',
+	'coll-download_failed_text' => 'Javila se greška prilikom skidanja fajla: $1',
 	'coll-is_cached' => '<ul><li>Izrađena verzija dokumenta je pronađena, tako da izrađivanje nije neophodno. <a href="$1">Nametni ponovno izrađivanje.</a></li></ul>',
 	'coll-excluded-templates' => '* Šabloni u kategoriji [[:Category:$1|$1]] su isključeni.',
 	'coll-blacklisted-templates' => '* Šabloni na crnoj listi [[:$1]] su isključeni.',
@@ -8096,6 +8108,11 @@ Molim kontaktirajte svog MedijaViki administratora.',
 	'coll-return_to' => 'Vrati na [[:$1]]',
 	'coll-more_info' => 'Pokaži više informacija',
 	'coll-hide_info' => 'Skloni informacije',
+	'coll-suggest_ban_selected' => 'Ukloni odabrane strane',
+	'coll-suggest_your_book' => 'Tvoja knjiga',
+	'coll-suggest_undo_tooltip' => 'Poništi ovu akciju',
+	'coll-suggest_undo' => 'vrati',
+	'coll-or' => 'ili',
 );
 
 /** Seeltersk (Seeltersk)
