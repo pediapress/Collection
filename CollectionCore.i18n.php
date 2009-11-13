@@ -1731,6 +1731,7 @@ $messages['ml'] = array(
 	'coll-n_pages' => '{{PLURAL:$1|ഒരു താൾ|$1 താളുകൾ}}',
 	'coll-printable_version_pdf' => 'പി.ഡി.എഫ്. പതിപ്പ്',
 	'coll-remove_this_page' => 'ഈ താൾ താങ്കളുടെ പുസ്തകത്തിൽ നിന്നും നീക്കുക',
+	'coll-remove_page_tooltip' => 'താങ്കളുടെ പുസ്തകത്തിൽ നിന്നും ഇപ്പോഴത്തെ വിക്കി താൾ നീക്കംചെയ്യുക',
 	'coll-show_collection' => 'പുസ്തകം പ്രദർശിപ്പിക്കുക',
 	'coll-not_addable' => 'ഈ താൾ കൂട്ടിച്ചേർക്കാൻ കഴിയില്ല',
 	'coll-make_suggestions' => 'താളുകൾ നിർദ്ദേശിക്കുക',
