@@ -5743,6 +5743,7 @@ $messages['mhr'] = array(
  */
 $messages['ml'] = array(
 	'coll-desc' => '[[Special:Book|പുസ്തകം സൃഷ്ടിക്കുക]]',
+	'coll-book_creator_intro' => '<big>പുസ്തകസൃഷ്ടി ഉപകരണം ഉപയോഗിച്ച് താങ്കൾക്ക് ഇഷ്ടമുള്ള വിക്കിതാളുകൾ യോജിപ്പിച്ച് താങ്കൾക്ക് പുസ്തകം സൃഷ്ടിക്കാൻ കഴിയുന്നതാണ്. അത് താങ്കളുടെ ഇച്ഛാനുസരണം ഏതെങ്കിലും ഫോർമാറ്റിൽ (ഉദാ: പി.ഡി.എഫ്. അല്ലെങ്കിൽ ഒ.ഡി.എഫ്.) എടുക്കാവുന്നതോ അച്ചടിച്ച പകർപ്പ് ആവശ്യപ്പെടാവുന്നതോ ആണ്.</big>',
 	'coll-manage_your_book' => 'താങ്കളുടെ പുസ്തകത്തിന്റെ കൈകാര്യനിർവഹണം',
 	'coll-book_creator_help' => 'കൂടുതൽ വിവരങ്ങൾക്ക് [[{{MediaWiki:Coll-helppage}}|പുസ്തകങ്ങളെ സംബന്ധിച്ച സഹായം]] താൾ കാണുക.',
 	'coll-start_book_creator' => 'പുസ്തക സൃഷ്ടി ഉപകരണം പ്രവർത്തിപ്പിക്കുക',
@@ -5807,9 +5808,17 @@ $messages['ml'] = array(
 	'coll-limit_exceeded_title' => 'പുസ്തകത്തിന്റെ വലിപ്പം വളരെ കൂടുതലാണ്‌',
 	'coll-limit_exceeded_text' => 'താങ്കളുടെ പുസ്തകം വളരെ വലുതാണ്‌.
 ഇനി കൂടുതല്‍ താളുകള്‍ ചേര്‍ക്കുന്നതിനു സാദ്ധ്യമല്ല.',
+	'coll-rendering_text' => '<p><strong>പ്രമാണം സൃഷ്ടിക്കപ്പെടുന്നതു വരെ ദയവായി കാത്തിരിക്കുക.</strong></p>
+<p><strong>പുരോഗതി:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+<p>ഏതാനം സെക്കന്റുകൾക്കിടയിൽ ഈ താൾ പുതുക്കിക്കൊണ്ടിരിക്കും, ഇപ്രകാരം പ്രവർത്തിക്കുന്നില്ലങ്കിൽ ദയവായി താങ്കളുടെ ബ്രൗസറിലെ റിഫ്രഷ് ബട്ടൺ അമർത്തുക.</p>',
 	'coll-rendering_status' => '<strong>സ്ഥിതി:</strong> $1',
 	'coll-rendering_article' => '(‌‌വിക്കി താൾ:$1)',
 	'coll-rendering_page' => '(താൾ: $1)',
+	'coll-rendering_finished_text' => '<strong>വിവര പ്രമാണം സൃഷ്ടിച്ചിരിക്കുന്നു.</strong>
+താങ്കളുടെ കമ്പ്യൂട്ടറിലേയ്ക്ക് <strong>[$1 പ്രമാണം ഡൗൺലോഡ് ചെയ്യുക]</strong>.
+
+കുറിപ്പുകൾ:
+* ലഭ്യമായതിൽ സംതൃപ്തനല്ലേ? അത് മെച്ചപ്പെടുത്താനുള്ള സാധ്യതകളെ കുറിച്ചറിയാൻ [[{{MediaWiki:Coll-helppage}}|പുസ്തകങ്ങൾ സംബന്ധിച്ച സഹായം താൾ കാണുക]]',
 	'coll-notfound_title' => 'പുസ്തകം കണ്ടെത്താനായില്ല',
 	'coll-notfound_text' => 'പുസ്തക താള്‍ കണ്ടെത്താന്‍ കഴിഞ്ഞില്ല.',
 	'coll-download_notfound_title' => 'പ്രമാണം കണ്ടെത്താൻ കഴിഞ്ഞില്ല',
@@ -8537,6 +8546,7 @@ $messages['tg-cyrl'] = array(
 /** Thai (ไทย)
  * @author Ans
  * @author Manop
+ * @author Octahedron80
  */
 $messages['th'] = array(
 	'coll-desc' => '[[Special:Book|สร้างหนังสือ]]',
@@ -8610,6 +8620,7 @@ $messages['th'] = array(
 	'coll-about_pp' => 'เกี่ยวกับ $1',
 	'coll-license' => 'สัญญาอนุญาต (license)',
 	'coll-return_to' => 'กลับไปที่ [[:$1]]',
+	'coll-suggest_show' => 'แสดง',
 );
 
 /** Tagalog (Tagalog)
