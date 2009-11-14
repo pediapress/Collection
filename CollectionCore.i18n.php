@@ -1391,6 +1391,7 @@ $messages['is'] = array(
  * @author BrokenArrow
  * @author Darth Kule
  * @author Melos
+ * @author OrbiliusMagister
  */
 $messages['it'] = array(
 	'coll-print_export' => 'Stampa/esporta',
@@ -1425,6 +1426,7 @@ $messages['it'] = array(
 	'coll-show_collection' => 'Mostra libro',
 	'coll-show_collection_tooltip' => 'Fai clic per modificare, scaricare o ordinare il tuo libro',
 	'coll-not_addable' => 'Questa pagina non può essere aggiunta',
+	'coll-make_suggestions' => 'Suggerisci delle pagine',
 	'coll-make_suggestions_tooltip' => 'Mostra suggerimenti basati sulle pagine del proprio libro',
 	'coll-suggest_empty' => 'vuoto',
 );
@@ -1718,11 +1720,14 @@ $messages['ml'] = array(
 	'coll-book_creator_disable' => 'പുസ്തക സൃഷ്ടി ഉപകരണം നിർജീവമാക്കുക',
 	'coll-book_creator_disable_tooltip' => 'പുസ്തക സൃഷ്ടി ഉപകരണം ഉപയോഗിക്കുന്നതു നിർത്തുക',
 	'coll-add_category' => 'താങ്കളുടെ പുസ്തകത്തിൽ ഈ വര്‍ഗ്ഗം ചേര്‍ക്കുക',
+	'coll-add_category_popup' => 'താങ്കളുടെ പുസ്തകത്തിലേയ്ക്ക് കണ്ണിവത്കരിക്കപ്പെട്ട വർഗ്ഗത്തിലെ താളുകൾ ചേർക്കുക',
 	'coll-add_category_tooltip' => 'ഈ വർഗ്ഗത്തിലുള്ള എല്ലാ വിക്കി താളുകളും താങ്കളുടെ പുസ്തകത്തിലേയ്ക്ക് കൂട്ടിച്ചേർക്കുക',
 	'coll-add_this_page' => 'ഈ താൾ താങ്കളുടെ പുസ്തകത്തിലേയ്ക്ക് കൂട്ടിച്ചേർക്കുക',
+	'coll-add_page_popup' => 'താങ്കളുടെ പുസ്തകത്തിലേയ്ക്ക് കണ്ണിവത്കരിക്കപ്പെട്ട താൾ ചേർക്കുക',
 	'coll-add_page_tooltip' => 'ഇപ്പോഴത്തെ താൾ താങ്കളുടെ പുസ്തകത്തിലേയ്ക്ക് ചേർക്കുക',
 	'coll-bookscategory' => 'പുസ്തകങ്ങൾ',
 	'coll-clear_collection' => 'പുസ്തകം മായ്ക്കുക',
+	'coll-clear_collection_confirm' => 'പുസ്തകം പൂർണ്ണമായും ശൂന്യമാക്കാൻ താങ്കൾ ശരിക്കുമാഗ്രഹിക്കുന്നുണ്ടോ?',
 	'coll-clear_collection_tooltip' => 'താങ്കളുടെ ഈ പുസ്തകത്തിൽ നിന്നും എല്ലാ താളുകളും നീക്കം ചെയ്യുക',
 	'coll-help' => 'സഹായം',
 	'coll-help_tooltip' => 'പുസ്തകങ്ങൾ സൃഷ്ടിക്കുന്നതു സംബന്ധിച്ച സഹായം പ്രദർശിപ്പിക്കുക',
@@ -1731,6 +1736,7 @@ $messages['ml'] = array(
 	'coll-n_pages' => '{{PLURAL:$1|ഒരു താൾ|$1 താളുകൾ}}',
 	'coll-printable_version_pdf' => 'പി.ഡി.എഫ്. പതിപ്പ്',
 	'coll-remove_this_page' => 'ഈ താൾ താങ്കളുടെ പുസ്തകത്തിൽ നിന്നും നീക്കുക',
+	'coll-remove_page_popup' => 'താങ്കളുടെ പുസ്തകത്തിൽ നിന്നും കണ്ണിവത്കരിക്കപ്പെട്ട വിക്കി താൾ നീക്കം ചെയ്യുക',
 	'coll-remove_page_tooltip' => 'താങ്കളുടെ പുസ്തകത്തിൽ നിന്നും ഇപ്പോഴത്തെ വിക്കി താൾ നീക്കംചെയ്യുക',
 	'coll-show_collection' => 'പുസ്തകം പ്രദർശിപ്പിക്കുക',
 	'coll-not_addable' => 'ഈ താൾ കൂട്ടിച്ചേർക്കാൻ കഴിയില്ല',
