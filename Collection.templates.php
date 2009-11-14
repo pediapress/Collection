@@ -523,4 +523,3 @@ var collection_jQuery = jQuery.noConflict();
 		return $out;
 	}
 }
-?>
