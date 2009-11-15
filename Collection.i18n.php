@@ -5171,8 +5171,10 @@ $messages['km'] = array(
  * @author Nayvik
  */
 $messages['kn'] = array(
+	'coll-show' => 'ತೋರಿಸು',
 	'coll-yes' => 'ಹೌದು',
 	'coll-no' => 'ಇಲ್ಲ',
+	'coll-suggest_show' => 'ತೋರಿಸು',
 );
 
 /** Korean (한국어)
@@ -5748,6 +5750,7 @@ $messages['ml'] = array(
 	'coll-book_creator_help' => 'കൂടുതൽ വിവരങ്ങൾക്ക് [[{{MediaWiki:Coll-helppage}}|പുസ്തകങ്ങളെ സംബന്ധിച്ച സഹായം]] താൾ കാണുക.',
 	'coll-start_book_creator' => 'പുസ്തക സൃഷ്ടി ഉപകരണം പ്രവർത്തിപ്പിക്കുക',
 	'coll-book_creator_continue' => 'പുസ്തകസൃഷ്ടി ഉപകരണം ഉപയോഗിക്കുന്നത് തുടരുക',
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/പുസ്തക സൃഷ്ടി ഉപകരണത്തിന്റെ എഴുത്ത്',
 	'coll-collection' => 'പുസ്തകം',
 	'coll-collections' => 'പുസ്തകങ്ങൾ',
 	'coll-exclusion_category_title' => 'അച്ചടിയിൽ നിന്ന് ഒഴിവാക്കുക',
@@ -5841,6 +5844,8 @@ $messages['ml'] = array(
 	'coll-more_info' => 'കൂടുതൽ വിവരങ്ങൾ പ്രദർശിപ്പിക്കുക',
 	'coll-hide_info' => 'വിവരങ്ങൾ മറയ്ക്കുക',
 	'coll-suggest_title' => 'താങ്കളുടെ പുസ്തകത്തിലേയ്ക്ക് നിർദ്ദേശിക്കുന്ന താളുകൾ',
+	'coll-suggest_intro_text' => 'താങ്കളുടെ പുസ്തകത്തിൽ ഇപ്പോഴുള്ള വിക്കിതാളുകളുടെ ഗണത്തെ അധിഷ്ഠിതമാക്കിയുള്ള നിർദ്ദേശങ്ങളാണിത്.
+ചേർക്കാനോ നീക്കംചെയ്യാനോ ഉള്ള ബട്ടണുകൾ ഞെക്കുമ്പോൾ പട്ടിക പുതുക്കപ്പെടുന്നതാണ്.',
 	'coll-suggested_articles' => 'നിർദ്ദേശങ്ങൾ',
 	'coll-suggest_reset_bans' => 'പുനക്രമീകരിക്കുക',
 	'coll-suggest_reset_bans_tooltip' => 'മുമ്പ് നീക്കം ചെയ്ത നിർദ്ദേശങ്ങൾ പ്രദർശിപ്പിക്കുക',
@@ -5931,6 +5936,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Aurora
  * @author Aviator
  * @author Izzudin
  * @author Kurniasan
@@ -5938,8 +5944,11 @@ $messages['mr'] = array(
 $messages['ms'] = array(
 	'coll-desc' => '[[Special:Book|Mencipta buku]]',
 	'coll-book_creator_intro' => "<big>Dengan ''mod buku'', anda dapat mencipta buku yang terdiri daripada laman-laman wiki sembarangan. Anda boleh mengeksport buku dalam format-format berbeza (contohnya PDF atau ODF) ataupun memesan salinan tercetak.</big>",
+	'coll-manage_your_book' => 'Urus buku anda',
 	'coll-book_creator_help' => 'Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan tentang buku]] untuk maklumat lanjut.',
 	'coll-start_book_creator' => 'Mulakan mod buku',
+	'coll-book_creator_continue' => 'Terus menggunakan pencipta buku',
+	'coll-book_creator_disable_text' => "''Pencipta buku'' akan dilumpuhkan dan buku yang sedang anda kerjakan akan dihapuskan.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Teks mod buku',
 	'coll-collection' => 'Buku',
 	'coll-collections' => 'Buku',
@@ -5991,7 +6000,7 @@ $messages['ms'] = array(
 	'coll-personal_collection_label' => 'Buku peribadi:',
 	'coll-community_collection_label' => 'Buku komuniti:',
 	'coll-save_collection' => 'Simpan buku',
-	'coll-save_category' => 'Semua buku disimpan dalam kategori [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Semua buku tersimpan ditambah ke kategori [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Laman telah pun wujud. Tulis ganti?',
 	'coll-overwrite_text' => 'Laman dengan nama [[:$1]] telah pun wujud. Adakah anda mahu menggantikannya dengan koleksi anda?',
 	'coll-yes' => 'Ya',
