@@ -241,6 +241,7 @@ $messages['be-tarask'] = array(
  * @author DCLXVI
  */
 $messages['bg'] = array(
+	'coll-print_export' => 'Отпечатване/изнасяне',
 	'coll-download_as' => 'Изтегляне като $1',
 	'coll-add_category' => 'Добавяне на категория',
 	'coll-help' => 'Помощ',
@@ -1368,13 +1369,16 @@ $messages['id'] = array(
  */
 $messages['io'] = array(
 	'coll-create_a_book' => 'Kreez un libro',
-	'coll-add_category' => 'Adjuntar kategorio',
+	'coll-add_category' => 'Adjuntar kategorio a vua libro',
 	'coll-bookscategory' => 'Libri',
+	'coll-clear_collection' => 'Vakuigar libro',
+	'coll-help' => 'Helpo',
 	'coll-helppage' => 'Help:Libri',
 	'coll-load_collection' => 'Kargar libro',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagino|pagini}}',
 	'coll-printable_version_pdf' => 'Versiono PDF',
 	'coll-show_collection' => 'Montrar libro',
+	'coll-suggest_empty' => 'vakua',
 );
 
 /** Icelandic (Íslenska)
