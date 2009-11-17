@@ -5750,6 +5750,7 @@ $messages['ml'] = array(
 	'coll-book_creator_help' => 'കൂടുതൽ വിവരങ്ങൾക്ക് [[{{MediaWiki:Coll-helppage}}|പുസ്തകങ്ങളെ സംബന്ധിച്ച സഹായം]] താൾ കാണുക.',
 	'coll-start_book_creator' => 'പുസ്തക സൃഷ്ടി ഉപകരണം പ്രവർത്തിപ്പിക്കുക',
 	'coll-book_creator_continue' => 'പുസ്തകസൃഷ്ടി ഉപകരണം ഉപയോഗിക്കുന്നത് തുടരുക',
+	'coll-book_creator_disable_text' => "''പുസ്തക സൃഷ്ടി ഉപകരണം'' പ്രവർത്തനരഹിതവും, താങ്കൾ ചെയ്തുകൊണ്ടിരിക്കുന്ന പുസ്തകം നീക്കംചെയ്യുകയും ചെയ്യുന്നതാണ്.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/പുസ്തക സൃഷ്ടി ഉപകരണത്തിന്റെ എഴുത്ത്',
 	'coll-collection' => 'പുസ്തകം',
 	'coll-collections' => 'പുസ്തകങ്ങൾ',
