@@ -1370,6 +1370,7 @@ $messages['id'] = array(
 $messages['io'] = array(
 	'coll-create_a_book' => 'Kreez un libro',
 	'coll-add_category' => 'Adjuntar kategorio a vua libro',
+	'coll-add_this_page' => 'Adjuntez ca pagino a vua libro',
 	'coll-bookscategory' => 'Libri',
 	'coll-clear_collection' => 'Vakuigar libro',
 	'coll-help' => 'Helpo',
@@ -1378,6 +1379,7 @@ $messages['io'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagino|pagini}}',
 	'coll-printable_version_pdf' => 'Versiono PDF',
 	'coll-show_collection' => 'Montrar libro',
+	'coll-make_suggestions' => 'Sugestez pagini',
 	'coll-suggest_empty' => 'vakua',
 );
 
