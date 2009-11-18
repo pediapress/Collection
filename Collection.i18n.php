@@ -4597,6 +4597,7 @@ $messages['io'] = array(
 	'coll-rendering_status' => '<strong>Stando:</strong> $1',
 	'coll-rendering_page' => '(pagino: $1)',
 	'coll-about_pp' => 'Pri $1',
+	'coll-suggest_undo' => 'desfacar',
 );
 
 /** Icelandic (Íslenska)
