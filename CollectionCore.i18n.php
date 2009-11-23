@@ -1893,11 +1893,12 @@ $messages['nl'] = array(
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Eirik
  * @author Gunnernett
  * @author Harald Khan
  */
 $messages['nn'] = array(
-	'coll-print_export' => 'Skriv ut/eksportér',
+	'coll-print_export' => 'Skriv ut / eksporter',
 	'coll-create_a_book' => 'Opprett ei bok',
 	'coll-create_a_book_tooltip' => 'Lag ei bok eller ei artikkelsamling',
 	'coll-book_creator' => 'laging av bok',

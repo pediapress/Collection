@@ -544,7 +544,7 @@ $messages['ar'] = array(
 $messages['arc'] = array(
 	'coll-collection' => 'ܟܬܒܐ',
 	'coll-collections' => 'ܟܬܒ̈ܐ',
-	'coll-more_info' => 'ܚܘܝ ܝܕܥܬ̈ܐ ܝܬܝܪ',
+	'coll-more_info' => 'ܚܘܝ ܝܕ̈ܥܬܐ ܝܬܝܪ',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
