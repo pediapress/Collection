@@ -1711,6 +1711,47 @@ $messages['lt'] = array(
 	'coll-printable_version_pdf' => 'PDF versija',
 );
 
+/** Macedonian (Македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'coll-print_export' => 'Печати/извези',
+	'coll-create_a_book' => 'Создај книга',
+	'coll-create_a_book_tooltip' => 'Создај книга или збирка страници',
+	'coll-book_creator' => 'Книговезница',
+	'coll-download_as' => 'Преземи како $1',
+	'coll-download_as_tooltip' => 'Преземи $1 верзија на оваа вики-страница',
+	'coll-disable' => 'оневозможи',
+	'coll-book_creator_disable' => 'Оневозможи ја книговезницата',
+	'coll-book_creator_disable_tooltip' => 'Прекини со користење на книговезницата',
+	'coll-add_category' => 'Додајте ја категоријава во вашата книга',
+	'coll-add_category_popup' => 'Додај во книгата вики-страници од категорија од врска',
+	'coll-add_category_tooltip' => 'Додај ги сите вики-страници од оваа категорија во книгата',
+	'coll-add_this_page' => 'Додај ја страницава во мојата книга',
+	'coll-add_page_popup' => 'Додај вики-страница во книгата преку врска',
+	'coll-add_page_tooltip' => 'Додај ја тековната вики-страница во книгата',
+	'coll-bookscategory' => 'Книги',
+	'coll-clear_collection' => 'Исчиси ја книгата',
+	'coll-clear_collection_confirm' => 'Дали навистина сакате сосема да ја исчистите книгата?',
+	'coll-clear_collection_tooltip' => 'Отстрани ги сите вики-страници од мојата тековна книга',
+	'coll-help' => 'Помош',
+	'coll-help_tooltip' => 'Прикажи помош за создавањето на книги',
+	'coll-helppage' => 'Help:Книги',
+	'coll-load_collection' => 'Вчитај книга',
+	'coll-load_collection_tooltip' => 'Вчитај ја книгава како моја тековна книга',
+	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страници}}',
+	'coll-printable_version_pdf' => 'PDF верзија',
+	'coll-remove_this_page' => 'Отстрани ја страницава од мојата книга',
+	'coll-remove_page_popup' => 'Отстрани вики-страница од врска од мојата книга',
+	'coll-remove_page_tooltip' => 'Отстрани ја тековната вики-страница од мојата книга',
+	'coll-show_collection' => 'Прикажи ја книгата',
+	'coll-show_collection_tooltip' => 'Кликнете за да ја уредите/преземете/порачате книгата',
+	'coll-not_addable' => 'Оваа страница не може да се додаде',
+	'coll-make_suggestions' => 'Предложи страници',
+	'coll-make_suggestions_tooltip' => 'Прикажи предлози засновани на страници од вашата книга',
+	'coll-suggest_empty' => 'празно',
+);
+
 /** Malayalam (മലയാളം)
  * @author Praveenp
  * @author Shijualex

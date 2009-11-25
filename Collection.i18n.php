@@ -5740,6 +5740,146 @@ $messages['mhr'] = array(
 	'coll-cancel' => 'Чараш',
 );
 
+/** Macedonian (Македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'coll-desc' => '[[Special:Book|Создавање на книги]]',
+	'coll-book_creator_intro' => "<big>Со ''книговезницата'' можете да создадете книга која содржи вики-страници по ваш избор. Можете да ја извезувате книгата во различни формати (на пр. PDF или ODF) или пак да порачате отпечатен примерок.</big>",
+	'coll-manage_your_book' => 'Раководење со вашата книга',
+	'coll-book_creator_help' => 'За повеќе информации, погледајте ја нашата [[{{MediaWiki:Coll-helppage}}|помош за книги]].',
+	'coll-start_book_creator' => 'Пушти ја книговезницата',
+	'coll-book_creator_continue' => 'Продолжи со користење на книговезницата',
+	'coll-book_creator_disable_text' => "''Книговезницата'' ќе биде оневозможена и книгата на која работите ќе биде отстранета.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Текст на книговезницата',
+	'coll-collection' => 'Книга',
+	'coll-collections' => 'Книги',
+	'coll-exclusion_category_title' => 'Испушти при печатење',
+	'coll-print_template_prefix' => 'Печатење',
+	'coll-print_template_pattern' => '$1/Печатење',
+	'coll-unknown_subpage_title' => 'Непозната потстраница',
+	'coll-unknown_subpage_text' => 'Оваа потстраница на [[Special:Book|книгата]] не постои',
+	'coll-couldnotaddarticle_title' => 'Не можев да ја додадам вики-страницата',
+	'coll-couldnotaddarticle_msg' => 'Вики-страницата не може да се додаде.',
+	'coll-couldnotremovearticle_title' => 'Не можев да ја отстранам вики-страницата',
+	'coll-couldnotremovearticle_msg' => 'Вики-страницата не може да се отстрани.',
+	'coll-noscript_text' => '<h1>Потребен е JavaScript!</h1>
+<strong>Вашиот прелистувач не поддржува JavaScript или JavaScript е исклучен.
+Страницава нема да работи правилно ако не е овозможен JavaScript.</strong>',
+	'coll-savedbook_template' => 'зачувана_книга',
+	'coll-your_book' => 'Вашата книга',
+	'coll-download_title' => 'Преземи',
+	'coll-download_text' => 'За да ја преземете книгата, одберете формат и кикнете го копчето.',
+	'coll-download_as_text' => 'Кликнете го копчето за да ја преземете книгата во $1 формат.',
+	'coll-download' => 'Преземи',
+	'coll-format_label' => 'Формат:',
+	'coll-remove' => 'Отстрани',
+	'coll-show' => 'Прикажи',
+	'coll-move_to_top' => 'Премести најгоре',
+	'coll-move_up' => 'Премести нагоре',
+	'coll-move_down' => 'Премести надолу',
+	'coll-move_to_bottom' => 'Премести најдолу',
+	'coll-title' => 'Наслов:',
+	'coll-subtitle' => 'Поднаслов:',
+	'coll-contents' => 'Содржина',
+	'coll-drag_and_drop' => 'Влечете и пуштајте ги вики-страниците и главите за да ги подредите како што сакате',
+	'coll-create_chapter' => 'Создај глава',
+	'coll-sort_alphabetically' => 'Подреди по азбучен ред',
+	'coll-rename' => 'Преименувај',
+	'coll-new_chapter' => 'Внесете име за новата глава',
+	'coll-rename_chapter' => 'Внесете ново име за главата',
+	'coll-no_such_category' => 'Нема таква категорија',
+	'coll-notitle_title' => 'Насловот на страницата не може да се определи.',
+	'coll-post_failed_title' => 'POST-барањето не успеа',
+	'coll-post_failed_msg' => 'POST-барањето од $1 не успеа ($2).',
+	'coll-mwserve_failed_title' => 'Грешка во серверот за исцртување',
+	'coll-mwserve_failed_msg' => 'Настана грешка во серверот за отцртување: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Серверот одговори со грешка',
+	'coll-empty_collection' => 'Празна книга',
+	'coll-revision' => 'Ревизија: $1',
+	'coll-save_collection_title' => 'Зачувај и сподели ја книгата',
+	'coll-save_collection_text' => 'Одберете место за чување на вашата книга:',
+	'coll-login_to_save' => 'Ако сакате да зачувувате книги за подоцнежна употреба, [[Special:UserLogin|најавете се или направете сметка]].',
+	'coll-personal_collection_label' => 'Лична книга:',
+	'coll-community_collection_label' => 'Книга на заедницата:',
+	'coll-save_collection' => 'Зачувај',
+	'coll-save_category' => 'Сите зачувани книги се додаваат во категоријата [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-overwrite_title' => 'Страницата постои.
+Да ја заменам?',
+	'coll-overwrite_text' => 'Страницата со име [[:$1]] веќе постои,
+Дали сакате да ја замените со вашата книга?',
+	'coll-yes' => 'Да',
+	'coll-no' => 'Не',
+	'coll-load_overwrite_text' => 'Веќе имате некои страници во книгата.
+Дали сакате да ја замените вашата тековна книга, да ја додадете новата содржина, или пак да го откажете вчитувањето на оваа книга?',
+	'coll-overwrite' => 'Замени',
+	'coll-append' => 'Додај',
+	'coll-cancel' => 'Откажи',
+	'coll-update' => 'Обнови',
+	'coll-limit_exceeded_title' => 'Книгата е преголема',
+	'coll-limit_exceeded_text' => 'Книгата е преголема.
+Не можам да додавам повеќе страници.',
+	'coll-rendering_title' => 'Отцртување',
+	'coll-rendering_text' => '<p><strong>Ве молиме почекајте додека се создава документот.</strong></p>
+
+<p><strong>Прогрес:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Оваа страница треба да се обновува автоматски по еднаш на неколку секунди.
+Ако ова не работи, притиснете го копчето за превчитување во прелистувачот.</p>',
+	'coll-rendering_status' => '<strong>Статус:</strong> $1',
+	'coll-rendering_article' => '(вики-страница: $1)',
+	'coll-rendering_page' => '(страница: $1)',
+	'coll-rendering_finished_title' => 'Отцртувањето заврши',
+	'coll-rendering_finished_text' => '<strong>Податотеката на документот е создадена.</strong>
+<strong>[$1 Преземете ја податотеката]</strong> на вашиот компјутер.
+
+Белешки:
+* Не сте задоволни со резултатот? Погледајте ја нашата [[{{MediaWiki:Coll-helppage}}|страница за помош со книги]] за да ги видите можностите за нејзино подобрување.',
+	'coll-notfound_title' => 'Книгата не е пронајдена',
+	'coll-notfound_text' => 'Не можев да ја пронајдам страницата.',
+	'coll-download_notfound_title' => 'Податотеката не е пронајдена',
+	'coll-download_notfound_text' => 'Податотеката која сакате да ја преземете не постои:
+Можеби била избришана и треба да се создаде одново.',
+	'coll-download_failed_title' => 'Грешка при преземањето',
+	'coll-download_failed_text' => 'Настана грешка при преземањето на податотеката: $1',
+	'coll-is_cached' => '<ul><li>Пронајдена е кеширана верзија на документот, па затоа немаше потреба да се отцртува.
+<a href="$1">Сепак отцртај.</a></li></ul>',
+	'coll-excluded-templates' => '* Шаблоните во категоријата [[:Category:$1|$1]] се исклучени.',
+	'coll-blacklisted-templates' => '* Шаблоните на црната листа [[:$1]] се исклучени.',
+	'coll-return_to_collection' => '<p>Врати се на <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Порачај во печатен облик',
+	'coll-book_text' => 'Порачајте ја книгата во печатен облик од нашиот партнер.',
+	'coll-order_from_pp' => 'Порачај ја книгата од $1',
+	'coll-about_pp' => 'За $1',
+	'coll-invalid_podpartner_title' => 'Неважечки POD партнер',
+	'coll-invalid_podpartner_msg' => 'Наведениот POD партнер е неважечки.
+Контактирајте го вашиот MediaWiki администратор.',
+	'coll-license' => 'Лиценца',
+	'coll-return_to' => 'Врати се на [[:$1]]',
+	'coll-more_info' => 'Прикажи повеќе информации',
+	'coll-hide_info' => 'Сокриј ги информациите',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Информации за порачувањето од PediaPress',
+	'coll-suggest_title' => 'Предложени страници за вашата книга',
+	'coll-suggest_intro_text' => 'Предлозите се базирани на тековниот збир од вики-страници во вашата книга.
+Листата се обновува секојпат кога ќе кликнете на копчето за додавање или отстранување.',
+	'coll-suggested_articles' => 'Предлози',
+	'coll-suggest_reset_bans' => 'врати по основно',
+	'coll-suggest_reset_bans_tooltip' => 'Прикажи претходно отстранети предлози',
+	'coll-suggest_add_selected' => 'Додај ги избраните страници',
+	'coll-suggest_ban_selected' => 'Отстрани ги избраните страници',
+	'coll-suggest_your_book' => 'Вашата книга',
+	'coll-suggest_show' => 'прикажи',
+	'coll-suggest_ban_tooltip' => 'Отстрани ја страницава од листата на предлози',
+	'coll-suggest_article_ban' => 'Страницата <strong>$1</strong> е отстранета од предлозите ($2).',
+	'coll-suggest_article_add' => 'Страницата <strong>$1</strong> е додадена во вашата книга ($2).',
+	'coll-suggest_article_remove' => 'Страницата <strong>$1</strong> е отстранета од вашата книга ($2).',
+	'coll-suggest_undo_tooltip' => 'Врати го ова дејство',
+	'coll-suggest_undo' => 'врати',
+	'right-collectionsaveasuserpage' => 'Зачувување на книги како корисничка страница',
+	'right-collectionsaveascommunitypage' => 'Зачувување на книги како страница на заедницата',
+	'coll-or' => 'или',
+);
+
 /** Malayalam (മലയാളം)
  * @author Praveenp
  * @author Shijualex
