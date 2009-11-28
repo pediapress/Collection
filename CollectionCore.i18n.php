@@ -2141,6 +2141,7 @@ $messages['ps'] = array(
  * @author 555
  * @author Crazymadlover
  * @author Giro720
+ * @author Hamilton Abreu
  * @author Indech
  * @author Lijealso
  * @author Malafaya
@@ -2152,9 +2153,9 @@ $messages['pt'] = array(
 	'coll-create_a_book_tooltip' => 'Cria um livro ou uma coleção de páginas',
 	'coll-book_creator' => 'Criador de livros',
 	'coll-download_as' => 'Descarregar como $1',
-	'coll-download_as_tooltip' => 'Baixar uma versão $1 desta página wiki',
-	'coll-disable' => 'desabilitar',
-	'coll-book_creator_disable' => 'Desabilitar criador de livros',
+	'coll-download_as_tooltip' => 'Descarregar uma versão $1 desta página wiki',
+	'coll-disable' => 'desactivar',
+	'coll-book_creator_disable' => 'Desactivar criador de livros',
 	'coll-book_creator_disable_tooltip' => 'Parar o uso do criador de livros',
 	'coll-add_category' => 'Adicionar categoria ao seu livro',
 	'coll-add_category_popup' => 'Adicionar ao seu livro as páginas wiki na categoria ligada',
