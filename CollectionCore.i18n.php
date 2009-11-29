@@ -1807,6 +1807,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Aurora
  * @author Aviator
  * @author Kurniasan
  */
@@ -1839,6 +1840,8 @@ $messages['ms'] = array(
 	'coll-remove_page_tooltip' => 'Buang laman wiki semasa daripada buku anda',
 	'coll-show_collection' => 'Tunjuk buku',
 	'coll-show_collection_tooltip' => 'Klik untuk sunting/muat turun/pesan buku anda',
+	'coll-not_addable' => 'Laman ini tidak dapat ditambah',
+	'coll-suggest_empty' => 'kosong',
 );
 
 /** Erzya (Эрзянь)
