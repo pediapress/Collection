@@ -1103,6 +1103,8 @@ Notennoù :
 	'coll-download_notfound_title' => "N'eo ket bet kavet ar restr",
 	'coll-download_notfound_text' => "O klask pellgargañ ur restr n'eus ket anezhi emaoc'h :
 Marteze eo bet diverket hag ezhomm zo he genel en-dro.",
+	'coll-download_failed_title' => 'Fazi e-ser pellgargañ',
+	'coll-download_failed_text' => 'Ur fazi zo bet e-ser pellgargañ ar restr : $1',
 	'coll-is_cached' => '<ul><li>Kavet ez eus bet ur stumm krubuilhet eus an teul, setu n\'eo ket bet dav amdreiñ.
 <a href="$1">Amdreiñ dre ret.</a></li></ul>',
 	'coll-excluded-templates' => "* N'eo ket bet kemeret patromoù zo e kont er rummad [[:Category:$1|$1]].",
@@ -1122,6 +1124,7 @@ Kit e darempred gant ur merour MediaWiki.",
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress urzhiañ titouroù',
 	'coll-suggested_articles' => 'Alioù',
 	'coll-suggest_add_selected' => 'Ouzhpennañ ar pajennoù diuzet',
+	'coll-suggest_ban_selected' => 'Diverkañ ar pajennoù diuzet',
 	'coll-suggest_your_book' => 'Ho levr',
 	'coll-suggest_show' => 'diskouez',
 	'coll-suggest_undo_tooltip' => 'Dizober an ober-mañ',
@@ -5932,6 +5935,8 @@ $messages['ml'] = array(
 	'coll-notitle_title' => 'താളിന്റെ തലക്കെട്ട് നിര്‍ണ്ണയിക്കുന്നതിനു കഴിഞ്ഞില്ല.',
 	'coll-post_failed_title' => 'POST അഭ്യർത്ഥന പരാജയപ്പെട്ടു',
 	'coll-post_failed_msg' => '$1 എന്നതിലേയ്ക്കുള്ള POST അഭ്യർത്ഥന പരാജയപ്പെട്ടു ($2).',
+	'coll-mwserve_failed_title' => 'റെൻഡർ സെർവർ പിശക്',
+	'coll-mwserve_failed_msg' => 'റെൻഡർ സെ‌‌ർവറിൽ പിശക് സംഭവിച്ചിരിക്കുന്നു: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'സെര്‍‌വറില്‍ നിന്നു പിഴവാണെന്ന മറുപടി കിട്ടി.',
 	'coll-empty_collection' => 'ശൂന്യമായ പുസ്തകം',
 	'coll-revision' => 'പതിപ്പ്: $1',
@@ -5955,12 +5960,14 @@ $messages['ml'] = array(
 	'coll-limit_exceeded_title' => 'പുസ്തകത്തിന്റെ വലിപ്പം വളരെ കൂടുതലാണ്‌',
 	'coll-limit_exceeded_text' => 'താങ്കളുടെ പുസ്തകം വളരെ വലുതാണ്‌.
 ഇനി കൂടുതല്‍ താളുകള്‍ ചേര്‍ക്കുന്നതിനു സാദ്ധ്യമല്ല.',
+	'coll-rendering_title' => 'റെൻഡർ ചെയ്യുന്നു',
 	'coll-rendering_text' => '<p><strong>പ്രമാണം സൃഷ്ടിക്കപ്പെടുന്നതു വരെ ദയവായി കാത്തിരിക്കുക.</strong></p>
 <p><strong>പുരോഗതി:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 <p>ഏതാനം സെക്കന്റുകൾക്കിടയിൽ ഈ താൾ പുതുക്കിക്കൊണ്ടിരിക്കും, ഇപ്രകാരം പ്രവർത്തിക്കുന്നില്ലങ്കിൽ ദയവായി താങ്കളുടെ ബ്രൗസറിലെ റിഫ്രഷ് ബട്ടൺ അമർത്തുക.</p>',
 	'coll-rendering_status' => '<strong>സ്ഥിതി:</strong> $1',
 	'coll-rendering_article' => '(‌‌വിക്കി താൾ:$1)',
 	'coll-rendering_page' => '(താൾ: $1)',
+	'coll-rendering_finished_title' => 'റെൻഡർ ചെയ്യൽ പൂർണ്ണം',
 	'coll-rendering_finished_text' => '<strong>വിവര പ്രമാണം സൃഷ്ടിച്ചിരിക്കുന്നു.</strong>
 താങ്കളുടെ കമ്പ്യൂട്ടറിലേയ്ക്ക് <strong>[$1 പ്രമാണം ഡൗൺലോഡ് ചെയ്യുക]</strong>.
 
