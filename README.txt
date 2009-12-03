@@ -55,7 +55,7 @@ Installation and Configuration of the Collection Extension
   ``extensions`` directory of your *MediaWiki* installation::
 
     cd extensions/
-    svn co http://svn.mediawiki.org/svnroot/mediawiki/trunk/extensions/Collection
+    svn co http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/Collection
 
 * Put this line in your ``LocalSettings.php``::
 
