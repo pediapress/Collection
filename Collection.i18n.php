@@ -362,7 +362,7 @@ Daar kan nie meer bladsye byvoeg nie.',
 	'coll-download_failed_text' => "Daar was 'n fout met die aflaai van lêer: $1",
 	'coll-return_to_collection' => '<p>Keer terug na <a href="$1">$2</a></p>',
 	'coll-book_title' => "Bestel as 'n gedrukte boek",
-	'coll-order_from_pp' => 'Bestel boek by $1',
+	'coll-order_from_pp' => 'Voorskou met $1',
 	'coll-about_pp' => 'Aangaande $1',
 	'coll-license' => 'Lisensie',
 	'coll-return_to' => 'Terug na [[:$1]]',
@@ -380,7 +380,6 @@ Daar kan nie meer bladsye byvoeg nie.',
 	'coll-suggest_article_remove' => 'Bladsy <strong>$1</strong> is uit u boek ($2) verwyder.',
 	'coll-suggest_undo_tooltip' => 'Maak die aksie ongedaan',
 	'coll-suggest_undo' => 'maak ongedaan',
-	'coll-or' => 'of',
 );
 
 /** Amharic (አማርኛ)
@@ -534,7 +533,6 @@ $messages['ar'] = array(
 	'coll-suggest_undo' => 'ارجع',
 	'right-collectionsaveasuserpage' => 'احفظ الكتب كصفحة مستخدم',
 	'right-collectionsaveascommunitypage' => 'احفظ الكتب كصفحة مجتمع',
-	'coll-or' => 'أو',
 );
 
 /** Aramaic (ܐܪܡܝܐ)
@@ -778,7 +776,7 @@ $messages['be-tarask'] = array(
 	'coll-return_to_collection' => '<p>Вярнуцца да <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Замовіць як друкаваную кнігу',
 	'coll-book_text' => 'Атрымаць друкаваную кнігу ад нашага партнэра, які займаецца паслугамі друкаваньня па замове:',
-	'coll-order_from_pp' => 'Замовіць кнігу ў $1',
+	'coll-order_from_pp' => 'Папярэдні прагляд праз $1',
 	'coll-about_pp' => 'Пра $1',
 	'coll-invalid_podpartner_title' => 'Нядзейны партнэр, які друкуе па замове',
 	'coll-invalid_podpartner_msg' => 'Выбраны партнэр, які друкуе па замове, нядзейны.
@@ -806,7 +804,6 @@ $messages['be-tarask'] = array(
 	'coll-suggest_undo' => 'адмяніць',
 	'right-collectionsaveasuserpage' => 'захаваньне кніг як старонак ўдзельніка',
 	'right-collectionsaveascommunitypage' => 'захаваньне кніг як старонак супольнасьці',
-	'coll-or' => 'ці',
 );
 
 /** Bulgarian (Български)
@@ -859,7 +856,6 @@ $messages['bg'] = array(
 	'coll-suggest_add_selected' => 'Добавяне на избраните страници',
 	'coll-suggest_ban_selected' => 'Премахване на избраните страници',
 	'coll-suggest_show' => 'показване',
-	'coll-or' => 'или',
 );
 
 /** Bengali (বাংলা)
@@ -1000,7 +996,6 @@ JavaScript সক্রিয় না করা পর্যন্ত, এই 
 	'coll-suggest_undo' => 'পূর্বাবস্থায় আনো',
 	'right-collectionsaveasuserpage' => 'বইগুলো ব্যবহারকারী পাতা হিসেবে সংরক্ষণ করো',
 	'right-collectionsaveascommunitypage' => 'বইগুলো কমিউনিটি পাতা হিসেবে সংরক্ষণ করো',
-	'coll-or' => 'অথবা',
 );
 
 /** Breton (Brezhoneg)
@@ -1011,6 +1006,7 @@ JavaScript সক্রিয় না করা পর্যন্ত, এই 
 $messages['br'] = array(
 	'coll-desc' => '[[Special:Book|Sevel levrioù]]',
 	'coll-book_creator_intro' => "<big>Gant ar ''mod levrioù'' e c'hallit sevel ul levr a ya d'e ober pajennoù wiki dibabet ganeoc'h. Gallout a rit ezporzhiañ al levr e furmadoù disheñvel (evel, da skouer, PDF pe ODF) pe urzhiañ ur stumm moullet.</big>",
+	'coll-manage_your_book' => 'Merañ ho levr',
 	'coll-book_creator_help' => "Gwelet [[{{MediaWiki:Coll-helppage}}|ar bajenn skoazell diwar-benn al levrioù]] evit gouzout hiroc'h.",
 	'coll-start_book_creator' => 'Kregiñ gant ar mod levr',
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Testenn ar mod levr',
@@ -1031,8 +1027,8 @@ Ne'z aio ket plaen ar bajenn-mañ en-dro e-keit ha ma ne vo ket gweredekaet Java
 	'coll-savedbook_template' => 'levr enrollet',
 	'coll-your_book' => 'Ho levr',
 	'coll-download_title' => 'Pellgargañ',
-	'coll-download_text' => 'A-benn pellgargañ ur stumm, dibabit ur furmad ha klikit war ar bouton.',
-	'coll-download_as_text' => 'A-benn pellgargañ ur stumm er furmad $1 klikit war ar bouton.',
+	'coll-download_text' => 'A-benn pellgargañ ho levr, dibabit ur furmad ha klikit war ar bouton.',
+	'coll-download_as_text' => 'A-benn pellgargañ ur stumm eus o levr er furmad $1, klikit war ar bouton.',
 	'coll-download' => 'Pellgargañ',
 	'coll-format_label' => 'Furmad :',
 	'coll-remove' => 'Lemel kuit',
@@ -1111,7 +1107,7 @@ Marteze eo bet diverket hag ezhomm zo he genel en-dro.",
 	'coll-return_to_collection' => '<p>Distreiñ da <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Urzhiañ dindan stumm ul levr moullet',
 	'coll-book_text' => "Kaout ul levr moullet dre hor c'heveler moullañ diouzh ar goulenn :",
-	'coll-order_from_pp' => 'Urzhiañ al levr digant $1',
+	'coll-order_from_pp' => 'Rakwelet gant $1',
 	'coll-about_pp' => 'Diwar-benn $1',
 	'coll-invalid_podpartner_title' => 'Keveler moullañ diouzh ar goulenn (POD) direizh',
 	'coll-invalid_podpartner_msg' => "N'eo ket mat ar c'heveler moullañ diouzh ar goulenn (POD) merket.
@@ -1122,6 +1118,7 @@ Kit e darempred gant ur merour MediaWiki.",
 	'coll-hide_info' => 'Kuzhat an titouroù',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress urzhiañ titouroù',
 	'coll-suggested_articles' => 'Alioù',
+	'coll-suggest_reset_bans' => 'adderaouekaat',
 	'coll-suggest_add_selected' => 'Ouzhpennañ ar pajennoù diuzet',
 	'coll-suggest_ban_selected' => 'Diverkañ ar pajennoù diuzet',
 	'coll-suggest_your_book' => 'Ho levr',
@@ -1130,7 +1127,6 @@ Kit e darempred gant ur merour MediaWiki.",
 	'coll-suggest_undo' => 'dizober',
 	'right-collectionsaveasuserpage' => 'Enrollañ levrioù evel pajenn implijer',
 	'right-collectionsaveascommunitypage' => 'Enrollañ levrioù evel ur bajenn eus ar gumuniezh',
-	'coll-or' => 'pe',
 );
 
 /** Bosnian (Bosanski)
@@ -1240,7 +1236,7 @@ Napomene:
 	'coll-return_to_collection' => '<p>Povratak na <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Naruči kao štampanu knjigu',
 	'coll-book_text' => 'Preuzmite štampanu knjigu od našeg print-on-demand partnera:',
-	'coll-order_from_pp' => 'Naruči knjigu od $1',
+	'coll-order_from_pp' => 'Pregled sa $1',
 	'coll-about_pp' => 'O $1',
 	'coll-invalid_podpartner_title' => 'POD partner nije validan',
 	'coll-invalid_podpartner_msg' => 'Pruženi POD partner nije validan.
@@ -1268,7 +1264,6 @@ Spisak se ažurira kad god kliknete na dugme za dodavanje ili uklanjanje.',
 	'coll-suggest_undo' => 'vrati',
 	'right-collectionsaveasuserpage' => 'Spremanje knjiga u vidu korisničkih stranica',
 	'right-collectionsaveascommunitypage' => 'Spremanje knjiga kao stranica zajednice',
-	'coll-or' => 'ili',
 );
 
 /** Catalan (Català)
@@ -1503,7 +1498,7 @@ Poznámky:
 	'coll-return_to_collection' => '<p>Vrátit se na <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Objednat jako tištěnou knihu',
 	'coll-book_text' => 'Od našeho partnera pro tisk na vyžádání můžete získat tištěnou knihu:',
-	'coll-order_from_pp' => 'Objednat knihu od {{grammar:2sg|$1}}',
+	'coll-order_from_pp' => 'Náhled knihy prostřednictvím {{grammar:2sg|$1}}',
 	'coll-about_pp' => 'O {{grammar:7sg|$1}}',
 	'coll-invalid_podpartner_title' => 'Neplatný partner pro tisk na vyžádání',
 	'coll-invalid_podpartner_msg' => 'Zvolený partner pro tisk na vyžádání není platný.
@@ -1531,7 +1526,6 @@ Seznam se aktualizuje při každém kliknutím na tlačítka přidat a odebrat.'
 	'coll-suggest_undo' => 'zpět',
 	'right-collectionsaveasuserpage' => 'Ukládání knih jako uživatelských stránek',
 	'right-collectionsaveascommunitypage' => 'Ukládání knih jako stránek komunity',
-	'coll-or' => 'nebo',
 );
 
 /** Welsh (Cymraeg)
@@ -1643,7 +1637,7 @@ Efallai ei fod wedi ei ddileu ac felly bod angen ei gynhyrchu o'r newydd.",
 	'coll-return_to_collection' => '<p>Dychwelyd i\'r dudalen <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Archebu fel llyfr printiedig',
 	'coll-book_text' => "Archebu llyfr oddi wrth ein partner argraffu ''print-on-demand''.",
-	'coll-order_from_pp' => "Archebu'r llyfr oddi wrth $1",
+	'coll-order_from_pp' => 'Gweld rhagolwg ar $1',
 	'coll-about_pp' => 'Ynglŷn â $1',
 	'coll-invalid_podpartner_title' => 'Partner POD annilys',
 	'coll-invalid_podpartner_msg' => "Nid yw'r partner argraffu POD yn ddilys.
@@ -1671,7 +1665,6 @@ Mae'r rhestr yn cael ei adnewyddu bob tro yr ydych yn pwyso ar y botymau ychwane
 	'coll-suggest_undo' => 'dadwneud',
 	'right-collectionsaveasuserpage' => 'Gallu cadw llyfrau ar dudalennau yn y parth defnyddiwr',
 	'right-collectionsaveascommunitypage' => 'Gallu rhoi llyfrau ar gadw ar dudalennau cymunedol',
-	'coll-or' => 'neu',
 );
 
 /** Danish (Dansk)
@@ -1824,7 +1817,6 @@ Immer, wenn du auf die Hinzufügen- oder Entfernen-Buttons klickst, wird die Lis
 	'coll-suggest_undo' => 'rückgängig',
 	'right-collectionsaveasuserpage' => 'Bücher als Benutzerseite speichern',
 	'right-collectionsaveascommunitypage' => 'Bücher als Gemeinschaftsseite speichern',
-	'coll-or' => 'oder',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
@@ -1877,6 +1869,7 @@ Immer, wenn Sie auf die Hinzufügen- oder Entfernen-Buttons klicken, wird die Li
 );
 
 /** Zazaki (Zazaki)
+ * @author Mirzali
  * @author Xoser
  */
 $messages['diq'] = array(
@@ -1985,7 +1978,7 @@ Belki o dosya esteriyayo u gani reyna viraziyayo.',
 	'coll-return_to_collection' => '<p>Reyna şi <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Kitab çap bike u hind sipariş bike',
 	'coll-book_text' => 'Kitab xo partnerê ma ra biger.',
-	'coll-order_from_pp' => 'Kitab $1 ra sipariş bike',
+	'coll-order_from_pp' => 'Verqayt be $1',
 	'coll-about_pp' => 'Heqa $1',
 	'coll-invalid_podpartner_title' => 'Partnerê PODî ğeletî',
 	'coll-invalid_podpartner_msg' => 'Partnerê PODî raşt niyo.
@@ -2013,7 +2006,6 @@ Ma rica keno îdarekarê MedîyaWîkîyî ra yew mesaj bişirav.',
 	'coll-suggest_undo' => 'reyna biyar',
 	'right-collectionsaveasuserpage' => 'Kitab ze pelê karberî qeyd bike',
 	'right-collectionsaveascommunitypage' => 'Kitab ze pelê cemeatî qeyd bike',
-	'coll-or' => 'ya zi',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -2123,7 +2115,7 @@ Pśispomnjeśa:
 	'coll-return_to_collection' => '<p>Slědk k <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ako wuśišćane knigły skazaś',
 	'coll-book_text' => 'Wuśišćane knigły wót našogo parnera za śišć na pominanje skazaś:',
-	'coll-order_from_pp' => 'Knigły wót $1 skazaś',
+	'coll-order_from_pp' => 'Pśeglěd pla $1',
 	'coll-about_pp' => 'Wó $1',
 	'coll-invalid_podpartner_title' => 'Njepłaśiwy partner za śišć na pominanje',
 	'coll-invalid_podpartner_msg' => 'Pódany partner za śišć na pominanje jo njepłaśiwy.
@@ -2151,7 +2143,6 @@ Lisćina se aktualizěrujo, gažkuli kliknjoš na tłocašk "pśidaś" abo "wót
 	'coll-suggest_undo' => 'slědk wześ',
 	'right-collectionsaveasuserpage' => 'Knigły ako wužywarski bok składowaś',
 	'right-collectionsaveascommunitypage' => 'Knigły ako bok zgromaźeństwa składowaś',
-	'coll-or' => 'abo',
 );
 
 /** Ewe (Eʋegbe)
@@ -2274,7 +2265,7 @@ $messages['el'] = array(
 	'coll-return_to_collection' => '<p>Επιστροφή στο <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Παραγγελία ως εκτυπωμένο βιβλίο',
 	'coll-book_text' => 'Πάρτε ένα τυπωμένο βιβλίο από τον συνεργάτη μας εκτύπωσης-κατά-παραγγελία:',
-	'coll-order_from_pp' => 'Παραγγελία βιβλίου από το $1',
+	'coll-order_from_pp' => 'Προεπισκόπηση με $1',
 	'coll-about_pp' => 'Σχετικά με το $1',
 	'coll-invalid_podpartner_title' => 'Ανύπαρκτος συνεργάτης ΕΚΠ',
 	'coll-invalid_podpartner_msg' => 'Ο ζητούμενος συνεργάτης ΕΚΠ δεν υπάρχει.
@@ -2297,7 +2288,6 @@ $messages['el'] = array(
 	'coll-suggest_undo' => 'αναίρεση',
 	'right-collectionsaveasuserpage' => 'Αποθήκευση βιβλίων ως σελίδας χρήστη',
 	'right-collectionsaveascommunitypage' => 'Αποθήκευση βιβλίων ως σελίδας κοινότητας',
-	'coll-or' => 'ή',
 );
 
 /** Esperanto (Esperanto)
@@ -2420,7 +2410,6 @@ Bonvolu kontakti vian administranton de MediaWiki.',
 	'coll-suggest_undo' => 'malfari',
 	'right-collectionsaveasuserpage' => 'Konservi librojn kiel uzanto-paĝo',
 	'right-collectionsaveascommunitypage' => 'Konservi librojn kiel komunuma paĝo',
-	'coll-or' => 'aŭ',
 );
 
 /** Spanish (Español)
@@ -2569,7 +2558,6 @@ La lista es actualizada cada vez que haces click en los botones de agregar o rem
 	'coll-suggest_undo' => 'deshacer',
 	'right-collectionsaveasuserpage' => 'Grabar libros como página de usuario',
 	'right-collectionsaveascommunitypage' => 'Grabar libros como página de la comunidad',
-	'coll-or' => 'o',
 );
 
 /** Estonian (Eesti)
@@ -2704,7 +2692,6 @@ Võib-olla on see kustutatud ja tuleb taasluua.',
 	'coll-suggest_undo' => 'võta tagasi',
 	'right-collectionsaveasuserpage' => 'Salvestada raamatud kasutajaleheküljena',
 	'right-collectionsaveascommunitypage' => 'Salvestada raamat ühisleheküljena',
-	'coll-or' => 'või',
 );
 
 /** Basque (Euskara)
@@ -2815,7 +2802,6 @@ Kontakta ezazu, mesedez MediaWiki administratzailea.',
 	'coll-suggest_show' => 'erakutsi',
 	'coll-suggest_undo_tooltip' => 'Ekintza hau desegin',
 	'coll-suggest_undo' => 'desegin',
-	'coll-or' => 'edo',
 );
 
 /** Persian (فارسی)
@@ -3057,7 +3043,6 @@ Ota yhteys MediaWiki-ylläpitäjääsi.',
 	'coll-suggest_undo' => 'kumoa',
 	'right-collectionsaveasuserpage' => 'Tallentaa kirjoja käyttäjäsivuna',
 	'right-collectionsaveascommunitypage' => 'Tallentaa kirjoja yhteisösivuina',
-	'coll-or' => 'tai',
 );
 
 /** French (Français)
@@ -3066,6 +3051,7 @@ Ota yhteys MediaWiki-ylläpitäjääsi.',
  * @author Grondin
  * @author Guillom
  * @author IAlex
+ * @author Jean-Frédéric
  * @author Korrigan
  * @author McDutchie
  * @author Meithal
@@ -3177,7 +3163,7 @@ Notes :
 	'coll-return_to_collection' => '<p>Revenir à la page <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Commander sous la forme d‘un livre imprimé',
 	'coll-book_text' => 'Obtenez un livre imprimé par notre partenaire d’impression à la demande :',
-	'coll-order_from_pp' => 'Commander le livre à $1',
+	'coll-order_from_pp' => 'Aperçu avec $1',
 	'coll-about_pp' => 'À propos de $1',
 	'coll-invalid_podpartner_title' => 'Partenaire d’impression à la demande incorrect.',
 	'coll-invalid_podpartner_msg' => 'Le partenaire d’impression à la demande indiqué est incorrect.
@@ -3205,7 +3191,6 @@ La liste est mise à jour à chaque fois que vous cliquez sur les boutons d'ajou
 	'coll-suggest_undo' => 'défaire',
 	'right-collectionsaveasuserpage' => 'Sauvegarder des livres sur des pages utilisateur',
 	'right-collectionsaveascommunitypage' => 'Sauvegarder des livres sur des pages communautaires',
-	'coll-or' => 'ou',
 );
 
 /** Western Frisian (Frysk)
@@ -3325,7 +3310,7 @@ Notas:
 	'coll-return_to_collection' => '<p>Voltar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Encargar como un libro impreso',
 	'coll-book_text' => 'Obteña un libro impreso desde un dos nosos seguintes compañeiros de solicitudes de impresión:',
-	'coll-order_from_pp' => 'Encargar un libro a $1',
+	'coll-order_from_pp' => 'Vista previa con $1',
 	'coll-about_pp' => 'Acerca de $1',
 	'coll-invalid_podpartner_title' => 'Compañeiro de solicitudes de impresión (POD) inválido',
 	'coll-invalid_podpartner_msg' => 'O compañeiro de solicitudes de impresión (POD) indicado é inválido.
@@ -3353,7 +3338,6 @@ A lista actualízase sempre que preme no botón engadir ou eliminar.',
 	'coll-suggest_undo' => 'desfacer',
 	'right-collectionsaveasuserpage' => 'Gardar libros como unha páxina de usuario',
 	'right-collectionsaveascommunitypage' => 'Gardar libros como unha páxina da comunidade',
-	'coll-or' => 'ou',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -3490,7 +3474,7 @@ Hiiwyys:
 	'coll-return_to_collection' => 'Zruck zue <a href="$1">$2</a>',
 	'coll-book_title' => 'As druckts Buech bstelle',
 	'coll-book_text' => 'Bstell e druckti Buechusgab bi unserem Print-on-Demand-Partner:',
-	'coll-order_from_pp' => 'Bstell Buech bi $1',
+	'coll-order_from_pp' => 'Vorschau bi $1',
 	'coll-about_pp' => 'Iber $1',
 	'coll-invalid_podpartner_title' => 'Nit giltige Print-on-Demand-Partner',
 	'coll-invalid_podpartner_msg' => 'In dr Aagabe zum Print-on-Demand-Partner het s Fähler. Bitte nimm Kontakt uf zu MediaWiki-Administrator.',
@@ -3517,7 +3501,6 @@ Alliwyl, wänn Du uf d Zuefiege- oder Useneh-Schaltflechine drucksch, wird die L
 	'coll-suggest_undo' => 'ruckgängig',
 	'right-collectionsaveasuserpage' => 'Biecher as Benutzersyte spychere',
 	'right-collectionsaveascommunitypage' => 'Biecher as Gmeinschaftssyte spychere',
-	'coll-or' => 'oder',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -3734,7 +3717,6 @@ $messages['he'] = array(
 	'coll-suggest_undo' => 'ביטול',
 	'right-collectionsaveasuserpage' => 'שמירת ספרים כדפי משתמש',
 	'right-collectionsaveascommunitypage' => 'שמירת ספרים כדפי קהילה',
-	'coll-or' => 'או',
 );
 
 /** Hindi (हिन्दी)
@@ -4026,7 +4008,7 @@ Přispomnjenka:
 	'coll-return_to_collection' => '<p>Wróćo k <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Jako wućišćanu knihu skazać',
 	'coll-book_text' => 'Wućišćanu knihu wot našeho partnera za ćišćenje na žadanje:',
-	'coll-order_from_pp' => 'Knihu pola $1 skazać',
+	'coll-order_from_pp' => 'Přehlad pola $1',
 	'coll-about_pp' => 'Wo $1',
 	'coll-invalid_podpartner_title' => 'Njepłaćiwy partner za ćišć na žadanje',
 	'coll-invalid_podpartner_msg' => 'Podaty partner za ćišć na žadanje je njepłaćiwy.
@@ -4054,7 +4036,6 @@ Lisćina aktualizuje so, hdyžkuli kliknješ na tłóčatko "přidać" abo "wots
 	'coll-suggest_undo' => 'cofnyć',
 	'right-collectionsaveasuserpage' => 'Knihi jako wužiwarsku stronu składować',
 	'right-collectionsaveascommunitypage' => 'Knihi jako stronu zhromadźenstwa składować',
-	'coll-or' => 'abo',
 );
 
 /** Hungarian (Magyar)
@@ -4194,7 +4175,6 @@ A lista minden alkalommal frissül, amikor a „hozzáadás” vagy „eltávol�
 	'coll-suggest_undo' => 'visszavonás',
 	'right-collectionsaveasuserpage' => 'Könyvek mentése mint felhasználói lap',
 	'right-collectionsaveascommunitypage' => 'Könyvek mentése közösségi lapként',
-	'coll-or' => 'vagy',
 );
 
 /** Armenian (Հայերեն)
@@ -4405,7 +4385,7 @@ Notas:
 	'coll-return_to_collection' => '<p>Retornar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Commandar como libro imprimite',
 	'coll-book_text' => 'Obtene un libro imprimite de nostre partenario de impression a requesta (print on demand):',
-	'coll-order_from_pp' => 'Commandar libro ab $1',
+	'coll-order_from_pp' => 'Previsualisar con $1',
 	'coll-about_pp' => 'A proposito de $1',
 	'coll-invalid_podpartner_title' => 'Partenario de impression a requesta (POD) non valide',
 	'coll-invalid_podpartner_msg' => 'Le partenario indicate de impression a requesta (POD) non es valide.
@@ -4433,11 +4413,11 @@ Le lista es actualisate cata vice que tu clicca super le buttones "adder" o "rem
 	'coll-suggest_undo' => 'disfacer',
 	'right-collectionsaveasuserpage' => 'Immagazinar libros como pagina de usator',
 	'right-collectionsaveascommunitypage' => 'Immagazinar libros como pagina de communitate',
-	'coll-or' => 'o',
 );
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Farras
  * @author Irwangatot
  * @author IvanLanin
  * @author Rex
@@ -4574,7 +4554,6 @@ Daftar diperbaharui kapanpun anda clik tombol tambahkan atau hapus.',
 	'coll-suggest_undo' => 'batalkan',
 	'right-collectionsaveasuserpage' => 'Menyimpan koleksi buku sebagai halaman pengguna',
 	'right-collectionsaveascommunitypage' => 'Menyimpan koleksi buku sebagai halaman komunitas',
-	'coll-or' => 'atau',
 );
 
 /** Ido (Ido)
@@ -4736,7 +4715,7 @@ Note:
 	'coll-return_to_collection' => '<p>Torna a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ordina come libro stampato',
 	'coll-book_text' => 'Ottieni un libro stampato da uno dei nostri partner di stampa su richiesta (print-on-demand):',
-	'coll-order_from_pp' => 'Ordina libro da $1',
+	'coll-order_from_pp' => 'Anteprima con $1',
 	'coll-about_pp' => 'Informazioni su $1',
 	'coll-invalid_podpartner_title' => 'Partner POD non valido',
 	'coll-invalid_podpartner_msg' => 'Il partner POD fornito non è valido. Contatta il tuo amministratore MediaWiki.',
@@ -4763,7 +4742,6 @@ L\'elenco viene aggiornato ogni qualvolta si fa clic sui pulsanti "aggiungi" o "
 	'coll-suggest_undo' => 'annulla',
 	'right-collectionsaveasuserpage' => 'Salva libri in pagine utente',
 	'right-collectionsaveascommunitypage' => 'Salva libri nelle pagine della comunità',
-	'coll-or' => 'o',
 );
 
 /** Japanese (日本語)
@@ -4870,7 +4848,7 @@ $messages['ja'] = array(
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p>に戻る',
 	'coll-book_title' => '印刷済みの本として注文',
 	'coll-book_text' => '印刷済みの本をわれわれのオンデマンド印刷パートナーから入手:',
-	'coll-order_from_pp' => '$1に本を注文',
+	'coll-order_from_pp' => '$1でプレビュー',
 	'coll-about_pp' => '$1について',
 	'coll-invalid_podpartner_title' => '無効なオンデマンド印刷パートナー',
 	'coll-invalid_podpartner_msg' => '提供されたオンデマンド印刷パートナーは無効です。MediaWiki の管理者に連絡してください。',
@@ -4896,7 +4874,6 @@ $messages['ja'] = array(
 	'coll-suggest_undo' => '取り消し',
 	'right-collectionsaveasuserpage' => 'ブックを利用者ページとして保存',
 	'right-collectionsaveascommunitypage' => 'ブックを共有ページとして保存',
-	'coll-or' => 'または',
 );
 
 /** Javanese (Basa Jawa)
@@ -5094,7 +5071,6 @@ $messages['ka'] = array(
 	'coll-suggest_your_book' => 'თქვენი წიგნი',
 	'right-collectionsaveasuserpage' => 'შეინახე წიგნი, როგორც მომხმარებლის გვერდი',
 	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
-	'coll-or' => 'ან',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -5411,7 +5387,7 @@ Opjepaß:
 	'coll-return_to_collection' => '<p>Jangk Retur noh <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Donn der Drock vun däm Booch beshtälle',
 	'coll-book_text' => 'Donn e Booch bestelle en de Dröckerei:',
-	'coll-order_from_pp' => 'Donn dat Booch bei $1 beshtälle',
+	'coll-order_from_pp' => 'Vör-Aansich vun däm Booch bei $1',
 	'coll-about_pp' => 'Üvver $1',
 	'coll-invalid_podpartner_title' => 'Verkeehte Aajabe zom Dröcke udder zor Dröckerei',
 	'coll-invalid_podpartner_msg' => 'De Aajabe zom Dröcke un wä dat maache sull sin verkeeht.
@@ -5439,7 +5415,6 @@ Di Leß weed neu opjebout, wann De op dä „Dobei donn“ udder dä „{{int:co
 	'coll-suggest_undo' => 'zeröck nämme',
 	'right-collectionsaveasuserpage' => 'E Boch als enem Metmaacher sing Sigg avspeichere',
 	'right-collectionsaveascommunitypage' => 'E Boch als en Jemeinschaffß_Sigg avspeichere',
-	'coll-or' => 'udder',
 );
 
 /** Cornish (Kernowek)
@@ -5559,7 +5534,7 @@ Opgepasst:
 	'coll-return_to_collection' => '<p>Zréck op <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Als gedréckte Buch bestellen',
 	'coll-book_text' => 'Bestellt e gedréckte Buch vun eisem Print-On-Demand Partner:',
-	'coll-order_from_pp' => "D'Buch bestelle bäi $1",
+	'coll-order_from_pp' => 'Mat $1 kucken',
 	'coll-about_pp' => 'Iwwer $1',
 	'coll-invalid_podpartner_title' => 'Ongëltege Print-On-Demand (POD) Partner',
 	'coll-invalid_podpartner_msg' => 'Donnéeën vum Print-On-Demand (POD) Partner sinn net valabel.
@@ -5587,7 +5562,6 @@ D'Lëscht gëtt all kéier aktuliséiert wann dir op d'Knäppecher derbäisetzen
 	'coll-suggest_undo' => 'réckgängeg maachen',
 	'right-collectionsaveasuserpage' => 'Bicher als Benotzersäit späicheren',
 	'right-collectionsaveascommunitypage' => 'Bicher als Gemeinschaftssäit späicheren',
-	'coll-or' => 'oder',
 );
 
 /** Limburgish (Limburgs)
@@ -5879,7 +5853,6 @@ $messages['mk'] = array(
 	'coll-suggest_undo' => 'врати',
 	'right-collectionsaveasuserpage' => 'Зачувување на книги како корисничка страница',
 	'right-collectionsaveascommunitypage' => 'Зачувување на книги како страница на заедницата',
-	'coll-or' => 'или',
 );
 
 /** Malayalam (മലയാളം)
@@ -5984,7 +5957,7 @@ $messages['ml'] = array(
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p>-ലേക്കു തിരിച്ചു പോവുക',
 	'coll-book_title' => 'അച്ചടിച്ച പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
 	'coll-book_text' => 'ഞങ്ങളുടെ ആവശ്യപ്പെട്ടാൽ-അച്ചടിച്ചു-തരുന്ന പങ്കാളിയുടെ പക്കൽ നിന്നും അച്ചടിച്ച പുസ്തകം സ്വന്തമാക്കുക.',
-	'coll-order_from_pp' => '$1-ല്‍ നിന്നു പുസ്തകം ഓര്‍ഡര്‍ ചെയ്യുക',
+	'coll-order_from_pp' => '$1 വഴി എങ്ങനെയുണ്ടെന്നു കാണുക',
 	'coll-about_pp' => '$1-നെ കുറിച്ച്',
 	'coll-invalid_podpartner_title' => 'അസാധുവായ POD പങ്കാളി',
 	'coll-invalid_podpartner_msg' => 'നൽകിയ POD പങ്കാളി അസാധുവാണ്.
@@ -6011,7 +5984,6 @@ $messages['ml'] = array(
 	'coll-suggest_undo' => 'പ്രവൃത്തി തിരസ്കരിക്കുക',
 	'right-collectionsaveasuserpage' => 'പുസ്തകങ്ങൾ ഉപയോക്തൃതാളായി സേവ് ചെയ്യുക',
 	'right-collectionsaveascommunitypage' => 'പുസ്തകങ്ങൾ സമൂഹ താളായി സേവ് ചെയ്യുക',
-	'coll-or' => 'അഥവാ',
 );
 
 /** Mongolian (Монгол)
@@ -6478,7 +6450,7 @@ Het is mogelijk verwijderd en moet opnieuw aangemaakt worden.',
 	'coll-return_to_collection' => '<p>Teruggaan naar <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Als gedrukt boek bestellen',
 	'coll-book_text' => 'U kunt een gedrukt boek bestellen bij een print-on-demand-partner:',
-	'coll-order_from_pp' => 'Boek bij $1 bestellen',
+	'coll-order_from_pp' => 'Voorvertoning van $1',
 	'coll-about_pp' => 'Over $1',
 	'coll-invalid_podpartner_title' => 'Ongeldige print on demand-partner',
 	'coll-invalid_podpartner_msg' => 'De opgegeven print on demand-partner is ongeldig.
@@ -6506,7 +6478,6 @@ De lijst wordt bijgewerkt als u op de knop 'toevoegen' of 'verwijderen' klikt.",
 	'coll-suggest_undo' => 'ongedaan maken',
 	'right-collectionsaveasuserpage' => 'Boeken opslaan als gebruikerspagina',
 	'right-collectionsaveascommunitypage' => 'Boeken opslaan als gemeenschapspagina',
-	'coll-or' => 'of',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -6637,7 +6608,6 @@ Kontakt MediaWiki-administratoren din.',
 	'coll-suggest_undo' => 'gjer om',
 	'right-collectionsaveasuserpage' => 'Lagre bøker som brukarsider',
 	'right-collectionsaveascommunitypage' => 'Lagre bøker som ei sams side',
-	'coll-or' => 'eller',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -6891,7 +6861,6 @@ La lista es mesa a jorn a cada còp que clicatz suls botons d'apondon o de supre
 	'coll-suggest_undo' => 'desfar',
 	'right-collectionsaveasuserpage' => "Salvar de libres sus de paginas d'utilizaire",
 	'right-collectionsaveascommunitypage' => 'Salvar de libres sus de paginas comunautàrias',
-	'coll-or' => 'o',
 );
 
 /** Ossetic (Иронау)
@@ -7075,7 +7044,6 @@ Lista jest aktualizowana, gdy klikniesz na przyciski dodaj lub usuń.',
 	'coll-suggest_undo' => 'cofnij',
 	'right-collectionsaveasuserpage' => 'Zapisywanie książek jako stronę użytkownika',
 	'right-collectionsaveascommunitypage' => 'Zapisywanie książek jako wspólną stronę',
-	'coll-or' => 'lub',
 );
 
 /** Pashto (پښتو)
@@ -7115,10 +7083,10 @@ $messages['ps'] = array(
  * @author Waldir
  */
 $messages['pt'] = array(
-	'coll-desc' => '[[Special:Book|Cria livros]]',
-	'coll-book_creator_intro' => "<big>No ''criador de livros'' você pode criar um livro contendo páginas wikis da sua escolha. Você pode exportar o livro em diferentes formatos (por exemplo PDF ou ODF) ou solicitar uma cópia impressa.</big>",
-	'coll-manage_your_book' => 'Gerir seu livro',
-	'coll-book_creator_help' => 'Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para mais detalhes.',
+	'coll-desc' => '[[Special:Book|Criar livros]]',
+	'coll-book_creator_intro' => "<big>Com o ''criador de livros'' pode criar um livro que contém as páginas wiki que escolher. Pode exportar o livro em formatos diferentes (por exemplo, PDF ou ODF) ou solicitar uma cópia impressa.</big>",
+	'coll-manage_your_book' => 'Gerir o livro',
+	'coll-book_creator_help' => 'Consulte [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para mais detalhes.',
 	'coll-start_book_creator' => 'Iniciar o criador de livros',
 	'coll-book_creator_continue' => 'Continue a usar o criador de livros',
 	'coll-book_creator_disable_text' => "O ''criador de livros'' será desactivado e o livro no qual está a trabalhar será removido.",
@@ -7130,7 +7098,7 @@ $messages['pt'] = array(
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Sub-página desconhecida',
 	'coll-unknown_subpage_text' => 'Não existe esta sub-página do [[Special:Book|Livro]]',
-	'coll-couldnotaddarticle_title' => 'Não pôde ser adicionada a página wiki',
+	'coll-couldnotaddarticle_title' => 'Não foi possível adicionar a página wiki',
 	'coll-couldnotaddarticle_msg' => 'A página wiki não pode ser adicionada.',
 	'coll-couldnotremovearticle_title' => 'Não foi possível remover a página wiki',
 	'coll-couldnotremovearticle_msg' => 'A página wiki não pôde ser removida.',
@@ -7138,10 +7106,10 @@ $messages['pt'] = array(
 <strong>O seu navegador não suporta JavaScript ou o JavaScript foi desactivado.
 Esta página não funcionará correctamente, se não activar o JavaScript.</strong>',
 	'coll-savedbook_template' => 'livro_gravado',
-	'coll-your_book' => 'Seu livro',
+	'coll-your_book' => 'O seu livro',
 	'coll-download_title' => 'Descarregar',
-	'coll-download_text' => 'Para descarregar seu livro, escolha um formato e pressione o botão.',
-	'coll-download_as_text' => 'Para descarregar seu livro em formato $1, clique no botão.',
+	'coll-download_text' => 'Para descarregar o seu livro, escolha um formato e clique o botão.',
+	'coll-download_as_text' => 'Para descarregar o seu livro no formato $1, clique o botão.',
 	'coll-download' => 'Descarregar',
 	'coll-format_label' => 'Formato:',
 	'coll-remove' => 'Remover',
@@ -7153,23 +7121,23 @@ Esta página não funcionará correctamente, se não activar o JavaScript.</stro
 	'coll-title' => 'Título:',
 	'coll-subtitle' => 'Subtítulo:',
 	'coll-contents' => 'Conteúdo',
-	'coll-drag_and_drop' => 'Arraste-e-solte para re-ordenar as páginas wiki e capítulos',
+	'coll-drag_and_drop' => 'Para reordenar as páginas wiki e os capítulos, arraste-os com o rato e largue-os',
 	'coll-create_chapter' => 'Criar capítulo',
 	'coll-sort_alphabetically' => 'Ordenar alfabeticamente',
-	'coll-rename' => 'Renomear',
+	'coll-rename' => 'Alterar o nome',
 	'coll-new_chapter' => 'Introduza o nome do novo capítulo',
-	'coll-rename_chapter' => 'Introduza o nome do capítulo',
-	'coll-no_such_category' => 'Não existe essa categoria',
+	'coll-rename_chapter' => 'Introduza um nome novo para o capítulo',
+	'coll-no_such_category' => 'Essa categoria não existe',
 	'coll-notitle_title' => 'Não foi possível determinar o título da página.',
 	'coll-post_failed_title' => 'Pedido POST falhou',
-	'coll-post_failed_msg' => 'O pedido POST feito à $1 falhou ($2).',
+	'coll-post_failed_msg' => 'O pedido POST feito a $1 falhou ($2).',
 	'coll-mwserve_failed_title' => 'Erro no servidor de renderização',
 	'coll-mwserve_failed_msg' => 'Ocorreu um erro no servidor de renderização: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Resposta de erro do servidor',
 	'coll-empty_collection' => 'Livro vazio',
 	'coll-revision' => 'Revisão: $1',
 	'coll-save_collection_title' => 'Grave e partilhe o seu livro',
-	'coll-save_collection_text' => 'Defina a localização:',
+	'coll-save_collection_text' => 'Escolha a localização do seu livro:',
 	'coll-login_to_save' => 'Se pretende gravar livros para usar mais tarde, por favor, [[Special:UserLogin|autentique-se ou crie uma conta]].',
 	'coll-personal_collection_label' => 'Livro pessoal:',
 	'coll-community_collection_label' => 'Livro comunitário:',
@@ -7180,22 +7148,22 @@ Esta página não funcionará correctamente, se não activar o JavaScript.</stro
 Deseja substituí-la com o seu livro?',
 	'coll-yes' => 'Sim',
 	'coll-no' => 'Não',
-	'coll-load_overwrite_text' => 'Você já possui algumas páginas no seu livro.
-Pretende reescrever o seu livro atual, adicionando o novo conteúdo, ou cancelar o carregamento deste livro?',
-	'coll-overwrite' => 'Reescrever',
+	'coll-load_overwrite_text' => 'O seu livro já possui algumas páginas.
+Pretende substituir o livro actual, adicionar-lhe o novo conteúdo ou cancelar o carregamento deste novo livro?',
+	'coll-overwrite' => 'Substituir',
 	'coll-append' => 'Adicionar',
 	'coll-cancel' => 'Cancelar',
 	'coll-update' => 'Actualizar',
 	'coll-limit_exceeded_title' => 'Livro demasiado grande',
 	'coll-limit_exceeded_text' => 'O seu livro é demasiado grande.
-Não poderão ser adicionadas mais páginas.',
+Não podem ser adicionadas mais páginas.',
 	'coll-rendering_title' => 'Renderizando',
 	'coll-rendering_text' => '<p><strong>Por favor, aguarde enquanto o documento é gerado.</strong></p>
 
 <p><strong>Progresso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>Este página deverá atualizar automaticamente após alguns segundos.
-Se isto não funcionar, por favor utilize o botão "atualizar" ("refresh") do seu navegador.</p>',
+<p>Esta página deverá actualizar-se automaticamente com frequência.
+Se não o fizer, por favor use o botão "actualizar" ("refresh") do seu navegador.</p>',
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(página wiki: $1)',
 	'coll-rendering_page' => '(página: $1)',
@@ -7204,48 +7172,48 @@ Se isto não funcionar, por favor utilize o botão "atualizar" ("refresh") do se
 <strong>[$1 Transfira o ficheiro]</strong> para o seu computador.
 
 Notas:
-* Não está satisfeito com o resultado? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para possibilidades de aprimoramentos.',
+* Não está satisfeito com o resultado? Consulte [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para conhecer as possibilidades de aprimoramento.',
 	'coll-notfound_title' => 'Livro não encontrado',
 	'coll-notfound_text' => 'Não foi possível encontrar a página do livro.',
 	'coll-download_notfound_title' => 'Ficheiro não encontrado',
-	'coll-download_notfound_text' => 'O ficheiro que você está a tentar descarregar não existe: Talvez tenha sido apagado e precise ser regenerado.',
+	'coll-download_notfound_text' => 'O ficheiro que está a tentar descarregar não existe:
+Talvez tenha sido apagado e precise de ser regenerado.',
 	'coll-download_failed_title' => 'Erro durante o descarregamento',
-	'coll-download_failed_text' => 'Houve um erro aquando do descarregamento do ficheiro: $1',
+	'coll-download_failed_text' => 'Ocorreu um erro ao descarregar o ficheiro: $1',
 	'coll-is_cached' => '<ul><li>Foi encontrada uma versão deste documento em cache, dispensando a renderização. <a href="$1"> Forçar nova renderização.</a></li></ul>',
 	'coll-excluded-templates' => '* As predefinições na categoria [[:Category:$1|$1]] foram excluídas.',
 	'coll-blacklisted-templates' => '* As predefinições na lista negra [[:$1]] foram excluídas.',
 	'coll-return_to_collection' => '<p>Regressar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Encomendar como livro impresso',
-	'coll-book_text' => 'Adquira um livro impresso do nosso parceiro de impressão-a-pedido:',
-	'coll-order_from_pp' => 'Encomendar o livro de $1',
+	'coll-book_text' => 'Adquira um livro impresso pelo nosso parceiro de impressão por encomenda.',
+	'coll-order_from_pp' => 'Antever o livro por $1',
 	'coll-about_pp' => 'Sobre $1',
-	'coll-invalid_podpartner_title' => 'Parceiro de impressão-a-pedido inválido',
-	'coll-invalid_podpartner_msg' => 'O parceiro de impressão-a-pedido é inválido.
+	'coll-invalid_podpartner_title' => 'Parceiro de impressão por encomenda inválido',
+	'coll-invalid_podpartner_msg' => 'O parceiro de impressão por encomenda é inválido.
 Por favor, contacte o seu administrador MediaWiki.',
 	'coll-license' => 'Licença',
 	'coll-return_to' => 'Voltar para [[:$1]]',
 	'coll-more_info' => 'Mostrar mais informações',
 	'coll-hide_info' => 'Ocultar informações',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informação sobre encomendas PediaPress',
-	'coll-suggest_title' => 'Páginas sugeridas para seu livro',
-	'coll-suggest_intro_text' => 'Sugestões são baseadas no conjunto atual de páginas wiki no seu livro.
-A lista é atualizada toda vez que você clica nos botões adicionar ou remover.',
+	'coll-suggest_title' => 'Páginas sugeridas para o seu livro',
+	'coll-suggest_intro_text' => 'As sugestões são baseadas no conjunto actual de páginas wiki no seu livro.
+A lista é actualizada sempre que clica os botões de adicionar ou remover.',
 	'coll-suggested_articles' => 'Sugestões',
 	'coll-suggest_reset_bans' => 'restabelecer',
 	'coll-suggest_reset_bans_tooltip' => 'Mostrar sugestões removidas anteriomente',
-	'coll-suggest_add_selected' => 'Adicionar páginas selecionadas',
-	'coll-suggest_ban_selected' => 'Remover páginas selecionadas',
-	'coll-suggest_your_book' => 'Seu livro',
+	'coll-suggest_add_selected' => 'Adicionar páginas seleccionadas',
+	'coll-suggest_ban_selected' => 'Remover páginas seleccionadas',
+	'coll-suggest_your_book' => 'O seu livro',
 	'coll-suggest_show' => 'mostrar',
 	'coll-suggest_ban_tooltip' => 'Remover esta página da lista de sugestões',
 	'coll-suggest_article_ban' => 'A página <strong>$1</strong> foi removida das sugestões ($2).',
 	'coll-suggest_article_add' => 'A página <strong>$1</strong> foi adicionada ao seu livro ($2).',
 	'coll-suggest_article_remove' => 'A página <strong>$1</strong> foi removida do seu livro ($2).',
-	'coll-suggest_undo_tooltip' => 'Desfazer essa ação',
+	'coll-suggest_undo_tooltip' => 'Desfazer esta acção',
 	'coll-suggest_undo' => 'desfazer',
 	'right-collectionsaveasuserpage' => 'Gravar livros como página de utilizador',
 	'right-collectionsaveascommunitypage' => 'Gravar livros como página comunitária',
-	'coll-or' => 'ou',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -7388,7 +7356,6 @@ A lista é atualizada toda vez que você clica nos botões adicionar ou remover.
 	'coll-suggest_undo' => 'desfazer',
 	'right-collectionsaveasuserpage' => 'Salvar livros como página de usuário',
 	'right-collectionsaveascommunitypage' => 'Salvar livros como páginas comunitárias',
-	'coll-or' => 'ou',
 );
 
 /** Romanian (Română)
@@ -7654,7 +7621,7 @@ $messages['ru'] = array(
 	'coll-return_to_collection' => '<p>Назад к <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Заказать печатную книгу',
 	'coll-book_text' => 'Получить печатную книгу от нашего партнёра:',
-	'coll-order_from_pp' => 'Заказ книги в $1',
+	'coll-order_from_pp' => 'Предпросмотр посредством $1',
 	'coll-about_pp' => 'О $1',
 	'coll-invalid_podpartner_title' => 'Недействительный POD-партнёр',
 	'coll-invalid_podpartner_msg' => 'Предоставляемый POD-партнёр недействителен.
@@ -7682,7 +7649,6 @@ $messages['ru'] = array(
 	'coll-suggest_undo' => 'отменить',
 	'right-collectionsaveasuserpage' => 'сохранение книг, как страницу участника',
 	'right-collectionsaveascommunitypage' => 'сохранение книг, как страницу сообщества',
-	'coll-or' => 'или',
 );
 
 /** Yakut (Саха тыла)
@@ -7811,7 +7777,6 @@ $messages['sah'] = array(
 	'coll-suggest_undo' => 'төннөрөргө',
 	'right-collectionsaveasuserpage' => 'кинигэлэри кытааччы тус сирэйин курдук хаалларыы',
 	'right-collectionsaveascommunitypage' => 'кинигэлэри бөлөх тус сирэйин курдук хаалларыы',
-	'coll-or' => 'эбэтэр',
 );
 
 /** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
@@ -7956,7 +7921,6 @@ Zoznam sa aktualizuje vždy po kliknutí na tlačidlo Pridať alebo Odstrániť.
 	'coll-suggest_undo' => 'vrátiť',
 	'right-collectionsaveasuserpage' => 'Uložiť knihy ako používateľskú stránku',
 	'right-collectionsaveascommunitypage' => 'Uložiť knihy ako komunitnú stránku',
-	'coll-or' => 'alebo',
 );
 
 /** Slovenian (Slovenščina)
@@ -8174,7 +8138,6 @@ $messages['sr-ec'] = array(
 	'coll-suggest_your_book' => 'Твоја књига',
 	'coll-suggest_undo_tooltip' => 'Поништи ову акцију',
 	'coll-suggest_undo' => 'врати',
-	'coll-or' => 'или',
 );
 
 /** Serbian Latin ekavian (Srpski (latinica))
@@ -8297,7 +8260,6 @@ Molim kontaktirajte svog MedijaViki administratora.',
 	'coll-suggest_your_book' => 'Tvoja knjiga',
 	'coll-suggest_undo_tooltip' => 'Poništi ovu akciju',
 	'coll-suggest_undo' => 'vrati',
-	'coll-or' => 'ili',
 );
 
 /** Seeltersk (Seeltersk)
@@ -8546,7 +8508,6 @@ Listan uppdateras när du klickar på lägg till- eller ta bort-knappar.',
 	'coll-suggest_undo' => 'gör ogjord',
 	'right-collectionsaveasuserpage' => 'Spara böcker som användarsidor',
 	'right-collectionsaveascommunitypage' => 'Spara böcker som gemenskapssida',
-	'coll-or' => 'eller',
 );
 
 /** Telugu (తెలుగు)
@@ -8629,7 +8590,6 @@ $messages['te'] = array(
 	'coll-suggest_show' => 'చూపు',
 	'right-collectionsaveasuserpage' => 'పుస్తకములను సభ్యుని పేజి లాగ భద్రపరచుము',
 	'right-collectionsaveascommunitypage' => 'పుస్తకములను కమ్యూనిటీ పేజి లాగ భద్రపరచుము',
-	'coll-or' => 'లేదా',
 );
 
 /** Tetum (Tetun)
@@ -9044,7 +9004,6 @@ Ekle veya sil butonlarına her bastığınızda liste yenilenir.',
 	'coll-suggest_undo' => 'geri al',
 	'right-collectionsaveasuserpage' => 'Kitapları kullanıcı sayfası olarak kaydet',
 	'right-collectionsaveascommunitypage' => 'Kitapları topluluk sayfası olarak kaydet',
-	'coll-or' => 'ya da',
 );
 
 /** Ukrainian (Українська)
@@ -9258,7 +9217,7 @@ Note:
 	'coll-return_to_collection' => '<p>Torna indrìo a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Ordina come libro stanpà',
 	'coll-book_text' => 'Otien un libro stanpà da uno dei nostri soci che i te lo stanpa su richiesta:',
-	'coll-order_from_pp' => 'Ordina libro da $1',
+	'coll-order_from_pp' => 'Anteprima co $1',
 	'coll-about_pp' => 'Informassion su $1',
 	'coll-invalid_podpartner_title' => 'Partner POD mia valido',
 	'coll-invalid_podpartner_msg' => "El socio POD fornìo no'l xe mia valido. Contata el to aministrador MediaWiki.",
@@ -9285,7 +9244,6 @@ La lista la vien ajornà ogni olta che te struchi sui botoni "zonta" o "cava".',
 	'coll-suggest_undo' => 'torna indrìo',
 	'right-collectionsaveasuserpage' => 'Salva na colezion come pagina utente',
 	'right-collectionsaveascommunitypage' => 'Salva na colezion come pagina comunitaria',
-	'coll-or' => 'o',
 );
 
 /** Veps (Vepsan kel')
@@ -9458,7 +9416,6 @@ Danh sách này được cập nhật mỗi khi bạn nhấn vào nút thêm ho�
 	'coll-suggest_undo' => 'phục hồi',
 	'right-collectionsaveasuserpage' => 'Lưu sách vở thành trang cá nhân',
 	'right-collectionsaveascommunitypage' => 'Lưu sách thành trang cộng đồng',
-	'coll-or' => 'hoặc',
 );
 
 /** Volapük (Volapük)
