@@ -4147,7 +4147,7 @@ Megjegyzés:
 	'coll-return_to_collection' => '<p>Visszatérés ide: <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Megrendelés nyomtatott könyvként',
 	'coll-book_text' => 'Nyomtatott könyv rendelése a kérésre nyomtató partnerünktől:',
-	'coll-order_from_pp' => 'Könyv rendelése a következőtől: $1',
+	'coll-order_from_pp' => 'Előnézet: $1',
 	'coll-about_pp' => 'A $1ről',
 	'coll-invalid_podpartner_title' => 'Érvénytelen nyomdai partner',
 	'coll-invalid_podpartner_msg' => 'A megadott nyomdai partner érvénytelen.
@@ -5825,7 +5825,7 @@ $messages['mk'] = array(
 	'coll-return_to_collection' => '<p>Врати се на <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Порачај во печатен облик',
 	'coll-book_text' => 'Порачајте ја книгата во печатен облик од нашиот партнер.',
-	'coll-order_from_pp' => 'Порачај ја книгата од $1',
+	'coll-order_from_pp' => 'Прегледај со $1',
 	'coll-about_pp' => 'За $1',
 	'coll-invalid_podpartner_title' => 'Неважечки POD партнер',
 	'coll-invalid_podpartner_msg' => 'Наведениот POD партнер е неважечки.
@@ -5949,7 +5949,7 @@ $messages['ml'] = array(
 	'coll-notfound_text' => 'പുസ്തക താള്‍ കണ്ടെത്താന്‍ കഴിഞ്ഞില്ല.',
 	'coll-download_notfound_title' => 'പ്രമാണം കണ്ടെത്താൻ കഴിഞ്ഞില്ല',
 	'coll-download_notfound_text' => 'താങ്കൾ ഡൗൺലോഡ് ചെയ്യാൻ ശ്രമിക്കുന്ന പ്രമാണം നിലവിലില്ല:
-ചിലപ്പോളത് മായ്ക്കപ്പെട്ടിരിക്കുന്നതാവാം, അങ്ങിനെയെങ്കിൽ അത് പുനഃസൃഷ്ടിക്കേണ്ടതുണ്ട്.',
+ചിലപ്പോളത് മായ്ക്കപ്പെട്ടിരിക്കുന്നതാവാം, അങ്ങനെയെങ്കിൽ അത് പുനഃസൃഷ്ടിക്കേണ്ടതുണ്ട്.',
 	'coll-download_failed_title' => 'ഡൗൺലോഡ് ചെയ്യുമ്പോൾ പിഴവ് സംഭവിച്ചു',
 	'coll-download_failed_text' => '$1 എന്ന പ്രമാണം ഡൗൺലോഡ് ചെയ്തുകൊണ്ടിരിക്കുമ്പോൾ ഒരു പിഴവ് സംഭവിച്ചിരിക്കുന്നു',
 	'coll-excluded-templates' => '*[[:Category:$1|$1]] എന്ന വർഗ്ഗത്തിലുൾപ്പെട്ട ഫലകങ്ങൾ ഒഴിവാക്കി.',
@@ -9388,7 +9388,7 @@ Chú ý:
 	'coll-return_to_collection' => '<p>Quay trở về <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Đặt sách in',
 	'coll-book_text' => 'Mua một cuốn sách in từ bên cộng tác in-theo-yêu-cầu:',
-	'coll-order_from_pp' => 'Đặt sách từ $1',
+	'coll-order_from_pp' => 'Xem trước dùng $1',
 	'coll-about_pp' => 'Giới thiệu $1',
 	'coll-invalid_podpartner_title' => 'Thành phần đi kèm POD không hợp lệ',
 	'coll-invalid_podpartner_msg' => 'Thành phần đi kèm POD đã cung cấp không hợp lệ.
