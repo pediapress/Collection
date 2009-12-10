@@ -5907,8 +5907,8 @@ $messages['ml'] = array(
 	'coll-notitle_title' => 'താളിന്റെ തലക്കെട്ട് നിര്‍ണ്ണയിക്കുന്നതിനു കഴിഞ്ഞില്ല.',
 	'coll-post_failed_title' => 'POST അഭ്യർത്ഥന പരാജയപ്പെട്ടു',
 	'coll-post_failed_msg' => '$1 എന്നതിലേയ്ക്കുള്ള POST അഭ്യർത്ഥന പരാജയപ്പെട്ടു ($2).',
-	'coll-mwserve_failed_title' => 'റെൻഡർ സെർവർ പിശക്',
-	'coll-mwserve_failed_msg' => 'റെൻഡർ സെ‌‌ർവറിൽ പിശക് സംഭവിച്ചിരിക്കുന്നു: <nowiki>$1</nowiki>',
+	'coll-mwserve_failed_title' => 'റെൻഡർ സെർവർ പിഴവ്',
+	'coll-mwserve_failed_msg' => 'റെൻഡർ സെ‌‌ർവറിൽ പിഴവ് സംഭവിച്ചിരിക്കുന്നു: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'സെര്‍‌വറില്‍ നിന്നു പിഴവാണെന്ന മറുപടി കിട്ടി.',
 	'coll-empty_collection' => 'ശൂന്യമായ പുസ്തകം',
 	'coll-revision' => 'പതിപ്പ്: $1',
@@ -7356,6 +7356,14 @@ A lista é atualizada toda vez que você clica nos botões adicionar ou remover.
 	'coll-suggest_undo' => 'desfazer',
 	'right-collectionsaveasuserpage' => 'Salvar livros como página de usuário',
 	'right-collectionsaveascommunitypage' => 'Salvar livros como páginas comunitárias',
+);
+
+/** Quechua (Runa Simi)
+ * @author AlimanRuna
+ */
+$messages['qu'] = array(
+	'coll-more_info' => 'Aswan willaykunata rikuchiy',
+	'coll-hide_info' => 'Willaykunata pakay',
 );
 
 /** Romanian (Română)
