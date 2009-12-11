@@ -229,7 +229,6 @@ class CollectionHooks {
 	static function renderBookCreatorBox( $mode='' ) {
 		global $wgArticle;
 		global $wgCollectionArticleNamespaces;
-		global $wgCollectionNavPopups;
 		global $wgCollectionStyleVersion;
 		global $wgCollectionVersion;
 		global $wgJsMimeType;
@@ -263,45 +262,6 @@ class CollectionHooks {
 		);
 		
 		$addRemoveState = $mode;
-
-		// activate popup check:
-		if ( !$mode && $wgCollectionNavPopups ) {
-			if ( $namespace == NS_CATEGORY ) {
-				$addRemoveState = 'addcategory';
-			} else if ( in_array( $namespace, $wgCollectionArticleNamespaces ) ) {
-				if ( CollectionSession::findArticle( $ptext, $oldid ) == -1 ) {
-					$addRemoveState = 'addarticle';
-				} else {
-					$addRemoveState = 'removearticle';
-				}
-			}
-			$html .= Skin::makeVariablesScript(
-				array(
-					'wgCollectionNavPopupJSURL' => "$jsPath/Gadget-popups.js?$wgCollectionStyleVersion",
-					'wgCollectionNavPopupCSSURL' => "$jsPath/Gadget-navpop.css?$wgCollectionStyleVersion",
-					'wgCollectionAddPageText' => wfMsg( 'coll-add_page_popup' ),
-					'wgCollectionAddCategoryText' => wfMsg( 'coll-add_category_popup' ),
-					'wgCollectionRemovePageText' => wfMsg( 'coll-remove_page_popup' ),
-					'wgCollectionArticleNamespaces' => $wgCollectionArticleNamespaces,
-					'wgCollectionAddRemoveState' => $addRemoveState,
-				)
-			);
-			$html .= Xml::element( 'script',
-				array(
-					'type' => $wgJsMimeType,
-					'src' => "$jsPath/json2.js?$wgCollectionStyleVersion"
-				),
-				'', false
-			);
-			$html .= Xml::element( 'script',
-				array(
-					'type' => $wgJsMimeType,
-					'src' => "$jsPath/popupcheck.js?$wgCollectionStyleVersion"
-				),
-				'', false
-			);
-		}
-
 
 		$html .= Xml::element( 'div',
 			array( 'style' => wfMsg( 'coll-book_creator_box_style' ) ),
