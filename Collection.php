@@ -97,8 +97,6 @@ $wgCollectionPortletFormats = array( 'rl' );
 
 $wgCollectionPortletForLoggedInUsersOnly = false;
 
-$wgCollectionNavPopups = true;
-
 $wgCollectionMaxSuggestions = 10;
 
 $wgCollectionSuggestCheapWeightThreshhold = 50;
