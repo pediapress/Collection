@@ -2530,7 +2530,7 @@ Notas:
 	'coll-return_to_collection' => '<p>Volver a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Solicitar el libro impreso',
 	'coll-book_text' => 'Obtener un libro impreso de uno de nuestros socios para solicitudes de impresión:',
-	'coll-order_from_pp' => 'Solicitar libro a $1',
+	'coll-order_from_pp' => 'Previsualizar con $1',
 	'coll-about_pp' => 'Acerca de $1',
 	'coll-invalid_podpartner_title' => 'Socio de solicitudes de impresión (POD) no válido',
 	'coll-invalid_podpartner_msg' => 'El socio para solicitudes de impresión (POD) indicado no es válido.
