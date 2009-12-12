@@ -2404,6 +2404,7 @@ $messages['te'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|పేజీ|పేజీలు}}',
 	'coll-printable_version_pdf' => 'PDF కూర్పు',
 	'coll-show_collection' => 'పుస్తకముని చూపించు',
+	'coll-not_addable' => 'ఈ పేజీని చేర్చలేము',
 	'coll-suggest_empty' => 'ఖాళీ',
 );
 
