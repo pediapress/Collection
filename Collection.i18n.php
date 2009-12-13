@@ -8576,6 +8576,7 @@ $messages['te'] = array(
 	'coll-no' => 'కాదు',
 	'coll-append' => 'జతచేయి',
 	'coll-cancel' => 'రద్దు',
+	'coll-update' => 'తాజాకరించు',
 	'coll-limit_exceeded_title' => 'పుస్తకం మరీ పెద్దగా ఉంది',
 	'coll-limit_exceeded_text' => 'మీ పుస్తకము చాలా పెద్దగా ఉంది.
 మరిన్ని పేజీలు చేర్చలేము.',
@@ -8984,7 +8985,7 @@ Not:
 	'coll-return_to_collection' => '<p><a href="$1">$2</a> koleksiyonuna geri dön</p>',
 	'coll-book_title' => 'Basılı bir kitap olarak sipariş et',
 	'coll-book_text' => 'Talebe-göre-basım ortağımızdan basılı bir kitap al:',
-	'coll-order_from_pp' => '$1 firmasından kitap sipariş et',
+	'coll-order_from_pp' => '$1 ile önizle',
 	'coll-about_pp' => '$1 hakkında',
 	'coll-invalid_podpartner_title' => 'Geçersiz POD ortağı',
 	'coll-invalid_podpartner_msg' => 'Sağlanan POD ortağı geçersiz.
