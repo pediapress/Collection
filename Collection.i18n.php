@@ -7901,7 +7901,7 @@ Poznámky:
 	'coll-return_to_collection' => '<p>Vrátiť sa na <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Objednať ako tlačenú knihu',
 	'coll-book_text' => 'Môžete si objednať tlačenú knihu od jedného z našich partnerov, ktorí robia tlač na vyžiadanie:',
-	'coll-order_from_pp' => 'Objednať knihu od $1',
+	'coll-order_from_pp' => 'Náhľad pomocou $1',
 	'coll-about_pp' => 'O $1',
 	'coll-invalid_podpartner_title' => 'Neplatný POD partner',
 	'coll-invalid_podpartner_msg' => 'Zadaný POD partner je neplatný.
