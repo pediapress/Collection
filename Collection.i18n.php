@@ -4988,6 +4988,7 @@ $messages['ka'] = array(
 	'coll-download_title' => 'ჩამოტვირთვა',
 	'coll-download' => 'ჩამოტვირთვა',
 	'coll-format_label' => 'ფორმატი:',
+	'coll-remove' => 'წაშლა',
 	'coll-show' => 'ჩვენება',
 	'coll-move_down' => 'ქვემოთ გადატანა',
 	'coll-move_to_bottom' => 'ფსკერამდე ჩასვლა',
