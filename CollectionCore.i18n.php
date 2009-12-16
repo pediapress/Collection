@@ -1989,6 +1989,37 @@ $messages['pl'] = array(
 	'coll-suggest_empty' => 'puste',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Borichèt
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'coll-print_export' => 'Stampa/espòrta',
+	'coll-create_a_book' => 'Crea un lìber',
+	'coll-create_a_book_tooltip' => 'Crea un lìber o na colession ëd pàgine',
+	'coll-book_creator' => 'Creator ëd lìber',
+	'coll-download_as' => 'Dëscaria com $1',
+	'coll-download_as_tooltip' => 'Dëscaria na version $1 dë sta pàgina wiki-sì',
+	'coll-disable' => 'Disabìlita',
+	'coll-book_creator_disable' => 'Disabìlita ël creator ëd lìber',
+	'coll-book_creator_disable_tooltip' => 'Deuvra pi nen ël creator ëd lìber',
+	'coll-add_category' => 'Gionta sta categorìa-sì a tò lìber',
+	'coll-add_category_tooltip' => 'Gionta tute le pàgine wiki an sta categorìa-sì a tò lìber',
+	'coll-add_this_page' => 'Gionta sta pàgina-sì a tò lìber',
+	'coll-add_page_tooltip' => 'Gionta la pàgina wiki corenta a tò lìber',
+	'coll-bookscategory' => 'Lìber',
+	'coll-clear_collection' => 'Scansela lìber',
+	'coll-clear_collection_confirm' => 'It veule da bon scanselé completament tò lìber?',
+	'coll-clear_collection_tooltip' => 'Gava tute le pàgine wiki da tò lìber corent',
+	'coll-help' => 'Agiut',
+	'coll-help_tooltip' => "Mosta l'agiut për creé lìber",
+	'coll-helppage' => 'Help:Lìber',
+	'coll-load_collection' => 'Caria lìber',
+	'coll-load_collection_tooltip' => 'caria sto lìber-sì com tò corent lìber',
+	'coll-n_pages' => '$1 {{PLURAL:$1|pàgina|pàgine}}',
+	'coll-printable_version_pdf' => 'Vërsion PDF',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
