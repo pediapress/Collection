@@ -2018,6 +2018,14 @@ $messages['pms'] = array(
 	'coll-load_collection_tooltip' => 'caria sto lìber-sì com tò corent lìber',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàgina|pàgine}}',
 	'coll-printable_version_pdf' => 'Vërsion PDF',
+	'coll-remove_this_page' => 'Gava sta pàgina-sì da tò lìber',
+	'coll-remove_page_tooltip' => 'Gava la pàgina wiki corenta da tò lìber',
+	'coll-show_collection' => 'Mosta lìber',
+	'coll-show_collection_tooltip' => 'Sgnaca pëe modifiché/Dëscarié/ordiné tò lìber',
+	'coll-not_addable' => 'Sta pàgina-sì a peul pa esse giontà',
+	'coll-make_suggestions' => 'Consèja dle pàgine',
+	'coll-make_suggestions_tooltip' => 'Mosta consèj basà an sle pàgine an tò lìber',
+	'coll-suggest_empty' => 'veuid',
 );
 
 /** Pashto (پښتو)

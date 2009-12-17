@@ -8382,6 +8382,7 @@ $messages['su'] = array(
  * @author M.M.S.
  * @author MagnusA
  * @author Najami
+ * @author Per
  * @author Rotsee
  * @author Sannab
  */
@@ -8489,7 +8490,7 @@ Noter:
 	'coll-return_to_collection' => '<p>Tillbaka till <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Beställ som en utskriven bok',
 	'coll-book_text' => 'Få en tryckt bok från vår print-on-demand-partner:',
-	'coll-order_from_pp' => 'Beställ bok från $1',
+	'coll-order_from_pp' => 'Förhandsgranska med $1',
 	'coll-about_pp' => 'Om $1',
 	'coll-invalid_podpartner_title' => 'Ogiltig POD-partner',
 	'coll-invalid_podpartner_msg' => 'Den erbjudna POD-partnern är ogiltig.
