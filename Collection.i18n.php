@@ -107,7 +107,7 @@ No more pages can be added.',
 <p><strong>Progress:</strong> <span id=\"renderingProgress\">$1</span>% <span id=\"renderingStatus\">$2</span></p>
 
 <p>This page should automatically refresh every few seconds.
-If this does not work, please press refresh button of your browser.</p>",
+If this does not work, please press your browser's refresh button.</p>",
 	'coll-rendering_status'           => "<strong>Status:</strong> $1",
 	'coll-rendering_article'          => '(wiki page: $1)',
 	'coll-rendering_page'             => '(page: $1)',
