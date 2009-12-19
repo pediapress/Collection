@@ -1863,11 +1863,15 @@ $messages['nn'] = array(
  * @author Simny
  */
 $messages['no'] = array(
+	'coll-print_export' => 'Skriv ut / eksporter',
 	'coll-create_a_book' => 'Opprett en bok',
 	'coll-create_a_book_tooltip' => 'Lag ei bok eller en artikkelsamling',
+	'coll-book_creator' => 'Bokskaper',
 	'coll-download_as' => 'Last ned som $1',
 	'coll-download_as_tooltip' => 'Last ned denne wikisida i $1-format',
 	'coll-disable' => 'slå av',
+	'coll-book_creator_disable' => 'Slå av bokskaper',
+	'coll-book_creator_disable_tooltip' => 'Stopp å bruke bokskaperen',
 	'coll-add_category' => 'Legg til denne kategorien i boka di',
 	'coll-add_category_tooltip' => 'Legg til alle wikisider i denne kategorien til din bok',
 	'coll-add_this_page' => 'Legg til denne siden i boka di',
@@ -1887,6 +1891,10 @@ $messages['no'] = array(
 	'coll-remove_page_tooltip' => 'Fjern den nåværende wikisiden fra din bok',
 	'coll-show_collection' => 'Vis bok',
 	'coll-show_collection_tooltip' => 'Trykk for å endre/laste ned/bestille din bok',
+	'coll-not_addable' => 'Denne siden kan ikke legges til',
+	'coll-make_suggestions' => 'Foreslå sider',
+	'coll-make_suggestions_tooltip' => 'Vis forslag basert på sidene i boken din',
+	'coll-suggest_empty' => 'tom',
 );
 
 /** Occitan (Occitan)
