@@ -5899,6 +5899,7 @@ $messages['ml'] = array(
 	'coll-title' => 'ശീര്‍ഷകം:',
 	'coll-subtitle' => 'ഉപശീര്‍ഷകം:',
 	'coll-contents' => 'ഉള്ളടക്കം',
+	'coll-drag_and_drop' => 'വിക്കി താളുകളും അദ്ധ്യായങ്ങളും ക്രമം മാറ്റാൻ വലിച്ചിടൽ ഉപയോഗിക്കുക',
 	'coll-create_chapter' => 'അദ്ധ്യായം സൃഷ്ടിക്കുക',
 	'coll-sort_alphabetically' => 'താളുകള്‍ അകാദാരിക്രമത്തില്‍ ക്രമീകരിക്കുക',
 	'coll-rename' => 'പുനഃര്‍നാമകരണം ചെയ്യുക',
@@ -5953,6 +5954,8 @@ $messages['ml'] = array(
 ചിലപ്പോളത് മായ്ക്കപ്പെട്ടിരിക്കുന്നതാവാം, അങ്ങനെയെങ്കിൽ അത് പുനഃസൃഷ്ടിക്കേണ്ടതുണ്ട്.',
 	'coll-download_failed_title' => 'ഡൗൺലോഡ് ചെയ്യുമ്പോൾ പിഴവ് സംഭവിച്ചു',
 	'coll-download_failed_text' => '$1 എന്ന പ്രമാണം ഡൗൺലോഡ് ചെയ്തുകൊണ്ടിരിക്കുമ്പോൾ ഒരു പിഴവ് സംഭവിച്ചിരിക്കുന്നു',
+	'coll-is_cached' => '<ul><li>പ്രമാണത്തിന്റെ സംഭരിച്ചു വെച്ച പതിപ്പ് കണ്ടെത്താനായി, അതുകൊണ്ട് റെൻഡറിങ് ആവശ്യമില്ല.
+<a href="$1">പുനർ-റെൻഡറിങ് ചെയ്യുക.</a></li></ul>',
 	'coll-excluded-templates' => '*[[:Category:$1|$1]] എന്ന വർഗ്ഗത്തിലുൾപ്പെട്ട ഫലകങ്ങൾ ഒഴിവാക്കി.',
 	'coll-blacklisted-templates' => '*കരിമ്പട്ടികയിലുള്ള ഫലകങ്ങൾ [[:$1]] ഒഴിവാക്കിയിരിക്കുന്നു.',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p>-ലേക്കു തിരിച്ചു പോവുക',
@@ -6747,6 +6750,7 @@ Listen oppdateres når du klikker på legg til- eller fjern-knappene.',
 	'coll-suggest_undo_tooltip' => 'Angre denne handligen',
 	'coll-suggest_undo' => 'Angre',
 	'right-collectionsaveasuserpage' => 'Lagre bøker som brukersider',
+	'right-collectionsaveascommunitypage' => 'Lagre bøker som samfunnsside',
 );
 
 /** Occitan (Occitan)
