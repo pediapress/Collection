@@ -93,6 +93,7 @@ $messages['qqq'] = array(
 $messages['af'] = array(
 	'coll-print_export' => 'Druk/eksporteer',
 	'coll-create_a_book' => "Skep 'n boek",
+	'coll-book_creator' => 'Boekmaker',
 	'coll-download_as' => 'Laai af as $1',
 	'coll-disable' => 'deaktiveer',
 	'coll-add_category' => 'Voeg die kategorie by jou boek',
@@ -230,14 +231,22 @@ $messages['be-tarask'] = array(
 
 /** Bulgarian (Български)
  * @author DCLXVI
+ * @author Turin
  */
 $messages['bg'] = array(
 	'coll-print_export' => 'Отпечатване/изнасяне',
 	'coll-download_as' => 'Изтегляне като $1',
-	'coll-add_category' => 'Добавяне на категория',
+	'coll-add_category' => 'Добавяне на тази категория към книгата ви',
+	'coll-add_category_tooltip' => 'Добавяне на всички уики-страници в тази категория към книгата ви',
+	'coll-add_this_page' => 'Добавяне на тази страница към книгата ви',
+	'coll-add_page_tooltip' => 'Добавяне на текущата уики-страница към книгата ви',
+	'coll-bookscategory' => 'Книги',
 	'coll-help' => 'Помощ',
+	'coll-load_collection' => 'Зареждане на книга',
+	'coll-load_collection_tooltip' => 'Зареждане на тази книга като ваша текуща книга',
 	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страници}}',
 	'coll-printable_version_pdf' => 'PDF версия',
+	'coll-show_collection' => 'Показване на книгата',
 );
 
 /** Bengali (বাংলা)
@@ -389,6 +398,7 @@ $messages['ca'] = array(
 	'coll-remove_page_tooltip' => 'Treu la pàgina wiki actual del llibre',
 	'coll-show_collection' => 'Mostra llibre',
 	'coll-show_collection_tooltip' => 'Feu clic per a editar/descarregar/demanar el vostre llibre',
+	'coll-suggest_empty' => 'buit',
 );
 
 /** Czech (Česky)
@@ -798,6 +808,7 @@ $messages['et'] = array(
 $messages['eu'] = array(
 	'coll-print_export' => 'Inprimatu/esportatu',
 	'coll-create_a_book' => 'Liburu bat sortu',
+	'coll-book_creator' => 'Liburu sortzailea',
 	'coll-download_as' => '$1 gisa jaitsi',
 	'coll-disable' => 'ezgaitu',
 	'coll-add_category' => 'Kategoria hau gehitu zure liburura gehitu',
@@ -2144,6 +2155,7 @@ $messages['pt-br'] = array(
 /** Romanian (Română)
  * @author Firilacroco
  * @author KlaudiuMihaila
+ * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'coll-create_a_book' => 'Creează o carte',
@@ -2166,6 +2178,7 @@ $messages['ro'] = array(
 	'coll-remove_page_tooltip' => 'Eliminaţi pagina actuală din cartea dumneavoastră',
 	'coll-show_collection' => 'Arată cartea',
 	'coll-show_collection_tooltip' => 'Apăsaţi pentru a modifica/descărca/comanda cartea dumneavoastră',
+	'coll-suggest_empty' => 'gol',
 );
 
 /** Tarandíne (Tarandíne)
@@ -2439,19 +2452,25 @@ $messages['sv'] = array(
 $messages['te'] = array(
 	'coll-print_export' => 'ముద్రించండి/ఎగుమతి చేయండి',
 	'coll-create_a_book' => 'ఓ పుస్తకాన్ని సృష్టించండి',
+	'coll-create_a_book_tooltip' => 'పుస్తకాన్ని లేదా పేజీల సేకరణని సృష్టించండి',
 	'coll-download_as' => '$1 క్రింద దిగుమతి చేసుకోండి',
+	'coll-download_as_tooltip' => 'ఈ పేజీ యొక్క $1 సంచికని దించుకోండి',
 	'coll-disable' => 'అచేతన పరచు',
 	'coll-add_category' => 'పుస్తకముకు ఈ వర్గాన్ని చేర్చు',
+	'coll-add_category_tooltip' => 'ఈ వర్గంలోని అన్ని వికీ పేజీలనూ పుస్తకంలోనికి చేర్చు',
 	'coll-add_this_page' => 'ఈ పేజీని మీ పుస్తకములో చేర్చండి',
+	'coll-add_page_tooltip' => 'ప్రస్తుత వికీ పేజీని పుస్తకానికి చేర్చు',
 	'coll-bookscategory' => 'పుస్తకాలు',
 	'coll-clear_collection' => 'పుస్తకముని తుడిచివేయి',
 	'coll-clear_collection_confirm' => 'మీరు నిజంగా మీ పుస్తకమును పూర్తిగా తొలగించాలని అనుకొంటున్నారా?',
+	'coll-clear_collection_tooltip' => 'ప్రస్తుత పుస్తకంలో నుండి అన్ని వికీ పేజీలను తీసివేయి',
 	'coll-help' => 'సహాయం',
 	'coll-helppage' => 'Help:పుస్తకాలు',
 	'coll-n_pages' => '$1 {{PLURAL:$1|పేజీ|పేజీలు}}',
 	'coll-printable_version_pdf' => 'PDF కూర్పు',
 	'coll-show_collection' => 'పుస్తకముని చూపించు',
 	'coll-not_addable' => 'ఈ పేజీని చేర్చలేము',
+	'coll-make_suggestions' => 'పేజీలను సూచించు',
 	'coll-suggest_empty' => 'ఖాళీ',
 );
 
@@ -2489,6 +2508,31 @@ $messages['th'] = array(
 	'coll-n_pages' => '$1 หน้า',
 	'coll-printable_version_pdf' => 'รุ่น PDF',
 	'coll-show_collection' => 'แสดงหนังสือ',
+);
+
+/** Turkmen (Türkmençe)
+ * @author Hanberke
+ */
+$messages['tk'] = array(
+	'coll-create_a_book' => 'Kitap döret',
+	'coll-add_category' => 'Bu kategoriýany kitabyňa goş',
+	'coll-add_category_tooltip' => 'Bu kategoriýadaky ähli wiki sahypalaryny kitabyňa goş',
+	'coll-add_this_page' => 'Bu sahypany kitabyňa goş',
+	'coll-add_page_tooltip' => 'Häzirki wiki sahypasyny kitabyňa goş',
+	'coll-bookscategory' => 'Kitaplar',
+	'coll-clear_collection_tooltip' => 'Häzirki kitabyňdan ähli wiki sahypalaryny aýyr',
+	'coll-help' => 'Ýardam',
+	'coll-helppage' => 'Help:Kitaplar',
+	'coll-load_collection' => 'Kitap ýükle',
+	'coll-load_collection_tooltip' => 'Bu kitaby häzirki kitabyň hökmünde ýükle',
+	'coll-n_pages' => '$1 {{PLURAL:$1|sahypa|sahypa}}',
+	'coll-printable_version_pdf' => 'PDF wersiýasy',
+	'coll-remove_this_page' => 'Bu sahypany kitabyňdan aýyr',
+	'coll-remove_page_tooltip' => 'Häzirki wiki sahypasyny kitabyňdan aýyr',
+	'coll-show_collection' => 'Kitaby görkez',
+	'coll-not_addable' => 'Bu sahypany goşup bolmaýar',
+	'coll-make_suggestions' => 'Sahypa teklip et',
+	'coll-suggest_empty' => 'boş',
 );
 
 /** Tagalog (Tagalog)
