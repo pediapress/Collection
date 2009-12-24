@@ -126,7 +126,7 @@ $messages['ar'] = array(
 	'coll-disable' => 'عطّل',
 	'coll-book_creator_disable' => 'عطّل منشئ الكتب',
 	'coll-book_creator_disable_tooltip' => 'أوقف استخدام منشئ الكتب',
-	'coll-add_category' => 'إضافة هذا التصنيف إلى كتابتك',
+	'coll-add_category' => 'إضافة هذا التصنيف إلى كتابك',
 	'coll-add_category_tooltip' => 'أضف كل صفحات الويكي في هذا التصنيف لكتابك',
 	'coll-add_this_page' => 'أضف هذه الصفحة إلى كتابك',
 	'coll-add_page_tooltip' => 'أضف صفحة الويكي الحالية إلى كتابك',
@@ -166,7 +166,7 @@ $messages['arc'] = array(
 $messages['arz'] = array(
 	'coll-create_a_book' => 'إنشاء كتاب',
 	'coll-download_as' => 'تحميل ك$1',
-	'coll-add_category' => 'إضافة تصنيف',
+	'coll-add_category' => 'إضافة هذا التصنيف إلى كتابك',
 	'coll-bookscategory' => 'كتب',
 	'coll-clear_collection' => 'فضى الكتاب',
 	'coll-clear_collection_confirm' => 'انتا بجد عايز تفضى الكتاب بالكامل؟',
@@ -2468,9 +2468,11 @@ $messages['te'] = array(
 	'coll-helppage' => 'Help:పుస్తకాలు',
 	'coll-n_pages' => '$1 {{PLURAL:$1|పేజీ|పేజీలు}}',
 	'coll-printable_version_pdf' => 'PDF కూర్పు',
+	'coll-remove_page_tooltip' => 'ప్రస్తుత వికీ పేజీని నా పుస్తకం నుండి తొలగించు',
 	'coll-show_collection' => 'పుస్తకముని చూపించు',
 	'coll-not_addable' => 'ఈ పేజీని చేర్చలేము',
 	'coll-make_suggestions' => 'పేజీలను సూచించు',
+	'coll-make_suggestions_tooltip' => 'మీ పుస్తకంలోని పేజీల ఆధారంగా సూచనలని చూపిస్తుంది',
 	'coll-suggest_empty' => 'ఖాళీ',
 );
 
@@ -2515,6 +2517,7 @@ $messages['th'] = array(
  */
 $messages['tk'] = array(
 	'coll-create_a_book' => 'Kitap döret',
+	'coll-create_a_book_tooltip' => 'Kitap ýa-da sahypa kolleksiýasy döret',
 	'coll-add_category' => 'Bu kategoriýany kitabyňa goş',
 	'coll-add_category_tooltip' => 'Bu kategoriýadaky ähli wiki sahypalaryny kitabyňa goş',
 	'coll-add_this_page' => 'Bu sahypany kitabyňa goş',
