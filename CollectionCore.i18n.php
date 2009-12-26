@@ -235,6 +235,8 @@ $messages['be-tarask'] = array(
  */
 $messages['bg'] = array(
 	'coll-print_export' => 'Отпечатване/изнасяне',
+	'coll-create_a_book' => 'Създаване на книга',
+	'coll-create_a_book_tooltip' => 'Създаване на книга или колекция от страници',
 	'coll-download_as' => 'Изтегляне като $1',
 	'coll-add_category' => 'Добавяне на тази категория към книгата ви',
 	'coll-add_category_tooltip' => 'Добавяне на всички уики-страници в тази категория към книгата ви',
@@ -242,6 +244,7 @@ $messages['bg'] = array(
 	'coll-add_page_tooltip' => 'Добавяне на текущата уики-страница към книгата ви',
 	'coll-bookscategory' => 'Книги',
 	'coll-help' => 'Помощ',
+	'coll-helppage' => 'Help:Книги',
 	'coll-load_collection' => 'Зареждане на книга',
 	'coll-load_collection_tooltip' => 'Зареждане на тази книга като ваша текуща книга',
 	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страници}}',
@@ -290,6 +293,7 @@ $messages['bn'] = array(
 
 /** Breton (Brezhoneg)
  * @author Fulup
+ * @author Y-M D
  */
 $messages['br'] = array(
 	'coll-print_export' => 'Moullañ / ezporzhiañ',
@@ -320,7 +324,7 @@ $messages['br'] = array(
 	'coll-remove_page_tooltip' => 'Tennañ ar bajenn red eus ho levr',
 	'coll-show_collection' => 'Diskouez al levr',
 	'coll-show_collection_tooltip' => 'Klikañ evit aozañ/pellgargañ/urzhiañ ho levr',
-	'coll-not_addable' => "N'haller ket opuzhpennañ ar bajenn-mañ",
+	'coll-not_addable' => "N'haller ket ouzhpennañ ar bajenn-mañ",
 	'coll-make_suggestions' => 'Kinnig pajennoù',
 	'coll-make_suggestions_tooltip' => "Diskouez ar c'hinnigoù diazezet war pajennoù ho levr",
 	'coll-suggest_empty' => 'goullo',
@@ -2158,8 +2162,10 @@ $messages['pt-br'] = array(
  * @author Stelistcristi
  */
 $messages['ro'] = array(
+	'coll-print_export' => 'Tipăriţi/exportaţi',
 	'coll-create_a_book' => 'Creează o carte',
 	'coll-download_as' => 'Descarcă $1',
+	'coll-download_as_tooltip' => 'Descărcaţi o versiune $1 a acestei pagini wiki',
 	'coll-disable' => 'dezactivează',
 	'coll-add_category' => 'Adaugă această categorie la carte',
 	'coll-add_category_tooltip' => 'Adăugaţi toate wiki paginile din această categorie în cartea dumneavoastră',
@@ -2516,8 +2522,10 @@ $messages['th'] = array(
  * @author Hanberke
  */
 $messages['tk'] = array(
+	'coll-print_export' => 'Print et/eksportirle',
 	'coll-create_a_book' => 'Kitap döret',
 	'coll-create_a_book_tooltip' => 'Kitap ýa-da sahypa kolleksiýasy döret',
+	'coll-book_creator' => 'Kitap dörediji',
 	'coll-add_category' => 'Bu kategoriýany kitabyňa goş',
 	'coll-add_category_tooltip' => 'Bu kategoriýadaky ähli wiki sahypalaryny kitabyňa goş',
 	'coll-add_this_page' => 'Bu sahypany kitabyňa goş',
@@ -2605,19 +2613,42 @@ $messages['tr'] = array(
  * @author AS
  * @author Ahonc
  * @author Aleksandrit
+ * @author NickK
+ * @author Prima klasy4na
  */
 $messages['uk'] = array(
+	'coll-print_export' => 'Друк/експорт',
 	'coll-create_a_book' => 'Створення книги',
+	'coll-create_a_book_tooltip' => 'Створити книгу або колекцію сторінок',
+	'coll-book_creator' => 'Створення книги',
 	'coll-download_as' => 'Завантажити як $1',
-	'coll-add_category' => 'Додати категорію',
+	'coll-download_as_tooltip' => 'Завантажити $1 версію цієї вікі-сторінки',
+	'coll-disable' => 'вимкнути',
+	'coll-book_creator_disable' => 'Вимкнути створення книжок',
+	'coll-book_creator_disable_tooltip' => 'Припинити використання можливості створення книги',
+	'coll-add_category' => 'Додати цю категорію до вашої книги',
+	'coll-add_category_tooltip' => 'Додати всі вікі-сторінки цієї категорії до вашої книги',
+	'coll-add_this_page' => 'Додати цю сторінку до вашої книги',
+	'coll-add_page_tooltip' => 'Додати поточну вікі-сторінку до вашої книги',
 	'coll-bookscategory' => 'Книги',
 	'coll-clear_collection' => 'Очистити книгу',
 	'coll-clear_collection_confirm' => 'Ви дійсно бажаєте повністю очистити вашу книгу?',
+	'coll-clear_collection_tooltip' => 'Вилучити всі вікі-сторінки з вашої поточної книги',
+	'coll-help' => 'Довідка',
+	'coll-help_tooltip' => 'Показати довідку про створення книг',
 	'coll-helppage' => 'Help:Книги',
 	'coll-load_collection' => 'Завантажити книгу',
+	'coll-load_collection_tooltip' => 'Завантажити цю книгу як вашу поточну книгу',
 	'coll-n_pages' => '$1 {{PLURAL:$1|сторінка|сторінки|сторінок}}',
 	'coll-printable_version_pdf' => 'PDF-версія',
+	'coll-remove_this_page' => 'Вилучити цю сторінку з вашої книги',
+	'coll-remove_page_tooltip' => 'Вилучити поточну вікі-сторінку з вашої книги',
 	'coll-show_collection' => 'Показати книгу',
+	'coll-show_collection_tooltip' => 'Натисніть, щоб редагувати/завантажити/замовити вашу книгу',
+	'coll-not_addable' => 'Ця сторінка не може бути додана',
+	'coll-make_suggestions' => 'Запропонувати сторінки',
+	'coll-make_suggestions_tooltip' => 'Показати пропозиції, засновані на сторінках у вашій книзі',
+	'coll-suggest_empty' => 'порожня',
 );
 
 /** Vèneto (Vèneto)
@@ -2757,6 +2788,7 @@ $messages['yue'] = array(
 $messages['zh-hans'] = array(
 	'coll-print_export' => '打印／导出',
 	'coll-create_a_book' => '创建图书',
+	'coll-create_a_book_tooltip' => '建立图书或页面集合',
 	'coll-download_as' => '下载为 $1',
 	'coll-download_as_tooltip' => '下载这个wiki页面的$1版本',
 	'coll-disable' => '禁用',
