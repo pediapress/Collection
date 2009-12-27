@@ -243,13 +243,20 @@ $messages['bg'] = array(
 	'coll-add_this_page' => 'Добавяне на тази страница към книгата ви',
 	'coll-add_page_tooltip' => 'Добавяне на текущата уики-страница към книгата ви',
 	'coll-bookscategory' => 'Книги',
+	'coll-clear_collection' => 'Изчистване на книгата',
+	'coll-clear_collection_confirm' => 'Наистина ли искате напълно да изчистите вашата книга?',
+	'coll-clear_collection_tooltip' => 'Премахване на всички уики-страници от текущата книга',
 	'coll-help' => 'Помощ',
+	'coll-help_tooltip' => 'Показване на помощ за създаването на книги',
 	'coll-helppage' => 'Help:Книги',
 	'coll-load_collection' => 'Зареждане на книга',
 	'coll-load_collection_tooltip' => 'Зареждане на тази книга като ваша текуща книга',
 	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страници}}',
 	'coll-printable_version_pdf' => 'PDF версия',
+	'coll-remove_this_page' => 'Премахване на тази страница от книгата ви',
 	'coll-show_collection' => 'Показване на книгата',
+	'coll-make_suggestions' => 'Предлагане на страници',
+	'coll-suggest_empty' => 'празно',
 );
 
 /** Bengali (বাংলা)
@@ -696,9 +703,11 @@ $messages['eo'] = array(
 	'coll-print_export' => 'Printi/eksporti',
 	'coll-create_a_book' => 'Krei libron',
 	'coll-create_a_book_tooltip' => 'Krei libran aŭ paĝan kolekton',
+	'coll-book_creator' => 'Libra kreilo',
 	'coll-download_as' => 'Elŝuti kiel $1',
 	'coll-download_as_tooltip' => 'Elŝuti $1-version de ĉi tiu vikia paĝo',
 	'coll-disable' => 'malŝalti',
+	'coll-book_creator_disable' => 'Malŝalti libran kreilon',
 	'coll-add_category' => 'Aldoni ĉi tiun kategorion al via libro',
 	'coll-add_category_tooltip' => 'Aldoni ĉiujn vikiajn paĝojn en ĉi tiu kategorio al via libro',
 	'coll-add_this_page' => 'Aldoni ĉi tiun paĝon al via libro',
@@ -1424,6 +1433,7 @@ $messages['jv'] = array(
 );
 
 /** Georgian (ქართული)
+ * @author BRUTE
  * @author Malafaya
  * @author Sopho
  * @author Temuri rajavi
@@ -1443,6 +1453,11 @@ $messages['ka'] = array(
 	'coll-load_collection' => 'წიგნის ატვირთვა',
 	'coll-n_pages' => '$1 გვერდი',
 	'coll-printable_version_pdf' => 'PDF ვერსია',
+	'coll-remove_this_page' => 'თქვენი წიგნიდან ამ გვერდის წაშლა',
+	'coll-remove_page_tooltip' => 'თქვენი წიგნიდან ამჟამინდელი ვიკი-გვერდის წაშლა',
+	'coll-show_collection' => 'წიგნის ჩვენება',
+	'coll-not_addable' => 'ეს გვერდი არ ემატება',
+	'coll-make_suggestions' => 'შეთავაზებული გვერდები',
 	'coll-suggest_empty' => 'ცარიელი',
 );
 
@@ -2502,6 +2517,16 @@ $messages['tg-cyrl'] = array(
 	'coll-show_collection' => 'Намоиши гирдоварӣ',
 );
 
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'coll-create_a_book' => 'Eçodi jak kitob',
+	'coll-download_as' => 'Darjoftan cun $1',
+	'coll-n_pages' => '$1 {{PLURAL:$1|sahifa|sahifaho}}',
+	'coll-printable_version_pdf' => 'Nusxai PDF',
+);
+
 /** Thai (ไทย)
  * @author Ans
  * @author Manop
@@ -2526,13 +2551,21 @@ $messages['tk'] = array(
 	'coll-create_a_book' => 'Kitap döret',
 	'coll-create_a_book_tooltip' => 'Kitap ýa-da sahypa kolleksiýasy döret',
 	'coll-book_creator' => 'Kitap dörediji',
+	'coll-download_as' => '$1 edip düşür',
+	'coll-download_as_tooltip' => 'Bu wiki sahypasynyň $1 wersiýasyny düşür',
+	'coll-disable' => 'ýap',
+	'coll-book_creator_disable' => 'Kitap döredijini ýap',
+	'coll-book_creator_disable_tooltip' => 'Kitap döredijini ulanmagy bes et',
 	'coll-add_category' => 'Bu kategoriýany kitabyňa goş',
 	'coll-add_category_tooltip' => 'Bu kategoriýadaky ähli wiki sahypalaryny kitabyňa goş',
 	'coll-add_this_page' => 'Bu sahypany kitabyňa goş',
 	'coll-add_page_tooltip' => 'Häzirki wiki sahypasyny kitabyňa goş',
 	'coll-bookscategory' => 'Kitaplar',
+	'coll-clear_collection' => 'Kitaby boşat',
+	'coll-clear_collection_confirm' => 'Kitabyňyzy hakykatdan hem boşadasyňyz gelýärmi?',
 	'coll-clear_collection_tooltip' => 'Häzirki kitabyňdan ähli wiki sahypalaryny aýyr',
 	'coll-help' => 'Ýardam',
+	'coll-help_tooltip' => 'Kitap döretmeklik hakda ýardamy görkez',
 	'coll-helppage' => 'Help:Kitaplar',
 	'coll-load_collection' => 'Kitap ýükle',
 	'coll-load_collection_tooltip' => 'Bu kitaby häzirki kitabyň hökmünde ýükle',
@@ -2541,8 +2574,10 @@ $messages['tk'] = array(
 	'coll-remove_this_page' => 'Bu sahypany kitabyňdan aýyr',
 	'coll-remove_page_tooltip' => 'Häzirki wiki sahypasyny kitabyňdan aýyr',
 	'coll-show_collection' => 'Kitaby görkez',
+	'coll-show_collection_tooltip' => 'Kitabyňyzy redaktirlemek/düşürmek/buýurmak üçin tyklaň',
 	'coll-not_addable' => 'Bu sahypany goşup bolmaýar',
 	'coll-make_suggestions' => 'Sahypa teklip et',
+	'coll-make_suggestions_tooltip' => 'Kitabyňyzdaky sahypalar esasynda teklip görkez',
 	'coll-suggest_empty' => 'boş',
 );
 
@@ -2811,10 +2846,12 @@ $messages['zh-hans'] = array(
 	'coll-remove_page_tooltip' => '将当前维基页面从您的图书中移除',
 	'coll-show_collection' => '显示图书',
 	'coll-show_collection_tooltip' => '点击此处编辑、下载或订购图书',
+	'coll-suggest_empty' => '空',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
+ * @author Liangent
  */
 $messages['zh-hant'] = array(
 	'coll-print_export' => '列印/匯出',
@@ -2842,5 +2879,6 @@ $messages['zh-hant'] = array(
 	'coll-remove_page_tooltip' => '將目前維基頁面從您的圖書中移除',
 	'coll-show_collection' => '顯示圖書',
 	'coll-show_collection_tooltip' => '點擊此處編輯、下載或訂購圖書',
+	'coll-suggest_empty' => '空',
 );
 
