@@ -821,6 +821,12 @@ $messages['bg'] = array(
 	'coll-collection' => 'Книга',
 	'coll-collections' => 'Книги',
 	'coll-print_template_prefix' => 'Отпечатване',
+	'coll-unknown_subpage_title' => 'Непозната подстраница',
+	'coll-unknown_subpage_text' => 'Тази подстраница на [[Special:Book|книгата]] не съществува',
+	'coll-couldnotaddarticle_title' => 'Грешка при добавяне на уики-страницата',
+	'coll-couldnotaddarticle_msg' => 'Уики-страницата не може да бъде добавена.',
+	'coll-couldnotremovearticle_title' => 'Грешка при премахване на уики-страницата',
+	'coll-couldnotremovearticle_msg' => 'Уики-страницата не може да бъде премахната.',
 	'coll-noscript_text' => '<h1>Изисква се Джаваскрипт!</h1>
 <strong>Използваният браузър не поддържа Джаваскрипт или поддръжката на Джаваскрипт е изключена.
 Тази страница не може да работи правилно докато Джаваскриптът не бъде активиран.</strong>',
@@ -840,6 +846,7 @@ $messages['bg'] = array(
 	'coll-sort_alphabetically' => 'Подреждане по азбучен ред',
 	'coll-rename' => 'Преименуване',
 	'coll-no_such_category' => 'Няма такава категория',
+	'coll-error_reponse' => 'Съобщение за грешка от сървъра',
 	'coll-empty_collection' => 'Празна книга',
 	'coll-revision' => 'Версия: $1',
 	'coll-save_collection_title' => 'Съхраняване и споделяне',
@@ -876,6 +883,10 @@ $messages['bg'] = array(
 	'coll-suggest_ban_selected' => 'Премахване на избраните страници',
 	'coll-suggest_your_book' => 'Вашата книга',
 	'coll-suggest_show' => 'показване',
+	'coll-suggest_undo_tooltip' => 'Отмяна на това действие',
+	'coll-suggest_undo' => 'отмяна',
+	'right-collectionsaveasuserpage' => 'Запазване на книгата като потребителска страница',
+	'right-collectionsaveascommunitypage' => 'Запазване на книгата като страница на общността',
 );
 
 /** Bengali (বাংলা)
@@ -2428,7 +2439,7 @@ Notoj:
 	'coll-return_to_collection' => '<p>Reiru al <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Mendi kiel presitan libron',
 	'coll-book_text' => 'Akiri presitan libron de nia ek-eldoneja partnero:',
-	'coll-order_from_pp' => 'Mendi libron de $1',
+	'coll-order_from_pp' => 'Antaŭvidi kun $1',
 	'coll-about_pp' => 'Pri $1',
 	'coll-invalid_podpartner_title' => 'Nevalida ek-eldoneja partnero',
 	'coll-invalid_podpartner_msg' => 'La donita ek-eldoneja partnero estas nevalida.
@@ -2439,6 +2450,7 @@ Bonvolu kontakti vian administranton de MediaWiki.',
 	'coll-hide_info' => 'Kaŝi informon',
 	'coll-suggest_title' => 'Sugestitaj paĝoj por via libro',
 	'coll-suggested_articles' => 'Sugestoj',
+	'coll-suggest_reset_bans' => 'restarigi',
 	'coll-suggest_add_selected' => 'Aldoni elektitajn paĝojn',
 	'coll-suggest_your_book' => 'Via libro',
 	'coll-suggest_show' => 'montri',
@@ -3055,7 +3067,7 @@ Huomautuksia:
 	'coll-return_to_collection' => '<p>Palaa takaisin sivulle <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Tilaa painettuna kirjana',
 	'coll-book_text' => 'Hanki painettuna kirjana pikapainosta:',
-	'coll-order_from_pp' => 'Tilaa kirja kohteesta $1',
+	'coll-order_from_pp' => 'Esikatsele kohteessa $1',
 	'coll-about_pp' => 'Tietoja kohteesta $1',
 	'coll-invalid_podpartner_title' => 'Epäkelpo POD-partneri',
 	'coll-invalid_podpartner_msg' => 'Annettu POD-partneri ei kelpaa.
@@ -8791,6 +8803,60 @@ $messages['tg-cyrl'] = array(
 	'coll-return_to' => 'Бозгашт ба [[:$1]]',
 );
 
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'coll-print_template_prefix' => 'Cop',
+	'coll-unknown_subpage_title' => 'Zersahifai noşinos',
+	'coll-noscript_text' => "<h1>ÇavaSkript Lozim ast!</h1>
+<strong>Mururgari şumo ÇavaSkriptro dastgirī namekunad jo ÇavaSkript xomūş karda şudaast.
+In sahifa durust kor xohad karda, dar holate, ki ÇavaSkript fa'ol karda şuda boşad.</strong>",
+	'coll-your_book' => 'Kitobi şumo',
+	'coll-download_title' => 'Darjoft',
+	'coll-download' => 'Darjoft',
+	'coll-format_label' => 'Qolab:',
+	'coll-remove' => 'Hazf',
+	'coll-show' => 'Namoiş',
+	'coll-move_to_top' => 'Harakat bo bolo',
+	'coll-move_up' => 'Ba bolo',
+	'coll-move_down' => 'Ba pojon',
+	'coll-move_to_bottom' => 'Harakat ba pojon',
+	'coll-title' => 'Unvon:',
+	'coll-subtitle' => 'Zerunvon:',
+	'coll-contents' => 'Mundariça',
+	'coll-create_chapter' => 'Eçodi fasl',
+	'coll-sort_alphabetically' => 'Ba tartib darovardan az rūi alifbo',
+	'coll-rename' => 'Taƣjiri nom',
+	'coll-new_chapter' => 'Baroi fasli çadid nomero vorid kuned',
+	'coll-rename_chapter' => 'Baroi fasl nomi çadidero vorid kuned',
+	'coll-no_such_category' => 'Cunin gurūh vuçud nadorad',
+	'coll-notitle_title' => 'Unvoni sahifa muşaxxas şuda nametavonad.',
+	'coll-mwserve_failed_title' => 'Xato dar korguzori tarçumakunanda',
+	'coll-error_reponse' => 'Posuxi xatoe az xidmatguzor',
+	'coll-revision' => 'Nusxa: $1',
+	'coll-save_collection_text' => 'Intixobi jak makon:',
+	'coll-overwrite_title' => 'Sahifa vuçud dorad. Ba rūi on az navişta şavad?',
+	'coll-overwrite_text' => 'Sahifae bo nomi [[:$1]] allakaj vuçud dorad.
+Ojo şumo mexohed onro bo girdovariji xud ivaz kuned?',
+	'coll-yes' => 'Bale',
+	'coll-no' => 'Ne',
+	'coll-overwrite' => 'Ba rūj naviştan',
+	'coll-append' => 'Afzudan',
+	'coll-cancel' => 'Laƣv',
+	'coll-update' => 'Barūz kardan',
+	'coll-rendering_title' => 'Dar holi tarçuma dodan',
+	'coll-rendering_status' => "<strong>Vaz'ijat:</strong> $1",
+	'coll-rendering_article' => '(sahifai viki: $1)',
+	'coll-rendering_page' => '(sahifa: $1)',
+	'coll-notfound_title' => 'Kitob joft naşud',
+	'coll-return_to_collection' => '<p>Bozgaşt ba <a href="$1">$2</a></p>',
+	'coll-about_pp' => 'Dar borai $1',
+	'coll-invalid_podpartner_title' => "Şariki Cop-bo-darxosti nomū'tabar",
+	'coll-license' => 'Içozatnoma',
+	'coll-return_to' => 'Bozgaşt ba [[:$1]]',
+);
+
 /** Thai (ไทย)
  * @author Ans
  * @author Manop
@@ -8877,6 +8943,9 @@ $messages['th'] = array(
 $messages['tk'] = array(
 	'coll-desc' => '[[Special:Book|Kitap döret]]',
 	'coll-manage_your_book' => 'Öz kitabyňy dolandyr',
+	'coll-start_book_creator' => 'Kitap döredijini başlat',
+	'coll-book_creator_continue' => 'Kitap döredijini ulanmaga dowam et',
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Kitap dörediji teksti',
 	'coll-collection' => 'Kitap',
 	'coll-collections' => 'Kitaplar',
 	'coll-print_template_prefix' => 'Print et',
@@ -8888,9 +8957,15 @@ $messages['tk'] = array(
 	'coll-couldnotremovearticle_msg' => 'Wiki sahypasyny aýryp bolmady',
 	'coll-savedbook_template' => 'ýazdyrylan_kitap',
 	'coll-your_book' => 'Kitabyňyz',
+	'coll-download_title' => 'Düşür',
+	'coll-download' => 'Düşür',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Aýyr',
 	'coll-show' => 'Görkez',
+	'coll-move_to_top' => 'Iň ýokaryk geçir',
+	'coll-move_up' => 'Ýokarlygyna geçir',
+	'coll-move_down' => 'Aşaklygyna geçir',
+	'coll-move_to_bottom' => 'Iň aşak geçir',
 	'coll-title' => 'At:',
 	'coll-subtitle' => 'Kiçi at:',
 	'coll-contents' => 'Mazmuny',
@@ -8920,12 +8995,20 @@ Indi sahypa goşup bolmaýar.',
 	'coll-rendering_page' => '(sahypa: $1)',
 	'coll-notfound_title' => 'Kitap tapylmady',
 	'coll-download_notfound_title' => 'Faýl tapylmady',
+	'coll-download_failed_title' => 'Düşürilýän mahaly säwlik',
+	'coll-excluded-templates' => '* [[:Category:$1|$1]] kategoriýasyndaky şablonlar degişli edilmedi.',
+	'coll-blacklisted-templates' => '* [[:$1]] gara sanawyndaky şablonlar degişli edilmedi.',
+	'coll-book_title' => 'Çap edilen kitap hökmünde buýurma ber',
+	'coll-order_from_pp' => '$1 bilen deslapky synla',
 	'coll-about_pp' => '$1 hakda',
+	'coll-invalid_podpartner_title' => 'Nädogry POD partneri',
 	'coll-license' => 'Lisenziýa',
+	'coll-return_to' => '[[:$1]] sahypasyna gaýdyp bar',
 	'coll-more_info' => 'Has köp maglumat görkez',
 	'coll-hide_info' => 'Maglumaty gizle',
 	'coll-suggest_title' => 'Kitabyňyz üçin teklip edilýän sahypalar',
 	'coll-suggested_articles' => 'Teklipler',
+	'coll-suggest_reset_bans' => 'başky ýagdaýa getir',
 	'coll-suggest_reset_bans_tooltip' => 'Ozal aýrylan teklipleri görkez',
 	'coll-suggest_add_selected' => 'Saýlanylan sahypalary goş',
 	'coll-suggest_ban_selected' => 'Saýlanylan sahypalary aýyr',
@@ -9933,6 +10016,12 @@ $messages['zh-hans'] = array(
 	'coll-more_info' => '显示更多信息',
 	'coll-hide_info' => '隐藏信息',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress订单信息',
+	'coll-suggested_articles' => '建议',
+	'coll-suggest_reset_bans' => '重置',
+	'coll-suggest_your_book' => '你的书',
+	'coll-suggest_show' => '显示',
+	'coll-suggest_undo_tooltip' => '撤销这个动作',
+	'coll-suggest_undo' => '撤销',
 	'right-collectionsaveasuserpage' => '将图书保存为用户页',
 	'right-collectionsaveascommunitypage' => '在社群页面储存此书',
 );
@@ -9940,6 +10029,7 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
  * @author FireJackey
+ * @author Liangent
  * @author Skjackey tse
  * @author Wmr89502270
  * @author Wong128hk
@@ -10053,6 +10143,12 @@ $messages['zh-hant'] = array(
 	'coll-more_info' => '顯示更多資訊',
 	'coll-hide_info' => '隱藏訊息',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress 的訂購資訊',
+	'coll-suggested_articles' => '建議',
+	'coll-suggest_reset_bans' => '重置',
+	'coll-suggest_your_book' => '你的書',
+	'coll-suggest_show' => '顯示',
+	'coll-suggest_undo_tooltip' => '撤銷這個動作',
+	'coll-suggest_undo' => '撤銷',
 	'right-collectionsaveasuserpage' => '在使用者頁面儲存此書',
 	'right-collectionsaveascommunitypage' => '在社群頁面儲存此書',
 );
