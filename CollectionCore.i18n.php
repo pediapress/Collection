@@ -93,10 +93,15 @@ $messages['qqq'] = array(
 $messages['af'] = array(
 	'coll-print_export' => 'Druk/eksporteer',
 	'coll-create_a_book' => "Skep 'n boek",
+	'coll-create_a_book_tooltip' => "Skep 'n boek of versameling van bladsye",
 	'coll-book_creator' => 'Boekmaker',
 	'coll-download_as' => 'Laai af as $1',
+	'coll-download_as_tooltip' => "Laai 'n $1-weergawe van die wikibladsy af",
 	'coll-disable' => 'deaktiveer',
 	'coll-add_category' => 'Voeg die kategorie by jou boek',
+	'coll-add_category_tooltip' => 'Voeg al die wikiblaaie in hierdie kategorie by u boek',
+	'coll-add_this_page' => 'Voeg hierdie bladsy by u boek',
+	'coll-add_page_tooltip' => 'Voeg die huidige wikiblad by u boek',
 	'coll-bookscategory' => 'Boeke',
 	'coll-clear_collection' => 'Maak boek leeg',
 	'coll-help' => 'Help',
@@ -106,6 +111,7 @@ $messages['af'] = array(
 	'coll-printable_version_pdf' => 'PDF-weergawe',
 	'coll-remove_this_page' => 'Verwyder hierdie bladsy uit u boek',
 	'coll-show_collection' => 'Wys boek',
+	'coll-make_suggestions' => 'Stel bladsye voor',
 	'coll-suggest_empty' => 'leegmaak',
 );
 
@@ -708,6 +714,7 @@ $messages['eo'] = array(
 	'coll-download_as_tooltip' => 'Elŝuti $1-version de ĉi tiu vikia paĝo',
 	'coll-disable' => 'malŝalti',
 	'coll-book_creator_disable' => 'Malŝalti libran kreilon',
+	'coll-book_creator_disable_tooltip' => 'Halti uzante la libran kreilon',
 	'coll-add_category' => 'Aldoni ĉi tiun kategorion al via libro',
 	'coll-add_category_tooltip' => 'Aldoni ĉiujn vikiajn paĝojn en ĉi tiu kategorio al via libro',
 	'coll-add_this_page' => 'Aldoni ĉi tiun paĝon al via libro',
@@ -727,7 +734,9 @@ $messages['eo'] = array(
 	'coll-remove_page_tooltip' => 'Forigi la nunan vikian paĝon de via libro',
 	'coll-show_collection' => 'Montri libron',
 	'coll-show_collection_tooltip' => 'Klaku redakti/elŝuti/mendi vian libron',
+	'coll-not_addable' => 'Ĉi tiu paĝo ne povas esti aldonata.',
 	'coll-make_suggestions' => 'Sugesti paĝojn',
+	'coll-make_suggestions_tooltip' => 'Montri sugestojn bazitajn de la paĝoj en via libro',
 	'coll-suggest_empty' => 'malplena',
 );
 
