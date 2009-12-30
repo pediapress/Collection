@@ -244,6 +244,7 @@ $messages['bg'] = array(
 	'coll-create_a_book' => 'Създаване на книга',
 	'coll-create_a_book_tooltip' => 'Създаване на книга или колекция от страници',
 	'coll-download_as' => 'Изтегляне като $1',
+	'coll-disable' => 'изключване',
 	'coll-add_category' => 'Добавяне на тази категория към книгата ви',
 	'coll-add_category_tooltip' => 'Добавяне на всички уики-страници в тази категория към книгата ви',
 	'coll-add_this_page' => 'Добавяне на тази страница към книгата ви',
@@ -260,8 +261,11 @@ $messages['bg'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страници}}',
 	'coll-printable_version_pdf' => 'PDF версия',
 	'coll-remove_this_page' => 'Премахване на тази страница от книгата ви',
+	'coll-remove_page_tooltip' => 'Премахване на текущата уики-страница от книгата ви',
 	'coll-show_collection' => 'Показване на книгата',
+	'coll-not_addable' => 'Тази страница не може да бъде добавена',
 	'coll-make_suggestions' => 'Предлагане на страници',
+	'coll-make_suggestions_tooltip' => 'Показване на предложения въз основа на страниците в книгата ви',
 	'coll-suggest_empty' => 'празно',
 );
 
@@ -950,6 +954,43 @@ $messages['fr'] = array(
 	'coll-make_suggestions' => 'Suggérer des pages',
 	'coll-make_suggestions_tooltip' => 'Montrer les suggestions fondées sur les pages dans votre livre',
 	'coll-suggest_empty' => 'vide',
+);
+
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'coll-print_export' => 'Emprimar / èxportar',
+	'coll-create_a_book' => 'Fâre un lévro',
+	'coll-create_a_book_tooltip' => 'Fâre un lévro ou ben una colèccion de pâges',
+	'coll-book_creator' => 'Crèator de lévros',
+	'coll-download_as' => 'Tèlèchargiér coment $1',
+	'coll-download_as_tooltip' => 'Tèlècharge una vèrsion $1 de ceta pâge vouiqui.',
+	'coll-disable' => 'dèsactivar',
+	'coll-book_creator_disable' => 'Dèsactivar lo crèator de lévro',
+	'coll-book_creator_disable_tooltip' => 'Quitar d’utilisar lo crèator de lévro',
+	'coll-add_category' => 'Apondre ceta catègorie a voutron lévro',
+	'coll-add_category_tooltip' => 'Apondre totes les pâges vouiqui de ceta catègorie a voutron lévro',
+	'coll-add_this_page' => 'Apondre ceta pâge a voutron lévro',
+	'coll-add_page_tooltip' => 'Apondre la pâge vouiqui d’ora a voutron lévro',
+	'coll-bookscategory' => 'Lévros',
+	'coll-clear_collection' => 'Vouedar lo lévro',
+	'coll-clear_collection_tooltip' => 'Enlevar totes les pâges vouiqui de voutron lévro d’ora',
+	'coll-help' => 'Éde',
+	'coll-help_tooltip' => 'Fâre vêre l’éde sur la crèacion de lévros',
+	'coll-helppage' => 'Help:Lévros',
+	'coll-load_collection' => 'Chargiér un lévro',
+	'coll-load_collection_tooltip' => 'Chargiér ceti lévro coment voutron lévro d’ora',
+	'coll-n_pages' => '$1 pâge{{PLURAL:$1||s}}',
+	'coll-printable_version_pdf' => 'Vèrsion PDF',
+	'coll-remove_this_page' => 'Enlevar ceta pâge de voutron lévro',
+	'coll-remove_page_tooltip' => 'Enlevar la pâge vouiqui d’ora de voutron lévro',
+	'coll-show_collection' => 'Fâre vêre lo lévro',
+	'coll-show_collection_tooltip' => 'Clicâd por changiér / tèlèchargiér / comandar voutron lévro.',
+	'coll-not_addable' => 'Ceta pâge pôt pas étre apondua',
+	'coll-make_suggestions' => 'Conselyér des pâges',
+	'coll-make_suggestions_tooltip' => 'Montrar los consèlys basâs sur les pâges dens voutron lévro',
+	'coll-suggest_empty' => 'vouedo',
 );
 
 /** Galician (Galego)
