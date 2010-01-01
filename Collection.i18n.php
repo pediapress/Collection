@@ -254,7 +254,6 @@ The contents of this page appear in the "Order as a printed book" box on <nowiki
 	'coll-suggest_undo' => '{{Identical|Undo}}',
 	'right-collectionsaveasuserpage' => '{{doc-right|collectionsaveasuserpage}}',
 	'right-collectionsaveascommunitypage' => '{{doc-right|collectionsaveascommunitypage}}',
-	'coll-or' => '{{Identical|Or}}',
 );
 
 /** Faeag Rotuma (Faeag Rotuma)
@@ -7192,7 +7191,6 @@ $messages['pdc'] = array(
 	'coll-return_to' => 'Zerick zu [[:$1]]',
 	'coll-suggest_your_book' => 'Dei Buch',
 	'coll-suggest_show' => 'zeige',
-	'coll-or' => 'odder',
 );
 
 /** Polish (Polski)
@@ -7821,7 +7819,6 @@ $messages['roa-tara'] = array(
 	'coll-limit_exceeded_title' => 'Libbre troppe gruésse',
 	'coll-rendering_page' => '(pàgene: $1)',
 	'coll-suggest_show' => 'fà vedè',
-	'coll-or' => 'o',
 );
 
 /** Russian (Русский)
@@ -9168,14 +9165,17 @@ $messages['th'] = array(
 $messages['tk'] = array(
 	'coll-desc' => '[[Special:Book|Kitap döret]]',
 	'coll-manage_your_book' => 'Öz kitabyňy dolandyr',
+	'coll-book_creator_help' => 'Has köp maglumat üçin [[{{MediaWiki:Coll-helppage}}|kitaplar hakdaky ýardam sahypasyna]] serediň.',
 	'coll-start_book_creator' => 'Kitap döredijini başlat',
 	'coll-book_creator_continue' => 'Kitap döredijini ulanmaga dowam et',
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Kitap dörediji teksti',
 	'coll-collection' => 'Kitap',
 	'coll-collections' => 'Kitaplar',
+	'coll-exclusion_category_title' => 'Printe goşma',
 	'coll-print_template_prefix' => 'Print et',
 	'coll-print_template_pattern' => '$1/Print et',
 	'coll-unknown_subpage_title' => 'Näbelli kiçi sahypa',
+	'coll-unknown_subpage_text' => '[[Special:Book|Kitabyň]] bu kimi sahypasy ýok',
 	'coll-couldnotaddarticle_title' => 'Wiki sahypasyny goşup bolmaýar',
 	'coll-couldnotaddarticle_msg' => 'Wiki sahypasyny goşup bolmady.',
 	'coll-couldnotremovearticle_title' => 'Wiki sahypasyny aýryp bolmady',
@@ -9183,6 +9183,8 @@ $messages['tk'] = array(
 	'coll-savedbook_template' => 'ýazdyrylan_kitap',
 	'coll-your_book' => 'Kitabyňyz',
 	'coll-download_title' => 'Düşür',
+	'coll-download_text' => 'Kitabyňyzy düşürmek üçin bir format saýlaň we düwmä tyklaň.',
+	'coll-download_as_text' => 'Kitabyňyzy $1 formatynda düşürmek üçin düwmä tyklaň.',
 	'coll-download' => 'Düşür',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Aýyr',
@@ -9194,6 +9196,7 @@ $messages['tk'] = array(
 	'coll-title' => 'At:',
 	'coll-subtitle' => 'Kiçi at:',
 	'coll-contents' => 'Mazmuny',
+	'coll-drag_and_drop' => 'Wiki sahypalaryny we  bölümleri gaýtadan tertiplemek üçin süýre & goý-y ulanyň',
 	'coll-create_chapter' => 'Bap döret',
 	'coll-sort_alphabetically' => 'Elipbiý boýunça düz',
 	'coll-rename' => 'Adyny üýtget',
@@ -9203,12 +9206,18 @@ $messages['tk'] = array(
 	'coll-notitle_title' => 'Sahypanyň adyny kesgitläp bolmady.',
 	'coll-post_failed_title' => 'POST talaby şowsuz',
 	'coll-post_failed_msg' => '$1 üçin POST talaby şowsuz ($2).',
+	'coll-mwserve_failed_title' => 'Iş serweri säwligi',
+	'coll-mwserve_failed_msg' => 'İş serwerinde bir säwlik döredi: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Serwerden säwlik jogaby',
 	'coll-empty_collection' => 'Boş kitap',
 	'coll-revision' => 'Wersiýa: $1',
 	'coll-save_collection_title' => 'Kitabyňy ýazdyr we paýlaş',
+	'coll-save_collection_text' => 'Kitabyňyz üçin bir ýer saýlaň:',
+	'coll-login_to_save' => 'Kitaplaryňyzy soňundan ulanmak üçin ýazdyrnak isleýän bolsaňyz, [[Special:UserLogin|sessiýa açyň ýa-da hasap dörediň]].',
 	'coll-personal_collection_label' => 'Şahsy kitap:',
 	'coll-community_collection_label' => 'Jemgyýetçilik kitaby:',
 	'coll-save_collection' => 'Kitaby ýazdyr',
+	'coll-save_category' => 'Ähli ýazdyrylan kitaplar [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] kategoriýasyna goşulýar.',
 	'coll-overwrite_title' => 'Sahypa bar.
 Üstüne ýazmalymy?',
 	'coll-yes' => 'Hawa',
@@ -9224,6 +9233,7 @@ Indi sahypa goşup bolmaýar.',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wiki sahypasy: $1)',
 	'coll-rendering_page' => '(sahypa: $1)',
+	'coll-rendering_finished_title' => 'Döretme tamamlandy',
 	'coll-notfound_title' => 'Kitap tapylmady',
 	'coll-notfound_text' => 'Kitap sahypasyny tapyp bolmady.',
 	'coll-download_notfound_title' => 'Faýl tapylmady',
@@ -9816,7 +9826,6 @@ $messages['vep'] = array(
 	'coll-license' => 'Licenzii',
 	'coll-suggest_your_book' => 'Teiden kirj',
 	'coll-suggest_show' => 'ozutada',
-	'coll-or' => 'vai',
 );
 
 /** Vietnamese (Tiếng Việt)
