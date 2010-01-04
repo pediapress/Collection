@@ -5328,6 +5328,7 @@ $messages['ka'] = array(
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/ინფორმაცია PediaPress-ის შეკვვეთაზე',
 	'coll-suggest_add_selected' => 'არჩეული გვერდების დამატება',
 	'coll-suggest_your_book' => 'თქვენი წიგნი',
+	'coll-suggest_undo' => 'გაუქმება',
 	'right-collectionsaveasuserpage' => 'შეინახე წიგნი, როგორც მომხმარებლის გვერდი',
 	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
 );
@@ -7557,8 +7558,8 @@ $messages['pt-br'] = array(
 	'coll-couldnotaddarticle_msg' => 'A página wiki não pôde ser adicionada.',
 	'coll-couldnotremovearticle_title' => 'Não pôde remover a página wiki',
 	'coll-couldnotremovearticle_msg' => 'A página wiki não pôde ser removida.',
-	'coll-noscript_text' => '<h1>JavaScript é requerido!</h1>
-<strong>O seu navegador não suporta JavaScript, ou o JavaScript foi desactivado.
+	'coll-noscript_text' => '<h1>É necessário o JavaScript!</h1>
+<strong>O seu navegador não suporta JavaScript, ou o JavaScript foi desativado.
 Esta página não funcionará corretamente, a menos que o JavaScript seja ativado.</strong>',
 	'coll-savedbook_template' => 'livro_salvo',
 	'coll-your_book' => 'Seu livro',
