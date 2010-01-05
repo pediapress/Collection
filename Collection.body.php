@@ -186,6 +186,7 @@ class SpecialCollection extends SpecialPage {
 					if ( $collection ) {
 						CollectionSession::startSession();
 						$_SESSION['wsCollection'] = $collection;
+						CollectionSession::enable();
 						$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 					}
 					return;
