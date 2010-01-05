@@ -111,7 +111,8 @@ If this does not work, please press your browser's refresh button.</p>",
 	'coll-rendering_status'           => "<strong>Status:</strong> $1",
 	'coll-rendering_article'          => '(wiki page: $1)',
 	'coll-rendering_page'             => '(page: $1)',
-	'coll-rendering_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendering info text',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendering page info text',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendering collection info text',
 	'coll-rendering_finished_title'   => 'Rendering finished',
 	'coll-rendering_finished_text'    => "<strong>The document file has been generated.</strong>
 <strong>[$1 Download the file]</strong> to your computer.

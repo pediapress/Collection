@@ -263,8 +263,11 @@ system message.
 	The default value is: {{MediaWiki:Coll-helppage}}/PediaPress order information
 	i.e. a subpage of the configured help page named "PediaPress order information".
 
-* Coll-rendering_info_text_article: The name of a wiki page with additional
-  informations to be displayed when documents are being rendered.
+* Coll-rendering_page_info_text_article: The name of a wiki page with additional
+  informations to be displayed when single pages are being rendered.
+
+* Coll-rendering_collection_info_text_article: The name of a wiki page with additional
+  informations to be displayed when collections are being rendered.
 
 
 .. _mwlib: http://code.pediapress.com/wiki/wiki/mwlib
