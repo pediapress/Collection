@@ -80,6 +80,10 @@ class CollectionHooks {
 		global $wgCollectionFormats;
 		global $wgCollectionPortletFormats;
 		global $wgScriptPath;
+
+		if ( is_null( $wgTitle ) || !$wgTitle->exists() ) {
+			return;
+		}
 		
 		$namespace = $wgTitle->getNamespace();
 
@@ -213,6 +217,10 @@ class CollectionHooks {
 			} else if ( $cmd == '' ) {
 				$siteNotice .= self::renderBookCreatorBox( 'showbook' );
 			}
+			return true;
+		}
+
+		if ( is_null( $wgTitle ) || !$wgTitle->exists() ) {
 			return true;
 		}
 
