@@ -130,21 +130,17 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
 
 	<?php
 		if ($GLOBALS['wgUser']->isLoggedIn()) {
-			$showLoginInfo = false;
 			$canSaveUserPage = $GLOBALS['wgUser']->isAllowed('collectionsaveasuserpage');
 			$canSaveCommunityPage = $GLOBALS['wgUser']->isAllowed('collectionsaveascommunitypage');
-		} else {
-			$showLoginInfo = true;
 		}
-		if ($GLOBALS['wgEnableWriteAPI'] && ($showLoginInfo || $canSaveUserPage || $canSaveCommunityPage)) {
+		if ($GLOBALS['wgEnableWriteAPI'] && ($canSaveUserPage || $canSaveCommunityPage)) {
 	?>
 	<div id="coll-savebox" style="margin-bottom: 10px; padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 		<h2><span class="mw-headline"><?php $this->msg('coll-save_collection_title') ?></span></h2>
 		<?php
-				if (!$showLoginInfo) {
-					$this->msgWiki('coll-save_collection_text');
-					$bookname = wfMsgForContent('coll-collections');
-					$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
+				$this->msgWiki('coll-save_collection_text');
+				$bookname = wfMsgForContent('coll-collections');
+				$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
 		?>
 			<form id="saveForm" action="<?php echo htmlspecialchars(SkinTemplate::makeSpecialUrl('Book')) ?>" method="post">
 				<table style="width:100%; background-color: transparent;"><tbody>
@@ -181,9 +177,7 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
 				<input name="bookcmd" type="hidden" value="save_collection" />
 			</form>
 
-		<?php } else {
-			$this->msgWiki('coll-login_to_save');
-		}
+		<?php
 		$this->msgWiki('coll-save_category');
 		?>
 	</div>
