@@ -2406,6 +2406,7 @@ $messages['el'] = array(
 
 /** Esperanto (Esperanto)
  * @author Amikeco
+ * @author Castelobranco
  * @author Yekrats
  * @author Александр Сигачёв
  */
@@ -2494,6 +2495,8 @@ Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.</p>',
 	'coll-rendering_status' => '<strong>Statuso:</strong> $1',
 	'coll-rendering_article' => '(vikipaĝo: $1)',
 	'coll-rendering_page' => '(paĝo: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Generanta helpan paĝon',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Generanta helpan paĝon pri kolektoj',
 	'coll-rendering_finished_title' => 'Generado finiĝis.',
 	'coll-rendering_finished_text' => '<strong>La dokumento estis generita.</strong>
 <strong>[$1 Elŝuti la dosieron]</strong> al via komputilo.
