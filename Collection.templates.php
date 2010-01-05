@@ -355,6 +355,15 @@ class CollectionRenderingTemplate extends QuickTemplate {
 <?php echo wfMsg('coll-rendering_text',	$GLOBALS['wgLang']->formatNum($this->data['progress']), $this->data['status']) ?>
 
 <?php
+		$title_string = wfMsgForContent('coll-rendering_info_text_article');
+		$t = Title::newFromText($title_string);
+		if ( $t && $t->exists() ) {
+			echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
+				$GLOBALS['wgTitle'],
+				$GLOBALS['wgOut']->parserOptions(),
+				true
+			)->getText();
+		}
 	}
 }
 
