@@ -191,20 +191,6 @@ Installation and Configuration of the Collection Extension
       }
     ?>
 
-  *$wgCollectionNavPopups (bool)*
-   Flag controlling whether popups to easily add/remove linked articles to your
-   collection are enabled.
-   
-   The Collection popups are only active if
-
-   * JavaScript is enabled,
-   * book creator mode is enabled,
-   * the current user didn't enable the "Navigation popup gadget" on the MediaWiki
-     (see http://en.wikipedia.org/wiki/Navpop) which would result in conflicting
-     popups.  
-
-   Default is true, i.e. the Collection popups are enabled.
-
 * If you want to let users save their collections as wiki pages, make sure
   $wgEnableWriteAPI is set to true, i.e. put this line in your LocalSettings.php::
 
