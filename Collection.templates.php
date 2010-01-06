@@ -178,7 +178,10 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
 			</form>
 
 		<?php
-		$this->msgWiki('coll-save_category');
+		$t = wfMsgForContent('coll-bookscategory');
+		if ( $t && $t != '-') {
+			$this->msgWiki('coll-save_category');
+		}
 		?>
 	</div>
 	<?php } ?>
