@@ -848,9 +848,12 @@ EOS
 				//$articleText .= $item['revision'] . "/" . $item['latest']."\n";
 			}
 		}
-		$catTitle = Title::makeTitle( NS_CATEGORY, wfMsgForContent( 'coll-bookscategory' ) );
-		if ( !is_null( $catTitle ) ) {
-			$articleText .= "\n[[" . $catTitle->getPrefixedText() . "|" . wfEscapeWikiText( $title->getSubpageText() ) . "]]\n";
+		$t = wfMsgForContent( 'coll-bookscategory' );
+		if ( $t && $t != '-' ) {
+			$catTitle = Title::makeTitle( NS_CATEGORY, $t );
+			if ( !is_null( $catTitle ) ) {
+				$articleText .= "\n[[" . $catTitle->getPrefixedText() . "|" . wfEscapeWikiText( $title->getSubpageText() ) . "]]\n";
+			}
 		}
 
 		$req = new FauxRequest(array(
