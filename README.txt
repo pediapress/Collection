@@ -248,6 +248,10 @@ system message.
 	The default is: 'saved_book', and there exist translations for lots of
 	different languages.
 
+* Coll-bookscategory: Name of a category (w/out the Category: prefix) to which
+  all saved book pages should be added (optional, set to an empty value or "-"
+	to turn that feature off).
+
 * Coll-book_creator_text_article: The name of  a wiki page which is transcluded
   on the "Start book creator" page (the page which is shown when a user clicks
 	on "Create a book").
