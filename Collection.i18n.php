@@ -1594,6 +1594,8 @@ Pokud to nefunguje, stiskněte v prohlížeči tlačítko <i>obnovit</i>.</p>',
 	'coll-rendering_status' => '<strong>Stav:</strong> $1',
 	'coll-rendering_article' => '(článek: $1)',
 	'coll-rendering_page' => '(stránka: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informace při vykreslování stránky',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informace při vykreslování knihy',
 	'coll-rendering_finished_title' => 'Vykreslování dokončeno',
 	'coll-rendering_finished_text' => '<strong>Soubor s dokumentem byl vytvořen.</strong>
 Můžete si ho <strong>[$1 stáhnout do svého počítače]</strong>.
@@ -2211,6 +2213,8 @@ Jolic to njefunkcioněrujo, klikni pšosym tłocašk "Znowego" swójogo wobglěd
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wikijowy bok: $1)',
 	'coll-rendering_page' => '(bok: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Cerjenje infoteksta boka',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Cerjenje infoteksta zběrki',
 	'coll-rendering_finished_title' => 'Kreslenje dokóńcone',
 	'coll-rendering_finished_text' => '<strong>Dokumentowa dataja jo se napórała.</strong>
 <strong>[$1 Ześěgni dataju]</strong> do swójogo licadła.
@@ -2738,7 +2742,7 @@ See lehekülg ei tööta korralikult, kui JavaScript pole lubatud.</strong>',
 	'coll-contents' => 'Sisukord',
 	'coll-drag_and_drop' => 'Kasuta vikilehekülgede ja peatükkide ümberjärjestamiseks pukseerimist.',
 	'coll-create_chapter' => 'Loo peatükk',
-	'coll-sort_alphabetically' => 'Sorteeri&nbsp;tähestikuliselt',
+	'coll-sort_alphabetically' => 'Järjesta&nbsp;tähestikuliselt',
 	'coll-rename' => 'Nimeta ümber',
 	'coll-new_chapter' => 'Sisesta uue peatüki pealkiri',
 	'coll-rename_chapter' => 'Sisesta uue peatüki pealkiri',
@@ -3282,6 +3286,7 @@ Si tel n’était pas le cas, veuillez cliquer sur le bouton Actualiser de votre
 	'coll-rendering_status' => '<strong>État :</strong> $1',
 	'coll-rendering_article' => '(page wiki : $1)',
 	'coll-rendering_page' => '(page : $1)',
+	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Texte d'information sur le rendu des pages",
 	'coll-rendering_finished_title' => 'Rendu terminé',
 	'coll-rendering_finished_text' => '<strong>Le fichier document a été généré.</strong>
 <strong>[$1 Télécharger le fichier]</strong> sur votre ordinateur.
@@ -4249,6 +4254,8 @@ Jeli so to njestawa, klikń prošu na tłóčatko "Znowa" swojeho wobhladowaka.<
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wikijowa strona: $1)',
 	'coll-rendering_page' => '(strona: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rysowanje infoteksta strony',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rysowanje infoteksta zběrki',
 	'coll-rendering_finished_title' => 'Tworjenje dokónčene',
 	'coll-rendering_finished_text' => '<strong>Dokumentowa dataja je so wuspěšnje wutworiła.</strong>
 <strong>[$1 Dataju na twój ličak sćahnyć]</strong>.
@@ -6239,7 +6246,7 @@ $messages['ml'] = array(
 	'coll-suggest_intro_text' => 'താങ്കളുടെ പുസ്തകത്തിൽ ഇപ്പോഴുള്ള വിക്കിതാളുകളുടെ ഗണത്തെ അധിഷ്ഠിതമാക്കിയുള്ള നിർദ്ദേശങ്ങളാണിത്.
 ചേർക്കാനോ നീക്കംചെയ്യാനോ ഉള്ള ബട്ടണുകൾ ഞെക്കുമ്പോൾ പട്ടിക പുതുക്കപ്പെടുന്നതാണ്.',
 	'coll-suggested_articles' => 'നിർദ്ദേശങ്ങൾ',
-	'coll-suggest_reset_bans' => 'പുനക്രമീകരിക്കുക',
+	'coll-suggest_reset_bans' => 'പുനഃക്രമീകരിക്കുക',
 	'coll-suggest_reset_bans_tooltip' => 'മുമ്പ് നീക്കം ചെയ്ത നിർദ്ദേശങ്ങൾ പ്രദർശിപ്പിക്കുക',
 	'coll-suggest_add_selected' => 'തിരഞ്ഞെടുത്ത താളുകൾ ചേർക്കുക',
 	'coll-suggest_ban_selected' => 'തിരഞ്ഞെടുത്ത താളുകൾ നീക്കംചെയ്യുക',
