@@ -3287,6 +3287,7 @@ Si tel n’était pas le cas, veuillez cliquer sur le bouton Actualiser de votre
 	'coll-rendering_article' => '(page wiki : $1)',
 	'coll-rendering_page' => '(page : $1)',
 	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Texte d'information sur le rendu des pages",
+	'coll-rendering_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Texte d'information sur le rendu des collections",
 	'coll-rendering_finished_title' => 'Rendu terminé',
 	'coll-rendering_finished_text' => '<strong>Le fichier document a été généré.</strong>
 <strong>[$1 Télécharger le fichier]</strong> sur votre ordinateur.
@@ -3556,6 +3557,8 @@ Se non vai, por favor, prema no botón "Refrescar" do seu navegador.</p>',
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(páxina wiki: $1)',
 	'coll-rendering_page' => '(páxina: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre o renderizado de páxinas',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre o renderizado de coleccións',
 	'coll-rendering_finished_title' => 'Finalizou a renderización',
 	'coll-rendering_finished_text' => '<strong>O ficheiro do documento foi xerado.</strong>
 <strong>[$1 Descargue o ficheiro]</strong> no seu ordenador.
@@ -3720,6 +3723,8 @@ Wänn des aber nit gschiht, no druck bitte dr „Aktualisiere“-Chnopf (meischt
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(Artikel: $1)',
 	'coll-rendering_page' => '(Syte: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Am Rendere vum Syteninfotext',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Am Rendere vum Sammligsinfotext',
 	'coll-rendering_finished_title' => 'Fertig aagleit',
 	'coll-rendering_finished_text' => '<strong>D Datei isch mit Erfolg aagleit wore.</strong>
 <strong>[$1 Dokument abelade]</strong>.
@@ -6077,6 +6082,8 @@ $messages['mk'] = array(
 	'coll-rendering_status' => '<strong>Статус:</strong> $1',
 	'coll-rendering_article' => '(вики-страница: $1)',
 	'coll-rendering_page' => '(страница: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Информативен текст за испишувањето на страници',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Информативен текст за испишувањето на збирки',
 	'coll-rendering_finished_title' => 'Отцртувањето заврши',
 	'coll-rendering_finished_text' => '<strong>Податотеката на документот е создадена.</strong>
 <strong>[$1 Преземете ја податотеката]</strong> на вашиот компјутер.
@@ -6187,7 +6194,7 @@ $messages['ml'] = array(
 	'coll-revision' => 'പതിപ്പ്: $1',
 	'coll-save_collection_title' => 'താങ്കളുടെ പുസ്തകം സേവ് ചെയ്യുക പങ്ക് വെയ്ക്കുക',
 	'coll-save_collection_text' => 'താങ്കളുടെ പുസ്തകം ശേഖരിച്ചു വെയ്ക്കേണ്ട സ്ഥലം തിരഞ്ഞെടുത്തു നൽകുക:',
-	'coll-login_to_save' => 'പുസ്തകങ്ങൾ പിന്നീടുള്ള ഉപയോഗത്തിനായി സൂക്ഷിക്കണമെങ്കില്‍, ദയവായി [[Special:UserLogin|ലോഗിന്‍ ചെയ്യുകയോ പുതിയൊരു അക്കൗണ്ട് ഉണ്ടാക്കുകയോ ചെയ്യുക]].',
+	'coll-login_to_save' => 'പുസ്തകങ്ങൾ പിന്നീടുള്ള ഉപയോഗത്തിനായി സൂക്ഷിക്കണമെങ്കില്‍, ദയവായി [[Special:UserLogin|ലോഗിന്‍ ചെയ്യുകയോ പുതിയൊരു അംഗത്വം ഉണ്ടാക്കുകയോ ചെയ്യുക]].',
 	'coll-personal_collection_label' => 'സ്വകാര്യ പുസ്തകം:',
 	'coll-community_collection_label' => 'സമൂഹ പുസ്തകം:',
 	'coll-save_collection' => 'പുസ്തകം സേവ് ചെയ്യുക',
@@ -6706,6 +6713,8 @@ Als dit niet werkt, klik dan op de knop "Vernieuwen" in uw browser.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wikipagina: $1)',
 	'coll-rendering_page' => '(pagina: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Paginarenderinformatie',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Verzamelingrenderinformatie',
 	'coll-rendering_finished_title' => 'Renderen afgerond',
 	'coll-rendering_finished_text' => '<strong>Het document is aangemaakt.</strong>
 <strong>[$1 Het bestand downloaden]</strong>.
@@ -7955,6 +7964,8 @@ $messages['ru'] = array(
 	'coll-rendering_status' => '<strong>Статус:</strong> $1',
 	'coll-rendering_article' => '(статья: $1)',
 	'coll-rendering_page' => '(страница: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Отображение информации о странице',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Отображение информации о коллекции',
 	'coll-rendering_finished_title' => 'Создание завершено',
 	'coll-rendering_finished_text' => '<strong>Файл документа создан.</strong>
 <strong>[$1 Загрузить файл]</strong> на свой компьютер.
