@@ -849,7 +849,7 @@ EOS
 			}
 		}
 		$t = wfMsgForContent( 'coll-bookscategory' );
-		if ( $t && $t != '-' ) {
+		if ( !wfEmptyMsg( 'coll-bookscategory', $t ) && $t != '-' ) {
 			$catTitle = Title::makeTitle( NS_CATEGORY, $t );
 			if ( !is_null( $catTitle ) ) {
 				$articleText .= "\n[[" . $catTitle->getPrefixedText() . "|" . wfEscapeWikiText( $title->getSubpageText() ) . "]]\n";
@@ -882,7 +882,7 @@ EOS
 		);
 
 		$from_msg = wfMsgForContent( 'coll-license_url' );
-		if ( $from_msg && $from_msg != '-' ) {
+		if ( !wfEmptyMsg( 'coll-license_url', $from_msg ) && $from_msg != '-' ) {
 			$licenseInfo['mw_license_url'] = $from_msg;
 			return array( $licenseInfo );
 		}
