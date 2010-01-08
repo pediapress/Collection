@@ -1806,9 +1806,12 @@ $messages['ms'] = array(
 	'coll-print_export' => 'Cetak/eksport',
 	'coll-create_a_book' => 'Cipta buku',
 	'coll-create_a_book_tooltip' => 'Cipta sebuah buku atau koleksi laman',
+	'coll-book_creator' => 'Pencipta buku',
 	'coll-download_as' => 'Muat turun sebagai $1',
 	'coll-download_as_tooltip' => 'Muat turun versi $1 laman wiki ini',
 	'coll-disable' => 'lumpuhkan',
+	'coll-book_creator_disable' => 'Lumpuhkan pencipta buku',
+	'coll-book_creator_disable_tooltip' => 'Berhenti menggunakan pencipta buku',
 	'coll-add_category' => 'Tambah kategori ini ke buku anda',
 	'coll-add_category_tooltip' => 'Tambah kesemua laman wiki dalam kategori ini ke buku anda',
 	'coll-add_this_page' => 'Tambah laman ini ke buku anda',
@@ -1829,6 +1832,8 @@ $messages['ms'] = array(
 	'coll-show_collection' => 'Tunjuk buku',
 	'coll-show_collection_tooltip' => 'Klik untuk sunting/muat turun/pesan buku anda',
 	'coll-not_addable' => 'Laman ini tidak dapat ditambah',
+	'coll-make_suggestions' => 'Syorkan laman',
+	'coll-make_suggestions_tooltip' => 'Berikan syor berdasarkan laman dalam buku anda',
 	'coll-suggest_empty' => 'kosong',
 );
 
