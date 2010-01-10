@@ -7504,6 +7504,8 @@ Se não o fizer, por favor use o botão "actualizar" ("refresh") do seu navegado
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(página wiki: $1)',
 	'coll-rendering_page' => '(página: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Mostrando o texto de informação da página',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Mostrando o texto de informação do livro',
 	'coll-rendering_finished_title' => 'Renderização concluída',
 	'coll-rendering_finished_text' => '<strong>O ficheiro foi gerado.</strong>
 <strong>[$1 Transfira o ficheiro]</strong> para o seu computador.
