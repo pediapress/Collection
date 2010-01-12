@@ -150,6 +150,9 @@ Installation and Configuration of the Collection Extension
    Namespace for "community collections", i.e. the namespace where non-personal
    article collection pages are saved.
 
+	 Note: This configuration setting is only used if the system message
+	 Coll-community_book_prefix has not been set (see below).
+
    Default is ``NS_PROJECT``.
 
   *$wgCollectionMaxArticles (integer)*
@@ -242,6 +245,23 @@ system message.
 * Coll-helppage: The name of the help page (see above).
   The default for English language is "Help:Books", and there exist translations
 	for lots of different languages.
+
+* Coll-user_book_prefix: Prefix for titles of "user books" (i.e. books for
+  personal use, as opposed to "community books"). If the system message is empty
+	or '-' (the default), the title of user book pages is constructed
+	as User:USERNAME/Books/BOOKTITLE. If the system message is set and its content
+	is PREFIX, the title of user book pages is constructed by directly concatenating
+	PREFIX and the BOOKTITLE, i.e. there's no implicitly inserted '/' inbetween!
+
+* Coll-community_book_prefix: Prefix for titles of "community books" (cf. "user
+  books" above). If the system message is empty or '-' (the default), the title
+	of community pages is constructed as NAMESPACE:Books/BOOKTITLE, where
+	NAMESPACE depends on the value of $wgCommunityCollectionNamespace (see above).
+	If the system message is set and its content is PREFIX, the title of community
+	book pages is constructed by directly concatenating PREFIX and BOOKTITLE,
+	i.e. there's no implicitly inserted '/' inbetween. Thus it's possible to
+	define a custom namespace 'Book' and set the system message to 'Book:' to
+	produce community book page titles Book:BOOKTITLE.
 
 * Coll-savedbook_template: The name of the template (w/out the Template: prefix)
   included at the top of saved book pages (see above).

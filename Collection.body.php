@@ -210,24 +210,19 @@ class SpecialCollection extends SpecialPage {
 					return;
 				}
 				$colltype = $wgRequest->getVal( 'colltype' );
+				$prefixes = self::getBookPagePrefixes();
 				if ( $colltype == 'personal' ) {
 					$collname = $wgRequest->getVal( 'pcollname' );
 					if ( !$wgUser->isAllowed( 'collectionsaveasuserpage' ) || empty( $collname ) ) {
 						return;
 					}
-					$userPageTitle = $wgUser->getUserPage()->getPrefixedText();
-					$title = Title::newFromText(
-						$userPageTitle . '/' . wfMsgForContent( 'coll-collections' ) . '/' . $collname
-					);
+					$title = Title::newFromText( $prefixes['user-prefix'] . $collname );
 				} elseif ( $colltype == 'community' ) {
 					$collname = $wgRequest->getVal( 'ccollname' );
 					if ( !$wgUser->isAllowed( 'collectionsaveascommunitypage' ) || empty( $collname ) ) {
 						return;
 					}
-					$title = Title::makeTitle(
-						$wgCommunityCollectionNamespace,
-						wfMsgForContent( 'coll-collections' ) . '/' . $collname
-					);
+					$title = Title::newFromText( $prefixes['community-prefix'] . $collname );
 				}
 				if ( !$title ) {
 					return;
@@ -467,6 +462,35 @@ EOS
 		);
 	}
 
+	static function getBookPagePrefixes() {
+		global $wgUser;
+		global $wgCommunityCollectionNamespace;
+
+		wfLoadExtensionMessages( 'CollectionCore' );
+
+		$result = array();
+
+		$t = wfMsgForContent( 'coll-user_book_prefix', $wgUser->getName() );
+		if ( wfEmptyMsg( 'coll-user_book_prefix', $t ) || $t == '-' ) {
+			$userPageTitle = $wgUser->getUserPage()->getPrefixedText();
+			$result['user-prefix'] = $userPageTitle . '/'
+				. wfMsgForContent( 'coll-collections' ) . '/';
+		} else {
+			$result['user-prefix'] = $t;
+		}
+
+		$t = wfMsgForContent( 'coll-community_book_prefix' );
+		if ( wfEmptyMsg( 'coll-community_book_prefix', $t) || $t == '-' ) {
+			$title = Title::makeTitle(
+				$wgCommunityCollectionNamespace,
+				wfMsgForContent( 'coll-collections' )
+			);
+			$result['community-prefix'] = $title->getPrefixedText() . '/';
+		} else {
+			$result['community-prefix'] = $t;
+		}
+		return $result;
+	}
 
 	function renderSpecialPage() {
 		global $wgCollectionFormats;
@@ -494,6 +518,9 @@ EOS
 		$template->set( 'collection', $_SESSION['wsCollection'] );
 		$template->set( 'podpartners', $this->mPODPartners );
 		$template->set( 'formats', $wgCollectionFormats);
+		$prefixes = self::getBookPagePrefixes();
+		$template->set( 'user-book-prefix', $prefixes['user-prefix'] );
+		$template->set( 'community-book-prefix', $prefixes['community-prefix'] );
 		$wgOut->addTemplate( $template );
 	}
 
