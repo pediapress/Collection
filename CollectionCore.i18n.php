@@ -60,6 +60,8 @@ $messages['en'] = array(
 	'coll-make_suggestions_tooltip' => 'Show suggestions based on the pages in your book',
 	'coll-suggest_enabled'          => '1',
 	'coll-suggest_empty'            => 'empty',
+	'coll-user_book_prefix'         => '-',
+	'coll-community_book_prefix'    => '-',
 );
 
 /** Message documentation (Message documentation)
