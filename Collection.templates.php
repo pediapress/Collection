@@ -179,7 +179,7 @@ echo $GLOBALS['wgParser']->parse('{{:' . $t . '}}',
 
 		<?php
 		$t = wfMsgForContent('coll-bookscategory');
-		if ( !wfEmtpyMsg('coll-bookscategory', $t) && $t != '-') {
+		if ( !wfEmptyMsg('coll-bookscategory', $t) && $t != '-') {
 			$this->msgWiki('coll-save_category');
 		}
 		?>
