@@ -9568,6 +9568,13 @@ Ekle veya sil butonlarına her bastığınızda liste yenilenir.',
 	'right-collectionsaveascommunitypage' => 'Kitapları topluluk sayfası olarak kaydet',
 );
 
+/** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
+ * @author Timming
+ */
+$messages['tt-cyrl'] = array(
+	'coll-rename' => 'Күчерү',
+);
+
 /** Ukrainian (Українська)
  * @author AS
  * @author Ahonc
