@@ -807,6 +807,8 @@ $messages['be-tarask'] = array(
 	'coll-rendering_status' => '<strong>Статус:</strong> $1',
 	'coll-rendering_article' => '(вікі-старонка: $1)',
 	'coll-rendering_page' => '(старонка: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Генэрацыя тэксту са старонкі',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Генэрацыя тэксту з калекцыі',
 	'coll-rendering_finished_title' => 'Адлюстраваньне скончана',
 	'coll-rendering_finished_text' => '<strong>Файл дакумэнту быў створаны.</strong>
 <strong>[$1 Загрузіць файл]</strong> на Ваш кампутар.
@@ -5751,7 +5753,7 @@ Dës Säit fonctionnéiert net richteg, ausser wa JavaScript ageschalt ass</stro
 	'coll-sort_alphabetically' => 'Alphabetesch sortéieren',
 	'coll-rename' => 'Ëmbenennen',
 	'coll-new_chapter' => 'Gitt den Numm fir dat neit Kapitel un',
-	'coll-rename_chapter' => "Gitt een neie Numm fir d'Kapitel un",
+	'coll-rename_chapter' => "Gitt en neien Numm fir d'Kapitel un",
 	'coll-no_such_category' => 'Keng esou Kategorie',
 	'coll-notitle_title' => 'Den Titel vun der Säit konnt net festgestallt ginn.',
 	'coll-post_failed_title' => 'POST Ufro huet net fonctionnéiert',
