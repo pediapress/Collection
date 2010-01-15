@@ -1328,6 +1328,8 @@ Ukoliko se to ne desi, molimo kliknite dugme za osvježavanje u Vašem pregledni
 	'coll-rendering_status' => '<strong>Stanje:</strong> $1',
 	'coll-rendering_article' => '(wiki stranica: $1)',
 	'coll-rendering_page' => '(stranica: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Stranica za iscrtavanje informativnog teksta',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Iscrtavanje kolekcije informativnog teksta',
 	'coll-rendering_finished_title' => 'Iscrtavanje završeno',
 	'coll-rendering_finished_text' => '<strong>Datoteka dokumenta je generisana.</strong>
 <strong>[$1 Spremite datoteku]</strong> na Vaš računar.
