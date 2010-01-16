@@ -8832,6 +8832,8 @@ Om det inte fungerar, var god tryck på uppdateringsknappen i din webbläsare.</
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wikisida: $1)',
 	'coll-rendering_page' => '(sida: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informationstext om sidrendering',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informationstext om samlingsrendering',
 	'coll-rendering_finished_title' => 'Rendering avslutad',
 	'coll-rendering_finished_text' => '<strong>Dokumentfilen har skapats.</strong>
 <strong>[$1 Hämta filen]</strong> till din dator.
@@ -9524,6 +9526,8 @@ Eğer çalışmıyorsa, lütfen tarayıcınızın yenileme tuşuna basın.</p>',
 	'coll-rendering_status' => '<strong>Durum:</strong> $1',
 	'coll-rendering_article' => '(viki sayfası: $1)',
 	'coll-rendering_page' => '(sayfa: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/İşleyici sayfası bilgi metni',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/İşleyici kolleksiyonu bilgi metni',
 	'coll-rendering_finished_title' => 'Oluşturma tamamlandı',
 	'coll-rendering_finished_text' => '<strong>Belge oluşturuldu.</strong>
 Dosyayı bilgisayarınıza <strong>[$1 indirin]</strong>.
