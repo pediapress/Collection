@@ -8244,6 +8244,8 @@ Ak to nefunguje, stlačte prosím tlačidlo obnoviť vo vašom prehlidači.</p>'
 	'coll-rendering_status' => '<strong>Stav:</strong> $1',
 	'coll-rendering_article' => '(wiki stránka: $1)',
 	'coll-rendering_page' => '(stránka: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Vykresľovanie info textu stránky',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Vykresľovanie info textu kolekcie',
 	'coll-rendering_finished_title' => 'Vykresľovanie je dokončené',
 	'coll-rendering_finished_text' => '<strong>Súbor dokumentu bol vytvorený.</strong>
 Môžete ho <strong>[$1 stiahnuť]</strong> na svoj počítač.
