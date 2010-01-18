@@ -4642,6 +4642,8 @@ Si isto non functiona, per favor preme le button de refrescar in tu navigator.</
 	'coll-rendering_status' => '<strong>Stato:</strong> $1',
 	'coll-rendering_article' => '(pagina wiki: $1)',
 	'coll-rendering_page' => '(pagina: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto de information super le rendition de paginas',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto de information super le rendition de collectiones',
 	'coll-rendering_finished_title' => 'Rendition finite',
 	'coll-rendering_finished_text' => '<strong>Le file del documento ha essite generate.</strong>
 <strong>[$1 Discarga le file]</strong> verso tu computator.
