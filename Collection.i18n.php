@@ -2653,6 +2653,8 @@ Si no funciona, pulsa el botón de refrescar de tu navegador.</p>',
 	'coll-rendering_status' => '<strong>Estatus:</strong> $1',
 	'coll-rendering_article' => '(página wiki: $1)',
 	'coll-rendering_page' => '(página: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/ Procesando texto de información de la página',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/ Procesando texto de información de la colección',
 	'coll-rendering_finished_title' => 'Proceso finalizado',
 	'coll-rendering_finished_text' => '<strong>Se ha generado el documento.</strong>
 <strong>[$1 Descarga el archivo]</strong>.
@@ -4058,8 +4060,8 @@ $messages['hil'] = array(
 
 /** Croatian (Hrvatski)
  * @author Dalibor Bosits
+ * @author Ex13
  * @author SpeedyGonsales
- * @author Suradnik13
  */
 $messages['hr'] = array(
 	'coll-desc' => '[[Special:Book|Stvori zbirku]]',
@@ -7000,6 +7002,8 @@ Ingen flere sider kan legges til.',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wikiside: $1)',
 	'coll-rendering_page' => '(side: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informasjonstekst om sidegjengivelse',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informasjonstekst om samlingsgjengivelse',
 	'coll-rendering_finished_title' => 'Opprettet',
 	'coll-rendering_finished_text' => '<strong>Dokumentfilen har blitt laget.</strong>
 <strong>[$1 Last ned filen]</strong> til din datamaskin.
