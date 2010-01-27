@@ -5711,7 +5711,7 @@ Di Leß weed neu opjebout, wann De op dä „Dobei donn“ udder dä „{{int:co
  */
 $messages['kw'] = array(
 	'coll-rename' => 'Dashenwel',
-	'coll-cancel' => 'Hedhy',
+	'coll-cancel' => 'Hedhi',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
