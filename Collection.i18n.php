@@ -8981,6 +8981,8 @@ $messages['te'] = array(
 	'coll-suggest_your_book' => 'మీ పుస్తకము',
 	'coll-suggest_show' => 'చూపు',
 	'coll-suggest_ban_tooltip' => 'ఈ పేజీని సూచనల జాబితా నుండి తొలగించు',
+	'coll-suggest_article_ban' => '<strong>$1</strong> పేజీని సూచనల్లోని తొలగించాం ($2).',
+	'coll-suggest_article_add' => '<strong>$1</strong> అనే పేజీని మీ పుస్తకంలో చేర్చాం ($2).',
 	'right-collectionsaveasuserpage' => 'పుస్తకములను సభ్యుని పేజి లాగ భద్రపరచుము',
 	'right-collectionsaveascommunitypage' => 'పుస్తకములను కమ్యూనిటీ పేజి లాగ భద్రపరచుము',
 );
