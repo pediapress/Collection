@@ -7373,6 +7373,14 @@ Lista jest aktualizowana, gdy klikniesz na przyciski dodaj lub usuń.',
 	'right-collectionsaveascommunitypage' => 'Zapisywanie książek jako wspólną stronę',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'coll-desc' => '[[Special:Book|Crea lìber]]',
+	'coll-suggested_articles' => 'Sugeriment',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
