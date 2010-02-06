@@ -7374,31 +7374,32 @@ Lista jest aktualizowana, gdy klikniesz na przyciski dodaj lub usuń.',
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
 	'coll-desc' => '[[Special:Book|Crea lìber]]',
-	'coll-book_creator_intro' => "<big>Con ël ''creator ëd lìber'' it peule creé un lìber contenent pàgine wiki ch'it serne ti. It peule esporté ël lìber an formà diferent (për esempi PDF o ODF) o ordiné na còpia stampà.</big>",
-	'coll-manage_your_book' => 'Gëstiss tò lìber',
+	'coll-book_creator_intro' => "<big>Con ël ''creator ëd lìber'' a peul creé un lìber contenent dle pàgine dla wiki ch'as sern chiel. A peul esporté ël lìber an formà diferent (për esempi PDF o ODF) o ordiné na còpia stampà.</big>",
+	'coll-manage_your_book' => 'Gestì sò lìber',
 	'coll-book_creator_help' => "Varda [[{{MediaWiki:Coll-helppage}}|la pàgina d'agiut an sij lìber]] për savèjne ëd pi.",
 	'coll-start_book_creator' => 'Fà parte ël creator ëd lìber',
 	'coll-book_creator_continue' => 'Continua a dovré ël creator ëd lìber',
-	'coll-book_creator_disable_text' => "''Creator ëd lìber'' a sarà disabilità e ël lìber an doa it travaje a sarà gavà.",
+	'coll-book_creator_disable_text' => "Ël ''creator ëd lìber'' a sarà disabilità e ël lìber al qual a l'é ancamin ch'a travaja a sarà gavà.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Test dël creator ëd lìber',
 	'coll-collection' => 'Lìber',
 	'coll-collections' => 'Lìber',
-	'coll-exclusion_category_title' => 'Esclud stampa',
+	'coll-exclusion_category_title' => 'Lassé fòra da la stampa',
 	'coll-print_template_prefix' => 'Stampa',
 	'coll-print_template_pattern' => '$1/Stampa',
-	'coll-unknown_subpage_title' => 'Sotpàgina pa conossùa',
-	'coll-unknown_subpage_text' => 'Sta sotpàgina ëd [[Special:Book|Lìber]]  a esist pa',
-	'coll-couldnotaddarticle_title' => 'As peul pa gionté pàgina wiki',
+	'coll-unknown_subpage_title' => 'Sot-pàgina pa conossùa',
+	'coll-unknown_subpage_text' => 'Costa sot-pàgina ëd [[Special:Book|Lìber]] a esist pa',
+	'coll-couldnotaddarticle_title' => 'As peul pa gionté la pàgina dla wiki',
 	'coll-couldnotaddarticle_msg' => 'La pàgina wiki as peul pa giontesse',
-	'coll-couldnotremovearticle_title' => 'As peul pa gavessa pàgina wiki',
+	'coll-couldnotremovearticle_title' => 'As peul pa gavessa la pàgina dla wiki',
 	'coll-couldnotremovearticle_msg' => 'La pàgina wiki as peul pa gavesse.',
-	'coll-noscript_text' => "<h1>A l'é ciamà javaScript!</h1>
-<strong>Tò browser a apògia pa JavaScript o JavaScript a l'é stàit disabilità.
-Sta pàgina-sì a travajerà pa bin, a men che JavaScript a sia abilità.</strong>.",
+	'coll-noscript_text' => "<h1>A-i é damanca ëd javaScript!</h1>
+<strong>Sò navigador a manten pa JavaScript o JavaScript a l'é stàit disabilità.
+Sta pàgina-sì a travajërà pa bin, gavà che che JavaScript a sia abilità.</strong>.",
 	'coll-savedbook_template' => 'lìber_salvà',
 	'coll-your_book' => 'Tò lìber',
 	'coll-download_title' => 'Dëscaria',
@@ -7415,13 +7416,13 @@ Sta pàgina-sì a travajerà pa bin, a men che JavaScript a sia abilità.</stron
 	'coll-title' => 'Tìtol:',
 	'coll-subtitle' => 'Sot-tìtol:',
 	'coll-contents' => 'Contnù',
-	'coll-drag_and_drop' => 'Dòvra drag & drop për reordiné pàgine wiki e capìtoj',
+	'coll-drag_and_drop' => 'Dovré ël tiré & lassé për riordiné le pàgine wiki e ij capìtoj',
 	'coll-create_chapter' => 'Crea capìtol',
 	'coll-sort_alphabetically' => 'Órdina alfabeticament',
 	'coll-rename' => 'Arbatia',
-	'coll-new_chapter' => 'Ansëriss nòm për capìtol neuv',
-	'coll-rename_chapter' => 'Ansëriss neuv nòm për capìtol',
-	'coll-no_such_category' => 'Pa gnun-a categorìa',
+	'coll-new_chapter' => 'Anserì ël tìtol dël neuv capìtol',
+	'coll-rename_chapter' => "Anserì ël neuv tìtol d'ës capìtol",
+	'coll-no_such_category' => 'Gnun-a categorìa parèj',
 	'coll-notitle_title' => 'Ël tìtol ëd la pàgina a peul pa esse determinà.',
 	'coll-post_failed_title' => 'Arcesta POST falìa',
 	'coll-post_failed_msg' => "L'arcesta POST a $1 a l'é falìa ($2).",
@@ -7430,9 +7431,9 @@ Sta pàgina-sì a travajerà pa bin, a men che JavaScript a sia abilità.</stron
 	'coll-error_reponse' => "Arspòsta d'eror dal sërvent",
 	'coll-empty_collection' => 'Lìber veuid',
 	'coll-revision' => 'Revision: $1',
-	'coll-save_collection_title' => 'Salva e condivid tò lìber',
+	'coll-save_collection_title' => 'Salvé e partagé sò lìber',
 	'coll-save_collection_text' => 'Sern na locassion ëd memorisassion për tò lìber:',
-	'coll-login_to_save' => "S'it veule salvé lìber për dovré d'apress, për piasì [[Special:UserLogin|intra o crea un cont]].",
+	'coll-login_to_save' => "S'a veul salvé dij lìber da dovré apress, për piasì [[Special:UserLogin|ch'a intra ant ël sistema o ch'a crea un cont]].",
 	'coll-personal_collection_label' => 'Lìber përsonal:',
 	'coll-community_collection_label' => 'Lìber ëd comunità:',
 	'coll-save_collection' => 'Salva lìber',
@@ -7443,75 +7444,75 @@ Coatela?',
 It veule ch'a sia rimpiassà con tò lìber?",
 	'coll-yes' => 'É!',
 	'coll-no' => 'Nò',
-	'coll-load_overwrite_text' => "It l'has già cheich pàgine an tò lìber.
-It veulës-to coaté tò lìber corent, gionté contnù neuv, o scanselé la caria dë sto lìber-sì?",
+	'coll-load_overwrite_text' => "A l'ha già dle pàgine an sò lìber.
+Veul-lo coaté tò lìber corent, gionté contnù neuv, o scancelé ël cariament d'ës lìber?",
 	'coll-overwrite' => 'Coata',
 	'coll-append' => 'Gionta',
-	'coll-cancel' => 'Scansela',
+	'coll-cancel' => 'Scancelé',
 	'coll-update' => 'Modìfica',
 	'coll-limit_exceeded_title' => 'Lìber tròp gròss',
 	'coll-limit_exceeded_text' => "Tò lìber a l'é tròp gròss.
 Pa pi gnun-e pàgine a peulo esse giontà.",
 	'coll-rendering_title' => 'Rapresentassion',
-	'coll-rendering_text' => '<p><strong>Për piasì speta an ment ël document a l\'é generà.</strong></p>
+	'coll-rendering_text' => '<p><strong>Për piasì, ch\'a speta antramentre ël document a l\'é generà.</strong></p>
 
 <p><strong>Progress:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>Sta pàgina-sì a dovrìa agiornesse automaticament minca pòch second.
-Se sòn sì a travaja pa, për piasì sgnaca ël boton ëd refresh ëd tò browser.</p>',
+<p>Sta pàgina-sì a dovrìa agiornesse automaticament minca pòchi second.
+Se sòn a marcia pa, për piasì ch\'a sgnaca ël boton ëd rinfresch ëd sò navigador.</p>',
 	'coll-rendering_status' => '<strong>Stat:</strong> $1',
 	'coll-rendering_article' => '(pàgina wiki: $1)',
 	'coll-rendering_page' => '(pàgina: $1)',
-	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Rapresentassion dël test d'anformassion ëd pàgina",
+	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Test d'anformassion an sl'arpresentassion ëd le pàgine",
 	'coll-rendering_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Rapresentassion dël test d'anformassion dla colession",
 	'coll-rendering_finished_title' => 'Conversion finìa',
-	'coll-rendering_finished_text' => "<strong>Ël file document a l'é stàit generà.</strong>
-<strong>[$1 Dëscaria ël file]</strong> su tò computer.
+	'coll-rendering_finished_text' => "<strong>L'archivi document a l'é stàit generà.</strong>
+<strong>[$1 Dëscariél'archivi]</strong> su sò ordinator.
 
 Nòte:
-* Pa sodisfàit ëd l'arzultà? varda [[{{MediaWiki:Coll-helppage}}|la pàgina d'agiut an sij lìber]] për possibilità ëd megiorelo.",
-	'coll-notfound_title' => 'Lìber pa finì',
-	'coll-notfound_text' => 'As peul pa trovess pàgina ëd lìber.',
+* Pa sodisfàit ëd l'arzultà? Ch'a varda [[{{MediaWiki:Coll-helppage}}|la pàgina d'agiut an sij lìber]] për dle possibilità d'ameliorelo.",
+	'coll-notfound_title' => 'Lìber pa trovà',
+	'coll-notfound_text' => "La pàgina dël lìber a l'é pa podusse trové.",
 	'coll-download_notfound_title' => 'Archivi pa trovà',
-	'coll-download_notfound_text' => "Ël file ch'it preuve a dëscarié a esist pa.
-A peul esse ch'a sia stàit scanselà e ch'a deubia esse argenerà.",
-	'coll-download_failed_title' => 'Eror an mente dla dëscaria.',
-	'coll-download_failed_text' => "A l'é stàit-ie n'eror an mente dla dëscaria dël file: $1",
-	'coll-is_cached' => '<ul><li>A l\'é trovasse na vërsion cached dël document, parèj a son pa necessarie gnun-e convërsion.
-<a href="$1">Forsa convërsion.</a></li></ul>',
-	'coll-excluded-templates' => '* Stamp an categorìa [[:Category:$1|$1]] a son ëstàit escludù.',
-	'coll-blacklisted-templates' => '* Stamp an blacklist [[:$1]] a son ëstàit escludù.',
-	'coll-return_to_collection' => '<p>Artorna a <a href="$1">$2</a></p>',
+	'coll-download_notfound_text' => "L'archivi ch'a preuva a dëscarié a esist pa.
+A peul esse ch'a sia stàit scancelà e ch'a venta torna generelo.",
+	'coll-download_failed_title' => 'Eror durant ël dëscariament.',
+	'coll-download_failed_text' => "A l'é staje n'eror durant ël dëscariament ëd l'archivi: $1",
+	'coll-is_cached' => '<ul><li>A l\'é trovasse na version memorisà dël document, parèj a- é pa damanca ëd conversion.
+<a href="$1">Forsé la conversion.</a></li></ul>',
+	'coll-excluded-templates' => '* Jë stamp an categorìa [[:Category:$1|$1]] a son ëstàit escludù.',
+	'coll-blacklisted-templates' => '* Jë stamp ant la lista nèira [[:$1]] a son ëstàit escludù.',
+	'coll-return_to_collection' => '<p>Torné andaré a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Órdina com un lìber stampà',
-	'coll-book_text' => 'Pija un lìber stampa da nòst partner dë stampa su arcesta.',
+	'coll-book_text' => 'Pijé un lìber stampà da nòstr sòcio dë stampa su arcesta.',
 	'coll-order_from_pp' => 'Preuva con $1',
-	'coll-about_pp' => 'An dzora $1',
-	'coll-invalid_podpartner_title' => 'Partner POD pa bon',
-	'coll-invalid_podpartner_msg' => "Ël partner POD dàit a l'é pa bon.
-Për piasì selession-a tò aministrador MediaWiki.",
+	'coll-about_pp' => 'A propòsit ëd $1',
+	'coll-invalid_podpartner_title' => 'Sòcio a la stampa su arcesta nen vàlid',
+	'coll-invalid_podpartner_msg' => "Ël sòcio dë stampa su arcesta dàit a l'é nen bon.
+Për piasì, ch'a contata sò aministrator MediaWiki.",
 	'coll-license' => 'Licensa',
-	'coll-return_to' => 'Artorna a [[:$1]]',
-	'coll-more_info' => 'Mosta pi anformassion',
+	'coll-return_to' => 'Torné andaré a [[:$1]]',
+	'coll-more_info' => "Smon-e pi d'anformassion",
 	'coll-hide_info' => 'Stërma anformassion',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Anformassion órdin PediaPress',
 	'coll-suggest_title' => 'Pàgine sugerìe për tò lìber',
-	'coll-suggest_intro_text' => "Sugeriment a son basà an sl'ansema corent ëd pàgine wiki an tò lìber.
-La lista a l'é modificà minca vira i të sgnache an sij boton gionta o gava.",
+	'coll-suggest_intro_text' => "Ij sugeriment a son basà an sl'ansema corent dle pàgine wiki an sò lìber.
+La lista a l'é modificà minca vira ch'a sgnaca an sij boton për gionté o gavé.",
 	'coll-suggested_articles' => 'Sugeriment',
 	'coll-suggest_reset_bans' => 'spian-a',
-	'coll-suggest_reset_bans_tooltip' => 'Msta sugeriment gavà da prima',
-	'coll-suggest_add_selected' => 'Gionta pàgine selessionà',
-	'coll-suggest_ban_selected' => 'Gava pàgine selessionà',
+	'coll-suggest_reset_bans_tooltip' => 'Smon-e ij sugeriment gavà prima',
+	'coll-suggest_add_selected' => 'Gionté le pàgine selessionà',
+	'coll-suggest_ban_selected' => 'Gavé le pàgine selessionà',
 	'coll-suggest_your_book' => 'Tò lìber',
-	'coll-suggest_show' => 'mosta',
+	'coll-suggest_show' => 'smon-e',
 	'coll-suggest_ban_tooltip' => 'Gava sta pàgina-sì da la lista ëd sugeriment',
-	'coll-suggest_article_ban' => "Pàgina <strong>$1</strong> a l'é stàita gavà dai sugeriment ($2).",
-	'coll-suggest_article_add' => "Pàgina <strong>$1</strong> a l'é stàita giontà a tò lìber ($2).",
-	'coll-suggest_article_remove' => "Pàgina <strong>$1</strong> a l'é stàita gavà da tò lìber ($2).",
+	'coll-suggest_article_ban' => "La pàgina <strong>$1</strong> a l'é stàita gavà dai sugeriment ($2).",
+	'coll-suggest_article_add' => "La pàgina <strong>$1</strong> a l'é stàita giontà a sò lìber ($2).",
+	'coll-suggest_article_remove' => "La pàgina <strong>$1</strong> a l'é stàita gavà da sò lìber ($2).",
 	'coll-suggest_undo_tooltip' => "Anula st'assion-sì",
 	'coll-suggest_undo' => "buta 'me ch'a l'era",
-	'right-collectionsaveasuserpage' => 'Salva lìber com pàgina utent',
-	'right-collectionsaveascommunitypage' => 'Salva lìber com pàgina ëd comunità',
+	'right-collectionsaveasuserpage' => "Salvé dij lìber ansima a dle pàgine d'utent",
+	'right-collectionsaveascommunitypage' => 'Salvé dij lìber com dle pàgine dla comunità',
 );
 
 /** Pashto (پښتو)
