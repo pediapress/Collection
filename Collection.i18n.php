@@ -7143,6 +7143,8 @@ S\'èra pas lo cas, clicatz sul boton d’actualizacion de vòstre navigador.</p
 	'coll-rendering_status' => '<strong>Estatut :</strong> $1',
 	'coll-rendering_article' => '(pagina wiki : $1)',
 	'coll-rendering_page' => '(pagina : $1)',
+	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Tèxte d'informacion sul rendut de las paginas",
+	'coll-rendering_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Tèxte d'informacion sul rendut de las colleccions",
 	'coll-rendering_finished_title' => 'Rendut acabat',
 	'coll-rendering_finished_text' => '<strong>Lo fichièr document es estat creat.</strong>
 <strong>[$1 Telecargatz-lo]</strong> sus vòstre ordenador.
