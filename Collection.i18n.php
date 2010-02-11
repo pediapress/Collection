@@ -8448,10 +8448,18 @@ Zoznam sa aktualizuje vždy po kliknutí na tlačidlo Pridať alebo Odstrániť.
 );
 
 /** Slovenian (Slovenščina)
+ * @author Freakolowsky
  * @author Smihael
  */
 $messages['sl'] = array(
 	'coll-desc' => '[[Special:Book|Ustvari e-knjige]]',
+	'coll-book_creator_intro' => "<big>Z ''Ustvarjalcem knjig'' lahko ustvarite knjigo, ki vsebuje wiki strani po vaši izbiri. Knjigo lahko nato izvozite v različnih oblikah (na primer PDF ali ODF), ali pa naročite natisnjen izvod.</big>",
+	'coll-manage_your_book' => 'Uredite vašo knjigo',
+	'coll-book_creator_help' => 'Glej [[{{MediaWiki: Coll-Helppage}} | pomoč o knjigah]] za več informacij.',
+	'coll-start_book_creator' => 'Zaženi ustvarjalca knjig',
+	'coll-book_creator_continue' => 'Nadaljuj uporabo ustvarjalca knjig',
+	'coll-book_creator_disable_text' => "''Ustvarjalec knjig'' bo onemogočen in knjiga katero sestavljate bo odstranjena.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Besedilo ustvarjalca knjig',
 	'coll-collection' => 'Knjiga',
 	'coll-collections' => 'Knjige',
 	'coll-exclusion_category_title' => 'Izključi v tiskovini',
@@ -8459,6 +8467,10 @@ $messages['sl'] = array(
 	'coll-print_template_pattern' => '$1/Natisni',
 	'coll-unknown_subpage_title' => 'Neznana podstran',
 	'coll-unknown_subpage_text' => 'Ta podstran [[Special:Book|knjige]] ne obstaja',
+	'coll-couldnotaddarticle_title' => 'Wiki stran ni mogoče dodati',
+	'coll-couldnotaddarticle_msg' => 'Wiki stran ni bilo mogoče dodati.',
+	'coll-couldnotremovearticle_title' => 'Wiki stran ni mogoče odstraniti',
+	'coll-couldnotremovearticle_msg' => 'Wiki stran ni bilo mogoče odstraniti.',
 	'coll-noscript_text' => '<h1>Zahtevan je JavaScript!</h1>
 <strong>Vaš brskalnik ne podpira JavaScripta ali je podpora zanj izključena.
 Ta stran ne bo delovala pravilno bren omogočenega JavaScripta.</strong>',
@@ -8486,7 +8498,11 @@ Ta stran ne bo delovala pravilno bren omogočenega JavaScripta.</strong>',
 	'coll-rename_chapter' => 'Vnesite novo ime za poglavje',
 	'coll-no_such_category' => 'Ne obstaja nobena taka kategorija',
 	'coll-notitle_title' => 'Naslov strani ni bi bilo mogoče določiti.',
-	'coll-post_failed_title' => 'POST-zahteva ni uspela',
+	'coll-post_failed_title' => 'POST zahteva ni uspela',
+	'coll-post_failed_msg' => 'POST zahteva za $1 ni uspela ($2).',
+	'coll-mwserve_failed_title' => 'Napaka na prevajalnem strežniku',
+	'coll-mwserve_failed_msg' => 'Na prevajalnem strežniku je prišlo do napake: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Strežnik je vrnil napako',
 	'coll-empty_collection' => 'Prazna knjiga',
 	'coll-revision' => 'Redakcija: $ 1',
 	'coll-save_collection_title' => 'Shranite in delite vaše knjige',
@@ -8495,13 +8511,15 @@ Ta stran ne bo delovala pravilno bren omogočenega JavaScripta.</strong>',
 	'coll-personal_collection_label' => 'Osebna knjiga:',
 	'coll-community_collection_label' => 'Skupna knjiga:',
 	'coll-save_collection' => 'Shrani knjigo',
-	'coll-save_category' => 'Vse knjige so shranjene v kategoriji [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]',
+	'coll-save_category' => 'Vse shranjene knjige so dodane k kategoriji [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]',
 	'coll-overwrite_title' => 'Stran obstaja.
 Jo prepišem?',
 	'coll-overwrite_text' => 'Stran z imenom [[:$1]] že obstaja. 
 Ali želite, da se nadomesti z vašo knjigo?',
 	'coll-yes' => 'Da',
 	'coll-no' => 'Ne',
+	'coll-load_overwrite_text' => 'Vaša knjiga že vsebuje nekaj strani.
+Ali želite prepisati vsebino vaše knjige, dodati vsebino ali prekiniti nalaganje te knjige.',
 	'coll-overwrite' => 'Prepiši',
 	'coll-append' => 'Pripni',
 	'coll-cancel' => 'Prekliči',
@@ -8519,6 +8537,8 @@ Ne morete dodati več strani.',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wiki-stran: $1)',
 	'coll-rendering_page' => '(stran: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informativno besedilo prevajalne strani',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informativno besedilo prevajalne zbirke',
 	'coll-rendering_finished_title' => 'Upodabljanje končano',
 	'coll-rendering_finished_text' => '<strong>Datoteka je bila ustvarjena. [$1 Prenesi datoteko]</strong> na vaš računalnik.
 
@@ -8526,6 +8546,11 @@ Opombe:
 * Niste zadovoljni z ustvarjeno datoteko? Glej [[{{MediaWiki:Coll-helppage}}|stran s pomočjo za razširitev Knjige]] za možnosti izboljšav.',
 	'coll-notfound_title' => 'Knjiga ni bila najdena',
 	'coll-notfound_text' => 'Stran v knjigi ni bila najdena.',
+	'coll-download_notfound_title' => 'Datoteka ni bila najdena',
+	'coll-download_notfound_text' => 'Datoteka, ki jo poskušate prenesti ne obstaja:
+Morda je bila izbrisana in jo je potrebno regenerirati.',
+	'coll-download_failed_title' => 'Napaka med prenosom',
+	'coll-download_failed_text' => 'Pri prenosu datoteke je prišlo do napake: $1',
 	'coll-is_cached' => '<ul><li>Najdena je bila shranjena različica tega dokumenta, zato upodabljanje ni bilo potrebno. <a href="$1">Vsili ponovno upodabljanje.</a></li></ul>',
 	'coll-excluded-templates' => '* Predloge v kategoriji [[:Category:$1|$1]], so bile izključene.',
 	'coll-blacklisted-templates' => '* Predloge na črnem seznamu [[:$1]], so bile izključene.',
@@ -8535,8 +8560,14 @@ Opombe:
 	'coll-order_from_pp' => 'Naroči knjigo od $1',
 	'coll-about_pp' => 'O $1',
 	'coll-invalid_podpartner_title' => 'Neveljaven partner TNZ',
+	'coll-invalid_podpartner_msg' => 'Izbran POD partner ni veljaven.
+Kontaktirajte vašega MediaWiki skrbnika.',
 	'coll-license' => 'Licenca',
 	'coll-return_to' => 'Nazaj na [[:$1]]',
+	'coll-more_info' => 'Prikaži več informacij',
+	'coll-hide_info' => 'Skrij informacije',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress podatki naročila',
+	'coll-suggest_title' => 'Predlagane strani za vašo knjigo',
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))

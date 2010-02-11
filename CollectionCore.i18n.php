@@ -2417,20 +2417,42 @@ $messages['sk'] = array(
 );
 
 /** Slovenian (Slovenščina)
+ * @author Freakolowsky
  * @author Smihael
  */
 $messages['sl'] = array(
+	'coll-print_export' => 'Tiskanje/izvoz',
 	'coll-create_a_book' => 'Ustvari e-knjigo',
+	'coll-create_a_book_tooltip' => 'Ustvari e-knjigo ali zbirko strani',
+	'coll-book_creator' => 'Ustvarjalec knjige',
 	'coll-download_as' => 'Prenesi kot $1',
-	'coll-add_category' => 'Dodaj kategorijo',
+	'coll-download_as_tooltip' => 'Prenesi $1 različico te wiki strani',
+	'coll-disable' => 'onemogoči',
+	'coll-book_creator_disable' => 'Onemogoči ustvarjalca knjige',
+	'coll-book_creator_disable_tooltip' => 'Prenehaj uporabljati izdelovalca knjige',
+	'coll-add_category' => 'Dodaj to kategorijo k vaši knjigi',
+	'coll-add_category_tooltip' => 'Dodaj vse wiki strani v tej kategoriji v vašo knjigo',
+	'coll-add_this_page' => 'Dodaj to stran v vašo knjigo',
+	'coll-add_page_tooltip' => 'Dodajte trenutno wiki stran v vašo knjigo',
 	'coll-bookscategory' => 'Knjige',
 	'coll-clear_collection' => 'Zbriši knjigo',
 	'coll-clear_collection_confirm' => 'Ali res želite popolnoma izbrisati vašo knjigo?',
+	'coll-clear_collection_tooltip' => 'Odstrani vse wiki strani iz vaše trenutne knjige',
+	'coll-help' => 'Pomoč',
+	'coll-help_tooltip' => 'Prikaži pomoč o ustvarjanju knjige',
 	'coll-helppage' => 'Help:Knjige',
 	'coll-load_collection' => 'Naloži knjige',
+	'coll-load_collection_tooltip' => 'Naloži to knjigo kot trenutno',
 	'coll-n_pages' => '$1 {{PLURAL:$1|stran|strani|strani|strani|strani}}',
 	'coll-printable_version_pdf' => 'Različica PDF',
+	'coll-remove_this_page' => 'Odstrani to stran iz vaše knjige',
+	'coll-remove_page_tooltip' => 'Odstranite trenutno wiki stran iz vaše knjige',
 	'coll-show_collection' => 'Prikaži knjige',
+	'coll-show_collection_tooltip' => 'Kliknite za urejanje/prenos/naročilo vaše knjige',
+	'coll-not_addable' => 'To stran ni mogoče dodati',
+	'coll-make_suggestions' => 'Predlagaj strani',
+	'coll-make_suggestions_tooltip' => 'Prikaži predloge glede na strani v vaši knjigi',
+	'coll-suggest_empty' => 'prazno',
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
