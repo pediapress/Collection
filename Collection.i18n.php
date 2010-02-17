@@ -1792,12 +1792,65 @@ Mae'r rhestr yn cael ei adnewyddu bob tro yr ydych yn pwyso ar y botymau ychwane
 
 /** Danish (Dansk)
  * @author Jon Harald Søby
+ * @author Thomas81
  */
 $messages['da'] = array(
+	'coll-desc' => '[[Special:Book|Skab bøger]]',
+	'coll-book_creator_intro' => '<big>Med bogværktøjslinien kan du oprette en bog, der indeholder valgfrie wiki-artikler. Du kan eksportere bogen i forskellige formater (fx PDF eller ODF) eller bestille et trykt eksemplar.</big>',
+	'coll-manage_your_book' => 'Administrer din bog',
+	'coll-start_book_creator' => 'Start bogværktøjslinien',
+	'coll-book_creator_continue' => 'Forsæt med at bruge bogværktøjslinien',
+	'coll-collection' => 'Bog',
+	'coll-collections' => 'Bøger',
+	'coll-exclusion_category_title' => 'Udeluk på tryk',
+	'coll-print_template_prefix' => 'Udskriv',
+	'coll-print_template_pattern' => '$1/udskriv',
+	'coll-unknown_subpage_title' => 'Ukendt underside',
+	'coll-couldnotaddarticle_title' => 'Kunne ikke tilføje wiki-artiklen',
+	'coll-noscript_text' => '<h1>JavaScript er påkrævet!</h1> 
+<strong>Din browser understøtter ikke JavaScript eller JavaScript er slået fra. 
+Denne side vil ikke virke korrekt, medmindre JavaScript er aktiveret.</strong>',
+	'coll-savedbook_template' => 'gemt_bog',
+	'coll-your_book' => 'Din bog',
+	'coll-download_title' => 'Download',
+	'coll-download_text' => 'For at downloade din bog skal du vælge et format og klikke på knappen.',
+	'coll-remove' => 'Fjern',
 	'coll-title' => 'Titel:',
+	'coll-subtitle' => 'Undertitel:',
+	'coll-contents' => 'Indhold',
+	'coll-drag_and_drop' => 'Brug drag & drop for at ændre rækkefølgen på wiki-artikler og kapitler',
+	'coll-sort_alphabetically' => 'Sorter alfabetisk',
+	'coll-empty_collection' => 'Tom bog',
+	'coll-save_collection_text' => 'Vælg en placering til din bog:',
+	'coll-save_collection' => 'Gem bog',
+	'coll-save_category' => 'Alle gemte bøger tilføjes til kategorien [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nej',
 	'coll-cancel' => 'Afbryd',
+	'coll-limit_exceeded_title' => 'Bogen er for stor',
+	'coll-limit_exceeded_text' => 'Din bog er for stor. 
+Der kan ikke tilføjes flere sider.',
+	'coll-rendering_title' => 'Genererer',
+	'coll-rendering_text' => '<p><strong>Vent venligst mens dokumentet bliver genereret.</strong></p>
+
+<p><strong>Status:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Denne side skulle opdatere sig selv automatisk med få sekunders mellemrum. Hvis dette ikke virker, så tryk venligst på opdater-knappen i din browser.</p>',
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
+	'coll-rendering_finished_title' => 'Generering færdig',
+	'coll-rendering_finished_text' => '<strong>Dit dokument er blevet genereret.</strong>
+<strong>[$1 Download filen]</strong> til din computer. 
+
+Note: 
+* Er du ikke tilfreds med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjælpesiden omkring bøger]] for eventuelle muligheder til at forbedre det.',
+	'coll-download_notfound_title' => 'Fil ikke fundet',
+	'coll-download_failed_title' => 'Fejl under download',
+	'coll-is_cached' => '<ul><li>En cachet version af dokumentet er blevet fundet, så en ny generering var unødvendig. 
+<a href="$1">Fremtving gen-generering.</a> </li></ul>',
+	'coll-excluded-templates' => '* Skabeloner i kategorien [[:Category:$1|$1]], er blevet udelukket.',
+	'coll-book_text' => 'Bestil en trykt udgave fra vores print-on-demand partner.',
+	'coll-license' => 'Licens',
+	'coll-suggest_your_book' => 'Din bog',
 );
 
 /** German (Deutsch)
@@ -8035,6 +8088,7 @@ $messages['roa-tara'] = array(
  * @author Kaganer
  * @author Lockal
  * @author MaxSem
+ * @author Putnik
  * @author Sergey kudryavtsev
  * @author Александр Сигачёв
  */
@@ -8061,7 +8115,7 @@ $messages['ru'] = array(
 	'coll-noscript_text' => '<h1>Требуется JavaScript!</h1>
 <strong>Ваш браузер не поддерживает JavaScript или данная поддержка была отключена.
 Эта страница не будет работать правильно, если JavaScript не включен.</strong>',
-	'coll-savedbook_template' => 'сохранённая_книга',
+	'coll-savedbook_template' => 'сохранённая книга',
 	'coll-your_book' => 'Ваша книга',
 	'coll-download_title' => 'Загрузить',
 	'coll-download_text' => 'Чтобы загрузить вашу книгу, выберите формат и нажмите кнопку.',
@@ -8074,7 +8128,7 @@ $messages['ru'] = array(
 	'coll-move_up' => 'Передвинуть выше',
 	'coll-move_down' => 'Передвинуть ниже',
 	'coll-move_to_bottom' => 'Передвинуть вниз',
-	'coll-title' => 'Название:',
+	'coll-title' => 'Заголовок:',
 	'coll-subtitle' => 'Подзаголовок:',
 	'coll-contents' => 'Содержание',
 	'coll-drag_and_drop' => 'Чтобы упорядочить вики-страницы и главы, перетаскивайте их мышкой',
@@ -8093,7 +8147,7 @@ $messages['ru'] = array(
 	'coll-empty_collection' => 'Пустая книга',
 	'coll-revision' => 'Версия: $1',
 	'coll-save_collection_title' => 'Сохранить книгу и открыть к ней доступ',
-	'coll-save_collection_text' => 'Выберите местоположение для Вашей книги:',
+	'coll-save_collection_text' => 'Выберите местоположение для вашей книги:',
 	'coll-login_to_save' => 'Чтобы сохранить книгу для дальнейшего использования, пожалуйста, [[Special:UserLogin|представьтесь системе или создайте учётную запись]].',
 	'coll-personal_collection_label' => 'Личная книга:',
 	'coll-community_collection_label' => 'Книга сообщества:',

@@ -525,14 +525,18 @@ $messages['cy'] = array(
 
 /** Danish (Dansk)
  * @author Byrial
+ * @author Thomas81
  */
 $messages['da'] = array(
 	'coll-print_export' => 'Udskriv/eksportér',
 	'coll-create_a_book' => 'Lav en bog',
 	'coll-create_a_book_tooltip' => 'Lav en bog eller samling af sider',
+	'coll-book_creator' => 'Bogværktøjslinien',
 	'coll-download_as' => 'Download som $1',
 	'coll-download_as_tooltip' => 'Download en $1-version af denne wikiside',
 	'coll-disable' => 'slå fra',
+	'coll-book_creator_disable' => 'Slå bogværktøjslinien fra',
+	'coll-book_creator_disable_tooltip' => 'Stop brugen af bogværktøjslinien',
 	'coll-add_category' => 'Tilføj denne kategori til din bog',
 	'coll-add_category_tooltip' => 'Tilføj alle wikisider i kategorien til din bog',
 	'coll-add_this_page' => 'Tilføj denne side til din bog',
@@ -546,12 +550,16 @@ $messages['da'] = array(
 	'coll-helppage' => 'Help:Bøger',
 	'coll-load_collection' => 'Hent bog',
 	'coll-load_collection_tooltip' => 'Hent denne bog som din nuværende bog',
-	'coll-n_pages' => '$1 {{PLURAL:$1|side|sider}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|artikel|artikler}}',
 	'coll-printable_version_pdf' => 'PDF-version',
 	'coll-remove_this_page' => 'Fjern denne side fra din bog',
 	'coll-remove_page_tooltip' => 'Fjern den nuværende wikiside fra din bog',
 	'coll-show_collection' => 'Vis bog',
 	'coll-show_collection_tooltip' => 'Klik for at redigere, downloade eller bestille din bog',
+	'coll-not_addable' => 'Denne artikel kan ikke tilføjes',
+	'coll-make_suggestions' => 'Foreslå artikler',
+	'coll-make_suggestions_tooltip' => 'Vis forslag baseret på artiklerne i din bog',
+	'coll-suggest_empty' => 'tom',
 );
 
 /** German (Deutsch)
@@ -2303,10 +2311,11 @@ $messages['roa-tara'] = array(
 /** Russian (Русский)
  * @author Ahonc
  * @author Ferrer
+ * @author Putnik
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
-	'coll-print_export' => 'Печать/Экспорт',
+	'coll-print_export' => 'Печать/экспорт',
 	'coll-create_a_book' => 'Создать книгу',
 	'coll-create_a_book_tooltip' => 'Создать книгу или коллекцию статей',
 	'coll-book_creator' => 'Создание книги',
