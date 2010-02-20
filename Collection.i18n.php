@@ -859,6 +859,7 @@ $messages['be-tarask'] = array(
 
 /** Bulgarian (Български)
  * @author DCLXVI
+ * @author Spiritia
  * @author Turin
  */
 $messages['bg'] = array(
@@ -918,7 +919,7 @@ $messages['bg'] = array(
 	'coll-no' => 'Не',
 	'coll-overwrite' => 'Заместване',
 	'coll-append' => 'Добавяне',
-	'coll-cancel' => 'Отказване',
+	'coll-cancel' => 'Отказ',
 	'coll-update' => 'Актуализиране',
 	'coll-limit_exceeded_title' => 'Книгата е прекалено голяма',
 	'coll-limit_exceeded_text' => 'Вашата книга е прекалено голяма.
@@ -1740,6 +1741,8 @@ Os nac ydy\'n ail-lwytho o ran ei hun, gwasgwch y botwm ail-lwytho ar eich porwr
 	'coll-rendering_status' => '<strong>Statws:</strong> $1',
 	'coll-rendering_article' => '(tudalen wici: $1)',
 	'coll-rendering_page' => '(tudalen: $1)',
+	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Wrthi'n cynhyrchu'r gwybodaeth am y dudalen",
+	'coll-rendering_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Wrthi'n cynhyrchu'r gwybodaeth am y casgliad",
 	'coll-rendering_finished_title' => 'Wedi gorffen cynhyrchu',
 	'coll-rendering_finished_text' => "<strong>Mae ffeil y ddogfen wedi cael ei gynhyrchu.</strong>
 <strong>[$1 Llwytho'r ffeil i lawr]</strong> i'ch cyfrifiadur.
@@ -10104,7 +10107,7 @@ Vuto che la vegna rinpiazà co la to colezion?',
 Vuto sorascrìvar el libro esistente, opure zontarghe el contenuto novo, opure anular el caricamento de sto libro?',
 	'coll-overwrite' => 'Sorascrivi',
 	'coll-append' => 'Zonta',
-	'coll-cancel' => 'Annulla',
+	'coll-cancel' => 'Anùla',
 	'coll-update' => 'Ajorna',
 	'coll-limit_exceeded_title' => 'Libro massa grando',
 	'coll-limit_exceeded_text' => 'El to libro el xe massa grando. No se pode zontarghe altre pàxene.',
