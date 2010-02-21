@@ -5920,6 +5920,7 @@ Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh
 	'coll-rendering_status' => '<strong>Statut :</strong> $1',
 	'coll-rendering_article' => '(Wiki Säit: $1)',
 	'coll-rendering_page' => '(Säit: $1)',
+	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Informatiounstext iwwert d'Verschaffe vu Säiten",
 	'coll-rendering_finished_title' => 'Fäerdeg gemaach',
 	'coll-rendering_finished_text' => "<strong>De Fichier gouf generéiert.</strong>
 <strong>[$1 Luet de Fichier]</strong> op Äre Computer.
