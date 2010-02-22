@@ -111,7 +111,6 @@ $wgExtensionCredits['specialpage'][] = array(
 	'version' => $wgCollectionVersion,
 	'author' => array( 'PediaPress GmbH', 'Siebrand Mazeland' ),
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Collection',
-	'description' => 'Create books',
 	'descriptionmsg' => 'coll-desc',
 );
 
