@@ -4526,6 +4526,8 @@ Ha ez nem történik meg, kérlek nyomd meg a böngésződ frissítés gombját!
 	'coll-rendering_status' => '<strong>Állapot:</strong> $1',
 	'coll-rendering_article' => '(lap: $1)',
 	'coll-rendering_page' => '(oldal: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Lap információinak renderelése',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Gyűjtemény információinak renderelése',
 	'coll-rendering_finished_title' => 'A renderelés befejeződött',
 	'coll-rendering_finished_text' => '<strong>A dokumentum ekészült.</strong>
 <strong>[$1 Fájl letöltése]</strong> a számítógépedre.
@@ -5381,6 +5383,7 @@ Mangga hubungi pangurus MediaWiki panjenengan.',
  * @author გიორგიმელა
  */
 $messages['ka'] = array(
+	'coll-desc' => '[[Special:Book|წიგნის შექმნა]]',
 	'coll-collection' => 'წიგნი',
 	'coll-collections' => 'წიგნები',
 	'coll-print_template_prefix' => 'დაბეჭვდა',
