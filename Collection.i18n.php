@@ -4734,12 +4734,12 @@ Iste pagina non functionara correctemente si JavaScript non es activate.</strong
 	'coll-error_reponse' => 'Responsa de error ab servitor',
 	'coll-empty_collection' => 'Libro vacue',
 	'coll-revision' => 'Version: $1',
-	'coll-save_collection_title' => 'Immagazinar tu libro pro uso in commun',
+	'coll-save_collection_title' => 'Salveguardar e condivider tu libro',
 	'coll-save_collection_text' => 'Selige un location:',
-	'coll-login_to_save' => 'Si tu vole immagazinar libros pro uso futur, per favor [[Special:UserLogin|aperi un session o crea un conto]].',
+	'coll-login_to_save' => 'Si tu vole salveguardar libros pro uso futur, per favor [[Special:UserLogin|aperi un session o crea un conto]].',
 	'coll-personal_collection_label' => 'Libro personal:',
 	'coll-community_collection_label' => 'Libro communitari:',
-	'coll-save_collection' => 'Immagazinar libro',
+	'coll-save_collection' => 'Salveguardar libro',
 	'coll-save_category' => 'Tote le libros immagazinate es addite al categoria [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Le pagina existe ja.
 Superscriber lo?',
@@ -4812,8 +4812,8 @@ Le lista es actualisate cata vice que tu clicca super le buttones "adder" o "rem
 	'coll-suggest_article_remove' => 'Le pagina <strong>$1</strong> ha essite removite de tu libro ($2).',
 	'coll-suggest_undo_tooltip' => 'Disfacer iste action',
 	'coll-suggest_undo' => 'disfacer',
-	'right-collectionsaveasuserpage' => 'Immagazinar libros como pagina de usator',
-	'right-collectionsaveascommunitypage' => 'Immagazinar libros como pagina de communitate',
+	'right-collectionsaveasuserpage' => 'Salveguardar libros como pagina de usator',
+	'right-collectionsaveascommunitypage' => 'Salveguardar libros como pagina de communitate',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -7711,7 +7711,7 @@ $messages['pt'] = array(
 	'coll-exclusion_category_title' => 'Excluir ao imprimir',
 	'coll-print_template_prefix' => 'Imprime',
 	'coll-print_template_pattern' => '$1/Imprimir',
-	'coll-unknown_subpage_title' => 'Sub-página desconhecida',
+	'coll-unknown_subpage_title' => 'Subpágina desconhecida',
 	'coll-unknown_subpage_text' => 'Não existe esta sub-página do [[Special:Book|Livro]]',
 	'coll-couldnotaddarticle_title' => 'Não foi possível adicionar a página wiki',
 	'coll-couldnotaddarticle_msg' => 'A página wiki não pode ser adicionada.',
