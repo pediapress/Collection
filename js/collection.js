@@ -145,7 +145,7 @@ function update_save_button() {
 	if (!jQuery('#saveButton').length) {
 		return;
 	}
-	if (jQuery('#emptyCollection').length) {
+	if (jQuery('#collectionList .article').length == 0) {
 		jQuery('#saveButton').attr('disabled', 'disabled');
 		return;
 	}
@@ -181,7 +181,7 @@ function refresh_list(xhr) {
 	jQuery('#collectionListContainer').html(xhr.responseText);
 	jQuery('.makeVisible').css('display', 'inline');
 	make_sortable();
-	if (jQuery('#emptyCollection').length) {
+	if (jQuery('#collectionList .article').length == 0) {
 		jQuery('#downloadButton').attr('disabled', 'disabled');
 		jQuery('input.order').attr('disabled', 'disabled');
 	} else {
