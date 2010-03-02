@@ -105,4 +105,32 @@ class CollectionSession {
 		}
 		return -1;
 	}
+
+	static function purge() {
+		$coll = $_SESSION['wsCollection'];
+		$newitems = array();
+		foreach ( $coll['items'] as $index => $item ) {
+			if ( $item['type'] == 'article' ) {
+				$t = Title::newFromText( $item['title'] );
+				$a = new Article( $t );
+				if ( $a->exists() ) {
+					$newitems[] = $item;
+				}
+			} else {
+				$newitems[] = $item;
+			}
+		}
+		$coll['items'] = $newitems;
+		$_SESSION['wsCollection'] = $coll;
+	}
+
+	static function getCollection() {
+		self::purge();
+		return $_SESSION['wsCollection'];
+	}
+
+	static function setCollection($collection) {
+		$_SESSION['wsCollection'] = $collection;
+		self::touchSession();
+	}
 }
