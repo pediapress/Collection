@@ -799,8 +799,7 @@ EOS
 			return;
 		}
 
-		$article = new Article( $title );
-		if ( !$article->exists() ) {
+		if ( !$title->exists() ) {
 			$wgOut->showErrorPage( 'coll-notfound_title', 'coll-notfound_msg' );
 			return false;
 		}

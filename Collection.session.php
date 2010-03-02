@@ -112,8 +112,7 @@ class CollectionSession {
 		foreach ( $coll['items'] as $index => $item ) {
 			if ( $item['type'] == 'article' ) {
 				$t = Title::newFromText( $item['title'] );
-				$a = new Article( $t );
-				if ( $a->exists() ) {
+				if ( $t->exists() ) {
 					$newitems[] = $item;
 				}
 			} else {
