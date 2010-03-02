@@ -185,7 +185,7 @@ class SpecialCollection extends SpecialPage {
 					$collection = $this->loadCollection( $title, $wgRequest->getVal( 'append' ) );
 					if ( $collection ) {
 						CollectionSession::startSession();
-						$_SESSION['wsCollection'] = $collection;
+						CollectionSession::setCollection( $collection );
 						CollectionSession::enable();
 						$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 					}
@@ -240,7 +240,7 @@ class SpecialCollection extends SpecialPage {
 				return;
 			case 'render':
 				return $this->renderCollection(
-					$_SESSION['wsCollection'],
+					CollectionSession::getCollection(),
 					Title::newFromText( $wgContLang->specialPage( 'Book' ) ),
 					$wgRequest->getVal( 'writer', '' )
 				);
@@ -273,7 +273,7 @@ class SpecialCollection extends SpecialPage {
 				return;
 			case 'post_zip':
 				$partner = $wgRequest->getVal( 'partner', 'pediapress' );
-				$this->postZIP( $_SESSION['wsCollection'], $partner );
+				$this->postZIP( CollectionSession::getCollection(), $partner );
 				return;
 			case 'suggest':
 				$add = $wgRequest->getVal( 'add' );
@@ -515,7 +515,7 @@ EOS
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/collection.js?$wgCollectionStyleVersion\"></script>" );
 
 		$template = new CollectionPageTemplate();
-		$template->set( 'collection', $_SESSION['wsCollection'] );
+		$template->set( 'collection', CollectionSession::getCollection() );
 		$template->set( 'podpartners', $this->mPODPartners );
 		$template->set( 'formats', $wgCollectionFormats);
 		$prefixes = self::getBookPagePrefixes();
@@ -525,11 +525,10 @@ EOS
 	}
 
 	static function setTitles( $title, $subtitle ) {
-		$collection = $_SESSION['wsCollection'];
+		$collection = CollectionSession::getCollection();
 		$collection['title'] = $title;
 		$collection['subtitle'] = $subtitle;
-		$_SESSION['wsCollection'] = $collection;
-		CollectionSession::touchSession();
+		CollectionSession::setCollection( $collection );
 	}
 
 	static function title_cmp($a, $b) {
@@ -537,7 +536,7 @@ EOS
 	}
 
 	static function sortItems() {
-		$collection = $_SESSION['wsCollection'];
+		$collection = CollectionSession::getCollection();
 		$articles = array();
 		$new_items = array();
 		foreach ( $collection['items'] as $item ) {
@@ -551,31 +550,28 @@ EOS
 		}
 		usort( $articles, array( __CLASS__, 'title_cmp' ) );
 		$collection['items'] = array_merge( $new_items, $articles );
-		$_SESSION['wsCollection'] = $collection;
-		CollectionSession::touchSession();
+		CollectionSession::setCollection( $collection );
 	}
 
 	static function addChapter( $name ) {
-		$collection = $_SESSION['wsCollection'];
+		$collection = CollectionSession::getCollection();
 		array_unshift( $collection['items'], array(
 			'type' => 'chapter',
 			'title' => $name,
 		) );
-		$_SESSION['wsCollection'] = $collection;
-		CollectionSession::touchSession();
+		CollectionSession::setCollection( $collection );
 	}
 
 	static function renameChapter( $index, $name ) {
 		if (!is_int( $index ) ) {
 			return;
 		}
-		$collection = $_SESSION['wsCollection'];
+		$collection = CollectionSession::getCollection();
 		if ( $collection['items'][$index]['type'] != 'chapter' ) {
 			return;
 		}
 		$collection['items'][$index]['title'] = $name;
-		$_SESSION['wsCollection'] = $collection;
-		CollectionSession::touchSession();
+		CollectionSession::setCollection( $collection );
 	}
 
 	static function addArticleFromName( $namespace, $name, $oldid=0 ) {
@@ -601,7 +597,7 @@ EOS
 		if ( !CollectionSession::hasSession() ) {
 			CollectionSession::startSession();
 		}
-		$collection = $_SESSION['wsCollection'];
+		$collection = CollectionSession::getCollection();
 		$revision = Revision::newFromTitle( $title, $oldid );
 		$collection['items'][] = array(
 			'type' => 'article',
@@ -613,8 +609,7 @@ EOS
 			'url' => $title->getFullURL(),
 			'currentVersion' => $currentVersion,
 		);
-		$_SESSION['wsCollection'] = $collection;
-		CollectionSession::touchSession();
+		CollectionSession::setCollection( $collection );
 		return true;
 	}
 
@@ -627,13 +622,12 @@ EOS
 		if ( !CollectionSession::hasSession() ) {
 			return false;
 		}
-		$collection = $_SESSION['wsCollection'];
+		$collection = CollectionSession::getCollection();
 		$index = CollectionSession::findArticle( $title->getPrefixedText(), $oldid );
 		if ( $index != -1 ) {
 			array_splice( $collection['items'], $index, 1 );
 		}
-		$_SESSION['wsCollection'] = $collection;
-		CollectionSession::touchSession();
+		CollectionSession::setCollection( $collection );
 		return true;
 	}
 
@@ -697,10 +691,9 @@ EOS
 		if ( !CollectionSession::hasSession() ) {
 			return false;
 		}
-		$collection = $_SESSION['wsCollection'];
+		$collection = CollectionSession::getCollection();
 		array_splice( $collection['items'], $index, 1 );
-		$_SESSION['wsCollection'] = $collection;
-		CollectionSession::touchSession();
+		CollectionSession::setCollection( $collection );
 		return true;
 	}
 
@@ -708,12 +701,11 @@ EOS
 		if ( !CollectionSession::hasSession() ) {
 			return false;
 		}
-		$collection = $_SESSION['wsCollection'];
+		$collection = CollectionSession::getCollection();
 		$saved = $collection['items'][$index + $delta];
 		$collection['items'][$index + $delta] = $collection['items'][$index];
 		$collection['items'][$index] = $saved;
-		$_SESSION['wsCollection'] = $collection;
-		CollectionSession::touchSession();
+		CollectionSession::setCollection( $collection );
 		return true;
 	}
 
@@ -721,15 +713,14 @@ EOS
 		if ( !CollectionSession::hasSession() ) {
 			return;
 		}
-		$collection = $_SESSION['wsCollection'];
+		$collection = CollectionSession::getCollection();
 		$old_items = $collection['items'];
 		$new_items = array();
 		foreach ($items as $new_index => $old_index) {
 			$new_items[$new_index] = $old_items[$old_index];
 		}
 		$collection['items'] = $new_items;
-		$_SESSION['wsCollection'] = $collection;
-		CollectionSession::touchSession();
+		CollectionSession::setCollection( $collection );
 	}
 
 	function parseCollectionLine( &$collection, $line, $append ) {
@@ -821,7 +812,7 @@ EOS
 			);
 			$items = array();
 		} else {
-			$collection = $_SESSION['wsCollection'];
+			$collection = CollectionSession::getCollection();
 			$items = $collection['items'];
 		}
 
@@ -843,7 +834,7 @@ EOS
 			return false;
 		}
 		$articleText = "{{" . wfMsgForContent( 'coll-savedbook_template' ) . "}}\n\n";
-		$collection = $_SESSION['wsCollection'];
+		$collection = CollectionSession::getCollection();
 		if( $collection['title'] ) {
 			$articleText .= '== ' . $collection['title'] . " ==\n";
 		}
