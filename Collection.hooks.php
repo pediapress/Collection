@@ -240,6 +240,7 @@ class CollectionHooks {
 		global $wgCollectionStyleVersion;
 		global $wgCollectionVersion;
 		global $wgJsMimeType;
+		global $wgOut;
 		global $wgScriptPath;
 		global $wgTitle;
 		global $wgUser;
@@ -259,7 +260,20 @@ class CollectionHooks {
 				$oldid = 0;
 			} 
 		}
+
 		$html = '';
+
+		if ( false && method_exists( $wgOut, 'includeJQuery' ) ) {
+			$wgOut->includeJQuery();
+		} else {
+			$html .= Xml::element( 'script',
+				array(
+					'type' => $wgJsMimeType,
+					'src' => "$jsPath/jquery.js?$wgCollectionStyleVersion",
+				),
+				'', false
+			);
+		}
 
 		$html .= Xml::element( 'script', 
 			array(
@@ -267,6 +281,20 @@ class CollectionHooks {
 				'src' => "$jsPath/bookcreator.js?$wgCollectionStyleVersion",
 			),
 			'', false
+		);
+		$html .= Xml::element( 'style',
+			array( 'type' => 'text/css' ),
+			<<<EOS
+#collectionpopup {
+	position: absolute;
+	padding: 4px;
+	border: 1px solid #000;
+	background-color: #fea;
+	z-index: 9999;
+	display: inline;
+}
+EOS
+			, false
 		);
 		
 		$addRemoveState = $mode;

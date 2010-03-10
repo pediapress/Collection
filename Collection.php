@@ -279,6 +279,24 @@ function wfAjaxCollectionClear() {
 
 $wgAjaxExportList[] = 'wfAjaxCollectionClear';
 
+function wfAjaxCollectionGetPopupData( $title ) {
+	wfLoadExtensionMessages( 'CollectionCore' );
+	$json = new Services_JSON();
+	$result = array();
+	if ( CollectionSession::findArticle( $title ) == -1 ) {
+		$result['action'] = 'add';
+		$result['text'] = wfMsg( 'coll-add_linked_article', $title );
+	} else {
+		$result['action'] = 'remove';
+		$result['text'] = wfMsg( 'coll-remove_linked_article', $title );
+	}
+	$r = new AjaxResponse( $json->encode( $result ) );
+	$r->setContentType( 'application/json' );
+	return $r;
+}
+
+$wgAjaxExportList[] = 'wfAjaxCollectionGetPopupData';
+
 /**
  * Backend of several following SAJAX function handlers...
  * @param String $action provided by the specific handlers internally
