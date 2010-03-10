@@ -50,6 +50,8 @@ var visible = false;
 var show_soon_timeout = null;
 var get_data_xhr = null;
 var script_url = wgServer + ((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
+var current_link = null;
+var title = null;
 
 function createDiv() {
 	addremove_link = $('<a href="javascript:void(0)" />');
@@ -74,7 +76,9 @@ function show(link) {
 	if (visible) {
 		return;
 	}
-	var title = link.attr('title');
+	current_link = link;
+	title = link.attr('title');
+	link.attr('title', ''); // disable default browser tooltip
 	show_soon_timeout = setTimeout(function() {
 		get_data_xhr = $.post(script_url, {
 			'action': 'ajax',
@@ -113,6 +117,9 @@ function hide() {
 	}
 	visible = false;
 	popup_div.hide();
+	if (current_link && title) {
+		current_link.attr('title', title);
+	}
 }
 
 function is_inside(x, y, left, top, width, height) {
