@@ -292,6 +292,7 @@ class CollectionHooks {
 	background-color: #fea;
 	z-index: 9999;
 	display: inline;
+	font-size: 10pt;
 }
 EOS
 			, false
