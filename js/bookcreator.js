@@ -84,6 +84,7 @@ function show(link) {
 			visible = true;
 			addremove_link
 				.text(result.text)
+				.prepend('<img src="' + result.img + '" alt="">&nbsp;')
 				.unbind('click')
 				.click(function(e) { addremove_article(result.action, title); });
 			popup_div

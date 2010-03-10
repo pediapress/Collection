@@ -280,15 +280,20 @@ function wfAjaxCollectionClear() {
 $wgAjaxExportList[] = 'wfAjaxCollectionClear';
 
 function wfAjaxCollectionGetPopupData( $title ) {
+	global $wgScriptPath;
+
 	wfLoadExtensionMessages( 'CollectionCore' );
 	$json = new Services_JSON();
 	$result = array();
+	$imagePath = "$wgScriptPath/extensions/Collection/images";
 	if ( CollectionSession::findArticle( $title ) == -1 ) {
 		$result['action'] = 'add';
-		$result['text'] = wfMsg( 'coll-add_linked_article', $title );
+		$result['text'] = wfMsg( 'coll-add_linked_article' );
+		$result['img'] = "$imagePath/silk-add.png";
 	} else {
 		$result['action'] = 'remove';
-		$result['text'] = wfMsg( 'coll-remove_linked_article', $title );
+		$result['text'] = wfMsg( 'coll-remove_linked_article' );
+		$result['img'] = "$imagePath/silk-remove.png";
 	}
 	$r = new AjaxResponse( $json->encode( $result ) );
 	$r->setContentType( 'application/json' );
