@@ -21,6 +21,11 @@
 
 (function() {
 
+var $ = window.$;
+if (typeof $ == 'undefined') {
+	$ = jQuery;
+}
+
 function refreshBookCreatorBox(hint, oldid) {
   sajax_request_type = 'GET';
   sajax_do_call('wfAjaxCollectionGetBookCreatorBoxContent', [hint, oldid], function(xhr) {
