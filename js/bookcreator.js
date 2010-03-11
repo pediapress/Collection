@@ -105,7 +105,10 @@ function show(link) {
 	}, 300);
 }
 
-function cancel_asyncs() {
+function cancel() {
+	if (current_link && title) {
+		current_link.attr('title', title);
+	}
 	if (show_soon_timeout) {
 		clearTimeout(show_soon_timeout);
 		show_soon_timeout = null;
@@ -117,15 +120,12 @@ function cancel_asyncs() {
 }
 
 function hide() {
-	cancel_asyncs();
+	cancel();
 	if (!visible) {
 		return;
 	}
 	visible = false;
 	popup_div.hide();
-	if (current_link && title) {
-		current_link.attr('title', title);
-	}
 }
 
 function is_inside(x, y, left, top, width, height) {
@@ -173,7 +173,7 @@ $(function() {
 		if ($this.parents('.nopopups').length) {
 			return;
 		}
-		$this.hover(function() { show($this); }, cancel_asyncs);
+		$this.hover(function() { show($this); }, cancel);
 	});
 });
 
