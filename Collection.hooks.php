@@ -263,7 +263,7 @@ class CollectionHooks {
 
 		$html = '';
 
-		if ( false && method_exists( $wgOut, 'includeJQuery' ) ) {
+		if ( method_exists( $wgOut, 'includeJQuery' ) ) {
 			$wgOut->includeJQuery();
 		} else {
 			$html .= Xml::element( 'script',
