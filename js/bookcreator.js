@@ -86,9 +86,10 @@ function show(link) {
 			'rsargs[]': [title]
 		}, function(result) {
 			visible = true;
+			var img = $('<img />').attr({src: result.img, alt: ''});
 			addremove_link
-				.text(result.text)
-				.prepend('<img src="' + result.img + '" alt="">&nbsp;')
+				.text('\u00a0' + result.text)
+				.prepend(img)
 				.unbind('click')
 				.click(function(e) { addremove_article(result.action, title); });
 			popup_div
