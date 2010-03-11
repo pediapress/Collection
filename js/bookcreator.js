@@ -157,7 +157,6 @@ $(function() {
 		+ 'a[href^=' + prefix + ']' // URL starts with prefix of wgArticlePath
 		+ ':not(a[href~=index.php])' // URL doesn't contain index.php (simplification!)
 		+ '[title!=]' // title attribute is not empty
-		+ ':not([title~=:])' // title doesn't contain a ':' (simplification!)
 		+ '[rel!=nofollow]'
 		+ ':not(.external)'
 		+ ':not(.sortheader)'
@@ -168,6 +167,9 @@ $(function() {
 			return;
 		}
 		var $this = $(this);
+		if ($this.attr('title').indexOf(':') != -1) { // title doesn't contain ":" (simplification!)
+			return;
+		}
 		if ($this.parents('.nopopups').length) {
 			return;
 		}
