@@ -19,12 +19,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-(function() {
-
-var $ = window.$;
-if (typeof $ == 'undefined') {
-	$ = jQuery;
-}
+(function($) {
 
 function refreshBookCreatorBox(hint, oldid) {
   sajax_request_type = 'GET';
@@ -177,4 +172,4 @@ $(function() {
 	});
 });
 
-})();
+})(jQuery);
