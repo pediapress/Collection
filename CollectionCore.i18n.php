@@ -464,6 +464,8 @@ $messages['cs'] = array(
 	'coll-disable' => 'vypnout',
 	'coll-book_creator_disable' => 'Vypnout editor knih',
 	'coll-book_creator_disable_tooltip' => 'Přestane s používáním editoru knih',
+	'coll-add_linked_article' => 'Přidat odkazovanou stránku wiki do knihy',
+	'coll-remove_linked_article' => 'Odebrat odkazovanou stránku wiki z knihy',
 	'coll-add_category' => 'Přidat tuto kategorii do vaší knihy',
 	'coll-add_category_tooltip' => 'Přidá všechny stránky wiki v této kategorii do vaší knihy',
 	'coll-add_this_page' => 'Přidat tuto stránku do vaší knihy',
@@ -1912,6 +1914,7 @@ $messages['nds-nl'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author McDutchie
  * @author Siebrand
  * @author Tvdm
  */
@@ -1925,6 +1928,8 @@ $messages['nl'] = array(
 	'coll-disable' => 'uitschakelen',
 	'coll-book_creator_disable' => 'Boekenmaker uitschakelen',
 	'coll-book_creator_disable_tooltip' => 'Boekenmaker niet meer gebruiken',
+	'coll-add_linked_article' => 'De gekoppelde wikipagina aan uw boek toevoegen',
+	'coll-remove_linked_article' => 'De gekoppelde wikipagina uit uw boek verwijderen',
 	'coll-add_category' => 'Deze categorie aan uw boek toevoegen',
 	'coll-add_category_tooltip' => "Alle pagina's in deze categorie aan uw boek toevoegen",
 	'coll-add_this_page' => 'Deze pagina aan uw boek toevoegen',
