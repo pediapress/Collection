@@ -1130,8 +1130,8 @@ Ne'z aio ket plaen ar bajenn-mañ en-dro e-keit ha ma ne vo ket gweredekaet Java
 	'coll-savedbook_template' => 'levr enrollet',
 	'coll-your_book' => 'Ho levr',
 	'coll-download_title' => 'Pellgargañ',
-	'coll-download_text' => 'A-benn pellgargañ ho levr, dibabit ur furmad ha klikit war ar bouton.',
-	'coll-download_as_text' => 'A-benn pellgargañ ur stumm eus o levr er furmad $1, klikit war ar bouton.',
+	'coll-download_text' => 'Evit pellgargañ ho levr, dibabit ur furmad ha klikit war ar bouton.',
+	'coll-download_as_text' => 'Evit pellgargañ ho levr er furmad $1, klikit war ar bouton.',
 	'coll-download' => 'Pellgargañ',
 	'coll-format_label' => 'Furmad :',
 	'coll-remove' => 'Lemel kuit',
@@ -1164,7 +1164,7 @@ Ne'z aio ket plaen ar bajenn-mañ en-dro e-keit ha ma ne vo ket gweredekaet Java
 	'coll-personal_collection_label' => 'Levr personel',
 	'coll-community_collection_label' => 'Levr eus ar gumuniezh',
 	'coll-save_collection' => 'Enrollañ al levr',
-	'coll-save_category' => 'Enrollet eo an holl levrioù er rummad [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Emañ renket an holl levrioù enrollet er rummad [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => "Bez'ez eus eus ar bajenn c'hoazh.
 Skrivañ war-c'horre ?",
 	'coll-overwrite_text' => "Ur bajenn dezhi an anv [[:$1]] zo dija.
