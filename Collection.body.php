@@ -736,7 +736,7 @@ EOS
 			);
 		} elseif ( substr( $line, 0, 1 ) == ':' ) { // article
 			$articleTitle = trim( substr( $line, 1 ) );
-			if ( preg_match( '/\[\[:?(.*?)(\|(.*?))?\]\]/', $articleTitle, $match ) ) {
+			if ( preg_match( '/^\[\[:?(.*?)(\|(.*?))?\]\]$/', $articleTitle, $match ) ) {
 				$articleTitle = $match[1];
 				if ( isset( $match[3] ) ) {
 					$displayTitle = $match[3];
@@ -745,7 +745,7 @@ EOS
 				}
 				$oldid = -1;
 				$currentVersion = 1;
-			} elseif ( preg_match( '/\[\{\{fullurl:(.*?)\|oldid=(.*?)\}\}\s+(.*?)\]/', $articleTitle, $match ) ) {
+			} elseif ( preg_match( '/^\[\{\{fullurl:(.*?)\|oldid=(.*?)\}\}\s+(.*?)\]$/', $articleTitle, $match ) ) {
 				$articleTitle = $match[1];
 				if ( isset( $match[3] ) ) {
 					$displayTitle = $match[3];
@@ -754,6 +754,8 @@ EOS
 				}
 				$oldid = $match[2];
 				$currentVersion = 0;
+			} else {
+				return null;
 			}
 
 			$articleTitle = Title::newFromText( $articleTitle );
@@ -794,6 +796,7 @@ EOS
 
 	function loadCollection( $title, $append=false ) {
 		global $wgOut;
+
 		if ( is_null( $title ) ) {
 			$wgOut->showErrorPage( 'coll-notitle_title', 'coll-notitle_msg' );
 			return;
@@ -814,6 +817,8 @@ EOS
 			$collection = CollectionSession::getCollection();
 			$items = $collection['items'];
 		}
+
+		$article = new Article( $title );
 
 		foreach( preg_split( '/[\r\n]+/', $article->getContent() ) as $line ) {
 			$item = $this->parseCollectionLine( $collection, $line, $append );
