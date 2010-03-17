@@ -9799,7 +9799,7 @@ JavaScript devreye sokulmadıkça bu sayfa doğru çalışmayacaktır.</strong>'
 	'coll-rename' => 'Yeniden adlandır',
 	'coll-new_chapter' => 'Yeni bölüm için isim girin',
 	'coll-rename_chapter' => 'Bölüm için yeni isim girin',
-	'coll-no_such_category' => 'Böyle bir kategori bululnmamaktadır',
+	'coll-no_such_category' => 'Böyle bir kategori bulunmamaktadır',
 	'coll-notitle_title' => 'Sayfanın başlığı belirlenemiyor.',
 	'coll-post_failed_title' => 'POST isteği başarısız',
 	'coll-post_failed_msg' => '$1 için POST isteği başarısız ($2).',

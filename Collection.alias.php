@@ -158,7 +158,7 @@ $aliases['ko'] = array(
 	'Book' => array( '책', '모음' ),
 );
 
-/** Ripoarisch (Ripoarisch) */
+/** Colognian (Ripoarisch) */
 $aliases['ksh'] = array(
 	'Book' => array( 'Booch sammelle', 'Sammlong', 'Sigge sammelle' ),
 );
