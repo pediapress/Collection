@@ -2012,6 +2012,8 @@ Sollte dies nicht geschehen, drücke bitte den „Aktualisieren“-Knopf (meist 
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(Wikiseite: $1)',
 	'coll-rendering_page' => '(Seite: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informationen über das Rendern von Seiten',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informationen über das Rendern von Sammlungen',
 	'coll-rendering_finished_title' => 'Fertig erstellt',
 	'coll-rendering_finished_text' => '<strong>Die Datei wurde erfolgreich erstellt.</strong>
 <strong>[$1 Dokument herunterladen]</strong>.
