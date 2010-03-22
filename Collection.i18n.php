@@ -7340,6 +7340,8 @@ $messages['pdc'] = array(
 	'coll-print_template_prefix' => 'Drucke',
 	'coll-print_template_pattern' => '$1/Druck',
 	'coll-your_book' => 'Dei Buch',
+	'coll-download_title' => 'Runnerlaade',
+	'coll-download' => 'Runnerlaade',
 	'coll-remove' => 'Lösche',
 	'coll-show' => 'Zeige',
 	'coll-rename' => 'Naame ennere',
@@ -7719,12 +7721,12 @@ $messages['pt'] = array(
 	'coll-unknown_subpage_title' => 'Subpágina desconhecida',
 	'coll-unknown_subpage_text' => 'Não existe esta sub-página do [[Special:Book|Livro]]',
 	'coll-couldnotaddarticle_title' => 'Não foi possível adicionar a página wiki',
-	'coll-couldnotaddarticle_msg' => 'A página wiki não pode ser adicionada.',
+	'coll-couldnotaddarticle_msg' => 'A página wiki não pôde ser adicionada.',
 	'coll-couldnotremovearticle_title' => 'Não foi possível remover a página wiki',
 	'coll-couldnotremovearticle_msg' => 'A página wiki não pôde ser removida.',
 	'coll-noscript_text' => '<h1>É necessário o JavaScript!</h1>
-<strong>O seu navegador não suporta JavaScript ou o JavaScript foi desactivado.
-Esta página não funcionará correctamente, se não activar o JavaScript.</strong>',
+<strong>Ou o seu navegador não suporta JavaScript ou o JavaScript foi desactivado.
+Esta página não funcionará correctamente sem o JavaScript.</strong>',
 	'coll-savedbook_template' => 'livro_gravado',
 	'coll-your_book' => 'O seu livro',
 	'coll-download_title' => 'Descarregar',
@@ -7764,7 +7766,7 @@ Esta página não funcionará correctamente, se não activar o JavaScript.</stro
 	'coll-save_collection' => 'Gravar livro',
 	'coll-save_category' => 'Todos os livros gravados são adicionados à categoria [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'A página existe. Escrever por cima?',
-	'coll-overwrite_text' => 'Um página com o nome [[:$1]] já existe.
+	'coll-overwrite_text' => 'Uma página com o nome [[:$1]] já existe.
 Deseja substituí-la com o seu livro?',
 	'coll-yes' => 'Sim',
 	'coll-no' => 'Não',
@@ -7795,7 +7797,7 @@ Se não o fizer, por favor use o botão "actualizar" ("refresh") do seu navegado
 
 Notas:
 * Não está satisfeito com o resultado? Consulte [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para conhecer as possibilidades de aprimoramento.',
-	'coll-notfound_title' => 'Livro não encontrado',
+	'coll-notfound_title' => 'Livro não foi encontrado',
 	'coll-notfound_text' => 'Não foi possível encontrar a página do livro.',
 	'coll-download_notfound_title' => 'Ficheiro não encontrado',
 	'coll-download_notfound_text' => 'O ficheiro que está a tentar descarregar não existe:
@@ -7815,8 +7817,8 @@ Talvez tenha sido apagado e precise de ser regenerado.',
 Por favor, contacte o seu administrador MediaWiki.',
 	'coll-license' => 'Licença',
 	'coll-return_to' => 'Voltar para [[:$1]]',
-	'coll-more_info' => 'Mostrar mais informações',
-	'coll-hide_info' => 'Ocultar informações',
+	'coll-more_info' => 'Mostrar mais informação',
+	'coll-hide_info' => 'Ocultar informação',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informação sobre encomendas PediaPress',
 	'coll-suggest_title' => 'Páginas sugeridas para o seu livro',
 	'coll-suggest_intro_text' => 'As sugestões são baseadas no conjunto actual de páginas wiki no seu livro.
