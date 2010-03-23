@@ -389,6 +389,7 @@ $messages['bs'] = array(
 	'coll-book_creator_disable' => 'Onemogući pravljenje knjiga',
 	'coll-book_creator_disable_tooltip' => 'Prestani koristiti pravljenje knjiga',
 	'coll-add_linked_article' => 'Dodaj povezanu wiki stranicu u vašu knjigu',
+	'coll-remove_linked_article' => 'Ukloni povezanu wiki stranicu iz Vaše knjige',
 	'coll-add_category' => 'Dodaj ovu kategoriju u Vašu knjigu',
 	'coll-add_category_tooltip' => 'Dodaj sve wiki članke iz ove kategorije u Vašu knjigu',
 	'coll-add_this_page' => 'Dodajte ovu stranicu u Vašu knjigu',
