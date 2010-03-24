@@ -8577,6 +8577,7 @@ Zoznam sa aktualizuje vždy po kliknutí na tlačidlo Pridať alebo Odstrániť.
 );
 
 /** Slovenian (Slovenščina)
+ * @author Dbc334
  * @author Freakolowsky
  * @author Smihael
  */
@@ -8627,8 +8628,8 @@ Ta stran ne bo delovala pravilno bren omogočenega JavaScripta.</strong>',
 	'coll-rename_chapter' => 'Vnesite novo ime za poglavje',
 	'coll-no_such_category' => 'Ne obstaja nobena taka kategorija',
 	'coll-notitle_title' => 'Naslov strani ni bi bilo mogoče določiti.',
-	'coll-post_failed_title' => 'POST zahteva ni uspela',
-	'coll-post_failed_msg' => 'POST zahteva za $1 ni uspela ($2).',
+	'coll-post_failed_title' => 'Zahteva POST ni uspela',
+	'coll-post_failed_msg' => 'Zahteva POST za $1 ni uspela ($2).',
 	'coll-mwserve_failed_title' => 'Napaka na prevajalnem strežniku',
 	'coll-mwserve_failed_msg' => 'Na prevajalnem strežniku je prišlo do napake: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Strežnik je vrnil napako',
@@ -8691,12 +8692,20 @@ Morda je bila izbrisana in jo je potrebno regenerirati.',
 	'coll-invalid_podpartner_title' => 'Neveljaven partner TNZ',
 	'coll-invalid_podpartner_msg' => 'Izbran POD partner ni veljaven.
 Kontaktirajte vašega MediaWiki skrbnika.',
-	'coll-license' => 'Licenca',
+	'coll-license' => 'Dovoljenje',
 	'coll-return_to' => 'Nazaj na [[:$1]]',
 	'coll-more_info' => 'Prikaži več informacij',
 	'coll-hide_info' => 'Skrij informacije',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress podatki naročila',
 	'coll-suggest_title' => 'Predlagane strani za vašo knjigo',
+	'coll-suggested_articles' => 'Predlogi',
+	'coll-suggest_reset_bans' => 'ponastavi',
+	'coll-suggest_reset_bans_tooltip' => 'Prikaži prejšnje odstranjene predloge',
+	'coll-suggest_add_selected' => 'Dodaj izbrane strani',
+	'coll-suggest_your_book' => 'Vaša knjiga',
+	'coll-suggest_show' => 'prikaži',
+	'coll-suggest_undo_tooltip' => 'Razveljavi to dejanje',
+	'coll-suggest_undo' => 'razveljavi',
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
