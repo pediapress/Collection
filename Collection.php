@@ -93,6 +93,12 @@ $wgCollectionFormats = array(
 	'rl' => 'PDF',
 );
 
+
+$wgCollectionContentTypeToFilename = array(
+	'application/pdf' => 'collection.pdf',
+	'application/vnd.oasis.opendocument.text' => 'collection.odt',
+);
+
 $wgCollectionPortletFormats = array( 'rl' );
 
 $wgCollectionPortletForLoggedInUsersOnly = false;
