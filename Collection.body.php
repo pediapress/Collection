@@ -1116,33 +1116,23 @@ EOS
 	function download() {
 		global $wgOut;
 		global $wgRequest;
+		global $wgCollectionContentTypeToFilename;
 
 		$tempfile = tmpfile();
-		$headers = self::mwServeCommand( 'download', array(
+		$info = self::mwServeCommand( 'download', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 			'writer' => $wgRequest->getVal( 'writer' ),
 		), $timeout=false, $toFile=$tempfile );
-		if ( !$headers ) {
+		if ( !$info ) {
 			$wgOut->showErrorPage( 'coll-download_notfound_title', 'coll-download_notfound_text' );
 			return;
 		}
-		if ( isset( $headers['error'] ) ) {
-			$wgOut->showErrorPage(
-				'coll-download_failed_title',
-				'coll-download_failed_text',
-				array( $headers['error'] )
-			);
-			return;
-		}
 		wfResetOutputBuffers();
-		if ( isset( $headers['content-type'] ) ) {
-			header( 'Content-Type: ' . $headers['content-type']);
-		}
-		if ( isset( $headers['content-disposition'] ) ) {
-			header( 'Content-Disposition: ' . $headers['content-disposition']);
-		}
-		if ( isset( $headers['content-length'] ) ) {
-			header( 'Content-Length: ' . $headers['content-length']);
+		$ct = $info['content_type'];
+		header( 'Content-Type: ' . $ct );
+		header( 'Content-Length: ' . $info['download_content_length'] );
+		if ( isset( $wgCollectionContentTypeToFilename[$ct] ) ) {
+			header( 'Content-Disposition: inline; filename=' . $wgCollectionContentTypeToFilename[$ct] );
 		}
 		fseek( $tempfile, 0 );
 		fpassthru( $tempfile );
@@ -1235,11 +1225,16 @@ EOS
 			$args['login_credentials'] = $wgCollectionMWServeCredentials;
 		}
 		$errorMessage = '';
-		$headers = array();
-		$response = self::post( $wgCollectionMWServeURL, $args, $errorMessage, $headers, $timeout, $toFile );
+		if ( $command == 'download' ) {
+			$method = 'GET';
+		} else {
+			$method = 'POST';
+		}
+		$info = false;
+		$response = self::curlreq( $method, $wgCollectionMWServeURL, $args, $errorMessage, $info, $timeout, $toFile );
 		if ( $toFile ) {
-			if ( $headers ) {
-				return $headers;
+			if ( $info ) {
+				return $info;
 			} else {
 				return array( 'error' => $errorMessage );
 			}
@@ -1278,12 +1273,15 @@ EOS
 		return $json_response;
 	}
 
-	static function post( $url, $postFields, &$errorMessage, &$headers,
+	static function curlreq( $method, $url, $postFields, &$errorMessage, &$info,
 		$timeout=true, $toFile=null ) {
 		global $wgHTTPTimeout, $wgHTTPProxy, $wgTitle, $wgVersion;
 		global $wgCollectionMWServeCert;
 		global $wgCollectionVersion;
 
+		if ( $method == 'GET') {
+			$url = wfAppendQuery( $url, $postFields );
+		}
 		$c = curl_init( $url );
 		curl_setopt($c, CURLOPT_PROXY, $wgHTTPProxy);
 		$userAgent = wfGetAgent();
@@ -1292,9 +1290,14 @@ EOS
 		}
 		$userAgent .= " (via MediaWiki/$wgVersion, Collection/$wgCollectionVersion)";
 		curl_setopt( $c, CURLOPT_USERAGENT, $userAgent);
-		curl_setopt( $c, CURLOPT_POST, true );
-		curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
+		if ( $method == 'POST' ) {
+			curl_setopt( $c, CURLOPT_POST, true );
+			curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
+		} else {
+			curl_setopt( $c, CURLOPT_FOLLOWLOCATION, true );
+		}
 		curl_setopt( $c, CURLOPT_HTTPHEADER, array( 'Expect:' ) );
+		curl_setopt( $c, CURLOPT_HEADER, false );
 		if ( is_object( $wgTitle ) ) {
 			curl_setopt( $c, CURLOPT_REFERER, $wgTitle->getFullURL() );
 		}
@@ -1309,33 +1312,20 @@ EOS
 			curl_setopt ($c, CURLOPT_CAINFO, $wgCollectionMWServeCert);
 		}
 
-		$headerStream = tmpfile();
-		curl_setopt( $c, CURLOPT_WRITEHEADER, $headerStream );
 		if ( $toFile ) {
 			curl_setopt( $c, CURLOPT_FILE, $toFile );
 		} else {
 			curl_setopt( $c, CURLOPT_RETURNTRANSFER, true );
 		}
-
 		$result = curl_exec( $c );
+		$text = false;
+		$info = false;
 		if ( curl_errno( $c ) != CURLE_OK ) {
-			$text = false;
 			$errorMessage = curl_error( $c );
-			$headers = false;
 		} elseif ( curl_getinfo( $c, CURLINFO_HTTP_CODE ) != 200 ) {
-			$text = false;
 			$errorMessage = 'HTTP status ' . curl_getinfo( $c, CURLINFO_HTTP_CODE );
-			$headers = false;
 		} else {
-			$headerSize = curl_getinfo( $c, CURLINFO_HEADER_SIZE );
-			fseek( $headerStream, 0 );
-			$headerLines = explode( "\n", fread( $headerStream, $headerSize ) );
-			foreach( $headerLines as $line ) {
-				if ( preg_match( "/^(.+?):\s+(.+)$/", trim( $line ), $matches ) ) {
-					$headers[ strtolower( $matches[1] ) ] = $matches[2];
-				}
-				unset( $matches );
-			}
+			$info = curl_getinfo( $c );
 			if ( !$toFile ) {
 				$text = $result;
 			}
