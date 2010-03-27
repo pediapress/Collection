@@ -762,6 +762,8 @@ $messages['eo'] = array(
 	'coll-disable' => 'malŝalti',
 	'coll-book_creator_disable' => 'Malŝalti libran kreilon',
 	'coll-book_creator_disable_tooltip' => 'Halti uzante la libran kreilon',
+	'coll-add_linked_article' => 'Aldoni ligitan vikipaĝon al via libro',
+	'coll-remove_linked_article' => 'Forigi ligitan vikipaĝon de via libro',
 	'coll-add_category' => 'Aldoni ĉi tiun kategorion al via libro',
 	'coll-add_category_tooltip' => 'Aldoni ĉiujn vikiajn paĝojn en ĉi tiu kategorio al via libro',
 	'coll-add_this_page' => 'Aldoni ĉi tiun paĝon al via libro',
@@ -2577,6 +2579,7 @@ $messages['su'] = array(
 );
 
 /** Swedish (Svenska)
+ * @author Ainali
  * @author Boivie
  * @author GameOn
  * @author M.M.S.
@@ -2596,6 +2599,8 @@ $messages['sv'] = array(
 	'coll-disable' => 'slå av',
 	'coll-book_creator_disable' => 'Avaktiviera bokskapare',
 	'coll-book_creator_disable_tooltip' => 'Sluta använda bokskapare',
+	'coll-add_linked_article' => 'Lägg till den länkade wiki-sidan till din bok',
+	'coll-remove_linked_article' => 'Ta bort den länkade wiki-sidan från din bok',
 	'coll-add_category' => 'Lägg till den här kategorin i boken',
 	'coll-add_category_tooltip' => 'Lägg till alla wikisidor i den här kategorin till din bok',
 	'coll-add_this_page' => 'Lägg till den här sidan i boken',
@@ -2787,7 +2792,7 @@ $messages['tr'] = array(
 	'coll-clear_collection_tooltip' => 'Mevcut kitabınızdaki tüm viki sayfalarını silin',
 	'coll-help' => 'Yardım',
 	'coll-help_tooltip' => 'Kitap oluşturma hakkında yardım göster',
-	'coll-helppage' => 'Yardım:Kitaplar',
+	'coll-helppage' => 'Help:Kitaplar',
 	'coll-load_collection' => 'Kitabı yükle',
 	'coll-load_collection_tooltip' => 'Bu kitabı varsayılan kitabınız olarak yükleyin',
 	'coll-n_pages' => '$1 {{PLURAL:$1|sayfa|sayfa}}',
