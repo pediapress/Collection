@@ -6590,6 +6590,7 @@ Mungkin ia telah dipadam dan perlu dijanakan semula.',
 	'coll-more_info' => 'Tunjuk lebih maklumat',
 	'coll-hide_info' => 'Sorok maklumat',
 	'coll-order_info_article' => 'Maklumat pesanan {{MediaWiki:Coll-helppage}}/PediaPress',
+	'coll-suggest_show' => 'Papar',
 	'right-collectionsaveasuserpage' => 'Simpan buku-buku sebagai laman pengguna',
 	'right-collectionsaveascommunitypage' => 'Simpan buku-buku sebagai laman masyarakat',
 );
