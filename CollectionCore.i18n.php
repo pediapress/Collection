@@ -1290,6 +1290,8 @@ $messages['hu'] = array(
 	'coll-disable' => 'letiltás',
 	'coll-book_creator_disable' => 'Könyvkészítő letiltása',
 	'coll-book_creator_disable_tooltip' => 'Könyvkészítő használatának befejezése',
+	'coll-add_linked_article' => 'Hivatkozott wiki lap hozzáadása a könyvedhez',
+	'coll-remove_linked_article' => 'Hivatkozott wiki lap eltávolítása a könyvedből',
 	'coll-add_category' => 'Kategória hozzáadása a könyvedhez',
 	'coll-add_category_tooltip' => 'Ezen kategória összes lapjának hozzáadása a könyvhöz',
 	'coll-add_this_page' => 'Lap hozzáadása a könyvedhez',
@@ -2356,6 +2358,7 @@ $messages['roa-tara'] = array(
 /** Russian (Русский)
  * @author Ahonc
  * @author Ferrer
+ * @author Kaganer
  * @author Putnik
  * @author Александр Сигачёв
  */
@@ -2364,8 +2367,8 @@ $messages['ru'] = array(
 	'coll-create_a_book' => 'Создать книгу',
 	'coll-create_a_book_tooltip' => 'Создать книгу или коллекцию статей',
 	'coll-book_creator' => 'Создание книги',
-	'coll-download_as' => 'Загрузить как $1',
-	'coll-download_as_tooltip' => 'Загрузить $1 версию этой вики-страницы',
+	'coll-download_as' => 'Скачать как $1',
+	'coll-download_as_tooltip' => 'Скачать $1-версию этой вики-страницы',
 	'coll-disable' => 'выключить',
 	'coll-book_creator_disable' => 'Отключить книжного мастера',
 	'coll-book_creator_disable_tooltip' => 'Прекратите использование книжного мастера',
