@@ -8158,6 +8158,7 @@ $messages['roa-tara'] = array(
 /** Russian (Русский)
  * @author Ahonc
  * @author Aleksandrit
+ * @author Amikeco
  * @author EugeneZelenko
  * @author Ferrer
  * @author Innv
@@ -8193,9 +8194,9 @@ $messages['ru'] = array(
 Эта страница не будет работать правильно, если JavaScript не включен.</strong>',
 	'coll-savedbook_template' => 'сохранённая книга',
 	'coll-your_book' => 'Ваша книга',
-	'coll-download_title' => 'Загрузить',
-	'coll-download_text' => 'Чтобы загрузить вашу книгу, выберите формат и нажмите кнопку.',
-	'coll-download_as_text' => 'Нажмите кнопку, чтобы загрузить вашу книгу в формате $1.',
+	'coll-download_title' => 'Скачать',
+	'coll-download_text' => 'Чтобы скачать свою книгу, выберите формат и нажмите кнопку.',
+	'coll-download_as_text' => 'Нажмите кнопку, чтобы скачать свою книгу в формате $1.',
 	'coll-download' => 'Загрузить',
 	'coll-format_label' => 'Формат:',
 	'coll-remove' => 'Удалить',
@@ -8224,7 +8225,7 @@ $messages['ru'] = array(
 	'coll-revision' => 'Версия: $1',
 	'coll-save_collection_title' => 'Сохранить книгу и открыть к ней доступ',
 	'coll-save_collection_text' => 'Выберите местоположение для вашей книги:',
-	'coll-login_to_save' => 'Чтобы сохранить книгу для дальнейшего использования, пожалуйста, [[Special:UserLogin|представьтесь системе или создайте учётную запись]].',
+	'coll-login_to_save' => 'Чтобы сохранить книгу для дальнейшего использования, пожалуйста, [[Special:UserLogin|авторизуйтесь или создайте учётную запись]].',
 	'coll-personal_collection_label' => 'Личная книга:',
 	'coll-community_collection_label' => 'Книга сообщества:',
 	'coll-save_collection' => 'Сохранить книгу',
@@ -8244,12 +8245,12 @@ $messages['ru'] = array(
 	'coll-limit_exceeded_text' => 'Книга имеет слишком большой размер.
 В неё больше нельзя добавлять страницы.',
 	'coll-rendering_title' => 'Создание',
-	'coll-rendering_text' => '<p><strong>Пожалуйста, подождите, идёт создание документа.</strong></p>
+	'coll-rendering_text' => '<p><strong>Пожалуйста, подождите — идёт создание документа.</strong></p>
 
 <p><strong>Ход работы:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
 
 <p>Эта страница должна обновляться раз в несколько секунд.
-Если этого не происходит, пожалуйста, нажмите кнопку «обновить» браузера.</p>',
+Если этого не происходит, нажмите кнопку «обновить» браузера.</p>',
 	'coll-rendering_status' => '<strong>Статус:</strong> $1',
 	'coll-rendering_article' => '(статья: $1)',
 	'coll-rendering_page' => '(страница: $1)',
@@ -8257,7 +8258,7 @@ $messages['ru'] = array(
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Отображение информации о коллекции',
 	'coll-rendering_finished_title' => 'Создание завершено',
 	'coll-rendering_finished_text' => '<strong>Файл документа создан.</strong>
-<strong>[$1 Загрузить файл]</strong> на свой компьютер.
+<strong>[$1 Скачать файл]</strong> на свой компьютер.
 
 Замечание:
 * Не удовлетворены результатом? Возможности его улучшения описаны на [[{{MediaWiki:Coll-helppage}}|справочной странице о книгах]].',
@@ -8265,8 +8266,8 @@ $messages['ru'] = array(
 	'coll-notfound_text' => 'Невозможно найти страницу книги.',
 	'coll-download_notfound_title' => 'Файл не найден',
 	'coll-download_notfound_text' => 'Файла, который вы пытаетесь загрузить, не существует. Может быть, он был удален, и его необходимо воссоздать.',
-	'coll-download_failed_title' => 'Ошибка в процессе загрузки',
-	'coll-download_failed_text' => 'Обнаружена ошибка при загрузке файла: $1',
+	'coll-download_failed_title' => 'Ошибка в процессе скачивания',
+	'coll-download_failed_text' => 'Обнаружена ошибка при скачивании файла: $1',
 	'coll-is_cached' => '<ul><li>Найдена закэшированная версия этого документа, отрисовка не потребовалась. <a href="$1">Всё-таки запустить отрисовку.</a></li></ul>',
 	'coll-excluded-templates' => '* Шаблоны из категории [[:Category:$1|$1]] были исключены.',
 	'coll-blacklisted-templates' => '* Шаблоны из чёрного списка [[:$1]] были исключены.',
