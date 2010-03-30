@@ -2407,10 +2407,10 @@ $messages['ee'] = array(
  */
 $messages['el'] = array(
 	'coll-desc' => '[[Special:Book|Δημιουργία βιβλίων]]',
-	'coll-book_creator_intro' => "<big>Με τη ''λειτουργία βιβλίου'' μπορείτε να δημιουργήσετε ένα βιβλίο που αποτελείται από αυθαίρετες βικισελίδες. Μπορείτε να εξάγετε το βιβλίο σας σε διαφορετικές μορφοποιήσεις (για παράδειγμα PDF ή ODF) ή να παραγγείλετε ένα εκτυπωμένο αντίγραφο.</big>",
+	'coll-book_creator_intro' => "<big>Με τη ''λειτουργία βιβλίου'' μπορείτε να δημιουργήσετε ένα βιβλίο που αποτελείται από βικισελίδες της επιλογής σας. Μπορείτε να εξάγετε το βιβλίο σε διαφορετικές μορφές (για παράδειγμα PDF ή ODF) ή να παραγγείλετε ένα εκτυπωμένο αντίγραφο.</big>",
 	'coll-manage_your_book' => 'Διαχείριση του βιβλίου σας',
 	'coll-book_creator_help' => 'Δείτε [[{{MediaWiki:Coll-helppage}}|τη σελίδα βοήθειας για τα βιβλία]] για περισσότερες πληροφορίες.',
-	'coll-start_book_creator' => 'Έναρξη κατάστασης βιβλίου',
+	'coll-start_book_creator' => 'Έναρξη δημιουργίας βιβλίου',
 	'coll-book_creator_continue' => 'Συνέχιση χρήσης του δημιουργού βιβλίων',
 	'coll-book_creator_disable_text' => "Ο ''δημιουργός βιβλίων'' θα απενεργοποιηθεί και το βιβλίο πάνω στο οποίο δουλεύετε θα αφαιρεθεί.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Κείμενο κατάστασης βιβλίου',
@@ -2491,6 +2491,8 @@ $messages['el'] = array(
 	'coll-rendering_status' => '<strong>Πρόοδος:</strong> $1',
 	'coll-rendering_article' => '(σελίδα wiki: $1)',
 	'coll-rendering_page' => '(σελίδα: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Μορφοποίηση κειμένου πληροφοριών σελίδας',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Μορφοποίηση κειμένου πληροφοριών συλλογής',
 	'coll-rendering_finished_title' => 'Η μορφοποίηση ολοκληρώθηκε',
 	'coll-rendering_finished_text' => '<strong>Το αρχείο εγγράφου έχει δημιουργηθεί.</strong>
 <strong>[$1 Κατεβάστε το αρχείο]</strong> στον υπολογιστή σας.
@@ -2524,10 +2526,15 @@ $messages['el'] = array(
 Η λίστα θα ανανεώνεται κάθε φορά που θα κάνετε κλικ στα κουμπιά προσθήκης και αφαίρεσης.',
 	'coll-suggested_articles' => 'Υποδείξεις',
 	'coll-suggest_reset_bans' => 'ρύθμιση ξανά',
+	'coll-suggest_reset_bans_tooltip' => 'Εμφάνιση προτάσεων που έχουν αφαιρεθεί προηγουμένως',
 	'coll-suggest_add_selected' => 'Προσθήκη επιλεγμένων σελίδων',
 	'coll-suggest_ban_selected' => 'Αφαίρεση επιλεγμένων σελίδων',
 	'coll-suggest_your_book' => 'Το βιβλίο σας',
 	'coll-suggest_show' => 'προβολή',
+	'coll-suggest_ban_tooltip' => 'Αφαιρέστε αυτή τη σελίδα από τον κατάλογο των προτάσεων',
+	'coll-suggest_article_ban' => 'Η σελίδα <strong>$1</strong> έχει αφαιρεθεί από τις προτάσεις ($2).',
+	'coll-suggest_article_add' => 'Η σελίδα <strong>$1</strong> έχει προστεθεί στο βιβλίο σας ($2).',
+	'coll-suggest_article_remove' => 'Η σελίδα <strong>$1</strong> έχει αφαιρεθεί από το βιβλίο σας ($2).',
 	'coll-suggest_undo_tooltip' => 'Αναίρεση αυτής της ενέργειας',
 	'coll-suggest_undo' => 'αναίρεση',
 	'right-collectionsaveasuserpage' => 'Αποθήκευση βιβλίων ως σελίδας χρήστη',
