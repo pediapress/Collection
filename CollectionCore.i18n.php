@@ -2134,6 +2134,8 @@ $messages['pl'] = array(
 	'coll-disable' => 'wyłącz',
 	'coll-book_creator_disable' => 'Wyłącz tworzenie książek',
 	'coll-book_creator_disable_tooltip' => 'Wyłącz kreatora tworzenia książki',
+	'coll-add_linked_article' => 'Dodaj linkowaną stronę wiki do mojej książki',
+	'coll-remove_linked_article' => 'Usuń linkowaną stronę wiki z mojej książki',
 	'coll-add_category' => 'Dodaj tę kategorię do książki',
 	'coll-add_category_tooltip' => 'Dodaj wszystkie strony wiki znajdujące się w tej kategorii do książki',
 	'coll-add_this_page' => 'Dodaj tę stronę do książki',
@@ -2478,6 +2480,7 @@ $messages['sk'] = array(
 );
 
 /** Slovenian (Slovenščina)
+ * @author Dbc334
  * @author Freakolowsky
  * @author Smihael
  */
@@ -2491,10 +2494,10 @@ $messages['sl'] = array(
 	'coll-disable' => 'onemogoči',
 	'coll-book_creator_disable' => 'Onemogoči ustvarjalca knjige',
 	'coll-book_creator_disable_tooltip' => 'Prenehaj uporabljati izdelovalca knjige',
-	'coll-add_category' => 'Dodaj to kategorijo k vaši knjigi',
-	'coll-add_category_tooltip' => 'Dodaj vse wiki strani v tej kategoriji v vašo knjigo',
-	'coll-add_this_page' => 'Dodaj to stran v vašo knjigo',
-	'coll-add_page_tooltip' => 'Dodajte trenutno wiki stran v vašo knjigo',
+	'coll-add_category' => 'Dodajte to kategorijo k svoji knjigi',
+	'coll-add_category_tooltip' => 'Dodajte vse wiki strani v tej kategoriji v svojo knjigo',
+	'coll-add_this_page' => 'Dodajte to stran v svojo knjigo',
+	'coll-add_page_tooltip' => 'Dodajte trenutno wiki stran v svojo knjigo',
 	'coll-bookscategory' => 'Knjige',
 	'coll-clear_collection' => 'Zbriši knjigo',
 	'coll-clear_collection_confirm' => 'Ali res želite popolnoma izbrisati vašo knjigo?',
