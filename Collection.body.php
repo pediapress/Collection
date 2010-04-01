@@ -1280,7 +1280,7 @@ EOS
 		global $wgCollectionVersion;
 
 		if ( $method == 'GET') {
-			$url = wfAppendQuery( $url, $postFields );
+			$url = wfAppendQuery( $url, wfArrayToCGI( $postFields ) );
 		}
 		$c = curl_init( $url );
 		curl_setopt($c, CURLOPT_PROXY, $wgHTTPProxy);
