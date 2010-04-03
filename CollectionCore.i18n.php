@@ -1494,6 +1494,7 @@ $messages['it'] = array(
  * @author Fryed-peach
  * @author JtFuruhata
  * @author Marine-Blue
+ * @author Naohiro19
  */
 $messages['ja'] = array(
 	'coll-print_export' => '印刷/エクスポート',
@@ -1505,6 +1506,7 @@ $messages['ja'] = array(
 	'coll-disable' => '無効化',
 	'coll-book_creator_disable' => 'ブッククリエーターを無効化',
 	'coll-book_creator_disable_tooltip' => 'ブッククリエーターを使うのを止める',
+	'coll-remove_linked_article' => 'あなたの本からウィキページのリンクを削除',
 	'coll-add_category' => 'このカテゴリを自分のブックに追加する',
 	'coll-add_category_tooltip' => 'このカテゴリ中のすべてのページをあなたのブックに追加する',
 	'coll-add_this_page' => 'このページを自分のブックに追加する',
