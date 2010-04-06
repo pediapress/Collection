@@ -1119,20 +1119,35 @@ EOS
 		global $wgCollectionContentTypeToFilename;
 
 		$tempfile = tmpfile();
-		$info = self::mwServeCommand( 'download', array(
+		$r = self::mwServeCommand( 'render_status', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 			'writer' => $wgRequest->getVal( 'writer' ),
-		), $timeout=false, $toFile=$tempfile );
+		) );
+		$errorMessage = '';
+		$info = false;
+		if ( isset( $r['url'] ) ) {
+			self::curlreq( 'GET', $r['url'], array(), $errorMessage, $info, $timeout=false, $toFile=$tempfile );
+			$content_type = $r['content_type'];
+			$content_length = $r['content_length'];
+			$content_disposition = $r['content_disposition'];
+		} else {
+			$info = self::mwServeCommand( 'download', array(
+				'collection_id' => $wgRequest->getVal( 'collection_id' ),
+				'writer' => $wgRequest->getVal( 'writer' ),
+			), $timeout=false, $toFile=$tempfile );
+			$content_type = $info['content_type'];
+			$content_length = $info['download_content_length'];
+			$content_disposition = null;
+		}
 		if ( !$info ) {
 			$wgOut->showErrorPage( 'coll-download_notfound_title', 'coll-download_notfound_text' );
 			return;
 		}
 		wfResetOutputBuffers();
-		$ct = $info['content_type'];
-		header( 'Content-Type: ' . $ct );
-		header( 'Content-Length: ' . $info['download_content_length'] );
-		if ( isset( $wgCollectionContentTypeToFilename[$ct] ) ) {
-			header( 'Content-Disposition: inline; filename=' . $wgCollectionContentTypeToFilename[$ct] );
+		header( 'Content-Type: ' . $content_type );
+		header( 'Content-Length: ' . $content_length);
+		if ( $content_disposition ) {
+			header( 'Content-Disposition: ' . $content_disposition );
 		}
 		fseek( $tempfile, 0 );
 		fpassthru( $tempfile );
@@ -1225,13 +1240,8 @@ EOS
 			$args['login_credentials'] = $wgCollectionMWServeCredentials;
 		}
 		$errorMessage = '';
-		if ( $command == 'download' ) {
-			$method = 'GET';
-		} else {
-			$method = 'POST';
-		}
 		$info = false;
-		$response = self::curlreq( $method, $wgCollectionMWServeURL, $args, $errorMessage, $info, $timeout, $toFile );
+		$response = self::curlreq( 'POST', $wgCollectionMWServeURL, $args, $errorMessage, $info, $timeout, $toFile );
 		if ( $toFile ) {
 			if ( $info ) {
 				return $info;
@@ -1293,8 +1303,6 @@ EOS
 		if ( $method == 'POST' ) {
 			curl_setopt( $c, CURLOPT_POST, true );
 			curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
-		} else {
-			curl_setopt( $c, CURLOPT_FOLLOWLOCATION, true );
 		}
 		curl_setopt( $c, CURLOPT_HTTPHEADER, array( 'Expect:' ) );
 		curl_setopt( $c, CURLOPT_HEADER, false );
