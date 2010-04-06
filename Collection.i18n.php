@@ -7735,7 +7735,7 @@ $messages['pt'] = array(
 	'coll-couldnotremovearticle_title' => 'Não foi possível remover a página wiki',
 	'coll-couldnotremovearticle_msg' => 'A página wiki não pôde ser removida.',
 	'coll-noscript_text' => '<h1>É necessário o JavaScript!</h1>
-<strong>Ou o seu navegador não suporta JavaScript ou o JavaScript foi desactivado.
+<strong>Ou o seu browser não suporta JavaScript ou o JavaScript foi desactivado.
 Esta página não funcionará correctamente sem o JavaScript.</strong>',
 	'coll-savedbook_template' => 'livro_gravado',
 	'coll-your_book' => 'O seu livro',
@@ -7795,7 +7795,7 @@ Não podem ser adicionadas mais páginas.',
 <p><strong>Progresso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
 <p>Esta página deverá actualizar-se automaticamente com frequência.
-Se não o fizer, por favor use o botão "actualizar" ("refresh") do seu navegador.</p>',
+Se não o fizer, por favor use o botão "actualizar" ("refresh") do seu browser.</p>',
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(página wiki: $1)',
 	'coll-rendering_page' => '(página: $1)',
