@@ -349,6 +349,8 @@ $messages['br'] = array(
 	'coll-disable' => 'diweredekaat',
 	'coll-book_creator_disable' => 'Diweredekaat ar saver levrioù',
 	'coll-book_creator_disable_tooltip' => "Paouez d'ober gant ar saver levrioù",
+	'coll-add_linked_article' => 'Ouzhpennañ ar bajenn wiki liammet gant ho levr',
+	'coll-remove_linked_article' => "Tennañ ar bajenn wiki liammet d'ho levr",
 	'coll-add_category' => "Ouzhpennañ ar rummad-mañ d'ho levr",
 	'coll-add_category_tooltip' => "Ouzhpennañ an holl pajennoù wiki er rummad-mañ d'ho levr",
 	'coll-add_this_page' => "Ouzhpennañ ar bajenn-mañ d'ho levr",
@@ -1449,6 +1451,7 @@ $messages['is'] = array(
 );
 
 /** Italian (Italiano)
+ * @author Beta16
  * @author BrokenArrow
  * @author Darth Kule
  * @author Melos
@@ -1464,6 +1467,8 @@ $messages['it'] = array(
 	'coll-disable' => 'disattiva',
 	'coll-book_creator_disable' => 'Disattiva il creatore di libri',
 	'coll-book_creator_disable_tooltip' => 'Smetti di usare il creatore di libri',
+	'coll-add_linked_article' => 'Aggiungi le pagine collegate a questa al tuo libro.',
+	'coll-remove_linked_article' => 'Rimuovi le pagine collegate a questa dal tuo libro.',
 	'coll-add_category' => 'Aggiungi questa categoria al tuo libro',
 	'coll-add_category_tooltip' => 'Aggiungi tutte le pagine wiki di questa categoria al tuo libro',
 	'coll-add_this_page' => 'Aggiungi questa pagina al tuo libro',
@@ -1479,7 +1484,7 @@ $messages['it'] = array(
 	'coll-load_collection_tooltip' => 'Carica questo libro come libro corrente',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pagina|pagine}}',
 	'coll-printable_version_pdf' => 'Versione PDF',
-	'coll-remove_this_page' => 'Rimuovi questa pagina del tuo libro',
+	'coll-remove_this_page' => 'Rimuovi questa pagina dal tuo libro',
 	'coll-remove_page_tooltip' => 'Rimuovi la pagina wiki corrente dal tuo libro',
 	'coll-show_collection' => 'Mostra libro',
 	'coll-show_collection_tooltip' => 'Fai clic per modificare, scaricare o ordinare il tuo libro',
@@ -1506,6 +1511,7 @@ $messages['ja'] = array(
 	'coll-disable' => '無効化',
 	'coll-book_creator_disable' => 'ブッククリエーターを無効化',
 	'coll-book_creator_disable_tooltip' => 'ブッククリエーターを使うのを止める',
+	'coll-add_linked_article' => 'リンクされているウィキページをブックに追加する',
 	'coll-remove_linked_article' => 'あなたの本からウィキページのリンクを削除',
 	'coll-add_category' => 'このカテゴリを自分のブックに追加する',
 	'coll-add_category_tooltip' => 'このカテゴリ中のすべてのページをあなたのブックに追加する',

@@ -5240,6 +5240,8 @@ $messages['ja'] = array(
 	'coll-rendering_status' => '<strong>状況:</strong> $1',
 	'coll-rendering_article' => '(ウィキページ: $1)',
 	'coll-rendering_page' => '(ページ: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/ページ情報文を生成中',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/コレクション情報文を生成中',
 	'coll-rendering_finished_title' => 'レンダリング完了',
 	'coll-rendering_finished_text' => '<strong>ドキュメントファイルは生成されました。</strong>
 あなたのコンピュータに<strong>[$1 ファイルをダウンロード]</strong>してください。
