@@ -1148,6 +1148,12 @@ EOS
 		header( 'Content-Length: ' . $content_length);
 		if ( $content_disposition ) {
 			header( 'Content-Disposition: ' . $content_disposition );
+		} else {
+			$ct_enc = split( ';', $content_type );
+			$ct = $ct_enc[0];
+			if ( isset( $wgCollectionContentTypeToFilename[$ct] ) ) {
+				header( 'Content-Disposition: ' . 'inline; filename=' . $wgCollectionContentTypeToFilename[$ct] );
+			}
 		}
 		fseek( $tempfile, 0 );
 		fpassthru( $tempfile );
