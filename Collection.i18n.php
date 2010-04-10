@@ -1484,7 +1484,7 @@ Notes:
 	'coll-download_notfound_title' => "No s'ha trobat el fitxer",
 	'coll-download_notfound_text' => 'El fitxer que intenteu descarregar no existeix: Potser ha estat esborrat i cal que sigui regenerat.',
 	'coll-download_failed_title' => 'Error durant la baixada',
-	'coll-download_failed_text' => "S'ha produït un error en descarregar l'arxiu: \$ 1",
+	'coll-download_failed_text' => "S'ha produït un error en descarregar l'arxiu: $1",
 	'coll-is_cached' => '<ul><li>S\'ha trobat una versió del document en la memòria cau i per tant no ha estat necessària cap renderització. <a href="$1">Forçar renderització.</a></li></ul>',
 	'coll-excluded-templates' => "* No s'han inclòs les plantilles de la categoria [[:Category:$1|$1]].",
 	'coll-blacklisted-templates' => "* S'han exclòs les plantilles de la llista negra [[:$1]].",
