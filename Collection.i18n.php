@@ -2690,6 +2690,7 @@ La listo estas ĝisdatigita iam ajn vi klakas la butonojn aldoni aŭ forigi.',
  * @author Jatrobat
  * @author Lin linao
  * @author Locos epraix
+ * @author Manuelt15
  * @author McDutchie
  * @author Platonides
  * @author Remember the dot
@@ -2700,7 +2701,7 @@ $messages['es'] = array(
 	'coll-desc' => '[[Special:Book|Crear libros]]',
 	'coll-book_creator_intro' => "<big>Con el ''creador de libros'' puedes crear un libro consistente de páginas wiki de tu preferencia. Puedes exportar tu libro en diferentes formatos (por ejemplo PDF o ODF) u ordenar una copia impresa.</big>",
 	'coll-manage_your_book' => 'Gestionar tu libro',
-	'coll-book_creator_help' => 'Ver [[{{MediaWiki:Coll-helppage}}|la página de ayuda acerca de los libros]] para mayor información.',
+	'coll-book_creator_help' => 'Para más información véase [[{{MediaWiki:Coll-helppage}}|la página de ayuda acerca de los libros]].',
 	'coll-start_book_creator' => 'Comenzar creador de libro',
 	'coll-book_creator_continue' => 'Continuar usando creador de libro',
 	'coll-book_creator_disable_text' => "''Creador de libros'' se descargará y el libro en que estás trabajando será removido.",
