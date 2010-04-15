@@ -4831,6 +4831,7 @@ Le lista es actualisate cata vice que tu clicca super le buttones "adder" o "rem
  * @author Farras
  * @author Irwangatot
  * @author IvanLanin
+ * @author Iwan Novirion
  * @author Rex
  */
 $messages['id'] = array(
@@ -4919,6 +4920,8 @@ Jika tidak, silakan tekan tombol muat ulang di penjelajah web Anda.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(halaman wiki: $1)',
 	'coll-rendering_page' => '(halaman: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Mengubah teks halaman info',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Mengubah teks koleksi info',
 	'coll-rendering_finished_title' => 'Pengolahan selesai',
 	'coll-rendering_finished_text' => '<strong>Berkas dokumen telah dibuat.</strong>
 <strong>[$1 Unduh berkas]</strong> ke komputer Anda.

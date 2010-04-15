@@ -1384,6 +1384,7 @@ $messages['ia'] = array(
  * @author Bennylin
  * @author Irwangatot
  * @author IvanLanin
+ * @author Iwan Novirion
  * @author Rex
  */
 $messages['id'] = array(
@@ -1396,6 +1397,8 @@ $messages['id'] = array(
 	'coll-disable' => 'matikan',
 	'coll-book_creator_disable' => 'Pembuatan buku dinonaktifkan',
 	'coll-book_creator_disable_tooltip' => 'Berhenti menggunakan pembuatan buku',
+	'coll-add_linked_article' => 'Tambahkan pranala halaman wiki ke buku Anda',
+	'coll-remove_linked_article' => 'Hapus pranala halaman wiki dari buku Anda',
 	'coll-add_category' => 'Tambahkan kategori ini ke buku Anda',
 	'coll-add_category_tooltip' => 'Tambahkan semua halaman wiki pada kategori ini ke buku Anda',
 	'coll-add_this_page' => 'Tambahkan halaman ini ke buku Anda',
