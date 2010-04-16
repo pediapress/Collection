@@ -5494,6 +5494,7 @@ $messages['ka'] = array(
 	'coll-suggest_add_selected' => 'არჩეული გვერდების დამატება',
 	'coll-suggest_your_book' => 'თქვენი წიგნი',
 	'coll-suggest_show' => 'ჩვენება',
+	'coll-suggest_undo_tooltip' => 'ცვლილების გაუქმება',
 	'coll-suggest_undo' => 'გაუქმება',
 	'right-collectionsaveasuserpage' => 'შეინახე წიგნი, როგორც მომხმარებლის გვერდი',
 	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
