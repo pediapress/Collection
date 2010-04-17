@@ -146,7 +146,7 @@ class SpecialCollection extends SpecialPage {
 				$wgOut->redirect( $redirectURL );
 				return;
 			case 'set_titles':
-				self::setTitles( $wgRequest->getText( 'collectionTitle', '' ), $wgRequest->getText( 'collectionSubtitle', '') );
+				self::setTitles( $wgRequest->getText( 'collectionTitle', '' ), $wgRequest->getText( 'collectionSubtitle', '' ) );
 				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
 			case 'sort_items':
@@ -262,7 +262,7 @@ class SpecialCollection extends SpecialPage {
 				$this->renderArticle( $title, $oldid, $wgRequest->getVal( 'writer', 'rl' ) );
 				return;
 			case 'render_collection':
-				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ));
+				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
 				if ( !$title ) {
 					return;
 				}
@@ -286,7 +286,7 @@ class SpecialCollection extends SpecialPage {
 				} else if ( isset( $add ) ) {
 					CollectionSuggest::run( 'add', $add );
 				} else if ( isset( $ban ) ) {
-					CollectionSuggest::run('ban', $ban );
+					CollectionSuggest::run( 'ban', $ban );
 				} else if ( isset( $remove ) ) {
 					CollectionSuggest::run( 'remove', $remove );
 				} else if ( isset( $addselected ) ) {
@@ -411,7 +411,7 @@ EOS
 
 		$title_string = wfMsgForContent( 'coll-book_creator_text_article' );
 		$t = Title::newFromText( $title_string );
-		if ( !is_null($t) ) {
+		if ( !is_null( $t ) ) {
 			$a = new Article( $t );
 			if ( $a->exists() ) {
 				$wgOut->addWikiText( '{{:' . $title_string . '}}' );
@@ -480,7 +480,7 @@ EOS
 		}
 
 		$t = wfMsgForContent( 'coll-community_book_prefix' );
-		if ( wfEmptyMsg( 'coll-community_book_prefix', $t) || $t == '-' ) {
+		if ( wfEmptyMsg( 'coll-community_book_prefix', $t ) || $t == '-' ) {
 			$title = Title::makeTitle(
 				$wgCommunityCollectionNamespace,
 				wfMsgForContent( 'coll-collections' )
@@ -517,7 +517,7 @@ EOS
 		$template = new CollectionPageTemplate();
 		$template->set( 'collection', CollectionSession::getCollection() );
 		$template->set( 'podpartners', $this->mPODPartners );
-		$template->set( 'formats', $wgCollectionFormats);
+		$template->set( 'formats', $wgCollectionFormats );
 		$prefixes = self::getBookPagePrefixes();
 		$template->set( 'user-book-prefix', $prefixes['user-prefix'] );
 		$template->set( 'community-book-prefix', $prefixes['community-prefix'] );
@@ -531,8 +531,8 @@ EOS
 		CollectionSession::setCollection( $collection );
 	}
 
-	static function title_cmp($a, $b) {
-		return strcasecmp($a['title'], $b['title']);
+	static function title_cmp( $a, $b ) {
+		return strcasecmp( $a['title'], $b['title'] );
 	}
 
 	static function sortItems() {
@@ -563,7 +563,7 @@ EOS
 	}
 
 	static function renameChapter( $index, $name ) {
-		if (!is_int( $index ) ) {
+		if ( !is_int( $index ) ) {
 			return;
 		}
 		$collection = CollectionSession::getCollection();
@@ -574,13 +574,13 @@ EOS
 		CollectionSession::setCollection( $collection );
 	}
 
-	static function addArticleFromName( $namespace, $name, $oldid=0 ) {
+	static function addArticleFromName( $namespace, $name, $oldid = 0 ) {
 		$title = Title::makeTitleSafe( $namespace, $name );
-		if (!$title) return false;
+		if ( !$title ) return false;
 		return self::addArticle( $title, $oldid );
 	}
 
-	static function addArticle( $title, $oldid=0 ) {
+	static function addArticle( $title, $oldid = 0 ) {
 		$article = new Article( $title, $oldid );
 		$latest = $article->getLatest();
 
@@ -590,7 +590,7 @@ EOS
 			$oldid = $latest;
 		}
 		$index = CollectionSession::findArticle( $title->getPrefixedText(), $oldid );
-		if ( $index != -1 ) {
+		if ( $index != - 1 ) {
 			return false;
 		}
 
@@ -613,18 +613,18 @@ EOS
 		return true;
 	}
 
-	static function removeArticleFromName( $namespace, $name, $oldid=0 ) {
+	static function removeArticleFromName( $namespace, $name, $oldid = 0 ) {
 		$title = Title::makeTitleSafe( $namespace, $name );
 		return self::removeArticle( $title, $oldid );
 	}
 
-	static function removeArticle( $title, $oldid=0 ) {
+	static function removeArticle( $title, $oldid = 0 ) {
 		if ( !CollectionSession::hasSession() ) {
 			return false;
 		}
 		$collection = CollectionSession::getCollection();
 		$index = CollectionSession::findArticle( $title->getPrefixedText(), $oldid );
-		if ( $index != -1 ) {
+		if ( $index != - 1 ) {
 			array_splice( $collection['items'], $index, 1 );
 		}
 		CollectionSession::setCollection( $collection );
@@ -669,7 +669,7 @@ EOS
 			}
 			if ( in_array( $row->page_namespace, $wgCollectionArticleNamespaces ) ) {
 				$articleTitle = Title::makeTitle( $row->page_namespace, $row->page_title );
-				if ( CollectionSession::findArticle( $articleTitle->getPrefixedText() ) == -1 ) {
+				if ( CollectionSession::findArticle( $articleTitle->getPrefixedText() ) == - 1 ) {
 					self::addArticle( $articleTitle );
 				}
 			}
@@ -685,7 +685,7 @@ EOS
 	}
 
 	static function removeItem( $index ) {
-		if (!is_int( $index ) ) {
+		if ( !is_int( $index ) ) {
 			return false;
 		}
 		if ( !CollectionSession::hasSession() ) {
@@ -716,7 +716,7 @@ EOS
 		$collection = CollectionSession::getCollection();
 		$old_items = $collection['items'];
 		$new_items = array();
-		foreach ($items as $new_index => $old_index) {
+		foreach ( $items as $new_index => $old_index ) {
 			$new_items[$new_index] = $old_items[$old_index];
 		}
 		$collection['items'] = $new_items;
@@ -725,11 +725,11 @@ EOS
 
 	function parseCollectionLine( &$collection, $line, $append ) {
 		$line = trim( $line );
-		if ( !$append && preg_match( '/^===\s*(.*?)\s*===$/', $line, $match) ) {
+		if ( !$append && preg_match( '/^===\s*(.*?)\s*===$/', $line, $match ) ) {
 			$collection['subtitle'] = $match[ 1 ];
-		} elseif ( !$append && preg_match( '/^==\s*(.*?)\s*==$/', $line, $match) ) {
+		} elseif ( !$append && preg_match( '/^==\s*(.*?)\s*==$/', $line, $match ) ) {
 			$collection['title'] = $match[ 1 ];
-		} elseif (substr( $line, 0, 1 ) == ';') { // chapter
+		} elseif ( substr( $line, 0, 1 ) == ';' ) { // chapter
 			return array(
 				'type' => 'chapter',
 				'title' => trim( substr( $line, 1 ) ),
@@ -743,7 +743,7 @@ EOS
 				} else {
 					$displayTitle = null;
 				}
-				$oldid = -1;
+				$oldid = - 1;
 				$currentVersion = 1;
 			} elseif ( preg_match( '/^\[\{\{fullurl:(.*?)\|oldid=(.*?)\}\}\s+(.*?)\]$/', $articleTitle, $match ) ) {
 				$articleTitle = $match[1];
@@ -759,10 +759,10 @@ EOS
 			}
 
 			$articleTitle = Title::newFromText( $articleTitle );
-			if( !$articleTitle ) {
+			if ( !$articleTitle ) {
 				return null;
 			}
-			if ($oldid < 0) {
+			if ( $oldid < 0 ) {
 				$article = new Article( $articleTitle );
 			} else {
 				$article = new Article( $articleTitle, $oldid );
@@ -794,7 +794,7 @@ EOS
 		return null;
 	}
 
-	function loadCollection( $title, $append=false ) {
+	function loadCollection( $title, $append = false ) {
 		global $wgOut;
 
 		if ( is_null( $title ) ) {
@@ -820,7 +820,7 @@ EOS
 
 		$article = new Article( $title );
 
-		foreach( preg_split( '/[\r\n]+/', $article->getContent() ) as $line ) {
+		foreach ( preg_split( '/[\r\n]+/', $article->getContent() ) as $line ) {
 			$item = $this->parseCollectionLine( $collection, $line, $append );
 			if ( !is_null( $item ) ) {
 				$items[] = $item;
@@ -830,7 +830,7 @@ EOS
 		return $collection;
 	}
 
-	function saveCollection( $title, $forceOverwrite=false ) {
+	function saveCollection( $title, $forceOverwrite = false ) {
 		global $wgUser;
 
 		$article = new Article( $title );
@@ -839,7 +839,7 @@ EOS
 		}
 		$articleText = "{{" . wfMsgForContent( 'coll-savedbook_template' ) . "}}\n\n";
 		$collection = CollectionSession::getCollection();
-		if( $collection['title'] ) {
+		if ( $collection['title'] ) {
 			$articleText .= '== ' . $collection['title'] . " ==\n";
 		}
 		if ( $collection['subtitle'] ) {
@@ -850,7 +850,7 @@ EOS
 				if ( $item['type'] == 'chapter' ) {
 					$articleText .= ';' . $item['title'] . "\n";
 				} elseif ( $item['type'] == 'article' ) {
-					if ($item['currentVersion'] == 1) {
+					if ( $item['currentVersion'] == 1 ) {
 						$articleText .= ":[[" . $item['title'];
 						if ( $item['displaytitle'] ) {
 							$articleText .= "|" . $item['displaytitle'];
@@ -867,7 +867,7 @@ EOS
 						$articleText .= "]\n";
 					}
 				}
-				//$articleText .= $item['revision'] . "/" . $item['latest']."\n";
+				// $articleText .= $item['revision'] . "/" . $item['latest']."\n";
 			}
 		}
 		$t = wfMsgForContent( 'coll-bookscategory' );
@@ -878,13 +878,13 @@ EOS
 			}
 		}
 
-		$req = new FauxRequest(array(
+		$req = new FauxRequest( array(
 			'action' => 'edit',
 			'title' => $title->getPrefixedText(),
 			'text' => $articleText,
 			'token' => $wgUser->editToken(),
-		), true);
-		$api = new ApiMain($req, true);
+		), true );
+		$api = new ApiMain( $req, true );
 		$api->execute();
 		return true;
 	}
@@ -1071,9 +1071,9 @@ EOS
 		switch ( $response['state'] ) {
 		case 'progress':
 			$url = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', 'bookcmd=rendering&' . $query ) );
-			$wgOut->addHeadItem( 'refresh-nojs', '<noscript><meta http-equiv="refresh" content="2" /></noscript>');
-			$wgOut->addInlineScript( 'var collection_id = "' . urlencode( $response['collection_id']) . '";' );
-			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer']) . '";' );
+			$wgOut->addHeadItem( 'refresh-nojs', '<noscript><meta http-equiv="refresh" content="2" /></noscript>' );
+			$wgOut->addInlineScript( 'var collection_id = "' . urlencode( $response['collection_id'] ) . '";' );
+			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer'] ) . '";' );
 			$wgOut->addInlineScript( 'var collection_rendering = true;' );
 			$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );
 			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/js/jquery.js?$wgCollectionStyleVersion\"></script>" );
@@ -1081,7 +1081,7 @@ EOS
 			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/js/collection.js?$wgCollectionStyleVersion\"></script>" );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
 
-			if ( isset($response['status']['status'] ) && $response['status']['status'] ) {
+			if ( isset( $response['status']['status'] ) && $response['status']['status'] ) {
 				$statusText = $response['status']['status'];
 				if ( isset( $response['status']['article'] ) && $response['status']['article'] ) {
 					$statusText .= ' ' . wfMsg( 'coll-rendering_article', $response['status']['article'] );
@@ -1126,7 +1126,7 @@ EOS
 		$errorMessage = '';
 		$info = false;
 		if ( isset( $r['url'] ) ) {
-			self::curlreq( 'GET', $r['url'], array(), $errorMessage, $info, $timeout=false, $toFile=$tempfile );
+			self::curlreq( 'GET', $r['url'], array(), $errorMessage, $info, $timeout = false, $toFile = $tempfile );
 			$content_type = $r['content_type'];
 			$content_length = $r['content_length'];
 			$content_disposition = $r['content_disposition'];
@@ -1134,7 +1134,7 @@ EOS
 			$info = self::mwServeCommand( 'download', array(
 				'collection_id' => $wgRequest->getVal( 'collection_id' ),
 				'writer' => $wgRequest->getVal( 'writer' ),
-			), $timeout=false, $toFile=$tempfile );
+			), $timeout = false, $toFile = $tempfile );
 			$content_type = $info['content_type'];
 			$content_length = $info['download_content_length'];
 			$content_disposition = null;
@@ -1145,7 +1145,7 @@ EOS
 		}
 		wfResetOutputBuffers();
 		header( 'Content-Type: ' . $content_type );
-		header( 'Content-Length: ' . $content_length);
+		header( 'Content-Length: ' . $content_length );
 		if ( $content_disposition ) {
 			header( 'Content-Disposition: ' . $content_disposition );
 		} else {
@@ -1236,7 +1236,7 @@ EOS
 		$wgOut->addTemplate( $template );
 	}
 
-	static function mwServeCommand( $command, $args, $timeout=true, $toFile=null ) {
+	static function mwServeCommand( $command, $args, $timeout = true, $toFile = null ) {
 		global $wgOut;
 		global $wgCollectionMWServeURL;
 		global $wgCollectionMWServeCredentials;
@@ -1290,22 +1290,22 @@ EOS
 	}
 
 	static function curlreq( $method, $url, $postFields, &$errorMessage, &$info,
-		$timeout=true, $toFile=null ) {
+		$timeout = true, $toFile = null ) {
 		global $wgHTTPTimeout, $wgHTTPProxy, $wgTitle, $wgVersion;
 		global $wgCollectionMWServeCert;
 		global $wgCollectionVersion;
 
-		if ( $method == 'GET') {
+		if ( $method == 'GET' ) {
 			$url = wfAppendQuery( $url, wfArrayToCGI( $postFields ) );
 		}
 		$c = curl_init( $url );
-		curl_setopt($c, CURLOPT_PROXY, $wgHTTPProxy);
+		curl_setopt( $c, CURLOPT_PROXY, $wgHTTPProxy );
 		$userAgent = wfGetAgent();
 		if ( !$userAgent ) {
 			$userAgent = "Unknown user agent";
 		}
 		$userAgent .= " (via MediaWiki/$wgVersion, Collection/$wgCollectionVersion)";
-		curl_setopt( $c, CURLOPT_USERAGENT, $userAgent);
+		curl_setopt( $c, CURLOPT_USERAGENT, $userAgent );
 		if ( $method == 'POST' ) {
 			curl_setopt( $c, CURLOPT_POST, true );
 			curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
@@ -1321,9 +1321,9 @@ EOS
 		/* Allow the use of self-signed certificates by referencing
 		 * a local (to the mediawiki install) copy of the signing
 		 * certificate */
-		if ( !($wgCollectionMWServeCert === null) ) {
-			curl_setopt ($c, CURLOPT_SSL_VERIFYPEER, TRUE);
-			curl_setopt ($c, CURLOPT_CAINFO, $wgCollectionMWServeCert);
+		if ( !( $wgCollectionMWServeCert === null ) ) {
+			curl_setopt ( $c, CURLOPT_SSL_VERIFYPEER, TRUE );
+			curl_setopt ( $c, CURLOPT_CAINFO, $wgCollectionMWServeCert );
 		}
 
 		if ( $toFile ) {

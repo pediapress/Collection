@@ -30,7 +30,7 @@ EOT;
 	exit( 1 );
 }
 
-$dir = dirname(__FILE__) . '/';
+$dir = dirname( __FILE__ ) . '/';
 
 # Extension version
 $wgCollectionVersion = "1.4";
@@ -162,9 +162,9 @@ function wfAjaxGetCollection() {
 
 $wgAjaxExportList[] = 'wfAjaxGetCollection';
 
-function wfAjaxPostCollection( $collection='' ) {
+function wfAjaxPostCollection( $collection = '' ) {
 	$json = new Services_JSON( SERVICES_JSON_LOOSE_TYPE );
-	if( session_id() == '' ) {
+	if ( session_id() == '' ) {
 		wfSetupSession();
 	}
 	$collection = $json->decode( $collection );
@@ -176,7 +176,7 @@ function wfAjaxPostCollection( $collection='' ) {
 
 $wgAjaxExportList[] = 'wfAjaxPostCollection';
 
-function wfAjaxGetMWServeStatus( $collection_id='', $writer='rl' ) {
+function wfAjaxGetMWServeStatus( $collection_id = '', $writer = 'rl' ) {
 	$json = new Services_JSON();
 	$result = SpecialCollection::mwServeCommand( 'render_status', array(
 		'collection_id' => $collection_id,
@@ -189,29 +189,29 @@ function wfAjaxGetMWServeStatus( $collection_id='', $writer='rl' ) {
 
 $wgAjaxExportList[] = 'wfAjaxGetMWServeStatus';
 
-function wfAjaxCollectionAddArticle( $namespace=0, $title='', $oldid='' ) {
+function wfAjaxCollectionAddArticle( $namespace = 0, $title = '', $oldid = '' ) {
 	SpecialCollection::addArticleFromName( $namespace, $title, $oldid );
 	return '';
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionAddArticle';
 
-function wfAjaxCollectionRemoveArticle( $namespace=0, $title='', $oldid='' ) {
+function wfAjaxCollectionRemoveArticle( $namespace = 0, $title = '', $oldid = '' ) {
 	SpecialCollection::removeArticleFromName( $namespace, $title, $oldid );
 	return '';
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionRemoveArticle';
 
-function wfAjaxCollectionAddCategory( $title='' ) {
+function wfAjaxCollectionAddCategory( $title = '' ) {
 	SpecialCollection::addCategoryFromName( $title );
 	return '';
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionAddCategory';
 
-function wfAjaxCollectionGetBookCreatorBoxContent( $ajaxHint='', $oldid=null ) {
-	if( !is_null( $oldid ) ) {
+function wfAjaxCollectionGetBookCreatorBoxContent( $ajaxHint = '', $oldid = null ) {
+	if ( !is_null( $oldid ) ) {
 		$oldid = intval( $oldid );
 	}
 	return CollectionHooks::getBookCreatorBoxContent( $ajaxHint, $oldid );
@@ -292,7 +292,7 @@ function wfAjaxCollectionGetPopupData( $title ) {
 	$json = new Services_JSON();
 	$result = array();
 	$imagePath = "$wgScriptPath/extensions/Collection/images";
-	if ( CollectionSession::findArticle( $title ) == -1 ) {
+	if ( CollectionSession::findArticle( $title ) == - 1 ) {
 		$result['action'] = 'add';
 		$result['text'] = wfMsg( 'coll-add_linked_article' );
 		$result['img'] = "$imagePath/silk-add.png";
@@ -324,7 +324,7 @@ function wfCollectionSuggestAction( $action, $article ) {
 		array(
 			'href' => SkinTemplate::makeSpecialUrl(
 				'Book',
-				array('bookcmd' => 'suggest', 'undo' => $action, 'arttitle' => $article )
+				array( 'bookcmd' => 'suggest', 'undo' => $action, 'arttitle' => $article )
 			),
 			'onclick' => "collectionSuggestCall('UndoArticle'," .
 				Xml::encodeJsVar( array( $action, $article ) ) . "); return false;",
