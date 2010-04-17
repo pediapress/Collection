@@ -27,7 +27,7 @@ class CollectionSession {
 	}
 
 	static function startSession() {
-		if( session_id() == '' ) {
+		if ( session_id() == '' ) {
 			wfSetupSession();
 		}
 		self::clearCollection();
@@ -78,20 +78,20 @@ class CollectionSession {
 		}
 		$count = 0;
 		foreach ( $_SESSION['wsCollection']['items'] as $item ) {
-			if ( $item['type'] == 'article') {
+			if ( $item['type'] == 'article' ) {
 				$count++;
 			}
 		}
 		return $count;
 	}
 
-	static function findArticle( $title, $oldid=0 ) {
+	static function findArticle( $title, $oldid = 0 ) {
 		if ( !self::hasSession() ) {
-			return -1;
+			return - 1;
 		}
 
 		foreach ( $_SESSION['wsCollection']['items'] as $index => $item ) {
-			if ( $item['type'] == 'article' && $item['title'] == $title) {
+			if ( $item['type'] == 'article' && $item['title'] == $title ) {
 				if ( $oldid ) {
 					if ( $item['revision'] == strval( $oldid ) ) {
 						return $index;
@@ -103,7 +103,7 @@ class CollectionSession {
 				}
 			}
 		}
-		return -1;
+		return - 1;
 	}
 
 	static function purge() {
@@ -128,7 +128,7 @@ class CollectionSession {
 		return $_SESSION['wsCollection'];
 	}
 
-	static function setCollection($collection) {
+	static function setCollection( $collection ) {
 		$_SESSION['wsCollection'] = $collection;
 		self::touchSession();
 	}

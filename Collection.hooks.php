@@ -29,9 +29,9 @@ class CollectionHooks {
 		global $wgUser;
 		global $wgCollectionPortletForLoggedInUsersOnly;
 
-		if( !$wgCollectionPortletForLoggedInUsersOnly || $wgUser->isLoggedIn() ) {
+		if ( !$wgCollectionPortletForLoggedInUsersOnly || $wgUser->isLoggedIn() ) {
 			$html = self::getPortlet();
-			if( $html ) {
+			if ( $html ) {
 				$bar[ 'coll-print_export' ] = $html;
 			}
 		}
@@ -42,8 +42,8 @@ class CollectionHooks {
 		global $wgUser;
 		global $wgCollectionPortletForLoggedInUsersOnly;
 		
-		if( !$wgCollectionPortletForLoggedInUsersOnly || $wgUser->isLoggedIn() ) {
-			if( isset( $navUrls['print'] ) ) {
+		if ( !$wgCollectionPortletForLoggedInUsersOnly || $wgUser->isLoggedIn() ) {
+			if ( isset( $navUrls['print'] ) ) {
 				// We move this guy out to our own box
 				unset( $navUrls['print'] );
 			}
@@ -60,7 +60,7 @@ class CollectionHooks {
 
 		$html = self::getPortlet();
 
-		if( $html ) {
+		if ( $html ) {
 			$portletTitle = wfMsg( 'coll-print_export' );
 			print "<div id=\"p-coll-print_export\" class=\"portlet\">
 	<h5>$portletTitle</h5>
@@ -92,8 +92,8 @@ class CollectionHooks {
 			return false;
 		}
 
-		$action = $wgRequest->getVal('action');
-		if( $action != '' && $action != 'view' && $action != 'purge' ) {
+		$action = $wgRequest->getVal( 'action' );
+		if ( $action != '' && $action != 'view' && $action != 'purge' ) {
 			return false;
 		}
 
@@ -133,12 +133,12 @@ class CollectionHooks {
 			);
 		}
 
-		$params = array( 
+		$params = array(
 			'bookcmd' => 'render_article',
 			'arttitle' => $wgTitle->getPrefixedText(),
 		);
 
-		if( $wgArticle ) {
+		if ( $wgArticle ) {
 			$oldid = $wgArticle->getOldID();
 			if ( $oldid ) {
 				$params['oldid'] = $oldid;
@@ -166,7 +166,7 @@ class CollectionHooks {
 
 		// Move the 'printable' link into our section for consistency
 		$action = $wgRequest->getVal( 'action', 'view' );
-		if( $action == 'view' || $action == 'purge' ) {
+		if ( $action == 'view' || $action == 'purge' ) {
 			global $wgOut;
 			if ( !$wgOut->isPrintable() ) {
 				$attribs = array(
@@ -199,8 +199,8 @@ class CollectionHooks {
 		global $wgRequest;
 		global $wgTitle;
 
-		$action = $wgRequest->getVal('action');
-		if( $action != '' && $action != 'view' && $action != 'purge' ) {
+		$action = $wgRequest->getVal( 'action' );
+		if ( $action != '' && $action != 'view' && $action != 'purge' ) {
 			return true;
 		}
 
@@ -211,7 +211,7 @@ class CollectionHooks {
 
 		$myTitle = SpecialPage::getTitleFor( 'Book' );
 		if ( $myTitle->equals( $wgTitle ) ) {
-			$cmd = $wgRequest->getVal('bookcmd', '');
+			$cmd = $wgRequest->getVal( 'bookcmd', '' );
 			if ( $cmd == 'suggest' ) {
 				$siteNotice .= self::renderBookCreatorBox( 'suggest' );
 			} else if ( $cmd == '' ) {
@@ -234,7 +234,7 @@ class CollectionHooks {
 		return true;
 	}
 
-	static function renderBookCreatorBox( $mode='' ) {
+	static function renderBookCreatorBox( $mode = '' ) {
 		global $wgArticle;
 		global $wgCollectionArticleNamespaces;
 		global $wgCollectionStyleVersion;
@@ -258,7 +258,7 @@ class CollectionHooks {
 			$oldid = $wgArticle->getOldID();
 			if ( !$oldid  || $oldid == $wgArticle->getLatest() ) {
 				$oldid = 0;
-			} 
+			}
 		}
 
 		$html = '';
@@ -275,7 +275,7 @@ class CollectionHooks {
 			);
 		}
 
-		$html .= Xml::element( 'script', 
+		$html .= Xml::element( 'script',
 			array(
 				'type' => $wgJsMimeType,
 				'src' => "$jsPath/bookcreator.js?$wgCollectionStyleVersion",
@@ -323,7 +323,7 @@ EOS
 				array( 'style' => 'float: right' ),
 				$sk->link(
 					Title::newFromText( wfMsg( 'coll-helppage' ) ),
-					Xml::element('img',
+					Xml::element( 'img',
 						array(
 							'src' => "$imagePath/silk-help.png",
 							'alt' => '',
@@ -333,7 +333,7 @@ EOS
 						)
 					)
 					. '&nbsp;' . wfMsgHtml( 'coll-help' ),
-					array( 
+					array(
 						'rel' => 'nofollow',
 						'title' => wfMsg( 'coll-help_tooltip' ),
 					),
@@ -371,7 +371,7 @@ EOS
 		return $html;
 	}
 
-	static function getBookCreatorBoxContent( $ajaxHint=null, $oldid=null ) {
+	static function getBookCreatorBoxContent( $ajaxHint = null, $oldid = null ) {
 		global $wgUser;
 		global $wgScriptPath;
 
@@ -398,7 +398,7 @@ EOS
 			$oldid = $wgArticle->getOldID();
 			if ( !$oldid  || $oldid == $wgArticle->getLatest() ) {
 				$oldid = 0;
-			} 
+			}
 		}
 
 		if ( $ajaxHint == 'suggest' || $ajaxHint == 'showbook' ) {
@@ -409,7 +409,7 @@ EOS
 						'src' => "$imagePath/disabled.png",
 						'alt' => '',
 						'width' => '16',
-						'height'=> '16',
+						'height' => '16',
 						'style' => 'vertical-align: text-bottom',
 					)
 				)
@@ -426,7 +426,7 @@ EOS
 			$onclick = "collectionCall('AddCategory', ['addcategory', wgTitle]); return false;";
 		} else {
 			if ( $ajaxHint == 'addarticle'
-				|| ($ajaxHint == '' && CollectionSession::findArticle( $ptext, $oldid ) == -1) ) {
+				|| ( $ajaxHint == '' && CollectionSession::findArticle( $ptext, $oldid ) == - 1 ) ) {
 				$id = 'coll-add_article';
 				$icon = 'silk-add.png';
 				$captionMsg = 'coll-add_this_page';
@@ -447,7 +447,7 @@ EOS
 
 		return $sk->link(
 			SpecialPage::getTitleFor( 'Book' ),
-			Xml::element('img',
+			Xml::element( 'img',
 				array(
 					'src' => "$imagePath/$icon",
 					'alt' => '',
@@ -476,7 +476,7 @@ EOS
 				array(
 					'style' => 'margin-left: 10px;',
 				),
-				Xml::element('img',
+				Xml::element( 'img',
 					array(
 						'src' => "$imagePath/silk-book_open.png",
 						'alt' => '',
@@ -491,7 +491,7 @@ EOS
 		} else {
 			return $sk->link(
 				SpecialPage::getTitleFor( 'Book' ),
-				Xml::element('img',
+				Xml::element( 'img',
 					array(
 						'src' => "$imagePath/silk-book_open.png",
 						'alt' => '',
@@ -523,7 +523,7 @@ EOS
 				array(
 					'style' => 'margin-left: 10px;',
 				),
-				Xml::element('img',
+				Xml::element( 'img',
 					array(
 						'src' => "$imagePath/silk-wand.png",
 						'alt' => '',
@@ -537,7 +537,7 @@ EOS
 		} else {
 			return $sk->link(
 				SpecialPage::getTitleFor( 'Book' ),
-				Xml::element('img',
+				Xml::element( 'img',
 					array(
 						'src' => "$imagePath/silk-wand.png",
 						'alt' => '',
