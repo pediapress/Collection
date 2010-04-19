@@ -119,6 +119,8 @@ If this does not work, please press your browser's refresh button.</p>",
 
 Notes:
 * Not satisfied with the output? See [[{{MediaWiki:Coll-helppage}}|the help page about books]] for possibilities to improve it.",
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendering page info text',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendering collection info text',
 	'coll-notfound_title'             => 'Book not found',
 	'coll-notfound_text'              => 'Could not find book page.',
 	'coll-download_notfound_title'    => 'File not found',
