@@ -412,6 +412,20 @@ if ( $this->data['return_to'] ) {
 		htmlspecialchars( $this->data['return_to'] )
 	);
 }
+
+if ( CollectionSession::isEnabled() ) {
+	$title_string = wfMsgForContent( 'coll-finished_collection_info_text_article' );
+} else {
+	$title_string = wfMsgForContent( 'coll-finished_page_info_text_article' );
+}
+$t = Title::newFromText( $title_string );
+if ( $t && $t->exists() ) {
+	echo $GLOBALS['wgParser']->parse( '{{:' . $t . '}}',
+		$GLOBALS['wgTitle'],
+		$GLOBALS['wgOut']->parserOptions(),
+		true
+	)->getText();
+}
 ?>
 
 <?php
