@@ -1743,7 +1743,7 @@ Os nac ydy\'n ail-lwytho o ran ei hun, gwasgwch y botwm ail-lwytho ar eich porwr
 	'coll-rendering_status' => '<strong>Statws:</strong> $1',
 	'coll-rendering_article' => '(tudalen wici: $1)',
 	'coll-rendering_page' => '(tudalen: $1)',
-	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Wrthi'n cynhyrchu'r gwybodaeth am y dudalen",
+	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Wrthi'n cynhyrchu'r wybodaeth am y dudalen",
 	'coll-rendering_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Wrthi'n cynhyrchu'r gwybodaeth am y casgliad",
 	'coll-rendering_finished_title' => 'Wedi gorffen cynhyrchu',
 	'coll-rendering_finished_text' => "<strong>Mae ffeil y ddogfen wedi cael ei gynhyrchu.</strong>
@@ -1751,6 +1751,8 @@ Os nac ydy\'n ail-lwytho o ran ei hun, gwasgwch y botwm ail-lwytho ar eich porwr
 
 Nodiadau:
 * Os nad ydych yn bles â'r cynnyrch gwelwch [[{{MediaWiki:Coll-helppage}}|y dudalen gymorth ar gynhyrchu llyfrau]] er mwyn deall sut mae gwella arno.",
+	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Wrthi'n cynhyrchu'r wybodaeth am y dudalen",
+	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Wrthi'n cynhyrchu'r wybodaeth am y casgliad",
 	'coll-notfound_title' => 'Heb ganfod y llyfr',
 	'coll-notfound_text' => 'Heb ganfod y dudalen yn y llyfr.',
 	'coll-download_notfound_title' => 'Heb lwyddo canfod y ffeil',
@@ -2349,6 +2351,8 @@ Jolic to njefunkcioněrujo, klikni pšosym tłocašk "Znowego" swójogo wobglěd
 
 Pśispomnjeśa:
 * Njespokojom z wudaśim? Glědaj [[{{MediaWiki:Coll-helppage}}|bok pomocy wó zběrkach]] za móžnosći, jo  pólěpšyś.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informaciski tekst boka wuceriś',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informaciski tekst zběrki wuceriś',
 	'coll-notfound_title' => 'Knigły njenamakane',
 	'coll-notfound_text' => 'Bok knigłow njejo se dał namakaś.',
 	'coll-download_notfound_title' => 'Dataja njenamakana',
@@ -2694,6 +2698,7 @@ La listo estas ĝisdatigita iam ajn vi klakas la butonojn aldoni aŭ forigi.',
  * @author Locos epraix
  * @author Manuelt15
  * @author McDutchie
+ * @author Pertile
  * @author Platonides
  * @author Remember the dot
  * @author Sanbec
@@ -2793,6 +2798,8 @@ Si no funciona, pulsa el botón de refrescar de tu navegador.</p>',
 
 Notas:
 * ¿No estás satisfecho con el resultado? Mira [[{{MediaWiki:Coll-helppage}}|la página de ayuda sobre libros]] para ver las  posibilidades de mejorarlo.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo de la página de renderización',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo de la colección de renderización',
 	'coll-notfound_title' => 'No se encuentra el libro',
 	'coll-notfound_text' => 'No se encuentra la página de libro.',
 	'coll-download_notfound_title' => 'Archivo no encontrado',
@@ -3703,6 +3710,8 @@ Se non vai, por favor, prema no botón "Refrescar" do seu navegador.</p>',
 
 Notas:
 *Non está satisfeito co ficheiro obtido? Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para comprobar as posibilidades de melloralo.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre o renderizado de páxinas',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre o renderizado de coleccións',
 	'coll-notfound_title' => 'Non se pode atopar o libro',
 	'coll-notfound_text' => 'Non se pode atopar a páxina do libro.',
 	'coll-download_notfound_title' => 'Non se atopou o ficheiro',
@@ -4405,6 +4414,8 @@ Jeli so to njestawa, klikń prošu na tłóčatko "Znowa" swojeho wobhladowaka.<
 
 Přispomnjenka:
 * Njejsy spokojny z wudaćom? Hlej [[{{MediaWiki:Coll-helppage}}|stronu pomocy wo zběrkach]] za móžnosće je polěpšić.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informaciski tekst strony rysować',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informaciski tekst zběrki rysować',
 	'coll-notfound_title' => 'Kniha njenamakana',
 	'coll-notfound_text' => 'Strona knihi njebu namakana.',
 	'coll-download_notfound_title' => 'Dataja njenamakana',
@@ -6243,6 +6254,8 @@ $messages['mk'] = array(
 
 Белешки:
 * Не сте задоволни со резултатот? Погледајте ја нашата [[{{MediaWiki:Coll-helppage}}|страница за помош со книги]] за да ги видите можностите за нејзино подобрување.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Изработка на информативен текст за страницата',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Изработка на информативен текст за збирката',
 	'coll-notfound_title' => 'Книгата не е пронајдена',
 	'coll-notfound_text' => 'Не можев да ја пронајдам страницата.',
 	'coll-download_notfound_title' => 'Податотеката не е пронајдена',
@@ -6875,6 +6888,8 @@ Als dit niet werkt, klik dan op de knop "Vernieuwen" in uw browser.</p>',
 
 Opmerkingen:
 * Niet tevreden met de uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over boeken]] staan tips om deze uitvoer te verbeteren.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informatietekst bij renderen pagina',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informatietekst bij renderen verzameling',
 	'coll-notfound_title' => 'Boek niet gevonden',
 	'coll-notfound_text' => 'Boekpagina is niet gevonden.',
 	'coll-download_notfound_title' => 'Het bestand is niet gevonden',
@@ -7156,6 +7171,8 @@ Ingen flere sider kan legges til.',
 
 Merk:
 * Ikke fornøyd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjelpsiden om samlinger]] for muligheter til å forbedre den.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Gjengir sideinformasjonstekst',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Gjengir samlingsinformasjonstekst',
 	'coll-notfound_title' => 'Bok ikke funnet',
 	'coll-notfound_text' => 'Kunne ikke finne bokside.',
 	'coll-download_notfound_title' => 'Fil ikke funnet',
@@ -7479,6 +7496,8 @@ Jeśli tak nie jest, proszę wymusić odświeżenie w przeglądarce.</p>',
 
 Uwaga:
 * Nie jesteś zadowolony z wygenerowanego dokumentu? Zajrzyj na [[{{MediaWiki:Coll-helppage}}|stronę pomocy dotyczącą kolekcji]], aby dowiedzieć się jakie są możliwości poprawy dokumentu.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Tekst informacyjny przetwarzania strony',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Tekst informacyjny przetwarzania kolekcji',
 	'coll-notfound_title' => 'Książki nie odnaleziono',
 	'coll-notfound_text' => 'Nie udało się odnaleźć strony z ksiązki.',
 	'coll-download_notfound_title' => 'Nie odnaleziono pliku',
@@ -7772,8 +7791,8 @@ Esta página não funcionará correctamente sem o JavaScript.</strong>',
 	'coll-notitle_title' => 'Não foi possível determinar o título da página.',
 	'coll-post_failed_title' => 'Pedido POST falhou',
 	'coll-post_failed_msg' => 'O pedido POST feito a $1 falhou ($2).',
-	'coll-mwserve_failed_title' => 'Erro no servidor de renderização',
-	'coll-mwserve_failed_msg' => 'Ocorreu um erro no servidor de renderização: <nowiki>$1</nowiki>',
+	'coll-mwserve_failed_title' => 'Erro no servidor de composição de imagem',
+	'coll-mwserve_failed_msg' => 'Ocorreu um erro no servidor de composição de imagem: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Resposta de erro do servidor',
 	'coll-empty_collection' => 'Livro vazio',
 	'coll-revision' => 'Revisão: $1',
@@ -7798,7 +7817,7 @@ Pretende substituir o livro actual, adicionar-lhe o novo conteúdo ou cancelar o
 	'coll-limit_exceeded_title' => 'Livro demasiado grande',
 	'coll-limit_exceeded_text' => 'O seu livro é demasiado grande.
 Não podem ser adicionadas mais páginas.',
-	'coll-rendering_title' => 'Renderizando',
+	'coll-rendering_title' => 'A compor imagem',
 	'coll-rendering_text' => '<p><strong>Por favor, aguarde enquanto o documento é gerado.</strong></p>
 
 <p><strong>Progresso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
@@ -7808,14 +7827,16 @@ Se não o fizer, por favor use o botão "actualizar" ("refresh") do seu browser.
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(página wiki: $1)',
 	'coll-rendering_page' => '(página: $1)',
-	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Mostrando o texto de informação da página',
-	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Mostrando o texto de informação do livro',
-	'coll-rendering_finished_title' => 'Renderização concluída',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/A compor o texto de informação da página',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/A compor o texto de informação do livro',
+	'coll-rendering_finished_title' => 'Composição da imagem concluída',
 	'coll-rendering_finished_text' => '<strong>O ficheiro foi gerado.</strong>
 <strong>[$1 Transfira o ficheiro]</strong> para o seu computador.
 
 Notas:
 * Não está satisfeito com o resultado? Consulte [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para conhecer as possibilidades de aprimoramento.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/A compor o texto de informação da página',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/A compor o texto de informação do livro',
 	'coll-notfound_title' => 'Livro não foi encontrado',
 	'coll-notfound_text' => 'Não foi possível encontrar a página do livro.',
 	'coll-download_notfound_title' => 'Ficheiro não encontrado',
@@ -7823,7 +7844,8 @@ Notas:
 Talvez tenha sido apagado e precise de ser regenerado.',
 	'coll-download_failed_title' => 'Erro durante o descarregamento',
 	'coll-download_failed_text' => 'Ocorreu um erro ao descarregar o ficheiro: $1',
-	'coll-is_cached' => '<ul><li>Foi encontrada uma versão deste documento em cache, dispensando a renderização. <a href="$1"> Forçar nova renderização.</a></li></ul>',
+	'coll-is_cached' => '<ul><li>Foi encontrada uma versão deste documento em cache, dispensando a sua composição.
+<a href="$1">Forçar nova composição.</a></li></ul>',
 	'coll-excluded-templates' => '* As predefinições na categoria [[:Category:$1|$1]] foram excluídas.',
 	'coll-blacklisted-templates' => '* As predefinições na lista negra [[:$1]] foram excluídas.',
 	'coll-return_to_collection' => '<p>Regressar a <a href="$1">$2</a></p>',
@@ -8272,14 +8294,16 @@ $messages['ru'] = array(
 	'coll-rendering_status' => '<strong>Статус:</strong> $1',
 	'coll-rendering_article' => '(статья: $1)',
 	'coll-rendering_page' => '(страница: $1)',
-	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Отображение информации о странице',
-	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Отображение информации о коллекции',
-	'coll-rendering_finished_title' => 'Создание завершено',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Отрисовка текста сведений о странице',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Отрисовка текста сведений о коллекции',
+	'coll-rendering_finished_title' => 'Отрисовка завершена',
 	'coll-rendering_finished_text' => '<strong>Файл документа создан.</strong>
 <strong>[$1 Скачать файл]</strong> на свой компьютер.
 
 Замечание:
 * Не удовлетворены результатом? Возможности его улучшения описаны на [[{{MediaWiki:Coll-helppage}}|справочной странице о книгах]].',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Отрисовка текста сведений о странице',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Отрисовка текста сведений о коллекции',
 	'coll-notfound_title' => 'Книга не найдена',
 	'coll-notfound_text' => 'Невозможно найти страницу книги.',
 	'coll-download_notfound_title' => 'Файл не найден',
