@@ -177,11 +177,16 @@ function wfAjaxPostCollection( $collection = '' ) {
 $wgAjaxExportList[] = 'wfAjaxPostCollection';
 
 function wfAjaxGetMWServeStatus( $collection_id = '', $writer = 'rl' ) {
+	global $wgLang;
+
 	$json = new Services_JSON();
 	$result = SpecialCollection::mwServeCommand( 'render_status', array(
 		'collection_id' => $collection_id,
 		'writer' => $writer
 	) );
+	if ( isset( $result['status']['progress'] ) ) {
+		$result['status']['progress'] = $wgLang->parseFormattedNumber( number_format( $result['status']['progress'], 2 ) );
+	}
 	$r = new AjaxResponse( $json->encode( $result ) );
 	$r->setContentType( 'application/json' );
 	return $r;
