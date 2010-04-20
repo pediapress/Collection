@@ -817,6 +817,8 @@ $messages['be-tarask'] = array(
 
 Заўвага:
 * Не задаволены створаным дакумэнтам? Глядзіце [[{{MediaWiki:Coll-helppage}}|старонку дапамогі па калекцыі]], каб даведацца, як яго палепшыць.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Стварэньне тэксту з інфармацыяй пра старонку',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Стварэньне тэксту з інфармацыяй пра калекцыю',
 	'coll-notfound_title' => 'Кніга ня знойдзеная',
 	'coll-notfound_text' => 'Немагчыма знайсьці старонку кнігі.',
 	'coll-download_notfound_title' => 'Файл ня знойдзены',
@@ -1924,6 +1926,7 @@ Kontakt venligst din MediaWiki-administrator.',
 /** German (Deutsch)
  * @author Heuler06
  * @author Jbeigel
+ * @author Kghbln
  * @author Melancholie
  * @author Metalhead64
  * @author Pill
@@ -2024,6 +2027,8 @@ Sollte dies nicht geschehen, drücke bitte den „Aktualisieren“-Knopf (meist 
 
 Hinweise:
 * Bist du mit dem Ergebnis nicht zufrieden? Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Coll-helppage}}|Hilfeseite über Bücher]].',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendern der Seiteninformation',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendern des Buchs',
 	'coll-notfound_title' => 'Buch nicht gefunden',
 	'coll-notfound_text' => 'Dein Buch konnte nicht gefunden werden.',
 	'coll-download_notfound_title' => 'Datei nicht gefunden',
@@ -3439,6 +3444,8 @@ Si tel n’était pas le cas, veuillez cliquer sur le bouton Actualiser de votre
 
 Notes :
 * Vous n’êtes pas satisfait du résultat ? Consultez [[{{MediaWiki:Coll-helppage}}|la page d’aide des livres]] pour les façons possibles de l’améliorer.',
+	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Rendu du texte d'information de la page",
+	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Rendu du texte d'information de la collection",
 	'coll-notfound_title' => 'Livre non trouvé',
 	'coll-notfound_text' => 'La page du livre n’a pas pu être trouvée.',
 	'coll-download_notfound_title' => 'Fichier introuvable',
@@ -4797,6 +4804,8 @@ Si isto non functiona, per favor preme le button de refrescar in tu navigator.</
 
 Notas:
 * Non satisfacite con le resultato? Vide [[{{MediaWiki:Coll-helppage}}|le pagina de adjuta super le libros]] pro possibilitates de meliorar lo.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informative super le rendition de paginas',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informative super le rendition de collectiones',
 	'coll-notfound_title' => 'Libro non trovate',
 	'coll-notfound_text' => 'Non poteva trovar le pagina del libro.',
 	'coll-download_notfound_title' => 'File non trovate',
@@ -7639,6 +7648,8 @@ Se sòn a marcia pa, për piasì ch\'a sgnaca ël boton ëd rinfresch ëd sò na
 
 Nòte:
 * Pa sodisfàit ëd l'arzultà? Ch'a varda [[{{MediaWiki:Coll-helppage}}|la pàgina d'agiut an sij lìber]] për dle possibilità d'ameliorelo.",
+	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Visualisé test d'anformassion ëd pàgina",
+	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Visualisé test d'anformassion dla cujìa",
 	'coll-notfound_title' => 'Lìber pa trovà',
 	'coll-notfound_text' => "La pàgina dël lìber a l'é pa podusse trové.",
 	'coll-download_notfound_title' => 'Archivi pa trovà',
