@@ -2651,6 +2651,8 @@ Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.</p>',
 
 Notoj:
 * Ĉu la eligo ne plaĉus al vi? Vidu [[{{MediaWiki:Coll-helppage}}|la helpan paĝon pri kolektoj]] por fojoj por plibonigi ĝin.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informoteksto pri bildigante paĝon',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informoteksto pri bildigante kolekton',
 	'coll-notfound_title' => 'Libro ne trovita',
 	'coll-notfound_text' => 'Ne povis trovi libran paĝon.',
 	'coll-download_notfound_title' => 'Dosiero ne trovita',
@@ -3885,6 +3887,8 @@ Wänn des aber nit gschiht, no druck bitte dr „Aktualisiere“-Chnopf (meischt
 
 Hiiwyys:
 * Bisch mit em Ergebnis nit zfride? Megligkeite d Uusgab z verbessere findsch uf dr [[{{MediaWiki:Coll-helppage}}|Hilfsyte iber d Sammlige]].',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendere vu dr Syteinformation',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendere vum Buech',
 	'coll-notfound_title' => 'Buech nit gfunde',
 	'coll-notfound_text' => 'Dyyni Buech het nit chenne gfunde wäre.',
 	'coll-download_notfound_title' => 'Datei nit gfunde',
@@ -7648,8 +7652,8 @@ Se sòn a marcia pa, për piasì ch\'a sgnaca ël boton ëd rinfresch ëd sò na
 
 Nòte:
 * Pa sodisfàit ëd l'arzultà? Ch'a varda [[{{MediaWiki:Coll-helppage}}|la pàgina d'agiut an sij lìber]] për dle possibilità d'ameliorelo.",
-	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Visualisé test d'anformassion ëd pàgina",
-	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Visualisé test d'anformassion dla cujìa",
+	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Visualisassion dël test d'anformassion ëd la pàgina",
+	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Visualisassion dël test d'anformassion dla colession",
 	'coll-notfound_title' => 'Lìber pa trovà',
 	'coll-notfound_text' => "La pàgina dël lìber a l'é pa podusse trové.",
 	'coll-download_notfound_title' => 'Archivi pa trovà',
