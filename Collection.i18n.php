@@ -5604,8 +5604,10 @@ $messages['km'] = array(
  */
 $messages['kn'] = array(
 	'coll-show' => 'ತೋರಿಸು',
+	'coll-title' => 'ಶೀರ್ಷಿಕೆ:',
 	'coll-yes' => 'ಹೌದು',
 	'coll-no' => 'ಇಲ್ಲ',
+	'coll-rendering_status' => '<strong>ಸ್ಥಾನಮಾನ:</strong> $1',
 	'coll-suggest_show' => 'ತೋರಿಸು',
 );
 
