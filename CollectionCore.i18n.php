@@ -1619,6 +1619,13 @@ $messages['km'] = array(
 	'coll-show_collection_tooltip' => 'ចុច​ដើម្បី​កែប្រែ​/ទាញ​យក​/បញ្ជា​ទិញ​សៀវភៅ​របស់​អ្នក​',
 );
 
+/** Kannada (ಕನ್ನಡ)
+ * @author Nayvik
+ */
+$messages['kn'] = array(
+	'coll-help' => 'ಸಹಾಯ',
+);
+
 /** Korean (한국어)
  * @author Ilovesabbath
  * @author Klutzy
