@@ -1194,12 +1194,16 @@ Ma ne\'z a ket en-dro, pouezit war bouton freskaat ho merdeer.</p>',
 	'coll-rendering_status' => '<strong>Stad :</strong> $1',
 	'coll-rendering_article' => '(pajenn wiki : $1)',
 	'coll-rendering_page' => '(pajenn : $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Testenn titouroù war deouez ar pajennoù',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Testenn titouroù war deouez an dastumadegoù',
 	'coll-rendering_finished_title' => 'Argerzh echu',
 	'coll-rendering_finished_text' => "<strong>Ganet eo bet ar restr teul.</strong>
 <strong>[$1 Pellgargit ar restr]</strong> war hoc'h urzhiataer.
 
 Notennoù :
 * N'eo ket an disoc'h diouzhoc'h ? Gwelit [[{{MediaWiki:Coll-helppage}}|ar bajenn skoazell diwar-benn al levrioù]] evit kavout doareoù da wellaat an traoù.",
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Deouez testenn titouroù ar bajenn',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Deouez testenn titouroù an dastumadeg',
 	'coll-notfound_title' => "N'eo ket bet kavet al levr",
 	'coll-notfound_text' => "N'eus ket bet tu da gavout pajenn al levr.",
 	'coll-download_notfound_title' => "N'eo ket bet kavet ar restr",
@@ -1614,6 +1618,8 @@ Můžete si ho <strong>[$1 stáhnout do svého počítače]</strong>.
 
 Poznámky:
 * Nejste spokojeni s výsledkem? Podívejte se na [[{{MediaWiki:Coll-helppage}}|stránku s nápovědou ke kolekcím]], jak ho vylepšit.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informace při vykreslování stránky',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informace při vykreslování knihy',
 	'coll-notfound_title' => 'Kniha nenalezena',
 	'coll-notfound_text' => 'Nebylo možné najít stránku knihy.',
 	'coll-download_notfound_title' => 'Soubor nenalezen',
@@ -6400,12 +6406,16 @@ $messages['ml'] = array(
 	'coll-rendering_status' => '<strong>സ്ഥിതി:</strong> $1',
 	'coll-rendering_article' => '(‌‌വിക്കി താൾ:$1)',
 	'coll-rendering_page' => '(താൾ: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/താളിന്റെ വിവരങ്ങളുള്ള എഴുത്ത് പ്രദർശനയോഗ്യമാക്കുന്നു',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/ശേഖരത്തിന്റെ വിവരങ്ങളുള്ള എഴുത്ത് പ്രദർശനയോഗ്യമാക്കുന്നു',
 	'coll-rendering_finished_title' => 'റെൻഡർ ചെയ്യൽ പൂർണ്ണം',
 	'coll-rendering_finished_text' => '<strong>വിവര പ്രമാണം സൃഷ്ടിച്ചിരിക്കുന്നു.</strong>
 താങ്കളുടെ കമ്പ്യൂട്ടറിലേയ്ക്ക് <strong>[$1 പ്രമാണം ഡൗൺലോഡ് ചെയ്യുക]</strong>.
 
 കുറിപ്പുകൾ:
 * ലഭ്യമായതിൽ സംതൃപ്തനല്ലേ? അത് മെച്ചപ്പെടുത്താനുള്ള സാധ്യതകളെ കുറിച്ചറിയാൻ [[{{MediaWiki:Coll-helppage}}|പുസ്തകങ്ങൾ സംബന്ധിച്ച സഹായം താൾ കാണുക]]',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/താളിന്റെ വിവരങ്ങളുള്ള എഴുത്ത് പ്രദർശനയോഗ്യമാക്കുന്നു',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/ശേഖരത്തിന്റെ വിവരങ്ങളുള്ള എഴുത്ത് പ്രദർശനയോഗ്യമാക്കുന്നു',
 	'coll-notfound_title' => 'പുസ്തകം കണ്ടെത്താനായില്ല',
 	'coll-notfound_text' => 'പുസ്തക താൾ കണ്ടെത്താൻ കഴിഞ്ഞില്ല.',
 	'coll-download_notfound_title' => 'പ്രമാണം കണ്ടെത്താൻ കഴിഞ്ഞില്ല',
