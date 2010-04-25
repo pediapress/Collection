@@ -1662,7 +1662,7 @@ $messages['kri'] = array(
 	'coll-create_a_book' => 'Mek buk',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -2091,6 +2091,8 @@ $messages['oc'] = array(
 	'coll-disable' => 'desactivar',
 	'coll-book_creator_disable' => 'Desactivar lo creator de libre',
 	'coll-book_creator_disable_tooltip' => "Quitar d'utilizar lo creator de libre",
+	'coll-add_linked_article' => 'Apondre la pagina wiki ligada a vòstre libre',
+	'coll-remove_linked_article' => 'Levar la pagina ligada de vòstre libre',
 	'coll-add_category' => 'Apondre una categoria a vòstre libre',
 	'coll-add_category_tooltip' => "Apondre totes los articles d'aquesta categoria a vòstre libre",
 	'coll-add_this_page' => 'Apondre aquesta pagina a vòstre libre',
@@ -3027,7 +3029,7 @@ $messages['yo'] = array(
 	'coll-make_suggestions_tooltip' => 'Àfihàn àwọn ìdámọ̀ràn nípa àwọn ojúewé inú ìwé yín',
 );
 
-/** Yue (粵語) */
+/** Cantonese (粵語) */
 $messages['yue'] = array(
 	'coll-create_a_book' => '整一本書',
 	'coll-download_as' => '下載做$1',

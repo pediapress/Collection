@@ -188,7 +188,8 @@ $messages['qqq'] = array(
 	'coll-collection' => '{{Identical|Book}}',
 	'coll-collections' => '{{Identical|Book}}',
 	'coll-exclusion_category_title' => 'The message text is the name of a category.',
-	'coll-print_template_prefix' => 'Prefix added to the templates name if you want to get a special for-print version of the template. So in a page instead of Template:Foo Template:PrintFoo is used if it exists.',
+	'coll-print_template_prefix' => 'Prefix added to the templates name if you want to get a special for-print version of the template. So in a page instead of Template:Foo Template:PrintFoo is used if it exists.
+{{Identical|Print}}',
 	'coll-print_template_pattern' => 'Use print templates being subpages of regular templates.
 
 $1 is a placeholder and will be replaced by content during the rendering process.',
@@ -5742,7 +5743,7 @@ $messages['krj'] = array(
 	'coll-about_pp' => 'Angut sa Iwan $1',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -5878,7 +5879,7 @@ Di Leß weed neu opjebout, wann De op dä „Dobei donn“ udder dä „{{int:co
 	'right-collectionsaveascommunitypage' => 'E Boch als en Jemeinschaffß_Sigg avspeichere',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (Kernewek)
  * @author Kernoweger
  * @author Kw-Moon
  */
@@ -7336,6 +7337,8 @@ S\'èra pas lo cas, clicatz sul boton d’actualizacion de vòstre navigador.</p
 
 Nòtas :
 * Pas satisfach(a) de la sortida ? Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d’ajuda que concernís las colleccions]] per las possibilitats de melhorament.',
+	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Rendut del tèxte d'informacion de la pagina",
+	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Rendut del tèxte d'informacion de la colleccion",
 	'coll-notfound_title' => 'Libre pas trobat',
 	'coll-notfound_text' => 'Pòt pas trobar lo libre.',
 	'coll-download_notfound_title' => 'Fichièr introbable',
@@ -10546,7 +10549,7 @@ $messages['yo'] = array(
 	'coll-return_to' => 'Padà sí [[:$1]]',
 );
 
-/** Yue (粵語)
+/** Cantonese (粵語)
  * @author Shinjiman
  */
 $messages['yue'] = array(
