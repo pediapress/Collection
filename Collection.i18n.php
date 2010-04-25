@@ -10522,6 +10522,30 @@ $messages['yi'] = array(
 	'coll-rendering_page' => '(בלאַט: $1)',
 );
 
+/** Yoruba (Yorùbá)
+ * @author Demmy
+ */
+$messages['yo'] = array(
+	'coll-desc' => '[[Special:Book|Dá àwọn ìwé]]',
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Lẹ́tà ọ̀rọ̀ olùdá ìwé',
+	'coll-collection' => 'Ìwé',
+	'coll-collections' => 'Àwọn ìwé',
+	'coll-print_template_prefix' => 'Ìtẹ́síìwé',
+	'coll-print_template_pattern' => '$1/Ìtẹ́síìwé',
+	'coll-your_book' => 'Ìwé yín',
+	'coll-title' => 'Àkọlé:',
+	'coll-subtitle' => 'Àkọléabẹ́:',
+	'coll-contents' => 'Àwọn àkóónú',
+	'coll-create_chapter' => 'Dá orí ìwé',
+	'coll-sort_alphabetically' => 'Títò bi ABD',
+	'coll-rename' => 'Àtúnṣọlọ́rúkọ',
+	'coll-yes' => 'Bẹ́ẹ̀ni',
+	'coll-no' => 'Bẹ́ẹ̀kọ́',
+	'coll-cancel' => 'Fagilé',
+	'coll-about_pp' => 'Nípa $1',
+	'coll-return_to' => 'Padà sí [[:$1]]',
+);
+
 /** Yue (粵語)
  * @author Shinjiman
  */
