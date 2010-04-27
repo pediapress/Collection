@@ -109,14 +109,16 @@ class CollectionSession {
 	static function purge() {
 		$coll = $_SESSION['wsCollection'];
 		$newitems = array();
-		foreach ( $coll['items'] as $index => $item ) {
-			if ( $item['type'] == 'article' ) {
-				$t = Title::newFromText( $item['title'] );
-				if ( $t->exists() ) {
+		if ( isset( $coll['items'] ) ) {
+			foreach ( $coll['items'] as $index => $item ) {
+				if ( $item['type'] == 'article' ) {
+					$t = Title::newFromText( $item['title'] );
+					if ( $t->exists() ) {
+						$newitems[] = $item;
+					}
+				} else {
 					$newitems[] = $item;
 				}
-			} else {
-				$newitems[] = $item;
 			}
 		}
 		$coll['items'] = $newitems;
