@@ -48,7 +48,7 @@ function req(func, args, callback) {
         'action': 'ajax',
         'rs': 'wfAjaxCollection' + func,
         'rsargs[]': args
-    }, callback);
+    }, callback, 'json');
 }
 
 var script_url = wgServer +
@@ -91,7 +91,7 @@ function clear_collection() {
 			function(result) {
 				refresh_list(result);
 				req('GetBookCreatorBoxContent', ['showbook', null], function(result2) {
-					$('#coll-book_creator_box').html(result2);
+					$('#coll-book_creator_box').html(result2.html);
 				});
 			});
 	}
@@ -120,7 +120,7 @@ function remove_item(index) {
 		function(result) {
 			refresh_list(result);
 			req('GetBookCreatorBoxContent', ['showbook', null], function(result2) {
-				$('#coll-book_creator_box').html(result2);
+				$('#coll-book_creator_box').html(result2.html);
 			});
 		});
 	return false;
@@ -173,8 +173,8 @@ function make_sortable() {
 	$('#collectionList .sortableitem').css('cursor', 'move');
 }
 
-function refresh_list(html) {
-	$('#collectionListContainer').html(html);
+function refresh_list(data) {
+	$('#collectionListContainer').html(data.html);
 	$('.makeVisible').css('display', 'inline');
 	make_sortable();
 	if ($('#collectionList .article').length == 0) {

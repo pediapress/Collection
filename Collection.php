@@ -217,7 +217,14 @@ function wfAjaxCollectionGetBookCreatorBoxContent( $ajaxHint = '', $oldid = null
 	if ( !is_null( $oldid ) ) {
 		$oldid = intval( $oldid );
 	}
-	return CollectionHooks::getBookCreatorBoxContent( $ajaxHint, $oldid );
+	$html = CollectionHooks::getBookCreatorBoxContent( $ajaxHint, $oldid );
+
+	$json = new Services_JSON();
+	$result = array();
+	$result['html'] = $html;
+	$r = new AjaxResponse( $json->encode( $result ) );
+	$r->setContentType( 'application/json' );
+	return $r;
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionGetBookCreatorBoxContent';
@@ -225,14 +232,24 @@ $wgAjaxExportList[] = 'wfAjaxCollectionGetBookCreatorBoxContent';
 function wfAjaxCollectionGetItemList() {
 	wfLoadExtensionMessages( 'CollectionCore' );
 	wfLoadExtensionMessages( 'Collection' );
+
+	$collection = $_SESSION['wsCollection'];
+
 	$template = new CollectionListTemplate();
-	$template->set( 'collection', $_SESSION['wsCollection'] );
+	$template->set( 'collection', $collection );
 	$template->set( 'is_ajax', true );
 	ob_start();
 	$template->execute();
 	$html = ob_get_contents();
 	ob_end_clean();
-	return $html;
+
+	$json = new Services_JSON();
+	$result = array();
+	$result['html'] = $html;
+	$result['collection'] = $collection;
+	$r = new AjaxResponse( $json->encode( $result ) );
+	$r->setContentType( 'application/json' );
+	return $r;
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionGetItemList';
