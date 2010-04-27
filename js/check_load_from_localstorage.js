@@ -10,7 +10,6 @@ function count_articles(items) {
 $(function() {
 	var c = $.jStorage.get('collection');
 	if (c) {
-		console.log(c);
 		var num_pages = 0;
 		for (var i = 0; i < c.items.length; i++) {
 			if (c.items[i]['type'] == 'article') {
