@@ -40,7 +40,7 @@ $wgCollectionVersion = "1.4";
 # Configuration:
 
 /** Bump the version number every time you change any of the JavaScript files */
-$wgCollectionStyleVersion = 6;
+$wgCollectionStyleVersion = 7;
 
 /** URL of mw-serve render server */
 $wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
@@ -194,21 +194,21 @@ $wgAjaxExportList[] = 'wfAjaxGetMWServeStatus';
 
 function wfAjaxCollectionAddArticle( $namespace = 0, $title = '', $oldid = '' ) {
 	SpecialCollection::addArticleFromName( $namespace, $title, $oldid );
-	return '';
+	return wfAjaxCollectionGetItemList();
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionAddArticle';
 
 function wfAjaxCollectionRemoveArticle( $namespace = 0, $title = '', $oldid = '' ) {
 	SpecialCollection::removeArticleFromName( $namespace, $title, $oldid );
-	return '';
+	return wfAjaxCollectionGetItemList();
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionRemoveArticle';
 
 function wfAjaxCollectionAddCategory( $title = '' ) {
 	SpecialCollection::addCategoryFromName( $title );
-	return '';
+	return wfAjaxCollectionGetItemList();
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionAddCategory';
@@ -277,7 +277,7 @@ $wgAjaxExportList[] = 'wfAjaxCollectionRenameChapter';
 
 function wfAjaxCollectionSetTitles( $title, $subtitle ) {
 	SpecialCollection::setTitles( $title, $subtitle );
-	return '';
+	return wfAjaxCollectionGetItemList();
 }
 
 $wgAjaxExportList[] = 'wfAjaxCollectionSetTitles';

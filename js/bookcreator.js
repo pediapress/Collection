@@ -23,6 +23,12 @@
 
 var script_url = wgServer + ((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
 
+function save_collection(collection) {
+	$.jStorage.set('collection', collection);
+}
+
+window.wfCollectionSave = save_collection;
+
 function refreshBookCreatorBox(hint, oldid) {
 	$.getJSON(script_url, {
 		'action': 'ajax',
@@ -45,7 +51,8 @@ function collectionCall(func, args) {
 			oldid = args[2];
 		}
 		refreshBookCreatorBox(hint, oldid);
-	});
+		save_collection(result.collection);
+	}, 'json');
 }
 
 window.collectionCall = collectionCall; // public
@@ -73,10 +80,11 @@ function addremove_article(action, title) {
 		'action': 'ajax',
 		'rs': 'wfAjaxCollection' + action.charAt(0).toUpperCase() + action.slice(1) + 'Article',
 		'rsargs[]': [0, title, '']
-	}, function() {
+	}, function(result) {
 		hide();
 		refreshBookCreatorBox(null, null);
-	});
+		save_collection(result.collection);
+	}, 'json');
 }
 
 function show(link) {

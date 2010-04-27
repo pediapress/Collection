@@ -278,6 +278,22 @@ class CollectionHooks {
 		$html .= Xml::element( 'script',
 			array(
 				'type' => $wgJsMimeType,
+				'src' => "$jsPath/jquery.json.js?$wgCollectionStyleVersion",
+			),
+			'', false
+		);
+
+		$html .= Xml::element( 'script',
+			array(
+				'type' => $wgJsMimeType,
+				'src' => "$jsPath/jstorage.js?$wgCollectionStyleVersion",
+			),
+			'', false
+		);
+
+		$html .= Xml::element( 'script',
+			array(
+				'type' => $wgJsMimeType,
 				'src' => "$jsPath/bookcreator.js?$wgCollectionStyleVersion",
 			),
 			'', false

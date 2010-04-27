@@ -127,8 +127,9 @@ function remove_item(index) {
 }
 
 function set_titles() {
-	req('SetTitles',
-		[$('#titleInput').val(), $('#subtitleInput').val()], function() {});
+	req('SetTitles', [$('#titleInput').val(), $('#subtitleInput').val()], function(result) {
+        wfCollectionSave(result.collection);
+    });
 	return false;
 }
 
@@ -174,6 +175,7 @@ function make_sortable() {
 }
 
 function refresh_list(data) {
+    wfCollectionSave(data.collection);
 	$('#collectionListContainer').html(data.html);
 	$('.makeVisible').css('display', 'inline');
 	make_sortable();
