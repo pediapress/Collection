@@ -21,23 +21,31 @@
 
 (function($) {
 
+var script_url = wgServer + ((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
+
 function refreshBookCreatorBox(hint, oldid) {
-  sajax_request_type = 'GET';
-  sajax_do_call('wfAjaxCollectionGetBookCreatorBoxContent', [hint, oldid], function(xhr) {
-		$('#coll-book_creator_box').html(xhr.responseText);
-  });
+	$.get(script_url, {
+		'action': 'ajax',
+		'rs': 'wfAjaxCollectionGetBookCreatorBoxContent',
+		'rsargs[]': [hint, oldid]
+	}, function(result) {
+		$('#coll-book_creator_box').html(result);
+	});
 }
 
 function collectionCall(func, args) {
   var hint = args.shift();
-  sajax_request_type = 'POST';
-  sajax_do_call('wfAjaxCollection' + func, args, function() {
+	$.post(script_url, {
+		'action': 'ajax',
+		'rs': 'wfAjaxCollection' + func,
+		'rsargs[]': args
+	}, function(result) {
 		var oldid = null;
 		if (args.length == 3) {
 			oldid = args[2];
 		}
 		refreshBookCreatorBox(hint, oldid);
-  });
+	});
 }
 
 window.collectionCall = collectionCall; // public
@@ -49,7 +57,6 @@ var addremove_link = null;
 var visible = false;
 var show_soon_timeout = null;
 var get_data_xhr = null;
-var script_url = wgServer + ((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
 var current_link = null;
 var title = null;
 

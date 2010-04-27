@@ -1,21 +1,19 @@
-(function() {
-
-var jQuery = collection_jQuery;
+(function($) {
 
 var script_url = wgServer +
 	((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
 
 function set_status(html) {
 	if (html) {
-		jQuery('#collectionSuggestStatus').css('visibility', 'visible').html(html);
+		$('#collectionSuggestStatus').css('visibility', 'visible').html(html);
 	} else {
-		jQuery('#collectionSuggestStatus').css('visibility', 'hidden').html('&nbsp;');
+		$('#collectionSuggestStatus').css('visibility', 'hidden').html('&nbsp;');
 	}
 }
 
 function collectionSuggestCall(func, args) {
 		set_status('...');
-		jQuery.post(script_url, {
+		$.post(script_url, {
 			'action': 'ajax',
 			'rs': 'wfAjaxCollectionSuggest' + func,
 			'rsargs[]': args
@@ -25,16 +23,20 @@ function collectionSuggestCall(func, args) {
 			} else {
 				set_status(result.last_action);
 			}
-			jQuery('#collectionSuggestions').html(result.suggestions_html);
-			jQuery('#collectionMembers').html(result.members_html);
-			jQuery('#coll-num_pages').text(result.num_pages);
-			sajax_do_call('wfAjaxCollectionGetBookCreatorBoxContent', ['suggest', null], function(xhr) {
-				jQuery('#coll-book_creator_box').html(xhr.responseText);
+			$('#collectionSuggestions').html(result.suggestions_html);
+			$('#collectionMembers').html(result.members_html);
+			$('#coll-num_pages').text(result.num_pages);
+			$.get(script_url, {
+				'action': 'ajax',
+				'rs': 'wfAjaxCollectionGetBookCreatorBoxContent',
+				'rsargs[]': ['suggest', null]
+			}, function(result) {
+				$('#coll-book_creator_box').html(result);
 			});
 		}, 'json');
 }
 
 window.collectionSuggestCall = collectionSuggestCall;
 
-})();
+})(collection_jQuery);
 
