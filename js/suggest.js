@@ -18,6 +18,7 @@ function collectionSuggestCall(func, args) {
 			'rs': 'wfAjaxCollectionSuggest' + func,
 			'rsargs[]': args
 		}, function(result) {
+			wfCollectionSave(result.collection);
 			if (func == 'undo') {
 				set_status(false);
 			} else {
