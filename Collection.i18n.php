@@ -162,6 +162,7 @@ The list is updated whenever you click on the add or remove buttons.',
 	'coll-suggest_article_remove'     => "Page <strong>$1</strong> has been removed from your book ($2).",
 	'coll-suggest_undo_tooltip'       => 'Undo this action',
 	'coll-suggest_undo'               => 'undo',
+	'coll-load_local_book'            => 'Click OK to continue with your book %TITLE% which contains %NUMPAGES% wiki pages. Click Cancel to delete it and start with an empty book.',
 
 	'right-collectionsaveasuserpage'  => 'Save books as user page',
 	'right-collectionsaveascommunitypage' => 'Save books as community page',

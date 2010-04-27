@@ -310,6 +310,7 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	function renderBookCreatorPage( $referer ) {
+		global $wgCollectionStyleVersion;
 		global $wgOut;
 		global $wgScriptPath;
 		global $wgTitle;
@@ -321,6 +322,22 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->addWikiMsg(  'coll-book_creator_intro' );
 
 		$imagepath = "$wgScriptPath/extensions/Collection/images";
+		$jspath = "$wgScriptPath/extensions/Collection/js";
+
+		if ( method_exists( $wgOut, 'includeJQuery' ) ) {
+			$wgOut->includeJQuery();
+		} else {
+			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.js?$wgCollectionStyleVersion\"></script>" );
+		}
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.json.js?$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jstorage.js?$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/check_load_from_localstorage.js?$wgCollectionStyleVersion\"></script>" );
+
+		$coll = CollectionSession::getCollection();
+		$dialogtxt = wfMsg( 'coll-load_local_book' );
+		$redirecturl = SkinTemplate::makeSpecialUrl( 'Book' );
+
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\">var collection_dialogtxt = " . Xml::encodeJsVar( $dialogtxt ) . "; var collection_redirect_url = " . Xml::encodeJsVar( $redirecturl ) . ";</script>" );
 
 		$wgOut->mScripts .= <<<EOS
 <style type="text/css">
