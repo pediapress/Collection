@@ -40,7 +40,7 @@ $wgCollectionVersion = "1.4";
 # Configuration:
 
 /** Bump the version number every time you change any of the JavaScript files */
-$wgCollectionStyleVersion = 7;
+$wgCollectionStyleVersion = 8;
 
 /** URL of mw-serve render server */
 $wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
@@ -357,6 +357,7 @@ function wfCollectionSuggestAction( $action, $article ) {
 		htmlspecialchars( $article ),
 		$undoLink
 	);
+	$result['collection'] = CollectionSession::getCollection();
 	$r = new AjaxResponse( $json->encode( $result ) );
 	$r->setContentType( 'application/json' );
 	return $r;
