@@ -26,12 +26,12 @@ function collectionSuggestCall(func, args) {
 			$('#collectionSuggestions').html(result.suggestions_html);
 			$('#collectionMembers').html(result.members_html);
 			$('#coll-num_pages').text(result.num_pages);
-			$.get(script_url, {
+			$.getJSON(script_url, {
 				'action': 'ajax',
 				'rs': 'wfAjaxCollectionGetBookCreatorBoxContent',
 				'rsargs[]': ['suggest', null]
 			}, function(result) {
-				$('#coll-book_creator_box').html(result);
+				$('#coll-book_creator_box').html(result.html);
 			});
 		}, 'json');
 }

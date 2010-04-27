@@ -24,12 +24,12 @@
 var script_url = wgServer + ((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
 
 function refreshBookCreatorBox(hint, oldid) {
-	$.get(script_url, {
+	$.getJSON(script_url, {
 		'action': 'ajax',
 		'rs': 'wfAjaxCollectionGetBookCreatorBoxContent',
 		'rsargs[]': [hint, oldid]
 	}, function(result) {
-		$('#coll-book_creator_box').html(result);
+		$('#coll-book_creator_box').html(result.html);
 	});
 }
 
