@@ -1910,7 +1910,9 @@ $messages['ms'] = array(
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
-	'coll-add_category' => 'Поладомс категория',
+	'coll-create_a_book' => 'Шкамс кинига',
+	'coll-book_creator' => 'Кинигань шкиця',
+	'coll-add_category' => 'Поладомс кинигазот те категориянть',
 	'coll-bookscategory' => 'Кинигат',
 	'coll-helppage' => 'Help:Кинигат',
 );
