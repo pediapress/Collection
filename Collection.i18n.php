@@ -859,6 +859,7 @@ $messages['be-tarask'] = array(
 	'coll-suggest_article_remove' => 'Старонка <strong>$1</strong> была выдаленая з Вашай кнігі ($2).',
 	'coll-suggest_undo_tooltip' => 'Адмяніць гэтае дзеяньне',
 	'coll-suggest_undo' => 'адмяніць',
+	'coll-load_local_book' => 'Націсьніце «Добра» каб працягваць працу з Вашай кнігай %TITLE%, якая ўтрымлівае %NUMPAGES% вікі-старонак. Націсьніце «Адмена», каб выдаліць яе і пачаць з пустой кнігі.',
 	'right-collectionsaveasuserpage' => 'захаваньне кніг як старонак ўдзельніка',
 	'right-collectionsaveascommunitypage' => 'захаваньне кніг як старонак супольнасьці',
 );
@@ -7922,6 +7923,7 @@ A lista é actualizada sempre que clica os botões de adicionar ou remover.',
 	'coll-suggest_article_remove' => 'A página <strong>$1</strong> foi removida do seu livro ($2).',
 	'coll-suggest_undo_tooltip' => 'Desfazer esta acção',
 	'coll-suggest_undo' => 'desfazer',
+	'coll-load_local_book' => 'Clique OK para continuar com o seu livro %TITLE% que contém %NUMPAGES% páginas wiki. Clique Cancelar para apagá-lo e começar com um livro vazio.',
 	'right-collectionsaveasuserpage' => 'Gravar livros como página de utilizador',
 	'right-collectionsaveascommunitypage' => 'Gravar livros como página comunitária',
 );
