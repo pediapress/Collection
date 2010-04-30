@@ -2856,6 +2856,7 @@ La lista es actualizada cada vez que haces click en los botones de agregar o rem
 	'coll-suggest_article_remove' => 'Página <strong>$1</strong> ha sido removida de tu libro ($2).',
 	'coll-suggest_undo_tooltip' => 'Deshacer esta acción',
 	'coll-suggest_undo' => 'deshacer',
+	'coll-load_local_book' => 'Haz click en OK para continuar con tu libro %TITLE% que contiene %NUMPAGES% página wiki. Haz click en Cancelar para borrarlo y comenzar con un libro vacío.',
 	'right-collectionsaveasuserpage' => 'Grabar libros como página de usuario',
 	'right-collectionsaveascommunitypage' => 'Grabar libros como página de la comunidad',
 );
