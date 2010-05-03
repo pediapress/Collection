@@ -10424,12 +10424,16 @@ Nếu không thấy thay đổi gì, xin hãy bấm nút Refresh hoặc Reload t
 	'coll-rendering_status' => '<strong>Trạng thái:</strong> $1',
 	'coll-rendering_article' => '(trang wiki: $1)',
 	'coll-rendering_page' => '(trang: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Kết xuất văn bản thông tin trang',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Kết xuất văn bản thông tin tuyển tập',
 	'coll-rendering_finished_title' => 'Kết xuất xong',
 	'coll-rendering_finished_text' => '<strong>Xong kết xuất tập tin tài liệu.</strong>
 <strong>[$1 Tải nó về]</strong> máy tính của mình.
 
 Chú ý:
 * Không vừa lòng với bản kết xuất này? Hãy đọc [[{{MediaWiki:Coll-helppage}}|trợ giúp về tập hợp]] để biết về những cách để cải tiến nó.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Kết xuất văn bản thông tin trang',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Kết xuất văn bản thông tin tuyển tập',
 	'coll-notfound_title' => 'Không tìm thấy sách',
 	'coll-notfound_text' => 'Không tìm thấy trang sách.',
 	'coll-download_notfound_title' => 'Không tìm thấy tập tin',
@@ -10468,6 +10472,7 @@ Danh sách này được cập nhật mỗi khi bạn nhấn vào nút thêm ho�
 	'coll-suggest_article_remove' => 'Trang <strong>$1</strong> đã bị xóa ra khỏi cuốn sách ($2).',
 	'coll-suggest_undo_tooltip' => 'Phục hồi tác vụ này',
 	'coll-suggest_undo' => 'phục hồi',
+	'coll-load_local_book' => 'Nhấn OK để tiếp tục quyển sách %TITLE% hiện có %NUMPAGES% trang wiki. Nhấn Cancel để xóa và làm việc với quyển sách trắng.',
 	'right-collectionsaveasuserpage' => 'Lưu sách vở thành trang cá nhân',
 	'right-collectionsaveascommunitypage' => 'Lưu sách thành trang cộng đồng',
 );
