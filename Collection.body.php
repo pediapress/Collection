@@ -327,17 +327,25 @@ class SpecialCollection extends SpecialPage {
 		if ( method_exists( $wgOut, 'includeJQuery' ) ) {
 			$wgOut->includeJQuery();
 		} else {
-			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.js?$wgCollectionStyleVersion\"></script>" );
+			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.js?" . 
+				"$wgCollectionStyleVersion\"></script>" );
 		}
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.json.js?$wgCollectionStyleVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jstorage.js?$wgCollectionStyleVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/check_load_from_localstorage.js?$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.json.js?" . 
+			"$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jstorage.js?" . 
+			"$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/check_load_from_localstorage.js?" .
+			"$wgCollectionStyleVersion\"></script>" );
 
 		$coll = CollectionSession::getCollection();
 		$dialogtxt = wfMsg( 'coll-load_local_book' );
 		$redirecturl = SkinTemplate::makeSpecialUrl( 'Book' );
 
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\">var collection_dialogtxt = " . Xml::encodeJsVar( $dialogtxt ) . "; var collection_redirect_url = " . Xml::encodeJsVar( $redirecturl ) . ";</script>" );
+		$wgOut->addScript( 
+			"<script type=\"$wgJsMimeType\">\n" . 
+			"var collection_dialogtxt = " . Xml::encodeJsVar( $dialogtxt ) . ";\n" .
+			"var collection_redirect_url = " . Xml::encodeJsVar( $redirecturl ) . ";\n" .
+			"</script>" );
 
 		$wgOut->mScripts .= <<<EOS
 <style type="text/css">
