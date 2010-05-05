@@ -1633,6 +1633,7 @@ $messages['kn'] = array(
  * @author Yknok29
  */
 $messages['ko'] = array(
+	'coll-print_export' => '인쇄/내보내기',
 	'coll-create_a_book' => '책 만들기',
 	'coll-download_as' => '$1로 다운로드',
 	'coll-add_category' => '이 분류를 책에 추가하기',
