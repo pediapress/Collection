@@ -5645,6 +5645,11 @@ $messages['kn'] = array(
  */
 $messages['ko'] = array(
 	'coll-desc' => '[[Special:Book|책 만들기]]',
+	'coll-book_creator_intro' => "<big>''책 생성기''로 당신의 선택에 따라 위키 문서를 담은 책을 생성할 수 있습니다.  다른 포맷(PDF 또는 ODF)으로 책을 내보낼 수 있으며 인쇄된 책을 주문할 수도 있습니다.</big>",
+	'coll-manage_your_book' => '책 관리하기',
+	'coll-book_creator_help' => '자세한 정보에 대해서는 [[{{MediaWiki:Coll-helppage}}|책에 대한 도움말]]을 참고하십시오.',
+	'coll-start_book_creator' => '책 생성기 시작하기',
+	'coll-book_creator_continue' => '책 생성기를 이용해 진행하기',
 	'coll-collection' => '책',
 	'coll-collections' => '책',
 	'coll-exclusion_category_title' => '인쇄시 제외할 문서',
