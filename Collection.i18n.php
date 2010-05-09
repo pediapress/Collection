@@ -1810,6 +1810,7 @@ Mae'r rhestr yn cael ei adnewyddu bob tro yr ydych yn pwyso ar y botymau ychwane
 );
 
 /** Danish (Dansk)
+ * @author Hylle
  * @author Jon Harald Søby
  * @author Thomas81
  */
@@ -1856,9 +1857,11 @@ Denne side vil ikke virke korrekt, medmindre JavaScript er aktiveret.</strong>',
 	'coll-new_chapter' => 'Indtast navnet på nyt kapitel',
 	'coll-rename_chapter' => 'Indtast nyt navn til kapitel',
 	'coll-no_such_category' => 'Ingen kategori med det navn',
+	'coll-notitle_title' => 'Sidens titel kunne ikke bestemmes.',
 	'coll-post_failed_title' => 'POST-forespørgsel mislykkedes',
 	'coll-post_failed_msg' => 'POST-forespørgslen til $1 mislykkedes ($2).',
 	'coll-mwserve_failed_title' => 'Genererings-serverfejl',
+	'coll-mwserve_failed_msg' => 'En fejl opstod på renderingsserveren: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Fejlrespons fra serveren',
 	'coll-empty_collection' => 'Tom bog',
 	'coll-save_collection_title' => 'Gem og del din bog',
@@ -1870,6 +1873,8 @@ Denne side vil ikke virke korrekt, medmindre JavaScript er aktiveret.</strong>',
 	'coll-save_category' => 'Alle gemte bøger tilføjes til kategorien [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Siden eksisterer.
 Overskriv den?',
+	'coll-overwrite_text' => 'En side med navnet [[:$1]] eksisterer allerede.
+Ønsker du at erstatte den med din bog?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nej',
 	'coll-load_overwrite_text' => 'Du har allerede nogle sider i din bog. 
@@ -1931,6 +1936,7 @@ Kontakt venligst din MediaWiki-administrator.',
 	'coll-suggest_article_remove' => 'Siden <strong>$1</strong> er blevet fjernet fra din bog ($2).',
 	'coll-suggest_undo_tooltip' => 'Fortryd denne handling',
 	'coll-suggest_undo' => 'fortryd',
+	'right-collectionsaveasuserpage' => 'Gem bøger som brugerside',
 );
 
 /** German (Deutsch)
@@ -2565,6 +2571,7 @@ $messages['el'] = array(
 );
 
 /** Esperanto (Esperanto)
+ * @author Airon90
  * @author Amikeco
  * @author Castelobranco
  * @author Yekrats
@@ -2574,8 +2581,8 @@ $messages['eo'] = array(
 	'coll-desc' => '[[Special:Book|Krei librojn]]',
 	'coll-book_creator_intro' => "<big>Per la ''libro-kreilo'' vi povas krei libron enhavantan vikipaĝojn de via elekto. Vi povas eksporti la libro en variaj formoj (ekz-e PDF aŭ ODF) aŭ peti presitan kopion.</big>",
 	'coll-manage_your_book' => 'Administri vian libron',
-	'coll-book_creator_help' => 'Vicu [[{{MediaWiki:Coll-helppage}}|la help-paĝo pri libroj]] por plua informo.',
-	'coll-start_book_creator' => 'Starti libran reĝimon',
+	'coll-book_creator_help' => 'Vidi [[{{MediaWiki:Coll-helppage}}|la help-paĝon pri libroj]] por pliaj informoj.',
+	'coll-start_book_creator' => 'Komenci libro-kreilon',
 	'coll-book_creator_continue' => 'Daŭre uzante libro-kreilon',
 	'coll-book_creator_disable_text' => "''Libra kreilo'' estos malŝalta kaj la libro kiun vi laboras estos forigita.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Teksto por libra reĝimo',
@@ -2703,6 +2710,7 @@ La listo estas ĝisdatigita iam ajn vi klakas la butonojn aldoni aŭ forigi.',
 	'coll-suggest_article_remove' => 'Paĝo <strong>$1</strong> estis forigita de via libro ($2).',
 	'coll-suggest_undo_tooltip' => 'Malfari ĉi tiun agon',
 	'coll-suggest_undo' => 'malfari',
+	'coll-load_local_book' => 'Alklaki OK por daŭrigi kun via libro %TITOLO% kiu enhavas %NUMPAGES% viki-paĝojn. Alklaki "Nuligi" por komenci kun malplena libro.',
 	'right-collectionsaveasuserpage' => 'Konservi librojn kiel uzanto-paĝo',
 	'right-collectionsaveascommunitypage' => 'Konservi librojn kiel komunuma paĝo',
 );
@@ -5663,7 +5671,7 @@ $messages['ko'] = array(
 	'coll-savedbook_template' => '책_완성본',
 	'coll-your_book' => '당신의 책',
 	'coll-download_title' => '다운로드',
-	'coll-download_text' => '원하는 형식을 선택한 다음 버튼을 클릭해주세요.',
+	'coll-download_text' => '책을 다운로드하려면 원하는 형식을 선택한 다음 버튼을 클릭해주세요.',
 	'coll-download_as_text' => '$1 형식으로 된 책을 다운로드하려면 버튼을 클릭해 주세요.',
 	'coll-download' => '다운로드',
 	'coll-format_label' => '포맷:',
