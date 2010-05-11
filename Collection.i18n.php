@@ -405,6 +405,7 @@ $messages['am'] = array(
  * @author Juanpabl
  */
 $messages['an'] = array(
+	'coll-cancel' => 'Cancelar',
 	'coll-suggest_undo_tooltip' => 'Desfer ista aczión',
 	'coll-suggest_undo' => 'desfer',
 );
@@ -3949,6 +3950,7 @@ Alliwyl, wänn Du uf d Zuefiege- oder Useneh-Schaltflechine drucksch, wird die L
 	'coll-suggest_article_remove' => 'D Syte <strong>$1</strong> isch us Dyym Buech uusegnuu wore ($2).',
 	'coll-suggest_undo_tooltip' => 'Die Aktion ruckgängig mache',
 	'coll-suggest_undo' => 'ruckgängig',
+	'coll-load_local_book' => 'Druck uf OK, go mit Dyym Buech %TITLE% wytermache, wu us %NUMPAGES% Wikisyte bstoht. Druck uf Abbräche go s wider lesche un mit eme lääre Buech aafange.',
 	'right-collectionsaveasuserpage' => 'Biecher as Benutzersyte spychere',
 	'right-collectionsaveascommunitypage' => 'Biecher as Gmeinschaftssyte spychere',
 );
