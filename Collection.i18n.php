@@ -7282,6 +7282,7 @@ Listen oppdateres når du klikker på legg til- eller fjern-knappene.',
 
 /** Occitan (Occitan)
  * @author Cedric31
+ * @author Jfblanc
  */
 $messages['oc'] = array(
 	'coll-desc' => '[[Special:Book|Crear de libres]]',
@@ -7339,7 +7340,7 @@ Aquesta pagina s'aficharà pas corrèctament tant que javascript serà pas activ
 	'coll-revision' => 'Version : $1',
 	'coll-save_collection_title' => 'Salvar e partejar vòstre libre',
 	'coll-save_collection_text' => 'Causissètz un emplaçament :',
-	'coll-login_to_save' => 'Se volètz salvar vòstre libre, [[Special:UserLogin|vos cal vos connectar o vos crear un compte]].',
+	'coll-login_to_save' => 'Se volètz salvar vòstre libre, [[Special:UserLogin|vos cal connectar o vos crear un compte]].',
 	'coll-personal_collection_label' => 'Libre personal :',
 	'coll-community_collection_label' => 'Libre collectiu :',
 	'coll-save_collection' => 'Salvar lo libre',
@@ -7829,9 +7830,9 @@ $messages['pt'] = array(
 	'coll-unknown_subpage_title' => 'Subpágina desconhecida',
 	'coll-unknown_subpage_text' => 'Não existe esta sub-página do [[Special:Book|Livro]]',
 	'coll-couldnotaddarticle_title' => 'Não foi possível adicionar a página wiki',
-	'coll-couldnotaddarticle_msg' => 'A página wiki não pôde ser adicionada.',
+	'coll-couldnotaddarticle_msg' => 'Não foi possível adicionar a página wiki.',
 	'coll-couldnotremovearticle_title' => 'Não foi possível remover a página wiki',
-	'coll-couldnotremovearticle_msg' => 'A página wiki não pôde ser removida.',
+	'coll-couldnotremovearticle_msg' => 'Não foi possível remover a página wiki.',
 	'coll-noscript_text' => '<h1>É necessário o JavaScript!</h1>
 <strong>Ou o seu browser não suporta JavaScript ou o JavaScript foi desactivado.
 Esta página não funcionará correctamente sem o JavaScript.</strong>',
@@ -7954,6 +7955,7 @@ A lista é actualizada sempre que clica os botões de adicionar ou remover.',
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author Eduardo.mps
+ * @author Hamilton Abreu
  * @author Heldergeovane
  * @author Jorge Morais
  * @author Luckas Blade
@@ -7974,7 +7976,7 @@ $messages['pt-br'] = array(
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Sub-página desconhecida',
 	'coll-unknown_subpage_text' => 'Esta subpágina do [[Special:Book|Livro]] não existe',
-	'coll-couldnotaddarticle_title' => 'Não pôde ser adicionada a página wiki',
+	'coll-couldnotaddarticle_title' => 'Não foi possível adicionar a página wiki',
 	'coll-couldnotaddarticle_msg' => 'A página wiki não pôde ser adicionada.',
 	'coll-couldnotremovearticle_title' => 'Não pôde remover a página wiki',
 	'coll-couldnotremovearticle_msg' => 'A página wiki não pôde ser removida.',
@@ -9185,6 +9187,7 @@ $messages['su'] = array(
 
 /** Swedish (Svenska)
  * @author Boivie
+ * @author Dafer45
  * @author GameOn
  * @author H92
  * @author Jon Harald Søby
@@ -9327,6 +9330,7 @@ Listan uppdateras när du klickar på lägg till- eller ta bort-knappar.',
 	'coll-suggest_article_remove' => 'Sidan <strong>$1</strong> har blivit borttagen från din bok ($2).',
 	'coll-suggest_undo_tooltip' => 'Gör denna handling ogjord',
 	'coll-suggest_undo' => 'gör ogjord',
+	'coll-load_local_book' => 'Klicka på OK för att fortsätta med din bok %TITLE% som innehåller %NUMPAGES% wiki sidor. Klicka på Avbryt för att ta bort den och börja med en tom bok.',
 	'right-collectionsaveasuserpage' => 'Spara böcker som användarsidor',
 	'right-collectionsaveascommunitypage' => 'Spara böcker som gemenskapssida',
 );

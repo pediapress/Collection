@@ -1538,7 +1538,7 @@ $messages['ja'] = array(
 	'coll-not_addable' => 'このページは追加できません',
 	'coll-make_suggestions' => 'ページの候補',
 	'coll-make_suggestions_tooltip' => 'あなたのブックに保存されたページを元に候補を表示します',
-	'coll-suggest_empty' => 'なし',
+	'coll-suggest_empty' => '空',
 );
 
 /** Javanese (Basa Jawa)
