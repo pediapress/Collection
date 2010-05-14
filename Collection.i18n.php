@@ -1227,7 +1227,7 @@ Marteze eo bet diverket hag ezhomm zo he genel en-dro.",
 	'coll-invalid_podpartner_title' => 'Keveler moullañ diouzh ar goulenn (POD) direizh',
 	'coll-invalid_podpartner_msg' => "N'eo ket mat ar c'heveler moullañ diouzh ar goulenn (POD) merket.
 Kit e darempred gant ur merour MediaWiki.",
-	'coll-license' => 'Aotre implijout',
+	'coll-license' => 'Aotre-implijout',
 	'coll-return_to' => 'Distreiñ da [[:$1]]',
 	'coll-more_info' => "Diskouez muioc'h a ditouroù",
 	'coll-hide_info' => 'Kuzhat an titouroù',
@@ -8546,6 +8546,19 @@ $messages['sah'] = array(
 	'coll-suggest_undo' => 'төннөрөргө',
 	'right-collectionsaveasuserpage' => 'кинигэлэри кытааччы тус сирэйин курдук хаалларыы',
 	'right-collectionsaveascommunitypage' => 'кинигэлэри бөлөх тус сирэйин курдук хаалларыы',
+);
+
+/** Sardinian (Sardu)
+ * @author Andria
+ */
+$messages['sc'] = array(
+	'coll-collection' => 'Libru',
+	'coll-collections' => 'Libros',
+	'coll-print_template_prefix' => 'Imprenta',
+	'coll-print_template_pattern' => '$1/Imprenta',
+	'coll-show' => 'Ammustra',
+	'coll-yes' => 'Eja',
+	'coll-suggest_show' => 'ammustra',
 );
 
 /** Serbo-Croatian (Srpskohrvatski / Српскохрватски)

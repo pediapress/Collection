@@ -2466,6 +2466,14 @@ $messages['sah'] = array(
 	'coll-suggest_empty' => 'кураанах',
 );
 
+/** Sardinian (Sardu)
+ * @author Andria
+ */
+$messages['sc'] = array(
+	'coll-bookscategory' => 'Libros',
+	'coll-show_collection' => 'Ammustra libru',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
