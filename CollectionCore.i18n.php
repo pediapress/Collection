@@ -1636,7 +1636,7 @@ $messages['ko'] = array(
 	'coll-print_export' => '인쇄/내보내기',
 	'coll-create_a_book' => '책 만들기',
 	'coll-create_a_book_tooltip' => '책이나 문서 모음집을 만듭니다',
-	'coll-book_creator' => '책 엮은이',
+	'coll-book_creator' => '책 생성기',
 	'coll-download_as' => '$1로 다운로드',
 	'coll-download_as_tooltip' => '이 위키 문서를 $1 버전으로 다운로드합니다.',
 	'coll-disable' => '끄기',
@@ -1664,6 +1664,9 @@ $messages['ko'] = array(
 	'coll-show_collection' => '책 보이기',
 	'coll-show_collection_tooltip' => '책을 편집/다운로드/주문하려면 클릭해 주세요',
 	'coll-not_addable' => '이 문서를 추가할 수 없습니다.',
+	'coll-make_suggestions' => '문서 제안하기',
+	'coll-make_suggestions_tooltip' => '당신의 책에 있는 문서에 따라 문서 제안 목록을 보여 줍니다.',
+	'coll-suggest_empty' => '비었음',
 );
 
 /** Krio (Krio)

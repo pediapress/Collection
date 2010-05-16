@@ -1248,6 +1248,7 @@ Hizivaet eo ar roll bep tro ma glikoc'h war ar bouton ouzhpennañ pe tennañ.",
 	'coll-suggest_article_remove' => 'Tennnet eo bet ar bajenn <strong>$1</strong> eus ho levr ($2).',
 	'coll-suggest_undo_tooltip' => 'Dizober an ober-mañ',
 	'coll-suggest_undo' => 'dizober',
+	'coll-load_local_book' => "Klikit war Mat eo evit kenderc'hel ho levr %TITLE% hag en deus %NUMPAGES% pajenn wiki. Klikit war Nullañ evit dilemel ha kregiñ gant ul levr goullo.",
 	'right-collectionsaveasuserpage' => 'Enrollañ levrioù evel pajenn implijer',
 	'right-collectionsaveascommunitypage' => 'Enrollañ levrioù evel ur bajenn eus ar gumuniezh',
 );
@@ -2356,7 +2357,7 @@ Coš swóje aktualne knigły pśepisaś, nowe wopśimjeśe pśipowjesyś abo zac
 	'coll-limit_exceeded_title' => 'Knigły pśewjelike',
 	'coll-limit_exceeded_text' => 'Twóje knigły su pśewjelike.
 Njedaju se boki pśidaś.',
-	'coll-rendering_title' => 'Kreslenje',
+	'coll-rendering_title' => 'Twórjenje',
 	'coll-rendering_text' => '<p><strong>Pšosym pócakaj, mjaztym až se dokument napórajo.</strong></p>
 
 <p><strong>Póstup:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
@@ -2368,7 +2369,7 @@ Jolic to njefunkcioněrujo, klikni pšosym tłocašk "Znowego" swójogo wobglěd
 	'coll-rendering_page' => '(bok: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Cerjenje infoteksta boka',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Cerjenje infoteksta zběrki',
-	'coll-rendering_finished_title' => 'Kreslenje dokóńcone',
+	'coll-rendering_finished_title' => 'Twórjenje dokóńcone',
 	'coll-rendering_finished_text' => '<strong>Dokumentowa dataja jo se napórała.</strong>
 <strong>[$1 Ześěgni dataju]</strong> do swójogo licadła.
 
@@ -4594,6 +4595,8 @@ Ha ez nem történik meg, kérlek nyomd meg a böngésződ frissítés gombját!
 
 Megjegyzés:
 * Nem vagy elégedett az eredménnyel? Lásd a  [[{{MediaWiki:Coll-helppage}}|könyvekről szóló segítség oldalt]] a javítási lehetőségekről.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Lapinformációk renderelése',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Gyűjtemény információinak renderelése',
 	'coll-notfound_title' => 'A könyv nem található',
 	'coll-notfound_text' => 'A könyvoldal nem található.',
 	'coll-download_notfound_title' => 'A fájl nem található',
@@ -4632,6 +4635,7 @@ A lista minden alkalommal frissül, amikor a „hozzáadás” vagy „eltávol�
 	'coll-suggest_article_remove' => 'A(z) <strong>$1</strong> lap eltávolítva a könyvedből ($2).',
 	'coll-suggest_undo_tooltip' => 'Művelet visszavonása',
 	'coll-suggest_undo' => 'visszavonás',
+	'coll-load_local_book' => 'Kattints az „OK” gombra a(z) %TITLE% című könyved folytatásához, ami %NUMPAGES% wikilapot tartalmaz. Kattints a „Mégse” gombra a törléséhez, és kezdéshez egy üres könyvvel.',
 	'right-collectionsaveasuserpage' => 'Könyvek mentése mint felhasználói lap',
 	'right-collectionsaveascommunitypage' => 'Könyvek mentése közösségi lapként',
 );
@@ -5660,13 +5664,19 @@ $messages['ko'] = array(
 	'coll-book_creator_help' => '자세한 정보에 대해서는 [[{{MediaWiki:Coll-helppage}}|책에 대한 도움말]]을 참고하십시오.',
 	'coll-start_book_creator' => '책 생성기 시작하기',
 	'coll-book_creator_continue' => '책 생성기를 이용해 진행하기',
+	'coll-book_creator_disable_text' => "'''책 생성기'''가 비활성화되고 작업하던 책이 제거될 것입니다.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/책 생성기',
 	'coll-collection' => '책',
 	'coll-collections' => '책',
 	'coll-exclusion_category_title' => '인쇄시 제외할 문서',
 	'coll-print_template_prefix' => '인쇄',
 	'coll-print_template_pattern' => '$1/인쇄',
 	'coll-unknown_subpage_title' => '알 수 없는 하위 문서',
-	'coll-unknown_subpage_text' => '[[Special:Book|책]] 하위 문서가 없습니다.',
+	'coll-unknown_subpage_text' => '[[Special:Book|책]]의 이 하위 문서가 없습니다.',
+	'coll-couldnotaddarticle_title' => '문서 추가 실패',
+	'coll-couldnotaddarticle_msg' => '이 위키 문서를 추가하지 못했습니다.',
+	'coll-couldnotremovearticle_title' => '문서 제거 실패',
+	'coll-couldnotremovearticle_msg' => '해당 문서를 제거하지 못했습니다.',
 	'coll-noscript_text' => '<h1>자바스크립트가 필요합니다!</h1>
 <strong>당신의 브라우저는 자바스크립트를 지원하지 않거나 비활성화되어 있습니다.
 자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
@@ -5674,7 +5684,7 @@ $messages['ko'] = array(
 	'coll-your_book' => '당신의 책',
 	'coll-download_title' => '다운로드',
 	'coll-download_text' => '책을 다운로드하려면 원하는 형식을 선택한 다음 버튼을 클릭해주세요.',
-	'coll-download_as_text' => '$1 형식으로 된 책을 다운로드하려면 버튼을 클릭해 주세요.',
+	'coll-download_as_text' => '$1 형식으로 된 책을 다운로드하려면 버튼을 클릭해주세요.',
 	'coll-download' => '다운로드',
 	'coll-format_label' => '포맷:',
 	'coll-remove' => '제거',
@@ -5707,7 +5717,7 @@ $messages['ko'] = array(
 	'coll-personal_collection_label' => '개인 책:',
 	'coll-community_collection_label' => '공동체 책:',
 	'coll-save_collection' => '책 저장',
-	'coll-save_category' => '모든 책은 [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] 분류에 포함됩니다.',
+	'coll-save_category' => '모든 저장된 책은 [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] 분류에 포함됩니다.',
 	'coll-overwrite_title' => '문서가 존재합니다.
 덮어쓰시겠습니까?',
 	'coll-overwrite_text' => '[[:$1]]이라는 이름을 가진 문서가 이미 존재합니다.
@@ -5731,12 +5741,16 @@ $messages['ko'] = array(
 	'coll-rendering_status' => '<strong>상태:</strong> $1',
 	'coll-rendering_article' => '(문서: $1)',
 	'coll-rendering_page' => '(페이지: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/책 만들기',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/책 만들기',
 	'coll-rendering_finished_title' => '렌더링 완료',
 	'coll-rendering_finished_text' => '<strong>문서 파일이 생성되었습니다.</strong>
 이 파일을 당신의 컴퓨터로 <strong>[$1 다운로드]</strong>하십시오.
 
 참고:
 * 출력 결과에 만족하지 않으신가요? 이 기능을 향상시킬 수 있도록 [[{{MediaWiki:Coll-helppage}}|책에 대한 도움말 문서]]를 참고해 주세요.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/책 만들기',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/책 만들기',
 	'coll-notfound_title' => '책을 찾을 수 없음',
 	'coll-notfound_text' => '해당 페이지를 찾을 수 없습니다.',
 	'coll-download_notfound_title' => '파일을 찾을 수 없습니다.',
@@ -5758,6 +5772,25 @@ $messages['ko'] = array(
 	'coll-more_info' => '정보 더 보기',
 	'coll-hide_info' => '정보 숨기기',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress 주문 정보',
+	'coll-suggest_title' => '당신의 책에 넣을 문서 제안',
+	'coll-suggest_intro_text' => '문서 제안은 지금 당신의 책에 있는 위키 문서의 집합을 바탕으로 이루어집니다.
+추가 또는 제거 버튼을 누를 때마다 목록이 업데이트됩니다.',
+	'coll-suggested_articles' => '추천하는 문서',
+	'coll-suggest_reset_bans' => '초기화',
+	'coll-suggest_reset_bans_tooltip' => '이전에 지운 문서 제안을 표시합니다.',
+	'coll-suggest_add_selected' => '선택한 문서를 추가하기',
+	'coll-suggest_ban_selected' => '선택한 문서 지우기',
+	'coll-suggest_your_book' => '당신의 책',
+	'coll-suggest_show' => '보기',
+	'coll-suggest_ban_tooltip' => '이 문서를 문서 제안 목록에서 빼기',
+	'coll-suggest_article_ban' => '<strong>$1</strong> 문서가 문서 제안 목록에서 지워졌습니다 ($2).',
+	'coll-suggest_article_add' => '<strong>$1</strong> 문서가 문서 제안 목록에 추가되었습니다 ($2).',
+	'coll-suggest_article_remove' => '<strong>$1</strong> 문서를 당신의 책에서 뺐습니다 ($2).',
+	'coll-suggest_undo_tooltip' => '이 동작 되돌리기',
+	'coll-suggest_undo' => '되돌리기',
+	'coll-load_local_book' => '문서 %NUMPAGES%개를 포함하고 있는 %TITLE% 책을 계속 작업하시려면 확인을 클릭하십시오. 책을 삭제하고 새 책으로 다시 시작하려면 취소를 클릭하십시오',
+	'right-collectionsaveasuserpage' => '사용자 문서에 책 저장하기',
+	'right-collectionsaveascommunitypage' => '프로젝트 문서에 책 저장하기',
 );
 
 /** Krio (Krio)
@@ -7752,6 +7785,7 @@ La lista a l'é modificà minca vira ch'a sgnaca an sij boton për gionté o gav
 	'coll-suggest_article_remove' => "La pàgina <strong>$1</strong> a l'é stàita gavà da sò lìber ($2).",
 	'coll-suggest_undo_tooltip' => "Anula st'assion-sì",
 	'coll-suggest_undo' => "buta 'me ch'a l'era",
+	'coll-load_local_book' => "Sgnaca OK për continué con tò lìber %TITLE% ch'a conten %NUMPAGES% pàgine wiki. Sgnaca Cancel për scanselelo e parte con un lìber veuid.",
 	'right-collectionsaveasuserpage' => "Salvé dij lìber ansima a dle pàgine d'utent",
 	'right-collectionsaveascommunitypage' => 'Salvé dij lìber com dle pàgine dla comunità',
 );
@@ -10005,6 +10039,8 @@ Dosyayı bilgisayarınıza <strong>[$1 indirin]</strong>.
 
 Not:
 * Çıktıdan memnun değil misiniz? Geliştirme olanakları için [[{{MediaWiki:Coll-helppage}}|kitaplar hakkındaki yardım sayfalarına]] bakın.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/İşleyici sayfası bilgi metni',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/İşleyici koleksiyonu bilgi metni',
 	'coll-notfound_title' => 'Kitap bulunamadı',
 	'coll-notfound_text' => 'Kitap sayfası bulunamadı.',
 	'coll-download_notfound_title' => 'Dosya bulunamadı',
@@ -10043,6 +10079,7 @@ Ekle veya sil butonlarına her bastığınızda liste yenilenir.',
 	'coll-suggest_article_remove' => '<strong>$1</strong> sayfası kitabınızdan ($2) çıkarıldı.',
 	'coll-suggest_undo_tooltip' => 'Bu eylemi geri al',
 	'coll-suggest_undo' => 'geri al',
+	'coll-load_local_book' => "%NUMPAGES% viki sayfası içeren kitabınız %TITLE% ile devam etmek için Tamam'a tıklayın. Bunu silmek ve boş bir kitaba başlamak için İptal'e tıklayın.",
 	'right-collectionsaveasuserpage' => 'Kitapları kullanıcı sayfası olarak kaydet',
 	'right-collectionsaveascommunitypage' => 'Kitapları topluluk sayfası olarak kaydet',
 );
