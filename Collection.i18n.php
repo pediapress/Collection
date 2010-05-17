@@ -4441,7 +4441,7 @@ Njadadźa so hižo žane strony přidać.',
 <p>Tuta strona dyrbjała so awtomatisce kóžde por sekundow aktualizować.
 Jeli so to njestawa, klikń prošu na tłóčatko "Znowa" swojeho wobhladowaka.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
-	'coll-rendering_article' => '(wikijowa strona: $1)',
+	'coll-rendering_article' => '(wikistrona: $1)',
 	'coll-rendering_page' => '(strona: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rysowanje infoteksta strony',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rysowanje infoteksta zběrki',
@@ -7785,7 +7785,7 @@ La lista a l'é modificà minca vira ch'a sgnaca an sij boton për gionté o gav
 	'coll-suggest_article_remove' => "La pàgina <strong>$1</strong> a l'é stàita gavà da sò lìber ($2).",
 	'coll-suggest_undo_tooltip' => "Anula st'assion-sì",
 	'coll-suggest_undo' => "buta 'me ch'a l'era",
-	'coll-load_local_book' => "Sgnaca OK për continué con tò lìber %TITLE% ch'a conten %NUMPAGES% pàgine wiki. Sgnaca Cancel për scanselelo e parte con un lìber veuid.",
+	'coll-load_local_book' => "Sgnaca Va bin për continué con tò lìber %TITLE% ch'a conten %NUMPAGES% pàgine wiki. Sgnaca Scancelé për scancelelo e parte con un lìber veuid.",
 	'right-collectionsaveasuserpage' => "Salvé dij lìber ansima a dle pàgine d'utent",
 	'right-collectionsaveascommunitypage' => 'Salvé dij lìber com dle pàgine dla comunità',
 );
