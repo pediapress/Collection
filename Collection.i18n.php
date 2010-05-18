@@ -7311,6 +7311,7 @@ Listen oppdateres når du klikker på legg til- eller fjern-knappene.',
 	'coll-suggest_article_remove' => 'Siden <strong>$1</strong> har blitt fjernet fra boken din ($2).',
 	'coll-suggest_undo_tooltip' => 'Angre denne handligen',
 	'coll-suggest_undo' => 'Angre',
+	'coll-load_local_book' => 'Klikk OK for å fortsette med boken din %TITLE% som inneholder %NUMPAGES% wikisider. Klikk Avbryt for å slette den og starte med en tom bok.',
 	'right-collectionsaveasuserpage' => 'Lagre bøker som brukersider',
 	'right-collectionsaveascommunitypage' => 'Lagre bøker som samfunnsside',
 );
