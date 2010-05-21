@@ -443,7 +443,8 @@ $messages['aln'] = array(
 	'coll-save_collection' => 'Libri Ruaj',
 	'coll-save_category' => 'Të gjitha librat e ruajtur janë shtuar në [[:Category:{{MediaWiki:Coll-bookscategory }}|{{MediaWiki:Coll-bookscategory}}]]',
 	'coll-overwrite_title' => 'Page ekziston. Mbishkruaj?',
-	'coll-overwrite_text' => 'Një faqe me të [[emri: $1]] ekziston. A ju dëshironi që ajo të zëvendësohet me librin tuaj?',
+	'coll-overwrite_text' => 'Një faqe me të emri [[:$1]] ekziston.
+A ju dëshironi që ajo të zëvendësohet me librin tuaj?',
 	'coll-yes' => 'Po',
 	'coll-no' => 'Jo',
 	'coll-load_overwrite_text' => 'Ju tashmë keni disa faqe në librin tuaj. A doni ta prishësh aktuale librin tuaj, append përmbajtje të re, apo anulimin e ngarkimit këtë libër?',
@@ -5083,6 +5084,14 @@ Daftar diperbaharui kapanpun anda clik tombol tambahkan atau hapus.',
 	'right-collectionsaveascommunitypage' => 'Menyimpan koleksi buku sebagai halaman komunitas',
 );
 
+/** Igbo (Igbo) */
+$messages['ig'] = array(
+	'coll-show' => 'Zi',
+	'coll-cancel' => 'Emekwàlà',
+	'coll-about_pp' => 'Maka $1',
+	'coll-suggest_show' => 'zi',
+);
+
 /** Ido (Ido)
  * @author Malafaya
  */
@@ -7538,6 +7547,7 @@ $messages['pdc'] = array(
 	'coll-download' => 'Runnerlaade',
 	'coll-remove' => 'Lösche',
 	'coll-show' => 'Zeige',
+	'coll-title' => 'Titel:',
 	'coll-rename' => 'Naame ennere',
 	'coll-empty_collection' => 'Leeres Buch',
 	'coll-revision' => 'Version: $1',
