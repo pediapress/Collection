@@ -462,6 +462,8 @@ $messages['am'] = array(
  * @author Juanpabl
  */
 $messages['an'] = array(
+	'coll-yes' => 'Sí',
+	'coll-no' => 'No',
 	'coll-cancel' => 'Cancelar',
 	'coll-suggest_undo_tooltip' => 'Desfer ista aczión',
 	'coll-suggest_undo' => 'desfer',
@@ -4301,8 +4303,11 @@ $messages['hil'] = array(
 $messages['hr'] = array(
 	'coll-desc' => '[[Special:Book|Stvori zbirku]]',
 	'coll-book_creator_intro' => "<big>S ''načinom zbirka'' možete stvoriti zbirku koja se sastoji od proizvoljnih wiki stranica. Možete izvesti svoju zbirku u različitim formatima (npr. PDF ili ODF) ili naručiti tiskani primjerak.</big>",
+	'coll-manage_your_book' => 'Upravljanje Vašom zbirkom',
 	'coll-book_creator_help' => 'Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više informacija.',
 	'coll-start_book_creator' => 'Pokrenite način zbirke',
+	'coll-book_creator_continue' => 'Nastavi s uporabom uređivača zbirke',
+	'coll-book_creator_disable_text' => "''Uređivač zbirke'' će biti onemogućen, a zbirka na kojoj radite bit će uklonjena.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Tekst načina zbirke',
 	'coll-collection' => 'Zbirka',
 	'coll-collections' => 'Zbirke',
@@ -4398,7 +4403,7 @@ stranicu za pomoć o zbirkama]] za mogućnosti njegovog poboljšanja.',
 	'coll-return_to_collection' => '<p>Vrati se na <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Naručite kao ispisanu zbirku',
 	'coll-book_text' => 'Naručiti ispisanu zbirku od sljedećih partnera za ispisivanje na zahtjev (POD):',
-	'coll-order_from_pp' => 'Naručite zbirku od $1',
+	'coll-order_from_pp' => 'Pregledaj s $1',
 	'coll-about_pp' => 'O $1',
 	'coll-invalid_podpartner_title' => 'Neispravan POD partner',
 	'coll-invalid_podpartner_msg' => 'Ponuđeni POD partner nije valjan.
@@ -4408,6 +4413,7 @@ Molimo kontaktirajte svog MediaWiki administratora.',
 	'coll-more_info' => 'Prikaži više informacija',
 	'coll-hide_info' => 'Sakrij informacije',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/informacije o narudžbi PediaPressa',
+	'coll-suggest_your_book' => 'Vaša zbirka',
 	'right-collectionsaveasuserpage' => 'Spremi zbirke kao suradničku stranicu',
 	'right-collectionsaveascommunitypage' => 'Spremi zbirke kao stranicu zajednice',
 );
@@ -5622,6 +5628,8 @@ $messages['ka'] = array(
 	'coll-more_info' => 'უფრო მეტი ინფორმაციის ჩვენება',
 	'coll-hide_info' => 'ინფორმაციის დამალვა',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/ინფორმაცია PediaPress-ის შეკვვეთაზე',
+	'coll-suggested_articles' => 'წინადადებები',
+	'coll-suggest_reset_bans' => 'გადატვირთვა',
 	'coll-suggest_add_selected' => 'არჩეული გვერდების დამატება',
 	'coll-suggest_your_book' => 'თქვენი წიგნი',
 	'coll-suggest_show' => 'ჩვენება',
