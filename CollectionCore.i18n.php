@@ -1568,6 +1568,7 @@ $messages['jv'] = array(
 $messages['ka'] = array(
 	'coll-create_a_book' => 'წიგნის შექმნა',
 	'coll-download_as_tooltip' => 'ამ ვიკი-გვერდის $1 ვერსიის ჩაწერა',
+	'coll-disable' => 'გათიშვა',
 	'coll-add_category' => 'კატეგორიის დამატება',
 	'coll-add_category_tooltip' => 'ამ კატეგორიის ყველა ვიკი გვერდის ჩამატება წიგნში',
 	'coll-add_page_tooltip' => 'შესაბამისი ვიკი გვერდის წიგნში ჩამატება',
