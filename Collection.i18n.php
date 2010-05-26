@@ -5630,6 +5630,7 @@ $messages['ka'] = array(
 	'coll-more_info' => 'უფრო მეტი ინფორმაციის ჩვენება',
 	'coll-hide_info' => 'ინფორმაციის დამალვა',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/ინფორმაცია PediaPress-ის შეკვვეთაზე',
+	'coll-suggest_title' => 'შემოთავაზებული გვერდები თქვენი წიგნისათვის',
 	'coll-suggested_articles' => 'წინადადებები',
 	'coll-suggest_reset_bans' => 'გადატვირთვა',
 	'coll-suggest_add_selected' => 'არჩეული გვერდების დამატება',
