@@ -47,9 +47,6 @@ class SpecialCollection extends SpecialPage {
 		global $wgCollectionMaxArticles;
 		global $wgTitle;
 
-		wfLoadExtensionMessages( 'CollectionCore' );
-		wfLoadExtensionMessages( 'Collection' );
-
 		// support previous URLs (e.g. used in templates) which used the "$par" part
 		// (i.e. subpages of the Special page)
 		if ( $par ) {
@@ -491,8 +488,6 @@ EOS
 		global $wgUser;
 		global $wgCommunityCollectionNamespace;
 
-		wfLoadExtensionMessages( 'CollectionCore' );
-
 		$result = array();
 
 		$t = wfMsgForContent( 'coll-user_book_prefix', $wgUser->getName() );
@@ -921,8 +916,6 @@ EOS
 		global $wgRightsPage;
 		global $wgRightsText;
 		global $wgRightsUrl;
-
-		wfLoadExtensionMessages( 'Collection' );
 
 		$licenseInfo = array(
 			"type" => "license",
