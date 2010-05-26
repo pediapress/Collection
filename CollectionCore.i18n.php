@@ -1566,6 +1566,7 @@ $messages['jv'] = array(
  * @author გიორგიმელა
  */
 $messages['ka'] = array(
+	'coll-print_export' => 'დაბეჭდვა/ექსპორტი',
 	'coll-create_a_book' => 'წიგნის შექმნა',
 	'coll-download_as_tooltip' => 'ამ ვიკი-გვერდის $1 ვერსიის ჩაწერა',
 	'coll-disable' => 'გათიშვა',
