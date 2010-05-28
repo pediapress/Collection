@@ -905,11 +905,13 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Ebraminio
  * @author Huji
  * @author Komeil 4life
  * @author Ladsgroup
  */
 $messages['fa'] = array(
+	'coll-print_export' => 'چاپ/برون‌ریزی',
 	'coll-create_a_book' => 'ایجاد کتاب',
 	'coll-download_as' => 'بارگیری با عنوان $1',
 	'coll-add_category' => 'اضافه کردن رده',
@@ -2805,23 +2807,40 @@ $messages['tk'] = array(
  * @author AnakngAraw
  */
 $messages['tl'] = array(
+	'coll-print_export' => 'Ilimbag/iluwas',
 	'coll-create_a_book' => 'Lumikha ng isang aklat',
+	'coll-create_a_book_tooltip' => 'Lumikha ng isang aklat o kalipunan ng pahina',
+	'coll-book_creator' => 'Panglikha ng aklat',
 	'coll-download_as' => 'Ikargang-pakuha bilang $1',
-	'coll-add_category' => 'Magdagdag ng kaurian',
+	'coll-download_as_tooltip' => 'Magkargang-pababa ng $1 na bersyon ng pahinang pangwiking ito',
+	'coll-disable' => 'huwag paganahin',
+	'coll-book_creator_disable' => 'Huwag paganahin ang panglikha ng aklat',
+	'coll-book_creator_disable_tooltip' => 'Ihinto ang paggamit ng panglikha ng aklat',
+	'coll-add_linked_article' => 'Idagdag ang nakakawing na pahinang pangwiki sa aklat mo',
+	'coll-remove_linked_article' => 'Tanggalin ang nakakawing na pahinang pangwiki mula sa aklat mo',
+	'coll-add_category' => 'Idagdag ang kategoryang ito sa aklat mo',
 	'coll-add_category_tooltip' => 'Idagdag ang lahat ng mga pahina ng wiki sa loob ng kauriang ito patungo sa aklat mo',
+	'coll-add_this_page' => 'Idagdag ang pahinang ito sa aklat mo',
 	'coll-add_page_tooltip' => 'Idagdag ang kasalukuyang pahina ng wiki sa aklat mo',
 	'coll-bookscategory' => 'Mga aklat',
 	'coll-clear_collection' => 'Hawiin ang aklat',
 	'coll-clear_collection_confirm' => 'Talaga bang nais mong hawiin ng lubusan ang aklat mo?',
 	'coll-clear_collection_tooltip' => 'Tanggalin ang lahat ng mga pahina ng wiki mula sa pangkasalukuyan mong aklat',
+	'coll-help' => 'Tulong',
+	'coll-help_tooltip' => 'Ipakita ang pantulong tunkol sa paglikha ng mga aklat',
 	'coll-helppage' => 'Help:Mga Aklat',
 	'coll-load_collection' => 'Ikarga ang aklat',
 	'coll-load_collection_tooltip' => 'Ikarga ang aklat na ito bilang pangkasalukuyang aklat mo',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pahina|mga pahina}}',
 	'coll-printable_version_pdf' => 'Bersyong PDF',
+	'coll-remove_this_page' => 'Alisin ang pahinang ito mula aklat mo',
 	'coll-remove_page_tooltip' => 'Tanggalan ang pangkasalukuyang pahina ng wiki mula sa aklat mo',
 	'coll-show_collection' => 'Ipakita ang aklat',
 	'coll-show_collection_tooltip' => 'Pindutin upang baguhin/magkargang pababa/umorder ng aklat mo',
+	'coll-not_addable' => 'Hindi maidaragdag ang pahinang ito',
+	'coll-make_suggestions' => 'Magmungkahi ng mga pahina',
+	'coll-make_suggestions_tooltip' => 'Ipakita ang mga mungkahi ayon sa mga pahinang nasa loob ng aklat mo',
+	'coll-suggest_empty' => 'walang laman',
 );
 
 /** Turkish (Türkçe)
