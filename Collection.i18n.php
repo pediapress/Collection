@@ -6441,7 +6441,7 @@ $messages['mk'] = array(
 	'coll-is_cached' => '<ul><li>Пронајдена е кеширана верзија на документот, па затоа немаше потреба да се отцртува.
 <a href="$1">Сепак отцртај.</a></li></ul>',
 	'coll-excluded-templates' => '* Шаблоните во категоријата [[:Category:$1|$1]] се исклучени.',
-	'coll-blacklisted-templates' => '* Шаблоните на црната листа [[:$1]] се исклучени.',
+	'coll-blacklisted-templates' => '* Шаблоните на црниот список [[:$1]] се исклучени.',
 	'coll-return_to_collection' => '<p>Врати се на <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Порачај во печатен облик',
 	'coll-book_text' => 'Порачајте ја книгата во печатен облик од нашиот партнер.',
@@ -6456,8 +6456,8 @@ $messages['mk'] = array(
 	'coll-hide_info' => 'Сокриј ги информациите',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Информации за порачувањето од PediaPress',
 	'coll-suggest_title' => 'Предложени страници за вашата книга',
-	'coll-suggest_intro_text' => 'Предлозите се базирани на тековниот збир од вики-страници во вашата книга.
-Листата се обновува секојпат кога ќе кликнете на копчето за додавање или отстранување.',
+	'coll-suggest_intro_text' => 'Предлозите се засновани на тековниот збир од вики-страници во вашата книга.
+Списокот се обновува секојпат кога ќе кликнете на копчето за додавање или отстранување.',
 	'coll-suggested_articles' => 'Предлози',
 	'coll-suggest_reset_bans' => 'врати по основно',
 	'coll-suggest_reset_bans_tooltip' => 'Прикажи претходно отстранети предлози',
@@ -6465,7 +6465,7 @@ $messages['mk'] = array(
 	'coll-suggest_ban_selected' => 'Отстрани ги избраните страници',
 	'coll-suggest_your_book' => 'Вашата книга',
 	'coll-suggest_show' => 'прикажи',
-	'coll-suggest_ban_tooltip' => 'Отстрани ја страницава од листата на предлози',
+	'coll-suggest_ban_tooltip' => 'Отстрани ја страницава од списокот на предлози',
 	'coll-suggest_article_ban' => 'Страницата <strong>$1</strong> е отстранета од предлозите ($2).',
 	'coll-suggest_article_add' => 'Страницата <strong>$1</strong> е додадена во вашата книга ($2).',
 	'coll-suggest_article_remove' => 'Страницата <strong>$1</strong> е отстранета од вашата книга ($2).',
@@ -9320,6 +9320,7 @@ $messages['su'] = array(
 );
 
 /** Swedish (Svenska)
+ * @author Ainali
  * @author Boivie
  * @author Dafer45
  * @author GameOn
@@ -9426,6 +9427,7 @@ Om det inte fungerar, var god tryck på uppdateringsknappen i din webbläsare.</
 
 Noter:
 * Inte nöjd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra det.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informationstext om sidrendering',
 	'coll-notfound_title' => 'Bok inte funnen',
 	'coll-notfound_text' => 'Kunde inte hitta boksida.',
 	'coll-download_notfound_title' => 'Hittade inte filen',
