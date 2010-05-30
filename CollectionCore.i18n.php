@@ -1295,8 +1295,8 @@ $messages['hu'] = array(
 	'coll-book_creator' => 'Könyvkészítő',
 	'coll-download_as' => 'Letöltés mint $1',
 	'coll-download_as_tooltip' => 'A wikilap $1 formátumú változatának letöltése',
-	'coll-disable' => 'letiltás',
-	'coll-book_creator_disable' => 'Könyvkészítő letiltása',
+	'coll-disable' => 'kikapcsolás',
+	'coll-book_creator_disable' => 'Könyvkészítő kikapcsolása',
 	'coll-book_creator_disable_tooltip' => 'Könyvkészítő használatának befejezése',
 	'coll-add_linked_article' => 'Hivatkozott wiki lap hozzáadása a könyvedhez',
 	'coll-remove_linked_article' => 'Hivatkozott wiki lap eltávolítása a könyvedből',
@@ -1304,7 +1304,7 @@ $messages['hu'] = array(
 	'coll-add_category_tooltip' => 'Ezen kategória összes lapjának hozzáadása a könyvhöz',
 	'coll-add_this_page' => 'Lap hozzáadása a könyvedhez',
 	'coll-add_page_tooltip' => 'A jelenlegi lap hozzáadása a könyvhöz',
-	'coll-bookscategory' => 'Könyvek',
+	'coll-bookscategory' => 'Wikipédia-könyvek',
 	'coll-clear_collection' => 'Könyv kiürítése',
 	'coll-clear_collection_confirm' => 'Valóban törölni szeretnéd a könyved?',
 	'coll-clear_collection_tooltip' => 'Az összes lap eltávolítása a kiválasztott könyvből',
@@ -2754,15 +2754,18 @@ $messages['tg-latn'] = array(
  * @author Manop
  */
 $messages['th'] = array(
+	'coll-print_export' => 'พิมพ์/ส่งออก',
 	'coll-create_a_book' => 'สร้างหนังสือ',
 	'coll-download_as' => 'ดาวน์โหลดในชื่อ $1',
-	'coll-add_category' => 'เพิ่มหมวดหมู่',
+	'coll-add_category' => 'เพิ่มหมวดหมู่นี้เข้าสู่หนังสือ',
 	'coll-bookscategory' => 'หนังสือ',
+	'coll-help' => 'ช่วยเหลือ',
 	'coll-helppage' => 'Help:หนังสือ',
 	'coll-load_collection' => 'โหลดหนังสือ',
 	'coll-n_pages' => '$1 หน้า',
 	'coll-printable_version_pdf' => 'รุ่น PDF',
 	'coll-show_collection' => 'แสดงหนังสือ',
+	'coll-make_suggestions' => 'หน้าแนะนำ',
 );
 
 /** Turkmen (Türkmençe)
