@@ -71,10 +71,10 @@ $this->msgWiki( 'coll-book_text' );
 $t = Title::newFromText( wfMsgForContent( 'coll-order_info_article' ) );
 if ( $t && $t->exists() ) { ?>
 			<div id="coll-more_info" style="display:none">
-				<a href="javascript:void(0)" onclick="coll_toggle_order_info(true);"><img src="<?php echo htmlspecialchars( $mediapath . "collapse.png" ) ?>" width="10" height="10" alt="" />&nbsp;<?php $this->msg( 'coll-more_info' ) ?></a>
+				<a href="javascript:void(0)" onclick="coll_toggle_order_info(true);"><img src="<?php echo htmlspecialchars( $mediapath . "collapse.png" ) ?>" width="10" height="10" alt="" />&#160;<?php $this->msg( 'coll-more_info' ) ?></a>
 			</div>
 			<div id="coll-hide_info" style="display:none">
-				<a href="javascript:void(0)" onclick="coll_toggle_order_info(false);"><img src="<?php echo htmlspecialchars( $mediapath . "expand.png" ) ?>" width="10" height="10" alt="" />&nbsp;<?php $this->msg( 'coll-hide_info' ) ?></a>
+				<a href="javascript:void(0)" onclick="coll_toggle_order_info(false);"><img src="<?php echo htmlspecialchars( $mediapath . "expand.png" ) ?>" width="10" height="10" alt="" />&#160;<?php $this->msg( 'coll-hide_info' ) ?></a>
 			</div>
 <?php } else { ?>
 			<a href="<?php echo htmlspecialchars( $partnerData['url'] ) ?>" target="_blank"><?php echo wfMsgHtml( 'coll-about_pp', htmlspecialchars( $partnerData['name'] ) ) ?></a>
@@ -170,7 +170,7 @@ echo $GLOBALS['wgParser']->parse( '{{:' . $t . '}}',
 				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled" />
 				</td></tr>
 				<?php } // if ($canSaveCommunityPage) ?>
-				<tr><td>&nbsp;</td><td style="text-align:right;">
+				<tr><td>&#160;</td><td style="text-align:right;">
 				<input id="saveButton" type="submit" value="<?php $this->msg( 'coll-save_collection' ) ?>"<?php if ( count( $this->data['collection']['items'] ) == 0 ) { ?> disabled="disabled"<?php } ?> />
 				</tr></tbody></table>
 				<input name="token" type="hidden" value="<?php echo htmlspecialchars( $GLOBALS['wgUser']->editToken() ) ?>" />
@@ -453,7 +453,7 @@ var collection_jQuery = jQuery.noConflict();
 <script src="<?php echo $GLOBALS['wgScriptPath'] . "/extensions/Collection/js/suggest.js?" . $GLOBALS['wgCollectionStyleVersion'] ?>" type="<?php echo $GLOBALS['wgJsMimeType']; ?>"></script>
 <div>
 	<?php $this->msg( 'coll-suggest_intro_text' ) ?>
-	<div id="collectionSuggestStatus" style="text-align: center; margin: 5px auto 10px auto; padding: 0 4px; border: 1px solid #ed9; background-color: #fea; visibility: hidden;">&nbsp;</div>
+	<div id="collectionSuggestStatus" style="text-align: center; margin: 5px auto 10px auto; padding: 0 4px; border: 1px solid #ed9; background-color: #fea; visibility: hidden;">&#160;</div>
 	<table style="width: 100%; border-spacing: 10px;"><tbody><tr>
 		<td style="padding: 10px; vertical-align: top;">
 			<form method="post" action="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', array( 'bookcmd' => 'suggest' ) ) ) ?>">
