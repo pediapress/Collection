@@ -6384,9 +6384,9 @@ $messages['mk'] = array(
 	'coll-notitle_title' => 'Насловот на страницата не може да се определи.',
 	'coll-post_failed_title' => 'POST-барањето не успеа',
 	'coll-post_failed_msg' => 'POST-барањето од $1 не успеа ($2).',
-	'coll-mwserve_failed_title' => 'Грешка во серверот за исцртување',
-	'coll-mwserve_failed_msg' => 'Настана грешка во серверот за отцртување: <nowiki>$1</nowiki>',
-	'coll-error_reponse' => 'Серверот одговори со грешка',
+	'coll-mwserve_failed_title' => 'Грешка во опслужувачот за исцртување',
+	'coll-mwserve_failed_msg' => 'Настана грешка во опслужувачот за отцртување: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Опслужувачот одговори со грешка',
 	'coll-empty_collection' => 'Празна книга',
 	'coll-revision' => 'Ревизија: $1',
 	'coll-save_collection_title' => 'Зачувај и сподели ја книгата',
@@ -9714,6 +9714,7 @@ Ojo şumo mexohed onro bo girdovariji xud ivaz kuned?',
  */
 $messages['th'] = array(
 	'coll-desc' => '[[Special:Book|สร้างหนังสือ]]',
+	'coll-manage_your_book' => 'จัดการหนังสือของคุณ',
 	'coll-collection' => 'หนังสือ',
 	'coll-collections' => 'หนังสือ',
 	'coll-exclusion_category_title' => 'ไม่รวมในส่วนพิมพ์',
@@ -9755,6 +9756,7 @@ $messages['th'] = array(
 	'coll-post_failed_msg' => 'คำสั่ง POST ไปที่ $1 ผิดพลาด ($2)',
 	'coll-mwserve_failed_title' => 'ความผิดพลาดของเซิร์ฟเวอร์เรนเดอร์',
 	'coll-error_reponse' => 'มีความผิดพลาดตอบกลับมาจากเซิร์ฟเวอร์',
+	'coll-empty_collection' => 'หนังสือว่าง',
 	'coll-revision' => 'รุ่น: $1',
 	'coll-save_collection_title' => 'บันทึกและแบ่งปันหนังสือของคุณ',
 	'coll-save_collection_text' => 'เลือกตำแหน่งที่จะเก็บสำหรับหนังสือของคุณ:',
@@ -9804,6 +9806,7 @@ $messages['th'] = array(
 	'coll-suggest_reset_bans' => 'ล้าง',
 	'coll-suggest_reset_bans_tooltip' => 'แสดงคำแนะนำที่ผ่านมาที่ถูกลบ',
 	'coll-suggest_show' => 'แสดง',
+	'coll-suggest_undo' => 'ย้อนกลับ',
 );
 
 /** Turkmen (Türkmençe)
