@@ -2751,21 +2751,45 @@ $messages['tg-latn'] = array(
 
 /** Thai (ไทย)
  * @author Ans
+ * @author Harley Hartwell
  * @author Manop
+ * @author Octahedron80
  */
 $messages['th'] = array(
 	'coll-print_export' => 'พิมพ์/ส่งออก',
 	'coll-create_a_book' => 'สร้างหนังสือ',
+	'coll-create_a_book_tooltip' => 'สร้างหนังสือหรือรวบรวมหน้า',
+	'coll-book_creator' => 'ตัวสร้างหนังสือ',
 	'coll-download_as' => 'ดาวน์โหลดในชื่อ $1',
+	'coll-download_as_tooltip' => 'ดาวน์โหลดรูปแบบ $1 ของหน้าวิกินี้',
+	'coll-disable' => 'ปิดการใช้งาน',
+	'coll-book_creator_disable' => 'ยกเลิกการใช้ตัวสร้างหนังสือ',
+	'coll-book_creator_disable_tooltip' => 'เลิกใช้ตัวสร้างหนังสือ',
+	'coll-add_linked_article' => 'เพิ่มหน้าวิกิเชื่อมโยงในหนังสือของคุณ',
+	'coll-remove_linked_article' => 'นำหน้าวิกิเชื่อมโยงออกจากหนังสือของคุณ',
 	'coll-add_category' => 'เพิ่มหมวดหมู่นี้เข้าสู่หนังสือ',
+	'coll-add_category_tooltip' => 'เพิ่มหน้าวิกิทั้งหมดในหมวดหมู่นี้ในหนังสือของคุณ',
+	'coll-add_this_page' => 'เพิ่มหน้านี้ในหนังสือของคุณ',
+	'coll-add_page_tooltip' => 'เพิ่มหน้าวิกิปัจจุบันในหนังสือของคุณ',
 	'coll-bookscategory' => 'หนังสือ',
+	'coll-clear_collection' => 'เคลียร์หนังสือ',
+	'coll-clear_collection_confirm' => 'คุณแน่ใจหรือไม่ที่จะลบหนังสือของคุณ ?',
+	'coll-clear_collection_tooltip' => 'นำหน้าวิกิทั้งหมดออกจากหนังสือปัจจุบันของคุณ',
 	'coll-help' => 'ช่วยเหลือ',
+	'coll-help_tooltip' => 'แสดงคำแนะนำเกี่ยวกับการสร้างหนังสือ',
 	'coll-helppage' => 'Help:หนังสือ',
 	'coll-load_collection' => 'โหลดหนังสือ',
+	'coll-load_collection_tooltip' => 'โหลดหนังสือนี้เป็นหนังสือปัจจุบันของคุณ',
 	'coll-n_pages' => '$1 หน้า',
 	'coll-printable_version_pdf' => 'รุ่น PDF',
+	'coll-remove_this_page' => 'นำหน้านี้ออกจากหนังสือของคุณ',
+	'coll-remove_page_tooltip' => 'นำหน้าวิกิปัจจุบันออกจากหนังสือของคุณ',
 	'coll-show_collection' => 'แสดงหนังสือ',
+	'coll-show_collection_tooltip' => 'คลิกเพื่อแก้ไข ดาวน์โหลด หรือสั่งซื้อหนังสือของคุณ',
+	'coll-not_addable' => 'ไม่สามารถเพิ่มหน้านี้ลงหนังสือได้',
 	'coll-make_suggestions' => 'หน้าแนะนำ',
+	'coll-make_suggestions_tooltip' => 'แสดงคำแนะนำตามหน้าที่อยู่ในหนังสือของคุณ',
+	'coll-suggest_empty' => 'ไม่มีคำแนะนำ',
 );
 
 /** Turkmen (Türkmençe)

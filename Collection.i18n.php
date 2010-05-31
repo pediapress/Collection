@@ -7887,6 +7887,8 @@ $messages['ps'] = array(
 	'coll-print_template_prefix' => 'چاپول',
 	'coll-print_template_pattern' => '$1/چاپول',
 	'coll-your_book' => 'ستاسې کتاب',
+	'coll-download_title' => 'ښکته کول',
+	'coll-download' => 'ښکته کول',
 	'coll-remove' => 'غورځول',
 	'coll-show' => 'ښکاره کول',
 	'coll-title' => 'سرليک:',
@@ -9708,13 +9710,20 @@ Ojo şumo mexohed onro bo girdovariji xud ivaz kuned?',
 
 /** Thai (ไทย)
  * @author Ans
+ * @author Harley Hartwell
  * @author Manop
  * @author Octahedron80
  * @author Woraponboonkerd
  */
 $messages['th'] = array(
 	'coll-desc' => '[[Special:Book|สร้างหนังสือ]]',
+	'coll-book_creator_intro' => "<big>ด้วย ''ตัวสร้างหนังสือ'' คุณสามารถสร้างหนังสือจากหน้าวิกิที่คุณเลือกได้ คุณสามารถดาวน์โหลดหนังสือในรูปแบบไฟล์ต่าง ๆ เช่น PDF หรือ ODF หรือสั่งพิมพ์หนังสือออกมาเป็นเล่มได้</big>",
 	'coll-manage_your_book' => 'จัดการหนังสือของคุณ',
+	'coll-book_creator_help' => 'ดู [[{{MediaWiki:Coll-helppage}}|หน้าความช่วยเหลือเกี่ยวกับหนังสือ]] สำหรับข้อมูลเพิ่มเติม',
+	'coll-start_book_creator' => 'เริ่มใช้ตัวสร้างหนังสือ',
+	'coll-book_creator_continue' => 'ใช้ตัวสร้างหนังสือต่อไป',
+	'coll-book_creator_disable_text' => "''ตัวสร้างหนังสือ'' จะถูกยกเลิก และหนังสือที่คุณกำลังสร้างอยู่จะถูกลบออก",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/ข้อความตัวสร้างหนังสือ',
 	'coll-collection' => 'หนังสือ',
 	'coll-collections' => 'หนังสือ',
 	'coll-exclusion_category_title' => 'ไม่รวมในส่วนพิมพ์',
@@ -9732,8 +9741,8 @@ $messages['th'] = array(
 	'coll-savedbook_template' => 'หนังสือที่ถูกบันทึกไว้ก่อนหน้า',
 	'coll-your_book' => 'หนังสือของคุณ',
 	'coll-download_title' => 'ดาวน์โหลด',
-	'coll-download_text' => 'เลือกรูปแบบและกดที่ปุ่มเพื่อดาวน์โหลด',
-	'coll-download_as_text' => 'กดที่ปุ่มเพื่อดาวน์โหลดในรูปแบบ $1',
+	'coll-download_text' => 'เพื่อดาวน์โหลดหนังสือของคุณ เลือกรูปแบบและคลิกปุ่ม',
+	'coll-download_as_text' => 'เพื่อดาวน์โหลดหนังสือของคุณในรูปแบบ $1 คลิกปุ่ม',
 	'coll-download' => 'ดาวน์โหลด',
 	'coll-format_label' => 'รูปแบบ:',
 	'coll-remove' => 'ลบออก',
@@ -9752,17 +9761,21 @@ $messages['th'] = array(
 	'coll-new_chapter' => 'ใส่ชื่อสำหรับบทใหม่',
 	'coll-rename_chapter' => 'ใส่ชื่อใหม่สำหรับบทนี้',
 	'coll-no_such_category' => 'ไม่มีหมวดหมู่ดังกล่าว',
+	'coll-notitle_title' => 'หัวเรื่องของหน้าไม่สามารถกำหนดได้',
 	'coll-post_failed_title' => 'คำสั่ง POST ผิดพลาด',
 	'coll-post_failed_msg' => 'คำสั่ง POST ไปที่ $1 ผิดพลาด ($2)',
 	'coll-mwserve_failed_title' => 'ความผิดพลาดของเซิร์ฟเวอร์เรนเดอร์',
+	'coll-mwserve_failed_msg' => 'เกิดข้อผิดพลาดในเซิร์ฟเวอร์แปลงข้อมูล: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'มีความผิดพลาดตอบกลับมาจากเซิร์ฟเวอร์',
 	'coll-empty_collection' => 'หนังสือว่าง',
 	'coll-revision' => 'รุ่น: $1',
 	'coll-save_collection_title' => 'บันทึกและแบ่งปันหนังสือของคุณ',
 	'coll-save_collection_text' => 'เลือกตำแหน่งที่จะเก็บสำหรับหนังสือของคุณ:',
+	'coll-login_to_save' => 'หากคุณต้องการบันทึกหนังสือเพื่อใช้ในภายหลัง กรุณา[[Special:UserLogin|ล็อกอินหรือสร้างบัญชีผู้ใช้]]',
 	'coll-personal_collection_label' => 'หนังสือส่วนตัว:',
 	'coll-community_collection_label' => 'หนังสือชุมชน:',
 	'coll-save_collection' => 'บันทึกหนังสือ',
+	'coll-save_category' => 'หนังสือที่บันทึกทั้งหมดถูกเพิ่มในหมวดหมู่ [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]',
 	'coll-overwrite_title' => 'มีหน้านี้แล้ว
 เขียนทับ?',
 	'coll-overwrite_text' => 'หน้าที่อยู่ภายใต้ชื่อ [[:$1]] มีอยู่แล้ว
@@ -9779,10 +9792,25 @@ $messages['th'] = array(
 	'coll-limit_exceeded_text' => 'หนังสือของคุณใหญ่เกินไป
 ไม่สามารถเพิ่มหน้าใดเข้าไปได้อีก',
 	'coll-rendering_title' => 'กำลังเรนเดอร์',
+	'coll-rendering_text' => '<p><strong>โปรดรอในระหว่างที่หนังสือถูกสร้าง</strong></p>
+
+<p><strong>ความคืบหน้า:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>หน้านี้ควรรีเฟรชตัวเองทุก ๆ สองถึงสามวินาที
+หากหน้านี้ไม่รีเฟรชตัวเอง กรุณากดปุ่มรีเฟรชบนเบราว์เซอร์ของคุณ</p>',
 	'coll-rendering_status' => '<strong>สถานะ:</strong> $1',
 	'coll-rendering_article' => '(หน้าวิกิ: $1)',
 	'coll-rendering_page' => '(หน้า: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/กำลังแปลงหน้าเป็นข้อความ',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/ข้อความกำลังแปลงข้อมูลหน้า',
 	'coll-rendering_finished_title' => 'การเรนเดอร์เสร็จสิ้น',
+	'coll-rendering_finished_text' => '<strong>สร้างหนังสือเสร็จเรียบร้อยแล้ว</strong>
+<strong>[$1 ดาวน์โหลดหนังสือ]</strong> ลงเครื่องคอมพิวเตอร์ของคุณ
+
+หมายเหตุ:
+* หากคุณไม่พอใจกับการแสดงผลหนังสือที่ออกมา ให้ดูที่ [[{{MediaWiki:Coll-helppage}}|หน้าความช่วยเหลือเกี่ยวกับหนังสือ]] สำหรับความเป็นไปได้ที่จะปรับปรุงการแสดงผล',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/ข้อความกำลังแปลงข้อมูลหน้า',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/ข้อความกำลังแปลงข้อมูลที่รวบรวม',
 	'coll-notfound_title' => 'ไม่พบหนังสือที่ต้องการ',
 	'coll-notfound_text' => 'ไม่สามารถค้นหาหน้าหนังสือ',
 	'coll-download_notfound_title' => 'ไม่พบไฟล์',
@@ -9790,23 +9818,42 @@ $messages['th'] = array(
 ไฟล์อาจจะถูกลบหรือต้องการการสร้างใหม่อีกครั้งหนึ่ง',
 	'coll-download_failed_title' => 'เกิดความผิดพลาดระหว่างการดาวน์โหลด',
 	'coll-download_failed_text' => 'มีความผิดพลาดเกิดขึ้นเมื่อดาวน์โหลดไฟล์: $1',
+	'coll-is_cached' => '<ul><li>พบรุ่นที่เก็บไว้ของหนังสือนี้ จึงไม่จำเป็นต้องสร้างหนังสือนี้ใหม่
+<a href="$1">บังคับสร้างหนังสือนี้ใหม่</a></li></ul>',
+	'coll-excluded-templates' => '* แม่แบบในหมวดหมู่ [[:Category:$1|$1]] ไม่ถูกนำเข้ามารวม',
 	'coll-blacklisted-templates' => '* แม่แบบในบัญชีดำ [[:$1]] ไม่ได้ถูกรวมไว้',
 	'coll-return_to_collection' => '<p>กลับไปที่ <a href="$1">$2</a></p>',
 	'coll-book_title' => 'สั่งหนังสือเป็นรูปเล่ม',
 	'coll-book_text' => 'รับหนังสือที่พิมพ์แล้วจากบริษัทรับพิมพ์หนังสือ',
-	'coll-order_from_pp' => 'สั่งหนังสือจาก $1',
+	'coll-order_from_pp' => 'แสดงตัวอย่างหนังสือ และสั่งหนังสือจาก $1',
 	'coll-about_pp' => 'เกี่ยวกับ $1',
+	'coll-invalid_podpartner_title' => 'ส่วนร่วม POD ไม่ถูกต้อง',
+	'coll-invalid_podpartner_msg' => 'ส่วนร่วม POD ที่จัดหาไม่ถูกต้อง
+กรุณาติดต่อผู้ดูแลมีเดียวิกิของคุณ',
 	'coll-license' => 'สัญญาอนุญาต (license)',
 	'coll-return_to' => 'กลับไปที่ [[:$1]]',
 	'coll-more_info' => 'แสดงข้อมูลเพิ่มเติม',
 	'coll-hide_info' => 'ซ่อนข้อมูลเพิ่มเติม',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/ข้อมูลการสั่งซื้อ PediaPress',
+	'coll-suggest_title' => 'หน้าแนะนำสำหรับหนังสือของคุณ',
 	'coll-suggest_intro_text' => 'คำแนะนำทั้งหมดนั้นอ้างอิงจากชุดของหน้าวิกิในหนังสือของคุณ
 รายการนี้จะถูกปรับปรุงเมื่อคุณคลิกเพิ่มหรือลบ',
 	'coll-suggested_articles' => 'คำแนะนำ',
 	'coll-suggest_reset_bans' => 'ล้าง',
 	'coll-suggest_reset_bans_tooltip' => 'แสดงคำแนะนำที่ผ่านมาที่ถูกลบ',
+	'coll-suggest_add_selected' => 'เพิ่มหน้าที่เลือก',
+	'coll-suggest_ban_selected' => 'ลบหน้าที่เลือก',
+	'coll-suggest_your_book' => 'หนังสือของคุณ',
 	'coll-suggest_show' => 'แสดง',
+	'coll-suggest_ban_tooltip' => 'นำหน้านี้ออกจากรายการคำแนะนำ',
+	'coll-suggest_article_ban' => 'หน้า <strong>$1</strong> ถูกลบออกจากรายการคำแนะนำแล้ว ($2)',
+	'coll-suggest_article_add' => 'เพิ่มหน้า <strong>$1</strong> ลงไปในหนังสือของคุณแล้ว ($2)',
+	'coll-suggest_article_remove' => 'นำหน้า <strong>$1</strong> ออกจากหนังสือของคุณแล้ว ($2)',
+	'coll-suggest_undo_tooltip' => 'ย้อนการกระทำนี้',
 	'coll-suggest_undo' => 'ย้อนกลับ',
+	'coll-load_local_book' => 'คลิกตกลงเพื่อดำเนินการต่อกับหนังสือ %TITLE% ของคุณซึ่งประกอบด้วยหน้าวิกิ %NUMPAGES% หน้า คลิกยกเลิกเพื่อลบออกและเริ่มต้นใหม่ด้วยหนังสือว่าง',
+	'right-collectionsaveasuserpage' => 'บันทึกหนังสือในหน้าผู้ใช้',
+	'right-collectionsaveascommunitypage' => 'บันทึกหนังสือเป็นหนังสือส่วนรวม',
 );
 
 /** Turkmen (Türkmençe)
