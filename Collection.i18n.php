@@ -10364,6 +10364,8 @@ $messages['uk'] = array(
 
 Зауваження:
 * Не задоволені результатом? Можливості його поліпшення описані на [[{{MediaWiki:Coll-helppage}}|довідковій сторінці про колекції]].",
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Формування відомостей про сторінку',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Формування інформації про колекцію',
 	'coll-notfound_title' => 'Книга не знайдена',
 	'coll-notfound_text' => 'Неможливо знайти сторінку книги.',
 	'coll-download_notfound_title' => 'Файл не знайдено',
@@ -10403,6 +10405,7 @@ $messages['uk'] = array(
 	'coll-suggest_article_remove' => 'Сторінку <strong>$1</strong> вилучено з вашої книги ($2).',
 	'coll-suggest_undo_tooltip' => 'Скасувати цю дію',
 	'coll-suggest_undo' => 'скасувати',
+	'coll-load_local_book' => 'Клацніть «Гаразд», щоб продовжити роботу з вашою книгою %TITLE%, яка містить %NUMPAGES% вікі-сторінок. Клацніть «Скасувати», щоб вилучити її і почати з порожньою книгою.',
 	'right-collectionsaveasuserpage' => 'Збереження книг як сторінок користувачів',
 	'right-collectionsaveascommunitypage' => 'Збереження книг як сторінок спільноти',
 );
