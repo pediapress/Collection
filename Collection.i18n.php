@@ -8691,6 +8691,25 @@ $messages['sh'] = array(
 	'coll-show' => 'Prikaži',
 );
 
+/** Sinhala (සිංහල)
+ * @author බිඟුවා
+ */
+$messages['si'] = array(
+	'coll-manage_your_book' => 'ඔබේ පොත හසුරවන්න',
+	'coll-collection' => 'පොත',
+	'coll-collections' => 'පොත්',
+	'coll-print_template_prefix' => 'මුද්‍රණය කරන්න',
+	'coll-your_book' => 'ඔබේ පොත',
+	'coll-download_title' => 'භාගත කිරීම',
+	'coll-download' => 'භාගත කිරීම',
+	'coll-remove' => 'ඉවත් කරන්න',
+	'coll-show' => 'පෙන්වන්න',
+	'coll-title' => 'ශීර්ෂය:',
+	'coll-subtitle' => 'උප ශීර්ෂය:',
+	'coll-contents' => 'පටුන',
+	'coll-sort_alphabetically' => 'අකාරාදි පිළිවෙලට සකසන්න',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  * @author Mormegil
