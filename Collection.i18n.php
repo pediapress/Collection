@@ -3241,7 +3241,7 @@ $messages['fa'] = array(
 	'coll-overwrite' => 'رونویسی',
 	'coll-append' => 'افزودن',
 	'coll-cancel' => 'لغو',
-	'coll-update' => 'به روز کردن',
+	'coll-update' => 'به روز رسانی',
 	'coll-limit_exceeded_title' => 'کتاب بیش از اندازه بزرگ است',
 	'coll-limit_exceeded_text' => 'کتاب شما بیش از اندازه بزرگ است است.
 امکان افزودن صفحهٔ جدیدی را ندارید.',
@@ -9449,6 +9449,7 @@ Om det inte fungerar, var god tryck på uppdateringsknappen i din webbläsare.</
 Noter:
 * Inte nöjd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om samlingar]] för möjligheter att förbättra det.',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informationstext om sidrendering',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Återger informationstext om samlingar',
 	'coll-notfound_title' => 'Bok inte funnen',
 	'coll-notfound_text' => 'Kunde inte hitta boksida.',
 	'coll-download_notfound_title' => 'Hittade inte filen',
