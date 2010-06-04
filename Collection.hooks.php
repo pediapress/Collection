@@ -205,6 +205,7 @@ class CollectionHooks {
 		}
 
 		if ( !CollectionSession::hasSession()
+			|| !isset( $_SESSION['wsCollection']['enabled'] )
 			|| !$_SESSION['wsCollection']['enabled'] ) {
 			return true;
 		}
