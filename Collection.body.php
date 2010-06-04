@@ -315,6 +315,7 @@ class SpecialCollection extends SpecialPage {
 		global $wgScriptPath;
 		global $wgTitle;
 		global $wgUser;
+		global $wgJsMimeType;
 
 		$this->setHeaders();
 		$wgOut->setPageTitle( wfMsg( 'coll-book_creator' ) );
