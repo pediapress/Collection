@@ -2577,16 +2577,20 @@ $messages['sl'] = array(
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
+	'coll-print_export' => 'Штампај/извези',
 	'coll-create_a_book' => 'Направи књигу',
+	'coll-create_a_book_tooltip' => 'Направи књигу или колекцију чланака',
 	'coll-download_as' => 'Преузми као $1',
-	'coll-add_category' => 'Додај категорију',
+	'coll-disable' => 'онемогући',
+	'coll-add_category' => 'Додај ову категорију у своју књигу',
 	'coll-add_category_tooltip' => 'Додаје све вики странице у овој категорији у вашу књигу',
 	'coll-add_page_tooltip' => 'Додаје тренутну вики страницу вашој књизи',
 	'coll-bookscategory' => 'Књиге',
 	'coll-clear_collection' => 'Очисти књигу',
 	'coll-clear_collection_confirm' => 'Да ли заиста желите да потпуно очистите своју књигу?',
 	'coll-clear_collection_tooltip' => 'Уклања све вики странице из ваше тренутне књиге',
-	'coll-helppage' => 'Help:Књиге',
+	'coll-help' => 'Помоћ',
+	'coll-helppage' => 'Помоћ:Књиге',
 	'coll-load_collection' => 'Учитај књигу',
 	'coll-load_collection_tooltip' => 'Учитава ову књигу као вашу тренутну књигу',
 	'coll-n_pages' => '{{PLURAL:$1|једна страна|$1 стране|$1 страна}}',
@@ -2594,6 +2598,7 @@ $messages['sr-ec'] = array(
 	'coll-remove_page_tooltip' => 'Уклања тренутну вики страницу из ваше књиге',
 	'coll-show_collection' => 'Прикажи књигу',
 	'coll-show_collection_tooltip' => 'Кликните за измену, преузимање или наручивање своје књиге',
+	'coll-suggest_empty' => 'празно',
 );
 
 /** Serbian Latin ekavian (Srpski (latinica))

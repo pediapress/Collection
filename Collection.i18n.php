@@ -3224,7 +3224,7 @@ $messages['fa'] = array(
 	'coll-revision' => 'نسخه: $1',
 	'coll-save_collection_title' => 'کتابتان را ذخیره کنید و به اشتراک بگذارید',
 	'coll-save_collection_text' => 'انتخاب یک مکان:',
-	'coll-login_to_save' => 'اگر می‌خواهید کتاب‌ها را برای کاربران بعدی ذخیره کنید، لطفا [[Special:UserLogin|به سیستم وارد شوید یا یک حساب کاربری بسازید]].',
+	'coll-login_to_save' => 'اگر می‌خواهید کتاب‌ها را برای کاربران بعدی ذخیره کنید، لطفا [[Special:UserLogin|به سامانه وارد شوید یا یک حساب کاربری بسازید]].',
 	'coll-personal_collection_label' => 'کتاب شخصی:',
 	'coll-community_collection_label' => 'کتاب عمومی:',
 	'coll-save_collection' => 'ذخیره کردن کتاب',
@@ -7889,6 +7889,7 @@ $messages['ps'] = array(
 	'coll-your_book' => 'ستاسې کتاب',
 	'coll-download_title' => 'ښکته کول',
 	'coll-download' => 'ښکته کول',
+	'coll-format_label' => 'بڼه:',
 	'coll-remove' => 'غورځول',
 	'coll-show' => 'ښکاره کول',
 	'coll-title' => 'سرليک:',
@@ -8078,6 +8079,7 @@ A lista é actualizada sempre que clica os botões de adicionar ou remover.',
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author Eduardo.mps
+ * @author Giro720
  * @author Hamilton Abreu
  * @author Heldergeovane
  * @author Jorge Morais
@@ -8169,6 +8171,7 @@ Se isto não funcionar, por favor utilize o botão atualizar do seu navegador.</
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(página wiki: $1)',
 	'coll-rendering_page' => '(página: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/A compor o texto de informação da página',
 	'coll-rendering_finished_title' => 'Renderização concluída',
 	'coll-rendering_finished_text' => '<strong>O arquivo do documento foi gerado.</strong>
 <strong>[$1 Baixe o arquivo]</strong> para o seu computador.
@@ -8707,7 +8710,14 @@ $messages['si'] = array(
 	'coll-title' => 'ශීර්ෂය:',
 	'coll-subtitle' => 'උප ශීර්ෂය:',
 	'coll-contents' => 'පටුන',
+	'coll-create_chapter' => 'මාතෘකාවක් නිර්මාණය කරන්න',
 	'coll-sort_alphabetically' => 'අකාරාදි පිළිවෙලට සකසන්න',
+	'coll-rename' => 'නැවත නාමකාරණය',
+	'coll-cancel' => 'අත් හරින්න',
+	'coll-update' => 'යාවත්කාලීන කළ',
+	'coll-suggested_articles' => 'යෝජනා',
+	'coll-suggest_reset_bans' => 'ප්‍රත්‍යාරම්භ කරන්න',
+	'coll-suggest_show' => 'පෙන්වන්න',
 );
 
 /** Slovak (Slovenčina)
@@ -9100,7 +9110,7 @@ $messages['sr-ec'] = array(
 	'coll-return_to_collection' => '<p>Назад на <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Наручи као одштампану књигу',
 	'coll-book_text' => 'Добијте одштампану књигу од нашег партнера за штампање на захтев:',
-	'coll-order_from_pp' => 'Наручи књигу од „$1“',
+	'coll-order_from_pp' => 'Прегледај са $1',
 	'coll-about_pp' => 'О „$1“',
 	'coll-invalid_podpartner_title' => 'Неисправан партнер за штампање на захтев',
 	'coll-invalid_podpartner_msg' => 'Одабрани партнер за штампање на захтев је неисправан.
@@ -9109,8 +9119,12 @@ $messages['sr-ec'] = array(
 	'coll-return_to' => 'Врати на [[:$1]]',
 	'coll-more_info' => 'Покажи више информација',
 	'coll-hide_info' => 'Склони информације',
+	'coll-suggest_title' => 'Стране предложене за вашу књигу',
+	'coll-suggested_articles' => 'Предлози',
+	'coll-suggest_reset_bans' => 'ресетуј',
 	'coll-suggest_ban_selected' => 'Уклони одабране стране',
 	'coll-suggest_your_book' => 'Твоја књига',
+	'coll-suggest_show' => 'покажи',
 	'coll-suggest_undo_tooltip' => 'Поништи ову акцију',
 	'coll-suggest_undo' => 'врати',
 );
@@ -9758,7 +9772,7 @@ $messages['th'] = array(
 	'coll-noscript_text' => '<h1>จำเป็นต้องใช้จาวาสคริปต์!</h1>
 <strong>เบราว์เซอร์ของคุณไม่รองรับจาวาสคริปต์หรือจาวาสคริปต์ถูกปิดการใช้งาน
 หน้านี้จะไม่สามารถทำงานได้อย่างถูกต้อง ถ้าไม่มีการเปิดใช้จาวาสคริปต์</strong>',
-	'coll-savedbook_template' => 'หนังสือที่ถูกบันทึกไว้ก่อนหน้า',
+	'coll-savedbook_template' => 'หนังสือที่บันทึก',
 	'coll-your_book' => 'หนังสือของคุณ',
 	'coll-download_title' => 'ดาวน์โหลด',
 	'coll-download_text' => 'เพื่อดาวน์โหลดหนังสือของคุณ เลือกรูปแบบและคลิกปุ่ม',
