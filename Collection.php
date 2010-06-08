@@ -91,8 +91,16 @@ $wgCollectionLicenseURL = null;
 		as mapping of mwlib writer to format name */
 $wgCollectionFormats = array(
 	'rl' => 'PDF',
+	#'zeno' => 'ZENO',
+	#'okawix_zeno' => 'Okawix (ZENO + search engine)',
 );
 
+/** For formats which rendering depends on an external server
+*/
+$wgCollectionFormatToServeURL = array(
+	'zeno'=>'http://www.okawix.com/collections/render.php',
+	'okawix_zeno'=>'http://www.okawix.com/collections/render.php',
+);
 
 $wgCollectionContentTypeToFilename = array(
 	'application/pdf' => 'collection.pdf',
