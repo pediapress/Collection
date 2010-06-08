@@ -23,6 +23,7 @@
 
 class CollectionSession {
 	static function hasSession() {
+		if ( !session_id() ) return false;
 		return isset( $_SESSION['wsCollection'] );
 	}
 
