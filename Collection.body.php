@@ -1266,14 +1266,19 @@ EOS
 		global $wgOut;
 		global $wgCollectionMWServeURL;
 		global $wgCollectionMWServeCredentials;
-		
+		global $wgCollectionFormatToServeURL;
+
+		$serveURL = $wgCollectionMWServeURL;
+		if ( array_key_exists( $args['writer'], $wgCollectionFormatToServeURL ) )
+			$serveURL = $wgCollectionFormatToServeURL[ $args['writer'] ];
+
 		$args['command'] = $command;
 		if ( $wgCollectionMWServeCredentials ) {
 			$args['login_credentials'] = $wgCollectionMWServeCredentials;
 		}
 		$errorMessage = '';
 		$info = false;
-		$response = self::curlreq( 'POST', $wgCollectionMWServeURL, $args, $errorMessage, $info, $timeout, $toFile );
+		$response = self::curlreq( 'POST', $serveURL, $args, $errorMessage, $info, $timeout, $toFile );
 		if ( $toFile ) {
 			if ( $info ) {
 				return $info;

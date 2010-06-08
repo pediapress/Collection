@@ -233,6 +233,10 @@ Installation and Configuration of the Collection Extension
 	The name of the template can be adjusted via the system message
 	Coll-savedbook_template, i.e. by editing [[MediaWiki:Coll-savedbook_template]].
 
+* To enable ZENO and Okawix export, uncomment the corresponding lines in $wgCollectionFormats
+  (file Collection.php). These exports are devoted to the Wikimedia projects and their mirrors.
+  They cannot be used on other wikis since they get data and search engine indexes from the cache
+  of wikiwix.com.
 
 Customization via System Messages
 =================================
