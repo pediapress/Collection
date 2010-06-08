@@ -114,10 +114,19 @@ class CollectionSession {
 		$coll = $_SESSION['wsCollection'];
 		$newitems = array();
 		if ( isset( $coll['items'] ) ) {
+			$batch = new LinkBatch;
+			$lc = LinkCache::singleton();
 			foreach ( $coll['items'] as $index => $item ) {
 				if ( $item['type'] == 'article' ) {
 					$t = Title::newFromText( $item['title'] );
-					if ( $t->exists() ) {
+					$batch->addObj( $t );
+				}
+			}
+			$batch->execute();
+			foreach ( $coll['items'] as $index => $item ) {
+				if ( $item['type'] == 'article' ) {
+					$t = Title::newFromText( $item['title'] );
+					if ( !$lc->isBadLink( $t->getPrefixedDbKey() ) ) {
 						$newitems[] = $item;
 					}
 				} else {
