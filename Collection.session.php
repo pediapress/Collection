@@ -107,7 +107,7 @@ class CollectionSession {
 	}
 
 	static function purge() {
-		if ( !self::hasSession ) {
+		if ( !self::hasSession() ) {
 			return;
 		}
 		$coll = $_SESSION['wsCollection'];
