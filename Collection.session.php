@@ -109,7 +109,7 @@ class CollectionSession {
 
 	static function purge() {
 		if ( !self::hasSession() ) {
-			return;
+			return false;
 		}
 		$coll = $_SESSION['wsCollection'];
 		$newitems = array();
@@ -136,11 +136,11 @@ class CollectionSession {
 		}
 		$coll['items'] = $newitems;
 		$_SESSION['wsCollection'] = $coll;
+		return true;
 	}
 
 	static function getCollection() {
-		self::purge();
-		return $_SESSION['wsCollection'];
+		return self::purge() ? $_SESSION['wsCollection'] : array();
 	}
 
 	static function setCollection( $collection ) {
