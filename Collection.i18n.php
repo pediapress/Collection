@@ -465,7 +465,7 @@ $messages['an'] = array(
 	'coll-yes' => 'Sí',
 	'coll-no' => 'No',
 	'coll-cancel' => 'Cancelar',
-	'coll-suggest_undo_tooltip' => 'Desfer ista aczión',
+	'coll-suggest_undo_tooltip' => 'Desfer ista acción',
 	'coll-suggest_undo' => 'desfer',
 );
 
@@ -8957,6 +8957,8 @@ Ne morete dodati več strani.',
 
 Opombe:
 * Niste zadovoljni z ustvarjeno datoteko? Glej [[{{MediaWiki:Coll-helppage}}|stran s pomočjo za razširitev Knjige]] za možnosti izboljšav.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Ustvarjanje informativnega besedila strani',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Ustvarjanje informativnega besedila zbirke',
 	'coll-notfound_title' => 'Knjiga ni bila najdena',
 	'coll-notfound_text' => 'Stran v knjigi ni bila najdena.',
 	'coll-download_notfound_title' => 'Datoteka ni bila najdena',
@@ -8996,6 +8998,7 @@ Seznam je posodobljen, ko kliknete na gumbe za dodajanje ali odstranjevanje.',
 	'coll-suggest_article_remove' => 'Stran <strong>$1</strong> je bila odstranjena iz vaše knjige ($2).',
 	'coll-suggest_undo_tooltip' => 'Razveljavi to dejanje',
 	'coll-suggest_undo' => 'razveljavi',
+	'coll-load_local_book' => 'Kliknite V redu za nadaljevanje z vašo knjigo %TITLE%, ki vsebuje %NUMPAGES% wikistrani. Kliknite Prekliči za njen izbris in začnite s prazno knjigo.',
 	'right-collectionsaveasuserpage' => 'Shranjevanje knjig kot uporabniške strani',
 	'right-collectionsaveascommunitypage' => 'Shranjevanje knjig kot strani občestva',
 );
