@@ -2316,6 +2316,7 @@ $messages['pt'] = array(
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author Eduardo.mps
+ * @author Giro720
  * @author Heldergeovane
  * @author Jorge Morais
  * @author Luckas Blade
@@ -2330,6 +2331,8 @@ $messages['pt-br'] = array(
 	'coll-disable' => 'desabilitar',
 	'coll-book_creator_disable' => 'Desabilitar o criador de livros',
 	'coll-book_creator_disable_tooltip' => 'Parar de usar o criador de livros',
+	'coll-add_linked_article' => 'Adicionar ao livro a página wiki ligada',
+	'coll-remove_linked_article' => 'Remover do livro a página wiki ligada',
 	'coll-add_category' => 'Adicionar esta categoria ao seu livro',
 	'coll-add_category_tooltip' => 'Adicionar todas as páginas wiki nesta categoria ao seu livro',
 	'coll-add_this_page' => 'Adicionar esta página ao seu livro',
@@ -2607,16 +2610,20 @@ $messages['sr-ec'] = array(
  * @author Michaello
  */
 $messages['sr-el'] = array(
+	'coll-print_export' => 'Štampaj/izvezi',
 	'coll-create_a_book' => 'Napravi knjigu',
+	'coll-create_a_book_tooltip' => 'Napravi knjigu ili kolekciju članaka',
 	'coll-download_as' => 'Preuzmi kao $1',
-	'coll-add_category' => 'Dodaj kategoriju',
+	'coll-disable' => 'onemogući',
+	'coll-add_category' => 'Dodaj ovu kategoriju u svoju knjigu',
 	'coll-add_category_tooltip' => 'Dodaje sve viki stranice u ovoj kategoriji u vašu knjigu',
 	'coll-add_page_tooltip' => 'Dodaje trenutnu viki stranicu vašoj knjizi',
 	'coll-bookscategory' => 'Knjige',
 	'coll-clear_collection' => 'Očisti knjigu',
 	'coll-clear_collection_confirm' => 'Da li zaista želite da potpuno očistite svoju knjigu?',
 	'coll-clear_collection_tooltip' => 'Uklanja sve viki stranice iz vaše trenutne knjige',
-	'coll-helppage' => 'Help:Knjige',
+	'coll-help' => 'Pomoć',
+	'coll-helppage' => 'Pomoć:Knjige',
 	'coll-load_collection' => 'Učitaj knjigu',
 	'coll-load_collection_tooltip' => 'Učitava ovu knjigu kao vašu trenutnu knjigu',
 	'coll-n_pages' => '{{PLURAL:$1|jedna strana|$1 strane|$1 strana}}',
@@ -2624,6 +2631,7 @@ $messages['sr-el'] = array(
 	'coll-remove_page_tooltip' => 'Uklanja trenutnu viki stranicu iz vaše knjige',
 	'coll-show_collection' => 'Prikaži knjigu',
 	'coll-show_collection_tooltip' => 'Kliknite za izmenu, preuzimanje ili naručivanje svoje knjige',
+	'coll-suggest_empty' => 'prazno',
 );
 
 /** Seeltersk (Seeltersk)
@@ -3173,9 +3181,12 @@ $messages['zh-hant'] = array(
 	'coll-print_export' => '列印/匯出',
 	'coll-create_a_book' => '建立圖書',
 	'coll-create_a_book_tooltip' => '建立圖書或頁面集合',
+	'coll-book_creator' => '圖書創建器',
 	'coll-download_as' => '下載為 $1',
 	'coll-download_as_tooltip' => '下載這個wiki頁面的$1版本',
 	'coll-disable' => '禁用',
+	'coll-book_creator_disable' => '禁用圖書創建器',
+	'coll-book_creator_disable_tooltip' => '停止使用圖書創建器',
 	'coll-add_category' => '將此分類增加到圖書',
 	'coll-add_category_tooltip' => '將這個分類中的所有維基頁面加入您的圖書中',
 	'coll-add_this_page' => '將此頁面增加到圖書',
@@ -3195,6 +3206,9 @@ $messages['zh-hant'] = array(
 	'coll-remove_page_tooltip' => '將目前維基頁面從您的圖書中移除',
 	'coll-show_collection' => '顯示圖書',
 	'coll-show_collection_tooltip' => '點擊此處編輯、下載或訂購圖書',
+	'coll-not_addable' => '無法加載此頁',
+	'coll-make_suggestions' => '建議頁面',
+	'coll-make_suggestions_tooltip' => '根據您圖書中的頁面顯示建議',
 	'coll-suggest_empty' => '空',
 );
 
