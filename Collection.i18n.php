@@ -5120,6 +5120,7 @@ $messages['io'] = array(
 	'coll-rendering_status' => '<strong>Stando:</strong> $1',
 	'coll-rendering_page' => '(pagino: $1)',
 	'coll-about_pp' => 'Pri $1',
+	'coll-suggest_your_book' => 'Vua libro',
 	'coll-suggest_undo' => 'desfacar',
 );
 
@@ -8171,13 +8172,16 @@ Se isto não funcionar, por favor utilize o botão atualizar do seu navegador.</
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(página wiki: $1)',
 	'coll-rendering_page' => '(página: $1)',
-	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/A compor o texto de informação da página',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Renderizando o texto de informação da página',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Renderizando o texto de informação do livro',
 	'coll-rendering_finished_title' => 'Renderização concluída',
 	'coll-rendering_finished_text' => '<strong>O arquivo do documento foi gerado.</strong>
 <strong>[$1 Baixe o arquivo]</strong> para o seu computador.
 
 Notas:
 * Não está satisfeito com o resultado? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para possibilidades de aprimoramentos.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Renderizando o texto de informação da página',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Renderizando o texto de informação do livro',
 	'coll-notfound_title' => 'Livro não encontrado',
 	'coll-notfound_text' => 'Não foi possível encontrar a página do livro.',
 	'coll-download_notfound_title' => 'Arquivo não encontrado',
@@ -8192,7 +8196,7 @@ Talvez ele tenha sido removido e precise ser regenerado.',
 	'coll-return_to_collection' => '<p>Retornar para <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Encomendar como um livro impresso',
 	'coll-book_text' => 'Adquira um livro impresso de nosso parceiro de impressão sob demanda:',
-	'coll-order_from_pp' => 'Encomendar o livro de $1',
+	'coll-order_from_pp' => 'Previsualizar com $1',
 	'coll-about_pp' => 'Sobre $1',
 	'coll-invalid_podpartner_title' => 'Parceiro de impressão sob demanda inválido',
 	'coll-invalid_podpartner_msg' => 'O parceiro de impressão sob demanda fornecido é inválido.
@@ -8218,6 +8222,7 @@ A lista é atualizada toda vez que você clica nos botões adicionar ou remover.
 	'coll-suggest_article_remove' => 'A página <strong>$1</strong> foi removida do seu livro ($2).',
 	'coll-suggest_undo_tooltip' => 'Desfazer esta ação',
 	'coll-suggest_undo' => 'desfazer',
+	'coll-load_local_book' => 'Clique OK para continuar com o seu livro %TITLE% que contém %NUMPAGES% páginas wiki. Clique Cancelar para apagá-lo e começar com um livro vazio.',
 	'right-collectionsaveasuserpage' => 'Salvar livros como página de usuário',
 	'right-collectionsaveascommunitypage' => 'Salvar livros como páginas comunitárias',
 );
