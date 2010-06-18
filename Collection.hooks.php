@@ -38,7 +38,7 @@ class CollectionHooks {
 		return true;
 	}
 
-	function buildNavUrls( $skin, &$navUrls ) {
+	static function buildNavUrls( $skin, &$navUrls ) {
 		global $wgUser;
 		global $wgCollectionPortletForLoggedInUsersOnly;
 		
