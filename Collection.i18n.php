@@ -2009,6 +2009,7 @@ Kontakt venligst din MediaWiki-administrator.',
  * @author Pill
  * @author Raimond Spekking
  * @author Revolus
+ * @author The Evil IP address
  * @author Umherirrender
  * @author VolkerHaas
  */
@@ -2113,7 +2114,7 @@ Hinweise:
 	'coll-download_failed_title' => 'Fehler beim Herunterladen',
 	'coll-download_failed_text' => 'Es gab einen Fehler beim Herunterladen der Datei: $1',
 	'coll-is_cached' => '<ul><li>Es ist eine zwischengespeicherte Version des Dokumentes vorhanden, so dass kein Rendern notwendig war. <a href="$1">Neurendern erzwingen.</a></li></ul>',
-	'coll-excluded-templates' => '* Vorlagen aus der Kategorie [[:Category:$1|$1]] wurden ausgeschlossen.',
+	'coll-excluded-templates' => '* Vorlagen aus der Kategorie „[[:Category:$1|$1]]“ wurden ausgeschlossen.',
 	'coll-blacklisted-templates' => '* Vorlagen von der Schwarzen Liste [[:$1]] wurden ausgeschlossen.',
 	'coll-return_to_collection' => 'Zurück zu <a href="$1">$2</a>',
 	'coll-book_title' => 'Als gedrucktes Buch bestellen',
@@ -8261,6 +8262,7 @@ $messages['qu'] = array(
 );
 
 /** Romanian (Română)
+ * @author Cin
  * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Stelistcristi
@@ -8291,10 +8293,10 @@ Această pagină nu va lucra corect, doar dacă JavaScript este pornit.</strong>
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Elimină',
 	'coll-show' => 'Arată',
-	'coll-move_to_top' => 'Mergi în vârf',
-	'coll-move_up' => 'Mergi sus',
-	'coll-move_down' => 'Mergi jos',
-	'coll-move_to_bottom' => 'Mergi la bază',
+	'coll-move_to_top' => 'Mută la început',
+	'coll-move_up' => 'Mută sus',
+	'coll-move_down' => 'Mută jos',
+	'coll-move_to_bottom' => 'Mută în jos',
 	'coll-title' => 'Titlu:',
 	'coll-subtitle' => 'Subtitlu:',
 	'coll-contents' => 'Cuprins',
@@ -8321,7 +8323,7 @@ Această pagină nu va lucra corect, doar dacă JavaScript este pornit.</strong>
 	'coll-save_collection' => 'Salvează cartea',
 	'coll-save_category' => 'Toate cărțile sunt salvate în categoria [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Pagina există.
-Suprascrie?',
+Suprascriu?',
 	'coll-overwrite_text' => 'O pagină cu numele [[:$1]] există deja.
 Doriți ca aceasta să fie înlocuită cu cartea dumneavoastră?',
 	'coll-yes' => 'Da',
@@ -8330,7 +8332,7 @@ Doriți ca aceasta să fie înlocuită cu cartea dumneavoastră?',
 Doriți să rescrieți cartea actuală, să adăugați noul conținut, sau să revocați încărcarea acestei cărți?',
 	'coll-overwrite' => 'Suprascrie',
 	'coll-append' => 'Adaugă',
-	'coll-cancel' => 'Anulează',
+	'coll-cancel' => 'Renunţă',
 	'coll-update' => 'Actualizează',
 	'coll-limit_exceeded_title' => 'Carte prea mare',
 	'coll-limit_exceeded_text' => 'Cartea dumneavoastră este prea mare.
