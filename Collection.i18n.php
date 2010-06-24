@@ -8265,6 +8265,7 @@ $messages['qu'] = array(
  * @author Cin
  * @author Firilacroco
  * @author KlaudiuMihaila
+ * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
@@ -8294,9 +8295,9 @@ Această pagină nu va lucra corect, doar dacă JavaScript este pornit.</strong>
 	'coll-remove' => 'Elimină',
 	'coll-show' => 'Arată',
 	'coll-move_to_top' => 'Mută la început',
-	'coll-move_up' => 'Mută sus',
-	'coll-move_down' => 'Mută jos',
-	'coll-move_to_bottom' => 'Mută în jos',
+	'coll-move_up' => 'Mergi sus',
+	'coll-move_down' => 'Mergi jos',
+	'coll-move_to_bottom' => 'Mergi la bază',
 	'coll-title' => 'Titlu:',
 	'coll-subtitle' => 'Subtitlu:',
 	'coll-contents' => 'Cuprins',
