@@ -627,7 +627,7 @@ EOS
 		$revision = Revision::newFromTitle( $title, $oldid );
 		$collection['items'][] = array(
 			'type' => 'article',
-			'content-type' => 'text/x-wiki',
+			'content_type' => 'text/x-wiki',
 			'title' => $title->getPrefixedText(),
 			'revision' => strval( $oldid ),
 			'latest' => strval( $latest ),
@@ -804,7 +804,7 @@ EOS
 			}
 			$d = array(
 				'type' => 'article',
-				'content-type' => 'text/x-wiki',
+				'content_type' => 'text/x-wiki',
 				'title' => $articleTitle->getPrefixedText(),
 				'latest' => $latest,
 				'revision' => $oldid,
@@ -1195,7 +1195,7 @@ EOS
 		}
 		$article = array(
 			'type' => 'article',
-			'content-type' => 'text/x-wiki',
+			'content_type' => 'text/x-wiki',
 			'title' => $title->getPrefixedText()
 		);
 		if ( $oldid ) {
