@@ -291,6 +291,13 @@ $messages['gom-latn'] = array(
 	'coll-return_to' => '[[:$1]] ak patim vos',
 );
 
+/** Bahasa Banjar (Bahasa Banjar)
+ * @author J Subhi
+ */
+$messages['bjn'] = array(
+	'coll-show' => 'Tampilakan',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Anrie
  * @author Arnobarnard
@@ -8577,6 +8584,18 @@ $messages['ru'] = array(
 	'coll-load_local_book' => 'Нажмите «ОК», чтобы продолжить работу с вашей книгой %TITLE%, содержащей %NUMPAGES% вики-страниц. Нажмите «Отмена», чтобы удалить её и начать с пустой книги.',
 	'right-collectionsaveasuserpage' => 'сохранение книг, как страницу участника',
 	'right-collectionsaveascommunitypage' => 'сохранение книг, как страницу сообщества',
+);
+
+/** Rusyn (русиньскый язык)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'coll-collection' => 'Книга',
+	'coll-collections' => 'Книгы',
+	'coll-show' => 'Вказати',
+	'coll-overwrite' => 'Переписати',
+	'coll-cancel' => 'Сторно',
+	'coll-suggest_show' => 'вказати',
 );
 
 /** Yakut (Саха тыла)
