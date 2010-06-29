@@ -2463,6 +2463,13 @@ $messages['ru'] = array(
 	'coll-suggest_empty' => 'пуста',
 );
 
+/** Rusyn (русиньскый язык)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'coll-bookscategory' => 'Книгы',
+);
+
 /** Yakut (Саха тыла)
  * @author HalanTul
  */
