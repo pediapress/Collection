@@ -54,6 +54,8 @@ function req(func, args, callback) {
 var script_url = wgServer +
 	((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
 
+var chapter_max_len = 200;
+
 /******************************************************************************/
 
 function getMWServeStatus() {
@@ -101,6 +103,7 @@ function clear_collection() {
 function create_chapter() {
 	var name = prompt(gettext('#newChapterText'));
 	if (name) {
+		name = name.substring(0, chapter_max_len);
 		req('AddChapter', [name], refresh_list);
 	}
 	return false;
@@ -109,6 +112,7 @@ function create_chapter() {
 function rename_chapter(index, old_name) {
 	var new_name = prompt(gettext('#renameChapterText'), old_name);
 	if (new_name) {
+		new_name = new_name.substring(0, chapter_max_len);
 		req('RenameChapter', [index, new_name], refresh_list);
 	}
 	return false;
