@@ -5769,6 +5769,7 @@ $messages['kn'] = array(
 );
 
 /** Korean (한국어)
+ * @author Albamhandae
  * @author Ilovesabbath
  * @author Klutzy
  * @author Kwj2772
@@ -5877,7 +5878,7 @@ $messages['ko'] = array(
 	'coll-is_cached' => '<ul><li>이 문서의 캐시된 버전이 발견되었습니다. 따라서 다시 렌더링하지 않으셔도 됩니다. <a href="$1">다시 렌더링하기</a></li></ul>',
 	'coll-excluded-templates' => '[[:Category:$1|$1]] 분류에 속한 틀은 제외되었습니다.',
 	'coll-blacklisted-templates' => '틀 블랙리스트 [[:$1]]에 있는 틀은 제외되었습니다.',
-	'coll-return_to_collection' => '<p><a href="$1">$2</a>로 돌아갑니다</p>',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a>(으)로 돌아갑니다.</p>',
 	'coll-book_title' => '인쇄된 책으로 주문',
 	'coll-book_text' => '인쇄 협력자를 통해 책을 인쇄합니다.',
 	'coll-order_from_pp' => '$1에서 책 미리 보기',
@@ -5885,7 +5886,7 @@ $messages['ko'] = array(
 	'coll-invalid_podpartner_title' => '인쇄 협력자 정보 잘못됨',
 	'coll-invalid_podpartner_msg' => '제공받은 인쇄 협력자 정보가 잘못되었습니다. 관리자에게 해당 문제를 연락해주세요.',
 	'coll-license' => '라이선스',
-	'coll-return_to' => '[[:$1]]으로 돌아갑니다.',
+	'coll-return_to' => '[[:$1]](으)로 돌아갑니다.',
 	'coll-more_info' => '정보 더 보기',
 	'coll-hide_info' => '정보 숨기기',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress 주문 정보',
