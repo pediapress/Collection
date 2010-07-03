@@ -1180,12 +1180,12 @@ JavaScript সক্রিয় না করা পর্যন্ত, এই 
  */
 $messages['br'] = array(
 	'coll-desc' => '[[Special:Book|Sevel levrioù]]',
-	'coll-book_creator_intro' => "<big>Gant ar ''c'hrouer levrioù'' e c'hallit sevel ul levr a ya d'e ober pajennoù wiki dibabet ganeoc'h. Gallout a rit ezporzhiañ al levr e furmadoù disheñvel (evel, da skouer, PDF pe ODF) pe urzhiañ ur stumm moullet.</big>",
+	'coll-book_creator_intro' => "<big>Gant ar ''c'hrouer levrioù'' e c'hallit sevel ul levr a ya d'e ober pajennoù wiki dibabet ganeoc'h. Gallout a rit ezporzhiañ al levr e furmadoù disheñvel (evel, da skouer, PDF pe ODF) pe urzhiañ ur stumm moullet anezhañ.</big>",
 	'coll-manage_your_book' => 'Merañ ho levr',
 	'coll-book_creator_help' => "Gwelet [[{{MediaWiki:Coll-helppage}}|ar bajenn skoazell diwar-benn al levrioù]] evit gouzout hiroc'h.",
-	'coll-start_book_creator' => "Kregiñ gant ar c'hrouer levrioù",
+	'coll-start_book_creator' => "Lañsañ ar c'hrouer levrioù",
 	'coll-book_creator_continue' => "Kenderc'hel da implijout ar c'hrouer levrioù",
-	'coll-book_creator_disable_text' => "Ar ''c'hrouer levrioù'' a vo diweredekaet hag al levrioù evit pere emoac'h o labourat warno a vo diverket eus an dalc'h eus ho merdeer.",
+	'coll-book_creator_disable_text' => "Diweredekaet e vo ar ''c'hrouer levrioù'' ha diverket al levr a labourit warnañ.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Testenn ar mod levr',
 	'coll-collection' => 'Levr',
 	'coll-collections' => 'Levrioù',
@@ -1299,16 +1299,16 @@ Kit e darempred gant ur merour MediaWiki.",
 	'coll-hide_info' => 'Kuzhat an titouroù',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress urzhiañ titouroù',
 	'coll-suggest_title' => 'Pajennoù kinniget evit ho levr',
-	'coll-suggest_intro_text' => "Ar c'hinnigoù a zo diazezet war hollad ar pajennoù wiki en ho levr er mare-mañ.
-Hizivaet eo ar roll bep tro ma glikoc'h war ar bouton ouzhpennañ pe tennañ.",
+	'coll-suggest_intro_text' => "Diazezet eo ar c'hinnigoù war an torkad pajennoù wiki zo en ho levr evit poent.
+Hizivaet e vez ar roll bep tro ma klikit war ar bouton ouzhpennañ pe tennañ.",
 	'coll-suggested_articles' => 'Kinnigoù',
 	'coll-suggest_reset_bans' => 'adderaouekaat',
-	'coll-suggest_reset_bans_tooltip' => "Diskouez ar c'hinnigoù kozh bet tennet kuit",
+	'coll-suggest_reset_bans_tooltip' => "Diskouez ar c'hinnigoù kozh tennet kuit a-raok",
 	'coll-suggest_add_selected' => 'Ouzhpennañ ar pajennoù diuzet',
 	'coll-suggest_ban_selected' => 'Diverkañ ar pajennoù diuzet',
 	'coll-suggest_your_book' => 'Ho levr',
 	'coll-suggest_show' => 'diskouez',
-	'coll-suggest_ban_tooltip' => "Tennañ kuit ar bajenn-mann eus roll ar c'hinnigoù",
+	'coll-suggest_ban_tooltip' => "Tennañ kuit ar bajenn-mañ eus roll ar c'hinnigoù",
 	'coll-suggest_article_ban' => "Tennet eo bet ar bajenn <strong>$1</strong> eus ar c'hinnigoù ($2).",
 	'coll-suggest_article_add' => "Ouzhpennet eo bet ar bajenn <strong>$1</strong> d'ho levr ($2).",
 	'coll-suggest_article_remove' => 'Tennnet eo bet ar bajenn <strong>$1</strong> eus ho levr ($2).',
@@ -2295,12 +2295,16 @@ Eka ena nihebitiyeno, ma rica keno browser xo reyna ciwane bike</p>',
 	'coll-rendering_status' => 'strong>Statu:</strong> $1',
 	'coll-rendering_article' => '(pelê wîkîyî: $1)',
 	'coll-rendering_page' => '(pel: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Enformasyonê nuştişê pele render keni',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Enformasyonê tope pele render keni',
 	'coll-rendering_finished_title' => 'Render kerdişî qediya',
 	'coll-rendering_finished_text' => '<strong>Ena dosyayê documentî viraziyayo.</strong>
 <strong>[$1 Dosya bar bike]</strong> komputerê xo.
 
 Notan:
 * Ti ena miwazeno? [[{{MediaWiki:Coll-helppage}}|Qe kitaban de pelê yardimî]] bivîne ke belki ti hewlyer keno.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Enformasyonê nuştişê pele render keni',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Enformasyonê tope pele render keni',
 	'coll-notfound_title' => 'Kitab nedîy',
 	'coll-notfound_text' => 'Pelê kitabî nedîy',
 	'coll-download_notfound_title' => 'Dosya nedîy',
@@ -5162,6 +5166,7 @@ $messages['is'] = array(
  * @author Civvì
  * @author Darth Kule
  * @author Melos
+ * @author Nemo bis
  * @author Pietrodn
  * @author Stefano-c
  */
@@ -5246,7 +5251,7 @@ Si desidera sovrascrivere il libro corrente, aggiungere il nuovo contenuto o ann
 <p><strong>Avanzamento:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
 <p>Questa pagina dovrebbe aggiornarsi automaticamente ogni pochi secondi.
-Se questo non funziona, premi il pulsante di aggiornamento del tuo browser.</p>',
+Se ciò non succede, premi il pulsante di aggiornamento del tuo browser.</p>',
 	'coll-rendering_status' => '<strong>Stato:</strong> $1',
 	'coll-rendering_article' => '(pagina wiki: $1)',
 	'coll-rendering_page' => '(pagina: $1)',
