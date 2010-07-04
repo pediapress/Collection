@@ -10894,6 +10894,11 @@ Pads pluik nonik kanons paläükön.',
 	'coll-return_to' => 'Geikön lü [[:$1]]',
 );
 
+/** Wu (吴语) */
+$messages['wuu'] = array(
+	'coll-cancel' => '取消',
+);
+
 /** Yiddish (ייִדיש)
  * @author פוילישער
  */
