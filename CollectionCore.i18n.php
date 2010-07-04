@@ -2376,14 +2376,18 @@ $messages['pt-br'] = array(
 /** Romanian (Română)
  * @author Firilacroco
  * @author KlaudiuMihaila
+ * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
-	'coll-print_export' => 'Tipăriți/exportați',
-	'coll-create_a_book' => 'Creează o carte',
+	'coll-print_export' => 'Tipărire/exportare',
+	'coll-create_a_book' => 'Crearea unei cărți',
+	'coll-create_a_book_tooltip' => 'Crearea unei cărți sau a unei colecții de pagini',
+	'coll-book_creator' => 'Creator de cărți',
 	'coll-download_as' => 'Descarcă $1',
 	'coll-download_as_tooltip' => 'Descărcați o versiune $1 a acestei pagini wiki',
 	'coll-disable' => 'dezactivează',
+	'coll-book_creator_disable' => 'Dezactivează creatorul de cărți',
 	'coll-add_category' => 'Adaugă această categorie la carte',
 	'coll-add_category_tooltip' => 'Adăugați toate wiki paginile din această categorie în cartea dumneavoastră',
 	'coll-add_this_page' => 'Adaugă această pagină la carte',
