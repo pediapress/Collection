@@ -320,6 +320,12 @@ function wfAjaxCollectionGetPopupData( $title ) {
 	$json = new Services_JSON();
 	$result = array();
 	$imagePath = "$wgScriptPath/extensions/Collection/images";
+	$t = Title::newFromText( $title );
+	if ( $t->isRedirect() ) {
+		$a = new Article( $t, 0 );
+		$t = $a->followRedirect();
+		$title = $t->getPrefixedText();
+	}
 	if ( CollectionSession::findArticle( $title ) == - 1 ) {
 		$result['action'] = 'add';
 		$result['text'] = wfMsg( 'coll-add_linked_article' );
@@ -329,6 +335,7 @@ function wfAjaxCollectionGetPopupData( $title ) {
 		$result['text'] = wfMsg( 'coll-remove_linked_article' );
 		$result['img'] = "$imagePath/silk-remove.png";
 	}
+	$result['title'] = $title;
 	$r = new AjaxResponse( $json->encode( $result ) );
 	$r->setContentType( 'application/json' );
 	return $r;
