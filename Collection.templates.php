@@ -132,6 +132,9 @@ echo $GLOBALS['wgParser']->parse( '{{:' . $t . '}}',
 		if ( $GLOBALS['wgUser']->isLoggedIn() ) {
 			$canSaveUserPage = $GLOBALS['wgUser']->isAllowed( 'collectionsaveasuserpage' );
 			$canSaveCommunityPage = $GLOBALS['wgUser']->isAllowed( 'collectionsaveascommunitypage' );
+		} else {
+			$canSaveUserPage = false;
+			$canSaveCommunityPage = false;
 		}
 		if ( $GLOBALS['wgEnableWriteAPI'] && ( $canSaveUserPage || $canSaveCommunityPage ) ) {
 	?>
