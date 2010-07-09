@@ -258,6 +258,7 @@ The contents of this page appear in the "Order as a printed book" box on <nowiki
 * <tt>$2</tt> is a link captioned {{msg-mw|coll-suggest_undo}}',
 	'coll-suggest_undo_tooltip' => '{{Identical|Undo}}',
 	'coll-suggest_undo' => '{{Identical|Undo}}',
+	'coll-load_local_book' => 'PLURAL support not yet available for collection extension. See the discussion on [[Thread:Support/PLURAL support for Coll-load local book/reply]].',
 	'right-collectionsaveasuserpage' => '{{doc-right|collectionsaveasuserpage}}',
 	'right-collectionsaveascommunitypage' => '{{doc-right|collectionsaveascommunitypage}}',
 );
@@ -1873,6 +1874,7 @@ Mae'r rhestr yn cael ei adnewyddu bob tro yr ydych yn pwyso ar y botymau ychwane
 	'coll-suggest_article_remove' => "Tynnwyd y dudalen <strong>$1</strong> o'ch llyfr ($2).",
 	'coll-suggest_undo_tooltip' => 'Dadwneud y weithred hon',
 	'coll-suggest_undo' => 'dadwneud',
+	'coll-load_local_book' => "Pwyswch ar 'Iawn' i barhau â'ch llyfr %TITLE%, ag iddo %NUMPAGES% o dudalennau wici. Pwyswch ar 'Diddymu' i'w ddileu a dechrau eto gyda llyfr gwag.",
 	'right-collectionsaveasuserpage' => 'Gallu cadw llyfrau ar dudalennau yn y parth defnyddiwr',
 	'right-collectionsaveascommunitypage' => 'Gallu rhoi llyfrau ar gadw ar dudalennau cymunedol',
 );
@@ -5062,6 +5064,8 @@ Jika tidak, silakan tekan tombol muat ulang di penjelajah web Anda.</p>',
 
 Catatan:
 * Tidak puas dengan hasilnya? Lihat [[{{MediaWiki:Coll-helppage}}|halaman bantuan tentang buku]] untuk kemungkinan mengembangkannya.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Mengubah teks info halaman',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Mengubah teks info koleksi',
 	'coll-notfound_title' => 'Buku tak ditemukan',
 	'coll-notfound_text' => 'Tidak dapat menemukan halaman buku.',
 	'coll-download_notfound_title' => 'Berkas tak ditemukan',
@@ -5100,6 +5104,7 @@ Daftar diperbaharui kapanpun anda clik tombol tambahkan atau hapus.',
 	'coll-suggest_article_remove' => 'Halaman <strong>$1</strong> telah dihapus dari buku anda ($2).',
 	'coll-suggest_undo_tooltip' => 'Batalkan pilihan ini',
 	'coll-suggest_undo' => 'batalkan',
+	'coll-load_local_book' => 'Klik OK untuk melanjutkan dengan buku Anda yang berjudul %TITLE% yang berisi %NUMPAGES% halaman wiki. Klik Batal untuk menghapusnya dan memulai dengan buku kosong.',
 	'right-collectionsaveasuserpage' => 'Menyimpan koleksi buku sebagai halaman pengguna',
 	'right-collectionsaveascommunitypage' => 'Menyimpan koleksi buku sebagai halaman komunitas',
 );
@@ -6471,7 +6476,7 @@ $messages['mk'] = array(
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Информативен текст за испишувањето на збирки',
 	'coll-rendering_finished_title' => 'Отцртувањето заврши',
 	'coll-rendering_finished_text' => '<strong>Податотеката на документот е создадена.</strong>
-<strong>[$1 Преземете ја податотеката]</strong> на вашиот компјутер.
+<strong>[$1 Преземете ја податотеката]</strong> на вашиот сметач.
 
 Белешки:
 * Не сте задоволни со резултатот? Погледајте ја нашата [[{{MediaWiki:Coll-helppage}}|страница за помош со книги]] за да ги видите можностите за нејзино подобрување.',
