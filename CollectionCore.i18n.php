@@ -682,7 +682,7 @@ $messages['diq'] = array(
  * @author Michawiki
  */
 $messages['dsb'] = array(
-	'coll-print_export' => 'Šišćaś/eksportěrowaś',
+	'coll-print_export' => 'Šišćaś/eksport',
 	'coll-create_a_book' => 'Knigły napóraś',
 	'coll-create_a_book_tooltip' => 'Knigły abo zběrku nastawkow napóraś',
 	'coll-book_creator' => 'Funkcija knigłow',
@@ -1252,7 +1252,7 @@ $messages['hr'] = array(
  * @author Michawiki
  */
 $messages['hsb'] = array(
-	'coll-print_export' => 'Ćišćeć/eksportować',
+	'coll-print_export' => 'Ćišćeć/eksport',
 	'coll-create_a_book' => 'Knihu wutworić',
 	'coll-create_a_book_tooltip' => 'Knihu abo zběrku nastawkow wutworić',
 	'coll-book_creator' => 'Knižny generator',
