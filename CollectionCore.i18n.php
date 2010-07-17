@@ -1465,6 +1465,7 @@ $messages['is'] = array(
  * @author BrokenArrow
  * @author Darth Kule
  * @author Melos
+ * @author Nemo bis
  * @author OrbiliusMagister
  */
 $messages['it'] = array(
@@ -1485,7 +1486,7 @@ $messages['it'] = array(
 	'coll-add_page_tooltip' => 'Aggiungi la pagina wiki corrente al tuo libro',
 	'coll-bookscategory' => 'Libri',
 	'coll-clear_collection' => 'Svuota libro',
-	'coll-clear_collection_confirm' => 'Si desidera veramente pulire completamente il proprio libro?',
+	'coll-clear_collection_confirm' => 'Si desidera veramente svuotare completamente il proprio libro?',
 	'coll-clear_collection_tooltip' => 'Rimuovi tutte le pagine wiki dal tuo libro corrente',
 	'coll-help' => 'Aiuto',
 	'coll-help_tooltip' => "Mostra l'aiuto sulla creazione di libri",
