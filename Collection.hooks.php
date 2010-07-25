@@ -79,7 +79,6 @@ class CollectionHooks {
 		global $wgCollectionArticleNamespaces;
 		global $wgCollectionFormats;
 		global $wgCollectionPortletFormats;
-		global $wgScriptPath;
 
 		if ( is_null( $wgTitle ) || !$wgTitle->exists() ) {
 			return;
@@ -237,16 +236,12 @@ class CollectionHooks {
 
 	static function renderBookCreatorBox( $mode = '' ) {
 		global $wgArticle;
-		global $wgCollectionArticleNamespaces;
 		global $wgCollectionStyleVersion;
-		global $wgCollectionVersion;
 		global $wgJsMimeType;
 		global $wgOut;
 		global $wgScriptPath;
 		global $wgTitle;
 		global $wgUser;
-
-		$namespace = $wgTitle->getNamespace();
 
 		wfLoadExtensionMessages( 'CollectionCore' );
 
@@ -403,10 +398,7 @@ EOS
 	}
 
 	static function getBookCreatorBoxAddRemoveLink( $sk, $imagePath, $ajaxHint, $oldid ) {
-		global $wgArticle;
-		global $wgJsMimeType;
-		global $wgTitle;
-		global $wgScriptPath;
+		global $wgArticle, $wgTitle;
 
 		$namespace = $wgTitle->getNamespace();
 		$ptext = $wgTitle->getPrefixedText();
