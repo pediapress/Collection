@@ -1212,8 +1212,6 @@ EOS
 		global $wgScriptExtension;
 		global $wgOut;
 
-		$json = new Services_JSON();
-
 		if ( !isset( $this->mPODPartners[$partner] ) ) {
 			$wgOut->showErrorPage( 'coll-invalid_podpartner_title', 'coll-invalid_podpartner_msg' );
 			return;
