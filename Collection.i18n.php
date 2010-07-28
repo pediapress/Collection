@@ -292,13 +292,6 @@ $messages['gom-latn'] = array(
 	'coll-return_to' => '[[:$1]] ak patim vos',
 );
 
-/** Bahasa Banjar (Bahasa Banjar)
- * @author J Subhi
- */
-$messages['bjn'] = array(
-	'coll-show' => 'Tampilakan',
-);
-
 /** Afrikaans (Afrikaans)
  * @author Anrie
  * @author Arnobarnard
@@ -1032,6 +1025,13 @@ $messages['bg'] = array(
 	'coll-suggest_undo' => 'отмяна',
 	'right-collectionsaveasuserpage' => 'Запазване на книгата като потребителска страница',
 	'right-collectionsaveascommunitypage' => 'Запазване на книгата като страница на общността',
+);
+
+/** Bahasa Banjar (Bahasa Banjar)
+ * @author J Subhi
+ */
+$messages['bjn'] = array(
+	'coll-show' => 'Tampilakan',
 );
 
 /** Bengali (বাংলা)
@@ -5109,9 +5109,12 @@ Daftar diperbaharui kapanpun anda clik tombol tambahkan atau hapus.',
 	'right-collectionsaveascommunitypage' => 'Menyimpan koleksi buku sebagai halaman komunitas',
 );
 
-/** Igbo (Igbo) */
+/** Igbo (Igbo)
+ * @author Ukabia
+ */
 $messages['ig'] = array(
 	'coll-show' => 'Zi',
+	'coll-title' => 'Íshí:',
 	'coll-cancel' => 'Emekwàlà',
 	'coll-about_pp' => 'Maka $1',
 	'coll-suggest_show' => 'zi',
@@ -11052,6 +11055,7 @@ $messages['yue'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Bencmq
+ * @author Chenxiaoqino
  * @author Chenzw
  * @author Liangent
  * @author Wmr89502270
@@ -11151,6 +11155,8 @@ $messages['zh-hans'] = array(
 
 注释：
 * 对生成效果不满意？查看[[{{MediaWiki:Coll-helppage}}|帮助]]来学习如何改善它。',
+	'coll-finished_page_info_text_article' => ' {{MediaWiki:Coll-helppage}}/渲染收集信息文字',
+	'coll-finished_collection_info_text_article' => ' {{MediaWiki:Coll-helppage}}/渲染收集信息文字',
 	'coll-notfound_title' => '图书未找到',
 	'coll-notfound_text' => '未找到图书页面。',
 	'coll-download_notfound_title' => '找不到文件',
@@ -11188,6 +11194,7 @@ $messages['zh-hans'] = array(
 	'coll-suggest_article_remove' => '页面<strong>$1</strong>已经从您的图书中移除（$2）。',
 	'coll-suggest_undo_tooltip' => '撤销这个动作',
 	'coll-suggest_undo' => '撤销',
+	'coll-load_local_book' => '点击OK来继续操作你的书籍《%TITLE%》（共%NUMPAGES%页）。 点击Cancel清空并从零开始。',
 	'right-collectionsaveasuserpage' => '在用户页储存此书',
 	'right-collectionsaveascommunitypage' => '在社群页面储存此书',
 );

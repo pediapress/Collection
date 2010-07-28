@@ -1431,6 +1431,13 @@ $messages['id'] = array(
 	'coll-suggest_empty' => 'kosong',
 );
 
+/** Igbo (Igbo)
+ * @author Ukabia
+ */
+$messages['ig'] = array(
+	'coll-help' => 'Nkwádo',
+);
+
 /** Ido (Ido)
  * @author Malafaya
  */
