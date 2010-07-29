@@ -131,20 +131,28 @@ Installation and Configuration of the Collection Extension
    Category pages (NS_CATEGORY) are always an exception (all articles in a
    category are added, not the category page itself). Default is::
 
-     array(
-     	NS_MAIN,
-     	NS_TALK,
-     	NS_USER,
-     	NS_USER_TALK,
-     	NS_PROJECT,
-     	NS_PROJECT_TALK,
-     	NS_MEDIAWIKI,
-     	NS_MEDIAWIKI_TALK,
-     	100,
-     	101,
-     	102,
-     	103,
-     )
+    array(
+      NS_MAIN,
+      NS_TALK,
+      NS_USER,
+      NS_USER_TALK,
+      NS_PROJECT,
+      NS_PROJECT_TALK,
+      NS_MEDIAWIKI,
+      NS_MEDIAWIKI_TALK,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+    );
 
   *$wgCommunityCollectionNamespace (integer)*
    Namespace for "community collections", i.e. the namespace where non-personal
