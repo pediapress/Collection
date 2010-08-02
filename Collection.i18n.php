@@ -3596,7 +3596,7 @@ $messages['frp'] = array(
 	'coll-desc' => 'Pèrmèt de [[Special:Book|fâre des lévros]].',
 	'coll-manage_your_book' => 'Administrar voutron lévro',
 	'coll-book_creator_help' => 'Vêde la [[{{MediaWiki:Coll-helppage}}|pâge d’éde sur los lévros]] por més d’enformacions.',
-	'coll-start_book_creator' => 'Dèmarrar lo crèator de lévros',
+	'coll-start_book_creator' => 'Emmodar lo crèator de lévros',
 	'coll-book_creator_continue' => 'Continuar en utilisent lo crèator de lévros',
 	'coll-book_creator_disable_text' => "Lo ''crèator de lévros'' serat dèsactivâ et pués los lévros sur losquints vos travalyéd seront suprimâs de la sèance de voutron navigator.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Tèxto du crèator de lévros',
@@ -11302,6 +11302,8 @@ $messages['zh-hant'] = array(
 
 註釋：
 * 不滿意輸出成果？請參閱[[{{MediaWiki:Coll-helppage}}|幫助頁面]]以暸解如何改善它。',
+	'coll-finished_page_info_text_article' => ' {{MediaWiki:Coll-helppage}}/渲染收集信息文字',
+	'coll-finished_collection_info_text_article' => ' {{MediaWiki:Coll-helppage}}/渲染收集信息文字',
 	'coll-notfound_title' => '找不到圖書',
 	'coll-notfound_text' => '未找到。',
 	'coll-download_notfound_title' => '找不到文件',
@@ -11338,6 +11340,7 @@ $messages['zh-hant'] = array(
 	'coll-suggest_article_remove' => '頁面<strong>$1</strong>已經從您的圖書中移除（$2）。',
 	'coll-suggest_undo_tooltip' => '撤銷這個動作',
 	'coll-suggest_undo' => '撤銷',
+	'coll-load_local_book' => '點擊OK來繼續操作你的書籍《%TITLE%》（共%NUMPAGES%頁）。 點擊Cancel清空並從零開始。',
 	'right-collectionsaveasuserpage' => '在使用者頁面儲存此書',
 	'right-collectionsaveascommunitypage' => '在社群頁面儲存此書',
 );
