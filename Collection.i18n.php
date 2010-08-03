@@ -292,6 +292,13 @@ $messages['gom-latn'] = array(
 	'coll-return_to' => '[[:$1]] ak patim vos',
 );
 
+/** Abkhazian (Аҧсуа)
+ * @author Temuri rajavi
+ */
+$messages['ab'] = array(
+	'coll-rename' => 'Ахьӡ аҧсахра',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Anrie
  * @author Arnobarnard
@@ -5115,7 +5122,7 @@ Daftar diperbaharui kapanpun anda clik tombol tambahkan atau hapus.',
 $messages['ig'] = array(
 	'coll-show' => 'Zi',
 	'coll-title' => 'Íshí:',
-	'coll-cancel' => 'Emekwàlà',
+	'coll-cancel' => 'Kàchá',
 	'coll-about_pp' => 'Maka $1',
 	'coll-suggest_show' => 'zi',
 );
