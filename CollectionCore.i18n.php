@@ -3210,7 +3210,7 @@ $messages['zh-hans'] = array(
 	'coll-show_collection_tooltip' => '单击此处编辑／下载／订购你的图书',
 	'coll-not_addable' => '无法添加本页面',
 	'coll-make_suggestions' => '建议页面',
-	'coll-make_suggestions_tooltip' => '展示据你图书中的页面建议的页面',
+	'coll-make_suggestions_tooltip' => '显示据你图书中的页面建议的页面',
 	'coll-suggest_empty' => '空',
 );
 

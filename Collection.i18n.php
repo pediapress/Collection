@@ -11158,7 +11158,7 @@ $messages['zh-hans'] = array(
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}／生成收藏信息文字',
 	'coll-rendering_finished_title' => '生成完成',
 	'coll-rendering_finished_text' => '<strong>文件已生成。</strong>
-<strong>[$1 下载该文件]</strong>至你的电脑。
+<strong>[$1下载该文件]</strong>至你的电脑。
 
 注意：
 *对输出效果不满意？请见[[{{MediaWiki:Coll-helppage}}|图书帮助页面]]以寻求改进方法。',
@@ -11180,7 +11180,7 @@ $messages['zh-hans'] = array(
 	'coll-book_text' => '从我们的印刷合作伙伴获取印刷图书。',
 	'coll-order_from_pp' => '用$1预览',
 	'coll-about_pp' => '关于$1',
-	'coll-invalid_podpartner_title' => '无效POD合作伙伴',
+	'coll-invalid_podpartner_title' => '无效的印刷合作伙伴',
 	'coll-invalid_podpartner_msg' => '提供的印刷合作伙伴无效。
 请联系你的MediaWiki管理员。',
 	'coll-license' => '许可协议',
