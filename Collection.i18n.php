@@ -3299,6 +3299,8 @@ $messages['fa'] = array(
 لطفاً با مدیر مدیاویکی خود تماس بگیرید.',
 	'coll-license' => 'اجازه‌نامه',
 	'coll-return_to' => 'بازگشت به [[:$1]]',
+	'right-collectionsaveasuserpage' => 'ذخیره کردن کتاب‌ها به صورت یک صفحهٔ کاربری',
+	'right-collectionsaveascommunitypage' => 'ذخیره کردن کتاب‌ها به صورت یک صفحه عمومی',
 );
 
 /** Finnish (Suomi)
@@ -4104,6 +4106,12 @@ $messages['gv'] = array(
 	'coll-no' => 'Cha',
 	'coll-cancel' => 'Dolley magh',
 	'coll-about_pp' => 'Mychione $1',
+);
+
+/** Hausa (هَوُسَ) */
+$messages['ha'] = array(
+	'coll-cancel' => 'Soke',
+	'coll-suggest_show' => 'nuna',
 );
 
 /** Hawaiian (Hawai`i)
