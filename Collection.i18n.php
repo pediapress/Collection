@@ -10544,6 +10544,11 @@ $messages['uk'] = array(
 	'right-collectionsaveascommunitypage' => 'Збереження книг як сторінок спільноти',
 );
 
+/** Urdu (اردو) */
+$messages['ur'] = array(
+	'coll-cancel' => 'منسوخ',
+);
+
 /** Vèneto (Vèneto)
  * @author Candalua
  * @author Nick1915
