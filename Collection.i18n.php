@@ -1742,6 +1742,13 @@ Seznam se aktualizuje při každém kliknutím na tlačítka přidat a odebrat.'
 	'right-collectionsaveascommunitypage' => 'Ukládání knih jako stránek komunity',
 );
 
+/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+ * @author ОйЛ
+ */
+$messages['cu'] = array(
+	'coll-no' => 'нѣ́тъ',
+);
+
 /** Welsh (Cymraeg)
  * @author Lloffiwr
  */
