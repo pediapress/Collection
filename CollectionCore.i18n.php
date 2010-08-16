@@ -910,25 +910,48 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Bersam
  * @author Ebraminio
  * @author Huji
  * @author Komeil 4life
  * @author Ladsgroup
+ * @author Wayiran
  */
 $messages['fa'] = array(
 	'coll-print_export' => 'چاپ/برون‌ریزی',
 	'coll-create_a_book' => 'ایجاد کتاب',
+	'coll-create_a_book_tooltip' => 'یک کتاب یا مجموعه صفحات ایجاد کن',
+	'coll-book_creator' => 'خالق کتاب',
 	'coll-download_as' => 'بارگیری با عنوان $1',
-	'coll-add_category' => 'اضافه کردن رده',
+	'coll-download_as_tooltip' => 'یک نسخهٔ $1 از این صفحهٔ ویکی را بارگیری کن',
+	'coll-disable' => 'غیرفعال',
+	'coll-book_creator_disable' => 'خالق کتاب را غیرفعال کن',
+	'coll-book_creator_disable_tooltip' => 'استفاده از خالق کتاب را متوقف کنید',
+	'coll-add_linked_article' => 'صفحهٔ ویکی پیونددهی‌شده را به کتابتان اضافه کنید',
+	'coll-remove_linked_article' => 'صفحهٔ ویکی پیونددهی‌شده را از کتابتان حذف کنید',
+	'coll-add_category' => 'این رده را به کتابتان بیفزایید',
+	'coll-add_category_tooltip' => 'همهٔ صفحات ویکی در این رده را به کتابتان بیفزایید',
+	'coll-add_this_page' => 'این صفحه را به کتاب‌تان بیفزایید',
+	'coll-add_page_tooltip' => '↓ صفحه ویکی کنونی را به کتابتان اضافه کنید.',
 	'coll-bookscategory' => 'کتاب‌ها',
 	'coll-clear_collection' => 'پاک کردن کتاب',
 	'coll-clear_collection_confirm' => 'آیا واقعاً می‌خواهید که کتاب خود را به طور کامل پاک کنید؟',
+	'coll-clear_collection_tooltip' => 'همهٔ صفحات ویکی را از کتاب فعلیذتان حذف کنید',
+	'coll-help' => 'راهنما',
+	'coll-help_tooltip' => 'راهنمای ایجاد کتاب‌ها را نشان بده',
 	'coll-helppage' => 'Help:کتاب‌ها',
 	'coll-load_collection' => 'بارکردن کتاب',
+	'coll-load_collection_tooltip' => 'این کتاب را به عنوان کتاب فعلی بارگذاری کنید',
 	'coll-n_pages' => '$1 {{PLURAL:$1|صفحه|صفحه}}',
 	'coll-printable_version_pdf' => 'نسخهٔ پی‌دی‌اف',
+	'coll-remove_this_page' => 'این صفحه را از کتابتان حذف کنید',
+	'coll-remove_page_tooltip' => 'صفحهٔ ویکی کنونی را از کتابتان حذف کنید',
 	'coll-show_collection' => 'نمایش کتاب',
 	'coll-show_collection_tooltip' => 'برای ویرایش/بارگیری/سفارش کتاب خود کلیک کنید',
+	'coll-not_addable' => 'این صفحه نمی‌تواند اضافه شود',
+	'coll-make_suggestions' => 'پیشنهاد صفحات',
+	'coll-make_suggestions_tooltip' => 'نمایش پیشنهادات را بر پایهٔ صفحات کتابتان',
+	'coll-suggest_empty' => 'خالی',
 );
 
 /** Finnish (Suomi)
@@ -1790,6 +1813,7 @@ $messages['lb'] = array(
 $messages['li'] = array(
 	'coll-create_a_book' => "Maak 'n book",
 	'coll-download_as' => 'Óphaole es $1',
+	'coll-disable' => 'zèt oet',
 	'coll-add_category' => 'Zeukgroop bievoge',
 	'coll-add_category_tooltip' => 'Zèt als paasj in dees zeukgroop aan öch book',
 	'coll-add_page_tooltip' => "Zèt d'n huujige wikipaasj aan öch book",
@@ -1797,6 +1821,7 @@ $messages['li'] = array(
 	'coll-clear_collection' => 'Laeg book',
 	'coll-clear_collection_confirm' => 'Wils se dien book èch laege?',
 	'coll-clear_collection_tooltip' => 'Wösj als paasj oet öch huujig book',
+	'coll-help' => 'Hölp',
 	'coll-helppage' => 'Help:Beuk',
 	'coll-load_collection' => 'Laaj book',
 	'coll-load_collection_tooltip' => 'Laaj dit book es öch huujig book',

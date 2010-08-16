@@ -3208,24 +3208,36 @@ Kontakta ezazu, mesedez MediaWiki administratzailea.',
 );
 
 /** Persian (فارسی)
+ * @author Ebraminio
  * @author Huji
  * @author Komeil 4life
  * @author Spacebirdy
+ * @author Wayiran
  */
 $messages['fa'] = array(
 	'coll-desc' => '[[Special:Book|ایجاد کتاب]]',
+	'coll-manage_your_book' => 'کتاب خود را مدیریت کنید',
+	'coll-start_book_creator' => 'خالق کتاب را آغاز کن',
+	'coll-book_creator_continue' => 'به استفاده از خالق کتاب ادامه بده',
 	'coll-collection' => 'کتاب',
 	'coll-collections' => 'کتاب‌ها',
 	'coll-exclusion_category_title' => 'صرف نظر در چاپ',
 	'coll-print_template_prefix' => 'چاپ',
+	'coll-print_template_pattern' => 'چاپ/$1',
 	'coll-unknown_subpage_title' => 'زیرصفحهٔ ناشناس',
 	'coll-unknown_subpage_text' => 'این زیرصفحه از [[Special:Book|کتاب]] وجود ندارد',
+	'coll-couldnotaddarticle_title' => 'نتوانست صفحه ویکی را اضافه کند',
+	'coll-couldnotaddarticle_msg' => 'صفحهٔ ویکی نتوانست اضافه شود.',
+	'coll-couldnotremovearticle_title' => 'نتوانست صفحه ویکی را حذف کند',
+	'coll-couldnotremovearticle_msg' => 'صفحهٔ ویکی نتوانست حذف شود.',
 	'coll-noscript_text' => '<h1>جاوااسکریپت لازم دارید!</h1>
 <strong>مرورگر شما جاوا اسکریپت را پشتیبانی نمی‌کند یا جاوا اسکیریپت شما خاموش است.
 این صفحه به طور صحیح عمل نخواهد کرد، مگر اینکه جاوااسکیریپت فعال شود.</strong>',
+	'coll-savedbook_template' => 'کتاب ـ ذخیره‌شده',
 	'coll-your_book' => 'کتاب شما',
 	'coll-download_title' => 'دریافت',
 	'coll-download_text' => 'برای بارگیری یک نسخهٔ غیر برخط یک قالب برگزینید و دکمه را بزنید.',
+	'coll-download_as_text' => 'برای بارگیری کتابتان در قالب $1 دکمه را بزنید.',
 	'coll-download' => 'دریافت',
 	'coll-format_label' => 'قالب:',
 	'coll-remove' => 'حذف',
@@ -3293,6 +3305,9 @@ $messages['fa'] = array(
 * از خروجی راضی نیستید؟ [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای مجموعه‌ها]] را ببینید تا از امکان بهبود آن با خبر شوید.',
 	'coll-notfound_title' => 'کتاب پیدا نشد',
 	'coll-notfound_text' => 'صفحهٔ کتاب پیدا نشد.',
+	'coll-download_notfound_title' => 'پرونده یافت نشد',
+	'coll-download_failed_title' => 'خطا در طول بارگیری',
+	'coll-download_failed_text' => 'هنگام بارگیری پروندهٔ $1 خطا داده شد',
 	'coll-is_cached' => '<ul><li>یک نسخهٔ کاشه‌گیری شده از این سند پیدا شد، به همین خاطر ترجمه لازم نبود. <a href="$1">ترجمهٔ اجباری.</a></li></ul>',
 	'coll-excluded-templates' => '* از الگوهای رده [[:Category:$1|$1]] صرف نظر شد.',
 	'coll-blacklisted-templates' => '* از الگوهای فهرست سیاه [[:$1]] صرف نظر شد.',
@@ -3306,6 +3321,18 @@ $messages['fa'] = array(
 لطفاً با مدیر مدیاویکی خود تماس بگیرید.',
 	'coll-license' => 'اجازه‌نامه',
 	'coll-return_to' => 'بازگشت به [[:$1]]',
+	'coll-more_info' => 'اطلاعات بیش‌تر را نشان بده',
+	'coll-hide_info' => 'اطلاعات را پنهان کن',
+	'coll-suggest_title' => 'صفحات پیشنهادی برای کتابتان',
+	'coll-suggested_articles' => 'پیشنهادات',
+	'coll-suggest_reset_bans' => 'بازنشانی',
+	'coll-suggest_add_selected' => 'اضافه‌کردن صفحه‌های انتخاب شده',
+	'coll-suggest_ban_selected' => 'حذف صفحه‌های انتخاب شده',
+	'coll-suggest_your_book' => 'کتاب شما',
+	'coll-suggest_show' => 'نمایش',
+	'coll-suggest_ban_tooltip' => 'این صفحه را از فهرست پیشنهادات حذف کنید',
+	'coll-suggest_undo_tooltip' => 'این اقدام را خنثی کن',
+	'coll-suggest_undo' => 'خنثی‌سازی',
 	'right-collectionsaveasuserpage' => 'ذخیره کردن کتاب‌ها به صورت یک صفحهٔ کاربری',
 	'right-collectionsaveascommunitypage' => 'ذخیره کردن کتاب‌ها به صورت یک صفحه عمومی',
 );
@@ -4691,7 +4718,7 @@ Ha ez nem történik meg, kérlek nyomd meg a böngésződ frissítés gombját!
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Lap információinak renderelése',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Gyűjtemény információinak renderelése',
 	'coll-rendering_finished_title' => 'A renderelés befejeződött',
-	'coll-rendering_finished_text' => '<strong>A dokumentum ekészült.</strong>
+	'coll-rendering_finished_text' => '<strong>A dokumentum elkészült.</strong>
 <strong>[$1 Fájl letöltése]</strong> a számítógépedre.
 
 Megjegyzés:
@@ -6268,7 +6295,7 @@ $messages['li'] = array(
 	'coll-print_template_prefix' => 'Oetdrej',
 	'coll-print_template_pattern' => '$1/Oetdrej',
 	'coll-unknown_subpage_title' => 'Ónbekèndje óngerpaasj',
-	'coll-unknown_subpage_text' => 'Dees óngerpaasj ven [[Sprecial:Book|Book]] besteit neet',
+	'coll-unknown_subpage_text' => 'Dees óngerpaasj ven [[Special:Book|Book]] besteit neet',
 	'coll-noscript_text' => "<h1JavaScript is beneudj!</h1>
 <strong>Diene toeaner óngerstäöntj gènne JavaScript ódder 't is aafgezatj.
 Dees paasj wèrk neet goed, bezieje-s doe JavaScript aanzèts.</strong>",
@@ -6361,6 +6388,11 @@ Nöm kóntak op mèt eure MediaWikiadmin.",
 	'coll-more_info' => 'Toean mieër inlichtinger',
 	'coll-hide_info' => 'Verbèrg inlichtinger',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestèlinlichtinger PediaPress',
+	'coll-suggest_reset_bans' => 'Reset',
+	'coll-suggest_your_book' => 'Dien book',
+	'coll-suggest_show' => 'toean',
+	'coll-suggest_undo_tooltip' => 'Maak dees hanjeling óngedaon',
+	'coll-suggest_undo' => 'maak óngedaon',
 );
 
 /** Lao (ລາວ)
