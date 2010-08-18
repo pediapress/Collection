@@ -957,7 +957,9 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Cimon Avaro
  * @author Crt
+ * @author Olli
  * @author Str4nd
+ * @author Zache
  */
 $messages['fi'] = array(
 	'coll-print_export' => 'Tulosta tai vie',
@@ -969,6 +971,8 @@ $messages['fi'] = array(
 	'coll-disable' => 'poista käytöstä',
 	'coll-book_creator_disable' => 'Poista kirjan luontitila käytöstä',
 	'coll-book_creator_disable_tooltip' => 'Lopeta kirjan luontitila',
+	'coll-add_linked_article' => 'Linkitetty wikisivu on lisätty kirjaasi',
+	'coll-remove_linked_article' => 'Poista linkitetty wikisivu kirjastasi',
 	'coll-add_category' => 'Lisää tämä luokka kirjaasi',
 	'coll-add_category_tooltip' => 'Lisää kaikki wikisivut kirjaasi tästä luokasta',
 	'coll-add_this_page' => 'Lisää tämä sivu kirjaasi',
@@ -980,8 +984,8 @@ $messages['fi'] = array(
 	'coll-help' => 'Ohje',
 	'coll-help_tooltip' => 'Näytä ohje kirjojen luonnista',
 	'coll-helppage' => 'Help:Kirjat',
-	'coll-load_collection' => 'Lataa kirja',
-	'coll-load_collection_tooltip' => 'Lataa tämä kirja nykyiseksi kirjaksesi',
+	'coll-load_collection' => 'Avaa kirja',
+	'coll-load_collection_tooltip' => 'Avaa tämä kirja nykyiseksi kirjaksesi',
 	'coll-n_pages' => '$1 {{PLURAL:$1|sivu|sivua}}',
 	'coll-printable_version_pdf' => 'PDF-versio',
 	'coll-remove_this_page' => 'Poista tämä sivu kirjastasi',
@@ -1061,7 +1065,7 @@ $messages['frp'] = array(
 	'coll-add_page_tooltip' => 'Apondre la pâge vouiqui d’ora a voutron lévro',
 	'coll-bookscategory' => 'Lévros',
 	'coll-clear_collection' => 'Vouedar lo lévro',
-	'coll-clear_collection_confirm' => 'Voléd-vos franc tot suprimar voutron lévro ?',
+	'coll-clear_collection_confirm' => 'Voléd-vos franc èfaciér tot voutron lévro ?',
 	'coll-clear_collection_tooltip' => 'Enlevar totes les pâges vouiqui de voutron lévro d’ora',
 	'coll-help' => 'Éde',
 	'coll-help_tooltip' => 'Fâre vêre l’éde sur la crèacion de lévros',
@@ -1811,25 +1815,40 @@ $messages['lb'] = array(
  * @author Ooswesthoesbes
  */
 $messages['li'] = array(
+	'coll-print_export' => 'Drók aaf/exporteer',
 	'coll-create_a_book' => "Maak 'n book",
+	'coll-create_a_book_tooltip' => 'Maal book- of paginacolleksje aan',
+	'coll-book_creator' => 'Bokemaker',
 	'coll-download_as' => 'Óphaole es $1',
+	'coll-download_as_tooltip' => "Download 'n $1-versie van dees wikipagina",
 	'coll-disable' => 'zèt oet',
-	'coll-add_category' => 'Zeukgroop bievoge',
+	'coll-book_creator_disable' => 'Zèt bokemaker oet',
+	'coll-book_creator_disable_tooltip' => 'Gebroek bokemaker neet meer',
+	'coll-add_linked_article' => 'Voog de gekoppelde wikipagina aan die book toe',
+	'coll-remove_linked_article' => 'Wösj de gekoppelde wikipagina oet die book.',
+	'coll-add_category' => 'Voog zeukgroop bie aan die book',
 	'coll-add_category_tooltip' => 'Zèt als paasj in dees zeukgroop aan öch book',
+	'coll-add_this_page' => 'Voog dees pagina toe aan die book',
 	'coll-add_page_tooltip' => "Zèt d'n huujige wikipaasj aan öch book",
 	'coll-bookscategory' => 'Beuk',
 	'coll-clear_collection' => 'Laeg book',
 	'coll-clear_collection_confirm' => 'Wils se dien book èch laege?',
 	'coll-clear_collection_tooltip' => 'Wösj als paasj oet öch huujig book',
 	'coll-help' => 'Hölp',
+	'coll-help_tooltip' => 'Bokemakershólp',
 	'coll-helppage' => 'Help:Beuk',
 	'coll-load_collection' => 'Laaj book',
 	'coll-load_collection_tooltip' => 'Laaj dit book es öch huujig book',
 	'coll-n_pages' => "$1 {{PLURAL:$1|pazjena|pazjena's}}",
 	'coll-printable_version_pdf' => 'PDF-gaedering',
+	'coll-remove_this_page' => 'Dees pagina oet die book ewegsjaffe',
 	'coll-remove_page_tooltip' => "Wösj d'n huujig wikipaasj oet öch book",
 	'coll-show_collection' => 'Toean book',
 	'coll-show_collection_tooltip' => 'Klik óm öch book tö bewèrke/óphaole/bestèlle',
+	'coll-not_addable' => 'Dees paasj kos neet toegevoog waere',
+	'coll-make_suggestions' => 'Suggereer paazjes',
+	'coll-make_suggestions_tooltip' => 'Tuun suggesties oppe bokepaginabasis',
+	'coll-suggest_empty' => 'laeg',
 );
 
 /** Lithuanian (Lietuvių)

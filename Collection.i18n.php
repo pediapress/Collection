@@ -3211,6 +3211,7 @@ Kontakta ezazu, mesedez MediaWiki administratzailea.',
  * @author Ebraminio
  * @author Huji
  * @author Komeil 4life
+ * @author Ladsgroup
  * @author Spacebirdy
  * @author Wayiran
  */
@@ -3236,7 +3237,7 @@ $messages['fa'] = array(
 	'coll-savedbook_template' => 'کتاب ـ ذخیره‌شده',
 	'coll-your_book' => 'کتاب شما',
 	'coll-download_title' => 'دریافت',
-	'coll-download_text' => 'برای بارگیری یک نسخهٔ غیر برخط یک قالب برگزینید و دکمه را بزنید.',
+	'coll-download_text' => 'برای بارگیری کتابتان یک قالب برگزینید و دکمه را بزنید.',
 	'coll-download_as_text' => 'برای بارگیری کتابتان در قالب $1 دکمه را بزنید.',
 	'coll-download' => 'دریافت',
 	'coll-format_label' => 'قالب:',
@@ -3314,7 +3315,7 @@ $messages['fa'] = array(
 	'coll-return_to_collection' => '<p>بازگشت به <a href="$1">$2</a></p>',
 	'coll-book_title' => 'سفارش به صورت کتاب چاپ شده',
 	'coll-book_text' => 'با مراجعه به این شرکای چاپ-با-درخواست یک کتاب چاپ شده تهیه کنید:',
-	'coll-order_from_pp' => 'سفارش کتاب از $1',
+	'coll-order_from_pp' => 'پیش‌نمایش با $1',
 	'coll-about_pp' => 'دربارهٔ $1',
 	'coll-invalid_podpartner_title' => 'شریک چاپ-با-درخواست غیر مجاز',
 	'coll-invalid_podpartner_msg' => 'شریک چاپ-با-درخواست تعیین شده غیر مجاز است.
@@ -3341,9 +3342,11 @@ $messages['fa'] = array(
  * @author Cimon Avaro
  * @author Crt
  * @author Nike
+ * @author Olli
  * @author Silvonen
  * @author Str4nd
  * @author Tarmo
+ * @author Zache
  */
 $messages['fi'] = array(
 	'coll-desc' => '[[Special:Book|Laadi kirjoja]].',
@@ -3431,12 +3434,16 @@ Jos näin ei käy, paina selaimesi päivityspainiketta.</p>',
 	'coll-rendering_status' => '<strong>Tila:</strong> $1',
 	'coll-rendering_article' => '(wikisivu: $1)',
 	'coll-rendering_page' => '(sivu: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Muotoillaan sivu -tiedote',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Muotoillaan kokoelma -tiedote',
 	'coll-rendering_finished_title' => 'Renderöinti valmis',
 	'coll-rendering_finished_text' => '<strong>Tiedosto on generoitu.</strong>
 <strong>[$1 Lataa tiedosto]</strong> tietokoneellesi.
 
 Huomautuksia:
 * Etkö ole tyytyväinen lopputulokseen? Katso [[{{MediaWiki:Coll-helppage}}|kirjojen ohjesivulta]] mahdollisuuksista parantaa sitä.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Muotoillaan sivu -tiedote',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Muotoillaan kokoelma -tiedote',
 	'coll-notfound_title' => 'Kirjaa ei löydy',
 	'coll-notfound_text' => 'Kirjan sivua ei löydy.',
 	'coll-download_notfound_title' => 'Tiedostoa ei löydy',
@@ -3475,6 +3482,7 @@ Lista päivittyy aina kun napsautat lisää- tai poista-painikkeita.',
 	'coll-suggest_article_remove' => 'Sivu <strong>$1</strong> on poistettu kirjastasi ($2).',
 	'coll-suggest_undo_tooltip' => 'Kumoa tämä toiminto',
 	'coll-suggest_undo' => 'kumoa',
+	'coll-load_local_book' => 'Napsauta OK jatkaaksesi kirjan %TITLE% (%NUMPAGES% sivua) työstämistä. Napsauta Peruuta poistaaksesi sen ja aloittaaksesi uuden kirjan.',
 	'right-collectionsaveasuserpage' => 'Tallentaa kirjoja käyttäjäsivuna',
 	'right-collectionsaveascommunitypage' => 'Tallentaa kirjoja yhteisösivuina',
 );
@@ -6289,6 +6297,14 @@ D'Lëscht gëtt all kéier aktuliséiert wann dir op d'Knäppecher derbäisetzen
  */
 $messages['li'] = array(
 	'coll-desc' => '[[Special:Book|Maak book]]',
+	'coll-book_creator_intro' => "<big>Mit de ''Bokemaker'' kins se e book make det wikipagina's nao dien eige inzich bevat.
+De kins t book exportere in versjillende bestandjsformate (bv. PDF of ODF) of e gedruk exemplaar bestelle.</big>",
+	'coll-manage_your_book' => 'Behieër die book',
+	'coll-book_creator_help' => 'Zuuch [[{{MediaWiki:Coll-helppage}}|hulppagina veur beuk]] veur meer informatie.',
+	'coll-start_book_creator' => 'Begin bokemaker',
+	'coll-book_creator_continue' => 'Gank door mitte bokemaker',
+	'coll-book_creator_disable_text' => "De ''bokemaker'' wurt oetgezat en t book wo se aan werks wurt verwiederd.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Bokemakerteks',
 	'coll-collection' => 'Book',
 	'coll-collections' => 'Beuk',
 	'coll-exclusion_category_title' => "Laot eweg bie 't oetdrejje",
@@ -6296,14 +6312,18 @@ $messages['li'] = array(
 	'coll-print_template_pattern' => '$1/Oetdrej',
 	'coll-unknown_subpage_title' => 'Ónbekèndje óngerpaasj',
 	'coll-unknown_subpage_text' => 'Dees óngerpaasj ven [[Special:Book|Book]] besteit neet',
+	'coll-couldnotaddarticle_title' => 'De wikipagina kos neet toegevoeg waere',
+	'coll-couldnotaddarticle_msg' => 'De wikipagina kos neet toegevoeg waere.',
+	'coll-couldnotremovearticle_title' => 'De wikipagina kos neet verwiederd waere',
+	'coll-couldnotremovearticle_msg' => 'De wikipagina kos neet verwiederd waere.',
 	'coll-noscript_text' => "<h1JavaScript is beneudj!</h1>
 <strong>Diene toeaner óngerstäöntj gènne JavaScript ódder 't is aafgezatj.
 Dees paasj wèrk neet goed, bezieje-s doe JavaScript aanzèts.</strong>",
 	'coll-savedbook_template' => 'vasgezatj_book',
 	'coll-your_book' => 'Dien book',
 	'coll-download_title' => 'Haol óp',
-	'coll-download_text' => "Drök óppe knoep óm 'n gaedering ven dien boke óp tö haole.",
-	'coll-download_as_text' => "Drök óppe knoep veur 't óphaole ven 'ner offline gaedering in g'm fórmaat $1.",
+	'coll-download_text' => 'Kees e formaat en klik oppe downloadknoep.',
+	'coll-download_as_text' => 'Klik óppe knoep om die book es $1 te downloade.',
 	'coll-download' => 'Haol óp',
 	'coll-format_label' => 'Fórmaat:',
 	'coll-remove' => 'weggoeje',
@@ -6361,16 +6381,22 @@ As dit neet werk, klik dan op de knoep "Vernuuje" in diene browser.</p>',
 	'coll-rendering_status' => '<strong>Staat:</strong> $1',
 	'coll-rendering_article' => '(wikipaasj: $1)',
 	'coll-rendering_page' => '(paasj: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Paginarenderinformatie',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Verzamelingrenderinformatie',
 	'coll-rendering_finished_title' => 'Rendere aafgeröndj',
 	'coll-rendering_finished_text' => '<strong>Het document is aangemaak.</strong>
 <strong>[$1 t bestandj downloade]</strong>.
 
 Opmerkinge:
 * Neet tevrede mit de oetveur? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina euver collecties]] staon tips om deze te verbaetere.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informatieteks biw pagina rendere',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informatieteks bie verzameling renderen',
 	'coll-notfound_title' => 'Book neet gevónje',
 	'coll-notfound_text' => 'Bookpaasj is neet gevónje.',
 	'coll-download_notfound_title' => 'Bestandj neet gevónje',
 	'coll-download_notfound_text' => "'t Bestandj det se perbieërs óp te haole besteit neet: Mesjiens is 't gewösj èn mót 't ópnuuj gemaak waere.",
+	'coll-download_failed_title' => 'Fout bie t downloade',
+	'coll-download_failed_text' => "d'r Is 'n fout opgetraoje bie 't downloade: $1",
 	'coll-is_cached' => '<ul><li>d\'r Is \'n versje ven \'t dokument besjikber inne cache, dös opnuuj rendere woor neet neudig.
 <a href="$1">Opnuuj rendere.</a></li></ul>',
 	'coll-excluded-templates' => '* Sjeblone in de categorie [[:Category:$1|$1]] waere genegeerdj.',
@@ -6378,7 +6404,7 @@ Opmerkinge:
 	'coll-return_to_collection' => '<p>Trökgaon nao <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Bestèl es gedrök book',
 	'coll-book_text' => "De kins 'n gedrök book bestèlle bie 'ne print-on-demandpartner:",
-	'coll-order_from_pp' => 'Bestèl book bie $1',
+	'coll-order_from_pp' => 'Veurvertoning van $1',
 	'coll-about_pp' => 'Euver $1',
 	'coll-invalid_podpartner_title' => 'Óngèljige print-on-demandpartner',
 	'coll-invalid_podpartner_msg' => "D'n ópgegaeve print-on-demandpartner is óngèljig.
@@ -6388,11 +6414,25 @@ Nöm kóntak op mèt eure MediaWikiadmin.",
 	'coll-more_info' => 'Toean mieër inlichtinger',
 	'coll-hide_info' => 'Verbèrg inlichtinger',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestèlinlichtinger PediaPress',
+	'coll-suggest_title' => 'Paginasuggesties veur die book',
+	'coll-suggest_intro_text' => "Suggesties zeen gebaseerd op de hudige selectie van wikipagina's in die book.
+De lies wurt biegewerk es se op de knoep 'voog toe' of 'verwieder' kliks.",
+	'coll-suggested_articles' => 'Suggesties',
 	'coll-suggest_reset_bans' => 'Reset',
+	'coll-suggest_reset_bans_tooltip' => 'Tuun eerder verwiederde suggesties',
+	'coll-suggest_add_selected' => "Voeg geselecteerde pagina's toe",
+	'coll-suggest_ban_selected' => "Verwieder geselecteerde pagina's",
 	'coll-suggest_your_book' => 'Dien book',
 	'coll-suggest_show' => 'toean',
+	'coll-suggest_ban_tooltip' => 'Verwieder dees pagina oete lies met suggesties',
+	'coll-suggest_article_ban' => 'De pagina <strong>$1</strong> is verwiederd oet de suggesties ($2).',
+	'coll-suggest_article_add' => 'De pagina <strong>$1</strong> is toegevoeg aan die book ($2).',
+	'coll-suggest_article_remove' => 'De pagina <strong>$1</strong> is verwiederd oet die book ($2).',
 	'coll-suggest_undo_tooltip' => 'Maak dees hanjeling óngedaon',
 	'coll-suggest_undo' => 'maak óngedaon',
+	'coll-load_local_book' => 'Klik "gank" om door te gaon mit die book %TITLE% det %NUMPAGES% wikipagina\'s bevat. Klik op "braek aaf" om \'t te verwiedere en opnuuj te beginne mit e laeg book.',
+	'right-collectionsaveasuserpage' => 'Slaon book óp es gebroekerspagina',
+	'right-collectionsaveascommunitypage' => 'Slaon book óp es gemeinsjapspagina',
 );
 
 /** Lao (ລາວ)
