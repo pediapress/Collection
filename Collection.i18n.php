@@ -3377,15 +3377,15 @@ Tämä sivu ei toimi oikein, ellei JavaScript ole käytössä.</strong>',
 	'coll-download_text' => 'Ladataksesi kirjan, valitse tiedostomuoto ja napsauta painiketta.',
 	'coll-download_as_text' => 'Voit ladata kirjasi $1-muodossa napsauttamalla painiketta.',
 	'coll-download' => 'Lataa',
-	'coll-format_label' => 'Muoto:',
+	'coll-format_label' => 'Muoto',
 	'coll-remove' => 'Poista',
 	'coll-show' => 'Näytä',
 	'coll-move_to_top' => 'Siirrä alkuun',
 	'coll-move_up' => 'Siirrä ylös',
 	'coll-move_down' => 'Siirrä alas',
 	'coll-move_to_bottom' => 'Siirrä loppuun',
-	'coll-title' => 'Otsikko:',
-	'coll-subtitle' => 'Alaotsikko:',
+	'coll-title' => 'Otsikko',
+	'coll-subtitle' => 'Alaotsikko',
 	'coll-contents' => 'Sisältö',
 	'coll-drag_and_drop' => 'Raahaa wikisivut ja luvut haluamaasi järjestykseen.',
 	'coll-create_chapter' => 'Luo luku',
@@ -9173,6 +9173,7 @@ Seznam je posodobljen, ko kliknete na gumbe za dodajanje ali odstranjevanje.',
  * @author Nikola Smolenski
  * @author Sasa Stefanovic
  * @author Јованвб
+ * @author Жељко Тодоровић
  * @author Михајло Анђелковић
  * @author Обрадовић Горан
  */
@@ -9250,7 +9251,7 @@ $messages['sr-ec'] = array(
 	'coll-limit_exceeded_title' => 'Књига је превелика',
 	'coll-limit_exceeded_text' => 'Ваша књига је превелика.
 
-Не може јој се додати још страна.',
+Не може јој се додати још страница.',
 	'coll-rendering_title' => 'Израђујем',
 	'coll-rendering_text' => '<p><strong>Молим сачекајте док се документ ствара.</strong></p>
 
