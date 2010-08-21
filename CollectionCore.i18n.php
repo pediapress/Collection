@@ -957,6 +957,7 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Cimon Avaro
  * @author Crt
+ * @author Nike
  * @author Olli
  * @author Str4nd
  * @author Zache
@@ -971,7 +972,7 @@ $messages['fi'] = array(
 	'coll-disable' => 'poista käytöstä',
 	'coll-book_creator_disable' => 'Poista kirjan luontitila käytöstä',
 	'coll-book_creator_disable_tooltip' => 'Lopeta kirjan luontitila',
-	'coll-add_linked_article' => 'Lisää linkin wikisivu kirjaasi',
+	'coll-add_linked_article' => 'Lisää linkitetty wikisivu kirjaan',
 	'coll-remove_linked_article' => 'Poista linkitetty wikisivu kirjastasi',
 	'coll-add_category' => 'Lisää tämä luokka kirjaasi',
 	'coll-add_category_tooltip' => 'Lisää kaikki wikisivut kirjaasi tästä luokasta',
@@ -3008,6 +3009,46 @@ $messages['tr'] = array(
 	'coll-make_suggestions' => 'Sayfa öner',
 	'coll-make_suggestions_tooltip' => 'Kitabınızdaki mevcut sayfalara göre öneriler göster',
 	'coll-suggest_empty' => 'boş',
+);
+
+/** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
+ * @author Ильнар
+ */
+$messages['tt-cyrl'] = array(
+	'coll-print_export' => 'Бастыру/экспорт',
+	'coll-create_a_book' => 'Китап ясау',
+	'coll-create_a_book_tooltip' => 'Китап  яки мәкаләләр җыентыган ясау',
+	'coll-book_creator' => 'Китап ясау',
+	'coll-download_as' => '$1 иттереп алу',
+	'coll-download_as_tooltip' => 'Бу битнең $1-юрамасын алу',
+	'coll-disable' => 'ябарга',
+	'coll-book_creator_disable' => 'Китап төзүчене ябу',
+	'coll-book_creator_disable_tooltip' => 'Китап төзүчене ябыгыз',
+	'coll-add_linked_article' => 'Бәйләнгән вики-битне сезнең китапка кую',
+	'coll-remove_linked_article' => 'Бәйләнгән вики-битне сезнең китаптан алу',
+	'coll-add_category' => 'Әлеге төркемне сезнең китапка кую',
+	'coll-add_category_tooltip' => 'Әлеге төркемнең вики-битләрен сезнең китапка кую',
+	'coll-add_this_page' => 'Әлеге битне сезнең китапка кую',
+	'coll-add_page_tooltip' => 'Әлеге вики-битне китапка кую',
+	'coll-bookscategory' => 'Китаплар',
+	'coll-clear_collection' => 'Китапны чистарту',
+	'coll-clear_collection_confirm' => 'Сез дөрестән дә барлык китапны бетермәкче буласызмы?',
+	'coll-clear_collection_tooltip' => 'Барлык вики-битләрне бетерегез',
+	'coll-help' => 'Ярдәм',
+	'coll-help_tooltip' => 'Китап ясау буенча ярдәмче битне карау',
+	'coll-helppage' => 'Help:Китаплар',
+	'coll-load_collection' => 'Китапны йөкләү',
+	'coll-load_collection_tooltip' => 'Яңа китапны әлегесе кебек йөкләргә',
+	'coll-n_pages' => '$1 {{PLURAL:$1|бит|битләр}}',
+	'coll-printable_version_pdf' => 'PDF-юрама',
+	'coll-remove_this_page' => 'Бу битне сезнең китаптан бетерергә',
+	'coll-remove_page_tooltip' => 'Әлеге вики-битне китаптан бетерергә',
+	'coll-show_collection' => 'Китапны күрсәтү',
+	'coll-show_collection_tooltip' => 'Китапны ясау/йөкләү/заказ бирү өчен басыгыз',
+	'coll-not_addable' => 'Бу бит йөкләнә алмый',
+	'coll-make_suggestions' => 'Тәкъдим ителгән битләр',
+	'coll-make_suggestions_tooltip' => 'Минем китапта булган җөмләләрне күрсәтергә',
+	'coll-suggest_empty' => 'буш',
 );
 
 /** Ukrainian (Українська)

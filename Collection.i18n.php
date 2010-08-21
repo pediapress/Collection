@@ -1424,6 +1424,8 @@ Ukoliko se to ne desi, molimo kliknite dugme za osvježavanje u Vašem pregledni
 
 Napomene:
 * Da li ste zadovoljni sa rezultatom? Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu pomoći kod kolekcija]] za moguća poboljšanja rezultata.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Stranica za iscrtavanje informativnog teksta',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Iscrtavanje kolekcije informativnog teksta',
 	'coll-notfound_title' => 'Knjiga nije pronađena',
 	'coll-notfound_text' => 'Nije moguće pronaći stranicu knjige.',
 	'coll-download_notfound_title' => 'Datoteka nije pronađena',
@@ -1462,6 +1464,7 @@ Spisak se ažurira kad god kliknete na dugme za dodavanje ili uklanjanje.',
 	'coll-suggest_article_remove' => 'Stranica <strong>$1</strong> je uklonjena iz Vaše knjige ($2).',
 	'coll-suggest_undo_tooltip' => 'Vrati ovu akciju',
 	'coll-suggest_undo' => 'vrati',
+	'coll-load_local_book' => 'Kliknite OK da nastavite sa vašom knjigom %TITLE% koja sadrži %NUMPAGES% wiki stranica. Kliknite Cancel da je obrišete i da započnete sa praznom knjigom.',
 	'right-collectionsaveasuserpage' => 'Spremanje knjiga u vidu korisničkih stranica',
 	'right-collectionsaveascommunitypage' => 'Spremanje knjiga kao stranica zajednice',
 );
@@ -3212,6 +3215,7 @@ Kontakta ezazu, mesedez MediaWiki administratzailea.',
  * @author Huji
  * @author Komeil 4life
  * @author Ladsgroup
+ * @author Sahim
  * @author Spacebirdy
  * @author Wayiran
  */
@@ -3271,7 +3275,7 @@ $messages['fa'] = array(
 	'coll-personal_collection_label' => 'کتاب شخصی:',
 	'coll-community_collection_label' => 'کتاب عمومی:',
 	'coll-save_collection' => 'ذخیره کردن کتاب',
-	'coll-save_category' => 'کتاب‌ها در ردهٔ [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] ذخیره شده‌اند.',
+	'coll-save_category' => 'همه کتابهای ذخیره شده در رده‌ها اضافه شده‌اند [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'صفحه وجود دارد.
 رونویسی شود؟',
 	'coll-overwrite_text' => 'یک صفحه با نام [[:$1]] در حال حاضر موجود است.
@@ -3298,12 +3302,16 @@ $messages['fa'] = array(
 	'coll-rendering_status' => '<strong>وضعیت:</strong> $1',
 	'coll-rendering_article' => '(صفحهٔ ویکی: $1)',
 	'coll-rendering_page' => '(صفحه: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل متن اطلاعات صفحه',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل مجموعه متون اطلاعات',
 	'coll-rendering_finished_title' => 'پایان ترجمه',
 	'coll-rendering_finished_text' => '<strong>پروندهٔ سند ایجاد شده‌است.</strong>
 آن را به روی رایانهٔ خود <strong>[$1 بارگیری کنید]</strong>.
 
 نکته:
 * از خروجی راضی نیستید؟ [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای مجموعه‌ها]] را ببینید تا از امکان بهبود آن با خبر شوید.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل متن اطلاعات صفحه',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل مجموعه متون اطلاعات',
 	'coll-notfound_title' => 'کتاب پیدا نشد',
 	'coll-notfound_text' => 'صفحهٔ کتاب پیدا نشد.',
 	'coll-download_notfound_title' => 'پرونده یافت نشد',
@@ -3324,9 +3332,11 @@ $messages['fa'] = array(
 	'coll-return_to' => 'بازگشت به [[:$1]]',
 	'coll-more_info' => 'اطلاعات بیش‌تر را نشان بده',
 	'coll-hide_info' => 'اطلاعات را پنهان کن',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/دسته‌بندی اطلاعات پدیاپرس',
 	'coll-suggest_title' => 'صفحات پیشنهادی برای کتابتان',
 	'coll-suggested_articles' => 'پیشنهادات',
 	'coll-suggest_reset_bans' => 'بازنشانی',
+	'coll-suggest_reset_bans_tooltip' => 'نمایش قبل از پاک کردن پیشنهاد‌ها',
 	'coll-suggest_add_selected' => 'اضافه‌کردن صفحه‌های انتخاب شده',
 	'coll-suggest_ban_selected' => 'حذف صفحه‌های انتخاب شده',
 	'coll-suggest_your_book' => 'کتاب شما',
@@ -7652,7 +7662,7 @@ Nòtas :
 	'coll-download_notfound_text' => "Lo fichièr qu'ensajatz de telecargar existís pas : benlèu es estat suprimit e deu èsser generit tornamai.",
 	'coll-download_failed_title' => 'Error al moment del telecargament',
 	'coll-download_failed_text' => "Una error s'es producha pendent lo telecargament del fichièr : $1",
-	'coll-is_cached' => '<ul><li>Una version en amagatal del document es estada trobada, cap de rendut èra pas necessari. <a href="$1">Forçar lo rendut un còp de mai.</a></li></ul>',
+	'coll-is_cached' => '<ul><li>Una version en escondedor del document es estada trobada, cap de rendut èra pas necessari. <a href="$1">Forçar lo rendut un còp de mai.</a></li></ul>',
 	'coll-excluded-templates' => '* De modèls dins la categoria [[:Category:$1|$1]] son estats excluts.',
 	'coll-blacklisted-templates' => '* De modèls dins la tièra negra [[:$1]] son estats excluts.',
 	'coll-return_to_collection' => '<p>Tornar a <a href="$1">$2</a></p>',
@@ -10473,9 +10483,31 @@ Ekle veya sil butonlarına her bastığınızda liste yenilenir.',
 
 /** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
  * @author Timming
+ * @author Ильнар
  */
 $messages['tt-cyrl'] = array(
+	'coll-manage_your_book' => 'Китабыгыз белән идарә итү',
+	'coll-book_creator_help' => 'Өстәмә мәгълүматны [[{{MediaWiki:Coll-helppage}}|китаплар белешмәлегеннән]] карагыз.',
+	'coll-start_book_creator' => 'Китап ясау',
+	'coll-book_creator_continue' => 'Китап ясауны дәвам итү',
+	'coll-book_creator_disable_text' => 'Китап ясау бите ябылачак, сез ясаган китап юкка чыгачак',
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Китап ясау тексты',
+	'coll-collection' => 'Китап',
+	'coll-collections' => 'Китаплар',
+	'coll-exclusion_category_title' => 'Бастырудан чикләү',
+	'coll-print_template_prefix' => 'Бастыру',
+	'coll-print_template_pattern' => '$1/Бастыру',
+	'coll-unknown_subpage_title' => 'Билгесез бит',
+	'coll-unknown_subpage_text' => 'Мондый [[Special:Book|китап]]лар бите юк',
+	'coll-download_title' => 'Йөкләргә',
+	'coll-download_text' => 'Үзегезнең китапны йөкләү өчен китаның форматын сайлап, төймәгә басыгыз.',
+	'coll-download_as_text' => 'Үзегезнең китапны $1 форматында йөкләү  төймәгә басыгыз.',
 	'coll-rename' => 'Күчерү',
+	'coll-book_title' => 'Басылма китап алу',
+	'coll-book_text' => 'Безнең басылма китапны алу:',
+	'coll-order_from_pp' => '$1 ярдәмендә алдан карау',
+	'coll-about_pp' => '$1 тырунда',
+	'coll-invalid_podpartner_title' => 'Дөрес булмаган POD-ярдәмче',
 );
 
 /** Ukrainian (Українська)
