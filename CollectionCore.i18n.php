@@ -119,6 +119,13 @@ $messages['af'] = array(
 	'coll-suggest_empty' => 'leegmaak',
 );
 
+/** Aragonese (Aragonés)
+ * @author Juanpabl
+ */
+$messages['an'] = array(
+	'coll-help' => 'Aduya',
+);
+
 /** Arabic (العربية)
  * @author Antime
  * @author Ciphers
