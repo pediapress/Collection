@@ -3221,9 +3221,13 @@ Kontakta ezazu, mesedez MediaWiki administratzailea.',
  */
 $messages['fa'] = array(
 	'coll-desc' => '[[Special:Book|ایجاد کتاب]]',
+	'coll-book_creator_intro' => "<big>با ''کتاب‌ساز'' می‌توانید کتابی بسازید که دارای صفحات ویکی دلخواه شماست. می‌توانید کتاب را در فرمت‌های مختلف (برای مثال پی‌دی‌اف یا اودی‌اف) برون‌بری کنید یا سفارش یک کپی چاپی را بدهید.</big>",
 	'coll-manage_your_book' => 'کتاب خود را مدیریت کنید',
+	'coll-book_creator_help' => 'برای اطلاعات بیش‌تر [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای کتاب‌ها]] را ببینید.',
 	'coll-start_book_creator' => 'خالق کتاب را آغاز کن',
 	'coll-book_creator_continue' => 'به استفاده از خالق کتاب ادامه بده',
+	'coll-book_creator_disable_text' => "''پدیدآور کتاب'' غیرفعال خواهد شد و کتابی که شما بر آن کار می‌کنید حذف خواهد شد.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/متن پدیدآور کتاب',
 	'coll-collection' => 'کتاب',
 	'coll-collections' => 'کتاب‌ها',
 	'coll-exclusion_category_title' => 'صرف نظر در چاپ',
@@ -3238,7 +3242,7 @@ $messages['fa'] = array(
 	'coll-noscript_text' => '<h1>جاوااسکریپت لازم دارید!</h1>
 <strong>مرورگر شما جاوا اسکریپت را پشتیبانی نمی‌کند یا جاوا اسکیریپت شما خاموش است.
 این صفحه به طور صحیح عمل نخواهد کرد، مگر اینکه جاوااسکیریپت فعال شود.</strong>',
-	'coll-savedbook_template' => 'کتاب ـ ذخیره‌شده',
+	'coll-savedbook_template' => 'کتاب_ذخیره‌شده',
 	'coll-your_book' => 'کتاب شما',
 	'coll-download_title' => 'دریافت',
 	'coll-download_text' => 'برای بارگیری کتابتان یک قالب برگزینید و دکمه را بزنید.',
@@ -3257,7 +3261,7 @@ $messages['fa'] = array(
 	'coll-drag_and_drop' => 'از کشیدن و رها کردن برای مرتب کردن صفحه‌های ویکی و فصل‌ها استفاده کنید',
 	'coll-create_chapter' => 'ایجاد فصل',
 	'coll-sort_alphabetically' => 'مرتب‌سازی الفبایی',
-	'coll-rename' => 'تغيير نام',
+	'coll-rename' => 'تغییر نام',
 	'coll-new_chapter' => 'برای بخش جدید یک نام وارد کنید',
 	'coll-rename_chapter' => 'برای بخش یک نام جدید وارد کنید',
 	'coll-no_such_category' => 'چنین رده‌ای وجود ندارد',
@@ -3315,6 +3319,8 @@ $messages['fa'] = array(
 	'coll-notfound_title' => 'کتاب پیدا نشد',
 	'coll-notfound_text' => 'صفحهٔ کتاب پیدا نشد.',
 	'coll-download_notfound_title' => 'پرونده یافت نشد',
+	'coll-download_notfound_text' => 'پرونده‌ای که برای بارگیری‌اش تلاش می‌کنید وجود ندارد:
+شاید پاک شده باشد و به بازتولید نیاز داشته باشد.',
 	'coll-download_failed_title' => 'خطا در طول بارگیری',
 	'coll-download_failed_text' => 'هنگام بارگیری پروندهٔ $1 خطا داده شد',
 	'coll-is_cached' => '<ul><li>یک نسخهٔ کاشه‌گیری شده از این سند پیدا شد، به همین خاطر ترجمه لازم نبود. <a href="$1">ترجمهٔ اجباری.</a></li></ul>',
@@ -3334,6 +3340,8 @@ $messages['fa'] = array(
 	'coll-hide_info' => 'اطلاعات را پنهان کن',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/دسته‌بندی اطلاعات پدیاپرس',
 	'coll-suggest_title' => 'صفحات پیشنهادی برای کتابتان',
+	'coll-suggest_intro_text' => 'پیشنهادات بر پایهٔ مجموعهٔ کنونی صفحات ویکی در کتاب شما قرار دارند.
+هر گاه که بر دکمه‌های افزودن یا حذف کلیک کنید، فهرست به‌روز خواهد شد.',
 	'coll-suggested_articles' => 'پیشنهادات',
 	'coll-suggest_reset_bans' => 'بازنشانی',
 	'coll-suggest_reset_bans_tooltip' => 'نمایش قبل از پاک کردن پیشنهاد‌ها',
@@ -3342,8 +3350,12 @@ $messages['fa'] = array(
 	'coll-suggest_your_book' => 'کتاب شما',
 	'coll-suggest_show' => 'نمایش',
 	'coll-suggest_ban_tooltip' => 'این صفحه را از فهرست پیشنهادات حذف کنید',
+	'coll-suggest_article_ban' => 'صفحهٔ <strong>$1</strong> از پیشنهادات حذف شده است ($2).',
+	'coll-suggest_article_add' => 'صفحهٔ <strong>$1</strong> به کتاب شما افزوده شده است ($2).',
+	'coll-suggest_article_remove' => 'صفحهٔ <strong>$1</strong> از کتاب شما حذف شده است ($2).',
 	'coll-suggest_undo_tooltip' => 'این اقدام را خنثی کن',
 	'coll-suggest_undo' => 'خنثی‌سازی',
+	'coll-load_local_book' => 'برای ادامه با کتاب %TITLE% که دارندهٔ %NUMPAGES% صفحهٔ ویکی است، بروی پذیرش کلیک کنید. برای پاک کردنش و آغاز با کتابی خالی، بروی لغو کلیک کنید.',
 	'right-collectionsaveasuserpage' => 'ذخیره کردن کتاب‌ها به صورت یک صفحهٔ کاربری',
 	'right-collectionsaveascommunitypage' => 'ذخیره کردن کتاب‌ها به صورت یک صفحه عمومی',
 );
@@ -6158,7 +6170,7 @@ Di Leß weed neu opjebout, wann De op dä „Dobei donn“ udder dä „{{int:co
  */
 $messages['kw'] = array(
 	'coll-rename' => 'Dashenwel',
-	'coll-cancel' => 'Hedhi',
+	'coll-cancel' => 'Hedhy',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
