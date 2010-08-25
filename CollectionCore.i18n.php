@@ -132,6 +132,7 @@ $messages['an'] = array(
  * @author Meno25
  * @author OsamaK
  * @author Prof.Sherif
+ * @author Samer
  */
 $messages['ar'] = array(
 	'coll-print_export' => 'اطبع/صدّر',
@@ -143,6 +144,8 @@ $messages['ar'] = array(
 	'coll-disable' => 'عطّل',
 	'coll-book_creator_disable' => 'عطّل منشئ الكتب',
 	'coll-book_creator_disable_tooltip' => 'أوقف استخدام منشئ الكتب',
+	'coll-add_linked_article' => 'أضف صفحة ويكي مربوطة إلى كتابك',
+	'coll-remove_linked_article' => 'أزل صفحة ويكي مربوطة من كتابك',
 	'coll-add_category' => 'إضافة هذا التصنيف إلى كتابك',
 	'coll-add_category_tooltip' => 'أضف كل صفحات الويكي في هذا التصنيف لكتابك',
 	'coll-add_this_page' => 'أضف هذه الصفحة إلى كتابك',
