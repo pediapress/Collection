@@ -2040,7 +2040,7 @@ Kontakt venligst din MediaWiki-administrator.',
  * @author VolkerHaas
  */
 $messages['de'] = array(
-	'coll-desc' => '[[Special:Book|Erstelle Bücher]]',
+	'coll-desc' => '[[Special:Book|Bücher erstellen]]',
 	'coll-book_creator_intro' => "<big>Mit der ''Buchfunktion'' kannst du ein Buch aus beliebigen Wikiseiten erstellen.
 Du kannst das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.</big>",
 	'coll-manage_your_book' => 'Dein Buch verwalten',
