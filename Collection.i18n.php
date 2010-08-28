@@ -7896,8 +7896,8 @@ Lista jest aktualizowana, gdy klikniesz na przyciski dodaj lub usuń.',
 	'coll-suggest_undo_tooltip' => 'Cofnij tę operację',
 	'coll-suggest_undo' => 'cofnij',
 	'coll-load_local_book' => 'Kliknij „OK” aby kontynuować tworzenie książki %TITLE% zawierającej %NUMPAGES% stron wiki. Kliknij „Anuluj” aby usunąć istniejącą i rozpocząć tworzenie nowej książki.',
-	'right-collectionsaveasuserpage' => 'Zapisywanie książek jako stronę użytkownika',
-	'right-collectionsaveascommunitypage' => 'Zapisywanie książek jako wspólną stronę',
+	'right-collectionsaveasuserpage' => 'Zapisywanie książek jako strony użytkownika',
+	'right-collectionsaveascommunitypage' => 'Zapisywanie książek jako wspólnej strony',
 );
 
 /** Piedmontese (Piemontèis)
