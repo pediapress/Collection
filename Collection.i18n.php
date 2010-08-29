@@ -5042,6 +5042,7 @@ Le lista es actualisate cata vice que tu clicca super le buttones "adder" o "rem
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author -iNu-
  * @author Bennylin
  * @author Farras
  * @author Irwangatot
@@ -5050,7 +5051,7 @@ Le lista es actualisate cata vice que tu clicca super le buttones "adder" o "rem
  * @author Rex
  */
 $messages['id'] = array(
-	'coll-desc' => '[[Special:Book|Membuat buku koleksi artikel]]',
+	'coll-desc' => '[[Special:Book|Buat buku]]',
 	'coll-book_creator_intro' => "<big>Dengan ''buat buku'' anda dapat membuat buku berisi halaman wiki pilihan anda. Anda dapat ekspor buku dalam berbagai format (untuk contoh PDF atau ODF) atau memesan salinan tercetak.</big>",
 	'coll-manage_your_book' => 'Pengaturan buku anda',
 	'coll-book_creator_help' => 'Lihat [[{{MediaWiki:Coll-helppage}}|halaman bantuan tentang bukut]] untuk informasi lain.',

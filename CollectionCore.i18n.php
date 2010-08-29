@@ -1426,6 +1426,7 @@ $messages['ia'] = array(
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author -iNu-
  * @author Bennylin
  * @author Irwangatot
  * @author IvanLanin
@@ -1435,7 +1436,7 @@ $messages['ia'] = array(
 $messages['id'] = array(
 	'coll-print_export' => 'Cetak/ekspor',
 	'coll-create_a_book' => 'Buat buku',
-	'coll-create_a_book_tooltip' => 'Buat koleksi artikel atau buku',
+	'coll-create_a_book_tooltip' => 'Buat koleksi buku atau halaman',
 	'coll-book_creator' => 'Pembuatan buku',
 	'coll-download_as' => 'Unduh sebagai $1',
 	'coll-download_as_tooltip' => 'Unduh versi $1 halaman wiki ini',
@@ -3065,6 +3066,7 @@ $messages['tt-cyrl'] = array(
  * @author AS
  * @author Ahonc
  * @author Aleksandrit
+ * @author Alex Khimich
  * @author NickK
  * @author Prima klasy4na
  */
@@ -3078,6 +3080,8 @@ $messages['uk'] = array(
 	'coll-disable' => 'вимкнути',
 	'coll-book_creator_disable' => 'Вимкнути створення книжок',
 	'coll-book_creator_disable_tooltip' => 'Припинити використання можливості створення книги',
+	'coll-add_linked_article' => "Додати зв'язану вікі-сторінку до вашої книги",
+	'coll-remove_linked_article' => 'Вилучити поточну вікі-сторінку з вашої книги',
 	'coll-add_category' => 'Додати цю категорію до вашої книги',
 	'coll-add_category_tooltip' => 'Додати всі вікі-сторінки цієї категорії до вашої книги',
 	'coll-add_this_page' => 'Додати цю сторінку до вашої книги',
