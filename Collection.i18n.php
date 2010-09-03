@@ -3617,8 +3617,8 @@ Si tel n’était pas le cas, veuillez cliquer sur le bouton Actualiser de votre
 
 Notes :
 * Vous n’êtes pas satisfait du résultat ? Consultez [[{{MediaWiki:Coll-helppage}}|la page d’aide des livres]] pour les façons possibles de l’améliorer.',
-	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Rendu du texte d'information de la page",
-	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Rendu du texte d'information de la collection",
+	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Texte d'information sur le rendu des collections",
+	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Texte d'information sur le rendu des collections",
 	'coll-notfound_title' => 'Livre non trouvé',
 	'coll-notfound_text' => 'La page du livre n’a pas pu être trouvée.',
 	'coll-download_notfound_title' => 'Fichier introuvable',
