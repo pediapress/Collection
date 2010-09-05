@@ -672,10 +672,10 @@ EOS
 		}
 		$db = wfGetDB( DB_SLAVE );
 		$tables = array( 'page', 'categorylinks' );
-		$fields = array( 'cl_from', 'cl_sortkey', 'page_namespace', 'page_title' );
+		$fields = array( 'page_namespace', 'page_title' );
 		$options = array(
 			'USE INDEX' => 'cl_sortkey',
-			'ORDER BY' => 'cl_sortkey',
+			'ORDER BY' => 'cl_type, cl_sortkey',
 			'LIMIT' => $limit + 1,
 		);
 		$where = array(
