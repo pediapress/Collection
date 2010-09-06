@@ -1982,10 +1982,12 @@ $messages['ms'] = array(
 	'coll-disable' => 'lumpuhkan',
 	'coll-book_creator_disable' => 'Lumpuhkan pencipta buku',
 	'coll-book_creator_disable_tooltip' => 'Berhenti menggunakan pencipta buku',
-	'coll-add_category' => 'Tambah kategori ini ke buku anda',
-	'coll-add_category_tooltip' => 'Tambah kesemua laman wiki dalam kategori ini ke buku anda',
-	'coll-add_this_page' => 'Tambah laman ini ke buku anda',
-	'coll-add_page_tooltip' => 'Tambah laman wiki semasa ke buku anda',
+	'coll-add_linked_article' => 'Tambah laman wiki yang dipaut ke dalam buku anda',
+	'coll-remove_linked_article' => 'Buang laman wiki yang dipaut daripada buku anda',
+	'coll-add_category' => 'Tambah kategori ini ke dalam buku anda',
+	'coll-add_category_tooltip' => 'Tambah kesemua laman wiki dalam kategori ini ke dalam buku anda',
+	'coll-add_this_page' => 'Tambah laman ini ke dalam buku anda',
+	'coll-add_page_tooltip' => 'Tambah laman wiki semasa ke dalam buku anda',
 	'coll-bookscategory' => 'Buku',
 	'coll-clear_collection' => 'Kosongkan buku',
 	'coll-clear_collection_confirm' => 'Betulkah anda mahu mengosongkan buku anda sepenuhnya?',
@@ -2863,6 +2865,7 @@ $messages['tg-latn'] = array(
 /** Thai (ไทย)
  * @author Ans
  * @author Harley Hartwell
+ * @author Horus
  * @author Manop
  * @author Octahedron80
  */
@@ -2886,7 +2889,7 @@ $messages['th'] = array(
 	'coll-clear_collection' => 'เคลียร์หนังสือ',
 	'coll-clear_collection_confirm' => 'คุณแน่ใจหรือไม่ที่จะลบหนังสือของคุณ ?',
 	'coll-clear_collection_tooltip' => 'นำหน้าวิกิทั้งหมดออกจากหนังสือปัจจุบันของคุณ',
-	'coll-help' => 'ช่วยเหลือ',
+	'coll-help' => 'วิธีใช้',
 	'coll-help_tooltip' => 'แสดงคำแนะนำเกี่ยวกับการสร้างหนังสือ',
 	'coll-helppage' => 'Help:หนังสือ',
 	'coll-load_collection' => 'โหลดหนังสือ',
