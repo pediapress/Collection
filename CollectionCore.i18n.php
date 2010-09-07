@@ -2801,6 +2801,12 @@ $messages['sv'] = array(
 	'coll-suggest_empty' => 'tom',
 );
 
+/** Swahili (Kiswahili) */
+$messages['sw'] = array(
+	'coll-disable' => 'lemaza',
+	'coll-help' => 'Msaada',
+);
+
 /** Telugu (తెలుగు)
  * @author Kiranmayee
  * @author Veeven
