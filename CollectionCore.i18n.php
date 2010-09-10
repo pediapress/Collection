@@ -69,6 +69,7 @@ $messages['en'] = array(
 /** Message documentation (Message documentation)
  * @author Aleator
  * @author Aotake
+ * @author EugeneZelenko
  * @author Fryed-peach
  * @author Mormegil
  * @author Siebrand
@@ -85,6 +86,7 @@ $messages['qqq'] = array(
 	'coll-help' => '{{Identical|Help}}',
 	'coll-helppage' => "Used as a link to the help page for this extension's functionality on a wiki. '''Do not translate ''Help:''.'''
 {{Identical|Book}}",
+	'coll-n_pages' => '{{Identical|Page}}',
 	'coll-printable_version_pdf' => 'Caption of a link in the [[mw:Help:Navigation#Toolbox|toolbox]] leading to the PDF version of the current page',
 	'coll-suggest_empty' => '{{Identical|Empty}}',
 );
