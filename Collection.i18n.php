@@ -625,6 +625,7 @@ $messages['ar'] = array(
 $messages['arc'] = array(
 	'coll-collection' => 'ܟܬܒܐ',
 	'coll-collections' => 'ܟܬܒ̈ܐ',
+	'coll-print_template_prefix' => 'ܛܒܘܥ',
 	'coll-more_info' => 'ܚܘܝ ܝܕ̈ܥܬܐ ܝܬܝܪ',
 );
 
