@@ -8211,16 +8211,16 @@ Se não o fizer, por favor use o botão "actualizar" ("refresh") do seu browser.
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(página wiki: $1)',
 	'coll-rendering_page' => '(página: $1)',
-	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/A compor o texto de informação da página',
-	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/A compor o texto de informação do livro',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre composição de páginas',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre composição de colecções',
 	'coll-rendering_finished_title' => 'Composição da imagem concluída',
 	'coll-rendering_finished_text' => '<strong>O ficheiro foi gerado.</strong>
 <strong>[$1 Transfira o ficheiro]</strong> para o seu computador.
 
 Notas:
 * Não está satisfeito com o resultado? Consulte [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para conhecer as possibilidades de aprimoramento.',
-	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/A compor o texto de informação da página',
-	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/A compor o texto de informação do livro',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre composição de páginas',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre composição de colecções',
 	'coll-notfound_title' => 'Livro não foi encontrado',
 	'coll-notfound_text' => 'Não foi possível encontrar a página do livro.',
 	'coll-download_notfound_title' => 'Ficheiro não encontrado',
@@ -8360,16 +8360,16 @@ Se isto não funcionar, por favor utilize o botão atualizar do seu navegador.</
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(página wiki: $1)',
 	'coll-rendering_page' => '(página: $1)',
-	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Renderizando o texto de informação da página',
-	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Renderizando o texto de informação do livro',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre renderização de páginas',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre renderização de coleções',
 	'coll-rendering_finished_title' => 'Renderização concluída',
 	'coll-rendering_finished_text' => '<strong>O arquivo do documento foi gerado.</strong>
 <strong>[$1 Baixe o arquivo]</strong> para o seu computador.
 
 Notas:
 * Não está satisfeito com o resultado? Veja [[{{MediaWiki:Coll-helppage}}|a página de ajuda sobre livros]] para possibilidades de aprimoramentos.',
-	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Renderizando o texto de informação da página',
-	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Renderizando o texto de informação do livro',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre renderização de páginas',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre renderização de coleções',
 	'coll-notfound_title' => 'Livro não encontrado',
 	'coll-notfound_text' => 'Não foi possível encontrar a página do livro.',
 	'coll-download_notfound_title' => 'Arquivo não encontrado',
