@@ -5852,6 +5852,13 @@ $messages['km'] = array(
 	'coll-return_to' => 'ត្រឡប់ទៅកាន់ [[:$1]]',
 	'coll-more_info' => 'បង្ហាញ​ព័ត៌មានបន្ថែម​',
 	'coll-hide_info' => 'លាក់​ព័ត៌មាន​',
+	'coll-suggest_show' => 'បង្ហាញ',
+	'coll-suggest_ban_tooltip' => 'ដកទំព័រនេះចេញពីបញ្ជីបេក្ខភាព',
+	'coll-suggest_article_ban' => 'ទំព័រ <strong>$1</strong> ត្រូវបានដកចេញពីបញ្ជីបេក្ខភាព($2)រួចហើយ។',
+	'coll-suggest_article_add' => 'ទំព័រ <strong>$1</strong> ត្រូវបានបន្ថែមចូលទៅក្នុងសៀវភៅរបស់អ្នក($2)ហើយ។',
+	'coll-suggest_article_remove' => 'ទំព័រ <strong>$1</strong> ត្រូវបានដកចេញពីសៀវភៅរបស់អ្នក($2)ហើយ។',
+	'coll-suggest_undo_tooltip' => 'ត្រឡប់វិញ',
+	'coll-suggest_undo' => 'ត្រឡប់វិញ',
 	'right-collectionsaveasuserpage' => 'រក្សា​ទុកសៀវភៅ​​ជា​ទំព័រអ្នកប្រើប្រាស់',
 	'right-collectionsaveascommunitypage' => 'រក្សា​ទុកសៀវភៅ​​ជា​ទំព័រ​សហគមន៍​',
 );
