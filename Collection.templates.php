@@ -142,7 +142,6 @@ echo $GLOBALS['wgParser']->parse( '{{:' . $t . '}}',
 		<h2><span class="mw-headline"><?php $this->msg( 'coll-save_collection_title' ) ?></span></h2>
 		<?php
 				$this->msgWiki( 'coll-save_collection_text' );
-				$bookname = wfMsgForContent( 'coll-collections' );
 				$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
 		?>
 			<form id="saveForm" action="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book' ) ) ?>" method="post">
