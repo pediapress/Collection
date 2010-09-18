@@ -4421,8 +4421,8 @@ $messages['hr'] = array(
 	'coll-savedbook_template' => 'snimljena_zbirka',
 	'coll-your_book' => 'Vaša zbirka',
 	'coll-download_title' => 'Preuzmi',
-	'coll-download_text' => 'Za preuzimanje izvanmrežne inačice, odaberite format i kliknite tipku.',
-	'coll-download_as_text' => 'Za preuzimanje inačice u $1 formatu kliknite na gumb.',
+	'coll-download_text' => 'Za preuzimanje vaše knjige odaberite format i kliknite na gumb.',
+	'coll-download_as_text' => 'Za preuzimanje vaše knjige u $1 formatu kliknite na gumb.',
 	'coll-download' => 'Preuzmi',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Ukloni',
@@ -4455,7 +4455,7 @@ $messages['hr'] = array(
 	'coll-personal_collection_label' => 'Osobna zbirka:',
 	'coll-community_collection_label' => 'Zajednička zbirka:',
 	'coll-save_collection' => 'Spremi zbirku',
-	'coll-save_category' => 'Sve zbirke spremljene su u kategoriju [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Sve snimljene knjige dodane su u kategoriju [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Stranica postoji.
 Prepisati preko?',
 	'coll-overwrite_text' => 'Stranica s nazivom [[:$1]] već postoji.
@@ -4481,6 +4481,8 @@ Ako ovo ne radi, molimo pritisnite tipku za osvježavanje u svom pregledniku.</p
 	'coll-rendering_status' => '<strong>Stanje:</strong> $1',
 	'coll-rendering_article' => '(wiki stranica: $1)',
 	'coll-rendering_page' => '(stranica: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Info tekst stranice za stvaranje knjige',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Info tekst stranice za stvaranje zbirki',
 	'coll-rendering_finished_title' => 'Izvođenje završeno',
 	'coll-rendering_finished_text' => '<strong>Datoteka dokumenta je stvorena.</strong>
 <strong>[$1 Preuzmite datoteku]</strong> na svoje računalo.
@@ -4488,10 +4490,14 @@ Ako ovo ne radi, molimo pritisnite tipku za osvježavanje u svom pregledniku.</p
 Napomene:
 * Niste zadovoljni dobivenim rezultatom? Pogledajte [[{{MediaWiki:Coll-helppage}}|
 stranicu za pomoć o zbirkama]] za mogućnosti njegovog poboljšanja.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Info tekst stranice za stvaranje knjige',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Info tekst stranice za stvaranje zbirki',
 	'coll-notfound_title' => 'Zbirka nije nađena',
 	'coll-notfound_text' => 'Ne mogu pronaći stranicu zbirke.',
 	'coll-download_notfound_title' => 'Datoteka nije pronađena',
 	'coll-download_notfound_text' => 'Datoteka koju pokušavate preuzeti ne postoji: možda je obrisana i treba biti obnovljena.',
+	'coll-download_failed_title' => 'Pogreška tijekom preuzimanja',
+	'coll-download_failed_text' => 'Došlo je do pogreške pri preuzimanju datoteke: $1',
 	'coll-is_cached' => '<ul><li>Pronađena je verzija datoteke u pričuvnoj memoriji, stoga izvođenje datoteke nije potrebno.
 <a href="$1">Zahtijevaj ponovno izvođenje.</a></li></ul>',
 	'coll-excluded-templates' => '* Predlošci u kategoriji [[:Category:$1|$1]] su ostali isključeni.',
@@ -4509,7 +4515,23 @@ Molimo kontaktirajte svog MediaWiki administratora.',
 	'coll-more_info' => 'Prikaži više informacija',
 	'coll-hide_info' => 'Sakrij informacije',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/informacije o narudžbi PediaPressa',
+	'coll-suggest_title' => 'Predložene stranice za vašu knjigu',
+	'coll-suggest_intro_text' => 'Prijedlozi se temelje na trenutnom skupu wiki stranica u vašoj knjizi.
+Popis se ažurira svaki put kada dodate ili uklonite neku stranicu.',
+	'coll-suggested_articles' => 'Prijedlozi',
+	'coll-suggest_reset_bans' => 'poništi',
+	'coll-suggest_reset_bans_tooltip' => 'Pokaži ranije uklonjene prijedloge',
+	'coll-suggest_add_selected' => 'Dodaj odabrane stranice',
+	'coll-suggest_ban_selected' => 'Ukloni odabrane stranice',
 	'coll-suggest_your_book' => 'Vaša zbirka',
+	'coll-suggest_show' => 'prikaži',
+	'coll-suggest_ban_tooltip' => 'Ukloni ovu stranicu s popisa prijedloga',
+	'coll-suggest_article_ban' => 'Stranica <strong>$1</strong> uklonjena je iz popisa prijedloga ($2).',
+	'coll-suggest_article_add' => 'Stranica <strong>$1</strong> dodana je u vašu knjigu ($2).',
+	'coll-suggest_article_remove' => 'Stranica <strong>$1</strong> uklonjena je iz vaše knjige ($2).',
+	'coll-suggest_undo_tooltip' => 'Vrati zadnju akciju',
+	'coll-suggest_undo' => 'vrati',
+	'coll-load_local_book' => 'Kliknite OK za nastavak svoje knjige %NASLOV% koja sadrži %NUMPAGES% wiki stranica. Kliknite Odustani da biste ju izbrisali i počeli s praznom knjigom.',
 	'right-collectionsaveasuserpage' => 'Spremi zbirke kao suradničku stranicu',
 	'right-collectionsaveascommunitypage' => 'Spremi zbirke kao stranicu zajednice',
 );
