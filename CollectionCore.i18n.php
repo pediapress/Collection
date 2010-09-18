@@ -1304,9 +1304,14 @@ $messages['hr'] = array(
 	'coll-print_export' => 'Ispis/izvoz',
 	'coll-create_a_book' => 'Napravi zbirku',
 	'coll-create_a_book_tooltip' => 'Stvorite zbirku ili kolekciju stranica',
+	'coll-book_creator' => 'Alat za stvaranje knjige',
 	'coll-download_as' => 'Preuzmi kao $1',
 	'coll-download_as_tooltip' => 'Preuzmi $1 inačicu ove wiki stranice',
 	'coll-disable' => 'onemogući',
+	'coll-book_creator_disable' => 'Onemogući alat za knjige',
+	'coll-book_creator_disable_tooltip' => 'Prestani rabiti alat za knjige',
+	'coll-add_linked_article' => 'Dodaj povezanu wiki stranicu u svoju knjigu',
+	'coll-remove_linked_article' => 'Ukloni povezanu wiki stranicu iz svoje knjige',
 	'coll-add_category' => 'Dodaj ovu kategoriju u svoju zbirku',
 	'coll-add_category_tooltip' => 'Dodaj sve stranica iz kategoriji u svoju zbirku',
 	'coll-add_this_page' => 'Dodaj ovu stranicu u svoju zbirku',
@@ -1326,6 +1331,10 @@ $messages['hr'] = array(
 	'coll-remove_page_tooltip' => 'Ukloni trenutnačnu stranicu iz svoje zbirke',
 	'coll-show_collection' => 'Pokaži zbirku',
 	'coll-show_collection_tooltip' => 'Kliknite da biste uredili/preuzeli/naručili svoju zbirku',
+	'coll-not_addable' => 'Ova stranica ne može biti dodana',
+	'coll-make_suggestions' => 'Predloži stranice',
+	'coll-make_suggestions_tooltip' => 'Pokaži prijedloge na temelju stranica u mojoj knjizi',
+	'coll-suggest_empty' => 'prazno',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
