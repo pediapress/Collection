@@ -1152,7 +1152,7 @@ JavaScript সক্রিয় না করা পর্যন্ত, এই 
 	'coll-return_to_collection' => '<p><a href="$1">$2</a> এ ফিরে যান</p>',
 	'coll-book_title' => 'মুদ্রিত বই হিসেবে অর্ডার দিন',
 	'coll-book_text' => 'আমাদের প্রিন্ট-অন-ডিমান্ড সহযোগী প্রতিষ্ঠানের কাছ থেকে মুদ্রিত বই সংগ্রহ করুন।',
-	'coll-order_from_pp' => '$1 থেকে বইয়ের অর্ডার দিন',
+	'coll-order_from_pp' => 'যা দ্বারা প্রাকপ্রদর্শিত $1',
 	'coll-about_pp' => 'পরিচিতি $1',
 	'coll-invalid_podpartner_title' => 'ভুল POD সহযোগী প্রতিষ্ঠান',
 	'coll-invalid_podpartner_msg' => 'আপনার দেওয়া POD সহযোগী প্রতিষ্ঠানটি ভুল।
