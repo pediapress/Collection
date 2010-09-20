@@ -2588,11 +2588,23 @@ $messages['ru'] = array(
 	'coll-suggest_empty' => 'пуста',
 );
 
-/** Rusyn (русиньскый язык)
+/** Rusyn (Русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
+	'coll-print_export' => 'Друк/експорт',
+	'coll-create_a_book' => 'Створїня книгы',
+	'coll-create_a_book_tooltip' => 'Створити книгу або колекцію сторінок',
+	'coll-book_creator' => 'Едітор книг',
+	'coll-download_as' => 'Скачати як $1',
+	'coll-download_as_tooltip' => 'Скачати тоту сторінку вікі як $1',
+	'coll-disable' => 'выпнути',
+	'coll-book_creator_disable' => 'выпнути едітор книг',
+	'coll-book_creator_disable_tooltip' => 'Перестане хоснованя едітора книг',
 	'coll-bookscategory' => 'Книгы',
+	'coll-help' => 'Поміч',
+	'coll-n_pages' => '$1 {{PLURAL:$1|сторінка|сторінкы|сторінок}}',
+	'coll-remove_this_page' => 'Одобрати тоту сторінку з вашой книгы',
 );
 
 /** Yakut (Саха тыла)
