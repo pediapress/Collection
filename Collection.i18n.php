@@ -8770,13 +8770,22 @@ $messages['ru'] = array(
 	'right-collectionsaveascommunitypage' => 'сохранение книг, как страницу сообщества',
 );
 
-/** Rusyn (русиньскый язык)
+/** Rusyn (Русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
 	'coll-collection' => 'Книга',
 	'coll-collections' => 'Книгы',
+	'coll-print_template_prefix' => 'Друк',
+	'coll-download_title' => 'Скачати',
+	'coll-download' => 'Скачати',
+	'coll-format_label' => 'Формат:',
+	'coll-remove' => 'Одстранити',
 	'coll-show' => 'Вказати',
+	'coll-title' => 'Назва:',
+	'coll-contents' => 'Обсяг',
+	'coll-sort_alphabetically' => 'Сортовати за алфавітом',
+	'coll-revision' => 'Ревізія: $1',
 	'coll-overwrite' => 'Переписати',
 	'coll-cancel' => 'Сторно',
 	'coll-suggest_show' => 'вказати',
