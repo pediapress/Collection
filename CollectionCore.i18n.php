@@ -3096,6 +3096,13 @@ $messages['tr'] = array(
 	'coll-suggest_empty' => 'boş',
 );
 
+/** Tatar (Татарча/Tatarça)
+ * @author Ильнар
+ */
+$messages['tt'] = array(
+	'coll-bookscategory' => 'Китаплар',
+);
+
 /** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
  * @author Ильнар
  */
