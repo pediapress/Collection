@@ -641,9 +641,9 @@ EOS
 			'currentVersion' => $currentVersion,
 		);
 
-		if ($wgCollectionHierarchyDelimiter != null) {
+		if ( $wgCollectionHierarchyDelimiter != null ) {
 			$parts = explode( $wgCollectionHierarchyDelimiter, $prefixedText );
-			if ( count( $parts > 1 ) && end( $parts ) != '' ) {
+			if ( count( $parts ) > 1 && end( $parts ) != '' ) {
 				$item['displaytitle'] = end( $parts );
 			}
 		}
