@@ -126,7 +126,7 @@ class CollectionSession {
 			foreach ( $coll['items'] as $index => $item ) {
 				if ( $item['type'] == 'article' ) {
 					$t = Title::newFromText( $item['title'] );
-					if ( !$lc->isBadLink( $t->getPrefixedDbKey() ) ) {
+					if ( $t && !$lc->isBadLink( $t->getPrefixedDbKey() ) ) {
 						$newitems[] = $item;
 					}
 				} else {

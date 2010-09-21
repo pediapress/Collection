@@ -51,6 +51,10 @@ $wgCollectionMWServeCredentials = null;
 /** PEM-encoded SSL certificate for the mw-serve render server to pass to CURL */
 $wgCollectionMWServeCert = null;
 
+/** if not null, treat this string as hierarchy delimiter in page titles,
+ * i.e. support subpages */
+$wgCollectionHierarcyDelimiter = null;
+
 /** Array of namespaces that can be added to a collection */
 $wgCollectionArticleNamespaces = array(
 	NS_MAIN,

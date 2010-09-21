@@ -606,6 +606,8 @@ EOS
 	}
 
 	static function addArticle( $title, $oldid = 0 ) {
+		global $wgCollectionHierarchyDelimiter;
+
 		$article = new Article( $title, $oldid );
 		$latest = $article->getLatest();
 
@@ -614,7 +616,10 @@ EOS
 			$currentVersion = 1;
 			$oldid = $latest;
 		}
-		$index = CollectionSession::findArticle( $title->getPrefixedText(), $oldid );
+
+		$prefixedText = $title->getPrefixedText();
+
+		$index = CollectionSession::findArticle( $prefixedText, $oldid );
 		if ( $index != - 1 ) {
 			return false;
 		}
@@ -624,16 +629,26 @@ EOS
 		}
 		$collection = CollectionSession::getCollection();
 		$revision = Revision::newFromTitle( $title, $oldid );
-		$collection['items'][] = array(
+
+		$item = array(
 			'type' => 'article',
 			'content_type' => 'text/x-wiki',
-			'title' => $title->getPrefixedText(),
+			'title' => $prefixedText,
 			'revision' => strval( $oldid ),
 			'latest' => strval( $latest ),
 			'timestamp' => wfTimestamp( TS_UNIX, $revision->mTimestamp ),
 			'url' => $title->getFullURL(),
 			'currentVersion' => $currentVersion,
 		);
+
+		if ($wgCollectionHierarchyDelimiter != null) {
+			$parts = explode( $wgCollectionHierarchyDelimiter, $prefixedText );
+			if ( count( $parts > 1 ) && end( $parts ) != '' ) {
+				$item['displaytitle'] = end( $parts );
+			}
+		}
+
+		$collection['items'][] = $item;
 		CollectionSession::setCollection( $collection );
 		return true;
 	}

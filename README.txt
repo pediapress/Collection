@@ -126,6 +126,20 @@ Installation and Configuration of the Collection Extension
 
 	 i.e. there's one link "Download as PDF".
 
+	*$wgCollectionHierarchyDelimiter (string or null)*
+	 If not null, treat wiki pages whose title contains the configured delimiter
+	 as subpages.
+
+         For example, to treat article [[Foo/Bar]] as subpage of article [[Foo]]
+	 set this variable to "/". This makes sense e.g. on wikibooks.org, but it's
+	 questionable on wikipedia.org (cf. [[AC/DC]]).
+
+	 The (only) effect is that the display title for subpages in collections
+         is set to the title of the (deepest) subpage. For example, the title of
+         article [[Foo/Bar]] will be displayed/rendered as "Bar".
+
+	 The defaul value is null, which means that no hierarchy is assumed.
+
   *$wgCollectionArticleNamespaces (array)*
    List of namespace numbers for pages which can be added to a collection.
    Category pages (NS_CATEGORY) are always an exception (all articles in a
