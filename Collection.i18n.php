@@ -7036,18 +7036,28 @@ $messages['mt'] = array(
 $messages['myv'] = array(
 	'coll-collection' => 'Кинига',
 	'coll-collections' => 'Кинигат',
+	'coll-print_template_prefix' => 'Нолдамс',
 	'coll-download_title' => 'Таргамо',
 	'coll-download' => 'Таргамс',
+	'coll-format_label' => 'Форматозо:',
 	'coll-remove' => 'Нардык',
+	'coll-show' => 'Невтемс',
+	'coll-move_to_top' => 'Печтевтемс тёкшос',
+	'coll-move_up' => 'Печтевтемс верев',
+	'coll-move_down' => 'Печтевтемс алов',
+	'coll-move_to_bottom' => 'Печтевтемс алксонтень',
 	'coll-title' => 'Коняксозо:',
+	'coll-contents' => 'Потмокс',
 	'coll-rename' => 'Лемдемс одов',
 	'coll-no_such_category' => 'Истямо категория арась',
+	'coll-empty_collection' => 'Чаво кинига',
 	'coll-save_collection_title' => 'Ванстомс пурнавксот ды панжомс лиятненень',
 	'coll-community_collection_label' => 'Велень-сядонь пурнавксось:',
 	'coll-save_collection' => 'Ванстомс киниганть',
 	'coll-yes' => 'Истя',
 	'coll-no' => 'Арась',
 	'coll-notfound_title' => 'Кинигась а муеви',
+	'coll-suggest_show' => 'невтемс',
 );
 
 /** Nahuatl (Nāhuatl)
