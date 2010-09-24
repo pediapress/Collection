@@ -2068,7 +2068,10 @@ $messages['myv'] = array(
 	'coll-book_creator' => 'Кинигань шкиця',
 	'coll-add_category' => 'Поладомс кинигазот те категориянть',
 	'coll-bookscategory' => 'Кинигат',
+	'coll-help' => 'Лезкс',
 	'coll-helppage' => 'Help:Кинигат',
+	'coll-show_collection' => 'Невтемс киниганть',
+	'coll-suggest_empty' => 'чаво',
 );
 
 /** Low German (Plattdüütsch)
