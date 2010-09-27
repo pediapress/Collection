@@ -1188,7 +1188,7 @@ EOS
 		if ( $content_disposition ) {
 			header( 'Content-Disposition: ' . $content_disposition );
 		} else {
-			$ct_enc = preg_split( '/;/', $content_type );
+			$ct_enc = explode( ';', $content_type );
 			$ct = $ct_enc[0];
 			if ( isset( $wgCollectionContentTypeToFilename[$ct] ) ) {
 				header( 'Content-Disposition: ' . 'inline; filename=' . $wgCollectionContentTypeToFilename[$ct] );
