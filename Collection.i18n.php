@@ -9794,6 +9794,23 @@ $messages['sw'] = array(
 	'coll-suggest_undo' => 'tengua',
 );
 
+/** Tamil (தமிழ்)
+ * @author TRYPPN
+ */
+$messages['ta'] = array(
+	'coll-download_title' => 'பதிவிறக்கம் செய்',
+	'coll-download' => 'பதிவிறக்கம் செய்',
+	'coll-remove' => 'நீக்குக',
+	'coll-show' => 'காட்டு',
+	'coll-title' => 'தலைப்பு:',
+	'coll-subtitle' => 'துணைத்தலைப்பு:',
+	'coll-overwrite' => 'மேலெழுதுதல்',
+	'coll-append' => 'கடையிணைப்பு',
+	'coll-cancel' => 'விட்டுவிடு',
+	'coll-update' => 'புதுப்பி',
+	'coll-suggest_show' => 'காட்டு',
+);
+
 /** Telugu (తెలుగు)
  * @author Kiranmayee
  * @author Veeven
