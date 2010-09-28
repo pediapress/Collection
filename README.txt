@@ -117,6 +117,15 @@ Installation and Configuration of the Collection Extension
 
      $ mw-render --list-writers
 
+	*$wgCollectionContentTypeToFilename (array)*
+	 An array matching content types to filenames for downloaded documents. The
+	 default is:
+
+		$wgCollectionContentTypeToFilename = array(
+			'application/pdf' => 'collection.pdf',
+			'application/vnd.oasis.opendocument.text' => 'collection.odt',
+		);
+
 	*$wgCollectionPortletFormats (array)*
 	 An array containing formats (keys in $wgCollectionFormats) that shall be
 	 displayed as "Download as XYZ" links in the "Print/export" portlet.
