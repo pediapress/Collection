@@ -2873,6 +2873,15 @@ $messages['sw'] = array(
 	'coll-help' => 'Msaada',
 );
 
+/** Tamil (தமிழ்)
+ * @author TRYPPN
+ */
+$messages['ta'] = array(
+	'coll-disable' => 'செயலிழக்கச் செய்',
+	'coll-help' => 'உதவி',
+	'coll-suggest_empty' => 'ஒன்றுமில்லாத',
+);
+
 /** Telugu (తెలుగు)
  * @author Kiranmayee
  * @author Veeven
