@@ -25,8 +25,8 @@ $(function() {
 					'action': 'ajax',
 					'rs': 'wfAjaxPostCollection',
 					'rsargs[]': [JSON.stringify(c)]
-				}, function() {
-					window.location.href = collection_redirect_url;
+				}, function(result) {
+					window.location.href = result.redirect_url;
 				}, 'json');
 			}
 		}

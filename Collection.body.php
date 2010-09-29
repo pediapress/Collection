@@ -339,12 +339,10 @@ class SpecialCollection extends SpecialPage {
 
 		$coll = CollectionSession::getCollection();
 		$dialogtxt = wfMsg( 'coll-load_local_book' );
-		$redirecturl = SkinTemplate::makeSpecialUrl( 'Book' );
 
 		$wgOut->addScript( 
 			"<script type=\"$wgJsMimeType\">\n" . 
 			"var collection_dialogtxt = " . Xml::encodeJsVar( $dialogtxt ) . ";\n" .
-			"var collection_redirect_url = " . Xml::encodeJsVar( $redirecturl ) . ";\n" .
 			"</script>" );
 
 		$wgOut->mScripts .= <<<EOS
