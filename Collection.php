@@ -182,13 +182,15 @@ function wfAjaxPostCollection( $collection = '', $redirect = '' ) {
 	$collection = $json->decode( $collection );
 	$collection['enabled'] = true;
 	$_SESSION['wsCollection'] = $collection;
-	$title = SpecialPage::getTitleFor( 'Book' );
-	$redirecturl = $title->getFullURL( $urlaction );
 	$r = new AjaxResponse();
 	if ( $redirect ) {
+		$title = Title::newFromText( $redirect );
+		$redirecturl = $title->getFullURL();
 		$r->setResponseCode( 302 );
 		header( 'Location: ' . $redirecturl );
 	} else {
+		$title = SpecialPage::getTitleFor( 'Book' );
+		$redirecturl = $title->getFullURL();
 		$r->setContentType( 'application/json' );
 		$r->addText( $json->encode( array( 'redirect_url' => $redirecturl ) ) );
 	}
