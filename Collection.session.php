@@ -42,7 +42,7 @@ class CollectionSession {
 
 	static function clearCollection() {
 		$_SESSION['wsCollection'] = array(
-			'enabled' => 'true',
+			'enabled' => true,
 			'title' => '',
 			'subtitle' => '',
 			'items' => array(),
