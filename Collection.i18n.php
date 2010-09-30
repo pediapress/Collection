@@ -9798,6 +9798,8 @@ $messages['sw'] = array(
  * @author TRYPPN
  */
 $messages['ta'] = array(
+	'coll-collection' => 'புத்தகம்',
+	'coll-collections' => 'புத்தகங்கள்',
 	'coll-download_title' => 'பதிவிறக்கம் செய்',
 	'coll-download' => 'பதிவிறக்கம் செய்',
 	'coll-remove' => 'நீக்குக',
