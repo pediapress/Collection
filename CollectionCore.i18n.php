@@ -2876,10 +2876,12 @@ $messages['sw'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author TRYPPN
  */
 $messages['ta'] = array(
 	'coll-disable' => 'செயலிழக்கச் செய்',
+	'coll-add_this_page' => 'உங்கள் புத்தகத்தில் இப்பக்கத்தைச் சேர்க்கவும்',
 	'coll-help' => 'உதவி',
 	'coll-suggest_empty' => 'ஒன்றுமில்லாத',
 );
