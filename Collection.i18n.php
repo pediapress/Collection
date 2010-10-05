@@ -2034,6 +2034,7 @@ Kontakt venligst din MediaWiki-administrator.',
  * @author Melancholie
  * @author Metalhead64
  * @author Pill
+ * @author Purodha
  * @author Raimond Spekking
  * @author Revolus
  * @author The Evil IP address
@@ -2124,16 +2125,16 @@ Sollte dies nicht geschehen, drücke bitte den „Aktualisieren“-Knopf (meist 
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(Wikiseite: $1)',
 	'coll-rendering_page' => '(Seite: $1)',
-	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informationen über das Rendern von Seiten',
-	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informationen über das Rendern von Sammlungen',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informationen über die Darstellung von Seiten',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informationen über das Darstellen von Sammlungen',
 	'coll-rendering_finished_title' => 'Fertig erstellt',
 	'coll-rendering_finished_text' => '<strong>Die Datei wurde erfolgreich erstellt.</strong>
 <strong>[$1 Dokument herunterladen]</strong>.
 
 Hinweise:
 * Bist du mit dem Ergebnis nicht zufrieden? Möglichkeiten zur Verbesserung der Ausgabe findest du auf der [[{{MediaWiki:Coll-helppage}}|Hilfeseite über Bücher]].',
-	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendern der Seiteninformation',
-	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendern des Buchs',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Darstellung der Seiteninformation',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Darstellung des Buchs',
 	'coll-notfound_title' => 'Buch nicht gefunden',
 	'coll-notfound_text' => 'Dein Buch konnte nicht gefunden werden.',
 	'coll-download_notfound_title' => 'Datei nicht gefunden',
@@ -6152,11 +6153,15 @@ Mer künne kein Sigge mieh do_bei donn.',
 	'coll-rendering_status' => '<strong>Shtattus:</strong> $1',
 	'coll-rendering_article' => '(Wiki-Sigge-Tittel: $1)',
 	'coll-rendering_page' => '(Sigg Nommer: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Aanjaabe zom Sigge Ußjävve',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Aanjaabe zom Booch Ußjävve',
 	'coll-rendering_finished_title' => 'Et Ußjävve eß jedonn',
 	'coll-rendering_finished_text' => '<strong>De Datei es paraat jestallt. [$1 Donn se erunger lade].</strong>
 
 Opjepaß:
 * Wann De nit zefredde beß, met dämm, wat eruß jekumme eß, dann loor Der op dä [[{{MediaWiki:Coll-helppage}}|Hölpsigg övver Sammlonge]] aan, wat mer velleisch besser maache künnt.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Aanjaabe zom Ußjävve vun de Aanjabe zoh de Sigge',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Aanjaabe zom Booch Ußjävve',
 	'coll-notfound_title' => 'Booch nit jefonge',
 	'coll-notfound_text' => 'Mer kunnte de Sigg för dat Booch nit fenge.',
 	'coll-download_notfound_title' => 'Di Datei ham_mer nit jefonge',
@@ -6195,6 +6200,7 @@ Di Leß weed neu opjebout, wann De op dä „Dobei donn“ udder dä „{{int:co
 	'coll-suggest_article_remove' => 'De Sigg „$1“ es uß Dingem Booch fott jenumme ($2).',
 	'coll-suggest_undo_tooltip' => 'Donn zeröck nämme, wat De jedonn hats',
 	'coll-suggest_undo' => 'zeröck nämme',
+	'coll-load_local_book' => 'Donn {{int:xxxxxxxxxxxx}} ußwähle, öm met Dingem Booch mem Naame %TITLE% un %NUMPAGES% Wikisigge dren wigger ze maache, Donn {{int:xxxxxxxxxxxx}} ußwähle, för et fott ze schmiiße un met enem läddijje Booch neu aanzefange.',
 	'right-collectionsaveasuserpage' => 'E Boch als enem Metmaacher sing Sigg avspeichere',
 	'right-collectionsaveascommunitypage' => 'E Boch als en Jemeinschaffß_Sigg avspeichere',
 );
