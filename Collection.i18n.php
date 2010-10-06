@@ -5894,6 +5894,8 @@ $messages['km'] = array(
  * @author Nayvik
  */
 $messages['kn'] = array(
+	'coll-download_title' => 'ಡೌನ್‍ಲೋಡ್',
+	'coll-download' => 'ಡೌನ್‍ಲೋಡ್',
 	'coll-show' => 'ತೋರಿಸು',
 	'coll-title' => 'ಶೀರ್ಷಿಕೆ:',
 	'coll-yes' => 'ಹೌದು',
@@ -9810,12 +9812,15 @@ $messages['sw'] = array(
 $messages['ta'] = array(
 	'coll-collection' => 'புத்தகம்',
 	'coll-collections' => 'புத்தகங்கள்',
+	'coll-print_template_prefix' => 'அச்சிடு',
 	'coll-download_title' => 'பதிவிறக்கம் செய்',
 	'coll-download' => 'பதிவிறக்கம் செய்',
 	'coll-remove' => 'நீக்குக',
 	'coll-show' => 'காட்டு',
 	'coll-title' => 'தலைப்பு:',
 	'coll-subtitle' => 'துணைத்தலைப்பு:',
+	'coll-yes' => 'ஆம்',
+	'coll-no' => 'இல்லை',
 	'coll-overwrite' => 'மேலெழுதுதல்',
 	'coll-append' => 'கடையிணைப்பு',
 	'coll-cancel' => 'விட்டுவிடு',
