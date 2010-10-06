@@ -2883,6 +2883,8 @@ $messages['ta'] = array(
 	'coll-disable' => 'செயலிழக்கச் செய்',
 	'coll-add_this_page' => 'உங்கள் புத்தகத்தில் இப்பக்கத்தைச் சேர்க்கவும்',
 	'coll-help' => 'உதவி',
+	'coll-load_collection' => 'புத்தகத்தை ஏற்றவும்',
+	'coll-show_collection' => 'புத்தகத்தை காட்டவும்',
 	'coll-suggest_empty' => 'ஒன்றுமில்லாத',
 );
 
