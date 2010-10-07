@@ -91,6 +91,8 @@ function clear_collection() {
 		req('Clear',
 			[],
 			function(result) {
+				$('#titleInput').val('');
+				$('#subtitleInput').val('');
 				refresh_list(result);
 				req('GetBookCreatorBoxContent', ['showbook', null], function(result2) {
 					$('#coll-book_creator_box').html(result2.html);
