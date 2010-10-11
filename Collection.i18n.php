@@ -8501,8 +8501,8 @@ Această pagină nu va lucra corect, doar dacă JavaScript este pornit.</strong>
 	'coll-savedbook_template' => 'carte_salvată',
 	'coll-your_book' => 'Cartea dumneavoastră',
 	'coll-download_title' => 'Descarcă',
-	'coll-download_text' => 'Pentru a descărca o versiune alegeți un format și apăsați butonul.',
-	'coll-download_as_text' => 'Pentru a descărca o versiune în formatul $1, apăsați butonul.',
+	'coll-download_text' => 'Pentru descărcarea cărții dumneavoastră alegeți un format și apăsați butonul.',
+	'coll-download_as_text' => 'Pentru descărcarea cărții dumneavoastră în formatul $1, apăsați butonul.',
 	'coll-download' => 'Descarcă',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Elimină',
@@ -8563,12 +8563,12 @@ Dacă aceasta nu funcționează, vă rugăm să apăsați butonul de reîncărca
 	'coll-rendering_page' => '(pagină: $1)',
 	'coll-rendering_finished_title' => 'Generare terminată',
 	'coll-rendering_finished_text' => '<strong>Fișierul documentului a fost generat.</strong>
-<strong>[$1 Descarcă fișierul]</strong> în calculatorul dumneavoastră.
+<strong>[$1 Descărcați-l]</strong> în calculatorul dumneavoastră.
 
 Note:
-* Nu sunteți mulțumit de rezultat? Vedeți [[{{MediaWiki:Coll-helppage}}|pagina de ajutor în legătură cu cărțile]] pentru posibilități de îmbunătățire.',
+* Nu sunteți mulțumit de rezultat? Vedeți [[{{MediaWiki:Coll-helppage}}|pagina de ajutor destinată cărților]] pentru posibile modalități de îmbunătățire.',
 	'coll-notfound_title' => 'Carte negăsită',
-	'coll-notfound_text' => 'Pagina cărții nu a putut fii găsită.',
+	'coll-notfound_text' => 'Pagina cărții nu a putut fi găsită.',
 	'coll-download_notfound_title' => 'Fișier negăsit',
 	'coll-download_notfound_text' => 'Fișierul pe care încercați să în descărcați nu există: Poate a fost șters și trebuie regenerat.',
 	'coll-download_failed_title' => 'Eroare în timpul descărcării',
@@ -8576,7 +8576,7 @@ Note:
 	'coll-is_cached' => '<ul><li>O versiune din cache a documentului a fost găsită, deci nu a mai fost necesară o regenerare. <a href="$1">Forțați regenerarea.</a></li></ul>',
 	'coll-excluded-templates' => '* Formatele din categoria [[:Category:$1|$1]] au fost excluse.',
 	'coll-blacklisted-templates' => '* Formatele de pe lista neagră [[:$1]] au fost excluse.',
-	'coll-return_to_collection' => '<p>Întoarcere la <a href="$1">$2</a></p>',
+	'coll-return_to_collection' => '<p>Înapoi la <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Comandați ca o carte imprimată',
 	'coll-book_text' => 'Obțineți o carte printată de la partenerul nostru.',
 	'coll-order_from_pp' => 'Comandă cartea la $1',
