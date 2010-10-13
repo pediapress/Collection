@@ -8155,6 +8155,7 @@ $messages['ps'] = array(
 	'coll-notfound_title' => 'کتاب و نه موندل شو',
 	'coll-download_notfound_title' => 'دوتنه و نه موندل شوه',
 	'coll-about_pp' => 'د $1 په اړه',
+	'coll-license' => 'منښتليک',
 	'coll-more_info' => 'نور مالومات ښکاره کول',
 	'coll-hide_info' => 'مالومات پټول',
 	'coll-suggest_title' => 'ستاسې د کتاب لپاره وړانديز شوي مخونه',
@@ -9833,6 +9834,7 @@ $messages['ta'] = array(
 	'coll-append' => 'கடையிணைப்பு',
 	'coll-cancel' => 'விட்டுவிடு',
 	'coll-update' => 'புதுப்பி',
+	'coll-license' => 'அனுமதி',
 	'coll-suggest_show' => 'காட்டு',
 );
 
