@@ -2668,6 +2668,7 @@ $messages['el'] = array(
 /** Esperanto (Esperanto)
  * @author Airon90
  * @author Amikeco
+ * @author ArnoLagrange
  * @author Castelobranco
  * @author Yekrats
  * @author Александр Сигачёв
@@ -2748,11 +2749,11 @@ $messages['eo'] = array(
 	'coll-limit_exceeded_text' => 'Via libro estas tro granda.
 Neniom da pliaj paĝoj estas aldoneblaj.',
 	'coll-rendering_title' => 'Generante',
-	'coll-rendering_text' => '<p><strong>Bonvolu atendi dum la dokumento generiĝis.</strong></p>
+	'coll-rendering_text' => '<p><strong>Bonvolu atendi dum la dokumento generiĝas.</strong></p>
 
 <p><strong>Progreso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>Ĉi tiu paĝo aŭtomatike refreŝigu kelksekunde.
+<p>Ĉi tiu paĝo aŭtomate refreŝiĝas ĉiuj kelksekundoj.
 Se ne funkcias, bonvolu klaki refreŝigo-butonon de via retumilo.</p>',
 	'coll-rendering_status' => '<strong>Statuso:</strong> $1',
 	'coll-rendering_article' => '(vikipaĝo: $1)',
