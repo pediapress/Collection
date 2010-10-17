@@ -2559,9 +2559,15 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'coll-print_export' => 'Stambe/esporte',
 	'coll-create_a_book' => "Ccreje 'nu libbre",
+	'coll-book_creator' => 'Ccrejatore de libbre',
+	'coll-download_as' => 'Scareche cumme $1',
+	'coll-download_as_tooltip' => "Scareche 'na $1 versione de sta pàgene de Uicchi",
 	'coll-disable' => 'disabbilete',
 	'coll-add_category' => "Aggiunge sta categorije jndr'à 'u libbre tue",
+	'coll-add_this_page' => "Aggiunge sta pàgene a 'u libbre tune",
+	'coll-add_page_tooltip' => "Aggiunge 'a pàgene de sta Uicchi a 'u libbre tune",
 	'coll-bookscategory' => 'Libbre',
 	'coll-clear_collection' => "Pulizze 'u libbre",
 	'coll-help' => 'Aijute',
@@ -2570,6 +2576,8 @@ $messages['roa-tara'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàgene|pàggene}}',
 	'coll-printable_version_pdf' => 'Versione in PDF',
 	'coll-show_collection' => "Fà vedè 'nu libbre",
+	'coll-make_suggestions' => 'Pàggene suggerite',
+	'coll-suggest_empty' => 'vacande',
 );
 
 /** Russian (Русский)
@@ -2632,6 +2640,7 @@ $messages['rue'] = array(
 	'coll-bookscategory' => 'Книгы',
 	'coll-help' => 'Поміч',
 	'coll-n_pages' => '$1 {{PLURAL:$1|сторінка|сторінкы|сторінок}}',
+	'coll-printable_version_pdf' => 'PDF-верзія',
 	'coll-remove_this_page' => 'Одобрати тоту сторінку з вашой книгы',
 );
 
@@ -2648,6 +2657,8 @@ $messages['sah'] = array(
 	'coll-disable' => 'араарыы',
 	'coll-book_creator_disable' => 'Кинигэ оҥорооччуну араарыы',
 	'coll-book_creator_disable_tooltip' => 'Кинигэ онорооччуну туһаныма',
+	'coll-add_linked_article' => 'Сигэммит биикини кинигэҕэр эп',
+	'coll-remove_linked_article' => 'Сигэммит биики сирэйи кинигэттэн сот',
 	'coll-add_category' => 'Бу категорияны кинигэҕэр эбии',
 	'coll-add_category_tooltip' => 'Бу категория биики сирэйдэрин кинигэҕэ киллэр',
 	'coll-add_this_page' => 'Бу сирэйи кинигэҕэр киллэр',
@@ -2679,6 +2690,14 @@ $messages['sah'] = array(
 $messages['sc'] = array(
 	'coll-bookscategory' => 'Libros',
 	'coll-show_collection' => 'Ammustra libru',
+);
+
+/** Sicilian (Sicilianu)
+ * @author Aushulz
+ */
+$messages['scn'] = array(
+	'coll-show_collection' => 'Talìa libbru',
+	'coll-suggest_empty' => 'vacanti',
 );
 
 /** Slovak (Slovenčina)
@@ -2921,6 +2940,7 @@ $messages['te'] = array(
 	'coll-print_export' => 'ముద్రించండి/ఎగుమతి చేయండి',
 	'coll-create_a_book' => 'ఓ పుస్తకాన్ని సృష్టించండి',
 	'coll-create_a_book_tooltip' => 'పుస్తకాన్ని లేదా పేజీల సేకరణని సృష్టించండి',
+	'coll-book_creator' => 'పుస్తక కూర్పరి',
 	'coll-download_as' => '$1 క్రింద దిగుమతి చేసుకోండి',
 	'coll-download_as_tooltip' => 'ఈ పేజీ యొక్క $1 సంచికని దించుకోండి',
 	'coll-disable' => 'అచేతన పరచు',
@@ -2933,6 +2953,7 @@ $messages['te'] = array(
 	'coll-clear_collection_confirm' => 'మీరు నిజంగా మీ పుస్తకమును పూర్తిగా తొలగించాలని అనుకొంటున్నారా?',
 	'coll-clear_collection_tooltip' => 'ప్రస్తుత పుస్తకంలో నుండి అన్ని వికీ పేజీలను తీసివేయి',
 	'coll-help' => 'సహాయం',
+	'coll-help_tooltip' => 'పుస్తకాల్ని తయారుచేయడం గురించి సహాయాన్ని చూడండి',
 	'coll-helppage' => 'Help:పుస్తకాలు',
 	'coll-n_pages' => '$1 {{PLURAL:$1|పుట|పుటలు}}',
 	'coll-printable_version_pdf' => 'PDF కూర్పు',
