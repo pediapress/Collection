@@ -822,6 +822,23 @@ JavaScript ғәмәлдә булмаған саҡта был бит дөрөҫ �
 	'coll-your_book' => 'Китабығыҙ',
 	'coll-download_title' => 'Күсереп алырға',
 	'coll-download_text' => 'Китабығыҙҙы күсереп алыр өсөн формат һайлағыҙ һәм төймәгә баҫығыҙ.',
+	'coll-download' => 'Күсереп алырға',
+	'coll-format_label' => 'Формат:',
+	'coll-remove' => 'Юйырға',
+	'coll-show' => 'Күрһәтергә',
+	'coll-move_to_top' => 'Иң өҫкә күсерергә',
+	'coll-move_up' => 'Өҫкә күсерергә',
+	'coll-move_down' => 'Аҫҡа күсерергә',
+	'coll-move_to_bottom' => 'Иң аҫҡа күсерергә',
+	'coll-title' => 'Башлыҡ:',
+	'coll-contents' => 'Эстәлек',
+	'coll-create_chapter' => 'Бүлек яһарға',
+	'coll-sort_alphabetically' => 'Әлифба буйынса теҙергә',
+	'coll-rename' => 'Яңы исем бирергә',
+	'coll-new_chapter' => 'Бүлектең яңы исемен керетегеҙ',
+	'coll-rename_chapter' => 'Бүлектең яңы исемен керетегеҙ',
+	'coll-no_such_category' => 'Бындай категория юҡ',
+	'coll-notitle_title' => 'Биттең башлығын билдәләп булмай.',
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
@@ -1629,11 +1646,14 @@ Si us plau, contacteu amb el vostre administrador de MediaWiki.",
 	'coll-hide_info' => 'Amaga informació',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Ordena informacó de PediaPress',
 	'coll-suggest_title' => 'Pàgines suggerides per al vostre llibre',
+	'coll-suggested_articles' => 'Suggeriments',
+	'coll-suggest_reset_bans' => 'restablir',
 	'coll-suggest_add_selected' => 'Afegeix les pàgines seleccionades',
 	'coll-suggest_ban_selected' => 'Elimina les pàgines seleccionades',
 	'coll-suggest_your_book' => 'El teu llibre',
 	'coll-suggest_show' => 'mostra',
 	'coll-suggest_undo_tooltip' => "Desfés l'acció",
+	'coll-suggest_undo' => 'desfer',
 	'right-collectionsaveasuserpage' => "Desa els llibres com a pàgina d'usuari",
 	'right-collectionsaveascommunitypage' => 'Desa els llibres com una pàgina de la comunitat',
 );
@@ -6575,6 +6595,32 @@ $messages['lt'] = array(
 	'coll-hide_info' => 'Slėpti informaciją',
 );
 
+/** Latvian (Latviešu)
+ * @author Papuass
+ */
+$messages['lv'] = array(
+	'coll-save_collection' => 'Saglabāt grāmatu',
+	'coll-overwrite_title' => 'Lapa pastāv.
+Pārrakstīt?',
+	'coll-yes' => 'Jā',
+	'coll-no' => 'Nē',
+	'coll-overwrite' => 'Pārrakstīt',
+	'coll-append' => 'Pievienot',
+	'coll-cancel' => 'Atcelt',
+	'coll-update' => 'Atjaunināt',
+	'coll-limit_exceeded_title' => 'Grāmata ir pārāk liela',
+	'coll-download_notfound_title' => 'Fails nav atrasts',
+	'coll-about_pp' => 'Par $1',
+	'coll-license' => 'Licence',
+	'coll-return_to' => 'Atgriezties uz [[:$1]]',
+	'coll-more_info' => 'Parādīt vairāk informācijas',
+	'coll-hide_info' => 'Paslēpt informāciju',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress pasūtījuma informācija',
+	'coll-suggest_title' => 'Ieteiktās lapas jūsu grāmatai',
+	'coll-suggested_articles' => 'Ieteikumi',
+	'coll-suggest_your_book' => 'Tava grāmata',
+);
+
 /** Eastern Mari (Олык Марий)
  * @author Сай
  */
@@ -9047,6 +9093,7 @@ $messages['sah'] = array(
 	'coll-suggest_article_remove' => 'Эн ($2) кинигэҕиттэн <strong>$1</strong> сирэй сотулунна.',
 	'coll-suggest_undo_tooltip' => 'Бу дьайыыны төннөрөргө',
 	'coll-suggest_undo' => 'төннөрөргө',
+	'coll-load_local_book' => '«Сөп» диэни баттаан, %TITLE% ахсааннаах сирэйдээх кинигэҕэр салгыы үлэлээ. «Төннөр» диэни баттаан, ол кинигэни сотон баран, саҥа кинигэни саҕалаа.',
 	'right-collectionsaveasuserpage' => 'кинигэлэри кытааччы тус сирэйин курдук хаалларыы',
 	'right-collectionsaveascommunitypage' => 'кинигэлэри бөлөх тус сирэйин курдук хаалларыы',
 );
