@@ -1275,6 +1275,7 @@ $messages['he'] = array(
 	'coll-disable' => 'ביטול',
 	'coll-book_creator_disable' => 'ביטול מצב ספר',
 	'coll-book_creator_disable_tooltip' => 'הפסקת השימוש במצב ספר',
+	'coll-remove_linked_article' => 'הסרת עמודי ויקי המקושרים מהספר שלך',
 	'coll-add_category' => 'הוספת קטגוריה זו לספר שלכם',
 	'coll-add_category_tooltip' => 'הוספת כל הדפים בקטגוריה זו לספר שלכם',
 	'coll-add_this_page' => 'הוספת דף זה לספר שלכם',
@@ -1940,6 +1941,14 @@ $messages['lt'] = array(
 	'coll-create_a_book' => 'Kurti knygą',
 	'coll-add_category' => 'Pridėti kategoriją',
 	'coll-printable_version_pdf' => 'PDF versija',
+);
+
+/** Latvian (Latviešu)
+ * @author Papuass
+ */
+$messages['lv'] = array(
+	'coll-print_export' => 'Drukāt/eksportēt',
+	'coll-bookscategory' => 'Grāmatas',
 );
 
 /** Macedonian (Македонски)
