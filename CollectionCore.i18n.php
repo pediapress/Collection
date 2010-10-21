@@ -291,6 +291,13 @@ $messages['bar'] = array(
 	'coll-suggest_empty' => 'laar',
 );
 
+/** Belarusian (Беларуская)
+ * @author Тест
+ */
+$messages['be'] = array(
+	'coll-help' => 'Даведка',
+);
+
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  * @author Jim-by
@@ -1275,6 +1282,7 @@ $messages['he'] = array(
 	'coll-disable' => 'ביטול',
 	'coll-book_creator_disable' => 'ביטול מצב ספר',
 	'coll-book_creator_disable_tooltip' => 'הפסקת השימוש במצב ספר',
+	'coll-add_linked_article' => 'הוספת עמוד ויקי מקושר לספר שלך',
 	'coll-remove_linked_article' => 'הסרת עמודי ויקי המקושרים מהספר שלך',
 	'coll-add_category' => 'הוספת קטגוריה זו לספר שלכם',
 	'coll-add_category_tooltip' => 'הוספת כל הדפים בקטגוריה זו לספר שלכם',
@@ -2566,14 +2574,19 @@ $messages['ro'] = array(
 
 /** Tarandíne (Tarandíne)
  * @author Joetaras
+ * @author Reder
  */
 $messages['roa-tara'] = array(
 	'coll-print_export' => 'Stambe/esporte',
 	'coll-create_a_book' => "Ccreje 'nu libbre",
+	'coll-create_a_book_tooltip' => "Creje 'na colleziune de libbre o de pagene",
 	'coll-book_creator' => 'Ccrejatore de libbre',
 	'coll-download_as' => 'Scareche cumme $1',
 	'coll-download_as_tooltip' => "Scareche 'na $1 versione de sta pàgene de Uicchi",
 	'coll-disable' => 'disabbilete',
+	'coll-book_creator_disable' => "Disabilite 'u crijatore de libbre",
+	'coll-book_creator_disable_tooltip' => "Lasse stà de ausà 'u crijatore de libbre",
+	'coll-add_linked_article' => "Aggiunge pagene uicchi cullegate pè 'u libbre toje",
 	'coll-add_category' => "Aggiunge sta categorije jndr'à 'u libbre tue",
 	'coll-add_this_page' => "Aggiunge sta pàgene a 'u libbre tune",
 	'coll-add_page_tooltip' => "Aggiunge 'a pàgene de sta Uicchi a 'u libbre tune",
@@ -2582,6 +2595,7 @@ $messages['roa-tara'] = array(
 	'coll-help' => 'Aijute',
 	'coll-helppage' => 'Help:Libbre',
 	'coll-load_collection' => "Careche 'nu libbre",
+	'coll-load_collection_tooltip' => "Careche quiste libbre cumme 'u toje libbre in curse",
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàgene|pàggene}}',
 	'coll-printable_version_pdf' => 'Versione in PDF',
 	'coll-show_collection' => "Fà vedè 'nu libbre",
