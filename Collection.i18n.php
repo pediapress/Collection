@@ -841,6 +841,14 @@ JavaScript ғәмәлдә булмаған саҡта был бит дөрөҫ �
 	'coll-notitle_title' => 'Биттең башлығын билдәләп булмай.',
 );
 
+/** Belarusian (Беларуская)
+ * @author Тест
+ */
+$messages['be'] = array(
+	'coll-format_label' => 'Фармат:',
+	'coll-license' => 'Ліцэнзія',
+);
+
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  * @author Jim-by
