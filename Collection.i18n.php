@@ -630,7 +630,33 @@ $messages['arc'] = array(
 	'coll-collection' => 'ܟܬܒܐ',
 	'coll-collections' => 'ܟܬܒ̈ܐ',
 	'coll-print_template_prefix' => 'ܛܒܘܥ',
+	'coll-print_template_pattern' => '$1/ܛܒܘܥ',
+	'coll-savedbook_template' => 'ܟܬܒܐ_ܠܒܝܟܐ',
+	'coll-your_book' => 'ܟܬܒܐ ܕܝܠܟ',
+	'coll-download' => 'ܐܚܬ:',
+	'coll-show' => 'ܚܘܝ',
+	'coll-move_to_top' => 'ܫܢܝ ܠܥܠ ܡܢ ܟܠ',
+	'coll-move_up' => 'ܫܢܝ ܠܥܠ',
+	'coll-move_down' => 'ܫܢܝ ܠܬܚܬ',
+	'coll-move_to_bottom' => 'ܫܢܝ ܠܬܚܬ ܡܢ ܟܠ',
+	'coll-title' => 'ܟܘܢܝܐ:',
+	'coll-subtitle' => 'ܟܘܢܝܐ ܦܪܥܝܐ:',
+	'coll-contents' => 'ܚܒܝܫܬ̈ܐ',
+	'coll-empty_collection' => 'ܟܬܒܐ ܣܦܝܩܐ',
+	'coll-save_collection' => 'ܠܒܘܟ ܟܬܒܐ',
+	'coll-yes' => 'ܐܝܢ',
+	'coll-no' => 'ܠܐ',
+	'coll-cancel' => 'ܒܛܘܠ',
+	'coll-update' => 'ܚܕܬ',
+	'coll-rendering_status' => '<strong>ܐܝܟܢܝܘܬܐ:</strong> $1',
+	'coll-rendering_article' => '(ܕܦܐ ܕܘܝܩܝ: $1)',
+	'coll-rendering_page' => '(ܕܦܐ: $1)',
+	'coll-notfound_title' => 'ܟܬܒܐ ܠܝܬ ܠܗ ܐܝܬܘܬܐ',
+	'coll-download_notfound_title' => 'ܠܦܦܐ ܠܐ ܐܫܟܚܬ',
 	'coll-more_info' => 'ܚܘܝ ܝܕ̈ܥܬܐ ܝܬܝܪ',
+	'coll-suggest_your_book' => 'ܟܬܒܐ ܕܝܠܟ',
+	'coll-suggest_show' => 'ܚܘܝ',
+	'coll-suggest_undo' => 'ܠܐ ܥܒܘܕ',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -8711,6 +8737,7 @@ Vă rugăm să contactați administratorul MediaWiki.',
 
 /** Tarandíne (Tarandíne)
  * @author Joetaras
+ * @author Reder
  */
 $messages['roa-tara'] = array(
 	'coll-desc' => '[[Special:Book|Ccreje le libbre]]',
@@ -8764,10 +8791,13 @@ A vuè cange cu 'u libbre tune?",
 	'coll-cancel' => 'Annulle',
 	'coll-update' => 'Aggiorne',
 	'coll-limit_exceeded_title' => 'Libbre troppe gruésse',
+	'coll-rendering_title' => 'Esecuzione',
+	'coll-rendering_status' => '<strong>State:</strong> $1',
 	'coll-rendering_article' => '(pàgene de uicchi: $1)',
 	'coll-rendering_page' => '(pàgene: $1)',
 	'coll-notfound_title' => 'Libbre non acchiate',
 	'coll-download_notfound_title' => 'File non acchiate',
+	'coll-download_failed_title' => "Errore durande 'u download",
 	'coll-excluded-templates' => "* Le template jndr'à categorije [[:Category:$1|$1]] onne state escluse.",
 	'coll-blacklisted-templates' => '* Le template sus a lista gnore [[:$1]] onne state escluse.',
 	'coll-order_from_pp' => 'Andeprime cu $1',
@@ -9305,6 +9335,8 @@ Môžete ho <strong>[$1 stiahnuť]</strong> na svoj počítač.
 
 Poznámky:
 * Nie ste spokojný s výstupom? Spôsoby možnej nápravy nájdete na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o kolekciách]].',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Vykresľovanie info textu stránky',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Vykresľovanie info textu kolekcie',
 	'coll-notfound_title' => 'Kniha nenájdená',
 	'coll-notfound_text' => 'Nebolo možné nájsť stránku knihy.',
 	'coll-download_notfound_title' => 'Súbor nenájdený',
@@ -9343,6 +9375,7 @@ Zoznam sa aktualizuje vždy po kliknutí na tlačidlo Pridať alebo Odstrániť.
 	'coll-suggest_article_remove' => 'Stránka <strong>$1</strong> bola odstránená z vašej knihy ($2).',
 	'coll-suggest_undo_tooltip' => 'Vrátiť túto operáciu späť',
 	'coll-suggest_undo' => 'vrátiť',
+	'coll-load_local_book' => 'Kliknutím na tlačidlo OK pokračujte vo vašej knihe %TITLE%, ktorá obsahuje %NUMPAGES% stránok wiki. Kliknutím na tlačidlo Zrušiť ju vymažete a začnete s prázdnou knihu.',
 	'right-collectionsaveasuserpage' => 'Uložiť knihy ako používateľskú stránku',
 	'right-collectionsaveascommunitypage' => 'Uložiť knihy ako komunitnú stránku',
 );

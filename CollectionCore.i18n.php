@@ -177,7 +177,17 @@ $messages['ar'] = array(
  * @author Basharh
  */
 $messages['arc'] = array(
+	'coll-print_export' => 'ܛܒܘܥ/ܐܦܩ',
+	'coll-create_a_book' => 'ܒܪܝ ܟܬܒܐ',
+	'coll-book_creator' => 'ܒܪܘܝܐ ܕܟܬܒܐ',
+	'coll-download_as' => 'ܐܚܬ ܐܝܟ $1',
+	'coll-bookscategory' => 'ܟܬܒ̈ܐ',
+	'coll-help' => 'ܥܘܕܪܢܐ',
+	'coll-helppage' => 'Help:ܟܬܒ̈ܐ',
+	'coll-n_pages' => '$1 {{PLURAL:$1|ܕܦܐ|ܕܦ̈ܐ}}',
+	'coll-printable_version_pdf' => 'ܨܚܚܐ ܕPDF',
 	'coll-show_collection' => 'ܚܘܝ ܟܬܒܐ',
+	'coll-suggest_empty' => 'ܣܦܝܩܐ',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -2660,9 +2670,14 @@ $messages['rue'] = array(
 	'coll-disable' => 'выпнути',
 	'coll-book_creator_disable' => 'выпнути едітор книг',
 	'coll-book_creator_disable_tooltip' => 'Перестане хоснованя едітора книг',
+	'coll-add_this_page' => 'Придати тоту сторінку до вашой книгы',
+	'coll-add_page_tooltip' => 'Придати актуалну вікі-сторінку до вашой книгы',
 	'coll-bookscategory' => 'Книгы',
+	'coll-clear_collection' => 'Очістити книгу',
+	'coll-clear_collection_confirm' => 'Вы на певно хочете цілком очістити вашу книгу?',
 	'coll-help' => 'Поміч',
 	'coll-helppage' => 'Help:Книгы',
+	'coll-load_collection' => 'Начітати книгу',
 	'coll-n_pages' => '$1 {{PLURAL:$1|сторінка|сторінкы|сторінок}}',
 	'coll-printable_version_pdf' => 'PDF-верзія',
 	'coll-remove_this_page' => 'Одобрати тоту сторінку з вашой книгы',
@@ -2742,6 +2757,8 @@ $messages['sk'] = array(
 	'coll-disable' => 'vypnúť',
 	'coll-book_creator_disable' => 'Vypnúť tvorbu knihy',
 	'coll-book_creator_disable_tooltip' => 'Zastaviť používanie Tvorby knihy',
+	'coll-add_linked_article' => 'Pridať odkazovanú stránku wiki do vašej knihy',
+	'coll-remove_linked_article' => 'Odstrániť odkazovanú wiki stránku z vašej knihy',
 	'coll-add_category' => 'Pridať túto kategóriu do vašej knihy',
 	'coll-add_category_tooltip' => 'Pridať všetky stránky wiki v tejto kategórii do vašej knihy',
 	'coll-add_this_page' => 'Pridať túto stránku do vašej knihy',
