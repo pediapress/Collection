@@ -2050,6 +2050,13 @@ $messages['ml'] = array(
 	'coll-suggest_empty' => 'ശൂന്യം',
 );
 
+/** Mongolian (Монгол)
+ * @author Chinneeb
+ */
+$messages['mn'] = array(
+	'coll-n_pages' => '$1 {{PLURAL:$1|хуудас}}',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  */
@@ -2670,20 +2677,30 @@ $messages['rue'] = array(
 	'coll-disable' => 'выпнути',
 	'coll-book_creator_disable' => 'выпнути едітор книг',
 	'coll-book_creator_disable_tooltip' => 'Перестане хоснованя едітора книг',
+	'coll-add_linked_article' => 'Придати одказовану сторінку вікі до книгы',
+	'coll-remove_linked_article' => 'Одобрати одказовану сторінку вікі з книгы',
+	'coll-add_category' => 'Придати тоту катеґорію до вашой книгы',
+	'coll-add_category_tooltip' => 'Придати вшыткы сторінкы вікі у тій катеґорії до вашой книгы',
 	'coll-add_this_page' => 'Придати тоту сторінку до вашой книгы',
 	'coll-add_page_tooltip' => 'Придати актуалну вікі-сторінку до вашой книгы',
 	'coll-bookscategory' => 'Книгы',
 	'coll-clear_collection' => 'Очістити книгу',
 	'coll-clear_collection_confirm' => 'Вы на певно хочете цілком очістити вашу книгу?',
+	'coll-clear_collection_tooltip' => 'Одстранити з актуалной книгы вшыткы сторінкы вікі',
 	'coll-help' => 'Поміч',
+	'coll-help_tooltip' => 'Указати поміч про творбу книг',
 	'coll-helppage' => 'Help:Книгы',
 	'coll-load_collection' => 'Начітати книгу',
+	'coll-load_collection_tooltip' => 'Зволити тоту книгу як актуалну',
 	'coll-n_pages' => '$1 {{PLURAL:$1|сторінка|сторінкы|сторінок}}',
 	'coll-printable_version_pdf' => 'PDF-верзія',
 	'coll-remove_this_page' => 'Одобрати тоту сторінку з вашой книгы',
+	'coll-remove_page_tooltip' => 'Одстранити актуалну сторінку з вашой книгы',
 	'coll-show_collection' => 'Указати книгу',
+	'coll-show_collection_tooltip' => 'Клікнутём собі можете книгу управити/скачати/обїднати',
 	'coll-not_addable' => 'Тота сторінка не може быти придана',
 	'coll-make_suggestions' => 'Запропоновати сторінкы',
+	'coll-make_suggestions_tooltip' => 'Указати пропозіції подля сторінок приданых до вашой книгы',
 	'coll-suggest_empty' => 'порожня',
 );
 
@@ -2814,7 +2831,7 @@ $messages['sl'] = array(
 	'coll-helppage' => 'Help:Knjige',
 	'coll-load_collection' => 'Naloži knjige',
 	'coll-load_collection_tooltip' => 'Naloži to knjigo kot trenutno',
-	'coll-n_pages' => '$1 {{PLURAL:$1|stran|strani|strani|strani|strani}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|stran|strani}}',
 	'coll-printable_version_pdf' => 'Različica PDF',
 	'coll-remove_this_page' => 'Odstrani to stran iz vaše knjige',
 	'coll-remove_page_tooltip' => 'Odstranite trenutno wiki stran iz vaše knjige',
@@ -3099,6 +3116,8 @@ $messages['tk'] = array(
 	'coll-disable' => 'ýap',
 	'coll-book_creator_disable' => 'Kitap döredijini ýap',
 	'coll-book_creator_disable_tooltip' => 'Kitap döredijini ulanmagy bes et',
+	'coll-add_linked_article' => 'Çykgytly wiki sahypasyny kitabyňyza goşuň',
+	'coll-remove_linked_article' => 'Çykgytly wiki sahypasyny kitabyňyzdan aýryň',
 	'coll-add_category' => 'Bu kategoriýany kitabyňa goş',
 	'coll-add_category_tooltip' => 'Bu kategoriýadaky ähli wiki sahypalaryny kitabyňa goş',
 	'coll-add_this_page' => 'Bu sahypany kitabyňa goş',
