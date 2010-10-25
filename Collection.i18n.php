@@ -1126,7 +1126,7 @@ $messages['bg'] = array(
  * @author J Subhi
  */
 $messages['bjn'] = array(
-	'coll-show' => 'Tampilakan',
+	'coll-show' => 'Tampaiakan',
 );
 
 /** Bengali (বাংলা)
@@ -3618,16 +3618,16 @@ Lista päivittyy aina kun napsautat lisää- tai poista-painikkeita.',
  */
 $messages['fr'] = array(
 	'coll-desc' => 'Permet de [[Special:Book|créer des livres]]',
-	'coll-book_creator_intro' => "<big>Avec le ''créateur de livres'' vous pouvez créer un livre des pages du wiki de votre choix. Vous pouvez exporter le livre dans différents formats (par exemple PDF ou ODF) ou commander une copie imprimée.</big>",
+	'coll-book_creator_intro' => "<big>Avec le ''créateur de livres'' vous pouvez créer un livre contenant les pages du wiki de votre choix. Vous pouvez exporter le livre dans différents formats (par exemple PDF ou ODF) ou en commander une copie imprimée.</big>",
 	'coll-manage_your_book' => 'Gérer votre livre',
-	'coll-book_creator_help' => "Voyez [[{{MediaWiki:Coll-helppage}}|la page d'aide sur les livres]] pour plus d'informations.",
+	'coll-book_creator_help' => 'Consultez [[{{MediaWiki:Coll-helppage}}|la page d’aide sur les livres]] pour plus d’informations.',
 	'coll-start_book_creator' => 'Démarrer le créateur de livres',
 	'coll-book_creator_continue' => 'Continuer en utilisant le créateur de livres',
 	'coll-book_creator_disable_text' => "Le ''créateur de livres'' sera désactivé et les livres sur lesquels vous travaillez seront supprimés de la session de votre navigateur.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Texte du créateur de livres',
 	'coll-collection' => 'Livre',
 	'coll-collections' => 'Livres',
-	'coll-exclusion_category_title' => "Exclure lors de l'impression",
+	'coll-exclusion_category_title' => 'Exclure lors de l’impression',
 	'coll-print_template_prefix' => 'Imprimer',
 	'coll-print_template_pattern' => '$1/Imprimer',
 	'coll-unknown_subpage_title' => 'Sous-page inconnue',
@@ -3642,12 +3642,12 @@ Cette page ne fonctionnera pas correctement tant que Javascript n’est pas acti
 	'coll-savedbook_template' => 'Livre sauvegardé',
 	'coll-your_book' => 'Votre livre',
 	'coll-download_title' => 'Télécharger',
-	'coll-download_text' => 'Pour télécharger votre livre choisissez un format et cliquez sur le bouton.',
-	'coll-download_as_text' => 'Pour télécharger une version de votre livre au format $1, cliquez sur le bouton.',
+	'coll-download_text' => 'Pour télécharger votre livre, choisissez un format et cliquez sur le bouton.',
+	'coll-download_as_text' => 'Pour télécharger votre livre au format $1, cliquez sur le bouton.',
 	'coll-download' => 'Télécharger',
 	'coll-format_label' => 'Format :',
 	'coll-remove' => 'Enlever',
-	'coll-show' => 'Visionner',
+	'coll-show' => 'Afficher',
 	'coll-move_to_top' => 'Déplacer tout en haut',
 	'coll-move_up' => 'Monter',
 	'coll-move_down' => 'Descendre',
