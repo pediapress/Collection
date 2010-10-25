@@ -144,12 +144,17 @@ function set_sorting(items_string) {
 	return false;
 }
 
-function update_save_button() {
-	if (!$('#saveButton').length) {
-		return;
-	}
+function update_buttons() {
 	if ($('#collectionList .article').length == 0) {
 		$('#saveButton').attr('disabled', 'disabled');
+		$('#downloadButton').attr('disabled', 'disabled');
+		$('input.order').attr('disabled', 'disabled');
+		return;
+	} else {
+		$('#downloadButton').attr('disabled', '');
+		$('input.order').attr('disabled', '');
+	}
+	if (!$('#saveButton').length) {
 		return;
 	}
 	if (!$('#communityCollTitle').length || $('#personalCollType:checked').val()) {
@@ -185,14 +190,7 @@ function refresh_list(data) {
 	$('#collectionListContainer').html(data.html);
 	$('.makeVisible').css('display', 'inline');
 	make_sortable();
-	if ($('#collectionList .article').length == 0) {
-		$('#downloadButton').attr('disabled', 'disabled');
-		$('input.order').attr('disabled', 'disabled');
-	} else {
-		$('#downloadButton').attr('disabled', '');
-		$('input.order').attr('disabled', '');
-	}
-	update_save_button();
+	update_buttons();
 }
 
 function toggle_order_info(flag) {
@@ -220,14 +218,14 @@ $(function() {
 		window.coll_clear_collection = clear_collection;
 		window.coll_toggle_order_info = toggle_order_info;
 		toggle_order_info(false);
-		update_save_button();
+		update_buttons();
 		make_sortable();
-		$('#personalCollTitle').keyup(update_save_button);
-		$('#personalCollTitle').change(update_save_button);
-		$('#communityCollTitle').keyup(update_save_button);
-		$('#communityCollTitle').change(update_save_button);
-		$('#personalCollType').change(update_save_button);
-		$('#communityCollType').change(update_save_button);
+		$('#personalCollTitle').keyup(update_buttons);
+		$('#personalCollTitle').change(update_buttons);
+		$('#communityCollTitle').keyup(update_buttons);
+		$('#communityCollTitle').change(update_buttons);
+		$('#personalCollType').change(update_buttons);
+		$('#communityCollType').change(update_buttons);
 		$('#titleInput').change(set_titles);
 		$('#subtitleInput').change(set_titles);
 	}
