@@ -116,14 +116,14 @@ class CollectionSession {
 		if ( isset( $coll['items'] ) ) {
 			$batch = new LinkBatch;
 			$lc = LinkCache::singleton();
-			foreach ( $coll['items'] as $index => $item ) {
+			foreach ( $coll['items'] as $item ) {
 				if ( $item['type'] == 'article' ) {
 					$t = Title::newFromText( $item['title'] );
 					$batch->addObj( $t );
 				}
 			}
 			$batch->execute();
-			foreach ( $coll['items'] as $index => $item ) {
+			foreach ( $coll['items'] as $item ) {
 				if ( $item['type'] == 'article' ) {
 					$t = Title::newFromText( $item['title'] );
 					if ( $t && !$lc->isBadLink( $t->getPrefixedDbKey() ) ) {

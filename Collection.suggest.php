@@ -461,7 +461,7 @@ class Proposals {
 
 			// normalize:
 			$lc_max = 0;
-			foreach ( $linkcount as $link => $count ) {
+			foreach ( $linkcount as $count ) {
 				if ( $count > $lc_max ) {
 					$lc_max = $count;
 				}
@@ -481,7 +481,7 @@ class Proposals {
 			return $result;
 		} else {
 			// cheaper algorithm: just count links
-			foreach ( $linkmap as $alias => $linked ) {
+			foreach ( $linkmap as $linked ) {
 				foreach ( $linked as $link => $dummy ) {
 					$linkcount[$link] = 1;
 				}
