@@ -56,7 +56,6 @@ class CollectionHooks {
 	 * (where the hook SkinBuildSidebar does not exist)
 	 */
 	static function printPortlet() {
-		wfLoadExtensionMessages( 'CollectionCore' );
 
 		$html = self::getPortlet();
 

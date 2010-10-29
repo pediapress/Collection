@@ -54,9 +54,6 @@ class CollectionSuggest {
 	public function run( $mode = '', $param = '' ) {
 		global $wgOut;
 
-		wfLoadExtensionMessages( 'CollectionCore' );
-		wfLoadExtensionMessages( 'Collection' );
-
 		if ( !CollectionSession::hasSession() ) {
 			CollectionSession::startSession();
 		}

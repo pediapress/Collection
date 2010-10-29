@@ -46,9 +46,6 @@ class SpecialCollection extends SpecialPage {
 		global $wgCollectionMaxArticles;
 		global $wgTitle;
 
-		wfLoadExtensionMessages( 'CollectionCore' );
-		wfLoadExtensionMessages( 'Collection' );
-
 		// support previous URLs (e.g. used in templates) which used the "$par" part
 		// (i.e. subpages of the Special page)
 		if ( $par ) {
