@@ -95,8 +95,6 @@ class CollectionHooks {
 			return false;
 		}
 
-		wfLoadExtensionMessages( 'CollectionCore' );
-
 		$sk = $wgUser->getSkin();
 
 		$out = Xml::element( 'ul', array( 'id' => 'collectionPortletList' ), null );
@@ -242,8 +240,6 @@ class CollectionHooks {
 		global $wgTitle;
 		global $wgUser;
 
-		wfLoadExtensionMessages( 'CollectionCore' );
-
 		$sk = $wgUser->getSkin();
 		$jsPath = "$wgScriptPath/extensions/Collection/js";
 		$imagePath = "$wgScriptPath/extensions/Collection/images";
@@ -385,8 +381,6 @@ EOS
 	static function getBookCreatorBoxContent( $ajaxHint = null, $oldid = null ) {
 		global $wgUser;
 		global $wgScriptPath;
-
-		wfLoadExtensionMessages( 'CollectionCore' );
 
 		$sk = $wgUser->getSkin();
 		$imagePath = "$wgScriptPath/extensions/Collection/images";

@@ -253,9 +253,6 @@ function wfAjaxCollectionGetBookCreatorBoxContent( $ajaxHint = '', $oldid = null
 $wgAjaxExportList[] = 'wfAjaxCollectionGetBookCreatorBoxContent';
 
 function wfAjaxCollectionGetItemList() {
-	wfLoadExtensionMessages( 'CollectionCore' );
-	wfLoadExtensionMessages( 'Collection' );
-
 	$collection = $_SESSION['wsCollection'];
 
 	$template = new CollectionListTemplate();
@@ -331,7 +328,6 @@ $wgAjaxExportList[] = 'wfAjaxCollectionClear';
 function wfAjaxCollectionGetPopupData( $title ) {
 	global $wgScriptPath;
 
-	wfLoadExtensionMessages( 'CollectionCore' );
 	$json = new Services_JSON();
 	$result = array();
 	$imagePath = "$wgScriptPath/extensions/Collection/images";
@@ -365,9 +361,6 @@ $wgAjaxExportList[] = 'wfAjaxCollectionGetPopupData';
  * @return AjaxResponse with JSON-encoded array including HTML fragment.
  */
 function wfCollectionSuggestAction( $action, $article ) {
-	wfLoadExtensionMessages( 'CollectionCore' );
-	wfLoadExtensionMessages( 'Collection' );
-
 	$json = new Services_JSON();
 	$result = CollectionSuggest::refresh( $action, $article );
 	$undoLink = Xml::element( 'a',
@@ -412,9 +405,6 @@ function wfAjaxCollectionSuggestRemoveArticle( $article ) {
 $wgAjaxExportList[] = 'wfAjaxCollectionSuggestRemoveArticle';
 
 function wfAjaxCollectionSuggestUndoArticle( $lastAction, $article ) {
-	wfLoadExtensionMessages( 'CollectionCore' );
-	wfLoadExtensionMessages( 'Collection' );
-
 	$json = new Services_JSON();
 	$result = CollectionSuggest::undo( $lastAction, $article );
 	$r = new AjaxResponse( $json->encode( $result ) );
