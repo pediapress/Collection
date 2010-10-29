@@ -51,7 +51,7 @@ class CollectionSuggest {
 	 *        or a number of articles to add or a value (1 - 1.5) all articles with a
 	 *        higher value will be added to the collection
 	 */
-	public function run( $mode = '', $param = '' ) {
+	public static function run( $mode = '', $param = '' ) {
 		global $wgOut;
 
 		if ( !CollectionSession::hasSession() ) {
