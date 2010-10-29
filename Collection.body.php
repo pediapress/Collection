@@ -694,7 +694,7 @@ EOS
 
 		$count = 0;
 		$limitExceeded = false;
-		while ( $row = $db->fetchObject( $res ) ) {
+		foreach ( $res as $row ) {
 			if ( ++$count > $limit ) {
 				$limitExceeded = true;
 				break;
