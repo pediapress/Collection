@@ -486,8 +486,6 @@ EOS
 		global $wgUser;
 		global $wgCommunityCollectionNamespace;
 
-		wfLoadExtensionMessages( 'CollectionCore' );
-
 		$result = array();
 
 		$t = wfMsgForContent( 'coll-user_book_prefix', $wgUser->getName() );
@@ -930,8 +928,6 @@ EOS
 		global $wgRightsPage;
 		global $wgRightsText;
 		global $wgRightsUrl;
-
-		wfLoadExtensionMessages( 'Collection' );
 
 		$licenseInfo = array(
 			"type" => "license",
