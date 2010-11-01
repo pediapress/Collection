@@ -3881,6 +3881,30 @@ La lista est betâ a jorn a châque côp que vos clicâd sur los botons d’apon
 	'right-collectionsaveascommunitypage' => 'Sôvar des lévros sur des pâges a la comunôtât',
 );
 
+/** Friulian (Furlan)
+ * @author Klenje
+ */
+$messages['fur'] = array(
+	'coll-collection' => 'Libri',
+	'coll-collections' => 'Libris',
+	'coll-print_template_prefix' => 'Stampe',
+	'coll-your_book' => 'Il to libri',
+	'coll-download_title' => 'Discjame',
+	'coll-download' => 'Discjame',
+	'coll-title' => 'Titul:',
+	'coll-rename' => 'Gambie non',
+	'coll-save_collection' => 'Salve libri',
+	'coll-yes' => 'Sì',
+	'coll-no' => 'No',
+	'coll-rendering_status' => '<strong>Stât:</strong> $1',
+	'coll-rendering_page' => '(pagjine: $1)',
+	'coll-about_pp' => 'Informazions su $1',
+	'coll-suggested_articles' => 'Sugjeriments',
+	'coll-suggest_add_selected' => 'Zonte lis pagjinis selezionadis',
+	'coll-suggest_ban_selected' => 'Gjave lis pagjinis selezionadis',
+	'coll-suggest_show' => 'mostre',
+);
+
 /** Western Frisian (Frysk)
  * @author SK-luuut
  * @author Snakesteuben
