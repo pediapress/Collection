@@ -3417,16 +3417,19 @@ $messages['vi'] = array(
  */
 $messages['vo'] = array(
 	'coll-create_a_book' => 'Jafön buki',
+	'coll-create_a_book_tooltip' => 'Jafön buki u konleti padas',
 	'coll-download_as' => 'Donükön as $1',
-	'coll-add_category' => 'Läükön kladi',
+	'coll-add_category' => 'Läükön kladi at buke olik',
 	'coll-bookscategory' => 'Buks',
 	'coll-clear_collection' => 'Vagükön buki',
 	'coll-clear_collection_confirm' => 'Vilol-li jenöfo vagükön buki olik lölöfiko?',
+	'coll-help' => 'Yuf',
 	'coll-helppage' => 'Help:Buks',
 	'coll-load_collection' => 'Lodön buki',
 	'coll-n_pages' => '{{PLURAL:$1|pad|pads}} $1',
 	'coll-printable_version_pdf' => 'fomam-PDF',
 	'coll-show_collection' => 'Jonön buki',
+	'coll-suggest_empty' => 'vagik',
 );
 
 /** Yiddish (ייִדיש)
