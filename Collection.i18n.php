@@ -11572,6 +11572,7 @@ Danh sách này được cập nhật mỗi khi bạn nhấn vào nút thêm ho�
  */
 $messages['vo'] = array(
 	'coll-desc' => '[[Special:Book|Jafolöd bukis]]',
+	'coll-manage_your_book' => 'Guvön buki olik',
 	'coll-collection' => 'Buk',
 	'coll-collections' => 'Buks',
 	'coll-exclusion_category_title' => 'Fakipön dü dabükam',
@@ -11580,6 +11581,7 @@ $messages['vo'] = array(
 	'coll-unknown_subpage_text' => 'Donapad at [[Special:Book|Buka]] no dabinon.',
 	'coll-noscript_text' => '<h1>El JavaScript paflagon!</h1>
 <strong>Bevüresodanaföm olik no stüton eli JavaScript, ud el JavaScript pesekurbon. Pad at no ojäfidon verätiko, if el JavaScript no ponikurbon.</strong>',
+	'coll-savedbook_template' => 'buk_padakipöl',
 	'coll-your_book' => 'Buk olik',
 	'coll-download_title' => 'Donükön',
 	'coll-download' => 'Donükön',
@@ -11605,7 +11607,7 @@ $messages['vo'] = array(
 	'coll-personal_collection_label' => 'Buk privatik:',
 	'coll-community_collection_label' => 'Buk kobädik:',
 	'coll-save_collection' => 'Dakipön buki',
-	'coll-save_category' => 'Buks valik padakipons in klad: [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Buks padakipöls valik paläükons in klad: [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Pad ya dabinon.
 Plaädön-li?',
 	'coll-overwrite_text' => 'Pad labü nem: [[:$1]] ya dabinon.
@@ -11625,10 +11627,13 @@ Pads pluik nonik kanons paläükön.',
 	'coll-rendering_page' => '(pad: $1)',
 	'coll-notfound_title' => 'Buk no petuvon',
 	'coll-notfound_text' => 'No eplöpos ad tuvön bukapadi.',
+	'coll-download_notfound_title' => 'Ragiv no petuvon',
 	'coll-excluded-templates' => '* Samafomots in klad: [[:Category:$1|$1]] pefakipons.',
 	'coll-blacklisted-templates' => '* Samafomots blägaliseda: [[:$1]] pefakipons.',
 	'coll-about_pp' => 'Tefü $1',
 	'coll-return_to' => 'Geikön lü [[:$1]]',
+	'coll-suggest_show' => 'jonön',
+	'coll-suggest_undo' => 'sädunön',
 );
 
 /** Wu (吴语) */
