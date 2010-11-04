@@ -206,6 +206,7 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-post_failed_msg' => '* $1 is a URL.
 * $2 is (probably) an explanation of the error.',
 	'coll-empty_collection' => 'Translate "empty" as in "an empty book" (adj), not "empty the book" (verb)',
+	'coll-revision' => '{{Identical|Revision}}',
 	'coll-save_collection' => '',
 	'coll-save_category' => 'Do not change <nowiki>{{MediaWiki:Coll-bookscategory}}</nowiki>. The link and category name should be in the content language.',
 	'coll-yes' => '{{Identical|Yes}}
@@ -8400,7 +8401,7 @@ Pretende substituir o livro actual, adicionar-lhe o novo conteúdo ou cancelar o
 	'coll-limit_exceeded_title' => 'Livro demasiado grande',
 	'coll-limit_exceeded_text' => 'O seu livro é demasiado grande.
 Não podem ser adicionadas mais páginas.',
-	'coll-rendering_title' => 'A compor imagem',
+	'coll-rendering_title' => 'A compor ficheiro',
 	'coll-rendering_text' => '<p><strong>Por favor, aguarde enquanto o documento é gerado.</strong></p>
 
 <p><strong>Progresso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
@@ -8412,7 +8413,7 @@ Se não o fizer, por favor use o botão "actualizar" ("refresh") do seu browser.
 	'coll-rendering_page' => '(página: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre composição de páginas',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre composição de colecções',
-	'coll-rendering_finished_title' => 'Composição da imagem concluída',
+	'coll-rendering_finished_title' => 'Composição do ficheiro concluída',
 	'coll-rendering_finished_text' => '<strong>O ficheiro foi gerado.</strong>
 <strong>[$1 Transfira o ficheiro]</strong> para o seu computador.
 
