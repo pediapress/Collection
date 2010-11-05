@@ -6799,7 +6799,7 @@ $messages['mk'] = array(
 <a href="$1">Сепак отцртај.</a></li></ul>',
 	'coll-excluded-templates' => '* Шаблоните во категоријата [[:Category:$1|$1]] се исклучени.',
 	'coll-blacklisted-templates' => '* Шаблоните на црниот список [[:$1]] се исклучени.',
-	'coll-return_to_collection' => '<p>Врати се на <a href="$1">$2</a></p>',
+	'coll-return_to_collection' => '<p>Назад на <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Порачај во печатен облик',
 	'coll-book_text' => 'Порачајте ја книгата во печатен облик од нашиот партнер.',
 	'coll-order_from_pp' => 'Прегледај со $1',
