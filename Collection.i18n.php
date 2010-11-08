@@ -7522,7 +7522,7 @@ De lijst wordt bijgewerkt als u op de knop 'toevoegen' of 'verwijderen' klikt.",
  */
 $messages['nn'] = array(
 	'coll-desc' => '[[Special:Book|Opprett bøker]]',
-	'coll-book_creator_intro' => '<big>Ved hjelp av bokfunksjonen kan du laga ei bok utgjort av valfrie wikisider. Du kan eksportera boka til ulike format, til dømes PDF eller ODF, eller tinga ein trykt kopi.</big>',
+	'coll-book_creator_intro' => "<big>Med ''bokfunksjonen'' kan du laga ei bok som inneheld wikisider du sjølv vel ut. Du kan eksportera boka til ulike format (til dømes PDF eller ODF) eller tinga ein trykt kopi.</big>",
 	'coll-manage_your_book' => 'Administrér boka di',
 	'coll-book_creator_help' => 'Sjå [[{{MediaWiki:Coll-helppage}}|hjelpesida om bøker]] for meir informasjon.',
 	'coll-start_book_creator' => 'Start bokfunksjonen',
