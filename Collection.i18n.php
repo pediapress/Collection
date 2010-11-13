@@ -4006,23 +4006,23 @@ Desexa sobrescribir o seu libro actual, anexar o novo contido ou cancelar a carg
 	'coll-limit_exceeded_text' => 'O seu libro é moi grande.
 Non se poden engadir máis páxinas.',
 	'coll-rendering_title' => 'Renderizando',
-	'coll-rendering_text' => '<p><strong>Por favor, agarde mentres o documento é xerado.</strong></p>
+	'coll-rendering_text' => '<p><strong>Por favor, agarde mentres se xera o documento.</strong></p>
 
 <p><strong>Progreso:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
 <p>Esta páxina debería refrescarse cada poucos segundos.
-Se non vai, por favor, prema no botón "Refrescar" do seu navegador.</p>',
+Se non vai, prema no botón "Refrescar" do seu navegador.</p>',
 	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(páxina wiki: $1)',
 	'coll-rendering_page' => '(páxina: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre o renderizado de páxinas',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre o renderizado de coleccións',
 	'coll-rendering_finished_title' => 'Finalizou a renderización',
-	'coll-rendering_finished_text' => '<strong>O ficheiro do documento foi xerado.</strong>
+	'coll-rendering_finished_text' => '<strong>Xerouse o documento.</strong>
 <strong>[$1 Descargue o ficheiro]</strong> no seu ordenador.
 
 Notas:
-*Non está satisfeito co ficheiro obtido? Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca das coleccións]] para comprobar as posibilidades de melloralo.',
+*Non está satisfeito co ficheiro obtido? Vexa [[{{MediaWiki:Coll-helppage}}|a páxina de axuda acerca dos libros]] para comprobar as posibilidades de melloralo.',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre o renderizado de páxinas',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Texto informativo sobre o renderizado de coleccións',
 	'coll-notfound_title' => 'Non se pode atopar o libro',
