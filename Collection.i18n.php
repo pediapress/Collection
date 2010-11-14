@@ -4320,6 +4320,7 @@ $messages['haw'] = array(
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  * @author Rotem Liss
  * @author Rotemliss
  * @author YaronSh
@@ -4410,12 +4411,16 @@ $messages['he'] = array(
 	'coll-rendering_status' => '<strong>מצב:</strong> $1',
 	'coll-rendering_article' => '(דף תוכן: $1)',
 	'coll-rendering_page' => '(דף: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/הכנת טקסט של מידע על הדף',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/הכנת טקסט של מידע על האוסף',
 	'coll-rendering_finished_title' => 'היצירה הסתיימה',
 	'coll-rendering_finished_text' => '<strong>קובץ המסמך נוצר.</strong>
 <strong>[$1 הורדת הקובץ]</strong> למחשבכם.
 
 הערות:
 * אינכם מרוצים מהפלט? ב[[{{MediaWiki:Coll-helppage}}|דף העזרה על ספרים]] תוכלו למצוא אפשרויות לשיפורו.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/הכנת טקסט של מידע על הדף',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/הכנסת טקסט של מידע על הדף',
 	'coll-notfound_title' => 'הספר לא נמצא',
 	'coll-notfound_text' => 'לא ניתן למצוא את דף הספר.',
 	'coll-download_notfound_title' => 'הקובץ לא נמצא',
