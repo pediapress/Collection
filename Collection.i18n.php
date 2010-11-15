@@ -2770,6 +2770,7 @@ $messages['el'] = array(
  * @author Amikeco
  * @author ArnoLagrange
  * @author Castelobranco
+ * @author Petrus Adamus
  * @author Yekrats
  * @author Александр Сигачёв
  */
@@ -2885,7 +2886,7 @@ Notoj:
 	'coll-invalid_podpartner_title' => 'Malvalida ek-eldoneja partnero',
 	'coll-invalid_podpartner_msg' => 'La donita ek-eldoneja partnero estas malvalida.
 Bonvolu kontakti vian administranton de MediaWiki.',
-	'coll-license' => 'Licenco',
+	'coll-license' => 'Permesilo',
 	'coll-return_to' => 'Reiri al [[:$1]]',
 	'coll-more_info' => 'Montri plian informon',
 	'coll-hide_info' => 'Kaŝi informon',
