@@ -5567,6 +5567,7 @@ L\'elenco viene aggiornato ogni qualvolta si fa clic sui pulsanti "aggiungi" o "
  * @author Fryed-peach
  * @author JtFuruhata
  * @author Marine-Blue
+ * @author 青子守歌
  */
 $messages['ja'] = array(
 	'coll-desc' => '[[Special:Book|ブックを作成する]]',
@@ -5620,7 +5621,7 @@ $messages['ja'] = array(
 	'coll-mwserve_failed_msg' => 'レンダリングサーバーでエラーが発生しました: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'サーバからのエラー応答',
 	'coll-empty_collection' => '空のブック',
-	'coll-revision' => '特定版: $1',
+	'coll-revision' => '版：$1',
 	'coll-save_collection_title' => 'ブックを保存して共有する',
 	'coll-save_collection_text' => '保存先の選択:',
 	'coll-login_to_save' => '後の利用のためブックを保存するには、[[Special:UserLogin|ログインまたはアカウント作成]]を行ってください。',
