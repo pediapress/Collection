@@ -2982,10 +2982,18 @@ $messages['sv'] = array(
 	'coll-suggest_empty' => 'tom',
 );
 
-/** Swahili (Kiswahili) */
+/** Swahili (Kiswahili)
+ * @author Lloffiwr
+ */
 $messages['sw'] = array(
+	'coll-print_export' => 'Chapa/peleka nje',
 	'coll-disable' => 'lemaza',
+	'coll-bookscategory' => 'Vitabu',
 	'coll-help' => 'Msaada',
+	'coll-helppage' => 'Msaada:Vitabu',
+	'coll-show_collection' => 'Onyesha kitabu',
+	'coll-not_addable' => 'Ukarasa huu hauwezi kuingizwa',
+	'coll-suggest_empty' => 'tupu',
 );
 
 /** Tamil (தமிழ்)
