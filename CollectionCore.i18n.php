@@ -2987,6 +2987,9 @@ $messages['sv'] = array(
  */
 $messages['sw'] = array(
 	'coll-print_export' => 'Chapa/peleka nje',
+	'coll-create_a_book' => 'Kutunga kitabu',
+	'coll-create_a_book_tooltip' => 'Utunge kitabu au mkusanyiko wa kurasa',
+	'coll-book_creator' => 'Mtunga kitabu',
 	'coll-disable' => 'lemaza',
 	'coll-bookscategory' => 'Vitabu',
 	'coll-help' => 'Msaada',
