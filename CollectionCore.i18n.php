@@ -771,10 +771,11 @@ $messages['diq'] = array(
 );
 
 /** Lower Sorbian (Dolnoserbski)
+ * @author Derbeth
  * @author Michawiki
  */
 $messages['dsb'] = array(
-	'coll-print_export' => 'Šišćaś/eksport',
+	'coll-print_export' => 'Śišćaś/eksport',
 	'coll-create_a_book' => 'Knigły napóraś',
 	'coll-create_a_book_tooltip' => 'Knigły abo zběrku nastawkow napóraś',
 	'coll-book_creator' => 'Funkcija knigłow',
@@ -1967,6 +1968,16 @@ $messages['lt'] = array(
 	'coll-create_a_book' => 'Kurti knygą',
 	'coll-add_category' => 'Pridėti kategoriją',
 	'coll-printable_version_pdf' => 'PDF versija',
+);
+
+/** Latgalian (Latgaļu)
+ * @author Dark Eagle
+ */
+$messages['ltg'] = array(
+	'coll-create_a_book' => 'Iztaiseit gruomotu',
+	'coll-load_collection' => 'Atsasyuteit gruomotu',
+	'coll-printable_version_pdf' => 'PDF verseja',
+	'coll-show_collection' => 'Ruodeit gruomotu',
 );
 
 /** Latvian (Latviešu)
