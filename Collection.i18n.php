@@ -4328,10 +4328,10 @@ $messages['haw'] = array(
  */
 $messages['he'] = array(
 	'coll-desc' => '[[Special:Book|איסוף דפים לספר]], יצירת קובצי PDF',
-	'coll-book_creator_intro' => '<big>באמצעות "מצב ספר", ניתן ליצור ספר הכולל דפי ויקי כלשהם. תוכלו לייצא את הספר שלכם בסוגי קבצים שונים (לדוגמה, PDF או ODF) או להזמין עותק מודפס.</big>',
+	'coll-book_creator_intro' => '<big>באמצעות "יוצר הספרים" ניתן ליצור ספר הכולל דפי ויקי לבחירתך. ניתן לייצא את הספר שלך בסוגי קבצים שונים (לדוגמה, PDF או ODF) או להזמין עותק מודפס.</big>',
 	'coll-manage_your_book' => 'ניהול הספר שלכם',
-	'coll-book_creator_help' => 'עיינו ב[[{{MediaWiki:Coll-helppage}}|דף העזרה אודות ספרים]] למידע נוסף.',
-	'coll-start_book_creator' => 'הפעלת מצב ספר',
+	'coll-book_creator_help' => 'ניתן לעיין ב[[{{MediaWiki:Coll-helppage}}|דף העזרה אודות ספרים]] למידע נוסף.',
+	'coll-start_book_creator' => 'הפעלת יוצר הספרים',
 	'coll-book_creator_continue' => 'המשך השימוש במצב ספר',
 	'coll-book_creator_disable_text' => "''מצב ספר'' יבוטל והספר שאתם עובדים עליו יוסר.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/טקסט במצב ספר',
