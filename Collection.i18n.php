@@ -9400,10 +9400,10 @@ $messages['si'] = array(
  */
 $messages['sk'] = array(
 	'coll-desc' => '[[Special:Book|Tvorba kníh]]',
-	'coll-book_creator_intro' => "<big>V ''režime knihy'' si môžete vytvoriť knihu zo stránok wiki, ktoré si zvolíte. Knihu môžete exportovať v rozličných formátoch (napr. PDF alebo ODF) alebo si objednať tlačenú kópiu.</big>",
+	'coll-book_creator_intro' => "<big>V režime ''tvorba knihy'' si môžete vytvoriť knihu zo stránok wiki, ktoré si zvolíte. Knihu môžete exportovať v rozličných formátoch (napr. PDF alebo ODF) alebo si objednať tlačenú kópiu.</big>",
 	'coll-manage_your_book' => 'Spravovať vašu knihu',
-	'coll-book_creator_help' => 'Ďalšie informácie nájdete na [[{{MediaWiki:Coll-helppage}}|stránke pomocníka o knihách]].',
-	'coll-start_book_creator' => 'Spustiť režim knihy',
+	'coll-book_creator_help' => 'Ďalšie informácie nájdete na [[{{MediaWiki:Coll-helppage}}|stránke Pomocníka o knihách]].',
+	'coll-start_book_creator' => 'Spustiť tvorbu knihy',
 	'coll-book_creator_continue' => 'Pokračovať v používaní tvorby knihy',
 	'coll-book_creator_disable_text' => "''Tvorba knihy'' bude vypnutá a kniha, na ktorej pracujete bude odstránená.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Text režimu knihy',
