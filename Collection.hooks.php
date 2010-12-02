@@ -252,19 +252,13 @@ class CollectionHooks {
 			}
 		}
 
-		$html = '';
-
-		if ( method_exists( $wgOut, 'includeJQuery' ) ) {
-			$wgOut->includeJQuery();
-		} else {
-			$html .= Xml::element( 'script',
-				array(
-					'type' => $wgJsMimeType,
-					'src' => "$jsPath/jquery.js?$wgCollectionStyleVersion",
-				),
-				'', false
-			);
-		}
+		$html = Xml::element( 'script',
+			array(
+				'type' => $wgJsMimeType,
+				'src' => "$jsPath/jquery.js?$wgCollectionStyleVersion",
+			),
+			'', false
+		);
 
 		$html .= Xml::element( 'script',
 			array(

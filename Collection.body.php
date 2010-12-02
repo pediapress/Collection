@@ -321,12 +321,8 @@ class SpecialCollection extends SpecialPage {
 		$imagepath = "$wgScriptPath/extensions/Collection/images";
 		$jspath = "$wgScriptPath/extensions/Collection/js";
 
-		if ( method_exists( $wgOut, 'includeJQuery' ) ) {
-			$wgOut->includeJQuery();
-		} else {
-			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.js?" . 
-				"$wgCollectionStyleVersion\"></script>" );
-		}
+		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.js?" . 
+			"$wgCollectionStyleVersion\"></script>" );
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.json.js?" . 
 			"$wgCollectionStyleVersion\"></script>" );
 		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jstorage.js?" . 
