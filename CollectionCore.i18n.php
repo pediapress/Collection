@@ -1653,6 +1653,7 @@ $messages['it'] = array(
  * @author JtFuruhata
  * @author Marine-Blue
  * @author Naohiro19
+ * @author 青子守歌
  */
 $messages['ja'] = array(
 	'coll-print_export' => '印刷/エクスポート',
@@ -1679,7 +1680,7 @@ $messages['ja'] = array(
 	'coll-helppage' => 'Help:ブック',
 	'coll-load_collection' => 'ブックの読み込み',
 	'coll-load_collection_tooltip' => 'このブックをあなたの現在のブックとして読み込む',
-	'coll-n_pages' => '$1{{PLURAL:$1|ページ}}',
+	'coll-n_pages' => '$1ページ',
 	'coll-printable_version_pdf' => 'PDF版',
 	'coll-remove_this_page' => 'このページを自分のブックから削除する',
 	'coll-remove_page_tooltip' => '現在のページをあなたのブックから削除する',
