@@ -10200,17 +10200,32 @@ Listan uppdateras när du klickar på lägg till- eller ta bort-knappar.',
 
 /** Swahili (Kiswahili)
  * @author Ikiwaner
+ * @author Lloffiwr
  */
 $messages['sw'] = array(
+	'coll-collection' => 'Kitabu',
+	'coll-collections' => 'Vitabu',
+	'coll-print_template_prefix' => 'Chapisha',
+	'coll-your_book' => 'Kitabu chako',
 	'coll-download' => 'Pakua',
 	'coll-remove' => 'Ondoa',
 	'coll-show' => 'Onyesha',
 	'coll-title' => 'Cheo:',
 	'coll-contents' => 'Yaliyomo',
+	'coll-empty_collection' => 'Kitabu kitupu',
+	'coll-revision' => 'Pitio la $1',
+	'coll-save_collection' => 'Hifadhi kitabu',
 	'coll-yes' => 'Ndiyo',
 	'coll-no' => 'Siyo',
 	'coll-cancel' => 'Batilisha',
 	'coll-update' => 'Sasisha',
+	'coll-limit_exceeded_title' => 'Kitabu ni kubwa mno',
+	'coll-rendering_page' => '(ukurasa: $1)',
+	'coll-download_notfound_title' => 'Faili halikupatikana',
+	'coll-about_pp' => 'Kuhusu $1',
+	'coll-more_info' => 'Onyesha taarifa zaidi',
+	'coll-hide_info' => 'Ficha taarifa',
+	'coll-suggested_articles' => 'Mapendekezo',
 	'coll-suggest_your_book' => 'Kitabu chako',
 	'coll-suggest_show' => 'fichua',
 	'coll-suggest_undo' => 'tengua',
