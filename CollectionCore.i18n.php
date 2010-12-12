@@ -71,6 +71,7 @@ $messages['en'] = array(
  * @author Aotake
  * @author EugeneZelenko
  * @author Fryed-peach
+ * @author Lloffiwr
  * @author Mormegil
  * @author Siebrand
  * @author Teak
@@ -78,7 +79,9 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'coll-print_export' => 'Caption of a frame in the toolbar (on the left-hand side of the screen), similar to {{msg-mw|toolbox}} or {{msg-mw|otherlanguages}}.',
 	'coll-create_a_book' => '{{Identical|Books}}',
-	'coll-download_as' => '{{Identical|Download}}',
+	'coll-download_as' => '$1 is a file format.
+
+{{Identical|Download}}',
 	'coll-download_as_tooltip' => '* $1 is some file format(s)',
 	'coll-bookscategory' => '{{Identical|Book}}',
 	'coll-clear_collection' => '',
@@ -3001,12 +3004,17 @@ $messages['sw'] = array(
 	'coll-print_export' => 'Chapa/peleka nje',
 	'coll-create_a_book' => 'Kutunga kitabu',
 	'coll-create_a_book_tooltip' => 'Utunge kitabu au mkusanyiko wa kurasa',
-	'coll-book_creator' => 'Mtunga kitabu',
+	'coll-book_creator' => 'Kitunga kitabu',
+	'coll-download_as' => 'Pakua kama $1',
+	'coll-download_as_tooltip' => 'Pakua aina $1 ya ukurasa wiki huu',
 	'coll-disable' => 'lemaza',
+	'coll-book_creator_disable' => 'Lemaza kitunga kitabu',
+	'coll-book_creator_disable_tooltip' => 'Acha kutumia kitunga kitabu',
 	'coll-bookscategory' => 'Vitabu',
 	'coll-help' => 'Msaada',
 	'coll-helppage' => 'Help:Vitabu',
 	'coll-n_pages' => '{{PLURAL:$1|ukurasa|kurasa}} $1',
+	'coll-printable_version_pdf' => 'Mtindo wa PDF',
 	'coll-show_collection' => 'Onyesha kitabu',
 	'coll-not_addable' => 'Ukarasa huu hauwezi kuingizwa',
 	'coll-suggest_empty' => 'tupu',

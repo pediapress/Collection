@@ -3617,6 +3617,7 @@ Lista päivittyy aina kun napsautat lisää- tai poista-painikkeita.',
 /** French (Français)
  * @author Antaya
  * @author Crochet.david
+ * @author Dodoïste
  * @author Grondin
  * @author Guillom
  * @author IAlex
@@ -3639,7 +3640,7 @@ $messages['fr'] = array(
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Texte du créateur de livres',
 	'coll-collection' => 'Livre',
 	'coll-collections' => 'Livres',
-	'coll-exclusion_category_title' => 'Exclure lors de l’impression',
+	'coll-exclusion_category_title' => "Exclure lors de l'impression",
 	'coll-print_template_prefix' => 'Imprimer',
 	'coll-print_template_pattern' => '$1/Imprimer',
 	'coll-unknown_subpage_title' => 'Sous-page inconnue',
