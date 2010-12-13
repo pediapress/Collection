@@ -250,9 +250,35 @@ $messages['ast'] = array(
 );
 
 /** Bashkir (Башҡорт)
+ * @author Assele
  * @author Haqmar
  */
 $messages['ba'] = array(
+	'coll-print_export' => 'Баҫтырырға/сығарырға',
+	'coll-create_a_book' => 'Китап булдырырға',
+	'coll-create_a_book_tooltip' => 'Китап йәки биттәр йыйынтығын булдырырға',
+	'coll-book_creator' => 'Китап оҫтаһы',
+	'coll-download_as' => '$1 форматында күсереп алырға',
+	'coll-download_as_tooltip' => 'Был вики-биттең $1 өлгөһөн күсереп алырға',
+	'coll-disable' => 'һүндерергә',
+	'coll-book_creator_disable' => 'Китап оҫтаһын һүндерергә',
+	'coll-book_creator_disable_tooltip' => 'Китап оҫтаһын ҡүлланыуҙы туҡтатырға',
+	'coll-add_linked_article' => 'Бәйле вики-битте китабығыҙға өҫтәргә',
+	'coll-remove_linked_article' => 'Бәйле вики-битте китабығыҙҙан юйырға',
+	'coll-add_category' => 'Был категорияны китабығыҙға өҫтәргә',
+	'coll-add_category_tooltip' => 'Был категорияның вики-биттәрен китабығыҙға өҫтәргә',
+	'coll-add_this_page' => 'Был битте китабығыҙға өҫтәргә',
+	'coll-add_page_tooltip' => 'Ағымдағы вики-битте китабығыҙға өҫтәргә',
+	'coll-bookscategory' => 'Китаптар',
+	'coll-clear_collection' => 'Китапты таҙартырға',
+	'coll-clear_collection_confirm' => 'Һеҙ ысынлап та китабығыҙҙы тулыһынса таҙартырға теләйһегеҙме?',
+	'coll-clear_collection_tooltip' => 'Бөтә вики-биттәрҙе ағымдағы китабығыҙҙан юйырға',
+	'coll-help' => 'Белешмә',
+	'coll-help_tooltip' => 'Китап булдырыу тураһында белешмә күрһәтергә',
+	'coll-helppage' => 'Help:Китаптар',
+	'coll-load_collection' => 'Китап тейәргә',
+	'coll-load_collection_tooltip' => 'Был китапты ағымдағы китабығыҙ рәүешендә тейәргә',
+	'coll-n_pages' => '$1 {{PLURAL:$1|бит}}',
 	'coll-printable_version_pdf' => 'PDF өлгөһө',
 	'coll-remove_this_page' => 'Был битте китабығыҙҙан сығарығыҙ',
 	'coll-remove_page_tooltip' => 'Ағымдағы вики-битте китабығыҙҙан сығарырға',
