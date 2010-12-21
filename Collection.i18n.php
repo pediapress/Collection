@@ -3677,7 +3677,7 @@ Huomautuksia:
 	'coll-blacklisted-templates' => '* Mallineet sulkulistalla [[:$1]] on ohitettu.',
 	'coll-return_to_collection' => '<p>Palaa takaisin sivulle <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Tilaa painettuna kirjana',
-	'coll-book_text' => 'Hanki painettuna kirjana pikapainosta:',
+	'coll-book_text' => 'Hanki painettuna kirjana pikapainosta.',
 	'coll-order_from_pp' => 'Esikatsele kohteessa $1',
 	'coll-about_pp' => 'Tietoja kohteesta $1',
 	'coll-invalid_podpartner_title' => 'Epäkelpo POD-partneri',
@@ -4632,10 +4632,10 @@ $messages['hil'] = array(
  */
 $messages['hr'] = array(
 	'coll-desc' => '[[Special:Book|Stvori zbirku]]',
-	'coll-book_creator_intro' => "<big>S ''načinom zbirka'' možete stvoriti zbirku koja se sastoji od proizvoljnih wiki stranica. Možete izvesti svoju zbirku u različitim formatima (npr. PDF ili ODF) ili naručiti tiskani primjerak.</big>",
+	'coll-book_creator_intro' => "<big>S ''kreatorom knjiga'' možete stvoriti knjigu koja se sastoji od proizvoljnih wiki stranica. Možete izvesti odnosno snimiti svoju knjigu u različitim formatima (npr. PDF ili ODF) ili naručiti tiskani primjerak.</big>",
 	'coll-manage_your_book' => 'Upravljanje Vašom zbirkom',
-	'coll-book_creator_help' => 'Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o zbirkama]] za više informacija.',
-	'coll-start_book_creator' => 'Pokrenite način zbirke',
+	'coll-book_creator_help' => 'Pogledajte [[{{MediaWiki:Coll-helppage}}|stranicu za pomoć o knjigama]] za više informacija.',
+	'coll-start_book_creator' => 'Pokrenite uređivanje wikiknjige',
 	'coll-book_creator_continue' => 'Nastavi s uporabom uređivača zbirke',
 	'coll-book_creator_disable_text' => "''Uređivač zbirke'' će biti onemogućen, a zbirka na kojoj radite bit će uklonjena.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Tekst načina zbirke',
@@ -11774,6 +11774,8 @@ $messages['wuu'] = array(
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'coll-collection' => 'בוך',
+	'coll-collections' => 'ביכער',
 	'coll-your_book' => 'אײַער בוך',
 	'coll-download_title' => 'אראָפלאָדן',
 	'coll-download' => 'אַראָפלאָדן',
@@ -11783,6 +11785,7 @@ $messages['yi'] = array(
 	'coll-rendering_status' => '<strong>סטאַטוס:</strong> $1',
 	'coll-rendering_article' => '(וויקי בלאַט: $1)',
 	'coll-rendering_page' => '(בלאַט: $1)',
+	'coll-about_pp' => 'וועגן $1',
 );
 
 /** Yoruba (Yorùbá)
