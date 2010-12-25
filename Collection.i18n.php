@@ -7767,7 +7767,7 @@ Lista vert oppdatert kvar gong du trykkjer på «legg til»- eller «fjern»-kna
  */
 $messages['no'] = array(
 	'coll-desc' => '[[Special:Book|Lag bøker]]',
-	'coll-book_creator_intro' => '<big>Med bokfunksjonen kan du lage ei bok av valgfrie wikisider. Du kan eksportere boka til ulike formater, for eksempel PDF eller ODF, eller bestille en trykt kopi.</big>',
+	'coll-book_creator_intro' => "<big>Med ''bokfunksjonen'' kan du lage ei bok av valgfrie wikisider. Du kan eksportere boka til ulike formater, for eksempel PDF eller ODF, eller bestille en trykt kopi.</big>",
 	'coll-manage_your_book' => 'Administrer boken din',
 	'coll-book_creator_help' => 'Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om bøker]] for mer informasjon.',
 	'coll-start_book_creator' => 'Start bokfunksjonen',
