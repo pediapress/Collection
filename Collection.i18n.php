@@ -8736,6 +8736,90 @@ $messages['qu'] = array(
 	'coll-hide_info' => 'Willaykunata pakay',
 );
 
+/** Romansh (Rumantsch)
+ * @author Gion-andri
+ */
+$messages['rm'] = array(
+	'coll-desc' => '[[Special:Book|Crear cudeschs]]',
+	'coll-book_creator_intro' => "<big>Cun il ''generatur da cudeschs'' pos ti crear cudeschs che cuntegnan paginas da wiki tenor tia schelta. Ti pos exportar il cudesch en differents formats (per exempel PDF u ODF) u empustar in exemplar stampà.</big>",
+	'coll-manage_your_book' => 'Administrar tes cudesch',
+	'coll-book_creator_help' => "Legia [[{{MediaWiki:Coll-helppage}}|la pagina d'agid davart cudeschs]] per dapli infurmaziuns.",
+	'coll-start_book_creator' => 'Activar il generatur da cudeschs',
+	'coll-book_creator_continue' => 'Cuntinuar dad utilisar il generatur da cudeschs',
+	'coll-book_creator_disable_text' => "Il ''generatur da cudeschs'' vegn deactivà ed il cudesch vid il qual ti lavuras vegn stizzà.",
+	'coll-collection' => 'Cudesch',
+	'coll-collections' => 'Cudeschs',
+	'coll-exclusion_category_title' => 'Excluder da la stampa',
+	'coll-print_template_prefix' => 'Stampar',
+	'coll-print_template_pattern' => '$1/Stampa',
+	'coll-unknown_subpage_title' => 'Sutpagina nunenconuschenta',
+	'coll-unknown_subpage_text' => "Questa sutpagina da [[Special:Book|Cudesch]] n'exista betg",
+	'coll-couldnotaddarticle_title' => 'Impussibel dad agiuntar la pagina da wiki',
+	'coll-couldnotaddarticle_msg' => 'La pagina da wiki na pudeva betg vegnir agiuntada.',
+	'coll-couldnotremovearticle_title' => 'Impussibel dad allontanar la pagina da wiki',
+	'coll-couldnotremovearticle_msg' => 'La pagina da wiki na pudeva betg vegnir allontanada.',
+	'coll-noscript_text' => '<h1>Questa pagina basegna JavaScript!</h1>
+<strong>Tes navigatur na sustegna betg JavaScript u JavaScript è deactivà.
+Questa pagina na funcziuna betg correctamain fin che ti activeschas JavaScript.</strong>',
+	'coll-your_book' => 'Tes cudesch',
+	'coll-download_title' => 'Telechargiar',
+	'coll-download_text' => 'Per telechargiar tes cudesch stos ti tscherner in format e cliccar sin il buttun.',
+	'coll-download_as_text' => 'Per telechargiar tes cudesch en il format $1, clicca sin il buttun.',
+	'coll-download' => 'Telechargiar',
+	'coll-format_label' => 'Format:',
+	'coll-remove' => 'Allontanar',
+	'coll-show' => 'Mussar',
+	'coll-move_to_top' => "Spustar a l'entschatta",
+	'coll-move_up' => 'Ensi',
+	'coll-move_down' => 'Engiu',
+	'coll-move_to_bottom' => 'Spustar a la fin',
+	'coll-title' => 'Titel:',
+	'coll-subtitle' => 'Suttitel:',
+	'coll-contents' => 'Cuntegn',
+	'coll-drag_and_drop' => 'Utilisescha drag & drop per midar las successiuns da las paginas da wiki ed ils chapitels',
+	'coll-create_chapter' => 'Crear in chapitel',
+	'coll-sort_alphabetically' => 'Zavrar alfabeticamain',
+	'coll-rename' => 'Renumnar',
+	'coll-new_chapter' => 'Endatescha in num per il chapitel nov',
+	'coll-rename_chapter' => 'Endatescha in num per il chapitel',
+	'coll-no_such_category' => "Questa categoria n'exista betg",
+	'coll-notitle_title' => 'Betg pussaivel dad eruir il titel da la pagina.',
+	'coll-post_failed_title' => "La dumonda da POST n'è betg reussida",
+	'coll-post_failed_msg' => "La dumonda da POST a $1 n'è betg reussida ($2).",
+	'coll-empty_collection' => 'Cudesch vid',
+	'coll-revision' => 'Versiun: $1',
+	'coll-save_collection_title' => 'Memorisar e cundivider tes cudesch',
+	'coll-save_collection_text' => 'Tscherna il lieu per memorisar tes cudesch:',
+	'coll-login_to_save' => "Sche ti vuls memorisar cudeschs per als utilisar pli tard stos ti [[Special:UserLogin|t'annunziar u crear in conto]].",
+	'coll-personal_collection_label' => 'Cudesch persunal:',
+	'coll-community_collection_label' => 'Cudesch da la communitad:',
+	'coll-save_collection' => 'Memorisar il cudesch',
+	'coll-save_category' => 'Tut ils cudeschs memorisads vegnan agiuntads a la categoria [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-overwrite_title' => 'Pagina exista gia. 
+Remplazzar?',
+	'coll-overwrite_text' => 'Ina pagina cun il num [[:$1]] exista gia.
+La vuls ti remplazzar cun tes cudesch?',
+	'coll-yes' => 'Gea',
+	'coll-no' => 'Na',
+	'coll-load_overwrite_text' => 'Tes cudesch cuntegnia gia intginas paginas.
+Vuls ti remplazzar tes cudesch actual, agiuntar cuntegn nov u interrumper da chargiar quest cudesch?',
+	'coll-overwrite' => 'Remplazzar',
+	'coll-append' => 'Agiuntar',
+	'coll-cancel' => 'Interrumper',
+	'coll-update' => 'Actualisar',
+	'coll-limit_exceeded_title' => 'Il cudesch è memia grond',
+	'coll-limit_exceeded_text' => 'Tes cudesch è memia grond.
+I na pon betg vegnir agiuntadas ulteriuras paginas.',
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
+	'coll-notfound_title' => 'Betg chattà il cudesch',
+	'coll-notfound_text' => 'Betg pussaivel da chattar la pagina dal cudesch.',
+	'coll-download_notfound_title' => 'Betg chattà la datoteca',
+	'coll-download_notfound_text' => "La datoteca che ti emprovas da telechargiar n'exista betg:
+Forsa è ella vegnida stizzada e sto vegnir regenerada.",
+	'coll-download_failed_title' => 'Errur durant telechargiar',
+	'coll-download_failed_text' => 'I ha dà ina errur durant telechargiar la datoteca: $1',
+);
+
 /** Romanian (Română)
  * @author Cin
  * @author Firilacroco
