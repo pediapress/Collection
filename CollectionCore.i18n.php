@@ -2595,6 +2595,46 @@ $messages['pt-br'] = array(
 	'coll-suggest_empty' => 'vazio',
 );
 
+/** Romansh (Rumantsch)
+ * @author Gion-andri
+ */
+$messages['rm'] = array(
+	'coll-print_export' => 'Stampar/exportar',
+	'coll-create_a_book' => 'Crear in cudesch',
+	'coll-create_a_book_tooltip' => 'Crear in cudesch u ina collecziun dad artitgels',
+	'coll-book_creator' => 'Generatur da cudeschs',
+	'coll-download_as' => 'Telechargiar sco $1',
+	'coll-download_as_tooltip' => 'Telechargiar ina versiun da $1 da questa pagina da wiki',
+	'coll-disable' => 'deactivar',
+	'coll-book_creator_disable' => 'Deactivar il generatur da cudeschs',
+	'coll-book_creator_disable_tooltip' => 'Chalar dad utilisar il generatur da cudeschs',
+	'coll-add_linked_article' => 'Agiuntar la pagina da wiki colliada a tes cudesch',
+	'coll-remove_linked_article' => 'Allontanar la pagina da wiki colliada da tes cudesch',
+	'coll-add_category' => 'Agiuntar questa categoria a tes cudesch',
+	'coll-add_category_tooltip' => 'Agiuntar tut las paginas da wiki en questa categoria a tes cudesch',
+	'coll-add_this_page' => 'Agiuntar questa pagina a tes cudesch',
+	'coll-add_page_tooltip' => 'Agiuntar la pagina da wiki actuala a tes cudesch',
+	'coll-bookscategory' => 'Cudeschs',
+	'coll-clear_collection' => 'Stizzar il cudesch',
+	'coll-clear_collection_confirm' => 'Vuls ti propi stizzar cumplettamain tes cudesch?',
+	'coll-clear_collection_tooltip' => 'Allontanar tut las paginas da wiki ord tes cudesch actual',
+	'coll-help' => 'Agid',
+	'coll-help_tooltip' => 'Mussar agid davart il crear cudeschs',
+	'coll-helppage' => 'Help:Cudeschs',
+	'coll-load_collection' => 'Chargiar in cudesch',
+	'coll-load_collection_tooltip' => 'Chargiar quest cudesch sco cudesch actual',
+	'coll-n_pages' => '$1 {{PLURAL:$1|pagina|paginas}}',
+	'coll-printable_version_pdf' => 'Versiun da PDF',
+	'coll-remove_this_page' => 'Allontanar questa pagina da tes cudesch',
+	'coll-remove_page_tooltip' => 'Allontanar la pagina da wiki actuala da tes cudesch',
+	'coll-show_collection' => 'Mussar il cudesch',
+	'coll-show_collection_tooltip' => 'Cliccar per modifitgar/telechargiar/empustar tes cudesch',
+	'coll-not_addable' => 'Questa pagina na po betg vegnir agiuntada',
+	'coll-make_suggestions' => 'Proponer paginas',
+	'coll-make_suggestions_tooltip' => 'Mussar propostas che sa basan sin las paginas en tes cudesch',
+	'coll-suggest_empty' => 'vid',
+);
+
 /** Romanian (Română)
  * @author Firilacroco
  * @author KlaudiuMihaila
