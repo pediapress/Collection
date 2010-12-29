@@ -8747,6 +8747,7 @@ $messages['rm'] = array(
 	'coll-start_book_creator' => 'Activar il generatur da cudeschs',
 	'coll-book_creator_continue' => 'Cuntinuar dad utilisar il generatur da cudeschs',
 	'coll-book_creator_disable_text' => "Il ''generatur da cudeschs'' vegn deactivà ed il cudesch vid il qual ti lavuras vegn stizzà.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Text per il modus da cudeschs',
 	'coll-collection' => 'Cudesch',
 	'coll-collections' => 'Cudeschs',
 	'coll-exclusion_category_title' => 'Excluder da la stampa',
@@ -8759,8 +8760,9 @@ $messages['rm'] = array(
 	'coll-couldnotremovearticle_title' => 'Impussibel dad allontanar la pagina da wiki',
 	'coll-couldnotremovearticle_msg' => 'La pagina da wiki na pudeva betg vegnir allontanada.',
 	'coll-noscript_text' => '<h1>Questa pagina basegna JavaScript!</h1>
-<strong>Tes navigatur na sustegna betg JavaScript u JavaScript è deactivà.
+<strong>Tes navigatur na sustegna betg JavaScript u che ti has deactivà JavaScript.
 Questa pagina na funcziuna betg correctamain fin che ti activeschas JavaScript.</strong>',
+	'coll-savedbook_template' => 'cudesch_memorisà',
 	'coll-your_book' => 'Tes cudesch',
 	'coll-download_title' => 'Telechargiar',
 	'coll-download_text' => 'Per telechargiar tes cudesch stos ti tscherner in format e cliccar sin il buttun.',
@@ -8786,6 +8788,9 @@ Questa pagina na funcziuna betg correctamain fin che ti activeschas JavaScript.<
 	'coll-notitle_title' => 'Betg pussaivel dad eruir il titel da la pagina.',
 	'coll-post_failed_title' => "La dumonda da POST n'è betg reussida",
 	'coll-post_failed_msg' => "La dumonda da POST a $1 n'è betg reussida ($2).",
+	'coll-mwserve_failed_title' => 'Errur dal server per calcular graficas',
+	'coll-mwserve_failed_msg' => 'Ina errur è capitada sin il server per calcular graficas: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => "Resposta d'errur dal server",
 	'coll-empty_collection' => 'Cudesch vid',
 	'coll-revision' => 'Versiun: $1',
 	'coll-save_collection_title' => 'Memorisar e cundivider tes cudesch',
@@ -8810,9 +8815,26 @@ Vuls ti remplazzar tes cudesch actual, agiuntar cuntegn nov u interrumper da cha
 	'coll-limit_exceeded_title' => 'Il cudesch è memia grond',
 	'coll-limit_exceeded_text' => 'Tes cudesch è memia grond.
 I na pon betg vegnir agiuntadas ulteriuras paginas.',
+	'coll-rendering_title' => 'Calcular graficas',
+	'coll-rendering_text' => '<p><strong>Spetga durant ch\'il document vegn generà.</strong></p>
+
+<p><strong>Progress:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Questa pagina duess rechargiar automaticamain mintga per secundas. 
+Sche quai na funcziuna betg, clicca en tes navigatur il buttun per rechargiar.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(pagina wiki: $1)',
 	'coll-rendering_page' => '(pagina: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Infurmaziuns davart la calculaziun grafica da las paginas',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Infurmaziuns davart la calculaziun grafica da collecziuns',
+	'coll-rendering_finished_title' => 'Terminà la calculaziun grafica',
+	'coll-rendering_finished_text' => "<strong>La datoteca dal document è vegnida generada.</strong>
+<strong>[$1 Telechargiar la datoteca]</strong> sin tes computer.
+
+Remartga:
+* Betg cuntent cun il resultat? Legia [[{{MediaWiki:Coll-helppage}}|la pagina d'agid davart cudeschs]] per pussaivladads per optimar el.",
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Infurmaziuns davart la calculaziun grafica da las paginas',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Infurmaziuns davart la calculaziun grafica da collecziuns',
 	'coll-notfound_title' => 'Betg chattà il cudesch',
 	'coll-notfound_text' => 'Betg pussaivel da chattar la pagina dal cudesch.',
 	'coll-download_notfound_title' => 'Betg chattà la datoteca',
@@ -8820,6 +8842,10 @@ I na pon betg vegnir agiuntadas ulteriuras paginas.',
 Forsa è ella vegnida stizzada e sto vegnir regenerada.",
 	'coll-download_failed_title' => 'Errur durant telechargiar',
 	'coll-download_failed_text' => 'I ha dà ina errur durant telechargiar la datoteca: $1',
+	'coll-is_cached' => '<ul><li>En il cache è vegnida chattada ina versiun da quest document, pia n\'è nagina calculaziun grafica necessaria.
+<a href="$1">Sfurzar da recalcular la grafica.</a></li></ul>',
+	'coll-excluded-templates' => '* Models en la categoria [[:Category:$1|$1]] èn vegnids exclus.',
+	'coll-blacklisted-templates' => '* Models sin la glista naira [[:$1]] èn vegnids exclus.',
 	'coll-return_to_collection' => '<p>Turnar a <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Empustar sco cudesch stampà',
 	'coll-book_text' => 'Empustar in cudesch stampà tar noss partenari per la stampa sin dumonda.',
@@ -8832,6 +8858,7 @@ Contactescha tes administratur da MediaWiki.",
 	'coll-return_to' => 'Turnar a [[:$1]]',
 	'coll-more_info' => 'Mussar ulteriuras infurmaziuns',
 	'coll-hide_info' => 'Zuppentar infurmaziuns',
+	'coll-order_info_article' => "{{MediaWiki:Coll-helppage}}/Infurmaziuns per l'empustaziun tar PediaPress",
 	'coll-suggest_title' => 'Paginas proponidas per tes cudesch',
 	'coll-suggest_intro_text' => 'Las propostas sa basan sin ils artitgels actuals en tes cudesch.
 La glista vegn actualisada sche ti cliccas sin ils buttuns per agiuntar u allontanar.',
