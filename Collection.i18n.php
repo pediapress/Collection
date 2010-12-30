@@ -1655,6 +1655,7 @@ Spisak se ažurira kad god kliknete na dugme za dodavanje ili uklanjanje.',
 
 /** Catalan (Català)
  * @author Aleator
+ * @author El libre
  * @author Jordi Roqué
  * @author Martorell
  * @author Paucabot
@@ -1666,8 +1667,8 @@ $messages['ca'] = array(
 	'coll-desc' => '[[Special:Book|Crea llibres]]',
 	'coll-book_creator_intro' => "<big>Amb el ''mode llibre'', podeu crear un llibre format per les pàgines wiki que volgueu. Podeu exportar-lo en diferents formats (per exemple PDF o ODF) o  demanar una còpia impresa.</big>",
 	'coll-manage_your_book' => 'Gestioneu la vostra biblioteca',
-	'coll-book_creator_help' => "Vegeu [[{{MediaWiki:Coll-helppage}}|la pàgina d'ajuda dels llibres]] per més informació.",
-	'coll-start_book_creator' => 'Inicia el mode llibre',
+	'coll-book_creator_help' => "Veure [[{{MediaWiki:Coll-helppage}}|la pàgina d'ajuda sobre els llibres]] per més informació.",
+	'coll-start_book_creator' => 'Inicia el creador de llibres',
 	'coll-book_creator_continue' => 'Continua utilitzant el creador de llibres',
 	'coll-book_creator_disable_text' => "Es desactivarà el ''creador de llibres'' i s'esborrarà el llibre en el que esteu treballant",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Text en mode llibre',
@@ -12061,6 +12062,7 @@ $messages['yue'] = array(
  * @author Bencmq
  * @author Chenxiaoqino
  * @author Chenzw
+ * @author Hydra
  * @author Liangent
  * @author Wmr89502270
  * @author Xiaomingyan
@@ -12112,8 +12114,8 @@ $messages['zh-hans'] = array(
 	'coll-rename_chapter' => '请输入章节的新名称',
 	'coll-no_such_category' => '无本分类',
 	'coll-notitle_title' => '无法确定该页标题。',
-	'coll-post_failed_title' => '发送申请失败',
-	'coll-post_failed_msg' => '发送至$1的申请失败（原因为$2）。',
+	'coll-post_failed_title' => 'POST 请求失败',
+	'coll-post_failed_msg' => '到$1的 POST 请求失败（$2）。',
 	'coll-mwserve_failed_title' => '生成服务器出错',
 	'coll-mwserve_failed_msg' => '渲染服务器出错：<nowiki>$1</nowiki>',
 	'coll-error_reponse' => '来自服务器的错误响应',
