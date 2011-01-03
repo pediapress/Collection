@@ -9381,7 +9381,7 @@ $messages['rue'] = array(
 	'coll-rendering_finished_text' => '<strong>Файл з документом быв створеный.</strong>
 Можете собі го <strong>[$1 скачати до свого компютера]</strong>.
 
-Познамкы:
+Позначкы:
 * Не сьте спокійны з резултатом? Попозерайте ся на [[{{MediaWiki:Coll-helppage}}|сторінку помочі ку колекціям]], як го вылїпшыти.',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Інформація про выкреслёваня сторінкы',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Інформація про выкреслёваня колекції',
@@ -9390,7 +9390,7 @@ $messages['rue'] = array(
 	'coll-download_notfound_title' => 'Файл не найдженый',
 	'coll-download_notfound_text' => 'Файл, котрый ся намагаєте скачати, не єствує. Може быв змазаный і є треба го знову створити.',
 	'coll-download_failed_title' => 'Хыба почас скачаня',
-	'coll-download_failed_text' => 'Почас скачаня дайлу дішло ку хыби: $1',
+	'coll-download_failed_text' => 'Почас скачаня файлу дішло ку хыбі: $1',
 	'coll-is_cached' => '<ul><li>Была найджена кешована верзія того документу, также не было треба выкреслёвати. <a href="$1">Вынутити нове выкреслїня.</a></li></ul>',
 	'coll-excluded-templates' => '* Шаблоны в катеґорії [[:Category:$1|$1]] были выключены.',
 	'coll-blacklisted-templates' => '* Шаблоны в чорному списку [[:$1]] были выключены.',
