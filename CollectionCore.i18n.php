@@ -2934,6 +2934,7 @@ $messages['sl'] = array(
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Nikola Smolenski
+ * @author Rancher
  * @author Јованвб
  * @author Михајло Анђелковић
  */
@@ -2956,7 +2957,7 @@ $messages['sr-ec'] = array(
 	'coll-helppage' => 'Help:Књиге',
 	'coll-load_collection' => 'Учитај књигу',
 	'coll-load_collection_tooltip' => 'Учитава ову књигу као вашу тренутну књигу',
-	'coll-n_pages' => '{{PLURAL:$1|једна страна|$1 стране|$1 страна}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|страна|стране|страна}}',
 	'coll-printable_version_pdf' => 'PDF верзија',
 	'coll-remove_page_tooltip' => 'Уклања тренутну вики страницу из ваше књиге',
 	'coll-show_collection' => 'Прикажи књигу',
