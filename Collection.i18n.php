@@ -9923,6 +9923,7 @@ Seznam je posodobljen, ko kliknete na gumbe za dodajanje ali odstranjevanje.',
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Nikola Smolenski
+ * @author Rancher
  * @author Sasa Stefanovic
  * @author Јованвб
  * @author Жељко Тодоровић
@@ -9968,7 +9969,7 @@ $messages['sr-ec'] = array(
 	'coll-contents' => 'Садржај',
 	'coll-drag_and_drop' => 'Можете прераспоредити вики странице и поглавља превлачивши их',
 	'coll-create_chapter' => 'Направи поглавље',
-	'coll-sort_alphabetically' => 'Поређај азбучно',
+	'coll-sort_alphabetically' => 'Поређај по азбучном реду',
 	'coll-rename' => 'Преименуј',
 	'coll-new_chapter' => 'Унесите име новог поглавља',
 	'coll-rename_chapter' => 'Унесите ново име поглавља',
@@ -9998,7 +9999,7 @@ $messages['sr-ec'] = array(
 Да ли желите да пребришете своју тренутну књигу, додате нови садржај, или поништите учитавање ове књиге?',
 	'coll-overwrite' => 'Пребриши',
 	'coll-append' => 'Надовежи',
-	'coll-cancel' => 'Прекини',
+	'coll-cancel' => 'Откажи',
 	'coll-update' => 'Апдејтуј',
 	'coll-limit_exceeded_title' => 'Књига је превелика',
 	'coll-limit_exceeded_text' => 'Ваша књига је превелика.
@@ -10051,7 +10052,7 @@ $messages['sr-ec'] = array(
 	'coll-suggest_show' => 'покажи',
 	'coll-suggest_ban_tooltip' => 'Уклони ову страну са списка предлога',
 	'coll-suggest_undo_tooltip' => 'Поништи ову акцију',
-	'coll-suggest_undo' => 'врати',
+	'coll-suggest_undo' => 'опозови',
 );
 
 /** Serbian Latin ekavian (Srpski (latinica))
