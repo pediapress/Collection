@@ -2721,6 +2721,7 @@ $messages['ee'] = array(
 /** Greek (Ελληνικά)
  * @author Consta
  * @author Crazymadlover
+ * @author Evropi
  * @author Geraki
  * @author Omnipaedista
  * @author ZaDiak
@@ -2750,10 +2751,10 @@ $messages['el'] = array(
 Αυτή η σελίδα δεν θα λειτουργεί κανονικά, εκτός και αν ενεργοποιηθεί η JavaScript.</strong>',
 	'coll-savedbook_template' => 'αποθηκευμένο_βιβλίο',
 	'coll-your_book' => 'Το βιβλίο σας',
-	'coll-download_title' => 'Κατέβασμα',
+	'coll-download_title' => 'Λήψη',
 	'coll-download_text' => 'Για να κατεβάσετε το βιβλίο σας επιλέξτε την μορφή και πατήστε το κουμπί.',
 	'coll-download_as_text' => 'Για να κατεβάσετε το βιβλίο σας σε μορφή $1 πατήστε το κουμπί.',
-	'coll-download' => 'Κατέβασμα',
+	'coll-download' => 'Λήψη',
 	'coll-format_label' => 'Μορφή:',
 	'coll-remove' => 'Αφαίρεση',
 	'coll-show' => 'Εμφάνιση',
