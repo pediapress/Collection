@@ -10,10 +10,8 @@ generate downloadable version in different formats (PDF, OpenDocument Text etc.)
 for article collections and single articles.
 
 The extension has been developed for and tested with MediaWiki_ version 1.14
-and later. Some features may not be avaialable with older MediaWikis or with
-MediaWikis that don't have the `MediaWiki API`_ enabled. One example is that
-MediaWikis < 1.13 don't have the capability to edit articles via API, thus
-saving of collections is disabled.
+and later. Some features may not be avaialable with older MediaWikis that
+don't have the `MediaWiki API`_ enabled.
 
 The extension is being developed under the GNU General Public License by
 `PediaPress GmbH`_ in close collaboration with `Wikimedia Foundation`_
@@ -211,26 +209,12 @@ Installation and Configuration of the Collection Extension
    that each article contains the name of the license and set $wgCollectionLicenseURL
    to an article that contains all needed licenses.
 
-* This step is only needed for MediaWiki version < 1.14:
-  Just before the line::
-
-    <div class="portlet" id="p-tb">
-
-  in your skin file (e.g. ``skins/MonoBook.php`` or ``skins/Modern.php``) insert
-  the following code::
-
-    <?php
-      if(isset($GLOBALS['wgSpecialPages']['Book'])) {
-         CollectionHooks::printPortlet();
-      }
-    ?>
-
 * If you want to let users save their collections as wiki pages, make sure
   $wgEnableWriteAPI is set to true, i.e. put this line in your LocalSettings.php::
 
     $wgEnableWriteAPI = true;
 
-  (This is the default for MediaWiki >= 1.14.).
+  (This is the default.)
 
   There are two MediaWiki rights that are checked, before users are allowed
   to save collections: To be able to save collection pages under the User
