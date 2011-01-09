@@ -446,13 +446,6 @@ if ( $t && $t->exists() ) {
 class CollectionSuggestTemplate extends QuickTemplate {
 	function execute () {
 ?>
-<script src="<?php echo htmlspecialchars( $GLOBALS['wgScriptPath'] . "/extensions/Collection/js/jquery.js?" . $GLOBALS['wgCollectionStyleVersion'] ) ?>" type="<?php echo $GLOBALS['wgJsMimeType']; ?>"></script>
-<script type="<?php echo $GLOBALS['wgJsMimeType']; ?>">
-/*<![CDATA[*/
-var collection_jQuery = jQuery.noConflict();
-/*]]>*/
-</script>
-<script src="<?php echo $GLOBALS['wgScriptPath'] . "/extensions/Collection/js/suggest.js?" . $GLOBALS['wgCollectionStyleVersion'] ?>" type="<?php echo $GLOBALS['wgJsMimeType']; ?>"></script>
 <div>
 	<?php $this->msg( 'coll-suggest_intro_text' ) ?>
 	<div id="collectionSuggestStatus" style="text-align: center; margin: 5px auto 10px auto; padding: 0 4px; border: 1px solid #ed9; background-color: #fea; visibility: hidden;">&#160;</div>

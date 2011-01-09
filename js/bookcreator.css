@@ -1,0 +1,40 @@
+#collectionpopup {
+	position: absolute;
+	padding: 4px;
+	border: 1px solid #000;
+	background-color: #fea;
+	z-index: 9999;
+	display: inline;
+	font-size: 10pt;
+}
+
+.collection-button {
+	float: left;
+	padding: 0 10px;
+	border: 1px solid #777;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+.collection-button.ok {
+	/* @embed */
+	background: url(../images/green-button-back.png) center no-repeat;
+	margin-right: 10px;
+}
+
+.collection-button.cancel {
+	/* @embed */
+	background: url(../images/red-button-back.png) center no-repeat;
+}
+
+.collection-button a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+	line-height: 1.8em;
+}
+
+.collection-button a:hover {
+	text-decoration: none;
+}

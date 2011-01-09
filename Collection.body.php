@@ -321,14 +321,7 @@ class SpecialCollection extends SpecialPage {
 		$imagepath = "$wgScriptPath/extensions/Collection/images";
 		$jspath = "$wgScriptPath/extensions/Collection/js";
 
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.js?" . 
-			"$wgCollectionStyleVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.json.js?" . 
-			"$wgCollectionStyleVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jstorage.js?" . 
-			"$wgCollectionStyleVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/check_load_from_localstorage.js?" .
-			"$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addModules( 'ext.collection.checkLoadFromLocalStorage' );
 
 		$coll = CollectionSession::getCollection();
 		$dialogtxt = wfMsg( 'coll-load_local_book' );
@@ -337,40 +330,6 @@ class SpecialCollection extends SpecialPage {
 			"<script type=\"$wgJsMimeType\">\n" . 
 			"var collection_dialogtxt = " . Xml::encodeJsVar( $dialogtxt ) . ";\n" .
 			"</script>" );
-
-		$wgOut->mScripts .= <<<EOS
-<style type="text/css">
-.collection-button {
-	float: left;
-	padding: 0 10px;
-	border: 1px solid #777;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-}
-
-.collection-button.ok {
-	background: url($imagepath/green-button-back.png) center no-repeat;
-	margin-right: 10px;
-}
-
-.collection-button.cancel {
-	background: url($imagepath/red-button-back.png) center no-repeat;
-}
-
-.collection-button a {
-	display: block;
-	color: #fff;
-	font-size: 1.1em;
-	font-weight: bold;
-	line-height: 1.8em;
-}
-
-.collection-button a:hover {
-	text-decoration: none;
-}
-</style>
-EOS
-		;
 
 		$title = Title::newFromText( $referer );
 		if ( is_null( $title ) || $title->equals( $wgTitle ) ) {
@@ -522,11 +481,7 @@ EOS
 
 		$this->setHeaders();
 		$wgOut->setPageTitle( wfMsg( 'coll-manage_your_book' ) );
-		$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.js?$wgCollectionStyleVersion\"></script>" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/jquery.ui.js?$wgCollectionStyleVersion\"></script>" );
-		$wgOut->addInlineScript( "var collection_jQuery = jQuery.noConflict();" );
-		$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$jspath/collection.js?$wgCollectionStyleVersion\"></script>" );
+		$wgOut->addModules( 'ext.collection' );
 
 		$template = new CollectionPageTemplate();
 		$template->set( 'collection', CollectionSession::getCollection() );
@@ -1101,10 +1056,7 @@ EOS
 			$wgOut->addInlineScript( 'var collection_id = "' . urlencode( $response['collection_id'] ) . '";' );
 			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer'] ) . '";' );
 			$wgOut->addInlineScript( 'var collection_rendering = true;' );
-			$wgOut->addInlineScript( "var wgCollectionVersion = \"$wgCollectionVersion\";" );
-			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/js/jquery.js?$wgCollectionStyleVersion\"></script>" );
-			$wgOut->addInlineScript( "var collection_jQuery = jQuery.noConflict();" );
-			$wgOut->addScript( "<script type=\"$wgJsMimeType\" src=\"$wgScriptPath/extensions/Collection/js/collection.js?$wgCollectionStyleVersion\"></script>" );
+			$wgOut->addModules( 'ext.collection' );
 			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
 
 			if ( isset( $response['status']['status'] ) && $response['status']['status'] ) {

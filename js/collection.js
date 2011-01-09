@@ -234,4 +234,4 @@ $(function() {
 	}
 });
 
-})(collection_jQuery);
+})(jQuery);
