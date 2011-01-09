@@ -23,14 +23,14 @@
 
 class CollectionHooks {
 	/**
-	 * Callback for hook SkinBuildSidebar (MediaWiki >= 1.14)
+	 * Callback for hook SkinBuildSidebar
 	 */
 	static function buildSidebar( $skin, &$bar ) {
 		global $wgUser;
 		global $wgCollectionPortletForLoggedInUsersOnly;
 
 		if ( !$wgCollectionPortletForLoggedInUsersOnly || $wgUser->isLoggedIn() ) {
-			$html = self::getPortlet();
+			$html = self::getPortlet( $skin );
 			if ( $html ) {
 				$bar[ 'coll-print_export' ] = $html;
 			}
@@ -50,40 +50,23 @@ class CollectionHooks {
 		}
 		return true;
 	}
-	
-	/**
-	 * This function is the fallback solution for MediaWiki < 1.14
-	 * (where the hook SkinBuildSidebar does not exist)
-	 */
-	static function printPortlet() {
-
-		$html = self::getPortlet();
-
-		if ( $html ) {
-			$portletTitle = wfMsg( 'coll-print_export' );
-			print "<div id=\"p-coll-print_export\" class=\"portlet\">
-	<h5>$portletTitle</h5>
-		<div class=\"pBody\">\n$html\n</div></div>";
-		}
-	}
 
 	/**
 	 * Return HTML-code to be inserted as portlet
 	 */
-	static function getPortlet() {
-		global $wgArticle;
+	static function getPortlet( $sk ) {
 		global $wgRequest;
-		global $wgTitle;
-		global $wgUser;
 		global $wgCollectionArticleNamespaces;
 		global $wgCollectionFormats;
 		global $wgCollectionPortletFormats;
 
-		if ( is_null( $wgTitle ) || !$wgTitle->exists() ) {
+		$title = $sk->getTitle();
+
+		if ( is_null( $title ) || !$title->exists() ) {
 			return;
 		}
 		
-		$namespace = $wgTitle->getNamespace();
+		$namespace = $title->getNamespace();
 
 		if ( !in_array( $namespace, $wgCollectionArticleNamespaces )
 			&& $namespace != NS_CATEGORY ) {
@@ -94,8 +77,6 @@ class CollectionHooks {
 		if ( $action != '' && $action != 'view' && $action != 'purge' ) {
 			return false;
 		}
-
-		$sk = $wgUser->getSkin();
 
 		$out = Xml::element( 'ul', array( 'id' => 'collectionPortletList' ), null );
 
@@ -109,7 +90,7 @@ class CollectionHooks {
 						'rel' => 'nofollow',
 						'title' => wfMsg( 'coll-create_a_book_tooltip' )
 					),
-					array( 'bookcmd' => 'book_creator', 'referer' => $wgTitle->getPrefixedText() ),
+					array( 'bookcmd' => 'book_creator', 'referer' => $title->getPrefixedText() ),
 					array( 'known', 'noclasses' )
 				)
 			);
@@ -123,7 +104,7 @@ class CollectionHooks {
 						'rel' => 'nofollow',
 						'title' => wfMsg( 'coll-book_creator_disable_tooltip' )
 					),
-					array( 'bookcmd' => 'stop_book_creator', 'referer' => $wgTitle->getPrefixedText() ),
+					array( 'bookcmd' => 'stop_book_creator', 'referer' => $title->getPrefixedText() ),
 					array( 'known', 'noclasses' )
 				)
 			);
@@ -131,16 +112,14 @@ class CollectionHooks {
 
 		$params = array(
 			'bookcmd' => 'render_article',
-			'arttitle' => $wgTitle->getPrefixedText(),
+			'arttitle' => $title->getPrefixedText(),
 		);
 
-		if ( $wgArticle ) {
-			$oldid = $wgArticle->getOldID();
-			if ( $oldid ) {
-				$params['oldid'] = $oldid;
-			} else {
-				$params['oldid'] = $wgArticle->getLatest();
-			}
+		$oldid = $wgRequest->getVal( 'oldid' );
+		if ( $oldid ) {
+			$params['oldid'] = $oldid;
+		} else {
+			$params['oldid'] = $title->getLatestRevID();
 		}
 
 		foreach ( $wgCollectionPortletFormats as $writer ) {
@@ -161,7 +140,6 @@ class CollectionHooks {
 		}
 
 		// Move the 'printable' link into our section for consistency
-		$action = $wgRequest->getVal( 'action', 'view' );
 		if ( $action == 'view' || $action == 'purge' ) {
 			global $wgOut;
 			if ( !$wgOut->isPrintable() ) {
@@ -232,24 +210,21 @@ class CollectionHooks {
 	}
 
 	static function renderBookCreatorBox( $mode = '' ) {
-		global $wgArticle;
 		global $wgCollectionStyleVersion;
 		global $wgJsMimeType;
 		global $wgOut;
 		global $wgScriptPath;
 		global $wgTitle;
 		global $wgUser;
+		global $wgRequest;
 
 		$sk = $wgUser->getSkin();
 		$jsPath = "$wgScriptPath/extensions/Collection/js";
 		$imagePath = "$wgScriptPath/extensions/Collection/images";
 		$ptext = $wgTitle->getPrefixedText();
-		$oldid = 0;
-		if ( !is_null( $wgArticle ) ) {
-			$oldid = $wgArticle->getOldID();
-			if ( !$oldid  || $oldid == $wgArticle->getLatest() ) {
-				$oldid = 0;
-			}
+		$oldid = $wgRequest->getVal( 'oldid', 0 );
+		if ( $oldid == $wgTitle->getLatestRevID() ) {
+			$oldid = 0;
 		}
 
 		$wgOut->addModules( 'ext.collection.bookcreator' );
