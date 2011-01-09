@@ -154,9 +154,42 @@ $wgHooks['SkinTemplateBuildNavUrlsNav_urlsAfterPermalink'][] = 'CollectionHooks:
 $wgHooks['SkinBuildSidebar'][] = 'CollectionHooks::buildSidebar';
 $wgHooks['SiteNoticeAfter'][] = 'CollectionHooks::siteNoticeAfter';
 $wgHooks['OutputPageCheckLastModified'][] = 'CollectionHooks::checkLastModified';
+$wgHooks['ResourceLoaderGetConfigVars'][] = 'CollectionHooks::resourceLoaderGetConfigVars';
 
 $wgAvailableRights[] = 'collectionsaveasuserpage';
 $wgAvailableRights[] = 'collectionsaveascommunitypage';
+
+$collResourceTemplate = array(
+	'localBasePath' => "$dir/js",
+	'remoteExtPath' => 'Collection/js'
+);
+
+$wgResourceModules += array(
+	'ext.collection.jquery.json' => $collResourceTemplate + array(
+		'scripts' => 'jquery.json.js'
+	),
+	'ext.collection.jquery.jstorage' => $collResourceTemplate + array(
+		'scripts' => 'jstorage.js',
+		'dependencies' => 'ext.collection.jquery.json'
+	),
+	'ext.collection.suggest' => $collResourceTemplate + array(
+		'scripts' => 'suggest.js',
+		'dependencies' => 'ext.collection.bookcreator'
+	),
+	'ext.collection' => $collResourceTemplate + array(
+		'scripts' => 'collection.js',
+		'dependencies' => array( 'ext.collection.bookcreator', 'jquery.ui.sortable' ),
+	),
+	'ext.collection.bookcreator' => $collResourceTemplate + array(
+		'scripts' => 'bookcreator.js',
+		'styles' => 'bookcreator.css',
+		'dependencies' => 'ext.collection.jquery.jstorage'
+	),
+	'ext.collection.checkLoadFromLocalStorage' => $collResourceTemplate + array(
+		'scripts' => 'check_load_from_localstorage.js',
+		'dependencies' => 'ext.collection.jquery.jstorage'
+	)
+);
 
 # register global Ajax functions:
 

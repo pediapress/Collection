@@ -39,5 +39,5 @@ function collectionSuggestCall(func, args) {
 
 window.collectionSuggestCall = collectionSuggestCall;
 
-})(collection_jQuery);
+})(jQuery);
 

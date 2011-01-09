@@ -252,56 +252,11 @@ class CollectionHooks {
 			}
 		}
 
-		$html = Xml::element( 'script',
-			array(
-				'type' => $wgJsMimeType,
-				'src' => "$jsPath/jquery.js?$wgCollectionStyleVersion",
-			),
-			'', false
-		);
-
-		$html .= Xml::element( 'script',
-			array(
-				'type' => $wgJsMimeType,
-				'src' => "$jsPath/jquery.json.js?$wgCollectionStyleVersion",
-			),
-			'', false
-		);
-
-		$html .= Xml::element( 'script',
-			array(
-				'type' => $wgJsMimeType,
-				'src' => "$jsPath/jstorage.js?$wgCollectionStyleVersion",
-			),
-			'', false
-		);
-
-		$html .= Xml::element( 'script',
-			array(
-				'type' => $wgJsMimeType,
-				'src' => "$jsPath/bookcreator.js?$wgCollectionStyleVersion",
-			),
-			'', false
-		);
-		$html .= Xml::element( 'style',
-			array( 'type' => 'text/css' ),
-			<<<EOS
-#collectionpopup {
-	position: absolute;
-	padding: 4px;
-	border: 1px solid #000;
-	background-color: #fea;
-	z-index: 9999;
-	display: inline;
-	font-size: 10pt;
-}
-EOS
-			, false
-		);
+		$wgOut->addModules( 'ext.collection.bookcreator' );
 		
 		$addRemoveState = $mode;
 
-		$html .= Xml::element( 'div',
+		$html = Xml::element( 'div',
 			array( 'style' => wfMsg( 'coll-book_creator_box_style' ) ),
 			null
 		);
@@ -561,6 +516,14 @@ EOS
 		if ( CollectionSession::hasSession() ) {
 			$modifiedTimes['collection'] = $_SESSION['wsCollection']['timestamp'];
 		}
+		return true;
+	}
+	
+	/**
+	 * ResourceLoaderGetConfigVars hook
+	 */
+	static function resourceLoaderGetConfigVars( &$vars ) {
+		$vars['wgCollectionVersion'] = $GLOBALS['wgCollectionVersion'];
 		return true;
 	}
 }

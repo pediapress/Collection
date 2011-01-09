@@ -66,6 +66,7 @@ class CollectionSuggest {
 
 		$template = self::getCollectionSuggestTemplate( $mode, $param );
 		$wgOut->setPageTitle( wfMsg( 'coll-suggest_title' ) );
+		$wgOut->addModules( 'ext.collection.suggest' );
 		$wgOut->addTemplate( $template );
 	}
 
