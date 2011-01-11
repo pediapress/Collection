@@ -315,17 +315,10 @@ class CollectionHooks {
 	}
 
 	static function getBookCreatorBoxAddRemoveLink( $sk, $imagePath, $ajaxHint, $oldid ) {
-		global $wgArticle, $wgTitle;
+		global $wgTitle;
 
 		$namespace = $wgTitle->getNamespace();
 		$ptext = $wgTitle->getPrefixedText();
-
-		if ( is_null( $oldid ) && !is_null( $wgArticle ) ) {
-			$oldid = $wgArticle->getOldID();
-			if ( !$oldid  || $oldid == $wgArticle->getLatest() ) {
-				$oldid = 0;
-			}
-		}
 
 		if ( $ajaxHint == 'suggest' || $ajaxHint == 'showbook' ) {
 			return Xml::tags( 'span',
