@@ -1798,6 +1798,17 @@ La llista s'actualitza cada vegada que feu clic als botons d'afegir o treure.",
 	'right-collectionsaveascommunitypage' => 'Desa els llibres com una pàgina de la comunitat',
 );
 
+/** Chechen (Нохчийн)
+ * @author Sasan700
+ */
+$messages['ce'] = array(
+	'coll-collections' => 'Жайнаш',
+	'coll-couldnotaddarticle_msg' => 'Хlара яззам чутоьхна хила цамега.',
+	'coll-couldnotremovearticle_msg' => 'Хlара яззам дlабайина хила цамега.',
+	'coll-no_such_category' => 'Ишта кадегар яц',
+	'coll-rendering_article' => '(яззам: $1)',
+);
+
 /** Czech (Česky)
  * @author Danny B.
  * @author Li-sung
@@ -9922,7 +9933,7 @@ Seznam je posodobljen, ko kliknete na gumbe za dodajanje ali odstranjevanje.',
 	'right-collectionsaveascommunitypage' => 'Shranjevanje knjig kot strani občestva',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Nikola Smolenski
  * @author Rancher
  * @author Sasa Stefanovic
@@ -10053,11 +10064,12 @@ $messages['sr-ec'] = array(
 	'coll-suggest_show' => 'покажи',
 	'coll-suggest_ban_tooltip' => 'Уклони ову страну са списка предлога',
 	'coll-suggest_undo_tooltip' => 'Поништи ову акцију',
-	'coll-suggest_undo' => 'опозови',
+	'coll-suggest_undo' => 'поништи',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
+ * @author Жељко Тодоровић
  * @author Михајло Анђелковић
  */
 $messages['sr-el'] = array(
@@ -10182,7 +10194,7 @@ Molim kontaktirajte svog MedijaViki administratora.',
 	'coll-suggest_show' => 'pokaži',
 	'coll-suggest_ban_tooltip' => 'Ukloni ovu stranu sa spiska predloga',
 	'coll-suggest_undo_tooltip' => 'Poništi ovu akciju',
-	'coll-suggest_undo' => 'vrati',
+	'coll-suggest_undo' => 'poništi',
 );
 
 /** Seeltersk (Seeltersk)
