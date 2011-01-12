@@ -577,6 +577,13 @@ $messages['ca'] = array(
 	'coll-suggest_empty' => 'buit',
 );
 
+/** Chechen (Нохчийн)
+ * @author Sasan700
+ */
+$messages['ce'] = array(
+	'coll-bookscategory' => 'Жайнаш',
+);
+
 /** Czech (Česky)
  * @author Danny B.
  * @author Matěj Grabovský
