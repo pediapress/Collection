@@ -2939,10 +2939,11 @@ $messages['sl'] = array(
 	'coll-suggest_empty' => 'prazno',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Nikola Smolenski
  * @author Rancher
  * @author Јованвб
+ * @author Жељко Тодоровић
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
@@ -2964,7 +2965,7 @@ $messages['sr-ec'] = array(
 	'coll-helppage' => 'Help:Књиге',
 	'coll-load_collection' => 'Учитај књигу',
 	'coll-load_collection_tooltip' => 'Учитава ову књигу као вашу тренутну књигу',
-	'coll-n_pages' => '$1 {{PLURAL:$1|страна|стране|страна}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|страница|странице|страница}}',
 	'coll-printable_version_pdf' => 'PDF верзија',
 	'coll-remove_page_tooltip' => 'Уклања тренутну вики страницу из ваше књиге',
 	'coll-show_collection' => 'Прикажи књигу',
@@ -2972,8 +2973,9 @@ $messages['sr-ec'] = array(
 	'coll-suggest_empty' => 'празно',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
+ * @author Жељко Тодоровић
  */
 $messages['sr-el'] = array(
 	'coll-print_export' => 'Štampaj/izvezi',
@@ -2994,7 +2996,7 @@ $messages['sr-el'] = array(
 	'coll-helppage' => 'Pomoć:Knjige',
 	'coll-load_collection' => 'Učitaj knjigu',
 	'coll-load_collection_tooltip' => 'Učitava ovu knjigu kao vašu trenutnu knjigu',
-	'coll-n_pages' => '{{PLURAL:$1|jedna strana|$1 strane|$1 strana}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|stranica|stranice|stranica}}',
 	'coll-printable_version_pdf' => 'PDF verzija',
 	'coll-remove_page_tooltip' => 'Uklanja trenutnu viki stranicu iz vaše knjige',
 	'coll-show_collection' => 'Prikaži knjigu',

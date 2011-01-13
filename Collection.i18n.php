@@ -4924,6 +4924,14 @@ Lisćina aktualizuje so, hdyžkuli kliknješ na tłóčatko "přidać" abo "wots
 	'right-collectionsaveascommunitypage' => 'Knihi jako stronu zhromadźenstwa składować',
 );
 
+/** Haitian (Kreyòl ayisyen)
+ * @author Boukman
+ */
+$messages['ht'] = array(
+	'coll-suggest_undo_tooltip' => 'Defè aksyon sa a',
+	'coll-suggest_undo' => 'Defè',
+);
+
 /** Hungarian (Magyar)
  * @author Bdamokos
  * @author Dani
@@ -10056,7 +10064,7 @@ $messages['sr-ec'] = array(
 	'coll-hide_info' => 'Склони информације',
 	'coll-suggest_title' => 'Стране предложене за вашу књигу',
 	'coll-suggested_articles' => 'Предлози',
-	'coll-suggest_reset_bans' => 'ресетуј',
+	'coll-suggest_reset_bans' => 'поништи',
 	'coll-suggest_reset_bans_tooltip' => 'Прикажи скоро уклоњене предлоге',
 	'coll-suggest_add_selected' => 'Додај означене стране',
 	'coll-suggest_ban_selected' => 'Уклони одабране стране',
