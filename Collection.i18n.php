@@ -10020,7 +10020,7 @@ $messages['sr-ec'] = array(
 	'coll-overwrite' => 'Пребриши',
 	'coll-append' => 'Надовежи',
 	'coll-cancel' => 'Откажи',
-	'coll-update' => 'Апдејтуј',
+	'coll-update' => 'Ажурирај',
 	'coll-limit_exceeded_title' => 'Књига је превелика',
 	'coll-limit_exceeded_text' => 'Ваша књига је превелика.
 
