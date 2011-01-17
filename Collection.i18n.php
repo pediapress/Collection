@@ -971,10 +971,11 @@ $messages['be'] = array(
 	'coll-license' => 'Ліцэнзія',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
+ * @author Wizardist
  * @author Zedlik
  */
 $messages['be-tarask'] = array(
@@ -1048,7 +1049,7 @@ $messages['be-tarask'] = array(
 Вы жадаеце перазапісаць Вашу цяперашнюю кнігу, дадаць новы зьмест альбо адмяніць загрузку гэтай кнігі?',
 	'coll-overwrite' => 'Перазапісаць',
 	'coll-append' => 'Дадаць',
-	'coll-cancel' => 'Адмяніць',
+	'coll-cancel' => 'Скасаваць',
 	'coll-update' => 'Абнавіць',
 	'coll-limit_exceeded_title' => 'Кніга занадта вялікая',
 	'coll-limit_exceeded_text' => 'Ваша кніга занадта вялікая.
@@ -8453,6 +8454,7 @@ $messages['ps'] = array(
  * @author 555
  * @author Giro720
  * @author Hamilton Abreu
+ * @author Helder.wiki
  * @author Heldergeovane
  * @author Lijealso
  * @author Luckas Blade
@@ -8509,8 +8511,8 @@ Esta página não funcionará correctamente sem o JavaScript.</strong>',
 	'coll-notitle_title' => 'Não foi possível determinar o título da página.',
 	'coll-post_failed_title' => 'Pedido POST falhou',
 	'coll-post_failed_msg' => 'O pedido POST feito a $1 falhou ($2).',
-	'coll-mwserve_failed_title' => 'Erro no servidor de composição de imagem',
-	'coll-mwserve_failed_msg' => 'Ocorreu um erro no servidor de composição de imagem: <nowiki>$1</nowiki>',
+	'coll-mwserve_failed_title' => 'Erro no servidor de composição do ficheiro',
+	'coll-mwserve_failed_msg' => 'Ocorreu um erro no servidor de composição do ficheiro: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Resposta de erro do servidor',
 	'coll-empty_collection' => 'Livro vazio',
 	'coll-revision' => 'Revisão: $1',
@@ -12234,6 +12236,7 @@ $messages['zh-hans'] = array(
  * @author Alexsh
  * @author FireJackey
  * @author Liangent
+ * @author Mark85296341
  * @author Skjackey tse
  * @author Wmr89502270
  * @author Wong128hk
@@ -12270,7 +12273,7 @@ $messages['zh-hant'] = array(
 	'coll-download' => '下載',
 	'coll-format_label' => '格式：',
 	'coll-remove' => '移除',
-	'coll-show' => '展開',
+	'coll-show' => '顯示',
 	'coll-move_to_top' => '移至最頂端',
 	'coll-move_up' => '向上移動',
 	'coll-move_down' => '向下移動',
@@ -12366,9 +12369,9 @@ $messages['zh-hant'] = array(
 	'coll-suggest_your_book' => '你的書',
 	'coll-suggest_show' => '顯示',
 	'coll-suggest_ban_tooltip' => '從建議中移除此頁',
-	'coll-suggest_article_ban' => '頁面<strong>$1</strong>已經從建議$2中移除。',
-	'coll-suggest_article_add' => '頁面<strong>$1</strong>已經被加入您的圖書（$2）。',
-	'coll-suggest_article_remove' => '頁面<strong>$1</strong>已經從您的圖書中移除（$2）。',
+	'coll-suggest_article_ban' => '頁面 <strong>$1</strong> 已經從建議 $2 中移除。',
+	'coll-suggest_article_add' => '頁面 <strong>$1</strong> 已經被加入您的圖書（$2）。',
+	'coll-suggest_article_remove' => '頁面 <strong>$1</strong> 已經從您的圖書中移除（$2）。',
 	'coll-suggest_undo_tooltip' => '撤銷這個動作',
 	'coll-suggest_undo' => '撤銷',
 	'coll-load_local_book' => '點擊OK來繼續操作你的書籍《%TITLE%》（共%NUMPAGES%頁）。 點擊Cancel清空並從零開始。',
