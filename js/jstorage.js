@@ -137,7 +137,7 @@
 					// If userData is used as the storage engine, additional
 					if(this._storage_elm){
 						try{
-							this._storage_elm.setAttribute("jStorage",this._storage_service.jStorage)
+							this._storage_elm.setAttribute("jStorage",this._storage_service.jStorage);
 							this._storage_elm.save("jStorage");
 						}catch(E){/* probably cache is full, nothing is saved this way*/}
 					}
@@ -206,7 +206,7 @@
 				this._save();
 				return true;
 			}
-		}
+		};
 	// load saved data from browser
 	$.jStorage._init();
 })(typeof jQuery != "undefined" && jQuery || $);
