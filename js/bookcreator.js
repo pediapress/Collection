@@ -170,6 +170,7 @@ $(function() {
 		+ '[title!=]' // title attribute is not empty
 		+ '[rel!=nofollow]'
 		+ ':not(.external)'
+		+ ':not(.internal)'
 		+ ':not(.sortheader)'
 		+ ':not([accesskey])'
 		+ ':not(.nopopup)'
