@@ -434,9 +434,6 @@ if ( $t && $t->exists() ) {
 	}
 }
 
-?>
-
-<?php
 /*
  * Template for suggest feature
  * 
