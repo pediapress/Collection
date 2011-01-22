@@ -6945,7 +6945,7 @@ $messages['mk'] = array(
 	'coll-license' => 'Лиценца',
 	'coll-return_to' => 'Врати се на [[:$1]]',
 	'coll-more_info' => 'Прикажи повеќе информации',
-	'coll-hide_info' => 'Сокриј ги информациите',
+	'coll-hide_info' => 'Скриј ги информациите',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Информации за порачувањето од PediaPress',
 	'coll-suggest_title' => 'Предложени страници за вашата книга',
 	'coll-suggest_intro_text' => 'Предлозите се засновани на тековниот збир од вики-страници во вашата книга.
@@ -10079,6 +10079,7 @@ $messages['sr-ec'] = array(
 
 /** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
+ * @author Rancher
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
  */
@@ -10151,7 +10152,7 @@ Da li želite da bude prebrisana vašom knjigom?',
 Da li želite da prebrišete svoju trenutnu knjigu, dodate novi sadržaj, ili poništite učitavanje ove knjige?',
 	'coll-overwrite' => 'Prebriši',
 	'coll-append' => 'Nadoveži',
-	'coll-cancel' => 'Prekini',
+	'coll-cancel' => 'Otkaži',
 	'coll-update' => 'Apdejtuj',
 	'coll-limit_exceeded_title' => 'Knjiga je prevelika',
 	'coll-limit_exceeded_text' => 'Vaša knjiga je prevelika.
@@ -12340,7 +12341,7 @@ $messages['zh-hant'] = array(
 	'coll-finished_collection_info_text_article' => ' {{MediaWiki:Coll-helppage}}/渲染收集信息文字',
 	'coll-notfound_title' => '找不到圖書',
 	'coll-notfound_text' => '未找到。',
-	'coll-download_notfound_title' => '找不到文件',
+	'coll-download_notfound_title' => '找不到檔案',
 	'coll-download_notfound_text' => '您正在嘗試下載的文件不存在：可能已被刪除並需要重新產生文件',
 	'coll-download_failed_title' => '下載發生錯誤',
 	'coll-download_failed_text' => '下載文件中出現錯誤：$1',
