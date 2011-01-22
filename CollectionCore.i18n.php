@@ -249,7 +249,7 @@ $messages['ast'] = array(
 	'coll-show_collection' => 'Amosar coleición',
 );
 
-/** Bashkir (Башҡорт)
+/** Bashkir (Башҡортса)
  * @author Assele
  * @author Haqmar
  */
@@ -337,7 +337,7 @@ $messages['be'] = array(
 	'coll-help' => 'Даведка',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -747,7 +747,7 @@ $messages['de'] = array(
 	'coll-suggest_empty' => 'leer',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Dst
  * @author MichaelFrey
  * @author Umherirrender
@@ -2561,6 +2561,7 @@ $messages['pt'] = array(
 /** Brazilian Portuguese (Português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
+ * @author Helder.wiki
  * @author Heldergeovane
  * @author Jorge Morais
  * @author Luckas Blade
