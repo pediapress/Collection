@@ -1917,6 +1917,14 @@ $messages['ksh'] = array(
 	'coll-suggest_empty' => 'leddisch',
 );
 
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'coll-help' => 'Alîkarî',
+	'coll-printable_version_pdf' => 'Verzîyona PDF',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
