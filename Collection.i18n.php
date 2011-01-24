@@ -1097,7 +1097,7 @@ $messages['be-tarask'] = array(
 	'coll-hide_info' => 'Схаваць інфармацыю',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Інфармацыя пра заказ у PediaPress',
 	'coll-suggest_title' => 'Прапанаваныя старонкі для Вашай кнігі',
-	'coll-suggest_intro_text' => 'Прапановы заснаваныя на цяперашніх устаноўках вікі-старонак у Вашай кнізе.
+	'coll-suggest_intro_text' => 'Прапановы заснаваныя на цяперашніх наладах вікі-старонак у Вашай кнізе.
 Сьпіс будзе абноўлены, калі б Вы не націснулі на кнопкі дадаць альбо выдаліць.',
 	'coll-suggested_articles' => 'Прапановы',
 	'coll-suggest_reset_bans' => 'скінуць',
@@ -6458,6 +6458,14 @@ Di Leß weed neu opjebout, wann De op dä „Dobei donn“ udder dä „{{int:co
 	'coll-load_local_book' => 'Donn {{int:xxxxxxxxxxxx}} ußwähle, öm met Dingem Booch mem Naame %TITLE% un %NUMPAGES% Wikisigge dren wigger ze maache, Donn {{int:xxxxxxxxxxxx}} ußwähle, för et fott ze schmiiße un met enem läddijje Booch neu aanzefange.',
 	'right-collectionsaveasuserpage' => 'E Boch als enem Metmaacher sing Sigg avspeichere',
 	'right-collectionsaveascommunitypage' => 'E Boch als en Jemeinschaffß_Sigg avspeichere',
+);
+
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'coll-collection' => 'Pirtûk',
+	'coll-title' => 'Sernav:',
 );
 
 /** Cornish (Kernowek)
