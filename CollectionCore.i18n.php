@@ -582,6 +582,7 @@ $messages['ca'] = array(
  */
 $messages['ce'] = array(
 	'coll-bookscategory' => 'Жайнаш',
+	'coll-help' => 'Нисвохаам',
 );
 
 /** Czech (Česky)
@@ -1922,7 +1923,7 @@ $messages['ksh'] = array(
  */
 $messages['ku-latn'] = array(
 	'coll-help' => 'Alîkarî',
-	'coll-printable_version_pdf' => 'Verzîyona PDF',
+	'coll-printable_version_pdf' => 'Versiyona PDF',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
