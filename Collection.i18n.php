@@ -3737,10 +3737,11 @@ Lista päivittyy aina kun napsautat lisää- tai poista-painikkeita.',
  * @author Peter17
  * @author PieRRoMaN
  * @author Verdy p
+ * @author Zetud
  */
 $messages['fr'] = array(
 	'coll-desc' => 'Permet de [[Special:Book|créer des livres]]',
-	'coll-book_creator_intro' => "<big>Avec le ''créateur de livres'' vous pouvez créer un livre contenant les pages du wiki de votre choix. Vous pouvez exporter le livre dans différents formats (par exemple PDF ou ODF) ou en commander une copie imprimée.</big>",
+	'coll-book_creator_intro' => "<big>Avec le ''créateur de livres'', vous pouvez créer un livre contenant les pages du wiki de votre choix. Vous pouvez exporter le livre dans différents formats (par exemple PDF ou ODF) ou en commander une copie imprimée.</big>",
 	'coll-manage_your_book' => 'Gérer votre livre',
 	'coll-book_creator_help' => 'Consultez [[{{MediaWiki:Coll-helppage}}|la page d’aide sur les livres]] pour plus d’informations.',
 	'coll-start_book_creator' => 'Démarrer le créateur de livres',
