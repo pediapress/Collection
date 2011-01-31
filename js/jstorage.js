@@ -94,7 +94,7 @@
 				}
 				/* Check if browser supports userData behavior */
 				else{
-					this._storage_elm = document.createElement('link')
+					this._storage_elm = document.createElement('link');
 					if("addBehavior" in this._storage_elm){
 
 						/* Use a DOM element to act as userData storage */
