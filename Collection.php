@@ -368,7 +368,9 @@ function wfAjaxCollectionGetPopupData( $title ) {
 	if ( $t->isRedirect() ) {
 		$a = new Article( $t, 0 );
 		$t = $a->followRedirect();
-		$title = $t->getPrefixedText();
+		if ( $t instanceof Title ) {
+			$title = $t->getPrefixedText();
+		}
 	}
 	if ( CollectionSession::findArticle( $title ) == - 1 ) {
 		$result['action'] = 'add';
