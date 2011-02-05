@@ -8915,6 +8915,7 @@ La glista vegn actualisada sche ti cliccas sin ils buttuns per agiuntar u allont
 
 /** Romanian (Română)
  * @author Cin
+ * @author Danutz
  * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Minisarm
@@ -8962,7 +8963,7 @@ Această pagină nu va putea fi corect încărcată atâta timp cât JavaScript 
 	'coll-drag_and_drop' => "Folosiți funcția ''tragere și plasare'' pentru a ordona paginile și capitolele.",
 	'coll-create_chapter' => 'Creează capitol',
 	'coll-sort_alphabetically' => 'Ordonează alfabetic',
-	'coll-rename' => 'Redenumește',
+	'coll-rename' => 'Redenumire',
 	'coll-new_chapter' => 'Introduceți numele noului capitol',
 	'coll-rename_chapter' => 'Introduceți noul nume pentru capitol',
 	'coll-no_such_category' => 'Nu există o asemenea categorie',
