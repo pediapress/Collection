@@ -1325,11 +1325,12 @@ $messages['gv'] = array(
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  * @author Rotemliss
  * @author YaronSh
  */
 $messages['he'] = array(
-	'coll-print_export' => 'הדפסה/ייצוא',
+	'coll-print_export' => 'הדפסה/יצוא',
 	'coll-create_a_book' => 'יצירת ספר',
 	'coll-create_a_book_tooltip' => 'יצירת ספר או אוסף דפים',
 	'coll-book_creator' => 'מצב ספר',
