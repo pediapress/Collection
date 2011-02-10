@@ -1800,13 +1800,21 @@ $messages['ka'] = array(
 $messages['km'] = array(
 	'coll-print_export' => 'បោះពុម្ព​/នាំចេញ​',
 	'coll-create_a_book' => 'បង្កើតសៀវភៅ​',
+	'coll-create_a_book_tooltip' => 'បង្កើតសៀវភៅឬកំរងទំព័រ',
+	'coll-book_creator' => 'ឧបករណ៍បង្កើតសៀវភៅ',
 	'coll-download_as' => 'ទាញយកជា $1',
+	'coll-download_as_tooltip' => 'ទាញយកទំរង់ $1 របស់ទំព័រវិគីនេះ',
+	'coll-disable' => 'មិនប្រើ',
+	'coll-book_creator_disable' => 'មិនប្រើឧបករណ៍បង្កើតសៀវភៅ',
+	'coll-book_creator_disable_tooltip' => 'ឈប់ប្រើឧបករណ៍បង្កើតសៀវភៅ',
+	'coll-add_linked_article' => 'បន្ថែមទំព័រវិគីដែលទាក់ទិនចូលទៅក្នុងសៀវភៅរបស់អ្នក',
+	'coll-remove_linked_article' => 'ដកទំព័រវិគីដែលទាក់ទិនចេញពីសៀវភៅរបស់អ្នក',
 	'coll-add_category' => 'បន្ថែមចំណាត់ថ្នាក់ក្រុមនេះដល់សៀវភៅរបស់អ្នក',
 	'coll-add_category_tooltip' => 'បន្ថែម​ទំព័រ​វិគី​ទាំងអស់​ក្នុង​ចំណាត់ថ្នាក់ក្រុម​នេះទៅ​ក្នុង​សៀវភៅ​របស់​អ្នក​​',
 	'coll-add_this_page' => 'បន្ថែម​ទំព័រនេះ​ទៅក្នុង​សៀវភៅ​របស់អ្នក​',
 	'coll-add_page_tooltip' => 'បន្ថែម​ទំព័រ​វីគី​បច្ចុប្បន្នទៅ​សៀវភៅ​របស់​អ្នក​',
 	'coll-bookscategory' => 'សៀវភៅ',
-	'coll-clear_collection' => 'សំអាត​សៀវភៅ',
+	'coll-clear_collection' => 'ជម្រះសៀវភៅ',
 	'coll-clear_collection_confirm' => 'តើ​អ្នក​ពិតជា​ចង់​ជម្រះ​សៀវភៅ​របស់​អ្នក​ទាំងស្រុង​ឬ​?',
 	'coll-clear_collection_tooltip' => 'ដកយក​ទំព័រ​វីគីទាំងអស់​ពីសៀវភៅ​បច្ចុប្បន្ន​របស់អ្នក​',
 	'coll-help' => 'ជំនួយ',
@@ -1820,6 +1828,8 @@ $messages['km'] = array(
 	'coll-remove_page_tooltip' => 'ដកចេញទំព័រវិគី​បច្ចុប្បន្ន​ពីសៀវភៅ​របស់អ្នក​',
 	'coll-show_collection' => 'បង្ហាញ​សៀវភៅ',
 	'coll-show_collection_tooltip' => 'ចុច​ដើម្បី​កែប្រែ​/ទាញ​យក​/បញ្ជា​ទិញ​សៀវភៅ​របស់​អ្នក​',
+	'coll-not_addable' => 'ទំព័រនេះមិនអាចបន្ថែមបានទេ',
+	'coll-suggest_empty' => 'ទទេ',
 );
 
 /** Kannada (ಕನ್ನಡ)
