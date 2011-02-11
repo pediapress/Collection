@@ -259,7 +259,9 @@ The contents of this page appear in the "Order as a printed book" box on <nowiki
 * <tt>$2</tt> is a link captioned {{msg-mw|coll-suggest_undo}}',
 	'coll-suggest_undo_tooltip' => '{{Identical|Undo}}',
 	'coll-suggest_undo' => '{{Identical|Undo}}',
-	'coll-load_local_book' => 'PLURAL support not yet available for collection extension. See the discussion on [[Thread:Support/PLURAL support for Coll-load local book/reply]].',
+	'coll-load_local_book' => 'PLURAL support not yet available for collection extension. See the discussion on [[Thread:Support/PLURAL support for Coll-load local book/reply]].
+
+Do not translate <code>OK</code> and <code>Cancel</code>, they are part of a local popup on the client machine which is not localized at the moment.',
 	'right-collectionsaveasuserpage' => '{{doc-right|collectionsaveasuserpage}}',
 	'right-collectionsaveascommunitypage' => '{{doc-right|collectionsaveascommunitypage}}',
 );
@@ -6378,7 +6380,7 @@ Di Sigg hee weed oohne JavaSkripp nit donn.</strong>',
 	'coll-format_label' => 'Fommaat:',
 	'coll-remove' => 'Fott lohße',
 	'coll-show' => 'Zeich',
-	'coll-move_to_top' => 'aan der Aanfang donn',
+	'coll-move_to_top' => 'Aan der Aanfang donn',
 	'coll-move_up' => 'Erop schuve',
 	'coll-move_down' => 'Eronger schuve',
 	'coll-move_to_bottom' => 'An et Engk donn',
@@ -6479,7 +6481,8 @@ Di Leß weed neu opjebout, wann De op dä „Dobei donn“ udder dä „{{int:co
 	'coll-suggest_article_remove' => 'De Sigg „$1“ es uß Dingem Booch fott jenumme ($2).',
 	'coll-suggest_undo_tooltip' => 'Donn zeröck nämme, wat De jedonn hats',
 	'coll-suggest_undo' => 'zeröck nämme',
-	'coll-load_local_book' => 'Donn {{int:xxxxxxxxxxxx}} ußwähle, öm met Dingem Booch mem Naame %TITLE% un %NUMPAGES% Wikisigge dren wigger ze maache, Donn {{int:xxxxxxxxxxxx}} ußwähle, för et fott ze schmiiße un met enem läddijje Booch neu aanzefange.',
+	'coll-load_local_book' => 'Donn „OK“ ußwähle, öm met Dingem Booch mem Naame %TITLE% un %NUMPAGES% Wikisigge dren wigger ze maache.
+Donn „Cancel“ ußwähle, för et fott ze schmiiße un met enem läddijje Booch neu aanzefange.',
 	'right-collectionsaveasuserpage' => 'E Boch als enem Metmaacher sing Sigg avspeichere',
 	'right-collectionsaveascommunitypage' => 'E Boch als en Jemeinschaffß_Sigg avspeichere',
 );
