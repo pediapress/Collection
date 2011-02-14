@@ -1809,6 +1809,7 @@ $messages['ce'] = array(
 	'coll-couldnotaddarticle_msg' => 'Хlара яззам чутоьхна хила цамега.',
 	'coll-couldnotremovearticle_msg' => 'Хlара яззам дlабайина хила цамега.',
 	'coll-no_such_category' => 'Ишта кадегар яц',
+	'coll-yes' => 'Хlаъ',
 	'coll-rendering_article' => '(яззам: $1)',
 );
 
@@ -10001,8 +10002,8 @@ $messages['sr-ec'] = array(
 	'coll-exclusion_category_title' => 'Изузми при штампању',
 	'coll-print_template_prefix' => 'Штампај',
 	'coll-print_template_pattern' => '$1/Штампа',
-	'coll-unknown_subpage_title' => 'Непозната подстрана',
-	'coll-unknown_subpage_text' => 'Ова подстрана [[Special:Book|књиге]] не постоји',
+	'coll-unknown_subpage_title' => 'Непозната подстраница',
+	'coll-unknown_subpage_text' => 'Ова подстраница [[Special:Book|књиге]] не постоји.',
 	'coll-couldnotaddarticle_title' => 'Додавање вики стране није успело',
 	'coll-couldnotaddarticle_msg' => 'Додавање вики странице није могуће.',
 	'coll-couldnotremovearticle_title' => 'Уклањање вики странице није могуће',
@@ -10190,7 +10191,7 @@ Da li želite da prebrišete svoju trenutnu knjigu, dodate novi sadržaj, ili po
 	'coll-overwrite' => 'Prebriši',
 	'coll-append' => 'Nadoveži',
 	'coll-cancel' => 'Otkaži',
-	'coll-update' => 'Apdejtuj',
+	'coll-update' => 'Ažuriraj',
 	'coll-limit_exceeded_title' => 'Knjiga je prevelika',
 	'coll-limit_exceeded_text' => 'Vaša knjiga je prevelika.
 
@@ -10234,7 +10235,7 @@ Molim kontaktirajte svog MedijaViki administratora.',
 	'coll-hide_info' => 'Skloni informacije',
 	'coll-suggest_title' => 'Strane predložene za vašu knjigu',
 	'coll-suggested_articles' => 'Predlozi',
-	'coll-suggest_reset_bans' => 'resetuj',
+	'coll-suggest_reset_bans' => 'poništi',
 	'coll-suggest_reset_bans_tooltip' => 'Prikaži skoro uklonjene predloge',
 	'coll-suggest_add_selected' => 'Dodaj označene strane',
 	'coll-suggest_ban_selected' => 'Ukloni odabrane strane',

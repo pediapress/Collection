@@ -2970,7 +2970,7 @@ $messages['sl'] = array(
 $messages['sr-ec'] = array(
 	'coll-print_export' => 'Штампај/извези',
 	'coll-create_a_book' => 'Направи књигу',
-	'coll-create_a_book_tooltip' => 'Направи књигу или колекцију чланака',
+	'coll-create_a_book_tooltip' => 'Направи књигу или збирку страница',
 	'coll-download_as' => 'Преузми као $1',
 	'coll-disable' => 'онемогући',
 	'coll-add_category' => 'Додај ову категорију у своју књигу',
@@ -3587,6 +3587,7 @@ $messages['vo'] = array(
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'coll-download_as' => 'אַראָפלאָדן אַלס $1',
 	'coll-help' => 'הילף',
 );
 
