@@ -10047,7 +10047,7 @@ $messages['sr-ec'] = array(
 	'coll-login_to_save' => 'Уколико желите да снимите књиге за каснију употребу, [[Special:UserLogin|пријавите се или направите налог]].',
 	'coll-personal_collection_label' => 'Лична књига:',
 	'coll-community_collection_label' => 'Заједничка књига:',
-	'coll-save_collection' => 'Сними књигу',
+	'coll-save_collection' => 'Сачувај књигу',
 	'coll-save_category' => 'Све снимљене књиге су додате у категорију [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Страница већ постоји.
 Да је пребришем?',
@@ -11988,12 +11988,14 @@ $messages['yi'] = array(
 	'coll-download_title' => 'אראָפלאָדן',
 	'coll-download' => 'אַראָפלאָדן',
 	'coll-title' => 'טיטל:',
+	'coll-contents' => 'אינהאַלט',
 	'coll-cancel' => 'מבטל זײַן',
 	'coll-update' => 'דערהײַנטיקן',
 	'coll-rendering_status' => '<strong>סטאַטוס:</strong> $1',
 	'coll-rendering_article' => '(וויקי בלאַט: $1)',
 	'coll-rendering_page' => '(בלאַט: $1)',
 	'coll-about_pp' => 'וועגן $1',
+	'coll-license' => 'ליצענץ',
 );
 
 /** Yoruba (Yorùbá)
