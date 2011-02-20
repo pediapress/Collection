@@ -35,7 +35,7 @@ $(function() {
 		$.getJSON(script_url, {
 			'action': 'ajax',
 			'rs': 'wfAjaxCollectionGetBookCreatorBoxContent',
-			'rsargs[]': [hint, oldid]
+			'rsargs[]': [hint, oldid, wgPageName]
 		}, function(result) {
 			$('#coll-book_creator_box').html(result.html);
 		});

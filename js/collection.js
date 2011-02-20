@@ -94,7 +94,7 @@ function clear_collection() {
 				$('#titleInput').val('');
 				$('#subtitleInput').val('');
 				refresh_list(result);
-				req('GetBookCreatorBoxContent', ['showbook', null], function(result2) {
+				req('GetBookCreatorBoxContent', ['showbook', null, wgPageName], function(result2) {
 					$('#coll-book_creator_box').html(result2.html);
 				});
 			});
@@ -125,7 +125,7 @@ function remove_item(index) {
 		[index],
 		function(result) {
 			refresh_list(result);
-			req('GetBookCreatorBoxContent', ['showbook', null], function(result2) {
+			req('GetBookCreatorBoxContent', ['showbook', null, wgPageName], function(result2) {
 				$('#coll-book_creator_box').html(result2.html);
 			});
 		});

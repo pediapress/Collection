@@ -30,7 +30,7 @@ function collectionSuggestCall(func, args) {
 			$.getJSON(script_url, {
 				'action': 'ajax',
 				'rs': 'wfAjaxCollectionGetBookCreatorBoxContent',
-				'rsargs[]': ['suggest', null]
+				'rsargs[]': ['suggest', null, wgPageName]
 			}, function(result) {
 				$('#coll-book_creator_box').html(result.html);
 			});
