@@ -44,7 +44,6 @@ class SpecialCollection extends SpecialPage {
 		global $wgUser;
 		global $wgContLang;
 		global $wgCollectionMaxArticles;
-		global $wgTitle;
 
 		// support previous URLs (e.g. used in templates) which used the "$par" part
 		// (i.e. subpages of the Special page)
@@ -61,7 +60,7 @@ class SpecialCollection extends SpecialPage {
 
 		switch ( $wgRequest->getVal( 'bookcmd', '' ) ) {
 			case 'book_creator':
-				$this->renderBookCreatorPage( $wgRequest->getVal( 'referer', '' ) );
+				$this->renderBookCreatorPage( $wgRequest->getVal( 'referer', '' ), $par );
 				return;
 
 			case 'start_book_creator':
@@ -74,7 +73,7 @@ class SpecialCollection extends SpecialPage {
 				return;
 			case 'stop_book_creator':
 				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
-				if ( is_null( $title ) || $title->equals( $wgTitle ) ) {
+				if ( is_null( $title ) || $title->equals( $this->getTitle( $par ) ) ) {
 					$title = Title::newMainPage();
 				}
 				if ( $wgRequest->getVal( 'disable' ) ) {
@@ -305,11 +304,10 @@ class SpecialCollection extends SpecialPage {
 		return;
 	}
 
-	function renderBookCreatorPage( $referer ) {
+	function renderBookCreatorPage( $referer, $par ) {
 		global $wgCollectionStyleVersion;
 		global $wgOut;
 		global $wgScriptPath;
-		global $wgTitle;
 		global $wgUser;
 		global $wgJsMimeType;
 
@@ -332,7 +330,7 @@ class SpecialCollection extends SpecialPage {
 			"</script>" );
 
 		$title = Title::newFromText( $referer );
-		if ( is_null( $title ) || $title->equals( $wgTitle ) ) {
+		if ( is_null( $title ) || $title->equals( $this->getTitle( $par ) ) ) {
 			$title = Title::newMainPage();
 		}
 		$sk = $wgUser->getSkin();

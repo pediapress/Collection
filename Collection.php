@@ -269,11 +269,22 @@ function wfAjaxCollectionAddCategory( $title = '' ) {
 
 $wgAjaxExportList[] = 'wfAjaxCollectionAddCategory';
 
-function wfAjaxCollectionGetBookCreatorBoxContent( $ajaxHint = '', $oldid = null ) {
+function wfAjaxCollectionGetBookCreatorBoxContent( $ajaxHint = '', $oldid = null, $pageName = null ) {
+	global $wgUser;
+
 	if ( !is_null( $oldid ) ) {
 		$oldid = intval( $oldid );
 	}
-	$html = CollectionHooks::getBookCreatorBoxContent( $ajaxHint, $oldid );
+
+	$title = null;
+	if ( !is_null( $pageName ) ) {
+		$title = Title::newFromText( $pageName );
+	}
+	if ( is_null( $title ) ) {
+		$title = Title::newMainPage();
+	}
+
+	$html = CollectionHooks::getBookCreatorBoxContent( $wgUser->getSkin(), $title, $ajaxHint, $oldid );
 
 	$json = new Services_JSON();
 	$result = array();

@@ -84,11 +84,7 @@ if ( $t && $t->exists() ) { ?>
 if ( $t && $t->exists() ) { ?>
 		<div id="coll-order_info" style="display:none; margin-top: 2em;">
 <?php
-echo $GLOBALS['wgParser']->parse( '{{:' . $t . '}}',
-	$GLOBALS['wgTitle'],
-	$GLOBALS['wgOut']->parserOptions(),
-	true
-)->getText();
+echo $GLOBALS['wgOut']->parse( '{{:' . $t . '}}' );
 ?>
 		</div>
 <?php } ?>
@@ -98,12 +94,7 @@ echo $GLOBALS['wgParser']->parse( '{{:' . $t . '}}',
 		<h2><span class="mw-headline"><?php $this->msg( 'coll-download_title' ) ?></span></h2>
 		<?php if ( count( $this->data['formats'] ) == 1 ) {
 			$writer = array_rand( $this->data['formats'] );
-			echo $GLOBALS['wgParser']->parse(
-				wfMsgNoTrans( 'coll-download_as_text', $this->data['formats'][$writer] ),
-				$GLOBALS['wgTitle'],
-				$GLOBALS['wgOut']->parserOptions(),
-				true
-			)->getText();
+			echo wfMsgExt( 'coll-download_as_text', 'parse', $this->data['formats'][$writer] );
 			$buttonLabel = wfMsgHtml( 'coll-download_as', htmlspecialchars( $this->data['formats'][$writer] ) );
 		} else {
 			$this->msgWiki( 'coll-download_text' );
@@ -322,7 +313,7 @@ class CollectionSaveOverwriteTemplate extends QuickTemplate {
 
 <h2><span class="mw-headline"><?php $this->msg( 'coll-overwrite_title' ) ?></span></h2>
 
-<p><?php echo $GLOBALS['wgParser']->parse( wfMsgNoTrans( 'coll-overwrite_text', $this->data['title']->getPrefixedText() ), $GLOBALS['wgTitle'], $GLOBALS['wgOut']->parserOptions(), true )->getText() ?></p>
+<p><?php echo wfMsgExt( 'coll-overwrite_text', 'parse', $this->data['title']->getPrefixedText() ); ?></p>
 
 <form action="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book' ) ) ?>" method="post">
 	<input name="overwrite" type="submit" value="<?php $this->msg( 'coll-yes' ) ?>" />
@@ -361,11 +352,7 @@ class CollectionRenderingTemplate extends QuickTemplate {
 		}
 		$t = Title::newFromText( $title_string );
 		if ( $t && $t->exists() ) {
-			echo $GLOBALS['wgParser']->parse( '{{:' . $t . '}}',
-				$GLOBALS['wgTitle'],
-				$GLOBALS['wgOut']->parserOptions(),
-				true
-			)->getText();
+			echo $GLOBALS['wgOut']->parse( '{{:' . $t . '}}' );
 		}
 	}
 }
@@ -377,32 +364,17 @@ class CollectionRenderingTemplate extends QuickTemplate {
 class CollectionFinishedTemplate extends QuickTemplate {
 	function execute() {
 
-echo $GLOBALS['wgParser']->parse(
-	wfMsgNoTrans( 'coll-rendering_finished_text', $this->data['download_url'] ),
-	$GLOBALS['wgTitle'],
-	$GLOBALS['wgOut']->parserOptions(),
-	true
-)->getText();
+echo wfMsgExt( 'coll-rendering_finished_text', 'parse', $this->data['download_url'] );
 
 if ( $this->data['is_cached'] ) {
 	$forceRenderURL = SkinTemplate::makeSpecialUrl( 'Book', 'bookcmd=forcerender&' . $this->data['query'] );
 	echo wfMsg( 'coll-is_cached', htmlspecialchars( $forceRenderURL ) );
 }
-echo $GLOBALS['wgParser']->parse(
-	wfMsgNoTrans( 'coll-excluded-templates', wfMsgForContent( 'coll-exclusion_category_title' ) ),
-	$GLOBALS['wgTitle'],
-	$GLOBALS['wgOut']->parserOptions(),
-	true
-)->getText();
+echo wfMsgExt( 'coll-excluded-templates', 'parse', wfMsgForContent( 'coll-exclusion_category_title' ) );
 $title_string = wfMsgForContent( 'coll-template_blacklist_title' );
 $t = Title::newFromText( $title_string );
 if ( $t && $t->exists() ) {
-	echo $GLOBALS['wgParser']->parse(
-		wfMsgNoTrans( 'coll-blacklisted-templates', $title_string ),
-		$GLOBALS['wgTitle'],
-		$GLOBALS['wgOut']->parserOptions(),
-		true
-	)->getText();
+	echo wfMsgExt( 'coll-blacklisted-templates', 'parse', $title_string );
 }
 if ( $this->data['return_to'] ) {
 	// We are doing this the hard way (i.e. via the HTML detour), to prevent
@@ -422,11 +394,7 @@ if ( CollectionSession::isEnabled() ) {
 }
 $t = Title::newFromText( $title_string );
 if ( $t && $t->exists() ) {
-	echo $GLOBALS['wgParser']->parse( '{{:' . $t . '}}',
-		$GLOBALS['wgTitle'],
-		$GLOBALS['wgOut']->parserOptions(),
-		true
-	)->getText();
+	echo $GLOBALS['wgOut']->parse( '{{:' . $t . '}}' );
 }
 ?>
 
