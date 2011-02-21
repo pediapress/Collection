@@ -2420,6 +2420,7 @@ $messages['pdc'] = array(
 	'coll-clear_collection' => 'Buch lösche',
 	'coll-help' => 'Hilf',
 	'coll-helppage' => 'Help:Bicher',
+	'coll-load_collection' => 'Buch laade',
 	'coll-n_pages' => '$1 {{PLURAL:$1|Blatt|Bledder}}',
 	'coll-printable_version_pdf' => 'PDF-Version',
 	'coll-suggest_empty' => 'leer',
