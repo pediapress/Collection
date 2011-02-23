@@ -187,6 +187,7 @@ $wgResourceModules += array(
 	),
 	'ext.collection.checkLoadFromLocalStorage' => $collResourceTemplate + array(
 		'scripts' => 'check_load_from_localstorage.js',
+		'styles' => 'bookcreator.css',
 		'dependencies' => 'ext.collection.jquery.jstorage'
 	)
 );
