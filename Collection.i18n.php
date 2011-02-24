@@ -2054,7 +2054,7 @@ Os nac ydy\'n ail-lwytho o ran ei hun, gwasgwch y botwm ail-lwytho ar eich porwr
 	'coll-rendering_article' => '(tudalen wici: $1)',
 	'coll-rendering_page' => '(tudalen: $1)',
 	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Wrthi'n cynhyrchu'r wybodaeth am y dudalen",
-	'coll-rendering_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Wrthi'n cynhyrchu'r gwybodaeth am y casgliad",
+	'coll-rendering_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Wrthi'n cynhyrchu'r wybodaeth am y casgliad",
 	'coll-rendering_finished_title' => 'Wedi gorffen cynhyrchu',
 	'coll-rendering_finished_text' => "<strong>Mae ffeil y ddogfen wedi cael ei gynhyrchu.</strong>
 <strong>[$1 Llwytho'r ffeil i lawr]</strong> i'ch cyfrifiadur.
