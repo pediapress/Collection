@@ -9342,8 +9342,8 @@ $messages['ru'] = array(
 	'coll-suggest_undo_tooltip' => 'Отменить это действие',
 	'coll-suggest_undo' => 'отменить',
 	'coll-load_local_book' => 'Нажмите «ОК», чтобы продолжить работу с вашей книгой %TITLE%, содержащей %NUMPAGES% вики-страниц. Нажмите «Отмена», чтобы удалить её и начать с пустой книги.',
-	'right-collectionsaveasuserpage' => 'сохранение книг, как страницу участника',
-	'right-collectionsaveascommunitypage' => 'сохранение книг, как страницу сообщества',
+	'right-collectionsaveasuserpage' => 'сохранение книг как страниц участника',
+	'right-collectionsaveascommunitypage' => 'сохранение книг как страниц сообщества',
 );
 
 /** Rusyn (Русиньскый)
