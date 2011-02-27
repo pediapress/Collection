@@ -3378,7 +3378,7 @@ Nahi al duzu zure bildumarekin aldatzea?',
 Nahi al duzu zure liburuaren gainetik idaztea, eduki berriak zerrendatzea edo liburu honen kargatzea ezeztatzea?',
 	'coll-overwrite' => 'Gainetik idatzi',
 	'coll-append' => 'Zerrendatu',
-	'coll-cancel' => 'Ezeztatu',
+	'coll-cancel' => 'Utzi',
 	'coll-update' => 'Berritu',
 	'coll-limit_exceeded_title' => 'Liburua handiegia da',
 	'coll-limit_exceeded_text' => 'Zure liburua handiegia da.
