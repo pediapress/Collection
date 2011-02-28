@@ -11989,13 +11989,18 @@ $messages['yi'] = array(
 	'coll-download' => 'אַראָפלאָדן',
 	'coll-title' => 'טיטל:',
 	'coll-contents' => 'אינהאַלט',
+	'coll-empty_collection' => 'ליידיג בוך',
+	'coll-yes' => 'יא',
+	'coll-no' => 'ניין',
 	'coll-cancel' => 'מבטל זײַן',
 	'coll-update' => 'דערהײַנטיקן',
 	'coll-rendering_status' => '<strong>סטאַטוס:</strong> $1',
 	'coll-rendering_article' => '(וויקי בלאַט: $1)',
 	'coll-rendering_page' => '(בלאַט: $1)',
+	'coll-return_to_collection' => '<p>צוריק צו <a href="$1">$2</a></p>',
 	'coll-about_pp' => 'וועגן $1',
 	'coll-license' => 'ליצענץ',
+	'coll-return_to' => 'צוריק צו [[:$1]]',
 );
 
 /** Yoruba (Yorùbá)
