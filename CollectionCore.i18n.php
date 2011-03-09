@@ -3589,6 +3589,7 @@ $messages['vo'] = array(
  */
 $messages['yi'] = array(
 	'coll-download_as' => 'אַראָפלאָדן אַלס $1',
+	'coll-download_as_tooltip' => 'אראָפלאָדן אַ $1 ווערסיע פון דעם וויקיפּעדיע בלאַט',
 	'coll-help' => 'הילף',
 );
 
