@@ -12001,6 +12001,7 @@ $messages['yi'] = array(
 	'coll-about_pp' => 'וועגן $1',
 	'coll-license' => 'ליצענץ',
 	'coll-return_to' => 'צוריק צו [[:$1]]',
+	'coll-suggest_show' => 'ווײַזן',
 );
 
 /** Yoruba (Yorùbá)
