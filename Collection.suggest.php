@@ -131,6 +131,7 @@ class CollectionSuggest {
 	 */
 
 	private static function unban( $article ) {
+		if (!isset($_SESSION['wsCollectionSuggestBan']) return;
 		$bans = $_SESSION['wsCollectionSuggestBan'];
 		$newbans = array();
 		foreach ( $bans as $ban ) {
