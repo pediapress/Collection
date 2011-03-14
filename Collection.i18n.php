@@ -9036,7 +9036,7 @@ Dacă nu se întâmplă așa, vă rugăm să apăsați butonul de reîncărcare 
 	'coll-rendering_page' => '(pagină: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informații despre generarea paginilor',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informații despre generarea colecțiilor',
-	'coll-rendering_finished_title' => 'Generare terminată',
+	'coll-rendering_finished_title' => 'Generare finalizată',
 	'coll-rendering_finished_text' => '<strong>Fișierul documentului a fost generat.</strong>
 <strong>[$1 Descărcați-l]</strong> în calculatorul dumneavoastră.
 
