@@ -2672,13 +2672,13 @@ $messages['rm'] = array(
  */
 $messages['ro'] = array(
 	'coll-print_export' => 'Tipărire/exportare',
-	'coll-create_a_book' => 'Crearea unei cărți',
+	'coll-create_a_book' => 'Creare carte',
 	'coll-create_a_book_tooltip' => 'Crearea unei cărți sau a unei colecții de pagini',
 	'coll-book_creator' => 'Creator de cărți',
 	'coll-download_as' => 'Descarcă $1',
 	'coll-download_as_tooltip' => 'Descărcați o versiune $1 a acestei pagini wiki',
 	'coll-disable' => 'dezactivează',
-	'coll-book_creator_disable' => 'Dezactivează creatorul de cărți',
+	'coll-book_creator_disable' => 'Dezactivare creator de cărți',
 	'coll-book_creator_disable_tooltip' => 'Oprirea utilizării creatorului de cărți',
 	'coll-add_linked_article' => 'Adaugă pagina indicată în cartea mea',
 	'coll-remove_linked_article' => 'Elimină pagina indicată din cartea mea',
