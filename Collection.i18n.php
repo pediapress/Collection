@@ -1751,13 +1751,16 @@ Si no és així, premi el botó de refresc del vostre navegador.</p>',
 	'coll-rendering_status' => '<strong>Estat:</strong> $1',
 	'coll-rendering_article' => '(pàgina wiki: $1)',
 	'coll-rendering_page' => '(pàgina: $1)',
-	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Processant texte d'informació de la pàgina",
+	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Processant text d'informació de la pàgina",
+	'coll-rendering_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Processant text d'informació de la col·lecció",
 	'coll-rendering_finished_title' => 'Renderització finalitzada',
 	'coll-rendering_finished_text' => "<strong>S'ha generat l'arxiu.</strong>
 <strong>[$1 Descarregueu l'arxiu]</strong> al vostre ordinador.
 
 Notes:
 * No esteu satisfet amb el resultat? Vegeu [[{{MediaWiki:Coll-helppage}}|la pàgina d'ajuda sobre llibres]] per a conéixer més opcions per millorar-lo.",
+	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Processant texte d'informació de la pàgina",
+	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Processant text d'informació de la col·lecció",
 	'coll-notfound_title' => 'Llibre no trobat',
 	'coll-notfound_text' => "No s'ha pogut trobar la pàgina del llibre.",
 	'coll-download_notfound_title' => "No s'ha trobat el fitxer",
