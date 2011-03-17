@@ -2201,6 +2201,13 @@ $messages['myv'] = array(
 	'coll-suggest_empty' => 'чаво',
 );
 
+/** Nahuatl (Nāhuatl)
+ * @author Teòtlalili
+ */
+$messages['nah'] = array(
+	'coll-bookscategory' => 'Àmoxtin',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
