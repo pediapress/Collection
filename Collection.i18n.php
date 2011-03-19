@@ -1196,7 +1196,7 @@ $messages['bg'] = array(
 	'coll-download_failed_text' => 'Получи се грешка при изтеглянето на файла: $1',
 	'coll-excluded-templates' => '* Шаблоните в категория [[:Category:$1|$1]] бяха изключени.',
 	'coll-return_to_collection' => '<p>Връщане към <a href="$1">$2</a></p>',
-	'coll-book_title' => 'Поръбване на печатно копие на книгата',
+	'coll-book_title' => 'Поръчване на печатно копие от книгата',
 	'coll-book_text' => 'Получаване на печатно копие от нашия партньор за отпечатване по поръчка.',
 	'coll-order_from_pp' => 'Предварителен преглед с $1',
 	'coll-about_pp' => 'За $1',
@@ -7527,6 +7527,15 @@ $messages['nds-nl'] = array(
 	'coll-your_book' => 'Joew boek',
 	'coll-download_title' => 'Oflaojen',
 	'coll-download_text' => 'Kies een bestaansfermaot en klik op de knoppe um joew boek binnen te haolen.',
+);
+
+/** Nepali (नेपाली)
+ * @author Bhawani Gautam Rhk
+ */
+$messages['ne'] = array(
+	'coll-title' => 'शीर्षक:',
+	'coll-revision' => 'संशोधन: $1',
+	'coll-save_collection' => 'किताब संग्रह गर्ने',
 );
 
 /** Dutch (Nederlands)
