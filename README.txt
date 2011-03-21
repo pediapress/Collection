@@ -129,7 +129,7 @@ Installation and Configuration of the Collection Extension
 	 displayed as "Download as XYZ" links in the "Print/export" portlet.
 	 The default value is::
 
-	     array( 'pdf' );
+	     array( 'rl' );
 
 	 i.e. there's one link "Download as PDF".
 

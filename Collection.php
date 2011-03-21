@@ -53,7 +53,7 @@ $wgCollectionMWServeCert = null;
 
 /** if not null, treat this string as hierarchy delimiter in page titles,
  * i.e. support subpages */
-$wgCollectionHierarcyDelimiter = null;
+$wgCollectionHierarchyDelimiter = null;
 
 /** Array of namespaces that can be added to a collection */
 $wgCollectionArticleNamespaces = array(
