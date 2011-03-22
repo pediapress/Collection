@@ -6829,6 +6829,14 @@ $messages['lt'] = array(
 	'coll-hide_info' => 'Slėpti informaciją',
 );
 
+/** Latgalian (Latgaļu)
+ * @author Dark Eagle
+ */
+$messages['ltg'] = array(
+	'coll-update' => 'Atjaunynuot',
+	'coll-about_pp' => 'Ap $1',
+);
+
 /** Latvian (Latviešu)
  * @author Papuass
  */
