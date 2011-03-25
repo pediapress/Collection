@@ -2146,6 +2146,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aurora
  * @author Aviator
  * @author Kurniasan
@@ -2179,7 +2180,7 @@ $messages['ms'] = array(
 	'coll-printable_version_pdf' => 'Versi PDF',
 	'coll-remove_this_page' => 'Buang laman ini daripada buku anda',
 	'coll-remove_page_tooltip' => 'Buang laman wiki semasa daripada buku anda',
-	'coll-show_collection' => 'Tunjuk buku',
+	'coll-show_collection' => 'Tunjukkan buku',
 	'coll-show_collection_tooltip' => 'Klik untuk sunting/muat turun/pesan buku anda',
 	'coll-not_addable' => 'Laman ini tidak dapat ditambah',
 	'coll-make_suggestions' => 'Syorkan laman',

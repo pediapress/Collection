@@ -6833,8 +6833,10 @@ $messages['lt'] = array(
  * @author Dark Eagle
  */
 $messages['ltg'] = array(
+	'coll-show' => 'Paruodeit',
 	'coll-update' => 'Atjaunynuot',
 	'coll-about_pp' => 'Ap $1',
+	'coll-suggest_show' => 'ruodeit',
 );
 
 /** Latvian (Latviešu)
@@ -7231,6 +7233,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aurora
  * @author Aviator
  * @author Izzudin
@@ -7342,8 +7345,8 @@ Mungkin ia telah dipadam dan perlu dijanakan semula.',
 	'coll-invalid_podpartner_msg' => 'Rakan POD yang dibekalkan tidak sah. Sila hubungi pentadbir MediaWiki anda.',
 	'coll-license' => 'Lesen',
 	'coll-return_to' => 'Kembali ke [[:$1]]',
-	'coll-more_info' => 'Tunjuk lebih maklumat',
-	'coll-hide_info' => 'Sorok maklumat',
+	'coll-more_info' => 'Paparkan maklumat lanjut',
+	'coll-hide_info' => 'Sorokkan maklumat',
 	'coll-order_info_article' => 'Maklumat pesanan {{MediaWiki:Coll-helppage}}/PediaPress',
 	'coll-suggest_title' => 'Laman-laman cadangan untuk buku anda',
 	'coll-suggest_intro_text' => 'Cadangan-cadangan ini adalah berdasarkan laman-laman wiki semasa dalam buku anda. Senarai ini akan dikemaskinikan setiap kali anda mengklik butang tambah atau buang.',
@@ -11767,7 +11770,12 @@ $messages['vep'] = array(
 	'coll-title' => 'Pälkirjutez:',
 	'coll-subtitle' => 'Alapälkirjutez:',
 	'coll-contents' => 'Südäimišt',
+	'coll-create_chapter' => 'Säta pala',
 	'coll-sort_alphabetically' => 'Panda kirjamišton mödhe',
+	'coll-rename' => 'Udesnimitada',
+	'coll-new_chapter' => 'Kirjutagat uden palan nimi',
+	'coll-rename_chapter' => "Kirjutagat uz' palannimi",
+	'coll-no_such_category' => 'Ei ole mugošt kategorijad',
 	'coll-empty_collection' => "Pall'az kirj",
 	'coll-yes' => 'Ka',
 	'coll-no' => 'Ei',
