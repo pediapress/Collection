@@ -7496,11 +7496,11 @@ Wenn dat aver nich so is, denn kannst du op den „Opfrischen“-Knopp vun dien 
 	'coll-rendering_article' => '(Wikisied: $1)',
 	'coll-rendering_page' => '(Sied: $1)',
 	'coll-rendering_finished_title' => 'Rendern trech',
-	'coll-rendering_finished_text' => '<strong>De Datei is nu opstellt.</strong>
+	'coll-rendering_finished_text' => '<strong>De Datei is nu tohoopstellt.</strong>
 <strong>[$1 Datei dalladen]</strong>.
 
 Henwiesen:
-* Büst du nich tofreden mit de Datei? De Utgaav to verbetern, gifft dat Tipps bi de [[{{MediaWiki:Coll-helppage}}|Help to Böker]].',
+* Büst du nich tofreden mit de Datei? Üm de Utgaav to verbetern, gifft dat Tipps bi de [[{{MediaWiki:Coll-helppage}}|Hülp to Böker]].',
 	'coll-notfound_title' => 'Book nich funnen',
 	'coll-notfound_text' => 'Booksied kunn nich funnen warrn.',
 	'coll-download_notfound_title' => 'Datei nich funnen',
