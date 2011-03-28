@@ -3596,6 +3596,7 @@ $messages['vo'] = array(
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'coll-create_a_book' => 'שאַפֿן אַ בוך',
 	'coll-download_as' => 'אַראָפלאָדן אַלס $1',
 	'coll-download_as_tooltip' => 'אראָפלאָדן אַ $1 ווערסיע פון דעם וויקיפּעדיע בלאַט',
 	'coll-help' => 'הילף',
