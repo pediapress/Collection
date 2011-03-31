@@ -2677,6 +2677,7 @@ $messages['rm'] = array(
  * @author KlaudiuMihaila
  * @author Minisarm
  * @author Stelistcristi
+ * @author Strainu
  */
 $messages['ro'] = array(
 	'coll-print_export' => 'Tipărire/exportare',
@@ -2686,33 +2687,33 @@ $messages['ro'] = array(
 	'coll-download_as' => 'Descarcă $1',
 	'coll-download_as_tooltip' => 'Descărcați o versiune $1 a acestei pagini wiki',
 	'coll-disable' => 'dezactivează',
-	'coll-book_creator_disable' => 'Dezactivare creator de cărți',
-	'coll-book_creator_disable_tooltip' => 'Oprirea utilizării creatorului de cărți',
-	'coll-add_linked_article' => 'Adaugă pagina indicată în cartea mea',
-	'coll-remove_linked_article' => 'Elimină pagina indicată din cartea mea',
-	'coll-add_category' => 'Adaugă această categorie la cartea mea',
-	'coll-add_category_tooltip' => 'Adăugarea tuturor paginilor wiki din această categorie în cartea dumneavoastră',
-	'coll-add_this_page' => 'Adaugă această pagină la carte mea',
-	'coll-add_page_tooltip' => 'Adăugarea paginii wiki de față în cartea dumneavoastră',
+	'coll-book_creator_disable' => 'Dezactivează creatorul de cărți',
+	'coll-book_creator_disable_tooltip' => 'Nu mai folosiți creatorul de cărți',
+	'coll-add_linked_article' => 'Adăugați pagina indicată în cartea dumneavoastră',
+	'coll-remove_linked_article' => 'Eliminați pagina indicată din cartea dumneavoastră',
+	'coll-add_category' => 'Adăugați această categorie în cartea dumneavoastră',
+	'coll-add_category_tooltip' => 'Adăugați toate paginile din această categorie în cartea dumneavoastră',
+	'coll-add_this_page' => 'Adăugați această pagină în cartea dumneavoastră',
+	'coll-add_page_tooltip' => 'Adăugați pagina curentă în cartea dumneavoastră',
 	'coll-bookscategory' => 'Cărți',
 	'coll-clear_collection' => 'Golește cartea',
-	'coll-clear_collection_confirm' => 'Doriți să goliți în totalitate cartea dumneavoastră?',
-	'coll-clear_collection_tooltip' => 'Eliminarea tuturor paginilor wiki din cartea actuală',
+	'coll-clear_collection_confirm' => 'Doriți să goliți complet cartea dumneavoastră?',
+	'coll-clear_collection_tooltip' => 'Eliminarea tuturor paginilor din cartea curentă',
 	'coll-help' => 'Ajutor',
 	'coll-help_tooltip' => 'Afișarea ajutorului despre crearea cărților',
-	'coll-helppage' => 'Help:Cărți',
-	'coll-load_collection' => 'Încarcă cartea',
-	'coll-load_collection_tooltip' => 'Utilizarea cărții de față ca actuala dumneavoastră carte',
-	'coll-n_pages' => '$1 {{PLURAL:$1|pagină|pagini}}',
+	'coll-helppage' => 'Ajutor:Cărți',
+	'coll-load_collection' => 'Încărcare carte',
+	'coll-load_collection_tooltip' => 'Încărcați cartea de față ca actuala dumneavoastră carte',
+	'coll-n_pages' => '$1 {{PLURAL:$1|pagină|pagini|de pagini}}',
 	'coll-printable_version_pdf' => 'Versiune PDF',
-	'coll-remove_this_page' => 'Elimină această pagină din cartea mea',
+	'coll-remove_this_page' => 'Eliminați această pagină din cartea dumneavoastră',
 	'coll-remove_page_tooltip' => 'Eliminarea paginii actuale din cartea dumneavoastră',
 	'coll-show_collection' => 'Arată cartea',
 	'coll-show_collection_tooltip' => 'Apăsați pentru a modifica/descărca/comanda cartea dumneavoastră',
 	'coll-not_addable' => 'Această pagină nu poate fi adăugată',
 	'coll-make_suggestions' => 'Sugerează pagini',
-	'coll-make_suggestions_tooltip' => 'Afișarea sugestiilor bazate pe conținutul cărții dumneavoastră',
-	'coll-suggest_empty' => 'gol',
+	'coll-make_suggestions_tooltip' => 'Afișează sugestii bazate pe conținutul cărții dumneavoastră',
+	'coll-suggest_empty' => 'fără conținut',
 );
 
 /** Tarandíne (Tarandíne)
