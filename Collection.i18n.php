@@ -7306,7 +7306,7 @@ $messages['ms'] = array(
 	'coll-load_overwrite_text' => 'Buku anda telah pun mengandungi beberapa laman. Adakah anda mahu menulis ganti buku anda, menambah kandungan baru tersebut, atau batal?',
 	'coll-overwrite' => 'Tulis ganti',
 	'coll-append' => 'Tambah',
-	'coll-cancel' => 'Batal',
+	'coll-cancel' => 'Batalkan',
 	'coll-update' => 'Kemas kini',
 	'coll-limit_exceeded_title' => 'Buku terlalu besar',
 	'coll-limit_exceeded_text' => 'Buku anda terlalu besar dan laman tidak boleh ditambah lagi.',
@@ -9032,7 +9032,7 @@ Această pagină nu va putea fi corect încărcată atât timp cât JavaScript n
 	'coll-personal_collection_label' => 'Carte personală:',
 	'coll-community_collection_label' => 'Carte a comunității:',
 	'coll-save_collection' => 'Salvează cartea',
-	'coll-save_category' => 'Toate cărțile sunt salvate în categoria [[:Categorie:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Toate cărțile salvate sunt introduse în categoria [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Pagina există.
 Suprascriu?',
 	'coll-overwrite_text' => 'O pagină cu numele [[:$1]] există deja.
