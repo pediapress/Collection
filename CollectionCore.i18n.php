@@ -2983,6 +2983,7 @@ $messages['sr-ec'] = array(
 	'coll-create_a_book_tooltip' => 'Направи књигу или збирку страница',
 	'coll-download_as' => 'Преузми као $1',
 	'coll-disable' => 'онемогући',
+	'coll-book_creator_disable_tooltip' => "Престани с коришћењем ''писца књига''",
 	'coll-add_category' => 'Додај ову категорију у своју књигу',
 	'coll-add_category_tooltip' => 'Додаје све вики странице у овој категорији у вашу књигу',
 	'coll-add_this_page' => 'Додај ову страну у своју књигу',
