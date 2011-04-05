@@ -179,6 +179,7 @@ The list is updated whenever you click on the add or remove buttons.',
  * @author Lloffiwr
  * @author Mormegil
  * @author Purodha
+ * @author Rancher
  * @author Raymond
  * @author Rex
  * @author Siebrand
@@ -186,6 +187,7 @@ The list is updated whenever you click on the add or remove buttons.',
  */
 $messages['qqq'] = array(
 	'coll-desc' => '{{desc}}',
+	'coll-manage_your_book' => 'Used as a title.',
 	'coll-collection' => '{{Identical|Book}}',
 	'coll-collections' => '{{Identical|Book}}',
 	'coll-exclusion_category_title' => 'The message text is the name of a category.',
@@ -10016,101 +10018,107 @@ Seznam je posodobljen, ko kliknete na gumbe za dodajanje ali odstranjevanje.',
  * @author Обрадовић Горан
  */
 $messages['sr-ec'] = array(
-	'coll-desc' => '[[Special:Book|Направи књиге]]',
-	'coll-manage_your_book' => 'Уреди своју књигу',
-	'coll-book_creator_help' => 'Види [[{{MediaWiki:Coll-helppage}}|помоћну страну о књигама]] за више података.',
-	'coll-start_book_creator' => 'Започни уређивач књига',
+	'coll-desc' => '[[Special:Book|Писац књига]]',
+	'coll-book_creator_intro' => "<big>Са ''писцем књига'' можете направити књигу која садржи жељене странице са викије. Њу можете сачувати у различитим форматима (нпр. PDF или ODF) или је наручити у штампаном издању.</big>",
+	'coll-manage_your_book' => 'Управљање књигама',
+	'coll-book_creator_help' => 'Погледајте [[{{MediaWiki:Coll-helppage}}|страницу за помоћ о књигама]] за више информација.',
+	'coll-start_book_creator' => 'Покрени писца књига',
 	'coll-book_creator_continue' => 'Настави са коришћењем уређивача књига',
-	'coll-book_creator_disable_text' => "''Уређивач књига'' ће бити онемогућен а књига на којој радите ће бити уклоњена.",
+	'coll-book_creator_disable_text' => "''Писац књига'' ће бити онемогућен, а књига на којој радите уклоњена.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/текст писца књига',
 	'coll-collection' => 'Књига',
 	'coll-collections' => 'Књиге',
-	'coll-exclusion_category_title' => 'Изузми при штампању',
-	'coll-print_template_prefix' => 'Штампај',
-	'coll-print_template_pattern' => '$1/Штампа',
+	'coll-exclusion_category_title' => 'Изузето из штампања',
+	'coll-print_template_prefix' => 'Штампање',
+	'coll-print_template_pattern' => '$1/штампање',
 	'coll-unknown_subpage_title' => 'Непозната подстраница',
 	'coll-unknown_subpage_text' => 'Ова подстраница [[Special:Book|књиге]] не постоји.',
-	'coll-couldnotaddarticle_title' => 'Додавање вики стране није успело',
-	'coll-couldnotaddarticle_msg' => 'Додавање вики странице није могуће.',
-	'coll-couldnotremovearticle_title' => 'Уклањање вики странице није могуће',
-	'coll-couldnotremovearticle_msg' => 'Вики страницу није могуће уклонити.',
+	'coll-couldnotaddarticle_title' => 'Додавање странице није успело',
+	'coll-couldnotaddarticle_msg' => 'Додавање странице није извршено.',
+	'coll-couldnotremovearticle_title' => 'Уклањање странице није успело',
+	'coll-couldnotremovearticle_msg' => 'Уклањање странице није извршено.',
 	'coll-noscript_text' => '<h1>Потребан је јаваскрипт</h1>
-<strong>Ваш прегледач не подржава јаваскрипт или је он онемогућен.
+<strong>Ваш прегледач не подржава јаваскрипт или он није омогућен.
 Ова страница неће радити исправно без њега.</strong>',
-	'coll-savedbook_template' => 'снимљена_књига',
+	'coll-savedbook_template' => 'сачувана_књига',
 	'coll-your_book' => 'Ваша књига',
-	'coll-download_title' => 'Преузми',
-	'coll-download_text' => 'Изаберите жељени формат и притисните дугме да бисте преузели Вашу књигу.',
-	'coll-download_as_text' => 'Притисните дугме да бисте преузели вашу књигу у $1 формату.',
+	'coll-download_title' => 'Преузимање',
+	'coll-download_text' => 'Изаберите жељени формат и кликните на дугме за преузимање.',
+	'coll-download_as_text' => 'Кликните на дугме да бисте преузели књигу у формату $1.',
 	'coll-download' => 'Преузми',
 	'coll-format_label' => 'Формат:',
 	'coll-remove' => 'Уклони',
 	'coll-show' => 'Прикажи',
 	'coll-move_to_top' => 'Помери на врх',
-	'coll-move_up' => 'Помери горе',
-	'coll-move_down' => 'Помери доле',
+	'coll-move_up' => 'Помери нагоре',
+	'coll-move_down' => 'Помери надоле',
 	'coll-move_to_bottom' => 'Помери на дно',
 	'coll-title' => 'Наслов:',
 	'coll-subtitle' => 'Поднаслов:',
 	'coll-contents' => 'Садржај',
-	'coll-drag_and_drop' => 'Можете прераспоредити вики странице и поглавља превлачивши их',
+	'coll-drag_and_drop' => 'Можете прераспоредити странице и поглавља превлачивши их.',
 	'coll-create_chapter' => 'Направи поглавље',
 	'coll-sort_alphabetically' => 'Поређај по азбучном реду',
 	'coll-rename' => 'Преименуј',
-	'coll-new_chapter' => 'Унесите име новог поглавља',
-	'coll-rename_chapter' => 'Унесите ново име поглавља',
+	'coll-new_chapter' => 'Унесите назив новог поглавља:',
+	'coll-rename_chapter' => 'Унесите нови назив поглавља:',
 	'coll-no_such_category' => 'Нема такве категорије',
-	'coll-notitle_title' => 'Наслов ове странице није могао бити утврђен.',
-	'coll-post_failed_title' => 'POST захтев није успео',
-	'coll-post_failed_msg' => 'POST захтев за $1 није успео ($2).',
-	'coll-mwserve_failed_title' => 'Грешка на серверу за израђивање',
-	'coll-mwserve_failed_msg' => 'На серверу за израђивање десила се грешка: <nowiki>$1</nowiki>',
-	'coll-error_reponse' => 'Грешка у одговору сервера',
-	'coll-empty_collection' => 'Празна књига',
-	'coll-revision' => 'Ревизија: $1',
-	'coll-save_collection_title' => 'Сними и дели своју књигу',
+	'coll-notitle_title' => 'Наслов ове странице није одређен.',
+	'coll-post_failed_title' => 'Захтев POST није успео',
+	'coll-post_failed_msg' => 'Захтев POST за $1 није успео ($2).',
+	'coll-mwserve_failed_title' => 'Грешка при израђивању',
+	'coll-mwserve_failed_msg' => 'Дошло је до грешке при израђивању: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Сервер је одговорио грешком',
+	'coll-empty_collection' => 'Књига је празна.',
+	'coll-revision' => 'Измена: $1',
+	'coll-save_collection_title' => 'Чување и дељење књиге',
 	'coll-save_collection_text' => 'Изаберите место за смештање своје књиге:',
-	'coll-login_to_save' => 'Уколико желите да снимите књиге за каснију употребу, [[Special:UserLogin|пријавите се или направите налог]].',
+	'coll-login_to_save' => 'Ако желите да сачувате књиге за касније, [[Special:UserLogin|пријавите се или отворите налог]].',
 	'coll-personal_collection_label' => 'Лична књига:',
 	'coll-community_collection_label' => 'Заједничка књига:',
 	'coll-save_collection' => 'Сачувај књигу',
-	'coll-save_category' => 'Све снимљене књиге су додате у категорију [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Све сачуване књиге су додате у категорију [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Страница већ постоји.
-Да је пребришем?',
-	'coll-overwrite_text' => 'Страница са именом [[:$1]] већ постоји.
-Да ли желите да буде пребрисана вашом књигом?',
+Заменити је?',
+	'coll-overwrite_text' => 'Страница с именом [[:$1]] већ постоји.
+Желите ли да је замените са својом књигом?',
 	'coll-yes' => 'Да',
 	'coll-no' => 'Не',
-	'coll-load_overwrite_text' => 'Већ имате неке странице у својој књизи.
-Да ли желите да пребришете своју тренутну књигу, додате нови садржај, или поништите учитавање ове књиге?',
-	'coll-overwrite' => 'Пребриши',
-	'coll-append' => 'Надовежи',
+	'coll-load_overwrite_text' => 'Неке странице већ поседујете у својој књизи.
+Желите ли да замените текућу књигу, додате нови садржај или поништите учитавање ове књиге?',
+	'coll-overwrite' => 'Замени',
+	'coll-append' => 'Додај',
 	'coll-cancel' => 'Откажи',
 	'coll-update' => 'Ажурирај',
 	'coll-limit_exceeded_title' => 'Књига је превелика',
 	'coll-limit_exceeded_text' => 'Ваша књига је превелика.
-
-Не може јој се додати још страница.',
-	'coll-rendering_title' => 'Израђујем',
-	'coll-rendering_text' => '<p><strong>Молим сачекајте док се документ ствара.</strong></p>
+Не можете додати још страница.',
+	'coll-rendering_title' => 'Израђивање',
+	'coll-rendering_text' => '<p><strong>Сачекајте да се документ изгради.</strong></p>
 
 <p><strong>Напредак:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>Ова страница би требало да се сама освежава сваких пар секунди.
-Ако ово не ради, притисните дугме за освежавање свог бровзера.</p>',
+<p>Страница би требало да се освежи за неколико секунди, у зависности од количине садржаја.
+Ако се то не догоди, кликните на дугме за поновно учитавање странице у свом прегледачу.</p>',
 	'coll-rendering_status' => '<strong>Стање:</strong> $1',
-	'coll-rendering_article' => '(вики страница: $1)',
+	'coll-rendering_article' => '(страница викија: $1)',
 	'coll-rendering_page' => '(страница: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/израђивање текста',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/израђивање збирног текста',
 	'coll-rendering_finished_title' => 'Израђивање је завршено',
-	'coll-rendering_finished_text' => '<strong>Фајл са документом је направљен.</strong>
-<strong>[$1 Преузмите фајл]</strong> на свој компјутер.
+	'coll-rendering_finished_text' => '<strong>Документ је направљен.</strong>
+<strong>[$1 Преузмите датотеку]</strong> на свој рачунар.
 
 Напомена:
-* Незадовољни сте излазом? Погледајте [[{{MediaWiki:Coll-helppage}}|страну помоћи о књигама]] за могућности да га побољшате.',
+* Незадовољни сте резултатом? Погледајте [[{{MediaWiki:Coll-helppage}}|страницу за помоћ о књигама]] где ћете наћи објашњење како да га побољшате.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/израђивање текста',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/израђивање збирног текста',
 	'coll-notfound_title' => 'Књига није пронађена',
-	'coll-notfound_text' => 'Не могу да нађем страну књиге.',
-	'coll-download_notfound_title' => 'Фајл није пронађен',
-	'coll-download_notfound_text' => 'Фајл који покушавате да преузмете не постоји: могуће је да је је обрисан и мора бити поново направљен.',
-	'coll-download_failed_title' => 'Грешка приликом скидања',
+	'coll-notfound_text' => 'Страница књиге није пронађена.',
+	'coll-download_notfound_title' => 'Датотека није пронађена',
+	'coll-download_notfound_text' => 'Датотека коју желите да преузмете не постоји.
+Можда је обрисана и потребно је поновно стварање.',
+	'coll-download_failed_title' => 'Грешка при преузимању',
 	'coll-download_failed_text' => 'Јавила се грешка приликом скидања фајла: $1',
 	'coll-is_cached' => '<ul><li>Израђена верзија документа је пронађена, тако да израђивање није неопходно. <a href="$1">Наметни поновно израђивање.</a></li></ul>',
 	'coll-excluded-templates' => '* Шаблони у категорији [[:Category:$1|$1]] су искључени.',
@@ -10133,7 +10141,7 @@ $messages['sr-ec'] = array(
 	'coll-suggest_reset_bans_tooltip' => 'Прикажи скоро уклоњене предлоге',
 	'coll-suggest_add_selected' => 'Додај означене стране',
 	'coll-suggest_ban_selected' => 'Уклони одабране стране',
-	'coll-suggest_your_book' => 'Твоја књига',
+	'coll-suggest_your_book' => 'Ваша књига',
 	'coll-suggest_show' => 'покажи',
 	'coll-suggest_ban_tooltip' => 'Уклони ову страну са списка предлога',
 	'coll-suggest_undo_tooltip' => 'Поништи ову акцију',
