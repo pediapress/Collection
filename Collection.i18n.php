@@ -5100,7 +5100,7 @@ $messages['hy'] = array(
 	'coll-unknown_subpage_title' => 'Անհայտ ենթաէջ',
 	'coll-unknown_subpage_text' => '[[Special:Book|Գրքի]] այս ենթաէջը գոյություն չունի',
 	'coll-noscript_text' => '<h1>Պահանջո՜ւմ է JavaScript։</h1>
-<strong>Ձեր բրաուզերը չունի JavaScript հնարավորություն կամ JavaScript-ը անջատած է։
+<strong>Ձեր զննարկիչը չունի JavaScript հնարավորություն կամ JavaScript-ը անջատած է։
 Այս էջը ճիշտ չի գործի, եթե JavaScript-ը միացված չէ։</strong>',
 	'coll-savedbook_template' => 'պահպանված_գիրք',
 	'coll-your_book' => 'Ձեր գիրքը',
@@ -5156,18 +5156,18 @@ $messages['hy'] = array(
 	'coll-limit_exceeded_text' => 'Ձեր գիրքը շատ մեծ է։
 Նոր էջեր չեն կարող ավելացվել։',
 	'coll-rendering_title' => 'Ստեղծում',
-	'coll-rendering_text' => '<p><strong>Խնդրում ենք սպասել մինչև ֆայլը ստեղծվում է։</strong></p>
+	'coll-rendering_text' => '<p><strong>Խնդրում ենք սպասել մինչև նիշքը ստեղծվում է։</strong></p>
 
 <p><strong>Ընթացքը.</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
 <p>Այս էջը պետք է ավտոմատիկ թարմացվի վայրկյանում մի քանի անգամ։
-Եթե դա տեղի չի ունենում, ապա խնդրում ենք սեղմել ձեր բրաուզերի «թարմացնել» կոճակը։</p>',
+Եթե դա տեղի չի ունենում, ապա խնդրում ենք սեղմել ձեր զննարկիչի «թարմացնել» կոճակը։</p>',
 	'coll-rendering_status' => '<strong>Կարգավիճակ.</strong> $1',
 	'coll-rendering_article' => '(վիքի էջ. $1)',
 	'coll-rendering_page' => '(էջ. $1)',
 	'coll-rendering_finished_title' => 'Ստեղծումն ավարտված է',
-	'coll-rendering_finished_text' => '<strong>Ֆայլը ստեղծված է։</strong>
-<strong>[$1 Քաշել ֆայլը]</strong> ձեր համակարգչի մեջ։
+	'coll-rendering_finished_text' => '<strong>Նիշքը ստեղծված է։</strong>
+<strong>[$1 Քաշել նիշքը]</strong> ձեր համակարգչի մեջ։
 
 Նշում.
 * Բավարարված չե՞ք արդյունքով։ Տես [[{{MediaWiki:Coll-helppage}}|գրքերի մասին օգնության էջը]] այն լավացնելու հնարավորությունների համար։',
@@ -7272,7 +7272,7 @@ $messages['ms'] = array(
 	'coll-download' => 'Muat turun',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Buang',
-	'coll-show' => 'Papar',
+	'coll-show' => 'Paparkan',
 	'coll-move_to_top' => 'Naikkan ke puncak',
 	'coll-move_up' => 'Naikkan',
 	'coll-move_down' => 'Turunkan',
@@ -7359,7 +7359,7 @@ Mungkin ia telah dipadam dan perlu dijanakan semula.',
 	'coll-suggest_add_selected' => 'Tambah laman-laman yang dipilih',
 	'coll-suggest_ban_selected' => 'Buang laman-laman yang dipilih',
 	'coll-suggest_your_book' => 'Buku anda',
-	'coll-suggest_show' => 'Papar',
+	'coll-suggest_show' => 'paparkan',
 	'coll-suggest_ban_tooltip' => 'Buang laman ini daripada senarai cadangan',
 	'coll-suggest_article_ban' => 'Laman <strong>$1</strong> telah dibuang daripada senarai cadangan ($2).',
 	'coll-suggest_article_add' => 'Laman <strong>$1</strong> telah ditambah ke dalam buku anda ($2).',
