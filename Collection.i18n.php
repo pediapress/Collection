@@ -1802,8 +1802,8 @@ La llista s'actualitza cada vegada que feu clic als botons d'afegir o treure.",
 	'coll-suggest_undo_tooltip' => "Desfés l'acció",
 	'coll-suggest_undo' => 'desfés',
 	'coll-load_local_book' => 'Feu clic a OK per a continuar el vostre llibre %TITLE% que conté %NUMPAGES% pàgines del wiki. Feu clic a Canceŀla per a esborrar-lo i començar amb un llibre buit.',
-	'right-collectionsaveasuserpage' => "Desa els llibres com a pàgina d'usuari",
-	'right-collectionsaveascommunitypage' => 'Desa els llibres com una pàgina de la comunitat',
+	'right-collectionsaveasuserpage' => "Desar els llibres com a pàgina d'usuari",
+	'right-collectionsaveascommunitypage' => 'Desar els llibres com una pàgina de la comunitat',
 );
 
 /** Chechen (Нохчийн)
