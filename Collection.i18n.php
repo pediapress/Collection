@@ -805,19 +805,31 @@ $messages['arz'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
-	'coll-collection' => 'Coleición',
-	'coll-collections' => 'Coleiciones',
-	'coll-download_title' => 'Descargar coleición',
+	'coll-desc' => '[[Special:Book|Crear llibros]]',
+	'coll-collection' => 'Llibru',
+	'coll-collections' => 'Llibros',
+	'coll-download_title' => 'Descargar',
+	'coll-download_text' => 'Pa descargar el llibru, escueyi un formatu y calca nel botón.',
+	'coll-download_as_text' => 'Pa descargar el llibru en formatu $1 calca nel botón.',
 	'coll-download' => 'Descargar',
 	'coll-format_label' => 'Formatu:',
 	'coll-remove' => 'Eliminar',
+	'coll-show' => 'Amosar',
+	'coll-move_to_top' => 'Mover al principiu',
+	'coll-move_up' => 'Xubir',
+	'coll-move_down' => 'Baxar',
+	'coll-move_to_bottom' => 'Mover al final',
 	'coll-title' => 'Títulu:',
 	'coll-subtitle' => 'Subtítulu:',
-	'coll-create_chapter' => 'Crear capítulu nuevu',
-	'coll-sort_alphabetically' => 'Ordenar páxines alfabéticamente',
+	'coll-contents' => 'Conteníu',
+	'coll-create_chapter' => 'Crear un capítulu',
+	'coll-sort_alphabetically' => 'Ordenar alfabéticamente',
 	'coll-rename' => 'Renomar',
+	'coll-new_chapter' => "Escribi'l nome del nuevu capítulu",
+	'coll-rename_chapter' => "Escribi'l nuevu nome del capítulu",
 	'coll-yes' => 'Sí',
 	'coll-no' => 'Non',
 	'coll-about_pp' => 'Tocante a $1',
