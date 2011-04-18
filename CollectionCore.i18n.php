@@ -238,15 +238,43 @@ $messages['arz'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
+	'coll-print_export' => 'Imprentar/esportar',
 	'coll-create_a_book' => 'Crear un llibru',
+	'coll-create_a_book_tooltip' => 'Crear un llibru o coleición de páxines',
+	'coll-book_creator' => 'Creador de llibros',
 	'coll-download_as' => 'Descargar como $1',
-	'coll-add_category' => 'Añader categoría',
-	'coll-helppage' => 'Help:Coleiciones',
-	'coll-load_collection' => 'Cargar coleición',
+	'coll-download_as_tooltip' => "Descargar una versión $1 d'esta páxina wiki",
+	'coll-disable' => 'desactivar',
+	'coll-book_creator_disable' => 'Desactivar el creador de llibros',
+	'coll-book_creator_disable_tooltip' => "Dexar d'usar el creador de llibros",
+	'coll-add_linked_article' => 'Amestar páxina wiki enllazada al to llibru',
+	'coll-remove_linked_article' => 'Desaniciar páxina wiki enllazada del to llibru',
+	'coll-add_category' => 'Amestar esta categoría al to llibru',
+	'coll-add_category_tooltip' => "Amestar toles páxines wiki d'esta categoría al to llibru",
+	'coll-add_this_page' => 'Amestar esta páxina al to llibru',
+	'coll-add_page_tooltip' => 'Amestar la páxina wiki actual al to llibru',
+	'coll-bookscategory' => 'Llibros',
+	'coll-clear_collection' => 'Llimpiar llibru',
+	'coll-clear_collection_confirm' => "¿De xuro quies llimpiar dafechu'l to llibru?",
+	'coll-clear_collection_tooltip' => 'Desaniciar toles páxines wiki del llibru actual',
+	'coll-help' => 'Ayuda',
+	'coll-help_tooltip' => "Amosar l'ayuda tocante a crear llibros",
+	'coll-helppage' => 'Help:Llibros',
+	'coll-load_collection' => 'Cargar llibru',
+	'coll-load_collection_tooltip' => "Cargar esti llibru como'l to llibru actual",
 	'coll-n_pages' => '$1 {{PLURAL:$1|páxina|páxines}}',
-	'coll-show_collection' => 'Amosar coleición',
+	'coll-printable_version_pdf' => 'Versión PDF',
+	'coll-remove_this_page' => 'Desaniciar esta páxina del to llibru',
+	'coll-remove_page_tooltip' => 'Desaniciar la páxina wiki actual del to llibru',
+	'coll-show_collection' => 'Amosar llibru',
+	'coll-show_collection_tooltip' => 'Calca pa editar/descargar/pidir el to llibru',
+	'coll-not_addable' => 'Esta páxina nun se pue amestar',
+	'coll-make_suggestions' => 'Suxerir páxines',
+	'coll-make_suggestions_tooltip' => 'Amosar suxerencies basándose nes páxines del to llibru',
+	'coll-suggest_empty' => 'balero',
 );
 
 /** Bashkir (Башҡортса)
@@ -989,6 +1017,8 @@ $messages['et'] = array(
 	'coll-disable' => 'keela',
 	'coll-book_creator_disable' => 'Keela raamatulooja',
 	'coll-book_creator_disable_tooltip' => 'Lõpeta raamatulooja kasutamine',
+	'coll-add_linked_article' => 'Lisa lingitud lehekülg oma raamatusse',
+	'coll-remove_linked_article' => 'Eemalda lingitud lehekülg oma raamatust',
 	'coll-add_category' => 'Lisa see kategooria oma raamatusse',
 	'coll-add_category_tooltip' => 'Lisa kõik selle kategooria vikileheküljed loodavasse raamatusse',
 	'coll-add_this_page' => 'Lisa see lehekülg oma raamatusse',
