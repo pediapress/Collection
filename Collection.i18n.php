@@ -629,6 +629,7 @@ $messages['ar'] = array(
 );
 
 /** Aramaic (ܐܪܡܝܐ)
+ * @author 334a
  * @author Basharh
  */
 $messages['arc'] = array(
@@ -661,7 +662,7 @@ $messages['arc'] = array(
 	'coll-more_info' => 'ܚܘܝ ܝܕ̈ܥܬܐ ܝܬܝܪ',
 	'coll-suggest_your_book' => 'ܟܬܒܐ ܕܝܠܟ',
 	'coll-suggest_show' => 'ܚܘܝ',
-	'coll-suggest_undo' => 'ܠܐ ܥܒܘܕ',
+	'coll-suggest_undo' => 'ܠܐ ܬܥܒܕ',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -10305,13 +10306,13 @@ Molim kontaktirajte svog MedijaViki administratora.',
  * @author Pyt
  */
 $messages['stq'] = array(
-	'coll-desc' => '[[Special:Collection|Siedentouhoopestaalenge]], moak PDFs',
-	'coll-collection' => 'Touhoopestaalenge',
-	'coll-collections' => 'Touhoopestaalenge',
+	'coll-desc' => '[[Special:Bouk|Bouke moakje]]',
+	'coll-collection' => 'Bouk',
+	'coll-collections' => 'Bouke',
 	'coll-noscript_text' => '<h1>JavaScript is nöödich!</h1>
 <strong>Dien Browser unnerstutset neen Javascript of Javascript wuude deaktivierd. Disse Siede däd nit gjucht funktionierje, soloange Javascript nit ferföigboar is.</strong>',
-	'coll-download_title' => 'Touhoopestaalenge as PDF deelleede',
-	'coll-download_text' => 'Uum ne automatisk moakede PDF-Doatäi fon dien Touhoopestaalenge deeltouleeden, klik ap ap ju Schaltfläche.',
+	'coll-download_title' => 'Deelleede',
+	'coll-download_text' => 'Uum ne Offline-Version fon dien Bouk deeltouleeden, wääl n Formoat un klik ap ap ju Schaltfläche.',
 	'coll-download' => 'Deelleede',
 	'coll-format_label' => 'Formoat:',
 	'coll-remove' => 'Wächhoalje',
@@ -10322,8 +10323,8 @@ $messages['stq'] = array(
 	'coll-title' => 'Tittel:',
 	'coll-subtitle' => 'Unnertittel:',
 	'coll-contents' => 'Inhoold',
-	'coll-create_chapter' => 'Näi Kapittel moakje',
-	'coll-sort_alphabetically' => 'Sieden alphabetisk sortierje',
+	'coll-create_chapter' => 'Kapittel moakje',
+	'coll-sort_alphabetically' => 'Alphabetisk sortierje',
 	'coll-rename' => 'Uumebenaame',
 	'coll-new_chapter' => 'Reek n Noome foar n näi Kapittel ien',
 	'coll-rename_chapter' => 'Reek n näien Noome foar dät Kapittel ien',
@@ -10334,55 +10335,69 @@ $messages['stq'] = array(
 	'coll-mwserve_failed_title' => 'Serverfailer',
 	'coll-mwserve_failed_msg' => 'Ap dän Renderer-Server is n Failer aptreeden: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Failermäldenge fon dän Server',
-	'coll-empty_collection' => 'Loose Kollektion',
+	'coll-empty_collection' => 'Loos Bouk',
 	'coll-revision' => 'Version: $1',
-	'coll-save_collection_title' => 'Kollektion spiekerje',
-	'coll-save_collection_text' => 'Uum disse Kollektion tou spiekerjen, wääl n Typ un reek n Tittel ien:',
-	'coll-login_to_save' => 'Wan du Kollektione spiekerje moatest, [[Special:UserLogin|mäld die an of moak n Benutserkonto]].',
-	'coll-personal_collection_label' => 'Persöönelke Kollektion:',
-	'coll-community_collection_label' => 'Community Kollektion:',
-	'coll-save_collection' => 'Kollektion spiekerje',
+	'coll-save_collection_title' => 'Dien Bouk spiekerje un deele',
+	'coll-save_collection_text' => 'Wääl n Spiekersteede foar dien Bouk:',
+	'coll-login_to_save' => 'Wan du Bouke spiekerje moatest, [[Special:UserLogin|mäld die an of moak n Benutserkonto]].',
+	'coll-personal_collection_label' => 'Persöönelk Bouk:',
+	'coll-community_collection_label' => 'Gemeenskuppelk Bouk:',
+	'coll-save_collection' => 'Bouk spiekerje',
+	'coll-save_category' => 'Aal spiekerde Bouke wäide ju Kategorie [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] touoardend.',
 	'coll-overwrite_title' => 'Siede bestoant. Uurschrieuwe?',
 	'coll-overwrite_text' => 'Ne Siede mäd dän Noome [[:$1]] bestoant al.
 Moatest du ju truch dien Kollektion ärsätte?',
 	'coll-yes' => 'Jee',
 	'coll-no' => 'Noa',
 	'coll-load_overwrite_text' => 'Dien Kollektion änthaalt al wäkke Sieden.
-Moatest du ju aktuelle Kollektion uurschrieuwe, do näie Sieden anhongje of dät Leeden fon disse Kollektion oubreeke?',
+Moatest du dät aktuelle Bouk uurschrieuwe, do näie Sieden anhongje of dät Leeden fon dit Bouk oubreeke?',
 	'coll-overwrite' => 'Uurschrieuwe',
 	'coll-append' => 'Anhongje',
 	'coll-cancel' => 'Oubreeke',
-	'coll-limit_exceeded_title' => 'Kollektion tou groot',
-	'coll-limit_exceeded_text' => 'Dien Kollektion is tou groot.
-Deer konnen neen Sieden moor bietouföiged wäide.',
+	'coll-update' => 'Aktualisierje',
+	'coll-limit_exceeded_title' => 'Bouk tou groot',
+	'coll-limit_exceeded_text' => 'Dien Bouk is tou groot. Deer konnen neen Sieden moor bietouföiged wäide.',
 	'coll-rendering_title' => 'An t Moakjen',
-	'coll-rendering_text' => "'''Täif, bit dät Dokument moaked wuuden is.'''
+	'coll-rendering_text' => '<p><strong>Täif, bit dät Dokument moaked wuuden is.</strong></p>
 
-Foutschrit: '''$1 %'''.
+<p><strong>Foutskrit:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
 
-Disse Siede schuul sik älke poor Sekunden fonsälwen aktualisierje.
-Fals dit daach nit geböärt, druk dan dän „Aktualisierje“-Knoop (maast F5) fon dien Browser.",
+<p>Disse Siede schuul sik älke poor Sekunden fonsälwen aktualisierje.
+Fals dit daach nit geböärt, druk dan dän „Aktualisierje“-Knoop (maast F5) fon dien Browser.</p>',
+	'coll-rendering_status' => '<strong>Stoatus:</strong> $1',
+	'coll-rendering_article' => '(Wikisiede: $1)',
+	'coll-rendering_page' => '(Siede: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informatione uur ju Deerstaalenge fon Sieden',
 	'coll-rendering_finished_title' => 'Kloor moaked',
-	'coll-rendering_finished_text' => '</strong>Ju Doatäi wuud mäd Ärfoulch moaked.</strong>
-<strong>[$1 Klik hier],</strong> uum ju Doatäi deeltouleeden.
+	'coll-rendering_finished_text' => '<strong>Ju Doatäi wuud mäd Ärfoulch moaked.</strong>
+<strong>[$1 Klik hier],</strong> uum ju Doatäi deeltouleeden.</strong>
 
 Bäst du nit mäd dät Resultoat toufree?
 Muugelkhaide tou ju Ferbeeterenge fon ju Uutgoawe finst du ap ju [[{{MediaWiki:Coll-helppage}}|Hälpesiede uur do Siedenkollektione]].',
-	'coll-notfound_title' => 'Kollektion nit fuunen',
-	'coll-notfound_text' => 'Dien Kollektion kuud nit fuunen wäide.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Deerstaalenge fon ju Siedeninformation',
+	'coll-notfound_title' => 'Bouk nit fuunen',
+	'coll-notfound_text' => 'Dien Bouk kuud nit fuunen wäide.',
+	'coll-download_notfound_title' => 'Doatäi nit fuunen',
 	'coll-is_cached' => '<ul><li>Der is ne twiskespiekerde Version fon dät Dokument foarhounden, so dät neen Renderjen nöödich waas. <a href="$1">Näiränderjen outwinge.</a></li></ul>',
 	'coll-excluded-templates' => '* Foarloagen uut ju Kategorie [[:Category:$1|$1]] wuuden uutsleeten.',
 	'coll-blacklisted-templates' => '* Foarloagen fon ju swotte Lieste [[:$1]] wuuden uutsleeten.',
 	'coll-return_to_collection' => 'Tourääch tou <a href="$1">$2</a>',
-	'coll-book_title' => 'Drukuutgoawe bestaale',
-	'coll-book_text' => "Du koast bie do foulgjende ''Print-on-Demand''-Partnere ne drukte Boukuutgoawe bestaale:",
-	'coll-order_from_pp' => 'Bestaal Bouk bie $1',
+	'coll-book_title' => 'As drukt Bouk bestaale',
+	'coll-book_text' => "Bestaal ne drukte Boukuutgoawe bie uus ''Print-on-Demand''-Partner.",
+	'coll-order_from_pp' => 'Foarbekiek bie $1',
 	'coll-about_pp' => 'Uur $1',
 	'coll-invalid_podpartner_title' => 'Uungultiger Print-on-Demand-Paatender',
 	'coll-invalid_podpartner_msg' => 'Do Angoawen tou dän Print-on-Demand-Paatender sunt failerhaft.
 Kontaktier dän MediaWiki-Administrator.',
 	'coll-license' => 'Lizenz',
 	'coll-return_to' => 'Tourääch tou [[:$1]]',
+	'coll-more_info' => 'Wiedere Informatione wiese',
+	'coll-hide_info' => 'Informatione fersteete',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress Bestaalinformation',
+	'coll-suggest_title' => 'Foarsloaine Sieden foar dien Bouk',
+	'coll-suggested_articles' => 'Foarsleeke',
+	'coll-suggest_reset_bans' => 'touräächsätte',
+	'coll-suggest_reset_bans_tooltip' => 'Toulääst wächhoalde Foarsleeke wiese',
 );
 
 /** Sundanese (Basa Sunda)
