@@ -3072,12 +3072,12 @@ $messages['sr-el'] = array(
 $messages['stq'] = array(
 	'coll-create_a_book' => 'Kollektion',
 	'coll-download_as' => 'As $1 deelleede',
-	'coll-add_category' => 'Kategorie bietouföigje',
-	'coll-clear_collection' => 'Touhoopestaalenge läskje',
-	'coll-helppage' => 'Help:Touhoopestaalengen',
-	'coll-load_collection' => 'Touhoopestaalenge leede',
+	'coll-add_category' => 'Aal Sieden uut disse Kategorie dien Bouk bietouföigje',
+	'coll-clear_collection' => 'Bouk läskje',
+	'coll-helppage' => 'Help:Bouke',
+	'coll-load_collection' => 'Bouk leede',
 	'coll-n_pages' => '$1 {{PLURAL:$1|Siede|Sieden}}',
-	'coll-show_collection' => 'Touhoopestaalenge wiese',
+	'coll-show_collection' => 'Bouk wiese',
 );
 
 /** Sundanese (Basa Sunda)
