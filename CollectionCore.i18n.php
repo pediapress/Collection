@@ -2008,6 +2008,15 @@ $messages['lb'] = array(
 	'coll-suggest_empty' => 'eidel',
 );
 
+/** Lezghian (Лезги)
+ * @author Namik
+ */
+$messages['lez'] = array(
+	'coll-bookscategory' => 'Ктаб',
+	'coll-help' => 'Куьмек',
+	'coll-helppage' => 'Help:Ктабар',
+);
+
 /** Limburgish (Limburgs)
  * @author Ooswesthoesbes
  */

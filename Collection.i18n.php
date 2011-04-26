@@ -6856,9 +6856,17 @@ $messages['ltg'] = array(
 );
 
 /** Latvian (Latviešu)
+ * @author GreenZeb
  * @author Papuass
  */
 $messages['lv'] = array(
+	'coll-format_label' => 'Formāts:',
+	'coll-remove' => 'Noņemt',
+	'coll-show' => 'Rādīt',
+	'coll-move_to_top' => 'Pārvietot uz augšu',
+	'coll-move_up' => 'Pārvietot augšup',
+	'coll-move_down' => 'Pārvietot lejup',
+	'coll-move_to_bottom' => 'Pārvietot uz leju',
 	'coll-save_collection' => 'Saglabāt grāmatu',
 	'coll-overwrite_title' => 'Lapa pastāv.
 Pārrakstīt?',
@@ -8138,6 +8146,18 @@ La lista es mesa a jorn a cada còp que clicatz suls botons d'apondon o de supre
 	'right-collectionsaveascommunitypage' => 'Salvar de libres sus de paginas comunautàrias',
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Odisha1
+ */
+$messages['or'] = array(
+	'coll-download_title' => 'ଡାଉନଲୋଡ',
+	'coll-download' => 'ଡାଉନଲୋଡ',
+	'coll-remove' => 'ବାହାର କରିବା',
+	'coll-show' => 'ଦେଖାଅ',
+	'coll-title' => 'ନାଆଁ:',
+	'coll-contents' => 'ଭିତର ଚିଜ',
+);
+
 /** Ossetic (Иронау)
  * @author Amikeco
  */
@@ -9203,6 +9223,7 @@ Non ge puè sckaffà cchiù otre pàgene.",
 	'coll-rendering_status' => '<strong>State:</strong> $1',
 	'coll-rendering_article' => '(pàgene de uicchi: $1)',
 	'coll-rendering_page' => '(pàgene: $1)',
+	'coll-rendering_finished_title' => 'Renderizzazzione spicciate',
 	'coll-notfound_title' => 'Libbre non acchiate',
 	'coll-notfound_text' => "'Mbossibbele acchiere 'a pàgene d'u libbre.",
 	'coll-download_notfound_title' => 'File non acchiate',
