@@ -443,6 +443,7 @@ $messages['bg'] = array(
 /** Bengali (বাংলা)
  * @author Bellayet
  * @author Jayantanth
+ * @author Wikitanvir
  */
 $messages['bn'] = array(
 	'coll-print_export' => 'মুদ্রণ/এক্সপোর্ট',
@@ -454,6 +455,8 @@ $messages['bn'] = array(
 	'coll-disable' => 'নিস্ক্রিয়',
 	'coll-book_creator_disable' => 'বই প্রস্তুতকারক নিস্ক্রিয় করো',
 	'coll-book_creator_disable_tooltip' => 'বই প্রস্তুতকারক ব্যবহার বন্ধ করুন',
+	'coll-add_linked_article' => 'আপনার বইয়ে উইকি পাতার সংযোগ দিন',
+	'coll-remove_linked_article' => 'আপনার বই থেকে উইকি পাতার সংযোগ অপসারণ করুন',
 	'coll-add_category' => 'এই বিষয়শ্রেণীটি আপনার বইয়ে যোগ করুন',
 	'coll-add_category_tooltip' => 'এই বিষয়শ্রেণীর সমস্ত উইকি পাতাগুলো আপনার বইয়ে যোগ করুন',
 	'coll-add_this_page' => 'এই পাতাটি আপনার বইয়ে যোগ করুন।',
@@ -2776,11 +2779,13 @@ $messages['roa-tara'] = array(
 	'coll-bookscategory' => 'Libbre',
 	'coll-clear_collection' => "Pulizze 'u libbre",
 	'coll-help' => 'Aijute',
+	'coll-help_tooltip' => "Fa vedè l'aijute pa ccreazione de le libbre",
 	'coll-helppage' => 'Help:Libbre',
 	'coll-load_collection' => "Careche 'nu libbre",
 	'coll-load_collection_tooltip' => "Careche quiste libbre cumme 'u toje libbre in curse",
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàgene|pàggene}}',
 	'coll-printable_version_pdf' => 'Versione in PDF',
+	'coll-remove_this_page' => "Live sta pàgene da 'u libbre tune",
 	'coll-show_collection' => "Fà vedè 'nu libbre",
 	'coll-make_suggestions' => 'Pàggene suggerite',
 	'coll-suggest_empty' => 'vacande',
