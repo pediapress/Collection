@@ -1246,6 +1246,7 @@ $messages['bjn'] = array(
 /** Bengali (বাংলা)
  * @author Bellayet
  * @author Jayantanth
+ * @author Wikitanvir
  */
 $messages['bn'] = array(
 	'coll-desc' => '[[Special:Book|বই তৈরি]]',
@@ -1333,12 +1334,16 @@ JavaScript সক্রিয় না করা পর্যন্ত, এই 
 	'coll-rendering_status' => '<strong>অবস্থা:</strong> $1',
 	'coll-rendering_article' => '(উইকি পাতা: $1)',
 	'coll-rendering_page' => '(পাতা: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/পাতার তথ্যের লেখা মুদ্রিত হচ্ছে',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/সংগ্রহের তথ্যাদির লেখা মুদ্রিত হচ্ছে',
 	'coll-rendering_finished_title' => 'রেন্ডারিং সম্পন্ন হয়েছে',
 	'coll-rendering_finished_text' => '<strong>ডকুমেন্ট ফাইল তৈরি হয়ে গেছে।</strong>
 আপনার কম্পিউটারে <strong>[$1 ফাইলটি ডাউলোড করুন]</strong> ।
 
 টীকা:
 * আউটপুটে আপনি সন্তুষ্ট নন? উন্নয়নের সম্ভাবনা জানতে [[{{MediaWiki:Coll-helppage}}|বই সংক্রান্ত সহায়িকা]] দেখুন।',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/পাতার তথ্যাদির লেখা মুদ্রিত হচ্ছে',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/সংগ্রহের তথ্যাদির লেখা মুদ্রিত হচ্ছে',
 	'coll-notfound_title' => 'বই পাওয়া যায়নি',
 	'coll-notfound_text' => 'বইয়ের পাতা খুঁজে পাওয়া যায়নি।',
 	'coll-download_notfound_title' => 'ফাইল পাওয়া যায়নি',
@@ -6396,7 +6401,7 @@ Di Sigg hee weed oohne JavaSkripp nit donn.</strong>',
 	'coll-download_title' => 'Eronger laade',
 	'coll-download_text' => 'Öm Ding Booch eronger ze laade, söhk Der e Fommaat uß, un donn op dat Knöppsche klecke.',
 	'coll-download_as_text' => 'Öm Ding Booch em $1-Fommaat erunger ze laade, donn dä Knopp klekke.',
-	'coll-download' => 'Eronger Laade',
+	'coll-download' => 'Eronger laade',
 	'coll-format_label' => 'Fommaat:',
 	'coll-remove' => 'Fott lohße',
 	'coll-show' => 'Zeich',
@@ -9228,6 +9233,7 @@ Non ge puè sckaffà cchiù otre pàgene.",
 	'coll-notfound_text' => "'Mbossibbele acchiere 'a pàgene d'u libbre.",
 	'coll-download_notfound_title' => 'File non acchiate',
 	'coll-download_failed_title' => "Errore durande 'u download",
+	'coll-download_failed_text' => "S'a verificate 'n'errore quanne ste scarecave 'u file: $1",
 	'coll-excluded-templates' => "* Le template jndr'à categorije [[:Category:$1|$1]] onne state escluse.",
 	'coll-blacklisted-templates' => '* Le template sus a lista gnore [[:$1]] onne state escluse.',
 	'coll-book_title' => "Ordene cumme 'nu libbre stambate",
@@ -9238,6 +9244,7 @@ Non ge puè sckaffà cchiù otre pàgene.",
 	'coll-return_to' => 'Tuèrne a [[:$1]]',
 	'coll-more_info' => "Fa vedè cchiù 'mbormaziune",
 	'coll-hide_info' => "Scunne le 'mbormaziune",
+	'coll-order_info_article' => "{{MediaWiki:Coll-helppage}}/'Mbormaziune sus a l'ordine de PediaPress",
 	'coll-suggested_articles' => 'Suggereminde',
 	'coll-suggest_reset_bans' => 'azeere',
 	'coll-suggest_reset_bans_tooltip' => 'Visualizze le commende luàte precedentemènde',
@@ -10000,7 +10007,7 @@ Opombe:
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Ustvarjanje informativnega besedila zbirke',
 	'coll-notfound_title' => 'Knjiga ni bila najdena',
 	'coll-notfound_text' => 'Stran v knjigi ni bila najdena.',
-	'coll-download_notfound_title' => 'Datoteka ni bila najdena',
+	'coll-download_notfound_title' => 'Datoteke ni mogoče najti',
 	'coll-download_notfound_text' => 'Datoteka, ki jo poskušate prenesti ne obstaja:
 Morda je bila izbrisana in jo je potrebno regenerirati.',
 	'coll-download_failed_title' => 'Napaka med prenosom',
@@ -10447,6 +10454,7 @@ $messages['su'] = array(
  * @author GameOn
  * @author H92
  * @author Jon Harald Søby
+ * @author Lokal Profil
  * @author M.M.S.
  * @author MagnusA
  * @author Najami
@@ -10456,7 +10464,7 @@ $messages['su'] = array(
  */
 $messages['sv'] = array(
 	'coll-desc' => '[[Special:Book|Skapa böcker]]',
-	'coll-book_creator_intro' => '<big>Med bokfunktionen kan du skapa en bok av valfria wikisidor. Du kan exportera boken i olika format, till exempel PDF eller ODF, eller beställa en tryckt kopia.</big>',
+	'coll-book_creator_intro' => "<big>Med ''bokfunktionen'' kan du skapa en bok som innehåller valfria wikisidor. Du kan exportera boken i olika format (till exempel PDF eller ODF) eller beställa en tryckt kopia.</big>",
 	'coll-manage_your_book' => 'Hantera din bok',
 	'coll-book_creator_help' => 'Se [[{{MediaWiki:Coll-helppage}}|hjälpsidan om böcker]] för mer information.',
 	'coll-start_book_creator' => 'Starta bokfunktionen',
