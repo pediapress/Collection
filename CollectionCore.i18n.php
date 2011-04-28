@@ -277,6 +277,14 @@ $messages['ast'] = array(
 	'coll-suggest_empty' => 'balero',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
+ */
+$messages['az'] = array(
+	'coll-help' => 'Kömək',
+	'coll-suggest_empty' => 'boş',
+);
+
 /** Bashkir (Башҡортса)
  * @author Assele
  * @author Haqmar
@@ -2291,6 +2299,7 @@ $messages['nds-nl'] = array(
 
 /** Dutch (Nederlands)
  * @author McDutchie
+ * @author Romaine
  * @author Siebrand
  * @author Tvdm
  */
@@ -2324,7 +2333,7 @@ $messages['nl'] = array(
 	'coll-remove_this_page' => 'Deze pagina uit uw boek verwijderen',
 	'coll-remove_page_tooltip' => 'De huidige wikipagina uit uw boek verwijderen',
 	'coll-show_collection' => 'Boek weergeven',
-	'coll-show_collection_tooltip' => 'Klik om ow boek te bewerken/downloaden/bestellen',
+	'coll-show_collection_tooltip' => 'Klik om uw boek te bewerken/downloaden/bestellen',
 	'coll-not_addable' => 'Deze pagina kan niet toegevoegd worden',
 	'coll-make_suggestions' => "Pagina's suggereren",
 	'coll-make_suggestions_tooltip' => "Suggesties weergeven op basis van de pagina's in uw boek",

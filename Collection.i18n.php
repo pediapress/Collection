@@ -836,6 +836,27 @@ $messages['ast'] = array(
 	'coll-about_pp' => 'Tocante a $1',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
+ */
+$messages['az'] = array(
+	'coll-collection' => 'Kitab',
+	'coll-collections' => 'Kitablar',
+	'coll-print_template_prefix' => 'Çap',
+	'coll-print_template_pattern' => '$1/Çap',
+	'coll-download_title' => 'Yüklə',
+	'coll-download' => 'Yüklə',
+	'coll-format_label' => 'Format:',
+	'coll-title' => 'Başlıq:',
+	'coll-subtitle' => 'Altbaşlıq:',
+	'coll-yes' => 'Bəli',
+	'coll-no' => 'Xeyr',
+	'coll-cancel' => 'Ləğv et',
+	'coll-rendering_article' => '(viki səhifə: $1)',
+	'coll-rendering_page' => '(səhifə: $1)',
+	'coll-suggest_reset_bans' => 'qur',
+);
+
 /** Bashkir (Башҡортса)
  * @author Assele
  * @author Haqmar
@@ -7430,7 +7451,9 @@ $messages['myv'] = array(
 	'coll-save_collection' => 'Ванстомс киниганть',
 	'coll-yes' => 'Истя',
 	'coll-no' => 'Арась',
+	'coll-overwrite' => 'Нардамс сёрмадомсто',
 	'coll-notfound_title' => 'Кинигась а муеви',
+	'coll-suggested_articles' => 'Мельть-ушодкст',
 	'coll-suggest_show' => 'невтемс',
 );
 
@@ -7583,6 +7606,7 @@ $messages['ne'] = array(
  * @author GerardM
  * @author McDutchie
  * @author Mwpnl
+ * @author Romaine
  * @author SPQRobin
  * @author Siebrand
  * @author Tvdm
@@ -7609,7 +7633,7 @@ U kunt het boek exporteren in verschillende bestandsformaten (bijvoorbeeld PDF o
 	'coll-couldnotremovearticle_title' => 'De wikipagina kon niet verwijderd worden',
 	'coll-couldnotremovearticle_msg' => 'De wikipagina kon niet verwijderd worden.',
 	'coll-noscript_text' => '<h1>JavaScript is vereist!</h1>
-<strong>Uw browser understeunt geen JavaScript of JavaScript is uitgeschakeld.
+<strong>Uw browser ondersteunt geen JavaScript of JavaScript is uitgeschakeld.
 Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong>',
 	'coll-savedbook_template' => 'opgeslagen_boek',
 	'coll-your_book' => 'Uw boek',
