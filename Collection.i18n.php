@@ -855,6 +855,7 @@ $messages['az'] = array(
 	'coll-rendering_article' => '(viki səhifə: $1)',
 	'coll-rendering_page' => '(səhifə: $1)',
 	'coll-suggest_reset_bans' => 'qur',
+	'coll-suggest_show' => 'göstər',
 );
 
 /** Bashkir (Башҡортса)
@@ -8177,14 +8178,16 @@ La lista es mesa a jorn a cada còp que clicatz suls botons d'apondon o de supre
 
 /** Oriya (ଓଡ଼ିଆ)
  * @author Odisha1
+ * @author Psubhashish
  */
 $messages['or'] = array(
 	'coll-download_title' => 'ଡାଉନଲୋଡ',
 	'coll-download' => 'ଡାଉନଲୋଡ',
 	'coll-remove' => 'ବାହାର କରିବା',
-	'coll-show' => 'ଦେଖାଅ',
+	'coll-show' => 'ଦେଖାଇବେ',
 	'coll-title' => 'ନାଆଁ:',
 	'coll-contents' => 'ଭିତର ଚିଜ',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a>କୁ ଫେରିଯାଆନ୍ତୁ</p>',
 );
 
 /** Ossetic (Иронау)
