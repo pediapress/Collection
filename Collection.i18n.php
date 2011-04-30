@@ -10663,12 +10663,13 @@ $messages['sw'] = array(
 
 /** Tamil (தமிழ்)
  * @author TRYPPN
+ * @author செல்வா
  */
 $messages['ta'] = array(
 	'coll-collection' => 'புத்தகம்',
-	'coll-collections' => 'புத்தகங்கள்',
+	'coll-collections' => 'நூல்கள்',
 	'coll-print_template_prefix' => 'அச்சிடு',
-	'coll-download_title' => 'பதிவிறக்கம் செய்',
+	'coll-download_title' => 'இறக்கு (பதிவிறக்கம் செய்)',
 	'coll-download' => 'பதிவிறக்கம் செய்',
 	'coll-remove' => 'நீக்குக',
 	'coll-show' => 'காட்டு',
@@ -10693,14 +10694,18 @@ $messages['ta'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Chaduvari
  * @author Kiranmayee
  * @author Veeven
  * @author వైజాసత్య
  */
 $messages['te'] = array(
 	'coll-desc' => '[[Special:Book|పుస్తకాలను తయారుచేసుకోండి]]',
+	'coll-manage_your_book' => 'మీ పుస్తకాన్ని నిర్వహించండి',
 	'coll-book_creator_help' => 'మరింత సమాచారం కొరకు [[{{MediaWiki:Coll-helppage}}|పుస్తకాల గురించిన సహాయపు పేజీ]]ని చూడండి.',
-	'coll-start_book_creator' => 'పుస్తకము మోడుని ప్రారంభించు',
+	'coll-start_book_creator' => 'పుస్తకం సృష్టికర్తను ప్రారంభించు',
+	'coll-book_creator_continue' => 'పుస్తకం సృష్టికర్తను వాడటం కొనసాగించు',
+	'coll-book_creator_disable_text' => "''పుస్తకం సృష్టికర్త'' అచేతనం చెయ్యబడుతుంది, మీరు పనిచేస్తున్న పుస్తకం తీసెయ్యబడుతుంది.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/పుస్తకము సృష్టికర్త  పాఠ్యము',
 	'coll-collection' => 'పుస్తకం',
 	'coll-collections' => 'పుస్తకాలు',
@@ -10713,10 +10718,14 @@ $messages['te'] = array(
 	'coll-couldnotaddarticle_msg' => 'వికీ పేజీని చేర్చలేకపోయాం.',
 	'coll-couldnotremovearticle_title' => 'వికి పేజిని తొలగించలేకపోయాము',
 	'coll-couldnotremovearticle_msg' => 'వికీ పేజీని తొలగించలేకపోయాం.',
+	'coll-noscript_text' => '<h1>JavaScript ఆవశ్యకం!</h1>
+<strong>మీ బ్రౌజరు JavaScript కు మద్దతివ్వదు. లేదా JavaScript అచేతనం చెయ్యబడి ఉంది.
+JavaScript చేతనం చేస్తే తప్ప, ఈ పేజీ సరిగ్గా పనిచెయ్యదు.</strong>',
 	'coll-savedbook_template' => 'భద్రపరచిన_పుస్తకం',
 	'coll-your_book' => 'మీ పుస్తకం',
 	'coll-download_title' => 'దింపుకోండి',
 	'coll-download_text' => 'మీ పుస్తకాన్ని దిగుమతి చేసుకోడానికి, ఫైలు ఫార్మాటుని ఎంచుకుని, ఈ బొత్తాన్ని నొక్కండి.',
+	'coll-download_as_text' => 'మీ పుస్తకాన్ని $1 ఫార్మాట్లో దించుకోవడానికి ఈ బొత్తాన్ని నొక్కండి.',
 	'coll-download' => 'దిగుమతి',
 	'coll-format_label' => 'ఫార్మాటు:',
 	'coll-remove' => 'తొలగించు',
@@ -10728,6 +10737,7 @@ $messages['te'] = array(
 	'coll-title' => 'శీర్షిక:',
 	'coll-subtitle' => 'ఉపశీర్షిక:',
 	'coll-contents' => 'విషయాలు',
+	'coll-drag_and_drop' => 'వికీ పేజీలు, అధ్యాయాలను తిరిగి పేర్చడానికి డ్రాగ్ & డ్రాపును వాడండి',
 	'coll-create_chapter' => 'కొత్త అధ్యాయాన్ని సృష్టించు',
 	'coll-sort_alphabetically' => 'పుస్తకములోని పేజీలను అక్షరక్రమంలో అమర్చు',
 	'coll-rename' => 'పేరుమార్చు',
@@ -10736,6 +10746,7 @@ $messages['te'] = array(
 	'coll-no_such_category' => 'అటువంటి వర్గం లేదు',
 	'coll-notitle_title' => 'ఆ పేజీ యొక్క శీర్షికని నిర్ణయించలేకున్నాం.',
 	'coll-post_failed_title' => 'POST అభ్యర్థన విఫలమైంది',
+	'coll-post_failed_msg' => '$1 కు  POST అభ్యర్ధన విఫలమైంది ($2).',
 	'coll-error_reponse' => 'సర్వరునుండి పొరపాటు అని స్పందన వచ్చింది',
 	'coll-empty_collection' => 'ఖాళీ పుస్తకం',
 	'coll-revision' => 'కూర్పు: $1',
@@ -10745,29 +10756,52 @@ $messages['te'] = array(
 	'coll-personal_collection_label' => 'వ్యక్తిగత పుస్తకము:',
 	'coll-community_collection_label' => 'సామూహిక పుస్తకం:',
 	'coll-save_collection' => 'పుస్తకముని భద్రపరచు',
+	'coll-save_category' => 'భద్రపరచిన పుస్తకాలన్నీ [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] వర్గానికి చేర్చబడ్డాయి.',
 	'coll-overwrite_title' => 'పేజీ ఉంది. దానిపైనే రాసేయాలా?',
 	'coll-overwrite_text' => '[[:$1]] అనే పేరుతో ఓ పేజీ ఇప్పటికే ఉంది.
 దాని స్ధానంలో మీ సేకరణని ఉంచాలా?',
 	'coll-yes' => 'అవును',
 	'coll-no' => 'కాదు',
+	'coll-load_overwrite_text' => 'మీ పుస్తకంలో ఈసరికే కొన్ని పేజీలున్నాయి.
+మీ పుస్తకన్ని ఓవరురైటు చేస్తారా? కొత్త కంటెంటును పాతిదాని వెనుక చేరుస్తారా? లేక పుస్తకం లోడు చెయ్యడాన్ని రద్దు చేస్తారా?',
+	'coll-overwrite' => 'ఓవరురైటు చెయ్యి',
 	'coll-append' => 'జతచేయి',
 	'coll-cancel' => 'రద్దు',
 	'coll-update' => 'తాజాకరించు',
 	'coll-limit_exceeded_title' => 'పుస్తకం మరీ పెద్దగా ఉంది',
 	'coll-limit_exceeded_text' => 'మీ పుస్తకము చాలా పెద్దగా ఉంది.
 మరిన్ని పేజీలు చేర్చలేము.',
+	'coll-rendering_text' => '<p><strong>పత్రం జనరేటు చేస్తున్నాం, వేచియుండండి.</strong></p>
+
+<p><strong>ప్రగతి:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>ఈ పేజీ కొన్ని సెకండ్లకోసారి ఆటోమాటిగ్గా రిఫ్రెష్ కావాల్సి ఉంది. 
+అలా కాకపోతే, బ్రౌజరు రిఫ్రెష్ బొత్తాన్ని నొక్కండి.</p>',
 	'coll-rendering_status' => '<strong>స్థితి:</strong> $1',
 	'coll-rendering_article' => '(వికీ పేజీ: $1)',
 	'coll-rendering_page' => '  (పేజీ: $1)',
+	'coll-rendering_finished_title' => 'రెండరింగు పూర్తైంది',
+	'coll-rendering_finished_text' => '<strong>పత్రం ఫైలు సృష్టించబడింది.</strong>
+<strong>[$1 ఫైలును మీ కంప్యూటర్లోకి దించుకోండి]</strong>.
+
+గమనికలు:
+* ఔట్ పుట్ సంతృప్తికరంగా లేదా? దాన్ని మెరుగుపరచే సంభావ్యతల కోసం [[{{MediaWiki:Coll-helppage}}|the help page about books]] చూడండి.',
 	'coll-notfound_title' => 'పుస్తకము కనబడలేదు',
 	'coll-notfound_text' => 'పుస్తకము పేజీ కనబడలేదు.',
 	'coll-download_notfound_title' => 'ఫైలు దొరకలేదు',
 	'coll-download_notfound_text' => 'మీరు దింపుకోవాలని ప్రయత్నిస్తున్న ఫైలు ఉనికిలో లేదు:
 బహుశా దాన్ని తొలగించి ఉంటారు మరియు దాన్ని మళ్ళీ తయారుచేయాల్సి ఉంటుంది.',
+	'coll-download_failed_title' => 'దించుకోవడంలో లోపం తలెత్తింది',
+	'coll-download_failed_text' => 'ఈ ఫైలును దించుకునేటపుడు లోపం తలెత్తింది: $1',
+	'coll-is_cached' => '<ul><li>కాషెలో ఈ పత్రపు కూర్పు ఒకటి కనిపించింది. అంచేత రెండరింగు అవసరం లేదు.
+<a href="$1">మళ్ళీ రెండరింగు చెయ్యాలని ఫోర్సు చెయ్యి.</a></li></ul>',
+	'coll-excluded-templates' => '* [[:Category:$1|$1]] వర్గంలోని మూసలను చేర్చలేదు.',
+	'coll-blacklisted-templates' => '* నిరోధ జాబితా [[:$1]] లోని మూసలను చేర్చలేదు.',
 	'coll-return_to_collection' => '<p>తిరిగి <a href="$1">$2</a></p>కి',
 	'coll-book_title' => 'ముద్రించిన పుస్తకములా తెప్పించుకోండి',
-	'coll-order_from_pp' => '$1 నుండి పుస్తకాన్ని ఆర్డర్ చెయ్యండి',
+	'coll-order_from_pp' => '$1 తో మునుజూపు',
 	'coll-about_pp' => '$1 గురించి',
+	'coll-invalid_podpartner_title' => 'సరైన POD భాగస్వామి కాదు',
 	'coll-license' => 'లైసెన్సు',
 	'coll-return_to' => 'తిరిగి [[:$1]]కి',
 	'coll-more_info' => 'మరింత సమాచారాన్ని చూపించు',
@@ -10775,6 +10809,7 @@ $messages['te'] = array(
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/పీడియాప్రెస్ ఆర్డరు సమాచారం',
 	'coll-suggest_title' => 'మీ పుస్తకానికై సూచించబడిన పేజీలు',
 	'coll-suggested_articles' => 'సలహాలు',
+	'coll-suggest_reset_bans' => 'మునుపటివలె',
 	'coll-suggest_reset_bans_tooltip' => 'గతంలో తొలగించిన సూచనలని చూపించు',
 	'coll-suggest_add_selected' => 'ఎంచుకున్న పేజీలను చేర్చు',
 	'coll-suggest_ban_selected' => 'ఎంచుకున్న పేజీలను తీసివేయి',
@@ -10784,6 +10819,8 @@ $messages['te'] = array(
 	'coll-suggest_article_ban' => '<strong>$1</strong> పేజీని సూచనల్లోని తొలగించాం ($2).',
 	'coll-suggest_article_add' => '<strong>$1</strong> అనే పేజీని మీ పుస్తకంలో చేర్చాం ($2).',
 	'coll-suggest_article_remove' => '<strong>$1</strong> అనే పుటని మీ పుస్తకంలో నుండి తొలగించాం ($2).',
+	'coll-suggest_undo_tooltip' => 'ఈ చర్యను రద్దు చెయ్యి',
+	'coll-suggest_undo' => 'రద్దు చెయ్యి',
 	'right-collectionsaveasuserpage' => 'పుస్తకములను సభ్యుని పేజి లాగ భద్రపరచుము',
 	'right-collectionsaveascommunitypage' => 'పుస్తకములను కమ్యూనిటీ పేజి లాగ భద్రపరచుము',
 );
@@ -10792,7 +10829,10 @@ $messages['te'] = array(
  * @author MF-Warburg
  */
 $messages['tet'] = array(
-	'coll-your_book' => 'Ó-nia livru',
+	'coll-collection' => 'Livru',
+	'coll-collections' => 'Livru sira',
+	'coll-your_book' => 'Ita-nia livru',
+	'coll-remove' => 'Hasai',
 	'coll-title' => 'Títulu:',
 	'coll-contents' => 'Konteúdu',
 	'coll-yes' => 'Sin',
@@ -10800,6 +10840,7 @@ $messages['tet'] = array(
 	'coll-cancel' => 'Para',
 	'coll-about_pp' => 'Kona-ba $1',
 	'coll-return_to' => 'Fali ba [[:$1]]',
+	'coll-suggest_your_book' => 'Ita-nia livru',
 );
 
 /** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
