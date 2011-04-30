@@ -3198,19 +3198,21 @@ $messages['sw'] = array(
 /** Tamil (தமிழ்)
  * @author Karthi.dr
  * @author TRYPPN
+ * @author செல்வா
  */
 $messages['ta'] = array(
 	'coll-disable' => 'செயலிழக்கச் செய்',
 	'coll-add_this_page' => 'உங்கள் புத்தகத்தில் இப்பக்கத்தைச் சேர்க்கவும்',
-	'coll-bookscategory' => 'புத்தகங்கள்',
+	'coll-bookscategory' => 'நூல்கள்',
 	'coll-help' => 'உதவி',
-	'coll-helppage' => 'உதவி:புத்தகங்கள்',
-	'coll-load_collection' => 'புத்தகத்தை ஏற்றவும்',
-	'coll-show_collection' => 'புத்தகத்தை காட்டவும்',
+	'coll-helppage' => 'உதவி:நூல்கள்',
+	'coll-load_collection' => 'நூலை ஏற்றவும்',
+	'coll-show_collection' => 'நூலைக் காட்டவும்',
 	'coll-suggest_empty' => 'ஒன்றுமில்லாத',
 );
 
 /** Telugu (తెలుగు)
+ * @author Chaduvari
  * @author Kiranmayee
  * @author Veeven
  */
@@ -3222,6 +3224,10 @@ $messages['te'] = array(
 	'coll-download_as' => '$1 క్రింద దిగుమతి చేసుకోండి',
 	'coll-download_as_tooltip' => 'ఈ పేజీ యొక్క $1 సంచికని దించుకోండి',
 	'coll-disable' => 'అచేతన పరచు',
+	'coll-book_creator_disable' => 'పుస్తకం సృష్టికర్తను అచేతనం చెయ్యి',
+	'coll-book_creator_disable_tooltip' => 'పుస్తకం సృష్టికర్తను వాడటం ఆపు',
+	'coll-add_linked_article' => 'మీ పుస్తకానికి లింకైన వికీ పేజీని చేర్చు',
+	'coll-remove_linked_article' => 'మీ పుస్తకం నుండి లింకున్న వికీ పేజీని తీసెయ్యి',
 	'coll-add_category' => 'పుస్తకముకు ఈ వర్గాన్ని చేర్చు',
 	'coll-add_category_tooltip' => 'ఈ వర్గంలోని అన్ని వికీ పేజీలనూ పుస్తకంలోనికి చేర్చు',
 	'coll-add_this_page' => 'ఈ పేజీని మీ పుస్తకములో చేర్చండి',
@@ -3233,20 +3239,28 @@ $messages['te'] = array(
 	'coll-help' => 'సహాయం',
 	'coll-help_tooltip' => 'పుస్తకాల్ని తయారుచేయడం గురించి సహాయాన్ని చూడండి',
 	'coll-helppage' => 'Help:పుస్తకాలు',
+	'coll-load_collection' => 'పుస్తకాన్ని లోడుచెయ్యి',
+	'coll-load_collection_tooltip' => 'ఈ పుస్తకాన్ని మీ ప్రస్తుత పుస్తకంగా లోడు చెయ్యండి',
 	'coll-n_pages' => '$1 {{PLURAL:$1|పుట|పుటలు}}',
 	'coll-printable_version_pdf' => 'PDF కూర్పు',
 	'coll-remove_this_page' => 'ఈ పుటని మీ పుస్తకం నుండి తొలగించండి',
 	'coll-remove_page_tooltip' => 'ప్రస్తుత వికీ పేజీని నా పుస్తకం నుండి తొలగించు',
 	'coll-show_collection' => 'పుస్తకముని చూపించు',
+	'coll-show_collection_tooltip' => 'మీ పుస్తకాన్ని మార్చేందుకు/ఎక్కించేందుకు/ఆర్డరు చేసేందుకు నొక్కండి',
 	'coll-not_addable' => 'ఈ పేజీని చేర్చలేము',
 	'coll-make_suggestions' => 'పేజీలను సూచించు',
 	'coll-make_suggestions_tooltip' => 'మీ పుస్తకంలోని పేజీల ఆధారంగా సూచనలని చూపిస్తుంది',
 	'coll-suggest_empty' => 'ఖాళీ',
 );
 
-/** Tetum (Tetun) */
+/** Tetum (Tetun)
+ * @author MF-Warburg
+ */
 $messages['tet'] = array(
 	'coll-create_a_book' => 'Kria livru ida',
+	'coll-bookscategory' => 'Livru sira',
+	'coll-helppage' => 'Help:Livru sira',
+	'coll-n_pages' => '{{PLURAL:$1|pájina ida|pájina $1}}',
 );
 
 /** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
