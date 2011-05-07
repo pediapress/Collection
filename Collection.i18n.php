@@ -4196,7 +4196,7 @@ Notas:
 	'coll-is_cached' => '<ul><li>Atopouse unha versión do documento na memoria caché, polo que non vai ser necesaria a renderización. <a href="$1">Forzala.</a></li></ul>',
 	'coll-excluded-templates' => '* O modelos que están na categoría "[[:Category:$1|$1]]" foron excluídos.',
 	'coll-blacklisted-templates' => '* O modelos da lista negra "[[:$1]]" foron excluídos.',
-	'coll-return_to_collection' => '<p>Volver a <a href="$1">$2</a></p>',
+	'coll-return_to_collection' => '<p>Volver a "<a href="$1">$2</a>"</p>',
 	'coll-book_title' => 'Encargar como un libro impreso',
 	'coll-book_text' => 'Obteña un libro impreso desde un dos nosos seguintes compañeiros de solicitudes de impresión:',
 	'coll-order_from_pp' => 'Vista previa con $1',
@@ -8183,6 +8183,7 @@ La lista es mesa a jorn a cada còp que clicatz suls botons d'apondon o de supre
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'coll-print_template_prefix' => 'ପ୍ରିଣ୍ଟ',
 	'coll-download_title' => 'ଡାଉନଲୋଡ',
 	'coll-download' => 'ଡାଉନଲୋଡ',
 	'coll-remove' => 'ବାହାର କରିବା',
