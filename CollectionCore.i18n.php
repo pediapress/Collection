@@ -2465,6 +2465,13 @@ $messages['oc'] = array(
 	'coll-suggest_empty' => 'void',
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Odisha1
+ */
+$messages['or'] = array(
+	'coll-help' => 'ସାହାଯ୍ୟ',
+);
+
 /** Ossetic (Иронау)
  * @author Amikeco
  */
