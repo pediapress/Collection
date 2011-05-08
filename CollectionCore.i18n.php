@@ -1654,6 +1654,19 @@ $messages['ig'] = array(
 	'coll-help' => 'Nkwádo',
 );
 
+/** Ingush (ГІалгІай Ğalğaj)
+ * @author Sapral Mikail
+ */
+$messages['inh'] = array(
+	'coll-bookscategory' => 'Китабаш',
+	'coll-clear_collection' => 'Китаба цIенае',
+	'coll-help' => 'Новкъoстал',
+	'coll-load_collection' => 'Китаба чуяккха',
+	'coll-n_pages' => '$1 {{PLURAL:$1|оагIув|оагIувнаш}}',
+	'coll-show_collection' => 'Китаба хьахокха',
+	'coll-suggest_empty' => 'яьсса',
+);
+
 /** Ido (Ido)
  * @author Malafaya
  */
