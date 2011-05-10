@@ -305,7 +305,6 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	function renderBookCreatorPage( $referer, $par ) {
-		global $wgCollectionStyleVersion;
 		global $wgOut;
 		global $wgScriptPath;
 		global $wgUser;
@@ -466,7 +465,6 @@ class SpecialCollection extends SpecialPage {
 	function renderSpecialPage() {
 		global $wgCollectionFormats;
 		global $wgCollectionVersion;
-		global $wgCollectionStyleVersion;
 		global $wgJsMimeType;
 		global $wgScriptPath;
 		global $wgOut;
@@ -1023,7 +1021,6 @@ class SpecialCollection extends SpecialPage {
 
 	function renderRenderingPage() {
 		global $wgCollectionVersion;
-		global $wgCollectionStyleVersion;
 		global $wgJsMimeType;
 		global $wgLang;
 		global $wgOut;
