@@ -390,7 +390,7 @@ class SpecialCollection extends SpecialPage {
 				return;
 			}
 		}
-		$wgOut->addWikiText( wfMsg( 'coll-book_creator_help' ) );
+		$wgOut->addWikiMsg( 'coll-book_creator_help' );
 	}
 
 	function renderStopBookCreatorPage( $referer ) {
