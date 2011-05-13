@@ -817,7 +817,7 @@ $messages['ast'] = array(
 	'coll-download_as_text' => 'Pa descargar el llibru en formatu $1 calca nel botón.',
 	'coll-download' => 'Descargar',
 	'coll-format_label' => 'Formatu:',
-	'coll-remove' => 'Eliminar',
+	'coll-remove' => 'Desaniciar',
 	'coll-show' => 'Amosar',
 	'coll-move_to_top' => 'Mover al principiu',
 	'coll-move_up' => 'Xubir',
@@ -7237,6 +7237,7 @@ $messages['mn'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Htt
  * @author Kaustubh
  * @author Mahitgar
  */
@@ -7247,7 +7248,7 @@ $messages['mr'] = array(
 	'coll-noscript_text' => '<h1>जावास्क्रीप्ट आवश्यक!</h1>
 <strong>तुमचा ब्राउझार जावास्क्रीप्ट वापरू शकत नाही किंवा वापर बंद केलेला आहे.
 जावास्क्रीप्ट चालू केल्याशिवाय हे पान व्यवस्थित काम करणार नाही.</strong>',
-	'coll-download_title' => 'गोळा केलेल्या पानांची पीडीएफ आवृत्ती उतरवून घ्या',
+	'coll-download_title' => 'उतरवा',
 	'coll-download_text' => 'तुम्ही गोळा केलेल्या पानांच्या पीडीएफ आवृत्त्या गोळा करण्यासाठी, दिलेली कळ दाबा.',
 	'coll-remove' => 'वगळा',
 	'coll-move_to_top' => 'सर्वात वर हलवा',
