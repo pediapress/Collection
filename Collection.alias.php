@@ -98,6 +98,11 @@ $specialPageAliases['frp'] = array(
 	'Book' => array( 'Lévro', 'Colèccion' ),
 );
 
+/** Gagauz (Gagauz) */
+$specialPageAliases['gag'] = array(
+	'Book' => array( 'Kiyat' ),
+);
+
 /** Galician (Galego) */
 $specialPageAliases['gl'] = array(
 	'Book' => array( 'Libro' ),
@@ -126,6 +131,11 @@ $specialPageAliases['hr'] = array(
 /** Upper Sorbian (Hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'Book' => array( 'Kniha', 'Zběrka' ),
+);
+
+/** Haitian (Kreyòl ayisyen) */
+$specialPageAliases['ht'] = array(
+	'Book' => array( 'Liv', 'Koleksyon' ),
 );
 
 /** Hungarian (Magyar) */
@@ -161,6 +171,11 @@ $specialPageAliases['it'] = array(
 /** Japanese (日本語) */
 $specialPageAliases['ja'] = array(
 	'Book' => array( 'ブック', 'コレクション' ),
+);
+
+/** Georgian (ქართული) */
+$specialPageAliases['ka'] = array(
+	'Book' => array( 'წიგნი' ),
 );
 
 /** Khmer (ភាសាខ្មែរ) */
@@ -305,7 +320,7 @@ $specialPageAliases['tl'] = array(
 
 /** Turkish (Türkçe) */
 $specialPageAliases['tr'] = array(
-	'Book' => array( 'Kitap', 'Koleksiyon' ),
+	'Book' => array( 'Kitap', 'Koleksiyon', 'Toplama' ),
 );
 
 /** Татарча (Татарча) */
@@ -321,6 +336,11 @@ $specialPageAliases['vec'] = array(
 /** Veps (Vepsan kel') */
 $specialPageAliases['vep'] = array(
 	'Book' => array( 'Kirj' ),
+);
+
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'Book' => array( 'Sách' ),
 );
 
 /** Simplified Chinese (‪中文(简体)‬) */
