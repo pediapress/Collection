@@ -10992,6 +10992,7 @@ Ojo şumo mexohed onro bo girdovariji xud ivaz kuned?',
 /** Thai (ไทย)
  * @author Ans
  * @author Harley Hartwell
+ * @author Korrawit
  * @author Manop
  * @author Octahedron80
  * @author Woraponboonkerd
@@ -11095,7 +11096,7 @@ $messages['th'] = array(
 	'coll-notfound_title' => 'ไม่พบหนังสือที่ต้องการ',
 	'coll-notfound_text' => 'ไม่สามารถค้นหาหน้าหนังสือ',
 	'coll-download_notfound_title' => 'ไม่พบไฟล์',
-	'coll-download_notfound_text' => 'ไฟล์ที่คุณกำลังพยายามดาวน์โหลดนั้นไม่ปรากฎ:
+	'coll-download_notfound_text' => 'ไฟล์ที่คุณกำลังพยายามดาวน์โหลดนั้นไม่ปรากฏ:
 ไฟล์อาจจะถูกลบหรือต้องการการสร้างใหม่อีกครั้งหนึ่ง',
 	'coll-download_failed_title' => 'เกิดความผิดพลาดระหว่างการดาวน์โหลด',
 	'coll-download_failed_text' => 'มีความผิดพลาดเกิดขึ้นเมื่อดาวน์โหลดไฟล์: $1',
