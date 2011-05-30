@@ -3426,7 +3426,7 @@ Nahi al duzu zure liburuaren gainetik idaztea, eduki berriak zerrendatzea edo li
 	'coll-overwrite' => 'Gainetik idatzi',
 	'coll-append' => 'Zerrendatu',
 	'coll-cancel' => 'Utzi',
-	'coll-update' => 'Berritu',
+	'coll-update' => 'Eguneratu',
 	'coll-limit_exceeded_title' => 'Liburua handiegia da',
 	'coll-limit_exceeded_text' => 'Zure liburua handiegia da.
 Ezin dira orri gehiago gehitu.',
