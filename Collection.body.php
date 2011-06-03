@@ -1267,7 +1267,7 @@ class SpecialCollection extends SpecialPage {
 
 	static function curlreq( $method, $url, $postFields, &$errorMessage, &$info,
 		$timeout = true, $toFile = null ) {
-		global $wgHTTPTimeout, $wgHTTPProxy, $wgTitle, $wgVersion;
+		global $wgHTTPTimeout, $wgHTTPProxy, $wgTitle, $wgRequest, $wgVersion;
 		global $wgCollectionMWServeCert;
 		global $wgCollectionVersion;
 
@@ -1276,7 +1276,7 @@ class SpecialCollection extends SpecialPage {
 		}
 		$c = curl_init( $url );
 		curl_setopt( $c, CURLOPT_PROXY, $wgHTTPProxy );
-		$userAgent = wfGetAgent();
+		$userAgent = $wgRequest->getHeader( 'User-Agent' );
 		if ( !$userAgent ) {
 			$userAgent = "Unknown user agent";
 		}
