@@ -7341,10 +7341,10 @@ $messages['mr'] = array(
  */
 $messages['ms'] = array(
 	'coll-desc' => '[[Special:Book|Mencipta buku]]',
-	'coll-book_creator_intro' => "<big>Dengan ''mod buku'', anda dapat mencipta buku yang terdiri daripada laman-laman wiki sembarangan. Anda boleh mengeksport buku dalam format-format berbeza (contohnya PDF atau ODF) ataupun memesan salinan tercetak.</big>",
+	'coll-book_creator_intro' => "<big>Dengan ''pencipta buku'', anda dapat mencipta buku yang terdiri daripada laman-laman wiki sembarangan. Anda boleh mengeksport buku dalam format-format berbeza (contohnya PDF atau ODF) ataupun memesan salinan tercetak.</big>",
 	'coll-manage_your_book' => 'Urus buku anda',
 	'coll-book_creator_help' => 'Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan tentang buku]] untuk maklumat lanjut.',
-	'coll-start_book_creator' => 'Mulakan mod buku',
+	'coll-start_book_creator' => 'Mulakan pencipta buku',
 	'coll-book_creator_continue' => 'Terus menggunakan pencipta buku',
 	'coll-book_creator_disable_text' => "''Pencipta buku'' akan dilumpuhkan dan buku yang sedang anda kerjakan akan dihapuskan.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Teks mod buku',
@@ -7420,12 +7420,16 @@ Jika tidak, sila tekan butang \'\'refresh\'\' di pelayar web anda.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(laman wiki: $1)',
 	'coll-rendering_page' => '(laman: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Merender teks maklumat laman',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Merender teks maklumat koleksi',
 	'coll-rendering_finished_title' => 'Penjanaan selesai',
 	'coll-rendering_finished_text' => '<strong>Fail dokumen tersebut telah dijana.</strong>
 <strong>[$1 Muat turun fail ini]</strong> ke dalam komputer anda.
 
 Catatan:
 * Tidak berpuas hati dengan output yang dihasilkan? Lihat [[{{MediaWiki:Coll-helppage}}|laman bantuan mengenai koleksi]] untuk mengetahui bagaimana anda boleh memperbaikinya lagi.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Merender teks maklumat laman',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Merender teks maklumat koleksi',
 	'coll-notfound_title' => 'Buku tidak dijumpai',
 	'coll-notfound_text' => 'Laman buku tidak dapat dijumpai.',
 	'coll-download_notfound_title' => 'Tidak menemui fail',
