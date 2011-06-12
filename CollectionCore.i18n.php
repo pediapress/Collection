@@ -710,6 +710,7 @@ $messages['cy'] = array(
 
 /** Danish (Dansk)
  * @author Byrial
+ * @author Peter Alberti
  * @author Thomas81
  */
 $messages['da'] = array(
@@ -722,6 +723,8 @@ $messages['da'] = array(
 	'coll-disable' => 'slå fra',
 	'coll-book_creator_disable' => 'Slå bogværktøjslinien fra',
 	'coll-book_creator_disable_tooltip' => 'Stop brugen af bogværktøjslinien',
+	'coll-add_linked_article' => 'Tilføj den linkede wikiside til din bog',
+	'coll-remove_linked_article' => 'Fjern den linkede wikiside fra din bog',
 	'coll-add_category' => 'Tilføj denne kategori til din bog',
 	'coll-add_category_tooltip' => 'Tilføj alle wikisider i kategorien til din bog',
 	'coll-add_this_page' => 'Tilføj denne side til din bog',
