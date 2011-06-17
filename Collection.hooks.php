@@ -41,7 +41,7 @@ class CollectionHooks {
 	static function buildNavUrls( $skin, &$navUrls ) {
 		global $wgUser;
 		global $wgCollectionPortletForLoggedInUsersOnly;
-		
+
 		if ( !$wgCollectionPortletForLoggedInUsersOnly || $wgUser->isLoggedIn() ) {
 			if ( isset( $navUrls['print'] ) ) {
 				// We move this guy out to our own box
@@ -65,7 +65,7 @@ class CollectionHooks {
 		if ( is_null( $title ) || !$title->exists() ) {
 			return;
 		}
-		
+
 		$namespace = $title->getNamespace();
 
 		if ( !in_array( $namespace, $wgCollectionArticleNamespaces )
@@ -159,7 +159,7 @@ class CollectionHooks {
 					Xml::element( 'a', $attribs, wfMsg( 'printableversion' ) ) );
 			}
 		}
-		
+
 		$out .= Xml::closeElement( 'ul' );
 
 		return $out;
@@ -195,7 +195,7 @@ class CollectionHooks {
 			$cmd = $wgRequest->getVal( 'bookcmd', '' );
 			if ( $cmd == 'suggest' ) {
 				$siteNotice .= self::renderBookCreatorBox( $title, $skin, 'suggest' );
-			} else if ( $cmd == '' ) {
+			} elseif ( $cmd == '' ) {
 				$siteNotice .= self::renderBookCreatorBox( $title, $skin, 'showbook' );
 			}
 			return true;
@@ -231,7 +231,7 @@ class CollectionHooks {
 		}
 
 		$wgOut->addModules( 'ext.collection.bookcreator' );
-		
+
 		$addRemoveState = $mode;
 
 		$html = Xml::element( 'div',
@@ -485,7 +485,7 @@ class CollectionHooks {
 		}
 		return true;
 	}
-	
+
 	/**
 	 * ResourceLoaderGetConfigVars hook
 	 */

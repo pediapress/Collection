@@ -78,7 +78,7 @@ class SpecialCollection extends SpecialPage {
 				}
 				if ( $wgRequest->getVal( 'disable' ) ) {
 					CollectionSession::disable();
-				} else if ( !$wgRequest->getVal( 'continue' ) ) {
+				} elseif ( !$wgRequest->getVal( 'continue' ) ) {
 					$this->renderStopBookCreatorPage( $title );
 					return;
 				}
@@ -278,13 +278,13 @@ class SpecialCollection extends SpecialPage {
 
 				if ( $wgRequest->getVal( 'resetbans' ) ) {
 					CollectionSuggest::run( 'resetbans' );
-				} else if ( isset( $add ) ) {
+				} elseif ( isset( $add ) ) {
 					CollectionSuggest::run( 'add', $add );
-				} else if ( isset( $ban ) ) {
+				} elseif ( isset( $ban ) ) {
 					CollectionSuggest::run( 'ban', $ban );
-				} else if ( isset( $remove ) ) {
+				} elseif ( isset( $remove ) ) {
 					CollectionSuggest::run( 'remove', $remove );
-				} else if ( isset( $addselected ) ) {
+				} elseif ( isset( $addselected ) ) {
 					$articleList = $wgRequest->getArray( 'articleList' );
 					if ( !is_null( $articleList ) ) {
 						CollectionSuggest::run( 'addAll', $articleList );
@@ -323,8 +323,8 @@ class SpecialCollection extends SpecialPage {
 		$coll = CollectionSession::getCollection();
 		$dialogtxt = wfMsg( 'coll-load_local_book' );
 
-		$wgOut->addScript( 
-			"<script type=\"$wgJsMimeType\">\n" . 
+		$wgOut->addScript(
+			"<script type=\"$wgJsMimeType\">\n" .
 			"var collection_dialogtxt = " . Xml::encodeJsVar( $dialogtxt ) . ";\n" .
 			"</script>" );
 
@@ -1231,7 +1231,7 @@ class SpecialCollection extends SpecialPage {
 				return array( 'error' => $errorMessage );
 			}
 		}
-		
+
 		if ( !$response ) {
 			$wgOut->showErrorPage(
 				'coll-post_failed_title',
@@ -1240,10 +1240,10 @@ class SpecialCollection extends SpecialPage {
 			);
 			return false;
 		}
-		
+
 		$json = new Services_JSON( SERVICES_JSON_LOOSE_TYPE );
 		$json_response = $json->decode( $response );
-		
+
 		if ( !$json_response ) {
 			$wgOut->showErrorPage(
 				'coll-mwserve_failed_title',
@@ -1252,7 +1252,7 @@ class SpecialCollection extends SpecialPage {
 			);
 			return false;
 		}
-		
+
 		if ( isset( $json_response['error'] ) && $json_response['error'] ) {
 			$wgOut->showErrorPage(
 				'coll-mwserve_failed_title',
@@ -1261,7 +1261,7 @@ class SpecialCollection extends SpecialPage {
 			);
 			return false;
 		}
-		
+
 		return $json_response;
 	}
 
