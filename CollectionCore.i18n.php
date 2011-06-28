@@ -1675,14 +1675,15 @@ $messages['ig'] = array(
 );
 
 /** Ingush (ГІалгІай Ğalğaj)
+ * @author Amire80
  * @author Sapral Mikail
  */
 $messages['inh'] = array(
 	'coll-bookscategory' => 'Китабаш',
-	'coll-clear_collection' => 'Китаба цIенае',
+	'coll-clear_collection' => 'Китаба цӀенае',
 	'coll-help' => 'Новкъoстал',
 	'coll-load_collection' => 'Китаба чуяккха',
-	'coll-n_pages' => '$1 {{PLURAL:$1|оагIув|оагIувнаш}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|оагӀув|оагӀувнаш}}',
 	'coll-show_collection' => 'Китаба хьахокха',
 	'coll-suggest_empty' => 'яьсса',
 );

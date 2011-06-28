@@ -5563,13 +5563,14 @@ $messages['ig'] = array(
 );
 
 /** Ingush (ГІалгІай Ğalğaj)
+ * @author Amire80
  * @author Sapral Mikail
  */
 $messages['inh'] = array(
 	'coll-collection' => 'Китаб',
 	'coll-collections' => 'Китабаш',
 	'coll-your_book' => 'Хьа китаб',
-	'coll-yes' => 'XIаа',
+	'coll-yes' => 'XӀаа',
 	'coll-no' => 'A',
 	'coll-notfound_title' => 'Китаб корая яц',
 	'coll-download_notfound_title' => 'Паьл корая яц',
@@ -7509,6 +7510,13 @@ $messages['myv'] = array(
 	'coll-notfound_title' => 'Кинигась а муеви',
 	'coll-suggested_articles' => 'Мельть-ушодкст',
 	'coll-suggest_show' => 'невтемс',
+);
+
+/** Mazanderani (مازِرونی)
+ * @author محک
+ */
+$messages['mzn'] = array(
+	'coll-about_pp' => 'دربارهٔ $1',
 );
 
 /** Nahuatl (Nāhuatl)
