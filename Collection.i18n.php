@@ -7652,6 +7652,7 @@ $messages['nds-nl'] = array(
 	'coll-your_book' => 'Joew boek',
 	'coll-download_title' => 'Oflaojen',
 	'coll-download_text' => 'Kies een bestaansfermaot en klik op de knoppe um joew boek binnen te haolen.',
+	'coll-rename' => 'Herneumen',
 );
 
 /** Nepali (नेपाली)
