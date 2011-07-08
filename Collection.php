@@ -374,7 +374,7 @@ function wfAjaxCollectionGetPopupData( $title ) {
 	$result = array();
 	$imagePath = "$wgScriptPath/extensions/Collection/images";
 	$t = Title::newFromText( $title );
-	if ( $t->isRedirect() ) {
+	if ( $t && $t->isRedirect() ) {
 		$a = new Article( $t, 0 );
 		$t = $a->followRedirect();
 		if ( $t instanceof Title ) {
