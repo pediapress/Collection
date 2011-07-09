@@ -235,7 +235,7 @@ class CollectionHooks {
 		$addRemoveState = $mode;
 
 		$html = Xml::element( 'div',
-			array( 'style' => wfMsg( 'coll-book_creator_box_style' ) ),
+			array( 'class' => 'collection-creatorbox' ),
 			null
 		);
 
@@ -245,16 +245,16 @@ class CollectionHooks {
 				'alt' => '',
 				'width' => '80',
 				'height' => '45',
-				'style' => 'float: left;',
+				'class' => 'mw-float-start collection-creatorbox-book',
 			),
 			'',
 			true
 		);
 
 		$html .= Xml::tags( 'div',
-			array( 'style' => 'margin-left: 90px;' ),
+			array( 'class' => 'collection-creatorbox-row' ),
 			Xml::tags( 'div',
-				array( 'style' => 'float: right' ),
+				array( 'class' => 'mw-float-end' ),
 				$skin->link(
 					Title::newFromText( wfMsg( 'coll-helppage' ) ),
 					Xml::element( 'img',
@@ -275,8 +275,8 @@ class CollectionHooks {
 					array( 'known', 'noclasses' )
 				)
 			)
-			. Xml::tags( 'strong',
-				array( 'style' => 'font-size: 1.2em' ),
+			. Xml::tags( 'span',
+				array( 'class' => 'collection-creatorbox-title' ),
 				wfMsgHtml( 'coll-book_creator' )
 			)
 			. ' ('
@@ -296,7 +296,7 @@ class CollectionHooks {
 		$html .= Xml::tags( 'div',
 			array(
 				'id' => 'coll-book_creator_box',
-				'style' => 'margin-left: 90px; margin-bottom: 0;',
+				'class' => 'collection-creatorbox-row',
 			),
 			self::getBookCreatorBoxContent( $skin, $title, $addRemoveState, $oldid )
 	 	);
@@ -371,7 +371,6 @@ class CollectionHooks {
 					'alt' => '',
 					'width' => '16',
 					'height' => '16',
-					'style' => 'vertical-align: text-bottom',
 				)
 			)
 			. '&#160;' . wfMsgHtml( $captionMsg ),
@@ -392,7 +391,7 @@ class CollectionHooks {
 		if ( $ajaxHint == 'showbook' ) {
 			return Xml::tags( 'strong',
 				array(
-					'style' => 'margin-left: 10px;',
+					'class' => 'collection-creatorbox-iconlink',
 				),
 				Xml::element( 'img',
 					array(
@@ -400,7 +399,6 @@ class CollectionHooks {
 						'alt' => '',
 						'width' => '16',
 						'height' => '16',
-						'style' => 'vertical-align: text-bottom',
 					)
 				)
 				. '&#160;' . wfMsgHtml( 'coll-show_collection' )
@@ -415,7 +413,6 @@ class CollectionHooks {
 						'alt' => '',
 						'width' => '16',
 						'height' => '16',
-						'style' => 'vertical-align: text-bottom',
 					)
 				)
 				. '&#160;' . wfMsgHtml( 'coll-show_collection' )
@@ -423,7 +420,7 @@ class CollectionHooks {
 				array(
 					'rel' => 'nofollow',
 					'title' => wfMsg( 'coll-show_collection_tooltip' ),
-					'style' => 'margin-left: 10px',
+					'class' => 'collection-creatorbox-iconlink',
 				),
 				array(),
 				array( 'known', 'noclasses' )
@@ -439,7 +436,7 @@ class CollectionHooks {
 		if ( $ajaxHint == 'suggest' ) {
 			return Xml::tags( 'strong',
 				array(
-					'style' => 'margin-left: 10px;',
+					'class' => 'collection-creatorbox-iconlink',
 				),
 				Xml::element( 'img',
 					array(
@@ -468,7 +465,7 @@ class CollectionHooks {
 				array(
 					'rel' => 'nofollow',
 					'title' => wfMsg( 'coll-make_suggestions_tooltip' ),
-					'style' => 'margin-left: 10px',
+					'class' => 'collection-creatorbox-iconlink',
 				),
 				array( 'bookcmd' => 'suggest', ),
 				array( 'known', 'noclasses' )
