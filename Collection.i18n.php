@@ -7401,7 +7401,8 @@ $messages['ms'] = array(
 	'coll-save_collection' => 'Simpan buku',
 	'coll-save_category' => 'Semua buku tersimpan ditambah ke kategori [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Laman telah pun wujud. Tulis ganti?',
-	'coll-overwrite_text' => 'Laman dengan nama [[:$1]] telah pun wujud. Adakah anda mahu menggantikannya dengan koleksi anda?',
+	'coll-overwrite_text' => 'Laman yang bernama [[:$1]] sudah pun wujud.
+Adakah anda ingin menggantinya dengan buku anda?',
 	'coll-yes' => 'Ya',
 	'coll-no' => 'Tidak',
 	'coll-load_overwrite_text' => 'Buku anda telah pun mengandungi beberapa laman. Adakah anda mahu menulis ganti buku anda, menambah kandungan baru tersebut, atau batal?',
