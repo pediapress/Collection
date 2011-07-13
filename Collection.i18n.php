@@ -7470,8 +7470,8 @@ Mungkin ia telah dipadam dan perlu dijanakan semula.',
 	'coll-suggest_undo_tooltip' => 'Buat asal tindakan ini',
 	'coll-suggest_undo' => 'buat asal',
 	'coll-load_local_book' => 'Klik OK untuk meneruskan dengan buku anda, %TITLE%, yang mengandungi %NUMPAGES% laman wiki. Klik Cancel untuk menghapuskannya dan mula dengan buku kosong.',
-	'right-collectionsaveasuserpage' => 'Simpan buku-buku sebagai laman pengguna',
-	'right-collectionsaveascommunitypage' => 'Simpan buku-buku sebagai laman masyarakat',
+	'right-collectionsaveasuserpage' => 'Menyimpan buku-buku sebagai laman pengguna',
+	'right-collectionsaveascommunitypage' => 'Menyimpan buku-buku sebagai laman masyarakat',
 );
 
 /** Maltese (Malti)
@@ -12495,7 +12495,7 @@ $messages['zh-hans'] = array(
 	'coll-invalid_podpartner_title' => '无效的印刷合作伙伴',
 	'coll-invalid_podpartner_msg' => '提供的印刷合作伙伴无效。
 请联系你的MediaWiki管理员。',
-	'coll-license' => '许可协议',
+	'coll-license' => '授权协议',
 	'coll-return_to' => '返回到[[:$1]]',
 	'coll-more_info' => '显示更多信息',
 	'coll-hide_info' => '隐藏信息',
