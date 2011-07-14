@@ -3081,6 +3081,7 @@ La listo estas ĝisdatigita iam ajn vi klakas la butonojn aldoni aŭ forigi.',
  * @author Locos epraix
  * @author Manuelt15
  * @author McDutchie
+ * @author Mor
  * @author Pertile
  * @author Platonides
  * @author Remember the dot
@@ -3206,16 +3207,16 @@ Por favor, contacta con tu administrador MediaWiki.',
 	'coll-hide_info' => 'Ocultar información',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress ordenar información',
 	'coll-suggest_title' => 'Páginas sugeridas para tu libro',
-	'coll-suggest_intro_text' => 'Sugerencias están basadas en el conjunto actual de páginas wiki de tu libro.
-La lista es actualizada cada vez que haces click en los botones de agregar o remover.',
+	'coll-suggest_intro_text' => 'Las sugerencias están basadas en el conjunto actual de páginas wiki de tu libro.
+La lista se actualiza cada vez que haces click en los botones de agregar o quitar.',
 	'coll-suggested_articles' => 'Sugerencias',
 	'coll-suggest_reset_bans' => 'reestablecer',
 	'coll-suggest_reset_bans_tooltip' => 'Mostrar sugerencias previamente removidas',
 	'coll-suggest_add_selected' => 'Agregar páginas seleccionadas',
-	'coll-suggest_ban_selected' => 'Remover páginas seleccionadas',
+	'coll-suggest_ban_selected' => 'Quitar las páginas seleccionadas',
 	'coll-suggest_your_book' => 'Tu libro',
 	'coll-suggest_show' => 'mostrar',
-	'coll-suggest_ban_tooltip' => 'Remover esta página de la lista de sugerencias',
+	'coll-suggest_ban_tooltip' => 'Quitar esta página de la lista de sugerencias',
 	'coll-suggest_article_ban' => 'Página <strong>$1</strong> ha sido removida de las sugerencias ($2).',
 	'coll-suggest_article_add' => 'Página <strong>$1</strong> ha sido agregada a tu libro ($2).',
 	'coll-suggest_article_remove' => 'Página <strong>$1</strong> ha sido removida de tu libro ($2).',

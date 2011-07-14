@@ -977,6 +977,7 @@ $messages['eo'] = array(
  * @author Crazymadlover
  * @author Imre
  * @author Locos epraix
+ * @author Mor
  * @author Omnipaedista
  * @author Remember the dot
  * @author Sanbec
@@ -992,7 +993,7 @@ $messages['es'] = array(
 	'coll-book_creator_disable' => 'Deshabilitar creador de libro',
 	'coll-book_creator_disable_tooltip' => 'Dejar de usar el creador de libro',
 	'coll-add_linked_article' => 'Agregar página wiki vinculada a tu libro',
-	'coll-remove_linked_article' => 'Remover página wiki vinculada a tu libro',
+	'coll-remove_linked_article' => 'Eliminar página wiki vinculada de tu libro',
 	'coll-add_category' => 'Añadir esta categoría a tu libro',
 	'coll-add_category_tooltip' => 'Agregar todas las páginas wiki en esta categoría a tu libro',
 	'coll-add_this_page' => 'Añadir esta página a su libro',
@@ -1000,7 +1001,7 @@ $messages['es'] = array(
 	'coll-bookscategory' => 'Libros',
 	'coll-clear_collection' => 'Vaciar libro',
 	'coll-clear_collection_confirm' => '¿Realmente quieres borrar completamente tu libro?',
-	'coll-clear_collection_tooltip' => 'Remover todas las páginas wiki de tu libro actual',
+	'coll-clear_collection_tooltip' => 'Quitar todas las páginas wiki de su libro actual',
 	'coll-help' => 'Ayuda',
 	'coll-help_tooltip' => 'Mostrar ayuda acerca de la creación de libros',
 	'coll-helppage' => 'Help:Libros',
@@ -1008,8 +1009,8 @@ $messages['es'] = array(
 	'coll-load_collection_tooltip' => 'Cargar este libro como su libro actual',
 	'coll-n_pages' => '$1 {{PLURAL:$1|página|páginas}}',
 	'coll-printable_version_pdf' => 'Versión PDF',
-	'coll-remove_this_page' => 'Remover esta página de tu libro',
-	'coll-remove_page_tooltip' => 'Remover la página wiki actual de tu libro',
+	'coll-remove_this_page' => 'Quitar esta página de tu libro',
+	'coll-remove_page_tooltip' => 'Quitar la página wiki actual de tu libro',
 	'coll-show_collection' => 'Mostrar libro',
 	'coll-show_collection_tooltip' => 'Haz click para editar/descargar/ordenar tu libro',
 	'coll-not_addable' => 'esta página no puede ser agregada',
