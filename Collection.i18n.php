@@ -1004,6 +1004,13 @@ JavaScript ғәмәлдә булмаған саҡта был бит дөрөҫ �
 	'right-collectionsaveascommunitypage' => 'Китаптарҙы берләшмәнең бите рәүешендә һаҡлау',
 );
 
+/** Bavarian (Boarisch)
+ * @author Mucalexx
+ */
+$messages['bar'] = array(
+	'coll-community_collection_label' => 'Gmoahschoftlichs Buach',
+);
+
 /** Belarusian (Беларуская)
  * @author Тест
  */
@@ -2158,21 +2165,25 @@ Mae'r rhestr yn cael ei adnewyddu bob tro yr ydych yn pwyso ar y botymau ychwane
 /** Danish (Dansk)
  * @author Hylle
  * @author Jon Harald Søby
+ * @author Peter Alberti
  * @author Thomas81
  */
 $messages['da'] = array(
 	'coll-desc' => '[[Special:Book|Skab bøger]]',
 	'coll-book_creator_intro' => '<big>Med bogværktøjslinien kan du oprette en bog, der indeholder valgfrie wiki-artikler. Du kan eksportere bogen i forskellige formater (fx PDF eller ODF) eller bestille et trykt eksemplar.</big>',
 	'coll-manage_your_book' => 'Administrer din bog',
+	'coll-book_creator_help' => 'Se [[{{MediaWiki:Coll-helppage}}|hjælpesiden om bøger]] for mere information.',
 	'coll-start_book_creator' => 'Start bogværktøjslinien',
 	'coll-book_creator_continue' => 'Forsæt med at bruge bogværktøjslinien',
 	'coll-book_creator_disable_text' => "''Bogværktøjet'' vil blive deaktiveret, og den bog du arbejder på vil blive fjernet.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Bogskabertekst',
 	'coll-collection' => 'Bog',
 	'coll-collections' => 'Bøger',
 	'coll-exclusion_category_title' => 'Udeluk på tryk',
 	'coll-print_template_prefix' => 'Udskriv',
 	'coll-print_template_pattern' => '$1/udskriv',
 	'coll-unknown_subpage_title' => 'Ukendt underside',
+	'coll-unknown_subpage_text' => 'Denne underside til [[Special:Book|Bog]] findes ikke',
 	'coll-couldnotaddarticle_title' => 'Kunne ikke tilføje wiki-artiklen',
 	'coll-couldnotaddarticle_msg' => 'Wiki-siden kunne ikke tilføjes.',
 	'coll-couldnotremovearticle_title' => 'Kunne ikke fjerne wiki-artikel',
@@ -2210,6 +2221,7 @@ Denne side vil ikke virke korrekt, medmindre JavaScript er aktiveret.</strong>',
 	'coll-mwserve_failed_msg' => 'En fejl opstod på renderingsserveren: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Fejlrespons fra serveren',
 	'coll-empty_collection' => 'Tom bog',
+	'coll-revision' => 'Version: $1',
 	'coll-save_collection_title' => 'Gem og del din bog',
 	'coll-save_collection_text' => 'Vælg en placering til din bog:',
 	'coll-login_to_save' => 'Hvis du vil gemme bøger til senere brug, skal du [[Special:UserLogin|logge ind eller oprette en konto]].',
@@ -2278,6 +2290,7 @@ Kontakt venligst din MediaWiki-administrator.',
 	'coll-suggest_ban_selected' => 'Fjern valgte sider',
 	'coll-suggest_your_book' => 'Din bog',
 	'coll-suggest_show' => 'vis',
+	'coll-suggest_article_ban' => 'Siden <strong>$1</strong> er blevet fjernet fra forslagene ($2).',
 	'coll-suggest_article_add' => 'Siden <strong>$1</strong> er blevet tilføjet til din bog ($2).',
 	'coll-suggest_article_remove' => 'Siden <strong>$1</strong> er blevet fjernet fra din bog ($2).',
 	'coll-suggest_undo_tooltip' => 'Fortryd denne handling',
