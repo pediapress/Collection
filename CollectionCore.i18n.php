@@ -128,6 +128,7 @@ $messages['af'] = array(
  */
 $messages['an'] = array(
 	'coll-help' => 'Aduya',
+	'coll-n_pages' => '$1 {{PLURAL:$1|pachina|pachinas}}',
 );
 
 /** Arabic (العربية)
