@@ -8269,8 +8269,9 @@ $messages['or'] = array(
 	'coll-return_to_collection' => '<p><a href="$1">$2</a>କୁ ଫେରିଯାଆନ୍ତୁ</p>',
 );
 
-/** Ossetic (Иронау)
+/** Ossetic (Ирон)
  * @author Amikeco
+ * @author Bouron
  */
 $messages['os'] = array(
 	'coll-download_title' => 'Æрбавгæн',
@@ -8278,7 +8279,7 @@ $messages['os'] = array(
 	'coll-title' => 'Сæргонд:',
 	'coll-yes' => 'О',
 	'coll-no' => 'Нæ',
-	'coll-cancel' => 'Нæ бæззы',
+	'coll-cancel' => 'Ныууадзын',
 );
 
 /** Deitsch (Deitsch)
