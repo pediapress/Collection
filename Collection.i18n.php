@@ -7668,7 +7668,7 @@ $messages['nds-nl'] = array(
 	'coll-savedbook_template' => 'op-esleugen_boek',
 	'coll-your_book' => 'Joew boek',
 	'coll-download_title' => 'Binnenhaolen',
-	'coll-download_text' => 'Kies een bestaandsfermaot en klik op de knoppe um joew boek binnen te haolen.',
+	'coll-download_text' => 'Kies n bestaandsfermaot en klik op de knoppe um joew boek binnen te haolen.',
 	'coll-rename' => 'Herneumen',
 );
 
@@ -12394,6 +12394,7 @@ $messages['yue'] = array(
  * @author Chenzw
  * @author Hydra
  * @author Liangent
+ * @author PhiLiP
  * @author Wmr89502270
  * @author Xiaomingyan
  */
@@ -12444,8 +12445,8 @@ $messages['zh-hans'] = array(
 	'coll-rename_chapter' => '请输入章节的新名称',
 	'coll-no_such_category' => '无本分类',
 	'coll-notitle_title' => '无法确定该页标题。',
-	'coll-post_failed_title' => '发送申请失败',
-	'coll-post_failed_msg' => '发送至$1的申请失败（$2）。',
+	'coll-post_failed_title' => '发送POST请求失败',
+	'coll-post_failed_msg' => '发送至$1的POST请求失败（$2）。',
 	'coll-mwserve_failed_title' => '生成服务器出错',
 	'coll-mwserve_failed_msg' => '渲染服务器出错：<nowiki>$1</nowiki>',
 	'coll-error_reponse' => '来自服务器的错误响应',
