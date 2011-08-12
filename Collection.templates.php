@@ -444,11 +444,10 @@ class CollectionSuggestTemplate extends QuickTemplate {
 
 	// needed for Ajax functions
 	function getProposalList () {
-		global $wgServer;
-		global $wgScript;
+		global $wgScript, $wgScriptPath;
 
-		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
-		$baseUrl = $wgServer . $wgScript . "/";
+		$mediapath = $wgScriptPath . '/extensions/Collection/images/';
+		$baseUrl = $wgScript . "/";
 
 		$prop = $this->data['proposals'];
 		$out = '';
