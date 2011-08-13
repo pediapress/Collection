@@ -3532,14 +3532,14 @@ $messages['fa'] = array(
 	'coll-desc' => '[[Special:Book|ایجاد کتاب]]',
 	'coll-book_creator_intro' => "<big>با ''کتاب‌ساز'' می‌توانید کتابی بسازید که دارای صفحات ویکی دلخواه شماست. می‌توانید کتاب را در فرمت‌های مختلف (برای مثال پی‌دی‌اف یا اودی‌اف) برون‌بری کنید یا سفارش یک کپی چاپی را بدهید.</big>",
 	'coll-manage_your_book' => 'کتاب خود را مدیریت کنید',
-	'coll-book_creator_help' => 'برای اطلاعات بیش‌تر [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای کتاب‌ها]] را ببینید.',
-	'coll-start_book_creator' => 'کتابساز را آغاز کن',
-	'coll-book_creator_continue' => 'به استفاده از کتابساز ادامه بده',
+	'coll-book_creator_help' => 'برای اطلاعات بیشتر [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای کتاب‌ها]] را ببینید.',
+	'coll-start_book_creator' => 'کتاب‌ساز را آغاز کن',
+	'coll-book_creator_continue' => 'به استفاده از کتاب‌ساز ادامه بده',
 	'coll-book_creator_disable_text' => "''پدیدآور کتاب'' غیرفعال خواهد شد و کتابی که شما بر آن کار می‌کنید حذف خواهد شد.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/متن پدیدآور کتاب',
 	'coll-collection' => 'کتاب',
 	'coll-collections' => 'کتاب‌ها',
-	'coll-exclusion_category_title' => 'صرف نظر در چاپ',
+	'coll-exclusion_category_title' => 'مستثنی از چاپ',
 	'coll-print_template_prefix' => 'چاپ',
 	'coll-print_template_pattern' => 'چاپ/$1',
 	'coll-unknown_subpage_title' => 'زیرصفحهٔ ناشناس',
@@ -3549,7 +3549,7 @@ $messages['fa'] = array(
 	'coll-couldnotremovearticle_title' => 'نتوانست صفحه ویکی را حذف کند',
 	'coll-couldnotremovearticle_msg' => 'صفحهٔ ویکی نتوانست حذف شود.',
 	'coll-noscript_text' => '<h1>جاوااسکریپت لازم دارید!</h1>
-<strong>مرورگر شما جاوا اسکریپت را پشتیبانی نمی‌کند یا جاوا اسکیریپت شما خاموش است.
+<strong>مرورگر شما جاوااسکریپت را پشتیبانی نمی‌کند یا جاوااسکیریپت شما خاموش است.
 این صفحه به طور صحیح عمل نخواهد کرد، مگر اینکه جاوااسکیریپت فعال شود.</strong>',
 	'coll-savedbook_template' => 'کتاب_ذخیره‌شده',
 	'coll-your_book' => 'کتاب شما',
@@ -3617,12 +3617,12 @@ $messages['fa'] = array(
 	'coll-rendering_page' => '(صفحه: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل متن اطلاعات صفحه',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل مجموعه متون اطلاعات',
-	'coll-rendering_finished_title' => 'پایان ترجمه',
+	'coll-rendering_finished_title' => 'رندرکردن به پایان رسید',
 	'coll-rendering_finished_text' => '<strong>پروندهٔ سند ایجاد شده‌است.</strong>
-آن را به روی رایانهٔ خود <strong>[$1 بارگیری کنید]</strong>.
+بر روی رایانهٔ خود آن را <strong>[$1 بارگیری کنید]</strong>.
 
-نکته:
-* از خروجی راضی نیستید؟ [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای مجموعه‌ها]] را ببینید تا از امکان بهبود آن با خبر شوید.',
+نکته‌ها:
+* از خروجی راضی نیستید؟ برای مطلع‌شدن از امکان‌های بهبوددادن آن [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنما در رابطه با کتاب‌ها]] را ببینید.',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل متن اطلاعات صفحه',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل مجموعه متون اطلاعات',
 	'coll-notfound_title' => 'کتاب پیدا نشد',
@@ -3633,8 +3633,8 @@ $messages['fa'] = array(
 	'coll-download_failed_title' => 'خطا در طول بارگیری',
 	'coll-download_failed_text' => 'هنگام بارگیری پروندهٔ $1 خطا داده شد',
 	'coll-is_cached' => '<ul><li>یک نسخهٔ کاشه‌گیری شده از این سند پیدا شد، به همین خاطر ترجمه لازم نبود. <a href="$1">ترجمهٔ اجباری.</a></li></ul>',
-	'coll-excluded-templates' => '* از الگوهای رده [[:Category:$1|$1]] صرف نظر شد.',
-	'coll-blacklisted-templates' => '* از الگوهای فهرست سیاه [[:$1]] صرف نظر شد.',
+	'coll-excluded-templates' => '* از الگوهای ردهٔ [[:Category:$1|$1]] صرف نظر شده‌است.',
+	'coll-blacklisted-templates' => '* از الگوهای فهرست سیاه [[:$1]] صرف نظر شده‌است.',
 	'coll-return_to_collection' => '<p>بازگشت به <a href="$1">$2</a></p>',
 	'coll-book_title' => 'سفارش به صورت کتاب چاپ شده',
 	'coll-book_text' => 'با مراجعه به این شرکای چاپ-با-درخواست یک کتاب چاپ شده تهیه کنید:',
@@ -3645,7 +3645,7 @@ $messages['fa'] = array(
 لطفاً با مدیر مدیاویکی خود تماس بگیرید.',
 	'coll-license' => 'اجازه‌نامه',
 	'coll-return_to' => 'بازگشت به [[:$1]]',
-	'coll-more_info' => 'اطلاعات بیش‌تر را نشان بده',
+	'coll-more_info' => 'اطلاعات بیشتر را نشان بده',
 	'coll-hide_info' => 'اطلاعات را پنهان کن',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/دسته‌بندی اطلاعات پدیاپرس',
 	'coll-suggest_title' => 'صفحات پیشنهادی برای کتابتان',
