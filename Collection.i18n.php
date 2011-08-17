@@ -290,7 +290,7 @@ $messages['niu'] = array(
 	'coll-cancel' => 'Tiaki',
 );
 
-/** Goanese Konkani (Latin) (कोंकणी/Konknni  (Latin))
+/** Goan Konkani (Latin) (कोंकणी/Konknni  (Latin))
  * @author Deepak D'Souza
  */
 $messages['gom-latn'] = array(
@@ -3617,12 +3617,12 @@ $messages['fa'] = array(
 	'coll-rendering_page' => '(صفحه: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل متن اطلاعات صفحه',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل مجموعه متون اطلاعات',
-	'coll-rendering_finished_title' => 'رندرکردن به پایان رسید',
-	'coll-rendering_finished_text' => '<strong>پروندهٔ سند ایجاد شده‌است.</strong>
-بر روی رایانهٔ خود آن را <strong>[$1 بارگیری کنید]</strong>.
+	'coll-rendering_finished_title' => 'رندر به پایان رسید',
+	'coll-rendering_finished_text' => '<strong>پرونده ایجاد شده‌است.</strong>
+آن را بر روی رایانهٔ خود <strong>[$1 بارگیری کنید]</strong>.
 
 نکته‌ها:
-* از خروجی راضی نیستید؟ برای مطلع‌شدن از امکان‌های بهبوددادن آن [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنما در رابطه با کتاب‌ها]] را ببینید.',
+* از خروجی راضی نیستید؟ برای مطلع‌شدن از شیوه‌های بهبود آن، [[{{MediaWiki:Coll-helppage}}|راهنمای کتاب‌ها]] را مطالعه فرمایید.',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل متن اطلاعات صفحه',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تحویل مجموعه متون اطلاعات',
 	'coll-notfound_title' => 'کتاب پیدا نشد',
@@ -7673,6 +7673,7 @@ $messages['nds-nl'] = array(
 );
 
 /** Nepali (नेपाली)
+ * @author Bhawani Gautam
  * @author Bhawani Gautam Rhk
  */
 $messages['ne'] = array(
@@ -9664,7 +9665,7 @@ $messages['rue'] = array(
 	'right-collectionsaveascommunitypage' => 'Укладаня книг як сторінок комуніты',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
