@@ -2507,7 +2507,7 @@ $messages['or'] = array(
 	'coll-help' => 'ସାହାଯ୍ୟ',
 );
 
-/** Ossetic (Иронау)
+/** Ossetic (Ирон)
  * @author Amikeco
  */
 $messages['os'] = array(
@@ -2928,7 +2928,7 @@ $messages['rue'] = array(
 	'coll-suggest_empty' => 'порожня',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
