@@ -3245,7 +3245,7 @@ La lista se actualiza cada vez que haces click en los botones de agregar o quita
  * @author Pikne
  */
 $messages['et'] = array(
-	'coll-desc' => '[[Special:Book|Loo raamatuid]]',
+	'coll-desc' => 'Võimaldab [[Special:Book|raamatuid luua]].',
 	'coll-book_creator_intro' => '<big>Raamatuloojaga saad luua suvalistest viki lehekülgedest koosneva raamatu. Saad oma raamatu erinevatesse vormingutesse (näiteks PDF või ODF) eksportida või tellida trükitud eksemplari.</big>',
 	'coll-manage_your_book' => 'Raamatu haldamine',
 	'coll-book_creator_help' => 'Täiendava teabe jaoks vaata [[{{MediaWiki:Coll-helppage}}|raamatute abilehte]].',
