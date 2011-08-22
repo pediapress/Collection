@@ -7810,7 +7810,7 @@ Neem contact op met uw MediaWiki-beheerder.',
 	'coll-license' => 'Licentie',
 	'coll-return_to' => 'Terug naar [[:$1]]',
 	'coll-more_info' => 'Meer informatie weergeven',
-	'coll-hide_info' => 'Informatie verbergen',
+	'coll-hide_info' => 'Gegevens verbergen',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestelinformatie PediaPress',
 	'coll-suggest_title' => 'Paginasuggesties voor uw boek',
 	'coll-suggest_intro_text' => "Suggesties zijn gebaseerd op de huidige selectie van wikipagina's in uw boek.
