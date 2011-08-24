@@ -306,7 +306,6 @@ class SpecialCollection extends SpecialPage {
 
 	function renderBookCreatorPage( $referer, $par ) {
 		global $wgOut;
-		global $wgScriptPath;
 		global $wgUser;
 		global $wgJsMimeType;
 
@@ -315,12 +314,8 @@ class SpecialCollection extends SpecialPage {
 
 		$wgOut->addWikiMsg(  'coll-book_creator_intro' );
 
-		$imagepath = "$wgScriptPath/extensions/Collection/images";
-		$jspath = "$wgScriptPath/extensions/Collection/js";
-
 		$wgOut->addModules( 'ext.collection.checkLoadFromLocalStorage' );
 
-		$coll = CollectionSession::getCollection();
 		$dialogtxt = wfMsg( 'coll-load_local_book' );
 
 		$wgOut->addScript(
@@ -464,16 +459,11 @@ class SpecialCollection extends SpecialPage {
 
 	function renderSpecialPage() {
 		global $wgCollectionFormats;
-		global $wgCollectionVersion;
-		global $wgJsMimeType;
-		global $wgScriptPath;
 		global $wgOut;
 
 		if ( !CollectionSession::hasSession() ) {
 			CollectionSession::startSession();
 		}
-
-		$jspath = "$wgScriptPath/extensions/Collection/js";
 
 		$this->setHeaders();
 		$wgOut->setPageTitle( wfMsg( 'coll-manage_your_book' ) );
@@ -541,10 +531,17 @@ class SpecialCollection extends SpecialPage {
 
 	static function addArticleFromName( $namespace, $name, $oldid = 0 ) {
 		$title = Title::makeTitleSafe( $namespace, $name );
-		if ( !$title ) return false;
+		if ( !$title ) {
+			return false;
+		}
 		return self::addArticle( $title, $oldid );
 	}
 
+	/**
+	 * @param $title Title
+	 * @param $oldid int
+	 * @return bool
+	 */
 	static function addArticle( $title, $oldid = 0 ) {
 		global $wgCollectionHierarchyDelimiter;
 
@@ -598,6 +595,11 @@ class SpecialCollection extends SpecialPage {
 		return self::removeArticle( $title, $oldid );
 	}
 
+	/**
+	 * @param $title Title
+	 * @param $oldid int
+	 * @return bool
+	 */
 	static function removeArticle( $title, $oldid = 0 ) {
 		if ( !CollectionSession::hasSession() ) {
 			return false;
@@ -773,6 +775,11 @@ class SpecialCollection extends SpecialPage {
 		return null;
 	}
 
+	/**
+	 * @param $title Title
+	 * @param $append bool
+	 * @return array|bool
+	 */
 	function loadCollection( $title, $append = false ) {
 		global $wgOut;
 
@@ -1011,7 +1018,7 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	function renderRenderingPage() {
-		global $wgCollectionVersion, $wgJsMimeType, $wgLang, $wgOut, $wgRequest, $wgScriptPath;
+		global $wgLang, $wgOut, $wgRequest;
 
 		$response = self::mwServeCommand( 'render_status', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
@@ -1118,6 +1125,12 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->disable();
 	}
 
+	/**
+	 * @param $title Title
+	 * @param $oldid
+	 * @param $writer
+	 * @return
+	 */
 	function renderArticle( $title, $oldid, $writer ) {
 		global $wgOut;
 

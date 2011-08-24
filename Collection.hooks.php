@@ -24,6 +24,11 @@
 class CollectionHooks {
 	/**
 	 * Callback for hook SkinBuildSidebar
+	 *
+	 * @param $skin Skin
+	 * @param $bar
+	 *
+	 * @return bool
 	 */
 	static function buildSidebar( $skin, &$bar ) {
 		global $wgUser;
@@ -38,6 +43,11 @@ class CollectionHooks {
 		return true;
 	}
 
+	/**
+	 * @param $skin Skin
+	 * @param $navUrls
+	 * @return bool
+	 */
 	static function buildNavUrls( $skin, &$navUrls ) {
 		global $wgUser;
 		global $wgCollectionPortletForLoggedInUsersOnly;
@@ -53,6 +63,10 @@ class CollectionHooks {
 
 	/**
 	 * Return HTML-code to be inserted as portlet
+	 *
+	 * @param $sk Skin
+	 *
+	 * @return string
 	 */
 	static function getPortlet( $sk ) {
 		global $wgRequest;
@@ -215,14 +229,18 @@ class CollectionHooks {
 		return true;
 	}
 
+	/**
+	 * @param $title Title
+	 * @param $skin Skin
+	 * @param $mode string
+	 * @return string
+	 */
 	static function renderBookCreatorBox( $title, $skin, $mode = '' ) {
 		global $wgCollectionStyleVersion;
-		global $wgJsMimeType;
 		global $wgOut;
 		global $wgScriptPath;
 		global $wgRequest;
 
-		$jsPath = "$wgScriptPath/extensions/Collection/js";
 		$imagePath = "$wgScriptPath/extensions/Collection/images";
 		$ptext = $title->getPrefixedText();
 		$oldid = $wgRequest->getVal( 'oldid', 0 );
@@ -315,6 +333,14 @@ class CollectionHooks {
 			. self::getBookCreatorBoxSuggestLink( $skin, $imagePath, $ajaxHint );
 	}
 
+	/**
+	 * @param $sk Skin
+	 * @param $imagePath
+	 * @param $ajaxHint
+	 * @param $title Title
+	 * @param $oldid
+	 * @return string
+	 */
 	static function getBookCreatorBoxAddRemoveLink( $sk, $imagePath, $ajaxHint, $title, $oldid ) {
 		$namespace = $title->getNamespace();
 		$ptext = $title->getPrefixedText();
