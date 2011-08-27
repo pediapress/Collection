@@ -6712,6 +6712,7 @@ Wann dat net sollt de fall sinn, da klickt w.e.g. op den Aktualiséieren/Refresh
 Opgepasst:
 *Sidd Dir net zefridde mam Resultat? Kuckt [[{{MediaWiki:Coll-helppage}}|d'Hëllefssäit iwwer Bicher]] fir Méiglechkeete fir et ze verbesseren.",
 	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Informatiounstext iwwert d'Verschaffe vu Säiten",
+	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Informatiounstext iwwert d'Duerstelle vu Sammlungen",
 	'coll-notfound_title' => 'Buch net fonnt',
 	'coll-notfound_text' => "D'Buch-Säit konnt net fonnt ginn.",
 	'coll-download_notfound_title' => 'Fichier gouf net fonnt',
