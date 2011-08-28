@@ -12,7 +12,7 @@ if ( !defined( 'MEDIAWIKI' ) ) die( - 1 );
  */
 class CollectionPageTemplate extends QuickTemplate {
 	function execute() {
-		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
+		$mediapath = $GLOBALS['wgExtensionAssetsPath'] . '/Collection/images/';
 ?>
 
 <div class="mw-float-start collection-column collection-column-left">
@@ -53,7 +53,7 @@ $listTemplate->execute();
 
 <div class="mw-float-start collection-column collection-column-right">
 
-	<div class="collection-column-right-box">
+	<div class="collection-column-right-box" id="coll-orderbox">
 		<h2><span class="mw-headline"><?php $this->msg( 'coll-book_title' ) ?></span></h2>
 		<?php
 $partnerData = $this->data['podpartners']['pediapress'];
@@ -90,7 +90,7 @@ echo $GLOBALS['wgOut']->parse( '{{:' . $t . '}}' );
 <?php } ?>
 	</div>
 
-	<div class="collection-column-right-box">
+	<div class="collection-column-right-box" id="coll-downloadbox">
 		<h2><span class="mw-headline"><?php $this->msg( 'coll-download_title' ) ?></span></h2>
 		<?php if ( count( $this->data['formats'] ) == 1 ) {
 			$writer = array_rand( $this->data['formats'] );
