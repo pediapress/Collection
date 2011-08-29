@@ -216,12 +216,12 @@ function wfAjaxPostCollection( $collection = '', $redirect = '' ) {
 	$r = new AjaxResponse();
 	if ( $redirect ) {
 		$title = Title::newFromText( $redirect );
-		$redirecturl = $title->getFullURL();
+		$redirecturl = wfExpandUrl( $title->getFullURL(), PROTO_CURRENT );
 		$r->setResponseCode( 302 );
 		header( 'Location: ' . $redirecturl );
 	} else {
 		$title = SpecialPage::getTitleFor( 'Book' );
-		$redirecturl = $title->getFullURL();
+		$redirecturl = wfExpandUrl( $title->getFullURL(), PROTO_CURRENT );
 		$r->setContentType( 'application/json' );
 		$r->addText( $json->encode( array( 'redirect_url' => $redirecturl ) ) );
 	}
