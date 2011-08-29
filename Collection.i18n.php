@@ -3529,8 +3529,8 @@ Zerrenda gaurkotzen da gehitu edo kendu botoietan klik egiten duzun bakoitzean.'
  * @author Wayiran
  */
 $messages['fa'] = array(
-	'coll-desc' => '[[Special:Book|ایجاد کتاب]]',
-	'coll-book_creator_intro' => "<big>با ''کتاب‌ساز'' می‌توانید کتابی بسازید که دارای صفحات ویکی دلخواه شماست. می‌توانید کتاب را در فرمت‌های مختلف (برای مثال پی‌دی‌اف یا اودی‌اف) برون‌بری کنید یا سفارش یک کپی چاپی را بدهید.</big>",
+	'coll-desc' => '[[Special:Book|کتاب‌ساز]]',
+	'coll-book_creator_intro' => "<big>با ''کتاب‌ساز'' می‌توانید کتابی بسازید که دارای صفحات دلخواه شما از ویکی‌است. می‌توانید کتاب را در فرمت‌های مختلف (برای مثال پی‌دی‌اف یا اودی‌اف) برون‌بری کنید یا سفارش یک کپی چاپی را بدهید.</big>",
 	'coll-manage_your_book' => 'کتاب خود را مدیریت کنید',
 	'coll-book_creator_help' => 'برای اطلاعات بیشتر [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای کتاب‌ها]] را ببینید.',
 	'coll-start_book_creator' => 'کتاب‌ساز را آغاز کن',
@@ -3577,8 +3577,8 @@ $messages['fa'] = array(
 	'coll-notitle_title' => 'عنوان صفحه قابل تشخیص نبود.',
 	'coll-post_failed_title' => 'خطا در درخواست POST',
 	'coll-post_failed_msg' => 'درخواست POST به $1 شکست خورد ($2).',
-	'coll-mwserve_failed_title' => 'خطا در کارگزار ترجمه‌کننده',
-	'coll-mwserve_failed_msg' => 'خطایی در کارگزار ترجمه‌کننده رخ داد: <nowiki>$1</nowiki>',
+	'coll-mwserve_failed_title' => 'خطا در کارگزار رندرکننده',
+	'coll-mwserve_failed_msg' => 'خطایی در کارگزار رندرکننده رخ داد: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'پیغام خطا از طرف کارگزار',
 	'coll-empty_collection' => 'کتاب خالی',
 	'coll-revision' => 'نسخه: $1',
@@ -3605,7 +3605,7 @@ $messages['fa'] = array(
 	'coll-limit_exceeded_title' => 'کتاب بیش از اندازه بزرگ است',
 	'coll-limit_exceeded_text' => 'کتاب شما بیش از اندازه بزرگ است است.
 امکان افزودن صفحهٔ جدیدی را ندارید.',
-	'coll-rendering_title' => 'در حال ترجمه دادن',
+	'coll-rendering_title' => 'رندرکردن',
 	'coll-rendering_text' => '<p><strong>لطفاً در مدتی که سند در حال ایجاد است شکیبا باشید.</strong></p>
 
 <p><strong>پیشرفت:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
@@ -3632,7 +3632,7 @@ $messages['fa'] = array(
 شاید پاک شده باشد و به بازتولید نیاز داشته باشد.',
 	'coll-download_failed_title' => 'خطا در طول بارگیری',
 	'coll-download_failed_text' => 'هنگام بارگیری پروندهٔ $1 خطا داده شد',
-	'coll-is_cached' => '<ul><li>یک نسخهٔ کاشه‌گیری شده از این سند پیدا شد، به همین خاطر ترجمه لازم نبود. <a href="$1">ترجمهٔ اجباری.</a></li></ul>',
+	'coll-is_cached' => '<ul><li>یک نسخهٔ کاشه‌گیری شده از این سند پیدا شد، به همین خاطر رندرکردن لازم نبود. <a href="$1">ترجمهٔ اجباری.</a></li></ul>',
 	'coll-excluded-templates' => '* از الگوهای ردهٔ [[:Category:$1|$1]] صرف نظر شده‌است.',
 	'coll-blacklisted-templates' => '* از الگوهای فهرست سیاه [[:$1]] صرف نظر شده‌است.',
 	'coll-return_to_collection' => '<p>بازگشت به <a href="$1">$2</a></p>',

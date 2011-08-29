@@ -3808,6 +3808,7 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
  * @author Liangent
+ * @author Xiaomingyan
  */
 $messages['zh-hant'] = array(
 	'coll-print_export' => '列印/匯出',
@@ -3816,7 +3817,7 @@ $messages['zh-hant'] = array(
 	'coll-book_creator' => '圖書創建器',
 	'coll-download_as' => '下載為 $1',
 	'coll-download_as_tooltip' => '下載這個wiki頁面的$1版本',
-	'coll-disable' => '禁用',
+	'coll-disable' => '停用',
 	'coll-book_creator_disable' => '禁用圖書創建器',
 	'coll-book_creator_disable_tooltip' => '停止使用圖書創建器',
 	'coll-add_category' => '將此分類增加到圖書',
