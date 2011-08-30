@@ -1060,7 +1060,8 @@ class SpecialCollection extends SpecialPage {
 
 			$template = new CollectionRenderingTemplate();
 			$template->set( 'status',  $status );
-			$template->set( 'progress', $response['status']['progress'] );
+			if ( !isset( $response['status']['progress'] ) ) $response['status']['progress'] = 1.00;
+		  $template->set( 'progress', $response['status']['progress'] );
 			$wgOut->addTemplate( $template );
 			break;
 		case 'finished':
@@ -1082,24 +1083,28 @@ class SpecialCollection extends SpecialPage {
 		global $wgOut;
 		global $wgRequest;
 		global $wgCollectionContentTypeToFilename;
-
+		
 		$tempfile = tmpfile();
 		$r = self::mwServeCommand( 'render_status', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 			'writer' => $wgRequest->getVal( 'writer' ),
 		) );
-		$errorMessage = '';
+		
 		$info = false;
 		if ( isset( $r['url'] ) ) {
-			self::curlreq( 'GET', $r['url'], array(), $errorMessage, $info, $timeout = false, $toFile = $tempfile );
+      $result = Http::get( $r['url'] );
+      if ($result) {
+			  fwrite($tempfile, $result);
+			  $info = true;
+			}
 			$content_type = $r['content_type'];
 			$content_length = $r['content_length'];
 			$content_disposition = $r['content_disposition'];
 		} else {
 			$info = self::mwServeCommand( 'download', array(
-				'collection_id' => $wgRequest->getVal( 'collection_id' ),
-				'writer' => $wgRequest->getVal( 'writer' ),
-			), $timeout = false, $toFile = $tempfile );
+			  'collection_id' => $wgRequest->getVal( 'collection_id' ),
+			  'writer' => $wgRequest->getVal( 'writer' ),
+			) );
 			$content_type = $info['content_type'];
 			$content_length = $info['download_content_length'];
 			$content_disposition = null;
@@ -1202,7 +1207,7 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->addTemplate( $template );
 	}
 
-	static function mwServeCommand( $command, $args, $timeout = true, $toFile = null ) {
+	static function mwServeCommand( $command, $args ) {
 		global $wgOut;
 		global $wgCollectionMWServeURL;
 		global $wgCollectionMWServeCredentials;
@@ -1216,22 +1221,13 @@ class SpecialCollection extends SpecialPage {
 		if ( $wgCollectionMWServeCredentials ) {
 			$args['login_credentials'] = $wgCollectionMWServeCredentials;
 		}
-		$errorMessage = '';
-		$info = false;
-		$response = self::curlreq( 'POST', $serveURL, $args, $errorMessage, $info, $timeout, $toFile );
-		if ( $toFile ) {
-			if ( $info ) {
-				return $info;
-			} else {
-				return array( 'error' => $errorMessage );
-			}
-		}
+		$response = Http::post($serveURL, array('postData' => $args));
 
 		if ( !$response ) {
 			$wgOut->showErrorPage(
 				'coll-post_failed_title',
 				'coll-post_failed_msg',
-				array( $wgCollectionMWServeURL, $errorMessage )
+				array( $wgCollectionMWServeURL )
 			);
 			return false;
 		}
@@ -1260,63 +1256,4 @@ class SpecialCollection extends SpecialPage {
 		return $json_response;
 	}
 
-	static function curlreq( $method, $url, $postFields, &$errorMessage, &$info,
-		$timeout = true, $toFile = null ) {
-		global $wgHTTPTimeout, $wgHTTPProxy, $wgTitle, $wgRequest, $wgVersion;
-		global $wgCollectionMWServeCert;
-		global $wgCollectionVersion;
-
-		if ( $method == 'GET' ) {
-			$url = wfAppendQuery( $url, wfArrayToCGI( $postFields ) );
-		}
-		$c = curl_init( $url );
-		curl_setopt( $c, CURLOPT_PROXY, $wgHTTPProxy );
-		$userAgent = $wgRequest->getHeader( 'User-Agent' );
-		if ( !$userAgent ) {
-			$userAgent = "Unknown user agent";
-		}
-		$userAgent .= " (via MediaWiki/$wgVersion, Collection/$wgCollectionVersion)";
-		curl_setopt( $c, CURLOPT_USERAGENT, $userAgent );
-		if ( $method == 'POST' ) {
-			curl_setopt( $c, CURLOPT_POST, true );
-			curl_setopt( $c, CURLOPT_POSTFIELDS, $postFields );
-		}
-		curl_setopt( $c, CURLOPT_HTTPHEADER, array( 'Expect:' ) );
-		curl_setopt( $c, CURLOPT_HEADER, false );
-		if ( is_object( $wgTitle ) ) {
-			curl_setopt( $c, CURLOPT_REFERER, wfExpandUrl( $wgTitle->getFullURL(), PROTO_CURRENT ) );
-		}
-		if ( $timeout ) {
-			curl_setopt( $c, CURLOPT_TIMEOUT, $wgHTTPTimeout );
-		}
-		/* Allow the use of self-signed certificates by referencing
-		 * a local (to the mediawiki install) copy of the signing
-		 * certificate */
-		if ( !( $wgCollectionMWServeCert === null ) ) {
-			curl_setopt ( $c, CURLOPT_SSL_VERIFYPEER, TRUE );
-			curl_setopt ( $c, CURLOPT_CAINFO, $wgCollectionMWServeCert );
-		}
-
-		if ( $toFile ) {
-			curl_setopt( $c, CURLOPT_FILE, $toFile );
-		} else {
-			curl_setopt( $c, CURLOPT_RETURNTRANSFER, true );
-		}
-		$result = curl_exec( $c );
-		$text = false;
-		$info = false;
-		if ( curl_errno( $c ) != CURLE_OK ) {
-			$errorMessage = curl_error( $c );
-		} elseif ( curl_getinfo( $c, CURLINFO_HTTP_CODE ) != 200 ) {
-			$errorMessage = 'HTTP status ' . curl_getinfo( $c, CURLINFO_HTTP_CODE );
-		} else {
-			$info = curl_getinfo( $c );
-			if ( !$toFile ) {
-				$text = $result;
-			}
-			$errorMessage = '';
-		}
-		curl_close( $c );
-		return $text;
-	}
 }
