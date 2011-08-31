@@ -312,7 +312,7 @@ class SpecialCollection extends SpecialPage {
 		$this->setHeaders();
 		$wgOut->setPageTitle( wfMsg( 'coll-book_creator' ) );
 
-		$wgOut->addWikiMsg(  'coll-book_creator_intro' );
+		$wgOut->addWikiMsg( 'coll-book_creator_intro' );
 
 		$wgOut->addModules( 'ext.collection.checkLoadFromLocalStorage' );
 
@@ -393,7 +393,7 @@ class SpecialCollection extends SpecialPage {
 
 		$this->setHeaders();
 		$wgOut->setPageTitle( wfMsg( 'coll-book_creator_disable' ) );
-		$wgOut->addWikiMsg(  'coll-book_creator_disable_text' );
+		$wgOut->addWikiMsg( 'coll-book_creator_disable_text' );
 
 		$wgOut->addHTML(
 			Xml::tags( 'form',
@@ -1059,9 +1059,11 @@ class SpecialCollection extends SpecialPage {
 			}
 
 			$template = new CollectionRenderingTemplate();
-			$template->set( 'status',  $status );
-			if ( !isset( $response['status']['progress'] ) ) $response['status']['progress'] = 1.00;
-		  $template->set( 'progress', $response['status']['progress'] );
+			$template->set( 'status', $status );
+			if ( !isset( $response['status']['progress'] ) ) { 
+				$response['status']['progress'] = 1.00; 
+			}
+			$template->set( 'progress', $response['status']['progress'] );
 			$wgOut->addTemplate( $template );
 			break;
 		case 'finished':
@@ -1092,18 +1094,18 @@ class SpecialCollection extends SpecialPage {
 		
 		$info = false;
 		if ( isset( $r['url'] ) ) {
-      $result = Http::get( $r['url'] );
-      if ($result) {
-			  fwrite($tempfile, $result);
-			  $info = true;
+			$result = Http::get( $r['url'] );
+			if ($result) {
+				fwrite($tempfile, $result);
+				$info = true;
 			}
 			$content_type = $r['content_type'];
 			$content_length = $r['content_length'];
 			$content_disposition = $r['content_disposition'];
 		} else {
 			$info = self::mwServeCommand( 'download', array(
-			  'collection_id' => $wgRequest->getVal( 'collection_id' ),
-			  'writer' => $wgRequest->getVal( 'writer' ),
+				'collection_id' => $wgRequest->getVal( 'collection_id' ),
+				'writer' => $wgRequest->getVal( 'writer' ),
 			) );
 			$content_type = $info['content_type'];
 			$content_length = $info['download_content_length'];
