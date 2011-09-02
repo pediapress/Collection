@@ -2106,12 +2106,39 @@ $messages['li'] = array(
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Eitvys200
  * @author Homo
  */
 $messages['lt'] = array(
+	'coll-print_export' => 'Spausdinti/eksportuoti',
 	'coll-create_a_book' => 'Kurti knygą',
-	'coll-add_category' => 'Pridėti kategoriją',
+	'coll-book_creator' => 'Knygos kūrėjas',
+	'coll-download_as' => 'Parsisiųsti kaip $1',
+	'coll-disable' => 'išjungti',
+	'coll-book_creator_disable' => 'Išjungti knygų kūrėją',
+	'coll-book_creator_disable_tooltip' => 'Nebenaudoti knygų kūrėjo',
+	'coll-add_category' => 'Pridėti šią kategoriją į savo knygą',
+	'coll-add_category_tooltip' => 'Pridėti visus wiki puslapius šioje kategorijoje į savo knygą',
+	'coll-add_this_page' => 'Pridėti šį puslapį į savo knygą',
+	'coll-add_page_tooltip' => 'Pridėti dabartinį wiki puslapį į savo knygą',
+	'coll-bookscategory' => 'Knygos',
+	'coll-clear_collection' => 'Išvalyti knygą',
+	'coll-clear_collection_confirm' => 'Ar tikrai norite visiškai išvalyti savo knygą?',
+	'coll-clear_collection_tooltip' => 'Pašalinti visus wiki puslapius iš savo dabartinės knygos',
+	'coll-help' => 'Pagalba',
+	'coll-help_tooltip' => 'Rodyti pagalba apie knygų kūrima',
+	'coll-helppage' => 'Pagalba: Knygos',
+	'coll-load_collection' => 'Įkelti knygas',
+	'coll-load_collection_tooltip' => 'Įkelti šią knygą kaip jūsų dabartinę knygą',
+	'coll-n_pages' => '$1 {{PLURAL:$1|puslapis|puslapiai}}',
 	'coll-printable_version_pdf' => 'PDF versija',
+	'coll-remove_this_page' => 'Pašalinti šį puslapį iš jūsų knygos',
+	'coll-remove_page_tooltip' => 'Pašalinti dabartinį wiki puslapį iš jūsų knygos',
+	'coll-show_collection' => 'Rodyti knyga',
+	'coll-show_collection_tooltip' => 'Spustelėkite norėdami redaguoti/atsisiųsti/užsisakyti savo knygą',
+	'coll-not_addable' => 'Šis puslapis negali būti pridėtas',
+	'coll-make_suggestions' => 'Siūlyti puslapius',
+	'coll-suggest_empty' => 'tuščia',
 );
 
 /** Latgalian (Latgaļu)

@@ -493,6 +493,7 @@ $messages['an'] = array(
  * @author Orango
  * @author OsamaK
  * @author Prof.Sherif
+ * @author زكريا
  */
 $messages['ar'] = array(
 	'coll-desc' => '[[Special:Book|ينشيء كتبا]]',
@@ -580,12 +581,16 @@ $messages['ar'] = array(
 	'coll-rendering_status' => '<strong>الحالة:</strong> $1',
 	'coll-rendering_article' => '(المقالة: $1)',
 	'coll-rendering_page' => '(الصفحة: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات صفحة',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات مجموعة',
 	'coll-rendering_finished_title' => 'العرض انتهى',
 	'coll-rendering_finished_text' => '<strong>ملف الوثيقة تم توليده.</strong>
 <strong>[$1 نزل الملف]</strong> إلى حاسوبك.
 
 ملاحظات:
 * غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات صفحة',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات مجموعة',
 	'coll-notfound_title' => 'الكتاب غير موجود',
 	'coll-notfound_text' => 'لم يمكن العثور على صفحة الكتاب.',
 	'coll-download_notfound_title' => 'الملف لم يتم إيجاده',
@@ -624,6 +629,7 @@ $messages['ar'] = array(
 	'coll-suggest_article_remove' => 'الصفحة <strong>$1</strong> تمت إزالتها من كتابك ($2).',
 	'coll-suggest_undo_tooltip' => 'استرجع هذه الإجراء',
 	'coll-suggest_undo' => 'ارجع',
+	'coll-load_local_book' => 'اضغط OK للاستمرار في كتابك %TITLE% الذي به %NUMPAGES% من صفحات الويكي. اضغط Cancel لحذفه والبدء بكتاب فارغ.',
 	'right-collectionsaveasuserpage' => 'احفظ الكتب كصفحة مستخدم',
 	'right-collectionsaveascommunitypage' => 'احفظ الكتب كصفحة مجتمع',
 );
@@ -6911,31 +6917,100 @@ $messages['lo'] = array(
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Eitvys200
  * @author Homo
  * @author Matasg
  */
 $messages['lt'] = array(
 	'coll-desc' => '[[Special:Book|Kurti knygas]]',
+	'coll-manage_your_book' => 'Tvarkyti jūsų knygą',
+	'coll-book_creator_help' => 'Žiūrėkite [[{{MediaWiki:Coll-helppage}}|the help page about books]] daugiau informacijos.',
+	'coll-start_book_creator' => 'Paleisti knygų kūrėją',
 	'coll-collection' => 'Knyga',
 	'coll-collections' => 'Knygos',
 	'coll-print_template_prefix' => 'Spausdinti',
+	'coll-unknown_subpage_title' => 'Nežinomas puslapis',
+	'coll-unknown_subpage_text' => 'Šis papildomas puslapis [[Special:Book|Book]] neegzistuoja',
+	'coll-couldnotaddarticle_title' => 'Nepavyko pridėti wiki puslapio',
+	'coll-couldnotaddarticle_msg' => 'Wiki puslapis negali būti pridėtas.',
+	'coll-couldnotremovearticle_title' => 'Nepavyko pašalinti wiki puslapio',
+	'coll-couldnotremovearticle_msg' => 'Wiki puslapio pašalinti negalima.',
+	'coll-noscript_text' => '<h1>JavaScript yra reikalings!</h1>
+<strong>Jūsų naršyklė nepalaiko JavaScript arba JavaScript  buvo išjungtas. Šis puslapis neveiks tinkamai jei neįjungsite JavaScript.</strong>',
+	'coll-savedbook_template' => 'išsaugota_knyga',
+	'coll-your_book' => 'Jūsų knyga',
 	'coll-download_title' => 'Atsisiųsti',
+	'coll-download_text' => 'Norėdami atsisiųsti knygą, pasirinkite formatą ir spustelėkite mygtuką.',
+	'coll-download_as_text' => 'Norėdami atsisiųsti knygą $1 formatu, spustelėkite mygtuką .',
+	'coll-download' => 'Atsisiųsti',
+	'coll-format_label' => 'Formatas:',
 	'coll-remove' => 'Pašalinti',
+	'coll-show' => 'Rodyti',
+	'coll-move_to_top' => 'Perkelti į viršų',
+	'coll-move_up' => 'Pakelti aukštyn',
+	'coll-move_down' => 'Nuleisti žemyn',
+	'coll-move_to_bottom' => 'Nuleisti į apačią',
+	'coll-title' => 'Pavadinimas:',
+	'coll-subtitle' => 'Poraštė',
+	'coll-sort_alphabetically' => 'Rūšiuoti abėcėlės tvarka',
 	'coll-rename' => 'Pervadinti',
 	'coll-no_such_category' => 'Nėra tokios kategorijos',
+	'coll-empty_collection' => 'Tuščia knyga',
+	'coll-save_collection_title' => 'Išsaugoti ir pasidalinti savo knygą',
+	'coll-save_collection_text' => 'Pasirinkite savo knygos saugojimo vietą:',
+	'coll-personal_collection_label' => 'Asmeninė knyga:',
+	'coll-save_collection' => 'Išsaugoti knygą',
+	'coll-overwrite_title' => 'Puslapio egzistuoja.
+Perrašyti?',
+	'coll-overwrite_text' => 'Puslapio pavadinimas [[:$1]] jau egzistuoja.
+Ar norite jį pakeisti su savo knyga?',
 	'coll-yes' => 'Taip',
 	'coll-no' => 'Ne',
+	'coll-overwrite' => 'Perrašyti',
 	'coll-cancel' => 'Atšaukti',
 	'coll-update' => 'Atnaujinti',
+	'coll-limit_exceeded_title' => 'Knyga per didelė',
+	'coll-limit_exceeded_text' => 'Jūsų knyga per didelė.
+Daugiau puslapių negali būti pridėta.',
+	'coll-rendering_text' => '<p><strong>Prašome palaukti kol dokumentas yra generuojamas.</strong></p>
+
+<p><strong>Progress:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Šis puslapis turėtu atsinaujinti kas kelias sekundęs.
+Jei tai neveikia prašome paspausti jūsų naršyklės atnaujinimo mygtuką.</p>',
+	'coll-rendering_status' => '<strong>Statusas:</strong> $1',
+	'coll-rendering_article' => '(wiki puslapis: $1 )',
+	'coll-rendering_page' => '(puslapis: $1 )',
 	'coll-notfound_title' => 'Knyga nerasta',
+	'coll-notfound_text' => 'Nepavyko rasti knygos puslapio.',
 	'coll-download_notfound_title' => 'Failas nerastas',
+	'coll-download_notfound_text' => 'Bandote atsisiųsti failą kuris neegzistuoja:
+Gal jis buvo panaikintas ir turi būti regeneruojamas.',
+	'coll-download_failed_title' => 'Klaida atsiuntimo metu',
+	'coll-download_failed_text' => 'Įvyko klaida, atsiunčiat failą:$1',
+	'coll-return_to_collection' => '<p>Grįžti į <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Užsisakyti spausdintą knygą',
-	'coll-order_from_pp' => 'Užsisakyti knygą iš $1',
+	'coll-order_from_pp' => 'Peržiūrėti su $1',
 	'coll-about_pp' => 'Apie $1',
 	'coll-license' => 'Licencija',
 	'coll-return_to' => 'Grįžti į [[:$1]]',
 	'coll-more_info' => 'Rodyti daugiau informacijos',
 	'coll-hide_info' => 'Slėpti informaciją',
+	'coll-suggested_articles' => 'Pasiūlymai',
+	'coll-suggest_reset_bans' => 'perkrauti',
+	'coll-suggest_reset_bans_tooltip' => 'Rodyti anksčiau pašalintus pasiūlymus',
+	'coll-suggest_add_selected' => 'Pridėti pasirinktus puslapius',
+	'coll-suggest_your_book' => 'Jūsų knyga',
+	'coll-suggest_show' => 'rodyti',
+	'coll-suggest_ban_tooltip' => 'Pašalinti šį puslapį iš pasiūlymų sąrašo',
+	'coll-suggest_article_ban' => 'Puslapis <strong>$1</strong> buvo pašalintas iš pasiūlymų ( $2 ).',
+	'coll-suggest_article_add' => 'Puslapis <strong>$1</strong> buvo įtrauktas į jūsų knyga ( $2 ).',
+	'coll-suggest_article_remove' => 'Puslapis <strong>$1</strong> buvo pašalintas iš jūsų knygos ( $2 ).',
+	'coll-suggest_undo_tooltip' => 'Anuliuoti šį veiksmą',
+	'coll-suggest_undo' => 'anuliuoti',
+	'coll-load_local_book' => 'Spustelėkite Gerai, kad testumėte toliaus zsu savo knyga %TITLE%, kurioje yra %NUMPAGES%  wiki puslapių. Spustelėkite Atšaukti, jei norite panaikinti knygą ir pradėti su tuščia knyga.',
+	'right-collectionsaveasuserpage' => 'Išsaugoti knygas kaip naudotojo puslapį',
+	'right-collectionsaveascommunitypage' => 'Išsaugoti knygas kaip bendruomenės puslapį',
 );
 
 /** Latgalian (Latgaļu)
