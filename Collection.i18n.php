@@ -2259,12 +2259,16 @@ Der kan ikke tilføjes flere sider.',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wikiartikel: $1)',
 	'coll-rendering_page' => '(side: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Skriver sideinformation',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Skriver information om samling',
 	'coll-rendering_finished_title' => 'Generering færdig',
 	'coll-rendering_finished_text' => '<strong>Dit dokument er blevet genereret.</strong>
 <strong>[$1 Download filen]</strong> til din computer. 
 
 Note: 
 * Er du ikke tilfreds med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjælpesiden omkring bøger]] for eventuelle muligheder til at forbedre det.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Skriver sideinformation',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Skriver information om samling',
 	'coll-notfound_title' => 'Bog ikke fundet',
 	'coll-notfound_text' => 'Kunne ikke finde bogsiden.',
 	'coll-download_notfound_title' => 'Fil ikke fundet',
@@ -2290,18 +2294,24 @@ Kontakt venligst din MediaWiki-administrator.',
 	'coll-hide_info' => 'Skjul information',
 	'coll-order_info_article' => '((MediaWiki:Coll-Helppage))/PediaPress ordreoplysninger',
 	'coll-suggest_title' => 'Foreslåede sider til din bog',
+	'coll-suggest_intro_text' => 'Forslagene er baseret på de wikisider, der udgør din bog i øjeblikket.
+Listen opdateres når du klikker på tilføj- eller fjernknapperne.',
 	'coll-suggested_articles' => 'Forslag',
 	'coll-suggest_reset_bans' => 'nulstil',
+	'coll-suggest_reset_bans_tooltip' => 'Vis tidligere fjernede forslag',
 	'coll-suggest_add_selected' => 'Tilføj valgte sider',
 	'coll-suggest_ban_selected' => 'Fjern valgte sider',
 	'coll-suggest_your_book' => 'Din bog',
 	'coll-suggest_show' => 'vis',
+	'coll-suggest_ban_tooltip' => 'Fjerne denne side fra listen over forslag',
 	'coll-suggest_article_ban' => 'Siden <strong>$1</strong> er blevet fjernet fra forslagene ($2).',
 	'coll-suggest_article_add' => 'Siden <strong>$1</strong> er blevet tilføjet til din bog ($2).',
 	'coll-suggest_article_remove' => 'Siden <strong>$1</strong> er blevet fjernet fra din bog ($2).',
 	'coll-suggest_undo_tooltip' => 'Fortryd denne handling',
 	'coll-suggest_undo' => 'fortryd',
+	'coll-load_local_book' => 'Klik på OK for at fortsætte med din bog, %TITLE%, som indeholder %NUMPAGES% wikisider. Klik på Cancel for at slette den og begynde forfra med en tom bog.',
 	'right-collectionsaveasuserpage' => 'Gem bøger som brugerside',
+	'right-collectionsaveascommunitypage' => 'Gem bøger som en fælles side',
 );
 
 /** German (Deutsch)
