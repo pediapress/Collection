@@ -268,8 +268,6 @@ function wfAjaxCollectionAddCategory( $title = '' ) {
 $wgAjaxExportList[] = 'wfAjaxCollectionAddCategory';
 
 function wfAjaxCollectionGetBookCreatorBoxContent( $ajaxHint = '', $oldid = null, $pageName = null ) {
-	global $wgUser;
-
 	if ( !is_null( $oldid ) ) {
 		$oldid = intval( $oldid );
 	}
@@ -282,7 +280,7 @@ function wfAjaxCollectionGetBookCreatorBoxContent( $ajaxHint = '', $oldid = null
 		$title = Title::newMainPage();
 	}
 
-	$html = CollectionHooks::getBookCreatorBoxContent( $wgUser->getSkin(), $title, $ajaxHint, $oldid );
+	$html = CollectionHooks::getBookCreatorBoxContent( $title, $ajaxHint, $oldid );
 
 	$json = new Services_JSON();
 	$result = array();

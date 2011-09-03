@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Collection Extension for MediaWiki
  *
@@ -39,11 +38,7 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	function execute( $par ) {
-		global $wgOut;
-		global $wgRequest;
-		global $wgUser;
-		global $wgContLang;
-		global $wgCollectionMaxArticles;
+		global $wgOut, $wgRequest, $wgUser, $wgContLang, $wgCollectionMaxArticles;
 
 		// support previous URLs (e.g. used in templates) which used the "$par" part
 		// (i.e. subpages of the Special page)
@@ -305,9 +300,7 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	function renderBookCreatorPage( $referer, $par ) {
-		global $wgOut;
-		global $wgUser;
-		global $wgJsMimeType;
+		global $wgOut, $wgJsMimeType;
 
 		$this->setHeaders();
 		$wgOut->setPageTitle( wfMsg( 'coll-book_creator' ) );
@@ -327,7 +320,6 @@ class SpecialCollection extends SpecialPage {
 		if ( is_null( $title ) || $title->equals( $this->getTitle( $par ) ) ) {
 			$title = Title::newMainPage();
 		}
-		$sk = $wgUser->getSkin();
 
 		$wgOut->addHTML(
 			Xml::tags( 'div',
@@ -356,7 +348,7 @@ class SpecialCollection extends SpecialPage {
 					array(
 						'class' => 'collection-button cancel',
 					),
-					$sk->link(
+					Linker::link(
 						$title,
 						wfMsgHtml( 'coll-cancel' ),
 						array(
@@ -430,8 +422,7 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	static function getBookPagePrefixes() {
-		global $wgUser;
-		global $wgCommunityCollectionNamespace;
+		global $wgUser, $wgCommunityCollectionNamespace;
 
 		$result = array();
 
@@ -458,8 +449,7 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	function renderSpecialPage() {
-		global $wgCollectionFormats;
-		global $wgOut;
+		global $wgCollectionFormats, $wgOut;
 
 		if ( !CollectionSession::hasSession() ) {
 			CollectionSession::startSession();
@@ -619,8 +609,7 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	static function addCategory( $title ) {
-		global $wgCollectionMaxArticles;
-		global $wgCollectionArticleNamespaces;
+		global $wgCollectionMaxArticles, $wgCollectionArticleNamespaces;
 
 		$limit = $wgCollectionMaxArticles - CollectionSession::countArticles();
 		if ( $limit <= 0 ) {
@@ -876,12 +865,8 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	function getLicenseInfos() {
-		global $wgCollectionLicenseName;
-		global $wgCollectionLicenseURL;
-		global $wgRightsIcon;
-		global $wgRightsPage;
-		global $wgRightsText;
-		global $wgRightsUrl;
+		global $wgCollectionLicenseName, $wgCollectionLicenseURL, $wgRightsIcon;
+		global $wgRightsPage, $wgRightsText, $wgRightsUrl;
 
 		$licenseInfo = array(
 			"type" => "license",
@@ -1082,9 +1067,7 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	function download() {
-		global $wgOut;
-		global $wgRequest;
-		global $wgCollectionContentTypeToFilename;
+		global $wgOut, $wgRequest, $wgCollectionContentTypeToFilename;
 		
 		$tempfile = tmpfile();
 		$r = self::mwServeCommand( 'render_status', array(
@@ -1210,10 +1193,7 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	static function mwServeCommand( $command, $args ) {
-		global $wgOut;
-		global $wgCollectionMWServeURL;
-		global $wgCollectionMWServeCredentials;
-		global $wgCollectionFormatToServeURL;
+		global $wgOut, $wgCollectionMWServeURL, $wgCollectionMWServeCredentials, $wgCollectionFormatToServeURL;
 
 		$serveURL = $wgCollectionMWServeURL;
 		if ( array_key_exists( $args['writer'], $wgCollectionFormatToServeURL ) )
