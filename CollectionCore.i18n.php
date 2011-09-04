@@ -3094,7 +3094,7 @@ $messages['sl'] = array(
 	'coll-suggest_empty' => 'prazno',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Nikola Smolenski
  * @author Rancher
  * @author Јованвб
@@ -3105,9 +3105,14 @@ $messages['sr-ec'] = array(
 	'coll-print_export' => 'Штампај/извези',
 	'coll-create_a_book' => 'Направи књигу',
 	'coll-create_a_book_tooltip' => 'Направи књигу или збирку страница',
+	'coll-book_creator' => 'Прављење књига',
 	'coll-download_as' => 'Преузми као $1',
+	'coll-download_as_tooltip' => 'Преузми $1 издање ове странице',
 	'coll-disable' => 'онемогући',
+	'coll-book_creator_disable' => 'Онемогући прављење књига',
 	'coll-book_creator_disable_tooltip' => "Престани с коришћењем ''писца књига''",
+	'coll-add_linked_article' => 'Додај везу до вики странице у своју књигу',
+	'coll-remove_linked_article' => 'Уклони везу до вики странице из своје књиге',
 	'coll-add_category' => 'Додај ову категорију у своју књигу',
 	'coll-add_category_tooltip' => 'Додаје све вики странице у овој категорији у вашу књигу',
 	'coll-add_this_page' => 'Додај ову страну у своју књигу',
@@ -3123,9 +3128,11 @@ $messages['sr-ec'] = array(
 	'coll-load_collection_tooltip' => 'Учитава ову књигу као вашу тренутну књигу',
 	'coll-n_pages' => '$1 {{PLURAL:$1|страница|странице|страница}}',
 	'coll-printable_version_pdf' => 'PDF верзија',
+	'coll-remove_this_page' => 'Уклони ову страницу из своје књиге',
 	'coll-remove_page_tooltip' => 'Уклања тренутну вики страницу из ваше књиге',
 	'coll-show_collection' => 'Прикажи књигу',
 	'coll-show_collection_tooltip' => 'Кликните за измену, преузимање или наручивање своје књиге',
+	'coll-not_addable' => 'Ова страница се не може додати',
 	'coll-suggest_empty' => 'празно',
 );
 

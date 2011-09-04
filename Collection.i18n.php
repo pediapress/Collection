@@ -3994,6 +3994,7 @@ La liste est mise à jour à chaque fois que vous cliquez sur les boutons d'ajou
  */
 $messages['frp'] = array(
 	'coll-desc' => 'Pèrmèt de [[Special:Book|fâre des lévros]].',
+	'coll-book_creator_intro' => "<big>Avouéc lo ''crèator de lévros'', vos pouede fâre un lévro que contint les pâges du vouiqui de voutron choièx. Vos pouede èxportar lo lévro dens difèrents formats (per ègzemplo PDF ou ben ODF) ou nen comandar una copia emprimâ.</big>",
 	'coll-manage_your_book' => 'Administrar voutron lévro',
 	'coll-book_creator_help' => 'Vêde la [[{{MediaWiki:Coll-helppage}}|pâge d’éde sur los lévros]] por més d’enformacions.',
 	'coll-start_book_creator' => 'Emmodar lo crèator de lévros',
@@ -4011,6 +4012,9 @@ $messages['frp'] = array(
 	'coll-couldnotaddarticle_msg' => 'La pâge du vouiqui pôt pas étre apondua.',
 	'coll-couldnotremovearticle_title' => 'Empossiblo d’enlevar la pâge du vouiqui',
 	'coll-couldnotremovearticle_msg' => 'La pâge du vouiqui pôt pas étre enlevâ.',
+	'coll-noscript_text' => '<h1>JavaScript est nècèssèro !</h1>
+<strong>Voutron navigator recognêt pas JavaScript ou ben vos l’éd dèsactivâ.
+Ceta pâge fonccionerat pas bien tant que JavaScript est pas activâ.</strong>',
 	'coll-savedbook_template' => 'lévro_sôvâ',
 	'coll-your_book' => 'Voutron lévro',
 	'coll-download_title' => 'Tèlèchargiér',
@@ -4055,6 +4059,8 @@ L’ècllafar ?',
 La voléd-vos remplaciér per voutron lévro ?',
 	'coll-yes' => 'Ouè',
 	'coll-no' => 'Nan',
+	'coll-load_overwrite_text' => 'Vos avéd ja des pâges dens voutron lévro.
+Voléd-vos ècllafar voutron lévro d’ora, y apondre lo novél contegnu ou ben anular lo chargement de cél lévro ?',
 	'coll-overwrite' => 'Ècllafar',
 	'coll-append' => 'Apondre',
 	'coll-cancel' => 'Anular',
@@ -4111,6 +4117,7 @@ La lista est betâ a jorn a châque côp que vos clicâd sur los botons d’apon
 	'coll-suggest_article_remove' => 'La pâge <strong>$1</strong> at étâ enlevâ de voutron lévro ($2).',
 	'coll-suggest_undo_tooltip' => 'Dèfâre ceta accion',
 	'coll-suggest_undo' => 'dèfâre',
+	'coll-load_local_book' => 'Clicâd dessus « OK » por continuar voutron lévro %TITLE% que contint %NUMPAGES% pâges vouiqui. Clicâd dessus « Cancel » por lo suprimar et pués comenciér avouéc un lévro vouedo.',
 	'right-collectionsaveasuserpage' => 'Sôvar des lévros sur des pâges utilisator',
 	'right-collectionsaveascommunitypage' => 'Sôvar des lévros sur des pâges a la comunôtât',
 );
