@@ -944,7 +944,7 @@ class SpecialCollection extends SpecialPage {
 
 		$response = self::mwServeCommand( 'render', array(
 			'metabook' => $this->buildJSONCollection( $collection ),
-			'base_url' => wfExpandUrl( $wgScriptPath, PROTO_CANONICAL ),
+			'base_url' => wfExpandUrl( $wgScriptPath, PROTO_CURRENT ),
 			'script_extension' => $wgScriptExtension,
 			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
 			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
@@ -977,7 +977,7 @@ class SpecialCollection extends SpecialPage {
 
 		$response = self::mwServeCommand( 'render', array(
 			'collection_id' => $collectionID,
-			'base_url' => wfExpandUrl( $wgScriptPath, PROTO_CANONICAL ),
+			'base_url' => wfExpandUrl( $wgScriptPath, PROTO_CURRENT ),
 			'script_extension' => $wgScriptExtension,
 			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
 			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
@@ -1153,7 +1153,7 @@ class SpecialCollection extends SpecialPage {
 
 		$response = self::mwServeCommand( 'zip_post', array(
 			'metabook' => $this->buildJSONCollection( $collection ),
-			'base_url' => wfExpandUrl( $wgScriptPath, PROTO_CANONICAL ),
+			'base_url' => wfExpandUrl( $wgScriptPath, PROTO_CURRENT ),
 			'script_extension' => $wgScriptExtension,
 			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
 			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
