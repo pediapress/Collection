@@ -844,6 +844,7 @@ $messages['ast'] = array(
 
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
+ * @author Vago
  */
 $messages['az'] = array(
 	'coll-collection' => 'Kitab',
@@ -854,14 +855,25 @@ $messages['az'] = array(
 	'coll-download' => 'Yüklə',
 	'coll-format_label' => 'Format:',
 	'coll-show' => 'Göstər',
+	'coll-move_to_top' => 'Ən üstə apar',
+	'coll-move_up' => 'Yuxarı apar',
+	'coll-move_down' => 'Aşağı apar',
+	'coll-move_to_bottom' => 'Ən aşağı apar',
 	'coll-title' => 'Başlıq:',
 	'coll-subtitle' => 'Altbaşlıq:',
+	'coll-revision' => 'Yoxlama: $1',
 	'coll-yes' => 'Bəli',
 	'coll-no' => 'Xeyr',
+	'coll-overwrite' => 'Üstünə yaz',
+	'coll-append' => 'Əlavə',
 	'coll-cancel' => 'Ləğv et',
+	'coll-update' => 'Yenilə',
 	'coll-rendering_article' => '(viki səhifə: $1)',
 	'coll-rendering_page' => '(səhifə: $1)',
+	'coll-notfound_title' => 'Kitab tapılmadı',
+	'coll-download_notfound_title' => 'Fayl tapılmadı',
 	'coll-license' => 'Lisenziya',
+	'coll-return_to' => '[[:$1]]-ə qayıt',
 	'coll-suggest_reset_bans' => 'qur',
 	'coll-suggest_show' => 'göstər',
 );
