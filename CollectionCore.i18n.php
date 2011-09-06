@@ -1281,6 +1281,46 @@ $messages['frp'] = array(
 	'coll-suggest_empty' => 'vouedo',
 );
 
+/** Scottish Gaelic (Gàidhlig)
+ * @author Akerbeltz
+ */
+$messages['gd'] = array(
+	'coll-print_export' => 'Clò-bhuail/às-phortaich',
+	'coll-create_a_book' => 'Cruthaich leabhar',
+	'coll-create_a_book_tooltip' => 'Cruthaich leabhar no cruinneachadh dhuilleagan',
+	'coll-book_creator' => 'Cruthadair leabhraichean',
+	'coll-download_as' => 'Luchdaich a-nuas mar $1',
+	'coll-download_as_tooltip' => 'Luchdaich a-nuas tionndadh $1 dhen duilleag uici seo',
+	'coll-disable' => 'cuir à comas',
+	'coll-book_creator_disable' => 'Cuir cruthadair nan leabhraichean à comas',
+	'coll-book_creator_disable_tooltip' => 'Sguir de chleachdadh cruthadair nan leabhraichean',
+	'coll-add_linked_article' => 'Cuir duilleag uici le ceanglaichean ris an leabhar agad',
+	'coll-remove_linked_article' => 'Thoir air falbh duilleag uici le ceanglaichean on leabhar agad',
+	'coll-add_category' => 'Cuir an roinn-seòrsa ris an leabhar agad',
+	'coll-add_category_tooltip' => 'Cuir gach duilleag uici san roinn-seòrsa seo ris an leabhar agad',
+	'coll-add_this_page' => 'Cuir an duilleag seo ris an leabhar agad',
+	'coll-add_page_tooltip' => 'Cuir an duilleag uici làithreach ris an leabhar agad',
+	'coll-bookscategory' => 'Leabhraichean',
+	'coll-clear_collection' => 'Falamhaich an leabhar',
+	'coll-clear_collection_confirm' => 'A bheil thu cinnteach gu bheil thu airson an leabhar gu lèir fhalamhachadh?',
+	'coll-clear_collection_tooltip' => 'Thoir air falbh gach duilleag uici on leabhar làithreach agad',
+	'coll-help' => 'Cobhair',
+	'coll-help_tooltip' => "Seall a' chobhair mu chruthachadh leabhraichean",
+	'coll-helppage' => 'Help:Leabhraichean',
+	'coll-load_collection' => 'Luchdaich leabhar',
+	'coll-load_collection_tooltip' => 'Luchdaich an leabhar seo mar an leabhar làithreach agad',
+	'coll-n_pages' => '$1 {{PLURAL:$1|duilleag|dhuilleag|duilleag|dhuilleag|duilleagan|duilleag}}',
+	'coll-printable_version_pdf' => 'Tionndadh PDF',
+	'coll-remove_this_page' => 'Thoir an duilleag seo às an leabhar agad',
+	'coll-remove_page_tooltip' => 'Thoir air falbh duilleag uici seo on leabhar agad',
+	'coll-show_collection' => 'Seall an leabhar',
+	'coll-show_collection_tooltip' => 'Dèan briogadh gus an leabhar agad a dheasachadh, a luchdadh a-nuas no òrdugh a chur',
+	'coll-not_addable' => 'Cha ghabh an duilleag seo a chur ris',
+	'coll-make_suggestions' => 'Mol duilleagan',
+	'coll-make_suggestions_tooltip' => 'Seall molaidhean a-rèir nan duilleagan san leabhar agad',
+	'coll-suggest_empty' => 'falamh',
+);
+
 /** Galician (Galego)
  * @author Alma
  * @author Toliño
@@ -3841,6 +3881,7 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
+ * @author Anakmalaysia
  * @author Liangent
  * @author Xiaomingyan
  */
@@ -3854,6 +3895,8 @@ $messages['zh-hant'] = array(
 	'coll-disable' => '停用',
 	'coll-book_creator_disable' => '禁用圖書創建器',
 	'coll-book_creator_disable_tooltip' => '停止使用圖書創建器',
+	'coll-add_linked_article' => '添加相關維基頁面至你的圖書',
+	'coll-remove_linked_article' => '從你的圖書中刪除相關維基頁面',
 	'coll-add_category' => '將此分類增加到圖書',
 	'coll-add_category_tooltip' => '將這個分類中的所有維基頁面加入您的圖書中',
 	'coll-add_this_page' => '將此頁面增加到圖書',
