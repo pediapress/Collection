@@ -15,7 +15,7 @@ class CollectionPageTemplate extends QuickTemplate {
 		$mediapath = $GLOBALS['wgExtensionAssetsPath'] . '/Collection/images/';
 ?>
 
-<div class="mw-float-start collection-column collection-column-left">
+<div class="collection-column collection-column-left">
 
 <form action="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book' ) ) ?>" method="post" id="mw-collection-title-form">
 	<table id="mw-collection-title-table" style="width: 80%; background-color: transparent;" align="center">
@@ -51,7 +51,7 @@ $listTemplate->execute();
 
 </div>
 
-<div class="mw-float-start collection-column collection-column-right">
+<div class="collection-column collection-column-right">
 
 	<div class="collection-column-right-box" id="coll-orderbox">
 		<h2><span class="mw-headline"><?php $this->msg( 'coll-book_title' ) ?></span></h2>
@@ -60,7 +60,7 @@ $partnerData = $this->data['podpartners']['pediapress'];
 $this->msgWiki( 'coll-book_text' );
 		?>
 		<div>
-			<div class="mw-float-end">
+			<div id="collection-order-button">
 				<form action="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book' ) ) ?>" method="post">
 					<input type="hidden" name="bookcmd" value="post_zip" />
 					<input type="hidden" name="partner" value="pediapress" />
@@ -112,7 +112,7 @@ echo $GLOBALS['wgOut']->parse( '{{:' . $t . '}}' );
 					<?php	} ?>
 				</select>
 			<?php } ?>
-			</td><td class="mw-align-end" style="vertical-align:bottom;">
+			</td><td id="collection-download-button">
 			<input type="hidden" name="bookcmd" value="render" />
 			<input id="downloadButton" type="submit" value="<?php echo $buttonLabel ?>"<?php if ( count( $this->data['collection']['items'] ) == 0 ) { ?> disabled="disabled"<?php } ?> />
 			</td></tr></tbody></table>
@@ -146,7 +146,7 @@ echo $GLOBALS['wgOut']->parse( '{{:' . $t . '}}' );
 				<?php } ?>
 				<label for="personalCollTitle"><a href="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Prefixindex', 'prefix=' . wfUrlencode( $this->data['user-book-prefix'] ) ) ) ?>"><?php echo htmlspecialchars( $this->data['user-book-prefix'] ) ?></a></label>
 				</td>
-				<td class="mw-align-end">
+				<td id="collection-save-input">
 				<input id="personalCollTitle" type="text" name="pcollname" />
 				</td></tr>
 				<?php } // if ($canSaveUserPage) ?>
@@ -159,11 +159,11 @@ echo $GLOBALS['wgOut']->parse( '{{:' . $t . '}}' );
 				<?php } ?>
 				<label for="communityCollTitle"><a href="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Prefixindex', 'prefix=' . wfUrlencode( $this->data['community-book-prefix'] ) ) ) ?>"><?php echo htmlspecialchars( $this->data['community-book-prefix'] ) ?></a></label>
 				</td>
-				<td class="mw-align-end">
+				<td id="collection-save-button">
 				<input id="communityCollTitle" type="text" name="ccollname" disabled="disabled" />
 				</td></tr>
 				<?php } // if ($canSaveCommunityPage) ?>
-				<tr><td>&#160;</td><td class="mw-align-end">
+				<tr><td>&#160;</td><td id="collection-save-button">
 				<input id="saveButton" type="submit" value="<?php $this->msg( 'coll-save_collection' ) ?>"<?php if ( count( $this->data['collection']['items'] ) == 0 ) { ?> disabled="disabled"<?php } ?> />
 				</tr></tbody></table>
 				<input name="token" type="hidden" value="<?php echo htmlspecialchars( $GLOBALS['wgUser']->editToken() ) ?>" />
@@ -418,7 +418,7 @@ class CollectionSuggestTemplate extends QuickTemplate {
 				(<a href="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', array( 'bookcmd' => 'suggest', 'resetbans' => '1' ) ) ) ?>" title="<?php $this->msg( 'coll-suggest_reset_bans_tooltip' ) ?>"><?php $this->msg( 'coll-suggest_reset_bans' ) ?></a>)
 				<?php if ( count( $this->data['proposals'] ) > 0 ) { ?>
 				<noscript>
-				<div class="mw-float-end">
+				<div id="collection-suggest-add">
 					<input type="submit" value="<?php $this->msg( 'coll-suggest_add_selected' ) ?>" name="addselected" />
 				</div>
 				</noscript>

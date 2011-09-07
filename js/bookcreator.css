@@ -13,6 +13,7 @@
  */
 
 .collection-column {
+	float: left;
 	width: 47%;
 }
 
@@ -116,6 +117,10 @@
 	margin-bottom: 0;
 }
 
+.collection-creatorbox-book {
+	float: left;
+}
+
 /* Trivial but nicer for the browsers that support it */
 .rtl .collection-creatorbox-book {
 	--ms-transform: scaleX(-1);
@@ -134,6 +139,18 @@
 	margin-left: 10px;
 }
 
+.collection-creatorbox-row div {
+	float: right;
+}
+
 .collection-creatorbox-row img {
 	vertical-align: text-bottom;
+}
+
+#collection-suggest-add,
+#collection-order-button,
+#collection-download-button,
+#collection-save-button,
+#collection-save-input {
+	float: right;
 }

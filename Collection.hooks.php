@@ -261,7 +261,7 @@ class CollectionHooks {
 				'alt' => '',
 				'width' => '80',
 				'height' => '45',
-				'class' => 'mw-float-start collection-creatorbox-book',
+				'class' => 'collection-creatorbox-book',
 			),
 			'',
 			true
@@ -269,8 +269,7 @@ class CollectionHooks {
 
 		$html .= Xml::tags( 'div',
 			array( 'class' => 'collection-creatorbox-row' ),
-			Xml::tags( 'div',
-				array( 'class' => 'mw-float-end' ),
+			Xml::tags( 'div', null,
 				Linker::link(
 					Title::newFromText( wfMsg( 'coll-helppage' ) ),
 					Xml::element( 'img',
@@ -279,7 +278,6 @@ class CollectionHooks {
 							'alt' => '',
 							'width' => '16',
 							'height' => '16',
-							'style' => 'vertical-align: text-bottom;',
 						)
 					)
 					. '&#160;' . wfMsgHtml( 'coll-help' ),
