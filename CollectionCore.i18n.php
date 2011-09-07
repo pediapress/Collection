@@ -2898,6 +2898,7 @@ $messages['roa-tara'] = array(
 	'coll-add_page_tooltip' => "Aggiunge 'a pàgene de sta Uicchi a 'u libbre tune",
 	'coll-bookscategory' => 'Libbre',
 	'coll-clear_collection' => "Pulizze 'u libbre",
+	'coll-clear_collection_tooltip' => "Live tutte le pàòggene de uicchi da 'u libbre tune",
 	'coll-help' => 'Aijute',
 	'coll-help_tooltip' => "Fa vedè l'aijute pa ccreazione de le libbre",
 	'coll-helppage' => 'Help:Libbre',
@@ -2906,7 +2907,9 @@ $messages['roa-tara'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|pàgene|pàggene}}',
 	'coll-printable_version_pdf' => 'Versione in PDF',
 	'coll-remove_this_page' => "Live sta pàgene da 'u libbre tune",
+	'coll-remove_page_tooltip' => "Live sta pàgene de Uicchi da 'u libbre tune",
 	'coll-show_collection' => "Fà vedè 'nu libbre",
+	'coll-not_addable' => 'Sta pàgene non ge se pò essere aggiunde',
 	'coll-make_suggestions' => 'Pàggene suggerite',
 	'coll-suggest_empty' => 'vacande',
 );

@@ -3042,7 +3042,7 @@ $messages['eo'] = array(
 	'coll-no' => 'Ne',
 	'coll-load_overwrite_text' => 'Vi jam havas iujn paĝojn en via libro.
 Ĉu vi volas anstataŭigi vian nunan libron, aldoni la novan enhavon, aŭ nuligi ŝarĝadon de ĉi tiu libro?',
-	'coll-overwrite' => 'Anstataŭigu',
+	'coll-overwrite' => 'Anstataŭigi',
 	'coll-append' => 'Aldoni',
 	'coll-cancel' => 'Nuligi',
 	'coll-update' => 'Ĝisdatigi',
@@ -4081,12 +4081,23 @@ Voléd-vos ècllafar voutron lévro d’ora, y apondre lo novél contegnu ou ben
 	'coll-limit_exceeded_text' => 'Voutron lévro est trop grant.
 Niona pâge y pôt étre apondua.',
 	'coll-rendering_title' => 'Rendu',
+	'coll-rendering_text' => '<p><strong>Volyéd pacientar pendent la g·ènèracion du document.</strong></p>
+
+<p><strong>Avance :</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Ceta pâge sè devrêt betar a jorn ôtomaticament per entèrvalos règuliérs de doux-três secondes.
+S’o ére pas lo câs, volyéd clicar sur lo boton « Rechargiér » de voutron navigator.</p>',
 	'coll-rendering_status' => '<strong>Ètat :</strong> $1',
 	'coll-rendering_article' => '(pâge vouiqui : $1)',
 	'coll-rendering_page' => '(pâge : $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Tèxto d’enformacion sur lo rendu de les pâges',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Tèxto d’enformacion sur lo rendu de les colèccions',
 	'coll-rendering_finished_title' => 'Rendu chavonâ',
+	'coll-rendering_finished_text' => '<strong>Lo fichiér document at étâ fêt.</strong>
+<strong>[$1 Tèlèchargiér lo fichiér]</strong> sur voutron ordenator.
+
+Notes :
+* Vos éte pas satisfêt du rèsultat ? Vêde la [[{{MediaWiki:Coll-helppage}}|pâge d’éde des lévros]] por les façons possibles de lo mèlyorar.',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Tèxto d’enformacion sur lo rendu de les pâges',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Tèxto d’enformacion sur lo rendu de les colèccions',
 	'coll-notfound_title' => 'Lévro entrovâblo',
@@ -9450,6 +9461,7 @@ Non ge puè sckaffà cchiù otre pàgene.",
 	'coll-download_failed_text' => "S'a verificate 'n'errore quanne ste scarecave 'u file: $1",
 	'coll-excluded-templates' => "* Le template jndr'à categorije [[:Category:$1|$1]] onne state escluse.",
 	'coll-blacklisted-templates' => '* Le template sus a lista gnore [[:$1]] onne state escluse.',
+	'coll-return_to_collection' => '<p>Tuèrne a <a href="$1">$2</a></p>',
 	'coll-book_title' => "Ordene cumme 'nu libbre stambate",
 	'coll-order_from_pp' => 'Andeprime cu $1',
 	'coll-about_pp' => 'Sus a $1',
@@ -9459,6 +9471,7 @@ Non ge puè sckaffà cchiù otre pàgene.",
 	'coll-more_info' => "Fa vedè cchiù 'mbormaziune",
 	'coll-hide_info' => "Scunne le 'mbormaziune",
 	'coll-order_info_article' => "{{MediaWiki:Coll-helppage}}/'Mbormaziune sus a l'ordine de PediaPress",
+	'coll-suggest_title' => 'Pàggene suggerite pu libbre tune',
 	'coll-suggested_articles' => 'Suggereminde',
 	'coll-suggest_reset_bans' => 'azeere',
 	'coll-suggest_reset_bans_tooltip' => 'Visualizze le commende luàte precedentemènde',
