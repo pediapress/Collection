@@ -2375,7 +2375,7 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 	'coll-show' => 'Zeigen',
 	'coll-move_to_top' => 'an den Anfang',
 	'coll-move_up' => 'hoch',
-	'coll-move_down' => 'herunter',
+	'coll-move_down' => 'nach unten verschieben',
 	'coll-move_to_bottom' => 'an das Ende',
 	'coll-title' => 'Titel:',
 	'coll-subtitle' => 'Untertitel:',
@@ -8382,7 +8382,7 @@ $messages['or'] = array(
 	'coll-download' => 'ଡାଉନଲୋଡ',
 	'coll-remove' => 'ବାହାର କରିବା',
 	'coll-show' => 'ଦେଖାଇବେ',
-	'coll-title' => 'ନାଆଁ:',
+	'coll-title' => 'ଶିରୋନାମା:',
 	'coll-contents' => 'ଭିତର ଚିଜ',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a>କୁ ଫେରିଯାଆନ୍ତୁ</p>',
 );

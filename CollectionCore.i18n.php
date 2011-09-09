@@ -2569,9 +2569,10 @@ $messages['oc'] = array(
 
 /** Oriya (ଓଡ଼ିଆ)
  * @author Odisha1
+ * @author Psubhashish
  */
 $messages['or'] = array(
-	'coll-help' => 'ସାହାଯ୍ୟ',
+	'coll-help' => 'ସହଯୋଗ',
 );
 
 /** Ossetic (Ирон)
