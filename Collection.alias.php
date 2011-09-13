@@ -48,6 +48,11 @@ $specialPageAliases['cs'] = array(
 	'Book' => array( 'Kniha', 'Kolekce' ),
 );
 
+/** Danish (Dansk) */
+$specialPageAliases['da'] = array(
+	'Book' => array( 'Bog', 'Samling' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'Book' => array( 'Buch', 'Sammlung' ),
@@ -323,7 +328,7 @@ $specialPageAliases['tr'] = array(
 	'Book' => array( 'Kitap', 'Koleksiyon', 'Toplama' ),
 );
 
-/** Татарча (Татарча) */
+/** Tatar (Cyrillic script) (Татарча) */
 $specialPageAliases['tt-cyrl'] = array(
 	'Book' => array( 'Китап' ),
 );
