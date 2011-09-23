@@ -3633,7 +3633,7 @@ $messages['fa'] = array(
 	'coll-limit_exceeded_title' => 'کتاب بیش از اندازه بزرگ است',
 	'coll-limit_exceeded_text' => 'کتاب شما بیش از اندازه بزرگ است است.
 امکان افزودن صفحهٔ جدیدی را ندارید.',
-	'coll-rendering_title' => 'رندرکردن',
+	'coll-rendering_title' => 'در حال پردازش',
 	'coll-rendering_text' => '<p><strong>لطفاً در مدتی که سند در حال ایجاد است شکیبا باشید.</strong></p>
 
 <p><strong>پیشرفت:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
