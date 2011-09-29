@@ -1110,6 +1110,7 @@ $messages['eu'] = array(
  * @author Komeil 4life
  * @author Ladsgroup
  * @author Wayiran
+ * @author محک
  */
 $messages['fa'] = array(
 	'coll-print_export' => 'چاپ/برون‌ریزی',
@@ -1130,7 +1131,7 @@ $messages['fa'] = array(
 	'coll-bookscategory' => 'کتاب‌ها',
 	'coll-clear_collection' => 'پاک کردن کتاب',
 	'coll-clear_collection_confirm' => 'آیا واقعاً می‌خواهید که کتاب خود را به طور کامل پاک کنید؟',
-	'coll-clear_collection_tooltip' => 'همهٔ صفحات ویکی را از کتاب فعلیذتان حذف کنید',
+	'coll-clear_collection_tooltip' => 'همهٔ صفحات ویکی را از کتاب فعلیتان حذف کنید',
 	'coll-help' => 'راهنما',
 	'coll-help_tooltip' => 'راهنمای ایجاد کتاب‌ها را نشان بده',
 	'coll-helppage' => 'Help:کتاب‌ها',
@@ -2354,6 +2355,22 @@ $messages['myv'] = array(
 	'coll-helppage' => 'Help:Кинигат',
 	'coll-show_collection' => 'Невтемс киниганть',
 	'coll-suggest_empty' => 'чаво',
+);
+
+/** Mazanderani (مازِرونی)
+ * @author محک
+ */
+$messages['mzn'] = array(
+	'coll-print_export' => 'پرینت/برون‌ریزی',
+	'coll-create_a_book' => 'کتاب بساتن',
+	'coll-create_a_book_tooltip' => 'یتّا کتاب یا مجموعه صفحات بساج',
+	'coll-clear_collection' => 'پاک هاکردن کتاب',
+	'coll-clear_collection_confirm' => 'شما راس راسی خانّی کتاب ره کلأ حذف هاکنین؟',
+	'coll-clear_collection_tooltip' => 'همهٔ صفحات ویکی ره شه کتاب فعلی جا حذف هاکنین',
+	'coll-load_collection' => 'باربی‌یشتن کتاب',
+	'coll-load_collection_tooltip' => 'این کتاب ره به عنوان کتاب فعلی بار بی‌یلین',
+	'coll-show_collection' => 'هارشی‌ین کتاب',
+	'coll-show_collection_tooltip' => 'شه کتاب دچی‌ین، دانلود یا سفارش وسّه کلیک هاکنین',
 );
 
 /** Nahuatl (Nāhuatl)

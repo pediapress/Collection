@@ -7649,7 +7649,39 @@ $messages['myv'] = array(
  * @author محک
  */
 $messages['mzn'] = array(
+	'coll-book_creator_intro' => "<big>با ''کتاب‌ساج'' بنشنه کتابی بساتن که دارای صفحات دلخاه شما از ویکی‌ئه. بتونّی کتاب ره فرمت‌ئون مختلف دبه(مثل پی‌دی‌اف یا اودی‌اف) برون‌بری هاکنین یا سفارش ات کپی چاپی ره هادین.</big>",
+	'coll-manage_your_book' => 'شه کتاب ره مدیریت هاکنین',
+	'coll-book_creator_disable_text' => "''ساجنده‌ی کتاب'' غیرفعال بونه و کتابی که شما ونه سر کار کانّی حذف وونه.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/متن ساجنده‌ی کتاب',
+	'coll-collection' => 'کتاب',
+	'coll-exclusion_category_title' => 'مستثنی از چاپ',
+	'coll-print_template_prefix' => 'پرینت',
+	'coll-print_template_pattern' => 'پرینت/$1',
+	'coll-unknown_subpage_text' => 'این زیرصفحه [[Special:Book|کتاب]] جه وجود ندانّه',
+	'coll-your_book' => 'شمه کتاب',
+	'coll-empty_collection' => 'خالی کتاب',
+	'coll-personal_collection_label' => 'کتاب شخصی:',
+	'coll-community_collection_label' => 'کتاب عمومی:',
+	'coll-save_collection' => 'ذخیره هاکردن کتاب',
+	'coll-load_overwrite_text' => 'شما اسا صفحه‌ئونی شه کتاب دله دارنی.
+شما خانّی کتاب فعلی ره رونویسی هاکنین، محتوای جدید ره ونه دله دکشین یا بارگیری این کتاب ره إس هادین؟',
+	'coll-limit_exceeded_title' => 'کتاب خله خله گت هسته',
+	'coll-limit_exceeded_text' => 'شمه کتاب خله خله گته!
+شِما دیگه نتونّی ونسه صفحه بساجین.',
+	'coll-notfound_title' => 'کتاب پیدا نیّه',
+	'coll-notfound_text' => 'صفحهٔ کتاب پیدا نیّه.',
+	'coll-book_title' => 'سفارش به صورت کتاب چاپ بیی',
+	'coll-book_text' => 'با مراجعه به این شرکای چاپ-با-درخاست اتا کتاب چاپ بیی بَیرین:',
 	'coll-about_pp' => 'دربارهٔ $1',
+	'coll-invalid_podpartner_title' => 'شریک چاپ، با، درخاست غیرمجاز',
+	'coll-invalid_podpartner_msg' => 'شریک چاپ، با، درخاست معلوم بیی غیرمجاز هسته.
+لطفاً شه‌خادش، مودیر مدیاویکی جا تماس بَیرین.',
+	'coll-suggest_intro_text' => 'پیشنهادات بر پایهٔ مجموعهٔ اسایی صفحات ویکی شمه کتاب دله قرار دارنه.
+هرگادر که دکمه‌ئون اضافه هاکردن یا حذف سر کلیک هاکنین، فهرست به‌روز وونه.',
+	'coll-suggest_your_book' => 'شمه کتاب',
+	'coll-suggest_article_add' => 'صفحهٔ <strong>$1</strong> به شمه کتاب ایضافه بیّه($2).',
+	'coll-suggest_article_remove' => 'صفحهٔ <strong>$1</strong> شمه کتاب جه حذف بیی‌یه($2).',
+	'coll-load_local_book' => 'دمباله هدائن با کتاب %TITLE% که %NUMPAGES% صفحهٔ ویکی ره دانّه وسّه، پذیرش کلیک هاکنین. پاک بیّن و شروع وسّه با خالی کتاب، روی لغو کلیک هاکنین.',
 );
 
 /** Nahuatl (Nāhuatl)
