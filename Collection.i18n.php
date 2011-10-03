@@ -6221,6 +6221,13 @@ $messages['ka'] = array(
 	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
 );
 
+/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
+ * @author GaiJin
+ */
+$messages['kk-cyrl'] = array(
+	'coll-format_label' => 'Пішім:',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
@@ -12604,7 +12611,7 @@ $messages['zh-hans'] = array(
 	'coll-mwserve_failed_msg' => '渲染服务器出错：<nowiki>$1</nowiki>',
 	'coll-error_reponse' => '来自服务器的错误响应',
 	'coll-empty_collection' => '空白图书',
-	'coll-revision' => '修订版本：$1',
+	'coll-revision' => '版本：$1',
 	'coll-save_collection_title' => '保存并共享你的图书',
 	'coll-save_collection_text' => '选择你的图书的保存位置：',
 	'coll-login_to_save' => '如果你想保存图书供日后使用，请[[Special:UserLogin|登录或创建账户]]。',
