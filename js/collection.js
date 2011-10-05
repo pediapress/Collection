@@ -151,8 +151,8 @@ function update_buttons() {
 		$('input.order').attr('disabled', 'disabled');
 		return;
 	} else {
-		$('#downloadButton').attr('disabled', '');
-		$('input.order').attr('disabled', '');
+		$('#downloadButton').removeAttr('disabled');
+		$('input.order').removeAttr('disabled');
 	}
 	if (!$('#saveButton').length) {
 		return;
@@ -165,14 +165,14 @@ function update_buttons() {
 			return;
 		}
 	} else if (!$('#personalCollTitle').length || $('#communityCollType:checked').val()) {
-		$('#communityCollTitle').attr('disabled', '');
+		$('#communityCollTitle').removeAttr('disabled');
 		$('#personalCollTitle').attr('disabled', 'disabled');
 		if (!$.trim($('#communityCollTitle').val())) {
 			$('#saveButton').attr('disabled', 'disabled');
 			return;
 		}
 	}
-	$('#saveButton').attr('disabled', '');
+	$('#saveButton').removeAttr('disabled');
 }
 
 function make_sortable() {
