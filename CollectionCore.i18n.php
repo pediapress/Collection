@@ -2367,6 +2367,7 @@ $messages['mzn'] = array(
 	'coll-clear_collection' => 'پاک هاکردن کتاب',
 	'coll-clear_collection_confirm' => 'شما راس راسی خانّی کتاب ره کلأ حذف هاکنین؟',
 	'coll-clear_collection_tooltip' => 'همهٔ صفحات ویکی ره شه کتاب فعلی جا حذف هاکنین',
+	'coll-help' => 'راهنما',
 	'coll-load_collection' => 'باربی‌یشتن کتاب',
 	'coll-load_collection_tooltip' => 'این کتاب ره به عنوان کتاب فعلی بار بی‌یلین',
 	'coll-show_collection' => 'هارشی‌ین کتاب',

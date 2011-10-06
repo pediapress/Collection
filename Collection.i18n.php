@@ -3212,7 +3212,7 @@ No se pueden añadir más páginas.',
 
 <p>Esta página se refrescará automáticamente cada pocos segundos.
 Si no funciona, pulsa el botón de refrescar de tu navegador.</p>',
-	'coll-rendering_status' => '<strong>Estatus:</strong> $1',
+	'coll-rendering_status' => '<strong>Estado:</strong> $1',
 	'coll-rendering_article' => '(página wiki: $1)',
 	'coll-rendering_page' => '(página: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/ Procesando texto de información de la página',
