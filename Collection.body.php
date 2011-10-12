@@ -805,6 +805,11 @@ class SpecialCollection extends SpecialPage {
 		return $collection;
 	}
 
+	/**
+	 * @param $title Title
+	 * @param $forceOverwrite bool
+	 * @return bool
+	 */
 	function saveCollection( $title, $forceOverwrite = false ) {
 		global $wgUser;
 
