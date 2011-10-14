@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * Collection Extension for MediaWiki
  * For performance reasons, this file only contains the extension messages
  * that are used from hooks that are almost always loaded.

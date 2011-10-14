@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * Collection Extension for MediaWiki
  *
  * Copyright (C) PediaPress GmbH
@@ -237,7 +237,7 @@ The variable $1 is another message string, as follows:
 **then the text "rendering" (source message not yet identified)
 
 {{Identical|Status}}',
-	'coll-rendering_finished_text' => 'This is the first part of the text of the special page "Rendering finished", which appears after clicking \'download book\' and the book has been generated.  
+	'coll-rendering_finished_text' => 'This is the first part of the text of the special page "Rendering finished", which appears after clicking \'download book\' and the book has been generated.
 
 $1 is not text; it is the http:// address of the book.',
 	'coll-excluded-templates' => "Part of the text of the special page 'Rendering finished' which appears after clicking on 'Download' and a book has been generated.",
@@ -1105,7 +1105,7 @@ $messages['be-tarask'] = array(
 	'coll-community_collection_label' => 'Кніга супольнасьці:',
 	'coll-save_collection' => 'Захаваць кнігу',
 	'coll-save_category' => 'Усе захаваныя кнігі дададзеныя ў катэгорыю [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
-	'coll-overwrite_title' => 'Старонка ўжо існуе. 
+	'coll-overwrite_title' => 'Старонка ўжо існуе.
 Перазапісаць?',
 	'coll-overwrite_text' => 'Старонка з назвай [[:$1]] ужо існуе.
 Вы жадаеце, каб яна была перазапісана Вашай калекцыяй?',
@@ -2206,8 +2206,8 @@ $messages['da'] = array(
 	'coll-couldnotaddarticle_msg' => 'Wiki-siden kunne ikke tilføjes.',
 	'coll-couldnotremovearticle_title' => 'Kunne ikke fjerne wiki-artikel',
 	'coll-couldnotremovearticle_msg' => 'Wiki-siden kunne ikke fjernes.',
-	'coll-noscript_text' => '<h1>JavaScript er påkrævet!</h1> 
-<strong>Din browser understøtter ikke JavaScript eller JavaScript er slået fra. 
+	'coll-noscript_text' => '<h1>JavaScript er påkrævet!</h1>
+<strong>Din browser understøtter ikke JavaScript eller JavaScript er slået fra.
 Denne side vil ikke virke korrekt, medmindre JavaScript er aktiveret.</strong>',
 	'coll-savedbook_template' => 'gemt_bog',
 	'coll-your_book' => 'Din bog',
@@ -2253,14 +2253,14 @@ Overskriv den?',
 Ønsker du at erstatte den med din bog?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nej',
-	'coll-load_overwrite_text' => 'Du har allerede nogle sider i din bog. 
+	'coll-load_overwrite_text' => 'Du har allerede nogle sider i din bog.
 Vil du overskrive din aktuelle bog, tilføje det nye indhold, eller afbryde indlæsningen af denne bog?',
 	'coll-overwrite' => 'Overskriv',
 	'coll-append' => 'Tilføj',
 	'coll-cancel' => 'Afbryd',
 	'coll-update' => 'Opdater',
 	'coll-limit_exceeded_title' => 'Bogen er for stor',
-	'coll-limit_exceeded_text' => 'Din bog er for stor. 
+	'coll-limit_exceeded_text' => 'Din bog er for stor.
 Der kan ikke tilføjes flere sider.',
 	'coll-rendering_title' => 'Genererer',
 	'coll-rendering_text' => '<p><strong>Vent venligst mens dokumentet bliver genereret.</strong></p>
@@ -2275,20 +2275,20 @@ Der kan ikke tilføjes flere sider.',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Skriver information om samling',
 	'coll-rendering_finished_title' => 'Generering færdig',
 	'coll-rendering_finished_text' => '<strong>Dit dokument er blevet genereret.</strong>
-<strong>[$1 Download filen]</strong> til din computer. 
+<strong>[$1 Download filen]</strong> til din computer.
 
-Note: 
+Note:
 * Er du ikke tilfreds med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjælpesiden omkring bøger]] for eventuelle muligheder til at forbedre det.',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Skriver sideinformation',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Skriver information om samling',
 	'coll-notfound_title' => 'Bog ikke fundet',
 	'coll-notfound_text' => 'Kunne ikke finde bogsiden.',
 	'coll-download_notfound_title' => 'Fil ikke fundet',
-	'coll-download_notfound_text' => 'Filen du forsøger at downloade eksisterer ikke: 
+	'coll-download_notfound_text' => 'Filen du forsøger at downloade eksisterer ikke:
 Måske er den blevet slettet og skal regenereres.',
 	'coll-download_failed_title' => 'Fejl under download',
 	'coll-download_failed_text' => 'Det opstod en fejl ved download af filen: $1',
-	'coll-is_cached' => '<ul><li>En cachet version af dokumentet er blevet fundet, så en ny generering var unødvendig. 
+	'coll-is_cached' => '<ul><li>En cachet version af dokumentet er blevet fundet, så en ny generering var unødvendig.
 <a href="$1">Fremtving gen-generering.</a> </li></ul>',
 	'coll-excluded-templates' => '* Skabeloner i kategorien [[:Category:$1|$1]], er blevet udelukket.',
 	'coll-blacklisted-templates' => '* Skabeloner på sortlisten [[:$1]] er blevet udelukket.',
@@ -2298,7 +2298,7 @@ Måske er den blevet slettet og skal regenereres.',
 	'coll-order_from_pp' => 'Forhåndsvis med $1',
 	'coll-about_pp' => 'Om $1',
 	'coll-invalid_podpartner_title' => 'Ugyldig POD-partner',
-	'coll-invalid_podpartner_msg' => 'Den valgte POD partner er ugyldig. 
+	'coll-invalid_podpartner_msg' => 'Den valgte POD partner er ugyldig.
 Kontakt venligst din MediaWiki-administrator.',
 	'coll-license' => 'Licens',
 	'coll-return_to' => 'Tilbage til [[:$1]]',
@@ -2596,7 +2596,7 @@ Sero binusi?',
 Ti wazeno ey kitab pê kitabê xo rê bivurne?',
 	'coll-yes' => 'Ye',
 	'coll-no' => 'Ne',
-	'coll-load_overwrite_text' => 'Kitabê xo de zatî pelan esto. 
+	'coll-load_overwrite_text' => 'Kitabê xo de zatî pelan esto.
 Ti wazeno ser kitabê xo de binuse, kontendê newe ya zi bar kerdişê kitabî îptal bike?',
 	'coll-overwrite' => 'Sero binuş',
 	'coll-append' => 'Penî ra de biker',
@@ -2910,7 +2910,7 @@ $messages['el'] = array(
 
 <p><strong>Πρόοδος:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>Αυτή η σελίδα θα πρέπει να ανανεώνεται αυτόματα κάθε λίγα δευτερόλεπτα. 
+<p>Αυτή η σελίδα θα πρέπει να ανανεώνεται αυτόματα κάθε λίγα δευτερόλεπτα.
 Αν δεν δουλεύει, παρακαλούμε πατήστε το κουμπί ανανέωσης στον περιηγητή σας.</p>',
 	'coll-rendering_status' => '<strong>Πρόοδος:</strong> $1',
 	'coll-rendering_article' => '(σελίδα wiki: $1)',
@@ -6149,7 +6149,7 @@ $messages['ka'] = array(
 გსურთ მისი შეცვლა თქვენი გვერდით?',
 	'coll-yes' => 'ჰო',
 	'coll-no' => 'არა',
-	'coll-load_overwrite_text' => 'თქვენ უკვე გაგაჩნიათ რამდენიმე გვერდი წიგნში. 
+	'coll-load_overwrite_text' => 'თქვენ უკვე გაგაჩნიათ რამდენიმე გვერდი წიგნში.
 გსურთ თქვენი მოქმედი წიგნის თავიდან გადაწერა, ახალი მატერიალის დამატება თუ ამ წიგნის ატვირთვის გაუქმება?',
 	'coll-overwrite' => 'თავიდან გადაწერა',
 	'coll-append' => 'თანდართვა',
@@ -6579,7 +6579,7 @@ Wells De se met Dinge Sammlong övverschriive?',
 	'coll-yes' => 'Jo',
 	'coll-no' => 'Nä',
 	'coll-load_overwrite_text' => 'En Dingem Booch sinn_er ald Sigge dren.
-Wells de dat Booch övverschrieve, di neu Saache dran 
+Wells de dat Booch övverschrieve, di neu Saache dran
 aanhänge, udder wells de dat Booch lever doch nit laade?',
 	'coll-overwrite' => 'Ußtuusche',
 	'coll-append' => 'Aanhänge',
@@ -8014,7 +8014,7 @@ $messages['nn'] = array(
 	'coll-couldnotremovearticle_title' => 'Kunne ikkje fjerna wikisida',
 	'coll-couldnotremovearticle_msg' => 'Wikisida kunne ikkje fjernast.',
 	'coll-noscript_text' => '<h1>JavaScript er påkravd!</h1>
-<strong>Nettlesaren din støttar ikkje JavaScript, eller JavaScript har blitt slege av. 
+<strong>Nettlesaren din støttar ikkje JavaScript, eller JavaScript har blitt slege av.
 Denne sida vil ikkje fungera på rett måte med mindre JavaScript er slege på.</strong>',
 	'coll-savedbook_template' => 'lagra_bok',
 	'coll-your_book' => 'Boka di',
@@ -8056,7 +8056,7 @@ Denne sida vil ikkje fungera på rett måte med mindre JavaScript er slege på.<
 	'coll-save_category' => 'Alle lagra bøker vert lagde til i kategorien [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Sida finst.
 Skriva over ho?',
-	'coll-overwrite_text' => 'Ei sida med namnet [[:$1]] finst frå før. 
+	'coll-overwrite_text' => 'Ei sida med namnet [[:$1]] finst frå før.
 Vil du at ho skal verta erstatta med boka di?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nei',
@@ -9188,7 +9188,7 @@ Questa pagina na funcziuna betg correctamain fin che ti activeschas JavaScript.<
 	'coll-community_collection_label' => 'Cudesch da la communitad:',
 	'coll-save_collection' => 'Memorisar il cudesch',
 	'coll-save_category' => 'Tut ils cudeschs memorisads vegnan agiuntads a la categoria [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
-	'coll-overwrite_title' => 'Pagina exista gia. 
+	'coll-overwrite_title' => 'Pagina exista gia.
 Remplazzar?',
 	'coll-overwrite_text' => 'Ina pagina cun il num [[:$1]] exista gia.
 La vuls ti remplazzar cun tes cudesch?',
@@ -9208,7 +9208,7 @@ I na pon betg vegnir agiuntadas ulteriuras paginas.',
 
 <p><strong>Progress:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>Questa pagina duess rechargiar automaticamain mintga per secundas. 
+<p>Questa pagina duess rechargiar automaticamain mintga per secundas.
 Sche quai na funcziuna betg, clicca en tes navigatur il buttun per rechargiar.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(pagina wiki: $1)',
@@ -9240,7 +9240,7 @@ Forsa è ella vegnida stizzada e sto vegnir regenerada.",
 	'coll-order_from_pp' => 'Prevista tar $1',
 	'coll-about_pp' => 'Davart $1',
 	'coll-invalid_podpartner_title' => 'Partenari da stampa sin dumonda nunvalid',
-	'coll-invalid_podpartner_msg' => "Il partenari per la stampa sin dumonda inditgà n'è betg valaivel. 
+	'coll-invalid_podpartner_msg' => "Il partenari per la stampa sin dumonda inditgà n'è betg valaivel.
 Contactescha tes administratur da MediaWiki.",
 	'coll-license' => 'Licenza',
 	'coll-return_to' => 'Turnar a [[:$1]]',
@@ -10241,7 +10241,7 @@ Ta stran ne bo delovala pravilno bren omogočenega JavaScripta.</strong>',
 	'coll-save_category' => 'Vse shranjene knjige so dodane k kategoriji [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]',
 	'coll-overwrite_title' => 'Stran obstaja.
 Jo prepišem?',
-	'coll-overwrite_text' => 'Stran z imenom [[:$1]] že obstaja. 
+	'coll-overwrite_text' => 'Stran z imenom [[:$1]] že obstaja.
 Ali želite, da se nadomesti z vašo knjigo?',
 	'coll-yes' => 'Da',
 	'coll-no' => 'Ne',
@@ -10257,7 +10257,7 @@ Ne morete dodati več strani.',
 	'coll-rendering_title' => 'Upodabljanje',
 	'coll-rendering_text' => '<p><strong>Prosimo, počakajte, da se dokument pripravi.</strong></p>
 
-<p><strong>Napredek:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p> 
+<p><strong>Napredek:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
 <p>Ta stran se samodejno osveži vsakih nekaj sekund.
 Če se ne, prosimo, pritisnite gumb za osvežitev znotraj brskalnika.</p>',
@@ -10791,7 +10791,7 @@ Denna sida kommer inte att fungera korrekt innan JavaScript finns tillgängligt.
 	'coll-community_collection_label' => 'Gemensam bok:',
 	'coll-save_collection' => 'Spara bok',
 	'coll-save_category' => 'Alla sparade böcker läggs till i kategorin [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
-	'coll-overwrite_title' => 'Sidan existerar. 
+	'coll-overwrite_title' => 'Sidan existerar.
 Vill du skriva över den?',
 	'coll-overwrite_text' => 'En sida med namnet [[:$1]] finns redan.
 Vill du ersätta den med din samling?',
@@ -11016,7 +11016,7 @@ JavaScript చేతనం చేస్తే తప్ప, ఈ పేజీ స
 
 <p><strong>ప్రగతి:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>ఈ పేజీ కొన్ని సెకండ్లకోసారి ఆటోమాటిగ్గా రిఫ్రెష్ కావాల్సి ఉంది. 
+<p>ఈ పేజీ కొన్ని సెకండ్లకోసారి ఆటోమాటిగ్గా రిఫ్రెష్ కావాల్సి ఉంది.
 అలా కాకపోతే, బ్రౌజరు రిఫ్రెష్ బొత్తాన్ని నొక్కండి.</p>',
 	'coll-rendering_status' => '<strong>స్థితి:</strong> $1',
 	'coll-rendering_article' => '(వికీ పేజీ: $1)',
@@ -11477,7 +11477,7 @@ MediaWiki administratoryňyz bilen habarlaşyň.',
 	'coll-hide_info' => 'Maglumaty gizle',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress buýurma maglumaty',
 	'coll-suggest_title' => 'Kitabyňyz üçin teklip edilýän sahypalar',
-	'coll-suggest_intro_text' => 'Teklipler häzirki wagtda kitabyňyzda bar bolan wiki sahypalaryna esaslanýar. 
+	'coll-suggest_intro_text' => 'Teklipler häzirki wagtda kitabyňyzda bar bolan wiki sahypalaryna esaslanýar.
 Goş ýa-da ýyr düwmelerine her basanyňyzda bu sanaw täzelenilýär.',
 	'coll-suggested_articles' => 'Teklipler',
 	'coll-suggest_reset_bans' => 'başky ýagdaýa getir',
@@ -11766,7 +11766,7 @@ Lütfen MedyaViki yöneticinizle irtibat kurun.',
 	'coll-hide_info' => 'Bilgiyi gizle',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress sipariş bilgisi',
 	'coll-suggest_title' => 'Kitabınız için önerilen sayfalar',
-	'coll-suggest_intro_text' => 'Öneriler şu anda kitabınızda bulunan viki sayfalarına dayalıdır. 
+	'coll-suggest_intro_text' => 'Öneriler şu anda kitabınızda bulunan viki sayfalarına dayalıdır.
 Ekle veya sil butonlarına her bastığınızda liste yenilenir.',
 	'coll-suggested_articles' => 'Öneriler',
 	'coll-suggest_reset_bans' => 'sıfırla',
@@ -11962,7 +11962,7 @@ $messages['uk'] = array(
 	'coll-order_from_pp' => 'Попередній перегляд за допомогою $1',
 	'coll-about_pp' => 'Про $1',
 	'coll-invalid_podpartner_title' => 'Недійсний POD-партнер',
-	'coll-invalid_podpartner_msg' => "POD-партнер, що надається, недійсний. 
+	'coll-invalid_podpartner_msg' => "POD-партнер, що надається, недійсний.
 Будь-ласка, зв'яжіться з вашим адміністратором MediaWiki.",
 	'coll-license' => 'Ліцензія',
 	'coll-return_to' => 'Повернення до [[:$1]]',
