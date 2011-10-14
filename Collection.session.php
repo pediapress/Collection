@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * Collection Extension for MediaWiki
  *
  * Copyright (C) PediaPress GmbH

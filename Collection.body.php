@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Collection Extension for MediaWiki
  *
  * Copyright (C) PediaPress GmbH
@@ -1050,8 +1050,8 @@ class SpecialCollection extends SpecialPage {
 
 			$template = new CollectionRenderingTemplate();
 			$template->set( 'status', $status );
-			if ( !isset( $response['status']['progress'] ) ) { 
-				$response['status']['progress'] = 1.00; 
+			if ( !isset( $response['status']['progress'] ) ) {
+				$response['status']['progress'] = 1.00;
 			}
 			$template->set( 'progress', $response['status']['progress'] );
 			$wgOut->addTemplate( $template );
@@ -1073,13 +1073,13 @@ class SpecialCollection extends SpecialPage {
 
 	function download() {
 		global $wgOut, $wgRequest, $wgCollectionContentTypeToFilename;
-		
+
 		$tempfile = tmpfile();
 		$r = self::mwServeCommand( 'render_status', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 			'writer' => $wgRequest->getVal( 'writer' ),
 		) );
-		
+
 		$info = false;
 		if ( isset( $r['url'] ) ) {
 			$result = Http::get( $r['url'] );

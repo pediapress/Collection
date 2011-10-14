@@ -293,7 +293,7 @@ class CollectionLoadOverwriteTemplate extends QuickTemplate {
 	<input name="append" type="submit" value="<?php $this->msg( 'coll-append' ) ?>" />
 	<input name="cancel" type="submit" value="<?php $this->msg( 'coll-cancel' ) ?>" />
 	<input name="bookcmd" type="hidden" value="load_collection" />
-	<input name="colltitle" type="hidden" value="<?php echo htmlspecialchars( $this->data['title']->getPrefixedText() ) ?>" /> 
+	<input name="colltitle" type="hidden" value="<?php echo htmlspecialchars( $this->data['title']->getPrefixedText() ) ?>" />
 </form>
 
 <?php
@@ -399,9 +399,9 @@ if ( $t && $t->exists() ) {
 	}
 }
 
-/*
+/**
  * Template for suggest feature
- * 
+ *
  * It needs the two methods getProposalList() and getMemberList()
  * to run with Ajax
  */
@@ -451,7 +451,7 @@ class CollectionSuggestTemplate extends QuickTemplate {
 
 		$prop = $this->data['proposals'];
 		$out = '';
-		
+
 		$num = count( $prop );
 		if ( $num == 0 ) {
 			return "<li>" . wfMsgHtml( 'coll-suggest_empty' ) . "</li>";

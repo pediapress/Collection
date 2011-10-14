@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * Collection Extension for MediaWiki
  *
  * Copyright (C) 2008-2009, PediaPress GmbH
@@ -21,7 +21,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-/*
+/**
  * Class: CollectionSuggest
  *
  * This class contains only static methods, so theres no need for a constructer.
@@ -215,9 +215,9 @@ class CollectionSuggest {
 	}
 }
 
-/*
+/**
  * class: Proposals
- * 
+ *
  * it needs 3 Lists:
  * - one with the bookmembers
  * - one where it can save the banned articles
@@ -229,7 +229,7 @@ class CollectionSuggest {
  * links of that article as second dimension can be accessed with the method
  * getLinkList()
  *
- * 
+ *
  *
  * the Class can only sort the proposals, if it can access the function compareProps
  */
@@ -240,20 +240,20 @@ class Proposals {
 	 * class attributes
 	 * ==================================================
 	 *
-	 * only mLinkList and mPropList can be accessed from 
+	 * only mLinkList and mPropList can be accessed from
 	 * outside the class via getLinkList() and getPropsosals()
 	 */
 	private $mColl;
 	private $mPropList;
 	private $mLinkList;
 	private $mBanList;
-	
+
 	/*
 	 * ==================================================
 	 * constructor
 	 * ==================================================
-	 * 
-	 * @param $coll the collection	
+	 *
+	 * @param $coll the collection
 	 * @param $ban the list of the banned articles
 	 * @param $props the lilst of the proposals
 	 */
@@ -291,7 +291,7 @@ class Proposals {
 	 *        default is true
 	 * @return a 2-dimensional array that contains the proposals
 	 *         the first dimesion is numeric, the second contains
-	 *         3 entries: 
+	 *         3 entries:
 	 *         - 'name': the name of a proposed article
 	 *         - 'num' : how often this artikel was linked in the
 	 *                   bookmembers
@@ -302,7 +302,7 @@ class Proposals {
 		if ( $doUpdate ) {
 			$this->updateLinkList();
 		}
-			
+
 		$this->getPropList();
 
 		if ( $num > 0 ) {
@@ -405,7 +405,7 @@ class Proposals {
 			if ( preg_match( '/[:#]/', $link ) ) { // skip links with ':' and '#'
 				continue;
 			}
-				
+
 			// handle links with a displaytitle
 			$matches = array();
 			if ( preg_match( '/(.+?)\|(.+)/', $link, $matches ) ) {
@@ -456,7 +456,7 @@ class Proposals {
 					}
 				}
 			}
-			
+
 			if ( count( $linkcount ) == 0 ) {
 				return array();
 			}
@@ -570,10 +570,10 @@ class Proposals {
 	}
 }
 
-/*
+/**
  * sort $mPropList by the entries values
  * sort alphabetically by equal values
- * 
+ *
  * @param $a, $b: arrays that contain two entries
  *                the keys: 'name' & 'val'
  *                'name': an articlename
