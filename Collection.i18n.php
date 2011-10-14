@@ -10317,7 +10317,7 @@ Seznam je posodobljen, ko kliknete na gumbe za dodajanje ali odstranjevanje.',
 	'right-collectionsaveascommunitypage' => 'Shranjevanje knjig kot strani občestva',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Nikola Smolenski
  * @author Rancher
  * @author Sasa Stefanovic
@@ -10331,9 +10331,9 @@ $messages['sr-ec'] = array(
 	'coll-book_creator_intro' => "<big>Са ''писцем књига'' можете направити књигу која садржи жељене странице са викије. Њу можете сачувати у различитим форматима (нпр. PDF или ODF) или је наручити у штампаном издању.</big>",
 	'coll-manage_your_book' => 'Управљање књигама',
 	'coll-book_creator_help' => 'Погледајте [[{{MediaWiki:Coll-helppage}}|страницу за помоћ о књигама]] за више информација.',
-	'coll-start_book_creator' => 'Покрени писца књига',
+	'coll-start_book_creator' => 'Покрени књиговезницу',
 	'coll-book_creator_continue' => 'Настави са коришћењем уређивача књига',
-	'coll-book_creator_disable_text' => "''Писац књига'' ће бити онемогућен, а књига на којој радите уклоњена.",
+	'coll-book_creator_disable_text' => "''Књиговезница'' ће бити онемогућена, а књига на којој радите ће бити уклоњена.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/текст писца књига',
 	'coll-collection' => 'Књига',
 	'coll-collections' => 'Књиге',
@@ -10342,10 +10342,10 @@ $messages['sr-ec'] = array(
 	'coll-print_template_pattern' => '$1/штампање',
 	'coll-unknown_subpage_title' => 'Непозната подстраница',
 	'coll-unknown_subpage_text' => 'Ова подстраница [[Special:Book|књиге]] не постоји.',
-	'coll-couldnotaddarticle_title' => 'Додавање странице није успело',
+	'coll-couldnotaddarticle_title' => 'Не могу да додам вики страницу',
 	'coll-couldnotaddarticle_msg' => 'Додавање странице није извршено.',
-	'coll-couldnotremovearticle_title' => 'Уклањање странице није успело',
-	'coll-couldnotremovearticle_msg' => 'Уклањање странице није извршено.',
+	'coll-couldnotremovearticle_title' => 'Не могу да уклоним вики страницу',
+	'coll-couldnotremovearticle_msg' => 'Вики страница се не може уклонити.',
 	'coll-noscript_text' => '<h1>Потребан је јаваскрипт</h1>
 <strong>Ваш прегледач не подржава јаваскрипт или он није омогућен.
 Ова страница неће радити исправно без њега.</strong>',
