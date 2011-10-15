@@ -231,7 +231,7 @@ class SpecialCollection extends SpecialPage {
 			case 'render':
 				return $this->renderCollection(
 					CollectionSession::getCollection(),
-					Title::newFromText( $wgContLang->specialPage( 'Book' ) ),
+					SpecialPage::getTitleFor( 'Book' ),
 					$wgRequest->getVal( 'writer', '' )
 				);
 			case 'forcerender':
