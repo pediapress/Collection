@@ -158,7 +158,7 @@ function update_buttons() {
 		return;
 	}
 	if (!$('#communityCollTitle').length || $('#personalCollType:checked').val()) {
-		$('#personalCollTitle').attr('disabled', '');
+		$('#personalCollTitle').removeAttr('disabled');
 		$('#communityCollTitle').attr('disabled', 'disabled');
 		if (!$.trim($('#personalCollTitle').val())) {
 			$('#saveButton').attr('disabled', 'disabled');
