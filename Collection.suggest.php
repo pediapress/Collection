@@ -31,13 +31,13 @@
  */
 class CollectionSuggest {
 
-	/*
+	/**
 	 * ===============================================================================
 	 * public methods
 	 * ===============================================================================
 	 */
 
-	/*
+	/**
 	 * Main entrypoint
 	 *
 	 * @param $mode (type string) 'add', 'ban' or 'remove'
@@ -70,7 +70,7 @@ class CollectionSuggest {
 		$wgOut->addTemplate( $template );
 	}
 
-	/*
+	/**
 	 * Entrypoint for Ajax
 	 *
 	 * @param $mode (type string) 'add', 'ban' or 'remove'
@@ -124,7 +124,7 @@ class CollectionSuggest {
 		}
 	}
 
-	/*
+	/**
 	 * ===============================================================================
 	 * private methods
 	 * ===============================================================================
@@ -142,7 +142,7 @@ class CollectionSuggest {
 		$_SESSION['wsCollectionSuggestBan'] = $newbans;
 	}
 
-	/*
+	/**
 	 * Update the session and return the template
 	 *
 	 * @param $mode (type string) 'add', 'ban' or 'remove'
@@ -201,7 +201,7 @@ class CollectionSuggest {
 		return $template;
 	}
 
-	/*
+	/**
 	 * Add some articles and update the book of the Proposal-Object
 	 *
 	 * @param $articleList an array with the names of the articles to be added
@@ -235,7 +235,7 @@ class CollectionSuggest {
  */
 class Proposals {
 
-	/*
+	/**
 	 * ==================================================
 	 * class attributes
 	 * ==================================================
@@ -248,7 +248,7 @@ class Proposals {
 	private $mLinkList;
 	private $mBanList;
 
-	/*
+	/**
 	 * ==================================================
 	 * constructor
 	 * ==================================================
@@ -265,7 +265,7 @@ class Proposals {
 	}
 
 
-	/*
+	/**
 	 * ==================================================
 	 * public methods
 	 * ==================================================
@@ -279,7 +279,7 @@ class Proposals {
 		$this->mColl = $collection;
 	}
 
-	/*
+	/**
 	 * Calculate the new proposals and return it
 	 *
 	 * @param $num (type int) number of proposals to be returned
@@ -316,7 +316,7 @@ class Proposals {
 		return count( $this->mBanList ) > 0;
 	}
 
-	/*
+	/**
 	 * ==================================================
 	 * private methods
 	 * ==================================================
@@ -381,7 +381,7 @@ class Proposals {
 		}
 	}
 
-	/*
+	/**
 	 * Extract & count links from wikitext
 	 *
 	 * @param wikitext: article text
@@ -526,7 +526,7 @@ class Proposals {
 		}
 	}
 
-	/*
+	/**
 	 * Search an article in an array and returns its key or false
 	 * if the array doesn't contain the article
 	 *
@@ -544,7 +544,7 @@ class Proposals {
 		return false;
 	}
 
-	/*
+	/**
 	 * Check if an article is banned or belongs to the book/collection
 	 *
 	 * @param $link (type string) an articlename
