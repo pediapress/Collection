@@ -863,7 +863,7 @@ class SpecialCollection extends SpecialPage {
 			'title' => $title->getPrefixedText(),
 			'text' => $articleText,
 			'token' => $wgUser->editToken(),
-		), true );
+		), true, $_SESSION );
 		$api = new ApiMain( $req, true );
 		$api->execute();
 		return true;
