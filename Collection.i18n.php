@@ -7921,7 +7921,7 @@ Wilt u uw huidige boek overschrijven, de nieuwe pagina's toevoegen óf het laden
 	'coll-append' => 'Toevoegen',
 	'coll-cancel' => 'Annuleren',
 	'coll-update' => 'Verversen',
-	'coll-limit_exceeded_title' => 'Boek is te groot',
+	'coll-limit_exceeded_title' => 'Het boek is te groot',
 	'coll-limit_exceeded_text' => "Uw boek is te groot.
 U kunt geen pagina's meer toevoegen.",
 	'coll-rendering_title' => 'Bezig met renderen',
@@ -7944,8 +7944,8 @@ Opmerkingen:
 * Niet tevreden met de uitvoer? Op de [[{{MediaWiki:Coll-helppage}}|hulppagina over boeken]] staan tips om deze uitvoer te verbeteren.',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informatietekst bij renderen pagina',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informatietekst bij renderen verzameling',
-	'coll-notfound_title' => 'Boek niet gevonden',
-	'coll-notfound_text' => 'Boekpagina is niet gevonden.',
+	'coll-notfound_title' => 'Het boek is niet gevonden',
+	'coll-notfound_text' => 'De boekpagina is niet gevonden.',
 	'coll-download_notfound_title' => 'Het bestand is niet gevonden',
 	'coll-download_notfound_text' => 'Het bestand dat u probeert te downloaden bestaat niet.
 Het is mogelijk verwijderd en moet opnieuw aangemaakt worden.',
