@@ -52,10 +52,8 @@ class CollectionHooks {
 		global $wgCollectionPortletForLoggedInUsersOnly;
 
 		if ( !$wgCollectionPortletForLoggedInUsersOnly || $wgUser->isLoggedIn() ) {
-			if ( isset( $navUrls['print'] ) ) {
-				// We move this guy out to our own box
-				unset( $navUrls['print'] );
-			}
+			// We move this guy out to our own box
+			$navUrls['print'] = false;
 		}
 		return true;
 	}
