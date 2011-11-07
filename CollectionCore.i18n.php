@@ -2598,6 +2598,7 @@ $messages['or'] = array(
  */
 $messages['os'] = array(
 	'coll-download_as' => 'Æрбавгæн куыд $1',
+	'coll-suggest_empty' => 'афтид',
 );
 
 /** Deitsch (Deitsch)
