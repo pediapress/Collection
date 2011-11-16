@@ -10609,7 +10609,7 @@ $messages['stq'] = array(
 	'coll-noscript_text' => '<h1>JavaScript is nöödich!</h1>
 <strong>Dien Browser unnerstutset neen Javascript of Javascript wuude deaktivierd. Disse Siede däd nit gjucht funktionierje, soloange Javascript nit ferföigboar is.</strong>',
 	'coll-download_title' => 'Deelleede',
-	'coll-download_text' => 'Uum ne Offline-Version fon dien Bouk deeltouleeden, wääl n Formoat un klik ap ap ju Schaltfläche.',
+	'coll-download_text' => 'Uum ne Offline-Version fon dien Bouk deeltouleeden, wääl n Formoat un klik ap ap ju Skaltfläche.',
 	'coll-download' => 'Deelleede',
 	'coll-format_label' => 'Formoat:',
 	'coll-remove' => 'Wächhoalje',
@@ -10641,14 +10641,14 @@ $messages['stq'] = array(
 	'coll-community_collection_label' => 'Gemeenskuppelk Bouk:',
 	'coll-save_collection' => 'Bouk spiekerje',
 	'coll-save_category' => 'Aal spiekerde Bouke wäide ju Kategorie [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] touoardend.',
-	'coll-overwrite_title' => 'Siede bestoant. Uurschrieuwe?',
+	'coll-overwrite_title' => 'Siede bestoant. Uurskrieuwe?',
 	'coll-overwrite_text' => 'Ne Siede mäd dän Noome [[:$1]] bestoant al.
 Moatest du ju truch dien Kollektion ärsätte?',
 	'coll-yes' => 'Jee',
 	'coll-no' => 'Noa',
 	'coll-load_overwrite_text' => 'Dien Kollektion änthaalt al wäkke Sieden.
-Moatest du dät aktuelle Bouk uurschrieuwe, do näie Sieden anhongje of dät Leeden fon dit Bouk oubreeke?',
-	'coll-overwrite' => 'Uurschrieuwe',
+Moatest du dät aktuelle Bouk uurskrieuwe, do näie Sieden anhongje of dät Leeden fon dit Bouk oubreeke?',
+	'coll-overwrite' => 'Uurskrieuwe',
 	'coll-append' => 'Anhongje',
 	'coll-cancel' => 'Oubreeke',
 	'coll-update' => 'Aktualisierje',
@@ -10659,7 +10659,7 @@ Moatest du dät aktuelle Bouk uurschrieuwe, do näie Sieden anhongje of dät Lee
 
 <p><strong>Foutskrit:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
 
-<p>Disse Siede schuul sik älke poor Sekunden fonsälwen aktualisierje.
+<p>Disse Siede skuul sik älke poor Sekunden fonsälwen aktualisierje.
 Fals dit daach nit geböärt, druk dan dän „Aktualisierje“-Knoop (maast F5) fon dien Browser.</p>',
 	'coll-rendering_status' => '<strong>Stoatus:</strong> $1',
 	'coll-rendering_article' => '(Wikisiede: $1)',
