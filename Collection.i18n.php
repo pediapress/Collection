@@ -4221,7 +4221,7 @@ Esta páxina non funcionará correctamente, polo menos ata que o JavaScript sexa
 	'coll-title' => 'Título:',
 	'coll-subtitle' => 'Subtítulo:',
 	'coll-contents' => 'Contidos',
-	'coll-drag_and_drop' => 'Use amosar e agochar para reordenar as páxinas e os capítulos wiki',
+	'coll-drag_and_drop' => 'Use arrastrar e soltar para reordenar as páxinas wiki e os capítulos',
 	'coll-create_chapter' => 'Crear un capítulo',
 	'coll-sort_alphabetically' => 'Ordenar alfabeticamente',
 	'coll-rename' => 'Renomear',
