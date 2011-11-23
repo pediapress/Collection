@@ -2048,7 +2048,7 @@ $messages['ksh'] = array(
 	'coll-suggest_empty' => 'leddisch',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin))
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -3203,7 +3203,7 @@ $messages['sr-ec'] = array(
 	'coll-suggest_empty' => 'празно',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  * @author Жељко Тодоровић
  */
@@ -3408,7 +3408,7 @@ $messages['tet'] = array(
 	'coll-n_pages' => '{{PLURAL:$1|pájina ida|pájina $1}}',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
+/** Tajik (Cyrillic script) (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -3423,7 +3423,7 @@ $messages['tg-cyrl'] = array(
 	'coll-show_collection' => 'Намоиши гирдоварӣ',
 );
 
-/** Tajik (Latin) (Тоҷикӣ (Latin))
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -3607,7 +3607,7 @@ $messages['tt'] = array(
 	'coll-bookscategory' => 'Китаплар',
 );
 
-/** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
+/** Tatar (Cyrillic script) (Татарча)
  * @author Ильнар
  */
 $messages['tt-cyrl'] = array(
