@@ -3552,6 +3552,7 @@ Zerrenda gaurkotzen da gehitu edo kendu botoietan klik egiten duzun bakoitzean.'
  * @author Huji
  * @author Komeil 4life
  * @author Ladsgroup
+ * @author Reza1615
  * @author Sahim
  * @author Spacebirdy
  * @author Wayiran
@@ -3616,7 +3617,7 @@ $messages['fa'] = array(
 	'coll-personal_collection_label' => 'کتاب شخصی:',
 	'coll-community_collection_label' => 'کتاب عمومی:',
 	'coll-save_collection' => 'ذخیره کردن کتاب',
-	'coll-save_category' => 'همه کتابهای ذخیره شده در رده‌ها اضافه شده‌اند [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'همه کتابهای ذخیره شده در رده‌  [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] موجود هستند.',
 	'coll-overwrite_title' => 'صفحه وجود دارد.
 رونویسی شود؟',
 	'coll-overwrite_text' => 'یک صفحه با نام [[:$1]] در حال حاضر موجود است.
