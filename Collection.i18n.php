@@ -7413,17 +7413,25 @@ $messages['mn'] = array(
  * @author Htt
  * @author Kaustubh
  * @author Mahitgar
+ * @author Rahuldeshmukh101
  */
 $messages['mr'] = array(
 	'coll-desc' => '[[Special:Collection|पाने गोळा करा]], पीडीएफ तयार करा',
+	'coll-start_book_creator' => 'ग्रंथ निर्मिती सुरुकरा',
 	'coll-collection' => 'गोळा केलेली पाने',
 	'coll-collections' => 'गोळा केलेली पाने',
+	'coll-print_template_prefix' => 'छापा',
 	'coll-noscript_text' => '<h1>जावास्क्रीप्ट आवश्यक!</h1>
 <strong>तुमचा ब्राउझार जावास्क्रीप्ट वापरू शकत नाही किंवा वापर बंद केलेला आहे.
 जावास्क्रीप्ट चालू केल्याशिवाय हे पान व्यवस्थित काम करणार नाही.</strong>',
+	'coll-savedbook_template' => 'जतन केलेला ग्रंथ',
+	'coll-your_book' => 'आपला ग्रंथ',
 	'coll-download_title' => 'उतरवा',
 	'coll-download_text' => 'तुम्ही गोळा केलेल्या पानांच्या पीडीएफ आवृत्त्या गोळा करण्यासाठी, दिलेली कळ दाबा.',
+	'coll-download' => 'उतरवा',
+	'coll-format_label' => 'आराखडा',
 	'coll-remove' => 'वगळा',
+	'coll-show' => 'दाखवा',
 	'coll-move_to_top' => 'सर्वात वर हलवा',
 	'coll-move_up' => 'वर हलवा',
 	'coll-move_down' => 'खाली हलवा',
@@ -7472,6 +7480,18 @@ $messages['mr'] = array(
 	'coll-invalid_podpartner_title' => 'चुकीचा POD भागीदार',
 	'coll-invalid_podpartner_msg' => 'दिलेला POD भागीदार चुकीचा आहे.
 कृपया मीडियाविकि प्रबंधकाशी संपर्क करा.',
+	'coll-license' => 'परवाना',
+	'coll-more_info' => 'अधिक माहिती दाखवा',
+	'coll-hide_info' => 'माहिती लपवा',
+	'coll-suggest_title' => 'आपल्या ग्रंथासाठी सुचवलेली पाने',
+	'coll-suggested_articles' => 'सूचना',
+	'coll-suggest_reset_bans' => 'पूर्ववत करा',
+	'coll-suggest_add_selected' => 'निवडलेली पाने वाढवा',
+	'coll-suggest_ban_selected' => 'निवडलेली पाने वगळा',
+	'coll-suggest_your_book' => 'आपला ग्रंथ',
+	'coll-suggest_show' => 'दाखवा',
+	'coll-suggest_undo_tooltip' => 'उलटावा',
+	'coll-suggest_undo' => 'उलटवा',
 );
 
 /** Malay (Bahasa Melayu)

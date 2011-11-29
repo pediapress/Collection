@@ -2290,11 +2290,17 @@ $messages['mn'] = array(
 
 /** Marathi (मराठी)
  * @author Kaustubh
+ * @author Rahuldeshmukh101
  */
 $messages['mr'] = array(
 	'coll-create_a_book' => 'मी गोळा केलेली पाने',
+	'coll-book_creator' => 'ग्रंथ निर्माण',
+	'coll-disable' => 'अक्षम करा',
+	'coll-add_linked_article' => 'दुव्यातील पान आपल्या ग्रंथात समाविष्ट करा',
 	'coll-add_category' => 'वर्गाचा समावेश करा',
+	'coll-bookscategory' => 'गोळा केलेली पाने',
 	'coll-clear_collection' => 'सर्व गोळा केलेली पाने पुसा',
+	'coll-help' => 'सहाय्य',
 	'coll-helppage' => 'Help:गोळा केलेली पाने',
 	'coll-load_collection' => 'गोळाकेलेली पाने दाखवा',
 	'coll-show_collection' => 'गोळा केलेली पाने दाखवा',
