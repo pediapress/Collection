@@ -2293,17 +2293,30 @@ $messages['mn'] = array(
  * @author Rahuldeshmukh101
  */
 $messages['mr'] = array(
+	'coll-print_export' => 'छापा/ निर्यात करा',
 	'coll-create_a_book' => 'मी गोळा केलेली पाने',
+	'coll-create_a_book_tooltip' => 'ग्रंथ निर्मिती अथवा पृष्ठ संग्रह सुरुकरा',
 	'coll-book_creator' => 'ग्रंथ निर्माण',
 	'coll-disable' => 'अक्षम करा',
+	'coll-book_creator_disable' => 'ग्रंथ निर्मिती यंत्रणा अकार्यान्वित करा',
+	'coll-book_creator_disable_tooltip' => 'ग्रंथ निर्मिती यंत्रणा थांबवा',
 	'coll-add_linked_article' => 'दुव्यातील पान आपल्या ग्रंथात समाविष्ट करा',
 	'coll-add_category' => 'वर्गाचा समावेश करा',
+	'coll-add_this_page' => 'ह्या पानाचा आपल्या ग्रंथात समावेश करा',
 	'coll-bookscategory' => 'गोळा केलेली पाने',
 	'coll-clear_collection' => 'सर्व गोळा केलेली पाने पुसा',
+	'coll-clear_collection_confirm' => 'आपण खरोखरच आपला  संपूर्ण ग्रंथ रिक्त करू इच्छिता का ?',
 	'coll-help' => 'सहाय्य',
+	'coll-help_tooltip' => 'ग्रंथ निर्मिती बाबत सहाय्यता दाखवा',
 	'coll-helppage' => 'Help:गोळा केलेली पाने',
 	'coll-load_collection' => 'गोळाकेलेली पाने दाखवा',
+	'coll-printable_version_pdf' => 'पी डि एफ  आवृत्ती',
+	'coll-remove_this_page' => 'हे पान आपल्या ग्रंथातून वगळावे',
 	'coll-show_collection' => 'गोळा केलेली पाने दाखवा',
+	'coll-not_addable' => 'हे पान जमा करता येणार नाही',
+	'coll-make_suggestions' => 'पाने सुचवा',
+	'coll-make_suggestions_tooltip' => 'आपल्या ग्रंथातील पृष्ठानुसार सूचना दाखवा',
+	'coll-suggest_empty' => 'रिकामे',
 );
 
 /** Malay (Bahasa Melayu)

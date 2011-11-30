@@ -7411,16 +7411,22 @@ $messages['mn'] = array(
 
 /** Marathi (मराठी)
  * @author Htt
+ * @author Kaajawa
  * @author Kaustubh
  * @author Mahitgar
  * @author Rahuldeshmukh101
  */
 $messages['mr'] = array(
 	'coll-desc' => '[[Special:Collection|पाने गोळा करा]], पीडीएफ तयार करा',
+	'coll-manage_your_book' => 'आपल्या ग्रंथाचे व्यवस्थापन करा',
 	'coll-start_book_creator' => 'ग्रंथ निर्मिती सुरुकरा',
+	'coll-book_creator_continue' => 'पुस्तक निर्मात्याचा वापर चालू ठेवा',
 	'coll-collection' => 'गोळा केलेली पाने',
 	'coll-collections' => 'गोळा केलेली पाने',
+	'coll-exclusion_category_title' => ' छापतांना वगळावे',
 	'coll-print_template_prefix' => 'छापा',
+	'coll-print_template_pattern' => '$1/ छापा',
+	'coll-unknown_subpage_title' => 'अनोळखी उपपान.',
 	'coll-noscript_text' => '<h1>जावास्क्रीप्ट आवश्यक!</h1>
 <strong>तुमचा ब्राउझार जावास्क्रीप्ट वापरू शकत नाही किंवा वापर बंद केलेला आहे.
 जावास्क्रीप्ट चालू केल्याशिवाय हे पान व्यवस्थित काम करणार नाही.</strong>',
@@ -7440,7 +7446,7 @@ $messages['mr'] = array(
 	'coll-subtitle' => 'उपशीर्षक:',
 	'coll-contents' => 'अनुक्रमणिका',
 	'coll-create_chapter' => 'नवीन धडा बनवा',
-	'coll-sort_alphabetically' => 'अक्षरांप्रमाणे पानांचे वर्गीकरण करा',
+	'coll-sort_alphabetically' => 'अक्षरवल्हे    पानांचे वर्गीकरण करा',
 	'coll-rename' => 'नाव बदला',
 	'coll-new_chapter' => 'नवीन धड्याचे नाव लिहा',
 	'coll-rename_chapter' => 'नवीन धड्याचे नाव लिहा',
@@ -7448,6 +7454,8 @@ $messages['mr'] = array(
 	'coll-notitle_title' => 'या पानाचे शीर्षक ठरविता आलेले नाही.',
 	'coll-post_failed_title' => 'पोस्ट (POST) ची मागणी पूर्ण झालेली नाही',
 	'coll-post_failed_msg' => '$1 ची पोस्ट (POST) मागणी पूर्ण झालेली नाही ($2).',
+	'coll-mwserve_failed_title' => 'प्रतिपादन कार्यात त्रुटी',
+	'coll-mwserve_failed_msg' => 'कार्यात प्रतिपादनदातास  त्रूटी आढळली आहे : <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'सर्व्हर कडून चुकीचा संदेश आलेला आहे',
 	'coll-empty_collection' => 'रिकामे कलेक्शन',
 	'coll-revision' => 'आवृत्ती: $1',
@@ -7467,11 +7475,18 @@ $messages['mr'] = array(
 	'coll-overwrite' => 'पुनर्लेखन करा',
 	'coll-append' => 'वाढवा',
 	'coll-cancel' => 'रद्द करा',
-	'coll-limit_exceeded_title' => 'कलेक्शन खूप मोठे झालेले आहे',
-	'coll-limit_exceeded_text' => 'तुमचे पानांचे कलेक्शन खूप मोठे झालेले आहे.
+	'coll-update' => 'अद्ययावत करा',
+	'coll-limit_exceeded_title' => '!!FUZZY!ग्रंथ खूप मोठा  झालेले आहे',
+	'coll-limit_exceeded_text' => 'तुमचे पानांचा संग्रह खूप मोठा  झालेले आहे.
 आणखी पाने वाढविता येणार नाहीत.',
+	'coll-rendering_title' => 'प्रतिपादन करीत आहे',
+	'coll-rendering_status' => '<strong>स्थिती:</strong> $1',
 	'coll-notfound_title' => 'कलेक्शन सापडले नाही',
 	'coll-notfound_text' => 'कलेक्शन पान सापडले नाही.',
+	'coll-download_notfound_title' => 'संचिका सापडली नाही.',
+	'coll-download_notfound_text' => 'आपण ज्य़ा सचिकेस उतरवण्याचा प्रयत्न करीत आहात ती उपलब्ध नाही.
+हि संचिका वगळण्यात आली असण्याची शक्यता असल्याने त्यास पुनर्निर्मित करण्याची गरज आहे.',
+	'coll-download_failed_title' => 'उतरवित असतांना त्रुटी',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p> कडे परत जा',
 	'coll-book_title' => 'छापील आवृत्तीची मागणी नोंदवा',
 	'coll-book_text' => 'तुम्ही खाली दिलेल्या मागणीनुसार छपाई करणार्‍या जोडीदारांच्या संकेतस्थळाला भेट देऊन तुमच्या कलेक्शन मधील पानांची छापील आवृत्ती मिळवू शकता:',
@@ -7481,17 +7496,23 @@ $messages['mr'] = array(
 	'coll-invalid_podpartner_msg' => 'दिलेला POD भागीदार चुकीचा आहे.
 कृपया मीडियाविकि प्रबंधकाशी संपर्क करा.',
 	'coll-license' => 'परवाना',
+	'coll-return_to' => '[[:$1]] कड़े परत जा',
 	'coll-more_info' => 'अधिक माहिती दाखवा',
 	'coll-hide_info' => 'माहिती लपवा',
 	'coll-suggest_title' => 'आपल्या ग्रंथासाठी सुचवलेली पाने',
 	'coll-suggested_articles' => 'सूचना',
 	'coll-suggest_reset_bans' => 'पूर्ववत करा',
+	'coll-suggest_reset_bans_tooltip' => 'मागील वगळलेल्या सूचना दाखवा',
 	'coll-suggest_add_selected' => 'निवडलेली पाने वाढवा',
 	'coll-suggest_ban_selected' => 'निवडलेली पाने वगळा',
 	'coll-suggest_your_book' => 'आपला ग्रंथ',
 	'coll-suggest_show' => 'दाखवा',
+	'coll-suggest_ban_tooltip' => ' सूचनांच्या यादीतून हे पान वगळा',
+	'coll-suggest_article_add' => '<strong>$1</strong> हि पाने आपल्या ($2) ह्या  ग्रंथात जमा केलीत',
 	'coll-suggest_undo_tooltip' => 'उलटावा',
 	'coll-suggest_undo' => 'उलटवा',
+	'right-collectionsaveasuserpage' => 'ग्रंथास सदस्य पान म्हणून जतन करा',
+	'right-collectionsaveascommunitypage' => 'ग्राथांना समाज पृष्ठ म्हणून जतन करा',
 );
 
 /** Malay (Bahasa Melayu)
