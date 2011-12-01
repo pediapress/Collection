@@ -8171,6 +8171,7 @@ Lista vert oppdatert kvar gong du trykkjer på «legg til»- eller «fjern»-kna
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Boivie
+ * @author Event
  * @author H92
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -8252,11 +8253,11 @@ Vil du erstatte den eksisterende boka, legge til det nye innholdet eller avbryte
 	'coll-limit_exceeded_text' => 'Boka er for stor.
 Ingen flere sider kan legges til.',
 	'coll-rendering_title' => 'Oppretter',
-	'coll-rendering_text' => '<p><strong>Venligst vent mens dokumentet genereres.</strong></p>
+	'coll-rendering_text' => '<p><strong>Vennligst vent mens dokumentet genereres.</strong></p>
 
-<p><strong>Fremskritt:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+<p><strong>Fremdrift:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>Denne siden bør automatisk lastes på nytt med et par sekunders mellomrom. Hvis dette ikke fungerer, trykk på oppdateringsknappen i din nettleser.</p>',
+<p>Denne siden bør automatisk lastes på nytt med et par sekunders mellomrom. Hvis dette ikke fungerer, vennligst trykk på oppdateringsknappen i din nettleser.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wikiside: $1)',
 	'coll-rendering_page' => '(side: $1)',
