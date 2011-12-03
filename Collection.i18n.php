@@ -4142,7 +4142,7 @@ La lista est betâ a jorn a châque côp que vos clicâd sur los botons d’apon
 	'coll-suggest_undo_tooltip' => 'Dèfâre ceta accion',
 	'coll-suggest_undo' => 'dèfâre',
 	'coll-load_local_book' => 'Clicâd dessus « OK » por continuar voutron lévro %TITLE% que contint %NUMPAGES% pâges vouiqui. Clicâd dessus « Cancel » por lo suprimar et pués comenciér avouéc un lévro vouedo.',
-	'right-collectionsaveasuserpage' => 'Sôvar des lévros sur des pâges utilisator',
+	'right-collectionsaveasuserpage' => 'Sôvar des lévros sur des pâges usanciér',
 	'right-collectionsaveascommunitypage' => 'Sôvar des lévros sur des pâges a la comunôtât',
 );
 
@@ -7487,6 +7487,8 @@ $messages['mr'] = array(
 	'coll-download_notfound_text' => 'आपण ज्य़ा सचिकेस उतरवण्याचा प्रयत्न करीत आहात ती उपलब्ध नाही.
 हि संचिका वगळण्यात आली असण्याची शक्यता असल्याने त्यास पुनर्निर्मित करण्याची गरज आहे.',
 	'coll-download_failed_title' => 'उतरवित असतांना त्रुटी',
+	'coll-excluded-templates' => '[[:Category:$1|$1]] ह्या वर्गातील साचे बहिष्कृत करण्यात आले आहेत',
+	'coll-blacklisted-templates' => '[[:$1]] ह्या काळ्या यादीतील  साचे बहिष्कृत करण्यात आले आहेत',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p> कडे परत जा',
 	'coll-book_title' => 'छापील आवृत्तीची मागणी नोंदवा',
 	'coll-book_text' => 'तुम्ही खाली दिलेल्या मागणीनुसार छपाई करणार्‍या जोडीदारांच्या संकेतस्थळाला भेट देऊन तुमच्या कलेक्शन मधील पानांची छापील आवृत्ती मिळवू शकता:',
