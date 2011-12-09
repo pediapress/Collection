@@ -2373,10 +2373,10 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Entfernen',
 	'coll-show' => 'Zeigen',
-	'coll-move_to_top' => 'an den Anfang',
+	'coll-move_to_top' => 'an den Anfang verschieben',
 	'coll-move_up' => 'hoch',
 	'coll-move_down' => 'nach unten verschieben',
-	'coll-move_to_bottom' => 'an das Ende',
+	'coll-move_to_bottom' => 'an das Ende verschieben',
 	'coll-title' => 'Titel:',
 	'coll-subtitle' => 'Untertitel:',
 	'coll-contents' => 'Inhalt',
@@ -7414,26 +7414,38 @@ $messages['mn'] = array(
  * @author Kaajawa
  * @author Kaustubh
  * @author Mahitgar
+ * @author Prabodh1987
  * @author Rahuldeshmukh101
+ * @author Sudhanwa
  */
 $messages['mr'] = array(
-	'coll-desc' => '[[Special:Collection|पाने गोळा करा]], पीडीएफ तयार करा',
+	'coll-desc' => '[[Special:Book|पुस्तक बनवा]]',
+	'coll-book_creator_intro' => '<big> ग्रंथ निर्माण द्वारा आपण आपल्या आवडीच्या विकी पानांचा ग्रंथ ग्रंथ बनू शकता. आपण ह्या ग्रंथास वेगवेगळ्या स्वरुपात निर्यात करूशकता (उदा. पी डि एफ किंवा ओ डि एफ) किंवा मुद्रित प्रतीसाठी मागणी नोंदवू शकता. </big>',
 	'coll-manage_your_book' => 'आपल्या ग्रंथाचे व्यवस्थापन करा',
+	'coll-book_creator_help' => 'अधिक माहितीसाठी [[{{MediaWiki:Coll-helppage}}|ग्रंथ संबंधी मदतीचे पृष्ठ ]]  पहा',
 	'coll-start_book_creator' => 'ग्रंथ निर्मिती सुरुकरा',
 	'coll-book_creator_continue' => 'पुस्तक निर्मात्याचा वापर चालू ठेवा',
-	'coll-collection' => 'गोळा केलेली पाने',
-	'coll-collections' => 'गोळा केलेली पाने',
+	'coll-book_creator_disable_text' => 'ग्रथ निर्माण अक्षम करण्यात  येईल आणि आपण ज्या ग्रंथावर काम  करीत  आहात तो ग्रंथ वगळण्यात येईल',
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/ग्रंथ निर्माण मसुदा',
+	'coll-collection' => 'पुस्तके',
+	'coll-collections' => 'पुस्तके',
 	'coll-exclusion_category_title' => ' छापतांना वगळावे',
 	'coll-print_template_prefix' => 'छापा',
 	'coll-print_template_pattern' => '$1/ छापा',
 	'coll-unknown_subpage_title' => 'अनोळखी उपपान.',
+	'coll-unknown_subpage_text' => '[[Special:Book|Book]] चे  उपपान अस्तित्वात नाही',
+	'coll-couldnotaddarticle_title' => 'विकी पान वाढवता येत नाही',
+	'coll-couldnotaddarticle_msg' => 'विकी पान वाढवता येत नाही',
+	'coll-couldnotremovearticle_title' => 'विकी पान वगळता  येत नाही',
+	'coll-couldnotremovearticle_msg' => 'विकी पान वगळता  येत नाही',
 	'coll-noscript_text' => '<h1>जावास्क्रीप्ट आवश्यक!</h1>
 <strong>तुमचा ब्राउझार जावास्क्रीप्ट वापरू शकत नाही किंवा वापर बंद केलेला आहे.
 जावास्क्रीप्ट चालू केल्याशिवाय हे पान व्यवस्थित काम करणार नाही.</strong>',
 	'coll-savedbook_template' => 'जतन केलेला ग्रंथ',
 	'coll-your_book' => 'आपला ग्रंथ',
 	'coll-download_title' => 'उतरवा',
-	'coll-download_text' => 'तुम्ही गोळा केलेल्या पानांच्या पीडीएफ आवृत्त्या गोळा करण्यासाठी, दिलेली कळ दाबा.',
+	'coll-download_text' => 'आपला ग्रन्थ   उतरवण्यासाठी , स्वरूप निवडा आणि  कळ दाबा',
+	'coll-download_as_text' => 'आपला ग्रन्थ $1   स्वरूपात उतरवण्यासाठी कळ दाबा',
 	'coll-download' => 'उतरवा',
 	'coll-format_label' => 'आराखडा',
 	'coll-remove' => 'वगळा',
@@ -7445,8 +7457,9 @@ $messages['mr'] = array(
 	'coll-title' => 'शीर्षक:',
 	'coll-subtitle' => 'उपशीर्षक:',
 	'coll-contents' => 'अनुक्रमणिका',
-	'coll-create_chapter' => 'नवीन धडा बनवा',
-	'coll-sort_alphabetically' => 'अक्षरवल्हे    पानांचे वर्गीकरण करा',
+	'coll-drag_and_drop' => 'विकी पृष्ठे आणि अध्याय पुनःक्रमित करण्या साठी ओढा आणि सोडा',
+	'coll-create_chapter' => 'धडा बनवा',
+	'coll-sort_alphabetically' => 'अक्षरांप्रमाणे लावा',
 	'coll-rename' => 'नाव बदला',
 	'coll-new_chapter' => 'नवीन धड्याचे नाव लिहा',
 	'coll-rename_chapter' => 'नवीन धड्याचे नाव लिहा',
@@ -7457,42 +7470,63 @@ $messages['mr'] = array(
 	'coll-mwserve_failed_title' => 'प्रतिपादन कार्यात त्रुटी',
 	'coll-mwserve_failed_msg' => 'कार्यात प्रतिपादनदातास  त्रूटी आढळली आहे : <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'सर्व्हर कडून चुकीचा संदेश आलेला आहे',
-	'coll-empty_collection' => 'रिकामे कलेक्शन',
+	'coll-empty_collection' => 'रिकामे ग्रंथ',
 	'coll-revision' => 'आवृत्ती: $1',
-	'coll-save_collection_title' => 'कलेक्शन जतन करा',
-	'coll-save_collection_text' => 'हे कलेक्शन नंतर वापरण्यासाठी पानाला शीर्षक देउन तसेच कलेक्शनचा प्रकार निवडून जतन करा:',
-	'coll-login_to_save' => 'जर तुम्ही कलेक्शन नंतर वापरण्यासाठी जतन करू इच्छित असाल, तर कृपया [[Special:UserLogin|प्रवेश करा अथवा सदस्य नोंदणी करा]].',
-	'coll-personal_collection_label' => 'वैयक्तिक कलेक्शन:',
-	'coll-community_collection_label' => 'सामुहिक कलेक्शन:',
-	'coll-save_collection' => 'कलेक्शन जतन करा',
+	'coll-save_collection_title' => 'ग्रंथ   जतन करा आणि सामायिक  करा',
+	'coll-save_collection_text' => 'आपल्या ग्रंथास संग्रहित करण्यासाठी जागा निवडा',
+	'coll-login_to_save' => 'जर तुम्ही ग्रंथ  नंतर वापरण्यासाठी जतन करू इच्छित असाल, तर कृपया [[Special:UserLogin|प्रवेश करा अथवा सदस्य नोंदणी करा]].',
+	'coll-personal_collection_label' => 'वैयक्तिक ग्रंथ:',
+	'coll-community_collection_label' => 'सामुहिक ग्रंथ',
+	'coll-save_collection' => 'ग्रंथ  जतन करा',
+	'coll-save_category' => '[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]. ह्या वर्गात सर्व सुरक्षित ग्रंथ जमा केले',
 	'coll-overwrite_title' => 'पान अस्तित्वात आहे. पुनर्लेखन करायचे का?',
 	'coll-overwrite_text' => '[[:$1]] या नावाचे पान अगोदरच अस्तित्वात आहे.
 तुम्ही त्यावर तुमचे कलेक्शन पुनर्लेखित करू इच्छिता का?',
 	'coll-yes' => 'होय',
 	'coll-no' => 'नाही',
-	'coll-load_overwrite_text' => 'तुमच्या कलेक्शन मध्ये अगोदरच काही पाने आहेत.
-तुम्ही तुमचे कलेक्शन पुनर्लेखित करू इच्छिता, की पाने वाढवू इच्छिता की रद्द करु इच्छिता?',
+	'coll-load_overwrite_text' => 'तुमच्या पुस्तकात अगोदरच काही पाने आहेत.
+तुम्ही तुमचे पुस्तक पुनर्लेखित करू इच्छिता, की पाने वाढवू इच्छिता, की रद्द करु इच्छिता?',
 	'coll-overwrite' => 'पुनर्लेखन करा',
 	'coll-append' => 'वाढवा',
 	'coll-cancel' => 'रद्द करा',
 	'coll-update' => 'अद्ययावत करा',
 	'coll-limit_exceeded_title' => '!!FUZZY!ग्रंथ खूप मोठा  झालेले आहे',
-	'coll-limit_exceeded_text' => 'तुमचे पानांचा संग्रह खूप मोठा  झालेले आहे.
+	'coll-limit_exceeded_text' => 'तुमचे पुस्तक खूप मोठे झालेले आहे.
 आणखी पाने वाढविता येणार नाहीत.',
 	'coll-rendering_title' => 'प्रतिपादन करीत आहे',
+	'coll-rendering_text' => '<p><strong> आपले पुस्तक तयार होत आहे. कृपया प्रतीक्षा करा. </strong></p>
+
+<p><strong>प्रगती:</strong> <span id="कामाची प्रगती">$1</span>% <span id="कामाची/सध्याची स्धिती">$2</span></p>
+
+<p>हे पान दर काही सेकंदानी आपोआप पुन्हा दाखवले जाईल.
+तसे झाले नाही तर ब्राउजर रीफ्रेश करा.</p>',
 	'coll-rendering_status' => '<strong>स्थिती:</strong> $1',
-	'coll-notfound_title' => 'कलेक्शन सापडले नाही',
-	'coll-notfound_text' => 'कलेक्शन पान सापडले नाही.',
+	'coll-rendering_article' => '(विकी  पृष्ठ : $1)',
+	'coll-rendering_page' => '( पान : $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/ प्रतिपादन होत असलेल्या पानाची माहिती',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/ प्रतिपादणासाठी संग्रहित केलेल्या पानाची माहिती',
+	'coll-rendering_finished_title' => 'प्रतिपादन संम्पन्न',
+	'coll-rendering_finished_text' => '<strong>आपले पुस्तक तयार झाले आहे.</strong>
+<strong>[$1 तयार झालेले पुस्तक]</strong> आपल्या संगणकावर उतरवून घ्या.
+
+Notes:
+* या कामाबद्दल समाधानी नसाल तर ही [[{{MediaWiki:Coll-helppage}}| पुस्तकांबद्दलची मदतीची पाने बघा.]] अधिक चांगल्या कामासाठी त्याचा उपयोग होईल.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/ प्रतिपादन होत असलेल्या पानाची माहिती',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/ प्रतिपादणासाठी संग्रहित केलेल्या पानाची माहिती',
+	'coll-notfound_title' => 'पुस्तक सापडले नाही',
+	'coll-notfound_text' => 'पुस्तकातील पान सापडले नाही.',
 	'coll-download_notfound_title' => 'संचिका सापडली नाही.',
 	'coll-download_notfound_text' => 'आपण ज्य़ा सचिकेस उतरवण्याचा प्रयत्न करीत आहात ती उपलब्ध नाही.
 हि संचिका वगळण्यात आली असण्याची शक्यता असल्याने त्यास पुनर्निर्मित करण्याची गरज आहे.',
 	'coll-download_failed_title' => 'उतरवित असतांना त्रुटी',
+	'coll-download_failed_text' => 'संचिका उतरवित असतांना त्यात त्रुटी आलेल्या आहेत :  $1',
+	'coll-is_cached' => '<ul><li>पानाची सयीमधे साठवलेली प्रत मिळाली आहे, म्हणून पुन्हा पान आरेखले (render) नाही.<a href="$1">पुनश्च आरेखन करा</a></li></ul>',
 	'coll-excluded-templates' => '[[:Category:$1|$1]] ह्या वर्गातील साचे बहिष्कृत करण्यात आले आहेत',
 	'coll-blacklisted-templates' => '[[:$1]] ह्या काळ्या यादीतील  साचे बहिष्कृत करण्यात आले आहेत',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p> कडे परत जा',
 	'coll-book_title' => 'छापील आवृत्तीची मागणी नोंदवा',
-	'coll-book_text' => 'तुम्ही खाली दिलेल्या मागणीनुसार छपाई करणार्‍या जोडीदारांच्या संकेतस्थळाला भेट देऊन तुमच्या कलेक्शन मधील पानांची छापील आवृत्ती मिळवू शकता:',
-	'coll-order_from_pp' => '$1 कडून छापील प्रत मागवा',
+	'coll-book_text' => 'आमच्या  सहयोगी मुद्रकाकडे मागणी नोंदवून आपण ग्रंथाची  छापील आवृत्ति मिळवा',
+	'coll-order_from_pp' => '$1 चे पूर्वावलोकन',
 	'coll-about_pp' => '$1 बद्दल',
 	'coll-invalid_podpartner_title' => 'चुकीचा POD भागीदार',
 	'coll-invalid_podpartner_msg' => 'दिलेला POD भागीदार चुकीचा आहे.
@@ -7501,6 +7535,7 @@ $messages['mr'] = array(
 	'coll-return_to' => '[[:$1]] कड़े परत जा',
 	'coll-more_info' => 'अधिक माहिती दाखवा',
 	'coll-hide_info' => 'माहिती लपवा',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/ पिडिया मुद्रणालयाकडे मागणी नोंदवण्याची माहिती',
 	'coll-suggest_title' => 'आपल्या ग्रंथासाठी सुचवलेली पाने',
 	'coll-suggested_articles' => 'सूचना',
 	'coll-suggest_reset_bans' => 'पूर्ववत करा',
@@ -7510,9 +7545,12 @@ $messages['mr'] = array(
 	'coll-suggest_your_book' => 'आपला ग्रंथ',
 	'coll-suggest_show' => 'दाखवा',
 	'coll-suggest_ban_tooltip' => ' सूचनांच्या यादीतून हे पान वगळा',
+	'coll-suggest_article_ban' => '<strong>$1</strong> हि पाने आपल्या ($2) ह्या  सुचवणीतून  वगळली',
 	'coll-suggest_article_add' => '<strong>$1</strong> हि पाने आपल्या ($2) ह्या  ग्रंथात जमा केलीत',
+	'coll-suggest_article_remove' => '<strong>$1</strong> हि पाने आपल्या ($2) ह्या  ग्रंथातून वगळली',
 	'coll-suggest_undo_tooltip' => 'उलटावा',
 	'coll-suggest_undo' => 'उलटवा',
+	'coll-load_local_book' => 'आपल्या %TITLE% या पुस्तकाचे संपादन चालू ठेवण्याकरीता, ज्यामध्ये %NUMPAGES% विकिपाने आहेत, OK वर टिचकी मारा. त्यास रद्द (delete) करून नव्या कोऱ्या पुस्तकाचे लिखाण चालू करण्यास Cancel वर टिचकी मारा.',
 	'right-collectionsaveasuserpage' => 'ग्रंथास सदस्य पान म्हणून जतन करा',
 	'right-collectionsaveascommunitypage' => 'ग्राथांना समाज पृष्ठ म्हणून जतन करा',
 );

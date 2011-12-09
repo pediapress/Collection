@@ -2289,6 +2289,7 @@ $messages['mn'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Kaajawa
  * @author Kaustubh
  * @author Rahuldeshmukh101
  */
@@ -2297,22 +2298,32 @@ $messages['mr'] = array(
 	'coll-create_a_book' => 'मी गोळा केलेली पाने',
 	'coll-create_a_book_tooltip' => 'ग्रंथ निर्मिती अथवा पृष्ठ संग्रह सुरुकरा',
 	'coll-book_creator' => 'ग्रंथ निर्माण',
+	'coll-download_as' => '$1 असे उतरवा',
+	'coll-download_as_tooltip' => 'ह्या पानाची  $1 आवृत्ति उतरवा',
 	'coll-disable' => 'अक्षम करा',
 	'coll-book_creator_disable' => 'ग्रंथ निर्मिती यंत्रणा अकार्यान्वित करा',
 	'coll-book_creator_disable_tooltip' => 'ग्रंथ निर्मिती यंत्रणा थांबवा',
 	'coll-add_linked_article' => 'दुव्यातील पान आपल्या ग्रंथात समाविष्ट करा',
-	'coll-add_category' => 'वर्गाचा समावेश करा',
+	'coll-remove_linked_article' => 'दुव्यातील पान आपल्या ग्रंथातून वगळा.',
+	'coll-add_category' => 'ह्या वर्गाचा  आपल्या ग्रंथात समावेश करा',
+	'coll-add_category_tooltip' => 'ह्या वर्गातील सर्व विकी पाने  आपल्या ग्रंथत जोडा',
 	'coll-add_this_page' => 'ह्या पानाचा आपल्या ग्रंथात समावेश करा',
-	'coll-bookscategory' => 'गोळा केलेली पाने',
-	'coll-clear_collection' => 'सर्व गोळा केलेली पाने पुसा',
+	'coll-add_page_tooltip' => 'दुव्यातील पान आपल्या ग्रंथात जमा करा',
+	'coll-bookscategory' => 'पुस्तके',
+	'coll-clear_collection' => 'गोळा केलेली सर्व पाने पुसा',
 	'coll-clear_collection_confirm' => 'आपण खरोखरच आपला  संपूर्ण ग्रंथ रिक्त करू इच्छिता का ?',
+	'coll-clear_collection_tooltip' => 'ह्या ग्रंथातून सर्व विकी पाने वगळा',
 	'coll-help' => 'सहाय्य',
 	'coll-help_tooltip' => 'ग्रंथ निर्मिती बाबत सहाय्यता दाखवा',
-	'coll-helppage' => 'Help:गोळा केलेली पाने',
-	'coll-load_collection' => 'गोळाकेलेली पाने दाखवा',
+	'coll-helppage' => 'Help:पुस्तके',
+	'coll-load_collection' => 'ग्रंथ उघडा',
+	'coll-load_collection_tooltip' => 'ह्या ग्रंथास आपला सद्या ग्रंथ बनवा',
+	'coll-n_pages' => '$1 {{PLURAL:$1|पान|पाने}}',
 	'coll-printable_version_pdf' => 'पी डि एफ  आवृत्ती',
 	'coll-remove_this_page' => 'हे पान आपल्या ग्रंथातून वगळावे',
-	'coll-show_collection' => 'गोळा केलेली पाने दाखवा',
+	'coll-remove_page_tooltip' => 'दुव्यातील पान आपल्या ग्रंथातून वगळा.',
+	'coll-show_collection' => 'ग्रंथ दाखवा',
+	'coll-show_collection_tooltip' => 'आपल्या ग्रंथाचे संपादन करण्या साठी / उतरवण्य साठी/ मागणी नोंदवण्या साठी येथे क्लिक करा',
 	'coll-not_addable' => 'हे पान जमा करता येणार नाही',
 	'coll-make_suggestions' => 'पाने सुचवा',
 	'coll-make_suggestions_tooltip' => 'आपल्या ग्रंथातील पृष्ठानुसार सूचना दाखवा',
