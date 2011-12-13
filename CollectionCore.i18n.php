@@ -2620,7 +2620,9 @@ $messages['oc'] = array(
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'coll-disable' => 'ଅଚଳ କରିଦିଆଯାଇଛି',
 	'coll-help' => 'ସହଯୋଗ',
+	'coll-suggest_empty' => 'ଖାଲି',
 );
 
 /** Ossetic (Ирон)
