@@ -6217,7 +6217,7 @@ $messages['ka'] = array(
 	'coll-suggest_article_remove' => 'თქვენი წიგნიდან ($2) წაიშალა გვერდი <strong>$1</strong>.',
 	'coll-suggest_undo_tooltip' => 'ცვლილების გაუქმება',
 	'coll-suggest_undo' => 'გაუქმება',
-	'coll-load_local_book' => 'დააჭირეთ «OK თქვენ %NUMPAGES% გვერდების შემცვლელ %TITLE% წიგნთან მუშაობის გაგრძელებისთვის. დაააჭირეთ «გაუქმება» ღილაკს რომ წაშალოთ იგი და დაიწყოთ ცარიელი წიგნი.',
+	'coll-load_local_book' => 'დააჭირეთ „OK“ თქვენი %NUMPAGES% გვერდების შემცვლელ %TITLE% წიგნთან მუშაობის გაგრძელებისთვის. დაააჭირეთ „გაუქმება“ ღილაკს რომ წაშალოთ იგი და დაიწყოთ ცარიელი წიგნი.',
 	'right-collectionsaveasuserpage' => 'შეინახე წიგნი, როგორც მომხმარებლის გვერდი',
 	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
 );
