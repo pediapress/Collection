@@ -2470,7 +2470,7 @@ Immer, wenn du auf die Hinzufügen- oder Entfernen-Buttons klickst, wird die Lis
 	'coll-suggest_article_add' => 'Die Seite <strong>$1</strong> wurde zu deinem Buch hinzugefügt ($2).',
 	'coll-suggest_article_remove' => 'Die Seite <strong>$1</strong> wurde aus deinem Buch entfernt ($2).',
 	'coll-suggest_undo_tooltip' => 'Diese Aktion rückgängig machen',
-	'coll-suggest_undo' => 'rückgängig',
+	'coll-suggest_undo' => 'rückgängig machen',
 	'coll-load_local_book' => 'Klicke auf OK, um mit deinem Buch %TITLE% fortzufahren, bestehend aus %NUMPAGES% Wikiseiten. Klicke auf Abbrechen, um es zu löschen und um mit einem leeren Buch zu starten.',
 	'right-collectionsaveasuserpage' => 'Bücher als Benutzerseite speichern',
 	'right-collectionsaveascommunitypage' => 'Bücher als Gemeinschaftsseite speichern',
