@@ -7077,6 +7077,8 @@ $messages['ltg'] = array(
  * @author Papuass
  */
 $messages['lv'] = array(
+	'coll-your_book' => 'Jūsu grāmata',
+	'coll-download_title' => 'Lejupielādēt',
 	'coll-format_label' => 'Formāts:',
 	'coll-remove' => 'Noņemt',
 	'coll-show' => 'Rādīt',
@@ -7084,6 +7086,9 @@ $messages['lv'] = array(
 	'coll-move_up' => 'Pārvietot augšup',
 	'coll-move_down' => 'Pārvietot lejup',
 	'coll-move_to_bottom' => 'Pārvietot uz leju',
+	'coll-title' => 'Nosaukums:',
+	'coll-subtitle' => 'Apakšnosaukums:',
+	'coll-contents' => 'Saturs',
 	'coll-save_collection' => 'Saglabāt grāmatu',
 	'coll-overwrite_title' => 'Lapa pastāv.
 Pārrakstīt?',
@@ -7094,7 +7099,9 @@ Pārrakstīt?',
 	'coll-cancel' => 'Atcelt',
 	'coll-update' => 'Atjaunināt',
 	'coll-limit_exceeded_title' => 'Grāmata ir pārāk liela',
+	'coll-notfound_title' => 'Grāmata nav atrasta',
 	'coll-download_notfound_title' => 'Fails nav atrasts',
+	'coll-download_failed_title' => 'Kļūda lejupielādējot',
 	'coll-about_pp' => 'Par $1',
 	'coll-license' => 'Licence',
 	'coll-return_to' => 'Atgriezties uz [[:$1]]',
@@ -7103,6 +7110,8 @@ Pārrakstīt?',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress pasūtījuma informācija',
 	'coll-suggest_title' => 'Ieteiktās lapas jūsu grāmatai',
 	'coll-suggested_articles' => 'Ieteikumi',
+	'coll-suggest_add_selected' => 'Pievienot izvēlētās lapas',
+	'coll-suggest_ban_selected' => 'Izņemt izvēlētās lapas',
 	'coll-suggest_your_book' => 'Tava grāmata',
 );
 
@@ -10572,11 +10581,13 @@ $messages['sr-ec'] = array(
  */
 $messages['sr-el'] = array(
 	'coll-desc' => '[[Special:Book|Napravi knjige]]',
+	'coll-book_creator_intro' => "<big>Sa ''piscem knjiga'' možete napraviti knjigu koja sadrži željene stranice sa vikije. Nju možete sačuvati u različitim formatima (npr. PDF ili ODF) ili je naručiti u štampanom izdanju.</big>",
 	'coll-manage_your_book' => 'Uredi svoju knjigu',
 	'coll-book_creator_help' => 'Vidi [[{{MediaWiki:Coll-helppage}}|pomoćnu stranu o knjigama]] za više podataka.',
 	'coll-start_book_creator' => 'Započni uređivač knjiga',
 	'coll-book_creator_continue' => 'Nastavi sa korišćenjem uređivača knjiga',
 	'coll-book_creator_disable_text' => "''Uređivač knjiga'' će biti onemogućen a knjiga na kojoj radite će biti uklonjena.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/tekst pisca knjiga',
 	'coll-collection' => 'Knjiga',
 	'coll-collections' => 'Knjige',
 	'coll-exclusion_category_title' => 'Izuzmi pri štampanju',
@@ -10655,12 +10666,16 @@ Ako ovo ne radi, pritisnite dugme za osvežavanje svog brovzera.</p>',
 	'coll-rendering_status' => '<strong>Stanje:</strong> $1',
 	'coll-rendering_article' => '(viki stranica: $1)',
 	'coll-rendering_page' => '(stranica: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/izrađivanje teksta',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/izrađivanje zbirnog teksta',
 	'coll-rendering_finished_title' => 'Izrađivanje je završeno',
 	'coll-rendering_finished_text' => '<strong>Fajl sa dokumentom je napravljen.</strong>
 <strong>[$1 Preuzmite fajl]</strong> na svoj kompjuter.
 
 Napomena:
 * Nezadovoljni ste izlazom? Pogledajte [[{{MediaWiki:Coll-helppage}}|stranu pomoći o knjigama]] za mogućnosti da ga poboljšate.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/izrađivanje teksta',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/izrađivanje zbirnog teksta',
 	'coll-notfound_title' => 'Knjiga nije pronađena',
 	'coll-notfound_text' => 'Ne mogu da nađem stranu knjige.',
 	'coll-download_notfound_title' => 'Fajl nije pronađen',
@@ -10682,7 +10697,10 @@ Molim kontaktirajte svog MedijaViki administratora.',
 	'coll-return_to' => 'Vrati na [[:$1]]',
 	'coll-more_info' => 'Pokaži više informacija',
 	'coll-hide_info' => 'Skloni informacije',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/podaci o naručivanju na Pedijapresu',
 	'coll-suggest_title' => 'Strane predložene za vašu knjigu',
+	'coll-suggest_intro_text' => 'Predlozi su zasnovani na tekućem skupu stranica u vašoj knjizi.
+Spisak se ažurira svaki put kada kliknete na dugmiće za dodavanje i uklanjanje.',
 	'coll-suggested_articles' => 'Predlozi',
 	'coll-suggest_reset_bans' => 'poništi',
 	'coll-suggest_reset_bans_tooltip' => 'Prikaži skoro uklonjene predloge',
@@ -10691,8 +10709,14 @@ Molim kontaktirajte svog MedijaViki administratora.',
 	'coll-suggest_your_book' => 'Tvoja knjiga',
 	'coll-suggest_show' => 'pokaži',
 	'coll-suggest_ban_tooltip' => 'Ukloni ovu stranu sa spiska predloga',
+	'coll-suggest_article_ban' => 'Stranica <strong>$1</strong> je uklonjena iz predloga ($2).',
+	'coll-suggest_article_add' => 'Stranica <strong>$1</strong> je dodata u vašu knjigu ($2).',
+	'coll-suggest_article_remove' => 'Stranica <strong>$1</strong> je uklonjena iz vaše knjige ($2).',
 	'coll-suggest_undo_tooltip' => 'Poništi ovu akciju',
 	'coll-suggest_undo' => 'poništi',
+	'coll-load_local_book' => 'Kliknite na OK da nastavite rad s knjigom %TITLE% koja sadrži %NUMPAGES% stranica. Kliknite na Cancel da je obrišete i započnete s praznom knjigom.',
+	'right-collectionsaveasuserpage' => 'čuvanje knjiga u vidu korisničke stranice',
+	'right-collectionsaveascommunitypage' => 'čuvanje knjiga u vidu zajedničke stranice',
 );
 
 /** Seeltersk (Seeltersk)
