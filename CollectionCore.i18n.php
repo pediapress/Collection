@@ -2155,6 +2155,7 @@ $messages['lt'] = array(
 	'coll-create_a_book' => 'Kurti knygą',
 	'coll-book_creator' => 'Knygos kūrėjas',
 	'coll-download_as' => 'Parsisiųsti kaip $1',
+	'coll-download_as_tooltip' => 'Atsisiųsti $1 šio wiki puslapio versiją',
 	'coll-disable' => 'išjungti',
 	'coll-book_creator_disable' => 'Išjungti knygų kūrėją',
 	'coll-book_creator_disable_tooltip' => 'Nebenaudoti knygų kūrėjo',
@@ -2193,11 +2194,43 @@ $messages['ltg'] = array(
 );
 
 /** Latvian (Latviešu)
+ * @author GreenZeb
  * @author Papuass
  */
 $messages['lv'] = array(
 	'coll-print_export' => 'Drukāt/eksportēt',
+	'coll-create_a_book' => 'Izveidot grāmatu',
+	'coll-create_a_book_tooltip' => 'Izveidot grāmatu vai lapu kolekciju',
+	'coll-book_creator' => 'Grāmatu veidotājs',
+	'coll-download_as' => 'Lejupielādēt kā $1',
+	'coll-download_as_tooltip' => 'Lejupielādēt šīs lapas $1 versiju',
+	'coll-disable' => 'atslēgt',
+	'coll-book_creator_disable' => 'Atspējot grāmatu veidotāju',
+	'coll-book_creator_disable_tooltip' => 'Beigt lietot grāmatu lietotāju',
+	'coll-add_linked_article' => 'Pievienot saistīto viki lapu savai grāmatai',
+	'coll-remove_linked_article' => 'Izņemt saistīto viki lapu no savas grāmatas',
+	'coll-add_category' => 'Pievienot šo kategoriju savai grāmatai',
+	'coll-add_category_tooltip' => 'Pievienot visas šajā kategorijā esošās viki lapas savai grāmatai',
+	'coll-add_this_page' => 'Pievienot šo lapu savai grāmatai',
+	'coll-add_page_tooltip' => 'Pievienot pašreizējo viki lapu savai grāmatai',
 	'coll-bookscategory' => 'Grāmatas',
+	'coll-clear_collection' => 'Notīrīt grāmatu',
+	'coll-clear_collection_confirm' => 'Vai Jūs tiešām vēlaties pilnībā notīrīt savu grāmatu?',
+	'coll-clear_collection_tooltip' => 'Izņem visas viki lapas no Jūsu pašreizējās grāmatas',
+	'coll-help' => 'Palīdzība',
+	'coll-help_tooltip' => 'Parādīt palīdzību par grāmatu veidošanu',
+	'coll-helppage' => 'Help:Grāmatas',
+	'coll-load_collection' => 'Ielādēt grāmatu',
+	'coll-load_collection_tooltip' => 'Ielādēt šo grāmatu kā Jūsu pašreizējo grāmatu',
+	'coll-printable_version_pdf' => 'PDF versija',
+	'coll-remove_this_page' => 'Izņemt šo lapu no Jūsu grāmatas',
+	'coll-remove_page_tooltip' => 'Izņemt pašreizējo viki lapu no Jūsu grāmatas',
+	'coll-show_collection' => 'Parādīt grāmatu',
+	'coll-show_collection_tooltip' => 'Klikšķināt, lai labotu/lejupielādētu/pasūtītu Jūsu grāmatu',
+	'coll-not_addable' => 'Šo lapu nevar pievienot',
+	'coll-make_suggestions' => 'Ieteikt lapas',
+	'coll-make_suggestions_tooltip' => 'Parādīt ieteikumus, ņemot vērā lapas Jūsu grāmatā',
+	'coll-suggest_empty' => 'tukšs',
 );
 
 /** Macedonian (Македонски)
@@ -2411,6 +2444,49 @@ $messages['nah'] = array(
 	'coll-bookscategory' => 'Àmoxtin',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ * @author Laaknor
+ * @author Nghtwlkr
+ * @author Simny
+ */
+$messages['nb'] = array(
+	'coll-print_export' => 'Skriv ut / eksporter',
+	'coll-create_a_book' => 'Opprett en bok',
+	'coll-create_a_book_tooltip' => 'Lag ei bok eller en artikkelsamling',
+	'coll-book_creator' => 'Bokskaper',
+	'coll-download_as' => 'Last ned som $1',
+	'coll-download_as_tooltip' => 'Last ned denne wikisida i $1-format',
+	'coll-disable' => 'slå av',
+	'coll-book_creator_disable' => 'Slå av bokskaper',
+	'coll-book_creator_disable_tooltip' => 'Stopp å bruke bokskaperen',
+	'coll-add_linked_article' => 'Legg lenket wikiside til din bok',
+	'coll-remove_linked_article' => 'Fjern lenket wikiside fra din bok',
+	'coll-add_category' => 'Legg til denne kategorien i boka di',
+	'coll-add_category_tooltip' => 'Legg til alle wikisider i denne kategorien til din bok',
+	'coll-add_this_page' => 'Legg til denne siden i boka di',
+	'coll-add_page_tooltip' => 'Legg til den nåværende wikisiden i din bok',
+	'coll-bookscategory' => 'Bøker',
+	'coll-clear_collection' => 'Tøm bok',
+	'coll-clear_collection_confirm' => 'Vil du virkelig tømme boka?',
+	'coll-clear_collection_tooltip' => 'Fjern alle wikisider fra din nåværende bok',
+	'coll-help' => 'Hjelp',
+	'coll-help_tooltip' => 'Få hjelp med å lage bøker',
+	'coll-helppage' => 'Help:Bøker',
+	'coll-load_collection' => 'Last bok',
+	'coll-load_collection_tooltip' => 'Last denne boka som din nåværende bok',
+	'coll-n_pages' => '$1 {{PLURAL:$1|side|sider}}',
+	'coll-printable_version_pdf' => 'PDF-versjon',
+	'coll-remove_this_page' => 'Fjern denne siden fra boka di',
+	'coll-remove_page_tooltip' => 'Fjern den nåværende wikisiden fra din bok',
+	'coll-show_collection' => 'Vis bok',
+	'coll-show_collection_tooltip' => 'Trykk for å endre/laste ned/bestille din bok',
+	'coll-not_addable' => 'Denne siden kan ikke legges til',
+	'coll-make_suggestions' => 'Foreslå sider',
+	'coll-make_suggestions_tooltip' => 'Vis forslag basert på sidene i boken din',
+	'coll-suggest_empty' => 'tom',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -2532,49 +2608,6 @@ $messages['nn'] = array(
 	'coll-suggest_empty' => 'tom',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- * @author Laaknor
- * @author Nghtwlkr
- * @author Simny
- */
-$messages['nb'] = array(
-	'coll-print_export' => 'Skriv ut / eksporter',
-	'coll-create_a_book' => 'Opprett en bok',
-	'coll-create_a_book_tooltip' => 'Lag ei bok eller en artikkelsamling',
-	'coll-book_creator' => 'Bokskaper',
-	'coll-download_as' => 'Last ned som $1',
-	'coll-download_as_tooltip' => 'Last ned denne wikisida i $1-format',
-	'coll-disable' => 'slå av',
-	'coll-book_creator_disable' => 'Slå av bokskaper',
-	'coll-book_creator_disable_tooltip' => 'Stopp å bruke bokskaperen',
-	'coll-add_linked_article' => 'Legg lenket wikiside til din bok',
-	'coll-remove_linked_article' => 'Fjern lenket wikiside fra din bok',
-	'coll-add_category' => 'Legg til denne kategorien i boka di',
-	'coll-add_category_tooltip' => 'Legg til alle wikisider i denne kategorien til din bok',
-	'coll-add_this_page' => 'Legg til denne siden i boka di',
-	'coll-add_page_tooltip' => 'Legg til den nåværende wikisiden i din bok',
-	'coll-bookscategory' => 'Bøker',
-	'coll-clear_collection' => 'Tøm bok',
-	'coll-clear_collection_confirm' => 'Vil du virkelig tømme boka?',
-	'coll-clear_collection_tooltip' => 'Fjern alle wikisider fra din nåværende bok',
-	'coll-help' => 'Hjelp',
-	'coll-help_tooltip' => 'Få hjelp med å lage bøker',
-	'coll-helppage' => 'Help:Bøker',
-	'coll-load_collection' => 'Last bok',
-	'coll-load_collection_tooltip' => 'Last denne boka som din nåværende bok',
-	'coll-n_pages' => '$1 {{PLURAL:$1|side|sider}}',
-	'coll-printable_version_pdf' => 'PDF-versjon',
-	'coll-remove_this_page' => 'Fjern denne siden fra boka di',
-	'coll-remove_page_tooltip' => 'Fjern den nåværende wikisiden fra din bok',
-	'coll-show_collection' => 'Vis bok',
-	'coll-show_collection_tooltip' => 'Trykk for å endre/laste ned/bestille din bok',
-	'coll-not_addable' => 'Denne siden kan ikke legges til',
-	'coll-make_suggestions' => 'Foreslå sider',
-	'coll-make_suggestions_tooltip' => 'Vis forslag basert på sidene i boken din',
-	'coll-suggest_empty' => 'tom',
-);
-
 /** Occitan (Occitan)
  * @author Cedric31
  */
@@ -2616,12 +2649,18 @@ $messages['oc'] = array(
 );
 
 /** Oriya (ଓଡ଼ିଆ)
+ * @author Ansumang
  * @author Odisha1
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'coll-create_a_book' => 'ବହି ତିଆରି କରିବେ',
 	'coll-disable' => 'ଅଚଳ କରିଦିଆଯାଇଛି',
+	'coll-bookscategory' => 'ବହି',
 	'coll-help' => 'ସହଯୋଗ',
+	'coll-helppage' => 'Help:ବହି',
+	'coll-load_collection' => 'ଲୋଡ଼ ବହି',
+	'coll-printable_version_pdf' => 'PDF ସଂସ୍କରଣ',
 	'coll-suggest_empty' => 'ଖାଲି',
 );
 
@@ -2742,6 +2781,7 @@ $messages['ps'] = array(
 	'coll-create_a_book_tooltip' => 'يو کتاب يا د مخونو ټولګه جوړول',
 	'coll-book_creator' => 'کتاب جوړونکی',
 	'coll-download_as' => 'د $1 په ډول ښکته کول',
+	'coll-disable' => 'ناچارنول',
 	'coll-add_category' => 'دا وېشنيزه په کتاب کې ورګډول',
 	'coll-add_this_page' => 'دا مخ په کتاب کې ورګډول',
 	'coll-add_page_tooltip' => 'د همدې ويکي مخ خپل کتاب کې ورګډول',

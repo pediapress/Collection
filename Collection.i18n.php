@@ -2822,6 +2822,7 @@ $messages['ee'] = array(
 );
 
 /** Greek (Ελληνικά)
+ * @author AK
  * @author Consta
  * @author Crazymadlover
  * @author Evropi
@@ -2961,6 +2962,7 @@ $messages['el'] = array(
 	'coll-suggest_article_remove' => 'Η σελίδα <strong>$1</strong> έχει αφαιρεθεί από το βιβλίο σας ($2).',
 	'coll-suggest_undo_tooltip' => 'Αναίρεση αυτής της ενέργειας',
 	'coll-suggest_undo' => 'αναίρεση',
+	'coll-load_local_book' => "Κάντε κλικ στο κουμπί Εντάξει για να συνεχίσετε με το βιβλίο %TITLE% το οποίο περιέχει %NUMPAGES% βικισελίδες. Κάντε κλικ στο κουμπί Άκυρο για να το διαγράψετε και να ξεκινήσετε μ' ένα άδειο βιβλίο.",
 	'right-collectionsaveasuserpage' => 'Αποθήκευση βιβλίων ως σελίδας χρήστη',
 	'right-collectionsaveascommunitypage' => 'Αποθήκευση βιβλίων ως σελίδας κοινότητας',
 );
@@ -6974,6 +6976,7 @@ $messages['lt'] = array(
 	'coll-manage_your_book' => 'Tvarkyti jūsų knygą',
 	'coll-book_creator_help' => 'Žiūrėkite [[{{MediaWiki:Coll-helppage}}|the help page about books]] daugiau informacijos.',
 	'coll-start_book_creator' => 'Paleisti knygų kūrėją',
+	'coll-book_creator_continue' => 'Toliau naudoti book creator',
 	'coll-collection' => 'Knyga',
 	'coll-collections' => 'Knygos',
 	'coll-print_template_prefix' => 'Spausdinti',
@@ -7077,6 +7080,13 @@ $messages['ltg'] = array(
  * @author Papuass
  */
 $messages['lv'] = array(
+	'coll-desc' => '[[Special:Book|Veidot grāmatas]]',
+	'coll-manage_your_book' => 'Pārvaldīt Jūsu grāmatu',
+	'coll-start_book_creator' => 'Palaist grāmatu veidotāju',
+	'coll-book_creator_continue' => 'Turpināt lietot grāmatu veidotāju',
+	'coll-collection' => 'Grāmata',
+	'coll-collections' => 'Grāmatas',
+	'coll-exclusion_category_title' => 'Neņemt vērā izdrukā',
 	'coll-your_book' => 'Jūsu grāmata',
 	'coll-download_title' => 'Lejupielādēt',
 	'coll-format_label' => 'Formāts:',
@@ -7089,6 +7099,12 @@ $messages['lv'] = array(
 	'coll-title' => 'Nosaukums:',
 	'coll-subtitle' => 'Apakšnosaukums:',
 	'coll-contents' => 'Saturs',
+	'coll-create_chapter' => 'Izveidot nodaļu',
+	'coll-sort_alphabetically' => 'Kārtot alfabētiskā secībā',
+	'coll-rename' => 'Pārsaukt',
+	'coll-new_chapter' => 'Ievadīt jaunu nodaļu',
+	'coll-rename_chapter' => 'Ievadīt jaunās nodaļas nosaukumu',
+	'coll-no_such_category' => 'Nav tādas kategorijas',
 	'coll-save_collection' => 'Saglabāt grāmatu',
 	'coll-overwrite_title' => 'Lapa pastāv.
 Pārrakstīt?',
@@ -7797,6 +7813,151 @@ $messages['nah'] = array(
 	'coll-update' => 'Tiquiyancuīyāz',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Boivie
+ * @author Event
+ * @author H92
+ * @author Harald Khan
+ * @author Jon Harald Søby
+ * @author Laaknor
+ * @author Nghtwlkr
+ * @author Simny
+ */
+$messages['nb'] = array(
+	'coll-desc' => '[[Special:Book|Lag bøker]]',
+	'coll-book_creator_intro' => "<big>Med ''bokfunksjonen'' kan du lage ei bok av valgfrie wikisider. Du kan eksportere boka til ulike formater, for eksempel PDF eller ODF, eller bestille en trykt kopi.</big>",
+	'coll-manage_your_book' => 'Administrer boken din',
+	'coll-book_creator_help' => 'Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om bøker]] for mer informasjon.',
+	'coll-start_book_creator' => 'Start bokfunksjonen',
+	'coll-book_creator_continue' => 'Fortsett å bruke bokskaperen',
+	'coll-book_creator_disable_text' => "''Bokskaperen'' vil bli slått av og boken du jobber med vil bli fjernet.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Bokskapertekst',
+	'coll-collection' => 'Bok',
+	'coll-collections' => 'Bøker',
+	'coll-exclusion_category_title' => 'Ekskluder ved utskrift',
+	'coll-print_template_prefix' => 'Skriv ut',
+	'coll-print_template_pattern' => '$1/Skriv ut',
+	'coll-unknown_subpage_title' => 'Ukjent underside',
+	'coll-unknown_subpage_text' => "Denne undersiden av ''[[Special:Book|Bok]]'' finnes ikke",
+	'coll-couldnotaddarticle_title' => 'Kunne ikke legge til wikiside',
+	'coll-couldnotaddarticle_msg' => 'Wikisiden kunne ikke legges til.',
+	'coll-couldnotremovearticle_title' => 'Kunne ikke fjerne wikisiden',
+	'coll-couldnotremovearticle_msg' => 'Wikisiden kunne ikke fjernes.',
+	'coll-noscript_text' => '<h1>JavaScript er påkrevd!</h1>
+<strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong>',
+	'coll-savedbook_template' => 'lagret_bok',
+	'coll-your_book' => 'Din bok',
+	'coll-download_title' => 'Last ned',
+	'coll-download_text' => 'For å laste ned boken din, velg et format og trykk på knappen.',
+	'coll-download_as_text' => 'For å laste ned boken din i $1-format, trykk på knappen.',
+	'coll-download' => 'Last ned',
+	'coll-format_label' => 'Format:',
+	'coll-remove' => 'Fjern',
+	'coll-show' => 'Vis',
+	'coll-move_to_top' => 'Flytt til toppen',
+	'coll-move_up' => 'Flytt opp',
+	'coll-move_down' => 'Flytt ned',
+	'coll-move_to_bottom' => 'Flytt til bunnen',
+	'coll-title' => 'Tittel:',
+	'coll-subtitle' => 'Undertittel:',
+	'coll-contents' => 'Innhold',
+	'coll-drag_and_drop' => 'For å bruke dra og slipp for å endre på wikisider og kapitler',
+	'coll-create_chapter' => 'Opprett kapittel',
+	'coll-sort_alphabetically' => 'Sorter alfabetisk',
+	'coll-rename' => 'Gi nytt navn',
+	'coll-new_chapter' => 'Skriv inn navn for det nye kapittelet',
+	'coll-rename_chapter' => 'Skriv inn kapittelets nye navn',
+	'coll-no_such_category' => 'Ingen kategori ved dette navnet',
+	'coll-notitle_title' => 'Fant ikke ut av sidens tittel.',
+	'coll-post_failed_title' => 'POST-forespørsel mislyktes',
+	'coll-post_failed_msg' => 'POST-forespørselen til $1 mislyktes ($2).',
+	'coll-mwserve_failed_title' => 'Rendreringsserverfeil',
+	'coll-mwserve_failed_msg' => 'En feil oppsto på rendreringsserveren: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Feilrespons fra tjeneren',
+	'coll-empty_collection' => 'Tom bok',
+	'coll-revision' => 'Revisjon: $1',
+	'coll-save_collection_title' => 'Lagre og del boka',
+	'coll-save_collection_text' => 'Velg en plassering:',
+	'coll-login_to_save' => 'Om du vil lagre bøker for senere bruk, [[Special:UserLogin|logg inn eller opprett en konto]].',
+	'coll-personal_collection_label' => 'Personlig bok:',
+	'coll-community_collection_label' => 'Fellesskapsbok:',
+	'coll-save_collection' => 'Lagre bok',
+	'coll-save_category' => 'Alle lagrede bøker blir lagret i kategorien [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-overwrite_title' => 'Siden finnes. Erstatte den?',
+	'coll-overwrite_text' => 'En side ved navn [[:$1]] finnes fra før. Vil du erstatte den med samlingen din?',
+	'coll-yes' => 'Ja',
+	'coll-no' => 'Nei',
+	'coll-load_overwrite_text' => 'Du har allerede noen sider i boka di.
+Vil du erstatte den eksisterende boka, legge til det nye innholdet eller avbryte lasting av boka?',
+	'coll-overwrite' => 'Erstatte',
+	'coll-append' => 'Legge til',
+	'coll-cancel' => 'Avbryt',
+	'coll-update' => 'Oppdater',
+	'coll-limit_exceeded_title' => 'Boka er for stor',
+	'coll-limit_exceeded_text' => 'Boka er for stor.
+Ingen flere sider kan legges til.',
+	'coll-rendering_title' => 'Oppretter',
+	'coll-rendering_text' => '<p><strong>Vennligst vent mens dokumentet genereres.</strong></p>
+
+<p><strong>Fremdrift:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Denne siden bør automatisk lastes på nytt med et par sekunders mellomrom. Hvis dette ikke fungerer, vennligst trykk på oppdateringsknappen i din nettleser.</p>',
+	'coll-rendering_status' => '<strong>Status:</strong> $1',
+	'coll-rendering_article' => '(wikiside: $1)',
+	'coll-rendering_page' => '(side: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informasjonstekst om sidegjengivelse',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informasjonstekst om samlingsgjengivelse',
+	'coll-rendering_finished_title' => 'Opprettet',
+	'coll-rendering_finished_text' => '<strong>Dokumentfilen har blitt laget.</strong>
+<strong>[$1 Last ned filen]</strong> til din datamaskin.
+
+Merk:
+* Ikke fornøyd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjelpsiden om samlinger]] for muligheter til å forbedre den.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Gjengir sideinformasjonstekst',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Gjengir samlingsinformasjonstekst',
+	'coll-notfound_title' => 'Bok ikke funnet',
+	'coll-notfound_text' => 'Kunne ikke finne bokside.',
+	'coll-download_notfound_title' => 'Fil ikke funnet',
+	'coll-download_notfound_text' => 'Filen du forsøker å laste ned finnes ikke: Kanskje den har blitt slettet eller trenger å bli regenerert.',
+	'coll-download_failed_title' => 'Feil under nedlasting',
+	'coll-download_failed_text' => 'Det oppsto en feil under nedlasting av filen: $1',
+	'coll-is_cached' => '<ul><li>En mellomlagret versjon av dokumentet ble funnet, så ingen rendrering var nødvendig. <a href="$1">Tving ny rendrering.</a></li></ul>',
+	'coll-excluded-templates' => '* Maler i kategorien [[:Category:$1|$1]] har blitt utelatt.',
+	'coll-blacklisted-templates' => '* Maler på svartelisten ([[:$1]]) har blitt utelatt.',
+	'coll-return_to_collection' => '<p>Tilbake til <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Bestill som en trykket bok',
+	'coll-book_text' => 'Få en printet bok fra vår print-på-bestilling-partner:',
+	'coll-order_from_pp' => 'Forhåndsvis med $1',
+	'coll-about_pp' => 'Om $1',
+	'coll-invalid_podpartner_title' => 'Ugyldig POD-partner',
+	'coll-invalid_podpartner_msg' => 'Den oppgitte POD-partneren er ugyldig.
+Kontakt din MediaWiki-administrator.',
+	'coll-license' => 'Lisens',
+	'coll-return_to' => 'Tilbake til [[:$1]]',
+	'coll-more_info' => 'Vis mer informasjon',
+	'coll-hide_info' => 'Skjul informasjon',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestillingsinformasjon PediaPress',
+	'coll-suggest_title' => 'Foreslåtte sider for boken din',
+	'coll-suggest_intro_text' => 'Forslag er basert på nåværende wikisider i boken din.
+Listen oppdateres når du klikker på legg til- eller fjern-knappene.',
+	'coll-suggested_articles' => 'Forslag',
+	'coll-suggest_reset_bans' => 'nullstill',
+	'coll-suggest_reset_bans_tooltip' => 'Vis tidligere fjernede forslag',
+	'coll-suggest_add_selected' => 'Legg til valgte sider',
+	'coll-suggest_ban_selected' => 'Fjern valgte sider',
+	'coll-suggest_your_book' => 'Din bok',
+	'coll-suggest_show' => 'vis',
+	'coll-suggest_ban_tooltip' => 'Fjern denne siden fra listen over forslag',
+	'coll-suggest_article_ban' => 'Siden <strong>$1</strong> har blitt fjernet fra forslagene ($2).',
+	'coll-suggest_article_add' => 'Siden <strong>$1</strong> har blitt lagt til boken din ($2).',
+	'coll-suggest_article_remove' => 'Siden <strong>$1</strong> har blitt fjernet fra boken din ($2).',
+	'coll-suggest_undo_tooltip' => 'Angre denne handligen',
+	'coll-suggest_undo' => 'Angre',
+	'coll-load_local_book' => 'Klikk OK for å fortsette med boken din %TITLE% som inneholder %NUMPAGES% wikisider. Klikk Avbryt for å slette den og starte med en tom bok.',
+	'right-collectionsaveasuserpage' => 'Lagre bøker som brukersider',
+	'right-collectionsaveascommunitypage' => 'Lagre bøker som samfunnsside',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -8218,151 +8379,6 @@ Lista vert oppdatert kvar gong du trykkjer på «legg til»- eller «fjern»-kna
 	'right-collectionsaveascommunitypage' => 'Lagre bøker som ei sams side',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Boivie
- * @author Event
- * @author H92
- * @author Harald Khan
- * @author Jon Harald Søby
- * @author Laaknor
- * @author Nghtwlkr
- * @author Simny
- */
-$messages['nb'] = array(
-	'coll-desc' => '[[Special:Book|Lag bøker]]',
-	'coll-book_creator_intro' => "<big>Med ''bokfunksjonen'' kan du lage ei bok av valgfrie wikisider. Du kan eksportere boka til ulike formater, for eksempel PDF eller ODF, eller bestille en trykt kopi.</big>",
-	'coll-manage_your_book' => 'Administrer boken din',
-	'coll-book_creator_help' => 'Se [[{{MediaWiki:Coll-helppage}}|hjelpesiden om bøker]] for mer informasjon.',
-	'coll-start_book_creator' => 'Start bokfunksjonen',
-	'coll-book_creator_continue' => 'Fortsett å bruke bokskaperen',
-	'coll-book_creator_disable_text' => "''Bokskaperen'' vil bli slått av og boken du jobber med vil bli fjernet.",
-	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Bokskapertekst',
-	'coll-collection' => 'Bok',
-	'coll-collections' => 'Bøker',
-	'coll-exclusion_category_title' => 'Ekskluder ved utskrift',
-	'coll-print_template_prefix' => 'Skriv ut',
-	'coll-print_template_pattern' => '$1/Skriv ut',
-	'coll-unknown_subpage_title' => 'Ukjent underside',
-	'coll-unknown_subpage_text' => "Denne undersiden av ''[[Special:Book|Bok]]'' finnes ikke",
-	'coll-couldnotaddarticle_title' => 'Kunne ikke legge til wikiside',
-	'coll-couldnotaddarticle_msg' => 'Wikisiden kunne ikke legges til.',
-	'coll-couldnotremovearticle_title' => 'Kunne ikke fjerne wikisiden',
-	'coll-couldnotremovearticle_msg' => 'Wikisiden kunne ikke fjernes.',
-	'coll-noscript_text' => '<h1>JavaScript er påkrevd!</h1>
-<strong>Nettleseren din støtter ikke JavaScript, eller JavaScript har blitt slått av. Denne siden vil ikke fungere riktig med mindre JavaScript er slått på.</strong>',
-	'coll-savedbook_template' => 'lagret_bok',
-	'coll-your_book' => 'Din bok',
-	'coll-download_title' => 'Last ned',
-	'coll-download_text' => 'For å laste ned boken din, velg et format og trykk på knappen.',
-	'coll-download_as_text' => 'For å laste ned boken din i $1-format, trykk på knappen.',
-	'coll-download' => 'Last ned',
-	'coll-format_label' => 'Format:',
-	'coll-remove' => 'Fjern',
-	'coll-show' => 'Vis',
-	'coll-move_to_top' => 'Flytt til toppen',
-	'coll-move_up' => 'Flytt opp',
-	'coll-move_down' => 'Flytt ned',
-	'coll-move_to_bottom' => 'Flytt til bunnen',
-	'coll-title' => 'Tittel:',
-	'coll-subtitle' => 'Undertittel:',
-	'coll-contents' => 'Innhold',
-	'coll-drag_and_drop' => 'For å bruke dra og slipp for å endre på wikisider og kapitler',
-	'coll-create_chapter' => 'Opprett kapittel',
-	'coll-sort_alphabetically' => 'Sorter alfabetisk',
-	'coll-rename' => 'Gi nytt navn',
-	'coll-new_chapter' => 'Skriv inn navn for det nye kapittelet',
-	'coll-rename_chapter' => 'Skriv inn kapittelets nye navn',
-	'coll-no_such_category' => 'Ingen kategori ved dette navnet',
-	'coll-notitle_title' => 'Fant ikke ut av sidens tittel.',
-	'coll-post_failed_title' => 'POST-forespørsel mislyktes',
-	'coll-post_failed_msg' => 'POST-forespørselen til $1 mislyktes ($2).',
-	'coll-mwserve_failed_title' => 'Rendreringsserverfeil',
-	'coll-mwserve_failed_msg' => 'En feil oppsto på rendreringsserveren: <nowiki>$1</nowiki>',
-	'coll-error_reponse' => 'Feilrespons fra tjeneren',
-	'coll-empty_collection' => 'Tom bok',
-	'coll-revision' => 'Revisjon: $1',
-	'coll-save_collection_title' => 'Lagre og del boka',
-	'coll-save_collection_text' => 'Velg en plassering:',
-	'coll-login_to_save' => 'Om du vil lagre bøker for senere bruk, [[Special:UserLogin|logg inn eller opprett en konto]].',
-	'coll-personal_collection_label' => 'Personlig bok:',
-	'coll-community_collection_label' => 'Fellesskapsbok:',
-	'coll-save_collection' => 'Lagre bok',
-	'coll-save_category' => 'Alle lagrede bøker blir lagret i kategorien [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
-	'coll-overwrite_title' => 'Siden finnes. Erstatte den?',
-	'coll-overwrite_text' => 'En side ved navn [[:$1]] finnes fra før. Vil du erstatte den med samlingen din?',
-	'coll-yes' => 'Ja',
-	'coll-no' => 'Nei',
-	'coll-load_overwrite_text' => 'Du har allerede noen sider i boka di.
-Vil du erstatte den eksisterende boka, legge til det nye innholdet eller avbryte lasting av boka?',
-	'coll-overwrite' => 'Erstatte',
-	'coll-append' => 'Legge til',
-	'coll-cancel' => 'Avbryt',
-	'coll-update' => 'Oppdater',
-	'coll-limit_exceeded_title' => 'Boka er for stor',
-	'coll-limit_exceeded_text' => 'Boka er for stor.
-Ingen flere sider kan legges til.',
-	'coll-rendering_title' => 'Oppretter',
-	'coll-rendering_text' => '<p><strong>Vennligst vent mens dokumentet genereres.</strong></p>
-
-<p><strong>Fremdrift:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
-
-<p>Denne siden bør automatisk lastes på nytt med et par sekunders mellomrom. Hvis dette ikke fungerer, vennligst trykk på oppdateringsknappen i din nettleser.</p>',
-	'coll-rendering_status' => '<strong>Status:</strong> $1',
-	'coll-rendering_article' => '(wikiside: $1)',
-	'coll-rendering_page' => '(side: $1)',
-	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informasjonstekst om sidegjengivelse',
-	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informasjonstekst om samlingsgjengivelse',
-	'coll-rendering_finished_title' => 'Opprettet',
-	'coll-rendering_finished_text' => '<strong>Dokumentfilen har blitt laget.</strong>
-<strong>[$1 Last ned filen]</strong> til din datamaskin.
-
-Merk:
-* Ikke fornøyd med resultatet? Se [[{{MediaWiki:Coll-helppage}}|hjelpsiden om samlinger]] for muligheter til å forbedre den.',
-	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Gjengir sideinformasjonstekst',
-	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Gjengir samlingsinformasjonstekst',
-	'coll-notfound_title' => 'Bok ikke funnet',
-	'coll-notfound_text' => 'Kunne ikke finne bokside.',
-	'coll-download_notfound_title' => 'Fil ikke funnet',
-	'coll-download_notfound_text' => 'Filen du forsøker å laste ned finnes ikke: Kanskje den har blitt slettet eller trenger å bli regenerert.',
-	'coll-download_failed_title' => 'Feil under nedlasting',
-	'coll-download_failed_text' => 'Det oppsto en feil under nedlasting av filen: $1',
-	'coll-is_cached' => '<ul><li>En mellomlagret versjon av dokumentet ble funnet, så ingen rendrering var nødvendig. <a href="$1">Tving ny rendrering.</a></li></ul>',
-	'coll-excluded-templates' => '* Maler i kategorien [[:Category:$1|$1]] har blitt utelatt.',
-	'coll-blacklisted-templates' => '* Maler på svartelisten ([[:$1]]) har blitt utelatt.',
-	'coll-return_to_collection' => '<p>Tilbake til <a href="$1">$2</a></p>',
-	'coll-book_title' => 'Bestill som en trykket bok',
-	'coll-book_text' => 'Få en printet bok fra vår print-på-bestilling-partner:',
-	'coll-order_from_pp' => 'Forhåndsvis med $1',
-	'coll-about_pp' => 'Om $1',
-	'coll-invalid_podpartner_title' => 'Ugyldig POD-partner',
-	'coll-invalid_podpartner_msg' => 'Den oppgitte POD-partneren er ugyldig.
-Kontakt din MediaWiki-administrator.',
-	'coll-license' => 'Lisens',
-	'coll-return_to' => 'Tilbake til [[:$1]]',
-	'coll-more_info' => 'Vis mer informasjon',
-	'coll-hide_info' => 'Skjul informasjon',
-	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestillingsinformasjon PediaPress',
-	'coll-suggest_title' => 'Foreslåtte sider for boken din',
-	'coll-suggest_intro_text' => 'Forslag er basert på nåværende wikisider i boken din.
-Listen oppdateres når du klikker på legg til- eller fjern-knappene.',
-	'coll-suggested_articles' => 'Forslag',
-	'coll-suggest_reset_bans' => 'nullstill',
-	'coll-suggest_reset_bans_tooltip' => 'Vis tidligere fjernede forslag',
-	'coll-suggest_add_selected' => 'Legg til valgte sider',
-	'coll-suggest_ban_selected' => 'Fjern valgte sider',
-	'coll-suggest_your_book' => 'Din bok',
-	'coll-suggest_show' => 'vis',
-	'coll-suggest_ban_tooltip' => 'Fjern denne siden fra listen over forslag',
-	'coll-suggest_article_ban' => 'Siden <strong>$1</strong> har blitt fjernet fra forslagene ($2).',
-	'coll-suggest_article_add' => 'Siden <strong>$1</strong> har blitt lagt til boken din ($2).',
-	'coll-suggest_article_remove' => 'Siden <strong>$1</strong> har blitt fjernet fra boken din ($2).',
-	'coll-suggest_undo_tooltip' => 'Angre denne handligen',
-	'coll-suggest_undo' => 'Angre',
-	'coll-load_local_book' => 'Klikk OK for å fortsette med boken din %TITLE% som inneholder %NUMPAGES% wikisider. Klikk Avbryt for å slette den og starte med en tom bok.',
-	'right-collectionsaveasuserpage' => 'Lagre bøker som brukersider',
-	'right-collectionsaveascommunitypage' => 'Lagre bøker som samfunnsside',
-);
-
 /** Occitan (Occitan)
  * @author Cedric31
  * @author Jfblanc
@@ -8505,20 +8521,26 @@ La lista es mesa a jorn a cada còp que clicatz suls botons d'apondon o de supre
 );
 
 /** Oriya (ଓଡ଼ିଆ)
+ * @author Ansumang
  * @author Odisha1
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'coll-collection' => 'ବହି',
 	'coll-print_template_prefix' => 'ପ୍ରିଣ୍ଟ',
+	'coll-your_book' => 'ଆପଣଙ୍କର ବହି',
 	'coll-download_title' => 'ଡାଉନଲୋଡ',
 	'coll-download' => 'ଡାଉନଲୋଡ',
 	'coll-format_label' => 'ସଜାଣି:',
 	'coll-remove' => 'ବାହାର କରିବା',
 	'coll-show' => 'ଦେଖାଇବେ',
 	'coll-title' => 'ଶିରୋନାମା:',
+	'coll-subtitle' => 'ଉପନାମ:',
 	'coll-contents' => 'ଭିତର ଚିଜ',
 	'coll-rename' => 'ନାମବଦଳା',
+	'coll-empty_collection' => 'ଖାଲି ବହି',
 	'coll-revision' => 'ପୁନରାବୃତ୍ତି: $1',
+	'coll-save_collection' => 'ବହି ସାଇତିବେ',
 	'coll-yes' => 'ହଁ',
 	'coll-no' => 'ନାହିଁ',
 	'coll-overwrite' => 'ନବଲିଖନ',
@@ -8526,6 +8548,7 @@ $messages['or'] = array(
 	'coll-cancel' => 'ନାକଚ',
 	'coll-update' => 'ଅପଡେଟ',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a>କୁ ଫେରିଯାଆନ୍ତୁ</p>',
+	'coll-about_pp' => 'ବାବଦରେ $1',
 	'coll-license' => 'ଲାଇସେନ୍ସ',
 	'coll-suggest_reset_bans' => 'ପୁନସ୍ଥାପନ',
 	'coll-suggest_show' => 'ଦେଖାଇବେ',
@@ -8913,6 +8936,7 @@ $messages['ps'] = array(
 	'coll-hide_info' => 'مالومات پټول',
 	'coll-suggest_title' => 'ستاسې د کتاب لپاره وړانديز شوي مخونه',
 	'coll-suggested_articles' => 'وړانديزونه',
+	'coll-suggest_reset_bans' => 'بياايښودل',
 	'coll-suggest_add_selected' => 'ټاکلي مخونه ورګډول',
 	'coll-suggest_ban_selected' => 'ټاکلي مخونه لرې کول',
 	'coll-suggest_your_book' => 'ستاسې کتاب',
