@@ -238,6 +238,11 @@ $specialPageAliases['myv'] = array(
 	'Book' => array( 'Ставкс' ),
 );
 
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'Book' => array( 'Bok', 'Samling' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $specialPageAliases['nds-nl'] = array(
 	'Book' => array( 'Verzameling' ),
@@ -251,11 +256,6 @@ $specialPageAliases['nl'] = array(
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬) */
 $specialPageAliases['nn'] = array(
 	'Book' => array( 'Bok' ),
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['nb'] = array(
-	'Book' => array( 'Bok', 'Samling' ),
 );
 
 /** Occitan (Occitan) */
@@ -283,7 +283,7 @@ $specialPageAliases['ro'] = array(
 	'Book' => array( 'Carte', 'Colecție' ),
 );
 
-/** Sanskrit (संस्कृत) */
+/** Sanskrit (संस्कृतम्) */
 $specialPageAliases['sa'] = array(
 	'Book' => array( 'समुच्यय' ),
 );
@@ -338,7 +338,7 @@ $specialPageAliases['vec'] = array(
 	'Book' => array( 'Libro' ),
 );
 
-/** Veps (Vepsan kel') */
+/** Veps (Vepsän kel') */
 $specialPageAliases['vep'] = array(
 	'Book' => array( 'Kirj' ),
 );
@@ -357,8 +357,3 @@ $specialPageAliases['zh-hans'] = array(
 $specialPageAliases['zh-hant'] = array(
 	'Book' => array( '圖書' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
