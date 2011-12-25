@@ -2538,7 +2538,7 @@ $messages['nn'] = array(
  * @author Nghtwlkr
  * @author Simny
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'coll-print_export' => 'Skriv ut / eksporter',
 	'coll-create_a_book' => 'Opprett en bok',
 	'coll-create_a_book_tooltip' => 'Lag ei bok eller en artikkelsamling',

@@ -8228,7 +8228,7 @@ Lista vert oppdatert kvar gong du trykkjer på «legg til»- eller «fjern»-kna
  * @author Nghtwlkr
  * @author Simny
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'coll-desc' => '[[Special:Book|Lag bøker]]',
 	'coll-book_creator_intro' => "<big>Med ''bokfunksjonen'' kan du lage ei bok av valgfrie wikisider. Du kan eksportere boka til ulike formater, for eksempel PDF eller ODF, eller bestille en trykt kopi.</big>",
 	'coll-manage_your_book' => 'Administrer boken din',
