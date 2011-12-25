@@ -146,7 +146,7 @@ $wgAutoloadClasses['CollectionFinishedTemplate'] = $dir . 'Collection.templates.
 $wgAutoloadClasses['CollectionSuggestTemplate'] = $dir . 'Collection.templates.php';
 $wgExtensionMessagesFiles['CollectionCore'] = $dir . 'CollectionCore.i18n.php'; // Only contains essential messages outside the special page
 $wgExtensionMessagesFiles['Collection'] = $dir . 'Collection.i18n.php'; // Contains all messages used on special page
-$wgExtensionAliasesFiles['Collection'] = $dir . 'Collection.alias.php';
+$wgExtensionMessagesFiles['CollectionAlias'] = $dir . 'Collection.alias.php';
 $wgSpecialPages['Book'] = 'SpecialCollection';
 $wgSpecialPageGroups['Book'] = 'pagetools';
 
