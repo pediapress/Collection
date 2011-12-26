@@ -3146,6 +3146,7 @@ $messages['sc'] = array(
  * @author Aushulz
  */
 $messages['scn'] = array(
+	'coll-bookscategory' => 'Libbra',
 	'coll-help' => 'Aiutu',
 	'coll-show_collection' => 'Talìa libbru',
 	'coll-suggest_empty' => 'vacanti',

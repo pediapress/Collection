@@ -10115,6 +10115,7 @@ $messages['scn'] = array(
 	'coll-collection' => 'Libbru',
 	'coll-collections' => 'Libbra',
 	'coll-savedbook_template' => 'libbru_sarvatu',
+	'coll-remove' => 'Lèva',
 	'coll-show' => 'Ammustra',
 	'coll-title' => 'Tìtulu:',
 	'coll-rename' => 'Cancia nomu',
@@ -10125,6 +10126,7 @@ $messages['scn'] = array(
 	'coll-limit_exceeded_title' => "Libbru troppu 'ranni",
 	'coll-limit_exceeded_text' => "Lu tò libbru è troppu 'ranni. Nun ci pò metteri autri paggini.",
 	'coll-rendering_page' => '(paggina: $1)',
+	'coll-suggested_articles' => 'Cunsigghi',
 	'coll-suggest_show' => 'ammustra',
 );
 
