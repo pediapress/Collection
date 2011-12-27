@@ -4721,12 +4721,14 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Ansumang
  * @author Kaustubh
  */
 $messages['hi'] = array(
 	'coll-desc' => '[[Special:Collection|पन्ने जमा करें]], पीडीएफ बनायें',
 	'coll-collection' => 'कलेक्शन',
 	'coll-collections' => 'कलेक्शन',
+	'coll-print_template_prefix' => 'मुद्रित करें',
 	'coll-download_title' => 'कलेक्शन पीडिएफ डाउनलोड करें',
 	'coll-download_text' => 'आपके कलेक्शनका पीडिएफ अवतरण डाउनलोड करने के लिये, दिये हुए बटन पर क्लिक करें।',
 	'coll-remove' => 'हटायें',
@@ -8908,6 +8910,10 @@ $messages['ps'] = array(
 	'coll-format_label' => 'بڼه:',
 	'coll-remove' => 'غورځول',
 	'coll-show' => 'ښکاره کول',
+	'coll-move_to_top' => 'سر ته خوځښت',
+	'coll-move_up' => 'پورته خوځښت',
+	'coll-move_down' => 'ښکته خوځښت',
+	'coll-move_to_bottom' => 'پښو ته خوځښت',
 	'coll-title' => 'سرليک:',
 	'coll-subtitle' => 'لمنليک:',
 	'coll-contents' => 'منځپانګه',
@@ -8926,6 +8932,8 @@ $messages['ps'] = array(
 	'coll-cancel' => 'ناګارل',
 	'coll-update' => 'اوسمهالول',
 	'coll-limit_exceeded_title' => 'کتاب ډېر لوی دی',
+	'coll-limit_exceeded_text' => 'ستاسې کتاب ډېر لوی دی.
+نور مخونه پکې نه شي ډېرېدلی.',
 	'coll-rendering_article' => '(د ويکي مخ: $1)',
 	'coll-rendering_page' => '(مخ: $1)',
 	'coll-notfound_title' => 'کتاب و نه موندل شو',
@@ -10138,6 +10146,7 @@ $messages['sh'] = array(
 );
 
 /** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
  * @author බිඟුවා
  */
 $messages['si'] = array(
@@ -10145,9 +10154,11 @@ $messages['si'] = array(
 	'coll-collection' => 'පොත',
 	'coll-collections' => 'පොත්',
 	'coll-print_template_prefix' => 'මුද්‍රණය කරන්න',
+	'coll-unknown_subpage_title' => 'නොදන්නා උපපිටුව',
 	'coll-your_book' => 'ඔබේ පොත',
 	'coll-download_title' => 'භාගත කිරීම',
 	'coll-download' => 'භාගත කිරීම',
+	'coll-format_label' => 'ආකෘතිය:',
 	'coll-remove' => 'ඉවත් කරන්න',
 	'coll-show' => 'පෙන්වන්න',
 	'coll-title' => 'ශීර්ෂය:',
@@ -10156,8 +10167,14 @@ $messages['si'] = array(
 	'coll-create_chapter' => 'මාතෘකාවක් නිර්මාණය කරන්න',
 	'coll-sort_alphabetically' => 'අකාරාදි පිළිවෙලට සකසන්න',
 	'coll-rename' => 'නැවත නාමකාරණය',
+	'coll-yes' => 'ඔව්',
+	'coll-no' => 'නැත',
 	'coll-cancel' => 'අත් හරින්න',
 	'coll-update' => 'යාවත්කාලීන කළ',
+	'coll-about_pp' => '$1 ගැන',
+	'coll-license' => 'බලපත්‍රය',
+	'coll-more_info' => 'තවත් තොරතුරු පෙන්වන්න',
+	'coll-hide_info' => 'තොරතුරු සඟවන්න',
 	'coll-suggested_articles' => 'යෝජනා',
 	'coll-suggest_reset_bans' => 'ප්‍රත්‍යාරම්භ කරන්න',
 	'coll-suggest_show' => 'පෙන්වන්න',

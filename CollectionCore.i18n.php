@@ -1472,15 +1472,18 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Ansumang
  * @author Kaustubh
  */
 $messages['hi'] = array(
 	'coll-create_a_book' => 'मेरा कलेक्शन',
 	'coll-add_category' => 'श्रेणी बढायें',
 	'coll-clear_collection' => 'कलेक्शन खाली करें',
+	'coll-help' => 'सहायता',
 	'coll-helppage' => 'Help:कलेक्शन',
 	'coll-load_collection' => 'कलेक्शन लोड करें',
 	'coll-show_collection' => 'कलेक्शन दर्शायें',
+	'coll-suggest_empty' => 'खाली',
 );
 
 /** Croatian (Hrvatski)
@@ -2782,15 +2785,21 @@ $messages['ps'] = array(
 	'coll-book_creator' => 'کتاب جوړونکی',
 	'coll-download_as' => 'د $1 په ډول ښکته کول',
 	'coll-disable' => 'ناچارنول',
+	'coll-book_creator_disable' => 'کتاب جوړونکی ناچارنول',
 	'coll-add_category' => 'دا وېشنيزه په کتاب کې ورګډول',
 	'coll-add_this_page' => 'دا مخ په کتاب کې ورګډول',
 	'coll-add_page_tooltip' => 'د همدې ويکي مخ خپل کتاب کې ورګډول',
 	'coll-bookscategory' => 'کتابونه',
+	'coll-clear_collection' => 'کتاب پاکول',
 	'coll-help' => 'لارښود',
 	'coll-helppage' => 'Help:کتابونه',
+	'coll-load_collection' => 'کتاب برسېرول',
+	'coll-n_pages' => '$1 {{PLURAL:$1|مخ|مخونه}}',
 	'coll-printable_version_pdf' => 'د PDF په بڼه',
 	'coll-remove_this_page' => 'دا مخ له کتاب نه ليرې کول',
 	'coll-show_collection' => 'کتاب ښکاره کول',
+	'coll-not_addable' => 'دا مخ نشي ورګډېدلی',
+	'coll-make_suggestions' => 'مخونه وړانديزول',
 	'coll-suggest_empty' => 'تش',
 );
 
