@@ -1477,11 +1477,13 @@ $messages['he'] = array(
  */
 $messages['hi'] = array(
 	'coll-create_a_book' => 'मेरा कलेक्शन',
+	'coll-disable' => 'अक्षम करें',
 	'coll-add_category' => 'श्रेणी बढायें',
 	'coll-clear_collection' => 'कलेक्शन खाली करें',
 	'coll-help' => 'सहायता',
 	'coll-helppage' => 'Help:कलेक्शन',
 	'coll-load_collection' => 'कलेक्शन लोड करें',
+	'coll-printable_version_pdf' => 'PDF रूपांतर',
 	'coll-show_collection' => 'कलेक्शन दर्शायें',
 	'coll-suggest_empty' => 'खाली',
 );
@@ -2657,8 +2659,14 @@ $messages['oc'] = array(
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'coll-print_export' => 'ପ୍ରିଣ୍ଟ/ରପ୍ତାନି',
 	'coll-create_a_book' => 'ବହି ତିଆରି କରିବେ',
+	'coll-create_a_book_tooltip' => 'ଏକ ବହି ବା ପୃଷ୍ଠା ସଙ୍କଳନ ଗଢ଼ିବେ',
+	'coll-book_creator' => 'ବହି ଗଢ଼ାଳି',
+	'coll-download_as' => '$1 ଭାବରେ ଡାଉନଲୋଡ଼ କରିବେ',
+	'coll-download_as_tooltip' => 'ଏକ $1 ସଂସ୍କରଣ ଏହି ଉଇକିରେ ଡାଉନଲୋଡ଼ କରିବେ',
 	'coll-disable' => 'ଅଚଳ କରିଦିଆଯାଇଛି',
+	'coll-book_creator_disable' => 'ବହି ଗଢ଼ାଳି ଅକାଳ କରାଇବେ',
 	'coll-bookscategory' => 'ବହି',
 	'coll-help' => 'ସହଯୋଗ',
 	'coll-helppage' => 'Help:ବହି',
@@ -3159,6 +3167,32 @@ $messages['scn'] = array(
 	'coll-help' => 'Aiutu',
 	'coll-show_collection' => 'Talìa libbru',
 	'coll-suggest_empty' => 'vacanti',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'coll-create_a_book' => 'පොතක් නිර්මාණය කරන්න',
+	'coll-create_a_book_tooltip' => 'පොතක් හෝ පිටු එකතුවක් තනන්න',
+	'coll-book_creator' => 'පොත් තනන්නා',
+	'coll-download_as' => '$1 ලෙස බාගන්න',
+	'coll-download_as_tooltip' => 'මෙම විකි පිටුවෙහි $1 අනුවාදය බාගන්න',
+	'coll-disable' => 'අක්‍රීය කරන්න',
+	'coll-book_creator_disable' => 'පොත් තනන්නා අක්‍රීය කරන්න',
+	'coll-add_this_page' => 'මෙම පිටුව ඔබේ පොතට එක් කරන්න',
+	'coll-bookscategory' => 'පොත්',
+	'coll-clear_collection' => 'පොත සුද්ද කරන්න',
+	'coll-help' => 'උදව්',
+	'coll-helppage' => 'Help:පොත්',
+	'coll-load_collection' => 'පොත පූරණය කරන්න',
+	'coll-load_collection_tooltip' => 'මෙම පොත් ඔබේ වත්මන් පොත ලෙස පූරණය කරන්න',
+	'coll-printable_version_pdf' => 'PDF අනුවාදය',
+	'coll-remove_this_page' => 'මෙම පිටුව ඔබේ පොතෙන් ඉවත් කරන්න',
+	'coll-show_collection' => 'පොත පෙන්වන්න',
+	'coll-not_addable' => 'මෙම පිටුව එක් කල නොහැක',
+	'coll-make_suggestions' => 'පිටු යෝජනා කරන්න',
+	'coll-suggest_empty' => 'හිස්',
 );
 
 /** Slovak (Slovenčina)
