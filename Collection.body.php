@@ -563,7 +563,7 @@ class SpecialCollection extends SpecialPage {
 			'title' => $prefixedText,
 			'revision' => strval( $oldid ),
 			'latest' => strval( $latest ),
-			'timestamp' => wfTimestamp( TS_UNIX, $revision->mTimestamp ),
+			'timestamp' => wfTimestamp( TS_UNIX, $revision->getTimestamp() ),
 			'url' => $title->getCanonicalURL(),
 			'currentVersion' => $currentVersion,
 		);
