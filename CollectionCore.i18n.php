@@ -1476,10 +1476,20 @@ $messages['he'] = array(
  * @author Kaustubh
  */
 $messages['hi'] = array(
+	'coll-print_export' => 'प्रिंट/निर्यात',
 	'coll-create_a_book' => 'मेरा कलेक्शन',
+	'coll-create_a_book_tooltip' => 'एक पुस्तक या पृष्ठ संग्रह बनाएँ',
+	'coll-book_creator' => 'पुस्तक निर्माता',
+	'coll-download_as' => '$1 के रूप में डाउनलोड करें',
+	'coll-download_as_tooltip' => 'इस विकि पृष्ठ के एक $1 संस्करन डाउनलोड करें',
 	'coll-disable' => 'अक्षम करें',
-	'coll-add_category' => 'श्रेणी बढायें',
-	'coll-clear_collection' => 'कलेक्शन खाली करें',
+	'coll-add_category' => 'इस श्रेणी को अपनी पुस्तक से जोड़ें',
+	'coll-add_category_tooltip' => 'इस श्रेणी की सारी विकि पृष्ठ को अपनी पुस्तक से जोड़ें',
+	'coll-add_this_page' => 'इस पृष्ठ को अपनी पुस्तक से जोड़ें',
+	'coll-add_page_tooltip' => 'बर्त्तमान की विकि पृष्ठ को अपनी पुस्तक से जोड़ें',
+	'coll-bookscategory' => 'पुस्तकें',
+	'coll-clear_collection' => 'पुस्तक खाली करें',
+	'coll-clear_collection_confirm' => 'क्या आप वास्तव में पूरी पुस्तक खाली करना चाहते हैं?',
 	'coll-help' => 'सहायता',
 	'coll-helppage' => 'Help:कलेक्शन',
 	'coll-load_collection' => 'कलेक्शन लोड करें',
@@ -2655,6 +2665,7 @@ $messages['oc'] = array(
 
 /** Oriya (ଓଡ଼ିଆ)
  * @author Ansumang
+ * @author Jnanaranjan Sahu
  * @author Odisha1
  * @author Psubhashish
  */
@@ -2668,17 +2679,28 @@ $messages['or'] = array(
 	'coll-disable' => 'ଅଚଳ କରିଦିଆଯାଇଛି',
 	'coll-book_creator_disable' => 'ବହି ଗଢ଼ାଳି ଅକାଳ କରାଇବେ',
 	'coll-book_creator_disable_tooltip' => 'ବହି ନିର୍ମାତା ବ୍ୟବହାର କରିବା ବନ୍ଦ କରନ୍ତୁ',
+	'coll-add_linked_article' => 'ଲିଙ୍କ୍ ଥିବା ଉଇକି ପୃଷ୍ଠାକୁ ଆପଣଙ୍କ ବହିରେ ଯୋଡନ୍ତୁ',
+	'coll-remove_linked_article' => 'ଲିଙ୍କ ଥିବା ଉଇକି ପୃଷ୍ଠାକୁ ହଟାଇବେ',
 	'coll-add_category' => 'ଏହି ଶ୍ରେଣୀକୁ ଆପଣଙ୍କ ବହିରେ ଯୋଡ଼ନ୍ତୁ',
+	'coll-add_category_tooltip' => 'ଏହି ବିଭାଗରେ ଥିବା ସମସ୍ତ ଉଇକିପୃଷ୍ଠାକୁ ଆପଣଙ୍କ ବହିରେ ଯୋଡନ୍ତୁ',
 	'coll-add_this_page' => 'ଏହି ପୃଷ୍ଠାକୁ ଆପଣଙ୍କ ବହିରେ ଯୋଡ଼ନ୍ତୁ',
 	'coll-add_page_tooltip' => 'ବର୍ତମାନର ଏହି ଉଇକି ପୃଷ୍ଠାକୁ ଆପଣଙ୍କ ବହିରେ ଯୋଡ଼ନ୍ତୁ',
 	'coll-bookscategory' => 'ବହି',
 	'coll-clear_collection' => 'ବହି ଖାଲି କରନ୍ତୁ',
+	'coll-clear_collection_confirm' => 'ଆପଣ ନିଶ୍ଚିତ ଯେ ଆପଣଙ୍କ ବହିକୁ ସମ୍ପୂର୍ଣଭାବେ ସଫା କରିବେ ?',
+	'coll-clear_collection_tooltip' => 'ଆପଣଙ୍କର ବର୍ତମାନର ବହିରୁ ସମସ୍ତ ଉଇକି ପୃଷ୍ଠାଗୁଡିକୁ ହଟାଇବେ',
 	'coll-help' => 'ସହଯୋଗ',
+	'coll-help_tooltip' => 'ବହି ତିଆରି ବିଷୟରେ ସାହାଯ୍ୟ ଦେଖାଇବେ',
 	'coll-helppage' => 'Help:ବହି',
 	'coll-load_collection' => 'ଲୋଡ଼ ବହି',
+	'coll-load_collection_tooltip' => 'ଏହି ବହିଟିକୁ ଆପଣଙ୍କର ଏବେକାର ବହି ଭାବେ ରଖିବେ',
 	'coll-n_pages' => '$1 {{PLURAL:$1|ପୃଷ୍ଠା|ପୃଷ୍ଠାସବୁ}}',
 	'coll-printable_version_pdf' => 'PDF ସଂସ୍କରଣ',
+	'coll-remove_this_page' => 'ଏହି ପୃଷ୍ଠାଟିକୁ ଆପଣଙ୍କ ବହିରୁ ହଟାଇବେ',
+	'coll-remove_page_tooltip' => 'ଆପଣଙ୍କ ବହିରୁ ବର୍ତମାନର ଉଇକି ପୃଷ୍ଠାକୁ ବାହାର କରିବେ',
 	'coll-show_collection' => 'ବହି ଦେଖାଇବେ',
+	'coll-not_addable' => 'ଏହି ପୃଷ୍ଠାଟିକୁ ଯୋଡା ଯାଇପାରିବ ନାହିଁ',
+	'coll-make_suggestions' => 'ପୃଷ୍ଠାଗୁଡିକୁ ପ୍ରସ୍ତାବିତ କରିବେ',
 	'coll-suggest_empty' => 'ଖାଲି',
 );
 
@@ -3189,7 +3211,10 @@ $messages['si'] = array(
 	'coll-disable' => 'අක්‍රීය කරන්න',
 	'coll-book_creator_disable' => 'පොත් තනන්නා අක්‍රීය කරන්න',
 	'coll-book_creator_disable_tooltip' => 'පොත් තනන්නා භාවිතා කිරීම නවත්තන්න',
+	'coll-add_linked_article' => 'සම්බන්ධ කරන ලද විකි පිටුවක් ඔබේ පොතට එක් කරන්න',
+	'coll-remove_linked_article' => 'සම්බන්ධ කරන ලද විකි පිටුවක් ඔබේ පොතෙන් ඉවත් කරන්න',
 	'coll-add_category' => 'මෙම ප්‍රවර්ගය ඔබේ පොතට එක් කරන්න',
+	'coll-add_category_tooltip' => 'මෙම ප්‍රවර්ගයේ ඇති සියලුම විකි පිටු ඔබේ පොතට එක් කරන්න',
 	'coll-add_this_page' => 'මෙම පිටුව ඔබේ පොතට එක් කරන්න',
 	'coll-add_page_tooltip' => 'වත්මන් විකි පිටුව ඔබේ පොතට එක් කරන්න',
 	'coll-bookscategory' => 'පොත්',
@@ -3482,17 +3507,43 @@ $messages['sw'] = array(
 
 /** Tamil (தமிழ்)
  * @author Karthi.dr
+ * @author Shanmugamp7
  * @author TRYPPN
  * @author செல்வா
  */
 $messages['ta'] = array(
+	'coll-create_a_book' => 'ஒரு புத்தகம் உருவாக்கு',
+	'coll-create_a_book_tooltip' => 'புத்தகத்தை அல்லது பக்க தொகுப்பை உருவாக்கு',
+	'coll-book_creator' => 'புத்தகம் உருவாக்குபவர்',
+	'coll-download_as' => '$1 என தகவலிறக்கு',
+	'coll-download_as_tooltip' => 'இந்த விக்கி பக்கத்தின் $1 பதிப்பை தகவலிறக்கம் செய்',
 	'coll-disable' => 'செயலிழக்கச் செய்',
+	'coll-book_creator_disable' => 'புத்தக உருவாக்குநரை செயலிழக்க செய்',
+	'coll-book_creator_disable_tooltip' => 'புத்தக உருவாக்குநர் பயன்படுத்துவதை நிறுத்து',
+	'coll-add_linked_article' => 'இணைக்கப்பட்ட விக்கி பக்கத்தை உங்கள் புத்தகத்தில்  சேர்',
+	'coll-remove_linked_article' => 'இணைக்கப்பட்ட விக்கி பக்கத்தை உங்கள் புத்தகத்தில்  இருந்து நீக்கு',
+	'coll-add_category' => 'இந்த வகையை  உங்கள் புத்தகத்தில்  சேர்',
+	'coll-add_category_tooltip' => 'இந்த வகையில் உள்ள எல்லா விக்கி பக்கங்களையும் உங்கள் புத்தகத்தில் சேர்க்கவும்.',
 	'coll-add_this_page' => 'உங்கள் புத்தகத்தில் இப்பக்கத்தைச் சேர்க்கவும்',
+	'coll-add_page_tooltip' => 'தற்போதைய விக்கி பக்கத்தை உங்கள் புத்தகத்தில் சேர்க்கவும்',
 	'coll-bookscategory' => 'நூல்கள்',
+	'coll-clear_collection' => 'புத்தகத்தை அழி',
+	'coll-clear_collection_confirm' => 'உண்மையிலேயே முழுமையாக உங்கள் புத்தகத்தை வெறுமையாக்க வேண்டுமா?',
+	'coll-clear_collection_tooltip' => 'உங்கள் நடப்பு புத்தகத்திலிருந்து அனைத்து விக்கி பக்கங்ககளையும் நீக்கு',
 	'coll-help' => 'உதவி',
-	'coll-helppage' => 'உதவி:நூல்கள்',
+	'coll-help_tooltip' => 'புத்தகங்கள் உருவாக்குவதை பற்றிய உதவியை காண்பி',
+	'coll-helppage' => 'Help:புத்தகங்கள்',
 	'coll-load_collection' => 'நூலை ஏற்றவும்',
+	'coll-load_collection_tooltip' => 'இந்த புத்தகத்தை  உங்கள் நடப்பு புத்தகம் என தகவலேற்று',
+	'coll-n_pages' => '$1 {{PLURAL:$1|பக்கம் |பக்கங்கள்}}',
+	'coll-printable_version_pdf' => 'PDF பதிப்பு',
+	'coll-remove_this_page' => 'இப்பக்கத்தை  உங்கள் புத்தகத்திலிருந்து நீக்கு',
+	'coll-remove_page_tooltip' => 'நடப்பு விக்கி பக்கத்தை உங்கள் புத்தகத்திலிருந்து நீக்கு',
 	'coll-show_collection' => 'நூலைக் காட்டவும்',
+	'coll-show_collection_tooltip' => 'உங்கள் புத்தகத்தை திருத்த/தகவலிறக்க/ஒழுங்காக்க கிளிக் செய்யவும்',
+	'coll-not_addable' => 'இப்பக்கத்தை  சேர்க்க முடியாது',
+	'coll-make_suggestions' => 'பக்கங்களை  ஆலோசனை கூறு',
+	'coll-make_suggestions_tooltip' => 'உங்கள் புத்தகத்தில் உள்ள  பக்கங்கள் அடிப்படையில் ஆலோசனைகளை காண்பி',
 	'coll-suggest_empty' => 'ஒன்றுமில்லாத',
 );
 
@@ -3947,14 +3998,17 @@ $messages['vo'] = array(
 );
 
 /** Yiddish (ייִדיש)
+ * @author Imre
  * @author פוילישער
  */
 $messages['yi'] = array(
 	'coll-create_a_book' => 'שאַפֿן אַ בוך',
 	'coll-download_as' => 'אַראָפלאָדן אַלס $1',
 	'coll-download_as_tooltip' => 'אראָפלאָדן אַ $1 ווערסיע פון דעם וויקיפּעדיע בלאַט',
+	'coll-bookscategory' => 'ביכער',
 	'coll-help' => 'הילף',
 	'coll-n_pages' => '$1 {{PLURAL:$1|בלאַט|בלעטער}}',
+	'coll-suggest_empty' => 'ליידיק',
 );
 
 /** Yoruba (Yorùbá)

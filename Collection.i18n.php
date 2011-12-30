@@ -3558,10 +3558,11 @@ Zerrenda gaurkotzen da gehitu edo kendu botoietan klik egiten duzun bakoitzean.'
  * @author Sahim
  * @author Spacebirdy
  * @author Wayiran
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'coll-desc' => '[[Special:Book|کتاب‌ساز]]',
-	'coll-book_creator_intro' => "<big>با ''کتاب‌ساز'' می‌توانید کتابی بسازید که دارای صفحات دلخواه شما از ویکی‌است. می‌توانید کتاب را در فرمت‌های مختلف (برای مثال پی‌دی‌اف یا اودی‌اف) برون‌بری کنید یا سفارش یک کپی چاپی را بدهید.</big>",
+	'coll-book_creator_intro' => "<big>با ''کتاب‌ساز'' می‌توانید کتابی بسازید که دارای صفحه‌های دلخواه شما از ویکی‌است. می‌توانید کتاب را در فرمت‌های مختلف (برای مثال پی‌دی‌اف یا اودی‌اف) برون‌بری کنید یا یک کپی چاپی را سفارش بدهید.</big>",
 	'coll-manage_your_book' => 'کتاب خود را مدیریت کنید',
 	'coll-book_creator_help' => 'برای اطلاعات بیشتر [[{{MediaWiki:Coll-helppage}}|صفحهٔ راهنمای کتاب‌ها]] را ببینید.',
 	'coll-start_book_creator' => 'کتاب‌ساز را آغاز کن',
@@ -3576,7 +3577,7 @@ $messages['fa'] = array(
 	'coll-unknown_subpage_title' => 'زیرصفحهٔ ناشناس',
 	'coll-unknown_subpage_text' => 'این زیرصفحه از [[Special:Book|کتاب]] وجود ندارد',
 	'coll-couldnotaddarticle_title' => 'نتوانست صفحه ویکی را اضافه کند',
-	'coll-couldnotaddarticle_msg' => 'صفحهٔ ویکی نتوانست اضافه شود.',
+	'coll-couldnotaddarticle_msg' => 'نمی‌توان صفحهٔ ویکی را افزود.',
 	'coll-couldnotremovearticle_title' => 'نتوانست صفحه ویکی را حذف کند',
 	'coll-couldnotremovearticle_msg' => 'صفحهٔ ویکی نتوانست حذف شود.',
 	'coll-noscript_text' => '<h1>جاوااسکریپت لازم دارید!</h1>
@@ -3695,7 +3696,7 @@ $messages['fa'] = array(
 	'coll-suggest_article_remove' => 'صفحهٔ <strong>$1</strong> از کتاب شما حذف شده است ($2).',
 	'coll-suggest_undo_tooltip' => 'این اقدام را خنثی کن',
 	'coll-suggest_undo' => 'خنثی‌سازی',
-	'coll-load_local_book' => 'برای ادامه با کتاب %TITLE% که دارندهٔ %NUMPAGES% صفحهٔ ویکی است، بروی پذیرش کلیک کنید. برای پاک کردنش و آغاز با کتابی خالی، بروی لغو کلیک کنید.',
+	'coll-load_local_book' => 'برای ادامهٔ کتاب %TITLE% که دارندهٔ %NUMPAGES% صفحهٔ ویکی است، بر روی پذیرش کلیک کنید. برای حذف آن و آغاز با کتابی خالی، بر روی لغو کلیک کنید.',
 	'right-collectionsaveasuserpage' => 'ذخیره کردن کتاب‌ها به صورت یک صفحهٔ کاربری',
 	'right-collectionsaveascommunitypage' => 'ذخیره کردن کتاب‌ها به صورت یک صفحه عمومی',
 );
@@ -8532,15 +8533,23 @@ La lista es mesa a jorn a cada còp que clicatz suls botons d'apondon o de supre
 
 /** Oriya (ଓଡ଼ିଆ)
  * @author Ansumang
+ * @author Jnanaranjan Sahu
  * @author Odisha1
  * @author Psubhashish
  */
 $messages['or'] = array(
 	'coll-desc' => '[[Special:Book|ବହି ତିଆରି]]',
+	'coll-manage_your_book' => 'ଆପଣଙ୍କ ବହିକୁ ପରିଚାଳନା କରିବେ',
+	'coll-start_book_creator' => 'ବହି ତିଆରି ଆରମ୍ଭ କରିବେ',
 	'coll-collection' => 'ବହି',
 	'coll-collections' => 'ବହିସବୁ',
+	'coll-exclusion_category_title' => 'ପ୍ରିଣ୍ଟରୁ ବାହାରେ ରଖିବେ',
 	'coll-print_template_prefix' => 'ପ୍ରିଣ୍ଟ',
 	'coll-print_template_pattern' => '$1/ମୁଦ୍ରଣ',
+	'coll-unknown_subpage_title' => 'ଅଜଣା ଉପପୃଷ୍ଠା',
+	'coll-unknown_subpage_text' => '[[Special:Book|Book]]ର ଏହି ଉପପୃଷ୍ଠାଟି ଉପଲବ୍ଧ ନାହିଁ',
+	'coll-couldnotaddarticle_title' => 'ଉଇକିପୃଷ୍ଠା ଯୋଡାଯାଇପାରିଲା ନାହିଁ',
+	'coll-couldnotaddarticle_msg' => 'ଉଇକି ପ୍ରୁଷ୍ଠାଟି ଯୋଡାଯାଇପାରିଲା ନାହିଁ ।',
 	'coll-savedbook_template' => 'ସାଇତା_ବହି',
 	'coll-your_book' => 'ଆପଣଙ୍କର ବହି',
 	'coll-download_title' => 'ଡାଉନଲୋଡ',
@@ -8589,11 +8598,16 @@ $messages['or'] = array(
 	'coll-hide_info' => 'ତଥ୍ୟ ଲୁଚାନ୍ତୁ',
 	'coll-suggested_articles' => 'ପ୍ରସ୍ତାବ',
 	'coll-suggest_reset_bans' => 'ପୁନସ୍ଥାପନ',
+	'coll-suggest_reset_bans_tooltip' => 'ଆଗରୁ ଦିଆଯାଇଥିବା ମତଗୁଡିକୁ ଦେଖାଇବେ',
+	'coll-suggest_add_selected' => 'ବାଛିଥିବା ପୃଷ୍ଠାଗୁଡିକୁ ଯୋଡନ୍ତୁ',
+	'coll-suggest_ban_selected' => 'ବାଛିଥିବା ପୃଷ୍ଠାଗୁଡିକୁ ହଟାଇବେ',
 	'coll-suggest_your_book' => 'ଆପଣଙ୍କର ବହି',
 	'coll-suggest_show' => 'ଦେଖାଇବେ',
+	'coll-suggest_ban_tooltip' => 'ମତାମତ ତାଲିକାରୁ ଏହି ପୃଷ୍ଠାଟିକୁ ହଟାଇବେ',
 	'coll-suggest_article_ban' => 'ପୃଷ୍ଠା <strong>$1</strong>ପ୍ରସ୍ତାବିତ ପୃଷ୍ଠାରୁ ହଟାଇ ଦିଆଯାଇଛି ($2) ।',
 	'coll-suggest_article_add' => 'ପୃଷ୍ଠା <strong>$1</strong> ଆପଣଙ୍କ ବହିରେ ଯୋଡ଼ି ଦିଆଯାଇଛି ($2) ।',
 	'coll-suggest_article_remove' => 'ପୃଷ୍ଠା <strong>$1</strong>ଆପଣଙ୍କ ବହିରୁ ହଟାଇ ଦିଆଯାଇଛି ($2) ।',
+	'coll-suggest_undo_tooltip' => 'ଏହି କାମଟିକୁ କରିବେ ନାହିଁ',
 	'coll-suggest_undo' => 'ପଛକୁ ଫେରିବା',
 );
 
@@ -10191,18 +10205,25 @@ $messages['sh'] = array(
  */
 $messages['si'] = array(
 	'coll-desc' => '[[Special:Book|පොත් තනන්න]]',
+	'coll-book_creator_intro' => "<big> ''පොත් තනන්නා''  සමඟ ඔබේ කැමැත්ත පරිදි විකි පිටු ඇතුලත් පොතක් තැනිය හැක. ඔබට වෙනස් අන්දමේ ආකෘති වලට පොත නිර්යාත කල හැක (නිදසුනක් ලෙස PDF හෝ ODF) හෝ මුද්‍රණය කෙරූ පිටපතක් ඇනවුම් කරන්න.</big>",
 	'coll-manage_your_book' => 'ඔබේ පොත හසුරවන්න',
 	'coll-start_book_creator' => 'පොත් තනන්නා අරඹන්න',
 	'coll-book_creator_continue' => 'පොත් තනන්නා දිගටම භාවිතා කරන්න',
 	'coll-collection' => 'පොත',
 	'coll-collections' => 'පොත්',
+	'coll-exclusion_category_title' => 'මුද්‍රණයේදී බැහැර කරන්න',
 	'coll-print_template_prefix' => 'මුද්‍රණය කරන්න',
 	'coll-print_template_pattern' => '$1/මුද්‍රණය',
 	'coll-unknown_subpage_title' => 'නොදන්නා උපපිටුව',
+	'coll-unknown_subpage_text' => '[[Special:Book|පොතෙහි]] මෙම උපපිටුව නොපවතියි',
 	'coll-couldnotaddarticle_title' => 'විකි පිටුව එක් කල නොහැක',
 	'coll-couldnotaddarticle_msg' => 'විකි පිටුව එක් කල නොහැක.',
 	'coll-couldnotremovearticle_title' => 'විකි පිටුව ඉවත් කල නොහැක',
 	'coll-couldnotremovearticle_msg' => 'විකි පිටුව ඉවත් කල නොහැක.',
+	'coll-noscript_text' => '<h1>ජාවාස්ක්‍රිප්ට් අවශ්‍යයි!</h1>
+<strong>ඔබේ ගවේශකය ජාවාස්ක්‍රිප්ට් සඳහා සහය නොදක්වයි හෝ ජාවාස්ක්‍රිප්ට් අක්‍රීය කොට ඇත.
+ජාවාස්ක්‍රිප්ට් සක්‍රීය කෙරුවොත් මිසක්, මෙම පිටුව හොඳින් වැඩ කරන එකක් නැහැ.</strong>',
+	'coll-savedbook_template' => 'සුරක්ෂිත_පොත',
 	'coll-your_book' => 'ඔබේ පොත',
 	'coll-download_title' => 'භාගත කිරීම',
 	'coll-download' => 'භාගත කිරීම',
@@ -10219,6 +10240,12 @@ $messages['si'] = array(
 	'coll-create_chapter' => 'මාතෘකාවක් නිර්මාණය කරන්න',
 	'coll-sort_alphabetically' => 'අකාරාදි පිළිවෙලට සකසන්න',
 	'coll-rename' => 'නැවත නාමකාරණය',
+	'coll-new_chapter' => 'නව පරිච්ඡේදය සඳහා නමක් යොදන්න',
+	'coll-rename_chapter' => 'පරිච්ඡේදය සඳහා නව නමක් යොදන්න',
+	'coll-no_such_category' => 'සත්‍ය ප්‍රවර්ගයක් නොමැත',
+	'coll-post_failed_title' => 'POST අයදුම අසාර්ථක වුණි',
+	'coll-mwserve_failed_title' => 'විදහාපෑම් සර්වරයේ දෝෂය',
+	'coll-error_reponse' => 'සර්වරයෙන් දෝෂ සහගත ප්‍රතිචාරය',
 	'coll-empty_collection' => 'හිස් පොත',
 	'coll-revision' => 'සංශෝධනය: $1',
 	'coll-save_collection_title' => 'ඔබේ පොත සුරකමින් හුවමාරු කරන්න',
@@ -10228,32 +10255,44 @@ $messages['si'] = array(
 	'coll-save_collection' => 'පොත සුරකින්න',
 	'coll-overwrite_title' => 'පිටුව පවතියි.
 උඩින් ලියන්නද?',
+	'coll-overwrite_text' => '[[:$1]] නම සහිත පිටුවක් දැනටමත් පවතියි.
+පොත සමඟ එය ප්‍රතිස්ථාපනය කිරීමට ඔබට අවශ්‍යද?',
 	'coll-yes' => 'ඔව්',
 	'coll-no' => 'නැත',
 	'coll-overwrite' => 'උඩින් ලිවීම',
+	'coll-append' => 'අමුණන්න',
 	'coll-cancel' => 'අත් හරින්න',
 	'coll-update' => 'යාවත්කාලීන කළ',
 	'coll-limit_exceeded_title' => 'පොත ලොකු වැඩියි',
 	'coll-limit_exceeded_text' => 'ඔබේ පොත ලොකු වැඩියි.
 තව දුරටත් පිටු එක් කල නොහැක.',
+	'coll-rendering_title' => 'විදහාපාමින්',
+	'coll-rendering_status' => '<strong>තත්වය:</strong> $1',
+	'coll-rendering_article' => '(විකි පිටුව: $1)',
 	'coll-rendering_page' => '(පිටුව: $1)',
+	'coll-rendering_finished_title' => 'විදහාපෑම අවසානයි',
 	'coll-notfound_title' => 'පොත හමු නොවුණි',
 	'coll-notfound_text' => 'පොත් පිටුව සොයාගත නොහැක.',
 	'coll-download_notfound_title' => 'ගොනුව හමු නොවුණි',
 	'coll-download_failed_title' => 'බාගැනීම අතරතුර දෝෂය',
 	'coll-download_failed_text' => 'ගොනුව බාගැනීමේ දෝෂයක් හට ගැනුණි: $1',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a> වෙත නැවත යන්න</p>',
+	'coll-book_title' => 'මුද්‍රණය කෙරූ පොතක් ලෙස ඇනවුම් කරන්න',
 	'coll-order_from_pp' => '$1 සමඟ පෙරදසුන',
 	'coll-about_pp' => '$1 ගැන',
 	'coll-license' => 'බලපත්‍රය',
+	'coll-return_to' => '[[:$1]] වෙත නැවත යන්න',
 	'coll-more_info' => 'තවත් තොරතුරු පෙන්වන්න',
 	'coll-hide_info' => 'තොරතුරු සඟවන්න',
 	'coll-suggest_title' => 'ඔබේ පොත සඳහා යෝජනා කල පිටුව',
 	'coll-suggested_articles' => 'යෝජනා',
 	'coll-suggest_reset_bans' => 'ප්‍රත්‍යාරම්භ කරන්න',
+	'coll-suggest_reset_bans_tooltip' => 'පූර්ව වශයෙන් ඉවත්කළ පරිවර්තන පෙන්වන්න',
 	'coll-suggest_add_selected' => 'තෝරාගත් පිටු එක් කරන්න',
 	'coll-suggest_ban_selected' => 'තෝරාගත් පිටු ඉවත් කරන්න',
 	'coll-suggest_your_book' => 'ඔබේ පොත',
 	'coll-suggest_show' => 'පෙන්වන්න',
+	'coll-suggest_ban_tooltip' => 'මෙම පිටුව ව්‍යංගාර්ථ පරිවර්තන ලැයිස්තුවෙන් ඉවත් කරන්න',
 	'coll-suggest_undo_tooltip' => 'මෙම ක්‍රියාව අහෝසි කරන්න',
 	'coll-suggest_undo' => 'අහෝසිය',
 	'right-collectionsaveasuserpage' => 'පරිශීලක පිටුව ලෙස පොත් සුරකින්න',
@@ -11147,15 +11186,39 @@ $messages['sw'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Shanmugamp7
  * @author TRYPPN
  * @author செல்வா
  */
 $messages['ta'] = array(
+	'coll-desc' => '[[Special:Book|புத்தகங்களை உருவாக்கு]]',
+	'coll-manage_your_book' => 'உங்கள் புத்தகத்தை நிர்வகி',
+	'coll-book_creator_help' => 'மேலும் தகவலுக்கு பார்க்கவும் [[{{MediaWiki:Coll-helppage}}  | புத்தகங்களை பற்றிய உதவி பக்கம்]] .',
+	'coll-start_book_creator' => 'புத்தக உருவாக்குநரை தொடங்கு',
+	'coll-book_creator_continue' => 'புத்தக உருவாக்குநர் பயன்படுத்துவதை தொடர்',
+	'coll-book_creator_disable_text' => "''புத்தக உருவாக்குநர்'' செயலிழக்க செய்யப்படும்  மற்றும் நீங்கள் உருவாக்கிக் கொண்டிருக்கும் புத்தகம் நீக்கப்படும்.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}} / புத்தக உருவாக்குநர் உரை',
 	'coll-collection' => 'புத்தகம்',
 	'coll-collections' => 'நூல்கள்',
+	'coll-exclusion_category_title' => 'அச்சிடுதலில்  இருந்து விலக்கு',
 	'coll-print_template_prefix' => 'அச்சிடு',
+	'coll-print_template_pattern' => '$1/ அச்சிடு',
+	'coll-unknown_subpage_title' => 'அறியப்படாத துணைபக்கம்',
+	'coll-unknown_subpage_text' => ' [[Special:புத்தகம்|புத்தகத்தின்]]  துணைப்பக்கம் எதுவும் இல்லை.',
+	'coll-couldnotaddarticle_title' => 'விக்கி பக்கத்தை சேர்க்க இயலாது',
+	'coll-couldnotaddarticle_msg' => 'விக்கி பக்கம் சேர்க்க இயலாது.',
+	'coll-couldnotremovearticle_title' => 'விக்கி பக்கத்தை நீக்க இயலாது.',
+	'coll-couldnotremovearticle_msg' => 'இந்த விக்கி பக்கத்தை நீக்க இயலாது.',
+	'coll-noscript_text' => '<h1>JavaScript தேவைப்படுகிறது!</h1>
+<strong>உங்கள் மேய்வான் JavaScript ஆதரிக்கவில்லை அல்லது JavaScript அணைக்கப்பட்டுள்ளது.
+JavaScript இயக்கப்பட்டால் ஒழிய இப்பக்கம் சரியாக வேலை செய்யாது.</strong>',
+	'coll-savedbook_template' => 'சேமிக்கப்பட்ட _புத்தகம்',
+	'coll-your_book' => 'உங்கள் புத்தகம்',
 	'coll-download_title' => 'இறக்கு (பதிவிறக்கம் செய்)',
+	'coll-download_text' => 'உங்கள் புத்தகத்தை தகவலிறக்கம் செய்ய வடிவமைப்பை தேர்ந்தெடுத்து, பொத்தானை கிளிக் செய்க.',
+	'coll-download_as_text' => 'உங்கள் புத்தகத்தை $1 வடிவமைப்பில் தகவலிறக்கம் செய்ய பொத்தானை கிளிக் செய்க.',
 	'coll-download' => 'பதிவிறக்கம் செய்',
+	'coll-format_label' => 'வடிவமைப்பு:',
 	'coll-remove' => 'நீக்குக',
 	'coll-show' => 'காட்டு',
 	'coll-move_to_top' => 'மேல்பகுதிக்கு நகர்த்து',
@@ -11165,17 +11228,64 @@ $messages['ta'] = array(
 	'coll-title' => 'தலைப்பு:',
 	'coll-subtitle' => 'துணைத்தலைப்பு:',
 	'coll-contents' => 'பொருளடக்கம்',
+	'coll-drag_and_drop' => 'விக்கி பக்கங்கள் மற்றும் அத்தியாயங்களை மறுவரிசையாக்க இழுத்து விடுதலை (drag & drop) பயன்படுத்தவும்.',
+	'coll-create_chapter' => 'அத்தியாயத்தை உருவாக்கு',
+	'coll-sort_alphabetically' => 'அகரவரிசைப்படி ஒழுங்குப் படுத்துக',
 	'coll-rename' => 'பெயர் மாற்றம் செய்',
+	'coll-new_chapter' => 'புதிய அத்தியாயத்திற்கான பெயரை உள்ளிடவும்',
+	'coll-rename_chapter' => 'அத்தியாயத்திற்கான புதிய பெயரை உள்ளிடு',
+	'coll-no_such_category' => 'அப்படிப்பட்ட வகை எதுவும் இல்லை',
+	'coll-notitle_title' => 'பக்கத்தின் தலைப்பை வரையறுக்க இயலவில்லை.',
+	'coll-post_failed_title' => 'POST கோரிக்கை தோல்வியடைந்தது',
+	'coll-post_failed_msg' => ' POST கோரிக்கை  $1க்கு தோல்வியடைந்தது ($2).',
+	'coll-mwserve_failed_title' => 'வழங்கல் சேவகனில் பிழை',
+	'coll-mwserve_failed_msg' => 'வழங்கல் சேவகனில் ஒரு பிழை ஏற்பட்டுள்ளது:<nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'சேவகனிலிருந்து பிழை என பதில்',
+	'coll-empty_collection' => 'காலி புத்தகம்',
+	'coll-revision' => 'பரிசீலனை:$1',
+	'coll-save_collection_title' => 'சேமித்து மற்றும் உங்கள் புத்தகத்தை பகிரவும்',
+	'coll-save_collection_text' => 'உங்கள் புத்தகத்தை சேமிக்க  ஒரு பகுதியை தேர்ந்தெடுக்கவும்:',
+	'coll-personal_collection_label' => 'சுய புத்தகம்:',
+	'coll-community_collection_label' => 'சமுதாய புத்தகம்:',
+	'coll-save_collection' => 'புத்தகத்தை சேமி',
+	'coll-save_category' => 'எல்லா சேமிக்கப்பட்ட புத்தகங்களும் இந்த பிரிவில் சேர்க்கப்பட்டது [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'பக்கம் இருக்கிறது.
 மேல் எழுதவா ?',
+	'coll-overwrite_text' => 'ஒரு பக்கம்  [[: $1 ]]என்ற பெயரில் ஏற்கனவே உள்ளது.
+இதை உங்கள் புத்தகம் கொண்டு மாற்றப்பட விரும்புகிறீர்களா?',
 	'coll-yes' => 'ஆம்',
 	'coll-no' => 'இல்லை',
+	'coll-load_overwrite_text' => 'உங்கள் புத்தகத்தில் சில பக்கங்களை ஏற்கனவே கொண்டுள்ளீர்கள்.
+உங்கள் நடப்பு புத்தகம் மீது எழுத, புதிய உரையை இணைக்க அல்லது இந்த புத்தகம் ஏற்றுவதை ரத்து செய்ய வேண்டுமா?',
 	'coll-overwrite' => 'மேலெழுதுதல்',
 	'coll-append' => 'கடையிணைப்பு',
 	'coll-cancel' => 'விட்டுவிடு',
 	'coll-update' => 'புதுப்பி',
+	'coll-limit_exceeded_title' => 'புத்தகம் மிக பெரிதாக உள்ளது',
+	'coll-limit_exceeded_text' => 'உங்கள் புத்தகம் மிக பெரிதாக உள்ளது.
+மேலும் பக்கங்கள் எதுவும் சேர்க்க இயலாது.',
+	'coll-rendering_status' => '<strong>நிலைமை:</strong> $1',
+	'coll-rendering_article' => '(விக்கி பக்கம்:  $1 )',
+	'coll-rendering_page' => '(பக்கம்: $1)',
 	'coll-license' => 'அனுமதி',
+	'coll-more_info' => 'மேலும் தகவல்களை காண்பி',
+	'coll-hide_info' => 'தகவலை மறை',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}} / PediaPress உத்தரவு தகவல்',
+	'coll-suggest_title' => 'உங்கள் புத்தகத்திற்காக பரிந்துரைக்கப்பட்ட பக்கங்கள்',
+	'coll-suggested_articles' => 'பரிந்துரைகள்',
+	'coll-suggest_reset_bans' => 'மீட்டமை',
+	'coll-suggest_reset_bans_tooltip' => 'முன்பே நீக்கப்பட்ட பரிந்துரைகளை காண்பிக்கவும்',
+	'coll-suggest_add_selected' => 'தேர்ந்தெடுத்த பக்கங்களை சேர்',
+	'coll-suggest_ban_selected' => 'தேர்ந்தெடுத்த பக்கங்களை நீக்கு',
 	'coll-suggest_show' => 'காட்டு',
+	'coll-suggest_ban_tooltip' => 'இப்பக்கத்தை பரிந்துரைகள்  பட்டியலில் இருந்து நீக்கவும்.',
+	'coll-suggest_article_ban' => 'பக்கம் <strong> $1 </strong> பரிந்துரைகளிலிருந்து இருந்து நீக்கப்பட்டது ( $2 ).',
+	'coll-suggest_article_add' => 'பக்கம் <strong> $1 </strong> உங்கள் புத்தகத்துடன் சேர்க்கப்பட்டது ( $2 ).',
+	'coll-suggest_article_remove' => 'பக்கம் <strong> $1 </strong> இருந்து உங்கள் புத்தகத்திலிருந்து நீக்கப்பட்டது ( $2 ).',
+	'coll-suggest_undo_tooltip' => 'இந்த செயலை செயல்தவிர்',
+	'coll-suggest_undo' => 'மீளமை',
+	'right-collectionsaveasuserpage' => 'புத்தகங்களை பயனீட்டாளர் பக்கமாக சேமி',
+	'right-collectionsaveascommunitypage' => 'புத்தகங்களை சமுதாய பக்கமாக சேமி',
 );
 
 /** Telugu (తెలుగు)
@@ -12637,6 +12747,7 @@ $messages['wuu'] = array(
 );
 
 /** Yiddish (ייִדיש)
+ * @author Imre
  * @author פוילישער
  */
 $messages['yi'] = array(
@@ -12650,6 +12761,8 @@ $messages['yi'] = array(
 	'coll-download_title' => 'אראָפלאָדן',
 	'coll-download' => 'אַראָפלאָדן',
 	'coll-format_label' => 'פֿאָרמאַט:',
+	'coll-remove' => 'אַראָפּנעמען',
+	'coll-show' => 'ווײַז',
 	'coll-title' => 'טיטל:',
 	'coll-contents' => 'אינהאַלט',
 	'coll-empty_collection' => 'ליידיג בוך',
