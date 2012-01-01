@@ -67,6 +67,7 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Aleator
+ * @author Amire80
  * @author Aotake
  * @author EugeneZelenko
  * @author Fryed-peach
@@ -82,6 +83,7 @@ $messages['qqq'] = array(
 
 {{Identical|Download}}',
 	'coll-download_as_tooltip' => '* $1 is some file format(s)',
+	'coll-disable' => 'Stop using the book creator',
 	'coll-bookscategory' => '{{Identical|Book}}',
 	'coll-clear_collection' => '',
 	'coll-clear_collection_confirm' => 'Message box when pressed "Clear book".',
@@ -1443,9 +1445,9 @@ $messages['he'] = array(
 	'coll-download_as_tooltip' => 'הורדת גרסת $1 של דף ויקי זה',
 	'coll-disable' => 'ביטול',
 	'coll-book_creator_disable' => 'ביטול מצב ספר',
-	'coll-book_creator_disable_tooltip' => 'הפסקת השימוש במצב ספר',
+	'coll-book_creator_disable_tooltip' => 'הפסקת השימוש ביוצר הספרים',
 	'coll-add_linked_article' => 'הוספת עמוד ויקי מקושר לספר שלך',
-	'coll-remove_linked_article' => 'הסרת עמודי ויקי המקושרים מהספר שלך',
+	'coll-remove_linked_article' => 'הסרת עמוד ויקי מקושר מהספר שלך',
 	'coll-add_category' => 'הוספת קטגוריה זו לספר שלכם',
 	'coll-add_category_tooltip' => 'הוספת כל הדפים בקטגוריה זו לספר שלכם',
 	'coll-add_this_page' => 'הוספת דף זה לספר שלכם',
@@ -1455,10 +1457,10 @@ $messages['he'] = array(
 	'coll-clear_collection_confirm' => 'האם אתם בטוחים שברצונכם לנקות לגמרי את הספר שלכם?',
 	'coll-clear_collection_tooltip' => 'הסרת כל הדפים מהספר הנוכחי שלך',
 	'coll-help' => 'עזרה',
-	'coll-help_tooltip' => 'הצגת עזרה אודות יצירת ספרים',
+	'coll-help_tooltip' => 'הצגת עזרה על יצירת ספרים',
 	'coll-helppage' => 'Help:ספרים',
-	'coll-load_collection' => 'פתיחת ספר',
-	'coll-load_collection_tooltip' => 'פתיחת הספר הזה כספר הנוכחי שלך',
+	'coll-load_collection' => 'טעינת ספר',
+	'coll-load_collection_tooltip' => 'טעינת הספר הזה כספר הנוכחי שלך',
 	'coll-n_pages' => '{{PLURAL:$1|דף אחד|$1 דפים}}',
 	'coll-printable_version_pdf' => 'גרסת PDF',
 	'coll-remove_this_page' => 'הסרת דף זה מהספר שלכם',
@@ -1483,6 +1485,10 @@ $messages['hi'] = array(
 	'coll-download_as' => '$1 के रूप में डाउनलोड करें',
 	'coll-download_as_tooltip' => 'इस विकि पृष्ठ के एक $1 संस्करन डाउनलोड करें',
 	'coll-disable' => 'अक्षम करें',
+	'coll-book_creator_disable' => 'पुस्तक निर्माता को अक्षम करें',
+	'coll-book_creator_disable_tooltip' => 'पुस्तक निर्माता का उपयोग बंद करें',
+	'coll-add_linked_article' => 'लिंक्ड विकि पृष्ठ को अपनी पुस्तक से जोड़ें',
+	'coll-remove_linked_article' => 'लिंक्ड विकि पृष्ठ को अपनी पुस्तक से निकालें',
 	'coll-add_category' => 'इस श्रेणी को अपनी पुस्तक से जोड़ें',
 	'coll-add_category_tooltip' => 'इस श्रेणी की सारी विकि पृष्ठ को अपनी पुस्तक से जोड़ें',
 	'coll-add_this_page' => 'इस पृष्ठ को अपनी पुस्तक से जोड़ें',
@@ -1490,11 +1496,16 @@ $messages['hi'] = array(
 	'coll-bookscategory' => 'पुस्तकें',
 	'coll-clear_collection' => 'पुस्तक खाली करें',
 	'coll-clear_collection_confirm' => 'क्या आप वास्तव में पूरी पुस्तक खाली करना चाहते हैं?',
+	'coll-clear_collection_tooltip' => 'सारे विकि पृष्ठ को अपनी बर्त्तमान की पुस्तक से निकालें',
 	'coll-help' => 'सहायता',
 	'coll-helppage' => 'Help:कलेक्शन',
 	'coll-load_collection' => 'कलेक्शन लोड करें',
+	'coll-n_pages' => '$2 {{PLURAL:$1|पृष्ठ|पृष्ठ}}',
 	'coll-printable_version_pdf' => 'PDF रूपांतर',
+	'coll-remove_this_page' => 'इस पृष्ठ को अपनी पुस्तक से निकालें',
 	'coll-show_collection' => 'कलेक्शन दर्शायें',
+	'coll-not_addable' => 'इस पृष्ठ को जोड़ा नहीं जा सकता',
+	'coll-make_suggestions' => 'सुझाव पृष्ठों',
 	'coll-suggest_empty' => 'खाली',
 );
 
