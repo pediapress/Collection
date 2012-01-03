@@ -220,8 +220,10 @@ $(function() {
 		toggle_order_info(false);
 		update_buttons();
 		make_sortable();
+		$('#personalCollTitle').val($('#titleInput').val());
 		$('#personalCollTitle').keyup(update_buttons);
 		$('#personalCollTitle').change(update_buttons);
+		$('#communityCollTitle').val($('#titleInput').val());
 		$('#communityCollTitle').keyup(update_buttons);
 		$('#communityCollTitle').change(update_buttons);
 		$('#personalCollType').change(update_buttons);
