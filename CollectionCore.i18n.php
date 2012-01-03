@@ -99,6 +99,7 @@ $messages['qqq'] = array(
  * @author Anrie
  * @author Arnobarnard
  * @author Naudefj
+ * @author පසිඳු කාවින්ද
  */
 $messages['af'] = array(
 	'coll-print_export' => 'Druk/eksporteer',
@@ -108,20 +109,27 @@ $messages['af'] = array(
 	'coll-download_as' => 'Laai af as $1',
 	'coll-download_as_tooltip' => "Laai 'n $1-weergawe van die wikibladsy af",
 	'coll-disable' => 'deaktiveer',
+	'coll-book_creator_disable' => 'Boek skepper afskakel',
+	'coll-remove_linked_article' => 'Verwyder gekoppel wiki bladsy van jou boek',
 	'coll-add_category' => 'Voeg die kategorie by jou boek',
 	'coll-add_category_tooltip' => 'Voeg al die wikiblaaie in hierdie kategorie by u boek',
 	'coll-add_this_page' => 'Voeg hierdie bladsy by u boek',
 	'coll-add_page_tooltip' => 'Voeg die huidige wikiblad by u boek',
 	'coll-bookscategory' => 'Boeke',
 	'coll-clear_collection' => 'Maak boek leeg',
+	'coll-clear_collection_confirm' => 'Wil jy regtig jou boek heeltemal duidelik?',
+	'coll-clear_collection_tooltip' => 'Verwyder alle wiki-bladsye uit jou huidige boek',
 	'coll-help' => 'Help',
+	'coll-help_tooltip' => 'Wys help oor die skep van boeke',
 	'coll-helppage' => 'Help:Boeke',
 	'coll-load_collection' => 'Laai boek',
 	'coll-n_pages' => '$1 {{PLURAL:$1|bladsy|bladsye}}',
 	'coll-printable_version_pdf' => 'PDF-weergawe',
 	'coll-remove_this_page' => 'Verwyder hierdie bladsy uit u boek',
 	'coll-show_collection' => 'Wys boek',
+	'coll-not_addable' => 'Hierdie bladsy kan nie bygevoeg word nie',
 	'coll-make_suggestions' => 'Stel bladsye voor',
+	'coll-make_suggestions_tooltip' => 'Wys voorstelle wat gebaseer is op die bladsye in jou boek',
 	'coll-suggest_empty' => 'leegmaak',
 );
 
@@ -1498,8 +1506,10 @@ $messages['hi'] = array(
 	'coll-clear_collection_confirm' => 'क्या आप वास्तव में पूरी पुस्तक खाली करना चाहते हैं?',
 	'coll-clear_collection_tooltip' => 'सारे विकि पृष्ठ को अपनी बर्त्तमान की पुस्तक से निकालें',
 	'coll-help' => 'सहायता',
+	'coll-help_tooltip' => 'पुस्तक निर्माण में सहायता दिखाएँ',
 	'coll-helppage' => 'Help:कलेक्शन',
 	'coll-load_collection' => 'कलेक्शन लोड करें',
+	'coll-load_collection_tooltip' => 'बर्त्तमान पुस्तक की तरह इस पुस्तक को लोड़ करें',
 	'coll-n_pages' => '$2 {{PLURAL:$1|पृष्ठ|पृष्ठ}}',
 	'coll-printable_version_pdf' => 'PDF रूपांतर',
 	'coll-remove_this_page' => 'इस पृष्ठ को अपनी पुस्तक से निकालें',
@@ -3149,6 +3159,13 @@ $messages['rue'] = array(
 	'coll-make_suggestions' => 'Запропоновати сторінкы',
 	'coll-make_suggestions_tooltip' => 'Указати пропозіції подля сторінок приданых до вашой книгы',
 	'coll-suggest_empty' => 'порожня',
+);
+
+/** Sanskrit (संस्कृतम्)
+ * @author Ansumang
+ */
+$messages['sa'] = array(
+	'coll-help' => 'साहाय्यम्',
 );
 
 /** Sakha (Саха тыла)

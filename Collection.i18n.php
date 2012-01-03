@@ -309,6 +309,7 @@ $messages['ab'] = array(
  * @author Arnobarnard
  * @author Naudefj
  * @author SPQRobin
+ * @author පසිඳු කාවින්ද
  */
 $messages['af'] = array(
 	'coll-desc' => '[[Special:Book|Skep boeke]]',
@@ -355,6 +356,7 @@ Hierdie bladsy sal nie korrek werk tensy JavaScript aangeskakel word nie.</stron
 	'coll-notitle_title' => 'Die titel van die bladsy kon nie bepaal word nie.',
 	'coll-post_failed_title' => 'POST-versoek het gefaal',
 	'coll-post_failed_msg' => 'Die POST-versoek na $1 het misluk ($2).',
+	'coll-mwserve_failed_title' => 'Lewer stelsel fout',
 	'coll-error_reponse' => "Die bediener het 'n fout teruggestuur",
 	'coll-empty_collection' => 'Leë boek',
 	'coll-revision' => 'Weergawe: $1',
@@ -373,6 +375,7 @@ Oorskryf?',
 	'coll-limit_exceeded_title' => 'Boek is te groot',
 	'coll-limit_exceeded_text' => 'U boek is te groot.
 Daar kan nie meer bladsye byvoeg nie.',
+	'coll-rendering_title' => 'Die lewering van',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(wikibladsy: $1)',
 	'coll-rendering_page' => '(bladsy: $1)',
@@ -393,6 +396,7 @@ Daar kan nie meer bladsye byvoeg nie.',
 	'coll-more_info' => 'Wys meer inligting',
 	'coll-hide_info' => 'Versteek inligting',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Bestelinligting PediaPress',
+	'coll-suggest_title' => 'Voorgestelde bladsye vir jou boek',
 	'coll-suggested_articles' => 'Voorstelle',
 	'coll-suggest_reset_bans' => 'herstel',
 	'coll-suggest_reset_bans_tooltip' => 'Wys voorheen verwyder voorstelle',
@@ -4728,6 +4732,9 @@ $messages['he'] = array(
 $messages['hi'] = array(
 	'coll-desc' => '[[Special:Collection|पन्ने जमा करें]], पीडीएफ बनायें',
 	'coll-manage_your_book' => 'आपकी पुस्तक का प्रबंधन',
+	'coll-start_book_creator' => 'पुस्तक निर्माता आरंभ करें',
+	'coll-book_creator_continue' => 'पुस्तक निर्माता की उपयोग जारी रखें',
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/पुस्तक निर्माता लेख',
 	'coll-collection' => 'पुस्तक',
 	'coll-collections' => 'पुस्तकें',
 	'coll-print_template_prefix' => 'मुद्रित करें',
@@ -4782,9 +4789,11 @@ $messages['hi'] = array(
 	'coll-limit_exceeded_title' => 'कलेक्शन बहुत बडा हुआ हैं',
 	'coll-limit_exceeded_text' => 'आपका कलेक्शन बहुत बडा हुआ हैं।
 और पन्ने बढा नहीं सकतें।',
+	'coll-rendering_title' => 'प्रतिपादन',
 	'coll-rendering_status' => '<strong>स्थिति:</strong> $1',
 	'coll-rendering_article' => '(विकी  पृष्ठ : $1)',
 	'coll-rendering_page' => '(पृष्ठ: $1)',
+	'coll-rendering_finished_title' => 'प्रतिपादन समाप्त',
 	'coll-notfound_title' => 'कलेक्शन मिला नहीं',
 	'coll-notfound_text' => 'कलेक्शन पन्ना मिला नहीं।',
 	'coll-download_notfound_title' => 'फ़ाइल नहीं मिली',
@@ -10045,6 +10054,14 @@ $messages['rue'] = array(
 	'right-collectionsaveascommunitypage' => 'Укладаня книг як сторінок комуніты',
 );
 
+/** Sanskrit (संस्कृतम्)
+ * @author Ansumang
+ */
+$messages['sa'] = array(
+	'coll-yes' => 'आम्',
+	'coll-cancel' => 'निवर्तयते',
+);
+
 /** Sakha (Саха тыла)
  * @author HalanTul
  */
@@ -10313,6 +10330,7 @@ $messages['si'] = array(
 	'coll-rendering_article' => '(විකි පිටුව: $1)',
 	'coll-rendering_page' => '(පිටුව: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/විදහාපෑම් පිටුවේ විස්තර පාඨය',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/විදහාපෑම් එකතුවේ විස්තර පාඨය',
 	'coll-rendering_finished_title' => 'විදහාපෑම අවසානයි',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/විදහාපෑම් පිටුවේ විස්තර පාඨය',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/විදහාපෑම් එකතුවේ විස්තර පාඨය',
@@ -10330,6 +10348,7 @@ $messages['si'] = array(
 	'coll-return_to' => '[[:$1]] වෙත නැවත යන්න',
 	'coll-more_info' => 'තවත් තොරතුරු පෙන්වන්න',
 	'coll-hide_info' => 'තොරතුරු සඟවන්න',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/පිඩියමුද්‍රණාල ඇනවුම් තොරතුරු',
 	'coll-suggest_title' => 'ඔබේ පොත සඳහා යෝජනා කල පිටුව',
 	'coll-suggested_articles' => 'යෝජනා',
 	'coll-suggest_reset_bans' => 'ප්‍රත්‍යාරම්භ කරන්න',
