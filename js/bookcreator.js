@@ -179,7 +179,7 @@ $(function() {
 			return;
 		}
 		var $this = $(this);
-		if ($this.attr('title').indexOf(':') != -1) { // title doesn't contain ":" (simplification!)
+		if (!$this.attr('title') || $this.attr('title').indexOf(':') != -1) { // title doesn't contain ":" (simplification!)
 			return;
 		}
 		if ($this.parents('.nopopups').length) {
