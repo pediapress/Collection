@@ -752,7 +752,7 @@ class SpecialCollection extends SpecialPage {
 				'title' => $articleTitle->getPrefixedText(),
 				'latest' => $latest,
 				'revision' => $oldid,
-				'timestamp' => wfTimestamp( TS_UNIX, $revision->mTimestamp ),
+				'timestamp' => wfTimestamp( TS_UNIX, $revision->getTimestamp() ),
 				'url' => $articleTitle->getCanonicalURL(),
 				'currentVersion' => $currentVersion,
 			);
@@ -1143,7 +1143,7 @@ class SpecialCollection extends SpecialPage {
 		}
 
 		$revision = Revision::newFromTitle( $title, $oldid );
-		$article['timestamp'] = wfTimestamp( TS_UNIX, $revision->mTimestamp );
+		$article['timestamp'] = wfTimestamp( TS_UNIX, $revision->getTimestamp() );
 
 		$this->renderCollection( array( 'items' => array( $article ) ), $title, $writer );
 	}
