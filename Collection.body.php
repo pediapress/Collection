@@ -535,8 +535,7 @@ class SpecialCollection extends SpecialPage {
 	static function addArticle( $title, $oldid = 0 ) {
 		global $wgCollectionHierarchyDelimiter;
 
-		$article = new Article( $title, $oldid );
-		$latest = $article->getLatest();
+		$latest = $title->getLatestRevID();
 
 		$currentVersion = 0;
 		if ( $oldid == 0 ) {
