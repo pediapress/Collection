@@ -5687,6 +5687,149 @@ $messages['ig'] = array(
 	'coll-suggest_show' => 'zi',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'coll-desc' => '[[Special:Book|Agaramid ti liblibro]]',
+	'coll-book_creator_intro' => "<big>Nga iti ''panagaramid ti libro'' makaaramid ka ti libro nga naglaon kadagiti pampanid ti wiki a napilim. Maipan mo ti libro kadagiti sabsabali a porma (kas pagarigan PDF wenno ODF) wenno agibilin ka ti naimaldit a kopia.<big>",
+	'coll-manage_your_book' => 'Taripatuem ti librom',
+	'coll-book_creator_help' => 'Kitaen ti [[{{MediaWiki:Coll-helppage}}|ti tulong a panid a maipanggep ti liblibro]] para iti adu pay a pakaammo.',
+	'coll-start_book_creator' => 'Mangrugi ti panagaramid ti libro',
+	'coll-book_creator_continue' => 'Agtultuloy nga agusar ti panagaramid ti libro',
+	'coll-book_creator_disable_text' => "''Panagaramid ti Libro'' ket mabaldadon to ken ti libro nga araramidem ket maikkat.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Teksto ti panagaramid ti libro',
+	'coll-collection' => 'Libro',
+	'coll-collections' => 'Dagiti libro',
+	'coll-exclusion_category_title' => 'Saan nga imaldit',
+	'coll-print_template_prefix' => 'Imaldit',
+	'coll-print_template_pattern' => '$1/Imaldit',
+	'coll-unknown_subpage_title' => 'Di amammo nga apo ti panid',
+	'coll-unknown_subpage_text' => 'Daytoy nga apo ti panid iti [[Special:Book|Libro]] ket awanen',
+	'coll-couldnotaddarticle_title' => 'Saan a mainayon ti panid ti wiki',
+	'coll-couldnotaddarticle_msg' => 'Ti panid ti wiki ket saan a mainayon.',
+	'coll-couldnotremovearticle_title' => 'Saan a maikkat ti panid ti wiki',
+	'coll-couldnotremovearticle_msg' => 'Ti panid ti wiki ket saan a maikkat.',
+	'coll-noscript_text' => '<h1>Masapul ti JavaScript!</h1>
+<strong>Ti pagbasabasam ket saan na asuportaran ti JavaScript wenno ti JavaScript ket naiddep.
+Daytoy a panid ket saan nga agbalin nga husto, malaksid no pakabaelam ti JavaScript.</strong>',
+	'coll-savedbook_template' => 'naidulin_ti_libro',
+	'coll-your_book' => 'Ti librom',
+	'coll-download_title' => 'Ikarga nga agpababa',
+	'coll-download_text' => 'Ti agikarga ti librom agpili ti porma ken agtakla ti buton.',
+	'coll-download_as_text' => 'Ti agikarga ti librom iti $1 a porma agtakla ti buton.',
+	'coll-download' => 'Ikarga nga agpababa',
+	'coll-format_label' => 'Pormat:',
+	'coll-remove' => 'Ikkaten',
+	'coll-show' => 'Ipakita',
+	'coll-move_to_top' => 'Mapan iti ngato',
+	'coll-move_up' => 'Agpangato',
+	'coll-move_down' => 'Agpababa',
+	'coll-move_to_bottom' => 'Mapan iti baba',
+	'coll-title' => 'Titulo:',
+	'coll-subtitle' => 'Maikadua a titulo:',
+	'coll-contents' => 'Dagiti linaon',
+	'coll-drag_and_drop' => 'Agusar ti agguyod ken agitinnag ti agibilin manen ti pampanid ti wiki ken dagiti kapitulo',
+	'coll-create_chapter' => 'Agaramid ti kapitulo',
+	'coll-sort_alphabetically' => 'Paglalasinen a pang-abedasario',
+	'coll-rename' => 'Naganan',
+	'coll-new_chapter' => 'Ikabil ti nagan ti baro a kapitulo',
+	'coll-rename_chapter' => 'Ikabil ti nagan para iti kapitulo',
+	'coll-no_such_category' => 'Awan ti kasta a kategoria',
+	'coll-notitle_title' => 'Saan a malasin ti titulo iti dayta a panid.',
+	'coll-post_failed_title' => 'Napaay ti kiniddaw a POST',
+	'coll-post_failed_msg' => 'Ti kiniddaw a POST ti $1 ket napaay ($2) .',
+	'coll-mwserve_failed_title' => 'Biddut ti ipaay ti server',
+	'coll-mwserve_failed_msg' => 'Addan ti biddut a napasamak idiay ipaay ti server: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Biddut ti sungbat manipud idiay server',
+	'coll-empty_collection' => 'Awan nagyan na a libro',
+	'coll-revision' => 'Panagbaliw: $1',
+	'coll-save_collection_title' => 'Idulin ken makibingay iti librom',
+	'coll-save_collection_text' => 'Agpili ti pagidulinam a lokasion para iti librom:',
+	'coll-login_to_save' => 'No kayatmo ti agidulin ti liblibro para iti panagusar no madadama, pangngaasi a [[Special:UserLogin|sumrek ka, wenno agaramid ti pakabilangant]].',
+	'coll-personal_collection_label' => 'Kinabukod a libro:',
+	'coll-community_collection_label' => 'Libro ti komunidad:',
+	'coll-save_collection' => 'Idulin ti libro',
+	'coll-save_category' => 'Amin dagiti liblibro a naidulin ket mainayon iti kategoria a [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-overwrite_title' => 'Addaan ti panid.
+Suratam manen?',
+	'coll-overwrite_text' => 'Ti panid nga agnagan ti [[:$1]] ket addaanen.
+Kayatmo a sukatan na ti librom?',
+	'coll-yes' => 'Wen',
+	'coll-no' => 'Saan',
+	'coll-load_overwrite_text' => 'Addaan kan ti pampanid dita librom.
+Kayatmo a suratan manen ti agdama a librom, baliwan ti baro a linaon, wenno ukasen ti panagkarga iti daytoy a libro?',
+	'coll-overwrite' => 'Suratan manen',
+	'coll-append' => 'Baliwan',
+	'coll-cancel' => 'Ukasen',
+	'coll-update' => 'Pabaro',
+	'coll-limit_exceeded_title' => 'Dakkel unay daytoy a libro',
+	'coll-limit_exceeded_text' => 'Dakkel unay ti librom.
+Awanen ti panid a mainayon.',
+	'coll-rendering_title' => 'Agi-ipipaay',
+	'coll-rendering_text' => '<p><strong>Pangngaasi nga aguray bayat nga maararamid ti dokumento.</strong></p>
+
+<p><strong>Agrangrangay:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Daytoy a panid ket automatiko nga ag-pasaradiwaa iti manmanu a segundo.
+No saan ng a agbalin, pangngaasi a pindutem ti buton ti pagbasabasam.<p>',
+	'coll-rendering_status' => '<strong>Kasasaad:</strong> $1',
+	'coll-rendering_article' => '(panid ti wiki: $1)',
+	'coll-rendering_page' => '(panid: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Agip-ipaay ti teksto ti pakaammo ti panid',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Agip-ipaay ti naurnong a teksto ti pakaammo',
+	'coll-rendering_finished_title' => 'Ti panagipaay ket nalpasen',
+	'coll-rendering_finished_text' => '<strong>Naramiden ti dokumento ti papeles.</strong>
+<strong>[$1 Ikarga ti papeles]</strong> dita komputer mo.
+
+Dagitipaamo:
+* Saan mo a napennekan ti rimmuar? Kitaen ti [[{{MediaWiki:Coll-helppage}}|tulong ti panid a maipanggep ti liblibro]] para ti mabalin a mangparang-ay.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Agip-ipaay ti teksto ti pakaammo ti panid',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Agip-ipaay ti naurnong a teksto ti pakaammo',
+	'coll-notfound_title' => 'Saan a nabirukan ti libro',
+	'coll-notfound_text' => 'Saan a mabirukan ti panid ti libro.',
+	'coll-download_notfound_title' => 'Saan a mabirukan ti papeles',
+	'coll-download_notfound_text' => 'Ti papeles nga padpadasem nga ikarga ket awanen:
+Baka naikkaten ken masapul a maaramid.',
+	'coll-download_failed_title' => 'Biddut idi agkarkarga',
+	'coll-download_failed_text' => 'Addan ti biddut idi agkarkarga ti papeles: $1',
+	'coll-is_cached' => '<ul><li>Addan ti naidulin a bersion iti daytoy a dokumento,saanen a masapul a ipaay.
+<a href="$1">Pilitem ti agipaay.</a></li></ul>',
+	'coll-excluded-templates' => '* Dagiti plantilia iti kategoria [[:Category:$1|$1]] ket saanen a nairaman.',
+	'coll-blacklisted-templates' => '* Dagiti plantili iti blacklist [[:$1]] ket saanen a nairaman.',
+	'coll-return_to_collection' => '<p>Agsubli idiay <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Agbilin a kasla iti naimaldit a libro',
+	'coll-book_text' => 'Agala ti naimaldit a libro manipud idiay kadua mi nga agimalmaldit.',
+	'coll-order_from_pp' => 'Agipadas nga addaan ti $1',
+	'coll-about_pp' => 'Maipanggep ti  $1',
+	'coll-invalid_podpartner_title' => 'Imbalido a POD a kadua',
+	'coll-invalid_podpartner_msg' => 'Ti naited a POD a kadua ket imbalido.
+Pangngaasia kontaken ti administrador ti MediaWiki.',
+	'coll-license' => 'Lisensia',
+	'coll-return_to' => 'Agsubli idiay [[:$1]]',
+	'coll-more_info' => 'Agipakita ti adu pay a pakaammo',
+	'coll-hide_info' => 'Ilemmeng ti pakaammo',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Pakaammo ti panagbilin ti PediaPress',
+	'coll-suggest_title' => 'Naisingasing a pampanid para iti librom',
+	'coll-suggest_intro_text' => 'Ti naisingasing ket naibantay iti agdama a disso ti pampanid ti wiki nga addaan dita librom.
+Ti listaan ket maipabaro no agpatinayon ka nga agtakla iti agnayon wenno agikkat a buton.',
+	'coll-suggested_articles' => 'Dagiti singasing',
+	'coll-suggest_reset_bans' => 'isubli',
+	'coll-suggest_reset_bans_tooltip' => 'Iarang dagiti kallabes a naikkat a singasing',
+	'coll-suggest_add_selected' => 'Inayon dagiti napili a pampanid',
+	'coll-suggest_ban_selected' => 'Ikkaten dagiti napili a pampanid',
+	'coll-suggest_your_book' => 'Ti librom',
+	'coll-suggest_show' => 'ipakita',
+	'coll-suggest_ban_tooltip' => 'Ikkaten daytoy a panid manipud dita listaan dagiti singasing',
+	'coll-suggest_article_add' => 'Ti panid <strong>$1</strong> ket nainayonen dita librom ($2).',
+	'coll-suggest_article_remove' => 'Ti panid <strong>$1</strong> ket naikkaten manipud dita librom ($2).',
+	'coll-suggest_undo_tooltip' => 'Isubli daytoy nga aksion',
+	'coll-suggest_undo' => 'ibabawi',
+	'coll-load_local_book' => 'Itaklam ti OK tapno agtuloy ka ti librom %TITLE% nga naglaon kadagiti %NUMPAGES% pampanid ti wiki. Itakla ti Cancel ti agikkat ken mangrugi ti awan nagyan na a libro.',
+	'right-collectionsaveasuserpage' => 'Idulin ti liblibro a kas panid ti agar-aramat',
+	'right-collectionsaveascommunitypage' => 'Idulin ti liblibro a kas panid ti komunidad',
+);
+
 /** Ingush (ГІалгІай Ğalğaj)
  * @author Amire80
  * @author Sapral Mikail

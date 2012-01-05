@@ -1757,6 +1757,46 @@ $messages['ig'] = array(
 	'coll-help' => 'Nkwádo',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'coll-print_export' => 'Imaldit/ipan',
+	'coll-create_a_book' => 'Agaramid ti libro',
+	'coll-create_a_book_tooltip' => 'Agaramid ti maysa a libro wenno naurnong a panid',
+	'coll-book_creator' => 'Agar-aramid ti libro',
+	'coll-download_as' => 'Ikarga a kas $1',
+	'coll-download_as_tooltip' => 'Ikarga ti $1 a bersion iti daytoy a panid ti wiki',
+	'coll-disable' => 'ibaldado',
+	'coll-book_creator_disable' => 'Ibaldado ti agar-aramid ti libro',
+	'coll-book_creator_disable_tooltip' => 'Agsardeng nga agusar ti agar-aramid ti libro',
+	'coll-add_linked_article' => 'Agnayon kadagiti nasilpuan a panid dita librom',
+	'coll-remove_linked_article' => 'Ikkaten dagiti nasilpuan a panid dita librom',
+	'coll-add_category' => 'Inayon daytoy a kategoria dita librom',
+	'coll-add_category_tooltip' => 'Inayon amin dagiti pampanid iti daytoy a kategoria dita librom',
+	'coll-add_this_page' => 'Inaron daytoy a panid diat librom',
+	'coll-add_page_tooltip' => 'Inayon ti agdama a panid ti wiki dita librom',
+	'coll-bookscategory' => 'Dagiti libro',
+	'coll-clear_collection' => 'Dalusan ti libro',
+	'coll-clear_collection_confirm' => 'Kayatmo nga agpayso a dalusan ti librom?',
+	'coll-clear_collection_tooltip' => 'Ikkaten amin nga agdama a pampanid manipud dita agdama a librom',
+	'coll-help' => 'Tulong',
+	'coll-help_tooltip' => 'Agipakita ti tulong a maipanggep ti panagaramid ti liblibro',
+	'coll-helppage' => 'Help:Liblibro',
+	'coll-load_collection' => 'Ikarga ti libro',
+	'coll-load_collection_tooltip' => 'Ikarga daytoy a libro a kasla ti agdama a librom',
+	'coll-n_pages' => '$1 {{PLURAL:$1|panid|pampanid}}',
+	'coll-printable_version_pdf' => 'PDF a bersion',
+	'coll-remove_this_page' => 'Ikkaten daytoy a panid manipud idiay librom',
+	'coll-remove_page_tooltip' => 'Inayon ti agdama a panid ti wiki manipud idiay librom',
+	'coll-show_collection' => 'Iparang ti libro',
+	'coll-show_collection_tooltip' => 'Agtakla tapno maka-urnos/agkarga/agbilin ti librom',
+	'coll-not_addable' => 'Saan a mainayon daytoy a panid',
+	'coll-make_suggestions' => 'Agisingasing ti pampanid',
+	'coll-make_suggestions_tooltip' => 'Iparang dagiti naisingasing babaen kadagiti pampanid iti librom',
+	'coll-suggest_empty' => 'awan ti nagyan na',
+);
+
 /** Ingush (ГІалгІай Ğalğaj)
  * @author Amire80
  * @author Sapral Mikail
