@@ -141,8 +141,40 @@ $messages['af'] = array(
  * @author Juanpabl
  */
 $messages['an'] = array(
+	'coll-print_export' => 'Imprentar/exportar',
+	'coll-create_a_book' => 'Creyar un libro',
+	'coll-create_a_book_tooltip' => 'Creyar un libro u replega de pachinas',
+	'coll-book_creator' => 'Creyador de libros',
+	'coll-download_as' => 'Descargar como $1',
+	'coll-download_as_tooltip' => "Descargar una versión $1 d'ista pachina wiki",
+	'coll-disable' => 'Desactivar',
+	'coll-book_creator_disable' => 'Desactivar o creyador de libros',
+	'coll-book_creator_disable_tooltip' => "Deixar d'usar o creyador de libros",
+	'coll-add_linked_article' => 'Adhibir una pachina wiki vinculada a o tuyo libro',
+	'coll-remove_linked_article' => "Eliminar una pachina wiki vinculada d'o tuyo libro",
+	'coll-add_category' => 'Adhibir ista categoría a o tuyo libro',
+	'coll-add_category_tooltip' => 'Adhibir todas as pachinas wiki en ista categoría a o tuyo libro',
+	'coll-add_this_page' => 'Adhibir ista pachina a o suyo libro',
+	'coll-add_page_tooltip' => 'Adhibir a pachina wiki actual a o tuyo libro',
+	'coll-bookscategory' => 'Libros',
+	'coll-clear_collection' => 'Borrar libro',
+	'coll-clear_collection_confirm' => 'De verdat quiere borrar de tot iste libro?',
+	'coll-clear_collection_tooltip' => "Sacar todas as pachinas wiki d'o suyo libro actual",
 	'coll-help' => 'Aduya',
+	'coll-help_tooltip' => 'Amostrar aduya sobre a creyación de libros',
+	'coll-helppage' => 'Help:Libros',
+	'coll-load_collection' => 'Cargar libro',
+	'coll-load_collection_tooltip' => 'Cargar iste libro como o suyo libro actual',
 	'coll-n_pages' => '$1 {{PLURAL:$1|pachina|pachinas}}',
+	'coll-printable_version_pdf' => 'Versión PDF',
+	'coll-remove_this_page' => "Sacar ista pachina d'o suyo libro",
+	'coll-remove_page_tooltip' => "Sacar a pachina wiki actual d'o suyo libro",
+	'coll-show_collection' => 'Amostrar libro',
+	'coll-show_collection_tooltip' => 'Faiga click ta editar/descargar/encargar o suyo libro',
+	'coll-not_addable' => 'Ista pachina no se i puede adhibir',
+	'coll-make_suggestions' => 'Sucherir pachinas',
+	'coll-make_suggestions_tooltip' => "Amostrar sucherencias basadas en as pachinas d'o suyo libro",
+	'coll-suggest_empty' => 'vuedo',
 );
 
 /** Arabic (العربية)
@@ -3119,6 +3151,7 @@ $messages['roa-tara'] = array(
 	'coll-show_collection_tooltip' => "Cazze sus a cange/scareche/ordene 'u libbre tune",
 	'coll-not_addable' => 'Sta pàgene non ge se pò essere aggiunde',
 	'coll-make_suggestions' => 'Pàggene suggerite',
+	'coll-make_suggestions_tooltip' => "Fà vedè le suggereminde ca se basane sus a le pàggene d'u libbre tune",
 	'coll-suggest_empty' => 'vacande',
 );
 
