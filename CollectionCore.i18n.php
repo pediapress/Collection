@@ -1155,6 +1155,7 @@ $messages['eu'] = array(
  * @author Huji
  * @author Komeil 4life
  * @author Ladsgroup
+ * @author MehranVB
  * @author Wayiran
  * @author محک
  */
@@ -1174,7 +1175,7 @@ $messages['fa'] = array(
 	'coll-add_category_tooltip' => 'همهٔ صفحات ویکی در این رده را به کتابتان بیفزایید',
 	'coll-add_this_page' => 'این صفحه را به کتاب‌تان بیفزایید',
 	'coll-add_page_tooltip' => 'صفحهٔ فعلی ویکی به کتابتان اضافه شود',
-	'coll-bookscategory' => 'کتاب‌ها',
+	'coll-bookscategory' => 'کتاب‌های کاربران ویکی‌پدیا',
 	'coll-clear_collection' => 'پاک کردن کتاب',
 	'coll-clear_collection_confirm' => 'آیا واقعاً می‌خواهید که کتاب خود را به طور کامل پاک کنید؟',
 	'coll-clear_collection_tooltip' => 'همهٔ صفحات ویکی را از کتاب فعلیتان حذف کنید',
