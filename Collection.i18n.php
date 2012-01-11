@@ -5952,6 +5952,7 @@ Ti listaan ket maipabaro no agpatinayon ka nga agtakla iti agnayon wenno agikkat
 	'coll-suggest_your_book' => 'Ti librom',
 	'coll-suggest_show' => 'ipakita',
 	'coll-suggest_ban_tooltip' => 'Ikkaten daytoy a panid manipud dita listaan dagiti singasing',
+	'coll-suggest_article_ban' => 'Ti panid <strong>$1</strong> ket naikkaten manipud kadagiti naisingasing ($2).',
 	'coll-suggest_article_add' => 'Ti panid <strong>$1</strong> ket nainayonen dita librom ($2).',
 	'coll-suggest_article_remove' => 'Ti panid <strong>$1</strong> ket naikkaten manipud dita librom ($2).',
 	'coll-suggest_undo_tooltip' => 'Isubli daytoy nga aksion',
