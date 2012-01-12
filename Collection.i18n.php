@@ -2336,7 +2336,7 @@ Mae'r rhestr yn cael ei adnewyddu bob tro yr ydych yn pwyso ar y botymau ychwane
  */
 $messages['da'] = array(
 	'coll-desc' => '[[Special:Book|Skab bøger]]',
-	'coll-book_creator_intro' => '<big>Med bogværktøjslinien kan du oprette en bog, der indeholder valgfrie wiki-artikler. Du kan eksportere bogen i forskellige formater (fx PDF eller ODF) eller bestille et trykt eksemplar.</big>',
+	'coll-book_creator_intro' => '<big>Med bogværktøjslinien kan du oprette en bog, der indeholder valgfrie wikisider. Du kan eksportere bogen i forskellige formater (fx PDF eller ODF) eller bestille et trykt eksemplar.</big>',
 	'coll-manage_your_book' => 'Administrer din bog',
 	'coll-book_creator_help' => 'Se [[{{MediaWiki:Coll-helppage}}|hjælpesiden om bøger]] for mere information.',
 	'coll-start_book_creator' => 'Start bogværktøjslinien',
@@ -2350,9 +2350,9 @@ $messages['da'] = array(
 	'coll-print_template_pattern' => '$1/udskriv',
 	'coll-unknown_subpage_title' => 'Ukendt underside',
 	'coll-unknown_subpage_text' => 'Denne underside til [[Special:Book|Bog]] findes ikke',
-	'coll-couldnotaddarticle_title' => 'Kunne ikke tilføje wiki-artiklen',
+	'coll-couldnotaddarticle_title' => 'Kunne ikke tilføje wikisiden',
 	'coll-couldnotaddarticle_msg' => 'Wiki-siden kunne ikke tilføjes.',
-	'coll-couldnotremovearticle_title' => 'Kunne ikke fjerne wiki-artikel',
+	'coll-couldnotremovearticle_title' => 'Kunne ikke fjerne wikisiden',
 	'coll-couldnotremovearticle_msg' => 'Wiki-siden kunne ikke fjernes.',
 	'coll-noscript_text' => '<h1>JavaScript er påkrævet!</h1> 
 <strong>Din browser understøtter ikke JavaScript eller JavaScript er slået fra. 
@@ -2373,7 +2373,7 @@ Denne side vil ikke virke korrekt, medmindre JavaScript er aktiveret.</strong>',
 	'coll-title' => 'Titel:',
 	'coll-subtitle' => 'Undertitel:',
 	'coll-contents' => 'Indhold',
-	'coll-drag_and_drop' => 'Brug drag & drop for at ændre rækkefølgen på wiki-artikler og kapitler',
+	'coll-drag_and_drop' => 'Brug træk & slip for at ændre rækkefølgen på wikisider og kapitler',
 	'coll-create_chapter' => 'Opret kapitel',
 	'coll-sort_alphabetically' => 'Sorter alfabetisk',
 	'coll-rename' => 'Omdøb',
@@ -2417,7 +2417,7 @@ Der kan ikke tilføjes flere sider.',
 
 <p>Denne side skulle opdatere sig selv automatisk med få sekunders mellemrum. Hvis dette ikke virker, så tryk venligst på opdater-knappen i din browser.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
-	'coll-rendering_article' => '(wikiartikel: $1)',
+	'coll-rendering_article' => '(wikiside: $1)',
 	'coll-rendering_page' => '(side: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Skriver sideinformation',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Skriver information om samling',
