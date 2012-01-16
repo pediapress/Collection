@@ -416,9 +416,43 @@ $messages['bar'] = array(
 
 /** Belarusian (Беларуская)
  * @author Тест
+ * @author Хомелка
  */
 $messages['be'] = array(
+	'coll-print_export' => 'Друк/экспарт',
+	'coll-create_a_book' => 'Стварыць кнігу',
+	'coll-create_a_book_tooltip' => 'Стварыць кнігу альбо калекцыю артыкулаў',
+	'coll-book_creator' => 'Майстар стварэння кнігі',
+	'coll-download_as' => 'Загрузіць як $1',
+	'coll-download_as_tooltip' => 'Загрузіць версію $1 гэтай вікі-старонкі',
+	'coll-disable' => 'выключыць',
+	'coll-book_creator_disable' => 'Выключыць майстра стварэння кнігі',
+	'coll-book_creator_disable_tooltip' => 'Спыніць выкарыстанне майстра стварэння кнігі',
+	'coll-add_linked_article' => 'Дадаць звязаную вікі-старонку ў Вашу кнігу',
+	'coll-remove_linked_article' => 'Выдаліць звязаную вікі-старонку з Вашай кнігі',
+	'coll-add_category' => 'Дадаць гэтую катэгорыю ў Вашую кнігу',
+	'coll-add_category_tooltip' => 'Дадаць усе старонкі з гэтай катэгорыі ў Вашую кнігу',
+	'coll-add_this_page' => 'Дадаць гэтую старонку ў Вашую кнігу',
+	'coll-add_page_tooltip' => 'Дадаць цяперашнюю вікі-старонку ў Вашую кнігу',
+	'coll-bookscategory' => 'Кнігі',
+	'coll-clear_collection' => 'Ачысціць кнігу',
+	'coll-clear_collection_confirm' => 'Вы сапраўды жадаеце поўнасцю ачысціць Вашую кнігу?',
+	'coll-clear_collection_tooltip' => 'Выдаліць усе старонкі з Вашай цяперашняй кнігі',
 	'coll-help' => 'Даведка',
+	'coll-help_tooltip' => 'Паказаць дапамогу па стварэнню кніг',
+	'coll-helppage' => 'Help:Кнігі',
+	'coll-load_collection' => 'Загрузіць кнігу',
+	'coll-load_collection_tooltip' => 'Загрузіць гэтую кнігу як Вашую цяперашнюю кнігу',
+	'coll-n_pages' => '$1 {{PLURAL:$1|старонка|старонкі|старонак}}',
+	'coll-printable_version_pdf' => 'PDF-версія',
+	'coll-remove_this_page' => 'Выдаліць гэтую старонку з Вашай кнігі',
+	'coll-remove_page_tooltip' => 'Выдаліць цяперашнюю вікі-старонку з Вашай кнігі',
+	'coll-show_collection' => 'Паказаць кнігу',
+	'coll-show_collection_tooltip' => 'Націсніце для рэдагавання/загрузкі/заказу Вашай кнігі',
+	'coll-not_addable' => 'Гэтая старонка не можа быць дададзеная',
+	'coll-make_suggestions' => 'Прапанаваць старонкі',
+	'coll-make_suggestions_tooltip' => 'Паказаць прапановы заснаваныя на старонках у Вашай кнізе',
+	'coll-suggest_empty' => 'пуста',
 );
 
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
