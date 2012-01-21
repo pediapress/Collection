@@ -184,14 +184,15 @@ $messages['an'] = array(
  * @author OsamaK
  * @author Prof.Sherif
  * @author Samer
+ * @author زكريا
  */
 $messages['ar'] = array(
-	'coll-print_export' => 'اطبع/صدّر',
+	'coll-print_export' => 'طباعة وتصدير',
 	'coll-create_a_book' => 'إنشاء كتاب',
 	'coll-create_a_book_tooltip' => 'أنشئ كتابًا أو صفحة مجموعة',
 	'coll-book_creator' => 'منشئ الكتب',
-	'coll-download_as' => 'تحميل ك$1',
-	'coll-download_as_tooltip' => 'نزّل نسخة $1 من صفحة الويكي هذه.',
+	'coll-download_as' => 'تحميل ب$1',
+	'coll-download_as_tooltip' => 'تحميل نسخة $1 من صفحة الويكي هذه.',
 	'coll-disable' => 'عطّل',
 	'coll-book_creator_disable' => 'عطّل منشئ الكتب',
 	'coll-book_creator_disable_tooltip' => 'أوقف استخدام منشئ الكتب',
@@ -211,7 +212,7 @@ $messages['ar'] = array(
 	'coll-load_collection' => 'تحميل الكتاب',
 	'coll-load_collection_tooltip' => 'حمل هذا الكتاب ككتابك الحالي',
 	'coll-n_pages' => '{{PLURAL:$1||صفحة واحدة|صفحتان|$1 صفحات|$1 صفحة}}',
-	'coll-printable_version_pdf' => 'نسخة PDF',
+	'coll-printable_version_pdf' => 'نسخة صيغة المستندات المحمولة',
 	'coll-remove_this_page' => 'أزل هذه الصفحة من كتابك',
 	'coll-remove_page_tooltip' => 'أزل صفحة الويكي الحالية من كتابك',
 	'coll-show_collection' => 'عرض الكتاب',
@@ -1497,9 +1498,43 @@ $messages['gsw'] = array(
 
 /** Gujarati (ગુજરાતી)
  * @author Ashok modhvadia
+ * @author Dsvyas
  */
 $messages['gu'] = array(
+	'coll-print_export' => 'છાપો/નિકાસ',
+	'coll-create_a_book' => 'પુસ્તક બનાવો',
+	'coll-create_a_book_tooltip' => 'પુસ્તક અથવા પાનાં સંગ્રહ બનાવો',
+	'coll-book_creator' => 'પુસ્તક નિર્માતા',
 	'coll-download_as' => '$1 તરીકે ડાઉનલોડ કરો',
+	'coll-download_as_tooltip' => 'આ વિકિ પાનાની $1 આવૃત્તિ ડાઉનલોડ કરો',
+	'coll-disable' => 'નિષ્ક્રિય',
+	'coll-book_creator_disable' => 'પુસ્તક નિર્માતા નિષ્ક્રિય કરો',
+	'coll-book_creator_disable_tooltip' => 'પુસ્તક નિર્માતા વાપરવાનું બંધ કરો',
+	'coll-add_linked_article' => 'સંકળાયેલું વિકિ પાનું તમારા પુસ્તકમાં ઉમેરો',
+	'coll-remove_linked_article' => 'સંકળાયેલું વિકિ પાનું તમારા પુસ્તકમાંથી કાઢી નાંખો',
+	'coll-add_category' => 'આ શ્રેણી તમારા પુસ્તકમાં ઉમેરો',
+	'coll-add_category_tooltip' => 'આ શ્રેણીનાં બધા વિકિ પાનાં તમારા પુસ્તકમાં ઉમેરો',
+	'coll-add_this_page' => 'આ પાનું તમારા પુસ્તકમાં ઉમેરો',
+	'coll-add_page_tooltip' => 'આ પ્રસ્તુત વિકિ પાનું તમારા પુસ્તકમાં ઉમેરો',
+	'coll-bookscategory' => 'પુસ્તકો',
+	'coll-clear_collection' => 'પુસ્તક સાફ કરો',
+	'coll-clear_collection_confirm' => 'તમે ખરેખર તમારું પુસ્તક સંપૂર્ણપણે સાફ કરવા માંગો છો?',
+	'coll-clear_collection_tooltip' => 'તમારા પ્રસ્તુત પુસ્તકમાંથી બધા વિકિ પાનાં દૂર કરો',
+	'coll-help' => 'મદદ',
+	'coll-help_tooltip' => 'પુસ્તક બનાવવા વિષયક મદદ દર્શાવો',
+	'coll-helppage' => 'Help:પુસ્તકો',
+	'coll-load_collection' => 'પુસ્તક લાદો',
+	'coll-load_collection_tooltip' => 'આ પુસ્તકને તમારા પ્રસ્તુત તરીકે લાદો',
+	'coll-n_pages' => '$1 {{PLURAL:$1|પાનાં|પાનાંઓ}}',
+	'coll-printable_version_pdf' => 'PDF સંસ્કરણ',
+	'coll-remove_this_page' => 'આ પાનું તમારા પુસ્તકમાંથી કાઢી નાખો',
+	'coll-remove_page_tooltip' => 'પ્રસ્તુત વિકિ પાનું તમારા પુસ્તકમાંથી કાઢી નાંખો',
+	'coll-show_collection' => 'પુસ્તક બતાવો',
+	'coll-show_collection_tooltip' => 'તમારા પુસ્તકમાં ફેરફાર/ડાઉનલોડ/ફરમાયશ કરવા ક્લિક કરો',
+	'coll-not_addable' => 'આ પાનું ઉમેરી શકાશે નહી',
+	'coll-make_suggestions' => 'પાનાં સુચવો',
+	'coll-make_suggestions_tooltip' => 'તમારા પુસ્તકમાં રહેલા પાનાંને આધારે સુઝાવ બતાવો',
+	'coll-suggest_empty' => 'ખાલી',
 );
 
 /** Manx (Gaelg)
