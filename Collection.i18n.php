@@ -4843,8 +4843,12 @@ $messages['gu'] = array(
 	'coll-save_category' => 'સાચવેલા બધા પુસ્તકો શ્રેણી [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]માં ઉમેરવામાં આવે છે',
 	'coll-overwrite_title' => 'પાનું અસ્તિત્વમાં છે.
 જૂનું ભૂંસી નવું લખાણ સાચવવું છે?',
+	'coll-overwrite_text' => '[[:$1]] નામ વાળું પાનું પહેલેથી અસ્તિત્વમાં છે.
+તેની જગ્યાએ તમે તમારું પુસ્તક સાચવવા માંગો છો?',
 	'coll-yes' => 'હા',
 	'coll-no' => 'ના',
+	'coll-load_overwrite_text' => 'તમારા પુસ્તકમાં પહેલેથી જ અમુક પાનાં છે.
+તમે તમારા પુસ્તકનાં જૂના પાનાંને બદલે નવાં ઉમેરવા ચાહો છો કે નવી માહિતી ઉમેરવા માંગો છો? કે પછી આ પુસ્તક લાદવાનું માંડી વાળવું છે?',
 	'coll-overwrite' => 'જૂનું ભૂંસી નવું લખો',
 	'coll-append' => 'ઉમેરણ',
 	'coll-cancel' => 'રદ કરો',
@@ -4853,30 +4857,66 @@ $messages['gu'] = array(
 	'coll-limit_exceeded_text' => 'પુસ્તક ઘણું મોટું થઈ ગયું છે.
 એક પણ વધુ પાનું ઉમેરી શકાશે નહી.',
 	'coll-rendering_title' => 'ચિત્રણ',
+	'coll-rendering_text' => '<p><strong>દસ્તાવેજ તૈયાર થાય ત્યાં સુધી રાહ જુઓ.</strong></p>
+
+<p><strong>પ્રગતિ:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>આ પાનું અમુક પળો બાદ આપોઆપ તાજું કરવામાં આવશે.
+જો તેમ ના થાય તો તમારા બ્રાઉઝરનું રિફ્રેશ બટન ક્લિક કરો.</p>',
 	'coll-rendering_status' => '<strong>સ્થિતિ:</strong> $1',
 	'coll-rendering_article' => '(વિકિ પૃષ્ઠ: $1)',
 	'coll-rendering_page' => '(પૃષ્ઠ: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendering page info text',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendering collection info text',
 	'coll-rendering_finished_title' => 'ચિત્રણ સંપૂર્ણ',
+	'coll-rendering_finished_text' => '<strong>દસ્તાવેજ ફાઇલ તૈયાર છે.</strong>
+તમારા કમ્પ્યૂટર પર <strong>[$1 ફાઇલ ડાઉનલોડ કરો]</strong>.
+
+નોંધ:
+* પરિણામથી સંતુષ્ટ નથી? ગુણવત્તા સુધારવાની શક્યતાઓ માટે [[{{MediaWiki:Coll-helppage}}|પુસ્તક માટેની મદદનું પાનું]] જુઓ.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendering page info text',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Rendering collection info text',
 	'coll-notfound_title' => 'પુસ્તક મળ્યું નથી',
 	'coll-notfound_text' => 'પુસ્તકનું પાનું મળી શક્યું નથી.',
 	'coll-download_notfound_title' => 'ફાઇલ મળી નથી',
+	'coll-download_notfound_text' => 'તમે જે ફાઇલ ડાઉનલોડ કરવા માંગો છો તે અસ્તિત્વમાં નથી:
+કદાચ તે દૂર કરવામાં આવી છે અને તેને નવેસરથી બનાવવાની જરૂર છે.',
 	'coll-download_failed_title' => 'ડાઉનલોડ દરમ્યાન ત્રુટિ',
+	'coll-download_failed_text' => 'ફાઇલ $1 ડાઉનલોડ કરતાં ત્રુટિ ઉદ્ભવી છે',
+	'coll-is_cached' => '<ul><li>A cached version of the document has been found, so no rendering was necessary.
+<a href="$1">Force re-rendering.</a></li></ul>',
+	'coll-excluded-templates' => '[[:Category:$1|$1]]માં રહેલા ઢાંચાઓ બાકાત રાખવામાં આવ્યાં છે.',
+	'coll-blacklisted-templates' => 'બ્લેકલિસ્ટ [[:$1]]માંના ઢાંચાઓ બાકાત રાખવામાં આવ્યા છે.',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a> પર પાછા જાવ</p>',
+	'coll-book_title' => 'છાપેલા પુસ્તકની ફરમાયશ કરો',
+	'coll-book_text' => 'અમારા પ્રિન્ટ-ઓન-ડિમાન્ડ (આવશ્યકતા સમયે છાપી આપતા) ભાગીદાર પાસેથી પુસ્તક છપાવો',
+	'coll-order_from_pp' => '$1માં ઝલક બતાવો',
 	'coll-about_pp' => '$1 વિષે',
 	'coll-invalid_podpartner_title' => 'Invalid POD partner',
+	'coll-invalid_podpartner_msg' => 'પસંદ કરેલ POD ભાગીદાર અમાન્ય છે.
+તમારા મીડિયાવિકિ પ્રબંધકનો સંપર્ક કરો.',
 	'coll-license' => 'પરવાનો',
 	'coll-return_to' => '[[:$1]] પર પાછા વળો',
 	'coll-more_info' => 'વધુ માહિતી બતાવો',
 	'coll-hide_info' => 'માહિતી છુપાવો',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/પીડિયાપ્રેસ ફરમાયશ માહિતી',
+	'coll-suggest_title' => 'તમારા પુસ્તક માટે પાનાંના સુઝાવ',
+	'coll-suggest_intro_text' => 'સુઝાવો તમારા પુસ્તકમાં હાલમાં રહેલા વિકિ પૃષ્ઠોને આધારે કરવામાં આવ્યાં છે.
+જ્યારે જ્યારે તમે ઉમેરો કે કાઢી નાંખો બટન પર ક્લિક કરશો ત્યારે ત્યારે આ યાદી બદલાતી જશે.',
 	'coll-suggested_articles' => 'સુઝાવ',
 	'coll-suggest_reset_bans' => 'reset',
+	'coll-suggest_reset_bans_tooltip' => 'પહેલા કાઢી નાંખેલા પાનાં બતાવો',
 	'coll-suggest_add_selected' => 'પસંદ કરેલાં પાનાં ઉમેરો',
 	'coll-suggest_ban_selected' => 'પસંદ કરેલાં પાનાં કાઢી નાંખો',
 	'coll-suggest_your_book' => 'તમારૂં પુસ્તક',
 	'coll-suggest_show' => 'બતાવો',
+	'coll-suggest_ban_tooltip' => 'સુઝાવોમાંથી આ પાનું કાઢી નાંખો',
+	'coll-suggest_article_ban' => 'સુઝાવોમાંથી પાનું <strong>$1</strong> દૂર કરવામાં આવ્યું છે ($2).',
+	'coll-suggest_article_add' => 'તમારા પુસ્તકમાં પાનું <strong>$1</strong> ઉમેરવામાં આવ્યું છે ($2).',
+	'coll-suggest_article_remove' => 'પાનું <strong>$1</strong> તમારા પુસ્તકમાંથી દૂર કરવામાં આવ્યું છે ($2).',
 	'coll-suggest_undo_tooltip' => 'આ ક્રિયા રદ કરો',
 	'coll-suggest_undo' => 'undo',
+	'coll-load_local_book' => 'તમારા પુસ્તક %TITLE% જેમાં %NUMPAGES% પાન છે તેની સાથે આગળ વધવા માટે OK પર ક્લિક કરો. તેને દૂર કરીને નવેસરથી શરૂઆત કરવા માટે Cancel પર ક્લિક કરો.',
 	'right-collectionsaveasuserpage' => 'પુસ્તકોને સભ્યના પાનાં તરીકે સાચવો',
 	'right-collectionsaveascommunitypage' => 'પુસ્તકોને સમાજ પૃષ્ઠ તરીકે સાચવો',
 );
