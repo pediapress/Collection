@@ -1499,6 +1499,7 @@ $messages['gsw'] = array(
 /** Gujarati (ગુજરાતી)
  * @author Ashok modhvadia
  * @author Dsvyas
+ * @author Sushant savla
  */
 $messages['gu'] = array(
 	'coll-print_export' => 'છાપો/નિકાસ',
@@ -1522,10 +1523,10 @@ $messages['gu'] = array(
 	'coll-clear_collection_tooltip' => 'તમારા પ્રસ્તુત પુસ્તકમાંથી બધા વિકિ પાનાં દૂર કરો',
 	'coll-help' => 'મદદ',
 	'coll-help_tooltip' => 'પુસ્તક બનાવવા વિષયક મદદ દર્શાવો',
-	'coll-helppage' => 'Help:પુસ્તકો',
+	'coll-helppage' => 'મદદ:પુસ્તકો',
 	'coll-load_collection' => 'પુસ્તક લાદો',
 	'coll-load_collection_tooltip' => 'આ પુસ્તકને તમારા પ્રસ્તુત તરીકે લાદો',
-	'coll-n_pages' => '$1 {{PLURAL:$1|પાનાં|પાનાંઓ}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|પાનું|પાના}}',
 	'coll-printable_version_pdf' => 'PDF સંસ્કરણ',
 	'coll-remove_this_page' => 'આ પાનું તમારા પુસ્તકમાંથી કાઢી નાખો',
 	'coll-remove_page_tooltip' => 'પ્રસ્તુત વિકિ પાનું તમારા પુસ્તકમાંથી કાઢી નાંખો',
