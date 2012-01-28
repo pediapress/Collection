@@ -1213,7 +1213,7 @@ class SpecialCollection extends SpecialPage {
 			$wgOut->showErrorPage(
 				'coll-post_failed_title',
 				'coll-post_failed_msg',
-				array( $wgCollectionMWServeURL )
+				array( $serveURL )
 			);
 			return false;
 		}
