@@ -9210,6 +9210,8 @@ $messages['pdc'] = array(
 	'coll-return_to' => 'Zerick zu [[:$1]]',
 	'coll-suggest_your_book' => 'Dei Buch',
 	'coll-suggest_show' => 'zeige',
+	'coll-suggest_undo_tooltip' => 'Die Aktion losmache',
+	'coll-suggest_undo' => 'losmache',
 );
 
 /** Polish (Polski)
