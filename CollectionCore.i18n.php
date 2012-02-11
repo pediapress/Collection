@@ -4284,6 +4284,7 @@ $messages['zh-hans'] = array(
  * @author Alexsh
  * @author Anakmalaysia
  * @author Liangent
+ * @author Oapbtommy
  * @author Xiaomingyan
  */
 $messages['zh-hant'] = array(
@@ -4306,7 +4307,7 @@ $messages['zh-hant'] = array(
 	'coll-clear_collection' => '清除記錄',
 	'coll-clear_collection_confirm' => '真的要完全清除？',
 	'coll-clear_collection_tooltip' => '從您目前的圖書中移除所有維基頁面',
-	'coll-help' => '幫助',
+	'coll-help' => '說明',
 	'coll-help_tooltip' => '顯示關於建立圖書的說明',
 	'coll-helppage' => 'Help:圖書',
 	'coll-load_collection' => '載入圖書',
