@@ -1606,7 +1606,7 @@ JavaScript সক্রিয় না করা পর্যন্ত, এই 
 	'coll-savedbook_template' => 'সংরক্ষিত_বই',
 	'coll-your_book' => 'আপনার বই',
 	'coll-download_title' => 'ডাউনলোড',
-	'coll-download_text' => 'বই ডাউনলোড করতে ফরমেট পছন্দ করুন এবং বোতামে ক্লিক করুন।',
+	'coll-download_text' => 'বই ডাউনলোড করতে ফরম্যাট  পছন্দ করুন এবং বোতামে ক্লিক করুন।',
 	'coll-download_as_text' => '$1 ফরম্যাটে আপনার বইটি ডাউনলোড করতে বোতামটি ক্লিক করুন।',
 	'coll-download' => 'ডাউনলোড',
 	'coll-format_label' => 'বিন্যাস/ফরম্যাট:',
