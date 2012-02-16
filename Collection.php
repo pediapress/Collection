@@ -192,13 +192,12 @@ $wgResourceModules += array(
 # register global Ajax functions:
 
 function wfAjaxGetCollection() {
-	$json = new Services_JSON();
 	if ( isset( $_SESSION['wsCollection'] ) ) {
 		$collection = $_SESSION['wsCollection'];
 	} else {
 		$collection = array();
 	}
-	$r = new AjaxResponse( $json->encode( array( 'collection' => $collection ) ) );
+	$r = new AjaxResponse( FormatJson::encode( array( 'collection' => $collection ) ) );
 	$r->setContentType( 'application/json' );
 	return $r;
 }
@@ -231,7 +230,6 @@ function wfAjaxPostCollection( $collection = '', $redirect = '' ) {
 $wgAjaxExportList[] = 'wfAjaxPostCollection';
 
 function wfAjaxGetMWServeStatus( $collection_id = '', $writer = 'rl' ) {
-	$json = new Services_JSON();
 	$result = SpecialCollection::mwServeCommand( 'render_status', array(
 		'collection_id' => $collection_id,
 		'writer' => $writer
@@ -239,7 +237,7 @@ function wfAjaxGetMWServeStatus( $collection_id = '', $writer = 'rl' ) {
 	if ( isset( $result['status']['progress'] ) ) {
 		$result['status']['progress'] = number_format( $result['status']['progress'], 2, '.', '' );
 	}
-	$r = new AjaxResponse( $json->encode( $result ) );
+	$r = new AjaxResponse( FormatJson::encode( $result ) );
 	$r->setContentType( 'application/json' );
 	return $r;
 }
@@ -282,10 +280,9 @@ function wfAjaxCollectionGetBookCreatorBoxContent( $ajaxHint = '', $oldid = null
 
 	$html = CollectionHooks::getBookCreatorBoxContent( $title, $ajaxHint, $oldid );
 
-	$json = new Services_JSON();
 	$result = array();
 	$result['html'] = $html;
-	$r = new AjaxResponse( $json->encode( $result ) );
+	$r = new AjaxResponse( FormatJson::encode( $result ) );
 	$r->setContentType( 'application/json' );
 	return $r;
 }
@@ -303,11 +300,10 @@ function wfAjaxCollectionGetItemList() {
 	$html = ob_get_contents();
 	ob_end_clean();
 
-	$json = new Services_JSON();
 	$result = array();
 	$result['html'] = $html;
 	$result['collection'] = $collection;
-	$r = new AjaxResponse( $json->encode( $result ) );
+	$r = new AjaxResponse( FormatJson::encode( $result ) );
 	$r->setContentType( 'application/json' );
 	return $r;
 }
@@ -368,7 +364,6 @@ $wgAjaxExportList[] = 'wfAjaxCollectionClear';
 function wfAjaxCollectionGetPopupData( $title ) {
 	global $wgScriptPath;
 
-	$json = new Services_JSON();
 	$result = array();
 	$imagePath = "$wgScriptPath/extensions/Collection/images";
 	$t = Title::newFromText( $title );
@@ -389,7 +384,7 @@ function wfAjaxCollectionGetPopupData( $title ) {
 		$result['img'] = "$imagePath/silk-remove.png";
 	}
 	$result['title'] = $title;
-	$r = new AjaxResponse( $json->encode( $result ) );
+	$r = new AjaxResponse( FormatJson::encode( $result ) );
 	$r->setContentType( 'application/json' );
 	return $r;
 }
@@ -403,7 +398,6 @@ $wgAjaxExportList[] = 'wfAjaxCollectionGetPopupData';
  * @return AjaxResponse with JSON-encoded array including HTML fragment.
  */
 function wfCollectionSuggestAction( $action, $article ) {
-	$json = new Services_JSON();
 	$result = CollectionSuggest::refresh( $action, $article );
 	$undoLink = Xml::element( 'a',
 		array(
@@ -423,7 +417,7 @@ function wfCollectionSuggestAction( $action, $article ) {
 		$undoLink
 	);
 	$result['collection'] = CollectionSession::getCollection();
-	$r = new AjaxResponse( $json->encode( $result ) );
+	$r = new AjaxResponse( FormatJson::encode( $result ) );
 	$r->setContentType( 'application/json' );
 	return $r;
 }
