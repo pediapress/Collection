@@ -1190,14 +1190,15 @@ $messages['eu'] = array(
  * @author Huji
  * @author Komeil 4life
  * @author Ladsgroup
+ * @author Mehran
  * @author MehranVB
  * @author Wayiran
  * @author محک
  */
 $messages['fa'] = array(
-	'coll-print_export' => 'چاپ/برون‌ریزی',
+	'coll-print_export' => 'چاپ/برون‌بری',
 	'coll-create_a_book' => 'ایجاد کتاب',
-	'coll-create_a_book_tooltip' => 'یک کتاب یا مجموعه صفحات ایجاد کن',
+	'coll-create_a_book_tooltip' => 'یک کتاب یا مجموعه‌ای از صفحه‌ها ایجاد کن',
 	'coll-book_creator' => 'کتاب‌ساز',
 	'coll-download_as' => 'بارگیری به‌صورت $1',
 	'coll-download_as_tooltip' => 'یک نسخهٔ $1 از این صفحهٔ ویکی را بارگیری کن',
@@ -1207,13 +1208,13 @@ $messages['fa'] = array(
 	'coll-add_linked_article' => 'صفحهٔ ویکی پیونددهی‌شده را به کتابتان اضافه کنید',
 	'coll-remove_linked_article' => 'صفحهٔ ویکی پیونددهی‌شده را از کتابتان حذف کنید',
 	'coll-add_category' => 'این رده را به کتابتان بیفزایید',
-	'coll-add_category_tooltip' => 'همهٔ صفحات ویکی در این رده را به کتابتان بیفزایید',
+	'coll-add_category_tooltip' => 'همهٔ صفحه‌های ویکی در این رده را به کتابتان بیفزایید',
 	'coll-add_this_page' => 'این صفحه را به کتاب‌تان بیفزایید',
 	'coll-add_page_tooltip' => 'صفحهٔ فعلی ویکی به کتابتان اضافه شود',
 	'coll-bookscategory' => 'کتاب‌های کاربران ویکی‌پدیا',
 	'coll-clear_collection' => 'پاک کردن کتاب',
 	'coll-clear_collection_confirm' => 'آیا واقعاً می‌خواهید که کتاب خود را به طور کامل پاک کنید؟',
-	'coll-clear_collection_tooltip' => 'همهٔ صفحات ویکی را از کتاب فعلیتان حذف کنید',
+	'coll-clear_collection_tooltip' => 'همهٔ صفحه‌های ویکی را از کتاب فعلی‌تان حذف کنید',
 	'coll-help' => 'راهنما',
 	'coll-help_tooltip' => 'راهنمای ایجاد کتاب‌ها را نشان بده',
 	'coll-helppage' => 'Help:کتاب‌ها',
@@ -1226,8 +1227,8 @@ $messages['fa'] = array(
 	'coll-show_collection' => 'نمایش کتاب',
 	'coll-show_collection_tooltip' => 'برای ویرایش/بارگیری/سفارش کتاب خود کلیک کنید',
 	'coll-not_addable' => 'این صفحه نمی‌تواند اضافه شود',
-	'coll-make_suggestions' => 'پیشنهاد صفحات',
-	'coll-make_suggestions_tooltip' => 'نمایش پیشنهادات را بر پایهٔ صفحات کتابتان',
+	'coll-make_suggestions' => 'صفحه پیشنهاد کن',
+	'coll-make_suggestions_tooltip' => 'با توجه به صفحه‌های کتاب پیشنهادهایی نمایش بده',
 	'coll-suggest_empty' => 'خالی',
 );
 
@@ -2606,10 +2607,11 @@ $messages['myv'] = array(
 );
 
 /** Mazanderani (مازِرونی)
+ * @author Huji
  * @author محک
  */
 $messages['mzn'] = array(
-	'coll-print_export' => 'پرینت/برون‌ریزی',
+	'coll-print_export' => 'چاپ/برون‌بری',
 	'coll-create_a_book' => 'کتاب بساتن',
 	'coll-create_a_book_tooltip' => 'یتّا کتاب یا مجموعه صفحات بساج',
 	'coll-clear_collection' => 'پاک هاکردن کتاب',
