@@ -2624,7 +2624,7 @@ Listen opdateres når du klikker på tilføj- eller fjernknapperne.',
  * @author VolkerHaas
  */
 $messages['de'] = array(
-	'coll-desc' => 'Ermöglicht eine [[Special:Book|Spezialseite]] zum Erstellen von Büchern',
+	'coll-desc' => 'Ergänzt eine [[Special:Book|Spezialseite]] zum Erstellen von Büchern',
 	'coll-book_creator_intro' => "<big>Mit der ''Buchfunktion'' kannst du ein Buch aus beliebigen Wikiseiten erstellen.
 Du kannst das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.</big>",
 	'coll-manage_your_book' => 'Dein Buch verwalten',
