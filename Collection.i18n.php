@@ -8008,6 +8008,7 @@ $messages['mn'] = array(
  * @author Mahitgar
  * @author Prabodh1987
  * @author Rahuldeshmukh101
+ * @author Shantanoo
  * @author Sudhanwa
  */
 $messages['mr'] = array(
@@ -8129,6 +8130,8 @@ Notes:
 	'coll-hide_info' => 'माहिती लपवा',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/ पिडिया मुद्रणालयाकडे मागणी नोंदवण्याची माहिती',
 	'coll-suggest_title' => 'आपल्या ग्रंथासाठी सुचवलेली पाने',
+	'coll-suggest_intro_text' => 'सुचवणी आपल्या ग्रंथातील सध्याच्या विकि पानांच्या संग्रहावर आधारित आहे. 
+ज्यावेळी आपण वाढवा अथवा वगळा कळ दाबाल, त्यावेळेस यादी अद्ययावत करण्यात येईल.',
 	'coll-suggested_articles' => 'सूचना',
 	'coll-suggest_reset_bans' => 'पूर्ववत करा',
 	'coll-suggest_reset_bans_tooltip' => 'मागील वगळलेल्या सूचना दाखवा',
