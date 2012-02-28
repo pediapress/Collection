@@ -555,6 +555,9 @@ class SpecialCollection extends SpecialPage {
 		}
 		$collection = CollectionSession::getCollection();
 		$revision = Revision::newFromTitle( $title, $oldid );
+		if ( !$revision ) {
+			return false;
+		}
 
 		$item = array(
 			'type' => 'article',
