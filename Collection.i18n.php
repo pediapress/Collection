@@ -3483,7 +3483,7 @@ Esta página no funcionará correctamente mientras no esté habilitado.</strong>
 	'coll-no' => 'No',
 	'coll-load_overwrite_text' => 'Ya tienes algunas páginas en tu libro.
 ¿Quieres sobreescribir tu libro actual, añadir el nuevo contenido o cancelar la carga de este libro?',
-	'coll-overwrite' => 'Sobrescribir',
+	'coll-overwrite' => 'Sobreescribir',
 	'coll-append' => 'Anexar',
 	'coll-cancel' => 'Cancelar',
 	'coll-update' => 'Actualizar',
