@@ -1145,7 +1145,7 @@ class SpecialCollection extends SpecialPage {
 		}
 
 		$revision = Revision::newFromTitle( $title, $oldid );
-		if ( $title ) {
+		if ( $revision ) {
 			$article['timestamp'] = wfTimestamp( TS_UNIX, $revision->getTimestamp() );
 		}
 
