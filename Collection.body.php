@@ -28,6 +28,7 @@ class SpecialCollection extends SpecialPage {
 			'posturl' => 'http://pediapress.com/api/collections/',
 		),
 	);
+	var $tempfile;
 
 	public function __construct() {
 		parent::__construct( "Book" );
@@ -1076,7 +1077,7 @@ class SpecialCollection extends SpecialPage {
 	function download() {
 		global $wgOut, $wgRequest, $wgCollectionContentTypeToFilename;
 
-		$tempfile = tmpfile();
+		$this->tempfile = tmpfile();
 		$r = self::mwServeCommand( 'render_status', array(
 			'collection_id' => $wgRequest->getVal( 'collection_id' ),
 			'writer' => $wgRequest->getVal( 'writer' ),
@@ -1084,9 +1085,9 @@ class SpecialCollection extends SpecialPage {
 
 		$info = false;
 		if ( isset( $r['url'] ) ) {
-			$result = Http::get( $r['url'] );
-			if ($result) {
-				fwrite($tempfile, $result);
+			$req = MWHttpRequest::factory( $r['url'] );
+			$req->setCallback( array( $this, 'writeToTempFile' ) );
+			if ( $req->execute()->isOK() ) {
 				$info = true;
 			}
 			$content_type = $r['content_type'];
@@ -1117,9 +1118,13 @@ class SpecialCollection extends SpecialPage {
 				header( 'Content-Disposition: ' . 'inline; filename=' . $wgCollectionContentTypeToFilename[$ct] );
 			}
 		}
-		fseek( $tempfile, 0 );
-		fpassthru( $tempfile );
+		fseek( $this->tempfile, 0 );
+		fpassthru( $this->tempfile );
 		$wgOut->disable();
+	}
+
+	function writeToTempFile( $res, $content ) {
+		return fwrite( $this->tempfile, $content );
 	}
 
 	/**
