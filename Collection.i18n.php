@@ -10293,6 +10293,7 @@ Non ge puè sckaffà cchiù otre pàgene.",
  * @author EugeneZelenko
  * @author Ferrer
  * @author Innv
+ * @author KPu3uC B Poccuu
  * @author Kaganer
  * @author Lockal
  * @author MaxSem
@@ -10389,7 +10390,7 @@ $messages['ru'] = array(
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Отрисовка текста сведений о коллекции',
 	'coll-rendering_finished_title' => 'Отрисовка завершена',
 	'coll-rendering_finished_text' => '<strong>Файл документа создан.</strong>
-<strong>[$1 Скачать файл]</strong> на свой компьютер.
+<strong>[$1 Загрузить файл]</strong> на свой компьютер.
 
 Замечания:
 * Не удовлетворены результатом? Возможности его улучшения описаны на [[{{MediaWiki:Coll-helppage}}|справочной странице о книгах]].',
