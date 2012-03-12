@@ -2759,6 +2759,7 @@ $messages['nl'] = array(
  * @author Eirik
  * @author Gunnernett
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'coll-print_export' => 'Skriv ut / eksporter',
@@ -2770,9 +2771,9 @@ $messages['nn'] = array(
 	'coll-disable' => 'slå av',
 	'coll-book_creator_disable' => 'Slå av funksjonen for å laga bok',
 	'coll-book_creator_disable_tooltip' => 'Stopp å bruka funksjonen for å laga bok',
-	'coll-add_category' => 'Legg til denne kategorien i boka di',
-	'coll-add_category_tooltip' => 'Legg til alle sidene i denne kategorien til boka di',
-	'coll-add_this_page' => 'Legg til denne sida i boka di',
+	'coll-add_category' => 'Legg til kategorien i boka di',
+	'coll-add_category_tooltip' => 'Legg til alle sidene i kategorien til boka di',
+	'coll-add_this_page' => 'Legg til sida i boka di',
 	'coll-add_page_tooltip' => 'Legg til den noverande wikisida til boka di',
 	'coll-bookscategory' => 'Bøker',
 	'coll-clear_collection' => 'Tøm bok',
@@ -2785,7 +2786,7 @@ $messages['nn'] = array(
 	'coll-load_collection_tooltip' => 'Last denne boka som den noverande boka di',
 	'coll-n_pages' => '{{PLURAL:$1|éi sida|$1 sider}}',
 	'coll-printable_version_pdf' => 'PDF-versjon',
-	'coll-remove_this_page' => 'Fjern denne sida frå boka di',
+	'coll-remove_this_page' => 'Fjern sida frå boka di',
 	'coll-remove_page_tooltip' => 'Fjern den noverande wikisida frå boka di',
 	'coll-show_collection' => 'Vis bok',
 	'coll-show_collection_tooltip' => 'Trykk for å endra/lasta ned/tinga boka di',
@@ -3496,6 +3497,15 @@ $messages['sl'] = array(
 	'coll-make_suggestions' => 'Predlagaj strani',
 	'coll-make_suggestions_tooltip' => 'Prikaži predloge glede na strani v vaši knjigi',
 	'coll-suggest_empty' => 'prazno',
+);
+
+/** Albanian (Shqip)
+ * @author Olsi
+ */
+$messages['sq'] = array(
+	'coll-print_export' => 'Printo/eksporto',
+	'coll-create_a_book' => 'Krijo një libër',
+	'coll-download_as' => 'Shkarkoje si $1',
 );
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
