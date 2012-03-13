@@ -148,9 +148,15 @@
 }
 
 #collection-suggest-add,
-#collection-order-button,
 #collection-download-button,
 #collection-save-button,
 #collection-save-input {
 	float: right;
+}
+.collection-order-button {
+	clear: right;
+}
+	
+#coll-orderbox ul {
+	list-style: none;
 }

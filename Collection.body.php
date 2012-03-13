@@ -21,17 +21,16 @@
  */
 
 class SpecialCollection extends SpecialPage {
-	var $mPODPartners = array(
-		'pediapress' => array(
-			'name' => 'PediaPress',
-			'url' => 'http://pediapress.com/',
-			'posturl' => 'http://pediapress.com/api/collections/',
-		),
-	);
 	var $tempfile;
 
-	public function __construct() {
+	public function __construct( $PODPartners = false ) {
 		parent::__construct( "Book" );
+		global $wgCollectionPODPartners;
+		if ( $PODPartners ) {
+			$this->mPODPartners = $PODpartners;
+		} else {
+			$this->mPODPartners = $wgCollectionPODPartners;
+		}
 	}
 
 	function getDescription() {
@@ -1212,8 +1211,10 @@ class SpecialCollection extends SpecialPage {
 		global $wgOut, $wgCollectionMWServeURL, $wgCollectionMWServeCredentials, $wgCollectionFormatToServeURL;
 
 		$serveURL = $wgCollectionMWServeURL;
-		if ( array_key_exists( $args['writer'], $wgCollectionFormatToServeURL ) )
-			$serveURL = $wgCollectionFormatToServeURL[ $args['writer'] ];
+		if ( isset ( $args['writer'] ) ) {
+			if ( array_key_exists( $args['writer'], $wgCollectionFormatToServeURL ) )
+				$serveURL = $wgCollectionFormatToServeURL[ $args['writer'] ];
+		}
 
 		$args['command'] = $command;
 		if ( $wgCollectionMWServeCredentials ) {

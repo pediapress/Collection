@@ -209,6 +209,32 @@ Installation and Configuration of the Collection Extension
    that each article contains the name of the license and set $wgCollectionLicenseURL
    to an article that contains all needed licenses.
 
+  *$wgCollectionPODPartners (array)* 
+   Array of parameters needed to define print on demand providers:
+
+	$wgCollectionPODPartners = array(
+		'pediapress' => array(
+			'name' => 'PediaPress',
+			'url' => 'http://pediapress.com/',
+			'posturl' => 'http://pediapress.com/api/collections/',
+			'infopagetitle' => 'coll-order_info_article',
+		),
+	);
+
+   (This is the default.)
+
+   'name', 'url' and 'posturl' are mandatory parameters to display
+   information on the list of available providers.
+
+   If 'infopagetitle' is present, it will be interpreted as the MediaWiki
+   message that contains the name of the short information on particular
+   provider. For example, it can be 'coll-order_info_mypress' and
+   if the message contains "Help:Books/MyPress order information", a contents
+   of this page will be used. The message itself can be localized for different languages.
+
+   Setting $wgCollectionPODPartners to false disables ordering interface
+   altogether.
+
 * If you want to let users save their collections as wiki pages, make sure
   $wgEnableWriteAPI is set to true, i.e. put this line in your LocalSettings.php::
 
@@ -302,7 +328,9 @@ system message.
 	The default is: '1', i.e. the suggestion tool is enabled.
 
 * Coll-order_info_article: The name of a wiki page which is included on the
-  Special:Book page to show order information for printed books.
+  Special:Book page to show order information for printed books for the
+  default service provider, PediaPress. Other providers can have the name
+  of the information page configured via the $wgCollectionPODPartners array.
 	The default value is: {{MediaWiki:Coll-helppage}}/PediaPress order information
 	i.e. a subpage of the configured help page named "PediaPress order information".
 
