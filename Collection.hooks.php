@@ -234,10 +234,9 @@ class CollectionHooks {
 	static function renderBookCreatorBox( $title, $mode = '' ) {
 		global $wgCollectionStyleVersion;
 		global $wgOut;
-		global $wgScriptPath;
 		global $wgRequest;
 
-		$imagePath = "$wgScriptPath/extensions/Collection/images";
+		$imagePath = SpecialCollection::getMediaPath();
 		$ptext = $title->getPrefixedText();
 		$oldid = $wgRequest->getVal( 'oldid', 0 );
 		if ( $oldid == $title->getLatestRevID() ) {
@@ -318,9 +317,7 @@ class CollectionHooks {
 	}
 
 	static function getBookCreatorBoxContent( $title, $ajaxHint = null, $oldid = null ) {
-		global $wgScriptPath;
-
-		$imagePath = "$wgScriptPath/extensions/Collection/images";
+		$imagePath = SpecialCollection::getMediaPath();
 
 		return self::getBookCreatorBoxAddRemoveLink( $imagePath, $ajaxHint, $title, $oldid )
 			. self::getBookCreatorBoxShowBookLink( $imagePath, $ajaxHint )

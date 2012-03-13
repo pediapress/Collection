@@ -370,10 +370,8 @@ function wfAjaxCollectionClear() {
 $wgAjaxExportList[] = 'wfAjaxCollectionClear';
 
 function wfAjaxCollectionGetPopupData( $title ) {
-	global $wgScriptPath;
-
 	$result = array();
-	$imagePath = "$wgScriptPath/extensions/Collection/images";
+	$imagePath = SpecialCollection::getMediaPath();
 	$t = Title::newFromText( $title );
 	if ( $t && $t->isRedirect() ) {
 		$a = new Article( $t, 0 );

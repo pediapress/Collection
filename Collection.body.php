@@ -1255,4 +1255,16 @@ class SpecialCollection extends SpecialPage {
 		return $json_response;
 	}
 
+	/**
+	 * @return string URL prefix to images
+	 */
+	static function getMediaPath() {
+		if ( isset ( $GLOBALS['wgExtensionAssetsPath'] ) ) {
+			return $GLOBALS['wgExtensionAssetsPath'] . '/Collection/images/';
+		} else {
+			return $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
+		}
+
+	}
+
 }

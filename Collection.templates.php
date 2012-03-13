@@ -12,7 +12,7 @@ if ( !defined( 'MEDIAWIKI' ) ) die( - 1 );
  */
 class CollectionPageTemplate extends QuickTemplate {
 	function execute() {
-		$mediapath = $GLOBALS['wgExtensionAssetsPath'] . '/Collection/images/';
+		$mediapath = SpecialCollection::getMediaPath();
 ?>
 
 <div class="collection-column collection-column-left">
@@ -202,7 +202,7 @@ foreach ( $this->data['podpartners'] as $partnerKey => $partnerData ) {
  */
 class CollectionListTemplate extends QuickTemplate {
 	function execute() {
-		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
+		$mediapath = SpecialCollection::getMediaPath();
 ?>
 
 <div class="collection-create-chapter-links">
@@ -453,9 +453,9 @@ class CollectionSuggestTemplate extends QuickTemplate {
 
 	// needed for Ajax functions
 	function getProposalList () {
-		global $wgScript, $wgScriptPath;
+		global $wgScript;
 
-		$mediapath = $wgScriptPath . '/extensions/Collection/images/';
+		$mediapath = SpecialCollection::getMediaPath();
 		$baseUrl = $wgScript . "/";
 
 		$prop = $this->data['proposals'];
@@ -492,7 +492,7 @@ class CollectionSuggestTemplate extends QuickTemplate {
 
 	// needed for Ajax functions
 	function getMemberList() {
-		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
+		$mediapath = SpecialCollection::getMediaPath();
 		$coll = $this->data['collection'];
 		$out = '';
 
