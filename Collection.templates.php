@@ -52,43 +52,52 @@ $listTemplate->execute();
 </div>
 
 <div class="collection-column collection-column-right">
-
+<?php if ( $this->data['podpartners'] ) { ?>
 	<div class="collection-column-right-box" id="coll-orderbox">
 		<h2><span class="mw-headline"><?php $this->msg( 'coll-book_title' ) ?></span></h2>
 		<?php
-$partnerData = $this->data['podpartners']['pediapress'];
 $this->msgWiki( 'coll-book_text' );
 		?>
+	<ul>
+<?php
+foreach ( $this->data['podpartners'] as $partnerKey => $partnerData ) { 
+	$infopage = false;
+	$partnerClasses = "";
+	$about_partner = wfMsgHtml( 'coll-about_pp', htmlspecialchars( $partnerData['name'] ) );
+	if ( isset( $partnerData['infopagetitle'] ) ) {
+		$infopage = Title::newFromText( wfMsgForContent( $partnerData['infopagetitle'] ) );
+		if ( $infopage && $infopage->exists() ) {
+			$partnerClasses = " coll-more_info collapsed";
+ 		}
+	}
+?>
+	<li class="collection-partner<?php echo $partnerClasses ?>">
 		<div>
-			<div id="collection-order-button">
+			<div><a class="coll-partnerlink" href="<?php echo htmlspecialchars( $partnerData['url'] ) ?>"><?php echo $about_partner; ?></a></div>
+<?php
+	if ( $infopage && $infopage->exists() ) { ?>
+			<div class="coll-order_info" style="display:none;">
+<?php
+	echo $GLOBALS['wgOut']->parse( '{{:' . $infopage . '}}' );
+?>
+			</div>
+<?php   }					?>
+			<div class="collection-order-button">
 				<form action="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book' ) ) ?>" method="post">
 					<input type="hidden" name="bookcmd" value="post_zip" />
-					<input type="hidden" name="partner" value="pediapress" />
+					<input type="hidden" name="partner" value="<?php echo htmlspecialchars( $partnerKey ) ?>" />
 					<input type="submit" value="<?php echo wfMsgHtml( 'coll-order_from_pp', htmlspecialchars( $partnerData['name'] ) ) ?>" class="order" <?php if ( count( $this->data['collection']['items'] ) == 0 ) { ?> disabled="disabled"<?php } ?> />
 				</form>
 			</div>
-		<?php
-$t = Title::newFromText( wfMsgForContent( 'coll-order_info_article' ) );
-if ( $t && $t->exists() ) { ?>
-			<div id="coll-more_info" style="display:none">
-				<a href="javascript:void(0)" onclick="coll_toggle_order_info(true);"><img src="<?php echo htmlspecialchars( $mediapath . "collapse.png" ) ?>" width="10" height="10" alt="" />&#160;<?php $this->msg( 'coll-more_info' ) ?></a>
-			</div>
-			<div id="coll-hide_info" style="display:none">
-				<a href="javascript:void(0)" onclick="coll_toggle_order_info(false);"><img src="<?php echo htmlspecialchars( $mediapath . "expand.png" ) ?>" width="10" height="10" alt="" />&#160;<?php $this->msg( 'coll-hide_info' ) ?></a>
-			</div>
-<?php } else { ?>
-			<a href="<?php echo htmlspecialchars( $partnerData['url'] ) ?>" target="_blank"><?php echo wfMsgHtml( 'coll-about_pp', htmlspecialchars( $partnerData['name'] ) ) ?></a>
-<?php } ?>
 		</div>
+	</li>
 <?php
-if ( $t && $t->exists() ) { ?>
-		<div id="coll-order_info" style="display:none; margin-top: 2em;">
-<?php
-echo $GLOBALS['wgOut']->parse( '{{:' . $t . '}}' );
+} /* foreach */ 
 ?>
-		</div>
-<?php } ?>
-	</div>
+	</ul></div>
+<?php 
+} /* if */
+?>
 
 	<div class="collection-column-right-box" id="coll-downloadbox">
 		<h2><span class="mw-headline"><?php $this->msg( 'coll-download_title' ) ?></span></h2>

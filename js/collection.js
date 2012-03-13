@@ -23,7 +23,7 @@
 
 /******************************************************************************/
 
-var requiredVersion = '1.5';
+var requiredVersion = '1.6';
 
 /******************************************************************************/
 
@@ -53,6 +53,11 @@ function req(func, args, callback) {
 
 var script_url = wgServer +
 	((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
+
+var media_path = wgScriptPath + '/extensions/Collection/images/';
+
+var collapseicon = media_path + '/collapse.png';
+var expandicon   = media_path + '/expand.png';
 
 var chapter_max_len = 200;
 
@@ -193,18 +198,6 @@ function refresh_list(data) {
 	update_buttons();
 }
 
-function toggle_order_info(flag) {
-	if (flag) {
-		$('#coll-more_info').css('display', 'none');
-		$('#coll-order_info').css('display', 'block');
-		$('#coll-hide_info').css('display', 'block');
-	} else {
-		$('#coll-more_info').css('display', 'block');
-		$('#coll-order_info').css('display', 'none');
-		$('#coll-hide_info').css('display', 'none');
-	}
-}
-
 $(function() {
 	if (requiredVersion != wgCollectionVersion) {
 		alert('ERROR: Version mismatch between Javascript and PHP code. Contact admin to fix the installation of Collection extension for MediaWiki.');
@@ -216,10 +209,25 @@ $(function() {
 		window.coll_remove_item = remove_item;
 		window.coll_rename_chapter = rename_chapter;
 		window.coll_clear_collection = clear_collection;
-		window.coll_toggle_order_info = toggle_order_info;
-		toggle_order_info(false);
 		update_buttons();
 		make_sortable();
+		$('#coll-orderbox li.collection-partner.coll-more_info.collapsed').css(
+				'list-style' , 'url("' + collapseicon + '")');
+		$('#coll-orderbox').on('click', 
+					'li.collection-partner.coll-more_info a.coll-partnerlink', function (e) {
+			event.preventDefault();
+			event.stopPropagation();
+			var p = $(this).parents('li.collection-partner');
+			if (p.hasClass("collapsed")) {
+				p.css('list-style',  'url("' + expandicon + '")');
+				p.find('.coll-order_info').css('display', 'block');
+				p.removeClass("collapsed");
+			} else {
+				p.css('list-style' , 'url("' + collapseicon + '")');
+				p.find('.coll-order_info').css('display', 'none');
+				p.addClass("collapsed");
+			}
+		});
 		$('#personalCollTitle').val($('#titleInput').val());
 		$('#personalCollTitle').keyup(update_buttons);
 		$('#personalCollTitle').change(update_buttons);

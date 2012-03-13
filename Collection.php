@@ -33,7 +33,7 @@ EOT;
 $dir = dirname( __FILE__ ) . '/';
 
 # Extension version
-$wgCollectionVersion = "1.5";
+$wgCollectionVersion = "1.6";
 
 # ==============================================================================
 
@@ -121,13 +121,21 @@ $wgCollectionSuggestCheapWeightThreshhold = 50;
 
 $wgCollectionSuggestThreshhold = 100;
 
+$wgCollectionPODPartners = array(
+	'pediapress' => array(
+		'name' => 'PediaPress',
+		'url' => 'http://pediapress.com/',
+		'posturl' => 'http://pediapress.com/api/collections/',
+		'infopagetitle' => 'coll-order_info_article',
+	),
+);
 # ==============================================================================
 
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'Collection',
 	'version' => $wgCollectionVersion,
-	'author' => array( 'PediaPress GmbH', 'Siebrand Mazeland' ),
+	'author' => array( 'PediaPress GmbH', 'Siebrand Mazeland', 'Marcin Cieślak'),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Collection',
 	'descriptionmsg' => 'coll-desc',
 );
