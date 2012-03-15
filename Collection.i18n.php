@@ -295,6 +295,146 @@ $messages['gom-latn'] = array(
 	'coll-return_to' => '[[:$1]] ak patim vos',
 );
 
+/**    زَوُن (   زَوُن)
+ * @author Csisc
+ */
+$messages['aeb'] = array(
+	'coll-desc' => '[[Special:Book|ينشيء كتبا]]',
+	'coll-book_creator_intro' => "<big>تستطيع مع ''منشئ الكتب'' إنشاء كتاب يتكون من صفحات ويكي بحسب اختيارك. تستطيع تصدير كتابك بأنساق مختلفة (PDF أو ODF على سبيل المثال) أو طلب نسخة مطبوعة.</big>",
+	'coll-manage_your_book' => 'إدارة كتابك',
+	'coll-book_creator_help' => 'انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة المتعلقة بالكتب]] للمزيد من المعلومات.',
+	'coll-start_book_creator' => 'ابدأ منشئ الكتب',
+	'coll-book_creator_continue' => 'واصل استخدام منشئ الكتب',
+	'coll-book_creator_disable_text' => "''منشئ الكتب'' سيتم تعطيله والكتاب الذي تعمل عليه ستتم إزالته.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/نص وضع الكتب',
+	'coll-collection' => 'كتاب',
+	'coll-collections' => 'كتب',
+	'coll-exclusion_category_title' => 'استثن في الطباعة',
+	'coll-print_template_prefix' => 'itthba3',
+	'coll-print_template_pattern' => '$1/طبع',
+	'coll-unknown_subpage_title' => 'صفحة فرعية غير معروفة',
+	'coll-unknown_subpage_text' => 'هذه الصفحة الفرعية [[Special:Book|للكتاب]] غير موجودة',
+	'coll-couldnotaddarticle_title' => 'لم يمكن إضافة صفحة الويكي',
+	'coll-couldnotaddarticle_msg' => 'صفحة الويكي لم يمكن إضافتها.',
+	'coll-couldnotremovearticle_title' => 'لم يمكن إزالة صفحة الويكي',
+	'coll-couldnotremovearticle_msg' => 'صفحة الويكي لم يمكن إزالتها.',
+	'coll-noscript_text' => '<h1>الجافاسكريبت مطلوب!</h1>
+<strong>متصفحك لا يدعم جافاسكريبت جافاسكريبت أو الجافاسكريبت تم تعطيلها.
+هذه الصفحة لن تعمل بطريقة صحيحة، إلا إذا تم تفعيل الجافاسكريبت.</strong>',
+	'coll-savedbook_template' => 'كتاب_محفوظ',
+	'coll-your_book' => 'كتابك',
+	'coll-download_title' => 'تنزيل',
+	'coll-download_text' => 'لتنزيل كتابك اختر نسقا واضغط الزر.',
+	'coll-download_as_text' => 'لتنزيل كتابك بصيغة $1 اضغط الزر.',
+	'coll-download' => 'نزّل',
+	'coll-format_label' => 'الصيغة:',
+	'coll-remove' => 'إزالة',
+	'coll-show' => 'عرض',
+	'coll-move_to_top' => 'حرك إلى الأعلى',
+	'coll-move_up' => 'حرك إلى الأعلى',
+	'coll-move_down' => 'حرك إلى الأسفل قليلا',
+	'coll-move_to_bottom' => 'حرك إلى الأسفل',
+	'coll-title' => 'العنوان:',
+	'coll-subtitle' => 'العنوان الفرعي:',
+	'coll-contents' => 'محتويات',
+	'coll-drag_and_drop' => 'استخدم السحب والإلقاء لطلب صفحات وفصول ويكي',
+	'coll-create_chapter' => 'إنشاء الفصل',
+	'coll-sort_alphabetically' => 'رتب أبجديا',
+	'coll-rename' => 'إعادة تسمية',
+	'coll-new_chapter' => 'أدخل الاسم للفرع الجديد',
+	'coll-rename_chapter' => 'أدخل الاسم الجديد للفرع',
+	'coll-no_such_category' => 'لا تصنيف كهذا',
+	'coll-notitle_title' => 'عنوان الصفحة لم يمكن تحديده.',
+	'coll-post_failed_title' => 'طلب POST فشل',
+	'coll-post_failed_msg' => 'طلب POST إلى $1 فشل ($2).',
+	'coll-mwserve_failed_title' => 'خطأ عرض من الخادم',
+	'coll-mwserve_failed_msg' => 'حدث خطأ في خادم العرض: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'خطأ استجابة من الخادم',
+	'coll-empty_collection' => 'كتاب فارغ',
+	'coll-revision' => 'النسخة: $1',
+	'coll-save_collection_title' => 'احفظ وشارك كتابك',
+	'coll-save_collection_text' => 'اختر موقعا:',
+	'coll-login_to_save' => 'لو كنت تريد حفظ الكتب من أجل الاستخدام فيما بعد، من فضلك [[Special:UserLogin|قم بتسجيل الدخول أو إنشاء حساب]].',
+	'coll-personal_collection_label' => 'كتاب شخصي:',
+	'coll-community_collection_label' => 'كتاب مجتمع:',
+	'coll-save_collection' => 'احفظ الكتاب',
+	'coll-save_category' => 'كل الكتب المحفوظة تتم إضافتها إلى التصنيف [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-overwrite_title' => 'الصفحة موجودة.
+كتابة عليها؟',
+	'coll-overwrite_text' => 'صفحة بنفس الاسم [[:$1]] موجودة بالفعل.
+هل تريد استبدالها بمجموعتك؟',
+	'coll-yes' => 'oui (n3am)',
+	'coll-no' => 'la',
+	'coll-load_overwrite_text' => 'لديك بالفعل عدة صفحات في كتابك.
+هل تريد الكتابة على كتابك الحالي، إضافة المحتوى الجديد أو إلغاء تحميل هذا الكتاب؟',
+	'coll-overwrite' => 'كتابة عليها',
+	'coll-append' => 'انتظار',
+	'coll-cancel' => 'ifsa5',
+	'coll-update' => 'حدّث',
+	'coll-limit_exceeded_title' => 'الكتاب كبير جدا',
+	'coll-limit_exceeded_text' => 'كتابك كبير جدا.
+لا مزيد من الصفحات يمكن إضافتها.',
+	'coll-rendering_title' => 'عرض',
+	'coll-rendering_text' => '<p><strong>من فضلك انتظر أثناء توليد الوثيقة.</strong></p>
+
+<p><strong>التقدم:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>هذه الصفحة ينبغي أن يتم تحديثها كل عدة ثوان.
+لو أن هذا لا يعمل، من فضلك اضغط زر التحديث في متصفحك.</p>',
+	'coll-rendering_status' => '<strong>الحالة:</strong> $1',
+	'coll-rendering_article' => '(المقالة: $1)',
+	'coll-rendering_page' => '(الصفحة: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات صفحة',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات مجموعة',
+	'coll-rendering_finished_title' => 'العرض انتهى',
+	'coll-rendering_finished_text' => '<strong>ملف الوثيقة تم توليده.</strong>
+<strong>[$1 نزل الملف]</strong> إلى حاسوبك.
+
+ملاحظات:
+* غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحة المساعدة حول المجموعات]] للاحتمالات لتحسينه.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات صفحة',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات مجموعة',
+	'coll-notfound_title' => 'الكتاب غير موجود',
+	'coll-notfound_text' => 'لم يمكن العثور على صفحة الكتاب.',
+	'coll-download_notfound_title' => 'الملف لم يتم إيجاده',
+	'coll-download_notfound_text' => 'الملف الذي تحاول تنزيله غير موجود: ربما يكون قد مسح و يحتاج إلى إعادة توليد.',
+	'coll-download_failed_title' => 'خطأ أثناء التنزيل',
+	'coll-download_failed_text' => 'وُجد خطأ أثناء تنزيل الملف: $1',
+	'coll-is_cached' => '<ul><li>نسخة مخزنة من الوثيقة تم العثور عليها، لذا لا تحديث كان ضروريا. <a href="$1">إجبار على إعادة التحديث.</a></li></ul>',
+	'coll-excluded-templates' => '* القوالب في التصنيف [[:Category:$1|$1]] تم إقصاؤها.',
+	'coll-blacklisted-templates' => '* القوالب في القائمة السوداء [[:$1]] تم إقصاؤها.',
+	'coll-return_to_collection' => '<p>ارجع إلى <a href="$1">$2</a></p>',
+	'coll-book_title' => 'طلب ككتاب مطبوع',
+	'coll-book_text' => 'احصل على كتاب مطبوع من شريكنا للطباعة عند الطلب:',
+	'coll-order_from_pp' => 'معاينة مع $1',
+	'coll-about_pp' => 'حول $1',
+	'coll-invalid_podpartner_title' => 'شريك POD غير صحيح',
+	'coll-invalid_podpartner_msg' => 'شريك POD الموفر غير صحيح.
+من فضلك اتصل بإداري ميدياويكي الخاص بك.',
+	'coll-license' => 'ترخيص',
+	'coll-return_to' => 'رجوع إلى [[:$1]]',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/معلومات الطلب من بيديابرس',
+	'coll-suggest_title' => 'صفحات كتابك المقترحة',
+	'coll-suggest_intro_text' => 'المقترحات مبنية على صفحات كتابك الحالية.
+سوف تُحدّث هذه القائمة كلما نقرت زر الإضافة أو الإزالة.',
+	'coll-suggested_articles' => 'اقتراحات',
+	'coll-suggest_reset_bans' => 'إعادة ضبط',
+	'coll-suggest_reset_bans_tooltip' => 'اعرض الاقتراحات المزالة سابقا',
+	'coll-suggest_add_selected' => 'أضف الصفحات المختارة',
+	'coll-suggest_ban_selected' => 'أزل الصفحات المختارة',
+	'coll-suggest_your_book' => 'كتابك',
+	'coll-suggest_show' => 'عرض',
+	'coll-suggest_ban_tooltip' => 'أزل هذه الصفحة من قائمة المقترحات',
+	'coll-suggest_article_ban' => 'الصفحة <strong>$1</strong> تمت إزالتها من الاقتراحات ($2).',
+	'coll-suggest_article_add' => 'الصفحة <strong>$1</strong> تمت إضافتها إلى كتابك ($2).',
+	'coll-suggest_article_remove' => 'الصفحة <strong>$1</strong> تمت إزالتها من كتابك ($2).',
+	'coll-suggest_undo_tooltip' => 'استرجع هذه الإجراء',
+	'coll-suggest_undo' => 'ارجع',
+	'coll-load_local_book' => 'اضغط OK للاستمرار في كتابك %TITLE% الذي به %NUMPAGES% من صفحات الويكي. اضغط Cancel لحذفه والبدء بكتاب فارغ.',
+	'right-collectionsaveasuserpage' => 'احفظ الكتب كصفحة مستخدم',
+	'right-collectionsaveascommunitypage' => 'احفظ الكتب كصفحة مجتمع',
+);
+
 /** Abkhazian (Аҧсуа)
  * @author Temuri rajavi
  */

@@ -95,6 +95,46 @@ $messages['qqq'] = array(
 	'coll-suggest_empty' => '{{Identical|Empty}}',
 );
 
+/**    زَوُن (   زَوُن)
+ * @author Csisc
+ */
+$messages['aeb'] = array(
+	'coll-print_export' => 'طباعة وتصدير',
+	'coll-create_a_book' => 'إنشاء كتاب',
+	'coll-create_a_book_tooltip' => 'أنشئ كتابًا أو صفحة مجموعة',
+	'coll-book_creator' => 'منشئ الكتب',
+	'coll-download_as' => 'تحميل ب$1',
+	'coll-download_as_tooltip' => 'تحميل نسخة $1 من صفحة الويكي هذه.',
+	'coll-disable' => 'عطّل',
+	'coll-book_creator_disable' => 'عطّل منشئ الكتب',
+	'coll-book_creator_disable_tooltip' => 'أوقف استخدام منشئ الكتب',
+	'coll-add_linked_article' => 'أضف صفحة ويكي مربوطة إلى كتابك',
+	'coll-remove_linked_article' => 'أزل صفحة ويكي مربوطة من كتابك',
+	'coll-add_category' => 'إضافة هذا التصنيف إلى كتابك',
+	'coll-add_category_tooltip' => 'أضف كل صفحات الويكي في هذا التصنيف لكتابك',
+	'coll-add_this_page' => 'أضف هذه الصفحة إلى كتابك',
+	'coll-add_page_tooltip' => 'أضف صفحة الويكي الحالية إلى كتابك',
+	'coll-bookscategory' => 'كتب',
+	'coll-clear_collection' => 'إفراغ الكتاب',
+	'coll-clear_collection_confirm' => 'هل تريد حقا إفراغ كتابك بالكامل؟',
+	'coll-clear_collection_tooltip' => 'أزل كل صفحات الويكي من كتابك الحالي',
+	'coll-help' => '3awenni ya3chek',
+	'coll-help_tooltip' => 'أظهر مساعدة عن كيفية إنشاء الكتب',
+	'coll-helppage' => 'Help:كتب',
+	'coll-load_collection' => 'تحميل الكتاب',
+	'coll-load_collection_tooltip' => 'حمل هذا الكتاب ككتابك الحالي',
+	'coll-n_pages' => '{{PLURAL:$1||صفحة واحدة|صفحتان|$1 صفحات|$1 صفحة}}',
+	'coll-printable_version_pdf' => 'نسخة صيغة المستندات المحمولة',
+	'coll-remove_this_page' => 'أزل هذه الصفحة من كتابك',
+	'coll-remove_page_tooltip' => 'أزل صفحة الويكي الحالية من كتابك',
+	'coll-show_collection' => 'عرض الكتاب',
+	'coll-show_collection_tooltip' => 'اضغط لتعديل/تنزيل/طلب كتابك',
+	'coll-not_addable' => 'لا يمكن إضافة هذه الصفحة',
+	'coll-make_suggestions' => 'اقترح صفحات',
+	'coll-make_suggestions_tooltip' => 'أظهر التعديلات بناءً على صفحات كتابك',
+	'coll-suggest_empty' => 'فارغ',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Anrie
  * @author Arnobarnard
@@ -2376,6 +2416,46 @@ $messages['ltg'] = array(
 	'coll-load_collection' => 'Atsasyuteit gruomotu',
 	'coll-printable_version_pdf' => 'PDF verseja',
 	'coll-show_collection' => 'Ruodeit gruomotu',
+);
+
+/** Lushai (Mizo ţawng)
+ * @author RMizo
+ */
+$messages['lus'] = array(
+	'coll-print_export' => 'Nemkaina/Thawnchhuahna',
+	'coll-create_a_book' => 'Lehkhabu siamna',
+	'coll-create_a_book_tooltip' => 'Lehkhabu emaw phêk chilhkhâwm emaw siamna',
+	'coll-book_creator' => 'Lehkhabu siamtu',
+	'coll-download_as' => '$1 angin hnûkthla rawh',
+	'coll-download_as_tooltip' => 'He wiki phêk $1 hi hnûkthla rawh',
+	'coll-disable' => 'tihthihna',
+	'coll-book_creator_disable' => 'Lehkhabu siamtu tihthihna',
+	'coll-book_creator_disable_tooltip' => 'Lehkhabu siamtu hman bansan rawh',
+	'coll-add_linked_article' => 'I lehkhabuah wiki phêk zawmsa telh rawh',
+	'coll-remove_linked_article' => 'I lehkhabua wiki phêk zawm awm nuaibo rawh',
+	'coll-add_category' => 'He pawl hi i lehkhabuah telh rawh',
+	'coll-add_category_tooltip' => 'He pawla wiki phêk zawng zawng hi i lehkhabuah telh vek rawh',
+	'coll-add_this_page' => 'He phêk hi i lehkhabuah telh rawh',
+	'coll-add_page_tooltip' => 'Tuna i wiki phêk en mék hi i lehkhabuah telh rawh',
+	'coll-bookscategory' => 'Lehkhabute',
+	'coll-clear_collection' => 'Lehkhabu nuaibona',
+	'coll-clear_collection_confirm' => 'I lehkhabu zawng zawng i nuaibo vek duh tak tak maw?',
+	'coll-clear_collection_tooltip' => 'Tuna i lehkhabu aţang hian wiki phêk zawng zawng nuaibo vek rawh',
+	'coll-help' => 'Ţanpuina',
+	'coll-help_tooltip' => 'Lehkhabu siam chungchang kaihhruaina',
+	'coll-helppage' => 'Help:Lehkhabu',
+	'coll-load_collection' => 'Lehkhabu lâwtna',
+	'coll-load_collection_tooltip' => 'He lehkhabu i hman mék angin lâwt rawh',
+	'coll-n_pages' => 'Phek $1 {{PLURAL:$1||}}',
+	'coll-printable_version_pdf' => 'A pdf',
+	'coll-remove_this_page' => 'He phêk hi i lehkhabu aţang pawtthla rawh',
+	'coll-remove_page_tooltip' => 'Tuna i wiki phêk en mék hi i lehkhabu aţang pawtthla rawh',
+	'coll-show_collection' => 'Lehkhabu keuna',
+	'coll-show_collection_tooltip' => 'I lehkhabu siamţha/la/chah tùrin tah hian hmet rawh',
+	'coll-not_addable' => 'He phêk hi telh theih a ni lo',
+	'coll-make_suggestions' => 'Phêk rawtna',
+	'coll-make_suggestions_tooltip' => 'I lehkhabu phêk aţanga rawtna tihlanna',
+	'coll-suggest_empty' => 'ruak',
 );
 
 /** Latvian (Latviešu)
