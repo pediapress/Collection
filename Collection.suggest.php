@@ -83,7 +83,7 @@ class CollectionSuggest {
 	 * @param $param (type string) name of the article to be added, banned or removed
 	 *        or a number of articles to add or a value (1 - 1.5) all articles with a
 	 *        higher value will be added to the collection
-	 * @return (type string) html-code for the proposallist and the memberlist
+	 * @return string html-code for the proposallist and the memberlist
 	 */
 	public static function refresh( $mode, $param ) {
 		global $wgLang;
@@ -96,6 +96,11 @@ class CollectionSuggest {
 		);
 	}
 
+	/**
+	 * @param $lastAction
+	 * @param $article
+	 * @return array
+	 */
 	public static function undo( $lastAction, $article ) {
 		switch ( $lastAction ) {
 		case 'add':
@@ -155,7 +160,7 @@ class CollectionSuggest {
 	 * @param $param (type string) name of the article to be added, banned or removed
 	 *        or a number of articles to add or a value (1 - 1.5) all articles with a
 	 *        higher value will be added to the collection
-	 * @return the template for the wikipage
+	 * @return CollectionSuggestTemplate the template for the wikipage
 	 */
 	private static function getCollectionSuggestTemplate( $mode, $param ) {
 		global $wgCollectionMaxSuggestions;
@@ -204,8 +209,8 @@ class CollectionSuggest {
 	/**
 	 * Add some articles and update the book of the Proposal-Object
 	 *
-	 * @param $articleList an array with the names of the articles to be added
-	 * @param $prop the proposal-Object
+	 * @param $articleList array with the names of the articles to be added
+	 * @param $prop Proposals the proposal-Object
 	 */
 	private static function addArticlesFromName( $articleList, $prop ) {
 		foreach ( $articleList as $article ) {
@@ -312,6 +317,9 @@ class Proposals {
 		}
 	}
 
+	/**
+	 * @return bool
+	 */
 	public function hasBans() {
 		return count( $this->mBanList ) > 0;
 	}
@@ -368,6 +376,10 @@ class Proposals {
 		$this->mLinkList = $newList;
 	}
 
+	/**
+	 * @param $title Title
+	 * @return Title
+	 */
 	private function resolveRedirects( $title ) {
 		if ( !$title->isRedirect() ) {
 			return $title;
@@ -384,8 +396,8 @@ class Proposals {
 	/**
 	 * Extract & count links from wikitext
 	 *
-	 * @param wikitext: article text
-	 * @return an array with links and their weights
+	 * @param wikitext string article text
+	 * @return array with links and their weights
 	 */
 	private function getWeightedLinks( $num_articles, $wikitext ) {
 		global $wgCollectionSuggestCheapWeightThreshhold;
@@ -493,7 +505,9 @@ class Proposals {
 		}
 	}
 
-	// Calculate the $mPropList from $mLinkList and $mBanList
+	/**
+	 * Calculate the $mPropList from $mLinkList and $mBanList
+	 */
 	private function getPropList() {
 		$prop = array();
 		foreach ( $this->mLinkList as $article ) {
@@ -531,9 +545,9 @@ class Proposals {
 	 * if the array doesn't contain the article
 	 *
 	 * @param $entry (type string) an articlename
-	 * @param $array the array to be searched, it has to 2-dimensional
+	 * @param $array array to be searched, it has to 2-dimensional
 	 *               the 2nd dimension needs the key 'name'
-	 * @return the key as integer or false
+	 * @return bool|int the key as integer or false
 	 */
 	private function searchEntry( $entry, $array ) {
 		for ( $i = 0; $i < count( $array ); $i++ ) {
@@ -547,8 +561,8 @@ class Proposals {
 	/**
 	 * Check if an article is banned or belongs to the book/collection
 	 *
-	 * @param $link (type string) an articlename
-	 * @return (type boolean) true: if the article can be added to the proposals
+	 * @param $link string an articlename
+	 * @return boolean true: if the article can be added to the proposals
 	 *                        false: if the article can't be added to the proposals
 	 */
 	private function checkLink( $link ) {
@@ -565,28 +579,10 @@ class Proposals {
 		return true;
 	}
 
+	/**
+	 * @return int
+	 */
 	private function getPropCount() {
 		return count( $this->mPropList );
-	}
-}
-
-/**
- * sort $mPropList by the entries values
- * sort alphabetically by equal values
- *
- * @param $a, $b: arrays that contain two entries
- *                the keys: 'name' & 'val'
- *                'name': an articlename
- *                'val' : a value from 1 to 1.5
- * @return 1, -1 or 0
- */
-function wgCollectionCompareProps( $a, $b ) {
-	if ( $a['val'] == $b['val'] ) {
-		return strcmp( $a['name'], $b['name'] );
-	}
-	if ( $a['val'] < $b['val'] ) {
-		return 1;
-	} else {
-		return - 1;
 	}
 }
