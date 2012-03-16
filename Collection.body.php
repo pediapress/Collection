@@ -895,14 +895,14 @@ class SpecialCollection extends SpecialPage {
 				} elseif ( $item['type'] == 'article' ) {
 					if ( $item['currentVersion'] == 1 ) {
 						$articleText .= ":[[" . $item['title'];
-						if ( $item['displaytitle'] ) {
+						if ( isset( $item['displaytitle'] ) && $item['displaytitle'] ) {
 							$articleText .= "|" . $item['displaytitle'];
 						}
 						$articleText .= "]]\n";
 					} else {
 						$articleText .= ":[{{fullurl:" . $item['title'];
 						$articleText .= "|oldid=" . $item['revision'] . "}} ";
-						if ( $item['displaytitle'] ) {
+						if ( isset( $item['displaytitle'] ) && $item['displaytitle'] ) {
 							$articleText .= $item['displaytitle'];
 						} else {
 							$articleText .= $item['title'];
