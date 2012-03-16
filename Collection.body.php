@@ -27,7 +27,7 @@ class SpecialCollection extends SpecialPage {
 		parent::__construct( "Book" );
 		global $wgCollectionPODPartners;
 		if ( $PODPartners ) {
-			$this->mPODPartners = $PODpartners;
+			$this->mPODPartners = $PODPartners;
 		} else {
 			$this->mPODPartners = $wgCollectionPODPartners;
 		}
@@ -38,7 +38,7 @@ class SpecialCollection extends SpecialPage {
 	}
 
 	function execute( $par ) {
-		global $wgOut, $wgRequest, $wgUser, $wgContLang, $wgCollectionMaxArticles;
+		global $wgOut, $wgRequest, $wgUser, $wgCollectionMaxArticles;
 
 		// support previous URLs (e.g. used in templates) which used the "$par" part
 		// (i.e. subpages of the Special page)
@@ -296,7 +296,6 @@ class SpecialCollection extends SpecialPage {
 			default:
 				$wgOut->showErrorPage( 'coll-unknown_subpage_title', 'coll-unknown_subpage_text' );
 		}
-		return;
 	}
 
 	function renderBookCreatorPage( $referer, $par ) {
