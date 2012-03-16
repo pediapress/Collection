@@ -23,6 +23,9 @@
 class SpecialCollection extends SpecialPage {
 	var $tempfile;
 
+	/**
+	 * @param $PODPartners bool|array
+	 */
 	public function __construct( $PODPartners = false ) {
 		parent::__construct( "Book" );
 		global $wgCollectionPODPartners;
@@ -190,7 +193,8 @@ class SpecialCollection extends SpecialPage {
 				}
 				$collection = $this->loadCollection( $title );
 				$partner = $wgRequest->getVal( 'partner', key( $this->mPODPartners ) );
-				return $this->postZIP( $collection, $partner );
+				$this->postZIP( $collection, $partner );
+				return;
 			case 'save_collection':
 				if ( $wgRequest->getVal( 'abort' ) ) {
 					$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
@@ -229,11 +233,12 @@ class SpecialCollection extends SpecialPage {
 				}
 				return;
 			case 'render':
-				return $this->renderCollection(
+				$this->renderCollection(
 					CollectionSession::getCollection(),
 					SpecialPage::getTitleFor( 'Book' ),
 					$wgRequest->getVal( 'writer', '' )
 				);
+				return;
 			case 'forcerender':
 				$this->forceRenderCollection();
 				return;
@@ -298,6 +303,11 @@ class SpecialCollection extends SpecialPage {
 		}
 	}
 
+	/**
+	 * @param $referer
+	 * @param $par
+	 * @return mixed
+	 */
 	function renderBookCreatorPage( $referer, $par ) {
 		global $wgOut, $wgJsMimeType;
 
@@ -379,6 +389,9 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->addWikiMsg( 'coll-book_creator_help' );
 	}
 
+	/**
+	 * @param $referer
+	 */
 	function renderStopBookCreatorPage( $referer ) {
 		global $wgOut;
 
@@ -420,6 +433,9 @@ class SpecialCollection extends SpecialPage {
 		);
 	}
 
+	/**
+	 * @return array
+	 */
 	static function getBookPagePrefixes() {
 		global $wgUser, $wgCommunityCollectionNamespace;
 
@@ -475,6 +491,11 @@ class SpecialCollection extends SpecialPage {
 		CollectionSession::setCollection( $collection );
 	}
 
+	/**
+	 * @param $a array
+	 * @param $b array
+	 * @return int
+	 */
 	static function title_cmp( $a, $b ) {
 		return strcasecmp( $a['title'], $b['title'] );
 	}
@@ -497,6 +518,9 @@ class SpecialCollection extends SpecialPage {
 		CollectionSession::setCollection( $collection );
 	}
 
+	/**
+	 * @param $name string
+	 */
 	static function addChapter( $name ) {
 		$collection = CollectionSession::getCollection();
 		array_push( $collection['items'], array(
@@ -506,6 +530,10 @@ class SpecialCollection extends SpecialPage {
 		CollectionSession::setCollection( $collection );
 	}
 
+	/**
+	 * @param $index int
+	 * @param $name string
+	 */
 	static function renameChapter( $index, $name ) {
 		if ( !is_int( $index ) ) {
 			return;
@@ -518,6 +546,12 @@ class SpecialCollection extends SpecialPage {
 		CollectionSession::setCollection( $collection );
 	}
 
+	/**
+	 * @param $namespace int
+	 * @param $name string
+	 * @param int $oldid
+	 * @return bool
+	 */
 	static function addArticleFromName( $namespace, $name, $oldid = 0 ) {
 		$title = Title::makeTitleSafe( $namespace, $name );
 		if ( !$title ) {
@@ -581,6 +615,12 @@ class SpecialCollection extends SpecialPage {
 		return true;
 	}
 
+	/**
+	 * @param $namespace string
+	 * @param $name string
+	 * @param $oldid int
+	 * @return bool
+	 */
 	static function removeArticleFromName( $namespace, $name, $oldid = 0 ) {
 		$title = Title::makeTitleSafe( $namespace, $name );
 		return self::removeArticle( $title, $oldid );
@@ -604,18 +644,26 @@ class SpecialCollection extends SpecialPage {
 		return true;
 	}
 
+	/**
+	 * @param $name string
+	 * @return bool
+	 */
 	static function addCategoryFromName( $name ) {
 		$title = Title::makeTitleSafe( NS_CATEGORY, $name );
 		return self::addCategory( $title );
 	}
 
+	/**
+	 * @param $title Title
+	 * @return bool
+	 */
 	static function addCategory( $title ) {
 		global $wgCollectionMaxArticles, $wgCollectionArticleNamespaces;
 
 		$limit = $wgCollectionMaxArticles - CollectionSession::countArticles();
 		if ( $limit <= 0 ) {
 			self::limitExceeded();
-			return;
+			return false;
 		}
 		$db = wfGetDB( DB_SLAVE );
 		$tables = array( 'page', 'categorylinks' );
@@ -668,6 +716,11 @@ class SpecialCollection extends SpecialPage {
 		return true;
 	}
 
+	/**
+	 * @param $index
+	 * @param $delta
+	 * @return bool
+	 */
 	static function moveItem( $index, $delta ) {
 		if ( !CollectionSession::hasSession() ) {
 			return false;
@@ -680,6 +733,9 @@ class SpecialCollection extends SpecialPage {
 		return true;
 	}
 
+	/**
+	 * @param $items array
+	 */
 	static function setSorting( $items ) {
 		if ( !CollectionSession::hasSession() ) {
 			return;
@@ -694,6 +750,12 @@ class SpecialCollection extends SpecialPage {
 		CollectionSession::setCollection( $collection );
 	}
 
+	/**
+	 * @param $collection
+	 * @param $line
+	 * @param $append
+	 * @return array|null
+	 */
 	function parseCollectionLine( &$collection, $line, $append ) {
 		$line = trim( $line );
 		if ( !$append && preg_match( '/^===\s*(.*?)\s*===$/', $line, $match ) ) {
@@ -775,7 +837,7 @@ class SpecialCollection extends SpecialPage {
 
 		if ( is_null( $title ) ) {
 			$wgOut->showErrorPage( 'coll-notitle_title', 'coll-notitle_msg' );
-			return;
+			return null;
 		}
 
 		if ( !$title->exists() ) {
@@ -872,6 +934,9 @@ class SpecialCollection extends SpecialPage {
 		return true;
 	}
 
+	/**
+	 * @return array
+	 */
 	function getLicenseInfos() {
 		global $wgCollectionLicenseName, $wgCollectionLicenseURL, $wgRightsIcon;
 		global $wgRightsPage, $wgRightsText, $wgRightsUrl;
@@ -904,6 +969,10 @@ class SpecialCollection extends SpecialPage {
 		return array( $licenseInfo );
 	}
 
+	/**
+	 * @param $collection array
+	 * @return string
+	 */
 	function buildJSONCollection( $collection ) {
 		$result = array(
 			'type' => 'collection',
@@ -943,6 +1012,11 @@ class SpecialCollection extends SpecialPage {
 		return $json->encode( $result );
 	}
 
+	/**
+	 * @param $collection
+	 * @param $referrer Title
+	 * @param $writer
+	 */
 	function renderCollection( $collection, $referrer, $writer ) {
 		global $wgOut, $wgContLang, $wgScriptPath, $wgScriptExtension;
 
@@ -1031,7 +1105,6 @@ class SpecialCollection extends SpecialPage {
 
 		switch ( $response['state'] ) {
 		case 'progress':
-			$url = htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', 'bookcmd=rendering&' . $query ) );
 			$wgOut->addHeadItem( 'refresh-nojs', '<noscript><meta http-equiv="refresh" content="2" /></noscript>' );
 			$wgOut->addInlineScript( 'var collection_id = "' . urlencode( $response['collection_id'] ) . '";' );
 			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer'] ) . '";' );
@@ -1123,6 +1196,11 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->disable();
 	}
 
+	/**
+	 * @param $res
+	 * @param $content
+	 * @return int
+	 */
 	function writeToTempFile( $res, $content ) {
 		return fwrite( $this->tempfile, $content );
 	}
@@ -1157,6 +1235,10 @@ class SpecialCollection extends SpecialPage {
 		$this->renderCollection( array( 'items' => array( $article ) ), $title, $writer );
 	}
 
+	/**
+	 * @param $collection
+	 * @param $partner
+	 */
 	function postZIP( $collection, $partner ) {
 		global $wgScriptPath, $wgScriptExtension, $wgOut;
 
@@ -1181,6 +1263,12 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->redirect( $response['redirect_url'] );
 	}
 
+	/**
+	 * @param $colltype
+	 * @param $title
+	 * @param $pcollname
+	 * @param $ccollname
+	 */
 	private function renderSaveOverwritePage( $colltype, $title, $pcollname, $ccollname ) {
 		global $wgOut;
 
@@ -1195,6 +1283,9 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->addTemplate( $template );
 	}
 
+	/**
+	 * @param $title
+	 */
 	private function renderLoadOverwritePage( $title ) {
 		global $wgOut;
 
@@ -1206,13 +1297,19 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->addTemplate( $template );
 	}
 
+	/**
+	 * @param $command
+	 * @param $args
+	 * @return bool|array
+	 */
 	static function mwServeCommand( $command, $args ) {
 		global $wgOut, $wgCollectionMWServeURL, $wgCollectionMWServeCredentials, $wgCollectionFormatToServeURL;
 
 		$serveURL = $wgCollectionMWServeURL;
 		if ( isset ( $args['writer'] ) ) {
-			if ( array_key_exists( $args['writer'], $wgCollectionFormatToServeURL ) )
+			if ( array_key_exists( $args['writer'], $wgCollectionFormatToServeURL ) ) {
 				$serveURL = $wgCollectionFormatToServeURL[ $args['writer'] ];
+			}
 		}
 
 		$args['command'] = $command;
