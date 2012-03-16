@@ -1016,7 +1016,6 @@ class SpecialCollection extends SpecialPage {
 	 * @param $collection
 	 * @param $referrer Title
 	 * @param $writer
-	 * @return mixed
 	 */
 	function renderCollection( $collection, $referrer, $writer ) {
 		global $wgOut, $wgContLang, $wgScriptPath, $wgScriptExtension;
@@ -1239,7 +1238,6 @@ class SpecialCollection extends SpecialPage {
 	/**
 	 * @param $collection
 	 * @param $partner
-	 * @return mixed
 	 */
 	function postZIP( $collection, $partner ) {
 		global $wgScriptPath, $wgScriptExtension, $wgOut;
