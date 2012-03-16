@@ -598,3 +598,24 @@ class Proposals {
 		return count( $this->mPropList );
 	}
 }
+
+/**
+ * sort $mPropList by the entries values
+ * sort alphabetically by equal values
+ *
+ * @param $a, $b: arrays that contain two entries
+ *                the keys: 'name' & 'val'
+ *                'name': an articlename
+ *                'val' : a value from 1 to 1.5
+ * @return 1, -1 or 0
+ */
+function wgCollectionCompareProps( $a, $b ) {
+	if ( $a['val'] == $b['val'] ) {
+		return strcmp( $a['name'], $b['name'] );
+	}
+	if ( $a['val'] < $b['val'] ) {
+		return 1;
+	} else {
+		return - 1;
+	}
+}
