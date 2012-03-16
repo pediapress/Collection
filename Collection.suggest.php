@@ -135,8 +135,14 @@ class CollectionSuggest {
 	 * ===============================================================================
 	 */
 
+	/**
+	 * @param $article
+	 * @return mixed
+	 */
 	private static function unban( $article ) {
-		if (!isset($_SESSION['wsCollectionSuggestBan'])) return;
+		if ( !isset( $_SESSION['wsCollectionSuggestBan'] ) ) {
+			return;
+		}
 		$bans = $_SESSION['wsCollectionSuggestBan'];
 		$newbans = array();
 		foreach ( $bans as $ban ) {
@@ -258,17 +264,16 @@ class Proposals {
 	 * constructor
 	 * ==================================================
 	 *
-	 * @param $coll the collection
-	 * @param $ban the list of the banned articles
-	 * @param $props the lilst of the proposals
+	 * @param $coll array the collection
+	 * @param $ban array the list of the banned articles
+	 * @param $props array the lilst of the proposals
 	 */
-	public function Proposals( $coll, $ban, $props ) {
+	public function __construct( $coll, $ban, $props ) {
 		$this->mPropList = array();
 		$this->mColl = $coll;
 		$this->mBanList = $ban;
 		$this->mLinkList = $props;
 	}
-
 
 	/**
 	 * ==================================================
@@ -276,10 +281,16 @@ class Proposals {
 	 * ==================================================
 	 */
 
+	/**
+	 * @return array
+	 */
 	public function getLinkList() {
 		return $this->mLinkList;
 	}
 
+	/**
+	 * @param $collection
+	 */
 	public function setCollection( $collection ) {
 		$this->mColl = $collection;
 	}
@@ -294,7 +305,7 @@ class Proposals {
 	 * @param $doUpdate (type boolean) when true, $linkList will
 	 *        updated before calculating the proposals
 	 *        default is true
-	 * @return a 2-dimensional array that contains the proposals
+	 * @return array a 2-dimensional array that contains the proposals
 	 *         the first dimesion is numeric, the second contains
 	 *         3 entries:
 	 *         - 'name': the name of a proposed article
@@ -396,7 +407,8 @@ class Proposals {
 	/**
 	 * Extract & count links from wikitext
 	 *
-	 * @param wikitext string article text
+	 * @param $num_articles int
+	 * @param $wikitext string article text
 	 * @return array with links and their weights
 	 */
 	private function getWeightedLinks( $num_articles, $wikitext ) {
