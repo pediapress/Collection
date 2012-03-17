@@ -6401,7 +6401,7 @@ Si desidera che sia sostituita con la raccolta?',
 	'coll-yes' => 'Sì',
 	'coll-no' => 'No',
 	'coll-load_overwrite_text' => 'Il libro contiene già delle pagine.
-Si desidera sovrascrivere il libro corrente, aggiungere il nuovo contenuto o annullare il caricamento di questo libro?',
+Si desidera sovrascrivere il libro attuale, aggiungere il nuovo contenuto o annullare il caricamento di questo libro?',
 	'coll-overwrite' => 'Sovrascrivi',
 	'coll-append' => 'Aggiungi',
 	'coll-cancel' => 'Annulla',
