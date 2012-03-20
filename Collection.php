@@ -102,8 +102,8 @@ $wgCollectionFormats = array(
 /** For formats which rendering depends on an external server
 */
 $wgCollectionFormatToServeURL = array(
-	'zeno'=>'http://www.okawix.com/collections/render.php',
-	'okawix_zeno'=>'http://www.okawix.com/collections/render.php',
+	'zeno' => 'http://www.okawix.com/collections/render.php',
+	'okawix_zeno' => 'http://www.okawix.com/collections/render.php',
 );
 
 $wgCollectionContentTypeToFilename = array(
