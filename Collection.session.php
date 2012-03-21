@@ -22,14 +22,8 @@
  */
 
 class CollectionSession {
-
-	/**
-	 * @return bool
-	 */
 	static function hasSession() {
-		if ( !session_id() ) {
-			return false;
-		}
+		if ( !session_id() ) return false;
 		return isset( $_SESSION['wsCollection'] );
 	}
 
@@ -75,16 +69,10 @@ class CollectionSession {
 		self::touchSession();
 	}
 
-	/**
-	 * @return bool
-	 */
 	static function isEnabled() {
 		return ( self::hasSession() && $_SESSION['wsCollection']['enabled'] );
 	}
 
-	/**
-	 * @return int
-	 */
 	static function countArticles() {
 		if ( !self::hasSession() ) {
 			return 0;
@@ -98,11 +86,6 @@ class CollectionSession {
 		return $count;
 	}
 
-	/**
-	 * @param $title
-	 * @param $oldid int
-	 * @return int
-	 */
 	static function findArticle( $title, $oldid = 0 ) {
 		if ( !self::hasSession() ) {
 			return - 1;
@@ -124,9 +107,6 @@ class CollectionSession {
 		return - 1;
 	}
 
-	/**
-	 * @return bool
-	 */
 	static function purge() {
 		if ( !self::hasSession() ) {
 			return false;
@@ -159,16 +139,10 @@ class CollectionSession {
 		return true;
 	}
 
-	/**
-	 * @return array
-	 */
 	static function getCollection() {
 		return self::purge() ? $_SESSION['wsCollection'] : array();
 	}
 
-	/**
-	 * @param $collection
-	 */
 	static function setCollection( $collection ) {
 		$_SESSION['wsCollection'] = $collection;
 		self::touchSession();

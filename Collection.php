@@ -33,7 +33,7 @@ EOT;
 $dir = dirname( __FILE__ ) . '/';
 
 # Extension version
-$wgCollectionVersion = "1.6";
+$wgCollectionVersion = "1.5";
 
 # ==============================================================================
 
@@ -102,8 +102,8 @@ $wgCollectionFormats = array(
 /** For formats which rendering depends on an external server
 */
 $wgCollectionFormatToServeURL = array(
-	'zeno' => 'http://www.okawix.com/collections/render.php',
-	'okawix_zeno' => 'http://www.okawix.com/collections/render.php',
+	'zeno'=>'http://www.okawix.com/collections/render.php',
+	'okawix_zeno'=>'http://www.okawix.com/collections/render.php',
 );
 
 $wgCollectionContentTypeToFilename = array(
@@ -121,21 +121,13 @@ $wgCollectionSuggestCheapWeightThreshhold = 50;
 
 $wgCollectionSuggestThreshhold = 100;
 
-$wgCollectionPODPartners = array(
-	'pediapress' => array(
-		'name' => 'PediaPress',
-		'url' => 'http://pediapress.com/',
-		'posturl' => 'http://pediapress.com/api/collections/',
-		'infopagetitle' => 'coll-order_info_article',
-	),
-);
 # ==============================================================================
 
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'Collection',
 	'version' => $wgCollectionVersion,
-	'author' => array( 'PediaPress GmbH', 'Siebrand Mazeland', 'Marcin Cieślak'),
+	'author' => array( 'PediaPress GmbH', 'Siebrand Mazeland' ),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Collection',
 	'descriptionmsg' => 'coll-desc',
 );
@@ -370,8 +362,10 @@ function wfAjaxCollectionClear() {
 $wgAjaxExportList[] = 'wfAjaxCollectionClear';
 
 function wfAjaxCollectionGetPopupData( $title ) {
+	global $wgScriptPath;
+
 	$result = array();
-	$imagePath = SpecialCollection::getMediaPath();
+	$imagePath = "$wgScriptPath/extensions/Collection/images";
 	$t = Title::newFromText( $title );
 	if ( $t && $t->isRedirect() ) {
 		$a = new Article( $t, 0 );

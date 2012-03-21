@@ -74,7 +74,7 @@ class CollectionHooks {
 		$title = $sk->getTitle();
 
 		if ( is_null( $title ) || !$title->exists() ) {
-			return false;
+			return;
 		}
 
 		$namespace = $title->getNamespace();
@@ -155,9 +155,9 @@ class CollectionHooks {
 			global $wgOut;
 			if ( !$wgOut->isPrintable() ) {
 				$attribs = array(
-					'href' => $title->getLocalUrl( $wgRequest->appendQueryValue( 'printable', 'yes', true ) ),
-					'title' => Linker::titleAttrib( 't-print', 'withaccess' ),
-					'accesskey' => Linker::accesskey( 't-print' ),
+					'href' => $sk->getTitle()->getLocalUrl( $wgRequest->appendQueryValue( 'printable', 'yes', true ) ),
+					'title' => $sk->titleAttrib( 't-print', 'withaccess' ),
+					'accesskey' => $sk->accesskey( 't-print' ),
 				);
 				if ( $attribs['title'] === false ) {
 					unset( $attribs['title'] );
@@ -178,9 +178,6 @@ class CollectionHooks {
 
 	/**
 	 * Callback for hook SiteNoticeAfter
-	 * @param $siteNotice
-	 * @param $skin Skin
-	 * @return bool
 	 */
 	static function siteNoticeAfter( &$siteNotice, $skin = null ) {
 		global $wgCollectionArticleNamespaces;
@@ -230,15 +227,17 @@ class CollectionHooks {
 
 	/**
 	 * @param $title Title
+	 * @param $skin Skin
 	 * @param $mode string
 	 * @return string
 	 */
 	static function renderBookCreatorBox( $title, $mode = '' ) {
 		global $wgCollectionStyleVersion;
 		global $wgOut;
+		global $wgScriptPath;
 		global $wgRequest;
 
-		$imagePath = SpecialCollection::getMediaPath();
+		$imagePath = "$wgScriptPath/extensions/Collection/images";
 		$ptext = $title->getPrefixedText();
 		$oldid = $wgRequest->getVal( 'oldid', 0 );
 		if ( $oldid == $title->getLatestRevID() ) {
@@ -318,14 +317,10 @@ class CollectionHooks {
 		return $html;
 	}
 
-	/**
-	 * @param $title
-	 * @param $ajaxHint null
-	 * @param $oldid null|int
-	 * @return string
-	 */
 	static function getBookCreatorBoxContent( $title, $ajaxHint = null, $oldid = null ) {
-		$imagePath = SpecialCollection::getMediaPath();
+		global $wgScriptPath;
+
+		$imagePath = "$wgScriptPath/extensions/Collection/images";
 
 		return self::getBookCreatorBoxAddRemoveLink( $imagePath, $ajaxHint, $title, $oldid )
 			. self::getBookCreatorBoxShowBookLink( $imagePath, $ajaxHint )
@@ -333,6 +328,7 @@ class CollectionHooks {
 	}
 
 	/**
+	 * @param $sk Skin
 	 * @param $imagePath
 	 * @param $ajaxHint
 	 * @param $title Title
@@ -410,11 +406,6 @@ class CollectionHooks {
 
 	}
 
-	/**
-	 * @param $imagePath
-	 * @param $ajaxHint
-	 * @return string
-	 */
 	static function getBookCreatorBoxShowBookLink( $imagePath, $ajaxHint ) {
 		$numArticles = CollectionSession::countArticles();
 
@@ -458,11 +449,6 @@ class CollectionHooks {
 		}
 	}
 
-	/**
-	 * @param $imagePath
-	 * @param $ajaxHint
-	 * @return string
-	 */
 	static function getBookCreatorBoxSuggestLink( $imagePath, $ajaxHint ) {
 		if ( wfMsg( 'coll-suggest_enabled' ) != '1' ) {
 			return '';
@@ -509,10 +495,8 @@ class CollectionHooks {
 	}
 
 	/**
-	 * OutputPageCheckLastModified hook
-	 * @param $modifiedTimes array
-	 * @return bool
-	 */
+	* OutputPageCheckLastModified hook
+	*/
 	static function checkLastModified( $modifiedTimes ) {
 		if ( CollectionSession::hasSession() ) {
 			$modifiedTimes['collection'] = $_SESSION['wsCollection']['timestamp'];
@@ -522,8 +506,6 @@ class CollectionHooks {
 
 	/**
 	 * ResourceLoaderGetConfigVars hook
-	 * @param $vars array
-	 * @return bool
 	 */
 	static function resourceLoaderGetConfigVars( &$vars ) {
 		$vars['wgCollectionVersion'] = $GLOBALS['wgCollectionVersion'];
