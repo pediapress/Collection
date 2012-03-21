@@ -5871,7 +5871,7 @@ Iste pagina non functionara correctemente si JavaScript non es activate.</strong
 	'coll-error_reponse' => 'Responsa de error ab servitor',
 	'coll-empty_collection' => 'Libro vacue',
 	'coll-revision' => 'Version: $1',
-	'coll-save_collection_title' => 'Salveguardar e condivider tu libro',
+	'coll-save_collection_title' => 'Salveguardar e divider tu libro',
 	'coll-save_collection_text' => 'Selige un location:',
 	'coll-login_to_save' => 'Si tu vole salveguardar libros pro uso futur, per favor [[Special:UserLogin|aperi un session o crea un conto]].',
 	'coll-personal_collection_label' => 'Libro personal:',
