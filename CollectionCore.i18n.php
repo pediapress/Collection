@@ -1668,6 +1668,23 @@ $messages['hi'] = array(
 	'coll-suggest_empty' => 'खाली',
 );
 
+/** Fiji Hindi (Latin script) (Fiji Hindi)
+ * @author Thakurji
+ */
+$messages['hif-latn'] = array(
+	'coll-print_export' => 'Print/export karo',
+	'coll-create_a_book' => 'Book banao',
+	'coll-create_a_book_tooltip' => 'Ek book nai to panna ke collection ke banao',
+	'coll-book_creator' => 'Book banae waala',
+	'coll-download_as' => '$1 ke naam pe download karo',
+	'coll-download_as_tooltip' => 'Ii wiki panna ke $1 version ke download karo',
+	'coll-disable' => 'disable karo',
+	'coll-book_creator_disable' => 'Book creator ke disable karo',
+	'coll-book_creator_disable_tooltip' => 'Book creator ke kaam me laae ke band karo',
+	'coll-add_linked_article' => 'Linked wiki panna ke aapan book me jorro',
+	'coll-suggest_empty' => 'khaali',
+);
+
 /** Croatian (Hrvatski)
  * @author Dalibor Bosits
  * @author Ex13
@@ -2978,6 +2995,18 @@ $messages['pdc'] = array(
 	'coll-n_pages' => '$1 {{PLURAL:$1|Blatt|Bledder}}',
 	'coll-printable_version_pdf' => 'PDF-Version',
 	'coll-suggest_empty' => 'leer',
+);
+
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'coll-disable' => 'abschdelle',
+	'coll-bookscategory' => 'Bischa',
+	'coll-clear_collection' => 'Buch lesche',
+	'coll-clear_collection_confirm' => 'Wilschd doi Buch wirglisch lesche?',
+	'coll-help' => 'Hilf',
+	'coll-helppage' => 'Help:Bischa',
 );
 
 /** Polish (Polski)

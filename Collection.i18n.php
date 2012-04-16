@@ -5273,6 +5273,18 @@ $messages['hi'] = array(
 	'right-collectionsaveascommunitypage' => 'पुस्तकों को समुदाय पृष्ठ के रूप में सहेजें',
 );
 
+/** Fiji Hindi (Latin script) (Fiji Hindi)
+ * @author Thakurji
+ */
+$messages['hif-latn'] = array(
+	'coll-start_book_creator' => 'Book creator ke suruu karo',
+	'coll-print_template_prefix' => 'Print karo',
+	'coll-your_book' => 'Tummar book',
+	'coll-download_title' => 'Download karo',
+	'coll-remove' => 'Hatao',
+	'coll-show' => 'Dekhao',
+);
+
 /** Hiligaynon (Ilonggo)
  * @author Jose77
  */
