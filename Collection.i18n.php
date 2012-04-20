@@ -6485,6 +6485,7 @@ L\'elenco viene aggiornato ogni qualvolta si fa clic sui pulsanti "aggiungi" o "
  * @author Fryed-peach
  * @author JtFuruhata
  * @author Marine-Blue
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
@@ -6508,7 +6509,7 @@ $messages['ja'] = array(
 	'coll-couldnotremovearticle_title' => 'ページを削除できませんでした',
 	'coll-couldnotremovearticle_msg' => 'このページは削除できませんでした。',
 	'coll-noscript_text' => '<h1>JavaScriptを利用しています！</h1>
-<strong>ご利用のブラウザは JavaScript をサポートしていないか、JavaScript が無効になっています。このページは、JavaScript が有効になっていない場合、正しく動作しません。</strong>',
+<strong>ご使用中のブラウザーは JavaScript に対応していないか、JavaScript が無効になっています。このページは、JavaScript が有効になっていない場合、正しく動作しません。</strong>',
 	'coll-savedbook_template' => '保存済みブック',
 	'coll-your_book' => 'あなたのブック',
 	'coll-download_title' => 'ダウンロード',
@@ -6583,7 +6584,8 @@ $messages['ja'] = array(
 	'coll-download_notfound_text' => 'あなたがダウンロードしようとしたファイルは存在しません。削除された場合は再生成が必要となります。',
 	'coll-download_failed_title' => 'ダウンロード中にエラー',
 	'coll-download_failed_text' => '次のファイルのダウンロード中にエラーがおきました: $1',
-	'coll-is_cached' => '<ul><li>ドキュメントのキャッシュ済み版がみつかりましたので、レンダリングは必要ありません。<a href="$1">強制的に再レンダリングする。</a></li></ul>',
+	'coll-is_cached' => '<ul><li>ドキュメントのキャッシュされた版を見つけたため、レンダリングは不要です。
+<a href="$1">強制的に再レンダリングする。</a></li></ul>',
 	'coll-excluded-templates' => '* カテゴリ [[:Category:$1|$1]] にあるテンプレートは除外されています。',
 	'coll-blacklisted-templates' => '* ブラックリスト [[:$1]] にあるテンプレートは除外されています。',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p>に戻る',
