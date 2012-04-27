@@ -180,6 +180,7 @@ The list is updated whenever you click on the add or remove buttons.',
  * @author Rancher
  * @author Raymond
  * @author Rex
+ * @author Shirayuki
  * @author Siebrand
  * @author Wmr89502270
  */
@@ -240,7 +241,7 @@ The variable $1 is another message string, as follows:
 $1 is not text; it is the http:// address of the book.',
 	'coll-excluded-templates' => "Part of the text of the special page 'Rendering finished' which appears after clicking on 'Download' and a book has been generated.",
 	'coll-blacklisted-templates' => "Part of the text of the special page 'Rendering finished' which appears after clicking on 'Download' and a book has been generated.",
-	'coll-return_to_collection' => 'Part of the text of the special page \'Rendering finished\' which appears after clicking on \'Download\' and a book has been generated. <nowiki><a href="$1">$2</a></nowiki> does not need translating. It is a wiki link back to the "Special:Book" page.',
+	'coll-return_to_collection' => 'Part of the text of the special page \'Rendering finished\' which appears after clicking on \'Download\' and a book has been generated. <nowiki><a href="$1">$2</a></nowiki> does not need translating. It is a wiki link back to the "[[Special:Book]]" page.',
 	'coll-order_from_pp' => '* $1 is the name of a print provider (a company name)',
 	'coll-about_pp' => '{{Identical|About}}',
 	'coll-invalid_podpartner_title' => 'POD means print-on-demand',
@@ -6494,7 +6495,7 @@ $messages['ja'] = array(
 	'coll-manage_your_book' => 'あなたのブックを管理',
 	'coll-book_creator_help' => 'より詳しくは[[{{MediaWiki:Coll-helppage}}|ブックについてのヘルプ]]を参照してください。',
 	'coll-start_book_creator' => 'ブッククリエーターを開始',
-	'coll-book_creator_continue' => 'ブッククリエーターを使い続ける',
+	'coll-book_creator_continue' => 'ブッククリエーターの使用を続行',
 	'coll-book_creator_disable_text' => '「ブッククリエーター」は無効化され、あなたが作業しているブックは削除されます。',
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/ブッククリエーター本文',
 	'coll-collection' => 'ブック',
@@ -6508,8 +6509,9 @@ $messages['ja'] = array(
 	'coll-couldnotaddarticle_msg' => 'このページは追加できませんでした。',
 	'coll-couldnotremovearticle_title' => 'ページを削除できませんでした',
 	'coll-couldnotremovearticle_msg' => 'このページは削除できませんでした。',
-	'coll-noscript_text' => '<h1>JavaScriptを利用しています！</h1>
-<strong>ご使用中のブラウザーは JavaScript に対応していないか、JavaScript が無効になっています。このページは、JavaScript が有効になっていない場合、正しく動作しません。</strong>',
+	'coll-noscript_text' => '<h1>JavaScript が必要です！</h1>
+<strong>ご使用中のブラウザーは JavaScript に対応していないか、JavaScript が無効になっています。
+このページは、JavaScript が有効ではない場合は正しく動作しません。</strong>',
 	'coll-savedbook_template' => '保存済みブック',
 	'coll-your_book' => 'あなたのブック',
 	'coll-download_title' => 'ダウンロード',
@@ -6552,7 +6554,8 @@ $messages['ja'] = array(
 	'coll-overwrite_text' => '[[:$1]] という名前のページが既に存在しています。これをあなたのブックに置き換えますか？',
 	'coll-yes' => 'はい',
 	'coll-no' => 'いいえ',
-	'coll-load_overwrite_text' => 'あなたのブックには既にページがいくつかあります。現在のブックを上書きする、ブックに追加する、このブックの読み込みを中止する、のいずれかを選択してください。',
+	'coll-load_overwrite_text' => 'あなたのブックには既にページがいくつかあります。
+現在のブックを上書き、ブックに追加、このブックの読み込みを中止、のいずれかを選択してください。',
 	'coll-overwrite' => '上書き',
 	'coll-append' => '追加',
 	'coll-cancel' => '中止',
@@ -6560,11 +6563,11 @@ $messages['ja'] = array(
 	'coll-limit_exceeded_title' => 'ブックが大きすぎます',
 	'coll-limit_exceeded_text' => 'あなたのブックは大きすぎます。これ以上のページを追加することはできません。',
 	'coll-rendering_title' => 'レンダリング中',
-	'coll-rendering_text' => '<p><strong>ドキュメントが生成されるあいだ、しばらくお待ちください。</strong></p>
+	'coll-rendering_text' => '<p><strong>ドキュメント生成が完了するまでお待ちください。</strong></p>
 
-<p><strong>進捗:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+<p><strong>進捗：</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>このページは数秒毎に自動的に更新されます。更新されない場合は、ブラウザの更新ボタンを押してください。</p>',
+<p>このページは数秒毎に自動更新されます。更新されない場合は、ブラウザの更新ボタンを押してください。</p>',
 	'coll-rendering_status' => '<strong>状況:</strong> $1',
 	'coll-rendering_article' => '(ウィキページ: $1)',
 	'coll-rendering_page' => '(ページ: $1)',
@@ -6588,7 +6591,7 @@ $messages['ja'] = array(
 <a href="$1">強制的に再レンダリングする。</a></li></ul>',
 	'coll-excluded-templates' => '* カテゴリ [[:Category:$1|$1]] にあるテンプレートは除外されています。',
 	'coll-blacklisted-templates' => '* ブラックリスト [[:$1]] にあるテンプレートは除外されています。',
-	'coll-return_to_collection' => '<p><a href="$1">$2</a></p>に戻る',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a>に戻る</p>',
 	'coll-book_title' => '印刷済みの本として注文',
 	'coll-book_text' => '印刷済みの本をわれわれのオンデマンド印刷パートナーから入手:',
 	'coll-order_from_pp' => '$1でプレビュー',
@@ -6599,7 +6602,8 @@ $messages['ja'] = array(
 	'coll-return_to' => '[[:$1]]に戻る',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress注文情報',
 	'coll-suggest_title' => 'ブックに追加するページの候補',
-	'coll-suggest_intro_text' => '現在のあなたのブックに含まれるウィキページ群に基づき、候補を一覧表示しています。あなたが追加や除去のボタンを押すとすぐに一覧は更新されます。',
+	'coll-suggest_intro_text' => '現在のあなたのブックに含まれるウィキページ群に基づき、候補を一覧表示しています。
+あなたが追加や除去のボタンを押すとすぐに一覧は更新されます。',
 	'coll-suggested_articles' => '候補',
 	'coll-suggest_reset_bans' => 'リセット',
 	'coll-suggest_reset_bans_tooltip' => '以前に一覧から取り除いた候補を表示',
@@ -6613,7 +6617,8 @@ $messages['ja'] = array(
 	'coll-suggest_article_remove' => 'ページ「<strong>$1</strong>」はあなたのブックから除去されました（$2）。',
 	'coll-suggest_undo_tooltip' => 'この操作を取り消し',
 	'coll-suggest_undo' => '取り消し',
-	'coll-load_local_book' => 'OKをクリックすると %NUMPAGES% 件のウィキページを含む本を %TITLE% という題で作成します。この本を削除して新しい本を作成する場合はキャンセルをクリックしてください。',
+	'coll-load_local_book' => 'OKをクリックすると %NUMPAGES% 件のウィキページを含む本を %TITLE% という題で作成します。
+この本を削除して新しい本を作成する場合はキャンセルをクリックしてください。',
 	'right-collectionsaveasuserpage' => 'ブックを利用者ページとして保存',
 	'right-collectionsaveascommunitypage' => 'ブックを共有ページとして保存',
 );

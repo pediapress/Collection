@@ -2052,6 +2052,7 @@ $messages['it'] = array(
  * @author JtFuruhata
  * @author Marine-Blue
  * @author Naohiro19
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
@@ -2060,20 +2061,20 @@ $messages['ja'] = array(
 	'coll-create_a_book_tooltip' => 'ブックあるいは記事集を作成する',
 	'coll-book_creator' => 'ブッククリエーター',
 	'coll-download_as' => '$1としてダウンロード',
-	'coll-download_as_tooltip' => 'このウィキページの$1版をダウンロードする',
+	'coll-download_as_tooltip' => 'このウィキページの$1版をダウンロード',
 	'coll-disable' => '無効化',
 	'coll-book_creator_disable' => 'ブッククリエーターを無効化',
 	'coll-book_creator_disable_tooltip' => 'ブッククリエーターを使うのを止める',
-	'coll-add_linked_article' => 'リンクされているウィキページをブックに追加する',
+	'coll-add_linked_article' => 'リンクされているウィキページをブックに追加',
 	'coll-remove_linked_article' => 'あなたの本からウィキページのリンクを削除',
-	'coll-add_category' => 'このカテゴリを自分のブックに追加する',
-	'coll-add_category_tooltip' => 'このカテゴリ中のすべてのページをあなたのブックに追加する',
-	'coll-add_this_page' => 'このページを自分のブックに追加する',
-	'coll-add_page_tooltip' => '現在のページをあなたのブックに追加する',
+	'coll-add_category' => 'このカテゴリを自分のブックに追加',
+	'coll-add_category_tooltip' => 'このカテゴリ中のすべてのページをあなたのブックに追加',
+	'coll-add_this_page' => 'このページを自分のブックに追加',
+	'coll-add_page_tooltip' => '現在のページをあなたのブックに追加',
 	'coll-bookscategory' => 'ブック',
 	'coll-clear_collection' => 'ブックを消去',
 	'coll-clear_collection_confirm' => '本当にブックを完全に消去しますか？',
-	'coll-clear_collection_tooltip' => 'あなたの現在のブックからすべてのウィキページを削除する',
+	'coll-clear_collection_tooltip' => 'あなたの現在のブックからすべてのウィキページを削除',
 	'coll-help' => 'ヘルプ',
 	'coll-help_tooltip' => 'ブックの作成に関するヘルプを表示する',
 	'coll-helppage' => 'Help:ブック',
