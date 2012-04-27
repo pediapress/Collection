@@ -83,10 +83,17 @@ class CollectionSession {
 	}
 
 	/**
+	 * @return bool
+	 */
+	static function hasItems() {
+		return self::hasSession() && isset( $_SESSION['wsCollection']['items'] );
+	}
+
+	/**
 	 * @return int
 	 */
 	static function countArticles() {
-		if ( !self::hasSession() ) {
+		if ( !self::hasItems() ) {
 			return 0;
 		}
 		$count = 0;
@@ -104,7 +111,7 @@ class CollectionSession {
 	 * @return int
 	 */
 	static function findArticle( $title, $oldid = 0 ) {
-		if ( !self::hasSession() ) {
+		if ( !self::hasItems() ) {
 			return - 1;
 		}
 
