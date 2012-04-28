@@ -12,7 +12,6 @@ if ( !defined( 'MEDIAWIKI' ) ) die( - 1 );
  */
 class CollectionPageTemplate extends QuickTemplate {
 	function execute() {
-		$mediapath = $GLOBALS['wgExtensionAssetsPath'] . '/Collection/images/';
 ?>
 
 <div class="collection-column collection-column-left">
@@ -142,7 +141,6 @@ foreach ( $this->data['podpartners'] as $partnerKey => $partnerData ) {
 		<h2><span class="mw-headline"><?php $this->msg( 'coll-save_collection_title' ) ?></span></h2>
 		<?php
 				$this->msgWiki( 'coll-save_collection_text' );
-				$communityCollNS = $GLOBALS['wgCommunityCollectionNamespace'];
 		?>
 			<form id="saveForm" action="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book' ) ) ?>" method="post">
 				<table style="width:100%; background-color: transparent;"><tbody>
@@ -451,7 +449,10 @@ class CollectionSuggestTemplate extends QuickTemplate {
 <?php
 	}
 
-	// needed for Ajax functions
+	/**
+	 * needed for Ajax functions
+	 * @return string
+	 */
 	function getProposalList () {
 		global $wgScript, $wgScriptPath;
 
@@ -490,7 +491,10 @@ class CollectionSuggestTemplate extends QuickTemplate {
 		return $out;
 	}
 
-	// needed for Ajax functions
+	/**
+	 * needed for Ajax functions
+	 * @return string
+	 */
 	function getMemberList() {
 		$mediapath = $GLOBALS['wgScriptPath'] . '/extensions/Collection/images/';
 		$coll = $this->data['collection'];
