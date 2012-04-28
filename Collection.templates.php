@@ -227,6 +227,9 @@ if ( count( $this->data['collection']['items'] ) == 0 ) { ?>
 <ul id="collectionList">
 
 <?php
+if ( !isset( $this->data['collection']['items'] ) ) {
+	return;
+}
 foreach ( $this->data['collection']['items'] as $index => $item ) {
 	if ( $item['type'] == 'article' ) { ?>
 	<li id="item-<?php echo intval( $index ) ?>" class="article">
