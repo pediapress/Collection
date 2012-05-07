@@ -13352,6 +13352,7 @@ $messages['yi'] = array(
 	'coll-show' => 'ווײַז',
 	'coll-title' => 'טיטל:',
 	'coll-contents' => 'אינהאַלט',
+	'coll-no_such_category' => 'נישט פאראן אזא קאטעגאריע',
 	'coll-empty_collection' => 'ליידיג בוך',
 	'coll-revision' => 'רעוויזיע: $1',
 	'coll-yes' => 'יא',
