@@ -987,25 +987,26 @@ class SpecialCollection extends SpecialPage {
 		}
 
 		$items = array();
-		$currentChapter = null;
-		foreach ( $collection['items'] as $item ) {
-			if ( $item['type'] == 'article' ) {
-				if ( is_null( $currentChapter ) ) {
-					$items[] = $item;
-				} else {
-					$currentChapter['items'][] = $item;
+		if ( isset( $collection['items'] ) ) {
+			$currentChapter = null;
+			foreach ( $collection['items'] as $item ) {
+				if ( $item['type'] == 'article' ) {
+					if ( is_null( $currentChapter ) ) {
+						$items[] = $item;
+					} else {
+						$currentChapter['items'][] = $item;
+					}
+				} elseif ( $item['type'] == 'chapter' ) {
+					if ( !is_null( $currentChapter ) ) {
+						$items[] = $currentChapter;
+					}
+					$currentChapter = $item;
 				}
-			} elseif ( $item['type'] == 'chapter' ) {
-				if ( !is_null( $currentChapter ) ) {
-					$items[] = $currentChapter;
-				}
-				$currentChapter = $item;
+			}
+			if ( !is_null( $currentChapter ) ) {
+				$items[] = $currentChapter;
 			}
 		}
-		if ( !is_null( $currentChapter ) ) {
-			$items[] = $currentChapter;
-		}
-
 		$result['items'] = $items;
 
 		$json = new Services_JSON();
