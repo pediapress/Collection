@@ -323,6 +323,47 @@ $messages['arz'] = array(
 	'coll-suggest_empty' => 'فاضى',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
+ * @author Gitartha.bordoloi
+ */
+$messages['as'] = array(
+	'coll-print_export' => 'মুদ্রণ/এক্সপৰ্ট',
+	'coll-create_a_book' => 'কিতাপ সৃষ্টি কৰক',
+	'coll-create_a_book_tooltip' => 'পৃষ্ঠাৰ সংকলন বা কিতাপ তৈয়াৰ কৰক',
+	'coll-book_creator' => 'কিতাপ প্ৰস্তুতকৰ্তা',
+	'coll-download_as' => '$1 ডাউনল’ড',
+	'coll-download_as_tooltip' => "এই ৱিকি পৃষ্ঠাৰ এটা $1 সংস্কৰণ ডাউনল'ড কৰক",
+	'coll-disable' => 'নিষ্ক্ৰিয়',
+	'coll-book_creator_disable' => 'গ্ৰন্থ প্ৰস্তুতকাৰক নিষ্ক্ৰিয় কৰক',
+	'coll-book_creator_disable_tooltip' => 'গ্ৰন্থ প্ৰস্তুতকাৰকৰ ব্যৱহাৰ বন্ধ কৰক',
+	'coll-add_linked_article' => 'আপোনাৰ গ্ৰন্থত ৱিকি পৃষ্ঠাৰ সংযোগ দিয়ক',
+	'coll-remove_linked_article' => 'আপোনাৰ গ্ৰন্থৰ পৰা ৱিকি পৃষ্ঠাৰ সংযোগ আঁতৰাওক',
+	'coll-add_category' => 'আপোনাৰ গ্ৰন্থত এই শ্ৰেণী যোগ কৰক',
+	'coll-add_category_tooltip' => 'আপোনাৰ গ্ৰন্থত এই শ্ৰেণীৰ সকলো ৱিকি পৃষ্ঠা যোগ কৰক',
+	'coll-add_this_page' => 'আপোনাৰ গ্ৰন্থত এই পৃষ্ঠা যোগ কৰক',
+	'coll-add_page_tooltip' => 'আপোনাৰ গ্ৰন্থত এই সাম্প্ৰতিক ৱিকি পৃষ্ঠা যোগ কৰক',
+	'coll-bookscategory' => 'কিতাপসমূহ',
+	'coll-clear_collection' => 'গ্ৰন্থ পৰিষ্কাৰ কৰক',
+	'coll-clear_collection_confirm' => 'আপুনি সঁচাকৈ গ্ৰন্থখন সম্পূৰ্ণভাৱে পৰিষ্কাৰ কৰিব বিচাৰিছেনে?',
+	'coll-clear_collection_tooltip' => 'আপোনাৰ সাম্প্ৰতিক গ্ৰন্থৰ পৰা সকলো ৱিকি পৃষ্ঠা আঁতৰাওক',
+	'coll-help' => 'সহায়',
+	'coll-help_tooltip' => 'গ্ৰন্থ সৃষ্টি কৰাৰ বিষয়ে সহায় দেখুৱাওক',
+	'coll-helppage' => 'Help:কিতাপ',
+	'coll-load_collection' => "গ্ৰন্থ ল'ড কৰক",
+	'coll-load_collection_tooltip' => "এই গ্ৰন্থখন আপোনাৰ সাম্প্ৰতিক গ্ৰন্থ হিচাপে ল'ড কৰক",
+	'coll-n_pages' => '$1 {{PLURAL:$1|খন পৃষ্ঠা|খন পৃষ্ঠা}}',
+	'coll-printable_version_pdf' => 'পিডিএফ সংস্কৰণ',
+	'coll-remove_this_page' => 'আপোনাৰ গ্ৰন্থৰ পৰা এই পৃষ্ঠাখন আঁতৰাওক',
+	'coll-remove_page_tooltip' => 'আপোনাৰ গ্ৰন্থৰ পৰা এই সাম্প্ৰতিক ৱিকি পৃষ্ঠা আঁতৰাওক',
+	'coll-show_collection' => 'গ্ৰন্থ দেখুৱাওক',
+	'coll-show_collection_tooltip' => "আপোনাৰ গ্ৰন্থ সম্পাদনা/ডাউনল'ড/অৰ্ডাৰৰ বাবে ক্লিক কৰক",
+	'coll-not_addable' => 'এই পৃষ্ঠাখন যোগ কৰিব নোৱাৰি',
+	'coll-make_suggestions' => 'পৰামৰ্শ পৃষ্ঠা',
+	'coll-make_suggestions_tooltip' => 'আপোনাৰ গ্ৰন্থৰ পৃষ্ঠাসমূহক ভিত্তি কৰি পৰামৰ্শ দেখুৱাওক',
+	'coll-suggest_empty' => 'খালি',
+);
+
 /** Asturian (Asturianu)
  * @author Esbardu
  * @author Xuacu
@@ -1958,7 +1999,7 @@ $messages['ilo'] = array(
 	'coll-suggest_empty' => 'awan ti nagyan na',
 );
 
-/** Ingush (ГІалгІай Ğalğaj)
+/** Ingush (ГӀалгӀай)
  * @author Amire80
  * @author Sapral Mikail
  */
@@ -3807,11 +3848,13 @@ $messages['sw'] = array(
 
 /** Tamil (தமிழ்)
  * @author Karthi.dr
+ * @author Logicwiki
  * @author Shanmugamp7
  * @author TRYPPN
  * @author செல்வா
  */
 $messages['ta'] = array(
+	'coll-print_export' => 'அச்சு/ஏற்றுமதி',
 	'coll-create_a_book' => 'ஒரு புத்தகம் உருவாக்கு',
 	'coll-create_a_book_tooltip' => 'புத்தகத்தை அல்லது பக்க தொகுப்பை உருவாக்கு',
 	'coll-book_creator' => 'புத்தகம் உருவாக்குபவர்',
@@ -3914,7 +3957,7 @@ $messages['tg-cyrl'] = array(
 	'coll-show_collection' => 'Намоиши гирдоварӣ',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -4223,7 +4266,7 @@ $messages['vec'] = array(
 	'coll-suggest_empty' => 'vodo',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(

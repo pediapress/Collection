@@ -436,7 +436,7 @@ $messages['aeb'] = array(
 	'right-collectionsaveascommunitypage' => 'احفظ الكتب كصفحة مجتمع',
 );
 
-/** Abkhazian (Аҧсуа)
+/** Abkhazian (Аҧсшәа)
  * @author Temuri rajavi
  */
 $messages['ab'] = array(
@@ -1086,6 +1086,99 @@ $messages['arz'] = array(
 	'coll-suggest_undo' => 'ارجع',
 	'right-collectionsaveasuserpage' => 'احفظ الكتب كصفحه مستخدم',
 	'right-collectionsaveascommunitypage' => 'احفظ الكتب كصفحه مجتمع',
+);
+
+/** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
+ * @author Gitartha.bordoloi
+ */
+$messages['as'] = array(
+	'coll-desc' => '[[Special:Book|গ্ৰন্থ সৃষ্টি]]',
+	'coll-book_creator_intro' => "<big>''গ্ৰন্থ প্ৰস্তুতকাৰক''ৰ সহায়ত আপুনি পছন্দৰ ৱিকি পৃষ্ঠা থকা এখন গ্ৰন্থ সৃষ্টি কৰিব পাৰে। আপুনি গ্ৰন্থখন বিভিন্ন ফৰ্মেটত ৰপ্তানি কৰিব পাৰিব (যেনে পিডিএফ বা অ'ডিফ) বা মুদ্ৰিত ৰূপ অৰ্ডাৰ দিব পাৰিব।</big>",
+	'coll-manage_your_book' => 'আপোনাৰ গ্ৰন্থৰ ব্যৱস্থাপনা কৰক',
+	'coll-book_creator_help' => 'অধিক তথ্যৰ বাবে [[{{MediaWiki:Coll-helppage}}|গ্ৰন্থ সংক্ৰান্তীয় সহায় পৃষ্ঠা]] চাওক।',
+	'coll-start_book_creator' => 'গ্ৰন্থ প্ৰস্তুতকাৰক আৰম্ভ কৰক',
+	'coll-book_creator_continue' => 'গ্ৰন্থ প্ৰস্তুতকাৰকৰ ব্যৱহাৰ অব্যাহত ৰাখক',
+	'coll-book_creator_disable_text' => "''গ্ৰন্থ প্ৰস্তুতকাৰক'' নিষ্ক্ৰিয় কৰা হ'ব আৰু আপুনি সৃষ্টি কৰি থকা গ্ৰন্থখন আঁতৰ কৰা হ'ব।",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/গ্ৰন্থ প্ৰস্তুতকাৰক পাঠ',
+	'coll-collection' => 'কিতাপ',
+	'coll-collections' => 'কিতাপসমূহ',
+	'coll-exclusion_category_title' => 'মুদ্ৰন নহয়',
+	'coll-print_template_prefix' => 'প্ৰিণ্ট কৰিবলৈ',
+	'coll-print_template_pattern' => '$1/মুদ্ৰণ',
+	'coll-unknown_subpage_title' => 'অজ্ঞাত উপপৃষ্ঠা',
+	'coll-unknown_subpage_text' => '[[Special:Book|গ্ৰন্থৰ]] এই উপপৃষ্ঠাখন নাই',
+	'coll-couldnotaddarticle_title' => "ৱিকি পৃষ্ঠা যোগ কৰিব পৰা নগ'ল",
+	'coll-couldnotaddarticle_msg' => "এই ৱিকি পৃষ্ঠা যোগ কৰিব পৰা নগ'ল",
+	'coll-couldnotremovearticle_title' => "ৱিকি পৃষ্ঠা আঁতৰাব পৰা নগ'ল",
+	'coll-couldnotremovearticle_msg' => "এই ৱিকি পৃষ্ঠা আঁতৰাব পৰা নগ'ল।",
+	'coll-noscript_text' => '<h1>জাভালিপিৰ প্ৰয়োজন!</h1>
+<strong>আপোনাৰ ব্ৰাউজাৰে জাভালিপি সমৰ্থন নকৰে বা জাভালিপি বন্ধ কৰি থোৱা হৈছে।
+জাভালিপি সক্ৰিয় নকৰা পৰ্যন্ত এই পৃষ্ঠাখনে ভালকৈ কাম নকৰিব।</strong>',
+	'coll-savedbook_template' => 'সংৰক্ষিত‌_গ্ৰন্থ',
+	'coll-your_book' => 'আপোনাৰ কিতাপ',
+	'coll-download_title' => 'ডাউনল’ড',
+	'coll-download_text' => "আপোনাৰ গ্ৰন্থ ডাউনল'ড কৰিবলৈ এটা ফৰ্মেট বাছনি কৰক আৰু বুটামটো টিপক।",
+	'coll-download_as_text' => "$1 ফৰ্মেটত আপোনাৰ গ্ৰন্থখন ডাউনল'ড কৰিবলৈ বুটামটো টিপক।",
+	'coll-download' => 'ডাউনল’ড কৰক',
+	'coll-format_label' => 'ফৰ্মেট:',
+	'coll-remove' => 'অপসাৰণ',
+	'coll-show' => 'দেখুৱাওক',
+	'coll-move_to_top' => 'শীৰ্ষলৈ যাওক',
+	'coll-move_up' => 'ওপৰলৈ যাওক',
+	'coll-move_down' => 'তললৈ যাওক',
+	'coll-move_to_bottom' => 'একেবাৰে তললৈ যাওক',
+	'coll-title' => 'শীৰ্ষক',
+	'coll-subtitle' => 'উপশিৰোনাম',
+	'coll-contents' => 'সূচী',
+	'coll-drag_and_drop' => 'ৱিকি পৃষ্ঠা আৰু অধ্যায়ৰ ক্ৰম পুনৰায় ঠিক কৰিবলৈ ড্ৰেগ্‌ এণ্ড ড্ৰপ ব্যৱহাৰ কৰক',
+	'coll-create_chapter' => 'অধ্যায় সৃষ্টি কৰক',
+	'coll-sort_alphabetically' => 'বৰ্ণানুক্ৰমে সজাওক',
+	'coll-rename' => 'পুনৰ নামাকৰণ',
+	'coll-new_chapter' => 'নতুন অধ্যায়ৰ নাম লিখক',
+	'coll-rename_chapter' => 'অধ্যায়ৰ নতুন নাম লিখক',
+	'coll-no_such_category' => 'তেনে কোনো শ্ৰেণী নাই',
+	'coll-notitle_title' => "পৃষ্ঠাখনৰ শিৰোনামা চিহ্নিত কৰিব পৰা নগ'ল।",
+	'coll-post_failed_title' => 'POST অনুৰোধ ব্যৰ্থ হৈছে',
+	'coll-post_failed_msg' => '$1লৈ POST অনুৰোধ ব্যৰ্থ হৈছে ($2)।',
+	'coll-mwserve_failed_title' => "ৰে'ণ্ডাৰ চাৰ্ভাৰ ত্ৰুটি",
+	'coll-mwserve_failed_msg' => "ৰে'ণ্ডাৰ চাৰ্ভাৰত এটা ত্ৰুটি ঘটিছে: <nowiki>$1</nowiki>",
+	'coll-error_reponse' => 'চাৰ্ভাৰৰ পৰা সঁহাৰি ত্ৰুটি পোৱা গৈছে',
+	'coll-empty_collection' => 'উকা কিতাপ',
+	'coll-revision' => 'সংশোধন: $1',
+	'coll-save_collection_title' => 'আপোনাৰ গ্ৰন্থ সাঁচক আৰু বিলাওক',
+	'coll-save_collection_text' => 'আপোনাৰ গ্ৰন্থৰ বাবে এটা সংৰক্ষণ স্থান বাছনি কৰক:',
+	'coll-login_to_save' => 'আপুনি যদি পিছত ব্যৱহাৰৰ বাবে গ্ৰন্থ সাঁচিব বিচাৰিছে, অনুগ্ৰহ কৰি [[Special:UserLogin|লগ্‌ ইন কৰক বা এটা একাউণ্ট খোলক]]।',
+	'coll-personal_collection_label' => 'ব্যক্তিগত কিতাপ',
+	'coll-community_collection_label' => 'সমজুৱা গ্ৰন্থ:',
+	'coll-save_collection' => 'গ্ৰন্থ সাঁচক',
+	'coll-save_category' => 'সকলো সাঁচি থোৱা গ্ৰন্থ [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] শ্ৰেণীত সংৰক্ষণ কৰা হয়।',
+	'coll-overwrite_title' => "পৃষ্ঠাখন আছেই।
+অ'ভাৰৰাইট কৰিব?",
+	'coll-overwrite_text' => '[[:$1]] নামৰ এখন পৃষ্ঠা ইতিমধ্যে আছেই।
+আপুনি সেইখন আপোনাৰ গ্ৰন্থৰ লগত সলাব বিচাৰিছে নেকি?',
+	'coll-yes' => 'হয়',
+	'coll-no' => 'নহয়',
+	'coll-overwrite' => 'প্ৰতিস্থাপন',
+	'coll-cancel' => 'বাতিল',
+	'coll-update' => 'আপডেট কৰক',
+	'coll-limit_exceeded_title' => 'গ্ৰন্থৰ আকাৰ ডাঙৰ হৈছে',
+	'coll-limit_exceeded_text' => 'আপোনাৰ গ্ৰন্থৰ আকাৰ ডাঙৰ হৈছে।
+আৰু পৃষ্ঠা যোগ কৰিব নোৱাৰি।',
+	'coll-rendering_title' => "ৰে'ণ্ডাৰ কৰি থকা হৈছে",
+	'coll-suggested_articles' => 'পৰামৰ্শ',
+	'coll-suggest_reset_bans' => 'পূৰ্বৰ অৱস্থালৈ লৈ যাওক',
+	'coll-suggest_your_book' => 'আপোনাৰ কিতাপ',
+	'coll-suggest_show' => 'দেখুৱাওক',
+	'coll-suggest_ban_tooltip' => 'পৰামৰ্শৰ তালিকাৰ পৰা এই পৃষ্ঠাখন আঁতৰাওক',
+	'coll-suggest_article_ban' => '<strong>$1</strong> পৃষ্ঠাখন পৰামৰ্শ তালিকাৰ পৰা আঁতৰোৱা হৈছে ($2)।',
+	'coll-suggest_article_add' => '<strong>$1</strong> পৃষ্ঠাখন আপোনাৰ গ্ৰন্থত যোগ কৰা হৈছে ($2)।',
+	'coll-suggest_article_remove' => '<strong>$1</strong> পৃষ্ঠাখন আপোনাৰ গ্ৰন্থৰ পৰা আঁতৰোৱা হৈছে ($2)।',
+	'coll-suggest_undo_tooltip' => 'এই কামটো নোহোৱা কৰক',
+	'coll-suggest_undo' => 'পূৰ্ববত কৰক',
+	'coll-load_local_book' => '%NUMPAGES% খন ৱিকি পৃষ্ঠা থকা আপোনাৰ %TITLE% গ্ৰন্থৰ বাবে OK ক্লিক কৰক। এইখন বিলোপ কৰি নতুন এখন আৰম্ভ কৰিবলৈ Cancel ক্লিক কৰক।',
+	'right-collectionsaveasuserpage' => 'সদস্য পৃষ্ঠাৰূপে গ্ৰন্থ সাঁচক',
+	'right-collectionsaveascommunitypage' => 'সমজুৱা পৃষ্ঠাৰূপে গ্ৰন্থ সাঁচক',
 );
 
 /** Asturian (Asturianu)
@@ -2915,6 +3008,7 @@ Immer, wenn Sie auf die Hinzufügen- oder Entfernen-Buttons klicken, wird die Li
 );
 
 /** Zazaki (Zazaki)
+ * @author Erdemaslancan
  * @author Mirzali
  * @author Xoser
  */
@@ -2983,7 +3077,7 @@ Heta ti JavaScript a nike, ena pel hewl nihebitiyeno.</strong>',
 Sero binusi?',
 	'coll-overwrite_text' => 'Yew pel ser nameyê [[:$1]]î zatî esto.
 Ti wazeno ey kitab pê kitabê xo rê bivurne?',
-	'coll-yes' => 'Ye',
+	'coll-yes' => 'E',
 	'coll-no' => 'Ne',
 	'coll-load_overwrite_text' => 'Kitabê xo de zatî pelan esto. 
 Ti wazeno ser kitabê xo de binuse, kontendê newe ya zi bar kerdişê kitabî îptal bike?',
@@ -6266,7 +6360,7 @@ Ti listaan ket maipabaro no agpatinayon ka nga agtakla iti agnayon wenno agikkat
 	'right-collectionsaveascommunitypage' => 'Idulin ti liblibro a kas panid ti komunidad',
 );
 
-/** Ingush (ГІалгІай Ğalğaj)
+/** Ingush (ГӀалгӀай)
  * @author Amire80
  * @author Sapral Mikail
  */
@@ -7299,10 +7393,11 @@ $messages['ku-latn'] = array(
 /** Cornish (Kernowek)
  * @author Kernoweger
  * @author Kw-Moon
+ * @author Nrowe
  */
 $messages['kw'] = array(
 	'coll-rename' => 'Dashenwel',
-	'coll-cancel' => 'Hedhy',
+	'coll-cancel' => 'Hedhi',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -8861,6 +8956,7 @@ De lijst wordt bijgewerkt als u op de knop 'toevoegen' of 'verwijderen' klikt.",
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'coll-desc' => '[[Special:Book|Opprett bøker]]',
@@ -9255,6 +9351,18 @@ $messages['pdc'] = array(
 	'coll-suggest_show' => 'zeige',
 	'coll-suggest_undo_tooltip' => 'Die Aktion losmache',
 	'coll-suggest_undo' => 'losmache',
+);
+
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'coll-collection' => 'Buch',
+	'coll-collections' => 'Bischa',
+	'coll-your_book' => 'Doi Buch',
+	'coll-show' => 'Zaische',
+	'coll-suggest_your_book' => 'Doi Buch',
+	'coll-suggest_show' => 'zaische',
 );
 
 /** Polish (Polski)
@@ -9762,6 +9870,7 @@ A lista é actualizada sempre que clica os botões de adicionar ou remover.',
  * @author Heldergeovane
  * @author Jorge Morais
  * @author Luckas Blade
+ * @author 555
  */
 $messages['pt-br'] = array(
 	'coll-desc' => '[[Special:Book|Criar livros]]',
@@ -9890,7 +9999,7 @@ A lista é atualizada toda vez que você clica nos botões adicionar ou remover.
 	'coll-suggest_add_selected' => 'Adicionar páginas selecionadas',
 	'coll-suggest_ban_selected' => 'Remover páginas selecionadas',
 	'coll-suggest_your_book' => 'Seu livro',
-	'coll-suggest_show' => 'mostrar',
+	'coll-suggest_show' => 'exibir',
 	'coll-suggest_ban_tooltip' => 'Remover esta página da lista de sugestões',
 	'coll-suggest_article_ban' => 'A página <strong>$1</strong> foi removida das sugestões ($2).',
 	'coll-suggest_article_add' => 'A página <strong>$1</strong> foi adicionada ao seu livro ($2).',
@@ -9900,12 +10009,6 @@ A lista é atualizada toda vez que você clica nos botões adicionar ou remover.
 	'coll-load_local_book' => 'Clique OK para continuar com o seu livro %TITLE% que contém %NUMPAGES% páginas wiki. Clique Cancelar para apagá-lo e começar com um livro vazio.',
 	'right-collectionsaveasuserpage' => 'Salvar livros como página de usuário',
 	'right-collectionsaveascommunitypage' => 'Salvar livros como páginas comunitárias',
-);
-
-/** Quechua (Runa Simi)
- * @author AlimanRuna
- */
-$messages['qu'] = array(
 );
 
 /** Romansh (Rumantsch)
@@ -12112,7 +12215,7 @@ $messages['tg-cyrl'] = array(
 	'coll-return_to' => 'Бозгашт ба [[:$1]]',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -13079,7 +13182,7 @@ La lista la vien ajornà ogni olta che te struchi sui botoni "zonta" o "cava".',
 	'right-collectionsaveascommunitypage' => 'Salva na colezion come pagina comunitaria',
 );
 
-/** Veps (Vepsän kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
