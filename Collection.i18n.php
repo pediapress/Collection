@@ -174,6 +174,7 @@ The list is updated whenever you click on the add or remove buttons.',
  * @author EugeneZelenko
  * @author Fryed-peach
  * @author Jon Harald Søby
+ * @author Lejonel
  * @author Lloffiwr
  * @author Mormegil
  * @author Purodha
@@ -197,8 +198,10 @@ $messages['qqq'] = array(
 $1 is a placeholder and will be replaced by content during the rendering process.',
 	'coll-savedbook_template' => 'This is the name of a template that is inserted at the top of pages for saved collections ([[wikipedia:Template:Saved_book|example]]).',
 	'coll-your_book' => '{{Identical|Books}}',
-	'coll-download_title' => '{{Identical|Download}}',
-	'coll-download' => '{{Identical|Download}}',
+	'coll-download_title' => 'Header for the download section on [[Special:Book]].
+{{Identical|Download}}',
+	'coll-download' => 'Text on download button on [[Special:Book]].
+{{Identical|Download}}',
 	'coll-format_label' => '{{Identical|Format}}',
 	'coll-remove' => '{{Identical|Remove}}',
 	'coll-show' => '{{Identical|Show}}',
@@ -2526,6 +2529,7 @@ $messages['cu'] = array(
 
 /** Welsh (Cymraeg)
  * @author Lloffiwr
+ * @author Xxglennxx
  */
 $messages['cy'] = array(
 	'coll-desc' => '[[Special:Book|Llunio llyfrau]]',
@@ -2633,7 +2637,7 @@ Efallai ei fod wedi ei ddileu ac felly bod angen ei gynhyrchu o'r newydd.",
 	'coll-is_cached' => '<ul><li>Cafwyd hyd i fersiwn o\'r ddogfen mewn celc, felly nid oedd rhaid ei gynhyrchu.
 <a href="$1">Gorfodi ei chynhyrchu o\'r newydd.</a></li></ul>',
 	'coll-excluded-templates' => '* Wedi hepgor y nodiadau yn y categori [[:Category:$1|$1]].',
-	'coll-blacklisted-templates' => '* Ni chynhwyswyd nodiadau sydd ar y rhestr gwaharddedig [[:$1]].',
+	'coll-blacklisted-templates' => '* Ni chynhwyswyd nodiadau sydd ar y rhestr waharddedig [[:$1]].',
 	'coll-return_to_collection' => '<p>Dychwelyd i\'r dudalen <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Archebu fel llyfr printiedig',
 	'coll-book_text' => "Archebu llyfr oddi wrth ein partner argraffu ''print-on-demand''.",
@@ -2647,7 +2651,7 @@ Cysylltwch â'ch gweinyddwyr MediaWiki.",
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Gwybodaeth am archebu oddi wrth PediaPress',
 	'coll-suggest_title' => 'Awgrymu tudalennau ar gyfer eich llyfr',
 	'coll-suggest_intro_text' => "Mae'r awgrymiadau hyn wedi eu seilio ar y detholiad presennol o dudalennau wici yn eich llyfr.
-Mae'r rhestr yn cael ei adnewyddu bob tro yr ydych yn pwyso ar y botymau ychwanegu neu tynnu.",
+Mae'r rhestr yn cael ei hadnewyddu bob tro yr ydych yn pwyso ar y botymau ychwanegu neu dynnu.",
 	'coll-suggested_articles' => 'Awgrymiadau',
 	'coll-suggest_reset_bans' => 'ailosod',
 	'coll-suggest_reset_bans_tooltip' => 'Dangos yr awgrymiadau a dynnwyd i ffwrdd ynghynt',
@@ -6961,9 +6965,136 @@ $messages['ka'] = array(
 
 /** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
  * @author GaiJin
+ * @author Kaztrans
  */
 $messages['kk-cyrl'] = array(
-	'coll-format_label' => 'Пішім:',
+	'coll-desc' => '[[Special:Book|Кітаптар жасау]]',
+	'coll-book_creator_intro' => '"Кітап жасаушы" құралының көмегімен Уикипедиядан беттерді таңдау арқылы сіз кітап жасай аласыз. Кітаптарды әр түрлі форматта (мысалы, PDF немесе ODF) экспорттай аласыз немесе баспа экземплярына тапсырыс беруге болады.',
+	'coll-manage_your_book' => 'Кітабыңызды басқару',
+	'coll-book_creator_help' => 'Қосымша ақпаратты [[{{MediaWiki:Coll-helppage}}|кітаптар туралы анықтаманы]] қара.',
+	'coll-start_book_creator' => 'Кітап жасаушы құралын іске қосу',
+	'coll-book_creator_continue' => 'Кітап жасаушы құралын қолдануды жалғастыру',
+	'coll-book_creator_disable_text' => '"Кітап жасаушы" құралы өшіріледі, ал қазіргі жасап жатқан кітабыңыз жойылады.',
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Кітап жасаушы құралының мәтіні',
+	'coll-collection' => 'Кітап',
+	'coll-collections' => 'Кітаптар',
+	'coll-exclusion_category_title' => 'Баспадан шығару',
+	'coll-print_template_prefix' => 'Баспа',
+	'coll-print_template_pattern' => '$1/Баспа',
+	'coll-unknown_subpage_title' => 'Белгісіз төменгі бет',
+	'coll-unknown_subpage_text' => '[[Special:Book|Кітаптың]] бұндай төменгі беті жоқ',
+	'coll-couldnotaddarticle_title' => 'Бетті қосу мүмкін болмады',
+	'coll-couldnotaddarticle_msg' => 'Бұл бет қосылмайды',
+	'coll-couldnotremovearticle_title' => 'Бетті алып тастау мүмкін болмады',
+	'coll-couldnotremovearticle_msg' => 'Бұл бет алынбайды',
+	'coll-noscript_text' => '<h2>JavaScript-ті қажет етеді!</h2>
+<strong>Браузеріңде JavaScript жоқ немесе өшірулі.
+JavaScript өшірулі болса бұл бет дұрыс жұмыс жасамайды.</strong>',
+	'coll-savedbook_template' => 'сақталған кітап',
+	'coll-your_book' => 'Сіздің кітабыңыз',
+	'coll-download_title' => 'Жүктеп алу',
+	'coll-download_text' => 'Кітапты жүктеп алу үшін форматын таңдап, батырманы басыңыз.',
+	'coll-download_as_text' => 'Кітапты $1 форматында жүктеп алу үшін батырманы басыңыз.',
+	'coll-download' => 'Жүктеп алу',
+	'coll-format_label' => 'Формат:',
+	'coll-remove' => 'Жою',
+	'coll-show' => 'Көрсету',
+	'coll-move_to_top' => 'Жоғарыға жылжыту',
+	'coll-move_up' => 'Жоғары жылжыту',
+	'coll-move_down' => 'Төмен жылжыту',
+	'coll-move_to_bottom' => 'Төменге жылжыту',
+	'coll-title' => 'Тақырыбы',
+	'coll-subtitle' => 'Тақырыбының астындағы жазу',
+	'coll-contents' => 'Мазмұны',
+	'coll-drag_and_drop' => 'Беттер мен тараулардың ретін өзгерту үшін оларды тышқанның көмегімен жылжытыңыз',
+	'coll-create_chapter' => 'Тарау жасау',
+	'coll-sort_alphabetically' => 'Алфавит бойынша сұрыптау',
+	'coll-rename' => 'Атауын өзгерту',
+	'coll-new_chapter' => 'Жаңа тараудың атын енгізіңіз',
+	'coll-rename_chapter' => 'Тарауға жаңа атау енгізіңіз',
+	'coll-no_such_category' => 'Мұндай санат жоқ',
+	'coll-notitle_title' => 'Беттiң тақырыбы анықталмады',
+	'coll-post_failed_title' => 'POST-сауал орындалмады',
+	'coll-post_failed_msg' => '$1 сілтемесіне POST-сауал орындалмады ($2).',
+	'coll-mwserve_failed_title' => 'Сурет салу серверінің қатесi',
+	'coll-error_reponse' => 'Сервер жауабының қатесi',
+	'coll-empty_collection' => 'Бос кітап',
+	'coll-revision' => 'Нұсқасы: $1',
+	'coll-save_collection_title' => 'Кітапты сақтау және бөлісу',
+	'coll-save_collection_text' => 'Кiтабыңыздың сақтау орынын таңдаңыз:',
+	'coll-login_to_save' => 'Кітабыңызды кейін де қолдану үшін [[Special:UserLogin|жүйеге кіріңіз немесе тіркеліңіз]].',
+	'coll-personal_collection_label' => 'Жеке кітап:',
+	'coll-community_collection_label' => 'Қауымдастық кітабы:',
+	'coll-save_collection' => 'Кітапты сақтау',
+	'coll-save_category' => 'Барлық сақталған кітаптар [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] санатына енеді.',
+	'coll-overwrite_title' => 'Бет әлдеқашан бар. Қайта жазу керек пе?',
+	'coll-overwrite_text' => '[[:$1]] деген атаумен бет әлдеқашан бар.
+Оның кітабыңызбен алмасқанын қалайсыз ба?',
+	'coll-yes' => 'Иә',
+	'coll-no' => 'Жоқ',
+	'coll-load_overwrite_text' => 'Кітабыңызда бірнеше бет бар.
+Ағымдағы кітабыңызды қайта жазасыз ба, жаңа контент қосасыз ба немесе бұл кітаптың жүктелуін тоқтатасыз ба?',
+	'coll-overwrite' => 'Қайта жазу',
+	'coll-append' => 'Қосу',
+	'coll-cancel' => 'Болдырмау',
+	'coll-update' => 'Жаңарту',
+	'coll-limit_exceeded_title' => 'Кітап өте үлкен',
+	'coll-limit_exceeded_text' => 'Кітабыңыздың мөлшері өте үлкен.
+Оған тағы да беттер қосылмайды.',
+	'coll-rendering_title' => 'Жасалуда',
+	'coll-rendering_text' => '<p><strong>Өтініш, кітаптың жасалу барысы біткенше күте тұрыңыз.</strong></p>
+
+<p><strong>Жасалу барысы:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
+
+<p>Бұл бет бірнеше секунд сайын автоматты түрде жаңаланып тұруы қажет.
+Егер бұлай болмаса, браузердің «жаңалау» (немесе F5) батырмасын басыңыз.</p>',
+	'coll-rendering_status' => '<strong>Статусы:</strong> $1',
+	'coll-rendering_article' => '(мақала: $1)',
+	'coll-rendering_page' => '(бет: $1)',
+	'coll-rendering_finished_text' => '<strong>Кітабыңыздың жасалуы аяқталды.</strong>
+<strong>Компьютеріңізге [$1 жүктеп алу]</strong>.
+
+Ескерту:
+* Нәтиже қанағаттандырмады ма? Оны жақсарту мүмкiндiктерiн [[{{MediaWiki:Coll-helppage}}|кітап туралы анықтама бетінен]] қарауға болады.',
+	'coll-notfound_title' => 'Кітап табылмады',
+	'coll-notfound_text' => 'Кітап бетін табу мүмкiн болмады',
+	'coll-download_notfound_title' => 'Файл табылмады',
+	'coll-download_notfound_text' => 'Жүктеп алайын деп жатқан файлыңыз бар болмай шықты:
+Бәлкім, ол жойылған болар және де оны қайта жасау керек шығар.',
+	'coll-download_failed_title' => 'Жүктеп алу барысында қате туындады',
+	'coll-download_failed_text' => 'Файлды жүктеп алу барысында қате туындады: $1',
+	'coll-excluded-templates' => '* Үлгілер [[:Category:$1|$1]] санатынан аласталды.',
+	'coll-blacklisted-templates' => '* Үлгілер [[:$1]] қара тізімінен аласталды.',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a> дегенге оралу</p>',
+	'coll-book_title' => 'Кітаптың баспа нұсқасына тапсырыс беру',
+	'coll-book_text' => 'Бiздiң әрiптестен кітаптың баспа нұсқасына тапсырыс беру.',
+	'coll-order_from_pp' => '$1 көмегімен кітапты көру',
+	'coll-about_pp' => '$1 туралы',
+	'coll-invalid_podpartner_title' => 'Жарамсыз POD серіктес',
+	'coll-invalid_podpartner_msg' => 'Берілген POD серіктес жарамсыз.
+Өтініш, өзіңіздің MediaWiki әкімшіңізбен байланысыңыз.',
+	'coll-license' => 'Лицензиясы',
+	'coll-return_to' => '[[:$1]] дегенге оралу',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress тапсырысы туралы ақпарат',
+	'coll-suggest_title' => 'Кітабыңызға ұсынылған беттер',
+	'coll-suggest_intro_text' => 'Ұсыныстар ағымдағы кітабыңыздағы беттерге негізделген.
+Қосу немесе алып тастау батырмаларын басқан сайын ұсыныстар тізімі жаңаланып тұрады.',
+	'coll-suggested_articles' => 'Ұсыныстар',
+	'coll-suggest_reset_bans' => 'бұрынғы қалпына келтіру',
+	'coll-suggest_reset_bans_tooltip' => 'Алдыңғы жойылған ұсыныстарды көрсету',
+	'coll-suggest_add_selected' => 'Таңдалған беттерді қосу',
+	'coll-suggest_ban_selected' => 'Таңдалған беттерді алып тастау',
+	'coll-suggest_your_book' => 'Сіздің кітабыңыз',
+	'coll-suggest_show' => 'көрсету',
+	'coll-suggest_ban_tooltip' => 'Бұл бетті ұсыныстар тізімінен алып тастау',
+	'coll-suggest_article_ban' => '<strong>$1</strong> беті ұсыныстар тізімінен ($2) алынды.',
+	'coll-suggest_article_add' => '<strong>$1</strong> беті кітабыңызға ($2) қосылды.',
+	'coll-suggest_article_remove' => '<strong>$1</strong> беті кітабыңыздан ($2) алынды.',
+	'coll-suggest_undo_tooltip' => 'Бұл әрекетті болдырмау',
+	'coll-suggest_undo' => 'болдырмау',
+	'coll-load_local_book' => '%NUMPAGES% беттен құралған %TITLE% атты кітабыңызбен жұмыс жасауды жалғастыру үшін «ОК» батырмасын басыңыз. «Cancel» батырмасын бассаңыз кітабыңыз жойылады және қайта басынын бастайсыз.',
+	'right-collectionsaveasuserpage' => 'Қатысушы беті ретінде кітаптарды сақтау',
+	'right-collectionsaveascommunitypage' => 'Қауымдастық беті ретінде кітаптарды сақтау',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -8167,7 +8298,7 @@ $messages['mr'] = array(
 	'coll-book_creator_intro' => '<big> ग्रंथ निर्माण द्वारा आपण आपल्या आवडीच्या विकी पानांचा ग्रंथ ग्रंथ बनू शकता. आपण ह्या ग्रंथास वेगवेगळ्या स्वरुपात निर्यात करूशकता (उदा. पी डि एफ किंवा ओ डि एफ) किंवा मुद्रित प्रतीसाठी मागणी नोंदवू शकता. </big>',
 	'coll-manage_your_book' => 'आपल्या ग्रंथाचे व्यवस्थापन करा',
 	'coll-book_creator_help' => 'अधिक माहितीसाठी [[{{MediaWiki:Coll-helppage}}|ग्रंथ संबंधी मदतीचे पृष्ठ ]]  पहा',
-	'coll-start_book_creator' => 'ग्रंथ निर्मिती सुरुकरा',
+	'coll-start_book_creator' => 'ग्रंथ निर्मिती सुरू करा',
 	'coll-book_creator_continue' => 'पुस्तक निर्मात्याचा वापर चालू ठेवा',
 	'coll-book_creator_disable_text' => 'ग्रथ निर्माण अक्षम करण्यात  येईल आणि आपण ज्या ग्रंथावर काम  करीत  आहात तो ग्रंथ वगळण्यात येईल',
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/ग्रंथ निर्माण मसुदा',
@@ -8478,6 +8609,7 @@ $messages['myv'] = array(
 );
 
 /** Mazanderani (مازِرونی)
+ * @author Mehdi
  * @author محک
  */
 $messages['mzn'] = array(
@@ -8491,6 +8623,8 @@ $messages['mzn'] = array(
 	'coll-print_template_pattern' => 'پرینت/$1',
 	'coll-unknown_subpage_text' => 'این زیرصفحه [[Special:Book|کتاب]] جه وجود ندانّه',
 	'coll-your_book' => 'شمه کتاب',
+	'coll-new_chapter' => 'نو تیکه وسه اته جدید نوم وارد هاکنین',
+	'coll-rename_chapter' => 'نو تیکه وسه اته جدید نوم وارد هاکنین',
 	'coll-empty_collection' => 'خالی کتاب',
 	'coll-personal_collection_label' => 'کتاب شخصی:',
 	'coll-community_collection_label' => 'کتاب عمومی:',

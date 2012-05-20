@@ -71,6 +71,7 @@ $messages['en'] = array(
  * @author Aotake
  * @author EugeneZelenko
  * @author Fryed-peach
+ * @author Lejonel
  * @author Lloffiwr
  * @author Mormegil
  * @author Siebrand
@@ -79,7 +80,11 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'coll-print_export' => 'Caption of a frame in the toolbar (on the left-hand side of the screen), similar to {{msg-mw|toolbox}} or {{msg-mw|otherlanguages}}.',
 	'coll-create_a_book' => '{{Identical|Books}}',
-	'coll-download_as' => '$1 is a file format.
+	'coll-download_as' => 'Used for two different purposes:
+# As link text in the toolbox in the side bar to download wiki pages in a specified file format (such as PDF). The link has {{msg|coll-download as tooltip}} as tooltip.
+# As button text for the download button on [[Special:Book]] when there is only one file format. The button is next to the text of {{msg|coll-download as text}}. (If there is a choice of file format {{msg|coll-download}} together with {{msg|coll-download text}} is used insted.)
+
+In both cases $1 is a file format.
 
 {{Identical|Download}}',
 	'coll-download_as_tooltip' => '* $1 is some file format(s)',
@@ -2194,6 +2199,46 @@ $messages['ka'] = array(
 	'coll-suggest_empty' => 'ცარიელი',
 );
 
+/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
+ * @author Kaztrans
+ */
+$messages['kk-cyrl'] = array(
+	'coll-print_export' => 'Баспа/экспорт',
+	'coll-create_a_book' => 'Кітап жасау',
+	'coll-create_a_book_tooltip' => 'Кітап немесе мақалалар топтамасын жасау',
+	'coll-book_creator' => 'Кітап жасаушы құралы',
+	'coll-download_as' => '$1 түрінде жүктеп алу',
+	'coll-download_as_tooltip' => 'Бұл беттің $1 нұсқасын жүктеп алу',
+	'coll-disable' => 'өшіру',
+	'coll-book_creator_disable' => 'Кітап жасаушы құралын өшіру',
+	'coll-book_creator_disable_tooltip' => 'Кітап жасаушы құралын қолдануды тоқтату',
+	'coll-add_linked_article' => 'Байланысқан бетті кітабыңызға қосу',
+	'coll-remove_linked_article' => 'Байланысқан бетті кітабыңыздан алып тастау',
+	'coll-add_category' => 'Бұл санатты кітабыңызға қосу',
+	'coll-add_category_tooltip' => 'Бұл санаттың барлық беттерін кітабыңызға қосу',
+	'coll-add_this_page' => 'Бұл бетті кітабыңызға қосу',
+	'coll-add_page_tooltip' => 'Ағымдағы бетті кітабыңызға қосу',
+	'coll-bookscategory' => 'Кітаптар',
+	'coll-clear_collection' => 'Кітапты тазарту',
+	'coll-clear_collection_confirm' => 'Сіз шынымен кітабыңызды тазартасыз ба?',
+	'coll-clear_collection_tooltip' => 'Ағымдағы кітаптан барлық бетті алып тастау',
+	'coll-help' => 'Анықтама',
+	'coll-help_tooltip' => 'Кітап жасау туралы анықтаманы көрсету',
+	'coll-helppage' => 'Help:Кітаптар',
+	'coll-load_collection' => 'Кітапты жүктеп алу',
+	'coll-load_collection_tooltip' => 'Бұл кітапты сіздің ағымдағы кітабыңыз ретінде жүктеу',
+	'coll-n_pages' => '$1 бет',
+	'coll-printable_version_pdf' => 'PDF нұсқа',
+	'coll-remove_this_page' => 'Бұл бетті кітабыңыздан алып тастау',
+	'coll-remove_page_tooltip' => 'Ағымдағы бетті кітабыңыздан алып тастау',
+	'coll-show_collection' => 'Кітапты көрсету',
+	'coll-show_collection_tooltip' => 'Кітапты өңдеу/жүктеп алу немесе оған тапсырыс беру үшін басыңыз',
+	'coll-not_addable' => 'Бұл бет қосыла алмайды',
+	'coll-make_suggestions' => 'Ұсынылған беттер',
+	'coll-make_suggestions_tooltip' => 'Кітабыңыздағы беттерге негізделген ұсыныстарды көрсету',
+	'coll-suggest_empty' => 'бос',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Lovekhmer
  * @author Thearith
@@ -3795,7 +3840,7 @@ $messages['sv'] = array(
 	'coll-help' => 'Hjälp',
 	'coll-help_tooltip' => 'Få hjälp med att skapa böcker',
 	'coll-helppage' => 'Help:Böcker',
-	'coll-load_collection' => 'Hämta bok',
+	'coll-load_collection' => 'Läs in bok',
 	'coll-load_collection_tooltip' => 'Ladda den här boken som din nuvarande bok',
 	'coll-n_pages' => '$1 {{PLURAL:$1|sida|sidor}}',
 	'coll-printable_version_pdf' => 'PDF-version',
