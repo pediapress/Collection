@@ -2218,7 +2218,7 @@ $messages['kk-cyrl'] = array(
 	'coll-add_category_tooltip' => 'Бұл санаттың барлық беттерін кітабыңызға қосу',
 	'coll-add_this_page' => 'Бұл бетті кітабыңызға қосу',
 	'coll-add_page_tooltip' => 'Ағымдағы бетті кітабыңызға қосу',
-	'coll-bookscategory' => 'Кітаптар',
+	'coll-bookscategory' => '{{SITENAME}}:Кітаптар',
 	'coll-clear_collection' => 'Кітапты тазарту',
 	'coll-clear_collection_confirm' => 'Сіз шынымен кітабыңызды тазартасыз ба?',
 	'coll-clear_collection_tooltip' => 'Ағымдағы кітаптан барлық бетті алып тастау',
@@ -3555,6 +3555,15 @@ $messages['sah'] = array(
 	'coll-make_suggestions' => 'Бу сирэйдэри туттуоххун сөп',
 	'coll-make_suggestions_tooltip' => 'Кинигэҥ баар сирэйдэригэр олоҕуран оҥоһуллубут туттуоххун сөп сирэйдэр тиһиктэрин көрдөр',
 	'coll-suggest_empty' => 'кураанах',
+);
+
+/** Santali (Santali)
+ * @author Samar88
+ */
+$messages['sat'] = array(
+	'coll-create_a_book' => 'Mit́ṭen puthi tearme',
+	'coll-create_a_book_tooltip' => 'Puthi bańkhan sakam tumạl tearme',
+	'coll-book_creator' => 'Puthi sirjo̠nić',
 );
 
 /** Sardinian (Sardu)
