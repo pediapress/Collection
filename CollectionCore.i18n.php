@@ -2526,7 +2526,7 @@ $messages['ltg'] = array(
  * @author RMizo
  */
 $messages['lus'] = array(
-	'coll-print_export' => 'Nemkaina/Thawnchhuahna',
+	'coll-print_export' => 'Chhụtkàina/Thawnchhuahna',
 	'coll-create_a_book' => 'Lehkhabu siamna',
 	'coll-create_a_book_tooltip' => 'Lehkhabu emaw phêk chilhkhâwm emaw siamna',
 	'coll-book_creator' => 'Lehkhabu siamtu',
@@ -2545,10 +2545,10 @@ $messages['lus'] = array(
 	'coll-clear_collection' => 'Lehkhabu nuaibona',
 	'coll-clear_collection_confirm' => 'I lehkhabu zawng zawng i nuaibo vek duh tak tak maw?',
 	'coll-clear_collection_tooltip' => 'Tuna i lehkhabu aţang hian wiki phêk zawng zawng nuaibo vek rawh',
-	'coll-help' => 'Ţanpuina',
+	'coll-help' => 'Ṭanpuina',
 	'coll-help_tooltip' => 'Lehkhabu siam chungchang kaihhruaina',
 	'coll-helppage' => 'Help:Lehkhabu',
-	'coll-load_collection' => 'Lehkhabu lâwtna',
+	'coll-load_collection' => 'Lehkhabu kèuna',
 	'coll-load_collection_tooltip' => 'He lehkhabu i hman mék angin lâwt rawh',
 	'coll-n_pages' => 'Phek $1 {{PLURAL:$1||}}',
 	'coll-printable_version_pdf' => 'A pdf',
