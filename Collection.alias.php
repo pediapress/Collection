@@ -33,6 +33,11 @@ $specialPageAliases['as'] = array(
 	'Book' => array( 'সংগ্ৰহ' ),
 );
 
+/** Banjar (Bahasa Banjar) */
+$specialPageAliases['bjn'] = array(
+	'Book' => array( 'Buku' ),
+);
+
 /** Breton (Brezhoneg) */
 $specialPageAliases['br'] = array(
 	'Book' => array( 'Dastumad' ),
@@ -41,6 +46,11 @@ $specialPageAliases['br'] = array(
 /** Bosnian (Bosanski) */
 $specialPageAliases['bs'] = array(
 	'Book' => array( 'Kolekcija' ),
+);
+
+/** Catalan (Català) */
+$specialPageAliases['ca'] = array(
+	'Book' => array( 'Llibre', 'Col·lecció' ),
 );
 
 /** Czech (Česky) */
@@ -128,6 +138,11 @@ $specialPageAliases['he'] = array(
 	'Book' => array( 'ספר', 'אוסף' ),
 );
 
+/** Hindi (हिन्दी) */
+$specialPageAliases['hi'] = array(
+	'Book' => array( 'पुस्तक', 'किताब' ),
+);
+
 /** Croatian (Hrvatski) */
 $specialPageAliases['hr'] = array(
 	'Book' => array( 'Zbirka' ),
@@ -170,7 +185,7 @@ $specialPageAliases['io'] = array(
 
 /** Italian (Italiano) */
 $specialPageAliases['it'] = array(
-	'Book' => array( 'Libro', 'Raccolta' ),
+	'Book' => array( 'Libro', 'Raccolta', 'Collezione' ),
 );
 
 /** Japanese (日本語) */
@@ -283,6 +298,11 @@ $specialPageAliases['ro'] = array(
 	'Book' => array( 'Carte', 'Colecție' ),
 );
 
+/** Russian (Русский) */
+$specialPageAliases['ru'] = array(
+	'Book' => array( 'Коллекция_книг', 'Книга' ),
+);
+
 /** Sanskrit (संस्कृतम्) */
 $specialPageAliases['sa'] = array(
 	'Book' => array( 'समुच्यय' ),
@@ -338,7 +358,7 @@ $specialPageAliases['vec'] = array(
 	'Book' => array( 'Libro' ),
 );
 
-/** Veps (Vepsän kel') */
+/** Veps (Vepsän kel’) */
 $specialPageAliases['vep'] = array(
 	'Book' => array( 'Kirj' ),
 );
