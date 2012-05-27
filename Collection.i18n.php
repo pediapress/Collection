@@ -3088,7 +3088,7 @@ Ti wazeno ser kitabê xo de binuse, kontendê newe ya zi bar kerdişê kitabî �
 	'coll-overwrite' => 'Sero binuş',
 	'coll-append' => 'Penî ra de biker',
 	'coll-cancel' => 'Îptal biker',
-	'coll-update' => 'Demeye',
+	'coll-update' => 'Newen ke',
 	'coll-limit_exceeded_title' => 'Kitab zaf gird o.',
 	'coll-limit_exceeded_text' => 'Kitabê tu zaf gird o.
 Ma nieşkenî pel de biker.',
