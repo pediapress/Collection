@@ -12825,6 +12825,23 @@ Isinasapanahon ang talaan sa tuwing pipindutin mo ang mga pinduting pandagdag o 
 	'right-collectionsaveascommunitypage' => 'Sagipin ang mga aklat bilang pahina ng pamayanan',
 );
 
+/** Толышә зывон (Толышә зывон)
+ * @author Erdemaslancan
+ */
+$messages['tly'] = array(
+	'coll-collection' => 'Китобон',
+	'coll-collections' => 'Китобон',
+	'coll-print_template_prefix' => 'Чап',
+	'coll-download_title' => 'Бо жәј',
+	'coll-download' => 'Бо жәј',
+	'coll-remove' => 'Рәдд кардеј',
+	'coll-show' => 'Нишо дој',
+	'coll-yes' => 'Бәле',
+	'coll-no' => 'Не',
+	'coll-cancel' => 'Ләғв кардеј',
+	'coll-update' => 'Нуә кардә быә',
+);
+
 /** Turkish (Türkçe)
  * @author Joseph
  * @author Karduelis

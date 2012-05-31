@@ -4145,6 +4145,14 @@ $messages['tl'] = array(
 	'coll-suggest_empty' => 'walang laman',
 );
 
+/** Толышә зывон (Толышә зывон)
+ * @author Erdemaslancan
+ */
+$messages['tly'] = array(
+	'coll-bookscategory' => 'Китобон',
+	'coll-help' => 'Арајиш',
+);
+
 /** Turkish (Türkçe)
  * @author Joseph
  * @author Mach
