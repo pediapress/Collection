@@ -4190,7 +4190,7 @@ $messages['tl'] = array(
 	'coll-suggest_empty' => 'walang laman',
 );
 
-/** Толышә зывон (Толышә зывон)
+/** толышә зывон (толышә зывон)
  * @author Erdemaslancan
  */
 $messages['tly'] = array(

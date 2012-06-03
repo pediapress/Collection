@@ -1162,15 +1162,60 @@ $messages['as'] = array(
 আপুনি সেইখন আপোনাৰ গ্ৰন্থৰ লগত সলাব বিচাৰিছে নেকি?',
 	'coll-yes' => 'হয়',
 	'coll-no' => 'নহয়',
+	'coll-load_overwrite_text' => "অপোনাৰ গ্ৰন্থখনত ইতিমধ্যে কিছুমান পৃষ্ঠা আছে।
+আপুনি বৰ্তমানৰ গ্ৰন্থখনৰ ওপৰত কিবা লিখিব খুজিছে, নতুন সমল যোগ কৰিব খুজিছে, বা গ্ৰন্থখনৰ ল'ডিং বাতিল কৰিব খুজিছে?",
 	'coll-overwrite' => 'প্ৰতিস্থাপন',
+	'coll-append' => 'পৰিশিষ্ট',
 	'coll-cancel' => 'বাতিল',
 	'coll-update' => 'আপডেট কৰক',
 	'coll-limit_exceeded_title' => 'গ্ৰন্থৰ আকাৰ ডাঙৰ হৈছে',
 	'coll-limit_exceeded_text' => 'আপোনাৰ গ্ৰন্থৰ আকাৰ ডাঙৰ হৈছে।
 আৰু পৃষ্ঠা যোগ কৰিব নোৱাৰি।',
 	'coll-rendering_title' => "ৰে'ণ্ডাৰ কৰি থকা হৈছে",
+	'coll-rendering_text' => '<p><strong>আপোনাৰ গ্ৰন্থখন তৈয়াৰ কৰা হৈছে, অনুগ্ৰহ কৰি অপেক্ষা কৰক।</strong></p>
+
+<p><strong>Progress:</strong> <span id="অগ্ৰগতি">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>এই পৃষ্ঠাখন কেইছেকেণ্ডমানৰ মূৰে মূৰে স্বয়ংক্ৰিয়ভাৱে সতেজ হ\'ব।
+এনেকুৱা নহ\'লে অনুগ্ৰহ কৰি আপোনাৰ ব্ৰাউজাৰৰ ৰিফ্ৰেছ বুটামটো ক্লিক কৰক।</p>',
+	'coll-rendering_status' => '<strong>Status:</অৱস্থা> $1',
+	'coll-rendering_article' => '(ৱিকি পৃষ্ঠা: $1)',
+	'coll-rendering_page' => '(পৃষ্ঠা: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/পৃষ্ঠাৰ তথ্য পাঠ মুদ্ৰিত হৈ আছে',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/সংগ্ৰহ তথ্য পাঠ মুদ্ৰিত হৈ আছে',
+	'coll-rendering_finished_title' => 'ৰেণ্ডাৰিং সম্পূৰ্ণ হৈছে',
+	'coll-rendering_finished_text' => "<strong>ডকুমেণ্ট ফাইল তৈয়াৰ কৰা হৈছে।</strong>
+আপোনাৰ কম্পিউটাৰত <strong>[$1 ফাইলটো ডাউনল'ড কৰক]</strong>।
+
+টোকা:
+* আউটপুটত সন্তুষ্ট নহয়? উন্নয়নৰ সম্ভাৱনা জানিবলৈ [[{{MediaWiki:Coll-helppage}}|গ্ৰন্থৰ সহায় পৃষ্ঠা]] চাওক।",
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/পৃষ্ঠাৰ তথ্য পাঠ মুদ্ৰিত হৈ আছে',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/সংগ্ৰহ তথ্য পাঠ মুদ্ৰিত হৈ আছে',
+	'coll-notfound_title' => "গ্ৰন্থ পোৱা নগ'ল",
+	'coll-notfound_text' => "গ্ৰন্থৰ পৃষ্ঠা বিচাৰি পোৱা নগ'ল।",
+	'coll-download_notfound_title' => "ফাইলটো পোৱা নগ'ল",
+	'coll-download_notfound_text' => "আপুনি ডাউনল'ড কৰিব খোজা ফাইলটো নাই:
+সম্ভৱতঃ ইয়াক বিলোপ কৰা হৈছে আৰু নতুনকৈ সৃষ্টি কৰাৰ প্ৰয়োজন।",
+	'coll-download_failed_title' => "ডাউনল'ডৰ সময়ত ত্ৰুটী",
+	'coll-download_failed_text' => "ফাইলটো ডাউনল'ড কৰোঁতে এটা ত্ৰুটী হৈছে: $1",
+	'coll-is_cached' => '<ul><li>ডকুমেন্টখনৰ কেশ্ব্‌ড সংস্কৰণ এটা পোৱা গৈছে, গতিকে ৰেণ্ডাৰিঙৰ প্ৰয়োজন নাই।
+<a href="$1">জোৰ কৰি পুনঃৰেণ্ডাৰিং কৰক।</a></li></ul>',
+	'coll-excluded-templates' => '* [[:Category:$1|$1]] শ্ৰেণীত থকা সাঁচসমূহ বাদ দিয়া হৈছে।',
+	'coll-blacklisted-templates' => '* ব্লেকলিষ্ট [[:$1]]ত থকা সাঁচসমূহ বাদ দিয়া হৈছে।',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a></p>লৈ ঘূৰি যাওক',
+	'coll-book_title' => 'মুদ্ৰিত কিতাপ হিচাপে অৰ্ডাৰ দিয়ক',
+	'coll-order_from_pp' => '$1ৰে প্ৰাক্‌দৰ্শন কৰক',
+	'coll-about_pp' => '$1ৰ বিষয়ে',
+	'coll-invalid_podpartner_title' => 'অবৈধ POD সহযোগী',
+	'coll-invalid_podpartner_msg' => 'আপুনি দিয়া POD সহযোগী গ্ৰহণযোগ্য নহয়।
+অনুগ্ৰহ কৰি আপোনাৰ মিডিয়াৱিকি প্ৰশাসকৰ লগত যোগাযোগ কৰক।',
+	'coll-license' => 'অনুজ্ঞাপত্ৰ',
+	'coll-return_to' => '[[:$1]]লৈ ঘূৰি যাওক',
+	'coll-suggest_title' => 'আপোনাৰ গ্ৰন্থৰ বাবে পৰামৰ্শ দিয়া পৃষ্ঠাসমূহ',
 	'coll-suggested_articles' => 'পৰামৰ্শ',
 	'coll-suggest_reset_bans' => 'পূৰ্বৰ অৱস্থালৈ লৈ যাওক',
+	'coll-suggest_add_selected' => 'নিৰ্বাচিত পৃষ্ঠাসমূহ যোগ কৰক',
+	'coll-suggest_ban_selected' => 'নিৰ্বাচিত পৃষ্ঠাসমূহ আঁতৰাওক',
 	'coll-suggest_your_book' => 'আপোনাৰ কিতাপ',
 	'coll-suggest_show' => 'দেখুৱাওক',
 	'coll-suggest_ban_tooltip' => 'পৰামৰ্শৰ তালিকাৰ পৰা এই পৃষ্ঠাখন আঁতৰাওক',
@@ -12967,7 +13012,7 @@ Isinasapanahon ang talaan sa tuwing pipindutin mo ang mga pinduting pandagdag o 
 	'right-collectionsaveascommunitypage' => 'Sagipin ang mga aklat bilang pahina ng pamayanan',
 );
 
-/** Толышә зывон (Толышә зывон)
+/** толышә зывон (толышә зывон)
  * @author Erdemaslancan
  */
 $messages['tly'] = array(
