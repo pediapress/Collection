@@ -3054,7 +3054,7 @@ Heta ti JavaScript a nike, ena pel hewl nihebitiyeno.</strong>',
 	'coll-move_to_bottom' => 'Bin rê şî',
 	'coll-title' => 'Sername:',
 	'coll-subtitle' => 'Sernameyê binî',
-	'coll-contents' => 'Tedeesteyî',
+	'coll-contents' => 'Zerreki',
 	'coll-drag_and_drop' => 'Pê drag & drop pelan u qisimanê wîkîyî sira bike',
 	'coll-create_chapter' => 'Qisim viraze',
 	'coll-sort_alphabetically' => 'Goreyê alfabeyî ra sira bike',
@@ -6961,6 +6961,148 @@ $messages['ka'] = array(
 	'coll-load_local_book' => 'დააჭირეთ „OK“ თქვენი %NUMPAGES% გვერდების შემცვლელ %TITLE% წიგნთან მუშაობის გაგრძელებისთვის. დაააჭირეთ „გაუქმება“ ღილაკს რომ წაშალოთ იგი და დაიწყოთ ცარიელი წიგნი.',
 	'right-collectionsaveasuserpage' => 'შეინახე წიგნი, როგორც მომხმარებლის გვერდი',
 	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
+);
+
+/** Kirmanjki (Kırmancki)
+ * @author Erdemaslancan
+ */
+$messages['kiu'] = array(
+	'coll-desc' => '[[Special:Book|Kitabî viraze]]',
+	'coll-book_creator_intro' => '<big>Pê "viraştoğê kitabî ti eşkeno yew kitabê ke pelanê wîkîyan ra virazo. Ti eşkeno kitab formatanê bînan de (mavacî PDF ya zi ODF) export bike ya zi kitab şipariş bike.</big>',
+	'coll-manage_your_book' => 'Kitabê xo îdare bike',
+	'coll-book_creator_help' => 'Qe enformasyonî [[{{MediaWiki:Coll-helppage}}|elê yardimî ke ser kitabî]] bivîne.',
+	'coll-start_book_creator' => 'Viraştoğê kitabî başli bike',
+	'coll-book_creator_continue' => 'Viraştoğê kitabî de dewam bike',
+	'coll-book_creator_disable_text' => "\"kitab viraştoğ'' qefiliyeno u kitabê ke ti ho ser hebîtiyeno ey wedariyeno.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Nuşteyê kitab viraştoğî',
+	'coll-collection' => 'Kitaban',
+	'coll-collections' => 'Kitaban',
+	'coll-exclusion_category_title' => 'Çap meke',
+	'coll-print_template_prefix' => 'Çap bike',
+	'coll-print_template_pattern' => '$1/Çap bike',
+	'coll-unknown_subpage_title' => 'Senameyê binî yê nizanyeno',
+	'coll-unknown_subpage_text' => 'Ena binê sername yê [[Special:Book|Book]]î çini yo',
+	'coll-couldnotaddarticle_title' => 'Nieşkeno pelê wîkîyî de bike',
+	'coll-couldnotaddarticle_msg' => 'Ena pelê wîkîyî de nibiyo.',
+	'coll-couldnotremovearticle_title' => 'Nieşkeno pelê wîkîyî wedare',
+	'coll-couldnotremovearticle_msg' => 'Ena pelê wîkîyî niwedariya.',
+	'coll-noscript_text' => '<h1>JavaScript lazim o!</h1>
+<strong>Ya browserê tu de JavaScript çini yo ya zi JavaScript qefilnayiyo.
+Heta ti JavaScript a nike, ena pel hewl nihebitiyeno.</strong>',
+	'coll-savedbook_template' => 'kitab_keydke',
+	'coll-your_book' => 'Kitabê tu',
+	'coll-download_title' => 'Bar bike',
+	'coll-download_text' => 'Eka ti wazeno kitabê xo bar bike, yew formet weçine u goceke klik bike.',
+	'coll-download_as_text' => 'Eka ti wazeno kitabê xo formetê $1î de bar bike, goceke klik bike.',
+	'coll-download' => 'Bar bike',
+	'coll-format_label' => 'Formet:',
+	'coll-remove' => 'Wedarne',
+	'coll-show' => 'Bımocne',
+	'coll-move_to_top' => 'Ser rê şî',
+	'coll-move_up' => 'Yew sire şî cêr',
+	'coll-move_down' => 'Yew sire şî cor',
+	'coll-move_to_bottom' => 'Bin rê şî',
+	'coll-title' => 'Sername:',
+	'coll-subtitle' => 'Sernameyê binî',
+	'coll-contents' => 'Tedeesteyî',
+	'coll-drag_and_drop' => 'Pê drag & drop pelan u qisimanê wîkîyî sira bike',
+	'coll-create_chapter' => 'Qisim viraze',
+	'coll-sort_alphabetically' => 'Goreyê alfabeyî ra sira bike',
+	'coll-rename' => 'Reyna name bide',
+	'coll-new_chapter' => 'Qismê newî ra yew sername binuse',
+	'coll-rename_chapter' => 'Qism ra yew sernameyê newî binuse',
+	'coll-no_such_category' => 'Ena kategorî çini yo',
+	'coll-notitle_title' => 'Sernameyê pelî mizan çita wo.',
+	'coll-post_failed_title' => 'Telebê POSTî nibiyo',
+	'coll-post_failed_msg' => '$1 rê talebê POSTî nibiyo ($2).',
+	'coll-mwserve_failed_title' => 'Ğeletê servera render',
+	'coll-mwserve_failed_msg' => 'Servera render de yew ğelet biyo: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Server ra responseyê ğeletî',
+	'coll-empty_collection' => 'Kitabê vengî',
+	'coll-revision' => 'Revizyon: $1',
+	'coll-save_collection_title' => 'Kitabê xo qeyd ke',
+	'coll-save_collection_text' => 'Qe kitabê tu rê yew embar weçine:',
+	'coll-login_to_save' => 'Eka ti wazena kitabê xo bace biwane, ma rica keno [[Special:UserLogin|Cıkewt ya zi yew hesab vıraz]].',
+	'coll-personal_collection_label' => 'Kitabê şexsî:',
+	'coll-community_collection_label' => 'Kitabê cemaetî:',
+	'coll-save_collection' => 'Kitab qeyd biker',
+	'coll-save_category' => 'Kitabanê ke qeyd biyê înan kategorî rê de bîyo [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-overwrite_title' => 'Pele zaten est o.
+Sero binusi?',
+	'coll-overwrite_text' => 'Yew pel ser nameyê [[:$1]]î zatî esto.
+Ti wazeno ey kitab pê kitabê xo rê bivurne?',
+	'coll-yes' => 'Heya',
+	'coll-no' => 'Nê',
+	'coll-load_overwrite_text' => 'Kitabê xo de zatî pelan esto. 
+Ti wazeno ser kitabê xo de binuse, kontendê newe ya zi bar kerdişê kitabî îptal bike?',
+	'coll-overwrite' => 'Sero binuş',
+	'coll-append' => 'Penî ra de biker',
+	'coll-cancel' => 'Bıtexelne',
+	'coll-update' => 'Newen ke',
+	'coll-limit_exceeded_title' => 'Kitab zaf gird o.',
+	'coll-limit_exceeded_text' => 'Kitabê tu zaf gird o.
+Ma nieşkenî pel de biker.',
+	'coll-rendering_title' => 'Render keno',
+	'coll-rendering_text' => '<p><strong>Yew di dekika vinder nika dokumant ho viraziyeno.</strong></p>
+
+<p><strong>Progress:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Ena pele gani xo xo otomatik rocaniye biko.
+Eka ena nihebitiyeno, ma rica keno browser xo reyna ciwane bike</p>',
+	'coll-rendering_status' => 'strong>Weziyet:</strong> $1',
+	'coll-rendering_article' => '(pelê wîkîyî: $1)',
+	'coll-rendering_page' => '(pel: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Enformasyonê nuştişê pele render keni',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Enformasyonê tope pele render keni',
+	'coll-rendering_finished_title' => 'Render kerdişî qediya',
+	'coll-rendering_finished_text' => '<strong>Ena dosyayê documentî viraziyayo.</strong>
+<strong>[$1 Dosya bar bike]</strong> komputerê xo.
+
+Notan:
+* Ti ena miwazeno? [[{{MediaWiki:Coll-helppage}}|Qe kitaban de pelê yardimî]] bivîne ke belki ti hewlyer keno.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Enformasyonê nuştişê pele render keni',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Enformasyonê tope pele render keni',
+	'coll-notfound_title' => 'Kitab nedîy',
+	'coll-notfound_text' => 'Pelê kitabî nedîy',
+	'coll-download_notfound_title' => 'Dosya nedîy',
+	'coll-download_notfound_text' => 'Dosyayê ke ti wazeno bar bike îtiya de çini yo:
+Belki o dosya esteriyayo u gani reyna viraziyayo.',
+	'coll-download_failed_title' => 'Bar kerdişî de ğeletî biyo',
+	'coll-download_failed_text' => 'Ma key dosya bar kerdî, yew ğelet biyo: $1',
+	'coll-is_cached' => '<ul><li>Ma yew versiyonê cachedî nidiy, aye ra ma gani render kerd.
+<a href="$1">Reyna Render bike.</a></li></ul>',
+	'coll-excluded-templates' => '* Templatanê ke ho ho caetegoriyê [[:Category:$1|$1]]î de înan de nikerd.',
+	'coll-blacklisted-templates' => '* Templatanê ke ho listeyê ma siyayî [[:$1]] de înan de nikerd.',
+	'coll-return_to_collection' => '<p>Reyna şi <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Kitab çap bike u hind sipariş bike',
+	'coll-book_text' => 'Kitab xo partnerê ma ra biger.',
+	'coll-order_from_pp' => 'Verqayt be $1',
+	'coll-about_pp' => 'Heqa $1',
+	'coll-invalid_podpartner_title' => 'Partnerê PODî ğeletî',
+	'coll-invalid_podpartner_msg' => 'Partnerê PODî raşt niyo.
+Ma rica keno îdarekarê MedîyaWîkîyî ra yew mesaj bişirav.',
+	'coll-license' => 'Lisans',
+	'coll-return_to' => 'Reyna şi [[:$1]]',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress melumat şîparîş bike',
+	'coll-suggest_title' => 'Kitabê tu rê pelanê tavsîyayî',
+	'coll-suggest_intro_text' => 'Tevsiyayan sero setanê pel ê wîkî newe ke kitabê tu de.
+Çi wext ti gocakanê de kerdişî u wedarayîşî ra klik bike, liste beno rocaniye.',
+	'coll-suggested_articles' => 'Tavsiyeyan',
+	'coll-suggest_reset_bans' => 'sifir bike',
+	'coll-suggest_reset_bans_tooltip' => 'Tavsiyayan ke vernî de wedariye înan bimucne',
+	'coll-suggest_add_selected' => 'Pelanê weçinaye de bike',
+	'coll-suggest_ban_selected' => 'Pelanê weçinaye wedarne',
+	'coll-suggest_your_book' => 'Kitabê tu',
+	'coll-suggest_show' => 'bimucne',
+	'coll-suggest_ban_tooltip' => 'Ena pel listeyê tavsiye rê wedarne',
+	'coll-suggest_article_ban' => 'Pel <strong>$1</strong> tavsiyeran ra wedarne ($2).',
+	'coll-suggest_article_add' => 'Pel <strong>$1</strong> kitabê tu rê de biyo ($2).',
+	'coll-suggest_article_remove' => 'Pel <strong>$1</strong> kitabê tu ra wedarnaye ($2).',
+	'coll-suggest_undo_tooltip' => 'Hereket reyna biyar',
+	'coll-suggest_undo' => 'reyna biyar',
+	'coll-load_local_book' => 'OK rê bitexne ke ti kitabê xo %TITLE% de %NUMPAGES% pelanê wikiyi esta ay de dewam bike. Cancel ra bitexne ke wedarne u yew kitabê newi ra dest pê bike.',
+	'right-collectionsaveasuserpage' => 'Kitab ze pelê karberî qeyd bike',
+	'right-collectionsaveascommunitypage' => 'Kitab ze pelê cemeatî qeyd bike',
 );
 
 /** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
@@ -12840,6 +12982,7 @@ $messages['tly'] = array(
 	'coll-no' => 'Не',
 	'coll-cancel' => 'Ләғв кардеј',
 	'coll-update' => 'Нуә кардә быә',
+	'coll-about_pp' => 'Чәмә $1',
 );
 
 /** Turkish (Türkçe)
