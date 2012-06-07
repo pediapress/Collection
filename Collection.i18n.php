@@ -2265,7 +2265,7 @@ Spisak se ažurira kad god kliknete na dugme za dodavanje ili uklanjanje.',
 	'right-collectionsaveascommunitypage' => 'Spremanje knjiga kao stranica zajednice',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Aleator
  * @author El libre
  * @author Jordi Roqué
@@ -2286,7 +2286,7 @@ $messages['ca'] = array(
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Text en mode llibre',
 	'coll-collection' => 'Llibre',
 	'coll-collections' => 'Llibres',
-	'coll-exclusion_category_title' => 'Excloure en imprimir',
+	'coll-exclusion_category_title' => 'Exclou en imprimir',
 	'coll-print_template_prefix' => 'Imprimir',
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Subpàgina desconeguda',
@@ -2363,11 +2363,11 @@ Si no és així, premi el botó de refresc del vostre navegador.</p>',
 	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Processant text d'informació de la pàgina",
 	'coll-rendering_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Processant text d'informació de la col·lecció",
 	'coll-rendering_finished_title' => 'Renderització finalitzada',
-	'coll-rendering_finished_text' => "<strong>S'ha generat l'arxiu.</strong>
-<strong>[$1 Descarregueu l'arxiu]</strong> al vostre ordinador.
+	'coll-rendering_finished_text' => "<strong>S'ha generat el document.</strong>
+<strong>[$1 Descarrega el fitxer]</strong> a l'ordinador.
 
 Notes:
-* No esteu satisfet amb el resultat? Vegeu [[{{MediaWiki:Coll-helppage}}|la pàgina d'ajuda sobre llibres]] per a conéixer més opcions per millorar-lo.",
+* No esteu satisfet amb el resultat? Vegeu [[{{MediaWiki:Coll-helppage}}|la pàgina d'ajuda sobre llibres]] per a conèixer més opcions per millorar-lo.",
 	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Processant texte d'informació de la pàgina",
 	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Processant text d'informació de la col·lecció",
 	'coll-notfound_title' => 'Llibre no trobat',
@@ -6662,7 +6662,7 @@ $messages['ja'] = array(
 	'coll-download_as_text' => 'あなたのブックを $1 形式でダウンロードするにはこのボタンを押してください。',
 	'coll-download' => 'ダウンロード',
 	'coll-format_label' => '形式:',
-	'coll-remove' => '削除',
+	'coll-remove' => '除去',
 	'coll-show' => '表示',
 	'coll-move_to_top' => '先頭へ',
 	'coll-move_up' => '上へ',
