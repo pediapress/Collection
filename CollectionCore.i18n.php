@@ -2102,7 +2102,7 @@ $messages['it'] = array(
  * @author 青子守歌
  */
 $messages['ja'] = array(
-	'coll-print_export' => '印刷/エクスポート',
+	'coll-print_export' => '印刷/書き出し',
 	'coll-create_a_book' => 'ブックの新規作成',
 	'coll-create_a_book_tooltip' => 'ブックあるいは記事集を作成する',
 	'coll-book_creator' => 'ブッククリエーター',
@@ -2114,7 +2114,7 @@ $messages['ja'] = array(
 	'coll-add_linked_article' => 'リンクされているウィキページをブックに追加',
 	'coll-remove_linked_article' => 'あなたの本からウィキページのリンクを削除',
 	'coll-add_category' => 'このカテゴリを自分のブックに追加',
-	'coll-add_category_tooltip' => 'このカテゴリ中のすべてのページをあなたのブックに追加',
+	'coll-add_category_tooltip' => 'このカテゴリ内のすべてのページをあなたのブックに追加',
 	'coll-add_this_page' => 'このページを自分のブックに追加',
 	'coll-add_page_tooltip' => '現在のページをあなたのブックに追加',
 	'coll-bookscategory' => 'ブック',
@@ -2126,7 +2126,7 @@ $messages['ja'] = array(
 	'coll-helppage' => 'Help:ブック',
 	'coll-load_collection' => 'ブックの読み込み',
 	'coll-load_collection_tooltip' => 'このブックをあなたの現在のブックとして読み込む',
-	'coll-n_pages' => '$1ページ',
+	'coll-n_pages' => '$1{{PLURAL:$1|ページ}}',
 	'coll-printable_version_pdf' => 'PDF版',
 	'coll-remove_this_page' => 'このページを自分のブックから削除する',
 	'coll-remove_page_tooltip' => '現在のページをあなたのブックから削除する',

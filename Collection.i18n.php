@@ -3133,7 +3133,7 @@ Ti wazeno ser kitabê xo de binuse, kontendê newe ya zi bar kerdişê kitabî �
 	'coll-overwrite' => 'Sero binuş',
 	'coll-append' => 'Penî ra de biker',
 	'coll-cancel' => 'Îptal biker',
-	'coll-update' => 'Newen ke',
+	'coll-update' => 'Anewen ke',
 	'coll-limit_exceeded_title' => 'Kitab zaf gird o.',
 	'coll-limit_exceeded_text' => 'Kitabê tu zaf gird o.
 Ma nieşkenî pel de biker.',
@@ -6634,7 +6634,7 @@ L\'elenco viene aggiornato ogni qualvolta si fa clic sui pulsanti "aggiungi" o "
  */
 $messages['ja'] = array(
 	'coll-desc' => '[[Special:Book|ブックを作成する]]',
-	'coll-book_creator_intro' => '<big>「ブッククリエーター」を使うと、あなたが選んだウィキページを含むブックを作成することができます。ブックは様々な形式で書き出したり（例えば PDF や ODF）、印刷版を注文したりできます。</big>',
+	'coll-book_creator_intro' => '<big>「ブッククリエーター」を使用すると、あなたが選択したウィキページを含むブックを作成できます。ブックはさまざまな形式（例：PDF、ODF）で書き出したり、印刷版を注文したりできます。</big>',
 	'coll-manage_your_book' => 'あなたのブックを管理',
 	'coll-book_creator_help' => 'より詳しくは[[{{MediaWiki:Coll-helppage}}|ブックについてのヘルプ]]を参照してください。',
 	'coll-start_book_creator' => 'ブッククリエーターを開始',
@@ -6646,8 +6646,8 @@ $messages['ja'] = array(
 	'coll-exclusion_category_title' => '印刷から除外',
 	'coll-print_template_prefix' => '印刷用',
 	'coll-print_template_pattern' => '$1/印刷用',
-	'coll-unknown_subpage_title' => '不明なサブページ',
-	'coll-unknown_subpage_text' => 'この[[Special:Book|ブック]]のサブページは存在しません',
+	'coll-unknown_subpage_title' => '不明な下位ページ',
+	'coll-unknown_subpage_text' => 'この[[Special:Book|ブック]]の下位ページは存在しません',
 	'coll-couldnotaddarticle_title' => 'ページを追加できませんでした',
 	'coll-couldnotaddarticle_msg' => 'このページは追加できませんでした。',
 	'coll-couldnotremovearticle_title' => 'ページを削除できませんでした',
@@ -6673,11 +6673,11 @@ $messages['ja'] = array(
 	'coll-contents' => '内容',
 	'coll-drag_and_drop' => 'ドラッグ・アンド・ドロップでウィキページや章を並べ換えます',
 	'coll-create_chapter' => '新しい章を作成',
-	'coll-sort_alphabetically' => 'ページを辞書順にソート',
+	'coll-sort_alphabetically' => '辞書順に並べ替え',
 	'coll-rename' => '改名',
-	'coll-new_chapter' => '新しい章見出しを入力',
-	'coll-rename_chapter' => '新しい章見出しを入力',
-	'coll-no_such_category' => '指定されたカテゴリは存在しません',
+	'coll-new_chapter' => '新しい章の見出しを入力',
+	'coll-rename_chapter' => '章の新しい見出しを入力',
+	'coll-no_such_category' => '指定されたカテゴリはありません',
 	'coll-notitle_title' => 'ページタイトルが未設定です。',
 	'coll-post_failed_title' => 'POST要求の失敗',
 	'coll-post_failed_msg' => '$1へのPOST要求は失敗しました ($2)。',
@@ -6706,11 +6706,11 @@ $messages['ja'] = array(
 	'coll-limit_exceeded_title' => 'ブックが大きすぎます',
 	'coll-limit_exceeded_text' => 'あなたのブックは大きすぎます。これ以上のページを追加することはできません。',
 	'coll-rendering_title' => 'レンダリング中',
-	'coll-rendering_text' => '<p><strong>ドキュメント生成が完了するまでお待ちください。</strong></p>
+	'coll-rendering_text' => '<p><strong>ドキュメント生成が終わるまでお待ちください。</strong></p>
 
 <p><strong>進捗：</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>このページは数秒毎に自動更新されます。更新されない場合は、ブラウザの更新ボタンを押してください。</p>',
+<p>このページは数秒毎に自動更新されます。更新されない場合は、ブラウザーの更新ボタンを押してください。</p>',
 	'coll-rendering_status' => '<strong>状況:</strong> $1',
 	'coll-rendering_article' => '(ウィキページ: $1)',
 	'coll-rendering_page' => '(ページ: $1)',
