@@ -6758,7 +6758,7 @@ $messages['ja'] = array(
 	'coll-suggest_article_ban' => 'ページ「<strong>$1</strong>」は候補の一覧から除去されました（$2）。',
 	'coll-suggest_article_add' => 'ページ「<strong>$1</strong>」はあなたのブックに追加されました（$2）。',
 	'coll-suggest_article_remove' => 'ページ「<strong>$1</strong>」はあなたのブックから除去されました（$2）。',
-	'coll-suggest_undo_tooltip' => 'この操作を取り消し',
+	'coll-suggest_undo_tooltip' => 'この操作を取り消す',
 	'coll-suggest_undo' => '取り消し',
 	'coll-load_local_book' => 'OKをクリックすると %NUMPAGES% 件のウィキページを含む本を %TITLE% という題で作成します。
 この本を削除して新しい本を作成する場合はキャンセルをクリックしてください。',
