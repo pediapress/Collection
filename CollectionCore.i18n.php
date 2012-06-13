@@ -1278,6 +1278,7 @@ $messages['eu'] = array(
  * @author Ladsgroup
  * @author Mehran
  * @author MehranVB
+ * @author Reza1615
  * @author Wayiran
  * @author محک
  */
@@ -1297,7 +1298,7 @@ $messages['fa'] = array(
 	'coll-add_category_tooltip' => 'همهٔ صفحه‌های ویکی در این رده را به کتابتان بیفزایید',
 	'coll-add_this_page' => 'این صفحه را به کتاب‌تان بیفزایید',
 	'coll-add_page_tooltip' => 'صفحهٔ فعلی ویکی به کتابتان اضافه شود',
-	'coll-bookscategory' => 'کتاب‌های کاربران ویکی‌پدیا',
+	'coll-bookscategory' => 'کتاب‌های ویکی‌پدیا (کتاب‌های کاربران)',
 	'coll-clear_collection' => 'پاک کردن کتاب',
 	'coll-clear_collection_confirm' => 'آیا واقعاً می‌خواهید که کتاب خود را به طور کامل پاک کنید؟',
 	'coll-clear_collection_tooltip' => 'همهٔ صفحه‌های ویکی را از کتاب فعلی‌تان حذف کنید',
@@ -1860,7 +1861,7 @@ $messages['hu'] = array(
  */
 $messages['hy'] = array(
 	'coll-create_a_book' => 'Ստեղծել գիրք',
-	'coll-download_as' => 'Քաշել որպես $1',
+	'coll-download_as' => 'Ներբեռնել որպես $1',
 	'coll-add_category' => 'Ավելացնել կատեգորիան',
 	'coll-bookscategory' => 'Գրքեր',
 	'coll-clear_collection' => 'Ջնջել գիրքը',

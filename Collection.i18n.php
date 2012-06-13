@@ -5886,10 +5886,10 @@ $messages['hy'] = array(
 Այս էջը ճիշտ չի գործի, եթե JavaScript-ը միացված չէ։</strong>',
 	'coll-savedbook_template' => 'պահպանված_գիրք',
 	'coll-your_book' => 'Ձեր գիրքը',
-	'coll-download_title' => 'Քաշել',
+	'coll-download_title' => 'Ներբեռնել',
 	'coll-download_text' => 'Որևէ տարբերակ քաշելու համար ընտրեք ֆորմատը և սեղմեք կոճակը։',
 	'coll-download_as_text' => '$1 ֆորմատով տարբերակը քաշելու համար սեղմեք կոճակը։',
-	'coll-download' => 'Քաշել',
+	'coll-download' => 'Ներբեռնել',
 	'coll-format_label' => 'Ֆորմատ.',
 	'coll-remove' => 'Ջնջել',
 	'coll-show' => 'Ցույց տալ',
@@ -5949,7 +5949,7 @@ $messages['hy'] = array(
 	'coll-rendering_page' => '(էջ. $1)',
 	'coll-rendering_finished_title' => 'Ստեղծումն ավարտված է',
 	'coll-rendering_finished_text' => '<strong>Նիշքը ստեղծված է։</strong>
-<strong>[$1 Քաշել նիշքը]</strong> ձեր համակարգչի մեջ։
+<strong>[$1 Ներբեռնել նիշքը]</strong> ձեր համակարգչի մեջ։
 
 Նշում.
 * Բավարարված չե՞ք արդյունքով։ Տես [[{{MediaWiki:Coll-helppage}}|գրքերի մասին օգնության էջը]] այն լավացնելու հնարավորությունների համար։',
