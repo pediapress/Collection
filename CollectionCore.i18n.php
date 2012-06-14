@@ -369,7 +369,7 @@ $messages['as'] = array(
 	'coll-suggest_empty' => 'খালি',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
  */
@@ -410,7 +410,7 @@ $messages['ast'] = array(
 	'coll-suggest_empty' => 'balero',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  */
 $messages['az'] = array(
@@ -501,7 +501,7 @@ $messages['bar'] = array(
 	'coll-suggest_empty' => 'laar',
 );
 
-/** Belarusian (Беларуская)
+/** Belarusian (беларуская)
  * @author Тест
  * @author Хомелка
  */
@@ -583,7 +583,7 @@ $messages['be-tarask'] = array(
 	'coll-suggest_empty' => 'пуста',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Turin
  */
@@ -659,7 +659,7 @@ $messages['bn'] = array(
 	'coll-suggest_empty' => 'খালি',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
  */
@@ -700,7 +700,7 @@ $messages['br'] = array(
 	'coll-suggest_empty' => 'goullo',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  * @author Smooth O
  */
@@ -741,7 +741,7 @@ $messages['bs'] = array(
 	'coll-suggest_empty' => 'prazno',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Aleator
  * @author Paucabot
  * @author SMP
@@ -793,7 +793,7 @@ $messages['ce'] = array(
 	'coll-help' => 'Нисвохаам',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Danny B.
  * @author Matěj Grabovský
  * @author Mormegil
@@ -875,7 +875,7 @@ $messages['cy'] = array(
 	'coll-suggest_empty' => 'gwag',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Byrial
  * @author Peter Alberti
  * @author Thomas81
@@ -1141,7 +1141,7 @@ $messages['eo'] = array(
 	'coll-suggest_empty' => 'malplena',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Crazymadlover
  * @author Imre
  * @author Locos epraix
@@ -1187,7 +1187,7 @@ $messages['es'] = array(
 	'coll-suggest_empty' => 'vacío',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Pikne
  */
@@ -1228,7 +1228,7 @@ $messages['et'] = array(
 	'coll-suggest_empty' => 'tühi',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  * @author Kobazulo
  * @author Theklan
@@ -1319,7 +1319,7 @@ $messages['fa'] = array(
 	'coll-suggest_empty' => 'خالی',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Cimon Avaro
  * @author Crt
  * @author Nike
@@ -1364,7 +1364,7 @@ $messages['fi'] = array(
 	'coll-suggest_empty' => 'tyhjä',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author Grondin
  * @author Guillom
@@ -1412,7 +1412,7 @@ $messages['fr'] = array(
 	'coll-suggest_empty' => 'vide',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -1732,7 +1732,7 @@ $messages['hif-latn'] = array(
 	'coll-suggest_empty' => 'khaali',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Ex13
  * @author SpeedyGonsales
@@ -1814,7 +1814,7 @@ $messages['hsb'] = array(
 	'coll-suggest_empty' => 'prózdny',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Bdamokos
  * @author Dani
  * @author Glanthor Reviol
@@ -1873,7 +1873,7 @@ $messages['hy'] = array(
 	'coll-show_collection' => 'Ցույց տալ գիրքը',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -2038,7 +2038,7 @@ $messages['io'] = array(
 	'coll-suggest_empty' => 'vakua',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author S.Örvarr.S
  */
 $messages['is'] = array(
@@ -2048,7 +2048,7 @@ $messages['is'] = array(
 	'coll-show_collection' => 'Sýna safn',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author BrokenArrow
  * @author Darth Kule
@@ -2521,7 +2521,7 @@ $messages['li'] = array(
 	'coll-suggest_empty' => 'laeg',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  * @author Homo
  */
@@ -2558,7 +2558,7 @@ $messages['lt'] = array(
 	'coll-suggest_empty' => 'tuščia',
 );
 
-/** Latgalian (Latgaļu)
+/** Latgalian (latgaļu)
  * @author Dark Eagle
  */
 $messages['ltg'] = array(
@@ -2608,7 +2608,7 @@ $messages['lus'] = array(
 	'coll-suggest_empty' => 'ruak',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author GreenZeb
  * @author Papuass
  */
@@ -2648,7 +2648,7 @@ $messages['lv'] = array(
 	'coll-suggest_empty' => 'tukšs',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -2729,7 +2729,7 @@ $messages['ml'] = array(
 	'coll-suggest_empty' => 'ശൂന്യം',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -2985,7 +2985,7 @@ $messages['nl'] = array(
 	'coll-suggest_empty' => 'leegmaken',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Eirik
  * @author Gunnernett
  * @author Harald Khan
@@ -3026,7 +3026,7 @@ $messages['nn'] = array(
 	'coll-suggest_empty' => 'tom',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -3142,7 +3142,7 @@ $messages['pfl'] = array(
 	'coll-helppage' => 'Help:Bischa',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Derbeth
  * @author Leinad
  * @author Masti
@@ -3255,7 +3255,7 @@ $messages['ps'] = array(
 	'coll-suggest_empty' => 'تش',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author 555
  * @author Crazymadlover
  * @author Giro720
@@ -3302,7 +3302,7 @@ $messages['pt'] = array(
 	'coll-suggest_empty' => 'vazio',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
  * @author Helder.wiki
@@ -3347,7 +3347,7 @@ $messages['pt-br'] = array(
 	'coll-suggest_empty' => 'vazio',
 );
 
-/** Romansh (Rumantsch)
+/** Romansh (rumantsch)
  * @author Gion-andri
  */
 $messages['rm'] = array(
@@ -3387,7 +3387,7 @@ $messages['rm'] = array(
 	'coll-suggest_empty' => 'vid',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Minisarm
@@ -3431,7 +3431,7 @@ $messages['ro'] = array(
 	'coll-suggest_empty' => 'fără conținut',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  * @author Reder
  */
@@ -3472,7 +3472,7 @@ $messages['roa-tara'] = array(
 	'coll-suggest_empty' => 'vacande',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ahonc
  * @author Ferrer
  * @author Kaganer
@@ -3563,7 +3563,7 @@ $messages['sa'] = array(
 	'coll-help' => 'साहाय्यम्',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -3612,7 +3612,7 @@ $messages['sat'] = array(
 	'coll-book_creator' => 'Puthi sirjo̠nić',
 );
 
-/** Sardinian (Sardu)
+/** Sardinian (sardu)
  * @author Andria
  */
 $messages['sc'] = array(
@@ -3620,7 +3620,7 @@ $messages['sc'] = array(
 	'coll-show_collection' => 'Ammustra libru',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
@@ -3668,7 +3668,7 @@ $messages['si'] = array(
 	'coll-suggest_empty' => 'හිස්',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -3708,7 +3708,7 @@ $messages['sk'] = array(
 	'coll-suggest_empty' => 'prázdne',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  * @author Freakolowsky
  * @author Smihael
@@ -3750,7 +3750,7 @@ $messages['sl'] = array(
 	'coll-suggest_empty' => 'prazno',
 );
 
-/** Albanian (Shqip)
+/** Albanian (shqip)
  * @author Olsi
  */
 $messages['sq'] = array(
@@ -3759,7 +3759,7 @@ $messages['sq'] = array(
 	'coll-download_as' => 'Shkarkoje si $1',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Nikola Smolenski
  * @author Rancher
  * @author Јованвб
@@ -3801,7 +3801,7 @@ $messages['sr-ec'] = array(
 	'coll-suggest_empty' => 'празно',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  * @author Жељко Тодоровић
  */
@@ -3861,7 +3861,7 @@ $messages['su'] = array(
 	'coll-add_category' => 'Nambah kategori',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Ainali
  * @author Boivie
  * @author GameOn
@@ -4032,7 +4032,7 @@ $messages['te'] = array(
 	'coll-suggest_empty' => 'ఖాళీ',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -4042,7 +4042,7 @@ $messages['tet'] = array(
 	'coll-n_pages' => '{{PLURAL:$1|pájina ida|pájina $1}}',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -4057,7 +4057,7 @@ $messages['tg-cyrl'] = array(
 	'coll-show_collection' => 'Намоиши гирдоварӣ',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -4250,7 +4250,7 @@ $messages['tt'] = array(
 	'coll-bookscategory' => 'Китаплар',
 );
 
-/** Tatar (Cyrillic script) (Татарча)
+/** Tatar (Cyrillic script) (татарча)
  * @author Ильнар
  */
 $messages['tt-cyrl'] = array(
@@ -4290,7 +4290,7 @@ $messages['tt-cyrl'] = array(
 	'coll-suggest_empty' => 'буш',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  * @author Aleksandrit
@@ -4335,7 +4335,7 @@ $messages['uk'] = array(
 	'coll-suggest_empty' => 'порожня',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -4511,7 +4511,7 @@ $messages['yue'] = array(
 	'coll-show_collection' => '顯示書',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Bencmq
  * @author Liangent
  * @author Wmr89502270
@@ -4554,7 +4554,7 @@ $messages['zh-hans'] = array(
 	'coll-suggest_empty' => '空',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Alexsh
  * @author Anakmalaysia
  * @author Liangent

@@ -1229,7 +1229,7 @@ $messages['as'] = array(
 	'right-collectionsaveascommunitypage' => 'সমজুৱা পৃষ্ঠাৰূপে গ্ৰন্থ সাঁচক',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
  */
@@ -1261,7 +1261,7 @@ $messages['ast'] = array(
 	'coll-about_pp' => 'Tocante a $1',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Vago
  */
@@ -1446,7 +1446,7 @@ $messages['bar'] = array(
 	'coll-community_collection_label' => 'Gmoahschoftlichs Buach',
 );
 
-/** Belarusian (Беларуская)
+/** Belarusian (беларуская)
  * @author Тест
  * @author Хомелка
  */
@@ -1731,7 +1731,7 @@ $messages['be-tarask'] = array(
 	'right-collectionsaveascommunitypage' => 'захаваньне кніг як старонак супольнасьці',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Spiritia
  * @author Turin
@@ -1981,7 +1981,7 @@ JavaScript সক্রিয় না করা পর্যন্ত, এই 
 	'right-collectionsaveascommunitypage' => 'বইগুলো কমিউনিটি পাতা হিসেবে সংরক্ষণ করো',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fohanno
  * @author Fulup
  * @author Y-M D
@@ -2125,7 +2125,7 @@ Hizivaet e vez ar roll bep tro ma klikit war ar bouton ouzhpennañ pe tennañ.",
 	'right-collectionsaveascommunitypage' => 'Enrollañ levrioù evel ur bajenn eus ar gumuniezh',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -2423,7 +2423,7 @@ $messages['ce'] = array(
 	'coll-rendering_article' => '(яззам: $1)',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Danny B.
  * @author Li-sung
  * @author Matěj Grabovský
@@ -2715,7 +2715,7 @@ Mae'r rhestr yn cael ei hadnewyddu bob tro yr ydych yn pwyso ar y botymau ychwan
 	'right-collectionsaveascommunitypage' => 'Gallu rhoi llyfrau ar gadw ar dudalennau cymunedol',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Hylle
  * @author Jon Harald Søby
  * @author Peter Alberti
@@ -3340,7 +3340,7 @@ Lisćina se aktualizěrujo, gažkuli kliknjoš na tłocašk "pśidaś" abo "wót
 	'right-collectionsaveascommunitypage' => 'Knigły ako bok zgromaźeństwa składowaś',
 );
 
-/** Ewe (Eʋegbe)
+/** Ewe (eʋegbe)
  * @author Natsubee
  */
 $messages['ee'] = array(
@@ -3638,7 +3638,7 @@ La listo estas ĝisdatigita iam ajn vi klakas la butonojn aldoni aŭ forigi.',
 	'right-collectionsaveascommunitypage' => 'Konservi librojn kiel komunuma paĝo',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Baiji
  * @author Crazymadlover
  * @author Dferg
@@ -3792,7 +3792,7 @@ La lista se actualiza cada vez que haces click en los botones de agregar o quita
 	'right-collectionsaveascommunitypage' => 'Grabar libros como página de la comunidad',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Pikne
  */
@@ -3924,7 +3924,7 @@ Võib-olla on see kustutatud ja tuleb taasluua.',
 	'right-collectionsaveascommunitypage' => 'Salvestada raamat ühisleheküljena',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  * @author Kobazulo
  * @author Theklan
@@ -4217,7 +4217,7 @@ $messages['fa'] = array(
 	'right-collectionsaveascommunitypage' => 'ذخیره کردن کتاب‌ها به صورت یک صفحه عمومی',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Cimon Avaro
  * @author Crt
  * @author Nike
@@ -4364,7 +4364,7 @@ Lista päivittyy aina kun napsautat lisää- tai poista-painikkeita.',
 	'right-collectionsaveascommunitypage' => 'Tallentaa kirjoja yhteisösivuina',
 );
 
-/** French (Français)
+/** French (français)
  * @author Antaya
  * @author Crochet.david
  * @author Dodoïste
@@ -4517,7 +4517,7 @@ La liste est mise à jour à chaque fois que vous cliquez sur les boutons d'ajou
 	'right-collectionsaveascommunitypage' => 'Sauvegarder des livres sur des pages communautaires',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -4659,7 +4659,7 @@ La lista est betâ a jorn a châque côp que vos clicâd sur los botons d’apon
 	'right-collectionsaveascommunitypage' => 'Sôvar des lévros sur des pâges a la comunôtât',
 );
 
-/** Friulian (Furlan)
+/** Friulian (furlan)
  * @author Klenje
  */
 $messages['fur'] = array(
@@ -5436,7 +5436,7 @@ $messages['hil'] = array(
 	'coll-cancel' => 'Kanselahon',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Ex13
  * @author SpeedyGonsales
@@ -5726,7 +5726,7 @@ $messages['ht'] = array(
 	'coll-suggest_undo' => 'Defè',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Bdamokos
  * @author Dani
  * @author Glanthor Reviol
@@ -5970,7 +5970,7 @@ $messages['hy'] = array(
 	'coll-return_to' => 'Վերադառնալ [[:$1]]',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -6456,7 +6456,7 @@ On ne povas adjuntar plusa pagini.',
 	'coll-suggest_undo' => 'desfacar',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author S.Örvarr.S
  */
 $messages['is'] = array(
@@ -6480,7 +6480,7 @@ $messages['is'] = array(
 	'coll-about_pp' => 'Um $1',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author BrokenArrow
  * @author Civvì
  * @author Darth Kule
@@ -7708,7 +7708,7 @@ $messages['ku-latn'] = array(
 	'coll-title' => 'Sernav:',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (kernowek)
  * @author Kernoweger
  * @author Kw-Moon
  * @author Nrowe
@@ -8010,7 +8010,7 @@ $messages['lo'] = array(
 	'coll-no' => 'ບໍ່ໃຊ່',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  * @author Homo
  * @author Matasg
@@ -8107,7 +8107,7 @@ Gal jis buvo panaikintas ir turi būti regeneruojamas.',
 	'right-collectionsaveascommunitypage' => 'Išsaugoti knygas kaip bendruomenės puslapį',
 );
 
-/** Latgalian (Latgaļu)
+/** Latgalian (latgaļu)
  * @author Dark Eagle
  */
 $messages['ltg'] = array(
@@ -8117,7 +8117,7 @@ $messages['ltg'] = array(
 	'coll-suggest_show' => 'ruodeit',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author GreenZeb
  * @author Papuass
  */
@@ -8179,7 +8179,7 @@ $messages['mhr'] = array(
 	'coll-cancel' => 'Чараш',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -8459,7 +8459,7 @@ $messages['ml'] = array(
 	'right-collectionsaveascommunitypage' => 'പുസ്തകങ്ങൾ സമൂഹ താളായി സേവ് ചെയ്യുക',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -9273,7 +9273,7 @@ De lijst wordt bijgewerkt als u op de knop 'toevoegen' of 'verwijderen' klikt.",
 	'right-collectionsaveascommunitypage' => 'Boeken opslaan als gemeenschapspagina',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -9410,7 +9410,7 @@ Lista vert oppdatert kvar gong du trykkjer på «legg til»- eller «fjern»-kna
 	'right-collectionsaveascommunitypage' => 'Lagre bøker som ei sams side',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  * @author Jfblanc
  */
@@ -9686,7 +9686,7 @@ $messages['pfl'] = array(
 	'coll-suggest_show' => 'zaische',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Derbeth
  * @author Jwitos
  * @author Leinad
@@ -10033,7 +10033,7 @@ $messages['ps'] = array(
 	'coll-suggest_undo' => 'ناکړل',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author 555
  * @author Giro720
  * @author Hamilton Abreu
@@ -10183,7 +10183,8 @@ A lista é actualizada sempre que clica os botões de adicionar ou remover.',
 	'right-collectionsaveascommunitypage' => 'Gravar livros como página comunitária',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
+ * @author 555
  * @author Eduardo.mps
  * @author Giro720
  * @author Hamilton Abreu
@@ -10191,7 +10192,6 @@ A lista é actualizada sempre que clica os botões de adicionar ou remover.',
  * @author Heldergeovane
  * @author Jorge Morais
  * @author Luckas Blade
- * @author 555
  */
 $messages['pt-br'] = array(
 	'coll-desc' => '[[Special:Book|Criar livros]]',
@@ -10332,7 +10332,7 @@ A lista é atualizada toda vez que você clica nos botões adicionar ou remover.
 	'right-collectionsaveascommunitypage' => 'Salvar livros como páginas comunitárias',
 );
 
-/** Romansh (Rumantsch)
+/** Romansh (rumantsch)
  * @author Gion-andri
  */
 $messages['rm'] = array(
@@ -10474,7 +10474,7 @@ La glista vegn actualisada sche ti cliccas sin ils buttuns per agiuntar u allont
 	'right-collectionsaveascommunitypage' => 'Memorisar cudeschs sco pagina da la communitad',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Cin
  * @author Danutz
  * @author Firilacroco
@@ -10622,7 +10622,7 @@ Această listă este actualizată de fiecare dată când apăsați butoanele de 
 	'right-collectionsaveascommunitypage' => 'Salvează cartea ca o pagină a comunității',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  * @author Reder
  */
@@ -10732,7 +10732,7 @@ Non ge puè sckaffà cchiù otre pàgene.",
 	'right-collectionsaveascommunitypage' => "Salve 'a pàgene cumme portale d'a comunitate",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ahonc
  * @author Aleksandrit
  * @author Amikeco
@@ -11031,7 +11031,7 @@ $messages['sa'] = array(
 	'coll-cancel' => 'निवर्तयते',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -11170,7 +11170,7 @@ $messages['sah'] = array(
 	'right-collectionsaveascommunitypage' => 'кинигэлэри бөлөх тус сирэйин курдук хаалларыы',
 );
 
-/** Sardinian (Sardu)
+/** Sardinian (sardu)
  * @author Andria
  */
 $messages['sc'] = array(
@@ -11183,7 +11183,7 @@ $messages['sc'] = array(
 	'coll-suggest_show' => 'ammustra',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
@@ -11205,7 +11205,7 @@ $messages['scn'] = array(
 	'coll-suggest_show' => 'ammustra',
 );
 
-/** Serbo-Croatian (Srpskohrvatski)
+/** Serbo-Croatian (srpskohrvatski / српскохрватски)
  * @author OC Ripper
  */
 $messages['sh'] = array(
@@ -11332,7 +11332,7 @@ $messages['si'] = array(
 	'right-collectionsaveascommunitypage' => 'ප්‍රජා පිටුව ලෙස පොත් සුරකින්න',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  * @author Mormegil
  */
@@ -11472,7 +11472,7 @@ Zoznam sa aktualizuje vždy po kliknutí na tlačidlo Pridať alebo Odstrániť.
 	'right-collectionsaveascommunitypage' => 'Uložiť knihy ako komunitnú stránku',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  * @author Freakolowsky
  * @author Smihael
@@ -11614,7 +11614,7 @@ Seznam je posodobljen, ko kliknete na gumbe za dodajanje ali odstranjevanje.',
 	'right-collectionsaveascommunitypage' => 'Shranjevanje knjig kot strani občestva',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Nikola Smolenski
  * @author Rancher
  * @author Sasa Stefanovic
@@ -11762,7 +11762,7 @@ $messages['sr-ec'] = array(
 	'right-collectionsaveascommunitypage' => 'чување књига у виду заједничке странице',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  * @author Rancher
  * @author Жељко Тодоровић
@@ -12021,7 +12021,7 @@ $messages['su'] = array(
 	'coll-about_pp' => 'Ngeunaan $1',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Ainali
  * @author Boivie
  * @author Dafer45
@@ -12445,7 +12445,7 @@ JavaScript చేతనం చేస్తే తప్ప, ఈ పేజీ స
 	'right-collectionsaveascommunitypage' => 'పుస్తకములను కమ్యూనిటీ పేజి లాగ భద్రపరచుము',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -12463,7 +12463,7 @@ $messages['tet'] = array(
 	'coll-suggest_your_book' => 'Ita-nia livru',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -12536,7 +12536,7 @@ $messages['tg-cyrl'] = array(
 	'coll-return_to' => 'Бозгашт ба [[:$1]]',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -13175,7 +13175,7 @@ Ekle veya sil butonlarına her bastığınızda liste yenilenir.',
 	'right-collectionsaveascommunitypage' => 'Kitapları topluluk sayfası olarak kaydet',
 );
 
-/** Tatar (Cyrillic script) (Татарча)
+/** Tatar (Cyrillic script) (татарча)
  * @author Timming
  * @author Ильнар
  */
@@ -13233,7 +13233,7 @@ $messages['tt-cyrl'] = array(
 	'coll-suggest_undo' => 'үткәрмәү',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  * @author Aleksandrit
@@ -13382,7 +13382,7 @@ $messages['ur'] = array(
 	'coll-cancel' => 'منسوخ',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  * @author Nick1915
  */
@@ -13938,7 +13938,7 @@ $messages['yue'] = array(
 	'coll-return_to' => '返去[[:$1]]',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Bencmq
  * @author Chenxiaoqino
  * @author Chenzw
@@ -14068,7 +14068,7 @@ $messages['zh-hans'] = array(
 	'right-collectionsaveascommunitypage' => '保存图书为社区页面',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Alexsh
  * @author FireJackey
  * @author Liangent
