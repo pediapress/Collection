@@ -13694,7 +13694,7 @@ Danh sách này được cập nhật mỗi khi bạn nhấn vào nút thêm ho�
 	'coll-suggest_article_add' => 'Trang <strong>$1</strong> đã được thêm vào cuốn sách ($2).',
 	'coll-suggest_article_remove' => 'Trang <strong>$1</strong> đã bị xóa ra khỏi cuốn sách ($2).',
 	'coll-suggest_undo_tooltip' => 'Phục hồi tác vụ này',
-	'coll-suggest_undo' => 'phục hồi',
+	'coll-suggest_undo' => 'hoàn tác',
 	'coll-load_local_book' => 'Nhấn OK để tiếp tục quyển sách %TITLE% hiện có %NUMPAGES% trang wiki. Nhấn Cancel để xóa và làm việc với quyển sách trắng.',
 	'right-collectionsaveasuserpage' => 'Lưu sách vở thành trang cá nhân',
 	'right-collectionsaveascommunitypage' => 'Lưu sách thành trang cộng đồng',
