@@ -45,6 +45,8 @@ at http://tools.pediapress.com/mw-serve/. In this case, just keep
 the configuration variable $wgCollectionMWServeURL (see below) at its default
 value.
 
+Note that the MediaWiki must be accessible from the render server, i.e. if
+your MediaWiki is behind a firewall you cannot use the public render server.
 
 Installation and Configuration of the Collection Extension
 ==========================================================
@@ -53,7 +55,7 @@ Installation and Configuration of the Collection Extension
   ``extensions`` directory of your *MediaWiki* installation::
 
     cd extensions/
-    svn co http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/Collection
+    git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Collection
 
 * Put this line in your ``LocalSettings.php``::
 
@@ -66,9 +68,6 @@ Installation and Configuration of the Collection Extension
 
    The default is ``"http://tools.pediapress.com/mw-serve/"``,
    a public render server for low-traffic MediaWikis hosted by PediaPress.
-
-   Note that the MediaWiki must be accessible from the render server, i.e. if
-   your MediaWiki is behind a firewall you cannot use the public render server.
 
   *$wgCollectionMWServeCert (string)*
    Filename of a SSL certificate in PEM format for the mw-serve render server.
