@@ -279,7 +279,7 @@ $messages['arc'] = array(
 	'coll-bookscategory' => 'ܟܬܒ̈ܐ',
 	'coll-help' => 'ܥܘܕܪܢܐ',
 	'coll-helppage' => 'Help:ܟܬܒ̈ܐ',
-	'coll-n_pages' => '$1 {{PLURAL:$1|ܕܦܐ|ܕܦ̈ܐ}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|ܦܐܬܐ|ܦܐܬܬ̈ܐ}}',
 	'coll-printable_version_pdf' => 'ܨܚܚܐ ܕPDF',
 	'coll-show_collection' => 'ܚܘܝ ܟܬܒܐ',
 	'coll-suggest_empty' => 'ܣܦܝܩܐ',
@@ -2338,6 +2338,7 @@ $messages['kn'] = array(
  * @author Klutzy
  * @author Kwj2772
  * @author Yknok29
+ * @author 아라
  */
 $messages['ko'] = array(
 	'coll-print_export' => '인쇄/내보내기',
@@ -2364,7 +2365,7 @@ $messages['ko'] = array(
 	'coll-helppage' => 'Help:책 만들기',
 	'coll-load_collection' => '책 불러오기',
 	'coll-load_collection_tooltip' => '이 책을 책 제작 작업란으로 불러오기',
-	'coll-n_pages' => '$1개의 문서',
+	'coll-n_pages' => '문서 $1개',
 	'coll-printable_version_pdf' => 'PDF 버전',
 	'coll-remove_this_page' => '책에서 해당 페이지를 삭제',
 	'coll-remove_page_tooltip' => '책에서 이 문서를 제외합니다',
