@@ -3992,6 +3992,7 @@ $messages['ta'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Arjunaraoc
  * @author Chaduvari
  * @author Kiranmayee
  * @author Veeven
@@ -3999,29 +4000,29 @@ $messages['ta'] = array(
 $messages['te'] = array(
 	'coll-print_export' => 'ముద్రించండి/ఎగుమతి చేయండి',
 	'coll-create_a_book' => 'ఓ పుస్తకాన్ని సృష్టించండి',
-	'coll-create_a_book_tooltip' => 'పుస్తకాన్ని లేదా పేజీల సేకరణని సృష్టించండి',
+	'coll-create_a_book_tooltip' => 'పుస్తకాన్ని లేదా వ్యాసాల సేకరణని సృష్టించండి',
 	'coll-book_creator' => 'పుస్తక కూర్పరి',
 	'coll-download_as' => '$1 క్రింద దిగుమతి చేసుకోండి',
 	'coll-download_as_tooltip' => 'ఈ పేజీ యొక్క $1 సంచికని దించుకోండి',
 	'coll-disable' => 'అచేతన పరచు',
-	'coll-book_creator_disable' => 'పుస్తకం సృష్టికర్తను అచేతనం చెయ్యి',
-	'coll-book_creator_disable_tooltip' => 'పుస్తకం సృష్టికర్తను వాడటం ఆపు',
+	'coll-book_creator_disable' => 'పుస్తకం కూర్పరిని అచేతనం చెయ్యి',
+	'coll-book_creator_disable_tooltip' => 'పుస్తకం కూర్పరిని వాడటం ఆపు',
 	'coll-add_linked_article' => 'మీ పుస్తకానికి లింకైన వికీ పేజీని చేర్చు',
 	'coll-remove_linked_article' => 'మీ పుస్తకం నుండి లింకున్న వికీ పేజీని తీసెయ్యి',
 	'coll-add_category' => 'పుస్తకముకు ఈ వర్గాన్ని చేర్చు',
 	'coll-add_category_tooltip' => 'ఈ వర్గంలోని అన్ని వికీ పేజీలనూ పుస్తకంలోనికి చేర్చు',
 	'coll-add_this_page' => 'ఈ పేజీని మీ పుస్తకములో చేర్చండి',
 	'coll-add_page_tooltip' => 'ప్రస్తుత వికీ పేజీని పుస్తకానికి చేర్చు',
-	'coll-bookscategory' => 'పుస్తకాలు',
+	'coll-bookscategory' => 'వికీపీడియా:పుస్తకాలు',
 	'coll-clear_collection' => 'పుస్తకముని తుడిచివేయి',
 	'coll-clear_collection_confirm' => 'మీరు నిజంగా మీ పుస్తకమును పూర్తిగా తొలగించాలని అనుకొంటున్నారా?',
 	'coll-clear_collection_tooltip' => 'ప్రస్తుత పుస్తకంలో నుండి అన్ని వికీ పేజీలను తీసివేయి',
 	'coll-help' => 'సహాయం',
 	'coll-help_tooltip' => 'పుస్తకాల్ని తయారుచేయడం గురించి సహాయాన్ని చూడండి',
-	'coll-helppage' => 'Help:పుస్తకాలు',
+	'coll-helppage' => 'సహాయం:పుస్తకాలు',
 	'coll-load_collection' => 'పుస్తకాన్ని లోడుచెయ్యి',
 	'coll-load_collection_tooltip' => 'ఈ పుస్తకాన్ని మీ ప్రస్తుత పుస్తకంగా లోడు చెయ్యండి',
-	'coll-n_pages' => '$1 {{PLURAL:$1|పుట|పుటలు}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1| వికీపేజీ|వికీపేజీలు}}',
 	'coll-printable_version_pdf' => 'PDF కూర్పు',
 	'coll-remove_this_page' => 'ఈ పుటని మీ పుస్తకం నుండి తొలగించండి',
 	'coll-remove_page_tooltip' => 'ప్రస్తుత వికీ పేజీని నా పుస్తకం నుండి తొలగించు',
