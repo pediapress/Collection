@@ -9206,7 +9206,7 @@ Wilt u uw huidige boek overschrijven, de nieuwe pagina's toevoegen óf het laden
 	'coll-overwrite' => 'Overschrijven',
 	'coll-append' => 'Toevoegen',
 	'coll-cancel' => 'Annuleren',
-	'coll-update' => 'Verversen',
+	'coll-update' => 'Bijwerken',
 	'coll-limit_exceeded_title' => 'Het boek is te groot',
 	'coll-limit_exceeded_text' => "Uw boek is te groot.
 U kunt geen pagina's meer toevoegen.",
@@ -12327,10 +12327,10 @@ $messages['te'] = array(
 	'coll-book_creator_intro' => "<big> ''పుస్తక కూర్పరి''  తో  మీకు ఇష్టమైన వికీ వ్యాసాలతో పుస్తకాన్ని సృష్టించవచ్చు.వివిధ రకాల తీరులలో (ఉదా పిడిఎప్ (PDF) మరియు ఒడిటి(ODT)) లో పుస్తకాన్ని ఎగుమతి చేయవచ్చు లేక ముద్రించిన పుస్తకాన్నికొనుక్కొవచ్చు </big>",
 	'coll-manage_your_book' => 'మీ పుస్తకాన్ని నిర్వహించండి',
 	'coll-book_creator_help' => 'మరింత సమాచారం కొరకు [[{{MediaWiki:Coll-helppage}}|పుస్తకాల గురించిన సహాయపు పేజీ]]ని చూడండి.',
-	'coll-start_book_creator' => 'పుస్తకం సృష్టికర్తను ప్రారంభించు',
-	'coll-book_creator_continue' => 'పుస్తకం సృష్టికర్తను వాడటం కొనసాగించు',
-	'coll-book_creator_disable_text' => "''పుస్తకం సృష్టికర్త'' అచేతనం చెయ్యబడుతుంది, మీరు పనిచేస్తున్న పుస్తకం తీసెయ్యబడుతుంది.",
-	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/పుస్తకము సృష్టికర్త  పాఠ్యము',
+	'coll-start_book_creator' => 'పుస్తక కూర్పరిని ప్రారంభించు',
+	'coll-book_creator_continue' => 'పుస్తకకూర్పరిని వాడటం కొనసాగించు',
+	'coll-book_creator_disable_text' => "''పుస్తక కూర్పరి'' అచేతనం చెయ్యబడుతుంది, మీరు పనిచేస్తున్న పుస్తకం తీసెయ్యబడుతుంది.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/పుస్తక కూర్పరి పాఠ్యం',
 	'coll-collection' => 'పుస్తకం',
 	'coll-collections' => 'పుస్తకాలు',
 	'coll-exclusion_category_title' => 'ముద్రణలో చేర్చవద్దు',
@@ -12338,9 +12338,9 @@ $messages['te'] = array(
 	'coll-print_template_pattern' => '$1/ముద్రించు',
 	'coll-unknown_subpage_title' => 'గుర్తుతెలియని ఉపపేజి',
 	'coll-unknown_subpage_text' => '[[ప్రత్యేక:పుస్తకం|పుస్తకం]] యొక్క ఉపపేజీ లేనే లేదు',
-	'coll-couldnotaddarticle_title' => 'వికి పేజిని కలుపలేకపోయాము',
+	'coll-couldnotaddarticle_title' => 'వికీ పేజిని కలుపలేకపోయాము',
 	'coll-couldnotaddarticle_msg' => 'వికీ పేజీని చేర్చలేకపోయాం.',
-	'coll-couldnotremovearticle_title' => 'వికి పేజిని తొలగించలేకపోయాము',
+	'coll-couldnotremovearticle_title' => 'వికీ పేజిని తొలగించలేకపోయాము',
 	'coll-couldnotremovearticle_msg' => 'వికీ పేజీని తొలగించలేకపోయాం.',
 	'coll-noscript_text' => '<h1>జావాస్క్రిప్ట్ఆవశ్యకం!</h1>
 <strong>మీ బ్రౌజరు జావాస్క్రిప్ట్ కు మద్దతివ్వదు. లేదా జావాస్క్రిప్ట్ అచేతనం చెయ్యబడి ఉంది.
@@ -12380,7 +12380,7 @@ $messages['te'] = array(
 	'coll-save_collection_text' => 'మీ పుస్తకమును భద్రపరచుకోవడానికి ఒక భద్రపరచు స్థలమును ఎన్నుకోండి:',
 	'coll-login_to_save' => 'మీ పుస్తకములను మీరు తర్వాత వాడుకోవడానికి భద్రపరచుకోవాలనుకుంటే, [[Special:UserLogin|లోనికి ప్రవేశించండి లేదా ఖాతా సృష్టించుకోండి]].',
 	'coll-personal_collection_label' => 'వ్యక్తిగత పుస్తకము:',
-	'coll-community_collection_label' => 'సామూహిక పుస్తకం:',
+	'coll-community_collection_label' => 'సముదాయ పుస్తకం:',
 	'coll-save_collection' => 'పుస్తకముని భద్రపరచు',
 	'coll-save_category' => 'భద్రపరచిన పుస్తకాలన్నీ [[:వర్గం:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] వర్గానికి చేర్చబడ్డాయి.',
 	'coll-overwrite_title' => 'పేజీ ఉంది. దానిపైనే రాసేయాలా?',
@@ -12388,8 +12388,8 @@ $messages['te'] = array(
 దాని స్ధానంలో మీ సేకరణని ఉంచాలా?',
 	'coll-yes' => 'అవును',
 	'coll-no' => 'కాదు',
-	'coll-load_overwrite_text' => 'మీ పుస్తకంలో ఈసరికే కొన్ని పేజీలున్నాయి.
-మీ పుస్తకన్ని ఓవరురైటు చేస్తారా? కొత్త కంటెంటును పాతిదాని వెనుక చేరుస్తారా? లేక పుస్తకం లోడు చెయ్యడాన్ని రద్దు చేస్తారా?',
+	'coll-load_overwrite_text' => 'మీ పుస్తకంలో ఇప్పటికే కొన్ని పేజీలున్నాయి.
+మీ పుస్తకం పేజీలు తొలగించి కొత్తది తయారుచేస్తారా? కొత్త పేజీలను పాతదాని తరువాత చేరుస్తారా? లేక పుస్తకం దింపుకోవడాన్ని రద్దు చేస్తారా?',
 	'coll-overwrite' => 'ఓవరురైటు చెయ్యి',
 	'coll-append' => 'జతచేయి',
 	'coll-cancel' => 'రద్దు',
@@ -12414,7 +12414,7 @@ $messages['te'] = array(
 <strong>[$1 ఫైలును మీ కంప్యూటర్లోకి దించుకోండి]</strong>.
 
 గమనికలు:
-* ఔట్ పుట్ సంతృప్తికరంగా లేదా? దాన్ని మెరుగుపరచే సంభావ్యతల కోసం [[{{MediaWiki:Coll-helppage}}|the help page about books]] చూడండి.',
+* ఫలితాలు సంతృప్తికరంగా లేదా? దాన్ని మెరుగుపరచే సంభావ్యతల కోసం [[{{MediaWiki:Coll-helppage}}|పుస్తకాల సహాయం పేజీ]] చూడండి.',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/పేజీ వివర పాఠ్యాన్ని రూపుదిద్దుట',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/సేకరణ వివరాల పాఠ్యాన్ని రూపుదిద్దుట',
 	'coll-notfound_title' => 'పుస్తకము కనబడలేదు',
@@ -12456,8 +12456,8 @@ $messages['te'] = array(
 	'coll-suggest_undo_tooltip' => 'ఈ చర్యను రద్దు చెయ్యి',
 	'coll-suggest_undo' => 'రద్దు చెయ్యి',
 	'coll-load_local_book' => 'మీ  %NUMPAGES%  వికీపేజీలుగల %TITLE%  పుస్తకం పై పని కొనసాగించుటకు సరే(OK) నొక్కండి.  దానిని వదలివేసి కొత్త ఖాళీ పుస్తకం ప్రారంభించుటకు రద్దు (Cancel ) నొక్కండి',
-	'right-collectionsaveasuserpage' => 'పుస్తకములను సభ్యుని పేజి లాగ భద్రపరచుము',
-	'right-collectionsaveascommunitypage' => 'పుస్తకములను కమ్యూనిటీ పేజి లాగ భద్రపరచుము',
+	'right-collectionsaveasuserpage' => 'పుస్తకములను  వాడుకరి  పేజి లాగ భద్రపరచుము',
+	'right-collectionsaveascommunitypage' => 'పుస్తకములను సముదాయ పేజి లాగ భద్రపరచుము',
 );
 
 /** Tetum (tetun)
