@@ -1452,6 +1452,46 @@ $messages['frp'] = array(
 	'coll-suggest_empty' => 'vouedo',
 );
 
+/** Northern Frisian (Nordfriisk)
+ * @author Murma174
+ */
+$messages['frr'] = array(
+	'coll-print_export' => 'Ütjdruk',
+	'coll-create_a_book' => 'Maage en buk',
+	'coll-create_a_book_tooltip' => 'Maage en buk of en saamlang',
+	'coll-book_creator' => 'Bukmaskiin',
+	'coll-download_as' => 'Üs $1 deelloose',
+	'coll-download_as_tooltip' => 'En $1-wersjuun faan detdiar wiki sidj deelloose',
+	'coll-disable' => 'ufstel',
+	'coll-book_creator_disable' => 'Bukmaskiin ufstel',
+	'coll-book_creator_disable_tooltip' => 'Bukmaskiin ei brük',
+	'coll-add_linked_article' => 'Du det ferwiset wiki sidj tu din buk diartu',
+	'coll-remove_linked_article' => 'Nem det ferwiset wiki sidj wech faan din buk',
+	'coll-add_category' => 'Du aal jo sidjen faan detdiar kategorii tu din buk diartu',
+	'coll-add_category_tooltip' => 'Du aal jo sidjen faan detdiar kategorii tu din buk diartu.',
+	'coll-add_this_page' => 'Du detdiar sidj tu din buk diartu',
+	'coll-add_page_tooltip' => 'Du det aktuel wiki sidj tu din buk diartu',
+	'coll-bookscategory' => 'Buken',
+	'coll-clear_collection' => 'Strik det buk',
+	'coll-clear_collection_confirm' => 'Wel dü din buk hialandaal strik?',
+	'coll-clear_collection_tooltip' => 'Nem aal jo wiki sidjen ütj din buk wech',
+	'coll-help' => 'Halep',
+	'coll-help_tooltip' => "Halep bi't buken maagin uunwise",
+	'coll-helppage' => 'Help:Buken',
+	'coll-load_collection' => 'Buk loose',
+	'coll-load_collection_tooltip' => 'Loose detdiar buk üs din aktuel buk',
+	'coll-n_pages' => '$2 {{PLURAL:$1|sidj|sidjen}}',
+	'coll-printable_version_pdf' => 'PDF wersjuun',
+	'coll-remove_this_page' => 'Nem detdiar sidj faan din buk wech',
+	'coll-remove_page_tooltip' => 'Nem det aktuel wiki sidj faan din buk wech',
+	'coll-show_collection' => 'Wise det buk',
+	'coll-show_collection_tooltip' => 'Trak diar, am din buk tu bewerkin/deeltuloosin/tu bestelen',
+	'coll-not_addable' => 'Detdiar sidj koon ei diartu saat wurd',
+	'coll-make_suggestions' => 'Sidjen föörslau',
+	'coll-make_suggestions_tooltip' => 'Föörslacher wise, diar mä sidjen uun din buk tu dun haa',
+	'coll-suggest_empty' => 'leesag',
+);
+
 /** Scottish Gaelic (Gàidhlig)
  * @author Akerbeltz
  */
