@@ -4659,6 +4659,95 @@ La lista est betâ a jorn a châque côp que vos clicâd sur los botons d’apon
 	'right-collectionsaveascommunitypage' => 'Sôvar des lévros sur des pâges a la comunôtât',
 );
 
+/** Northern Frisian (Nordfriisk)
+ * @author Murma174
+ */
+$messages['frr'] = array(
+	'coll-desc' => '[[Special:Book|Buken maage]]',
+	'coll-book_creator_intro' => "<big>Mä det ''bukmaskiin'' könst dü flook wiki sidjen tu en buk tuupstel. Det buk könst dü do uun ferskeelag formaaten (so üs PDF of ODF) eksportiare of uk drükt bestel.</big>",
+	'coll-manage_your_book' => 'Din buk ferwalte',
+	'coll-book_creator_help' => 'Üüb [[{{MediaWiki:Coll-helppage}}|Halep tu buken]] fanjst dü noch muar halep.',
+	'coll-start_book_creator' => 'Bukmaskiin began',
+	'coll-book_creator_continue' => 'Bukmaskiin brük',
+	'coll-book_creator_disable_text' => "Det ''bukmaskiin'' woort slööden an det buk, huar dü bi werkest, woort stregen.",
+	'coll-book_creator_text_article' => "{{MediaWiki:Coll-helppage}}/Tekst för't bukmaskiin",
+	'coll-collection' => 'Buk',
+	'coll-collections' => 'Buken',
+	'coll-exclusion_category_title' => 'Ei mädrük',
+	'coll-print_template_prefix' => 'Drük',
+	'coll-print_template_pattern' => '$1/Ütjdruk',
+	'coll-unknown_subpage_title' => 'Ünbekäänd onersidj',
+	'coll-unknown_subpage_text' => 'Detdiar onersidj faan [[Special:Book|Buk]] jaft at ei',
+	'coll-couldnotaddarticle_title' => 'Wiki sidj küd ei diartusaat wurd.',
+	'coll-couldnotaddarticle_msg' => 'Det wiki sidj küd ei diartusaat wurd.',
+	'coll-couldnotremovearticle_title' => 'Wiki sidj küd ei wechnimen wurd.',
+	'coll-couldnotremovearticle_msg' => 'Det wiki sidj küd ei wechnimen wurd.',
+	'coll-noscript_text' => '<h1>Dü brükst JavaScript!</h1>
+<strong>Dan browser koon ei am mä JavaScript of JavaScript as ufsteld.
+Detdiar sidj koon ei rocht werke, so loong JavaScript ei werket.</strong>',
+	'coll-savedbook_template' => 'Seekert buk',
+	'coll-your_book' => 'Din buk',
+	'coll-download_title' => 'Deelloose',
+	'coll-download_text' => 'Am din buk deeltuloosin, sjük en formaat ütj an trak üüb di knoop.',
+	'coll-download_as_text' => 'Am din buk uun $1 formaat deeltuloosin, trak üüb di knoop.',
+	'coll-download' => 'Deelloose',
+	'coll-format_label' => 'Formaat:',
+	'coll-remove' => 'Wechnem',
+	'coll-show' => 'Wise',
+	'coll-move_to_top' => 'Fersküüw tu a began',
+	'coll-move_up' => 'ap',
+	'coll-move_down' => 'deel',
+	'coll-move_to_bottom' => "Fersküüw tu't aanj",
+	'coll-title' => 'Tiitel:',
+	'coll-subtitle' => 'Onertiitel:',
+	'coll-contents' => 'Wat diar uun stäänt',
+	'coll-drag_and_drop' => "Mä't müs könst dü wiki sidjen an kapiiteln fersküüw",
+	'coll-create_chapter' => 'Kapiitel maage',
+	'coll-sort_alphabetically' => "Efter't alfabeet sortiare",
+	'coll-rename' => 'Amnääm',
+	'coll-new_chapter' => 'Nööm för en nei kapiitel iindu',
+	'coll-rename_chapter' => 'En neien nööm för det kapiitel iindu',
+	'coll-no_such_category' => 'Son kategorii jaft at ei',
+	'coll-notitle_title' => 'Di tiitel faan det sidj küd ei fäästlaanj wurd.',
+	'coll-post_failed_title' => 'POST uunfraag as skiaf gingen',
+	'coll-post_failed_msg' => 'Det POST uunfraag to $1 as skiaf gingen ($2).',
+	'coll-mwserve_failed_title' => 'Di server swaaret ei',
+	'coll-mwserve_failed_msg' => 'Üüb a server as wat skiaf gingen: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Di server swaaret mä en feeler',
+	'coll-empty_collection' => 'Leesag buk',
+	'coll-revision' => 'Wersjuun: $1',
+	'coll-save_collection_title' => 'Din buk seekre an freidu',
+	'coll-save_collection_text' => 'Huar skal din buk seekert wurd?',
+	'coll-login_to_save' => 'Wan dü buken seekre wel, wees so gud an [[Special:UserLogin|melde di uun of maage en brükerkonto]].',
+	'coll-personal_collection_label' => 'Persöönelk buk:',
+	'coll-community_collection_label' => 'Gemianskapsbuk:',
+	'coll-save_collection' => 'Buk seekre',
+	'coll-save_category' => 'Aal jo seekert buken wurd tu det kategorii [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] skrewen.',
+	'coll-overwrite_title' => 'Det sidj as al diar. Auerskriiw?',
+	'coll-overwrite_text' => 'En sidj mä di nööm [[:$1]] as al diar.
+Skal det mä din buk auerskrewen wurd?',
+	'coll-yes' => 'Ja',
+	'coll-no' => 'Naan',
+	'coll-load_overwrite_text' => 'Dü heest al sidjen uun din buk.
+Wel dü din aktuel buk auerskriiw mä jo nei sidjen, jo nei sidjen bihinge of wel dü det loosin faan din buk ufbreeg?',
+	'coll-overwrite' => 'Auerskriiw',
+	'coll-append' => 'Bihinge',
+	'coll-cancel' => 'Ufbreeg',
+	'coll-update' => 'Aktualisiare',
+	'coll-limit_exceeded_title' => 'Buk as tu grat',
+	'coll-limit_exceeded_text' => 'Din buk as tu grat. Dü könst diar nian sidjen muar tusaat.',
+	'coll-rendering_title' => "Server bi't werk",
+	'coll-rendering_text' => '<p><strong>Wees so gud an teew so loong det dokument bewerket woort.</strong></p>
+
+<p><strong>Stant:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Det sidj skul faan salew arke nöös loong aktualisiare.
+Wan\'t det ei dää, trak di knoop för\'t aktualisiarin (miast as det F5).</p>',
+	'coll-rendering_status' => '<strong>Stant:</strong> $1',
+	'coll-rendering_article' => '(wiki sidj: $1)',
+	'coll-rendering_page' => '(sidj: $1)',
+);
+
 /** Friulian (furlan)
  * @author Klenje
  */
