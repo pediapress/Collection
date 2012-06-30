@@ -30,7 +30,7 @@ $specialPageAliases['arz'] = array(
 
 /** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
-	'Book' => array( 'সংগ্ৰহ' ),
+	'Book' => array( 'সংগ্ৰহ', 'গ্ৰন্থ' ),
 );
 
 /** Banjar (Bahasa Banjar) */
@@ -73,7 +73,7 @@ $specialPageAliases['diq'] = array(
 	'Book' => array( 'Kıtabe', 'Koleksiyon' ),
 );
 
-/** Lower Sorbian (Dolnoserbski) */
+/** Lower Sorbian (dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'Book' => array( 'Knigły', 'Zběrka' ),
 );
@@ -123,7 +123,7 @@ $specialPageAliases['gag'] = array(
 	'Book' => array( 'Kiyat' ),
 );
 
-/** Galician (Galego) */
+/** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'Book' => array( 'Libro' ),
 );
@@ -153,7 +153,7 @@ $specialPageAliases['hr'] = array(
 	'Book' => array( 'Zbirka' ),
 );
 
-/** Upper Sorbian (Hornjoserbsce) */
+/** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'Book' => array( 'Kniha', 'Zběrka' ),
 );
