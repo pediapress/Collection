@@ -632,7 +632,7 @@ $messages['am'] = array(
 	'coll-yes' => 'አዎ',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -1587,7 +1587,7 @@ $messages['be'] = array(
 	'right-collectionsaveascommunitypage' => 'захаванне кніг як старонак супольнасці',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -2565,7 +2565,7 @@ Seznam se aktualizuje při každém kliknutím na tlačítka přidat a odebrat.'
 	'right-collectionsaveascommunitypage' => 'Ukládání knih jako stránek komunity',
 );
 
-/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -3200,7 +3200,7 @@ Ma rica keno îdarekarê MedîyaWîkîyî ra yew mesaj bişirav.',
 	'right-collectionsaveascommunitypage' => 'Kitab ze pelê cemeatî qeyd bike',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -4746,6 +4746,54 @@ Wan\'t det ei dää, trak di knoop för\'t aktualisiarin (miast as det F5).</p>'
 	'coll-rendering_status' => '<strong>Stant:</strong> $1',
 	'coll-rendering_article' => '(wiki sidj: $1)',
 	'coll-rendering_page' => '(sidj: $1)',
+	'coll-rendering_page_info_text_article' => 'Hü sidjen uunwiset wurd skel',
+	'coll-rendering_collection_info_text_article' => 'Hü saamlangen uunwiset wurd skel',
+	'coll-rendering_finished_title' => 'Klaar',
+	'coll-rendering_finished_text' => '<strong>Det dokument as nü klaar.</strong>
+<strong>[$1 Dokument deelloose]</strong>.
+Henwiis:
+* Beest dü ei tufrees? Do luke üüb det [[{{MediaWiki:Coll-helppage}}|halepsidj för buken]].',
+	'coll-finished_page_info_text_article' => 'Hü sidjen uunwiset wurd skel',
+	'coll-finished_collection_info_text_article' => 'Hü saamlangen uunwiset wurd skel',
+	'coll-notfound_title' => 'Buk ei fünjen',
+	'coll-notfound_text' => 'Küd din buk ei finj.',
+	'coll-download_notfound_title' => 'Datei ei fünjen',
+	'coll-download_notfound_text' => 'Det datei, wat dü deelloose wel, jaft at ei.
+Ferlicht as det stregen wurden an skal nei maaget wurd.',
+	'coll-download_failed_title' => "Bi't deelloosin as wat skiaf gingen",
+	'coll-download_failed_text' => "Bi't deeloosin faan't datei $1 as wat skiaf gingen",
+	'coll-is_cached' => '<ul><li>Diar wiar al en teskenseekert wersjuun, det dokument säär ei nei tuupsteld wurd. <a href="$1">Likes nei tuupstel.</a></li></ul>',
+	'coll-excluded-templates' => '* Föörlaagen ütj det kategorii „[[:Category:$1|$1]]“ san ei auernimen wurden.',
+	'coll-blacklisted-templates' => '* Föörlaagen faan det suart list [[:$1]] san ei auernimen wurden.',
+	'coll-return_to_collection' => 'Turag tu <a href="$1">$2</a>',
+	'coll-book_title' => 'Bestel üs drükt buk',
+	'coll-book_text' => 'Bestel en drükt buk bi üs print-on-demand-onernemen.',
+	'coll-order_from_pp' => 'Iarst ans luke bi $1',
+	'coll-about_pp' => 'Auer $1',
+	'coll-invalid_podpartner_title' => 'Son print-on-demand-onernemen haa wi ei',
+	'coll-invalid_podpartner_msg' => 'Diar stemet wat ei mä det print-on-demand-onernemen. Sai man di MediaWiki administraator beskias.',
+	'coll-license' => 'Lisens',
+	'coll-return_to' => 'Turag tu [[:$1]]',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress bestelang',
+	'coll-suggest_title' => 'Föörslaanj sidjen för din buk',
+	'coll-suggest_intro_text' => 'A föörslacher haa mä jo wiki sidjen uun din buk tu dun.
+Wan dü wat diartuskrafst of wechnamst, woort det list nei maaget.',
+	'coll-suggested_articles' => 'Föörslacher',
+	'coll-suggest_reset_bans' => 'turag saat',
+	'coll-suggest_reset_bans_tooltip' => 'Ual föörslacher uunwise',
+	'coll-suggest_add_selected' => 'Ütjsoocht sidjen diartu saat',
+	'coll-suggest_ban_selected' => 'Ütjsoocht sidjen wechnem',
+	'coll-suggest_your_book' => 'Din buk',
+	'coll-suggest_show' => 'wise',
+	'coll-suggest_ban_tooltip' => 'Detdiar sidj faan a föörslacher wechnem',
+	'coll-suggest_article_ban' => 'Det sidj <strong>$1</strong> as faan a föörslacher wechnimen wurden ($2).',
+	'coll-suggest_article_add' => 'Det sidj <strong>$1</strong> as tu din buk diartu saat wurden ($2).',
+	'coll-suggest_article_remove' => 'Det sidj <strong>$1</strong> as faan din buk wechnimen wurden ($2).',
+	'coll-suggest_undo_tooltip' => 'Noch ans turag drei',
+	'coll-suggest_undo' => 'turag drei',
+	'coll-load_local_book' => 'Trak üüb OK, am mä din buk %TITLE% widjer tu maagin, diar hiar %NUMPAGES% wiki sidjen tu. Trak üüb Ufbreeg, am det tu striken an began mä en nei buk.',
+	'right-collectionsaveasuserpage' => 'Buken üs brükersidj seekre',
+	'right-collectionsaveascommunitypage' => 'Buken üs gemianskapssidj seekre',
 );
 
 /** Friulian (furlan)
@@ -4781,7 +4829,7 @@ $messages['fy'] = array(
 	'coll-cancel' => 'Ofbrekke',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Toliño
  */
@@ -5668,7 +5716,7 @@ Popis se ažurira svaki put kada dodate ili uklonite neku stranicu.',
 	'right-collectionsaveascommunitypage' => 'Spremi zbirke kao stranicu zajednice',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -10972,7 +11020,7 @@ $messages['ru'] = array(
 	'right-collectionsaveascommunitypage' => 'сохранение книг как страниц сообщества',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(

@@ -182,7 +182,7 @@ $messages['af'] = array(
 	'coll-suggest_empty' => 'leegmaak',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -542,7 +542,7 @@ $messages['be'] = array(
 	'coll-suggest_empty' => 'пуста',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -1018,7 +1018,7 @@ $messages['diq'] = array(
 	'coll-suggest_empty' => 'veng',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Derbeth
  * @author Michawiki
  */
@@ -1532,7 +1532,7 @@ $messages['gd'] = array(
 	'coll-suggest_empty' => 'falamh',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Toliño
  */
@@ -1814,7 +1814,7 @@ $messages['hr'] = array(
 	'coll-suggest_empty' => 'prazno',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -3557,7 +3557,7 @@ $messages['ru'] = array(
 	'coll-suggest_empty' => 'пуста',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
