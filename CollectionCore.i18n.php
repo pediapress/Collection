@@ -2469,6 +2469,7 @@ $messages['ksh'] = array(
  */
 $messages['ku-latn'] = array(
 	'coll-help' => 'Alîkarî',
+	'coll-helppage' => 'Help:Pirtûk',
 	'coll-printable_version_pdf' => 'Versiyona PDF',
 );
 

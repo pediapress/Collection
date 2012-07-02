@@ -7842,7 +7842,10 @@ Donn „Cancel“ ußwähle, för et fott ze schmiiße un met enem läddijje Boo
  */
 $messages['ku-latn'] = array(
 	'coll-collection' => 'Pirtûk',
+	'coll-your_book' => 'Pirtûka te',
+	'coll-show' => 'Nîşan bide',
 	'coll-title' => 'Sernav:',
+	'coll-suggest_your_book' => 'Pirtûka te',
 );
 
 /** Cornish (kernowek)
@@ -13145,7 +13148,7 @@ Makipagugnayan sa iyong tagapangasiwa ng MediaWiki.',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PalimbagangPedya kabatiran ng hinihiling',
 	'coll-suggest_title' => 'Minumungkahing mga pahina para sa aklat mo',
 	'coll-suggest_intro_text' => 'Nakabatay ang mga mungkahi sa pangkasalukuyang pangkat ng mga pahinang pangwiki na nasa loob ng aklat mo.
-Isinasapanahon ang talaan sa tuwing pipindutin mo ang mga pinduting pandagdag o pantanggal.',
+Isinasapanahon ang talaan sa tuwing pipindutin mo ang mga pindutang pandagdag o pantanggal.',
 	'coll-suggested_articles' => 'Mga mungkahi',
 	'coll-suggest_reset_bans' => 'muling itakda',
 	'coll-suggest_reset_bans_tooltip' => 'Ipakita ang dating mga tinanggal na mga mungkahi',
