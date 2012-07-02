@@ -125,7 +125,7 @@ $specialPageAliases['gag'] = array(
 
 /** Galician (galego) */
 $specialPageAliases['gl'] = array(
-	'Book' => array( 'Libro' ),
+	'Book' => array( 'Libro', 'Colección' ),
 );
 
 /** Swiss German (Alemannisch) */
