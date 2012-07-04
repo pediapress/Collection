@@ -6618,6 +6618,7 @@ $messages['is'] = array(
 );
 
 /** Italian (italiano)
+ * @author Beta16
  * @author BrokenArrow
  * @author Civvì
  * @author Darth Kule
@@ -6679,7 +6680,7 @@ La pagina non funzionerà correttamente se non verrà attivato JavaScript.</stro
 	'coll-mwserve_failed_msg' => 'Si è verificato un errore sul server di conversione: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Errore risposta dal server',
 	'coll-empty_collection' => 'Libro vuoto',
-	'coll-revision' => 'Revisione: $1',
+	'coll-revision' => 'Versione: $1',
 	'coll-save_collection_title' => 'Salva e condividi il tuo libro',
 	'coll-save_collection_text' => 'Scegli una locazione:',
 	'coll-login_to_save' => 'Se vuoi salvare il libro per utilizzarlo in seguito, [[Special:UserLogin|entra o crea un nuovo accesso]].',
