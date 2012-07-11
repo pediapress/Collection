@@ -1297,7 +1297,7 @@ $messages['az'] = array(
 	'coll-suggest_show' => 'göstər',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
  */
@@ -2411,7 +2411,7 @@ La llista s'actualitza cada vegada que feu clic als botons d'afegir o treure.",
 	'right-collectionsaveascommunitypage' => 'Desar els llibres com una pàgina de la comunitat',
 );
 
-/** Chechen (Нохчийн)
+/** Chechen (нохчийн)
  * @author Sasan700
  */
 $messages['ce'] = array(
@@ -7288,7 +7288,7 @@ Ma rica keno îdarekarê MedîyaWîkîyî ra yew mesaj bişirav.',
 	'right-collectionsaveascommunitypage' => 'Kitab ze pelê cemeatî qeyd bike',
 );
 
-/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
  * @author GaiJin
  * @author Kaztrans
  */
@@ -7544,6 +7544,7 @@ $messages['kn'] = array(
  * @author Klutzy
  * @author Kwj2772
  * @author Yknok29
+ * @author 아라
  */
 $messages['ko'] = array(
 	'coll-desc' => '[[Special:Book|책 만들기]]',
@@ -7601,7 +7602,7 @@ $messages['ko'] = array(
 	'coll-revision' => '판: $1',
 	'coll-save_collection_title' => '책 저장/공유',
 	'coll-save_collection_text' => '책을 저장할 위치:',
-	'coll-login_to_save' => '나중에 사용하기 위해 책을 저장하길 원하신다면 [[Special:UserLogin|로그인하거나 계정을 생성]]해 주세요.',
+	'coll-login_to_save' => '나중에 사용하기 위해 책을 저장하길 원하신다면 [[Special:UserLogin|로그인하거나 계정을 만들어]] 주세요.',
 	'coll-personal_collection_label' => '개인 책:',
 	'coll-community_collection_label' => '공동체 책:',
 	'coll-save_collection' => '책 저장',
@@ -8312,7 +8313,7 @@ Pārrakstīt?',
 	'coll-suggest_your_book' => 'Tava grāmata',
 );
 
-/** Eastern Mari (Олык Марий)
+/** Eastern Mari (олык марий)
  * @author Сай
  */
 $messages['mhr'] = array(
@@ -8904,7 +8905,7 @@ $messages['mt'] = array(
 	'coll-cancel' => 'Annulla',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -8992,14 +8993,14 @@ $messages['nah'] = array(
 	'coll-update' => 'Tiquiyancuīyāz',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Boivie
  * @author Event
  * @author H92
  * @author Harald Khan
- * @author Jon Harald Søby
  * @author Laaknor
  * @author Nghtwlkr
+ * @author Njardarlogar
  * @author Simny
  */
 $messages['nb'] = array(
@@ -13677,7 +13678,7 @@ La lista la vien ajornà ogni olta che te struchi sui botoni "zonta" o "cava".',
 	'right-collectionsaveascommunitypage' => 'Salva na colezion come pagina comunitaria',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(

@@ -420,7 +420,7 @@ $messages['az'] = array(
 	'coll-suggest_empty' => 'boş',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
  */
@@ -785,7 +785,7 @@ $messages['ca'] = array(
 	'coll-suggest_empty' => 'buit',
 );
 
-/** Chechen (Нохчийн)
+/** Chechen (нохчийн)
  * @author Sasan700
  */
 $messages['ce'] = array(
@@ -2280,7 +2280,7 @@ $messages['kiu'] = array(
 	'coll-suggest_empty' => 'veng',
 );
 
-/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
  * @author Kaztrans
  */
 $messages['kk-cyrl'] = array(
@@ -2514,7 +2514,7 @@ $messages['lb'] = array(
 	'coll-suggest_empty' => 'eidel',
 );
 
-/** Lezghian (Лезги)
+/** Lezghian (лезги)
  * @author Namik
  */
 $messages['lez'] = array(
@@ -2864,7 +2864,7 @@ $messages['ms'] = array(
 	'coll-suggest_empty' => 'kosong',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -2903,10 +2903,10 @@ $messages['nah'] = array(
 	'coll-bookscategory' => 'Àmoxtin',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Laaknor
  * @author Nghtwlkr
+ * @author Njardarlogar
  * @author Simny
  */
 $messages['nb'] = array(
@@ -4418,7 +4418,7 @@ $messages['vec'] = array(
 	'coll-suggest_empty' => 'vodo',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(

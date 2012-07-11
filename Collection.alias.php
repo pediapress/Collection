@@ -253,7 +253,7 @@ $specialPageAliases['mt'] = array(
 	'Book' => array( 'Ktieb', 'Kollezzjoni' ),
 );
 
-/** Erzya (Эрзянь) */
+/** Erzya (эрзянь) */
 $specialPageAliases['myv'] = array(
 	'Book' => array( 'Ставкс' ),
 );
@@ -368,7 +368,7 @@ $specialPageAliases['vec'] = array(
 	'Book' => array( 'Libro' ),
 );
 
-/** Veps (Vepsän kel’) */
+/** Veps (vepsän kel’) */
 $specialPageAliases['vep'] = array(
 	'Book' => array( 'Kirj' ),
 );
