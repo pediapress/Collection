@@ -352,7 +352,7 @@ class Proposals {
 
 		$numItems = count( $this->mColl['items'] );
 
-		if ( $numItems > $wgCollectionSuggestThreshhold ) {
+		if ( $numItems === 0 || $numItems > $wgCollectionSuggestThreshhold ) {
 			return;
 		}
 
