@@ -162,6 +162,14 @@ The list is updated whenever you click on the add or remove buttons.',
 	'coll-suggest_undo'               => 'undo',
 	'coll-load_local_book'            => 'Click OK to continue with your book %TITLE% which contains %NUMPAGES% wiki pages. Click Cancel to delete it and start with an empty book.',
 
+	# Some formats used by Wikimedia
+	'coll-format-rl'           => 'e-book (PDF)',
+	'coll-format-epub'         => 'e-book (EPUB)',
+	'coll-format-odf'          => 'word processor (OpenDocument)',
+	'coll-format-zim'          => 'Kiwix (OpenZIM)',
+	'coll-format-docbook'      => 'DocBook',
+	'coll-format-okawix_zeno'  => 'Okawix',
+
 	'right-collectionsaveasuserpage'  => 'Save books as user page',
 	'right-collectionsaveascommunitypage' => 'Save books as community page',
 );
@@ -266,6 +274,12 @@ The contents of this page appear in the "Order as a printed book" box on <nowiki
 	'coll-load_local_book' => 'PLURAL support not yet available for collection extension. See the discussion on [[Thread:Support/PLURAL support for Coll-load local book/reply]].
 
 Do not translate <code>OK</code> and <code>Cancel</code>, they are part of a local popup on the client machine which is not localized at the moment.',
+	'coll-format-rl'           => 'Collection extension output format',
+	'coll-format-epub'         => 'Collection extension output format',
+	'coll-format-odf'          => 'Collection extension output format',
+	'coll-format-zim'          => 'Collection extension output format',
+	'coll-format-docbook'      => 'Collection extension output format',
+	'coll-format-okawix_zeno'  => 'Collection extension output format',
 	'right-collectionsaveasuserpage' => '{{doc-right|collectionsaveasuserpage}}',
 	'right-collectionsaveascommunitypage' => '{{doc-right|collectionsaveascommunitypage}}',
 );

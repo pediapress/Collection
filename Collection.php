@@ -33,7 +33,7 @@ EOT;
 $dir = dirname( __FILE__ ) . '/';
 
 # Extension version
-$wgCollectionVersion = "1.6";
+$wgCollectionVersion = "1.6.1";
 
 # ==============================================================================
 
