@@ -4,7 +4,9 @@
  * @file
  * @ingroup Templates
  */
-if ( !defined( 'MEDIAWIKI' ) ) die( - 1 );
+if ( !defined( 'MEDIAWIKI' ) ) {
+	die( -1 );
+}
 
 /**
  * HTML template for Special:Book
@@ -59,7 +61,7 @@ $this->msgWiki( 'coll-book_text' );
 		?>
 	<ul>
 <?php
-foreach ( $this->data['podpartners'] as $partnerKey => $partnerData ) { 
+foreach ( $this->data['podpartners'] as $partnerKey => $partnerData ) {
 	$infopage = false;
 	$partnerClasses = "";
 	$about_partner = wfMsgHtml( 'coll-about_pp', htmlspecialchars( $partnerData['name'] ) );
@@ -91,10 +93,10 @@ foreach ( $this->data['podpartners'] as $partnerKey => $partnerData ) {
 		</div>
 	</li>
 <?php
-} /* foreach */ 
+} /* foreach */
 ?>
 	</ul></div>
-<?php 
+<?php
 } /* if */
 ?>
 
@@ -116,7 +118,7 @@ foreach ( $this->data['podpartners'] as $partnerKey => $partnerData ) {
 				<label for="formatSelect"><?php $this->msg( 'coll-format_label' ) ?></label>
 				<select id="formatSelect" name="writer">
 					<?php foreach ( $this->data['formats'] as $writer => $name ) { ?>
-					<option value="<?php echo htmlspecialchars( $writer ) ?>"><?php echo htmlspecialchars( $name ) ?></option>
+					<option value="<?php echo htmlspecialchars( $writer ) ?>"><?php echo wfMessage( 'coll-format-' . $writer )->escaped() ?></option>
 					<?php	} ?>
 				</select>
 			<?php } ?>

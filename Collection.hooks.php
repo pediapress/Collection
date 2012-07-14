@@ -142,7 +142,7 @@ class CollectionHooks {
 					wfMsgHtml( 'coll-download_as', htmlspecialchars( $wgCollectionFormats[$writer] ) ),
 					array(
 						'rel' => 'nofollow',
-						'title' => wfMsg( 'coll-download_as_tooltip', $wgCollectionFormats[$writer] )
+						'title' => wfMsg( 'coll-download_as_tooltip', $wgCollectionFormats[$writer] ) // @todo FIXME: No i18n here.
 					),
 					$params,
 					array( 'known', 'noclasses' )
