@@ -32,7 +32,8 @@ EOT;
 
 $dir = dirname( __FILE__ ) . '/';
 
-# Extension version
+# Extension version. If you update it, please also update 'requiredVersion'
+# in js/collection.js
 $wgCollectionVersion = "1.6.1";
 
 # ==============================================================================
@@ -40,7 +41,7 @@ $wgCollectionVersion = "1.6.1";
 # Configuration:
 
 /** Bump the version number every time you change any of the JavaScript files */
-$wgCollectionStyleVersion = 8;
+$wgCollectionStyleVersion = 9;
 
 /** URL of mw-serve render server */
 $wgCollectionMWServeURL = 'http://tools.pediapress.com/mw-serve/';
