@@ -3600,9 +3600,43 @@ $messages['rue'] = array(
 
 /** Sanskrit (संस्कृतम्)
  * @author Ansumang
+ * @author Shubha
  */
 $messages['sa'] = array(
+	'coll-print_export' => 'मुद्रणम्/निर्यातः',
+	'coll-create_a_book' => 'मम सङ्ग्रहः',
+	'coll-create_a_book_tooltip' => 'पुस्तकसङ्ग्रहः पृष्ठसङ्ग्रहः वा क्रियताम्',
+	'coll-book_creator' => 'पुस्तकनिर्माता',
+	'coll-download_as' => '$1 रूपेण अवतार्यताम्',
+	'coll-download_as_tooltip' => 'अस्य विकिपृष्ठस्य $1 संस्करणम् अवतार्यताम्',
+	'coll-disable' => 'अक्षमं क्रियताम्',
+	'coll-book_creator_disable' => 'पुस्तकनिर्माता अक्षमः भवतु',
+	'coll-book_creator_disable_tooltip' => 'पुस्तकनिर्मातुः उपयोगः स्थग्यताम्',
+	'coll-add_linked_article' => 'सम्पृक्तविकिपृष्ठं स्वस्य पुस्तके योज्यताम्',
+	'coll-remove_linked_article' => 'अनुबद्धविकिपृष्ठं तव पुस्तकात् निष्कासय',
+	'coll-add_category' => 'अयं वर्गः तव पुस्तके योज्यताम्',
+	'coll-add_category_tooltip' => 'अस्मिन् वर्गे विद्यमानानि सर्वाणि पृष्ठानि तव पुस्तके योज्यन्ताम्',
+	'coll-add_this_page' => 'इदं पृष्ठं तव पुस्तके योज्यताम्',
+	'coll-add_page_tooltip' => 'वर्तमानविकिपृष्ठं तव पुस्तके योज्यताम्',
+	'coll-bookscategory' => 'पुस्तकानि',
+	'coll-clear_collection' => 'पुस्तकं रिक्तीक्रियताम्',
+	'coll-clear_collection_confirm' => 'तव पुस्तकं सम्पूर्णतया रिक्तीकर्तुं किं निश्चयेन इच्छसि ?',
+	'coll-clear_collection_tooltip' => 'तव वर्तमानात् पुस्तकात् सर्वे विकिपृष्ठानि निष्कास्यन्ताम्',
 	'coll-help' => 'साहाय्यम्',
+	'coll-help_tooltip' => 'पुस्तकनिर्माणे सहायता दर्श्यताम्',
+	'coll-helppage' => 'Help:सङ्ग्रहः',
+	'coll-load_collection' => 'सङ्ग्रहः उत्तार्यताम्',
+	'coll-load_collection_tooltip' => 'तव वर्तमानपुस्तकम् इव इदं पुस्तकम् उत्तर्यताम्',
+	'coll-n_pages' => '$1 {{PLURAL:$1|पृष्ठम्|पृष्ठानि}}',
+	'coll-printable_version_pdf' => 'PDF रूपान्तरणम्',
+	'coll-remove_this_page' => 'इदं पृष्ठं तव पुस्तकात् निष्कासय',
+	'coll-remove_page_tooltip' => 'अनुबद्धविकिपृष्ठं तव पुस्तकात् निष्कासय',
+	'coll-show_collection' => 'सङ्ग्रहः दर्श्यताम्',
+	'coll-show_collection_tooltip' => 'तव पुस्तके सम्पादनाय/अवतारणाय/आदेशाय च नुद्यताम्',
+	'coll-not_addable' => 'इदं पृष्ठं संयोक्तुम् अशक्या',
+	'coll-make_suggestions' => 'प्रस्तुतानि पृष्ठानि',
+	'coll-make_suggestions_tooltip' => 'तव पुस्तकस्य पृष्ठानि आधारीकृत्य सूचनाः दर्श्यन्ताम्',
+	'coll-suggest_empty' => 'शुन्यम्',
 );
 
 /** Sakha (саха тыла)

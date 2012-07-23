@@ -274,12 +274,12 @@ The contents of this page appear in the "Order as a printed book" box on <nowiki
 	'coll-load_local_book' => 'PLURAL support not yet available for collection extension. See the discussion on [[Thread:Support/PLURAL support for Coll-load local book/reply]].
 
 Do not translate <code>OK</code> and <code>Cancel</code>, they are part of a local popup on the client machine which is not localized at the moment.',
-	'coll-format-rl'           => 'Collection extension output format',
-	'coll-format-epub'         => 'Collection extension output format',
-	'coll-format-odf'          => 'Collection extension output format',
-	'coll-format-zim'          => 'Collection extension output format',
-	'coll-format-docbook'      => 'Collection extension output format',
-	'coll-format-okawix_zeno'  => 'Collection extension output format',
+	'coll-format-rl' => 'Collection extension output format',
+	'coll-format-epub' => 'Collection extension output format',
+	'coll-format-odf' => 'Collection extension output format',
+	'coll-format-zim' => 'Collection extension output format',
+	'coll-format-docbook' => 'Collection extension output format',
+	'coll-format-okawix_zeno' => 'Collection extension output format',
 	'right-collectionsaveasuserpage' => '{{doc-right|collectionsaveasuserpage}}',
 	'right-collectionsaveascommunitypage' => '{{doc-right|collectionsaveascommunitypage}}',
 );
@@ -1110,7 +1110,7 @@ $messages['arz'] = array(
  * @author Gitartha.bordoloi
  */
 $messages['as'] = array(
-	'coll-desc' => '[[Special:Book|গ্ৰন্থ সৃষ্টি]]',
+	'coll-desc' => '[[Special:Book|গ্ৰন্থ সৃষ্টি কৰক]]',
 	'coll-book_creator_intro' => "<big>''গ্ৰন্থ প্ৰস্তুতকাৰক''ৰ সহায়ত আপুনি পছন্দৰ ৱিকি পৃষ্ঠা থকা এখন গ্ৰন্থ সৃষ্টি কৰিব পাৰে। আপুনি গ্ৰন্থখন বিভিন্ন ফৰ্মেটত ৰপ্তানি কৰিব পাৰিব (যেনে পিডিএফ বা অ'ডিফ) বা মুদ্ৰিত ৰূপ অৰ্ডাৰ দিব পাৰিব।</big>",
 	'coll-manage_your_book' => 'আপোনাৰ গ্ৰন্থৰ ব্যৱস্থাপনা কৰক',
 	'coll-book_creator_help' => 'অধিক তথ্যৰ বাবে [[{{MediaWiki:Coll-helppage}}|গ্ৰন্থ সংক্ৰান্তীয় সহায় পৃষ্ঠা]] চাওক।',
@@ -1218,6 +1218,7 @@ $messages['as'] = array(
 	'coll-blacklisted-templates' => '* ব্লেকলিষ্ট [[:$1]]ত থকা সাঁচসমূহ বাদ দিয়া হৈছে।',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p>লৈ ঘূৰি যাওক',
 	'coll-book_title' => 'মুদ্ৰিত কিতাপ হিচাপে অৰ্ডাৰ দিয়ক',
+	'coll-book_text' => 'আমাৰ প্ৰিন্ট-অন-ডিমান্ড সহযোগী প্ৰতিষ্ঠানৰ কাষত মুদ্ৰিত গ্ৰন্থ সংগ্ৰহ কৰক।',
 	'coll-order_from_pp' => '$1ৰে প্ৰাক্‌দৰ্শন কৰক',
 	'coll-about_pp' => '$1ৰ বিষয়ে',
 	'coll-invalid_podpartner_title' => 'অবৈধ POD সহযোগী',
@@ -1225,9 +1226,13 @@ $messages['as'] = array(
 অনুগ্ৰহ কৰি আপোনাৰ মিডিয়াৱিকি প্ৰশাসকৰ লগত যোগাযোগ কৰক।',
 	'coll-license' => 'অনুজ্ঞাপত্ৰ',
 	'coll-return_to' => '[[:$1]]লৈ ঘূৰি যাওক',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress অৰ্ডাৰৰ তথ্য',
 	'coll-suggest_title' => 'আপোনাৰ গ্ৰন্থৰ বাবে পৰামৰ্শ দিয়া পৃষ্ঠাসমূহ',
+	'coll-suggest_intro_text' => 'পৰামৰ্শসমূহ আপোনাৰ গ্ৰন্থত থকা বৰ্তমান ৱিকি পৃষ্ঠাসমূহৰ ওপৰত ভিত্তি কৰি দিয়া হৈছে।
+এই তালিকাখন যোগ অথবা বিলোপ বুটামত ক্লিক কৰাৰ লগে লগেই আপডেট হ’ব।',
 	'coll-suggested_articles' => 'পৰামৰ্শ',
 	'coll-suggest_reset_bans' => 'পূৰ্বৰ অৱস্থালৈ লৈ যাওক',
+	'coll-suggest_reset_bans_tooltip' => 'পূৰ্বে বিলোপ কৰা পৰামৰ্শসমূহ দেখুৱাওক',
 	'coll-suggest_add_selected' => 'নিৰ্বাচিত পৃষ্ঠাসমূহ যোগ কৰক',
 	'coll-suggest_ban_selected' => 'নিৰ্বাচিত পৃষ্ঠাসমূহ আঁতৰাওক',
 	'coll-suggest_your_book' => 'আপোনাৰ কিতাপ',
@@ -2886,6 +2891,7 @@ Listen opdateres når du klikker på tilføj- eller fjernknapperne.',
  * @author The Evil IP address
  * @author Umherirrender
  * @author VolkerHaas
+ * @author XenonX3
  */
 $messages['de'] = array(
 	'coll-desc' => 'Ergänzt eine [[Special:Book|Spezialseite]] zum Erstellen von Büchern',
@@ -2961,7 +2967,7 @@ Möchtest du das aktuelle Buch überschreiben, die neuen Seiten anhängen oder d
 	'coll-update' => 'Aktualisieren',
 	'coll-limit_exceeded_title' => 'Buch zu groß',
 	'coll-limit_exceeded_text' => 'Dein Buch ist zu groß. Es können keine Seiten mehr hinzugefügt werden.',
-	'coll-rendering_title' => 'Beim Erstellen',
+	'coll-rendering_title' => 'Dokument wird erstellt',
 	'coll-rendering_text' => '<p><strong>Bitte habe etwas Geduld, während das Dokument erstellt wird.</strong></p>
 
 <p><strong>Fortschritt:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
@@ -3017,6 +3023,12 @@ Immer, wenn du auf die Hinzufügen- oder Entfernen-Buttons klickst, wird die Lis
 	'coll-suggest_undo_tooltip' => 'Diese Aktion rückgängig machen',
 	'coll-suggest_undo' => 'rückgängig machen',
 	'coll-load_local_book' => 'Klicke auf OK, um mit deinem Buch %TITLE% fortzufahren, bestehend aus %NUMPAGES% Wikiseiten. Klicke auf Abbrechen, um es zu löschen und um mit einem leeren Buch zu starten.',
+	'coll-format-rl' => 'E-Book (PDF)',
+	'coll-format-epub' => 'E-Book (EPUB)',
+	'coll-format-odf' => 'Textverarbeitung (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Bücher als Benutzerseite speichern',
 	'right-collectionsaveascommunitypage' => 'Bücher als Gemeinschaftsseite speichern',
 );
@@ -3180,8 +3192,8 @@ Belki o dosya esteriyayo u gani reyna viraziyayo.',
 	'coll-download_failed_text' => 'Ma key dosya bar kerdî, yew ğelet biyo: $1',
 	'coll-is_cached' => '<ul><li>Ma yew versiyonê cachedî nidiy, aye ra ma gani render kerd.
 <a href="$1">Reyna Render bike.</a></li></ul>',
-	'coll-excluded-templates' => '* Templatanê ke ho ho caetegoriyê [[:Category:$1|$1]]î de înan de nikerd.',
-	'coll-blacklisted-templates' => '* Templatanê ke ho listeyê ma siyayî [[:$1]] de înan de nikerd.',
+	'coll-excluded-templates' => '* Şablonê ke ho ho caetegoriyê [[:Category:$1|$1]]î de înan de nikerd.',
+	'coll-blacklisted-templates' => '* Şablonê ke ho listeyê ma siyayî [[:$1]] de înan de nikerd.',
 	'coll-return_to_collection' => '<p>Reyna şi <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Kitab çap bike u hind sipariş bike',
 	'coll-book_text' => 'Kitab xo partnerê ma ra biger.',
@@ -11181,10 +11193,141 @@ $messages['rue'] = array(
 
 /** Sanskrit (संस्कृतम्)
  * @author Ansumang
+ * @author Shubha
  */
 $messages['sa'] = array(
+	'coll-desc' => '[[Special:Collection|पृष्ठानि सङ्गृह्यताम्], पीडिएफ्-रूपेण परिवर्त्यताम्',
+	'coll-book_creator_intro' => "<big>''book creator'' द्वारा स्वेच्छानुसारं विकिपृष्ठैः युक्तं पुस्तकं स्रष्टुम् अर्हसि । पुस्तकं विभिन्नेषु रूपेषु (उदाहरणाय PDF / ODF रूपेण) प्रेषयितुं मुद्रितप्रतेः प्राप्तै आदेष्टुम् अर्हति । </big>",
+	'coll-manage_your_book' => 'तव पुस्तकस्य प्रबन्धनम्',
+	'coll-book_creator_help' => 'अधिकविवरणाय दृश्यताम् [[{{MediaWiki:Coll-helppage}}|पुस्तकविषये साहायपृष्ठम्]]',
+	'coll-start_book_creator' => 'पुस्तकनिर्माता आरभ्यताम्',
+	'coll-book_creator_continue' => 'पुस्तकनिर्मातुः उपयोगः अनुवर्त्यताम्',
+	'coll-book_creator_disable_text' => "''पुस्तकनिर्माता'' अक्षमः विधीयते त्वया उपयुज्यमानं पुस्तकं निष्कास्यते च ।",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/पुस्तकनिर्मातुः लेखः',
+	'coll-collection' => 'पुस्तकम्',
+	'coll-collections' => 'पुस्तकानि',
+	'coll-exclusion_category_title' => 'मुद्रणे अपनीयताम्',
+	'coll-print_template_prefix' => 'मुद्र्यताम्',
+	'coll-print_template_pattern' => '$1/ मुद्रणम्',
+	'coll-unknown_subpage_title' => 'अज्ञातम् उपपृष्ठम्',
+	'coll-unknown_subpage_text' => '[[Special:Book|Book]] इत्येतस्य उपपृष्ठं न विद्यते',
+	'coll-couldnotaddarticle_title' => 'विकिपृष्ठं योजयितुं न शक्तम्',
+	'coll-couldnotaddarticle_msg' => 'इदं विकिपृष्ठं योजयितुं न शक्यते',
+	'coll-couldnotremovearticle_title' => 'विकिपृष्ठं निष्कासयितुं न शक्तम्',
+	'coll-couldnotremovearticle_msg' => 'इदं विकिपृष्ठं निष्कासयितुं न शक्यते',
+	'coll-noscript_text' => '<h1>जावालिपिः अपेक्षते !</h1>
+<strong>भवदीयः विचरकः जावालिपिं न समर्थयति / जावालिपिः कार्यविरता वर्तते ।
+जावालिपिः कार्यरता चेदेव इदं पुटं समीचीनतया कार्यं करोति ।</strong>',
+	'coll-savedbook_template' => 'संरक्षितं पुस्तकम्',
+	'coll-your_book' => 'तव पुस्तकम्',
+	'coll-download_title' => 'अवतीर्यताम्',
+	'coll-download_text' => 'तव पुस्तकस्य अवतारणाय युक्तं रूपं चित्वा कुड्मलं नुद्यताम् ।',
+	'coll-download_as_text' => '$1 रूपेण तव पुस्तकस्य अवतारणाय कुड्मलं नुद्यताम् ।',
+	'coll-download' => 'अवतार्यताम्',
+	'coll-format_label' => 'प्रारूपम्',
+	'coll-remove' => 'निष्कास्यताम्',
+	'coll-show' => 'दर्श्यताम्',
+	'coll-move_to_top' => 'उपरि नीयताम्',
+	'coll-move_up' => 'उपरि चाल्यताम्',
+	'coll-move_down' => 'अधः चाल्यताम्',
+	'coll-move_to_bottom' => 'अधः चाल्यताम्',
+	'coll-title' => 'शीर्षकम्',
+	'coll-subtitle' => 'उपशीर्षकम्',
+	'coll-contents' => 'अन्तर्विषयाः',
+	'coll-drag_and_drop' => 'विकिपुटानि अध्यायान् च पुनः व्यवस्थापयितुं कर्षण-स्थापनम् उपयुज्यताम्',
+	'coll-create_chapter' => 'अध्यायः निर्मीयताम्',
+	'coll-sort_alphabetically' => 'अकारादिक्रमेण योज्यताम्',
+	'coll-rename' => 'नाम परिवर्त्यताम्',
+	'coll-new_chapter' => 'नूतनस्य अध्यायस्य नामाङ्कनं क्रियताम्',
+	'coll-rename_chapter' => 'अध्यायस्य नूतनं नामाङ्कनं क्रियताम्',
+	'coll-no_such_category' => 'तादृशः वर्गः न विद्यते',
+	'coll-notitle_title' => 'पृष्ठस्य शीर्षकनिश्चितिः न शक्या',
+	'coll-post_failed_title' => 'POST निवेदनं पूरयितुम् अशक्यम्',
+	'coll-post_failed_msg' => '$1 कृते POST निवेदनं विफलं जातम् ($2).',
+	'coll-mwserve_failed_title' => 'वितारकदोषः विधीयताम्',
+	'coll-mwserve_failed_msg' => 'वितारकविधाने दोषः जातः : <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'वितारकात् दोषसूचना',
+	'coll-empty_collection' => 'रिक्तपुस्तकम्',
+	'coll-revision' => 'संस्करणम् $1',
+	'coll-save_collection_title' => 'तव पुस्तकं रक्ष्यतां संविभज्यताम्',
+	'coll-save_collection_text' => 'तव पुस्तकस्य रक्षणस्थानं चीयताम्:',
+	'coll-login_to_save' => 'अग्रिमोपयोगाय पुस्तकानि रक्षितुं यदि इच्छन्ति, तर्हि कृपया [[Special:UserLogin|प्रविश्यताम् / सदस्यता प्राप्त्यताम्]]',
+	'coll-personal_collection_label' => 'वैयक्तिकं पुस्तकम्',
+	'coll-community_collection_label' => 'सामूहिकः सङ्ग्रहः',
+	'coll-save_collection' => 'सङ्ग्रहः रक्ष्यताम्',
+	'coll-save_category' => 'सर्वाणि रक्षितानि पुस्तकानि वर्गे योजितानि [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]',
+	'coll-overwrite_title' => 'पृष्ठं विद्यते । किं पुनर्लेखनीयम् ?',
+	'coll-overwrite_text' => '[[:$1]] नामकं पुष्ठं विद्यते ।
+तदुपरि भवतः पुस्तकम् आरोपयितुं किम् इच्छति ?',
 	'coll-yes' => 'आम्',
+	'coll-no' => 'न',
+	'coll-load_overwrite_text' => 'भवतः पुस्तके कानिचन पृष्ठानि विद्यन्ते एव ।
+वर्तमानं पुस्तकं तदुपरि आरोपयितुम् इच्छति वा, नूतनविषयत्वेन स्थापयितुम् इच्छति वा, आरोपणं निराकरोति वा ?',
+	'coll-overwrite' => 'पुनर्लिख्यताम्',
+	'coll-append' => 'संयोज्यताम्',
 	'coll-cancel' => 'निवर्तयते',
+	'coll-update' => 'अद्यतनीक्रियताम्',
+	'coll-limit_exceeded_title' => 'सङ्ग्रहः बृहत्तमः जातः',
+	'coll-limit_exceeded_text' => 'तव पुस्तकं बृहत्तमं वर्तते ।
+पुनः पृष्ठानि योजयितुम् अशक्यम् ।',
+	'coll-rendering_title' => 'प्रतिपादनम्',
+	'coll-rendering_text' => '<p><strong>प्रलेखनिर्माणावसरे कृपया निरीक्ष्यताम् ।</strong></p>
+
+<p><strong>Progress:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>इदं पृष्ठं क्षणेषु स्वयं संसेवितं स्यात् ।
+इदं कार्यं यदि न कुर्यात्, तर्हि कृपया भवतः विचारकस्य संसेवककुड्मलः नुद्यताम् ।</p>',
+	'coll-rendering_status' => '<strong>स्थितिः</strong> $1',
+	'coll-rendering_article' => '(विकिपृष्ठम् : $1)',
+	'coll-rendering_page' => '(पृष्ठम्: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/पुटविवरणलेखः योज्यताम्',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/सङ्ग्रहविवरणलेखः योज्यताम्',
+	'coll-rendering_finished_title' => 'प्रतिपादनं समाप्तम्',
+	'coll-rendering_finished_text' => '<strong>विषयलेखः उत्पन्नः ।</strong>
+भवतः सङ्गणकं प्रति<strong>[$1 सञ्चिका अवतार्यताम्]</strong>',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/पुटविवरणलेखः योज्यताम्',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/सङ्ग्रहविवरणलेखः योज्यताम्',
+	'coll-notfound_title' => 'सङ्ग्रहः न प्राप्तः',
+	'coll-notfound_text' => 'पुस्तकस्य पुटं न प्राप्तम्',
+	'coll-download_notfound_title' => 'सञ्चिका न प्राप्ता',
+	'coll-download_notfound_text' => 'त्वया अवतारयितुम् इष्टा सञ्चिका न प्राप्ता ।
+सा निरस्ता स्यात् अथवा उत्पादनीया स्यात् ।',
+	'coll-download_failed_title' => 'अवतारणावसरे दोषः',
+	'coll-download_failed_text' => '$1 सञ्चिकायाः अवतारणावसरे दोषः',
+	'coll-is_cached' => '<ul><li>लेखस्य परिष्कृतावृत्तिः प्राप्ता इत्यतः संयोजनं नापेक्षितम् ।
+<a href="$1">पुनः संयोजनं भवतु</a></li></ul>',
+	'coll-excluded-templates' => '* वर्गे प्राकृतिः न योजिता [[:Category:$1|$1]] ।',
+	'coll-blacklisted-templates' => '*  [[:$1]] अवरुद्धप्राकृत्यावली वर्जिता ।',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a></p> प्रतिगम्यताम्',
+	'coll-book_title' => 'मुद्रितपुस्तकरूपम् आदिशतु',
+	'coll-book_text' => 'मुद्रणाभ्यर्थनद्वारा मुद्रितपुस्तकं प्राप्नोतु',
+	'coll-order_from_pp' => '$1 द्वारा प्राग्दृश्यम्',
+	'coll-about_pp' => '$1 सम्बद्धम्',
+	'coll-invalid_podpartner_title' => 'अमानितः मुद्रणाभ्यर्थनसहभागी',
+	'coll-invalid_podpartner_msg' => 'प्रदत्तः मुद्रणाभ्यर्थनसहभागी अमान्यः वर्तते ।
+कृपया विकिमाध्यमप्रबन्धकस्य सम्पर्कः क्रियताम् ।',
+	'coll-license' => 'अनुज्ञापत्रम्',
+	'coll-return_to' => ' [[:$1]] प्रतिनिवर्त्यताम्',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/पीडियाप्रेस् आदेशविवरणम्',
+	'coll-suggest_title' => 'तव पुस्तकाय सूचितानि पृष्ठानि',
+	'coll-suggest_intro_text' => 'तव पुस्तके अधुना विद्यमानानां विकिपृष्ठानाम् आधारेण सूचनाः दत्ताः ।
+योज्यताम् निष्कास्यताम् इत्येते कुड्मले यदा नुद्यते तदा इयम् आवली अद्यतनीक्रियते ।',
+	'coll-suggested_articles' => 'सूचनाः',
+	'coll-suggest_reset_bans' => 'पुनः व्यवस्थाप्यताम्',
+	'coll-suggest_reset_bans_tooltip' => 'पूर्वं निष्कासिताः सूचनाः दर्श्यन्ताम्',
+	'coll-suggest_add_selected' => 'चितानि पृष्ठानि योज्यन्ताम्',
+	'coll-suggest_ban_selected' => 'चितानि पृष्ठानि निष्कास्यन्ताम्',
+	'coll-suggest_your_book' => 'तव पुस्तकम्',
+	'coll-suggest_show' => 'दर्श्यताम्',
+	'coll-suggest_ban_tooltip' => 'सूचनावलीतः इदं पृष्ठं निष्कास्यताम्',
+	'coll-suggest_article_ban' => '<strong>$1</strong> इदं पृष्ठं सूचनातः($2) निष्कासितम् ।',
+	'coll-suggest_article_add' => '<strong>$1</strong> इदं पृष्ठं तव पुस्तके ($2) योजितम् ।',
+	'coll-suggest_article_remove' => '<strong>$1</strong> इदं पृष्ठं सूचनातः($2) निष्कासितम् ।',
+	'coll-suggest_undo_tooltip' => 'इयं क्रिया पूर्ववत् क्रियताम्',
+	'coll-suggest_undo' => 'निष्क्रियताम्',
+	'coll-load_local_book' => '%NUMPAGES% विकिपृष्ठैः युक्तस्य भवदीय%TITLE%पुस्तकस्य अनुवर्तनाय OK नुद्यताम् । लोपनाय नूतनस्य रिक्तपुस्तकस्य आरम्भकरणाय Cancel नुद्यताम् ।',
+	'right-collectionsaveasuserpage' => 'योजकपृष्ठरूपेण पुस्तकं रक्ष्यताम् ।',
+	'right-collectionsaveascommunitypage' => 'समुदायसङ्ग्रहरूपेण पुस्तकानि रक्ष्यन्ताम् ।',
 );
 
 /** Sakha (саха тыла)
