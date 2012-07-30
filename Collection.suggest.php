@@ -584,7 +584,7 @@ class Proposals {
 			}
 		}
 
-		if ( in_array( $link, $this->mBanList ) ) {
+		if ( $this->hasBans() && in_array( $link, $this->mBanList ) ) {
 			return false;
 		}
 
