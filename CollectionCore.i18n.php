@@ -2979,7 +2979,7 @@ $messages['nds-nl'] = array(
 	'coll-bookscategory' => 'Boeken',
 	'coll-helppage' => 'Help:Boeken',
 	'coll-load_collection' => 'Boek laojen',
-	'coll-n_pages' => "$1 {{PLURAL:$1|pagina|pagina's}}",
+	'coll-n_pages' => '$1 {{PLURAL:$1|zied|ziejen}}',
 	'coll-printable_version_pdf' => 'PDF-versie',
 	'coll-show_collection' => 'Boek laoten zien',
 );
