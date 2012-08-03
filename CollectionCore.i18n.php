@@ -2080,12 +2080,38 @@ $messages['io'] = array(
 
 /** Icelandic (íslenska)
  * @author S.Örvarr.S
+ * @author Snævar
  */
 $messages['is'] = array(
+	'coll-print_export' => 'Prenta/flytja út',
 	'coll-create_a_book' => 'Safnið mitt',
-	'coll-add_category' => 'Bæta við flokki',
-	'coll-load_collection' => 'Hlaða safn',
-	'coll-show_collection' => 'Sýna safn',
+	'coll-create_a_book_tooltip' => 'Stofna síðu eða síðusafn',
+	'coll-download_as' => 'Hlaða niður sem $1',
+	'coll-download_as_tooltip' => 'Hlaða niður $1 útgáfu af þessari wiki síðu',
+	'coll-disable' => 'afvirkja',
+	'coll-add_linked_article' => 'Bæta tengdri wiki síðu við bókina þína',
+	'coll-remove_linked_article' => 'Fjarlægja tengda wiki síðu frá bókinni þinni',
+	'coll-add_category' => 'Bæta flokki við bókina þína',
+	'coll-add_category_tooltip' => 'Bæta öllum wiki síðum í þessum flokki við bókina þína',
+	'coll-add_this_page' => 'Bæta þessari síðu við bókina þína',
+	'coll-add_page_tooltip' => 'Bæta núverandi wiki síðu við bókina þína',
+	'coll-bookscategory' => 'Bækur',
+	'coll-clear_collection' => 'Hreinsa bók',
+	'coll-clear_collection_confirm' => 'Vilt þú örugglega hreinsa bókina?',
+	'coll-clear_collection_tooltip' => 'Fjarlægja allar wiki síður frá bókinni þinni',
+	'coll-help' => 'Hjálp',
+	'coll-help_tooltip' => 'Sýna hjálp um stofnun bóka',
+	'coll-helppage' => 'Help:Bækur',
+	'coll-load_collection' => 'Hlaða bók',
+	'coll-load_collection_tooltip' => 'Hlaða þessari bók sem þinni núverandi bók',
+	'coll-n_pages' => '$1 {{PLURAL:$1|síða|síður}}',
+	'coll-printable_version_pdf' => 'PDF útgáfa',
+	'coll-remove_this_page' => 'Fjarlægja þessa síðu frá bókinni þinni',
+	'coll-remove_page_tooltip' => 'Fjarlægja núverandi wiki síðu frá bókinni frá bókinni þinni',
+	'coll-show_collection' => 'Sýna bók',
+	'coll-show_collection_tooltip' => 'Smelltu til þess að breyta/hlaða inn/panta bókina þína',
+	'coll-not_addable' => 'Mistókst að bæta þessari síðu við',
+	'coll-suggest_empty' => 'tóm',
 );
 
 /** Italian (italiano)
@@ -2703,11 +2729,11 @@ $messages['mk'] = array(
 	'coll-disable' => 'оневозможи',
 	'coll-book_creator_disable' => 'Оневозможи ја книговезницата',
 	'coll-book_creator_disable_tooltip' => 'Прекини со користење на книговезницата',
-	'coll-add_linked_article' => 'Додавај врска до викистраница во книгата',
+	'coll-add_linked_article' => 'Додај ја сврзаната вики-страница во книгата',
 	'coll-remove_linked_article' => 'Отстрани врска до викистраница од книгата',
-	'coll-add_category' => 'Додајте ја категоријава во вашата книга',
-	'coll-add_category_tooltip' => 'Додај ги сите вики-страници од оваа категорија во книгата',
-	'coll-add_this_page' => 'Додај ја страницава во мојата книга',
+	'coll-add_category' => 'Додај ја категоријава во книгата',
+	'coll-add_category_tooltip' => 'Додај ги сите вики-страници од категоријава во книгата',
+	'coll-add_this_page' => 'Додај ја страницава во книгата',
 	'coll-add_page_tooltip' => 'Додај ја тековната вики-страница во книгата',
 	'coll-bookscategory' => 'Книги',
 	'coll-clear_collection' => 'Исчиси ја книгата',
