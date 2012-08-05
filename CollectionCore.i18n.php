@@ -979,6 +979,7 @@ $messages['de-formal'] = array(
 );
 
 /** Zazaki (Zazaki)
+ * @author Erdemaslancan
  * @author Xoser
  */
 $messages['diq'] = array(
@@ -1001,7 +1002,7 @@ $messages['diq'] = array(
 	'coll-clear_collection' => 'Kitaban wedarne',
 	'coll-clear_collection_confirm' => 'Ti raştî kitabê xo wazeno wedarne?',
 	'coll-clear_collection_tooltip' => 'Wîkîyanê hemî kitabê xo de wedarne',
-	'coll-help' => 'Yardim',
+	'coll-help' => 'Peşti',
 	'coll-help_tooltip' => 'Ser bar kerdişê kitabî rê yardim bimucne',
 	'coll-helppage' => 'Help:Kitaban',
 	'coll-load_collection' => 'Kitab bar bike',
@@ -2726,8 +2727,8 @@ $messages['mk'] = array(
 	'coll-book_creator' => 'Книговезница',
 	'coll-download_as' => 'Преземи како $1',
 	'coll-download_as_tooltip' => 'Преземи $1 верзија на оваа вики-страница',
-	'coll-disable' => 'оневозможи',
-	'coll-book_creator_disable' => 'Оневозможи ја книговезницата',
+	'coll-disable' => 'исклучи',
+	'coll-book_creator_disable' => 'Исклучи ја книговезницата',
 	'coll-book_creator_disable_tooltip' => 'Прекини со користење на книговезницата',
 	'coll-add_linked_article' => 'Додај ја сврзаната вики-страница во книгата',
 	'coll-remove_linked_article' => 'Отстрани врска до викистраница од книгата',
@@ -2736,7 +2737,7 @@ $messages['mk'] = array(
 	'coll-add_this_page' => 'Додај ја страницава во книгата',
 	'coll-add_page_tooltip' => 'Додај ја тековната вики-страница во книгата',
 	'coll-bookscategory' => 'Книги',
-	'coll-clear_collection' => 'Исчиси ја книгата',
+	'coll-clear_collection' => 'Испразни ја книгата',
 	'coll-clear_collection_confirm' => 'Дали навистина сакате сосема да ја исчистите книгата?',
 	'coll-clear_collection_tooltip' => 'Отстрани ги сите вики-страници од мојата тековна книга',
 	'coll-help' => 'Помош',
@@ -2749,7 +2750,7 @@ $messages['mk'] = array(
 	'coll-remove_this_page' => 'Отстрани ја страницава од мојата книга',
 	'coll-remove_page_tooltip' => 'Отстрани ја тековната вики-страница од мојата книга',
 	'coll-show_collection' => 'Прикажи ја книгата',
-	'coll-show_collection_tooltip' => 'Кликнете за да ја уредите/преземете/порачате книгата',
+	'coll-show_collection_tooltip' => 'Стиснете за да ја уредите/преземете/порачате книгата',
 	'coll-not_addable' => 'Оваа страница не може да се додаде',
 	'coll-make_suggestions' => 'Предложи страници',
 	'coll-make_suggestions_tooltip' => 'Прикажи предлози засновани на страници од вашата книга',

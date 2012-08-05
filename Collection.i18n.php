@@ -8459,12 +8459,12 @@ $messages['mhr'] = array(
  */
 $messages['mk'] = array(
 	'coll-desc' => '[[Special:Book|Создавање на книги]]',
-	'coll-book_creator_intro' => "<big>Со ''книговезницата'' можете да создадете книга која содржи вики-страници по ваш избор. Можете да ја извезувате книгата во различни формати (на пр. PDF или ODF) или пак да порачате отпечатен примерок.</big>",
-	'coll-manage_your_book' => 'Раководење со вашата книга',
-	'coll-book_creator_help' => 'За повеќе информации, погледајте ја нашата [[{{MediaWiki:Coll-helppage}}|помош за книги]].',
+	'coll-book_creator_intro' => '<big>Со „Книговезница“ можете да создадете книга која содржи вики-страници по ваш избор. Можете да ја извезувате книгата во различни формати (на пр. PDF или ODF) или пак да порачате отпечатен примерок.</big>',
+	'coll-manage_your_book' => 'Уредување на книгата',
+	'coll-book_creator_help' => 'Повеќе информации ќе најдете на страницата „[[{{MediaWiki:Coll-helppage}}|Помош за книги]]“.',
 	'coll-start_book_creator' => 'Пушти ја книговезницата',
 	'coll-book_creator_continue' => 'Продолжи со книговезницата',
-	'coll-book_creator_disable_text' => "''Книговезницата'' ќе биде оневозможена и книгата на која работите ќе биде отстранета.",
+	'coll-book_creator_disable_text' => "''Книговезницата'' ќе биде исклучена, а книгата на која работите ќе биде отстранета.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Текст на книговезницата',
 	'coll-collection' => 'Книга',
 	'coll-collections' => 'Книги',
@@ -8482,9 +8482,9 @@ $messages['mk'] = array(
 Страницава нема да работи правилно ако не е овозможен JavaScript.</strong>',
 	'coll-savedbook_template' => 'зачувана_книга',
 	'coll-your_book' => 'Вашата книга',
-	'coll-download_title' => 'Преземи',
-	'coll-download_text' => 'За да ја преземете книгата, одберете формат и кикнете го копчето.',
-	'coll-download_as_text' => 'Кликнете го копчето за да ја преземете книгата во $1 формат.',
+	'coll-download_title' => 'Преземање',
+	'coll-download_text' => 'За да ја преземете книгата, одберете формат и стиснете на копчето.',
+	'coll-download_as_text' => 'Стиснете го копчето за да ја преземете книгата во форматот $1.',
 	'coll-download' => 'Преземи',
 	'coll-format_label' => 'Формат:',
 	'coll-remove' => 'Отстрани',
@@ -8511,13 +8511,13 @@ $messages['mk'] = array(
 	'coll-error_reponse' => 'Опслужувачот одговори со грешка',
 	'coll-empty_collection' => 'Празна книга',
 	'coll-revision' => 'Ревизија: $1',
-	'coll-save_collection_title' => 'Зачувај и сподели ја книгата',
-	'coll-save_collection_text' => 'Одберете место за чување на вашата книга:',
+	'coll-save_collection_title' => 'Зачувување и споделување',
+	'coll-save_collection_text' => 'Одберете каде да се чува на книгата:',
 	'coll-login_to_save' => 'Ако сакате да зачувувате книги за подоцнежна употреба, [[Special:UserLogin|најавете се или направете сметка]].',
 	'coll-personal_collection_label' => 'Лична книга:',
 	'coll-community_collection_label' => 'Книга на заедницата:',
 	'coll-save_collection' => 'Зачувај',
-	'coll-save_category' => 'Сите зачувани книги се додаваат во категоријата [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-save_category' => 'Сите зачувани книги се ставаат во категоријата „[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]“.',
 	'coll-overwrite_title' => 'Страницата постои.
 Да ја заменам?',
 	'coll-overwrite_text' => 'Страницата со име [[:$1]] веќе постои,
@@ -8536,9 +8536,9 @@ $messages['mk'] = array(
 	'coll-rendering_title' => 'Испис',
 	'coll-rendering_text' => '<p><strong>Ве молиме почекајте додека се создава документот.</strong></p>
 
-<p><strong>Прогрес:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+<p><strong>Сработено:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>Оваа страница треба да се обновува автоматски по еднаш на неколку секунди.
+<p>Оваа страница треба да се обновува автоматски, по еднаш на неколку секунди.
 Ако ова не работи, притиснете го копчето за превчитување во прелистувачот.</p>',
 	'coll-rendering_status' => '<strong>Статус:</strong> $1',
 	'coll-rendering_article' => '(вики-страница: $1)',
@@ -8560,8 +8560,8 @@ $messages['mk'] = array(
 Можеби била избришана и треба да се создаде одново.',
 	'coll-download_failed_title' => 'Грешка при преземањето',
 	'coll-download_failed_text' => 'Настана грешка при преземањето на податотеката: $1',
-	'coll-is_cached' => '<ul><li>Пронајдена е кеширана верзија на документот, па затоа немаше потреба да се отцртува.
-<a href="$1">Сепак отцртај.</a></li></ul>',
+	'coll-is_cached' => '<ul><li>Пронајдена е кеширана верзија на документот, па затоа немаше потреба да се испишува.
+<a href="$1">Сепак испиши.</a></li></ul>',
 	'coll-excluded-templates' => '* Шаблоните во категоријата [[:Category:$1|$1]] се исклучени.',
 	'coll-blacklisted-templates' => '* Шаблоните на црниот список [[:$1]] се исклучени.',
 	'coll-return_to_collection' => '<p>Назад на <a href="$1">$2</a></p>',
@@ -8573,7 +8573,7 @@ $messages['mk'] = array(
 	'coll-invalid_podpartner_msg' => 'Наведениот POD партнер е неважечки.
 Контактирајте го вашиот MediaWiki администратор.',
 	'coll-license' => 'Лиценца',
-	'coll-return_to' => 'Врати се на [[:$1]]',
+	'coll-return_to' => 'Назад на [[:$1]]',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Информации за порачувањето од PediaPress',
 	'coll-suggest_title' => 'Предложени страници за вашата книга',
 	'coll-suggest_intro_text' => 'Предлозите се засновани на тековниот збир од вики-страници во вашата книга.
@@ -8591,7 +8591,7 @@ $messages['mk'] = array(
 	'coll-suggest_article_remove' => 'Страницата <strong>$1</strong> е отстранета од вашата книга ($2).',
 	'coll-suggest_undo_tooltip' => 'Врати го ова дејство',
 	'coll-suggest_undo' => 'врати',
-	'coll-load_local_book' => 'Кликнете на „ОК“ за да продолжите со книгата %TITLE% којашто содржи %NUMPAGES% вики-страници. Кликнете на „Откажи“ за да ја избришете и да започнете со празна книга.',
+	'coll-load_local_book' => 'Стиснете на „ОК“ за да продолжите со книгата %TITLE% којашто содржи %NUMPAGES% вики-страници. Стиснете на „Откажи“ за да ја избришете и да започнете со празна книга.',
 	'coll-format-rl' => 'е-книга (PDF)',
 	'coll-format-epub' => 'е-книга (EPUB)',
 	'coll-format-odf' => 'обработувач на текст (OpenDocument)',
@@ -9564,6 +9564,7 @@ De lijst wordt bijgewerkt als u op de knop 'toevoegen' of 'verwijderen' klikt.",
 	'coll-load_local_book' => 'Klik "OK" om door te gaan met uw boek %TITLE% dat %NUMPAGES% wikipagina\'s bevat. Klik op "Annuleren" om het te verwijderen en opnieuw te beginnen met een leeg boek.',
 	'coll-format-rl' => 'e-boek (PDF)',
 	'coll-format-epub' => 'e-boek (EPUB)',
+	'coll-format-odf' => 'tekstverwerker (OpenDocument)',
 	'coll-format-zim' => 'Kiwix (OpenZIM)',
 	'coll-format-docbook' => 'DocBook',
 	'coll-format-okawix_zeno' => 'Okawix',
