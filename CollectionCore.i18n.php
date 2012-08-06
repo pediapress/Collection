@@ -1014,7 +1014,7 @@ $messages['diq'] = array(
 	'coll-show_collection' => 'Kitab bimucne',
 	'coll-show_collection_tooltip' => 'Klik bike ke kitabê xo bivurne/bar bike/sipariş bike',
 	'coll-not_addable' => 'Ena pel nişkeno de biyo',
-	'coll-make_suggestions' => 'Pelan ke tevsiye biyê',
+	'coll-make_suggestions' => 'Pela pêşniyaz ke',
 	'coll-make_suggestions_tooltip' => 'Ser pelan ke zerre kitabê tu de înan ra tevsiye bike',
 	'coll-suggest_empty' => 'veng',
 );
@@ -2747,7 +2747,7 @@ $messages['mk'] = array(
 	'coll-load_collection_tooltip' => 'Вчитај ја книгава како моја тековна книга',
 	'coll-n_pages' => '$1 {{PLURAL:$1|страница|страници}}',
 	'coll-printable_version_pdf' => 'PDF верзија',
-	'coll-remove_this_page' => 'Отстрани ја страницава од мојата книга',
+	'coll-remove_this_page' => 'Отстрани ја страницава од книгата',
 	'coll-remove_page_tooltip' => 'Отстрани ја тековната вики-страница од мојата книга',
 	'coll-show_collection' => 'Прикажи ја книгата',
 	'coll-show_collection_tooltip' => 'Стиснете за да ја уредите/преземете/порачате книгата',
