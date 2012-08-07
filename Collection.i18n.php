@@ -4670,7 +4670,7 @@ il at pôt-étre étâ suprimâ et dêt étre refêt.',
 	'coll-book_title' => 'Comandar desot la fôrma d’un lévro emprimâ',
 	'coll-book_text' => 'Avéd un lévro emprimâ per noutron partenèro d’emprèssion a la demanda :',
 	'coll-order_from_pp' => 'Apèrçu avouéc $1',
-	'coll-about_pp' => 'A propôs de $1',
+	'coll-about_pp' => 'Sur $1',
 	'coll-invalid_podpartner_title' => 'Partenèro d’emprèssion a la demanda fôx.',
 	'coll-invalid_podpartner_msg' => 'Lo partenèro d’emprèssion a la demanda balyê est fôx.
 Vos volyéd veriér vers voutron administrator MediaWiki.',
