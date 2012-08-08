@@ -3875,6 +3875,8 @@ See lehekülg ei tööta korralikult, kui JavaScript pole lubatud.</strong>',
 	'coll-rename_chapter' => 'Sisesta uue peatüki pealkiri',
 	'coll-no_such_category' => 'Sellist kategooriat ei ole',
 	'coll-notitle_title' => 'Lehekülje pealkirja ei saa määrata.',
+	'coll-post_failed_title' => 'POST-päring ebaõnnestus',
+	'coll-post_failed_msg' => 'Aadressil $1 tehtud POST-päring ebaõnnestus ($2).',
 	'coll-mwserve_failed_title' => 'Küljendamisserveri tõrge',
 	'coll-mwserve_failed_msg' => 'Küljendamisserveril ilmnes tõrge: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Tõrketeade serverist',
@@ -3952,6 +3954,10 @@ Võib-olla on see kustutatud ja tuleb taasluua.',
 	'coll-suggest_article_remove' => 'Lehekülg <strong>$1</strong> on raamatust eemaldatud ($2).',
 	'coll-suggest_undo_tooltip' => 'Võta see toiming tagasi',
 	'coll-suggest_undo' => 'võta tagasi',
+	'coll-load_local_book' => 'Klõpsa "OK", et jätkata %NUMPAGES% vikilehekülge sisaldava raamatuga "%TITLE%". Klõpsa "Cancel", et see kustutada ja alustada uue tühja raamatuga.',
+	'coll-format-rl' => 'e-raamat (PDF)',
+	'coll-format-epub' => 'e-raamat (EPUB)',
+	'coll-format-odf' => 'tekstiprotsessor (OpenDocument)',
 	'right-collectionsaveasuserpage' => 'Salvestada raamatud kasutajaleheküljena',
 	'right-collectionsaveascommunitypage' => 'Salvestada raamat ühisleheküljena',
 );
@@ -8128,6 +8134,8 @@ D'Lëscht gëtt all kéier aktuliséiert wann dir op d'Knäppecher derbäisetzen
 	'coll-load_local_book' => 'Klickt OK fir mat Ärem Buch %TITLE% dat %NUMPAGES% Wikisäiten huet weiderzefueren. Klickt Ofbriechen fir et ze läschen a mat engem eidele Buch unzefänken.',
 	'coll-format-rl' => 'E-Book (PDF)',
 	'coll-format-epub' => 'E-Book (EPUB)',
+	'coll-format-odf' => 'Textveraarbechtung (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
 	'coll-format-docbook' => 'DocBook',
 	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Bicher als Benotzersäit späicheren',
@@ -13465,12 +13473,13 @@ Isinasapanahon ang talaan sa tuwing pipindutin mo ang mga pindutang pandagdag o 
 
 /** толышә зывон (толышә зывон)
  * @author Erdemaslancan
+ * @author Гусейн
  */
 $messages['tly'] = array(
 	'coll-collection' => 'Китобон',
 	'coll-collections' => 'Китобон',
 	'coll-print_template_prefix' => 'Чап',
-	'coll-download_title' => 'Бо жәј',
+	'coll-download_title' => '',
 	'coll-download' => 'Бо жәј',
 	'coll-remove' => 'Рәдд кардеј',
 	'coll-show' => 'Нишо дој',
