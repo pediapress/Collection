@@ -2443,6 +2443,7 @@ $messages['ce'] = array(
 );
 
 /** Czech (česky)
+ * @author Chmee2
  * @author Danny B.
  * @author Li-sung
  * @author Matěj Grabovský
@@ -2580,6 +2581,11 @@ Seznam se aktualizuje při každém kliknutím na tlačítka přidat a odebrat.'
 	'coll-suggest_undo_tooltip' => 'Vrátit tuto akci zpět',
 	'coll-suggest_undo' => 'zpět',
 	'coll-load_local_book' => 'Pokračovat v tvorbě knihy %TITLE%, která obsahuje %NUMPAGES% stran wiki, můžete kliknutím na OK. Kliknutím na Storno ji smažete a začnete s prázdnou knihou.',
+	'coll-format-rl' => 'e-kniha (PDF)',
+	'coll-format-epub' => 'e-kniha (EPUB)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Ukládání knih jako uživatelských stránek',
 	'right-collectionsaveascommunitypage' => 'Ukládání knih jako stránek komunity',
 );
@@ -3368,6 +3374,12 @@ Lisćina se aktualizěrujo, gažkuli kliknjoš na tłocašk "pśidaś" abo "wót
 	'coll-suggest_undo_tooltip' => 'Akciju slědk wześ',
 	'coll-suggest_undo' => 'slědk wześ',
 	'coll-load_local_book' => 'Klikni na W pórědku, aby pókšacowak z knigłami %TITLE%, kótaraž wopśimujo %NUMPAGES% {{PLURAL:%NUMPAGES%|wikibok|wikiboka|wikiboki|wikibokow}}. Klikni na Pśetergnuś, aby ju wulašował a startuj z proznymi knigłami.',
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'tekstowe pśeźěłanje (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Knigły ako wužywarski bok składowaś',
 	'right-collectionsaveascommunitypage' => 'Knigły ako bok zgromaźeństwa składowaś',
 );
@@ -3387,6 +3399,7 @@ $messages['ee'] = array(
  * @author Crazymadlover
  * @author Evropi
  * @author Geraki
+ * @author Glavkos
  * @author Omnipaedista
  * @author ZaDiak
  */
@@ -3406,10 +3419,10 @@ $messages['el'] = array(
 	'coll-print_template_pattern' => '$1/Εκτύπωση',
 	'coll-unknown_subpage_title' => 'Άγνωστη υποσελίδα',
 	'coll-unknown_subpage_text' => 'Αυτή η υποσελίδα [[Special:Book|Βιβλίου]] δεν υπάρχει',
-	'coll-couldnotaddarticle_title' => 'Δεν ήταν εφικτό να προστεθεί σελίδα βίκι.',
-	'coll-couldnotaddarticle_msg' => 'Η σελίδα βίκι δεν ήταν δυνατό να προστεθεί.',
-	'coll-couldnotremovearticle_title' => 'Δεν ήταν εφικτό να αφαιρεθεί αυτή η σελίδα βίκι',
-	'coll-couldnotremovearticle_msg' => 'Η σελίδα βίκι δεν μπορούσε να αφαιρεθεί.',
+	'coll-couldnotaddarticle_title' => 'Δεν ήταν εφικτό να προστεθεί η σελίδα wiki.',
+	'coll-couldnotaddarticle_msg' => 'Η σελίδα wiki δεν ήταν δυνατό να προστεθεί.',
+	'coll-couldnotremovearticle_title' => 'Δεν ήταν εφικτό να αφαιρεθεί αυτή η σελίδα wiki',
+	'coll-couldnotremovearticle_msg' => 'Η σελίδα wiki δεν μπορούσε να αφαιρεθεί.',
 	'coll-noscript_text' => '<h1>Χρειάζεται JavaScript!</h1>
 <strong>Ο περιηγητής σας δεν υποστηρίζει JavaScript ή η JavaScript έχει απενεργοποιηθεί.
 Αυτή η σελίδα δεν θα λειτουργεί κανονικά, εκτός και αν ενεργοποιηθεί η JavaScript.</strong>',
@@ -3521,6 +3534,11 @@ $messages['el'] = array(
 	'coll-suggest_undo_tooltip' => 'Αναίρεση αυτής της ενέργειας',
 	'coll-suggest_undo' => 'αναίρεση',
 	'coll-load_local_book' => "Κάντε κλικ στο κουμπί Εντάξει για να συνεχίσετε με το βιβλίο %TITLE% το οποίο περιέχει %NUMPAGES% βικισελίδες. Κάντε κλικ στο κουμπί Άκυρο για να το διαγράψετε και να ξεκινήσετε μ' ένα άδειο βιβλίο.",
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Αποθήκευση βιβλίων ως σελίδας χρήστη',
 	'right-collectionsaveascommunitypage' => 'Αποθήκευση βιβλίων ως σελίδας κοινότητας',
 );
@@ -6771,7 +6789,7 @@ $messages['it'] = array(
 	'coll-couldnotremovearticle_title' => 'Impossibile rimuovere la pagina wiki',
 	'coll-couldnotremovearticle_msg' => 'La pagina wiki non può essere rimossa.',
 	'coll-noscript_text' => '<h1>È necessario avere JavaScript!</h1>
-<strong>Il tuo browser non supporta JavaScript oppure JavaScript è stato disattivato.
+<strong>Si sta utilizzando un browser che non supporta JavaScript oppure JavaScript è stato disattivato.
 La pagina non funzionerà correttamente se non verrà attivato JavaScript.</strong>',
 	'coll-savedbook_template' => 'libro_salvato',
 	'coll-your_book' => 'Il tuo libro',
@@ -7133,6 +7151,7 @@ Mangga hubungi pangurus MediaWiki panjenengan.',
 
 /** Georgian (ქართული)
  * @author BRUTE
+ * @author David1010
  * @author Malafaya
  * @author Sopho
  * @author Temuri rajavi
@@ -7271,6 +7290,8 @@ $messages['ka'] = array(
 	'coll-suggest_undo_tooltip' => 'ცვლილების გაუქმება',
 	'coll-suggest_undo' => 'გაუქმება',
 	'coll-load_local_book' => 'დააჭირეთ „OK“ თქვენი %NUMPAGES% გვერდების შემცვლელ %TITLE% წიგნთან მუშაობის გაგრძელებისთვის. დაააჭირეთ „გაუქმება“ ღილაკს რომ წაშალოთ იგი და დაიწყოთ ცარიელი წიგნი.',
+	'coll-format-rl' => 'ელ-წიგნი (PDF)',
+	'coll-format-epub' => 'ელ-წიგნი (EPUB)',
 	'right-collectionsaveasuserpage' => 'შეინახე წიგნი, როგორც მომხმარებლის გვერდი',
 	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
 );
@@ -9999,6 +10020,7 @@ $messages['pfl'] = array(
  * @author Leinad
  * @author Masti
  * @author McMonster
+ * @author Przemub
  * @author Qblik
  * @author Sp5uhe
  * @author Wpedzich
@@ -10136,6 +10158,12 @@ Lista jest aktualizowana, gdy klikniesz na przyciski dodaj lub usuń.',
 	'coll-suggest_undo_tooltip' => 'Cofnij tę operację',
 	'coll-suggest_undo' => 'cofnij',
 	'coll-load_local_book' => 'Kliknij „OK” aby kontynuować tworzenie książki %TITLE% zawierającej %NUMPAGES% stron wiki. Kliknij „Anuluj” aby usunąć istniejącą i rozpocząć tworzenie nowej książki.',
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'edytor tekstu (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Zapisywanie książek jako strony użytkownika',
 	'right-collectionsaveascommunitypage' => 'Zapisywanie książek jako wspólnej strony',
 );
