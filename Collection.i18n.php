@@ -2880,6 +2880,8 @@ Listen opdateres når du klikker på tilføj- eller fjernknapperne.',
 	'coll-suggest_undo_tooltip' => 'Fortryd denne handling',
 	'coll-suggest_undo' => 'fortryd',
 	'coll-load_local_book' => 'Klik på OK for at fortsætte med din bog, %TITLE%, som indeholder %NUMPAGES% wikisider. Klik på Cancel for at slette den og begynde forfra med en tom bog.',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Gem bøger som brugerside',
 	'right-collectionsaveascommunitypage' => 'Gem bøger som en fælles side',
 );
@@ -12678,6 +12680,7 @@ $messages['sw'] = array(
 
 /** Tamil (தமிழ்)
  * @author Aswn
+ * @author Karthi.dr
  * @author Shanmugamp7
  * @author TRYPPN
  * @author செல்வா
@@ -12783,6 +12786,8 @@ JavaScript இயக்கப்பட்டால் ஒழிய இப்ப�
 	'coll-suggest_article_remove' => 'பக்கம் <strong> $1 </strong> இருந்து உங்கள் புத்தகத்திலிருந்து நீக்கப்பட்டது ( $2 ).',
 	'coll-suggest_undo_tooltip' => 'இந்த செயலை செயல்தவிர்',
 	'coll-suggest_undo' => 'மீளமை',
+	'coll-format-rl' => 'மின் நூல் (PDF)',
+	'coll-format-epub' => 'மின் நூல் (EPUB)',
 	'right-collectionsaveasuserpage' => 'புத்தகங்களை பயனீட்டாளர் பக்கமாக சேமி',
 	'right-collectionsaveascommunitypage' => 'புத்தகங்களை சமுதாய பக்கமாக சேமி',
 );
