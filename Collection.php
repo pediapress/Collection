@@ -30,7 +30,7 @@ EOT;
 	exit( 1 );
 }
 
-$dir = dirname( __FILE__ ) . '/';
+$dir = __DIR__ . '/';
 
 # Extension version. If you update it, please also update 'requiredVersion'
 # in js/collection.js
@@ -377,24 +377,25 @@ function wfAjaxCollectionGetPopupData( $title ) {
 	$imagePath = "$wgScriptPath/extensions/Collection/images";
 	$t = Title::newFromText( $title );
 	if ( $t && $t->isRedirect() ) {
-		$a = new Article( $t, 0 );
-		$t = $a->followRedirect();
+		$wikiPage = WikiPage::factory( $t );
+		$t = $wikiPage->followRedirect();
 		if ( $t instanceof Title ) {
 			$title = $t->getPrefixedText();
 		}
 	}
 	if ( CollectionSession::findArticle( $title ) == - 1 ) {
 		$result['action'] = 'add';
-		$result['text'] = wfMsg( 'coll-add_linked_article' );
+		$result['text'] = wfMessage( 'coll-add_linked_article' )->text();
 		$result['img'] = "$imagePath/silk-add.png";
 	} else {
 		$result['action'] = 'remove';
-		$result['text'] = wfMsg( 'coll-remove_linked_article' );
+		$result['text'] = wfMessage( 'coll-remove_linked_article' )->text();
 		$result['img'] = "$imagePath/silk-remove.png";
 	}
 	$result['title'] = $title;
 	$r = new AjaxResponse( FormatJson::encode( $result ) );
 	$r->setContentType( 'application/json' );
+
 	return $r;
 }
 
@@ -416,15 +417,12 @@ function wfCollectionSuggestAction( $action, $article ) {
 			),
 			'onclick' => "collectionSuggestCall('UndoArticle'," .
 				Xml::encodeJsVar( array( $action, $article ) ) . "); return false;",
-			'title' => wfMsg( 'coll-suggest_undo_tooltip' ),
+			'title' => wfMessage( 'coll-suggest_undo_tooltip' )->text(),
 		),
-		wfMsg( 'coll-suggest_undo' )
+		wfMessage( 'coll-suggest_undo' )->text()
 	);
-	$result['last_action'] = wfMsg(
-		"coll-suggest_article_$action",
-		htmlspecialchars( $article ),
-		$undoLink
-	);
+	$result['last_action'] = wfMessage(
+		"coll-suggest_article_$action", $article )->rawParams( $undoLink )->escaped();
 	$result['collection'] = CollectionSession::getCollection();
 	$r = new AjaxResponse( FormatJson::encode( $result ) );
 	$r->setContentType( 'application/json' );
