@@ -1244,6 +1244,12 @@ $messages['as'] = array(
 	'coll-suggest_undo_tooltip' => 'এই কামটো নোহোৱা কৰক',
 	'coll-suggest_undo' => 'পূৰ্ববত কৰক',
 	'coll-load_local_book' => '%NUMPAGES% খন ৱিকি পৃষ্ঠা থকা আপোনাৰ %TITLE% গ্ৰন্থৰ বাবে OK ক্লিক কৰক। এইখন বিলোপ কৰি নতুন এখন আৰম্ভ কৰিবলৈ Cancel ক্লিক কৰক।',
+	'coll-format-rl' => 'ই-গ্ৰন্থ (পিডিএফ)',
+	'coll-format-epub' => 'ই-গ্ৰন্থ (ইপিইউবি)',
+	'coll-format-odf' => "ৱৰ্ড প্ৰচেছৰ (অ'পেন ড'কুমেণ্ট)",
+	'coll-format-zim' => "কিৱিক্স (অ'পেনজিম)",
+	'coll-format-docbook' => 'ডক্‌বুক',
+	'coll-format-okawix_zeno' => "অ'কাৱিক্স",
 	'right-collectionsaveasuserpage' => 'সদস্য পৃষ্ঠাৰূপে গ্ৰন্থ সাঁচক',
 	'right-collectionsaveascommunitypage' => 'সমজুৱা পৃষ্ঠাৰূপে গ্ৰন্থ সাঁচক',
 );
@@ -3691,6 +3697,7 @@ La listo estas ĝisdatigita iam ajn vi klakas la butonojn aldoni aŭ forigi.',
 );
 
 /** Spanish (español)
+ * @author Armando-Martin
  * @author Baiji
  * @author Crazymadlover
  * @author Dferg
@@ -3840,6 +3847,12 @@ La lista se actualiza cada vez que haces click en los botones de agregar o quita
 	'coll-suggest_undo_tooltip' => 'Deshacer esta acción',
 	'coll-suggest_undo' => 'deshacer',
 	'coll-load_local_book' => 'Haz click en OK para continuar con tu libro %TITLE% que contiene %NUMPAGES% página wiki. Haz click en Cancelar para borrarlo y comenzar con un libro vacío.',
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'procesador de textos (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Grabar libros como página de usuario',
 	'right-collectionsaveascommunitypage' => 'Grabar libros como página de la comunidad',
 );
@@ -5037,6 +5050,12 @@ A lista actualízase sempre que preme no botón engadir ou eliminar.',
 	'coll-suggest_undo_tooltip' => 'Desfacer esta acción',
 	'coll-suggest_undo' => 'desfacer',
 	'coll-load_local_book' => 'Prema en "Aceptar" para continuar co seu libro titulado "%TITLE%", formado por %NUMPAGES% páxinas wiki. Prema en "Cancelar" para borralo e comezar un libro novo.',
+	'coll-format-rl' => 'libro electrónico (PDF)',
+	'coll-format-epub' => 'libro electrónico (EPUB)',
+	'coll-format-odf' => 'procesador de textos (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Gardar libros como unha páxina de usuario',
 	'right-collectionsaveascommunitypage' => 'Gardar libros como unha páxina da comunidade',
 );
@@ -5522,6 +5541,12 @@ $messages['he'] = array(
 	'coll-suggest_undo_tooltip' => 'ביטול פעולה זו',
 	'coll-suggest_undo' => 'ביטול',
 	'coll-load_local_book' => 'נא ללחוץ על אישור כדי להמשיך עם הספר שלך %TITLE% המכיל %NUMPAGES% עמודי ויקי. יש ללחוץ על ביטול כדי למחוק אותו ולהתחיל עם ספר ריק.',
+	'coll-format-rl' => 'ספר אלקטרוני (PDF)',
+	'coll-format-epub' => 'ספר אלקטרוני (EPUB)',
+	'coll-format-odf' => 'מעבד תמלילים (OpenDocument)',
+	'coll-format-zim' => 'Kiwix‏ (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'שמירת ספרים כדפי משתמש',
 	'right-collectionsaveascommunitypage' => 'שמירת ספרים כדפי קהילה',
 );
@@ -5529,6 +5554,7 @@ $messages['he'] = array(
 /** Hindi (हिन्दी)
  * @author Ansumang
  * @author Kaustubh
+ * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
 	'coll-desc' => '[[Special:Collection|पन्ने जमा करें]], पीडीएफ बनायें',
@@ -5579,9 +5605,9 @@ $messages['hi'] = array(
 	'coll-community_collection_label' => 'सामूहिक कलेक्शन:',
 	'coll-save_collection' => 'कलेक्शन संजोयें',
 	'coll-overwrite_title' => 'पन्ना अस्तित्व में हैं। पुनर्लेखन करें?',
-	'coll-overwrite_text' => '[[:$1]] नामका पन्ना पहले से अस्तित्वमें हैं।
-क्या आप उसपर अपना कलेक्शन पुनर्लिखना चाहतें हैं?',
-	'coll-yes' => 'हां',
+	'coll-overwrite_text' => '[[:$1]] नाम का पन्ना पहले से मौजूद है।
+क्या आप उसकी जगह अपना कलेक्शन डालना चाहते हैं?',
+	'coll-yes' => 'हाँ',
 	'coll-no' => 'नहीं',
 	'coll-load_overwrite_text' => 'आपके कलेक्शनमें पहले से कुछ पन्ने हैं।
 क्या आप आपका कलेक्शन दुबारा बनाना चाहतें हैं, या यह पन्ने बढाना चाहतें हैं?',
@@ -5922,6 +5948,12 @@ Lisćina aktualizuje so, hdyžkuli kliknješ na tłóčatko "přidać" abo "wots
 	'coll-suggest_undo_tooltip' => 'Tutu akciju cofnyć',
 	'coll-suggest_undo' => 'cofnyć',
 	'coll-load_local_book' => 'Klikń W porjadku, zo by ze swojej knihu %TITLE% pokročował , kotraž %NUMPAGES% {{PLURAL:%NUMPAGES%|wikistronu|wikistronje|wikistrony|wikistronow}} wobsahuje. Klikń na Přetorhnyć, zo by ju zhašał a startuj z prózdnej knihu.',
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'tekstowe předźěłanje (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Knihi jako wužiwarsku stronu składować',
 	'right-collectionsaveascommunitypage' => 'Knihi jako stronu zhromadźenstwa składować',
 );
@@ -7861,7 +7893,7 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'coll-desc' => '[[Special:Book|Böösher ußjäve]]',
+	'coll-desc' => '[[Special:Book|Bööscher ußjäve]]',
 	'coll-book_creator_intro' => '<big>Mem „Bööscher Maache“ kanns De e Booch met Sigge uss_em Wiki maache, di De sellver ußjesöhk häs. Ding Booch kanns De en ongerscheidlijje Fommaate expotteere, zem Beishpöll als <i lang="en">PDF</i> udder <i lang="en">ODF</i>, un De kanns et och jedröck beshtelle.</big>',
 	'coll-manage_your_book' => 'Donn Ding Booch beärrbeide',
 	'coll-book_creator_help' => 'Loor op dä [[{{MediaWiki:Coll-helppage}}|Hölpsigg övver et Bööscher-Maache]], wann De mieh weße wells.',
@@ -7921,7 +7953,7 @@ donn [[Special:UserLogin|enlogge, udder Desch aanmelde]].',
 	'coll-personal_collection_label' => 'Ding persöönlesh Booch:',
 	'coll-community_collection_label' => 'En öffentlesch Booch:',
 	'coll-save_collection' => 'Dat Booch avspeichere',
-	'coll-save_category' => 'Böösher wäde en dä {{int:Category}} [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] jesammt.',
+	'coll-save_category' => 'Bööscher wäde en dä Saachjropp [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] jesammt.',
 	'coll-overwrite_title' => 'Die Sigg jidd et ald. Överschrieve?',
 	'coll-overwrite_text' => 'En Sigg met dämm Name [[:$1]] jidd_et alld.
 Wells De se met Dinge Sammlong övverschriive?',
@@ -7993,6 +8025,12 @@ Di Leß weed neu opjebout, wann De op dä „Dobei donn“ udder dä „{{int:co
 	'coll-suggest_undo' => 'zeröck nämme',
 	'coll-load_local_book' => 'Donn „OK“ ußwähle, öm met Dingem Booch mem Naame %TITLE% un %NUMPAGES% Wikisigge dren wigger ze maache.
 Donn „Cancel“ ußwähle, för et fott ze schmiiße un met enem läddijje Booch neu aanzefange.',
+	'coll-format-rl' => 'för e <i lang="en">elläktronnesch Booch</i> em <i lang="en">PDF</i> Fommaat',
+	'coll-format-epub' => 'för e <i lang="en">elläktronnesch Booch</i> em <i lang="en">EPUB</i> Fommaat',
+	'coll-format-odf' => 'ene Täx em <i lang="en">OpenDocument</i> Fommaat',
+	'coll-format-zim' => 'för Kiwix em OpenZIM Fommaat',
+	'coll-format-docbook' => 'em <i lang="en">DocBook</i> Fommaat',
+	'coll-format-okawix_zeno' => 'em Okawix Fommaat',
 	'right-collectionsaveasuserpage' => 'E Boch als enem Metmaacher sing Sigg avspeichere',
 	'right-collectionsaveascommunitypage' => 'E Boch als en Jemeinschaffß_Sigg avspeichere',
 );
@@ -10955,6 +10993,9 @@ Această listă este actualizată de fiecare dată când apăsați butoanele de 
 	'coll-suggest_undo_tooltip' => 'Anularea acestei acțiuni',
 	'coll-suggest_undo' => 'anulează',
 	'coll-load_local_book' => 'Apăsați OK pentru a continua cu actuala carte (intitulată %TITLE%), care conține %NUMPAGES% pagini. Apăsați Renunțare pentru a o șterge și a începe o nouă carte.',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Salvează cartea ca pagină de utilizator',
 	'right-collectionsaveascommunitypage' => 'Salvează cartea ca o pagină a comunității',
 );
@@ -13500,6 +13541,12 @@ Isinasapanahon ang talaan sa tuwing pipindutin mo ang mga pindutang pandagdag o 
 	'coll-suggest_undo_tooltip' => 'Bawiin ang galaw na ito',
 	'coll-suggest_undo' => 'ibalik',
 	'coll-load_local_book' => 'Pindutin ang Okey upang magpatuloy sa aklat mong %TITLE% na naglalaman ng %NUMPAGES% na mga pahinang pangwiki.  Pindutin ang Huwag ituloy upang burahin ito at magsimula ng isang aklat na wala pang laman.',
+	'coll-format-rl' => 'e-aklat (PDF)',
+	'coll-format-epub' => 'e-aklat (EPUB)',
+	'coll-format-odf' => 'pampruseso ng salita (Bukas na Kasulatan)',
+	'coll-format-zim' => 'Kiwix (Bukas na ZIM)',
+	'coll-format-docbook' => 'Aklat ng Kasulatan',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Sagipin ang mga aklat bilang pahina ng tagagamit',
 	'right-collectionsaveascommunitypage' => 'Sagipin ang mga aklat bilang pahina ng pamayanan',
 );
