@@ -926,8 +926,9 @@ $messages['ar'] = array(
 	'coll-suggest_article_add' => 'الصفحة <strong>$1</strong> تمت إضافتها إلى كتابك ($2).',
 	'coll-suggest_article_remove' => 'الصفحة <strong>$1</strong> تمت إزالتها من كتابك ($2).',
 	'coll-suggest_undo_tooltip' => 'استرجع هذه الإجراء',
-	'coll-suggest_undo' => 'ارجع',
+	'coll-suggest_undo' => 'رجوع',
 	'coll-load_local_book' => 'اضغط OK للاستمرار في كتابك %TITLE% الذي به %NUMPAGES% من صفحات الويكي. اضغط Cancel لحذفه والبدء بكتاب فارغ.',
+	'coll-format-okawix_zeno' => 'أكاويكس',
 	'right-collectionsaveasuserpage' => 'احفظ الكتب كصفحة مستخدم',
 	'right-collectionsaveascommunitypage' => 'احفظ الكتب كصفحة مجتمع',
 );
@@ -12974,6 +12975,8 @@ $messages['te'] = array(
 	'coll-suggest_undo_tooltip' => 'ఈ చర్యను రద్దు చెయ్యి',
 	'coll-suggest_undo' => 'రద్దు చెయ్యి',
 	'coll-load_local_book' => 'మీ  %NUMPAGES%  వికీపేజీలుగల %TITLE%  పుస్తకం పై పని కొనసాగించుటకు సరే(OK) నొక్కండి.  దానిని వదలివేసి కొత్త ఖాళీ పుస్తకం ప్రారంభించుటకు రద్దు (Cancel ) నొక్కండి',
+	'coll-format-rl' => 'ఈ-పుస్తకం (PDF)',
+	'coll-format-epub' => 'ఈ-పుస్తకం (EPUB)',
 	'right-collectionsaveasuserpage' => 'పుస్తకములను  వాడుకరి  పేజి లాగ భద్రపరచుము',
 	'right-collectionsaveascommunitypage' => 'పుస్తకములను సముదాయ పేజి లాగ భద్రపరచుము',
 );
@@ -14479,6 +14482,7 @@ $messages['yue'] = array(
 );
 
 /** Simplified Chinese (‪中文（简体）‬)
+ * @author Anakmalaysia
  * @author Bencmq
  * @author Chenxiaoqino
  * @author Chenzw
@@ -14604,6 +14608,12 @@ $messages['zh-hans'] = array(
 	'coll-suggest_undo_tooltip' => '撤销该操作',
 	'coll-suggest_undo' => '撤销',
 	'coll-load_local_book' => '单击“确定”继续编辑你的图书%TITLE%（已包含%NUMPAGES%个wiki页面）。单击“取消”删除你的图书，生成空图书。',
+	'coll-format-rl' => '电子书（PDF）',
+	'coll-format-epub' => '电子书（EPUB）',
+	'coll-format-odf' => '文字处理器（OpenDocument）',
+	'coll-format-zim' => 'Kiwix（OpenZIM）',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => '保存图书为用户页面',
 	'right-collectionsaveascommunitypage' => '保存图书为社区页面',
 );
