@@ -2891,6 +2891,14 @@ $messages['ms'] = array(
 	'coll-suggest_empty' => 'kosong',
 );
 
+/** Maltese (Malti)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['mt'] = array(
+	'coll-help' => 'Għajnuna',
+	'coll-suggest_empty' => 'vojta',
+);
+
 /** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */

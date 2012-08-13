@@ -866,7 +866,7 @@ $messages['ar'] = array(
 هل تريد الكتابة على كتابك الحالي، إضافة المحتوى الجديد أو إلغاء تحميل هذا الكتاب؟',
 	'coll-overwrite' => 'كتابة عليها',
 	'coll-append' => 'انتظار',
-	'coll-cancel' => 'ألغِ',
+	'coll-cancel' => 'إلغاء',
 	'coll-update' => 'حدّث',
 	'coll-limit_exceeded_title' => 'الكتاب كبير جدا',
 	'coll-limit_exceeded_text' => 'كتابك كبير جدا.
@@ -908,7 +908,7 @@ $messages['ar'] = array(
 	'coll-invalid_podpartner_title' => 'شريك POD غير صحيح',
 	'coll-invalid_podpartner_msg' => 'شريك POD الموفر غير صحيح.
 من فضلك اتصل بإداري ميدياويكي الخاص بك.',
-	'coll-license' => 'ترخيص',
+	'coll-license' => 'الرخصة',
 	'coll-return_to' => 'رجوع إلى [[:$1]]',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/معلومات الطلب من بيديابرس',
 	'coll-suggest_title' => 'صفحات كتابك المقترحة',
@@ -2293,6 +2293,7 @@ Spisak se ažurira kad god kliknete na dugme za dodavanje ili uklanjanje.',
 
 /** Catalan (català)
  * @author Aleator
+ * @author Arnaugir
  * @author El libre
  * @author Jordi Roqué
  * @author Martorell
@@ -2433,6 +2434,8 @@ La llista s'actualitza cada vegada que feu clic als botons d'afegir o treure.",
 	'coll-suggest_undo_tooltip' => "Desfés l'acció",
 	'coll-suggest_undo' => 'desfés',
 	'coll-load_local_book' => 'Feu clic a OK per a continuar el vostre llibre %TITLE% que conté %NUMPAGES% pàgines del wiki. Feu clic a Canceŀla per a esborrar-lo i començar amb un llibre buit.',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => "Desar els llibres com a pàgina d'usuari",
 	'right-collectionsaveascommunitypage' => 'Desar els llibres com una pàgina de la comunitat',
 );
@@ -5653,6 +5656,7 @@ $messages['hi'] = array(
 );
 
 /** Fiji Hindi (Latin script) (Fiji Hindi)
+ * @author Karthi.dr
  * @author Thakurji
  */
 $messages['hif-latn'] = array(
@@ -5662,6 +5666,8 @@ $messages['hif-latn'] = array(
 	'coll-download_title' => 'Download karo',
 	'coll-remove' => 'Hatao',
 	'coll-show' => 'Dekhao',
+	'coll-yes' => 'Haan',
+	'coll-no' => 'Nai',
 );
 
 /** Hiligaynon (Ilonggo)
@@ -5970,6 +5976,7 @@ $messages['ht'] = array(
 /** Hungarian (magyar)
  * @author Bdamokos
  * @author Dani
+ * @author Dj
  * @author Glanthor Reviol
  */
 $messages['hu'] = array(
@@ -6105,6 +6112,12 @@ A lista minden alkalommal frissül, amikor a „hozzáadás” vagy „eltávol�
 	'coll-suggest_undo_tooltip' => 'Művelet visszavonása',
 	'coll-suggest_undo' => 'visszavonás',
 	'coll-load_local_book' => 'Kattints az „OK” gombra a(z) %TITLE% című könyved folytatásához, ami %NUMPAGES% wikilapot tartalmaz. Kattints a „Mégse” gombra a törléséhez, és kezdéshez egy üres könyvvel.',
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'szövegszerkesztő (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Könyvek mentése mint felhasználói lap',
 	'right-collectionsaveascommunitypage' => 'Könyvek mentése közösségi lapként',
 );
@@ -6499,6 +6512,12 @@ Daftar diperbarui kapan pun Anda mengeklik tombol tambah atau hapus.',
 	'coll-suggest_undo_tooltip' => 'Batalkan pilihan ini',
 	'coll-suggest_undo' => 'batalkan',
 	'coll-load_local_book' => 'Klik OK untuk melanjutkan dengan buku Anda yang berjudul %TITLE% yang berisi %NUMPAGES% halaman wiki. Klik Batal untuk menghapusnya dan memulai dengan buku kosong.',
+	'coll-format-rl' => 'buku-e (PDF)',
+	'coll-format-epub' => 'buku-e (EPUB)',
+	'coll-format-odf' => 'pengolah kata (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Menyimpan koleksi buku sebagai halaman pengguna',
 	'right-collectionsaveascommunitypage' => 'Menyimpan koleksi buku sebagai halaman komunitas',
 );
@@ -8448,6 +8467,11 @@ Gal jis buvo panaikintas ir turi būti regeneruojamas.',
 	'coll-suggest_undo_tooltip' => 'Anuliuoti šį veiksmą',
 	'coll-suggest_undo' => 'anuliuoti',
 	'coll-load_local_book' => 'Spustelėkite Gerai, kad testumėte toliaus zsu savo knyga %TITLE%, kurioje yra %NUMPAGES%  wiki puslapių. Spustelėkite Atšaukti, jei norite panaikinti knygą ir pradėti su tuščia knyga.',
+	'coll-format-rl' => 'e-knyga (PDF)',
+	'coll-format-epub' => 'e-knyga (EPUB)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Išsaugoti knygas kaip naudotojo puslapį',
 	'right-collectionsaveascommunitypage' => 'Išsaugoti knygas kaip bendruomenės puslapį',
 );
@@ -9121,8 +9145,11 @@ Mungkin ia telah dipadam dan perlu dijanakan semula.',
 
 /** Maltese (Malti)
  * @author Roderick Mallia
+ * @author පසිඳු කාවින්ද
  */
 $messages['mt'] = array(
+	'coll-yes' => 'Iva',
+	'coll-no' => 'Le',
 	'coll-cancel' => 'Annulla',
 );
 
