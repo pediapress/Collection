@@ -928,6 +928,9 @@ $messages['ar'] = array(
 	'coll-suggest_undo_tooltip' => 'استرجع هذه الإجراء',
 	'coll-suggest_undo' => 'رجوع',
 	'coll-load_local_book' => 'اضغط OK للاستمرار في كتابك %TITLE% الذي به %NUMPAGES% من صفحات الويكي. اضغط Cancel لحذفه والبدء بكتاب فارغ.',
+	'coll-format-rl' => 'كتاب إلكتروني (PDF)',
+	'coll-format-epub' => 'كتاب إلكتروني (EPUB)',
+	'coll-format-zim' => 'كيويكس (OpenZIM)',
 	'coll-format-okawix_zeno' => 'أكاويكس',
 	'right-collectionsaveasuserpage' => 'احفظ الكتب كصفحة مستخدم',
 	'right-collectionsaveascommunitypage' => 'احفظ الكتب كصفحة مجتمع',
@@ -4293,6 +4296,7 @@ $messages['fa'] = array(
 );
 
 /** Finnish (suomi)
+ * @author Beluga
  * @author Cimon Avaro
  * @author Crt
  * @author Nike
@@ -4435,6 +4439,12 @@ Lista päivittyy aina kun napsautat lisää- tai poista-painikkeita.',
 	'coll-suggest_undo_tooltip' => 'Kumoa tämä toiminto',
 	'coll-suggest_undo' => 'kumoa',
 	'coll-load_local_book' => 'Napsauta OK jatkaaksesi kirjan %TITLE% (%NUMPAGES% sivua) työstämistä. Napsauta Peruuta poistaaksesi sen ja aloittaaksesi uuden kirjan.',
+	'coll-format-rl' => 'e-kirja (PDF)',
+	'coll-format-epub' => 'e-kirja (EPUB)',
+	'coll-format-odf' => 'tekstinkäsittelyohjelma (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Tallentaa kirjoja käyttäjäsivuna',
 	'right-collectionsaveascommunitypage' => 'Tallentaa kirjoja yhteisösivuina',
 );
@@ -4921,6 +4931,20 @@ $messages['fur'] = array(
 $messages['fy'] = array(
 	'coll-yes' => 'Ja',
 	'coll-cancel' => 'Ofbrekke',
+);
+
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'coll-print_template_prefix' => 'Priontáil',
+	'coll-format_label' => 'Formáid:',
+	'coll-show' => 'Taispeáin',
+	'coll-title' => 'Teideal:',
+	'coll-no' => 'Ní',
+	'coll-cancel' => 'Cealaigh',
+	'coll-suggest_reset_bans' => 'Athshocraigh',
+	'coll-suggest_show' => 'taispeáin',
 );
 
 /** Galician (galego)
@@ -7352,6 +7376,9 @@ $messages['ka'] = array(
 	'coll-load_local_book' => 'დააჭირეთ „OK“ თქვენი %NUMPAGES% გვერდების შემცვლელ %TITLE% წიგნთან მუშაობის გაგრძელებისთვის. დაააჭირეთ „გაუქმება“ ღილაკს რომ წაშალოთ იგი და დაიწყოთ ცარიელი წიგნი.',
 	'coll-format-rl' => 'ელ-წიგნი (PDF)',
 	'coll-format-epub' => 'ელ-წიგნი (EPUB)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'შეინახე წიგნი, როგორც მომხმარებლის გვერდი',
 	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
 );
@@ -7789,8 +7816,8 @@ $messages['ko'] = array(
 	'coll-remove' => '제거',
 	'coll-show' => '보이기',
 	'coll-move_to_top' => '맨 위로 이동',
-	'coll-move_up' => '위로 옮기기',
-	'coll-move_down' => '아래로 옮기기',
+	'coll-move_up' => '위로 이동',
+	'coll-move_down' => '아래로 이동',
 	'coll-move_to_bottom' => '맨 아래로 이동',
 	'coll-title' => '제목:',
 	'coll-subtitle' => '부제목:',
@@ -7825,7 +7852,7 @@ $messages['ko'] = array(
 	'coll-no' => '아니오',
 	'coll-load_overwrite_text' => '기존 책에 이미 다른 내용이 들어 있습니다. 기존 책을 지우고 새로 만들거나, 이어서 사용하거나, 또는 책 불러오기를 취소할 수 있습니다.',
 	'coll-overwrite' => '덮어쓰기',
-	'coll-append' => '더하기',
+	'coll-append' => '추가',
 	'coll-cancel' => '취소',
 	'coll-update' => '업데이트',
 	'coll-limit_exceeded_title' => '책이 너무 큽니다.',
@@ -9150,13 +9177,145 @@ Mungkin ia telah dipadam dan perlu dijanakan semula.',
 );
 
 /** Maltese (Malti)
+ * @author Chrisportelli
  * @author Roderick Mallia
  * @author පසිඳු කාවින්ද
  */
 $messages['mt'] = array(
+	'coll-desc' => '[[Special:Book|Toħloq il-kotba]]',
+	'coll-book_creator_intro' => "<big>Bil-'''kreatur tal-kotba''' inti tista' toħloq ktieb li jinkludi paġni wiki tal-għażla tiegħek. Tista' tesporta l-ktieb f'formati differenti (per eżempju PDF jew ODF) jew ordna kopja stampata.</big>",
+	'coll-manage_your_book' => 'Iġġestixxi l-ktieb tiegħek',
+	'coll-book_creator_help' => 'Ara l-[[{{MediaWiki:Coll-helppage}}|paġna tal-għajnuna dwar il-kotba]] għal aktar informazzjoni.',
+	'coll-start_book_creator' => 'Ibda l-kreatur tal-kotba',
+	'coll-book_creator_continue' => 'Kompli uża l-kreatur tal-kotba',
+	'coll-book_creator_disable_text' => "Il-''kreatur tal-kotba'' se jiġi diżattivat u l-ktieb li qed taħdem fuqu se jitneħħa.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Test tal-kreatur tal-kotba',
+	'coll-collection' => 'Ktieb',
+	'coll-collections' => 'Kotba',
+	'coll-exclusion_category_title' => 'Eskludi fl-ipprintjar',
+	'coll-print_template_prefix' => 'Ipprintja',
+	'coll-print_template_pattern' => '$1/Ipprintja',
+	'coll-unknown_subpage_title' => 'Sottopaġna mhux magħrufa',
+	'coll-unknown_subpage_text' => "Din is-sottopaġna ta' [[Special:Book|Ktieb]] ma teżistix",
+	'coll-couldnotaddarticle_title' => 'Il-paġna wiki ma setgħetx tiġi miżjuda',
+	'coll-couldnotaddarticle_msg' => 'Il-paġna wiki ma setgħetx tiġi miżjuda.',
+	'coll-couldnotremovearticle_title' => 'Il-paġna wiki ma setgħetx tiġi mħassra',
+	'coll-couldnotremovearticle_msg' => 'Il-paġna wiki ma setgħetx tiġi mħassra.',
+	'coll-noscript_text' => '<h1>Il-JavaScript huwa neċessarju!</h1>
+<strong>Il-browżer tiegħek ma jsostnix il-JavaScript jew il-JavaScript ġie mitfi. Il-paġna ma taħdimx korrettament sakemm il-JavaScript hija attivata.</strong>',
+	'coll-savedbook_template' => 'ktieb_salvat',
+	'coll-your_book' => 'Il-ktieb tiegħek',
+	'coll-download_title' => 'Niżżel',
+	'coll-download_text' => 'Sabiex tniżżel il-ktieb tiegħek agħżel format u klikkja fuq il-buttuna.',
+	'coll-download_as_text' => 'Sabiex tniżżel il-ktieb tiegħek fil-format $1 iklikkja fuq il-buttuna.',
+	'coll-download' => 'Niżżel',
+	'coll-format_label' => 'Format:',
+	'coll-remove' => 'Neħħi',
+	'coll-show' => 'Uri',
+	'coll-move_to_top' => 'Mexxi għall-bidu',
+	'coll-move_up' => "Mexxi 'l fuq",
+	'coll-move_down' => "Mexxi 'l isfel",
+	'coll-move_to_bottom' => 'Mexxi għat-tmiem',
+	'coll-title' => 'Titlu:',
+	'coll-subtitle' => 'Sottotitlu:',
+	'coll-contents' => 'Werrej',
+	'coll-drag_and_drop' => "Uża d-''drag and drop'' sabiex tordna l-paġni wiki u l-kapitli",
+	'coll-create_chapter' => 'Oħloq kapitlu',
+	'coll-sort_alphabetically' => "Irranġa f'ordni alfabetika",
+	'coll-rename' => 'Semmi mill-ġdid',
+	'coll-new_chapter' => 'Daħħal isem għall-kapitlu l-ġdid',
+	'coll-rename_chapter' => 'Daħħal isem ġdid għall-kapitlu',
+	'coll-no_such_category' => 'Din il-kategorija ma teżistix',
+	'coll-notitle_title' => 'It-titlu tal-paġna ma setax jiġi determinat.',
+	'coll-post_failed_title' => 'Ir-rikjesta POST falliet',
+	'coll-post_failed_msg' => "Ir-rikjesta POST f'$1 falliet ($2)",
+	'coll-mwserve_failed_title' => 'Żball fis-server tal-konverżjoni',
+	'coll-mwserve_failed_msg' => "Inqala' żball fis-server ta' konverżjoni: <nowiki>$1</nowiki>",
+	'coll-error_reponse' => 'Żball fir-risposta mis-server',
+	'coll-empty_collection' => 'Ktieb vojt',
+	'coll-revision' => 'Reviżjoni: $1',
+	'coll-save_collection_title' => 'Salva u aqsam il-ktieb tiegħek',
+	'coll-save_collection_text' => 'Agħżel post fejn iżżomm il-ktieb tiegħek:',
+	'coll-login_to_save' => 'Jekk tixtieq issalva l-ktieb għal użu iktar tard, jekk jogħġbok [[Special:UserLogin|idħol jew oħloq kont]].',
+	'coll-personal_collection_label' => 'Ktieb personali:',
+	'coll-community_collection_label' => 'Ktieb tal-komunità:',
+	'coll-save_collection' => 'Salva l-ktieb',
+	'coll-save_category' => 'Il-kotba kollha salvati ġew miżjuda fil-kategorija [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-overwrite_title' => 'Il-paġna teżisti diġà. Trid tikteb fuqha?',
+	'coll-overwrite_text' => 'Paġna bl-isem [[:$1]] diġà teżisti. Trid li tissostitwixxiha mal-ktieb tiegħek?',
 	'coll-yes' => 'Iva',
 	'coll-no' => 'Le',
+	'coll-load_overwrite_text' => "Il-ktieb diġà għandu xi paġni. Inti tixtieq li tikteb fuq il-ktieb attwali, iżżid il-kontenut il-ġdid, jew tħassar it-tlugħ ta' dan il-ktieb?",
+	'coll-overwrite' => 'Ikteb fuqu',
+	'coll-append' => 'Żid',
 	'coll-cancel' => 'Annulla',
+	'coll-update' => 'Aġġorna',
+	'coll-limit_exceeded_title' => 'Il-ktieb huwa wisq kbir',
+	'coll-limit_exceeded_text' => 'Il-ktieb huwa wisq kbir. Ma jistgħux jiżdiedu iktar paġni.',
+	'coll-rendering_title' => 'Konverżjoni',
+	'coll-rendering_text' => '<p><strong>Stenna waqt li d-dokument qiegħed jiġi ġġenerat.</strong></p>
+
+<p><strong>Progress:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Din il-paġna għandha taġġorna lilha nnifisha kull ftit sekondi.
+Jekk din ma taħdimx, agħfas il-buttuna biex taġġorna l-browżer.</p>',
+	'coll-rendering_status' => '<strong>Stat:</strong> $1',
+	'coll-rendering_article' => '(paġna wiki: $1)',
+	'coll-rendering_page' => '(paġna: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informazzjoni fuq il-konverżjoni tal-paġni',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informazzjoni fuq il-konverżjoni tal-ġabriet',
+	'coll-rendering_finished_title' => 'Il-konverżjoni ntemmet',
+	'coll-rendering_finished_text' => "<strong>Id-dokument ġie ġġenerat.</strong>
+<strong>[$1 Niżżel il-fajl]</strong> fuq il-kompjuter tiegħek.
+
+Noti:
+* Mintix sodisfatt bir-riżultat? Ara l-[[{{MediaWiki:Coll-helppage}}|għajnuna dwar il-kotba]] dwar kif tista' ttejbu.",
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informazzjoni fuq il-konverżjoni tal-paġni',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Informazzjoni fuq il-konverżjoni tal-ġabriet',
+	'coll-notfound_title' => 'Il-ktieb ma nstabx',
+	'coll-notfound_text' => 'Il-paġna tal-ktieb ma setgħetx tinstab.',
+	'coll-download_notfound_title' => 'Il-fajl ma nstabx',
+	'coll-download_notfound_text' => "Il-fajl li qiegħed tipprova tniżżel ma jeżistx; jista' jkun li ġie mħassar u għandu jerġa' jiġi ġġenerat.",
+	'coll-download_failed_title' => 'Żball fit-tniżżil tal-fajl',
+	'coll-download_failed_text' => 'Kien hemm żball matul it-tniżżil tal-fajl: $1',
+	'coll-is_cached' => "<ul><li>Verżjoni tad-dokument instabet fil-''cache'' u għalhekk il-konverżjoni ma kinitx neċessarja.
+<a href=\"\$1\">Erġa' kkonverti.</a></li></ul>",
+	'coll-excluded-templates' => '* Mudelli fil-kategorija [[:Category:$1|$1]] ġew esklużi.',
+	'coll-blacklisted-templates' => '* Mudelli fil-lista s-sewda [[:$1]] ġew esklużi.',
+	'coll-return_to_collection' => '<p>Irritorna lura lejn <a href="$1">$2</a></p>',
+	'coll-book_title' => 'Ordnah bħala ktieb stampat',
+	'coll-book_text' => "Ikseb ktieb stmapat mis-sieħeb tagħna ta' ''print-on-demand''.",
+	'coll-order_from_pp' => "Previżjoni b'$1",
+	'coll-about_pp' => 'Dwar $1',
+	'coll-invalid_podpartner_title' => 'Sieħeb POD invalidu',
+	'coll-invalid_podpartner_msg' => 'Is-sieħeb POD mogħti huwa invalidu. Ikkuntatja l-amministratur tal-MediaWiki tiegħek.',
+	'coll-license' => 'Liċenzja',
+	'coll-return_to' => "Erġa' lura lejn [[:$1]]",
+	'coll-order_info_article' => "{{MediaWiki:Coll-helppage}}/Informazzjoni fuq l-ordni ta' PediaPress",
+	'coll-suggest_title' => 'Paġni suġġeriti għall-ktieb tiegħek',
+	'coll-suggest_intro_text' => 'Is-suġġerimenti huma bbażati skont is-sett attwali ta\' paġni wiki li huma fil-ktieb tiegħek. Il-lista hija aġġornata kull darba li tagħfas il-buttuna "żid" jew "neħħi".',
+	'coll-suggested_articles' => 'Suġġerimenti',
+	'coll-suggest_reset_bans' => 'irrisettja',
+	'coll-suggest_reset_bans_tooltip' => 'Uri s-suġġerimenti mneħħija qabel',
+	'coll-suggest_add_selected' => 'Żid il-paġni magħżula',
+	'coll-suggest_ban_selected' => 'Neħħi l-paġni magħżula',
+	'coll-suggest_your_book' => 'Il-ktieb tiegħek',
+	'coll-suggest_show' => 'uri',
+	'coll-suggest_ban_tooltip' => "Neħħi din il-paġna mil-lista ta' suġġerimenti",
+	'coll-suggest_article_ban' => 'Il-paġna <strong>$1</strong> ġiet imneħħija mis-suġġerimenti ($2).',
+	'coll-suggest_article_add' => 'Il-paġna <strong>$1</strong> ġiet miżjuda fil-ktieb ($2).',
+	'coll-suggest_article_remove' => 'Il-paġna <strong>$1</strong> ġiet imneħħija mill-ktieb ($2).',
+	'coll-suggest_undo_tooltip' => "Reġġa' lura din l-azzjoni",
+	'coll-suggest_undo' => "reġġa' lura",
+	'coll-load_local_book' => 'Agħfas OK biex tkompli bil-ktieb tiegħek %TITLE% li jinkludi %NUMPAGES% paġni wiki. Agħfas Ħassar sabiex tħassru u tibda kollox mill-ġdid.',
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'proċessur tal-kliem (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
+	'right-collectionsaveasuserpage' => 'Isalva kotba fuq paġni tal-utent',
+	'right-collectionsaveascommunitypage' => 'Isalva kotba fuq paġni tal-komunità',
 );
 
 /** Erzya (эрзянь)
@@ -9594,7 +9753,7 @@ Deze pagina werkt niet correct tenzij u JavaScript inschakelt.</strong>',
 	'coll-save_category' => 'Alle opgeslagen boeken worden toegevoegd aan de categorie [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'De pagina bestaat al. Overschrijven?',
 	'coll-overwrite_text' => "Er bestaat al een pagina met de naam [[:$1]].
-Wil u die pagina vervangen door uw verzameling wikipagina's?",
+Wilt u die pagina vervangen door uw verzameling wikipagina's?",
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nee',
 	'coll-load_overwrite_text' => "U hebt al een aantal pagina's in uw boek.
@@ -9673,6 +9832,47 @@ De lijst wordt bijgewerkt als u op de knop 'toevoegen' of 'verwijderen' klikt.",
 	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Boeken opslaan als gebruikerspagina',
 	'right-collectionsaveascommunitypage' => 'Boeken opslaan als gemeenschapspagina',
+);
+
+/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'coll-book_creator_intro' => "<big>Met de ''Boekenmaker'' kan je een boek maken dat wikipagina's naar je eigen inzicht bevat.
+Je kunt het boek exporteren in verschillende bestandsformaten (bijvoorbeeld PDF of ODF) of een gedrukt exemplaar bestellen.</big>",
+	'coll-manage_your_book' => 'Je boek beheren',
+	'coll-book_creator_disable_text' => "De ''Boekenmaker'' wordt uitgeschakeld en het boek waar je aan werkt wordt verwijderd.",
+	'coll-noscript_text' => '<h1>JavaScript is vereist!</h1>
+<strong>Je browser ondersteunt geen JavaScript of JavaScript is uitgeschakeld.
+Deze pagina werkt niet correct tenzij je JavaScript inschakelt.</strong>',
+	'coll-your_book' => 'Jouw boek',
+	'coll-download_text' => 'Kies een bestandsformaat en klik op de knop om je boek te downloaden.',
+	'coll-download_as_text' => 'Klik op de knop om je boek te downloaden in het bestandsformaat $1.',
+	'coll-save_collection_title' => 'Je boek opslaan en delen',
+	'coll-login_to_save' => 'Als je boeken wilt opslaan voor later gebruik, [[Special:UserLogin|meldt je dan aan of maak een gebruiker aan]].',
+	'coll-overwrite_text' => "Er bestaat al een pagina met de naam [[:$1]].
+Wil je die pagina vervangen door je verzameling wikipagina's?",
+	'coll-load_overwrite_text' => "Je hebt al een aantal pagina's in je boek.
+Wil je je huidige boek overschrijven, de nieuwe pagina's toevoegen óf het laden van dit boek annuleren?",
+	'coll-limit_exceeded_text' => "Je boek is te groot.
+Je kunt geen pagina's meer toevoegen.",
+	'coll-rendering_text' => '<p><strong>Het document wordt aangemaakt.</strong></p>
+
+<p><strong>Voortgang:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Deze pagina wordt regelmatig bijgewerkt.
+Als dit niet werkt, klik dan op de knop "Vernieuwen" in je browser.</p>',
+	'coll-download_notfound_text' => 'Het bestand dat je probeert te downloaden bestaat niet.
+Het is mogelijk verwijderd en moet opnieuw aangemaakt worden.',
+	'coll-invalid_podpartner_msg' => 'De opgegeven print on demand-partner is ongeldig.
+Neem contact op met je MediaWiki-beheerder.',
+	'coll-suggest_title' => 'Paginasuggesties voor je boek',
+	'coll-suggest_intro_text' => "Suggesties zijn gebaseerd op de huidige selectie van wikipagina's in je boek.
+De lijst wordt bijgewerkt als je op de knop 'toevoegen' of 'verwijderen' klikt.",
+	'coll-suggest_your_book' => 'Jouw boek',
+	'coll-suggest_article_add' => 'De pagina <strong>$1</strong> is toegevoegd aan je boek ($2).',
+	'coll-suggest_article_remove' => 'De pagina <strong>$1</strong> is verwijderd uit je boek ($2).',
+	'coll-load_local_book' => 'Klik "OK" om door te gaan met je boek %TITLE% dat %NUMPAGES% wikipagina\'s bevat. Klik op "Annuleren" om het te verwijderen en opnieuw te beginnen met een leeg boek.',
 );
 
 /** Norwegian Nynorsk (‪norsk (nynorsk)‬)
@@ -11152,6 +11352,7 @@ Non ge puè sckaffà cchiù otre pàgene.",
  * @author Ahonc
  * @author Aleksandrit
  * @author Amikeco
+ * @author David1010
  * @author EugeneZelenko
  * @author Ferrer
  * @author Innv
@@ -11295,6 +11496,12 @@ $messages['ru'] = array(
 	'coll-suggest_undo_tooltip' => 'Отменить это действие',
 	'coll-suggest_undo' => 'отменить',
 	'coll-load_local_book' => 'Нажмите «ОК», чтобы продолжить работу с вашей книгой %TITLE%, содержащей %NUMPAGES% вики-страниц. Нажмите «Отмена», чтобы удалить её и начать с пустой книги.',
+	'coll-format-rl' => 'e книга (PDF)',
+	'coll-format-epub' => 'e книга (EPUB)',
+	'coll-format-odf' => 'текстовый процессор (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'сохранение книг как страниц участника',
 	'right-collectionsaveascommunitypage' => 'сохранение книг как страниц сообщества',
 );

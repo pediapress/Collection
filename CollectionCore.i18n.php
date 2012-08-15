@@ -1493,6 +1493,13 @@ $messages['frr'] = array(
 	'coll-suggest_empty' => 'leesag',
 );
 
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'coll-help' => 'Cuidiú',
+);
+
 /** Scottish Gaelic (Gàidhlig)
  * @author Akerbeltz
  */
@@ -2892,10 +2899,43 @@ $messages['ms'] = array(
 );
 
 /** Maltese (Malti)
+ * @author Chrisportelli
  * @author පසිඳු කාවින්ද
  */
 $messages['mt'] = array(
+	'coll-print_export' => 'Ipprintja/esporta',
+	'coll-create_a_book' => 'Oħloq ktieb',
+	'coll-create_a_book_tooltip' => "Oħloq ktieb jew ġabra ta' artikli",
+	'coll-book_creator' => 'Kreatur tal-kotba',
+	'coll-download_as' => 'Niżżel bħal $1',
+	'coll-download_as_tooltip' => "Niżżel verżjoni $1 ta' din il-paġna wiki",
+	'coll-disable' => 'iddiżattiva',
+	'coll-book_creator_disable' => 'Iddiżattiva l-kreatur tal-kotba',
+	'coll-book_creator_disable_tooltip' => 'Ieqaf uża l-kreatur tal-kotba',
+	'coll-add_linked_article' => 'Żid il-paġna marbuta mal-ktieb tiegħek',
+	'coll-remove_linked_article' => 'Neħħi l-paġni wiki marbuta mill-ktieb tiegħek',
+	'coll-add_category' => 'Żid din il-kategorija mal-ktieb tiegħek',
+	'coll-add_category_tooltip' => "Żid il-paġni wiki kollha f'din il-kategorija mal-ktieb tiegħek",
+	'coll-add_this_page' => 'Żid din il-paġna mal-ktieb tiegħek',
+	'coll-add_page_tooltip' => 'Żid din il-paġna wiki attwali mal-ktieb tiegħek',
+	'coll-bookscategory' => 'Kotba',
+	'coll-clear_collection' => 'Żvojta l-ktieb',
+	'coll-clear_collection_confirm' => 'Inti ċert li tixtieq tiżvojta l-ktieb kollu?',
+	'coll-clear_collection_tooltip' => 'Neħħi l-paġni wiki mill-ktieb attwali tiegħek',
 	'coll-help' => 'Għajnuna',
+	'coll-help_tooltip' => 'Uri l-għajnuna fuq kif toħloq il-kotba',
+	'coll-helppage' => 'Help:Kotba',
+	'coll-load_collection' => "Tella' ktieb",
+	'coll-load_collection_tooltip' => "Tella' dan il-ktieb bħala l-ktieb attwali tiegħek",
+	'coll-n_pages' => '{{PLURAL:$1|paġna|$1 paġni}}',
+	'coll-printable_version_pdf' => 'Verżjoni PDF',
+	'coll-remove_this_page' => 'Neħħi din il-paġna mill-ktieb tiegħek',
+	'coll-remove_page_tooltip' => 'Neħħi l-paġna wiki attwali mill-ktieb tiegħek',
+	'coll-show_collection' => 'Uri l-ktieb',
+	'coll-show_collection_tooltip' => 'Iklikkja sabiex timmodifika, tniżżel jew tordna l-ktieb tiegħek',
+	'coll-not_addable' => 'Dan il-paġna ma tistax tiġi miżjuda',
+	'coll-make_suggestions' => 'Issuġġerixxi xi paġni',
+	'coll-make_suggestions_tooltip' => 'Uri suġġerimenti bbażati skont il-paġni fil-ktieb tiegħek',
 	'coll-suggest_empty' => 'vojta',
 );
 
@@ -3060,6 +3100,25 @@ $messages['nl'] = array(
 	'coll-make_suggestions' => "Pagina's suggereren",
 	'coll-make_suggestions_tooltip' => "Suggesties weergeven op basis van de pagina's in uw boek",
 	'coll-suggest_empty' => 'leegmaken',
+);
+
+/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'coll-add_linked_article' => 'De gekoppelde wikipagina aan je boek toevoegen',
+	'coll-remove_linked_article' => 'De gekoppelde wikipagina uit je boek verwijderen',
+	'coll-add_category' => 'Deze categorie aan je boek toevoegen',
+	'coll-add_category_tooltip' => "Alle pagina's in deze categorie aan je boek toevoegen",
+	'coll-add_this_page' => 'Deze pagina aan je boek toevoegen',
+	'coll-add_page_tooltip' => 'De huidige wikipagina aan je boek toevoegen',
+	'coll-clear_collection_confirm' => 'Wil je je boek echt leegmaken?',
+	'coll-clear_collection_tooltip' => "Alle pagina's uit je huidige boek verwijderen",
+	'coll-load_collection_tooltip' => 'Dit boek als je huidige boek laden',
+	'coll-remove_this_page' => 'Deze pagina uit je boek verwijderen',
+	'coll-remove_page_tooltip' => 'De huidige wikipagina uit je boek verwijderen',
+	'coll-show_collection_tooltip' => 'Klik om je boek te bewerken/downloaden/bestellen',
+	'coll-make_suggestions_tooltip' => "Suggesties weergeven op basis van de pagina's in je boek",
 );
 
 /** Norwegian Nynorsk (‪norsk (nynorsk)‬)
