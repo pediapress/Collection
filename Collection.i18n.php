@@ -7137,22 +7137,36 @@ $messages['ja'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author NoiX180
  * @author Pras
  */
 $messages['jv'] = array(
 	'coll-desc' => '[[Special:Book|Gawé buku]]',
+	'coll-manage_your_book' => 'Tata buku Sampéyan',
+	'coll-book_creator_help' => 'Delok [[{{MediaWiki:Coll-helppage}}|kaca pitulung bab buku]] kanggo informasi luwih.',
+	'coll-start_book_creator' => 'Lekasi panyipta buku',
+	'coll-book_creator_continue' => 'Banjuraké nganggo panyipta buku',
+	'coll-book_creator_disable_text' => "''Panyipta Buku'' arep ditutup lan buku sing Sampéyan garap bakal dibusak.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Tèks panyipta buku',
 	'coll-collection' => 'Buku',
 	'coll-collections' => 'Buku',
 	'coll-exclusion_category_title' => 'Ora mèlu dicithak',
 	'coll-print_template_prefix' => 'Cithak',
+	'coll-print_template_pattern' => '$1/Cithak',
 	'coll-unknown_subpage_title' => 'Anak-kaca sing ora dikenal',
 	'coll-unknown_subpage_text' => 'Anak-kaca saka [[Special:Book|Buku]] iki ora ana',
+	'coll-couldnotaddarticle_title' => 'Ora bisa nambah kaca wiki',
+	'coll-couldnotaddarticle_msg' => 'Kaca wiki ora bisa ditambahaké.',
+	'coll-couldnotremovearticle_title' => 'Ora bisa mbusak kaca wiki',
+	'coll-couldnotremovearticle_msg' => 'Kaca wiki ora bisa dibusak.',
 	'coll-noscript_text' => '<h1>JavaScript diperlokaké!</h1>
 <strong>Browser panjenengan ora ndhukung JavaScript utawa JavaScript wis dipatèni.
 Kaca iki ora bakal tampil kanthi bener, kajaba JavaScript di aktifaké.</strong>',
+	'coll-savedbook_template' => 'buku_kasimpen',
 	'coll-your_book' => 'Buku panjenengan',
 	'coll-download_title' => 'Undhuh',
 	'coll-download_text' => 'Kanggo ngundhuh buku panjenengan piliha sawijining format lan klik tombolé.',
+	'coll-download_as_text' => 'Kanggo ngundhuh buku Sampéyan nèng format $1 klik tombolé.',
 	'coll-download' => 'Undhuh',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Ilangana',
@@ -7210,27 +7224,62 @@ Yèn ora mangkono, mangga pencèt tombol ''refresh'' ing ''browser'' panjenengan
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(kaca wiki: $1)',
 	'coll-rendering_page' => '(kaca: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Ngganti tèks info kaca',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Ngganti tèks info kolèksi',
 	'coll-rendering_finished_title' => 'Rampung ngowahi/gawé',
 	'coll-rendering_finished_text' => "<strong>Berkas dokumèn wis digawé.</strong>
 <strong>[$1 Undhuh berkas]</strong> menyang komputer panjenengan.
 
 Cathetan:
 * Kurang rena karo wetonan (''output'')é? Pirsani [[{{MediaWiki:Coll-helppage}}|kaca pitulung bab kolèksi]] kanggo kamungkinan ningkataké.",
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Ngganti tèks info kaca',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Ngganti tèks info kolèksi',
 	'coll-notfound_title' => 'Buku ora ketemu',
 	'coll-notfound_text' => 'Ora bisa nemokaké kaca buku.',
+	'coll-download_notfound_title' => 'Berkas ora ditemokaké',
+	'coll-download_notfound_text' => 'Berkas sing arep Sampéyan undhuh ora ana:
+Mungkin wis dibusak lan butuh digawé manèh.',
+	'coll-download_failed_title' => 'Kasalahan nalika ngundhuh',
+	'coll-download_failed_text' => 'Ana kasalahan nalika ngundhuh berkas: $1',
 	'coll-is_cached' => "<ul><li>Dokumèn vèrsi ''cache'' wis ditemokaké, mula ora perlu ana pangowahan (''rendering''). <a href=\"\$1\">Peksa ''re-rendering''.</a></li></ul>",
 	'coll-excluded-templates' => '* Cithakan-cithakan ing kategori [[:Category:$1|$1]] wis di wetokaké.',
 	'coll-blacklisted-templates' => '* Cithakan-cithakan ing dhaptar-ireng [[:$1]] wis diwetokaké.',
 	'coll-return_to_collection' => '<p>Bali menyang <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Urut kaya buku cithakan',
 	'coll-book_text' => "Jupuken buku cithakan saka partner ''print-on-demand'' kita:",
-	'coll-order_from_pp' => 'Pesen buku saka $1',
+	'coll-order_from_pp' => 'Pratayang nganggo $1',
 	'coll-about_pp' => 'Perkara $1',
 	'coll-invalid_podpartner_title' => 'Partner POD ora sah',
 	'coll-invalid_podpartner_msg' => 'Partner POD sing disadiyakaké ora sah.
 Mangga hubungi pangurus MediaWiki panjenengan.',
 	'coll-license' => 'Lisènsi',
 	'coll-return_to' => 'Bali menyang [[:$1]]',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/Informasi pamesenan PediaPress',
+	'coll-suggest_title' => 'Kaca disaranaké kanggo buku Sampéyan',
+	'coll-suggest_intro_text' => 'Saran kuwi adhasar saka seprangkat kaca wiki sing saiki nèng buku Sampéyan.
+Daptar dianyari kapan waè Sampéyan ngeklik tombol tambah utawa busak.',
+	'coll-suggested_articles' => 'Saran',
+	'coll-suggest_reset_bans' => 'balèni setèl',
+	'coll-suggest_reset_bans_tooltip' => 'Tuduhaké saran sing dibusak sakdurungé',
+	'coll-suggest_add_selected' => 'Tambah kaca kapilih',
+	'coll-suggest_ban_selected' => 'Busak kaca kapilih',
+	'coll-suggest_your_book' => 'Buku Sampéyan',
+	'coll-suggest_show' => 'tuduhaké',
+	'coll-suggest_ban_tooltip' => 'Busak kaca iki saka daptar saran',
+	'coll-suggest_article_ban' => 'Kaca <strong>$1</strong> wis dibusak saka saran ($2).',
+	'coll-suggest_article_add' => 'Kaca <strong>$1</strong> wis ditambahaké nèng buku Sampéyan ($2).',
+	'coll-suggest_article_remove' => 'Kaca <strong>$1</strong> wis dibusak saka buku Sampéyan ($2).',
+	'coll-suggest_undo_tooltip' => 'Batalaké laku iki',
+	'coll-suggest_undo' => 'batalaké',
+	'coll-load_local_book' => 'Klik Oké kanggo mbanjuraké buku Sampéyan %TITLE% sing kaisi %NUMPAGES% kaca wiki. Klik batal kanggo mbusak lan mulai nganggo buku kosong.',
+	'coll-format-rl' => 'buku-é (PDF)',
+	'coll-format-epub' => 'buku-é (EPUB)',
+	'coll-format-odf' => 'pemrosès tembung (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
+	'right-collectionsaveasuserpage' => 'Simpen buku minangka kaca panganggo',
+	'right-collectionsaveascommunitypage' => 'Simpen buku minangka kaca komunitas',
 );
 
 /** Georgian (ქართული)
@@ -14180,9 +14229,26 @@ $messages['uk'] = array(
 	'right-collectionsaveascommunitypage' => 'Збереження книг як сторінок спільноти',
 );
 
-/** Urdu (اردو) */
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
 $messages['ur'] = array(
+	'coll-collection' => 'کتاب',
+	'coll-print_template_prefix' => 'پرنٹ کریں',
+	'coll-download' => 'ڈاؤن لوڈ ، اتارنا',
+	'coll-format_label' => 'فارمیٹ:',
+	'coll-remove' => 'حذف کریں',
+	'coll-show' => 'شو',
+	'coll-title' => 'عنوان:',
+	'coll-subtitle' => 'ذیلی ٹائٹل:',
+	'coll-rename' => 'نیا نام دیں',
+	'coll-empty_collection' => 'خالی کتاب',
+	'coll-yes' => 'جی ہاں',
+	'coll-no' => 'نہیں',
 	'coll-cancel' => 'منسوخ',
+	'coll-update' => 'اپ ڈیٹ',
+	'coll-suggest_reset_bans' => 'دوبارہ مرتب کریں',
+	'coll-suggest_show' => 'شو',
 );
 
 /** vèneto (vèneto)

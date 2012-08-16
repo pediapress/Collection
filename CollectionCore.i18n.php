@@ -2215,19 +2215,44 @@ $messages['ja'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author NoiX180
  * @author Pras
  */
 $messages['jv'] = array(
+	'coll-print_export' => 'Cithak/èkspor',
 	'coll-create_a_book' => 'Gawé buku',
+	'coll-create_a_book_tooltip' => 'Gawé buku utawa kolèksi kaca',
+	'coll-book_creator' => 'Panyipta buku',
 	'coll-download_as' => 'Undhuh minangka $1',
+	'coll-download_as_tooltip' => 'Undhuh vèrsi $1 kaca wiki iki',
+	'coll-disable' => 'tutup',
+	'coll-book_creator_disable' => 'Tutup panyipta buku',
+	'coll-book_creator_disable_tooltip' => 'Mandeg nganggo panyipta buku',
+	'coll-add_linked_article' => 'Tambah kaca wiki kahubung nèng buku Sampéyan',
+	'coll-remove_linked_article' => 'Busak kaca wiki kahubung saka buku Sampéyan',
 	'coll-add_category' => 'Tambahna kategori iki menyang buku panjenengan',
+	'coll-add_category_tooltip' => 'Tambah kabèh kaca wiki nèng katègori iki nèng buku Sampéyan',
+	'coll-add_this_page' => 'Tambah kaca iki nèng buku Sampéyan',
+	'coll-add_page_tooltip' => 'Tambah kaca wiki saiki nèng buku Sampéyan',
+	'coll-bookscategory' => 'Buku',
 	'coll-clear_collection' => 'Busak buku',
 	'coll-clear_collection_confirm' => 'Apa panjenengan pancèn arep mbusak buku panjenengan sakabèhané?',
+	'coll-clear_collection_tooltip' => 'Busak kabèh kaca wiki saka buku Sampéyan saiki',
+	'coll-help' => 'Pitulung',
+	'coll-help_tooltip' => 'Tuduhaké pitulung ngenani panggawéan buku',
 	'coll-helppage' => 'Help:Buku',
 	'coll-load_collection' => 'Unggahna buku',
+	'coll-load_collection_tooltip' => 'Emot buku iki minangka buku Sampéyan saiki',
 	'coll-n_pages' => '$1 {{PLURAL:$1|kaca|kaca}}',
 	'coll-printable_version_pdf' => 'Vèrsi PDF',
+	'coll-remove_this_page' => 'Busak kaca iki saka buku Sampéyan',
+	'coll-remove_page_tooltip' => 'Busak kaca wiki saiki saka buku Sampéyan',
 	'coll-show_collection' => 'Tuduhna buku',
+	'coll-show_collection_tooltip' => 'Klik kanggo nyunting/ngundhuh/mesen buku Sampéyan',
+	'coll-not_addable' => 'Kaca iki ora bisa ditambahaké',
+	'coll-make_suggestions' => 'Saranaké kaca',
+	'coll-make_suggestions_tooltip' => 'Tuduhaké saran adhasar saka kaca nèng buku Sampéyan',
+	'coll-suggest_empty' => 'kosong',
 );
 
 /** Georgian (ქართული)
@@ -4504,6 +4529,14 @@ $messages['uk'] = array(
 	'coll-make_suggestions' => 'Запропонувати сторінки',
 	'coll-make_suggestions_tooltip' => 'Показати пропозиції, засновані на сторінках у вашій книзі',
 	'coll-suggest_empty' => 'порожня',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'coll-help' => 'مدد',
+	'coll-suggest_empty' => 'خالی',
 );
 
 /** vèneto (vèneto)
