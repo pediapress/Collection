@@ -10630,6 +10630,12 @@ La lista a l'é modificà minca vira ch'a sgnaca an sij boton për gionté o gav
 	'coll-suggest_undo_tooltip' => "Anula st'assion-sì",
 	'coll-suggest_undo' => "buta 'me ch'a l'era",
 	'coll-load_local_book' => "Sgnaca Va bin për continué con tò lìber %TITLE% ch'a conten %NUMPAGES% pàgine wiki. Sgnaca Scancelé për scancelelo e parte con un lìber veuid.",
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'word processor (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => "Salvé dij lìber ansima a dle pàgine d'utent",
 	'right-collectionsaveascommunitypage' => 'Salvé dij lìber com dle pàgine dla comunità',
 );
@@ -14249,6 +14255,7 @@ $messages['ur'] = array(
 	'coll-update' => 'اپ ڈیٹ',
 	'coll-suggest_reset_bans' => 'دوبارہ مرتب کریں',
 	'coll-suggest_show' => 'شو',
+	'right-collectionsaveascommunitypage' => 'کمیونٹی کے صفحہ کے طور پر کتابیں محفوظ کریں',
 );
 
 /** vèneto (vèneto)
