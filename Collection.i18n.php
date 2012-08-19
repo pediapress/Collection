@@ -2150,6 +2150,9 @@ Hizivaet e vez ar roll bep tro ma klikit war ar bouton ouzhpennañ pe tennañ.",
 	'coll-suggest_undo_tooltip' => 'Dizober an ober-mañ',
 	'coll-suggest_undo' => 'dizober',
 	'coll-load_local_book' => "Klikit war Mat eo evit kenderc'hel ho levr %TITLE% hag en deus %NUMPAGES% pajenn wiki. Klikit war Nullañ evit dilemel ha kregiñ gant ul levr goullo.",
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Enrollañ levrioù evel pajenn implijer',
 	'right-collectionsaveascommunitypage' => 'Enrollañ levrioù evel ur bajenn eus ar gumuniezh',
 );
@@ -2453,6 +2456,32 @@ $messages['ce'] = array(
 	'coll-no_such_category' => 'Ишта кадегар яц',
 	'coll-yes' => 'Хlаъ',
 	'coll-rendering_article' => '(яззам: $1)',
+);
+
+/** Sorani Kurdish (کوردی)
+ * @author Muhammed taha
+ */
+$messages['ckb'] = array(
+	'coll-collections' => 'کتێبەکان',
+	'coll-print_template_prefix' => 'چاپ',
+	'coll-download_title' => 'داگرتن',
+	'coll-download' => 'دایبگرە',
+	'coll-format_label' => 'داڕشتن:',
+	'coll-remove' => 'لابردن',
+	'coll-show' => 'نیشانیبدە',
+	'coll-title' => 'ناونیشان:',
+	'coll-contents' => 'پێرست',
+	'coll-sort_alphabetically' => 'ڕیزکردن بە پێی ئەلفوبێ',
+	'coll-error_reponse' => 'وه‌ڵامێک له‌ ڕاژه‌کار نه‌هاته‌وه‌',
+	'coll-revision' => 'پێداچوونەوەی $1',
+	'coll-personal_collection_label' => 'کتێبی تاکەکەسی:',
+	'coll-yes' => 'بەڵێ',
+	'coll-no' => 'نا',
+	'coll-cancel' => 'هەڵوەشاندنەوە',
+	'coll-update' => 'نوێکردنەوە',
+	'coll-download_notfound_title' => 'په‌ڕگه‌که‌ نه‌دۆزرایه‌وه‌.',
+	'coll-license' => 'مۆڵەت',
+	'coll-suggest_reset_bans' => 'دووبارە ڕێکخستنەوە',
 );
 
 /** Czech (česky)
@@ -8620,6 +8649,15 @@ Pārrakstīt?',
 	'coll-suggest_add_selected' => 'Pievienot izvēlētās lapas',
 	'coll-suggest_ban_selected' => 'Izņemt izvēlētās lapas',
 	'coll-suggest_your_book' => 'Tava grāmata',
+	'coll-suggest_undo_tooltip' => 'Atcelt šo darbību',
+	'coll-suggest_undo' => 'atcelt',
+	'coll-format-rl' => 'e-grāmata (PDF)',
+	'coll-format-epub' => 'e-grāmata (EPUB)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
+	'right-collectionsaveasuserpage' => 'Saglabāt grāmatas kā lietotāja lapu',
+	'right-collectionsaveascommunitypage' => 'Saglabāt grāmatas kā kopienas lapu',
 );
 
 /** Eastern Mari (олык марий)
@@ -14572,6 +14610,12 @@ Danh sách này được cập nhật mỗi khi bạn nhấn vào nút thêm ho�
 	'coll-suggest_undo_tooltip' => 'Phục hồi tác vụ này',
 	'coll-suggest_undo' => 'hoàn tác',
 	'coll-load_local_book' => 'Nhấn OK để tiếp tục quyển sách %TITLE% hiện có %NUMPAGES% trang wiki. Nhấn Cancel để xóa và làm việc với quyển sách trắng.',
+	'coll-format-rl' => 'sách điện tử (PDF)',
+	'coll-format-epub' => 'sách điện tử (EPUB)',
+	'coll-format-odf' => 'trình soạn (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Lưu sách vở thành trang cá nhân',
 	'right-collectionsaveascommunitypage' => 'Lưu sách thành trang cộng đồng',
 );

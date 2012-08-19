@@ -793,6 +793,14 @@ $messages['ce'] = array(
 	'coll-help' => 'Нисвохаам',
 );
 
+/** Sorani Kurdish (کوردی)
+ * @author Muhammed taha
+ */
+$messages['ckb'] = array(
+	'coll-bookscategory' => 'کتێبەکان',
+	'coll-help' => 'یارمەتی',
+);
+
 /** Czech (česky)
  * @author Danny B.
  * @author Matěj Grabovský
