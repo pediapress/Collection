@@ -9494,6 +9494,7 @@ $messages['nah'] = array(
 
 /** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Boivie
+ * @author Danmichaelo
  * @author Event
  * @author H92
  * @author Harald Khan
@@ -9631,6 +9632,12 @@ Listen oppdateres når du klikker på legg til- eller fjern-knappene.',
 	'coll-suggest_undo_tooltip' => 'Angre denne handligen',
 	'coll-suggest_undo' => 'Angre',
 	'coll-load_local_book' => 'Klikk OK for å fortsette med boken din %TITLE% som inneholder %NUMPAGES% wikisider. Klikk Avbryt for å slette den og starte med en tom bok.',
+	'coll-format-rl' => 'e-bok (PDF)',
+	'coll-format-epub' => 'e-bok (EPUB)',
+	'coll-format-odf' => 'tekstbehandler (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Lagre bøker som brukersider',
 	'right-collectionsaveascommunitypage' => 'Lagre bøker som samfunnsside',
 );
