@@ -10676,7 +10676,7 @@ La lista a l'é modificà minca vira ch'a sgnaca an sij boton për gionté o gav
 	'coll-load_local_book' => "Sgnaca Va bin për continué con tò lìber %TITLE% ch'a conten %NUMPAGES% pàgine wiki. Sgnaca Scancelé për scancelelo e parte con un lìber veuid.",
 	'coll-format-rl' => 'e-book (PDF)',
 	'coll-format-epub' => 'e-book (EPUB)',
-	'coll-format-odf' => 'word processor (OpenDocument)',
+	'coll-format-odf' => 'tratament ëd test (OpenDocument)',
 	'coll-format-zim' => 'Kiwix (OpenZIM)',
 	'coll-format-docbook' => 'DocBook',
 	'coll-format-okawix_zeno' => 'Okawix',
