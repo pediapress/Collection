@@ -2127,6 +2127,8 @@ $messages['is'] = array(
 	'coll-show_collection' => 'Sýna bók',
 	'coll-show_collection_tooltip' => 'Smelltu til þess að breyta/hlaða inn/panta bókina þína',
 	'coll-not_addable' => 'Mistókst að bæta þessari síðu við',
+	'coll-make_suggestions' => 'Síðu uppástungur',
+	'coll-make_suggestions_tooltip' => 'Sýna uppástungur byggðar á síðunum í bókinni þinni',
 	'coll-suggest_empty' => 'tóm',
 );
 
