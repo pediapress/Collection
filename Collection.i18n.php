@@ -2624,6 +2624,7 @@ Seznam se aktualizuje při každém kliknutím na tlačítka přidat a odebrat.'
 	'coll-load_local_book' => 'Pokračovat v tvorbě knihy %TITLE%, která obsahuje %NUMPAGES% stran wiki, můžete kliknutím na OK. Kliknutím na Storno ji smažete a začnete s prázdnou knihou.',
 	'coll-format-rl' => 'e-kniha (PDF)',
 	'coll-format-epub' => 'e-kniha (EPUB)',
+	'coll-format-odf' => 'textový editor (OpenDocument)',
 	'coll-format-zim' => 'Kiwix (OpenZIM)',
 	'coll-format-docbook' => 'DocBook',
 	'coll-format-okawix_zeno' => 'Okawix',
