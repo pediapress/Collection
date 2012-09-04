@@ -164,16 +164,16 @@ $(function() {
 	setInterval(check_popup_hide, 300);
 	createDiv();
 	var prefix = wgArticlePath.replace(/\$1/, '');
-	$('#bodyContent '
-		+ 'a[href^=' + prefix + ']' // URL starts with prefix of wgArticlePath
-		+ ':not(a[href~="index.php"])' // URL doesn't contain index.php (simplification!)
-		+ '[title!=]' // title attribute is not empty
-		+ '[rel!=nofollow]'
-		+ ':not(.external)'
-		+ ':not(.internal)'
-		+ ':not(.sortheader)'
-		+ ':not([accesskey])'
-		+ ':not(.nopopup)'
+	$("#bodyContent "
+		+ "a[href^='" + prefix + "']" // URL starts with prefix of wgArticlePath
+		+ ":not(a[href~='index.php'])" // URL doesn't contain index.php (simplification!)
+		+ "[title!=]" // title attribute is not empty
+		+ "[rel!=nofollow]"
+		+ ":not(.external)"
+		+ ":not(.internal)"
+		+ ":not(.sortheader)"
+		+ ":not([accesskey])"
+		+ ":not(.nopopup)"
 	).each(function(i, link) {
 		if (this.onmousedown) {
 			return;
