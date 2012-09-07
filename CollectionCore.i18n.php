@@ -988,6 +988,7 @@ $messages['de-formal'] = array(
 
 /** Zazaki (Zazaki)
  * @author Erdemaslancan
+ * @author Mirzali
  * @author Xoser
  */
 $messages['diq'] = array(
@@ -1022,7 +1023,7 @@ $messages['diq'] = array(
 	'coll-show_collection' => 'Kitab bimucne',
 	'coll-show_collection_tooltip' => 'Klik bike ke kitabê xo bivurne/bar bike/sipariş bike',
 	'coll-not_addable' => 'Ena pel nişkeno de biyo',
-	'coll-make_suggestions' => 'Pela pêşniyaz ke',
+	'coll-make_suggestions' => 'Pelan bıweşene',
 	'coll-make_suggestions_tooltip' => 'Ser pelan ke zerre kitabê tu de înan ra tevsiye bike',
 	'coll-suggest_empty' => 'veng',
 );
