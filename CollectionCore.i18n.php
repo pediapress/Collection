@@ -4405,6 +4405,7 @@ $messages['tly'] = array(
 	'coll-bookscategory' => 'Китобон',
 	'coll-help' => 'Арајиш',
 	'coll-n_pages' => '$1 {{PLURAL:$1|бајт|бајтон}}',
+	'coll-suggest_empty' => 'тәј',
 );
 
 /** Turkish (Türkçe)

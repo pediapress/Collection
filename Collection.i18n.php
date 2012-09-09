@@ -3211,7 +3211,7 @@ Ti wazeno ey kitab pê kitabê xo rê bivurne?',
 	'coll-load_overwrite_text' => 'Kitabê xo de zatî pelan esto. 
 Ti wazeno ser kitabê xo de binuse, kontendê newe ya zi bar kerdişê kitabî îptal bike?',
 	'coll-overwrite' => 'Sero binuş',
-	'coll-append' => 'Penî ra de biker',
+	'coll-append' => 'Deke',
 	'coll-cancel' => 'Bıtexelne',
 	'coll-update' => 'Noroc resn',
 	'coll-limit_exceeded_title' => 'Kitab zaf gird o.',
@@ -13957,13 +13957,17 @@ $messages['tly'] = array(
 	'coll-print_template_prefix' => 'Чап',
 	'coll-download_title' => '',
 	'coll-download' => 'Бо жәј',
+	'coll-format_label' => 'Формат:',
 	'coll-remove' => 'Рәдд кардеј',
 	'coll-show' => 'Нишо дој',
+	'coll-title' => 'Сәрловһә:',
+	'coll-contents' => 'Мәзмунон.',
 	'coll-yes' => 'Бәле',
 	'coll-no' => 'Не',
 	'coll-cancel' => 'Ләғв кардеј',
 	'coll-update' => 'Нуә кардә быә',
 	'coll-about_pp' => 'Чәмә $1',
+	'coll-license' => 'Лисензијә',
 );
 
 /** Turkish (Türkçe)
