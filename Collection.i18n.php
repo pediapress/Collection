@@ -3207,7 +3207,7 @@ Sero binusi?',
 	'coll-overwrite_text' => 'Yew pel ser nameyê [[:$1]]î zatî esto.
 Ti wazeno ey kitab pê kitabê xo rê bivurne?',
 	'coll-yes' => 'E',
-	'coll-no' => 'Ne',
+	'coll-no' => 'Nê',
 	'coll-load_overwrite_text' => 'Kitabê xo de zatî pelan esto. 
 Ti wazeno ser kitabê xo de binuse, kontendê newe ya zi bar kerdişê kitabî îptal bike?',
 	'coll-overwrite' => 'Sero binuş',
