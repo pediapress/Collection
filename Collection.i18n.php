@@ -5743,6 +5743,7 @@ $messages['hil'] = array(
 /** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Ex13
+ * @author Roberta F.
  * @author SpeedyGonsales
  */
 $messages['hr'] = array(
@@ -5793,9 +5794,9 @@ $messages['hr'] = array(
 	'coll-notitle_title' => 'Naslov stranice nije mogao biti određen',
 	'coll-post_failed_title' => 'POST zahtjev je neuspješan',
 	'coll-post_failed_msg' => 'POST zahtjev za $1 je neuspješan ($2).',
-	'coll-mwserve_failed_title' => 'Greška na serveru za izvođenje zahtjeva',
-	'coll-mwserve_failed_msg' => 'Dogodila se greška na serveru za izvođenje zahtijeva: <nowiki>$1</nowiki>',
-	'coll-error_reponse' => 'Greška u odgovoru sa servera',
+	'coll-mwserve_failed_title' => 'Pogrješka na serveru za izvođenje zahtjeva',
+	'coll-mwserve_failed_msg' => 'Dogodila se pogrješka na serveru za izvođenje zahtjeva: <nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'Pogrješka u odgovoru sa servera',
 	'coll-empty_collection' => 'Prazna zbirka',
 	'coll-revision' => 'Izmjena: $1',
 	'coll-save_collection_title' => 'Spremi i dijeli svoju zbirku',
@@ -7905,9 +7906,9 @@ $messages['ko'] = array(
 	'coll-unknown_subpage_title' => '알 수 없는 하위 문서',
 	'coll-unknown_subpage_text' => '[[Special:Book|책]]의 이 하위 문서가 없습니다.',
 	'coll-couldnotaddarticle_title' => '문서 추가 실패',
-	'coll-couldnotaddarticle_msg' => '이 위키 문서를 추가하지 못했습니다.',
+	'coll-couldnotaddarticle_msg' => '이 위키 문서를 추가할 수 없습니다.',
 	'coll-couldnotremovearticle_title' => '문서 제거 실패',
-	'coll-couldnotremovearticle_msg' => '해당 문서를 제거하지 못했습니다.',
+	'coll-couldnotremovearticle_msg' => '해당 문서를 제거할 수 없습니다.',
 	'coll-noscript_text' => '<h1>자바스크립트가 필요합니다!</h1>
 <strong>당신의 브라우저는 자바스크립트를 지원하지 않거나 비활성화되어 있습니다.
 자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
@@ -7984,7 +7985,7 @@ $messages['ko'] = array(
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/책 만들기',
 	'coll-notfound_title' => '책을 찾을 수 없음',
 	'coll-notfound_text' => '해당 페이지를 찾을 수 없습니다.',
-	'coll-download_notfound_title' => '파일을 찾을 수 없습니다.',
+	'coll-download_notfound_title' => '파일을 찾을 수 없습니다',
 	'coll-download_notfound_text' => '다운로드 받을 파일이 없습니다: 파일을 지웠을 가능성이 있으며, 다시 만들 필요가 있습니다.',
 	'coll-download_failed_title' => '다운로드 중 오류',
 	'coll-download_failed_text' => '파일을 다운로드하는 중 오류가 있었습니다: $1',
@@ -13962,12 +13963,16 @@ $messages['tly'] = array(
 	'coll-show' => 'Нишо дој',
 	'coll-title' => 'Сәрловһә:',
 	'coll-contents' => 'Мәзмунон.',
+	'coll-rename' => 'Номи дәгиш кардеј',
 	'coll-yes' => 'Бәле',
 	'coll-no' => 'Не',
 	'coll-cancel' => 'Ләғв кардеј',
 	'coll-update' => 'Нуә кардә быә',
 	'coll-about_pp' => 'Чәмә $1',
 	'coll-license' => 'Лисензијә',
+	'coll-suggest_show' => 'нишо дој',
+	'coll-suggest_undo' => 'ләғв кардеј',
+	'coll-format-okawix_zeno' => 'Okawix',
 );
 
 /** Turkish (Türkçe)
