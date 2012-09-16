@@ -3258,7 +3258,7 @@ Belki o dosya esteriyayo u gani reyna viraziyayo.',
 Ma rica keno îdarekarê MedîyaWîkîyî ra yew mesaj bişirav.',
 	'coll-license' => 'Lisans',
 	'coll-return_to' => 'Reyna şi [[:$1]]',
-	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress enformasyon şîparîş bike',
+	'coll-order_info_article' => 'Malumatê sipariş da {{MediaWiki:Coll-helppage}}/PediaPress',
 	'coll-suggest_title' => 'Kitabê tu rê pelanê tavsîyayî',
 	'coll-suggest_intro_text' => 'Tevsiyayan sero setanê pel ê wîkî newe ke kitabê tu de.
 Çi wext ti gocakanê de kerdişî u wedarayîşî ra klik bike, liste beno rocaniye.',
