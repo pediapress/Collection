@@ -4408,6 +4408,14 @@ $messages['tly'] = array(
 	'coll-suggest_empty' => 'тәј',
 );
 
+/** Tok Pisin (Tok Pisin)
+ * @author Iketsi
+ */
+$messages['tpi'] = array(
+	'coll-bookscategory' => 'Ol buk',
+	'coll-help' => 'Halivim mi',
+);
+
 /** Turkish (Türkçe)
  * @author Joseph
  * @author Mach
