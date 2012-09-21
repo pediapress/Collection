@@ -592,6 +592,7 @@ $messages['bg'] = array(
 	'coll-create_a_book' => 'Създаване на книга',
 	'coll-create_a_book_tooltip' => 'Създаване на книга или колекция от страници',
 	'coll-download_as' => 'Изтегляне като $1',
+	'coll-download_as_tooltip' => 'Изтегляне на $1 версия на тази уики страница',
 	'coll-disable' => 'изключване',
 	'coll-add_category' => 'Добавяне на тази категория към книгата ви',
 	'coll-add_category_tooltip' => 'Добавяне на всички уики-страници в тази категория към книгата ви',
