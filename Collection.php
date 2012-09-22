@@ -371,10 +371,10 @@ function wfAjaxCollectionClear() {
 $wgAjaxExportList[] = 'wfAjaxCollectionClear';
 
 function wfAjaxCollectionGetPopupData( $title ) {
-	global $wgScriptPath;
+	global $wgExtensionAssetsPath;
 
 	$result = array();
-	$imagePath = "$wgScriptPath/extensions/Collection/images";
+	$imagePath = "$wgExtensionAssetsPath/Collection/images";
 	$t = Title::newFromText( $title );
 	if ( $t && $t->isRedirect() ) {
 		$wikiPage = WikiPage::factory( $t );
