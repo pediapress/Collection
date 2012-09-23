@@ -1062,12 +1062,16 @@ $messages['arz'] = array(
 	'coll-rendering_status' => '<strong>الحالة:</strong> $1',
 	'coll-rendering_article' => '(المقالة: $1)',
 	'coll-rendering_page' => '(الصفحة: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات صفحة',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات مجموعة',
 	'coll-rendering_finished_title' => 'العرض انتهى',
 	'coll-rendering_finished_text' => '<strong>ملف الوثيقه تم توليده.</strong>
 <strong>[$1 نزل الملف]</strong> إلى حاسوبك.
 
 ملاحظات:
 * غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحه المساعده حول المجموعات]] للاحتمالات لتحسينه.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات صفحة',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات مجموعه',
 	'coll-notfound_title' => 'الكتاب غير موجود',
 	'coll-notfound_text' => 'لم يمكن العثور على صفحه الكتاب.',
 	'coll-download_notfound_title' => 'الملف لم يتم إيجاده',
@@ -1104,6 +1108,9 @@ $messages['arz'] = array(
 	'coll-suggest_article_remove' => 'الصفحه <strong>$1</strong> تمت إزالتها من كتابك ($2).',
 	'coll-suggest_undo_tooltip' => 'استرجع هذه الإجراء',
 	'coll-suggest_undo' => 'ارجع',
+	'coll-load_local_book' => 'اضغط OK للاستمرار فى كتابك %TITLE% اللى فيه %NUMPAGES% من صفحات الويكى. اضغط Cancel علشان تمسحه و تبتدى كتاب فاضى.',
+	'coll-format-rl' => 'كتاب إلكترونى (PDF)',
+	'coll-format-epub' => 'كتاب إلكترونى (EPUB)',
 	'right-collectionsaveasuserpage' => 'احفظ الكتب كصفحه مستخدم',
 	'right-collectionsaveascommunitypage' => 'احفظ الكتب كصفحه مجتمع',
 );
@@ -7107,13 +7114,13 @@ $messages['ja'] = array(
 	'coll-rename_chapter' => '章の新しい見出しを入力',
 	'coll-no_such_category' => '指定されたカテゴリはありません',
 	'coll-notitle_title' => 'ページタイトルが未設定です。',
-	'coll-post_failed_title' => 'POST要求の失敗',
-	'coll-post_failed_msg' => '$1へのPOST要求は失敗しました ($2)。',
+	'coll-post_failed_title' => 'POST 要求の失敗',
+	'coll-post_failed_msg' => '$1 への POST 要求は失敗しました ($2)。',
 	'coll-mwserve_failed_title' => 'レンダリングサーバーのエラー',
 	'coll-mwserve_failed_msg' => 'レンダリングサーバーでエラーが発生しました: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'サーバからのエラー応答',
 	'coll-empty_collection' => '空のブック',
-	'coll-revision' => '版：$1',
+	'coll-revision' => '版: $1',
 	'coll-save_collection_title' => 'ブックを保存して共有する',
 	'coll-save_collection_text' => '保存先の選択:',
 	'coll-login_to_save' => '後の利用のためブックを保存するには、[[Special:UserLogin|ログインまたはアカウント作成]]を行ってください。',
