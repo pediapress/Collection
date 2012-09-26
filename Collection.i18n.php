@@ -15053,7 +15053,7 @@ $messages['zh-hans'] = array(
 	'right-collectionsaveascommunitypage' => '保存图书为社区页面',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Alexsh
  * @author FireJackey
  * @author Liangent
@@ -15194,6 +15194,12 @@ $messages['zh-hant'] = array(
 	'coll-suggest_undo_tooltip' => '撤銷這個動作',
 	'coll-suggest_undo' => '撤銷',
 	'coll-load_local_book' => '點擊OK來繼續操作你的書籍《%TITLE%》（共%NUMPAGES%頁）。 點擊Cancel清空並從零開始。',
+	'coll-format-rl' => '電子書（PDF）',
+	'coll-format-epub' => '電子書（EPUB）',
+	'coll-format-odf' => '文字處理器（OpenDocument）',
+	'coll-format-zim' => 'Kiwix（OpenZIM）',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => '在使用者頁面儲存此書',
 	'right-collectionsaveascommunitypage' => '在社群頁面儲存此書',
 );
