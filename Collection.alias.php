@@ -33,6 +33,11 @@ $specialPageAliases['as'] = array(
 	'Book' => array( 'সংগ্ৰহ', 'গ্ৰন্থ' ),
 );
 
+/** Bashkir (башҡортса) */
+$specialPageAliases['ba'] = array(
+	'Book' => array( 'Collection' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'Book' => array( 'Buku' ),
