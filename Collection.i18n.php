@@ -7538,6 +7538,22 @@ $messages['ka'] = array(
 	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
 );
 
+/** Kabyle (Taqbaylit)
+ * @author Mmistmurt
+ */
+$messages['kab'] = array(
+	'coll-print_template_prefix' => 'Siggez',
+	'coll-download_title' => 'Zdem',
+	'coll-download' => 'Zdem',
+	'coll-show' => 'Ssken',
+	'coll-title' => 'Azwel :',
+	'coll-contents' => 'Agbur',
+	'coll-personal_collection_label' => 'Adlis n yiwen',
+	'coll-yes' => 'Ih',
+	'coll-no' => 'Ala',
+	'coll-cancel' => 'Semmewet',
+);
+
 /** Kirmanjki (Kırmancki)
  * @author Erdemaslancan
  */

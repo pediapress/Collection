@@ -2315,6 +2315,13 @@ $messages['ka'] = array(
 	'coll-suggest_empty' => 'ცარიელი',
 );
 
+/** Kabyle (Taqbaylit)
+ * @author Mmistmurt
+ */
+$messages['kab'] = array(
+	'coll-help' => 'Tallat',
+);
+
 /** Kirmanjki (Kırmancki)
  * @author Erdemaslancan
  */
