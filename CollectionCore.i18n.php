@@ -542,7 +542,7 @@ $messages['be'] = array(
 	'coll-suggest_empty' => 'пуста',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -2362,7 +2362,7 @@ $messages['kiu'] = array(
 	'coll-suggest_empty' => 'veng',
 );
 
-/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
  * @author Kaztrans
  */
 $messages['kk-cyrl'] = array(
@@ -2546,7 +2546,7 @@ $messages['ksh'] = array(
 	'coll-suggest_empty' => 'leddisch',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -3026,7 +3026,7 @@ $messages['nah'] = array(
 	'coll-bookscategory' => 'Àmoxtin',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Laaknor
  * @author Nghtwlkr
  * @author Njardarlogar
@@ -3150,7 +3150,7 @@ $messages['nl'] = array(
 	'coll-suggest_empty' => 'leegmaken',
 );
 
-/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
@@ -3169,7 +3169,7 @@ $messages['nl-informal'] = array(
 	'coll-make_suggestions_tooltip' => "Suggesties weergeven op basis van de pagina's in je boek",
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Eirik
  * @author Gunnernett
  * @author Harald Khan
@@ -3979,7 +3979,7 @@ $messages['sq'] = array(
 	'coll-download_as' => 'Shkarkoje si $1',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Nikola Smolenski
  * @author Rancher
  * @author Јованвб
@@ -4021,7 +4021,7 @@ $messages['sr-ec'] = array(
 	'coll-suggest_empty' => 'празно',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Жељко Тодоровић
  */
@@ -4749,7 +4749,7 @@ $messages['yue'] = array(
 	'coll-show_collection' => '顯示書',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Bencmq
  * @author Liangent
  * @author Wmr89502270
@@ -4792,7 +4792,7 @@ $messages['zh-hans'] = array(
 	'coll-suggest_empty' => '空',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Alexsh
  * @author Anakmalaysia
  * @author Liangent

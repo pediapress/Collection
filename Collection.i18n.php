@@ -1622,7 +1622,7 @@ $messages['be'] = array(
 	'right-collectionsaveascommunitypage' => 'захаванне кніг як старонак супольнасці',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -3099,7 +3099,7 @@ Immer, wenn du auf die Hinzufügen- oder Entfernen-Buttons klickst, wird die Lis
 	'right-collectionsaveascommunitypage' => 'Bücher als Gemeinschaftsseite speichern',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Dst
  * @author MichaelFrey
  * @author Umherirrender
@@ -5472,7 +5472,7 @@ $messages['gv'] = array(
 	'coll-about_pp' => 'Mychione $1',
 );
 
-/** Hausa (هَوُسَ) */
+/** Hausa (Hausa) */
 $messages['ha'] = array(
 	'coll-cancel' => 'Soke',
 	'coll-suggest_show' => 'nuna',
@@ -7696,7 +7696,7 @@ Ma rica keno îdarekarê MedîyaWîkîyî ra yew mesaj bişirav.',
 	'right-collectionsaveascommunitypage' => 'Kitab ze pelê cemeatî qeyd bike',
 );
 
-/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
  * @author GaiJin
  * @author Kaztrans
  */
@@ -8259,7 +8259,7 @@ Donn „Cancel“ ußwähle, för et fott ze schmiiße un met enem läddijje Boo
 	'right-collectionsaveascommunitypage' => 'E Boch als en Jemeinschaffß_Sigg avspeichere',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -9586,7 +9586,7 @@ $messages['nah'] = array(
 	'coll-update' => 'Tiquiyancuīyāz',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Boivie
  * @author Danmichaelo
  * @author Event
@@ -10021,7 +10021,7 @@ De lijst wordt bijgewerkt als u op de knop 'toevoegen' of 'verwijderen' klikt.",
 	'right-collectionsaveascommunitypage' => 'Boeken opslaan als gemeenschapspagina',
 );
 
-/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
@@ -10062,7 +10062,7 @@ De lijst wordt bijgewerkt als je op de knop 'toevoegen' of 'verwijderen' klikt."
 	'coll-load_local_book' => 'Klik "OK" om door te gaan met je boek %TITLE% dat %NUMPAGES% wikipagina\'s bevat. Klik op "Annuleren" om het te verwijderen en opnieuw te beginnen met een leeg boek.',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -12578,7 +12578,7 @@ Seznam je posodobljen, ko kliknete na gumbe za dodajanje ali odstranjevanje.',
 	'right-collectionsaveascommunitypage' => 'Shranjevanje knjig kot strani občestva',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Nikola Smolenski
  * @author Rancher
  * @author Sasa Stefanovic
@@ -12726,7 +12726,7 @@ $messages['sr-ec'] = array(
 	'right-collectionsaveascommunitypage' => 'чување књига у виду заједничке странице',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Rancher
  * @author Жељко Тодоровић
@@ -14979,7 +14979,7 @@ $messages['yue'] = array(
 	'coll-return_to' => '返去[[:$1]]',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Anakmalaysia
  * @author Bencmq
  * @author Chenxiaoqino
