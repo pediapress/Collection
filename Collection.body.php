@@ -810,16 +810,18 @@ class SpecialCollection extends SpecialPage {
 				$article = new WikiPage( $articleTitle );
 			} else {
 				$article = new Article( $articleTitle, $oldid );
+				$oldid = $article->getOldID();
 			}
 			if ( !$article->exists() ) {
 				return null;
 			}
-			$revision = Revision::newFromTitle( $articleTitle, $article->getOldID() );
+
 			$latest = $article->getLatest();
-			$oldid = $article->getOldID();
 			if ( !$oldid ) {
 				$oldid = $latest;
 			}
+			$revision = Revision::newFromTitle( $articleTitle, $oldid );
+
 			$d = array(
 				'type' => 'article',
 				'content_type' => 'text/x-wiki',
