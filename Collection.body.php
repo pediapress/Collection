@@ -822,6 +822,9 @@ class SpecialCollection extends SpecialPage {
 			}
 			$revision = Revision::newFromTitle( $articleTitle, $oldid );
 
+			if ( !$revision ) {
+				return null;
+			}
 			$d = array(
 				'type' => 'article',
 				'content_type' => 'text/x-wiki',
