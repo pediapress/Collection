@@ -927,6 +927,8 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Das Schäfchen
+ * @author Filzstift
  * @author Kghbln
  * @author Metalhead64
  * @author Pill
@@ -935,37 +937,37 @@ $messages['da'] = array(
 $messages['de'] = array(
 	'coll-print_export' => 'Drucken/exportieren',
 	'coll-create_a_book' => 'Buch erstellen',
-	'coll-create_a_book_tooltip' => 'Ein Buch oder eine Artikelsammlung erstellen.',
+	'coll-create_a_book_tooltip' => 'Ein Buch oder eine Artikelsammlung erstellen',
 	'coll-book_creator' => 'Buchgenerator',
 	'coll-download_as' => 'Als $1 herunterladen',
-	'coll-download_as_tooltip' => 'Eine $1-Version dieser Wikiseite herunterladen.',
+	'coll-download_as_tooltip' => 'Eine $1-Version dieser Seite herunterladen',
 	'coll-disable' => 'deaktivieren',
 	'coll-book_creator_disable' => 'Buchgenerator deaktivieren',
-	'coll-book_creator_disable_tooltip' => 'Den Buchgenerator nicht verwenden.',
-	'coll-add_linked_article' => 'Füge die verlinkte Wikiseite deinem Buch hinzu',
+	'coll-book_creator_disable_tooltip' => 'Den Buchgenerator nicht verwenden',
+	'coll-add_linked_article' => 'Füge die verlinkte Seite deinem Buch hinzu.',
 	'coll-remove_linked_article' => 'Entferne die verlinkte Wikiseite aus deinem Buch',
 	'coll-add_category' => 'Alle Seiten in dieser Kategorie deinem Buch hinzufügen',
-	'coll-add_category_tooltip' => 'Alle Wikiseiten in dieser Kategorie deinem Buch hinzufügen.',
+	'coll-add_category_tooltip' => 'Alle Seiten in dieser Kategorie deinem Buch hinzufügen',
 	'coll-add_this_page' => 'Diese Seite deinem Buch hinzufügen',
-	'coll-add_page_tooltip' => 'Die aktuelle Wikiseite deinem Buch hinzufügen.',
+	'coll-add_page_tooltip' => 'Die aktuelle Seite deinem Buch hinzufügen',
 	'coll-bookscategory' => 'Bücher',
 	'coll-clear_collection' => 'Buch löschen',
-	'coll-clear_collection_confirm' => 'Möchtest du wirklich dein Buch löschen?',
+	'coll-clear_collection_confirm' => 'Möchtest du dein Buch wirklich löschen?',
 	'coll-clear_collection_tooltip' => 'Alle Wikiseiten aus deinem aktuellen Buch entfernen.',
 	'coll-help' => 'Hilfe',
-	'coll-help_tooltip' => 'Die Hilfe zum Erstellen von Büchern anzeigen.',
+	'coll-help_tooltip' => 'Die Hilfe zum Erstellen von Büchern anzeigen',
 	'coll-helppage' => 'Help:Bücher',
 	'coll-load_collection' => 'Buch laden',
-	'coll-load_collection_tooltip' => 'Dieses Buch als dein aktuelles Buch laden.',
+	'coll-load_collection_tooltip' => 'Dieses Buch als dein aktuelles Buch laden',
 	'coll-n_pages' => '$1 {{PLURAL:$1|Seite|Seiten}}',
 	'coll-printable_version_pdf' => 'PDF-Version',
 	'coll-remove_this_page' => 'Diese Seite aus deinem Buch entfernen',
-	'coll-remove_page_tooltip' => 'Die aktuelle Wikiseite aus deinem Buch entfernen.',
+	'coll-remove_page_tooltip' => 'Die aktuelle Seite aus deinem Buch entfernen',
 	'coll-show_collection' => 'Buch zeigen',
 	'coll-show_collection_tooltip' => 'Klicken, um dein Buch zu bearbeiten/herunterzuladen/bestellen.',
 	'coll-not_addable' => 'Diese Seite kann nicht hinzugefügt werden',
 	'coll-make_suggestions' => 'Seiten vorschlagen',
-	'coll-make_suggestions_tooltip' => 'Vorschläge basierend auf den Seiten in deinem Buch anzeigen.',
+	'coll-make_suggestions_tooltip' => 'Vorschläge basierend auf den Seiten in deinem Buch anzeigen',
 	'coll-suggest_empty' => 'leer',
 );
 

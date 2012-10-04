@@ -2945,6 +2945,7 @@ Listen opdateres når du klikker på tilføj- eller fjernknapperne.',
 );
 
 /** German (Deutsch)
+ * @author Das Schäfchen
  * @author Heuler06
  * @author Jbeigel
  * @author Kghbln
@@ -2967,7 +2968,7 @@ Du kannst das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF
 	'coll-book_creator_help' => 'Siehe die [[{{MediaWiki:Coll-helppage}}|Hilfe zu Büchern]] für weitere Informationen.',
 	'coll-start_book_creator' => 'Buchfunktion starten',
 	'coll-book_creator_continue' => 'Buchgenerator verwenden',
-	'coll-book_creator_disable_text' => "Der ''Buchgenerator'' wird deaktiviert und das Buch, an dem du arbeitest, wird gelöscht.",
+	'coll-book_creator_disable_text' => "Der ''Buchgenerator'' wird deaktiviert und das Buch, an dem du arbeitest, wird gelöscht werden.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Text für Buchmodus',
 	'coll-collection' => 'Buch',
 	'coll-collections' => 'Bücher',
@@ -2975,13 +2976,13 @@ Du kannst das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF
 	'coll-print_template_prefix' => 'Drucken',
 	'coll-print_template_pattern' => '$1/Druck',
 	'coll-unknown_subpage_title' => 'Unbekannte Unterseite',
-	'coll-unknown_subpage_text' => 'Diese Unterseite von [[Special:Book|Buch]] existiert nicht',
-	'coll-couldnotaddarticle_title' => 'Wikiseite konnte nicht hinzugefügt werden',
+	'coll-unknown_subpage_text' => 'Diese Unterseite von [[Special:Book|Buch]] ist nicht vorhanden.',
+	'coll-couldnotaddarticle_title' => 'Die Wikiseite konnte nicht hinzugefügt werden.',
 	'coll-couldnotaddarticle_msg' => 'Die Wikiseite konnte nicht hinzugefügt werden.',
-	'coll-couldnotremovearticle_title' => 'Wikiseite konnte nicht entfernt werden',
+	'coll-couldnotremovearticle_title' => 'Die Wikiseite konnte nicht entfernt werden.',
 	'coll-couldnotremovearticle_msg' => 'Die Wikiseite konnte nicht entfernt werden.',
-	'coll-noscript_text' => '<h1>JavaScript wird benötigt!</h1>
-<strong>Dein Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
+	'coll-noscript_text' => '<h1>JavaScript wird benötigt</h1>
+<strong>Dein Browser unterstützt entweder kein JavaScript oder JavaScript wurde deaktiviert.
 Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong>',
 	'coll-savedbook_template' => 'Gespeichertes Buch',
 	'coll-your_book' => 'Dein Buch',
@@ -2999,13 +3000,13 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 	'coll-title' => 'Titel:',
 	'coll-subtitle' => 'Untertitel:',
 	'coll-contents' => 'Inhalt',
-	'coll-drag_and_drop' => 'Mit der Maus kannst du Wikiseiten und Kapitel verschieben, um die Reihenfolge zu ändern',
+	'coll-drag_and_drop' => 'Mit der Maus kannst du Wikiseiten und Kapitel verschieben, um deren Reihenfolge zu ändern.',
 	'coll-create_chapter' => 'Kapitel erzeugen',
 	'coll-sort_alphabetically' => 'Alphabetisch sortieren',
 	'coll-rename' => 'Umbenennen',
-	'coll-new_chapter' => 'Gib einen Namen für ein neues Kapitel ein',
-	'coll-rename_chapter' => 'Gib einen neuen Namen für das Kapitel ein',
-	'coll-no_such_category' => 'Kategorie nicht vorhanden',
+	'coll-new_chapter' => 'Gib einen Namen für ein neues Kapitel ein.',
+	'coll-rename_chapter' => 'Gib einen neuen Namen für das Kapitel ein.',
+	'coll-no_such_category' => 'Die Kategorie ist nicht vorhanden.',
 	'coll-notitle_title' => 'Der Titel der Seite konnte nicht bestimmt werden.',
 	'coll-post_failed_title' => 'POST-Anfrage fehlgeschlagen',
 	'coll-post_failed_msg' => 'Die POST-Anfrage an $1 ist fehlgeschlagen ($2).',
@@ -3021,8 +3022,8 @@ Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügba
 	'coll-community_collection_label' => 'Gemeinschaftliches Buch:',
 	'coll-save_collection' => 'Buch speichern',
 	'coll-save_category' => 'Alle gespeicherten Bücher werden der Kategorie [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] zugeordnet.',
-	'coll-overwrite_title' => 'Seite vorhanden, überschreiben?',
-	'coll-overwrite_text' => 'Eine Seite mit dem Namen [[:$1]] ist bereits vorhanden. Möchtest du sie durch dein Buch ersetzen?',
+	'coll-overwrite_title' => 'Seite vorhanden, soll sie überschrieben werden?',
+	'coll-overwrite_text' => 'Eine Seite des namens [[:$1]] ist bereits vorhanden. Möchtest du sie durch dein Buch ersetzen?',
 	'coll-yes' => 'Ja',
 	'coll-no' => 'Nein',
 	'coll-load_overwrite_text' => 'Dein Buch enthält bereits Seiten.
@@ -3039,7 +3040,7 @@ Möchtest du das aktuelle Buch überschreiben, die neuen Seiten anhängen oder d
 <p><strong>Fortschritt:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
 
 <p>Diese Seite sollte sich alle paar Sekunden von selbst aktualisieren.
-Sollte dies nicht geschehen, drücke bitte den „Aktualisieren“-Knopf (meist F5) deines Browsers.</p>',
+Sollte dies nicht geschehen, drücke bitte die Schaltfläche „Aktualisieren“ deines Browsers oder auf die Taste „F5“ deiner Tastatur.</p>',
 	'coll-rendering_status' => '<strong>Status:</strong> $1',
 	'coll-rendering_article' => '(Wikiseite: $1)',
 	'coll-rendering_page' => '(Seite: $1)',
@@ -3056,12 +3057,12 @@ Hinweise:
 	'coll-notfound_title' => 'Buch nicht gefunden',
 	'coll-notfound_text' => 'Dein Buch konnte nicht gefunden werden.',
 	'coll-download_notfound_title' => 'Datei nicht gefunden',
-	'coll-download_notfound_text' => 'Die Datei, die du versuchst herunterzuladen, existiert nicht: Möglicherweise wurde sie gelöscht oder sie muss neu generiert werden.',
+	'coll-download_notfound_text' => 'Die Datei, die du versuchst herunterzuladen, ist nicht vorhanden: Möglicherweise wurde sie gelöscht oder sie muss neu generiert werden.',
 	'coll-download_failed_title' => 'Fehler beim Herunterladen',
-	'coll-download_failed_text' => 'Es gab einen Fehler beim Herunterladen der Datei: $1',
-	'coll-is_cached' => '<ul><li>Es ist eine zwischengespeicherte Version des Dokumentes vorhanden, so dass kein Rendern notwendig war. <a href="$1">Neurendern erzwingen.</a></li></ul>',
-	'coll-excluded-templates' => '* Vorlagen aus der Kategorie „[[:Category:$1|$1]]“ wurden ausgeschlossen.',
-	'coll-blacklisted-templates' => '* Vorlagen von der Schwarzen Liste [[:$1]] wurden ausgeschlossen.',
+	'coll-download_failed_text' => 'Beim Herunterladen der Datei ist ein Fehler aufgetreten: $1',
+	'coll-is_cached' => '<ul><li>Es ist eine zwischengespeicherte Version des Dokumentes vorhanden, so dass kein Rendern notwendig war. <a href="$1">Erneutes Rendern erzwingen.</a></li></ul>',
+	'coll-excluded-templates' => '* Vorlagen in der Kategorie „[[:Category:$1|$1]]“ wurden ausgeschlossen.',
+	'coll-blacklisted-templates' => '* Vorlagen in der Negativliste [[:$1]] wurden ausgeschlossen.',
 	'coll-return_to_collection' => 'Zurück zu <a href="$1">$2</a>',
 	'coll-book_title' => 'Als gedrucktes Buch bestellen',
 	'coll-book_text' => 'Bestelle eine gedruckte Buchausgabe bei unserem Print-on-Demand-Partner.',
@@ -3073,22 +3074,22 @@ Hinweise:
 	'coll-return_to' => 'Zurück zu [[:$1]]',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress Bestellinformation',
 	'coll-suggest_title' => 'Vorgeschlagene Seiten für dein Buch',
-	'coll-suggest_intro_text' => 'Die Vorschläge basieren auf die aktuell in deinem Buch vorhandenen Wikiseiten.
-Immer, wenn du auf die Hinzufügen- oder Entfernen-Buttons klickst, wird die Liste aktualisiert.',
+	'coll-suggest_intro_text' => 'Die Vorschläge basieren auf den aktuell in deinem Buch enthaltenen Wikiseiten.
+Immer, wenn du auf die Schaltflächen zum Hinzufügen oder Entfernen klickst, wird diese Liste aktualisiert.',
 	'coll-suggested_articles' => 'Vorschläge',
 	'coll-suggest_reset_bans' => 'zurücksetzen',
-	'coll-suggest_reset_bans_tooltip' => 'Zuletzt entfernte Vorschläge anzeigen',
+	'coll-suggest_reset_bans_tooltip' => 'Die zuletzt entfernten Vorschläge anzeigen.',
 	'coll-suggest_add_selected' => 'Ausgewählte Seiten hinzufügen',
 	'coll-suggest_ban_selected' => 'Ausgewählte Seiten entfernen',
 	'coll-suggest_your_book' => 'Dein Buch',
 	'coll-suggest_show' => 'zeigen',
-	'coll-suggest_ban_tooltip' => 'Diese Seite aus der Vorschlagsliste entfernen',
-	'coll-suggest_article_ban' => 'Die Seite <strong>$1</strong> wurde aus den Vorschlägen entfernt ($2).',
+	'coll-suggest_ban_tooltip' => 'Diese Seite aus der Vorschlagsliste entfernen.',
+	'coll-suggest_article_ban' => 'Die Seite <strong>$1</strong> wurde aus der Vorschlagsliste entfernt ($2).',
 	'coll-suggest_article_add' => 'Die Seite <strong>$1</strong> wurde zu deinem Buch hinzugefügt ($2).',
 	'coll-suggest_article_remove' => 'Die Seite <strong>$1</strong> wurde aus deinem Buch entfernt ($2).',
-	'coll-suggest_undo_tooltip' => 'Diese Aktion rückgängig machen',
+	'coll-suggest_undo_tooltip' => 'Diese Aktion rückgängig machen.',
 	'coll-suggest_undo' => 'rückgängig machen',
-	'coll-load_local_book' => 'Klicke auf OK, um mit deinem Buch %TITLE% fortzufahren, bestehend aus %NUMPAGES% Wikiseiten. Klicke auf Abbrechen, um es zu löschen und um mit einem leeren Buch zu starten.',
+	'coll-load_local_book' => 'Klicke auf „OK“, um an deinem Buch %TITLE% weiterzuarbeiten, das %NUMPAGES% Wikiseiten enthält. Klicke auf „Abbrechen“, um es zu löschen und um mit einem leeren Buch neu zu starten.',
 	'coll-format-rl' => 'E-Book (PDF)',
 	'coll-format-epub' => 'E-Book (EPUB)',
 	'coll-format-odf' => 'Textverarbeitung (OpenDocument)',
@@ -3101,6 +3102,7 @@ Immer, wenn du auf die Hinzufügen- oder Entfernen-Buttons klickst, wird die Lis
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Dst
+ * @author Kghbln
  * @author MichaelFrey
  * @author Umherirrender
  */
@@ -3109,19 +3111,19 @@ $messages['de-formal'] = array(
 Sie können das Buch in unterschiedlichen Formaten exportieren (beispielsweise PDF oder ODF) oder in gedruckter Form bestellen.</big>",
 	'coll-manage_your_book' => 'Ihr Buch verwalten',
 	'coll-book_creator_disable_text' => "Der ''Buchgenerator'' wird deaktiviert und das Buch, an dem Sie arbeiten, wird gelöscht.",
-	'coll-noscript_text' => '<h1>JavaScript wird benötigt!</h1>
-<strong>Ihr Browser unterstützt kein JavaScript oder JavaScript wurde deaktiviert.
+	'coll-noscript_text' => '<h1>JavaScript wird benötigt</h1>
+<strong>Ihr Browser unterstützt entweder kein JavaScript oder JavaScript wurde deaktiviert.
 Diese Seite wird nicht richtig funktionieren, solange JavaScript nicht verfügbar ist.</strong>',
 	'coll-your_book' => 'Ihr Buch',
 	'coll-download_text' => 'Um eine Offline-Version Ihres Buches herunterzuladen, wählen Sie bitte ein Format und klicken Sie auf die Schaltfläche.',
 	'coll-download_as_text' => 'Um eine Offline-Version Ihres Buches im Format $1 herunterzuladen, klicken Sie bitte auf die Schaltfläche.',
-	'coll-drag_and_drop' => 'Mit der Maus können Sie Wikiseiten und Kapitel verschieben, um die Reihenfolge zu ändern',
+	'coll-drag_and_drop' => 'Mit der Maus können Sie Wikiseiten und Kapitel verschieben, um deren Reihenfolge zu ändern.',
 	'coll-new_chapter' => 'Geben Sie einen Namen für ein neues Kapitel ein',
 	'coll-rename_chapter' => 'Geben Sie einen neuen Namen für das Kapitel ein',
 	'coll-save_collection_title' => 'Ihr Buch speichern und teilen',
 	'coll-save_collection_text' => 'Wählen Sie einen Speicherort für Ihr Buch:',
 	'coll-login_to_save' => 'Wenn Sie Bücher speichern möchten, [[Special:UserLogin|melden Sie sich bitte an oder erstellen ein Benutzerkonto]].',
-	'coll-overwrite_text' => 'Eine Seite mit dem Namen [[:$1]] ist bereits vorhanden. Möchten Sie diese durch Ihr Buch ersetzen?',
+	'coll-overwrite_text' => 'Eine Seite des namens [[:$1]] ist bereits vorhanden. Möchten Sie diese durch Ihr Buch ersetzen?',
 	'coll-load_overwrite_text' => 'Ihr Buch enthält bereits Seiten.
 Möchten Sie das aktuelle Buch überschreiben, die neuen Seiten anhängen oder das Laden dieses Buches abbrechen?',
 	'coll-limit_exceeded_text' => 'Ihr Buch ist zu groß. Es können keine Seiten mehr hinzugefügt werden.',
@@ -3130,22 +3132,23 @@ Möchten Sie das aktuelle Buch überschreiben, die neuen Seiten anhängen oder d
 <p><strong>Fortschritt:</strong> <span id="renderingProgress">$1</span> % <span id="renderingStatus">$2</span></p>
 
 <p>Diese Seite sollte sich alle paar Sekunden von selbst aktualisieren.
-Sollte dies nicht geschehen, drücken Sie bitte den „Aktualisieren“-Knopf (meist F5) Ihres Browsers.</p>',
+Sollte dies nicht geschehen, drücken Sie bitte die Schaltfläche „Aktualisieren“ Ihres Browsers oder auf die Taste „F5“ Ihrer Tastatur.</p>',
 	'coll-rendering_finished_text' => '<strong>Die Datei wurde erfolgreich erstellt.</strong>
 <strong>[$1 Dokument herunterladen]</strong>.
 
 Hinweise:
 * Sind Sie mit dem Ergebnis nicht zufrieden? Möglichkeiten zur Verbesserung der Ausgabe finden Sie auf der [[{{MediaWiki:Coll-helppage}}|Hilfeseite über Bücher]].',
 	'coll-notfound_text' => 'Ihr Buch konnte nicht gefunden werden.',
-	'coll-download_notfound_text' => 'Die Datei, die Sie versuchen herunterzuladen, existiert nicht: Möglicherweise wurde sie gelöscht oder sie muss neu generiert werden.',
+	'coll-download_notfound_text' => 'Die Datei, die Sie versuchen herunterzuladen, ist nicht vorhanden: Möglicherweise wurde sie gelöscht oder sie muss neu generiert werden.',
 	'coll-book_text' => 'Bestellen Sie eine gedruckte Buchausgabe bei unserem Print-on-Demand-Partner.',
 	'coll-invalid_podpartner_msg' => 'Die Angaben zum Print-on-Demand-Partner sind fehlerhaft. Bitte kontaktieren Sie den MediaWiki-Administrator.',
 	'coll-suggest_title' => 'Vorgeschlagene Seiten für Ihr Buch',
-	'coll-suggest_intro_text' => 'Die Vorschläge basieren auf die aktuell in Ihrem Buch vorhandenen Wikiseiten.
-Immer, wenn Sie auf die Hinzufügen- oder Entfernen-Buttons klicken, wird die Liste aktualisiert.',
+	'coll-suggest_intro_text' => 'Die Vorschläge basieren auf den aktuell in Ihrem Buch enthaltenen Wikiseiten.
+Immer, wenn Sie auf die Schaltflächen zum Hinzufügen oder Entfernen klicken, wird diese Liste aktualisiert.',
 	'coll-suggest_your_book' => 'Ihr Buch',
 	'coll-suggest_article_add' => 'Die Seite <strong>$1</strong> wurde zu Ihrem Buch hinzugefügt ($2).',
 	'coll-suggest_article_remove' => 'Die Seite <strong>$1</strong> wurde aus Ihrem Buch entfernt ($2).',
+	'coll-load_local_book' => 'Klicken Sie auf „OK“, um an Ihrem Buch %TITLE% weiterzuarbeiten, das %NUMPAGES% Wikiseiten enthält. Klicken Sie auf „Abbrechen“, um es zu löschen und um mit einem leeren Buch neu zu starten.',
 );
 
 /** Zazaki (Zazaki)
