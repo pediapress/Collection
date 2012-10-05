@@ -8184,7 +8184,7 @@ donn [[Special:UserLogin|enlogge, udder Desch aanmelde]].',
 	'coll-overwrite_title' => 'Die Sigg jidd et ald. Överschrieve?',
 	'coll-overwrite_text' => 'En Sigg met dämm Name [[:$1]] jidd_et alld.
 Wells De se met Dinge Sammlong övverschriive?',
-	'coll-yes' => 'Jo',
+	'coll-yes' => 'Joh',
 	'coll-no' => 'Nä',
 	'coll-load_overwrite_text' => 'En Dingem Booch sinn_er ald Sigge dren.
 Wells de dat Booch övverschrieve, di neu Saache dran 

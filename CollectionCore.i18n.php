@@ -4093,6 +4093,7 @@ $messages['su'] = array(
  * @author Poxnar
  * @author Rotsee
  * @author Sannab
+ * @author Thurs
  */
 $messages['sv'] = array(
 	'coll-print_export' => 'Skriv ut/exportera',
@@ -4102,7 +4103,7 @@ $messages['sv'] = array(
 	'coll-download_as' => 'Hämta som $1',
 	'coll-download_as_tooltip' => 'Ladda ner den här wikisidan i $1-format',
 	'coll-disable' => 'slå av',
-	'coll-book_creator_disable' => 'Avaktiviera bokskapare',
+	'coll-book_creator_disable' => 'Slå av bokskaparen',
 	'coll-book_creator_disable_tooltip' => 'Sluta använda bokskapare',
 	'coll-add_linked_article' => 'Lägg till den länkade wiki-sidan till din bok',
 	'coll-remove_linked_article' => 'Ta bort den länkade wiki-sidan från din bok',
