@@ -7534,6 +7534,7 @@ $messages['ka'] = array(
 	'coll-load_local_book' => 'დააჭირეთ „OK“ თქვენი %NUMPAGES% გვერდების შემცვლელ %TITLE% წიგნთან მუშაობის გაგრძელებისთვის. დაააჭირეთ „გაუქმება“ ღილაკს რომ წაშალოთ იგი და დაიწყოთ ცარიელი წიგნი.',
 	'coll-format-rl' => 'ელ-წიგნი (PDF)',
 	'coll-format-epub' => 'ელ-წიგნი (EPUB)',
+	'coll-format-odf' => 'ტექსტური პროცესორი (OpenDocument)',
 	'coll-format-zim' => 'Kiwix (OpenZIM)',
 	'coll-format-docbook' => 'DocBook',
 	'coll-format-okawix_zeno' => 'Okawix',
