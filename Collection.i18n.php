@@ -12442,6 +12442,12 @@ Zoznam sa aktualizuje vždy po kliknutí na tlačidlo Pridať alebo Odstrániť.
 	'coll-suggest_undo_tooltip' => 'Vrátiť túto operáciu späť',
 	'coll-suggest_undo' => 'vrátiť',
 	'coll-load_local_book' => 'Kliknutím na tlačidlo OK pokračujte vo vašej knihe %TITLE%, ktorá obsahuje %NUMPAGES% stránok wiki. Kliknutím na tlačidlo Zrušiť ju vymažete a začnete s prázdnou knihu.',
+	'coll-format-rl' => 'e-kniha (PDF)',
+	'coll-format-epub' => 'e-kniha (EPUB)',
+	'coll-format-odf' => 'textový processor (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Uložiť knihy ako používateľskú stránku',
 	'right-collectionsaveascommunitypage' => 'Uložiť knihy ako komunitnú stránku',
 );
@@ -14064,6 +14070,7 @@ $messages['tly'] = array(
 );
 
 /** Turkish (Türkçe)
+ * @author Erdemaslancan
  * @author Joseph
  * @author Karduelis
  * @author Mach
@@ -14204,6 +14211,12 @@ Ekle veya sil butonlarına her bastığınızda liste yenilenir.',
 	'coll-suggest_undo_tooltip' => 'Bu eylemi geri al',
 	'coll-suggest_undo' => 'geri al',
 	'coll-load_local_book' => "%NUMPAGES% viki sayfası içeren kitabınız %TITLE% ile devam etmek için Tamam'a tıklayın. Bunu silmek ve boş bir kitaba başlamak için İptal'e tıklayın.",
+	'coll-format-rl' => 'e-kitap (pdf)',
+	'coll-format-epub' => 'e-kitap (epub)',
+	'coll-format-odf' => 'kelime işlemci (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DökümanKitap',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Kitapları kullanıcı sayfası olarak kaydet',
 	'right-collectionsaveascommunitypage' => 'Kitapları topluluk sayfası olarak kaydet',
 );
