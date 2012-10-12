@@ -387,8 +387,10 @@ if ( $this->data['return_to'] ) {
 	// We are doing this the hard way (i.e. via the HTML detour), to prevent
 	// the parser from replacing [[:Special:Book]] with a selflink.
 	$t = Title::newFromText( $this->data['return_to'] );
-	echo wfMessage( 'coll-return_to_collection' )
-		->rawParams( $t->getFullURL(), $this->data['return_to'] )->parse();
+	if ( $t ) {
+		echo wfMessage( 'coll-return_to_collection' )
+			->rawParams( $t->getFullURL(), $this->data['return_to'] )->parse();
+	}
 }
 
 if ( CollectionSession::isEnabled() ) {
