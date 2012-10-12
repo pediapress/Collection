@@ -545,6 +545,9 @@ class SpecialCollection extends SpecialPage {
 	 */
 	static function addChapter( $name ) {
 		$collection = CollectionSession::getCollection();
+		if ( !isset( $collection['items'] ) || !is_array( $collection['items'] ) ) {
+			$collection['items'] = array();
+		}
 		array_push( $collection['items'], array(
 			'type' => 'chapter',
 			'title' => $name,
