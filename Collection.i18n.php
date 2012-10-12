@@ -4209,6 +4209,7 @@ Zerrenda gaurkotzen da gehitu edo kendu botoietan klik egiten duzun bakoitzean.'
  * @author Spacebirdy
  * @author Wayiran
  * @author ZxxZxxZ
+ * @author پاناروما
  */
 $messages['fa'] = array(
 	'coll-desc' => '[[Special:Book|کتاب‌ساز]]',
@@ -4345,6 +4346,8 @@ $messages['fa'] = array(
 	'coll-suggest_undo_tooltip' => 'این اقدام را خنثی کن',
 	'coll-suggest_undo' => 'خنثی‌سازی',
 	'coll-load_local_book' => 'برای ادامهٔ کتاب %TITLE% که دارندهٔ %NUMPAGES% صفحهٔ ویکی است، بر روی پذیرش کلیک کنید. برای حذف آن و آغاز با کتابی خالی، بر روی لغو کلیک کنید.',
+	'coll-format-rl' => 'کتاب الکترونیکی (PDF)',
+	'coll-format-epub' => 'کتاب الکترونیکی (EPUB)',
 	'right-collectionsaveasuserpage' => 'ذخیره کردن کتاب‌ها به صورت یک صفحهٔ کاربری',
 	'right-collectionsaveascommunitypage' => 'ذخیره کردن کتاب‌ها به صورت یک صفحه عمومی',
 );
