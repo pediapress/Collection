@@ -524,6 +524,11 @@ class SpecialCollection extends SpecialPage {
 
 	static function sortItems() {
 		$collection = CollectionSession::getCollection();
+		if ( !isset( $collection['items'] ) || !is_array( $collection['items'] ) ) {
+			$collection['items'] = array();
+			CollectionSession::setCollection( $collection );
+			return;
+		}
 		$articles = array();
 		$new_items = array();
 		foreach ( $collection['items'] as $item ) {
