@@ -348,7 +348,7 @@ class CollectionRenderingTemplate extends QuickTemplate {
 <span style="display:none" id="renderingPage"><?php echo ' ' . wfMessage( 'coll-rendering_page', '%PARAM%' )->parse() ?></span>
 
 <?php echo wfMessage( 'coll-rendering_text' )
-			->numParams( number_format_Render( $this->data['progress'], 2, '.', '' ) )
+			->numParams( number_format( $this->data['progress'], 2, '.', '' ) )
 			->params( $this->data['status'] )->parse() ?>
 
 <?php
