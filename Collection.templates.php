@@ -64,9 +64,9 @@ $this->msgWiki( 'coll-book_text' );
 foreach ( $this->data['podpartners'] as $partnerKey => $partnerData ) {
 	$infopage = false;
 	$partnerClasses = "";
-	$about_partner = wfMessage( 'coll-about_pp', $partnerData['name'] )->escaped();
+	$about_partner = wfMsgHtml( 'coll-about_pp', htmlspecialchars( $partnerData['name'] ) );
 	if ( isset( $partnerData['infopagetitle'] ) ) {
-		$infopage = Title::newFromText( wfMessage( $partnerData['infopagetitle'] )->inContentLanguage()->text() );
+		$infopage = Title::newFromText( wfMsgForContent( $partnerData['infopagetitle'] ) );
 		if ( $infopage && $infopage->exists() ) {
 			$partnerClasses = " coll-more_info collapsed";
  		}
@@ -87,7 +87,7 @@ foreach ( $this->data['podpartners'] as $partnerKey => $partnerData ) {
 				<form action="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book' ) ) ?>" method="post">
 					<input type="hidden" name="bookcmd" value="post_zip" />
 					<input type="hidden" name="partner" value="<?php echo htmlspecialchars( $partnerKey ) ?>" />
-					<input type="submit" value="<?php echo wfMessage( 'coll-order_from_pp', $partnerData['name'] )->escaped() ?>" class="order" <?php if ( count( $this->data['collection']['items'] ) == 0 ) { ?> disabled="disabled"<?php } ?> />
+					<input type="submit" value="<?php echo wfMsgHtml( 'coll-order_from_pp', htmlspecialchars( $partnerData['name'] ) ) ?>" class="order" <?php if ( count( $this->data['collection']['items'] ) == 0 ) { ?> disabled="disabled"<?php } ?> />
 				</form>
 			</div>
 		</div>
@@ -104,11 +104,11 @@ foreach ( $this->data['podpartners'] as $partnerKey => $partnerData ) {
 		<h2><span class="mw-headline"><?php $this->msg( 'coll-download_title' ) ?></span></h2>
 		<?php if ( count( $this->data['formats'] ) == 1 ) {
 			$writer = array_rand( $this->data['formats'] );
-			echo wfMessage( 'coll-download_as_text', $this->data['formats'][$writer] )->parseAsBlock();
-			$buttonLabel = wfMessage( 'coll-download_as', $this->data['formats'][$writer] )->escaped();
+			echo wfMsgExt( 'coll-download_as_text', 'parse', $this->data['formats'][$writer] );
+			$buttonLabel = wfMsgHtml( 'coll-download_as', htmlspecialchars( $this->data['formats'][$writer] ) );
 		} else {
 			$this->msgWiki( 'coll-download_text' );
-			$buttonLabel = wfMessage( 'coll-download' )->escaped();
+			$buttonLabel = wfMsgHtml( 'coll-download' );
 		} ?>
 		<form id="downloadForm" action="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book' ) ) ?>" method="post">
 			<table style="width:100%; background-color: transparent;"><tr><td><tbody><tr><td>
@@ -180,7 +180,8 @@ foreach ( $this->data['podpartners'] as $partnerKey => $partnerData ) {
 			</form>
 
 		<?php
-		if ( !wfMessage( 'coll-bookscategory' )->inContentLanguage()->isDisabled() ) {
+		$t = wfMsgForContent( 'coll-bookscategory' );
+		if ( !wfEmptyMsg( 'coll-bookscategory', $t ) && $t != '-' ) {
 			$this->msgWiki( 'coll-save_category' );
 		}
 		?>
@@ -321,7 +322,7 @@ class CollectionSaveOverwriteTemplate extends QuickTemplate {
 
 <h2><span class="mw-headline"><?php $this->msg( 'coll-overwrite_title' ) ?></span></h2>
 
-<?php echo wfMessage( 'coll-overwrite_text', $this->data['title']->getPrefixedText() )->parseAsBlock(); ?>
+<p><?php echo wfMsgExt( 'coll-overwrite_text', 'parse', $this->data['title']->getPrefixedText() ); ?></p>
 
 <form action="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book' ) ) ?>" method="post">
 	<input name="overwrite" type="submit" value="<?php $this->msg( 'coll-yes' ) ?>" />
@@ -346,20 +347,17 @@ class CollectionRenderingTemplate extends QuickTemplate {
 ?>
 
 
-<span style="display:none" id="renderingStatusText"><?php echo wfMessage( 'coll-rendering_status', '%PARAM%' )->escaped() ?></span>
-<span style="display:none" id="renderingArticle"><?php echo ' ' . wfMessage( 'coll-rendering_article', '%PARAM%' )->escaped() ?></span>
-<span style="display:none" id="renderingPage"><?php echo ' ' . wfMessage( 'coll-rendering_page', '%PARAM%' )->escaped() ?></span>
+<span style="display:none" id="renderingStatusText"><?php echo wfMsg( 'coll-rendering_status', '%PARAM%' ) ?></span>
+<span style="display:none" id="renderingArticle"><?php echo ' ' . wfMsg( 'coll-rendering_article', '%PARAM%' ) ?></span>
+<span style="display:none" id="renderingPage"><?php echo ' ' . wfMsg( 'coll-rendering_page', '%PARAM%' ) ?></span>
 
-<?php echo wfMessage( 'coll-rendering_text' )
-	->numParams( number_format( $this->data['progress'], 2, '.', '' ) )
-	->params( $this->data['status'] )->parse() ?>
-
+<?php echo wfMessage( 'coll-rendering_text' )->numParams( number_format( $this->data['progress'], 2, '.', '' ) )->params( $this->data['status'] )->escaped() ?>
 
 <?php
 		if ( CollectionSession::isEnabled() ) {
-			$title_string = wfMessage( 'coll-rendering_collection_info_text_article' )->inContentLanguage()->text();
+			$title_string = wfMsgForContent( 'coll-rendering_collection_info_text_article' );
 		} else {
-			$title_string = wfMessage( 'coll-rendering_page_info_text_article' )->inContentLanguage()->text();
+			$title_string = wfMsgForContent( 'coll-rendering_page_info_text_article' );
 		}
 		$t = Title::newFromText( $title_string );
 		if ( $t && $t->exists() ) {
@@ -375,34 +373,35 @@ class CollectionRenderingTemplate extends QuickTemplate {
 class CollectionFinishedTemplate extends QuickTemplate {
 	function execute() {
 
-echo wfMessage( 'coll-rendering_finished_text', $this->data['download_url'] )->parseAsBlock();
+echo wfMsgExt( 'coll-rendering_finished_text', 'parse', $this->data['download_url'] );
 
 if ( $this->data['is_cached'] ) {
 	$forceRenderURL = SkinTemplate::makeSpecialUrl( 'Book', 'bookcmd=forcerender&' . $this->data['query'] );
-	echo wfMessage( 'coll-is_cached', $forceRenderURL )->escaped();
+	echo wfMsg( 'coll-is_cached', htmlspecialchars( $forceRenderURL ) );
 }
-echo wfMessage( 'coll-excluded-templates', wfMessage( 'coll-exclusion_category_title' )->inContentLanguage()->text() )->parseAsBlock();
-$title_string = wfMessage( 'coll-template_blacklist_title' )->inContentLanguage()->text();
+echo wfMsgExt( 'coll-excluded-templates', 'parse', wfMsgForContent( 'coll-exclusion_category_title' ) );
+$title_string = wfMsgForContent( 'coll-template_blacklist_title' );
 $t = Title::newFromText( $title_string );
 if ( $t && $t->exists() ) {
-	echo wfMessage( 'coll-blacklisted-templates', $title_string )->parseAsBlock();
+	echo wfMsgExt( 'coll-blacklisted-templates', 'parse', $title_string );
 }
 if ( $this->data['return_to'] ) {
 	// We are doing this the hard way (i.e. via the HTML detour), to prevent
 	// the parser from replacing [[:Special:Book]] with a selflink.
 	$t = Title::newFromText( $this->data['return_to'] );
 	if ( $t ) {
-	echo wfMessage(
-		'coll-return_to_collection',
-		$t->getFullURL(),
-		$this->data['return_to'] )->escaped();
+		echo wfMsg(
+			'coll-return_to_collection',
+			htmlspecialchars( $t->getFullURL() ),
+			htmlspecialchars( $this->data['return_to'] )
+		);
 	}
 }
 
 if ( CollectionSession::isEnabled() ) {
-	$title_string = wfMessage( 'coll-finished_collection_info_text_article' )->inContentLanguage()->text();
+	$title_string = wfMsgForContent( 'coll-finished_collection_info_text_article' );
 } else {
-	$title_string = wfMessage( 'coll-finished_page_info_text_article' )->inContentLanguage()->text();
+	$title_string = wfMsgForContent( 'coll-finished_page_info_text_article' );
 }
 $t = Title::newFromText( $title_string );
 if ( $t && $t->exists() ) {
@@ -446,7 +445,7 @@ class CollectionSuggestTemplate extends QuickTemplate {
 		<td style="width: 45%; vertical-align: top;">
 			<div style="padding: 10px; border: 1px solid #aaa; background-color: #f9f9f9;">
 				<strong style="font-size: 1.2em;"><?php $this->msg( 'coll-suggest_your_book' ) ?></strong>
-				(<span id="coll-num_pages"><?php echo wfMessage( 'coll-n_pages' )->numParams( $this->data['num_pages'] )->escaped() ?></span><?php echo wfMessage( 'pipe-separator' )->plain() ?><a href="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book' ) ) ?>" title="<?php $this->msg( 'coll-show_collection_tooltip' ) ?>"><?php $this->msg( 'coll-suggest_show' ) ?></a>)
+				(<span id="coll-num_pages"><?php echo wfMsgExt( 'coll-n_pages', 'parsemag', $GLOBALS['wgLang']->formatNum( $this->data['num_pages'] ) )?></span><?php echo wfMsg( 'pipe-separator' )?><a href="<?php echo htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book' ) ) ?>" title="<?php $this->msg( 'coll-show_collection_tooltip' ) ?>"><?php $this->msg( 'coll-suggest_show' ) ?></a>)
 				<ul id="collectionMembers" style="list-style: none; margin-left: 0;">
 				<?php echo $this->getMemberList(); ?>
 				</ul>
@@ -472,7 +471,7 @@ class CollectionSuggestTemplate extends QuickTemplate {
 
 		$num = count( $prop );
 		if ( $num == 0 ) {
-			return "<li>" . wfMessage( 'coll-suggest_empty' )->escaped() . "</li>";
+			return "<li>" . wfMsgHtml( 'coll-suggest_empty' ) . "</li>";
 		}
 
 		$artName = $prop[0]['name'];
@@ -480,8 +479,8 @@ class CollectionSuggestTemplate extends QuickTemplate {
 		$url = $title->getLocalUrl();
 		$out .= '<li style="margin-bottom: 10px; padding: 4px 4px; background-color: #ddddff; font-size: 1.4em; font-weight: bold;">';
 		$out .= '<noscript><input type="checkbox" value="' . htmlspecialchars( $artName ) . '" name="articleList[]" /></noscript>';
-		$out .= '<a onclick="' . htmlspecialchars( 'collectionSuggestCall("AddArticle", ' . Xml::encodeJsVar( array( $artName ) ) . '); return false;' ) . '" href="' . htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', array( 'bookcmd' => 'suggest', 'add' => $artName ) ) ) . '" title="' . wfMessage( 'coll-add_this_page' )->escaped() . '"><img src="' . htmlspecialchars( $mediapath . 'silk-add.png' ) . '" width="16" height="16" alt=""></a> ';
-		$out .= '<a onclick="' . htmlspecialchars( 'collectionSuggestCall("BanArticle", ' . Xml::encodeJsVar( array( $artName ) ) . '); return false;' ) . '" href="' . htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', array( 'bookcmd' => 'suggest', 'ban' => $artName ) ) ) . '" title="' . wfMessage( 'coll-suggest_ban_tooltip' )->escaped() . '"><img src="' . htmlspecialchars( $mediapath . 'silk-cancel.png' ) . '" width="16" height="16" alt=""></a> ';
+		$out .= '<a onclick="' . htmlspecialchars( 'collectionSuggestCall("AddArticle", ' . Xml::encodeJsVar( array( $artName ) ) . '); return false;' ) . '" href="' . htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', array( 'bookcmd' => 'suggest', 'add' => $artName ) ) ) . '" title="' . wfMsgHtml( 'coll-add_this_page' ) . '"><img src="' . htmlspecialchars( $mediapath . 'silk-add.png' ) . '" width="16" height="16" alt=""></a> ';
+		$out .= '<a onclick="' . htmlspecialchars( 'collectionSuggestCall("BanArticle", ' . Xml::encodeJsVar( array( $artName ) ) . '); return false;' ) . '" href="' . htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', array( 'bookcmd' => 'suggest', 'ban' => $artName ) ) ) . '" title="' . wfMsgHtml( 'coll-suggest_ban_tooltip' ) . '"><img src="' . htmlspecialchars( $mediapath . 'silk-cancel.png' ) . '" width="16" height="16" alt=""></a> ';
 		$out .= '<a href="' . htmlspecialchars( $url ) . '" title="' . htmlspecialchars( $artName ) . '">' . htmlspecialchars( $artName ) . '</a>';
 		$out .= '</li>';
 
@@ -491,7 +490,7 @@ class CollectionSuggestTemplate extends QuickTemplate {
 			$url = str_replace( " ", "_", $url );
 			$out .= '<li style="padding-left: 4px;">';
 			$out .= '<noscript><input type="checkbox" value="' . htmlspecialchars( $artName ) . '" name="articleList[]" /></noscript>';
-			$out .= '<a onclick="' . htmlspecialchars( 'collectionSuggestCall("AddArticle", ' . Xml::encodeJsVar( array( $artName ) ) . '); return false;' ) . '" href="' . htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', array( 'bookcmd' => 'suggest', 'add' => $artName ) ) ) . '" title="' . wfMessage( 'coll-add_this_page' )->escaped() . '"><img src="' . htmlspecialchars( $mediapath . 'silk-add.png' ) . '" width="16" height="16" alt=""></a> ';
+			$out .= '<a onclick="' . htmlspecialchars( 'collectionSuggestCall("AddArticle", ' . Xml::encodeJsVar( array( $artName ) ) . '); return false;' ) . '" href="' . htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', array( 'bookcmd' => 'suggest', 'add' => $artName ) ) ) . '" title="' . wfMsgHtml( 'coll-add_this_page' ) . '"><img src="' . htmlspecialchars( $mediapath . 'silk-add.png' ) . '" width="16" height="16" alt=""></a> ';
 			$out .= '<a href="' . htmlspecialchars( $url ) . '" title="' . htmlspecialchars( $artName ) . '">' . htmlspecialchars( $artName ) . '</a>';
 			$out .= '</li>';
 		}
@@ -509,12 +508,12 @@ class CollectionSuggestTemplate extends QuickTemplate {
 		$out = '';
 
 		$num = count( $coll['items'] );
-		if ( $num == 0 ) $out .= "<li>" . wfMessage( 'coll-suggest_empty' )->escaped() . "</li>";
+		if ( $num == 0 ) $out .= "<li>" . wfMsgHtml( 'coll-suggest_empty' ) . "</li>";
 
 		for ( $i = 0; $i < $num; $i++ ) {
 			$artName = $coll['items'][$i]['title'];
 			if ( $coll['items'][$i]['type'] == 'article' ) {
-			  $out .= '<li><a href="' . htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', array( 'bookcmd' => 'suggest', 'remove' => $artName ) ) ) . '" onclick="' . htmlspecialchars( 'collectionSuggestCall("RemoveArticle", ' . Xml::encodeJsVar( array( $artName ) ) . '); return false;' ) . '" title="' . wfMessage( 'coll-remove_this_page' )->escaped() . '"><img src="' . htmlspecialchars( $mediapath . 'remove.png' ) . '" width="10" height="10" alt=""></a> ';
+			  $out .= '<li><a href="' . htmlspecialchars( SkinTemplate::makeSpecialUrl( 'Book', array( 'bookcmd' => 'suggest', 'remove' => $artName ) ) ) . '" onclick="' . htmlspecialchars( 'collectionSuggestCall("RemoveArticle", ' . Xml::encodeJsVar( array( $artName ) ) . '); return false;' ) . '" title="' . wfMsgHtml( 'coll-remove_this_page' ) . '"><img src="' . htmlspecialchars( $mediapath . 'remove.png' ) . '" width="10" height="10" alt=""></a> ';
 				$out .= '<a href="' . htmlspecialchars( $coll['items'][$i]['url'] ) . '" title="' . htmlspecialchars( $artName ) . '">' . htmlspecialchars( $artName ) . '</a></li>';
 			}
 		}

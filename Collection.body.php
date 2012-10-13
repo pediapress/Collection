@@ -40,65 +40,61 @@ class SpecialCollection extends SpecialPage {
 	 * @return String
 	 */
 	function getDescription() {
-		return $this->msg( 'coll-collection' )->escaped();
+		return wfMsg( 'coll-collection' );
 	}
 
 	/**
 	 * @param $par null|string
 	 */
 	function execute( $par ) {
-		global $wgCollectionMaxArticles;
-
-		$out = $this->getOutput();
-		$request = $this->getRequest();
-		$user = $this->getUser();
+		global $wgOut, $wgRequest, $wgUser, $wgCollectionMaxArticles;
 
 		// support previous URLs (e.g. used in templates) which used the "$par" part
 		// (i.e. subpages of the Special page)
 		if ( $par ) {
-			if ( $request->wasPosted() ) { // don't redirect POST reqs
+			if ( $wgRequest->wasPosted() ) { // don't redirect POST reqs
 				// TODO
 			}
-			$out->redirect( wfAppendQuery(
+			$wgOut->redirect( wfAppendQuery(
 				SkinTemplate::makeSpecialUrl( 'Book' ),
-				$request->appendQueryArray( array( 'bookcmd' => rtrim( $par, '/' ) ), true )
+				$wgRequest->appendQueryArray( array( 'bookcmd' => rtrim( $par, '/' ) ), true )
 			) );
 			return;
 		}
 
-		switch ( $request->getVal( 'bookcmd', '' ) ) {
+		switch ( $wgRequest->getVal( 'bookcmd', '' ) ) {
 			case 'book_creator':
-				$this->renderBookCreatorPage( $request->getVal( 'referer', '' ), $par );
+				$this->renderBookCreatorPage( $wgRequest->getVal( 'referer', '' ), $par );
 				return;
 
 			case 'start_book_creator':
-				$title = Title::newFromText( $request->getVal( 'referer', '' ) );
+				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
 				if ( is_null( $title ) ) {
 					$title = Title::newMainPage();
 				}
 				CollectionSession::enable();
-				$out->redirect( $title->getFullURL() );
+				$wgOut->redirect( $title->getFullURL() );
 				return;
 			case 'stop_book_creator':
-				$title = Title::newFromText( $request->getVal( 'referer', '' ) );
+				$title = Title::newFromText( $wgRequest->getVal( 'referer', '' ) );
 				if ( is_null( $title ) || $title->equals( $this->getTitle( $par ) ) ) {
 					$title = Title::newMainPage();
 				}
-				if ( $request->getVal( 'disable' ) ) {
+				if ( $wgRequest->getVal( 'disable' ) ) {
 					CollectionSession::disable();
-				} elseif ( !$request->getVal( 'continue' ) ) {
+				} elseif ( !$wgRequest->getVal( 'continue' ) ) {
 					$this->renderStopBookCreatorPage( $title );
 					return;
 				}
-				$out->redirect( $title->getFullURL() );
+				$wgOut->redirect( $title->getFullURL() );
 				return;
 			case 'add_article':
 				if ( CollectionSession::countArticles() >= $wgCollectionMaxArticles ) {
 					self::limitExceeded();
 					return;
 				}
-				$oldid = $request->getInt( 'oldid', 0 );
-				$title = Title::newFromText( $request->getVal( 'arttitle', '' ) );
+				$oldid = $wgRequest->getInt( 'oldid', 0 );
+				$title = Title::newFromText( $wgRequest->getVal( 'arttitle', '' ) );
 				if ( !$title ) {
 					return;
 				}
@@ -108,17 +104,17 @@ class SpecialCollection extends SpecialPage {
 					} else {
 						$redirectURL = $title->getFullURL( 'oldid=' . $oldid );
 					}
-					$out->redirect( $redirectURL );
+					$wgOut->redirect( $redirectURL );
 				} else {
-					$out->showErrorPage(
+					$wgOut->showErrorPage(
 						'coll-couldnotaddarticle_title',
 						'coll-couldnotaddarticle_msg'
 					);
 				}
 				return;
 			case 'remove_article':
-				$oldid = $request->getInt( 'oldid', 0 );
-				$title = Title::newFromText( $request->getVal( 'arttitle', '' ) );
+				$oldid = $wgRequest->getInt( 'oldid', 0 );
+				$title = Title::newFromText( $wgRequest->getVal( 'arttitle', '' ) );
 				if ( !$title ) {
 					return;
 				}
@@ -128,9 +124,9 @@ class SpecialCollection extends SpecialPage {
 					} else {
 						$redirectURL = $title->getFullURL( 'oldid=' . $oldid );
 					}
-					$out->redirect( $redirectURL );
+					$wgOut->redirect( $redirectURL );
 				} else {
-					$out->showErrorPage(
+					$wgOut->showErrorPage(
 						'coll-couldnotremovearticle_title',
 						'coll-couldnotremovearticle_msg'
 					);
@@ -138,7 +134,7 @@ class SpecialCollection extends SpecialPage {
 				return;
 			case 'clear_collection':
 				CollectionSession::clearCollection();
-				$redirect = $request->getVal( 'return_to' );
+				$redirect = $wgRequest->getVal( 'return_to' );
 				$redirectURL = SkinTemplate::makeSpecialUrl( 'Book' );
 				if ( !empty( $redirect ) ) {
 					$title = Title::newFromText( $redirect );
@@ -146,88 +142,85 @@ class SpecialCollection extends SpecialPage {
 						$redirectURL = $title->getFullURL();
 					}
 				}
-				$out->redirect( $redirectURL );
+				$wgOut->redirect( $redirectURL );
 				return;
 			case 'set_titles':
-				self::setTitles(
-					$request->getText( 'collectionTitle', '' ),
-					$request->getText( 'collectionSubtitle', '' )
-				);
-				$out->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
+				self::setTitles( $wgRequest->getText( 'collectionTitle', '' ), $wgRequest->getText( 'collectionSubtitle', '' ) );
+				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
 			case 'sort_items':
 				self::sortItems();
-				$out->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
+				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
 			case 'add_category':
-				$title = Title::makeTitleSafe( NS_CATEGORY, $request->getVal( 'cattitle', '' ) );
+				$title = Title::makeTitleSafe( NS_CATEGORY, $wgRequest->getVal( 'cattitle', '' ) );
 				if ( self::addCategory( $title ) ) {
 					self::limitExceeded();
 					return;
 				} else {
-					$out->redirect( $request->getVal( 'return_to', $title->getFullURL() ) );
+					$wgOut->redirect( $wgRequest->getVal( 'return_to', $title->getFullURL() ) );
 				}
 				return;
 			case 'remove_item':
-				self::removeItem( $request->getInt( 'index', 0 ) );
-				$out->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
+				self::removeItem( $wgRequest->getInt( 'index', 0 ) );
+				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
 			case 'move_item':
-				self::moveItem( $request->getInt( 'index', 0 ), $request->getInt( 'delta', 0 ) );
-				$out->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
+				self::moveItem( $wgRequest->getInt( 'index', 0 ), $wgRequest->getInt( 'delta', 0 ) );
+				$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 				return;
 			case 'load_collection':
-				$title = Title::newFromText( $request->getVal( 'colltitle', '' ) );
+				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
 				if ( !$title ) {
 					return;
 				}
-				if ( $request->getVal( 'cancel' ) ) {
-					$out->redirect( $title->getFullURL() );
+				if ( $wgRequest->getVal( 'cancel' ) ) {
+					$wgOut->redirect( $title->getFullURL() );
 					return;
 				}
 				if ( !CollectionSession::countArticles()
-					 || $request->getVal( 'overwrite' )
-					 || $request->getVal( 'append' ) ) {
-					$collection = $this->loadCollection( $title, $request->getVal( 'append' ) );
+					 || $wgRequest->getVal( 'overwrite' )
+					 || $wgRequest->getVal( 'append' ) ) {
+					$collection = $this->loadCollection( $title, $wgRequest->getVal( 'append' ) );
 					if ( $collection ) {
 						CollectionSession::startSession();
 						CollectionSession::setCollection( $collection );
 						CollectionSession::enable();
-						$out->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
+						$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 					}
 					return;
 				}
 				$this->renderLoadOverwritePage( $title );
 				return;
 			case 'order_collection':
-				$title = Title::newFromText( $request->getVal( 'colltitle', '' ) );
+				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
 				if ( !$title ) {
 					return;
 				}
 				$collection = $this->loadCollection( $title );
-				$partner = $request->getVal( 'partner', key( $this->mPODPartners ) );
+				$partner = $wgRequest->getVal( 'partner', key( $this->mPODPartners ) );
 				$this->postZIP( $collection, $partner );
 				return;
 			case 'save_collection':
-				if ( $request->getVal( 'abort' ) ) {
-					$out->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
+				if ( $wgRequest->getVal( 'abort' ) ) {
+					$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book' ) );
 					return;
 				}
-				if ( !$user->matchEditToken( $request->getVal( 'token' ) ) ) {
+				if ( !$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) {
 					return;
 				}
-				$colltype = $request->getVal( 'colltype' );
+				$colltype = $wgRequest->getVal( 'colltype' );
 				$prefixes = self::getBookPagePrefixes();
 				$title = null;
 				if ( $colltype == 'personal' ) {
-					$collname = $request->getVal( 'pcollname' );
-					if ( !$user->isAllowed( 'collectionsaveasuserpage' ) || empty( $collname ) ) {
+					$collname = $wgRequest->getVal( 'pcollname' );
+					if ( !$wgUser->isAllowed( 'collectionsaveasuserpage' ) || empty( $collname ) ) {
 						return;
 					}
 					$title = Title::newFromText( $prefixes['user-prefix'] . $collname );
 				} elseif ( $colltype == 'community' ) {
-					$collname = $request->getVal( 'ccollname' );
-					if ( !$user->isAllowed( 'collectionsaveascommunitypage' ) || empty( $collname ) ) {
+					$collname = $wgRequest->getVal( 'ccollname' );
+					if ( !$wgUser->isAllowed( 'collectionsaveascommunitypage' ) || empty( $collname ) ) {
 						return;
 					}
 					$title = Title::newFromText( $prefixes['community-prefix'] . $collname );
@@ -235,14 +228,14 @@ class SpecialCollection extends SpecialPage {
 				if ( !$title ) {
 					return;
 				}
-				if ( $this->saveCollection( $title, $request->getBool( 'overwrite' ) ) ) {
-					$out->redirect( $title->getFullURL() );
+				if ( $this->saveCollection( $title, $wgRequest->getBool( 'overwrite' ) ) ) {
+					$wgOut->redirect( $title->getFullURL() );
 				} else {
 					$this->renderSaveOverwritePage(
 						$colltype,
 						$title,
-						$request->getVal( 'pcollname' ),
-						$request->getVal( 'ccollname' )
+						$wgRequest->getVal( 'pcollname' ),
+						$wgRequest->getVal( 'ccollname' )
 					);
 				}
 				return;
@@ -250,7 +243,7 @@ class SpecialCollection extends SpecialPage {
 				$this->renderCollection(
 					CollectionSession::getCollection(),
 					SpecialPage::getTitleFor( 'Book' ),
-					$request->getVal( 'writer', '' )
+					$wgRequest->getVal( 'writer', '' )
 				);
 				return;
 			case 'forcerender':
@@ -263,34 +256,34 @@ class SpecialCollection extends SpecialPage {
 				$this->download();
 				return;
 			case 'render_article':
-				$title = Title::newFromText( $request->getVal( 'arttitle', '' ) );
+				$title = Title::newFromText( $wgRequest->getVal( 'arttitle', '' ) );
 				if ( !$title ) {
 					return;
 				}
-				$oldid = $request->getInt( 'oldid', 0 );
-				$this->renderArticle( $title, $oldid, $request->getVal( 'writer', 'rl' ) );
+				$oldid = $wgRequest->getInt( 'oldid', 0 );
+				$this->renderArticle( $title, $oldid, $wgRequest->getVal( 'writer', 'rl' ) );
 				return;
 			case 'render_collection':
-				$title = Title::newFromText( $request->getVal( 'colltitle', '' ) );
+				$title = Title::newFromText( $wgRequest->getVal( 'colltitle', '' ) );
 				if ( !$title ) {
 					return;
 				}
 				$collection = $this->loadCollection( $title );
 				if ( $collection ) {
-					$this->renderCollection( $collection, $title, $request->getVal( 'writer', 'rl' ) );
+					$this->renderCollection( $collection, $title, $wgRequest->getVal( 'writer', 'rl' ) );
 				}
 				return;
 			case 'post_zip':
-				$partner = $request->getVal( 'partner', 'pediapress' );
+				$partner = $wgRequest->getVal( 'partner', 'pediapress' );
 				$this->postZIP( CollectionSession::getCollection(), $partner );
 				return;
 			case 'suggest':
-				$add = $request->getVal( 'add' );
-				$ban = $request->getVal( 'ban' );
-				$remove = $request->getVal( 'remove' );
-				$addselected = $request->getVal( 'addselected' );
+				$add = $wgRequest->getVal( 'add' );
+				$ban = $wgRequest->getVal( 'ban' );
+				$remove = $wgRequest->getVal( 'remove' );
+				$addselected = $wgRequest->getVal( 'addselected' );
 
-				if ( $request->getVal( 'resetbans' ) ) {
+				if ( $wgRequest->getVal( 'resetbans' ) ) {
 					CollectionSuggest::run( 'resetbans' );
 				} elseif ( isset( $add ) ) {
 					CollectionSuggest::run( 'add', $add );
@@ -299,7 +292,7 @@ class SpecialCollection extends SpecialPage {
 				} elseif ( isset( $remove ) ) {
 					CollectionSuggest::run( 'remove', $remove );
 				} elseif ( isset( $addselected ) ) {
-					$articleList = $request->getArray( 'articleList' );
+					$articleList = $wgRequest->getArray( 'articleList' );
 					if ( !is_null( $articleList ) ) {
 						CollectionSuggest::run( 'addAll', $articleList );
 					} else {
@@ -313,7 +306,7 @@ class SpecialCollection extends SpecialPage {
 				$this->renderSpecialPage();
 				return;
 			default:
-				$out->showErrorPage( 'coll-unknown_subpage_title', 'coll-unknown_subpage_text' );
+				$wgOut->showErrorPage( 'coll-unknown_subpage_title', 'coll-unknown_subpage_text' );
 		}
 	}
 
@@ -323,20 +316,18 @@ class SpecialCollection extends SpecialPage {
 	 * @return mixed
 	 */
 	function renderBookCreatorPage( $referer, $par ) {
-		global $wgJsMimeType;
-
-		$out = $this->getOutput();
+		global $wgOut, $wgJsMimeType;
 
 		$this->setHeaders();
-		$out->setPageTitle( $this->msg( 'coll-book_creator' ) );
+		$wgOut->setPageTitle( wfMsg( 'coll-book_creator' ) );
 
-		$out->addWikiMsg( 'coll-book_creator_intro' );
+		$wgOut->addWikiMsg( 'coll-book_creator_intro' );
 
-		$out->addModules( 'ext.collection.checkLoadFromLocalStorage' );
+		$wgOut->addModules( 'ext.collection.checkLoadFromLocalStorage' );
 
-		$dialogtxt = $this->msg( 'coll-load_local_book' )->text();
+		$dialogtxt = wfMsg( 'coll-load_local_book' );
 
-		$out->addScript(
+		$wgOut->addScript(
 			"<script type=\"$wgJsMimeType\">\n" .
 			"var collection_dialogtxt = " . Xml::encodeJsVar( $dialogtxt ) . ";\n" .
 			"</script>" );
@@ -346,7 +337,7 @@ class SpecialCollection extends SpecialPage {
 			$title = Title::newMainPage();
 		}
 
-		$out->addHTML(
+		$wgOut->addHTML(
 			Xml::tags( 'div',
 				array(
 					'style' => 'margin: 10px 0;',
@@ -366,7 +357,7 @@ class SpecialCollection extends SpecialPage {
 							),
 							// TODO: title
 						),
-						$this->msg( 'coll-start_book_creator' )->text()
+						wfMsg( 'coll-start_book_creator' )
 					)
 				)
 				. Xml::tags( 'div',
@@ -375,7 +366,7 @@ class SpecialCollection extends SpecialPage {
 					),
 					Linker::link(
 						$title,
-						$this->msg( 'coll-cancel' )->escaped(),
+						wfMsgHtml( 'coll-cancel' ),
 						array(
 							'rel' => 'nofollow',
 							// TOOD: title
@@ -393,29 +384,29 @@ class SpecialCollection extends SpecialPage {
 			)
 		);
 
-		$title_string = $this->msg( 'coll-book_creator_text_article' )->inContentLanguage()->text();
+		$title_string = wfMsgForContent( 'coll-book_creator_text_article' );
 		$t = Title::newFromText( $title_string );
 		if ( !is_null( $t ) ) {
-			$wikiPage = WikiPage::factory( $t );
-			if ( $wikiPage->exists() ) {
-				$out->addWikiText( '{{:' . $title_string . '}}' );
+			$a = new Article( $t );
+			if ( $a->exists() ) {
+				$wgOut->addWikiText( '{{:' . $title_string . '}}' );
 				return;
 			}
 		}
-		$out->addWikiMsg( 'coll-book_creator_help' );
+		$wgOut->addWikiMsg( 'coll-book_creator_help' );
 	}
 
 	/**
 	 * @param $referer
 	 */
 	function renderStopBookCreatorPage( $referer ) {
-		$out = $this->getOutput();
+		global $wgOut;
 
 		$this->setHeaders();
-		$out->setPageTitle( $this->msg( 'coll-book_creator_disable' ) );
-		$out->addWikiMsg( 'coll-book_creator_disable_text' );
+		$wgOut->setPageTitle( wfMsg( 'coll-book_creator_disable' ) );
+		$wgOut->addWikiMsg( 'coll-book_creator_disable_text' );
 
-		$out->addHTML(
+		$wgOut->addHTML(
 			Xml::tags( 'form',
 				array(
 					'action' => SkinTemplate::makeSpecialUrl(
@@ -434,14 +425,14 @@ class SpecialCollection extends SpecialPage {
 				. Xml::element( 'input',
 					array(
 						'type' => 'submit',
-						'value' => $this->msg( 'coll-book_creator_continue' )->text(),
+						'value' => wfMsg( 'coll-book_creator_continue' ),
 						'name' => 'continue',
 					)
 				)
 				. Xml::element( 'input',
 					array(
 						'type' => 'submit',
-						'value' => $this->msg( 'coll-book_creator_disable' )->text(),
+						'value' => wfMsg( 'coll-book_creator_disable' ),
 						'name' => 'disable',
 					)
 				)
@@ -457,40 +448,38 @@ class SpecialCollection extends SpecialPage {
 
 		$result = array();
 
-		$t = wfMessage( 'coll-user_book_prefix', $wgUser->getName() )->inContentLanguage();
-		if ( $t->isDisabled()  ) {
+		$t = wfMsgForContent( 'coll-user_book_prefix', $wgUser->getName() );
+		if ( wfEmptyMsg( 'coll-user_book_prefix', $t ) || $t == '-' ) {
 			$userPageTitle = $wgUser->getUserPage()->getPrefixedText();
 			$result['user-prefix'] = $userPageTitle . '/'
-				. wfMessage( 'coll-collections' )->inContentLanguage()->text() . '/';
+				. wfMsgForContent( 'coll-collections' ) . '/';
 		} else {
-			$result['user-prefix'] = $t->text();
+			$result['user-prefix'] = $t;
 		}
 
-		$comBookPrefix = wfMessage( 'coll-community_book_prefix' )->inContentLanguage();
-		if ( $comBookPrefix->isDisabled() ) {
+		$t = wfMsgForContent( 'coll-community_book_prefix' );
+		if ( wfEmptyMsg( 'coll-community_book_prefix', $t ) || $t == '-' ) {
 			$title = Title::makeTitle(
 				$wgCommunityCollectionNamespace,
-				wfMessage( 'coll-collections' )->inContentLanguage()->text()
+				wfMsgForContent( 'coll-collections' )
 			);
 			$result['community-prefix'] = $title->getPrefixedText() . '/';
 		} else {
-			$result['community-prefix'] = $comBookPrefix->text();
+			$result['community-prefix'] = $t;
 		}
 		return $result;
 	}
 
 	function renderSpecialPage() {
-		global $wgCollectionFormats;
+		global $wgCollectionFormats, $wgOut;
 
 		if ( !CollectionSession::hasSession() ) {
 			CollectionSession::startSession();
 		}
 
-		$out = $this->getOutput();
-
 		$this->setHeaders();
-		$out->setPageTitle( $this->msg( 'coll-manage_your_book' )->text() );
-		$out->addModules( 'ext.collection' );
+		$wgOut->setPageTitle( wfMsg( 'coll-manage_your_book' ) );
+		$wgOut->addModules( 'ext.collection' );
 
 		$template = new CollectionPageTemplate();
 		$template->set( 'collection', CollectionSession::getCollection() );
@@ -499,7 +488,7 @@ class SpecialCollection extends SpecialPage {
 		$prefixes = self::getBookPagePrefixes();
 		$template->set( 'user-book-prefix', $prefixes['user-prefix'] );
 		$template->set( 'community-book-prefix', $prefixes['community-prefix'] );
-		$out->addTemplate( $template );
+		$wgOut->addTemplate( $template );
 	}
 
 	/**
@@ -825,7 +814,7 @@ class SpecialCollection extends SpecialPage {
 				return null;
 			}
 			if ( $oldid < 0 ) {
-				$article = new WikiPage( $articleTitle );
+				$article = new Article( $articleTitle );
 			} else {
 				$article = new Article( $articleTitle, $oldid );
 				$oldid = $article->getOldID();
@@ -866,15 +855,15 @@ class SpecialCollection extends SpecialPage {
 	 * @return array|bool
 	 */
 	function loadCollection( $title, $append = false ) {
-		$out = $this->getOutput();
+		global $wgOut;
 
 		if ( is_null( $title ) ) {
-			$out->showErrorPage( 'coll-notitle_title', 'coll-notitle_msg' );
+			$wgOut->showErrorPage( 'coll-notitle_title', 'coll-notitle_msg' );
 			return null;
 		}
 
 		if ( !$title->exists() ) {
-			$out->showErrorPage( 'coll-notfound_title', 'coll-notfound_msg' );
+			$wgOut->showErrorPage( 'coll-notfound_title', 'coll-notfound_msg' );
 			return false;
 		}
 
@@ -907,11 +896,13 @@ class SpecialCollection extends SpecialPage {
 	 * @return bool
 	 */
 	function saveCollection( $title, $forceOverwrite = false ) {
-		$wikiPage = WikiPage::factory( $title );
-		if ( $wikiPage->exists() && !$forceOverwrite ) {
+		global $wgRequest, $wgUser;
+
+		$article = new Article( $title );
+		if ( $article->exists() && !$forceOverwrite ) {
 			return false;
 		}
-		$articleText = "{{" . $this->msg( 'coll-savedbook_template' )->inContentLanguage()->text() . "}}\n\n";
+		$articleText = "{{" . wfMsgForContent( 'coll-savedbook_template' ) . "}}\n\n";
 		$collection = CollectionSession::getCollection();
 		if ( $collection['title'] ) {
 			$articleText .= '== ' . $collection['title'] . " ==\n";
@@ -944,21 +935,21 @@ class SpecialCollection extends SpecialPage {
 				// $articleText .= $item['revision'] . "/" . $item['latest']."\n";
 			}
 		}
-		$t = $this->msg( 'coll-bookscategory' )->inContentLanguage();
-		if ( !$t->isDisabled() ) {
-			$catTitle = Title::makeTitle( NS_CATEGORY, $t->text() );
+		$t = wfMsgForContent( 'coll-bookscategory' );
+		if ( !wfEmptyMsg( 'coll-bookscategory', $t ) && $t != '-' ) {
+			$catTitle = Title::makeTitle( NS_CATEGORY, $t );
 			if ( !is_null( $catTitle ) ) {
 				$articleText .= "\n[[" . $catTitle->getPrefixedText() . "|" . wfEscapeWikiText( $title->getSubpageText() ) . "]]\n";
 			}
 		}
 
 		$req = new DerivativeRequest(
-			$this->getRequest(),
+			$wgRequest,
 			array(
 				'action' => 'edit',
 				'title' => $title->getPrefixedText(),
 				'text' => $articleText,
-				'token' => $this->getUser()->getEditToken(),
+				'token' => $wgUser->editToken(),
 		), true);
 		$api = new ApiMain( $req, true );
 		$api->execute();
@@ -976,16 +967,16 @@ class SpecialCollection extends SpecialPage {
 			"type" => "license",
 		);
 
-		$from_msg = $this->msg( 'coll-license_url' )->inContentLanguage();
-		if ( !$from_msg->isDisabled() ) {
-			$licenseInfo['mw_license_url'] = $from_msg->text();
+		$from_msg = wfMsgForContent( 'coll-license_url' );
+		if ( !wfEmptyMsg( 'coll-license_url', $from_msg ) && $from_msg != '-' ) {
+			$licenseInfo['mw_license_url'] = $from_msg;
 			return array( $licenseInfo );
 		}
 
 		if ( $wgCollectionLicenseName ) {
 			$licenseInfo['name'] = $wgCollectionLicenseName;
 		} else {
-			$licenseInfo['name'] = $this->msg( 'coll-license' )->inContentLanguage()->text();
+			$licenseInfo['name'] = wfMsgForContent( 'coll-license' );
 		}
 
 		if ( $wgCollectionLicenseURL ) {
@@ -1050,7 +1041,7 @@ class SpecialCollection extends SpecialPage {
 	 * @param $writer
 	 */
 	function renderCollection( $collection, $referrer, $writer ) {
-		global $wgContLang, $wgScriptPath, $wgScriptExtension;
+		global $wgOut, $wgContLang, $wgScriptPath, $wgScriptExtension;
 
 		if ( !$writer ) {
 			$writer = 'rl';
@@ -1060,10 +1051,10 @@ class SpecialCollection extends SpecialPage {
 			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => wfExpandUrl( $wgScriptPath, PROTO_CURRENT ),
 			'script_extension' => $wgScriptExtension,
-			'template_blacklist' => $this->msg( 'coll-template_blacklist_title' )->inContentLanguage()->plain(),
-			'template_exclusion_category' => $this->msg( 'coll-exclusion_category_title' )->inContentLanguage()->plain(),
-			'print_template_prefix' => $this->msg( 'coll-print_template_prefix' )->inContentLanguage()->plain(),
-			'print_template_pattern' => $this->msg( 'coll-print_template_pattern' )->inContentLanguage()->plain(),
+			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
+			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
+			'print_template_prefix' => wfMsgForContent( 'coll-print_template_prefix' ),
+			'print_template_pattern' => wfMsgForContent( 'coll-print_template_pattern' ),
 			'language' => $wgContLang->getCode(),
 			'writer' => $writer,
 		) );
@@ -1080,25 +1071,23 @@ class SpecialCollection extends SpecialPage {
 			$query .= '&is_cached=1';
 		}
 		$redirect = SkinTemplate::makeSpecialUrl( 'Book', $query );
-		$this->getOutput()->redirect( $redirect );
+		$wgOut->redirect( $redirect );
 	}
 
 	function forceRenderCollection() {
-		global $wgContLang, $wgScriptPath, $wgScriptExtension;
+		global $wgOut, $wgContLang, $wgRequest, $wgScriptPath, $wgScriptExtension;
 
-		$request = $this->getRequest();
-
-		$collectionID = $request->getVal( 'collection_id', '' );
-		$writer = $request->getVal( 'writer', 'rl' );
+		$collectionID = $wgRequest->getVal( 'collection_id', '' );
+		$writer = $wgRequest->getVal( 'writer', 'rl' );
 
 		$response = self::mwServeCommand( 'render', array(
 			'collection_id' => $collectionID,
 			'base_url' => wfExpandUrl( $wgScriptPath, PROTO_CURRENT ),
 			'script_extension' => $wgScriptExtension,
-			'template_blacklist' => $this->msg( 'coll-template_blacklist_title' )->inContentLanguage()->plain(),
-			'template_exclusion_category' => $this->msg( 'coll-exclusion_category_title' )->inContentLanguage()->plain(),
-			'print_template_prefix' => $this->msg( 'coll-print_template_prefix' )->inContentLanguage()->plain(),
-			'print_template_pattern' => $this->msg( 'coll-print_template_pattern' )->inContentLanguage()->plain(),
+			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
+			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
+			'print_template_prefix' => wfMsgForContent( 'coll-print_template_prefix' ),
+			'print_template_pattern' => wfMsgForContent( 'coll-print_template_pattern' ),
 			'language' => $wgContLang->getCode(),
 			'writer' => $writer,
 			'force_render' => true
@@ -1109,21 +1098,21 @@ class SpecialCollection extends SpecialPage {
 		}
 
 		$query = 'bookcmd=rendering'
-			. '&return_to=' . $request->getVal( 'return_to', '' )
+			. '&return_to=' . $wgRequest->getVal( 'return_to', '' )
 			. '&collection_id=' . urlencode( $response['collection_id'] )
 			. '&writer=' . urlencode( $response['writer'] );
 		if ( $response['is_cached'] ) {
 			$query .= '&is_cached=1';
 		}
-		$this->getOutput()->redirect( SkinTemplate::makeSpecialUrl( 'Book', $query ) );
+		$wgOut->redirect( SkinTemplate::makeSpecialUrl( 'Book', $query ) );
 	}
 
 	function renderRenderingPage() {
-		$request = $this->getRequest();
+		global $wgLang, $wgOut, $wgRequest;
 
 		$response = self::mwServeCommand( 'render_status', array(
-			'collection_id' => $request->getVal( 'collection_id' ),
-			'writer' => $request->getVal( 'writer' ),
+			'collection_id' => $wgRequest->getVal( 'collection_id' ),
+			'writer' => $wgRequest->getVal( 'writer' ),
 		) );
 		if ( !$response ) {
 			return; // FIXME?
@@ -1131,32 +1120,29 @@ class SpecialCollection extends SpecialPage {
 
 		$this->setHeaders();
 
-		$return_to = $request->getVal( 'return_to' );
+		$return_to = $wgRequest->getVal( 'return_to' );
 
 		$query = 'collection_id=' . urlencode( $response['collection_id'] )
 			. '&writer=' . urlencode( $response['writer'] )
 			. '&return_to=' . urlencode( $return_to );
 
-		$out = $this->getOutput();
-
 		switch ( $response['state'] ) {
 		case 'progress':
-			$out->addHeadItem( 'refresh-nojs', '<noscript><meta http-equiv="refresh" content="2" /></noscript>' );
-			$out->addInlineScript( 'var collection_id = "' . urlencode( $response['collection_id'] ) . '";' );
-			$out->addInlineScript( 'var writer = "' . urlencode( $response['writer'] ) . '";' );
-			$out->addInlineScript( 'var collection_rendering = true;' );
-			$out->addModules( 'ext.collection' );
-			$out->setPageTitle( $this->msg( 'coll-rendering_title' ) );
+			$wgOut->addHeadItem( 'refresh-nojs', '<noscript><meta http-equiv="refresh" content="2" /></noscript>' );
+			$wgOut->addInlineScript( 'var collection_id = "' . urlencode( $response['collection_id'] ) . '";' );
+			$wgOut->addInlineScript( 'var writer = "' . urlencode( $response['writer'] ) . '";' );
+			$wgOut->addInlineScript( 'var collection_rendering = true;' );
+			$wgOut->addModules( 'ext.collection' );
+			$wgOut->setPageTitle( wfMsg( 'coll-rendering_title' ) );
 
 			if ( isset( $response['status']['status'] ) && $response['status']['status'] ) {
 				$statusText = $response['status']['status'];
 				if ( isset( $response['status']['article'] ) && $response['status']['article'] ) {
-					$statusText .= ' ' . $this->msg( 'coll-rendering_article', $response['status']['article'] )->text();
+					$statusText .= ' ' . wfMsg( 'coll-rendering_article', $response['status']['article'] );
 				} elseif ( isset( $response['status']['page'] ) && $response['status']['page'] ) {
-					$statusText .= ' ';
-					$statusText .= $this->msg( 'coll-rendering_page' )->numParams( $response['status']['page'] )->text();
+					$statusText .= ' ' . wfMsg( 'coll-rendering_page', $wgLang->formatNum( $response['status']['page'] ) );
 				}
-				$status = $this->msg( 'coll-rendering_status', $statusText )->text();
+				$status = wfMsg( 'coll-rendering_status', $statusText );
 			} else {
 				$status = '';
 			}
@@ -1167,32 +1153,30 @@ class SpecialCollection extends SpecialPage {
 				$response['status']['progress'] = 1.00;
 			}
 			$template->set( 'progress', $response['status']['progress'] );
-			$out->addTemplate( $template );
+			$wgOut->addTemplate( $template );
 			break;
 		case 'finished':
-			$out->setPageTitle( $this->msg( 'coll-rendering_finished_title' ) );
+			$wgOut->setPageTitle( wfMsg( 'coll-rendering_finished_title' ) );
 
 			$template = new CollectionFinishedTemplate();
 			$template->set( 'download_url', wfExpandUrl( SkinTemplate::makeSpecialUrl( 'Book', 'bookcmd=download&' . $query ), PROTO_CURRENT ) );
-			$template->set( 'is_cached', $request->getVal( 'is_cached' ) );
+			$template->set( 'is_cached', $wgRequest->getVal( 'is_cached' ) );
 			$template->set( 'query', $query );
 			$template->set( 'return_to', $return_to );
-			$out->addTemplate( $template );
+			$wgOut->addTemplate( $template );
 			break;
 		default:
-			$out->addWikiText( 'state: ' . $response['state'] );
+			$wgOut->addWikiText( 'state: ' . $response['state'] );
 		}
 	}
 
 	function download() {
-		global $wgCollectionContentTypeToFilename;
-
-		$request = $this->getRequest();
+		global $wgOut, $wgRequest, $wgCollectionContentTypeToFilename;
 
 		$this->tempfile = tmpfile();
 		$r = self::mwServeCommand( 'render_status', array(
-			'collection_id' => $request->getVal( 'collection_id' ),
-			'writer' => $request->getVal( 'writer' ),
+			'collection_id' => $wgRequest->getVal( 'collection_id' ),
+			'writer' => $wgRequest->getVal( 'writer' ),
 		) );
 
 		$info = false;
@@ -1207,15 +1191,15 @@ class SpecialCollection extends SpecialPage {
 			$content_disposition = $r['content_disposition'];
 		} else {
 			$info = self::mwServeCommand( 'download', array(
-				'collection_id' => $request->getVal( 'collection_id' ),
-				'writer' => $request->getVal( 'writer' ),
+				'collection_id' => $wgRequest->getVal( 'collection_id' ),
+				'writer' => $wgRequest->getVal( 'writer' ),
 			) );
 			$content_type = $info['content_type'];
 			$content_length = $info['download_content_length'];
 			$content_disposition = null;
 		}
 		if ( !$info ) {
-			$this->getOutput()->showErrorPage( 'coll-download_notfound_title', 'coll-download_notfound_text' );
+			$wgOut->showErrorPage( 'coll-download_notfound_title', 'coll-download_notfound_text' );
 			return;
 		}
 		wfResetOutputBuffers();
@@ -1232,7 +1216,7 @@ class SpecialCollection extends SpecialPage {
 		}
 		fseek( $this->tempfile, 0 );
 		fpassthru( $this->tempfile );
-		$this->getOutput()->disable();
+		$wgOut->disable();
 	}
 
 	/**
@@ -1246,12 +1230,15 @@ class SpecialCollection extends SpecialPage {
 
 	/**
 	 * @param $title Title
-	 * @param $oldid int
+	 * @param $oldid
 	 * @param $writer
+	 * @return
 	 */
 	function renderArticle( $title, $oldid, $writer ) {
+		global $wgOut;
+
 		if ( is_null( $title ) ) {
-			$this->getOutput()->showErrorPage( 'coll-notitle_title', 'coll-notitle_msg' );
+			$wgOut->showErrorPage( 'coll-notitle_title', 'coll-notitle_msg' );
 			return;
 		}
 		$article = array(
@@ -1276,10 +1263,10 @@ class SpecialCollection extends SpecialPage {
 	 * @param $partner
 	 */
 	function postZIP( $collection, $partner ) {
-		global $wgScriptPath, $wgScriptExtension;
+		global $wgScriptPath, $wgScriptExtension, $wgOut;
 
 		if ( !isset( $this->mPODPartners[$partner] ) ) {
-			$this->getOutput()->showErrorPage( 'coll-invalid_podpartner_title', 'coll-invalid_podpartner_msg' );
+			$wgOut->showErrorPage( 'coll-invalid_podpartner_title', 'coll-invalid_podpartner_msg' );
 			return;
 		}
 
@@ -1287,16 +1274,16 @@ class SpecialCollection extends SpecialPage {
 			'metabook' => $this->buildJSONCollection( $collection ),
 			'base_url' => wfExpandUrl( $wgScriptPath, PROTO_CURRENT ),
 			'script_extension' => $wgScriptExtension,
-			'template_blacklist' => $this->msg( 'coll-template_blacklist_title' )->inContentLanguage()->plain(),
-			'template_exclusion_category' => $this->msg( 'coll-exclusion_category_title' )->inContentLanguage()->plain(),
-			'print_template_prefix' => $this->msg( 'coll-print_template_prefix' )->inContentLanguage()->plain(),
-			'print_template_pattern' => $this->msg( 'coll-print_template_pattern' )->inContentLanguage()->plain(),
+			'template_blacklist' => wfMsgForContent( 'coll-template_blacklist_title' ),
+			'template_exclusion_category' => wfMsgForContent( 'coll-exclusion_category_title' ),
+			'print_template_prefix' => wfMsgForContent( 'coll-print_template_prefix' ),
+			'print_template_pattern' => wfMsgForContent( 'coll-print_template_pattern' ),
 			'pod_api_url' => $this->mPODPartners[$partner]['posturl'],
 		) );
 		if ( !$response ) {
 			return;
 		}
-		$this->getOutput()->redirect( $response['redirect_url'] );
+		$wgOut->redirect( $response['redirect_url'] );
 	}
 
 	/**
@@ -1306,27 +1293,31 @@ class SpecialCollection extends SpecialPage {
 	 * @param $ccollname
 	 */
 	private function renderSaveOverwritePage( $colltype, $title, $pcollname, $ccollname ) {
+		global $wgOut;
+
 		$this->setHeaders();
-		$this->getOutput()->setPageTitle( $this->msg( 'coll-save_collection' ) );
+		$wgOut->setPageTitle( wfMsg( 'coll-save_collection' ) );
 
 		$template = new CollectionSaveOverwriteTemplate();
 		$template->set( 'title', $title );
 		$template->set( 'pcollname', $pcollname );
 		$template->set( 'ccollname', $ccollname );
 		$template->set( 'colltype', $colltype );
-		$this->getOutput()->addTemplate( $template );
+		$wgOut->addTemplate( $template );
 	}
 
 	/**
 	 * @param $title
 	 */
 	private function renderLoadOverwritePage( $title ) {
+		global $wgOut;
+
 		$this->setHeaders();
-		$this->getOutput()->setPageTitle( $this->msg( 'coll-load_collection' ) );
+		$wgOut->setPageTitle( wfMsg( 'coll-load_collection' ) );
 
 		$template = new CollectionLoadOverwriteTemplate();
 		$template->set( 'title', $title );
-		$this->getOutput()->addTemplate( $template );
+		$wgOut->addTemplate( $template );
 	}
 
 	/**
@@ -1382,4 +1373,5 @@ class SpecialCollection extends SpecialPage {
 
 		return $json_response;
 	}
+
 }
