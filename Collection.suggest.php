@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Collection Extension for MediaWiki
  *
@@ -30,7 +29,6 @@
  * When clearing a book the method clear() should be called.
  */
 class CollectionSuggest {
-
 	/**
 	 * ===============================================================================
 	 * public methods
@@ -65,7 +63,7 @@ class CollectionSuggest {
 		}
 
 		$template = self::getCollectionSuggestTemplate( $mode, $param );
-		$wgOut->setPageTitle( wfMsg( 'coll-suggest_title' ) );
+		$wgOut->setPageTitle( wfMessage( 'coll-suggest_title' ) );
 		$wgOut->addModules( 'ext.collection.suggest' );
 		$wgOut->addTemplate( $template );
 	}
@@ -86,13 +84,11 @@ class CollectionSuggest {
 	 * @return string html-code for the proposallist and the memberlist
 	 */
 	public static function refresh( $mode, $param ) {
-		global $wgLang;
-
 		$template = self::getCollectionSuggestTemplate( $mode, $param );
 		return array(
 			'suggestions_html' => $template->getProposalList(),
 			'members_html' => $template->getMemberList(),
-			'num_pages' => wfMsgExt( 'coll-n_pages', 'parsemag', $wgLang->formatNum( CollectionSession::countArticles() ) ),
+			'num_pages' => wfMessage( 'coll-n_pages' )->numParams( CollectionSession::countArticles() )->escaped()
 		);
 	}
 
