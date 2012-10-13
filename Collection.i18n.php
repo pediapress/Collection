@@ -12457,6 +12457,7 @@ Zoznam sa aktualizuje vždy po kliknutí na tlačidlo Pridať alebo Odstrániť.
 
 /** Slovenian (slovenščina)
  * @author Dbc334
+ * @author Eleassar
  * @author Freakolowsky
  * @author Smihael
  */
@@ -12573,7 +12574,7 @@ Morda je bila izbrisana in jo je potrebno regenerirati.',
 	'coll-invalid_podpartner_title' => 'Neveljaven partner TNZ',
 	'coll-invalid_podpartner_msg' => 'Izbran POD partner ni veljaven.
 Kontaktirajte vašega MediaWiki skrbnika.',
-	'coll-license' => 'Dovoljenje',
+	'coll-license' => 'Licenca',
 	'coll-return_to' => 'Nazaj na [[:$1]]',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress podatki naročila',
 	'coll-suggest_title' => 'Predlagane strani za vašo knjigo',
