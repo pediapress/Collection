@@ -351,7 +351,7 @@ class CollectionRenderingTemplate extends QuickTemplate {
 <span style="display:none" id="renderingArticle"><?php echo ' ' . wfMsg( 'coll-rendering_article', '%PARAM%' ) ?></span>
 <span style="display:none" id="renderingPage"><?php echo ' ' . wfMsg( 'coll-rendering_page', '%PARAM%' ) ?></span>
 
-<?php echo wfMsg( 'coll-rendering_text', number_format( $this->data['progress'], 2, '.', '' ), $this->data['status'] ) ?>
+<?php echo wfMessage( 'coll-rendering_text' )->numParams( number_format( $this->data['progress'], 2, '.', '' ) )->params( $this->data['status'] )->escaped() ?>
 
 <?php
 		if ( CollectionSession::isEnabled() ) {
