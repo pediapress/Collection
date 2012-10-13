@@ -393,11 +393,7 @@ class Proposals {
 		}
 
 		$article = new Article( $title, 0 );
-		if ( method_exists( $title, 'newFromRedirectRecurse' ) ) {
-			return Title::newFromRedirectRecurse( $article->getContent() );
-		} else {
-			return Title::newFromRedirect( $article->getContent() );
-		}
+		return Title::newFromRedirectRecurse( $article->getContent() );
 	}
 
 	/**
