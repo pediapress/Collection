@@ -1490,6 +1490,7 @@ $messages['bar'] = array(
 /** Belarusian (беларуская)
  * @author Тест
  * @author Хомелка
+ * @author Чаховіч Уладзіслаў
  */
 $messages['be'] = array(
 	'coll-desc' => '[[Special:Book|Стварэнне кніг]]',
@@ -1624,6 +1625,12 @@ $messages['be'] = array(
 	'coll-suggest_undo_tooltip' => 'Адмяніць гэтае дзеянне',
 	'coll-suggest_undo' => 'скасаваць',
 	'coll-load_local_book' => 'Націсніце «Добра» каб працягваць працу з Вашай кнігай %TITLE%, якая ўтрымлівае %NUMPAGES% вікі-старонак. Націсніце «Адмена», каб выдаліць яе і пачаць з пустой кнігі.',
+	'coll-format-rl' => 'e кніга (PDF)',
+	'coll-format-epub' => 'e кніга (EPUB)',
+	'coll-format-odf' => 'тэкставы працэсар (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'захаванне кніг як старонак ўдзельніка',
 	'right-collectionsaveascommunitypage' => 'захаванне кніг як старонак супольнасці',
 );
