@@ -1,6 +1,6 @@
 (function($) {
 
-var script_url = wgServer + ((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
+var script_url = mw.util.wikiScript();
 
 function count_articles(items) {
 	var count = 0;

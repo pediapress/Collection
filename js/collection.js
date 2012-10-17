@@ -44,17 +44,16 @@ function gettext(sel, param/*=null*/) {
 }
 
 function req(func, args, callback) {
-    $.post(script_url, {
-        'action': 'ajax',
-        'rs': 'wfAjaxCollection' + func,
-        'rsargs[]': args
-    }, callback, 'json');
+	$.post(script_url, {
+		'action': 'ajax',
+		'rs': 'wfAjaxCollection' + func,
+		'rsargs[]': args
+	}, callback, 'json');
 }
 
-var script_url = wgServer +
-	((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
+var script_url = mw.util.wikiScript();
 
-var media_path = wgScriptPath + '/extensions/Collection/images/';
+var media_path = mw.config.get('wgScriptPath') + '/extensions/Collection/images/';
 
 var collapseicon = media_path + '/collapse.png';
 var expandicon   = media_path + '/expand.png';
@@ -99,7 +98,7 @@ function clear_collection() {
 				$('#titleInput').val('');
 				$('#subtitleInput').val('');
 				refresh_list(result);
-				req('GetBookCreatorBoxContent', ['showbook', null, wgPageName], function(result2) {
+				req('GetBookCreatorBoxContent', ['showbook', null, mw.config.get('wgPageName')], function(result2) {
 					$('#coll-book_creator_box').html(result2.html);
 				});
 			});
@@ -130,7 +129,7 @@ function remove_item(index) {
 		[index],
 		function(result) {
 			refresh_list(result);
-			req('GetBookCreatorBoxContent', ['showbook', null, wgPageName], function(result2) {
+			req('GetBookCreatorBoxContent', ['showbook', null, mw.config.get('wgPageName')], function(result2) {
 				$('#coll-book_creator_box').html(result2.html);
 			});
 		});
@@ -139,8 +138,8 @@ function remove_item(index) {
 
 function set_titles() {
 	req('SetTitles', [$('#titleInput').val(), $('#subtitleInput').val()], function(result) {
-        wfCollectionSave(result.collection);
-    });
+		wfCollectionSave(result.collection);
+	});
 	return false;
 }
 
@@ -191,7 +190,7 @@ function make_sortable() {
 }
 
 function refresh_list(data) {
-    wfCollectionSave(data.collection);
+	wfCollectionSave(data.collection);
 	$('#collectionListContainer').html(data.html);
 	$('.makeVisible').css('display', 'inline');
 	make_sortable();
@@ -199,7 +198,7 @@ function refresh_list(data) {
 }
 
 $(function() {
-	if (requiredVersion != wgCollectionVersion) {
+	if (requiredVersion != mw.config.get('wgCollectionVersion')) {
 		alert('ERROR: Version mismatch between Javascript and PHP code. Contact admin to fix the installation of Collection extension for MediaWiki.');
 		return;
 	}
