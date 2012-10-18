@@ -298,7 +298,7 @@ $messages['arz'] = array(
 	'coll-book_creator' => 'صاحب الكتاب',
 	'coll-download_as' => 'Download as $1',
 	'coll-download_as_tooltip' => 'Download a $1 version of this wiki page',
-	'coll-disable' => 'disable',
+	'coll-disable' => 'عطّل',
 	'coll-book_creator_disable' => 'Disable الاوپشن بتاع خلق الكتب',
 	'coll-book_creator_disable_tooltip' => 'وقّف استعمال الاوپشن بتاع خلق الكتب',
 	'coll-add_linked_article' => 'زوّد لينك صفحة الwiki فى الكتاب بتاعك',
@@ -927,6 +927,7 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author Metalhead64
  * @author Pill
  * @author Umherirrender
@@ -934,57 +935,60 @@ $messages['da'] = array(
 $messages['de'] = array(
 	'coll-print_export' => 'Drucken/exportieren',
 	'coll-create_a_book' => 'Buch erstellen',
-	'coll-create_a_book_tooltip' => 'Ein Buch oder eine Artikelsammlung erstellen',
+	'coll-create_a_book_tooltip' => 'Ein Buch oder eine Artikelsammlung erstellen.',
 	'coll-book_creator' => 'Buchgenerator',
 	'coll-download_as' => 'Als $1 herunterladen',
-	'coll-download_as_tooltip' => 'Eine $1-Version dieser Wikiseite herunterladen',
+	'coll-download_as_tooltip' => 'Eine $1-Version dieser Wikiseite herunterladen.',
 	'coll-disable' => 'deaktivieren',
 	'coll-book_creator_disable' => 'Buchgenerator deaktivieren',
-	'coll-book_creator_disable_tooltip' => 'Buchgenerator nicht verwenden',
+	'coll-book_creator_disable_tooltip' => 'Den Buchgenerator nicht verwenden.',
 	'coll-add_linked_article' => 'Füge die verlinkte Wikiseite deinem Buch hinzu',
 	'coll-remove_linked_article' => 'Entferne die verlinkte Wikiseite aus deinem Buch',
-	'coll-add_category' => 'Alle Seiten aus dieser Kategorie deinem Buch hinzufügen',
-	'coll-add_category_tooltip' => 'Alle Wikiseiten dieser Kategorie deinem Buch hinzufügen',
-	'coll-add_this_page' => 'Diese Seite zu deinem Buch hinzufügen',
-	'coll-add_page_tooltip' => 'Die aktuelle Wikiseite deinem Buch hinzufügen',
+	'coll-add_category' => 'Alle Seiten in dieser Kategorie deinem Buch hinzufügen',
+	'coll-add_category_tooltip' => 'Alle Wikiseiten in dieser Kategorie deinem Buch hinzufügen.',
+	'coll-add_this_page' => 'Diese Seite deinem Buch hinzufügen',
+	'coll-add_page_tooltip' => 'Die aktuelle Wikiseite deinem Buch hinzufügen.',
 	'coll-bookscategory' => 'Bücher',
 	'coll-clear_collection' => 'Buch löschen',
 	'coll-clear_collection_confirm' => 'Möchtest du wirklich dein Buch löschen?',
-	'coll-clear_collection_tooltip' => 'Alle Wikiseiten aus deinem aktuellen Buch entfernen',
+	'coll-clear_collection_tooltip' => 'Alle Wikiseiten aus deinem aktuellen Buch entfernen.',
 	'coll-help' => 'Hilfe',
-	'coll-help_tooltip' => 'Hilfe zum Erstellen von Büchern anzeigen',
+	'coll-help_tooltip' => 'Die Hilfe zum Erstellen von Büchern anzeigen.',
 	'coll-helppage' => 'Help:Bücher',
 	'coll-load_collection' => 'Buch laden',
-	'coll-load_collection_tooltip' => 'Dieses Buch als dein aktuelles Buch laden',
-	'coll-n_pages' => '$1 {{PLURAL:$1|Wikiseite|Wikiseiten}}',
+	'coll-load_collection_tooltip' => 'Dieses Buch als dein aktuelles Buch laden.',
+	'coll-n_pages' => '$1 {{PLURAL:$1|Seite|Seiten}}',
 	'coll-printable_version_pdf' => 'PDF-Version',
 	'coll-remove_this_page' => 'Diese Seite aus deinem Buch entfernen',
-	'coll-remove_page_tooltip' => 'Die aktuelle Wikiseite aus deinem Buch entfernen',
+	'coll-remove_page_tooltip' => 'Die aktuelle Wikiseite aus deinem Buch entfernen.',
 	'coll-show_collection' => 'Buch zeigen',
-	'coll-show_collection_tooltip' => 'Klicken, um dein Buch zu bearbeiten/herunterzuladen/bestellen',
+	'coll-show_collection_tooltip' => 'Klicken, um dein Buch zu bearbeiten/herunterzuladen/bestellen.',
 	'coll-not_addable' => 'Diese Seite kann nicht hinzugefügt werden',
 	'coll-make_suggestions' => 'Seiten vorschlagen',
-	'coll-make_suggestions_tooltip' => 'Vorschläge basierend auf den Seiten in deinem Buch anzeigen',
+	'coll-make_suggestions_tooltip' => 'Vorschläge basierend auf den Seiten in deinem Buch anzeigen.',
 	'coll-suggest_empty' => 'leer',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Dst
+ * @author Kghbln
  * @author MichaelFrey
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
-	'coll-add_category' => 'Alle Seiten aus dieser Kategorie Ihrem Buch hinzufügen',
-	'coll-add_category_tooltip' => 'Alle Wikiseiten dieser Kategorie Ihrem Buch hinzufügen',
-	'coll-add_this_page' => 'Diese Seite zu Ihrem Buch hinzufügen',
-	'coll-add_page_tooltip' => 'Die aktuelle Wikiseite Ihrem Buch hinzufügen',
+	'coll-add_linked_article' => 'Fügen Sie die verlinkte Wikiseite Ihrem Buch hinzu',
+	'coll-remove_linked_article' => 'Entfernen Sie die verlinkte Wikiseite aus Ihrem Buch',
+	'coll-add_category' => 'Alle Seiten in dieser Kategorie Ihrem Buch hinzufügen',
+	'coll-add_category_tooltip' => 'Alle Wikiseiten in dieser Kategorie Ihrem Buch hinzufügen.',
+	'coll-add_this_page' => 'Diese Seite Ihrem Buch hinzufügen',
+	'coll-add_page_tooltip' => 'Die aktuelle Wikiseite Ihrem Buch hinzufügen.',
 	'coll-clear_collection_confirm' => 'Möchten Sie wirklich Ihr Buch löschen?',
-	'coll-clear_collection_tooltip' => 'Alle Wikiseiten aus Ihrem aktuellen Buch entfernen',
-	'coll-load_collection_tooltip' => 'Dieses Buch als Ihr aktuelles Buch laden',
+	'coll-clear_collection_tooltip' => 'Alle Wikiseiten aus Ihrem aktuellen Buch entfernen.',
+	'coll-load_collection_tooltip' => 'Dieses Buch als Ihr aktuelles Buch laden.',
 	'coll-remove_this_page' => 'Diese Seite aus Ihrem Buch entfernen',
-	'coll-remove_page_tooltip' => 'Die aktuelle Wikiseite aus Ihrem Buch entfernen',
-	'coll-show_collection_tooltip' => 'Klicken, um Ihr Buch zu bearbeiten/herunterzuladen/bestellen',
-	'coll-make_suggestions_tooltip' => 'Vorschläge basierend auf den Seiten in Ihrem Buch anzeigen',
+	'coll-remove_page_tooltip' => 'Die aktuelle Wikiseite aus Ihrem Buch entfernen.',
+	'coll-show_collection_tooltip' => 'Klicken, um Ihr Buch zu bearbeiten/herunterzuladen/bestellen.',
+	'coll-make_suggestions_tooltip' => 'Vorschläge basierend auf den Seiten in Ihrem Buch anzeigen.',
 );
 
 /** Zazaki (Zazaki)
@@ -2030,17 +2034,17 @@ $messages['ilo'] = array(
 	'coll-print_export' => 'Imaldit/ipan',
 	'coll-create_a_book' => 'Agaramid ti libro',
 	'coll-create_a_book_tooltip' => 'Agaramid ti maysa a libro wenno naurnong a panid',
-	'coll-book_creator' => 'Agar-aramid ti libro',
+	'coll-book_creator' => 'Pagaramid ti libro',
 	'coll-download_as' => 'Ikarga a kas $1',
 	'coll-download_as_tooltip' => 'Ikarga ti $1 a bersion iti daytoy a panid ti wiki',
 	'coll-disable' => 'ibaldado',
-	'coll-book_creator_disable' => 'Ibaldado ti agar-aramid ti libro',
-	'coll-book_creator_disable_tooltip' => 'Agsardeng nga agusar ti agar-aramid ti libro',
+	'coll-book_creator_disable' => 'Ibaldado ti pagaramid ti libro',
+	'coll-book_creator_disable_tooltip' => 'Agsardeng nga agusar ti apagaramid ti libro',
 	'coll-add_linked_article' => 'Agnayon kadagiti nasilpuan a panid dita librom',
 	'coll-remove_linked_article' => 'Ikkaten dagiti nasilpuan a panid dita librom',
 	'coll-add_category' => 'Inayon daytoy a kategoria dita librom',
 	'coll-add_category_tooltip' => 'Inayon amin dagiti pampanid iti daytoy a kategoria dita librom',
-	'coll-add_this_page' => 'Inaron daytoy a panid diat librom',
+	'coll-add_this_page' => 'Inaron daytoy a panid dita librom',
 	'coll-add_page_tooltip' => 'Inayon ti agdama a panid ti wiki dita librom',
 	'coll-bookscategory' => 'Dagiti libro',
 	'coll-clear_collection' => 'Dalusan ti libro',
@@ -2191,13 +2195,13 @@ $messages['it'] = array(
 $messages['ja'] = array(
 	'coll-print_export' => '印刷/書き出し',
 	'coll-create_a_book' => 'ブックの新規作成',
-	'coll-create_a_book_tooltip' => 'ブックあるいは記事集を作成する',
+	'coll-create_a_book_tooltip' => 'ブックまたは記事集を作成する',
 	'coll-book_creator' => 'ブッククリエーター',
 	'coll-download_as' => '$1 形式でダウンロード',
 	'coll-download_as_tooltip' => 'このウィキページの$1版をダウンロード',
 	'coll-disable' => '無効化',
 	'coll-book_creator_disable' => 'ブッククリエーターを無効化',
-	'coll-book_creator_disable_tooltip' => 'ブッククリエーターを使うのを止める',
+	'coll-book_creator_disable_tooltip' => 'ブッククリエーターの使用をやめる',
 	'coll-add_linked_article' => 'リンクされているウィキページをブックに追加',
 	'coll-remove_linked_article' => 'あなたの本からウィキページのリンクを削除',
 	'coll-add_category' => 'このカテゴリを自分のブックに追加',
@@ -2206,13 +2210,13 @@ $messages['ja'] = array(
 	'coll-add_page_tooltip' => '現在のページをあなたのブックに追加',
 	'coll-bookscategory' => 'ブック',
 	'coll-clear_collection' => 'ブックを消去',
-	'coll-clear_collection_confirm' => '本当にブックを完全に消去しますか？',
+	'coll-clear_collection_confirm' => 'ブックを本当に完全に消去しますか?',
 	'coll-clear_collection_tooltip' => 'あなたの現在のブックからすべてのウィキページを削除',
 	'coll-help' => 'ヘルプ',
 	'coll-help_tooltip' => 'ブックの作成に関するヘルプを表示する',
 	'coll-helppage' => 'Help:ブック',
 	'coll-load_collection' => 'ブックの読み込み',
-	'coll-load_collection_tooltip' => 'このブックをあなたの現在のブックとして読み込む',
+	'coll-load_collection_tooltip' => 'このブックを読み込んで、自分の現在のブックにする',
 	'coll-n_pages' => '$1 {{PLURAL:$1|ページ}}',
 	'coll-printable_version_pdf' => 'PDF 版',
 	'coll-remove_this_page' => 'このページを自分のブックから削除する',
@@ -2221,7 +2225,7 @@ $messages['ja'] = array(
 	'coll-show_collection_tooltip' => 'クリックしてあなたのブックを編集、ダウンロード、または注文する',
 	'coll-not_addable' => 'このページは追加できません',
 	'coll-make_suggestions' => 'ページの候補',
-	'coll-make_suggestions_tooltip' => 'あなたのブックに保存されたページを元に候補を表示します',
+	'coll-make_suggestions_tooltip' => 'ブック内のページに基づいて候補を表示する',
 	'coll-suggest_empty' => '空',
 );
 
@@ -2309,6 +2313,13 @@ $messages['ka'] = array(
 	'coll-make_suggestions' => 'შეთავაზებული გვერდები',
 	'coll-make_suggestions_tooltip' => 'აჩვენეთ მოსაზრებები, რომლებიც დაფუძნებულია თქვენ წიგნში არსებულ გვერდებზე.',
 	'coll-suggest_empty' => 'ცარიელი',
+);
+
+/** Kabyle (Taqbaylit)
+ * @author Mmistmurt
+ */
+$messages['kab'] = array(
+	'coll-help' => 'Tallat',
 );
 
 /** Kirmanjki (Kırmancki)
@@ -3409,8 +3420,10 @@ $messages['ps'] = array(
 	'coll-create_a_book_tooltip' => 'يو کتاب يا د مخونو ټولګه جوړول',
 	'coll-book_creator' => 'کتاب جوړونکی',
 	'coll-download_as' => 'د $1 په ډول ښکته کول',
+	'coll-download_as_tooltip' => 'د دې ويکي مخ يوه $1 بڼه ښکته کول',
 	'coll-disable' => 'ناچارنول',
 	'coll-book_creator_disable' => 'کتاب جوړونکی ناچارنول',
+	'coll-book_creator_disable_tooltip' => 'د کتاب جوړونکي کارېدنه درول',
 	'coll-add_category' => 'دا وېشنيزه په کتاب کې ورګډول',
 	'coll-add_this_page' => 'دا مخ په کتاب کې ورګډول',
 	'coll-add_page_tooltip' => 'د همدې ويکي مخ خپل کتاب کې ورګډول',

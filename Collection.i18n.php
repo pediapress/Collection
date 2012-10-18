@@ -1062,12 +1062,16 @@ $messages['arz'] = array(
 	'coll-rendering_status' => '<strong>الحالة:</strong> $1',
 	'coll-rendering_article' => '(المقالة: $1)',
 	'coll-rendering_page' => '(الصفحة: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات صفحة',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات مجموعة',
 	'coll-rendering_finished_title' => 'العرض انتهى',
 	'coll-rendering_finished_text' => '<strong>ملف الوثيقه تم توليده.</strong>
 <strong>[$1 نزل الملف]</strong> إلى حاسوبك.
 
 ملاحظات:
 * غير راض عن الخرج؟ انظر [[{{MediaWiki:Coll-helppage}}|صفحه المساعده حول المجموعات]] للاحتمالات لتحسينه.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات صفحة',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/تصيير نص معلومات مجموعه',
 	'coll-notfound_title' => 'الكتاب غير موجود',
 	'coll-notfound_text' => 'لم يمكن العثور على صفحه الكتاب.',
 	'coll-download_notfound_title' => 'الملف لم يتم إيجاده',
@@ -1104,6 +1108,9 @@ $messages['arz'] = array(
 	'coll-suggest_article_remove' => 'الصفحه <strong>$1</strong> تمت إزالتها من كتابك ($2).',
 	'coll-suggest_undo_tooltip' => 'استرجع هذه الإجراء',
 	'coll-suggest_undo' => 'ارجع',
+	'coll-load_local_book' => 'اضغط OK للاستمرار فى كتابك %TITLE% اللى فيه %NUMPAGES% من صفحات الويكى. اضغط Cancel علشان تمسحه و تبتدى كتاب فاضى.',
+	'coll-format-rl' => 'كتاب إلكترونى (PDF)',
+	'coll-format-epub' => 'كتاب إلكترونى (EPUB)',
 	'right-collectionsaveasuserpage' => 'احفظ الكتب كصفحه مستخدم',
 	'right-collectionsaveascommunitypage' => 'احفظ الكتب كصفحه مجتمع',
 );
@@ -2151,6 +2158,9 @@ Hizivaet e vez ar roll bep tro ma klikit war ar bouton ouzhpennañ pe tennañ.",
 	'coll-suggest_undo_tooltip' => 'Dizober an ober-mañ',
 	'coll-suggest_undo' => 'dizober',
 	'coll-load_local_book' => "Klikit war Mat eo evit kenderc'hel ho levr %TITLE% hag en deus %NUMPAGES% pajenn wiki. Klikit war Nullañ evit dilemel ha kregiñ gant ul levr goullo.",
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'skridtreter (OpenDocument)',
 	'coll-format-zim' => 'Kiwix (OpenZIM)',
 	'coll-format-docbook' => 'DocBook',
 	'coll-format-okawix_zeno' => 'Okawix',
@@ -5291,6 +5301,12 @@ Alliwyl, wänn Du uf d Zuefiege- oder Useneh-Schaltflechine drucksch, wird die L
 	'coll-suggest_undo_tooltip' => 'Die Aktion ruckgängig mache',
 	'coll-suggest_undo' => 'ruckgängig',
 	'coll-load_local_book' => 'Druck uf OK, go mit Dyym Buech %TITLE% wytermache, wu us %NUMPAGES% Wikisyte bstoht. Druck uf Abbräche go s wider lesche un mit eme lääre Buech aafange.',
+	'coll-format-rl' => 'E-Book (PDF)',
+	'coll-format-epub' => 'E-Book (EPUB)',
+	'coll-format-odf' => 'Textverarbeitig (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Biecher as Benutzersyte spychere',
 	'right-collectionsaveascommunitypage' => 'Biecher as Gmeinschaftssyte spychere',
 );
@@ -6688,8 +6704,8 @@ No saan ng a agbalin, pangngaasi a pindutem ti buton ti pagbasabasam.<p>',
 	'coll-rendering_status' => '<strong>Kasasaad:</strong> $1',
 	'coll-rendering_article' => '(panid ti wiki: $1)',
 	'coll-rendering_page' => '(panid: $1)',
-	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Agip-ipaay ti teksto ti pakaammo ti panid',
-	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Agip-ipaay ti naurnong a teksto ti pakaammo',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Agip-ipaay ti testo ti pakaammo ti panid',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Agip-ipaay ti naurnong a testo ti pakaammo',
 	'coll-rendering_finished_title' => 'Ti panagipaay ket nalpasen',
 	'coll-rendering_finished_text' => '<strong>Naramiden ti dokumento ti papeles.</strong>
 <strong>[$1 Ikarga ti papeles]</strong> dita komputer mo.
@@ -6737,6 +6753,12 @@ Ti listaan ket maipabaro no agpatinayon ka nga agtakla iti agnayon wenno agikkat
 	'coll-suggest_undo_tooltip' => 'Isubli daytoy nga aksion',
 	'coll-suggest_undo' => 'ibabawi',
 	'coll-load_local_book' => 'Itaklam ti OK tapno agtuloy ka ti librom %TITLE% nga naglaon kadagiti %NUMPAGES% pampanid ti wiki. Itakla ti Cancel ti agikkat ken mangrugi ti awan nagyan na a libro.',
+	'coll-format-rl' => 'e-libro (PDF)',
+	'coll-format-epub' => 'e-libro (EPUB)',
+	'coll-format-odf' => 'panagaramid ti balikas (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Idulin ti liblibro a kas panid ti agar-aramat',
 	'right-collectionsaveascommunitypage' => 'Idulin ti liblibro a kas panid ti komunidad',
 );
@@ -6795,6 +6817,8 @@ On ne povas adjuntar plusa pagini.',
 $messages['is'] = array(
 	'coll-desc' => '[[Special:Book|Búa til bækur]]',
 	'coll-book_creator_help' => 'Sjá [[{{MediaWiki:Coll-helppage}}|hjálpina um bækur]] fyrir frekari upplýsingar.',
+	'coll-start_book_creator' => 'Ræsa bókar viðmótið',
+	'coll-book_creator_continue' => 'Halda áfram að nota bókar valmyndina',
 	'coll-collection' => 'Bók',
 	'coll-collections' => 'Bækur',
 	'coll-exclusion_category_title' => 'Sleppa í prentun',
@@ -6818,8 +6842,10 @@ Síðan mun ekki virka rétt, nema JavaScript verði virkjað.</strong>',
 	'coll-format_label' => 'Skráarsnið:',
 	'coll-remove' => 'Fjarlægja',
 	'coll-show' => 'Sýna',
+	'coll-move_to_top' => 'Færa á toppinn',
 	'coll-move_up' => 'Færa upp',
 	'coll-move_down' => 'Færa niður',
+	'coll-move_to_bottom' => 'Færa á botninn',
 	'coll-title' => 'Titill:',
 	'coll-subtitle' => 'Undirtitill:',
 	'coll-contents' => 'Efnisyfirlit',
@@ -6856,10 +6882,22 @@ Viltu yfirskrifa núverandi bók, bæta við nýju efni eða hætta við að hla
 	'coll-limit_exceeded_text' => 'Bókin þín er of stór.
 Ekki er hægt að bæta við fleiri síðum.',
 	'coll-rendering_title' => 'Umskrái gögn',
+	'coll-rendering_text' => '<p><strong>Vinsamlegast bíddu á meðan skráin er búin til.</strong></p>
+
+<p><strong>Staða:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>Þessi síða ætti að endurhlaða sjálfkrafa með nokkra sekúnda millibili.
+Ef það gerist ekki, vinsamlegast ýttu á endurhlaða takkann í vafranum þínum.</p>',
 	'coll-rendering_status' => '<strong>Staða:</strong> $1',
 	'coll-rendering_article' => '(wiki síða: $1)',
 	'coll-rendering_page' => '(síða: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Umskrifa upplýsingartexta síðu',
+	'coll-rendering_finished_title' => 'Umskrifun lokið',
+	'coll-rendering_finished_text' => '<strong>Skráin hefur verið búin til.</strong>
+<strong>[$1 Hlaða niður skránni]</strong> á tölvuna þína.
+
+Minnisatriði:
+* Ertu óánægður með útkomuna? Skoðaðu [[{{MediaWiki:Coll-helppage}}|hjálparsíðuna um bækur]] fyrir möguleika til þess að bæta hana.',
 	'coll-notfound_title' => 'Bók fannst ekki',
 	'coll-notfound_text' => 'Fann ekki bókar síðu.',
 	'coll-download_notfound_title' => 'Skrá fannst ekki',
@@ -6867,6 +6905,8 @@ Ekki er hægt að bæta við fleiri síðum.',
 Kanski hefur henni verið eytt og þarf að umskrifa hana aftur.',
 	'coll-download_failed_title' => 'Villa við niðurhölun',
 	'coll-download_failed_text' => 'Niðurhal skráarinnar mistókst með eftirfarandi villu: $1',
+	'coll-is_cached' => '<ul><li>Þessi skrá fannst í skyndiminninu og því þurfti ekki að umskrifa.
+<a href="$1">Neyða endurskrifun.</a></li></ul>',
 	'coll-excluded-templates' => '* Sniðum í flokknum [[:Category:$1|$1]] hafa verið sleppt.',
 	'coll-blacklisted-templates' => '* Snið á bannlista [[:$1]] hefur verið sleppt.',
 	'coll-return_to_collection' => '<p>Aftur á <a href="$1">$2</a></p>',
@@ -6898,6 +6938,7 @@ Listinn er uppfærður þegar þú ýtir á bæta við eða fjarlægja takkann.'
 	'coll-load_local_book' => 'Smelltu á OK til þess að halda áfram með bókina %TITLE% sem inniheldur %NUMPAGES% wiki síður. Ýttu á cancel til þess að eyða henni og byrja með tóma bók.',
 	'coll-format-rl' => 'rafbók (PDF)',
 	'coll-format-epub' => 'rafbók (EPUB)',
+	'coll-format-odf' => 'ritill (OpenDocument)',
 	'right-collectionsaveasuserpage' => 'Vista bók sem notendasíðu',
 );
 
@@ -7095,7 +7136,7 @@ $messages['ja'] = array(
 	'coll-move_to_top' => '先頭へ',
 	'coll-move_up' => '上へ',
 	'coll-move_down' => '下へ',
-	'coll-move_to_bottom' => '最後尾へ',
+	'coll-move_to_bottom' => '末尾へ',
 	'coll-title' => 'タイトル:',
 	'coll-subtitle' => 'サブタイトル:',
 	'coll-contents' => '内容',
@@ -7107,13 +7148,13 @@ $messages['ja'] = array(
 	'coll-rename_chapter' => '章の新しい見出しを入力',
 	'coll-no_such_category' => '指定されたカテゴリはありません',
 	'coll-notitle_title' => 'ページタイトルが未設定です。',
-	'coll-post_failed_title' => 'POST要求の失敗',
-	'coll-post_failed_msg' => '$1へのPOST要求は失敗しました ($2)。',
+	'coll-post_failed_title' => 'POST 要求の失敗',
+	'coll-post_failed_msg' => '$1 への POST 要求は失敗しました ($2)。',
 	'coll-mwserve_failed_title' => 'レンダリングサーバーのエラー',
 	'coll-mwserve_failed_msg' => 'レンダリングサーバーでエラーが発生しました: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'サーバからのエラー応答',
 	'coll-empty_collection' => '空のブック',
-	'coll-revision' => '版：$1',
+	'coll-revision' => '版: $1',
 	'coll-save_collection_title' => 'ブックを保存して共有する',
 	'coll-save_collection_text' => '保存先の選択:',
 	'coll-login_to_save' => '後の利用のためブックを保存するには、[[Special:UserLogin|ログインまたはアカウント作成]]を行ってください。',
@@ -7190,6 +7231,12 @@ $messages['ja'] = array(
 	'coll-suggest_undo' => '取り消し',
 	'coll-load_local_book' => 'OKをクリックすると %NUMPAGES% 件のウィキページを含む本を %TITLE% という題で作成します。
 この本を削除して新しい本を作成する場合はキャンセルをクリックしてください。',
+	'coll-format-rl' => '電子書籍 (PDF)',
+	'coll-format-epub' => '電子書籍 (EPUB)',
+	'coll-format-odf' => '文書作成ソフト (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'ブックを利用者ページとして保存',
 	'right-collectionsaveascommunitypage' => 'ブックを共有ページとして保存',
 );
@@ -7489,6 +7536,22 @@ $messages['ka'] = array(
 	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'შეინახე წიგნი, როგორც მომხმარებლის გვერდი',
 	'right-collectionsaveascommunitypage' => 'შეინახეთ წიგნი, როგორც საზოგადოების გვერდი',
+);
+
+/** Kabyle (Taqbaylit)
+ * @author Mmistmurt
+ */
+$messages['kab'] = array(
+	'coll-print_template_prefix' => 'Siggez',
+	'coll-download_title' => 'Zdem',
+	'coll-download' => 'Zdem',
+	'coll-show' => 'Ssken',
+	'coll-title' => 'Azwel :',
+	'coll-contents' => 'Agbur',
+	'coll-personal_collection_label' => 'Adlis n yiwen',
+	'coll-yes' => 'Ih',
+	'coll-no' => 'Ala',
+	'coll-cancel' => 'Semmewet',
 );
 
 /** Kirmanjki (Kırmancki)
@@ -10745,12 +10808,16 @@ $messages['ps'] = array(
 	'coll-new_chapter' => 'د نوي څپرکي لپاره نوم وليکۍ',
 	'coll-rename_chapter' => 'د څپرکي لپاره يو نوی نوم وليکۍ',
 	'coll-no_such_category' => 'داسې هېڅ کومه وېشنيزه نشته',
+	'coll-error_reponse' => 'د پالنګر لخوا د تېروتنې ځواب',
 	'coll-empty_collection' => 'تش کتاب',
 	'coll-save_collection_title' => 'خپل کتاب شريک او خوندي کول',
 	'coll-personal_collection_label' => 'شخصي کتاب:',
 	'coll-save_collection' => 'کتاب خوندي کول',
+	'coll-overwrite_title' => 'دا مخ شته.
+دپاسه ليکل غواړۍ؟',
 	'coll-yes' => 'هو',
 	'coll-no' => 'نه',
+	'coll-overwrite' => 'دپاسه ليکل',
 	'coll-cancel' => 'ناګارل',
 	'coll-update' => 'اوسمهالول',
 	'coll-limit_exceeded_title' => 'کتاب ډېر لوی دی',
@@ -10770,7 +10837,10 @@ $messages['ps'] = array(
 	'coll-suggest_your_book' => 'ستاسې کتاب',
 	'coll-suggest_show' => 'ښکاره کول',
 	'coll-suggest_undo' => 'ناکړل',
+	'coll-format-rl' => 'برېښکتاب (PDF)',
+	'coll-format-epub' => 'برېښکتاب (EPUB)',
 	'coll-format-okawix_zeno' => 'اوکاوېکس',
+	'right-collectionsaveasuserpage' => 'کتابونه د کارن مخ په توګه خوندي کول',
 );
 
 /** Portuguese (português)
@@ -15046,7 +15116,7 @@ $messages['zh-hans'] = array(
 	'right-collectionsaveascommunitypage' => '保存图书为社区页面',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Alexsh
  * @author FireJackey
  * @author Liangent
@@ -15187,6 +15257,12 @@ $messages['zh-hant'] = array(
 	'coll-suggest_undo_tooltip' => '撤銷這個動作',
 	'coll-suggest_undo' => '撤銷',
 	'coll-load_local_book' => '點擊OK來繼續操作你的書籍《%TITLE%》（共%NUMPAGES%頁）。 點擊Cancel清空並從零開始。',
+	'coll-format-rl' => '電子書（PDF）',
+	'coll-format-epub' => '電子書（EPUB）',
+	'coll-format-odf' => '文字處理器（OpenDocument）',
+	'coll-format-zim' => 'Kiwix（OpenZIM）',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => '在使用者頁面儲存此書',
 	'right-collectionsaveascommunitypage' => '在社群頁面儲存此書',
 );

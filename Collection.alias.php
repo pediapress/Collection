@@ -33,6 +33,11 @@ $specialPageAliases['as'] = array(
 	'Book' => array( 'সংগ্ৰহ', 'গ্ৰন্থ' ),
 );
 
+/** Bashkir (башҡортса) */
+$specialPageAliases['ba'] = array(
+	'Book' => array( 'Collection' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'Book' => array( 'Buku' ),
@@ -258,7 +263,7 @@ $specialPageAliases['myv'] = array(
 	'Book' => array( 'Ставкс' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'Book' => array( 'Bok', 'Samling' ),
 );
@@ -273,7 +278,7 @@ $specialPageAliases['nl'] = array(
 	'Book' => array( 'Boek', 'Collectie', 'Verzameling' ),
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬) */
+/** Norwegian Nynorsk (norsk (nynorsk)‎) */
 $specialPageAliases['nn'] = array(
 	'Book' => array( 'Bok' ),
 );
@@ -378,12 +383,12 @@ $specialPageAliases['vi'] = array(
 	'Book' => array( 'Sách' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'Book' => array( '图书' ),
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'Book' => array( '圖書' ),
 );
