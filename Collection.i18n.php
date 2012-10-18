@@ -1855,6 +1855,8 @@ $messages['bg'] = array(
 	'coll-suggest_article_remove' => 'Страницата <strong>$1</strong> е премахната от книгата ви ($2).',
 	'coll-suggest_undo_tooltip' => 'Отмяна на това действие',
 	'coll-suggest_undo' => 'отмяна',
+	'coll-format-rl' => 'e-книга (PDF)',
+	'coll-format-epub' => 'e-книга (EPUB)',
 	'right-collectionsaveasuserpage' => 'Запазване на книгата като потребителска страница',
 	'right-collectionsaveascommunitypage' => 'Запазване на книгата като страница на общността',
 );
