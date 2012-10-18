@@ -807,7 +807,7 @@ class SpecialCollection extends SpecialPage {
 				return null;
 			}
 			if ( $oldid < 0 ) {
-				$article = new WikiPage( $articleTitle );
+                                $article = new Article( $articleTitle );
 			} else {
 				$article = new Article( $articleTitle, $oldid );
 			}
