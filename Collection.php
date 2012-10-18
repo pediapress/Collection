@@ -421,8 +421,9 @@ function wfCollectionSuggestAction( $action, $article ) {
 		),
 		wfMessage( 'coll-suggest_undo' )->text()
 	);
-	$result['last_action'] = wfMessage(
-		"coll-suggest_article_$action", $article )->rawParams( $undoLink )->escaped();
+	// Message keys used: coll-suggest_article_ban, coll-suggest_article_add, coll-suggest_article_remove
+	$result['last_action'] = wfMessage( "coll-suggest_article_$action", $article )
+		->rawParams( $undoLink )->parse();
 	$result['collection'] = CollectionSession::getCollection();
 	$r = new AjaxResponse( FormatJson::encode( $result ) );
 	$r->setContentType( 'application/json' );

@@ -36,10 +36,16 @@ class SpecialCollection extends SpecialPage {
 		}
 	}
 
+	/**
+	 * @return String
+	 */
 	function getDescription() {
 		return $this->msg( 'coll-collection' )->escaped();
 	}
 
+	/**
+	 * @param $par null|string
+	 */
 	function execute( $par ) {
 		global $wgCollectionMaxArticles;
 
@@ -212,6 +218,7 @@ class SpecialCollection extends SpecialPage {
 				}
 				$colltype = $request->getVal( 'colltype' );
 				$prefixes = self::getBookPagePrefixes();
+				$title = null;
 				if ( $colltype == 'personal' ) {
 					$collname = $request->getVal( 'pcollname' );
 					if ( !$user->isAllowed( 'collectionsaveasuserpage' ) || empty( $collname ) ) {
@@ -495,6 +502,10 @@ class SpecialCollection extends SpecialPage {
 		$out->addTemplate( $template );
 	}
 
+	/**
+	 * @param $title string
+	 * @param $subtitle string
+	 */
 	static function setTitles( $title, $subtitle ) {
 		$collection = CollectionSession::getCollection();
 		$collection['title'] = $title;
@@ -513,6 +524,11 @@ class SpecialCollection extends SpecialPage {
 
 	static function sortItems() {
 		$collection = CollectionSession::getCollection();
+		if ( !isset( $collection['items'] ) || !is_array( $collection['items'] ) ) {
+			$collection['items'] = array();
+			CollectionSession::setCollection( $collection );
+			return;
+		}
 		$articles = array();
 		$new_items = array();
 		foreach ( $collection['items'] as $item ) {
@@ -534,6 +550,9 @@ class SpecialCollection extends SpecialPage {
 	 */
 	static function addChapter( $name ) {
 		$collection = CollectionSession::getCollection();
+		if ( !isset( $collection['items'] ) || !is_array( $collection['items'] ) ) {
+			$collection['items'] = array();
+		}
 		array_push( $collection['items'], array(
 			'type' => 'chapter',
 			'title' => $name,
@@ -672,7 +691,7 @@ class SpecialCollection extends SpecialPage {
 		global $wgCollectionMaxArticles, $wgCollectionArticleNamespaces;
 
 		$limit = $wgCollectionMaxArticles - CollectionSession::countArticles();
-		if ( $limit <= 0 ) {
+		if ( $limit <= 0 || !$title ) {
 			self::limitExceeded();
 			return false;
 		}
@@ -714,6 +733,10 @@ class SpecialCollection extends SpecialPage {
 		$wgOut->showErrorPage( 'coll-limit_exceeded_title', 'coll-limit_exceeded_text' );
 	}
 
+	/**
+	 * @param $index int
+	 * @return bool
+	 */
 	static function removeItem( $index ) {
 		if ( !is_int( $index ) ) {
 			return false;
@@ -814,13 +837,13 @@ class SpecialCollection extends SpecialPage {
 			if ( !$article->exists() ) {
 				return null;
 			}
-			$revision = Revision::newFromTitle( $articleTitle, $article->getOldID() );
-			$latest = $article->getLatest();
+                        $revision = Revision::newFromTitle( $articleTitle, $article->getOldID() );
+                        $latest = $article->getLatest();
 			$oldid = $article->getOldID();
 			if ( !$oldid ) {
 				$oldid = $latest;
 			}
-			$d = array(
+                        $d = array(
 				'type' => 'article',
 				'content_type' => 'text/x-wiki',
 				'title' => $articleTitle->getPrefixedText(),

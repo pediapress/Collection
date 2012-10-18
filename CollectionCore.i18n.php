@@ -423,41 +423,42 @@ $messages['az'] = array(
 /** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
+ * @author ҒатаУлла
  */
 $messages['ba'] = array(
 	'coll-print_export' => 'Баҫтырырға/сығарырға',
-	'coll-create_a_book' => 'Китап булдырырға',
-	'coll-create_a_book_tooltip' => 'Китап йәки биттәр йыйынтығын булдырырға',
-	'coll-book_creator' => 'Китап оҫтаһы',
+	'coll-create_a_book' => 'Китап төҙөргә',
+	'coll-create_a_book_tooltip' => 'Китап йәки биттәр йыйынтығын төҙөргә',
+	'coll-book_creator' => 'Китап төҙөүсе',
 	'coll-download_as' => '$1 форматында күсереп алырға',
 	'coll-download_as_tooltip' => 'Был вики-биттең $1 өлгөһөн күсереп алырға',
 	'coll-disable' => 'һүндерергә',
 	'coll-book_creator_disable' => 'Китап оҫтаһын һүндерергә',
-	'coll-book_creator_disable_tooltip' => 'Китап оҫтаһын ҡүлланыуҙы туҡтатырға',
-	'coll-add_linked_article' => 'Бәйле вики-битте китабығыҙға өҫтәргә',
+	'coll-book_creator_disable_tooltip' => 'Китап оҫтаһын ҡулланыуҙы туҡтатығыҙ',
+	'coll-add_linked_article' => 'Бәйле вики-битте китапҡа өҫтәргә',
 	'coll-remove_linked_article' => 'Бәйле вики-битте китабығыҙҙан юйырға',
 	'coll-add_category' => 'Был категорияны китабығыҙға өҫтәргә',
-	'coll-add_category_tooltip' => 'Был категорияның вики-биттәрен китабығыҙға өҫтәргә',
+	'coll-add_category_tooltip' => 'Был категорияның бөтә вики-биттәрен китабығыҙға өҫтәргә',
 	'coll-add_this_page' => 'Был битте китабығыҙға өҫтәргә',
 	'coll-add_page_tooltip' => 'Ағымдағы вики-битте китабығыҙға өҫтәргә',
 	'coll-bookscategory' => 'Китаптар',
 	'coll-clear_collection' => 'Китапты таҙартырға',
 	'coll-clear_collection_confirm' => 'Һеҙ ысынлап та китабығыҙҙы тулыһынса таҙартырға теләйһегеҙме?',
-	'coll-clear_collection_tooltip' => 'Бөтә вики-биттәрҙе ағымдағы китабығыҙҙан юйырға',
+	'coll-clear_collection_tooltip' => 'Бөтә вики-биттәрҙе ағымдағы китабығыҙҙан юйығыҙ',
 	'coll-help' => 'Белешмә',
 	'coll-help_tooltip' => 'Китап булдырыу тураһында белешмә күрһәтергә',
-	'coll-helppage' => 'Help:Китаптар',
+	'coll-helppage' => 'Белешмә:Китаптар',
 	'coll-load_collection' => 'Китап тейәргә',
 	'coll-load_collection_tooltip' => 'Был китапты ағымдағы китабығыҙ рәүешендә тейәргә',
 	'coll-n_pages' => '$1 {{PLURAL:$1|бит}}',
 	'coll-printable_version_pdf' => 'PDF өлгөһө',
-	'coll-remove_this_page' => 'Был битте китабығыҙҙан сығарығыҙ',
-	'coll-remove_page_tooltip' => 'Ағымдағы вики-битте китабығыҙҙан сығарырға',
+	'coll-remove_this_page' => 'Был битте китабығыҙҙан алығыҙ',
+	'coll-remove_page_tooltip' => 'Ағымдағы вики-битте китабығыҙҙан алырға',
 	'coll-show_collection' => 'Китапты күрһәтергә',
 	'coll-show_collection_tooltip' => 'Китапты мөхәррирләү/тейәү/заказ биреү өсөн баҫығыҙ',
 	'coll-not_addable' => 'Был битте өҫтәп булмай',
 	'coll-make_suggestions' => 'Тәҡдим ителгән биттәр',
-	'coll-make_suggestions_tooltip' => 'Китабығыҙҙа булған биттәргә таянып һөйләмдәрҙе күрһәт',
+	'coll-make_suggestions_tooltip' => 'Китабығыҙҙа булған биттәргә нигеҙләнгән һөйләмдәрҙе күрһәтергә',
 	'coll-suggest_empty' => 'буш',
 );
 
@@ -542,7 +543,7 @@ $messages['be'] = array(
 	'coll-suggest_empty' => 'пуста',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -927,6 +928,8 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Das Schäfchen
+ * @author Filzstift
  * @author Kghbln
  * @author Metalhead64
  * @author Pill
@@ -935,37 +938,37 @@ $messages['da'] = array(
 $messages['de'] = array(
 	'coll-print_export' => 'Drucken/exportieren',
 	'coll-create_a_book' => 'Buch erstellen',
-	'coll-create_a_book_tooltip' => 'Ein Buch oder eine Artikelsammlung erstellen.',
+	'coll-create_a_book_tooltip' => 'Ein Buch oder eine Artikelsammlung erstellen',
 	'coll-book_creator' => 'Buchgenerator',
 	'coll-download_as' => 'Als $1 herunterladen',
-	'coll-download_as_tooltip' => 'Eine $1-Version dieser Wikiseite herunterladen.',
+	'coll-download_as_tooltip' => 'Eine $1-Version dieser Seite herunterladen',
 	'coll-disable' => 'deaktivieren',
 	'coll-book_creator_disable' => 'Buchgenerator deaktivieren',
-	'coll-book_creator_disable_tooltip' => 'Den Buchgenerator nicht verwenden.',
-	'coll-add_linked_article' => 'Füge die verlinkte Wikiseite deinem Buch hinzu',
+	'coll-book_creator_disable_tooltip' => 'Den Buchgenerator nicht verwenden',
+	'coll-add_linked_article' => 'Füge die verlinkte Seite deinem Buch hinzu.',
 	'coll-remove_linked_article' => 'Entferne die verlinkte Wikiseite aus deinem Buch',
 	'coll-add_category' => 'Alle Seiten in dieser Kategorie deinem Buch hinzufügen',
-	'coll-add_category_tooltip' => 'Alle Wikiseiten in dieser Kategorie deinem Buch hinzufügen.',
+	'coll-add_category_tooltip' => 'Alle Seiten in dieser Kategorie deinem Buch hinzufügen',
 	'coll-add_this_page' => 'Diese Seite deinem Buch hinzufügen',
-	'coll-add_page_tooltip' => 'Die aktuelle Wikiseite deinem Buch hinzufügen.',
+	'coll-add_page_tooltip' => 'Die aktuelle Seite deinem Buch hinzufügen',
 	'coll-bookscategory' => 'Bücher',
 	'coll-clear_collection' => 'Buch löschen',
-	'coll-clear_collection_confirm' => 'Möchtest du wirklich dein Buch löschen?',
+	'coll-clear_collection_confirm' => 'Möchtest du dein Buch wirklich löschen?',
 	'coll-clear_collection_tooltip' => 'Alle Wikiseiten aus deinem aktuellen Buch entfernen.',
 	'coll-help' => 'Hilfe',
-	'coll-help_tooltip' => 'Die Hilfe zum Erstellen von Büchern anzeigen.',
+	'coll-help_tooltip' => 'Die Hilfe zum Erstellen von Büchern anzeigen',
 	'coll-helppage' => 'Help:Bücher',
 	'coll-load_collection' => 'Buch laden',
-	'coll-load_collection_tooltip' => 'Dieses Buch als dein aktuelles Buch laden.',
+	'coll-load_collection_tooltip' => 'Dieses Buch als dein aktuelles Buch laden',
 	'coll-n_pages' => '$1 {{PLURAL:$1|Seite|Seiten}}',
 	'coll-printable_version_pdf' => 'PDF-Version',
 	'coll-remove_this_page' => 'Diese Seite aus deinem Buch entfernen',
-	'coll-remove_page_tooltip' => 'Die aktuelle Wikiseite aus deinem Buch entfernen.',
+	'coll-remove_page_tooltip' => 'Die aktuelle Seite aus deinem Buch entfernen',
 	'coll-show_collection' => 'Buch zeigen',
 	'coll-show_collection_tooltip' => 'Klicken, um dein Buch zu bearbeiten/herunterzuladen/bestellen.',
 	'coll-not_addable' => 'Diese Seite kann nicht hinzugefügt werden',
 	'coll-make_suggestions' => 'Seiten vorschlagen',
-	'coll-make_suggestions_tooltip' => 'Vorschläge basierend auf den Seiten in deinem Buch anzeigen.',
+	'coll-make_suggestions_tooltip' => 'Vorschläge basierend auf den Seiten in deinem Buch anzeigen',
 	'coll-suggest_empty' => 'leer',
 );
 
@@ -2362,7 +2365,7 @@ $messages['kiu'] = array(
 	'coll-suggest_empty' => 'veng',
 );
 
-/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
  * @author Kaztrans
  */
 $messages['kk-cyrl'] = array(
@@ -2546,7 +2549,7 @@ $messages['ksh'] = array(
 	'coll-suggest_empty' => 'leddisch',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -3026,7 +3029,7 @@ $messages['nah'] = array(
 	'coll-bookscategory' => 'Àmoxtin',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Laaknor
  * @author Nghtwlkr
  * @author Njardarlogar
@@ -3150,7 +3153,7 @@ $messages['nl'] = array(
 	'coll-suggest_empty' => 'leegmaken',
 );
 
-/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
@@ -3169,7 +3172,7 @@ $messages['nl-informal'] = array(
 	'coll-make_suggestions_tooltip' => "Suggesties weergeven op basis van de pagina's in je boek",
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Eirik
  * @author Gunnernett
  * @author Harald Khan
@@ -3979,7 +3982,7 @@ $messages['sq'] = array(
 	'coll-download_as' => 'Shkarkoje si $1',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Nikola Smolenski
  * @author Rancher
  * @author Јованвб
@@ -4021,7 +4024,7 @@ $messages['sr-ec'] = array(
 	'coll-suggest_empty' => 'празно',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Жељко Тодоровић
  */
@@ -4091,6 +4094,7 @@ $messages['su'] = array(
  * @author Poxnar
  * @author Rotsee
  * @author Sannab
+ * @author Thurs
  */
 $messages['sv'] = array(
 	'coll-print_export' => 'Skriv ut/exportera',
@@ -4100,7 +4104,7 @@ $messages['sv'] = array(
 	'coll-download_as' => 'Hämta som $1',
 	'coll-download_as_tooltip' => 'Ladda ner den här wikisidan i $1-format',
 	'coll-disable' => 'slå av',
-	'coll-book_creator_disable' => 'Avaktiviera bokskapare',
+	'coll-book_creator_disable' => 'Slå av bokskaparen',
 	'coll-book_creator_disable_tooltip' => 'Sluta använda bokskapare',
 	'coll-add_linked_article' => 'Lägg till den länkade wiki-sidan till din bok',
 	'coll-remove_linked_article' => 'Ta bort den länkade wiki-sidan från din bok',
@@ -4269,7 +4273,8 @@ $messages['tet'] = array(
 $messages['tg-cyrl'] = array(
 	'coll-create_a_book' => 'Эҷоди як китоб',
 	'coll-download_as' => 'Дарёфтан чун $1',
-	'coll-add_category' => 'Илова кардани гурӯҳ',
+	'coll-download_as_tooltip' => 'Як нусхаи $1 аз ин саҳифаро боргирӣ кун',
+	'coll-add_category' => 'Ин гурӯҳро ба китобатон биафзоед',
 	'coll-clear_collection' => 'Тоза кардани гирдовари',
 	'coll-helppage' => 'Help:Гирдовариҳо',
 	'coll-load_collection' => 'Бор кардани гирдоварӣ',
@@ -4749,7 +4754,7 @@ $messages['yue'] = array(
 	'coll-show_collection' => '顯示書',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Bencmq
  * @author Liangent
  * @author Wmr89502270
@@ -4792,7 +4797,7 @@ $messages['zh-hans'] = array(
 	'coll-suggest_empty' => '空',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Alexsh
  * @author Anakmalaysia
  * @author Liangent
