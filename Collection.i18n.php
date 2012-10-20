@@ -7562,12 +7562,15 @@ $messages['ka'] = array(
  * @author Mmistmurt
  */
 $messages['kab'] = array(
+	'coll-collections' => 'Idlisen',
 	'coll-print_template_prefix' => 'Siggez',
 	'coll-download_title' => 'Zdem',
 	'coll-download' => 'Zdem',
 	'coll-show' => 'Ssken',
 	'coll-title' => 'Azwel :',
+	'coll-subtitle' => 'Adu-azwel :',
 	'coll-contents' => 'Agbur',
+	'coll-sort_alphabetically' => 'Afran s ugemmay',
 	'coll-personal_collection_label' => 'Adlis n yiwen',
 	'coll-yes' => 'Ih',
 	'coll-no' => 'Ala',

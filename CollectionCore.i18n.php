@@ -2322,6 +2322,7 @@ $messages['ka'] = array(
  * @author Mmistmurt
  */
 $messages['kab'] = array(
+	'coll-bookscategory' => 'Idlisen',
 	'coll-help' => 'Tallat',
 );
 
