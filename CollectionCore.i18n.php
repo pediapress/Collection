@@ -76,6 +76,7 @@ $messages['en'] = array(
  * @author Mormegil
  * @author Siebrand
  * @author Teak
+ * @author Umherirrender
  */
 $messages['qqq'] = array(
 	'coll-print_export' => 'Caption of a frame in the toolbar (on the left-hand side of the screen), similar to {{msg-mw|toolbox}} or {{msg-mw|otherlanguages}}.',
@@ -97,7 +98,10 @@ In both cases $1 is a file format.
 {{Identical|Book}}",
 	'coll-n_pages' => '{{Identical|Page}}',
 	'coll-printable_version_pdf' => 'Caption of a link in the [[mw:Help:Navigation#Toolbox|toolbox]] leading to the PDF version of the current page',
+	'coll-suggest_enabled' => '{{notranslate}}',
 	'coll-suggest_empty' => '{{Identical|Empty}}',
+	'coll-user_book_prefix' => '{{notranslate}}',
+	'coll-community_book_prefix' => '{{notranslate}}',
 );
 
 /**    زَوُن (   زَوُن)
@@ -416,7 +420,7 @@ $messages['ast'] = array(
 $messages['az'] = array(
 	'coll-bookscategory' => 'Kitablar',
 	'coll-help' => 'Kömək',
-	'coll-helppage' => 'Kömək:Kitablar',
+	'coll-helppage' => 'Kömək:Kitablar', # Fuzzy
 	'coll-suggest_empty' => 'boş',
 );
 
@@ -447,7 +451,7 @@ $messages['ba'] = array(
 	'coll-clear_collection_tooltip' => 'Бөтә вики-биттәрҙе ағымдағы китабығыҙҙан юйығыҙ',
 	'coll-help' => 'Белешмә',
 	'coll-help_tooltip' => 'Китап булдырыу тураһында белешмә күрһәтергә',
-	'coll-helppage' => 'Белешмә:Китаптар',
+	'coll-helppage' => 'Белешмә:Китаптар', # Fuzzy
 	'coll-load_collection' => 'Китап тейәргә',
 	'coll-load_collection_tooltip' => 'Был китапты ағымдағы китабығыҙ рәүешендә тейәргә',
 	'coll-n_pages' => '$1 {{PLURAL:$1|бит}}',
@@ -1335,6 +1339,7 @@ $messages['fa'] = array(
 	'coll-make_suggestions' => 'صفحه پیشنهاد کن',
 	'coll-make_suggestions_tooltip' => 'با توجه به صفحه‌های کتاب پیشنهادهایی نمایش بده',
 	'coll-suggest_empty' => 'خالی',
+	'coll-community_book_prefix' => 'کتاب:',
 );
 
 /** Finnish (suomi)
@@ -1767,14 +1772,14 @@ $messages['hi'] = array(
 	'coll-clear_collection_tooltip' => 'सारे विकि पृष्ठ को अपनी बर्त्तमान की पुस्तक से निकालें',
 	'coll-help' => 'सहायता',
 	'coll-help_tooltip' => 'पुस्तक निर्माण में सहायता दिखाएँ',
-	'coll-helppage' => 'Help:कलेक्शन',
-	'coll-load_collection' => 'कलेक्शन लोड करें',
+	'coll-helppage' => 'Help:कलेक्शन', # Fuzzy
+	'coll-load_collection' => 'कलेक्शन लोड करें', # Fuzzy
 	'coll-load_collection_tooltip' => 'बर्त्तमान पुस्तक की तरह इस पुस्तक को लोड़ करें',
-	'coll-n_pages' => '$2 {{PLURAL:$1|पृष्ठ|पृष्ठ}}',
+	'coll-n_pages' => '$2 {{PLURAL:$1|पृष्ठ|पृष्ठ}}', # Fuzzy
 	'coll-printable_version_pdf' => 'PDF रूपांतर',
 	'coll-remove_this_page' => 'इस पृष्ठ को अपनी पुस्तक से निकालें',
 	'coll-remove_page_tooltip' => 'बर्त्तमान की विकि पृष्ठ को अपनी पुस्तक से निकालें',
-	'coll-show_collection' => 'कलेक्शन दर्शायें',
+	'coll-show_collection' => 'कलेक्शन दर्शायें', # Fuzzy
 	'coll-not_addable' => 'इस पृष्ठ को जोड़ा नहीं जा सकता',
 	'coll-make_suggestions' => 'सुझाव पृष्ठों',
 	'coll-suggest_empty' => 'खाली',
@@ -1927,7 +1932,7 @@ $messages['hu'] = array(
 $messages['hy'] = array(
 	'coll-create_a_book' => 'Ստեղծել գիրք',
 	'coll-download_as' => 'Ներբեռնել որպես $1',
-	'coll-add_category' => 'Ավելացնել կատեգորիան',
+	'coll-add_category' => 'Ավելացնել կատեգորիան', # Fuzzy
 	'coll-bookscategory' => 'Գրքեր',
 	'coll-clear_collection' => 'Ջնջել գիրքը',
 	'coll-clear_collection_confirm' => 'Դուք իսկապես ցանկանում եք ամբողջությամբ ջնջե՞լ ձեր գիրքը։',
@@ -2672,7 +2677,7 @@ $messages['lt'] = array(
 	'coll-clear_collection_tooltip' => 'Pašalinti visus wiki puslapius iš savo dabartinės knygos',
 	'coll-help' => 'Pagalba',
 	'coll-help_tooltip' => 'Rodyti pagalba apie knygų kūrima',
-	'coll-helppage' => 'Pagalba: Knygos',
+	'coll-helppage' => 'Pagalba: Knygos', # Fuzzy
 	'coll-load_collection' => 'Įkelti knygas',
 	'coll-load_collection_tooltip' => 'Įkelti šią knygą kaip jūsų dabartinę knygą',
 	'coll-n_pages' => '$1 {{PLURAL:$1|puslapis|puslapiai}}',
@@ -3079,7 +3084,7 @@ $messages['nb'] = array(
 $messages['nds'] = array(
 	'coll-create_a_book' => 'Book opstellen',
 	'coll-download_as' => 'As $1 dalladen',
-	'coll-add_category' => 'Kategorie tofögen',
+	'coll-add_category' => 'Kategorie tofögen', # Fuzzy
 	'coll-add_category_tooltip' => 'All Wikisieden ut disse Kategorie to dien Book tofögen',
 	'coll-add_page_tooltip' => 'Disse Wikisied to dien Book tofögen',
 	'coll-bookscategory' => 'Böker',
@@ -3446,7 +3451,6 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (português)
- * @author 555
  * @author Crazymadlover
  * @author Giro720
  * @author Hamilton Abreu
@@ -3454,6 +3458,7 @@ $messages['ps'] = array(
  * @author Lijealso
  * @author Malafaya
  * @author Waldir
+ * @author 555
  */
 $messages['pt'] = array(
 	'coll-print_export' => 'Imprimir/exportar',
@@ -4082,7 +4087,7 @@ $messages['stq'] = array(
  * @author Irwangatot
  */
 $messages['su'] = array(
-	'coll-add_category' => 'Nambah kategori',
+	'coll-add_category' => 'Nambah kategori', # Fuzzy
 );
 
 /** Swedish (svenska)
@@ -4139,35 +4144,35 @@ $messages['sv'] = array(
  */
 $messages['sw'] = array(
 	'coll-print_export' => 'Chapa/peleka nje',
-	'coll-create_a_book' => 'Kutunga kitabu',
-	'coll-create_a_book_tooltip' => 'Utunge kitabu au mkusanyiko wa kurasa',
-	'coll-book_creator' => 'Kitunga kitabu',
-	'coll-download_as' => 'Pakua kama $1',
-	'coll-download_as_tooltip' => 'Pakua aina $1 ya ukurasa wiki huu',
+	'coll-create_a_book' => 'Kutunga kitabu', # Fuzzy
+	'coll-create_a_book_tooltip' => 'Utunge kitabu au mkusanyiko wa kurasa', # Fuzzy
+	'coll-book_creator' => 'Kitunga kitabu', # Fuzzy
+	'coll-download_as' => 'Pakua kama $1', # Fuzzy
+	'coll-download_as_tooltip' => 'Pakua aina $1 ya ukurasa wiki huu', # Fuzzy
 	'coll-disable' => 'lemaza',
-	'coll-book_creator_disable' => 'Lemaza kitunga kitabu',
-	'coll-book_creator_disable_tooltip' => 'Acha kutumia kitunga kitabu',
-	'coll-add_linked_article' => 'Ingiza ukurasa mwingine ulioungwa katika kitabu chako',
-	'coll-remove_linked_article' => 'Ondoa ukurasa mwingine ulioungwa kutoka katika kitabu chako',
-	'coll-add_category' => 'Ongeza jamii hii katika kitabu chako',
-	'coll-add_category_tooltip' => 'Ongeza kurasa zote zilizopo katika jamii hii katika kitabu chako',
-	'coll-add_this_page' => 'Ongeza ukurasa huu katika kitabu chako',
-	'coll-add_page_tooltip' => 'Ongeza ukurasa huu huu katika kitabu chako',
+	'coll-book_creator_disable' => 'Lemaza kitunga kitabu', # Fuzzy
+	'coll-book_creator_disable_tooltip' => 'Acha kutumia kitunga kitabu', # Fuzzy
+	'coll-add_linked_article' => 'Ingiza ukurasa mwingine ulioungwa katika kitabu chako', # Fuzzy
+	'coll-remove_linked_article' => 'Ondoa ukurasa mwingine ulioungwa kutoka katika kitabu chako', # Fuzzy
+	'coll-add_category' => 'Ongeza jamii hii katika kitabu chako', # Fuzzy
+	'coll-add_category_tooltip' => 'Ongeza kurasa zote zilizopo katika jamii hii katika kitabu chako', # Fuzzy
+	'coll-add_this_page' => 'Ongeza ukurasa huu katika kitabu chako', # Fuzzy
+	'coll-add_page_tooltip' => 'Ongeza ukurasa huu huu katika kitabu chako', # Fuzzy
 	'coll-bookscategory' => 'Vitabu',
-	'coll-clear_collection' => 'Pangusa kitabu',
-	'coll-clear_collection_confirm' => 'Je, unataka kuondoa kurasa zote zilizopo katika kitabu chako?',
-	'coll-clear_collection_tooltip' => 'Ondoa kurasa zilizopo zote kutoka katika kitabu chako cha sasa',
+	'coll-clear_collection' => 'Pangusa kitabu', # Fuzzy
+	'coll-clear_collection_confirm' => 'Je, unataka kuondoa kurasa zote zilizopo katika kitabu chako?', # Fuzzy
+	'coll-clear_collection_tooltip' => 'Ondoa kurasa zilizopo zote kutoka katika kitabu chako cha sasa', # Fuzzy
 	'coll-help' => 'Msaada',
-	'coll-help_tooltip' => 'Onyesha msaada wa kutunga kitabu',
+	'coll-help_tooltip' => 'Onyesha msaada wa kutunga kitabu', # Fuzzy
 	'coll-helppage' => 'Help:Vitabu',
-	'coll-load_collection' => 'Pakia kitabu',
-	'coll-load_collection_tooltip' => 'Pakia kitabu hiki kuwa kitabu chako cha sasa',
+	'coll-load_collection' => 'Pakia kitabu', # Fuzzy
+	'coll-load_collection_tooltip' => 'Pakia kitabu hiki kuwa kitabu chako cha sasa', # Fuzzy
 	'coll-n_pages' => '{{PLURAL:$1|ukurasa|kurasa}} $1',
-	'coll-printable_version_pdf' => 'Mtindo wa PDF',
-	'coll-remove_this_page' => 'Ondoa ukurasa huu kutoka katika kitabu chako',
-	'coll-remove_page_tooltip' => 'Ondoa ukurasa uliopo sasa kutoka katika kitabu chako',
-	'coll-show_collection' => 'Onyesha kitabu',
-	'coll-not_addable' => 'Ukarasa huu hauwezi kuingizwa',
+	'coll-printable_version_pdf' => 'Mtindo wa PDF', # Fuzzy
+	'coll-remove_this_page' => 'Ondoa ukurasa huu kutoka katika kitabu chako', # Fuzzy
+	'coll-remove_page_tooltip' => 'Ondoa ukurasa uliopo sasa kutoka katika kitabu chako', # Fuzzy
+	'coll-show_collection' => 'Onyesha kitabu', # Fuzzy
+	'coll-not_addable' => 'Ukarasa huu hauwezi kuingizwa', # Fuzzy
 	'coll-suggest_empty' => 'tupu',
 );
 
@@ -4243,7 +4248,7 @@ $messages['te'] = array(
 	'coll-clear_collection_tooltip' => 'ప్రస్తుత పుస్తకంలో నుండి అన్ని వికీ పేజీలను తీసివేయి',
 	'coll-help' => 'సహాయం',
 	'coll-help_tooltip' => 'పుస్తకాల్ని తయారుచేయడం గురించి సహాయాన్ని చూడండి',
-	'coll-helppage' => 'సహాయం:పుస్తకాలు',
+	'coll-helppage' => 'సహాయం:పుస్తకాలు', # Fuzzy
 	'coll-load_collection' => 'పుస్తకాన్ని లోడుచెయ్యి',
 	'coll-load_collection_tooltip' => 'ఈ పుస్తకాన్ని మీ ప్రస్తుత పుస్తకంగా లోడు చెయ్యండి',
 	'coll-n_pages' => '$1 {{PLURAL:$1| వికీపేజీ|వికీపేజీలు}}',
@@ -4276,12 +4281,12 @@ $messages['tg-cyrl'] = array(
 	'coll-download_as' => 'Дарёфтан чун $1',
 	'coll-download_as_tooltip' => 'Як нусхаи $1 аз ин саҳифаро боргирӣ кун',
 	'coll-add_category' => 'Ин гурӯҳро ба китобатон биафзоед',
-	'coll-clear_collection' => 'Тоза кардани гирдовари',
-	'coll-helppage' => 'Help:Гирдовариҳо',
-	'coll-load_collection' => 'Бор кардани гирдоварӣ',
+	'coll-clear_collection' => 'Тоза кардани гирдовари', # Fuzzy
+	'coll-helppage' => 'Help:Гирдовариҳо', # Fuzzy
+	'coll-load_collection' => 'Бор кардани гирдоварӣ', # Fuzzy
 	'coll-n_pages' => '$1 {{PLURAL:$1|саҳифа|саҳифаҳо}}',
 	'coll-printable_version_pdf' => 'Нусхаи PDF',
-	'coll-show_collection' => 'Намоиши гирдоварӣ',
+	'coll-show_collection' => 'Намоиши гирдоварӣ', # Fuzzy
 );
 
 /** Tajik (Latin script) (tojikī)
@@ -4740,11 +4745,12 @@ $messages['yo'] = array(
 	'coll-make_suggestions_tooltip' => 'Àfihàn àwọn ìdámọ̀ràn nípa àwọn ojúewé inú ìwé yín',
 );
 
-/** Cantonese (粵語) */
+/** Cantonese (粵語)
+ */
 $messages['yue'] = array(
 	'coll-create_a_book' => '整一本書',
 	'coll-download_as' => '下載做$1',
-	'coll-add_category' => '加分類',
+	'coll-add_category' => '加分類', # Fuzzy
 	'coll-bookscategory' => '書',
 	'coll-clear_collection' => '清書',
 	'coll-clear_collection_confirm' => '你係咪真係想完全噉清晒你本書？',
@@ -4757,6 +4763,7 @@ $messages['yue'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Bencmq
+ * @author Hydra
  * @author Liangent
  * @author Wmr89502270
  * @author Xiaomingyan
@@ -4796,6 +4803,8 @@ $messages['zh-hans'] = array(
 	'coll-make_suggestions' => '建议页面',
 	'coll-make_suggestions_tooltip' => '显示根据你的图书中的页面生成的建议',
 	'coll-suggest_empty' => '空',
+	'coll-user_book_prefix' => '-',
+	'coll-community_book_prefix' => '-',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
@@ -4840,5 +4849,6 @@ $messages['zh-hant'] = array(
 	'coll-make_suggestions' => '建議頁面',
 	'coll-make_suggestions_tooltip' => '根據您圖書中的頁面顯示建議',
 	'coll-suggest_empty' => '空',
+	'coll-user_book_prefix' => '-',
+	'coll-community_book_prefix' => '-',
 );
-

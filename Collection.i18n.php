@@ -190,6 +190,7 @@ The list is updated whenever you click on the add or remove buttons.',
  * @author Rex
  * @author Shirayuki
  * @author Siebrand
+ * @author Umherirrender
  * @author Wmr89502270
  */
 $messages['qqq'] = array(
@@ -198,6 +199,7 @@ $messages['qqq'] = array(
 	'coll-collection' => '{{Identical|Book}}',
 	'coll-collections' => '{{Identical|Book}}',
 	'coll-exclusion_category_title' => 'The message text is the name of a category.',
+	'coll-template_blacklist_title' => '{{notranslate}}',
 	'coll-print_template_prefix' => 'Prefix added to the templates name if you want to get a special for-print version of the template. So in a page instead of Template:Foo Template:PrintFoo is used if it exists.
 {{Identical|Print}}',
 	'coll-print_template_pattern' => 'Use print templates being subpages of regular templates.
@@ -257,6 +259,7 @@ $1 is not text; it is the http:// address of the book.',
 	'coll-invalid_podpartner_title' => 'POD means print-on-demand',
 	'coll-invalid_podpartner_msg' => 'POD means print-on-demand.',
 	'coll-license' => '{{Identical|License}}',
+	'coll-license_url' => '{{notranslate}}',
 	'coll-return_to' => '{{Identical|Return to $1}}',
 	'coll-order_info_article' => '{{doc-important|Do not translate "<nowiki>{{MediaWiki:Coll-helppage}}/</nowiki>"}}
 Sub page of {{msg-mw|coll-helppage}} ({{int:coll-helppage}})
@@ -283,33 +286,11 @@ Do not translate <code>OK</code> and <code>Cancel</code>, they are part of a loc
 	'right-collectionsaveascommunitypage' => '{{doc-right|collectionsaveascommunitypage}}',
 );
 
-/** Faeag Rotuma (Faeag Rotuma)
- * @author Jose77
+/** Abkhazian (Аҧсшәа)
+ * @author Temuri rajavi
  */
-$messages['rtm'] = array(
-	'coll-cancel' => "Mao'ạki",
-	'coll-about_pp' => 'Hün se $1',
-);
-
-/** Karelian (Karjala)
- * @author Flrn
- */
-$messages['krl'] = array(
-	'coll-cancel' => 'Keskevytä',
-);
-
-/** Niuean (ko e vagahau Niuē)
- * @author Jose77
- */
-$messages['niu'] = array(
-	'coll-cancel' => 'Tiaki',
-);
-
-/** Goan Konkani (Latin script) (Konknni)
- * @author Deepak D'Souza
- */
-$messages['gom-latn'] = array(
-	'coll-return_to' => '[[:$1]] ak patim vos',
+$messages['ab'] = array(
+	'coll-rename' => 'Ахьӡ аҧсахра',
 );
 
 /**    زَوُن (   زَوُن)
@@ -450,13 +431,6 @@ $messages['aeb'] = array(
 	'coll-load_local_book' => 'اضغط OK للاستمرار في كتابك %TITLE% الذي به %NUMPAGES% من صفحات الويكي. اضغط Cancel لحذفه والبدء بكتاب فارغ.',
 	'right-collectionsaveasuserpage' => 'احفظ الكتب كصفحة مستخدم',
 	'right-collectionsaveascommunitypage' => 'احفظ الكتب كصفحة مجتمع',
-);
-
-/** Abkhazian (Аҧсшәа)
- * @author Temuri rajavi
- */
-$messages['ab'] = array(
-	'coll-rename' => 'Ахьӡ аҧсахра',
 );
 
 /** Afrikaans (Afrikaans)
@@ -628,7 +602,7 @@ $messages['aln'] = array(
 	'coll-personal_collection_label' => 'libër Personale:',
 	'coll-community_collection_label' => 'Komuniteti libër:',
 	'coll-save_collection' => 'Libri Ruaj',
-	'coll-save_category' => 'Të gjitha librat e ruajtur janë shtuar në [[:Category:{{MediaWiki:Coll-bookscategory }}|{{MediaWiki:Coll-bookscategory}}]]',
+	'coll-save_category' => 'Të gjitha librat e ruajtur janë shtuar në [[:Category:{{MediaWiki:Coll-bookscategory }}|{{MediaWiki:Coll-bookscategory}}]]', # Fuzzy
 	'coll-overwrite_title' => 'Page ekziston. Mbishkruaj?',
 	'coll-overwrite_text' => 'Një faqe me të emri [[:$1]] ekziston.
 A ju dëshironi që ajo të zëvendësohet me librin tuaj?',
@@ -660,6 +634,7 @@ $messages['an'] = array(
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluir en imprentar',
+	'coll-template_blacklist_title' => 'MediaWiki:Lista negra de plantillas PDF',
 	'coll-print_template_prefix' => 'Imprentar',
 	'coll-print_template_pattern' => '$1/Imprentar',
 	'coll-unknown_subpage_title' => 'Subpachina desconoixida',
@@ -3794,6 +3769,7 @@ $messages['es'] = array(
 	'coll-collection' => 'Libro',
 	'coll-collections' => 'Libros',
 	'coll-exclusion_category_title' => 'Excluir al imprimir',
+	'coll-template_blacklist_title' => 'MediaWiki:Lista negra de plantillas PDF',
 	'coll-print_template_prefix' => 'Imprimir',
 	'coll-print_template_pattern' => '$1/Imprimir',
 	'coll-unknown_subpage_title' => 'Subpágina desconocida',
@@ -5158,6 +5134,13 @@ A lista actualízase sempre que preme no botón engadir ou eliminar.',
 	'right-collectionsaveascommunitypage' => 'Gardar libros como unha páxina da comunidade',
 );
 
+/** Goan Konkani (Latin script) (Konknni)
+ * @author Deepak D'Souza
+ */
+$messages['gom-latn'] = array(
+	'coll-return_to' => '[[:$1]] ak patim vos',
+);
+
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
  * @author Crazymadlover
  * @author Omnipaedista
@@ -5491,7 +5474,8 @@ $messages['gv'] = array(
 	'coll-about_pp' => 'Mychione $1',
 );
 
-/** Hausa (Hausa) */
+/** Hausa (Hausa)
+ */
 $messages['ha'] = array(
 	'coll-cancel' => 'Soke',
 	'coll-suggest_show' => 'nuna',
@@ -5661,7 +5645,7 @@ $messages['he'] = array(
  * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
-	'coll-desc' => '[[Special:Collection|पन्ने जमा करें]], पीडीएफ बनायें',
+	'coll-desc' => '[[Special:Collection|पन्ने जमा करें]], पीडीएफ बनायें', # Fuzzy
 	'coll-manage_your_book' => 'आपकी पुस्तक का प्रबंधन',
 	'coll-start_book_creator' => 'पुस्तक निर्माता आरंभ करें',
 	'coll-book_creator_continue' => 'पुस्तक निर्माता की उपयोग जारी रखें',
@@ -5677,8 +5661,8 @@ $messages['hi'] = array(
 	'coll-couldnotremovearticle_msg' => 'यह विकि पृष्ठ को हटा नहीं जा सका।',
 	'coll-savedbook_template' => 'सहजा गया पुस्तक',
 	'coll-your_book' => 'आपकी पुस्तक',
-	'coll-download_title' => 'कलेक्शन पीडिएफ डाउनलोड करें',
-	'coll-download_text' => 'आपके कलेक्शनका पीडिएफ अवतरण डाउनलोड करने के लिये, दिये हुए बटन पर क्लिक करें।',
+	'coll-download_title' => 'कलेक्शन पीडिएफ डाउनलोड करें', # Fuzzy
+	'coll-download_text' => 'आपके कलेक्शनका पीडिएफ अवतरण डाउनलोड करने के लिये, दिये हुए बटन पर क्लिक करें।', # Fuzzy
 	'coll-download' => 'डाउनलोड',
 	'coll-format_label' => 'प्रारूप:',
 	'coll-remove' => 'हटायें',
@@ -5690,51 +5674,51 @@ $messages['hi'] = array(
 	'coll-title' => 'शीर्षक:',
 	'coll-subtitle' => 'उपशीर्षक:',
 	'coll-contents' => 'अनुक्रम',
-	'coll-create_chapter' => 'नया अध्याय बनायें',
-	'coll-sort_alphabetically' => 'अक्षरोंके अनुसार पन्ने लगायें',
+	'coll-create_chapter' => 'नया अध्याय बनायें', # Fuzzy
+	'coll-sort_alphabetically' => 'अक्षरोंके अनुसार पन्ने लगायें', # Fuzzy
 	'coll-rename' => 'नाम बदलें',
 	'coll-new_chapter' => 'नये अध्याय के लिये नाम दें',
 	'coll-rename_chapter' => 'नये अध्याय के लिये नाम दें',
 	'coll-no_such_category' => 'ऐसी श्रेणी नहीं हैं',
 	'coll-notitle_title' => 'इस पन्ने का शीर्षक निश्चित नहीं कर पा रहें हैं।',
 	'coll-post_failed_title' => 'POST माँग पूरी नहीं हुई हैं',
-	'coll-post_failed_msg' => 'POST माँग पूरी नहीं हुई हैं ($2)',
+	'coll-post_failed_msg' => 'POST माँग पूरी नहीं हुई हैं ($2)', # Fuzzy
 	'coll-error_reponse' => 'सर्वरसे गलत रिस्पॉन्स मिला हैं',
-	'coll-empty_collection' => 'खाली कलेक्शन',
+	'coll-empty_collection' => 'खाली कलेक्शन', # Fuzzy
 	'coll-revision' => 'अवतरण: $1',
-	'coll-save_collection_title' => 'कलेक्शन संजोयें',
-	'coll-save_collection_text' => 'इस कलेक्शनको फिरसे इस्तेमाल में लाने के लिये इसे एक नाम दें और इसका प्रकार चुनकर इसे संजोयें:',
-	'coll-login_to_save' => 'अगर आप बादमें इस्तेमाल के लिये यह कलेक्शन संजोना चाहतें हैं, तो कृपया [[Special:UserLogin|लॉग इन करें या नया खाता खोलें]]।',
-	'coll-personal_collection_label' => 'वैयक्तिक कलेक्शन:',
-	'coll-community_collection_label' => 'सामूहिक कलेक्शन:',
-	'coll-save_collection' => 'कलेक्शन संजोयें',
+	'coll-save_collection_title' => 'कलेक्शन संजोयें', # Fuzzy
+	'coll-save_collection_text' => 'इस कलेक्शनको फिरसे इस्तेमाल में लाने के लिये इसे एक नाम दें और इसका प्रकार चुनकर इसे संजोयें:', # Fuzzy
+	'coll-login_to_save' => 'अगर आप बादमें इस्तेमाल के लिये यह कलेक्शन संजोना चाहतें हैं, तो कृपया [[Special:UserLogin|लॉग इन करें या नया खाता खोलें]]।', # Fuzzy
+	'coll-personal_collection_label' => 'वैयक्तिक कलेक्शन:', # Fuzzy
+	'coll-community_collection_label' => 'सामूहिक कलेक्शन:', # Fuzzy
+	'coll-save_collection' => 'कलेक्शन संजोयें', # Fuzzy
 	'coll-overwrite_title' => 'पन्ना अस्तित्व में हैं। पुनर्लेखन करें?',
 	'coll-overwrite_text' => '[[:$1]] नाम का पन्ना पहले से मौजूद है।
 क्या आप उसकी जगह अपना कलेक्शन डालना चाहते हैं?',
 	'coll-yes' => 'हाँ',
 	'coll-no' => 'नहीं',
 	'coll-load_overwrite_text' => 'आपके कलेक्शनमें पहले से कुछ पन्ने हैं।
-क्या आप आपका कलेक्शन दुबारा बनाना चाहतें हैं, या यह पन्ने बढाना चाहतें हैं?',
+क्या आप आपका कलेक्शन दुबारा बनाना चाहतें हैं, या यह पन्ने बढाना चाहतें हैं?', # Fuzzy
 	'coll-overwrite' => 'पुनर्लेखन करें',
 	'coll-append' => 'बढायें',
 	'coll-cancel' => 'रद्द करें',
 	'coll-update' => 'अद्यतन',
-	'coll-limit_exceeded_title' => 'कलेक्शन बहुत बडा हुआ हैं',
+	'coll-limit_exceeded_title' => 'कलेक्शन बहुत बडा हुआ हैं', # Fuzzy
 	'coll-limit_exceeded_text' => 'आपका कलेक्शन बहुत बडा हुआ हैं।
-और पन्ने बढा नहीं सकतें।',
+और पन्ने बढा नहीं सकतें।', # Fuzzy
 	'coll-rendering_title' => 'प्रतिपादन',
 	'coll-rendering_status' => '<strong>स्थिति:</strong> $1',
 	'coll-rendering_article' => '(विकी  पृष्ठ : $1)',
 	'coll-rendering_page' => '(पृष्ठ: $1)',
 	'coll-rendering_finished_title' => 'प्रतिपादन समाप्त',
-	'coll-notfound_title' => 'कलेक्शन मिला नहीं',
-	'coll-notfound_text' => 'कलेक्शन पन्ना मिला नहीं।',
+	'coll-notfound_title' => 'कलेक्शन मिला नहीं', # Fuzzy
+	'coll-notfound_text' => 'कलेक्शन पन्ना मिला नहीं।', # Fuzzy
 	'coll-download_notfound_title' => 'फ़ाइल नहीं मिली',
 	'coll-download_failed_title' => 'डाउनलोड के समय त्रुटि',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a></p> पर वापस जायें',
-	'coll-book_title' => 'छपा हुआ अवतरण माँगे',
-	'coll-book_text' => 'आप नीचे दिये हुए प्रिन्ट-ऑन-डिमांड पार्टनर्ससे आपके कलेक्शनमें उपलब्ध पन्नोंका छपा हुआ अवतरण पा सकतें हैं:',
-	'coll-order_from_pp' => '$1 से बुक मंगायें',
+	'coll-book_title' => 'छपा हुआ अवतरण माँगे', # Fuzzy
+	'coll-book_text' => 'आप नीचे दिये हुए प्रिन्ट-ऑन-डिमांड पार्टनर्ससे आपके कलेक्शनमें उपलब्ध पन्नोंका छपा हुआ अवतरण पा सकतें हैं:', # Fuzzy
+	'coll-order_from_pp' => '$1 से बुक मंगायें', # Fuzzy
 	'coll-about_pp' => '$1 के बारे में',
 	'coll-invalid_podpartner_title' => 'अमान्य POD साथी',
 	'coll-license' => 'लाइसेंस',
@@ -6242,8 +6226,8 @@ $messages['hy'] = array(
 	'coll-savedbook_template' => 'պահպանված_գիրք',
 	'coll-your_book' => 'Ձեր գիրքը',
 	'coll-download_title' => 'Ներբեռնել',
-	'coll-download_text' => 'Որևէ տարբերակ քաշելու համար ընտրեք ֆորմատը և սեղմեք կոճակը։',
-	'coll-download_as_text' => '$1 ֆորմատով տարբերակը քաշելու համար սեղմեք կոճակը։',
+	'coll-download_text' => 'Որևէ տարբերակ քաշելու համար ընտրեք ֆորմատը և սեղմեք կոճակը։', # Fuzzy
+	'coll-download_as_text' => '$1 ֆորմատով տարբերակը քաշելու համար սեղմեք կոճակը։', # Fuzzy
 	'coll-download' => 'Ներբեռնել',
 	'coll-format_label' => 'Ֆորմատ.',
 	'coll-remove' => 'Ջնջել',
@@ -6276,7 +6260,7 @@ $messages['hy'] = array(
 	'coll-personal_collection_label' => 'Անձնական գիրք.',
 	'coll-community_collection_label' => 'Համայնքի գիրք.',
 	'coll-save_collection' => 'Պահպանել գիրքը',
-	'coll-save_category' => 'Բոլոր գրքերը պահպանված են [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] կատեգորիայում։',
+	'coll-save_category' => 'Բոլոր գրքերը պահպանված են [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] կատեգորիայում։', # Fuzzy
 	'coll-overwrite_title' => 'Այդպիսի էջ գոյություն ունի։
 Վերգրե՞լ։',
 	'coll-overwrite_text' => '[[:$1]] էջը արդեն գոյություն ունի։
@@ -6316,7 +6300,7 @@ $messages['hy'] = array(
 	'coll-return_to_collection' => '<p>Վերադառնալ <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Պատվիրել որպես տպագիր գիրք',
 	'coll-book_text' => 'Ստանալ տպագիր գիրքը մեր գործակցից.',
-	'coll-order_from_pp' => 'Պատվիրել գիրքը $1-ից',
+	'coll-order_from_pp' => 'Պատվիրել գիրքը $1-ից', # Fuzzy
 	'coll-about_pp' => '$1-ի մասին',
 	'coll-invalid_podpartner_title' => 'Չգործող POD գործընկեր',
 	'coll-invalid_podpartner_msg' => 'Առաջարկված POD գործընկերը չի գործում։
@@ -8142,6 +8126,13 @@ $messages['krj'] = array(
 	'coll-about_pp' => 'Angut sa Iwan $1',
 );
 
+/** Karelian (Karjala)
+ * @author Flrn
+ */
+$messages['krl'] = array(
+	'coll-cancel' => 'Keskevytä',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
@@ -9783,8 +9774,8 @@ Disse Sied löppt blot richtig, wenn Javascript an is.</strong>',
 	'coll-savedbook_template' => 'Spiekert Book',
 	'coll-your_book' => 'Dien Book',
 	'coll-download_title' => 'Dalladen',
-	'coll-download_text' => 'En Offline-Version daltoladen, wähl en Format un klick op den Knoop.',
-	'coll-download_as_text' => 'Üm en Version in Format $1 daltoladen, klick op den Knopp.',
+	'coll-download_text' => 'En Offline-Version daltoladen, wähl en Format un klick op den Knoop.', # Fuzzy
+	'coll-download_as_text' => 'Üm en Version in Format $1 daltoladen, klick op den Knopp.', # Fuzzy
 	'coll-download' => 'Dalladen',
 	'coll-format_label' => 'Format:',
 	'coll-remove' => 'Rutnehmen',
@@ -9817,7 +9808,7 @@ Disse Sied löppt blot richtig, wenn Javascript an is.</strong>',
 	'coll-personal_collection_label' => 'Persöönlich Book:',
 	'coll-community_collection_label' => 'Gemeenschopsbook:',
 	'coll-save_collection' => 'Book spiekern',
-	'coll-save_category' => 'All Böker warrt in de Kategorie [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] insorteert.',
+	'coll-save_category' => 'All Böker warrt in de Kategorie [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] insorteert.', # Fuzzy
 	'coll-overwrite_title' => 'Sied gifft dat al. Överschrieven?',
 	'coll-overwrite_text' => 'Dat gifft al en Sied mit’n Naam [[:$1]]. Wullt du ehr gegen dien Sammlung utwesseln?',
 	'coll-yes' => 'Jo',
@@ -9857,7 +9848,7 @@ Henwiesen:
 	'coll-return_to_collection' => '<p>Trüch na <a href="$1">$2</a></p>',
 	'coll-book_title' => 'As druckt Book bestellen',
 	'coll-book_text' => 'Bestell en druckt Book bi een vun uns Print-on-Demand-Partners:',
-	'coll-order_from_pp' => 'Book bestellen bi $1',
+	'coll-order_from_pp' => 'Book bestellen bi $1', # Fuzzy
 	'coll-about_pp' => 'Över $1',
 	'coll-invalid_podpartner_title' => 'Ungülligen Print-on-Demand-Partner',
 	'coll-invalid_podpartner_msg' => 'De Angaven to’n Print-on-Demand-Partner sünd verkehrt. Neem Kuktakt op mit den MediaWiki-Administrater.',
@@ -9893,6 +9884,13 @@ $messages['ne'] = array(
 	'coll-title' => 'शीर्षक:',
 	'coll-revision' => 'संशोधन: $1',
 	'coll-save_collection' => 'किताब संग्रह गर्ने',
+);
+
+/** Niuean (ko e vagahau Niuē)
+ * @author Jose77
+ */
+$messages['niu'] = array(
+	'coll-cancel' => 'Tiaki',
 );
 
 /** Dutch (Nederlands)
@@ -10102,7 +10100,7 @@ $messages['nn'] = array(
 	'coll-book_creator_intro' => "<big>Med ''bokfunksjonen'' kan du laga ei bok som inneheld wikisider du sjølv vel ut. Du kan eksportera boka til ulike format (til dømes PDF eller ODF) eller tinga ein trykt kopi.</big>",
 	'coll-manage_your_book' => 'Administrér boka di',
 	'coll-book_creator_help' => 'Sjå [[{{MediaWiki:Coll-helppage}}|hjelpesida om bøker]] for meir informasjon.',
-	'coll-start_book_creator' => 'Start bokfunksjonen',
+	'coll-start_book_creator' => 'Start bokfunksjonen', # Fuzzy
 	'coll-book_creator_continue' => 'Hald fram med å bruka funksjonen for oppretting av bok',
 	'coll-book_creator_disable_text' => "''Bokskaparen'' vert slegen av og boka du held på med vil verta fjerna.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Bokskapartekst',
@@ -10234,10 +10232,10 @@ Lista vert oppdatert kvar gong du trykkjer på «legg til»- eller «fjern»-kna
  */
 $messages['oc'] = array(
 	'coll-desc' => '[[Special:Book|Crear de libres]]',
-	'coll-book_creator_intro' => "<big>Amb lo ''mòde libre'' podètz crear un libre que se compausa de paginas del wiki qu'auretz causidas. Podètz exportar vòstre libre en de formats diferents (per exemple PDF o ODF) o comandar una còpia estampada.</big>",
+	'coll-book_creator_intro' => "<big>Amb lo ''mòde libre'' podètz crear un libre que se compausa de paginas del wiki qu'auretz causidas. Podètz exportar vòstre libre en de formats diferents (per exemple PDF o ODF) o comandar una còpia estampada.</big>", # Fuzzy
 	'coll-manage_your_book' => 'Gerir vòstre libre',
 	'coll-book_creator_help' => "Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d'ajuda suls libres]] per mai d'entresenhas.",
-	'coll-start_book_creator' => 'Aviar lo mòde libre',
+	'coll-start_book_creator' => 'Aviar lo mòde libre', # Fuzzy
 	'coll-book_creator_continue' => 'Contunhar en utilizant lo creator de libres',
 	'coll-book_creator_disable_text' => "Lo ''creator de libres'' serà desactivat e los libres suls quals trabalhatz seràn suprimits de la sesilha de vòstre navigador.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Tèxte del mòde libre',
@@ -10873,7 +10871,6 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (português)
- * @author 555
  * @author Giro720
  * @author Hamilton Abreu
  * @author Helder.wiki
@@ -10883,6 +10880,7 @@ $messages['ps'] = array(
  * @author MF-Warburg
  * @author Malafaya
  * @author Waldir
+ * @author 555
  */
 $messages['pt'] = array(
 	'coll-desc' => '[[Special:Book|Criar livros]]',
@@ -11023,7 +11021,6 @@ A lista é actualizada sempre que clica os botões de adicionar ou remover.',
 );
 
 /** Brazilian Portuguese (português do Brasil)
- * @author 555
  * @author Eduardo.mps
  * @author Giro720
  * @author Hamilton Abreu
@@ -11031,6 +11028,7 @@ A lista é actualizada sempre que clica os botões de adicionar ou remover.',
  * @author Heldergeovane
  * @author Jorge Morais
  * @author Luckas Blade
+ * @author 555
  */
 $messages['pt-br'] = array(
 	'coll-desc' => '[[Special:Book|Criar livros]]',
@@ -11577,6 +11575,14 @@ Non ge puè sckaffà cchiù otre pàgene.",
 	'right-collectionsaveascommunitypage' => "Salve 'a pàgene cumme portale d'a comunitate",
 );
 
+/** Faeag Rotuma (Faeag Rotuma)
+ * @author Jose77
+ */
+$messages['rtm'] = array(
+	'coll-cancel' => "Mao'ạki",
+	'coll-about_pp' => 'Hün se $1',
+);
+
 /** Russian (русский)
  * @author Ahonc
  * @author Aleksandrit
@@ -11880,7 +11886,7 @@ $messages['rue'] = array(
  * @author Shubha
  */
 $messages['sa'] = array(
-	'coll-desc' => '[[Special:Collection|पृष्ठानि सङ्गृह्यताम्], पीडिएफ्-रूपेण परिवर्त्यताम्',
+	'coll-desc' => '[[Special:Collection|पृष्ठानि सङ्गृह्यताम्], पीडिएफ्-रूपेण परिवर्त्यताम्', # Fuzzy
 	'coll-book_creator_intro' => "<big>''book creator'' द्वारा स्वेच्छानुसारं विकिपृष्ठैः युक्तं पुस्तकं स्रष्टुम् अर्हसि । पुस्तकं विभिन्नेषु रूपेषु (उदाहरणाय PDF / ODF रूपेण) प्रेषयितुं मुद्रितप्रतेः प्राप्तै आदेष्टुम् अर्हति । </big>",
 	'coll-manage_your_book' => 'तव पुस्तकस्य प्रबन्धनम्',
 	'coll-book_creator_help' => 'अधिकविवरणाय दृश्यताम् [[{{MediaWiki:Coll-helppage}}|पुस्तकविषये साहायपृष्ठम्]]',
@@ -11968,7 +11974,7 @@ $messages['sa'] = array(
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/सङ्ग्रहविवरणलेखः योज्यताम्',
 	'coll-rendering_finished_title' => 'प्रतिपादनं समाप्तम्',
 	'coll-rendering_finished_text' => '<strong>विषयलेखः उत्पन्नः ।</strong>
-भवतः सङ्गणकं प्रति<strong>[$1 सञ्चिका अवतार्यताम्]</strong>',
+भवतः सङ्गणकं प्रति<strong>[$1 सञ्चिका अवतार्यताम्]</strong>', # Fuzzy
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/पुटविवरणलेखः योज्यताम्',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/सङ्ग्रहविवरणलेखः योज्यताम्',
 	'coll-notfound_title' => 'सङ्ग्रहः न प्राप्तः',
@@ -12910,7 +12916,7 @@ Spisak se ažurira svaki put kada kliknete na dugmiće za dodavanje i uklanjanje
  * @author Pyt
  */
 $messages['stq'] = array(
-	'coll-desc' => '[[Special:Bouk|Bouke moakje]]',
+	'coll-desc' => '[[Special:Bouk|Bouke moakje]]', # Fuzzy
 	'coll-collection' => 'Bouk',
 	'coll-collections' => 'Bouke',
 	'coll-noscript_text' => '<h1>JavaScript is nöödich!</h1>
@@ -13231,7 +13237,7 @@ $messages['sw'] = array(
 $messages['ta'] = array(
 	'coll-desc' => '[[Special:Book|புத்தகங்களை உருவாக்கு]]',
 	'coll-manage_your_book' => 'உங்கள் புத்தகத்தை நிர்வகி',
-	'coll-book_creator_help' => 'மேலும் தகவலுக்கு பார்க்கவும் [[{{MediaWiki:Coll-helppage}}  | புத்தகங்களை பற்றிய உதவி பக்கம்]] .',
+	'coll-book_creator_help' => 'மேலும் தகவலுக்கு பார்க்கவும் [[{{MediaWiki:Coll-helppage}}  | புத்தகங்களை பற்றிய உதவி பக்கம்]] .', # Fuzzy
 	'coll-start_book_creator' => 'புத்தக உருவாக்குநரை தொடங்கு',
 	'coll-book_creator_continue' => 'புத்தக உருவாக்குநர் பயன்படுத்துவதை தொடர்',
 	'coll-book_creator_disable_text' => "''புத்தக உருவாக்குநர்'' செயலிழக்க செய்யப்படும்  மற்றும் நீங்கள் உருவாக்கிக் கொண்டிருக்கும் புத்தகம் நீக்கப்படும்.",
@@ -13242,7 +13248,7 @@ $messages['ta'] = array(
 	'coll-print_template_prefix' => 'அச்சிடு',
 	'coll-print_template_pattern' => '$1/ அச்சிடு',
 	'coll-unknown_subpage_title' => 'அறியப்படாத துணைபக்கம்',
-	'coll-unknown_subpage_text' => ' [[Special:புத்தகம்|புத்தகத்தின்]]  துணைப்பக்கம் எதுவும் இல்லை.',
+	'coll-unknown_subpage_text' => ' [[Special:புத்தகம்|புத்தகத்தின்]]  துணைப்பக்கம் எதுவும் இல்லை.', # Fuzzy
 	'coll-couldnotaddarticle_title' => 'விக்கி பக்கத்தை சேர்க்க இயலாது',
 	'coll-couldnotaddarticle_msg' => 'விக்கி பக்கம் சேர்க்க இயலாது.',
 	'coll-couldnotremovearticle_title' => 'விக்கி பக்கத்தை நீக்க இயலாது.',
@@ -13291,7 +13297,7 @@ JavaScript இயக்கப்பட்டால் ஒழிய இப்ப�
 	'coll-overwrite_title' => 'பக்கம் இருக்கிறது.
 மேல் எழுதவா ?',
 	'coll-overwrite_text' => 'ஒரு பக்கம்  [[: $1 ]]என்ற பெயரில் ஏற்கனவே உள்ளது.
-இதை உங்கள் புத்தகம் கொண்டு மாற்றப்பட விரும்புகிறீர்களா?',
+இதை உங்கள் புத்தகம் கொண்டு மாற்றப்பட விரும்புகிறீர்களா?', # Fuzzy
 	'coll-yes' => 'ஆம்',
 	'coll-no' => 'இல்லை',
 	'coll-load_overwrite_text' => 'உங்கள் புத்தகத்தில் சில பக்கங்களை ஏற்கனவே கொண்டுள்ளீர்கள்.
@@ -13358,7 +13364,7 @@ $messages['te'] = array(
 	'coll-print_template_prefix' => 'ముద్రించు',
 	'coll-print_template_pattern' => '$1/ముద్రించు',
 	'coll-unknown_subpage_title' => 'గుర్తుతెలియని ఉపపేజి',
-	'coll-unknown_subpage_text' => '[[ప్రత్యేక:పుస్తకం|పుస్తకం]] యొక్క ఉపపేజీ లేనే లేదు',
+	'coll-unknown_subpage_text' => '[[ప్రత్యేక:పుస్తకం|పుస్తకం]] యొక్క ఉపపేజీ లేనే లేదు', # Fuzzy
 	'coll-couldnotaddarticle_title' => 'వికీ పేజిని కలుపలేకపోయాము',
 	'coll-couldnotaddarticle_msg' => 'వికీ పేజీని చేర్చలేకపోయాం.',
 	'coll-couldnotremovearticle_title' => 'వికీ పేజిని తొలగించలేకపోయాము',
@@ -13403,7 +13409,7 @@ $messages['te'] = array(
 	'coll-personal_collection_label' => 'వ్యక్తిగత పుస్తకము:',
 	'coll-community_collection_label' => 'సముదాయ పుస్తకం:',
 	'coll-save_collection' => 'పుస్తకముని భద్రపరచు',
-	'coll-save_category' => 'భద్రపరచిన పుస్తకాలన్నీ [[:వర్గం:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] వర్గానికి చేర్చబడ్డాయి.',
+	'coll-save_category' => 'భద్రపరచిన పుస్తకాలన్నీ [[:వర్గం:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] వర్గానికి చేర్చబడ్డాయి.', # Fuzzy
 	'coll-overwrite_title' => 'పేజీ ఉంది. దానిపైనే రాసేయాలా?',
 	'coll-overwrite_text' => '[[:$1]] అనే పేరుతో ఓ పేజీ ఇప్పటికే ఉంది.
 దాని స్ధానంలో మీ సేకరణని ఉంచాలా?',
@@ -13505,9 +13511,9 @@ $messages['tet'] = array(
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
-	'coll-desc' => '[[Special:Collection|Гирдоварии саҳифаҳо]], тавлиди PDFҳо',
-	'coll-collection' => 'Гирдоварӣ',
-	'coll-collections' => 'Гирдовариҳо',
+	'coll-desc' => '[[Special:Collection|Гирдоварии саҳифаҳо]], тавлиди PDFҳо', # Fuzzy
+	'coll-collection' => 'Гирдоварӣ', # Fuzzy
+	'coll-collections' => 'Гирдовариҳо', # Fuzzy
 	'coll-print_template_prefix' => 'Чоп',
 	'coll-unknown_subpage_title' => 'Зерсаҳифаи ношинос',
 	'coll-noscript_text' => '<h1>ҶаваСкрипт Лозим аст!</h1>
@@ -13515,7 +13521,7 @@ $messages['tg-cyrl'] = array(
 Ин саҳифа дуруст кор хоҳад карда, дар ҳолате, ки ҶаваСкрипт фаъол карда шуда бошад.</strong>',
 	'coll-your_book' => 'Китоби шумо',
 	'coll-download_title' => 'Дарёфт',
-	'coll-download_text' => 'Барои бор кардани нусхаи бурунхатии як қолаберо интихоб карда тугмаро пахш кунед.',
+	'coll-download_text' => 'Барои бор кардани нусхаи бурунхатии як қолаберо интихоб карда тугмаро пахш кунед.', # Fuzzy
 	'coll-download' => 'Дарёфт',
 	'coll-format_label' => 'Қолаб:',
 	'coll-remove' => 'Ҳазф',
@@ -13536,38 +13542,38 @@ $messages['tg-cyrl'] = array(
 	'coll-notitle_title' => 'Унвони саҳифа мушаххас шуда наметавонад.',
 	'coll-mwserve_failed_title' => 'Хато дар коргузори тарҷумакунанда',
 	'coll-error_reponse' => 'Посухи хатое аз хидматгузор',
-	'coll-empty_collection' => 'Холӣ кардани гирдовари',
+	'coll-empty_collection' => 'Холӣ кардани гирдовари', # Fuzzy
 	'coll-revision' => 'Нусха: $1',
-	'coll-save_collection_title' => 'Захира ва бо ҳам дидани гирдовариатон',
+	'coll-save_collection_title' => 'Захира ва бо ҳам дидани гирдовариатон', # Fuzzy
 	'coll-save_collection_text' => 'Интихоби як макон:',
-	'coll-login_to_save' => 'Агар майли захира кардани гирдовариҳоро барои истифодаи баъдӣ дошта бошед, лутфан [[Special:UserLogin|ба систем ворид шавед ё ҳисоби ҷадидиро эчод кунед]].',
-	'coll-personal_collection_label' => 'Гирдоварии шахсӣ:',
-	'coll-community_collection_label' => 'Гирдоварии умум:',
-	'coll-save_collection' => 'Захираи Гирдовари',
+	'coll-login_to_save' => 'Агар майли захира кардани гирдовариҳоро барои истифодаи баъдӣ дошта бошед, лутфан [[Special:UserLogin|ба систем ворид шавед ё ҳисоби ҷадидиро эчод кунед]].', # Fuzzy
+	'coll-personal_collection_label' => 'Гирдоварии шахсӣ:', # Fuzzy
+	'coll-community_collection_label' => 'Гирдоварии умум:', # Fuzzy
+	'coll-save_collection' => 'Захираи Гирдовари', # Fuzzy
 	'coll-overwrite_title' => 'Саҳифа вуҷуд дорад. Ба рӯи он аз навишта шавад?',
 	'coll-overwrite_text' => 'Саҳифае бо номи [[:$1]] аллакай вуҷуд дорад.
 Оё шумо мехоҳед онро бо гирдоварии худ иваз кунед?',
 	'coll-yes' => 'Бале',
 	'coll-no' => 'Не',
 	'coll-load_overwrite_text' => 'Шумо аллакай якчанд саҳифаҳоеро дар гирдоварии худ доред.
-Оё шумо мехоҳед рӯи гирдоварии кунуниатон нависед, мӯҳтавои ҷадидро пайваст ё лағв кунед?',
+Оё шумо мехоҳед рӯи гирдоварии кунуниатон нависед, мӯҳтавои ҷадидро пайваст ё лағв кунед?', # Fuzzy
 	'coll-overwrite' => 'Ба рӯй навиштан',
 	'coll-append' => 'Афзудан',
 	'coll-cancel' => 'Лағв',
 	'coll-update' => 'Барӯз кардан',
-	'coll-limit_exceeded_title' => 'Гирдовари Хеле Бузург',
+	'coll-limit_exceeded_title' => 'Гирдовари Хеле Бузург', # Fuzzy
 	'coll-limit_exceeded_text' => 'Саҳифаи гирдоварии шумо хеле бузург аст.
-Аз ин зиёд саҳифаҳо наметавонанд илова шаванд.',
+Аз ин зиёд саҳифаҳо наметавонанд илова шаванд.', # Fuzzy
 	'coll-rendering_title' => 'Дар ҳоли тарҷума додан',
 	'coll-rendering_status' => '<strong>Вазъият:</strong> $1',
 	'coll-rendering_article' => '(саҳифаи вики: $1)',
 	'coll-rendering_page' => '(саҳифа: $1)',
 	'coll-notfound_title' => 'Китоб ёфт нашуд',
-	'coll-notfound_text' => 'Саҳифаи гирдоварӣ ёфт нашуд.',
+	'coll-notfound_text' => 'Саҳифаи гирдоварӣ ёфт нашуд.', # Fuzzy
 	'coll-return_to_collection' => '<p>Бозгашт ба <a href="$1">$2</a></p>',
-	'coll-book_title' => 'Фармудани Китоби Чопӣ',
-	'coll-book_text' => 'Шумо метавонед китоби ба табъ расидаро, ки саҳифаи гирдовариҳои шуморо дорост бо ташриф овардан ба яке аз ҳамкорони чоп-дархост фармоед:',
-	'coll-order_from_pp' => 'Фармудани китоб аз $1',
+	'coll-book_title' => 'Фармудани Китоби Чопӣ', # Fuzzy
+	'coll-book_text' => 'Шумо метавонед китоби ба табъ расидаро, ки саҳифаи гирдовариҳои шуморо дорост бо ташриф овардан ба яке аз ҳамкорони чоп-дархост фармоед:', # Fuzzy
+	'coll-order_from_pp' => 'Фармудани китоб аз $1', # Fuzzy
 	'coll-about_pp' => 'Дар бораи $1',
 	'coll-invalid_podpartner_title' => 'Шарики Чоп-бо-дархости номӯътабар',
 	'coll-license' => 'Иҷозатнома',
@@ -14466,10 +14472,10 @@ $messages['ur'] = array(
  */
 $messages['vec'] = array(
 	'coll-desc' => '[[Special:Book|Crea libri]]',
-	'coll-book_creator_intro' => "<big>Con la ''modalità libro'' se pole farse un proprio libro de pagine wiki a sièlta lìbara. El libro el se pole esportar in diversi formati (par esenpio PDF o ODF) o se pole ordinar na copia stanpà.</big>",
+	'coll-book_creator_intro' => "<big>Con la ''modalità libro'' se pole farse un proprio libro de pagine wiki a sièlta lìbara. El libro el se pole esportar in diversi formati (par esenpio PDF o ODF) o se pole ordinar na copia stanpà.</big>", # Fuzzy
 	'coll-manage_your_book' => 'Gestissi el to libro',
-	'coll-book_creator_help' => 'Varda [[{{MediaWiki:Coll-helppage}}|la pagina de aiuto sui libri]] par majori informassion.',
-	'coll-start_book_creator' => 'Intaca la modalità libro',
+	'coll-book_creator_help' => 'Varda [[{{MediaWiki:Coll-helppage}}|la pagina de aiuto sui libri]] par majori informassion.', # Fuzzy
+	'coll-start_book_creator' => 'Intaca la modalità libro', # Fuzzy
 	'coll-book_creator_continue' => 'Và vanti a doparar el creador de libri',
 	'coll-book_creator_disable_text' => "El ''creador de libri'' el vegnarà destacà e el libro su cui te sì drio laorar el vegnarà cavà.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Testo modalità libro',
@@ -14723,7 +14729,7 @@ Không thể thêm trang được nữa.',
 <p><strong>Tiến độ:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
 <p>Trình duyệt sẽ làm tươi trang này vài giây một lần.
-Nếu không thấy thay đổi gì, xin hãy bấm nút Refresh hoặc Reload trong trình duyệt.</p>',
+Nếu không thấy thay đổi gì, xin hãy bấm nút Làm tuơi (Refresh) hoặc Tải lại (Reload) trong trình duyệt.</p>',
 	'coll-rendering_status' => '<strong>Trạng thái:</strong> $1',
 	'coll-rendering_article' => '(trang wiki: $1)',
 	'coll-rendering_page' => '(trang: $1)',
@@ -14854,7 +14860,8 @@ Pads pluik nonik kanons paläükön.',
 	'coll-suggest_undo' => 'sädunön',
 );
 
-/** Wu (吴语) */
+/** Wu (吴语)
+ */
 $messages['wuu'] = array(
 	'coll-cancel' => '取消',
 );
@@ -14939,8 +14946,8 @@ $messages['yue'] = array(
 	'coll-savedbook_template' => '保存咗嘅書',
 	'coll-your_book' => '你嘅書',
 	'coll-download_title' => '下載',
-	'coll-download_text' => '要下載一個版本，揀一種格式，然後再撳個掣。',
-	'coll-download_as_text' => '要下載做$1格式，撳個掣。',
+	'coll-download_text' => '要下載一個版本，揀一種格式，然後再撳個掣。', # Fuzzy
+	'coll-download_as_text' => '要下載做$1格式，撳個掣。', # Fuzzy
 	'coll-download' => '下載',
 	'coll-format_label' => '格式:',
 	'coll-remove' => '拎走',
@@ -14973,7 +14980,7 @@ $messages['yue'] = array(
 	'coll-personal_collection_label' => '個人書:',
 	'coll-community_collection_label' => '社群書:',
 	'coll-save_collection' => '存書',
-	'coll-save_category' => '全部書保存咗到[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]分類度。',
+	'coll-save_category' => '全部書保存咗到[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]分類度。', # Fuzzy
 	'coll-overwrite_title' => '版已經存在。
 覆蓋？',
 	'coll-overwrite_text' => '用[[:$1]]名嘅版已經存在。
@@ -15013,7 +15020,7 @@ $messages['yue'] = array(
 	'coll-return_to_collection' => '<p>返去<a href="$1">$2</a></p>',
 	'coll-book_title' => '柯打一本印刷書',
 	'coll-book_text' => '響印刷需求拍擋拎一本印刷書:',
-	'coll-order_from_pp' => '響$1柯打書',
+	'coll-order_from_pp' => '響$1柯打書', # Fuzzy
 	'coll-about_pp' => '關於$1',
 	'coll-invalid_podpartner_title' => '無效嘅POD拍擋',
 	'coll-invalid_podpartner_msg' => '提供嘅POD拍擋無效。
@@ -15131,6 +15138,7 @@ $messages['zh-hans'] = array(
 	'coll-invalid_podpartner_title' => '无效的印刷合作伙伴',
 	'coll-invalid_podpartner_msg' => '提供的印刷合作伙伴无效。请联系你的MediaWiki管理员。',
 	'coll-license' => '授权协议',
+	'coll-license_url' => '-',
 	'coll-return_to' => '返回[[:$1]]',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress订购信息',
 	'coll-suggest_title' => '你的图书的建议页面',
@@ -15282,6 +15290,7 @@ $messages['zh-hant'] = array(
 	'coll-invalid_podpartner_title' => '不正確的POD合作伙伴',
 	'coll-invalid_podpartner_msg' => '提供的合作伙伴不正確，請聯絡您的MediaWiki管理員。',
 	'coll-license' => '許可協議',
+	'coll-license_url' => '-',
 	'coll-return_to' => '回到[[:$1]]',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress 的訂購資訊',
 	'coll-suggest_title' => '您圖書的建議頁面',
@@ -15309,4 +15318,3 @@ $messages['zh-hant'] = array(
 	'right-collectionsaveasuserpage' => '在使用者頁面儲存此書',
 	'right-collectionsaveascommunitypage' => '在社群頁面儲存此書',
 );
-
