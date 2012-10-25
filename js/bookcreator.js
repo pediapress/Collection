@@ -95,6 +95,9 @@ $(function() {
 		}
 		current_link = link;
 		title = link.attr('title');
+		if (!title){
+			return;
+		}
 		link.attr('title', ''); // disable default browser tooltip
 		show_soon_timeout = setTimeout(function() {
 			get_data_xhr = $.post(script_url, {
