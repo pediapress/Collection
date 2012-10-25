@@ -830,23 +830,22 @@ class SpecialCollection extends SpecialPage {
 				return null;
 			}
 			if ( $oldid < 0 ) {
-				$article = new WikiPage( $articleTitle );
+				$article = new Article( $articleTitle, 0 );
 			} else {
 				$article = new Article( $articleTitle, $oldid );
-				$oldid = $article->getOldID();
 			}
 			if ( !$article->exists() ) {
 				return null;
 			}
+
+			$revision = Revision::newFromTitle( $articleTitle, $article->getOldID() );
 			$latest = $article->getLatest();
+			$oldid = $article->getOldID();
+
 			if ( !$oldid ) {
 				$oldid = $latest;
 			}
-			$revision = Revision::newFromTitle( $articleTitle, $oldid );
 
-			if ( !$revision ) {
-				return null;
-			}
 			$d = array(
 				'type' => 'article',
 				'content_type' => 'text/x-wiki',
