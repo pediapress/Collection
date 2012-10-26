@@ -1028,7 +1028,7 @@ $messages['diq'] = array(
 	'coll-helppage' => 'Help:Kitaban',
 	'coll-load_collection' => 'Kitab bar bike',
 	'coll-load_collection_tooltip' => 'Ena kitab bar bike',
-	'coll-n_pages' => '$1 {{PLURAL:$1|pel|pelan}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|pela|peley}}',
 	'coll-printable_version_pdf' => 'Versiyonê PDFî',
 	'coll-remove_this_page' => 'Ena pelê kitabê xo de wedarne',
 	'coll-remove_page_tooltip' => 'Pelê wîkî yê penî ke kitabê tu de ey wedarne',
@@ -2333,6 +2333,7 @@ $messages['kab'] = array(
 
 /** Kirmanjki (Kırmancki)
  * @author Erdemaslancan
+ * @author Mirzali
  */
 $messages['kiu'] = array(
 	'coll-print_export' => 'Çap bike/export bike',
@@ -2359,7 +2360,7 @@ $messages['kiu'] = array(
 	'coll-helppage' => 'Help:Kitaban',
 	'coll-load_collection' => 'Kitab bar bike',
 	'coll-load_collection_tooltip' => 'Ena kitab bar bike',
-	'coll-n_pages' => '$1 {{PLURAL:$1|pel|pelan}}',
+	'coll-n_pages' => '$1 {{PLURAL:$1|pele|peli}}',
 	'coll-printable_version_pdf' => 'Versiyonê PDFî',
 	'coll-remove_this_page' => 'Ena pelê kitabê xo de wedarne',
 	'coll-remove_page_tooltip' => 'Pelê wîkî yê penî ke kitabê tu de ey wedarne',
@@ -2779,6 +2780,46 @@ $messages['lv'] = array(
 	'coll-make_suggestions' => 'Ieteikt lapas',
 	'coll-make_suggestions_tooltip' => 'Parādīt ieteikumus, ņemot vērā lapas Jūsu grāmatā',
 	'coll-suggest_empty' => 'tukšs',
+);
+
+/** Moksha (мокшень)
+ * @author Numulunj pilgae
+ */
+$messages['mdf'] = array(
+	'coll-print_export' => 'Принтыяфтомс/эскпортыяфтомс',
+	'coll-create_a_book' => 'Тиемс китап',
+	'coll-create_a_book_tooltip' => 'Тиемс китап эли лопань кярькс',
+	'coll-book_creator' => 'Китапонь тиема',
+	'coll-download_as' => 'Каямс кода $1',
+	'coll-download_as_tooltip' => 'Каямс $1 тя вики лопать верзиенц',
+	'coll-disable' => 'лоткафтомс',
+	'coll-book_creator_disable' => 'Лоткафтомс китапонь тиемать',
+	'coll-book_creator_disable_tooltip' => 'Лоткафтомс китапонь тиемать тевс нолдама',
+	'coll-add_linked_article' => 'Поладомс сюлмафкс мархта вики лопань китапозот',
+	'coll-remove_linked_article' => 'Нардамс сюлмафкс мархта вики лопань китапстот',
+	'coll-add_category' => 'Поладомс тя категорие тонь китапозот',
+	'coll-add_category_tooltip' => 'Поладомс сембе вики лопатнень тя категориеста китапозот',
+	'coll-add_this_page' => 'Поладомс тя лопать китапозот',
+	'coll-add_page_tooltip' => 'Поладомс тя пингонь вики лопань китпозот',
+	'coll-bookscategory' => 'Китапт',
+	'coll-clear_collection' => 'Нардамс китап',
+	'coll-clear_collection_confirm' => 'Тон афкукс ёрат марнек нардамс китапцень?',
+	'coll-clear_collection_tooltip' => 'Нардамс сембе вик лопатнень тя пингонь китапстот',
+	'coll-help' => 'Лездома',
+	'coll-help_tooltip' => 'Няфтемс лездома китапонь тиемать коряс',
+	'coll-helppage' => 'Лездома:Китапт', # Fuzzy
+	'coll-load_collection' => 'Тонгомс китап',
+	'coll-load_collection_tooltip' => 'Тонгомс китапть кода тя пингонь китапце',
+	'coll-n_pages' => '$1 {{PLURAL:$1|лопа|лопат}}',
+	'coll-printable_version_pdf' => 'PDF верзие',
+	'coll-remove_this_page' => 'Нарламс тя лопать китапстот',
+	'coll-remove_page_tooltip' => 'Нардамс тя пингонь лопать китапстот',
+	'coll-show_collection' => 'Няфтемс китап',
+	'coll-show_collection_tooltip' => 'Люпштамс китапцень петнеманди/каяманди/сявоманди',
+	'coll-not_addable' => 'Тя лопась аф поладови',
+	'coll-make_suggestions' => 'Кодама лопат',
+	'coll-make_suggestions_tooltip' => 'Няфтеть кодама лопат китапцень коряс',
+	'coll-suggest_empty' => 'шава',
 );
 
 /** Macedonian (македонски)
