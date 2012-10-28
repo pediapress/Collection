@@ -1339,7 +1339,6 @@ $messages['fa'] = array(
 	'coll-make_suggestions' => 'صفحه پیشنهاد کن',
 	'coll-make_suggestions_tooltip' => 'با توجه به صفحه‌های کتاب پیشنهادهایی نمایش بده',
 	'coll-suggest_empty' => 'خالی',
-	'coll-community_book_prefix' => 'کتاب:',
 );
 
 /** Finnish (suomi)
@@ -2702,7 +2701,7 @@ $messages['ltg'] = array(
 	'coll-show_collection' => 'Ruodeit gruomotu',
 );
 
-/** Lushai (Mizo ţawng)
+/** Mizo (Mizo ţawng)
  * @author RMizo
  */
 $messages['lus'] = array(
@@ -4844,8 +4843,6 @@ $messages['zh-hans'] = array(
 	'coll-make_suggestions' => '建议页面',
 	'coll-make_suggestions_tooltip' => '显示根据你的图书中的页面生成的建议',
 	'coll-suggest_empty' => '空',
-	'coll-user_book_prefix' => '-',
-	'coll-community_book_prefix' => '-',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
@@ -4890,6 +4887,4 @@ $messages['zh-hant'] = array(
 	'coll-make_suggestions' => '建議頁面',
 	'coll-make_suggestions_tooltip' => '根據您圖書中的頁面顯示建議',
 	'coll-suggest_empty' => '空',
-	'coll-user_book_prefix' => '-',
-	'coll-community_book_prefix' => '-',
 );
