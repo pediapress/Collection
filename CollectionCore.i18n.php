@@ -4617,10 +4617,44 @@ $messages['uk'] = array(
 );
 
 /** Urdu (اردو)
+ * @author Muhammad Shuaib
  * @author පසිඳු කාවින්ද
  */
 $messages['ur'] = array(
+	'coll-print_export' => 'طباعت/برآمدگی',
+	'coll-create_a_book' => 'تخلیق کتاب',
+	'coll-create_a_book_tooltip' => 'کتاب یا منتخب صفحہ تخلیق کریں',
+	'coll-book_creator' => 'کتاب تخلیق کار',
+	'coll-download_as' => 'زیراثقال بشکل$1',
+	'coll-download_as_tooltip' => 'زیراثقال نسخہ $1 برائے ویکی صفحہ ہذا۔',
+	'coll-disable' => 'غیر فعال',
+	'coll-book_creator_disable' => 'کتاب تخلیق کار غیر فعال',
+	'coll-book_creator_disable_tooltip' => 'کتاب تخلیق کار کا استعمال بند کریں',
+	'coll-add_linked_article' => 'مربوط ویکی صفحہ کو اپنی کتاب میں شامل کریں',
+	'coll-remove_linked_article' => 'مربوط ویکی صفحہ کو اپنی کتاب سے ہٹائیں',
+	'coll-add_category' => 'اس زمرہ کو اپنی کتاب میں شامل کریں',
+	'coll-add_category_tooltip' => 'اس زمرہ میں موجود تمام ویکی صفحات کو اپنی کتاب میں شامل کریں',
+	'coll-add_this_page' => 'اس صفحہ کو اپنی کتاب میں شامل کریں',
+	'coll-add_page_tooltip' => 'حالیہ وکی صفحہ کو اپنی کتاب میں شامل کریں',
+	'coll-bookscategory' => 'کتابیں',
+	'coll-clear_collection' => 'تصفیہ کتاب',
+	'coll-clear_collection_confirm' => 'کیا واقعی آپ مکمل طور پر اپنی کتاب ختم کرنا چاہتے ہیں؟',
+	'coll-clear_collection_tooltip' => 'اپنی حالیہ کتاب سے تمام ویکی صفحات کو ہٹائیں',
 	'coll-help' => 'مدد',
+	'coll-help_tooltip' => 'تخلیق کتاب سے متعلق معاونت دکھائیں',
+	'coll-helppage' => 'Help:کتب',
+	'coll-load_collection' => 'تحمیل کتاب',
+	'coll-load_collection_tooltip' => 'اس کتاب کو اپنی حالیہ کتاب کے طور پر لوڈ کریں',
+	'coll-n_pages' => '
+$1 {{PLURAL:$1|صفحہ|صفحات}}',
+	'coll-printable_version_pdf' => 'نسخہ برائے نقل‌پذیر دستاویزی شکلبند (PDF)',
+	'coll-remove_this_page' => 'اس صفحہ کو اپنی کتاب سے ہٹائیں',
+	'coll-remove_page_tooltip' => 'حالیہ ویکی صفحہ کو اپنی کتاب سے ہٹائیں',
+	'coll-show_collection' => 'نمائش کتاب',
+	'coll-show_collection_tooltip' => 'اپنی کتاب کو زیراثقال/ترمیم/طلب کرنے کے لیے طق کریں',
+	'coll-not_addable' => 'اس صفحہ کا اضافہ نہیں کیا جاسکتا',
+	'coll-make_suggestions' => 'تجویز برائے صفحات',
+	'coll-make_suggestions_tooltip' => 'اپنی کتاب کے صفحات پر مبنی تجاویز دکھائیں',
 	'coll-suggest_empty' => 'خالی',
 );
 
