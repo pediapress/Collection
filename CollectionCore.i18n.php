@@ -3712,6 +3712,7 @@ $messages['roa-tara'] = array(
  * @author Ferrer
  * @author Kaganer
  * @author Putnik
+ * @author Volkov
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -3722,7 +3723,7 @@ $messages['ru'] = array(
 	'coll-download_as' => 'Скачать как $1',
 	'coll-download_as_tooltip' => 'Скачать $1-версию этой вики-страницы',
 	'coll-disable' => 'выключить',
-	'coll-book_creator_disable' => 'Отключить книжного мастера',
+	'coll-book_creator_disable' => 'Отключить функцию книжного мастера',
 	'coll-book_creator_disable_tooltip' => 'Прекратите использование книжного мастера',
 	'coll-add_linked_article' => 'Добавить связанную вики-страницу в вашу книгу',
 	'coll-remove_linked_article' => 'Удалить связанную вики-страницу из вашей книги',

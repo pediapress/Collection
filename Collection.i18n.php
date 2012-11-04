@@ -11742,6 +11742,7 @@ $messages['rtm'] = array(
  * @author MaxSem
  * @author Putnik
  * @author Sergey kudryavtsev
+ * @author Volkov
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -11749,7 +11750,7 @@ $messages['ru'] = array(
 	'coll-book_creator_intro' => "<big>С помощью ''книжного мастера'' вы можете создать книгу, содержащую выбранные вами вики-страницы. Вы сможете экспортировать книги в различные форматы (например, в PDF или ODF) или заказать печатный экземпляр.</big>",
 	'coll-manage_your_book' => 'Управление вашей книгой',
 	'coll-book_creator_help' => 'Дополнительную информацию см. в [[{{MediaWiki:Coll-helppage}}|справке о книгах]].',
-	'coll-start_book_creator' => 'Запустить книжного мастера',
+	'coll-start_book_creator' => 'Запустить функцию книжного мастера',
 	'coll-book_creator_continue' => 'Продолжить использование книжного мастера',
 	'coll-book_creator_disable_text' => "''Книжный мастер'' будет отключён, книга, над которой вы сейчас работаете — удалена.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Текст книжного мастера',
