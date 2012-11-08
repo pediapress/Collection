@@ -7559,6 +7559,32 @@ $messages['kab'] = array(
 	'coll-cancel' => 'Semmewet',
 );
 
+/** Khowar (کھوار)
+ * @author Rachitrali
+ */
+$messages['khw'] = array(
+	'coll-collection' => 'کتاب',
+	'coll-download' => 'ڈاؤن لوڈ ، سیف کورک',
+	'coll-order_from_pp' => 'نمائش مع $1',
+	'coll-about_pp' => '$1 متعلقہ',
+	'coll-license' => 'اجازہ(لایسنس)',
+	'coll-return_to' => 'واپس(آچی) [[:$1]]',
+	'coll-suggested_articles' => 'تجاویز',
+	'coll-suggest_reset_bans' => 'دوبارہ مرتب کورے، دوبارہ ساوزاوے',
+	'coll-suggest_your_book' => 'تہ کتاب',
+	'coll-suggest_show' => 'پشاوے',
+	'coll-suggest_undo_tooltip' => 'ھیہ اقدامو استرجع(Undo)',
+	'coll-suggest_undo' => 'استرجع(Undo)',
+	'coll-format-rl' => 'برقی کتاب (PDF)',
+	'coll-format-epub' => 'برقی کتاب (EPUB)',
+	'coll-format-odf' => 'ورڈ پروسیسر (اوپن ڈاکومنٹ)',
+	'coll-format-zim' => 'کیوکس (OpenZIM)',
+	'coll-format-docbook' => 'ڈاک بک',
+	'coll-format-okawix_zeno' => 'اوکاوکس',
+	'right-collectionsaveasuserpage' => 'بطور صفحہ صارف کتابان محفوظ کورے',
+	'right-collectionsaveascommunitypage' => 'کمیونٹیو صفحہو طورا کتابان محفوظ کورے',
+);
+
 /** Kirmanjki (Kırmancki)
  * @author Erdemaslancan
  */

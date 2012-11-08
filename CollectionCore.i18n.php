@@ -2330,6 +2330,27 @@ $messages['kab'] = array(
 	'coll-help' => 'Tallat',
 );
 
+/** Khowar (کھوار)
+ * @author Rachitrali
+ */
+$messages['khw'] = array(
+	'coll-print_export' => 'چاپ/برآمدگی',
+	'coll-create_a_book' => 'کتاب ساوزاوے',
+	'coll-create_a_book_tooltip' => 'کتاب یا منتخب صفحہ ساوزاوے',
+	'coll-book_creator' => '',
+	'coll-download_as' => 'ڈاون لوڈ بشکل$1',
+	'coll-download_as_tooltip' => 'ڈاون لوڈ نسخہ $1 برائے ویکی صفحہ ہذا۔',
+	'coll-disable' => 'غیر فعال',
+	'coll-book_creator_disable' => 'کتاب ساوزیاک غیر فعال',
+	'coll-book_creator_disable_tooltip' => 'کتاب تخلیق کار(کتاب ساوزیاک)و استعمالو باند کورے',
+	'coll-add_linked_article' => 'مربوط ویکی صفحہو تان کتابا شامل کورے',
+	'coll-remove_linked_article' => 'مربوط ویکی صفحہو تان کتاباری ہٹاو کورے',
+	'coll-bookscategory' => 'کتپ',
+	'coll-clear_collection' => 'تصفیہ کتاب',
+	'coll-help' => 'مدد',
+	'coll-printable_version_pdf' => 'نسخہ برائے نقل‌پذیر دستاویزی شکلبند (PDF)',
+);
+
 /** Kirmanjki (Kırmancki)
  * @author Erdemaslancan
  * @author Mirzali
