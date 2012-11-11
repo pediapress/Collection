@@ -14471,6 +14471,21 @@ $messages['tt-cyrl'] = array(
 	'coll-suggest_undo' => 'үткәрмәү',
 );
 
+/** Central Atlas Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ)
+ * @author Tifinaghes
+ */
+$messages['tzm'] = array(
+	'coll-collection' => 'ⴰⴷⵍⵉⵙ',
+	'coll-collections' => 'ⵉⴷⵍⵉⵙⵏ',
+	'coll-print_template_prefix' => 'ⵙⵙⵉⴳⵣ',
+	'coll-show' => 'ⵥⵕ',
+	'coll-title' => 'ⴰⵣⵡⵉⵍ:',
+	'coll-suggest_your_book' => 'ⴰⴷⵍⵉⵙ ⵏⵏⴽ',
+	'coll-suggest_show' => 'ⵥⵕ',
+	'coll-suggest_undo' => 'ⴰⵖⵓⵍ',
+	'coll-format-okawix_zeno' => 'ⵓⴽⴰⵡⵉⴽⵙ',
+);
+
 /** Ukrainian (українська)
  * @author AS
  * @author Ahonc

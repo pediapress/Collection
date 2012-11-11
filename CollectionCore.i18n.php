@@ -4593,6 +4593,14 @@ $messages['tt-cyrl'] = array(
 	'coll-suggest_empty' => 'буш',
 );
 
+/** Central Atlas Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ)
+ * @author Tifinaghes
+ */
+$messages['tzm'] = array(
+	'coll-bookscategory' => 'ⵉⴷⵍⵉⵙⵏ',
+	'coll-help' => 'ⵜⵉⵡⵉⵙⵉ',
+);
+
 /** Ukrainian (українська)
  * @author AS
  * @author Ahonc
