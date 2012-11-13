@@ -14490,6 +14490,7 @@ $messages['tzm'] = array(
  * @author AS
  * @author Ahonc
  * @author Aleksandrit
+ * @author Base
  * @author NickK
  * @author Prima klasy4na
  */
@@ -14626,6 +14627,12 @@ $messages['uk'] = array(
 	'coll-suggest_undo_tooltip' => 'Скасувати цю дію',
 	'coll-suggest_undo' => 'скасувати',
 	'coll-load_local_book' => 'Клацніть «Гаразд», щоб продовжити роботу з вашою книгою %TITLE%, яка містить %NUMPAGES% вікі-сторінок. Клацніть «Скасувати», щоб вилучити її і почати з порожньою книгою.',
+	'coll-format-rl' => 'електронна книга (PDF)',
+	'coll-format-epub' => 'електронна книга (EPUB)',
+	'coll-format-odf' => 'текстовий процесор (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Збереження книг як сторінок користувачів',
 	'right-collectionsaveascommunitypage' => 'Збереження книг як сторінок спільноти',
 );
