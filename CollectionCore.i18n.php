@@ -2842,6 +2842,20 @@ $messages['mdf'] = array(
 	'coll-suggest_empty' => 'шава',
 );
 
+/** Minangkabau (Baso Minangkabau)
+ * @author SpartacksCompatriot
+ */
+$messages['min'] = array(
+	'coll-print_export' => 'Cetak/ekspor',
+	'coll-create_a_book' => 'Mambuek buku',
+	'coll-create_a_book_tooltip' => 'Mambuek buku atau koleksi halaman',
+	'coll-book_creator' => 'Pambuek buku',
+	'coll-download_as' => 'Muat naiak sabagai $1',
+	'coll-download_as_tooltip' => 'Muat naiak versi $1 dari halaman ko',
+	'coll-book_creator_disable' => 'Jan buliahan pambuekan buku',
+	'coll-book_creator_disable_tooltip' => 'Baranti manggunoan pambuek buku',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
