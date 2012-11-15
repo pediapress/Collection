@@ -23,7 +23,7 @@
 
 $(function() {
 
-	var script_url = wgServer + ((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript);
+	var script_url = mw.util.wikiScript();
 
 	function save_collection(collection) {
 		$.jStorage.set('collection', collection);
@@ -35,14 +35,14 @@ $(function() {
 		$.getJSON(script_url, {
 			'action': 'ajax',
 			'rs': 'wfAjaxCollectionGetBookCreatorBoxContent',
-			'rsargs[]': [hint, oldid, wgPageName]
+			'rsargs[]': [hint, oldid, mw.config.get('wgPageName')]
 		}, function(result) {
 			$('#coll-book_creator_box').html(result.html);
 		});
 	}
 
 	function collectionCall(func, args) {
-	  var hint = args.shift();
+		var hint = args.shift();
 		$.post(script_url, {
 			'action': 'ajax',
 			'rs': 'wfAjaxCollection' + func,
@@ -58,7 +58,6 @@ $(function() {
 	}
 
 	window.collectionCall = collectionCall; // public
-
 
 	var mouse_pos = {};
 	var popup_div = null;
@@ -166,7 +165,7 @@ $(function() {
 	});
 	setInterval(check_popup_hide, 300);
 	createDiv();
-	var prefix = wgArticlePath.replace(/\$1/, '');
+	var prefix = mw.config.get('wgArticlePath').replace(/\$1/, '');
 	$("#bodyContent "
 		+ "a[href^='" + prefix + "']" // URL starts with prefix of wgArticlePath
 		+ ":not(a[href~='index.php'])" // URL doesn't contain index.php (simplification!)
