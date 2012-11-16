@@ -6208,6 +6208,7 @@ A lista minden alkalommal frissül, amikor a „hozzáadás” vagy „eltávol�
 /** Armenian (Հայերեն)
  * @author Chaojoker
  * @author Teak
+ * @author Xelgen
  */
 $messages['hy'] = array(
 	'coll-desc' => '[[Special:Book|Ստեղծել գրքեր]]',
@@ -6302,7 +6303,7 @@ $messages['hy'] = array(
 	'coll-about_pp' => '$1-ի մասին',
 	'coll-invalid_podpartner_title' => 'Չգործող POD գործընկեր',
 	'coll-invalid_podpartner_msg' => 'Առաջարկված POD գործընկերը չի գործում։
-Խնդրում ենք կապնվել ձեր MediaWiki ադմինիստրատորի հետ։',
+Խնդրում ենք կապվել ձեր ՄեդիաՎիքիի (MediaWiki) ադմինիստրատորի հետ։',
 	'coll-license' => 'Արտոնագիր',
 	'coll-return_to' => 'Վերադառնալ [[:$1]]',
 );
