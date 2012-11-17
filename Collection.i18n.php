@@ -3742,6 +3742,7 @@ La listo estas ĝisdatigita iam ajn vi klakas la butonojn aldoni aŭ forigi.',
  * @author Armando-Martin
  * @author Baiji
  * @author Crazymadlover
+ * @author Dalton2
  * @author Dferg
  * @author Imre
  * @author Jatrobat
@@ -3788,10 +3789,10 @@ Esta página no funcionará correctamente mientras no esté habilitado.</strong>
 	'coll-format_label' => 'Formato:',
 	'coll-remove' => 'Quitar',
 	'coll-show' => 'Mostrar',
-	'coll-move_to_top' => 'Mover al principio',
-	'coll-move_up' => 'Mover arriba',
-	'coll-move_down' => 'Mover abajo',
-	'coll-move_to_bottom' => 'Mover al final',
+	'coll-move_to_top' => 'Trasladar al principio',
+	'coll-move_up' => 'Trasladar arriba',
+	'coll-move_down' => 'Trasladar abajo',
+	'coll-move_to_bottom' => 'Trasladar al final',
 	'coll-title' => 'Título:',
 	'coll-subtitle' => 'Subtítulo:',
 	'coll-contents' => 'Contenidos',
