@@ -1306,6 +1306,25 @@ $messages['az'] = array(
 	'coll-suggest_show' => 'göstər',
 );
 
+/** تورکجه (تورکجه)
+ * @author Ebrahimi-amir
+ */
+$messages['azb'] = array(
+	'coll-collection' => 'کیتاب',
+	'coll-collections' => 'کیتابلار',
+	'coll-print_template_prefix' => 'چاپ',
+	'coll-download_title' => 'ائندیر',
+	'coll-download' => 'ائندیر',
+	'coll-show' => 'گؤستر',
+	'coll-title' => 'باشلیق:',
+	'coll-yes' => 'بلی',
+	'coll-no' => 'یوخ',
+	'coll-cancel' => 'لغو ائت',
+	'coll-about_pp' => '$1 ه گؤره',
+	'coll-suggest_show' => 'گؤستر',
+	'coll-suggest_undo' => 'گئری‌دون',
+);
+
 /** Bashkir (башҡортса)
  * @author Amire80
  * @author Assele

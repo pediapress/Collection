@@ -424,6 +424,35 @@ $messages['az'] = array(
 	'coll-suggest_empty' => 'boş',
 );
 
+/** تورکجه (تورکجه)
+ * @author Ebrahimi-amir
+ */
+$messages['azb'] = array(
+	'coll-print_export' => 'چاپ/ایخراج',
+	'coll-create_a_book' => 'کیتاب یاراد',
+	'coll-create_a_book_tooltip' => 'کیتاب و یا صحیفه‌لر کوللئكتیوی یاراد',
+	'coll-book_creator' => 'کیتاب یارادان',
+	'coll-download_as' => '$1 دان ائندیرمه',
+	'coll-download_as_tooltip' => 'بیر $1 وئرسیاسین بو ویکی صحیفه‌سی‌ندن ائندیر',
+	'coll-disable' => 'ایشله‌میر',
+	'coll-book_creator_disable' => 'کیتاب یارادان ایشله‌میر',
+	'coll-book_creator_disable_tooltip' => 'کیتاب یارادان‌دان ایستیفاده‌نی دایاندیر',
+	'coll-add_linked_article' => 'ویکی باغلانتی‌سین کیتابا آرتیر',
+	'coll-remove_linked_article' => 'ویکی باغلانتی‌سین کیتابدان سیل',
+	'coll-add_category' => 'بو بولومو کیتابینیزا آرتیرین',
+	'coll-add_category_tooltip' => 'بوتون بو بؤلوم‌ده اولان ویکی صحیفه‌لرین اؤز کیتابینیزا آرتیرین',
+	'coll-add_this_page' => 'بو صحیفه‌نی کیتابینیزا آرتیرین',
+	'coll-add_page_tooltip' => 'سون ویکی صحیفه‌سین کیتابینیزا آرتیرین',
+	'coll-bookscategory' => 'کیتابلار',
+	'coll-clear_collection' => 'کیتابی سیل',
+	'coll-help' => 'یاردیم',
+	'coll-help_tooltip' => 'کیتابلار یاراتماق اوچون یاردیم گؤستر',
+	'coll-helppage' => 'Help:کیتابلار',
+	'coll-load_collection' => 'کیتاب یوکله‌یین',
+	'coll-show_collection' => 'کیتابی گؤستر',
+	'coll-suggest_empty' => 'بوش',
+);
+
 /** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
