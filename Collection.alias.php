@@ -318,6 +318,11 @@ $specialPageAliases['sa'] = array(
 	'Book' => array( 'समुच्यय' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'Book' => array( 'Libro', 'Raccolta', 'Collezione' ),
+);
+
 /** Slovak (slovenčina) */
 $specialPageAliases['sk'] = array(
 	'Book' => array( 'Knihy', 'Kolekcia' ),
