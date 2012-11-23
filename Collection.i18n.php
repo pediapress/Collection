@@ -14503,7 +14503,7 @@ $messages['tzm'] = array(
 	'coll-title' => 'ⴰⵣⵡⵉⵍ:',
 	'coll-suggest_your_book' => 'ⴰⴷⵍⵉⵙ ⵏⵏⴽ',
 	'coll-suggest_show' => 'ⵥⵕ',
-	'coll-suggest_undo' => 'ⴰⵖⵓⵍ',
+	'coll-suggest_undo' => 'ⵓⵖⴰⵍ',
 	'coll-format-okawix_zeno' => 'ⵓⴽⴰⵡⵉⴽⵙ',
 );
 
