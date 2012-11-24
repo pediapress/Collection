@@ -1112,7 +1112,7 @@ class SpecialCollection extends SpecialPage {
 		}
 
 		$query = 'bookcmd=rendering'
-			. '&return_to=' . $request->getVal( 'return_to', '' )
+			. '&return_to=' . urlencode( $request->getVal( 'return_to', '' ) )
 			. '&collection_id=' . urlencode( $response['collection_id'] )
 			. '&writer=' . urlencode( $response['writer'] );
 		if ( $response['is_cached'] ) {
@@ -1134,7 +1134,7 @@ class SpecialCollection extends SpecialPage {
 
 		$this->setHeaders();
 
-		$return_to = $request->getVal( 'return_to' );
+		$return_to = $request->getVal( 'return_to', '' );
 
 		$query = 'collection_id=' . urlencode( $response['collection_id'] )
 			. '&writer=' . urlencode( $response['writer'] )
