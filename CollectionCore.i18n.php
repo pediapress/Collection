@@ -1914,11 +1914,12 @@ $messages['hsb'] = array(
 
 /** Hungarian (magyar)
  * @author Bdamokos
+ * @author Bean49
  * @author Dani
  * @author Glanthor Reviol
  */
 $messages['hu'] = array(
-	'coll-print_export' => 'Nyomtatás/exportálás',
+	'coll-print_export' => 'Nyomtatás/ exportálás',
 	'coll-create_a_book' => 'Könyv készítése',
 	'coll-create_a_book_tooltip' => 'Könyv vagy lapgyűjtemény készítése',
 	'coll-book_creator' => 'Könyvkészítő',

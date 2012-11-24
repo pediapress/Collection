@@ -3233,7 +3233,7 @@ Ti wazeno ey kitab pê kitabê xo rê bivurne?',
 Ti wazeno ser kitabê xo de binuse, kontendê newe ya zi bar kerdişê kitabî îptal bike?',
 	'coll-overwrite' => 'Sero binuş',
 	'coll-append' => 'Deke',
-	'coll-cancel' => 'Bıtexelne',
+	'coll-cancel' => 'Bıterkne',
 	'coll-update' => 'Noroc resn',
 	'coll-limit_exceeded_title' => 'Kitab zaf gird o.',
 	'coll-limit_exceeded_text' => 'Kitabê tu zaf gird o.
