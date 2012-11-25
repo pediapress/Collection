@@ -53,6 +53,11 @@ $specialPageAliases['bs'] = array(
 	'Book' => array( 'Kolekcija' ),
 );
 
+/** буряад (буряад) */
+$specialPageAliases['bxr'] = array(
+	'Book' => array( 'Ном', 'Суглуулбари' ),
+);
+
 /** Catalan (català) */
 $specialPageAliases['ca'] = array(
 	'Book' => array( 'Llibre', 'Col·lecció' ),
@@ -150,7 +155,7 @@ $specialPageAliases['he'] = array(
 
 /** Hindi (हिन्दी) */
 $specialPageAliases['hi'] = array(
-	'Book' => array( 'पुस्तक', 'किताब' ),
+	'Book' => array( 'किताब', 'पुस्तक' ),
 );
 
 /** Croatian (hrvatski) */
@@ -286,6 +291,11 @@ $specialPageAliases['nn'] = array(
 /** Occitan (occitan) */
 $specialPageAliases['oc'] = array(
 	'Book' => array( 'Libre' ),
+);
+
+/** Punjabi (ਪੰਜਾਬੀ) */
+$specialPageAliases['pa'] = array(
+	'Book' => array( 'ਕਿਤਾਬ' ),
 );
 
 /** Polish (polski) */
