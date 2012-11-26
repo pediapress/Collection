@@ -1307,6 +1307,7 @@ $messages['az'] = array(
 );
 
 /** تورکجه (تورکجه)
+ * @author E THP
  * @author Ebrahimi-amir
  */
 $messages['azb'] = array(
@@ -1320,6 +1321,7 @@ $messages['azb'] = array(
 	'coll-yes' => 'بلی',
 	'coll-no' => 'یوخ',
 	'coll-cancel' => 'لغو ائت',
+	'coll-update' => 'یئنیله',
 	'coll-about_pp' => '$1 ه گؤره',
 	'coll-suggest_show' => 'گؤستر',
 	'coll-suggest_undo' => 'گئری‌دون',
@@ -1775,6 +1777,7 @@ $messages['be-tarask'] = array(
 /** Bulgarian (български)
  * @author DCLXVI
  * @author Spiritia
+ * @author Stanqo
  * @author Turin
  */
 $messages['bg'] = array(
@@ -1784,6 +1787,7 @@ $messages['bg'] = array(
 	'coll-collection' => 'Книга',
 	'coll-collections' => 'Книги',
 	'coll-print_template_prefix' => 'Отпечатване',
+	'coll-print_template_pattern' => '$1/ Печат',
 	'coll-unknown_subpage_title' => 'Непозната подстраница',
 	'coll-unknown_subpage_text' => 'Тази подстраница на [[Special:Book|книгата]] не съществува',
 	'coll-couldnotaddarticle_title' => 'Грешка при добавяне на уики-страницата',
@@ -3233,7 +3237,7 @@ Ti wazeno ey kitab pê kitabê xo rê bivurne?',
 Ti wazeno ser kitabê xo de binuse, kontendê newe ya zi bar kerdişê kitabî îptal bike?',
 	'coll-overwrite' => 'Sero binuş',
 	'coll-append' => 'Deke',
-	'coll-cancel' => 'Bıterkne',
+	'coll-cancel' => 'Bıtexelne',
 	'coll-update' => 'Noroc resn',
 	'coll-limit_exceeded_title' => 'Kitab zaf gird o.',
 	'coll-limit_exceeded_text' => 'Kitabê tu zaf gird o.
@@ -3273,7 +3277,7 @@ Belki o dosya esteriyayo u gani reyna viraziyayo.',
 	'coll-book_title' => 'Kitab çap bike u hind sipariş bike',
 	'coll-book_text' => 'Kitab xo partnerê ma ra biger.',
 	'coll-order_from_pp' => 'Verqayt be $1',
-	'coll-about_pp' => 'Heqa $1',
+	'coll-about_pp' => 'Heqa $1 de',
 	'coll-invalid_podpartner_title' => 'Partnerê PODî ğeletî',
 	'coll-invalid_podpartner_msg' => 'Partnerê PODî raşt niyo.
 Ma rica keno îdarekarê MedîyaWîkîyî ra yew mesaj bişirav.',
