@@ -273,7 +273,7 @@ $specialPageAliases['nb'] = array(
 	'Book' => array( 'Bok', 'Samling' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Nedersaksies (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'Book' => array( 'Verzameling' ),
 );

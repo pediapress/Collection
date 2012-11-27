@@ -619,6 +619,7 @@ $messages['be-tarask'] = array(
 
 /** Bulgarian (български)
  * @author DCLXVI
+ * @author Stanqo
  * @author Turin
  */
 $messages['bg'] = array(
@@ -628,6 +629,7 @@ $messages['bg'] = array(
 	'coll-download_as' => 'Изтегляне като $1',
 	'coll-download_as_tooltip' => 'Изтегляне на $1 версия на тази уики страница',
 	'coll-disable' => 'изключване',
+	'coll-remove_linked_article' => 'Премахване на текущата уики-страница от книгата ви',
 	'coll-add_category' => 'Добавяне на тази категория към книгата ви',
 	'coll-add_category_tooltip' => 'Добавяне на всички уики-страници в тази категория към книгата ви',
 	'coll-add_this_page' => 'Добавяне на тази страница към книгата ви',

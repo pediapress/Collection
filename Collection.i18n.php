@@ -1821,6 +1821,7 @@ $messages['bg'] = array(
 	'coll-notitle_title' => 'Заглавието на страницата не може да бъде определено.',
 	'coll-post_failed_title' => 'Грешка при заявката POST',
 	'coll-post_failed_msg' => 'Грешка при заявката POST до $1 ($2).',
+	'coll-mwserve_failed_msg' => 'Възникна грешка при рендиране на сървъра:<nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Съобщение за грешка от сървъра',
 	'coll-empty_collection' => 'Празна книга',
 	'coll-revision' => 'Версия: $1',
@@ -1843,12 +1844,18 @@ $messages['bg'] = array(
 	'coll-limit_exceeded_title' => 'Книгата е прекалено голяма',
 	'coll-limit_exceeded_text' => 'Вашата книга е прекалено голяма.
 Не може да се добавят повече страници.',
+	'coll-rendering_text' => '<p><strong>Моля, изчакайте, докато документът се генерира.</strong></p>
+N!<p><strong>Прогрес:</strong><span id="renderingProgress"> $1 </span>% <span id="renderingStatus">$2</span></p>
+N!<p>Тази страница трябва да се обновява автоматично на всеки няколко секунди.
+Ако това не работи, моля натиснете refresh бутона на браузъра си.</p>',
 	'coll-rendering_status' => '<strong>Статут:</strong> $1',
 	'coll-rendering_article' => '(уики-страница: $1)',
 	'coll-rendering_page' => '(страница: $1)',
 	'coll-notfound_title' => 'Книгата не е открита',
 	'coll-notfound_text' => 'Страницата от книга не е открита.',
 	'coll-download_notfound_title' => 'Файлът не беше намерен',
+	'coll-download_notfound_text' => 'Файлът, който се опитвате да изтеглите не съществува:
+Може би е бил изтрит и трябва да се възстанови.',
 	'coll-download_failed_title' => 'Грешка при изтеглянето',
 	'coll-download_failed_text' => 'Получи се грешка при изтеглянето на файла: $1',
 	'coll-excluded-templates' => '* Шаблоните в категория [[:Category:$1|$1]] бяха изключени.',
@@ -1857,10 +1864,12 @@ $messages['bg'] = array(
 	'coll-book_text' => 'Получаване на печатно копие от нашия партньор за отпечатване по поръчка.',
 	'coll-order_from_pp' => 'Предварителен преглед с $1',
 	'coll-about_pp' => 'За $1',
+	'coll-invalid_podpartner_title' => 'Невалиден POD партньор',
 	'coll-license' => 'Лиценз',
 	'coll-return_to' => 'Връщане към [[:$1]]',
 	'coll-suggest_title' => 'Предложени страници към книгата ви',
 	'coll-suggested_articles' => 'Предположения',
+	'coll-suggest_reset_bans' => 'Изчисти',
 	'coll-suggest_reset_bans_tooltip' => 'Показване на предишно премахнати предложения',
 	'coll-suggest_add_selected' => 'Добавяне на избраните страници',
 	'coll-suggest_ban_selected' => 'Премахване на избраните страници',
@@ -1872,8 +1881,10 @@ $messages['bg'] = array(
 	'coll-suggest_article_remove' => 'Страницата <strong>$1</strong> е премахната от книгата ви ($2).',
 	'coll-suggest_undo_tooltip' => 'Отмяна на това действие',
 	'coll-suggest_undo' => 'отмяна',
+	'coll-load_local_book' => 'Щракнете върху OK за да продължите с вашата книга  %TITLE%  която съдържа  %NUMPAGES%  уики страници. Щракнете върху "Отказ", за да го изтрие и започне с празна книга.',
 	'coll-format-rl' => 'e-книга (PDF)',
 	'coll-format-epub' => 'e-книга (EPUB)',
+	'coll-format-odf' => 'текстообработваща програма (OpenDocument)',
 	'right-collectionsaveasuserpage' => 'Запазване на книгата като потребителска страница',
 	'right-collectionsaveascommunitypage' => 'Запазване на книгата като страница на общността',
 );
