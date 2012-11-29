@@ -1306,7 +1306,7 @@ $messages['az'] = array(
 	'coll-suggest_show' => 'göstər',
 );
 
-/** تورکجه (تورکجه)
+/** South Azerbaijani (تورکجه)
  * @author E THP
  * @author Ebrahimi-amir
  */
@@ -1787,7 +1787,7 @@ $messages['bg'] = array(
 	'coll-collection' => 'Книга',
 	'coll-collections' => 'Книги',
 	'coll-print_template_prefix' => 'Отпечатване',
-	'coll-print_template_pattern' => '$1/ Печат',
+	'coll-print_template_pattern' => '$1/ Отпечатване',
 	'coll-unknown_subpage_title' => 'Непозната подстраница',
 	'coll-unknown_subpage_text' => 'Тази подстраница на [[Special:Book|книгата]] не съществува',
 	'coll-couldnotaddarticle_title' => 'Грешка при добавяне на уики-страницата',
