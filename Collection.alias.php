@@ -228,6 +228,11 @@ $specialPageAliases['ksh'] = array(
 	'Book' => array( 'Booch_sammelle', 'Sammlong', 'Sigge_sammelle' ),
 );
 
+/** Cornish (kernowek) */
+$specialPageAliases['kw'] = array(
+	'Book' => array( 'Lyver' ),
+);
+
 /** Ladino (Ladino) */
 $specialPageAliases['lad'] = array(
 	'Book' => array( 'Libro' ),
