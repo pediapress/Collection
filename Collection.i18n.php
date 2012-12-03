@@ -1307,24 +1307,151 @@ $messages['az'] = array(
 );
 
 /** South Azerbaijani (تورکجه)
+ * @author Amir a57
  * @author E THP
  * @author Ebrahimi-amir
  */
 $messages['azb'] = array(
+	'coll-desc' => '[[Special:Book | کیتاب یارات]]', # Fuzzy
+	'coll-book_creator_intro' => '<big> کیتاب میدانا گتیریجی ایله سئچدیگینیز wiki صحیفه‌لرین‌دن بیر کیتاب یارادا بیلرسینیز. میدانا گتیردیگینیز کیتابین دیگر فورمات‌لاردا (مسئلن پدف و یا اودف) چیخیشینی آلا بیلر و یا یازدیریلمیش بیر کوپیا سیفاریش ائده بیلرسینیز. </big>',
+	'coll-manage_your_book' => 'کیتابینیزی دییشدیر ائدین',
+	'coll-book_creator_help' => 'داها چوخ معلومات اوچون [[{{MediaWiki:Coll-helppage}} | کیتاب‌لار حاقیندا کؤمک صحیفه‌سینه]] باخین.', # Fuzzy
+	'coll-start_book_creator' => 'کیتاب یاراتمانی باشلا',
+	'coll-book_creator_continue' => 'کیتاب یارتمانی ایستیفاده ائت',
+	'coll-book_creator_disable_text' => "' کیتاب میدانا گتیریجی دؤوره خاریجی بیراخیلاجاق و اوزرینده چالیشدیغینیز کیتاب سیلینه‌جک.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}} / کیتاب میدانا گتیریجی متنی',
 	'coll-collection' => 'کیتاب',
 	'coll-collections' => 'کیتابلار',
+	'coll-exclusion_category_title' => 'چاپ یایلیمیندان مستند',
 	'coll-print_template_prefix' => 'چاپ',
+	'coll-print_template_pattern' => 'چاپ/$1',
+	'coll-unknown_subpage_title' => 'بیلینمه‌ین آلت صحیفه',
+	'coll-unknown_subpage_text' => '[[Special:Book| کیتاب]] بو آلت صحیفه سی مؤوجود دئییل',
+	'coll-couldnotaddarticle_title' => 'ویکی صحیفه‌سی آرتیرلا بیلمه دی',
+	'coll-couldnotaddarticle_msg' => 'ویکی صحیفه‌سی آرتیرلا بیلمز.',
+	'coll-couldnotremovearticle_title' => 'ویکی صحیفه‌سی سیله بیلمدی....',
+	'coll-couldnotremovearticle_msg' => 'ویکی صحیفه‌سی سیله بیلمدی.',
+	'coll-noscript_text' => '<h1> جاوااسکریپت لازیم‌لی! </h1>
+<strong> براوزئر جاوااسکریپت دستکلمیر یا دا جاوااسکریپت باغ‌لی.
+جاوااسکریپت دؤوره‌یه سوکولمادیکچا بو صحیفه دوغرو ایشلمه‌یه‌جک. </strong>',
+	'coll-savedbook_template' => 'کیتاب ساخلاندی',
+	'coll-your_book' => 'کیتابینیز',
 	'coll-download_title' => 'ائندیر',
+	'coll-download_text' => 'کیتابینیزی کامپیوترینیزه اندیرمک ایچین بیر فورمات سئچین و دویمه نی وورون.',
+	'coll-download_as_text' => 'کیتابینیزی $1 فورماتیندا کومپوتئرینیزه اندیرمک اوچون دویمه‌یه باسین.',
 	'coll-download' => 'ائندیر',
+	'coll-format_label' => 'فورمت:',
+	'coll-remove' => 'سیل',
 	'coll-show' => 'گؤستر',
+	'coll-move_to_top' => 'ان اوسته آپار',
+	'coll-move_up' => 'یوخاری آپار',
+	'coll-move_down' => 'آشاغی آپار',
+	'coll-move_to_bottom' => 'ان آشاغی آپار',
 	'coll-title' => 'باشلیق:',
+	'coll-subtitle' => 'آلت باشلیق',
+	'coll-contents' => 'ایچینده کی',
+	'coll-drag_and_drop' => 'ویکی صحیفه‌لرینی و حیسه‌لری یئنی‌دن سیرالاماق اوچون سورو و بیراکی ایستیفاده ائدین',
+	'coll-create_chapter' => 'بؤلوم یارات',
+	'coll-sort_alphabetically' => 'الیفبا اولا‌راق سیرالا',
+	'coll-rename' => 'یئنی‌دن آدلان‌دیر',
+	'coll-new_chapter' => 'یئنی بؤلوم اوچون آد داخیل ائدین',
+	'coll-rename_chapter' => 'بؤلوم اوچون یئنی آد داخیل ائدین',
+	'coll-no_such_category' => 'بئله بیر بولمه لر یوخ‌دور',
+	'coll-notitle_title' => 'صفحه نین باشلیقی بیلینمییر',
+	'coll-post_failed_title' => 'POST ایستدیگینده خطا',
+	'coll-post_failed_msg' => '$1 اوچون POST ایستیی موفقیت‌سیز ($2).',
+	'coll-mwserve_failed_title' => 'چکیلن سئروئری خطاسی',
+	'coll-mwserve_failed_msg' => 'چکیلن سئروئرینده بیر خطا میدانا گلدی: <nowiki> $ 1 </ nowiki>', # Fuzzy
+	'coll-error_reponse' => 'سئروئردن خطا جاوابی',
+	'coll-empty_collection' => 'بوش کیتاب',
+	'coll-revision' => 'نسخه: $1',
+	'coll-save_collection_title' => 'کیتابینیزی یازیب پایلاشین',
+	'coll-save_collection_text' => 'یئر سئچین:',
+	'coll-login_to_save' => 'کیتاب‌لارینیزی داها سونرا ایستیفاده ائتمک اوچون یادداشدا ساخلاماق ایستییرسینیزسه، خاهیش ائدیریک [[Special:UserLogin | داخیل اولون یا دا بیر حساب یارادین]].', # Fuzzy
+	'coll-personal_collection_label' => 'شخصی کیتاب:',
+	'coll-community_collection_label' => 'بیرلیک کیتابی:',
+	'coll-save_collection' => 'کیتابی قئید ائت',
+	'coll-save_category' => 'بوتون یازیلان کیتاب‌لار [[:Category:{{MediaWiki:Coll-bookscategory}} | {{MediaWiki: Coll-bookscategory}}]] بولمه لرینه علاوه اولونور.', # Fuzzy
+	'coll-overwrite_title' => 'صحیفه اونسوز دا مؤوجود.
+اوزرینه یازماق ایستر بیلرسینیزمی؟',
+	'coll-overwrite_text' => '[[:$1]] آدیندا بیر صحیفه اونسوز دا مؤوجود.
+کیتابینیزلا بیرلیکده دییشدیریلمه‌سینی ایستییرسینیز؟',
 	'coll-yes' => 'بلی',
 	'coll-no' => 'یوخ',
+	'coll-load_overwrite_text' => 'کیتابینیزدا بیر نئچه صحیفه اونسوز دا وار.
+بو آنکی کیتابینیزین اوزرینه یازماق می، یئنی مزمونو علاوه ائتمک می، و یا بو کیتابی یوکلمیی لغو ائتمک ایستییرسینیز؟',
+	'coll-overwrite' => 'اوستونه یاز',
+	'coll-append' => 'علاوه',
 	'coll-cancel' => 'لغو ائت',
 	'coll-update' => 'یئنیله',
+	'coll-limit_exceeded_title' => 'کیتاب چوخ بؤیوک',
+	'coll-limit_exceeded_text' => 'کیتابینیز چوک بویوک.
+داها فازلا صحیفه آرتیرماقا اجازه نیز یوخ دور.',
+	'coll-rendering_title' => 'یارادیلیر',
+	'coll-rendering_text' => '<p><strong> خاهیش ائدیریک سند ترتیب گؤزلیین. </strong></p>
+
+<p><strong> ایره‌لیلمه: </strong> %<span id="renderingProgress">$1</span> <span id="renderingStatus">$2</span></p>
+
+<p> بو صحیفه بیر نئچه سانییه‌ده بیر آوتوماتیک یئنی‌لئنمئ‌لی‌دیر.
+اگر ایشلمیرسه، خاهیش ائدیریک براوزئرینیزین یئنیلمه دویمه‌سینی باسین. </p>',
+	'coll-rendering_status' => '<strong> وضعیتی: </strong> $ 1', # Fuzzy
+	'coll-rendering_article' => '(ویکی صحیفه‌‌: $1)',
+	'coll-rendering_page' => '(صحیفه‌‌: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}} / ایشلئییجی صحیفه‌سی معلومات متنی',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}} / ایشلئییجی مجموعه سی معلومات متنی',
+	'coll-rendering_finished_title' => 'اولوشتورما تاماملاندی',
+	'coll-rendering_finished_text' => '<strong> سند یارادیلدی. </strong>
+فایلی کومپوتئرینیزه </strong> [$ 1 ایندیرین] </strong>.
+
+قئید:
+* چیکتی‌دان ممنون دئییل بیلرسینیزمی؟ اینکیشاف ائتدیرمه ایمکان‌لاری اوچون [[{{MediaWiki: جولل-هئلپپاگئ}} | کیتاب‌لار حاقیندا کؤمک صحیفه‌لرینه]] باخین.', # Fuzzy
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}} / ایشلئییجی صحیفه‌سی معلومات متنی',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}} / ایشلئییجی مجموعه سی معلومات متنی',
+	'coll-notfound_title' => 'کیتاب تاپیلمادی',
+	'coll-notfound_text' => 'کیتاب صحیفه‌‌سی تاپیلمادی.',
+	'coll-download_notfound_title' => 'فايل تاپیلمادی',
+	'coll-download_notfound_text' => 'ائندیرمه‌يه چالیشدیغینیز فايل مؤوجود دئيیل: سیلینمیش اولا بیلر و يئنیدن يارادیلماسی لازیم اولا بیلر.',
+	'coll-download_failed_title' => 'يوکله‌مه زامانی خطا',
+	'coll-download_failed_text' => 'فایل نازیل خطا میدانا گلدی: $ 1', # Fuzzy
+	'coll-is_cached' => '<ul><li> سندین اؤنبئللئکتئکی بیر وئرسیاسی تاپیلدی، بونا گؤره میدانا گتیرمه‌یه دئییلسینیز. <ا هرئف="$1"> یئنی‌دن میدانا گتیرمه‌یه مجبور. </a></li></ul>',
+	'coll-excluded-templates' => '* [[:بؤلمه:$1|$1]] بؤلمه‌سینداکی شابلونلار خاریج توتولدو .', # Fuzzy
+	'coll-blacklisted-templates' => '* [[:$1]] قارا سیاهی‌سیندا شابلون‌لار خاریج توتولدو.',
+	'coll-return_to_collection' => '<p><a href="$1">$2</a> کیتابا گئری قاییت </p>',
+	'coll-book_title' => 'چاپ بیر کیتاب اولاراق سیفاریش ائت',
+	'coll-book_text' => 'طلبه‌‌-گؤره-چاپ اورتاغیمیزدان چاپ بیر کیتاب آل:',
+	'coll-order_from_pp' => '$1 ایله باخما',
 	'coll-about_pp' => '$1 ه گؤره',
+	'coll-invalid_podpartner_title' => 'اعتبارسیز POD اورتاغی',
+	'coll-invalid_podpartner_msg' => 'تعمین ائدیلن پود اورتاغی اعتبارسیز. 
+خواهیش ائدیریک مئدیياویکی يؤنئتیجینیزلئ علاقه‌‌ قورون.',
+	'coll-license' => 'لیسانس',
+	'coll-return_to' => '[[:$1]]-ه قايیت',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/پدیاپرس سیفاریش معلوماتی',
+	'coll-suggest_title' => 'کیتابینیز اوچون تکلیف ائدیلن صحیفه‌‌لر',
+	'coll-suggest_intro_text' => 'تکلیفلر بو آندا کیتابینیزدا اولان ویکی صحیفه‌‌لرینه اساسلانیر. 
+علاوه‌‌ ائت و يا سیل بوتونلارینا هر باسدیغینیزدا سیياهی يئنیله‌نیر.',
+	'coll-suggested_articles' => 'تکلیفلر',
+	'coll-suggest_reset_bans' => 'قور',
+	'coll-suggest_reset_bans_tooltip' => 'داها اؤنجئدئن سیلینمیشدیر تکلیفلری گؤستر',
+	'coll-suggest_add_selected' => 'سئچیلمیش صحیفه‌‌لری علاوه‌‌ ائت',
+	'coll-suggest_ban_selected' => 'سئچیلمیش صحیفه‌‌لری قالدیر',
+	'coll-suggest_your_book' => 'کیتابینیز',
 	'coll-suggest_show' => 'گؤستر',
+	'coll-suggest_ban_tooltip' => 'بو صحیفه‌‌نی تکلیف سیياهیسیندان قالدیر',
+	'coll-suggest_article_ban' => '<strong>$1</strong> صحیفه‌سی تکلیف‌لردن ($2) قالدیریلدی.',
+	'coll-suggest_article_add' => '<strong>$1</strong> صحیفه‌سی کیتابینیزا ($2) علاوه اولوندو.',
+	'coll-suggest_article_remove' => '<strong>$1</strong> صحیفه‌‌سی کیتابینیزدا ($2) چیخاریلدی .',
+	'coll-suggest_undo_tooltip' => 'بو حرکتی گئری آل',
 	'coll-suggest_undo' => 'گئری‌دون',
+	'coll-load_local_book' => '%NUMPAGES% ویکی صحیفه‌سی ایچئرئن کیتابینیز  %TITLE% ایلئ دئوام ائتمئک ایچین تامامعا تیکلايین. بونو سیلمئک وئ بوش بیر کیتابا  باشلاماخ ایچین ایپتالعئ تیکلايین .',
+	'coll-format-rl' => 'الکترونیکی کیتاب (PDF)',
+	'coll-format-epub' => 'الکترونیکی کیتاب (EPUB)',
+	'coll-format-odf' => 'سؤز ایشله‌دیجی (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'دؤکومان کیتاب',
+	'coll-format-okawix_zeno' => 'Okawix',
+	'right-collectionsaveasuserpage' => 'کیتابلاری ایستیفاده‌چی صحیفه‌‌سی اولاراق قئيد ائت',
+	'right-collectionsaveascommunitypage' => 'کیتابلاری بیرلیک صحیفه‌‌سی اولاراق قئيد ائت',
 );
 
 /** Bashkir (башҡортса)
@@ -1770,6 +1897,12 @@ $messages['be-tarask'] = array(
 	'coll-suggest_undo_tooltip' => 'Адмяніць гэтае дзеяньне',
 	'coll-suggest_undo' => 'скасаваць',
 	'coll-load_local_book' => 'Націсьніце «Добра» каб працягваць працу з Вашай кнігай %TITLE%, якая ўтрымлівае %NUMPAGES% вікі-старонак. Націсьніце «Адмена», каб выдаліць яе і пачаць з пустой кнігі.',
+	'coll-format-rl' => 'e-кніга (PDF)',
+	'coll-format-epub' => 'e-кніга (EPUB)',
+	'coll-format-odf' => 'тэкставы працэсар (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'захаваньне кніг як старонак ўдзельніка',
 	'right-collectionsaveascommunitypage' => 'захаваньне кніг як старонак супольнасьці',
 );

@@ -424,7 +424,8 @@ $messages['az'] = array(
 	'coll-suggest_empty' => 'boş',
 );
 
-/** تورکجه (تورکجه)
+/** South Azerbaijani (تورکجه)
+ * @author Amir a57
  * @author Ebrahimi-amir
  */
 $messages['azb'] = array(
@@ -445,11 +446,22 @@ $messages['azb'] = array(
 	'coll-add_page_tooltip' => 'سون ویکی صحیفه‌سین کیتابینیزا آرتیرین',
 	'coll-bookscategory' => 'کیتابلار',
 	'coll-clear_collection' => 'کیتابی سیل',
+	'coll-clear_collection_confirm' => 'کیتابینیزی تامامیله سیلینمه سین ایستییرسینیزمی؟',
+	'coll-clear_collection_tooltip' => 'مؤوجود کیتابینیزداکی بوتون wiki صحیفه‌لرینی سیلین',
 	'coll-help' => 'یاردیم',
 	'coll-help_tooltip' => 'کیتابلار یاراتماق اوچون یاردیم گؤستر',
 	'coll-helppage' => 'Help:کیتابلار',
 	'coll-load_collection' => 'کیتاب یوکله‌یین',
+	'coll-load_collection_tooltip' => 'بو کیتابی فرض ائدیلن کیتابینیز اولا‌راق یوکلیین',
+	'coll-n_pages' => '$1 {{PLURAL:$1 | صحیفه | صحیفه}}',
+	'coll-printable_version_pdf' => 'پی دی اف نوسخه سی',
+	'coll-remove_this_page' => 'بو صحیفنی کیتابینیزدا چیخارین',
+	'coll-remove_page_tooltip' => 'بو صحیفنی کیتابینیزدا چیخارین',
 	'coll-show_collection' => 'کیتابی گؤستر',
+	'coll-show_collection_tooltip' => 'تیکلاییپ کیتابینیزی دییشدیرمه / ایندیرین / سیفاریش ائدین',
+	'coll-not_addable' => 'صحیفه آرتیریلماز',
+	'coll-make_suggestions' => 'صحیفه علاوه ائدین',
+	'coll-make_suggestions_tooltip' => 'کیتابینیزداکی مؤوجود صحیفه‌لره گؤره تکلیف‌لر گؤستر',
 	'coll-suggest_empty' => 'بوش',
 );
 
