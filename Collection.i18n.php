@@ -2550,12 +2550,12 @@ Voleu sobreescriure el vostre llibre actual, annexar el nou contingut, o canceŀ
 	'coll-limit_exceeded_text' => 'El vostre llibre és massa gran.
 No es poden afegir més pàgines.',
 	'coll-rendering_title' => 'Renderització',
-	'coll-rendering_text' => '<p><strong>Si us plau, esperi mentre es genera el document.</strong></p>
+	'coll-rendering_text' => '<p><strong>Espereu mentre es genera el document.</strong></p>
 
 <p><strong>Progrés:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
-<p>Aquesta pàgina es refresca cada pocs segons.
-Si no és així, premi el botó de refresc del vostre navegador.</p>',
+<p>Aquesta pàgina s\'actualitza cada pocs segons.
+Si no és així, premeu el botó d\'actualització del navegador.</p>',
 	'coll-rendering_status' => '<strong>Estat:</strong> $1',
 	'coll-rendering_article' => '(pàgina wiki: $1)',
 	'coll-rendering_page' => '(pàgina: $1)',
