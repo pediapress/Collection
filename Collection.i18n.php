@@ -1310,6 +1310,7 @@ $messages['az'] = array(
  * @author Amir a57
  * @author E THP
  * @author Ebrahimi-amir
+ * @author Mousa
  */
 $messages['azb'] = array(
 	'coll-desc' => '[[Special:Book | کیتاب یارات]]', # Fuzzy
@@ -1349,7 +1350,7 @@ $messages['azb'] = array(
 	'coll-move_to_bottom' => 'ان آشاغی آپار',
 	'coll-title' => 'باشلیق:',
 	'coll-subtitle' => 'آلت باشلیق',
-	'coll-contents' => 'ایچینده کی',
+	'coll-contents' => 'ایچینده‌کیلر',
 	'coll-drag_and_drop' => 'ویکی صحیفه‌لرینی و حیسه‌لری یئنی‌دن سیرالاماق اوچون سورو و بیراکی ایستیفاده ائدین',
 	'coll-create_chapter' => 'بؤلوم یارات',
 	'coll-sort_alphabetically' => 'الیفبا اولا‌راق سیرالا',
@@ -7328,7 +7329,7 @@ $messages['ja'] = array(
 	'coll-revision' => '版: $1',
 	'coll-save_collection_title' => 'ブックを保存して共有する',
 	'coll-save_collection_text' => '保存先の選択:',
-	'coll-login_to_save' => '後の利用のためブックを保存するには、[[Special:UserLogin|ログインまたはアカウント作成]]を行ってください。',
+	'coll-login_to_save' => '今後の利用のためにブックを保存するには、[[Special:UserLogin|ログインまたはアカウント作成]]をしてください。',
 	'coll-personal_collection_label' => '個人的なブック:',
 	'coll-community_collection_label' => '共有するブック:',
 	'coll-save_collection' => 'ブックを保存',
