@@ -337,7 +337,7 @@ $messages['arz'] = array(
  * @author Gitartha.bordoloi
  */
 $messages['as'] = array(
-	'coll-print_export' => 'মুদ্রণ/এক্সপৰ্ট',
+	'coll-print_export' => 'মুদ্রণ/ৰপ্তানী',
 	'coll-create_a_book' => 'কিতাপ সৃষ্টি কৰক',
 	'coll-create_a_book_tooltip' => 'পৃষ্ঠাৰ সংকলন বা কিতাপ তৈয়াৰ কৰক',
 	'coll-book_creator' => 'কিতাপ প্ৰস্তুতকৰ্তা',
