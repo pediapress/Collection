@@ -4667,6 +4667,7 @@ Lista päivittyy aina kun napsautat lisää- tai poista-painikkeita.',
  * @author IAlex
  * @author Jean-Frédéric
  * @author Korrigan
+ * @author Ltrlg
  * @author McDutchie
  * @author Meithal
  * @author Peter17
@@ -4780,7 +4781,7 @@ Notes :
 	'coll-excluded-templates' => '* Des modèles de la catégorie [[:Category:$1|$1]] ont été exclus.',
 	'coll-blacklisted-templates' => '* Des modèles de la liste noire ([[:$1]]) ont été exclus.',
 	'coll-return_to_collection' => '<p>Revenir à la page <a href="$1">$2</a></p>',
-	'coll-book_title' => 'Commander sous la forme d‘un livre imprimé',
+	'coll-book_title' => 'Commander sous la forme d’un livre imprimé',
 	'coll-book_text' => 'Obtenez un livre imprimé par notre partenaire d’impression à la demande :',
 	'coll-order_from_pp' => 'Aperçu avec $1',
 	'coll-about_pp' => 'À propos de $1',
