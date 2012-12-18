@@ -8279,7 +8279,7 @@ $messages['ko'] = array(
 	'coll-suggest_title' => '당신의 책에 넣을 문서 제안',
 	'coll-suggest_intro_text' => '문서 제안은 지금 당신의 책에 있는 위키 문서의 집합을 바탕으로 이루어집니다.
 추가 또는 제거 버튼을 누를 때마다 목록이 업데이트됩니다.',
-	'coll-suggested_articles' => '추천하는 문서',
+	'coll-suggested_articles' => '제안',
 	'coll-suggest_reset_bans' => '초기화',
 	'coll-suggest_reset_bans_tooltip' => '이전에 지운 문서 제안을 표시합니다.',
 	'coll-suggest_add_selected' => '선택한 문서를 추가하기',
@@ -15233,7 +15233,7 @@ Xin hãy liên hệ với quản trị viên MediaWiki của bạn.',
 	'coll-suggest_title' => 'Các trang đề nghị cho cuốn sách của bạn',
 	'coll-suggest_intro_text' => 'Những đề nghị dựa trên tập trang wiki hiện tại trong cuốn sách.
 Danh sách này được cập nhật mỗi khi bạn nhấn vào nút thêm hoặc bớt.',
-	'coll-suggested_articles' => 'Đề nghị',
+	'coll-suggested_articles' => 'Gợi ý',
 	'coll-suggest_reset_bans' => 'tái tạo',
 	'coll-suggest_reset_bans_tooltip' => 'Hiện các đề nghị đã bị xóa',
 	'coll-suggest_add_selected' => 'Thêm các trang đã chọn',
