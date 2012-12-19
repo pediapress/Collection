@@ -194,7 +194,7 @@ The list is updated whenever you click on the add or remove buttons.',
  * @author Wmr89502270
  */
 $messages['qqq'] = array(
-	'coll-desc' => '{{desc}}',
+	'coll-desc' => '{{desc|name=Collection|url=http://www.mediawiki.org/wiki/Extension:Collection}}',
 	'coll-manage_your_book' => 'Used as a title.',
 	'coll-collection' => '{{Identical|Book}}',
 	'coll-collections' => '{{Identical|Book}}',
