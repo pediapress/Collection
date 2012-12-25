@@ -7304,9 +7304,9 @@ $messages['ja'] = array(
 	'coll-couldnotaddarticle_msg' => 'このページは追加できませんでした。',
 	'coll-couldnotremovearticle_title' => 'ページを削除できませんでした',
 	'coll-couldnotremovearticle_msg' => 'このページは削除できませんでした。',
-	'coll-noscript_text' => '<h1>JavaScript が必要です！</h1>
-<strong>ご使用中のブラウザーは JavaScript に対応していないか、JavaScript が無効になっています。
-このページは、JavaScript が有効ではない場合は正しく動作しません。</strong>',
+	'coll-noscript_text' => '<h1>JavaScript が必要です!</h1>
+<strong>ご使用中のブラウザーは JavaScript に対応していない、または JavaScript が無効になっています。
+このページを正しく動作させるには、JavaScript を有効にする必要があります。</strong>',
 	'coll-savedbook_template' => '保存済みブック',
 	'coll-your_book' => 'あなたのブック',
 	'coll-download_title' => 'ダウンロード',
@@ -7345,8 +7345,10 @@ $messages['ja'] = array(
 	'coll-community_collection_label' => '共有するブック:',
 	'coll-save_collection' => 'ブックを保存',
 	'coll-save_category' => '保存したブックはすべて、カテゴリ「[[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]]」に加えられます。',
-	'coll-overwrite_title' => '同名のページが存在します。上書きしますか？',
-	'coll-overwrite_text' => '[[:$1]] という名前のページが既に存在しています。これをあなたのブックに置き換えますか？',
+	'coll-overwrite_title' => '同名のページが存在します。
+上書きしますか?',
+	'coll-overwrite_text' => '[[:$1]] という名前のページが既に存在します。
+これをあなたのブックに置き換えますか?',
 	'coll-yes' => 'はい',
 	'coll-no' => 'いいえ',
 	'coll-load_overwrite_text' => 'あなたのブックには既にページがいくつかあります。
@@ -7370,10 +7372,10 @@ $messages['ja'] = array(
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/コレクション情報文を生成中',
 	'coll-rendering_finished_title' => 'レンダリング完了',
 	'coll-rendering_finished_text' => '<strong>ドキュメントファイルは生成されました。</strong>
-あなたのコンピュータに<strong>[$1 ファイルをダウンロード]</strong>してください。
+あなたのコンピューターに<strong>[$1 ファイルをダウンロード]</strong>してください。
 
 注:
-* 出力に満足できませんか？改善が可能か、[[{{MediaWiki:Coll-helppage}}|ブックについてのヘルプページ]]をご覧ください。',
+* 出力に満足できませんか? 改善の可能性があるか、[[{{MediaWiki:Coll-helppage}}|ブックについてのヘルプページ]]をご覧ください。',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/ページ情報テキストを生成中',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/コレクション情報テキストを生成中',
 	'coll-notfound_title' => 'ブックが見つかりません',
@@ -11814,6 +11816,7 @@ Această listă este actualizată de fiecare dată când apăsați butoanele de 
 	'coll-load_local_book' => 'Apăsați OK pentru a continua cu actuala carte (intitulată %TITLE%), care conține %NUMPAGES% pagini. Apăsați Renunțare pentru a o șterge și a începe o nouă carte.',
 	'coll-format-rl' => 'carte electronică (PDF)',
 	'coll-format-epub' => 'carte electronică (EPUB)',
+	'coll-format-odf' => 'procesor de documente (OpenDocument)',
 	'coll-format-zim' => 'Kiwix (OpenZIM)',
 	'coll-format-docbook' => 'DocBook',
 	'coll-format-okawix_zeno' => 'Okawix',
@@ -12679,6 +12682,8 @@ $messages['si'] = array(
 	'coll-suggest_undo' => 'අහෝසිය',
 	'coll-format-rl' => 'ඊ-පොත (PDF)',
 	'coll-format-epub' => 'ඊ-පොත (EPUB)',
+	'coll-format-odf' => 'වදන් සකසනය (විවෘතලේඛනය)',
+	'coll-format-zim' => 'කිවික්ස් (විවෘතZIM)',
 	'coll-format-docbook' => 'ලේඛපොත',
 	'coll-format-okawix_zeno' => 'ඔකවිෂ්',
 	'right-collectionsaveasuserpage' => 'පරිශීලක පිටුව ලෙස පොත් සුරකින්න',
