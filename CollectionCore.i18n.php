@@ -4262,10 +4262,11 @@ $messages['sv'] = array(
 
 /** Swahili (Kiswahili)
  * @author Lloffiwr
+ * @author Stephenwanjau
  */
 $messages['sw'] = array(
 	'coll-print_export' => 'Chapa/peleka nje',
-	'coll-create_a_book' => 'Kutunga kitabu', # Fuzzy
+	'coll-create_a_book' => 'Tunga kitabu',
 	'coll-create_a_book_tooltip' => 'Utunge kitabu au mkusanyiko wa kurasa', # Fuzzy
 	'coll-book_creator' => 'Kitunga kitabu', # Fuzzy
 	'coll-download_as' => 'Pakua kama $1', # Fuzzy
@@ -4294,6 +4295,8 @@ $messages['sw'] = array(
 	'coll-remove_page_tooltip' => 'Ondoa ukurasa uliopo sasa kutoka katika kitabu chako', # Fuzzy
 	'coll-show_collection' => 'Onyesha kitabu', # Fuzzy
 	'coll-not_addable' => 'Ukarasa huu hauwezi kuingizwa', # Fuzzy
+	'coll-make_suggestions' => 'Pendekeza kurasa',
+	'coll-make_suggestions_tooltip' => 'Onyesha mapendekezo ukizingatia kurasa katika kitabu chako',
 	'coll-suggest_empty' => 'tupu',
 );
 

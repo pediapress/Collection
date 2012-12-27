@@ -8510,6 +8510,21 @@ $messages['kw'] = array(
 	'coll-cancel' => 'Hedhi',
 );
 
+/** Kirghiz (Кыргызча)
+ * @author Growingup
+ */
+$messages['ky'] = array(
+	'coll-your_book' => 'Сиздин китебиңиз',
+	'coll-format_label' => 'Формат:',
+	'coll-remove' => 'Өчүрүү',
+	'coll-show' => 'Көрсөтүү',
+	'coll-rename' => 'Атын өзгөртүү',
+	'coll-yes' => 'Ооба',
+	'coll-no' => 'Жок',
+	'coll-cancel' => 'Жокко чыгаруу',
+	'coll-update' => 'Жаңыртуу',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
@@ -13556,8 +13571,10 @@ Listan uppdateras när du klickar på lägg till- eller ta bort-knappar.',
  * @author Ikiwaner
  * @author Kwisha
  * @author Lloffiwr
+ * @author Stephenwanjau
  */
 $messages['sw'] = array(
+	'coll-desc' => '[[Special:Book|Tengeneza vitabu]]',
 	'coll-collection' => 'Kitabu',
 	'coll-collections' => 'Vitabu',
 	'coll-print_template_prefix' => 'Chapisha',
@@ -13588,6 +13605,8 @@ $messages['sw'] = array(
 	'coll-license' => 'Leseni',
 	'coll-return_to' => 'Rudi kwa [[:$1]]',
 	'coll-suggested_articles' => 'Mapendekezo',
+	'coll-suggest_add_selected' => 'Ongeza kurasa zilizochaguliwa',
+	'coll-suggest_ban_selected' => 'Toa kurasa zilizochaguliwa',
 	'coll-suggest_your_book' => 'Kitabu chako',
 	'coll-suggest_show' => 'fichua',
 	'coll-suggest_undo' => 'tengua',
