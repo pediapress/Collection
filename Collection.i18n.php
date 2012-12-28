@@ -1317,10 +1317,10 @@ $messages['az'] = array(
  * @author Mousa
  */
 $messages['azb'] = array(
-	'coll-desc' => '[[Special:Book | کیتاب یارات]]', # Fuzzy
+	'coll-desc' => '[[Special:Book|کیتاب یارات]]',
 	'coll-book_creator_intro' => '<big> کیتاب میدانا گتیریجی ایله سئچدیگینیز wiki صحیفه‌لرین‌دن بیر کیتاب یارادا بیلرسینیز. میدانا گتیردیگینیز کیتابین دیگر فورمات‌لاردا (مسئلن پدف و یا اودف) چیخیشینی آلا بیلر و یا یازدیریلمیش بیر کوپیا سیفاریش ائده بیلرسینیز. </big>',
 	'coll-manage_your_book' => 'کیتابینیزی دییشدیر ائدین',
-	'coll-book_creator_help' => 'داها چوخ معلومات اوچون [[{{MediaWiki:Coll-helppage}} | کیتاب‌لار حاقیندا کؤمک صحیفه‌سینه]] باخین.', # Fuzzy
+	'coll-book_creator_help' => 'داها چوخ بیلگیلر اوچون [[{{MediaWiki:Coll-helppage}}|کیتابلار حاقیندا یاردیم صحیفه‌سینه]] باخین.',
 	'coll-start_book_creator' => 'کیتاب یاراتمانی باشلا',
 	'coll-book_creator_continue' => 'کیتاب یارتمانی ایستیفاده ائت',
 	'coll-book_creator_disable_text' => "' کیتاب میدانا گتیریجی دؤوره خاریجی بیراخیلاجاق و اوزرینده چالیشدیغینیز کیتاب سیلینه‌جک.",
@@ -1366,17 +1366,17 @@ $messages['azb'] = array(
 	'coll-post_failed_title' => 'POST ایستدیگینده خطا',
 	'coll-post_failed_msg' => '$1 اوچون POST ایستیی موفقیت‌سیز ($2).',
 	'coll-mwserve_failed_title' => 'چکیلن سئروئری خطاسی',
-	'coll-mwserve_failed_msg' => 'چکیلن سئروئرینده بیر خطا میدانا گلدی: <nowiki> $ 1 </ nowiki>', # Fuzzy
+	'coll-mwserve_failed_msg' => 'چکیلن خیدمت‌چیسینده بیر خطا قاباغا گلدی: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'سئروئردن خطا جاوابی',
 	'coll-empty_collection' => 'بوش کیتاب',
 	'coll-revision' => 'نوسخه: $1',
 	'coll-save_collection_title' => 'کیتابینیزی یازیب پایلاشین',
 	'coll-save_collection_text' => 'یئر سئچین:',
-	'coll-login_to_save' => 'کیتاب‌لارینیزی داها سونرا ایستیفاده ائتمک اوچون یادداشدا ساخلاماق ایستییرسینیزسه، خاهیش ائدیریک [[Special:UserLogin | داخیل اولون یا دا بیر حساب یارادین]].', # Fuzzy
+	'coll-login_to_save' => 'کیتابلارینیزی سونرا ایشلتمک اوچون یاددا ساخلاماق ایستییرسینیزسه، لوطفاً [[Special:UserLogin|گیرین یادا بیر حساب یارادین]].',
 	'coll-personal_collection_label' => 'شخصی کیتاب:',
 	'coll-community_collection_label' => 'بیرلیک کیتابی:',
 	'coll-save_collection' => 'کیتابی قئید ائت',
-	'coll-save_category' => 'بوتون یازیلان کیتاب‌لار [[:Category:{{MediaWiki:Coll-bookscategory}} | {{MediaWiki: Coll-bookscategory}}]] بولمه لرینه علاوه اولونور.', # Fuzzy
+	'coll-save_category' => 'بوتون قئید اولونان کیتابلار [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki: Coll-bookscategory}}]] بؤلمه‌سینه آرتیریلیرلار.',
 	'coll-overwrite_title' => 'صحیفه اونسوز دا مؤوجود.
 اوزرینه یازماق ایستر بیلرسینیزمی؟',
 	'coll-overwrite_text' => '[[:$1]] آدیندا بیر صحیفه اونسوز دا مؤوجود.
@@ -1399,17 +1399,17 @@ $messages['azb'] = array(
 
 <p> بو صحیفه بیر نئچه سانییه‌ده بیر آوتوماتیک یئنی‌لئنمئ‌لی‌دیر.
 اگر ایشلمیرسه، خاهیش ائدیریک براوزئرینیزین یئنیلمه دویمه‌سینی باسین. </p>',
-	'coll-rendering_status' => '<strong> وضعیتی: </strong> $ 1', # Fuzzy
+	'coll-rendering_status' => '<strong>وضعیت:</strong> $1',
 	'coll-rendering_article' => '(ویکی صحیفه‌‌: $1)',
 	'coll-rendering_page' => '(صحیفه‌‌: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}} / ایشلئییجی صحیفه‌سی معلومات متنی',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}} / ایشلئییجی مجموعه سی معلومات متنی',
 	'coll-rendering_finished_title' => 'اولوشتورما تاماملاندی',
-	'coll-rendering_finished_text' => '<strong> سند یارادیلدی. </strong>
-فایلی کومپوتئرینیزه </strong> [$ 1 ایندیرین] </strong>.
+	'coll-rendering_finished_text' => '<strong>سند فایلی یارادیلدی.</strong>
+فایلی بیلگی‌سایارینیزا </strong> [$1 اندیرین] </strong>.
 
 قئید:
-* چیکتی‌دان ممنون دئییل بیلرسینیزمی؟ اینکیشاف ائتدیرمه ایمکان‌لاری اوچون [[{{MediaWiki: جولل-هئلپپاگئ}} | کیتاب‌لار حاقیندا کؤمک صحیفه‌لرینه]] باخین.', # Fuzzy
+* چیختیدان راضی دئییلسینیزمی؟ اونو یاخشیلاشدیرما ایمکانلاری اوچون [[{{MediaWiki:Coll-helppage}}|کیتابلار حاقیندا یاردیم صحیفه‌سینه]] باخین.',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}} / ایشلئییجی صحیفه‌سی معلومات متنی',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}} / ایشلئییجی مجموعه سی معلومات متنی',
 	'coll-notfound_title' => 'کیتاب تاپیلمادی',
@@ -1417,9 +1417,9 @@ $messages['azb'] = array(
 	'coll-download_notfound_title' => 'فايل تاپیلمادی',
 	'coll-download_notfound_text' => 'ائندیرمه‌يه چالیشدیغینیز فايل مؤوجود دئيیل: سیلینمیش اولا بیلر و يئنیدن يارادیلماسی لازیم اولا بیلر.',
 	'coll-download_failed_title' => 'يوکله‌مه زامانی خطا',
-	'coll-download_failed_text' => 'فایل نازیل خطا میدانا گلدی: $ 1', # Fuzzy
+	'coll-download_failed_text' => 'فایلی اندیرمک‌ده بیر خطا وار ایدی: $1',
 	'coll-is_cached' => '<ul><li> سندین اؤنبئللئکتئکی بیر وئرسیاسی تاپیلدی، بونا گؤره میدانا گتیرمه‌یه دئییلسینیز. <ا هرئف="$1"> یئنی‌دن میدانا گتیرمه‌یه مجبور. </a></li></ul>',
-	'coll-excluded-templates' => '* [[:بؤلمه:$1|$1]] بؤلمه‌سینداکی شابلونلار خاریج توتولدو .', # Fuzzy
+	'coll-excluded-templates' => '* [[:Category:$1|$1]] بؤلمه‌سینده‌کی شابلونلار خاریج توتولدو.',
 	'coll-blacklisted-templates' => '* [[:$1]] قارا سیاهی‌سیندا شابلون‌لار خاریج توتولدو.',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a> کیتابا گئری قاییت </p>',
 	'coll-book_title' => 'چاپ بیر کیتاب اولاراق سیفاریش ائت',
