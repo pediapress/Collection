@@ -4015,6 +4015,7 @@ $messages['si'] = array(
 	'coll-show_collection' => 'පොත පෙන්වන්න',
 	'coll-not_addable' => 'මෙම පිටුව එක් කල නොහැක',
 	'coll-make_suggestions' => 'පිටු යෝජනා කරන්න',
+	'coll-make_suggestions_tooltip' => 'ඔබේ පොතේ තිබෙන පිටු මත ව්‍යංගාර්ථ පෙන්වන්න',
 	'coll-suggest_empty' => 'හිස්',
 );
 
@@ -4661,6 +4662,15 @@ $messages['tt-cyrl'] = array(
 $messages['tzm'] = array(
 	'coll-bookscategory' => 'ⵉⴷⵍⵉⵙⵏ',
 	'coll-help' => 'ⵜⵉⵡⵉⵙⵉ',
+);
+
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'coll-bookscategory' => 'كىتابلار',
+	'coll-help' => 'ياردەم',
+	'coll-suggest_empty' => 'بوش',
 );
 
 /** Ukrainian (українська)
