@@ -4956,7 +4956,7 @@ Vos volyéd veriér vers voutron administrator MediaWiki.',
 	'coll-suggest_title' => 'Pâges conselyês por voutron lévro',
 	'coll-suggest_intro_text' => 'Los consèlys sont basâs sur l’ensemblo de les pâges vouiqui d’ora dens voutron lévro.
 La lista est betâ a jorn a châque côp que vos clicâd sur los botons d’aponsa ou ben de suprèssion.',
-	'coll-suggested_articles' => 'Consèlys',
+	'coll-suggested_articles' => 'Idês',
 	'coll-suggest_reset_bans' => 'tornar inicialisar',
 	'coll-suggest_reset_bans_tooltip' => 'Montrar los consèlys enlevâs dês devant',
 	'coll-suggest_add_selected' => 'Apondre les pâges chouèsies',
