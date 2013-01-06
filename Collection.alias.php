@@ -388,6 +388,11 @@ $specialPageAliases['uk'] = array(
 	'Book' => array( 'Книга', 'Колекція_книг' ),
 );
 
+/** Urdu (اردو) */
+$specialPageAliases['ur'] = array(
+	'Book' => array( 'کتاب،_انتخاب' ),
+);
+
 /** vèneto (vèneto) */
 $specialPageAliases['vec'] = array(
 	'Book' => array( 'Libro' ),

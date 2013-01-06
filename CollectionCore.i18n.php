@@ -2889,6 +2889,7 @@ $messages['mdf'] = array(
 
 /** Minangkabau (Baso Minangkabau)
  * @author SpartacksCompatriot
+ * @author VoteITP
  */
 $messages['min'] = array(
 	'coll-print_export' => 'Cetak/ekspor',
@@ -2897,6 +2898,7 @@ $messages['min'] = array(
 	'coll-book_creator' => 'Pambuek buku',
 	'coll-download_as' => 'Muat naiak sabagai $1',
 	'coll-download_as_tooltip' => 'Muat naiak versi $1 dari halaman ko',
+	'coll-disable' => '↓tutuik',
 	'coll-book_creator_disable' => 'Jan buliahan pambuekan buku',
 	'coll-book_creator_disable_tooltip' => 'Baranti manggunoan pambuek buku',
 );
