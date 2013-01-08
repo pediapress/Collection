@@ -2888,6 +2888,7 @@ $messages['mdf'] = array(
 );
 
 /** Minangkabau (Baso Minangkabau)
+ * @author Naval Scene
  * @author SpartacksCompatriot
  * @author VoteITP
  */
@@ -2901,6 +2902,8 @@ $messages['min'] = array(
 	'coll-disable' => '↓tutuik',
 	'coll-book_creator_disable' => 'Jan buliahan pambuekan buku',
 	'coll-book_creator_disable_tooltip' => 'Baranti manggunoan pambuek buku',
+	'coll-bookscategory' => 'Buku',
+	'coll-suggest_empty' => 'kosong',
 );
 
 /** Macedonian (македонски)

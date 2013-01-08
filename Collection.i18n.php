@@ -9163,6 +9163,22 @@ $messages['mhr'] = array(
 	'coll-cancel' => 'Чараш',
 );
 
+/** Minangkabau (Baso Minangkabau)
+ * @author Naval Scene
+ */
+$messages['min'] = array(
+	'coll-collection' => 'Buku',
+	'coll-collections' => 'Buku',
+	'coll-your_book' => 'Buku Sanak',
+	'coll-title' => 'Judua:',
+	'coll-subtitle' => 'Subjudua:',
+	'coll-contents' => 'Dafta isi',
+	'coll-rename' => 'Ganti namo',
+	'coll-yes' => 'Yo',
+	'coll-no' => 'Indak',
+	'coll-cancel' => 'Batalkan',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
