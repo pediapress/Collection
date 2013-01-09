@@ -7002,14 +7002,19 @@ On ne povas adjuntar plusa pagini.',
 );
 
 /** Icelandic (íslenska)
+ * @author Bjarki S
  * @author S.Örvarr.S
  * @author Snævar
  */
 $messages['is'] = array(
 	'coll-desc' => '[[Special:Book|Búa til bækur]]',
+	'coll-book_creator_intro' => '<big>Með bókaviðmótinu getur þu tekið saman wikisíður af eigin vali í rafbók. Þu getur sótt rafbókina á mismunandi skráarformum (t.d. PDF eða ODF) eða pantað þér prentað eintak.</big>',
+	'coll-manage_your_book' => 'Bókin þín',
 	'coll-book_creator_help' => 'Sjá [[{{MediaWiki:Coll-helppage}}|hjálpina um bækur]] fyrir frekari upplýsingar.',
 	'coll-start_book_creator' => 'Ræsa bókar viðmótið',
 	'coll-book_creator_continue' => 'Halda áfram að nota bókar valmyndina',
+	'coll-book_creator_disable_text' => 'Bókaviðmótið verður afvirkjað og bókin sem þú ert að vinna í verður fjarlægð.',
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Bókaviðmótstexti',
 	'coll-collection' => 'Bók',
 	'coll-collections' => 'Bækur',
 	'coll-exclusion_category_title' => 'Sleppa í prentun',
@@ -7048,6 +7053,10 @@ Síðan mun ekki virka rétt, nema JavaScript verði virkjað.</strong>',
 	'coll-rename_chapter' => 'Sláðu inn nýtt nafn fyrir kafla',
 	'coll-no_such_category' => 'Flokkur ekki til',
 	'coll-notitle_title' => 'Mistókst að ákvarða titil síðunnar.',
+	'coll-post_failed_title' => 'POST beiðni mistókst',
+	'coll-post_failed_msg' => 'POST beiðnin til $1 mistókst ($2).',
+	'coll-mwserve_failed_title' => 'Villa hjá birtingarþjóni',
+	'coll-mwserve_failed_msg' => 'Villa varð hjá birtingarþjóni: <nowiki>$1</nowiki>',
 	'coll-error_reponse' => 'Villuskilaboð frá vefþjóni',
 	'coll-empty_collection' => 'Tóm bók',
 	'coll-revision' => 'Útgáfa: $1',
@@ -7055,6 +7064,7 @@ Síðan mun ekki virka rétt, nema JavaScript verði virkjað.</strong>',
 	'coll-save_collection_text' => 'Veldu geymslustað fyrir bókina þína:',
 	'coll-login_to_save' => 'Ef þú vilt vista bækur til að nota síðar, vinsamlegast [[Special:UserLogin|innskráðu eða nýskráðu þig]].',
 	'coll-personal_collection_label' => 'Persónuleg bók:',
+	'coll-community_collection_label' => 'Samfélagsbók:',
 	'coll-save_collection' => 'Vista bók',
 	'coll-save_category' => 'Allar vistaðar bækur er bætt við í flokkinn [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
 	'coll-overwrite_title' => 'Síðan er til.
@@ -7083,12 +7093,15 @@ Ef það gerist ekki, vinsamlegast ýttu á endurhlaða takkann í vafranum þí
 	'coll-rendering_article' => '(wiki síða: $1)',
 	'coll-rendering_page' => '(síða: $1)',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Umskrifa upplýsingartexta síðu',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Umskrifa upplýsingatexta safns',
 	'coll-rendering_finished_title' => 'Umskrifun lokið',
 	'coll-rendering_finished_text' => '<strong>Skráin hefur verið búin til.</strong>
 <strong>[$1 Hlaða niður skránni]</strong> á tölvuna þína.
 
 Minnisatriði:
 * Ertu óánægður með útkomuna? Skoðaðu [[{{MediaWiki:Coll-helppage}}|hjálparsíðuna um bækur]] fyrir möguleika til þess að bæta hana.',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/Umskrifa upplýsingatexta síðu',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/Umskrifa upplýsingatexta safns',
 	'coll-notfound_title' => 'Bók fannst ekki',
 	'coll-notfound_text' => 'Fann ekki bókar síðu.',
 	'coll-download_notfound_title' => 'Skrá fannst ekki',
@@ -7111,6 +7124,7 @@ Vinsamlegast hafðu samband við stjórnanda.',
 	'coll-license' => 'Leyfi',
 	'coll-return_to' => 'Aftur á [[:$1]]',
 	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/PediaPress pöntunar upplýsingar',
+	'coll-suggest_title' => 'Uppástungur að síðum fyrir bókina þína',
 	'coll-suggest_intro_text' => 'Uppástungur eru byggðar á núverandi síðum í bókinni þinni.
 Listinn er uppfærður þegar þú ýtir á bæta við eða fjarlægja takkann.',
 	'coll-suggested_articles' => 'Uppástungur',
@@ -7130,7 +7144,11 @@ Listinn er uppfærður þegar þú ýtir á bæta við eða fjarlægja takkann.'
 	'coll-format-rl' => 'rafbók (PDF)',
 	'coll-format-epub' => 'rafbók (EPUB)',
 	'coll-format-odf' => 'ritill (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Vista bók sem notendasíðu',
+	'right-collectionsaveascommunitypage' => 'Vista bækur sem samfélagssíðu',
 );
 
 /** Italian (italiano)
@@ -9174,9 +9192,33 @@ $messages['min'] = array(
 	'coll-subtitle' => 'Subjudua:',
 	'coll-contents' => 'Dafta isi',
 	'coll-rename' => 'Ganti namo',
+	'coll-empty_collection' => 'Buku kosong',
+	'coll-revision' => 'Revisi: $1',
+	'coll-save_collection_title' => 'Simpan jo bagikan buku Sanak',
+	'coll-save_collection_text' => 'Piliah suatu tampek panyimpanan untuak buku Sanak:',
+	'coll-login_to_save' => 'Jikak Sanak ingin manyimpan buku untuak dipagunoan nanti, silakan [[Special:UserLogin|masuak log atau buek akun]].',
+	'coll-personal_collection_label' => 'Buku paribadi:',
+	'coll-community_collection_label' => 'Buku komunitas:',
+	'coll-save_collection' => 'Simpan buku',
+	'coll-save_category' => 'Sadonyo buku disimpan di kategori [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]].',
+	'coll-overwrite_title' => 'Laman lah ado.
+Timpo?',
+	'coll-overwrite_text' => 'Suatu laman dangan nama [[:$1]] alah ado.
+Apo Sanak ingin manggantinyo jo buku Sanak?',
 	'coll-yes' => 'Yo',
 	'coll-no' => 'Indak',
 	'coll-cancel' => 'Batalkan',
+	'coll-limit_exceeded_title' => 'Buku talalu gadang',
+	'coll-limit_exceeded_text' => 'Buku Sanak talalu gadang.
+Indak dapek manambahan laman lai',
+	'coll-rendering_title' => 'Pangolahan',
+	'coll-rendering_finished_title' => 'Pangolahan salasai',
+	'coll-notfound_title' => 'Buku indak basuo',
+	'coll-notfound_text' => 'Indak dapek manamuan laman buku.',
+	'coll-download_notfound_title' => 'Berkas indak basuo',
+	'coll-download_notfound_text' => 'Berkas nan Sanak cubo download indak ado:
+Mungkin inyo lah dihapuih jo paralu dibuek ulang.',
+	'coll-download_failed_title' => 'Kasalahan salamo download',
 );
 
 /** Macedonian (македонски)
@@ -11876,6 +11918,7 @@ Această listă este actualizată de fiecare dată când apăsați butoanele de 
 $messages['roa-tara'] = array(
 	'coll-desc' => '[[Special:Book|Ccreje le libbre]]',
 	'coll-manage_your_book' => "Gestisce 'u libbre tune",
+	'coll-book_creator_help' => "'Ndruche [[{{MediaWiki:Coll-helppage}}|'a pàgene de aijute sus a le libbre]] pe cchiù 'mbormaziune.",
 	'coll-start_book_creator' => "Accuminze 'nu crijatore de libbre",
 	'coll-book_creator_continue' => "Condinue ad ausà 'u crijatore de libbre",
 	'coll-book_creator_disable_text' => "'U ''Crijatore de libbre'' avrà da essere disabbiletate e le libbre sus a cui tu stè fatijanne honne a essere luàte.",
@@ -11947,6 +11990,8 @@ Non ge puè sckaffà cchiù otre pàgene.",
 	'coll-rendering_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Teste de 'mbormaziune d'a pàgene de renderizzazione",
 	'coll-rendering_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Teste de 'mbormaziune d'a collezzione de renderizzazione",
 	'coll-rendering_finished_title' => 'Renderizzazzione spicciate',
+	'coll-finished_page_info_text_article' => "{{MediaWiki:Coll-helppage}}/Teste de 'mbormaziune d'a pàgene de renderizzazione",
+	'coll-finished_collection_info_text_article' => "{{MediaWiki:Coll-helppage}}/Teste de 'mbormaziune d'a collezzione de renderizzazione",
 	'coll-notfound_title' => 'Libbre non acchiate',
 	'coll-notfound_text' => "'Mbossibbele acchiere 'a pàgene d'u libbre.",
 	'coll-download_notfound_title' => 'File non acchiate',
