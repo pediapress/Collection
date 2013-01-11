@@ -3424,8 +3424,10 @@ $messages['or'] = array(
 	'coll-remove_this_page' => 'ଏହି ପୃଷ୍ଠାଟିକୁ ଆପଣଙ୍କ ବହିରୁ ହଟାଇବେ',
 	'coll-remove_page_tooltip' => 'ଆପଣଙ୍କ ବହିରୁ ବର୍ତମାନର ଉଇକି ପୃଷ୍ଠାକୁ ବାହାର କରିବେ',
 	'coll-show_collection' => 'ବହି ଦେଖାଇବେ',
+	'coll-show_collection_tooltip' => 'ଆପଣଙ୍କ ବହିଟିକୁ ବଦଳାଇବା/ଡାଉନଲୋଡ/ବଇନା କରିବା ପାଇଁ କ୍ଲିକ କରନ୍ତୁ',
 	'coll-not_addable' => 'ଏହି ପୃଷ୍ଠାଟିକୁ ଯୋଡା ଯାଇପାରିବ ନାହିଁ',
 	'coll-make_suggestions' => 'ପୃଷ୍ଠାଗୁଡିକୁ ପ୍ରସ୍ତାବିତ କରିବେ',
+	'coll-make_suggestions_tooltip' => 'ଆପଣଙ୍କ ବହିକୁ ଭିତ୍ତିକରି ଥିବା ପୃଷ୍ଠାଗୁଡିକ ପାଇଁ ମତାମତ ଦେଖିବେ',
 	'coll-suggest_empty' => 'ଖାଲି',
 );
 

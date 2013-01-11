@@ -8203,7 +8203,7 @@ $messages['kn'] = array(
  */
 $messages['ko'] = array(
 	'coll-desc' => '[[Special:Book|책 만들기]]',
-	'coll-book_creator_intro' => "<big>''책 생성기''로 당신의 선택에 따라 위키 문서를 담은 책을 생성할 수 있습니다.  다른 포맷(PDF 또는 ODF)으로 책을 내보낼 수 있으며 인쇄된 책을 주문할 수도 있습니다.</big>",
+	'coll-book_creator_intro' => "<big>''책 생성기''로 선택에 따라 위키 문서를 담은 책을 생성할 수 있습니다.  다른 포맷(PDF 또는 ODF)으로 책을 내보낼 수 있으며 인쇄된 책을 주문할 수도 있습니다.</big>",
 	'coll-manage_your_book' => '책 관리하기',
 	'coll-book_creator_help' => '자세한 정보에 대해서는 [[{{MediaWiki:Coll-helppage}}|책에 대한 도움말]]을 참고하십시오.',
 	'coll-start_book_creator' => '책 생성기 시작하기',
@@ -8222,7 +8222,7 @@ $messages['ko'] = array(
 	'coll-couldnotremovearticle_title' => '문서 제거 실패',
 	'coll-couldnotremovearticle_msg' => '해당 문서를 제거할 수 없습니다.',
 	'coll-noscript_text' => '<h1>자바스크립트가 필요합니다!</h1>
-<strong>당신의 브라우저는 자바스크립트를 지원하지 않거나 비활성화되어 있습니다.
+<strong>브라우저는 자바스크립트를 지원하지 않거나 비활성화되어 있습니다.
 자바스크립트가 활성화되지 않으면 이 문서는 제대로 동작하지 않을 수 있습니다.</strong>',
 	'coll-savedbook_template' => '책_완성본',
 	'coll-your_book' => '당신의 책',
@@ -8289,7 +8289,7 @@ $messages['ko'] = array(
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/책 만들기',
 	'coll-rendering_finished_title' => '렌더링 완료',
 	'coll-rendering_finished_text' => '<strong>문서 파일이 생성되었습니다.</strong>
-이 파일을 당신의 컴퓨터로 <strong>[$1 다운로드]</strong>하십시오.
+이 파일을 컴퓨터로 <strong>[$1 다운로드]</strong>하세요.
 
 참고:
 * 출력 결과에 만족하지 않으신가요? 이 기능을 향상시킬 수 있도록 [[{{MediaWiki:Coll-helppage}}|책에 대한 도움말 문서]]를 참고해 주세요.',
@@ -8302,8 +8302,8 @@ $messages['ko'] = array(
 	'coll-download_failed_title' => '다운로드 중 오류',
 	'coll-download_failed_text' => '파일을 다운로드하는 중 오류가 있었습니다: $1',
 	'coll-is_cached' => '<ul><li>이 문서의 캐시된 버전이 발견되었습니다. 따라서 다시 렌더링하지 않으셔도 됩니다. <a href="$1">다시 렌더링하기</a></li></ul>',
-	'coll-excluded-templates' => '[[:Category:$1|$1]] 분류에 속한 틀은 제외되었습니다.',
-	'coll-blacklisted-templates' => '틀 블랙리스트 [[:$1]]에 있는 틀은 제외되었습니다.',
+	'coll-excluded-templates' => '* [[:Category:$1|$1]] 분류에 속한 틀은 제외되었습니다.',
+	'coll-blacklisted-templates' => '* 틀 블랙리스트 [[:$1]]에 있는 틀은 제외되었습니다.',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a>(으)로 돌아갑니다.</p>',
 	'coll-book_title' => '인쇄된 책으로 주문',
 	'coll-book_text' => '인쇄 협력자를 통해 책을 인쇄합니다.',
