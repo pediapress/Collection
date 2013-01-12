@@ -10813,8 +10813,13 @@ La lista es mesa a jorn a cada còp que clicatz suls botons d'apondon o de supre
  */
 $messages['or'] = array(
 	'coll-desc' => '[[Special:Book|ବହି ତିଆରି]]',
+	'coll-book_creator_intro' => "<big>''book ceater''କୁ ବ୍ୟବହାର କରି ଆପଣ ଆପଣଙ୍କୁ ଭଲ ଲାଗୁଥିବା ଉଇକି ପୃଷ୍ଠାଗୁଡିକୁ ନେଇ ଗୋଟିଏ ବହି ତିଆରି କରି ପାରିବେ । ଆପଣ ବହିଟିକୁ ଭିନ୍ନ ଭିନ୍ନ ପ୍ରକାରରେ ପଠେଇ ପାରିବେ (ଉଦାହରଣ ସ୍ୱରୂପ PDF କିମ୍ବା ODF) କିମ୍ବା ଏହାର ଏକ ଛାପି ପାରିବେ । <big>",
 	'coll-manage_your_book' => 'ଆପଣଙ୍କ ବହିକୁ ପରିଚାଳନା କରିବେ',
+	'coll-book_creator_help' => 'ଅଧିକ ତଥ୍ୟ ପାଇଁ [[{{MediaWiki:Coll-helppage}}|the help page about books]] ଦେଖନ୍ତୁ ।',
 	'coll-start_book_creator' => 'ବହି ତିଆରି ଆରମ୍ଭ କରିବେ',
+	'coll-book_creator_continue' => 'ବହିତିଆରି କରିବାର ବ୍ୟବହାର କରିବା ଚାଲୁ ରଖିବେ',
+	'coll-book_creator_disable_text' => "'''ବହିତିଆରି କରିବା''' ଅଚଳ ହୋଇଯିବ ଏବଂ ଆପଣ ତିଆରି କରୁଥିବା ବହିଟି କାଢିଦିଆଯିବ ।",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/ବହିତିଆରି କରିବା ବାକ୍ସ',
 	'coll-collection' => 'ବହି',
 	'coll-collections' => 'ବହିସବୁ',
 	'coll-exclusion_category_title' => 'ପ୍ରିଣ୍ଟରୁ ବାହାରେ ରଖିବେ',
@@ -10826,9 +10831,14 @@ $messages['or'] = array(
 	'coll-couldnotaddarticle_msg' => 'ଉଇକି ପ୍ରୁଷ୍ଠାଟି ଯୋଡାଯାଇପାରିଲା ନାହିଁ ।',
 	'coll-couldnotremovearticle_title' => 'ଉଇକି ପୃଷ୍ଠା ବାହାର କରିହେଲା ନାହିଁ',
 	'coll-couldnotremovearticle_msg' => 'ଉଇକି ପୃଷ୍ଠାଟିକୁ ବାହାର କରାଯାଇ ପାରିବ ନାହିଁ ।',
+	'coll-noscript_text' => '<h1> ଜାଭାସ୍କ୍ରିପ୍ଟ ଆବଶ୍ୟକ !</h1>
+<strong>ଆପଣଙ୍କ ବ୍ରାଉଜରରେ ଜାଭାସ୍କ୍ରିପ୍ଟ ନାହିଁ କିମ୍ବା ତାହା ବନ୍ଦ ଅଛି ।
+ଜାଭାସ୍କ୍ରିପ୍ଟ ସଚଳ ନ ହେଲ ଏହି ପୃଷ୍ଠାଟି ଠିକଭାବେ କାମ କରୁନାହିଁ ।</strong>',
 	'coll-savedbook_template' => 'ସାଇତା_ବହି',
 	'coll-your_book' => 'ଆପଣଙ୍କର ବହି',
 	'coll-download_title' => 'ଡାଉନଲୋଡ',
+	'coll-download_text' => 'ଆପଣଙ୍କ ବହିଟିକୁ ଡାଉନଲୋଡ କରିବା ପାଇଁ ବହି ପ୍ରକାର ଚୟନ କରନ୍ତୁ ଏବଂ ବଟନ ଉପରେ କ୍ଲିକ କରନ୍ତୁ ।',
+	'coll-download_as_text' => 'ଆପଣଙ୍କ ବହିଟିକୁ $1ପ୍ରକାରରେ ଡାଉନଲୋଡ କରିବା ପାଇଁ ବଟନ ଉପରେ କ୍ଲିକ କରନ୍ତୁ ।',
 	'coll-download' => 'ଡାଉନଲୋଡ',
 	'coll-format_label' => 'ସଜାଣି:',
 	'coll-remove' => 'ବାହାର କରିବା',
@@ -10840,6 +10850,7 @@ $messages['or'] = array(
 	'coll-title' => 'ଶିରୋନାମା:',
 	'coll-subtitle' => 'ଉପନାମ:',
 	'coll-contents' => 'ଭିତର ଚିଜ',
+	'coll-drag_and_drop' => 'ଡ୍ରାଗ ଆଣ୍ଡ ଡ୍ରପ ବ୍ୟବହାର କରି ଉଇକି ପୃଷ୍ଠାଗୁଡିକୁ ଏବଂ ବିଷୟଗୁଡିକୁ ସଜେଇ ରଖନ୍ତୁ',
 	'coll-create_chapter' => 'ବିଭାଗ ତିଆରିବେ',
 	'coll-sort_alphabetically' => 'ଅକ୍ଷରର କ୍ରମ ଅନୁସାରେ ସଜାଇବେ',
 	'coll-rename' => 'ନାମବଦଳା',
@@ -10850,27 +10861,74 @@ $messages['or'] = array(
 	'coll-post_failed_title' => 'POST ଅନୁରୋଧ ବିଫଳ ହେଲା',
 	'coll-post_failed_msg' => '$1କୁ ସବୁଯାକ POST ଅନୁରୋଧ ବିଫଳ ହେଲା ($2) ।',
 	'coll-mwserve_failed_title' => 'ରେଣ୍ଡର ସର୍ଭର ଭୁଲ',
+	'coll-mwserve_failed_msg' => 'ରେଣ୍ଡର ବ୍ୟବସ୍ଥାରେ ଅସୁବିଧା ହେଲା:<nowiki>$1</nowiki>',
+	'coll-error_reponse' => 'ସର୍ଭରରେ ଅସୁବିଧା ହେଲା',
 	'coll-empty_collection' => 'ଖାଲି ବହି',
 	'coll-revision' => 'ପୁନରାବୃତ୍ତି: $1',
 	'coll-save_collection_title' => 'ଆପଣଙ୍କ ବହିକୁ ସାଇତିବେ ଓ ଅନ୍ୟମାନଙ୍କ ସହ ବାଣ୍ଟିବେ',
+	'coll-save_collection_text' => 'ଆପଣଙ୍କ ବହିରେ ସାଇତିବା ପାଇଁ ଏକ ଜାଗା ବାଛନ୍ତୁ:',
+	'coll-login_to_save' => 'ଆପଣ ଯଦି ବହିଟିକୁ ପରେ ବ୍ୟବହାର କରିବା ପାଇଁ ସାଇତିବାକୁ ଚାହୁଁଛନ୍ତି, ଦୟାକରି [[Special:UserLogin|log in or create an account]] କରନ୍ତୁ ।',
 	'coll-personal_collection_label' => 'ନିଜର ବହି:',
+	'coll-community_collection_label' => 'ଗୋଷ୍ଠୀପୁସ୍ତିକା:',
 	'coll-save_collection' => 'ବହି ସାଇତିବେ',
+	'coll-save_category' => 'ସମସ୍ତ ସାଇତା ଯାଇଥିବା ବହିଗୁଡିକ [[:Category:{{MediaWiki:Coll-bookscategory}}|{{MediaWiki:Coll-bookscategory}}]] ବିଭାଗରେ ରଖାଗଲା ।',
+	'coll-overwrite_title' => 'ପୃଷ୍ଠା ଆଗରୁ ଅଛି ।
+ତାକୁ ହଟେଇ ତା ଉପରେ ଲେଖିବେ ?',
+	'coll-overwrite_text' => '[[:$1]] ନାମରେ ପୃଷ୍ଠାଟିଏ ଆଗରୁ ଅଛି ।
+ଆପଣ ଚାହୁଁଛନ୍ତି କି ଆପଣ ନିଜ ବହିକୁ ଏହା ସ୍ଥାନରେ ରଖିବେ ?',
 	'coll-yes' => 'ହଁ',
 	'coll-no' => 'ନାହିଁ',
+	'coll-load_overwrite_text' => 'ଆପଣଙ୍କ ବହିରେ କିଛି ପୃଷ୍ଠା ଅଛି ।
+ଆପଣ ଆପଣଙ୍କ ବର୍ତ୍ତମାନର ବହି ଉପରେ ଲେଖିବାକୁ ଚାହୁଁଛନ୍ତି, ତା ପଛକୁ ରଖିବାକୁ ଚାହୁଁଛନ୍ତି, ନା ବହିଟିକୁ ଲୋଡ କରିବା ବାତିଲ କରିବାକୁ ଚାହୁଁଛନ୍ତି ?',
 	'coll-overwrite' => 'ନବଲିଖନ',
 	'coll-append' => 'ଅନ୍ତ ସଂଯୁକ୍ତି',
 	'coll-cancel' => 'ନାକଚ',
 	'coll-update' => 'ଅପଡେଟ',
+	'coll-limit_exceeded_title' => 'ବହିଟି ବହୁତ ବଡ',
+	'coll-limit_exceeded_text' => 'ଆପଣଙ୍କ ବହିଟି ବହୁତ ବଡ ।
+ଆଉ ପୃଷ୍ଠା ଯୋଡା ଯାଇପାରିବ ନାହିଁ ।',
+	'coll-rendering_title' => 'ରେଣ୍ଡର ହେଉଛି',
+	'coll-rendering_text' => '<p><strong>ଦୟାକରି ପୃଷ୍ଠା ରେଣ୍ଡର ହେବା ପର୍ଯ୍ୟନ୍ତ ଅପେକ୍ଷା କରନତୁ ।</strong></p>
+<p><strong>Progress:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+<p>ଏହି ପୃଷ୍ଠାଟି କିଛି ସେକେଣ୍ଡ ମଧ୍ୟରେ ଆପେ ଆପେ ରିଫ୍ରେଶ ହେବା କଥା ।
+ଯଦି ଏହା ହେଉନାହିଁ, ଦୟାକରି ଆପଣଙ୍କର ବ୍ରାଉଜରରେ ଥିବା ଋଫ୍ରେସ ବଟନ ଉପରେ କ୍ଲିକ କରନ୍ତୁ ।</p>',
 	'coll-rendering_status' => '<strong>ସ୍ଥିତି:</strong> $1',
+	'coll-rendering_article' => '(ଉଇକି ପୃଷ୍ଠା: $1)',
 	'coll-rendering_page' => '(ପୃଷ୍ଠା: $1)',
+	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/ପୃଷ୍ଠା ତଥ୍ୟ ଲେଖା ରେଣ୍ଡର ହେଉଛି',
+	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/ସଂଗ୍ରହ ତଥ୍ୟ ଲେଖା ରେଣ୍ଡର ହେଉଛି',
+	'coll-rendering_finished_title' => 'ରେଣ୍ଡର ସାରିଲା',
+	'coll-rendering_finished_text' => '<strong>ତଥ୍ୟ ଫାଇଲଟି ବାହାରିଲା</strong>
+ଆପଣଙ୍କ କମ୍ପୁଟରକୁ <strong>[$1 Download the file]</strong> କରନ୍ତୁ ।
+ଟୀକା:
+* ଫଳାଫଳରେ ଠିକ ନାହିଁ ? ସମ୍ଭାବ୍ୟ ଉନ୍ନତ କରିବା ପାଇଁ [[{{MediaWiki:Coll-helppage}}|the help page about books]]କୁ ଦେଖନ୍ତୁ ।',
+	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/ପୃଷ୍ଠା ତଥ୍ୟ ଲେଖା ରେଣ୍ଡର ହେଉଛି',
+	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/ସଂଗ୍ରହ ତଥ୍ୟ ଲେଖା ରେଣ୍ଡର ହେଉଛି',
+	'coll-notfound_title' => 'ବହିଟି ମିଳିଲା ନାହିଁ',
+	'coll-notfound_text' => 'ବହି ପୃଷ୍ଠାଟି ମିଳିଲା ନାହିଁ ।',
 	'coll-download_notfound_title' => 'ଫାଇଲ ମିଳିଲା ନାହିଁ',
+	'coll-download_notfound_text' => 'ଆପଣ ଡାଉନଲୋଡ କରିବା ପାଇଁ ଚେଷ୍ଟା କରୁଥିବା ଫାଇଲଟି ନାହିଁ:
+ଏହା ବୋଧେ ହଟାଇଦିଆଯାଇଛି ଏବଂ ଆଉ ଥରେ ବାହାର କରିବା ଦରକାର ।',
 	'coll-download_failed_title' => 'ଡ଼ାଉନଲୋଡ଼ ସମୟରେ ତ୍ରୁଟି',
+	'coll-download_failed_text' => '$1 ଫାଇଲଟିକୁ ଡାଉନଲୋଡ କରିବାରେ ଅସୁବିଧା ହେଲା',
+	'coll-is_cached' => '<ul><li>ଏହି ଲେଖାର ଗୋଟିଏ ପୁରୁଣା ସଂସ୍କରଣ ମିଳିଲା, ତେଣୁ ରେଣ୍ଡର କରିବା ଦରକାର ନାହିଁ ।
+<a href="$1">Force re-rendering.</a></li></ul>',
+	'coll-excluded-templates' => '* [[:Category:$1|$1]] ବିଭାଗରେ ଥିବା ଟେମ୍ପଲେଟ ଗୁଡିକୁ ବାଦ ଦିଆଗଲା ।',
+	'coll-blacklisted-templates' => '* ବନ୍ଦ କରାଯାଇଥିବା ଥିବା ଟେମ୍ପଲେଟ [[:$1]] ଗୁଡିକୁ ବାଦ ଦିଆଗଲା ।',
 	'coll-return_to_collection' => '<p><a href="$1">$2</a>କୁ ଫେରିଯାଆନ୍ତୁ</p>',
+	'coll-book_title' => 'ବହିଟିକୁ ଛାପିବା ପାଇଁ ନିର୍ଦେଶ ଦେବେ',
+	'coll-book_text' => 'ଆମ ପ୍ରିଣ୍ଟ-ଅନ-ଡିମାଣ୍ଡ ସହଯୋଗୀଦ୍ଵାରା ଏକ ଛପା ବହି ନିଅନ୍ତୁ ।',
 	'coll-order_from_pp' => '$1 ସହ ଦେଖଣା',
 	'coll-about_pp' => 'ବାବଦରେ $1',
 	'coll-invalid_podpartner_title' => 'ଅଚଳ POD ପାର୍ଟନର',
+	'coll-invalid_podpartner_msg' => 'ଆପଣ ଦେଇଥିବା POD ସହଯୋଗୀ ଅବୈଧ ଅଟନ୍ତି ।
+ଦୟାକରି ଆପଣଙ୍କ ମେଡିଆଉଇକି ଅଧିକାରୀଙ୍କୁ ଯୋଗଯୋଗ କରନ୍ତୁ ।',
 	'coll-license' => 'ଲାଇସେନ୍ସ',
 	'coll-return_to' => '[[:$1]]କୁ ଫେରିଯିବେ',
+	'coll-order_info_article' => '{{MediaWiki:Coll-helppage}}/ପେଡିଆପ୍ରେସ ବରାଦ ତଥ୍ୟ',
+	'coll-suggest_title' => 'ଆପଣଙ୍କ ବହି ପାଇଁ ମତାମତ ଦିଆଯାଇଥିବା ପୃଷ୍ଠାଗୁଡିକ',
+	'coll-suggest_intro_text' => 'ମତାମତଗୁଡିକ ଆପଣଙ୍କ ବହିରେ ବର୍ତମାନ ଥିବା ଉଇକି ପୃଷ୍ଠାଗୁଡିକ ଆଧାରକୁ ନେଇ ଦିଆଯାଇଛି ।
+ଆପଣ ଯେତେବେଳେ ଯୋଡିବେ କିମ୍ବା କାଢିବେ ବଟନ କ୍ଲିକ କରିବେ ସେତେବେଳେ ଏହା ଅପଡେଟ ହେଇଯିବ ।',
 	'coll-suggested_articles' => 'ପ୍ରସ୍ତାବ',
 	'coll-suggest_reset_bans' => 'ପୁନସ୍ଥାପନ',
 	'coll-suggest_reset_bans_tooltip' => 'ଆଗରୁ ଦିଆଯାଇଥିବା ମତଗୁଡିକୁ ଦେଖାଇବେ',
@@ -10884,6 +10942,15 @@ $messages['or'] = array(
 	'coll-suggest_article_remove' => 'ପୃଷ୍ଠା <strong>$1</strong>ଆପଣଙ୍କ ବହିରୁ ହଟାଇ ଦିଆଯାଇଛି ($2) ।',
 	'coll-suggest_undo_tooltip' => 'ଏହି କାମଟିକୁ କରିବେ ନାହିଁ',
 	'coll-suggest_undo' => 'ପଛକୁ ଫେରିବା',
+	'coll-load_local_book' => 'ଆପଣଙ୍କ %TITLE% ବହି ଯେଉଁଥିରେ %NUMPAGES%ଟି ପୃଷ୍ଠା ଅଛି ତାହାକୁ ଚାଲୁ ରଖିବା ପାଇଁ OK ଉପରେ କ୍ଲିକ କରନ୍ତୁ । ଏହାକୁ ଲିଭାଇ ମୂଳରୁ ଖାଲି ବହି ଆରମ୍ଭ କରିବା ପାଇଁ ବାତିଲ ଉପରେ କ୍ଲିକ କରନ୍ତୁ ।',
+	'coll-format-rl' => 'ଇ-ବହି (PDF)',
+	'coll-format-epub' => 'ଇ-ବହି (EPUB)',
+	'coll-format-odf' => 'ଲେଖା ପ୍ରକ୍ରିୟାକାରୀ (ଖୋଲାଲେଖା)',
+	'coll-format-zim' => 'kiwix (OpenZIM)',
+	'coll-format-docbook' => 'ଲେଖାବହି',
+	'coll-format-okawix_zeno' => 'Okawix',
+	'right-collectionsaveasuserpage' => 'ବହିଟିକୁ ବ୍ୟବହାରକାରୀ ପୃଷ୍ଠା ଭାବେ ସାଇତିବେ',
+	'right-collectionsaveascommunitypage' => 'ବହିଟିକୁ ଗୋଷ୍ଠୀ ପୁସ୍ତିକା ଭାବେ ସାଇତିବେ',
 );
 
 /** Ossetic (Ирон)

@@ -74,6 +74,7 @@ $messages['en'] = array(
  * @author Lejonel
  * @author Lloffiwr
  * @author Mormegil
+ * @author Shirayuki
  * @author Siebrand
  * @author Teak
  * @author Umherirrender
@@ -82,8 +83,8 @@ $messages['qqq'] = array(
 	'coll-print_export' => 'Caption of a frame in the toolbar (on the left-hand side of the screen), similar to {{msg-mw|toolbox}} or {{msg-mw|otherlanguages}}.',
 	'coll-create_a_book' => '{{Identical|Books}}',
 	'coll-download_as' => 'Used for two different purposes:
-# As link text in the toolbox in the side bar to download wiki pages in a specified file format (such as PDF). The link has {{msg|coll-download as tooltip}} as tooltip.
-# As button text for the download button on [[Special:Book]] when there is only one file format. The button is next to the text of {{msg|coll-download as text}}. (If there is a choice of file format {{msg|coll-download}} together with {{msg|coll-download text}} is used insted.)
+# As link text in the toolbox in the side bar to download wiki pages in a specified file format (such as PDF). The link has {{msg-mw|coll-download as tooltip}} as tooltip.
+# As button text for the download button on [[Special:Book]] when there is only one file format. The button is next to the text of {{msg-mw|coll-download as text}}. (If there is a choice of file format {{msg-mw|coll-download}} together with {{msg-mw|coll-download text}} is used insted.)
 
 In both cases $1 is a file format.
 
