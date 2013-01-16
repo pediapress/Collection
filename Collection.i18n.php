@@ -15193,6 +15193,7 @@ $messages['ur'] = array(
 
 /** vèneto (vèneto)
  * @author Candalua
+ * @author GatoSelvadego
  * @author Nick1915
  */
 $messages['vec'] = array(
@@ -15326,6 +15327,12 @@ La lista la vien ajornà ogni olta che te struchi sui botoni "zonta" o "cava".',
 	'coll-suggest_undo_tooltip' => 'Anùla sta azion',
 	'coll-suggest_undo' => 'torna indrìo',
 	'coll-load_local_book' => 'Struca OK par continuar col to libro %TITLE% composto da %NUMPAGES% pagine wiki. Struca Anula par scancelarlo e scominsiar co un libro vodo.',
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'word processor (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Salva na colezion come pagina utente',
 	'right-collectionsaveascommunitypage' => 'Salva na colezion come pagina comunitaria',
 );
