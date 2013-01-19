@@ -9533,6 +9533,7 @@ $messages['mn'] = array(
  * @author Rahuldeshmukh101
  * @author Shantanoo
  * @author Sudhanwa
+ * @author संतोष दहिवळ
  */
 $messages['mr'] = array(
 	'coll-desc' => '[[Special:Book|पुस्तक बनवा]]',
@@ -9667,6 +9668,12 @@ Notes:
 	'coll-suggest_undo_tooltip' => 'उलटावा',
 	'coll-suggest_undo' => 'उलटवा',
 	'coll-load_local_book' => 'आपल्या %TITLE% या पुस्तकाचे संपादन चालू ठेवण्याकरीता, ज्यामध्ये %NUMPAGES% विकिपाने आहेत, OK वर टिचकी मारा. त्यास रद्द (delete) करून नव्या कोऱ्या पुस्तकाचे लिखाण चालू करण्यास Cancel वर टिचकी मारा.',
+	'coll-format-rl' => 'ई-बुक (पीडीएफ)',
+	'coll-format-epub' => 'ई-बुक (इपीयुबी)',
+	'coll-format-odf' => 'वर्ड प्रोसेसर (ओपन डॉक्यूमेंट)',
+	'coll-format-zim' => 'किविक्स (ओपन झिम)',
+	'coll-format-docbook' => 'डॉकबुक',
+	'coll-format-okawix_zeno' => 'ओकाविक्स',
 	'right-collectionsaveasuserpage' => 'ग्रंथास सदस्य पान म्हणून जतन करा',
 	'right-collectionsaveascommunitypage' => 'ग्राथांना समाज पृष्ठ म्हणून जतन करा',
 );
