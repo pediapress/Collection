@@ -10679,10 +10679,10 @@ Lista vert oppdatert kvar gong du trykkjer på «legg til»- eller «fjern»-kna
  */
 $messages['oc'] = array(
 	'coll-desc' => '[[Special:Book|Crear de libres]]',
-	'coll-book_creator_intro' => "<big>Amb lo ''mòde libre'' podètz crear un libre que se compausa de paginas del wiki qu'auretz causidas. Podètz exportar vòstre libre en de formats diferents (per exemple PDF o ODF) o comandar una còpia estampada.</big>", # Fuzzy
+	'coll-book_creator_intro' => "<big>Amb lo ''creator de libres'' podètz crear un libre que se conten de paginas del wiki qu'auretz causidas. Podètz exportar lo libre dins formats diferents (per exemple PDF o ODF) o ne comandar una còpia estampada.</big>",
 	'coll-manage_your_book' => 'Gerir vòstre libre',
 	'coll-book_creator_help' => "Vejatz [[{{MediaWiki:Coll-helppage}}|la pagina d'ajuda suls libres]] per mai d'entresenhas.",
-	'coll-start_book_creator' => 'Aviar lo mòde libre', # Fuzzy
+	'coll-start_book_creator' => 'Aviar lo creator de libres',
 	'coll-book_creator_continue' => 'Contunhar en utilizant lo creator de libres',
 	'coll-book_creator_disable_text' => "Lo ''creator de libres'' serà desactivat e los libres suls quals trabalhatz seràn suprimits de la sesilha de vòstre navigador.",
 	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Tèxte del mòde libre',
@@ -10808,6 +10808,13 @@ La lista es mesa a jorn a cada còp que clicatz suls botons d'apondon o de supre
 	'coll-suggest_article_remove' => 'La pagina <strong>$1</strong> es estada levada de vòstre libre ($2).',
 	'coll-suggest_undo_tooltip' => 'Desfar aquesta accion',
 	'coll-suggest_undo' => 'desfar',
+	'coll-load_local_book' => "Clicatz sus D'acòrdi per contunhar vòstre libre %TITLE% que conten %NUMPAGES% paginas wiki. Clicatz sus Anullar per lo suprimir e començar amb un libre void.",
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'tractament de tèxte (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => "Salvar de libres sus de paginas d'utilizaire",
 	'right-collectionsaveascommunitypage' => 'Salvar de libres sus de paginas comunautàrias',
 );
