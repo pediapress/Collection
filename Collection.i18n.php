@@ -2817,6 +2817,7 @@ $messages['cu'] = array(
 
 /** Welsh (Cymraeg)
  * @author Lloffiwr
+ * @author Robin Owain
  * @author Xxglennxx
  */
 $messages['cy'] = array(
@@ -2954,6 +2955,12 @@ Mae'r rhestr yn cael ei hadnewyddu bob tro yr ydych yn pwyso ar y botymau ychwan
 	'coll-suggest_undo_tooltip' => 'Dadwneud y weithred hon',
 	'coll-suggest_undo' => 'dadwneud',
 	'coll-load_local_book' => "Pwyswch ar 'Iawn' i barhau â'ch llyfr %TITLE%, ag iddo %NUMPAGES% o dudalennau wici. Pwyswch ar 'Diddymu' i'w ddileu a dechrau eto gyda llyfr gwag.",
+	'coll-format-rl' => 'e-lyfr (PDF)',
+	'coll-format-epub' => 'e-lyfr (EPUB)',
+	'coll-format-odf' => 'prosesydd geiriau (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocLyfr',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Gallu cadw llyfrau ar dudalennau yn y parth defnyddiwr',
 	'right-collectionsaveascommunitypage' => 'Gallu rhoi llyfrau ar gadw ar dudalennau cymunedol',
 );
