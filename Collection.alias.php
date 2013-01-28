@@ -278,7 +278,7 @@ $specialPageAliases['nb'] = array(
 	'Book' => array( 'Bok', 'Samling' ),
 );
 
-/** Nedersaksies (Nedersaksies) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'Book' => array( 'Verzameling' ),
 );
