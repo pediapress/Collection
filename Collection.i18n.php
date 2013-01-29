@@ -7460,12 +7460,14 @@ $messages['ja'] = array(
 );
 
 /** Javanese (Basa Jawa)
+ * @author Bennylin
  * @author Meursault2004
  * @author NoiX180
  * @author Pras
  */
 $messages['jv'] = array(
 	'coll-desc' => '[[Special:Book|Gawé buku]]',
+	'coll-book_creator_intro' => "<big>Dengan ''pembuat buku'', Anda dapat membuat buku berisi halaman wiki pilihan Anda. Anda dapat mengekspor buku dalam berbagai format (misalnya, PDF atau ODF) atau memesan versi cetaknya.</big>",
 	'coll-manage_your_book' => 'Tata buku Sampéyan',
 	'coll-book_creator_help' => 'Delok [[{{MediaWiki:Coll-helppage}}|kaca pitulung bab buku]] kanggo informasi luwih.',
 	'coll-start_book_creator' => 'Lekasi panyipta buku',
