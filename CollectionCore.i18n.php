@@ -2908,6 +2908,9 @@ $messages['min'] = array(
 	'coll-book_creator_disable' => 'Jan buliahan pambuekan buku',
 	'coll-book_creator_disable_tooltip' => 'Baranti manggunoan pambuek buku',
 	'coll-bookscategory' => 'Buku',
+	'coll-clear_collection' => 'Hapuih buku',
+	'coll-help' => 'Bantuan',
+	'coll-helppage' => 'Bantuan:Buku', # Fuzzy
 	'coll-suggest_empty' => 'kosong',
 );
 

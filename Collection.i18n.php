@@ -9194,9 +9194,12 @@ $messages['mhr'] = array(
  * @author Naval Scene
  */
 $messages['min'] = array(
+	'coll-book_creator_continue' => 'Lanjuikan manggunoan pambuek buku',
 	'coll-collection' => 'Buku',
 	'coll-collections' => 'Buku',
+	'coll-print_template_prefix' => 'Cetak',
 	'coll-your_book' => 'Buku Sanak',
+	'coll-remove' => 'Hapuih',
 	'coll-title' => 'Judua:',
 	'coll-subtitle' => 'Subjudua:',
 	'coll-contents' => 'Dafta isi',
@@ -9228,6 +9231,9 @@ Indak dapek manambahan laman lai',
 	'coll-download_notfound_text' => 'Berkas nan Sanak cubo download indak ado:
 Mungkin inyo lah dihapuih jo paralu dibuek ulang.',
 	'coll-download_failed_title' => 'Kasalahan salamo download',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 );
 
 /** Macedonian (македонски)
