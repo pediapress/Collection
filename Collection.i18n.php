@@ -8857,6 +8857,7 @@ $messages['lo'] = array(
 );
 
 /** Lithuanian (lietuvių)
+ * @author Audriusa
  * @author Eitvys200
  * @author Homo
  * @author Matasg
@@ -8869,6 +8870,7 @@ $messages['lt'] = array(
 	'coll-book_creator_continue' => 'Toliau naudoti book creator',
 	'coll-collection' => 'Knyga',
 	'coll-collections' => 'Knygos',
+	'coll-exclusion_category_title' => 'Nespausdinti',
 	'coll-print_template_prefix' => 'Spausdinti',
 	'coll-print_template_pattern' => '$1/Spausdinti',
 	'coll-unknown_subpage_title' => 'Nežinomas puslapis',
@@ -8895,9 +8897,15 @@ $messages['lt'] = array(
 	'coll-title' => 'Pavadinimas:',
 	'coll-subtitle' => 'Poraštė',
 	'coll-contents' => 'Turinys',
+	'coll-create_chapter' => 'Sukurti skyrių',
 	'coll-sort_alphabetically' => 'Rūšiuoti abėcėlės tvarka',
 	'coll-rename' => 'Pervadinti',
+	'coll-new_chapter' => 'Skyriaus antraštė',
+	'coll-rename_chapter' => 'Nauja skyriaus antraštė',
 	'coll-no_such_category' => 'Nėra tokios kategorijos',
+	'coll-notitle_title' => 'Skyriaus antraštė nežinoma.',
+	'coll-post_failed_title' => 'POST užklausa nepavyko',
+	'coll-post_failed_msg' => 'POST užklausa adresu $1 nepavyko ($2).',
 	'coll-empty_collection' => 'Tuščia knyga',
 	'coll-save_collection_title' => 'Išsaugoti ir pasidalinti savo knygą',
 	'coll-save_collection_text' => 'Pasirinkite savo knygos saugojimo vietą:',
