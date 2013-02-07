@@ -273,7 +273,7 @@ $specialPageAliases['myv'] = array(
 	'Book' => array( 'Ставкс' ),
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål) */
 $specialPageAliases['nb'] = array(
 	'Book' => array( 'Bok', 'Samling' ),
 );
@@ -288,7 +288,7 @@ $specialPageAliases['nl'] = array(
 	'Book' => array( 'Boek', 'Collectie', 'Verzameling' ),
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎) */
+/** Norwegian Nynorsk (norsk nynorsk) */
 $specialPageAliases['nn'] = array(
 	'Book' => array( 'Bok' ),
 );
