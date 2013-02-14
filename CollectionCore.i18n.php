@@ -80,7 +80,8 @@ $messages['en'] = array(
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'coll-print_export' => 'Caption of a frame in the toolbar (on the left-hand side of the screen), similar to {{msg-mw|toolbox}} or {{msg-mw|otherlanguages}}.',
+	'coll-print_export' => 'Caption of a frame in the toolbar (on the left-hand side of the screen), similar to {{msg-mw|toolbox}} or {{msg-mw|otherlanguages}}.
+{{Identical|Print/Export}}',
 	'coll-create_a_book' => '{{Identical|Books}}',
 	'coll-download_as' => 'Used for two different purposes:
 # As link text in the toolbox in the side bar to download wiki pages in a specified file format (such as PDF). The link has {{msg-mw|coll-download as tooltip}} as tooltip.
