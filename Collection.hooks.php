@@ -33,9 +33,9 @@ class CollectionHooks {
 		global $wgCollectionPortletForLoggedInUsersOnly;
 
 		if ( !$wgCollectionPortletForLoggedInUsersOnly || $skin->getUser()->isLoggedIn() ) {
-			$html = self::getPortlet( $skin );
-			if ( $html ) {
-				$bar[ 'coll-print_export' ] = $html;
+			$portlet = self::getPortlet( $skin );
+			if ( $portlet ) {
+				$bar[ 'coll-print_export' ] = $portlet;
 			}
 		}
 		return true;
@@ -86,34 +86,19 @@ class CollectionHooks {
 			return false;
 		}
 
-		$out = Xml::element( 'ul', array( 'id' => 'collectionPortletList' ), null );
+		$out = Array();
 
+		$booktitle = SpecialPage::getTitleFor( 'Book' );
 		if ( !CollectionSession::isEnabled() ) {
-			$out .= Xml::tags( 'li',
-				array( 'id' => 'coll-create_a_book' ),
-				Linker::linkKnown(
-					SpecialPage::getTitleFor( 'Book' ),
-					$sk->msg( 'coll-create_a_book' )->escaped(),
-					array(
-						'rel' => 'nofollow',
-						'title' => $sk->msg( 'coll-create_a_book_tooltip' )->text()
-					),
-					array( 'bookcmd' => 'book_creator', 'referer' => $title->getPrefixedText() )
-				)
-			);
+			$out[] = Array( 'text' => $sk->msg( 'coll-create_a_book' )->escaped(),
+				        'id' => 'coll-create_a_book',
+				        'href' => $booktitle->getLocalURL( array( 'bookcmd' => 'book_creator', 'referer' => $title->getPrefixedText() ) )
+			       );
 		} else {
-			$out .= Xml::tags( 'li',
-				array( 'id' => 'coll-book_creator_disable' ),
-				Linker::linkKnown(
-					SpecialPage::getTitleFor( 'Book' ),
-					$sk->msg( 'coll-book_creator_disable' )->escaped(),
-					array(
-						'rel' => 'nofollow',
-						'title' => $sk->msg( 'coll-book_creator_disable_tooltip' )->text()
-					),
-					array( 'bookcmd' => 'stop_book_creator', 'referer' => $title->getPrefixedText() )
-				)
-			);
+			$out[] = Array( 'text' => $sk->msg( 'coll-book_creator_disable' )->escaped(),
+				        'id' => 'coll-book_creator_disable',
+					'href' => $booktitle->getLocalURL( array( 'bookcmd' => 'stop_book_creator', 'referer' => $title->getPrefixedText() ) )
+				 );
 		}
 
 		$params = array(
@@ -130,43 +115,21 @@ class CollectionHooks {
 
 		foreach ( $wgCollectionPortletFormats as $writer ) {
 			$params['writer'] = $writer;
-			$out .= Xml::tags( 'li',
-				array( 'id' => 'coll-download-as-' . $writer ),
-				Linker::linkKnown(
-					SpecialPage::getTitleFor( 'Book' ),
-					$sk->msg( 'coll-download_as', $wgCollectionFormats[$writer] )->escaped(),
-					// @todo FIXME: No i18n here.
-					array(
-						'rel' => 'nofollow',
-						'title' => $sk->msg( 'coll-download_as_tooltip',
-						$wgCollectionFormats[$writer] )->text() // @todo FIXME: No i18n here.
-					),
-					$params
-				)
-			);
+			$out[] = Array( 'text' => $sk->msg( 'coll-download_as', $wgCollectionFormats[$writer] )->escaped(),
+				        'id' => 'coll-download-as-' . $writer,
+					'href' => $booktitle->getLocalURL( $params )
+				 );
 		}
 
 		// Move the 'printable' link into our section for consistency
 		if ( $action == 'view' || $action == 'purge' ) {
 			if ( !$sk->getOutput()->isPrintable() ) {
-				$attribs = array(
-					'href' => $title->getLocalUrl( $sk->getRequest()->appendQueryValue( 'printable', 'yes', true ) ),
-					'title' => Linker::titleAttrib( 't-print', 'withaccess' ),
-					'accesskey' => Linker::accesskey( 't-print' ),
-				);
-				if ( $attribs['title'] === false ) {
-					unset( $attribs['title'] );
-				}
-				if ( $attribs['accesskey'] === false ) {
-					unset( $attribs['accesskey'] );
-				}
-				$out .= Xml::tags( 'li',
-					array( 'id' => 't-print' ),
-					Xml::element( 'a', $attribs, $sk->msg( 'printableversion' )->text() ) );
+				$out[] = Array( 'text' => $sk->msg( 'printableversion' )->text(),
+					        'id' => 't-print',
+						'href' => $title->getLocalURL( array( 'printable' => 'yes' ) )
+					);
 			}
 		}
-
-		$out .= Xml::closeElement( 'ul' );
 
 		return $out;
 	}
