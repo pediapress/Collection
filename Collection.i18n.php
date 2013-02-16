@@ -1845,7 +1845,7 @@ $messages['be-tarask'] = array(
 	'coll-limit_exceeded_title' => 'Кніга занадта вялікая',
 	'coll-limit_exceeded_text' => 'Ваша кніга занадта вялікая.
 Да яе болей немагчыма дадаваць старонкі.',
-	'coll-rendering_title' => 'Адлюстраваньне',
+	'coll-rendering_title' => 'Стварэньне',
 	'coll-rendering_text' => '<p><strong>Пачакайце, пакуль ствараецца дакумэнт.</strong></p>
 
 <p><strong>Прагрэс:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
