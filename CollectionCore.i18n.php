@@ -96,8 +96,9 @@ In both cases $1 is a file format.
 	'coll-clear_collection' => '',
 	'coll-clear_collection_confirm' => 'Message box when pressed "Clear book".',
 	'coll-help' => '{{Identical|Help}}',
-	'coll-helppage' => "Used as a link to the help page for this extension's functionality on a wiki. '''Do not translate ''Help:''.'''
-{{Identical|Book}}",
+	'coll-helppage' => '{{doc-important|Do not translate "<code>Help:</code>".}}
+Used as a link to the help page for this extension\'s functionality on a wiki.
+{{Identical|Book}}',
 	'coll-n_pages' => '{{Identical|Page}}',
 	'coll-printable_version_pdf' => 'Caption of a link in the [[mw:Help:Navigation#Toolbox|toolbox]] leading to the PDF version of the current page',
 	'coll-suggest_enabled' => '{{notranslate}}',

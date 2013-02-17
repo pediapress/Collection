@@ -273,9 +273,8 @@ The contents of this page appear in the "Order as a printed book" box on <nowiki
 * <tt>$2</tt> is a link captioned {{msg-mw|coll-suggest_undo}}',
 	'coll-suggest_undo_tooltip' => '{{Identical|Undo}}',
 	'coll-suggest_undo' => '{{Identical|Undo}}',
-	'coll-load_local_book' => 'PLURAL support not yet available for collection extension. See the discussion on [[Thread:Support/PLURAL support for Coll-load local book/reply]].
-
-Do not translate <code>OK</code> and <code>Cancel</code>, they are part of a local popup on the client machine which is not localized at the moment.',
+	'coll-load_local_book' => '{{doc-important|Do not translate "<code>OK</code>" and "<code>Cancel</code>", they are part of a local popup on the client machine which is not localized at the moment.}}
+PLURAL support not yet available for collection extension. See the discussion on [[Thread:Support/PLURAL support for Coll-load local book/reply]].',
 	'coll-format-rl' => 'Collection extension output format',
 	'coll-format-epub' => 'Collection extension output format',
 	'coll-format-odf' => 'Collection extension output format',
@@ -14886,6 +14885,9 @@ $messages['tzm'] = array(
 	'coll-suggest_your_book' => 'ⴰⴷⵍⵉⵙ ⵏⵏⴽ',
 	'coll-suggest_show' => 'ⵥⵕ',
 	'coll-suggest_undo' => 'ⵓⵖⴰⵍ',
+	'coll-format-rl' => 'e-book ⵏ (PDF)',
+	'coll-format-epub' => 'e-book ⵏ (EPUB)',
+	'coll-format-docbook' => 'DocBook',
 	'coll-format-okawix_zeno' => 'ⵓⴽⴰⵡⵉⴽⵙ',
 );
 
