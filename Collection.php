@@ -214,11 +214,10 @@ function wfAjaxGetCollection() {
 $wgAjaxExportList[] = 'wfAjaxGetCollection';
 
 function wfAjaxPostCollection( $collection = '', $redirect = '' ) {
-	$json = new Services_JSON( SERVICES_JSON_LOOSE_TYPE );
 	if ( session_id() == '' ) {
 		wfSetupSession();
 	}
-	$collection = $json->decode( $collection );
+	$collection = FormatJson::decode( $collection, true );
 	$collection['enabled'] = true;
 	$_SESSION['wsCollection'] = $collection;
 	$r = new AjaxResponse();
@@ -449,9 +448,8 @@ function wfAjaxCollectionSuggestRemoveArticle( $article ) {
 $wgAjaxExportList[] = 'wfAjaxCollectionSuggestRemoveArticle';
 
 function wfAjaxCollectionSuggestUndoArticle( $lastAction, $article ) {
-	$json = new Services_JSON();
 	$result = CollectionSuggest::undo( $lastAction, $article );
-	$r = new AjaxResponse( $json->encode( $result ) );
+	$r = new AjaxResponse( FormatJson::encode( $result ) );
 	$r->setContentType( 'application/json' );
 	return $r;
 }
