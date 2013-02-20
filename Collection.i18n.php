@@ -216,6 +216,7 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-show' => '{{Identical|Show}}',
 	'coll-title' => '{{Identical|Title}}',
 	'coll-contents' => '{{Identical|Contents}}',
+	'coll-rename' => '{{Identical|Rename}}',
 	'coll-post_failed_msg' => '* $1 is a URL.
 * $2 is (probably) an explanation of the error.',
 	'coll-empty_collection' => 'Translate "empty" as in "an empty book" (adj), not "empty the book" (verb)',
