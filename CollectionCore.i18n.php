@@ -419,11 +419,42 @@ $messages['ast'] = array(
 
 /** Azerbaijani (azərbaycanca)
  * @author Cekli829
+ * @author Khan27
  */
 $messages['az'] = array(
+	'coll-print_export' => 'Çap et/ixrac',
+	'coll-create_a_book' => 'Kitab yarat',
+	'coll-create_a_book_tooltip' => 'Kitab və ya səhifə kolleksiyası yarat',
+	'coll-book_creator' => 'Kitab yaradıcı',
+	'coll-download_as' => '$1 olaraq yüklə',
+	'coll-download_as_tooltip' => 'Bu viki səhifəsinin $1 versiyasını yüklə',
+	'coll-disable' => 'qadağan et',
+	'coll-book_creator_disable' => 'Kitab yaradıcını qadağan et',
+	'coll-book_creator_disable_tooltip' => 'Kitab yaradıcını istifadə etmə',
+	'coll-add_linked_article' => 'Kitabınıza bağlantılı viki səhifə əlavə edin',
+	'coll-remove_linked_article' => 'Bağlantılı viki səhifəsini kitabdan silin',
+	'coll-add_category' => 'Bu kateqoriyanı kitaba əlavə edin',
+	'coll-add_category_tooltip' => 'Bu kateqoriyadakı bütün viki səhifələri kitabınıza əlavə edin',
+	'coll-add_this_page' => 'Bu səhifəni kitabınıza əlavə edin',
+	'coll-add_page_tooltip' => 'Kitabınıza cari viki səhifəsini əlavə edin',
 	'coll-bookscategory' => 'Kitablar',
+	'coll-clear_collection' => 'Kitabı təmizlə',
+	'coll-clear_collection_confirm' => 'Kitabınızı tam olaraq təmizləmək istədiyinizə əminsiniz?',
+	'coll-clear_collection_tooltip' => 'Hazırki kitabınızdakı bütün viki səhifələrini silin',
 	'coll-help' => 'Kömək',
+	'coll-help_tooltip' => 'Kitab yaratma haqqında köməyi izlə',
 	'coll-helppage' => 'Kömək:Kitablar', # Fuzzy
+	'coll-load_collection' => 'Kitabı yüklə',
+	'coll-load_collection_tooltip' => 'Bu kitabı cari kitabınız olaraq yükləyin',
+	'coll-n_pages' => '$1 {{PLURAL:$1|səhifə|səhifə}}',
+	'coll-printable_version_pdf' => 'PDF versiyası',
+	'coll-remove_this_page' => 'Bu səhifəni kitabınızdan çıxarın',
+	'coll-remove_page_tooltip' => 'Cari viki səhifəsini kitabınızdan çıxarın',
+	'coll-show_collection' => 'Kitabı göstər',
+	'coll-show_collection_tooltip' => 'Tıklayarak kitabınızı redaktə et/yüklə/sifariş edin',
+	'coll-not_addable' => 'Bu səhifə əlavə oluna bilmir',
+	'coll-make_suggestions' => 'Səhifə təklif edin',
+	'coll-make_suggestions_tooltip' => 'Kitabınızdakı mövcud səhifələrə görə təkliflər göstər',
 	'coll-suggest_empty' => 'boş',
 );
 

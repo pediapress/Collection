@@ -1276,16 +1276,27 @@ $messages['ast'] = array(
 
 /** Azerbaijani (azərbaycanca)
  * @author Cekli829
+ * @author Khan27
  * @author Vago
  */
 $messages['az'] = array(
+	'coll-desc' => '[[Special:Book|Kitablar yarat]]',
+	'coll-manage_your_book' => 'Kitabınızı idarə edin',
+	'coll-start_book_creator' => 'Kitab yaradıcıya başla',
 	'coll-collection' => 'Kitab',
 	'coll-collections' => 'Kitablar',
+	'coll-exclusion_category_title' => 'Çapı xaric et',
 	'coll-print_template_prefix' => 'Çap',
 	'coll-print_template_pattern' => '$1/Çap',
+	'coll-unknown_subpage_title' => 'Bilinməyən altsəhifə',
+	'coll-savedbook_template' => 'saxlanılmış_kitab',
+	'coll-your_book' => 'Kitabınız',
 	'coll-download_title' => 'Yüklə',
+	'coll-download_text' => 'Kitabınızı yükləmək üçün format seç və butona tıkla.',
+	'coll-download_as_text' => 'Kitabınızı $1 formatında yükləmək üçün butona tıkla.',
 	'coll-download' => 'Yüklə',
 	'coll-format_label' => 'Format:',
+	'coll-remove' => 'Sil',
 	'coll-show' => 'Göstər',
 	'coll-move_to_top' => 'Ən üstə apar',
 	'coll-move_up' => 'Yuxarı apar',
@@ -1293,7 +1304,10 @@ $messages['az'] = array(
 	'coll-move_to_bottom' => 'Ən aşağı apar',
 	'coll-title' => 'Başlıq:',
 	'coll-subtitle' => 'Altbaşlıq:',
+	'coll-contents' => 'Məzmun',
+	'coll-rename' => 'Adını dəyiş',
 	'coll-revision' => 'Yoxlama: $1',
+	'coll-save_collection' => 'Kitabı saxla',
 	'coll-yes' => 'Bəli',
 	'coll-no' => 'Xeyr',
 	'coll-overwrite' => 'Üstünə yaz',
