@@ -215,7 +215,7 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-remove' => '{{Identical|Remove}}',
 	'coll-show' => '{{Identical|Show}}',
 	'coll-title' => '{{Identical|Title}}',
-	'coll-contents' => '{{Identical|Contents}}',
+	'coll-contents' => '{{Identical|Content}}',
 	'coll-rename' => '{{Identical|Rename}}',
 	'coll-post_failed_msg' => '* $1 is a URL.
 * $2 is (probably) an explanation of the error.',
@@ -7333,7 +7333,7 @@ L\'elenco viene aggiornato ogni qualvolta si fa clic sui pulsanti "aggiungi" o "
  */
 $messages['ja'] = array(
 	'coll-desc' => '[[Special:Book|ブックを作成する]]',
-	'coll-book_creator_intro' => '<big>「ブッククリエーター」を使用すると、あなたが選択したウィキページを含むブックを作成できます。ブックはさまざまな形式（例：PDF、ODF）で書き出したり、印刷版を注文したりできます。</big>',
+	'coll-book_creator_intro' => '<big>「ブッククリエーター」を使用すると、あなたが選択したウィキページを含むブックを作成できます。ブックはさまざまな形式 (例: PDF、ODF) で書き出したり、印刷版を注文したりできます。</big>',
 	'coll-manage_your_book' => 'あなたのブックを管理',
 	'coll-book_creator_help' => 'より詳しくは[[{{MediaWiki:Coll-helppage}}|ブックについてのヘルプ]]を参照してください。',
 	'coll-start_book_creator' => 'ブッククリエーターを開始',
@@ -7409,7 +7409,7 @@ $messages['ja'] = array(
 	'coll-rendering_title' => 'レンダリング中',
 	'coll-rendering_text' => '<p><strong>ドキュメント生成が終わるまでお待ちください。</strong></p>
 
-<p><strong>進捗：</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+<p><strong>進捗:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
 <p>このページは数秒毎に自動更新されます。更新されない場合は、ブラウザーの更新ボタンを押してください。</p>',
 	'coll-rendering_status' => '<strong>状況:</strong> $1',
@@ -14897,6 +14897,7 @@ $messages['tzm'] = array(
 	'coll-print_template_prefix' => 'ⵙⵙⵉⴳⵣ',
 	'coll-show' => 'ⵥⵕ',
 	'coll-title' => 'ⴰⵣⵡⵉⵍ:',
+	'coll-yes' => 'ⵢⴰⵀ',
 	'coll-suggest_your_book' => 'ⴰⴷⵍⵉⵙ ⵏⵏⴽ',
 	'coll-suggest_show' => 'ⵥⵕ',
 	'coll-suggest_undo' => 'ⵓⵖⴰⵍ',
