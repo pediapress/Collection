@@ -223,12 +223,12 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-revision' => '{{Identical|Revision}}',
 	'coll-save_collection' => '',
 	'coll-save_category' => 'Do not change <nowiki>{{MediaWiki:Coll-bookscategory}}</nowiki>. The link and category name should be in the content language.',
-	'coll-yes' => '{{Identical|Yes}}
-
-This is a label on a submit button. The related question is in the message {{msg-mw|Coll-overwrite_text}}.',
-	'coll-no' => '{{Identical|No}}
-
-This is a label on a submit button. The related question is in the message {{msg-mw|Coll-overwrite_text}}.',
+	'coll-overwrite_text' => 'Parameters:
+* $1 - page title',
+	'coll-yes' => 'This is a label on a submit button. The related question is in the message {{msg-mw|Coll-overwrite_text}}.
+{{Identical|Yes}}',
+	'coll-no' => 'This is a label on a submit button. The related question is in the message {{msg-mw|Coll-overwrite_text}}.
+{{Identical|No}}',
 	'coll-append' => '{{Identical|Append}}',
 	'coll-cancel' => '{{Identical|Cancel}}',
 	'coll-update' => '{{Identical|Update}}',
@@ -269,9 +269,9 @@ The contents of this page appear in the "Order as a printed book" box on <nowiki
 	'coll-suggest_reset_bans' => '{{Identical|Reset}}',
 	'coll-suggest_your_book' => '{{Identical|Book}}',
 	'coll-suggest_show' => '{{Identical|Show}}',
-	'coll-suggest_article_add' => 'Message shown when the user chose to add a suggested page to his/her book.
-* <tt>$1</tt> is the title of the added page.
-* <tt>$2</tt> is a link captioned {{msg-mw|coll-suggest_undo}}',
+	'coll-suggest_article_add' => 'Message shown when the user chose to add a suggested page to his/her book. Parameters:
+* $1 - the title of the added page
+* $2 - a link captioned {{msg-mw|coll-suggest_undo}}',
 	'coll-suggest_undo_tooltip' => '{{Identical|Undo}}',
 	'coll-suggest_undo' => '{{Identical|Undo}}',
 	'coll-load_local_book' => '{{doc-important|Do not translate "<code>OK</code>" and "<code>Cancel</code>", they are part of a local popup on the client machine which is not localized at the moment.}}
