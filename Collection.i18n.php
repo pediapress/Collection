@@ -222,7 +222,7 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-empty_collection' => 'Translate "empty" as in "an empty book" (adj), not "empty the book" (verb)',
 	'coll-revision' => '{{Identical|Revision}}',
 	'coll-save_collection' => '',
-	'coll-save_category' => 'Do not change <nowiki>{{MediaWiki:Coll-bookscategory}}</nowiki>. The link and category name should be in the content language.',
+	'coll-save_category' => '{{doc-important|Do not change <code><nowiki>{{MediaWiki:Coll-bookscategory}}</nowiki></code>. The link and category name should be in the content language.}}',
 	'coll-overwrite_text' => 'Parameters:
 * $1 - page title',
 	'coll-yes' => 'This is a label on a submit button. The related question is in the message {{msg-mw|Coll-overwrite_text}}.
@@ -11586,6 +11586,7 @@ A lista é actualizada sempre que clica os botões de adicionar ou remover.',
  * @author Heldergeovane
  * @author Jorge Morais
  * @author Luckas Blade
+ * @author Raylton P. Sousa
  * @author 555
  */
 $messages['pt-br'] = array(
@@ -11723,6 +11724,12 @@ A lista é atualizada toda vez que você clica nos botões adicionar ou remover.
 	'coll-suggest_undo_tooltip' => 'Desfazer esta ação',
 	'coll-suggest_undo' => 'desfazer',
 	'coll-load_local_book' => 'Clique OK para continuar com o seu livro %TITLE% que contém %NUMPAGES% páginas wiki. Clique Cancelar para apagá-lo e começar com um livro vazio.',
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'procesador de textos (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
 	'right-collectionsaveasuserpage' => 'Salvar livros como página de usuário',
 	'right-collectionsaveascommunitypage' => 'Salvar livros como páginas comunitárias',
 );
