@@ -390,7 +390,7 @@ $specialPageAliases['uk'] = array(
 
 /** Urdu (اردو) */
 $specialPageAliases['ur'] = array(
-	'Book' => array( 'کتاب،_انتخاب' ),
+	'Book' => array( 'کتاب', 'انتخاب' ),
 );
 
 /** vèneto (vèneto) */
