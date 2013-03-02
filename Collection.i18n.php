@@ -15905,14 +15905,23 @@ $messages['zh-hans'] = array(
 	'coll-limit_exceeded_title' => '图书过大',
 	'coll-limit_exceeded_text' => '你的图书过大。无法添加更多页面。',
 	'coll-rendering_title' => '正在生成',
-	'coll-rendering_text' => '<p><strong>请稍等，正在生成文件。</strong></p><p><strong>进度：</strong><span id="renderingProgress">$1</span>%<span id="renderingStatus">$2</span></p><p>本页面每隔数秒自动刷新。如果本页面没有响应，请点击你的浏览器的“刷新”按钮。</p>',
+	'coll-rendering_text' => '<p><strong>请稍等，正在生成文件。</strong></p>
+
+<p><strong>进度：</strong><span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+
+<p>本页面每隔数秒自动刷新。
+如果本页面没有响应，请点击你的浏览器的“刷新”按钮。</p>',
 	'coll-rendering_status' => '<strong>状态：</strong>$1',
 	'coll-rendering_article' => '（维基页面：$1）',
 	'coll-rendering_page' => '（页面：$1）',
 	'coll-rendering_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/生成页面信息文字',
 	'coll-rendering_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/生成收藏信息文字',
 	'coll-rendering_finished_title' => '生成完成',
-	'coll-rendering_finished_text' => '<strong>文件已生成。</strong><strong>[$1下载该文件]</strong>至你的电脑。注意：*对输出效果不满意？请见[[{{MediaWiki:Coll-helppage}}|图书帮助页面]]以寻求改进方法。',
+	'coll-rendering_finished_text' => '<strong>文件已生成。</strong>
+<strong>[$1 下载该文件]</strong>至你的电脑。
+
+注意：
+* 对输出效果不满意？请见[[{{MediaWiki:Coll-helppage}}|图书帮助页面]]以寻求改进方法。',
 	'coll-finished_page_info_text_article' => '{{MediaWiki:Coll-helppage}}/生成页面信息文字',
 	'coll-finished_collection_info_text_article' => '{{MediaWiki:Coll-helppage}}/生成收藏信息文字',
 	'coll-notfound_title' => '未找到图书',
@@ -16049,7 +16058,7 @@ $messages['zh-hant'] = array(
 	'coll-rendering_title' => '呈現中',
 	'coll-rendering_text' => '<p><strong>請稍候，正在產生文件。</strong></p>
 
-<p><strong> 進度:</strong> <span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
+<p><strong>進度：</strong><span id="renderingProgress">$1</span>% <span id="renderingStatus">$2</span></p>
 
 <p>本頁面將在數秒後自動更新。
 如果沒有動作，請按下瀏覽器的「重新整理」按鈕。</p>',
