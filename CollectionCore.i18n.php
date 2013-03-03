@@ -748,7 +748,7 @@ $messages['bn'] = array(
  * @author Y-M D
  */
 $messages['br'] = array(
-	'coll-print_export' => 'Moullañ / ezporzhiañ',
+	'coll-print_export' => 'Moullañ/ezporzhiañ',
 	'coll-create_a_book' => 'Sevel ul levr',
 	'coll-create_a_book_tooltip' => 'Sevel ul levr pe un torkad pennadoù',
 	'coll-book_creator' => 'Saver levrioù',
