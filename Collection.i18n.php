@@ -6669,6 +6669,7 @@ Le lista es actualisate cata vice que tu clicca super le buttones "adder" o "rem
  * @author Irwangatot
  * @author IvanLanin
  * @author Iwan Novirion
+ * @author Kenrick95
  * @author Rex
  */
 $messages['id'] = array(
@@ -6801,8 +6802,8 @@ Daftar diperbarui kapan pun Anda mengeklik tombol tambah atau hapus.',
 	'coll-suggest_article_ban' => 'Halaman <strong>$1</strong> telah dihapus dari saran ($2).',
 	'coll-suggest_article_add' => 'Halaman <strong>$1</strong> telah ditambahkan pada ke dalam buku Anda ($2).',
 	'coll-suggest_article_remove' => 'Halaman <strong>$1</strong> telah dihapus dari buku Anda ($2).',
-	'coll-suggest_undo_tooltip' => 'Batalkan pilihan ini',
-	'coll-suggest_undo' => 'batalkan',
+	'coll-suggest_undo_tooltip' => 'Balikkan pilihan ini',
+	'coll-suggest_undo' => 'balikkan',
 	'coll-load_local_book' => 'Klik OK untuk melanjutkan dengan buku Anda yang berjudul %TITLE% yang berisi %NUMPAGES% halaman wiki. Klik Batal untuk menghapusnya dan memulai dengan buku kosong.',
 	'coll-format-rl' => 'buku-e (PDF)',
 	'coll-format-epub' => 'buku-e (EPUB)',
