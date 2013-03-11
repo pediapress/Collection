@@ -8545,6 +8545,11 @@ $messages['ku-latn'] = array(
 	'coll-your_book' => 'Pirtûka te',
 	'coll-show' => 'Nîşan bide',
 	'coll-title' => 'Sernav:',
+	'coll-contents' => 'Naverok',
+	'coll-save_collection' => 'Pirtûkê tomar bike',
+	'coll-yes' => 'Erê',
+	'coll-no' => 'Na',
+	'coll-notfound_title' => 'Pirtûk nehat dîtin',
 	'coll-suggest_your_book' => 'Pirtûka te',
 );
 
@@ -15685,7 +15690,7 @@ $messages['yi'] = array(
 	'coll-revision' => 'רעוויזיע: $1',
 	'coll-yes' => 'יא',
 	'coll-no' => 'ניין',
-	'coll-cancel' => 'מבטל זײַן',
+	'coll-cancel' => 'אַנולירן',
 	'coll-update' => 'דערהײַנטיקן',
 	'coll-rendering_status' => '<strong>סטאַטוס:</strong> $1',
 	'coll-rendering_article' => '(וויקי בלאַט: $1)',

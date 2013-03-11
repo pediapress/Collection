@@ -2663,9 +2663,11 @@ $messages['ksh'] = array(
  * @author George Animal
  */
 $messages['ku-latn'] = array(
+	'coll-bookscategory' => 'Pirtûk',
 	'coll-help' => 'Alîkarî',
 	'coll-helppage' => 'Help:Pirtûk',
 	'coll-printable_version_pdf' => 'Versiyona PDF',
+	'coll-suggest_empty' => 'vala',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
