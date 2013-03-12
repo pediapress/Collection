@@ -1044,8 +1044,7 @@ class SpecialCollection extends SpecialPage {
 		}
 		$result['items'] = $items;
 
-		$json = new Services_JSON();
-		return $json->encode( $result );
+		return FormatJson::encode( $result );
 	}
 
 	/**
@@ -1363,8 +1362,7 @@ class SpecialCollection extends SpecialPage {
 			return false;
 		}
 
-		$json = new Services_JSON( SERVICES_JSON_LOOSE_TYPE );
-		$json_response = $json->decode( $response );
+		$json_response = FormatJson::decode( $response, true );
 
 		if ( !$json_response ) {
 			$wgOut->showErrorPage(
