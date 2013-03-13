@@ -1248,8 +1248,27 @@ $messages['as'] = array(
  */
 $messages['ast'] = array(
 	'coll-desc' => '[[Special:Book|Crear llibros]]',
+	'coll-book_creator_intro' => "<big>Col ''creador de llibros'' pue crear un llibru que contenga les páxines wiki que prefiera. Pue esportar el llibru en diferentes formatos (por exemplu PDF o ODF) o pidir una copia impresa.</big>",
+	'coll-manage_your_book' => 'Xestionar el so llibru',
+	'coll-book_creator_help' => "Ver [[{{MediaWiki:Coll-helppage}}|la páxina d'ayuda sobro llibros]] pa más información.",
+	'coll-start_book_creator' => 'Aniciar el creador de llibros',
+	'coll-book_creator_continue' => "Siguir usando'l creador de llibros",
+	'coll-book_creator_disable_text' => "Desactivarase'l ''creador de llibros'' y desaniciarase'l llibru nel que ta trabayando.",
+	'coll-book_creator_text_article' => '{{MediaWiki:Coll-helppage}}/Testu del creador de llibros',
 	'coll-collection' => 'Llibru',
 	'coll-collections' => 'Llibros',
+	'coll-exclusion_category_title' => 'Escluir na impresión',
+	'coll-print_template_prefix' => 'Imprentar',
+	'coll-print_template_pattern' => '$1/Imprentar',
+	'coll-unknown_subpage_title' => 'Subpáxina desconocida',
+	'coll-unknown_subpage_text' => 'Esta subpáxina del [[Special:Book|llibru]] nun esiste',
+	'coll-couldnotaddarticle_title' => 'Nun se pudo amestar la páxina wiki',
+	'coll-couldnotaddarticle_msg' => 'La páxina wiki nun se pudo amestar.',
+	'coll-couldnotremovearticle_title' => 'Nun se pudo desaniciar la páxina wiki',
+	'coll-couldnotremovearticle_msg' => 'La páxina wiki nun se pudo desaniciar.',
+	'coll-noscript_text' => "<h1>¡Necesitase JavaScript!</h1>
+<strong>El so navegador nun almite JavaScript o tienlu desactiváu.
+Esta páxina nun funcionará correutamente si nun s'activa JavaScript.</strong>",
 	'coll-download_title' => 'Descargar',
 	'coll-download_text' => 'Pa descargar el llibru, escueyi un formatu y calca nel botón.',
 	'coll-download_as_text' => 'Pa descargar el llibru en formatu $1 calca nel botón.',
@@ -1272,6 +1291,14 @@ $messages['ast'] = array(
 	'coll-yes' => 'Sí',
 	'coll-no' => 'Non',
 	'coll-about_pp' => 'Tocante a $1',
+	'coll-format-rl' => 'e-book (PDF)',
+	'coll-format-epub' => 'e-book (EPUB)',
+	'coll-format-odf' => 'procesador de testu (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
+	'right-collectionsaveasuserpage' => "Guardar los llibros como páxina d'usuariu",
+	'right-collectionsaveascommunitypage' => 'Guardar los llibros como páxina de la comunidá',
 );
 
 /** Azerbaijani (azərbaycanca)
