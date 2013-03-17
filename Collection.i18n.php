@@ -202,13 +202,14 @@ $messages['qqq'] = array(
 	'coll-template_blacklist_title' => '{{notranslate}}',
 	'coll-print_template_prefix' => 'Prefix added to the templates name if you want to get a special for-print version of the template. So in a page instead of Template:Foo Template:PrintFoo is used if it exists.
 {{Identical|Print}}',
-	'coll-print_template_pattern' => 'Use print templates being subpages of regular templates.
-
-$1 is a placeholder and will be replaced by content during the rendering process.',
+	'coll-print_template_pattern' => 'Use print templates being subpages of regular templates. Parameters:
+* $1 - a placeholder and will be replaced by content during the rendering process',
 	'coll-savedbook_template' => 'This is the name of a template that is inserted at the top of pages for saved collections ([[wikipedia:Template:Saved_book|example]]).',
 	'coll-your_book' => '{{Identical|Books}}',
 	'coll-download_title' => 'Header for the download section on [[Special:Book]].
 {{Identical|Download}}',
+	'coll-download_as_text' => 'Parameters:
+* $1 - format name (e.g. PDF)',
 	'coll-download' => 'Text on download button on [[Special:Book]].
 {{Identical|Download}}',
 	'coll-format_label' => '{{Identical|Format}}',
@@ -219,6 +220,10 @@ $1 is a placeholder and will be replaced by content during the rendering process
 	'coll-rename' => '{{Identical|Rename}}',
 	'coll-post_failed_msg' => '* $1 is a URL.
 * $2 is (probably) an explanation of the error.',
+	'coll-mwserve_failed_msg' => 'Used as error message body. Parameters:
+* $1 - any one of the following information (not server name):
+** invalid JSON string
+** error message which JSON decoder returned',
 	'coll-empty_collection' => 'Translate "empty" as in "an empty book" (adj), not "empty the book" (verb)',
 	'coll-revision' => '{{Identical|Revision}}',
 	'coll-save_collection' => '',
@@ -249,9 +254,23 @@ The variable $1 is another message string, as follows:
 **then the text "rendering" (source message not yet identified)
 
 {{Identical|Status}}',
+	'coll-rendering_article' => 'Parameters:
+* $1 - article name',
+	'coll-rendering_page' => 'Parameters:
+* $1 - page name',
 	'coll-rendering_finished_text' => 'This is the first part of the text of the special page "Rendering finished", which appears after clicking \'download book\' and the book has been generated.  
 
 $1 is not text; it is the http:// address of the book.',
+	'coll-download_failed_title' => 'Unused at this time.
+
+Used as title for the error message {{msg-mw|Coll-download failed text}}.',
+	'coll-download_failed_text' => 'Unused at this time.
+
+Used as error message. Parameters:
+* $1 - filename
+The title for this message is {{msg-mw|Coll-download failed title}}.',
+	'coll-is_cached' => 'Parameters:
+* $1 - URL of Special:Book?bookcmd=forcerender',
 	'coll-excluded-templates' => "Part of the text of the special page 'Rendering finished' which appears after clicking on 'Download' and a book has been generated.",
 	'coll-blacklisted-templates' => "Part of the text of the special page 'Rendering finished' which appears after clicking on 'Download' and a book has been generated.",
 	'coll-return_to_collection' => 'Part of the text of the special page \'Rendering finished\' which appears after clicking on \'Download\' and a book has been generated. <nowiki><a href="$1">$2</a></nowiki> does not need translating. It is a wiki link back to the "[[Special:Book]]" page.',
@@ -269,8 +288,14 @@ The contents of this page appear in the "Order as a printed book" box on <nowiki
 	'coll-suggest_reset_bans' => '{{Identical|Reset}}',
 	'coll-suggest_your_book' => '{{Identical|Book}}',
 	'coll-suggest_show' => '{{Identical|Show}}',
+	'coll-suggest_article_ban' => 'Message shown when the user chose to remove a suggested page from the suggestions. Parameters:
+* $1 - the title of the removed page
+* $2 - a link captioned {{msg-mw|coll-suggest_undo}}',
 	'coll-suggest_article_add' => 'Message shown when the user chose to add a suggested page to his/her book. Parameters:
 * $1 - the title of the added page
+* $2 - a link captioned {{msg-mw|coll-suggest_undo}}',
+	'coll-suggest_article_remove' => 'Message shown when the user chose to remove a suggested page from his/her book. Parameters:
+* $1 - the title of the removed page
 * $2 - a link captioned {{msg-mw|coll-suggest_undo}}',
 	'coll-suggest_undo_tooltip' => '{{Identical|Undo}}',
 	'coll-suggest_undo' => '{{Identical|Undo}}',
