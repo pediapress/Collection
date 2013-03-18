@@ -14971,6 +14971,30 @@ $messages['tt-cyrl'] = array(
 	'coll-suggest_undo' => 'үткәрмәү',
 );
 
+/** Tuvinian (тыва дыл)
+ * @author Agilight
+ */
+$messages['tyv'] = array(
+	'coll-empty_collection' => 'Куруг ном',
+	'coll-yes' => 'Ийе',
+	'coll-no' => 'Чок',
+	'coll-overwrite' => 'Кырынче бижиир',
+	'coll-cancel' => 'Ойталаар',
+	'coll-rendering_status' => '<strong>Деңнел:</strong> $1',
+	'coll-rendering_article' => '(чүүл: $1)',
+	'coll-rendering_page' => '(арын: $1)',
+	'coll-about_pp' => '$1 дугайты',
+	'coll-license' => 'Лицензия',
+	'coll-suggest_your_book' => 'Номуңар',
+	'coll-suggest_undo' => 'чөрчүүр',
+	'coll-format-rl' => 'е-ном (PDF)',
+	'coll-format-epub' => 'е-ном (EPUB)',
+	'coll-format-odf' => 'сөзүглелдиг процессор (OpenDocument)',
+	'coll-format-zim' => 'Kiwix (OpenZIM)',
+	'coll-format-docbook' => 'DocBook',
+	'coll-format-okawix_zeno' => 'Okawix',
+);
+
 /** Central Atlas Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ)
  * @author Tifinaghes
  */
