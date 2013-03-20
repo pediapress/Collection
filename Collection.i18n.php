@@ -6143,11 +6143,10 @@ stranicu za pomoć o zbirkama]] za mogućnosti njegovog poboljšanja.',
 	'coll-download_notfound_text' => 'Datoteka koju pokušavate preuzeti ne postoji: možda je obrisana i treba biti obnovljena.',
 	'coll-download_failed_title' => 'Pogreška tijekom preuzimanja',
 	'coll-download_failed_text' => 'Došlo je do pogreške pri preuzimanju datoteke: $1',
-	'coll-is_cached' => '<ul><li>Pronađena je verzija datoteke u pričuvnoj memoriji, stoga izvođenje datoteke nije potrebno.
+	'coll-is_cached' => '<ul><li>Pronađena je inačica datoteke u pričuvnoj memoriji, stoga izvođenje datoteke nije potrebno.
 <a href="$1">Zahtijevaj ponovno izvođenje.</a></li></ul>',
 	'coll-excluded-templates' => '* Predlošci u kategoriji [[:Category:$1|$1]] su ostali isključeni.',
 	'coll-blacklisted-templates' => '* Predlošci na crnoj listi [[:$1]] su ostali isključeni.',
-	'coll-return_to_collection' => '<p>Vrati se na <a href="$1">$2</a></p>',
 	'coll-book_title' => 'Naručite kao ispisanu zbirku',
 	'coll-book_text' => 'Naručiti ispisanu zbirku od sljedećih partnera za ispisivanje na zahtjev (POD):',
 	'coll-order_from_pp' => 'Pregledaj s $1',
